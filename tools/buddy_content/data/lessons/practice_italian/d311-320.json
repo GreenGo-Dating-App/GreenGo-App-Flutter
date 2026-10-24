@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 311,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Leading a meeting",
+     "g": "Open, moderate, summarise and close a meeting in Italian.",
+     "p": [
+      "Open: Buongiorno a tutti, iniziamo. L'ordine del giorno prevede tre punti.",
+      "Moderate: Passo la parola a Giulia. Torniamo al punto. Qualcuno vuole aggiungere qualcosa?",
+      "Summarise and close: Riassumendo, abbiamo deciso che... Grazie a tutti, ci aggiorniamo a giovedì."
+     ],
+     "q": "Have you ever had to lead a meeting or a group discussion?",
+     "c": "Write a mini-script: open a meeting, give someone the floor and close with a summary."
+    },
+    "de": {
+     "t": "Eine Besprechung leiten",
+     "g": "Du eröffnest, moderierst, fasst zusammen und schließt eine Besprechung auf Italienisch.",
+     "p": [
+      "Eröffnen: Buongiorno a tutti, iniziamo. L'ordine del giorno prevede tre punti.",
+      "Moderieren: Passo la parola a Giulia. Torniamo al punto. Qualcuno vuole aggiungere qualcosa?",
+      "Abschließen: Riassumendo, abbiamo deciso che... Grazie a tutti, ci aggiorniamo a giovedì."
+     ],
+     "q": "Hast du schon einmal eine Besprechung oder Diskussion geleitet?",
+     "c": "Schreib ein Mini-Skript: Besprechung eröffnen, jemandem das Wort geben, mit Zusammenfassung schließen."
+    },
+    "es": {
+     "t": "Dirigir una reunión",
+     "g": "Abrir, moderar, resumir y cerrar una reunión en italiano.",
+     "p": [
+      "Abrir: Buongiorno a tutti, iniziamo. L'ordine del giorno prevede tre punti.",
+      "Moderar: Passo la parola a Giulia. Torniamo al punto. Qualcuno vuole aggiungere qualcosa?",
+      "Resumir y cerrar: Riassumendo, abbiamo deciso che... Grazie a tutti, ci aggiorniamo a giovedì."
+     ],
+     "q": "¿Alguna vez has tenido que dirigir una reunión o un debate en grupo?",
+     "c": "Escribe un miniguion: abre una reunión, da la palabra a alguien y cierra con un resumen."
+    },
+    "fr": {
+     "t": "Animer une réunion",
+     "g": "Ouvrir, animer, résumer et clore une réunion en italien.",
+     "p": [
+      "Ouvrir : Buongiorno a tutti, iniziamo. L'ordine del giorno prevede tre punti.",
+      "Animer : Passo la parola a Giulia. Torniamo al punto. Qualcuno vuole aggiungere qualcosa?",
+      "Résumer et clore : Riassumendo, abbiamo deciso che... Grazie a tutti, ci aggiorniamo a giovedì."
+     ],
+     "q": "As-tu déjà dû animer une réunion ou une discussion de groupe ?",
+     "c": "Écris un mini-script : ouvre une réunion, donne la parole à quelqu'un et conclus par un résumé."
+    },
+    "it": {
+     "t": "Condurre una riunione",
+     "g": "Aprire, moderare, riassumere e chiudere una riunione.",
+     "p": [
+      "Aprire: Buongiorno a tutti, iniziamo. L'ordine del giorno prevede tre punti.",
+      "Moderare: Passo la parola a Giulia. Torniamo al punto. Qualcuno vuole aggiungere qualcosa?",
+      "Riassumere e chiudere: Riassumendo, abbiamo deciso che... Grazie a tutti, ci aggiorniamo a giovedì."
+     ],
+     "q": "Ti è mai capitato di condurre una riunione o una discussione di gruppo?",
+     "c": "Scrivi un mini-copione: apri una riunione, passa la parola a qualcuno e chiudi con un riassunto."
+    },
+    "pt": {
+     "t": "Conduzir uma reunião",
+     "g": "Abrir, moderar, resumir e encerrar uma reunião em italiano.",
+     "p": [
+      "Abrir: Buongiorno a tutti, iniziamo. L'ordine del giorno prevede tre punti.",
+      "Moderar: Passo la parola a Giulia. Torniamo al punto. Qualcuno vuole aggiungere qualcosa?",
+      "Resumir e encerrar: Riassumendo, abbiamo deciso che... Grazie a tutti, ci aggiorniamo a giovedì."
+     ],
+     "q": "Já tiveste de conduzir uma reunião ou um debate em grupo?",
+     "c": "Escreve um mini-guião: abre uma reunião, dá a palavra a alguém e fecha com um resumo."
+    },
+    "pt_BR": {
+     "t": "Conduzindo uma reunião",
+     "g": "Abrir, moderar, resumir e encerrar uma reunião em italiano.",
+     "p": [
+      "Abrir: Buongiorno a tutti, iniziamo. L'ordine del giorno prevede tre punti.",
+      "Moderar: Passo la parola a Giulia. Torniamo al punto. Qualcuno vuole aggiungere qualcosa?",
+      "Resumir e encerrar: Riassumendo, abbiamo deciso che... Grazie a tutti, ci aggiorniamo a giovedì."
+     ],
+     "q": "Você já teve que conduzir uma reunião ou um debate em grupo?",
+     "c": "Escreva um miniroteiro: abra uma reunião, passe a palavra a alguém e feche com um resumo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "l'ordine del giorno",
+      "ex": "Il primo punto all'ordine del giorno è il budget."
+     },
+     {
+      "w": "passare la parola a",
+      "ex": "Ora passo la parola a Marco per la presentazione."
+     },
+     {
+      "w": "tornare al punto",
+      "ex": "Scusate, torniamo al punto principale."
+     },
+     {
+      "w": "riassumendo",
+      "ex": "Riassumendo, lanceremo il prodotto a marzo."
+     },
+     {
+      "w": "il verbale",
+      "ex": "Chi scrive il verbale della riunione di oggi?"
+     },
+     {
+      "w": "aggiornarsi",
+      "ex": "Ci aggiorniamo la settimana prossima."
+     }
+    ],
+    "gram": "Gerundio con valore riassuntivo o modale: Riassumendo..., Concludendo..., Ricapitolando... (= se riassumo)."
+   }
+  },
+  {
+   "d": 312,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Small talk at a business dinner",
+     "g": "Handle polite topics, compliments and toasts at a formal meal.",
+     "p": [
+      "Safe topics: food, travel, the city, culture. Avoid money and politics at the table.",
+      "Compliments: Che bel locale! Questo vino è davvero ottimo. Complimenti per la scelta del ristorante.",
+      "Toasts: Vorrei fare un brindisi alla nostra collaborazione! Alla salute! Cin cin!"
+     ],
+     "q": "What topics do you usually talk about at a dinner with people you don't know well?",
+     "c": "Prepare two compliments and a short toast you could use at a business dinner."
+    },
+    "de": {
+     "t": "Smalltalk beim Geschäftsessen",
+     "g": "Du meisterst höfliche Themen, Komplimente und Trinksprüche beim formellen Essen.",
+     "p": [
+      "Sichere Themen: Essen, Reisen, die Stadt, Kultur. Geld und Politik meidet man am Tisch.",
+      "Komplimente: Che bel locale! Questo vino è davvero ottimo. Complimenti per la scelta del ristorante.",
+      "Trinksprüche: Vorrei fare un brindisi alla nostra collaborazione! Alla salute! Cin cin!"
+     ],
+     "q": "Worüber sprichst du normalerweise beim Essen mit Leuten, die du kaum kennst?",
+     "c": "Bereite zwei Komplimente und einen kurzen Trinkspruch für ein Geschäftsessen vor."
+    },
+    "es": {
+     "t": "Charla en una cena de negocios",
+     "g": "Manejar temas corteses, cumplidos y brindis en una comida formal.",
+     "p": [
+      "Temas seguros: comida, viajes, la ciudad, cultura. En la mesa se evitan el dinero y la política.",
+      "Cumplidos: Che bel locale! Questo vino è davvero ottimo. Complimenti per la scelta del ristorante.",
+      "Brindis: Vorrei fare un brindisi alla nostra collaborazione! Alla salute! Cin cin!"
+     ],
+     "q": "¿De qué sueles hablar en una cena con personas que no conoces bien?",
+     "c": "Prepara dos cumplidos y un breve brindis para una cena de negocios."
+    },
+    "fr": {
+     "t": "Conversation lors d'un dîner d'affaires",
+     "g": "Gérer sujets polis, compliments et toasts lors d'un repas formel.",
+     "p": [
+      "Sujets sûrs : cuisine, voyages, la ville, culture. À table, on évite l'argent et la politique.",
+      "Compliments : Che bel locale! Questo vino è davvero ottimo. Complimenti per la scelta del ristorante.",
+      "Toasts : Vorrei fare un brindisi alla nostra collaborazione! Alla salute! Cin cin!"
+     ],
+     "q": "De quoi parles-tu d'habitude lors d'un dîner avec des gens que tu connais peu ?",
+     "c": "Prépare deux compliments et un court toast pour un dîner d'affaires."
+    },
+    "it": {
+     "t": "Conversare a una cena di lavoro",
+     "g": "Gestire argomenti cortesi, complimenti e brindisi a una cena formale.",
+     "p": [
+      "Argomenti sicuri: cibo, viaggi, la città, la cultura. A tavola si evitano soldi e politica.",
+      "Complimenti: Che bel locale! Questo vino è davvero ottimo. Complimenti per la scelta del ristorante.",
+      "Brindisi: Vorrei fare un brindisi alla nostra collaborazione! Alla salute! Cin cin!"
+     ],
+     "q": "Di che cosa parli di solito a cena con persone che conosci poco?",
+     "c": "Prepara due complimenti e un breve brindisi per una cena di lavoro."
+    },
+    "pt": {
+     "t": "Conversa num jantar de negócios",
+     "g": "Lidar com temas corteses, elogios e brindes numa refeição formal.",
+     "p": [
+      "Temas seguros: comida, viagens, a cidade, cultura. À mesa evita-se dinheiro e política.",
+      "Elogios: Che bel locale! Questo vino è davvero ottimo. Complimenti per la scelta del ristorante.",
+      "Brindes: Vorrei fare un brindisi alla nostra collaborazione! Alla salute! Cin cin!"
+     ],
+     "q": "De que costumas falar num jantar com pessoas que conheces mal?",
+     "c": "Prepara dois elogios e um brinde curto para um jantar de negócios."
+    },
+    "pt_BR": {
+     "t": "Conversa num jantar de negócios",
+     "g": "Lidar com assuntos educados, elogios e brindes numa refeição formal.",
+     "p": [
+      "Assuntos seguros: comida, viagens, a cidade, cultura. À mesa se evitam dinheiro e política.",
+      "Elogios: Che bel locale! Questo vino è davvero ottimo. Complimenti per la scelta del ristorante.",
+      "Brindes: Vorrei fare un brindisi alla nostra collaborazione! Alla salute! Cin cin!"
+     ],
+     "q": "Sobre o que você costuma falar num jantar com pessoas que mal conhece?",
+     "c": "Prepare dois elogios e um brinde curto para um jantar de negócios."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il brindisi",
+      "ex": "Vorrei fare un brindisi al nuovo progetto."
+     },
+     {
+      "w": "alla salute!",
+      "ex": "Alziamo i calici: alla salute!"
+     },
+     {
+      "w": "complimenti per",
+      "ex": "Complimenti per la scelta del ristorante!"
+     },
+     {
+      "w": "il locale",
+      "ex": "È un locale elegante ma accogliente."
+     },
+     {
+      "w": "offrire",
+      "ex": "Stasera offre l'azienda, prego."
+     },
+     {
+      "w": "È stato un piacere",
+      "ex": "È stato un piacere cenare con voi."
+     }
+    ],
+    "gram": "Esclamative con che: Che bel locale! Che buono! Bello davanti al nome segue l'articolo: bel posto, bei piatti."
+   }
+  },
+  {
+   "d": 313,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Persuasive language",
+     "g": "Use rhetorical questions, emphasis and examples to convince.",
+     "p": [
+      "Rhetorical questions: Chi non vorrebbe vivere in una città più verde? Non è forse vero che...?",
+      "Emphasis: È proprio questo il punto. Ciò che conta davvero è... Non solo... ma anche...",
+      "Concrete examples and appeals: Pensate, per esempio, a... Immaginate se... Vi invito a provare."
+     ],
+     "q": "What is something you would love to convince your friends to try?",
+     "c": "Write three persuasive sentences for an idea you like: one question, one emphasis, one example."
+    },
+    "de": {
+     "t": "Überzeugende Sprache",
+     "g": "Du überzeugst mit rhetorischen Fragen, Betonung und Beispielen.",
+     "p": [
+      "Rhetorische Fragen: Chi non vorrebbe vivere in una città più verde? Non è forse vero che...?",
+      "Betonung: È proprio questo il punto. Ciò che conta davvero è... Non solo... ma anche...",
+      "Beispiele und Appelle: Pensate, per esempio, a... Immaginate se... Vi invito a provare."
+     ],
+     "q": "Wovon würdest du deine Freunde gern überzeugen?",
+     "c": "Schreib drei überzeugende Sätze für eine Idee: eine Frage, eine Betonung, ein Beispiel."
+    },
+    "es": {
+     "t": "Lenguaje persuasivo",
+     "g": "Usar preguntas retóricas, énfasis y ejemplos para convencer.",
+     "p": [
+      "Preguntas retóricas: Chi non vorrebbe vivere in una città più verde? Non è forse vero che...?",
+      "Énfasis: È proprio questo il punto. Ciò che conta davvero è... Non solo... ma anche...",
+      "Ejemplos y llamadas: Pensate, per esempio, a... Immaginate se... Vi invito a provare."
+     ],
+     "q": "¿De qué te encantaría convencer a tus amigos?",
+     "c": "Escribe tres frases persuasivas sobre una idea: una pregunta, un énfasis y un ejemplo."
+    },
+    "fr": {
+     "t": "Le langage persuasif",
+     "g": "Convaincre avec des questions rhétoriques, l'insistance et des exemples.",
+     "p": [
+      "Questions rhétoriques : Chi non vorrebbe vivere in una città più verde? Non è forse vero che...?",
+      "Insistance : È proprio questo il punto. Ciò che conta davvero è... Non solo... ma anche...",
+      "Exemples et appels : Pensate, per esempio, a... Immaginate se... Vi invito a provare."
+     ],
+     "q": "De quoi aimerais-tu convaincre tes amis ?",
+     "c": "Écris trois phrases persuasives pour une idée : une question, une insistance, un exemple."
+    },
+    "it": {
+     "t": "Il linguaggio persuasivo",
+     "g": "Convincere con domande retoriche, enfasi ed esempi.",
+     "p": [
+      "Domande retoriche: Chi non vorrebbe vivere in una città più verde? Non è forse vero che...?",
+      "Enfasi: È proprio questo il punto. Ciò che conta davvero è... Non solo... ma anche...",
+      "Esempi e inviti: Pensate, per esempio, a... Immaginate se... Vi invito a provare."
+     ],
+     "q": "Di che cosa ti piacerebbe convincere i tuoi amici?",
+     "c": "Scrivi tre frasi persuasive per un'idea: una domanda, un'enfasi, un esempio."
+    },
+    "pt": {
+     "t": "Linguagem persuasiva",
+     "g": "Convencer com perguntas retóricas, ênfase e exemplos.",
+     "p": [
+      "Perguntas retóricas: Chi non vorrebbe vivere in una città più verde? Non è forse vero che...?",
+      "Ênfase: È proprio questo il punto. Ciò che conta davvero è... Non solo... ma anche...",
+      "Exemplos e apelos: Pensate, per esempio, a... Immaginate se... Vi invito a provare."
+     ],
+     "q": "De que adorarias convencer os teus amigos?",
+     "c": "Escreve três frases persuasivas para uma ideia: uma pergunta, uma ênfase, um exemplo."
+    },
+    "pt_BR": {
+     "t": "Linguagem persuasiva",
+     "g": "Convencer com perguntas retóricas, ênfase e exemplos.",
+     "p": [
+      "Perguntas retóricas: Chi non vorrebbe vivere in una città più verde? Non è forse vero che...?",
+      "Ênfase: È proprio questo il punto. Ciò che conta davvero è... Non solo... ma anche...",
+      "Exemplos e apelos: Pensate, per esempio, a... Immaginate se... Vi invito a provare."
+     ],
+     "q": "Do que você adoraria convencer seus amigos?",
+     "c": "Escreva três frases persuasivas para uma ideia: uma pergunta, uma ênfase, um exemplo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "non è forse vero che",
+      "ex": "Non è forse vero che tutti amiamo viaggiare?"
+     },
+     {
+      "w": "ciò che conta",
+      "ex": "Ciò che conta davvero è la qualità."
+     },
+     {
+      "w": "non solo... ma anche",
+      "ex": "Non solo è utile, ma anche divertente."
+     },
+     {
+      "w": "immaginate se",
+      "ex": "Immaginate se ogni scuola avesse un orto."
+     },
+     {
+      "w": "convincere",
+      "ex": "Mi hai convinto: domani provo anch'io!"
+     },
+     {
+      "w": "vi invito a",
+      "ex": "Vi invito a provare questa esperienza."
+     }
+    ],
+    "gram": "Frase scissa per enfasi: È proprio questo che voglio dire. Ciò che / Quello che + verbo: Ciò che conta è..."
+   }
+  },
+  {
+   "d": 314,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Expressing nuance and hedging",
+     "g": "Soften your statements with forse, in un certo senso, tendenzialmente.",
+     "p": [
+      "Hedging adverbs: forse, probabilmente, tendenzialmente (generally), in un certo senso (in a way).",
+      "The conditional softens claims: Direi che..., Sembrerebbe che..., Potrebbe essere utile.",
+      "Limit your claim: In linea di massima, Per quanto ne so (as far as I know), Non ne sono del tutto sicuro."
+     ],
+     "q": "Is there a topic where your opinion is, in un certo senso, not black and white?",
+     "c": "Take a strong opinion and rewrite it three times, more softly each time."
+    },
+    "de": {
+     "t": "Nuancen und vorsichtige Aussagen",
+     "g": "Du schwächst Aussagen ab mit forse, in un certo senso, tendenzialmente.",
+     "p": [
+      "Abschwächende Adverbien: forse, probabilmente, tendenzialmente (tendenziell), in un certo senso (gewissermaßen).",
+      "Der Konditional macht Aussagen vorsichtiger: Direi che..., Sembrerebbe che..., Potrebbe essere utile.",
+      "Begrenze die Aussage: In linea di massima, Per quanto ne so (soweit ich weiß), Non ne sono del tutto sicuro."
+     ],
+     "q": "Gibt es ein Thema, bei dem deine Meinung in un certo senso nicht schwarz-weiß ist?",
+     "c": "Nimm eine starke Meinung und formuliere sie dreimal um, jedes Mal vorsichtiger."
+    },
+    "es": {
+     "t": "Matizar y suavizar",
+     "g": "Suavizar tus afirmaciones con forse, in un certo senso, tendenzialmente.",
+     "p": [
+      "Adverbios para matizar: forse, probabilmente, tendenzialmente (en general), in un certo senso (en cierto modo).",
+      "El condicional suaviza: Direi che..., Sembrerebbe che..., Potrebbe essere utile.",
+      "Limita tu afirmación: In linea di massima, Per quanto ne so (que yo sepa), Non ne sono del tutto sicuro."
+     ],
+     "q": "¿Hay algún tema en el que tu opinión, in un certo senso, no sea blanco o negro?",
+     "c": "Toma una opinión tajante y reescríbela tres veces, cada vez más suave."
+    },
+    "fr": {
+     "t": "Nuancer ses propos",
+     "g": "Atténuer tes affirmations avec forse, in un certo senso, tendenzialmente.",
+     "p": [
+      "Adverbes de nuance : forse, probabilmente, tendenzialmente (en général), in un certo senso (d'une certaine façon).",
+      "Le conditionnel atténue : Direi che..., Sembrerebbe che..., Potrebbe essere utile.",
+      "Limite ton affirmation : In linea di massima, Per quanto ne so (pour autant que je sache), Non ne sono del tutto sicuro."
+     ],
+     "q": "Y a-t-il un sujet où ton avis, in un certo senso, n'est ni blanc ni noir ?",
+     "c": "Prends une opinion tranchée et réécris-la trois fois, de plus en plus nuancée."
+    },
+    "it": {
+     "t": "Sfumare e attenuare",
+     "g": "Attenuare le tue affermazioni con forse, in un certo senso, tendenzialmente.",
+     "p": [
+      "Avverbi per sfumare: forse, probabilmente, tendenzialmente, in un certo senso, piuttosto.",
+      "Il condizionale attenua: Direi che..., Sembrerebbe che..., Potrebbe essere utile.",
+      "Limita l'affermazione: In linea di massima, Per quanto ne so, Non ne sono del tutto sicuro."
+     ],
+     "q": "C'è un argomento su cui la tua opinione, in un certo senso, non è bianca o nera?",
+     "c": "Prendi un'opinione netta e riscrivila tre volte, ogni volta più sfumata."
+    },
+    "pt": {
+     "t": "Matizar e suavizar",
+     "g": "Suavizar as tuas afirmações com forse, in un certo senso, tendenzialmente.",
+     "p": [
+      "Advérbios para matizar: forse, probabilmente, tendenzialmente (em geral), in un certo senso (de certa forma).",
+      "O condicional suaviza: Direi che..., Sembrerebbe che..., Potrebbe essere utile.",
+      "Limita a afirmação: In linea di massima, Per quanto ne so (que eu saiba), Non ne sono del tutto sicuro."
+     ],
+     "q": "Há algum tema em que a tua opinião, in un certo senso, não é preto no branco?",
+     "c": "Pega numa opinião forte e reescreve-a três vezes, cada vez mais suave."
+    },
+    "pt_BR": {
+     "t": "Nuançar e suavizar",
+     "g": "Suavizar suas afirmações com forse, in un certo senso, tendenzialmente.",
+     "p": [
+      "Advérbios para nuançar: forse, probabilmente, tendenzialmente (em geral), in un certo senso (de certa forma).",
+      "O condicional suaviza: Direi che..., Sembrerebbe che..., Potrebbe essere utile.",
+      "Limite a afirmação: In linea di massima, Per quanto ne so (que eu saiba), Non ne sono del tutto sicuro."
+     ],
+     "q": "Existe algum tema em que sua opinião, in un certo senso, não é preto no branco?",
+     "c": "Pegue uma opinião forte e reescreva três vezes, cada vez mais suave."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "tendenzialmente",
+      "ex": "Tendenzialmente preferisco lavorare la mattina."
+     },
+     {
+      "w": "in un certo senso",
+      "ex": "In un certo senso hai ragione anche tu."
+     },
+     {
+      "w": "direi che",
+      "ex": "Direi che il risultato è abbastanza positivo."
+     },
+     {
+      "w": "sembrerebbe che",
+      "ex": "Sembrerebbe che il problema sia risolto."
+     },
+     {
+      "w": "in linea di massima",
+      "ex": "In linea di massima sono d'accordo con te."
+     },
+     {
+      "w": "per quanto ne so",
+      "ex": "Per quanto ne so, il museo apre alle nove."
+     }
+    ],
+    "gram": "Condizionale di attenuazione: direi, sembrerebbe, potrebbe. Sembrerebbe che + congiuntivo: sembrerebbe che sia vero."
+   }
+  },
+  {
+   "d": 315,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Review: professional Italian",
+     "g": "Recap formal writing, interviews, meetings and persuasion.",
+     "p": [
+      "Writing: formal openings (Gentile..., Spettabile...), Le scrivo per..., porgo cordiali saluti.",
+      "Speaking: interviews (sono riuscito a, mi vedo), meetings (passo la parola, riassumendo), dinners (brindisi).",
+      "Style: persuade with Non è forse vero che... and soften with direi che, tendenzialmente."
+     ],
+     "q": "Which professional situation in Italian would you feel most confident in now?",
+     "c": "Role-play with me: I'm the interviewer, answer two questions in formal Italian."
+    },
+    "de": {
+     "t": "Wiederholung: berufliches Italienisch",
+     "g": "Du wiederholst formelles Schreiben, Vorstellungsgespräche, Besprechungen und Überzeugen.",
+     "p": [
+      "Schreiben: formelle Anreden (Gentile..., Spettabile...), Le scrivo per..., porgo cordiali saluti.",
+      "Sprechen: Interview (sono riuscito a, mi vedo), Besprechung (passo la parola, riassumendo), Essen (brindisi).",
+      "Stil: überzeugen mit Non è forse vero che... und abschwächen mit direi che, tendenzialmente."
+     ],
+     "q": "In welcher beruflichen Situation auf Italienisch fühlst du dich jetzt am sichersten?",
+     "c": "Rollenspiel mit mir: Ich führe das Interview, beantworte zwei Fragen formell."
+    },
+    "es": {
+     "t": "Repaso: italiano profesional",
+     "g": "Repasar escritura formal, entrevistas, reuniones y persuasión.",
+     "p": [
+      "Escritura: saludos formales (Gentile..., Spettabile...), Le scrivo per..., porgo cordiali saluti.",
+      "Oral: entrevista (sono riuscito a, mi vedo), reunión (passo la parola, riassumendo), cena (brindisi).",
+      "Estilo: persuadir con Non è forse vero che... y matizar con direi che, tendenzialmente."
+     ],
+     "q": "¿En qué situación profesional en italiano te sentirías más seguro ahora?",
+     "c": "Juego de rol: yo soy el entrevistador, responde a dos preguntas en italiano formal."
+    },
+    "fr": {
+     "t": "Révision : italien professionnel",
+     "g": "Réviser l'écrit formel, les entretiens, les réunions et la persuasion.",
+     "p": [
+      "Écrit : formules d'appel (Gentile..., Spettabile...), Le scrivo per..., porgo cordiali saluti.",
+      "Oral : entretien (sono riuscito a, mi vedo), réunion (passo la parola, riassumendo), dîner (brindisi).",
+      "Style : convaincre avec Non è forse vero che... et nuancer avec direi che, tendenzialmente."
+     ],
+     "q": "Dans quelle situation professionnelle en italien te sentirais-tu le plus à l'aise maintenant ?",
+     "c": "Jeu de rôle : je suis le recruteur, réponds à deux questions en italien formel."
+    },
+    "it": {
+     "t": "Ripasso: italiano professionale",
+     "g": "Ripassare scrittura formale, colloqui, riunioni e persuasione.",
+     "p": [
+      "Scrittura: aperture formali (Gentile..., Spettabile...), Le scrivo per..., porgo cordiali saluti.",
+      "Parlato: colloquio (sono riuscito a, mi vedo), riunione (passo la parola, riassumendo), cena (brindisi).",
+      "Stile: persuadere con Non è forse vero che... e attenuare con direi che, tendenzialmente."
+     ],
+     "q": "In quale situazione professionale ti sentiresti più sicuro adesso?",
+     "c": "Gioco di ruolo: io faccio il selezionatore, rispondi a due domande in italiano formale."
+    },
+    "pt": {
+     "t": "Revisão: italiano profissional",
+     "g": "Rever escrita formal, entrevistas, reuniões e persuasão.",
+     "p": [
+      "Escrita: aberturas formais (Gentile..., Spettabile...), Le scrivo per..., porgo cordiali saluti.",
+      "Oral: entrevista (sono riuscito a, mi vedo), reunião (passo la parola, riassumendo), jantar (brindisi).",
+      "Estilo: persuadir com Non è forse vero che... e suavizar com direi che, tendenzialmente."
+     ],
+     "q": "Em que situação profissional em italiano te sentirias mais seguro agora?",
+     "c": "Jogo de papéis: eu sou o entrevistador, responde a duas perguntas em italiano formal."
+    },
+    "pt_BR": {
+     "t": "Revisão: italiano profissional",
+     "g": "Revisar escrita formal, entrevistas, reuniões e persuasão.",
+     "p": [
+      "Escrita: aberturas formais (Gentile..., Spettabile...), Le scrivo per..., porgo cordiali saluti.",
+      "Oral: entrevista (sono riuscito a, mi vedo), reunião (passo la parola, riassumendo), jantar (brindisi).",
+      "Estilo: persuadir com Non è forse vero che... e suavizar com direi che, tendenzialmente."
+     ],
+     "q": "Em que situação profissional em italiano você se sentiria mais seguro agora?",
+     "c": "Role-play: eu sou o entrevistador, responda a duas perguntas em italiano formal."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Gentile Dottoressa",
+      "ex": "Gentile Dottoressa Bianchi, La ringrazio per la risposta."
+     },
+     {
+      "w": "Le scrivo per",
+      "ex": "Le scrivo per avere informazioni sul corso."
+     },
+     {
+      "w": "passare la parola",
+      "ex": "Passo la parola alla collega per le conclusioni."
+     },
+     {
+      "w": "sono riuscito a",
+      "ex": "Sono riuscito a migliorare i risultati del team."
+     },
+     {
+      "w": "direi che",
+      "ex": "Direi che possiamo chiudere qui la riunione."
+     },
+     {
+      "w": "in attesa di un Suo riscontro",
+      "ex": "In attesa di un Suo riscontro, Le porgo cordiali saluti."
+     }
+    ],
+    "gram": "Pronomi di cortesia con maiuscola nello scritto formale: La ringrazio, Le scrivo, un Suo riscontro."
+   }
+  },
+  {
+   "d": 316,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Italian history: Ancient Rome",
+     "g": "Narrate Rome's founding legend, the Republic and the Empire simply.",
+     "p": [
+      "Legend: Romolo e Remo, raised by a she-wolf; Rome founded, according to tradition, in 753 BC.",
+      "The Republic (509 BC) had consuls and a Senate; Giulio Cesare's power marked its crisis.",
+      "The Empire began with Augusto in 27 BC; the Western Empire ended in 476 AD."
+     ],
+     "q": "What fascinates you most about Ancient Rome?",
+     "c": "Tell the legend of Romulus and Remus in four sentences using the passato remoto."
+    },
+    "de": {
+     "t": "Italienische Geschichte: das antike Rom",
+     "g": "Du erzählst einfach von Roms Gründungslegende, der Republik und dem Kaiserreich.",
+     "p": [
+      "Legende: Romolo e Remo, von einer Wölfin aufgezogen; Rom laut Überlieferung 753 v. Chr. gegründet.",
+      "Die Republik (509 v. Chr.) hatte Konsuln und einen Senat; Giulio Cesares Macht markierte ihre Krise.",
+      "Das Kaiserreich begann mit Augusto 27 v. Chr.; das Weströmische Reich endete 476 n. Chr."
+     ],
+     "q": "Was fasziniert dich am antiken Rom am meisten?",
+     "c": "Erzähl die Legende von Romulus und Remus in vier Sätzen im passato remoto."
+    },
+    "es": {
+     "t": "Historia de Italia: la antigua Roma",
+     "g": "Narrar de forma sencilla la leyenda de la fundación, la República y el Imperio.",
+     "p": [
+      "Leyenda: Romolo e Remo, criados por una loba; Roma fundada, según la tradición, en el 753 a. C.",
+      "La República (509 a. C.) tenía cónsules y Senado; el poder de Giulio Cesare marcó su crisis.",
+      "El Imperio empezó con Augusto en el 27 a. C.; el de Occidente terminó en el 476 d. C."
+     ],
+     "q": "¿Qué es lo que más te fascina de la antigua Roma?",
+     "c": "Cuenta la leyenda de Rómulo y Remo en cuatro frases con el passato remoto."
+    },
+    "fr": {
+     "t": "Histoire de l'Italie : la Rome antique",
+     "g": "Raconter simplement la légende de la fondation, la République et l'Empire.",
+     "p": [
+      "Légende : Romolo e Remo, élevés par une louve ; Rome fondée, selon la tradition, en 753 av. J.-C.",
+      "La République (509 av. J.-C.) avait des consuls et un Sénat ; le pouvoir de Giulio Cesare marqua sa crise.",
+      "L'Empire commença avec Augusto en 27 av. J.-C. ; l'Empire d'Occident prit fin en 476."
+     ],
+     "q": "Qu'est-ce qui te fascine le plus dans la Rome antique ?",
+     "c": "Raconte la légende de Romulus et Rémus en quatre phrases au passato remoto."
+    },
+    "it": {
+     "t": "Storia d'Italia: l'antica Roma",
+     "g": "Raccontare in modo semplice la leggenda della fondazione, la Repubblica e l'Impero.",
+     "p": [
+      "Leggenda: Romolo e Remo, allattati da una lupa; Roma fondata, secondo la tradizione, nel 753 a.C.",
+      "La Repubblica (509 a.C.) aveva consoli e Senato; il potere di Giulio Cesare ne segnò la crisi.",
+      "L'Impero iniziò con Augusto nel 27 a.C.; l'Impero d'Occidente finì nel 476 d.C."
+     ],
+     "q": "Che cosa ti affascina di più dell'antica Roma?",
+     "c": "Racconta la leggenda di Romolo e Remo in quattro frasi al passato remoto."
+    },
+    "pt": {
+     "t": "História de Itália: a Roma antiga",
+     "g": "Narrar de forma simples a lenda da fundação, a República e o Império.",
+     "p": [
+      "Lenda: Romolo e Remo, criados por uma loba; Roma fundada, segundo a tradição, em 753 a.C.",
+      "A República (509 a.C.) tinha cônsules e Senado; o poder de Giulio Cesare marcou a sua crise.",
+      "O Império começou com Augusto em 27 a.C.; o Império do Ocidente terminou em 476 d.C."
+     ],
+     "q": "O que mais te fascina na Roma antiga?",
+     "c": "Conta a lenda de Rómulo e Remo em quatro frases no passato remoto."
+    },
+    "pt_BR": {
+     "t": "História da Itália: a Roma antiga",
+     "g": "Narrar de forma simples a lenda da fundação, a República e o Império.",
+     "p": [
+      "Lenda: Romolo e Remo, criados por uma loba; Roma fundada, segundo a tradição, em 753 a.C.",
+      "A República (509 a.C.) tinha cônsules e Senado; o poder de Giulio Cesare marcou sua crise.",
+      "O Império começou com Augusto em 27 a.C.; o Império do Ocidente terminou em 476 d.C."
+     ],
+     "q": "O que mais fascina você na Roma antiga?",
+     "c": "Conte a lenda de Rômulo e Remo em quatro frases no passato remoto."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la leggenda",
+      "ex": "Secondo la leggenda, Roma fu fondata da Romolo."
+     },
+     {
+      "w": "fondare",
+      "ex": "I Romani fondarono molte città in tutta Europa."
+     },
+     {
+      "w": "la lupa",
+      "ex": "La lupa è il simbolo della città di Roma."
+     },
+     {
+      "w": "il Senato",
+      "ex": "Il Senato aveva un ruolo centrale nella Repubblica."
+     },
+     {
+      "w": "l'imperatore",
+      "ex": "Augusto fu il primo imperatore romano."
+     },
+     {
+      "w": "l'acquedotto",
+      "ex": "Gli acquedotti romani portavano acqua alle città."
+     }
+    ],
+    "gram": "Passato remoto per la storia lontana: fondò, fu, nacque, ebbe, divenne; regolari: -ò, -é/-ette, -ì."
+   }
+  },
+  {
+   "d": 317,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Italian history: the Middle Ages",
+     "g": "Talk about communes, maritime republics and the rise of Florence and Venice.",
+     "p": [
+      "After 476, Italy was divided; from around the 11th century free cities, i Comuni, governed themselves.",
+      "The maritime republics, Venezia, Genova, Pisa and Amalfi, grew rich through Mediterranean trade.",
+      "Florence prospered through banking and wool; Venice became a great sea power for centuries."
+     ],
+     "q": "Which medieval Italian city would you like to visit, and why?",
+     "c": "Write three sentences about a medieval city using fu, divenne and si sviluppò."
+    },
+    "de": {
+     "t": "Italienische Geschichte: das Mittelalter",
+     "g": "Du sprichst über Kommunen, Seerepubliken und den Aufstieg von Florenz und Venedig.",
+     "p": [
+      "Nach 476 war Italien geteilt; etwa ab dem 11. Jahrhundert regierten sich freie Städte, i Comuni, selbst.",
+      "Die Seerepubliken Venezia, Genova, Pisa und Amalfi wurden durch den Mittelmeerhandel reich.",
+      "Florenz blühte durch Banken und Wolle; Venedig war jahrhundertelang eine große Seemacht."
+     ],
+     "q": "Welche mittelalterliche Stadt Italiens möchtest du besuchen, und warum?",
+     "c": "Schreib drei Sätze über eine mittelalterliche Stadt mit fu, divenne und si sviluppò."
+    },
+    "es": {
+     "t": "Historia de Italia: la Edad Media",
+     "g": "Hablar de las comunas, las repúblicas marítimas y el auge de Florencia y Venecia.",
+     "p": [
+      "Tras el 476, Italia quedó dividida; desde el siglo XI aprox. las ciudades libres, i Comuni, se gobernaron solas.",
+      "Las repúblicas marítimas, Venezia, Genova, Pisa y Amalfi, se enriquecieron con el comercio mediterráneo.",
+      "Florencia prosperó con la banca y la lana; Venecia fue una gran potencia marítima durante siglos."
+     ],
+     "q": "¿Qué ciudad medieval italiana te gustaría visitar, y por qué?",
+     "c": "Escribe tres frases sobre una ciudad medieval con fu, divenne y si sviluppò."
+    },
+    "fr": {
+     "t": "Histoire de l'Italie : le Moyen Âge",
+     "g": "Parler des communes, des républiques maritimes et de l'essor de Florence et Venise.",
+     "p": [
+      "Après 476, l'Italie fut divisée ; dès le XIe siècle environ, des villes libres, i Comuni, se gouvernèrent seules.",
+      "Les républiques maritimes, Venezia, Genova, Pisa et Amalfi, s'enrichirent grâce au commerce méditerranéen.",
+      "Florence prospéra grâce à la banque et à la laine ; Venise fut une grande puissance maritime pendant des siècles."
+     ],
+     "q": "Quelle ville médiévale italienne aimerais-tu visiter, et pourquoi ?",
+     "c": "Écris trois phrases sur une ville médiévale avec fu, divenne et si sviluppò."
+    },
+    "it": {
+     "t": "Storia d'Italia: il Medioevo",
+     "g": "Parlare di Comuni, repubbliche marinare e dell'ascesa di Firenze e Venezia.",
+     "p": [
+      "Dopo il 476 l'Italia fu divisa; dall'XI secolo circa le città libere, i Comuni, si governarono da sole.",
+      "Le repubbliche marinare, Venezia, Genova, Pisa e Amalfi, si arricchirono con il commercio nel Mediterraneo.",
+      "Firenze prosperò grazie alle banche e alla lana; Venezia fu per secoli una grande potenza sul mare."
+     ],
+     "q": "Quale città medievale italiana ti piacerebbe visitare, e perché?",
+     "c": "Scrivi tre frasi su una città medievale con fu, divenne e si sviluppò."
+    },
+    "pt": {
+     "t": "História de Itália: a Idade Média",
+     "g": "Falar das comunas, das repúblicas marítimas e da ascensão de Florença e Veneza.",
+     "p": [
+      "Depois de 476, a Itália ficou dividida; desde o século XI, cidades livres, i Comuni, governaram-se sozinhas.",
+      "As repúblicas marítimas, Venezia, Genova, Pisa e Amalfi, enriqueceram com o comércio no Mediterrâneo.",
+      "Florença prosperou com a banca e a lã; Veneza foi durante séculos uma grande potência marítima."
+     ],
+     "q": "Que cidade medieval italiana gostarias de visitar, e porquê?",
+     "c": "Escreve três frases sobre uma cidade medieval com fu, divenne e si sviluppò."
+    },
+    "pt_BR": {
+     "t": "História da Itália: a Idade Média",
+     "g": "Falar das comunas, das repúblicas marítimas e da ascensão de Florença e Veneza.",
+     "p": [
+      "Depois de 476, a Itália ficou dividida; a partir do século XI, cidades livres, i Comuni, se governaram sozinhas.",
+      "As repúblicas marítimas, Venezia, Genova, Pisa e Amalfi, enriqueceram com o comércio no Mediterrâneo.",
+      "Florença prosperou com os bancos e a lã; Veneza foi por séculos uma grande potência marítima."
+     ],
+     "q": "Que cidade medieval italiana você gostaria de visitar, e por quê?",
+     "c": "Escreva três frases sobre uma cidade medieval com fu, divenne e si sviluppò."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il Comune",
+      "ex": "Nel Medioevo molte città diventarono Comuni liberi."
+     },
+     {
+      "w": "la repubblica marinara",
+      "ex": "Amalfi fu una delle prime repubbliche marinare."
+     },
+     {
+      "w": "il mercante",
+      "ex": "I mercanti veneziani commerciavano con l'Oriente."
+     },
+     {
+      "w": "la torre",
+      "ex": "San Gimignano è famosa per le sue torri medievali."
+     },
+     {
+      "w": "arricchirsi",
+      "ex": "Firenze si arricchì grazie al commercio della lana."
+     },
+     {
+      "w": "il secolo",
+      "ex": "Nel tredicesimo secolo le città crebbero molto."
+     }
+    ],
+    "gram": "Secoli: il Duecento (1200-1299), il Trecento, il Quattrocento; si dice anche il XIII secolo."
+   }
+  },
+  {
+   "d": 318,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Italian history: the Renaissance",
+     "g": "Talk about the patrons, artists and scientists who shaped the Renaissance.",
+     "p": [
+      "The Renaissance began in 15th-century Florence, il Quattrocento, with patrons like Lorenzo de' Medici.",
+      "Artists: Leonardo da Vinci, Michelangelo, Raffaello, Botticelli; Brunelleschi built Florence's dome.",
+      "Science and ideas: Leonardo's studies, and later Galileo, who used the telescope to observe the sky."
+     ],
+     "q": "Which Renaissance artist or work do you find most impressive?",
+     "c": "Describe a Renaissance work you know in three sentences: who, when and why you like it."
+    },
+    "de": {
+     "t": "Italienische Geschichte: die Renaissance",
+     "g": "Du sprichst über Mäzene, Künstler und Wissenschaftler, die die Renaissance prägten.",
+     "p": [
+      "Die Renaissance begann im Florenz des 15. Jahrhunderts, il Quattrocento, mit Mäzenen wie Lorenzo de' Medici.",
+      "Künstler: Leonardo da Vinci, Michelangelo, Raffaello, Botticelli; Brunelleschi baute die Domkuppel.",
+      "Wissenschaft: Leonardos Studien und später Galileo, der mit dem Teleskop den Himmel beobachtete."
+     ],
+     "q": "Welcher Künstler oder welches Werk der Renaissance beeindruckt dich am meisten?",
+     "c": "Beschreibe ein Werk der Renaissance in drei Sätzen: wer, wann und warum es dir gefällt."
+    },
+    "es": {
+     "t": "Historia de Italia: el Renacimiento",
+     "g": "Hablar de los mecenas, artistas y científicos que dieron forma al Renacimiento.",
+     "p": [
+      "El Renacimiento nació en la Florencia del siglo XV, il Quattrocento, con mecenas como Lorenzo de' Medici.",
+      "Artistas: Leonardo da Vinci, Miguel Ángel, Rafael, Botticelli; Brunelleschi construyó la cúpula de Florencia.",
+      "Ciencia e ideas: los estudios de Leonardo y, más tarde, Galileo, que observó el cielo con el telescopio."
+     ],
+     "q": "¿Qué artista u obra del Renacimiento te impresiona más?",
+     "c": "Describe una obra renacentista en tres frases: quién, cuándo y por qué te gusta."
+    },
+    "fr": {
+     "t": "Histoire de l'Italie : la Renaissance",
+     "g": "Parler des mécènes, artistes et savants qui ont façonné la Renaissance.",
+     "p": [
+      "La Renaissance naquit à Florence au XVe siècle, il Quattrocento, avec des mécènes comme Laurent de Médicis.",
+      "Artistes : Léonard de Vinci, Michel-Ange, Raphaël, Botticelli ; Brunelleschi construisit la coupole de Florence.",
+      "Science : les études de Léonard, puis Galilée, qui observa le ciel avec la lunette."
+     ],
+     "q": "Quel artiste ou quelle œuvre de la Renaissance t'impressionne le plus ?",
+     "c": "Décris une œuvre de la Renaissance en trois phrases : qui, quand et pourquoi elle te plaît."
+    },
+    "it": {
+     "t": "Storia d'Italia: il Rinascimento",
+     "g": "Parlare dei mecenati, degli artisti e degli scienziati che hanno segnato il Rinascimento.",
+     "p": [
+      "Il Rinascimento nacque nella Firenze del Quattrocento, con mecenati come Lorenzo de' Medici.",
+      "Artisti: Leonardo da Vinci, Michelangelo, Raffaello, Botticelli; Brunelleschi costruì la cupola del Duomo.",
+      "Scienza e idee: gli studi di Leonardo e, più tardi, Galileo, che osservò il cielo con il cannocchiale."
+     ],
+     "q": "Quale artista o quale opera del Rinascimento ti colpisce di più?",
+     "c": "Descrivi un'opera rinascimentale in tre frasi: chi, quando e perché ti piace."
+    },
+    "pt": {
+     "t": "História de Itália: o Renascimento",
+     "g": "Falar dos mecenas, artistas e cientistas que marcaram o Renascimento.",
+     "p": [
+      "O Renascimento nasceu na Florença do século XV, il Quattrocento, com mecenas como Lorenzo de' Medici.",
+      "Artistas: Leonardo da Vinci, Miguel Ângelo, Rafael, Botticelli; Brunelleschi construiu a cúpula de Florença.",
+      "Ciência e ideias: os estudos de Leonardo e, mais tarde, Galileu, que observou o céu com o telescópio."
+     ],
+     "q": "Que artista ou obra do Renascimento te impressiona mais?",
+     "c": "Descreve uma obra renascentista em três frases: quem, quando e porque gostas dela."
+    },
+    "pt_BR": {
+     "t": "História da Itália: o Renascimento",
+     "g": "Falar dos mecenas, artistas e cientistas que marcaram o Renascimento.",
+     "p": [
+      "O Renascimento nasceu na Florença do século XV, il Quattrocento, com mecenas como Lorenzo de' Medici.",
+      "Artistas: Leonardo da Vinci, Michelangelo, Rafael, Botticelli; Brunelleschi construiu a cúpula de Florença.",
+      "Ciência e ideias: os estudos de Leonardo e, mais tarde, Galileu, que observou o céu com o telescópio."
+     ],
+     "q": "Que artista ou obra do Renascimento mais impressiona você?",
+     "c": "Descreva uma obra renascentista em três frases: quem, quando e por que você gosta dela."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il mecenate",
+      "ex": "Lorenzo de' Medici fu un grande mecenate."
+     },
+     {
+      "w": "il capolavoro",
+      "ex": "La Gioconda è il capolavoro di Leonardo."
+     },
+     {
+      "w": "l'affresco",
+      "ex": "Michelangelo dipinse gli affreschi della Cappella Sistina."
+     },
+     {
+      "w": "la cupola",
+      "ex": "La cupola del Duomo di Firenze è di Brunelleschi."
+     },
+     {
+      "w": "la bottega",
+      "ex": "I giovani artisti imparavano nella bottega di un maestro."
+     },
+     {
+      "w": "rinascimentale",
+      "ex": "Firenze conserva molti palazzi rinascimentali."
+     }
+    ],
+    "gram": "Passato remoto irregolare: dipingere > dipinse, nascere > nacque, costruire > costruì, vivere > visse."
+   }
+  },
+  {
+   "d": 319,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Italian history: unification",
+     "g": "Talk about Garibaldi, Cavour and the birth of the Kingdom of Italy in 1861.",
+     "p": [
+      "Il Risorgimento was the 19th-century movement to unite the many Italian states into one nation.",
+      "Cavour, a skilled diplomat, led Piedmont; Garibaldi and the Mille sailed to Sicily in 1860.",
+      "The Kingdom of Italy was proclaimed in 1861; Rome became part of it in 1870 and later the capital."
+     ],
+     "q": "Is there a historical figure from your country who united or changed it?",
+     "c": "Write three sentences about the Risorgimento using the passive: fu proclamato, fu unita."
+    },
+    "de": {
+     "t": "Italienische Geschichte: die Einigung",
+     "g": "Du sprichst über Garibaldi, Cavour und die Gründung des Königreichs Italien 1861.",
+     "p": [
+      "Il Risorgimento war die Bewegung des 19. Jahrhunderts, die viele italienische Staaten zu einer Nation einte.",
+      "Cavour, ein geschickter Diplomat, führte Piemont; Garibaldi und die Mille segelten 1860 nach Sizilien.",
+      "Das Königreich Italien wurde 1861 ausgerufen; Rom kam 1870 dazu und wurde später Hauptstadt."
+     ],
+     "q": "Gibt es eine historische Figur in deinem Land, die es geeint oder verändert hat?",
+     "c": "Schreib drei Sätze über das Risorgimento im Passiv: fu proclamato, fu unita."
+    },
+    "es": {
+     "t": "Historia de Italia: la unificación",
+     "g": "Hablar de Garibaldi, Cavour y el nacimiento del Reino de Italia en 1861.",
+     "p": [
+      "Il Risorgimento fue el movimiento del siglo XIX que unió los muchos estados italianos en una nación.",
+      "Cavour, hábil diplomático, guiaba el Piamonte; Garibaldi y los Mille navegaron a Sicilia en 1860.",
+      "El Reino de Italia se proclamó en 1861; Roma se incorporó en 1870 y luego fue la capital."
+     ],
+     "q": "¿Hay alguna figura histórica de tu país que lo uniera o lo cambiara?",
+     "c": "Escribe tres frases sobre el Risorgimento en pasiva: fu proclamato, fu unita."
+    },
+    "fr": {
+     "t": "Histoire de l'Italie : l'unification",
+     "g": "Parler de Garibaldi, de Cavour et de la naissance du Royaume d'Italie en 1861.",
+     "p": [
+      "Il Risorgimento fut le mouvement du XIXe siècle qui unit les nombreux États italiens en une nation.",
+      "Cavour, habile diplomate, dirigeait le Piémont ; Garibaldi et les Mille partirent pour la Sicile en 1860.",
+      "Le Royaume d'Italie fut proclamé en 1861 ; Rome le rejoignit en 1870 et en devint ensuite la capitale."
+     ],
+     "q": "Y a-t-il une figure historique de ton pays qui l'a uni ou transformé ?",
+     "c": "Écris trois phrases sur le Risorgimento au passif : fu proclamato, fu unita."
+    },
+    "it": {
+     "t": "Storia d'Italia: l'unificazione",
+     "g": "Parlare di Garibaldi, Cavour e della nascita del Regno d'Italia nel 1861.",
+     "p": [
+      "Il Risorgimento fu il movimento ottocentesco che riunì i tanti Stati italiani in una sola nazione.",
+      "Cavour, abile diplomatico, guidava il Piemonte; Garibaldi con i Mille sbarcò in Sicilia nel 1860.",
+      "Il Regno d'Italia fu proclamato nel 1861; Roma ne entrò a far parte nel 1870 e poi ne divenne la capitale."
+     ],
+     "q": "C'è un personaggio storico del tuo Paese che lo ha unito o cambiato?",
+     "c": "Scrivi tre frasi sul Risorgimento al passivo: fu proclamato, fu unita."
+    },
+    "pt": {
+     "t": "História de Itália: a unificação",
+     "g": "Falar de Garibaldi, Cavour e do nascimento do Reino de Itália em 1861.",
+     "p": [
+      "Il Risorgimento foi o movimento do século XIX que uniu os muitos estados italianos numa nação.",
+      "Cavour, hábil diplomata, liderava o Piemonte; Garibaldi e os Mille navegaram para a Sicília em 1860.",
+      "O Reino de Itália foi proclamado em 1861; Roma juntou-se em 1870 e depois tornou-se a capital."
+     ],
+     "q": "Há alguma figura histórica do teu país que o tenha unido ou mudado?",
+     "c": "Escreve três frases sobre o Risorgimento na passiva: fu proclamato, fu unita."
+    },
+    "pt_BR": {
+     "t": "História da Itália: a unificação",
+     "g": "Falar de Garibaldi, Cavour e do nascimento do Reino da Itália em 1861.",
+     "p": [
+      "Il Risorgimento foi o movimento do século XIX que uniu os muitos estados italianos numa nação.",
+      "Cavour, hábil diplomata, liderava o Piemonte; Garibaldi e os Mille navegaram para a Sicília em 1860.",
+      "O Reino da Itália foi proclamado em 1861; Roma entrou em 1870 e depois virou a capital."
+     ],
+     "q": "Existe alguma figura histórica do seu país que o tenha unido ou mudado?",
+     "c": "Escreva três frases sobre o Risorgimento na passiva: fu proclamato, fu unita."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il Risorgimento",
+      "ex": "Il Risorgimento portò all'unità d'Italia."
+     },
+     {
+      "w": "l'unità",
+      "ex": "L'unità d'Italia fu proclamata nel 1861."
+     },
+     {
+      "w": "la spedizione",
+      "ex": "La spedizione dei Mille partì da Quarto nel 1860."
+     },
+     {
+      "w": "proclamare",
+      "ex": "Il Regno d'Italia fu proclamato a Torino."
+     },
+     {
+      "w": "la capitale",
+      "ex": "Roma divenne capitale d'Italia nel 1871."
+     },
+     {
+      "w": "l'eroe",
+      "ex": "Garibaldi è ricordato come l'eroe dei due mondi."
+     }
+    ],
+    "gram": "Passivo storico: essere al passato remoto + participio: fu proclamato, furono unite; con venire: venne firmato."
+   }
+  },
+  {
+   "d": 320,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Modern Italy",
+     "g": "Talk about the Republic since 1946, the economic boom and Italy in Europe.",
+     "p": [
+      "On 2 June 1946 Italians chose the Republic by referendum; women voted nationally for the first time.",
+      "The Constitution came into force in 1948; the 1950s-60s brought il boom economico and the Fiat 500.",
+      "Italy was a founding member of the European communities in 1957 and uses the euro."
+     ],
+     "q": "What do you associate most with modern Italy: design, food, cinema or something else?",
+     "c": "Write three sentences about modern Italy using dal 1946, negli anni Sessanta and oggi."
+    },
+    "de": {
+     "t": "Das moderne Italien",
+     "g": "Du sprichst über die Republik seit 1946, das Wirtschaftswunder und Italien in Europa.",
+     "p": [
+      "Am 2. Juni 1946 wählten die Italiener per Referendum die Republik; Frauen wählten erstmals landesweit.",
+      "1948 trat die Verfassung in Kraft; die 50er und 60er brachten il boom economico und den Fiat 500.",
+      "Italien war 1957 Gründungsmitglied der Europäischen Gemeinschaften und nutzt den Euro."
+     ],
+     "q": "Was verbindest du am meisten mit dem modernen Italien: Design, Essen, Kino oder etwas anderes?",
+     "c": "Schreib drei Sätze über das moderne Italien mit dal 1946, negli anni Sessanta und oggi."
+    },
+    "es": {
+     "t": "La Italia moderna",
+     "g": "Hablar de la República desde 1946, el boom económico e Italia en Europa.",
+     "p": [
+      "El 2 de junio de 1946 los italianos eligieron la República en referéndum; las mujeres votaron por primera vez a nivel nacional.",
+      "La Constitución entró en vigor en 1948; los años 50 y 60 trajeron il boom economico y el Fiat 500.",
+      "Italia fue miembro fundador de las comunidades europeas en 1957 y usa el euro."
+     ],
+     "q": "¿Qué asocias más con la Italia moderna: diseño, comida, cine u otra cosa?",
+     "c": "Escribe tres frases sobre la Italia moderna con dal 1946, negli anni Sessanta y oggi."
+    },
+    "fr": {
+     "t": "L'Italie moderne",
+     "g": "Parler de la République depuis 1946, du miracle économique et de l'Italie en Europe.",
+     "p": [
+      "Le 2 juin 1946, les Italiens choisirent la République par référendum ; les femmes votaient pour la première fois au niveau national.",
+      "La Constitution entra en vigueur en 1948 ; les années 50-60 apportèrent il boom economico et la Fiat 500.",
+      "L'Italie fut membre fondateur des communautés européennes en 1957 et utilise l'euro."
+     ],
+     "q": "Qu'associes-tu le plus à l'Italie moderne : design, cuisine, cinéma ou autre chose ?",
+     "c": "Écris trois phrases sur l'Italie moderne avec dal 1946, negli anni Sessanta et oggi."
+    },
+    "it": {
+     "t": "L'Italia moderna",
+     "g": "Parlare della Repubblica dal 1946, del boom economico e dell'Italia in Europa.",
+     "p": [
+      "Il 2 giugno 1946 gli italiani scelsero la Repubblica con un referendum; le donne votarono per la prima volta a livello nazionale.",
+      "La Costituzione entrò in vigore nel 1948; gli anni Cinquanta e Sessanta portarono il boom economico e la Fiat 500.",
+      "L'Italia fu tra i Paesi fondatori delle Comunità europee nel 1957 e usa l'euro."
+     ],
+     "q": "Che cosa associ di più all'Italia moderna: design, cucina, cinema o altro?",
+     "c": "Scrivi tre frasi sull'Italia moderna con dal 1946, negli anni Sessanta e oggi."
+    },
+    "pt": {
+     "t": "A Itália moderna",
+     "g": "Falar da República desde 1946, do boom económico e da Itália na Europa.",
+     "p": [
+      "A 2 de junho de 1946, os italianos escolheram a República em referendo; as mulheres votaram pela primeira vez a nível nacional.",
+      "A Constituição entrou em vigor em 1948; os anos 50 e 60 trouxeram il boom economico e o Fiat 500.",
+      "A Itália foi membro fundador das comunidades europeias em 1957 e usa o euro."
+     ],
+     "q": "O que mais associas à Itália moderna: design, comida, cinema ou outra coisa?",
+     "c": "Escreve três frases sobre a Itália moderna com dal 1946, negli anni Sessanta e oggi."
+    },
+    "pt_BR": {
+     "t": "A Itália moderna",
+     "g": "Falar da República desde 1946, do boom econômico e da Itália na Europa.",
+     "p": [
+      "Em 2 de junho de 1946, os italianos escolheram a República em referendo; as mulheres votaram pela primeira vez em nível nacional.",
+      "A Constituição entrou em vigor em 1948; os anos 50 e 60 trouxeram il boom economico e o Fiat 500.",
+      "A Itália foi membro fundador das comunidades europeias em 1957 e usa o euro."
+     ],
+     "q": "O que você mais associa à Itália moderna: design, comida, cinema ou outra coisa?",
+     "c": "Escreva três frases sobre a Itália moderna com dal 1946, negli anni Sessanta e oggi."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la Repubblica",
+      "ex": "La Festa della Repubblica si celebra il 2 giugno."
+     },
+     {
+      "w": "il referendum",
+      "ex": "Nel 1946 gli italiani votarono in un referendum."
+     },
+     {
+      "w": "la Costituzione",
+      "ex": "La Costituzione italiana entrò in vigore nel 1948."
+     },
+     {
+      "w": "il boom economico",
+      "ex": "Durante il boom economico molte famiglie comprarono l'auto."
+     },
+     {
+      "w": "i Paesi fondatori",
+      "ex": "L'Italia è tra i Paesi fondatori dell'Europa unita."
+     },
+     {
+      "w": "il dopoguerra",
+      "ex": "Nel dopoguerra le città furono ricostruite."
+     }
+    ],
+    "gram": "Decenni: gli anni Cinquanta, negli anni Sessanta (in + gli = negli); dal 1946 = da + il 1946."
+   }
+  }
+ ]
+}

@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 211,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Job interviews: common questions",
+     "g": "Prepare clear, confident answers to typical interview questions.",
+     "p": [
+      "Tell me about yourself: role, experience, one strength. I'm a designer with five years' experience in...",
+      "Strengths and weaknesses: I'm very organised. I'm working on public speaking, so I've joined a course.",
+      "Why this job? I'm keen to... I'd love to bring my skills in... Ask them: What does a typical day look like?"
+     ],
+     "q": "Let's practise! Tell me about yourself in three sentences, as if I were the interviewer.",
+     "c": "Write answers to three questions: Tell me about yourself. What are your strengths? Why do you want this job?"
+    },
+    "de": {
+     "t": "Job interviews: common questions",
+     "g": "Du bereitest klare, selbstbewusste Antworten auf typische Interviewfragen vor.",
+     "p": [
+      "Tell me about yourself: Rolle, Erfahrung, eine Stärke. I'm a designer with five years' experience in...",
+      "Stärken und Schwächen: I'm very organised. I'm working on public speaking, so I've joined a course.",
+      "Warum dieser Job? I'm keen to... I'd love to bring my skills in... Frag zurück: What does a typical day look like?"
+     ],
+     "q": "Lass uns üben! Stell dich in drei Sätzen vor, als wäre ich der Interviewer.",
+     "c": "Schreib Antworten auf drei Fragen: Tell me about yourself. What are your strengths? Why do you want this job?"
+    },
+    "es": {
+     "t": "Job interviews: common questions",
+     "g": "Prepara respuestas claras y seguras a las preguntas típicas de una entrevista.",
+     "p": [
+      "Tell me about yourself: puesto, experiencia, una fortaleza. I'm a designer with five years' experience in...",
+      "Fortalezas y debilidades: I'm very organised. I'm working on public speaking, so I've joined a course.",
+      "¿Por qué este puesto? I'm keen to... I'd love to bring my skills in... Pregunta tú: What does a typical day look like?"
+     ],
+     "q": "¡Practiquemos! Háblame de ti en tres frases, como si yo fuera el entrevistador.",
+     "c": "Escribe respuestas a tres preguntas: Tell me about yourself. What are your strengths? Why do you want this job?"
+    },
+    "fr": {
+     "t": "Job interviews: common questions",
+     "g": "Prépare des réponses claires et assurées aux questions classiques d'entretien.",
+     "p": [
+      "Tell me about yourself : poste, expérience, un atout. I'm a designer with five years' experience in...",
+      "Qualités et défauts : I'm very organised. I'm working on public speaking, so I've joined a course.",
+      "Pourquoi ce poste ? I'm keen to... I'd love to bring my skills in... Demande : What does a typical day look like?"
+     ],
+     "q": "Entraînons-nous ! Présente-toi en trois phrases, comme si j'étais le recruteur.",
+     "c": "Écris tes réponses à trois questions : Tell me about yourself. What are your strengths? Why do you want this job?"
+    },
+    "it": {
+     "t": "Job interviews: common questions",
+     "g": "Prepara risposte chiare e sicure alle domande tipiche di un colloquio.",
+     "p": [
+      "Tell me about yourself: ruolo, esperienza, un punto di forza. I'm a designer with five years' experience in...",
+      "Punti di forza e debolezze: I'm very organised. I'm working on public speaking, so I've joined a course.",
+      "Perché questo lavoro? I'm keen to... I'd love to bring my skills in... Chiedi: What does a typical day look like?"
+     ],
+     "q": "Esercitiamoci! Parlami di te in tre frasi, come se fossi il selezionatore.",
+     "c": "Scrivi le risposte a tre domande: Tell me about yourself. What are your strengths? Why do you want this job?"
+    },
+    "pt": {
+     "t": "Job interviews: common questions",
+     "g": "Prepara respostas claras e confiantes para as perguntas típicas de uma entrevista.",
+     "p": [
+      "Tell me about yourself: função, experiência, um ponto forte. I'm a designer with five years' experience in...",
+      "Pontos fortes e fracos: I'm very organised. I'm working on public speaking, so I've joined a course.",
+      "Porquê este emprego? I'm keen to... I'd love to bring my skills in... Pergunta: What does a typical day look like?"
+     ],
+     "q": "Vamos praticar! Fala-me de ti em três frases, como se eu fosse o entrevistador.",
+     "c": "Escreve respostas a três perguntas: Tell me about yourself. What are your strengths? Why do you want this job?"
+    },
+    "pt_BR": {
+     "t": "Job interviews: common questions",
+     "g": "Prepare respostas claras e confiantes para as perguntas típicas de entrevista.",
+     "p": [
+      "Tell me about yourself: cargo, experiência, um ponto forte. I'm a designer with five years' experience in...",
+      "Pontos fortes e fracos: I'm very organised. I'm working on public speaking, so I've joined a course.",
+      "Por que esta vaga? I'm keen to... I'd love to bring my skills in... Pergunte: What does a typical day look like?"
+     ],
+     "q": "Vamos praticar! Fale de você em três frases, como se eu fosse o entrevistador.",
+     "c": "Escreva respostas para três perguntas: Tell me about yourself. What are your strengths? Why do you want this job?"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Tell me about yourself",
+      "ex": "Tell me about yourself and your experience."
+     },
+     {
+      "w": "strengths",
+      "ex": "One of my strengths is solving problems quickly."
+     },
+     {
+      "w": "I'm keen to",
+      "ex": "I'm keen to learn new skills in this role."
+     },
+     {
+      "w": "experience in",
+      "ex": "I have three years' experience in sales."
+     },
+     {
+      "w": "team player",
+      "ex": "I'm a team player and I enjoy helping others."
+     },
+     {
+      "w": "a typical day",
+      "ex": "What does a typical day look like in this job?"
+     }
+    ],
+    "gram": "Interviews: present simple for facts (I work in...), present perfect for experience (I've managed...), I'm keen to for goals."
+   }
+  },
+  {
+   "d": 212,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Writing a CV in English",
+     "g": "Write a clear English CV with action verbs, sections and short lines.",
+     "p": [
+      "Sections: Profile, Work experience, Education, Skills, Languages. Most recent job first.",
+      "Start lines with action verbs, no I: Managed a team of five. Designed a new website. Improved sales by 20%.",
+      "Keep it short and easy to scan: one or two pages, clear dates, the same style for every line."
+     ],
+     "q": "Which three action verbs best describe what you do or did in your work or studies?",
+     "c": "Write a three-line Profile and three bullet-style lines for one job, each starting with an action verb."
+    },
+    "de": {
+     "t": "Writing a CV in English",
+     "g": "Du schreibst einen klaren englischen Lebenslauf mit Aktionsverben, Abschnitten und kurzen Zeilen.",
+     "p": [
+      "Abschnitte: Profile, Work experience, Education, Skills, Languages. Die neueste Stelle zuerst.",
+      "Zeilen mit Aktionsverben beginnen, ohne I: Managed a team of five. Designed a new website. Improved sales by 20%.",
+      "Kurz und leicht lesbar: ein bis zwei Seiten, klare Daten, überall der gleiche Stil."
+     ],
+     "q": "Welche drei Aktionsverben beschreiben am besten, was du bei der Arbeit oder im Studium machst oder gemacht hast?",
+     "c": "Schreib ein Profil in drei Zeilen und drei Stichpunkte zu einer Stelle, jeder mit einem Aktionsverb am Anfang."
+    },
+    "es": {
+     "t": "Writing a CV in English",
+     "g": "Escribe un CV en inglés claro, con verbos de acción, secciones y líneas cortas.",
+     "p": [
+      "Secciones: Profile, Work experience, Education, Skills, Languages. El trabajo más reciente primero.",
+      "Empieza con verbos de acción, sin I: Managed a team of five. Designed a new website. Improved sales by 20%.",
+      "Que sea breve y fácil de leer: una o dos páginas, fechas claras y el mismo estilo en cada línea."
+     ],
+     "q": "¿Qué tres verbos de acción describen mejor lo que haces o hiciste en tu trabajo o tus estudios?",
+     "c": "Escribe un Profile de tres líneas y tres viñetas para un puesto, cada una con un verbo de acción."
+    },
+    "fr": {
+     "t": "Writing a CV in English",
+     "g": "Rédige un CV anglais clair avec des verbes d'action, des rubriques et des lignes courtes.",
+     "p": [
+      "Rubriques : Profile, Work experience, Education, Skills, Languages. Le poste le plus récent en premier.",
+      "Commence par un verbe d'action, sans I : Managed a team of five. Designed a new website. Improved sales by 20%.",
+      "Fais court et lisible : une ou deux pages, des dates claires, le même style à chaque ligne."
+     ],
+     "q": "Quels trois verbes d'action décrivent le mieux ce que tu fais ou as fait au travail ou en études ?",
+     "c": "Écris un Profile de trois lignes et trois puces pour un poste, chacune commençant par un verbe d'action."
+    },
+    "it": {
+     "t": "Writing a CV in English",
+     "g": "Scrivi un CV in inglese chiaro, con verbi d'azione, sezioni e righe brevi.",
+     "p": [
+      "Sezioni: Profile, Work experience, Education, Skills, Languages. Il lavoro più recente per primo.",
+      "Inizia con verbi d'azione, senza I: Managed a team of five. Designed a new website. Improved sales by 20%.",
+      "Breve e facile da leggere: una o due pagine, date chiare e lo stesso stile in ogni riga."
+     ],
+     "q": "Quali tre verbi d'azione descrivono meglio ciò che fai o hai fatto nel lavoro o negli studi?",
+     "c": "Scrivi un Profile di tre righe e tre punti per un lavoro, ognuno con un verbo d'azione all'inizio."
+    },
+    "pt": {
+     "t": "Writing a CV in English",
+     "g": "Escreve um CV em inglês claro, com verbos de ação, secções e linhas curtas.",
+     "p": [
+      "Secções: Profile, Work experience, Education, Skills, Languages. O emprego mais recente primeiro.",
+      "Começa com verbos de ação, sem I: Managed a team of five. Designed a new website. Improved sales by 20%.",
+      "Curto e fácil de ler: uma ou duas páginas, datas claras e o mesmo estilo em todas as linhas."
+     ],
+     "q": "Que três verbos de ação descrevem melhor o que fazes ou fizeste no trabalho ou nos estudos?",
+     "c": "Escreve um Profile de três linhas e três tópicos para um emprego, cada um a começar com um verbo de ação."
+    },
+    "pt_BR": {
+     "t": "Writing a CV in English",
+     "g": "Escreva um currículo em inglês claro, com verbos de ação, seções e linhas curtas.",
+     "p": [
+      "Seções: Profile, Work experience, Education, Skills, Languages. O emprego mais recente primeiro.",
+      "Comece com verbos de ação, sem I: Managed a team of five. Designed a new website. Improved sales by 20%.",
+      "Curto e fácil de ler: uma ou duas páginas, datas claras e o mesmo estilo em todas as linhas."
+     ],
+     "q": "Quais três verbos de ação descrevem melhor o que você faz ou fez no trabalho ou nos estudos?",
+     "c": "Escreva um Profile de três linhas e três tópicos para um emprego, cada um começando com um verbo de ação."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "managed",
+      "ex": "Managed a team of eight customer advisers."
+     },
+     {
+      "w": "designed",
+      "ex": "Designed a new booking system for the clinic."
+     },
+     {
+      "w": "improved",
+      "ex": "Improved delivery times by 15%."
+     },
+     {
+      "w": "led",
+      "ex": "Led weekly training sessions for new staff."
+     },
+     {
+      "w": "work experience",
+      "ex": "List your work experience with the newest job first."
+     },
+     {
+      "w": "skills",
+      "ex": "Skills: Excel, presentations, Spanish (fluent)."
+     }
+    ],
+    "gram": "CV style: start lines with past-tense action verbs and no subject (Managed..., Created...); use present tense only for your current job."
+   }
+  },
+  {
+   "d": 213,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Meetings: giving your view",
+     "g": "Take part in a meeting politely: give opinions, add ideas and disagree kindly.",
+     "p": [
+      "Giving a view: From my point of view... I think we should... In my experience...",
+      "Joining in: Could I add something? Sorry to interrupt, but... Can I just come in here?",
+      "Agreeing and disagreeing: I completely agree. I see what you mean, but... I'm not sure that's the best option."
+     ],
+     "q": "Imagine your team wants to change the office hours. Give your view in two or three sentences.",
+     "c": "Write a mini meeting: one person suggests an idea, you add something, someone disagrees politely, you agree on a plan."
+    },
+    "de": {
+     "t": "Meetings: giving your view",
+     "g": "Du beteiligst dich höflich an Meetings: Meinung sagen, Ideen ergänzen, freundlich widersprechen.",
+     "p": [
+      "Meinung: From my point of view... I think we should... In my experience...",
+      "Einsteigen: Could I add something? Sorry to interrupt, but... Can I just come in here?",
+      "Zustimmen und widersprechen: I completely agree. I see what you mean, but... I'm not sure that's the best option."
+     ],
+     "q": "Stell dir vor, dein Team will die Bürozeiten ändern. Sag deine Meinung in zwei oder drei Sätzen.",
+     "c": "Schreib ein Mini-Meeting: jemand schlägt etwas vor, du ergänzt, jemand widerspricht höflich, ihr einigt euch."
+    },
+    "es": {
+     "t": "Meetings: giving your view",
+     "g": "Participa en una reunión con educación: opina, añade ideas y discrepa con amabilidad.",
+     "p": [
+      "Opinar: From my point of view... I think we should... In my experience...",
+      "Intervenir: Could I add something? Sorry to interrupt, but... Can I just come in here?",
+      "Estar de acuerdo o no: I completely agree. I see what you mean, but... I'm not sure that's the best option."
+     ],
+     "q": "Imagina que tu equipo quiere cambiar el horario de la oficina. Da tu opinión en dos o tres frases.",
+     "c": "Escribe una mini reunión: alguien propone algo, tú añades algo, otro discrepa con educación y acordáis un plan."
+    },
+    "fr": {
+     "t": "Meetings: giving your view",
+     "g": "Participe poliment à une réunion : donne ton avis, ajoute une idée, exprime un désaccord avec tact.",
+     "p": [
+      "Donner son avis : From my point of view... I think we should... In my experience...",
+      "Intervenir : Could I add something? Sorry to interrupt, but... Can I just come in here?",
+      "Être d'accord ou non : I completely agree. I see what you mean, but... I'm not sure that's the best option."
+     ],
+     "q": "Imagine que ton équipe veut changer les horaires du bureau. Donne ton avis en deux ou trois phrases.",
+     "c": "Écris une mini réunion : quelqu'un propose, tu ajoutes une idée, un autre n'est pas d'accord poliment, vous décidez."
+    },
+    "it": {
+     "t": "Meetings: giving your view",
+     "g": "Partecipa a una riunione con garbo: dai la tua opinione, aggiungi idee e dissenti con gentilezza.",
+     "p": [
+      "Dare un parere: From my point of view... I think we should... In my experience...",
+      "Intervenire: Could I add something? Sorry to interrupt, but... Can I just come in here?",
+      "Concordare o no: I completely agree. I see what you mean, but... I'm not sure that's the best option."
+     ],
+     "q": "Immagina che il tuo team voglia cambiare l'orario d'ufficio. Dai la tua opinione in due o tre frasi.",
+     "c": "Scrivi una mini riunione: qualcuno propone, tu aggiungi un'idea, un altro dissente con garbo, decidete un piano."
+    },
+    "pt": {
+     "t": "Meetings: giving your view",
+     "g": "Participa numa reunião com educação: dá a tua opinião, acrescenta ideias e discorda com simpatia.",
+     "p": [
+      "Dar opinião: From my point of view... I think we should... In my experience...",
+      "Intervir: Could I add something? Sorry to interrupt, but... Can I just come in here?",
+      "Concordar e discordar: I completely agree. I see what you mean, but... I'm not sure that's the best option."
+     ],
+     "q": "Imagina que a tua equipa quer mudar o horário do escritório. Dá a tua opinião em duas ou três frases.",
+     "c": "Escreve uma mini reunião: alguém propõe, tu acrescentas algo, outro discorda com educação e decidem um plano."
+    },
+    "pt_BR": {
+     "t": "Meetings: giving your view",
+     "g": "Participe de uma reunião com educação: dê sua opinião, acrescente ideias e discorde com gentileza.",
+     "p": [
+      "Dar opinião: From my point of view... I think we should... In my experience...",
+      "Entrar na conversa: Could I add something? Sorry to interrupt, but... Can I just come in here?",
+      "Concordar e discordar: I completely agree. I see what you mean, but... I'm not sure that's the best option."
+     ],
+     "q": "Imagine que sua equipe quer mudar o horário do escritório. Dê sua opinião em duas ou três frases.",
+     "c": "Escreva uma mini reunião: alguém propõe, você acrescenta algo, outro discorda com educação e vocês decidem."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "from my point of view",
+      "ex": "From my point of view, the plan is too expensive."
+     },
+     {
+      "w": "Could I add something?",
+      "ex": "Could I add something about the timing?"
+     },
+     {
+      "w": "Sorry to interrupt",
+      "ex": "Sorry to interrupt, but we have five minutes left."
+     },
+     {
+      "w": "I see what you mean, but",
+      "ex": "I see what you mean, but I'd prefer a different date."
+     },
+     {
+      "w": "I completely agree",
+      "ex": "I completely agree with Sam's idea."
+     },
+     {
+      "w": "Shall we move on?",
+      "ex": "Good point. Shall we move on to the next item?"
+     }
+    ],
+    "gram": "Meetings: soft opinions (From my point of view), polite interrupting (Could I add...?) and soft disagreeing (I see what you mean, but)."
+   }
+  },
+  {
+   "d": 214,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Emails at work",
+     "g": "Write clear, polite work emails with standard phrases.",
+     "p": [
+      "Opening: Dear Ms Lee, / Hi Tom, Thanks for your email. I'm writing to ask about...",
+      "Middle: Please find attached the report. Could you let me know by Friday? I'd be grateful if...",
+      "Closing: I look forward to hearing from you. Best regards, / Kind regards, + your name."
+     ],
+     "q": "Who do you usually write emails to, and do you prefer a formal or a friendly style?",
+     "c": "Write a short email to a colleague: say why you're writing, attach a file, ask for a reply by a date and close politely."
+    },
+    "de": {
+     "t": "Emails at work",
+     "g": "Du schreibst klare, höfliche Arbeits-E-Mails mit Standardformulierungen.",
+     "p": [
+      "Anfang: Dear Ms Lee, / Hi Tom, Thanks for your email. I'm writing to ask about...",
+      "Hauptteil: Please find attached the report. Could you let me know by Friday? I'd be grateful if...",
+      "Schluss: I look forward to hearing from you. Best regards, / Kind regards, + dein Name."
+     ],
+     "q": "Wem schreibst du meistens E-Mails, und magst du lieber einen formellen oder einen lockeren Stil?",
+     "c": "Schreib einer Kollegin eine kurze E-Mail: Anlass nennen, Datei anhängen, um Antwort bis zu einem Datum bitten, höflich enden."
+    },
+    "es": {
+     "t": "Emails at work",
+     "g": "Escribe correos de trabajo claros y educados con frases estándar.",
+     "p": [
+      "Inicio: Dear Ms Lee, / Hi Tom, Thanks for your email. I'm writing to ask about...",
+      "Cuerpo: Please find attached the report. Could you let me know by Friday? I'd be grateful if...",
+      "Cierre: I look forward to hearing from you. Best regards, / Kind regards, + tu nombre."
+     ],
+     "q": "¿A quién sueles escribir correos, y prefieres un estilo formal o cercano?",
+     "c": "Escribe un correo corto a un compañero: di por qué escribes, adjunta un archivo, pide respuesta para una fecha y despídete."
+    },
+    "fr": {
+     "t": "Emails at work",
+     "g": "Rédige des e-mails professionnels clairs et polis avec des formules standard.",
+     "p": [
+      "Début : Dear Ms Lee, / Hi Tom, Thanks for your email. I'm writing to ask about...",
+      "Corps : Please find attached the report. Could you let me know by Friday? I'd be grateful if...",
+      "Fin : I look forward to hearing from you. Best regards, / Kind regards, + ton nom."
+     ],
+     "q": "À qui écris-tu le plus souvent des e-mails, et préfères-tu un style formel ou décontracté ?",
+     "c": "Écris un court e-mail à un collègue : le motif, une pièce jointe, une réponse demandée avant une date et une formule finale."
+    },
+    "it": {
+     "t": "Emails at work",
+     "g": "Scrivi email di lavoro chiare e cortesi con frasi standard.",
+     "p": [
+      "Apertura: Dear Ms Lee, / Hi Tom, Thanks for your email. I'm writing to ask about...",
+      "Corpo: Please find attached the report. Could you let me know by Friday? I'd be grateful if...",
+      "Chiusura: I look forward to hearing from you. Best regards, / Kind regards, + il tuo nome."
+     ],
+     "q": "A chi scrivi di solito le email, e preferisci uno stile formale o amichevole?",
+     "c": "Scrivi una breve email a un collega: spiega perché scrivi, allega un file, chiedi risposta entro una data e chiudi con garbo."
+    },
+    "pt": {
+     "t": "Emails at work",
+     "g": "Escreve emails de trabalho claros e educados com frases-padrão.",
+     "p": [
+      "Abertura: Dear Ms Lee, / Hi Tom, Thanks for your email. I'm writing to ask about...",
+      "Corpo: Please find attached the report. Could you let me know by Friday? I'd be grateful if...",
+      "Fecho: I look forward to hearing from you. Best regards, / Kind regards, + o teu nome."
+     ],
+     "q": "A quem costumas escrever emails, e preferes um estilo formal ou mais próximo?",
+     "c": "Escreve um email curto a um colega: diz porque escreves, anexa um ficheiro, pede resposta até uma data e despede-te."
+    },
+    "pt_BR": {
+     "t": "Emails at work",
+     "g": "Escreva e-mails de trabalho claros e educados com frases-padrão.",
+     "p": [
+      "Abertura: Dear Ms Lee, / Hi Tom, Thanks for your email. I'm writing to ask about...",
+      "Corpo: Please find attached the report. Could you let me know by Friday? I'd be grateful if...",
+      "Encerramento: I look forward to hearing from you. Best regards, / Kind regards, + seu nome."
+     ],
+     "q": "Para quem você costuma escrever e-mails, e prefere um estilo formal ou mais próximo?",
+     "c": "Escreva um e-mail curto para um colega: diga o motivo, anexe um arquivo, peça resposta até uma data e se despeça."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "I'm writing to",
+      "ex": "I'm writing to confirm our meeting on Monday."
+     },
+     {
+      "w": "Please find attached",
+      "ex": "Please find attached the latest version."
+     },
+     {
+      "w": "Could you let me know",
+      "ex": "Could you let me know if Tuesday works for you?"
+     },
+     {
+      "w": "I'd be grateful if",
+      "ex": "I'd be grateful if you could check the figures."
+     },
+     {
+      "w": "I look forward to hearing from you",
+      "ex": "I look forward to hearing from you soon."
+     },
+     {
+      "w": "Kind regards",
+      "ex": "Kind regards, Paula"
+     }
+    ],
+    "gram": "Work emails: fixed phrases (I'm writing to, Please find attached), polite requests with could/would, and a clear closing line."
+   }
+  },
+  {
+   "d": 215,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Presenting yourself professionally",
+     "g": "Give a short professional introduction: role, experience and goals.",
+     "p": [
+      "Role: I'm a project manager at a software company. I work in the marketing team.",
+      "Experience: I've been working in this field for six years. Before that, I worked as a teacher.",
+      "Goals: I'm currently focusing on... I'm hoping to move into... I'd love to connect with people who..."
+     ],
+     "q": "Introduce yourself to me as if we were at a professional event. What do you do, and what are you hoping to do next?",
+     "c": "Write a 30-second introduction with your role, your experience (present perfect continuous) and one goal."
+    },
+    "de": {
+     "t": "Presenting yourself professionally",
+     "g": "Du stellst dich kurz und professionell vor: Rolle, Erfahrung und Ziele.",
+     "p": [
+      "Rolle: I'm a project manager at a software company. I work in the marketing team.",
+      "Erfahrung: I've been working in this field for six years. Before that, I worked as a teacher.",
+      "Ziele: I'm currently focusing on... I'm hoping to move into... I'd love to connect with people who..."
+     ],
+     "q": "Stell dich mir vor, als wären wir auf einer Fachveranstaltung. Was machst du, und was hast du als Nächstes vor?",
+     "c": "Schreib eine 30-Sekunden-Vorstellung mit Rolle, Erfahrung (Present Perfect Continuous) und einem Ziel."
+    },
+    "es": {
+     "t": "Presenting yourself professionally",
+     "g": "Haz una presentación profesional breve: puesto, experiencia y objetivos.",
+     "p": [
+      "Puesto: I'm a project manager at a software company. I work in the marketing team.",
+      "Experiencia: I've been working in this field for six years. Before that, I worked as a teacher.",
+      "Objetivos: I'm currently focusing on... I'm hoping to move into... I'd love to connect with people who..."
+     ],
+     "q": "Preséntate como si estuviéramos en un evento profesional. ¿A qué te dedicas y qué te gustaría hacer después?",
+     "c": "Escribe una presentación de 30 segundos con tu puesto, tu experiencia (present perfect continuous) y un objetivo."
+    },
+    "fr": {
+     "t": "Presenting yourself professionally",
+     "g": "Fais une courte présentation professionnelle : poste, expérience et objectifs.",
+     "p": [
+      "Poste : I'm a project manager at a software company. I work in the marketing team.",
+      "Expérience : I've been working in this field for six years. Before that, I worked as a teacher.",
+      "Objectifs : I'm currently focusing on... I'm hoping to move into... I'd love to connect with people who..."
+     ],
+     "q": "Présente-toi comme si on était à un événement professionnel. Que fais-tu, et quelle est ta prochaine étape ?",
+     "c": "Écris une présentation de 30 secondes avec ton poste, ton expérience (present perfect continuous) et un objectif."
+    },
+    "it": {
+     "t": "Presenting yourself professionally",
+     "g": "Fai una breve presentazione professionale: ruolo, esperienza e obiettivi.",
+     "p": [
+      "Ruolo: I'm a project manager at a software company. I work in the marketing team.",
+      "Esperienza: I've been working in this field for six years. Before that, I worked as a teacher.",
+      "Obiettivi: I'm currently focusing on... I'm hoping to move into... I'd love to connect with people who..."
+     ],
+     "q": "Presentati come se fossimo a un evento di lavoro. Di cosa ti occupi e cosa speri di fare in futuro?",
+     "c": "Scrivi una presentazione di 30 secondi con ruolo, esperienza (present perfect continuous) e un obiettivo."
+    },
+    "pt": {
+     "t": "Presenting yourself professionally",
+     "g": "Faz uma apresentação profissional curta: função, experiência e objetivos.",
+     "p": [
+      "Função: I'm a project manager at a software company. I work in the marketing team.",
+      "Experiência: I've been working in this field for six years. Before that, I worked as a teacher.",
+      "Objetivos: I'm currently focusing on... I'm hoping to move into... I'd love to connect with people who..."
+     ],
+     "q": "Apresenta-te como se estivéssemos num evento profissional. O que fazes, e o que esperas fazer a seguir?",
+     "c": "Escreve uma apresentação de 30 segundos com a tua função, experiência (present perfect continuous) e um objetivo."
+    },
+    "pt_BR": {
+     "t": "Presenting yourself professionally",
+     "g": "Faça uma apresentação profissional curta: cargo, experiência e objetivos.",
+     "p": [
+      "Cargo: I'm a project manager at a software company. I work in the marketing team.",
+      "Experiência: I've been working in this field for six years. Before that, I worked as a teacher.",
+      "Objetivos: I'm currently focusing on... I'm hoping to move into... I'd love to connect with people who..."
+     ],
+     "q": "Se apresente como se estivéssemos num evento profissional. O que você faz, e o que espera fazer em seguida?",
+     "c": "Escreva uma apresentação de 30 segundos com seu cargo, experiência (present perfect continuous) e um objetivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "I work in",
+      "ex": "I work in the finance department."
+     },
+     {
+      "w": "I'm responsible for",
+      "ex": "I'm responsible for training new staff."
+     },
+     {
+      "w": "I've been working in",
+      "ex": "I've been working in tourism for ten years."
+     },
+     {
+      "w": "before that",
+      "ex": "Before that, I was a shop manager."
+     },
+     {
+      "w": "I'm currently focusing on",
+      "ex": "I'm currently focusing on digital marketing."
+     },
+     {
+      "w": "I'm hoping to",
+      "ex": "I'm hoping to lead my own team one day."
+     }
+    ],
+    "gram": "Professional intro: present simple for your role, present perfect (continuous) for experience up to now, past simple for earlier jobs."
+   }
+  },
+  {
+   "d": 216,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Negotiating simply",
+     "g": "Reach a friendly agreement with simple, polite negotiating phrases.",
+     "p": [
+      "Proposing: Would you consider...? What if we...? How about...? Could we meet halfway?",
+      "Conditions: We could do that if you... I can agree to that, as long as...",
+      "Agreeing: That sounds fair. It's a deal. Let's go with that. Let me think about it and get back to you."
+     ],
+     "q": "Have you ever negotiated something: a price at a market, a plan with friends or a task at work? How did it go?",
+     "c": "Write a short negotiation between two people about a weekend plan using What if we...?, as long as and That sounds fair."
+    },
+    "de": {
+     "t": "Negotiating simply",
+     "g": "Mit einfachen, höflichen Formulierungen erreichst du eine freundliche Einigung.",
+     "p": [
+      "Vorschlagen: Would you consider...? What if we...? How about...? Could we meet halfway?",
+      "Bedingungen: We could do that if you... I can agree to that, as long as...",
+      "Zustimmen: That sounds fair. It's a deal. Let's go with that. Let me think about it and get back to you."
+     ],
+     "q": "Hast du schon mal verhandelt, über einen Preis, einen Plan mit Freunden oder eine Aufgabe? Wie lief es?",
+     "c": "Schreib eine kurze Verhandlung über einen Wochenendplan mit What if we...?, as long as und That sounds fair."
+    },
+    "es": {
+     "t": "Negotiating simply",
+     "g": "Llega a un acuerdo amistoso con frases sencillas y educadas para negociar.",
+     "p": [
+      "Proponer: Would you consider...? What if we...? How about...? Could we meet halfway?",
+      "Condiciones: We could do that if you... I can agree to that, as long as...",
+      "Aceptar: That sounds fair. It's a deal. Let's go with that. Let me think about it and get back to you."
+     ],
+     "q": "¿Has negociado alguna vez algo: un precio en un mercado, un plan con amigos o una tarea? ¿Qué tal fue?",
+     "c": "Escribe una negociación corta entre dos personas sobre un plan de fin de semana con What if we...?, as long as y That sounds fair."
+    },
+    "fr": {
+     "t": "Negotiating simply",
+     "g": "Trouve un accord à l'amiable avec des formules simples et polies.",
+     "p": [
+      "Proposer : Would you consider...? What if we...? How about...? Could we meet halfway?",
+      "Conditions : We could do that if you... I can agree to that, as long as...",
+      "Accepter : That sounds fair. It's a deal. Let's go with that. Let me think about it and get back to you."
+     ],
+     "q": "As-tu déjà négocié quelque chose : un prix au marché, un plan entre amis, une tâche au travail ? Comment ça s'est passé ?",
+     "c": "Écris une courte négociation sur un projet de week-end avec What if we...?, as long as et That sounds fair."
+    },
+    "it": {
+     "t": "Negotiating simply",
+     "g": "Raggiungi un accordo amichevole con frasi semplici e cortesi.",
+     "p": [
+      "Proporre: Would you consider...? What if we...? How about...? Could we meet halfway?",
+      "Condizioni: We could do that if you... I can agree to that, as long as...",
+      "Accettare: That sounds fair. It's a deal. Let's go with that. Let me think about it and get back to you."
+     ],
+     "q": "Hai mai negoziato qualcosa: un prezzo al mercato, un piano con amici o un compito al lavoro? Com'è andata?",
+     "c": "Scrivi una breve trattativa su un piano per il weekend con What if we...?, as long as e That sounds fair."
+    },
+    "pt": {
+     "t": "Negotiating simply",
+     "g": "Chega a um acordo amigável com frases simples e educadas.",
+     "p": [
+      "Propor: Would you consider...? What if we...? How about...? Could we meet halfway?",
+      "Condições: We could do that if you... I can agree to that, as long as...",
+      "Aceitar: That sounds fair. It's a deal. Let's go with that. Let me think about it and get back to you."
+     ],
+     "q": "Já negociaste alguma coisa: um preço num mercado, um plano com amigos ou uma tarefa no trabalho? Como correu?",
+     "c": "Escreve uma negociação curta sobre um plano de fim de semana com What if we...?, as long as e That sounds fair."
+    },
+    "pt_BR": {
+     "t": "Negotiating simply",
+     "g": "Chegue a um acordo amigável com frases simples e educadas.",
+     "p": [
+      "Propor: Would you consider...? What if we...? How about...? Could we meet halfway?",
+      "Condições: We could do that if you... I can agree to that, as long as...",
+      "Aceitar: That sounds fair. It's a deal. Let's go with that. Let me think about it and get back to you."
+     ],
+     "q": "Você já negociou alguma coisa: um preço na feira, um plano com amigos ou uma tarefa no trabalho? Como foi?",
+     "c": "Escreva uma negociação curta sobre um plano de fim de semana com What if we...?, as long as e That sounds fair."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Would you consider...?",
+      "ex": "Would you consider a small discount?"
+     },
+     {
+      "w": "What if we...?",
+      "ex": "What if we split the work between us?"
+     },
+     {
+      "w": "meet halfway",
+      "ex": "Let's meet halfway and leave at ten."
+     },
+     {
+      "w": "as long as",
+      "ex": "I can help, as long as we finish by six."
+     },
+     {
+      "w": "That sounds fair",
+      "ex": "That sounds fair to me."
+     },
+     {
+      "w": "It's a deal",
+      "ex": "Okay, it's a deal!"
+     }
+    ],
+    "gram": "Negotiating: Would you consider + -ing/noun?, What if we + verb?, conditions with if / as long as, and agreeing with That sounds fair."
+   }
+  },
+  {
+   "d": 217,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Customer service English",
+     "g": "Help customers politely and solve problems with clear phrases.",
+     "p": [
+      "Welcoming: How can I help you? What seems to be the problem? I'm sorry to hear that.",
+      "Checking: Let me check that for you. Could I have your order number, please? Bear with me a moment.",
+      "Solving: I'll sort it out right away. I can offer you a refund or a replacement. Is there anything else?"
+     ],
+     "q": "Imagine I'm a customer whose parcel hasn't arrived. How would you help me?",
+     "c": "Write a short dialogue between a customer and an assistant: the problem, checking details and a friendly solution."
+    },
+    "de": {
+     "t": "Customer service English",
+     "g": "Du hilfst Kunden höflich und löst Probleme mit klaren Formulierungen.",
+     "p": [
+      "Begrüßen: How can I help you? What seems to be the problem? I'm sorry to hear that.",
+      "Prüfen: Let me check that for you. Could I have your order number, please? Bear with me a moment.",
+      "Lösen: I'll sort it out right away. I can offer you a refund or a replacement. Is there anything else?"
+     ],
+     "q": "Stell dir vor, ich bin ein Kunde, dessen Paket nicht angekommen ist. Wie hilfst du mir?",
+     "c": "Schreib einen kurzen Dialog zwischen Kunde und Mitarbeiter: Problem, Daten prüfen und eine freundliche Lösung."
+    },
+    "es": {
+     "t": "Customer service English",
+     "g": "Atiende a clientes con amabilidad y resuelve problemas con frases claras.",
+     "p": [
+      "Recibir: How can I help you? What seems to be the problem? I'm sorry to hear that.",
+      "Comprobar: Let me check that for you. Could I have your order number, please? Bear with me a moment.",
+      "Resolver: I'll sort it out right away. I can offer you a refund or a replacement. Is there anything else?"
+     ],
+     "q": "Imagina que soy un cliente cuyo paquete no ha llegado. ¿Cómo me ayudarías?",
+     "c": "Escribe un diálogo corto entre un cliente y un empleado: el problema, la comprobación de datos y una solución amable."
+    },
+    "fr": {
+     "t": "Customer service English",
+     "g": "Aide les clients poliment et résous les problèmes avec des phrases claires.",
+     "p": [
+      "Accueillir : How can I help you? What seems to be the problem? I'm sorry to hear that.",
+      "Vérifier : Let me check that for you. Could I have your order number, please? Bear with me a moment.",
+      "Résoudre : I'll sort it out right away. I can offer you a refund or a replacement. Is there anything else?"
+     ],
+     "q": "Imagine que je suis un client dont le colis n'est pas arrivé. Comment m'aiderais-tu ?",
+     "c": "Écris un court dialogue entre un client et un conseiller : le problème, la vérification et une solution aimable."
+    },
+    "it": {
+     "t": "Customer service English",
+     "g": "Aiuta i clienti con cortesia e risolvi i problemi con frasi chiare.",
+     "p": [
+      "Accogliere: How can I help you? What seems to be the problem? I'm sorry to hear that.",
+      "Verificare: Let me check that for you. Could I have your order number, please? Bear with me a moment.",
+      "Risolvere: I'll sort it out right away. I can offer you a refund or a replacement. Is there anything else?"
+     ],
+     "q": "Immagina che io sia un cliente il cui pacco non è arrivato. Come mi aiuteresti?",
+     "c": "Scrivi un breve dialogo tra cliente e operatore: il problema, la verifica dei dati e una soluzione gentile."
+    },
+    "pt": {
+     "t": "Customer service English",
+     "g": "Atende clientes com simpatia e resolve problemas com frases claras.",
+     "p": [
+      "Receber: How can I help you? What seems to be the problem? I'm sorry to hear that.",
+      "Verificar: Let me check that for you. Could I have your order number, please? Bear with me a moment.",
+      "Resolver: I'll sort it out right away. I can offer you a refund or a replacement. Is there anything else?"
+     ],
+     "q": "Imagina que sou um cliente cuja encomenda não chegou. Como me ajudarias?",
+     "c": "Escreve um diálogo curto entre um cliente e um funcionário: o problema, a verificação dos dados e uma solução simpática."
+    },
+    "pt_BR": {
+     "t": "Customer service English",
+     "g": "Atenda clientes com gentileza e resolva problemas com frases claras.",
+     "p": [
+      "Receber: How can I help you? What seems to be the problem? I'm sorry to hear that.",
+      "Verificar: Let me check that for you. Could I have your order number, please? Bear with me a moment.",
+      "Resolver: I'll sort it out right away. I can offer you a refund or a replacement. Is there anything else?"
+     ],
+     "q": "Imagine que sou um cliente cuja encomenda não chegou. Como você me ajudaria?",
+     "c": "Escreva um diálogo curto entre um cliente e um atendente: o problema, a checagem dos dados e uma solução simpática."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "How can I help you?",
+      "ex": "Good morning! How can I help you?"
+     },
+     {
+      "w": "Let me check that for you",
+      "ex": "Let me check that for you right now."
+     },
+     {
+      "w": "Bear with me",
+      "ex": "Bear with me a moment while I look."
+     },
+     {
+      "w": "sort it out",
+      "ex": "Don't worry, I'll sort it out today."
+     },
+     {
+      "w": "refund",
+      "ex": "You can have a full refund."
+     },
+     {
+      "w": "replacement",
+      "ex": "We'll send you a replacement tomorrow."
+     }
+    ],
+    "gram": "Service phrases: Let me + verb (Let me check), I'll + verb for instant promises (I'll sort it out), Could I have...? for polite requests."
+   }
+  },
+  {
+   "d": 218,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Telephone and video calls",
+     "g": "Handle online calls smoothly, including small technical problems.",
+     "p": [
+      "Tech issues: You're on mute. Can you hear me? You're breaking up. I think we lost you for a second.",
+      "Running the call: Let me share my screen. Can everyone see this? Could you turn your camera on?",
+      "Ending: I'll send a quick summary. Thanks, everyone. Speak soon! Have a good rest of your day."
+     ],
+     "q": "Have you ever had a funny moment in a video call, like being on mute? What happened?",
+     "c": "Write five sentences you could say during a video call: one tech problem, one screen share, one question and two to finish."
+    },
+    "de": {
+     "t": "Telephone and video calls",
+     "g": "Du meisterst Online-Calls, auch mit kleinen technischen Problemen.",
+     "p": [
+      "Technik: You're on mute. Can you hear me? You're breaking up. I think we lost you for a second.",
+      "Leiten: Let me share my screen. Can everyone see this? Could you turn your camera on?",
+      "Beenden: I'll send a quick summary. Thanks, everyone. Speak soon! Have a good rest of your day."
+     ],
+     "q": "Hattest du schon mal einen lustigen Moment in einem Videocall, etwa stummgeschaltet? Was ist passiert?",
+     "c": "Schreib fünf Sätze für einen Videocall: ein Technikproblem, Bildschirm teilen, eine Frage und zwei zum Abschluss."
+    },
+    "es": {
+     "t": "Telephone and video calls",
+     "g": "Maneja las llamadas online con soltura, también con pequeños problemas técnicos.",
+     "p": [
+      "Problemas técnicos: You're on mute. Can you hear me? You're breaking up. I think we lost you for a second.",
+      "Llevar la llamada: Let me share my screen. Can everyone see this? Could you turn your camera on?",
+      "Terminar: I'll send a quick summary. Thanks, everyone. Speak soon! Have a good rest of your day."
+     ],
+     "q": "¿Has tenido algún momento gracioso en una videollamada, como hablar con el micro apagado? ¿Qué pasó?",
+     "c": "Escribe cinco frases para una videollamada: un problema técnico, compartir pantalla, una pregunta y dos para cerrar."
+    },
+    "fr": {
+     "t": "Telephone and video calls",
+     "g": "Gère les appels en ligne avec aisance, même avec de petits soucis techniques.",
+     "p": [
+      "Soucis techniques : You're on mute. Can you hear me? You're breaking up. I think we lost you for a second.",
+      "Animer : Let me share my screen. Can everyone see this? Could you turn your camera on?",
+      "Conclure : I'll send a quick summary. Thanks, everyone. Speak soon! Have a good rest of your day."
+     ],
+     "q": "As-tu déjà vécu un moment drôle en visio, comme parler avec le micro coupé ? Que s'est-il passé ?",
+     "c": "Écris cinq phrases pour une visio : un souci technique, un partage d'écran, une question et deux pour conclure."
+    },
+    "it": {
+     "t": "Telephone and video calls",
+     "g": "Gestisci le chiamate online con disinvoltura, anche con piccoli problemi tecnici.",
+     "p": [
+      "Problemi tecnici: You're on mute. Can you hear me? You're breaking up. I think we lost you for a second.",
+      "Condurre: Let me share my screen. Can everyone see this? Could you turn your camera on?",
+      "Chiudere: I'll send a quick summary. Thanks, everyone. Speak soon! Have a good rest of your day."
+     ],
+     "q": "Ti è mai capitato un momento buffo in videochiamata, come parlare col microfono spento? Cos'è successo?",
+     "c": "Scrivi cinque frasi per una videochiamata: un problema tecnico, condividere lo schermo, una domanda e due per chiudere."
+    },
+    "pt": {
+     "t": "Telephone and video calls",
+     "g": "Gere chamadas online com à-vontade, mesmo com pequenos problemas técnicos.",
+     "p": [
+      "Problemas técnicos: You're on mute. Can you hear me? You're breaking up. I think we lost you for a second.",
+      "Conduzir: Let me share my screen. Can everyone see this? Could you turn your camera on?",
+      "Terminar: I'll send a quick summary. Thanks, everyone. Speak soon! Have a good rest of your day."
+     ],
+     "q": "Já tiveste um momento engraçado numa videochamada, como falar com o micro desligado? O que aconteceu?",
+     "c": "Escreve cinco frases para uma videochamada: um problema técnico, partilhar o ecrã, uma pergunta e duas para terminar."
+    },
+    "pt_BR": {
+     "t": "Telephone and video calls",
+     "g": "Conduza chamadas online com tranquilidade, mesmo com pequenos problemas técnicos.",
+     "p": [
+      "Problemas técnicos: You're on mute. Can you hear me? You're breaking up. I think we lost you for a second.",
+      "Conduzir: Let me share my screen. Can everyone see this? Could you turn your camera on?",
+      "Encerrar: I'll send a quick summary. Thanks, everyone. Speak soon! Have a good rest of your day."
+     ],
+     "q": "Você já teve um momento engraçado numa videochamada, como falar no mudo? O que aconteceu?",
+     "c": "Escreva cinco frases para uma videochamada: um problema técnico, compartilhar a tela, uma pergunta e duas para encerrar."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "You're on mute",
+      "ex": "Sorry, Anna, you're on mute."
+     },
+     {
+      "w": "Can you hear me?",
+      "ex": "Can you hear me okay now?"
+     },
+     {
+      "w": "You're breaking up",
+      "ex": "You're breaking up. Could you say that again?"
+     },
+     {
+      "w": "share my screen",
+      "ex": "Let me share my screen so you can see the chart."
+     },
+     {
+      "w": "turn your camera on",
+      "ex": "Could you turn your camera on, please?"
+     },
+     {
+      "w": "Speak soon",
+      "ex": "Thanks for the call. Speak soon!"
+     }
+    ],
+    "gram": "Call English: present continuous for what's happening now (You're breaking up), Let me + verb for actions, Could you...? for requests."
+   }
+  },
+  {
+   "d": 219,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Workplace small talk",
+     "g": "Build good relations at work with friendly, light conversation.",
+     "p": [
+      "Openers: Did you have a good weekend? How's the project going? Busy day?",
+      "Keep it going: Oh really? What did you do? That sounds fun. How was it? Ask follow-up questions.",
+      "Safe topics: weekends, food, travel, hobbies, weather. Avoid money, politics and very personal topics."
+     ],
+     "q": "It's Monday morning and you meet a colleague at the coffee machine. What would you say to start a chat?",
+     "c": "Write a short small-talk exchange with an opener, two follow-up questions and a friendly ending like Catch you later!"
+    },
+    "de": {
+     "t": "Workplace small talk",
+     "g": "Mit lockerem, freundlichem Smalltalk pflegst du gute Beziehungen bei der Arbeit.",
+     "p": [
+      "Einstiege: Did you have a good weekend? How's the project going? Busy day?",
+      "Am Laufen halten: Oh really? What did you do? That sounds fun. How was it? Stell Nachfragen.",
+      "Sichere Themen: Wochenende, Essen, Reisen, Hobbys, Wetter. Meide Geld, Politik und sehr Persönliches."
+     ],
+     "q": "Es ist Montagmorgen und du triffst einen Kollegen an der Kaffeemaschine. Wie beginnst du ein Gespräch?",
+     "c": "Schreib einen kurzen Smalltalk mit Einstieg, zwei Nachfragen und einem freundlichen Ende wie Catch you later!"
+    },
+    "es": {
+     "t": "Workplace small talk",
+     "g": "Crea buenas relaciones en el trabajo con conversaciones ligeras y amables.",
+     "p": [
+      "Para empezar: Did you have a good weekend? How's the project going? Busy day?",
+      "Mantener la charla: Oh really? What did you do? That sounds fun. How was it? Haz preguntas de seguimiento.",
+      "Temas seguros: fines de semana, comida, viajes, aficiones, tiempo. Evita dinero, política y temas muy personales."
+     ],
+     "q": "Es lunes por la mañana y te encuentras con un compañero en la máquina de café. ¿Qué dirías para empezar a charlar?",
+     "c": "Escribe una charla corta con un inicio, dos preguntas de seguimiento y un final amable como Catch you later!"
+    },
+    "fr": {
+     "t": "Workplace small talk",
+     "g": "Crée de bonnes relations au travail avec des échanges légers et sympathiques.",
+     "p": [
+      "Pour lancer : Did you have a good weekend? How's the project going? Busy day?",
+      "Relancer : Oh really? What did you do? That sounds fun. How was it? Pose des questions de suivi.",
+      "Sujets sûrs : week-end, cuisine, voyages, loisirs, météo. Évite l'argent, la politique et le très personnel."
+     ],
+     "q": "C'est lundi matin, tu croises un collègue à la machine à café. Que dirais-tu pour lancer la conversation ?",
+     "c": "Écris un petit échange avec une accroche, deux questions de relance et une fin sympa comme Catch you later!"
+    },
+    "it": {
+     "t": "Workplace small talk",
+     "g": "Crea buoni rapporti al lavoro con conversazioni leggere e cordiali.",
+     "p": [
+      "Per iniziare: Did you have a good weekend? How's the project going? Busy day?",
+      "Continuare: Oh really? What did you do? That sounds fun. How was it? Fai domande di approfondimento.",
+      "Argomenti sicuri: weekend, cibo, viaggi, hobby, tempo. Evita soldi, politica e temi molto personali."
+     ],
+     "q": "È lunedì mattina e incontri un collega alla macchinetta del caffè. Cosa diresti per iniziare a chiacchierare?",
+     "c": "Scrivi un breve scambio con un'apertura, due domande di approfondimento e un saluto cordiale come Catch you later!"
+    },
+    "pt": {
+     "t": "Workplace small talk",
+     "g": "Cria boas relações no trabalho com conversas leves e simpáticas.",
+     "p": [
+      "Para começar: Did you have a good weekend? How's the project going? Busy day?",
+      "Manter a conversa: Oh really? What did you do? That sounds fun. How was it? Faz perguntas de seguimento.",
+      "Temas seguros: fins de semana, comida, viagens, passatempos, tempo. Evita dinheiro, política e temas muito pessoais."
+     ],
+     "q": "É segunda de manhã e encontras um colega na máquina do café. O que dirias para começar a conversa?",
+     "c": "Escreve uma pequena conversa com uma abertura, duas perguntas de seguimento e um fim simpático como Catch you later!"
+    },
+    "pt_BR": {
+     "t": "Workplace small talk",
+     "g": "Crie boas relações no trabalho com conversas leves e simpáticas.",
+     "p": [
+      "Para começar: Did you have a good weekend? How's the project going? Busy day?",
+      "Manter o papo: Oh really? What did you do? That sounds fun. How was it? Faça perguntas de acompanhamento.",
+      "Temas seguros: fim de semana, comida, viagens, hobbies, clima. Evite dinheiro, política e temas muito pessoais."
+     ],
+     "q": "É segunda de manhã e você encontra um colega na máquina de café. O que diria para puxar conversa?",
+     "c": "Escreva um papo curto com uma abertura, duas perguntas de acompanhamento e um final simpático como Catch you later!"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Did you have a good weekend?",
+      "ex": "Hi Mark! Did you have a good weekend?"
+     },
+     {
+      "w": "How's it going?",
+      "ex": "How's the new project going?"
+     },
+     {
+      "w": "That sounds fun",
+      "ex": "A cooking class? That sounds fun!"
+     },
+     {
+      "w": "Busy day?",
+      "ex": "Busy day today? You look in a hurry!"
+     },
+     {
+      "w": "Any plans for...?",
+      "ex": "Any plans for the long weekend?"
+     },
+     {
+      "w": "Catch you later",
+      "ex": "I'd better get back to work. Catch you later!"
+     }
+    ],
+    "gram": "Small talk: short friendly questions (Busy day?, Any plans for...?), follow-up questions with What/How, and reactions like That sounds fun."
+   }
+  },
+  {
+   "d": 220,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Talking about goals and ambitions",
+     "g": "Share your plans and dreams with natural future phrases.",
+     "p": [
+      "Goals: My goal is to... I'm hoping to... I'm planning to... I'm determined to pass the exam.",
+      "Dreams: I'd love to... One day I'd like to... It's always been my dream to live by the sea.",
+      "Steps: To get there, I need to... I've already started... By next year, I want to..."
+     ],
+     "q": "What is one goal you have for the next year, and one big dream for the future?",
+     "c": "Write about two goals: what you want, why it matters to you and the first step you've already taken or will take."
+    },
+    "de": {
+     "t": "Talking about goals and ambitions",
+     "g": "Du sprichst mit natürlichen Zukunftsformen über Pläne und Träume.",
+     "p": [
+      "Ziele: My goal is to... I'm hoping to... I'm planning to... I'm determined to pass the exam.",
+      "Träume: I'd love to... One day I'd like to... It's always been my dream to live by the sea.",
+      "Schritte: To get there, I need to... I've already started... By next year, I want to..."
+     ],
+     "q": "Welches Ziel hast du für das nächste Jahr, und welchen großen Traum für die Zukunft?",
+     "c": "Schreib über zwei Ziele: was du willst, warum es dir wichtig ist und welchen ersten Schritt du gemacht hast oder machst."
+    },
+    "es": {
+     "t": "Talking about goals and ambitions",
+     "g": "Comparte tus planes y sueños con expresiones de futuro naturales.",
+     "p": [
+      "Metas: My goal is to... I'm hoping to... I'm planning to... I'm determined to pass the exam.",
+      "Sueños: I'd love to... One day I'd like to... It's always been my dream to live by the sea.",
+      "Pasos: To get there, I need to... I've already started... By next year, I want to..."
+     ],
+     "q": "¿Qué meta tienes para el próximo año, y cuál es un gran sueño para el futuro?",
+     "c": "Escribe sobre dos metas: qué quieres, por qué te importa y el primer paso que ya has dado o vas a dar."
+    },
+    "fr": {
+     "t": "Talking about goals and ambitions",
+     "g": "Partage tes projets et tes rêves avec des expressions naturelles du futur.",
+     "p": [
+      "Objectifs : My goal is to... I'm hoping to... I'm planning to... I'm determined to pass the exam.",
+      "Rêves : I'd love to... One day I'd like to... It's always been my dream to live by the sea.",
+      "Étapes : To get there, I need to... I've already started... By next year, I want to..."
+     ],
+     "q": "Quel objectif as-tu pour l'année prochaine, et quel grand rêve pour l'avenir ?",
+     "c": "Écris sur deux objectifs : ce que tu veux, pourquoi c'est important et la première étape faite ou à venir."
+    },
+    "it": {
+     "t": "Talking about goals and ambitions",
+     "g": "Condividi progetti e sogni con espressioni naturali per il futuro.",
+     "p": [
+      "Obiettivi: My goal is to... I'm hoping to... I'm planning to... I'm determined to pass the exam.",
+      "Sogni: I'd love to... One day I'd like to... It's always been my dream to live by the sea.",
+      "Passi: To get there, I need to... I've already started... By next year, I want to..."
+     ],
+     "q": "Qual è un obiettivo che hai per il prossimo anno, e un grande sogno per il futuro?",
+     "c": "Scrivi di due obiettivi: cosa vuoi, perché è importante per te e il primo passo che hai già fatto o farai."
+    },
+    "pt": {
+     "t": "Talking about goals and ambitions",
+     "g": "Partilha planos e sonhos com expressões naturais de futuro.",
+     "p": [
+      "Objetivos: My goal is to... I'm hoping to... I'm planning to... I'm determined to pass the exam.",
+      "Sonhos: I'd love to... One day I'd like to... It's always been my dream to live by the sea.",
+      "Passos: To get there, I need to... I've already started... By next year, I want to..."
+     ],
+     "q": "Que objetivo tens para o próximo ano, e qual é um grande sonho para o futuro?",
+     "c": "Escreve sobre dois objetivos: o que queres, porque é importante para ti e o primeiro passo que já deste ou vais dar."
+    },
+    "pt_BR": {
+     "t": "Talking about goals and ambitions",
+     "g": "Compartilhe planos e sonhos com expressões naturais de futuro.",
+     "p": [
+      "Metas: My goal is to... I'm hoping to... I'm planning to... I'm determined to pass the exam.",
+      "Sonhos: I'd love to... One day I'd like to... It's always been my dream to live by the sea.",
+      "Passos: To get there, I need to... I've already started... By next year, I want to..."
+     ],
+     "q": "Que meta você tem para o próximo ano, e qual é um grande sonho para o futuro?",
+     "c": "Escreva sobre duas metas: o que você quer, por que é importante e o primeiro passo que já deu ou vai dar."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "my goal is to",
+      "ex": "My goal is to speak English at work."
+     },
+     {
+      "w": "I'm hoping to",
+      "ex": "I'm hoping to visit Canada next year."
+     },
+     {
+      "w": "I'm determined to",
+      "ex": "I'm determined to finish my course."
+     },
+     {
+      "w": "I'd love to",
+      "ex": "I'd love to open a small café one day."
+     },
+     {
+      "w": "it's always been my dream",
+      "ex": "It's always been my dream to learn to dance."
+     },
+     {
+      "w": "to get there",
+      "ex": "To get there, I need to practise every day."
+     }
+    ],
+    "gram": "Talking about goals: hope/plan/want/be determined + to-infinitive; I'd love to for dreams; By next year + future plans."
+   }
+  }
+ ]
+}

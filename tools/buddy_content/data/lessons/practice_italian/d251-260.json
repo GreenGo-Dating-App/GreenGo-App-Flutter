@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 251,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Review: practical and work Italian",
+     "g": "Recap formal writing, work talk and everyday practical situations.",
+     "p": [
+      "Formal writing: oggetto, Gentile..., la presente per, in allegato, in attesa di un Suo riscontro, reclamo.",
+      "Work talk: riunione, scadenza, Le passo il collega, resti in linea, per concludere, compromesso.",
+      "Practical life: in cosa posso esserLe utile, aumentare del 10 per cento, il modulo, la ricevuta, noleggiare."
+     ],
+     "q": "Which of these situations would you find hardest in Italian, and why?",
+     "c": "Write a short formal email to a car rental company asking for a refund, using four phrases from this unit."
+    },
+    "de": {
+     "t": "Wiederholung: Alltag und Beruf",
+     "g": "Du wiederholst formelles Schreiben, Gespräche im Job und praktische Alltagssituationen.",
+     "p": [
+      "Formell schreiben: oggetto, Gentile..., la presente per, in allegato, in attesa di un Suo riscontro, reclamo.",
+      "Im Job: riunione, scadenza, Le passo il collega, resti in linea, per concludere, compromesso.",
+      "Praktisches: in cosa posso esserLe utile, aumentare del 10 per cento, il modulo, la ricevuta, noleggiare."
+     ],
+     "q": "Welche dieser Situationen fändest du auf Italienisch am schwierigsten, und warum?",
+     "c": "Schreib eine kurze formelle Mail an eine Autovermietung mit Bitte um Erstattung, mit vier Wendungen dieser Einheit."
+    },
+    "es": {
+     "t": "Repaso: italiano práctico y laboral",
+     "g": "Repasar la escritura formal, el italiano del trabajo y situaciones prácticas.",
+     "p": [
+      "Escritura formal: oggetto, Gentile..., la presente per, in allegato, in attesa di un Suo riscontro, reclamo.",
+      "Trabajo: riunione, scadenza, Le passo il collega, resti in linea, per concludere, compromesso.",
+      "Vida práctica: in cosa posso esserLe utile, aumentare del 10 per cento, il modulo, la ricevuta, noleggiare."
+     ],
+     "q": "¿Cuál de estas situaciones te parecería más difícil en italiano y por qué?",
+     "c": "Escribe un correo formal breve a una empresa de alquiler pidiendo un reembolso, con cuatro frases de la unidad."
+    },
+    "fr": {
+     "t": "Révision : italien pratique et pro",
+     "g": "Réviser l'écrit formel, l'italien du travail et les situations pratiques.",
+     "p": [
+      "Écrit formel : oggetto, Gentile..., la presente per, in allegato, in attesa di un Suo riscontro, reclamo.",
+      "Travail : riunione, scadenza, Le passo il collega, resti in linea, per concludere, compromesso.",
+      "Vie pratique : in cosa posso esserLe utile, aumentare del 10 per cento, il modulo, la ricevuta, noleggiare."
+     ],
+     "q": "Laquelle de ces situations te semblerait la plus difficile en italien, et pourquoi ?",
+     "c": "Écris un court e-mail formel à un loueur de voitures pour demander un remboursement, avec quatre expressions de l'unité."
+    },
+    "it": {
+     "t": "Ripasso: italiano pratico e del lavoro",
+     "g": "Ripassare scrittura formale, lavoro e situazioni pratiche di tutti i giorni.",
+     "p": [
+      "Scrittura formale: oggetto, Gentile..., la presente per, in allegato, in attesa di un Suo riscontro, reclamo.",
+      "Lavoro: riunione, scadenza, Le passo il collega, resti in linea, per concludere, compromesso.",
+      "Vita pratica: in cosa posso esserLe utile, aumentare del 10 per cento, il modulo, la ricevuta, noleggiare."
+     ],
+     "q": "Quale di queste situazioni ti sembrerebbe più difficile in italiano, e perché?",
+     "c": "Scrivi una breve email formale a un noleggio auto per chiedere un rimborso, con quattro espressioni dell'unità."
+    },
+    "pt": {
+     "t": "Revisão: italiano prático e profissional",
+     "g": "Rever a escrita formal, o italiano do trabalho e situações práticas.",
+     "p": [
+      "Escrita formal: oggetto, Gentile..., la presente per, in allegato, in attesa di un Suo riscontro, reclamo.",
+      "Trabalho: riunione, scadenza, Le passo il collega, resti in linea, per concludere, compromesso.",
+      "Vida prática: in cosa posso esserLe utile, aumentare del 10 per cento, il modulo, la ricevuta, noleggiare."
+     ],
+     "q": "Qual destas situações te pareceria mais difícil em italiano, e porquê?",
+     "c": "Escreve um e-mail formal curto a uma empresa de aluguer a pedir reembolso, com quatro expressões da unidade."
+    },
+    "pt_BR": {
+     "t": "Revisão: italiano prático e profissional",
+     "g": "Revisar a escrita formal, o italiano do trabalho e situações práticas.",
+     "p": [
+      "Escrita formal: oggetto, Gentile..., la presente per, in allegato, in attesa di un Suo riscontro, reclamo.",
+      "Trabalho: riunione, scadenza, Le passo il collega, resti in linea, per concludere, compromesso.",
+      "Vida prática: in cosa posso esserLe utile, aumentare del 10 per cento, il modulo, la ricevuta, noleggiare."
+     ],
+     "q": "Qual dessas situações seria mais difícil para você em italiano, e por quê?",
+     "c": "Escreva um e-mail formal curto a uma locadora pedindo reembolso, com quatro expressões da unidade."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "in allegato",
+      "ex": "In allegato trova la ricevuta del noleggio."
+     },
+     {
+      "w": "la scadenza",
+      "ex": "Non dimenticare la scadenza di venerdì."
+     },
+     {
+      "w": "resti in linea",
+      "ex": "Resti in linea, La passo all'ufficio tecnico."
+     },
+     {
+      "w": "il rimborso",
+      "ex": "Ho ottenuto il rimborso dopo una settimana."
+     },
+     {
+      "w": "compilare",
+      "ex": "Ho compilato il modulo online."
+     },
+     {
+      "w": "il compromesso",
+      "ex": "Abbiamo trovato un compromesso con il fornitore."
+     }
+    ],
+    "gram": "Ripasso: Lei di cortesia, condizionale per chiedere, imperativo formale e lessico di lavoro e burocrazia."
+   }
+  },
+  {
+   "d": 252,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Italian slang and colloquial speech",
+     "g": "Understand friendly everyday slang like figo, boh, dai, mitico and una figata.",
+     "p": [
+      "Cool things: figo, una figata, mitico, troppo bello. Che figata questo concerto!",
+      "Shrugs and pushes: boh means I have no idea; dai means come on, or really?",
+      "Register matters: use slang with friends, never in a formal email or at an office counter."
+     ],
+     "q": "Which slang word from your language would you love to teach an Italian friend?",
+     "c": "Write a three-line chat with a friend about a great weekend using figo, dai and boh."
+    },
+    "de": {
+     "t": "Italienischer Slang und Umgangssprache",
+     "g": "Du verstehst freundlichen Alltagsslang wie figo, boh, dai, mitico und una figata.",
+     "p": [
+      "Coole Dinge: figo, una figata, mitico, troppo bello. Che figata questo concerto!",
+      "Schulterzucken und Anstoßen: boh heißt keine Ahnung; dai heißt komm schon oder echt jetzt?",
+      "Das Register zählt: Slang mit Freunden, nie in einer formellen Mail oder am Amtsschalter."
+     ],
+     "q": "Welches Slangwort deiner Sprache würdest du gern einem italienischen Freund beibringen?",
+     "c": "Schreib einen dreizeiligen Chat mit einem Freund über ein tolles Wochenende mit figo, dai und boh."
+    },
+    "es": {
+     "t": "Jerga y habla coloquial italiana",
+     "g": "Entender la jerga amistosa de cada día: figo, boh, dai, mitico, una figata.",
+     "p": [
+      "Cosas geniales: figo, una figata, mitico, troppo bello. Che figata questo concerto!",
+      "Encogerse y animar: boh significa ni idea; dai significa venga o ¿en serio?",
+      "El registro importa: jerga con amigos, nunca en un correo formal ni en una ventanilla."
+     ],
+     "q": "¿Qué palabra de jerga de tu idioma te encantaría enseñar a un amigo italiano?",
+     "c": "Escribe un chat de tres líneas con un amigo sobre un finde genial usando figo, dai y boh."
+    },
+    "fr": {
+     "t": "Argot et italien familier",
+     "g": "Comprendre l'argot amical du quotidien : figo, boh, dai, mitico, una figata.",
+     "p": [
+      "Ce qui est cool : figo, una figata, mitico, troppo bello. Che figata questo concerto!",
+      "Hausser les épaules : boh veut dire aucune idée ; dai veut dire allez, ou sérieux ?",
+      "Le registre compte : l'argot entre amis, jamais dans un e-mail formel ni au guichet."
+     ],
+     "q": "Quel mot d'argot de ta langue aimerais-tu apprendre à un ami italien ?",
+     "c": "Écris un chat de trois lignes avec un ami sur un super week-end avec figo, dai et boh."
+    },
+    "it": {
+     "t": "Slang e parlato colloquiale",
+     "g": "Capire lo slang amichevole di tutti i giorni: figo, boh, dai, mitico, una figata.",
+     "p": [
+      "Cose belle: figo, una figata, mitico, troppo bello. Che figata questo concerto!",
+      "Dubbi e incoraggiamenti: boh vuol dire non lo so; dai vuol dire forza oppure davvero?",
+      "Attenzione al registro: lo slang va bene con gli amici, mai in un'email formale o allo sportello."
+     ],
+     "q": "Quale parola gergale della tua lingua insegneresti volentieri a un amico italiano?",
+     "c": "Scrivi una chat di tre righe con un amico su un weekend fantastico usando figo, dai e boh."
+    },
+    "pt": {
+     "t": "Calão e italiano coloquial",
+     "g": "Perceber o calão amigável do dia a dia: figo, boh, dai, mitico, una figata.",
+     "p": [
+      "Coisas fixes: figo, una figata, mitico, troppo bello. Che figata questo concerto!",
+      "Dúvida e incentivo: boh quer dizer não faço ideia; dai quer dizer vá lá ou a sério?",
+      "O registo conta: calão com amigos, nunca num e-mail formal nem ao balcão."
+     ],
+     "q": "Que palavra de calão da tua língua gostavas de ensinar a um amigo italiano?",
+     "c": "Escreve um chat de três linhas com um amigo sobre um fim de semana fantástico com figo, dai e boh."
+    },
+    "pt_BR": {
+     "t": "Gírias e italiano coloquial",
+     "g": "Entender as gírias amigáveis do dia a dia: figo, boh, dai, mitico, una figata.",
+     "p": [
+      "Coisas legais: figo, una figata, mitico, troppo bello. Che figata questo concerto!",
+      "Dúvida e incentivo: boh quer dizer sei lá; dai quer dizer vai, ou sério?",
+      "O registro importa: gíria com amigos, nunca num e-mail formal ou no guichê."
+     ],
+     "q": "Que gíria da sua língua você adoraria ensinar a um amigo italiano?",
+     "c": "Escreva um chat de três linhas com um amigo sobre um fim de semana incrível usando figo, dai e boh."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "figo",
+      "ex": "Che figo il tuo nuovo zaino!"
+     },
+     {
+      "w": "una figata",
+      "ex": "Il concerto di ieri è stato una figata."
+     },
+     {
+      "w": "boh",
+      "ex": "Dove andiamo stasera? Boh, decidi tu."
+     },
+     {
+      "w": "dai",
+      "ex": "Dai, vieni anche tu alla festa!"
+     },
+     {
+      "w": "mitico",
+      "ex": "Mitico! Hai vinto la partita!"
+     },
+     {
+      "w": "troppo",
+      "ex": "Questo gelato è troppo buono."
+     }
+    ],
+    "gram": "Registro informale: troppo = molto (troppo bello), che + nome per esclamare (che figata!), dai come incoraggiamento."
+   }
+  },
+  {
+   "d": 253,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Fillers and discourse markers",
+     "g": "Sound natural with allora, cioè, insomma, praticamente and tipo.",
+     "p": [
+      "Allora starts or moves a story on; cioè corrects or explains: I mean.",
+      "Insomma sums up or shows mild doubt; praticamente means basically.",
+      "Tipo means like, in casual speech: c'erano tipo cento persone. Use fillers lightly."
+     ],
+     "q": "Which filler words do you use most in your own language?",
+     "c": "Tell a short story aloud in Italian using allora, cioè and insomma once each."
+    },
+    "de": {
+     "t": "Füllwörter und Diskursmarker",
+     "g": "Du klingst natürlich mit allora, cioè, insomma, praticamente und tipo.",
+     "p": [
+      "Allora beginnt oder treibt eine Geschichte voran; cioè korrigiert oder erklärt: also, ich meine.",
+      "Insomma fasst zusammen oder zeigt leichten Zweifel; praticamente heißt im Grunde.",
+      "Tipo heißt locker so etwa: c'erano tipo cento persone. Füllwörter sparsam einsetzen."
+     ],
+     "q": "Welche Füllwörter benutzt du in deiner Sprache am häufigsten?",
+     "c": "Erzähl laut eine kurze Geschichte auf Italienisch mit je einmal allora, cioè und insomma."
+    },
+    "es": {
+     "t": "Muletillas y marcadores del discurso",
+     "g": "Sonar natural con allora, cioè, insomma, praticamente y tipo.",
+     "p": [
+      "Allora abre o hace avanzar un relato; cioè corrige o explica: o sea.",
+      "Insomma resume o muestra una duda leve; praticamente significa básicamente.",
+      "Tipo significa como, en lenguaje coloquial: c'erano tipo cento persone. Úsalas con moderación."
+     ],
+     "q": "¿Qué muletillas usas más en tu propio idioma?",
+     "c": "Cuenta en voz alta una historia corta en italiano con allora, cioè e insomma una vez cada una."
+    },
+    "fr": {
+     "t": "Mots de remplissage et connecteurs",
+     "g": "Paraître naturel avec allora, cioè, insomma, praticamente et tipo.",
+     "p": [
+      "Allora ouvre ou relance un récit ; cioè corrige ou précise : c'est-à-dire.",
+      "Insomma résume ou exprime un léger doute ; praticamente veut dire en gros.",
+      "Tipo signifie genre, à l'oral : c'erano tipo cento persone. À utiliser avec modération."
+     ],
+     "q": "Quels mots de remplissage utilises-tu le plus dans ta langue ?",
+     "c": "Raconte à voix haute une courte histoire en italien avec allora, cioè et insomma une fois chacun."
+    },
+    "it": {
+     "t": "Riempitivi e segnali discorsivi",
+     "g": "Parlare in modo naturale con allora, cioè, insomma, praticamente e tipo.",
+     "p": [
+      "Allora apre o fa andare avanti un racconto; cioè corregge o spiega meglio.",
+      "Insomma riassume o mostra un leggero dubbio; praticamente vuol dire in sostanza.",
+      "Tipo, nel parlato informale, vuol dire circa o come: c'erano tipo cento persone. Senza esagerare."
+     ],
+     "q": "Quali riempitivi usi di più nella tua lingua?",
+     "c": "Racconta a voce una breve storia usando allora, cioè e insomma una volta ciascuno."
+    },
+    "pt": {
+     "t": "Bordões e marcadores do discurso",
+     "g": "Soar natural com allora, cioè, insomma, praticamente e tipo.",
+     "p": [
+      "Allora abre ou faz avançar uma história; cioè corrige ou explica: ou seja.",
+      "Insomma resume ou mostra uma dúvida leve; praticamente quer dizer basicamente.",
+      "Tipo quer dizer tipo, tal como em português informal: c'erano tipo cento persone. Com moderação."
+     ],
+     "q": "Que bordões usas mais na tua língua?",
+     "c": "Conta em voz alta uma história curta em italiano com allora, cioè e insomma uma vez cada."
+    },
+    "pt_BR": {
+     "t": "Marcadores de conversa",
+     "g": "Soar natural com allora, cioè, insomma, praticamente e tipo.",
+     "p": [
+      "Allora abre ou faz avançar uma história; cioè corrige ou explica: ou seja.",
+      "Insomma resume ou mostra uma dúvida leve; praticamente quer dizer basicamente.",
+      "Tipo é igual ao tipo do português informal: c'erano tipo cento persone. Use com moderação."
+     ],
+     "q": "Quais palavras de apoio você mais usa na sua língua?",
+     "c": "Conte em voz alta uma história curta em italiano com allora, cioè e insomma uma vez cada."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "allora",
+      "ex": "Allora, ti racconto cosa è successo."
+     },
+     {
+      "w": "cioè",
+      "ex": "Arrivo alle otto, cioè, forse alle otto e mezza."
+     },
+     {
+      "w": "insomma",
+      "ex": "Il film? Insomma, non mi è piaciuto tanto."
+     },
+     {
+      "w": "praticamente",
+      "ex": "Praticamente abbiamo finito tutto ieri."
+     },
+     {
+      "w": "tipo",
+      "ex": "C'erano tipo cinquanta persone alla festa."
+     },
+     {
+      "w": "comunque",
+      "ex": "Comunque, alla fine siamo arrivati in tempo."
+     }
+    ],
+    "gram": "Segnali discorsivi: aprono (allora), riformulano (cioè), riassumono (insomma) e approssimano (tipo) nel parlato."
+   }
+  },
+  {
+   "d": 254,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Regional accents and dialects",
+     "g": "Discover why Italian sounds different in Naples, Milan, Rome and Sicily.",
+     "p": [
+      "Italy has many dialects; standard Italian grew from Tuscan, while local languages like Neapolitan and Sicilian live on.",
+      "Accents vary: Romans say daje, Milanese use uè and a closed e, Tuscans soften c: la hasa for la casa.",
+      "Everyone understands standard Italian, so speak it confidently and enjoy local words as a bonus."
+     ],
+     "q": "Is there a strong regional accent in your country? Which one do you like most?",
+     "c": "Look up one word in Neapolitan, Milanese or Sicilian and write a sentence about it in Italian."
+    },
+    "de": {
+     "t": "Regionale Akzente und Dialekte",
+     "g": "Du entdeckst, warum Italienisch in Neapel, Mailand, Rom und Sizilien anders klingt.",
+     "p": [
+      "Italien hat viele Dialekte; das Standarditalienisch entstand aus dem Toskanischen, Sprachen wie Neapolitanisch leben weiter.",
+      "Akzente variieren: Römer sagen daje, Mailänder uè, Toskaner hauchen das c: la hasa statt la casa.",
+      "Standarditalienisch versteht jeder, also sprich es selbstbewusst und genieße lokale Wörter als Bonus."
+     ],
+     "q": "Gibt es in deinem Land einen starken regionalen Akzent? Welchen magst du am liebsten?",
+     "c": "Such ein Wort auf Neapolitanisch, Mailändisch oder Sizilianisch und schreib einen Satz darüber auf Italienisch."
+    },
+    "es": {
+     "t": "Acentos regionales y dialectos",
+     "g": "Descubrir por qué el italiano suena distinto en Nápoles, Milán, Roma y Sicilia.",
+     "p": [
+      "Italia tiene muchos dialectos; el italiano estándar nació del toscano, y lenguas como el napolitano siguen vivas.",
+      "Los acentos varían: en Roma dicen daje, en Milán uè, en Toscana aspiran la c: la hasa por la casa.",
+      "Todo el mundo entiende el italiano estándar: háblalo con confianza y disfruta las palabras locales."
+     ],
+     "q": "¿Hay un acento regional fuerte en tu país? ¿Cuál te gusta más?",
+     "c": "Busca una palabra en napolitano, milanés o siciliano y escribe una frase sobre ella en italiano."
+    },
+    "fr": {
+     "t": "Accents régionaux et dialectes",
+     "g": "Découvrir pourquoi l'italien sonne différemment à Naples, Milan, Rome et en Sicile.",
+     "p": [
+      "L'Italie compte de nombreux dialectes ; l'italien standard vient du toscan, et le napolitain ou le sicilien restent vivants.",
+      "Les accents varient : à Rome on dit daje, à Milan uè, en Toscane le c s'aspire : la hasa pour la casa.",
+      "Tout le monde comprend l'italien standard : parle-le avec assurance et savoure les mots locaux en bonus."
+     ],
+     "q": "Y a-t-il un accent régional marqué dans ton pays ? Lequel préfères-tu ?",
+     "c": "Cherche un mot en napolitain, milanais ou sicilien et écris une phrase à son sujet en italien."
+    },
+    "it": {
+     "t": "Accenti regionali e dialetti",
+     "g": "Scoprire perché l'italiano suona diverso a Napoli, Milano, Roma e in Sicilia.",
+     "p": [
+      "L'Italia ha tanti dialetti; l'italiano standard nasce dal toscano, mentre lingue locali come napoletano e siciliano restano vive.",
+      "Gli accenti cambiano: a Roma si dice daje, a Milano uè, in Toscana la c si aspira: la hasa per la casa.",
+      "L'italiano standard lo capiscono tutti: parlalo con sicurezza e goditi le parole locali come un regalo."
+     ],
+     "q": "Nel tuo paese c'è un accento regionale forte? Quale ti piace di più?",
+     "c": "Cerca una parola in napoletano, milanese o siciliano e scrivi una frase su di essa in italiano."
+    },
+    "pt": {
+     "t": "Sotaques regionais e dialetos",
+     "g": "Descobrir porque o italiano soa diferente em Nápoles, Milão, Roma e na Sicília.",
+     "p": [
+      "Itália tem muitos dialetos; o italiano padrão nasceu do toscano, e línguas como o napolitano continuam vivas.",
+      "Os sotaques variam: em Roma diz-se daje, em Milão uè, na Toscana o c é aspirado: la hasa por la casa.",
+      "Toda a gente percebe o italiano padrão: fala-o com confiança e aproveita as palavras locais como bónus."
+     ],
+     "q": "Há algum sotaque regional forte no teu país? Qual preferes?",
+     "c": "Procura uma palavra em napolitano, milanês ou siciliano e escreve uma frase sobre ela em italiano."
+    },
+    "pt_BR": {
+     "t": "Sotaques regionais e dialetos",
+     "g": "Descobrir por que o italiano soa diferente em Nápoles, Milão, Roma e na Sicília.",
+     "p": [
+      "A Itália tem muitos dialetos; o italiano padrão nasceu do toscano, e línguas como o napolitano seguem vivas.",
+      "Os sotaques variam: em Roma se diz daje, em Milão uè, na Toscana o c é aspirado: la hasa por la casa.",
+      "Todo mundo entende o italiano padrão: fale com confiança e curta as palavras locais como bônus."
+     ],
+     "q": "Existe um sotaque regional forte no seu país? Qual você mais gosta?",
+     "c": "Pesquise uma palavra em napolitano, milanês ou siciliano e escreva uma frase sobre ela em italiano."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il dialetto",
+      "ex": "Mia nonna parla il dialetto napoletano."
+     },
+     {
+      "w": "l'accento",
+      "ex": "Hai un accento del nord, vero?"
+     },
+     {
+      "w": "la cadenza",
+      "ex": "Riconosco la cadenza romana."
+     },
+     {
+      "w": "daje",
+      "ex": "Daje, ce la facciamo!"
+     },
+     {
+      "w": "uè",
+      "ex": "Uè, ciao! Come va?"
+     },
+     {
+      "w": "parlare con la cadenza",
+      "ex": "Marco parla con la cadenza siciliana."
+     }
+    ],
+    "gram": "Si dice che + indicativo: a Roma si dice daje; l'italiano standard deriva dal fiorentino del Trecento."
+   }
+  },
+  {
+   "d": 255,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Tongue twisters for fluency",
+     "g": "Train pronunciation with Italian scioglilingua like trentatré trentini.",
+     "p": [
+      "Trentatré trentini entrarono a Trento tutti e trentatré trotterellando: train tr and double t.",
+      "Sopra la panca la capra campa, sotto la panca la capra crepa: train p, c and rhythm.",
+      "Start slowly, stress each syllable, then speed up; it builds clear double consonants."
+     ],
+     "q": "Do you know a famous tongue twister in your language? Can you say it fast?",
+     "c": "Say trentatré trentini three times: slow, normal and fast. Then record yourself once."
+    },
+    "de": {
+     "t": "Zungenbrecher für mehr Flüssigkeit",
+     "g": "Du trainierst die Aussprache mit scioglilingua wie trentatré trentini.",
+     "p": [
+      "Trentatré trentini entrarono a Trento tutti e trentatré trotterellando: übt tr und das doppelte t.",
+      "Sopra la panca la capra campa, sotto la panca la capra crepa: übt p, c und Rhythmus.",
+      "Fang langsam an, betone jede Silbe, dann schneller; so werden Doppelkonsonanten klar."
+     ],
+     "q": "Kennst du einen berühmten Zungenbrecher in deiner Sprache? Schaffst du ihn schnell?",
+     "c": "Sag trentatré trentini dreimal: langsam, normal, schnell. Dann nimm dich einmal auf."
+    },
+    "es": {
+     "t": "Trabalenguas para ganar fluidez",
+     "g": "Entrenar la pronunciación con scioglilingua como trentatré trentini.",
+     "p": [
+      "Trentatré trentini entrarono a Trento tutti e trentatré trotterellando: entrena tr y la doble t.",
+      "Sopra la panca la capra campa, sotto la panca la capra crepa: entrena p, c y el ritmo.",
+      "Empieza despacio, marca cada sílaba y luego acelera; así las consonantes dobles salen claras."
+     ],
+     "q": "¿Conoces un trabalenguas famoso en tu idioma? ¿Puedes decirlo rápido?",
+     "c": "Di trentatré trentini tres veces: lento, normal y rápido. Luego grábate una vez."
+    },
+    "fr": {
+     "t": "Virelangues pour la fluidité",
+     "g": "Travailler la prononciation avec des scioglilingua comme trentatré trentini.",
+     "p": [
+      "Trentatré trentini entrarono a Trento tutti e trentatré trotterellando : travaille tr et le double t.",
+      "Sopra la panca la capra campa, sotto la panca la capra crepa : travaille p, c et le rythme.",
+      "Commence lentement, détache chaque syllabe, puis accélère : les consonnes doubles deviennent nettes."
+     ],
+     "q": "Connais-tu un virelangue célèbre dans ta langue ? Arrives-tu à le dire vite ?",
+     "c": "Dis trentatré trentini trois fois : lentement, normalement, vite. Puis enregistre-toi une fois."
+    },
+    "it": {
+     "t": "Scioglilingua per la fluidità",
+     "g": "Allenare la pronuncia con scioglilingua come trentatré trentini.",
+     "p": [
+      "Trentatré trentini entrarono a Trento tutti e trentatré trotterellando: allena tr e la doppia t.",
+      "Sopra la panca la capra campa, sotto la panca la capra crepa: allena p, c e il ritmo.",
+      "Comincia piano, scandisci ogni sillaba, poi accelera: così le doppie diventano chiare."
+     ],
+     "q": "Conosci uno scioglilingua famoso nella tua lingua? Riesci a dirlo veloce?",
+     "c": "Di' trentatré trentini tre volte: piano, normale e veloce. Poi registrati una volta."
+    },
+    "pt": {
+     "t": "Trava-línguas para ganhar fluência",
+     "g": "Treinar a pronúncia com scioglilingua como trentatré trentini.",
+     "p": [
+      "Trentatré trentini entrarono a Trento tutti e trentatré trotterellando: treina tr e o t dobrado.",
+      "Sopra la panca la capra campa, sotto la panca la capra crepa: treina p, c e o ritmo.",
+      "Começa devagar, marca cada sílaba e depois acelera; assim as consoantes duplas ficam claras."
+     ],
+     "q": "Conheces um trava-línguas famoso na tua língua? Consegues dizê-lo depressa?",
+     "c": "Diz trentatré trentini três vezes: devagar, normal e rápido. Depois grava-te uma vez."
+    },
+    "pt_BR": {
+     "t": "Trava-línguas para ganhar fluência",
+     "g": "Treinar a pronúncia com scioglilingua como trentatré trentini.",
+     "p": [
+      "Trentatré trentini entrarono a Trento tutti e trentatré trotterellando: treine tr e o t dobrado.",
+      "Sopra la panca la capra campa, sotto la panca la capra crepa: treine p, c e o ritmo.",
+      "Comece devagar, marque cada sílaba e depois acelere; assim as consoantes duplas ficam claras."
+     ],
+     "q": "Você conhece um trava-língua famoso na sua língua? Consegue falar rápido?",
+     "c": "Diga trentatré trentini três vezes: devagar, normal e rápido. Depois grave você mesmo uma vez."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "lo scioglilingua",
+      "ex": "Questo scioglilingua è difficilissimo!"
+     },
+     {
+      "w": "trentatré trentini",
+      "ex": "Trentatré trentini entrarono a Trento."
+     },
+     {
+      "w": "la capra campa",
+      "ex": "Sopra la panca la capra campa."
+     },
+     {
+      "w": "scandire",
+      "ex": "Scandisci bene ogni sillaba."
+     },
+     {
+      "w": "le doppie",
+      "ex": "In italiano le doppie cambiano il significato: pala e palla."
+     },
+     {
+      "w": "la pronuncia",
+      "ex": "La tua pronuncia migliora ogni giorno."
+     }
+    ],
+    "gram": "Pronuncia: le consonanti doppie si tengono più a lungo (nono / nonno, caro / carro) e cambiano il significato."
+   }
+  },
+  {
+   "d": 256,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Interjections and exclamations",
+     "g": "Express feelings with mamma mia, accidenti, che bello and evviva.",
+     "p": [
+      "Surprise: mamma mia!, caspita!, accipicchia! Joy: che bello!, evviva!, finalmente!",
+      "Annoyance or bad luck: accidenti!, uffa! (boredom), peccato! (what a pity).",
+      "Relief and pain: meno male! (thank goodness), ahia! (ouch). Tone and gesture matter a lot."
+     ],
+     "q": "What do you say in your language when something great happens?",
+     "c": "Write three short situations and react to each with a fitting Italian exclamation."
+    },
+    "de": {
+     "t": "Interjektionen und Ausrufe",
+     "g": "Du drückst Gefühle aus mit mamma mia, accidenti, che bello und evviva.",
+     "p": [
+      "Staunen: mamma mia!, caspita!, accipicchia! Freude: che bello!, evviva!, finalmente!",
+      "Ärger oder Pech: accidenti!, uffa! (Langeweile), peccato! (wie schade).",
+      "Erleichterung und Schmerz: meno male! (zum Glück), ahia! (aua). Tonfall und Geste zählen viel."
+     ],
+     "q": "Was sagst du in deiner Sprache, wenn etwas Tolles passiert?",
+     "c": "Schreib drei kurze Situationen und reagiere jeweils mit einem passenden italienischen Ausruf."
+    },
+    "es": {
+     "t": "Interjecciones y exclamaciones",
+     "g": "Expresar emociones con mamma mia, accidenti, che bello y evviva.",
+     "p": [
+      "Sorpresa: mamma mia!, caspita!, accipicchia! Alegría: che bello!, evviva!, finalmente!",
+      "Fastidio o mala suerte: accidenti!, uffa! (aburrimiento), peccato! (qué pena).",
+      "Alivio y dolor: meno male! (menos mal), ahia! (¡ay!). El tono y el gesto cuentan mucho."
+     ],
+     "q": "¿Qué dices en tu idioma cuando pasa algo genial?",
+     "c": "Escribe tres situaciones breves y reacciona a cada una con una exclamación italiana adecuada."
+    },
+    "fr": {
+     "t": "Interjections et exclamations",
+     "g": "Exprimer ses émotions avec mamma mia, accidenti, che bello et evviva.",
+     "p": [
+      "Surprise : mamma mia!, caspita!, accipicchia! Joie : che bello!, evviva!, finalmente!",
+      "Agacement ou malchance : accidenti!, uffa! (ennui), peccato! (dommage).",
+      "Soulagement et douleur : meno male! (heureusement), ahia! (aïe). Le ton et le geste comptent beaucoup."
+     ],
+     "q": "Que dis-tu dans ta langue quand quelque chose de génial arrive ?",
+     "c": "Écris trois petites situations et réagis à chacune avec une exclamation italienne adaptée."
+    },
+    "it": {
+     "t": "Interiezioni ed esclamazioni",
+     "g": "Esprimere emozioni con mamma mia, accidenti, che bello ed evviva.",
+     "p": [
+      "Sorpresa: mamma mia!, caspita!, accipicchia! Gioia: che bello!, evviva!, finalmente!",
+      "Fastidio o sfortuna: accidenti!, uffa! (noia), peccato! (che dispiacere).",
+      "Sollievo e dolore: meno male!, ahia! Il tono della voce e i gesti contano moltissimo."
+     ],
+     "q": "Che cosa dici nella tua lingua quando succede qualcosa di bellissimo?",
+     "c": "Scrivi tre brevi situazioni e reagisci a ognuna con un'esclamazione adatta."
+    },
+    "pt": {
+     "t": "Interjeições e exclamações",
+     "g": "Exprimir emoções com mamma mia, accidenti, che bello e evviva.",
+     "p": [
+      "Surpresa: mamma mia!, caspita!, accipicchia! Alegria: che bello!, evviva!, finalmente!",
+      "Irritação ou azar: accidenti!, uffa! (aborrecimento), peccato! (que pena).",
+      "Alívio e dor: meno male! (ainda bem), ahia! (ai!). O tom e o gesto contam muito."
+     ],
+     "q": "O que dizes na tua língua quando acontece algo fantástico?",
+     "c": "Escreve três situações curtas e reage a cada uma com uma exclamação italiana adequada."
+    },
+    "pt_BR": {
+     "t": "Interjeições e exclamações",
+     "g": "Expressar emoções com mamma mia, accidenti, che bello e evviva.",
+     "p": [
+      "Surpresa: mamma mia!, caspita!, accipicchia! Alegria: che bello!, evviva!, finalmente!",
+      "Irritação ou azar: accidenti!, uffa! (tédio), peccato! (que pena).",
+      "Alívio e dor: meno male! (ainda bem), ahia! (ai!). O tom e o gesto contam muito."
+     ],
+     "q": "O que você diz na sua língua quando acontece algo incrível?",
+     "c": "Escreva três situações curtas e reaja a cada uma com uma exclamação italiana adequada."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "mamma mia",
+      "ex": "Mamma mia, che traffico stamattina!"
+     },
+     {
+      "w": "accidenti",
+      "ex": "Accidenti, ho perso il treno!"
+     },
+     {
+      "w": "che bello",
+      "ex": "Che bello rivederti dopo tanto tempo!"
+     },
+     {
+      "w": "evviva",
+      "ex": "Evviva, abbiamo vinto!"
+     },
+     {
+      "w": "meno male",
+      "ex": "Meno male che hai portato l'ombrello."
+     },
+     {
+      "w": "peccato",
+      "ex": "Peccato, il museo è chiuso oggi."
+     }
+    ],
+    "gram": "Esclamazioni: che + aggettivo/nome (che bello!, che peccato!) e meno male che + indicativo."
+   }
+  },
+  {
+   "d": 257,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Understanding Italian humour",
+     "g": "Enjoy wordplay, irony and gentle jokes in everyday Italian conversation.",
+     "p": [
+      "Irony is common: Bella giornata! said in the rain means the opposite. Listen to the tone.",
+      "Wordplay uses double meanings: Sai qual è il colmo per un elettricista? Non fare scintille!",
+      "Il colmo per... jokes are classic and kind; laugh along with ma dai! or che ridere!"
+     ],
+     "q": "What kind of humour makes you laugh most: wordplay, irony or funny stories?",
+     "c": "Write one il colmo per... joke in Italian, about a baker, a gardener or a teacher."
+    },
+    "de": {
+     "t": "Italienischen Humor verstehen",
+     "g": "Du genießt Wortspiele, Ironie und liebe Witze im italienischen Alltag.",
+     "p": [
+      "Ironie ist häufig: Bella giornata! bei Regen meint das Gegenteil. Achte auf den Ton.",
+      "Wortspiele nutzen Doppelbedeutungen: Sai qual è il colmo per un elettricista? Non fare scintille!",
+      "Il colmo per...-Witze sind klassisch und harmlos; lach mit ma dai! oder che ridere!"
+     ],
+     "q": "Welche Art von Humor bringt dich am meisten zum Lachen: Wortspiele, Ironie oder lustige Geschichten?",
+     "c": "Schreib einen il colmo per...-Witz auf Italienisch über einen Bäcker, Gärtner oder Lehrer."
+    },
+    "es": {
+     "t": "Entender el humor italiano",
+     "g": "Disfrutar de juegos de palabras, ironía y bromas amables en la conversación.",
+     "p": [
+      "La ironía es frecuente: Bella giornata! dicho bajo la lluvia significa lo contrario. Escucha el tono.",
+      "Los juegos de palabras usan dobles sentidos: Sai qual è il colmo per un elettricista? Non fare scintille!",
+      "Los chistes il colmo per... son clásicos y amables; ríete con ma dai! o che ridere!"
+     ],
+     "q": "¿Qué humor te hace reír más: juegos de palabras, ironía o historias graciosas?",
+     "c": "Escribe un chiste il colmo per... en italiano sobre un panadero, un jardinero o un profesor."
+    },
+    "fr": {
+     "t": "Comprendre l'humour italien",
+     "g": "Apprécier jeux de mots, ironie et blagues gentilles dans la conversation.",
+     "p": [
+      "L'ironie est fréquente : Bella giornata! sous la pluie veut dire le contraire. Écoute le ton.",
+      "Les jeux de mots jouent sur le double sens : Sai qual è il colmo per un elettricista? Non fare scintille!",
+      "Les blagues il colmo per... sont classiques et gentilles ; ris avec ma dai! ou che ridere!"
+     ],
+     "q": "Quel humour te fait le plus rire : jeux de mots, ironie ou histoires drôles ?",
+     "c": "Écris une blague il colmo per... en italien sur un boulanger, un jardinier ou un professeur."
+    },
+    "it": {
+     "t": "Capire l'umorismo italiano",
+     "g": "Godersi giochi di parole, ironia e battute gentili nella conversazione.",
+     "p": [
+      "L'ironia è frequente: Bella giornata! detto sotto la pioggia vuol dire il contrario. Ascolta il tono.",
+      "I giochi di parole usano doppi sensi: Sai qual è il colmo per un elettricista? Non fare scintille!",
+      "Le battute il colmo per... sono classiche e gentili; ridi con ma dai! o che ridere!"
+     ],
+     "q": "Che tipo di umorismo ti fa ridere di più: giochi di parole, ironia o storie buffe?",
+     "c": "Scrivi una battuta il colmo per... su un fornaio, un giardiniere o un insegnante."
+    },
+    "pt": {
+     "t": "Perceber o humor italiano",
+     "g": "Apreciar trocadilhos, ironia e piadas simpáticas na conversa do dia a dia.",
+     "p": [
+      "A ironia é frequente: Bella giornata! dito à chuva significa o contrário. Ouve o tom.",
+      "Os trocadilhos usam duplos sentidos: Sai qual è il colmo per un elettricista? Non fare scintille!",
+      "As piadas il colmo per... são clássicas e simpáticas; ri com ma dai! ou che ridere!"
+     ],
+     "q": "Que tipo de humor te faz rir mais: trocadilhos, ironia ou histórias engraçadas?",
+     "c": "Escreve uma piada il colmo per... em italiano sobre um padeiro, um jardineiro ou um professor."
+    },
+    "pt_BR": {
+     "t": "Entender o humor italiano",
+     "g": "Curtir trocadilhos, ironia e piadas leves na conversa do dia a dia.",
+     "p": [
+      "A ironia é comum: Bella giornata! dito na chuva significa o contrário. Preste atenção no tom.",
+      "Os trocadilhos usam duplo sentido: Sai qual è il colmo per un elettricista? Non fare scintille!",
+      "As piadas il colmo per... são clássicas e leves; ria com ma dai! ou che ridere!"
+     ],
+     "q": "Que tipo de humor mais faz você rir: trocadilhos, ironia ou histórias engraçadas?",
+     "c": "Escreva uma piada il colmo per... em italiano sobre um padeiro, um jardineiro ou um professor."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la battuta",
+      "ex": "Che battuta divertente!"
+     },
+     {
+      "w": "il gioco di parole",
+      "ex": "Questo gioco di parole è intraducibile."
+     },
+     {
+      "w": "l'ironia",
+      "ex": "Lo ha detto con un po' di ironia."
+     },
+     {
+      "w": "il colmo",
+      "ex": "Qual è il colmo per un giardiniere? Avere un pollice verde... di vernice!"
+     },
+     {
+      "w": "che ridere",
+      "ex": "Che ridere, mi hai fatto piangere dalle risate!"
+     },
+     {
+      "w": "scherzare",
+      "ex": "Non ti preoccupare, stavo scherzando."
+     }
+    ],
+    "gram": "Stare + gerundio per azioni in corso nel passato: stavo scherzando; qual è il colmo per + nome?"
+   }
+  },
+  {
+   "d": 258,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Speaking about yourself in depth",
+     "g": "Talk about your values, goals and experiences in a longer monologue.",
+     "p": [
+      "Values: per me è fondamentale..., credo nell'onestà, do molta importanza alla famiglia.",
+      "Experiences: mi ha segnato..., è stata un'esperienza che mi ha cambiato, ho imparato che...",
+      "Goals: il mio obiettivo è..., spero di + infinitive, mi piacerebbe che + subjunctive."
+     ],
+     "q": "What is one value that guides your everyday choices?",
+     "c": "Speak for one minute about yourself: one value, one important experience and one goal."
+    },
+    "de": {
+     "t": "Ausführlich über sich sprechen",
+     "g": "Du sprichst in einem längeren Monolog über Werte, Ziele und Erfahrungen.",
+     "p": [
+      "Werte: per me è fondamentale..., credo nell'onestà, do molta importanza alla famiglia.",
+      "Erfahrungen: mi ha segnato..., è stata un'esperienza che mi ha cambiato, ho imparato che...",
+      "Ziele: il mio obiettivo è..., spero di + Infinitiv, mi piacerebbe che + Konjunktiv."
+     ],
+     "q": "Welcher Wert leitet deine alltäglichen Entscheidungen?",
+     "c": "Sprich eine Minute über dich: ein Wert, eine wichtige Erfahrung, ein Ziel."
+    },
+    "es": {
+     "t": "Hablar de ti en profundidad",
+     "g": "Hablar de tus valores, metas y experiencias en un monólogo más largo.",
+     "p": [
+      "Valores: per me è fondamentale..., credo nell'onestà, do molta importanza alla famiglia.",
+      "Experiencias: mi ha segnato..., è stata un'esperienza che mi ha cambiato, ho imparato che...",
+      "Metas: il mio obiettivo è..., spero di + infinitivo, mi piacerebbe che + subjuntivo."
+     ],
+     "q": "¿Qué valor guía tus decisiones de cada día?",
+     "c": "Habla un minuto sobre ti: un valor, una experiencia importante y una meta."
+    },
+    "fr": {
+     "t": "Parler de soi en profondeur",
+     "g": "Parler de tes valeurs, objectifs et expériences dans un monologue plus long.",
+     "p": [
+      "Valeurs : per me è fondamentale..., credo nell'onestà, do molta importanza alla famiglia.",
+      "Expériences : mi ha segnato..., è stata un'esperienza che mi ha cambiato, ho imparato che...",
+      "Objectifs : il mio obiettivo è..., spero di + infinitif, mi piacerebbe che + subjonctif."
+     ],
+     "q": "Quelle valeur guide tes choix de tous les jours ?",
+     "c": "Parle une minute de toi : une valeur, une expérience importante et un objectif."
+    },
+    "it": {
+     "t": "Parlare di sé in profondità",
+     "g": "Parlare dei tuoi valori, obiettivi ed esperienze in un monologo più lungo.",
+     "p": [
+      "Valori: per me è fondamentale..., credo nell'onestà, do molta importanza alla famiglia.",
+      "Esperienze: mi ha segnato..., è stata un'esperienza che mi ha cambiato, ho imparato che...",
+      "Obiettivi: il mio obiettivo è..., spero di + infinito, mi piacerebbe che + congiuntivo."
+     ],
+     "q": "Qual è un valore che guida le tue scelte di ogni giorno?",
+     "c": "Parla per un minuto di te: un valore, un'esperienza importante e un obiettivo."
+    },
+    "pt": {
+     "t": "Falar de ti em profundidade",
+     "g": "Falar dos teus valores, objetivos e experiências num monólogo mais longo.",
+     "p": [
+      "Valores: per me è fondamentale..., credo nell'onestà, do molta importanza alla famiglia.",
+      "Experiências: mi ha segnato..., è stata un'esperienza che mi ha cambiato, ho imparato che...",
+      "Objetivos: il mio obiettivo è..., spero di + infinitivo, mi piacerebbe che + conjuntivo."
+     ],
+     "q": "Que valor orienta as tuas escolhas do dia a dia?",
+     "c": "Fala durante um minuto sobre ti: um valor, uma experiência importante e um objetivo."
+    },
+    "pt_BR": {
+     "t": "Falar de você em profundidade",
+     "g": "Falar dos seus valores, metas e experiências num monólogo mais longo.",
+     "p": [
+      "Valores: per me è fondamentale..., credo nell'onestà, do molta importanza alla famiglia.",
+      "Experiências: mi ha segnato..., è stata un'esperienza che mi ha cambiato, ho imparato che...",
+      "Metas: il mio obiettivo è..., spero di + infinitivo, mi piacerebbe che + subjuntivo."
+     ],
+     "q": "Que valor guia suas escolhas do dia a dia?",
+     "c": "Fale por um minuto sobre você: um valor, uma experiência importante e uma meta."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "fondamentale",
+      "ex": "Per me è fondamentale essere sincero."
+     },
+     {
+      "w": "dare importanza a",
+      "ex": "Do molta importanza all'amicizia."
+     },
+     {
+      "w": "segnare",
+      "ex": "Quel viaggio in Giappone mi ha segnato."
+     },
+     {
+      "w": "l'obiettivo",
+      "ex": "Il mio obiettivo è parlare italiano fluentemente."
+     },
+     {
+      "w": "sperare di",
+      "ex": "Spero di vivere in Italia per un anno."
+     },
+     {
+      "w": "mi piacerebbe che",
+      "ex": "Mi piacerebbe che i miei amici imparassero l'italiano con me."
+     }
+    ],
+    "gram": "Monologo: credo in + nome, spero di + infinito, mi piacerebbe che + congiuntivo imperfetto."
+   }
+  },
+  {
+   "d": 259,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Storytelling with emotion",
+     "g": "Use tenses, detail and suspense to tell a memorable story in Italian.",
+     "p": [
+      "Set the scene with imperfetto: era una sera d'inverno, pioveva e non c'era nessuno.",
+      "Action with passato prossimo or remoto, plus suspense: all'improvviso, a un tratto, proprio in quel momento.",
+      "Add feelings and a final twist: ero agitatissimo..., e alla fine indovina chi era?"
+     ],
+     "q": "What is the most surprising thing that has ever happened to you on a trip?",
+     "c": "Write a six-sentence story with imperfetto for the scene and all'improvviso for the turning point."
+    },
+    "de": {
+     "t": "Erzählen mit Gefühl",
+     "g": "Du nutzt Zeiten, Details und Spannung, um eine einprägsame Geschichte zu erzählen.",
+     "p": [
+      "Die Szene mit Imperfetto: era una sera d'inverno, pioveva e non c'era nessuno.",
+      "Handlung mit passato prossimo oder remoto, dazu Spannung: all'improvviso, a un tratto, proprio in quel momento.",
+      "Gefühle und Pointe: ero agitatissimo..., e alla fine indovina chi era?"
+     ],
+     "q": "Was ist das Überraschendste, das dir je auf einer Reise passiert ist?",
+     "c": "Schreib eine Geschichte aus sechs Sätzen: Imperfetto für die Szene, all'improvviso für die Wende."
+    },
+    "es": {
+     "t": "Contar historias con emoción",
+     "g": "Usar tiempos verbales, detalles y suspense para contar una historia memorable.",
+     "p": [
+      "Ambienta con el imperfetto: era una sera d'inverno, pioveva e non c'era nessuno.",
+      "Acción con passato prossimo o remoto y suspense: all'improvviso, a un tratto, proprio in quel momento.",
+      "Añade emociones y un giro final: ero agitatissimo..., e alla fine indovina chi era?"
+     ],
+     "q": "¿Qué es lo más sorprendente que te ha pasado en un viaje?",
+     "c": "Escribe una historia de seis frases con imperfetto para la escena y all'improvviso para el giro."
+    },
+    "fr": {
+     "t": "Raconter avec émotion",
+     "g": "Utiliser les temps, les détails et le suspense pour raconter une histoire marquante.",
+     "p": [
+      "Pose le décor à l'imperfetto : era una sera d'inverno, pioveva e non c'era nessuno.",
+      "L'action au passato prossimo ou remoto, avec du suspense : all'improvviso, a un tratto, proprio in quel momento.",
+      "Ajoute émotions et chute : ero agitatissimo..., e alla fine indovina chi era?"
+     ],
+     "q": "Quelle est la chose la plus surprenante qui te soit arrivée en voyage ?",
+     "c": "Écris une histoire de six phrases : imperfetto pour le décor, all'improvviso pour le rebondissement."
+    },
+    "it": {
+     "t": "Raccontare con emozione",
+     "g": "Usare tempi, dettagli e suspense per raccontare una storia che resta in mente.",
+     "p": [
+      "Descrivi la scena con l'imperfetto: era una sera d'inverno, pioveva e non c'era nessuno.",
+      "Azioni al passato prossimo o remoto, con suspense: all'improvviso, a un tratto, proprio in quel momento.",
+      "Aggiungi emozioni e un colpo di scena: ero agitatissimo..., e alla fine indovina chi era?"
+     ],
+     "q": "Qual è la cosa più sorprendente che ti è capitata durante un viaggio?",
+     "c": "Scrivi una storia di sei frasi: imperfetto per la scena, all'improvviso per la svolta."
+    },
+    "pt": {
+     "t": "Contar histórias com emoção",
+     "g": "Usar tempos verbais, pormenores e suspense para contar uma história memorável.",
+     "p": [
+      "Cria o cenário com o imperfetto: era una sera d'inverno, pioveva e non c'era nessuno.",
+      "Ação com passato prossimo ou remoto e suspense: all'improvviso, a un tratto, proprio in quel momento.",
+      "Junta emoções e uma reviravolta: ero agitatissimo..., e alla fine indovina chi era?"
+     ],
+     "q": "Qual foi a coisa mais surpreendente que te aconteceu numa viagem?",
+     "c": "Escreve uma história de seis frases com imperfetto para o cenário e all'improvviso para a reviravolta."
+    },
+    "pt_BR": {
+     "t": "Contar histórias com emoção",
+     "g": "Usar tempos verbais, detalhes e suspense para contar uma história memorável.",
+     "p": [
+      "Monte o cenário com o imperfetto: era una sera d'inverno, pioveva e non c'era nessuno.",
+      "Ação com passato prossimo ou remoto e suspense: all'improvviso, a un tratto, proprio in quel momento.",
+      "Coloque emoções e uma reviravolta: ero agitatissimo..., e alla fine indovina chi era?"
+     ],
+     "q": "Qual foi a coisa mais surpreendente que já aconteceu com você numa viagem?",
+     "c": "Escreva uma história de seis frases com imperfetto para o cenário e all'improvviso para a virada."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "all'improvviso",
+      "ex": "All'improvviso si è spenta la luce."
+     },
+     {
+      "w": "a un tratto",
+      "ex": "A un tratto abbiamo sentito una musica."
+     },
+     {
+      "w": "proprio in quel momento",
+      "ex": "Proprio in quel momento è arrivato il treno."
+     },
+     {
+      "w": "il colpo di scena",
+      "ex": "Il colpo di scena finale mi ha sorpreso."
+     },
+     {
+      "w": "agitato",
+      "ex": "Ero agitato prima dell'esame."
+     },
+     {
+      "w": "indovina",
+      "ex": "E indovina chi ho incontrato in piazza?"
+     }
+    ],
+    "gram": "Racconto: imperfetto per lo sfondo (pioveva), passato prossimo per gli eventi (è arrivato); all'improvviso segna la svolta."
+   }
+  },
+  {
+   "d": 260,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Describing people in depth",
+     "g": "Describe personality nuances with testardo, generoso, permaloso and solare.",
+     "p": [
+      "Positive traits: solare (sunny), generoso, paziente, affidabile, spiritoso, alla mano (easygoing).",
+      "Tricky traits, said kindly: testardo, permaloso (touchy), un po' pignolo, timido.",
+      "Soften and nuance: è piuttosto..., a volte è un po'..., ha un carattere forte ma è buonissimo."
+     ],
+     "q": "How would your best friend describe your personality in three words?",
+     "c": "Describe a friend or relative in four sentences, with two positive traits and one gentle flaw."
+    },
+    "de": {
+     "t": "Menschen genau beschreiben",
+     "g": "Du beschreibst Charakterzüge mit testardo, generoso, permaloso und solare.",
+     "p": [
+      "Positive Züge: solare (sonnig), generoso, paziente, affidabile, spiritoso, alla mano (unkompliziert).",
+      "Schwierige Züge, freundlich gesagt: testardo, permaloso (empfindlich), un po' pignolo, timido.",
+      "Abschwächen und nuancieren: è piuttosto..., a volte è un po'..., ha un carattere forte ma è buonissimo."
+     ],
+     "q": "Wie würde dein bester Freund deine Persönlichkeit in drei Wörtern beschreiben?",
+     "c": "Beschreibe einen Freund oder Verwandten in vier Sätzen: zwei positive Züge und eine kleine Schwäche."
+    },
+    "es": {
+     "t": "Describir a las personas a fondo",
+     "g": "Describir matices de carácter con testardo, generoso, permaloso y solare.",
+     "p": [
+      "Rasgos positivos: solare (alegre), generoso, paziente, affidabile, spiritoso, alla mano (sencillo).",
+      "Rasgos difíciles, dichos con cariño: testardo, permaloso (susceptible), un po' pignolo, timido.",
+      "Suaviza y matiza: è piuttosto..., a volte è un po'..., ha un carattere forte ma è buonissimo."
+     ],
+     "q": "¿Cómo describiría tu mejor amigo tu personalidad en tres palabras?",
+     "c": "Describe a un amigo o familiar en cuatro frases, con dos rasgos positivos y un defecto suave."
+    },
+    "fr": {
+     "t": "Décrire les gens en profondeur",
+     "g": "Décrire les nuances du caractère avec testardo, generoso, permaloso et solare.",
+     "p": [
+      "Traits positifs : solare (rayonnant), generoso, paziente, affidabile, spiritoso, alla mano (simple).",
+      "Traits délicats, dits gentiment : testardo, permaloso (susceptible), un po' pignolo, timido.",
+      "Nuancer : è piuttosto..., a volte è un po'..., ha un carattere forte ma è buonissimo."
+     ],
+     "q": "Comment ton meilleur ami décrirait-il ta personnalité en trois mots ?",
+     "c": "Décris un ami ou un proche en quatre phrases : deux qualités et un petit défaut."
+    },
+    "it": {
+     "t": "Descrivere le persone in profondità",
+     "g": "Descrivere sfumature di carattere con testardo, generoso, permaloso e solare.",
+     "p": [
+      "Tratti positivi: solare, generoso, paziente, affidabile, spiritoso, alla mano.",
+      "Tratti difficili, detti con gentilezza: testardo, permaloso, un po' pignolo, timido.",
+      "Sfuma il giudizio: è piuttosto..., a volte è un po'..., ha un carattere forte ma è buonissimo."
+     ],
+     "q": "Come descriverebbe il tuo carattere il tuo migliore amico in tre parole?",
+     "c": "Descrivi un amico o un parente in quattro frasi, con due pregi e un piccolo difetto."
+    },
+    "pt": {
+     "t": "Descrever pessoas em profundidade",
+     "g": "Descrever matizes de personalidade com testardo, generoso, permaloso e solare.",
+     "p": [
+      "Traços positivos: solare (alegre), generoso, paziente, affidabile, spiritoso, alla mano (descontraído).",
+      "Traços difíceis, ditos com carinho: testardo, permaloso (melindroso), un po' pignolo, timido.",
+      "Suaviza e matiza: è piuttosto..., a volte è un po'..., ha un carattere forte ma è buonissimo."
+     ],
+     "q": "Como é que o teu melhor amigo descreveria a tua personalidade em três palavras?",
+     "c": "Descreve um amigo ou familiar em quatro frases, com duas qualidades e um pequeno defeito."
+    },
+    "pt_BR": {
+     "t": "Descrever pessoas em profundidade",
+     "g": "Descrever nuances de personalidade com testardo, generoso, permaloso e solare.",
+     "p": [
+      "Traços positivos: solare (alto-astral), generoso, paziente, affidabile, spiritoso, alla mano (gente boa).",
+      "Traços difíceis, ditos com carinho: testardo, permaloso (melindroso), un po' pignolo, timido.",
+      "Suavize e matize: è piuttosto..., a volte è un po'..., ha un carattere forte ma è buonissimo."
+     ],
+     "q": "Como seu melhor amigo descreveria sua personalidade em três palavras?",
+     "c": "Descreva um amigo ou parente em quatro frases, com duas qualidades e um pequeno defeito."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "solare",
+      "ex": "Giulia è una ragazza solare, sorride sempre."
+     },
+     {
+      "w": "testardo",
+      "ex": "Mio fratello è testardo come un mulo."
+     },
+     {
+      "w": "permaloso",
+      "ex": "Non scherzare troppo con lui, è un po' permaloso."
+     },
+     {
+      "w": "generoso",
+      "ex": "Il nonno è generosissimo con tutti."
+     },
+     {
+      "w": "alla mano",
+      "ex": "Il nuovo capo è molto alla mano."
+     },
+     {
+      "w": "pignolo",
+      "ex": "Sono un po' pignolo con l'ordine."
+     }
+    ],
+    "gram": "Sfumare: piuttosto, un po', abbastanza + aggettivo; superlativo assoluto con -issimo (generosissimo)."
+   }
+  }
+ ]
+}

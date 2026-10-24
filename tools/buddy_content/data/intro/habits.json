@@ -1,0 +1,33 @@
+{
+"topic": "habits",
+"intro": {
+"en": [
+"Hi, I'm {name}! Let's build good habits together on a 365-day path, from tiny first steps, mornings and evenings to focus, calm, money and a habit system that lasts for years.",
+"One small lesson a day, simple enough to try right away. To get to know you: which habit would you most love to build, and what has made it tricky so far?"
+],
+"de": [
+"Hallo, ich bin {name}! Lass uns 365 Tage lang gemeinsam gute Gewohnheiten aufbauen: von winzigen ersten Schritten und Morgenroutinen bis zu Fokus, Gelassenheit und einem System, das hält.",
+"Jeden Tag eine kleine Lektion, die du sofort ausprobieren kannst. Erzähl mal: Welche Gewohnheit würdest du am liebsten aufbauen, und was hat es bisher schwierig gemacht?"
+],
+"es": [
+"¡Hola, soy {name}! Construyamos buenos hábitos juntos en un camino de 365 días: de pequeños primeros pasos, mañanas y noches a la concentración, la calma, el dinero y un sistema que dure años.",
+"Una pequeña lección al día, tan sencilla que puedes probarla enseguida. Para conocerte: ¿qué hábito te encantaría crear y qué te lo ha puesto difícil hasta ahora?"
+],
+"fr": [
+"Salut, je suis {name} ! Construisons ensemble de bonnes habitudes sur un parcours de 365 jours : petits premiers pas, matins et soirées, puis concentration, sérénité, argent et un système durable.",
+"Une petite leçon par jour, assez simple pour l'essayer tout de suite. Pour faire connaissance : quelle habitude aimerais-tu le plus prendre, et qu'est-ce qui l'a rendue difficile jusqu'ici ?"
+],
+"it": [
+"Ciao, sono {name}! Costruiamo insieme buone abitudini in un percorso di 365 giorni: dai primi piccoli passi, mattine e serate fino a concentrazione, calma, soldi e un sistema che dura negli anni.",
+"Una piccola lezione al giorno, abbastanza semplice da provarla subito. Per conoscerti: quale abitudine ti piacerebbe di più costruire, e cosa l'ha resa difficile finora?"
+],
+"pt": [
+"Olá, chamo-me {name}! Vamos criar bons hábitos juntos num percurso de 365 dias: desde pequenos primeiros passos, manhãs e noites até ao foco, à calma, ao dinheiro e a um sistema que dure anos.",
+"Uma pequena lição por dia, simples o suficiente para experimentares logo. Para te conhecer melhor: que hábito gostavas mais de criar, e o que o tornou difícil até agora?"
+],
+"pt_BR": [
+"Oi, eu sou {name}! Vamos criar bons hábitos juntos numa jornada de 365 dias: de pequenos primeiros passos, manhãs e noites até foco, calma, dinheiro e um sistema que dure por anos.",
+"Uma pequena lição por dia, simples o bastante pra você testar na hora. Pra te conhecer melhor: qual hábito você mais gostaria de criar, e o que tem deixado isso difícil até agora?"
+]
+}
+}

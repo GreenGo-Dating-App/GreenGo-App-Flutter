@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 181,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Trapassato prossimo",
+     "g": "Talk about the past before the past, like quando sono arrivato, il treno era già partito.",
+     "p": [
+      "Form: imperfetto of avere or essere + past participle: avevo mangiato, ero uscito, eravamo arrivati.",
+      "It marks the earlier of two past actions: quando sono arrivato (later), il treno era già partito (earlier).",
+      "Useful partners: già (already), non ancora (not yet), mai (never before): non avevo mai visto il mare."
+     ],
+     "q": "Tell me about a time you arrived somewhere and something had already happened. What had happened?",
+     "c": "Write three sentences with quando + passato prossimo and a trapassato: Quando sono arrivato, ..."
+    },
+    "de": {
+     "t": "Trapassato prossimo",
+     "g": "Du sprichst über die Vorvergangenheit: quando sono arrivato, il treno era già partito.",
+     "p": [
+      "Bildung: imperfetto von avere oder essere + Partizip: avevo mangiato, ero uscito, eravamo arrivati.",
+      "Es zeigt die frühere von zwei vergangenen Handlungen: quando sono arrivato (später), il treno era già partito (früher).",
+      "Gute Begleiter: già (schon), non ancora (noch nicht), mai (nie zuvor): non avevo mai visto il mare."
+     ],
+     "q": "Erzähl von einem Moment, als du irgendwo ankamst und etwas schon passiert war. Was war passiert?",
+     "c": "Schreib drei Sätze mit quando + passato prossimo und einem trapassato: Quando sono arrivato, ..."
+    },
+    "es": {
+     "t": "Trapassato prossimo",
+     "g": "Hablar del pasado anterior al pasado: quando sono arrivato, il treno era già partito.",
+     "p": [
+      "Forma: imperfetto de avere o essere + participio: avevo mangiato, ero uscito, eravamo arrivati.",
+      "Marca la acción anterior de dos pasadas: quando sono arrivato (después), il treno era già partito (antes).",
+      "Compañeros útiles: già (ya), non ancora (todavía no), mai (nunca antes): non avevo mai visto il mare."
+     ],
+     "q": "Cuéntame una vez que llegaste a un sitio y algo ya había pasado. ¿Qué había pasado?",
+     "c": "Escribe tres frases con quando + passato prossimo y un trapassato: Quando sono arrivato, ..."
+    },
+    "fr": {
+     "t": "Trapassato prossimo",
+     "g": "Parler du passé antérieur au passé : quando sono arrivato, il treno era già partito.",
+     "p": [
+      "Forme : imperfetto de avere ou essere + participe passé : avevo mangiato, ero uscito, eravamo arrivati.",
+      "Il marque la plus ancienne de deux actions passées : quando sono arrivato (après), il treno era già partito (avant).",
+      "Mots utiles : già (déjà), non ancora (pas encore), mai (jamais auparavant) : non avevo mai visto il mare."
+     ],
+     "q": "Raconte une fois où tu es arrivé quelque part et où quelque chose s'était déjà passé. Quoi donc ?",
+     "c": "Écris trois phrases avec quando + passato prossimo et un trapassato : Quando sono arrivato, ..."
+    },
+    "it": {
+     "t": "Il trapassato prossimo",
+     "g": "Parlare del passato prima del passato: quando sono arrivato, il treno era già partito.",
+     "p": [
+      "Si forma con l'imperfetto di avere o essere + participio passato: avevo mangiato, ero uscito, eravamo arrivati.",
+      "Indica l'azione più lontana tra due azioni passate: quando sono arrivato, il treno era già partito.",
+      "Parole amiche: già, non ancora, mai: non avevo mai visto il mare prima di quel viaggio."
+     ],
+     "q": "Raccontami di una volta in cui sei arrivato in un posto e qualcosa era già successo. Che cosa?",
+     "c": "Scrivi tre frasi con quando + passato prossimo e un trapassato: Quando sono arrivato, ..."
+    },
+    "pt": {
+     "t": "Trapassato prossimo",
+     "g": "Falar do passado anterior ao passado: quando sono arrivato, il treno era già partito.",
+     "p": [
+      "Forma: imperfetto de avere ou essere + particípio: avevo mangiato, ero uscito, eravamo arrivati.",
+      "Marca a ação mais antiga de duas passadas: quando sono arrivato (depois), il treno era già partito (antes).",
+      "Palavras úteis: già (já), non ancora (ainda não), mai (nunca antes): non avevo mai visto il mare."
+     ],
+     "q": "Conta-me uma vez em que chegaste a um sítio e algo já tinha acontecido. O que tinha acontecido?",
+     "c": "Escreve três frases com quando + passato prossimo e um trapassato: Quando sono arrivato, ..."
+    },
+    "pt_BR": {
+     "t": "Trapassato prossimo",
+     "g": "Falar do passado anterior ao passado: quando sono arrivato, il treno era già partito.",
+     "p": [
+      "Forma: imperfetto de avere ou essere + particípio: avevo mangiato, ero uscito, eravamo arrivati.",
+      "Marca a ação mais antiga de duas passadas: quando sono arrivato (depois), il treno era già partito (antes).",
+      "Palavras úteis: già (já), non ancora (ainda não), mai (nunca antes): non avevo mai visto il mare."
+     ],
+     "q": "Conte uma vez em que você chegou a um lugar e algo já tinha acontecido. O que tinha acontecido?",
+     "c": "Escreva três frases com quando + passato prossimo e um trapassato: Quando sono arrivato, ..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "era già partito",
+      "ex": "Quando sono arrivato in stazione, il treno era già partito."
+     },
+     {
+      "w": "avevo dimenticato",
+      "ex": "Avevo dimenticato le chiavi, così sono tornato a casa."
+     },
+     {
+      "w": "non avevo mai",
+      "ex": "Non avevo mai assaggiato un piatto così buono."
+     },
+     {
+      "w": "eravamo usciti",
+      "ex": "Eravamo già usciti quando ha cominciato a piovere."
+     },
+     {
+      "w": "aveva finito",
+      "ex": "Lei aveva finito il lavoro prima di pranzo."
+     },
+     {
+      "w": "prima di allora",
+      "ex": "Prima di allora non ero mai stato a Napoli."
+     }
+    ],
+    "gram": "Trapassato prossimo: imperfetto di avere/essere + participio. Indica un'azione passata avvenuta prima di un'altra azione passata."
+   }
+  },
+  {
+   "d": 182,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Past tense review in context",
+     "g": "Choose between passato prossimo, imperfetto and trapassato inside a real story.",
+     "p": [
+      "Passato prossimo moves the story forward: ho aperto la porta, sono entrato, ho visto...",
+      "Imperfetto paints the background and states: era sera, pioveva, ero stanco, la casa sembrava vuota.",
+      "Trapassato jumps further back: qualcuno aveva lasciato la luce accesa. Mix all three for a lively story."
+     ],
+     "q": "What happened the last time you had a small surprise? Set the scene first with the imperfetto.",
+     "c": "Tell a six-line story: two lines of background (imperfetto), three events (passato prossimo), one earlier fact (trapassato)."
+    },
+    "de": {
+     "t": "Vergangenheitszeiten im Kontext",
+     "g": "Du wählst in einer echten Geschichte zwischen passato prossimo, imperfetto und trapassato.",
+     "p": [
+      "Das passato prossimo treibt die Handlung voran: ho aperto la porta, sono entrato, ho visto...",
+      "Das imperfetto malt Hintergrund und Zustände: era sera, pioveva, ero stanco, la casa sembrava vuota.",
+      "Das trapassato springt weiter zurück: qualcuno aveva lasciato la luce accesa. Mische alle drei."
+     ],
+     "q": "Was ist passiert, als du zuletzt eine kleine Überraschung erlebt hast? Beschreib zuerst die Szene im imperfetto.",
+     "c": "Erzähl in sechs Zeilen: zwei Zeilen Hintergrund (imperfetto), drei Ereignisse (passato prossimo), ein früheres Detail (trapassato)."
+    },
+    "es": {
+     "t": "Repaso de los pasados en contexto",
+     "g": "Elegir entre passato prossimo, imperfetto y trapassato dentro de una historia real.",
+     "p": [
+      "El passato prossimo hace avanzar la historia: ho aperto la porta, sono entrato, ho visto...",
+      "El imperfetto pinta el fondo y los estados: era sera, pioveva, ero stanco, la casa sembrava vuota.",
+      "El trapassato va más atrás: qualcuno aveva lasciato la luce accesa. Mezcla los tres para dar vida."
+     ],
+     "q": "¿Qué pasó la última vez que tuviste una pequeña sorpresa? Describe primero la escena con el imperfetto.",
+     "c": "Cuenta una historia de seis líneas: dos de fondo (imperfetto), tres hechos (passato prossimo) y uno anterior (trapassato)."
+    },
+    "fr": {
+     "t": "Révision des passés en contexte",
+     "g": "Choisir entre passato prossimo, imperfetto et trapassato dans une vraie histoire.",
+     "p": [
+      "Le passato prossimo fait avancer l'histoire : ho aperto la porta, sono entrato, ho visto...",
+      "L'imperfetto peint le décor et les états : era sera, pioveva, ero stanco, la casa sembrava vuota.",
+      "Le trapassato remonte plus loin : qualcuno aveva lasciato la luce accesa. Mélange les trois."
+     ],
+     "q": "Que s'est-il passé la dernière fois que tu as eu une petite surprise ? Pose d'abord le décor à l'imperfetto.",
+     "c": "Raconte en six lignes : deux de décor (imperfetto), trois événements (passato prossimo), un fait antérieur (trapassato)."
+    },
+    "it": {
+     "t": "Ripasso dei tempi passati",
+     "g": "Scegliere tra passato prossimo, imperfetto e trapassato dentro una storia vera.",
+     "p": [
+      "Il passato prossimo fa avanzare la storia: ho aperto la porta, sono entrato, ho visto...",
+      "L'imperfetto descrive sfondo e stati: era sera, pioveva, ero stanco, la casa sembrava vuota.",
+      "Il trapassato torna ancora più indietro: qualcuno aveva lasciato la luce accesa."
+     ],
+     "q": "Che cosa è successo l'ultima volta che hai avuto una piccola sorpresa? Descrivi prima la scena.",
+     "c": "Racconta una storia in sei righe: due di sfondo (imperfetto), tre fatti (passato prossimo), uno precedente (trapassato)."
+    },
+    "pt": {
+     "t": "Revisão dos passados em contexto",
+     "g": "Escolher entre passato prossimo, imperfetto e trapassato numa história real.",
+     "p": [
+      "O passato prossimo faz a história avançar: ho aperto la porta, sono entrato, ho visto...",
+      "O imperfetto pinta o cenário e os estados: era sera, pioveva, ero stanco, la casa sembrava vuota.",
+      "O trapassato recua mais: qualcuno aveva lasciato la luce accesa. Mistura os três para dar vida."
+     ],
+     "q": "O que aconteceu da última vez que tiveste uma pequena surpresa? Descreve primeiro a cena com o imperfetto.",
+     "c": "Conta uma história de seis linhas: duas de cenário (imperfetto), três factos (passato prossimo), um anterior (trapassato)."
+    },
+    "pt_BR": {
+     "t": "Revisão dos passados em contexto",
+     "g": "Escolher entre passato prossimo, imperfetto e trapassato numa história real.",
+     "p": [
+      "O passato prossimo faz a história andar: ho aperto la porta, sono entrato, ho visto...",
+      "O imperfetto pinta o cenário e os estados: era sera, pioveva, ero stanco, la casa sembrava vuota.",
+      "O trapassato volta mais atrás: qualcuno aveva lasciato la luce accesa. Misture os três."
+     ],
+     "q": "O que aconteceu da última vez que você teve uma pequena surpresa? Descreva primeiro a cena com o imperfetto.",
+     "c": "Conte uma história de seis linhas: duas de cenário (imperfetto), três fatos (passato prossimo), um anterior (trapassato)."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "era sera",
+      "ex": "Era sera e la strada era quasi vuota."
+     },
+     {
+      "w": "all'improvviso",
+      "ex": "All'improvviso ho sentito un rumore in cucina."
+     },
+     {
+      "w": "mentre",
+      "ex": "Mentre leggevo, è arrivato un messaggio."
+     },
+     {
+      "w": "a un certo punto",
+      "ex": "A un certo punto ho capito che cosa era successo."
+     },
+     {
+      "w": "qualcuno aveva",
+      "ex": "Qualcuno aveva lasciato un regalo davanti alla porta."
+     },
+     {
+      "w": "alla fine",
+      "ex": "Alla fine abbiamo riso tutti insieme."
+     }
+    ],
+    "gram": "Passato prossimo per i fatti, imperfetto per sfondo e abitudini, trapassato per ciò che era successo prima."
+   }
+  },
+  {
+   "d": 183,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Futuro anteriore",
+     "g": "Talk about actions completed before a future moment: dopo che avrò finito, uscirò.",
+     "p": [
+      "Form: future of avere or essere + past participle: avrò finito, sarò arrivato, avremo mangiato.",
+      "It goes with dopo che, quando, appena (as soon as): appena sarò arrivato, ti chiamerò.",
+      "The main verb stays in the simple future: quando avrò risparmiato abbastanza, comprerò una bici."
+     ],
+     "q": "What will you do as soon as you have finished your work today? Use appena avrò finito...",
+     "c": "Write three plans for this year with quando or appena + futuro anteriore + futuro semplice."
+    },
+    "de": {
+     "t": "Futuro anteriore",
+     "g": "Du sprichst über Handlungen, die vor einem Zeitpunkt in der Zukunft abgeschlossen sind: dopo che avrò finito, uscirò.",
+     "p": [
+      "Bildung: Futur von avere oder essere + Partizip: avrò finito, sarò arrivato, avremo mangiato.",
+      "Es steht nach dopo che, quando, appena (sobald): appena sarò arrivato, ti chiamerò.",
+      "Das Hauptverb bleibt im Futur I: quando avrò risparmiato abbastanza, comprerò una bici."
+     ],
+     "q": "Was machst du, sobald du heute mit der Arbeit fertig bist? Benutze appena avrò finito...",
+     "c": "Schreib drei Pläne mit quando oder appena + futuro anteriore + futuro semplice."
+    },
+    "es": {
+     "t": "Futuro anteriore",
+     "g": "Hablar de acciones terminadas antes de un momento futuro: dopo che avrò finito, uscirò.",
+     "p": [
+      "Forma: futuro de avere o essere + participio: avrò finito, sarò arrivato, avremo mangiato.",
+      "Va con dopo che, quando, appena (en cuanto): appena sarò arrivato, ti chiamerò.",
+      "El verbo principal va en futuro simple: quando avrò risparmiato abbastanza, comprerò una bici."
+     ],
+     "q": "¿Qué harás en cuanto termines de trabajar hoy? Usa appena avrò finito...",
+     "c": "Escribe tres planes con quando o appena + futuro anteriore + futuro semplice."
+    },
+    "fr": {
+     "t": "Futuro anteriore",
+     "g": "Parler d'actions accomplies avant un moment futur : dopo che avrò finito, uscirò.",
+     "p": [
+      "Forme : futur de avere ou essere + participe passé : avrò finito, sarò arrivato, avremo mangiato.",
+      "Il suit dopo che, quando, appena (dès que) : appena sarò arrivato, ti chiamerò.",
+      "Le verbe principal reste au futur simple : quando avrò risparmiato abbastanza, comprerò una bici."
+     ],
+     "q": "Que feras-tu dès que tu auras fini ton travail aujourd'hui ? Utilise appena avrò finito...",
+     "c": "Écris trois projets avec quando ou appena + futuro anteriore + futuro semplice."
+    },
+    "it": {
+     "t": "Il futuro anteriore",
+     "g": "Parlare di azioni concluse prima di un momento futuro: dopo che avrò finito, uscirò.",
+     "p": [
+      "Si forma con il futuro di avere o essere + participio: avrò finito, sarò arrivato, avremo mangiato.",
+      "Si usa dopo dopo che, quando, appena: appena sarò arrivato, ti chiamerò.",
+      "Il verbo principale resta al futuro semplice: quando avrò risparmiato abbastanza, comprerò una bici."
+     ],
+     "q": "Che cosa farai appena avrai finito di lavorare oggi? Usa appena avrò finito...",
+     "c": "Scrivi tre progetti con quando o appena + futuro anteriore + futuro semplice."
+    },
+    "pt": {
+     "t": "Futuro anteriore",
+     "g": "Falar de ações concluídas antes de um momento futuro: dopo che avrò finito, uscirò.",
+     "p": [
+      "Forma: futuro de avere ou essere + particípio: avrò finito, sarò arrivato, avremo mangiato.",
+      "Usa-se depois de dopo che, quando, appena (assim que): appena sarò arrivato, ti chiamerò.",
+      "O verbo principal fica no futuro simples: quando avrò risparmiato abbastanza, comprerò una bici."
+     ],
+     "q": "O que vais fazer assim que acabares de trabalhar hoje? Usa appena avrò finito...",
+     "c": "Escreve três planos com quando ou appena + futuro anteriore + futuro semplice."
+    },
+    "pt_BR": {
+     "t": "Futuro anteriore",
+     "g": "Falar de ações concluídas antes de um momento futuro: dopo che avrò finito, uscirò.",
+     "p": [
+      "Forma: futuro de avere ou essere + particípio: avrò finito, sarò arrivato, avremo mangiato.",
+      "Vem depois de dopo che, quando, appena (assim que): appena sarò arrivato, ti chiamerò.",
+      "O verbo principal fica no futuro simples: quando avrò risparmiato abbastanza, comprerò una bici."
+     ],
+     "q": "O que você vai fazer assim que terminar de trabalhar hoje? Use appena avrò finito...",
+     "c": "Escreva três planos com quando ou appena + futuro anteriore + futuro semplice."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "avrò finito",
+      "ex": "Dopo che avrò finito i compiti, uscirò con gli amici."
+     },
+     {
+      "w": "sarò arrivato",
+      "ex": "Ti scriverò appena sarò arrivato a Roma."
+     },
+     {
+      "w": "appena",
+      "ex": "Appena avremo cenato, guarderemo un film."
+     },
+     {
+      "w": "dopo che",
+      "ex": "Dopo che avrai letto il libro, dimmi che cosa ne pensi."
+     },
+     {
+      "w": "avremo risparmiato",
+      "ex": "Quando avremo risparmiato abbastanza, partiremo."
+     },
+     {
+      "w": "entro domani",
+      "ex": "Entro domani avrò mandato tutte le email."
+     }
+    ],
+    "gram": "Futuro anteriore: futuro di avere/essere + participio. Azione conclusa prima di un'altra futura: appena avrò finito, uscirò."
+   }
+  },
+  {
+   "d": 184,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Future perfect of probability",
+     "g": "Guess what probably happened with the futuro anteriore: avrà perso il treno.",
+     "p": [
+      "Italians use the futuro anteriore to guess about the past: Marco è in ritardo... avrà perso il treno.",
+      "It means probably + past: sarà già partita = she has probably already left.",
+      "Compare: sarà a casa (probably at home now) versus sarà tornato a casa (has probably gone home)."
+     ],
+     "q": "Your friend has not answered your message for hours. What could have happened? Make three guesses.",
+     "c": "Look around you and make three guesses about the past with avrà or sarà + participle."
+    },
+    "de": {
+     "t": "Futur II der Vermutung",
+     "g": "Du vermutest mit dem futuro anteriore, was wohl passiert ist: avrà perso il treno.",
+     "p": [
+      "Italiener vermuten mit dem futuro anteriore über die Vergangenheit: Marco è in ritardo... avrà perso il treno.",
+      "Es bedeutet wahrscheinlich + Vergangenheit: sarà già partita = sie ist wohl schon abgefahren.",
+      "Vergleich: sarà a casa (ist wohl jetzt zu Hause) und sarà tornato a casa (ist wohl heimgegangen)."
+     ],
+     "q": "Ein Freund antwortet seit Stunden nicht. Was könnte passiert sein? Stell drei Vermutungen an.",
+     "c": "Schau dich um und stell drei Vermutungen über die Vergangenheit mit avrà oder sarà + Partizip an."
+    },
+    "es": {
+     "t": "Futuro perfecto de probabilidad",
+     "g": "Suponer lo que probablemente pasó con el futuro anteriore: avrà perso il treno.",
+     "p": [
+      "Los italianos usan el futuro anteriore para suponer sobre el pasado: Marco è in ritardo... avrà perso il treno.",
+      "Significa probablemente + pasado: sarà già partita = ya se habrá ido.",
+      "Compara: sarà a casa (estará en casa ahora) y sarà tornato a casa (habrá vuelto a casa)."
+     ],
+     "q": "Un amigo no contesta tu mensaje desde hace horas. ¿Qué habrá pasado? Haz tres suposiciones.",
+     "c": "Mira a tu alrededor y haz tres suposiciones sobre el pasado con avrà o sarà + participio."
+    },
+    "fr": {
+     "t": "Futur antérieur de probabilité",
+     "g": "Faire des suppositions sur le passé avec le futuro anteriore : avrà perso il treno.",
+     "p": [
+      "Les Italiens supposent avec le futuro anteriore : Marco è in ritardo... avrà perso il treno.",
+      "Il signifie probablement + passé : sarà già partita = elle sera déjà partie.",
+      "Compare : sarà a casa (il est sans doute chez lui) et sarà tornato a casa (il sera rentré)."
+     ],
+     "q": "Un ami ne répond pas à ton message depuis des heures. Que se sera-t-il passé ? Fais trois hypothèses.",
+     "c": "Regarde autour de toi et fais trois suppositions sur le passé avec avrà ou sarà + participe."
+    },
+    "it": {
+     "t": "Il futuro anteriore di probabilità",
+     "g": "Fare ipotesi su ciò che probabilmente è successo: avrà perso il treno.",
+     "p": [
+      "Il futuro anteriore serve anche a fare supposizioni sul passato: Marco è in ritardo... avrà perso il treno.",
+      "Significa probabilmente + passato: sarà già partita = probabilmente è già partita.",
+      "Confronta: sarà a casa (adesso, probabilmente) e sarà tornato a casa (prima, probabilmente)."
+     ],
+     "q": "Un amico non risponde al tuo messaggio da ore. Che cosa sarà successo? Fai tre ipotesi.",
+     "c": "Guardati intorno e fai tre supposizioni sul passato con avrà o sarà + participio."
+    },
+    "pt": {
+     "t": "Futuro perfeito de probabilidade",
+     "g": "Supor o que provavelmente aconteceu com o futuro anteriore: avrà perso il treno.",
+     "p": [
+      "Os italianos usam o futuro anteriore para supor sobre o passado: Marco è in ritardo... avrà perso il treno.",
+      "Significa provavelmente + passado: sarà già partita = ela já deve ter partido.",
+      "Compara: sarà a casa (deve estar em casa agora) e sarà tornato a casa (deve ter voltado para casa)."
+     ],
+     "q": "Um amigo não responde à tua mensagem há horas. O que terá acontecido? Faz três suposições.",
+     "c": "Olha à tua volta e faz três suposições sobre o passado com avrà ou sarà + particípio."
+    },
+    "pt_BR": {
+     "t": "Futuro perfeito de probabilidade",
+     "g": "Supor o que provavelmente aconteceu com o futuro anteriore: avrà perso il treno.",
+     "p": [
+      "Os italianos usam o futuro anteriore para supor sobre o passado: Marco è in ritardo... avrà perso il treno.",
+      "Significa provavelmente + passado: sarà già partita = ela já deve ter ido embora.",
+      "Compare: sarà a casa (deve estar em casa agora) e sarà tornato a casa (deve ter voltado para casa)."
+     ],
+     "q": "Um amigo não responde sua mensagem há horas. O que será que aconteceu? Faça três suposições.",
+     "c": "Olhe ao seu redor e faça três suposições sobre o passado com avrà ou sarà + particípio."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "avrà perso",
+      "ex": "Luca non è ancora qui, avrà perso l'autobus."
+     },
+     {
+      "w": "sarà già partita",
+      "ex": "Non risponde, sarà già partita per le vacanze."
+     },
+     {
+      "w": "avranno chiuso",
+      "ex": "Le luci sono spente, avranno già chiuso il negozio."
+     },
+     {
+      "w": "si sarà dimenticato",
+      "ex": "Non è venuto, si sarà dimenticato dell'appuntamento."
+     },
+     {
+      "w": "chissà",
+      "ex": "Chissà dove avrò messo gli occhiali!"
+     },
+     {
+      "w": "probabilmente",
+      "ex": "Probabilmente avrà lavorato fino a tardi."
+     }
+    ],
+    "gram": "Futuro anteriore di probabilità: esprime una supposizione su un fatto passato. Avrà perso il treno = probabilmente ha perso il treno."
+   }
+  },
+  {
+   "d": 185,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Condizionale passato",
+     "g": "Express regrets and things that did not happen: avrei voluto, sarei venuto.",
+     "p": [
+      "Form: conditional of avere or essere + past participle: avrei voluto, sarei venuto, avremmo detto.",
+      "Regrets and missed chances: avrei voluto studiare musica; sarei venuto, ma ero malato.",
+      "Polite past wishes: avrei preferito un tavolo fuori. Often followed by ma + the real reason."
+     ],
+     "q": "Is there something you would have liked to do last year but did not? Start with avrei voluto...",
+     "c": "Write three sentences: avrei voluto..., sarei andato/a..., avrei comprato... + ma + what really happened."
+    },
+    "de": {
+     "t": "Condizionale passato",
+     "g": "Du drückst Bedauern und nicht Geschehenes aus: avrei voluto, sarei venuto.",
+     "p": [
+      "Bildung: Konditional von avere oder essere + Partizip: avrei voluto, sarei venuto, avremmo detto.",
+      "Bedauern und verpasste Chancen: avrei voluto studiare musica; sarei venuto, ma ero malato.",
+      "Höfliche Wünsche in der Vergangenheit: avrei preferito un tavolo fuori. Oft folgt ma + der echte Grund."
+     ],
+     "q": "Gibt es etwas, das du letztes Jahr gern gemacht hättest, aber nicht getan hast? Beginne mit avrei voluto...",
+     "c": "Schreib drei Sätze: avrei voluto..., sarei andato/a..., avrei comprato... + ma + was wirklich geschah."
+    },
+    "es": {
+     "t": "Condizionale passato",
+     "g": "Expresar lamentos y cosas que no pasaron: avrei voluto, sarei venuto.",
+     "p": [
+      "Forma: condicional de avere o essere + participio: avrei voluto, sarei venuto, avremmo detto.",
+      "Lamentos y ocasiones perdidas: avrei voluto studiare musica; sarei venuto, ma ero malato.",
+      "Deseos educados en pasado: avrei preferito un tavolo fuori. A menudo sigue ma + la razón real."
+     ],
+     "q": "¿Hay algo que te habría gustado hacer el año pasado y no hiciste? Empieza con avrei voluto...",
+     "c": "Escribe tres frases: avrei voluto..., sarei andato/a..., avrei comprato... + ma + lo que pasó de verdad."
+    },
+    "fr": {
+     "t": "Condizionale passato",
+     "g": "Exprimer des regrets et ce qui ne s'est pas produit : avrei voluto, sarei venuto.",
+     "p": [
+      "Forme : conditionnel de avere ou essere + participe : avrei voluto, sarei venuto, avremmo detto.",
+      "Regrets et occasions manquées : avrei voluto studiare musica ; sarei venuto, ma ero malato.",
+      "Souhaits polis au passé : avrei preferito un tavolo fuori. Souvent suivi de ma + la vraie raison."
+     ],
+     "q": "Y a-t-il une chose que tu aurais aimé faire l'an dernier sans l'avoir faite ? Commence par avrei voluto...",
+     "c": "Écris trois phrases : avrei voluto..., sarei andato/a..., avrei comprato... + ma + ce qui s'est vraiment passé."
+    },
+    "it": {
+     "t": "Il condizionale passato",
+     "g": "Esprimere rimpianti e cose che non sono successe: avrei voluto, sarei venuto.",
+     "p": [
+      "Si forma con il condizionale di avere o essere + participio: avrei voluto, sarei venuto, avremmo detto.",
+      "Rimpianti e occasioni perse: avrei voluto studiare musica; sarei venuto, ma ero malato.",
+      "Desideri gentili al passato: avrei preferito un tavolo fuori. Spesso segue ma + il vero motivo."
+     ],
+     "q": "C'è qualcosa che avresti voluto fare l'anno scorso e non hai fatto? Comincia con avrei voluto...",
+     "c": "Scrivi tre frasi: avrei voluto..., sarei andato/a..., avrei comprato... + ma + che cosa è successo davvero."
+    },
+    "pt": {
+     "t": "Condizionale passato",
+     "g": "Exprimir pena e coisas que não aconteceram: avrei voluto, sarei venuto.",
+     "p": [
+      "Forma: condicional de avere ou essere + particípio: avrei voluto, sarei venuto, avremmo detto.",
+      "Pena e oportunidades perdidas: avrei voluto studiare musica; sarei venuto, ma ero malato.",
+      "Desejos educados no passado: avrei preferito un tavolo fuori. Muitas vezes segue ma + a razão real."
+     ],
+     "q": "Há alguma coisa que terias gostado de fazer no ano passado e não fizeste? Começa com avrei voluto...",
+     "c": "Escreve três frases: avrei voluto..., sarei andato/a..., avrei comprato... + ma + o que aconteceu de facto."
+    },
+    "pt_BR": {
+     "t": "Condizionale passato",
+     "g": "Expressar arrependimentos e coisas que não aconteceram: avrei voluto, sarei venuto.",
+     "p": [
+      "Forma: condicional de avere ou essere + particípio: avrei voluto, sarei venuto, avremmo detto.",
+      "Arrependimentos e chances perdidas: avrei voluto studiare musica; sarei venuto, ma ero malato.",
+      "Desejos educados no passado: avrei preferito un tavolo fuori. Muitas vezes vem ma + o motivo real."
+     ],
+     "q": "Tem algo que você teria gostado de fazer no ano passado e não fez? Comece com avrei voluto...",
+     "c": "Escreva três frases: avrei voluto..., sarei andato/a..., avrei comprato... + ma + o que aconteceu de verdade."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "avrei voluto",
+      "ex": "Avrei voluto imparare a suonare il pianoforte."
+     },
+     {
+      "w": "sarei venuto",
+      "ex": "Sarei venuto alla festa, ma dovevo lavorare."
+     },
+     {
+      "w": "avrei preferito",
+      "ex": "Avrei preferito un posto vicino al finestrino."
+     },
+     {
+      "w": "avremmo potuto",
+      "ex": "Avremmo potuto prendere il treno delle otto."
+     },
+     {
+      "w": "mi sarebbe piaciuto",
+      "ex": "Mi sarebbe piaciuto vedere il concerto."
+     },
+     {
+      "w": "purtroppo",
+      "ex": "Purtroppo non ho avuto tempo di passare."
+     }
+    ],
+    "gram": "Condizionale passato: condizionale di avere/essere + participio. Esprime desideri non realizzati e rimpianti: avrei voluto, sarei venuto."
+   }
+  },
+  {
+   "d": 186,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Future in the past",
+     "g": "Report promises and plans with the past conditional: ha detto che sarebbe venuto.",
+     "p": [
+      "After a past verb (ha detto, pensavo, sapevo), a later action uses the condizionale passato.",
+      "Ha detto che sarebbe venuto = he said he would come. Italian does not use the simple conditional here.",
+      "Pensavo che avresti chiamato; mi hanno promesso che avrebbero risposto entro lunedì."
+     ],
+     "q": "Think of a promise someone made to you. What did they say they would do? Use ha detto che...",
+     "c": "Report three promises: ha detto che sarebbe..., mi hanno promesso che avrebbero..., pensavo che..."
+    },
+    "de": {
+     "t": "Zukunft in der Vergangenheit",
+     "g": "Du gibst Versprechen und Pläne mit dem condizionale passato wieder: ha detto che sarebbe venuto.",
+     "p": [
+      "Nach einem Verb in der Vergangenheit (ha detto, pensavo, sapevo) steht für Späteres der condizionale passato.",
+      "Ha detto che sarebbe venuto = er sagte, er würde kommen. Das einfache Konditional passt hier nicht.",
+      "Pensavo che avresti chiamato; mi hanno promesso che avrebbero risposto entro lunedì."
+     ],
+     "q": "Denk an ein Versprechen, das dir jemand gegeben hat. Was wollte die Person tun? Benutze ha detto che...",
+     "c": "Gib drei Versprechen wieder: ha detto che sarebbe..., mi hanno promesso che avrebbero..., pensavo che..."
+    },
+    "es": {
+     "t": "El futuro en el pasado",
+     "g": "Contar promesas y planes con el condizionale passato: ha detto che sarebbe venuto.",
+     "p": [
+      "Tras un verbo en pasado (ha detto, pensavo, sapevo), la acción posterior va en condizionale passato.",
+      "Ha detto che sarebbe venuto = dijo que vendría. En italiano aquí no se usa el condicional simple.",
+      "Pensavo che avresti chiamato; mi hanno promesso che avrebbero risposto entro lunedì."
+     ],
+     "q": "Piensa en una promesa que alguien te hizo. ¿Qué dijo que haría? Usa ha detto che...",
+     "c": "Cuenta tres promesas: ha detto che sarebbe..., mi hanno promesso che avrebbero..., pensavo che..."
+    },
+    "fr": {
+     "t": "Le futur dans le passé",
+     "g": "Rapporter promesses et projets avec le condizionale passato : ha detto che sarebbe venuto.",
+     "p": [
+      "Après un verbe au passé (ha detto, pensavo, sapevo), l'action future se met au condizionale passato.",
+      "Ha detto che sarebbe venuto = il a dit qu'il viendrait. L'italien n'utilise pas ici le conditionnel présent.",
+      "Pensavo che avresti chiamato ; mi hanno promesso che avrebbero risposto entro lunedì."
+     ],
+     "q": "Pense à une promesse qu'on t'a faite. Qu'est-ce que la personne a dit qu'elle ferait ? Utilise ha detto che...",
+     "c": "Rapporte trois promesses : ha detto che sarebbe..., mi hanno promesso che avrebbero..., pensavo che..."
+    },
+    "it": {
+     "t": "Il futuro nel passato",
+     "g": "Riferire promesse e progetti con il condizionale passato: ha detto che sarebbe venuto.",
+     "p": [
+      "Dopo un verbo al passato (ha detto, pensavo, sapevo), un'azione successiva va al condizionale passato.",
+      "Ha detto che sarebbe venuto: attenzione, non si dice ha detto che verrebbe.",
+      "Pensavo che avresti chiamato; mi hanno promesso che avrebbero risposto entro lunedì."
+     ],
+     "q": "Pensa a una promessa che qualcuno ti ha fatto. Che cosa aveva detto che avrebbe fatto?",
+     "c": "Riferisci tre promesse: ha detto che sarebbe..., mi hanno promesso che avrebbero..., pensavo che..."
+    },
+    "pt": {
+     "t": "O futuro no passado",
+     "g": "Relatar promessas e planos com o condizionale passato: ha detto che sarebbe venuto.",
+     "p": [
+      "Depois de um verbo no passado (ha detto, pensavo, sapevo), a ação posterior vai para o condizionale passato.",
+      "Ha detto che sarebbe venuto = disse que viria. Em italiano não se usa aqui o condicional simples.",
+      "Pensavo che avresti chiamato; mi hanno promesso che avrebbero risposto entro lunedì."
+     ],
+     "q": "Pensa numa promessa que alguém te fez. O que disse que ia fazer? Usa ha detto che...",
+     "c": "Relata três promessas: ha detto che sarebbe..., mi hanno promesso che avrebbero..., pensavo che..."
+    },
+    "pt_BR": {
+     "t": "O futuro no passado",
+     "g": "Relatar promessas e planos com o condizionale passato: ha detto che sarebbe venuto.",
+     "p": [
+      "Depois de um verbo no passado (ha detto, pensavo, sapevo), a ação posterior vai para o condizionale passato.",
+      "Ha detto che sarebbe venuto = disse que viria. Em italiano não se usa aqui o condicional simples.",
+      "Pensavo che avresti chiamato; mi hanno promesso che avrebbero risposto entro lunedì."
+     ],
+     "q": "Pense numa promessa que alguém fez para você. O que a pessoa disse que faria? Use ha detto che...",
+     "c": "Relate três promessas: ha detto che sarebbe..., mi hanno promesso che avrebbero..., pensavo che..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ha detto che sarebbe",
+      "ex": "Ha detto che sarebbe arrivata alle nove."
+     },
+     {
+      "w": "pensavo che avresti",
+      "ex": "Pensavo che avresti chiamato ieri sera."
+     },
+     {
+      "w": "mi ha promesso",
+      "ex": "Mi ha promesso che mi avrebbe aiutato."
+     },
+     {
+      "w": "sapevo che",
+      "ex": "Sapevo che sarebbe stato un bel viaggio."
+     },
+     {
+      "w": "avrebbero risposto",
+      "ex": "Hanno scritto che avrebbero risposto presto."
+     },
+     {
+      "w": "la promessa",
+      "ex": "Ha mantenuto la promessa e mi ha aiutato."
+     }
+    ],
+    "gram": "Futuro nel passato: verbo principale al passato + condizionale passato. Ha detto che sarebbe venuto (non: verrebbe)."
+   }
+  },
+  {
+   "d": 187,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Polite criticism and suggestions",
+     "g": "Give soft feedback in Italian with avresti dovuto... and sarebbe meglio se...",
+     "p": [
+      "Past advice: avresti dovuto chiamarmi (you should have called me); avresti potuto chiedere (you could have asked).",
+      "Present suggestions: dovresti riposare, potresti provare, sarebbe meglio partire presto.",
+      "Soften it: secondo me, forse, magari, non so, ma...; end with a positive: però hai fatto un ottimo lavoro."
+     ],
+     "q": "A friend forgot to book a restaurant for your group. How would you tell them kindly? Use avresti dovuto...",
+     "c": "Write three soft feedback sentences: one with avresti dovuto, one with potresti, one with forse sarebbe meglio."
+    },
+    "de": {
+     "t": "Höfliche Kritik und Vorschläge",
+     "g": "Du gibst sanftes Feedback mit avresti dovuto... und sarebbe meglio se...",
+     "p": [
+      "Rat zur Vergangenheit: avresti dovuto chiamarmi (du hättest mich anrufen sollen); avresti potuto chiedere.",
+      "Vorschläge für jetzt: dovresti riposare, potresti provare, sarebbe meglio partire presto.",
+      "Weicher machen: secondo me, forse, magari, non so, ma...; positiv enden: però hai fatto un ottimo lavoro."
+     ],
+     "q": "Ein Freund hat vergessen, für eure Gruppe einen Tisch zu reservieren. Wie sagst du es freundlich? Mit avresti dovuto...",
+     "c": "Schreib drei sanfte Rückmeldungen: eine mit avresti dovuto, eine mit potresti, eine mit forse sarebbe meglio."
+    },
+    "es": {
+     "t": "Críticas y sugerencias amables",
+     "g": "Dar opiniones suaves en italiano con avresti dovuto... y sarebbe meglio se...",
+     "p": [
+      "Consejo sobre el pasado: avresti dovuto chiamarmi (deberías haberme llamado); avresti potuto chiedere.",
+      "Sugerencias para ahora: dovresti riposare, potresti provare, sarebbe meglio partire presto.",
+      "Suaviza: secondo me, forse, magari, non so, ma...; termina en positivo: però hai fatto un ottimo lavoro."
+     ],
+     "q": "Un amigo olvidó reservar el restaurante para el grupo. ¿Cómo se lo dirías con amabilidad? Usa avresti dovuto...",
+     "c": "Escribe tres comentarios suaves: uno con avresti dovuto, otro con potresti y otro con forse sarebbe meglio."
+    },
+    "fr": {
+     "t": "Critiquer et suggérer poliment",
+     "g": "Donner un avis en douceur avec avresti dovuto... et sarebbe meglio se...",
+     "p": [
+      "Conseil sur le passé : avresti dovuto chiamarmi (tu aurais dû m'appeler) ; avresti potuto chiedere.",
+      "Suggestions pour maintenant : dovresti riposare, potresti provare, sarebbe meglio partire presto.",
+      "Adoucis : secondo me, forse, magari, non so, ma... ; finis sur du positif : però hai fatto un ottimo lavoro."
+     ],
+     "q": "Un ami a oublié de réserver le restaurant pour le groupe. Comment le lui dire gentiment ? Utilise avresti dovuto...",
+     "c": "Écris trois remarques douces : une avec avresti dovuto, une avec potresti, une avec forse sarebbe meglio."
+    },
+    "it": {
+     "t": "Critiche gentili e suggerimenti",
+     "g": "Dare un feedback delicato con avresti dovuto... e sarebbe meglio se...",
+     "p": [
+      "Consiglio sul passato: avresti dovuto chiamarmi; avresti potuto chiedere aiuto.",
+      "Suggerimenti per il presente: dovresti riposare, potresti provare, sarebbe meglio partire presto.",
+      "Ammorbidisci: secondo me, forse, magari, non so, ma...; chiudi in positivo: però hai fatto un ottimo lavoro."
+     ],
+     "q": "Un amico ha dimenticato di prenotare il ristorante per il gruppo. Come glielo diresti con gentilezza?",
+     "c": "Scrivi tre feedback gentili: uno con avresti dovuto, uno con potresti, uno con forse sarebbe meglio."
+    },
+    "pt": {
+     "t": "Críticas e sugestões com delicadeza",
+     "g": "Dar opiniões suaves em italiano com avresti dovuto... e sarebbe meglio se...",
+     "p": [
+      "Conselho sobre o passado: avresti dovuto chiamarmi (devias ter-me ligado); avresti potuto chiedere.",
+      "Sugestões para agora: dovresti riposare, potresti provare, sarebbe meglio partire presto.",
+      "Suaviza: secondo me, forse, magari, non so, ma...; acaba pela positiva: però hai fatto un ottimo lavoro."
+     ],
+     "q": "Um amigo esqueceu-se de reservar o restaurante para o grupo. Como lhe dirias com simpatia? Usa avresti dovuto...",
+     "c": "Escreve três comentários suaves: um com avresti dovuto, outro com potresti e outro com forse sarebbe meglio."
+    },
+    "pt_BR": {
+     "t": "Críticas e sugestões com jeitinho",
+     "g": "Dar opiniões suaves em italiano com avresti dovuto... e sarebbe meglio se...",
+     "p": [
+      "Conselho sobre o passado: avresti dovuto chiamarmi (você deveria ter me ligado); avresti potuto chiedere.",
+      "Sugestões para agora: dovresti riposare, potresti provare, sarebbe meglio partire presto.",
+      "Suavize: secondo me, forse, magari, non so, ma...; termine no positivo: però hai fatto un ottimo lavoro."
+     ],
+     "q": "Um amigo esqueceu de reservar o restaurante para o grupo. Como você falaria com gentileza? Use avresti dovuto...",
+     "c": "Escreva três comentários suaves: um com avresti dovuto, outro com potresti e outro com forse sarebbe meglio."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "avresti dovuto",
+      "ex": "Avresti dovuto dirmelo prima, ti avrei aiutato."
+     },
+     {
+      "w": "avresti potuto",
+      "ex": "Avresti potuto chiedere a me."
+     },
+     {
+      "w": "sarebbe meglio",
+      "ex": "Sarebbe meglio partire presto per evitare il traffico."
+     },
+     {
+      "w": "secondo me",
+      "ex": "Secondo me potresti aggiungere un esempio."
+     },
+     {
+      "w": "forse",
+      "ex": "Forse dovresti riposare un po'."
+     },
+     {
+      "w": "però",
+      "ex": "Però hai fatto un ottimo lavoro, davvero."
+     }
+    ],
+    "gram": "Condizionale di dovere e potere per consigli: dovresti (presente), avresti dovuto (passato). Sarebbe meglio + infinito."
+   }
+  },
+  {
+   "d": 188,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Congiuntivo: why it exists",
+     "g": "Understand that the subjunctive expresses opinion, doubt, wish and emotion rather than fact.",
+     "p": [
+      "The indicativo states facts: Luca è a casa. The congiuntivo shows a personal view: penso che Luca sia a casa.",
+      "It usually appears after che in a second clause, triggered by verbs of opinion, wish, doubt or feeling.",
+      "Four families to remember: penso che (opinion), voglio che (wish), dubito che (doubt), sono felice che (emotion)."
+     ],
+     "q": "Do you have a similar mood in your own language? Can you think of a sentence where you would use it?",
+     "c": "Sort five sentences into fact or opinion, and underline the verb after che: è, sia, viene, venga, sa, sappia."
+    },
+    "de": {
+     "t": "Congiuntivo: wozu es ihn gibt",
+     "g": "Du verstehst, dass der Konjunktiv Meinung, Zweifel, Wunsch und Gefühl statt Tatsachen ausdrückt.",
+     "p": [
+      "Der indicativo nennt Fakten: Luca è a casa. Der congiuntivo zeigt eine Sicht: penso che Luca sia a casa.",
+      "Er steht meist nach che in einem Nebensatz, ausgelöst durch Verben der Meinung, des Wunsches, Zweifels oder Gefühls.",
+      "Vier Familien: penso che (Meinung), voglio che (Wunsch), dubito che (Zweifel), sono felice che (Gefühl)."
+     ],
+     "q": "Gibt es so einen Modus in deiner Sprache? Fällt dir ein Satz ein, in dem du ihn benutzen würdest?",
+     "c": "Ordne fünf Sätze nach Fakt oder Meinung und unterstreiche das Verb nach che: è, sia, viene, venga, sa, sappia."
+    },
+    "es": {
+     "t": "Congiuntivo: por qué existe",
+     "g": "Entender que el subjuntivo expresa opinión, duda, deseo y emoción en lugar de hechos.",
+     "p": [
+      "El indicativo dice hechos: Luca è a casa. El congiuntivo muestra una visión personal: penso che Luca sia a casa.",
+      "Suele ir tras che en una segunda oración, activado por verbos de opinión, deseo, duda o sentimiento.",
+      "Como en español, pero ojo: penso che + subjuntivo (en español, creo que + indicativo). Familias: penso, voglio, dubito, sono felice."
+     ],
+     "q": "En español también existe el subjuntivo. ¿Qué diferencias crees que encontrarás con el italiano?",
+     "c": "Clasifica cinco frases en hecho u opinión y subraya el verbo tras che: è, sia, viene, venga, sa, sappia."
+    },
+    "fr": {
+     "t": "Congiuntivo : pourquoi il existe",
+     "g": "Comprendre que le subjonctif exprime opinion, doute, souhait et émotion plutôt que des faits.",
+     "p": [
+      "L'indicativo dit les faits : Luca è a casa. Le congiuntivo montre un point de vue : penso che Luca sia a casa.",
+      "Il suit souvent che dans une deuxième proposition, après des verbes d'opinion, de souhait, de doute ou d'émotion.",
+      "Attention : penso che + subjonctif en italien, mais je pense que + indicatif en français. Familles : penso, voglio, dubito, sono felice."
+     ],
+     "q": "Le français a aussi un subjonctif. Quelles différences penses-tu trouver avec l'italien ?",
+     "c": "Classe cinq phrases en fait ou opinion et souligne le verbe après che : è, sia, viene, venga, sa, sappia."
+    },
+    "it": {
+     "t": "Il congiuntivo: perché esiste",
+     "g": "Capire che il congiuntivo esprime opinione, dubbio, desiderio ed emozione, non fatti certi.",
+     "p": [
+      "L'indicativo dice i fatti: Luca è a casa. Il congiuntivo mostra un punto di vista: penso che Luca sia a casa.",
+      "Di solito compare dopo che, in una frase dipendente, con verbi di opinione, desiderio, dubbio o emozione.",
+      "Quattro famiglie: penso che (opinione), voglio che (desiderio), dubito che (dubbio), sono felice che (emozione)."
+     ],
+     "q": "Nella tua lingua esiste qualcosa di simile al congiuntivo? In che frasi lo useresti?",
+     "c": "Dividi cinque frasi tra fatto e opinione e sottolinea il verbo dopo che: è, sia, viene, venga, sa, sappia."
+    },
+    "pt": {
+     "t": "Congiuntivo: porque existe",
+     "g": "Perceber que o conjuntivo exprime opinião, dúvida, desejo e emoção, e não factos.",
+     "p": [
+      "O indicativo diz factos: Luca è a casa. O congiuntivo mostra uma visão pessoal: penso che Luca sia a casa.",
+      "Costuma aparecer depois de che numa segunda oração, com verbos de opinião, desejo, dúvida ou emoção.",
+      "Atenção: penso che + conjuntivo, ao contrário de acho que + indicativo em português. Famílias: penso, voglio, dubito, sono felice."
+     ],
+     "q": "O português também tem conjuntivo. Que diferenças achas que vais encontrar no italiano?",
+     "c": "Classifica cinco frases em facto ou opinião e sublinha o verbo depois de che: è, sia, viene, venga, sa, sappia."
+    },
+    "pt_BR": {
+     "t": "Congiuntivo: por que ele existe",
+     "g": "Entender que o subjuntivo expressa opinião, dúvida, desejo e emoção, e não fatos.",
+     "p": [
+      "O indicativo diz fatos: Luca è a casa. O congiuntivo mostra uma visão pessoal: penso che Luca sia a casa.",
+      "Costuma vir depois de che numa segunda oração, com verbos de opinião, desejo, dúvida ou emoção.",
+      "Atenção: penso che + subjuntivo, ao contrário de acho que + indicativo em português. Famílias: penso, voglio, dubito, sono felice."
+     ],
+     "q": "O português também tem subjuntivo. Que diferenças você acha que vai encontrar no italiano?",
+     "c": "Classifique cinco frases em fato ou opinião e sublinhe o verbo depois de che: è, sia, viene, venga, sa, sappia."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "penso che sia",
+      "ex": "Penso che sia una buona idea."
+     },
+     {
+      "w": "voglio che",
+      "ex": "Voglio che tu venga con noi."
+     },
+     {
+      "w": "dubito che",
+      "ex": "Dubito che il negozio sia aperto adesso."
+     },
+     {
+      "w": "sono felice che",
+      "ex": "Sono felice che tu sia qui."
+     },
+     {
+      "w": "è vero che",
+      "ex": "È vero che Roma è la capitale d'Italia."
+     },
+     {
+      "w": "il punto di vista",
+      "ex": "Ognuno ha il suo punto di vista."
+     }
+    ],
+    "gram": "Indicativo = fatti certi (so che è). Congiuntivo = opinione, desiderio, dubbio, emozione dopo che (penso che sia)."
+   }
+  },
+  {
+   "d": 189,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Congiuntivo presente: regular forms",
+     "g": "Form the present subjunctive of regular verbs: parli, legga, dorma, capisca.",
+     "p": [
+      "-are verbs take -i: che io/tu/lui parli, che noi parliamo, che voi parliate, che loro parlino.",
+      "-ere and -ire take -a: legga, dorma; noi leggiamo, voi leggiate, loro leggano, dormano.",
+      "-isc verbs keep -isc-: capisca, finisca, preferisca (but capiamo, capiate). Io, tu, lui share one form: add tu if needed."
+     ],
+     "q": "What do you hope your friends do this weekend? Try spero che + a regular verb in the subjunctive.",
+     "c": "Conjugate parlare, scrivere and finire in the congiuntivo presente, then write one sentence with each."
+    },
+    "de": {
+     "t": "Congiuntivo presente: regelmäßige Formen",
+     "g": "Du bildest den Konjunktiv Präsens regelmäßiger Verben: parli, legga, dorma, capisca.",
+     "p": [
+      "Verben auf -are bekommen -i: che io/tu/lui parli, che noi parliamo, che voi parliate, che loro parlino.",
+      "Verben auf -ere und -ire bekommen -a: legga, dorma; noi leggiamo, voi leggiate, loro leggano, dormano.",
+      "Verben mit -isc- behalten es: capisca, finisca, preferisca (aber capiamo). Io, tu, lui haben dieselbe Form: notfalls tu ergänzen."
+     ],
+     "q": "Was hoffst du, dass deine Freunde am Wochenende machen? Versuch spero che + ein regelmäßiges Verb.",
+     "c": "Konjugiere parlare, scrivere und finire im congiuntivo presente und schreib je einen Satz."
+    },
+    "es": {
+     "t": "Congiuntivo presente: formas regulares",
+     "g": "Formar el subjuntivo presente de los verbos regulares: parli, legga, dorma, capisca.",
+     "p": [
+      "Los verbos en -are toman -i: che io/tu/lui parli, che noi parliamo, che voi parliate, che loro parlino.",
+      "Los verbos en -ere e -ire toman -a: legga, dorma; noi leggiamo, voi leggiate, loro leggano, dormano.",
+      "Los verbos con -isc- lo mantienen: capisca, finisca, preferisca (pero capiamo). Io, tu, lui comparten forma: añade tu si hace falta."
+     ],
+     "q": "¿Qué esperas que hagan tus amigos este fin de semana? Prueba spero che + un verbo regular.",
+     "c": "Conjuga parlare, scrivere y finire en congiuntivo presente y escribe una frase con cada uno."
+    },
+    "fr": {
+     "t": "Congiuntivo presente : formes régulières",
+     "g": "Former le subjonctif présent des verbes réguliers : parli, legga, dorma, capisca.",
+     "p": [
+      "Les verbes en -are prennent -i : che io/tu/lui parli, che noi parliamo, che voi parliate, che loro parlino.",
+      "Les verbes en -ere et -ire prennent -a : legga, dorma ; noi leggiamo, voi leggiate, loro leggano, dormano.",
+      "Les verbes en -isc- le gardent : capisca, finisca, preferisca (mais capiamo). Io, tu, lui ont la même forme : ajoute tu si besoin."
+     ],
+     "q": "Qu'espères-tu que tes amis fassent ce week-end ? Essaie spero che + un verbe régulier.",
+     "c": "Conjugue parlare, scrivere et finire au congiuntivo presente, puis écris une phrase avec chacun."
+    },
+    "it": {
+     "t": "Congiuntivo presente: verbi regolari",
+     "g": "Formare il congiuntivo presente dei verbi regolari: parli, legga, dorma, capisca.",
+     "p": [
+      "Verbi in -are: che io/tu/lui parli, che noi parliamo, che voi parliate, che loro parlino.",
+      "Verbi in -ere e -ire: legga, dorma; noi leggiamo, voi leggiate, loro leggano, dormano.",
+      "Verbi in -isc-: capisca, finisca, preferisca (ma capiamo, capiate). Io, tu, lui hanno la stessa forma: aggiungi tu se serve."
+     ],
+     "q": "Che cosa speri che facciano i tuoi amici questo fine settimana? Prova con spero che + verbo regolare.",
+     "c": "Coniuga parlare, scrivere e finire al congiuntivo presente e scrivi una frase con ciascuno."
+    },
+    "pt": {
+     "t": "Congiuntivo presente: formas regulares",
+     "g": "Formar o conjuntivo presente dos verbos regulares: parli, legga, dorma, capisca.",
+     "p": [
+      "Verbos em -are levam -i: che io/tu/lui parli, che noi parliamo, che voi parliate, che loro parlino.",
+      "Verbos em -ere e -ire levam -a: legga, dorma; noi leggiamo, voi leggiate, loro leggano, dormano.",
+      "Verbos com -isc- mantêm-no: capisca, finisca, preferisca (mas capiamo). Io, tu, lui têm a mesma forma: junta tu se for preciso."
+     ],
+     "q": "O que esperas que os teus amigos façam este fim de semana? Experimenta spero che + um verbo regular.",
+     "c": "Conjuga parlare, scrivere e finire no congiuntivo presente e escreve uma frase com cada um."
+    },
+    "pt_BR": {
+     "t": "Congiuntivo presente: formas regulares",
+     "g": "Formar o subjuntivo presente dos verbos regulares: parli, legga, dorma, capisca.",
+     "p": [
+      "Verbos em -are levam -i: che io/tu/lui parli, che noi parliamo, che voi parliate, che loro parlino.",
+      "Verbos em -ere e -ire levam -a: legga, dorma; noi leggiamo, voi leggiate, loro leggano, dormano.",
+      "Verbos com -isc- mantêm: capisca, finisca, preferisca (mas capiamo). Io, tu, lui têm a mesma forma: acrescente tu se precisar."
+     ],
+     "q": "O que você espera que seus amigos façam neste fim de semana? Tente spero che + um verbo regular.",
+     "c": "Conjugue parlare, scrivere e finire no congiuntivo presente e escreva uma frase com cada um."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "che tu parli",
+      "ex": "Spero che tu parli presto con lei."
+     },
+     {
+      "w": "che lui legga",
+      "ex": "Voglio che lui legga questo articolo."
+     },
+     {
+      "w": "che dormano",
+      "ex": "È importante che i bambini dormano bene."
+     },
+     {
+      "w": "che tu capisca",
+      "ex": "Spero che tu capisca il mio punto di vista."
+     },
+     {
+      "w": "che finiscano",
+      "ex": "Aspetto che finiscano di mangiare."
+     },
+     {
+      "w": "che partiate",
+      "ex": "Penso che partiate troppo tardi."
+     }
+    ],
+    "gram": "Congiuntivo presente regolare: -are → -i (parli); -ere/-ire → -a (legga, dorma, capisca). Noi -iamo, voi -iate."
+   }
+  },
+  {
+   "d": 190,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Congiuntivo presente: irregular forms",
+     "g": "Learn the key irregular subjunctives: sia, abbia, vada, faccia, possa, voglia, debba, sappia, stia, dia.",
+     "p": [
+      "The two most important: essere → sia, siamo, siate, siano; avere → abbia, abbiamo, abbiate, abbiano.",
+      "Many come from the io form of the present: vado → vada, faccio → faccia, posso → possa, voglio → voglia.",
+      "Learn by heart: sapere → sappia, stare → stia, dare → dia, dovere → debba (or deva)."
+     ],
+     "q": "What do you hope happens in your life soon? Use spero che + sia, vada or possa.",
+     "c": "Write five sentences with penso che or spero che + sia, abbia, vada, faccia and sappia."
+    },
+    "de": {
+     "t": "Congiuntivo presente: unregelmäßige Formen",
+     "g": "Du lernst die wichtigsten unregelmäßigen Formen: sia, abbia, vada, faccia, possa, voglia, debba, sappia, stia, dia.",
+     "p": [
+      "Die zwei wichtigsten: essere → sia, siamo, siate, siano; avere → abbia, abbiamo, abbiate, abbiano.",
+      "Viele kommen von der io-Form im Präsens: vado → vada, faccio → faccia, posso → possa, voglio → voglia.",
+      "Auswendig lernen: sapere → sappia, stare → stia, dare → dia, dovere → debba (oder deva)."
+     ],
+     "q": "Was hoffst du, dass bald in deinem Leben passiert? Benutze spero che + sia, vada oder possa.",
+     "c": "Schreib fünf Sätze mit penso che oder spero che + sia, abbia, vada, faccia und sappia."
+    },
+    "es": {
+     "t": "Congiuntivo presente: formas irregulares",
+     "g": "Aprender los subjuntivos irregulares clave: sia, abbia, vada, faccia, possa, voglia, debba, sappia, stia, dia.",
+     "p": [
+      "Los dos más importantes: essere → sia, siamo, siate, siano; avere → abbia, abbiamo, abbiate, abbiano.",
+      "Muchos salen del io del presente: vado → vada, faccio → faccia, posso → possa, voglio → voglia.",
+      "De memoria: sapere → sappia, stare → stia, dare → dia, dovere → debba (o deva)."
+     ],
+     "q": "¿Qué esperas que pase pronto en tu vida? Usa spero che + sia, vada o possa.",
+     "c": "Escribe cinco frases con penso che o spero che + sia, abbia, vada, faccia y sappia."
+    },
+    "fr": {
+     "t": "Congiuntivo presente : formes irrégulières",
+     "g": "Apprendre les subjonctifs irréguliers clés : sia, abbia, vada, faccia, possa, voglia, debba, sappia, stia, dia.",
+     "p": [
+      "Les deux plus importants : essere → sia, siamo, siate, siano ; avere → abbia, abbiamo, abbiate, abbiano.",
+      "Beaucoup viennent du io au présent : vado → vada, faccio → faccia, posso → possa, voglio → voglia.",
+      "À retenir par cœur : sapere → sappia, stare → stia, dare → dia, dovere → debba (ou deva)."
+     ],
+     "q": "Qu'espères-tu qu'il arrive bientôt dans ta vie ? Utilise spero che + sia, vada ou possa.",
+     "c": "Écris cinq phrases avec penso che ou spero che + sia, abbia, vada, faccia et sappia."
+    },
+    "it": {
+     "t": "Congiuntivo presente: verbi irregolari",
+     "g": "Imparare i congiuntivi irregolari principali: sia, abbia, vada, faccia, possa, voglia, debba, sappia, stia, dia.",
+     "p": [
+      "I due più importanti: essere → sia, siamo, siate, siano; avere → abbia, abbiamo, abbiate, abbiano.",
+      "Molti derivano dalla prima persona del presente: vado → vada, faccio → faccia, posso → possa, voglio → voglia.",
+      "Da imparare a memoria: sapere → sappia, stare → stia, dare → dia, dovere → debba (o deva)."
+     ],
+     "q": "Che cosa speri che succeda presto nella tua vita? Usa spero che + sia, vada o possa.",
+     "c": "Scrivi cinque frasi con penso che o spero che + sia, abbia, vada, faccia e sappia."
+    },
+    "pt": {
+     "t": "Congiuntivo presente: formas irregulares",
+     "g": "Aprender os conjuntivos irregulares principais: sia, abbia, vada, faccia, possa, voglia, debba, sappia, stia, dia.",
+     "p": [
+      "Os dois mais importantes: essere → sia, siamo, siate, siano; avere → abbia, abbiamo, abbiate, abbiano.",
+      "Muitos vêm do io do presente: vado → vada, faccio → faccia, posso → possa, voglio → voglia.",
+      "Decorar: sapere → sappia, stare → stia, dare → dia, dovere → debba (ou deva)."
+     ],
+     "q": "O que esperas que aconteça em breve na tua vida? Usa spero che + sia, vada ou possa.",
+     "c": "Escreve cinco frases com penso che ou spero che + sia, abbia, vada, faccia e sappia."
+    },
+    "pt_BR": {
+     "t": "Congiuntivo presente: formas irregulares",
+     "g": "Aprender os subjuntivos irregulares principais: sia, abbia, vada, faccia, possa, voglia, debba, sappia, stia, dia.",
+     "p": [
+      "Os dois mais importantes: essere → sia, siamo, siate, siano; avere → abbia, abbiamo, abbiate, abbiano.",
+      "Muitos vêm do io do presente: vado → vada, faccio → faccia, posso → possa, voglio → voglia.",
+      "Decore: sapere → sappia, stare → stia, dare → dia, dovere → debba (ou deva)."
+     ],
+     "q": "O que você espera que aconteça logo na sua vida? Use spero che + sia, vada ou possa.",
+     "c": "Escreva cinco frases com penso che ou spero che + sia, abbia, vada, faccia e sappia."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "che sia",
+      "ex": "Spero che il tempo sia bello domani."
+     },
+     {
+      "w": "che abbia",
+      "ex": "Penso che Marta abbia ragione."
+     },
+     {
+      "w": "che vada",
+      "ex": "Spero che tutto vada bene."
+     },
+     {
+      "w": "che faccia",
+      "ex": "Voglio che faccia caldo in vacanza."
+     },
+     {
+      "w": "che possa",
+      "ex": "Spero che tu possa venire sabato."
+     },
+     {
+      "w": "che sappia",
+      "ex": "Non credo che lui sappia la risposta."
+     }
+    ],
+    "gram": "Congiuntivo irregolare: essere → sia, avere → abbia, andare → vada, fare → faccia, potere → possa, sapere → sappia, stare → stia."
+   }
+  }
+ ]
+}

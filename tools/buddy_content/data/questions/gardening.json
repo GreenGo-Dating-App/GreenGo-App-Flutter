@@ -1,0 +1,1305 @@
+{
+ "topic": "gardening",
+ "questions": [
+  {
+   "id": "gardening-001",
+   "lv": "any",
+   "i18n": {
+    "en": "What got you interested in plants and gardening?",
+    "de": "Wie bist du zu Pflanzen und zum Gärtnern gekommen?",
+    "es": "¿Qué despertó tu interés por las plantas y la jardinería?",
+    "fr": "Qu'est-ce qui t'a donné envie de t'intéresser aux plantes et au jardinage ?",
+    "it": "Che cosa ti ha avvicinato alle piante e al giardinaggio?",
+    "pt": "O que despertou o teu interesse pelas plantas e pela jardinagem?",
+    "pt_BR": "O que despertou seu interesse por plantas e jardinagem?"
+   }
+  },
+  {
+   "id": "gardening-002",
+   "lv": "any",
+   "i18n": {
+    "en": "Which plant reminds you of your childhood?",
+    "de": "Welche Pflanze erinnert dich an deine Kindheit?",
+    "es": "¿Qué planta te recuerda a tu infancia?",
+    "fr": "Quelle plante te rappelle ton enfance ?",
+    "it": "Quale pianta ti ricorda la tua infanzia?",
+    "pt": "Que planta te faz lembrar a tua infância?",
+    "pt_BR": "Qual planta lembra a sua infância?"
+   }
+  },
+  {
+   "id": "gardening-003",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer flowers, leafy plants or plants you can eat?",
+    "de": "Magst du lieber Blumen, Blattpflanzen oder Pflanzen, die man essen kann?",
+    "es": "¿Prefieres las flores, las plantas de hoja o las que se pueden comer?",
+    "fr": "Préfères-tu les fleurs, les plantes vertes ou celles qui se mangent ?",
+    "it": "Preferisci i fiori, le piante verdi o quelle che si possono mangiare?",
+    "pt": "Preferes flores, plantas de folhagem ou plantas que se comem?",
+    "pt_BR": "Você prefere flores, plantas de folhagem ou plantas que dá para comer?"
+   }
+  },
+  {
+   "id": "gardening-004",
+   "lv": "any",
+   "i18n": {
+    "en": "What is your favourite flower, and why?",
+    "de": "Was ist deine Lieblingsblume, und warum?",
+    "es": "¿Cuál es tu flor favorita y por qué?",
+    "fr": "Quelle est ta fleur préférée, et pourquoi ?",
+    "it": "Qual è il tuo fiore preferito e perché?",
+    "pt": "Qual é a tua flor preferida, e porquê?",
+    "pt_BR": "Qual é a sua flor favorita, e por quê?"
+   }
+  },
+  {
+   "id": "gardening-005",
+   "lv": "any",
+   "i18n": {
+    "en": "Which plants are typical in gardens where you grew up?",
+    "de": "Welche Pflanzen sind in den Gärten deiner Heimat typisch?",
+    "es": "¿Qué plantas son típicas en los jardines del lugar donde creciste?",
+    "fr": "Quelles plantes sont typiques dans les jardins de la région où tu as grandi ?",
+    "it": "Quali piante sono tipiche nei giardini del posto in cui sei cresciuto?",
+    "pt": "Que plantas são típicas nos jardins da terra onde cresceste?",
+    "pt_BR": "Quais plantas são típicas nos jardins do lugar onde você cresceu?"
+   }
+  },
+  {
+   "id": "gardening-006",
+   "lv": "any",
+   "i18n": {
+    "en": "How much sun does your home or balcony get each day?",
+    "de": "Wie viel Sonne bekommt deine Wohnung oder dein Balkon am Tag?",
+    "es": "¿Cuánto sol recibe tu casa o tu balcón cada día?",
+    "fr": "Combien de soleil ton logement ou ton balcon reçoit-il chaque jour ?",
+    "it": "Quanto sole prende ogni giorno la tua casa o il tuo balcone?",
+    "pt": "Quanto sol apanha a tua casa ou a tua varanda por dia?",
+    "pt_BR": "Quanto sol a sua casa ou varanda pega por dia?"
+   }
+  },
+  {
+   "id": "gardening-007",
+   "lv": "any",
+   "i18n": {
+    "en": "If you could grow any fruit at home, which would you choose?",
+    "de": "Wenn du jede Frucht zu Hause anbauen könntest, welche wäre es?",
+    "es": "Si pudieras cultivar cualquier fruta en casa, ¿cuál elegirías?",
+    "fr": "Si tu pouvais faire pousser n'importe quel fruit chez toi, lequel choisirais-tu ?",
+    "it": "Se potessi coltivare qualsiasi frutto a casa, quale sceglieresti?",
+    "pt": "Se pudesses cultivar qualquer fruta em casa, qual escolherias?",
+    "pt_BR": "Se você pudesse cultivar qualquer fruta em casa, qual escolheria?"
+   }
+  },
+  {
+   "id": "gardening-008",
+   "lv": "any",
+   "i18n": {
+    "en": "What is the most beautiful garden you have ever visited?",
+    "de": "Was ist der schönste Garten, den du je besucht hast?",
+    "es": "¿Cuál es el jardín más bonito que has visitado?",
+    "fr": "Quel est le plus beau jardin que tu aies jamais visité ?",
+    "it": "Qual è il giardino più bello che tu abbia mai visitato?",
+    "pt": "Qual é o jardim mais bonito que já visitaste?",
+    "pt_BR": "Qual é o jardim mais bonito que você já visitou?"
+   }
+  },
+  {
+   "id": "gardening-009",
+   "lv": "any",
+   "i18n": {
+    "en": "How do plants make you feel when you are around them?",
+    "de": "Wie fühlst du dich, wenn du von Pflanzen umgeben bist?",
+    "es": "¿Cómo te sientes cuando estás rodeado de plantas?",
+    "fr": "Comment te sens-tu quand tu es entouré de plantes ?",
+    "it": "Come ti senti quando sei circondato dalle piante?",
+    "pt": "Como te sentes quando estás rodeado de plantas?",
+    "pt_BR": "Como você se sente quando está perto de plantas?"
+   }
+  },
+  {
+   "id": "gardening-010",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you talk to your plants? What do you say?",
+    "de": "Sprichst du mit deinen Pflanzen? Was sagst du ihnen?",
+    "es": "¿Hablas con tus plantas? ¿Qué les dices?",
+    "fr": "Parles-tu à tes plantes ? Que leur dis-tu ?",
+    "it": "Parli con le tue piante? Che cosa dici loro?",
+    "pt": "Falas com as tuas plantas? O que lhes dizes?",
+    "pt_BR": "Você conversa com suas plantas? O que diz a elas?"
+   }
+  },
+  {
+   "id": "gardening-011",
+   "lv": "any",
+   "i18n": {
+    "en": "Which herb do you use most in your cooking?",
+    "de": "Welches Kraut verwendest du beim Kochen am häufigsten?",
+    "es": "¿Qué hierba aromática usas más en la cocina?",
+    "fr": "Quelle herbe aromatique utilises-tu le plus en cuisine ?",
+    "it": "Quale erba aromatica usi di più in cucina?",
+    "pt": "Que erva aromática usas mais na cozinha?",
+    "pt_BR": "Qual erva você mais usa na cozinha?"
+   }
+  },
+  {
+   "id": "gardening-012",
+   "lv": "any",
+   "i18n": {
+    "en": "Is there a family member who taught you something about plants?",
+    "de": "Gibt es jemanden in deiner Familie, der dir etwas über Pflanzen beigebracht hat?",
+    "es": "¿Hay alguien de tu familia que te haya enseñado algo sobre plantas?",
+    "fr": "Y a-t-il quelqu'un dans ta famille qui t'a appris quelque chose sur les plantes ?",
+    "it": "C'è qualcuno della tua famiglia che ti ha insegnato qualcosa sulle piante?",
+    "pt": "Há alguém da tua família que te tenha ensinado algo sobre plantas?",
+    "pt_BR": "Tem alguém da sua família que te ensinou algo sobre plantas?"
+   }
+  },
+  {
+   "id": "gardening-013",
+   "lv": "any",
+   "i18n": {
+    "en": "What is your dream garden like?",
+    "de": "Wie sieht dein Traumgarten aus?",
+    "es": "¿Cómo es el jardín de tus sueños?",
+    "fr": "À quoi ressemble le jardin de tes rêves ?",
+    "it": "Com'è il giardino dei tuoi sogni?",
+    "pt": "Como é o jardim dos teus sonhos?",
+    "pt_BR": "Como é o jardim dos seus sonhos?"
+   }
+  },
+  {
+   "id": "gardening-014",
+   "lv": "any",
+   "i18n": {
+    "en": "Which season do you enjoy most in nature, and why?",
+    "de": "Welche Jahreszeit genießt du in der Natur am meisten, und warum?",
+    "es": "¿Qué estación del año disfrutas más en la naturaleza y por qué?",
+    "fr": "Quelle saison préfères-tu dans la nature, et pourquoi ?",
+    "it": "Quale stagione ami di più nella natura, e perché?",
+    "pt": "De que estação do ano gostas mais na natureza, e porquê?",
+    "pt_BR": "De qual estação do ano você mais gosta na natureza, e por quê?"
+   }
+  },
+  {
+   "id": "gardening-015",
+   "lv": "any",
+   "i18n": {
+    "en": "Have you ever grown something from a seed? How did it go?",
+    "de": "Hast du schon mal etwas aus einem Samen gezogen? Wie lief es?",
+    "es": "¿Alguna vez has cultivado algo a partir de una semilla? ¿Qué tal fue?",
+    "fr": "As-tu déjà fait pousser quelque chose à partir d'une graine ? Comment ça s'est passé ?",
+    "it": "Hai mai coltivato qualcosa partendo da un seme? Com'è andata?",
+    "pt": "Já cultivaste alguma coisa a partir de uma semente? Como correu?",
+    "pt_BR": "Você já plantou algo a partir de uma semente? Como foi?"
+   }
+  },
+  {
+   "id": "gardening-016",
+   "lv": "any",
+   "i18n": {
+    "en": "Which vegetable would you love to grow yourself?",
+    "de": "Welches Gemüse würdest du gern selbst anbauen?",
+    "es": "¿Qué verdura te encantaría cultivar tú mismo?",
+    "fr": "Quel légume aimerais-tu cultiver toi-même ?",
+    "it": "Quale ortaggio ti piacerebbe coltivare da solo?",
+    "pt": "Que legume gostavas de cultivar tu mesmo?",
+    "pt_BR": "Qual legume você adoraria cultivar?"
+   }
+  },
+  {
+   "id": "gardening-017",
+   "lv": "any",
+   "i18n": {
+    "en": "What is the toughest plant you know?",
+    "de": "Was ist die robusteste Pflanze, die du kennst?",
+    "es": "¿Cuál es la planta más resistente que conoces?",
+    "fr": "Quelle est la plante la plus résistante que tu connaisses ?",
+    "it": "Qual è la pianta più resistente che conosci?",
+    "pt": "Qual é a planta mais resistente que conheces?",
+    "pt_BR": "Qual é a planta mais resistente que você conhece?"
+   }
+  },
+  {
+   "id": "gardening-018",
+   "lv": "any",
+   "i18n": {
+    "en": "How would you describe your style: tidy garden or wild jungle?",
+    "de": "Wie würdest du deinen Stil beschreiben: ordentlicher Garten oder wilder Dschungel?",
+    "es": "¿Cómo describirías tu estilo: jardín ordenado o selva salvaje?",
+    "fr": "Comment décrirais-tu ton style : jardin bien rangé ou jungle sauvage ?",
+    "it": "Come descriveresti il tuo stile: giardino ordinato o giungla selvaggia?",
+    "pt": "Como descreverias o teu estilo: jardim arrumado ou selva selvagem?",
+    "pt_BR": "Como você descreveria seu estilo: jardim organizado ou selva selvagem?"
+   }
+  },
+  {
+   "id": "gardening-019",
+   "lv": "any",
+   "i18n": {
+    "en": "Which plant would you give as a gift to a friend?",
+    "de": "Welche Pflanze würdest du einem Freund schenken?",
+    "es": "¿Qué planta le regalarías a un amigo?",
+    "fr": "Quelle plante offrirais-tu à un ami ?",
+    "it": "Quale pianta regaleresti a un amico?",
+    "pt": "Que planta oferecias a um amigo?",
+    "pt_BR": "Qual planta você daria de presente a um amigo?"
+   }
+  },
+  {
+   "id": "gardening-020",
+   "lv": "any",
+   "i18n": {
+    "en": "Where in your home would you love to add more green?",
+    "de": "Wo in deiner Wohnung hättest du gern mehr Grün?",
+    "es": "¿En qué parte de tu casa te gustaría tener más verde?",
+    "fr": "Où aimerais-tu ajouter plus de verdure chez toi ?",
+    "it": "In quale angolo di casa vorresti più verde?",
+    "pt": "Em que parte da tua casa gostavas de ter mais verde?",
+    "pt_BR": "Em que parte da sua casa você gostaria de ter mais verde?"
+   }
+  },
+  {
+   "id": "gardening-021",
+   "lv": "any",
+   "i18n": {
+    "en": "What smell from a garden do you love most?",
+    "de": "Welchen Gartenduft magst du am liebsten?",
+    "es": "¿Qué olor de jardín te gusta más?",
+    "fr": "Quelle odeur de jardin aimes-tu le plus ?",
+    "it": "Qual è il profumo del giardino che ami di più?",
+    "pt": "Que cheiro de jardim adoras mais?",
+    "pt_BR": "Qual cheiro de jardim você mais ama?"
+   }
+  },
+  {
+   "id": "gardening-022",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you enjoy visiting plant shops or markets? What catches your eye?",
+    "de": "Besuchst du gern Gärtnereien oder Pflanzenmärkte? Was fällt dir dort auf?",
+    "es": "¿Te gusta visitar viveros o mercados de plantas? ¿Qué te llama la atención?",
+    "fr": "Aimes-tu visiter les jardineries ou les marchés aux plantes ? Qu'est-ce qui attire ton regard ?",
+    "it": "Ti piace visitare vivai o mercati di piante? Che cosa ti colpisce?",
+    "pt": "Gostas de visitar viveiros ou mercados de plantas? O que te chama a atenção?",
+    "pt_BR": "Você gosta de visitar lojas ou feiras de plantas? O que chama sua atenção?"
+   }
+  },
+  {
+   "id": "gardening-023",
+   "lv": "any",
+   "i18n": {
+    "en": "Which plants grow wild near where you live?",
+    "de": "Welche Pflanzen wachsen wild in deiner Nähe?",
+    "es": "¿Qué plantas crecen de forma silvestre cerca de donde vives?",
+    "fr": "Quelles plantes poussent à l'état sauvage près de chez toi ?",
+    "it": "Quali piante crescono spontanee vicino a dove vivi?",
+    "pt": "Que plantas crescem espontaneamente perto de onde vives?",
+    "pt_BR": "Quais plantas crescem naturalmente perto de onde você mora?"
+   }
+  },
+  {
+   "id": "gardening-024",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather have a big garden or a beautiful balcony? Why?",
+    "de": "Hättest du lieber einen großen Garten oder einen schönen Balkon? Warum?",
+    "es": "¿Preferirías un jardín grande o un balcón precioso? ¿Por qué?",
+    "fr": "Préférerais-tu un grand jardin ou un joli balcon ? Pourquoi ?",
+    "it": "Preferiresti un grande giardino o un bel balcone? Perché?",
+    "pt": "Preferias um jardim grande ou uma varanda bonita? Porquê?",
+    "pt_BR": "Você preferiria um jardim grande ou uma varanda linda? Por quê?"
+   }
+  },
+  {
+   "id": "gardening-025",
+   "lv": "any",
+   "i18n": {
+    "en": "What do you enjoy most about caring for something living?",
+    "de": "Was gefällt dir am meisten daran, dich um etwas Lebendiges zu kümmern?",
+    "es": "¿Qué es lo que más disfrutas de cuidar de algo vivo?",
+    "fr": "Qu'est-ce que tu aimes le plus quand tu prends soin d'un être vivant ?",
+    "it": "Che cosa ti piace di più del prenderti cura di qualcosa di vivo?",
+    "pt": "O que mais gostas em cuidar de algo vivo?",
+    "pt_BR": "O que você mais gosta em cuidar de algo vivo?"
+   }
+  },
+  {
+   "id": "gardening-026",
+   "lv": "any",
+   "i18n": {
+    "en": "Which plant do you think has the most interesting leaves?",
+    "de": "Welche Pflanze hat deiner Meinung nach die interessantesten Blätter?",
+    "es": "¿Qué planta crees que tiene las hojas más interesantes?",
+    "fr": "Selon toi, quelle plante a les feuilles les plus intéressantes ?",
+    "it": "Secondo te, quale pianta ha le foglie più interessanti?",
+    "pt": "Na tua opinião, que planta tem as folhas mais interessantes?",
+    "pt_BR": "Na sua opinião, qual planta tem as folhas mais interessantes?"
+   }
+  },
+  {
+   "id": "gardening-027",
+   "lv": "any",
+   "i18n": {
+    "en": "How do people in your country traditionally use plants or herbs?",
+    "de": "Wie nutzt man in deinem Land traditionell Pflanzen oder Kräuter?",
+    "es": "¿Cómo se usan tradicionalmente las plantas o hierbas en tu país?",
+    "fr": "Comment utilise-t-on traditionnellement les plantes ou les herbes dans ton pays ?",
+    "it": "Come si usano tradizionalmente piante o erbe nel tuo paese?",
+    "pt": "Como se usam tradicionalmente as plantas ou ervas no teu país?",
+    "pt_BR": "Como as plantas ou ervas são usadas tradicionalmente no seu país?"
+   }
+  },
+  {
+   "id": "gardening-028",
+   "lv": "any",
+   "i18n": {
+    "en": "Which flowers do you connect with celebrations in your culture?",
+    "de": "Welche Blumen verbindest du in deiner Kultur mit Festen?",
+    "es": "¿Qué flores asocias con las celebraciones en tu cultura?",
+    "fr": "Quelles fleurs associes-tu aux fêtes dans ta culture ?",
+    "it": "Quali fiori associ alle feste nella tua cultura?",
+    "pt": "Que flores associas às celebrações na tua cultura?",
+    "pt_BR": "Quais flores você associa às festas na sua cultura?"
+   }
+  },
+  {
+   "id": "gardening-029",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a plant fact that surprised you?",
+    "de": "Welche Tatsache über Pflanzen hat dich überrascht?",
+    "es": "¿Qué dato sobre las plantas te ha sorprendido?",
+    "fr": "Quel fait sur les plantes t'a surpris ?",
+    "it": "Qual è una curiosità sulle piante che ti ha sorpreso?",
+    "pt": "Que facto sobre plantas te surpreendeu?",
+    "pt_BR": "Qual curiosidade sobre plantas te surpreendeu?"
+   }
+  },
+  {
+   "id": "gardening-030",
+   "lv": "any",
+   "i18n": {
+    "en": "How much time would you like to spend with your plants each week?",
+    "de": "Wie viel Zeit möchtest du pro Woche mit deinen Pflanzen verbringen?",
+    "es": "¿Cuánto tiempo te gustaría dedicar a tus plantas cada semana?",
+    "fr": "Combien de temps aimerais-tu consacrer à tes plantes chaque semaine ?",
+    "it": "Quanto tempo vorresti dedicare alle tue piante ogni settimana?",
+    "pt": "Quanto tempo gostavas de dedicar às tuas plantas por semana?",
+    "pt_BR": "Quanto tempo você gostaria de dedicar às suas plantas por semana?"
+   }
+  },
+  {
+   "id": "gardening-031",
+   "lv": "any",
+   "i18n": {
+    "en": "Which tree do you find the most beautiful?",
+    "de": "Welchen Baum findest du am schönsten?",
+    "es": "¿Qué árbol te parece el más bonito?",
+    "fr": "Quel arbre trouves-tu le plus beau ?",
+    "it": "Quale albero trovi più bello?",
+    "pt": "Que árvore achas mais bonita?",
+    "pt_BR": "Qual árvore você acha mais bonita?"
+   }
+  },
+  {
+   "id": "gardening-032",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you like cooking with things you have grown yourself?",
+    "de": "Kochst du gern mit Dingen, die du selbst angebaut hast?",
+    "es": "¿Te gusta cocinar con cosas que has cultivado tú?",
+    "fr": "Aimes-tu cuisiner avec ce que tu as fait pousser toi-même ?",
+    "it": "Ti piace cucinare con ciò che hai coltivato tu?",
+    "pt": "Gostas de cozinhar com coisas que tu próprio cultivaste?",
+    "pt_BR": "Você gosta de cozinhar com coisas que você mesmo plantou?"
+   }
+  },
+  {
+   "id": "gardening-033",
+   "lv": "any",
+   "i18n": {
+    "en": "Which animals or insects do you enjoy seeing among plants?",
+    "de": "Welche Tiere oder Insekten siehst du gern zwischen Pflanzen?",
+    "es": "¿Qué animales o insectos te gusta ver entre las plantas?",
+    "fr": "Quels animaux ou insectes aimes-tu voir parmi les plantes ?",
+    "it": "Quali animali o insetti ti piace vedere tra le piante?",
+    "pt": "Que animais ou insetos gostas de ver entre as plantas?",
+    "pt_BR": "Quais animais ou insetos você gosta de ver entre as plantas?"
+   }
+  },
+  {
+   "id": "gardening-034",
+   "lv": "any",
+   "i18n": {
+    "en": "What gardening skill would you love to master one day?",
+    "de": "Welche Gartenfähigkeit würdest du eines Tages gern beherrschen?",
+    "es": "¿Qué habilidad de jardinería te encantaría dominar algún día?",
+    "fr": "Quelle compétence de jardinage aimerais-tu maîtriser un jour ?",
+    "it": "Quale abilità di giardinaggio ti piacerebbe padroneggiare un giorno?",
+    "pt": "Que técnica de jardinagem gostavas de dominar um dia?",
+    "pt_BR": "Qual habilidade de jardinagem você adoraria dominar um dia?"
+   }
+  },
+  {
+   "id": "gardening-035",
+   "lv": "any",
+   "i18n": {
+    "en": "Is there a park or green place you love to visit? What makes it special?",
+    "de": "Gibt es einen Park oder grünen Ort, den du gern besuchst? Was macht ihn besonders?",
+    "es": "¿Hay algún parque o lugar verde que te encante visitar? ¿Qué lo hace especial?",
+    "fr": "Y a-t-il un parc ou un lieu vert que tu adores ? Qu'est-ce qui le rend spécial ?",
+    "it": "C'è un parco o un luogo verde che ami visitare? Che cosa lo rende speciale?",
+    "pt": "Há algum parque ou espaço verde que adores visitar? O que o torna especial?",
+    "pt_BR": "Tem algum parque ou lugar verde que você adora visitar? O que o torna especial?"
+   }
+  },
+  {
+   "id": "gardening-036",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you feel when a plant you care for starts to flower?",
+    "de": "Wie fühlst du dich, wenn eine Pflanze, die du pflegst, zu blühen beginnt?",
+    "es": "¿Cómo te sientes cuando una planta que cuidas empieza a florecer?",
+    "fr": "Que ressens-tu quand une plante dont tu prends soin commence à fleurir ?",
+    "it": "Come ti senti quando una pianta di cui ti prendi cura inizia a fiorire?",
+    "pt": "Como te sentes quando uma planta de que cuidas começa a florir?",
+    "pt_BR": "Como você se sente quando uma planta que você cuida começa a florescer?"
+   }
+  },
+  {
+   "id": "gardening-037",
+   "lv": "any",
+   "i18n": {
+    "en": "Which plant names in your language do you find funny or poetic?",
+    "de": "Welche Pflanzennamen in deiner Sprache findest du lustig oder poetisch?",
+    "es": "¿Qué nombres de plantas en tu idioma te parecen graciosos o poéticos?",
+    "fr": "Quels noms de plantes dans ta langue trouves-tu drôles ou poétiques ?",
+    "it": "Quali nomi di piante nella tua lingua trovi buffi o poetici?",
+    "pt": "Que nomes de plantas na tua língua achas engraçados ou poéticos?",
+    "pt_BR": "Quais nomes de plantas na sua língua você acha engraçados ou poéticos?"
+   }
+  },
+  {
+   "id": "gardening-038",
+   "lv": "any",
+   "i18n": {
+    "en": "What would you plant to make bees and butterflies happy?",
+    "de": "Was würdest du pflanzen, um Bienen und Schmetterlinge glücklich zu machen?",
+    "es": "¿Qué plantarías para hacer felices a las abejas y mariposas?",
+    "fr": "Que planterais-tu pour faire le bonheur des abeilles et des papillons ?",
+    "it": "Che cosa pianteresti per rendere felici api e farfalle?",
+    "pt": "O que plantarias para deixar as abelhas e borboletas felizes?",
+    "pt_BR": "O que você plantaria para deixar abelhas e borboletas felizes?"
+   }
+  },
+  {
+   "id": "gardening-039",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you like to join a community garden? Why or why not?",
+    "de": "Würdest du gern bei einem Gemeinschaftsgarten mitmachen? Warum oder warum nicht?",
+    "es": "¿Te gustaría participar en un huerto comunitario? ¿Por qué sí o por qué no?",
+    "fr": "Aimerais-tu participer à un jardin partagé ? Pourquoi ou pourquoi pas ?",
+    "it": "Ti piacerebbe partecipare a un orto condiviso? Perché sì o perché no?",
+    "pt": "Gostavas de participar numa horta comunitária? Porquê ou porque não?",
+    "pt_BR": "Você gostaria de participar de uma horta comunitária? Por que sim ou por que não?"
+   }
+  },
+  {
+   "id": "gardening-040",
+   "lv": "any",
+   "i18n": {
+    "en": "Which plant would you choose as your personal symbol?",
+    "de": "Welche Pflanze würdest du als dein persönliches Symbol wählen?",
+    "es": "¿Qué planta elegirías como tu símbolo personal?",
+    "fr": "Quelle plante choisirais-tu comme symbole personnel ?",
+    "it": "Quale pianta sceglieresti come tuo simbolo personale?",
+    "pt": "Que planta escolherias como o teu símbolo pessoal?",
+    "pt_BR": "Qual planta você escolheria como seu símbolo pessoal?"
+   }
+  },
+  {
+   "id": "gardening-041",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How many plants do you have at home right now?",
+    "de": "Wie viele Pflanzen hast du gerade zu Hause?",
+    "es": "¿Cuántas plantas tienes ahora mismo en casa?",
+    "fr": "Combien de plantes as-tu chez toi en ce moment ?",
+    "it": "Quante piante hai in casa in questo momento?",
+    "pt": "Quantas plantas tens em casa neste momento?",
+    "pt_BR": "Quantas plantas você tem em casa agora?"
+   }
+  },
+  {
+   "id": "gardening-042",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which window in your home gets the most light?",
+    "de": "Welches Fenster in deiner Wohnung bekommt das meiste Licht?",
+    "es": "¿Qué ventana de tu casa recibe más luz?",
+    "fr": "Quelle fenêtre de ton logement reçoit le plus de lumière ?",
+    "it": "Quale finestra di casa tua riceve più luce?",
+    "pt": "Que janela da tua casa recebe mais luz?",
+    "pt_BR": "Qual janela da sua casa recebe mais luz?"
+   }
+  },
+  {
+   "id": "gardening-043",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you usually decide when to water your plants?",
+    "de": "Wie entscheidest du normalerweise, wann du gießt?",
+    "es": "¿Cómo decides normalmente cuándo regar tus plantas?",
+    "fr": "Comment décides-tu en général quand arroser tes plantes ?",
+    "it": "Come decidi di solito quando annaffiare le piante?",
+    "pt": "Como costumas decidir quando regar as tuas plantas?",
+    "pt_BR": "Como você costuma decidir quando regar suas plantas?"
+   }
+  },
+  {
+   "id": "gardening-044",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which easy plant would you like to start with?",
+    "de": "Mit welcher pflegeleichten Pflanze möchtest du anfangen?",
+    "es": "¿Con qué planta fácil te gustaría empezar?",
+    "fr": "Par quelle plante facile aimerais-tu commencer ?",
+    "it": "Con quale pianta facile vorresti iniziare?",
+    "pt": "Com que planta fácil gostavas de começar?",
+    "pt_BR": "Com qual planta fácil você gostaria de começar?"
+   }
+  },
+  {
+   "id": "gardening-045",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever lost a plant? What do you think went wrong?",
+    "de": "Ist dir schon mal eine Pflanze eingegangen? Was lief wohl schief?",
+    "es": "¿Se te ha secado alguna planta? ¿Qué crees que falló?",
+    "fr": "As-tu déjà perdu une plante ? Qu'est-ce qui n'a pas marché, à ton avis ?",
+    "it": "Ti è mai capitato di perdere una pianta? Secondo te che cosa è andato storto?",
+    "pt": "Já perdeste alguma planta? O que achas que correu mal?",
+    "pt_BR": "Já perdeu alguma planta? O que você acha que deu errado?"
+   }
+  },
+  {
+   "id": "gardening-046",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do your pots have drainage holes?",
+    "de": "Haben deine Töpfe Abzugslöcher?",
+    "es": "¿Tus macetas tienen agujeros de drenaje?",
+    "fr": "Tes pots ont-ils des trous de drainage ?",
+    "it": "I tuoi vasi hanno i fori di drenaggio?",
+    "pt": "Os teus vasos têm furos de drenagem?",
+    "pt_BR": "Seus vasos têm furos de drenagem?"
+   }
+  },
+  {
+   "id": "gardening-047",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which gardening tool would you buy first?",
+    "de": "Welches Gartenwerkzeug würdest du zuerst kaufen?",
+    "es": "¿Qué herramienta de jardinería comprarías primero?",
+    "fr": "Quel outil de jardinage achèterais-tu en premier ?",
+    "it": "Quale attrezzo da giardinaggio compreresti per primo?",
+    "pt": "Que ferramenta de jardinagem comprarias primeiro?",
+    "pt_BR": "Qual ferramenta de jardinagem você compraria primeiro?"
+   }
+  },
+  {
+   "id": "gardening-048",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you have pets that might nibble your plants?",
+    "de": "Hast du Haustiere, die an deinen Pflanzen knabbern könnten?",
+    "es": "¿Tienes mascotas que podrían mordisquear tus plantas?",
+    "fr": "As-tu des animaux qui pourraient grignoter tes plantes ?",
+    "it": "Hai animali domestici che potrebbero mordicchiare le piante?",
+    "pt": "Tens animais de estimação que possam roer as tuas plantas?",
+    "pt_BR": "Você tem bichos de estimação que poderiam mordiscar suas plantas?"
+   }
+  },
+  {
+   "id": "gardening-049",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which herbs would you grow on a sunny windowsill?",
+    "de": "Welche Kräuter würdest du auf einer sonnigen Fensterbank ziehen?",
+    "es": "¿Qué hierbas cultivarías en una ventana soleada?",
+    "fr": "Quelles herbes cultiverais-tu sur un rebord de fenêtre ensoleillé ?",
+    "it": "Quali erbe aromatiche coltiveresti su un davanzale soleggiato?",
+    "pt": "Que ervas cultivarias num parapeito com sol?",
+    "pt_BR": "Quais ervas você plantaria numa janela ensolarada?"
+   }
+  },
+  {
+   "id": "gardening-050",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What would you write first in a plant journal?",
+    "de": "Was würdest du als Erstes in ein Pflanzentagebuch schreiben?",
+    "es": "¿Qué escribirías primero en un diario de plantas?",
+    "fr": "Qu'écrirais-tu en premier dans un carnet de plantes ?",
+    "it": "Che cosa scriveresti per primo in un diario delle piante?",
+    "pt": "O que escreverias primeiro num diário de plantas?",
+    "pt_BR": "O que você escreveria primeiro num diário de plantas?"
+   }
+  },
+  {
+   "id": "gardening-051",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather start with seeds or with young plants? Why?",
+    "de": "Würdest du lieber mit Samen oder mit Jungpflanzen anfangen? Warum?",
+    "es": "¿Preferirías empezar con semillas o con plantas jóvenes? ¿Por qué?",
+    "fr": "Préférerais-tu commencer avec des graines ou de jeunes plants ? Pourquoi ?",
+    "it": "Preferiresti iniziare dai semi o da piantine giovani? Perché?",
+    "pt": "Preferias começar com sementes ou com plantas jovens? Porquê?",
+    "pt_BR": "Você preferiria começar com sementes ou com mudas? Por quê?"
+   }
+  },
+  {
+   "id": "gardening-052",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which flower colours would you love to see on your balcony or windowsill?",
+    "de": "Welche Blütenfarben würdest du gern auf deinem Balkon oder Fensterbrett sehen?",
+    "es": "¿Qué colores de flores te gustaría ver en tu balcón o ventana?",
+    "fr": "Quelles couleurs de fleurs aimerais-tu voir sur ton balcon ou ta fenêtre ?",
+    "it": "Quali colori di fiori ti piacerebbe vedere sul balcone o sul davanzale?",
+    "pt": "Que cores de flores gostavas de ver na tua varanda ou janela?",
+    "pt_BR": "Quais cores de flores você adoraria ver na sua varanda ou janela?"
+   }
+  },
+  {
+   "id": "gardening-053",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever rooted a cutting in a glass of water?",
+    "de": "Hast du schon mal einen Steckling in einem Wasserglas bewurzelt?",
+    "es": "¿Alguna vez has enraizado un esqueje en un vaso de agua?",
+    "fr": "As-tu déjà fait raciner une bouture dans un verre d'eau ?",
+    "it": "Hai mai fatto radicare una talea in un bicchiere d'acqua?",
+    "pt": "Já puseste uma estaca a ganhar raízes num copo de água?",
+    "pt_BR": "Você já colocou uma muda para enraizar num copo d'água?"
+   }
+  },
+  {
+   "id": "gardening-054",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is the hardest part of plant care for you so far?",
+    "de": "Was ist für dich bisher das Schwierigste an der Pflanzenpflege?",
+    "es": "¿Qué es lo más difícil del cuidado de plantas para ti hasta ahora?",
+    "fr": "Quelle est la partie la plus difficile de l'entretien des plantes pour toi jusqu'ici ?",
+    "it": "Qual è per te finora la parte più difficile nel curare le piante?",
+    "pt": "Qual é a parte mais difícil de cuidar de plantas para ti até agora?",
+    "pt_BR": "Qual é a parte mais difícil de cuidar de plantas para você até agora?"
+   }
+  },
+  {
+   "id": "gardening-055",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which vegetable would you try first in a pot?",
+    "de": "Welches Gemüse würdest du zuerst im Topf ausprobieren?",
+    "es": "¿Qué verdura probarías primero en una maceta?",
+    "fr": "Quel légume essaierais-tu en premier dans un pot ?",
+    "it": "Quale ortaggio proveresti per primo in vaso?",
+    "pt": "Que legume experimentarias primeiro num vaso?",
+    "pt_BR": "Qual legume você testaria primeiro num vaso?"
+   }
+  },
+  {
+   "id": "gardening-056",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you keep your plants alive when you go on holiday?",
+    "de": "Wie versorgst du deine Pflanzen, wenn du in den Urlaub fährst?",
+    "es": "¿Cómo cuidas tus plantas cuando te vas de vacaciones?",
+    "fr": "Comment t'occupes-tu de tes plantes quand tu pars en vacances ?",
+    "it": "Come ti organizzi con le piante quando vai in vacanza?",
+    "pt": "Como tratas das tuas plantas quando vais de férias?",
+    "pt_BR": "Como você cuida das suas plantas quando viaja de férias?"
+   }
+  },
+  {
+   "id": "gardening-057",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you noticed any tiny bugs on your plants? What did you do?",
+    "de": "Hast du schon kleine Tierchen an deinen Pflanzen bemerkt? Was hast du gemacht?",
+    "es": "¿Has visto bichitos en tus plantas? ¿Qué hiciste?",
+    "fr": "As-tu déjà remarqué de petites bêtes sur tes plantes ? Qu'as-tu fait ?",
+    "it": "Hai mai notato piccoli insetti sulle tue piante? Che cosa hai fatto?",
+    "pt": "Já reparaste em bichinhos nas tuas plantas? O que fizeste?",
+    "pt_BR": "Você já notou bichinhos nas suas plantas? O que fez?"
+   }
+  },
+  {
+   "id": "gardening-058",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which room in your home could become a little plant corner?",
+    "de": "Welcher Raum bei dir könnte eine kleine Pflanzenecke bekommen?",
+    "es": "¿Qué rincón de tu casa podría convertirse en un pequeño espacio de plantas?",
+    "fr": "Quelle pièce de ton logement pourrait accueillir un petit coin de plantes ?",
+    "it": "Quale stanza di casa tua potrebbe diventare un piccolo angolo verde?",
+    "pt": "Que divisão da tua casa podia ganhar um cantinho de plantas?",
+    "pt_BR": "Qual cômodo da sua casa poderia virar um cantinho de plantas?"
+   }
+  },
+  {
+   "id": "gardening-059",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you prefer watering cans, spray bottles or self-watering pots?",
+    "de": "Magst du lieber Gießkannen, Sprühflaschen oder selbstbewässernde Töpfe?",
+    "es": "¿Prefieres regadera, pulverizador o macetas con autorriego?",
+    "fr": "Préfères-tu l'arrosoir, le vaporisateur ou les pots à réserve d'eau ?",
+    "it": "Preferisci l'annaffiatoio, lo spruzzino o i vasi autoirriganti?",
+    "pt": "Preferes regador, borrifador ou vasos com autorrega?",
+    "pt_BR": "Você prefere regador, borrifador ou vaso autoirrigável?"
+   }
+  },
+  {
+   "id": "gardening-060",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which plant would you like to propagate and share with friends?",
+    "de": "Welche Pflanze würdest du gern vermehren und mit Freunden teilen?",
+    "es": "¿Qué planta te gustaría multiplicar y compartir con amigos?",
+    "fr": "Quelle plante aimerais-tu multiplier pour la partager avec des amis ?",
+    "it": "Quale pianta ti piacerebbe moltiplicare e condividere con gli amici?",
+    "pt": "Que planta gostavas de multiplicar e partilhar com amigos?",
+    "pt_BR": "Qual planta você gostaria de multiplicar e compartilhar com amigos?"
+   }
+  },
+  {
+   "id": "gardening-061",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What do you notice first when a plant looks unhappy?",
+    "de": "Was fällt dir zuerst auf, wenn eine Pflanze unglücklich aussieht?",
+    "es": "¿Qué es lo primero que notas cuando una planta no tiene buen aspecto?",
+    "fr": "Que remarques-tu en premier quand une plante semble mal en point ?",
+    "it": "Che cosa noti per prima cosa quando una pianta sembra sofferente?",
+    "pt": "O que notas primeiro quando uma planta não parece bem?",
+    "pt_BR": "O que você percebe primeiro quando uma planta não parece bem?"
+   }
+  },
+  {
+   "id": "gardening-062",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you enjoy growing microgreens in your kitchen?",
+    "de": "Hättest du Freude daran, Microgreens in deiner Küche zu ziehen?",
+    "es": "¿Te gustaría cultivar microbrotes en tu cocina?",
+    "fr": "Aimerais-tu faire pousser des micro-pousses dans ta cuisine ?",
+    "it": "Ti piacerebbe coltivare microgreens in cucina?",
+    "pt": "Gostavas de cultivar microverdes na tua cozinha?",
+    "pt_BR": "Você curtiria cultivar microverdes na sua cozinha?"
+   }
+  },
+  {
+   "id": "gardening-063",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which spring bulbs would you plant for colour?",
+    "de": "Welche Frühlingszwiebeln würdest du für Farbe pflanzen?",
+    "es": "¿Qué bulbos de primavera plantarías para dar color?",
+    "fr": "Quels bulbes de printemps planterais-tu pour la couleur ?",
+    "it": "Quali bulbi primaverili pianteresti per avere colore?",
+    "pt": "Que bolbos de primavera plantarias para dar cor?",
+    "pt_BR": "Quais bulbos de primavera você plantaria para dar cor?"
+   }
+  },
+  {
+   "id": "gardening-064",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you compost at home, or would you like to try?",
+    "de": "Kompostierst du zu Hause, oder würdest du es gern ausprobieren?",
+    "es": "¿Haces compost en casa o te gustaría probar?",
+    "fr": "Fais-tu du compost chez toi, ou aimerais-tu essayer ?",
+    "it": "Fai il compost a casa o ti piacerebbe provare?",
+    "pt": "Fazes compostagem em casa, ou gostavas de experimentar?",
+    "pt_BR": "Você faz compostagem em casa, ou gostaria de tentar?"
+   }
+  },
+  {
+   "id": "gardening-065",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What small gardening goal could you reach this month?",
+    "de": "Welches kleine Gartenziel könntest du diesen Monat erreichen?",
+    "es": "¿Qué pequeño objetivo de jardinería podrías lograr este mes?",
+    "fr": "Quel petit objectif de jardinage pourrais-tu atteindre ce mois-ci ?",
+    "it": "Quale piccolo obiettivo di giardinaggio potresti raggiungere questo mese?",
+    "pt": "Que pequeno objetivo de jardinagem podias alcançar este mês?",
+    "pt_BR": "Qual pequena meta de jardinagem você poderia alcançar este mês?"
+   }
+  },
+  {
+   "id": "gardening-066",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What type of soil do you have, and how could you improve it?",
+    "de": "Welche Bodenart hast du, und wie könntest du sie verbessern?",
+    "es": "¿Qué tipo de suelo tienes y cómo podrías mejorarlo?",
+    "fr": "Quel type de sol as-tu, et comment pourrais-tu l'améliorer ?",
+    "it": "Che tipo di terreno hai e come potresti migliorarlo?",
+    "pt": "Que tipo de solo tens, e como o podias melhorar?",
+    "pt_BR": "Que tipo de solo você tem, e como poderia melhorá-lo?"
+   }
+  },
+  {
+   "id": "gardening-067",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which crops would you put in your ideal raised bed?",
+    "de": "Was würdest du in dein ideales Hochbeet pflanzen?",
+    "es": "¿Qué cultivos pondrías en tu bancal elevado ideal?",
+    "fr": "Que cultiverais-tu dans ton carré surélevé idéal ?",
+    "it": "Che cosa coltiveresti nel tuo orto rialzato ideale?",
+    "pt": "Que culturas porias no teu canteiro elevado ideal?",
+    "pt_BR": "O que você plantaria no seu canteiro elevado ideal?"
+   }
+  },
+  {
+   "id": "gardening-068",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which plant pairs would you try as companion plants?",
+    "de": "Welche Pflanzenpaare würdest du als gute Nachbarn ausprobieren?",
+    "es": "¿Qué parejas de plantas probarías como cultivos asociados?",
+    "fr": "Quelles associations de plantes aimerais-tu essayer ?",
+    "it": "Quali coppie di piante proveresti come consociazioni?",
+    "pt": "Que pares de plantas experimentarias como consociação?",
+    "pt_BR": "Quais pares de plantas você testaria no plantio consorciado?"
+   }
+  },
+  {
+   "id": "gardening-069",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you deal with slugs and snails in a gentle way?",
+    "de": "Wie gehst du sanft mit Schnecken um?",
+    "es": "¿Cómo te las arreglas con babosas y caracoles de forma respetuosa?",
+    "fr": "Comment gères-tu les limaces et les escargots en douceur ?",
+    "it": "Come gestisci lumache e chiocciole in modo delicato?",
+    "pt": "Como lidas com lesmas e caracóis de forma suave?",
+    "pt_BR": "Como você lida com lesmas e caracóis de um jeito gentil?"
+   }
+  },
+  {
+   "id": "gardening-070",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Have you ever saved seeds from your own plants?",
+    "de": "Hast du schon einmal Samen von deinen eigenen Pflanzen gesammelt?",
+    "es": "¿Alguna vez has guardado semillas de tus propias plantas?",
+    "fr": "As-tu déjà récolté des graines de tes propres plantes ?",
+    "it": "Hai mai raccolto i semi delle tue piante?",
+    "pt": "Já guardaste sementes das tuas próprias plantas?",
+    "pt_BR": "Você já guardou sementes das suas próprias plantas?"
+   }
+  },
+  {
+   "id": "gardening-071",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which fruit bush or tree would fit in your space?",
+    "de": "Welcher Obststrauch oder Obstbaum würde in deinen Platz passen?",
+    "es": "¿Qué arbusto o árbol frutal cabría en tu espacio?",
+    "fr": "Quel arbuste ou arbre fruitier conviendrait à ton espace ?",
+    "it": "Quale arbusto o albero da frutto starebbe bene nel tuo spazio?",
+    "pt": "Que arbusto ou árvore de fruto caberia no teu espaço?",
+    "pt_BR": "Qual arbusto ou árvore frutífera caberia no seu espaço?"
+   }
+  },
+  {
+   "id": "gardening-072",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you save water when your garden needs it most?",
+    "de": "Wie sparst du Wasser, wenn dein Garten es am meisten braucht?",
+    "es": "¿Cómo ahorras agua cuando tu jardín más la necesita?",
+    "fr": "Comment économises-tu l'eau quand ton jardin en a le plus besoin ?",
+    "it": "Come risparmi acqua quando il tuo giardino ne ha più bisogno?",
+    "pt": "Como poupas água quando o teu jardim mais precisa dela?",
+    "pt_BR": "Como você economiza água quando o jardim mais precisa?"
+   }
+  },
+  {
+   "id": "gardening-073",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which beneficial insects have you spotted in your garden or balcony?",
+    "de": "Welche Nützlinge hast du schon in deinem Garten oder auf dem Balkon entdeckt?",
+    "es": "¿Qué insectos beneficiosos has visto en tu jardín o balcón?",
+    "fr": "Quels insectes utiles as-tu repérés dans ton jardin ou sur ton balcon ?",
+    "it": "Quali insetti utili hai visto in giardino o sul balcone?",
+    "pt": "Que insetos úteis já viste no teu jardim ou varanda?",
+    "pt_BR": "Quais insetos benéficos você já viu no seu jardim ou varanda?"
+   }
+  },
+  {
+   "id": "gardening-074",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What would you plant to have something to harvest in every season?",
+    "de": "Was würdest du pflanzen, um in jeder Jahreszeit etwas ernten zu können?",
+    "es": "¿Qué plantarías para tener algo que cosechar en cada estación?",
+    "fr": "Que planterais-tu pour avoir quelque chose à récolter à chaque saison ?",
+    "it": "Che cosa pianteresti per avere un raccolto in ogni stagione?",
+    "pt": "O que plantarias para teres algo para colher em todas as estações?",
+    "pt_BR": "O que você plantaria para ter algo para colher em todas as estações?"
+   }
+  },
+  {
+   "id": "gardening-075",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you prune your plants, and what have you learned from it?",
+    "de": "Wie schneidest du deine Pflanzen, und was hast du dabei gelernt?",
+    "es": "¿Cómo podas tus plantas y qué has aprendido al hacerlo?",
+    "fr": "Comment tailles-tu tes plantes, et qu'en as-tu appris ?",
+    "it": "Come poti le tue piante e che cosa hai imparato facendolo?",
+    "pt": "Como podas as tuas plantas, e o que aprendeste com isso?",
+    "pt_BR": "Como você poda suas plantas, e o que aprendeu com isso?"
+   }
+  },
+  {
+   "id": "gardening-076",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which garden style inspires you most: cottage, Mediterranean or Japanese?",
+    "de": "Welcher Gartenstil inspiriert dich am meisten: Cottage, mediterran oder japanisch?",
+    "es": "¿Qué estilo de jardín te inspira más: inglés rústico, mediterráneo o japonés?",
+    "fr": "Quel style de jardin t'inspire le plus : cottage, méditerranéen ou japonais ?",
+    "it": "Quale stile di giardino ti ispira di più: cottage, mediterraneo o giapponese?",
+    "pt": "Que estilo de jardim mais te inspira: cottage, mediterrânico ou japonês?",
+    "pt_BR": "Qual estilo de jardim mais te inspira: cottage, mediterrâneo ou japonês?"
+   }
+  },
+  {
+   "id": "gardening-077",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you preserve or use a big harvest?",
+    "de": "Wie konservierst oder verwendest du eine große Ernte?",
+    "es": "¿Cómo conservas o aprovechas una gran cosecha?",
+    "fr": "Comment conserves-tu ou utilises-tu une grosse récolte ?",
+    "it": "Come conservi o utilizzi un raccolto abbondante?",
+    "pt": "Como conservas ou aproveitas uma grande colheita?",
+    "pt_BR": "Como você conserva ou aproveita uma colheita grande?"
+   }
+  },
+  {
+   "id": "gardening-078",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which houseplant would you love to grow into a big, impressive specimen?",
+    "de": "Welche Zimmerpflanze würdest du gern zu einem großen, beeindruckenden Exemplar heranziehen?",
+    "es": "¿Qué planta de interior te encantaría convertir en un ejemplar grande e impresionante?",
+    "fr": "Quelle plante d'intérieur aimerais-tu voir devenir un spécimen grand et impressionnant ?",
+    "it": "Quale pianta d'appartamento vorresti far diventare un esemplare grande e imponente?",
+    "pt": "Que planta de interior gostavas de transformar num exemplar grande e impressionante?",
+    "pt_BR": "Qual planta de interior você adoraria transformar num exemplar grande e impressionante?"
+   }
+  },
+  {
+   "id": "gardening-079",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Have you tried building a terrarium? What would you put inside?",
+    "de": "Hast du schon einmal ein Terrarium gebaut? Was würdest du hineinsetzen?",
+    "es": "¿Has probado a montar un terrario? ¿Qué pondrías dentro?",
+    "fr": "As-tu déjà essayé de créer un terrarium ? Que mettrais-tu dedans ?",
+    "it": "Hai mai provato a creare un terrario? Che cosa ci metteresti dentro?",
+    "pt": "Já experimentaste montar um terrário? O que porias lá dentro?",
+    "pt_BR": "Você já tentou montar um terrário? O que colocaria dentro?"
+   }
+  },
+  {
+   "id": "gardening-080",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you protect tender plants when the first cold nights arrive?",
+    "de": "Wie schützt du empfindliche Pflanzen, wenn die ersten kalten Nächte kommen?",
+    "es": "¿Cómo proteges las plantas delicadas cuando llegan las primeras noches frías?",
+    "fr": "Comment protèges-tu les plantes fragiles quand arrivent les premières nuits froides ?",
+    "it": "Come proteggi le piante delicate quando arrivano le prime notti fredde?",
+    "pt": "Como proteges as plantas sensíveis quando chegam as primeiras noites frias?",
+    "pt_BR": "Como você protege as plantas sensíveis quando chegam as primeiras noites frias?"
+   }
+  },
+  {
+   "id": "gardening-081",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What has your garden journal taught you about your plants?",
+    "de": "Was hat dir dein Gartentagebuch über deine Pflanzen verraten?",
+    "es": "¿Qué te ha enseñado tu diario de jardín sobre tus plantas?",
+    "fr": "Qu'est-ce que ton carnet de jardin t'a appris sur tes plantes ?",
+    "it": "Che cosa ti ha insegnato il tuo diario dell'orto sulle tue piante?",
+    "pt": "O que te ensinou o teu diário de jardim sobre as tuas plantas?",
+    "pt_BR": "O que seu diário de jardim te ensinou sobre suas plantas?"
+   }
+  },
+  {
+   "id": "gardening-082",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which wildlife would you like to welcome into your garden?",
+    "de": "Welche Wildtiere würdest du gern in deinem Garten willkommen heißen?",
+    "es": "¿Qué fauna te gustaría atraer a tu jardín?",
+    "fr": "Quels animaux sauvages aimerais-tu accueillir dans ton jardin ?",
+    "it": "Quali animali selvatici ti piacerebbe accogliere nel tuo giardino?",
+    "pt": "Que animais selvagens gostavas de receber no teu jardim?",
+    "pt_BR": "Quais bichos você gostaria de atrair para o seu jardim?"
+   }
+  },
+  {
+   "id": "gardening-083",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How would you design a small garden to feel bigger?",
+    "de": "Wie würdest du einen kleinen Garten gestalten, damit er größer wirkt?",
+    "es": "¿Cómo diseñarías un jardín pequeño para que parezca más grande?",
+    "fr": "Comment aménagerais-tu un petit jardin pour qu'il paraisse plus grand ?",
+    "it": "Come progetteresti un piccolo giardino per farlo sembrare più grande?",
+    "pt": "Como desenharias um jardim pequeno para parecer maior?",
+    "pt_BR": "Como você planejaria um jardim pequeno para parecer maior?"
+   }
+  },
+  {
+   "id": "gardening-084",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which herbs would you grow to make your own tea?",
+    "de": "Welche Kräuter würdest du für deinen eigenen Tee anbauen?",
+    "es": "¿Qué hierbas cultivarías para hacer tus propias infusiones?",
+    "fr": "Quelles plantes cultiverais-tu pour faire tes propres tisanes ?",
+    "it": "Quali erbe coltiveresti per preparare le tue tisane?",
+    "pt": "Que ervas cultivarias para fazer os teus próprios chás?",
+    "pt_BR": "Quais ervas você cultivaria para fazer seus próprios chás?"
+   }
+  },
+  {
+   "id": "gardening-085",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you share plants, seeds or harvests with other people?",
+    "de": "Wie teilst du Pflanzen, Samen oder Ernte mit anderen?",
+    "es": "¿Cómo compartes plantas, semillas o cosechas con otras personas?",
+    "fr": "Comment partages-tu plantes, graines ou récoltes avec d'autres ?",
+    "it": "Come condividi piante, semi o raccolti con altre persone?",
+    "pt": "Como partilhas plantas, sementes ou colheitas com outras pessoas?",
+    "pt_BR": "Como você compartilha plantas, sementes ou colheitas com outras pessoas?"
+   }
+  },
+  {
+   "id": "gardening-086",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How has gardening changed the way you see nature?",
+    "de": "Wie hat das Gärtnern deinen Blick auf die Natur verändert?",
+    "es": "¿Cómo ha cambiado la jardinería tu forma de ver la naturaleza?",
+    "fr": "Comment le jardinage a-t-il changé ta façon de voir la nature ?",
+    "it": "In che modo il giardinaggio ha cambiato il tuo modo di vedere la natura?",
+    "pt": "De que forma a jardinagem mudou a tua maneira de ver a natureza?",
+    "pt_BR": "Como a jardinagem mudou seu jeito de ver a natureza?"
+   }
+  },
+  {
+   "id": "gardening-087",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which permaculture idea would you like to try in your space?",
+    "de": "Welche Permakultur-Idee würdest du gern bei dir ausprobieren?",
+    "es": "¿Qué idea de permacultura te gustaría probar en tu espacio?",
+    "fr": "Quelle idée de permaculture aimerais-tu essayer chez toi ?",
+    "it": "Quale idea di permacultura ti piacerebbe provare nel tuo spazio?",
+    "pt": "Que ideia de permacultura gostavas de experimentar no teu espaço?",
+    "pt_BR": "Qual ideia de permacultura você gostaria de testar no seu espaço?"
+   }
+  },
+  {
+   "id": "gardening-088",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Would you rather have a greenhouse, a hydroponic setup or a food forest?",
+    "de": "Hättest du lieber ein Gewächshaus, eine Hydrokultur-Anlage oder einen Waldgarten?",
+    "es": "¿Preferirías un invernadero, un sistema hidropónico o un bosque comestible?",
+    "fr": "Préférerais-tu une serre, un système hydroponique ou une forêt comestible ?",
+    "it": "Preferiresti una serra, un impianto idroponico o una foresta commestibile?",
+    "pt": "Preferias uma estufa, um sistema hidropónico ou uma floresta comestível?",
+    "pt_BR": "Você preferiria uma estufa, um sistema hidropônico ou uma agrofloresta?"
+   }
+  },
+  {
+   "id": "gardening-089",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How are you adapting your garden to hotter summers or heavy rain?",
+    "de": "Wie passt du deinen Garten an heißere Sommer oder Starkregen an?",
+    "es": "¿Cómo estás adaptando tu jardín a veranos más calurosos o lluvias intensas?",
+    "fr": "Comment adaptes-tu ton jardin aux étés plus chauds ou aux fortes pluies ?",
+    "it": "Come stai adattando il tuo giardino a estati più calde o piogge intense?",
+    "pt": "Como estás a adaptar o teu jardim a verões mais quentes ou chuvas fortes?",
+    "pt_BR": "Como você está adaptando seu jardim a verões mais quentes ou chuvas fortes?"
+   }
+  },
+  {
+   "id": "gardening-090",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which grafting or propagation technique would you like to master?",
+    "de": "Welche Veredelungs- oder Vermehrungstechnik möchtest du beherrschen?",
+    "es": "¿Qué técnica de injerto o multiplicación te gustaría dominar?",
+    "fr": "Quelle technique de greffe ou de multiplication aimerais-tu maîtriser ?",
+    "it": "Quale tecnica di innesto o di moltiplicazione vorresti padroneggiare?",
+    "pt": "Que técnica de enxertia ou multiplicação gostavas de dominar?",
+    "pt_BR": "Qual técnica de enxertia ou propagação você gostaria de dominar?"
+   }
+  },
+  {
+   "id": "gardening-091",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which famous garden in the world would you most love to visit?",
+    "de": "Welchen berühmten Garten der Welt würdest du am liebsten besuchen?",
+    "es": "¿Qué jardín famoso del mundo te encantaría visitar?",
+    "fr": "Quel jardin célèbre au monde rêverais-tu de visiter ?",
+    "it": "Quale giardino famoso al mondo ti piacerebbe di più visitare?",
+    "pt": "Que jardim famoso do mundo mais gostavas de visitar?",
+    "pt_BR": "Qual jardim famoso do mundo você mais adoraria visitar?"
+   }
+  },
+  {
+   "id": "gardening-092",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you design a garden that looks good in every month of the year?",
+    "de": "Wie würdest du einen Garten gestalten, der in jedem Monat schön aussieht?",
+    "es": "¿Cómo diseñarías un jardín que luzca bonito todos los meses del año?",
+    "fr": "Comment concevrais-tu un jardin beau à chaque mois de l'année ?",
+    "it": "Come progetteresti un giardino bello in ogni mese dell'anno?",
+    "pt": "Como desenharias um jardim bonito em todos os meses do ano?",
+    "pt_BR": "Como você planejaria um jardim bonito em todos os meses do ano?"
+   }
+  },
+  {
+   "id": "gardening-093",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What plant variety would you love to breed or select yourself?",
+    "de": "Welche Pflanzensorte würdest du gern selbst züchten oder auslesen?",
+    "es": "¿Qué variedad de planta te encantaría crear o seleccionar tú mismo?",
+    "fr": "Quelle variété de plante aimerais-tu créer ou sélectionner toi-même ?",
+    "it": "Quale varietà di pianta ti piacerebbe creare o selezionare da solo?",
+    "pt": "Que variedade de planta gostavas de criar ou selecionar tu mesmo?",
+    "pt_BR": "Qual variedade de planta você adoraria criar ou selecionar?"
+   }
+  },
+  {
+   "id": "gardening-094",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you balance a beautiful garden with a wildlife-friendly one?",
+    "de": "Wie bringst du einen schönen Garten und einen tierfreundlichen Garten zusammen?",
+    "es": "¿Cómo equilibras un jardín bonito con uno amigable para la fauna?",
+    "fr": "Comment concilies-tu un beau jardin et un jardin accueillant pour la faune ?",
+    "it": "Come concili un giardino bello con uno amico della fauna?",
+    "pt": "Como equilibras um jardim bonito com um jardim amigo da vida selvagem?",
+    "pt_BR": "Como você equilibra um jardim bonito com um jardim amigo da natureza?"
+   }
+  },
+  {
+   "id": "gardening-095",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which gardening tradition from another culture would you love to try?",
+    "de": "Welche Gartentradition aus einer anderen Kultur würdest du gern ausprobieren?",
+    "es": "¿Qué tradición de jardinería de otra cultura te gustaría probar?",
+    "fr": "Quelle tradition de jardinage d'une autre culture aimerais-tu essayer ?",
+    "it": "Quale tradizione di giardinaggio di un'altra cultura ti piacerebbe provare?",
+    "pt": "Que tradição de jardinagem de outra cultura gostavas de experimentar?",
+    "pt_BR": "Qual tradição de jardinagem de outra cultura você gostaria de experimentar?"
+   }
+  },
+  {
+   "id": "gardening-096",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you teach a complete beginner to keep their first plant happy?",
+    "de": "Wie würdest du einem absoluten Anfänger beibringen, seine erste Pflanze glücklich zu halten?",
+    "es": "¿Cómo enseñarías a un principiante a mantener feliz su primera planta?",
+    "fr": "Comment apprendrais-tu à un débutant à garder sa première plante en forme ?",
+    "it": "Come insegneresti a un principiante a far stare bene la sua prima pianta?",
+    "pt": "Como ensinarias um principiante a manter feliz a sua primeira planta?",
+    "pt_BR": "Como você ensinaria um iniciante a manter feliz sua primeira planta?"
+   }
+  },
+  {
+   "id": "gardening-097",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What does your soil look and feel like after years of care?",
+    "de": "Wie sieht und fühlt sich dein Boden nach Jahren der Pflege an?",
+    "es": "¿Qué aspecto y textura tiene tu suelo después de años de cuidados?",
+    "fr": "À quoi ressemble ton sol, et quelle texture a-t-il, après des années de soins ?",
+    "it": "Che aspetto e consistenza ha il tuo terreno dopo anni di cure?",
+    "pt": "Que aspeto e textura tem o teu solo depois de anos de cuidados?",
+    "pt_BR": "Qual é a aparência e a textura do seu solo depois de anos de cuidado?"
+   }
+  },
+  {
+   "id": "gardening-098",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which gardening project are you proudest of, and why?",
+    "de": "Auf welches Gartenprojekt bist du am stolzesten, und warum?",
+    "es": "¿De qué proyecto de jardinería estás más orgulloso y por qué?",
+    "fr": "De quel projet de jardinage es-tu le plus fier, et pourquoi ?",
+    "it": "Di quale progetto di giardinaggio sei più orgoglioso, e perché?",
+    "pt": "De que projeto de jardinagem tens mais orgulho, e porquê?",
+    "pt_BR": "De qual projeto de jardinagem você mais se orgulha, e por quê?"
+   }
+  },
+  {
+   "id": "gardening-099",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How has caring for plants shaped your daily rhythm and mood?",
+    "de": "Wie hat die Pflanzenpflege deinen Alltag und deine Stimmung geprägt?",
+    "es": "¿Cómo ha influido cuidar plantas en tu ritmo diario y tu ánimo?",
+    "fr": "Comment le soin des plantes a-t-il façonné ton rythme quotidien et ton humeur ?",
+    "it": "In che modo curare le piante ha influito sul tuo ritmo quotidiano e sull'umore?",
+    "pt": "De que forma cuidar de plantas moldou o teu ritmo diário e o teu humor?",
+    "pt_BR": "Como cuidar de plantas moldou seu ritmo diário e seu humor?"
+   }
+  },
+  {
+   "id": "gardening-100",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What new gardening adventure would you like to start next year?",
+    "de": "Welches neue Gartenabenteuer möchtest du nächstes Jahr beginnen?",
+    "es": "¿Qué nueva aventura de jardinería te gustaría empezar el próximo año?",
+    "fr": "Quelle nouvelle aventure de jardinage aimerais-tu commencer l'an prochain ?",
+    "it": "Quale nuova avventura di giardinaggio vorresti iniziare l'anno prossimo?",
+    "pt": "Que nova aventura de jardinagem gostavas de começar no próximo ano?",
+    "pt_BR": "Qual nova aventura de jardinagem você gostaria de começar no ano que vem?"
+   }
+  }
+ ]
+}

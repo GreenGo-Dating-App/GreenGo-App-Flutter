@@ -1,0 +1,2195 @@
+{
+"topic": "studying",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "Welcome to smarter studying",
+"f": "Why how you study matters as much as how long, and what this 365-day path will build step by step"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Your learner profile",
+"f": "Mapping your subjects, goals, strengths and the study struggles you want to fix first"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Setting a clear study goal",
+"f": "Turning a vague wish like 'do better' into a specific, measurable goal with a deadline"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "The growth mindset",
+"f": "How believing skills can grow changes the way you handle mistakes and difficult subjects"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Myths about learning styles",
+"f": "Why 'I am a visual learner' is a myth and mixing many ways of learning works better for everyone"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Your study baseline week",
+"f": "Tracking when, where and how long you really study for seven days, without judging yourself"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Small wins first",
+"f": "Starting with tiny daily study sessions so the habit sticks before you make it longer"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "The study starter ritual",
+"f": "A short routine of water, desk and one clear task that tells your brain it is time to learn"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Asking good questions",
+"f": "How curious questions make material stick and how to write three before you start reading"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Week one reflection",
+"f": "Looking back at your first days, what felt easy, what felt hard and one thing to adjust"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "How memory works",
+"f": "A simple picture of encoding, storage and retrieval, and where studying usually goes wrong"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Working memory limits",
+"f": "Why you can only juggle a few new ideas at once and how to break material into small pieces"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "The forgetting curve",
+"f": "How fast we forget new information and why reviewing at the right moments saves time"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Attention is the gateway",
+"f": "Why you cannot remember what you never really noticed, and how to pay full attention"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Meaning beats repetition",
+"f": "Linking new facts to what you already know so they are easier to recall later"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Chunking information",
+"f": "Grouping details into bigger meaningful units, like phone numbers split into blocks"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "The power of examples",
+"f": "Using concrete examples to understand abstract ideas and creating your own examples"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Dual coding",
+"f": "Combining words with simple drawings, diagrams or timelines to give memory two routes in"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Elaboration",
+"f": "Asking how and why questions about a topic to build rich connections between ideas"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Memory basics recap",
+"f": "Putting encoding, chunking, examples and elaboration together on one short topic"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Where does your time go",
+"f": "Doing a simple time audit to find hidden hours and time leaks in a normal week"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Weekly study planning",
+"f": "Building a realistic weekly plan around classes, work, rest and personal life"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Daily to-do lists that work",
+"f": "Writing short task lists with verbs and sizes instead of long lists of vague topics"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Breaking big tasks down",
+"f": "Splitting a large project or exam into small steps you can start today"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Estimating study time",
+"f": "Learning to guess how long tasks take and correcting your estimates over time"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Prioritising with urgency and importance",
+"f": "Sorting tasks into urgent, important, both or neither to decide what comes first"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Time blocking",
+"f": "Giving each study task a fixed slot in your calendar so it actually happens"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "The Pomodoro technique",
+"f": "Studying in focused 25-minute rounds with short breaks and adjusting the rhythm to you"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Buffer time and flexibility",
+"f": "Leaving room in your plan for surprises so one bad day does not ruin the whole week"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Month one review",
+"f": "Reviewing goals, memory basics and planning tools, and choosing what to keep using"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Designing your study space",
+"f": "Light, chair, desk height and tidy surfaces that make focus easier"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "One place, one purpose",
+"f": "Why studying in the same spot can build a focus habit, and when changing place helps"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Taming the phone",
+"f": "Practical ways to keep your phone from pulling your attention during study time"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Noise, music and silence",
+"f": "When background sound helps, when it hurts and how to test it on yourself"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "The myth of multitasking",
+"f": "Why switching between tasks costs time and accuracy, and how to single-task instead"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Deep focus sessions",
+"f": "Building longer stretches of concentration step by step, from 15 to 50 minutes"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Handling wandering thoughts",
+"f": "Using a distraction notepad to park ideas and worries until your break"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Starting when you do not feel like it",
+"f": "The two-minute rule and other tricks for getting past the hardest part: the start"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Energy peaks and dips",
+"f": "Matching hard tasks to your high-energy hours and easy tasks to your low ones"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Focus check-in",
+"f": "Measuring how your focus has changed and picking your best concentration strategies"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Why we take notes",
+"f": "How note-taking helps understanding when you process ideas instead of copying words"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Notes in your own words",
+"f": "Paraphrasing what you hear or read so you understand it rather than just record it"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "The Cornell method",
+"f": "Splitting the page into notes, cues and summary to make review built in"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Outline notes",
+"f": "Using headings and indents to show how ideas relate in a clear structure"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Mind maps",
+"f": "Drawing a central idea with branches to see connections and the big picture"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Handwriting or typing",
+"f": "What research suggests about each and how to choose for different situations"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Notes from videos and lectures",
+"f": "Pausing, listening for signposts and catching key points rather than every word"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Abbreviations and symbols",
+"f": "Creating your own shorthand to write faster without losing meaning"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Reviewing notes within a day",
+"f": "Why a quick review soon after class locks in much more than a long review later"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Note-taking showcase",
+"f": "Choosing your favourite method and rewriting one old set of notes with it"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Reading with a purpose",
+"f": "Deciding what you want from a text before you begin so reading stays focused"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Previewing a chapter",
+"f": "Skimming titles, images, summaries and questions before reading in detail"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "The SQ3R method",
+"f": "Survey, question, read, recite and review: a classic system for textbook study"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Highlighting wisely",
+"f": "Why heavy highlighting fools you and how to mark only what truly matters"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Reading difficult texts",
+"f": "Slowing down, rereading key sentences and looking up terms without losing the thread"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Summarising in three sentences",
+"f": "Capturing the main idea, the support and the meaning of a text very briefly"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Reading graphs and tables",
+"f": "Understanding axes, units and trends so visual data makes sense quickly"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Vocabulary of a subject",
+"f": "Building a personal glossary of key terms for every course you take"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Reading on screens",
+"f": "Staying focused on digital texts and avoiding endless scrolling and skimming"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Two-month review",
+"f": "Revisiting focus, notes and reading skills, and testing one of each on new material"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "What is active recall",
+"f": "Pulling information out of your memory instead of rereading it, and why it works so well"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "The blank page test",
+"f": "Writing down everything you remember about a topic before checking your notes"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Making good flashcards",
+"f": "One idea per card, clear questions and short answers that test real understanding"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Questions from your notes",
+"f": "Turning headings and key points into questions you can answer later"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Self-quizzing routines",
+"f": "Building short daily quizzes into your schedule to keep recall sharp"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Practice tests",
+"f": "Using past papers or sample questions as a learning tool, not just as a final check"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Explaining out loud",
+"f": "Talking through a topic as if teaching it to reveal gaps in what you know"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "The illusion of knowing",
+"f": "Why familiar material feels learned and how recall shows the truth"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Learning from wrong answers",
+"f": "Treating mistakes in practice as useful clues about what to study next"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Active recall challenge",
+"f": "Studying one topic using only recall methods and comparing it with rereading"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Spaced repetition basics",
+"f": "Spreading reviews over growing intervals so memories last much longer"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Building a review calendar",
+"f": "Planning reviews at one day, three days, one week and one month after learning"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Flashcard apps and boxes",
+"f": "How digital apps and the paper Leitner box system schedule reviews for you"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Interleaving",
+"f": "Mixing different topics or problem types in one session to learn to tell them apart"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Spacing versus cramming",
+"f": "Why the same hours spread over many days beat one long session the night before"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Reviewing without boredom",
+"f": "Varying review formats with quizzes, drawings and explanations to stay engaged"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "How much review is enough",
+"f": "Spotting when a topic is solid and when it needs more practice"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Spacing for big subjects",
+"f": "Applying spaced review to a full course rather than a single list of facts"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Keeping cards up to date",
+"f": "Editing, splitting and removing flashcards so your deck stays useful"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Spacing and recall combined",
+"f": "Putting active recall and spaced repetition together into one weekly system"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "What drives motivation",
+"f": "Intrinsic and extrinsic motivation and how to use both in a healthy way"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Finding your why",
+"f": "Connecting each subject to a personal reason that makes it worth the effort"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Making progress visible",
+"f": "Using checklists, streaks and charts to see how far you have come"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Rewards that help",
+"f": "Choosing small, healthy rewards that follow effort and keep you going"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Dealing with boring subjects",
+"f": "Finding angles, games and challenges to get through material you do not love"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Study buddies and accountability",
+"f": "How telling someone your plan or studying alongside them increases follow-through"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Bouncing back from a bad day",
+"f": "Restarting without guilt after a missed session or a disappointing result"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Self-talk for learners",
+"f": "Swapping harsh inner comments for helpful, realistic encouragement"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Celebrating milestones",
+"f": "Marking the end of a chapter or course with a meaningful pause and reflection"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Quarter review",
+"f": "Looking at three months of habits, recall and motivation and setting goals for the next stage"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Sleep and learning",
+"f": "How sleep helps the brain store new memories and why all-nighters backfire"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Breaks that refresh",
+"f": "Short walks, stretching and fresh air versus breaks that drain like scrolling"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Movement and the brain",
+"f": "How regular physical activity supports focus, mood and learning"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Food, water and focus",
+"f": "Simple habits around regular meals and drinking enough water during study days"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Screen time balance",
+"f": "Protecting your eyes and attention with screen breaks and offline study time"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Recognising study stress",
+"f": "Noticing signs of overload early and responding before it builds up"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Calm-down techniques",
+"f": "Slow breathing and short grounding exercises to use before studying or a test"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Rest days",
+"f": "Why planned days off improve long-term results and how to use them well"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "A sustainable study week",
+"f": "Designing a week that balances study, rest, people and fun"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Healthy habits check-in",
+"f": "Reviewing sleep, breaks and movement and choosing one habit to improve"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Understanding an assignment",
+"f": "Reading instructions carefully, finding key verbs and checking what is really asked"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Planning homework sessions",
+"f": "Ordering tasks by deadline, difficulty and energy for a smooth session"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Solving problems step by step",
+"f": "A simple approach: understand, plan, try, check, then reflect on the method"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "When you get stuck",
+"f": "Strategies for moving forward: re-reading, examples, simpler versions and asking for help"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Asking teachers for help",
+"f": "How to prepare a clear question and use office hours or messages effectively"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Checking your own work",
+"f": "Proofreading and double-checking answers before handing anything in"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Using feedback",
+"f": "Reading comments on returned work and turning them into concrete next steps"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Avoiding last-minute rushes",
+"f": "Starting assignments early with a first small step on the day they are set"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Keeping materials organised",
+"f": "Folders, file names and a simple system for notes, handouts and digital files"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Homework system recap",
+"f": "Putting assignment reading, planning, checking and feedback into one routine"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "What exams really test",
+"f": "Understanding the difference between recognising, recalling, applying and analysing"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Your exam countdown plan",
+"f": "Building a plan that starts weeks before the test, not the night before"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Making a revision timetable",
+"f": "Spreading subjects across days with spaced reviews and practice tests"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Condensing your notes",
+"f": "Turning a whole course into a few summary pages and concept maps"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Practising under exam conditions",
+"f": "Timing yourself and working without notes to simulate the real test"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "The day before the exam",
+"f": "A light review, packing what you need and protecting a good night's sleep"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "The morning of the exam",
+"f": "A calm routine with breakfast, arriving early and avoiding last-minute panic"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Reading the exam paper",
+"f": "Scanning all questions first, planning time and starting with confident answers"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "After the exam",
+"f": "Reflecting on what worked, letting go of worry and learning for next time"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Beginner stage celebration",
+"f": "Reviewing the first 120 days and choosing your strongest study tools so far"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Welcome to the intermediate stage",
+"f": "What changes now: deeper techniques, subject strategies and more independence"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Mnemonics that work",
+"f": "Acronyms, rhymes and phrases that help remember lists and sequences"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "The memory palace",
+"f": "Placing items along a familiar route in your mind to recall them in order"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Building your first memory palace",
+"f": "Choosing a route at home and storing ten facts along it"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "The link and story method",
+"f": "Connecting items in a vivid, funny story so one leads to the next"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Number memory tricks",
+"f": "Turning numbers into shapes, words or images to remember dates and figures"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Remembering names and terms",
+"f": "Linking new words to sounds, images and meanings you already know"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Visualisation for learning",
+"f": "Creating clear mental pictures of processes, places and ideas"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "When mnemonics are not enough",
+"f": "Knowing when to switch from memory tricks to deep understanding"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Memory techniques lab",
+"f": "Testing three memory methods on the same list and comparing your results"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Concept maps",
+"f": "Linking ideas with labelled arrows to show how a whole topic fits together"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Analogies and metaphors",
+"f": "Explaining new ideas by comparing them to familiar things"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Asking why five times",
+"f": "Digging into the causes behind a fact to reach real understanding"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Seeing the big picture",
+"f": "Placing each lesson inside the whole course so details make sense"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Advanced techniques recap",
+"f": "Choosing the right method for facts, processes and ideas"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Studying maths",
+"f": "Working through problems, understanding methods and not just memorising formulas"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Learning from worked examples",
+"f": "Studying solved problems step by step, then hiding the solution and trying alone"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Studying science subjects",
+"f": "Linking theory, experiments and diagrams to understand how things work"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Studying history",
+"f": "Using timelines, causes and consequences to remember events with meaning"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Studying literature",
+"f": "Reading closely, tracking themes and supporting ideas with quotes"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Learning a language as a subject",
+"f": "Daily vocabulary, grammar in context and lots of listening and speaking"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Studying geography",
+"f": "Combining maps, data and case studies to understand places and patterns"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Studying economics and social sciences",
+"f": "Learning key models, terms and real-world examples side by side"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Studying art and music theory",
+"f": "Combining practice, observation and theory for creative subjects"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Studying computer science",
+"f": "Learning by building small programs, debugging and explaining code"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Learning with formulas",
+"f": "Understanding where a formula comes from so you can rebuild it under pressure"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Practical and lab skills",
+"f": "Preparing, observing carefully and writing clear records of practical work"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Switching between subjects",
+"f": "Planning subject order in a day to keep energy and attention high"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Your subject strategy map",
+"f": "Writing one key strategy for each subject you are currently studying"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Midpoint subject review",
+"f": "Reviewing subject strategies and practising one in each course"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "How to start an essay",
+"f": "Understanding the question, brainstorming and forming a clear position"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Building a thesis statement",
+"f": "Writing one sentence that states your main argument clearly"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Outlining before writing",
+"f": "Planning paragraphs and evidence so drafting becomes much easier"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Writing strong paragraphs",
+"f": "Topic sentence, evidence, explanation and link in every paragraph"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Finding good sources",
+"f": "Choosing reliable books, articles and databases for your topic"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Evaluating information",
+"f": "Checking who wrote it, when, why and with what evidence"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Taking research notes",
+"f": "Recording sources and ideas clearly to avoid confusion later"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Citing and referencing",
+"f": "Why citing matters and the basics of common referencing styles"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Paraphrasing honestly",
+"f": "Putting ideas in your own words and giving credit to stay original"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Drafting without perfectionism",
+"f": "Writing a rough first draft quickly and improving it later"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Revising and editing",
+"f": "Looking at structure first, then clarity, then grammar and spelling"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Writing introductions and conclusions",
+"f": "Opening with context and closing with meaning, not just repetition"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Writing reports",
+"f": "Clear sections, headings and data presentation for reports and lab write-ups"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Presentations and speaking",
+"f": "Planning, practising and delivering a clear talk with simple slides"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Writing skills review",
+"f": "Writing a short essay plan and paragraph using everything from this unit"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Types of exam questions",
+"f": "Strategies for multiple choice, short answer, essay and problem questions"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Multiple choice strategies",
+"f": "Reading carefully, eliminating options and avoiding common traps"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Short answer precision",
+"f": "Answering exactly what is asked with key terms and no padding"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Essay exams",
+"f": "Planning quickly, structuring clearly and managing time in timed writing"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Problem-solving exams",
+"f": "Showing your working, checking units and moving on when stuck"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Open-book exams",
+"f": "Preparing an organised index because open-book does not mean no study"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Oral exams",
+"f": "Practising out loud, structuring answers and handling follow-up questions"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Online exams",
+"f": "Preparing your device, connection and space for a smooth online test"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Managing time in exams",
+"f": "Allocating minutes by marks and keeping a time check during the test"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Handling blanks during a test",
+"f": "What to do when your mind goes blank and how to get recall flowing again"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Checking answers at the end",
+"f": "Saving time to review, catch slips and complete missing parts"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Exam nerves",
+"f": "Understanding test anxiety and using preparation and breathing to stay steady"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "Analysing your exam results",
+"f": "Sorting lost marks into knowledge gaps, careless slips and time issues"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Building an exam error log",
+"f": "Keeping a list of mistake types to target in your next revision"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Exam strategy review",
+"f": "Practising one timed mini-exam with all your new strategies"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Studying in groups",
+"f": "When group study works, when it does not and how to set it up well"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Running a study session",
+"f": "Agenda, roles and timing for productive group meetings"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "The protégé effect",
+"f": "Why teaching others is one of the best ways to learn yourself"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Peer quizzing",
+"f": "Taking turns asking questions to practise recall together"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Explaining to a beginner",
+"f": "Simplifying a topic for someone new to it to test your understanding"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Giving and receiving feedback",
+"f": "Kind, specific comments that help everyone improve their work"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Learning across cultures",
+"f": "How study traditions differ around the world and what you can borrow from them"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Studying with friends online",
+"f": "Video calls, shared documents and virtual study rooms done well"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Group projects that work",
+"f": "Dividing tasks fairly, setting deadlines and communicating clearly"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Handling group challenges",
+"f": "Calm, practical ways to deal with uneven effort or different opinions"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Finding a mentor",
+"f": "Learning from someone a few steps ahead of you in your field"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Learning communities",
+"f": "Joining clubs, forums and groups to stay curious and supported"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Debates and discussions",
+"f": "Sharpening understanding by exploring different views respectfully"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Study partner check-in",
+"f": "Reflecting on how studying with others has helped and planning more of it"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Social learning review",
+"f": "Running one short teaching session for a friend on a topic you know"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Choosing digital study tools",
+"f": "Picking a few tools that solve real problems instead of collecting apps"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Digital note systems",
+"f": "Organising notes in folders, tags and links you can search later"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Calendar and task apps",
+"f": "Using digital calendars and task lists to run your study plan"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Focus apps and blockers",
+"f": "Tools that limit distractions and how to use them without relying on them"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Online courses",
+"f": "Getting the most from video lessons with notes, pauses and practice"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Learning from video wisely",
+"f": "Active watching instead of passive viewing, with questions and summaries"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Searching the internet well",
+"f": "Using precise search words and judging results critically"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Using AI tools responsibly",
+"f": "Asking AI to quiz or explain while still doing your own thinking and work"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Spreadsheets for study tracking",
+"f": "Tracking hours, grades and reviews in a simple spreadsheet"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Backups and file safety",
+"f": "Protecting your work with cloud copies and clear version names"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Digital wellbeing",
+"f": "Setting healthy boundaries for screens, notifications and late-night use"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Audio learning",
+"f": "Podcasts and recordings for review on walks or commutes"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Accessibility tools",
+"f": "Text-to-speech, captions and other tools that make learning easier for everyone"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Your digital study toolkit",
+"f": "Choosing your final set of digital tools and removing the rest"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Digital tools review",
+"f": "Running one full study day with your toolkit and noting what helped"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "What critical thinking means",
+"f": "Questioning claims, looking at evidence and reasoning clearly"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Facts, opinions and arguments",
+"f": "Telling the difference and spotting each one in what you read"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Spotting weak arguments",
+"f": "Common reasoning mistakes like overgeneralising and false choices"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Evaluating evidence",
+"f": "Asking how strong, relevant and reliable the support for a claim is"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Thinking about sources and bias",
+"f": "Considering perspective and purpose when reading any material"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Comparing viewpoints",
+"f": "Looking at a topic from several angles before reaching a conclusion"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Building your own argument",
+"f": "Stating a claim, giving reasons and answering possible objections"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Problem-solving frameworks",
+"f": "Defining the problem, generating options and testing solutions"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Creative thinking for study",
+"f": "Brainstorming, mind wandering and new connections to solve problems"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Transfer of learning",
+"f": "Using what you learned in one subject or situation in another"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Questioning assumptions",
+"f": "Spotting what is taken for granted and checking whether it holds"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Socratic questioning",
+"f": "Using a chain of careful questions to explore ideas deeply"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Reflective journaling",
+"f": "Writing regularly about what and how you are learning"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Changing your mind with evidence",
+"f": "Seeing updated views as a strength of a good learner"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Critical thinking review",
+"f": "Analysing one short article using all your critical thinking tools"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Understanding procrastination",
+"f": "Why we delay tasks: feelings, unclear steps and fear of failure"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Mood repair and delay",
+"f": "How putting off work is often about avoiding a bad feeling"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Making tasks less scary",
+"f": "Shrinking the first step until starting feels easy"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Implementation intentions",
+"f": "Planning 'when X happens, I will do Y' to make action automatic"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Temptation bundling",
+"f": "Pairing a task you avoid with something you enjoy"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Perfectionism and studying",
+"f": "Aiming for good progress instead of flawless work that never starts"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Fear of failure",
+"f": "Reframing mistakes and results as information, not judgement"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Comparing yourself with others",
+"f": "Focusing on your own progress instead of other people's results"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Managing workload peaks",
+"f": "Planning ahead for busy weeks with many deadlines at once"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Saying no to protect study time",
+"f": "Balancing friends, family and activities with your learning goals"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Stress as a signal",
+"f": "Using mild pressure as energy and noticing when it becomes too much"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Staying calm under deadlines",
+"f": "Short planning bursts and focus on the next step when time is tight"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Building resilience",
+"f": "Recovering from setbacks and keeping going through difficult periods"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "When to ask for support",
+"f": "Recognising when to talk to a teacher, counsellor or trusted person"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Mindset and stress review",
+"f": "Choosing your top three anti-procrastination tools and using them today"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Planning a whole term",
+"f": "Mapping deadlines, exams and breaks across months in one view"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Monthly study reviews",
+"f": "A short monthly check of goals, habits and results"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Goal setting for the year",
+"f": "Setting a few meaningful learning goals for the next twelve months"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Choosing courses and paths",
+"f": "Thinking about interests, strengths and options when choosing what to study"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Balancing study and work",
+"f": "Strategies for learners with jobs, families or other commitments"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Studying as an adult",
+"f": "Using life experience and clear purpose to learn efficiently at any age"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Keeping notes for the long term",
+"f": "Building a personal knowledge archive you can return to for years"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Long-term revision cycles",
+"f": "Reviewing older courses so important knowledge stays fresh"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Your learning portfolio",
+"f": "Collecting your best work to show progress to yourself and others"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Intermediate stage celebration",
+"f": "Reviewing days 121 to 250 and planning your advanced journey"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Welcome to the advanced stage",
+"f": "Becoming an independent learner who designs, tests and improves your own methods"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "What is metacognition",
+"f": "Thinking about your own thinking: planning, monitoring and evaluating how you learn"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Predicting your performance",
+"f": "Guessing your score before a quiz and comparing it to the result to calibrate"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Monitoring understanding while studying",
+"f": "Pausing regularly to check whether you could explain what you just read"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Choosing the right strategy",
+"f": "Matching techniques to goals: memorise, understand, apply or create"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Desirable difficulties",
+"f": "Why some struggle during practice makes learning stronger and longer lasting"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Generation effect",
+"f": "Trying to answer before you are taught and why guessing first helps memory"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Varied practice",
+"f": "Practising skills in different contexts so they transfer to new situations"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Learning plateaus",
+"f": "Recognising when progress stalls and changing methods to break through"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Experimenting on yourself",
+"f": "Running simple study experiments and keeping data on what works for you"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "The expert learner mindset",
+"f": "Habits of people who keep learning effectively throughout life"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Fluency versus mastery",
+"f": "Telling the difference between feeling comfortable and truly being able to perform"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Testing your methods",
+"f": "Comparing two techniques over two weeks to choose evidence over habit"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Updating your study system",
+"f": "Removing what no longer works and adding better tools"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Metacognition review",
+"f": "Writing a one-page guide to how you learn best, based on your own data"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Reading academic papers",
+"f": "Understanding the parts of a research article and the order to read them in"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Reading abstracts efficiently",
+"f": "Deciding quickly whether a paper is relevant to your question"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Understanding research methods",
+"f": "The basics of experiments, surveys and case studies in plain language"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Basic statistics for readers",
+"f": "Averages, samples and correlation versus causation when reading studies"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Literature reviews",
+"f": "Summarising and connecting what many sources say about one topic"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Building a research question",
+"f": "Narrowing a broad interest into a focused, answerable question"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Organising sources",
+"f": "Using reference managers or simple tables to keep research under control"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Synthesising ideas",
+"f": "Combining several sources into new understanding instead of a list of summaries"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Writing longer projects",
+"f": "Planning chapters, milestones and drafts for a big research or thesis project"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Academic writing style",
+"f": "Clear, precise, formal writing without unnecessary complexity"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Presenting research",
+"f": "Turning findings into a clear poster, talk or short report"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Handling feedback on big projects",
+"f": "Using supervisor or peer comments to improve without losing motivation"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Research ethics basics",
+"f": "Honesty, credit, consent and respect when doing research"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Staying motivated on long projects",
+"f": "Breaking months of work into weekly goals and visible progress"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Research skills review",
+"f": "Planning a mini research project from question to sources"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Preparing for high-stakes exams",
+"f": "Planning months ahead for entrance, final or certification exams"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Mapping the exam syllabus",
+"f": "Breaking the official syllabus into topics and rating your confidence"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Diagnostic tests",
+"f": "Taking a first practice exam to find strengths and gaps before revising"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Long revision cycles",
+"f": "Rotating subjects over weeks with spaced reviews and mixed practice"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Full mock exams",
+"f": "Simulating the complete exam day, timing and breaks included"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Analysing mock results deeply",
+"f": "Tracking patterns across several mocks to guide your next weeks"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Strategy for weak topics",
+"f": "Turning your weakest areas into acceptable or strong ones step by step"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Maintaining strong topics",
+"f": "Light, regular review to keep your best subjects sharp"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Exam stamina",
+"f": "Building the focus and energy to perform well through long exams"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Peak week planning",
+"f": "Tapering study in the final week to arrive rested and confident"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Standardised test strategies",
+"f": "Understanding scoring, question patterns and pacing for big tests"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Professional certifications",
+"f": "Studying for career exams while working, with focused, efficient plans"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Handling pressure and expectations",
+"f": "Keeping perspective when others are watching your results"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Results day and next steps",
+"f": "Responding calmly to any result and planning what comes next"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "High-stakes review",
+"f": "Writing your personal playbook for the next big exam you will take"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Self-directed learning",
+"f": "Choosing what to learn, finding resources and guiding yourself without a teacher"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Designing your own curriculum",
+"f": "Planning a learning path for a new subject from basics to advanced"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Finding quality resources",
+"f": "Comparing books, courses and experts to choose the best materials"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Learning from books deeply",
+"f": "Reading nonfiction actively with notes, questions and summaries"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Online learning platforms",
+"f": "Getting real value from big open courses and finishing what you start"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Learning projects",
+"f": "Learning by building something real, from a website to a garden plan"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Just-in-time learning",
+"f": "Learning exactly what you need for a task right when you need it"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Learning in public",
+"f": "Sharing progress and notes to stay accountable and get feedback"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Tracking self-study progress",
+"f": "Using milestones and small tests when no one grades your work"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Combining courses and practice",
+"f": "Balancing watching lessons with doing real exercises"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Learning from failure in projects",
+"f": "Reviewing what went wrong and turning it into a better plan"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Curiosity as fuel",
+"f": "Following questions that excite you to keep self-study alive"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Building a learning habit stack",
+"f": "Attaching daily learning to existing routines like coffee or commutes"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Choosing what not to learn",
+"f": "Focusing your energy by deciding which topics can wait"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Self-directed learning review",
+"f": "Drafting a 30-day plan to learn something new on your own"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Deliberate practice",
+"f": "Focused practice on specific weaknesses with feedback, beyond comfortable repetition"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Breaking a skill into parts",
+"f": "Splitting a complex skill into sub-skills you can practise one by one"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Feedback loops",
+"f": "Getting fast, accurate feedback from teachers, tests, recordings or tools"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "The first 20 hours",
+"f": "Getting good enough at a new skill quickly with focused early practice"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Learning languages efficiently",
+"f": "Combining input, speaking, spaced vocabulary and real conversations"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Learning practical skills",
+"f": "Watching, copying, practising and refining hands-on skills"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Learning to write better",
+"f": "Reading great writing, imitating structure and getting regular feedback"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Learning to learn faster",
+"f": "Using prior knowledge, good questions and smart tools to speed up learning"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Speed reading claims",
+"f": "What fast reading can and cannot do, and why understanding has limits"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Skimming and scanning",
+"f": "Reading selectively to find information quickly when depth is not needed"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Learning under time limits",
+"f": "Planning crash learning for a short deadline without burning out"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Mixing theory and practice",
+"f": "Moving between ideas and doing so each makes the other clearer"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Measuring skill growth",
+"f": "Recording before-and-after performance to see real improvement"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Avoiding the comfort zone trap",
+"f": "Staying at the edge of your ability where learning happens"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Skill learning review",
+"f": "Applying deliberate practice to one skill for a focused week"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Lifelong learning",
+"f": "Why learning beyond school keeps life interesting and opens new opportunities"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Learning at different life stages",
+"f": "Adapting your methods to changing time, energy and goals"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Learning through travel and culture",
+"f": "Using new places and people as a classroom for language and ideas"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Learning from conversations",
+"f": "Asking good questions and listening closely to learn from anyone"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Teaching as mastery",
+"f": "Planning and giving a mini lesson to deepen your own knowledge"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Tutoring others",
+"f": "Helping someone else learn with patience, questions and encouragement"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Mentoring younger learners",
+"f": "Sharing study strategies that worked for you"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Creating study guides for others",
+"f": "Writing clear guides that help classmates or colleagues"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Learning communities online",
+"f": "Contributing to forums and groups by answering questions well"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Knowledge sharing at work",
+"f": "Spreading what you learn to teammates through short talks or notes"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Learning from mistakes of others",
+"f": "Using stories and case studies to avoid common pitfalls"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Building a personal library",
+"f": "Collecting books and resources that support your long-term growth"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Learning rituals for life",
+"f": "Weekly reading time, monthly courses and yearly learning goals"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Connecting ideas across subjects",
+"f": "Finding links between fields to spark new insights and deeper understanding"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Linked notes for lifelong use",
+"f": "Building a web of small, connected notes that grows with every topic you learn"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Staying current in your field",
+"f": "Following new ideas through journals, newsletters and experts without overload"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Learning and creativity",
+"f": "How a wide base of knowledge feeds original ideas and creative work"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Keeping old skills alive",
+"f": "Light refresher practice so languages and skills you learned do not fade away"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Reflection on your growth",
+"f": "Looking back at how your learning has changed this year"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Lifelong learning review",
+"f": "Writing your personal learning philosophy in a few sentences"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Your study system blueprint",
+"f": "Designing a complete system: goals, planning, techniques and review"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Choosing your core techniques",
+"f": "Selecting the five methods you will use most and why"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Your ideal study week",
+"f": "Creating a template week that fits your real life and goals"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Your exam season playbook",
+"f": "Writing step-by-step plans for the weeks before any exam"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Your note and knowledge system",
+"f": "Finalising how you capture, organise and revisit information"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Your focus protocol",
+"f": "Writing your personal rules for deep work and avoiding distractions"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Your motivation toolkit",
+"f": "Listing your reasons, rewards and comeback strategies"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Your health and study balance",
+"f": "Setting non-negotiables for sleep, movement and rest"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Stress-testing your system",
+"f": "Running your system through a busy week and fixing weak points"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Coaching a friend with your system",
+"f": "Sharing your blueprint and adapting it for someone else"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Learning a mini topic from zero",
+"f": "Using your full system to learn one completely new small topic"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Presenting what you learned",
+"f": "Teaching your mini topic in a short summary or talk"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Reflecting on the mini project",
+"f": "Evaluating what worked and what you would change next time"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Refining your blueprint",
+"f": "Updating your system with lessons from the mini project"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Sharing your learning story",
+"f": "Describing your journey and tips to inspire another learner"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Planning your next learning goal",
+"f": "Choosing what you want to learn next after this path"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Setting up future reviews",
+"f": "Scheduling check-ins to keep your study system alive"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Advanced stage review",
+"f": "Revisiting metacognition, research, exams and deliberate practice"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Your year in learning",
+"f": "Looking back at your goals, wins and changes over 365 days"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Final reflections and celebration",
+"f": "Celebrating your growth as a learner and keeping curiosity alive"
+}
+]
+}

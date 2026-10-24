@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 211,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Italian idioms: food",
+     "g": "Learn food idioms: in bocca al lupo, essere come il prezzemolo, non tutte le ciambelle riescono col buco.",
+     "p": [
+      "In bocca al lupo! = good luck! (before an exam or interview). The traditional reply is crepi!",
+      "Essere come il prezzemolo = to turn up everywhere, like parsley in every dish: Marco è come il prezzemolo.",
+      "Non tutte le ciambelle riescono col buco = not everything turns out perfectly. Also: è una buona forchetta (loves eating)."
+     ],
+     "q": "Do you have food idioms in your language? Which Italian one do you like most?",
+     "c": "Use each idiom in a mini situation: an exam, a friend who is at every party, a cake that went wrong."
+    },
+    "de": {
+     "t": "Italienische Redewendungen: Essen",
+     "g": "Du lernst Redewendungen rund ums Essen: in bocca al lupo, essere come il prezzemolo, non tutte le ciambelle riescono col buco.",
+     "p": [
+      "In bocca al lupo! = viel Glück! (vor Prüfung oder Vorstellungsgespräch). Die übliche Antwort ist crepi!",
+      "Essere come il prezzemolo = überall auftauchen, wie Petersilie in jedem Gericht: Marco è come il prezzemolo.",
+      "Non tutte le ciambelle riescono col buco = nicht alles gelingt perfekt. Auch: è una buona forchetta (isst gern)."
+     ],
+     "q": "Gibt es in deiner Sprache Redewendungen mit Essen? Welche italienische gefällt dir am besten?",
+     "c": "Benutze jede Wendung in einer Minisituation: eine Prüfung, ein Freund auf jeder Party, ein misslungener Kuchen."
+    },
+    "es": {
+     "t": "Modismos italianos: comida",
+     "g": "Aprender modismos de comida: in bocca al lupo, essere come il prezzemolo, non tutte le ciambelle riescono col buco.",
+     "p": [
+      "In bocca al lupo! = ¡mucha suerte! (antes de un examen o entrevista). La respuesta tradicional es crepi!",
+      "Essere come il prezzemolo = estar en todas partes, como el perejil en todos los platos: Marco è come il prezzemolo.",
+      "Non tutte le ciambelle riescono col buco = no todo sale perfecto. También: è una buona forchetta (es de buen comer)."
+     ],
+     "q": "¿Tienes modismos de comida en tu idioma? ¿Cuál de los italianos te gusta más?",
+     "c": "Usa cada modismo en una minisituación: un examen, un amigo que va a todas las fiestas, una tarta que salió mal."
+    },
+    "fr": {
+     "t": "Expressions italiennes : la cuisine",
+     "g": "Apprendre des expressions culinaires : in bocca al lupo, essere come il prezzemolo, non tutte le ciambelle riescono col buco.",
+     "p": [
+      "In bocca al lupo ! = bonne chance ! (avant un examen ou un entretien). La réponse traditionnelle est crepi !",
+      "Essere come il prezzemolo = être partout, comme le persil dans chaque plat : Marco è come il prezzemolo.",
+      "Non tutte le ciambelle riescono col buco = tout ne réussit pas parfaitement. Aussi : è una buona forchetta (bon vivant)."
+     ],
+     "q": "As-tu des expressions culinaires dans ta langue ? Laquelle des italiennes préfères-tu ?",
+     "c": "Utilise chaque expression dans une mini-situation : un examen, un ami présent à chaque fête, un gâteau raté."
+    },
+    "it": {
+     "t": "Modi di dire: il cibo",
+     "g": "Imparare modi di dire sul cibo: in bocca al lupo, essere come il prezzemolo, non tutte le ciambelle riescono col buco.",
+     "p": [
+      "In bocca al lupo! si dice per augurare buona fortuna prima di un esame o di un colloquio. Si risponde crepi!",
+      "Essere come il prezzemolo = trovarsi dappertutto, come il prezzemolo nei piatti: Marco è come il prezzemolo.",
+      "Non tutte le ciambelle riescono col buco = non tutto riesce perfetto. Anche: è una buona forchetta (mangia volentieri)."
+     ],
+     "q": "Nella tua lingua ci sono modi di dire sul cibo? Quale di quelli italiani ti piace di più?",
+     "c": "Usa ogni modo di dire in una mini situazione: un esame, un amico presente a ogni festa, una torta venuta male."
+    },
+    "pt": {
+     "t": "Expressões italianas: comida",
+     "g": "Aprender expressões de comida: in bocca al lupo, essere come il prezzemolo, non tutte le ciambelle riescono col buco.",
+     "p": [
+      "In bocca al lupo! = boa sorte! (antes de um exame ou entrevista). A resposta tradicional é crepi!",
+      "Essere come il prezzemolo = estar em todo o lado, como a salsa em todos os pratos: Marco è come il prezzemolo.",
+      "Non tutte le ciambelle riescono col buco = nem tudo sai perfeito. Também: è una buona forchetta (é bom garfo)."
+     ],
+     "q": "Tens expressões de comida na tua língua? De qual das italianas gostas mais?",
+     "c": "Usa cada expressão numa minissituação: um exame, um amigo que está em todas as festas, um bolo que correu mal."
+    },
+    "pt_BR": {
+     "t": "Expressões italianas: comida",
+     "g": "Aprender expressões de comida: in bocca al lupo, essere come il prezzemolo, non tutte le ciambelle riescono col buco.",
+     "p": [
+      "In bocca al lupo! = boa sorte! (antes de uma prova ou entrevista). A resposta tradicional é crepi!",
+      "Essere come il prezzemolo = estar em todo lugar, como a salsinha em todos os pratos: Marco è come il prezzemolo.",
+      "Non tutte le ciambelle riescono col buco = nem tudo sai perfeito. Também: è una buona forchetta (é bom de garfo)."
+     ],
+     "q": "Você tem expressões de comida no seu idioma? De qual das italianas você gosta mais?",
+     "c": "Use cada expressão numa minissituação: uma prova, um amigo que está em todas as festas, um bolo que deu errado."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "in bocca al lupo",
+      "ex": "Domani hai l'esame? In bocca al lupo!"
+     },
+     {
+      "w": "crepi",
+      "ex": "Grazie, crepi! Ti racconto tutto dopo."
+     },
+     {
+      "w": "essere come il prezzemolo",
+      "ex": "Giulia è come il prezzemolo, la trovi a ogni festa."
+     },
+     {
+      "w": "una buona forchetta",
+      "ex": "Mio zio è una buona forchetta, non rifiuta mai un piatto."
+     },
+     {
+      "w": "non tutte le ciambelle...",
+      "ex": "La torta è venuta storta: non tutte le ciambelle riescono col buco."
+     },
+     {
+      "w": "liscio come l'olio",
+      "ex": "L'esame è andato liscio come l'olio."
+     }
+    ],
+    "gram": "Modi di dire: hanno un significato figurato, non letterale. Si usano spesso con essere: essere come il prezzemolo."
+   }
+  },
+  {
+   "d": 212,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Italian idioms: animals",
+     "g": "Learn animal idioms: avere una fame da lupi, essere un pesce fuor d'acqua, essere una lumaca.",
+     "p": [
+      "Avere una fame da lupi = to be starving (hungry as a wolf): dopo la camminata avevo una fame da lupi.",
+      "Essere un pesce fuor d'acqua = to feel out of place: alla festa ero un pesce fuor d'acqua.",
+      "Essere una lumaca = to be very slow (a snail). Also: dormire come un ghiro (sleep like a log), essere un orso (unsociable)."
+     ],
+     "q": "When did you last feel like un pesce fuor d'acqua? Tell me what happened.",
+     "c": "Describe three people you know (kindly!) with animal idioms: una lumaca, un ghiro, un orso..."
+    },
+    "de": {
+     "t": "Italienische Redewendungen: Tiere",
+     "g": "Du lernst Tier-Redewendungen: avere una fame da lupi, essere un pesce fuor d'acqua, essere una lumaca.",
+     "p": [
+      "Avere una fame da lupi = Bärenhunger haben (Wolfshunger): dopo la camminata avevo una fame da lupi.",
+      "Essere un pesce fuor d'acqua = sich fehl am Platz fühlen: alla festa ero un pesce fuor d'acqua.",
+      "Essere una lumaca = sehr langsam sein (Schnecke). Auch: dormire come un ghiro (wie ein Murmeltier), essere un orso."
+     ],
+     "q": "Wann hast du dich zuletzt wie un pesce fuor d'acqua gefühlt? Erzähl, was passiert ist.",
+     "c": "Beschreib drei Bekannte (freundlich!) mit Tier-Wendungen: una lumaca, un ghiro, un orso..."
+    },
+    "es": {
+     "t": "Modismos italianos: animales",
+     "g": "Aprender modismos de animales: avere una fame da lupi, essere un pesce fuor d'acqua, essere una lumaca.",
+     "p": [
+      "Avere una fame da lupi = tener un hambre de lobo: dopo la camminata avevo una fame da lupi.",
+      "Essere un pesce fuor d'acqua = sentirse como pez fuera del agua: alla festa ero un pesce fuor d'acqua.",
+      "Essere una lumaca = ser muy lento (un caracol). También: dormire come un ghiro (dormir como un lirón), essere un orso."
+     ],
+     "q": "¿Cuándo te sentiste por última vez como un pesce fuor d'acqua? Cuéntame qué pasó.",
+     "c": "Describe a tres conocidos (¡con cariño!) con modismos de animales: una lumaca, un ghiro, un orso..."
+    },
+    "fr": {
+     "t": "Expressions italiennes : les animaux",
+     "g": "Apprendre des expressions animales : avere una fame da lupi, essere un pesce fuor d'acqua, essere una lumaca.",
+     "p": [
+      "Avere una fame da lupi = avoir une faim de loup : dopo la camminata avevo una fame da lupi.",
+      "Essere un pesce fuor d'acqua = être comme un poisson hors de l'eau : alla festa ero un pesce fuor d'acqua.",
+      "Essere una lumaca = être très lent (un escargot). Aussi : dormire come un ghiro (comme un loir), essere un orso (un ours)."
+     ],
+     "q": "Quand t'es-tu senti pour la dernière fois comme un pesce fuor d'acqua ? Raconte-moi.",
+     "c": "Décris trois personnes que tu connais (gentiment !) avec des expressions animales : una lumaca, un ghiro, un orso..."
+    },
+    "it": {
+     "t": "Modi di dire: gli animali",
+     "g": "Imparare modi di dire con gli animali: avere una fame da lupi, essere un pesce fuor d'acqua, essere una lumaca.",
+     "p": [
+      "Avere una fame da lupi = avere moltissima fame: dopo la camminata avevo una fame da lupi.",
+      "Essere un pesce fuor d'acqua = sentirsi a disagio, fuori posto: alla festa ero un pesce fuor d'acqua.",
+      "Essere una lumaca = essere lentissimo. Anche: dormire come un ghiro, essere un orso (poco socievole)."
+     ],
+     "q": "Quando ti sei sentito un pesce fuor d'acqua l'ultima volta? Raccontami che cosa è successo.",
+     "c": "Descrivi tre persone che conosci (con affetto!) usando modi di dire: una lumaca, un ghiro, un orso..."
+    },
+    "pt": {
+     "t": "Expressões italianas: animais",
+     "g": "Aprender expressões com animais: avere una fame da lupi, essere un pesce fuor d'acqua, essere una lumaca.",
+     "p": [
+      "Avere una fame da lupi = ter uma fome de lobo: dopo la camminata avevo una fame da lupi.",
+      "Essere un pesce fuor d'acqua = sentir-se como peixe fora de água: alla festa ero un pesce fuor d'acqua.",
+      "Essere una lumaca = ser muito lento (um caracol). Também: dormire come un ghiro (dormir como uma pedra), essere un orso."
+     ],
+     "q": "Quando te sentiste pela última vez como un pesce fuor d'acqua? Conta-me o que aconteceu.",
+     "c": "Descreve três conhecidos (com carinho!) com expressões de animais: una lumaca, un ghiro, un orso..."
+    },
+    "pt_BR": {
+     "t": "Expressões italianas: animais",
+     "g": "Aprender expressões com animais: avere una fame da lupi, essere un pesce fuor d'acqua, essere una lumaca.",
+     "p": [
+      "Avere una fame da lupi = estar morrendo de fome, uma fome de leão: dopo la camminata avevo una fame da lupi.",
+      "Essere un pesce fuor d'acqua = sentir-se um peixe fora d'água: alla festa ero un pesce fuor d'acqua.",
+      "Essere una lumaca = ser muito lento (uma lesma). Também: dormire come un ghiro (dormir como pedra), essere un orso."
+     ],
+     "q": "Quando você se sentiu pela última vez como un pesce fuor d'acqua? Conte o que aconteceu.",
+     "c": "Descreva três conhecidos (com carinho!) com expressões de animais: una lumaca, un ghiro, un orso..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "una fame da lupi",
+      "ex": "Dopo la gita in montagna avevo una fame da lupi."
+     },
+     {
+      "w": "un pesce fuor d'acqua",
+      "ex": "Il primo giorno di lavoro mi sentivo un pesce fuor d'acqua."
+     },
+     {
+      "w": "essere una lumaca",
+      "ex": "Dai, sbrigati, sei una lumaca!"
+     },
+     {
+      "w": "dormire come un ghiro",
+      "ex": "Dopo il viaggio ho dormito come un ghiro."
+     },
+     {
+      "w": "essere un orso",
+      "ex": "Mio fratello è un po' orso, non ama le feste."
+     },
+     {
+      "w": "in bocca al lupo",
+      "ex": "In bocca al lupo per il colloquio!"
+     }
+    ],
+    "gram": "Modi di dire con gli animali: spesso con avere (una fame da lupi), essere (una lumaca) o un paragone con come."
+   }
+  },
+  {
+   "d": 213,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Italian idioms: body",
+     "g": "Learn body idioms: avere le mani in pasta, costare un occhio della testa, a occhio e croce.",
+     "p": [
+      "Costare un occhio della testa = to cost an arm and a leg: quella borsa costa un occhio della testa.",
+      "A occhio e croce = roughly, at a guess: a occhio e croce ci vogliono due ore.",
+      "Avere le mani in pasta = to be involved, to have a hand in things. Also: in gamba (capable, smart), a bocca aperta (amazed)."
+     ],
+     "q": "Have you ever bought something that cost un occhio della testa? Was it worth it?",
+     "c": "Answer three questions with body idioms: How far is your work (a occhio e croce)? Who is in gamba? What is very expensive?"
+    },
+    "de": {
+     "t": "Italienische Redewendungen: Körper",
+     "g": "Du lernst Körper-Redewendungen: avere le mani in pasta, costare un occhio della testa, a occhio e croce.",
+     "p": [
+      "Costare un occhio della testa = ein Vermögen kosten: quella borsa costa un occhio della testa.",
+      "A occhio e croce = grob geschätzt, über den Daumen: a occhio e croce ci vogliono due ore.",
+      "Avere le mani in pasta = die Finger im Spiel haben. Auch: in gamba (fähig, tüchtig), a bocca aperta (staunend)."
+     ],
+     "q": "Hast du schon mal etwas gekauft, das un occhio della testa gekostet hat? Hat es sich gelohnt?",
+     "c": "Beantworte drei Fragen mit Körper-Wendungen: Wie weit ist deine Arbeit (a occhio e croce)? Wer ist in gamba? Was ist teuer?"
+    },
+    "es": {
+     "t": "Modismos italianos: el cuerpo",
+     "g": "Aprender modismos del cuerpo: avere le mani in pasta, costare un occhio della testa, a occhio e croce.",
+     "p": [
+      "Costare un occhio della testa = costar un ojo de la cara: quella borsa costa un occhio della testa.",
+      "A occhio e croce = a ojo, más o menos: a occhio e croce ci vogliono due ore.",
+      "Avere le mani in pasta = estar metido en el asunto. También: in gamba (capaz, espabilado), a bocca aperta (boquiabierto)."
+     ],
+     "q": "¿Alguna vez compraste algo que costó un occhio della testa? ¿Valió la pena?",
+     "c": "Responde tres preguntas con modismos: ¿a qué distancia está tu trabajo (a occhio e croce)? ¿Quién es in gamba? ¿Qué es carísimo?"
+    },
+    "fr": {
+     "t": "Expressions italiennes : le corps",
+     "g": "Apprendre des expressions du corps : avere le mani in pasta, costare un occhio della testa, a occhio e croce.",
+     "p": [
+      "Costare un occhio della testa = coûter les yeux de la tête : quella borsa costa un occhio della testa.",
+      "A occhio e croce = à vue de nez, à peu près : a occhio e croce ci vogliono due ore.",
+      "Avere le mani in pasta = avoir la main dans l'affaire. Aussi : in gamba (doué, capable), a bocca aperta (bouche bée)."
+     ],
+     "q": "As-tu déjà acheté quelque chose qui coûtait un occhio della testa ? Ça en valait la peine ?",
+     "c": "Réponds à trois questions avec ces expressions : la distance de ton travail (a occhio e croce), qui est in gamba, ce qui est très cher."
+    },
+    "it": {
+     "t": "Modi di dire: il corpo",
+     "g": "Imparare modi di dire sul corpo: avere le mani in pasta, costare un occhio della testa, a occhio e croce.",
+     "p": [
+      "Costare un occhio della testa = costare moltissimo: quella borsa costa un occhio della testa.",
+      "A occhio e croce = più o meno, approssimativamente: a occhio e croce ci vogliono due ore.",
+      "Avere le mani in pasta = essere coinvolto in qualcosa. Anche: essere in gamba (bravo, capace), restare a bocca aperta."
+     ],
+     "q": "Hai mai comprato qualcosa che costava un occhio della testa? Ne valeva la pena?",
+     "c": "Rispondi a tre domande con questi modi di dire: quanto dista il lavoro (a occhio e croce)? Chi è in gamba? Che cosa costa tanto?"
+    },
+    "pt": {
+     "t": "Expressões italianas: o corpo",
+     "g": "Aprender expressões do corpo: avere le mani in pasta, costare un occhio della testa, a occhio e croce.",
+     "p": [
+      "Costare un occhio della testa = custar os olhos da cara: quella borsa costa un occhio della testa.",
+      "A occhio e croce = a olho, mais ou menos: a occhio e croce ci vogliono due ore.",
+      "Avere le mani in pasta = estar metido no assunto. Também: in gamba (capaz, despachado), a bocca aperta (boquiaberto)."
+     ],
+     "q": "Já compraste alguma coisa que custou un occhio della testa? Valeu a pena?",
+     "c": "Responde a três perguntas com estas expressões: a distância do teu trabalho (a occhio e croce), quem é in gamba, o que é caríssimo."
+    },
+    "pt_BR": {
+     "t": "Expressões italianas: o corpo",
+     "g": "Aprender expressões do corpo: avere le mani in pasta, costare un occhio della testa, a occhio e croce.",
+     "p": [
+      "Costare un occhio della testa = custar os olhos da cara: quella borsa costa un occhio della testa.",
+      "A occhio e croce = a olho, mais ou menos: a occhio e croce ci vogliono due ore.",
+      "Avere le mani in pasta = estar envolvido no assunto. Também: in gamba (capaz, esperto), a bocca aperta (boquiaberto)."
+     ],
+     "q": "Você já comprou algo que custou un occhio della testa? Valeu a pena?",
+     "c": "Responda três perguntas com essas expressões: a distância do seu trabalho (a occhio e croce), quem é in gamba, o que é caríssimo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un occhio della testa",
+      "ex": "Quell'albergo costa un occhio della testa."
+     },
+     {
+      "w": "a occhio e croce",
+      "ex": "A occhio e croce saranno cinquanta persone."
+     },
+     {
+      "w": "avere le mani in pasta",
+      "ex": "Lui ha le mani in pasta in tutti i progetti del quartiere."
+     },
+     {
+      "w": "essere in gamba",
+      "ex": "La nuova collega è davvero in gamba."
+     },
+     {
+      "w": "a bocca aperta",
+      "ex": "Davanti al Colosseo sono rimasto a bocca aperta."
+     },
+     {
+      "w": "a portata di mano",
+      "ex": "Tieni sempre il passaporto a portata di mano."
+     }
+    ],
+    "gram": "Modi di dire con parti del corpo: significato figurato. Costare un occhio della testa, essere in gamba, a occhio e croce."
+   }
+  },
+  {
+   "d": 214,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Common sayings: proverbi",
+     "g": "Learn famous proverbs: chi va piano va sano e va lontano, l'abito non fa il monaco.",
+     "p": [
+      "Chi va piano va sano e va lontano = slow and steady wins the race. Perfect for language learners!",
+      "L'abito non fa il monaco = don't judge by appearances (the habit does not make the monk).",
+      "More: meglio tardi che mai (better late than never); tra il dire e il fare c'è di mezzo il mare (easier said than done)."
+     ],
+     "q": "Which Italian proverb fits your life best right now, and why?",
+     "c": "Translate one proverb from your language into Italian and explain when people use it."
+    },
+    "de": {
+     "t": "Bekannte Sprichwörter: proverbi",
+     "g": "Du lernst berühmte Sprichwörter: chi va piano va sano e va lontano, l'abito non fa il monaco.",
+     "p": [
+      "Chi va piano va sano e va lontano = langsam, aber sicher kommt man ans Ziel. Perfekt fürs Sprachenlernen!",
+      "L'abito non fa il monaco = man soll nicht nach dem Äußeren urteilen (die Kutte macht nicht den Mönch).",
+      "Mehr: meglio tardi che mai (besser spät als nie); tra il dire e il fare c'è di mezzo il mare (leichter gesagt als getan)."
+     ],
+     "q": "Welches italienische Sprichwort passt gerade am besten zu deinem Leben, und warum?",
+     "c": "Übersetze ein Sprichwort aus deiner Sprache ins Italienische und erkläre, wann man es benutzt."
+    },
+    "es": {
+     "t": "Refranes comunes: proverbi",
+     "g": "Aprender refranes famosos: chi va piano va sano e va lontano, l'abito non fa il monaco.",
+     "p": [
+      "Chi va piano va sano e va lontano = despacio se llega lejos. ¡Perfecto para quien aprende idiomas!",
+      "L'abito non fa il monaco = el hábito no hace al monje: no juzgues por las apariencias.",
+      "Más: meglio tardi che mai (más vale tarde que nunca); tra il dire e il fare c'è di mezzo il mare (del dicho al hecho hay mucho trecho)."
+     ],
+     "q": "¿Qué refrán italiano encaja mejor con tu vida ahora mismo y por qué?",
+     "c": "Traduce un refrán de tu idioma al italiano y explica cuándo se usa."
+    },
+    "fr": {
+     "t": "Proverbes courants : proverbi",
+     "g": "Apprendre des proverbes célèbres : chi va piano va sano e va lontano, l'abito non fa il monaco.",
+     "p": [
+      "Chi va piano va sano e va lontano = qui va doucement va sûrement. Parfait pour apprendre une langue !",
+      "L'abito non fa il monaco = l'habit ne fait pas le moine : ne juge pas sur les apparences.",
+      "Encore : meglio tardi che mai (mieux vaut tard que jamais) ; tra il dire e il fare c'è di mezzo il mare (plus facile à dire qu'à faire)."
+     ],
+     "q": "Quel proverbe italien correspond le mieux à ta vie en ce moment, et pourquoi ?",
+     "c": "Traduis un proverbe de ta langue en italien et explique quand on l'utilise."
+    },
+    "it": {
+     "t": "I proverbi più comuni",
+     "g": "Imparare proverbi famosi: chi va piano va sano e va lontano, l'abito non fa il monaco.",
+     "p": [
+      "Chi va piano va sano e va lontano: con calma e costanza si arriva lontano. Perfetto per chi studia le lingue!",
+      "L'abito non fa il monaco: non bisogna giudicare le persone dall'aspetto.",
+      "Altri: meglio tardi che mai; tra il dire e il fare c'è di mezzo il mare (dire è facile, fare è difficile)."
+     ],
+     "q": "Quale proverbio italiano descrive meglio la tua vita in questo momento, e perché?",
+     "c": "Traduci in italiano un proverbio della tua lingua e spiega quando si usa."
+    },
+    "pt": {
+     "t": "Provérbios comuns: proverbi",
+     "g": "Aprender provérbios famosos: chi va piano va sano e va lontano, l'abito non fa il monaco.",
+     "p": [
+      "Chi va piano va sano e va lontano = devagar se vai ao longe. Perfeito para quem aprende línguas!",
+      "L'abito non fa il monaco = o hábito não faz o monge: não julgues pelas aparências.",
+      "Mais: meglio tardi che mai (mais vale tarde do que nunca); tra il dire e il fare c'è di mezzo il mare (falar é fácil)."
+     ],
+     "q": "Que provérbio italiano combina melhor com a tua vida neste momento, e porquê?",
+     "c": "Traduz um provérbio da tua língua para italiano e explica quando se usa."
+    },
+    "pt_BR": {
+     "t": "Provérbios comuns: proverbi",
+     "g": "Aprender provérbios famosos: chi va piano va sano e va lontano, l'abito non fa il monaco.",
+     "p": [
+      "Chi va piano va sano e va lontano = devagar se vai ao longe. Perfeito para quem aprende idiomas!",
+      "L'abito non fa il monaco = o hábito não faz o monge: não julgue pelas aparências.",
+      "Mais: meglio tardi che mai (antes tarde do que nunca); tra il dire e il fare c'è di mezzo il mare (falar é fácil, fazer é que são elas)."
+     ],
+     "q": "Qual provérbio italiano combina mais com a sua vida agora, e por quê?",
+     "c": "Traduza um provérbio do seu idioma para o italiano e explique quando ele é usado."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "chi va piano va sano...",
+      "ex": "Studio un po' ogni giorno: chi va piano va sano e va lontano."
+     },
+     {
+      "w": "l'abito non fa il monaco",
+      "ex": "Sembra severo, ma è gentilissimo: l'abito non fa il monaco."
+     },
+     {
+      "w": "meglio tardi che mai",
+      "ex": "Sei arrivato alla fine, ma meglio tardi che mai!"
+     },
+     {
+      "w": "tra il dire e il fare...",
+      "ex": "Voleva correre ogni mattina, ma tra il dire e il fare c'è di mezzo il mare."
+     },
+     {
+      "w": "il proverbio",
+      "ex": "Mia nonna conosce un proverbio per ogni situazione."
+     },
+     {
+      "w": "come si suol dire",
+      "ex": "Come si suol dire, l'appetito vien mangiando."
+     }
+    ],
+    "gram": "I proverbi sono frasi fisse: non si cambiano. Si introducono spesso con come si dice o come dice il proverbio."
+   }
+  },
+  {
+   "d": 215,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Expressing agreement and disagreement",
+     "g": "Agree and disagree politely: sono d'accordo, hai ragione, non sono del tutto convinto, dipende.",
+     "p": [
+      "Agree: sono d'accordo con te, hai ragione, esatto, proprio così, la penso come te.",
+      "Partly agree: sì, però...; in parte sì; non sono del tutto convinto/a; dipende (it depends).",
+      "Disagree kindly: non sono d'accordo, la vedo diversamente, capisco, ma... Remember: penso che + congiuntivo."
+     ],
+     "q": "Is it better to live in the city or in the countryside? Do you agree with your Buddy? Use the phrases!",
+     "c": "React to three statements: Il caffè è meglio del tè. Le vacanze al mare sono noiose. L'italiano è facile."
+    },
+    "de": {
+     "t": "Zustimmung und Widerspruch",
+     "g": "Du stimmst höflich zu oder widersprichst: sono d'accordo, hai ragione, non sono del tutto convinto, dipende.",
+     "p": [
+      "Zustimmen: sono d'accordo con te, hai ragione, esatto, proprio così, la penso come te.",
+      "Teilweise: sì, però...; in parte sì; non sono del tutto convinto/a; dipende (es kommt darauf an).",
+      "Freundlich widersprechen: non sono d'accordo, la vedo diversamente, capisco, ma... Denk an penso che + Konjunktiv."
+     ],
+     "q": "Lebt man besser in der Stadt oder auf dem Land? Stimmst du deinem Buddy zu? Benutze die Ausdrücke!",
+     "c": "Reagiere auf drei Aussagen: Il caffè è meglio del tè. Le vacanze al mare sono noiose. L'italiano è facile."
+    },
+    "es": {
+     "t": "Expresar acuerdo y desacuerdo",
+     "g": "Estar de acuerdo o no con educación: sono d'accordo, hai ragione, non sono del tutto convinto, dipende.",
+     "p": [
+      "Acuerdo: sono d'accordo con te, hai ragione, esatto, proprio così, la penso come te.",
+      "Acuerdo parcial: sì, però...; in parte sì; non sono del tutto convinto/a; dipende (depende).",
+      "Desacuerdo amable: non sono d'accordo, la vedo diversamente, capisco, ma... Recuerda: penso che + subjuntivo."
+     ],
+     "q": "¿Es mejor vivir en la ciudad o en el campo? ¿Estás de acuerdo con tu Buddy? ¡Usa las expresiones!",
+     "c": "Reacciona a tres afirmaciones: Il caffè è meglio del tè. Le vacanze al mare sono noiose. L'italiano è facile."
+    },
+    "fr": {
+     "t": "Exprimer l'accord et le désaccord",
+     "g": "Être d'accord ou non, poliment : sono d'accordo, hai ragione, non sono del tutto convinto, dipende.",
+     "p": [
+      "Accord : sono d'accordo con te, hai ragione, esatto, proprio così, la penso come te.",
+      "Accord partiel : sì, però... ; in parte sì ; non sono del tutto convinto/a ; dipende (ça dépend).",
+      "Désaccord aimable : non sono d'accordo, la vedo diversamente, capisco, ma... Rappel : penso che + subjonctif."
+     ],
+     "q": "Vaut-il mieux vivre en ville ou à la campagne ? Es-tu d'accord avec ton Buddy ? Utilise les expressions !",
+     "c": "Réagis à trois affirmations : Il caffè è meglio del tè. Le vacanze al mare sono noiose. L'italiano è facile."
+    },
+    "it": {
+     "t": "Esprimere accordo e disaccordo",
+     "g": "Essere d'accordo o no con gentilezza: sono d'accordo, hai ragione, non sono del tutto convinto, dipende.",
+     "p": [
+      "Accordo: sono d'accordo con te, hai ragione, esatto, proprio così, la penso come te.",
+      "Accordo parziale: sì, però...; in parte sì; non sono del tutto convinto/a; dipende.",
+      "Disaccordo gentile: non sono d'accordo, la vedo diversamente, capisco, ma... Ricorda: penso che + congiuntivo."
+     ],
+     "q": "È meglio vivere in città o in campagna? Sei d'accordo con il tuo Buddy? Usa le espressioni!",
+     "c": "Reagisci a tre affermazioni: Il caffè è meglio del tè. Le vacanze al mare sono noiose. L'italiano è facile."
+    },
+    "pt": {
+     "t": "Exprimir acordo e desacordo",
+     "g": "Concordar e discordar com educação: sono d'accordo, hai ragione, non sono del tutto convinto, dipende.",
+     "p": [
+      "Acordo: sono d'accordo con te, hai ragione, esatto, proprio così, la penso come te.",
+      "Acordo parcial: sì, però...; in parte sì; non sono del tutto convinto/a; dipende (depende).",
+      "Desacordo simpático: non sono d'accordo, la vedo diversamente, capisco, ma... Lembra-te: penso che + conjuntivo."
+     ],
+     "q": "É melhor viver na cidade ou no campo? Concordas com o teu Buddy? Usa as expressões!",
+     "c": "Reage a três afirmações: Il caffè è meglio del tè. Le vacanze al mare sono noiose. L'italiano è facile."
+    },
+    "pt_BR": {
+     "t": "Expressar concordância e discordância",
+     "g": "Concordar e discordar com educação: sono d'accordo, hai ragione, non sono del tutto convinto, dipende.",
+     "p": [
+      "Concordar: sono d'accordo con te, hai ragione, esatto, proprio così, la penso come te.",
+      "Concordar em parte: sì, però...; in parte sì; non sono del tutto convinto/a; dipende (depende).",
+      "Discordar com gentileza: non sono d'accordo, la vedo diversamente, capisco, ma... Lembre: penso che + subjuntivo."
+     ],
+     "q": "É melhor morar na cidade ou no campo? Você concorda com seu Buddy? Use as expressões!",
+     "c": "Reaja a três afirmações: Il caffè è meglio del tè. Le vacanze al mare sono noiose. L'italiano è facile."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "sono d'accordo",
+      "ex": "Sono d'accordo con te, è un'ottima idea."
+     },
+     {
+      "w": "hai ragione",
+      "ex": "Hai ragione, è meglio partire presto."
+     },
+     {
+      "w": "la penso come te",
+      "ex": "Su questo la penso come te."
+     },
+     {
+      "w": "non sono del tutto convinto",
+      "ex": "Non sono del tutto convinto che sia la scelta giusta."
+     },
+     {
+      "w": "dipende",
+      "ex": "Dipende dal tempo: se c'è il sole, andiamo al mare."
+     },
+     {
+      "w": "la vedo diversamente",
+      "ex": "Capisco il tuo punto di vista, ma la vedo diversamente."
+     }
+    ],
+    "gram": "Essere d'accordo con qualcuno / su qualcosa; avere ragione / torto. Non sono convinto che + congiuntivo."
+   }
+  },
+  {
+   "d": 216,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Debating politely",
+     "g": "Present arguments with innanzitutto, inoltre, d'altra parte, in conclusione.",
+     "p": [
+      "Open and order: innanzitutto / prima di tutto, in secondo luogo, inoltre (moreover), per di più.",
+      "Contrast: d'altra parte (on the other hand), tuttavia, però, eppure. Example: per esempio, ad esempio.",
+      "Close: in conclusione, insomma, per concludere. Stay respectful: rispetto la tua opinione, ma..."
+     ],
+     "q": "Should everyone learn a second language at school? Give me two arguments and a conclusion.",
+     "c": "Write a short argument (four sentences) about working from home with innanzitutto, inoltre, d'altra parte, in conclusione."
+    },
+    "de": {
+     "t": "Höflich diskutieren",
+     "g": "Du bringst Argumente mit innanzitutto, inoltre, d'altra parte, in conclusione.",
+     "p": [
+      "Einleiten und ordnen: innanzitutto / prima di tutto, in secondo luogo, inoltre (außerdem), per di più.",
+      "Gegensatz: d'altra parte (andererseits), tuttavia, però, eppure. Beispiel: per esempio, ad esempio.",
+      "Abschließen: in conclusione, insomma, per concludere. Bleib respektvoll: rispetto la tua opinione, ma..."
+     ],
+     "q": "Sollte jeder in der Schule eine zweite Sprache lernen? Nenn zwei Argumente und ein Fazit.",
+     "c": "Schreib eine kurze Argumentation (vier Sätze) zum Homeoffice mit innanzitutto, inoltre, d'altra parte, in conclusione."
+    },
+    "es": {
+     "t": "Debatir con cortesía",
+     "g": "Presentar argumentos con innanzitutto, inoltre, d'altra parte, in conclusione.",
+     "p": [
+      "Abrir y ordenar: innanzitutto / prima di tutto, in secondo luogo, inoltre (además), per di più.",
+      "Contraste: d'altra parte (por otro lado), tuttavia, però, eppure. Ejemplo: per esempio, ad esempio.",
+      "Cerrar: in conclusione, insomma, per concludere. Con respeto: rispetto la tua opinione, ma..."
+     ],
+     "q": "¿Todo el mundo debería aprender un segundo idioma en la escuela? Dame dos argumentos y una conclusión.",
+     "c": "Escribe un argumento breve (cuatro frases) sobre el teletrabajo con innanzitutto, inoltre, d'altra parte, in conclusione."
+    },
+    "fr": {
+     "t": "Débattre poliment",
+     "g": "Présenter des arguments avec innanzitutto, inoltre, d'altra parte, in conclusione.",
+     "p": [
+      "Ouvrir et ordonner : innanzitutto / prima di tutto, in secondo luogo, inoltre (de plus), per di più.",
+      "Opposer : d'altra parte (d'un autre côté), tuttavia, però, eppure. Exemple : per esempio, ad esempio.",
+      "Conclure : in conclusione, insomma, per concludere. Avec respect : rispetto la tua opinione, ma..."
+     ],
+     "q": "Tout le monde devrait-il apprendre une deuxième langue à l'école ? Donne deux arguments et une conclusion.",
+     "c": "Écris un court argumentaire (quatre phrases) sur le télétravail avec innanzitutto, inoltre, d'altra parte, in conclusione."
+    },
+    "it": {
+     "t": "Discutere con gentilezza",
+     "g": "Presentare argomenti con innanzitutto, inoltre, d'altra parte, in conclusione.",
+     "p": [
+      "Aprire e ordinare: innanzitutto / prima di tutto, in secondo luogo, inoltre, per di più.",
+      "Contrapporre: d'altra parte, tuttavia, però, eppure. Fare esempi: per esempio, ad esempio.",
+      "Concludere: in conclusione, insomma, per concludere. Con rispetto: rispetto la tua opinione, ma..."
+     ],
+     "q": "Tutti dovrebbero imparare una seconda lingua a scuola? Dammi due argomenti e una conclusione.",
+     "c": "Scrivi un breve testo (quattro frasi) sul lavoro da casa con innanzitutto, inoltre, d'altra parte, in conclusione."
+    },
+    "pt": {
+     "t": "Debater com educação",
+     "g": "Apresentar argumentos com innanzitutto, inoltre, d'altra parte, in conclusione.",
+     "p": [
+      "Abrir e ordenar: innanzitutto / prima di tutto, in secondo luogo, inoltre (além disso), per di più.",
+      "Contrastar: d'altra parte (por outro lado), tuttavia, però, eppure. Exemplos: per esempio, ad esempio.",
+      "Concluir: in conclusione, insomma, per concludere. Com respeito: rispetto la tua opinione, ma..."
+     ],
+     "q": "Toda a gente devia aprender uma segunda língua na escola? Dá-me dois argumentos e uma conclusão.",
+     "c": "Escreve um argumento curto (quatro frases) sobre o teletrabalho com innanzitutto, inoltre, d'altra parte, in conclusione."
+    },
+    "pt_BR": {
+     "t": "Debater com educação",
+     "g": "Apresentar argumentos com innanzitutto, inoltre, d'altra parte, in conclusione.",
+     "p": [
+      "Abrir e ordenar: innanzitutto / prima di tutto, in secondo luogo, inoltre (além disso), per di più.",
+      "Contrastar: d'altra parte (por outro lado), tuttavia, però, eppure. Exemplos: per esempio, ad esempio.",
+      "Concluir: in conclusione, insomma, per concludere. Com respeito: rispetto la tua opinione, ma..."
+     ],
+     "q": "Todo mundo deveria aprender uma segunda língua na escola? Dê dois argumentos e uma conclusão.",
+     "c": "Escreva um argumento curto (quatro frases) sobre home office com innanzitutto, inoltre, d'altra parte, in conclusione."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "innanzitutto",
+      "ex": "Innanzitutto, vorrei ringraziare tutti per essere qui."
+     },
+     {
+      "w": "inoltre",
+      "ex": "Il treno è comodo; inoltre, è più economico dell'aereo."
+     },
+     {
+      "w": "d'altra parte",
+      "ex": "La città è vivace; d'altra parte, è anche rumorosa."
+     },
+     {
+      "w": "tuttavia",
+      "ex": "È un lavoro faticoso, tuttavia mi piace molto."
+     },
+     {
+      "w": "in conclusione",
+      "ex": "In conclusione, credo che sia una buona soluzione."
+     },
+     {
+      "w": "rispetto la tua opinione",
+      "ex": "Rispetto la tua opinione, ma non sono d'accordo."
+     }
+    ],
+    "gram": "Connettivi del discorso: innanzitutto, in secondo luogo, inoltre (aggiunta), d'altra parte, tuttavia (contrasto), in conclusione."
+   }
+  },
+  {
+   "d": 217,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Giving reasons and causes",
+     "g": "Explain why with siccome, dato che, poiché, visto che.",
+     "p": [
+      "Perché is the everyday word, usually after the main clause: resto a casa perché piove.",
+      "Siccome, dato che, visto che usually open the sentence: siccome piove, resto a casa; visto che sei qui, aiutami.",
+      "Poiché is more formal and written: poiché il treno era in ritardo, la riunione è stata spostata. Also: a causa di + noun."
+     ],
+     "q": "Why did you start learning Italian? Answer with a sentence starting with siccome or dato che.",
+     "c": "Write four reasons for your weekend plans, each with a different word: perché, siccome, dato che, visto che."
+    },
+    "de": {
+     "t": "Gründe und Ursachen nennen",
+     "g": "Du erklärst das Warum mit siccome, dato che, poiché, visto che.",
+     "p": [
+      "Perché ist das Alltagswort, meist nach dem Hauptsatz: resto a casa perché piove.",
+      "Siccome, dato che, visto che stehen meist am Satzanfang: siccome piove, resto a casa; visto che sei qui, aiutami.",
+      "Poiché ist formeller: poiché il treno era in ritardo, la riunione è stata spostata. Auch: a causa di + Nomen."
+     ],
+     "q": "Warum hast du angefangen, Italienisch zu lernen? Antworte mit einem Satz, der mit siccome oder dato che beginnt.",
+     "c": "Schreib vier Gründe für deine Wochenendpläne, jeweils mit perché, siccome, dato che, visto che."
+    },
+    "es": {
+     "t": "Dar razones y causas",
+     "g": "Explicar el porqué con siccome, dato che, poiché, visto che.",
+     "p": [
+      "Perché es la palabra cotidiana, normalmente tras la oración principal: resto a casa perché piove.",
+      "Siccome, dato che, visto che suelen abrir la frase: siccome piove, resto a casa; visto che sei qui, aiutami.",
+      "Poiché es más formal: poiché il treno era in ritardo, la riunione è stata spostata. También: a causa di + nombre."
+     ],
+     "q": "¿Por qué empezaste a aprender italiano? Responde con una frase que empiece por siccome o dato che.",
+     "c": "Escribe cuatro razones para tus planes del fin de semana, cada una con perché, siccome, dato che, visto che."
+    },
+    "fr": {
+     "t": "Donner des raisons et des causes",
+     "g": "Expliquer pourquoi avec siccome, dato che, poiché, visto che.",
+     "p": [
+      "Perché est le mot courant, souvent après la principale : resto a casa perché piove.",
+      "Siccome, dato che, visto che ouvrent souvent la phrase : siccome piove, resto a casa ; visto che sei qui, aiutami.",
+      "Poiché est plus soutenu : poiché il treno era in ritardo, la riunione è stata spostata. Aussi : a causa di + nom."
+     ],
+     "q": "Pourquoi as-tu commencé à apprendre l'italien ? Réponds avec une phrase qui commence par siccome ou dato che.",
+     "c": "Écris quatre raisons pour tes projets du week-end, chacune avec perché, siccome, dato che, visto che."
+    },
+    "it": {
+     "t": "Esprimere cause e motivi",
+     "g": "Spiegare il perché con siccome, dato che, poiché, visto che.",
+     "p": [
+      "Perché è la parola più comune e di solito segue la frase principale: resto a casa perché piove.",
+      "Siccome, dato che, visto che di solito aprono la frase: siccome piove, resto a casa; visto che sei qui, aiutami.",
+      "Poiché è più formale: poiché il treno era in ritardo, la riunione è stata spostata. Anche: a causa di + nome."
+     ],
+     "q": "Perché hai cominciato a studiare l'italiano? Rispondi con una frase che comincia con siccome o dato che.",
+     "c": "Scrivi quattro motivi per i tuoi programmi del weekend, ognuno con perché, siccome, dato che, visto che."
+    },
+    "pt": {
+     "t": "Dar razões e causas",
+     "g": "Explicar o porquê com siccome, dato che, poiché, visto che.",
+     "p": [
+      "Perché é a palavra do dia a dia, normalmente depois da oração principal: resto a casa perché piove.",
+      "Siccome, dato che, visto che costumam abrir a frase: siccome piove, resto a casa; visto che sei qui, aiutami.",
+      "Poiché é mais formal: poiché il treno era in ritardo, la riunione è stata spostata. Também: a causa di + nome."
+     ],
+     "q": "Porque começaste a aprender italiano? Responde com uma frase que comece por siccome ou dato che.",
+     "c": "Escreve quatro razões para os teus planos de fim de semana, cada uma com perché, siccome, dato che, visto che."
+    },
+    "pt_BR": {
+     "t": "Dar razões e causas",
+     "g": "Explicar o porquê com siccome, dato che, poiché, visto che.",
+     "p": [
+      "Perché é a palavra do dia a dia, normalmente depois da oração principal: resto a casa perché piove.",
+      "Siccome, dato che, visto che costumam abrir a frase: siccome piove, resto a casa; visto che sei qui, aiutami.",
+      "Poiché é mais formal: poiché il treno era in ritardo, la riunione è stata spostata. Também: a causa di + nome."
+     ],
+     "q": "Por que você começou a aprender italiano? Responda com uma frase que comece com siccome ou dato che.",
+     "c": "Escreva quatro razões para seus planos de fim de semana, cada uma com perché, siccome, dato che, visto che."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "siccome",
+      "ex": "Siccome era tardi, abbiamo preso un taxi."
+     },
+     {
+      "w": "dato che",
+      "ex": "Dato che domani è festa, possiamo dormire di più."
+     },
+     {
+      "w": "visto che",
+      "ex": "Visto che sei in centro, puoi comprare il pane?"
+     },
+     {
+      "w": "poiché",
+      "ex": "Poiché il museo era chiuso, siamo andati al parco."
+     },
+     {
+      "w": "a causa di",
+      "ex": "Il volo è stato cancellato a causa della nebbia."
+     },
+     {
+      "w": "per questo motivo",
+      "ex": "Amo il mare, per questo motivo vivo in Liguria."
+     }
+    ],
+    "gram": "Causali: perché (dopo la principale), siccome / dato che / visto che (all'inizio), poiché (formale), a causa di + nome."
+   }
+  },
+  {
+   "d": 218,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Expressing consequences",
+     "g": "Explain results with perciò, di conseguenza, così che, tanto che.",
+     "p": [
+      "Perciò / quindi / per questo = so, therefore: piove, perciò resto a casa.",
+      "Di conseguenza is more formal: i prezzi sono aumentati; di conseguenza, compriamo meno.",
+      "Così... che and tanto che stress intensity: ero così stanco che mi sono addormentato; ha riso tanto che piangeva."
+     ],
+     "q": "What happened the last time you slept too little? Tell me the consequences with perciò and così... che.",
+     "c": "Write a chain of four consequences: Ho perso la sveglia, quindi... perciò... di conseguenza... ero così... che..."
+    },
+    "de": {
+     "t": "Folgen ausdrücken",
+     "g": "Du erklärst Folgen mit perciò, di conseguenza, così che, tanto che.",
+     "p": [
+      "Perciò / quindi / per questo = deshalb, also: piove, perciò resto a casa.",
+      "Di conseguenza ist formeller: i prezzi sono aumentati; di conseguenza, compriamo meno.",
+      "Così... che und tanto che betonen die Stärke: ero così stanco che mi sono addormentato; ha riso tanto che piangeva."
+     ],
+     "q": "Was ist passiert, als du zuletzt zu wenig geschlafen hast? Erzähl die Folgen mit perciò und così... che.",
+     "c": "Schreib eine Kette aus vier Folgen: Ho perso la sveglia, quindi... perciò... di conseguenza... ero così... che..."
+    },
+    "es": {
+     "t": "Expresar consecuencias",
+     "g": "Explicar resultados con perciò, di conseguenza, così che, tanto che.",
+     "p": [
+      "Perciò / quindi / per questo = por eso, así que: piove, perciò resto a casa.",
+      "Di conseguenza es más formal: i prezzi sono aumentati; di conseguenza, compriamo meno.",
+      "Così... che y tanto che subrayan la intensidad: ero così stanco che mi sono addormentato; ha riso tanto che piangeva."
+     ],
+     "q": "¿Qué pasó la última vez que dormiste poco? Cuenta las consecuencias con perciò y così... che.",
+     "c": "Escribe una cadena de cuatro consecuencias: Ho perso la sveglia, quindi... perciò... di conseguenza... ero così... che..."
+    },
+    "fr": {
+     "t": "Exprimer la conséquence",
+     "g": "Expliquer les résultats avec perciò, di conseguenza, così che, tanto che.",
+     "p": [
+      "Perciò / quindi / per questo = donc, c'est pourquoi : piove, perciò resto a casa.",
+      "Di conseguenza est plus soutenu : i prezzi sono aumentati ; di conseguenza, compriamo meno.",
+      "Così... che et tanto che insistent sur l'intensité : ero così stanco che mi sono addormentato ; ha riso tanto che piangeva."
+     ],
+     "q": "Que s'est-il passé la dernière fois que tu as peu dormi ? Raconte les conséquences avec perciò et così... che.",
+     "c": "Écris une chaîne de quatre conséquences : Ho perso la sveglia, quindi... perciò... di conseguenza... ero così... che..."
+    },
+    "it": {
+     "t": "Esprimere le conseguenze",
+     "g": "Spiegare i risultati con perciò, di conseguenza, così che, tanto che.",
+     "p": [
+      "Perciò / quindi / per questo introducono una conseguenza: piove, perciò resto a casa.",
+      "Di conseguenza è più formale: i prezzi sono aumentati; di conseguenza, compriamo meno.",
+      "Così... che e tanto che sottolineano l'intensità: ero così stanco che mi sono addormentato; ha riso tanto che piangeva."
+     ],
+     "q": "Che cosa è successo l'ultima volta che hai dormito poco? Racconta le conseguenze con perciò e così... che.",
+     "c": "Scrivi una catena di quattro conseguenze: Ho perso la sveglia, quindi... perciò... di conseguenza... ero così... che..."
+    },
+    "pt": {
+     "t": "Exprimir consequências",
+     "g": "Explicar resultados com perciò, di conseguenza, così che, tanto che.",
+     "p": [
+      "Perciò / quindi / per questo = por isso, portanto: piove, perciò resto a casa.",
+      "Di conseguenza é mais formal: i prezzi sono aumentati; di conseguenza, compriamo meno.",
+      "Così... che e tanto che sublinham a intensidade: ero così stanco che mi sono addormentato; ha riso tanto che piangeva."
+     ],
+     "q": "O que aconteceu da última vez que dormiste pouco? Conta as consequências com perciò e così... che.",
+     "c": "Escreve uma cadeia de quatro consequências: Ho perso la sveglia, quindi... perciò... di conseguenza... ero così... che..."
+    },
+    "pt_BR": {
+     "t": "Expressar consequências",
+     "g": "Explicar resultados com perciò, di conseguenza, così che, tanto che.",
+     "p": [
+      "Perciò / quindi / per questo = por isso, então: piove, perciò resto a casa.",
+      "Di conseguenza é mais formal: i prezzi sono aumentati; di conseguenza, compriamo meno.",
+      "Così... che e tanto che destacam a intensidade: ero così stanco che mi sono addormentato; ha riso tanto che piangeva."
+     ],
+     "q": "O que aconteceu da última vez que você dormiu pouco? Conte as consequências com perciò e così... che.",
+     "c": "Escreva uma cadeia de quatro consequências: Ho perso la sveglia, quindi... perciò... di conseguenza... ero così... che..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "perciò",
+      "ex": "Ho finito il latte, perciò vado al supermercato."
+     },
+     {
+      "w": "quindi",
+      "ex": "È festa, quindi i negozi sono chiusi."
+     },
+     {
+      "w": "di conseguenza",
+      "ex": "Ha studiato molto; di conseguenza, ha superato l'esame."
+     },
+     {
+      "w": "così... che",
+      "ex": "Il film era così divertente che abbiamo riso tutto il tempo."
+     },
+     {
+      "w": "tanto che",
+      "ex": "Ha nevicato tanto che le scuole sono rimaste chiuse."
+     },
+     {
+      "w": "per questo",
+      "ex": "Amo cucinare, per questo invito spesso gli amici."
+     }
+    ],
+    "gram": "Consecutive: perciò, quindi, per questo, di conseguenza (dopo la causa); così + aggettivo + che; tanto che."
+   }
+  },
+  {
+   "d": 219,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Hypotheses: se + congiuntivo imperfetto",
+     "g": "Introduce unreal conditions: se avessi tempo...",
+     "p": [
+      "Italian expresses an unreal or unlikely condition with se + congiuntivo imperfetto: se avessi tempo...",
+      "The result goes in the condizionale presente: se avessi tempo, leggerei di più.",
+      "Never use the conditional after se: say se fossi ricco, not se sarei ricco. A classic mistake even for Italians!"
+     ],
+     "q": "If you had a free day tomorrow, what would you do? Start with se avessi...",
+     "c": "Complete three sentences: Se avessi più tempo, ... Se fossi in Italia, ... Se parlassi perfettamente italiano, ..."
+    },
+    "de": {
+     "t": "Hypothesen: se + congiuntivo imperfetto",
+     "g": "Du führst irreale Bedingungen ein: se avessi tempo...",
+     "p": [
+      "Italienisch drückt eine irreale Bedingung mit se + congiuntivo imperfetto aus: se avessi tempo...",
+      "Die Folge steht im condizionale presente: se avessi tempo, leggerei di più.",
+      "Nach se nie das Konditional: se fossi ricco, nicht se sarei ricco. Ein Klassiker, sogar bei Italienern!"
+     ],
+     "q": "Wenn du morgen einen freien Tag hättest, was würdest du tun? Beginne mit se avessi...",
+     "c": "Ergänze drei Sätze: Se avessi più tempo, ... Se fossi in Italia, ... Se parlassi perfettamente italiano, ..."
+    },
+    "es": {
+     "t": "Hipótesis: se + congiuntivo imperfetto",
+     "g": "Introducir condiciones irreales: se avessi tempo...",
+     "p": [
+      "El italiano expresa una condición irreal con se + congiuntivo imperfetto: se avessi tempo... (si tuviera tiempo).",
+      "El resultado va en condizionale presente: se avessi tempo, leggerei di più.",
+      "Nunca condicional después de se: se fossi ricco, no se sarei ricco. ¡Como en español con si!"
+     ],
+     "q": "Si mañana tuvieras un día libre, ¿qué harías? Empieza con se avessi...",
+     "c": "Completa tres frases: Se avessi più tempo, ... Se fossi in Italia, ... Se parlassi perfettamente italiano, ..."
+    },
+    "fr": {
+     "t": "Hypothèses : se + congiuntivo imperfetto",
+     "g": "Introduire des conditions irréelles : se avessi tempo...",
+     "p": [
+      "L'italien exprime une condition irréelle avec se + congiuntivo imperfetto : se avessi tempo... (si j'avais le temps).",
+      "Le résultat est au condizionale presente : se avessi tempo, leggerei di più.",
+      "Jamais de conditionnel après se : se fossi ricco, et non se sarei ricco. Comme en français après si !"
+     ],
+     "q": "Si tu avais une journée libre demain, que ferais-tu ? Commence par se avessi...",
+     "c": "Complète trois phrases : Se avessi più tempo, ... Se fossi in Italia, ... Se parlassi perfettamente italiano, ..."
+    },
+    "it": {
+     "t": "Ipotesi: se + congiuntivo imperfetto",
+     "g": "Introdurre condizioni irreali: se avessi tempo...",
+     "p": [
+      "Una condizione irreale o poco probabile si esprime con se + congiuntivo imperfetto: se avessi tempo...",
+      "La conseguenza va al condizionale presente: se avessi tempo, leggerei di più.",
+      "Mai il condizionale dopo se: si dice se fossi ricco, non se sarei ricco. Un errore che fanno anche molti italiani!"
+     ],
+     "q": "Se domani avessi una giornata libera, che cosa faresti? Comincia con se avessi...",
+     "c": "Completa tre frasi: Se avessi più tempo, ... Se fossi in Italia, ... Se parlassi perfettamente italiano, ..."
+    },
+    "pt": {
+     "t": "Hipóteses: se + congiuntivo imperfetto",
+     "g": "Introduzir condições irreais: se avessi tempo...",
+     "p": [
+      "O italiano exprime uma condição irreal com se + congiuntivo imperfetto: se avessi tempo... (se tivesse tempo).",
+      "O resultado vai para o condizionale presente: se avessi tempo, leggerei di più.",
+      "Nunca condicional depois de se: se fossi ricco, e não se sarei ricco. Tal como em português!"
+     ],
+     "q": "Se amanhã tivesses um dia livre, o que farias? Começa com se avessi...",
+     "c": "Completa três frases: Se avessi più tempo, ... Se fossi in Italia, ... Se parlassi perfettamente italiano, ..."
+    },
+    "pt_BR": {
+     "t": "Hipóteses: se + congiuntivo imperfetto",
+     "g": "Introduzir condições irreais: se avessi tempo...",
+     "p": [
+      "O italiano expressa uma condição irreal com se + congiuntivo imperfetto: se avessi tempo... (se eu tivesse tempo).",
+      "O resultado vai para o condizionale presente: se avessi tempo, leggerei di più.",
+      "Nunca condicional depois de se: se fossi ricco, e não se sarei ricco. Igualzinho ao português!"
+     ],
+     "q": "Se amanhã você tivesse um dia livre, o que faria? Comece com se avessi...",
+     "c": "Complete três frases: Se avessi più tempo, ... Se fossi in Italia, ... Se parlassi perfettamente italiano, ..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "se avessi tempo",
+      "ex": "Se avessi tempo, imparerei a suonare la chitarra."
+     },
+     {
+      "w": "se fossi",
+      "ex": "Se fossi in te, accetterei l'offerta."
+     },
+     {
+      "w": "se potessi",
+      "ex": "Se potessi, vivrei vicino al mare."
+     },
+     {
+      "w": "se sapessi",
+      "ex": "Se sapessi cucinare, inviterei tutti a cena."
+     },
+     {
+      "w": "leggerei",
+      "ex": "Se avessi meno lavoro, leggerei un libro alla settimana."
+     },
+     {
+      "w": "se fossi in te",
+      "ex": "Se fossi in te, chiederei un consiglio."
+     }
+    ],
+    "gram": "Ipotesi irreale: se + congiuntivo imperfetto, condizionale presente. Se avessi tempo, leggerei. Mai: se avrei."
+   }
+  },
+  {
+   "d": 220,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Congiuntivo imperfetto: forms",
+     "g": "Form the imperfect subjunctive: parlassi, leggessi, dormissi and irregular fossi, dessi, stessi, facessi.",
+     "p": [
+      "Regular: take the infinitive stem + -assi/-essi/-issi: parlassi, leggessi, dormissi. Io and tu share the form.",
+      "Full pattern: parlassi, parlassi, parlasse, parlassimo, parlaste, parlassero.",
+      "Irregular: essere → fossi; dare → dessi; stare → stessi; fare → facessi; dire → dicessi; bere → bevessi."
+     ],
+     "q": "If you were an animal, which one would you be and why? Answer with se fossi...",
+     "c": "Conjugate fare and essere in the congiuntivo imperfetto, then write two se... sentences with them."
+    },
+    "de": {
+     "t": "Congiuntivo imperfetto: Formen",
+     "g": "Du bildest den Konjunktiv Imperfekt: parlassi, leggessi, dormissi und unregelmäßig fossi, dessi, stessi, facessi.",
+     "p": [
+      "Regelmäßig: Infinitivstamm + -assi/-essi/-issi: parlassi, leggessi, dormissi. Io und tu haben dieselbe Form.",
+      "Ganzes Muster: parlassi, parlassi, parlasse, parlassimo, parlaste, parlassero.",
+      "Unregelmäßig: essere → fossi; dare → dessi; stare → stessi; fare → facessi; dire → dicessi; bere → bevessi."
+     ],
+     "q": "Wenn du ein Tier wärst, welches wärst du und warum? Antworte mit se fossi...",
+     "c": "Konjugiere fare und essere im congiuntivo imperfetto und schreib zwei se-Sätze damit."
+    },
+    "es": {
+     "t": "Congiuntivo imperfetto: formas",
+     "g": "Formar el subjuntivo imperfecto: parlassi, leggessi, dormissi e irregulares fossi, dessi, stessi, facessi.",
+     "p": [
+      "Regulares: raíz del infinitivo + -assi/-essi/-issi: parlassi, leggessi, dormissi. Io y tu comparten forma.",
+      "Modelo completo: parlassi, parlassi, parlasse, parlassimo, parlaste, parlassero.",
+      "Irregulares: essere → fossi; dare → dessi; stare → stessi; fare → facessi; dire → dicessi; bere → bevessi."
+     ],
+     "q": "Si fueras un animal, ¿cuál serías y por qué? Responde con se fossi...",
+     "c": "Conjuga fare y essere en congiuntivo imperfetto y escribe dos frases con se usándolos."
+    },
+    "fr": {
+     "t": "Congiuntivo imperfetto : formes",
+     "g": "Former le subjonctif imparfait : parlassi, leggessi, dormissi et les irréguliers fossi, dessi, stessi, facessi.",
+     "p": [
+      "Réguliers : radical de l'infinitif + -assi/-essi/-issi : parlassi, leggessi, dormissi. Io et tu ont la même forme.",
+      "Modèle complet : parlassi, parlassi, parlasse, parlassimo, parlaste, parlassero.",
+      "Irréguliers : essere → fossi ; dare → dessi ; stare → stessi ; fare → facessi ; dire → dicessi ; bere → bevessi."
+     ],
+     "q": "Si tu étais un animal, lequel serais-tu et pourquoi ? Réponds avec se fossi...",
+     "c": "Conjugue fare et essere au congiuntivo imperfetto, puis écris deux phrases avec se."
+    },
+    "it": {
+     "t": "Congiuntivo imperfetto: le forme",
+     "g": "Formare il congiuntivo imperfetto: parlassi, leggessi, dormissi e gli irregolari fossi, dessi, stessi, facessi.",
+     "p": [
+      "Regolari: radice dell'infinito + -assi/-essi/-issi: parlassi, leggessi, dormissi. Io e tu hanno la stessa forma.",
+      "Schema completo: parlassi, parlassi, parlasse, parlassimo, parlaste, parlassero.",
+      "Irregolari: essere → fossi; dare → dessi; stare → stessi; fare → facessi; dire → dicessi; bere → bevessi."
+     ],
+     "q": "Se fossi un animale, quale saresti e perché? Rispondi con se fossi...",
+     "c": "Coniuga fare ed essere al congiuntivo imperfetto, poi scrivi due frasi con se."
+    },
+    "pt": {
+     "t": "Congiuntivo imperfetto: formas",
+     "g": "Formar o conjuntivo imperfeito: parlassi, leggessi, dormissi e os irregulares fossi, dessi, stessi, facessi.",
+     "p": [
+      "Regulares: radical do infinitivo + -assi/-essi/-issi: parlassi, leggessi, dormissi. Io e tu têm a mesma forma.",
+      "Modelo completo: parlassi, parlassi, parlasse, parlassimo, parlaste, parlassero.",
+      "Irregulares: essere → fossi; dare → dessi; stare → stessi; fare → facessi; dire → dicessi; bere → bevessi."
+     ],
+     "q": "Se fosses um animal, qual serias e porquê? Responde com se fossi...",
+     "c": "Conjuga fare e essere no congiuntivo imperfetto e escreve duas frases com se."
+    },
+    "pt_BR": {
+     "t": "Congiuntivo imperfetto: formas",
+     "g": "Formar o subjuntivo imperfeito: parlassi, leggessi, dormissi e os irregulares fossi, dessi, stessi, facessi.",
+     "p": [
+      "Regulares: radical do infinitivo + -assi/-essi/-issi: parlassi, leggessi, dormissi. Io e tu têm a mesma forma.",
+      "Modelo completo: parlassi, parlassi, parlasse, parlassimo, parlaste, parlassero.",
+      "Irregulares: essere → fossi; dare → dessi; stare → stessi; fare → facessi; dire → dicessi; bere → bevessi."
+     ],
+     "q": "Se você fosse um animal, qual seria e por quê? Responda com se fossi...",
+     "c": "Conjugue fare e essere no congiuntivo imperfetto e escreva duas frases com se."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "parlassi",
+      "ex": "Se parlassi tedesco, lavorerei a Berlino."
+     },
+     {
+      "w": "leggessi",
+      "ex": "Se leggessi di più, conosceresti tante parole nuove."
+     },
+     {
+      "w": "dormissi",
+      "ex": "Se dormissi otto ore, sarei meno stanco."
+     },
+     {
+      "w": "fossimo",
+      "ex": "Se fossimo in vacanza, saremmo in spiaggia."
+     },
+     {
+      "w": "facesse",
+      "ex": "Se facesse bel tempo, andremmo in montagna."
+     },
+     {
+      "w": "stessero",
+      "ex": "Se i bambini stessero zitti, potrei lavorare."
+     }
+    ],
+    "gram": "Congiuntivo imperfetto: -assi, -essi, -issi (parlassi, leggessi, dormissi). Irregolari: fossi, dessi, stessi, facessi, dicessi, bevessi."
+   }
+  }
+ ]
+}

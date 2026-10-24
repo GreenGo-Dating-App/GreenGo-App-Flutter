@@ -1,0 +1,1305 @@
+{
+"topic": "habits",
+"questions": [
+{
+"id": "habits-001",
+"lv": "any",
+"i18n": {
+"en": "Which habit are you most proud of having right now?",
+"de": "Auf welche deiner Gewohnheiten bist du gerade am stolzesten?",
+"es": "¿De qué hábito que tienes ahora te sientes más orgulloso?",
+"fr": "De quelle habitude es-tu le plus fier en ce moment ?",
+"it": "Di quale abitudine che hai adesso sei più orgoglioso?",
+"pt": "De que hábito que tens agora te orgulhas mais?",
+"pt_BR": "De qual hábito que você tem hoje você mais se orgulha?"
+}
+},
+{
+"id": "habits-002",
+"lv": "any",
+"i18n": {
+"en": "What does a typical morning look like for you?",
+"de": "Wie sieht ein typischer Morgen bei dir aus?",
+"es": "¿Cómo es una mañana típica para ti?",
+"fr": "À quoi ressemble une matinée typique pour toi ?",
+"it": "Com'è una tua mattina tipica?",
+"pt": "Como é uma manhã típica para ti?",
+"pt_BR": "Como é uma manhã típica para você?"
+}
+},
+{
+"id": "habits-003",
+"lv": "any",
+"i18n": {
+"en": "What is the first thing you do after waking up?",
+"de": "Was machst du als Erstes nach dem Aufwachen?",
+"es": "¿Qué es lo primero que haces al despertarte?",
+"fr": "Quelle est la première chose que tu fais au réveil ?",
+"it": "Qual è la prima cosa che fai appena sveglio?",
+"pt": "Qual é a primeira coisa que fazes quando acordas?",
+"pt_BR": "Qual é a primeira coisa que você faz ao acordar?"
+}
+},
+{
+"id": "habits-004",
+"lv": "any",
+"i18n": {
+"en": "Which habit would you love to build this year?",
+"de": "Welche Gewohnheit würdest du dieses Jahr gern aufbauen?",
+"es": "¿Qué hábito te encantaría crear este año?",
+"fr": "Quelle habitude aimerais-tu prendre cette année ?",
+"it": "Quale abitudine ti piacerebbe costruire quest'anno?",
+"pt": "Que hábito gostavas de criar este ano?",
+"pt_BR": "Qual hábito você adoraria criar este ano?"
+}
+},
+{
+"id": "habits-005",
+"lv": "any",
+"i18n": {
+"en": "How do you usually spend the last hour before bed?",
+"de": "Wie verbringst du normalerweise die letzte Stunde vor dem Schlafengehen?",
+"es": "¿Cómo sueles pasar la última hora antes de dormir?",
+"fr": "Comment passes-tu d'habitude la dernière heure avant de dormir ?",
+"it": "Come passi di solito l'ultima ora prima di dormire?",
+"pt": "Como costumas passar a última hora antes de dormir?",
+"pt_BR": "Como você costuma passar a última hora antes de dormir?"
+}
+},
+{
+"id": "habits-006",
+"lv": "any",
+"i18n": {
+"en": "What small daily ritual makes you happy?",
+"de": "Welches kleine tägliche Ritual macht dich glücklich?",
+"es": "¿Qué pequeño ritual diario te hace feliz?",
+"fr": "Quel petit rituel quotidien te rend heureux ?",
+"it": "Quale piccolo rituale quotidiano ti rende felice?",
+"pt": "Que pequeno ritual diário te faz feliz?",
+"pt_BR": "Qual pequeno ritual diário te deixa feliz?"
+}
+},
+{
+"id": "habits-007",
+"lv": "any",
+"i18n": {
+"en": "Is there a habit you picked up from your family?",
+"de": "Gibt es eine Gewohnheit, die du von deiner Familie übernommen hast?",
+"es": "¿Hay algún hábito que hayas heredado de tu familia?",
+"fr": "Y a-t-il une habitude que tu tiens de ta famille ?",
+"it": "C'è un'abitudine che hai preso dalla tua famiglia?",
+"pt": "Há algum hábito que tenhas herdado da tua família?",
+"pt_BR": "Tem algum hábito que você herdou da sua família?"
+}
+},
+{
+"id": "habits-008",
+"lv": "any",
+"i18n": {
+"en": "Are you more of a morning person or a night owl?",
+"de": "Bist du eher ein Morgenmensch oder eine Nachteule?",
+"es": "¿Eres más de mañanas o más de noches?",
+"fr": "Es-tu plutôt du matin ou du soir ?",
+"it": "Sei più una persona mattiniera o un nottambulo?",
+"pt": "És mais uma pessoa da manhã ou da noite?",
+"pt_BR": "Você é mais uma pessoa da manhã ou da noite?"
+}
+},
+{
+"id": "habits-009",
+"lv": "any",
+"i18n": {
+"en": "Which habit has had the biggest positive effect on your life?",
+"de": "Welche Gewohnheit hatte den größten positiven Einfluss auf dein Leben?",
+"es": "¿Qué hábito ha tenido el mayor efecto positivo en tu vida?",
+"fr": "Quelle habitude a eu le plus d'effet positif sur ta vie ?",
+"it": "Quale abitudine ha avuto l'effetto più positivo sulla tua vita?",
+"pt": "Que hábito teve o maior efeito positivo na tua vida?",
+"pt_BR": "Qual hábito teve o maior efeito positivo na sua vida?"
+}
+},
+{
+"id": "habits-010",
+"lv": "any",
+"i18n": {
+"en": "What does a perfect weekend routine look like for you?",
+"de": "Wie sieht für dich eine perfekte Wochenendroutine aus?",
+"es": "¿Cómo sería para ti una rutina de fin de semana perfecta?",
+"fr": "À quoi ressemblerait ta routine de week-end idéale ?",
+"it": "Come sarebbe per te una routine perfetta del fine settimana?",
+"pt": "Como seria para ti uma rotina de fim de semana perfeita?",
+"pt_BR": "Como seria para você uma rotina de fim de semana perfeita?"
+}
+},
+{
+"id": "habits-011",
+"lv": "any",
+"i18n": {
+"en": "What do you usually do when you feel stressed?",
+"de": "Was machst du meistens, wenn du gestresst bist?",
+"es": "¿Qué sueles hacer cuando te sientes estresado?",
+"fr": "Que fais-tu d'habitude quand tu te sens stressé ?",
+"it": "Cosa fai di solito quando ti senti stressato?",
+"pt": "O que costumas fazer quando te sentes stressado?",
+"pt_BR": "O que você costuma fazer quando se sente estressado?"
+}
+},
+{
+"id": "habits-012",
+"lv": "any",
+"i18n": {
+"en": "How do you like to move your body during the week?",
+"de": "Wie bewegst du dich gern im Laufe der Woche?",
+"es": "¿Cómo te gusta moverte a lo largo de la semana?",
+"fr": "Comment aimes-tu bouger au cours de la semaine ?",
+"it": "Come ti piace muoverti durante la settimana?",
+"pt": "Como gostas de mexer o corpo ao longo da semana?",
+"pt_BR": "Como você gosta de movimentar o corpo durante a semana?"
+}
+},
+{
+"id": "habits-013",
+"lv": "any",
+"i18n": {
+"en": "Which habit do you admire in a friend or someone you know?",
+"de": "Welche Gewohnheit bewunderst du bei einer Freundin, einem Freund oder einer bekannten Person?",
+"es": "¿Qué hábito admiras en un amigo o en alguien que conoces?",
+"fr": "Quelle habitude admires-tu chez un ami ou quelqu'un que tu connais ?",
+"it": "Quale abitudine ammiri in un amico o in qualcuno che conosci?",
+"pt": "Que hábito admiras num amigo ou em alguém que conheces?",
+"pt_BR": "Qual hábito você admira em um amigo ou em alguém que conhece?"
+}
+},
+{
+"id": "habits-014",
+"lv": "any",
+"i18n": {
+"en": "What does your phone use look like on a normal day?",
+"de": "Wie sieht deine Handynutzung an einem normalen Tag aus?",
+"es": "¿Cómo usas el móvil en un día normal?",
+"fr": "À quoi ressemble ton utilisation du téléphone un jour normal ?",
+"it": "Come usi il telefono in una giornata normale?",
+"pt": "Como usas o telemóvel num dia normal?",
+"pt_BR": "Como você usa o celular num dia normal?"
+}
+},
+{
+"id": "habits-015",
+"lv": "any",
+"i18n": {
+"en": "What is a habit from another culture that you find inspiring?",
+"de": "Welche Gewohnheit aus einer anderen Kultur findest du inspirierend?",
+"es": "¿Qué hábito de otra cultura te parece inspirador?",
+"fr": "Quelle habitude d'une autre culture trouves-tu inspirante ?",
+"it": "Quale abitudine di un'altra cultura trovi stimolante?",
+"pt": "Que hábito de outra cultura achas inspirador?",
+"pt_BR": "Qual hábito de outra cultura você acha inspirador?"
+}
+},
+{
+"id": "habits-016",
+"lv": "any",
+"i18n": {
+"en": "What helps you feel calm at the end of a busy day?",
+"de": "Was hilft dir, am Ende eines vollen Tages zur Ruhe zu kommen?",
+"es": "¿Qué te ayuda a sentirte tranquilo al final de un día ajetreado?",
+"fr": "Qu'est-ce qui t'aide à te sentir apaisé après une journée chargée ?",
+"it": "Cosa ti aiuta a sentirti tranquillo alla fine di una giornata piena?",
+"pt": "O que te ajuda a sentir calma no fim de um dia agitado?",
+"pt_BR": "O que te ajuda a se sentir calmo no fim de um dia corrido?"
+}
+},
+{
+"id": "habits-017",
+"lv": "any",
+"i18n": {
+"en": "Do you like having a fixed routine, or do you prefer variety?",
+"de": "Magst du eine feste Routine, oder hast du lieber Abwechslung?",
+"es": "¿Te gusta tener una rutina fija o prefieres la variedad?",
+"fr": "Tu aimes avoir une routine fixe ou tu préfères la variété ?",
+"it": "Ti piace avere una routine fissa o preferisci la varietà?",
+"pt": "Gostas de ter uma rotina fixa ou preferes variedade?",
+"pt_BR": "Você gosta de ter uma rotina fixa ou prefere variedade?"
+}
+},
+{
+"id": "habits-018",
+"lv": "any",
+"i18n": {
+"en": "What do you enjoy doing that you wish you did more often?",
+"de": "Was machst du gern und würdest es gern öfter tun?",
+"es": "¿Qué te gusta hacer y desearías hacer más a menudo?",
+"fr": "Qu'est-ce que tu aimes faire et aimerais faire plus souvent ?",
+"it": "Cosa ti piace fare e vorresti fare più spesso?",
+"pt": "O que gostas de fazer e gostavas de fazer mais vezes?",
+"pt_BR": "O que você gosta de fazer e queria fazer com mais frequência?"
+}
+},
+{
+"id": "habits-019",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite drink to start the day with?",
+"de": "Mit welchem Getränk startest du am liebsten in den Tag?",
+"es": "¿Con qué bebida te gusta más empezar el día?",
+"fr": "Quelle est ta boisson préférée pour commencer la journée ?",
+"it": "Qual è la tua bevanda preferita per iniziare la giornata?",
+"pt": "Qual é a tua bebida preferida para começar o dia?",
+"pt_BR": "Qual é a sua bebida favorita para começar o dia?"
+}
+},
+{
+"id": "habits-020",
+"lv": "any",
+"i18n": {
+"en": "How do you keep your home tidy during a busy week?",
+"de": "Wie hältst du dein Zuhause in einer vollen Woche ordentlich?",
+"es": "¿Cómo mantienes tu casa ordenada en una semana ajetreada?",
+"fr": "Comment gardes-tu ton intérieur rangé pendant une semaine chargée ?",
+"it": "Come tieni in ordine la casa durante una settimana piena?",
+"pt": "Como manténs a casa arrumada numa semana cheia?",
+"pt_BR": "Como você mantém a casa arrumada numa semana corrida?"
+}
+},
+{
+"id": "habits-021",
+"lv": "any",
+"i18n": {
+"en": "Which habit did you once have and would like to bring back?",
+"de": "Welche Gewohnheit hattest du früher und möchtest du zurückholen?",
+"es": "¿Qué hábito tenías antes y te gustaría recuperar?",
+"fr": "Quelle habitude avais-tu autrefois et aimerais-tu retrouver ?",
+"it": "Quale abitudine avevi un tempo e vorresti riprendere?",
+"pt": "Que hábito tinhas antes e gostavas de recuperar?",
+"pt_BR": "Qual hábito você tinha antes e gostaria de retomar?"
+}
+},
+{
+"id": "habits-022",
+"lv": "any",
+"i18n": {
+"en": "What does a good day look like for you, from start to finish?",
+"de": "Wie sieht für dich ein guter Tag aus, von Anfang bis Ende?",
+"es": "¿Cómo es para ti un buen día, de principio a fin?",
+"fr": "À quoi ressemble une bonne journée pour toi, du début à la fin ?",
+"it": "Com'è per te una bella giornata, dall'inizio alla fine?",
+"pt": "Como é para ti um bom dia, do início ao fim?",
+"pt_BR": "Como é para você um bom dia, do começo ao fim?"
+}
+},
+{
+"id": "habits-023",
+"lv": "any",
+"i18n": {
+"en": "Who in your life has really good habits, and what can you learn from them?",
+"de": "Wer in deinem Leben hat richtig gute Gewohnheiten, und was kannst du von dieser Person lernen?",
+"es": "¿Quién en tu vida tiene muy buenos hábitos y qué puedes aprender de esa persona?",
+"fr": "Qui, autour de toi, a de très bonnes habitudes, et que peux-tu apprendre de cette personne ?",
+"it": "Chi nella tua vita ha ottime abitudini, e cosa puoi imparare da questa persona?",
+"pt": "Quem na tua vida tem ótimos hábitos, e o que podes aprender com essa pessoa?",
+"pt_BR": "Quem na sua vida tem ótimos hábitos, e o que você pode aprender com essa pessoa?"
+}
+},
+{
+"id": "habits-024",
+"lv": "any",
+"i18n": {
+"en": "What is one thing you do every single day without thinking?",
+"de": "Was machst du jeden einzelnen Tag, ohne darüber nachzudenken?",
+"es": "¿Qué haces todos los días sin pensarlo?",
+"fr": "Quelle chose fais-tu chaque jour sans même y penser ?",
+"it": "Qual è una cosa che fai ogni giorno senza pensarci?",
+"pt": "O que fazes todos os dias sem pensar?",
+"pt_BR": "O que você faz todo santo dia sem pensar?"
+}
+},
+{
+"id": "habits-025",
+"lv": "any",
+"i18n": {
+"en": "How do you like to celebrate when you reach a goal?",
+"de": "Wie feierst du gern, wenn du ein Ziel erreicht hast?",
+"es": "¿Cómo te gusta celebrar cuando alcanzas una meta?",
+"fr": "Comment aimes-tu fêter un objectif atteint ?",
+"it": "Come ti piace festeggiare quando raggiungi un obiettivo?",
+"pt": "Como gostas de celebrar quando alcanças um objetivo?",
+"pt_BR": "Como você gosta de comemorar quando alcança uma meta?"
+}
+},
+{
+"id": "habits-026",
+"lv": "any",
+"i18n": {
+"en": "What hobby helps you relax the most?",
+"de": "Welches Hobby hilft dir am meisten beim Entspannen?",
+"es": "¿Qué afición te ayuda más a relajarte?",
+"fr": "Quel loisir t'aide le plus à te détendre ?",
+"it": "Quale hobby ti aiuta di più a rilassarti?",
+"pt": "Que passatempo te ajuda mais a relaxar?",
+"pt_BR": "Qual hobby mais te ajuda a relaxar?"
+}
+},
+{
+"id": "habits-027",
+"lv": "any",
+"i18n": {
+"en": "How often do you spend time outdoors in a normal week?",
+"de": "Wie oft bist du in einer normalen Woche draußen?",
+"es": "¿Con qué frecuencia pasas tiempo al aire libre en una semana normal?",
+"fr": "À quelle fréquence passes-tu du temps dehors dans une semaine normale ?",
+"it": "Quanto spesso stai all'aperto in una settimana normale?",
+"pt": "Com que frequência passas tempo ao ar livre numa semana normal?",
+"pt_BR": "Com que frequência você passa tempo ao ar livre numa semana normal?"
+}
+},
+{
+"id": "habits-028",
+"lv": "any",
+"i18n": {
+"en": "What is a habit that helps you stay in touch with friends?",
+"de": "Welche Gewohnheit hilft dir, mit Freunden in Kontakt zu bleiben?",
+"es": "¿Qué hábito te ayuda a mantener el contacto con tus amigos?",
+"fr": "Quelle habitude t'aide à garder le contact avec tes amis ?",
+"it": "Quale abitudine ti aiuta a restare in contatto con gli amici?",
+"pt": "Que hábito te ajuda a manter o contacto com os amigos?",
+"pt_BR": "Qual hábito te ajuda a manter contato com os amigos?"
+}
+},
+{
+"id": "habits-029",
+"lv": "any",
+"i18n": {
+"en": "Do you read regularly? What are you reading at the moment?",
+"de": "Liest du regelmäßig? Was liest du gerade?",
+"es": "¿Lees con regularidad? ¿Qué estás leyendo ahora?",
+"fr": "Tu lis régulièrement ? Que lis-tu en ce moment ?",
+"it": "Leggi regolarmente? Cosa stai leggendo adesso?",
+"pt": "Lês com regularidade? O que estás a ler neste momento?",
+"pt_BR": "Você lê com frequência? O que está lendo no momento?"
+}
+},
+{
+"id": "habits-030",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite way to start a new week?",
+"de": "Wie startest du am liebsten in eine neue Woche?",
+"es": "¿Cuál es tu forma favorita de empezar una nueva semana?",
+"fr": "Quelle est ta façon préférée de commencer une nouvelle semaine ?",
+"it": "Qual è il tuo modo preferito di iniziare una nuova settimana?",
+"pt": "Qual é a tua forma preferida de começar uma nova semana?",
+"pt_BR": "Qual é o seu jeito favorito de começar uma nova semana?"
+}
+},
+{
+"id": "habits-031",
+"lv": "any",
+"i18n": {
+"en": "What would you do with one extra free hour every day?",
+"de": "Was würdest du mit einer zusätzlichen freien Stunde pro Tag machen?",
+"es": "¿Qué harías con una hora libre extra cada día?",
+"fr": "Que ferais-tu d'une heure libre en plus chaque jour ?",
+"it": "Cosa faresti con un'ora libera in più ogni giorno?",
+"pt": "O que farias com uma hora livre a mais todos os dias?",
+"pt_BR": "O que você faria com uma hora livre a mais todo dia?"
+}
+},
+{
+"id": "habits-032",
+"lv": "any",
+"i18n": {
+"en": "Which season makes it easiest for you to keep good habits?",
+"de": "In welcher Jahreszeit fällt es dir am leichtesten, gute Gewohnheiten beizubehalten?",
+"es": "¿En qué estación del año te resulta más fácil mantener buenos hábitos?",
+"fr": "Quelle saison te facilite le plus le maintien de bonnes habitudes ?",
+"it": "In quale stagione ti è più facile mantenere buone abitudini?",
+"pt": "Em que estação do ano te é mais fácil manter bons hábitos?",
+"pt_BR": "Em qual estação do ano fica mais fácil manter bons hábitos?"
+}
+},
+{
+"id": "habits-033",
+"lv": "any",
+"i18n": {
+"en": "What is a small act of kindness you like to do?",
+"de": "Welche kleine freundliche Geste machst du gern?",
+"es": "¿Qué pequeño gesto amable te gusta hacer?",
+"fr": "Quel petit geste de gentillesse aimes-tu faire ?",
+"it": "Qual è un piccolo gesto gentile che ti piace fare?",
+"pt": "Que pequeno gesto de gentileza gostas de fazer?",
+"pt_BR": "Qual pequeno gesto de gentileza você gosta de fazer?"
+}
+},
+{
+"id": "habits-034",
+"lv": "any",
+"i18n": {
+"en": "How do you keep your routines going when you travel?",
+"de": "Wie hältst du deine Routinen auf Reisen aufrecht?",
+"es": "¿Cómo mantienes tus rutinas cuando viajas?",
+"fr": "Comment gardes-tu tes routines quand tu voyages ?",
+"it": "Come mantieni le tue routine quando viaggi?",
+"pt": "Como manténs as tuas rotinas quando viajas?",
+"pt_BR": "Como você mantém suas rotinas quando viaja?"
+}
+},
+{
+"id": "habits-035",
+"lv": "any",
+"i18n": {
+"en": "What creative activity would you like to make part of your week?",
+"de": "Welche kreative Tätigkeit möchtest du fest in deine Woche einbauen?",
+"es": "¿Qué actividad creativa te gustaría incluir en tu semana?",
+"fr": "Quelle activité créative aimerais-tu intégrer à ta semaine ?",
+"it": "Quale attività creativa ti piacerebbe inserire nella tua settimana?",
+"pt": "Que atividade criativa gostavas de incluir na tua semana?",
+"pt_BR": "Qual atividade criativa você gostaria de incluir na sua semana?"
+}
+},
+{
+"id": "habits-036",
+"lv": "any",
+"i18n": {
+"en": "What does a cosy evening at home look like for you?",
+"de": "Wie sieht für dich ein gemütlicher Abend zu Hause aus?",
+"es": "¿Cómo es para ti una noche acogedora en casa?",
+"fr": "À quoi ressemble une soirée cosy à la maison pour toi ?",
+"it": "Com'è per te una serata accogliente a casa?",
+"pt": "Como é para ti uma noite aconchegante em casa?",
+"pt_BR": "Como é para você uma noite aconchegante em casa?"
+}
+},
+{
+"id": "habits-037",
+"lv": "any",
+"i18n": {
+"en": "Which habit do you think is overrated, and why?",
+"de": "Welche Gewohnheit hältst du für überbewertet, und warum?",
+"es": "¿Qué hábito crees que está sobrevalorado y por qué?",
+"fr": "Quelle habitude trouves-tu surestimée, et pourquoi ?",
+"it": "Quale abitudine pensi sia sopravvalutata, e perché?",
+"pt": "Que hábito achas que é sobrevalorizado, e porquê?",
+"pt_BR": "Qual hábito você acha superestimado, e por quê?"
+}
+},
+{
+"id": "habits-038",
+"lv": "any",
+"i18n": {
+"en": "What helps you get going on a slow, sleepy morning?",
+"de": "Was hilft dir an einem trägen, verschlafenen Morgen in Schwung?",
+"es": "¿Qué te ayuda a arrancar en una mañana lenta y con sueño?",
+"fr": "Qu'est-ce qui t'aide à démarrer un matin où tu es encore endormi ?",
+"it": "Cosa ti aiuta a carburare in una mattina lenta e assonnata?",
+"pt": "O que te ajuda a arrancar numa manhã lenta e cheia de sono?",
+"pt_BR": "O que te ajuda a engrenar numa manhã lenta e com sono?"
+}
+},
+{
+"id": "habits-039",
+"lv": "any",
+"i18n": {
+"en": "How do you like to plan your day: on paper, in an app or in your head?",
+"de": "Wie planst du deinen Tag am liebsten: auf Papier, in einer App oder im Kopf?",
+"es": "¿Cómo te gusta planificar el día: en papel, en una app o de memoria?",
+"fr": "Comment aimes-tu planifier ta journée : sur papier, dans une appli ou dans ta tête ?",
+"it": "Come ti piace pianificare la giornata: su carta, in un'app o a mente?",
+"pt": "Como gostas de planear o dia: em papel, numa aplicação ou de cabeça?",
+"pt_BR": "Como você gosta de planejar o dia: no papel, num app ou de cabeça?"
+}
+},
+{
+"id": "habits-040",
+"lv": "any",
+"i18n": {
+"en": "What is a healthy habit you actually enjoy?",
+"de": "Welche gesunde Gewohnheit macht dir tatsächlich Spaß?",
+"es": "¿Qué hábito saludable disfrutas de verdad?",
+"fr": "Quelle habitude saine aimes-tu vraiment ?",
+"it": "Quale abitudine sana ti piace davvero?",
+"pt": "Que hábito saudável gostas mesmo de ter?",
+"pt_BR": "Qual hábito saudável você realmente curte?"
+}
+},
+{
+"id": "habits-041",
+"lv": "beginner",
+"i18n": {
+"en": "What is one tiny habit you could start today in under two minutes?",
+"de": "Welche winzige Gewohnheit könntest du heute in unter zwei Minuten beginnen?",
+"es": "¿Qué pequeño hábito podrías empezar hoy en menos de dos minutos?",
+"fr": "Quelle toute petite habitude pourrais-tu commencer aujourd'hui en moins de deux minutes ?",
+"it": "Quale piccolissima abitudine potresti iniziare oggi in meno di due minuti?",
+"pt": "Que pequeno hábito podias começar hoje em menos de dois minutos?",
+"pt_BR": "Qual pequeno hábito você poderia começar hoje em menos de dois minutos?"
+}
+},
+{
+"id": "habits-042",
+"lv": "beginner",
+"i18n": {
+"en": "After which daily routine could you attach a new habit?",
+"de": "An welche tägliche Routine könntest du eine neue Gewohnheit anhängen?",
+"es": "¿Después de qué rutina diaria podrías añadir un nuevo hábito?",
+"fr": "Après quelle routine quotidienne pourrais-tu ajouter une nouvelle habitude ?",
+"it": "Dopo quale routine quotidiana potresti agganciare una nuova abitudine?",
+"pt": "Depois de que rotina diária podias juntar um novo hábito?",
+"pt_BR": "Depois de qual rotina diária você poderia encaixar um novo hábito?"
+}
+},
+{
+"id": "habits-043",
+"lv": "beginner",
+"i18n": {
+"en": "What usually stops you from keeping a new habit going?",
+"de": "Was hält dich meistens davon ab, eine neue Gewohnheit beizubehalten?",
+"es": "¿Qué suele impedirte mantener un hábito nuevo?",
+"fr": "Qu'est-ce qui t'empêche le plus souvent de garder une nouvelle habitude ?",
+"it": "Cosa ti impedisce di solito di mantenere una nuova abitudine?",
+"pt": "O que costuma impedir-te de manter um hábito novo?",
+"pt_BR": "O que costuma te impedir de manter um hábito novo?"
+}
+},
+{
+"id": "habits-044",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever tracked a habit on a calendar or app? How did it feel?",
+"de": "Hast du schon mal eine Gewohnheit in einem Kalender oder einer App festgehalten? Wie war das?",
+"es": "¿Alguna vez registraste un hábito en un calendario o una app? ¿Qué tal fue?",
+"fr": "As-tu déjà suivi une habitude sur un calendrier ou une appli ? Qu'as-tu ressenti ?",
+"it": "Hai mai registrato un'abitudine su un calendario o un'app? Com'è stato?",
+"pt": "Já registaste um hábito num calendário ou numa aplicação? Como foi?",
+"pt_BR": "Você já registrou um hábito num calendário ou app? Como foi?"
+}
+},
+{
+"id": "habits-045",
+"lv": "beginner",
+"i18n": {
+"en": "What could you put somewhere visible to remind you of a good habit?",
+"de": "Was könntest du gut sichtbar hinlegen, um dich an eine gute Gewohnheit zu erinnern?",
+"es": "¿Qué podrías dejar a la vista para recordarte un buen hábito?",
+"fr": "Que pourrais-tu mettre bien en vue pour te rappeler une bonne habitude ?",
+"it": "Cosa potresti mettere in vista per ricordarti una buona abitudine?",
+"pt": "O que podias deixar à vista para te lembrar de um bom hábito?",
+"pt_BR": "O que você poderia deixar à vista para lembrar de um bom hábito?"
+}
+},
+{
+"id": "habits-046",
+"lv": "beginner",
+"i18n": {
+"en": "What time do you usually go to bed, and how do you feel about it?",
+"de": "Wann gehst du normalerweise schlafen, und wie findest du das?",
+"es": "¿A qué hora sueles acostarte y qué te parece?",
+"fr": "À quelle heure te couches-tu d'habitude, et qu'en penses-tu ?",
+"it": "A che ora vai a letto di solito, e come ti trovi?",
+"pt": "A que horas costumas deitar-te, e o que achas disso?",
+"pt_BR": "Que horas você costuma ir dormir, e o que acha disso?"
+}
+},
+{
+"id": "habits-047",
+"lv": "beginner",
+"i18n": {
+"en": "Do you drink enough water during the day? What helps you remember?",
+"de": "Trinkst du tagsüber genug Wasser? Was hilft dir, daran zu denken?",
+"es": "¿Bebes suficiente agua durante el día? ¿Qué te ayuda a acordarte?",
+"fr": "Bois-tu assez d'eau dans la journée ? Qu'est-ce qui t'aide à y penser ?",
+"it": "Bevi abbastanza acqua durante il giorno? Cosa ti aiuta a ricordartelo?",
+"pt": "Bebes água suficiente durante o dia? O que te ajuda a lembrar?",
+"pt_BR": "Você bebe água suficiente durante o dia? O que te ajuda a lembrar?"
+}
+},
+{
+"id": "habits-048",
+"lv": "beginner",
+"i18n": {
+"en": "What would make your mornings feel less rushed?",
+"de": "Was würde deine Morgen weniger hektisch machen?",
+"es": "¿Qué haría que tus mañanas fueran menos apresuradas?",
+"fr": "Qu'est-ce qui rendrait tes matins moins pressés ?",
+"it": "Cosa renderebbe le tue mattine meno di corsa?",
+"pt": "O que tornaria as tuas manhãs menos apressadas?",
+"pt_BR": "O que deixaria suas manhãs menos corridas?"
+}
+},
+{
+"id": "habits-049",
+"lv": "beginner",
+"i18n": {
+"en": "What is one thing you could prepare tonight to make tomorrow easier?",
+"de": "Was könntest du heute Abend vorbereiten, um dir morgen das Leben leichter zu machen?",
+"es": "¿Qué podrías preparar esta noche para que mañana sea más fácil?",
+"fr": "Que pourrais-tu préparer ce soir pour faciliter ta journée de demain ?",
+"it": "Cosa potresti preparare stasera per rendere più facile la giornata di domani?",
+"pt": "O que podias preparar esta noite para tornar o dia de amanhã mais fácil?",
+"pt_BR": "O que você poderia preparar hoje à noite para facilitar o dia de amanhã?"
+}
+},
+{
+"id": "habits-050",
+"lv": "beginner",
+"i18n": {
+"en": "How do you feel when you miss a day of a habit you are building?",
+"de": "Wie fühlst du dich, wenn du einen Tag bei einer neuen Gewohnheit auslässt?",
+"es": "¿Cómo te sientes cuando te saltas un día de un hábito que estás creando?",
+"fr": "Comment te sens-tu quand tu sautes un jour d'une habitude en construction ?",
+"it": "Come ti senti quando salti un giorno di un'abitudine che stai costruendo?",
+"pt": "Como te sentes quando falhas um dia de um hábito que estás a criar?",
+"pt_BR": "Como você se sente quando falha um dia de um hábito que está criando?"
+}
+},
+{
+"id": "habits-051",
+"lv": "beginner",
+"i18n": {
+"en": "Which app on your phone takes most of your time, and how do you feel about that?",
+"de": "Welche App auf deinem Handy kostet dich die meiste Zeit, und wie findest du das?",
+"es": "¿Qué app de tu móvil te quita más tiempo y qué opinas de eso?",
+"fr": "Quelle appli de ton téléphone te prend le plus de temps, et qu'en penses-tu ?",
+"it": "Quale app sul telefono ti porta via più tempo, e cosa ne pensi?",
+"pt": "Que aplicação do telemóvel te ocupa mais tempo, e o que achas disso?",
+"pt_BR": "Qual app do celular toma mais o seu tempo, e o que você acha disso?"
+}
+},
+{
+"id": "habits-052",
+"lv": "beginner",
+"i18n": {
+"en": "What simple movement could you add to your day, like a walk after lunch?",
+"de": "Welche einfache Bewegung könntest du in deinen Tag einbauen, etwa einen Spaziergang nach dem Mittagessen?",
+"es": "¿Qué movimiento sencillo podrías añadir a tu día, como un paseo después de comer?",
+"fr": "Quel mouvement simple pourrais-tu ajouter à ta journée, comme une marche après le déjeuner ?",
+"it": "Quale semplice movimento potresti aggiungere alla giornata, come una passeggiata dopo pranzo?",
+"pt": "Que movimento simples podias juntar ao teu dia, como um passeio depois do almoço?",
+"pt_BR": "Qual movimento simples você poderia incluir no dia, como uma caminhada depois do almoço?"
+}
+},
+{
+"id": "habits-053",
+"lv": "beginner",
+"i18n": {
+"en": "Which foods are easiest to grab in your kitchen, and what would you like to change?",
+"de": "Welche Lebensmittel greifst du in deiner Küche am leichtesten, und was möchtest du daran ändern?",
+"es": "¿Qué alimentos tienes más a mano en tu cocina y qué te gustaría cambiar?",
+"fr": "Quels aliments sont les plus faciles à attraper dans ta cuisine, et qu'aimerais-tu changer ?",
+"it": "Quali cibi sono più a portata di mano nella tua cucina, e cosa vorresti cambiare?",
+"pt": "Que alimentos tens mais à mão na tua cozinha, e o que gostavas de mudar?",
+"pt_BR": "Quais alimentos ficam mais à mão na sua cozinha, e o que você gostaria de mudar?"
+}
+},
+{
+"id": "habits-054",
+"lv": "beginner",
+"i18n": {
+"en": "How do you reward yourself after doing something good for yourself?",
+"de": "Wie belohnst du dich, nachdem du etwas Gutes für dich getan hast?",
+"es": "¿Cómo te premias después de hacer algo bueno por ti?",
+"fr": "Comment te récompenses-tu après avoir fait quelque chose de bien pour toi ?",
+"it": "Come ti premi dopo aver fatto qualcosa di buono per te?",
+"pt": "Como te recompensas depois de fazeres algo bom por ti?",
+"pt_BR": "Como você se recompensa depois de fazer algo bom para si?"
+}
+},
+{
+"id": "habits-055",
+"lv": "beginner",
+"i18n": {
+"en": "Which room in your home feels the calmest, and why?",
+"de": "Welcher Raum in deinem Zuhause wirkt am ruhigsten, und warum?",
+"es": "¿Qué habitación de tu casa te transmite más calma y por qué?",
+"fr": "Quelle pièce de chez toi te semble la plus apaisante, et pourquoi ?",
+"it": "Quale stanza della tua casa ti trasmette più calma, e perché?",
+"pt": "Que divisão da tua casa te transmite mais calma, e porquê?",
+"pt_BR": "Qual cômodo da sua casa transmite mais calma, e por quê?"
+}
+},
+{
+"id": "habits-056",
+"lv": "beginner",
+"i18n": {
+"en": "What is one notification you could turn off this week?",
+"de": "Welche Benachrichtigung könntest du diese Woche ausschalten?",
+"es": "¿Qué notificación podrías desactivar esta semana?",
+"fr": "Quelle notification pourrais-tu désactiver cette semaine ?",
+"it": "Quale notifica potresti disattivare questa settimana?",
+"pt": "Que notificação podias desligar esta semana?",
+"pt_BR": "Qual notificação você poderia desativar esta semana?"
+}
+},
+{
+"id": "habits-057",
+"lv": "beginner",
+"i18n": {
+"en": "What would you like to say about yourself in three months, like 'I am someone who...'?",
+"de": "Was möchtest du in drei Monaten über dich sagen, etwa 'Ich bin jemand, der...'?",
+"es": "¿Qué te gustaría decir de ti dentro de tres meses, como 'Soy alguien que...'?",
+"fr": "Que voudrais-tu dire de toi dans trois mois, du genre « Je suis quelqu'un qui... » ?",
+"it": "Cosa vorresti dire di te tra tre mesi, tipo 'Sono una persona che...'?",
+"pt": "O que gostavas de dizer sobre ti daqui a três meses, como 'Sou alguém que...'?",
+"pt_BR": "O que você gostaria de dizer sobre si daqui a três meses, tipo 'Sou alguém que...'?"
+}
+},
+{
+"id": "habits-058",
+"lv": "beginner",
+"i18n": {
+"en": "Which small household task do you always put off?",
+"de": "Welche kleine Aufgabe im Haushalt schiebst du immer auf?",
+"es": "¿Qué pequeña tarea de la casa siempre dejas para después?",
+"fr": "Quelle petite tâche ménagère repousses-tu toujours ?",
+"it": "Quale piccola faccenda di casa rimandi sempre?",
+"pt": "Que pequena tarefa de casa deixas sempre para depois?",
+"pt_BR": "Qual pequena tarefa de casa você sempre deixa para depois?"
+}
+},
+{
+"id": "habits-059",
+"lv": "beginner",
+"i18n": {
+"en": "Do you have a favourite way to wind down before sleep?",
+"de": "Hast du eine Lieblingsart, vor dem Schlafen zur Ruhe zu kommen?",
+"es": "¿Tienes una forma favorita de relajarte antes de dormir?",
+"fr": "As-tu une façon préférée de te détendre avant de dormir ?",
+"it": "Hai un modo preferito per rilassarti prima di dormire?",
+"pt": "Tens uma forma preferida de relaxar antes de dormir?",
+"pt_BR": "Você tem um jeito favorito de relaxar antes de dormir?"
+}
+},
+{
+"id": "habits-060",
+"lv": "beginner",
+"i18n": {
+"en": "What healthy snack do you enjoy keeping at home?",
+"de": "Welchen gesunden Snack hast du gern zu Hause?",
+"es": "¿Qué tentempié saludable te gusta tener en casa?",
+"fr": "Quel en-cas sain aimes-tu avoir chez toi ?",
+"it": "Quale spuntino sano ti piace tenere in casa?",
+"pt": "Que lanche saudável gostas de ter em casa?",
+"pt_BR": "Qual lanche saudável você gosta de ter em casa?"
+}
+},
+{
+"id": "habits-061",
+"lv": "beginner",
+"i18n": {
+"en": "Which unhelpful habit would you like to do a little less often?",
+"de": "Welche wenig hilfreiche Gewohnheit würdest du gern etwas seltener tun?",
+"es": "¿Qué hábito poco útil te gustaría hacer un poco menos?",
+"fr": "Quelle habitude peu utile aimerais-tu pratiquer un peu moins souvent ?",
+"it": "Quale abitudine poco utile vorresti fare un po' meno spesso?",
+"pt": "Que hábito pouco útil gostavas de fazer um pouco menos?",
+"pt_BR": "Qual hábito pouco útil você gostaria de fazer um pouco menos?"
+}
+},
+{
+"id": "habits-062",
+"lv": "beginner",
+"i18n": {
+"en": "What helps you get back on track after a messy day?",
+"de": "Was hilft dir, nach einem chaotischen Tag wieder in die Spur zu kommen?",
+"es": "¿Qué te ayuda a retomar el rumbo después de un día caótico?",
+"fr": "Qu'est-ce qui t'aide à reprendre le cap après une journée chaotique ?",
+"it": "Cosa ti aiuta a rimetterti in carreggiata dopo una giornata caotica?",
+"pt": "O que te ajuda a voltar ao ritmo depois de um dia caótico?",
+"pt_BR": "O que te ajuda a voltar aos trilhos depois de um dia bagunçado?"
+}
+},
+{
+"id": "habits-063",
+"lv": "beginner",
+"i18n": {
+"en": "Who could be your habit buddy, and which habit would you share?",
+"de": "Wer könnte dein Gewohnheits-Buddy sein, und welche Gewohnheit würdet ihr teilen?",
+"es": "¿Quién podría ser tu compañero de hábitos y qué hábito compartiríais?",
+"fr": "Qui pourrait être ton partenaire d'habitudes, et laquelle partageriez-vous ?",
+"it": "Chi potrebbe essere il tuo compagno di abitudini, e quale abitudine condividereste?",
+"pt": "Quem podia ser o teu parceiro de hábitos, e que hábito partilhariam?",
+"pt_BR": "Quem poderia ser seu parceiro de hábitos, e qual hábito vocês compartilhariam?"
+}
+},
+{
+"id": "habits-064",
+"lv": "beginner",
+"i18n": {
+"en": "What does your bedroom look like when you go to sleep?",
+"de": "Wie sieht dein Schlafzimmer aus, wenn du schlafen gehst?",
+"es": "¿Cómo está tu dormitorio cuando te vas a dormir?",
+"fr": "À quoi ressemble ta chambre quand tu vas te coucher ?",
+"it": "Com'è la tua camera quando vai a dormire?",
+"pt": "Como está o teu quarto quando te vais deitar?",
+"pt_BR": "Como está o seu quarto quando você vai dormir?"
+}
+},
+{
+"id": "habits-065",
+"lv": "beginner",
+"i18n": {
+"en": "How do you start your day when you have very little time?",
+"de": "Wie startest du in den Tag, wenn du sehr wenig Zeit hast?",
+"es": "¿Cómo empiezas el día cuando tienes muy poco tiempo?",
+"fr": "Comment commences-tu ta journée quand tu as très peu de temps ?",
+"it": "Come inizi la giornata quando hai pochissimo tempo?",
+"pt": "Como começas o dia quando tens muito pouco tempo?",
+"pt_BR": "Como você começa o dia quando tem pouquíssimo tempo?"
+}
+},
+{
+"id": "habits-066",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you rely on more for your habits: motivation or routine?",
+"de": "Worauf verlässt du dich bei deinen Gewohnheiten mehr: Motivation oder Routine?",
+"es": "¿En qué te apoyas más para tus hábitos: la motivación o la rutina?",
+"fr": "Sur quoi comptes-tu le plus pour tes habitudes : la motivation ou la routine ?",
+"it": "Su cosa fai più affidamento per le tue abitudini: motivazione o routine?",
+"pt": "Em que te apoias mais para os teus hábitos: motivação ou rotina?",
+"pt_BR": "Em que você se apoia mais para manter hábitos: motivação ou rotina?"
+}
+},
+{
+"id": "habits-067",
+"lv": "intermediate",
+"i18n": {
+"en": "Which keystone habit could improve several areas of your life at once?",
+"de": "Welche Schlüsselgewohnheit könnte mehrere Bereiche deines Lebens gleichzeitig verbessern?",
+"es": "¿Qué hábito clave podría mejorar varias áreas de tu vida a la vez?",
+"fr": "Quelle habitude clé pourrait améliorer plusieurs aspects de ta vie à la fois ?",
+"it": "Quale abitudine chiave potrebbe migliorare più aspetti della tua vita insieme?",
+"pt": "Que hábito-chave podia melhorar várias áreas da tua vida ao mesmo tempo?",
+"pt_BR": "Qual hábito-chave poderia melhorar várias áreas da sua vida ao mesmo tempo?"
+}
+},
+{
+"id": "habits-068",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you protect time for focused work during your day?",
+"de": "Wie schützt du im Laufe des Tages Zeit für konzentriertes Arbeiten?",
+"es": "¿Cómo proteges tiempo para trabajar concentrado durante el día?",
+"fr": "Comment protèges-tu du temps pour travailler concentré dans ta journée ?",
+"it": "Come proteggi del tempo per lavorare concentrato durante la giornata?",
+"pt": "Como proteges tempo para trabalho focado ao longo do dia?",
+"pt_BR": "Como você protege tempo para trabalhar com foco durante o dia?"
+}
+},
+{
+"id": "habits-069",
+"lv": "intermediate",
+"i18n": {
+"en": "What money habit has helped you feel more organised?",
+"de": "Welche Geldgewohnheit hat dir geholfen, dich organisierter zu fühlen?",
+"es": "¿Qué hábito con el dinero te ha ayudado a sentirte más organizado?",
+"fr": "Quelle habitude avec l'argent t'a aidé à te sentir plus organisé ?",
+"it": "Quale abitudine con i soldi ti ha aiutato a sentirti più organizzato?",
+"pt": "Que hábito com o dinheiro te ajudou a sentires-te mais organizado?",
+"pt_BR": "Qual hábito com dinheiro te ajudou a se sentir mais organizado?"
+}
+},
+{
+"id": "habits-070",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you fit learning something new into your weekly routine?",
+"de": "Wie baust du das Lernen von etwas Neuem in deine Wochenroutine ein?",
+"es": "¿Cómo encajas aprender algo nuevo en tu rutina semanal?",
+"fr": "Comment intègres-tu l'apprentissage de quelque chose de nouveau dans ta semaine ?",
+"it": "Come inserisci l'imparare qualcosa di nuovo nella tua routine settimanale?",
+"pt": "Como encaixas aprender algo novo na tua rotina semanal?",
+"pt_BR": "Como você encaixa aprender algo novo na sua rotina semanal?"
+}
+},
+{
+"id": "habits-071",
+"lv": "intermediate",
+"i18n": {
+"en": "Which emotions most often trigger your less helpful habits?",
+"de": "Welche Gefühle lösen am häufigsten deine weniger hilfreichen Gewohnheiten aus?",
+"es": "¿Qué emociones desencadenan con más frecuencia tus hábitos menos útiles?",
+"fr": "Quelles émotions déclenchent le plus souvent tes habitudes les moins utiles ?",
+"it": "Quali emozioni scatenano più spesso le tue abitudini meno utili?",
+"pt": "Que emoções desencadeiam mais vezes os teus hábitos menos úteis?",
+"pt_BR": "Quais emoções mais disparam seus hábitos menos úteis?"
+}
+},
+{
+"id": "habits-072",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you tried pairing a task you avoid with something you enjoy?",
+"de": "Hast du schon mal eine ungeliebte Aufgabe mit etwas kombiniert, das du magst?",
+"es": "¿Has probado a combinar una tarea que evitas con algo que disfrutas?",
+"fr": "As-tu déjà associé une tâche que tu évites à quelque chose que tu aimes ?",
+"it": "Hai mai provato ad abbinare un compito che eviti a qualcosa che ti piace?",
+"pt": "Já experimentaste juntar uma tarefa que evitas a algo de que gostas?",
+"pt_BR": "Você já tentou juntar uma tarefa que evita com algo que curte?"
+}
+},
+{
+"id": "habits-073",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you keep your habits going during very busy weeks?",
+"de": "Wie hältst du deine Gewohnheiten in sehr vollen Wochen aufrecht?",
+"es": "¿Cómo mantienes tus hábitos en semanas muy ocupadas?",
+"fr": "Comment maintiens-tu tes habitudes pendant les semaines très chargées ?",
+"it": "Come mantieni le tue abitudini nelle settimane molto piene?",
+"pt": "Como manténs os teus hábitos em semanas muito ocupadas?",
+"pt_BR": "Como você mantém seus hábitos em semanas muito corridas?"
+}
+},
+{
+"id": "habits-074",
+"lv": "intermediate",
+"i18n": {
+"en": "What is a mindful moment you enjoy in your everyday life?",
+"de": "Welchen achtsamen Moment genießt du in deinem Alltag?",
+"es": "¿Qué momento de atención plena disfrutas en tu día a día?",
+"fr": "Quel moment de pleine conscience apprécies-tu dans ton quotidien ?",
+"it": "Qual è un momento di consapevolezza che ti godi nella vita di tutti i giorni?",
+"pt": "Que momento de atenção plena aprecias no teu dia a dia?",
+"pt_BR": "Qual momento de atenção plena você curte no seu dia a dia?"
+}
+},
+{
+"id": "habits-075",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you say no to plans when you need time for your priorities?",
+"de": "Wie sagst du Verabredungen ab, wenn du Zeit für deine Prioritäten brauchst?",
+"es": "¿Cómo dices que no a un plan cuando necesitas tiempo para tus prioridades?",
+"fr": "Comment refuses-tu une sortie quand tu as besoin de temps pour tes priorités ?",
+"it": "Come dici di no a un impegno quando ti serve tempo per le tue priorità?",
+"pt": "Como dizes que não a planos quando precisas de tempo para as tuas prioridades?",
+"pt_BR": "Como você diz não a um programa quando precisa de tempo para suas prioridades?"
+}
+},
+{
+"id": "habits-076",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you handle screens and notifications when you want to focus or rest?",
+"de": "Wie gehst du mit Bildschirmen und Benachrichtigungen um, wenn du dich konzentrieren oder ausruhen willst?",
+"es": "¿Qué haces con las pantallas y notificaciones cuando quieres concentrarte o descansar?",
+"fr": "Comment gères-tu écrans et notifications quand tu veux te concentrer ou te reposer ?",
+"it": "Come gestisci schermi e notifiche quando vuoi concentrarti o riposare?",
+"pt": "Como lidas com ecrãs e notificações quando te queres concentrar ou descansar?",
+"pt_BR": "Como você lida com telas e notificações quando quer focar ou descansar?"
+}
+},
+{
+"id": "habits-077",
+"lv": "intermediate",
+"i18n": {
+"en": "Which habit have you noticed takes the longest to feel automatic for you?",
+"de": "Bei welcher Gewohnheit hast du gemerkt, dass sie am längsten braucht, bis sie automatisch läuft?",
+"es": "¿Qué hábito has notado que tarda más en volverse automático para ti?",
+"fr": "Quelle habitude met le plus de temps à devenir automatique chez toi ?",
+"it": "Quale abitudine hai notato che ci mette di più a diventare automatica per te?",
+"pt": "Que hábito reparaste que demora mais a tornar-se automático para ti?",
+"pt_BR": "Qual hábito você percebeu que demora mais para virar automático?"
+}
+},
+{
+"id": "habits-078",
+"lv": "intermediate",
+"i18n": {
+"en": "What small daily habit helps you feel more grateful?",
+"de": "Welche kleine tägliche Gewohnheit hilft dir, dankbarer zu sein?",
+"es": "¿Qué pequeño hábito diario te ayuda a sentirte más agradecido?",
+"fr": "Quelle petite habitude quotidienne t'aide à ressentir plus de gratitude ?",
+"it": "Quale piccola abitudine quotidiana ti aiuta a sentirti più grato?",
+"pt": "Que pequeno hábito diário te ajuda a sentir mais gratidão?",
+"pt_BR": "Qual pequeno hábito diário te ajuda a sentir mais gratidão?"
+}
+},
+{
+"id": "habits-079",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you do when a habit starts to feel boring?",
+"de": "Was machst du, wenn eine Gewohnheit langweilig wird?",
+"es": "¿Qué haces cuando un hábito empieza a aburrirte?",
+"fr": "Que fais-tu quand une habitude commence à t'ennuyer ?",
+"it": "Cosa fai quando un'abitudine inizia a diventare noiosa?",
+"pt": "O que fazes quando um hábito começa a parecer aborrecido?",
+"pt_BR": "O que você faz quando um hábito começa a ficar chato?"
+}
+},
+{
+"id": "habits-080",
+"lv": "intermediate",
+"i18n": {
+"en": "Which social habit makes your friendships stronger?",
+"de": "Welche soziale Gewohnheit stärkt deine Freundschaften?",
+"es": "¿Qué hábito social fortalece tus amistades?",
+"fr": "Quelle habitude sociale renforce tes amitiés ?",
+"it": "Quale abitudine sociale rende più forti le tue amicizie?",
+"pt": "Que hábito social torna as tuas amizades mais fortes?",
+"pt_BR": "Qual hábito social deixa suas amizades mais fortes?"
+}
+},
+{
+"id": "habits-081",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you restart your routines after a holiday or a trip?",
+"de": "Wie startest du deine Routinen nach einem Urlaub oder einer Reise neu?",
+"es": "¿Cómo retomas tus rutinas después de unas vacaciones o un viaje?",
+"fr": "Comment relances-tu tes routines après des vacances ou un voyage ?",
+"it": "Come riprendi le tue routine dopo una vacanza o un viaggio?",
+"pt": "Como retomas as tuas rotinas depois de umas férias ou de uma viagem?",
+"pt_BR": "Como você retoma suas rotinas depois de férias ou de uma viagem?"
+}
+},
+{
+"id": "habits-082",
+"lv": "intermediate",
+"i18n": {
+"en": "What weekly ritual helps you reset and prepare for the days ahead?",
+"de": "Welches wöchentliche Ritual hilft dir, durchzuatmen und dich auf die kommenden Tage vorzubereiten?",
+"es": "¿Qué ritual semanal te ayuda a recargar y prepararte para los próximos días?",
+"fr": "Quel rituel hebdomadaire t'aide à te ressourcer et à préparer les jours à venir ?",
+"it": "Quale rituale settimanale ti aiuta a ricaricarti e prepararti ai giorni seguenti?",
+"pt": "Que ritual semanal te ajuda a recarregar e preparar os próximos dias?",
+"pt_BR": "Qual ritual semanal te ajuda a recarregar e se preparar para os próximos dias?"
+}
+},
+{
+"id": "habits-083",
+"lv": "intermediate",
+"i18n": {
+"en": "How has your environment at home changed because of your habits?",
+"de": "Wie hat sich dein Zuhause durch deine Gewohnheiten verändert?",
+"es": "¿Cómo ha cambiado el ambiente de tu casa gracias a tus hábitos?",
+"fr": "Comment ton intérieur a-t-il changé grâce à tes habitudes ?",
+"it": "Com'è cambiato l'ambiente di casa tua grazie alle tue abitudini?",
+"pt": "Como mudou o ambiente da tua casa por causa dos teus hábitos?",
+"pt_BR": "Como o ambiente da sua casa mudou por causa dos seus hábitos?"
+}
+},
+{
+"id": "habits-084",
+"lv": "intermediate",
+"i18n": {
+"en": "Which creative habit would you like to practise for ten minutes a day?",
+"de": "Welche kreative Gewohnheit würdest du gern zehn Minuten am Tag üben?",
+"es": "¿Qué hábito creativo te gustaría practicar diez minutos al día?",
+"fr": "Quelle habitude créative aimerais-tu pratiquer dix minutes par jour ?",
+"it": "Quale abitudine creativa ti piacerebbe praticare dieci minuti al giorno?",
+"pt": "Que hábito criativo gostavas de praticar dez minutos por dia?",
+"pt_BR": "Qual hábito criativo você gostaria de praticar dez minutos por dia?"
+}
+},
+{
+"id": "habits-085",
+"lv": "intermediate",
+"i18n": {
+"en": "What is your minimum version of a habit for days when everything goes wrong?",
+"de": "Was ist deine Minimalversion einer Gewohnheit für Tage, an denen alles schiefgeht?",
+"es": "¿Cuál es tu versión mínima de un hábito para los días en que todo sale mal?",
+"fr": "Quelle est ta version minimale d'une habitude pour les jours où tout va de travers ?",
+"it": "Qual è la tua versione minima di un'abitudine per i giorni in cui va tutto storto?",
+"pt": "Qual é a tua versão mínima de um hábito para os dias em que tudo corre mal?",
+"pt_BR": "Qual é a sua versão mínima de um hábito para os dias em que tudo dá errado?"
+}
+},
+{
+"id": "habits-086",
+"lv": "advanced",
+"i18n": {
+"en": "Which personal values would you like your daily habits to reflect?",
+"de": "Welche persönlichen Werte sollen sich in deinen täglichen Gewohnheiten zeigen?",
+"es": "¿Qué valores personales te gustaría que reflejaran tus hábitos diarios?",
+"fr": "Quelles valeurs personnelles aimerais-tu que tes habitudes quotidiennes reflètent ?",
+"it": "Quali valori personali vorresti che le tue abitudini quotidiane riflettessero?",
+"pt": "Que valores pessoais gostavas que os teus hábitos diários refletissem?",
+"pt_BR": "Quais valores pessoais você gostaria que seus hábitos diários refletissem?"
+}
+},
+{
+"id": "habits-087",
+"lv": "advanced",
+"i18n": {
+"en": "If you designed your ideal week from scratch, which habits would be in it?",
+"de": "Wenn du deine ideale Woche von Grund auf planen würdest, welche Gewohnheiten gehörten dazu?",
+"es": "Si diseñaras tu semana ideal desde cero, ¿qué hábitos incluiría?",
+"fr": "Si tu concevais ta semaine idéale de zéro, quelles habitudes y mettrais-tu ?",
+"it": "Se progettassi da zero la tua settimana ideale, quali abitudini ci metteresti?",
+"pt": "Se desenhasses a tua semana ideal de raiz, que hábitos teria?",
+"pt_BR": "Se você desenhasse sua semana ideal do zero, quais hábitos ela teria?"
+}
+},
+{
+"id": "habits-088",
+"lv": "advanced",
+"i18n": {
+"en": "Which habit have you kept for years, and what has kept it alive?",
+"de": "Welche Gewohnheit pflegst du schon seit Jahren, und was hält sie lebendig?",
+"es": "¿Qué hábito mantienes desde hace años y qué lo ha mantenido vivo?",
+"fr": "Quelle habitude gardes-tu depuis des années, et qu'est-ce qui la fait durer ?",
+"it": "Quale abitudine porti avanti da anni, e cosa l'ha mantenuta viva?",
+"pt": "Que hábito manténs há anos, e o que o tem mantido vivo?",
+"pt_BR": "Qual hábito você mantém há anos, e o que o mantém vivo?"
+}
+},
+{
+"id": "habits-089",
+"lv": "advanced",
+"i18n": {
+"en": "How do you decide when to drop a habit that no longer fits your life?",
+"de": "Wie entscheidest du, wann du eine Gewohnheit aufgibst, die nicht mehr zu deinem Leben passt?",
+"es": "¿Cómo decides cuándo dejar un hábito que ya no encaja en tu vida?",
+"fr": "Comment décides-tu d'abandonner une habitude qui ne correspond plus à ta vie ?",
+"it": "Come decidi quando lasciare un'abitudine che non si adatta più alla tua vita?",
+"pt": "Como decides quando largar um hábito que já não encaixa na tua vida?",
+"pt_BR": "Como você decide quando largar um hábito que já não combina com sua vida?"
+}
+},
+{
+"id": "habits-090",
+"lv": "advanced",
+"i18n": {
+"en": "What personal rule saves you from making the same decision every day?",
+"de": "Welche persönliche Regel erspart dir, jeden Tag dieselbe Entscheidung zu treffen?",
+"es": "¿Qué regla personal te ahorra tomar la misma decisión cada día?",
+"fr": "Quelle règle personnelle t'évite de prendre la même décision chaque jour ?",
+"it": "Quale regola personale ti evita di prendere la stessa decisione ogni giorno?",
+"pt": "Que regra pessoal te poupa de tomar a mesma decisão todos os dias?",
+"pt_BR": "Qual regra pessoal te poupa de tomar a mesma decisão todo dia?"
+}
+},
+{
+"id": "habits-091",
+"lv": "advanced",
+"i18n": {
+"en": "How would you explain the habit loop to a friend in your own words?",
+"de": "Wie würdest du einem Freund den Gewohnheitskreislauf in eigenen Worten erklären?",
+"es": "¿Cómo le explicarías el ciclo del hábito a un amigo con tus propias palabras?",
+"fr": "Comment expliquerais-tu la boucle de l'habitude à un ami, avec tes propres mots ?",
+"it": "Come spiegheresti il ciclo dell'abitudine a un amico con parole tue?",
+"pt": "Como explicarias o ciclo do hábito a um amigo por palavras tuas?",
+"pt_BR": "Como você explicaria o ciclo do hábito a um amigo com suas próprias palavras?"
+}
+},
+{
+"id": "habits-092",
+"lv": "advanced",
+"i18n": {
+"en": "What habit would you like to build together with your family or friends?",
+"de": "Welche Gewohnheit würdest du gern gemeinsam mit Familie oder Freunden aufbauen?",
+"es": "¿Qué hábito te gustaría crear junto con tu familia o tus amigos?",
+"fr": "Quelle habitude aimerais-tu prendre avec ta famille ou tes amis ?",
+"it": "Quale abitudine ti piacerebbe costruire insieme alla famiglia o agli amici?",
+"pt": "Que hábito gostavas de criar em conjunto com a família ou os amigos?",
+"pt_BR": "Qual hábito você gostaria de criar junto com a família ou os amigos?"
+}
+},
+{
+"id": "habits-093",
+"lv": "advanced",
+"i18n": {
+"en": "How do your habits change with the seasons, and do you plan for it?",
+"de": "Wie verändern sich deine Gewohnheiten mit den Jahreszeiten, und planst du das ein?",
+"es": "¿Cómo cambian tus hábitos con las estaciones y lo tienes en cuenta al planificar?",
+"fr": "Comment tes habitudes changent-elles avec les saisons, et l'anticipes-tu ?",
+"it": "Come cambiano le tue abitudini con le stagioni, e ne tieni conto quando pianifichi?",
+"pt": "Como mudam os teus hábitos com as estações, e planeias isso?",
+"pt_BR": "Como seus hábitos mudam com as estações, e você planeja isso?"
+}
+},
+{
+"id": "habits-094",
+"lv": "advanced",
+"i18n": {
+"en": "Which habit from another culture would you like to make your own?",
+"de": "Welche Gewohnheit aus einer anderen Kultur würdest du gern übernehmen?",
+"es": "¿Qué hábito de otra cultura te gustaría adoptar como propio?",
+"fr": "Quelle habitude d'une autre culture aimerais-tu adopter ?",
+"it": "Quale abitudine di un'altra cultura vorresti fare tua?",
+"pt": "Que hábito de outra cultura gostavas de adotar como teu?",
+"pt_BR": "Qual hábito de outra cultura você gostaria de adotar?"
+}
+},
+{
+"id": "habits-095",
+"lv": "advanced",
+"i18n": {
+"en": "What do you look at when you review your habits over a whole year?",
+"de": "Worauf achtest du, wenn du deine Gewohnheiten über ein ganzes Jahr betrachtest?",
+"es": "¿En qué te fijas cuando revisas tus hábitos de todo un año?",
+"fr": "Qu'observes-tu quand tu fais le bilan de tes habitudes sur une année entière ?",
+"it": "Cosa guardi quando fai il punto sulle tue abitudini di un anno intero?",
+"pt": "Em que reparas quando revês os teus hábitos ao longo de um ano inteiro?",
+"pt_BR": "No que você presta atenção quando revisa seus hábitos de um ano inteiro?"
+}
+},
+{
+"id": "habits-096",
+"lv": "advanced",
+"i18n": {
+"en": "How do you plan to restart your habits after a big life change?",
+"de": "Wie willst du deine Gewohnheiten nach einer großen Veränderung im Leben neu aufbauen?",
+"es": "¿Cómo piensas retomar tus hábitos después de un gran cambio en tu vida?",
+"fr": "Comment comptes-tu relancer tes habitudes après un grand changement de vie ?",
+"it": "Come pensi di ripartire con le tue abitudini dopo un grande cambiamento nella vita?",
+"pt": "Como pensas retomar os teus hábitos depois de uma grande mudança de vida?",
+"pt_BR": "Como você pretende retomar seus hábitos depois de uma grande mudança de vida?"
+}
+},
+{
+"id": "habits-097",
+"lv": "advanced",
+"i18n": {
+"en": "Which work habit makes the biggest difference to the quality of your day?",
+"de": "Welche Arbeitsgewohnheit macht den größten Unterschied für die Qualität deines Tages?",
+"es": "¿Qué hábito de trabajo marca la mayor diferencia en la calidad de tu día?",
+"fr": "Quelle habitude de travail change le plus la qualité de ta journée ?",
+"it": "Quale abitudine di lavoro fa la differenza più grande nella qualità della tua giornata?",
+"pt": "Que hábito de trabalho faz mais diferença na qualidade do teu dia?",
+"pt_BR": "Qual hábito de trabalho faz mais diferença na qualidade do seu dia?"
+}
+},
+{
+"id": "habits-098",
+"lv": "advanced",
+"i18n": {
+"en": "What habits would you love to pass on to someone younger?",
+"de": "Welche Gewohnheiten würdest du gern an einen jüngeren Menschen weitergeben?",
+"es": "¿Qué hábitos te encantaría transmitir a alguien más joven?",
+"fr": "Quelles habitudes aimerais-tu transmettre à quelqu'un de plus jeune ?",
+"it": "Quali abitudini ti piacerebbe trasmettere a qualcuno più giovane?",
+"pt": "Que hábitos gostavas de passar a alguém mais novo?",
+"pt_BR": "Quais hábitos você adoraria passar para alguém mais novo?"
+}
+},
+{
+"id": "habits-099",
+"lv": "advanced",
+"i18n": {
+"en": "How would you describe the person your habits are helping you become?",
+"de": "Wie würdest du die Person beschreiben, zu der dich deine Gewohnheiten machen?",
+"es": "¿Cómo describirías a la persona en la que tus hábitos te están convirtiendo?",
+"fr": "Comment décrirais-tu la personne que tes habitudes t'aident à devenir ?",
+"it": "Come descriveresti la persona che le tue abitudini ti stanno aiutando a diventare?",
+"pt": "Como descreverias a pessoa em que os teus hábitos te estão a ajudar a tornar-te?",
+"pt_BR": "Como você descreveria a pessoa que seus hábitos estão te ajudando a se tornar?"
+}
+},
+{
+"id": "habits-100",
+"lv": "advanced",
+"i18n": {
+"en": "If you could only keep three habits for the rest of your life, which would they be?",
+"de": "Wenn du nur drei Gewohnheiten für den Rest deines Lebens behalten dürftest, welche wären es?",
+"es": "Si solo pudieras mantener tres hábitos el resto de tu vida, ¿cuáles serían?",
+"fr": "Si tu ne pouvais garder que trois habitudes pour le reste de ta vie, lesquelles choisirais-tu ?",
+"it": "Se potessi tenere solo tre abitudini per il resto della vita, quali sarebbero?",
+"pt": "Se só pudesses manter três hábitos para o resto da vida, quais seriam?",
+"pt_BR": "Se você só pudesse manter três hábitos pelo resto da vida, quais seriam?"
+}
+}
+]
+}

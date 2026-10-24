@@ -1,0 +1,2195 @@
+{
+"topic": "negotiation",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "What negotiation really is",
+"f": "Negotiation as everyday problem-solving between people who need each other, not a battle"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Negotiations hiding in your day",
+"f": "Spotting daily negotiations: chores, plans with friends, prices, deadlines and favours"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "The win-win mindset",
+"f": "Why looking for outcomes that work for both sides usually beats trying to beat the other side"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Positions versus interests",
+"f": "The difference between what people say they want and why they really want it"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Asking why to find interests",
+"f": "Using gentle why and what-for questions to uncover the needs behind a demand"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "The orange story",
+"f": "The classic tale of two people splitting an orange when one wanted the juice and the other the peel"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Your own goals first",
+"f": "Writing down what you want, why you want it and what a good result would look like"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Knowing your walk-away option",
+"f": "Introducing BATNA: your best alternative if no agreement is reached"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Strengthening your alternatives",
+"f": "Small ways to improve your options before you sit down to talk"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Guessing the other side's options",
+"f": "Thinking about what the other person can do if the two of you do not agree"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "Your bottom line",
+"f": "Setting a reservation point: the least you will accept before walking away"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Aiming high but realistic",
+"f": "How ambitious, well-reasoned targets lead to better results than modest ones"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "A simple preparation sheet",
+"f": "A one-page plan: goals, interests, alternatives, limits and questions to ask"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "The power of listening",
+"f": "Why listening closely often gives you more leverage than talking"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Active listening basics",
+"f": "Paraphrasing, summarising and showing you understood before you respond"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Open questions",
+"f": "Asking questions that start with what and how to get people talking"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Comfortable with silence",
+"f": "Letting pauses work for you instead of rushing to fill them"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Building rapport quickly",
+"f": "Friendly small talk, common ground and genuine curiosity at the start"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Separating people from problems",
+"f": "Being kind to the person while staying firm on the issue"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Tone of voice matters",
+"f": "How calm, warm and steady speech changes how your words are received"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Body language basics",
+"f": "Open posture, eye contact and relaxed hands as signals of confidence"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "First impressions",
+"f": "How the first minutes set the mood for the whole conversation"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Practising a polite ask",
+"f": "Making a clear, friendly request without apologising too much"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Saying no gracefully",
+"f": "Declining an offer while keeping the relationship warm"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Hearing no without panic",
+"f": "Treating a no as the start of a conversation rather than the end"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Everyday haggling at markets",
+"f": "Friendly bargaining at a market stall: a smile, real interest and a fair counteroffer"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "When haggling is not expected",
+"f": "Recognising places and cultures where fixed prices are the norm"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Negotiating plans with friends",
+"f": "Choosing a restaurant or trip together so everyone feels heard"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Sharing chores at home",
+"f": "Dividing household tasks fairly by talking about preferences and time"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: your first month",
+"f": "A light recap of interests, alternatives, listening and polite asking"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "What anchoring means",
+"f": "How the first number mentioned pulls the whole discussion toward it"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Should you go first?",
+"f": "When making the first offer helps you and when it is better to wait"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Responding to a bad anchor",
+"f": "Calmly setting aside an extreme offer and resetting the conversation"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Making offers with reasons",
+"f": "Why a number backed by a clear reason feels fairer and lands better"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Ranges and precise numbers",
+"f": "How precise figures can seem better researched than round numbers"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "The art of the concession",
+"f": "Giving ground slowly, in shrinking steps, and always for something in return"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Trading, not giving",
+"f": "Using if-then phrasing: if you can do this, I can do that"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Beyond splitting the difference",
+"f": "Why meeting in the middle is not always the fairest or smartest solution"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Expanding the pie",
+"f": "Looking for extra value so both sides can get more than a simple split"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Brainstorming options together",
+"f": "Generating several possible solutions before deciding on any of them"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Low-cost, high-value trades",
+"f": "Finding things that are cheap for you to give but valuable to them"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Objective criteria",
+"f": "Using market prices, standards or expert opinions to settle disagreements fairly"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Doing your research",
+"f": "Gathering facts about prices, norms and options before you negotiate"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Writing a short script",
+"f": "Planning your opening lines and key questions without sounding rehearsed"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Role-play with a friend",
+"f": "Practising a negotiation out loud with someone playing the other side"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Returning a product politely",
+"f": "Asking for a refund or exchange with calm facts and a clear request"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Talking to customer service",
+"f": "Staying friendly and specific to get help with a bill or service problem"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Asking for a better deal on a plan",
+"f": "Politely asking a provider whether a better offer or package exists"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Buying second-hand items",
+"f": "Checking condition, asking questions and making a fair offer for used goods"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Selling your old things",
+"f": "Pricing items, describing them honestly and handling buyer offers"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Negotiating with flatmates",
+"f": "Agreeing on guests, noise, shared costs and cleaning without friction"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Negotiating with family",
+"f": "Respectful ways to discuss plans, holidays and responsibilities with relatives"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Kids and negotiation",
+"f": "How parents use choices and clear rules instead of endless bargaining"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Persuasion versus manipulation",
+"f": "The line between honest influence and pressure that harms trust"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Reciprocity",
+"f": "Why people tend to return favours and how to use this generously"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Social proof",
+"f": "How examples of what others do can make a proposal feel safer"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Authority and expertise",
+"f": "Showing relevant knowledge so people trust your suggestions"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Liking and similarity",
+"f": "Why we say yes more easily to people we like and relate to"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Consistency and small yeses",
+"f": "How small agreements can build toward bigger ones"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: anchors and persuasion",
+"f": "A light recap of offers, concessions, trading and the principles of influence"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "Scarcity used honestly",
+"f": "Pointing out real limits on time or availability without inventing pressure"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Framing a request",
+"f": "Presenting the same idea in terms of gains or of avoided losses"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Choosing your words",
+"f": "Replacing but with and, and you with we, to keep talks cooperative"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Labelling emotions",
+"f": "Naming what the other person may feel, like it sounds frustrating, to calm tension"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Mirroring",
+"f": "Repeating the last few words someone said to invite them to say more"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Summarising to agree",
+"f": "Recapping the discussion so both sides confirm what was decided"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Handling interruptions",
+"f": "Politely reclaiming the floor when someone keeps talking over you"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Staying calm under pressure",
+"f": "Breathing, slowing down and buying time when you feel rushed"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Asking for time to think",
+"f": "Phrases to pause a decision without losing the deal"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Negotiating by email",
+"f": "Clear subject lines, short paragraphs and a friendly tone in written talks"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Negotiating by phone",
+"f": "Using voice, pauses and notes when you cannot see the other person"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Negotiating by video call",
+"f": "Camera, lighting and eye contact tips for online conversations"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Negotiating by chat message",
+"f": "Keeping short messages clear, warm and free of misunderstandings"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Following up after a talk",
+"f": "Sending a short written recap to lock in what was agreed"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Keeping promises",
+"f": "Why delivering on small commitments builds trust for future deals"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Culture and negotiation",
+"f": "How cultural habits shape directness, time and decision making"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Direct and indirect communication",
+"f": "Reading yes, maybe and no across cultures that speak plainly or subtly"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Time across cultures",
+"f": "Punctuality, deadlines and patience seen through different cultural lenses"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Relationship first or task first",
+"f": "Cultures that build trust before business versus those that start with the deal"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Greetings and small talk abroad",
+"f": "Polite openings that respect local customs when you negotiate with visitors"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Gift and hospitality customs",
+"f": "How meals, tea and small gifts can play a role in building trust"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Negotiating on holiday",
+"f": "Booking tours, taxis and rooms politely in another country"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Language barriers",
+"f": "Speaking simply, checking understanding and using visuals across languages"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Your negotiation style",
+"f": "Discovering whether you lean competitive, accommodating, avoiding or collaborative"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Flexing your style",
+"f": "Adapting your approach to the situation and the person in front of you"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Confidence for shy negotiators",
+"f": "Small steps that help quieter people ask for what they need"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Overcoming fear of asking",
+"f": "Why most people overestimate how awkward a request will feel"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Setting personal boundaries",
+"f": "Explaining clearly what you can and cannot do"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Assertive, not aggressive",
+"f": "Standing up for your needs while respecting the other person"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Review: communication skills",
+"f": "A light recap of framing, labelling, mirroring, channels and culture"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Negotiating your time",
+"f": "Agreeing on realistic deadlines and protecting your schedule"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Asking for help at work",
+"f": "Making requests to colleagues that are easy to say yes to"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Asking for a deadline extension",
+"f": "Explaining the reason, offering a new date and sharing a plan"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Sharing workload fairly",
+"f": "Discussing tasks with a team so effort feels balanced"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Agreeing on group project roles",
+"f": "Dividing responsibilities in a study or work group"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Clubs and community groups",
+"f": "Reaching agreements in groups where everyone gives their time freely"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Negotiating with neighbours",
+"f": "Friendly talks about noise, parking or shared spaces"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Planning a trip with others",
+"f": "Balancing budget, pace and interests in a travel group"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Agreeing on a shared budget",
+"f": "Talking openly about spending for a group outing or event"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Organising an event together",
+"f": "Negotiating dates, tasks and venues with several people"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Price negotiation basics",
+"f": "Understanding list price, discount and total value"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Looking beyond price",
+"f": "Delivery, warranty, extras and timing as things you can negotiate"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Bundling",
+"f": "Combining several items or services into one package to unlock better terms"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Unbundling",
+"f": "Separating parts of an offer so you pay only for what you need"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Walking away politely",
+"f": "Ending talks gracefully when the deal is not right"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Coming back after walking away",
+"f": "Reopening a conversation without losing face"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Recognising pressure tactics",
+"f": "Spotting fake deadlines, take-it-or-leave-it offers and rushed decisions"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "The nibble",
+"f": "How small extra requests at the end work and how to respond calmly"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Good cop, bad cop",
+"f": "Recognising the two-person routine and naming it with a smile"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "The flinch",
+"f": "Visible surprise at an offer and how to stay steady when you see it"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Responding to tactics",
+"f": "Naming a tactic politely and steering back to interests"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Ethics in everyday negotiation",
+"f": "Being honest, never lying, and still keeping some information private"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "What to share and what to keep",
+"f": "Deciding which information helps the deal and which weakens your position"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Building trust step by step",
+"f": "Sharing small pieces of information to invite openness in return"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Negotiating with yourself",
+"f": "Spotting how we talk ourselves out of asking before we even start"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Learning from every negotiation",
+"f": "A quick debrief: what worked and what to try next time"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Keeping a negotiation journal",
+"f": "Recording your talks to see patterns and progress"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Mini simulation: buying a bike",
+"f": "A guided practice negotiating a used bike from first contact to a deal"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Mini simulation: weekend plans",
+"f": "A guided practice agreeing on a weekend with friends who want different things"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: beginner graduation",
+"f": "A light recap of the first 120 days and choosing your next goals"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Welcome to intermediate",
+"f": "What changes at this stage: more issues, more people and higher stakes"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "The zone of possible agreement",
+"f": "Understanding the ZOPA, the range in which both sides can say yes"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Estimating their bottom line",
+"f": "Using clues and research to guess the other side's limits"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Multi-issue negotiation",
+"f": "Why discussing several issues together creates more room than one at a time"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Prioritising your issues",
+"f": "Ranking what matters most so you know where to give and where to hold"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Logrolling",
+"f": "Trading issues you care less about for those you care more about"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Packaging offers",
+"f": "Presenting complete proposals instead of haggling over one item at a time"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Multiple equivalent offers",
+"f": "Making two or three offers of equal value to learn their priorities"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Contingent agreements",
+"f": "Using if-this-happens terms when people disagree about the future"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Post-settlement settlements",
+"f": "Checking after a deal whether both sides could still do better"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Preparing for workplace talks",
+"f": "Adapting your preparation sheet to conversations with managers and teams"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Researching pay ranges",
+"f": "General ways to learn typical pay for a role from public and personal sources"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Talking about salary expectations",
+"f": "Answering what you expect with a well-reasoned range"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Evaluating a job offer",
+"f": "Looking at the full picture: pay, growth, flexibility, learning and culture"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Negotiating beyond salary",
+"f": "Discussing start date, training, remote days or equipment"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Asking for a raise",
+"f": "Preparing your achievements and timing for a conversation about pay"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Asking for a promotion",
+"f": "Showing readiness for more responsibility with evidence and a plan"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Negotiating flexible work",
+"f": "Proposing a trial of remote or flexible hours with clear results"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Negotiating training and growth",
+"f": "Asking for courses, mentoring or projects that build your skills"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "When the answer is not now",
+"f": "Agreeing on a timeline and criteria to revisit a request later"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Negotiating with your manager",
+"f": "Aligning your request with your manager's goals and pressures"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Managing up",
+"f": "Proactively agreeing priorities and expectations with your boss"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Negotiating priorities",
+"f": "When three urgent tasks arrive at once, agreeing on what comes first"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Negotiating resources",
+"f": "Asking for budget, people or tools by linking them to results"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Cross-team negotiation",
+"f": "Reaching agreements with departments that have different goals"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Negotiating with clients",
+"f": "Balancing client satisfaction with realistic scope and timing"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Scope creep",
+"f": "Handling extra requests politely by discussing time, cost or trade-offs"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Freelance pricing conversations",
+"f": "Explaining your rates with value, scope and confidence"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Handling a discount request",
+"f": "Answering price pushback by adjusting scope rather than just lowering the price"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Review: workplace negotiation",
+"f": "A light recap of ZOPA, multi-issue deals, pay conversations and clients"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Negotiating with suppliers",
+"f": "Building fair, long-term relationships with the people who sell to you"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Negotiating a rental",
+"f": "General points to discuss with a landlord, such as dates, repairs and condition"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Buying a car: the basics",
+"f": "Researching, test driving and separating price, trade-in and extras"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Big purchases and patience",
+"f": "Why time and alternatives are your best friends on large purchases"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Negotiating home services",
+"f": "Getting quotes, comparing them and agreeing on scope with tradespeople"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Comparing quotes",
+"f": "Reading offers carefully so you compare like with like"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Getting it in writing",
+"f": "Why clear written summaries prevent misunderstandings later"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Reading the fine print",
+"f": "Checking dates, conditions and responsibilities before agreeing"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "When to ask an expert",
+"f": "Knowing when a qualified professional should review an important agreement"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Understanding power",
+"f": "Where negotiating power comes from: alternatives, information, time and relationships"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Negotiating with less power",
+"f": "Strategies for when the other side seems stronger"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Creating power through alternatives",
+"f": "Improving your options as the most reliable source of leverage"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Coalitions",
+"f": "Joining with others who share your interests to strengthen your voice"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Time pressure and deadlines",
+"f": "How deadlines shift power and how to manage them"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Patience as a strategy",
+"f": "Why the side that can wait often gets better terms"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Information asymmetry",
+"f": "When one side knows more and how to close the gap"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Asking diagnostic questions",
+"f": "Questions that reveal priorities, constraints and decision makers"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Who decides?",
+"f": "Finding out who really has the authority to say yes"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "The limited authority tactic",
+"f": "When the other side says they must check with someone else first"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Emotions at the table",
+"f": "Recognising your emotions and theirs as useful information"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Managing anger calmly",
+"f": "Responding to heated moments without escalating them"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Dealing with nerves",
+"f": "Preparation and reframing techniques to feel steadier before a talk"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Excitement and overconfidence",
+"f": "Why too much enthusiasm can lead to poor deals"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Taking a break",
+"f": "Using pauses to reset emotions and think clearly"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Apologising effectively",
+"f": "A sincere apology as a tool to repair trust and restart talks"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Difficult people",
+"f": "General strategies for talks with stubborn, rude or evasive counterparts"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "The constant interrupter",
+"f": "Keeping your points heard when someone dominates the conversation"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "The silent counterpart",
+"f": "Drawing out someone who gives very little feedback"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "The endless talker",
+"f": "Politely bringing a rambling discussion back to the point"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Review: power and emotions",
+"f": "A light recap of power sources, deadlines, emotions and difficult people"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Persuasive structure",
+"f": "Organising an argument: situation, problem, solution and benefit"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Storytelling in persuasion",
+"f": "Using short real stories to make your point memorable"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Using data persuasively",
+"f": "Presenting numbers simply, with comparisons people understand"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Knowing your audience",
+"f": "Tailoring your message to what matters to each listener"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Handling objections",
+"f": "Welcoming concerns, clarifying them and answering with care"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Feel, felt, found",
+"f": "A gentle structure for responding to objections with empathy"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Pre-empting objections",
+"f": "Raising likely concerns yourself before the other side does"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "The power of because",
+"f": "How giving a reason increases the chance of a yes"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "The contrast effect",
+"f": "How comparing options changes how each one is perceived"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Decoy options",
+"f": "How a third, less attractive option can make another look better"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Loss aversion",
+"f": "Why people work harder to avoid a loss than to gain the same amount"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Default options",
+"f": "How the pre-selected choice influences decisions"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Commitment devices",
+"f": "Helping people follow through by making agreements visible and specific"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "An ethical persuasion checklist",
+"f": "Questions to ask yourself so influence stays honest and respectful"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Persuading a group",
+"f": "Speaking to several people with different priorities at once"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Building consensus",
+"f": "Helping a group reach a decision everyone can support"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Facilitating a discussion",
+"f": "Guiding a meeting so all voices are heard and decisions get made"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Negotiating in teams",
+"f": "Dividing roles like lead speaker, note taker and observer"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Internal alignment first",
+"f": "Agreeing within your own team before talking to the other side"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Team caucuses",
+"f": "Taking short private breaks to regroup during a team negotiation"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Cross-cultural deep dive",
+"f": "Comparing high-context and low-context communication in practice"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Hierarchy and decision making",
+"f": "How organisations in different cultures decide who says yes"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Saving face",
+"f": "Helping everyone keep their dignity, especially where reputation matters greatly"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Silence across cultures",
+"f": "When silence means thinking, respect or quiet disagreement"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Building trust abroad",
+"f": "Patience, consistency and relationship building in international deals"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Negotiating through interpreters",
+"f": "Speaking in short segments and addressing the person, not the interpreter"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Emails across cultures",
+"f": "Adjusting formality and directness for international partners"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Avoiding stereotypes",
+"f": "Using cultural knowledge as a starting guess, never as a fixed rule"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Bridging cultural gaps",
+"f": "Asking openly about expectations to avoid misunderstandings"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Review: persuasion and culture",
+"f": "A light recap of persuasive structure, objections, teams and culture"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Conflict resolution basics",
+"f": "Turning a disagreement into a joint problem to solve"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Interest-based conflict resolution",
+"f": "Moving from blame to needs in a heated situation"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Mediation basics",
+"f": "How a neutral third person helps two sides reach agreement"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Being an informal mediator",
+"f": "Helping friends or colleagues resolve a disagreement fairly"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Reframing accusations",
+"f": "Turning you-always statements into shared problems"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "I-statements",
+"f": "Expressing your view without blaming: I feel, I need, I would like"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Restoring a damaged relationship",
+"f": "Steps to rebuild trust after a negotiation went badly"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Negotiating with people you love",
+"f": "Keeping kindness central when talks involve family or close friends"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Lasting agreements at home",
+"f": "Reaching agreements on routines that still work months later"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Repeated negotiations",
+"f": "Why reputation matters when you will deal with the same people again"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Introduction to game theory",
+"f": "How simple games explain cooperation and competition"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "The prisoner's dilemma",
+"f": "Why two sides can both lose when each acts only for itself"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Tit for tat",
+"f": "A simple, forgiving strategy that rewards cooperation"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Signalling commitment",
+"f": "Showing credibly that you will stick to a position"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Credible warnings and promises",
+"f": "Why only believable statements change what people do"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "First-mover advantage",
+"f": "When acting first shapes the outcome"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Ultimatum game insights",
+"f": "What experiments reveal about fairness and rejecting unfair offers"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Fairness perceptions",
+"f": "Why people reject deals that feel unfair even when they would gain"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Cognitive biases in negotiation",
+"f": "Common thinking traps such as overconfidence and anchoring on old numbers"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Fixed-pie bias",
+"f": "The mistaken belief that one side's gain must be the other side's loss"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Confirmation bias",
+"f": "Seeking only information that confirms what you already believe"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Reactive devaluation",
+"f": "Discounting a proposal simply because the other side offered it"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Escalation of commitment",
+"f": "Continuing on a bad path because you have already invested a lot"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "The endowment effect",
+"f": "Why we value things more once we own them"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Debiasing techniques",
+"f": "Checklists, a devil's advocate and outside views to think more clearly"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "A planning template for complex deals",
+"f": "A structured planning document for deals with many moving parts"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Scenario planning",
+"f": "Preparing for the best, likely and difficult versions of a conversation"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Opening statements",
+"f": "Setting a constructive tone and agenda in the first minutes"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Agenda setting",
+"f": "Deciding the order of topics and why that order matters"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Review: conflict and biases",
+"f": "A light recap of mediation, game theory and cognitive biases"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Concession strategy planning",
+"f": "Planning in advance what you can give, when, and in exchange for what"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Closing techniques",
+"f": "Summarising, confirming and moving from discussion to agreement"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Handling last-minute changes",
+"f": "Responding calmly when someone reopens a settled point"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Implementation planning",
+"f": "Agreeing who does what and when after a deal is made"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Agreements that last",
+"f": "Building in check-ins and ways to handle future problems"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Simulation: salary conversation",
+"f": "A guided practice of a full pay conversation, with preparation and debrief"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Simulation: client scope change",
+"f": "A guided practice handling a client who wants more for the same price"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Simulation: team project conflict",
+"f": "A guided practice resolving a disagreement over roles and deadlines"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Simulation: market purchase abroad",
+"f": "A guided practice of friendly bargaining in another culture"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Review: intermediate graduation",
+"f": "A light recap of days 121 to 250 and setting your advanced goals"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Welcome to advanced",
+"f": "Complex deals, many parties, long relationships and leading others"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Multiparty negotiation",
+"f": "Why adding more people changes the dynamics completely"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Mapping stakeholders",
+"f": "Identifying everyone affected, their interests and their influence"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Building winning coalitions",
+"f": "Forming alliances when many parties are involved"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Blocking coalitions",
+"f": "Recognising and addressing groups that can stop an agreement"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Sequencing",
+"f": "Deciding whom to approach first to build momentum"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "The single negotiating text",
+"f": "One shared draft that all parties improve instead of rival proposals"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Chairing a multiparty meeting",
+"f": "Running complex discussions with fairness and structure"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Voting versus consensus",
+"f": "Choosing decision rules for groups and understanding their effects"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Agents and representatives",
+"f": "Negotiating through an agent, or as one on behalf of others"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Principal-agent tensions",
+"f": "When a representative's interests differ from those they represent"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Negotiating for others",
+"f": "Why people often negotiate more boldly for others than for themselves"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Long-term partnerships",
+"f": "Negotiating relationships, not just one-off transactions"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Renegotiation",
+"f": "Revisiting an agreement fairly when circumstances change"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Relational agreements",
+"f": "Agreements built on trust and flexibility rather than on every detail"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Dispute prevention systems",
+"f": "Building early warnings and resolution steps into partnerships"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Escalation ladders",
+"f": "Agreeing how problems move up levels before they become disputes"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Value creation at scale",
+"f": "Finding big joint gains in complex business deals"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Differences as opportunities",
+"f": "Using different views on risk, time and priorities to create value"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Review: multiparty and partnerships",
+"f": "A light recap of coalitions, agents and long-term deals"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Advanced anchoring",
+"f": "Using ranges, timing and reasons to anchor thoughtfully"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Bracketing",
+"f": "Positioning your offer so the likely midpoint lands near your target"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Strategic patience",
+"f": "Slowing a negotiation down on purpose to gain information"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Deadline management",
+"f": "Creating, testing and extending deadlines wisely"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Negotiating under uncertainty",
+"f": "Making decisions when key facts are still unknown"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Risk sharing",
+"f": "Designing agreements that share upside and downside fairly"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Milestones and staged payments",
+"f": "Linking part of a deal to later results, as a general concept"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Options and flexibility",
+"f": "Building choices into agreements to handle future changes"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Information exchange strategies",
+"f": "Reciprocal disclosure and testing claims step by step"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Detecting inconsistencies",
+"f": "Noticing contradictions without accusing anyone"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "The limits of lie detection",
+"f": "Why body language alone cannot reliably reveal a lie"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Verifying claims",
+"f": "Asking for evidence and checking facts respectfully"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Responding to dishonesty",
+"f": "Protecting yourself while keeping your options open"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Hard bargainers",
+"f": "Strategies for counterparts who use extreme demands and heavy pressure"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Breaking deadlock",
+"f": "Restarting stalled talks with new options, breaks or new people"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Changing the game",
+"f": "Moving from positional battles to joint problem solving"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Going to the balcony",
+"f": "Stepping back mentally to see the bigger picture under pressure"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Building golden bridges",
+"f": "Making it easy for the other side to say yes and save face"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Negotiation jujitsu",
+"f": "Redirecting attacks toward the problem instead of pushing back"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Review: hard bargaining",
+"f": "A light recap of uncertainty, honesty checks, deadlock and tough tactics"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Leadership and negotiation",
+"f": "How leaders negotiate daily with teams, peers and partners"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Negotiating change in organisations",
+"f": "Winning support for a new idea or process"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Influence without authority",
+"f": "Persuading people who do not report to you"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Building your reputation",
+"f": "Becoming known as fair, reliable and creative"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Negotiating as a manager",
+"f": "Balancing team needs with organisational goals"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Negotiating team budgets",
+"f": "Making a strong case for your team's resources"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Coaching others to negotiate",
+"f": "Helping colleagues prepare for and debrief their talks"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Creating a negotiation culture",
+"f": "Encouraging open, fair negotiation habits in a team"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Negotiation in sales",
+"f": "Moving from pitching to understanding customer needs"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Review: leadership and influence",
+"f": "A light recap of leading, influencing and coaching others"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Strategic partnerships",
+"f": "Negotiating alliances between organisations"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Negotiation in startups",
+"f": "Talking with partners, early hires and backers, in general terms"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Pitching an idea",
+"f": "Presenting a proposal persuasively in just a few minutes"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Talking with investors: the basics",
+"f": "General ideas of value, terms and fit, never as financial advice"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Licensing and partnerships",
+"f": "General ideas behind sharing rights and revenue in partnerships"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Procurement negotiation",
+"f": "How organisations buy through tenders and structured processes"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Auctions",
+"f": "How different auction types work and what they mean for bidders"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "The winner's curse",
+"f": "Why winning a competitive bid can mean paying too much"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Negotiating in the public eye",
+"f": "Communicating carefully when outsiders are watching"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Messaging basics",
+"f": "Keeping your message consistent and respectful in public settings"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Ethics in complex negotiation",
+"f": "Honesty, fairness and responsibility when stakes are high"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Integrity under pressure",
+"f": "Holding to your values when shortcuts are tempting"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Sustainability in agreements",
+"f": "Considering long-term effects on people and the environment"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Fair outcomes",
+"f": "Different ideas of fairness: equal, proportional and need-based"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Famous business negotiations",
+"f": "Lessons from well-known business deals and partnerships"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Trade through history",
+"f": "How merchants on routes like the Silk Road built trust to trade"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "The Harvard Negotiation Project",
+"f": "The ideas behind principled negotiation and the book Getting to Yes"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "John Nash and bargaining",
+"f": "A simple look at the Nash bargaining solution"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Thomas Schelling's ideas",
+"f": "Focal points and commitment in strategic negotiation"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Mary Parker Follett",
+"f": "An early pioneer of integrative, win-win problem solving"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Negotiation research today",
+"f": "What modern studies say about preparation, emotion and creativity"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Confidence for everyone",
+"f": "Research on expectations at the table and how anyone can ask with confidence"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Negotiating with digital tools",
+"f": "Using digital tools for preparation while keeping human judgement"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Online negotiation platforms",
+"f": "How digital platforms structure offers and resolve disputes"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Negotiating across time zones",
+"f": "Managing pace and communication in global deals"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Virtual team negotiations",
+"f": "Keeping trust and clarity in fully remote teams"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Written negotiation mastery",
+"f": "Crafting proposals and counterproposals in writing"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Drafting a summary of terms",
+"f": "Summarising the key points of a deal in plain language"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Plain language agreements",
+"f": "Writing agreements that everyone involved can understand"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Review: business and ethics",
+"f": "A light recap of partnerships, auctions, ethics and research"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Your negotiation philosophy",
+"f": "Defining your own principles and style as a negotiator"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Self-assessment",
+"f": "Reviewing your strengths and the areas where you want to grow"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Advanced listening",
+"f": "Listening for values, worries and unspoken hopes"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Advanced questioning",
+"f": "Layered questions that reveal deeper interests"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Reading the room",
+"f": "Sensing mood, energy and group dynamics"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Negotiating with grace",
+"f": "Staying gracious in success and calm in disappointment"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Generosity as strategy",
+"f": "When giving freely strengthens relationships and outcomes"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Patience and persistence",
+"f": "Keeping long negotiations alive over weeks or months"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Creative problem solving",
+"f": "Techniques like reframing and analogy to invent new options"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Negotiating your life goals",
+"f": "Applying negotiation thinking to career, home and personal plans"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Negotiating your career path",
+"f": "Planning the conversations that shape long-term growth"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Negotiating a career change",
+"f": "Discussing transitions with employers, family and mentors"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Negotiating as a newcomer abroad",
+"f": "Settling into a new country and learning local norms"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Building a practice network",
+"f": "Finding mentors and peers to practise and learn with"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Teaching negotiation to others",
+"f": "Explaining key ideas simply to friends or colleagues"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Designing a practice scenario",
+"f": "Writing your own role-play for others to practise with"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Debriefing like a pro",
+"f": "Structured reflection after complex negotiations"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Measuring negotiation success",
+"f": "Looking beyond price: relationship, learning and implementation"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Capstone preparation",
+"f": "Choosing a real or imagined complex negotiation to plan in full"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Capstone: stakeholder map",
+"f": "Mapping all the parties and interests in your capstone case"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Capstone: alternatives and limits",
+"f": "Defining alternatives and reservation points for each side"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Capstone: options and packages",
+"f": "Designing creative packages for your capstone case"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Capstone: persuasion plan",
+"f": "Planning messages, stories and responses to objections"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Capstone: cultural factors",
+"f": "Adapting your plan to cultural and personal styles"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Capstone: tactics and responses",
+"f": "Anticipating tactics and planning calm responses"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Capstone: opening the talk",
+"f": "Practising your opening statement and agenda"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Capstone: the middle phase",
+"f": "Practising information exchange and trading concessions"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Capstone: closing the deal",
+"f": "Practising the close, the summary and the implementation steps"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Capstone: debrief",
+"f": "Reflecting on your capstone and what you would change"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Review: the advanced journey",
+"f": "A light recap of the advanced skills from day 251 onward"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Your negotiation toolkit",
+"f": "Collecting your favourite tools, phrases and checklists"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Habits for lifelong practice",
+"f": "Small daily habits to keep improving after the course"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Mentoring the next learner",
+"f": "Sharing what you learned to help someone else get started"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Celebrating your progress",
+"f": "Looking back on how far your skills have come"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "A year of negotiation",
+"f": "A final reflection and your personal plan for the year ahead"
+}
+]
+}

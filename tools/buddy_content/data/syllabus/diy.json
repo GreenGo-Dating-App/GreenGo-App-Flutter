@@ -1,0 +1,2195 @@
+{
+"topic": "diy",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "Why DIY is worth learning",
+"f": "The satisfaction, savings and confidence that come from fixing and making things yourself"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Safety first: the DIY mindset",
+"f": "Slow down, plan the job, read instructions and stop when something feels unsafe"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Personal protective equipment",
+"f": "Safety glasses, gloves, ear protection and dust masks: what each protects and when to wear it"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Know your limits",
+"f": "Which jobs are for DIY and which, like electrical and gas work, always need a qualified professional"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Setting up a safe workspace",
+"f": "Good light, a clear floor, ventilation and a stable surface before you start"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Your first toolbox",
+"f": "A starter kit: tape measure, hammer, screwdrivers, pliers, utility knife, level and more"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Using a hammer properly",
+"f": "Grip, stance and controlled swings for driving nails without bent nails or sore thumbs"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Screwdrivers and screw heads",
+"f": "Slotted, Phillips, Pozidriv and Torx: matching the bit to avoid stripped screws"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Pliers and wrenches",
+"f": "Combination pliers, long-nose pliers and adjustable spanners and how to use each"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Utility knives safely",
+"f": "Cutting away from your body, fresh blades and a cutting mat or board"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "The tape measure decoded",
+"f": "Reading markings, hooking the end and measuring inside and outside spaces"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Measure twice, cut once",
+"f": "Why careful measuring and marking saves materials and frustration"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Using a spirit level",
+"f": "Checking level and plumb surfaces for straight shelves and pictures"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Introduction to cordless drills",
+"f": "Parts of a drill, battery care, clutch settings and drilling versus driving"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Choosing drill bits",
+"f": "Wood, masonry and metal bits and how to tell them apart"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Drilling your first hole",
+"f": "Marking, a pilot hole, steady pressure and keeping the drill straight"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Ladder safety basics",
+"f": "Choosing the right ladder, the angle rule, three points of contact and never overreaching"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Reading product instructions",
+"f": "Why manuals and labels matter, from glues to flat-pack furniture"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Storing tools well",
+"f": "Pegboards, cases and keeping tools dry, sharp and easy to find"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Cleaning up after a job",
+"f": "Dust control, sorting waste and putting tools away safely"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Dealing with dust",
+"f": "Dust sheets, masks, vacuuming and ventilating rooms during messy jobs"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Working with adhesives",
+"f": "Wood glue, construction adhesive and superglue: choosing and using each safely"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Tape types explained",
+"f": "Masking, painter's, duct and double-sided tape and their best uses"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Understanding materials: wood",
+"f": "Softwood, hardwood, plywood and MDF and where each works best"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Understanding materials: metal and plastic",
+"f": "Common metals and plastics in the home and how to work with them"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Planning a small project",
+"f": "Writing a plan, a materials list and steps before you buy anything"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Budgeting for DIY",
+"f": "Estimating materials, adding a margin for mistakes and avoiding false economies"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Shopping at a hardware store",
+"f": "Navigating aisles, asking staff and buying the right quantities"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Learning from mistakes",
+"f": "Common beginner errors and how every fix teaches something new"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: safety and tool foundations",
+"f": "A light recap of safety gear, limits, basic tools and planning"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Finding studs and joists",
+"f": "Using a stud finder, knocking and magnets to locate supports in walls"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Checking for hidden pipes and cables",
+"f": "Why you must scan walls before drilling and avoid risky zones"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Types of walls",
+"f": "Solid masonry, plasterboard and timber stud walls and how they behave"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Wall plugs and anchors",
+"f": "Choosing plugs, spring toggles and cavity fixings for each wall type"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Hanging a picture",
+"f": "Picture hooks, wire and getting frames level at a good height"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Hanging a mirror securely",
+"f": "Weight ratings, D-rings and fixings for heavier items"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Arranging a gallery wall",
+"f": "Planning layouts with paper templates before making holes"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Putting up a floating shelf",
+"f": "Hidden brackets, levelling and weight limits"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Installing bracket shelves",
+"f": "Spacing brackets, fixing into studs and checking the load"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Mounting curtain rails",
+"f": "Measuring width and height and fixing brackets securely"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Fitting blinds",
+"f": "Inside or outside the recess, measuring and mounting brackets"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Child safety: anchoring furniture",
+"f": "Securing bookcases and dressers to walls with anti-tip kits"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Fixing a wobbly table",
+"f": "Finding the cause, tightening joints and levelling feet"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Tightening loose cabinet hinges",
+"f": "Adjusting and refitting concealed hinges for doors that close properly"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Replacing cabinet handles",
+"f": "Measuring hole spacing and fitting new handles for a quick refresh"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Adding hooks and racks",
+"f": "Coat hooks, key racks and over-door storage"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Flat-pack furniture success",
+"f": "Sorting parts, following steps and not overtightening"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Fixing stripped screw holes",
+"f": "Wooden matchsticks, dowels and larger screws to restore grip"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Filling small holes in walls",
+"f": "Using filler, a putty knife and sanding for a smooth finish"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Repairing larger wall dents",
+"f": "Mesh patches and layered filling for bigger damage"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Sanding basics",
+"f": "Grits, sanding blocks and working from coarse to fine"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Caulk and sealant basics",
+"f": "Acrylic versus silicone and where each belongs"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Applying a neat bead of sealant",
+"f": "Cutting the nozzle, steady pressure and smoothing the line"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Removing old sealant",
+"f": "Scraping, cleaning and preparing for a fresh seal"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Draught-proofing doors",
+"f": "Seals, brush strips and draught excluders for a cosier home"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Draught-proofing windows",
+"f": "Foam and rubber strips and checking for gaps"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Squeaky doors",
+"f": "Lubricating hinges and tightening screws to stop the squeak"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Sticking doors",
+"f": "Finding where a door rubs and fixing hinges or easing the edge"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Door stops and catches",
+"f": "Fitting stops to protect walls and catches to keep doors closed"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: walls, fixings and small fixes",
+"f": "A light recap of finding supports, fixings, hanging items and quick repairs"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "Choosing the right paint",
+"f": "Emulsion, eggshell, gloss and satin and where to use each"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Water-based versus oil-based paint",
+"f": "Drying times, cleaning up and ventilation differences"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Colour choices made easy",
+"f": "Using samples, testing in daylight and thinking about light and room size"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "How much paint do I need?",
+"f": "Calculating wall area and coverage from the tin"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Painting tools guide",
+"f": "Brushes, rollers, trays, extension poles and quality differences"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Preparing a room for painting",
+"f": "Moving furniture, dust sheets and protecting floors"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Cleaning and prepping walls",
+"f": "Washing, filling, sanding and why preparation is most of the job"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Masking like a pro",
+"f": "Applying tape firmly and removing it at the right time"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Using primer",
+"f": "When primer is needed for new plaster, stains or big colour changes"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Cutting in edges",
+"f": "Painting neat lines along ceilings and corners with a brush"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Rolling a wall evenly",
+"f": "Loading the roller, W pattern and keeping a wet edge"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Painting a ceiling",
+"f": "Safety, extension poles and working away from the light"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Painting skirting boards",
+"f": "Protecting floors and getting crisp lines"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Painting doors",
+"f": "The order for panelled doors and avoiding drips"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Painting window frames",
+"f": "Masking glass and allowing proper drying time"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Painting radiators safely",
+"f": "Turning heating off, using suitable paint and letting it cool"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Second coats and drying times",
+"f": "Why patience between coats gives better results"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Fixing paint drips and runs",
+"f": "Sanding and touching up mistakes"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Cleaning brushes and rollers",
+"f": "Washing water-based paint and storing tools for next time"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Storing leftover paint",
+"f": "Sealing tins, labelling colours and safe disposal"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Painting furniture",
+"f": "Cleaning, sanding, priming and choosing durable finishes"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Chalk paint and distressing",
+"f": "Creating a vintage look on old furniture"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Stencils and patterns",
+"f": "Adding simple designs with stencils and painter's tape"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Accent walls",
+"f": "Choosing a feature wall and making it look intentional"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Painting exterior surfaces",
+"f": "Weather windows, suitable paints and preparing outdoor wood"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Wood stain versus varnish",
+"f": "Colouring wood and protecting it with clear finishes"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Applying varnish smoothly",
+"f": "Thin coats, light sanding between coats and dust control"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Removing wallpaper",
+"f": "Scoring, soaking or steaming and protecting walls"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Hanging wallpaper basics",
+"f": "Measuring, pasting, matching patterns and smoothing out bubbles"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Review: painting and finishing",
+"f": "A light recap of paint types, preparation and neat techniques"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Your home maintenance calendar",
+"f": "Seasonal checks that prevent bigger problems later"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Finding your water stopcock",
+"f": "Locating and testing the main water shut-off before you ever need it"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Your fuse box: look, don't touch",
+"f": "Knowing where it is and why any electrical fault or rewiring is always a job for a qualified electrician"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Changing a light bulb safely",
+"f": "Switching off, letting bulbs cool and choosing efficient bulbs"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Smoke and CO alarms",
+"f": "Testing alarms monthly and replacing batteries, plus calling pros for wiring"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Bleeding a radiator",
+"f": "Releasing trapped air with a radiator key so radiators heat evenly"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Unclogging a sink",
+"f": "Plungers, cleaning the trap and avoiding harsh chemicals"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Unclogging a shower drain",
+"f": "Removing hair with a drain snake and preventing clogs"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Fixing a running toilet",
+"f": "Checking the flapper and fill valve parts inside the cistern"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Cleaning taps and showerheads",
+"f": "Descaling with vinegar for better flow"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Grout cleaning",
+"f": "Brushes and gentle cleaners to refresh tile grout"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Gutter cleaning safely",
+"f": "Ladder safety, gloves and checking downpipes"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Window maintenance",
+"f": "Cleaning tracks, lubricating hinges and checking seals"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Lubrication basics",
+"f": "Which lubricants suit locks, hinges and sliding parts"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Replacing a door handle",
+"f": "Removing the old handle and fitting a new one with the spindle"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Fixing a loose door handle",
+"f": "Tightening grub screws and fixing screws"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Changing a toilet seat",
+"f": "Measuring, removing old fittings and installing a new seat"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Fixing a dripping tap washer",
+"f": "Turning off water, dismantling the tap and replacing the washer"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Silencing creaky floorboards",
+"f": "Finding the creak and securing boards with screws"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Replacing a broken tile",
+"f": "Removing grout, lifting the tile and setting a new one"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Fixing a leaky hose connection",
+"f": "Washers, tape and tightening connections"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Basic appliance care",
+"f": "Cleaning filters in dryers, extractor fans and dishwashers by the manual"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Cleaning a washing machine",
+"f": "Filters, seals and maintenance cycles"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Defrosting a freezer",
+"f": "Safe defrosting and cleaning without sharp tools"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Preventing damp and mould",
+"f": "Ventilation, wiping condensation and when to get professional advice"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Dealing with condensation",
+"f": "Airflow, extractor fans and drying laundry wisely"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Pest-proofing your home",
+"f": "Sealing gaps and keeping storage tidy to deter pests"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Emergency kit for the home",
+"f": "Torches, basic tools and important numbers"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Knowing when to call a pro",
+"f": "Signs that a job is beyond DIY, such as electrics, gas, structure or roofs"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: home maintenance basics",
+"f": "A light recap of shut-offs, simple repairs and seasonal maintenance"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Woodworking fundamentals",
+"f": "The basic workflow from design to finish"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Understanding wood grain",
+"f": "Grain direction, how it affects cutting and why wood moves"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Choosing timber",
+"f": "Picking straight boards and checking for knots and warping"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Hand saws explained",
+"f": "Crosscut, rip and tenon saws and starting a clean cut"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Making a straight cut",
+"f": "Marking lines, guiding the saw and supporting the workpiece"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Clamps and why you need many",
+"f": "Bar, F and quick-release clamps and clamping safely"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Marking and measuring tools",
+"f": "Combination squares, marking gauges and pencils"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Chisels basics",
+"f": "Paring, chopping and keeping both hands behind the edge"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Sharpening tools",
+"f": "Why sharp tools are safer and basic honing methods"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Hand planes introduction",
+"f": "Smoothing boards and adjusting blade depth"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Workbenches and holding work",
+"f": "Vices, bench dogs and stable setups"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Power saw safety basics",
+"f": "Guards, push sticks and the rules for jigsaws and circular saws"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Using a jigsaw",
+"f": "Curves, blade choice and clamping work securely"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Using a circular saw",
+"f": "Straight cuts with guides and proper support"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Random orbital sanders",
+"f": "Sanding efficiently and dust extraction"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Screws versus nails in wood",
+"f": "When to use each and pre-drilling to avoid splits"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Countersinking screws",
+"f": "Neat, flush screw heads in woodwork"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Butt joints and reinforcement",
+"f": "The simplest joint and strengthening it"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Pocket hole joinery",
+"f": "Fast, strong joints with a pocket hole jig"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Dowel joints",
+"f": "Aligning and gluing dowels for neat joints"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Gluing up wood",
+"f": "Glue amounts, clamping pressure and wiping squeeze-out"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Building a simple box",
+"f": "A first project combining measuring, cutting and joining"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Building a small shelf unit",
+"f": "Planning dimensions and assembling square"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Checking for square",
+"f": "Measuring diagonals and correcting assemblies"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Wood filler and finishing prep",
+"f": "Filling gaps, sanding and removing dust"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Oil finishes for wood",
+"f": "Danish oil and hardwax oil for natural looks"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Safe disposal of oily rags",
+"f": "Why rags soaked in some oils can self-heat and how to dry them flat"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Upcycling pallets safely",
+"f": "Choosing safe pallets and preparing the wood"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "A simple wooden planter",
+"f": "Building a planter box for herbs or flowers"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Review: woodworking foundations",
+"f": "A light recap of timber, cutting, joining and finishing"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Understanding home plumbing",
+"f": "Supply pipes, drains and how water moves through a home"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Plumbing tools for DIY",
+"f": "Adjustable wrenches, PTFE tape, plungers and buckets"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Using PTFE tape",
+"f": "Wrapping threads the right way for a watertight seal"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Replacing a showerhead",
+"f": "Unscrewing, cleaning threads and fitting a new head"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Replacing a shower hose",
+"f": "A quick upgrade with the right washers"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Fixing a slow toilet flush",
+"f": "Adjusting parts and cleaning inside the cistern"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Cleaning a sink trap",
+"f": "Unscrewing the trap and removing blockages"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Replacing a sink plug and chain",
+"f": "Easy fixes for basin plugs"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Sealing around a bath",
+"f": "Fresh silicone to stop leaks"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Sealing kitchen worktops",
+"f": "Sealant at back edges and around sinks"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Fixing a dripping outdoor tap",
+"f": "Washers and frost protection"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Preventing frozen pipes",
+"f": "Lagging pipes and keeping heat on in cold spells"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "What to do in a leak",
+"f": "Turn off water, contain it and call a plumber for serious leaks"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Hot water and boilers: pro only",
+"f": "Why boilers and gas appliances are for qualified engineers"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Refreshing kitchen cabinets",
+"f": "Painting doors and updating handles"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Adjusting kitchen drawers",
+"f": "Aligning runners and fixing sticky drawers"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Replacing a kitchen splashback",
+"f": "Tile sheets and panels for an easy update"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Organising under the sink",
+"f": "Shelves and bins to store safely"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Fixing a loose towel rail",
+"f": "Re-fixing with suitable plugs"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Installing a bathroom shelf",
+"f": "Waterproof fixings and choosing materials"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Regrouting tiles",
+"f": "Removing old grout and applying fresh grout"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Anti-slip solutions",
+"f": "Mats and treatments to make wet floors safer"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Bathroom ventilation",
+"f": "Keeping fans clean and reducing moisture"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Shower screen care",
+"f": "Cleaning glass and refreshing seals"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Water-saving fixes",
+"f": "Aerators, low-flow heads and fixing drips"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Rainwater collection",
+"f": "Water butts and connecting to downpipes"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Washing machine hoses",
+"f": "Checking for wear and replacing safely"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "Understanding drains outside",
+"f": "Gullies, clearing leaves and when to call a professional"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Kitchen and bathroom safety",
+"f": "Wet areas, chemicals and keeping things tidy"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Review: plumbing and wet rooms",
+"f": "A light recap of safe plumbing tasks and kitchen and bathroom fixes"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Tiling basics",
+"f": "Tools, adhesive, spacers and planning a layout"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Planning a tile layout",
+"f": "Starting from the centre and avoiding thin edge cuts"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Cutting tiles",
+"f": "Manual tile cutters, nippers and wet saws with safety gear"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Tiling a small wall area",
+"f": "Spreading adhesive, setting tiles and checking level"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Grouting new tiles",
+"f": "Mixing, applying, cleaning and curing grout"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Plasterboard repairs",
+"f": "Patching holes and finishing joints"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Skimming basics: when to call a pro",
+"f": "Small patch skimming and why full walls need a plasterer"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Coving and mouldings",
+"f": "Measuring, cutting mitres and fixing decorative coving"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Fitting skirting boards",
+"f": "Measuring, mitring corners and fixing boards"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Types of flooring",
+"f": "Laminate, vinyl, engineered wood, tiles and carpet"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Preparing a subfloor",
+"f": "Level, clean and dry: the base for any floor"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Laying click laminate",
+"f": "Underlay, expansion gaps and staggering joints"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Laying vinyl planks",
+"f": "Cutting, fitting and finishing edges"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Fitting door bars and trims",
+"f": "Neat transitions between floor types"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Cutting around door frames",
+"f": "Undercutting frames for a tidy floor finish"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Repairing a damaged floorboard",
+"f": "Replacing a section of floor"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Sanding wooden floors: plan it",
+"f": "Hiring sanders, safety and dust management"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Refinishing wooden floors",
+"f": "Oils and lacquers for durable floors"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Carpet care and repairs",
+"f": "Fixing small snags and removing stains"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Rugs and grippers",
+"f": "Preventing slips with rug pads"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Soundproofing basics",
+"f": "Heavy curtains, rugs and sealing gaps to reduce noise"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Insulating with draught strips",
+"f": "Small gaps that make a big difference"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Window film for privacy",
+"f": "Applying frosted film neatly"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Choosing wall panelling",
+"f": "Shiplap, slats and beading for feature walls"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Installing panel moulding",
+"f": "Measuring, cutting and fixing decorative panels"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Wall hooks for heavy items",
+"f": "Bikes, tools and storage on strong fixings"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Mounting a TV safely",
+"f": "Brackets rated for weight and fixing into studs or masonry"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Cable management",
+"f": "Tidying visible cables with covers and clips without opening electrics"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Ceiling hooks for plants",
+"f": "Finding joists and choosing hooks for hanging plants"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Review: walls, tiles and floors",
+"f": "A light recap of tiling, plasterboard and flooring skills"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Restoring old furniture",
+"f": "Assessing condition and choosing what to keep"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Stripping old finishes",
+"f": "Safer strippers, scrapers and ventilation"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Repairing loose chair joints",
+"f": "Removing old glue and regluing"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Fixing drawer runners",
+"f": "Repairing wooden runners and replacing metal ones"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Replacing furniture legs",
+"f": "Fitting new legs or plates for a fresh look"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Reupholstering a dining chair seat",
+"f": "Foam, fabric and a staple gun"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Fixing scratches in wood",
+"f": "Touch-up pens, wax sticks and blending"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Water rings on wood",
+"f": "Gentle methods to reduce white marks"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Veneer repairs",
+"f": "Regluing lifting veneer and small patches"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Building a bench",
+"f": "Simple design, joinery and finishing"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Making a coffee table",
+"f": "Planning size, choosing timber and assembly"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Designing a bookcase",
+"f": "Shelf spans, weight and adjustable shelves"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Making shelves with hidden fixings",
+"f": "Floating shelf construction"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Building a headboard",
+"f": "Panel design, padding and wall mounting"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Making a plant stand",
+"f": "Small, sturdy projects for greenery"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Building storage cubes",
+"f": "Modular boxes for flexible storage"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Making a shoe rack",
+"f": "Simple slats and strong joints"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Building a wall-mounted desk",
+"f": "Folding desks for small spaces"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Kids furniture safety",
+"f": "Rounded edges, non-toxic finishes and stability"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Upcycling a dresser",
+"f": "Paint, new handles and liners"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Turning crates into shelving",
+"f": "Securing and finishing old crates"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Making a wooden tray",
+"f": "Small project for gifting"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Using a router: introduction",
+"f": "Edge profiles, safety and practice cuts"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Router edge profiles",
+"f": "Roundovers, chamfers and decorative edges"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Making a cutting board",
+"f": "Hardwood choice, food-safe finishes and care"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Making picture frames",
+"f": "Mitre cuts and gluing frames"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Finishing touches",
+"f": "Felt pads, handles and hardware"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Photographing your projects",
+"f": "Showing off your work with good light"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Selling or gifting your creations",
+"f": "Sharing your work with friends or at markets"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Review: furniture making and restoration",
+"f": "A light recap of restoring, building and finishing furniture"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Outdoor DIY safety",
+"f": "Weather, sun protection, footwear and working with others"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Garden tools guide",
+"f": "Spades, forks, pruners and keeping blades clean"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Caring for outdoor wood",
+"f": "Cleaning, staining and protecting fences and decks"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Fixing a fence panel",
+"f": "Replacing panels and checking posts"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Repairing a garden gate",
+"f": "Sagging gates, hinges and latches"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Building raised beds",
+"f": "Size, timber choice and filling with soil"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Making a compost bin",
+"f": "Simple designs from pallets or boards"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Building a bird box",
+"f": "Correct hole sizes and placement"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Building a bug hotel",
+"f": "Natural materials for garden wildlife"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Laying stepping stones",
+"f": "Spacing, levelling and bedding stones"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Edging a lawn or path",
+"f": "Neat borders with timber or metal edging"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Laying a gravel path",
+"f": "Membrane, edging and compacting"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Cleaning a patio",
+"f": "Brushing, washing and removing moss"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Refreshing decking",
+"f": "Cleaning, sanding and oiling decks"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Repairing deck boards",
+"f": "Replacing damaged boards safely"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Building a simple trellis",
+"f": "Supporting climbers with timber frames"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Making garden furniture",
+"f": "A simple outdoor bench or table"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Weatherproofing outdoor projects",
+"f": "Finishes and design that shed water"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Shed maintenance",
+"f": "Roofs, felt, doors and keeping sheds dry"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Organising a shed",
+"f": "Shelves, hooks and tool walls"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Outdoor lighting: plug-in and solar only",
+"f": "Solar lights and plug-in options, with electricians for wired lighting"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Water features the easy way",
+"f": "Solar fountains and container ponds"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Balcony gardens",
+"f": "Containers, weight limits and drainage"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Making a vertical garden",
+"f": "Wall planters for small spaces"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Protecting plants in winter",
+"f": "Fleece, covers and moving pots"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Building a cold frame",
+"f": "Extending the growing season with an old window"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Making a potting bench",
+"f": "Practical garden workstations"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Child-friendly garden projects",
+"f": "Sandpits, mud kitchens and safety"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Gardening and DIY with others",
+"f": "Community gardens and shared projects"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Review: outdoor and garden DIY",
+"f": "A light recap of fences, beds, decks and garden builds"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Advanced joinery introduction",
+"f": "Why traditional joints are strong and beautiful"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Mortise and tenon joints",
+"f": "Marking, cutting and fitting a classic joint"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Half-lap joints",
+"f": "Strong joints for frames and tables"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Dovetail joints basics",
+"f": "Marking and cutting tails and pins by hand"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Box joints",
+"f": "Making finger joints with a jig"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Bridle joints",
+"f": "Strong corner joints for frames"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Sharpening chisels to a mirror",
+"f": "Advanced honing for precise work"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Tuning a hand plane",
+"f": "Flattening soles and setting the iron"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Using a table saw: pro guidance",
+"f": "Why training, guards and push sticks matter, and learning from experts"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Using a mitre saw",
+"f": "Accurate crosscuts and angles"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Making jigs",
+"f": "Building helpers for repeatable cuts"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Working with hardwood",
+"f": "Density, tear-out and finishing tips"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Wood movement in design",
+"f": "Allowing for expansion and contraction"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Breadboard ends",
+"f": "Keeping tabletops flat with traditional joints"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Edge jointing boards",
+"f": "Gluing up wide panels"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Turning: lathe introduction",
+"f": "Safety, tools and making a first bowl blank"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Carving basics",
+"f": "Spoon carving and safe knife techniques"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Steam bending wood",
+"f": "How wood can be bent with steam"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Inlay and marquetry",
+"f": "Decorative designs with contrasting woods"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Advanced finishing techniques",
+"f": "French polish, spray finishes and rubbing out"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Japanese joinery inspiration",
+"f": "Elegant joints and woodworking traditions"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Scandinavian design principles",
+"f": "Simple, functional furniture ideas"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Designing your own furniture",
+"f": "Sketching, scaling and prototyping"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Using CAD for projects",
+"f": "Free tools to design projects digitally"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Cut lists and material optimisation",
+"f": "Planning cuts to reduce waste"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Pricing your woodworking",
+"f": "Valuing materials, time and skill"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Teaching woodworking to others",
+"f": "Sharing skills safely"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Workshop dust collection",
+"f": "Extractors, filters and healthier air"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Workshop layout",
+"f": "Organising tools for safe, efficient work"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Review: advanced woodworking",
+"f": "A light recap of joinery, machines and design"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Planning a room makeover",
+"f": "Mood boards, budgets and timelines"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Prioritising home improvements",
+"f": "What adds comfort and value first"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Working with professionals",
+"f": "Getting quotes, checking references and clear agreements"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Permits and building rules",
+"f": "Checking local rules before bigger projects"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Energy efficiency without electrics",
+"f": "Draught-proofing, curtains and loft insulation basics"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Insulating a loft safely",
+"f": "Protective gear, boards and leaving electrical work to experts"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Improving natural light",
+"f": "Mirrors, paint colours and window care"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Storage solutions for small homes",
+"f": "Under-stair, under-bed and wall storage"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Building a closet organiser",
+"f": "Rails, shelves and drawers inside wardrobes"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Making a home office corner",
+"f": "Desk, shelves and comfortable setup"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Kitchen upgrades for beginners",
+"f": "Handles, paint and open shelves"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Bathroom refresh on a budget",
+"f": "Paint, accessories and fresh seals"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Creating a reading nook",
+"f": "Shelves, cushions and lighting by lamps"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Child-proofing a home",
+"f": "Gates, locks and anchoring furniture"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Accessible home adaptations",
+"f": "Grab rails and ramps, with professionals for complex work"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Home security basics",
+"f": "Locks, door chains and window locks"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Fitting a door chain",
+"f": "Choosing and installing a chain or viewer"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Window locks",
+"f": "Fitting simple locks to windows"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Choosing smart home devices",
+"f": "Plug-in and battery devices, with electricians for wiring"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Noise reduction projects",
+"f": "Bookcases, seals and soft furnishings"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Making a mudroom area",
+"f": "Hooks, benches and shoe storage near the door"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Laundry room organisation",
+"f": "Shelves and drying solutions"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Garage organisation",
+"f": "Wall storage, ceiling racks and zones"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Seasonal decorations DIY",
+"f": "Wreaths, garlands and safe hanging"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Making cushion covers",
+"f": "Simple sewing for home decor"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Simple sewing repairs",
+"f": "Hems, buttons and curtain fixes"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Fabric and textile upgrades",
+"f": "Curtains, throws and rugs"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Making a headboard with fabric",
+"f": "Padded panels and upholstery basics"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Lampshade refresh",
+"f": "Covering shades with fabric, no rewiring"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Review: home improvement projects",
+"f": "A light recap of planning, organising and improving your home"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Upcycling mindset",
+"f": "Seeing potential in old items"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Repair cafés",
+"f": "Community spaces to fix things together"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Fixing a broken zip",
+"f": "Sliders, stoppers and when to replace"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Repairing a chair cane",
+"f": "Basics of cane and rush seats"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Gluing ceramics",
+"f": "Mending broken mugs and plates for display"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Repairing a broken umbrella",
+"f": "Small fixes that save items"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Bike maintenance basics",
+"f": "Tyres, chains and brakes checks"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Fixing a bike puncture",
+"f": "Removing the tyre, patching and refitting"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Sharpening garden tools",
+"f": "Restoring blades on shears and spades"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Leather care and repair",
+"f": "Cleaning and conditioning leather goods"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Shoe care and simple repairs",
+"f": "Polishing, insoles and new laces"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Repairing toys",
+"f": "Glue, stitching and checking safety"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Eco-friendly DIY",
+"f": "Reclaimed materials and low-VOC finishes"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Recycling DIY waste",
+"f": "Sorting wood, metal and paint waste"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Making a terrarium",
+"f": "Glass jars, layers and plants"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Making candle holders",
+"f": "Wood and glass holders, with fire safety"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Concrete crafts",
+"f": "Planters and coasters from small batches"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Resin basics: safety first",
+"f": "Ventilation, gloves and simple moulds"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Epoxy river table overview",
+"f": "How these tables are made and planning one"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Metalworking introduction",
+"f": "Cutting and filing metal safely"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Welding: learn with experts",
+"f": "Why welding needs training and proper gear"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Mosaic projects",
+"f": "Tiles, patterns and grouting mosaics"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Making a mirror frame",
+"f": "Decorative frames from reclaimed wood"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "DIY around the world",
+"f": "Building traditions from different cultures"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Famous makers and builders",
+"f": "Inspiring craftspeople and designers from history"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Starting a DIY journal",
+"f": "Recording projects, lessons and ideas"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Building your skill tree",
+"f": "Mapping skills and planning what to learn next"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Choosing your next big project",
+"f": "Matching ambition with skills and time"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Planning a project with friends",
+"f": "Sharing tasks and safety rules"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Review: repairs, upcycling and making",
+"f": "A light recap of repairs, materials and creative projects"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Your dream project plan",
+"f": "Writing a full plan for a project you love"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Gathering tools and materials",
+"f": "Lists, budgets and borrowing tools"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Project risk assessment",
+"f": "Thinking through hazards before starting"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Building your project step by step",
+"f": "Breaking work into manageable sessions"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Final review and what comes next",
+"f": "A final look back at the year and keeping your DIY skills growing"
+}
+]
+}

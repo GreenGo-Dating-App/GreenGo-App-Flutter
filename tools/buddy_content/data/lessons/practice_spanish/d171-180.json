@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 171,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Vosotros and ustedes",
+     "g": "Know when to use vosotros and when to use ustedes.",
+     "p": [
+      "In Spain: vosotros for friends and family (¿vosotros habláis?), ustedes when formal.",
+      "In Latin America: ustedes for everyone, friends and strangers alike: ¿ustedes hablan?",
+      "Pronouns follow: vosotros with os and vuestro; ustedes with les, los and su."
+     ],
+     "q": "Which form will you use more, vosotros or ustedes, and why?",
+     "c": "Ask the same three questions to a group of friends twice: once with vosotros and once with ustedes."
+    },
+    "de": {
+     "t": "Vosotros und ustedes",
+     "g": "Du weißt, wann du vosotros und wann ustedes benutzt.",
+     "p": [
+      "In Spanien: vosotros für Freunde und Familie (¿vosotros habláis?), ustedes förmlich.",
+      "In Lateinamerika: ustedes für alle, Freunde wie Fremde: ¿ustedes hablan?",
+      "Pronomen passen sich an: vosotros mit os und vuestro; ustedes mit les, los und su."
+     ],
+     "q": "Welche Form wirst du öfter benutzen, vosotros oder ustedes, und warum?",
+     "c": "Stell einer Freundesgruppe dieselben drei Fragen zweimal: einmal mit vosotros, einmal mit ustedes."
+    },
+    "es": {
+     "t": "Vosotros y ustedes",
+     "g": "Aprende cuándo usar vosotros y cuándo ustedes.",
+     "p": [
+      "En España: vosotros con amigos y familia (¿vosotros habláis?), ustedes en situaciones formales.",
+      "En Latinoamérica: ustedes para todos, amigos o desconocidos: ¿ustedes hablan?",
+      "Los pronombres cambian: vosotros con os y vuestro; ustedes con les, los y su."
+     ],
+     "q": "¿Qué forma vas a usar más, vosotros o ustedes, y por qué?",
+     "c": "Haz las mismas tres preguntas a un grupo de amigos dos veces: con vosotros y con ustedes."
+    },
+    "fr": {
+     "t": "Vosotros et ustedes",
+     "g": "Savoir quand utiliser vosotros et quand utiliser ustedes.",
+     "p": [
+      "En Espagne : vosotros entre amis et en famille (¿vosotros habláis?), ustedes pour le vouvoiement.",
+      "En Amérique latine : ustedes pour tout le monde, amis ou inconnus : ¿ustedes hablan?",
+      "Les pronoms suivent : vosotros avec os et vuestro ; ustedes avec les, los et su."
+     ],
+     "q": "Quelle forme utiliseras-tu le plus, vosotros ou ustedes, et pourquoi ?",
+     "c": "Pose les mêmes trois questions à un groupe d'amis deux fois : avec vosotros puis avec ustedes."
+    },
+    "it": {
+     "t": "Vosotros e ustedes",
+     "g": "Sai quando usare vosotros e quando ustedes.",
+     "p": [
+      "In Spagna: vosotros con amici e famiglia (¿vosotros habláis?), ustedes nel formale.",
+      "In America Latina: ustedes per tutti, amici o sconosciuti: ¿ustedes hablan?",
+      "I pronomi seguono: vosotros con os e vuestro; ustedes con les, los e su."
+     ],
+     "q": "Quale forma userai di più, vosotros o ustedes, e perché?",
+     "c": "Fai le stesse tre domande a un gruppo di amici due volte: con vosotros e con ustedes."
+    },
+    "pt": {
+     "t": "Vosotros e ustedes",
+     "g": "Sabes quando usar vosotros e quando usar ustedes.",
+     "p": [
+      "Em Espanha: vosotros com amigos e família (¿vosotros habláis?), ustedes em contexto formal.",
+      "Na América Latina: ustedes para todos, amigos ou desconhecidos: ¿ustedes hablan?",
+      "Os pronomes acompanham: vosotros com os e vuestro; ustedes com les, los e su."
+     ],
+     "q": "Que forma vais usar mais, vosotros ou ustedes, e porquê?",
+     "c": "Faz as mesmas três perguntas a um grupo de amigos duas vezes: com vosotros e com ustedes."
+    },
+    "pt_BR": {
+     "t": "Vosotros e ustedes",
+     "g": "Saiba quando usar vosotros e quando usar ustedes.",
+     "p": [
+      "Na Espanha: vosotros com amigos e família (¿vosotros habláis?), ustedes no formal.",
+      "Na América Latina: ustedes para todos, amigos ou desconhecidos, como vocês: ¿ustedes hablan?",
+      "Os pronomes acompanham: vosotros com os e vuestro; ustedes com les, los e su."
+     ],
+     "q": "Que forma você vai usar mais, vosotros ou ustedes, e por quê?",
+     "c": "Faça as mesmas três perguntas a um grupo de amigos duas vezes: com vosotros e com ustedes."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "vosotros, vosotras",
+      "ex": "¿Vosotros venís a la fiesta?"
+     },
+     {
+      "w": "ustedes",
+      "ex": "¿Ustedes son de aquí?"
+     },
+     {
+      "w": "habláis",
+      "ex": "¿Habláis inglés en casa?"
+     },
+     {
+      "w": "hablan",
+      "ex": "¿Ustedes hablan inglés?"
+     },
+     {
+      "w": "os",
+      "ex": "¿Os gusta la comida mexicana?"
+     },
+     {
+      "w": "les",
+      "ex": "¿Les gusta la comida mexicana?"
+     }
+    ],
+    "gram": "España: vosotros (informal plural, habláis, os) y ustedes (formal). Latinoamérica: ustedes para todos (hablan, les, su)."
+   }
+  },
+  {
+   "d": 172,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Spain and Latin America: words",
+     "g": "Recognise common word differences between Spain and Latin America.",
+     "p": [
+      "Same thing, different word: coche / carro, ordenador / computadora, zumo / jugo, móvil / celular.",
+      "Verbs too: conducir / manejar, coger / tomar (take the bus). Choose by where you are.",
+      "Don't panic: people understand both. Ask ¿Cómo se dice aquí...? to learn local words."
+     ],
+     "q": "Which variety of Spanish do you hear most, and which words have you noticed?",
+     "c": "Make a two-column list of six Spain and Latin America word pairs and write a sentence with each."
+    },
+    "de": {
+     "t": "Spanien und Lateinamerika: Wörter",
+     "g": "Du erkennst häufige Wortunterschiede zwischen Spanien und Lateinamerika.",
+     "p": [
+      "Gleiche Sache, anderes Wort: coche / carro, ordenador / computadora, zumo / jugo, móvil / celular.",
+      "Auch Verben: conducir / manejar, coger / tomar (den Bus nehmen). Wähle je nach Ort.",
+      "Keine Panik: Man versteht beides. Frag ¿Cómo se dice aquí...?, um lokale Wörter zu lernen."
+     ],
+     "q": "Welche Spanisch-Variante hörst du am meisten, und welche Wörter sind dir aufgefallen?",
+     "c": "Mach eine zweispaltige Liste mit sechs Wortpaaren aus Spanien und Lateinamerika und je einem Satz."
+    },
+    "es": {
+     "t": "España y Latinoamérica: palabras",
+     "g": "Reconoce diferencias de vocabulario frecuentes entre España y Latinoamérica.",
+     "p": [
+      "Misma cosa, distinta palabra: coche / carro, ordenador / computadora, zumo / jugo, móvil / celular.",
+      "También verbos: conducir / manejar, coger / tomar el autobús. Elige según dónde estés.",
+      "Tranquilo: todos entienden las dos. Pregunta ¿Cómo se dice aquí...? para aprender lo local."
+     ],
+     "q": "¿Qué variedad del español escuchas más y qué palabras has notado?",
+     "c": "Haz una lista de seis parejas de palabras de España y Latinoamérica y escribe una frase con cada una."
+    },
+    "fr": {
+     "t": "Espagne et Amérique latine : les mots",
+     "g": "Reconnaître les différences de vocabulaire courantes entre l'Espagne et l'Amérique latine.",
+     "p": [
+      "Même chose, autre mot : coche / carro, ordenador / computadora, zumo / jugo, móvil / celular.",
+      "Les verbes aussi : conducir / manejar, coger / tomar (prendre le bus). Choisis selon le pays.",
+      "Pas de panique : on comprend les deux. Demande ¿Cómo se dice aquí...? pour les mots locaux."
+     ],
+     "q": "Quelle variété d'espagnol entends-tu le plus, et quels mots as-tu remarqués ?",
+     "c": "Fais une liste de six paires de mots Espagne et Amérique latine et écris une phrase avec chacun."
+    },
+    "it": {
+     "t": "Spagna e America Latina: parole",
+     "g": "Riconosci le differenze di lessico più comuni tra Spagna e America Latina.",
+     "p": [
+      "Stessa cosa, parola diversa: coche / carro, ordenador / computadora, zumo / jugo, móvil / celular.",
+      "Anche i verbi: conducir / manejar, coger / tomar (prendere l'autobus). Scegli in base al paese.",
+      "Niente panico: si capiscono entrambe. Chiedi ¿Cómo se dice aquí...? per le parole locali."
+     ],
+     "q": "Quale varietà di spagnolo senti di più, e quali parole hai notato?",
+     "c": "Fai una lista di sei coppie di parole Spagna e America Latina e scrivi una frase con ognuna."
+    },
+    "pt": {
+     "t": "Espanha e América Latina: palavras",
+     "g": "Reconheces diferenças de vocabulário comuns entre Espanha e América Latina.",
+     "p": [
+      "A mesma coisa, outra palavra: coche / carro, ordenador / computadora, zumo / jugo, móvil / celular.",
+      "Também verbos: conducir / manejar, coger / tomar (apanhar o autocarro). Escolhe conforme o país.",
+      "Calma: toda a gente percebe as duas. Pergunta ¿Cómo se dice aquí...? para aprender o local."
+     ],
+     "q": "Que variedade de espanhol ouves mais, e que palavras notaste?",
+     "c": "Faz uma lista de seis pares de palavras de Espanha e da América Latina e escreve uma frase com cada."
+    },
+    "pt_BR": {
+     "t": "Espanha e América Latina: palavras",
+     "g": "Reconheça diferenças de vocabulário comuns entre Espanha e América Latina.",
+     "p": [
+      "A mesma coisa, outra palavra: coche / carro, ordenador / computadora, zumo / jugo, móvil / celular.",
+      "Verbos também: conducir / manejar, coger / tomar (pegar o ônibus). Escolha conforme o país.",
+      "Calma: todo mundo entende as duas. Pergunte ¿Cómo se dice aquí...? para aprender o local."
+     ],
+     "q": "Que variedade de espanhol você ouve mais, e que palavras você notou?",
+     "c": "Faça uma lista de seis pares de palavras da Espanha e da América Latina e escreva uma frase com cada."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el coche / el carro",
+      "ex": "En México dicen carro; en España, coche."
+     },
+     {
+      "w": "el ordenador / la computadora",
+      "ex": "Mi computadora es nueva."
+     },
+     {
+      "w": "el zumo / el jugo",
+      "ex": "Un jugo de naranja, por favor."
+     },
+     {
+      "w": "el móvil / el celular",
+      "ex": "Se me ha olvidado el móvil en casa."
+     },
+     {
+      "w": "conducir / manejar",
+      "ex": "En Argentina se dice manejar."
+     },
+     {
+      "w": "las gafas / los lentes",
+      "ex": "No veo nada sin mis lentes."
+     }
+    ],
+    "gram": "Mismo significado, distinta palabra según el país: coche (España) y carro (México, Colombia), móvil y celular, zumo y jugo."
+   }
+  },
+  {
+   "d": 173,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Sounds of Spanish: c, z and seseo",
+     "g": "Hear and say c and z the way Madrid and Mexico City do.",
+     "p": [
+      "In most of Spain z, ce and ci sound like English th: gracias = gra-thias. This is distinción.",
+      "In Latin America, the Canaries and parts of Andalusia they sound like s: gra-sias. This is seseo.",
+      "Both are correct! Pick one and be consistent. Ca, co, cu always sound like k: casa, cosa."
+     ],
+     "q": "Which pronunciation do you prefer, distinción or seseo? Why?",
+     "c": "Read aloud: cinco zapatos en la plaza, gracias por la cerveza. Try it both ways."
+    },
+    "de": {
+     "t": "Laute im Spanischen: c, z und seseo",
+     "g": "Du hörst und sprichst c und z wie in Madrid und in Mexiko-Stadt.",
+     "p": [
+      "In den meisten Teilen Spaniens klingen z, ce, ci wie englisches th: gracias = gra-thias (distinción).",
+      "In Lateinamerika, auf den Kanaren und in Teilen Andalusiens wie s: gra-sias (seseo).",
+      "Beides ist richtig! Wähl eins und bleib dabei. Ca, co, cu klingen immer wie k: casa, cosa."
+     ],
+     "q": "Welche Aussprache gefällt dir besser, distinción oder seseo? Warum?",
+     "c": "Lies laut: cinco zapatos en la plaza, gracias por la cerveza. Probier beide Varianten."
+    },
+    "es": {
+     "t": "Los sonidos del español: c, z y seseo",
+     "g": "Escucha y pronuncia la c y la z como en Madrid y como en Ciudad de México.",
+     "p": [
+      "En casi toda España z, ce y ci suenan como la th inglesa: gracias suena gra-zias. Es la distinción.",
+      "En Latinoamérica, Canarias y parte de Andalucía suenan como s: gra-sias. Es el seseo.",
+      "¡Las dos son correctas! Elige una y sé coherente. Ca, co, cu siempre suenan k: casa, cosa."
+     ],
+     "q": "¿Qué pronunciación prefieres, la distinción o el seseo? ¿Por qué?",
+     "c": "Lee en voz alta: cinco zapatos en la plaza, gracias por la cerveza. Prueba las dos formas."
+    },
+    "fr": {
+     "t": "Les sons de l'espagnol : c, z et seseo",
+     "g": "Entendre et prononcer le c et le z comme à Madrid et à Mexico.",
+     "p": [
+      "Dans la plupart de l'Espagne, z, ce, ci se prononcent comme le th anglais : gracias = gra-thias (distinción).",
+      "En Amérique latine, aux Canaries et en partie en Andalousie, comme un s : gra-sias (seseo).",
+      "Les deux sont corrects ! Choisis-en un et sois cohérent. Ca, co, cu se disent toujours k : casa, cosa."
+     ],
+     "q": "Quelle prononciation préfères-tu, distinción ou seseo ? Pourquoi ?",
+     "c": "Lis à voix haute : cinco zapatos en la plaza, gracias por la cerveza. Essaie les deux façons."
+    },
+    "it": {
+     "t": "I suoni dello spagnolo: c, z e seseo",
+     "g": "Senti e pronunci c e z come a Madrid e come a Città del Messico.",
+     "p": [
+      "In quasi tutta la Spagna z, ce, ci suonano come il th inglese: gracias = gra-thias (distinción).",
+      "In America Latina, alle Canarie e in parte dell'Andalusia suonano come s: gra-sias (seseo).",
+      "Sono corrette entrambe! Scegline una e sii coerente. Ca, co, cu suonano sempre k: casa, cosa."
+     ],
+     "q": "Quale pronuncia preferisci, distinción o seseo? Perché?",
+     "c": "Leggi ad alta voce: cinco zapatos en la plaza, gracias por la cerveza. Prova in tutti e due i modi."
+    },
+    "pt": {
+     "t": "Os sons do espanhol: c, z e seseo",
+     "g": "Ouves e pronuncias o c e o z como em Madrid e na Cidade do México.",
+     "p": [
+      "Na maior parte de Espanha z, ce, ci soam como o th inglês: gracias = gra-thias (distinción).",
+      "Na América Latina, nas Canárias e em parte da Andaluzia soam como s: gra-sias (seseo).",
+      "Ambas são corretas! Escolhe uma e sê coerente. Ca, co, cu soam sempre k: casa, cosa."
+     ],
+     "q": "Que pronúncia preferes, distinción ou seseo? Porquê?",
+     "c": "Lê em voz alta: cinco zapatos en la plaza, gracias por la cerveza. Experimenta as duas formas."
+    },
+    "pt_BR": {
+     "t": "Os sons do espanhol: c, z e seseo",
+     "g": "Ouça e pronuncie o c e o z como em Madri e na Cidade do México.",
+     "p": [
+      "Na maior parte da Espanha z, ce, ci soam como o th do inglês: gracias = gra-thias (distinción).",
+      "Na América Latina, nas Canárias e em parte da Andaluzia soam como s: gra-sias (seseo).",
+      "As duas são corretas! Escolha uma e seja coerente. Ca, co, cu soam sempre k: casa, cosa."
+     ],
+     "q": "Que pronúncia você prefere, distinción ou seseo? Por quê?",
+     "c": "Leia em voz alta: cinco zapatos en la plaza, gracias por la cerveza. Experimente os dois jeitos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "gracias",
+      "ex": "Muchas gracias por todo."
+     },
+     {
+      "w": "la cerveza",
+      "ex": "Una cerveza bien fría, por favor."
+     },
+     {
+      "w": "el zapato",
+      "ex": "Me he comprado unos zapatos nuevos."
+     },
+     {
+      "w": "la ciudad",
+      "ex": "Madrid es una ciudad muy viva."
+     },
+     {
+      "w": "cinco",
+      "ex": "Tengo cinco hermanos."
+     },
+     {
+      "w": "la plaza",
+      "ex": "Quedamos en la plaza Mayor."
+     }
+    ],
+    "gram": "Distinción (centro y norte de España): z, ce, ci suenan como th inglesa. Seseo (Latinoamérica, Canarias, parte de Andalucía): suenan como s."
+   }
+  },
+  {
+   "d": 174,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Diminutives: -ito, -ita",
+     "g": "Use -ito and -ita to show smallness, tenderness or friendliness.",
+     "p": [
+      "Basic rule: casa becomes casita, perro becomes perrito. After -e, -n or -r: café, cafecito; joven, jovencito.",
+      "Not only size: abuelita shows love, un momentito sounds softer and kinder.",
+      "Very common in Latin America: ahorita (right now, or in a bit in Mexico), cerquita, poquito."
+     ],
+     "q": "What is something you would call by a diminutive, like your pet or a favourite place?",
+     "c": "Turn eight words into diminutives (casa, perro, café, momento, abuela, poco, cerca, pequeño) and use three in sentences."
+    },
+    "de": {
+     "t": "Verkleinerungsformen: -ito, -ita",
+     "g": "Du nutzt -ito und -ita für Kleinheit, Zärtlichkeit oder Freundlichkeit.",
+     "p": [
+      "Grundregel: casa wird casita, perro wird perrito. Nach -e, -n, -r: café, cafecito; joven, jovencito.",
+      "Nicht nur Größe: abuelita zeigt Liebe, un momentito klingt weicher und netter.",
+      "Sehr häufig in Lateinamerika: ahorita (gleich, in Mexiko auch später), cerquita, poquito."
+     ],
+     "q": "Was würdest du mit einer Verkleinerungsform nennen, etwa dein Haustier oder einen Lieblingsort?",
+     "c": "Verkleinere acht Wörter (casa, perro, café, momento, abuela, poco, cerca, pequeño) und bilde drei Sätze."
+    },
+    "es": {
+     "t": "Diminutivos: -ito, -ita",
+     "g": "Usa -ito e -ita para expresar tamaño, cariño o amabilidad.",
+     "p": [
+      "Regla básica: casa, casita; perro, perrito. Tras -e, -n o -r: café, cafecito; joven, jovencito.",
+      "No solo es tamaño: abuelita expresa cariño y un momentito suena más suave.",
+      "Muy común en Latinoamérica: ahorita (ahora mismo o dentro de un rato en México), cerquita, poquito."
+     ],
+     "q": "¿A qué llamarías con un diminutivo, como tu mascota o un lugar favorito?",
+     "c": "Pasa a diminutivo ocho palabras (casa, perro, café, momento, abuela, poco, cerca, pequeño) y usa tres en frases."
+    },
+    "fr": {
+     "t": "Diminutifs : -ito, -ita",
+     "g": "Utiliser -ito et -ita pour la petite taille, la tendresse ou la gentillesse.",
+     "p": [
+      "Règle de base : casa devient casita, perro perrito. Après -e, -n, -r : café, cafecito ; joven, jovencito.",
+      "Pas seulement la taille : abuelita exprime l'affection, un momentito est plus doux.",
+      "Très courant en Amérique latine : ahorita (tout de suite, ou plus tard au Mexique), cerquita, poquito."
+     ],
+     "q": "Qu'appellerais-tu avec un diminutif, comme ton animal ou un lieu préféré ?",
+     "c": "Mets huit mots au diminutif (casa, perro, café, momento, abuela, poco, cerca, pequeño) et utilises-en trois."
+    },
+    "it": {
+     "t": "Diminutivi: -ito, -ita",
+     "g": "Usi -ito e -ita per indicare piccolezza, affetto o gentilezza.",
+     "p": [
+      "Regola base: casa diventa casita, perro perrito. Dopo -e, -n, -r: café, cafecito; joven, jovencito.",
+      "Non solo dimensione: abuelita esprime affetto, un momentito suona più gentile.",
+      "Comunissimo in America Latina: ahorita (subito, o tra un po' in Messico), cerquita, poquito."
+     ],
+     "q": "Cosa chiameresti con un diminutivo, come il tuo animale o un posto preferito?",
+     "c": "Trasforma otto parole in diminutivi (casa, perro, café, momento, abuela, poco, cerca, pequeño) e usane tre in frasi."
+    },
+    "pt": {
+     "t": "Diminutivos: -ito, -ita",
+     "g": "Usas -ito e -ita para mostrar tamanho pequeno, carinho ou simpatia.",
+     "p": [
+      "Regra básica: casa passa a casita, perro a perrito. Depois de -e, -n, -r: café, cafecito; joven, jovencito.",
+      "Não é só tamanho: abuelita mostra carinho, un momentito soa mais suave, como -inho.",
+      "Muito comum na América Latina: ahorita (já, ou daqui a pouco no México), cerquita, poquito."
+     ],
+     "q": "A que chamarias com um diminutivo, como o teu animal ou um lugar preferido?",
+     "c": "Passa oito palavras ao diminutivo (casa, perro, café, momento, abuela, poco, cerca, pequeño) e usa três em frases."
+    },
+    "pt_BR": {
+     "t": "Diminutivos: -ito, -ita",
+     "g": "Use -ito e -ita para mostrar tamanho pequeno, carinho ou simpatia, como o nosso -inho.",
+     "p": [
+      "Regra básica: casa vira casita, perro vira perrito. Depois de -e, -n, -r: café, cafecito; joven, jovencito.",
+      "Não é só tamanho: abuelita mostra carinho, un momentito soa mais gentil.",
+      "Muito comum na América Latina: ahorita (já, ou daqui a pouco no México), cerquita, poquito."
+     ],
+     "q": "O que você chamaria com um diminutivo, como seu bichinho ou um lugar favorito?",
+     "c": "Passe oito palavras para o diminutivo (casa, perro, café, momento, abuela, poco, cerca, pequeño) e use três em frases."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un cafecito",
+      "ex": "¿Nos tomamos un cafecito?"
+     },
+     {
+      "w": "ahorita",
+      "ex": "Ahorita vengo, espérame."
+     },
+     {
+      "w": "la abuelita",
+      "ex": "Mi abuelita hace las mejores empanadas."
+     },
+     {
+      "w": "un momentito",
+      "ex": "Un momentito, por favor."
+     },
+     {
+      "w": "pequeñito, pequeñita",
+      "ex": "Tienen un perro pequeñito."
+     },
+     {
+      "w": "cerquita",
+      "ex": "La playa está cerquita de aquí."
+     }
+    ],
+    "gram": "Diminutivo -ito, -ita (o -cito tras -e, -n, -r): casa, casita; café, cafecito. Indica tamaño pequeño, cariño o suaviza una petición."
+   }
+  },
+  {
+   "d": 175,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Exclamations: ¡Qué bien!",
+     "g": "React with feeling using short exclamations with qué.",
+     "p": [
+      "Qué + adjective: ¡Qué bonito!, ¡Qué rico!, ¡Qué raro! Qué + noun: ¡Qué pena!, ¡Qué suerte!, ¡Qué susto!",
+      "Longer: ¡Qué casa tan bonita!, ¡Qué día más largo! Note the accent on qué.",
+      "Colloquial Spain: ¡Qué rollo! (what a drag), ¡Qué guay! (how cool). Mexico: ¡Qué padre!"
+     ],
+     "q": "I passed my exam, but I lost my keys! How would you react to each piece of news?",
+     "c": "Write five pieces of news and react to each one with a different exclamation."
+    },
+    "de": {
+     "t": "Ausrufe: ¡Qué bien!",
+     "g": "Du reagierst gefühlvoll mit kurzen Ausrufen mit qué.",
+     "p": [
+      "Qué + Adjektiv: ¡Qué bonito!, ¡Qué rico!, ¡Qué raro! Qué + Nomen: ¡Qué pena!, ¡Qué suerte!, ¡Qué susto!",
+      "Länger: ¡Qué casa tan bonita!, ¡Qué día más largo! Achte auf den Akzent auf qué.",
+      "Umgangssprachlich Spanien: ¡Qué rollo! (wie öde), ¡Qué guay! (wie cool). Mexiko: ¡Qué padre!"
+     ],
+     "q": "Ich habe die Prüfung bestanden, aber meine Schlüssel verloren! Wie reagierst du auf beides?",
+     "c": "Schreib fünf Neuigkeiten und reagiere auf jede mit einem anderen Ausruf."
+    },
+    "es": {
+     "t": "Exclamaciones: ¡Qué bien!",
+     "g": "Reacciona con emoción usando exclamaciones cortas con qué.",
+     "p": [
+      "Qué + adjetivo: ¡Qué bonito!, ¡Qué rico!, ¡Qué raro! Qué + nombre: ¡Qué pena!, ¡Qué suerte!, ¡Qué susto!",
+      "Más largas: ¡Qué casa tan bonita!, ¡Qué día más largo! Ojo a la tilde de qué.",
+      "Coloquial en España: ¡Qué rollo!, ¡Qué guay! En México: ¡Qué padre!"
+     ],
+     "q": "¡He aprobado el examen, pero he perdido las llaves! ¿Cómo reaccionas a cada noticia?",
+     "c": "Escribe cinco noticias y reacciona a cada una con una exclamación distinta."
+    },
+    "fr": {
+     "t": "Exclamations : ¡Qué bien!",
+     "g": "Réagir avec émotion grâce à de courtes exclamations avec qué.",
+     "p": [
+      "Qué + adjectif : ¡Qué bonito!, ¡Qué rico!, ¡Qué raro! Qué + nom : ¡Qué pena!, ¡Qué suerte!, ¡Qué susto!",
+      "Plus long : ¡Qué casa tan bonita!, ¡Qué día más largo! Attention à l'accent sur qué.",
+      "Familier en Espagne : ¡Qué rollo! (quelle barbe), ¡Qué guay! (trop cool). Au Mexique : ¡Qué padre!"
+     ],
+     "q": "J'ai réussi mon examen, mais j'ai perdu mes clés ! Comment réagis-tu à chaque nouvelle ?",
+     "c": "Écris cinq nouvelles et réagis à chacune avec une exclamation différente."
+    },
+    "it": {
+     "t": "Esclamazioni: ¡Qué bien!",
+     "g": "Reagisci con emozione usando brevi esclamazioni con qué.",
+     "p": [
+      "Qué + aggettivo: ¡Qué bonito!, ¡Qué rico!, ¡Qué raro! Qué + nome: ¡Qué pena!, ¡Qué suerte!, ¡Qué susto!",
+      "Più lunghe: ¡Qué casa tan bonita!, ¡Qué día más largo! Attenzione all'accento su qué.",
+      "Colloquiale in Spagna: ¡Qué rollo! (che noia), ¡Qué guay! (che figo). In Messico: ¡Qué padre!"
+     ],
+     "q": "Ho passato l'esame, ma ho perso le chiavi! Come reagisci a ciascuna notizia?",
+     "c": "Scrivi cinque notizie e reagisci a ognuna con un'esclamazione diversa."
+    },
+    "pt": {
+     "t": "Exclamações: ¡Qué bien!",
+     "g": "Reages com emoção usando exclamações curtas com qué.",
+     "p": [
+      "Qué + adjetivo: ¡Qué bonito!, ¡Qué rico!, ¡Qué raro! Qué + nome: ¡Qué pena!, ¡Qué suerte!, ¡Qué susto!",
+      "Mais longas: ¡Qué casa tan bonita!, ¡Qué día más largo! Atenção ao acento em qué.",
+      "Coloquial em Espanha: ¡Qué rollo! (que seca), ¡Qué guay! (que fixe). No México: ¡Qué padre!"
+     ],
+     "q": "Passei no exame, mas perdi as chaves! Como reages a cada notícia?",
+     "c": "Escreve cinco notícias e reage a cada uma com uma exclamação diferente."
+    },
+    "pt_BR": {
+     "t": "Exclamações: ¡Qué bien!",
+     "g": "Reaja com emoção usando exclamações curtas com qué.",
+     "p": [
+      "Qué + adjetivo: ¡Qué bonito!, ¡Qué rico!, ¡Qué raro! Qué + substantivo: ¡Qué pena!, ¡Qué suerte!, ¡Qué susto!",
+      "Mais longas: ¡Qué casa tan bonita!, ¡Qué día más largo! Atenção ao acento em qué.",
+      "Coloquial na Espanha: ¡Qué rollo! (que chato), ¡Qué guay! (que legal). No México: ¡Qué padre!"
+     ],
+     "q": "Passei na prova, mas perdi as chaves! Como você reage a cada notícia?",
+     "c": "Escreva cinco notícias e reaja a cada uma com uma exclamação diferente."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "¡Qué bonito!",
+      "ex": "¡Qué bonito es este pueblo!"
+     },
+     {
+      "w": "¡Qué pena!",
+      "ex": "¿No puedes venir? ¡Qué pena!"
+     },
+     {
+      "w": "¡Qué suerte!",
+      "ex": "¿Te ha tocado la lotería? ¡Qué suerte!"
+     },
+     {
+      "w": "¡Qué rico!",
+      "ex": "¡Qué rico está este pastel!"
+     },
+     {
+      "w": "¡Qué rollo!",
+      "ex": "Tengo que trabajar el sábado. ¡Qué rollo!"
+     },
+     {
+      "w": "¡Qué + nombre + tan + adjetivo!",
+      "ex": "¡Qué casa tan bonita!"
+     }
+    ],
+    "gram": "Exclamaciones con qué + adjetivo (¡qué bonito!), qué + nombre (¡qué pena!) o qué + nombre + tan/más + adjetivo (¡qué día más largo!)."
+   }
+  },
+  {
+   "d": 176,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Interjections and fillers",
+     "g": "Sound natural with the small words Spanish speakers use all the time.",
+     "p": [
+      "Pues to start or think: pues no sé. Bueno to accept or move on: bueno, vale.",
+      "O sea to clarify: o sea, que no vienes. Es que to give a reason: es que estoy cansado.",
+      "Vale means OK in Spain; in Latin America you hear ok, dale (Argentina) or sale (Mexico)."
+     ],
+     "q": "Why can't you come to my party on Saturday? Answer starting with es que.",
+     "c": "Retell your day in four sentences using pues, bueno, o sea and es que."
+    },
+    "de": {
+     "t": "Füllwörter und Ausrufe",
+     "g": "Du klingst natürlich mit den kleinen Wörtern, die Spanischsprachige ständig benutzen.",
+     "p": [
+      "Pues zum Anfangen oder Nachdenken: pues no sé. Bueno zum Annehmen oder Weitergehen: bueno, vale.",
+      "O sea zum Klarstellen: o sea, que no vienes. Es que für einen Grund: es que estoy cansado.",
+      "Vale heißt in Spanien okay; in Lateinamerika hörst du ok, dale (Argentinien) oder sale (Mexiko)."
+     ],
+     "q": "Warum kannst du am Samstag nicht zu meiner Party kommen? Beginne mit es que.",
+     "c": "Erzähl deinen Tag in vier Sätzen mit pues, bueno, o sea und es que."
+    },
+    "es": {
+     "t": "Interjecciones y muletillas",
+     "g": "Suena natural con las palabras pequeñas que los hablantes usan todo el tiempo.",
+     "p": [
+      "Pues para empezar o pensar: pues no sé. Bueno para aceptar o cambiar de tema: bueno, vale.",
+      "O sea para aclarar: o sea, que no vienes. Es que para justificarte: es que estoy cansado.",
+      "Vale es de acuerdo en España; en Latinoamérica se oye ok, dale (Argentina) o sale (México)."
+     ],
+     "q": "¿Por qué no puedes venir a mi fiesta el sábado? Responde empezando con es que.",
+     "c": "Cuenta tu día en cuatro frases usando pues, bueno, o sea y es que."
+    },
+    "fr": {
+     "t": "Interjections et mots de remplissage",
+     "g": "Paraître naturel avec les petits mots que les hispanophones utilisent sans arrêt.",
+     "p": [
+      "Pues pour commencer ou réfléchir : pues no sé. Bueno pour accepter ou passer à autre chose : bueno, vale.",
+      "O sea pour préciser : o sea, que no vienes. Es que pour se justifier : es que estoy cansado.",
+      "Vale veut dire OK en Espagne ; en Amérique latine on entend ok, dale (Argentine) ou sale (Mexique)."
+     ],
+     "q": "Pourquoi ne peux-tu pas venir à ma fête samedi ? Commence ta réponse par es que.",
+     "c": "Raconte ta journée en quatre phrases avec pues, bueno, o sea et es que."
+    },
+    "it": {
+     "t": "Interiezioni e intercalari",
+     "g": "Suoni naturale con le parole brevi che gli ispanofoni usano di continuo.",
+     "p": [
+      "Pues per iniziare o pensare: pues no sé. Bueno per accettare o cambiare argomento: bueno, vale.",
+      "O sea per chiarire: o sea, que no vienes. Es que per giustificarti: es que estoy cansado.",
+      "Vale significa ok in Spagna; in America Latina si sente ok, dale (Argentina) o sale (Messico)."
+     ],
+     "q": "Perché non puoi venire alla mia festa sabato? Rispondi iniziando con es que.",
+     "c": "Racconta la tua giornata in quattro frasi usando pues, bueno, o sea ed es que."
+    },
+    "pt": {
+     "t": "Interjeições e bordões",
+     "g": "Soas natural com as palavras pequenas que os falantes usam a toda a hora.",
+     "p": [
+      "Pues para começar ou pensar: pues no sé. Bueno para aceitar ou mudar de assunto: bueno, vale.",
+      "O sea para esclarecer: o sea, que no vienes. Es que para justificar: es que estoy cansado.",
+      "Vale é ok em Espanha; na América Latina ouve-se ok, dale (Argentina) ou sale (México)."
+     ],
+     "q": "Porque é que não podes vir à minha festa no sábado? Responde a começar com es que.",
+     "c": "Conta o teu dia em quatro frases usando pues, bueno, o sea e es que."
+    },
+    "pt_BR": {
+     "t": "Interjeições e muletas",
+     "g": "Soe natural com as palavrinhas que os falantes usam o tempo todo.",
+     "p": [
+      "Pues para começar ou pensar: pues no sé. Bueno para aceitar ou mudar de assunto: bueno, vale.",
+      "O sea para esclarecer, como ou seja: o sea, que no vienes. Es que para justificar: es que estoy cansado.",
+      "Vale é ok na Espanha; na América Latina se ouve ok, dale (Argentina) ou sale (México)."
+     ],
+     "q": "Por que você não pode vir à minha festa no sábado? Responda começando com es que.",
+     "c": "Conte o seu dia em quatro frases usando pues, bueno, o sea e es que."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "pues",
+      "ex": "Pues no sé, la verdad."
+     },
+     {
+      "w": "bueno",
+      "ex": "Bueno, vamos a ver."
+     },
+     {
+      "w": "o sea",
+      "ex": "O sea, que no vienes."
+     },
+     {
+      "w": "vale",
+      "ex": "¿Quedamos a las cinco? Vale."
+     },
+     {
+      "w": "¿sabes?",
+      "ex": "Es que estoy cansado, ¿sabes?"
+     },
+     {
+      "w": "es que",
+      "ex": "Es que no tengo tiempo."
+     }
+    ],
+    "gram": "Marcadores: pues (empezar o pensar), bueno (aceptar o cambiar), o sea (aclarar), es que (justificar), vale (de acuerdo, en España)."
+   }
+  },
+  {
+   "d": 177,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Hispanic festivals",
+     "g": "Discover colourful festivals and describe a tradition.",
+     "p": [
+      "La Tomatina (Buñol, Spain): a giant tomato fight. Las Fallas (Valencia): huge figures burned in March.",
+      "Inti Raymi (Cusco, Peru): the Inca sun festival in June. Carnaval de Barranquilla (Colombia): parades and dance.",
+      "Describe with se and the present: se celebra en junio, la gente se disfraza, se queman figuras."
+     ],
+     "q": "Which of these festivals would you most like to see, and why?",
+     "c": "Describe a festival from your country in four sentences: where, when, what people do and what you like."
+    },
+    "de": {
+     "t": "Hispanische Feste",
+     "g": "Du entdeckst farbenfrohe Feste und beschreibst eine Tradition.",
+     "p": [
+      "La Tomatina (Buñol, Spanien): eine riesige Tomatenschlacht. Las Fallas (Valencia): Figuren brennen im März.",
+      "Inti Raymi (Cusco, Peru): das Inka-Sonnenfest im Juni. Carnaval de Barranquilla (Kolumbien): Umzüge und Tanz.",
+      "Beschreiben mit se und Präsens: se celebra en junio, la gente se disfraza, se queman figuras."
+     ],
+     "q": "Welches dieser Feste würdest du am liebsten erleben, und warum?",
+     "c": "Beschreib ein Fest aus deinem Land in vier Sätzen: wo, wann, was man macht und was dir gefällt."
+    },
+    "es": {
+     "t": "Fiestas hispanas",
+     "g": "Descubre fiestas llenas de color y describe una tradición.",
+     "p": [
+      "La Tomatina (Buñol): una batalla gigante de tomates. Las Fallas (Valencia): se queman figuras enormes en marzo.",
+      "Inti Raymi (Cusco, Perú): la fiesta inca del sol en junio. Carnaval de Barranquilla (Colombia): desfiles y baile.",
+      "Describe con se y presente: se celebra en junio, la gente se disfraza, se queman figuras."
+     ],
+     "q": "¿Cuál de estas fiestas te gustaría ver y por qué?",
+     "c": "Describe una fiesta de tu país en cuatro frases: dónde, cuándo, qué hace la gente y qué te gusta."
+    },
+    "fr": {
+     "t": "Fêtes hispaniques",
+     "g": "Découvrir des fêtes hautes en couleur et décrire une tradition.",
+     "p": [
+      "La Tomatina (Buñol, Espagne) : une bataille géante de tomates. Las Fallas (Valence) : figures brûlées en mars.",
+      "Inti Raymi (Cusco, Pérou) : la fête inca du soleil en juin. Carnaval de Barranquilla (Colombie) : défilés et danse.",
+      "Décrire avec se et le présent : se celebra en junio, la gente se disfraza, se queman figuras."
+     ],
+     "q": "Laquelle de ces fêtes aimerais-tu le plus voir, et pourquoi ?",
+     "c": "Décris une fête de ton pays en quatre phrases : où, quand, ce que font les gens et ce que tu aimes."
+    },
+    "it": {
+     "t": "Feste ispaniche",
+     "g": "Scopri feste coloratissime e descrivi una tradizione.",
+     "p": [
+      "La Tomatina (Buñol, Spagna): una battaglia gigante di pomodori. Las Fallas (Valencia): figure bruciate a marzo.",
+      "Inti Raymi (Cusco, Perù): la festa inca del sole a giugno. Carnaval de Barranquilla (Colombia): sfilate e balli.",
+      "Descrivi con se e il presente: se celebra en junio, la gente se disfraza, se queman figuras."
+     ],
+     "q": "Quale di queste feste ti piacerebbe vedere di più, e perché?",
+     "c": "Descrivi una festa del tuo paese in quattro frasi: dove, quando, cosa fa la gente e cosa ti piace."
+    },
+    "pt": {
+     "t": "Festas hispânicas",
+     "g": "Descobres festas cheias de cor e descreves uma tradição.",
+     "p": [
+      "La Tomatina (Buñol, Espanha): uma batalha gigante de tomates. Las Fallas (Valência): figuras queimadas em março.",
+      "Inti Raymi (Cusco, Peru): a festa inca do sol em junho. Carnaval de Barranquilla (Colômbia): desfiles e dança.",
+      "Descreve com se e o presente: se celebra en junio, la gente se disfraza, se queman figuras."
+     ],
+     "q": "Qual destas festas mais gostavas de ver, e porquê?",
+     "c": "Descreve uma festa do teu país em quatro frases: onde, quando, o que as pessoas fazem e o que gostas."
+    },
+    "pt_BR": {
+     "t": "Festas hispânicas",
+     "g": "Descubra festas cheias de cor e descreva uma tradição.",
+     "p": [
+      "La Tomatina (Buñol, Espanha): uma guerra gigante de tomates. Las Fallas (Valência): figuras queimadas em março.",
+      "Inti Raymi (Cusco, Peru): a festa inca do sol em junho. Carnaval de Barranquilla (Colômbia): desfiles e dança.",
+      "Descreva com se e o presente: se celebra en junio, la gente se disfraza, se queman figuras."
+     ],
+     "q": "Qual dessas festas você mais gostaria de ver, e por quê?",
+     "c": "Descreva uma festa do seu país em quatro frases: onde, quando, o que as pessoas fazem e do que você gosta."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la fiesta",
+      "ex": "Las fiestas de mi pueblo son en agosto."
+     },
+     {
+      "w": "La Tomatina",
+      "ex": "En La Tomatina la gente se tira tomates."
+     },
+     {
+      "w": "Las Fallas",
+      "ex": "En Las Fallas de Valencia se queman figuras enormes."
+     },
+     {
+      "w": "el desfile",
+      "ex": "El desfile del Carnaval de Barranquilla es espectacular."
+     },
+     {
+      "w": "celebrarse",
+      "ex": "El Inti Raymi se celebra en Cusco en junio."
+     },
+     {
+      "w": "disfrazarse",
+      "ex": "En Carnaval todo el mundo se disfraza."
+     }
+    ],
+    "gram": "Se celebra + lugar o fecha: se celebra en Valencia, se celebra en marzo. Presente para tradiciones: la gente baila, se queman las fallas."
+   }
+  },
+  {
+   "d": 178,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Daily schedules in Spain",
+     "g": "Learn Spain's daily rhythm and compare it with your own.",
+     "p": [
+      "Lunch is the main meal, around 2 or 3 pm; dinner often at 9 or 10. La merienda is an afternoon snack.",
+      "La sobremesa is the relaxed chat at the table after a meal. La siesta is less common than people think.",
+      "Approximate times: sobre las dos, a eso de las nueve. Habits: solemos cenar tarde."
+     ],
+     "q": "What time do people usually eat lunch and dinner in your country?",
+     "c": "Write your typical daily schedule with five times, using sobre las or a eso de, and compare it with Spain."
+    },
+    "de": {
+     "t": "Tagesablauf in Spanien",
+     "g": "Du lernst den spanischen Tagesrhythmus kennen und vergleichst ihn mit deinem.",
+     "p": [
+      "Mittagessen ist die Hauptmahlzeit, gegen 14 oder 15 Uhr; Abendessen oft um 21 oder 22 Uhr. La merienda ist ein Nachmittagssnack.",
+      "La sobremesa ist das entspannte Gespräch am Tisch nach dem Essen. Die Siesta ist seltener, als man denkt.",
+      "Ungefähre Zeiten: sobre las dos, a eso de las nueve. Gewohnheiten: solemos cenar tarde."
+     ],
+     "q": "Um wie viel Uhr isst man in deinem Land normalerweise zu Mittag und zu Abend?",
+     "c": "Schreib deinen typischen Tagesablauf mit fünf Uhrzeiten (sobre las, a eso de) und vergleiche ihn mit Spanien."
+    },
+    "es": {
+     "t": "Horarios en España",
+     "g": "Conoce el ritmo diario de España y compáralo con el tuyo.",
+     "p": [
+      "La comida es la principal, hacia las dos o las tres; la cena, a las nueve o las diez. La merienda, por la tarde.",
+      "La sobremesa es la charla tranquila en la mesa después de comer. La siesta es menos común de lo que se cree.",
+      "Horas aproximadas: sobre las dos, a eso de las nueve. Hábitos: solemos cenar tarde."
+     ],
+     "q": "¿A qué hora se suele comer y cenar en tu país?",
+     "c": "Escribe tu horario típico con cinco horas, usando sobre las o a eso de, y compáralo con el de España."
+    },
+    "fr": {
+     "t": "Les horaires en Espagne",
+     "g": "Découvrir le rythme quotidien espagnol et le comparer au tien.",
+     "p": [
+      "Le déjeuner est le repas principal, vers 14 ou 15 h ; le dîner souvent à 21 ou 22 h. La merienda est le goûter.",
+      "La sobremesa, c'est la discussion à table après le repas. La sieste est moins courante qu'on le croit.",
+      "Heures approximatives : sobre las dos, a eso de las nueve. Habitudes : solemos cenar tarde."
+     ],
+     "q": "À quelle heure déjeune-t-on et dîne-t-on d'habitude dans ton pays ?",
+     "c": "Écris ta journée type avec cinq horaires (sobre las, a eso de) et compare-la avec l'Espagne."
+    },
+    "it": {
+     "t": "Gli orari in Spagna",
+     "g": "Scopri il ritmo quotidiano spagnolo e confrontalo con il tuo.",
+     "p": [
+      "Il pranzo è il pasto principale, verso le 14 o le 15; la cena spesso alle 21 o alle 22. La merienda è la merenda.",
+      "La sobremesa è la chiacchierata a tavola dopo il pasto. La siesta è meno comune di quanto si pensi.",
+      "Orari approssimativi: sobre las dos, a eso de las nueve. Abitudini: solemos cenar tarde."
+     ],
+     "q": "A che ora si pranza e si cena di solito nel tuo paese?",
+     "c": "Scrivi la tua giornata tipo con cinque orari (sobre las, a eso de) e confrontala con la Spagna."
+    },
+    "pt": {
+     "t": "Horários em Espanha",
+     "g": "Conheces o ritmo diário espanhol e comparas com o teu.",
+     "p": [
+      "O almoço é a refeição principal, por volta das 14 ou 15 h; o jantar muitas vezes às 21 ou 22 h. La merienda é o lanche.",
+      "La sobremesa é a conversa à mesa depois de comer. A sesta é menos comum do que se pensa.",
+      "Horas aproximadas: sobre las dos, a eso de las nueve. Hábitos: solemos cenar tarde."
+     ],
+     "q": "A que horas se costuma almoçar e jantar no teu país?",
+     "c": "Escreve o teu horário típico com cinco horas (sobre las, a eso de) e compara-o com o de Espanha."
+    },
+    "pt_BR": {
+     "t": "Horários na Espanha",
+     "g": "Conheça o ritmo diário da Espanha e compare com o seu.",
+     "p": [
+      "O almoço é a refeição principal, por volta das 14 ou 15 h; o jantar muitas vezes às 21 ou 22 h. La merienda é o lanche.",
+      "La sobremesa é a conversa à mesa depois de comer. A sesta é menos comum do que se pensa.",
+      "Horas aproximadas: sobre las dos, a eso de las nueve. Hábitos: solemos cenar tarde."
+     ],
+     "q": "A que horas se costuma almoçar e jantar no seu país?",
+     "c": "Escreva sua rotina típica com cinco horários (sobre las, a eso de) e compare com a da Espanha."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la sobremesa",
+      "ex": "Después de comer, nos quedamos de sobremesa una hora."
+     },
+     {
+      "w": "comer a las dos",
+      "ex": "En España se suele comer a las dos o las tres."
+     },
+     {
+      "w": "cenar tarde",
+      "ex": "Aquí cenamos tarde, a las nueve y media."
+     },
+     {
+      "w": "la siesta",
+      "ex": "Los domingos me echo la siesta."
+     },
+     {
+      "w": "el aperitivo",
+      "ex": "Antes de comer tomamos el aperitivo."
+     },
+     {
+      "w": "la merienda",
+      "ex": "A las seis los niños toman la merienda."
+     }
+    ],
+    "gram": "Horas aproximadas: sobre las dos, a eso de las nueve, hacia las diez. Soler + infinitivo para el ritmo diario: solemos cenar a las diez."
+   }
+  },
+  {
+   "d": 179,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "My favourite A2 expressions",
+     "g": "Collect the most useful expressions from A2 and use them naturally.",
+     "p": [
+      "Time and progress: llevo seis meses estudiando, acabo de terminar, vuelvo a intentarlo.",
+      "Social glue: ¿te viene bien?, no pasa nada, tienes razón, a mí también, ¡qué suerte!",
+      "About you: se me da bien, suelo, me gustaría, en mi opinión."
+     ],
+     "q": "Which three Spanish expressions do you use most, and which one do you love?",
+     "c": "Make your own top ten list of A2 expressions and write an example from your life for each."
+    },
+    "de": {
+     "t": "Meine liebsten A2-Ausdrücke",
+     "g": "Du sammelst die nützlichsten A2-Ausdrücke und benutzt sie natürlich.",
+     "p": [
+      "Zeit und Fortschritt: llevo seis meses estudiando, acabo de terminar, vuelvo a intentarlo.",
+      "Sozialer Kitt: ¿te viene bien?, no pasa nada, tienes razón, a mí también, ¡qué suerte!",
+      "Über dich: se me da bien, suelo, me gustaría, en mi opinión."
+     ],
+     "q": "Welche drei spanischen Ausdrücke benutzt du am meisten, und welchen liebst du?",
+     "c": "Erstelle deine Top-Ten-Liste mit A2-Ausdrücken und schreib zu jedem ein Beispiel aus deinem Leben."
+    },
+    "es": {
+     "t": "Mis expresiones favoritas del A2",
+     "g": "Reúne las expresiones más útiles del A2 y úsalas con naturalidad.",
+     "p": [
+      "Tiempo y progreso: llevo seis meses estudiando, acabo de terminar, vuelvo a intentarlo.",
+      "Para la vida social: ¿te viene bien?, no pasa nada, tienes razón, a mí también, ¡qué suerte!",
+      "Sobre ti: se me da bien, suelo, me gustaría, en mi opinión."
+     ],
+     "q": "¿Qué tres expresiones en español usas más y cuál te encanta?",
+     "c": "Haz tu lista de las diez mejores expresiones del A2 con un ejemplo de tu vida para cada una."
+    },
+    "fr": {
+     "t": "Mes expressions A2 préférées",
+     "g": "Rassembler les expressions les plus utiles du niveau A2 et les employer naturellement.",
+     "p": [
+      "Temps et progrès : llevo seis meses estudiando, acabo de terminar, vuelvo a intentarlo.",
+      "Lien social : ¿te viene bien?, no pasa nada, tienes razón, a mí también, ¡qué suerte!",
+      "Sur toi : se me da bien, suelo, me gustaría, en mi opinión."
+     ],
+     "q": "Quelles sont les trois expressions espagnoles que tu utilises le plus, et laquelle adores-tu ?",
+     "c": "Fais ton top dix des expressions A2 avec un exemple de ta vie pour chacune."
+    },
+    "it": {
+     "t": "Le mie espressioni A2 preferite",
+     "g": "Raccogli le espressioni più utili dell'A2 e usale con naturalezza.",
+     "p": [
+      "Tempo e progressi: llevo seis meses estudiando, acabo de terminar, vuelvo a intentarlo.",
+      "Collante sociale: ¿te viene bien?, no pasa nada, tienes razón, a mí también, ¡qué suerte!",
+      "Su di te: se me da bien, suelo, me gustaría, en mi opinión."
+     ],
+     "q": "Quali tre espressioni spagnole usi di più, e quale adori?",
+     "c": "Fai la tua top ten di espressioni A2 con un esempio della tua vita per ognuna."
+    },
+    "pt": {
+     "t": "As minhas expressões A2 preferidas",
+     "g": "Reúnes as expressões mais úteis do A2 e usa-las com naturalidade.",
+     "p": [
+      "Tempo e progresso: llevo seis meses estudiando, acabo de terminar, vuelvo a intentarlo.",
+      "Para a vida social: ¿te viene bien?, no pasa nada, tienes razón, a mí también, ¡qué suerte!",
+      "Sobre ti: se me da bien, suelo, me gustaría, en mi opinión."
+     ],
+     "q": "Que três expressões em espanhol usas mais, e qual adoras?",
+     "c": "Faz o teu top dez de expressões do A2 com um exemplo da tua vida para cada uma."
+    },
+    "pt_BR": {
+     "t": "Minhas expressões A2 favoritas",
+     "g": "Reúna as expressões mais úteis do A2 e use com naturalidade.",
+     "p": [
+      "Tempo e progresso: llevo seis meses estudiando, acabo de terminar, vuelvo a intentarlo.",
+      "Para a vida social: ¿te viene bien?, no pasa nada, tienes razón, a mí también, ¡qué suerte!",
+      "Sobre você: se me da bien, suelo, me gustaría, en mi opinión."
+     ],
+     "q": "Quais três expressões em espanhol você mais usa, e de qual você mais gosta?",
+     "c": "Faça seu top dez de expressões do A2 com um exemplo da sua vida para cada uma."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "¿te viene bien?",
+      "ex": "¿Te viene bien quedar mañana?"
+     },
+     {
+      "w": "se me da bien",
+      "ex": "Se me da bien escuchar a la gente."
+     },
+     {
+      "w": "llevo... + gerundio",
+      "ex": "Llevo seis meses aprendiendo español."
+     },
+     {
+      "w": "acabo de",
+      "ex": "Acabo de terminar el nivel A2."
+     },
+     {
+      "w": "¡qué guay!",
+      "ex": "¿Te vas a Perú? ¡Qué guay!"
+     },
+     {
+      "w": "no pasa nada",
+      "ex": "¿Has olvidado la palabra? No pasa nada."
+     }
+    ],
+    "gram": "Expresiones fijas de A2: llevar + gerundio, acabar de + infinitivo, se me da bien, me viene bien, no pasa nada, ¡qué + adjetivo!"
+   }
+  },
+  {
+   "d": 180,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Review: A2 complete!",
+     "g": "Celebrate A2 with a recap of past tenses, commands, opinions and real-life situations.",
+     "p": [
+      "Past tenses: perfecto for recent (he aprendido), indefinido for finished (aprendí), imperfecto for background (era).",
+      "Commands and pronouns: ven, dímelo, no te preocupes. Opinions: creo que, estoy de acuerdo.",
+      "Real life: shopping, travel, phone calls, complaints, renting and making plans. ¡Enhorabuena!"
+     ],
+     "q": "What was your favourite part of A2, and what do you want to master in B1?",
+     "c": "Write a short letter to yourself in Spanish: what you learned, a memory from the course and one goal for B1."
+    },
+    "de": {
+     "t": "Wiederholung: A2 geschafft!",
+     "g": "Feiere A2 mit einer Wiederholung von Vergangenheitszeiten, Imperativen, Meinungen und Alltagssituationen.",
+     "p": [
+      "Vergangenheit: Perfekt für Jüngstes (he aprendido), Indefinido für Abgeschlossenes (aprendí), Imperfekt für Hintergrund (era).",
+      "Imperative und Pronomen: ven, dímelo, no te preocupes. Meinungen: creo que, estoy de acuerdo.",
+      "Alltag: Einkaufen, Reisen, Telefonieren, Beschwerden, Mieten und Verabreden. ¡Enhorabuena!"
+     ],
+     "q": "Was war dein Lieblingsteil von A2, und was willst du in B1 meistern?",
+     "c": "Schreib dir selbst einen kurzen Brief auf Spanisch: was du gelernt hast, eine Erinnerung und ein Ziel für B1."
+    },
+    "es": {
+     "t": "Repaso: ¡A2 completado!",
+     "g": "Celebra el A2 repasando los pasados, el imperativo, las opiniones y situaciones reales.",
+     "p": [
+      "Pasados: perfecto para lo reciente (he aprendido), indefinido para lo terminado (aprendí), imperfecto para describir (era).",
+      "Imperativo y pronombres: ven, dímelo, no te preocupes. Opiniones: creo que, estoy de acuerdo.",
+      "Vida real: compras, viajes, llamadas, quejas, alquilar un piso y quedar. ¡Enhorabuena!"
+     ],
+     "q": "¿Qué es lo que más te ha gustado del A2 y qué quieres dominar en el B1?",
+     "c": "Escríbete una carta corta en español: qué has aprendido, un recuerdo del curso y un objetivo para el B1."
+    },
+    "fr": {
+     "t": "Révision : A2 terminé !",
+     "g": "Fête le niveau A2 en révisant les passés, l'impératif, les opinions et les situations réelles.",
+     "p": [
+      "Passés : perfecto pour le récent (he aprendido), indefinido pour le terminé (aprendí), imperfecto pour décrire (era).",
+      "Impératif et pronoms : ven, dímelo, no te preocupes. Opinions : creo que, estoy de acuerdo.",
+      "Vie réelle : achats, voyages, appels, réclamations, location et rendez-vous. ¡Enhorabuena!"
+     ],
+     "q": "Qu'as-tu préféré dans le niveau A2, et que veux-tu maîtriser au B1 ?",
+     "c": "Écris-toi une courte lettre en espagnol : ce que tu as appris, un souvenir du cours et un objectif pour le B1."
+    },
+    "it": {
+     "t": "Ripasso: A2 completato!",
+     "g": "Festeggia l'A2 ripassando i passati, l'imperativo, le opinioni e situazioni reali.",
+     "p": [
+      "Passati: perfecto per il recente (he aprendido), indefinido per il concluso (aprendí), imperfecto per descrivere (era).",
+      "Imperativo e pronomi: ven, dímelo, no te preocupes. Opinioni: creo que, estoy de acuerdo.",
+      "Vita reale: acquisti, viaggi, telefonate, reclami, affitto e appuntamenti. ¡Enhorabuena!"
+     ],
+     "q": "Qual è stata la tua parte preferita dell'A2, e cosa vuoi padroneggiare nel B1?",
+     "c": "Scriviti una breve lettera in spagnolo: cosa hai imparato, un ricordo del corso e un obiettivo per il B1."
+    },
+    "pt": {
+     "t": "Revisão: A2 concluído!",
+     "g": "Celebra o A2 revendo os passados, o imperativo, as opiniões e situações reais.",
+     "p": [
+      "Passados: perfecto para o recente (he aprendido), indefinido para o terminado (aprendí), imperfecto para descrever (era).",
+      "Imperativo e pronomes: ven, dímelo, no te preocupes. Opiniões: creo que, estoy de acuerdo.",
+      "Vida real: compras, viagens, chamadas, reclamações, arrendar casa e combinar encontros. ¡Enhorabuena!"
+     ],
+     "q": "Qual foi a tua parte preferida do A2, e o que queres dominar no B1?",
+     "c": "Escreve-te uma carta curta em espanhol: o que aprendeste, uma memória do curso e um objetivo para o B1."
+    },
+    "pt_BR": {
+     "t": "Revisão: A2 concluído!",
+     "g": "Comemore o A2 revisando os passados, o imperativo, as opiniões e situações reais.",
+     "p": [
+      "Passados: perfecto para o recente (he aprendido), indefinido para o concluído (aprendí), imperfecto para descrever (era).",
+      "Imperativo e pronomes: ven, dímelo, no te preocupes. Opiniões: creo que, estoy de acuerdo.",
+      "Vida real: compras, viagens, ligações, reclamações, alugar apartamento e marcar encontros. ¡Enhorabuena!"
+     ],
+     "q": "Qual foi a sua parte favorita do A2, e o que você quer dominar no B1?",
+     "c": "Escreva uma carta curta para você mesmo em espanhol: o que aprendeu, uma lembrança do curso e uma meta para o B1."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "he aprendido",
+      "ex": "Este año he aprendido mucho español."
+     },
+     {
+      "w": "aprendí",
+      "ex": "Aprendí a pedir comida en un restaurante."
+     },
+     {
+      "w": "cuando era pequeño",
+      "ex": "Cuando era pequeño no hablaba ningún idioma."
+     },
+     {
+      "w": "¡díselo!",
+      "ex": "Si tienes una duda, ¡díselo a tu profesor!"
+     },
+     {
+      "w": "creo que",
+      "ex": "Creo que estoy listo para el B1."
+     },
+     {
+      "w": "me gustaría",
+      "ex": "Me gustaría hablar con fluidez el año que viene."
+     }
+    ],
+    "gram": "Repaso de A2: perfecto (he viajado), indefinido (viajé), imperfecto (viajaba), imperativo (ven, dímelo), opinión y condicional."
+   }
+  }
+ ]
+}

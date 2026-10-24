@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_french",
+ "lessons": [
+  {
+   "d": 191,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Si + plus-que-parfait",
+     "g": "Imagine a different past: si j'avais su, je serais venu.",
+     "p": [
+      "Pattern: si + plus-que-parfait, past conditional: si j'avais su, je serais venu.",
+      "It talks about something that did not happen: si tu m'avais appelé, je t'aurais aidé.",
+      "The order can change: je serais venu si j'avais su. Never put a conditional right after si!"
+     ],
+     "q": "If you had started French as a child, what would have been different? Si j'avais commencé...",
+     "c": "Finish three sentences: si j'avais su..., si nous étions partis plus tôt..., si tu m'avais dit..."
+    },
+    "de": {
+     "t": "Si + Plus-que-parfait",
+     "g": "Du stellst dir eine andere Vergangenheit vor: si j'avais su, je serais venu.",
+     "p": [
+      "Muster: si + Plus-que-parfait, Conditionnel passé: si j'avais su, je serais venu.",
+      "Es geht um etwas, das nicht passiert ist: si tu m'avais appelé, je t'aurais aidé.",
+      "Die Reihenfolge ist frei: je serais venu si j'avais su. Nach si nie Konditional!"
+     ],
+     "q": "Wenn du als Kind mit Französisch angefangen hättest, was wäre anders? Si j'avais commencé...",
+     "c": "Vervollständige: si j'avais su..., si nous étions partis plus tôt..., si tu m'avais dit..."
+    },
+    "es": {
+     "t": "Si + pluscuamperfecto",
+     "g": "Imagina un pasado distinto: si j'avais su, je serais venu.",
+     "p": [
+      "Estructura: si + plus-que-parfait, condicional pasado: si j'avais su, je serais venu.",
+      "Habla de algo que no ocurrió: si tu m'avais appelé, je t'aurais aidé.",
+      "El orden puede cambiar: je serais venu si j'avais su. ¡Nunca condicional justo después de si!"
+     ],
+     "q": "Si hubieras empezado francés de niño, ¿qué habría sido diferente? Si j'avais commencé...",
+     "c": "Completa tres frases: si j'avais su..., si nous étions partis plus tôt..., si tu m'avais dit..."
+    },
+    "fr": {
+     "t": "Si + plus-que-parfait",
+     "g": "Imaginer un passé différent : si j'avais su, je serais venu.",
+     "p": [
+      "Structure : si + plus-que-parfait, conditionnel passé : si j'avais su, je serais venu.",
+      "On parle de ce qui n'est pas arrivé : si tu m'avais appelé, je t'aurais aidé.",
+      "L'ordre peut changer : je serais venu si j'avais su. Jamais de conditionnel juste après si !"
+     ],
+     "q": "Si tu avais commencé le français enfant, qu'est-ce qui aurait été différent ? Si j'avais commencé...",
+     "c": "Complète trois phrases : si j'avais su..., si nous étions partis plus tôt..., si tu m'avais dit..."
+    },
+    "it": {
+     "t": "Si + trapassato",
+     "g": "Immagina un passato diverso: si j'avais su, je serais venu.",
+     "p": [
+      "Schema: si + plus-que-parfait, condizionale passato: si j'avais su, je serais venu.",
+      "Parla di qualcosa che non è successo: si tu m'avais appelé, je t'aurais aidé.",
+      "L'ordine può cambiare: je serais venu si j'avais su. Mai il condizionale subito dopo si!"
+     ],
+     "q": "Se avessi iniziato il francese da bambino, cosa sarebbe stato diverso? Si j'avais commencé...",
+     "c": "Completa tre frasi: si j'avais su..., si nous étions partis plus tôt..., si tu m'avais dit..."
+    },
+    "pt": {
+     "t": "Si + mais-que-perfeito",
+     "g": "Imagina um passado diferente: si j'avais su, je serais venu.",
+     "p": [
+      "Estrutura: si + plus-que-parfait, condicional passado: si j'avais su, je serais venu.",
+      "Fala de algo que não aconteceu: si tu m'avais appelé, je t'aurais aidé.",
+      "A ordem pode mudar: je serais venu si j'avais su. Nunca condicional logo a seguir a si!"
+     ],
+     "q": "Se tivesses começado o francês em criança, o que teria sido diferente? Si j'avais commencé...",
+     "c": "Completa três frases: si j'avais su..., si nous étions partis plus tôt..., si tu m'avais dit..."
+    },
+    "pt_BR": {
+     "t": "Si + mais-que-perfeito",
+     "g": "Imagine um passado diferente: si j'avais su, je serais venu.",
+     "p": [
+      "Estrutura: si + plus-que-parfait, condicional passado: si j'avais su, je serais venu.",
+      "Fala de algo que não aconteceu: si tu m'avais appelé, je t'aurais aidé.",
+      "A ordem pode mudar: je serais venu si j'avais su. Nunca use condicional logo depois de si!"
+     ],
+     "q": "Se você tivesse começado o francês criança, o que teria sido diferente? Si j'avais commencé...",
+     "c": "Complete três frases: si j'avais su..., si nous étions partis plus tôt..., si tu m'avais dit..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "si j'avais su",
+      "ex": "Si j'avais su, je serais venu plus tôt."
+     },
+     {
+      "w": "si tu m'avais appelé",
+      "ex": "Si tu m'avais appelé, je t'aurais aidé."
+     },
+     {
+      "w": "si nous étions partis",
+      "ex": "Si nous étions partis à huit heures, nous aurions eu le train."
+     },
+     {
+      "w": "je serais venu(e)",
+      "ex": "Je serais venue avec plaisir si tu m'avais invitée."
+     },
+     {
+      "w": "on aurait pu",
+      "ex": "Si on avait réservé, on aurait pu manger dehors."
+     },
+     {
+      "w": "si seulement",
+      "ex": "Si seulement j'avais pris mon appareil photo !"
+     }
+    ],
+    "gram": "Hypothèse sur le passé : si + plus-que-parfait, conditionnel passé. Si j'avais su, je serais venu."
+   }
+  },
+  {
+   "d": 192,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Talking about regrets",
+     "g": "Say kindly and calmly what you would have done differently.",
+     "p": [
+      "Regret phrases: je regrette de ne pas avoir..., j'aurais dû..., si c'était à refaire, je...",
+      "Keep it positive: mais j'ai appris que..., la prochaine fois, je... Regrets help us grow.",
+      "Comfort someone: ce n'est pas grave, tu ne pouvais pas savoir, tu as fait de ton mieux."
+     ],
+     "q": "Tell me about a small choice you would make differently today. What did you learn from it?",
+     "c": "Write a short text: one small regret, what you would have done, and what you learned. End positively!"
+    },
+    "de": {
+     "t": "Über Bedauern sprechen",
+     "g": "Du sagst freundlich und ruhig, was du anders gemacht hättest.",
+     "p": [
+      "Ausdrücke: je regrette de ne pas avoir..., j'aurais dû..., si c'était à refaire, je...",
+      "Bleib positiv: mais j'ai appris que..., la prochaine fois, je... Aus Fehlern wächst man.",
+      "Jemanden trösten: ce n'est pas grave, tu ne pouvais pas savoir, tu as fait de ton mieux."
+     ],
+     "q": "Erzähl von einer kleinen Entscheidung, die du heute anders treffen würdest. Was hast du gelernt?",
+     "c": "Schreib einen kurzen Text: ein kleines Bedauern, was du getan hättest und was du gelernt hast. Positiv enden!"
+    },
+    "es": {
+     "t": "Hablar de lo que lamentamos",
+     "g": "Di con amabilidad y calma qué habrías hecho de otra manera.",
+     "p": [
+      "Frases: je regrette de ne pas avoir..., j'aurais dû..., si c'était à refaire, je...",
+      "Sé positivo: mais j'ai appris que..., la prochaine fois, je... Así aprendemos.",
+      "Consolar: ce n'est pas grave, tu ne pouvais pas savoir, tu as fait de ton mieux."
+     ],
+     "q": "Háblame de una pequeña decisión que hoy tomarías de otra forma. ¿Qué aprendiste?",
+     "c": "Escribe un texto corto: un pequeño lamento, qué habrías hecho y qué aprendiste. ¡Termina en positivo!"
+    },
+    "fr": {
+     "t": "Parler de ses regrets",
+     "g": "Dire gentiment et calmement ce qu'on aurait fait autrement.",
+     "p": [
+      "Expressions : je regrette de ne pas avoir..., j'aurais dû..., si c'était à refaire, je...",
+      "Rester positif : mais j'ai appris que..., la prochaine fois, je... Les regrets font grandir.",
+      "Réconforter : ce n'est pas grave, tu ne pouvais pas savoir, tu as fait de ton mieux."
+     ],
+     "q": "Raconte-moi un petit choix que tu ferais autrement aujourd'hui. Qu'est-ce que tu en as appris ?",
+     "c": "Écris un petit texte : un petit regret, ce que tu aurais fait et ce que tu as appris. Finis en positif !"
+    },
+    "it": {
+     "t": "Parlare dei rimpianti",
+     "g": "Di' con gentilezza e calma cosa avresti fatto diversamente.",
+     "p": [
+      "Espressioni: je regrette de ne pas avoir..., j'aurais dû..., si c'était à refaire, je...",
+      "Resta positivo: mais j'ai appris que..., la prochaine fois, je... Così si cresce.",
+      "Consolare: ce n'est pas grave, tu ne pouvais pas savoir, tu as fait de ton mieux."
+     ],
+     "q": "Raccontami una piccola scelta che oggi faresti diversamente. Cosa hai imparato?",
+     "c": "Scrivi un breve testo: un piccolo rimpianto, cosa avresti fatto e cosa hai imparato. Finisci in positivo!"
+    },
+    "pt": {
+     "t": "Falar de arrependimentos",
+     "g": "Diz com gentileza e calma o que terias feito de outra forma.",
+     "p": [
+      "Expressões: je regrette de ne pas avoir..., j'aurais dû..., si c'était à refaire, je...",
+      "Mantém-te positivo: mais j'ai appris que..., la prochaine fois, je... É assim que crescemos.",
+      "Consolar: ce n'est pas grave, tu ne pouvais pas savoir, tu as fait de ton mieux."
+     ],
+     "q": "Conta-me uma pequena escolha que hoje farias de outra forma. O que aprendeste com ela?",
+     "c": "Escreve um texto curto: um pequeno arrependimento, o que terias feito e o que aprendeste. Acaba em positivo!"
+    },
+    "pt_BR": {
+     "t": "Falando de arrependimentos",
+     "g": "Diga com gentileza e calma o que você teria feito de outro jeito.",
+     "p": [
+      "Expressões: je regrette de ne pas avoir..., j'aurais dû..., si c'était à refaire, je...",
+      "Seja positivo: mais j'ai appris que..., la prochaine fois, je... É assim que a gente cresce.",
+      "Consolar: ce n'est pas grave, tu ne pouvais pas savoir, tu as fait de ton mieux."
+     ],
+     "q": "Me conte uma pequena escolha que hoje você faria diferente. O que aprendeu com ela?",
+     "c": "Escreva um texto curto: um pequeno arrependimento, o que teria feito e o que aprendeu. Termine no positivo!"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "je regrette de",
+      "ex": "Je regrette de ne pas avoir appris le piano."
+     },
+     {
+      "w": "si c'était à refaire",
+      "ex": "Si c'était à refaire, je partirais un an à l'étranger."
+     },
+     {
+      "w": "la prochaine fois",
+      "ex": "La prochaine fois, je réserverai plus tôt."
+     },
+     {
+      "w": "ce n'est pas grave",
+      "ex": "Ce n'est pas grave, ça arrive à tout le monde."
+     },
+     {
+      "w": "tu ne pouvais pas savoir",
+      "ex": "Ne t'inquiète pas, tu ne pouvais pas savoir."
+     },
+     {
+      "w": "faire de son mieux",
+      "ex": "Tu as fait de ton mieux, bravo."
+     }
+    ],
+    "gram": "Regretter de + infinitif passé : je regrette de ne pas avoir appris. Si c'était à refaire + conditionnel présent."
+   }
+  },
+  {
+   "d": 193,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Polite criticism and suggestions",
+     "g": "Give soft, kind feedback with the conditional.",
+     "p": [
+      "Soft criticism: tu aurais pu me prévenir, il aurait fallu vérifier, j'aurais préféré que...",
+      "Suggestions: ce serait mieux si..., tu pourrais peut-être..., à ta place, je...",
+      "Start and end positively: c'est déjà très bien, mais... ; sinon, bravo pour ton travail !"
+     ],
+     "q": "A friend shows you a cake that is a bit dry. How do you give them kind feedback in French?",
+     "c": "Write feedback on an imaginary presentation: one compliment, two soft suggestions, one encouragement."
+    },
+    "de": {
+     "t": "Höfliche Kritik und Vorschläge",
+     "g": "Du gibst sanftes, freundliches Feedback mit dem Konditional.",
+     "p": [
+      "Sanfte Kritik: tu aurais pu me prévenir, il aurait fallu vérifier, j'aurais préféré que...",
+      "Vorschläge: ce serait mieux si..., tu pourrais peut-être..., à ta place, je...",
+      "Positiv beginnen und enden: c'est déjà très bien, mais... ; sinon, bravo pour ton travail !"
+     ],
+     "q": "Ein Freund zeigt dir einen etwas trockenen Kuchen. Wie gibst du ihm freundlich Feedback?",
+     "c": "Schreib Feedback zu einer Präsentation: ein Lob, zwei sanfte Vorschläge, eine Ermutigung."
+    },
+    "es": {
+     "t": "Críticas amables y sugerencias",
+     "g": "Da opiniones suaves y amables con el condicional.",
+     "p": [
+      "Crítica suave: tu aurais pu me prévenir, il aurait fallu vérifier, j'aurais préféré que...",
+      "Sugerencias: ce serait mieux si..., tu pourrais peut-être..., à ta place, je...",
+      "Empieza y acaba en positivo: c'est déjà très bien, mais... ; sinon, bravo pour ton travail !"
+     ],
+     "q": "Un amigo te enseña un pastel un poco seco. ¿Cómo le das tu opinión con cariño en francés?",
+     "c": "Escribe una opinión sobre una presentación: un elogio, dos sugerencias suaves y un ánimo."
+    },
+    "fr": {
+     "t": "Critiquer poliment et suggérer",
+     "g": "Faire des remarques douces et bienveillantes avec le conditionnel.",
+     "p": [
+      "Critique douce : tu aurais pu me prévenir, il aurait fallu vérifier, j'aurais préféré que...",
+      "Suggestions : ce serait mieux si..., tu pourrais peut-être..., à ta place, je...",
+      "Commencer et finir en positif : c'est déjà très bien, mais... ; sinon, bravo pour ton travail !"
+     ],
+     "q": "Un ami te montre un gâteau un peu sec. Comment lui fais-tu une remarque gentille ?",
+     "c": "Écris un retour sur un exposé imaginaire : un compliment, deux suggestions douces, un encouragement."
+    },
+    "it": {
+     "t": "Critiche gentili e suggerimenti",
+     "g": "Dai un feedback morbido e gentile con il condizionale.",
+     "p": [
+      "Critica gentile: tu aurais pu me prévenir, il aurait fallu vérifier, j'aurais préféré que...",
+      "Suggerimenti: ce serait mieux si..., tu pourrais peut-être..., à ta place, je...",
+      "Inizia e finisci in positivo: c'est déjà très bien, mais... ; sinon, bravo pour ton travail !"
+     ],
+     "q": "Un amico ti mostra una torta un po' secca. Come gli dai un feedback gentile in francese?",
+     "c": "Scrivi un feedback su una presentazione: un complimento, due suggerimenti gentili, un incoraggiamento."
+    },
+    "pt": {
+     "t": "Críticas educadas e sugestões",
+     "g": "Dá feedback suave e simpático com o condicional.",
+     "p": [
+      "Crítica suave: tu aurais pu me prévenir, il aurait fallu vérifier, j'aurais préféré que...",
+      "Sugestões: ce serait mieux si..., tu pourrais peut-être..., à ta place, je...",
+      "Começa e acaba em positivo: c'est déjà très bien, mais... ; sinon, bravo pour ton travail !"
+     ],
+     "q": "Um amigo mostra-te um bolo um pouco seco. Como lhe dás um comentário simpático em francês?",
+     "c": "Escreve feedback sobre uma apresentação: um elogio, duas sugestões suaves e um incentivo."
+    },
+    "pt_BR": {
+     "t": "Críticas educadas e sugestões",
+     "g": "Dê feedback suave e gentil com o condicional.",
+     "p": [
+      "Crítica suave: tu aurais pu me prévenir, il aurait fallu vérifier, j'aurais préféré que...",
+      "Sugestões: ce serait mieux si..., tu pourrais peut-être..., à ta place, je...",
+      "Comece e termine no positivo: c'est déjà très bien, mais... ; sinon, bravo pour ton travail !"
+     ],
+     "q": "Um amigo te mostra um bolo um pouco seco. Como você dá um comentário gentil em francês?",
+     "c": "Escreva um feedback sobre uma apresentação: um elogio, duas sugestões suaves e um incentivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ce serait mieux si",
+      "ex": "Ce serait mieux si on commençait à l'heure."
+     },
+     {
+      "w": "tu pourrais peut-être",
+      "ex": "Tu pourrais peut-être ajouter une photo."
+     },
+     {
+      "w": "à ta place",
+      "ex": "À ta place, je parlerais un peu plus lentement."
+     },
+     {
+      "w": "il aurait fallu",
+      "ex": "Il aurait fallu vérifier l'adresse avant."
+     },
+     {
+      "w": "j'aurais préféré que",
+      "ex": "J'aurais préféré que tu me le dises."
+     },
+     {
+      "w": "c'est déjà très bien",
+      "ex": "C'est déjà très bien, continue comme ça !"
+     }
+    ],
+    "gram": "Adoucir avec le conditionnel : ce serait mieux si + imparfait ; tu pourrais + infinitif ; tu aurais pu + infinitif."
+   }
+  },
+  {
+   "d": 194,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Futur antérieur",
+     "g": "Talk about actions that will be finished before another future action.",
+     "p": [
+      "Form: avoir or être in the future + past participle: j'aurai fini, elle sera partie, nous aurons mangé.",
+      "With quand, dès que, lorsque: quand j'aurai fini, je t'appellerai. First action finished, then the next.",
+      "Deadlines: d'ici vendredi, j'aurai terminé le rapport. Dans un an, j'aurai visité Québec."
+     ],
+     "q": "What will you have done by the end of this year? D'ici la fin de l'année, j'aurai...",
+     "c": "Write three plans with quand or dès que + futur antérieur, then a futur simple. Example: dès que j'aurai..."
+    },
+    "de": {
+     "t": "Futur antérieur",
+     "g": "Du sprichst über Handlungen, die vor einer anderen zukünftigen Handlung abgeschlossen sind.",
+     "p": [
+      "Bildung: avoir oder être im Futur + Partizip: j'aurai fini, elle sera partie, nous aurons mangé.",
+      "Mit quand, dès que, lorsque: quand j'aurai fini, je t'appellerai. Erst fertig, dann das Nächste.",
+      "Fristen: d'ici vendredi, j'aurai terminé le rapport. Dans un an, j'aurai visité Québec."
+     ],
+     "q": "Was wirst du bis Ende des Jahres gemacht haben? D'ici la fin de l'année, j'aurai...",
+     "c": "Schreib drei Pläne mit quand oder dès que + Futur antérieur, dann Futur simple: dès que j'aurai..."
+    },
+    "es": {
+     "t": "Futuro perfecto (futur antérieur)",
+     "g": "Habla de acciones que estarán terminadas antes de otra acción futura.",
+     "p": [
+      "Forma: avoir o être en futuro + participio: j'aurai fini, elle sera partie, nous aurons mangé.",
+      "Con quand, dès que, lorsque: quand j'aurai fini, je t'appellerai. Primero termino, luego lo otro.",
+      "Plazos: d'ici vendredi, j'aurai terminé le rapport. Dans un an, j'aurai visité Québec."
+     ],
+     "q": "¿Qué habrás hecho antes de que acabe el año? D'ici la fin de l'année, j'aurai...",
+     "c": "Escribe tres planes con quand o dès que + futur antérieur y luego futur simple: dès que j'aurai..."
+    },
+    "fr": {
+     "t": "Le futur antérieur",
+     "g": "Parler d'actions qui seront terminées avant une autre action future.",
+     "p": [
+      "Formation : avoir ou être au futur + participe passé : j'aurai fini, elle sera partie, nous aurons mangé.",
+      "Avec quand, dès que, lorsque : quand j'aurai fini, je t'appellerai. D'abord l'un, ensuite l'autre.",
+      "Échéances : d'ici vendredi, j'aurai terminé le rapport. Dans un an, j'aurai visité Québec."
+     ],
+     "q": "Qu'est-ce que tu auras fait d'ici la fin de l'année ? D'ici la fin de l'année, j'aurai...",
+     "c": "Écris trois projets avec quand ou dès que + futur antérieur, puis un futur simple : dès que j'aurai..."
+    },
+    "it": {
+     "t": "Futuro anteriore",
+     "g": "Parla di azioni che saranno concluse prima di un'altra azione futura.",
+     "p": [
+      "Forma: avoir o être al futuro + participio: j'aurai fini, elle sera partie, nous aurons mangé.",
+      "Con quand, dès que, lorsque: quand j'aurai fini, je t'appellerai. Prima finisco, poi il resto.",
+      "Scadenze: d'ici vendredi, j'aurai terminé le rapport. Dans un an, j'aurai visité Québec."
+     ],
+     "q": "Cosa avrai fatto entro la fine dell'anno? D'ici la fin de l'année, j'aurai...",
+     "c": "Scrivi tre progetti con quand o dès que + futur antérieur, poi un futur simple: dès que j'aurai..."
+    },
+    "pt": {
+     "t": "Futuro anterior",
+     "g": "Fala de ações que estarão terminadas antes de outra ação futura.",
+     "p": [
+      "Forma: avoir ou être no futuro + particípio: j'aurai fini, elle sera partie, nous aurons mangé.",
+      "Com quand, dès que, lorsque: quand j'aurai fini, je t'appellerai. Primeiro acabo, depois o resto.",
+      "Prazos: d'ici vendredi, j'aurai terminé le rapport. Dans un an, j'aurai visité Québec."
+     ],
+     "q": "O que terás feito até ao fim do ano? D'ici la fin de l'année, j'aurai...",
+     "c": "Escreve três planos com quand ou dès que + futur antérieur e depois futur simple: dès que j'aurai..."
+    },
+    "pt_BR": {
+     "t": "Futuro composto (futur antérieur)",
+     "g": "Fale de ações que estarão terminadas antes de outra ação futura.",
+     "p": [
+      "Forma: avoir ou être no futuro + particípio: j'aurai fini, elle sera partie, nous aurons mangé.",
+      "Com quand, dès que, lorsque: quand j'aurai fini, je t'appellerai. Primeiro termino, depois o resto.",
+      "Prazos: d'ici vendredi, j'aurai terminé le rapport. Dans un an, j'aurai visité Québec."
+     ],
+     "q": "O que você terá feito até o fim do ano? D'ici la fin de l'année, j'aurai...",
+     "c": "Escreva três planos com quand ou dès que + futur antérieur e depois futur simple: dès que j'aurai..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "quand j'aurai fini",
+      "ex": "Quand j'aurai fini mes devoirs, je regarderai un film."
+     },
+     {
+      "w": "dès que",
+      "ex": "Dès qu'elle sera arrivée, nous passerons à table."
+     },
+     {
+      "w": "d'ici vendredi",
+      "ex": "D'ici vendredi, j'aurai terminé le rapport."
+     },
+     {
+      "w": "lorsque",
+      "ex": "Lorsque vous aurez lu le texte, répondez aux questions."
+     },
+     {
+      "w": "nous aurons visité",
+      "ex": "Dans un mois, nous aurons visité toute la Bretagne."
+     },
+     {
+      "w": "une fois que",
+      "ex": "Une fois que tu auras mangé, on sortira."
+     }
+    ],
+    "gram": "Futur antérieur : avoir / être au futur + participe passé. Action finie avant une autre au futur : quand j'aurai fini, je t'appellerai."
+   }
+  },
+  {
+   "d": 195,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Review: subjunctive and conditionals",
+     "g": "Bring together the subjunctive, the past conditional and si clauses.",
+     "p": [
+      "Subjunctive after needs, wishes, feelings, doubt and some conjunctions: il faut que, bien que, pour que.",
+      "Past conditional for regrets and soft criticism: j'aurais dû, tu aurais pu, ce serait mieux si.",
+      "Si clauses: si + présent → futur ; si + imparfait → conditionnel ; si + plus-que-parfait → cond. passé."
+     ],
+     "q": "Tell me: what must you do this month, what do you wish for a friend, and what would you have done differently?",
+     "c": "Write a 9-sentence text: three with the subjunctive, three si sentences (one per type), three regrets or advice."
+    },
+    "de": {
+     "t": "Wiederholung: Subjonctif und Konditional",
+     "g": "Du verbindest Subjonctif, Conditionnel passé und si-Sätze.",
+     "p": [
+      "Subjonctif nach Notwendigkeit, Wunsch, Gefühl, Zweifel und Konjunktionen: il faut que, bien que, pour que.",
+      "Conditionnel passé für Bedauern und sanfte Kritik: j'aurais dû, tu aurais pu, ce serait mieux si.",
+      "Si-Sätze: si + Präsens → Futur ; si + Imparfait → Konditional ; si + Plus-que-parfait → Cond. passé."
+     ],
+     "q": "Was musst du diesen Monat tun, was wünschst du einem Freund und was hättest du anders gemacht?",
+     "c": "Schreib 9 Sätze: drei mit Subjonctif, drei si-Sätze (je ein Typ), drei mit Bedauern oder Rat."
+    },
+    "es": {
+     "t": "Repaso: subjuntivo y condicionales",
+     "g": "Reúne el subjuntivo, el condicional pasado y las frases con si.",
+     "p": [
+      "Subjuntivo tras necesidad, deseo, emoción, duda y algunas conjunciones: il faut que, bien que, pour que.",
+      "Condicional pasado para lamentos y críticas suaves: j'aurais dû, tu aurais pu, ce serait mieux si.",
+      "Frases con si: si + presente → futuro ; si + imparfait → condicional ; si + plus-que-parfait → cond. pasado."
+     ],
+     "q": "Cuéntame: ¿qué tienes que hacer este mes, qué deseas a un amigo y qué habrías hecho distinto?",
+     "c": "Escribe 9 frases: tres con subjuntivo, tres con si (una de cada tipo) y tres lamentos o consejos."
+    },
+    "fr": {
+     "t": "Révision : subjonctif et conditionnels",
+     "g": "Réunir le subjonctif, le conditionnel passé et les phrases avec si.",
+     "p": [
+      "Subjonctif après nécessité, volonté, sentiment, doute et certaines conjonctions : il faut que, bien que, pour que.",
+      "Conditionnel passé pour regrets et critiques douces : j'aurais dû, tu aurais pu, ce serait mieux si.",
+      "Phrases avec si : si + présent → futur ; si + imparfait → conditionnel ; si + plus-que-parfait → cond. passé."
+     ],
+     "q": "Dis-moi : que dois-tu faire ce mois-ci, que souhaites-tu à un ami et qu'aurais-tu fait autrement ?",
+     "c": "Écris 9 phrases : trois au subjonctif, trois avec si (un type chacune), trois regrets ou conseils."
+    },
+    "it": {
+     "t": "Ripasso: congiuntivo e condizionali",
+     "g": "Metti insieme subjonctif, condizionale passato e frasi con si.",
+     "p": [
+      "Subjonctif dopo necessità, desiderio, emozione, dubbio e alcune congiunzioni: il faut que, bien que, pour que.",
+      "Condizionale passato per rimpianti e critiche gentili: j'aurais dû, tu aurais pu, ce serait mieux si.",
+      "Frasi con si: si + presente → futuro ; si + imparfait → condizionale ; si + plus-que-parfait → cond. passato."
+     ],
+     "q": "Dimmi: cosa devi fare questo mese, cosa auguri a un amico e cosa avresti fatto diversamente?",
+     "c": "Scrivi 9 frasi: tre con il subjonctif, tre con si (una per tipo), tre rimpianti o consigli."
+    },
+    "pt": {
+     "t": "Revisão: conjuntivo e condicionais",
+     "g": "Junta o subjonctif, o condicional passado e as frases com si.",
+     "p": [
+      "Subjonctif depois de necessidade, desejo, emoção, dúvida e algumas conjunções: il faut que, bien que, pour que.",
+      "Condicional passado para lamentos e críticas suaves: j'aurais dû, tu aurais pu, ce serait mieux si.",
+      "Frases com si: si + presente → futuro ; si + imparfait → condicional ; si + plus-que-parfait → cond. passado."
+     ],
+     "q": "Diz-me: o que tens de fazer este mês, o que desejas a um amigo e o que terias feito de outra forma?",
+     "c": "Escreve 9 frases: três com subjonctif, três com si (uma de cada tipo) e três lamentos ou conselhos."
+    },
+    "pt_BR": {
+     "t": "Revisão: subjuntivo e condicionais",
+     "g": "Junte o subjonctif, o condicional passado e as frases com si.",
+     "p": [
+      "Subjonctif depois de necessidade, desejo, emoção, dúvida e algumas conjunções: il faut que, bien que, pour que.",
+      "Condicional passado para arrependimentos e críticas suaves: j'aurais dû, tu aurais pu, ce serait mieux si.",
+      "Frases com si: si + presente → futuro ; si + imparfait → condicional ; si + plus-que-parfait → cond. passado."
+     ],
+     "q": "Me diga: o que você precisa fazer este mês, o que deseja a um amigo e o que teria feito diferente?",
+     "c": "Escreva 9 frases: três com subjonctif, três com si (uma de cada tipo) e três arrependimentos ou conselhos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il faut que",
+      "ex": "Il faut que je fasse du sport plus souvent."
+     },
+     {
+      "w": "bien que",
+      "ex": "Bien qu'il fasse froid, on se promène."
+     },
+     {
+      "w": "si j'avais le temps",
+      "ex": "Si j'avais le temps, j'apprendrais aussi l'italien."
+     },
+     {
+      "w": "si j'avais su",
+      "ex": "Si j'avais su, j'aurais apporté un gâteau."
+     },
+     {
+      "w": "j'aurais dû",
+      "ex": "J'aurais dû t'écouter, tu avais raison."
+     },
+     {
+      "w": "je souhaite que",
+      "ex": "Je souhaite que tu réussisses ton examen."
+     }
+    ],
+    "gram": "Bilan : que + subjonctif (volonté, sentiment, doute) ; si + présent / imparfait / plus-que-parfait ; conditionnel passé."
+   }
+  },
+  {
+   "d": 196,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Relative pronoun dont",
+     "g": "Use dont to replace de + a noun: le livre dont je parle.",
+     "p": [
+      "Dont replaces de + something: je parle de ce livre → le livre dont je parle.",
+      "With verbs using de: avoir besoin de, se souvenir de, être fier de → l'outil dont j'ai besoin.",
+      "Possession: l'amie dont le frère habite à Lyon (whose brother). Dont is followed by the full clause."
+     ],
+     "q": "Tell me about a thing dont tu as besoin every day, and a person dont tu es fier ou fière.",
+     "c": "Join pairs with dont: J'ai un ami. Je suis fier de cet ami. Then write four sentences of your own."
+    },
+    "de": {
+     "t": "Relativpronomen dont",
+     "g": "Du ersetzt de + Nomen durch dont: le livre dont je parle.",
+     "p": [
+      "Dont ersetzt de + etwas: je parle de ce livre → le livre dont je parle.",
+      "Bei Verben mit de: avoir besoin de, se souvenir de, être fier de → l'outil dont j'ai besoin.",
+      "Besitz: l'amie dont le frère habite à Lyon (deren Bruder). Nach dont folgt der ganze Satz."
+     ],
+     "q": "Erzähl mir von einer Sache, dont tu as besoin jeden Tag, und einer Person, dont tu es fier ou fière.",
+     "c": "Verbinde mit dont: J'ai un ami. Je suis fier de cet ami. Schreib dann vier eigene Sätze."
+    },
+    "es": {
+     "t": "El pronombre relativo dont",
+     "g": "Usa dont para sustituir de + sustantivo: le livre dont je parle.",
+     "p": [
+      "Dont sustituye a de + algo: je parle de ce livre → le livre dont je parle.",
+      "Con verbos con de: avoir besoin de, se souvenir de, être fier de → l'outil dont j'ai besoin.",
+      "Posesión: l'amie dont le frère habite à Lyon (cuyo hermano). Tras dont va la frase completa."
+     ],
+     "q": "Háblame de una cosa dont tu as besoin cada día y de una persona dont tu es fier ou fière.",
+     "c": "Une con dont: J'ai un ami. Je suis fier de cet ami. Luego escribe cuatro frases tuyas."
+    },
+    "fr": {
+     "t": "Le pronom relatif dont",
+     "g": "Utiliser dont pour remplacer de + nom : le livre dont je parle.",
+     "p": [
+      "Dont remplace de + quelque chose : je parle de ce livre → le livre dont je parle.",
+      "Avec les verbes en de : avoir besoin de, se souvenir de, être fier de → l'outil dont j'ai besoin.",
+      "Possession : l'amie dont le frère habite à Lyon. Après dont, on garde la phrase complète."
+     ],
+     "q": "Parle-moi d'une chose dont tu as besoin chaque jour et d'une personne dont tu es fier ou fière.",
+     "c": "Relie avec dont : J'ai un ami. Je suis fier de cet ami. Puis écris quatre phrases à toi."
+    },
+    "it": {
+     "t": "Il pronome relativo dont",
+     "g": "Usa dont per sostituire de + nome: le livre dont je parle.",
+     "p": [
+      "Dont sostituisce de + qualcosa: je parle de ce livre → le livre dont je parle.",
+      "Con verbi con de: avoir besoin de, se souvenir de, être fier de → l'outil dont j'ai besoin.",
+      "Possesso: l'amie dont le frère habite à Lyon (il cui fratello). Dopo dont la frase è completa."
+     ],
+     "q": "Parlami di una cosa dont tu as besoin ogni giorno e di una persona dont tu es fier ou fière.",
+     "c": "Unisci con dont: J'ai un ami. Je suis fier de cet ami. Poi scrivi quattro frasi tue."
+    },
+    "pt": {
+     "t": "O pronome relativo dont",
+     "g": "Usa dont para substituir de + nome: le livre dont je parle.",
+     "p": [
+      "Dont substitui de + algo: je parle de ce livre → le livre dont je parle.",
+      "Com verbos com de: avoir besoin de, se souvenir de, être fier de → l'outil dont j'ai besoin.",
+      "Posse: l'amie dont le frère habite à Lyon (cujo irmão). Depois de dont vem a frase completa."
+     ],
+     "q": "Fala-me de uma coisa dont tu as besoin todos os dias e de uma pessoa dont tu es fier ou fière.",
+     "c": "Junta com dont: J'ai un ami. Je suis fier de cet ami. Depois escreve quatro frases tuas."
+    },
+    "pt_BR": {
+     "t": "O pronome relativo dont",
+     "g": "Use dont para substituir de + substantivo: le livre dont je parle.",
+     "p": [
+      "Dont substitui de + algo: je parle de ce livre → le livre dont je parle.",
+      "Com verbos com de: avoir besoin de, se souvenir de, être fier de → l'outil dont j'ai besoin.",
+      "Posse: l'amie dont le frère habite à Lyon (cujo irmão). Depois de dont vem a frase completa."
+     ],
+     "q": "Me fale de uma coisa dont tu as besoin todo dia e de uma pessoa dont tu es fier ou fière.",
+     "c": "Junte com dont: J'ai un ami. Je suis fier de cet ami. Depois escreva quatro frases suas."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "le livre dont je parle",
+      "ex": "Le livre dont je parle est sur la table."
+     },
+     {
+      "w": "ce dont j'ai besoin",
+      "ex": "Voilà l'outil dont j'ai besoin."
+     },
+     {
+      "w": "se souvenir de",
+      "ex": "C'est un voyage dont je me souviens très bien."
+     },
+     {
+      "w": "être fier de",
+      "ex": "C'est un projet dont nous sommes très fiers."
+     },
+     {
+      "w": "l'amie dont le frère",
+      "ex": "L'amie dont le frère habite à Lyon arrive demain."
+     },
+     {
+      "w": "avoir envie de",
+      "ex": "C'est le gâteau dont j'ai envie depuis ce matin."
+     }
+    ],
+    "gram": "Dont remplace un complément introduit par de : parler de, avoir besoin de, se souvenir de ; et la possession : dont le frère."
+   }
+  },
+  {
+   "d": 197,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Ce qui, ce que, ce dont",
+     "g": "Say the thing that... with ce qui, ce que and ce dont.",
+     "p": [
+      "Ce qui = subject (what...): ce qui me plaît, c'est la musique. A verb follows directly.",
+      "Ce que = object: ce que je veux, c'est voyager. A subject follows: ce que tu dis est vrai.",
+      "Ce dont = with verbs using de: ce dont j'ai besoin, c'est de calme. Great for emphasis: ce qui..., c'est..."
+     ],
+     "q": "Ce qui te plaît le plus en France, c'est quoi ? And ce dont tu as besoin pour bien dormir ?",
+     "c": "Write three sentences about yourself: ce qui me rend heureux, c'est... ; ce que j'aime... ; ce dont je rêve..."
+    },
+    "de": {
+     "t": "Ce qui, ce que, ce dont",
+     "g": "Du sagst „das, was...“ mit ce qui, ce que und ce dont.",
+     "p": [
+      "Ce qui = Subjekt: ce qui me plaît, c'est la musique. Direkt danach kommt ein Verb.",
+      "Ce que = Objekt: ce que je veux, c'est voyager. Danach ein Subjekt: ce que tu dis est vrai.",
+      "Ce dont = bei Verben mit de: ce dont j'ai besoin, c'est de calme. Ideal zur Betonung: ce qui..., c'est..."
+     ],
+     "q": "Ce qui te plaît le plus en France, c'est quoi ? Und ce dont tu as besoin pour bien dormir ?",
+     "c": "Schreib drei Sätze über dich: ce qui me rend heureux, c'est... ; ce que j'aime... ; ce dont je rêve..."
+    },
+    "es": {
+     "t": "Ce qui, ce que, ce dont",
+     "g": "Di «lo que...» con ce qui, ce que y ce dont.",
+     "p": [
+      "Ce qui = sujeto: ce qui me plaît, c'est la musique. Va seguido directamente de un verbo.",
+      "Ce que = complemento: ce que je veux, c'est voyager. Sigue un sujeto: ce que tu dis est vrai.",
+      "Ce dont = con verbos con de: ce dont j'ai besoin, c'est de calme. Ideal para enfatizar: ce qui..., c'est..."
+     ],
+     "q": "Ce qui te plaît le plus en France, c'est quoi ? ¿Y ce dont tu as besoin pour bien dormir ?",
+     "c": "Escribe tres frases sobre ti: ce qui me rend heureux, c'est... ; ce que j'aime... ; ce dont je rêve..."
+    },
+    "fr": {
+     "t": "Ce qui, ce que, ce dont",
+     "g": "Dire « la chose qui / que / dont » avec ce qui, ce que et ce dont.",
+     "p": [
+      "Ce qui = sujet : ce qui me plaît, c'est la musique. Il est suivi directement d'un verbe.",
+      "Ce que = complément d'objet : ce que je veux, c'est voyager ; ce que tu dis est vrai.",
+      "Ce dont = verbes en de : ce dont j'ai besoin, c'est de calme. Idéal pour insister : ce qui..., c'est..."
+     ],
+     "q": "Ce qui te plaît le plus en France, c'est quoi ? Et ce dont tu as besoin pour bien dormir ?",
+     "c": "Écris trois phrases sur toi : ce qui me rend heureux, c'est... ; ce que j'aime... ; ce dont je rêve..."
+    },
+    "it": {
+     "t": "Ce qui, ce que, ce dont",
+     "g": "Di' «ciò che...» con ce qui, ce que e ce dont.",
+     "p": [
+      "Ce qui = soggetto: ce qui me plaît, c'est la musique. Segue subito un verbo.",
+      "Ce que = complemento oggetto: ce que je veux, c'est voyager. Segue un soggetto: ce que tu dis est vrai.",
+      "Ce dont = con verbi con de: ce dont j'ai besoin, c'est de calme. Ottimo per enfatizzare: ce qui..., c'est..."
+     ],
+     "q": "Ce qui te plaît le plus en France, c'est quoi ? E ce dont tu as besoin pour bien dormir ?",
+     "c": "Scrivi tre frasi su di te: ce qui me rend heureux, c'est... ; ce que j'aime... ; ce dont je rêve..."
+    },
+    "pt": {
+     "t": "Ce qui, ce que, ce dont",
+     "g": "Diz «o que...» com ce qui, ce que e ce dont.",
+     "p": [
+      "Ce qui = sujeito: ce qui me plaît, c'est la musique. É seguido logo de um verbo.",
+      "Ce que = complemento direto: ce que je veux, c'est voyager. Segue um sujeito: ce que tu dis est vrai.",
+      "Ce dont = com verbos com de: ce dont j'ai besoin, c'est de calme. Ótimo para realçar: ce qui..., c'est..."
+     ],
+     "q": "Ce qui te plaît le plus en France, c'est quoi ? E ce dont tu as besoin pour bien dormir ?",
+     "c": "Escreve três frases sobre ti: ce qui me rend heureux, c'est... ; ce que j'aime... ; ce dont je rêve..."
+    },
+    "pt_BR": {
+     "t": "Ce qui, ce que, ce dont",
+     "g": "Diga «o que...» com ce qui, ce que e ce dont.",
+     "p": [
+      "Ce qui = sujeito: ce qui me plaît, c'est la musique. Vem logo seguido de um verbo.",
+      "Ce que = objeto: ce que je veux, c'est voyager. Vem seguido de um sujeito: ce que tu dis est vrai.",
+      "Ce dont = com verbos com de: ce dont j'ai besoin, c'est de calme. Ótimo para enfatizar: ce qui..., c'est..."
+     ],
+     "q": "Ce qui te plaît le plus en France, c'est quoi ? E ce dont tu as besoin pour bien dormir ?",
+     "c": "Escreva três frases sobre você: ce qui me rend heureux, c'est... ; ce que j'aime... ; ce dont je rêve..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ce qui me plaît",
+      "ex": "Ce qui me plaît ici, c'est le calme."
+     },
+     {
+      "w": "ce que je veux",
+      "ex": "Ce que je veux, c'est apprendre à cuisiner."
+     },
+     {
+      "w": "ce dont j'ai besoin",
+      "ex": "Ce dont j'ai besoin, c'est d'un bon café."
+     },
+     {
+      "w": "ce qui est important",
+      "ex": "Ce qui est important, c'est de pratiquer."
+     },
+     {
+      "w": "tout ce que",
+      "ex": "Tu peux prendre tout ce que tu veux."
+     },
+     {
+      "w": "ce dont je rêve",
+      "ex": "Ce dont je rêve, c'est de voir les aurores boréales."
+     }
+    ],
+    "gram": "Ce qui (sujet), ce que (objet), ce dont (verbe + de). Mise en relief : ce qui me plaît, c'est la musique."
+   }
+  },
+  {
+   "d": 198,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Lequel with prepositions",
+     "g": "Use lequel, laquelle and their forms after prepositions.",
+     "p": [
+      "After a preposition for things: la table sur laquelle..., le stylo avec lequel j'écris.",
+      "À + lequel → auquel, auxquels ; de + lequel → duquel (near a preposition phrase): le parc près duquel...",
+      "Agree with the noun: lequel, laquelle, lesquels, lesquelles: les amis pour lesquels je cuisine."
+     ],
+     "q": "Describe an object you use a lot with avec lequel or avec laquelle: c'est l'objet avec lequel...",
+     "c": "Write four sentences with sur laquelle, avec lequel, auquel and près duquel about your home or town."
+    },
+    "de": {
+     "t": "Lequel mit Präpositionen",
+     "g": "Du verwendest lequel, laquelle und ihre Formen nach Präpositionen.",
+     "p": [
+      "Nach Präposition bei Sachen: la table sur laquelle..., le stylo avec lequel j'écris.",
+      "À + lequel → auquel, auxquels ; de + lequel → duquel (nach Präpositionsgruppe): le parc près duquel...",
+      "Angleichung ans Nomen: lequel, laquelle, lesquels, lesquelles: les amis pour lesquels je cuisine."
+     ],
+     "q": "Beschreib einen Gegenstand, den du oft benutzt: c'est l'objet avec lequel... oder avec laquelle...",
+     "c": "Schreib vier Sätze mit sur laquelle, avec lequel, auquel und près duquel über dein Zuhause oder deine Stadt."
+    },
+    "es": {
+     "t": "Lequel con preposiciones",
+     "g": "Usa lequel, laquelle y sus formas después de preposiciones.",
+     "p": [
+      "Tras preposición con cosas: la table sur laquelle..., le stylo avec lequel j'écris.",
+      "À + lequel → auquel, auxquels ; de + lequel → duquel (tras locución): le parc près duquel...",
+      "Concuerda con el sustantivo: lequel, laquelle, lesquels, lesquelles: les amis pour lesquels je cuisine."
+     ],
+     "q": "Describe un objeto que usas mucho con avec lequel o avec laquelle: c'est l'objet avec lequel...",
+     "c": "Escribe cuatro frases con sur laquelle, avec lequel, auquel y près duquel sobre tu casa o tu ciudad."
+    },
+    "fr": {
+     "t": "Lequel avec les prépositions",
+     "g": "Utiliser lequel, laquelle et leurs formes après une préposition.",
+     "p": [
+      "Après une préposition : la table sur laquelle..., le stylo avec lequel j'écris.",
+      "À + lequel → auquel, auxquels ; de + lequel → duquel (après une locution) : le parc près duquel...",
+      "Accord avec le nom : lequel, laquelle, lesquels, lesquelles : les amis pour lesquels je cuisine."
+     ],
+     "q": "Décris un objet que tu utilises souvent : c'est l'objet avec lequel... ou avec laquelle...",
+     "c": "Écris quatre phrases avec sur laquelle, avec lequel, auquel et près duquel sur ta maison ou ta ville."
+    },
+    "it": {
+     "t": "Lequel con le preposizioni",
+     "g": "Usa lequel, laquelle e le loro forme dopo le preposizioni.",
+     "p": [
+      "Dopo una preposizione per le cose: la table sur laquelle..., le stylo avec lequel j'écris.",
+      "À + lequel → auquel, auxquels ; de + lequel → duquel (dopo una locuzione): le parc près duquel...",
+      "Si accorda con il nome: lequel, laquelle, lesquels, lesquelles: les amis pour lesquels je cuisine."
+     ],
+     "q": "Descrivi un oggetto che usi spesso con avec lequel o avec laquelle: c'est l'objet avec lequel...",
+     "c": "Scrivi quattro frasi con sur laquelle, avec lequel, auquel e près duquel sulla tua casa o città."
+    },
+    "pt": {
+     "t": "Lequel com preposições",
+     "g": "Usa lequel, laquelle e as suas formas depois de preposições.",
+     "p": [
+      "Depois de preposição para coisas: la table sur laquelle..., le stylo avec lequel j'écris.",
+      "À + lequel → auquel, auxquels ; de + lequel → duquel (após locução): le parc près duquel...",
+      "Concorda com o nome: lequel, laquelle, lesquels, lesquelles: les amis pour lesquels je cuisine."
+     ],
+     "q": "Descreve um objeto que usas muito com avec lequel ou avec laquelle: c'est l'objet avec lequel...",
+     "c": "Escreve quatro frases com sur laquelle, avec lequel, auquel e près duquel sobre a tua casa ou cidade."
+    },
+    "pt_BR": {
+     "t": "Lequel com preposições",
+     "g": "Use lequel, laquelle e suas formas depois de preposições.",
+     "p": [
+      "Depois de preposição para coisas: la table sur laquelle..., le stylo avec lequel j'écris.",
+      "À + lequel → auquel, auxquels ; de + lequel → duquel (após locução): le parc près duquel...",
+      "Concorda com o substantivo: lequel, laquelle, lesquels, lesquelles: les amis pour lesquels je cuisine."
+     ],
+     "q": "Descreva um objeto que você usa muito com avec lequel ou avec laquelle: c'est l'objet avec lequel...",
+     "c": "Escreva quatro frases com sur laquelle, avec lequel, auquel e près duquel sobre sua casa ou cidade."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "avec lequel",
+      "ex": "Voici le stylo avec lequel j'écris mes lettres."
+     },
+     {
+      "w": "sur laquelle",
+      "ex": "La chaise sur laquelle tu es assis est ancienne."
+     },
+     {
+      "w": "auquel",
+      "ex": "C'est le concours auquel je participe."
+     },
+     {
+      "w": "près duquel",
+      "ex": "Le parc près duquel j'habite est magnifique."
+     },
+     {
+      "w": "pour lesquels",
+      "ex": "Ce sont les amis pour lesquels je cuisine."
+     },
+     {
+      "w": "grâce à laquelle",
+      "ex": "C'est l'application grâce à laquelle j'apprends."
+     }
+    ],
+    "gram": "Préposition + lequel / laquelle / lesquels / lesquelles. À + lequel = auquel ; de + lequel = duquel."
+   }
+  },
+  {
+   "d": 199,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Passive voice",
+     "g": "Form and use the passive: le livre a été écrit par...",
+     "p": [
+      "Form: être + past participle, which agrees with the subject: la lettre est écrite, les maisons sont vendues.",
+      "Être carries the tense: présent est construit, passé a été construit, futur sera construit.",
+      "Par introduces who did it: la tour Eiffel a été construite par Gustave Eiffel. Common in news and history."
+     ],
+     "q": "Name a famous building, book or song. Who was it made by? Use a été construit / écrit / chanté par.",
+     "c": "Turn four active sentences into passive ones, for example: Molière a écrit cette pièce → Cette pièce..."
+    },
+    "de": {
+     "t": "Das Passiv",
+     "g": "Du bildest und verwendest das Passiv: le livre a été écrit par...",
+     "p": [
+      "Bildung: être + Partizip, angeglichen ans Subjekt: la lettre est écrite, les maisons sont vendues.",
+      "Être trägt die Zeit: Präsens est construit, Vergangenheit a été construit, Futur sera construit.",
+      "Par nennt den Urheber: la tour Eiffel a été construite par Gustave Eiffel. Typisch für Nachrichten."
+     ],
+     "q": "Nenne ein berühmtes Gebäude, Buch oder Lied. Von wem? Nutze a été construit / écrit / chanté par.",
+     "c": "Setz vier Aktivsätze ins Passiv, z. B.: Molière a écrit cette pièce → Cette pièce..."
+    },
+    "es": {
+     "t": "La voz pasiva",
+     "g": "Forma y usa la pasiva: le livre a été écrit par...",
+     "p": [
+      "Forma: être + participio, que concuerda con el sujeto: la lettre est écrite, les maisons sont vendues.",
+      "Être lleva el tiempo: presente est construit, pasado a été construit, futuro sera construit.",
+      "Par introduce el agente: la tour Eiffel a été construite par Gustave Eiffel. Muy usado en noticias."
+     ],
+     "q": "Nombra un edificio, libro o canción famosos. ¿Quién los hizo? Usa a été construit / écrit / chanté par.",
+     "c": "Pasa cuatro frases activas a pasiva, por ejemplo: Molière a écrit cette pièce → Cette pièce..."
+    },
+    "fr": {
+     "t": "La voix passive",
+     "g": "Former et utiliser le passif : le livre a été écrit par...",
+     "p": [
+      "Formation : être + participe passé accordé avec le sujet : la lettre est écrite, les maisons sont vendues.",
+      "Être porte le temps : présent est construit, passé a été construit, futur sera construit.",
+      "Par introduit l'agent : la tour Eiffel a été construite par Gustave Eiffel. Fréquent dans la presse."
+     ],
+     "q": "Cite un bâtiment, un livre ou une chanson célèbre. Par qui ? Utilise a été construit / écrit / chanté par.",
+     "c": "Mets quatre phrases actives au passif, par exemple : Molière a écrit cette pièce → Cette pièce..."
+    },
+    "it": {
+     "t": "La forma passiva",
+     "g": "Forma e usa il passivo: le livre a été écrit par...",
+     "p": [
+      "Forma: être + participio, accordato con il soggetto: la lettre est écrite, les maisons sont vendues.",
+      "Être porta il tempo: presente est construit, passato a été construit, futuro sera construit.",
+      "Par introduce l'agente: la tour Eiffel a été construite par Gustave Eiffel. Frequente nelle notizie."
+     ],
+     "q": "Nomina un edificio, un libro o una canzone famosi. Da chi? Usa a été construit / écrit / chanté par.",
+     "c": "Trasforma quattro frasi attive in passive, per esempio: Molière a écrit cette pièce → Cette pièce..."
+    },
+    "pt": {
+     "t": "A voz passiva",
+     "g": "Forma e usa a passiva: le livre a été écrit par...",
+     "p": [
+      "Forma: être + particípio, que concorda com o sujeito: la lettre est écrite, les maisons sont vendues.",
+      "Être leva o tempo: presente est construit, passado a été construit, futuro sera construit.",
+      "Par introduz o agente: la tour Eiffel a été construite par Gustave Eiffel. Muito usado nas notícias."
+     ],
+     "q": "Diz um edifício, livro ou canção famosos. Por quem? Usa a été construit / écrit / chanté par.",
+     "c": "Passa quatro frases ativas para a passiva, por exemplo: Molière a écrit cette pièce → Cette pièce..."
+    },
+    "pt_BR": {
+     "t": "A voz passiva",
+     "g": "Forme e use a passiva: le livre a été écrit par...",
+     "p": [
+      "Forma: être + particípio, que concorda com o sujeito: la lettre est écrite, les maisons sont vendues.",
+      "Être carrega o tempo: presente est construit, passado a été construit, futuro sera construit.",
+      "Par introduz o agente: la tour Eiffel a été construite par Gustave Eiffel. Muito usado no noticiário."
+     ],
+     "q": "Cite um prédio, livro ou música famosos. Por quem? Use a été construit / écrit / chanté par.",
+     "c": "Passe quatro frases ativas para a passiva, por exemplo: Molière a écrit cette pièce → Cette pièce..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "a été écrit par",
+      "ex": "Ce roman a été écrit par Victor Hugo."
+     },
+     {
+      "w": "a été construite",
+      "ex": "La tour Eiffel a été construite pour l'Exposition de 1889."
+     },
+     {
+      "w": "est fabriqué",
+      "ex": "Ce fromage est fabriqué en Normandie."
+     },
+     {
+      "w": "sera inauguré",
+      "ex": "Le nouveau musée sera inauguré au printemps."
+     },
+     {
+      "w": "sont vendus",
+      "ex": "Ces billets sont vendus en ligne."
+     },
+     {
+      "w": "être invité(e)",
+      "ex": "Nous avons été invités au mariage de Claire."
+     }
+    ],
+    "gram": "Passif : être (au temps voulu) + participe passé accordé + par + agent. La lettre a été écrite par Marie."
+   }
+  },
+  {
+   "d": 200,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Alternatives to the passive",
+     "g": "Day 200, bravo! Use on and se faire instead of the passive, as French speakers often do.",
+     "p": [
+      "On is very common instead of the passive: on m'a aidé (I was helped), on parle français ici.",
+      "Se faire + infinitive: someone does it for you: il s'est fait couper les cheveux, je me suis fait voler mon vélo.",
+      "Pronominal passive for general facts: ce vin se boit frais, ça se dit souvent, ce livre se lit vite."
+     ],
+     "q": "What did you have done recently by someone else? Je me suis fait... (couper les cheveux, aider...)",
+     "c": "Rewrite three passive sentences with on, then write two sentences with se faire + infinitive."
+    },
+    "de": {
+     "t": "Alternativen zum Passiv",
+     "g": "Tag 200, bravo! Du nutzt on und se faire statt Passiv, wie Muttersprachler oft.",
+     "p": [
+      "On ersetzt oft das Passiv: on m'a aidé (mir wurde geholfen), on parle français ici.",
+      "Se faire + Infinitiv: jemand macht es für dich: il s'est fait couper les cheveux, je me suis fait voler mon vélo.",
+      "Reflexives Passiv für Allgemeines: ce vin se boit frais, ça se dit souvent, ce livre se lit vite."
+     ],
+     "q": "Was hast du kürzlich von jemand anderem machen lassen? Je me suis fait... (couper les cheveux, aider...)",
+     "c": "Schreib drei Passivsätze mit on um und bilde zwei Sätze mit se faire + Infinitiv."
+    },
+    "es": {
+     "t": "Alternativas a la pasiva",
+     "g": "¡Día 200, bravo! Usa on y se faire en lugar de la pasiva, como hacen los nativos.",
+     "p": [
+      "On se usa mucho en vez de la pasiva: on m'a aidé (me ayudaron), on parle français ici.",
+      "Se faire + infinitivo: alguien lo hace por ti: il s'est fait couper les cheveux, je me suis fait voler mon vélo.",
+      "Pasiva refleja para hechos generales: ce vin se boit frais, ça se dit souvent, ce livre se lit vite."
+     ],
+     "q": "¿Qué te has hecho hacer últimamente? Je me suis fait... (couper les cheveux, aider...)",
+     "c": "Reescribe tres frases pasivas con on y escribe dos frases con se faire + infinitivo."
+    },
+    "fr": {
+     "t": "Les alternatives au passif",
+     "g": "Jour 200, bravo ! Utiliser on et se faire au lieu du passif, comme les francophones.",
+     "p": [
+      "On remplace souvent le passif : on m'a aidé, on parle français ici, on a construit ce pont en 1900.",
+      "Se faire + infinitif : quelqu'un le fait pour toi : il s'est fait couper les cheveux, je me suis fait voler mon vélo.",
+      "Forme pronominale à sens passif : ce vin se boit frais, ça se dit souvent, ce livre se lit vite."
+     ],
+     "q": "Qu'est-ce que tu t'es fait faire récemment ? Je me suis fait... (couper les cheveux, aider...)",
+     "c": "Réécris trois phrases passives avec on, puis écris deux phrases avec se faire + infinitif."
+    },
+    "it": {
+     "t": "Alternative al passivo",
+     "g": "Giorno 200, bravo! Usa on e se faire al posto del passivo, come fanno i madrelingua.",
+     "p": [
+      "On sostituisce spesso il passivo: on m'a aidé (sono stato aiutato), on parle français ici.",
+      "Se faire + infinito: qualcuno lo fa per te: il s'est fait couper les cheveux, je me suis fait voler mon vélo.",
+      "Passivo riflessivo per fatti generali: ce vin se boit frais, ça se dit souvent, ce livre se lit vite."
+     ],
+     "q": "Cosa ti sei fatto fare di recente? Je me suis fait... (couper les cheveux, aider...)",
+     "c": "Riscrivi tre frasi passive con on e scrivi due frasi con se faire + infinito."
+    },
+    "pt": {
+     "t": "Alternativas à passiva",
+     "g": "Dia 200, bravo! Usa on e se faire em vez da passiva, como os nativos.",
+     "p": [
+      "On substitui muitas vezes a passiva: on m'a aidé (ajudaram-me), on parle français ici.",
+      "Se faire + infinitivo: alguém faz por ti: il s'est fait couper les cheveux, je me suis fait voler mon vélo.",
+      "Passiva pronominal para factos gerais: ce vin se boit frais, ça se dit souvent, ce livre se lit vite."
+     ],
+     "q": "O que mandaste fazer recentemente? Je me suis fait... (couper les cheveux, aider...)",
+     "c": "Reescreve três frases passivas com on e escreve duas frases com se faire + infinitivo."
+    },
+    "pt_BR": {
+     "t": "Alternativas à passiva",
+     "g": "Dia 200, parabéns! Use on e se faire no lugar da passiva, como os nativos.",
+     "p": [
+      "On substitui muito a passiva: on m'a aidé (me ajudaram), on parle français ici.",
+      "Se faire + infinitivo: alguém faz por você: il s'est fait couper les cheveux, je me suis fait voler mon vélo.",
+      "Passiva pronominal para fatos gerais: ce vin se boit frais, ça se dit souvent, ce livre se lit vite."
+     ],
+     "q": "O que você mandou fazer recentemente? Je me suis fait... (couper les cheveux, aider...)",
+     "c": "Reescreva três frases passivas com on e escreva duas frases com se faire + infinitivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "on m'a aidé(e)",
+      "ex": "On m'a aidée à porter mes valises."
+     },
+     {
+      "w": "on dit que",
+      "ex": "On dit que ce restaurant est excellent."
+     },
+     {
+      "w": "se faire couper les cheveux",
+      "ex": "Il s'est fait couper les cheveux samedi."
+     },
+     {
+      "w": "se faire aider",
+      "ex": "Je me suis fait aider pour le déménagement."
+     },
+     {
+      "w": "ça se dit",
+      "ex": "Ça se dit souvent au Québec."
+     },
+     {
+      "w": "se boire frais",
+      "ex": "Ce vin blanc se boit frais."
+     }
+    ],
+    "gram": "Alternatives au passif : on + actif (on m'a aidé) ; se faire + infinitif (il s'est fait couper les cheveux) ; forme pronominale."
+   }
+  }
+ ]
+}

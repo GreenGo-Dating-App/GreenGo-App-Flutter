@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 101,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Will for predictions",
+     "g": "Make predictions about the future with will.",
+     "p": [
+      "Form: will plus base verb for every person: It will rain. You'll love it.",
+      "Negative: won't: It won't be easy. Question: Will you be there?",
+      "Add I think, I'm sure or probably: I think it'll be sunny tomorrow."
+     ],
+     "q": "What do you think your life will be like in ten years? Make two predictions.",
+     "c": "Write five predictions about tomorrow, next year and the future, using will and won't."
+    },
+    "de": {
+     "t": "Will für Vorhersagen",
+     "g": "Du machst mit will Vorhersagen über die Zukunft.",
+     "p": [
+      "Form: will plus Grundform für alle Personen: It will rain. You'll love it.",
+      "Verneinung: won't: It won't be easy. Frage: Will you be there?",
+      "Füg I think, I'm sure oder probably hinzu: I think it'll be sunny tomorrow."
+     ],
+     "q": "Wie wird dein Leben deiner Meinung nach in zehn Jahren sein? Mach zwei Vorhersagen.",
+     "c": "Schreib fünf Vorhersagen über morgen, nächstes Jahr und die Zukunft mit will und won't."
+    },
+    "es": {
+     "t": "Will para predicciones",
+     "g": "Haz predicciones sobre el futuro con will.",
+     "p": [
+      "Forma: will más verbo base para todas las personas: It will rain. You'll love it.",
+      "Negativa: won't: It won't be easy. Pregunta: Will you be there?",
+      "Añade I think, I'm sure o probably: I think it'll be sunny tomorrow."
+     ],
+     "q": "¿Cómo crees que será tu vida dentro de diez años? Haz dos predicciones.",
+     "c": "Escribe cinco predicciones sobre mañana, el año que viene y el futuro con will y won't."
+    },
+    "fr": {
+     "t": "Will pour les prédictions",
+     "g": "Faire des prédictions sur l'avenir avec will.",
+     "p": [
+      "Forme : will plus base verbale pour toutes les personnes : It will rain. You'll love it.",
+      "Négation : won't : It won't be easy. Question : Will you be there?",
+      "Ajoute I think, I'm sure ou probably : I think it'll be sunny tomorrow."
+     ],
+     "q": "À ton avis, comment sera ta vie dans dix ans ? Fais deux prédictions.",
+     "c": "Écris cinq prédictions sur demain, l'an prochain et l'avenir, avec will et won't."
+    },
+    "it": {
+     "t": "Will per le previsioni",
+     "g": "Fai previsioni sul futuro con will.",
+     "p": [
+      "Forma: will più verbo base per tutte le persone: It will rain. You'll love it.",
+      "Negativa: won't: It won't be easy. Domanda: Will you be there?",
+      "Aggiungi I think, I'm sure o probably: I think it'll be sunny tomorrow."
+     ],
+     "q": "Come pensi che sarà la tua vita fra dieci anni? Fai due previsioni.",
+     "c": "Scrivi cinque previsioni su domani, l'anno prossimo e il futuro con will e won't."
+    },
+    "pt": {
+     "t": "Will para previsões",
+     "g": "Faz previsões sobre o futuro com will.",
+     "p": [
+      "Forma: will mais verbo base para todas as pessoas: It will rain. You'll love it.",
+      "Negativa: won't: It won't be easy. Pergunta: Will you be there?",
+      "Junta I think, I'm sure ou probably: I think it'll be sunny tomorrow."
+     ],
+     "q": "Como achas que vai ser a tua vida daqui a dez anos? Faz duas previsões.",
+     "c": "Escreve cinco previsões sobre amanhã, o próximo ano e o futuro com will e won't."
+    },
+    "pt_BR": {
+     "t": "Will para previsões",
+     "g": "Faça previsões sobre o futuro com will.",
+     "p": [
+      "Forma: will mais verbo base para todas as pessoas: It will rain. You'll love it.",
+      "Negativa: won't: It won't be easy. Pergunta: Will you be there?",
+      "Acrescente I think, I'm sure ou probably: I think it'll be sunny tomorrow."
+     ],
+     "q": "Como você acha que vai ser sua vida daqui a dez anos? Faça duas previsões.",
+     "c": "Escreva cinco previsões sobre amanhã, o ano que vem e o futuro com will e won't."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "will",
+      "ex": "I think it will rain later."
+     },
+     {
+      "w": "won't",
+      "ex": "Don't worry, it won't take long."
+     },
+     {
+      "w": "You'll love it.",
+      "ex": "Try this cake. You'll love it."
+     },
+     {
+      "w": "I think...will",
+      "ex": "I think she'll be a great teacher."
+     },
+     {
+      "w": "probably",
+      "ex": "We'll probably arrive at nine."
+     },
+     {
+      "w": "I'm sure",
+      "ex": "I'm sure you'll pass the exam."
+     }
+    ],
+    "gram": "Predictions: will + base verb (It will rain), won't = will not. Often with I think, I'm sure, probably."
+   }
+  },
+  {
+   "d": 102,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Will for offers and promises",
+     "g": "Use will for quick decisions, offers and promises.",
+     "p": [
+      "Instant decisions, made while speaking: The phone's ringing. I'll get it!",
+      "Offers of help: I'll carry that for you. Shall I open the window?",
+      "Promises: I'll call you later. I won't forget, I promise."
+     ],
+     "q": "Your friend says: I'm so hungry! Offer something with I'll.",
+     "c": "Write three offers and three promises you could make to friends or family this week."
+    },
+    "de": {
+     "t": "Will für Angebote und Versprechen",
+     "g": "Du nutzt will für spontane Entscheidungen, Angebote und Versprechen.",
+     "p": [
+      "Spontane Entscheidungen beim Sprechen: The phone's ringing. I'll get it!",
+      "Hilfe anbieten: I'll carry that for you. Shall I open the window?",
+      "Versprechen: I'll call you later. I won't forget, I promise."
+     ],
+     "q": "Ein Freund sagt: I'm so hungry! Biete etwas mit I'll an.",
+     "c": "Schreib drei Angebote und drei Versprechen, die du diese Woche Freunden oder Familie machen könntest."
+    },
+    "es": {
+     "t": "Will para ofrecer y prometer",
+     "g": "Usa will para decisiones rápidas, ofrecimientos y promesas.",
+     "p": [
+      "Decisiones al momento, mientras hablas: The phone's ringing. I'll get it!",
+      "Ofrecer ayuda: I'll carry that for you. Shall I open the window?",
+      "Promesas: I'll call you later. I won't forget, I promise."
+     ],
+     "q": "Tu amigo dice: I'm so hungry! Ofrécele algo con I'll.",
+     "c": "Escribe tres ofrecimientos y tres promesas que podrías hacer esta semana a amigos o familia."
+    },
+    "fr": {
+     "t": "Will pour proposer et promettre",
+     "g": "Utiliser will pour les décisions rapides, les offres et les promesses.",
+     "p": [
+      "Décisions prises en parlant : The phone's ringing. I'll get it!",
+      "Proposer son aide : I'll carry that for you. Shall I open the window?",
+      "Promesses : I'll call you later. I won't forget, I promise."
+     ],
+     "q": "Ton ami dit : I'm so hungry! Propose-lui quelque chose avec I'll.",
+     "c": "Écris trois offres et trois promesses que tu pourrais faire cette semaine à tes proches."
+    },
+    "it": {
+     "t": "Will per offerte e promesse",
+     "g": "Usi will per decisioni immediate, offerte e promesse.",
+     "p": [
+      "Decisioni prese mentre parli: The phone's ringing. I'll get it!",
+      "Offrire aiuto: I'll carry that for you. Shall I open the window?",
+      "Promesse: I'll call you later. I won't forget, I promise."
+     ],
+     "q": "Il tuo amico dice: I'm so hungry! Offrigli qualcosa con I'll.",
+     "c": "Scrivi tre offerte e tre promesse che potresti fare questa settimana ad amici o famiglia."
+    },
+    "pt": {
+     "t": "Will para oferecer e prometer",
+     "g": "Usa will para decisões rápidas, ofertas e promessas.",
+     "p": [
+      "Decisões tomadas no momento: The phone's ringing. I'll get it!",
+      "Oferecer ajuda: I'll carry that for you. Shall I open the window?",
+      "Promessas: I'll call you later. I won't forget, I promise."
+     ],
+     "q": "O teu amigo diz: I'm so hungry! Oferece-lhe algo com I'll.",
+     "c": "Escreve três ofertas e três promessas que podias fazer esta semana a amigos ou família."
+    },
+    "pt_BR": {
+     "t": "Will para oferecer e prometer",
+     "g": "Use will para decisões rápidas, ofertas e promessas.",
+     "p": [
+      "Decisões tomadas na hora: The phone's ringing. I'll get it!",
+      "Oferecer ajuda: I'll carry that for you. Shall I open the window?",
+      "Promessas: I'll call you later. I won't forget, I promise."
+     ],
+     "q": "Seu amigo diz: I'm so hungry! Ofereça algo com I'll.",
+     "c": "Escreva três ofertas e três promessas que você poderia fazer esta semana a amigos ou família."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "I'll get it!",
+      "ex": "Someone's at the door. I'll get it!"
+     },
+     {
+      "w": "I'll help you.",
+      "ex": "That box looks heavy. I'll help you."
+     },
+     {
+      "w": "I'll call you later.",
+      "ex": "I'm busy now. I'll call you later."
+     },
+     {
+      "w": "I promise.",
+      "ex": "I'll be on time, I promise."
+     },
+     {
+      "w": "I won't forget.",
+      "ex": "Your birthday? I won't forget!"
+     },
+     {
+      "w": "Shall I...?",
+      "ex": "Shall I make some tea?"
+     }
+    ],
+    "gram": "Will for decisions made now (I'll take it), offers (I'll help) and promises (I won't tell anyone). Offers also: Shall I...?"
+   }
+  },
+  {
+   "d": 103,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Going to or will?",
+     "g": "Choose between going to and will when you talk about the future.",
+     "p": [
+      "Going to for plans decided before: I'm going to visit Mum on Sunday.",
+      "Will for decisions made now: Oh, it's raining. I'll take an umbrella.",
+      "Evidence you can see uses going to: Look at those clouds! It's going to rain. Opinion uses will."
+     ],
+     "q": "What are you going to do tonight? And what will you do if you have free time?",
+     "c": "Write a short dialogue that uses going to for a plan and will for a quick decision."
+    },
+    "de": {
+     "t": "Going to oder will?",
+     "g": "Du wählst zwischen going to und will, wenn du über die Zukunft sprichst.",
+     "p": [
+      "Going to für vorher beschlossene Pläne: I'm going to visit Mum on Sunday.",
+      "Will für Entscheidungen im Moment: Oh, it's raining. I'll take an umbrella.",
+      "Sichtbare Hinweise: going to: Look at those clouds! It's going to rain. Meinung: will."
+     ],
+     "q": "Was machst du heute Abend? Und was machst du wohl, wenn du freie Zeit hast?",
+     "c": "Schreib einen kurzen Dialog mit going to für einen Plan und will für eine spontane Entscheidung."
+    },
+    "es": {
+     "t": "¿Going to o will?",
+     "g": "Elige entre going to y will al hablar del futuro.",
+     "p": [
+      "Going to para planes decididos antes: I'm going to visit Mum on Sunday.",
+      "Will para decisiones del momento: Oh, it's raining. I'll take an umbrella.",
+      "Con pruebas visibles, going to: Look at those clouds! It's going to rain. Con opiniones, will."
+     ],
+     "q": "¿Qué vas a hacer esta noche? ¿Y qué harás si tienes tiempo libre?",
+     "c": "Escribe un breve diálogo con going to para un plan y will para una decisión rápida."
+    },
+    "fr": {
+     "t": "Going to ou will ?",
+     "g": "Choisir entre going to et will pour parler du futur.",
+     "p": [
+      "Going to pour un projet décidé avant : I'm going to visit Mum on Sunday.",
+      "Will pour une décision prise sur le moment : Oh, it's raining. I'll take an umbrella.",
+      "Avec un indice visible, going to : Look at those clouds! It's going to rain. Pour un avis, will."
+     ],
+     "q": "Que vas-tu faire ce soir ? Et que feras-tu si tu as du temps libre ?",
+     "c": "Écris un court dialogue avec going to pour un projet et will pour une décision rapide."
+    },
+    "it": {
+     "t": "Going to o will?",
+     "g": "Scegli tra going to e will quando parli del futuro.",
+     "p": [
+      "Going to per piani decisi prima: I'm going to visit Mum on Sunday.",
+      "Will per decisioni prese sul momento: Oh, it's raining. I'll take an umbrella.",
+      "Con prove visibili, going to: Look at those clouds! It's going to rain. Con opinioni, will."
+     ],
+     "q": "Cosa farai stasera? E cosa farai se hai tempo libero?",
+     "c": "Scrivi un breve dialogo con going to per un piano e will per una decisione rapida."
+    },
+    "pt": {
+     "t": "Going to ou will?",
+     "g": "Escolhe entre going to e will ao falar do futuro.",
+     "p": [
+      "Going to para planos decididos antes: I'm going to visit Mum on Sunday.",
+      "Will para decisões do momento: Oh, it's raining. I'll take an umbrella.",
+      "Com sinais visíveis, going to: Look at those clouds! It's going to rain. Com opiniões, will."
+     ],
+     "q": "O que vais fazer esta noite? E o que farás se tiveres tempo livre?",
+     "c": "Escreve um pequeno diálogo com going to para um plano e will para uma decisão rápida."
+    },
+    "pt_BR": {
+     "t": "Going to ou will?",
+     "g": "Escolha entre going to e will ao falar do futuro.",
+     "p": [
+      "Going to para planos decididos antes: I'm going to visit Mum on Sunday.",
+      "Will para decisões na hora: Oh, it's raining. I'll take an umbrella.",
+      "Com sinais visíveis, going to: Look at those clouds! It's going to rain. Com opiniões, will."
+     ],
+     "q": "O que você vai fazer hoje à noite? E o que fará se tiver tempo livre?",
+     "c": "Escreva um pequeno diálogo com going to para um plano e will para uma decisão rápida."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "I'm going to...",
+      "ex": "I'm going to visit my mum on Sunday."
+     },
+     {
+      "w": "I'll...",
+      "ex": "It's cold. I'll close the window."
+     },
+     {
+      "w": "It's going to rain.",
+      "ex": "Look at those clouds! It's going to rain."
+     },
+     {
+      "w": "I think it will...",
+      "ex": "I think it will be a great party."
+     },
+     {
+      "w": "a plan",
+      "ex": "We have a plan: we're going to paint the room."
+     },
+     {
+      "w": "I've decided.",
+      "ex": "I've decided. I'm going to learn the guitar."
+     }
+    ],
+    "gram": "Going to = plan made before or visible evidence. Will = decision at the moment of speaking or opinion/prediction."
+   }
+  },
+  {
+   "d": 104,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Present continuous for arrangements",
+     "g": "Talk about fixed plans with a time and place using the present continuous.",
+     "p": [
+      "Use am, is or are plus -ing for arrangements: I'm meeting Tom at eight.",
+      "There is usually a time, a place or another person: We're having lunch with Ana on Friday.",
+      "Ask about plans: What are you doing this weekend? Are you working tomorrow?"
+     ],
+     "q": "What are you doing this weekend? Tell me about one fixed arrangement.",
+     "c": "Write your diary for next week with five arrangements in the present continuous."
+    },
+    "de": {
+     "t": "Present continuous für Verabredungen",
+     "g": "Du sprichst im present continuous über feste Pläne mit Zeit und Ort.",
+     "p": [
+      "Am, is oder are plus -ing für Verabredungen: I'm meeting Tom at eight.",
+      "Meist gibt es eine Zeit, einen Ort oder eine Person: We're having lunch with Ana on Friday.",
+      "Frag nach Plänen: What are you doing this weekend? Are you working tomorrow?"
+     ],
+     "q": "Was machst du dieses Wochenende? Erzähl mir von einer festen Verabredung.",
+     "c": "Schreib deinen Kalender für nächste Woche mit fünf Terminen im present continuous."
+    },
+    "es": {
+     "t": "Present continuous para citas",
+     "g": "Habla de planes fijos con hora y lugar usando el present continuous.",
+     "p": [
+      "Usa am, is o are más -ing para planes cerrados: I'm meeting Tom at eight.",
+      "Suele haber hora, lugar u otra persona: We're having lunch with Ana on Friday.",
+      "Pregunta por planes: What are you doing this weekend? Are you working tomorrow?"
+     ],
+     "q": "¿Qué haces este fin de semana? Cuéntame un plan ya cerrado.",
+     "c": "Escribe tu agenda de la próxima semana con cinco citas en present continuous."
+    },
+    "fr": {
+     "t": "Present continuous pour les rendez-vous",
+     "g": "Parler de projets fixés, avec heure et lieu, au present continuous.",
+     "p": [
+      "Am, is ou are plus -ing pour un rendez-vous : I'm meeting Tom at eight.",
+      "Il y a souvent une heure, un lieu ou une personne : We're having lunch with Ana on Friday.",
+      "Pour demander : What are you doing this weekend? Are you working tomorrow?"
+     ],
+     "q": "Que fais-tu ce week-end ? Parle-moi d'un rendez-vous déjà fixé.",
+     "c": "Écris ton agenda de la semaine prochaine avec cinq rendez-vous au present continuous."
+    },
+    "it": {
+     "t": "Present continuous per gli appuntamenti",
+     "g": "Parli di piani fissati, con ora e luogo, usando il present continuous.",
+     "p": [
+      "Usa am, is o are più -ing per gli impegni: I'm meeting Tom at eight.",
+      "Di solito c'è un'ora, un luogo o una persona: We're having lunch with Ana on Friday.",
+      "Chiedi dei piani: What are you doing this weekend? Are you working tomorrow?"
+     ],
+     "q": "Cosa fai questo weekend? Raccontami un impegno già fissato.",
+     "c": "Scrivi la tua agenda della prossima settimana con cinque impegni al present continuous."
+    },
+    "pt": {
+     "t": "Present continuous para combinações",
+     "g": "Fala de planos marcados, com hora e lugar, usando o present continuous.",
+     "p": [
+      "Usa am, is ou are mais -ing para combinações: I'm meeting Tom at eight.",
+      "Costuma haver hora, lugar ou outra pessoa: We're having lunch with Ana on Friday.",
+      "Pergunta por planos: What are you doing this weekend? Are you working tomorrow?"
+     ],
+     "q": "O que vais fazer este fim de semana? Fala-me de um plano já marcado.",
+     "c": "Escreve a tua agenda da próxima semana com cinco compromissos no present continuous."
+    },
+    "pt_BR": {
+     "t": "Present continuous para compromissos",
+     "g": "Fale de planos marcados, com hora e lugar, usando o present continuous.",
+     "p": [
+      "Use am, is ou are mais -ing para compromissos: I'm meeting Tom at eight.",
+      "Costuma ter hora, lugar ou outra pessoa: We're having lunch with Ana on Friday.",
+      "Pergunte sobre planos: What are you doing this weekend? Are you working tomorrow?"
+     ],
+     "q": "O que você vai fazer neste fim de semana? Me conte um compromisso já marcado.",
+     "c": "Escreva sua agenda da próxima semana com cinco compromissos no present continuous."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "I'm meeting...",
+      "ex": "I'm meeting Tom at eight tonight."
+     },
+     {
+      "w": "We're having lunch",
+      "ex": "We're having lunch with Ana on Friday."
+     },
+     {
+      "w": "What are you doing...?",
+      "ex": "What are you doing on Saturday?"
+     },
+     {
+      "w": "I'm flying to...",
+      "ex": "I'm flying to Madrid next Monday."
+     },
+     {
+      "w": "Are you working...?",
+      "ex": "Are you working tomorrow?"
+     },
+     {
+      "w": "an arrangement",
+      "ex": "I have an arrangement with the dentist at ten."
+     }
+    ],
+    "gram": "Present continuous (am/is/are + -ing) for fixed future arrangements with a time or place: I'm seeing Ana at six."
+   }
+  },
+  {
+   "d": 105,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Making appointments",
+     "g": "Arrange a time to meet, at work or with friends.",
+     "p": [
+      "Suggest a day: Are you free on Friday? How about Tuesday?",
+      "Suggest a time: How about ten o'clock? Is three o'clock OK for you?",
+      "Agree or change: That works for me. Sorry, I can't then. Can we make it later?"
+     ],
+     "q": "Let's arrange a coffee together. When are you free, and what time suits you?",
+     "c": "Write a short chat that sets up a meeting, with one change of time before you agree."
+    },
+    "de": {
+     "t": "Termine vereinbaren",
+     "g": "Du vereinbarst einen Termin, bei der Arbeit oder mit Freunden.",
+     "p": [
+      "Einen Tag vorschlagen: Are you free on Friday? How about Tuesday?",
+      "Eine Uhrzeit vorschlagen: How about ten o'clock? Is three o'clock OK for you?",
+      "Zusagen oder ändern: That works for me. Sorry, I can't then. Can we make it later?"
+     ],
+     "q": "Lass uns einen Kaffee ausmachen. Wann hast du Zeit und welche Uhrzeit passt dir?",
+     "c": "Schreib einen kurzen Chat, der ein Treffen vereinbart, mit einer Zeitänderung vor der Zusage."
+    },
+    "es": {
+     "t": "Concertar citas",
+     "g": "Queda a una hora, en el trabajo o con amigos.",
+     "p": [
+      "Propón un día: Are you free on Friday? How about Tuesday?",
+      "Propón una hora: How about ten o'clock? Is three o'clock OK for you?",
+      "Acepta o cambia: That works for me. Sorry, I can't then. Can we make it later?"
+     ],
+     "q": "Quedemos para un café. ¿Cuándo estás libre y qué hora te viene bien?",
+     "c": "Escribe un chat corto para quedar, con un cambio de hora antes de cerrar el plan."
+    },
+    "fr": {
+     "t": "Prendre rendez-vous",
+     "g": "Fixer un moment pour se voir, au travail ou entre amis.",
+     "p": [
+      "Propose un jour : Are you free on Friday? How about Tuesday?",
+      "Propose une heure : How about ten o'clock? Is three o'clock OK for you?",
+      "Accepte ou change : That works for me. Sorry, I can't then. Can we make it later?"
+     ],
+     "q": "Organisons un café. Quand es-tu libre et quelle heure te convient ?",
+     "c": "Écris un court échange pour fixer un rendez-vous, avec un changement d'heure avant d'accepter."
+    },
+    "it": {
+     "t": "Fissare appuntamenti",
+     "g": "Fissi un orario per vedervi, al lavoro o con gli amici.",
+     "p": [
+      "Proponi un giorno: Are you free on Friday? How about Tuesday?",
+      "Proponi un orario: How about ten o'clock? Is three o'clock OK for you?",
+      "Accetta o cambia: That works for me. Sorry, I can't then. Can we make it later?"
+     ],
+     "q": "Organizziamo un caffè. Quando sei libero e che ora ti va bene?",
+     "c": "Scrivi una breve chat per fissare un incontro, con un cambio d'orario prima di accettare."
+    },
+    "pt": {
+     "t": "Marcar encontros",
+     "g": "Marca uma hora para se encontrarem, no trabalho ou com amigos.",
+     "p": [
+      "Sugere um dia: Are you free on Friday? How about Tuesday?",
+      "Sugere uma hora: How about ten o'clock? Is three o'clock OK for you?",
+      "Aceita ou muda: That works for me. Sorry, I can't then. Can we make it later?"
+     ],
+     "q": "Vamos combinar um café. Quando estás livre e que hora te dá jeito?",
+     "c": "Escreve uma conversa curta para marcar um encontro, com uma mudança de hora antes de aceitar."
+    },
+    "pt_BR": {
+     "t": "Marcando horários",
+     "g": "Marque um horário para se encontrar, no trabalho ou com amigos.",
+     "p": [
+      "Sugira um dia: Are you free on Friday? How about Tuesday?",
+      "Sugira um horário: How about ten o'clock? Is three o'clock OK for you?",
+      "Aceite ou mude: That works for me. Sorry, I can't then. Can we make it later?"
+     ],
+     "q": "Vamos marcar um café. Quando você está livre e que horário fica bom?",
+     "c": "Escreva um chat curto marcando um encontro, com uma mudança de horário antes de fechar."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Are you free on...?",
+      "ex": "Are you free on Friday afternoon?"
+     },
+     {
+      "w": "How about...?",
+      "ex": "How about ten o'clock?"
+     },
+     {
+      "w": "That works for me.",
+      "ex": "Tuesday at three? That works for me."
+     },
+     {
+      "w": "Can we make it later?",
+      "ex": "Sorry, I'm busy at two. Can we make it later?"
+     },
+     {
+      "w": "an appointment",
+      "ex": "I have an appointment at the bank."
+     },
+     {
+      "w": "See you then!",
+      "ex": "Great, Friday at ten. See you then!"
+     }
+    ],
+    "gram": "Suggest with How about + time/day? or Are you free on + day? Agree: That works for me. Change: Can we make it + later/earlier?"
+   }
+  },
+  {
+   "d": 106,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Should for advice",
+     "g": "Give and ask for advice with should and shouldn't.",
+     "p": [
+      "Should plus base verb gives advice: You should rest. You should try this café.",
+      "Shouldn't for things that are not a good idea: You shouldn't stay up so late.",
+      "Ask for advice: Should I take an umbrella? What should I do?"
+     ],
+     "q": "I want to improve my English quickly. What should I do? Give me two tips.",
+     "c": "Write three pieces of advice for a visitor to your town with should and one with shouldn't."
+    },
+    "de": {
+     "t": "Should für Ratschläge",
+     "g": "Du gibst und erfragst Ratschläge mit should und shouldn't.",
+     "p": [
+      "Should plus Grundform gibt einen Rat: You should rest. You should try this café.",
+      "Shouldn't für keine gute Idee: You shouldn't stay up so late.",
+      "Um Rat fragen: Should I take an umbrella? What should I do?"
+     ],
+     "q": "Ich will schnell besser Englisch sprechen. Was sollte ich tun? Gib mir zwei Tipps.",
+     "c": "Schreib drei Tipps mit should und einen mit shouldn't für Besucher deiner Stadt."
+    },
+    "es": {
+     "t": "Should para aconsejar",
+     "g": "Da y pide consejos con should y shouldn't.",
+     "p": [
+      "Should más verbo base da un consejo: You should rest. You should try this café.",
+      "Shouldn't para lo que no es buena idea: You shouldn't stay up so late.",
+      "Pide consejo: Should I take an umbrella? What should I do?"
+     ],
+     "q": "Quiero mejorar mi inglés rápido. ¿Qué debería hacer? Dame dos consejos.",
+     "c": "Escribe tres consejos con should y uno con shouldn't para alguien que visita tu ciudad."
+    },
+    "fr": {
+     "t": "Should pour conseiller",
+     "g": "Donner et demander des conseils avec should et shouldn't.",
+     "p": [
+      "Should plus base verbale donne un conseil : You should rest. You should try this café.",
+      "Shouldn't pour ce qui n'est pas une bonne idée : You shouldn't stay up so late.",
+      "Demander conseil : Should I take an umbrella? What should I do?"
+     ],
+     "q": "Je veux progresser vite en anglais. Que devrais-je faire ? Donne-moi deux conseils.",
+     "c": "Écris trois conseils avec should et un avec shouldn't pour quelqu'un qui visite ta ville."
+    },
+    "it": {
+     "t": "Should per i consigli",
+     "g": "Dai e chiedi consigli con should e shouldn't.",
+     "p": [
+      "Should più verbo base dà un consiglio: You should rest. You should try this café.",
+      "Shouldn't per ciò che non è una buona idea: You shouldn't stay up so late.",
+      "Chiedi un consiglio: Should I take an umbrella? What should I do?"
+     ],
+     "q": "Voglio migliorare il mio inglese in fretta. Cosa dovrei fare? Dammi due consigli.",
+     "c": "Scrivi tre consigli con should e uno con shouldn't per chi visita la tua città."
+    },
+    "pt": {
+     "t": "Should para dar conselhos",
+     "g": "Dá e pede conselhos com should e shouldn't.",
+     "p": [
+      "Should mais verbo base dá um conselho: You should rest. You should try this café.",
+      "Shouldn't para o que não é boa ideia: You shouldn't stay up so late.",
+      "Pede conselho: Should I take an umbrella? What should I do?"
+     ],
+     "q": "Quero melhorar o meu inglês depressa. O que devo fazer? Dá-me duas dicas.",
+     "c": "Escreve três conselhos com should e um com shouldn't para quem visita a tua cidade."
+    },
+    "pt_BR": {
+     "t": "Should para dar conselhos",
+     "g": "Dê e peça conselhos com should e shouldn't.",
+     "p": [
+      "Should mais verbo base dá um conselho: You should rest. You should try this café.",
+      "Shouldn't para o que não é boa ideia: You shouldn't stay up so late.",
+      "Peça conselho: Should I take an umbrella? What should I do?"
+     ],
+     "q": "Quero melhorar meu inglês rápido. O que devo fazer? Me dê duas dicas.",
+     "c": "Escreva três conselhos com should e um com shouldn't para quem visita sua cidade."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "You should...",
+      "ex": "You should visit the old town."
+     },
+     {
+      "w": "You shouldn't...",
+      "ex": "You shouldn't drink coffee late at night."
+     },
+     {
+      "w": "Should I...?",
+      "ex": "Should I take an umbrella?"
+     },
+     {
+      "w": "What should I do?",
+      "ex": "I lost my key. What should I do?"
+     },
+     {
+      "w": "advice",
+      "ex": "Can you give me some advice?"
+     },
+     {
+      "w": "a good idea",
+      "ex": "It's a good idea to book early."
+     }
+    ],
+    "gram": "Advice: should/shouldn't + base verb (You should rest). Questions: Should I...? Advice is uncountable: some advice."
+   }
+  },
+  {
+   "d": 107,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Must and have to",
+     "g": "Talk about obligations and rules with must and have to.",
+     "p": [
+      "Have to is for obligations in daily life: I have to work on Saturday.",
+      "Must is common on signs and for strong rules: You must wear a helmet.",
+      "For the past, use had to: I had to get up early yesterday."
+     ],
+     "q": "What do you have to do every week, even when you don't want to?",
+     "c": "Write five things you have to do this week and one rule you must follow at work or school."
+    },
+    "de": {
+     "t": "Must und have to",
+     "g": "Du sprichst mit must und have to über Pflichten und Regeln.",
+     "p": [
+      "Have to für Pflichten im Alltag: I have to work on Saturday.",
+      "Must steht oft auf Schildern und bei strengen Regeln: You must wear a helmet.",
+      "Für die Vergangenheit: had to: I had to get up early yesterday."
+     ],
+     "q": "Was musst du jede Woche machen, auch wenn du keine Lust hast?",
+     "c": "Schreib fünf Dinge, die du diese Woche tun musst, und eine Regel, die du befolgen musst."
+    },
+    "es": {
+     "t": "Must y have to",
+     "g": "Habla de obligaciones y normas con must y have to.",
+     "p": [
+      "Have to para obligaciones del día a día: I have to work on Saturday.",
+      "Must aparece en carteles y normas estrictas: You must wear a helmet.",
+      "En pasado se usa had to: I had to get up early yesterday."
+     ],
+     "q": "¿Qué tienes que hacer cada semana, aunque no te apetezca?",
+     "c": "Escribe cinco cosas que tienes que hacer esta semana y una norma que debes cumplir."
+    },
+    "fr": {
+     "t": "Must et have to",
+     "g": "Parler d'obligations et de règles avec must et have to.",
+     "p": [
+      "Have to pour les obligations du quotidien : I have to work on Saturday.",
+      "Must se voit sur les panneaux et pour les règles strictes : You must wear a helmet.",
+      "Au passé, on dit had to : I had to get up early yesterday."
+     ],
+     "q": "Que dois-tu faire chaque semaine, même sans en avoir envie ?",
+     "c": "Écris cinq choses que tu dois faire cette semaine et une règle que tu dois respecter."
+    },
+    "it": {
+     "t": "Must e have to",
+     "g": "Parli di obblighi e regole con must e have to.",
+     "p": [
+      "Have to per gli obblighi quotidiani: I have to work on Saturday.",
+      "Must si trova sui cartelli e nelle regole severe: You must wear a helmet.",
+      "Al passato si usa had to: I had to get up early yesterday."
+     ],
+     "q": "Cosa devi fare ogni settimana, anche quando non ne hai voglia?",
+     "c": "Scrivi cinque cose che devi fare questa settimana e una regola che devi rispettare."
+    },
+    "pt": {
+     "t": "Must e have to",
+     "g": "Fala de obrigações e regras com must e have to.",
+     "p": [
+      "Have to para obrigações do dia a dia: I have to work on Saturday.",
+      "Must aparece em placas e regras rígidas: You must wear a helmet.",
+      "No passado usa-se had to: I had to get up early yesterday."
+     ],
+     "q": "O que tens de fazer todas as semanas, mesmo sem vontade?",
+     "c": "Escreve cinco coisas que tens de fazer esta semana e uma regra que tens de cumprir."
+    },
+    "pt_BR": {
+     "t": "Must e have to",
+     "g": "Fale de obrigações e regras com must e have to.",
+     "p": [
+      "Have to para obrigações do dia a dia: I have to work on Saturday.",
+      "Must aparece em placas e regras rígidas: You must wear a helmet.",
+      "No passado usa-se had to: I had to get up early yesterday."
+     ],
+     "q": "O que você tem que fazer toda semana, mesmo sem vontade?",
+     "c": "Escreva cinco coisas que você tem que fazer esta semana e uma regra que precisa seguir."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "I have to...",
+      "ex": "I have to work on Saturday."
+     },
+     {
+      "w": "She has to...",
+      "ex": "She has to take the bus every day."
+     },
+     {
+      "w": "You must...",
+      "ex": "You must wear a seat belt."
+     },
+     {
+      "w": "had to",
+      "ex": "I had to wait for an hour."
+     },
+     {
+      "w": "Do you have to...?",
+      "ex": "Do you have to wear a uniform?"
+     },
+     {
+      "w": "a rule",
+      "ex": "It's a rule: no phones in class."
+     }
+    ],
+    "gram": "Obligation: have to/has to + base verb (daily duties), must + base verb (strong rules, signs). Past: had to."
+   }
+  },
+  {
+   "d": 108,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Don't have to vs mustn't",
+     "g": "See the big difference between no obligation and prohibition.",
+     "p": [
+      "Don't have to means it's not necessary, you can choose: You don't have to come.",
+      "Mustn't means it's not allowed: You mustn't smoke here.",
+      "Tip: don't have to is freedom; mustn't is a red light."
+     ],
+     "q": "Tell me one thing you don't have to do at the weekend and one thing you mustn't do at work.",
+     "c": "Write three don't have to sentences and three mustn't sentences about a place you know."
+    },
+    "de": {
+     "t": "Don't have to oder mustn't",
+     "g": "Du erkennst den großen Unterschied zwischen keiner Pflicht und einem Verbot.",
+     "p": [
+      "Don't have to heißt: nicht nötig, du kannst wählen: You don't have to come.",
+      "Mustn't heißt: nicht erlaubt: You mustn't smoke here.",
+      "Achtung: Das deutsche muss nicht ist don't have to, nicht mustn't. Mustn't ist ein Verbot."
+     ],
+     "q": "Nenn mir eine Sache, die du am Wochenende nicht tun musst, und eine, die du bei der Arbeit nicht darfst.",
+     "c": "Schreib drei Sätze mit don't have to und drei mit mustn't über einen Ort, den du kennst."
+    },
+    "es": {
+     "t": "Don't have to o mustn't",
+     "g": "Ve la gran diferencia entre no tener obligación y estar prohibido.",
+     "p": [
+      "Don't have to significa que no hace falta, puedes elegir: You don't have to come.",
+      "Mustn't significa que no está permitido: You mustn't smoke here.",
+      "Truco: don't have to es libertad; mustn't es una luz roja."
+     ],
+     "q": "Dime algo que no tienes que hacer el fin de semana y algo que no debes hacer en el trabajo.",
+     "c": "Escribe tres frases con don't have to y tres con mustn't sobre un lugar que conozcas."
+    },
+    "fr": {
+     "t": "Don't have to ou mustn't",
+     "g": "Voir la grande différence entre absence d'obligation et interdiction.",
+     "p": [
+      "Don't have to veut dire pas nécessaire, tu choisis : You don't have to come.",
+      "Mustn't veut dire interdit : You mustn't smoke here.",
+      "Astuce : don't have to, c'est la liberté ; mustn't, c'est un feu rouge."
+     ],
+     "q": "Dis-moi une chose que tu n'es pas obligé de faire le week-end et une chose interdite au travail.",
+     "c": "Écris trois phrases avec don't have to et trois avec mustn't sur un lieu que tu connais."
+    },
+    "it": {
+     "t": "Don't have to o mustn't",
+     "g": "Capisci la grande differenza tra nessun obbligo e un divieto.",
+     "p": [
+      "Don't have to vuol dire non serve, puoi scegliere: You don't have to come.",
+      "Mustn't vuol dire non è permesso: You mustn't smoke here.",
+      "Trucco: don't have to è libertà; mustn't è un semaforo rosso."
+     ],
+     "q": "Dimmi una cosa che non devi per forza fare nel weekend e una che non devi fare al lavoro.",
+     "c": "Scrivi tre frasi con don't have to e tre con mustn't su un posto che conosci."
+    },
+    "pt": {
+     "t": "Don't have to ou mustn't",
+     "g": "Vê a grande diferença entre não ser obrigatório e ser proibido.",
+     "p": [
+      "Don't have to quer dizer que não é preciso, podes escolher: You don't have to come.",
+      "Mustn't quer dizer que não é permitido: You mustn't smoke here.",
+      "Dica: don't have to é liberdade; mustn't é um sinal vermelho."
+     ],
+     "q": "Diz-me uma coisa que não tens de fazer ao fim de semana e uma que não podes fazer no trabalho.",
+     "c": "Escreve três frases com don't have to e três com mustn't sobre um sítio que conheces."
+    },
+    "pt_BR": {
+     "t": "Don't have to ou mustn't",
+     "g": "Veja a grande diferença entre não ser obrigatório e ser proibido.",
+     "p": [
+      "Don't have to quer dizer que não precisa, você escolhe: You don't have to come.",
+      "Mustn't quer dizer que não é permitido: You mustn't smoke here.",
+      "Dica: don't have to é liberdade; mustn't é sinal vermelho."
+     ],
+     "q": "Me diga uma coisa que você não precisa fazer no fim de semana e uma que não pode fazer no trabalho.",
+     "c": "Escreva três frases com don't have to e três com mustn't sobre um lugar que você conhece."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "You don't have to...",
+      "ex": "You don't have to bring anything."
+     },
+     {
+      "w": "You mustn't...",
+      "ex": "You mustn't park here."
+     },
+     {
+      "w": "It's not necessary.",
+      "ex": "You don't have to pay. It's not necessary."
+     },
+     {
+      "w": "It's not allowed.",
+      "ex": "You mustn't use phones here. It's not allowed."
+     },
+     {
+      "w": "doesn't have to",
+      "ex": "She doesn't have to work on Sundays."
+     },
+     {
+      "w": "mustn't touch",
+      "ex": "You mustn't touch the paintings."
+     }
+    ],
+    "gram": "Don't have to = no obligation, you can choose (You don't have to come). Mustn't = prohibition (You mustn't smoke)."
+   }
+  },
+  {
+   "d": 109,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Rules at work and school",
+     "g": "Describe the rules where you study or work with must, have to, can and can't.",
+     "p": [
+      "Obligations: We have to start at nine. Students must arrive on time.",
+      "Permission: We can wear jeans on Fridays. You can use the kitchen.",
+      "Prohibition and freedom: You can't eat in the lab. We don't have to wear a uniform."
+     ],
+     "q": "What are the rules where you work or study? Which rule do you like most?",
+     "c": "Write a list of six rules for your dream workplace or school with must, have to, can and can't."
+    },
+    "de": {
+     "t": "Regeln bei der Arbeit und in der Schule",
+     "g": "Du beschreibst Regeln an deinem Arbeits- oder Lernort mit must, have to, can und can't.",
+     "p": [
+      "Pflichten: We have to start at nine. Students must arrive on time.",
+      "Erlaubnis: We can wear jeans on Fridays. You can use the kitchen.",
+      "Verbot und Freiheit: You can't eat in the lab. We don't have to wear a uniform."
+     ],
+     "q": "Welche Regeln gibt es dort, wo du arbeitest oder lernst? Welche Regel magst du am meisten?",
+     "c": "Schreib sechs Regeln für deinen Traumarbeitsplatz oder deine Traumschule mit must, have to, can, can't."
+    },
+    "es": {
+     "t": "Normas en el trabajo y en clase",
+     "g": "Describe las normas de donde estudias o trabajas con must, have to, can y can't.",
+     "p": [
+      "Obligaciones: We have to start at nine. Students must arrive on time.",
+      "Permiso: We can wear jeans on Fridays. You can use the kitchen.",
+      "Prohibición y libertad: You can't eat in the lab. We don't have to wear a uniform."
+     ],
+     "q": "¿Qué normas hay donde trabajas o estudias? ¿Cuál te gusta más?",
+     "c": "Escribe seis normas para tu trabajo o escuela ideal con must, have to, can y can't."
+    },
+    "fr": {
+     "t": "Les règles au travail et à l'école",
+     "g": "Décrire les règles de ton lieu d'études ou de travail avec must, have to, can et can't.",
+     "p": [
+      "Obligations : We have to start at nine. Students must arrive on time.",
+      "Permission : We can wear jeans on Fridays. You can use the kitchen.",
+      "Interdiction et liberté : You can't eat in the lab. We don't have to wear a uniform."
+     ],
+     "q": "Quelles sont les règles là où tu travailles ou étudies ? Laquelle préfères-tu ?",
+     "c": "Écris six règles pour ton travail ou ton école de rêve avec must, have to, can et can't."
+    },
+    "it": {
+     "t": "Regole al lavoro e a scuola",
+     "g": "Descrivi le regole di dove studi o lavori con must, have to, can e can't.",
+     "p": [
+      "Obblighi: We have to start at nine. Students must arrive on time.",
+      "Permesso: We can wear jeans on Fridays. You can use the kitchen.",
+      "Divieto e libertà: You can't eat in the lab. We don't have to wear a uniform."
+     ],
+     "q": "Quali sono le regole dove lavori o studi? Quale ti piace di più?",
+     "c": "Scrivi sei regole per il tuo lavoro o la tua scuola ideale con must, have to, can e can't."
+    },
+    "pt": {
+     "t": "Regras no trabalho e na escola",
+     "g": "Descreve as regras de onde estudas ou trabalhas com must, have to, can e can't.",
+     "p": [
+      "Obrigações: We have to start at nine. Students must arrive on time.",
+      "Permissão: We can wear jeans on Fridays. You can use the kitchen.",
+      "Proibição e liberdade: You can't eat in the lab. We don't have to wear a uniform."
+     ],
+     "q": "Que regras há onde trabalhas ou estudas? De qual gostas mais?",
+     "c": "Escreve seis regras para o teu trabalho ou escola de sonho com must, have to, can e can't."
+    },
+    "pt_BR": {
+     "t": "Regras no trabalho e na escola",
+     "g": "Descreva as regras de onde você estuda ou trabalha com must, have to, can e can't.",
+     "p": [
+      "Obrigações: We have to start at nine. Students must arrive on time.",
+      "Permissão: We can wear jeans on Fridays. You can use the kitchen.",
+      "Proibição e liberdade: You can't eat in the lab. We don't have to wear a uniform."
+     ],
+     "q": "Quais são as regras onde você trabalha ou estuda? De qual você mais gosta?",
+     "c": "Escreva seis regras para seu trabalho ou escola dos sonhos com must, have to, can e can't."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "We have to...",
+      "ex": "We have to start at nine every day."
+     },
+     {
+      "w": "Students must...",
+      "ex": "Students must arrive on time."
+     },
+     {
+      "w": "We can...",
+      "ex": "We can wear jeans on Fridays."
+     },
+     {
+      "w": "You can't...",
+      "ex": "You can't eat in the library."
+     },
+     {
+      "w": "a uniform",
+      "ex": "We don't have to wear a uniform."
+     },
+     {
+      "w": "a break",
+      "ex": "We can take a break at eleven."
+     }
+    ],
+    "gram": "Rules: must/have to (obligation), can (permission), can't/mustn't (prohibition), don't have to (no obligation)."
+   }
+  },
+  {
+   "d": 110,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Healthy habits vocabulary",
+     "g": "Talk about healthy routines and good everyday habits.",
+     "p": [
+      "Common habits: exercise, sleep well, drink water, eat balanced meals, go for a walk.",
+      "Use frequency words: I usually sleep eight hours. I often go for a walk after work.",
+      "Talk about goals with going to: I'm going to drink more water. This is general information, not medical advice."
+     ],
+     "q": "What is one healthy habit you have, and one you'd like to start?",
+     "c": "Write a simple healthy week plan with five habits and how often you'll do each one."
+    },
+    "de": {
+     "t": "Wortschatz: gesunde Gewohnheiten",
+     "g": "Du sprichst über gesunde Routinen und gute Alltagsgewohnheiten.",
+     "p": [
+      "Typische Gewohnheiten: exercise, sleep well, drink water, eat balanced meals, go for a walk.",
+      "Mit Häufigkeitswörtern: I usually sleep eight hours. I often go for a walk after work.",
+      "Ziele mit going to: I'm going to drink more water. Das ist allgemeine Info, kein medizinischer Rat."
+     ],
+     "q": "Welche gesunde Gewohnheit hast du, und welche möchtest du anfangen?",
+     "c": "Schreib einen einfachen Wochenplan mit fünf gesunden Gewohnheiten und wie oft du sie machst."
+    },
+    "es": {
+     "t": "Vocabulario de hábitos sanos",
+     "g": "Habla de rutinas saludables y buenos hábitos diarios.",
+     "p": [
+      "Hábitos comunes: exercise, sleep well, drink water, eat balanced meals, go for a walk.",
+      "Usa palabras de frecuencia: I usually sleep eight hours. I often go for a walk after work.",
+      "Metas con going to: I'm going to drink more water. Es información general, no consejo médico."
+     ],
+     "q": "¿Qué hábito sano tienes y cuál te gustaría empezar?",
+     "c": "Escribe un plan semanal sencillo con cinco hábitos sanos y con qué frecuencia harás cada uno."
+    },
+    "fr": {
+     "t": "Vocabulaire des bonnes habitudes",
+     "g": "Parler de routines saines et de bonnes habitudes au quotidien.",
+     "p": [
+      "Habitudes courantes : exercise, sleep well, drink water, eat balanced meals, go for a walk.",
+      "Utilise les mots de fréquence : I usually sleep eight hours. I often go for a walk after work.",
+      "Objectifs avec going to : I'm going to drink more water. Infos générales, pas un avis médical."
+     ],
+     "q": "Quelle bonne habitude as-tu déjà, et laquelle aimerais-tu commencer ?",
+     "c": "Écris un planning simple de la semaine avec cinq bonnes habitudes et leur fréquence."
+    },
+    "it": {
+     "t": "Lessico delle abitudini sane",
+     "g": "Parli di routine sane e buone abitudini quotidiane.",
+     "p": [
+      "Abitudini comuni: exercise, sleep well, drink water, eat balanced meals, go for a walk.",
+      "Usa le parole di frequenza: I usually sleep eight hours. I often go for a walk after work.",
+      "Obiettivi con going to: I'm going to drink more water. Sono informazioni generali, non consigli medici."
+     ],
+     "q": "Qual è un'abitudine sana che hai e quale vorresti iniziare?",
+     "c": "Scrivi un semplice piano settimanale con cinque abitudini sane e ogni quanto le farai."
+    },
+    "pt": {
+     "t": "Vocabulário de hábitos saudáveis",
+     "g": "Fala de rotinas saudáveis e bons hábitos do dia a dia.",
+     "p": [
+      "Hábitos comuns: exercise, sleep well, drink water, eat balanced meals, go for a walk.",
+      "Usa palavras de frequência: I usually sleep eight hours. I often go for a walk after work.",
+      "Metas com going to: I'm going to drink more water. É informação geral, não conselho médico."
+     ],
+     "q": "Que hábito saudável já tens e qual gostavas de começar?",
+     "c": "Escreve um plano semanal simples com cinco hábitos saudáveis e com que frequência os vais fazer."
+    },
+    "pt_BR": {
+     "t": "Vocabulário de hábitos saudáveis",
+     "g": "Fale de rotinas saudáveis e bons hábitos do dia a dia.",
+     "p": [
+      "Hábitos comuns: exercise, sleep well, drink water, eat balanced meals, go for a walk.",
+      "Use palavras de frequência: I usually sleep eight hours. I often go for a walk after work.",
+      "Metas com going to: I'm going to drink more water. É informação geral, não conselho médico."
+     ],
+     "q": "Que hábito saudável você já tem e qual gostaria de começar?",
+     "c": "Escreva um plano semanal simples com cinco hábitos saudáveis e com que frequência vai fazer cada um."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "exercise",
+      "ex": "I exercise three times a week."
+     },
+     {
+      "w": "sleep well",
+      "ex": "I sleep well when I don't use my phone at night."
+     },
+     {
+      "w": "drink water",
+      "ex": "Try to drink water during the day."
+     },
+     {
+      "w": "a balanced meal",
+      "ex": "A balanced meal has vegetables, protein and grains."
+     },
+     {
+      "w": "go for a walk",
+      "ex": "We go for a walk after dinner."
+     },
+     {
+      "w": "a healthy habit",
+      "ex": "Reading before bed is a healthy habit for me."
+     }
+    ],
+    "gram": "Habits with present simple + frequency adverbs (I often walk); goals with going to (I'm going to sleep earlier)."
+   }
+  }
+ ]
+}

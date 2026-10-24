@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 151,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Jobs: responsibilities and skills",
+     "g": "Describe what a job involves and what you are good at.",
+     "p": [
+      "Responsibilities: I'm responsible for the budget. I'm in charge of a small team.",
+      "Tasks: My job involves meeting clients. I have to deal with emails every day.",
+      "Skills: I'm good at solving problems. I'm not very good at public speaking yet."
+     ],
+     "q": "What are you responsible for in your job or daily life, and what are you good at?",
+     "c": "Describe a job you know well in four sentences with responsible for, in charge of, involves and good at."
+    },
+    "de": {
+     "t": "Berufe: Aufgaben und Fähigkeiten",
+     "g": "Du beschreibst, was ein Job beinhaltet und was du gut kannst.",
+     "p": [
+      "Verantwortung: I'm responsible for the budget. I'm in charge of a small team.",
+      "Aufgaben: My job involves meeting clients. I have to deal with emails every day.",
+      "Fähigkeiten: I'm good at solving problems. I'm not very good at public speaking yet."
+     ],
+     "q": "Wofür bist du im Job oder im Alltag verantwortlich, und was kannst du gut?",
+     "c": "Beschreib einen Job in vier Sätzen mit responsible for, in charge of, involves und good at."
+    },
+    "es": {
+     "t": "Trabajos: responsabilidades y habilidades",
+     "g": "Describe en qué consiste un trabajo y en qué eres bueno.",
+     "p": [
+      "Responsabilidades: I'm responsible for the budget. I'm in charge of a small team.",
+      "Tareas: My job involves meeting clients. I have to deal with emails every day.",
+      "Habilidades: I'm good at solving problems. I'm not very good at public speaking yet."
+     ],
+     "q": "¿De qué eres responsable en tu trabajo o en tu día a día, y en qué eres bueno?",
+     "c": "Describe un trabajo en cuatro frases con responsible for, in charge of, involves y good at."
+    },
+    "fr": {
+     "t": "Métiers : responsabilités et compétences",
+     "g": "Décrire ce qu'implique un métier et ce que tu sais bien faire.",
+     "p": [
+      "Responsabilités : I'm responsible for the budget. I'm in charge of a small team.",
+      "Tâches : My job involves meeting clients. I have to deal with emails every day.",
+      "Compétences : I'm good at solving problems. I'm not very good at public speaking yet."
+     ],
+     "q": "De quoi es-tu responsable au travail ou au quotidien, et en quoi es-tu doué ?",
+     "c": "Décris un métier en quatre phrases avec responsible for, in charge of, involves et good at."
+    },
+    "it": {
+     "t": "Lavori: responsabilità e competenze",
+     "g": "Descrivi cosa comporta un lavoro e in cosa sei bravo.",
+     "p": [
+      "Responsabilità: I'm responsible for the budget. I'm in charge of a small team.",
+      "Compiti: My job involves meeting clients. I have to deal with emails every day.",
+      "Competenze: I'm good at solving problems. I'm not very good at public speaking yet."
+     ],
+     "q": "Di cosa sei responsabile nel lavoro o nella vita quotidiana, e in cosa sei bravo?",
+     "c": "Descrivi un lavoro in quattro frasi con responsible for, in charge of, involves e good at."
+    },
+    "pt": {
+     "t": "Profissões: responsabilidades e competências",
+     "g": "Descreve o que um trabalho envolve e aquilo em que és bom.",
+     "p": [
+      "Responsabilidades: I'm responsible for the budget. I'm in charge of a small team.",
+      "Tarefas: My job involves meeting clients. I have to deal with emails every day.",
+      "Competências: I'm good at solving problems. I'm not very good at public speaking yet."
+     ],
+     "q": "Pelo que és responsável no trabalho ou no dia a dia, e em que és bom?",
+     "c": "Descreve um trabalho em quatro frases com responsible for, in charge of, involves e good at."
+    },
+    "pt_BR": {
+     "t": "Profissões: responsabilidades e habilidades",
+     "g": "Descreva o que um trabalho envolve e no que você é bom.",
+     "p": [
+      "Responsabilidades: I'm responsible for the budget. I'm in charge of a small team.",
+      "Tarefas: My job involves meeting clients. I have to deal with emails every day.",
+      "Habilidades: I'm good at solving problems. I'm not very good at public speaking yet."
+     ],
+     "q": "Pelo que você é responsável no trabalho ou no dia a dia, e no que você é bom?",
+     "c": "Descreva um trabalho em quatro frases com responsible for, in charge of, involves e good at."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "responsible for",
+      "ex": "I'm responsible for training new staff."
+     },
+     {
+      "w": "in charge of",
+      "ex": "She's in charge of the marketing team."
+     },
+     {
+      "w": "involve",
+      "ex": "My job involves a lot of travelling."
+     },
+     {
+      "w": "deal with",
+      "ex": "I deal with customer questions by phone."
+     },
+     {
+      "w": "good at",
+      "ex": "He's really good at organising events."
+     },
+     {
+      "w": "skills",
+      "ex": "Good communication skills are important in this job."
+     }
+    ],
+    "gram": "After prepositions use -ing: responsible for training, good at organising. Involve also takes -ing: It involves travelling."
+   }
+  },
+  {
+   "d": 152,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Talking about your work or studies",
+     "g": "Explain what you do, what you like about it and what is hard.",
+     "p": [
+      "What you do: I work as a nurse. I work for a small company. I'm studying engineering.",
+      "Likes: What I like most is helping people. The best part is the team.",
+      "Challenges: The hardest part is the long hours. It can be stressful, but I'm learning a lot."
+     ],
+     "q": "What do you do, and what's the best and the most challenging part of it?",
+     "c": "Write a short intro about your work or studies: what you do, one thing you love and one challenge."
+    },
+    "de": {
+     "t": "Über Arbeit oder Studium sprechen",
+     "g": "Du erklärst, was du machst, was dir gefällt und was schwierig ist.",
+     "p": [
+      "Was du machst: I work as a nurse. I work for a small company. I'm studying engineering.",
+      "Was dir gefällt: What I like most is helping people. The best part is the team.",
+      "Herausforderungen: The hardest part is the long hours. It can be stressful, but I'm learning a lot."
+     ],
+     "q": "Was machst du, und was ist daran das Beste und das Schwierigste?",
+     "c": "Schreib eine kurze Vorstellung deiner Arbeit oder deines Studiums: was, ein Highlight, eine Herausforderung."
+    },
+    "es": {
+     "t": "Hablar de tu trabajo o estudios",
+     "g": "Explica a qué te dedicas, qué te gusta y qué te cuesta.",
+     "p": [
+      "A qué te dedicas: I work as a nurse. I work for a small company. I'm studying engineering.",
+      "Lo que te gusta: What I like most is helping people. The best part is the team.",
+      "Retos: The hardest part is the long hours. It can be stressful, but I'm learning a lot."
+     ],
+     "q": "¿A qué te dedicas y qué es lo mejor y lo más difícil?",
+     "c": "Escribe una presentación corta de tu trabajo o estudios: qué haces, algo que te encanta y un reto."
+    },
+    "fr": {
+     "t": "Parler de son travail ou de ses études",
+     "g": "Expliquer ce que tu fais, ce que tu aimes et ce qui est difficile.",
+     "p": [
+      "Ce que tu fais : I work as a nurse. I work for a small company. I'm studying engineering.",
+      "Ce que tu aimes : What I like most is helping people. The best part is the team.",
+      "Défis : The hardest part is the long hours. It can be stressful, but I'm learning a lot."
+     ],
+     "q": "Que fais-tu dans la vie, et quel est le meilleur et le plus difficile ?",
+     "c": "Écris une courte présentation de ton travail ou tes études : ce que tu fais, un plaisir et un défi."
+    },
+    "it": {
+     "t": "Parlare del tuo lavoro o dei tuoi studi",
+     "g": "Spiega cosa fai, cosa ti piace e cosa è difficile.",
+     "p": [
+      "Cosa fai: I work as a nurse. I work for a small company. I'm studying engineering.",
+      "Cosa ti piace: What I like most is helping people. The best part is the team.",
+      "Sfide: The hardest part is the long hours. It can be stressful, but I'm learning a lot."
+     ],
+     "q": "Cosa fai nella vita, e qual è la parte migliore e quella più impegnativa?",
+     "c": "Scrivi una breve presentazione del tuo lavoro o studio: cosa fai, una cosa che ami e una sfida."
+    },
+    "pt": {
+     "t": "Falar do teu trabalho ou estudos",
+     "g": "Explica o que fazes, o que gostas e o que é difícil.",
+     "p": [
+      "O que fazes: I work as a nurse. I work for a small company. I'm studying engineering.",
+      "O que gostas: What I like most is helping people. The best part is the team.",
+      "Desafios: The hardest part is the long hours. It can be stressful, but I'm learning a lot."
+     ],
+     "q": "O que fazes, e qual é a melhor parte e a mais desafiante?",
+     "c": "Escreve uma apresentação curta do teu trabalho ou estudos: o que fazes, algo que adoras e um desafio."
+    },
+    "pt_BR": {
+     "t": "Falando do seu trabalho ou estudos",
+     "g": "Explique o que você faz, do que gosta e o que é difícil.",
+     "p": [
+      "O que você faz: I work as a nurse. I work for a small company. I'm studying engineering.",
+      "Do que gosta: What I like most is helping people. The best part is the team.",
+      "Desafios: The hardest part is the long hours. It can be stressful, but I'm learning a lot."
+     ],
+     "q": "O que você faz, e qual é a melhor parte e a mais desafiadora?",
+     "c": "Escreva uma apresentação curta do seu trabalho ou estudos: o que faz, algo que ama e um desafio."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "I work as",
+      "ex": "I work as a graphic designer."
+     },
+     {
+      "w": "I work for",
+      "ex": "She works for an international bank."
+     },
+     {
+      "w": "I'm studying",
+      "ex": "I'm studying law at university."
+     },
+     {
+      "w": "the best part",
+      "ex": "The best part of my job is the people."
+     },
+     {
+      "w": "challenging",
+      "ex": "My course is challenging but really interesting."
+     },
+     {
+      "w": "stressful",
+      "ex": "It can be stressful before deadlines."
+     }
+    ],
+    "gram": "work as + job (I work as a teacher), work for + company, work in + field. Use the present continuous for current studies."
+   }
+  },
+  {
+   "d": 153,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Might and may for possibility",
+     "g": "Talk about things that are possible but not certain.",
+     "p": [
+      "Might and may + verb mean perhaps: I might go to the party. It may snow tonight.",
+      "No -s and no to: She might come, not She mights come or She might to come.",
+      "Negative: I might not have time. It may not be open on Sunday."
+     ],
+     "q": "What might you do this weekend? Tell me two possible plans.",
+     "c": "Write five sentences about next month with might, may and might not."
+    },
+    "de": {
+     "t": "Might und may für Möglichkeiten",
+     "g": "Du sprichst über Dinge, die möglich, aber nicht sicher sind.",
+     "p": [
+      "Might und may + Verb heißen vielleicht: I might go to the party. It may snow tonight.",
+      "Kein -s und kein to: She might come, nicht She mights come oder She might to come.",
+      "Verneinung: I might not have time. It may not be open on Sunday."
+     ],
+     "q": "Was machst du vielleicht am Wochenende? Nenn mir zwei mögliche Pläne.",
+     "c": "Schreib fünf Sätze über den nächsten Monat mit might, may und might not."
+    },
+    "es": {
+     "t": "Might y may para posibilidad",
+     "g": "Habla de cosas posibles pero no seguras.",
+     "p": [
+      "Might y may + verbo significan quizás: I might go to the party. It may snow tonight.",
+      "Sin -s y sin to: She might come, no She mights come ni She might to come.",
+      "Negativa: I might not have time. It may not be open on Sunday."
+     ],
+     "q": "¿Qué podrías hacer este fin de semana? Dime dos planes posibles.",
+     "c": "Escribe cinco frases sobre el mes que viene con might, may y might not."
+    },
+    "fr": {
+     "t": "Might et may pour la possibilité",
+     "g": "Parler de choses possibles mais pas certaines.",
+     "p": [
+      "Might et may + verbe veulent dire peut-être : I might go to the party. It may snow tonight.",
+      "Pas de -s ni de to : She might come, pas She mights come ni She might to come.",
+      "Négation : I might not have time. It may not be open on Sunday."
+     ],
+     "q": "Que vas-tu peut-être faire ce week-end ? Donne-moi deux projets possibles.",
+     "c": "Écris cinq phrases sur le mois prochain avec might, may et might not."
+    },
+    "it": {
+     "t": "Might e may per la possibilità",
+     "g": "Parla di cose possibili ma non sicure.",
+     "p": [
+      "Might e may + verbo significano forse: I might go to the party. It may snow tonight.",
+      "Niente -s e niente to: She might come, non She mights come o She might to come.",
+      "Negativa: I might not have time. It may not be open on Sunday."
+     ],
+     "q": "Cosa potresti fare questo fine settimana? Dimmi due possibili piani.",
+     "c": "Scrivi cinque frasi sul prossimo mese con might, may e might not."
+    },
+    "pt": {
+     "t": "Might e may para possibilidade",
+     "g": "Fala de coisas possíveis mas não certas.",
+     "p": [
+      "Might e may + verbo significam talvez: I might go to the party. It may snow tonight.",
+      "Sem -s e sem to: She might come, não She mights come nem She might to come.",
+      "Negativa: I might not have time. It may not be open on Sunday."
+     ],
+     "q": "O que é que talvez faças este fim de semana? Diz-me dois planos possíveis.",
+     "c": "Escreve cinco frases sobre o próximo mês com might, may e might not."
+    },
+    "pt_BR": {
+     "t": "Might e may para possibilidade",
+     "g": "Fale de coisas possíveis, mas não certas.",
+     "p": [
+      "Might e may + verbo significam talvez: I might go to the party. It may snow tonight.",
+      "Sem -s e sem to: She might come, não She mights come nem She might to come.",
+      "Negativa: I might not have time. It may not be open on Sunday."
+     ],
+     "q": "O que você talvez faça neste fim de semana? Me diga dois planos possíveis.",
+     "c": "Escreva cinco frases sobre o próximo mês com might, may e might not."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "might",
+      "ex": "I might visit my cousins next weekend."
+     },
+     {
+      "w": "may",
+      "ex": "It may rain later, so take an umbrella."
+     },
+     {
+      "w": "might not",
+      "ex": "We might not have enough time."
+     },
+     {
+      "w": "perhaps",
+      "ex": "Perhaps we'll eat out tonight."
+     },
+     {
+      "w": "maybe",
+      "ex": "Maybe I'll learn to play the guitar."
+     },
+     {
+      "w": "I'm not sure",
+      "ex": "I'm not sure yet. I might stay at home."
+     }
+    ],
+    "gram": "might/may + base verb = possible but not certain. No -s, no to. Negative: might not, may not. Maybe is an adverb: Maybe I'll go."
+   }
+  },
+  {
+   "d": 154,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Could for possibility and requests",
+     "g": "Use could to talk about possibilities and to ask politely.",
+     "p": [
+      "Possibility: We could go to the beach tomorrow. That could be a good idea.",
+      "Polite requests: Could you help me? Could you open the window, please?",
+      "Suggestions: You could try the new café. We could meet at six."
+     ],
+     "q": "What could we do together if we met in your city?",
+     "c": "Write three suggestions for a friend with you could and three polite requests with could you."
+    },
+    "de": {
+     "t": "Could für Möglichkeiten und Bitten",
+     "g": "Du nutzt could für Möglichkeiten und höfliche Bitten.",
+     "p": [
+      "Möglichkeit: We could go to the beach tomorrow. That could be a good idea.",
+      "Höfliche Bitten: Could you help me? Could you open the window, please?",
+      "Vorschläge: You could try the new café. We could meet at six."
+     ],
+     "q": "Was könnten wir zusammen machen, wenn wir uns in deiner Stadt treffen würden?",
+     "c": "Schreib drei Vorschläge für einen Freund mit you could und drei höfliche Bitten mit could you."
+    },
+    "es": {
+     "t": "Could para posibilidad y peticiones",
+     "g": "Usa could para hablar de posibilidades y pedir con educación.",
+     "p": [
+      "Posibilidad: We could go to the beach tomorrow. That could be a good idea.",
+      "Peticiones educadas: Could you help me? Could you open the window, please?",
+      "Sugerencias: You could try the new café. We could meet at six."
+     ],
+     "q": "¿Qué podríamos hacer juntos si nos viéramos en tu ciudad?",
+     "c": "Escribe tres sugerencias para un amigo con you could y tres peticiones educadas con could you."
+    },
+    "fr": {
+     "t": "Could pour la possibilité et les demandes",
+     "g": "Utiliser could pour parler de possibilités et demander poliment.",
+     "p": [
+      "Possibilité : We could go to the beach tomorrow. That could be a good idea.",
+      "Demandes polies : Could you help me? Could you open the window, please?",
+      "Suggestions : You could try the new café. We could meet at six."
+     ],
+     "q": "Que pourrions-nous faire ensemble si on se retrouvait dans ta ville ?",
+     "c": "Écris trois suggestions pour un ami avec you could et trois demandes polies avec could you."
+    },
+    "it": {
+     "t": "Could per possibilità e richieste",
+     "g": "Usa could per parlare di possibilità e chiedere con gentilezza.",
+     "p": [
+      "Possibilità: We could go to the beach tomorrow. That could be a good idea.",
+      "Richieste cortesi: Could you help me? Could you open the window, please?",
+      "Suggerimenti: You could try the new café. We could meet at six."
+     ],
+     "q": "Cosa potremmo fare insieme se ci incontrassimo nella tua città?",
+     "c": "Scrivi tre suggerimenti per un amico con you could e tre richieste cortesi con could you."
+    },
+    "pt": {
+     "t": "Could para possibilidade e pedidos",
+     "g": "Usa could para falar de possibilidades e pedir com educação.",
+     "p": [
+      "Possibilidade: We could go to the beach tomorrow. That could be a good idea.",
+      "Pedidos educados: Could you help me? Could you open the window, please?",
+      "Sugestões: You could try the new café. We could meet at six."
+     ],
+     "q": "O que é que podíamos fazer juntos se nos encontrássemos na tua cidade?",
+     "c": "Escreve três sugestões para um amigo com you could e três pedidos educados com could you."
+    },
+    "pt_BR": {
+     "t": "Could para possibilidade e pedidos",
+     "g": "Use could para falar de possibilidades e pedir com educação.",
+     "p": [
+      "Possibilidade: We could go to the beach tomorrow. That could be a good idea.",
+      "Pedidos educados: Could you help me? Could you open the window, please?",
+      "Sugestões: You could try the new café. We could meet at six."
+     ],
+     "q": "O que a gente poderia fazer junto se se encontrasse na sua cidade?",
+     "c": "Escreva três sugestões para um amigo com you could e três pedidos educados com could you."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "could",
+      "ex": "We could take a taxi if it's late."
+     },
+     {
+      "w": "could you",
+      "ex": "Could you tell me the time, please?"
+     },
+     {
+      "w": "you could try",
+      "ex": "You could try speaking more slowly."
+     },
+     {
+      "w": "that could be",
+      "ex": "That could be the answer!"
+     },
+     {
+      "w": "we could meet",
+      "ex": "We could meet in front of the cinema."
+     },
+     {
+      "w": "please",
+      "ex": "Could you pass me the salt, please?"
+     }
+    ],
+    "gram": "could + base verb: possibility (It could rain), suggestion (We could go), polite request (Could you help me?). More polite than can."
+   }
+  },
+  {
+   "d": 155,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Asking for permission",
+     "g": "Ask for permission politely and answer kindly.",
+     "p": [
+      "Asking: Can I...? (casual) Could I...? (polite) May I...? (formal) Is it OK if I...?",
+      "Do you mind if I open the window? Answer No, not at all / No, go ahead = yes, you can.",
+      "Saying yes or no: Sure, go ahead. Of course. I'm sorry, but... / I'd rather you didn't."
+     ],
+     "q": "Imagine you're staying at a friend's house. What would you ask permission to do?",
+     "c": "Write four permission questions with can, could, is it OK if and do you mind if, plus answers."
+    },
+    "de": {
+     "t": "Um Erlaubnis bitten",
+     "g": "Du bittest höflich um Erlaubnis und antwortest freundlich.",
+     "p": [
+      "Fragen: Can I...? (locker) Could I...? (höflich) May I...? (formell) Is it OK if I...?",
+      "Do you mind if I open the window? Antwort No, not at all / No, go ahead = ja, gern.",
+      "Ja oder nein: Sure, go ahead. Of course. I'm sorry, but... / I'd rather you didn't."
+     ],
+     "q": "Stell dir vor, du wohnst bei einem Freund. Wofür würdest du um Erlaubnis bitten?",
+     "c": "Schreib vier Erlaubnisfragen mit can, could, is it OK if und do you mind if, mit Antworten."
+    },
+    "es": {
+     "t": "Pedir permiso",
+     "g": "Pide permiso con educación y responde con amabilidad.",
+     "p": [
+      "Pedir: Can I...? (informal) Could I...? (educado) May I...? (formal) Is it OK if I...?",
+      "Do you mind if I open the window? Responder No, not at all / No, go ahead = sí, claro.",
+      "Decir sí o no: Sure, go ahead. Of course. I'm sorry, but... / I'd rather you didn't."
+     ],
+     "q": "Imagina que te quedas en casa de un amigo. ¿Para qué le pedirías permiso?",
+     "c": "Escribe cuatro preguntas de permiso con can, could, is it OK if y do you mind if, con respuestas."
+    },
+    "fr": {
+     "t": "Demander la permission",
+     "g": "Demander la permission poliment et répondre gentiment.",
+     "p": [
+      "Demander : Can I...? (familier) Could I...? (poli) May I...? (formel) Is it OK if I...?",
+      "Do you mind if I open the window? Répondre No, not at all / No, go ahead = oui, vas-y.",
+      "Dire oui ou non : Sure, go ahead. Of course. I'm sorry, but... / I'd rather you didn't."
+     ],
+     "q": "Imagine que tu loges chez un ami. Pour quoi lui demanderais-tu la permission ?",
+     "c": "Écris quatre demandes de permission avec can, could, is it OK if et do you mind if, avec réponses."
+    },
+    "it": {
+     "t": "Chiedere il permesso",
+     "g": "Chiedi il permesso con cortesia e rispondi con gentilezza.",
+     "p": [
+      "Chiedere: Can I...? (informale) Could I...? (cortese) May I...? (formale) Is it OK if I...?",
+      "Do you mind if I open the window? Rispondi No, not at all / No, go ahead = sì, fai pure.",
+      "Dire sì o no: Sure, go ahead. Of course. I'm sorry, but... / I'd rather you didn't."
+     ],
+     "q": "Immagina di stare a casa di un amico. Per cosa gli chiederesti il permesso?",
+     "c": "Scrivi quattro richieste di permesso con can, could, is it OK if e do you mind if, con risposte."
+    },
+    "pt": {
+     "t": "Pedir autorização",
+     "g": "Pede autorização com educação e responde com simpatia.",
+     "p": [
+      "Pedir: Can I...? (informal) Could I...? (educado) May I...? (formal) Is it OK if I...?",
+      "Do you mind if I open the window? Responde No, not at all / No, go ahead = sim, podes.",
+      "Dizer sim ou não: Sure, go ahead. Of course. I'm sorry, but... / I'd rather you didn't."
+     ],
+     "q": "Imagina que estás em casa de um amigo. Para que é que lhe pedias autorização?",
+     "c": "Escreve quatro pedidos de autorização com can, could, is it OK if e do you mind if, com respostas."
+    },
+    "pt_BR": {
+     "t": "Pedindo permissão",
+     "g": "Peça permissão com educação e responda com gentileza.",
+     "p": [
+      "Pedir: Can I...? (informal) Could I...? (educado) May I...? (formal) Is it OK if I...?",
+      "Do you mind if I open the window? Responda No, not at all / No, go ahead = sim, pode.",
+      "Dizer sim ou não: Sure, go ahead. Of course. I'm sorry, but... / I'd rather you didn't."
+     ],
+     "q": "Imagine que você está na casa de um amigo. Para que você pediria permissão?",
+     "c": "Escreva quatro pedidos de permissão com can, could, is it OK if e do you mind if, com respostas."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Could I...?",
+      "ex": "Could I use your phone for a minute?"
+     },
+     {
+      "w": "May I...?",
+      "ex": "May I come in?"
+     },
+     {
+      "w": "Is it OK if I...?",
+      "ex": "Is it OK if I sit here?"
+     },
+     {
+      "w": "Do you mind if I...?",
+      "ex": "Do you mind if I open the window?"
+     },
+     {
+      "w": "go ahead",
+      "ex": "Sure, go ahead!"
+     },
+     {
+      "w": "not at all",
+      "ex": "No, not at all. Please do."
+     }
+    ],
+    "gram": "Can/Could/May I + base verb. Is it OK if I + present. Do you mind if I + present: answer No, not at all to say yes."
+   }
+  },
+  {
+   "d": 156,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Indirect questions: Could you tell me...?",
+     "g": "Make questions softer and more polite with indirect forms.",
+     "p": [
+      "Start with Do you know...? / Could you tell me...? / I wonder... + the question.",
+      "Word order changes: Where is the station? becomes Do you know where the station is?",
+      "No do/does/did: What time does it open? becomes Could you tell me what time it opens?"
+     ],
+     "q": "How would you politely ask a stranger for directions to your favourite place?",
+     "c": "Turn five direct questions into indirect ones with Do you know or Could you tell me."
+    },
+    "de": {
+     "t": "Indirekte Fragen: Could you tell me...?",
+     "g": "Du machst Fragen mit indirekten Formen weicher und höflicher.",
+     "p": [
+      "Beginn mit Do you know...? / Could you tell me...? / I wonder... + Frage.",
+      "Die Wortstellung ändert sich: Where is the station? wird Do you know where the station is?",
+      "Ohne do/does/did: What time does it open? wird Could you tell me what time it opens?"
+     ],
+     "q": "Wie würdest du eine fremde Person höflich nach dem Weg zu deinem Lieblingsort fragen?",
+     "c": "Mach aus fünf direkten Fragen indirekte mit Do you know oder Could you tell me."
+    },
+    "es": {
+     "t": "Preguntas indirectas: Could you tell me...?",
+     "g": "Haz preguntas más suaves y educadas con formas indirectas.",
+     "p": [
+      "Empieza con Do you know...? / Could you tell me...? / I wonder... + la pregunta.",
+      "Cambia el orden: Where is the station? pasa a Do you know where the station is?",
+      "Sin do/does/did: What time does it open? pasa a Could you tell me what time it opens?"
+     ],
+     "q": "¿Cómo preguntarías con educación a un desconocido cómo llegar a tu lugar favorito?",
+     "c": "Convierte cinco preguntas directas en indirectas con Do you know o Could you tell me."
+    },
+    "fr": {
+     "t": "Questions indirectes : Could you tell me...?",
+     "g": "Rendre les questions plus douces et polies avec la forme indirecte.",
+     "p": [
+      "Commence par Do you know...? / Could you tell me...? / I wonder... + la question.",
+      "L'ordre change : Where is the station? devient Do you know where the station is?",
+      "Sans do/does/did : What time does it open? devient Could you tell me what time it opens?"
+     ],
+     "q": "Comment demanderais-tu poliment à un inconnu le chemin vers ton endroit préféré ?",
+     "c": "Transforme cinq questions directes en questions indirectes avec Do you know ou Could you tell me."
+    },
+    "it": {
+     "t": "Domande indirette: Could you tell me...?",
+     "g": "Rendi le domande più morbide e cortesi con la forma indiretta.",
+     "p": [
+      "Inizia con Do you know...? / Could you tell me...? / I wonder... + la domanda.",
+      "L'ordine cambia: Where is the station? diventa Do you know where the station is?",
+      "Niente do/does/did: What time does it open? diventa Could you tell me what time it opens?"
+     ],
+     "q": "Come chiederesti gentilmente a uno sconosciuto la strada per il tuo posto preferito?",
+     "c": "Trasforma cinque domande dirette in indirette con Do you know o Could you tell me."
+    },
+    "pt": {
+     "t": "Perguntas indiretas: Could you tell me...?",
+     "g": "Torna as perguntas mais suaves e educadas com a forma indireta.",
+     "p": [
+      "Começa com Do you know...? / Could you tell me...? / I wonder... + a pergunta.",
+      "A ordem muda: Where is the station? passa a Do you know where the station is?",
+      "Sem do/does/did: What time does it open? passa a Could you tell me what time it opens?"
+     ],
+     "q": "Como perguntarias com educação a um desconhecido o caminho para o teu sítio preferido?",
+     "c": "Transforma cinco perguntas diretas em indiretas com Do you know ou Could you tell me."
+    },
+    "pt_BR": {
+     "t": "Perguntas indiretas: Could you tell me...?",
+     "g": "Deixe as perguntas mais suaves e educadas com a forma indireta.",
+     "p": [
+      "Comece com Do you know...? / Could you tell me...? / I wonder... + a pergunta.",
+      "A ordem muda: Where is the station? vira Do you know where the station is?",
+      "Sem do/does/did: What time does it open? vira Could you tell me what time it opens?"
+     ],
+     "q": "Como você perguntaria com educação a um desconhecido o caminho para seu lugar favorito?",
+     "c": "Transforme cinco perguntas diretas em indiretas com Do you know ou Could you tell me."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Do you know where...?",
+      "ex": "Do you know where the nearest bank is?"
+     },
+     {
+      "w": "Could you tell me...?",
+      "ex": "Could you tell me what time the museum opens?"
+     },
+     {
+      "w": "I wonder if",
+      "ex": "I wonder if you could help me."
+     },
+     {
+      "w": "Do you know if",
+      "ex": "Do you know if this bus goes to the centre?"
+     },
+     {
+      "w": "how much",
+      "ex": "Could you tell me how much this costs?"
+     },
+     {
+      "w": "I was wondering",
+      "ex": "I was wondering where you bought that bag."
+     }
+    ],
+    "gram": "Indirect questions use statement word order and no do/does/did: Could you tell me where she lives? Yes/no questions use if."
+   }
+  },
+  {
+   "d": 157,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Question tags: isn't it?",
+     "g": "Use question tags to check information and keep a chat going.",
+     "p": [
+      "Positive sentence, negative tag: It's cold, isn't it? You're from Spain, aren't you?",
+      "Negative sentence, positive tag: You don't eat meat, do you? She can't swim, can she?",
+      "Use the same auxiliary: You live here, don't you? They went home, didn't they?"
+     ],
+     "q": "It's nice to practise together, isn't it? Can you reply and add a question tag of your own?",
+     "c": "Write six sentences about the weather, food and friends, each ending with a question tag."
+    },
+    "de": {
+     "t": "Question tags: isn't it?",
+     "g": "Du nutzt Frageanhängsel, um nachzufragen und das Gespräch am Laufen zu halten.",
+     "p": [
+      "Positiver Satz, negativer Tag: It's cold, isn't it? You're from Spain, aren't you?",
+      "Negativer Satz, positiver Tag: You don't eat meat, do you? She can't swim, can she?",
+      "Gleiches Hilfsverb: You live here, don't you? They went home, didn't they?"
+     ],
+     "q": "Es macht Spaß, zusammen zu üben, isn't it? Antworte und häng selbst ein Question Tag an.",
+     "c": "Schreib sechs Sätze über Wetter, Essen und Freunde, jeder mit einem Question Tag am Ende."
+    },
+    "es": {
+     "t": "Question tags: isn't it?",
+     "g": "Usa las coletillas para confirmar información y mantener la charla.",
+     "p": [
+      "Frase afirmativa, coletilla negativa: It's cold, isn't it? You're from Spain, aren't you?",
+      "Frase negativa, coletilla afirmativa: You don't eat meat, do you? She can't swim, can she?",
+      "Usa el mismo auxiliar: You live here, don't you? They went home, didn't they?"
+     ],
+     "q": "Es agradable practicar juntos, isn't it? ¿Puedes responder y añadir tu propia coletilla?",
+     "c": "Escribe seis frases sobre el tiempo, la comida y los amigos, cada una con una coletilla."
+    },
+    "fr": {
+     "t": "Question tags : isn't it?",
+     "g": "Utiliser les question tags pour vérifier une info et faire vivre la conversation.",
+     "p": [
+      "Phrase affirmative, tag négatif : It's cold, isn't it? You're from Spain, aren't you?",
+      "Phrase négative, tag affirmatif : You don't eat meat, do you? She can't swim, can she?",
+      "Même auxiliaire : You live here, don't you? They went home, didn't they?"
+     ],
+     "q": "C'est sympa de pratiquer ensemble, isn't it? Peux-tu répondre en ajoutant ton propre tag ?",
+     "c": "Écris six phrases sur la météo, la nourriture et les amis, chacune avec un question tag."
+    },
+    "it": {
+     "t": "Question tags: isn't it?",
+     "g": "Usa le question tags per verificare informazioni e tenere viva la conversazione.",
+     "p": [
+      "Frase affermativa, tag negativa: It's cold, isn't it? You're from Spain, aren't you?",
+      "Frase negativa, tag affermativa: You don't eat meat, do you? She can't swim, can she?",
+      "Stesso ausiliare: You live here, don't you? They went home, didn't they?"
+     ],
+     "q": "È bello esercitarsi insieme, isn't it? Puoi rispondere aggiungendo una tua question tag?",
+     "c": "Scrivi sei frasi su tempo, cibo e amici, ognuna con una question tag finale."
+    },
+    "pt": {
+     "t": "Question tags: isn't it?",
+     "g": "Usa as question tags para confirmar informação e manter a conversa.",
+     "p": [
+      "Frase afirmativa, tag negativa: It's cold, isn't it? You're from Spain, aren't you?",
+      "Frase negativa, tag afirmativa: You don't eat meat, do you? She can't swim, can she?",
+      "Usa o mesmo auxiliar: You live here, don't you? They went home, didn't they?"
+     ],
+     "q": "É bom praticar juntos, isn't it? Consegues responder e juntar uma question tag tua?",
+     "c": "Escreve seis frases sobre o tempo, a comida e os amigos, cada uma com uma question tag."
+    },
+    "pt_BR": {
+     "t": "Question tags: isn't it?",
+     "g": "Use as question tags para confirmar informações e manter a conversa.",
+     "p": [
+      "Frase afirmativa, tag negativa: It's cold, isn't it? You're from Spain, aren't you?",
+      "Frase negativa, tag afirmativa: You don't eat meat, do you? She can't swim, can she?",
+      "Use o mesmo auxiliar: You live here, don't you? They went home, didn't they?"
+     ],
+     "q": "É legal praticar juntos, isn't it? Você consegue responder e acrescentar sua própria question tag?",
+     "c": "Escreva seis frases sobre o tempo, a comida e os amigos, cada uma com uma question tag."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "isn't it?",
+      "ex": "It's a beautiful day, isn't it?"
+     },
+     {
+      "w": "aren't you?",
+      "ex": "You're coming tonight, aren't you?"
+     },
+     {
+      "w": "don't you?",
+      "ex": "You work near here, don't you?"
+     },
+     {
+      "w": "do you?",
+      "ex": "You don't like spicy food, do you?"
+     },
+     {
+      "w": "didn't they?",
+      "ex": "They had a great time, didn't they?"
+     },
+     {
+      "w": "can she?",
+      "ex": "She can't come tomorrow, can she?"
+     }
+    ],
+    "gram": "Positive sentence + negative tag, negative sentence + positive tag, same auxiliary and a pronoun: He's late, isn't he?"
+   }
+  },
+  {
+   "d": 158,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Agreeing: so do I, neither do I",
+     "g": "Show you feel the same as someone in a natural way.",
+     "p": [
+      "Positive: I love pizza. So do I. / Me too. I'm tired. So am I.",
+      "Negative: I don't like rain. Neither do I. / Me neither. I can't swim. Neither can I.",
+      "Match the auxiliary: I went home early. So did I. I've been there. So have I."
+     ],
+     "q": "I love learning languages. Do you? Answer me with so do I or something different!",
+     "c": "Write six short exchanges where you agree, using so do I, so am I, neither do I and neither can I."
+    },
+    "de": {
+     "t": "Zustimmen: so do I, neither do I",
+     "g": "Du zeigst ganz natürlich, dass es dir genauso geht.",
+     "p": [
+      "Positiv: I love pizza. So do I. / Me too. I'm tired. So am I.",
+      "Negativ: I don't like rain. Neither do I. / Me neither. I can't swim. Neither can I.",
+      "Hilfsverb anpassen: I went home early. So did I. I've been there. So have I."
+     ],
+     "q": "I love learning languages. Und du? Antworte mit so do I oder etwas anderem!",
+     "c": "Schreib sechs kurze Dialoge, in denen du zustimmst: so do I, so am I, neither do I, neither can I."
+    },
+    "es": {
+     "t": "Estar de acuerdo: so do I, neither do I",
+     "g": "Muestra de forma natural que a ti te pasa lo mismo.",
+     "p": [
+      "Afirmativo: I love pizza. So do I. / Me too. I'm tired. So am I.",
+      "Negativo: I don't like rain. Neither do I. / Me neither. I can't swim. Neither can I.",
+      "Ajusta el auxiliar: I went home early. So did I. I've been there. So have I."
+     ],
+     "q": "I love learning languages. ¿Y tú? ¡Respóndeme con so do I o algo distinto!",
+     "c": "Escribe seis diálogos cortos en los que coincides, con so do I, so am I, neither do I y neither can I."
+    },
+    "fr": {
+     "t": "Être d'accord : so do I, neither do I",
+     "g": "Montrer naturellement que tu ressens la même chose.",
+     "p": [
+      "Affirmatif : I love pizza. So do I. / Me too. I'm tired. So am I.",
+      "Négatif : I don't like rain. Neither do I. / Me neither. I can't swim. Neither can I.",
+      "Adapte l'auxiliaire : I went home early. So did I. I've been there. So have I."
+     ],
+     "q": "I love learning languages. Et toi ? Réponds avec so do I ou autre chose !",
+     "c": "Écris six petits échanges où tu es d'accord, avec so do I, so am I, neither do I et neither can I."
+    },
+    "it": {
+     "t": "Essere d'accordo: so do I, neither do I",
+     "g": "Mostra in modo naturale che per te è lo stesso.",
+     "p": [
+      "Affermativo: I love pizza. So do I. / Me too. I'm tired. So am I.",
+      "Negativo: I don't like rain. Neither do I. / Me neither. I can't swim. Neither can I.",
+      "Adatta l'ausiliare: I went home early. So did I. I've been there. So have I."
+     ],
+     "q": "I love learning languages. E tu? Rispondimi con so do I o qualcosa di diverso!",
+     "c": "Scrivi sei brevi scambi in cui sei d'accordo, con so do I, so am I, neither do I e neither can I."
+    },
+    "pt": {
+     "t": "Concordar: so do I, neither do I",
+     "g": "Mostra de forma natural que sentes o mesmo.",
+     "p": [
+      "Afirmativo: I love pizza. So do I. / Me too. I'm tired. So am I.",
+      "Negativo: I don't like rain. Neither do I. / Me neither. I can't swim. Neither can I.",
+      "Ajusta o auxiliar: I went home early. So did I. I've been there. So have I."
+     ],
+     "q": "I love learning languages. E tu? Responde-me com so do I ou outra coisa!",
+     "c": "Escreve seis diálogos curtos em que concordas, com so do I, so am I, neither do I e neither can I."
+    },
+    "pt_BR": {
+     "t": "Concordando: so do I, neither do I",
+     "g": "Mostre de forma natural que você sente o mesmo.",
+     "p": [
+      "Afirmativo: I love pizza. So do I. / Me too. I'm tired. So am I.",
+      "Negativo: I don't like rain. Neither do I. / Me neither. I can't swim. Neither can I.",
+      "Ajuste o auxiliar: I went home early. So did I. I've been there. So have I."
+     ],
+     "q": "I love learning languages. E você? Me responda com so do I ou outra coisa!",
+     "c": "Escreva seis diálogos curtos em que você concorda, com so do I, so am I, neither do I e neither can I."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "so do I",
+      "ex": "I love summer. So do I!"
+     },
+     {
+      "w": "so am I",
+      "ex": "I'm really hungry. So am I."
+     },
+     {
+      "w": "me too",
+      "ex": "I need a coffee. Me too."
+     },
+     {
+      "w": "neither do I",
+      "ex": "I don't like horror films. Neither do I."
+     },
+     {
+      "w": "me neither",
+      "ex": "I can't dance. Me neither!"
+     },
+     {
+      "w": "so did I",
+      "ex": "I watched the match last night. So did I."
+     }
+    ],
+    "gram": "So + auxiliary + I agrees with a positive; Neither + auxiliary + I agrees with a negative. Match the tense: So did I, Neither have I."
+   }
+  },
+  {
+   "d": 159,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Expressing opinions: I think, in my opinion",
+     "g": "Share your opinions clearly and give a reason.",
+     "p": [
+      "Openers: I think..., I believe..., In my opinion..., For me..., Personally, I...",
+      "Give a reason: I think cycling is great because it's healthy and cheap.",
+      "Negative opinions: I don't think it's a good idea (more natural than I think it isn't)."
+     ],
+     "q": "In your opinion, what's the best way to learn a new language, and why?",
+     "c": "Write your opinion on three topics (food, cities, technology) with a different opener and a reason."
+    },
+    "de": {
+     "t": "Meinungen äußern: I think, in my opinion",
+     "g": "Du sagst klar deine Meinung und gibst einen Grund an.",
+     "p": [
+      "Einstiege: I think..., I believe..., In my opinion..., For me..., Personally, I...",
+      "Mit Grund: I think cycling is great because it's healthy and cheap.",
+      "Negative Meinung: I don't think it's a good idea (natürlicher als I think it isn't)."
+     ],
+     "q": "Was ist deiner Meinung nach der beste Weg, eine neue Sprache zu lernen, und warum?",
+     "c": "Sag deine Meinung zu drei Themen (Essen, Städte, Technik) mit je anderem Einstieg und Grund."
+    },
+    "es": {
+     "t": "Dar opiniones: I think, in my opinion",
+     "g": "Comparte tus opiniones con claridad y da un motivo.",
+     "p": [
+      "Para empezar: I think..., I believe..., In my opinion..., For me..., Personally, I...",
+      "Con motivo: I think cycling is great because it's healthy and cheap.",
+      "Opinión negativa: I don't think it's a good idea (más natural que I think it isn't)."
+     ],
+     "q": "En tu opinión, ¿cuál es la mejor forma de aprender un idioma nuevo, y por qué?",
+     "c": "Da tu opinión sobre tres temas (comida, ciudades, tecnología) con distinto inicio y un motivo."
+    },
+    "fr": {
+     "t": "Donner son avis : I think, in my opinion",
+     "g": "Partager ton avis clairement en donnant une raison.",
+     "p": [
+      "Pour commencer : I think..., I believe..., In my opinion..., For me..., Personally, I...",
+      "Avec une raison : I think cycling is great because it's healthy and cheap.",
+      "Avis négatif : I don't think it's a good idea (plus naturel que I think it isn't)."
+     ],
+     "q": "À ton avis, quelle est la meilleure façon d'apprendre une nouvelle langue, et pourquoi ?",
+     "c": "Donne ton avis sur trois sujets (cuisine, villes, technologie) avec une formule différente et une raison."
+    },
+    "it": {
+     "t": "Esprimere opinioni: I think, in my opinion",
+     "g": "Condividi le tue opinioni con chiarezza e dai un motivo.",
+     "p": [
+      "Per iniziare: I think..., I believe..., In my opinion..., For me..., Personally, I...",
+      "Con un motivo: I think cycling is great because it's healthy and cheap.",
+      "Opinione negativa: I don't think it's a good idea (più naturale di I think it isn't)."
+     ],
+     "q": "Secondo te, qual è il modo migliore per imparare una nuova lingua, e perché?",
+     "c": "Dai la tua opinione su tre temi (cibo, città, tecnologia) con un inizio diverso e un motivo."
+    },
+    "pt": {
+     "t": "Dar opiniões: I think, in my opinion",
+     "g": "Partilha as tuas opiniões com clareza e dá uma razão.",
+     "p": [
+      "Para começar: I think..., I believe..., In my opinion..., For me..., Personally, I...",
+      "Com uma razão: I think cycling is great because it's healthy and cheap.",
+      "Opinião negativa: I don't think it's a good idea (mais natural do que I think it isn't)."
+     ],
+     "q": "Na tua opinião, qual é a melhor maneira de aprender uma língua nova, e porquê?",
+     "c": "Dá a tua opinião sobre três temas (comida, cidades, tecnologia) com um início diferente e uma razão."
+    },
+    "pt_BR": {
+     "t": "Dando opiniões: I think, in my opinion",
+     "g": "Compartilhe suas opiniões com clareza e dê um motivo.",
+     "p": [
+      "Para começar: I think..., I believe..., In my opinion..., For me..., Personally, I...",
+      "Com motivo: I think cycling is great because it's healthy and cheap.",
+      "Opinião negativa: I don't think it's a good idea (mais natural que I think it isn't)."
+     ],
+     "q": "Na sua opinião, qual é o melhor jeito de aprender um idioma novo, e por quê?",
+     "c": "Dê sua opinião sobre três temas (comida, cidades, tecnologia) com um início diferente e um motivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "I think",
+      "ex": "I think this café has the best cakes."
+     },
+     {
+      "w": "I believe",
+      "ex": "I believe everyone can learn a language."
+     },
+     {
+      "w": "in my opinion",
+      "ex": "In my opinion, summer is the best season."
+     },
+     {
+      "w": "for me",
+      "ex": "For me, family is the most important thing."
+     },
+     {
+      "w": "personally",
+      "ex": "Personally, I prefer the mountains to the beach."
+     },
+     {
+      "w": "I don't think",
+      "ex": "I don't think it's too late to start."
+     }
+    ],
+    "gram": "Give opinions with I think/believe + clause, In my opinion + clause. For negatives, prefer I don't think + positive clause."
+   }
+  },
+  {
+   "d": 160,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Agreeing and disagreeing politely",
+     "g": "Agree warmly and disagree kindly in a conversation.",
+     "p": [
+      "Agreeing: I totally agree. You're absolutely right. That's a good point.",
+      "Disagreeing kindly: I see your point, but... I'm not so sure. I see it a bit differently.",
+      "Soften it: Maybe, but don't you think...? That's true, although..."
+     ],
+     "q": "I think breakfast is the most important meal of the day. Do you agree or disagree?",
+     "c": "Write three statements and reply to each: once agreeing, once half-agreeing, once disagreeing kindly."
+    },
+    "de": {
+     "t": "Höflich zustimmen und widersprechen",
+     "g": "Du stimmst herzlich zu und widersprichst freundlich.",
+     "p": [
+      "Zustimmen: I totally agree. You're absolutely right. That's a good point.",
+      "Freundlich widersprechen: I see your point, but... I'm not so sure. I see it a bit differently.",
+      "Abschwächen: Maybe, but don't you think...? That's true, although..."
+     ],
+     "q": "Ich finde, das Frühstück ist die wichtigste Mahlzeit des Tages. Stimmst du zu oder nicht?",
+     "c": "Schreib drei Aussagen und antworte: einmal zustimmend, einmal halb, einmal freundlich widersprechend."
+    },
+    "es": {
+     "t": "Estar de acuerdo y discrepar con educación",
+     "g": "Muestra acuerdo con calidez y discrepa con amabilidad.",
+     "p": [
+      "Acuerdo: I totally agree. You're absolutely right. That's a good point.",
+      "Discrepar con amabilidad: I see your point, but... I'm not so sure. I see it a bit differently.",
+      "Suavizar: Maybe, but don't you think...? That's true, although..."
+     ],
+     "q": "Creo que el desayuno es la comida más importante del día. ¿Estás de acuerdo o no?",
+     "c": "Escribe tres afirmaciones y responde: una de acuerdo, otra a medias y otra discrepando con amabilidad."
+    },
+    "fr": {
+     "t": "Être d'accord ou pas, poliment",
+     "g": "Approuver chaleureusement et exprimer son désaccord avec gentillesse.",
+     "p": [
+      "Accord : I totally agree. You're absolutely right. That's a good point.",
+      "Désaccord poli : I see your point, but... I'm not so sure. I see it a bit differently.",
+      "Adoucir : Maybe, but don't you think...? That's true, although..."
+     ],
+     "q": "Je pense que le petit-déjeuner est le repas le plus important. Tu es d'accord ou pas ?",
+     "c": "Écris trois affirmations et réponds : une fois d'accord, une fois à moitié, une fois en désaccord poli."
+    },
+    "it": {
+     "t": "Essere d'accordo o no, con gentilezza",
+     "g": "Esprimi accordo con calore e disaccordo con gentilezza.",
+     "p": [
+      "Accordo: I totally agree. You're absolutely right. That's a good point.",
+      "Disaccordo gentile: I see your point, but... I'm not so sure. I see it a bit differently.",
+      "Ammorbidire: Maybe, but don't you think...? That's true, although..."
+     ],
+     "q": "Penso che la colazione sia il pasto più importante della giornata. Sei d'accordo o no?",
+     "c": "Scrivi tre affermazioni e rispondi: una volta d'accordo, una a metà, una in disaccordo gentile."
+    },
+    "pt": {
+     "t": "Concordar e discordar com educação",
+     "g": "Concorda com simpatia e discorda com delicadeza.",
+     "p": [
+      "Concordar: I totally agree. You're absolutely right. That's a good point.",
+      "Discordar com delicadeza: I see your point, but... I'm not so sure. I see it a bit differently.",
+      "Suavizar: Maybe, but don't you think...? That's true, although..."
+     ],
+     "q": "Acho que o pequeno-almoço é a refeição mais importante do dia. Concordas ou não?",
+     "c": "Escreve três afirmações e responde: uma vez a concordar, outra em parte e outra a discordar com delicadeza."
+    },
+    "pt_BR": {
+     "t": "Concordando e discordando com educação",
+     "g": "Concorde com simpatia e discorde com delicadeza.",
+     "p": [
+      "Concordar: I totally agree. You're absolutely right. That's a good point.",
+      "Discordar com delicadeza: I see your point, but... I'm not so sure. I see it a bit differently.",
+      "Suavizar: Maybe, but don't you think...? That's true, although..."
+     ],
+     "q": "Acho que o café da manhã é a refeição mais importante do dia. Você concorda ou não?",
+     "c": "Escreva três afirmações e responda: uma concordando, outra em parte e outra discordando com delicadeza."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "I totally agree",
+      "ex": "I totally agree. It's a great idea."
+     },
+     {
+      "w": "that's a good point",
+      "ex": "That's a good point. I hadn't thought of that."
+     },
+     {
+      "w": "I see your point, but",
+      "ex": "I see your point, but it's quite expensive."
+     },
+     {
+      "w": "I'm not so sure",
+      "ex": "I'm not so sure. It might be too far."
+     },
+     {
+      "w": "that's true, although",
+      "ex": "That's true, although it takes a long time."
+     },
+     {
+      "w": "I see it differently",
+      "ex": "I see it a bit differently, actually."
+     }
+    ],
+    "gram": "Soften disagreement with I see your point, but... or I'm not so sure. Avoid a bare No, you're wrong: it sounds rude in English."
+   }
+  }
+ ]
+}

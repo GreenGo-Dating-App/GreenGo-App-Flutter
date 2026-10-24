@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_french",
+ "lessons": [
+  {
+   "d": 311,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Health and society",
+     "g": "Discuss health as a social topic in French: the health system, prevention and la Sécurité sociale.",
+     "p": [
+      "Le système de santé: un médecin traitant (family doctor), l'hôpital public, les soins (care).",
+      "La Sécurité sociale is the French public insurance; la carte Vitale lets it reimburse your care.",
+      "Prevention: la prévention, une campagne de vaccination, adopter une alimentation équilibrée."
+     ],
+     "q": "In your country, what do people do to stay healthy, in your opinion?",
+     "c": "Write three French sentences comparing prevention and care, using la prévention and les soins."
+    },
+    "de": {
+     "t": "Gesundheit und Gesellschaft",
+     "g": "Du sprichst über Gesundheit als Gesellschaftsthema: Gesundheitssystem, Prävention und la Sécurité sociale.",
+     "p": [
+      "Le système de santé: un médecin traitant (Hausarzt), l'hôpital public, les soins (Behandlung).",
+      "La Sécurité sociale ist die französische gesetzliche Versicherung; mit der carte Vitale erstattet sie Behandlungen.",
+      "Prävention: la prévention, une campagne de vaccination, adopter une alimentation équilibrée."
+     ],
+     "q": "Was tun die Menschen in deinem Land deiner Meinung nach, um gesund zu bleiben?",
+     "c": "Schreib drei französische Sätze, die Prävention und Behandlung vergleichen, mit la prévention und les soins."
+    },
+    "es": {
+     "t": "Salud y sociedad",
+     "g": "Habla de la salud como tema social en francés: el sistema sanitario, la prevención y la Sécurité sociale.",
+     "p": [
+      "Le système de santé: un médecin traitant (médico de cabecera), l'hôpital public, les soins (la atención).",
+      "La Sécurité sociale es el seguro público francés; con la carte Vitale reembolsa la atención médica.",
+      "Prevención: la prévention, une campagne de vaccination, adopter une alimentation équilibrée."
+     ],
+     "q": "En tu país, ¿qué hace la gente para mantenerse sana, en tu opinión?",
+     "c": "Escribe tres frases en francés que comparen prevención y atención, con la prévention y les soins."
+    },
+    "fr": {
+     "t": "Santé et société",
+     "g": "Parler de la santé comme sujet de société : le système de santé, la prévention, la Sécurité sociale.",
+     "p": [
+      "Le système de santé : le médecin traitant, l'hôpital public, l'accès aux soins.",
+      "La Sécurité sociale est l'assurance maladie publique ; avec la carte Vitale, elle rembourse une partie des soins.",
+      "La prévention : une campagne de vaccination, le dépistage, adopter une alimentation équilibrée."
+     ],
+     "q": "Dans ton pays, que font les gens pour rester en bonne santé, à ton avis ?",
+     "c": "Écris trois phrases qui comparent prévention et soins, avec la prévention et les soins."
+    },
+    "it": {
+     "t": "Salute e società",
+     "g": "Parla della salute come tema sociale in francese: il sistema sanitario, la prevenzione e la Sécurité sociale.",
+     "p": [
+      "Le système de santé: un médecin traitant (medico di base), l'hôpital public, les soins (le cure).",
+      "La Sécurité sociale è l'assicurazione pubblica francese; con la carte Vitale rimborsa le cure.",
+      "Prevenzione: la prévention, une campagne de vaccination, adopter une alimentation équilibrée."
+     ],
+     "q": "Nel tuo paese, cosa fanno le persone per restare in salute, secondo te?",
+     "c": "Scrivi tre frasi in francese che confrontino prevenzione e cure, con la prévention e les soins."
+    },
+    "pt": {
+     "t": "Saúde e sociedade",
+     "g": "Fala da saúde como tema social em francês: o sistema de saúde, a prevenção e a Sécurité sociale.",
+     "p": [
+      "Le système de santé: un médecin traitant (médico de família), l'hôpital public, les soins (os cuidados).",
+      "A Sécurité sociale é o seguro público francês; com a carte Vitale reembolsa os cuidados de saúde.",
+      "Prevenção: la prévention, une campagne de vaccination, adopter une alimentation équilibrée."
+     ],
+     "q": "No teu país, o que fazem as pessoas para se manterem saudáveis, na tua opinião?",
+     "c": "Escreve três frases em francês a comparar prevenção e cuidados, com la prévention e les soins."
+    },
+    "pt_BR": {
+     "t": "Saúde e sociedade",
+     "g": "Fale da saúde como tema social em francês: o sistema de saúde, a prevenção e a Sécurité sociale.",
+     "p": [
+      "Le système de santé: un médecin traitant (clínico geral), l'hôpital public, les soins (o atendimento).",
+      "A Sécurité sociale é o seguro público francês; com a carte Vitale ela reembolsa o atendimento.",
+      "Prevenção: la prévention, une campagne de vaccination, adopter une alimentation équilibrée."
+     ],
+     "q": "No seu país, o que as pessoas fazem para se manter saudáveis, na sua opinião?",
+     "c": "Escreva três frases em francês comparando prevenção e atendimento, com la prévention e les soins."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "le système de santé",
+      "ex": "Le système de santé français est en grande partie public."
+     },
+     {
+      "w": "la Sécurité sociale",
+      "ex": "La Sécurité sociale a été créée en 1945."
+     },
+     {
+      "w": "la prévention",
+      "ex": "La prévention coûte moins cher que les soins."
+     },
+     {
+      "w": "les soins",
+      "ex": "L'accès aux soins doit être le même pour tous."
+     },
+     {
+      "w": "rembourser",
+      "ex": "La mutuelle rembourse le reste des frais."
+     },
+     {
+      "w": "le médecin traitant",
+      "ex": "J'ai déclaré mon médecin traitant."
+     }
+    ],
+    "gram": "Il est essentiel que + subjonctif pour exprimer une nécessité : il est essentiel que chacun ait accès aux soins."
+   }
+  },
+  {
+   "d": 312,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Cities and urban planning",
+     "g": "Talk about how cities are designed in French: planning, public transport and green spaces.",
+     "p": [
+      "L'aménagement urbain means urban planning: un quartier, une zone piétonne, une piste cyclable.",
+      "Les transports en commun: le métro, le tramway, le réseau de bus. Desservir = to serve an area.",
+      "Les espaces verts: un parc, végétaliser une rue, lutter contre les îlots de chaleur."
+     ],
+     "q": "If you could change one thing in your city, what would it be?",
+     "c": "Write three French sentences about your neighbourhood with si + imparfait, conditionnel: Si j'étais maire..."
+    },
+    "de": {
+     "t": "Städte und Stadtplanung",
+     "g": "Du sprichst auf Französisch über Stadtgestaltung: Planung, öffentlicher Verkehr und Grünflächen.",
+     "p": [
+      "L'aménagement urbain heißt Stadtplanung: un quartier, une zone piétonne, une piste cyclable (Radweg).",
+      "Les transports en commun: le métro, le tramway, le réseau de bus. Desservir = ein Gebiet anbinden.",
+      "Les espaces verts: un parc, végétaliser une rue, lutter contre les îlots de chaleur (Hitzeinseln)."
+     ],
+     "q": "Wenn du eine Sache in deiner Stadt ändern könntest, welche wäre es?",
+     "c": "Schreib drei französische Sätze über dein Viertel mit si + imparfait und Konditional: Si j'étais maire..."
+    },
+    "es": {
+     "t": "Ciudades y urbanismo",
+     "g": "Habla en francés de cómo se diseñan las ciudades: urbanismo, transporte público y zonas verdes.",
+     "p": [
+      "L'aménagement urbain es el urbanismo: un quartier, une zone piétonne, une piste cyclable (carril bici).",
+      "Les transports en commun: le métro, le tramway, le réseau de bus. Desservir = dar servicio a una zona.",
+      "Les espaces verts: un parc, végétaliser une rue, lutter contre les îlots de chaleur (islas de calor)."
+     ],
+     "q": "Si pudieras cambiar una cosa de tu ciudad, ¿cuál sería?",
+     "c": "Escribe tres frases en francés sobre tu barrio con si + imperfecto y condicional: Si j'étais maire..."
+    },
+    "fr": {
+     "t": "La ville et l'urbanisme",
+     "g": "Parler de l'aménagement des villes : les transports en commun et les espaces verts.",
+     "p": [
+      "L'aménagement urbain : un quartier, une zone piétonne, une piste cyclable, un écoquartier.",
+      "Les transports en commun : le métro, le tramway, le réseau de bus. Une ligne dessert un quartier.",
+      "Les espaces verts : un parc, végétaliser une rue, lutter contre les îlots de chaleur."
+     ],
+     "q": "Si tu pouvais changer une seule chose dans ta ville, ce serait quoi ?",
+     "c": "Écris trois phrases sur ton quartier avec si + imparfait et conditionnel : Si j'étais maire..."
+    },
+    "it": {
+     "t": "Città e urbanistica",
+     "g": "Parla in francese di come si progettano le città: urbanistica, trasporti pubblici e spazi verdi.",
+     "p": [
+      "L'aménagement urbain è l'urbanistica: un quartier, une zone piétonne, une piste cyclable (pista ciclabile).",
+      "Les transports en commun: le métro, le tramway, le réseau de bus. Desservir = servire una zona.",
+      "Les espaces verts: un parc, végétaliser une rue, lutter contre les îlots de chaleur (isole di calore)."
+     ],
+     "q": "Se potessi cambiare una cosa nella tua città, quale sarebbe?",
+     "c": "Scrivi tre frasi in francese sul tuo quartiere con si + imperfetto e condizionale: Si j'étais maire..."
+    },
+    "pt": {
+     "t": "Cidades e urbanismo",
+     "g": "Fala em francês de como se planeiam as cidades: urbanismo, transportes públicos e espaços verdes.",
+     "p": [
+      "L'aménagement urbain é o ordenamento urbano: un quartier, une zone piétonne, une piste cyclable (ciclovia).",
+      "Les transports en commun: le métro, le tramway, le réseau de bus. Desservir = servir uma zona.",
+      "Les espaces verts: un parc, végétaliser une rue, lutter contre les îlots de chaleur (ilhas de calor)."
+     ],
+     "q": "Se pudesses mudar uma coisa na tua cidade, o que seria?",
+     "c": "Escreve três frases em francês sobre o teu bairro com si + imperfeito e condicional: Si j'étais maire..."
+    },
+    "pt_BR": {
+     "t": "Cidades e urbanismo",
+     "g": "Fale em francês sobre como as cidades são planejadas: urbanismo, transporte público e áreas verdes.",
+     "p": [
+      "L'aménagement urbain é o planejamento urbano: un quartier, une zone piétonne, une piste cyclable (ciclovia).",
+      "Les transports en commun: le métro, le tramway, le réseau de bus. Desservir = atender uma região.",
+      "Les espaces verts: un parc, végétaliser une rue, lutter contre les îlots de chaleur (ilhas de calor)."
+     ],
+     "q": "Se você pudesse mudar uma coisa na sua cidade, o que seria?",
+     "c": "Escreva três frases em francês sobre seu bairro com si + imperfeito e condicional: Si j'étais maire..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "l'aménagement urbain",
+      "ex": "L'aménagement urbain doit penser aux piétons."
+     },
+     {
+      "w": "les transports en commun",
+      "ex": "Je prends les transports en commun tous les jours."
+     },
+     {
+      "w": "desservir",
+      "ex": "Une nouvelle ligne de tramway dessert le quartier."
+     },
+     {
+      "w": "les espaces verts",
+      "ex": "La ville a doublé ses espaces verts."
+     },
+     {
+      "w": "une zone piétonne",
+      "ex": "Le centre-ville est devenu une zone piétonne."
+     },
+     {
+      "w": "végétaliser",
+      "ex": "On va végétaliser les cours d'école."
+     }
+    ],
+    "gram": "Hypothèse : si + imparfait, conditionnel présent. Si j'étais maire, je créerais plus de pistes cyclables."
+   }
+  },
+  {
+   "d": 313,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Media literacy",
+     "g": "Judge information in French: check a source, assess objectivity and spot bias.",
+     "p": [
+      "Vérifier une source: Qui est l'auteur ? Quelle est la date ? D'autres médias confirment-ils l'info ?",
+      "L'objectivité vs le parti pris (bias): an article can be orienté. Look at word choice and what is missing.",
+      "Useful phrases: une fausse information, une rumeur, recouper les sources, le titre est trompeur."
+     ],
+     "q": "How do you check if a piece of news is reliable before you share it?",
+     "c": "Write three French questions you would ask yourself before believing a viral post."
+    },
+    "de": {
+     "t": "Medienkompetenz",
+     "g": "Du bewertest Informationen auf Französisch: Quelle prüfen, Objektivität einschätzen, Voreingenommenheit erkennen.",
+     "p": [
+      "Vérifier une source: Qui est l'auteur ? Quelle est la date ? D'autres médias confirment-ils l'info ?",
+      "L'objectivité vs le parti pris (Voreingenommenheit): ein Artikel kann orienté sein. Achte auf Wortwahl und Lücken.",
+      "Nützlich: une fausse information, une rumeur, recouper les sources, le titre est trompeur."
+     ],
+     "q": "Wie prüfst du, ob eine Nachricht zuverlässig ist, bevor du sie teilst?",
+     "c": "Schreib drei französische Fragen, die du dir stellst, bevor du einem viralen Post glaubst."
+    },
+    "es": {
+     "t": "Alfabetización mediática",
+     "g": "Evalúa información en francés: comprueba una fuente, valora la objetividad y detecta el sesgo.",
+     "p": [
+      "Vérifier une source: Qui est l'auteur ? Quelle est la date ? D'autres médias confirment-ils l'info ?",
+      "L'objectivité frente a le parti pris (sesgo): un artículo puede ser orienté. Mira las palabras y lo que falta.",
+      "Frases útiles: une fausse information, une rumeur, recouper les sources, le titre est trompeur."
+     ],
+     "q": "¿Cómo compruebas si una noticia es fiable antes de compartirla?",
+     "c": "Escribe tres preguntas en francés que te harías antes de creer una publicación viral."
+    },
+    "fr": {
+     "t": "L'éducation aux médias",
+     "g": "Évaluer une information : vérifier une source, juger l'objectivité, repérer le parti pris.",
+     "p": [
+      "Vérifier une source : Qui est l'auteur ? Quelle est la date ? D'autres médias confirment-ils l'info ?",
+      "L'objectivité et le parti pris : un article peut être orienté. On observe le choix des mots et ce qui manque.",
+      "Expressions utiles : une fausse information, une rumeur, recouper les sources, un titre trompeur."
+     ],
+     "q": "Comment vérifies-tu qu'une info est fiable avant de la partager ?",
+     "c": "Écris trois questions que tu te poserais avant de croire une publication virale."
+    },
+    "it": {
+     "t": "Educazione ai media",
+     "g": "Valuta le informazioni in francese: verifica una fonte, giudica l'obiettività e individua il pregiudizio.",
+     "p": [
+      "Vérifier une source: Qui est l'auteur ? Quelle est la date ? D'autres médias confirment-ils l'info ?",
+      "L'objectivité contro le parti pris (faziosità): un articolo può essere orienté. Guarda le parole e ciò che manca.",
+      "Frasi utili: une fausse information, une rumeur, recouper les sources, le titre est trompeur."
+     ],
+     "q": "Come verifichi se una notizia è affidabile prima di condividerla?",
+     "c": "Scrivi tre domande in francese che ti faresti prima di credere a un post virale."
+    },
+    "pt": {
+     "t": "Literacia mediática",
+     "g": "Avalia informação em francês: verifica uma fonte, julga a objetividade e deteta a parcialidade.",
+     "p": [
+      "Vérifier une source: Qui est l'auteur ? Quelle est la date ? D'autres médias confirment-ils l'info ?",
+      "L'objectivité versus le parti pris (parcialidade): um artigo pode ser orienté. Observa as palavras e o que falta.",
+      "Frases úteis: une fausse information, une rumeur, recouper les sources, le titre est trompeur."
+     ],
+     "q": "Como verificas se uma notícia é fiável antes de a partilhares?",
+     "c": "Escreve três perguntas em francês que farias a ti próprio antes de acreditar numa publicação viral."
+    },
+    "pt_BR": {
+     "t": "Educação midiática",
+     "g": "Avalie informações em francês: confira uma fonte, julgue a objetividade e identifique o viés.",
+     "p": [
+      "Vérifier une source: Qui est l'auteur ? Quelle est la date ? D'autres médias confirment-ils l'info ?",
+      "L'objectivité versus le parti pris (viés): um artigo pode ser orienté. Observe as palavras e o que falta.",
+      "Frases úteis: une fausse information, une rumeur, recouper les sources, le titre est trompeur."
+     ],
+     "q": "Como você confere se uma notícia é confiável antes de compartilhar?",
+     "c": "Escreva três perguntas em francês que você se faria antes de acreditar num post viral."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "vérifier une source",
+      "ex": "Avant de partager, il faut vérifier la source."
+     },
+     {
+      "w": "l'objectivité",
+      "ex": "Ce journal revendique son objectivité."
+     },
+     {
+      "w": "le parti pris",
+      "ex": "Le parti pris de l'auteur est évident."
+     },
+     {
+      "w": "recouper les sources",
+      "ex": "Les journalistes recoupent toujours leurs sources."
+     },
+     {
+      "w": "une fausse information",
+      "ex": "Cette fausse information a circulé très vite."
+     },
+     {
+      "w": "trompeur",
+      "ex": "Le titre est trompeur par rapport au contenu."
+     }
+    ],
+    "gram": "Interrogation soutenue avec inversion : Qui est l'auteur ? D'autres médias confirment-ils l'information ?"
+   }
+  },
+  {
+   "d": 314,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "The ethics of technology",
+     "g": "Discuss technology ethics in French: personal data, privacy and algorithms.",
+     "p": [
+      "Les données personnelles are collected by apps: collecter, stocker, partager, protéger les données.",
+      "La vie privée (privacy): Je refuse les cookies. / Je lis les conditions d'utilisation.",
+      "Les algorithmes choose what we see: une bulle de filtre, la recommandation, un biais."
+     ],
+     "q": "Do you think apps know too much about us? What do you do to protect your data?",
+     "c": "Write a French opinion of three sentences on privacy using bien que + subjunctive."
+    },
+    "de": {
+     "t": "Ethik der Technologie",
+     "g": "Du diskutierst Technikethik auf Französisch: persönliche Daten, Privatsphäre und Algorithmen.",
+     "p": [
+      "Les données personnelles werden von Apps gesammelt: collecter, stocker, partager, protéger les données.",
+      "La vie privée (Privatsphäre): Je refuse les cookies. / Je lis les conditions d'utilisation.",
+      "Les algorithmes bestimmen, was wir sehen: une bulle de filtre, la recommandation, un biais."
+     ],
+     "q": "Wissen Apps zu viel über uns? Was tust du, um deine Daten zu schützen?",
+     "c": "Schreib eine französische Meinung in drei Sätzen zur Privatsphäre mit bien que + Subjonctif."
+    },
+    "es": {
+     "t": "La ética de la tecnología",
+     "g": "Debate en francés sobre ética tecnológica: datos personales, privacidad y algoritmos.",
+     "p": [
+      "Les données personnelles las recogen las apps: collecter, stocker, partager, protéger les données.",
+      "La vie privée (privacidad): Je refuse les cookies. / Je lis les conditions d'utilisation.",
+      "Les algorithmes eligen lo que vemos: une bulle de filtre, la recommandation, un biais."
+     ],
+     "q": "¿Crees que las apps saben demasiado de nosotros? ¿Qué haces para proteger tus datos?",
+     "c": "Escribe una opinión en francés de tres frases sobre la privacidad con bien que + subjuntivo."
+    },
+    "fr": {
+     "t": "L'éthique du numérique",
+     "g": "Débattre de l'éthique du numérique : données personnelles, vie privée et algorithmes.",
+     "p": [
+      "Les données personnelles : les applis les collectent, les stockent, les partagent. Il faut les protéger.",
+      "La vie privée : Je refuse les cookies. / Je lis les conditions d'utilisation avant d'accepter.",
+      "Les algorithmes choisissent ce qu'on voit : la recommandation, une bulle de filtre, un biais."
+     ],
+     "q": "Penses-tu que les applis en savent trop sur nous ? Que fais-tu pour protéger tes données ?",
+     "c": "Écris un avis de trois phrases sur la vie privée avec bien que + subjonctif."
+    },
+    "it": {
+     "t": "L'etica della tecnologia",
+     "g": "Discuti di etica della tecnologia in francese: dati personali, privacy e algoritmi.",
+     "p": [
+      "Les données personnelles vengono raccolte dalle app: collecter, stocker, partager, protéger les données.",
+      "La vie privée (privacy): Je refuse les cookies. / Je lis les conditions d'utilisation.",
+      "Les algorithmes scelgono cosa vediamo: une bulle de filtre, la recommandation, un biais."
+     ],
+     "q": "Pensi che le app sappiano troppo di noi? Cosa fai per proteggere i tuoi dati?",
+     "c": "Scrivi un'opinione in francese di tre frasi sulla privacy con bien que + congiuntivo."
+    },
+    "pt": {
+     "t": "A ética da tecnologia",
+     "g": "Debate em francês a ética da tecnologia: dados pessoais, privacidade e algoritmos.",
+     "p": [
+      "Les données personnelles são recolhidas pelas apps: collecter, stocker, partager, protéger les données.",
+      "La vie privée (privacidade): Je refuse les cookies. / Je lis les conditions d'utilisation.",
+      "Les algorithmes escolhem o que vemos: une bulle de filtre, la recommandation, un biais."
+     ],
+     "q": "Achas que as apps sabem demasiado sobre nós? O que fazes para proteger os teus dados?",
+     "c": "Escreve uma opinião em francês de três frases sobre privacidade com bien que + conjuntivo."
+    },
+    "pt_BR": {
+     "t": "A ética da tecnologia",
+     "g": "Discuta em francês a ética da tecnologia: dados pessoais, privacidade e algoritmos.",
+     "p": [
+      "Les données personnelles são coletadas pelos apps: collecter, stocker, partager, protéger les données.",
+      "La vie privée (privacidade): Je refuse les cookies. / Je lis les conditions d'utilisation.",
+      "Les algorithmes escolhem o que vemos: une bulle de filtre, la recommandation, un biais."
+     ],
+     "q": "Você acha que os apps sabem demais sobre nós? O que você faz para proteger seus dados?",
+     "c": "Escreva uma opinião em francês de três frases sobre privacidade com bien que + subjuntivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "les données personnelles",
+      "ex": "Cette appli collecte beaucoup de données personnelles."
+     },
+     {
+      "w": "la vie privée",
+      "ex": "Chacun a droit au respect de sa vie privée."
+     },
+     {
+      "w": "un algorithme",
+      "ex": "Un algorithme décide des vidéos qu'on nous propose."
+     },
+     {
+      "w": "une bulle de filtre",
+      "ex": "On risque de s'enfermer dans une bulle de filtre."
+     },
+     {
+      "w": "protéger",
+      "ex": "Il est important de protéger ses mots de passe."
+     },
+     {
+      "w": "les conditions d'utilisation",
+      "ex": "Presque personne ne lit les conditions d'utilisation."
+     }
+    ],
+    "gram": "Concession : bien que + subjonctif. Bien que ces services soient gratuits, nous les payons avec nos données."
+   }
+  },
+  {
+   "d": 315,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Review: argumentation and work",
+     "g": "Review the last two weeks: essays, formal letters and professional French.",
+     "p": [
+      "Essays: introduction (accroche, problématique, plan), body (argument, example, transition), conclusion (synthèse, ouverture).",
+      "Formal writing: Objet, Madame, Monsieur, the polite conditional and the vous, moi, nous cover letter.",
+      "Work talk: interview answers, negotiating with à condition que, leading a meeting and presenting."
+     ],
+     "q": "Which was hardest for you: the essay, the formal letter or the oral tasks? Why?",
+     "c": "Pick one topic from days 309 to 314 and write a mini-essay plan in French: problématique and two parts."
+    },
+    "de": {
+     "t": "Wiederholung: Argumentation und Beruf",
+     "g": "Du wiederholst die letzten zwei Wochen: Aufsätze, formelle Briefe und Französisch im Beruf.",
+     "p": [
+      "Aufsatz: Einleitung (accroche, problématique, plan), Hauptteil (Argument, Beispiel, Übergang), Schluss (synthèse, ouverture).",
+      "Formell schreiben: Objet, Madame, Monsieur, Höflichkeitskonditional und das Anschreiben vous, moi, nous.",
+      "Beruf: Antworten im Gespräch, Verhandeln mit à condition que, Besprechungen leiten, präsentieren."
+     ],
+     "q": "Was war für dich am schwersten: der Aufsatz, der formelle Brief oder das Sprechen? Warum?",
+     "c": "Wähle ein Thema der Tage 309 bis 314 und schreib einen Aufsatzplan auf Französisch: problématique und zwei Teile."
+    },
+    "es": {
+     "t": "Repaso: argumentación y trabajo",
+     "g": "Repasa las dos últimas semanas: ensayos, cartas formales y francés profesional.",
+     "p": [
+      "Ensayo: introducción (accroche, problématique, plan), desarrollo (argumento, ejemplo, transición), conclusión (synthèse, ouverture).",
+      "Escritura formal: Objet, Madame, Monsieur, el condicional de cortesía y la carta vous, moi, nous.",
+      "Trabajo: respuestas de entrevista, negociar con à condition que, dirigir una reunión y presentar."
+     ],
+     "q": "¿Qué te resultó más difícil: el ensayo, la carta formal o las tareas orales? ¿Por qué?",
+     "c": "Elige un tema de los días 309 a 314 y escribe un mini plan de ensayo en francés: problématique y dos partes."
+    },
+    "fr": {
+     "t": "Bilan : argumentation et monde du travail",
+     "g": "Réviser les deux dernières semaines : dissertation, lettres formelles et français professionnel.",
+     "p": [
+      "La dissertation : introduction (accroche, problématique, plan), développement (argument, exemple, transition), conclusion.",
+      "L'écrit formel : Objet, Madame, Monsieur, le conditionnel de politesse et la lettre de motivation vous, moi, nous.",
+      "L'oral pro : l'entretien, la négociation avec à condition que, l'animation de réunion et l'exposé."
+     ],
+     "q": "Qu'est-ce qui a été le plus difficile : la dissertation, la lettre formelle ou l'oral ? Pourquoi ?",
+     "c": "Choisis un thème des jours 309 à 314 et écris un mini-plan : une problématique et deux parties."
+    },
+    "it": {
+     "t": "Ripasso: argomentazione e lavoro",
+     "g": "Ripassa le ultime due settimane: temi, lettere formali e francese professionale.",
+     "p": [
+      "Il tema: introduzione (accroche, problématique, plan), sviluppo (argomento, esempio, transizione), conclusione (synthèse, ouverture).",
+      "Scrittura formale: Objet, Madame, Monsieur, il condizionale di cortesia e la lettera vous, moi, nous.",
+      "Lavoro: risposte al colloquio, negoziare con à condition que, condurre una riunione e presentare."
+     ],
+     "q": "Cosa è stato più difficile per te: il tema, la lettera formale o l'orale? Perché?",
+     "c": "Scegli un tema dei giorni 309-314 e scrivi un mini schema di tema in francese: problématique e due parti."
+    },
+    "pt": {
+     "t": "Revisão: argumentação e trabalho",
+     "g": "Revê as duas últimas semanas: dissertações, cartas formais e francês profissional.",
+     "p": [
+      "Dissertação: introdução (accroche, problématique, plan), desenvolvimento (argumento, exemplo, transição), conclusão (synthèse, ouverture).",
+      "Escrita formal: Objet, Madame, Monsieur, o condicional de cortesia e a carta vous, moi, nous.",
+      "Trabalho: respostas de entrevista, negociar com à condition que, conduzir uma reunião e apresentar."
+     ],
+     "q": "O que foi mais difícil para ti: a dissertação, a carta formal ou a oralidade? Porquê?",
+     "c": "Escolhe um tema dos dias 309 a 314 e escreve um mini plano de dissertação em francês: problématique e duas partes."
+    },
+    "pt_BR": {
+     "t": "Revisão: argumentação e trabalho",
+     "g": "Revise as duas últimas semanas: redações, cartas formais e francês profissional.",
+     "p": [
+      "Redação: introdução (accroche, problématique, plan), desenvolvimento (argumento, exemplo, transição), conclusão (synthèse, ouverture).",
+      "Escrita formal: Objet, Madame, Monsieur, o condicional de cortesia e a carta vous, moi, nous.",
+      "Trabalho: respostas de entrevista, negociar com à condition que, conduzir reunião e apresentar."
+     ],
+     "q": "O que foi mais difícil para você: a redação, a carta formal ou a parte oral? Por quê?",
+     "c": "Escolha um tema dos dias 309 a 314 e escreva um mini plano de redação em francês: problématique e duas partes."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la problématique",
+      "ex": "Ta problématique doit guider tout le devoir."
+     },
+     {
+      "w": "une transition",
+      "ex": "Une bonne transition relie les deux parties."
+     },
+     {
+      "w": "je vous prie d'agréer",
+      "ex": "Je vous prie d'agréer mes salutations distinguées."
+     },
+     {
+      "w": "à condition que",
+      "ex": "Nous signerons à condition que le délai soit respecté."
+     },
+     {
+      "w": "faire le point",
+      "ex": "On fait le point chaque lundi matin."
+     },
+     {
+      "w": "en définitive",
+      "ex": "En définitive, les deux options se valent."
+     }
+    ],
+    "gram": "Révision : connecteurs logiques (d'abord, ensuite, en outre, en définitive), conditionnel de politesse, à condition que + subjonctif."
+   }
+  },
+  {
+   "d": 316,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Idioms: everyday life",
+     "g": "Use colourful everyday French idioms naturally in conversation.",
+     "p": [
+      "Mettre son grain de sel = to put in your two cents, often without being asked: Il met toujours son grain de sel.",
+      "Tomber dans les pommes = to faint: Il faisait si chaud qu'elle est tombée dans les pommes.",
+      "Avoir le cafard = to feel down: J'ai un peu le cafard quand il pleut tout le week-end."
+     ],
+     "q": "Who in your life always puts in their grain de sel? Tell me in French!",
+     "c": "Write a mini story in French using two of today's idioms."
+    },
+    "de": {
+     "t": "Redewendungen: Alltag",
+     "g": "Du verwendest bildhafte französische Alltagsredewendungen natürlich im Gespräch.",
+     "p": [
+      "Mettre son grain de sel = seinen Senf dazugeben, oft ungefragt: Il met toujours son grain de sel.",
+      "Tomber dans les pommes = in Ohnmacht fallen: Il faisait si chaud qu'elle est tombée dans les pommes.",
+      "Avoir le cafard = niedergeschlagen sein: J'ai un peu le cafard quand il pleut tout le week-end."
+     ],
+     "q": "Wer in deinem Leben gibt immer seinen grain de sel dazu? Erzähl es auf Französisch!",
+     "c": "Schreib eine Minigeschichte auf Französisch mit zwei der heutigen Redewendungen."
+    },
+    "es": {
+     "t": "Expresiones: la vida diaria",
+     "g": "Usa con naturalidad expresiones francesas coloridas de la vida diaria.",
+     "p": [
+      "Mettre son grain de sel = meter baza, a menudo sin que te lo pidan: Il met toujours son grain de sel.",
+      "Tomber dans les pommes = desmayarse: Il faisait si chaud qu'elle est tombée dans les pommes.",
+      "Avoir le cafard = estar de bajón: J'ai un peu le cafard quand il pleut tout le week-end."
+     ],
+     "q": "¿Quién en tu vida siempre mete su grain de sel? ¡Cuéntamelo en francés!",
+     "c": "Escribe una mini historia en francés con dos de las expresiones de hoy."
+    },
+    "fr": {
+     "t": "Les expressions de la vie quotidienne",
+     "g": "Utiliser naturellement des expressions imagées de la vie de tous les jours.",
+     "p": [
+      "Mettre son grain de sel : donner son avis sans qu'on le demande : Il met toujours son grain de sel.",
+      "Tomber dans les pommes : s'évanouir : Il faisait si chaud qu'elle est tombée dans les pommes.",
+      "Avoir le cafard : être un peu triste, déprimé : J'ai le cafard quand il pleut tout le week-end."
+     ],
+     "q": "Qui, autour de toi, met toujours son grain de sel ?",
+     "c": "Écris une mini-histoire avec deux des expressions du jour."
+    },
+    "it": {
+     "t": "Modi di dire: la vita quotidiana",
+     "g": "Usa con naturalezza modi di dire francesi coloriti della vita di tutti i giorni.",
+     "p": [
+      "Mettre son grain de sel = dire la propria, spesso senza essere interpellati: Il met toujours son grain de sel.",
+      "Tomber dans les pommes = svenire: Il faisait si chaud qu'elle est tombée dans les pommes.",
+      "Avoir le cafard = essere giù di morale: J'ai un peu le cafard quand il pleut tout le week-end."
+     ],
+     "q": "Chi nella tua vita mette sempre il suo grain de sel? Raccontamelo in francese!",
+     "c": "Scrivi una mini storia in francese con due dei modi di dire di oggi."
+    },
+    "pt": {
+     "t": "Expressões: o dia a dia",
+     "g": "Usa com naturalidade expressões francesas coloridas do dia a dia.",
+     "p": [
+      "Mettre son grain de sel = meter a colher, muitas vezes sem ser chamado: Il met toujours son grain de sel.",
+      "Tomber dans les pommes = desmaiar: Il faisait si chaud qu'elle est tombée dans les pommes.",
+      "Avoir le cafard = andar em baixo: J'ai un peu le cafard quand il pleut tout le week-end."
+     ],
+     "q": "Quem na tua vida mete sempre o seu grain de sel? Conta-me em francês!",
+     "c": "Escreve uma mini-história em francês com duas das expressões de hoje."
+    },
+    "pt_BR": {
+     "t": "Expressões: o dia a dia",
+     "g": "Use com naturalidade expressões francesas cheias de imagem do dia a dia.",
+     "p": [
+      "Mettre son grain de sel = dar pitaco, muitas vezes sem ser chamado: Il met toujours son grain de sel.",
+      "Tomber dans les pommes = desmaiar: Il faisait si chaud qu'elle est tombée dans les pommes.",
+      "Avoir le cafard = ficar pra baixo: J'ai un peu le cafard quand il pleut tout le week-end."
+     ],
+     "q": "Quem na sua vida sempre dá o seu grain de sel? Me conte em francês!",
+     "c": "Escreva uma mini-história em francês com duas das expressões de hoje."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "mettre son grain de sel",
+      "ex": "Ma tante met toujours son grain de sel dans nos projets."
+     },
+     {
+      "w": "tomber dans les pommes",
+      "ex": "Il a failli tomber dans les pommes en voyant la file d'attente."
+     },
+     {
+      "w": "avoir le cafard",
+      "ex": "Le dimanche soir, j'ai souvent le cafard."
+     },
+     {
+      "w": "poser un lapin",
+      "ex": "Il m'a posé un lapin : je l'ai attendu une heure !"
+     },
+     {
+      "w": "coûter les yeux de la tête",
+      "ex": "Ce canapé coûte les yeux de la tête."
+     },
+     {
+      "w": "avoir un coup de barre",
+      "ex": "Après le déjeuner, j'ai toujours un coup de barre."
+     }
+    ],
+    "gram": "Dans les expressions figées, on conjugue seulement le verbe : elle est tombée dans les pommes, nous mettons notre grain de sel."
+   }
+  },
+  {
+   "d": 317,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Idioms: work and effort",
+     "g": "Talk about work and effort in French with lively idioms.",
+     "p": [
+      "Mettre la main à la pâte = to pitch in and help: Tout le monde a mis la main à la pâte pour la fête.",
+      "Avoir du pain sur la planche = to have a lot on your plate: Cette semaine, j'ai du pain sur la planche.",
+      "Also: travailler d'arrache-pied (very hard), se tourner les pouces (to do nothing), un poil dans la main (lazy)."
+     ],
+     "q": "Do you have du pain sur la planche this week? What is on your list?",
+     "c": "Describe a busy week at work or school in French using three of today's idioms."
+    },
+    "de": {
+     "t": "Redewendungen: Arbeit und Einsatz",
+     "g": "Du sprichst auf Französisch mit lebendigen Redewendungen über Arbeit und Einsatz.",
+     "p": [
+      "Mettre la main à la pâte = mit anpacken: Tout le monde a mis la main à la pâte pour la fête.",
+      "Avoir du pain sur la planche = viel zu tun haben: Cette semaine, j'ai du pain sur la planche.",
+      "Außerdem: travailler d'arrache-pied (hart arbeiten), se tourner les pouces (Däumchen drehen), avoir un poil dans la main (faul sein)."
+     ],
+     "q": "Hast du diese Woche du pain sur la planche? Was steht auf deiner Liste?",
+     "c": "Beschreib eine volle Arbeits- oder Schulwoche auf Französisch mit drei Redewendungen von heute."
+    },
+    "es": {
+     "t": "Expresiones: trabajo y esfuerzo",
+     "g": "Habla del trabajo y del esfuerzo en francés con expresiones vivas.",
+     "p": [
+      "Mettre la main à la pâte = arrimar el hombro: Tout le monde a mis la main à la pâte pour la fête.",
+      "Avoir du pain sur la planche = tener mucho trabajo: Cette semaine, j'ai du pain sur la planche.",
+      "Además: travailler d'arrache-pied (sin descanso), se tourner les pouces (no hacer nada), avoir un poil dans la main (ser vago)."
+     ],
+     "q": "¿Tienes du pain sur la planche esta semana? ¿Qué hay en tu lista?",
+     "c": "Describe una semana muy ocupada en francés usando tres expresiones de hoy."
+    },
+    "fr": {
+     "t": "Les expressions du travail et de l'effort",
+     "g": "Parler du travail et de l'effort avec des expressions vivantes.",
+     "p": [
+      "Mettre la main à la pâte : participer, aider concrètement : Tout le monde a mis la main à la pâte pour la fête.",
+      "Avoir du pain sur la planche : avoir beaucoup de travail : Cette semaine, j'ai du pain sur la planche.",
+      "Aussi : travailler d'arrache-pied, se tourner les pouces (ne rien faire), avoir un poil dans la main (être paresseux)."
+     ],
+     "q": "As-tu du pain sur la planche cette semaine ? Qu'y a-t-il sur ta liste ?",
+     "c": "Décris une semaine chargée avec trois expressions du jour."
+    },
+    "it": {
+     "t": "Modi di dire: lavoro e impegno",
+     "g": "Parla di lavoro e impegno in francese con modi di dire vivaci.",
+     "p": [
+      "Mettre la main à la pâte = darsi da fare, dare una mano: Tout le monde a mis la main à la pâte pour la fête.",
+      "Avoir du pain sur la planche = avere molto da fare: Cette semaine, j'ai du pain sur la planche.",
+      "Inoltre: travailler d'arrache-pied (lavorare sodo), se tourner les pouces (girarsi i pollici), avoir un poil dans la main (essere pigro)."
+     ],
+     "q": "Hai du pain sur la planche questa settimana? Cosa c'è sulla tua lista?",
+     "c": "Descrivi una settimana piena in francese usando tre modi di dire di oggi."
+    },
+    "pt": {
+     "t": "Expressões: trabalho e esforço",
+     "g": "Fala de trabalho e esforço em francês com expressões vivas.",
+     "p": [
+      "Mettre la main à la pâte = pôr mãos à obra, ajudar: Tout le monde a mis la main à la pâte pour la fête.",
+      "Avoir du pain sur la planche = ter muito que fazer: Cette semaine, j'ai du pain sur la planche.",
+      "Também: travailler d'arrache-pied (sem parar), se tourner les pouces (não fazer nada), avoir un poil dans la main (preguiça)."
+     ],
+     "q": "Tens du pain sur la planche esta semana? O que está na tua lista?",
+     "c": "Descreve uma semana cheia em francês usando três expressões de hoje."
+    },
+    "pt_BR": {
+     "t": "Expressões: trabalho e esforço",
+     "g": "Fale de trabalho e esforço em francês com expressões vivas.",
+     "p": [
+      "Mettre la main à la pâte = pôr a mão na massa: Tout le monde a mis la main à la pâte pour la fête.",
+      "Avoir du pain sur la planche = ter muito trabalho pela frente: Cette semaine, j'ai du pain sur la planche.",
+      "Também: travailler d'arrache-pied (ralar muito), se tourner les pouces (ficar à toa), avoir un poil dans la main (ser preguiçoso)."
+     ],
+     "q": "Você tem du pain sur la planche esta semana? O que está na sua lista?",
+     "c": "Descreva uma semana corrida em francês usando três expressões de hoje."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "mettre la main à la pâte",
+      "ex": "Même le directeur a mis la main à la pâte."
+     },
+     {
+      "w": "avoir du pain sur la planche",
+      "ex": "Avant les vacances, on a du pain sur la planche."
+     },
+     {
+      "w": "travailler d'arrache-pied",
+      "ex": "Ils ont travaillé d'arrache-pied pour finir à temps."
+     },
+     {
+      "w": "se tourner les pouces",
+      "ex": "Il se tourne les pouces pendant que les autres travaillent."
+     },
+     {
+      "w": "avoir un poil dans la main",
+      "ex": "Mon frère a un poil dans la main le dimanche."
+     },
+     {
+      "w": "mettre les bouchées doubles",
+      "ex": "Il faut mettre les bouchées doubles cette semaine."
+     }
+    ],
+    "gram": "Expressions idiomatiques : le possessif s'accorde avec le sujet (je me tourne les pouces) et le verbe se conjugue normalement."
+   }
+  },
+  {
+   "d": 318,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Idioms: talking and thinking",
+     "g": "Use French idioms about speaking and thinking to sound more natural.",
+     "p": [
+      "Tourner autour du pot = to beat around the bush: Arrête de tourner autour du pot, dis-moi tout !",
+      "Avoir la tête dans les nuages = to have your head in the clouds, to be dreamy and distracted.",
+      "Also: avoir un trou de mémoire (blank), se creuser la tête (rack your brain), avoir la langue bien pendue (chatty)."
+     ],
+     "q": "When do you tend to have la tête dans les nuages?",
+     "c": "Write a short French dialogue where one friend tourne autour du pot and the other reacts."
+    },
+    "de": {
+     "t": "Redewendungen: Sprechen und Denken",
+     "g": "Du nutzt französische Redewendungen über Sprechen und Denken, um natürlicher zu klingen.",
+     "p": [
+      "Tourner autour du pot = um den heißen Brei herumreden: Arrête de tourner autour du pot, dis-moi tout !",
+      "Avoir la tête dans les nuages = mit dem Kopf in den Wolken sein, verträumt und abgelenkt.",
+      "Außerdem: avoir un trou de mémoire (Blackout), se creuser la tête (sich den Kopf zerbrechen), avoir la langue bien pendue (redselig sein)."
+     ],
+     "q": "Wann hast du am ehesten la tête dans les nuages?",
+     "c": "Schreib einen kurzen französischen Dialog: Eine Person tourne autour du pot, die andere reagiert."
+    },
+    "es": {
+     "t": "Expresiones: hablar y pensar",
+     "g": "Usa expresiones francesas sobre hablar y pensar para sonar más natural.",
+     "p": [
+      "Tourner autour du pot = andarse por las ramas: Arrête de tourner autour du pot, dis-moi tout !",
+      "Avoir la tête dans les nuages = estar en las nubes, soñador y distraído.",
+      "Además: avoir un trou de mémoire (quedarse en blanco), se creuser la tête (pensar mucho), avoir la langue bien pendue (ser parlanchín)."
+     ],
+     "q": "¿Cuándo sueles tener la tête dans les nuages?",
+     "c": "Escribe un breve diálogo en francés donde un amigo tourne autour du pot y el otro reacciona."
+    },
+    "fr": {
+     "t": "Les expressions pour parler et penser",
+     "g": "Utiliser des expressions sur la parole et la pensée pour parler plus naturellement.",
+     "p": [
+      "Tourner autour du pot : ne pas aller droit au but : Arrête de tourner autour du pot, dis-moi tout !",
+      "Avoir la tête dans les nuages : être rêveur, distrait, ailleurs.",
+      "Aussi : avoir un trou de mémoire, se creuser la tête (réfléchir fort), avoir la langue bien pendue (parler beaucoup)."
+     ],
+     "q": "Quand as-tu tendance à avoir la tête dans les nuages ?",
+     "c": "Écris un court dialogue où un ami tourne autour du pot et l'autre réagit."
+    },
+    "it": {
+     "t": "Modi di dire: parlare e pensare",
+     "g": "Usa modi di dire francesi sul parlare e sul pensare per suonare più naturale.",
+     "p": [
+      "Tourner autour du pot = menare il can per l'aia: Arrête de tourner autour du pot, dis-moi tout !",
+      "Avoir la tête dans les nuages = avere la testa fra le nuvole, sognante e distratto.",
+      "Inoltre: avoir un trou de mémoire (vuoto di memoria), se creuser la tête (scervellarsi), avoir la langue bien pendue (parlare tanto)."
+     ],
+     "q": "Quando ti capita di avere la tête dans les nuages?",
+     "c": "Scrivi un breve dialogo in francese in cui un amico tourne autour du pot e l'altro reagisce."
+    },
+    "pt": {
+     "t": "Expressões: falar e pensar",
+     "g": "Usa expressões francesas sobre falar e pensar para soares mais natural.",
+     "p": [
+      "Tourner autour du pot = andar com rodeios: Arrête de tourner autour du pot, dis-moi tout !",
+      "Avoir la tête dans les nuages = andar com a cabeça nas nuvens, sonhador e distraído.",
+      "Também: avoir un trou de mémoire (dar uma branca), se creuser la tête (pensar muito), avoir la langue bien pendue (ser falador)."
+     ],
+     "q": "Quando é que costumas ter la tête dans les nuages?",
+     "c": "Escreve um breve diálogo em francês em que um amigo tourne autour du pot e o outro reage."
+    },
+    "pt_BR": {
+     "t": "Expressões: falar e pensar",
+     "g": "Use expressões francesas sobre falar e pensar para soar mais natural.",
+     "p": [
+      "Tourner autour du pot = enrolar, fazer rodeios: Arrête de tourner autour du pot, dis-moi tout !",
+      "Avoir la tête dans les nuages = viver no mundo da lua, sonhador e distraído.",
+      "Também: avoir un trou de mémoire (dar um branco), se creuser la tête (quebrar a cabeça), avoir la langue bien pendue (ser falante)."
+     ],
+     "q": "Quando você costuma ter la tête dans les nuages?",
+     "c": "Escreva um breve diálogo em francês em que um amigo tourne autour du pot e o outro reage."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "tourner autour du pot",
+      "ex": "Ne tourne pas autour du pot, qu'est-ce qui se passe ?"
+     },
+     {
+      "w": "avoir la tête dans les nuages",
+      "ex": "En classe, Léo a souvent la tête dans les nuages."
+     },
+     {
+      "w": "avoir un trou de mémoire",
+      "ex": "J'ai eu un trou de mémoire pendant l'examen oral."
+     },
+     {
+      "w": "se creuser la tête",
+      "ex": "Je me suis creusé la tête pour trouver un cadeau."
+     },
+     {
+      "w": "avoir la langue bien pendue",
+      "ex": "Ma voisine a la langue bien pendue."
+     },
+     {
+      "w": "aller droit au but",
+      "ex": "Elle va toujours droit au but en réunion."
+     }
+    ],
+    "gram": "Impératif négatif avec une expression : Ne tourne pas autour du pot ! Arrête de + infinitif : Arrête de te creuser la tête."
+   }
+  },
+  {
+   "d": 319,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Proverbs",
+     "g": "Understand and use well-known French proverbs at the right moment.",
+     "p": [
+      "Petit à petit, l'oiseau fait son nid = step by step you get there. Perfect for language learning!",
+      "Qui vivra verra = time will tell. Use it when the future is uncertain: On verra bien, qui vivra verra.",
+      "Also: Il ne faut pas vendre la peau de l'ours avant de l'avoir tué = don't count your chickens before they hatch."
+     ],
+     "q": "Is there a proverb from your language that you often use? Can you explain it in French?",
+     "c": "Choose one French proverb and write a short situation in French where you would use it."
+    },
+    "de": {
+     "t": "Sprichwörter",
+     "g": "Du verstehst bekannte französische Sprichwörter und setzt sie im richtigen Moment ein.",
+     "p": [
+      "Petit à petit, l'oiseau fait son nid = Gut Ding will Weile haben. Perfekt fürs Sprachenlernen!",
+      "Qui vivra verra = Die Zeit wird es zeigen. Wenn die Zukunft offen ist: On verra bien, qui vivra verra.",
+      "Außerdem: Il ne faut pas vendre la peau de l'ours avant de l'avoir tué = Man soll den Tag nicht vor dem Abend loben."
+     ],
+     "q": "Gibt es ein Sprichwort aus deiner Sprache, das du oft benutzt? Kannst du es auf Französisch erklären?",
+     "c": "Wähle ein französisches Sprichwort und schreib eine kurze Situation auf Französisch, in der du es benutzt."
+    },
+    "es": {
+     "t": "Refranes",
+     "g": "Entiende y usa refranes franceses conocidos en el momento adecuado.",
+     "p": [
+      "Petit à petit, l'oiseau fait son nid = poco a poco se llega lejos. ¡Perfecto para aprender idiomas!",
+      "Qui vivra verra = el tiempo lo dirá. Úsalo cuando el futuro es incierto: On verra bien, qui vivra verra.",
+      "Además: Il ne faut pas vendre la peau de l'ours avant de l'avoir tué = no vendas la piel del oso antes de cazarlo."
+     ],
+     "q": "¿Hay algún refrán de tu idioma que uses a menudo? ¿Puedes explicarlo en francés?",
+     "c": "Elige un refrán francés y escribe en francés una situación breve en la que lo usarías."
+    },
+    "fr": {
+     "t": "Les proverbes",
+     "g": "Comprendre et employer des proverbes français connus au bon moment.",
+     "p": [
+      "Petit à petit, l'oiseau fait son nid : avec de la patience, on arrive au but. Parfait pour apprendre une langue !",
+      "Qui vivra verra : l'avenir nous le dira. On l'emploie quand le futur est incertain.",
+      "Aussi : Il ne faut pas vendre la peau de l'ours avant de l'avoir tué : ne pas se réjouir trop tôt."
+     ],
+     "q": "Y a-t-il un proverbe de ta langue que tu utilises souvent ? Peux-tu l'expliquer ?",
+     "c": "Choisis un proverbe et écris une courte situation où tu l'emploierais."
+    },
+    "it": {
+     "t": "Proverbi",
+     "g": "Capisci e usa proverbi francesi famosi nel momento giusto.",
+     "p": [
+      "Petit à petit, l'oiseau fait son nid = piano piano si va lontano. Perfetto per imparare le lingue!",
+      "Qui vivra verra = chi vivrà vedrà. Si usa quando il futuro è incerto: On verra bien, qui vivra verra.",
+      "Inoltre: Il ne faut pas vendre la peau de l'ours avant de l'avoir tué = non dire gatto se non ce l'hai nel sacco."
+     ],
+     "q": "C'è un proverbio della tua lingua che usi spesso? Sai spiegarlo in francese?",
+     "c": "Scegli un proverbio francese e scrivi in francese una breve situazione in cui lo useresti."
+    },
+    "pt": {
+     "t": "Provérbios",
+     "g": "Percebe e usa provérbios franceses conhecidos no momento certo.",
+     "p": [
+      "Petit à petit, l'oiseau fait son nid = devagar se vai ao longe. Perfeito para aprender línguas!",
+      "Qui vivra verra = o tempo o dirá. Usa-se quando o futuro é incerto: On verra bien, qui vivra verra.",
+      "Também: Il ne faut pas vendre la peau de l'ours avant de l'avoir tué = não deites foguetes antes da festa."
+     ],
+     "q": "Há algum provérbio da tua língua que uses muito? Consegues explicá-lo em francês?",
+     "c": "Escolhe um provérbio francês e escreve em francês uma situação curta em que o usarias."
+    },
+    "pt_BR": {
+     "t": "Provérbios",
+     "g": "Entenda e use provérbios franceses conhecidos no momento certo.",
+     "p": [
+      "Petit à petit, l'oiseau fait son nid = de grão em grão, a galinha enche o papo. Perfeito para aprender idiomas!",
+      "Qui vivra verra = só o tempo dirá. Use quando o futuro é incerto: On verra bien, qui vivra verra.",
+      "Também: Il ne faut pas vendre la peau de l'ours avant de l'avoir tué = não conte com o ovo antes da galinha botar."
+     ],
+     "q": "Existe algum provérbio do seu idioma que você usa muito? Consegue explicá-lo em francês?",
+     "c": "Escolha um provérbio francês e escreva em francês uma situação curta em que você o usaria."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "petit à petit, l'oiseau fait son nid",
+      "ex": "Je progresse lentement, mais petit à petit, l'oiseau fait son nid."
+     },
+     {
+      "w": "qui vivra verra",
+      "ex": "Ce projet va-t-il marcher ? Qui vivra verra."
+     },
+     {
+      "w": "l'habit ne fait pas le moine",
+      "ex": "Il a l'air sévère, mais l'habit ne fait pas le moine."
+     },
+     {
+      "w": "quand on veut, on peut",
+      "ex": "Tu y arriveras : quand on veut, on peut !"
+     },
+     {
+      "w": "mieux vaut tard que jamais",
+      "ex": "Tu as fini ton dossier ? Mieux vaut tard que jamais."
+     },
+     {
+      "w": "après la pluie, le beau temps",
+      "ex": "Courage, après la pluie, le beau temps."
+     }
+    ],
+    "gram": "Les proverbes utilisent le présent de vérité générale et souvent le pronom indéfini on ou qui : Qui vivra verra."
+   }
+  },
+  {
+   "d": 320,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Verlan and youth slang",
+     "g": "Understand how verlan works and recognise common French youth slang.",
+     "p": [
+      "Verlan flips syllables: l'envers gives verlan. Louche becomes chelou (weird), relou comes from lourd (annoying).",
+      "Some words were flipped twice: femme gave meuf, then feumeu. Fête became teuf: une teuf is a party.",
+      "Ouf comes from fou: C'est ouf ! means It's crazy! Use slang with friends, never in formal contexts."
+     ],
+     "q": "Does your language have a slang that young people play with? Give me an example.",
+     "c": "Rewrite three neutral French sentences using chelou, relou and ouf."
+    },
+    "de": {
+     "t": "Verlan und Jugendsprache",
+     "g": "Du verstehst, wie Verlan funktioniert, und erkennst gängige französische Jugendsprache.",
+     "p": [
+      "Verlan vertauscht Silben: aus l'envers wird verlan. Louche wird chelou (komisch), relou kommt von lourd (nervig).",
+      "Manche Wörter wurden doppelt gedreht: aus femme wurde meuf, dann feumeu. Aus fête wurde teuf: une teuf ist eine Party.",
+      "Ouf kommt von fou: C'est ouf ! heißt Das ist irre! Slang nur unter Freunden, nie formell."
+     ],
+     "q": "Gibt es in deiner Sprache einen Slang, mit dem junge Leute spielen? Nenn ein Beispiel.",
+     "c": "Schreib drei neutrale französische Sätze um, mit chelou, relou und ouf."
+    },
+    "es": {
+     "t": "Verlan y jerga juvenil",
+     "g": "Entiende cómo funciona el verlan y reconoce la jerga juvenil francesa más común.",
+     "p": [
+      "El verlan invierte sílabas: l'envers da verlan. Louche pasa a chelou (raro) y relou viene de lourd (pesado).",
+      "Algunas palabras se invirtieron dos veces: femme dio meuf y luego feumeu. Fête dio teuf: une teuf es una fiesta.",
+      "Ouf viene de fou: C'est ouf ! significa ¡Es una locura! Usa la jerga con amigos, nunca en contextos formales."
+     ],
+     "q": "¿Tu idioma tiene una jerga con la que juegan los jóvenes? Dame un ejemplo.",
+     "c": "Reescribe tres frases neutras en francés usando chelou, relou y ouf."
+    },
+    "fr": {
+     "t": "Le verlan et l'argot des jeunes",
+     "g": "Comprendre comment fonctionne le verlan et reconnaître l'argot courant des jeunes.",
+     "p": [
+      "Le verlan inverse les syllabes : l'envers donne verlan. Louche devient chelou, lourd donne relou (pénible).",
+      "Certains mots ont été inversés deux fois : femme a donné meuf, puis feumeu. Fête a donné teuf : une teuf, c'est une fête.",
+      "Ouf vient de fou : C'est ouf ! Le verlan s'utilise entre amis, jamais dans un contexte formel."
+     ],
+     "q": "Ta langue a-t-elle un argot avec lequel les jeunes jouent ? Donne un exemple.",
+     "c": "Réécris trois phrases neutres avec chelou, relou et ouf."
+    },
+    "it": {
+     "t": "Verlan e gergo giovanile",
+     "g": "Capisci come funziona il verlan e riconosci il gergo giovanile francese più comune.",
+     "p": [
+      "Il verlan inverte le sillabe: l'envers diventa verlan. Louche diventa chelou (strano), relou viene da lourd (pesante).",
+      "Alcune parole sono state invertite due volte: femme ha dato meuf, poi feumeu. Fête ha dato teuf: une teuf è una festa.",
+      "Ouf viene da fou: C'est ouf ! vuol dire È pazzesco! Usa il gergo tra amici, mai in contesti formali."
+     ],
+     "q": "La tua lingua ha un gergo con cui giocano i giovani? Fammi un esempio.",
+     "c": "Riscrivi tre frasi neutre in francese usando chelou, relou e ouf."
+    },
+    "pt": {
+     "t": "Verlan e calão jovem",
+     "g": "Percebe como funciona o verlan e reconhece o calão jovem francês mais comum.",
+     "p": [
+      "O verlan inverte sílabas: l'envers dá verlan. Louche passa a chelou (esquisito), relou vem de lourd (chato).",
+      "Algumas palavras foram invertidas duas vezes: femme deu meuf e depois feumeu. Fête deu teuf: une teuf é uma festa.",
+      "Ouf vem de fou: C'est ouf ! quer dizer É uma loucura! Usa calão com amigos, nunca em contextos formais."
+     ],
+     "q": "A tua língua tem um calão com que os jovens brincam? Dá-me um exemplo.",
+     "c": "Reescreve três frases neutras em francês usando chelou, relou e ouf."
+    },
+    "pt_BR": {
+     "t": "Verlan e gíria jovem",
+     "g": "Entenda como funciona o verlan e reconheça a gíria jovem francesa mais comum.",
+     "p": [
+      "O verlan inverte sílabas: l'envers vira verlan. Louche vira chelou (esquisito), relou vem de lourd (chato).",
+      "Algumas palavras foram invertidas duas vezes: femme deu meuf e depois feumeu. Fête deu teuf: une teuf é uma festa.",
+      "Ouf vem de fou: C'est ouf ! quer dizer Que loucura! Use gíria com amigos, nunca em contextos formais."
+     ],
+     "q": "Seu idioma tem uma gíria com que os jovens brincam? Me dê um exemplo.",
+     "c": "Reescreva três frases neutras em francês usando chelou, relou e ouf."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "chelou",
+      "ex": "Ce bruit dans le grenier est un peu chelou."
+     },
+     {
+      "w": "relou",
+      "ex": "Il est relou avec ses blagues répétées."
+     },
+     {
+      "w": "ouf",
+      "ex": "Le concert d'hier soir était ouf !"
+     },
+     {
+      "w": "une meuf",
+      "ex": "Sa meuf est venue à la soirée."
+     },
+     {
+      "w": "laisse béton",
+      "ex": "Laisse béton, ce n'est pas grave."
+     },
+     {
+      "w": "vénère",
+      "ex": "Il était vénère parce que son train était en retard."
+     }
+    ],
+    "gram": "Le verlan inverse les syllabes d'un mot (fou devient ouf, énervé devient vénère) ; registre familier, à l'oral et entre amis."
+   }
+  }
+ ]
+}

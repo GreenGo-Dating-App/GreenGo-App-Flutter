@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 121,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Describing your personality",
+     "g": "Describe your own personality and the people you know.",
+     "p": [
+      "Positive words: friendly, outgoing, patient, creative, hard-working, easy-going.",
+      "Opposites help: outgoing vs shy, patient vs impatient, tidy vs messy.",
+      "Add a reason or example: I'm quite shy, so I don't talk much at parties."
+     ],
+     "q": "How would your best friend describe your personality?",
+     "c": "Describe yourself and two people you know with three personality words each."
+    },
+    "de": {
+     "t": "Deine Persönlichkeit beschreiben",
+     "g": "Du beschreibst deinen Charakter und Menschen, die du kennst.",
+     "p": [
+      "Positive Wörter: friendly, outgoing, patient, creative, hard-working, easy-going.",
+      "Gegensätze helfen: outgoing vs shy, patient vs impatient, tidy vs messy.",
+      "Gib einen Grund oder ein Beispiel: I'm quite shy, so I don't talk much at parties."
+     ],
+     "q": "Wie würde dein bester Freund oder deine beste Freundin deinen Charakter beschreiben?",
+     "c": "Beschreib dich und zwei bekannte Menschen mit je drei Charakterwörtern."
+    },
+    "es": {
+     "t": "Describir tu personalidad",
+     "g": "Describe tu forma de ser y la de las personas que conoces.",
+     "p": [
+      "Palabras positivas: friendly, outgoing, patient, creative, hard-working, easy-going.",
+      "Los opuestos ayudan: outgoing vs shy, patient vs impatient, tidy vs messy.",
+      "Añade un motivo o ejemplo: I'm quite shy, so I don't talk much at parties."
+     ],
+     "q": "¿Cómo describiría tu personalidad tu mejor amigo o amiga?",
+     "c": "Descríbete a ti y a dos personas que conoces con tres adjetivos de carácter cada una."
+    },
+    "fr": {
+     "t": "Décrire sa personnalité",
+     "g": "Décrire ton caractère et celui des personnes que tu connais.",
+     "p": [
+      "Mots positifs : friendly, outgoing, patient, creative, hard-working, easy-going.",
+      "Les contraires aident : outgoing vs shy, patient vs impatient, tidy vs messy.",
+      "Ajoute une raison ou un exemple : I'm quite shy, so I don't talk much at parties."
+     ],
+     "q": "Comment ton meilleur ami ou ta meilleure amie décrirait-il ta personnalité ?",
+     "c": "Décris-toi et deux personnes que tu connais avec trois mots de caractère chacun."
+    },
+    "it": {
+     "t": "Descrivere la tua personalità",
+     "g": "Descrivi il tuo carattere e quello delle persone che conosci.",
+     "p": [
+      "Parole positive: friendly, outgoing, patient, creative, hard-working, easy-going.",
+      "Gli opposti aiutano: outgoing vs shy, patient vs impatient, tidy vs messy.",
+      "Aggiungi un motivo o un esempio: I'm quite shy, so I don't talk much at parties."
+     ],
+     "q": "Come descriverebbe il tuo carattere il tuo migliore amico o la tua migliore amica?",
+     "c": "Descrivi te stesso e due persone che conosci con tre aggettivi di carattere ciascuno."
+    },
+    "pt": {
+     "t": "Descrever a tua personalidade",
+     "g": "Descreve a tua maneira de ser e a das pessoas que conheces.",
+     "p": [
+      "Palavras positivas: friendly, outgoing, patient, creative, hard-working, easy-going.",
+      "Os opostos ajudam: outgoing vs shy, patient vs impatient, tidy vs messy.",
+      "Junta uma razão ou exemplo: I'm quite shy, so I don't talk much at parties."
+     ],
+     "q": "Como é que o teu melhor amigo ou a tua melhor amiga descreveria a tua personalidade?",
+     "c": "Descreve-te a ti e a duas pessoas que conheces com três palavras de carácter cada."
+    },
+    "pt_BR": {
+     "t": "Descrevendo sua personalidade",
+     "g": "Descreva seu jeito de ser e o das pessoas que você conhece.",
+     "p": [
+      "Palavras positivas: friendly, outgoing, patient, creative, hard-working, easy-going.",
+      "Opostos ajudam: outgoing vs shy, patient vs impatient, tidy vs messy.",
+      "Dê um motivo ou exemplo: I'm quite shy, so I don't talk much at parties."
+     ],
+     "q": "Como seu melhor amigo ou sua melhor amiga descreveria sua personalidade?",
+     "c": "Descreva você e duas pessoas que conhece com três palavras de personalidade cada."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "friendly",
+      "ex": "My new neighbour is really friendly."
+     },
+     {
+      "w": "outgoing",
+      "ex": "Tom is outgoing and loves meeting new people."
+     },
+     {
+      "w": "shy",
+      "ex": "I was shy as a child, but now I'm more confident."
+     },
+     {
+      "w": "patient",
+      "ex": "A good teacher is patient with students."
+     },
+     {
+      "w": "creative",
+      "ex": "My sister is very creative. She paints and writes songs."
+     },
+     {
+      "w": "easy-going",
+      "ex": "He's easy-going, so nothing really stresses him."
+     }
+    ],
+    "gram": "Use be + (quite/really/very) + adjective for personality: She's really patient. Add so or because to give examples."
+   }
+  },
+  {
+   "d": 122,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Describing appearance in detail",
+     "g": "Describe what people look like clearly and precisely.",
+     "p": [
+      "Hair: She has long, curly, dark hair. Order: length, then style, then colour.",
+      "Height, build and age: medium height, slim, in his thirties, in her early twenties.",
+      "Extras: He wears glasses. He has a beard and freckles. Use has here, not is."
+     ],
+     "q": "Can you describe someone in your family so I could recognise them in a crowd?",
+     "c": "Describe three people you saw today: hair, height, age and one detail like glasses."
+    },
+    "de": {
+     "t": "Aussehen genau beschreiben",
+     "g": "Du beschreibst klar und genau, wie Menschen aussehen.",
+     "p": [
+      "Haare: She has long, curly, dark hair. Reihenfolge: Länge, Form, dann Farbe.",
+      "Größe, Statur, Alter: medium height, slim, in his thirties, in her early twenties.",
+      "Details: He wears glasses. He has a beard and freckles. Hier immer has, nicht is."
+     ],
+     "q": "Kannst du jemanden aus deiner Familie so beschreiben, dass ich ihn in der Menge erkenne?",
+     "c": "Beschreib drei Menschen, die du heute gesehen hast: Haare, Größe, Alter und ein Detail."
+    },
+    "es": {
+     "t": "Describir el aspecto con detalle",
+     "g": "Describe con claridad y precisión cómo son las personas.",
+     "p": [
+      "Pelo: She has long, curly, dark hair. Orden: largo, forma y después color.",
+      "Altura, complexión y edad: medium height, slim, in his thirties, in her early twenties.",
+      "Detalles: He wears glasses. He has a beard and freckles. Aquí se usa has, no is."
+     ],
+     "q": "¿Puedes describir a alguien de tu familia para que yo lo reconozca entre la gente?",
+     "c": "Describe a tres personas que viste hoy: pelo, altura, edad y un detalle como gafas."
+    },
+    "fr": {
+     "t": "Décrire l'apparence en détail",
+     "g": "Décrire clairement et précisément l'apparence des gens.",
+     "p": [
+      "Cheveux : She has long, curly, dark hair. Ordre : longueur, forme, puis couleur.",
+      "Taille, silhouette, âge : medium height, slim, in his thirties, in her early twenties.",
+      "Détails : He wears glasses. He has a beard and freckles. On dit has, pas is."
+     ],
+     "q": "Peux-tu décrire quelqu'un de ta famille pour que je le reconnaisse dans une foule ?",
+     "c": "Décris trois personnes vues aujourd'hui : cheveux, taille, âge et un détail comme des lunettes."
+    },
+    "it": {
+     "t": "Descrivere l'aspetto nei dettagli",
+     "g": "Descrivi in modo chiaro e preciso l'aspetto delle persone.",
+     "p": [
+      "Capelli: She has long, curly, dark hair. Ordine: lunghezza, forma, poi colore.",
+      "Altezza, corporatura, età: medium height, slim, in his thirties, in her early twenties.",
+      "Dettagli: He wears glasses. He has a beard and freckles. Si usa has, non is."
+     ],
+     "q": "Puoi descrivere qualcuno della tua famiglia in modo che io lo riconosca tra la folla?",
+     "c": "Descrivi tre persone viste oggi: capelli, altezza, età e un dettaglio come gli occhiali."
+    },
+    "pt": {
+     "t": "Descrever a aparência em pormenor",
+     "g": "Descreve com clareza e precisão o aspeto das pessoas.",
+     "p": [
+      "Cabelo: She has long, curly, dark hair. Ordem: comprimento, forma e depois cor.",
+      "Altura, corpo e idade: medium height, slim, in his thirties, in her early twenties.",
+      "Pormenores: He wears glasses. He has a beard and freckles. Usa-se has, não is."
+     ],
+     "q": "Consegues descrever alguém da tua família para eu o reconhecer no meio de muita gente?",
+     "c": "Descreve três pessoas que viste hoje: cabelo, altura, idade e um pormenor como óculos."
+    },
+    "pt_BR": {
+     "t": "Descrevendo a aparência em detalhes",
+     "g": "Descreva com clareza e precisão como as pessoas são.",
+     "p": [
+      "Cabelo: She has long, curly, dark hair. Ordem: comprimento, forma e depois cor.",
+      "Altura, corpo e idade: medium height, slim, in his thirties, in her early twenties.",
+      "Detalhes: He wears glasses. He has a beard and freckles. Use has, não is."
+     ],
+     "q": "Você consegue descrever alguém da sua família para eu reconhecer no meio da multidão?",
+     "c": "Descreva três pessoas que você viu hoje: cabelo, altura, idade e um detalhe como óculos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "curly hair",
+      "ex": "My cousin has short, curly, brown hair."
+     },
+     {
+      "w": "medium height",
+      "ex": "He's medium height and quite slim."
+     },
+     {
+      "w": "in her thirties",
+      "ex": "Our new manager is in her thirties."
+     },
+     {
+      "w": "wear glasses",
+      "ex": "My dad wears glasses for reading."
+     },
+     {
+      "w": "a beard",
+      "ex": "The man with the grey beard is my uncle."
+     },
+     {
+      "w": "freckles",
+      "ex": "She has red hair and lots of freckles."
+     }
+    ],
+    "gram": "Use have got/has for features (She has blue eyes), be for height, build and age (He's tall, in his twenties), wear for glasses."
+   }
+  },
+  {
+   "d": 123,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Clothes and fashion",
+     "g": "Talk about clothes, styles and what looks good on people.",
+     "p": [
+      "Styles: casual (jeans, T-shirt), smart (suit, shirt), sporty, comfortable.",
+      "Patterns and fabrics: striped, checked, plain, spotted, cotton, wool, leather.",
+      "Compliments: That jacket suits you. Those colours go well together."
+     ],
+     "q": "What do you usually wear at the weekend, and what do you wear for special days?",
+     "c": "Describe your favourite outfit with a style word, a pattern and a fabric."
+    },
+    "de": {
+     "t": "Kleidung und Mode",
+     "g": "Du sprichst über Kleidung, Stil und darüber, was gut aussieht.",
+     "p": [
+      "Stile: casual (Jeans, T-Shirt), smart (Anzug, Hemd), sporty, comfortable.",
+      "Muster und Stoffe: striped, checked, plain, spotted, cotton, wool, leather.",
+      "Komplimente: That jacket suits you. Those colours go well together."
+     ],
+     "q": "Was trägst du normalerweise am Wochenende, und was zu besonderen Anlässen?",
+     "c": "Beschreib dein Lieblingsoutfit mit einem Stilwort, einem Muster und einem Stoff."
+    },
+    "es": {
+     "t": "Ropa y moda",
+     "g": "Habla de ropa, estilos y de lo que le queda bien a la gente.",
+     "p": [
+      "Estilos: casual (vaqueros, camiseta), smart (traje, camisa), sporty, comfortable.",
+      "Estampados y tejidos: striped, checked, plain, spotted, cotton, wool, leather.",
+      "Cumplidos: That jacket suits you. Those colours go well together."
+     ],
+     "q": "¿Qué sueles ponerte el fin de semana y qué te pones para días especiales?",
+     "c": "Describe tu conjunto favorito con una palabra de estilo, un estampado y un tejido."
+    },
+    "fr": {
+     "t": "Vêtements et mode",
+     "g": "Parler de vêtements, de styles et de ce qui va bien aux gens.",
+     "p": [
+      "Styles : casual (jean, t-shirt), smart (costume, chemise), sporty, comfortable.",
+      "Motifs et tissus : striped, checked, plain, spotted, cotton, wool, leather.",
+      "Compliments : That jacket suits you. Those colours go well together."
+     ],
+     "q": "Que portes-tu d'habitude le week-end, et que mets-tu pour les grandes occasions ?",
+     "c": "Décris ta tenue préférée avec un mot de style, un motif et un tissu."
+    },
+    "it": {
+     "t": "Vestiti e moda",
+     "g": "Parla di vestiti, stili e di cosa sta bene alle persone.",
+     "p": [
+      "Stili: casual (jeans, maglietta), smart (abito, camicia), sporty, comfortable.",
+      "Fantasie e tessuti: striped, checked, plain, spotted, cotton, wool, leather.",
+      "Complimenti: That jacket suits you. Those colours go well together."
+     ],
+     "q": "Cosa indossi di solito nel fine settimana e cosa metti nelle occasioni speciali?",
+     "c": "Descrivi il tuo outfit preferito con una parola di stile, una fantasia e un tessuto."
+    },
+    "pt": {
+     "t": "Roupa e moda",
+     "g": "Fala de roupa, estilos e do que fica bem às pessoas.",
+     "p": [
+      "Estilos: casual (calças de ganga, t-shirt), smart (fato, camisa), sporty, comfortable.",
+      "Padrões e tecidos: striped, checked, plain, spotted, cotton, wool, leather.",
+      "Elogios: That jacket suits you. Those colours go well together."
+     ],
+     "q": "O que costumas vestir ao fim de semana e o que vestes em dias especiais?",
+     "c": "Descreve a tua roupa preferida com uma palavra de estilo, um padrão e um tecido."
+    },
+    "pt_BR": {
+     "t": "Roupas e moda",
+     "g": "Fale de roupas, estilos e do que fica bem nas pessoas.",
+     "p": [
+      "Estilos: casual (jeans, camiseta), smart (terno, camisa social), sporty, comfortable.",
+      "Estampas e tecidos: striped, checked, plain, spotted, cotton, wool, leather.",
+      "Elogios: That jacket suits you. Those colours go well together."
+     ],
+     "q": "O que você costuma usar no fim de semana e o que usa em dias especiais?",
+     "c": "Descreva seu look favorito com uma palavra de estilo, uma estampa e um tecido."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "casual",
+      "ex": "I prefer casual clothes, like jeans and trainers."
+     },
+     {
+      "w": "smart",
+      "ex": "You need smart clothes for the interview."
+     },
+     {
+      "w": "striped",
+      "ex": "He's wearing a blue and white striped shirt."
+     },
+     {
+      "w": "comfortable",
+      "ex": "These shoes are really comfortable for walking."
+     },
+     {
+      "w": "it suits you",
+      "ex": "I love that colour on you. It really suits you!"
+     },
+     {
+      "w": "go with",
+      "ex": "Do these trousers go with this jacket?"
+     }
+    ],
+    "gram": "Suit means it looks good on a person (It suits you). Go with means two items match (The bag goes with the shoes)."
+   }
+  },
+  {
+   "d": 124,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Shopping: returns and sizes",
+     "g": "Ask for sizes, try things on and return items politely.",
+     "p": [
+      "Sizes: Do you have this in a medium? Have you got a bigger size?",
+      "Fitting: Can I try it on? It's too small. It fits perfectly. Where are the changing rooms?",
+      "Returns: I'd like to return this. Can I get a refund or exchange it? Here's my receipt."
+     ],
+     "q": "Have you ever returned something you bought? What was the problem?",
+     "c": "Role-play with me: ask for another size, try it on, then politely ask to exchange it."
+    },
+    "de": {
+     "t": "Einkaufen: Umtausch und Größen",
+     "g": "Du fragst nach Größen, probierst an und tauschst höflich um.",
+     "p": [
+      "Größen: Do you have this in a medium? Have you got a bigger size?",
+      "Anprobe: Can I try it on? It's too small. It fits perfectly. Where are the changing rooms?",
+      "Umtausch: I'd like to return this. Can I get a refund or exchange it? Here's my receipt."
+     ],
+     "q": "Hast du schon einmal etwas zurückgebracht? Was war das Problem?",
+     "c": "Rollenspiel mit mir: Frag nach einer anderen Größe, probier an und tausch höflich um."
+    },
+    "es": {
+     "t": "De compras: devoluciones y tallas",
+     "g": "Pide tallas, pruébate ropa y devuelve cosas con educación.",
+     "p": [
+      "Tallas: Do you have this in a medium? Have you got a bigger size?",
+      "Probador: Can I try it on? It's too small. It fits perfectly. Where are the changing rooms?",
+      "Devoluciones: I'd like to return this. Can I get a refund or exchange it? Here's my receipt."
+     ],
+     "q": "¿Alguna vez has devuelto algo que compraste? ¿Cuál era el problema?",
+     "c": "Haz un role-play conmigo: pide otra talla, pruébatela y pide un cambio con educación."
+    },
+    "fr": {
+     "t": "Shopping : retours et tailles",
+     "g": "Demander une taille, essayer et rapporter un article poliment.",
+     "p": [
+      "Tailles : Do you have this in a medium? Have you got a bigger size?",
+      "Essayage : Can I try it on? It's too small. It fits perfectly. Where are the changing rooms?",
+      "Retours : I'd like to return this. Can I get a refund or exchange it? Here's my receipt."
+     ],
+     "q": "As-tu déjà rapporté un achat au magasin ? Quel était le problème ?",
+     "c": "Jeu de rôle avec moi : demande une autre taille, essaie-la, puis demande un échange poliment."
+    },
+    "it": {
+     "t": "Shopping: resi e taglie",
+     "g": "Chiedi le taglie, prova i capi e fai un reso con gentilezza.",
+     "p": [
+      "Taglie: Do you have this in a medium? Have you got a bigger size?",
+      "Camerino: Can I try it on? It's too small. It fits perfectly. Where are the changing rooms?",
+      "Resi: I'd like to return this. Can I get a refund or exchange it? Here's my receipt."
+     ],
+     "q": "Ti è mai capitato di restituire qualcosa che avevi comprato? Qual era il problema?",
+     "c": "Gioco di ruolo con me: chiedi un'altra taglia, provala e chiedi gentilmente un cambio."
+    },
+    "pt": {
+     "t": "Compras: devoluções e tamanhos",
+     "g": "Pede tamanhos, experimenta roupa e devolve artigos com educação.",
+     "p": [
+      "Tamanhos: Do you have this in a medium? Have you got a bigger size?",
+      "Provador: Can I try it on? It's too small. It fits perfectly. Where are the changing rooms?",
+      "Devoluções: I'd like to return this. Can I get a refund or exchange it? Here's my receipt."
+     ],
+     "q": "Já devolveste alguma coisa que compraste? Qual era o problema?",
+     "c": "Faz um role-play comigo: pede outro tamanho, experimenta e pede uma troca com educação."
+    },
+    "pt_BR": {
+     "t": "Compras: trocas e tamanhos",
+     "g": "Peça tamanhos, experimente roupas e devolva produtos com educação.",
+     "p": [
+      "Tamanhos: Do you have this in a medium? Have you got a bigger size?",
+      "Provador: Can I try it on? It's too small. It fits perfectly. Where are the changing rooms?",
+      "Trocas: I'd like to return this. Can I get a refund or exchange it? Here's my receipt."
+     ],
+     "q": "Você já devolveu algo que comprou? Qual era o problema?",
+     "c": "Faça um role-play comigo: peça outro tamanho, experimente e peça uma troca com educação."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "in a medium",
+      "ex": "Do you have this jumper in a medium?"
+     },
+     {
+      "w": "try on",
+      "ex": "Can I try on these jeans, please?"
+     },
+     {
+      "w": "fit",
+      "ex": "The shoes don't fit. They're too tight."
+     },
+     {
+      "w": "changing room",
+      "ex": "The changing rooms are next to the stairs."
+     },
+     {
+      "w": "refund",
+      "ex": "I'd like a refund, please. Here's my receipt."
+     },
+     {
+      "w": "exchange",
+      "ex": "Can I exchange this shirt for a larger size?"
+     }
+    ],
+    "gram": "Fit is about size (It fits me), suit is about style. Try on is separable: try it on, not try on it."
+   }
+  },
+  {
+   "d": 125,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Comparing products: as... as",
+     "g": "Compare things fairly with as... as and not as... as.",
+     "p": [
+      "Same level: This phone is as fast as that one. Use the basic adjective, not -er.",
+      "Less: The red bag isn't as expensive as the black one. It means the red one is cheaper.",
+      "Make it softer or stronger: almost as good as, just as cheap as, not nearly as big as."
+     ],
+     "q": "Think of two things you own. Which is better, or are they just as good as each other?",
+     "c": "Compare two products you'd like to buy in three sentences using as... as and not as... as."
+    },
+    "de": {
+     "t": "Produkte vergleichen: as... as",
+     "g": "Du vergleichst Dinge fair mit as... as und not as... as.",
+     "p": [
+      "Gleich: This phone is as fast as that one. Mit Grundform des Adjektivs, nicht -er.",
+      "Weniger: The red bag isn't as expensive as the black one. Also ist die rote billiger.",
+      "Abstufen: almost as good as, just as cheap as, not nearly as big as."
+     ],
+     "q": "Denk an zwei Dinge, die du besitzt. Welches ist besser, oder sind beide gleich gut?",
+     "c": "Vergleich zwei Produkte, die du kaufen möchtest, in drei Sätzen mit as... as und not as... as."
+    },
+    "es": {
+     "t": "Comparar productos: as... as",
+     "g": "Compara cosas de forma justa con as... as y not as... as.",
+     "p": [
+      "Igualdad: This phone is as fast as that one. Con el adjetivo básico, sin -er.",
+      "Menos: The red bag isn't as expensive as the black one. O sea, el rojo es más barato.",
+      "Matices: almost as good as, just as cheap as, not nearly as big as."
+     ],
+     "q": "Piensa en dos cosas que tienes. ¿Cuál es mejor, o son igual de buenas?",
+     "c": "Compara dos productos que quieres comprar en tres frases con as... as y not as... as."
+    },
+    "fr": {
+     "t": "Comparer des produits : as... as",
+     "g": "Comparer des choses de façon juste avec as... as et not as... as.",
+     "p": [
+      "Égalité : This phone is as fast as that one. Adjectif de base, sans -er.",
+      "Moins : The red bag isn't as expensive as the black one. Donc le rouge coûte moins cher.",
+      "Nuancer : almost as good as, just as cheap as, not nearly as big as."
+     ],
+     "q": "Pense à deux objets que tu possèdes. Lequel est le meilleur, ou sont-ils aussi bien l'un que l'autre ?",
+     "c": "Compare deux produits que tu aimerais acheter en trois phrases avec as... as et not as... as."
+    },
+    "it": {
+     "t": "Confrontare prodotti: as... as",
+     "g": "Confronta le cose in modo equo con as... as e not as... as.",
+     "p": [
+      "Uguaglianza: This phone is as fast as that one. Aggettivo base, senza -er.",
+      "Meno: The red bag isn't as expensive as the black one. Cioè la rossa costa meno.",
+      "Sfumature: almost as good as, just as cheap as, not nearly as big as."
+     ],
+     "q": "Pensa a due cose che possiedi. Quale è migliore, o sono buone allo stesso modo?",
+     "c": "Confronta due prodotti che vorresti comprare in tre frasi con as... as e not as... as."
+    },
+    "pt": {
+     "t": "Comparar produtos: as... as",
+     "g": "Compara coisas de forma justa com as... as e not as... as.",
+     "p": [
+      "Igualdade: This phone is as fast as that one. Com o adjetivo base, sem -er.",
+      "Menos: The red bag isn't as expensive as the black one. Ou seja, a vermelha é mais barata.",
+      "Matizes: almost as good as, just as cheap as, not nearly as big as."
+     ],
+     "q": "Pensa em duas coisas que tens. Qual é melhor, ou são igualmente boas?",
+     "c": "Compara dois produtos que gostavas de comprar em três frases com as... as e not as... as."
+    },
+    "pt_BR": {
+     "t": "Comparando produtos: as... as",
+     "g": "Compare coisas de forma justa com as... as e not as... as.",
+     "p": [
+      "Igualdade: This phone is as fast as that one. Com o adjetivo base, sem -er.",
+      "Menos: The red bag isn't as expensive as the black one. Ou seja, a vermelha é mais barata.",
+      "Nuances: almost as good as, just as cheap as, not nearly as big as."
+     ],
+     "q": "Pense em duas coisas que você tem. Qual é melhor, ou são igualmente boas?",
+     "c": "Compare dois produtos que você quer comprar em três frases com as... as e not as... as."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "as fast as",
+      "ex": "My new laptop is as fast as my brother's."
+     },
+     {
+      "w": "not as expensive as",
+      "ex": "This brand isn't as expensive as the famous one."
+     },
+     {
+      "w": "just as good as",
+      "ex": "The cheaper headphones are just as good as these."
+     },
+     {
+      "w": "almost as big as",
+      "ex": "Their flat is almost as big as a house."
+     },
+     {
+      "w": "not nearly as",
+      "ex": "The old model is not nearly as light as the new one."
+     },
+     {
+      "w": "the same as",
+      "ex": "My phone is the same as yours, but in blue."
+     }
+    ],
+    "gram": "as + adjective + as = equal (as cheap as). not as + adjective + as = less (not as heavy as). Never as cheaper as."
+   }
+  },
+  {
+   "d": 126,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Kitchen and cooking verbs",
+     "g": "Learn the verbs you need to talk about cooking.",
+     "p": [
+      "Cutting: chop onions, slice bread, peel potatoes, grate cheese.",
+      "Heat: boil water, fry an egg, bake a cake, roast vegetables, grill fish.",
+      "Mixing and adding: mix, stir, add salt, pour milk, heat the oil."
+     ],
+     "q": "What do you usually cook, and which cooking verbs do you use most?",
+     "c": "Describe how you make your breakfast using at least four cooking verbs."
+    },
+    "de": {
+     "t": "Küchen- und Kochverben",
+     "g": "Du lernst die Verben, um übers Kochen zu sprechen.",
+     "p": [
+      "Schneiden: chop onions, slice bread, peel potatoes, grate cheese.",
+      "Hitze: boil water, fry an egg, bake a cake, roast vegetables, grill fish.",
+      "Mischen und hinzufügen: mix, stir, add salt, pour milk, heat the oil."
+     ],
+     "q": "Was kochst du normalerweise, und welche Kochverben brauchst du am meisten?",
+     "c": "Beschreib, wie du dein Frühstück machst, mit mindestens vier Kochverben."
+    },
+    "es": {
+     "t": "Verbos de cocina",
+     "g": "Aprende los verbos que necesitas para hablar de cocinar.",
+     "p": [
+      "Cortar: chop onions, slice bread, peel potatoes, grate cheese.",
+      "Calor: boil water, fry an egg, bake a cake, roast vegetables, grill fish.",
+      "Mezclar y añadir: mix, stir, add salt, pour milk, heat the oil."
+     ],
+     "q": "¿Qué sueles cocinar y qué verbos de cocina usas más?",
+     "c": "Describe cómo preparas tu desayuno usando al menos cuatro verbos de cocina."
+    },
+    "fr": {
+     "t": "Les verbes de la cuisine",
+     "g": "Apprendre les verbes utiles pour parler de cuisine.",
+     "p": [
+      "Couper : chop onions, slice bread, peel potatoes, grate cheese.",
+      "Cuire : boil water, fry an egg, bake a cake, roast vegetables, grill fish.",
+      "Mélanger et ajouter : mix, stir, add salt, pour milk, heat the oil."
+     ],
+     "q": "Que cuisines-tu d'habitude, et quels verbes de cuisine utilises-tu le plus ?",
+     "c": "Décris comment tu prépares ton petit-déjeuner avec au moins quatre verbes de cuisine."
+    },
+    "it": {
+     "t": "I verbi della cucina",
+     "g": "Impara i verbi che servono per parlare di cucina.",
+     "p": [
+      "Tagliare: chop onions, slice bread, peel potatoes, grate cheese.",
+      "Cuocere: boil water, fry an egg, bake a cake, roast vegetables, grill fish.",
+      "Mescolare e aggiungere: mix, stir, add salt, pour milk, heat the oil."
+     ],
+     "q": "Cosa cucini di solito e quali verbi di cucina usi di più?",
+     "c": "Descrivi come prepari la tua colazione usando almeno quattro verbi di cucina."
+    },
+    "pt": {
+     "t": "Verbos de cozinha",
+     "g": "Aprende os verbos de que precisas para falar de cozinhar.",
+     "p": [
+      "Cortar: chop onions, slice bread, peel potatoes, grate cheese.",
+      "Calor: boil water, fry an egg, bake a cake, roast vegetables, grill fish.",
+      "Misturar e juntar: mix, stir, add salt, pour milk, heat the oil."
+     ],
+     "q": "O que costumas cozinhar e que verbos de cozinha usas mais?",
+     "c": "Descreve como preparas o teu pequeno-almoço com pelo menos quatro verbos de cozinha."
+    },
+    "pt_BR": {
+     "t": "Verbos de cozinha",
+     "g": "Aprenda os verbos que você precisa para falar de cozinhar.",
+     "p": [
+      "Cortar: chop onions, slice bread, peel potatoes, grate cheese.",
+      "Calor: boil water, fry an egg, bake a cake, roast vegetables, grill fish.",
+      "Misturar e acrescentar: mix, stir, add salt, pour milk, heat the oil."
+     ],
+     "q": "O que você costuma cozinhar e quais verbos de cozinha usa mais?",
+     "c": "Descreva como você prepara seu café da manhã usando pelo menos quatro verbos de cozinha."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "chop",
+      "ex": "Chop the onions into small pieces."
+     },
+     {
+      "w": "slice",
+      "ex": "Can you slice the bread, please?"
+     },
+     {
+      "w": "boil",
+      "ex": "Boil the pasta for ten minutes."
+     },
+     {
+      "w": "fry",
+      "ex": "I usually fry eggs in a little olive oil."
+     },
+     {
+      "w": "bake",
+      "ex": "My grandma bakes bread every Sunday."
+     },
+     {
+      "w": "stir",
+      "ex": "Stir the soup so it doesn't burn."
+     }
+    ],
+    "gram": "Cooking instructions use the imperative: Chop the onions. Boil the water. Don't add too much salt."
+   }
+  },
+  {
+   "d": 127,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Following a recipe",
+     "g": "Explain the steps of a recipe in a clear order.",
+     "p": [
+      "Sequence words: first, then, next, after that, finally.",
+      "Recipes use short imperatives: First, heat the oil. Then add the garlic.",
+      "Time and quantity: for five minutes, until golden, a pinch of salt, two spoons of sugar."
+     ],
+     "q": "What's a simple dish you could teach me to make, step by step?",
+     "c": "Write a five-step recipe for your favourite snack using first, then, next, after that, finally."
+    },
+    "de": {
+     "t": "Einem Rezept folgen",
+     "g": "Du erklärst die Schritte eines Rezepts in klarer Reihenfolge.",
+     "p": [
+      "Reihenfolge: first, then, next, after that, finally.",
+      "Rezepte nutzen kurze Imperative: First, heat the oil. Then add the garlic.",
+      "Zeit und Menge: for five minutes, until golden, a pinch of salt, two spoons of sugar."
+     ],
+     "q": "Welches einfache Gericht könntest du mir Schritt für Schritt beibringen?",
+     "c": "Schreib ein Rezept in fünf Schritten für deinen Lieblingssnack mit first, then, next, after that, finally."
+    },
+    "es": {
+     "t": "Seguir una receta",
+     "g": "Explica los pasos de una receta en un orden claro.",
+     "p": [
+      "Conectores de orden: first, then, next, after that, finally.",
+      "Las recetas usan imperativos cortos: First, heat the oil. Then add the garlic.",
+      "Tiempo y cantidad: for five minutes, until golden, a pinch of salt, two spoons of sugar."
+     ],
+     "q": "¿Qué plato sencillo podrías enseñarme a preparar paso a paso?",
+     "c": "Escribe una receta de cinco pasos de tu snack favorito con first, then, next, after that, finally."
+    },
+    "fr": {
+     "t": "Suivre une recette",
+     "g": "Expliquer les étapes d'une recette dans un ordre clair.",
+     "p": [
+      "Mots d'ordre : first, then, next, after that, finally.",
+      "Les recettes utilisent des impératifs courts : First, heat the oil. Then add the garlic.",
+      "Temps et quantité : for five minutes, until golden, a pinch of salt, two spoons of sugar."
+     ],
+     "q": "Quel plat simple pourrais-tu m'apprendre à préparer, étape par étape ?",
+     "c": "Écris une recette en cinq étapes de ton en-cas préféré avec first, then, next, after that, finally."
+    },
+    "it": {
+     "t": "Seguire una ricetta",
+     "g": "Spiega i passaggi di una ricetta in un ordine chiaro.",
+     "p": [
+      "Parole di sequenza: first, then, next, after that, finally.",
+      "Le ricette usano imperativi brevi: First, heat the oil. Then add the garlic.",
+      "Tempi e dosi: for five minutes, until golden, a pinch of salt, two spoons of sugar."
+     ],
+     "q": "Quale piatto semplice potresti insegnarmi a preparare, passo dopo passo?",
+     "c": "Scrivi una ricetta in cinque passi del tuo snack preferito con first, then, next, after that, finally."
+    },
+    "pt": {
+     "t": "Seguir uma receita",
+     "g": "Explica os passos de uma receita por uma ordem clara.",
+     "p": [
+      "Palavras de sequência: first, then, next, after that, finally.",
+      "As receitas usam imperativos curtos: First, heat the oil. Then add the garlic.",
+      "Tempo e quantidade: for five minutes, until golden, a pinch of salt, two spoons of sugar."
+     ],
+     "q": "Que prato simples me podias ensinar a fazer, passo a passo?",
+     "c": "Escreve uma receita de cinco passos do teu petisco preferido com first, then, next, after that, finally."
+    },
+    "pt_BR": {
+     "t": "Seguindo uma receita",
+     "g": "Explique os passos de uma receita em uma ordem clara.",
+     "p": [
+      "Palavras de sequência: first, then, next, after that, finally.",
+      "Receitas usam imperativos curtos: First, heat the oil. Then add the garlic.",
+      "Tempo e quantidade: for five minutes, until golden, a pinch of salt, two spoons of sugar."
+     ],
+     "q": "Que prato simples você poderia me ensinar a fazer, passo a passo?",
+     "c": "Escreva uma receita de cinco passos do seu lanche favorito com first, then, next, after that, finally."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "first",
+      "ex": "First, wash the vegetables."
+     },
+     {
+      "w": "then",
+      "ex": "Then cut them into small pieces."
+     },
+     {
+      "w": "next",
+      "ex": "Next, put everything in a big pan."
+     },
+     {
+      "w": "after that",
+      "ex": "After that, cook it for twenty minutes."
+     },
+     {
+      "w": "finally",
+      "ex": "Finally, add some fresh herbs and serve."
+     },
+     {
+      "w": "until golden",
+      "ex": "Fry the onions until golden."
+     }
+    ],
+    "gram": "Order steps with first, then, next, after that, finally + imperative. Use until to say when to stop: cook until soft."
+   }
+  },
+  {
+   "d": 128,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Food from your country",
+     "g": "Describe a typical dish from your country to someone new.",
+     "p": [
+      "Ingredients: It's made with rice, beans and meat. It contains a lot of garlic.",
+      "Taste and texture: It tastes sweet, spicy, salty or sour. It's crispy, soft or creamy.",
+      "When and how: You usually eat it with bread, at lunch, on special occasions."
+     ],
+     "q": "What's one dish from your country that every visitor should try, and why?",
+     "c": "Describe a typical dish in four sentences: ingredients, taste, how you eat it and when."
+    },
+    "de": {
+     "t": "Essen aus deinem Land",
+     "g": "Du beschreibst jemandem ein typisches Gericht aus deinem Land.",
+     "p": [
+      "Zutaten: It's made with rice, beans and meat. It contains a lot of garlic.",
+      "Geschmack und Konsistenz: It tastes sweet, spicy, salty or sour. It's crispy, soft or creamy.",
+      "Wann und wie: You usually eat it with bread, at lunch, on special occasions."
+     ],
+     "q": "Welches Gericht aus deinem Land sollte jeder Besucher probieren, und warum?",
+     "c": "Beschreib ein typisches Gericht in vier Sätzen: Zutaten, Geschmack, wie und wann man es isst."
+    },
+    "es": {
+     "t": "Comida de tu país",
+     "g": "Describe un plato típico de tu país a alguien que no lo conoce.",
+     "p": [
+      "Ingredientes: It's made with rice, beans and meat. It contains a lot of garlic.",
+      "Sabor y textura: It tastes sweet, spicy, salty or sour. It's crispy, soft or creamy.",
+      "Cuándo y cómo: You usually eat it with bread, at lunch, on special occasions."
+     ],
+     "q": "¿Qué plato de tu país debería probar todo visitante, y por qué?",
+     "c": "Describe un plato típico en cuatro frases: ingredientes, sabor, cómo se come y cuándo."
+    },
+    "fr": {
+     "t": "La cuisine de ton pays",
+     "g": "Décrire un plat typique de ton pays à quelqu'un qui ne le connaît pas.",
+     "p": [
+      "Ingrédients : It's made with rice, beans and meat. It contains a lot of garlic.",
+      "Goût et texture : It tastes sweet, spicy, salty or sour. It's crispy, soft or creamy.",
+      "Quand et comment : You usually eat it with bread, at lunch, on special occasions."
+     ],
+     "q": "Quel plat de ton pays chaque visiteur devrait-il goûter, et pourquoi ?",
+     "c": "Décris un plat typique en quatre phrases : ingrédients, goût, comment et quand on le mange."
+    },
+    "it": {
+     "t": "Il cibo del tuo paese",
+     "g": "Descrivi un piatto tipico del tuo paese a chi non lo conosce.",
+     "p": [
+      "Ingredienti: It's made with rice, beans and meat. It contains a lot of garlic.",
+      "Sapore e consistenza: It tastes sweet, spicy, salty or sour. It's crispy, soft or creamy.",
+      "Quando e come: You usually eat it with bread, at lunch, on special occasions."
+     ],
+     "q": "Quale piatto del tuo paese dovrebbe assaggiare ogni visitatore, e perché?",
+     "c": "Descrivi un piatto tipico in quattro frasi: ingredienti, sapore, come e quando si mangia."
+    },
+    "pt": {
+     "t": "Comida do teu país",
+     "g": "Descreve um prato típico do teu país a alguém que não o conhece.",
+     "p": [
+      "Ingredientes: It's made with rice, beans and meat. It contains a lot of garlic.",
+      "Sabor e textura: It tastes sweet, spicy, salty or sour. It's crispy, soft or creamy.",
+      "Quando e como: You usually eat it with bread, at lunch, on special occasions."
+     ],
+     "q": "Que prato do teu país todos os visitantes deviam provar, e porquê?",
+     "c": "Descreve um prato típico em quatro frases: ingredientes, sabor, como e quando se come."
+    },
+    "pt_BR": {
+     "t": "Comida do seu país",
+     "g": "Descreva um prato típico do seu país para alguém que não conhece.",
+     "p": [
+      "Ingredientes: It's made with rice, beans and meat. It contains a lot of garlic.",
+      "Sabor e textura: It tastes sweet, spicy, salty or sour. It's crispy, soft or creamy.",
+      "Quando e como: You usually eat it with bread, at lunch, on special occasions."
+     ],
+     "q": "Que prato do seu país todo visitante deveria provar, e por quê?",
+     "c": "Descreva um prato típico em quatro frases: ingredientes, sabor, como e quando se come."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "it's made with",
+      "ex": "It's made with rice, chicken and vegetables."
+     },
+     {
+      "w": "it tastes",
+      "ex": "It tastes a bit spicy but really good."
+     },
+     {
+      "w": "crispy",
+      "ex": "The outside is crispy and the inside is soft."
+     },
+     {
+      "w": "you eat it with",
+      "ex": "You usually eat it with fresh bread."
+     },
+     {
+      "w": "a typical dish",
+      "ex": "Paella is a typical dish from Valencia."
+     },
+     {
+      "w": "on special occasions",
+      "ex": "We only cook it on special occasions."
+     }
+    ],
+    "gram": "Use it's made with/from for ingredients, it tastes + adjective (not tastes like + adjective), and you for people in general."
+   }
+  },
+  {
+   "d": 129,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "At the supermarket",
+     "g": "Find what you need and name food containers in a supermarket.",
+     "p": [
+      "Places: aisle, shelf, checkout, trolley, basket, the frozen food section.",
+      "Containers: a loaf of bread, a carton of milk, a bag of rice, a tin of tomatoes, a jar of jam.",
+      "Questions: Excuse me, where can I find the rice? Is it in aisle five? Do you need a bag?"
+     ],
+     "q": "What's always on your shopping list, and how do you say each item with its container?",
+     "c": "Write a shopping list of six items, each with a container word like a bottle of or a box of."
+    },
+    "de": {
+     "t": "Im Supermarkt",
+     "g": "Du findest, was du brauchst, und benennst Verpackungen.",
+     "p": [
+      "Orte: aisle, shelf, checkout, trolley, basket, the frozen food section.",
+      "Verpackungen: a loaf of bread, a carton of milk, a bag of rice, a tin of tomatoes, a jar of jam.",
+      "Fragen: Excuse me, where can I find the rice? Is it in aisle five? Do you need a bag?"
+     ],
+     "q": "Was steht immer auf deiner Einkaufsliste, und wie sagst du es mit Verpackungswort?",
+     "c": "Schreib eine Einkaufsliste mit sechs Dingen, jeweils mit Wort wie a bottle of oder a box of."
+    },
+    "es": {
+     "t": "En el supermercado",
+     "g": "Encuentra lo que necesitas y nombra los envases en el súper.",
+     "p": [
+      "Lugares: aisle, shelf, checkout, trolley, basket, the frozen food section.",
+      "Envases: a loaf of bread, a carton of milk, a bag of rice, a tin of tomatoes, a jar of jam.",
+      "Preguntas: Excuse me, where can I find the rice? Is it in aisle five? Do you need a bag?"
+     ],
+     "q": "¿Qué hay siempre en tu lista de la compra y cómo lo dices con su envase?",
+     "c": "Escribe una lista de la compra de seis cosas, cada una con un envase como a bottle of o a box of."
+    },
+    "fr": {
+     "t": "Au supermarché",
+     "g": "Trouver ce dont tu as besoin et nommer les emballages.",
+     "p": [
+      "Lieux : aisle, shelf, checkout, trolley, basket, the frozen food section.",
+      "Emballages : a loaf of bread, a carton of milk, a bag of rice, a tin of tomatoes, a jar of jam.",
+      "Questions : Excuse me, where can I find the rice? Is it in aisle five? Do you need a bag?"
+     ],
+     "q": "Qu'y a-t-il toujours sur ta liste de courses, et comment le dis-tu avec son emballage ?",
+     "c": "Écris une liste de courses de six articles, chacun avec un emballage comme a bottle of ou a box of."
+    },
+    "it": {
+     "t": "Al supermercato",
+     "g": "Trova quello che ti serve e nomina le confezioni.",
+     "p": [
+      "Luoghi: aisle, shelf, checkout, trolley, basket, the frozen food section.",
+      "Confezioni: a loaf of bread, a carton of milk, a bag of rice, a tin of tomatoes, a jar of jam.",
+      "Domande: Excuse me, where can I find the rice? Is it in aisle five? Do you need a bag?"
+     ],
+     "q": "Cosa c'è sempre nella tua lista della spesa, e come lo dici con la sua confezione?",
+     "c": "Scrivi una lista della spesa di sei prodotti, ognuno con una confezione come a bottle of o a box of."
+    },
+    "pt": {
+     "t": "No supermercado",
+     "g": "Encontra o que precisas e nomeia as embalagens.",
+     "p": [
+      "Lugares: aisle, shelf, checkout, trolley, basket, the frozen food section.",
+      "Embalagens: a loaf of bread, a carton of milk, a bag of rice, a tin of tomatoes, a jar of jam.",
+      "Perguntas: Excuse me, where can I find the rice? Is it in aisle five? Do you need a bag?"
+     ],
+     "q": "O que está sempre na tua lista de compras, e como o dizes com a embalagem?",
+     "c": "Escreve uma lista de compras com seis artigos, cada um com uma embalagem como a bottle of ou a box of."
+    },
+    "pt_BR": {
+     "t": "No supermercado",
+     "g": "Encontre o que precisa e diga o nome das embalagens.",
+     "p": [
+      "Lugares: aisle, shelf, checkout, trolley, basket, the frozen food section.",
+      "Embalagens: a loaf of bread, a carton of milk, a bag of rice, a tin of tomatoes, a jar of jam.",
+      "Perguntas: Excuse me, where can I find the rice? Is it in aisle five? Do you need a bag?"
+     ],
+     "q": "O que está sempre na sua lista de compras, e como você diz cada item com a embalagem?",
+     "c": "Escreva uma lista de compras com seis itens, cada um com uma embalagem como a bottle of ou a box of."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "aisle",
+      "ex": "The pasta is in aisle three."
+     },
+     {
+      "w": "checkout",
+      "ex": "There's a long queue at the checkout."
+     },
+     {
+      "w": "a loaf of bread",
+      "ex": "Can you buy a loaf of bread on your way home?"
+     },
+     {
+      "w": "a carton of milk",
+      "ex": "We need a carton of milk for breakfast."
+     },
+     {
+      "w": "a bag of rice",
+      "ex": "I bought a big bag of rice."
+     },
+     {
+      "w": "a tin of tomatoes",
+      "ex": "Add a tin of tomatoes to the sauce."
+     }
+    ],
+    "gram": "Uncountable food uses a container + of: a carton of milk, a jar of honey, two bags of rice (not two rices)."
+   }
+  },
+  {
+   "d": 130,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "First conditional: If it rains...",
+     "g": "Talk about real possibilities in the future and their results.",
+     "p": [
+      "Form: If + present simple, will + verb. If it rains, we'll stay at home.",
+      "No will after if: If I see her, I'll tell her. Not: If I will see her.",
+      "You can swap the halves: We'll stay at home if it rains. No comma in this order."
+     ],
+     "q": "What will you do this weekend if the weather is nice? And if it isn't?",
+     "c": "Write four first conditional sentences about your plans: two if it's sunny, two if it rains."
+    },
+    "de": {
+     "t": "First conditional: If it rains...",
+     "g": "Du sprichst über reale Möglichkeiten in der Zukunft und ihre Folgen.",
+     "p": [
+      "Form: If + present simple, will + Verb. If it rains, we'll stay at home.",
+      "Kein will nach if: If I see her, I'll tell her. Nicht: If I will see her.",
+      "Die Teile lassen sich tauschen: We'll stay at home if it rains. Dann ohne Komma."
+     ],
+     "q": "Was machst du am Wochenende, wenn das Wetter schön ist? Und wenn nicht?",
+     "c": "Schreib vier Sätze im first conditional zu deinen Plänen: zwei bei Sonne, zwei bei Regen."
+    },
+    "es": {
+     "t": "First conditional: If it rains...",
+     "g": "Habla de posibilidades reales en el futuro y sus resultados.",
+     "p": [
+      "Forma: If + present simple, will + verbo. If it rains, we'll stay at home.",
+      "Nada de will después de if: If I see her, I'll tell her. No: If I will see her.",
+      "Puedes invertir las partes: We'll stay at home if it rains. En ese orden, sin coma."
+     ],
+     "q": "¿Qué harás este fin de semana si hace buen tiempo? ¿Y si no?",
+     "c": "Escribe cuatro frases en first conditional sobre tus planes: dos si hace sol y dos si llueve."
+    },
+    "fr": {
+     "t": "First conditional : If it rains...",
+     "g": "Parler de possibilités réelles dans le futur et de leurs conséquences.",
+     "p": [
+      "Forme : If + present simple, will + verbe. If it rains, we'll stay at home.",
+      "Pas de will après if : If I see her, I'll tell her. Pas : If I will see her.",
+      "On peut inverser : We'll stay at home if it rains. Dans cet ordre, pas de virgule."
+     ],
+     "q": "Que feras-tu ce week-end s'il fait beau ? Et s'il ne fait pas beau ?",
+     "c": "Écris quatre phrases au first conditional sur tes projets : deux s'il fait beau, deux s'il pleut."
+    },
+    "it": {
+     "t": "First conditional: If it rains...",
+     "g": "Parla di possibilità reali nel futuro e delle loro conseguenze.",
+     "p": [
+      "Forma: If + present simple, will + verbo. If it rains, we'll stay at home.",
+      "Niente will dopo if: If I see her, I'll tell her. Non: If I will see her.",
+      "Puoi invertire le parti: We'll stay at home if it rains. In quest'ordine, niente virgola."
+     ],
+     "q": "Cosa farai questo fine settimana se il tempo è bello? E se non lo è?",
+     "c": "Scrivi quattro frasi al first conditional sui tuoi piani: due se c'è il sole, due se piove."
+    },
+    "pt": {
+     "t": "First conditional: If it rains...",
+     "g": "Fala de possibilidades reais no futuro e dos seus resultados.",
+     "p": [
+      "Forma: If + present simple, will + verbo. If it rains, we'll stay at home.",
+      "Nada de will depois de if: If I see her, I'll tell her. Não: If I will see her.",
+      "Podes trocar as partes: We'll stay at home if it rains. Nesta ordem, sem vírgula."
+     ],
+     "q": "O que vais fazer este fim de semana se estiver bom tempo? E se não estiver?",
+     "c": "Escreve quatro frases no first conditional sobre os teus planos: duas se estiver sol, duas se chover."
+    },
+    "pt_BR": {
+     "t": "First conditional: If it rains...",
+     "g": "Fale de possibilidades reais no futuro e dos resultados delas.",
+     "p": [
+      "Forma: If + present simple, will + verbo. If it rains, we'll stay at home.",
+      "Nada de will depois de if: If I see her, I'll tell her. Não: If I will see her.",
+      "Dá para inverter: We'll stay at home if it rains. Nessa ordem, sem vírgula."
+     ],
+     "q": "O que você vai fazer neste fim de semana se o tempo estiver bom? E se não estiver?",
+     "c": "Escreva quatro frases no first conditional sobre seus planos: duas se fizer sol, duas se chover."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "if it rains",
+      "ex": "If it rains, we'll watch a film at home."
+     },
+     {
+      "w": "I'll call you",
+      "ex": "If I finish early, I'll call you."
+     },
+     {
+      "w": "won't",
+      "ex": "If you don't hurry, you won't catch the bus."
+     },
+     {
+      "w": "if you need help",
+      "ex": "I'll come over if you need help."
+     },
+     {
+      "w": "if I have time",
+      "ex": "If I have time, I'll cook dinner tonight."
+     },
+     {
+      "w": "what will you do if",
+      "ex": "What will you do if the shop is closed?"
+     }
+    ],
+    "gram": "First conditional: If + present simple, will/won't + base verb. Never use will in the if-clause."
+   }
+  }
+ ]
+}

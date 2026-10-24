@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 231,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Art and museums",
+     "g": "Talk about art: Dürer, the Bauhaus and Berlin's Museumsinsel.",
+     "p": [
+      "Albrecht Dürer from Nuremberg (1471-1528) is famous for his self-portraits, prints and the watercolour of a young hare.",
+      "The Bauhaus, founded in 1919 in Weimar by Walter Gropius, shaped modern design: simple forms, function first.",
+      "Berlin's Museumsinsel is an island with five major museums and a UNESCO World Heritage Site. Words: die Ausstellung, das Gemälde."
+     ],
+     "q": "Which kind of art do you like: paintings, design, sculpture? Describe a work you love: Auf dem Bild sieht man...",
+     "c": "Describe a painting or object in five sentences with im Vordergrund, im Hintergrund, die Farben and es wirkt..."
+    },
+    "de": {
+     "t": "Kunst und Museen",
+     "g": "Du sprichst über Kunst: Dürer, das Bauhaus und die Berliner Museumsinsel.",
+     "p": [
+      "Albrecht Dürer aus Nürnberg (1471-1528) ist berühmt für seine Selbstbildnisse, Grafiken und das Aquarell eines jungen Feldhasen.",
+      "Das Bauhaus, 1919 von Walter Gropius in Weimar gegründet, prägte modernes Design: einfache Formen, die Funktion zuerst.",
+      "Die Berliner Museumsinsel hat fünf große Museen und ist UNESCO-Welterbe. Wörter: die Ausstellung, das Gemälde."
+     ],
+     "q": "Welche Kunst magst du: Malerei, Design, Skulptur? Beschreib ein Werk, das du liebst: Auf dem Bild sieht man...",
+     "c": "Beschreib ein Bild oder Objekt in fünf Sätzen mit im Vordergrund, im Hintergrund, die Farben und es wirkt..."
+    },
+    "es": {
+     "t": "Arte y museos",
+     "g": "Habla de arte: Durero, la Bauhaus y la Museumsinsel de Berlín.",
+     "p": [
+      "Alberto Durero, de Núremberg (1471-1528), es famoso por sus autorretratos, sus grabados y la acuarela de una liebre joven.",
+      "La Bauhaus, fundada en 1919 en Weimar por Walter Gropius, marcó el diseño moderno: formas simples, la función primero.",
+      "La Museumsinsel de Berlín es una isla con cinco grandes museos y Patrimonio de la UNESCO. Palabras: die Ausstellung, das Gemälde."
+     ],
+     "q": "¿Qué arte te gusta: pintura, diseño, escultura? Describe una obra que te encante: Auf dem Bild sieht man...",
+     "c": "Describe un cuadro u objeto en cinco frases con im Vordergrund, im Hintergrund, die Farben y es wirkt..."
+    },
+    "fr": {
+     "t": "Art et musées",
+     "g": "Parler d'art : Dürer, le Bauhaus et l'île aux Musées de Berlin.",
+     "p": [
+      "Albrecht Dürer, de Nuremberg (1471-1528), est célèbre pour ses autoportraits, ses gravures et l'aquarelle d'un jeune lièvre.",
+      "Le Bauhaus, fondé en 1919 à Weimar par Walter Gropius, a marqué le design moderne : formes simples, la fonction d'abord.",
+      "La Museumsinsel de Berlin réunit cinq grands musées et est classée à l'UNESCO. Mots : die Ausstellung, das Gemälde."
+     ],
+     "q": "Quel art aimes-tu : peinture, design, sculpture ? Décris une œuvre que tu adores : Auf dem Bild sieht man...",
+     "c": "Décris un tableau ou un objet en cinq phrases avec im Vordergrund, im Hintergrund, die Farben et es wirkt..."
+    },
+    "it": {
+     "t": "Arte e musei",
+     "g": "Parli di arte: Dürer, il Bauhaus e l'Isola dei Musei di Berlino.",
+     "p": [
+      "Albrecht Dürer di Norimberga (1471-1528) è famoso per gli autoritratti, le incisioni e l'acquerello di una giovane lepre.",
+      "Il Bauhaus, fondato nel 1919 a Weimar da Walter Gropius, ha segnato il design moderno: forme semplici, prima la funzione.",
+      "La Museumsinsel di Berlino è un'isola con cinque grandi musei, patrimonio UNESCO. Parole: die Ausstellung, das Gemälde."
+     ],
+     "q": "Che arte ti piace: pittura, design, scultura? Descrivi un'opera che ami: Auf dem Bild sieht man...",
+     "c": "Descrivi un quadro o un oggetto in cinque frasi con im Vordergrund, im Hintergrund, die Farben e es wirkt..."
+    },
+    "pt": {
+     "t": "Arte e museus",
+     "g": "Falar de arte: Dürer, a Bauhaus e a Ilha dos Museus de Berlim.",
+     "p": [
+      "Albrecht Dürer, de Nuremberga (1471-1528), é famoso pelos autorretratos, pelas gravuras e pela aguarela de uma lebre jovem.",
+      "A Bauhaus, fundada em 1919 em Weimar por Walter Gropius, marcou o design moderno: formas simples, a função primeiro.",
+      "A Museumsinsel de Berlim é uma ilha com cinco grandes museus, Património da UNESCO. Palavras: die Ausstellung, das Gemälde."
+     ],
+     "q": "Que arte preferes: pintura, design, escultura? Descreve uma obra de que gostes muito: Auf dem Bild sieht man...",
+     "c": "Descreve um quadro ou objeto em cinco frases com im Vordergrund, im Hintergrund, die Farben e es wirkt..."
+    },
+    "pt_BR": {
+     "t": "Arte e museus",
+     "g": "Falar de arte: Dürer, a Bauhaus e a Ilha dos Museus de Berlim.",
+     "p": [
+      "Albrecht Dürer, de Nuremberg (1471-1528), é famoso pelos autorretratos, pelas gravuras e pela aquarela de uma lebre jovem.",
+      "A Bauhaus, fundada em 1919 em Weimar por Walter Gropius, marcou o design moderno: formas simples, a função em primeiro lugar.",
+      "A Museumsinsel de Berlim é uma ilha com cinco grandes museus, Patrimônio da UNESCO. Palavras: die Ausstellung, das Gemälde."
+     ],
+     "q": "Que arte você prefere: pintura, design, escultura? Descreva uma obra que você ama: Auf dem Bild sieht man...",
+     "c": "Descreva um quadro ou objeto em cinco frases com im Vordergrund, im Hintergrund, die Farben e es wirkt..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "das Gemälde",
+      "ex": "Das Gemälde hängt im ersten Stock des Museums."
+     },
+     {
+      "w": "die Ausstellung",
+      "ex": "Die Ausstellung über das Bauhaus war toll."
+     },
+     {
+      "w": "das Selbstbildnis",
+      "ex": "Dürer malte mehrere Selbstbildnisse."
+     },
+     {
+      "w": "im Vordergrund",
+      "ex": "Im Vordergrund sieht man einen kleinen Hasen."
+     },
+     {
+      "w": "im Hintergrund",
+      "ex": "Im Hintergrund erkennt man Berge."
+     },
+     {
+      "w": "wirken",
+      "ex": "Die Farben wirken ruhig und warm."
+     }
+    ],
+    "gram": "Bildbeschreibung: Auf dem Bild sieht man…; im Vordergrund/Hintergrund (Dativ); es wirkt + Adjektiv (Es wirkt fröhlich)."
+   }
+  },
+  {
+   "d": 232,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Literature classics",
+     "g": "Meet the classics: Goethe, Schiller, the Brothers Grimm and Kafka.",
+     "p": [
+      "Johann Wolfgang von Goethe wrote Faust; Friedrich Schiller wrote Wilhelm Tell and the poem Ode an die Freude, used by Beethoven.",
+      "The Brothers Grimm collected fairy tales (Kinder- und Hausmärchen, 1812) and also started a big German dictionary.",
+      "Franz Kafka from Prague wrote in German; in Die Verwandlung a man wakes up as a giant insect. Kafkaesk means strange and absurd."
+     ],
+     "q": "Have you read any German author, maybe in translation? Which classic would you like to read? Tell me why.",
+     "c": "Write three sentences about a book you love using Der Roman handelt von..., der Autor and Ich habe es... gelesen."
+    },
+    "de": {
+     "t": "Klassiker der Literatur",
+     "g": "Du lernst Klassiker kennen: Goethe, Schiller, die Brüder Grimm und Kafka.",
+     "p": [
+      "Goethe schrieb den Faust; Friedrich Schiller schrieb Wilhelm Tell und das Gedicht Ode an die Freude, das Beethoven vertonte.",
+      "Die Brüder Grimm sammelten Märchen (Kinder- und Hausmärchen, 1812) und begannen ein großes deutsches Wörterbuch.",
+      "Franz Kafka aus Prag schrieb auf Deutsch; in Die Verwandlung wacht ein Mann als riesiges Insekt auf. Kafkaesk = seltsam, absurd."
+     ],
+     "q": "Hast du schon einen deutschsprachigen Autor gelesen, vielleicht übersetzt? Welchen Klassiker möchtest du lesen, und warum?",
+     "c": "Schreib drei Sätze über ein Lieblingsbuch mit Der Roman handelt von..., der Autor und Ich habe es... gelesen."
+    },
+    "es": {
+     "t": "Clásicos de la literatura",
+     "g": "Conoce a los clásicos: Goethe, Schiller, los hermanos Grimm y Kafka.",
+     "p": [
+      "Goethe escribió Fausto; Schiller escribió Guillermo Tell y el poema Oda a la alegría, al que Beethoven puso música.",
+      "Los hermanos Grimm recopilaron cuentos (Kinder- und Hausmärchen, 1812) y empezaron un gran diccionario alemán.",
+      "Franz Kafka, de Praga, escribía en alemán; en La metamorfosis un hombre despierta convertido en un insecto gigante."
+     ],
+     "q": "¿Has leído a algún autor en lengua alemana, quizá traducido? ¿Qué clásico te gustaría leer y por qué?",
+     "c": "Escribe tres frases sobre un libro que te encante con Der Roman handelt von..., der Autor e Ich habe es... gelesen."
+    },
+    "fr": {
+     "t": "Les classiques de la littérature",
+     "g": "Découvrir les classiques : Goethe, Schiller, les frères Grimm et Kafka.",
+     "p": [
+      "Goethe a écrit Faust ; Schiller a écrit Guillaume Tell et le poème Ode à la joie, mis en musique par Beethoven.",
+      "Les frères Grimm ont recueilli des contes (Kinder- und Hausmärchen, 1812) et commencé un grand dictionnaire allemand.",
+      "Franz Kafka, de Prague, écrivait en allemand ; dans La Métamorphose, un homme se réveille transformé en insecte géant."
+     ],
+     "q": "As-tu déjà lu un auteur de langue allemande, peut-être traduit ? Quel classique aimerais-tu lire, et pourquoi ?",
+     "c": "Écris trois phrases sur un livre que tu aimes avec Der Roman handelt von..., der Autor et Ich habe es... gelesen."
+    },
+    "it": {
+     "t": "I classici della letteratura",
+     "g": "Conosci i classici: Goethe, Schiller, i fratelli Grimm e Kafka.",
+     "p": [
+      "Goethe scrisse il Faust; Schiller scrisse il Guglielmo Tell e l'Inno alla gioia, musicato da Beethoven.",
+      "I fratelli Grimm raccolsero fiabe (Kinder- und Hausmärchen, 1812) e iniziarono un grande dizionario tedesco.",
+      "Franz Kafka, di Praga, scriveva in tedesco; ne La metamorfosi un uomo si sveglia trasformato in un insetto gigante."
+     ],
+     "q": "Hai mai letto un autore di lingua tedesca, magari tradotto? Quale classico vorresti leggere e perché?",
+     "c": "Scrivi tre frasi su un libro che ami con Der Roman handelt von..., der Autor e Ich habe es... gelesen."
+    },
+    "pt": {
+     "t": "Clássicos da literatura",
+     "g": "Conhecer os clássicos: Goethe, Schiller, os irmãos Grimm e Kafka.",
+     "p": [
+      "Goethe escreveu o Fausto; Schiller escreveu Guilherme Tell e o poema Ode à Alegria, musicado por Beethoven.",
+      "Os irmãos Grimm recolheram contos (Kinder- und Hausmärchen, 1812) e começaram um grande dicionário alemão.",
+      "Franz Kafka, de Praga, escrevia em alemão; em A Metamorfose um homem acorda transformado num inseto gigante."
+     ],
+     "q": "Já leste algum autor de língua alemã, talvez traduzido? Que clássico gostavas de ler e porquê?",
+     "c": "Escreve três frases sobre um livro de que gostes com Der Roman handelt von..., der Autor e Ich habe es... gelesen."
+    },
+    "pt_BR": {
+     "t": "Clássicos da literatura",
+     "g": "Conhecer os clássicos: Goethe, Schiller, os irmãos Grimm e Kafka.",
+     "p": [
+      "Goethe escreveu o Fausto; Schiller escreveu Guilherme Tell e o poema Ode à Alegria, musicado por Beethoven.",
+      "Os irmãos Grimm reuniram contos (Kinder- und Hausmärchen, 1812) e começaram um grande dicionário alemão.",
+      "Franz Kafka, de Praga, escrevia em alemão; em A Metamorfose um homem acorda transformado num inseto gigante."
+     ],
+     "q": "Você já leu algum autor de língua alemã, talvez traduzido? Que clássico gostaria de ler e por quê?",
+     "c": "Escreva três frases sobre um livro que você ama com Der Roman handelt von..., der Autor e Ich habe es... gelesen."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Dichter",
+      "ex": "Goethe ist der bekannteste deutsche Dichter."
+     },
+     {
+      "w": "das Gedicht",
+      "ex": "Wir haben in der Schule ein Gedicht von Schiller gelernt."
+     },
+     {
+      "w": "das Märchen",
+      "ex": "Die Brüder Grimm sammelten viele Märchen."
+     },
+     {
+      "w": "der Roman",
+      "ex": "Der Roman handelt von einer langen Reise."
+     },
+     {
+      "w": "die Erzählung",
+      "ex": "Die Verwandlung ist eine Erzählung von Kafka."
+     },
+     {
+      "w": "veröffentlichen",
+      "ex": "Das Buch wurde 1812 zum ersten Mal veröffentlicht."
+     }
+    ],
+    "gram": "Über Literatur: schreiben – schrieb – geschrieben; handeln von + Dativ; Passiv Präteritum: Das Buch wurde 1812 veröffentlicht."
+   }
+  },
+  {
+   "d": 233,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "German cinema",
+     "g": "Talk about films: Good Bye, Lenin!, Lola rennt and how to discuss a movie.",
+     "p": [
+      "Good Bye, Lenin! (2003) is a tragicomedy: in East Berlin around 1990 a son keeps the old GDR alive in the flat for his mother.",
+      "Lola rennt (1998) by Tom Tykwer: Lola runs through Berlin to help her boyfriend, and the story is told three times.",
+      "Film words: der Regisseur, die Hauptrolle, spielen, die Komödie, der Krimi, der Untertitel. Der Film spielt in Berlin."
+     ],
+     "q": "What kind of films do you like? Tell me about a film you saw recently: Der Film spielt in... Die Hauptrolle spielt...",
+     "c": "Watch a German film trailer with subtitles and write three sentences about it with spielen in, die Hauptrolle and der Regisseur."
+    },
+    "de": {
+     "t": "Deutsches Kino",
+     "g": "Du sprichst über Filme: Good Bye, Lenin!, Lola rennt und wie man über einen Film redet.",
+     "p": [
+      "Good Bye, Lenin! (2003) ist eine Tragikomödie: In Ost-Berlin um 1990 lässt ein Sohn für seine Mutter die DDR zu Hause weiterleben.",
+      "Lola rennt (1998) von Tom Tykwer: Lola rennt durch Berlin, um ihrem Freund zu helfen, und die Geschichte wird dreimal erzählt.",
+      "Filmwörter: der Regisseur, die Hauptrolle, spielen, die Komödie, der Krimi, der Untertitel. Der Film spielt in Berlin."
+     ],
+     "q": "Welche Filme magst du? Erzähl von einem Film, den du neulich gesehen hast: Der Film spielt in... Die Hauptrolle spielt...",
+     "c": "Schau einen deutschen Filmtrailer mit Untertiteln und schreib drei Sätze mit spielen in, die Hauptrolle und der Regisseur."
+    },
+    "es": {
+     "t": "Cine alemán",
+     "g": "Habla de cine: Good Bye, Lenin!, Lola rennt y cómo comentar una película.",
+     "p": [
+      "Good Bye, Lenin! (2003) es una tragicomedia: en Berlín Este hacia 1990 un hijo mantiene viva la antigua RDA en casa por su madre.",
+      "Lola rennt (1998), de Tom Tykwer: Lola corre por Berlín para ayudar a su novio, y la historia se cuenta tres veces.",
+      "Vocabulario: der Regisseur, die Hauptrolle, spielen, die Komödie, der Krimi, der Untertitel. Der Film spielt in Berlin (transcurre en)."
+     ],
+     "q": "¿Qué películas te gustan? Háblame de una que viste hace poco: Der Film spielt in... Die Hauptrolle spielt...",
+     "c": "Mira el tráiler de una película alemana con subtítulos y escribe tres frases con spielen in, die Hauptrolle y der Regisseur."
+    },
+    "fr": {
+     "t": "Le cinéma allemand",
+     "g": "Parler de films : Good Bye, Lenin!, Lola rennt et comment discuter d'un film.",
+     "p": [
+      "Good Bye, Lenin! (2003) est une tragicomédie : à Berlin-Est vers 1990, un fils fait revivre l'ancienne RDA chez lui pour sa mère.",
+      "Cours, Lola, cours (Lola rennt, 1998) de Tom Tykwer : Lola court à travers Berlin pour aider son ami, l'histoire est racontée trois fois.",
+      "Vocabulaire : der Regisseur, die Hauptrolle, spielen, die Komödie, der Krimi, der Untertitel. Der Film spielt in Berlin (se passe à)."
+     ],
+     "q": "Quels films aimes-tu ? Parle-moi d'un film vu récemment : Der Film spielt in... Die Hauptrolle spielt...",
+     "c": "Regarde la bande-annonce d'un film allemand sous-titré et écris trois phrases avec spielen in, die Hauptrolle et der Regisseur."
+    },
+    "it": {
+     "t": "Il cinema tedesco",
+     "g": "Parli di film: Good Bye, Lenin!, Lola rennt e come commentare un film.",
+     "p": [
+      "Good Bye, Lenin! (2003) è una tragicommedia: a Berlino Est verso il 1990 un figlio fa rivivere in casa la vecchia DDR per la madre.",
+      "Lola corre (Lola rennt, 1998) di Tom Tykwer: Lola corre per Berlino per aiutare il suo ragazzo, e la storia è raccontata tre volte.",
+      "Lessico: der Regisseur, die Hauptrolle, spielen, die Komödie, der Krimi, der Untertitel. Der Film spielt in Berlin (è ambientato a)."
+     ],
+     "q": "Che film ti piacciono? Parlami di un film visto di recente: Der Film spielt in... Die Hauptrolle spielt...",
+     "c": "Guarda il trailer di un film tedesco con sottotitoli e scrivi tre frasi con spielen in, die Hauptrolle e der Regisseur."
+    },
+    "pt": {
+     "t": "Cinema alemão",
+     "g": "Falar de filmes: Good Bye, Lenin!, Corre, Lola, Corre e como comentar um filme.",
+     "p": [
+      "Good Bye, Lenin! (2003) é uma tragicomédia: em Berlim Leste por volta de 1990, um filho mantém viva a antiga RDA em casa pela mãe.",
+      "Lola rennt (1998), de Tom Tykwer: Lola corre por Berlim para ajudar o namorado, e a história é contada três vezes.",
+      "Vocabulário: der Regisseur, die Hauptrolle, spielen, die Komödie, der Krimi, der Untertitel. Der Film spielt in Berlin (passa-se em)."
+     ],
+     "q": "Que filmes gostas de ver? Fala-me de um que viste há pouco: Der Film spielt in... Die Hauptrolle spielt...",
+     "c": "Vê o trailer de um filme alemão com legendas e escreve três frases com spielen in, die Hauptrolle e der Regisseur."
+    },
+    "pt_BR": {
+     "t": "Cinema alemão",
+     "g": "Falar de filmes: Adeus, Lenin!, Corra, Lola, Corra e como comentar um filme.",
+     "p": [
+      "Good Bye, Lenin! (2003) é uma tragicomédia: em Berlim Oriental por volta de 1990, um filho mantém viva a antiga RDA em casa pela mãe.",
+      "Lola rennt (1998), de Tom Tykwer: Lola corre por Berlim para ajudar o namorado, e a história é contada três vezes.",
+      "Vocabulário: der Regisseur, die Hauptrolle, spielen, die Komödie, der Krimi, der Untertitel. Der Film spielt in Berlin (se passa em)."
+     ],
+     "q": "De que filmes você gosta? Me fale de um que viu há pouco: Der Film spielt in... Die Hauptrolle spielt...",
+     "c": "Assista ao trailer de um filme alemão com legendas e escreva três frases com spielen in, die Hauptrolle e der Regisseur."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Regisseur",
+      "ex": "Der Regisseur hat auch das Drehbuch geschrieben."
+     },
+     {
+      "w": "die Hauptrolle",
+      "ex": "Wer spielt die Hauptrolle?"
+     },
+     {
+      "w": "spielen in",
+      "ex": "Der Film spielt im Berlin der Neunzigerjahre."
+     },
+     {
+      "w": "die Komödie",
+      "ex": "Ich sehe mir gern eine lustige Komödie an."
+     },
+     {
+      "w": "der Untertitel",
+      "ex": "Ich schaue deutsche Filme mit Untertiteln."
+     },
+     {
+      "w": "ins Kino gehen",
+      "ex": "Wollen wir am Samstag ins Kino gehen?"
+     }
+    ],
+    "gram": "spielen in + Dativ für den Ort der Handlung (Der Film spielt in Berlin); jemand spielt die Hauptrolle (Akkusativ)."
+   }
+  },
+  {
+   "d": 234,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Music: from Bach to today",
+     "g": "Talk about music: Bach, Beethoven, Mozart, Schlager and modern pop.",
+     "p": [
+      "Johann Sebastian Bach worked for many years in Leipzig; Ludwig van Beethoven was born in Bonn; Mozart came from Salzburg, Austria.",
+      "Beethoven's Ninth Symphony ends with Schiller's Ode an die Freude, today the anthem of the European Union.",
+      "Schlager are catchy German pop songs often sung along at parties; today German-language pop and rap are popular too."
+     ],
+     "q": "What music do you listen to? Tell me: Ich höre gern... / Am liebsten mag ich... and what a song makes you feel.",
+     "c": "Listen to one German song today and write down three lines you understood and one new word."
+    },
+    "de": {
+     "t": "Musik: von Bach bis heute",
+     "g": "Du sprichst über Musik: Bach, Beethoven, Mozart, Schlager und moderner Pop.",
+     "p": [
+      "Johann Sebastian Bach wirkte viele Jahre in Leipzig; Ludwig van Beethoven wurde in Bonn geboren; Mozart kam aus Salzburg.",
+      "Beethovens Neunte Sinfonie endet mit Schillers Ode an die Freude, heute die Hymne der Europäischen Union.",
+      "Schlager sind eingängige deutsche Lieder zum Mitsingen auf Festen; heute sind auch deutschsprachiger Pop und Rap beliebt."
+     ],
+     "q": "Welche Musik hörst du? Erzähl: Ich höre gern... / Am liebsten mag ich... und welches Gefühl ein Lied dir gibt.",
+     "c": "Hör heute ein deutsches Lied und schreib drei Zeilen auf, die du verstanden hast, und ein neues Wort."
+    },
+    "es": {
+     "t": "Música: de Bach a hoy",
+     "g": "Habla de música: Bach, Beethoven, Mozart, el Schlager y el pop actual.",
+     "p": [
+      "Johann Sebastian Bach trabajó muchos años en Leipzig; Beethoven nació en Bonn; Mozart era de Salzburgo, en Austria.",
+      "La Novena Sinfonía de Beethoven termina con la Oda a la alegría de Schiller, hoy himno de la Unión Europea.",
+      "Los Schlager son canciones pegadizas que se cantan en fiestas; hoy también triunfan el pop y el rap en alemán."
+     ],
+     "q": "¿Qué música escuchas? Cuéntame: Ich höre gern... / Am liebsten mag ich... y qué te hace sentir una canción.",
+     "c": "Escucha hoy una canción alemana y apunta tres versos que entendiste y una palabra nueva."
+    },
+    "fr": {
+     "t": "La musique, de Bach à aujourd'hui",
+     "g": "Parler de musique : Bach, Beethoven, Mozart, le Schlager et la pop actuelle.",
+     "p": [
+      "Johann Sebastian Bach a longtemps travaillé à Leipzig ; Beethoven est né à Bonn ; Mozart venait de Salzbourg, en Autriche.",
+      "La Neuvième Symphonie de Beethoven se termine par l'Ode à la joie de Schiller, aujourd'hui hymne de l'Union européenne.",
+      "Les Schlager sont des chansons entraînantes qu'on chante en fête ; aujourd'hui la pop et le rap en allemand marchent aussi."
+     ],
+     "q": "Quelle musique écoutes-tu ? Dis-moi : Ich höre gern... / Am liebsten mag ich... et ce qu'une chanson te fait ressentir.",
+     "c": "Écoute une chanson allemande aujourd'hui et note trois vers compris et un mot nouveau."
+    },
+    "it": {
+     "t": "Musica: da Bach a oggi",
+     "g": "Parli di musica: Bach, Beethoven, Mozart, lo Schlager e il pop di oggi.",
+     "p": [
+      "Johann Sebastian Bach lavorò molti anni a Lipsia; Beethoven nacque a Bonn; Mozart era di Salisburgo, in Austria.",
+      "La Nona Sinfonia di Beethoven si chiude con l'Inno alla gioia di Schiller, oggi inno dell'Unione Europea.",
+      "Gli Schlager sono canzoni orecchiabili da cantare alle feste; oggi sono amati anche il pop e il rap in tedesco."
+     ],
+     "q": "Che musica ascolti? Raccontami: Ich höre gern... / Am liebsten mag ich... e che cosa ti fa provare una canzone.",
+     "c": "Ascolta oggi una canzone tedesca e annota tre versi che hai capito e una parola nuova."
+    },
+    "pt": {
+     "t": "Música: de Bach até hoje",
+     "g": "Falar de música: Bach, Beethoven, Mozart, o Schlager e a pop atual.",
+     "p": [
+      "Johann Sebastian Bach trabalhou muitos anos em Leipzig; Beethoven nasceu em Bona; Mozart era de Salzburgo, na Áustria.",
+      "A Nona Sinfonia de Beethoven termina com a Ode à Alegria de Schiller, hoje hino da União Europeia.",
+      "Os Schlager são canções orelhudas para cantar em festas; hoje a pop e o rap em alemão também são populares."
+     ],
+     "q": "Que música ouves? Conta-me: Ich höre gern... / Am liebsten mag ich... e o que uma canção te faz sentir.",
+     "c": "Ouve hoje uma canção alemã e escreve três versos que percebeste e uma palavra nova."
+    },
+    "pt_BR": {
+     "t": "Música: de Bach até hoje",
+     "g": "Falar de música: Bach, Beethoven, Mozart, o Schlager e o pop atual.",
+     "p": [
+      "Johann Sebastian Bach trabalhou muitos anos em Leipzig; Beethoven nasceu em Bonn; Mozart era de Salzburgo, na Áustria.",
+      "A Nona Sinfonia de Beethoven termina com a Ode à Alegria de Schiller, hoje hino da União Europeia.",
+      "Os Schlager são músicas chiclete para cantar em festas; hoje o pop e o rap em alemão também fazem sucesso."
+     ],
+     "q": "Que música você ouve? Me conte: Ich höre gern... / Am liebsten mag ich... e o que uma música te faz sentir.",
+     "c": "Ouça hoje uma música alemã e anote três versos que entendeu e uma palavra nova."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Komponist",
+      "ex": "Bach ist einer der wichtigsten Komponisten."
+     },
+     {
+      "w": "die Sinfonie",
+      "ex": "Beethoven schrieb neun Sinfonien."
+     },
+     {
+      "w": "der Schlager",
+      "ex": "Auf dem Fest haben alle Schlager mitgesungen."
+     },
+     {
+      "w": "das Lied",
+      "ex": "Dieses Lied geht mir nicht aus dem Kopf."
+     },
+     {
+      "w": "mitsingen",
+      "ex": "Den Refrain kann jeder mitsingen."
+     },
+     {
+      "w": "am liebsten",
+      "ex": "Am liebsten höre ich Jazz."
+     }
+    ],
+    "gram": "gern – lieber – am liebsten: Ich höre gern Pop, lieber Rock und am liebsten Jazz."
+   }
+  },
+  {
+   "d": 235,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Describing a film or book",
+     "g": "Describe plot and characters and recommend: es geht um, ich kann es empfehlen.",
+     "p": [
+      "Plot: Es geht um... / Die Geschichte handelt von... In der Geschichte erzählt man im Präsens: Ein Mädchen findet...",
+      "Characters: die Hauptfigur, die Nebenfigur; describe them: Sie ist mutig, neugierig, ein bisschen chaotisch.",
+      "Opinion: Mir hat besonders gefallen, dass... Ich kann es (nur) empfehlen! / Es ist nicht so mein Fall."
+     ],
+     "q": "Describe a film or book you love in four sentences: what it's about, the main character and why you recommend it.",
+     "c": "Write a short description of a story you like with es geht um, die Hauptfigur, mir hat gefallen, dass and empfehlen."
+    },
+    "de": {
+     "t": "Einen Film oder ein Buch beschreiben",
+     "g": "Du beschreibst Handlung und Figuren und gibst eine Empfehlung: es geht um, ich kann es empfehlen.",
+     "p": [
+      "Handlung: Es geht um... / Die Geschichte handelt von... Den Inhalt erzählt man im Präsens: Ein Mädchen findet...",
+      "Figuren: die Hauptfigur, die Nebenfigur; beschreiben: Sie ist mutig, neugierig, ein bisschen chaotisch.",
+      "Meinung: Mir hat besonders gefallen, dass... Ich kann es (nur) empfehlen! / Es ist nicht so mein Fall."
+     ],
+     "q": "Beschreib einen Film oder ein Buch, das du liebst, in vier Sätzen: Worum geht es, wer ist die Hauptfigur, warum empfiehlst du es?",
+     "c": "Schreib eine kurze Beschreibung einer Geschichte mit es geht um, die Hauptfigur, mir hat gefallen, dass und empfehlen."
+    },
+    "es": {
+     "t": "Describir una película o un libro",
+     "g": "Describe trama y personajes y recomienda: es geht um, ich kann es empfehlen.",
+     "p": [
+      "Trama: Es geht um... / Die Geschichte handelt von... El argumento se cuenta en presente: Ein Mädchen findet...",
+      "Personajes: die Hauptfigur (protagonista), die Nebenfigur; descríbelos: Sie ist mutig, neugierig, ein bisschen chaotisch.",
+      "Opinión: Mir hat besonders gefallen, dass... Ich kann es (nur) empfehlen! / Es ist nicht so mein Fall (no es lo mío)."
+     ],
+     "q": "Describe en cuatro frases una película o un libro que te encante: de qué trata, el protagonista y por qué lo recomiendas.",
+     "c": "Escribe una breve descripción de una historia con es geht um, die Hauptfigur, mir hat gefallen, dass y empfehlen."
+    },
+    "fr": {
+     "t": "Décrire un film ou un livre",
+     "g": "Décrire l'intrigue, les personnages et recommander : es geht um, ich kann es empfehlen.",
+     "p": [
+      "Intrigue : Es geht um... / Die Geschichte handelt von... On raconte l'histoire au présent : Ein Mädchen findet...",
+      "Personnages : die Hauptfigur (personnage principal), die Nebenfigur ; décris-les : Sie ist mutig, neugierig, ein bisschen chaotisch.",
+      "Avis : Mir hat besonders gefallen, dass... Ich kann es (nur) empfehlen ! / Es ist nicht so mein Fall (pas mon truc)."
+     ],
+     "q": "Décris en quatre phrases un film ou un livre que tu adores : le sujet, le personnage principal et pourquoi tu le recommandes.",
+     "c": "Écris une courte description d'une histoire avec es geht um, die Hauptfigur, mir hat gefallen, dass et empfehlen."
+    },
+    "it": {
+     "t": "Descrivere un film o un libro",
+     "g": "Descrivi trama e personaggi e consiglia: es geht um, ich kann es empfehlen.",
+     "p": [
+      "Trama: Es geht um... / Die Geschichte handelt von... La trama si racconta al presente: Ein Mädchen findet...",
+      "Personaggi: die Hauptfigur (protagonista), die Nebenfigur; descrivili: Sie ist mutig, neugierig, ein bisschen chaotisch.",
+      "Opinione: Mir hat besonders gefallen, dass... Ich kann es (nur) empfehlen! / Es ist nicht so mein Fall (non fa per me)."
+     ],
+     "q": "Descrivi in quattro frasi un film o un libro che ami: di cosa parla, il protagonista e perché lo consigli.",
+     "c": "Scrivi una breve descrizione di una storia con es geht um, die Hauptfigur, mir hat gefallen, dass ed empfehlen."
+    },
+    "pt": {
+     "t": "Descrever um filme ou um livro",
+     "g": "Descrever enredo e personagens e recomendar: es geht um, ich kann es empfehlen.",
+     "p": [
+      "Enredo: Es geht um... / Die Geschichte handelt von... O enredo conta-se no presente: Ein Mädchen findet...",
+      "Personagens: die Hauptfigur (protagonista), die Nebenfigur; descreve-as: Sie ist mutig, neugierig, ein bisschen chaotisch.",
+      "Opinião: Mir hat besonders gefallen, dass... Ich kann es (nur) empfehlen! / Es ist nicht so mein Fall (não é a minha cena)."
+     ],
+     "q": "Descreve em quatro frases um filme ou livro de que gostes muito: o tema, a personagem principal e porque o recomendas.",
+     "c": "Escreve uma descrição curta de uma história com es geht um, die Hauptfigur, mir hat gefallen, dass e empfehlen."
+    },
+    "pt_BR": {
+     "t": "Descrever um filme ou um livro",
+     "g": "Descrever enredo e personagens e recomendar: es geht um, ich kann es empfehlen.",
+     "p": [
+      "Enredo: Es geht um... / Die Geschichte handelt von... O enredo se conta no presente: Ein Mädchen findet...",
+      "Personagens: die Hauptfigur (protagonista), die Nebenfigur; descreva: Sie ist mutig, neugierig, ein bisschen chaotisch.",
+      "Opinião: Mir hat besonders gefallen, dass... Ich kann es (nur) empfehlen! / Es ist nicht so mein Fall (não é minha praia)."
+     ],
+     "q": "Descreva em quatro frases um filme ou livro que você ama: o tema, o protagonista e por que você recomenda.",
+     "c": "Escreva uma descrição curta de uma história com es geht um, die Hauptfigur, mir hat gefallen, dass e empfehlen."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Handlung",
+      "ex": "Die Handlung ist spannend und überraschend."
+     },
+     {
+      "w": "die Hauptfigur",
+      "ex": "Die Hauptfigur ist eine junge Ärztin in Hamburg."
+     },
+     {
+      "w": "es geht um",
+      "ex": "In dem Buch geht es um eine ungewöhnliche Freundschaft."
+     },
+     {
+      "w": "Mir hat gefallen, dass...",
+      "ex": "Mir hat gefallen, dass das Ende so positiv ist."
+     },
+     {
+      "w": "empfehlen",
+      "ex": "Ich kann dir diesen Film wirklich empfehlen."
+     },
+     {
+      "w": "Das ist nicht mein Fall.",
+      "ex": "Krimis sind nicht so mein Fall."
+     }
+    ],
+    "gram": "Inhaltsangabe im Präsens; Meinung im Perfekt: Mir hat gefallen (Dativ!); empfehlen + Dativ + Akkusativ (Ich empfehle dir das Buch)."
+   }
+  },
+  {
+   "d": 236,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Writing a review",
+     "g": "Write a balanced review: ein Meisterwerk, spannend, überzeugend, enttäuschend.",
+     "p": [
+      "Positive: ein Meisterwerk, spannend, überzeugend, gelungen, sehenswert / lesenswert: Die Schauspieler sind überzeugend.",
+      "Negative, but fair: enttäuschend, langweilig, vorhersehbar, zu lang: Leider war das Ende etwas vorhersehbar.",
+      "Structure: short summary, strengths, weaknesses, verdict: Insgesamt gebe ich dem Film vier von fünf Sternen."
+     ],
+     "q": "Give me a mini review of the last film, series or book you enjoyed: one strength, one weakness and your stars.",
+     "c": "Write a review of about 80 words with one positive and one negative adjective and the phrase Insgesamt..."
+    },
+    "de": {
+     "t": "Eine Rezension schreiben",
+     "g": "Du schreibst eine ausgewogene Kritik: ein Meisterwerk, spannend, überzeugend, enttäuschend.",
+     "p": [
+      "Positiv: ein Meisterwerk, spannend, überzeugend, gelungen, sehenswert / lesenswert: Die Schauspieler sind überzeugend.",
+      "Negativ, aber fair: enttäuschend, langweilig, vorhersehbar, zu lang: Leider war das Ende etwas vorhersehbar.",
+      "Aufbau: kurze Zusammenfassung, Stärken, Schwächen, Fazit: Insgesamt gebe ich dem Film vier von fünf Sternen."
+     ],
+     "q": "Gib mir eine Mini-Kritik zum letzten Film, zur letzten Serie oder zum letzten Buch: eine Stärke, eine Schwäche, deine Sterne.",
+     "c": "Schreib eine Rezension mit etwa 80 Wörtern, mit einem positiven und einem negativen Adjektiv und Insgesamt..."
+    },
+    "es": {
+     "t": "Escribir una reseña",
+     "g": "Escribe una reseña equilibrada: ein Meisterwerk, spannend, überzeugend, enttäuschend.",
+     "p": [
+      "Positivo: ein Meisterwerk (obra maestra), spannend, überzeugend (convincente), gelungen, sehenswert / lesenswert.",
+      "Negativo pero justo: enttäuschend (decepcionante), langweilig, vorhersehbar (previsible), zu lang.",
+      "Estructura: resumen breve, puntos fuertes, puntos débiles, veredicto: Insgesamt gebe ich dem Film vier von fünf Sternen."
+     ],
+     "q": "Hazme una minirreseña de la última película, serie o libro que te gustó: un punto fuerte, uno débil y tus estrellas.",
+     "c": "Escribe una reseña de unas 80 palabras con un adjetivo positivo, uno negativo y la expresión Insgesamt..."
+    },
+    "fr": {
+     "t": "Écrire une critique",
+     "g": "Écrire une critique équilibrée : ein Meisterwerk, spannend, überzeugend, enttäuschend.",
+     "p": [
+      "Positif : ein Meisterwerk (chef-d'œuvre), spannend (captivant), überzeugend (convaincant), gelungen, sehenswert / lesenswert.",
+      "Négatif mais juste : enttäuschend (décevant), langweilig, vorhersehbar (prévisible), zu lang.",
+      "Structure : bref résumé, points forts, points faibles, verdict : Insgesamt gebe ich dem Film vier von fünf Sternen."
+     ],
+     "q": "Fais-moi une mini-critique du dernier film, série ou livre que tu as aimé : un point fort, un point faible et tes étoiles.",
+     "c": "Écris une critique d'environ 80 mots avec un adjectif positif, un négatif et l'expression Insgesamt..."
+    },
+    "it": {
+     "t": "Scrivere una recensione",
+     "g": "Scrivi una recensione equilibrata: ein Meisterwerk, spannend, überzeugend, enttäuschend.",
+     "p": [
+      "Positivo: ein Meisterwerk (capolavoro), spannend (avvincente), überzeugend (convincente), gelungen, sehenswert / lesenswert.",
+      "Negativo ma onesto: enttäuschend (deludente), langweilig, vorhersehbar (prevedibile), zu lang.",
+      "Struttura: breve riassunto, punti di forza, punti deboli, giudizio: Insgesamt gebe ich dem Film vier von fünf Sternen."
+     ],
+     "q": "Fammi una mini recensione dell'ultimo film, serie o libro che ti è piaciuto: un pregio, un difetto e le tue stelle.",
+     "c": "Scrivi una recensione di circa 80 parole con un aggettivo positivo, uno negativo e l'espressione Insgesamt..."
+    },
+    "pt": {
+     "t": "Escrever uma crítica",
+     "g": "Escrever uma crítica equilibrada: ein Meisterwerk, spannend, überzeugend, enttäuschend.",
+     "p": [
+      "Positivo: ein Meisterwerk (obra-prima), spannend (empolgante), überzeugend (convincente), gelungen, sehenswert / lesenswert.",
+      "Negativo mas justo: enttäuschend (dececionante), langweilig, vorhersehbar (previsível), zu lang.",
+      "Estrutura: resumo curto, pontos fortes, pontos fracos, veredicto: Insgesamt gebe ich dem Film vier von fünf Sternen."
+     ],
+     "q": "Faz-me uma minicrítica do último filme, série ou livro de que gostaste: um ponto forte, um fraco e as tuas estrelas.",
+     "c": "Escreve uma crítica de cerca de 80 palavras com um adjetivo positivo, um negativo e a expressão Insgesamt..."
+    },
+    "pt_BR": {
+     "t": "Escrever uma resenha",
+     "g": "Escrever uma resenha equilibrada: ein Meisterwerk, spannend, überzeugend, enttäuschend.",
+     "p": [
+      "Positivo: ein Meisterwerk (obra-prima), spannend (empolgante), überzeugend (convincente), gelungen, sehenswert / lesenswert.",
+      "Negativo mas justo: enttäuschend (decepcionante), langweilig, vorhersehbar (previsível), zu lang.",
+      "Estrutura: resumo curto, pontos fortes, pontos fracos, veredito: Insgesamt gebe ich dem Film vier von fünf Sternen."
+     ],
+     "q": "Me faça uma minirresenha do último filme, série ou livro de que você gostou: um ponto forte, um fraco e suas estrelas.",
+     "c": "Escreva uma resenha de umas 80 palavras com um adjetivo positivo, um negativo e a expressão Insgesamt..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ein Meisterwerk",
+      "ex": "Dieser Roman ist ein echtes Meisterwerk."
+     },
+     {
+      "w": "spannend",
+      "ex": "Die Serie war bis zur letzten Folge spannend."
+     },
+     {
+      "w": "überzeugend",
+      "ex": "Die Hauptdarstellerin spielt sehr überzeugend."
+     },
+     {
+      "w": "enttäuschend",
+      "ex": "Das Ende fand ich leider enttäuschend."
+     },
+     {
+      "w": "vorhersehbar",
+      "ex": "Die Handlung ist ziemlich vorhersehbar."
+     },
+     {
+      "w": "insgesamt",
+      "ex": "Insgesamt ist das Buch sehr lesenswert."
+     }
+    ],
+    "gram": "Bewerten mit Adjektiven auf -end (spannend, überzeugend) und -wert (sehenswert, lesenswert); Fazit mit insgesamt."
+   }
+  },
+  {
+   "d": 237,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Idioms with food",
+     "g": "Use food idioms: Das ist nicht mein Bier, alles hat ein Ende, nur die Wurst hat zwei.",
+     "p": [
+      "Das ist nicht mein Bier = that's not my business. Das ist mir Wurst (or wurscht) = I don't mind either way.",
+      "Alles hat ein Ende, nur die Wurst hat zwei = everything ends, only a sausage has two ends: a playful way to say goodbye to something.",
+      "Tomaten auf den Augen haben = not to see the obvious; um den heißen Brei herumreden = to beat around the bush."
+     ],
+     "q": "Which food idiom do you like best? Use one in a little situation from your week.",
+     "c": "Write a short dialogue (four lines) using three of today's food idioms."
+    },
+    "de": {
+     "t": "Redewendungen mit Essen",
+     "g": "Du benutzt Redewendungen mit Essen: Das ist nicht mein Bier, alles hat ein Ende, nur die Wurst hat zwei.",
+     "p": [
+      "Das ist nicht mein Bier = das ist nicht meine Sache. Das ist mir Wurst (wurscht) = das ist mir egal.",
+      "Alles hat ein Ende, nur die Wurst hat zwei: Jede schöne Sache hört einmal auf, mit einem Augenzwinkern gesagt.",
+      "Tomaten auf den Augen haben = etwas Offensichtliches nicht sehen; um den heißen Brei herumreden = nicht direkt sagen."
+     ],
+     "q": "Welche Redewendung mit Essen gefällt dir am besten? Benutze sie in einer kleinen Situation aus deiner Woche.",
+     "c": "Schreib einen kurzen Dialog (vier Zeilen) mit drei Redewendungen von heute."
+    },
+    "es": {
+     "t": "Expresiones con comida",
+     "g": "Usa expresiones con comida: Das ist nicht mein Bier, alles hat ein Ende, nur die Wurst hat zwei.",
+     "p": [
+      "Das ist nicht mein Bier = no es asunto mío. Das ist mir Wurst (o wurscht) = me da igual.",
+      "Alles hat ein Ende, nur die Wurst hat zwei = todo se acaba, solo la salchicha tiene dos extremos: se dice con humor.",
+      "Tomaten auf den Augen haben = no ver lo evidente; um den heißen Brei herumreden = andarse por las ramas."
+     ],
+     "q": "¿Qué expresión con comida te gusta más? Úsala en una pequeña situación de tu semana.",
+     "c": "Escribe un diálogo corto (cuatro líneas) con tres de las expresiones de hoy."
+    },
+    "fr": {
+     "t": "Expressions avec la nourriture",
+     "g": "Utiliser des expressions culinaires : Das ist nicht mein Bier, alles hat ein Ende, nur die Wurst hat zwei.",
+     "p": [
+      "Das ist nicht mein Bier = ce ne sont pas mes oignons. Das ist mir Wurst (ou wurscht) = ça m'est égal.",
+      "Alles hat ein Ende, nur die Wurst hat zwei = tout a une fin, seule la saucisse en a deux : se dit avec humour.",
+      "Tomaten auf den Augen haben = ne pas voir l'évidence ; um den heißen Brei herumreden = tourner autour du pot."
+     ],
+     "q": "Quelle expression culinaire préfères-tu ? Utilise-la dans une petite situation de ta semaine.",
+     "c": "Écris un court dialogue (quatre lignes) avec trois expressions du jour."
+    },
+    "it": {
+     "t": "Modi di dire con il cibo",
+     "g": "Usi modi di dire col cibo: Das ist nicht mein Bier, alles hat ein Ende, nur die Wurst hat zwei.",
+     "p": [
+      "Das ist nicht mein Bier = non sono affari miei. Das ist mir Wurst (o wurscht) = per me è uguale.",
+      "Alles hat ein Ende, nur die Wurst hat zwei = tutto ha una fine, solo la salsiccia ne ha due: si dice scherzando.",
+      "Tomaten auf den Augen haben = non vedere l'ovvio; um den heißen Brei herumreden = menare il can per l'aia."
+     ],
+     "q": "Quale modo di dire col cibo ti piace di più? Usalo in una piccola situazione della tua settimana.",
+     "c": "Scrivi un breve dialogo (quattro righe) con tre modi di dire di oggi."
+    },
+    "pt": {
+     "t": "Expressões com comida",
+     "g": "Usar expressões com comida: Das ist nicht mein Bier, alles hat ein Ende, nur die Wurst hat zwei.",
+     "p": [
+      "Das ist nicht mein Bier = não é assunto meu. Das ist mir Wurst (ou wurscht) = tanto me faz.",
+      "Alles hat ein Ende, nur die Wurst hat zwei = tudo tem um fim, só a salsicha tem dois: diz-se com humor.",
+      "Tomaten auf den Augen haben = não ver o óbvio; um den heißen Brei herumreden = andar com rodeios."
+     ],
+     "q": "Que expressão com comida preferes? Usa-a numa pequena situação da tua semana.",
+     "c": "Escreve um diálogo curto (quatro linhas) com três das expressões de hoje."
+    },
+    "pt_BR": {
+     "t": "Expressões com comida",
+     "g": "Usar expressões com comida: Das ist nicht mein Bier, alles hat ein Ende, nur die Wurst hat zwei.",
+     "p": [
+      "Das ist nicht mein Bier = não é problema meu. Das ist mir Wurst (ou wurscht) = tanto faz.",
+      "Alles hat ein Ende, nur die Wurst hat zwei = tudo tem um fim, só a salsicha tem dois: se diz com humor.",
+      "Tomaten auf den Augen haben = não ver o óbvio; um den heißen Brei herumreden = enrolar, ficar de rodeios."
+     ],
+     "q": "Qual expressão com comida você prefere? Use numa pequena situação da sua semana.",
+     "c": "Escreva um diálogo curto (quatro linhas) com três das expressões de hoje."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Das ist nicht mein Bier.",
+      "ex": "Ob sie umziehen, ist nicht mein Bier."
+     },
+     {
+      "w": "Das ist mir Wurst.",
+      "ex": "Pizza oder Pasta? Das ist mir Wurst."
+     },
+     {
+      "w": "…, nur die Wurst hat zwei",
+      "ex": "Der Urlaub ist vorbei: Alles hat ein Ende, nur die Wurst hat zwei."
+     },
+     {
+      "w": "Tomaten auf den Augen haben",
+      "ex": "Der Schlüssel liegt vor dir! Hast du Tomaten auf den Augen?"
+     },
+     {
+      "w": "um den heißen Brei herumreden",
+      "ex": "Red nicht um den heißen Brei herum, sag es einfach!"
+     },
+     {
+      "w": "in den sauren Apfel beißen",
+      "ex": "Ich muss in den sauren Apfel beißen und aufräumen."
+     }
+    ],
+    "gram": "Redewendungen sind feste Ausdrücke: Wörter nicht ändern; das Verb wird normal konjugiert (Er redet um den heißen Brei herum)."
+   }
+  },
+  {
+   "d": 238,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Idioms with animals",
+     "g": "Use animal idioms: Da steppt der Bär, ich glaub, mein Schwein pfeift.",
+     "p": [
+      "Da steppt der Bär = there's a great party going on. Schwein haben = to be lucky: Da hast du Schwein gehabt!",
+      "Ich glaub, mein Schwein pfeift! = I can't believe it! (surprise or mild outrage, very colloquial).",
+      "Die Katze im Sack kaufen = to buy without checking; zwei Fliegen mit einer Klappe schlagen = to kill two birds with one stone."
+     ],
+     "q": "Tell me about a time when you had Schwein, or a party where der Bär steppte!",
+     "c": "Write four sentences, each with a different animal idiom from today, about your week."
+    },
+    "de": {
+     "t": "Redewendungen mit Tieren",
+     "g": "Du benutzt Redewendungen mit Tieren: Da steppt der Bär, ich glaub, mein Schwein pfeift.",
+     "p": [
+      "Da steppt der Bär = da ist eine tolle Party. Schwein haben = Glück haben: Da hast du Schwein gehabt!",
+      "Ich glaub, mein Schwein pfeift! = Das kann ich nicht glauben! (Überraschung, sehr umgangssprachlich).",
+      "Die Katze im Sack kaufen = etwas ungeprüft kaufen; zwei Fliegen mit einer Klappe schlagen = zwei Dinge auf einmal erledigen."
+     ],
+     "q": "Erzähl mir von einem Moment, in dem du Schwein hattest, oder von einer Party, auf der der Bär steppte!",
+     "c": "Schreib vier Sätze über deine Woche, jeden mit einer anderen Tier-Redewendung von heute."
+    },
+    "es": {
+     "t": "Expresiones con animales",
+     "g": "Usa expresiones con animales: Da steppt der Bär, ich glaub, mein Schwein pfeift.",
+     "p": [
+      "Da steppt der Bär = hay una fiesta estupenda. Schwein haben = tener suerte: Da hast du Schwein gehabt!",
+      "Ich glaub, mein Schwein pfeift! = ¡No me lo puedo creer! (sorpresa, muy coloquial).",
+      "Die Katze im Sack kaufen = comprar sin mirar (dar gato por liebre); zwei Fliegen mit einer Klappe schlagen = matar dos pájaros de un tiro."
+     ],
+     "q": "Cuéntame una vez que tuviste Schwein, o una fiesta donde der Bär steppte!",
+     "c": "Escribe cuatro frases sobre tu semana, cada una con una expresión con animales distinta."
+    },
+    "fr": {
+     "t": "Expressions avec des animaux",
+     "g": "Utiliser des expressions animalières : Da steppt der Bär, ich glaub, mein Schwein pfeift.",
+     "p": [
+      "Da steppt der Bär = ça bouge, il y a une super fête. Schwein haben = avoir de la chance : Da hast du Schwein gehabt !",
+      "Ich glaub, mein Schwein pfeift ! = Je n'en reviens pas ! (surprise, très familier).",
+      "Die Katze im Sack kaufen = acheter les yeux fermés ; zwei Fliegen mit einer Klappe schlagen = faire d'une pierre deux coups."
+     ],
+     "q": "Raconte-moi une fois où tu as eu Schwein, ou une fête où der Bär steppte !",
+     "c": "Écris quatre phrases sur ta semaine, chacune avec une expression animalière différente."
+    },
+    "it": {
+     "t": "Modi di dire con gli animali",
+     "g": "Usi modi di dire con animali: Da steppt der Bär, ich glaub, mein Schwein pfeift.",
+     "p": [
+      "Da steppt der Bär = c'è una festa fantastica. Schwein haben = avere fortuna: Da hast du Schwein gehabt!",
+      "Ich glaub, mein Schwein pfeift! = Non ci posso credere! (sorpresa, molto colloquiale).",
+      "Die Katze im Sack kaufen = comprare a scatola chiusa; zwei Fliegen mit einer Klappe schlagen = prendere due piccioni con una fava."
+     ],
+     "q": "Raccontami di una volta in cui hai avuto Schwein, o di una festa dove der Bär steppte!",
+     "c": "Scrivi quattro frasi sulla tua settimana, ognuna con un modo di dire diverso con animali."
+    },
+    "pt": {
+     "t": "Expressões com animais",
+     "g": "Usar expressões com animais: Da steppt der Bär, ich glaub, mein Schwein pfeift.",
+     "p": [
+      "Da steppt der Bär = há uma festa ótima. Schwein haben = ter sorte: Da hast du Schwein gehabt!",
+      "Ich glaub, mein Schwein pfeift! = Não acredito! (surpresa, muito coloquial).",
+      "Die Katze im Sack kaufen = comprar sem ver; zwei Fliegen mit einer Klappe schlagen = matar dois coelhos de uma cajadada."
+     ],
+     "q": "Conta-me uma vez em que tiveste Schwein, ou uma festa onde der Bär steppte!",
+     "c": "Escreve quatro frases sobre a tua semana, cada uma com uma expressão com animais diferente."
+    },
+    "pt_BR": {
+     "t": "Expressões com animais",
+     "g": "Usar expressões com animais: Da steppt der Bär, ich glaub, mein Schwein pfeift.",
+     "p": [
+      "Da steppt der Bär = a festa está bombando. Schwein haben = ter sorte: Da hast du Schwein gehabt!",
+      "Ich glaub, mein Schwein pfeift! = Não acredito! (surpresa, bem coloquial).",
+      "Die Katze im Sack kaufen = comprar sem ver; zwei Fliegen mit einer Klappe schlagen = matar dois coelhos com uma cajadada só."
+     ],
+     "q": "Me conte uma vez em que você teve Schwein, ou uma festa onde der Bär steppte!",
+     "c": "Escreva quatro frases sobre sua semana, cada uma com uma expressão com animais diferente."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Da steppt der Bär.",
+      "ex": "Komm am Samstag mit, da steppt der Bär!"
+     },
+     {
+      "w": "Ich glaub, mein Schwein pfeift!",
+      "ex": "Du hast schon alles aufgeräumt? Ich glaub, mein Schwein pfeift!"
+     },
+     {
+      "w": "Schwein haben",
+      "ex": "Wir haben Schwein gehabt, der Zug hatte Verspätung."
+     },
+     {
+      "w": "die Katze im Sack kaufen",
+      "ex": "Ich will das Auto erst sehen, ich kaufe nicht die Katze im Sack."
+     },
+     {
+      "w": "zwei Fliegen mit einer Klappe",
+      "ex": "Ich gehe zu Fuß und schlage zwei Fliegen mit einer Klappe."
+     },
+     {
+      "w": "mit den Hühnern ins Bett gehen",
+      "ex": "Im Urlaub gehe ich mit den Hühnern ins Bett."
+     }
+    ],
+    "gram": "Umgangssprache: Tier-Redewendungen sind informell; im Perfekt: Ich habe Schwein gehabt (haben + Partizip II)."
+   }
+  },
+  {
+   "d": 239,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Idioms with body parts",
+     "g": "Use body idioms: Daumen drücken, Hals- und Beinbruch, jemanden auf den Arm nehmen.",
+     "p": [
+      "Ich drücke dir die Daumen! = I'll keep my fingers crossed for you. Hals- und Beinbruch! = Good luck! (like break a leg).",
+      "Jemanden auf den Arm nehmen = to pull someone's leg: Du nimmst mich auf den Arm! = You're kidding me!",
+      "Die Nase voll haben = to be fed up; ein Auge zudrücken = to turn a blind eye kindly; Hand aufs Herz = honestly."
+     ],
+     "q": "Who will you drücken die Daumen this week, and for what? Tell me with Ich drücke ... die Daumen, weil...",
+     "c": "Write a short message to a friend before an exam using two body idioms from today."
+    },
+    "de": {
+     "t": "Redewendungen mit Körperteilen",
+     "g": "Du benutzt Redewendungen mit Körperteilen: Daumen drücken, Hals- und Beinbruch, jemanden auf den Arm nehmen.",
+     "p": [
+      "Ich drücke dir die Daumen! = Ich wünsche dir Glück. Hals- und Beinbruch! = Viel Erfolg! (vor Prüfungen, Auftritten).",
+      "Jemanden auf den Arm nehmen = jemanden veräppeln: Du nimmst mich auf den Arm! = Das ist doch ein Witz!",
+      "Die Nase voll haben = genug haben; ein Auge zudrücken = großzügig sein; Hand aufs Herz = ganz ehrlich."
+     ],
+     "q": "Wem drückst du diese Woche die Daumen und wofür? Erzähl mit Ich drücke ... die Daumen, weil...",
+     "c": "Schreib einer Freundin vor einer Prüfung eine kurze Nachricht mit zwei Redewendungen von heute."
+    },
+    "es": {
+     "t": "Expresiones con partes del cuerpo",
+     "g": "Usa expresiones con el cuerpo: Daumen drücken, Hals- und Beinbruch, jemanden auf den Arm nehmen.",
+     "p": [
+      "Ich drücke dir die Daumen! = ¡Cruzo los dedos por ti! Hals- und Beinbruch! = ¡Mucha suerte! (antes de exámenes o actuaciones).",
+      "Jemanden auf den Arm nehmen = tomar el pelo a alguien: Du nimmst mich auf den Arm! = ¡Me estás tomando el pelo!",
+      "Die Nase voll haben = estar harto; ein Auge zudrücken = hacer la vista gorda; Hand aufs Herz = con la mano en el corazón."
+     ],
+     "q": "¿A quién vas a drücken die Daumen esta semana y por qué? Dímelo con Ich drücke ... die Daumen, weil...",
+     "c": "Escribe un mensaje corto a una amiga antes de un examen con dos expresiones de hoy."
+    },
+    "fr": {
+     "t": "Expressions avec les parties du corps",
+     "g": "Utiliser des expressions du corps : Daumen drücken, Hals- und Beinbruch, jemanden auf den Arm nehmen.",
+     "p": [
+      "Ich drücke dir die Daumen ! = Je croise les doigts pour toi ! Hals- und Beinbruch ! = Bonne chance ! (comme merde au théâtre).",
+      "Jemanden auf den Arm nehmen = faire marcher quelqu'un : Du nimmst mich auf den Arm ! = Tu te moques de moi !",
+      "Die Nase voll haben = en avoir marre ; ein Auge zudrücken = fermer les yeux ; Hand aufs Herz = la main sur le cœur."
+     ],
+     "q": "Pour qui vas-tu drücken die Daumen cette semaine, et pourquoi ? Dis-le avec Ich drücke ... die Daumen, weil...",
+     "c": "Écris un court message à une amie avant un examen avec deux expressions du jour."
+    },
+    "it": {
+     "t": "Modi di dire con il corpo",
+     "g": "Usi modi di dire col corpo: Daumen drücken, Hals- und Beinbruch, jemanden auf den Arm nehmen.",
+     "p": [
+      "Ich drücke dir die Daumen! = Incrocio le dita per te! Hals- und Beinbruch! = In bocca al lupo! (prima di esami o spettacoli).",
+      "Jemanden auf den Arm nehmen = prendere in giro qualcuno: Du nimmst mich auf den Arm! = Mi stai prendendo in giro!",
+      "Die Nase voll haben = essere stufo; ein Auge zudrücken = chiudere un occhio; Hand aufs Herz = con la mano sul cuore."
+     ],
+     "q": "Per chi drückst du die Daumen questa settimana e perché? Dimmelo con Ich drücke ... die Daumen, weil...",
+     "c": "Scrivi un breve messaggio a un'amica prima di un esame con due modi di dire di oggi."
+    },
+    "pt": {
+     "t": "Expressões com partes do corpo",
+     "g": "Usar expressões com o corpo: Daumen drücken, Hals- und Beinbruch, jemanden auf den Arm nehmen.",
+     "p": [
+      "Ich drücke dir die Daumen! = Figas por ti! / Torço por ti! Hals- und Beinbruch! = Boa sorte! (antes de exames ou atuações).",
+      "Jemanden auf den Arm nehmen = gozar com alguém: Du nimmst mich auf den Arm! = Estás a brincar comigo!",
+      "Die Nase voll haben = estar farto; ein Auge zudrücken = fazer vista grossa; Hand aufs Herz = com a mão no coração."
+     ],
+     "q": "Por quem vais drücken die Daumen esta semana e porquê? Diz-me com Ich drücke ... die Daumen, weil...",
+     "c": "Escreve uma mensagem curta a uma amiga antes de um exame com duas expressões de hoje."
+    },
+    "pt_BR": {
+     "t": "Expressões com partes do corpo",
+     "g": "Usar expressões com o corpo: Daumen drücken, Hals- und Beinbruch, jemanden auf den Arm nehmen.",
+     "p": [
+      "Ich drücke dir die Daumen! = Vou torcer por você! Hals- und Beinbruch! = Boa sorte! (antes de provas ou apresentações).",
+      "Jemanden auf den Arm nehmen = tirar sarro de alguém: Du nimmst mich auf den Arm! = Você está brincando comigo!",
+      "Die Nase voll haben = estar de saco cheio; ein Auge zudrücken = fazer vista grossa; Hand aufs Herz = com a mão no coração."
+     ],
+     "q": "Por quem você vai drücken die Daumen esta semana e por quê? Me diga com Ich drücke ... die Daumen, weil...",
+     "c": "Escreva uma mensagem curta para uma amiga antes de uma prova com duas expressões de hoje."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Daumen drücken",
+      "ex": "Morgen ist dein Vorstellungsgespräch? Ich drücke dir die Daumen!"
+     },
+     {
+      "w": "Hals- und Beinbruch!",
+      "ex": "Viel Glück beim Konzert heute Abend, Hals- und Beinbruch!"
+     },
+     {
+      "w": "jemanden auf den Arm nehmen",
+      "ex": "Du hast im Lotto gewonnen? Du nimmst mich auf den Arm!"
+     },
+     {
+      "w": "die Nase voll haben",
+      "ex": "Ich habe die Nase voll vom Regen."
+     },
+     {
+      "w": "ein Auge zudrücken",
+      "ex": "Diesmal drücke ich noch ein Auge zu."
+     },
+     {
+      "w": "Hand aufs Herz",
+      "ex": "Hand aufs Herz: Hast du das ganze Buch gelesen?"
+     }
+    ],
+    "gram": "Dativ bei Redewendungen: Ich drücke dir die Daumen (wem? dir); trennbar: Ich drücke ein Auge zu."
+   }
+  },
+  {
+   "d": 240,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Expressing surprise",
+     "g": "React with surprise in natural German: Echt? Wahnsinn! Das gibt's doch nicht!",
+     "p": [
+      "Short reactions: Echt? Wirklich? Ach so! Na so was! Krass! (young, informal) Wahnsinn! (amazing, can be positive or negative).",
+      "Disbelief: Das gibt's doch nicht! Nicht im Ernst! Du machst Witze! Das hätte ich nicht gedacht!",
+      "Tone matters: a rising voice for questions (Echt?), a falling one for exclamations (Wahnsinn!). Use doch and ja for emphasis."
+     ],
+     "q": "Tell me some surprising news (real or invented) and I will react; then you react to mine with today's phrases!",
+     "c": "Write five short news sentences and a different surprise reaction for each one."
+    },
+    "de": {
+     "t": "Überraschung ausdrücken",
+     "g": "Du reagierst überrascht und natürlich: Echt? Wahnsinn! Das gibt's doch nicht!",
+     "p": [
+      "Kurze Reaktionen: Echt? Wirklich? Ach so! Na so was! Krass! (jung, locker) Wahnsinn! (positiv oder negativ möglich).",
+      "Unglaube: Das gibt's doch nicht! Nicht im Ernst! Du machst Witze! Das hätte ich nicht gedacht!",
+      "Der Ton zählt: Stimme hoch bei Fragen (Echt?), runter bei Ausrufen (Wahnsinn!). Doch und ja verstärken."
+     ],
+     "q": "Erzähl mir eine überraschende Neuigkeit (echt oder erfunden), ich reagiere; dann reagierst du auf meine mit den Ausdrücken von heute!",
+     "c": "Schreib fünf kurze Neuigkeiten und zu jeder eine andere überraschte Reaktion."
+    },
+    "es": {
+     "t": "Expresar sorpresa",
+     "g": "Reacciona con sorpresa de forma natural: Echt? Wahnsinn! Das gibt's doch nicht!",
+     "p": [
+      "Reacciones cortas: Echt? Wirklich? Ach so! Na so was! Krass! (juvenil) Wahnsinn! (increíble, positivo o negativo).",
+      "Incredulidad: Das gibt's doch nicht! (¡No puede ser!) Nicht im Ernst! Du machst Witze! Das hätte ich nicht gedacht!",
+      "El tono importa: sube en las preguntas (Echt?) y baja en las exclamaciones (Wahnsinn!). Doch y ja refuerzan."
+     ],
+     "q": "Cuéntame una noticia sorprendente (real o inventada) y yo reacciono; luego tú reaccionas a la mía con las frases de hoy.",
+     "c": "Escribe cinco noticias cortas y una reacción de sorpresa distinta para cada una."
+    },
+    "fr": {
+     "t": "Exprimer la surprise",
+     "g": "Réagir avec surprise en allemand naturel : Echt? Wahnsinn! Das gibt's doch nicht!",
+     "p": [
+      "Réactions courtes : Echt ? Wirklich ? Ach so ! Na so was ! Krass ! (jeune) Wahnsinn ! (dingue, positif ou négatif).",
+      "Incrédulité : Das gibt's doch nicht ! (C'est pas vrai !) Nicht im Ernst ! Du machst Witze ! Das hätte ich nicht gedacht !",
+      "Le ton compte : il monte pour une question (Echt ?), descend pour une exclamation (Wahnsinn !). Doch et ja renforcent."
+     ],
+     "q": "Raconte-moi une nouvelle surprenante (vraie ou inventée), je réagis ; puis tu réagis à la mienne avec les phrases du jour !",
+     "c": "Écris cinq courtes nouvelles et une réaction de surprise différente pour chacune."
+    },
+    "it": {
+     "t": "Esprimere sorpresa",
+     "g": "Reagisci con sorpresa in modo naturale: Echt? Wahnsinn! Das gibt's doch nicht!",
+     "p": [
+      "Reazioni brevi: Echt? Wirklich? Ach so! Na so was! Krass! (giovanile) Wahnsinn! (pazzesco, positivo o negativo).",
+      "Incredulità: Das gibt's doch nicht! (Non ci credo!) Nicht im Ernst! Du machst Witze! Das hätte ich nicht gedacht!",
+      "Il tono conta: sale nelle domande (Echt?), scende nelle esclamazioni (Wahnsinn!). Doch e ja rafforzano."
+     ],
+     "q": "Raccontami una notizia sorprendente (vera o inventata) e io reagisco; poi tu reagisci alla mia con le frasi di oggi!",
+     "c": "Scrivi cinque brevi notizie e una reazione di sorpresa diversa per ciascuna."
+    },
+    "pt": {
+     "t": "Exprimir surpresa",
+     "g": "Reagir com surpresa em alemão natural: Echt? Wahnsinn! Das gibt's doch nicht!",
+     "p": [
+      "Reações curtas: Echt? Wirklich? Ach so! Na so was! Krass! (jovem) Wahnsinn! (incrível, positivo ou negativo).",
+      "Incredulidade: Das gibt's doch nicht! (Não pode ser!) Nicht im Ernst! Du machst Witze! Das hätte ich nicht gedacht!",
+      "O tom conta: sobe nas perguntas (Echt?), desce nas exclamações (Wahnsinn!). Doch e ja reforçam."
+     ],
+     "q": "Conta-me uma notícia surpreendente (real ou inventada) e eu reajo; depois reages à minha com as frases de hoje!",
+     "c": "Escreve cinco notícias curtas e uma reação de surpresa diferente para cada uma."
+    },
+    "pt_BR": {
+     "t": "Expressar surpresa",
+     "g": "Reagir com surpresa em alemão natural: Echt? Wahnsinn! Das gibt's doch nicht!",
+     "p": [
+      "Reações curtas: Echt? Wirklich? Ach so! Na so was! Krass! (jovem) Wahnsinn! (incrível, positivo ou negativo).",
+      "Descrença: Das gibt's doch nicht! (Não acredito!) Nicht im Ernst! Du machst Witze! Das hätte ich nicht gedacht!",
+      "O tom importa: sobe nas perguntas (Echt?), desce nas exclamações (Wahnsinn!). Doch e ja reforçam."
+     ],
+     "q": "Me conte uma notícia surpreendente (real ou inventada) e eu reajo; depois você reage à minha com as frases de hoje!",
+     "c": "Escreva cinco notícias curtas e uma reação de surpresa diferente para cada uma."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Echt?",
+      "ex": "Du fährst nach Australien? Echt?"
+     },
+     {
+      "w": "Wahnsinn!",
+      "ex": "Du hast den Marathon geschafft? Wahnsinn!"
+     },
+     {
+      "w": "Das gibt's doch nicht!",
+      "ex": "Wir wohnen in derselben Straße? Das gibt's doch nicht!"
+     },
+     {
+      "w": "Nicht im Ernst!",
+      "ex": "Das Konzert ist schon ausverkauft? Nicht im Ernst!"
+     },
+     {
+      "w": "Na so was!",
+      "ex": "Na so was, du hier in Leipzig!"
+     },
+     {
+      "w": "Das hätte ich nicht gedacht.",
+      "ex": "Du kochst so gut? Das hätte ich nicht gedacht!"
+     }
+    ],
+    "gram": "Modalpartikel doch verstärkt Überraschung (Das gibt's doch nicht!); Konjunktiv II: Das hätte ich nicht gedacht."
+   }
+  }
+ ]
+}

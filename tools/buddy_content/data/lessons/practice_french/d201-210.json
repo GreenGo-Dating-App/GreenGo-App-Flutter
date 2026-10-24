@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_french",
+ "lessons": [
+  {
+   "d": 201,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Reported speech: present",
+     "g": "Report what people say now: il dit que..., elle demande si...",
+     "p": [
+      "Statements: il dit que + same tense: « Je suis fatigué » → il dit qu'il est fatigué.",
+      "Yes/no questions use si: « Tu viens ? » → elle demande si je viens. Other questions keep the word: où, quand.",
+      "Change the pronouns and possessives: « J'aime ma ville » → il dit qu'il aime sa ville."
+     ],
+     "q": "What does your best friend often say? Report it: il ou elle dit toujours que...",
+     "c": "Report five sentences from a conversation today using il dit que, elle demande si and il demande où."
+    },
+    "de": {
+     "t": "Indirekte Rede: Präsens",
+     "g": "Du gibst wieder, was jemand gerade sagt: il dit que..., elle demande si...",
+     "p": [
+      "Aussagen: il dit que + gleiche Zeit: « Je suis fatigué » → il dit qu'il est fatigué.",
+      "Ja/Nein-Fragen mit si: « Tu viens ? » → elle demande si je viens. Fragewörter bleiben: où, quand.",
+      "Pronomen und Possessiva ändern sich: « J'aime ma ville » → il dit qu'il aime sa ville."
+     ],
+     "q": "Was sagt dein bester Freund oft? Gib es wieder: il ou elle dit toujours que...",
+     "c": "Gib fünf Sätze aus einem Gespräch wieder mit il dit que, elle demande si und il demande où."
+    },
+    "es": {
+     "t": "Estilo indirecto: presente",
+     "g": "Cuenta lo que alguien dice ahora: il dit que..., elle demande si...",
+     "p": [
+      "Afirmaciones: il dit que + mismo tiempo: « Je suis fatigué » → il dit qu'il est fatigué.",
+      "Preguntas de sí o no con si: « Tu viens ? » → elle demande si je viens. Otras mantienen où, quand.",
+      "Cambian pronombres y posesivos: « J'aime ma ville » → il dit qu'il aime sa ville."
+     ],
+     "q": "¿Qué dice a menudo tu mejor amigo? Cuéntalo: il ou elle dit toujours que...",
+     "c": "Cuenta cinco frases de una conversación de hoy con il dit que, elle demande si e il demande où."
+    },
+    "fr": {
+     "t": "Le discours indirect au présent",
+     "g": "Rapporter ce que quelqu'un dit : il dit que..., elle demande si...",
+     "p": [
+      "Affirmation : il dit que + même temps : « Je suis fatigué » → il dit qu'il est fatigué.",
+      "Question fermée avec si : « Tu viens ? » → elle demande si je viens. Sinon on garde où, quand, pourquoi.",
+      "Pronoms et possessifs changent : « J'aime ma ville » → il dit qu'il aime sa ville."
+     ],
+     "q": "Que dit souvent ton meilleur ami ? Rapporte-le : il ou elle dit toujours que...",
+     "c": "Rapporte cinq phrases d'une conversation d'aujourd'hui avec il dit que, elle demande si et il demande où."
+    },
+    "it": {
+     "t": "Discorso indiretto: presente",
+     "g": "Riferisci ciò che qualcuno dice ora: il dit que..., elle demande si...",
+     "p": [
+      "Affermazioni: il dit que + stesso tempo: « Je suis fatigué » → il dit qu'il est fatigué.",
+      "Domande sì/no con si: « Tu viens ? » → elle demande si je viens. Le altre tengono où, quand.",
+      "Cambiano pronomi e possessivi: « J'aime ma ville » → il dit qu'il aime sa ville."
+     ],
+     "q": "Cosa dice spesso il tuo migliore amico? Riferiscilo: il ou elle dit toujours que...",
+     "c": "Riferisci cinque frasi di una conversazione di oggi con il dit que, elle demande si e il demande où."
+    },
+    "pt": {
+     "t": "Discurso indireto: presente",
+     "g": "Conta o que alguém diz agora: il dit que..., elle demande si...",
+     "p": [
+      "Afirmações: il dit que + mesmo tempo: « Je suis fatigué » → il dit qu'il est fatigué.",
+      "Perguntas de sim ou não com si: « Tu viens ? » → elle demande si je viens. As outras mantêm où, quand.",
+      "Mudam os pronomes e possessivos: « J'aime ma ville » → il dit qu'il aime sa ville."
+     ],
+     "q": "O que diz muitas vezes o teu melhor amigo? Conta: il ou elle dit toujours que...",
+     "c": "Relata cinco frases de uma conversa de hoje com il dit que, elle demande si e il demande où."
+    },
+    "pt_BR": {
+     "t": "Discurso indireto: presente",
+     "g": "Conte o que alguém diz agora: il dit que..., elle demande si...",
+     "p": [
+      "Afirmações: il dit que + mesmo tempo: « Je suis fatigué » → il dit qu'il est fatigué.",
+      "Perguntas de sim ou não com si: « Tu viens ? » → elle demande si je viens. As outras mantêm où, quand.",
+      "Mudam os pronomes e possessivos: « J'aime ma ville » → il dit qu'il aime sa ville."
+     ],
+     "q": "O que seu melhor amigo diz sempre? Conte: il ou elle dit toujours que...",
+     "c": "Relate cinco frases de uma conversa de hoje com il dit que, elle demande si e il demande où."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il dit que",
+      "ex": "Il dit qu'il arrive dans dix minutes."
+     },
+     {
+      "w": "elle demande si",
+      "ex": "Elle demande si tu veux du thé."
+     },
+     {
+      "w": "il demande où",
+      "ex": "Il demande où se trouve la poste."
+     },
+     {
+      "w": "elle explique que",
+      "ex": "Elle explique que le magasin ferme à midi."
+     },
+     {
+      "w": "il répond que",
+      "ex": "Il répond qu'il n'a pas le temps."
+     },
+     {
+      "w": "elle veut savoir",
+      "ex": "Elle veut savoir quand nous partons."
+     }
+    ],
+    "gram": "Discours indirect au présent : dire que, demander si / où / quand ; même temps, mais pronoms et possessifs adaptés."
+   }
+  },
+  {
+   "d": 202,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Reported speech: past",
+     "g": "Change tenses when the reporting verb is in the past: il a dit qu'il viendrait.",
+     "p": [
+      "Présent → imparfait: « Je suis prêt » → il a dit qu'il était prêt.",
+      "Passé composé → plus-que-parfait: « J'ai fini » → elle a dit qu'elle avait fini.",
+      "Futur → conditionnel: « Je viendrai » → il a dit qu'il viendrait. Also demain → le lendemain, hier → la veille."
+     ],
+     "q": "What did someone tell you yesterday? Report it with il ou elle m'a dit que... and the right tense.",
+     "c": "Report four quotes in the past: one present, one passé composé, one future, one with demain."
+    },
+    "de": {
+     "t": "Indirekte Rede: Vergangenheit",
+     "g": "Du verschiebst die Zeiten, wenn das Einleitungsverb in der Vergangenheit steht.",
+     "p": [
+      "Präsens → Imparfait: « Je suis prêt » → il a dit qu'il était prêt.",
+      "Passé composé → Plus-que-parfait: « J'ai fini » → elle a dit qu'elle avait fini.",
+      "Futur → Konditional: « Je viendrai » → il a dit qu'il viendrait. Auch demain → le lendemain, hier → la veille."
+     ],
+     "q": "Was hat dir gestern jemand gesagt? Gib es wieder mit il ou elle m'a dit que... in der richtigen Zeit.",
+     "c": "Gib vier Zitate in der Vergangenheit wieder: Präsens, passé composé, Futur und einmal mit demain."
+    },
+    "es": {
+     "t": "Estilo indirecto: pasado",
+     "g": "Cambia los tiempos cuando el verbo introductor está en pasado: il a dit qu'il viendrait.",
+     "p": [
+      "Presente → imparfait: « Je suis prêt » → il a dit qu'il était prêt.",
+      "Passé composé → plus-que-parfait: « J'ai fini » → elle a dit qu'elle avait fini.",
+      "Futuro → condicional: « Je viendrai » → il a dit qu'il viendrait. Y demain → le lendemain, hier → la veille."
+     ],
+     "q": "¿Qué te dijo alguien ayer? Cuéntalo con il ou elle m'a dit que... y el tiempo correcto.",
+     "c": "Cuenta cuatro citas en pasado: una en presente, una en passé composé, una en futuro y otra con demain."
+    },
+    "fr": {
+     "t": "Le discours indirect au passé",
+     "g": "Faire la concordance des temps : il a dit qu'il viendrait.",
+     "p": [
+      "Présent → imparfait : « Je suis prêt » → il a dit qu'il était prêt.",
+      "Passé composé → plus-que-parfait : « J'ai fini » → elle a dit qu'elle avait fini.",
+      "Futur → conditionnel : « Je viendrai » → il a dit qu'il viendrait. Et demain → le lendemain, hier → la veille."
+     ],
+     "q": "Qu'est-ce qu'on t'a dit hier ? Rapporte-le avec il ou elle m'a dit que... et le bon temps.",
+     "c": "Rapporte quatre citations au passé : un présent, un passé composé, un futur et une phrase avec demain."
+    },
+    "it": {
+     "t": "Discorso indiretto: passato",
+     "g": "Cambia i tempi quando il verbo introduttivo è al passato: il a dit qu'il viendrait.",
+     "p": [
+      "Presente → imparfait: « Je suis prêt » → il a dit qu'il était prêt.",
+      "Passé composé → plus-que-parfait: « J'ai fini » → elle a dit qu'elle avait fini.",
+      "Futuro → condizionale: « Je viendrai » → il a dit qu'il viendrait. E demain → le lendemain, hier → la veille."
+     ],
+     "q": "Cosa ti ha detto qualcuno ieri? Riferiscilo con il ou elle m'a dit que... e il tempo giusto.",
+     "c": "Riferisci quattro citazioni al passato: un presente, un passé composé, un futuro e una con demain."
+    },
+    "pt": {
+     "t": "Discurso indireto: passado",
+     "g": "Muda os tempos quando o verbo introdutor está no passado: il a dit qu'il viendrait.",
+     "p": [
+      "Presente → imparfait: « Je suis prêt » → il a dit qu'il était prêt.",
+      "Passé composé → plus-que-parfait: « J'ai fini » → elle a dit qu'elle avait fini.",
+      "Futuro → condicional: « Je viendrai » → il a dit qu'il viendrait. E demain → le lendemain, hier → la veille."
+     ],
+     "q": "O que te disse alguém ontem? Conta com il ou elle m'a dit que... e o tempo certo.",
+     "c": "Relata quatro citações no passado: um presente, um passé composé, um futuro e uma com demain."
+    },
+    "pt_BR": {
+     "t": "Discurso indireto: passado",
+     "g": "Mude os tempos quando o verbo introdutor está no passado: il a dit qu'il viendrait.",
+     "p": [
+      "Presente → imparfait: « Je suis prêt » → il a dit qu'il était prêt.",
+      "Passé composé → plus-que-parfait: « J'ai fini » → elle a dit qu'elle avait fini.",
+      "Futuro → condicional: « Je viendrai » → il a dit qu'il viendrait. E demain → le lendemain, hier → la veille."
+     ],
+     "q": "O que alguém te disse ontem? Conte com il ou elle m'a dit que... e o tempo certo.",
+     "c": "Relate quatro citações no passado: um presente, um passé composé, um futuro e uma com demain."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il a dit qu'il viendrait",
+      "ex": "Il a dit qu'il viendrait vers huit heures."
+     },
+     {
+      "w": "elle a expliqué que",
+      "ex": "Elle a expliqué qu'elle était malade."
+     },
+     {
+      "w": "il m'a dit qu'il avait",
+      "ex": "Il m'a dit qu'il avait perdu ses clés."
+     },
+     {
+      "w": "le lendemain",
+      "ex": "Elle a dit qu'elle partirait le lendemain."
+     },
+     {
+      "w": "la veille",
+      "ex": "Il a raconté qu'il était arrivé la veille."
+     },
+     {
+      "w": "ils ont annoncé que",
+      "ex": "Ils ont annoncé qu'ils se mariaient en été."
+     }
+    ],
+    "gram": "Concordance au passé : présent → imparfait, passé composé → plus-que-parfait, futur → conditionnel ; demain → le lendemain."
+   }
+  },
+  {
+   "d": 203,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Reported questions and orders",
+     "g": "Report questions and instructions: il m'a demandé où..., elle m'a dit de...",
+     "p": [
+      "Questions: « Où habites-tu ? » → il m'a demandé où j'habitais. No inversion, no question mark.",
+      "Qu'est-ce que → ce que, qu'est-ce qui → ce qui: il m'a demandé ce que je voulais.",
+      "Orders: dire de / demander de + infinitive: « Ferme la porte ! » → elle m'a dit de fermer la porte."
+     ],
+     "q": "What did your teacher or boss ask you to do recently? Use il ou elle m'a demandé de...",
+     "c": "Report three questions (où, ce que, si) and three orders (dire de, demander de, conseiller de)."
+    },
+    "de": {
+     "t": "Indirekte Fragen und Aufforderungen",
+     "g": "Du gibst Fragen und Anweisungen wieder: il m'a demandé où..., elle m'a dit de...",
+     "p": [
+      "Fragen: « Où habites-tu ? » → il m'a demandé où j'habitais. Keine Inversion, kein Fragezeichen.",
+      "Qu'est-ce que → ce que, qu'est-ce qui → ce qui: il m'a demandé ce que je voulais.",
+      "Aufforderungen: dire de / demander de + Infinitiv: « Ferme la porte ! » → elle m'a dit de fermer la porte."
+     ],
+     "q": "Worum hat dich kürzlich dein Lehrer oder Chef gebeten? Nutze il ou elle m'a demandé de...",
+     "c": "Gib drei Fragen (où, ce que, si) und drei Aufforderungen (dire de, demander de, conseiller de) wieder."
+    },
+    "es": {
+     "t": "Preguntas y órdenes indirectas",
+     "g": "Cuenta preguntas e instrucciones: il m'a demandé où..., elle m'a dit de...",
+     "p": [
+      "Preguntas: « Où habites-tu ? » → il m'a demandé où j'habitais. Sin inversión ni signo de pregunta.",
+      "Qu'est-ce que → ce que, qu'est-ce qui → ce qui: il m'a demandé ce que je voulais.",
+      "Órdenes: dire de / demander de + infinitivo: « Ferme la porte ! » → elle m'a dit de fermer la porte."
+     ],
+     "q": "¿Qué te pidió hacer tu profesor o jefe hace poco? Usa il ou elle m'a demandé de...",
+     "c": "Cuenta tres preguntas (où, ce que, si) y tres órdenes (dire de, demander de, conseiller de)."
+    },
+    "fr": {
+     "t": "Questions et ordres rapportés",
+     "g": "Rapporter des questions et des consignes : il m'a demandé où..., elle m'a dit de...",
+     "p": [
+      "Questions : « Où habites-tu ? » → il m'a demandé où j'habitais. Pas d'inversion, pas de point d'interrogation.",
+      "Qu'est-ce que → ce que, qu'est-ce qui → ce qui : il m'a demandé ce que je voulais.",
+      "Ordres : dire de / demander de + infinitif : « Ferme la porte ! » → elle m'a dit de fermer la porte."
+     ],
+     "q": "Qu'est-ce que ton professeur ou ton chef t'a demandé de faire récemment ? Il ou elle m'a demandé de...",
+     "c": "Rapporte trois questions (où, ce que, si) et trois ordres (dire de, demander de, conseiller de)."
+    },
+    "it": {
+     "t": "Domande e ordini indiretti",
+     "g": "Riferisci domande e istruzioni: il m'a demandé où..., elle m'a dit de...",
+     "p": [
+      "Domande: « Où habites-tu ? » → il m'a demandé où j'habitais. Niente inversione né punto di domanda.",
+      "Qu'est-ce que → ce que, qu'est-ce qui → ce qui: il m'a demandé ce que je voulais.",
+      "Ordini: dire de / demander de + infinito: « Ferme la porte ! » → elle m'a dit de fermer la porte."
+     ],
+     "q": "Cosa ti ha chiesto di fare di recente il tuo insegnante o capo? Usa il ou elle m'a demandé de...",
+     "c": "Riferisci tre domande (où, ce que, si) e tre ordini (dire de, demander de, conseiller de)."
+    },
+    "pt": {
+     "t": "Perguntas e ordens indiretas",
+     "g": "Relata perguntas e instruções: il m'a demandé où..., elle m'a dit de...",
+     "p": [
+      "Perguntas: « Où habites-tu ? » → il m'a demandé où j'habitais. Sem inversão nem ponto de interrogação.",
+      "Qu'est-ce que → ce que, qu'est-ce qui → ce qui: il m'a demandé ce que je voulais.",
+      "Ordens: dire de / demander de + infinitivo: « Ferme la porte ! » → elle m'a dit de fermer la porte."
+     ],
+     "q": "O que te pediu o teu professor ou chefe recentemente? Usa il ou elle m'a demandé de...",
+     "c": "Relata três perguntas (où, ce que, si) e três ordens (dire de, demander de, conseiller de)."
+    },
+    "pt_BR": {
+     "t": "Perguntas e ordens indiretas",
+     "g": "Relate perguntas e instruções: il m'a demandé où..., elle m'a dit de...",
+     "p": [
+      "Perguntas: « Où habites-tu ? » → il m'a demandé où j'habitais. Sem inversão nem ponto de interrogação.",
+      "Qu'est-ce que → ce que, qu'est-ce qui → ce qui: il m'a demandé ce que je voulais.",
+      "Ordens: dire de / demander de + infinitivo: « Ferme la porte ! » → elle m'a dit de fermer la porte."
+     ],
+     "q": "O que seu professor ou chefe te pediu recentemente? Use il ou elle m'a demandé de...",
+     "c": "Relate três perguntas (où, ce que, si) e três ordens (dire de, demander de, conseiller de)."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il m'a demandé où",
+      "ex": "Il m'a demandé où j'avais acheté ce pull."
+     },
+     {
+      "w": "elle m'a demandé ce que",
+      "ex": "Elle m'a demandé ce que je faisais ce soir."
+     },
+     {
+      "w": "il voulait savoir si",
+      "ex": "Il voulait savoir si j'aimais le jazz."
+     },
+     {
+      "w": "elle m'a dit de",
+      "ex": "Elle m'a dit de fermer la fenêtre."
+     },
+     {
+      "w": "il m'a demandé de",
+      "ex": "Mon chef m'a demandé de préparer la réunion."
+     },
+     {
+      "w": "conseiller de",
+      "ex": "Le médecin m'a conseillé de marcher davantage."
+     }
+    ],
+    "gram": "Question rapportée : demander où / si / ce que, sans inversion. Ordre rapporté : dire de, demander de + infinitif."
+   }
+  },
+  {
+   "d": 204,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Gérondif: en + -ant",
+     "g": "Use the gérondif to say how or while you do something.",
+     "p": [
+      "Form: en + nous stem + -ant: nous marchons → en marchant, nous lisons → en lisant, nous faisons → en faisant.",
+      "Irregular: être → en étant, avoir → en ayant, savoir → en sachant.",
+      "Uses: at the same time (je chante en cuisinant), how (j'apprends en écoutant), condition (en partant tôt, tu...)."
+     ],
+     "q": "What do you do while you cook or travel? Answer with two gérondifs: en écoutant..., en regardant...",
+     "c": "Write five sentences about how you learn French: j'apprends en lisant, en..., en..."
+    },
+    "de": {
+     "t": "Gérondif: en + -ant",
+     "g": "Du sagst mit dem Gérondif, wie oder während du etwas tust.",
+     "p": [
+      "Bildung: en + nous-Stamm + -ant: nous marchons → en marchant, nous lisons → en lisant, nous faisons → en faisant.",
+      "Unregelmäßig: être → en étant, avoir → en ayant, savoir → en sachant.",
+      "Gleichzeitig (je chante en cuisinant), Art und Weise (j'apprends en écoutant), Bedingung (en partant tôt...)."
+     ],
+     "q": "Was machst du beim Kochen oder Reisen nebenbei? Antworte mit zwei Gérondifs: en écoutant..., en regardant...",
+     "c": "Schreib fünf Sätze darüber, wie du Französisch lernst: j'apprends en lisant, en..., en..."
+    },
+    "es": {
+     "t": "Gerundio francés: en + -ant",
+     "g": "Usa el gérondif para decir cómo o mientras haces algo.",
+     "p": [
+      "Forma: en + raíz de nous + -ant: nous marchons → en marchant, nous lisons → en lisant, nous faisons → en faisant.",
+      "Irregulares: être → en étant, avoir → en ayant, savoir → en sachant.",
+      "Usos: simultaneidad (je chante en cuisinant), modo (j'apprends en écoutant), condición (en partant tôt...)."
+     ],
+     "q": "¿Qué haces mientras cocinas o viajas? Responde con dos gérondifs: en écoutant..., en regardant...",
+     "c": "Escribe cinco frases sobre cómo aprendes francés: j'apprends en lisant, en..., en..."
+    },
+    "fr": {
+     "t": "Le gérondif : en + -ant",
+     "g": "Utiliser le gérondif pour dire comment ou pendant qu'on fait quelque chose.",
+     "p": [
+      "Formation : en + radical de nous + -ant : en marchant, en lisant, en faisant.",
+      "Irréguliers : être → en étant, avoir → en ayant, savoir → en sachant.",
+      "Emplois : simultanéité (je chante en cuisinant), manière (j'apprends en écoutant), condition (en partant tôt...)."
+     ],
+     "q": "Que fais-tu en cuisinant ou en voyageant ? Réponds avec deux gérondifs : en écoutant..., en regardant...",
+     "c": "Écris cinq phrases sur ta façon d'apprendre le français : j'apprends en lisant, en..., en..."
+    },
+    "it": {
+     "t": "Gérondif: en + -ant",
+     "g": "Usa il gérondif per dire come o mentre fai qualcosa.",
+     "p": [
+      "Forma: en + radice di nous + -ant: nous marchons → en marchant, nous lisons → en lisant, nous faisons → en faisant.",
+      "Irregolari: être → en étant, avoir → en ayant, savoir → en sachant.",
+      "Usi: contemporaneità (je chante en cuisinant), modo (j'apprends en écoutant), condizione (en partant tôt...)."
+     ],
+     "q": "Cosa fai mentre cucini o viaggi? Rispondi con due gérondifs: en écoutant..., en regardant...",
+     "c": "Scrivi cinque frasi su come impari il francese: j'apprends en lisant, en..., en..."
+    },
+    "pt": {
+     "t": "Gerúndio francês: en + -ant",
+     "g": "Usa o gérondif para dizer como ou enquanto fazes algo.",
+     "p": [
+      "Forma: en + radical de nous + -ant: nous marchons → en marchant, nous lisons → en lisant, nous faisons → en faisant.",
+      "Irregulares: être → en étant, avoir → en ayant, savoir → en sachant.",
+      "Usos: ao mesmo tempo (je chante en cuisinant), modo (j'apprends en écoutant), condição (en partant tôt...)."
+     ],
+     "q": "O que fazes enquanto cozinhas ou viajas? Responde com dois gérondifs: en écoutant..., en regardant...",
+     "c": "Escreve cinco frases sobre como aprendes francês: j'apprends en lisant, en..., en..."
+    },
+    "pt_BR": {
+     "t": "Gerúndio francês: en + -ant",
+     "g": "Use o gérondif para dizer como ou enquanto você faz algo.",
+     "p": [
+      "Forma: en + radical de nous + -ant: nous marchons → en marchant, nous lisons → en lisant, nous faisons → en faisant.",
+      "Irregulares: être → en étant, avoir → en ayant, savoir → en sachant.",
+      "Usos: ao mesmo tempo (je chante en cuisinant), modo (j'apprends en écoutant), condição (en partant tôt...)."
+     ],
+     "q": "O que você faz enquanto cozinha ou viaja? Responda com dois gérondifs: en écoutant..., en regardant...",
+     "c": "Escreva cinco frases sobre como você aprende francês: j'apprends en lisant, en..., en..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "en marchant",
+      "ex": "J'écoute des podcasts en marchant."
+     },
+     {
+      "w": "en lisant",
+      "ex": "On apprend beaucoup de mots en lisant."
+     },
+     {
+      "w": "en faisant",
+      "ex": "Elle s'est fait mal en faisant du sport."
+     },
+     {
+      "w": "en sortant",
+      "ex": "En sortant du métro, tournez à gauche."
+     },
+     {
+      "w": "en partant tôt",
+      "ex": "En partant tôt, tu éviteras les bouchons."
+     },
+     {
+      "w": "tout en",
+      "ex": "Il travaille tout en écoutant de la musique."
+     }
+    ],
+    "gram": "Gérondif : en + radical de nous + -ant (en lisant). Même sujet que le verbe principal : simultanéité, manière, condition."
+   }
+  },
+  {
+   "d": 205,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Present participle",
+     "g": "Recognise and use the present participle in written French.",
+     "p": [
+      "Without en, the -ant form replaces qui + verb in writing: les élèves parlant français = qui parlent français.",
+      "It explains a cause: étant malade, il est resté chez lui. Ayant fini, elle est partie (compound form).",
+      "It never agrees: des enfants souriant. But the verbal adjective does: des enfants souriants, une rue passante."
+     ],
+     "q": "Can you change qui + verb into a present participle? Try: les touristes qui visitent Paris...",
+     "c": "Rewrite four sentences in written style: replace qui + verb or parce que with a present participle."
+    },
+    "de": {
+     "t": "Das Partizip Präsens",
+     "g": "Du erkennst und verwendest das Partizip Präsens im geschriebenen Französisch.",
+     "p": [
+      "Ohne en ersetzt die -ant-Form qui + Verb: les élèves parlant français = qui parlent français.",
+      "Es drückt einen Grund aus: étant malade, il est resté chez lui. Ayant fini, elle est partie.",
+      "Es wird nie angeglichen: des enfants souriant. Das Verbaladjektiv schon: des enfants souriants."
+     ],
+     "q": "Kannst du qui + Verb in ein Partizip verwandeln? Versuch: les touristes qui visitent Paris...",
+     "c": "Schreib vier Sätze im Schriftstil um: Ersetze qui + Verb oder parce que durch ein Partizip Präsens."
+    },
+    "es": {
+     "t": "El participio presente",
+     "g": "Reconoce y usa el participio presente en el francés escrito.",
+     "p": [
+      "Sin en, la forma -ant sustituye a qui + verbo: les élèves parlant français = qui parlent français.",
+      "Expresa causa: étant malade, il est resté chez lui. Ayant fini, elle est partie (forma compuesta).",
+      "Nunca concuerda: des enfants souriant. El adjetivo verbal sí: des enfants souriants, une rue passante."
+     ],
+     "q": "¿Puedes cambiar qui + verbo por un participio presente? Prueba: les touristes qui visitent Paris...",
+     "c": "Reescribe cuatro frases en estilo escrito: cambia qui + verbo o parce que por un participio presente."
+    },
+    "fr": {
+     "t": "Le participe présent",
+     "g": "Reconnaître et utiliser le participe présent à l'écrit.",
+     "p": [
+      "Sans en, la forme en -ant remplace qui + verbe : les élèves parlant français = qui parlent français.",
+      "Il exprime la cause : étant malade, il est resté chez lui. Ayant fini, elle est partie (forme composée).",
+      "Il est invariable : des enfants souriant. L'adjectif verbal s'accorde : des enfants souriants, une rue passante."
+     ],
+     "q": "Peux-tu transformer qui + verbe en participe présent ? Essaie : les touristes qui visitent Paris...",
+     "c": "Réécris quatre phrases en style écrit : remplace qui + verbe ou parce que par un participe présent."
+    },
+    "it": {
+     "t": "Il participio presente",
+     "g": "Riconosci e usa il participio presente nel francese scritto.",
+     "p": [
+      "Senza en, la forma in -ant sostituisce qui + verbo: les élèves parlant français = qui parlent français.",
+      "Esprime una causa: étant malade, il est resté chez lui. Ayant fini, elle est partie (forma composta).",
+      "Non si accorda mai: des enfants souriant. L'aggettivo verbale sì: des enfants souriants, une rue passante."
+     ],
+     "q": "Sai trasformare qui + verbo in un participio presente? Prova: les touristes qui visitent Paris...",
+     "c": "Riscrivi quattro frasi in stile scritto: sostituisci qui + verbo o parce que con un participio presente."
+    },
+    "pt": {
+     "t": "O particípio presente",
+     "g": "Reconhece e usa o particípio presente no francês escrito.",
+     "p": [
+      "Sem en, a forma em -ant substitui qui + verbo: les élèves parlant français = qui parlent français.",
+      "Exprime causa: étant malade, il est resté chez lui. Ayant fini, elle est partie (forma composta).",
+      "Nunca concorda: des enfants souriant. O adjetivo verbal sim: des enfants souriants, une rue passante."
+     ],
+     "q": "Consegues trocar qui + verbo por um particípio presente? Experimenta: les touristes qui visitent Paris...",
+     "c": "Reescreve quatro frases em estilo escrito: troca qui + verbo ou parce que por um particípio presente."
+    },
+    "pt_BR": {
+     "t": "O particípio presente",
+     "g": "Reconheça e use o particípio presente no francês escrito.",
+     "p": [
+      "Sem en, a forma em -ant substitui qui + verbo: les élèves parlant français = qui parlent français.",
+      "Expressa causa: étant malade, il est resté chez lui. Ayant fini, elle est partie (forma composta).",
+      "Nunca concorda: des enfants souriant. O adjetivo verbal sim: des enfants souriants, une rue passante."
+     ],
+     "q": "Você consegue trocar qui + verbo por um particípio presente? Tente: les touristes qui visitent Paris...",
+     "c": "Reescreva quatro frases em estilo escrito: troque qui + verbo ou parce que por um particípio presente."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "étant",
+      "ex": "Étant fatiguée, elle s'est couchée tôt."
+     },
+     {
+      "w": "ayant fini",
+      "ex": "Ayant fini son travail, il est allé courir."
+     },
+     {
+      "w": "parlant français",
+      "ex": "On cherche des guides parlant français."
+     },
+     {
+      "w": "sachant que",
+      "ex": "Sachant que tu aimes le chocolat, j'ai fait un gâteau."
+     },
+     {
+      "w": "une rue passante",
+      "ex": "Le café se trouve dans une rue passante."
+     },
+     {
+      "w": "des enfants souriants",
+      "ex": "Sur la photo, on voit des enfants souriants."
+     }
+    ],
+    "gram": "Participe présent (sans en) : invariable, style écrit, remplace qui + verbe ou une cause : étant malade, ayant fini."
+   }
+  },
+  {
+   "d": 206,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Expressing cause",
+     "g": "Explain why with parce que, car, puisque, comme, grâce à and à cause de.",
+     "p": [
+      "Parce que answers pourquoi ; car is more formal and never starts a sentence: je reste, car il pleut.",
+      "Puisque = since (the reason is known): puisque tu es là, aide-moi. Comme starts the sentence: comme il pleut, je reste.",
+      "With a noun: grâce à (positive) and à cause de (negative): grâce à toi, j'ai réussi ; à cause de la grève, je suis en retard."
+     ],
+     "q": "Why are you learning French? Give three reasons with parce que, comme and grâce à.",
+     "c": "Write six sentences about your week, one with each: parce que, car, puisque, comme, grâce à, à cause de."
+    },
+    "de": {
+     "t": "Gründe ausdrücken",
+     "g": "Du erklärst warum mit parce que, car, puisque, comme, grâce à und à cause de.",
+     "p": [
+      "Parce que antwortet auf pourquoi ; car ist formeller und steht nie am Satzanfang: je reste, car il pleut.",
+      "Puisque = da ja (Grund bekannt): puisque tu es là, aide-moi. Comme am Satzanfang: comme il pleut, je reste.",
+      "Mit Nomen: grâce à (positiv) und à cause de (negativ): grâce à toi, j'ai réussi ; à cause de la grève..."
+     ],
+     "q": "Warum lernst du Französisch? Nenne drei Gründe mit parce que, comme und grâce à.",
+     "c": "Schreib sechs Sätze über deine Woche, je einen mit parce que, car, puisque, comme, grâce à, à cause de."
+    },
+    "es": {
+     "t": "Expresar la causa",
+     "g": "Explica por qué con parce que, car, puisque, comme, grâce à y à cause de.",
+     "p": [
+      "Parce que responde a pourquoi ; car es más formal y nunca va al inicio: je reste, car il pleut.",
+      "Puisque = ya que (causa conocida): puisque tu es là, aide-moi. Comme va al inicio: comme il pleut, je reste.",
+      "Con sustantivo: grâce à (positivo) y à cause de (negativo): grâce à toi, j'ai réussi ; à cause de la grève..."
+     ],
+     "q": "¿Por qué aprendes francés? Da tres razones con parce que, comme y grâce à.",
+     "c": "Escribe seis frases sobre tu semana, una con cada: parce que, car, puisque, comme, grâce à, à cause de."
+    },
+    "fr": {
+     "t": "Exprimer la cause",
+     "g": "Expliquer pourquoi avec parce que, car, puisque, comme, grâce à et à cause de.",
+     "p": [
+      "Parce que répond à pourquoi ; car est plus soutenu et jamais en tête de phrase : je reste, car il pleut.",
+      "Puisque : cause connue : puisque tu es là, aide-moi. Comme en début de phrase : comme il pleut, je reste.",
+      "Avec un nom : grâce à (positif), à cause de (négatif) : grâce à toi, j'ai réussi ; à cause de la grève..."
+     ],
+     "q": "Pourquoi apprends-tu le français ? Donne trois raisons avec parce que, comme et grâce à.",
+     "c": "Écris six phrases sur ta semaine, une avec chaque mot : parce que, car, puisque, comme, grâce à, à cause de."
+    },
+    "it": {
+     "t": "Esprimere la causa",
+     "g": "Spiega perché con parce que, car, puisque, comme, grâce à e à cause de.",
+     "p": [
+      "Parce que risponde a pourquoi ; car è più formale e mai a inizio frase: je reste, car il pleut.",
+      "Puisque = dato che (causa nota): puisque tu es là, aide-moi. Comme a inizio frase: comme il pleut, je reste.",
+      "Con un nome: grâce à (positivo) e à cause de (negativo): grâce à toi, j'ai réussi ; à cause de la grève..."
+     ],
+     "q": "Perché impari il francese? Dai tre motivi con parce que, comme e grâce à.",
+     "c": "Scrivi sei frasi sulla tua settimana, una con ciascuno: parce que, car, puisque, comme, grâce à, à cause de."
+    },
+    "pt": {
+     "t": "Exprimir a causa",
+     "g": "Explica porquê com parce que, car, puisque, comme, grâce à e à cause de.",
+     "p": [
+      "Parce que responde a pourquoi ; car é mais formal e nunca abre a frase: je reste, car il pleut.",
+      "Puisque = já que (causa conhecida): puisque tu es là, aide-moi. Comme abre a frase: comme il pleut, je reste.",
+      "Com nome: grâce à (positivo) e à cause de (negativo): grâce à toi, j'ai réussi ; à cause de la grève..."
+     ],
+     "q": "Porque aprendes francês? Dá três razões com parce que, comme e grâce à.",
+     "c": "Escreve seis frases sobre a tua semana, uma com cada: parce que, car, puisque, comme, grâce à, à cause de."
+    },
+    "pt_BR": {
+     "t": "Expressando a causa",
+     "g": "Explique por quê com parce que, car, puisque, comme, grâce à e à cause de.",
+     "p": [
+      "Parce que responde a pourquoi ; car é mais formal e nunca abre a frase: je reste, car il pleut.",
+      "Puisque = já que (causa conhecida): puisque tu es là, aide-moi. Comme abre a frase: comme il pleut, je reste.",
+      "Com substantivo: grâce à (positivo) e à cause de (negativo): grâce à toi, j'ai réussi ; à cause de la grève..."
+     ],
+     "q": "Por que você aprende francês? Dê três motivos com parce que, comme e grâce à.",
+     "c": "Escreva seis frases sobre a sua semana, uma com cada: parce que, car, puisque, comme, grâce à, à cause de."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "parce que",
+      "ex": "Je reste à la maison parce que je suis fatigué."
+     },
+     {
+      "w": "car",
+      "ex": "Prends un pull, car il fait frais ce soir."
+     },
+     {
+      "w": "puisque",
+      "ex": "Puisque tu es là, tu peux m'aider ?"
+     },
+     {
+      "w": "comme",
+      "ex": "Comme il pleuvait, nous avons pris un taxi."
+     },
+     {
+      "w": "grâce à",
+      "ex": "Grâce à mon Buddy, je parle mieux français."
+     },
+     {
+      "w": "à cause de",
+      "ex": "Le train est en retard à cause de la neige."
+     }
+    ],
+    "gram": "Cause : parce que, car, puisque, comme (en tête) + verbe ; grâce à (positif), à cause de (négatif) + nom."
+   }
+  },
+  {
+   "d": 207,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Expressing consequence",
+     "g": "Say what happens as a result: donc, alors, c'est pourquoi, si bien que, du coup.",
+     "p": [
+      "Donc and alors are everyday words: il pleut, donc je prends un parapluie ; j'avais faim, alors j'ai mangé.",
+      "C'est pourquoi and si bien que are more formal: il a beaucoup travaillé, si bien qu'il a réussi.",
+      "Du coup is very common in spoken French: le magasin était fermé, du coup je suis rentré."
+     ],
+     "q": "What happened the last time you forgot something important? Tell me using du coup and donc.",
+     "c": "Write a small chain story of five sentences, each linked by donc, alors, du coup, c'est pourquoi or si bien que."
+    },
+    "de": {
+     "t": "Folgen ausdrücken",
+     "g": "Du sagst, was daraus folgt: donc, alors, c'est pourquoi, si bien que, du coup.",
+     "p": [
+      "Donc und alors sind alltäglich: il pleut, donc je prends un parapluie ; j'avais faim, alors j'ai mangé.",
+      "C'est pourquoi und si bien que sind formeller: il a beaucoup travaillé, si bien qu'il a réussi.",
+      "Du coup ist mündlich sehr häufig: le magasin était fermé, du coup je suis rentré."
+     ],
+     "q": "Was passierte, als du zuletzt etwas Wichtiges vergessen hast? Erzähl mit du coup und donc.",
+     "c": "Schreib eine Kettengeschichte aus fünf Sätzen, verbunden mit donc, alors, du coup, c'est pourquoi oder si bien que."
+    },
+    "es": {
+     "t": "Expresar la consecuencia",
+     "g": "Di lo que ocurre como resultado: donc, alors, c'est pourquoi, si bien que, du coup.",
+     "p": [
+      "Donc y alors son cotidianos: il pleut, donc je prends un parapluie ; j'avais faim, alors j'ai mangé.",
+      "C'est pourquoi y si bien que son más formales: il a beaucoup travaillé, si bien qu'il a réussi.",
+      "Du coup es muy frecuente al hablar: le magasin était fermé, du coup je suis rentré."
+     ],
+     "q": "¿Qué pasó la última vez que olvidaste algo importante? Cuéntamelo con du coup y donc.",
+     "c": "Escribe una historia en cadena de cinco frases unidas por donc, alors, du coup, c'est pourquoi o si bien que."
+    },
+    "fr": {
+     "t": "Exprimer la conséquence",
+     "g": "Dire ce qui en résulte : donc, alors, c'est pourquoi, si bien que, du coup.",
+     "p": [
+      "Donc et alors au quotidien : il pleut, donc je prends un parapluie ; j'avais faim, alors j'ai mangé.",
+      "C'est pourquoi et si bien que sont plus soutenus : il a beaucoup travaillé, si bien qu'il a réussi.",
+      "Du coup est très fréquent à l'oral : le magasin était fermé, du coup je suis rentré."
+     ],
+     "q": "Que s'est-il passé la dernière fois que tu as oublié quelque chose d'important ? Raconte avec du coup et donc.",
+     "c": "Écris une histoire en chaîne de cinq phrases liées par donc, alors, du coup, c'est pourquoi ou si bien que."
+    },
+    "it": {
+     "t": "Esprimere la conseguenza",
+     "g": "Di' cosa succede di conseguenza: donc, alors, c'est pourquoi, si bien que, du coup.",
+     "p": [
+      "Donc e alors sono quotidiani: il pleut, donc je prends un parapluie ; j'avais faim, alors j'ai mangé.",
+      "C'est pourquoi e si bien que sono più formali: il a beaucoup travaillé, si bien qu'il a réussi.",
+      "Du coup è frequentissimo nel parlato: le magasin était fermé, du coup je suis rentré."
+     ],
+     "q": "Cosa è successo l'ultima volta che hai dimenticato qualcosa di importante? Raccontalo con du coup e donc.",
+     "c": "Scrivi una storia a catena di cinque frasi legate da donc, alors, du coup, c'est pourquoi o si bien que."
+    },
+    "pt": {
+     "t": "Exprimir a consequência",
+     "g": "Diz o que acontece como resultado: donc, alors, c'est pourquoi, si bien que, du coup.",
+     "p": [
+      "Donc e alors são do dia a dia: il pleut, donc je prends un parapluie ; j'avais faim, alors j'ai mangé.",
+      "C'est pourquoi e si bien que são mais formais: il a beaucoup travaillé, si bien qu'il a réussi.",
+      "Du coup é muito comum na oralidade: le magasin était fermé, du coup je suis rentré."
+     ],
+     "q": "O que aconteceu da última vez que te esqueceste de algo importante? Conta com du coup e donc.",
+     "c": "Escreve uma história em cadeia de cinco frases ligadas por donc, alors, du coup, c'est pourquoi ou si bien que."
+    },
+    "pt_BR": {
+     "t": "Expressando a consequência",
+     "g": "Diga o que acontece como resultado: donc, alors, c'est pourquoi, si bien que, du coup.",
+     "p": [
+      "Donc e alors são do dia a dia: il pleut, donc je prends un parapluie ; j'avais faim, alors j'ai mangé.",
+      "C'est pourquoi e si bien que são mais formais: il a beaucoup travaillé, si bien qu'il a réussi.",
+      "Du coup é muito comum na fala: le magasin était fermé, du coup je suis rentré."
+     ],
+     "q": "O que aconteceu da última vez que você esqueceu algo importante? Conte com du coup e donc.",
+     "c": "Escreva uma história em cadeia de cinco frases ligadas por donc, alors, du coup, c'est pourquoi ou si bien que."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "donc",
+      "ex": "Il pleut, donc je prends mon parapluie."
+     },
+     {
+      "w": "alors",
+      "ex": "J'avais faim, alors j'ai fait des crêpes."
+     },
+     {
+      "w": "c'est pourquoi",
+      "ex": "J'adore voyager, c'est pourquoi j'apprends des langues."
+     },
+     {
+      "w": "si bien que",
+      "ex": "Il a beaucoup révisé, si bien qu'il a eu une très bonne note."
+     },
+     {
+      "w": "du coup",
+      "ex": "La boulangerie était fermée, du coup j'ai acheté du pain ailleurs."
+     },
+     {
+      "w": "par conséquent",
+      "ex": "Le vol est annulé ; par conséquent, la réunion est reportée."
+     }
+    ],
+    "gram": "Conséquence : donc, alors, c'est pourquoi, par conséquent, si bien que + indicatif ; du coup (oral)."
+   }
+  },
+  {
+   "d": 208,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Expressing purpose",
+     "g": "Say why you do something: pour, afin de, pour que, afin que.",
+     "p": [
+      "Same subject → pour or afin de + infinitive: j'économise pour voyager, afin de partir en été.",
+      "Different subject → pour que or afin que + subjunctive: je parle fort pour que tout le monde entende.",
+      "Negative purpose: pour ne pas oublier, de peur de rater le train, pour qu'il ne soit pas triste."
+     ],
+     "q": "Why do you get up in the morning? Give two answers: one with pour + infinitive, one with pour que.",
+     "c": "Write five things you do and why, using pour, afin de, pour que, afin que and pour ne pas."
+    },
+    "de": {
+     "t": "Zweck ausdrücken",
+     "g": "Du sagst, wozu du etwas tust: pour, afin de, pour que, afin que.",
+     "p": [
+      "Gleiches Subjekt → pour oder afin de + Infinitiv: j'économise pour voyager, afin de partir en été.",
+      "Anderes Subjekt → pour que oder afin que + Subjonctif: je parle fort pour que tout le monde entende.",
+      "Verneint: pour ne pas oublier, de peur de rater le train, pour qu'il ne soit pas triste."
+     ],
+     "q": "Wofür stehst du morgens auf? Gib zwei Antworten: eine mit pour + Infinitiv, eine mit pour que.",
+     "c": "Schreib fünf Dinge, die du tust, und wozu: mit pour, afin de, pour que, afin que und pour ne pas."
+    },
+    "es": {
+     "t": "Expresar la finalidad",
+     "g": "Di para qué haces algo: pour, afin de, pour que, afin que.",
+     "p": [
+      "Mismo sujeto → pour o afin de + infinitivo: j'économise pour voyager, afin de partir en été.",
+      "Sujeto distinto → pour que o afin que + subjuntivo: je parle fort pour que tout le monde entende.",
+      "Finalidad negativa: pour ne pas oublier, de peur de rater le train, pour qu'il ne soit pas triste."
+     ],
+     "q": "¿Para qué te levantas por la mañana? Da dos respuestas: una con pour + infinitivo y otra con pour que.",
+     "c": "Escribe cinco cosas que haces y para qué, con pour, afin de, pour que, afin que y pour ne pas."
+    },
+    "fr": {
+     "t": "Exprimer le but",
+     "g": "Dire pourquoi on fait quelque chose : pour, afin de, pour que, afin que.",
+     "p": [
+      "Même sujet → pour ou afin de + infinitif : j'économise pour voyager, afin de partir en été.",
+      "Sujets différents → pour que ou afin que + subjonctif : je parle fort pour que tout le monde entende.",
+      "But négatif : pour ne pas oublier, de peur de rater le train, pour qu'il ne soit pas triste."
+     ],
+     "q": "Pourquoi te lèves-tu le matin ? Donne deux réponses : une avec pour + infinitif, une avec pour que.",
+     "c": "Écris cinq choses que tu fais et dans quel but, avec pour, afin de, pour que, afin que et pour ne pas."
+    },
+    "it": {
+     "t": "Esprimere lo scopo",
+     "g": "Di' perché fai qualcosa: pour, afin de, pour que, afin que.",
+     "p": [
+      "Stesso soggetto → pour o afin de + infinito: j'économise pour voyager, afin de partir en été.",
+      "Soggetto diverso → pour que o afin que + subjonctif: je parle fort pour que tout le monde entende.",
+      "Scopo negativo: pour ne pas oublier, de peur de rater le train, pour qu'il ne soit pas triste."
+     ],
+     "q": "Per cosa ti alzi la mattina? Dai due risposte: una con pour + infinito e una con pour que.",
+     "c": "Scrivi cinque cose che fai e perché, con pour, afin de, pour que, afin que e pour ne pas."
+    },
+    "pt": {
+     "t": "Exprimir a finalidade",
+     "g": "Diz para que fazes algo: pour, afin de, pour que, afin que.",
+     "p": [
+      "Mesmo sujeito → pour ou afin de + infinitivo: j'économise pour voyager, afin de partir en été.",
+      "Sujeito diferente → pour que ou afin que + subjonctif: je parle fort pour que tout le monde entende.",
+      "Finalidade negativa: pour ne pas oublier, de peur de rater le train, pour qu'il ne soit pas triste."
+     ],
+     "q": "Para que te levantas de manhã? Dá duas respostas: uma com pour + infinitivo e outra com pour que.",
+     "c": "Escreve cinco coisas que fazes e para quê, com pour, afin de, pour que, afin que e pour ne pas."
+    },
+    "pt_BR": {
+     "t": "Expressando a finalidade",
+     "g": "Diga para que você faz algo: pour, afin de, pour que, afin que.",
+     "p": [
+      "Mesmo sujeito → pour ou afin de + infinitivo: j'économise pour voyager, afin de partir en été.",
+      "Sujeito diferente → pour que ou afin que + subjonctif: je parle fort pour que tout le monde entende.",
+      "Finalidade negativa: pour ne pas oublier, de peur de rater le train, pour qu'il ne soit pas triste."
+     ],
+     "q": "Para que você se levanta de manhã? Dê duas respostas: uma com pour + infinitivo e outra com pour que.",
+     "c": "Escreva cinco coisas que você faz e para quê, com pour, afin de, pour que, afin que e pour ne pas."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "pour",
+      "ex": "Je fais du sport pour rester en forme."
+     },
+     {
+      "w": "afin de",
+      "ex": "Nous partons tôt afin d'éviter les bouchons."
+     },
+     {
+      "w": "pour que",
+      "ex": "J'explique lentement pour que tu comprennes bien."
+     },
+     {
+      "w": "afin que",
+      "ex": "Le guide parle fort afin que tout le monde l'entende."
+     },
+     {
+      "w": "pour ne pas",
+      "ex": "Je note tout pour ne pas oublier."
+     },
+     {
+      "w": "de peur de",
+      "ex": "Il court de peur de rater son bus."
+     }
+    ],
+    "gram": "But : pour / afin de + infinitif (même sujet) ; pour que / afin que + subjonctif (sujets différents)."
+   }
+  },
+  {
+   "d": 209,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Expressing opposition",
+     "g": "Contrast ideas with mais, pourtant, cependant, alors que and tandis que.",
+     "p": [
+      "Mais is the basic word ; pourtant and cependant (more formal) mean yet, however: il est riche, pourtant il vit simplement.",
+      "Alors que and tandis que compare two facts: moi, j'adore le café, alors que mon frère préfère le thé.",
+      "Au contraire and par contre (spoken) also contrast: je n'aime pas la ville, par contre j'adore la campagne."
+     ],
+     "q": "Compare yourself with a friend or family member: moi, je..., alors que lui ou elle...",
+     "c": "Write five contrasts about your country and France using mais, pourtant, cependant, alors que and par contre."
+    },
+    "de": {
+     "t": "Gegensatz ausdrücken",
+     "g": "Du stellst Ideen gegenüber mit mais, pourtant, cependant, alors que und tandis que.",
+     "p": [
+      "Mais ist die Basis ; pourtant und cependant (formeller) = trotzdem, jedoch: il est riche, pourtant il vit simplement.",
+      "Alors que und tandis que vergleichen zwei Fakten: moi, j'adore le café, alors que mon frère préfère le thé.",
+      "Au contraire und par contre (mündlich): je n'aime pas la ville, par contre j'adore la campagne."
+     ],
+     "q": "Vergleich dich mit einem Freund oder Familienmitglied: moi, je..., alors que lui ou elle...",
+     "c": "Schreib fünf Gegensätze zwischen deinem Land und Frankreich mit mais, pourtant, cependant, alors que, par contre."
+    },
+    "es": {
+     "t": "Expresar la oposición",
+     "g": "Contrasta ideas con mais, pourtant, cependant, alors que y tandis que.",
+     "p": [
+      "Mais es lo básico ; pourtant y cependant (más formal) = sin embargo: il est riche, pourtant il vit simplement.",
+      "Alors que y tandis que comparan dos hechos: moi, j'adore le café, alors que mon frère préfère le thé.",
+      "Au contraire y par contre (oral) también: je n'aime pas la ville, par contre j'adore la campagne."
+     ],
+     "q": "Compárate con un amigo o familiar: moi, je..., alors que lui ou elle...",
+     "c": "Escribe cinco contrastes entre tu país y Francia con mais, pourtant, cependant, alors que y par contre."
+    },
+    "fr": {
+     "t": "Exprimer l'opposition",
+     "g": "Opposer des idées avec mais, pourtant, cependant, alors que et tandis que.",
+     "p": [
+      "Mais est la base ; pourtant et cependant (soutenu) : il est riche, pourtant il vit simplement.",
+      "Alors que et tandis que comparent deux faits : moi, j'adore le café, alors que mon frère préfère le thé.",
+      "Au contraire et par contre (oral) : je n'aime pas la ville, par contre j'adore la campagne."
+     ],
+     "q": "Compare-toi avec un ami ou un proche : moi, je..., alors que lui ou elle...",
+     "c": "Écris cinq oppositions entre ton pays et la France avec mais, pourtant, cependant, alors que et par contre."
+    },
+    "it": {
+     "t": "Esprimere l'opposizione",
+     "g": "Contrapponi idee con mais, pourtant, cependant, alors que e tandis que.",
+     "p": [
+      "Mais è la base ; pourtant e cependant (più formale) = eppure, tuttavia: il est riche, pourtant il vit simplement.",
+      "Alors que e tandis que confrontano due fatti: moi, j'adore le café, alors que mon frère préfère le thé.",
+      "Anche au contraire e par contre (parlato): je n'aime pas la ville, par contre j'adore la campagne."
+     ],
+     "q": "Confrontati con un amico o un familiare: moi, je..., alors que lui ou elle...",
+     "c": "Scrivi cinque contrasti tra il tuo paese e la Francia con mais, pourtant, cependant, alors que e par contre."
+    },
+    "pt": {
+     "t": "Exprimir a oposição",
+     "g": "Contrasta ideias com mais, pourtant, cependant, alors que e tandis que.",
+     "p": [
+      "Mais é o básico ; pourtant e cependant (mais formal) = no entanto: il est riche, pourtant il vit simplement.",
+      "Alors que e tandis que comparam dois factos: moi, j'adore le café, alors que mon frère préfère le thé.",
+      "Também au contraire e par contre (oral): je n'aime pas la ville, par contre j'adore la campagne."
+     ],
+     "q": "Compara-te com um amigo ou familiar: moi, je..., alors que lui ou elle...",
+     "c": "Escreve cinco contrastes entre o teu país e a França com mais, pourtant, cependant, alors que e par contre."
+    },
+    "pt_BR": {
+     "t": "Expressando a oposição",
+     "g": "Contraste ideias com mais, pourtant, cependant, alors que e tandis que.",
+     "p": [
+      "Mais é o básico ; pourtant e cependant (mais formal) = no entanto: il est riche, pourtant il vit simplement.",
+      "Alors que e tandis que comparam dois fatos: moi, j'adore le café, alors que mon frère préfère le thé.",
+      "Também au contraire e par contre (oral): je n'aime pas la ville, par contre j'adore la campagne."
+     ],
+     "q": "Compare-se com um amigo ou parente: moi, je..., alors que lui ou elle...",
+     "c": "Escreva cinco contrastes entre o seu país e a França com mais, pourtant, cependant, alors que e par contre."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "pourtant",
+      "ex": "Il a beaucoup d'argent, pourtant il vit simplement."
+     },
+     {
+      "w": "cependant",
+      "ex": "Le projet est intéressant ; cependant, il coûte cher."
+     },
+     {
+      "w": "alors que",
+      "ex": "J'adore la mer, alors que ma sœur préfère la montagne."
+     },
+     {
+      "w": "tandis que",
+      "ex": "Paul cuisine tandis que Léa met la table."
+     },
+     {
+      "w": "par contre",
+      "ex": "Je ne parle pas allemand, par contre je parle espagnol."
+     },
+     {
+      "w": "au contraire",
+      "ex": "Ce n'est pas difficile, au contraire, c'est très simple !"
+     }
+    ],
+    "gram": "Opposition : mais, pourtant, cependant, par contre ; alors que / tandis que + indicatif pour comparer deux faits."
+   }
+  },
+  {
+   "d": 210,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Concession",
+     "g": "Admit something but keep your point: bien que, même si, malgré, quand même.",
+     "p": [
+      "Bien que + subjunctive: bien qu'il pleuve, on sort. Même si + indicative: même s'il pleut, on sort.",
+      "Malgré + noun: malgré la pluie, on sort. Malgré le froid, la balade était super.",
+      "Quand même (anyway), very spoken: il pleuvait, mais on est sortis quand même !"
+     ],
+     "q": "Tell me about something you did even though it was difficult. Use même si or malgré.",
+     "c": "Say the same idea four ways: bien que..., même si..., malgré..., ... quand même. Example: la pluie, sortir."
+    },
+    "de": {
+     "t": "Einräumung (Konzession)",
+     "g": "Du räumst etwas ein und bleibst bei deinem Punkt: bien que, même si, malgré, quand même.",
+     "p": [
+      "Bien que + Subjonctif: bien qu'il pleuve, on sort. Même si + Indikativ: même s'il pleut, on sort.",
+      "Malgré + Nomen: malgré la pluie, on sort. Malgré le froid, la balade était super.",
+      "Quand même (trotzdem), sehr mündlich: il pleuvait, mais on est sortis quand même !"
+     ],
+     "q": "Erzähl von etwas, das du gemacht hast, obwohl es schwierig war. Nutze même si oder malgré.",
+     "c": "Sag dieselbe Idee auf vier Arten: bien que..., même si..., malgré..., ... quand même (la pluie, sortir)."
+    },
+    "es": {
+     "t": "La concesión",
+     "g": "Reconoce algo pero mantén tu idea: bien que, même si, malgré, quand même.",
+     "p": [
+      "Bien que + subjuntivo: bien qu'il pleuve, on sort. Même si + indicativo: même s'il pleut, on sort.",
+      "Malgré + sustantivo: malgré la pluie, on sort. Malgré le froid, la balade était super.",
+      "Quand même (de todos modos), muy oral: il pleuvait, mais on est sortis quand même !"
+     ],
+     "q": "Cuéntame algo que hiciste aunque era difícil. Usa même si o malgré.",
+     "c": "Di la misma idea de cuatro formas: bien que..., même si..., malgré..., ... quand même (la pluie, sortir)."
+    },
+    "fr": {
+     "t": "La concession",
+     "g": "Reconnaître un fait sans changer d'avis : bien que, même si, malgré, quand même.",
+     "p": [
+      "Bien que + subjonctif : bien qu'il pleuve, on sort. Même si + indicatif : même s'il pleut, on sort.",
+      "Malgré + nom : malgré la pluie, on sort. Malgré le froid, la balade était super.",
+      "Quand même, très oral : il pleuvait, mais on est sortis quand même !"
+     ],
+     "q": "Raconte-moi quelque chose que tu as fait même si c'était difficile. Utilise même si ou malgré.",
+     "c": "Dis la même idée de quatre façons : bien que..., même si..., malgré..., ... quand même (la pluie, sortir)."
+    },
+    "it": {
+     "t": "La concessione",
+     "g": "Ammetti qualcosa ma mantieni la tua idea: bien que, même si, malgré, quand même.",
+     "p": [
+      "Bien que + subjonctif: bien qu'il pleuve, on sort. Même si + indicativo: même s'il pleut, on sort.",
+      "Malgré + nome: malgré la pluie, on sort. Malgré le froid, la balade était super.",
+      "Quand même (comunque), molto parlato: il pleuvait, mais on est sortis quand même !"
+     ],
+     "q": "Raccontami qualcosa che hai fatto anche se era difficile. Usa même si o malgré.",
+     "c": "Di' la stessa idea in quattro modi: bien que..., même si..., malgré..., ... quand même (la pluie, sortir)."
+    },
+    "pt": {
+     "t": "A concessão",
+     "g": "Admite algo mas mantém a tua ideia: bien que, même si, malgré, quand même.",
+     "p": [
+      "Bien que + subjonctif: bien qu'il pleuve, on sort. Même si + indicativo: même s'il pleut, on sort.",
+      "Malgré + nome: malgré la pluie, on sort. Malgré le froid, la balade était super.",
+      "Quand même (mesmo assim), muito oral: il pleuvait, mais on est sortis quand même !"
+     ],
+     "q": "Conta-me algo que fizeste mesmo sendo difícil. Usa même si ou malgré.",
+     "c": "Diz a mesma ideia de quatro formas: bien que..., même si..., malgré..., ... quand même (la pluie, sortir)."
+    },
+    "pt_BR": {
+     "t": "A concessão",
+     "g": "Admita algo mas mantenha sua ideia: bien que, même si, malgré, quand même.",
+     "p": [
+      "Bien que + subjonctif: bien qu'il pleuve, on sort. Même si + indicativo: même s'il pleut, on sort.",
+      "Malgré + substantivo: malgré la pluie, on sort. Malgré le froid, la balade était super.",
+      "Quand même (mesmo assim), muito oral: il pleuvait, mais on est sortis quand même !"
+     ],
+     "q": "Me conte algo que você fez mesmo sendo difícil. Use même si ou malgré.",
+     "c": "Diga a mesma ideia de quatro formas: bien que..., même si..., malgré..., ... quand même (la pluie, sortir)."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "bien que",
+      "ex": "Bien qu'elle soit timide, elle a chanté devant tout le monde."
+     },
+     {
+      "w": "même si",
+      "ex": "Même si c'est difficile, je continue."
+     },
+     {
+      "w": "malgré",
+      "ex": "Malgré la pluie, le marché était plein de monde."
+     },
+     {
+      "w": "quand même",
+      "ex": "J'étais fatigué, mais je suis venu quand même."
+     },
+     {
+      "w": "avoir beau",
+      "ex": "J'ai beau chercher, je ne trouve pas mes lunettes."
+     },
+     {
+      "w": "en dépit de",
+      "ex": "En dépit du froid, ils ont fait du camping."
+     }
+    ],
+    "gram": "Concession : bien que + subjonctif ; même si + indicatif ; malgré + nom ; quand même (oral) ; avoir beau + infinitif."
+   }
+  }
+ ]
+}

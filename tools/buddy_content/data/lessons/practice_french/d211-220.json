@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_french",
+ "lessons": [
+  {
+   "d": 211,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Structuring an argument",
+     "g": "Organise your ideas clearly: d'abord, ensuite, de plus, en revanche, enfin, bref.",
+     "p": [
+      "Start and continue: d'abord / tout d'abord, ensuite, puis. Add an idea: de plus, en outre, par ailleurs.",
+      "Contrast: en revanche, par contre, d'un côté... de l'autre. Give an example: par exemple, notamment.",
+      "Conclude: enfin, pour conclure, en conclusion ; spoken summary: bref, en gros."
+     ],
+     "q": "Is it better to live in the city or in the countryside? Give me a structured answer with three connectors.",
+     "c": "Write a 6-sentence argument for or against working from home, using d'abord, ensuite, de plus, en revanche, enfin."
+    },
+    "de": {
+     "t": "Eine Argumentation aufbauen",
+     "g": "Du ordnest deine Ideen klar: d'abord, ensuite, de plus, en revanche, enfin, bref.",
+     "p": [
+      "Beginnen und fortfahren: d'abord / tout d'abord, ensuite, puis. Ergänzen: de plus, en outre, par ailleurs.",
+      "Gegensatz: en revanche, par contre, d'un côté... de l'autre. Beispiel: par exemple, notamment.",
+      "Abschließen: enfin, pour conclure, en conclusion ; mündlich zusammenfassen: bref, en gros."
+     ],
+     "q": "Lebt man besser in der Stadt oder auf dem Land? Antworte strukturiert mit drei Konnektoren.",
+     "c": "Schreib eine Argumentation in 6 Sätzen für oder gegen Homeoffice mit d'abord, ensuite, de plus, en revanche, enfin."
+    },
+    "es": {
+     "t": "Estructurar un argumento",
+     "g": "Organiza tus ideas con claridad: d'abord, ensuite, de plus, en revanche, enfin, bref.",
+     "p": [
+      "Empezar y seguir: d'abord / tout d'abord, ensuite, puis. Añadir: de plus, en outre, par ailleurs.",
+      "Contrastar: en revanche, par contre, d'un côté... de l'autre. Ejemplo: par exemple, notamment.",
+      "Concluir: enfin, pour conclure, en conclusion ; resumen oral: bref, en gros."
+     ],
+     "q": "¿Es mejor vivir en la ciudad o en el campo? Dame una respuesta estructurada con tres conectores.",
+     "c": "Escribe un argumento de 6 frases a favor o en contra del teletrabajo con d'abord, ensuite, de plus, en revanche, enfin."
+    },
+    "fr": {
+     "t": "Structurer une argumentation",
+     "g": "Organiser clairement ses idées : d'abord, ensuite, de plus, en revanche, enfin, bref.",
+     "p": [
+      "Commencer et continuer : d'abord / tout d'abord, ensuite, puis. Ajouter : de plus, en outre, par ailleurs.",
+      "Opposer : en revanche, par contre, d'un côté... de l'autre. Illustrer : par exemple, notamment.",
+      "Conclure : enfin, pour conclure, en conclusion ; à l'oral : bref, en gros."
+     ],
+     "q": "Vaut-il mieux vivre en ville ou à la campagne ? Donne une réponse structurée avec trois connecteurs.",
+     "c": "Écris 6 phrases pour ou contre le télétravail avec d'abord, ensuite, de plus, en revanche, enfin."
+    },
+    "it": {
+     "t": "Strutturare un'argomentazione",
+     "g": "Organizza le idee con chiarezza: d'abord, ensuite, de plus, en revanche, enfin, bref.",
+     "p": [
+      "Iniziare e continuare: d'abord / tout d'abord, ensuite, puis. Aggiungere: de plus, en outre, par ailleurs.",
+      "Contrapporre: en revanche, par contre, d'un côté... de l'autre. Esempio: par exemple, notamment.",
+      "Concludere: enfin, pour conclure, en conclusion ; riassunto orale: bref, en gros."
+     ],
+     "q": "È meglio vivere in città o in campagna? Dammi una risposta strutturata con tre connettivi.",
+     "c": "Scrivi 6 frasi a favore o contro lo smart working con d'abord, ensuite, de plus, en revanche, enfin."
+    },
+    "pt": {
+     "t": "Estruturar uma argumentação",
+     "g": "Organiza as tuas ideias com clareza: d'abord, ensuite, de plus, en revanche, enfin, bref.",
+     "p": [
+      "Começar e continuar: d'abord / tout d'abord, ensuite, puis. Acrescentar: de plus, en outre, par ailleurs.",
+      "Contrastar: en revanche, par contre, d'un côté... de l'autre. Exemplificar: par exemple, notamment.",
+      "Concluir: enfin, pour conclure, en conclusion ; resumo oral: bref, en gros."
+     ],
+     "q": "É melhor viver na cidade ou no campo? Dá-me uma resposta estruturada com três conectores.",
+     "c": "Escreve 6 frases a favor ou contra o teletrabalho com d'abord, ensuite, de plus, en revanche, enfin."
+    },
+    "pt_BR": {
+     "t": "Estruturando um argumento",
+     "g": "Organize suas ideias com clareza: d'abord, ensuite, de plus, en revanche, enfin, bref.",
+     "p": [
+      "Começar e continuar: d'abord / tout d'abord, ensuite, puis. Acrescentar: de plus, en outre, par ailleurs.",
+      "Contrastar: en revanche, par contre, d'un côté... de l'autre. Exemplificar: par exemple, notamment.",
+      "Concluir: enfin, pour conclure, en conclusion ; resumo oral: bref, en gros."
+     ],
+     "q": "É melhor morar na cidade ou no campo? Me dê uma resposta estruturada com três conectores.",
+     "c": "Escreva 6 frases a favor ou contra o home office com d'abord, ensuite, de plus, en revanche, enfin."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "tout d'abord",
+      "ex": "Tout d'abord, je voudrais vous remercier."
+     },
+     {
+      "w": "ensuite",
+      "ex": "Ensuite, nous parlerons du budget."
+     },
+     {
+      "w": "de plus",
+      "ex": "De plus, le vélo est bon pour la santé."
+     },
+     {
+      "w": "en revanche",
+      "ex": "La ville est animée ; en revanche, elle est bruyante."
+     },
+     {
+      "w": "pour conclure",
+      "ex": "Pour conclure, je pense que c'est une bonne idée."
+     },
+     {
+      "w": "bref",
+      "ex": "Bref, c'était une journée géniale !"
+     }
+    ],
+    "gram": "Connecteurs logiques : d'abord, ensuite, de plus (ajout), en revanche (opposition), par exemple, enfin / pour conclure, bref."
+   }
+  },
+  {
+   "d": 212,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "News vocabulary",
+     "g": "Learn the words to talk about news and media.",
+     "p": [
+      "Media: un journal (newspaper), un magazine, les informations or les infos (the news), le journal télévisé.",
+      "An article has un titre (headline), un journaliste, une source and sometimes une interview.",
+      "Useful verbs: lire la presse, s'informer, publier, vérifier une information, suivre l'actualité."
+     ],
+     "q": "How do you follow the news: journal, radio, apps? Tell me with je m'informe en..., je lis...",
+     "c": "Find a short French headline you like and explain in French what it is about in two sentences."
+    },
+    "de": {
+     "t": "Wortschatz Nachrichten",
+     "g": "Du lernst Wörter, um über Nachrichten und Medien zu sprechen.",
+     "p": [
+      "Medien: un journal (Zeitung), un magazine, les informations oder les infos, le journal télévisé.",
+      "Ein Artikel hat un titre (Schlagzeile), un journaliste, une source und manchmal une interview.",
+      "Nützliche Verben: lire la presse, s'informer, publier, vérifier une information, suivre l'actualité."
+     ],
+     "q": "Wie informierst du dich: Zeitung, Radio, Apps? Erzähl mit je m'informe en..., je lis...",
+     "c": "Such eine kurze französische Schlagzeile und erklär auf Französisch in zwei Sätzen, worum es geht."
+    },
+    "es": {
+     "t": "Vocabulario de noticias",
+     "g": "Aprende palabras para hablar de noticias y medios.",
+     "p": [
+      "Medios: un journal (periódico), un magazine, les informations o les infos, le journal télévisé.",
+      "Un artículo tiene un titre (titular), un journaliste, une source y a veces une interview.",
+      "Verbos útiles: lire la presse, s'informer, publier, vérifier une information, suivre l'actualité."
+     ],
+     "q": "¿Cómo sigues las noticias: periódico, radio, apps? Cuéntame con je m'informe en..., je lis...",
+     "c": "Busca un titular francés corto y explica en francés de qué trata en dos frases."
+    },
+    "fr": {
+     "t": "Le vocabulaire de l'actualité",
+     "g": "Apprendre les mots pour parler de l'actualité et des médias.",
+     "p": [
+      "Les médias : un journal, un magazine, les informations ou les infos, le journal télévisé.",
+      "Un article a un titre, un journaliste, une source et parfois une interview.",
+      "Verbes utiles : lire la presse, s'informer, publier, vérifier une information, suivre l'actualité."
+     ],
+     "q": "Comment suis-tu l'actualité : journal, radio, applis ? Raconte avec je m'informe en..., je lis...",
+     "c": "Trouve un titre de presse français et explique en deux phrases de quoi il s'agit."
+    },
+    "it": {
+     "t": "Lessico delle notizie",
+     "g": "Impara le parole per parlare di notizie e media.",
+     "p": [
+      "Media: un journal (giornale), un magazine, les informations o les infos, le journal télévisé.",
+      "Un articolo ha un titre (titolo), un journaliste, une source e a volte une interview.",
+      "Verbi utili: lire la presse, s'informer, publier, vérifier une information, suivre l'actualité."
+     ],
+     "q": "Come segui le notizie: giornale, radio, app? Raccontamelo con je m'informe en..., je lis...",
+     "c": "Trova un breve titolo francese e spiega in francese di cosa parla in due frasi."
+    },
+    "pt": {
+     "t": "Vocabulário das notícias",
+     "g": "Aprende as palavras para falar de notícias e meios de comunicação.",
+     "p": [
+      "Meios: un journal (jornal), un magazine, les informations ou les infos, le journal télévisé.",
+      "Um artigo tem un titre (título), un journaliste, une source e às vezes une interview.",
+      "Verbos úteis: lire la presse, s'informer, publier, vérifier une information, suivre l'actualité."
+     ],
+     "q": "Como acompanhas as notícias: jornal, rádio, apps? Conta com je m'informe en..., je lis...",
+     "c": "Procura um título de notícia francês curto e explica em francês, em duas frases, do que trata."
+    },
+    "pt_BR": {
+     "t": "Vocabulário de notícias",
+     "g": "Aprenda as palavras para falar de notícias e mídia.",
+     "p": [
+      "Mídia: un journal (jornal), un magazine, les informations ou les infos, le journal télévisé.",
+      "Uma matéria tem un titre (manchete), un journaliste, une source e às vezes une interview.",
+      "Verbos úteis: lire la presse, s'informer, publier, vérifier une information, suivre l'actualité."
+     ],
+     "q": "Como você acompanha as notícias: jornal, rádio, apps? Conte com je m'informe en..., je lis...",
+     "c": "Procure uma manchete francesa curta e explique em francês, em duas frases, do que ela trata."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un article",
+      "ex": "J'ai lu un article sur les jardins urbains."
+     },
+     {
+      "w": "les infos",
+      "ex": "Je regarde les infos le soir."
+     },
+     {
+      "w": "un titre",
+      "ex": "Le titre de l'article est très accrocheur."
+     },
+     {
+      "w": "une source",
+      "ex": "Il faut toujours vérifier la source."
+     },
+     {
+      "w": "s'informer",
+      "ex": "Je m'informe surtout à la radio."
+     },
+     {
+      "w": "l'actualité",
+      "ex": "Elle suit l'actualité culturelle de près."
+     }
+    ],
+    "gram": "Vocabulaire des médias : un journal, les infos, un titre, une source ; s'informer, publier, vérifier, suivre l'actualité."
+   }
+  },
+  {
+   "d": 213,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Summarising an article",
+     "g": "Summarise a text in a few clear sentences.",
+     "p": [
+      "Present the topic: il s'agit de..., cet article parle de..., le texte traite de...",
+      "Report the ideas: l'auteur explique que, selon le journaliste, il souligne que, il propose de...",
+      "Conclude: en résumé, en bref, l'idée principale est que... Use your own words, keep it short."
+     ],
+     "q": "Think of something you read recently. Can you summarise it for me in three sentences?",
+     "c": "Summarise a short article or story in five sentences using il s'agit de, l'auteur explique and en résumé."
+    },
+    "de": {
+     "t": "Einen Artikel zusammenfassen",
+     "g": "Du fasst einen Text in wenigen klaren Sätzen zusammen.",
+     "p": [
+      "Das Thema nennen: il s'agit de..., cet article parle de..., le texte traite de...",
+      "Ideen wiedergeben: l'auteur explique que, selon le journaliste, il souligne que, il propose de...",
+      "Abschließen: en résumé, en bref, l'idée principale est que... Eigene Worte, kurz halten."
+     ],
+     "q": "Denk an etwas, das du kürzlich gelesen hast. Fasst du es mir in drei Sätzen zusammen?",
+     "c": "Fass einen kurzen Artikel in fünf Sätzen zusammen mit il s'agit de, l'auteur explique und en résumé."
+    },
+    "es": {
+     "t": "Resumir un artículo",
+     "g": "Resume un texto en pocas frases claras.",
+     "p": [
+      "Presentar el tema: il s'agit de..., cet article parle de..., le texte traite de...",
+      "Contar las ideas: l'auteur explique que, selon le journaliste, il souligne que, il propose de...",
+      "Concluir: en résumé, en bref, l'idée principale est que... Con tus palabras y corto."
+     ],
+     "q": "Piensa en algo que leíste hace poco. ¿Me lo resumes en tres frases?",
+     "c": "Resume un artículo o cuento corto en cinco frases con il s'agit de, l'auteur explique y en résumé."
+    },
+    "fr": {
+     "t": "Résumer un article",
+     "g": "Résumer un texte en quelques phrases claires.",
+     "p": [
+      "Présenter le sujet : il s'agit de..., cet article parle de..., le texte traite de...",
+      "Rapporter les idées : l'auteur explique que, selon le journaliste, il souligne que, il propose de...",
+      "Conclure : en résumé, en bref, l'idée principale est que... Avec ses propres mots, en restant court."
+     ],
+     "q": "Pense à quelque chose que tu as lu récemment. Peux-tu me le résumer en trois phrases ?",
+     "c": "Résume un court article ou une histoire en cinq phrases avec il s'agit de, l'auteur explique et en résumé."
+    },
+    "it": {
+     "t": "Riassumere un articolo",
+     "g": "Riassumi un testo in poche frasi chiare.",
+     "p": [
+      "Presentare il tema: il s'agit de..., cet article parle de..., le texte traite de...",
+      "Riferire le idee: l'auteur explique que, selon le journaliste, il souligne que, il propose de...",
+      "Concludere: en résumé, en bref, l'idée principale est que... Con parole tue, breve."
+     ],
+     "q": "Pensa a qualcosa che hai letto di recente. Me lo riassumi in tre frasi?",
+     "c": "Riassumi un breve articolo o racconto in cinque frasi con il s'agit de, l'auteur explique e en résumé."
+    },
+    "pt": {
+     "t": "Resumir um artigo",
+     "g": "Resume um texto em poucas frases claras.",
+     "p": [
+      "Apresentar o tema: il s'agit de..., cet article parle de..., le texte traite de...",
+      "Relatar as ideias: l'auteur explique que, selon le journaliste, il souligne que, il propose de...",
+      "Concluir: en résumé, en bref, l'idée principale est que... Com palavras tuas, curto."
+     ],
+     "q": "Pensa em algo que leste recentemente. Consegues resumir-mo em três frases?",
+     "c": "Resume um artigo ou conto curto em cinco frases com il s'agit de, l'auteur explique e en résumé."
+    },
+    "pt_BR": {
+     "t": "Resumindo um artigo",
+     "g": "Resuma um texto em poucas frases claras.",
+     "p": [
+      "Apresentar o tema: il s'agit de..., cet article parle de..., le texte traite de...",
+      "Relatar as ideias: l'auteur explique que, selon le journaliste, il souligne que, il propose de...",
+      "Concluir: en résumé, en bref, l'idée principale est que... Com suas palavras, curto."
+     ],
+     "q": "Pense em algo que você leu recentemente. Consegue resumir para mim em três frases?",
+     "c": "Resuma um artigo ou conto curto em cinco frases com il s'agit de, l'auteur explique e en résumé."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il s'agit de",
+      "ex": "Il s'agit d'un article sur le sommeil des enfants."
+     },
+     {
+      "w": "l'auteur explique que",
+      "ex": "L'auteur explique que la marche réduit le stress."
+     },
+     {
+      "w": "selon",
+      "ex": "Selon la journaliste, les jeunes lisent plus qu'avant."
+     },
+     {
+      "w": "souligner",
+      "ex": "Le texte souligne l'importance du sport."
+     },
+     {
+      "w": "en résumé",
+      "ex": "En résumé, il faut mieux protéger les abeilles."
+     },
+     {
+      "w": "l'idée principale",
+      "ex": "L'idée principale est simple : lire chaque jour."
+     }
+    ],
+    "gram": "Résumer : il s'agit de + nom ; l'auteur explique / souligne que + indicatif ; selon + nom ; en résumé."
+   }
+  },
+  {
+   "d": 214,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Work life in France",
+     "g": "Discover key features of working life in France.",
+     "p": [
+      "Les 35 heures: the legal standard working week in France is 35 hours ; extra hours are des heures supplémentaires.",
+      "Les congés payés: employees have at least five weeks of paid holiday a year ; many leave in August.",
+      "La pause déjeuner is often a real break: people eat together, at la cantine or with tickets-restaurant."
+     ],
+     "q": "How does work life in your country compare with France? Talk about hours, holidays and lunch.",
+     "c": "Write five sentences comparing a working day in France with one in your country, using alors que."
+    },
+    "de": {
+     "t": "Arbeitsleben in Frankreich",
+     "g": "Du entdeckst Besonderheiten des Arbeitslebens in Frankreich.",
+     "p": [
+      "Les 35 heures: Die gesetzliche Regelarbeitszeit beträgt 35 Stunden pro Woche ; mehr sind des heures supplémentaires.",
+      "Les congés payés: Mindestens fünf Wochen bezahlter Urlaub pro Jahr ; viele fahren im August weg.",
+      "La pause déjeuner ist oft eine echte Pause: man isst zusammen, in der cantine oder mit tickets-restaurant."
+     ],
+     "q": "Wie unterscheidet sich das Arbeitsleben in deinem Land von Frankreich? Sprich über Stunden, Urlaub, Mittag.",
+     "c": "Schreib fünf Sätze, die einen Arbeitstag in Frankreich und in deinem Land vergleichen, mit alors que."
+    },
+    "es": {
+     "t": "La vida laboral en Francia",
+     "g": "Descubre rasgos clave de la vida laboral en Francia.",
+     "p": [
+      "Les 35 heures: la jornada legal de referencia es de 35 horas semanales ; las extra son heures supplémentaires.",
+      "Les congés payés: al menos cinco semanas de vacaciones pagadas al año ; muchos se van en agosto.",
+      "La pause déjeuner suele ser una pausa real: se come juntos, en la cantine o con tickets-restaurant."
+     ],
+     "q": "¿Cómo es la vida laboral en tu país comparada con Francia? Habla de horarios, vacaciones y comida.",
+     "c": "Escribe cinco frases comparando un día de trabajo en Francia y en tu país, con alors que."
+    },
+    "fr": {
+     "t": "Le monde du travail en France",
+     "g": "Découvrir quelques traits du monde du travail en France.",
+     "p": [
+      "Les 35 heures : la durée légale du travail est de 35 heures par semaine ; au-delà, ce sont des heures supplémentaires.",
+      "Les congés payés : au moins cinq semaines par an ; beaucoup de Français partent en août.",
+      "La pause déjeuner est souvent une vraie pause : on mange ensemble, à la cantine ou avec des tickets-restaurant."
+     ],
+     "q": "Comment le travail dans ton pays se compare-t-il à la France ? Parle des horaires, des congés et du déjeuner.",
+     "c": "Écris cinq phrases qui comparent une journée de travail en France et dans ton pays, avec alors que."
+    },
+    "it": {
+     "t": "Il lavoro in Francia",
+     "g": "Scopri alcuni aspetti tipici del mondo del lavoro in Francia.",
+     "p": [
+      "Les 35 heures: l'orario legale di riferimento è di 35 ore settimanali ; quelle in più sono heures supplémentaires.",
+      "Les congés payés: almeno cinque settimane di ferie pagate all'anno ; molti partono ad agosto.",
+      "La pause déjeuner è spesso una vera pausa: si mangia insieme, alla cantine o con i tickets-restaurant."
+     ],
+     "q": "Com'è il lavoro nel tuo paese rispetto alla Francia? Parla di orari, ferie e pranzo.",
+     "c": "Scrivi cinque frasi che confrontano una giornata di lavoro in Francia e nel tuo paese, con alors que."
+    },
+    "pt": {
+     "t": "O mundo do trabalho em França",
+     "g": "Descobre traços típicos da vida profissional em França.",
+     "p": [
+      "Les 35 heures: a duração legal de referência é de 35 horas semanais ; as horas a mais são heures supplémentaires.",
+      "Les congés payés: pelo menos cinco semanas de férias pagas por ano ; muitos partem em agosto.",
+      "La pause déjeuner é muitas vezes uma pausa a sério: come-se em conjunto, na cantine ou com tickets-restaurant."
+     ],
+     "q": "Como é o trabalho no teu país comparado com França? Fala de horários, férias e almoço.",
+     "c": "Escreve cinco frases a comparar um dia de trabalho em França e no teu país, com alors que."
+    },
+    "pt_BR": {
+     "t": "O mundo do trabalho na França",
+     "g": "Descubra traços típicos da vida profissional na França.",
+     "p": [
+      "Les 35 heures: a jornada legal de referência é de 35 horas semanais ; as horas a mais são heures supplémentaires.",
+      "Les congés payés: pelo menos cinco semanas de férias pagas por ano ; muitos viajam em agosto.",
+      "La pause déjeuner costuma ser uma pausa de verdade: come-se junto, na cantine ou com tickets-restaurant."
+     ],
+     "q": "Como é o trabalho no seu país comparado com a França? Fale de horários, férias e almoço.",
+     "c": "Escreva cinco frases comparando um dia de trabalho na França e no seu país, com alors que."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "les 35 heures",
+      "ex": "En France, la durée légale du travail est de 35 heures."
+     },
+     {
+      "w": "les congés payés",
+      "ex": "Je prends mes congés payés en août."
+     },
+     {
+      "w": "la pause déjeuner",
+      "ex": "Pendant la pause déjeuner, on mange avec les collègues."
+     },
+     {
+      "w": "les heures supplémentaires",
+      "ex": "Cette semaine, j'ai fait des heures supplémentaires."
+     },
+     {
+      "w": "un collègue",
+      "ex": "Ma collègue m'a aidé avec le dossier."
+     },
+     {
+      "w": "le télétravail",
+      "ex": "Je suis en télétravail le vendredi."
+     }
+    ],
+    "gram": "Vocabulaire du travail : les 35 heures, les congés payés, la pause déjeuner ; être en congé, être en télétravail."
+   }
+  },
+  {
+   "d": 215,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Meetings at work",
+     "g": "Take part in a meeting in French: agenda, speaking up, proposing, concluding.",
+     "p": [
+      "Opening: l'ordre du jour (agenda), le premier point, commençons par... ; taking notes: le compte rendu.",
+      "Speaking: je voudrais prendre la parole, si je peux me permettre, je propose que + subjunctive.",
+      "Closing: pour conclure, on se met d'accord sur..., la prochaine réunion aura lieu le..."
+     ],
+     "q": "How would you politely interrupt in a meeting to add an idea? Try two different phrases.",
+     "c": "Write a mini agenda with three points and one sentence to open, one to propose and one to conclude."
+    },
+    "de": {
+     "t": "Besprechungen bei der Arbeit",
+     "g": "Du nimmst auf Französisch an einer Besprechung teil: Tagesordnung, Wort ergreifen, vorschlagen, abschließen.",
+     "p": [
+      "Eröffnung: l'ordre du jour (Tagesordnung), le premier point, commençons par... ; Protokoll: le compte rendu.",
+      "Sprechen: je voudrais prendre la parole, si je peux me permettre, je propose que + Subjonctif.",
+      "Abschluss: pour conclure, on se met d'accord sur..., la prochaine réunion aura lieu le..."
+     ],
+     "q": "Wie unterbrichst du höflich in einer Besprechung, um etwas hinzuzufügen? Probier zwei Ausdrücke.",
+     "c": "Schreib eine Mini-Tagesordnung mit drei Punkten und je einen Satz zum Eröffnen, Vorschlagen, Abschließen."
+    },
+    "es": {
+     "t": "Reuniones de trabajo",
+     "g": "Participa en una reunión en francés: orden del día, tomar la palabra, proponer, concluir.",
+     "p": [
+      "Apertura: l'ordre du jour (orden del día), le premier point, commençons par... ; acta: le compte rendu.",
+      "Intervenir: je voudrais prendre la parole, si je peux me permettre, je propose que + subjuntivo.",
+      "Cierre: pour conclure, on se met d'accord sur..., la prochaine réunion aura lieu le..."
+     ],
+     "q": "¿Cómo interrumpirías con educación en una reunión para añadir una idea? Prueba dos frases.",
+     "c": "Escribe un mini orden del día con tres puntos y una frase para abrir, otra para proponer y otra para concluir."
+    },
+    "fr": {
+     "t": "Les réunions au travail",
+     "g": "Participer à une réunion : ordre du jour, prise de parole, proposition, conclusion.",
+     "p": [
+      "Ouvrir : l'ordre du jour, le premier point, commençons par... ; prendre des notes : le compte rendu.",
+      "Intervenir : je voudrais prendre la parole, si je peux me permettre, je propose que + subjonctif.",
+      "Conclure : pour conclure, on se met d'accord sur..., la prochaine réunion aura lieu le..."
+     ],
+     "q": "Comment interromprais-tu poliment une réunion pour ajouter une idée ? Essaie deux formules.",
+     "c": "Écris un mini ordre du jour en trois points et une phrase pour ouvrir, une pour proposer, une pour conclure."
+    },
+    "it": {
+     "t": "Riunioni di lavoro",
+     "g": "Partecipa a una riunione in francese: ordine del giorno, prendere la parola, proporre, concludere.",
+     "p": [
+      "Apertura: l'ordre du jour (ordine del giorno), le premier point, commençons par... ; verbale: le compte rendu.",
+      "Intervenire: je voudrais prendre la parole, si je peux me permettre, je propose que + subjonctif.",
+      "Chiusura: pour conclure, on se met d'accord sur..., la prochaine réunion aura lieu le..."
+     ],
+     "q": "Come interromperesti con garbo una riunione per aggiungere un'idea? Prova due frasi.",
+     "c": "Scrivi un mini ordine del giorno con tre punti e una frase per aprire, una per proporre e una per concludere."
+    },
+    "pt": {
+     "t": "Reuniões de trabalho",
+     "g": "Participa numa reunião em francês: ordem de trabalhos, tomar a palavra, propor, concluir.",
+     "p": [
+      "Abertura: l'ordre du jour (ordem de trabalhos), le premier point, commençons par... ; ata: le compte rendu.",
+      "Intervir: je voudrais prendre la parole, si je peux me permettre, je propose que + subjonctif.",
+      "Fecho: pour conclure, on se met d'accord sur..., la prochaine réunion aura lieu le..."
+     ],
+     "q": "Como interromperias educadamente uma reunião para acrescentar uma ideia? Experimenta duas frases.",
+     "c": "Escreve uma mini ordem de trabalhos com três pontos e uma frase para abrir, uma para propor e uma para concluir."
+    },
+    "pt_BR": {
+     "t": "Reuniões de trabalho",
+     "g": "Participe de uma reunião em francês: pauta, pedir a palavra, propor, concluir.",
+     "p": [
+      "Abertura: l'ordre du jour (pauta), le premier point, commençons par... ; ata: le compte rendu.",
+      "Intervir: je voudrais prendre la parole, si je peux me permettre, je propose que + subjonctif.",
+      "Encerramento: pour conclure, on se met d'accord sur..., la prochaine réunion aura lieu le..."
+     ],
+     "q": "Como você interromperia educadamente uma reunião para acrescentar uma ideia? Tente duas frases.",
+     "c": "Escreva uma mini pauta com três pontos e uma frase para abrir, uma para propor e uma para concluir."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "l'ordre du jour",
+      "ex": "Le premier point à l'ordre du jour est le budget."
+     },
+     {
+      "w": "prendre la parole",
+      "ex": "Je voudrais prendre la parole un instant."
+     },
+     {
+      "w": "je propose que",
+      "ex": "Je propose que nous fassions une pause."
+     },
+     {
+      "w": "le compte rendu",
+      "ex": "Qui rédige le compte rendu de la réunion ?"
+     },
+     {
+      "w": "se mettre d'accord",
+      "ex": "Nous nous sommes mis d'accord sur la date."
+     },
+     {
+      "w": "conclure",
+      "ex": "Pour conclure, merci à tous pour vos idées."
+     }
+    ],
+    "gram": "En réunion : l'ordre du jour, prendre la parole ; je propose que + subjonctif ; pour conclure, se mettre d'accord sur."
+   }
+  },
+  {
+   "d": 216,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Professional emails",
+     "g": "Write a polite, clear professional email in French.",
+     "p": [
+      "Openings: Madame, Monsieur, (formal) or Bonjour Madame Martin, ; first line: suite à notre échange...",
+      "Requests: je me permets de vous contacter..., pourriez-vous me faire parvenir..., je vous serais reconnaissant(e) de...",
+      "Endings: dans l'attente de votre réponse, je vous prie d'agréer..., or simply Cordialement, / Bien cordialement,"
+     ],
+     "q": "How would you start an email to a company you have never contacted? Try two opening lines.",
+     "c": "Write a 5-line email asking for information about a course, with an opening, a request and a closing."
+    },
+    "de": {
+     "t": "Berufliche E-Mails",
+     "g": "Du schreibst eine höfliche, klare berufliche E-Mail auf Französisch.",
+     "p": [
+      "Anrede: Madame, Monsieur, (formell) oder Bonjour Madame Martin, ; erster Satz: suite à notre échange...",
+      "Bitten: je me permets de vous contacter..., pourriez-vous me faire parvenir..., je vous serais reconnaissant(e) de...",
+      "Schluss: dans l'attente de votre réponse, je vous prie d'agréer..., oder einfach Cordialement, / Bien cordialement,"
+     ],
+     "q": "Wie beginnst du eine E-Mail an eine Firma, die du noch nie kontaktiert hast? Probier zwei Einstiege.",
+     "c": "Schreib eine E-Mail in 5 Zeilen mit Bitte um Infos zu einem Kurs: Anrede, Bitte und Grußformel."
+    },
+    "es": {
+     "t": "Correos profesionales",
+     "g": "Escribe un correo profesional educado y claro en francés.",
+     "p": [
+      "Saludo: Madame, Monsieur, (formal) o Bonjour Madame Martin, ; primera frase: suite à notre échange...",
+      "Peticiones: je me permets de vous contacter..., pourriez-vous me faire parvenir..., je vous serais reconnaissant(e) de...",
+      "Despedida: dans l'attente de votre réponse, je vous prie d'agréer..., o simplemente Cordialement, / Bien cordialement,"
+     ],
+     "q": "¿Cómo empezarías un correo a una empresa que nunca has contactado? Prueba dos frases de inicio.",
+     "c": "Escribe un correo de 5 líneas pidiendo información sobre un curso, con saludo, petición y despedida."
+    },
+    "fr": {
+     "t": "Les e-mails professionnels",
+     "g": "Écrire un e-mail professionnel poli et clair.",
+     "p": [
+      "Ouverture : Madame, Monsieur, (formel) ou Bonjour Madame Martin, ; première phrase : suite à notre échange...",
+      "Demande : je me permets de vous contacter..., pourriez-vous me faire parvenir..., je vous serais reconnaissant(e) de...",
+      "Formule finale : dans l'attente de votre réponse, je vous prie d'agréer..., ou Cordialement, / Bien cordialement,"
+     ],
+     "q": "Comment commencerais-tu un e-mail à une entreprise que tu ne connais pas ? Essaie deux débuts.",
+     "c": "Écris un e-mail de 5 lignes pour demander des informations sur un cours : ouverture, demande et formule finale."
+    },
+    "it": {
+     "t": "Email professionali",
+     "g": "Scrivi un'email professionale cortese e chiara in francese.",
+     "p": [
+      "Apertura: Madame, Monsieur, (formale) o Bonjour Madame Martin, ; prima frase: suite à notre échange...",
+      "Richieste: je me permets de vous contacter..., pourriez-vous me faire parvenir..., je vous serais reconnaissant(e) de...",
+      "Chiusura: dans l'attente de votre réponse, je vous prie d'agréer..., o semplicemente Cordialement, / Bien cordialement,"
+     ],
+     "q": "Come inizieresti un'email a un'azienda che non hai mai contattato? Prova due frasi d'apertura.",
+     "c": "Scrivi un'email di 5 righe per chiedere informazioni su un corso, con apertura, richiesta e chiusura."
+    },
+    "pt": {
+     "t": "E-mails profissionais",
+     "g": "Escreve um e-mail profissional educado e claro em francês.",
+     "p": [
+      "Abertura: Madame, Monsieur, (formal) ou Bonjour Madame Martin, ; primeira frase: suite à notre échange...",
+      "Pedidos: je me permets de vous contacter..., pourriez-vous me faire parvenir..., je vous serais reconnaissant(e) de...",
+      "Fecho: dans l'attente de votre réponse, je vous prie d'agréer..., ou simplesmente Cordialement, / Bien cordialement,"
+     ],
+     "q": "Como começarias um e-mail para uma empresa que nunca contactaste? Experimenta duas frases de abertura.",
+     "c": "Escreve um e-mail de 5 linhas a pedir informações sobre um curso, com abertura, pedido e fecho."
+    },
+    "pt_BR": {
+     "t": "E-mails profissionais",
+     "g": "Escreva um e-mail profissional educado e claro em francês.",
+     "p": [
+      "Abertura: Madame, Monsieur, (formal) ou Bonjour Madame Martin, ; primeira frase: suite à notre échange...",
+      "Pedidos: je me permets de vous contacter..., pourriez-vous me faire parvenir..., je vous serais reconnaissant(e) de...",
+      "Fecho: dans l'attente de votre réponse, je vous prie d'agréer..., ou simplesmente Cordialement, / Bien cordialement,"
+     ],
+     "q": "Como você começaria um e-mail para uma empresa que nunca contatou? Tente duas frases de abertura.",
+     "c": "Escreva um e-mail de 5 linhas pedindo informações sobre um curso, com abertura, pedido e fecho."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "je me permets de",
+      "ex": "Je me permets de vous contacter au sujet de votre annonce."
+     },
+     {
+      "w": "suite à notre échange",
+      "ex": "Suite à notre échange téléphonique, je vous envoie le document."
+     },
+     {
+      "w": "pourriez-vous",
+      "ex": "Pourriez-vous me confirmer la date de la formation ?"
+     },
+     {
+      "w": "vous trouverez ci-joint",
+      "ex": "Vous trouverez ci-joint mon CV."
+     },
+     {
+      "w": "dans l'attente de",
+      "ex": "Dans l'attente de votre réponse, je reste à votre disposition."
+     },
+     {
+      "w": "cordialement",
+      "ex": "Cordialement, Julie Martin"
+     }
+    ],
+    "gram": "E-mail formel : je me permets de + infinitif ; pourriez-vous + infinitif ; ci-joint ; dans l'attente de votre réponse."
+   }
+  },
+  {
+   "d": 217,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Telephone at work",
+     "g": "Handle professional phone calls: transferring, leaving messages, calling back.",
+     "p": [
+      "Answering: Société Dubois, bonjour ! Qui est à l'appareil ? C'est de la part de qui ?",
+      "Transferring: je vous le passe, ne quittez pas, je transfère votre appel. If busy: la ligne est occupée.",
+      "Messages: voulez-vous laisser un message ? Pouvez-vous rappeler plus tard ? Je le rappellerai dès que possible."
+     ],
+     "q": "Imagine I call your office and your colleague is out. What do you say to me in French?",
+     "c": "Write a short phone dialogue: greet, ask who is calling, say the person is absent and take a message."
+    },
+    "de": {
+     "t": "Telefonieren bei der Arbeit",
+     "g": "Du führst berufliche Telefonate: verbinden, Nachricht hinterlassen, zurückrufen.",
+     "p": [
+      "Annehmen: Société Dubois, bonjour ! Qui est à l'appareil ? C'est de la part de qui ?",
+      "Verbinden: je vous le passe, ne quittez pas, je transfère votre appel. Besetzt: la ligne est occupée.",
+      "Nachrichten: voulez-vous laisser un message ? Pouvez-vous rappeler plus tard ? Je le rappellerai dès que possible."
+     ],
+     "q": "Stell dir vor, ich rufe in deinem Büro an und dein Kollege ist nicht da. Was sagst du mir?",
+     "c": "Schreib einen kurzen Telefondialog: grüßen, nach dem Anrufer fragen, Abwesenheit melden, Nachricht notieren."
+    },
+    "es": {
+     "t": "El teléfono en el trabajo",
+     "g": "Gestiona llamadas profesionales: transferir, dejar mensajes, volver a llamar.",
+     "p": [
+      "Contestar: Société Dubois, bonjour ! Qui est à l'appareil ? C'est de la part de qui ?",
+      "Transferir: je vous le passe, ne quittez pas, je transfère votre appel. Ocupado: la ligne est occupée.",
+      "Mensajes: voulez-vous laisser un message ? Pouvez-vous rappeler plus tard ? Je le rappellerai dès que possible."
+     ],
+     "q": "Imagina que llamo a tu oficina y tu compañero no está. ¿Qué me dices en francés?",
+     "c": "Escribe un diálogo telefónico corto: saluda, pregunta quién llama, di que la persona no está y toma un mensaje."
+    },
+    "fr": {
+     "t": "Le téléphone au travail",
+     "g": "Gérer des appels professionnels : transférer, laisser un message, rappeler.",
+     "p": [
+      "Répondre : Société Dubois, bonjour ! Qui est à l'appareil ? C'est de la part de qui ?",
+      "Transférer : je vous le passe, ne quittez pas, je transfère votre appel. Sinon : la ligne est occupée.",
+      "Messages : voulez-vous laisser un message ? Pouvez-vous rappeler plus tard ? Je le rappellerai dès que possible."
+     ],
+     "q": "Imagine que j'appelle ton bureau et que ton collègue est absent. Que me dis-tu ?",
+     "c": "Écris un court dialogue au téléphone : saluer, demander qui appelle, dire que la personne est absente, prendre un message."
+    },
+    "it": {
+     "t": "Il telefono al lavoro",
+     "g": "Gestisci telefonate di lavoro: passare la chiamata, lasciare messaggi, richiamare.",
+     "p": [
+      "Rispondere: Société Dubois, bonjour ! Qui est à l'appareil ? C'est de la part de qui ?",
+      "Passare: je vous le passe, ne quittez pas, je transfère votre appel. Occupato: la ligne est occupée.",
+      "Messaggi: voulez-vous laisser un message ? Pouvez-vous rappeler plus tard ? Je le rappellerai dès que possible."
+     ],
+     "q": "Immagina che io chiami il tuo ufficio e il tuo collega non ci sia. Cosa mi dici in francese?",
+     "c": "Scrivi un breve dialogo al telefono: saluta, chiedi chi parla, di' che la persona è assente e prendi un messaggio."
+    },
+    "pt": {
+     "t": "O telefone no trabalho",
+     "g": "Gere chamadas profissionais: transferir, deixar recados, voltar a ligar.",
+     "p": [
+      "Atender: Société Dubois, bonjour ! Qui est à l'appareil ? C'est de la part de qui ?",
+      "Transferir: je vous le passe, ne quittez pas, je transfère votre appel. Ocupado: la ligne est occupée.",
+      "Recados: voulez-vous laisser un message ? Pouvez-vous rappeler plus tard ? Je le rappellerai dès que possible."
+     ],
+     "q": "Imagina que ligo para o teu escritório e o teu colega não está. O que me dizes em francês?",
+     "c": "Escreve um diálogo curto ao telefone: cumprimenta, pergunta quem fala, diz que a pessoa não está e anota um recado."
+    },
+    "pt_BR": {
+     "t": "O telefone no trabalho",
+     "g": "Lide com ligações profissionais: transferir, deixar recado, retornar a ligação.",
+     "p": [
+      "Atender: Société Dubois, bonjour ! Qui est à l'appareil ? C'est de la part de qui ?",
+      "Transferir: je vous le passe, ne quittez pas, je transfère votre appel. Ocupado: la ligne est occupée.",
+      "Recados: voulez-vous laisser un message ? Pouvez-vous rappeler plus tard ? Je le rappellerai dès que possible."
+     ],
+     "q": "Imagine que eu ligo para o seu escritório e seu colega não está. O que você me diz em francês?",
+     "c": "Escreva um diálogo curto ao telefone: cumprimente, pergunte quem fala, diga que a pessoa não está e anote um recado."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "c'est de la part de qui ?",
+      "ex": "Bonjour, c'est de la part de qui ?"
+     },
+     {
+      "w": "ne quittez pas",
+      "ex": "Ne quittez pas, je vous passe le service client."
+     },
+     {
+      "w": "transférer un appel",
+      "ex": "Je vais transférer votre appel à ma collègue."
+     },
+     {
+      "w": "laisser un message",
+      "ex": "Voulez-vous laisser un message ?"
+     },
+     {
+      "w": "rappeler plus tard",
+      "ex": "Pouvez-vous rappeler plus tard, vers quinze heures ?"
+     },
+     {
+      "w": "la ligne est occupée",
+      "ex": "Désolé, la ligne est occupée pour le moment."
+     }
+    ],
+    "gram": "Au téléphone : c'est de la part de qui ? ne quittez pas ; je vous le / la passe ; laisser un message ; rappeler."
+   }
+  },
+  {
+   "d": 218,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Presenting a project",
+     "g": "Present a project clearly: introduction, stages, results, next steps.",
+     "p": [
+      "Introduction: je vais vous présenter..., l'objectif du projet est de..., ce projet est né de...",
+      "Stages: dans un premier temps, ensuite, dans un deuxième temps, enfin. Results: nous avons obtenu, grâce à...",
+      "Next steps: la prochaine étape sera de..., d'ici trois mois, nous aurons... Finish: merci de votre attention !"
+     ],
+     "q": "Tell me about a project you are proud of: what was the goal, how did you do it, what was the result?",
+     "c": "Prepare a one-minute presentation of a real or imagined project with four parts: goal, stages, results, next step."
+    },
+    "de": {
+     "t": "Ein Projekt vorstellen",
+     "g": "Du stellst ein Projekt klar vor: Einleitung, Etappen, Ergebnisse, nächste Schritte.",
+     "p": [
+      "Einleitung: je vais vous présenter..., l'objectif du projet est de..., ce projet est né de...",
+      "Etappen: dans un premier temps, ensuite, dans un deuxième temps, enfin. Ergebnisse: nous avons obtenu, grâce à...",
+      "Nächste Schritte: la prochaine étape sera de..., d'ici trois mois, nous aurons... Ende: merci de votre attention !"
+     ],
+     "q": "Erzähl von einem Projekt, auf das du stolz bist: Ziel, Vorgehen, Ergebnis?",
+     "c": "Bereite eine einminütige Präsentation eines Projekts vor: Ziel, Etappen, Ergebnisse, nächster Schritt."
+    },
+    "es": {
+     "t": "Presentar un proyecto",
+     "g": "Presenta un proyecto con claridad: introducción, etapas, resultados, próximos pasos.",
+     "p": [
+      "Introducción: je vais vous présenter..., l'objectif du projet est de..., ce projet est né de...",
+      "Etapas: dans un premier temps, ensuite, dans un deuxième temps, enfin. Resultados: nous avons obtenu, grâce à...",
+      "Próximos pasos: la prochaine étape sera de..., d'ici trois mois, nous aurons... Final: merci de votre attention !"
+     ],
+     "q": "Háblame de un proyecto del que estés orgulloso: ¿cuál era el objetivo, cómo lo hiciste y qué resultado tuvo?",
+     "c": "Prepara una presentación de un minuto de un proyecto real o imaginario: objetivo, etapas, resultados, siguiente paso."
+    },
+    "fr": {
+     "t": "Présenter un projet",
+     "g": "Présenter clairement un projet : introduction, étapes, résultats, suite.",
+     "p": [
+      "Introduction : je vais vous présenter..., l'objectif du projet est de..., ce projet est né de...",
+      "Étapes : dans un premier temps, ensuite, dans un deuxième temps, enfin. Résultats : nous avons obtenu, grâce à...",
+      "La suite : la prochaine étape sera de..., d'ici trois mois, nous aurons... Fin : merci de votre attention !"
+     ],
+     "q": "Parle-moi d'un projet dont tu es fier ou fière : quel était l'objectif, comment l'as-tu mené, quel résultat ?",
+     "c": "Prépare une présentation d'une minute d'un projet réel ou imaginaire : objectif, étapes, résultats, prochaine étape."
+    },
+    "it": {
+     "t": "Presentare un progetto",
+     "g": "Presenta un progetto con chiarezza: introduzione, fasi, risultati, prossimi passi.",
+     "p": [
+      "Introduzione: je vais vous présenter..., l'objectif du projet est de..., ce projet est né de...",
+      "Fasi: dans un premier temps, ensuite, dans un deuxième temps, enfin. Risultati: nous avons obtenu, grâce à...",
+      "Prossimi passi: la prochaine étape sera de..., d'ici trois mois, nous aurons... Fine: merci de votre attention !"
+     ],
+     "q": "Parlami di un progetto di cui sei fiero: qual era l'obiettivo, come l'hai realizzato e che risultato ha dato?",
+     "c": "Prepara una presentazione di un minuto di un progetto reale o immaginario: obiettivo, fasi, risultati, prossimo passo."
+    },
+    "pt": {
+     "t": "Apresentar um projeto",
+     "g": "Apresenta um projeto com clareza: introdução, etapas, resultados, próximos passos.",
+     "p": [
+      "Introdução: je vais vous présenter..., l'objectif du projet est de..., ce projet est né de...",
+      "Etapas: dans un premier temps, ensuite, dans un deuxième temps, enfin. Resultados: nous avons obtenu, grâce à...",
+      "Próximos passos: la prochaine étape sera de..., d'ici trois mois, nous aurons... Fim: merci de votre attention !"
+     ],
+     "q": "Fala-me de um projeto de que te orgulhas: qual era o objetivo, como o fizeste e qual foi o resultado?",
+     "c": "Prepara uma apresentação de um minuto de um projeto real ou imaginário: objetivo, etapas, resultados, próximo passo."
+    },
+    "pt_BR": {
+     "t": "Apresentando um projeto",
+     "g": "Apresente um projeto com clareza: introdução, etapas, resultados, próximos passos.",
+     "p": [
+      "Introdução: je vais vous présenter..., l'objectif du projet est de..., ce projet est né de...",
+      "Etapas: dans un premier temps, ensuite, dans un deuxième temps, enfin. Resultados: nous avons obtenu, grâce à...",
+      "Próximos passos: la prochaine étape sera de..., d'ici trois mois, nous aurons... Fim: merci de votre attention !"
+     ],
+     "q": "Me fale de um projeto de que você se orgulha: qual era o objetivo, como fez e qual foi o resultado?",
+     "c": "Prepare uma apresentação de um minuto de um projeto real ou imaginário: objetivo, etapas, resultados, próximo passo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "je vais vous présenter",
+      "ex": "Je vais vous présenter notre projet de jardin partagé."
+     },
+     {
+      "w": "l'objectif est de",
+      "ex": "L'objectif est de réduire nos déchets de moitié."
+     },
+     {
+      "w": "dans un premier temps",
+      "ex": "Dans un premier temps, nous avons interrogé les habitants."
+     },
+     {
+      "w": "nous avons obtenu",
+      "ex": "Nous avons obtenu de très bons résultats."
+     },
+     {
+      "w": "la prochaine étape",
+      "ex": "La prochaine étape sera de trouver des bénévoles."
+     },
+     {
+      "w": "merci de votre attention",
+      "ex": "Merci de votre attention, avez-vous des questions ?"
+     }
+    ],
+    "gram": "Présenter : je vais vous présenter ; l'objectif est de + infinitif ; dans un premier temps... ensuite ; la prochaine étape sera de."
+   }
+  },
+  {
+   "d": 219,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Review: complex sentences",
+     "g": "Bring together dont, the passive, reported speech and connectors.",
+     "p": [
+      "Relatives: dont (le film dont je parle), ce qui / ce que / ce dont, avec lequel, auquel.",
+      "Passive and alternatives: la maison a été construite par..., on m'a dit, je me suis fait aider.",
+      "Reported speech (il a dit qu'il viendrait) and connectors of cause, consequence, purpose, opposition, concession."
+     ],
+     "q": "Tell me about a book or film dont tu te souviens, who it was made by, and what a friend said about it.",
+     "c": "Write an 8-sentence text using dont, a passive, a reported sentence, and four connectors such as car, donc, pour que, bien que."
+    },
+    "de": {
+     "t": "Wiederholung: komplexe Sätze",
+     "g": "Du verbindest dont, Passiv, indirekte Rede und Konnektoren.",
+     "p": [
+      "Relativpronomen: dont (le film dont je parle), ce qui / ce que / ce dont, avec lequel, auquel.",
+      "Passiv und Alternativen: la maison a été construite par..., on m'a dit, je me suis fait aider.",
+      "Indirekte Rede (il a dit qu'il viendrait) und Konnektoren für Grund, Folge, Zweck, Gegensatz, Einräumung."
+     ],
+     "q": "Erzähl von einem Buch oder Film, dont tu te souviens: von wem, und was ein Freund darüber gesagt hat.",
+     "c": "Schreib 8 Sätze mit dont, einem Passiv, indirekter Rede und vier Konnektoren wie car, donc, pour que, bien que."
+    },
+    "es": {
+     "t": "Repaso: oraciones complejas",
+     "g": "Reúne dont, la pasiva, el estilo indirecto y los conectores.",
+     "p": [
+      "Relativos: dont (le film dont je parle), ce qui / ce que / ce dont, avec lequel, auquel.",
+      "Pasiva y alternativas: la maison a été construite par..., on m'a dit, je me suis fait aider.",
+      "Estilo indirecto (il a dit qu'il viendrait) y conectores de causa, consecuencia, finalidad, oposición y concesión."
+     ],
+     "q": "Háblame de un libro o película dont tu te souviens: quién lo hizo y qué dijo un amigo sobre él.",
+     "c": "Escribe 8 frases con dont, una pasiva, estilo indirecto y cuatro conectores como car, donc, pour que, bien que."
+    },
+    "fr": {
+     "t": "Révision : les phrases complexes",
+     "g": "Réunir dont, le passif, le discours indirect et les connecteurs.",
+     "p": [
+      "Relatifs : dont (le film dont je parle), ce qui / ce que / ce dont, avec lequel, auquel.",
+      "Passif et alternatives : la maison a été construite par..., on m'a dit, je me suis fait aider.",
+      "Discours indirect (il a dit qu'il viendrait) et connecteurs de cause, conséquence, but, opposition, concession."
+     ],
+     "q": "Parle-moi d'un livre ou d'un film dont tu te souviens : par qui il a été fait, et ce qu'un ami en a dit.",
+     "c": "Écris 8 phrases avec dont, un passif, un discours rapporté et quatre connecteurs comme car, donc, pour que, bien que."
+    },
+    "it": {
+     "t": "Ripasso: frasi complesse",
+     "g": "Metti insieme dont, il passivo, il discorso indiretto e i connettivi.",
+     "p": [
+      "Relativi: dont (le film dont je parle), ce qui / ce que / ce dont, avec lequel, auquel.",
+      "Passivo e alternative: la maison a été construite par..., on m'a dit, je me suis fait aider.",
+      "Discorso indiretto (il a dit qu'il viendrait) e connettivi di causa, conseguenza, scopo, opposizione, concessione."
+     ],
+     "q": "Parlami di un libro o film dont tu te souviens: da chi è stato fatto e cosa ne ha detto un amico.",
+     "c": "Scrivi 8 frasi con dont, un passivo, un discorso indiretto e quattro connettivi come car, donc, pour que, bien que."
+    },
+    "pt": {
+     "t": "Revisão: frases complexas",
+     "g": "Junta dont, a passiva, o discurso indireto e os conectores.",
+     "p": [
+      "Relativos: dont (le film dont je parle), ce qui / ce que / ce dont, avec lequel, auquel.",
+      "Passiva e alternativas: la maison a été construite par..., on m'a dit, je me suis fait aider.",
+      "Discurso indireto (il a dit qu'il viendrait) e conectores de causa, consequência, finalidade, oposição e concessão."
+     ],
+     "q": "Fala-me de um livro ou filme dont tu te souviens: por quem foi feito e o que um amigo disse sobre ele.",
+     "c": "Escreve 8 frases com dont, uma passiva, discurso indireto e quatro conectores como car, donc, pour que, bien que."
+    },
+    "pt_BR": {
+     "t": "Revisão: frases complexas",
+     "g": "Junte dont, a passiva, o discurso indireto e os conectores.",
+     "p": [
+      "Relativos: dont (le film dont je parle), ce qui / ce que / ce dont, avec lequel, auquel.",
+      "Passiva e alternativas: la maison a été construite par..., on m'a dit, je me suis fait aider.",
+      "Discurso indireto (il a dit qu'il viendrait) e conectores de causa, consequência, finalidade, oposição e concessão."
+     ],
+     "q": "Me fale de um livro ou filme dont tu te souviens: por quem foi feito e o que um amigo disse sobre ele.",
+     "c": "Escreva 8 frases com dont, uma passiva, discurso indireto e quatro conectores como car, donc, pour que, bien que."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "le film dont je parle",
+      "ex": "Le film dont je parle a été tourné à Marseille."
+     },
+     {
+      "w": "ce qui m'intéresse",
+      "ex": "Ce qui m'intéresse, c'est l'histoire des personnages."
+     },
+     {
+      "w": "a été réalisé par",
+      "ex": "Ce film a été réalisé par une jeune réalisatrice."
+     },
+     {
+      "w": "il m'a dit que",
+      "ex": "Mon ami m'a dit qu'il l'avait vu deux fois."
+     },
+     {
+      "w": "si bien que",
+      "ex": "Il pleuvait, si bien que nous sommes restés au cinéma."
+     },
+     {
+      "w": "bien que",
+      "ex": "Bien que le film soit long, je ne me suis pas ennuyé."
+     }
+    ],
+    "gram": "Bilan B1 : dont, ce qui / ce que ; passif (être + participe) ; discours indirect au passé ; connecteurs logiques."
+   }
+  },
+  {
+   "d": 220,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Education systems",
+     "g": "Talk about the French school system and compare it with yours.",
+     "p": [
+      "L'école maternelle (from age 3), then l'école élémentaire, then le collège (4 years, ending with le brevet).",
+      "Le lycée (3 years) ends with le baccalauréat, le bac. Then l'université or a classe préparatoire.",
+      "Les grandes écoles are selective higher-education schools, for example in engineering or business."
+     ],
+     "q": "What was school like in your country? Tell me about your favourite subject and teacher.",
+     "c": "Write five sentences comparing the French system with yours: à l'âge de..., en France on va au..., alors que chez moi..."
+    },
+    "de": {
+     "t": "Bildungssysteme",
+     "g": "Du sprichst über das französische Schulsystem und vergleichst es mit deinem.",
+     "p": [
+      "L'école maternelle (ab 3 Jahren), dann l'école élémentaire, dann le collège (4 Jahre, Abschluss le brevet).",
+      "Le lycée (3 Jahre) endet mit dem baccalauréat, le bac. Danach l'université oder eine classe préparatoire.",
+      "Les grandes écoles sind selektive Hochschulen, zum Beispiel für Ingenieurwesen oder Wirtschaft."
+     ],
+     "q": "Wie war die Schule in deinem Land? Erzähl von deinem Lieblingsfach und deiner Lieblingslehrkraft.",
+     "c": "Schreib fünf Sätze, die das französische System mit deinem vergleichen: à l'âge de..., alors que chez moi..."
+    },
+    "es": {
+     "t": "Sistemas educativos",
+     "g": "Habla del sistema escolar francés y compáralo con el tuyo.",
+     "p": [
+      "L'école maternelle (desde los 3 años), luego l'école élémentaire y le collège (4 años, termina con le brevet).",
+      "Le lycée (3 años) termina con el baccalauréat, le bac. Después l'université o una classe préparatoire.",
+      "Les grandes écoles son centros superiores selectivos, por ejemplo de ingeniería o comercio."
+     ],
+     "q": "¿Cómo era la escuela en tu país? Háblame de tu asignatura y profesor favoritos.",
+     "c": "Escribe cinco frases comparando el sistema francés con el tuyo: à l'âge de..., alors que chez moi..."
+    },
+    "fr": {
+     "t": "Les systèmes éducatifs",
+     "g": "Parler du système scolaire français et le comparer avec le sien.",
+     "p": [
+      "L'école maternelle (dès 3 ans), puis l'école élémentaire, puis le collège (4 ans, avec le brevet à la fin).",
+      "Le lycée (3 ans) se termine par le baccalauréat, le bac. Ensuite : l'université ou une classe préparatoire.",
+      "Les grandes écoles sont des établissements sélectifs, par exemple d'ingénieurs ou de commerce."
+     ],
+     "q": "Comment était l'école dans ton pays ? Parle-moi de ta matière et de ton professeur préférés.",
+     "c": "Écris cinq phrases qui comparent le système français et le tien : à l'âge de..., alors que chez moi..."
+    },
+    "it": {
+     "t": "Sistemi scolastici",
+     "g": "Parla del sistema scolastico francese e confrontalo con il tuo.",
+     "p": [
+      "L'école maternelle (dai 3 anni), poi l'école élémentaire, poi le collège (4 anni, si chiude con le brevet).",
+      "Le lycée (3 anni) finisce con il baccalauréat, le bac. Poi l'université o una classe préparatoire.",
+      "Les grandes écoles sono istituti superiori selettivi, per esempio di ingegneria o economia."
+     ],
+     "q": "Com'era la scuola nel tuo paese? Parlami della tua materia e del tuo insegnante preferiti.",
+     "c": "Scrivi cinque frasi che confrontano il sistema francese con il tuo: à l'âge de..., alors que chez moi..."
+    },
+    "pt": {
+     "t": "Sistemas de ensino",
+     "g": "Fala do sistema escolar francês e compara-o com o teu.",
+     "p": [
+      "L'école maternelle (a partir dos 3 anos), depois l'école élémentaire e le collège (4 anos, acaba com le brevet).",
+      "Le lycée (3 anos) termina com o baccalauréat, le bac. Depois l'université ou uma classe préparatoire.",
+      "Les grandes écoles são escolas superiores seletivas, por exemplo de engenharia ou gestão."
+     ],
+     "q": "Como era a escola no teu país? Fala-me da tua disciplina e do teu professor preferidos.",
+     "c": "Escreve cinco frases a comparar o sistema francês com o teu: à l'âge de..., alors que chez moi..."
+    },
+    "pt_BR": {
+     "t": "Sistemas de ensino",
+     "g": "Fale do sistema escolar francês e compare com o seu.",
+     "p": [
+      "L'école maternelle (a partir dos 3 anos), depois l'école élémentaire e le collège (4 anos, termina com le brevet).",
+      "Le lycée (3 anos) termina com o baccalauréat, le bac. Depois l'université ou uma classe préparatoire.",
+      "Les grandes écoles são escolas superiores seletivas, por exemplo de engenharia ou administração."
+     ],
+     "q": "Como era a escola no seu país? Me fale da sua matéria e do seu professor favoritos.",
+     "c": "Escreva cinco frases comparando o sistema francês com o seu: à l'âge de..., alors que chez moi..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "l'école maternelle",
+      "ex": "Mon fils va à l'école maternelle depuis septembre."
+     },
+     {
+      "w": "le collège",
+      "ex": "Au collège, j'ai commencé à apprendre l'anglais."
+     },
+     {
+      "w": "le lycée",
+      "ex": "Elle est en dernière année de lycée."
+     },
+     {
+      "w": "passer le bac",
+      "ex": "Il a passé le bac l'année dernière."
+     },
+     {
+      "w": "une grande école",
+      "ex": "Elle prépare le concours d'une grande école."
+     },
+     {
+      "w": "une matière",
+      "ex": "Ma matière préférée était l'histoire."
+     }
+    ],
+    "gram": "École : maternelle → élémentaire → collège → lycée → bac. Aller à l'école, au collège, au lycée ; passer / avoir le bac."
+   }
+  }
+ ]
+}

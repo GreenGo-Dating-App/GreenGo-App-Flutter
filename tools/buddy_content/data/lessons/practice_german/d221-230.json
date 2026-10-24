@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 221,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Health and well-being",
+     "g": "Talk about stress and relaxation: Stress, Entspannung, Work-Life-Balance, sich erholen.",
+     "p": [
+      "Stress: Ich habe Stress / Ich bin gestresst. Die Arbeit stresst mich. Ich stehe unter Druck.",
+      "Relaxing: sich entspannen, sich erholen, abschalten (switch off): Am Wochenende kann ich gut abschalten.",
+      "Balance: die Work-Life-Balance, Zeit für sich haben, auf sich achten: Ich achte mehr auf meinen Schlaf."
+     ],
+     "q": "How do you relax after a busy day? Tell me with sich entspannen, abschalten or sich erholen.",
+     "c": "Write five things that help you relax, using reflexive verbs: Ich entspanne mich, wenn..."
+    },
+    "de": {
+     "t": "Gesundheit und Wohlbefinden",
+     "g": "Du sprichst über Stress und Entspannung: Stress, Entspannung, Work-Life-Balance, sich erholen.",
+     "p": [
+      "Stress: Ich habe Stress / Ich bin gestresst. Die Arbeit stresst mich. Ich stehe unter Druck.",
+      "Entspannen: sich entspannen, sich erholen, abschalten: Am Wochenende kann ich gut abschalten.",
+      "Balance: die Work-Life-Balance, Zeit für sich haben, auf sich achten: Ich achte mehr auf meinen Schlaf."
+     ],
+     "q": "Wie entspannst du dich nach einem vollen Tag? Erzähl mit sich entspannen, abschalten oder sich erholen.",
+     "c": "Schreib fünf Dinge, die dir beim Entspannen helfen, mit reflexiven Verben: Ich entspanne mich, wenn..."
+    },
+    "es": {
+     "t": "Salud y bienestar",
+     "g": "Habla de estrés y relajación: Stress, Entspannung, Work-Life-Balance, sich erholen.",
+     "p": [
+      "Estrés: Ich habe Stress / Ich bin gestresst. Die Arbeit stresst mich. Ich stehe unter Druck (estoy bajo presión).",
+      "Relajarse: sich entspannen, sich erholen (recuperarse), abschalten (desconectar): Am Wochenende kann ich gut abschalten.",
+      "Equilibrio: die Work-Life-Balance, Zeit für sich haben, auf sich achten: Ich achte mehr auf meinen Schlaf."
+     ],
+     "q": "¿Cómo te relajas tras un día ajetreado? Cuéntamelo con sich entspannen, abschalten o sich erholen.",
+     "c": "Escribe cinco cosas que te ayudan a relajarte con verbos reflexivos: Ich entspanne mich, wenn..."
+    },
+    "fr": {
+     "t": "Santé et bien-être",
+     "g": "Parler du stress et de la détente : Stress, Entspannung, Work-Life-Balance, sich erholen.",
+     "p": [
+      "Le stress : Ich habe Stress / Ich bin gestresst. Die Arbeit stresst mich. Ich stehe unter Druck (je suis sous pression).",
+      "Se détendre : sich entspannen, sich erholen (récupérer), abschalten (décrocher) : Am Wochenende kann ich gut abschalten.",
+      "L'équilibre : die Work-Life-Balance, Zeit für sich haben, auf sich achten : Ich achte mehr auf meinen Schlaf."
+     ],
+     "q": "Comment te détends-tu après une journée chargée ? Dis-le avec sich entspannen, abschalten ou sich erholen.",
+     "c": "Écris cinq choses qui t'aident à te détendre, avec des verbes pronominaux : Ich entspanne mich, wenn..."
+    },
+    "it": {
+     "t": "Salute e benessere",
+     "g": "Parli di stress e relax: Stress, Entspannung, Work-Life-Balance, sich erholen.",
+     "p": [
+      "Stress: Ich habe Stress / Ich bin gestresst. Die Arbeit stresst mich. Ich stehe unter Druck (sono sotto pressione).",
+      "Rilassarsi: sich entspannen, sich erholen (riprendersi), abschalten (staccare): Am Wochenende kann ich gut abschalten.",
+      "Equilibrio: die Work-Life-Balance, Zeit für sich haben, auf sich achten: Ich achte mehr auf meinen Schlaf."
+     ],
+     "q": "Come ti rilassi dopo una giornata piena? Dimmelo con sich entspannen, abschalten o sich erholen.",
+     "c": "Scrivi cinque cose che ti aiutano a rilassarti con verbi riflessivi: Ich entspanne mich, wenn..."
+    },
+    "pt": {
+     "t": "Saúde e bem-estar",
+     "g": "Falar de stress e descanso: Stress, Entspannung, Work-Life-Balance, sich erholen.",
+     "p": [
+      "Stress: Ich habe Stress / Ich bin gestresst. Die Arbeit stresst mich. Ich stehe unter Druck (estou sob pressão).",
+      "Descontrair: sich entspannen, sich erholen (recuperar), abschalten (desligar): Am Wochenende kann ich gut abschalten.",
+      "Equilíbrio: die Work-Life-Balance, Zeit für sich haben, auf sich achten: Ich achte mehr auf meinen Schlaf."
+     ],
+     "q": "Como descontrais depois de um dia cheio? Conta-me com sich entspannen, abschalten ou sich erholen.",
+     "c": "Escreve cinco coisas que te ajudam a descontrair, com verbos reflexos: Ich entspanne mich, wenn..."
+    },
+    "pt_BR": {
+     "t": "Saúde e bem-estar",
+     "g": "Falar de estresse e descanso: Stress, Entspannung, Work-Life-Balance, sich erholen.",
+     "p": [
+      "Estresse: Ich habe Stress / Ich bin gestresst. Die Arbeit stresst mich. Ich stehe unter Druck (estou sob pressão).",
+      "Relaxar: sich entspannen, sich erholen (se recuperar), abschalten (desligar): Am Wochenende kann ich gut abschalten.",
+      "Equilíbrio: die Work-Life-Balance, Zeit für sich haben, auf sich achten: Ich achte mehr auf meinen Schlaf."
+     ],
+     "q": "Como você relaxa depois de um dia cheio? Me conte com sich entspannen, abschalten ou sich erholen.",
+     "c": "Escreva cinco coisas que te ajudam a relaxar, com verbos reflexivos: Ich entspanne mich, wenn..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Stress",
+      "ex": "Vor Prüfungen habe ich oft Stress."
+     },
+     {
+      "w": "sich entspannen",
+      "ex": "Beim Yoga entspanne ich mich am besten."
+     },
+     {
+      "w": "sich erholen",
+      "ex": "Im Urlaub habe ich mich gut erholt."
+     },
+     {
+      "w": "abschalten",
+      "ex": "Beim Wandern kann ich richtig abschalten."
+     },
+     {
+      "w": "auf sich achten",
+      "ex": "Du solltest mehr auf dich achten."
+     },
+     {
+      "w": "die Work-Life-Balance",
+      "ex": "Eine gute Work-Life-Balance ist mir wichtig."
+     }
+    ],
+    "gram": "Reflexive Verben: sich entspannen, sich erholen (Akkusativ: ich entspanne mich); auf + Akkusativ achten."
+   }
+  },
+  {
+   "d": 222,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "At the doctor in detail",
+     "g": "Describe symptoms precisely and understand general advice at the doctor's.",
+     "p": [
+      "Symptoms: Ich habe seit drei Tagen Halsschmerzen. Mir ist schwindelig. Der Rücken tut mir weh, vor allem morgens.",
+      "Be precise: seit wann, wie oft, wo genau: Es tut hier weh, wenn ich mich bewege. Ich habe leichtes Fieber.",
+      "Typical advice: Sie sollten sich ausruhen, viel trinken, das Rezept in der Apotheke einlösen. Language practice only."
+     ],
+     "q": "Let's role-play a doctor's visit about a cold: describe your symptoms with seit, wenn and tut weh.",
+     "c": "Write a short dialogue at the doctor's (six lines) with seit, Mir ist..., tut weh and Sie sollten..."
+    },
+    "de": {
+     "t": "Beim Arzt im Detail",
+     "g": "Du beschreibst Beschwerden genau und verstehst allgemeine Ratschläge beim Arzt.",
+     "p": [
+      "Beschwerden: Ich habe seit drei Tagen Halsschmerzen. Mir ist schwindelig. Der Rücken tut mir weh, vor allem morgens.",
+      "Genau sein: seit wann, wie oft, wo genau: Es tut hier weh, wenn ich mich bewege. Ich habe leichtes Fieber.",
+      "Allgemeine Ratschläge: Sie sollten sich ausruhen, viel trinken, das Rezept in der Apotheke einlösen. Nur Sprachübung, kein Rat."
+     ],
+     "q": "Rollenspiel beim Arzt wegen einer Erkältung: Beschreib deine Beschwerden mit seit, wenn und tut weh.",
+     "c": "Schreib einen kurzen Dialog beim Arzt (sechs Zeilen) mit seit, Mir ist..., tut weh und Sie sollten..."
+    },
+    "es": {
+     "t": "En el médico, con detalle",
+     "g": "Describe síntomas con precisión y entiende consejos generales en la consulta.",
+     "p": [
+      "Síntomas: Ich habe seit drei Tagen Halsschmerzen. Mir ist schwindelig (estoy mareado). Der Rücken tut mir weh.",
+      "Sé preciso: desde cuándo, con qué frecuencia, dónde: Es tut hier weh, wenn ich mich bewege. Ich habe leichtes Fieber.",
+      "Consejos generales: Sie sollten sich ausruhen, viel trinken, das Rezept in der Apotheke einlösen. Es práctica de idioma, no consejo médico."
+     ],
+     "q": "Simulemos una consulta por un resfriado: describe tus síntomas con seit, wenn y tut weh.",
+     "c": "Escribe un diálogo corto en el médico (seis líneas) con seit, Mir ist..., tut weh y Sie sollten..."
+    },
+    "fr": {
+     "t": "Chez le médecin en détail",
+     "g": "Décrire ses symptômes avec précision et comprendre des conseils généraux chez le médecin.",
+     "p": [
+      "Symptômes : Ich habe seit drei Tagen Halsschmerzen. Mir ist schwindelig (j'ai des vertiges). Der Rücken tut mir weh.",
+      "Sois précis : depuis quand, combien de fois, où : Es tut hier weh, wenn ich mich bewege. Ich habe leichtes Fieber.",
+      "Conseils généraux : Sie sollten sich ausruhen, viel trinken, das Rezept in der Apotheke einlösen. Pratique de langue, pas un avis médical."
+     ],
+     "q": "Jeu de rôle chez le médecin pour un rhume : décris tes symptômes avec seit, wenn et tut weh.",
+     "c": "Écris un court dialogue chez le médecin (six lignes) avec seit, Mir ist..., tut weh et Sie sollten..."
+    },
+    "it": {
+     "t": "Dal medico nei dettagli",
+     "g": "Descrivi i sintomi con precisione e capisci i consigli generali dal medico.",
+     "p": [
+      "Sintomi: Ich habe seit drei Tagen Halsschmerzen. Mir ist schwindelig (ho le vertigini). Der Rücken tut mir weh.",
+      "Sii preciso: da quando, quanto spesso, dove: Es tut hier weh, wenn ich mich bewege. Ich habe leichtes Fieber.",
+      "Consigli generali: Sie sollten sich ausruhen, viel trinken, das Rezept in der Apotheke einlösen. Solo pratica linguistica."
+     ],
+     "q": "Gioco di ruolo dal medico per un raffreddore: descrivi i sintomi con seit, wenn e tut weh.",
+     "c": "Scrivi un breve dialogo dal medico (sei righe) con seit, Mir ist..., tut weh e Sie sollten..."
+    },
+    "pt": {
+     "t": "No médico em pormenor",
+     "g": "Descrever sintomas com precisão e perceber conselhos gerais no médico.",
+     "p": [
+      "Sintomas: Ich habe seit drei Tagen Halsschmerzen. Mir ist schwindelig (estou tonto). Der Rücken tut mir weh.",
+      "Sê preciso: desde quando, com que frequência, onde: Es tut hier weh, wenn ich mich bewege. Ich habe leichtes Fieber.",
+      "Conselhos gerais: Sie sollten sich ausruhen, viel trinken, das Rezept in der Apotheke einlösen. É prática de língua, não conselho médico."
+     ],
+     "q": "Vamos simular uma consulta por causa de uma constipação: descreve os sintomas com seit, wenn e tut weh.",
+     "c": "Escreve um diálogo curto no médico (seis linhas) com seit, Mir ist..., tut weh e Sie sollten..."
+    },
+    "pt_BR": {
+     "t": "No médico em detalhe",
+     "g": "Descrever sintomas com precisão e entender conselhos gerais no médico.",
+     "p": [
+      "Sintomas: Ich habe seit drei Tagen Halsschmerzen. Mir ist schwindelig (estou tonto). Der Rücken tut mir weh.",
+      "Seja preciso: desde quando, com que frequência, onde: Es tut hier weh, wenn ich mich bewege. Ich habe leichtes Fieber.",
+      "Conselhos gerais: Sie sollten sich ausruhen, viel trinken, das Rezept in der Apotheke einlösen. É prática de idioma, não conselho médico."
+     ],
+     "q": "Vamos simular uma consulta por causa de um resfriado: descreva os sintomas com seit, wenn e tut weh.",
+     "c": "Escreva um diálogo curto no médico (seis linhas) com seit, Mir ist..., tut weh e Sie sollten..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Beschwerden",
+      "ex": "Welche Beschwerden haben Sie?"
+     },
+     {
+      "w": "seit drei Tagen",
+      "ex": "Ich habe seit drei Tagen Husten."
+     },
+     {
+      "w": "Mir ist schwindelig.",
+      "ex": "Wenn ich schnell aufstehe, ist mir schwindelig."
+     },
+     {
+      "w": "wehtun",
+      "ex": "Mein Knie tut beim Treppensteigen weh."
+     },
+     {
+      "w": "sich ausruhen",
+      "ex": "Sie sollten sich ein paar Tage ausruhen."
+     },
+     {
+      "w": "das Rezept",
+      "ex": "Mit diesem Rezept gehen Sie bitte in die Apotheke."
+     }
+    ],
+    "gram": "Beschwerden: seit + Dativ + Präsens (seit drei Tagen habe ich…); Dativ bei Mir ist kalt/schwindelig, Mir tut … weh."
+   }
+  },
+  {
+   "d": 223,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Sustainable living",
+     "g": "Talk about green habits: regional einkaufen, Müll vermeiden, Fahrrad fahren.",
+     "p": [
+      "Shopping: regional und saisonal einkaufen, auf dem Wochenmarkt, Bio-Produkte, eine Stofftasche mitnehmen.",
+      "Waste: Müll vermeiden, Müll trennen (Papier, Glas, Bio, Gelber Sack), Pfandflaschen zurückbringen.",
+      "Getting around: Fahrrad fahren, öffentliche Verkehrsmittel nutzen, zu Fuß gehen. Ich versuche, weniger Plastik zu kaufen."
+     ],
+     "q": "What do you already do for the environment, and what would you like to change? Use Ich versuche, ... zu ...",
+     "c": "Write five sentences about your green habits with vermeiden, trennen, nutzen and Ich versuche, ... zu..."
+    },
+    "de": {
+     "t": "Nachhaltig leben",
+     "g": "Du sprichst über umweltfreundliche Gewohnheiten: regional einkaufen, Müll vermeiden, Fahrrad fahren.",
+     "p": [
+      "Einkaufen: regional und saisonal einkaufen, auf dem Wochenmarkt, Bio-Produkte, eine Stofftasche mitnehmen.",
+      "Müll: Müll vermeiden, Müll trennen (Papier, Glas, Bio, Gelber Sack), Pfandflaschen zurückbringen.",
+      "Unterwegs: Fahrrad fahren, öffentliche Verkehrsmittel nutzen, zu Fuß gehen. Ich versuche, weniger Plastik zu kaufen."
+     ],
+     "q": "Was machst du schon für die Umwelt, und was möchtest du ändern? Benutze Ich versuche, ... zu ...",
+     "c": "Schreib fünf Sätze über deine grünen Gewohnheiten mit vermeiden, trennen, nutzen und Ich versuche, ... zu..."
+    },
+    "es": {
+     "t": "Vivir de forma sostenible",
+     "g": "Habla de hábitos ecológicos: regional einkaufen, Müll vermeiden, Fahrrad fahren.",
+     "p": [
+      "Compras: regional und saisonal einkaufen, auf dem Wochenmarkt, Bio-Produkte, eine Stofftasche mitnehmen.",
+      "Residuos: Müll vermeiden (evitar), Müll trennen (separar: Papier, Glas, Bio, Gelber Sack), Pfandflaschen zurückbringen.",
+      "Transporte: Fahrrad fahren, öffentliche Verkehrsmittel nutzen, zu Fuß gehen. Ich versuche, weniger Plastik zu kaufen."
+     ],
+     "q": "¿Qué haces ya por el medio ambiente y qué te gustaría cambiar? Usa Ich versuche, ... zu ...",
+     "c": "Escribe cinco frases sobre tus hábitos ecológicos con vermeiden, trennen, nutzen e Ich versuche, ... zu..."
+    },
+    "fr": {
+     "t": "Vivre durablement",
+     "g": "Parler des gestes écologiques : regional einkaufen, Müll vermeiden, Fahrrad fahren.",
+     "p": [
+      "Courses : regional und saisonal einkaufen, auf dem Wochenmarkt, Bio-Produkte, eine Stofftasche mitnehmen.",
+      "Déchets : Müll vermeiden (éviter), Müll trennen (trier : Papier, Glas, Bio, Gelber Sack), Pfandflaschen zurückbringen.",
+      "Déplacements : Fahrrad fahren, öffentliche Verkehrsmittel nutzen, zu Fuß gehen. Ich versuche, weniger Plastik zu kaufen."
+     ],
+     "q": "Que fais-tu déjà pour l'environnement et que voudrais-tu changer ? Utilise Ich versuche, ... zu ...",
+     "c": "Écris cinq phrases sur tes gestes écologiques avec vermeiden, trennen, nutzen et Ich versuche, ... zu..."
+    },
+    "it": {
+     "t": "Vivere in modo sostenibile",
+     "g": "Parli di abitudini ecologiche: regional einkaufen, Müll vermeiden, Fahrrad fahren.",
+     "p": [
+      "Spesa: regional und saisonal einkaufen, auf dem Wochenmarkt, Bio-Produkte, eine Stofftasche mitnehmen.",
+      "Rifiuti: Müll vermeiden (evitare), Müll trennen (differenziare: Papier, Glas, Bio, Gelber Sack), Pfandflaschen zurückbringen.",
+      "Spostamenti: Fahrrad fahren, öffentliche Verkehrsmittel nutzen, zu Fuß gehen. Ich versuche, weniger Plastik zu kaufen."
+     ],
+     "q": "Che cosa fai già per l'ambiente e che cosa vorresti cambiare? Usa Ich versuche, ... zu ...",
+     "c": "Scrivi cinque frasi sulle tue abitudini ecologiche con vermeiden, trennen, nutzen e Ich versuche, ... zu..."
+    },
+    "pt": {
+     "t": "Viver de forma sustentável",
+     "g": "Falar de hábitos ecológicos: regional einkaufen, Müll vermeiden, Fahrrad fahren.",
+     "p": [
+      "Compras: regional und saisonal einkaufen, auf dem Wochenmarkt, Bio-Produkte, eine Stofftasche mitnehmen.",
+      "Lixo: Müll vermeiden (evitar), Müll trennen (separar: Papier, Glas, Bio, Gelber Sack), Pfandflaschen zurückbringen.",
+      "Deslocações: Fahrrad fahren, öffentliche Verkehrsmittel nutzen, zu Fuß gehen. Ich versuche, weniger Plastik zu kaufen."
+     ],
+     "q": "O que já fazes pelo ambiente e o que gostavas de mudar? Usa Ich versuche, ... zu ...",
+     "c": "Escreve cinco frases sobre os teus hábitos ecológicos com vermeiden, trennen, nutzen e Ich versuche, ... zu..."
+    },
+    "pt_BR": {
+     "t": "Viver de forma sustentável",
+     "g": "Falar de hábitos ecológicos: regional einkaufen, Müll vermeiden, Fahrrad fahren.",
+     "p": [
+      "Compras: regional und saisonal einkaufen, auf dem Wochenmarkt, Bio-Produkte, eine Stofftasche mitnehmen.",
+      "Lixo: Müll vermeiden (evitar), Müll trennen (separar: Papier, Glas, Bio, Gelber Sack), Pfandflaschen zurückbringen.",
+      "Transporte: Fahrrad fahren, öffentliche Verkehrsmittel nutzen, zu Fuß gehen. Ich versuche, weniger Plastik zu kaufen."
+     ],
+     "q": "O que você já faz pelo meio ambiente e o que gostaria de mudar? Use Ich versuche, ... zu ...",
+     "c": "Escreva cinco frases sobre seus hábitos ecológicos com vermeiden, trennen, nutzen e Ich versuche, ... zu..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "regional einkaufen",
+      "ex": "Wir kaufen Obst und Gemüse regional auf dem Markt ein."
+     },
+     {
+      "w": "Müll vermeiden",
+      "ex": "Mit einer eigenen Flasche kann man viel Müll vermeiden."
+     },
+     {
+      "w": "Müll trennen",
+      "ex": "In Deutschland trennt man Papier, Glas und Plastik."
+     },
+     {
+      "w": "die Pfandflasche",
+      "ex": "Ich bringe die Pfandflaschen zum Supermarkt zurück."
+     },
+     {
+      "w": "öffentliche Verkehrsmittel",
+      "ex": "In der Stadt nutze ich öffentliche Verkehrsmittel."
+     },
+     {
+      "w": "nachhaltig",
+      "ex": "Ich möchte nachhaltiger leben."
+     }
+    ],
+    "gram": "Ich versuche, … zu + Infinitiv: Infinitivsatz nach Verben wie versuchen, anfangen, aufhören (Ich versuche, Müll zu vermeiden)."
+   }
+  },
+  {
+   "d": 224,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Climate and nature",
+     "g": "Talk about the environment: Klimawandel, Artenvielfalt, erneuerbare Energien.",
+     "p": [
+      "Key words: der Klimawandel (climate change), die Umwelt, die Natur, der Umweltschutz (environmental protection).",
+      "Nature: die Artenvielfalt (biodiversity), der Wald, das Meer, die Tiere und Pflanzen, schützen (to protect).",
+      "Energy: erneuerbare Energien such as die Sonnenenergie and die Windkraft; Energie sparen."
+     ],
+     "q": "What part of nature do you love most, and how can we protect it? Answer with schützen and Energie sparen.",
+     "c": "Write four sentences about nature in your region with die Artenvielfalt, schützen, erneuerbar and der Umweltschutz."
+    },
+    "de": {
+     "t": "Klima und Natur",
+     "g": "Du sprichst über die Umwelt: Klimawandel, Artenvielfalt, erneuerbare Energien.",
+     "p": [
+      "Grundwörter: der Klimawandel, die Umwelt, die Natur, der Umweltschutz.",
+      "Natur: die Artenvielfalt, der Wald, das Meer, die Tiere und Pflanzen, schützen.",
+      "Energie: erneuerbare Energien wie die Sonnenenergie und die Windkraft; Energie sparen."
+     ],
+     "q": "Welchen Teil der Natur liebst du am meisten, und wie können wir ihn schützen? Antworte mit schützen und Energie sparen.",
+     "c": "Schreib vier Sätze über die Natur in deiner Region mit die Artenvielfalt, schützen, erneuerbar und der Umweltschutz."
+    },
+    "es": {
+     "t": "Clima y naturaleza",
+     "g": "Habla del medio ambiente: Klimawandel, Artenvielfalt, erneuerbare Energien.",
+     "p": [
+      "Palabras clave: der Klimawandel (cambio climático), die Umwelt, die Natur, der Umweltschutz (protección ambiental).",
+      "Naturaleza: die Artenvielfalt (biodiversidad), der Wald, das Meer, die Tiere und Pflanzen, schützen (proteger).",
+      "Energía: erneuerbare Energien como die Sonnenenergie y die Windkraft; Energie sparen (ahorrar)."
+     ],
+     "q": "¿Qué parte de la naturaleza te gusta más y cómo podemos protegerla? Responde con schützen y Energie sparen.",
+     "c": "Escribe cuatro frases sobre la naturaleza de tu región con die Artenvielfalt, schützen, erneuerbar y der Umweltschutz."
+    },
+    "fr": {
+     "t": "Climat et nature",
+     "g": "Parler de l'environnement : Klimawandel, Artenvielfalt, erneuerbare Energien.",
+     "p": [
+      "Mots clés : der Klimawandel (changement climatique), die Umwelt, die Natur, der Umweltschutz (protection de l'environnement).",
+      "Nature : die Artenvielfalt (biodiversité), der Wald, das Meer, die Tiere und Pflanzen, schützen (protéger).",
+      "Énergie : erneuerbare Energien comme die Sonnenenergie et die Windkraft ; Energie sparen (économiser)."
+     ],
+     "q": "Quelle partie de la nature aimes-tu le plus et comment la protéger ? Réponds avec schützen et Energie sparen.",
+     "c": "Écris quatre phrases sur la nature de ta région avec die Artenvielfalt, schützen, erneuerbar et der Umweltschutz."
+    },
+    "it": {
+     "t": "Clima e natura",
+     "g": "Parli dell'ambiente: Klimawandel, Artenvielfalt, erneuerbare Energien.",
+     "p": [
+      "Parole chiave: der Klimawandel (cambiamento climatico), die Umwelt, die Natur, der Umweltschutz (tutela ambientale).",
+      "Natura: die Artenvielfalt (biodiversità), der Wald, das Meer, die Tiere und Pflanzen, schützen (proteggere).",
+      "Energia: erneuerbare Energien come die Sonnenenergie e die Windkraft; Energie sparen (risparmiare)."
+     ],
+     "q": "Quale parte della natura ami di più e come possiamo proteggerla? Rispondi con schützen ed Energie sparen.",
+     "c": "Scrivi quattro frasi sulla natura della tua regione con die Artenvielfalt, schützen, erneuerbar e der Umweltschutz."
+    },
+    "pt": {
+     "t": "Clima e natureza",
+     "g": "Falar do ambiente: Klimawandel, Artenvielfalt, erneuerbare Energien.",
+     "p": [
+      "Palavras-chave: der Klimawandel (alterações climáticas), die Umwelt, die Natur, der Umweltschutz (proteção do ambiente).",
+      "Natureza: die Artenvielfalt (biodiversidade), der Wald, das Meer, die Tiere und Pflanzen, schützen (proteger).",
+      "Energia: erneuerbare Energien como die Sonnenenergie e die Windkraft; Energie sparen (poupar)."
+     ],
+     "q": "Que parte da natureza mais adoras e como a podemos proteger? Responde com schützen e Energie sparen.",
+     "c": "Escreve quatro frases sobre a natureza da tua região com die Artenvielfalt, schützen, erneuerbar e der Umweltschutz."
+    },
+    "pt_BR": {
+     "t": "Clima e natureza",
+     "g": "Falar do meio ambiente: Klimawandel, Artenvielfalt, erneuerbare Energien.",
+     "p": [
+      "Palavras-chave: der Klimawandel (mudança climática), die Umwelt, die Natur, der Umweltschutz (proteção ambiental).",
+      "Natureza: die Artenvielfalt (biodiversidade), der Wald, das Meer, die Tiere und Pflanzen, schützen (proteger).",
+      "Energia: erneuerbare Energien como die Sonnenenergie e die Windkraft; Energie sparen (economizar)."
+     ],
+     "q": "Que parte da natureza você mais ama e como podemos protegê-la? Responda com schützen e Energie sparen.",
+     "c": "Escreva quatro frases sobre a natureza da sua região com die Artenvielfalt, schützen, erneuerbar e der Umweltschutz."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Klimawandel",
+      "ex": "Der Klimawandel betrifft alle Länder."
+     },
+     {
+      "w": "die Artenvielfalt",
+      "ex": "Im Regenwald ist die Artenvielfalt besonders groß."
+     },
+     {
+      "w": "erneuerbare Energien",
+      "ex": "Erneuerbare Energien kommen aus Sonne, Wind und Wasser."
+     },
+     {
+      "w": "die Windkraft",
+      "ex": "An der Küste nutzt man viel Windkraft."
+     },
+     {
+      "w": "schützen",
+      "ex": "Wir müssen die Wälder schützen."
+     },
+     {
+      "w": "der Umweltschutz",
+      "ex": "Umweltschutz beginnt im Alltag."
+     }
+    ],
+    "gram": "Adjektivdeklination im Plural ohne Artikel: erneuerbare Energien, saubere Luft; mit Artikel: die erneuerbaren Energien."
+   }
+  },
+  {
+   "d": 225,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Volunteering and community",
+     "g": "Talk about helping others: Ehrenamt, sich engagieren, anderen helfen.",
+     "p": [
+      "Das Ehrenamt is unpaid voluntary work; someone who does it is ehrenamtlich tätig or a Freiwilliger / eine Freiwillige.",
+      "Sich engagieren für + accusative: Sie engagiert sich für Kinder. Er engagiert sich im Tierheim.",
+      "Ideas: in der Nachbarschaftshilfe, bei der Tafel (food bank), als Lesepate, bei der freiwilligen Feuerwehr."
+     ],
+     "q": "Have you ever volunteered, or would you like to? Tell me: Ich engagiere mich für... / Ich würde gern...",
+     "c": "Write four sentences about a volunteer activity using sich engagieren für, ehrenamtlich and helfen + dative."
+    },
+    "de": {
+     "t": "Ehrenamt und Gemeinschaft",
+     "g": "Du sprichst darüber, anderen zu helfen: Ehrenamt, sich engagieren, anderen helfen.",
+     "p": [
+      "Das Ehrenamt ist freiwillige Arbeit ohne Bezahlung; wer es macht, ist ehrenamtlich tätig oder ein Freiwilliger / eine Freiwillige.",
+      "Sich engagieren für + Akkusativ: Sie engagiert sich für Kinder. Er engagiert sich im Tierheim.",
+      "Ideen: in der Nachbarschaftshilfe, bei der Tafel, als Lesepate, bei der freiwilligen Feuerwehr."
+     ],
+     "q": "Hast du dich schon mal ehrenamtlich engagiert oder möchtest du es? Erzähl: Ich engagiere mich für... / Ich würde gern...",
+     "c": "Schreib vier Sätze über ein Ehrenamt mit sich engagieren für, ehrenamtlich und helfen + Dativ."
+    },
+    "es": {
+     "t": "Voluntariado y comunidad",
+     "g": "Habla de ayudar a los demás: Ehrenamt, sich engagieren, anderen helfen.",
+     "p": [
+      "Das Ehrenamt es el voluntariado no remunerado; quien lo hace es ehrenamtlich tätig o ein Freiwilliger / eine Freiwillige.",
+      "Sich engagieren für + acusativo (comprometerse con): Sie engagiert sich für Kinder. Er engagiert sich im Tierheim.",
+      "Ideas: in der Nachbarschaftshilfe, bei der Tafel (banco de alimentos), als Lesepate, bei der freiwilligen Feuerwehr."
+     ],
+     "q": "¿Has hecho voluntariado o te gustaría? Cuéntame: Ich engagiere mich für... / Ich würde gern...",
+     "c": "Escribe cuatro frases sobre un voluntariado con sich engagieren für, ehrenamtlich y helfen + dativo."
+    },
+    "fr": {
+     "t": "Bénévolat et vie locale",
+     "g": "Parler d'aider les autres : Ehrenamt, sich engagieren, anderen helfen.",
+     "p": [
+      "Das Ehrenamt, c'est le bénévolat ; la personne est ehrenamtlich tätig ou ein Freiwilliger / eine Freiwillige.",
+      "Sich engagieren für + accusatif (s'engager pour) : Sie engagiert sich für Kinder. Er engagiert sich im Tierheim.",
+      "Idées : in der Nachbarschaftshilfe, bei der Tafel (banque alimentaire), als Lesepate, bei der freiwilligen Feuerwehr."
+     ],
+     "q": "As-tu déjà fait du bénévolat ou aimerais-tu en faire ? Dis-moi : Ich engagiere mich für... / Ich würde gern...",
+     "c": "Écris quatre phrases sur une activité bénévole avec sich engagieren für, ehrenamtlich et helfen + datif."
+    },
+    "it": {
+     "t": "Volontariato e comunità",
+     "g": "Parli di aiutare gli altri: Ehrenamt, sich engagieren, anderen helfen.",
+     "p": [
+      "Das Ehrenamt è il volontariato non retribuito; chi lo fa è ehrenamtlich tätig o ein Freiwilliger / eine Freiwillige.",
+      "Sich engagieren für + accusativo (impegnarsi per): Sie engagiert sich für Kinder. Er engagiert sich im Tierheim.",
+      "Idee: in der Nachbarschaftshilfe, bei der Tafel (banco alimentare), als Lesepate, bei der freiwilligen Feuerwehr."
+     ],
+     "q": "Hai mai fatto volontariato o ti piacerebbe? Raccontami: Ich engagiere mich für... / Ich würde gern...",
+     "c": "Scrivi quattro frasi su un'attività di volontariato con sich engagieren für, ehrenamtlich e helfen + dativo."
+    },
+    "pt": {
+     "t": "Voluntariado e comunidade",
+     "g": "Falar de ajudar os outros: Ehrenamt, sich engagieren, anderen helfen.",
+     "p": [
+      "Das Ehrenamt é o voluntariado não pago; quem o faz é ehrenamtlich tätig ou ein Freiwilliger / eine Freiwillige.",
+      "Sich engagieren für + acusativo (empenhar-se por): Sie engagiert sich für Kinder. Er engagiert sich im Tierheim.",
+      "Ideias: in der Nachbarschaftshilfe, bei der Tafel (banco alimentar), als Lesepate, bei der freiwilligen Feuerwehr."
+     ],
+     "q": "Já fizeste voluntariado ou gostavas de fazer? Conta-me: Ich engagiere mich für... / Ich würde gern...",
+     "c": "Escreve quatro frases sobre uma atividade de voluntariado com sich engagieren für, ehrenamtlich e helfen + dativo."
+    },
+    "pt_BR": {
+     "t": "Voluntariado e comunidade",
+     "g": "Falar de ajudar os outros: Ehrenamt, sich engagieren, anderen helfen.",
+     "p": [
+      "Das Ehrenamt é o trabalho voluntário sem pagamento; quem faz é ehrenamtlich tätig ou ein Freiwilliger / eine Freiwillige.",
+      "Sich engagieren für + acusativo (se engajar por): Sie engagiert sich für Kinder. Er engagiert sich im Tierheim.",
+      "Ideias: in der Nachbarschaftshilfe, bei der Tafel (banco de alimentos), als Lesepate, bei der freiwilligen Feuerwehr."
+     ],
+     "q": "Você já fez trabalho voluntário ou gostaria de fazer? Me conte: Ich engagiere mich für... / Ich würde gern...",
+     "c": "Escreva quatro frases sobre um trabalho voluntário com sich engagieren für, ehrenamtlich e helfen + dativo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "das Ehrenamt",
+      "ex": "Viele Menschen in Deutschland haben ein Ehrenamt."
+     },
+     {
+      "w": "ehrenamtlich",
+      "ex": "Sie arbeitet ehrenamtlich in einer Bibliothek."
+     },
+     {
+      "w": "sich engagieren für",
+      "ex": "Er engagiert sich für den Umweltschutz."
+     },
+     {
+      "w": "der/die Freiwillige",
+      "ex": "Die Freiwilligen helfen beim Stadtfest."
+     },
+     {
+      "w": "anderen helfen",
+      "ex": "Es macht mich glücklich, anderen zu helfen."
+     },
+     {
+      "w": "die Nachbarschaft",
+      "ex": "In unserer Nachbarschaft helfen sich alle gegenseitig."
+     }
+    ],
+    "gram": "Verben mit fester Präposition: sich engagieren für + Akkusativ; helfen + Dativ (Ich helfe den Nachbarn)."
+   }
+  },
+  {
+   "d": 226,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Club culture: der Verein",
+     "g": "Discover the Verein: sports clubs, choirs and why Germans love them.",
+     "p": [
+      "A Verein is a registered club (e.V. = eingetragener Verein); there are hundreds of thousands in Germany.",
+      "Typical clubs: der Sportverein, der Fußballverein, der Chor, der Musikverein, der Kleingartenverein, der Wanderverein.",
+      "Members (Mitglieder) pay a small fee (Mitgliedsbeitrag) and meet regularly: Ich bin Mitglied in einem Laufverein."
+     ],
+     "q": "Would you join a Verein? Which one, and why? Tell me: Ich würde gern in einen... eintreten, weil...",
+     "c": "Write four sentences about a club you know or would like to join with Mitglied, eintreten, sich treffen and der Beitrag."
+    },
+    "de": {
+     "t": "Vereinskultur",
+     "g": "Du lernst den Verein kennen: Sportvereine, Chöre und warum die Deutschen sie lieben.",
+     "p": [
+      "Ein Verein ist ein organisierter Club (e.V. = eingetragener Verein); in Deutschland gibt es Hunderttausende.",
+      "Typische Vereine: der Sportverein, der Fußballverein, der Chor, der Musikverein, der Kleingartenverein, der Wanderverein.",
+      "Mitglieder zahlen einen kleinen Mitgliedsbeitrag und treffen sich regelmäßig: Ich bin Mitglied in einem Laufverein."
+     ],
+     "q": "Würdest du in einen Verein eintreten? In welchen und warum? Erzähl: Ich würde gern in einen... eintreten, weil...",
+     "c": "Schreib vier Sätze über einen Verein mit Mitglied, eintreten, sich treffen und der Beitrag."
+    },
+    "es": {
+     "t": "La cultura del Verein",
+     "g": "Descubre el Verein: clubes deportivos, coros y por qué gustan tanto en Alemania.",
+     "p": [
+      "Un Verein es una asociación registrada (e.V. = eingetragener Verein); en Alemania hay cientos de miles.",
+      "Típicos: der Sportverein, der Fußballverein, der Chor (coro), der Musikverein, der Kleingartenverein, der Wanderverein.",
+      "Los socios (Mitglieder) pagan una pequeña cuota (Mitgliedsbeitrag) y se reúnen a menudo: Ich bin Mitglied in einem Laufverein."
+     ],
+     "q": "¿Te apuntarías a un Verein? ¿A cuál y por qué? Cuéntame: Ich würde gern in einen... eintreten, weil...",
+     "c": "Escribe cuatro frases sobre un club con Mitglied, eintreten, sich treffen y der Beitrag."
+    },
+    "fr": {
+     "t": "La culture du Verein",
+     "g": "Découvrir le Verein : clubs de sport, chorales et pourquoi les Allemands les adorent.",
+     "p": [
+      "Un Verein est une association déclarée (e.V. = eingetragener Verein) ; il y en a des centaines de milliers en Allemagne.",
+      "Exemples : der Sportverein, der Fußballverein, der Chor (chorale), der Musikverein, der Kleingartenverein, der Wanderverein.",
+      "Les membres (Mitglieder) paient une petite cotisation (Mitgliedsbeitrag) et se réunissent souvent : Ich bin Mitglied in einem Laufverein."
+     ],
+     "q": "Entrerais-tu dans un Verein ? Lequel et pourquoi ? Dis-moi : Ich würde gern in einen... eintreten, weil...",
+     "c": "Écris quatre phrases sur un club avec Mitglied, eintreten, sich treffen et der Beitrag."
+    },
+    "it": {
+     "t": "La cultura del Verein",
+     "g": "Scopri il Verein: club sportivi, cori e perché i tedeschi li amano.",
+     "p": [
+      "Un Verein è un'associazione registrata (e.V. = eingetragener Verein); in Germania ce ne sono centinaia di migliaia.",
+      "Tipici: der Sportverein, der Fußballverein, der Chor (coro), der Musikverein, der Kleingartenverein, der Wanderverein.",
+      "I soci (Mitglieder) pagano una piccola quota (Mitgliedsbeitrag) e si incontrano spesso: Ich bin Mitglied in einem Laufverein."
+     ],
+     "q": "Entreresti in un Verein? In quale e perché? Raccontami: Ich würde gern in einen... eintreten, weil...",
+     "c": "Scrivi quattro frasi su un club con Mitglied, eintreten, sich treffen e der Beitrag."
+    },
+    "pt": {
+     "t": "A cultura do Verein",
+     "g": "Conhecer o Verein: clubes desportivos, coros e porque os alemães gostam tanto deles.",
+     "p": [
+      "Um Verein é uma associação registada (e.V. = eingetragener Verein); na Alemanha há centenas de milhares.",
+      "Típicos: der Sportverein, der Fußballverein, der Chor (coro), der Musikverein, der Kleingartenverein, der Wanderverein.",
+      "Os sócios (Mitglieder) pagam uma pequena quota (Mitgliedsbeitrag) e reúnem-se com frequência: Ich bin Mitglied in einem Laufverein."
+     ],
+     "q": "Entravas num Verein? Em qual e porquê? Conta-me: Ich würde gern in einen... eintreten, weil...",
+     "c": "Escreve quatro frases sobre um clube com Mitglied, eintreten, sich treffen e der Beitrag."
+    },
+    "pt_BR": {
+     "t": "A cultura do Verein",
+     "g": "Conhecer o Verein: clubes esportivos, corais e por que os alemães gostam tanto deles.",
+     "p": [
+      "Um Verein é uma associação registrada (e.V. = eingetragener Verein); na Alemanha há centenas de milhares.",
+      "Típicos: der Sportverein, der Fußballverein, der Chor (coral), der Musikverein, der Kleingartenverein, der Wanderverein.",
+      "Os sócios (Mitglieder) pagam uma pequena mensalidade (Mitgliedsbeitrag) e se encontram sempre: Ich bin Mitglied in einem Laufverein."
+     ],
+     "q": "Você entraria num Verein? Em qual e por quê? Me conte: Ich würde gern in einen... eintreten, weil...",
+     "c": "Escreva quatro frases sobre um clube com Mitglied, eintreten, sich treffen e der Beitrag."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Verein",
+      "ex": "Mein Vater ist seit zwanzig Jahren im Fußballverein."
+     },
+     {
+      "w": "das Mitglied",
+      "ex": "Der Chor hat dreißig Mitglieder."
+     },
+     {
+      "w": "eintreten in + Akk.",
+      "ex": "Ich bin letztes Jahr in einen Tennisverein eingetreten."
+     },
+     {
+      "w": "der Mitgliedsbeitrag",
+      "ex": "Der Mitgliedsbeitrag ist nicht sehr hoch."
+     },
+     {
+      "w": "sich treffen",
+      "ex": "Wir treffen uns jeden Dienstag zum Training."
+     },
+     {
+      "w": "der Chor",
+      "ex": "Sie singt im Chor ihrer Stadt."
+     }
+    ],
+    "gram": "Mitglied in + Dativ (Ich bin Mitglied in einem Verein); eintreten in + Akkusativ (in einen Verein eintreten)."
+   }
+  },
+  {
+   "d": 227,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Cities of the German-speaking world",
+     "g": "Compare Wien, Zürich, Hamburg, München and Köln.",
+     "p": [
+      "Wien is Austria's capital, famous for coffee houses and music; Zürich is Switzerland's largest city, on a lake.",
+      "Hamburg is a big port city in the north; München, capital of Bavaria, is close to the Alps and known for the Oktoberfest.",
+      "Köln has a huge Gothic cathedral and a lively Karneval. Compare with größer als, so... wie, am schönsten."
+     ],
+     "q": "Which of these cities would you most like to visit and why? Compare two of them with als and so... wie.",
+     "c": "Write five comparisons between two German-speaking cities using comparatives and superlatives."
+    },
+    "de": {
+     "t": "Städte im deutschsprachigen Raum",
+     "g": "Du vergleichst Wien, Zürich, Hamburg, München und Köln.",
+     "p": [
+      "Wien ist die Hauptstadt Österreichs, berühmt für Kaffeehäuser und Musik; Zürich ist die größte Stadt der Schweiz, an einem See.",
+      "Hamburg ist eine große Hafenstadt im Norden; München, die Hauptstadt Bayerns, liegt nah an den Alpen und ist für das Oktoberfest bekannt.",
+      "Köln hat einen riesigen gotischen Dom und einen fröhlichen Karneval. Vergleiche mit größer als, so... wie, am schönsten."
+     ],
+     "q": "Welche dieser Städte möchtest du am liebsten besuchen und warum? Vergleich zwei davon mit als und so... wie.",
+     "c": "Schreib fünf Vergleiche zwischen zwei Städten mit Komparativ und Superlativ."
+    },
+    "es": {
+     "t": "Ciudades del mundo germanohablante",
+     "g": "Compara Wien, Zürich, Hamburg, München y Köln.",
+     "p": [
+      "Viena es la capital de Austria, famosa por sus cafés y su música; Zúrich es la ciudad más grande de Suiza, junto a un lago.",
+      "Hamburgo es una gran ciudad portuaria del norte; Múnich, capital de Baviera, está cerca de los Alpes y es famosa por el Oktoberfest.",
+      "Colonia tiene una enorme catedral gótica y un Karneval muy alegre. Compara con größer als, so... wie, am schönsten."
+     ],
+     "q": "¿Cuál de estas ciudades te gustaría más visitar y por qué? Compara dos con als y so... wie.",
+     "c": "Escribe cinco comparaciones entre dos ciudades germanohablantes con comparativos y superlativos."
+    },
+    "fr": {
+     "t": "Les villes du monde germanophone",
+     "g": "Comparer Wien, Zürich, Hamburg, München et Köln.",
+     "p": [
+      "Vienne est la capitale de l'Autriche, célèbre pour ses cafés et sa musique ; Zurich est la plus grande ville suisse, au bord d'un lac.",
+      "Hambourg est un grand port du nord ; Munich, capitale de la Bavière, est proche des Alpes et connue pour l'Oktoberfest.",
+      "Cologne a une immense cathédrale gothique et un Karneval très joyeux. Compare avec größer als, so... wie, am schönsten."
+     ],
+     "q": "Laquelle de ces villes aimerais-tu le plus visiter et pourquoi ? Compare-en deux avec als et so... wie.",
+     "c": "Écris cinq comparaisons entre deux villes germanophones avec comparatifs et superlatifs."
+    },
+    "it": {
+     "t": "Le città del mondo di lingua tedesca",
+     "g": "Confronti Wien, Zürich, Hamburg, München e Köln.",
+     "p": [
+      "Vienna è la capitale dell'Austria, famosa per i caffè e la musica; Zurigo è la città più grande della Svizzera, su un lago.",
+      "Amburgo è una grande città portuale del nord; Monaco, capitale della Baviera, è vicina alle Alpi e nota per l'Oktoberfest.",
+      "Colonia ha un enorme duomo gotico e un Karneval molto allegro. Confronta con größer als, so... wie, am schönsten."
+     ],
+     "q": "Quale di queste città ti piacerebbe di più visitare e perché? Confrontane due con als e so... wie.",
+     "c": "Scrivi cinque confronti tra due città di lingua tedesca con comparativi e superlativi."
+    },
+    "pt": {
+     "t": "Cidades do mundo de língua alemã",
+     "g": "Comparar Wien, Zürich, Hamburg, München e Köln.",
+     "p": [
+      "Viena é a capital da Áustria, famosa pelos cafés e pela música; Zurique é a maior cidade da Suíça, junto a um lago.",
+      "Hamburgo é uma grande cidade portuária no norte; Munique, capital da Baviera, fica perto dos Alpes e é conhecida pelo Oktoberfest.",
+      "Colónia tem uma enorme catedral gótica e um Karneval muito animado. Compara com größer als, so... wie, am schönsten."
+     ],
+     "q": "Qual destas cidades mais gostavas de visitar e porquê? Compara duas com als e so... wie.",
+     "c": "Escreve cinco comparações entre duas cidades de língua alemã com comparativos e superlativos."
+    },
+    "pt_BR": {
+     "t": "Cidades do mundo de língua alemã",
+     "g": "Comparar Wien, Zürich, Hamburg, München e Köln.",
+     "p": [
+      "Viena é a capital da Áustria, famosa pelos cafés e pela música; Zurique é a maior cidade da Suíça, à beira de um lago.",
+      "Hamburgo é uma grande cidade portuária no norte; Munique, capital da Baviera, fica perto dos Alpes e é famosa pela Oktoberfest.",
+      "Colônia tem uma enorme catedral gótica e um Karneval muito animado. Compare com größer als, so... wie, am schönsten."
+     ],
+     "q": "Qual dessas cidades você mais gostaria de visitar e por quê? Compare duas com als e so... wie.",
+     "c": "Escreva cinco comparações entre duas cidades de língua alemã com comparativos e superlativos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Hauptstadt",
+      "ex": "Wien ist die Hauptstadt von Österreich."
+     },
+     {
+      "w": "die Hafenstadt",
+      "ex": "Hamburg ist eine wichtige Hafenstadt."
+     },
+     {
+      "w": "der Dom",
+      "ex": "Der Kölner Dom ist ein berühmtes Wahrzeichen."
+     },
+     {
+      "w": "größer als",
+      "ex": "Hamburg ist größer als München."
+     },
+     {
+      "w": "so ... wie",
+      "ex": "Zürich ist nicht so groß wie Wien."
+     },
+     {
+      "w": "am schönsten",
+      "ex": "Im Frühling ist die Stadt am schönsten."
+     }
+    ],
+    "gram": "Vergleiche: Komparativ + als (größer als), so + Grundform + wie (so groß wie), Superlativ am + -sten (am schönsten)."
+   }
+  },
+  {
+   "d": 228,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Austrian German",
+     "g": "Learn words from Austria: Servus, Paradeiser, Erdäpfel, Sackerl.",
+     "p": [
+      "Greetings: Servus (hi / bye among friends) and Grüß Gott (polite hello, also in Bavaria). Baba = bye, very informal.",
+      "Food words differ: Paradeiser = Tomaten, Erdäpfel = Kartoffeln, Marillen = Aprikosen, Topfen = Quark, Schlagobers = Sahne.",
+      "Everyday words: das Sackerl = die Tüte, der Jänner = der Januar, heuer = dieses Jahr. Both versions are correct German."
+     ],
+     "q": "Imagine you are at a market in Vienna. What would you buy? Try to use Paradeiser, Erdäpfel and a Sackerl.",
+     "c": "Make a shopping list of six items with the Austrian word and the German-German word side by side."
+    },
+    "de": {
+     "t": "Österreichisches Deutsch",
+     "g": "Du lernst Wörter aus Österreich: Servus, Paradeiser, Erdäpfel, Sackerl.",
+     "p": [
+      "Grüße: Servus (hallo / tschüss unter Freunden) und Grüß Gott (höflich, auch in Bayern). Baba = tschüss, sehr locker.",
+      "Essen heißt oft anders: Paradeiser = Tomaten, Erdäpfel = Kartoffeln, Marillen = Aprikosen, Topfen = Quark, Schlagobers = Sahne.",
+      "Alltagswörter: das Sackerl = die Tüte, der Jänner = der Januar, heuer = dieses Jahr. Beide Varianten sind richtiges Deutsch."
+     ],
+     "q": "Stell dir vor, du bist auf einem Markt in Wien. Was kaufst du? Benutze Paradeiser, Erdäpfel und ein Sackerl.",
+     "c": "Schreib eine Einkaufsliste mit sechs Dingen: das österreichische und das bundesdeutsche Wort nebeneinander."
+    },
+    "es": {
+     "t": "El alemán de Austria",
+     "g": "Aprende palabras de Austria: Servus, Paradeiser, Erdäpfel, Sackerl.",
+     "p": [
+      "Saludos: Servus (hola / adiós entre amigos) y Grüß Gott (saludo cortés, también en Baviera). Baba = adiós, muy informal.",
+      "La comida cambia: Paradeiser = Tomaten, Erdäpfel = Kartoffeln, Marillen = Aprikosen, Topfen = Quark, Schlagobers = Sahne.",
+      "Del día a día: das Sackerl = die Tüte (bolsa), der Jänner = der Januar, heuer = este año. Ambas variantes son correctas."
+     ],
+     "q": "Imagina que estás en un mercado de Viena. ¿Qué comprarías? Usa Paradeiser, Erdäpfel y un Sackerl.",
+     "c": "Haz una lista de la compra de seis cosas con la palabra austriaca y la alemana una al lado de la otra."
+    },
+    "fr": {
+     "t": "L'allemand d'Autriche",
+     "g": "Apprendre des mots d'Autriche : Servus, Paradeiser, Erdäpfel, Sackerl.",
+     "p": [
+      "Salutations : Servus (salut / au revoir entre amis) et Grüß Gott (bonjour poli, aussi en Bavière). Baba = salut, très familier.",
+      "La nourriture change : Paradeiser = Tomaten, Erdäpfel = Kartoffeln, Marillen = Aprikosen, Topfen = Quark, Schlagobers = Sahne.",
+      "Au quotidien : das Sackerl = die Tüte (sac), der Jänner = der Januar, heuer = cette année. Les deux variantes sont correctes."
+     ],
+     "q": "Imagine-toi sur un marché de Vienne. Qu'achèterais-tu ? Utilise Paradeiser, Erdäpfel et un Sackerl.",
+     "c": "Fais une liste de courses de six articles avec le mot autrichien et le mot allemand côte à côte."
+    },
+    "it": {
+     "t": "Il tedesco d'Austria",
+     "g": "Impari parole austriache: Servus, Paradeiser, Erdäpfel, Sackerl.",
+     "p": [
+      "Saluti: Servus (ciao tra amici) e Grüß Gott (saluto cortese, anche in Baviera). Baba = ciao, molto informale.",
+      "Il cibo cambia nome: Paradeiser = Tomaten, Erdäpfel = Kartoffeln, Marillen = Aprikosen, Topfen = Quark, Schlagobers = Sahne.",
+      "Parole quotidiane: das Sackerl = die Tüte (sacchetto), der Jänner = der Januar, heuer = quest'anno. Entrambe sono corrette."
+     ],
+     "q": "Immagina di essere a un mercato di Vienna. Che cosa compreresti? Usa Paradeiser, Erdäpfel e un Sackerl.",
+     "c": "Fai una lista della spesa di sei cose con la parola austriaca e quella tedesca una accanto all'altra."
+    },
+    "pt": {
+     "t": "O alemão da Áustria",
+     "g": "Aprender palavras da Áustria: Servus, Paradeiser, Erdäpfel, Sackerl.",
+     "p": [
+      "Cumprimentos: Servus (olá / adeus entre amigos) e Grüß Gott (olá educado, também na Baviera). Baba = adeus, muito informal.",
+      "A comida muda: Paradeiser = Tomaten, Erdäpfel = Kartoffeln, Marillen = Aprikosen, Topfen = Quark, Schlagobers = Sahne.",
+      "Dia a dia: das Sackerl = die Tüte (saco), der Jänner = der Januar, heuer = este ano. As duas variantes estão corretas."
+     ],
+     "q": "Imagina que estás num mercado em Viena. O que comprarias? Usa Paradeiser, Erdäpfel e um Sackerl.",
+     "c": "Faz uma lista de compras de seis coisas com a palavra austríaca e a alemã lado a lado."
+    },
+    "pt_BR": {
+     "t": "O alemão da Áustria",
+     "g": "Aprender palavras da Áustria: Servus, Paradeiser, Erdäpfel, Sackerl.",
+     "p": [
+      "Cumprimentos: Servus (oi / tchau entre amigos) e Grüß Gott (olá educado, também na Baviera). Baba = tchau, bem informal.",
+      "A comida muda: Paradeiser = Tomaten, Erdäpfel = Kartoffeln, Marillen = Aprikosen, Topfen = Quark, Schlagobers = Sahne.",
+      "Dia a dia: das Sackerl = die Tüte (sacola), der Jänner = der Januar, heuer = este ano. As duas variantes estão certas."
+     ],
+     "q": "Imagine que você está num mercado em Viena. O que compraria? Use Paradeiser, Erdäpfel e um Sackerl.",
+     "c": "Faça uma lista de compras de seis coisas com a palavra austríaca e a alemã lado a lado."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Servus!",
+      "ex": "Servus, Lukas! Wie geht's dir?"
+     },
+     {
+      "w": "der Paradeiser",
+      "ex": "Ich brauche ein Kilo Paradeiser für die Soße."
+     },
+     {
+      "w": "die Erdäpfel",
+      "ex": "Zum Schnitzel gibt es Erdäpfelsalat."
+     },
+     {
+      "w": "das Sackerl",
+      "ex": "Brauchen Sie ein Sackerl?"
+     },
+     {
+      "w": "der Jänner",
+      "ex": "Im Jänner fahren wir Ski."
+     },
+     {
+      "w": "heuer",
+      "ex": "Heuer machen wir Urlaub am Wörthersee."
+     }
+    ],
+    "gram": "Österreichisches Deutsch ist eine Standardvarietät: eigene Wörter (Jänner, Paradeiser), oft Perfekt mit sein (ich bin gesessen)."
+   }
+  },
+  {
+   "d": 229,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Swiss Standard German",
+     "g": "Discover Swiss Standard German: Grüezi, merci vielmal, das Velo and no ß.",
+     "p": [
+      "Greetings: Grüezi (hello, polite), Hoi or Sali (hi, informal), Merci vielmal (thank you very much), Uf Widerluege (bye).",
+      "Swiss Standard German never uses ß: Strasse, gross, Fussball. Typical words: das Velo (bike), parkieren, das Billett, das Trottoir.",
+      "In daily life most Swiss speak Swiss German dialects (Schweizerdeutsch), but they write and read Standard German."
+     ],
+     "q": "If you travelled by train through Switzerland, what would you say at the ticket office? Use Grüezi, Billett and merci vielmal.",
+     "c": "Write five sentences in Swiss Standard German style with Velo, parkieren, Billett, Strasse and merci vielmal."
+    },
+    "de": {
+     "t": "Schweizer Hochdeutsch",
+     "g": "Du lernst Schweizer Hochdeutsch kennen: Grüezi, merci vielmal, das Velo und kein ß.",
+     "p": [
+      "Grüße: Grüezi (höflich), Hoi oder Sali (locker), Merci vielmal (vielen Dank), Uf Widerluege (auf Wiedersehen).",
+      "In der Schweiz gibt es kein ß: Strasse, gross, Fussball. Typische Wörter: das Velo, parkieren, das Billett, das Trottoir.",
+      "Im Alltag sprechen die meisten Schweizer Dialekt (Schweizerdeutsch), aber sie lesen und schreiben Hochdeutsch."
+     ],
+     "q": "Du fährst mit dem Zug durch die Schweiz. Was sagst du am Schalter? Benutze Grüezi, Billett und merci vielmal.",
+     "c": "Schreib fünf Sätze im Schweizer Stil mit Velo, parkieren, Billett, Strasse und merci vielmal."
+    },
+    "es": {
+     "t": "El alemán estándar suizo",
+     "g": "Descubre el alemán estándar de Suiza: Grüezi, merci vielmal, das Velo y sin ß.",
+     "p": [
+      "Saludos: Grüezi (hola, cortés), Hoi o Sali (hola, informal), Merci vielmal (muchas gracias), Uf Widerluege (adiós).",
+      "En Suiza no se usa la ß: Strasse, gross, Fussball. Palabras típicas: das Velo (bici), parkieren, das Billett, das Trottoir.",
+      "En el día a día la mayoría habla dialectos suizos (Schweizerdeutsch), pero lee y escribe en alemán estándar."
+     ],
+     "q": "Si viajaras en tren por Suiza, ¿qué dirías en la taquilla? Usa Grüezi, Billett y merci vielmal.",
+     "c": "Escribe cinco frases al estilo suizo con Velo, parkieren, Billett, Strasse y merci vielmal."
+    },
+    "fr": {
+     "t": "L'allemand standard suisse",
+     "g": "Découvrir l'allemand standard de Suisse : Grüezi, merci vielmal, das Velo et pas de ß.",
+     "p": [
+      "Salutations : Grüezi (bonjour poli), Hoi ou Sali (salut), Merci vielmal (merci beaucoup), Uf Widerluege (au revoir).",
+      "En Suisse, pas de ß : Strasse, gross, Fussball. Mots typiques : das Velo (vélo), parkieren, das Billett, das Trottoir.",
+      "Au quotidien, la plupart des Suisses parlent un dialecte (Schweizerdeutsch), mais lisent et écrivent l'allemand standard."
+     ],
+     "q": "Si tu voyageais en train en Suisse, que dirais-tu au guichet ? Utilise Grüezi, Billett et merci vielmal.",
+     "c": "Écris cinq phrases à la suisse avec Velo, parkieren, Billett, Strasse et merci vielmal."
+    },
+    "it": {
+     "t": "Il tedesco standard svizzero",
+     "g": "Scopri il tedesco standard svizzero: Grüezi, merci vielmal, das Velo e niente ß.",
+     "p": [
+      "Saluti: Grüezi (buongiorno, cortese), Hoi o Sali (ciao), Merci vielmal (grazie mille), Uf Widerluege (arrivederci).",
+      "In Svizzera non si usa la ß: Strasse, gross, Fussball. Parole tipiche: das Velo (bici), parkieren, das Billett, das Trottoir.",
+      "Nella vita di tutti i giorni molti svizzeri parlano dialetto (Schweizerdeutsch), ma leggono e scrivono in tedesco standard."
+     ],
+     "q": "Se viaggiassi in treno in Svizzera, che cosa diresti in biglietteria? Usa Grüezi, Billett e merci vielmal.",
+     "c": "Scrivi cinque frasi in stile svizzero con Velo, parkieren, Billett, Strasse e merci vielmal."
+    },
+    "pt": {
+     "t": "O alemão-padrão suíço",
+     "g": "Conhecer o alemão-padrão da Suíça: Grüezi, merci vielmal, das Velo e sem ß.",
+     "p": [
+      "Cumprimentos: Grüezi (olá, educado), Hoi ou Sali (olá, informal), Merci vielmal (muito obrigado), Uf Widerluege (adeus).",
+      "Na Suíça não se usa ß: Strasse, gross, Fussball. Palavras típicas: das Velo (bicicleta), parkieren, das Billett, das Trottoir.",
+      "No dia a dia, a maioria fala dialetos suíços (Schweizerdeutsch), mas lê e escreve em alemão-padrão."
+     ],
+     "q": "Se viajasses de comboio pela Suíça, o que dirias na bilheteira? Usa Grüezi, Billett e merci vielmal.",
+     "c": "Escreve cinco frases ao estilo suíço com Velo, parkieren, Billett, Strasse e merci vielmal."
+    },
+    "pt_BR": {
+     "t": "O alemão-padrão suíço",
+     "g": "Conhecer o alemão-padrão da Suíça: Grüezi, merci vielmal, das Velo e sem ß.",
+     "p": [
+      "Cumprimentos: Grüezi (olá, educado), Hoi ou Sali (oi), Merci vielmal (muito obrigado), Uf Widerluege (tchau).",
+      "Na Suíça não se usa ß: Strasse, gross, Fussball. Palavras típicas: das Velo (bicicleta), parkieren, das Billett, das Trottoir.",
+      "No dia a dia, a maioria fala dialetos suíços (Schweizerdeutsch), mas lê e escreve em alemão-padrão."
+     ],
+     "q": "Se você viajasse de trem pela Suíça, o que diria na bilheteria? Use Grüezi, Billett e merci vielmal.",
+     "c": "Escreva cinco frases no estilo suíço com Velo, parkieren, Billett, Strasse e merci vielmal."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Grüezi!",
+      "ex": "Grüezi, ich hätte gern ein Billett nach Bern."
+     },
+     {
+      "w": "Merci vielmal!",
+      "ex": "Merci vielmal für Ihre Hilfe!"
+     },
+     {
+      "w": "das Velo",
+      "ex": "In Zürich fahren viele Leute mit dem Velo zur Arbeit."
+     },
+     {
+      "w": "parkieren",
+      "ex": "Hier darf man nicht parkieren."
+     },
+     {
+      "w": "das Billett",
+      "ex": "Haben Sie Ihr Billett schon gekauft?"
+     },
+     {
+      "w": "die Strasse",
+      "ex": "Die Strasse zum See ist heute gesperrt."
+     }
+    ],
+    "gram": "Schweizer Hochdeutsch: ss statt ß (Strasse, gross), eigene Wörter (Velo, Billett, parkieren), viele Wörter aus dem Französischen."
+   }
+  },
+  {
+   "d": 230,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "German history highlights",
+     "g": "Learn key moments: Gutenberg, Luther's Bible, the fall of the Wall and reunification.",
+     "p": [
+      "Around 1450 Johannes Gutenberg in Mainz developed printing with movable metal type; books became much more widespread.",
+      "Martin Luther translated the Bible into German (New Testament 1522); his translation strongly shaped the written language.",
+      "On 9 November 1989 the Berlin Wall fell; on 3 October 1990 Germany was reunified: der Tag der Deutschen Einheit."
+     ],
+     "q": "Which historical moment do you find most interesting, and why? Tell me in the Präteritum and the passive.",
+     "c": "Write four history facts with dates using wurde + Partizip II and the Präteritum (fiel, übersetzte, erfand)."
+    },
+    "de": {
+     "t": "Höhepunkte der deutschen Geschichte",
+     "g": "Du lernst wichtige Momente: Gutenberg, Luthers Bibel, der Mauerfall und die Wiedervereinigung.",
+     "p": [
+      "Um 1450 entwickelte Johannes Gutenberg in Mainz den Buchdruck mit beweglichen Metalllettern; Bücher wurden viel verbreiteter.",
+      "Martin Luther übersetzte die Bibel ins Deutsche (Neues Testament 1522); seine Übersetzung prägte die Schriftsprache stark.",
+      "Am 9. November 1989 fiel die Berliner Mauer; am 3. Oktober 1990 wurde Deutschland wiedervereinigt: der Tag der Deutschen Einheit."
+     ],
+     "q": "Welcher historische Moment interessiert dich am meisten, und warum? Erzähl im Präteritum und im Passiv.",
+     "c": "Schreib vier Fakten aus der Geschichte mit Jahreszahlen, mit wurde + Partizip II und Präteritum (fiel, übersetzte, erfand)."
+    },
+    "es": {
+     "t": "Hitos de la historia alemana",
+     "g": "Conoce momentos clave: Gutenberg, la Biblia de Lutero, la caída del Muro y la reunificación.",
+     "p": [
+      "Hacia 1450 Johannes Gutenberg desarrolló en Maguncia la imprenta de tipos móviles de metal; los libros se difundieron mucho más.",
+      "Martín Lutero tradujo la Biblia al alemán (Nuevo Testamento, 1522); su traducción marcó mucho la lengua escrita.",
+      "El 9 de noviembre de 1989 cayó el Muro de Berlín; el 3 de octubre de 1990 Alemania se reunificó: der Tag der Deutschen Einheit."
+     ],
+     "q": "¿Qué momento histórico te parece más interesante y por qué? Cuéntamelo en Präteritum y en pasiva.",
+     "c": "Escribe cuatro datos históricos con fechas usando wurde + Partizip II y el Präteritum (fiel, übersetzte, erfand)."
+    },
+    "fr": {
+     "t": "Grands moments de l'histoire allemande",
+     "g": "Découvrir des moments clés : Gutenberg, la Bible de Luther, la chute du Mur et la réunification.",
+     "p": [
+      "Vers 1450, Johannes Gutenberg met au point à Mayence l'imprimerie à caractères mobiles ; les livres se diffusent bien plus.",
+      "Martin Luther traduit la Bible en allemand (Nouveau Testament, 1522) ; sa traduction a beaucoup marqué la langue écrite.",
+      "Le 9 novembre 1989, le mur de Berlin tombe ; le 3 octobre 1990, l'Allemagne est réunifiée : der Tag der Deutschen Einheit."
+     ],
+     "q": "Quel moment historique trouves-tu le plus intéressant, et pourquoi ? Raconte au Präteritum et au passif.",
+     "c": "Écris quatre faits historiques datés avec wurde + Partizip II et le Präteritum (fiel, übersetzte, erfand)."
+    },
+    "it": {
+     "t": "Momenti chiave della storia tedesca",
+     "g": "Conosci momenti importanti: Gutenberg, la Bibbia di Lutero, la caduta del Muro e la riunificazione.",
+     "p": [
+      "Verso il 1450 Johannes Gutenberg sviluppò a Magonza la stampa a caratteri mobili in metallo; i libri si diffusero molto di più.",
+      "Martin Lutero tradusse la Bibbia in tedesco (Nuovo Testamento, 1522); la sua traduzione influenzò molto la lingua scritta.",
+      "Il 9 novembre 1989 cadde il Muro di Berlino; il 3 ottobre 1990 la Germania fu riunificata: der Tag der Deutschen Einheit."
+     ],
+     "q": "Quale momento storico trovi più interessante e perché? Raccontalo al Präteritum e al passivo.",
+     "c": "Scrivi quattro fatti storici con date usando wurde + Partizip II e il Präteritum (fiel, übersetzte, erfand)."
+    },
+    "pt": {
+     "t": "Marcos da história alemã",
+     "g": "Conhecer momentos-chave: Gutenberg, a Bíblia de Lutero, a queda do Muro e a reunificação.",
+     "p": [
+      "Por volta de 1450, Johannes Gutenberg desenvolveu em Mainz a imprensa de tipos móveis; os livros passaram a circular muito mais.",
+      "Martinho Lutero traduziu a Bíblia para alemão (Novo Testamento, 1522); a sua tradução marcou muito a língua escrita.",
+      "A 9 de novembro de 1989 caiu o Muro de Berlim; a 3 de outubro de 1990 a Alemanha foi reunificada: der Tag der Deutschen Einheit."
+     ],
+     "q": "Que momento histórico achas mais interessante e porquê? Conta-me no Präteritum e na passiva.",
+     "c": "Escreve quatro factos históricos com datas usando wurde + Partizip II e o Präteritum (fiel, übersetzte, erfand)."
+    },
+    "pt_BR": {
+     "t": "Marcos da história alemã",
+     "g": "Conhecer momentos-chave: Gutenberg, a Bíblia de Lutero, a queda do Muro e a reunificação.",
+     "p": [
+      "Por volta de 1450, Johannes Gutenberg desenvolveu em Mainz a imprensa de tipos móveis; os livros passaram a circular muito mais.",
+      "Martinho Lutero traduziu a Bíblia para o alemão (Novo Testamento, 1522); sua tradução marcou muito a língua escrita.",
+      "Em 9 de novembro de 1989 caiu o Muro de Berlim; em 3 de outubro de 1990 a Alemanha foi reunificada: der Tag der Deutschen Einheit."
+     ],
+     "q": "Que momento histórico você acha mais interessante e por quê? Me conte no Präteritum e na passiva.",
+     "c": "Escreva quatro fatos históricos com datas usando wurde + Partizip II e o Präteritum (fiel, übersetzte, erfand)."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Buchdruck",
+      "ex": "Der Buchdruck veränderte die Welt."
+     },
+     {
+      "w": "erfinden – erfand",
+      "ex": "Gutenberg erfand ein neues Druckverfahren."
+     },
+     {
+      "w": "übersetzen",
+      "ex": "Luther übersetzte die Bibel ins Deutsche."
+     },
+     {
+      "w": "der Mauerfall",
+      "ex": "Nach dem Mauerfall feierten viele Menschen in Berlin."
+     },
+     {
+      "w": "die Wiedervereinigung",
+      "ex": "Die Wiedervereinigung war im Jahr 1990."
+     },
+     {
+      "w": "im Jahr 1989",
+      "ex": "Im Jahr 1989 fiel die Berliner Mauer."
+     }
+    ],
+    "gram": "Jahreszahlen: 1989 oder im Jahr 1989 (nicht in 1989); Datum: am 9. November (am neunten November); Geschichte im Präteritum."
+   }
+  }
+ ]
+}

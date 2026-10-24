@@ -1,0 +1,1305 @@
+{
+ "topic": "leadership",
+ "questions": [
+  {
+   "id": "leadership-001",
+   "lv": "any",
+   "i18n": {
+    "en": "Who is the best leader you have ever worked with, and why?",
+    "de": "Wer ist die beste Führungsperson, mit der du je gearbeitet hast, und warum?",
+    "es": "¿Quién es el mejor líder con el que has trabajado y por qué?",
+    "fr": "Qui est le meilleur leader avec qui tu aies travaillé, et pourquoi ?",
+    "it": "Chi è il miglior leader con cui tu abbia mai lavorato, e perché?",
+    "pt": "Quem foi o melhor líder com quem já trabalhaste, e porquê?",
+    "pt_BR": "Quem foi o melhor líder com quem você já trabalhou, e por quê?"
+   }
+  },
+  {
+   "id": "leadership-002",
+   "lv": "any",
+   "i18n": {
+    "en": "What does good leadership mean to you?",
+    "de": "Was bedeutet gute Führung für dich?",
+    "es": "¿Qué significa para ti un buen liderazgo?",
+    "fr": "Que signifie pour toi un bon leadership ?",
+    "it": "Che cosa significa per te una buona leadership?",
+    "pt": "O que significa para ti uma boa liderança?",
+    "pt_BR": "O que é uma boa liderança pra você?"
+   }
+  },
+  {
+   "id": "leadership-003",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you see yourself as a leader? Why or why not?",
+    "de": "Siehst du dich selbst als Führungsperson? Warum oder warum nicht?",
+    "es": "¿Te consideras un líder? ¿Por qué sí o por qué no?",
+    "fr": "Te vois-tu comme un leader ? Pourquoi ou pourquoi pas ?",
+    "it": "Ti consideri un leader? Perché sì o perché no?",
+    "pt": "Vês-te como um líder? Porquê ou porque não?",
+    "pt_BR": "Você se vê como líder? Por que sim ou por que não?"
+   }
+  },
+  {
+   "id": "leadership-004",
+   "lv": "any",
+   "i18n": {
+    "en": "When was the first time you led a group, even something small?",
+    "de": "Wann hast du zum ersten Mal eine Gruppe geleitet, auch wenn es nur etwas Kleines war?",
+    "es": "¿Cuándo dirigiste un grupo por primera vez, aunque fuera algo pequeño?",
+    "fr": "Quand as-tu dirigé un groupe pour la première fois, même pour une petite chose ?",
+    "it": "Quando hai guidato un gruppo per la prima volta, anche per una cosa piccola?",
+    "pt": "Quando foi a primeira vez que lideraste um grupo, mesmo em algo pequeno?",
+    "pt_BR": "Quando foi a primeira vez que você liderou um grupo, mesmo em algo pequeno?"
+   }
+  },
+  {
+   "id": "leadership-005",
+   "lv": "any",
+   "i18n": {
+    "en": "Which quality do you admire most in a leader?",
+    "de": "Welche Eigenschaft bewunderst du an einer Führungsperson am meisten?",
+    "es": "¿Qué cualidad admiras más en un líder?",
+    "fr": "Quelle qualité admires-tu le plus chez un leader ?",
+    "it": "Quale qualità ammiri di più in un leader?",
+    "pt": "Que qualidade admiras mais num líder?",
+    "pt_BR": "Qual qualidade você mais admira num líder?"
+   }
+  },
+  {
+   "id": "leadership-006",
+   "lv": "any",
+   "i18n": {
+    "en": "What is your biggest strength when you work with others?",
+    "de": "Was ist deine größte Stärke, wenn du mit anderen zusammenarbeitest?",
+    "es": "¿Cuál es tu mayor fortaleza cuando trabajas con otras personas?",
+    "fr": "Quelle est ta plus grande force quand tu travailles avec d'autres ?",
+    "it": "Qual è il tuo punto di forza più grande quando lavori con gli altri?",
+    "pt": "Qual é o teu maior ponto forte quando trabalhas com outras pessoas?",
+    "pt_BR": "Qual é o seu maior ponto forte quando trabalha com outras pessoas?"
+   }
+  },
+  {
+   "id": "leadership-007",
+   "lv": "any",
+   "i18n": {
+    "en": "Is there a famous leader from history you find inspiring?",
+    "de": "Gibt es eine berühmte Führungspersönlichkeit aus der Geschichte, die dich inspiriert?",
+    "es": "¿Hay algún líder famoso de la historia que te inspire?",
+    "fr": "Y a-t-il un leader célèbre de l'histoire qui t'inspire ?",
+    "it": "C'è un leader famoso della storia che trovi fonte di ispirazione?",
+    "pt": "Há algum líder famoso da história que te inspire?",
+    "pt_BR": "Existe algum líder famoso da história que te inspira?"
+   }
+  },
+  {
+   "id": "leadership-008",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you like to receive feedback?",
+    "de": "Wie bekommst du am liebsten Feedback?",
+    "es": "¿Cómo prefieres recibir feedback?",
+    "fr": "Comment préfères-tu recevoir du feedback ?",
+    "it": "Come preferisci ricevere un feedback?",
+    "pt": "Como preferes receber feedback?",
+    "pt_BR": "Como você prefere receber feedback?"
+   }
+  },
+  {
+   "id": "leadership-009",
+   "lv": "any",
+   "i18n": {
+    "en": "What is the best piece of feedback you have ever received?",
+    "de": "Was ist das beste Feedback, das du je bekommen hast?",
+    "es": "¿Cuál es el mejor feedback que has recibido nunca?",
+    "fr": "Quel est le meilleur feedback que tu aies jamais reçu ?",
+    "it": "Qual è il miglior feedback che tu abbia mai ricevuto?",
+    "pt": "Qual foi o melhor feedback que já recebeste?",
+    "pt_BR": "Qual foi o melhor feedback que você já recebeu?"
+   }
+  },
+  {
+   "id": "leadership-010",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer to lead, to follow or to work on your own?",
+    "de": "Führst du lieber, folgst du lieber oder arbeitest du lieber allein?",
+    "es": "¿Prefieres liderar, seguir o trabajar por tu cuenta?",
+    "fr": "Tu préfères diriger, suivre ou travailler seul ?",
+    "it": "Preferisci guidare, seguire o lavorare da solo?",
+    "pt": "Preferes liderar, seguir ou trabalhar sozinho?",
+    "pt_BR": "Você prefere liderar, seguir ou trabalhar sozinho?"
+   }
+  },
+  {
+   "id": "leadership-011",
+   "lv": "any",
+   "i18n": {
+    "en": "What makes you trust someone at work?",
+    "de": "Was bringt dich dazu, jemandem bei der Arbeit zu vertrauen?",
+    "es": "¿Qué hace que confíes en alguien en el trabajo?",
+    "fr": "Qu'est-ce qui te fait faire confiance à quelqu'un au travail ?",
+    "it": "Che cosa ti fa fidare di qualcuno al lavoro?",
+    "pt": "O que te faz confiar em alguém no trabalho?",
+    "pt_BR": "O que faz você confiar em alguém no trabalho?"
+   }
+  },
+  {
+   "id": "leadership-012",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you usually react when plans suddenly change?",
+    "de": "Wie reagierst du normalerweise, wenn sich Pläne plötzlich ändern?",
+    "es": "¿Cómo sueles reaccionar cuando los planes cambian de repente?",
+    "fr": "Comment réagis-tu d'habitude quand les plans changent soudainement ?",
+    "it": "Come reagisci di solito quando i piani cambiano all'improvviso?",
+    "pt": "Como costumas reagir quando os planos mudam de repente?",
+    "pt_BR": "Como você costuma reagir quando os planos mudam de repente?"
+   }
+  },
+  {
+   "id": "leadership-013",
+   "lv": "any",
+   "i18n": {
+    "en": "What motivates you most to do great work?",
+    "de": "Was motiviert dich am meisten, richtig gute Arbeit zu leisten?",
+    "es": "¿Qué es lo que más te motiva a hacer un gran trabajo?",
+    "fr": "Qu'est-ce qui te motive le plus à faire du bon travail ?",
+    "it": "Che cosa ti motiva di più a fare un ottimo lavoro?",
+    "pt": "O que mais te motiva a fazer um ótimo trabalho?",
+    "pt_BR": "O que mais te motiva a fazer um ótimo trabalho?"
+   }
+  },
+  {
+   "id": "leadership-014",
+   "lv": "any",
+   "i18n": {
+    "en": "Have you ever been part of a team that worked really well together?",
+    "de": "Warst du schon mal Teil eines Teams, das richtig gut zusammengearbeitet hat?",
+    "es": "¿Has formado parte alguna vez de un equipo que funcionaba de maravilla?",
+    "fr": "As-tu déjà fait partie d'une équipe qui fonctionnait vraiment bien ?",
+    "it": "Hai mai fatto parte di un team che lavorava davvero bene insieme?",
+    "pt": "Já fizeste parte de uma equipa que funcionava mesmo bem?",
+    "pt_BR": "Você já fez parte de um time que funcionava muito bem junto?"
+   }
+  },
+  {
+   "id": "leadership-015",
+   "lv": "any",
+   "i18n": {
+    "en": "What do you think makes a team successful?",
+    "de": "Was macht ein Team deiner Meinung nach erfolgreich?",
+    "es": "¿Qué crees que hace que un equipo tenga éxito?",
+    "fr": "Selon toi, qu'est-ce qui fait la réussite d'une équipe ?",
+    "it": "Secondo te, che cosa rende un team vincente?",
+    "pt": "Na tua opinião, o que faz uma equipa ter sucesso?",
+    "pt_BR": "Na sua opinião, o que faz um time ter sucesso?"
+   }
+  },
+  {
+   "id": "leadership-016",
+   "lv": "any",
+   "i18n": {
+    "en": "Are you a good listener? How do you know?",
+    "de": "Bist du ein guter Zuhörer? Woran merkst du das?",
+    "es": "¿Sabes escuchar bien? ¿Cómo lo sabes?",
+    "fr": "Es-tu à l'écoute des autres ? Comment le sais-tu ?",
+    "it": "Sai ascoltare bene? Come lo capisci?",
+    "pt": "Sabes ouvir bem os outros? Como é que sabes?",
+    "pt_BR": "Você sabe ouvir bem? Como você sabe disso?"
+   }
+  },
+  {
+   "id": "leadership-017",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you make decisions when you are unsure?",
+    "de": "Wie triffst du Entscheidungen, wenn du dir unsicher bist?",
+    "es": "¿Cómo tomas decisiones cuando no estás seguro?",
+    "fr": "Comment prends-tu des décisions quand tu n'es pas sûr ?",
+    "it": "Come prendi decisioni quando non sei sicuro?",
+    "pt": "Como tomas decisões quando não tens a certeza?",
+    "pt_BR": "Como você toma decisões quando não tem certeza?"
+   }
+  },
+  {
+   "id": "leadership-018",
+   "lv": "any",
+   "i18n": {
+    "en": "What is one leadership skill you would love to improve?",
+    "de": "Welche Führungsfähigkeit würdest du gern verbessern?",
+    "es": "¿Qué habilidad de liderazgo te gustaría mejorar?",
+    "fr": "Quelle compétence de leadership aimerais-tu améliorer ?",
+    "it": "Quale capacità di leadership ti piacerebbe migliorare?",
+    "pt": "Que competência de liderança gostavas de melhorar?",
+    "pt_BR": "Qual habilidade de liderança você gostaria de melhorar?"
+   }
+  },
+  {
+   "id": "leadership-019",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you lead anything outside of work, like a club or a group of friends?",
+    "de": "Leitest du etwas außerhalb der Arbeit, zum Beispiel einen Verein oder eine Freundesgruppe?",
+    "es": "¿Lideras algo fuera del trabajo, como un club o un grupo de amigos?",
+    "fr": "Diriges-tu quelque chose en dehors du travail, comme un club ou un groupe d'amis ?",
+    "it": "Guidi qualcosa fuori dal lavoro, come un club o un gruppo di amici?",
+    "pt": "Lideras alguma coisa fora do trabalho, como um clube ou um grupo de amigos?",
+    "pt_BR": "Você lidera algo fora do trabalho, como um clube ou um grupo de amigos?"
+   }
+  },
+  {
+   "id": "leadership-020",
+   "lv": "any",
+   "i18n": {
+    "en": "What does a great team meeting feel like to you?",
+    "de": "Wie fühlt sich für dich ein richtig gutes Teammeeting an?",
+    "es": "¿Cómo es para ti una reunión de equipo realmente buena?",
+    "fr": "Pour toi, à quoi ressemble une super réunion d'équipe ?",
+    "it": "Com'è per te una riunione di team davvero riuscita?",
+    "pt": "Como é para ti uma reunião de equipa mesmo boa?",
+    "pt_BR": "Como é pra você uma reunião de equipe muito boa?"
+   }
+  },
+  {
+   "id": "leadership-021",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you show appreciation to people around you?",
+    "de": "Wie zeigst du den Menschen um dich herum deine Wertschätzung?",
+    "es": "¿Cómo muestras tu aprecio a las personas que te rodean?",
+    "fr": "Comment montres-tu ta reconnaissance aux gens autour de toi ?",
+    "it": "Come mostri apprezzamento alle persone intorno a te?",
+    "pt": "Como mostras apreço às pessoas à tua volta?",
+    "pt_BR": "Como você demonstra reconhecimento às pessoas ao seu redor?"
+   }
+  },
+  {
+   "id": "leadership-022",
+   "lv": "any",
+   "i18n": {
+    "en": "What did a teacher or coach once teach you about leading?",
+    "de": "Was hat dir ein Lehrer oder Trainer einmal über Führung beigebracht?",
+    "es": "¿Qué te enseñó alguna vez un profesor o entrenador sobre liderar?",
+    "fr": "Qu'est-ce qu'un professeur ou un coach t'a appris un jour sur le leadership ?",
+    "it": "Che cosa ti ha insegnato un insegnante o un allenatore sul guidare gli altri?",
+    "pt": "O que te ensinou um professor ou treinador sobre liderar?",
+    "pt_BR": "O que um professor ou treinador já te ensinou sobre liderar?"
+   }
+  },
+  {
+   "id": "leadership-023",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you think leaders are born or made?",
+    "de": "Glaubst du, man wird als Führungsperson geboren oder dazu gemacht?",
+    "es": "¿Crees que los líderes nacen o se hacen?",
+    "fr": "Penses-tu qu'on naît leader ou qu'on le devient ?",
+    "it": "Pensi che leader si nasca o si diventi?",
+    "pt": "Achas que os líderes nascem assim ou fazem-se?",
+    "pt_BR": "Você acha que líderes nascem prontos ou se formam?"
+   }
+  },
+  {
+   "id": "leadership-024",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you stay calm in stressful moments?",
+    "de": "Wie bleibst du in stressigen Momenten ruhig?",
+    "es": "¿Cómo mantienes la calma en los momentos de estrés?",
+    "fr": "Comment restes-tu calme dans les moments stressants ?",
+    "it": "Come resti calmo nei momenti di stress?",
+    "pt": "Como manténs a calma em momentos de stress?",
+    "pt_BR": "Como você mantém a calma em momentos de estresse?"
+   }
+  },
+  {
+   "id": "leadership-025",
+   "lv": "any",
+   "i18n": {
+    "en": "What is the hardest part of telling someone they made a mistake?",
+    "de": "Was ist das Schwierigste daran, jemandem zu sagen, dass er einen Fehler gemacht hat?",
+    "es": "¿Qué es lo más difícil de decirle a alguien que se ha equivocado?",
+    "fr": "Qu'y a-t-il de plus difficile quand on dit à quelqu'un qu'il s'est trompé ?",
+    "it": "Qual è la parte più difficile nel dire a qualcuno che ha sbagliato?",
+    "pt": "Qual é a parte mais difícil de dizer a alguém que cometeu um erro?",
+    "pt_BR": "Qual é a parte mais difícil de dizer a alguém que errou?"
+   }
+  },
+  {
+   "id": "leadership-026",
+   "lv": "any",
+   "i18n": {
+    "en": "Which values guide you when you make important choices?",
+    "de": "Welche Werte leiten dich, wenn du wichtige Entscheidungen triffst?",
+    "es": "¿Qué valores te guían cuando tomas decisiones importantes?",
+    "fr": "Quelles valeurs te guident quand tu fais des choix importants ?",
+    "it": "Quali valori ti guidano quando fai scelte importanti?",
+    "pt": "Que valores te guiam quando fazes escolhas importantes?",
+    "pt_BR": "Que valores guiam você quando faz escolhas importantes?"
+   }
+  },
+  {
+   "id": "leadership-027",
+   "lv": "any",
+   "i18n": {
+    "en": "What kind of boss would you love to have?",
+    "de": "Was für eine Chefin oder einen Chef hättest du gern?",
+    "es": "¿Qué tipo de jefe te encantaría tener?",
+    "fr": "Quel genre de manager aimerais-tu avoir ?",
+    "it": "Che tipo di capo ti piacerebbe avere?",
+    "pt": "Que tipo de chefe adorarias ter?",
+    "pt_BR": "Que tipo de chefe você adoraria ter?"
+   }
+  },
+  {
+   "id": "leadership-028",
+   "lv": "any",
+   "i18n": {
+    "en": "Have you ever helped someone grow or learn something new?",
+    "de": "Hast du schon mal jemandem geholfen, sich weiterzuentwickeln oder etwas Neues zu lernen?",
+    "es": "¿Has ayudado alguna vez a alguien a crecer o aprender algo nuevo?",
+    "fr": "As-tu déjà aidé quelqu'un à progresser ou à apprendre quelque chose ?",
+    "it": "Hai mai aiutato qualcuno a crescere o a imparare qualcosa di nuovo?",
+    "pt": "Já ajudaste alguém a crescer ou a aprender algo novo?",
+    "pt_BR": "Você já ajudou alguém a crescer ou aprender algo novo?"
+   }
+  },
+  {
+   "id": "leadership-029",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you handle disagreements with friends or colleagues?",
+    "de": "Wie gehst du mit Meinungsverschiedenheiten mit Freunden oder Kollegen um?",
+    "es": "¿Cómo manejas los desacuerdos con amigos o compañeros?",
+    "fr": "Comment gères-tu les désaccords avec tes amis ou collègues ?",
+    "it": "Come gestisci i disaccordi con amici o colleghi?",
+    "pt": "Como lidas com desacordos com amigos ou colegas?",
+    "pt_BR": "Como você lida com discordâncias com amigos ou colegas?"
+   }
+  },
+  {
+   "id": "leadership-030",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer clear instructions or freedom to decide how to work?",
+    "de": "Magst du lieber klare Anweisungen oder die Freiheit, selbst zu entscheiden, wie du arbeitest?",
+    "es": "¿Prefieres instrucciones claras o libertad para decidir cómo trabajar?",
+    "fr": "Tu préfères des consignes claires ou la liberté de choisir comment travailler ?",
+    "it": "Preferisci istruzioni chiare o libertà di decidere come lavorare?",
+    "pt": "Preferes instruções claras ou liberdade para decidir como trabalhar?",
+    "pt_BR": "Você prefere instruções claras ou liberdade pra decidir como trabalhar?"
+   }
+  },
+  {
+   "id": "leadership-031",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a small act of leadership you noticed recently?",
+    "de": "Welche kleine Geste von Führung ist dir in letzter Zeit aufgefallen?",
+    "es": "¿Qué pequeño gesto de liderazgo has notado últimamente?",
+    "fr": "Quel petit geste de leadership as-tu remarqué récemment ?",
+    "it": "Qual è un piccolo gesto di leadership che hai notato di recente?",
+    "pt": "Que pequeno gesto de liderança notaste recentemente?",
+    "pt_BR": "Que pequeno gesto de liderança você notou recentemente?"
+   }
+  },
+  {
+   "id": "leadership-032",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you celebrate success with others?",
+    "de": "Wie feierst du Erfolge mit anderen?",
+    "es": "¿Cómo celebras los éxitos con los demás?",
+    "fr": "Comment fêtes-tu les réussites avec les autres ?",
+    "it": "Come festeggi i successi con gli altri?",
+    "pt": "Como celebras os sucessos com os outros?",
+    "pt_BR": "Como você comemora conquistas com outras pessoas?"
+   }
+  },
+  {
+   "id": "leadership-033",
+   "lv": "any",
+   "i18n": {
+    "en": "What would your friends say is your leadership style?",
+    "de": "Wie würden deine Freunde deinen Führungsstil beschreiben?",
+    "es": "¿Cómo describirían tus amigos tu estilo de liderazgo?",
+    "fr": "Comment tes amis décriraient-ils ton style de leadership ?",
+    "it": "Come descriverebbero i tuoi amici il tuo stile di leadership?",
+    "pt": "Como descreveriam os teus amigos o teu estilo de liderança?",
+    "pt_BR": "Como seus amigos descreveriam o seu estilo de liderança?"
+   }
+  },
+  {
+   "id": "leadership-034",
+   "lv": "any",
+   "i18n": {
+    "en": "Is it easy for you to ask for help? Why?",
+    "de": "Fällt es dir leicht, um Hilfe zu bitten? Warum?",
+    "es": "¿Te resulta fácil pedir ayuda? ¿Por qué?",
+    "fr": "Est-ce facile pour toi de demander de l'aide ? Pourquoi ?",
+    "it": "Ti viene facile chiedere aiuto? Perché?",
+    "pt": "É fácil para ti pedir ajuda? Porquê?",
+    "pt_BR": "É fácil pra você pedir ajuda? Por quê?"
+   }
+  },
+  {
+   "id": "leadership-035",
+   "lv": "any",
+   "i18n": {
+    "en": "What did you learn from a mistake you made in a group project?",
+    "de": "Was hast du aus einem Fehler gelernt, den du bei einem Gruppenprojekt gemacht hast?",
+    "es": "¿Qué aprendiste de un error que cometiste en un proyecto en grupo?",
+    "fr": "Qu'as-tu appris d'une erreur commise lors d'un projet de groupe ?",
+    "it": "Che cosa hai imparato da un errore fatto in un progetto di gruppo?",
+    "pt": "O que aprendeste com um erro que cometeste num projeto de grupo?",
+    "pt_BR": "O que você aprendeu com um erro que cometeu num projeto em grupo?"
+   }
+  },
+  {
+   "id": "leadership-036",
+   "lv": "any",
+   "i18n": {
+    "en": "How important is humour in a team for you?",
+    "de": "Wie wichtig ist dir Humor in einem Team?",
+    "es": "¿Qué importancia tiene para ti el humor en un equipo?",
+    "fr": "Quelle importance a l'humour dans une équipe pour toi ?",
+    "it": "Quanto è importante per te l'umorismo in un team?",
+    "pt": "Que importância tem para ti o humor numa equipa?",
+    "pt_BR": "Quão importante é o humor num time pra você?"
+   }
+  },
+  {
+   "id": "leadership-037",
+   "lv": "any",
+   "i18n": {
+    "en": "What would you change first if you led your current team or class?",
+    "de": "Was würdest du zuerst ändern, wenn du dein jetziges Team oder deine Klasse leiten würdest?",
+    "es": "¿Qué cambiarías primero si dirigieras tu equipo o tu clase actual?",
+    "fr": "Que changerais-tu en premier si tu dirigeais ton équipe ou ta classe actuelle ?",
+    "it": "Che cosa cambieresti per prima cosa se guidassi il tuo team o la tua classe attuale?",
+    "pt": "O que mudarias primeiro se liderasses a tua equipa ou turma atual?",
+    "pt_BR": "O que você mudaria primeiro se liderasse seu time ou sua turma atual?"
+   }
+  },
+  {
+   "id": "leadership-038",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you think leadership looks different in different cultures?",
+    "de": "Glaubst du, dass Führung in verschiedenen Kulturen unterschiedlich aussieht?",
+    "es": "¿Crees que el liderazgo es diferente según la cultura?",
+    "fr": "Penses-tu que le leadership prend des formes différentes selon les cultures ?",
+    "it": "Pensi che la leadership sia diversa nelle varie culture?",
+    "pt": "Achas que a liderança é diferente de cultura para cultura?",
+    "pt_BR": "Você acha que a liderança muda de uma cultura pra outra?"
+   }
+  },
+  {
+   "id": "leadership-039",
+   "lv": "any",
+   "i18n": {
+    "en": "What does a leader do that makes you want to follow them?",
+    "de": "Was tut eine Führungsperson, damit du ihr gern folgst?",
+    "es": "¿Qué hace un líder para que quieras seguirlo?",
+    "fr": "Que fait un leader qui te donne envie de le suivre ?",
+    "it": "Che cosa fa un leader che ti fa venire voglia di seguirlo?",
+    "pt": "O que faz um líder para que tenhas vontade de o seguir?",
+    "pt_BR": "O que um líder faz que dá vontade de seguir ele?"
+   }
+  },
+  {
+   "id": "leadership-040",
+   "lv": "any",
+   "i18n": {
+    "en": "Which leadership book, film or story has stayed with you?",
+    "de": "Welches Buch, welcher Film oder welche Geschichte über Führung ist dir im Gedächtnis geblieben?",
+    "es": "¿Qué libro, película o historia sobre liderazgo se te ha quedado grabado?",
+    "fr": "Quel livre, film ou histoire sur le leadership t'a marqué ?",
+    "it": "Quale libro, film o storia sulla leadership ti è rimasto impresso?",
+    "pt": "Que livro, filme ou história sobre liderança te ficou na memória?",
+    "pt_BR": "Que livro, filme ou história sobre liderança marcou você?"
+   }
+  },
+  {
+   "id": "leadership-041",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you show someone you are really listening?",
+    "de": "Wie zeigst du jemandem, dass du wirklich zuhörst?",
+    "es": "¿Cómo le demuestras a alguien que de verdad lo estás escuchando?",
+    "fr": "Comment montres-tu à quelqu'un que tu l'écoutes vraiment ?",
+    "it": "Come mostri a qualcuno che lo stai ascoltando davvero?",
+    "pt": "Como mostras a alguém que o estás mesmo a ouvir?",
+    "pt_BR": "Como você mostra pra alguém que está realmente ouvindo?"
+   }
+  },
+  {
+   "id": "leadership-042",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is one promise you kept that built someone's trust in you?",
+    "de": "Welches gehaltene Versprechen hat jemandes Vertrauen in dich gestärkt?",
+    "es": "¿Qué promesa cumplida hizo que alguien confiara más en ti?",
+    "fr": "Quelle promesse tenue a renforcé la confiance de quelqu'un en toi ?",
+    "it": "Quale promessa mantenuta ha fatto crescere la fiducia di qualcuno in te?",
+    "pt": "Que promessa cumprida fez alguém confiar mais em ti?",
+    "pt_BR": "Que promessa cumprida fez alguém confiar mais em você?"
+   }
+  },
+  {
+   "id": "leadership-043",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you give a compliment that feels sincere?",
+    "de": "Wie machst du ein Kompliment, das ehrlich rüberkommt?",
+    "es": "¿Cómo haces un cumplido que suene sincero?",
+    "fr": "Comment fais-tu un compliment qui sonne sincère ?",
+    "it": "Come fai un complimento che suoni sincero?",
+    "pt": "Como fazes um elogio que pareça sincero?",
+    "pt_BR": "Como você faz um elogio que soe sincero?"
+   }
+  },
+  {
+   "id": "leadership-044",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which of your values would you never give up as a leader?",
+    "de": "Welchen deiner Werte würdest du als Führungsperson niemals aufgeben?",
+    "es": "¿A cuál de tus valores no renunciarías nunca como líder?",
+    "fr": "À quelle valeur ne renoncerais-tu jamais en tant que leader ?",
+    "it": "A quale dei tuoi valori non rinunceresti mai come leader?",
+    "pt": "De que valor teu nunca abdicarias como líder?",
+    "pt_BR": "De qual dos seus valores você nunca abriria mão como líder?"
+   }
+  },
+  {
+   "id": "leadership-045",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What do you do when you feel angry or frustrated at work?",
+    "de": "Was machst du, wenn du bei der Arbeit wütend oder frustriert bist?",
+    "es": "¿Qué haces cuando te sientes enfadado o frustrado en el trabajo?",
+    "fr": "Que fais-tu quand tu te sens en colère ou frustré au travail ?",
+    "it": "Che cosa fai quando ti senti arrabbiato o frustrato al lavoro?",
+    "pt": "O que fazes quando te sentes zangado ou frustrado no trabalho?",
+    "pt_BR": "O que você faz quando se sente irritado ou frustrado no trabalho?"
+   }
+  },
+  {
+   "id": "leadership-046",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather explain things face to face or in writing?",
+    "de": "Erklärst du Dinge lieber persönlich oder schriftlich?",
+    "es": "¿Prefieres explicar las cosas cara a cara o por escrito?",
+    "fr": "Tu préfères expliquer les choses en face à face ou par écrit ?",
+    "it": "Preferisci spiegare le cose di persona o per iscritto?",
+    "pt": "Preferes explicar as coisas cara a cara ou por escrito?",
+    "pt_BR": "Você prefere explicar as coisas pessoalmente ou por escrito?"
+   }
+  },
+  {
+   "id": "leadership-047",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever admitted a mistake in front of a group? How did it go?",
+    "de": "Hast du schon mal vor einer Gruppe einen Fehler zugegeben? Wie lief es?",
+    "es": "¿Has admitido alguna vez un error delante de un grupo? ¿Cómo fue?",
+    "fr": "As-tu déjà reconnu une erreur devant un groupe ? Comment ça s'est passé ?",
+    "it": "Hai mai ammesso un errore davanti a un gruppo? Com'è andata?",
+    "pt": "Já admitiste um erro à frente de um grupo? Como correu?",
+    "pt_BR": "Você já admitiu um erro na frente de um grupo? Como foi?"
+   }
+  },
+  {
+   "id": "leadership-048",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What kind of questions do you ask to get to know someone?",
+    "de": "Welche Fragen stellst du, um jemanden kennenzulernen?",
+    "es": "¿Qué tipo de preguntas haces para conocer a alguien?",
+    "fr": "Quel genre de questions poses-tu pour apprendre à connaître quelqu'un ?",
+    "it": "Che tipo di domande fai per conoscere qualcuno?",
+    "pt": "Que tipo de perguntas fazes para conhecer alguém?",
+    "pt_BR": "Que tipo de pergunta você faz pra conhecer alguém?"
+   }
+  },
+  {
+   "id": "leadership-049",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you write a journal or reflect on your day? How?",
+    "de": "Schreibst du Tagebuch oder denkst du über deinen Tag nach? Wie?",
+    "es": "¿Escribes un diario o reflexionas sobre tu día? ¿Cómo lo haces?",
+    "fr": "Tiens-tu un journal ou réfléchis-tu à ta journée ? Comment ?",
+    "it": "Tieni un diario o rifletti sulla tua giornata? Come?",
+    "pt": "Escreves um diário ou refletes sobre o teu dia? Como?",
+    "pt_BR": "Você escreve um diário ou reflete sobre o seu dia? Como?"
+   }
+  },
+  {
+   "id": "leadership-050",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What would you say to start giving feedback to a friend?",
+    "de": "Mit welchen Worten würdest du anfangen, einem Freund Feedback zu geben?",
+    "es": "¿Con qué palabras empezarías a darle feedback a un amigo?",
+    "fr": "Par quels mots commencerais-tu pour donner un feedback à un ami ?",
+    "it": "Con quali parole inizieresti a dare un feedback a un amico?",
+    "pt": "Com que palavras começarias a dar feedback a um amigo?",
+    "pt_BR": "Com que palavras você começaria a dar um feedback pra um amigo?"
+   }
+  },
+  {
+   "id": "leadership-051",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you react when someone gives you critical feedback?",
+    "de": "Wie reagierst du, wenn dir jemand kritisches Feedback gibt?",
+    "es": "¿Cómo reaccionas cuando alguien te da un feedback crítico?",
+    "fr": "Comment réagis-tu quand quelqu'un te fait une critique ?",
+    "it": "Come reagisci quando qualcuno ti dà un feedback critico?",
+    "pt": "Como reages quando alguém te dá um feedback crítico?",
+    "pt_BR": "Como você reage quando alguém te dá um feedback crítico?"
+   }
+  },
+  {
+   "id": "leadership-052",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What task would you find hardest to hand over to someone else?",
+    "de": "Welche Aufgabe würde es dir am schwersten fallen, an jemand anderen abzugeben?",
+    "es": "¿Qué tarea te costaría más delegar en otra persona?",
+    "fr": "Quelle tâche aurais-tu le plus de mal à confier à quelqu'un d'autre ?",
+    "it": "Quale compito faresti più fatica ad affidare a qualcun altro?",
+    "pt": "Que tarefa te custaria mais passar a outra pessoa?",
+    "pt_BR": "Qual tarefa seria mais difícil pra você passar pra outra pessoa?"
+   }
+  },
+  {
+   "id": "leadership-053",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What would you talk about in a first one-on-one with a new teammate?",
+    "de": "Worüber würdest du in einem ersten Einzelgespräch mit einem neuen Teammitglied sprechen?",
+    "es": "¿De qué hablarías en una primera reunión individual con un nuevo compañero de equipo?",
+    "fr": "De quoi parlerais-tu lors d'un premier entretien individuel avec un nouveau coéquipier ?",
+    "it": "Di che cosa parleresti in un primo incontro individuale con un nuovo membro del team?",
+    "pt": "De que falarias numa primeira conversa individual com um novo colega de equipa?",
+    "pt_BR": "Sobre o que você falaria numa primeira conversa individual com um novo colega de time?"
+   }
+  },
+  {
+   "id": "leadership-054",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is a goal you set recently, and how is it going?",
+    "de": "Welches Ziel hast du dir kürzlich gesetzt, und wie läuft es damit?",
+    "es": "¿Qué objetivo te has puesto hace poco y cómo lo llevas?",
+    "fr": "Quel objectif t'es-tu fixé récemment, et où en es-tu ?",
+    "it": "Qual è un obiettivo che ti sei dato di recente, e come sta andando?",
+    "pt": "Que objetivo definiste recentemente, e como está a correr?",
+    "pt_BR": "Qual meta você definiu recentemente, e como está indo?"
+   }
+  },
+  {
+   "id": "leadership-055",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you decide what is most important on a busy day?",
+    "de": "Wie entscheidest du an einem vollen Tag, was am wichtigsten ist?",
+    "es": "¿Cómo decides qué es lo más importante en un día con mucho trabajo?",
+    "fr": "Comment décides-tu ce qui est le plus important lors d'une journée chargée ?",
+    "it": "Come decidi che cosa è più importante in una giornata piena?",
+    "pt": "Como decides o que é mais importante num dia cheio?",
+    "pt_BR": "Como você decide o que é mais importante num dia corrido?"
+   }
+  },
+  {
+   "id": "leadership-056",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What makes you lose motivation, and what brings it back?",
+    "de": "Was raubt dir die Motivation, und was bringt sie zurück?",
+    "es": "¿Qué te quita la motivación y qué te la devuelve?",
+    "fr": "Qu'est-ce qui te fait perdre ta motivation, et qu'est-ce qui te la redonne ?",
+    "it": "Che cosa ti fa perdere la motivazione, e che cosa te la restituisce?",
+    "pt": "O que te faz perder a motivação, e o que a traz de volta?",
+    "pt_BR": "O que faz você perder a motivação, e o que traz ela de volta?"
+   }
+  },
+  {
+   "id": "leadership-057",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever run a meeting? What went well?",
+    "de": "Hast du schon mal ein Meeting geleitet? Was lief gut?",
+    "es": "¿Has dirigido alguna vez una reunión? ¿Qué salió bien?",
+    "fr": "As-tu déjà animé une réunion ? Qu'est-ce qui s'est bien passé ?",
+    "it": "Hai mai condotto una riunione? Che cosa è andato bene?",
+    "pt": "Já conduziste uma reunião? O que correu bem?",
+    "pt_BR": "Você já conduziu uma reunião? O que deu certo?"
+   }
+  },
+  {
+   "id": "leadership-058",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you make sure everyone in a group gets a chance to speak?",
+    "de": "Wie sorgst du dafür, dass in einer Gruppe alle zu Wort kommen?",
+    "es": "¿Cómo te aseguras de que todos en un grupo puedan hablar?",
+    "fr": "Comment t'assures-tu que chacun puisse s'exprimer dans un groupe ?",
+    "it": "Come fai in modo che tutti in un gruppo abbiano la possibilità di parlare?",
+    "pt": "Como garantes que todos num grupo têm oportunidade de falar?",
+    "pt_BR": "Como você garante que todo mundo num grupo tenha chance de falar?"
+   }
+  },
+  {
+   "id": "leadership-059",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you prefer to decide alone or together with the group?",
+    "de": "Entscheidest du lieber allein oder gemeinsam mit der Gruppe?",
+    "es": "¿Prefieres decidir solo o junto con el grupo?",
+    "fr": "Tu préfères décider seul ou avec le groupe ?",
+    "it": "Preferisci decidere da solo o insieme al gruppo?",
+    "pt": "Preferes decidir sozinho ou em conjunto com o grupo?",
+    "pt_BR": "Você prefere decidir sozinho ou junto com o grupo?"
+   }
+  },
+  {
+   "id": "leadership-060",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What would be hard about leading friends who used to be your peers?",
+    "de": "Was wäre schwierig daran, Freunde zu führen, die vorher auf deiner Ebene waren?",
+    "es": "¿Qué te resultaría difícil de liderar a amigos que antes eran tus compañeros?",
+    "fr": "Qu'est-ce qui serait difficile dans le fait de diriger des amis qui étaient tes collègues ?",
+    "it": "Che cosa sarebbe difficile nel guidare amici che prima erano tuoi pari?",
+    "pt": "O que seria difícil em liderar amigos que antes eram teus colegas?",
+    "pt_BR": "O que seria difícil em liderar amigos que antes eram seus colegas?"
+   }
+  },
+  {
+   "id": "leadership-061",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How would you welcome a new person to your team or group?",
+    "de": "Wie würdest du eine neue Person in deinem Team oder deiner Gruppe willkommen heißen?",
+    "es": "¿Cómo darías la bienvenida a una persona nueva en tu equipo o grupo?",
+    "fr": "Comment accueillerais-tu une nouvelle personne dans ton équipe ou ton groupe ?",
+    "it": "Come accoglieresti una persona nuova nel tuo team o gruppo?",
+    "pt": "Como receberias uma pessoa nova na tua equipa ou grupo?",
+    "pt_BR": "Como você receberia uma pessoa nova no seu time ou grupo?"
+   }
+  },
+  {
+   "id": "leadership-062",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which team tradition or ritual do you enjoy most?",
+    "de": "Welche Teamtradition oder welches Ritual magst du am liebsten?",
+    "es": "¿Qué tradición o ritual de equipo disfrutas más?",
+    "fr": "Quelle tradition ou quel rituel d'équipe apprécies-tu le plus ?",
+    "it": "Quale tradizione o rituale di squadra ti piace di più?",
+    "pt": "Que tradição ou ritual de equipa mais gostas?",
+    "pt_BR": "Qual tradição ou ritual de equipe você mais curte?"
+   }
+  },
+  {
+   "id": "leadership-063",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you say thank you to someone who helped you?",
+    "de": "Wie bedankst du dich bei jemandem, der dir geholfen hat?",
+    "es": "¿Cómo das las gracias a alguien que te ha ayudado?",
+    "fr": "Comment remercies-tu quelqu'un qui t'a aidé ?",
+    "it": "Come ringrazi qualcuno che ti ha aiutato?",
+    "pt": "Como agradeces a alguém que te ajudou?",
+    "pt_BR": "Como você agradece a alguém que te ajudou?"
+   }
+  },
+  {
+   "id": "leadership-064",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What does a fair leader do differently?",
+    "de": "Was macht eine faire Führungsperson anders?",
+    "es": "¿Qué hace diferente un líder justo?",
+    "fr": "Que fait différemment un leader juste ?",
+    "it": "Che cosa fa di diverso un leader giusto?",
+    "pt": "O que faz de diferente um líder justo?",
+    "pt_BR": "O que um líder justo faz de diferente?"
+   }
+  },
+  {
+   "id": "leadership-065",
+   "lv": "beginner",
+   "i18n": {
+    "en": "When did someone trust you with something important?",
+    "de": "Wann hat dir jemand etwas Wichtiges anvertraut?",
+    "es": "¿Cuándo te confió alguien algo importante?",
+    "fr": "Quand quelqu'un t'a-t-il confié quelque chose d'important ?",
+    "it": "Quando qualcuno ti ha affidato qualcosa di importante?",
+    "pt": "Quando é que alguém te confiou algo importante?",
+    "pt_BR": "Quando alguém confiou algo importante a você?"
+   }
+  },
+  {
+   "id": "leadership-066",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How would you help someone find their own solution instead of giving advice?",
+    "de": "Wie würdest du jemandem helfen, selbst eine Lösung zu finden, statt ihm Ratschläge zu geben?",
+    "es": "¿Cómo ayudarías a alguien a encontrar su propia solución en lugar de darle consejos?",
+    "fr": "Comment aiderais-tu quelqu'un à trouver sa propre solution plutôt que de lui donner des conseils ?",
+    "it": "Come aiuteresti qualcuno a trovare la propria soluzione invece di dargli consigli?",
+    "pt": "Como ajudarias alguém a encontrar a sua própria solução em vez de lhe dar conselhos?",
+    "pt_BR": "Como você ajudaria alguém a encontrar a própria solução em vez de dar conselhos?"
+   }
+  },
+  {
+   "id": "leadership-067",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What is your favourite question to ask when someone feels stuck?",
+    "de": "Was ist deine Lieblingsfrage, wenn jemand nicht weiterkommt?",
+    "es": "¿Cuál es tu pregunta favorita cuando alguien se siente atascado?",
+    "fr": "Quelle est ta question préférée quand quelqu'un se sent bloqué ?",
+    "it": "Qual è la tua domanda preferita quando qualcuno si sente bloccato?",
+    "pt": "Qual é a tua pergunta preferida quando alguém se sente bloqueado?",
+    "pt_BR": "Qual é a sua pergunta favorita quando alguém se sente travado?"
+   }
+  },
+  {
+   "id": "leadership-068",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you prepare for a difficult conversation?",
+    "de": "Wie bereitest du dich auf ein schwieriges Gespräch vor?",
+    "es": "¿Cómo te preparas para una conversación difícil?",
+    "fr": "Comment te prépares-tu à une conversation difficile ?",
+    "it": "Come ti prepari a una conversazione difficile?",
+    "pt": "Como te preparas para uma conversa difícil?",
+    "pt_BR": "Como você se prepara pra uma conversa difícil?"
+   }
+  },
+  {
+   "id": "leadership-069",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What would you do if two teammates kept arguing?",
+    "de": "Was würdest du tun, wenn zwei Teammitglieder ständig streiten?",
+    "es": "¿Qué harías si dos compañeros de equipo discutieran todo el rato?",
+    "fr": "Que ferais-tu si deux coéquipiers se disputaient sans cesse ?",
+    "it": "Che cosa faresti se due membri del team continuassero a litigare?",
+    "pt": "O que farias se dois colegas de equipa estivessem sempre a discutir?",
+    "pt_BR": "O que você faria se dois colegas de time vivessem discutindo?"
+   }
+  },
+  {
+   "id": "leadership-070",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "When has a disagreement led to a better idea in your experience?",
+    "de": "Wann hat bei dir eine Meinungsverschiedenheit zu einer besseren Idee geführt?",
+    "es": "¿Cuándo un desacuerdo te ha llevado a una idea mejor?",
+    "fr": "Quand un désaccord t'a-t-il conduit à une meilleure idée ?",
+    "it": "Quando un disaccordo ti ha portato a un'idea migliore?",
+    "pt": "Quando é que um desacordo levou a uma ideia melhor, na tua experiência?",
+    "pt_BR": "Quando uma discordância levou a uma ideia melhor, na sua experiência?"
+   }
+  },
+  {
+   "id": "leadership-071",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How would you support someone whose work is not going well?",
+    "de": "Wie würdest du jemanden unterstützen, bei dem es mit der Arbeit gerade nicht gut läuft?",
+    "es": "¿Cómo apoyarías a alguien a quien no le va bien en el trabajo?",
+    "fr": "Comment soutiendrais-tu quelqu'un dont le travail ne se passe pas bien ?",
+    "it": "Come sosterresti qualcuno il cui lavoro non sta andando bene?",
+    "pt": "Como apoiarias alguém cujo trabalho não está a correr bem?",
+    "pt_BR": "Como você apoiaria alguém cujo trabalho não está indo bem?"
+   }
+  },
+  {
+   "id": "leadership-072",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What helps you feel safe to share an unpopular opinion?",
+    "de": "Was hilft dir, dich sicher genug zu fühlen, um eine unbeliebte Meinung zu äußern?",
+    "es": "¿Qué te ayuda a sentirte seguro para compartir una opinión impopular?",
+    "fr": "Qu'est-ce qui t'aide à te sentir à l'aise pour partager une opinion impopulaire ?",
+    "it": "Che cosa ti aiuta a sentirti al sicuro nel condividere un'opinione impopolare?",
+    "pt": "O que te ajuda a sentir-te à vontade para partilhar uma opinião impopular?",
+    "pt_BR": "O que ajuda você a se sentir seguro pra compartilhar uma opinião impopular?"
+   }
+  },
+  {
+   "id": "leadership-073",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which interview question tells you the most about a person?",
+    "de": "Welche Frage im Vorstellungsgespräch verrät dir am meisten über eine Person?",
+    "es": "¿Qué pregunta de entrevista te dice más sobre una persona?",
+    "fr": "Quelle question d'entretien t'en apprend le plus sur une personne ?",
+    "it": "Quale domanda di colloquio ti dice di più su una persona?",
+    "pt": "Que pergunta de entrevista te diz mais sobre uma pessoa?",
+    "pt_BR": "Qual pergunta de entrevista mais revela sobre uma pessoa?"
+   }
+  },
+  {
+   "id": "leadership-074",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you win support for an idea when you are not the boss?",
+    "de": "Wie gewinnst du Unterstützung für eine Idee, wenn du nicht der Chef bist?",
+    "es": "¿Cómo consigues apoyo para una idea cuando no eres el jefe?",
+    "fr": "Comment obtiens-tu du soutien pour une idée quand tu n'es pas le chef ?",
+    "it": "Come ottieni sostegno per un'idea quando non sei il capo?",
+    "pt": "Como consegues apoio para uma ideia quando não és o chefe?",
+    "pt_BR": "Como você consegue apoio pra uma ideia quando não é o chefe?"
+   }
+  },
+  {
+   "id": "leadership-075",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How would you tell your manager you disagree with a decision?",
+    "de": "Wie würdest du deiner Führungskraft sagen, dass du mit einer Entscheidung nicht einverstanden bist?",
+    "es": "¿Cómo le dirías a tu jefe que no estás de acuerdo con una decisión?",
+    "fr": "Comment dirais-tu à ton manager que tu n'es pas d'accord avec une décision ?",
+    "it": "Come diresti al tuo responsabile che non sei d'accordo con una decisione?",
+    "pt": "Como dirias à tua chefia que não concordas com uma decisão?",
+    "pt_BR": "Como você diria ao seu gestor que discorda de uma decisão?"
+   }
+  },
+  {
+   "id": "leadership-076",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What was a big change you lived through, and what helped you adapt?",
+    "de": "Welche große Veränderung hast du erlebt, und was hat dir geholfen, dich anzupassen?",
+    "es": "¿Qué gran cambio has vivido y qué te ayudó a adaptarte?",
+    "fr": "Quel grand changement as-tu vécu, et qu'est-ce qui t'a aidé à t'adapter ?",
+    "it": "Quale grande cambiamento hai vissuto, e che cosa ti ha aiutato ad adattarti?",
+    "pt": "Que grande mudança viveste, e o que te ajudou a adaptar-te?",
+    "pt_BR": "Que grande mudança você viveu, e o que te ajudou a se adaptar?"
+   }
+  },
+  {
+   "id": "leadership-077",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How would you explain a change so that people want to join in?",
+    "de": "Wie würdest du eine Veränderung erklären, damit die Leute gern mitmachen?",
+    "es": "¿Cómo explicarías un cambio para que la gente quiera sumarse?",
+    "fr": "Comment expliquerais-tu un changement pour que les gens aient envie d'y participer ?",
+    "it": "Come spiegheresti un cambiamento perché le persone abbiano voglia di partecipare?",
+    "pt": "Como explicarias uma mudança para que as pessoas queiram aderir?",
+    "pt_BR": "Como você explicaria uma mudança pra que as pessoas queiram participar?"
+   }
+  },
+  {
+   "id": "leadership-078",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What have you learned from working with people from other cultures?",
+    "de": "Was hast du aus der Zusammenarbeit mit Menschen aus anderen Kulturen gelernt?",
+    "es": "¿Qué has aprendido trabajando con personas de otras culturas?",
+    "fr": "Qu'as-tu appris en travaillant avec des personnes d'autres cultures ?",
+    "it": "Che cosa hai imparato lavorando con persone di altre culture?",
+    "pt": "O que aprendeste a trabalhar com pessoas de outras culturas?",
+    "pt_BR": "O que você aprendeu trabalhando com pessoas de outras culturas?"
+   }
+  },
+  {
+   "id": "leadership-079",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How would you keep a remote team feeling connected?",
+    "de": "Wie würdest du dafür sorgen, dass sich ein Remote-Team verbunden fühlt?",
+    "es": "¿Cómo harías que un equipo remoto se sintiera unido?",
+    "fr": "Comment ferais-tu pour qu'une équipe à distance se sente soudée ?",
+    "it": "Come faresti sentire unito un team che lavora da remoto?",
+    "pt": "Como farias uma equipa remota sentir-se unida?",
+    "pt_BR": "Como você faria um time remoto se sentir conectado?"
+   }
+  },
+  {
+   "id": "leadership-080",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What kind of recognition means the most to you?",
+    "de": "Welche Art von Anerkennung bedeutet dir am meisten?",
+    "es": "¿Qué tipo de reconocimiento significa más para ti?",
+    "fr": "Quel genre de reconnaissance compte le plus pour toi ?",
+    "it": "Che tipo di riconoscimento significa di più per te?",
+    "pt": "Que tipo de reconhecimento significa mais para ti?",
+    "pt_BR": "Que tipo de reconhecimento significa mais pra você?"
+   }
+  },
+  {
+   "id": "leadership-081",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you find the real cause of a problem in a team?",
+    "de": "Wie findest du die eigentliche Ursache eines Problems im Team?",
+    "es": "¿Cómo encuentras la causa real de un problema en un equipo?",
+    "fr": "Comment trouves-tu la vraie cause d'un problème dans une équipe ?",
+    "it": "Come trovi la vera causa di un problema in un team?",
+    "pt": "Como descobres a verdadeira causa de um problema numa equipa?",
+    "pt_BR": "Como você descobre a causa real de um problema num time?"
+   }
+  },
+  {
+   "id": "leadership-082",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you take care of your energy when you lead others?",
+    "de": "Wie achtest du auf deine Energie, wenn du andere führst?",
+    "es": "¿Cómo cuidas tu energía cuando lideras a otras personas?",
+    "fr": "Comment prends-tu soin de ton énergie quand tu diriges les autres ?",
+    "it": "Come ti prendi cura della tua energia quando guidi gli altri?",
+    "pt": "Como cuidas da tua energia quando lideras outras pessoas?",
+    "pt_BR": "Como você cuida da sua energia quando lidera outras pessoas?"
+   }
+  },
+  {
+   "id": "leadership-083",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What would you do if a team member seemed less motivated than usual?",
+    "de": "Was würdest du tun, wenn ein Teammitglied weniger motiviert wirkt als sonst?",
+    "es": "¿Qué harías si un miembro del equipo pareciera menos motivado de lo habitual?",
+    "fr": "Que ferais-tu si un membre de l'équipe semblait moins motivé que d'habitude ?",
+    "it": "Che cosa faresti se un membro del team sembrasse meno motivato del solito?",
+    "pt": "O que farias se um membro da equipa parecesse menos motivado do que o habitual?",
+    "pt_BR": "O que você faria se alguém do time parecesse menos motivado que o normal?"
+   }
+  },
+  {
+   "id": "leadership-084",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you make sure a decision is understood by everyone?",
+    "de": "Wie stellst du sicher, dass eine Entscheidung von allen verstanden wird?",
+    "es": "¿Cómo te aseguras de que todos entiendan una decisión?",
+    "fr": "Comment t'assures-tu qu'une décision soit comprise par tous ?",
+    "it": "Come ti assicuri che una decisione sia capita da tutti?",
+    "pt": "Como garantes que uma decisão é compreendida por todos?",
+    "pt_BR": "Como você garante que uma decisão seja entendida por todos?"
+   }
+  },
+  {
+   "id": "leadership-085",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you give feedback to someone more experienced than you?",
+    "de": "Wie gibst du jemandem Feedback, der erfahrener ist als du?",
+    "es": "¿Cómo le das feedback a alguien con más experiencia que tú?",
+    "fr": "Comment donnes-tu du feedback à quelqu'un de plus expérimenté que toi ?",
+    "it": "Come dai un feedback a qualcuno con più esperienza di te?",
+    "pt": "Como dás feedback a alguém com mais experiência do que tu?",
+    "pt_BR": "Como você dá feedback pra alguém com mais experiência que você?"
+   }
+  },
+  {
+   "id": "leadership-086",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What would the vision statement for your dream team say?",
+    "de": "Was würde im Leitbild deines Traumteams stehen?",
+    "es": "¿Qué diría la declaración de visión de tu equipo soñado?",
+    "fr": "Que dirait la vision de l'équipe de tes rêves ?",
+    "it": "Che cosa direbbe la visione del team dei tuoi sogni?",
+    "pt": "O que diria a declaração de visão da equipa dos teus sonhos?",
+    "pt_BR": "O que diria a declaração de visão do time dos seus sonhos?"
+   }
+  },
+  {
+   "id": "leadership-087",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you help a first-time manager in their new role?",
+    "de": "Wie würdest du einer neuen Führungskraft in ihrer ersten Führungsrolle helfen?",
+    "es": "¿Cómo ayudarías a alguien que es jefe por primera vez en su nuevo puesto?",
+    "fr": "Comment aiderais-tu un manager débutant dans son nouveau rôle ?",
+    "it": "Come aiuteresti un manager alle prime armi nel suo nuovo ruolo?",
+    "pt": "Como ajudarias alguém que é chefe pela primeira vez no seu novo papel?",
+    "pt_BR": "Como você ajudaria alguém que vai ser gestor pela primeira vez?"
+   }
+  },
+  {
+   "id": "leadership-088",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which behaviours would you reward to build a strong team culture?",
+    "de": "Welche Verhaltensweisen würdest du belohnen, um eine starke Teamkultur aufzubauen?",
+    "es": "¿Qué comportamientos premiarías para construir una cultura de equipo sólida?",
+    "fr": "Quels comportements récompenserais-tu pour bâtir une culture d'équipe forte ?",
+    "it": "Quali comportamenti premieresti per costruire una forte cultura di team?",
+    "pt": "Que comportamentos recompensarias para construir uma cultura de equipa forte?",
+    "pt_BR": "Que comportamentos você recompensaria pra construir uma cultura de time forte?"
+   }
+  },
+  {
+   "id": "leadership-089",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you lead a team calmly through a sudden crisis?",
+    "de": "Wie würdest du ein Team ruhig durch eine plötzliche Krise führen?",
+    "es": "¿Cómo guiarías con calma a un equipo en una crisis repentina?",
+    "fr": "Comment mènerais-tu une équipe avec calme à travers une crise soudaine ?",
+    "it": "Come guideresti con calma un team in una crisi improvvisa?",
+    "pt": "Como conduzirias uma equipa com calma durante uma crise repentina?",
+    "pt_BR": "Como você conduziria um time com calma numa crise repentina?"
+   }
+  },
+  {
+   "id": "leadership-090",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What would you do if you had to choose between a quick win and doing the right thing?",
+    "de": "Was würdest du tun, wenn du zwischen einem schnellen Erfolg und dem Richtigen wählen müsstest?",
+    "es": "¿Qué harías si tuvieras que elegir entre un éxito rápido y hacer lo correcto?",
+    "fr": "Que ferais-tu si tu devais choisir entre un succès rapide et faire ce qui est juste ?",
+    "it": "Che cosa faresti se dovessi scegliere tra un successo rapido e fare la cosa giusta?",
+    "pt": "O que farias se tivesses de escolher entre um sucesso rápido e fazer o que está certo?",
+    "pt_BR": "O que você faria se tivesse que escolher entre um ganho rápido e fazer o que é certo?"
+   }
+  },
+  {
+   "id": "leadership-091",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you tell a story to inspire a team before a big project?",
+    "de": "Wie würdest du vor einem großen Projekt mit einer Geschichte dein Team inspirieren?",
+    "es": "¿Cómo contarías una historia para inspirar a un equipo antes de un gran proyecto?",
+    "fr": "Comment raconterais-tu une histoire pour inspirer une équipe avant un grand projet ?",
+    "it": "Come racconteresti una storia per ispirare un team prima di un grande progetto?",
+    "pt": "Como contarias uma história para inspirar uma equipa antes de um grande projeto?",
+    "pt_BR": "Como você contaria uma história pra inspirar um time antes de um grande projeto?"
+   }
+  },
+  {
+   "id": "leadership-092",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you encourage a team to experiment without fear of failing?",
+    "de": "Wie würdest du ein Team ermutigen, ohne Angst vor dem Scheitern zu experimentieren?",
+    "es": "¿Cómo animarías a un equipo a experimentar sin miedo a fallar?",
+    "fr": "Comment encouragerais-tu une équipe à expérimenter sans peur d'échouer ?",
+    "it": "Come incoraggeresti un team a sperimentare senza paura di sbagliare?",
+    "pt": "Como encorajarias uma equipa a experimentar sem medo de falhar?",
+    "pt_BR": "Como você incentivaria um time a experimentar sem medo de errar?"
+   }
+  },
+  {
+   "id": "leadership-093",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What changes when a team grows from five people to fifty?",
+    "de": "Was ändert sich, wenn ein Team von fünf auf fünfzig Leute wächst?",
+    "es": "¿Qué cambia cuando un equipo pasa de cinco a cincuenta personas?",
+    "fr": "Qu'est-ce qui change quand une équipe passe de cinq à cinquante personnes ?",
+    "it": "Che cosa cambia quando un team passa da cinque a cinquanta persone?",
+    "pt": "O que muda quando uma equipa passa de cinco para cinquenta pessoas?",
+    "pt_BR": "O que muda quando um time cresce de cinco pra cinquenta pessoas?"
+   }
+  },
+  {
+   "id": "leadership-094",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you prepare someone to take over your role one day?",
+    "de": "Wie würdest du jemanden darauf vorbereiten, eines Tages deine Rolle zu übernehmen?",
+    "es": "¿Cómo prepararías a alguien para asumir tu puesto algún día?",
+    "fr": "Comment préparerais-tu quelqu'un à reprendre ton rôle un jour ?",
+    "it": "Come prepareresti qualcuno a prendere il tuo ruolo un giorno?",
+    "pt": "Como prepararias alguém para assumir o teu papel um dia?",
+    "pt_BR": "Como você prepararia alguém pra assumir o seu papel um dia?"
+   }
+  },
+  {
+   "id": "leadership-095",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What would you like people to remember about working with you?",
+    "de": "Was sollen Menschen in Erinnerung behalten, wenn sie an die Zusammenarbeit mit dir denken?",
+    "es": "¿Qué te gustaría que la gente recordara de trabajar contigo?",
+    "fr": "Que voudrais-tu que les gens retiennent de leur travail avec toi ?",
+    "it": "Che cosa vorresti che le persone ricordassero del lavoro con te?",
+    "pt": "O que gostavas que as pessoas recordassem de trabalhar contigo?",
+    "pt_BR": "O que você gostaria que as pessoas lembrassem de trabalhar com você?"
+   }
+  },
+  {
+   "id": "leadership-096",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you balance listening to everyone with making a clear decision?",
+    "de": "Wie findest du die Balance zwischen allen zuhören und klar entscheiden?",
+    "es": "¿Cómo equilibras escuchar a todos con tomar una decisión clara?",
+    "fr": "Comment trouves-tu l'équilibre entre écouter tout le monde et décider clairement ?",
+    "it": "Come bilanci l'ascolto di tutti con il prendere una decisione chiara?",
+    "pt": "Como equilibras ouvir toda a gente com tomar uma decisão clara?",
+    "pt_BR": "Como você equilibra ouvir todo mundo e tomar uma decisão clara?"
+   }
+  },
+  {
+   "id": "leadership-097",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you build a speak-up culture where problems are raised early?",
+    "de": "Wie würdest du eine Kultur aufbauen, in der Probleme früh angesprochen werden?",
+    "es": "¿Cómo crearías una cultura en la que los problemas se planteen pronto?",
+    "fr": "Comment bâtirais-tu une culture où l'on signale les problèmes tôt ?",
+    "it": "Come costruiresti una cultura in cui i problemi vengono segnalati presto?",
+    "pt": "Como construirias uma cultura em que os problemas são levantados cedo?",
+    "pt_BR": "Como você construiria uma cultura em que os problemas são levantados cedo?"
+   }
+  },
+  {
+   "id": "leadership-098",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which leadership principle would you write first in your own playbook?",
+    "de": "Welchen Führungsgrundsatz würdest du als Erstes in dein eigenes Handbuch schreiben?",
+    "es": "¿Qué principio de liderazgo escribirías primero en tu propio manual?",
+    "fr": "Quel principe de leadership écrirais-tu en premier dans ton propre guide ?",
+    "it": "Quale principio di leadership scriveresti per primo nel tuo manuale personale?",
+    "pt": "Que princípio de liderança escreverias primeiro no teu próprio manual?",
+    "pt_BR": "Qual princípio de liderança você escreveria primeiro no seu próprio manual?"
+   }
+  },
+  {
+   "id": "leadership-099",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How has your idea of leadership changed over the years?",
+    "de": "Wie hat sich dein Bild von Führung im Laufe der Jahre verändert?",
+    "es": "¿Cómo ha cambiado tu idea del liderazgo con los años?",
+    "fr": "Comment ta vision du leadership a-t-elle évolué au fil des années ?",
+    "it": "Come è cambiata nel tempo la tua idea di leadership?",
+    "pt": "Como mudou a tua ideia de liderança ao longo dos anos?",
+    "pt_BR": "Como a sua ideia de liderança mudou ao longo dos anos?"
+   }
+  },
+  {
+   "id": "leadership-100",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you mentor someone with great potential who doubts themselves?",
+    "de": "Wie würdest du jemanden mit großem Potenzial begleiten, der an sich zweifelt?",
+    "es": "¿Cómo harías de mentor de alguien con gran potencial que duda de sí mismo?",
+    "fr": "Comment accompagnerais-tu quelqu'un au fort potentiel qui doute de lui ?",
+    "it": "Come faresti da mentore a qualcuno con grande potenziale che dubita di sé?",
+    "pt": "Como serias mentor de alguém com grande potencial que duvida de si próprio?",
+    "pt_BR": "Como você seria mentor de alguém com grande potencial que duvida de si mesmo?"
+   }
+  }
+ ]
+}

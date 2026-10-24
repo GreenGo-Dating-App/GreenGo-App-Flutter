@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 81,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "At the restaurant: ordering a meal",
+     "g": "Order a full meal at a restaurant, from the table to the bill.",
+     "p": [
+      "Arrive: A table for two, please. Ask: Can I see the menu, please?",
+      "Order with I'll have... or I'd like...: I'll have the soup and the fish.",
+      "Finish: Could we have the bill, please? Everything was delicious!"
+     ],
+     "q": "What would you order in an English restaurant? Start with I'll have...",
+     "c": "Write a restaurant dialogue from arriving to paying, with at least six lines."
+    },
+    "de": {
+     "t": "Im Restaurant: ein Essen bestellen",
+     "g": "Du bestellst ein ganzes Essen, vom Tisch bis zur Rechnung.",
+     "p": [
+      "Ankommen: A table for two, please. Fragen: Can I see the menu, please?",
+      "Bestell mit I'll have... oder I'd like...: I'll have the soup and the fish.",
+      "Zum Schluss: Could we have the bill, please? Everything was delicious!"
+     ],
+     "q": "Was würdest du in einem englischen Restaurant bestellen? Beginne mit I'll have...",
+     "c": "Schreib einen Restaurantdialog vom Ankommen bis zum Bezahlen mit mindestens sechs Zeilen."
+    },
+    "es": {
+     "t": "En el restaurante: pedir la comida",
+     "g": "Pide una comida completa, desde la mesa hasta la cuenta.",
+     "p": [
+      "Al llegar: A table for two, please. Pregunta: Can I see the menu, please?",
+      "Pide con I'll have... o I'd like...: I'll have the soup and the fish.",
+      "Al final: Could we have the bill, please? Everything was delicious!"
+     ],
+     "q": "¿Qué pedirías en un restaurante inglés? Empieza con I'll have...",
+     "c": "Escribe un diálogo de restaurante desde la llegada hasta el pago, con seis líneas o más."
+    },
+    "fr": {
+     "t": "Au restaurant : commander un repas",
+     "g": "Commander un repas complet, de la table à l'addition.",
+     "p": [
+      "En arrivant : A table for two, please. Demande : Can I see the menu, please?",
+      "Commande avec I'll have... ou I'd like... : I'll have the soup and the fish.",
+      "Pour finir : Could we have the bill, please? Everything was delicious!"
+     ],
+     "q": "Que commanderais-tu dans un restaurant anglais ? Commence par I'll have...",
+     "c": "Écris un dialogue au restaurant, de l'arrivée à l'addition, d'au moins six répliques."
+    },
+    "it": {
+     "t": "Al ristorante: ordinare un pasto",
+     "g": "Ordini un pasto completo, dal tavolo al conto.",
+     "p": [
+      "All'arrivo: A table for two, please. Chiedi: Can I see the menu, please?",
+      "Ordina con I'll have... o I'd like...: I'll have the soup and the fish.",
+      "Alla fine: Could we have the bill, please? Everything was delicious!"
+     ],
+     "q": "Cosa ordineresti in un ristorante inglese? Comincia con I'll have...",
+     "c": "Scrivi un dialogo al ristorante dall'arrivo al conto, con almeno sei battute."
+    },
+    "pt": {
+     "t": "No restaurante: pedir uma refeição",
+     "g": "Pede uma refeição completa, da mesa à conta.",
+     "p": [
+      "À chegada: A table for two, please. Pergunta: Can I see the menu, please?",
+      "Pede com I'll have... ou I'd like...: I'll have the soup and the fish.",
+      "No fim: Could we have the bill, please? Everything was delicious!"
+     ],
+     "q": "O que pedirias num restaurante inglês? Começa com I'll have...",
+     "c": "Escreve um diálogo de restaurante da chegada ao pagamento, com pelo menos seis falas."
+    },
+    "pt_BR": {
+     "t": "No restaurante: pedindo uma refeição",
+     "g": "Peça uma refeição completa, da mesa até a conta.",
+     "p": [
+      "Ao chegar: A table for two, please. Pergunte: Can I see the menu, please?",
+      "Peça com I'll have... ou I'd like...: I'll have the soup and the fish.",
+      "No final: Could we have the bill, please? Everything was delicious!"
+     ],
+     "q": "O que você pediria num restaurante inglês? Comece com I'll have...",
+     "c": "Escreva um diálogo de restaurante da chegada ao pagamento, com pelo menos seis falas."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "A table for two, please.",
+      "ex": "Good evening! A table for two, please."
+     },
+     {
+      "w": "the menu",
+      "ex": "Can I see the menu, please?"
+     },
+     {
+      "w": "I'll have...",
+      "ex": "I'll have the chicken salad."
+     },
+     {
+      "w": "a starter",
+      "ex": "For a starter, I'd like the soup."
+     },
+     {
+      "w": "a dessert",
+      "ex": "Do you have any desserts?"
+     },
+     {
+      "w": "the bill",
+      "ex": "Could we have the bill, please?"
+     }
+    ],
+    "gram": "Order with I'll have + food or I'd like + food. Ask politely: Could we have the bill, please?"
+   }
+  },
+  {
+   "d": 82,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Polite requests: Can I have...?",
+     "g": "Ask for things politely with can, could and may.",
+     "p": [
+      "Can I have a glass of water? is friendly and common.",
+      "Could you help me, please? is a little more polite. May I sit here? is very formal.",
+      "Always add please, and say thank you or thanks a lot after."
+     ],
+     "q": "How would you ask a stranger to take a photo of you? Make it polite.",
+     "c": "Write six polite requests for a café, a shop and a train, two for each place."
+    },
+    "de": {
+     "t": "Höfliche Bitten: Can I have...?",
+     "g": "Du bittest höflich mit can, could und may um etwas.",
+     "p": [
+      "Can I have a glass of water? ist freundlich und üblich.",
+      "Could you help me, please? ist etwas höflicher. May I sit here? ist sehr förmlich.",
+      "Sag immer please und danach thank you oder thanks a lot."
+     ],
+     "q": "Wie bittest du eine fremde Person höflich, ein Foto von dir zu machen?",
+     "c": "Schreib sechs höfliche Bitten für Café, Laden und Zug, je zwei pro Ort."
+    },
+    "es": {
+     "t": "Peticiones educadas: Can I have...?",
+     "g": "Pide cosas con educación usando can, could y may.",
+     "p": [
+      "Can I have a glass of water? es amable y muy común.",
+      "Could you help me, please? es algo más educado. May I sit here? es muy formal.",
+      "Añade siempre please y después thank you o thanks a lot."
+     ],
+     "q": "¿Cómo pedirías a un desconocido que te haga una foto? Hazlo con educación.",
+     "c": "Escribe seis peticiones educadas para un café, una tienda y un tren, dos por lugar."
+    },
+    "fr": {
+     "t": "Demandes polies : Can I have...?",
+     "g": "Demander poliment avec can, could et may.",
+     "p": [
+      "Can I have a glass of water? est aimable et très courant.",
+      "Could you help me, please? est un peu plus poli. May I sit here? est très formel.",
+      "Ajoute toujours please, puis thank you ou thanks a lot."
+     ],
+     "q": "Comment demanderais-tu poliment à un inconnu de te prendre en photo ?",
+     "c": "Écris six demandes polies pour un café, un magasin et un train, deux pour chaque lieu."
+    },
+    "it": {
+     "t": "Richieste gentili: Can I have...?",
+     "g": "Chiedi le cose con garbo usando can, could e may.",
+     "p": [
+      "Can I have a glass of water? è cordiale e molto comune.",
+      "Could you help me, please? è un po' più gentile. May I sit here? è molto formale.",
+      "Aggiungi sempre please e poi thank you o thanks a lot."
+     ],
+     "q": "Come chiederesti con gentilezza a uno sconosciuto di farti una foto?",
+     "c": "Scrivi sei richieste gentili per un bar, un negozio e un treno, due per posto."
+    },
+    "pt": {
+     "t": "Pedidos educados: Can I have...?",
+     "g": "Pede coisas com educação usando can, could e may.",
+     "p": [
+      "Can I have a glass of water? é simpático e muito comum.",
+      "Could you help me, please? é um pouco mais educado. May I sit here? é muito formal.",
+      "Junta sempre please e depois thank you ou thanks a lot."
+     ],
+     "q": "Como pedirias a um desconhecido que te tirasse uma fotografia? Sê educado.",
+     "c": "Escreve seis pedidos educados para um café, uma loja e um comboio, dois por sítio."
+    },
+    "pt_BR": {
+     "t": "Pedidos educados: Can I have...?",
+     "g": "Peça coisas com educação usando can, could e may.",
+     "p": [
+      "Can I have a glass of water? é simpático e muito comum.",
+      "Could you help me, please? é um pouco mais educado. May I sit here? é bem formal.",
+      "Coloque sempre please e depois thank you ou thanks a lot."
+     ],
+     "q": "Como você pediria a um desconhecido para tirar uma foto sua? Seja educado.",
+     "c": "Escreva seis pedidos educados para um café, uma loja e um trem, dois para cada lugar."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Can I have...?",
+      "ex": "Can I have a glass of water, please?"
+     },
+     {
+      "w": "Could you...?",
+      "ex": "Could you open the window, please?"
+     },
+     {
+      "w": "May I...?",
+      "ex": "May I sit here?"
+     },
+     {
+      "w": "please",
+      "ex": "A coffee, please."
+     },
+     {
+      "w": "Thanks a lot.",
+      "ex": "Thanks a lot for your help!"
+     },
+     {
+      "w": "Of course.",
+      "ex": "Can I use your pen? Of course."
+     }
+    ],
+    "gram": "Requests: Can I have + thing? Could you + base verb? (more polite). May I + base verb? (formal). Add please."
+   }
+  },
+  {
+   "d": 83,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Imperatives: sit down, please",
+     "g": "Give simple instructions, directions and warnings.",
+     "p": [
+      "Use the base verb with no subject: Open the door. Sit down, please.",
+      "Negative: Don't plus verb: Don't touch! Don't worry.",
+      "Warnings and kind wishes: Be careful! Have fun! Enjoy your meal!"
+     ],
+     "q": "What instructions do you give a friend who visits your home for the first time?",
+     "c": "Write a simple recipe or routine with six imperatives, including one with don't."
+    },
+    "de": {
+     "t": "Imperativ: sit down, please",
+     "g": "Du gibst einfache Anweisungen, Wegbeschreibungen und Warnungen.",
+     "p": [
+      "Grundform ohne Subjekt: Open the door. Sit down, please.",
+      "Verneinung: Don't plus Verb: Don't touch! Don't worry.",
+      "Warnungen und nette Wünsche: Be careful! Have fun! Enjoy your meal!"
+     ],
+     "q": "Welche Anweisungen gibst du Freunden, die zum ersten Mal zu dir kommen?",
+     "c": "Schreib ein einfaches Rezept oder eine Routine mit sechs Imperativen, einer mit don't."
+    },
+    "es": {
+     "t": "Imperativos: sit down, please",
+     "g": "Da instrucciones, indicaciones y avisos sencillos.",
+     "p": [
+      "Usa el verbo base sin sujeto: Open the door. Sit down, please.",
+      "Negativo: Don't más verbo: Don't touch! Don't worry.",
+      "Avisos y buenos deseos: Be careful! Have fun! Enjoy your meal!"
+     ],
+     "q": "¿Qué instrucciones le das a un amigo que visita tu casa por primera vez?",
+     "c": "Escribe una receta o rutina sencilla con seis imperativos, uno con don't."
+    },
+    "fr": {
+     "t": "L'impératif : sit down, please",
+     "g": "Donner des consignes, indications et avertissements simples.",
+     "p": [
+      "Base verbale sans sujet : Open the door. Sit down, please.",
+      "Négation : Don't plus verbe : Don't touch! Don't worry.",
+      "Avertissements et souhaits : Be careful! Have fun! Enjoy your meal!"
+     ],
+     "q": "Quelles consignes donnes-tu à un ami qui vient chez toi pour la première fois ?",
+     "c": "Écris une recette ou une routine simple avec six impératifs, dont un avec don't."
+    },
+    "it": {
+     "t": "L'imperativo: sit down, please",
+     "g": "Dai istruzioni, indicazioni e avvertimenti semplici.",
+     "p": [
+      "Usa il verbo base senza soggetto: Open the door. Sit down, please.",
+      "Negativo: Don't più verbo: Don't touch! Don't worry.",
+      "Avvisi e auguri: Be careful! Have fun! Enjoy your meal!"
+     ],
+     "q": "Che istruzioni dai a un amico che viene a casa tua per la prima volta?",
+     "c": "Scrivi una ricetta o una routine semplice con sei imperativi, uno con don't."
+    },
+    "pt": {
+     "t": "O imperativo: sit down, please",
+     "g": "Dá instruções, indicações e avisos simples.",
+     "p": [
+      "Usa o verbo base sem sujeito: Open the door. Sit down, please.",
+      "Negativa: Don't mais verbo: Don't touch! Don't worry.",
+      "Avisos e votos: Be careful! Have fun! Enjoy your meal!"
+     ],
+     "q": "Que instruções dás a um amigo que visita a tua casa pela primeira vez?",
+     "c": "Escreve uma receita ou rotina simples com seis imperativos, um deles com don't."
+    },
+    "pt_BR": {
+     "t": "O imperativo: sit down, please",
+     "g": "Dê instruções, indicações e avisos simples.",
+     "p": [
+      "Use o verbo base sem sujeito: Open the door. Sit down, please.",
+      "Negativa: Don't mais verbo: Don't touch! Don't worry.",
+      "Avisos e votos: Be careful! Have fun! Enjoy your meal!"
+     ],
+     "q": "Que instruções você dá a um amigo que visita sua casa pela primeira vez?",
+     "c": "Escreva uma receita ou rotina simples com seis imperativos, um deles com don't."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Sit down, please.",
+      "ex": "Come in and sit down, please."
+     },
+     {
+      "w": "Open the door.",
+      "ex": "Open the door, it's hot in here."
+     },
+     {
+      "w": "Don't touch!",
+      "ex": "Don't touch the plate, it's hot!"
+     },
+     {
+      "w": "Don't worry.",
+      "ex": "Don't worry, everything is fine."
+     },
+     {
+      "w": "Be careful!",
+      "ex": "Be careful, the floor is wet."
+     },
+     {
+      "w": "Have fun!",
+      "ex": "Have fun at the concert!"
+     }
+    ],
+    "gram": "Imperative: base verb with no subject (Sit down). Negative: Don't + base verb (Don't run). Add please to be polite."
+   }
+  },
+  {
+   "d": 84,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Question words: who, what, where",
+     "g": "Build your own questions with the main question words.",
+     "p": [
+      "Who for people, what for things, where for places, when for time.",
+      "Why asks for a reason (answer with because), how asks about the way or manner.",
+      "Which is for a choice: Which colour do you prefer, red or blue?"
+     ],
+     "q": "Ask me three questions with three different question words. I'll answer!",
+     "c": "Write seven questions, one with each word: who, what, where, when, why, how, which."
+    },
+    "de": {
+     "t": "Fragewörter: who, what, where",
+     "g": "Du baust eigene Fragen mit den wichtigsten Fragewörtern.",
+     "p": [
+      "Who für Personen, what für Dinge, where für Orte, when für Zeit.",
+      "Why fragt nach dem Grund (Antwort mit because), how nach Art und Weise.",
+      "Which für eine Auswahl: Which colour do you prefer, red or blue?"
+     ],
+     "q": "Stell mir drei Fragen mit drei verschiedenen Fragewörtern. Ich antworte!",
+     "c": "Schreib sieben Fragen, je eine mit who, what, where, when, why, how, which."
+    },
+    "es": {
+     "t": "Palabras interrogativas: who, what, where",
+     "g": "Construye tus propias preguntas con las palabras interrogativas.",
+     "p": [
+      "Who para personas, what para cosas, where para lugares, when para tiempo.",
+      "Why pide un motivo (se responde con because), how pregunta por la manera.",
+      "Which es para elegir: Which colour do you prefer, red or blue?"
+     ],
+     "q": "Hazme tres preguntas con tres palabras interrogativas distintas. ¡Te respondo!",
+     "c": "Escribe siete preguntas, una con cada palabra: who, what, where, when, why, how, which."
+    },
+    "fr": {
+     "t": "Mots interrogatifs : who, what, where",
+     "g": "Construire tes propres questions avec les mots interrogatifs.",
+     "p": [
+      "Who pour les personnes, what pour les choses, where pour les lieux, when pour le temps.",
+      "Why demande une raison (réponse avec because), how demande la manière.",
+      "Which sert à choisir : Which colour do you prefer, red or blue?"
+     ],
+     "q": "Pose-moi trois questions avec trois mots interrogatifs différents. Je réponds !",
+     "c": "Écris sept questions, une avec chaque mot : who, what, where, when, why, how, which."
+    },
+    "it": {
+     "t": "Parole interrogative: who, what, where",
+     "g": "Costruisci le tue domande con le parole interrogative.",
+     "p": [
+      "Who per le persone, what per le cose, where per i luoghi, when per il tempo.",
+      "Why chiede un motivo (si risponde con because), how chiede il modo.",
+      "Which serve per scegliere: Which colour do you prefer, red or blue?"
+     ],
+     "q": "Fammi tre domande con tre parole interrogative diverse. Ti rispondo!",
+     "c": "Scrivi sette domande, una con ogni parola: who, what, where, when, why, how, which."
+    },
+    "pt": {
+     "t": "Palavras interrogativas: who, what, where",
+     "g": "Constrói as tuas próprias perguntas com as palavras interrogativas.",
+     "p": [
+      "Who para pessoas, what para coisas, where para lugares, when para tempo.",
+      "Why pede uma razão (responde-se com because), how pergunta a maneira.",
+      "Which serve para escolher: Which colour do you prefer, red or blue?"
+     ],
+     "q": "Faz-me três perguntas com três palavras interrogativas diferentes. Eu respondo!",
+     "c": "Escreve sete perguntas, uma com cada palavra: who, what, where, when, why, how, which."
+    },
+    "pt_BR": {
+     "t": "Palavras interrogativas: who, what, where",
+     "g": "Monte suas próprias perguntas com as palavras interrogativas.",
+     "p": [
+      "Who para pessoas, what para coisas, where para lugares, when para tempo.",
+      "Why pede um motivo (responde-se com because), how pergunta o jeito.",
+      "Which serve para escolher: Which colour do you prefer, red or blue?"
+     ],
+     "q": "Me faça três perguntas com três palavras interrogativas diferentes. Eu respondo!",
+     "c": "Escreva sete perguntas, uma com cada palavra: who, what, where, when, why, how, which."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Who...?",
+      "ex": "Who is your best friend?"
+     },
+     {
+      "w": "What...?",
+      "ex": "What do you do on Sundays?"
+     },
+     {
+      "w": "Where...?",
+      "ex": "Where do you live?"
+     },
+     {
+      "w": "When...?",
+      "ex": "When is your English class?"
+     },
+     {
+      "w": "Why...?",
+      "ex": "Why are you learning English?"
+     },
+     {
+      "w": "How...?",
+      "ex": "How do you get to work?"
+     }
+    ],
+    "gram": "Question word + do/does/did or be + subject: Where do you live? Why are you here? Which one do you want?"
+   }
+  },
+  {
+   "d": 85,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Linking words: and, but, because",
+     "g": "Connect ideas to make longer, more natural sentences.",
+     "p": [
+      "And adds an idea, but shows a contrast: I like tea, but I don't like coffee.",
+      "Or gives a choice: Tea or coffee? So shows a result: I was tired, so I went to bed.",
+      "Because gives a reason: I'm happy because it's Friday."
+     ],
+     "q": "Tell me about your day in one long sentence with and, but and because.",
+     "c": "Write five sentences about yourself, each with a different linking word."
+    },
+    "de": {
+     "t": "Bindewörter: and, but, because",
+     "g": "Du verbindest Ideen zu längeren, natürlicheren Sätzen.",
+     "p": [
+      "And fügt hinzu, but zeigt einen Gegensatz: I like tea, but I don't like coffee.",
+      "Or bietet eine Wahl: Tea or coffee? So zeigt eine Folge: I was tired, so I went to bed.",
+      "Because nennt einen Grund: I'm happy because it's Friday."
+     ],
+     "q": "Erzähl mir von deinem Tag in einem langen Satz mit and, but und because.",
+     "c": "Schreib fünf Sätze über dich, jeder mit einem anderen Bindewort."
+    },
+    "es": {
+     "t": "Conectores: and, but, because",
+     "g": "Une ideas para hacer frases más largas y naturales.",
+     "p": [
+      "And añade, but contrasta: I like tea, but I don't like coffee.",
+      "Or da a elegir: Tea or coffee? So indica resultado: I was tired, so I went to bed.",
+      "Because da un motivo: I'm happy because it's Friday."
+     ],
+     "q": "Cuéntame tu día en una frase larga con and, but y because.",
+     "c": "Escribe cinco frases sobre ti, cada una con un conector distinto."
+    },
+    "fr": {
+     "t": "Mots de liaison : and, but, because",
+     "g": "Relier des idées pour faire des phrases plus longues et naturelles.",
+     "p": [
+      "And ajoute, but oppose : I like tea, but I don't like coffee.",
+      "Or propose un choix : Tea or coffee? So indique une conséquence : I was tired, so I went to bed.",
+      "Because donne une raison : I'm happy because it's Friday."
+     ],
+     "q": "Raconte-moi ta journée en une longue phrase avec and, but et because.",
+     "c": "Écris cinq phrases sur toi, chacune avec un mot de liaison différent."
+    },
+    "it": {
+     "t": "Connettivi: and, but, because",
+     "g": "Colleghi le idee per frasi più lunghe e naturali.",
+     "p": [
+      "And aggiunge, but contrappone: I like tea, but I don't like coffee.",
+      "Or offre una scelta: Tea or coffee? So indica una conseguenza: I was tired, so I went to bed.",
+      "Because dà un motivo: I'm happy because it's Friday."
+     ],
+     "q": "Raccontami la tua giornata in una frase lunga con and, but e because.",
+     "c": "Scrivi cinque frasi su di te, ognuna con un connettivo diverso."
+    },
+    "pt": {
+     "t": "Conectores: and, but, because",
+     "g": "Liga ideias para fazer frases mais longas e naturais.",
+     "p": [
+      "And junta, but contrasta: I like tea, but I don't like coffee.",
+      "Or dá uma escolha: Tea or coffee? So mostra o resultado: I was tired, so I went to bed.",
+      "Because dá uma razão: I'm happy because it's Friday."
+     ],
+     "q": "Conta-me o teu dia numa frase longa com and, but e because.",
+     "c": "Escreve cinco frases sobre ti, cada uma com um conector diferente."
+    },
+    "pt_BR": {
+     "t": "Conectivos: and, but, because",
+     "g": "Ligue ideias para fazer frases mais longas e naturais.",
+     "p": [
+      "And soma, but contrasta: I like tea, but I don't like coffee.",
+      "Or dá uma escolha: Tea or coffee? So mostra o resultado: I was tired, so I went to bed.",
+      "Because dá um motivo: I'm happy because it's Friday."
+     ],
+     "q": "Me conte seu dia numa frase longa com and, but e because.",
+     "c": "Escreva cinco frases sobre você, cada uma com um conectivo diferente."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "and",
+      "ex": "I have a brother and a sister."
+     },
+     {
+      "w": "but",
+      "ex": "The hotel was small, but it was clean."
+     },
+     {
+      "w": "or",
+      "ex": "Do you want pizza or pasta?"
+     },
+     {
+      "w": "so",
+      "ex": "It was raining, so we stayed at home."
+     },
+     {
+      "w": "because",
+      "ex": "I'm learning English because I love travelling."
+     },
+     {
+      "w": "also",
+      "ex": "I play guitar. I also sing."
+     }
+    ],
+    "gram": "Join two ideas: and (add), but (contrast), or (choice), so (result), because (reason). Use a comma before but and so."
+   }
+  },
+  {
+   "d": 86,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Writing a short message",
+     "g": "Write quick, friendly texts and notes in English.",
+     "p": [
+      "Start simply: Hi Sam! or Hello Anna, and get to the point fast.",
+      "Short phrases are fine in messages: See you at six! Running late, sorry!",
+      "End with a friendly close: Thanks!, Love, Ana or Talk soon!"
+     ],
+     "q": "Send me a short message to invite me for a coffee tomorrow.",
+     "c": "Write three short messages: one to say thank you, one to change a plan, one to say you're late."
+    },
+    "de": {
+     "t": "Eine kurze Nachricht schreiben",
+     "g": "Du schreibst kurze, freundliche Nachrichten und Notizen auf Englisch.",
+     "p": [
+      "Beginne einfach: Hi Sam! oder Hello Anna, und komm schnell zur Sache.",
+      "Kurze Sätze sind in Nachrichten okay: See you at six! Running late, sorry!",
+      "Beende freundlich: Thanks!, Love, Ana oder Talk soon!"
+     ],
+     "q": "Schick mir eine kurze Nachricht und lad mich morgen auf einen Kaffee ein.",
+     "c": "Schreib drei Nachrichten: eine zum Danken, eine zum Plan ändern, eine wegen Verspätung."
+    },
+    "es": {
+     "t": "Escribir un mensaje corto",
+     "g": "Escribe mensajes y notas rápidas y amables en inglés.",
+     "p": [
+      "Empieza sencillo: Hi Sam! o Hello Anna, y ve al grano.",
+      "En mensajes valen frases cortas: See you at six! Running late, sorry!",
+      "Termina con cariño: Thanks!, Love, Ana o Talk soon!"
+     ],
+     "q": "Mándame un mensaje corto para invitarme a un café mañana.",
+     "c": "Escribe tres mensajes: uno para dar las gracias, otro para cambiar un plan y otro porque llegas tarde."
+    },
+    "fr": {
+     "t": "Écrire un petit message",
+     "g": "Écrire des textos et des mots rapides et sympas en anglais.",
+     "p": [
+      "Commence simplement : Hi Sam! ou Hello Anna, et va droit au but.",
+      "Les phrases courtes passent bien : See you at six! Running late, sorry!",
+      "Termine gentiment : Thanks!, Love, Ana ou Talk soon!"
+     ],
+     "q": "Envoie-moi un petit message pour m'inviter à prendre un café demain.",
+     "c": "Écris trois messages : un pour remercier, un pour changer un plan, un pour dire que tu es en retard."
+    },
+    "it": {
+     "t": "Scrivere un messaggio breve",
+     "g": "Scrivi messaggi e biglietti veloci e cordiali in inglese.",
+     "p": [
+      "Comincia semplice: Hi Sam! o Hello Anna, e vai subito al punto.",
+      "Nei messaggi vanno bene frasi brevi: See you at six! Running late, sorry!",
+      "Chiudi con calore: Thanks!, Love, Ana o Talk soon!"
+     ],
+     "q": "Mandami un breve messaggio per invitarmi a un caffè domani.",
+     "c": "Scrivi tre messaggi: uno per ringraziare, uno per cambiare un piano, uno perché sei in ritardo."
+    },
+    "pt": {
+     "t": "Escrever uma mensagem curta",
+     "g": "Escreve mensagens e bilhetes rápidos e simpáticos em inglês.",
+     "p": [
+      "Começa de forma simples: Hi Sam! ou Hello Anna, e vai direto ao assunto.",
+      "Nas mensagens, frases curtas estão bem: See you at six! Running late, sorry!",
+      "Acaba com simpatia: Thanks!, Love, Ana ou Talk soon!"
+     ],
+     "q": "Manda-me uma mensagem curta a convidar-me para um café amanhã.",
+     "c": "Escreve três mensagens: uma de agradecimento, uma a mudar um plano e uma a avisar do atraso."
+    },
+    "pt_BR": {
+     "t": "Escrevendo uma mensagem curta",
+     "g": "Escreva mensagens e bilhetes rápidos e simpáticos em inglês.",
+     "p": [
+      "Comece de forma simples: Hi Sam! ou Hello Anna, e vá direto ao ponto.",
+      "Em mensagens, frases curtas funcionam: See you at six! Running late, sorry!",
+      "Termine com carinho: Thanks!, Love, Ana ou Talk soon!"
+     ],
+     "q": "Me mande uma mensagem curta me convidando para um café amanhã.",
+     "c": "Escreva três mensagens: uma de agradecimento, uma mudando um plano e uma avisando do atraso."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Hi...!",
+      "ex": "Hi Sam! Are you free tonight?"
+     },
+     {
+      "w": "See you at six!",
+      "ex": "Dinner at my place. See you at six!"
+     },
+     {
+      "w": "Running late, sorry!",
+      "ex": "Running late, sorry! Ten minutes."
+     },
+     {
+      "w": "Thanks!",
+      "ex": "Thanks for the lovely evening!"
+     },
+     {
+      "w": "Talk soon!",
+      "ex": "Have a great trip. Talk soon!"
+     },
+     {
+      "w": "Love,",
+      "ex": "Love, Ana"
+     }
+    ],
+    "gram": "Messages can drop the subject and be: (I'm) running late. (I'll) see you at six! Start with Hi + name, end with Thanks or Love."
+   }
+  },
+  {
+   "d": 87,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Small talk with new people",
+     "g": "Start easy conversations with people you just met.",
+     "p": [
+      "Safe openers: Nice weather today!, Are you from here?, What do you do?",
+      "Ask follow-up questions to keep it going: Really? How long have you been here?",
+      "Show interest with short reactions: That's great!, Oh, nice!, Me too!"
+     ],
+     "q": "Imagine we just met at a café. Start a little small talk with me.",
+     "c": "Prepare five small-talk questions and use one with a real person or with me today."
+    },
+    "de": {
+     "t": "Smalltalk mit neuen Leuten",
+     "g": "Du beginnst lockere Gespräche mit Menschen, die du gerade triffst.",
+     "p": [
+      "Sichere Einstiege: Nice weather today!, Are you from here?, What do you do?",
+      "Mit Nachfragen bleibt das Gespräch lebendig: Really? How long have you been here?",
+      "Zeig Interesse mit kurzen Reaktionen: That's great!, Oh, nice!, Me too!"
+     ],
+     "q": "Stell dir vor, wir treffen uns gerade im Café. Fang ein bisschen Smalltalk an.",
+     "c": "Bereite fünf Smalltalk-Fragen vor und nutze heute eine mit einer echten Person oder mit mir."
+    },
+    "es": {
+     "t": "Charla con gente nueva",
+     "g": "Empieza conversaciones fáciles con gente que acabas de conocer.",
+     "p": [
+      "Frases seguras para empezar: Nice weather today!, Are you from here?, What do you do?",
+      "Haz preguntas de seguimiento: Really? How long have you been here?",
+      "Muestra interés con reacciones cortas: That's great!, Oh, nice!, Me too!"
+     ],
+     "q": "Imagina que nos acabamos de conocer en un café. Empieza una pequeña charla conmigo.",
+     "c": "Prepara cinco preguntas de charla y usa una hoy con una persona real o conmigo."
+    },
+    "fr": {
+     "t": "Small talk avec de nouvelles personnes",
+     "g": "Lancer des conversations faciles avec des gens qu'on vient de rencontrer.",
+     "p": [
+      "Ouvertures sûres : Nice weather today!, Are you from here?, What do you do?",
+      "Relance avec des questions : Really? How long have you been here?",
+      "Montre ton intérêt par de courtes réactions : That's great!, Oh, nice!, Me too!"
+     ],
+     "q": "Imagine qu'on vient de se rencontrer dans un café. Lance un peu la conversation.",
+     "c": "Prépare cinq questions de small talk et utilise-en une aujourd'hui avec quelqu'un ou avec moi."
+    },
+    "it": {
+     "t": "Small talk con persone nuove",
+     "g": "Avvii conversazioni facili con persone appena conosciute.",
+     "p": [
+      "Aperture sicure: Nice weather today!, Are you from here?, What do you do?",
+      "Fai domande di seguito per continuare: Really? How long have you been here?",
+      "Mostra interesse con reazioni brevi: That's great!, Oh, nice!, Me too!"
+     ],
+     "q": "Immagina che ci siamo appena conosciuti in un bar. Inizia un po' di small talk con me.",
+     "c": "Prepara cinque domande da small talk e usane una oggi con una persona vera o con me."
+    },
+    "pt": {
+     "t": "Conversa de circunstância",
+     "g": "Começa conversas fáceis com pessoas que acabaste de conhecer.",
+     "p": [
+      "Frases seguras para começar: Nice weather today!, Are you from here?, What do you do?",
+      "Faz perguntas de seguimento: Really? How long have you been here?",
+      "Mostra interesse com reações curtas: That's great!, Oh, nice!, Me too!"
+     ],
+     "q": "Imagina que nos acabámos de conhecer num café. Começa uma pequena conversa comigo.",
+     "c": "Prepara cinco perguntas de conversa e usa uma hoje com uma pessoa real ou comigo."
+    },
+    "pt_BR": {
+     "t": "Papo com gente nova",
+     "g": "Comece conversas fáceis com pessoas que você acabou de conhecer.",
+     "p": [
+      "Frases seguras para começar: Nice weather today!, Are you from here?, What do you do?",
+      "Faça perguntas de continuação: Really? How long have you been here?",
+      "Mostre interesse com reações curtas: That's great!, Oh, nice!, Me too!"
+     ],
+     "q": "Imagine que a gente acabou de se conhecer num café. Puxe um papo comigo.",
+     "c": "Prepare cinco perguntas de bate-papo e use uma hoje com uma pessoa real ou comigo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Nice weather today!",
+      "ex": "Nice weather today! Perfect for a walk."
+     },
+     {
+      "w": "Are you from here?",
+      "ex": "Are you from here or just visiting?"
+     },
+     {
+      "w": "What do you do?",
+      "ex": "So, what do you do?"
+     },
+     {
+      "w": "That's great!",
+      "ex": "You're a teacher? That's great!"
+     },
+     {
+      "w": "Me too!",
+      "ex": "I love this place. Me too!"
+     },
+     {
+      "w": "Nice to meet you.",
+      "ex": "I'm Leo. Nice to meet you."
+     }
+    ],
+    "gram": "Keep small talk going with a reaction plus a follow-up question: Oh, nice! How long have you lived here?"
+   }
+  },
+  {
+   "d": 88,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "English sounds: th, v and w",
+     "g": "Practise three English sounds that many learners find tricky.",
+     "p": [
+      "For th, put your tongue lightly between your teeth: think, three (soft), this, mother (voiced).",
+      "For v, touch your top teeth to your bottom lip: very, van, love.",
+      "For w, make a small round mouth, no teeth: wary, window, we."
+     ],
+     "q": "Can you say three thin things and very wet weather aloud, slowly then quickly?",
+     "c": "Record yourself saying ten words with th, v and w and listen back once."
+    },
+    "de": {
+     "t": "Englische Laute: th, v und w",
+     "g": "Du übst drei englische Laute, die vielen Lernenden schwerfallen.",
+     "p": [
+      "Für th legst du die Zunge leicht zwischen die Zähne: think, three (stimmlos), this, mother (stimmhaft).",
+      "Für v berühren die oberen Zähne die Unterlippe: very, van, love.",
+      "Für w formst du einen kleinen runden Mund, ohne Zähne: wary, window, we."
+     ],
+     "q": "Kannst du three thin things und very wet weather laut sagen, erst langsam, dann schnell?",
+     "c": "Nimm dich mit zehn Wörtern mit th, v und w auf und hör es einmal an."
+    },
+    "es": {
+     "t": "Sonidos ingleses: th, v y w",
+     "g": "Practica tres sonidos ingleses que cuestan a muchos estudiantes.",
+     "p": [
+      "Para th, pon la lengua suave entre los dientes: think, three (sordo), this, mother (sonoro).",
+      "Para v, toca el labio inferior con los dientes de arriba: very, van, love.",
+      "Para w, redondea un poco los labios, sin dientes: wary, window, we."
+     ],
+     "q": "¿Puedes decir three thin things y very wet weather en voz alta, despacio y luego rápido?",
+     "c": "Grábate diciendo diez palabras con th, v y w y escúchate una vez."
+    },
+    "fr": {
+     "t": "Sons anglais : th, v et w",
+     "g": "S'entraîner sur trois sons anglais difficiles pour beaucoup.",
+     "p": [
+      "Pour th, place la langue légèrement entre les dents : think, three (sourd), this, mother (sonore).",
+      "Pour v, les dents du haut touchent la lèvre du bas : very, van, love.",
+      "Pour w, arrondis un peu les lèvres, sans les dents : wary, window, we."
+     ],
+     "q": "Peux-tu dire three thin things et very wet weather à voix haute, lentement puis vite ?",
+     "c": "Enregistre-toi en disant dix mots avec th, v et w, puis écoute-toi une fois."
+    },
+    "it": {
+     "t": "Suoni inglesi: th, v e w",
+     "g": "Eserciti tre suoni inglesi difficili per molti studenti.",
+     "p": [
+      "Per th metti la lingua leggermente tra i denti: think, three (sordo), this, mother (sonoro).",
+      "Per v i denti superiori toccano il labbro inferiore: very, van, love.",
+      "Per w arrotonda un po' le labbra, senza denti: wary, window, we."
+     ],
+     "q": "Sai dire three thin things e very wet weather ad alta voce, piano e poi veloce?",
+     "c": "Registrati mentre dici dieci parole con th, v e w e riascoltati una volta."
+    },
+    "pt": {
+     "t": "Sons ingleses: th, v e w",
+     "g": "Pratica três sons ingleses que custam a muitos alunos.",
+     "p": [
+      "Para o th, põe a língua levemente entre os dentes: think, three (surdo), this, mother (vozeado).",
+      "Para o v, os dentes de cima tocam o lábio de baixo: very, van, love.",
+      "Para o w, arredonda um pouco os lábios, sem dentes: wary, window, we."
+     ],
+     "q": "Consegues dizer three thin things e very wet weather em voz alta, devagar e depois depressa?",
+     "c": "Grava-te a dizer dez palavras com th, v e w e ouve-te uma vez."
+    },
+    "pt_BR": {
+     "t": "Sons do inglês: th, v e w",
+     "g": "Pratique três sons do inglês que pegam muitos alunos.",
+     "p": [
+      "Para o th, coloque a língua de leve entre os dentes: think, three (surdo), this, mother (sonoro).",
+      "Para o v, os dentes de cima tocam o lábio de baixo: very, van, love.",
+      "Para o w, arredonde um pouco os lábios, sem dentes: wary, window, we."
+     ],
+     "q": "Você consegue dizer three thin things e very wet weather em voz alta, devagar e depois rápido?",
+     "c": "Grave você dizendo dez palavras com th, v e w e escute uma vez."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "think",
+      "ex": "I think it's a good idea."
+     },
+     {
+      "w": "this",
+      "ex": "Is this your bag?"
+     },
+     {
+      "w": "very",
+      "ex": "The film was very funny."
+     },
+     {
+      "w": "wary",
+      "ex": "Cats are wary of strangers."
+     },
+     {
+      "w": "weather",
+      "ex": "The weather is lovely today."
+     },
+     {
+      "w": "three",
+      "ex": "I have three brothers."
+     }
+    ],
+    "gram": "th: tongue between teeth (think, this). v: top teeth on bottom lip (very). w: round lips, no teeth (wet)."
+   }
+  },
+  {
+   "d": 89,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Word stress made easy",
+     "g": "Hear and say the strong syllable in English words.",
+     "p": [
+      "Every word with two or more syllables has one strong part: HO-tel, ba-NA-na.",
+      "Many two-syllable nouns stress the first part: TA-ble, PHO-to, WA-ter.",
+      "Stress can move in word families: PHO-to-graph, pho-TO-gra-pher."
+     ],
+     "q": "Where is the stress in computer, hotel and photograph? Say them aloud.",
+     "c": "Choose ten words you use often, mark the strong syllable and say each one three times."
+    },
+    "de": {
+     "t": "Wortbetonung leicht gemacht",
+     "g": "Du hörst und sprichst die betonte Silbe englischer Wörter.",
+     "p": [
+      "Jedes Wort mit zwei oder mehr Silben hat eine starke Silbe: ho-TEL, ba-NA-na.",
+      "Viele zweisilbige Nomen betonen die erste Silbe: TA-ble, PHO-to, WA-ter.",
+      "In Wortfamilien kann die Betonung wandern: PHO-to-graph, pho-TO-gra-pher."
+     ],
+     "q": "Wo liegt die Betonung in computer, hotel und photograph? Sprich sie laut.",
+     "c": "Wähle zehn häufige Wörter, markiere die betonte Silbe und sag jedes dreimal."
+    },
+    "es": {
+     "t": "El acento de las palabras",
+     "g": "Oye y di la sílaba fuerte de las palabras inglesas.",
+     "p": [
+      "Toda palabra de dos o más sílabas tiene una parte fuerte: ho-TEL, ba-NA-na.",
+      "Muchos sustantivos de dos sílabas acentúan la primera: TA-ble, PHO-to, WA-ter.",
+      "El acento puede moverse en una familia: PHO-to-graph, pho-TO-gra-pher."
+     ],
+     "q": "¿Dónde va el acento en computer, hotel y photograph? Dilas en voz alta.",
+     "c": "Elige diez palabras que uses mucho, marca la sílaba fuerte y repite cada una tres veces."
+    },
+    "fr": {
+     "t": "L'accent tonique facile",
+     "g": "Entendre et dire la syllabe forte des mots anglais.",
+     "p": [
+      "Chaque mot de deux syllabes ou plus a une partie forte : ho-TEL, ba-NA-na.",
+      "Beaucoup de noms de deux syllabes accentuent la première : TA-ble, PHO-to, WA-ter.",
+      "L'accent peut bouger dans une famille : PHO-to-graph, pho-TO-gra-pher."
+     ],
+     "q": "Où est l'accent dans computer, hotel et photograph ? Dis-les à voix haute.",
+     "c": "Choisis dix mots fréquents, marque la syllabe forte et répète chacun trois fois."
+    },
+    "it": {
+     "t": "L'accento delle parole",
+     "g": "Senti e pronunci la sillaba forte delle parole inglesi.",
+     "p": [
+      "Ogni parola di due o più sillabe ha una parte forte: ho-TEL, ba-NA-na.",
+      "Molti nomi di due sillabe accentano la prima: TA-ble, PHO-to, WA-ter.",
+      "L'accento può spostarsi nelle famiglie di parole: PHO-to-graph, pho-TO-gra-pher."
+     ],
+     "q": "Dov'è l'accento in computer, hotel e photograph? Dille ad alta voce.",
+     "c": "Scegli dieci parole che usi spesso, segna la sillaba forte e ripeti ognuna tre volte."
+    },
+    "pt": {
+     "t": "O acento das palavras",
+     "g": "Ouve e diz a sílaba forte das palavras inglesas.",
+     "p": [
+      "Cada palavra com duas ou mais sílabas tem uma parte forte: ho-TEL, ba-NA-na.",
+      "Muitos nomes de duas sílabas acentuam a primeira: TA-ble, PHO-to, WA-ter.",
+      "O acento pode mudar numa família de palavras: PHO-to-graph, pho-TO-gra-pher."
+     ],
+     "q": "Onde está o acento em computer, hotel e photograph? Diz em voz alta.",
+     "c": "Escolhe dez palavras que usas muito, marca a sílaba forte e repete cada uma três vezes."
+    },
+    "pt_BR": {
+     "t": "A sílaba forte das palavras",
+     "g": "Ouça e fale a sílaba forte das palavras em inglês.",
+     "p": [
+      "Toda palavra com duas ou mais sílabas tem uma parte forte: ho-TEL, ba-NA-na.",
+      "Muitos substantivos de duas sílabas reforçam a primeira: TA-ble, PHO-to, WA-ter.",
+      "A sílaba forte pode mudar numa família: PHO-to-graph, pho-TO-gra-pher."
+     ],
+     "q": "Onde fica a sílaba forte em computer, hotel e photograph? Fale em voz alta.",
+     "c": "Escolha dez palavras que você usa muito, marque a sílaba forte e repita cada uma três vezes."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ba-NA-na",
+      "ex": "I eat a banana every morning."
+     },
+     {
+      "w": "ho-TEL",
+      "ex": "Our hotel is near the beach."
+     },
+     {
+      "w": "com-PU-ter",
+      "ex": "My computer is very slow today."
+     },
+     {
+      "w": "PHO-to-graph",
+      "ex": "This is an old photograph of my town."
+     },
+     {
+      "w": "pho-TO-gra-pher",
+      "ex": "She works as a photographer."
+     },
+     {
+      "w": "WA-ter",
+      "ex": "Can I have some water, please?"
+     }
+    ],
+    "gram": "Each word has one stressed syllable, said longer and louder: ho-TEL, com-PU-ter. Stress can move: PHO-to-graph, pho-TO-gra-pher."
+   }
+  },
+  {
+   "d": 90,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Review: A1 complete!",
+     "g": "Celebrate finishing A1 with a recap of everything you can now do.",
+     "p": [
+      "You can tell past stories with was, were, -ed verbs, irregular verbs and did.",
+      "You can make plans with going to, invite people, and compare with -er and the -est.",
+      "You can order food, check in at a hotel, ask politely and chat with new people."
+     ],
+     "q": "Tell me about a great day you had: where you went, what you did and how it was.",
+     "c": "Write a short text: last weekend, next weekend and your favourite place, in ten sentences."
+    },
+    "de": {
+     "t": "Rückblick: A1 geschafft!",
+     "g": "Du feierst den Abschluss von A1 mit einem Rückblick auf alles, was du kannst.",
+     "p": [
+      "Du erzählst Vergangenes mit was, were, -ed-Verben, unregelmäßigen Verben und did.",
+      "Du planst mit going to, lädst Leute ein und vergleichst mit -er und the -est.",
+      "Du bestellst Essen, checkst im Hotel ein, bittest höflich und plauderst mit Neuen."
+     ],
+     "q": "Erzähl mir von einem tollen Tag: wohin du gegangen bist, was du gemacht hast und wie es war.",
+     "c": "Schreib einen Text: letztes Wochenende, nächstes Wochenende und Lieblingsort, in zehn Sätzen."
+    },
+    "es": {
+     "t": "Repaso: ¡A1 completado!",
+     "g": "Celebra el final de A1 con un repaso de todo lo que ya sabes hacer.",
+     "p": [
+      "Sabes contar el pasado con was, were, verbos en -ed, irregulares y did.",
+      "Sabes hacer planes con going to, invitar y comparar con -er y the -est.",
+      "Sabes pedir comida, hacer el check-in, pedir con educación y charlar con gente nueva."
+     ],
+     "q": "Cuéntame un día genial: adónde fuiste, qué hiciste y qué tal fue.",
+     "c": "Escribe un texto: el fin de semana pasado, el próximo y tu lugar favorito, en diez frases."
+    },
+    "fr": {
+     "t": "Révision : A1 terminé !",
+     "g": "Fêter la fin du niveau A1 en revoyant tout ce que tu sais faire.",
+     "p": [
+      "Tu racontes le passé avec was, were, les verbes en -ed, les irréguliers et did.",
+      "Tu fais des projets avec going to, tu invites et tu compares avec -er et the -est.",
+      "Tu commandes au restaurant, tu t'enregistres à l'hôtel, tu demandes poliment et tu bavardes."
+     ],
+     "q": "Raconte-moi une super journée : où tu es allé, ce que tu as fait et comment c'était.",
+     "c": "Écris un texte : le week-end dernier, le prochain et ton lieu préféré, en dix phrases."
+    },
+    "it": {
+     "t": "Ripasso: A1 completato!",
+     "g": "Festeggi la fine dell'A1 ripassando tutto ciò che ora sai fare.",
+     "p": [
+      "Racconti il passato con was, were, verbi in -ed, irregolari e did.",
+      "Fai piani con going to, inviti le persone e confronti con -er e the -est.",
+      "Ordini al ristorante, fai il check-in, chiedi con garbo e chiacchieri con persone nuove."
+     ],
+     "q": "Raccontami una giornata fantastica: dove sei andato, cosa hai fatto e com'è stata.",
+     "c": "Scrivi un testo: lo scorso weekend, il prossimo e il tuo posto preferito, in dieci frasi."
+    },
+    "pt": {
+     "t": "Revisão: A1 concluído!",
+     "g": "Celebra o fim do A1 com uma revisão de tudo o que já sabes fazer.",
+     "p": [
+      "Já contas o passado com was, were, verbos em -ed, irregulares e did.",
+      "Já fazes planos com going to, convidas pessoas e comparas com -er e the -est.",
+      "Já pedes comida, fazes check-in, pedes com educação e conversas com pessoas novas."
+     ],
+     "q": "Conta-me um dia fantástico: aonde foste, o que fizeste e como foi.",
+     "c": "Escreve um texto: o fim de semana passado, o próximo e o teu sítio favorito, em dez frases."
+    },
+    "pt_BR": {
+     "t": "Revisão: A1 concluído!",
+     "g": "Comemore o fim do A1 com uma revisão de tudo o que você já sabe fazer.",
+     "p": [
+      "Você já conta o passado com was, were, verbos em -ed, irregulares e did.",
+      "Você já faz planos com going to, convida pessoas e compara com -er e the -est.",
+      "Você já pede comida, faz check-in, pede com educação e conversa com gente nova."
+     ],
+     "q": "Me conte um dia incrível: aonde você foi, o que fez e como foi.",
+     "c": "Escreva um texto: o fim de semana passado, o próximo e seu lugar favorito, em dez frases."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "It was amazing!",
+      "ex": "We went to the beach. It was amazing!"
+     },
+     {
+      "w": "Did you...?",
+      "ex": "Did you have a good weekend?"
+     },
+     {
+      "w": "I'm going to...",
+      "ex": "I'm going to start A2 tomorrow!"
+     },
+     {
+      "w": "better than",
+      "ex": "My English is better than before."
+     },
+     {
+      "w": "the best",
+      "ex": "This was the best month of the year."
+     },
+     {
+      "w": "Would you like to...?",
+      "ex": "Would you like to practise with me?"
+     }
+    ],
+    "gram": "A1 review: past simple (I went, did you go?), going to for plans, comparatives and superlatives, polite requests."
+   }
+  }
+ ]
+}

@@ -1,0 +1,2195 @@
+{
+"topic": "budgeting_basics",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "What a budget really is",
+"f": "A budget as a simple plan that tells your money where to go, not a punishment or a cage"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Your money story",
+"f": "How the money habits you grew up with shape the way you spend and save today"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Why small amounts matter",
+"f": "How tiny daily costs add up over a week, a month and a year"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Needs versus wants",
+"f": "Sorting everyday spending into things you need and things that are nice to have"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Setting a friendly money goal",
+"f": "Choosing one small, clear goal that makes budgeting feel worth it"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Tracking spending for one day",
+"f": "Writing down every purchase for a single day to see where money goes"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Choosing your tracking tool",
+"f": "Notebook, spreadsheet or app: picking a simple tool you will actually use"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Receipts and bank statements",
+"f": "Using receipts and statements to fill in gaps in your spending notes"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Spotting your spending triggers",
+"f": "Noticing moods, places and times that make you spend more than planned"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Your first week of tracking",
+"f": "Looking back at seven days of notes and finding one surprise"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "Knowing your take-home income",
+"f": "The difference between what you earn on paper and what actually arrives"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Fixed costs explained",
+"f": "Rent, bills and other costs that stay roughly the same every month"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Variable costs explained",
+"f": "Food, transport and fun: costs that change from month to month"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Irregular costs that surprise us",
+"f": "Yearly fees, repairs and gifts that do not appear every month"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Making a list of all your bills",
+"f": "Writing down every bill, its amount and its due date in one place"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Your monthly money calendar",
+"f": "Placing paydays and bill dates on a calendar to avoid tight weeks"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Cash, card or phone payments",
+"f": "How the way you pay can change how much you notice spending"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Small subscriptions add up",
+"f": "Finding all the small recurring payments hidden in your statements"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Money in, money out",
+"f": "Comparing total income and total spending to see where you stand"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Celebrating your first insights",
+"f": "Recognising what you have learned and why awareness is a big win"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Building your first budget",
+"f": "Turning tracked numbers into a simple monthly plan with clear categories"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Choosing budget categories",
+"f": "Picking a handful of categories that fit your real life"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Realistic numbers, not perfect ones",
+"f": "Setting amounts based on actual spending so the budget can work"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Giving every coin a job",
+"f": "Planning income so each part has a purpose, including saving"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Leaving room for fun",
+"f": "Why a small fun budget helps you stick to the whole plan"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "The buffer category",
+"f": "Adding a small cushion for the little things you forgot to plan"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Checking in mid-month",
+"f": "A quick halfway review to adjust before the month ends"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Ending the month kindly",
+"f": "Reviewing the month without guilt and noting what to change"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Adjusting your second month",
+"f": "Using last month's lessons to make the new budget more accurate"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: your first month",
+"f": "Light review of tracking, categories and your first real budget"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "The 50/30/20 idea",
+"f": "A simple way to split income into needs, wants and savings, and how to adapt it"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Zero-based budgeting",
+"f": "Planning every unit of income until nothing is left without a job"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "The envelope method",
+"f": "Using real or digital envelopes to set clear limits per category"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Pay yourself first",
+"f": "Moving a small amount to savings as soon as income arrives"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "The no-budget budget",
+"f": "A light approach: automate savings and bills, spend the rest freely"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Weekly versus monthly budgets",
+"f": "Choosing a budget rhythm that matches how you get paid and spend"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Budgeting with a spreadsheet",
+"f": "Setting up simple columns and totals to see your plan clearly"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Budgeting with an app",
+"f": "What to look for in a budgeting app and how to keep data safe"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Picking your method",
+"f": "Comparing methods and choosing the one that suits your personality"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Mixing methods",
+"f": "Combining ideas from different methods into your own system"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Grocery budget basics",
+"f": "Setting a realistic food budget based on what you really buy"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Meal planning to save",
+"f": "How planning meals for the week reduces waste and extra trips"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "The smart shopping list",
+"f": "Writing a list by store section and sticking to it"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Shopping on a full stomach",
+"f": "Why hunger and tiredness make grocery bills grow"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Comparing unit prices",
+"f": "Reading the price per kilo or litre to find the better deal"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Store brands worth trying",
+"f": "Testing own-brand products to find good value swaps"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Seasonal fruit and vegetables",
+"f": "Buying what is in season for better taste and better prices"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Cooking in batches",
+"f": "Making bigger portions to save time, energy and money"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Loving your leftovers",
+"f": "Turning leftovers into new meals instead of throwing them away"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Reducing food waste at home",
+"f": "Storage tips and first-in, first-out habits for the fridge"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Snacks and coffee on the go",
+"f": "Seeing the real monthly cost of small daily treats"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Eating out mindfully",
+"f": "Enjoying restaurants while keeping them inside your plan"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Lunch from home",
+"f": "Simple, tasty lunches that make carrying food from home easy"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Hosting friends for less",
+"f": "Potlucks and simple menus that make gatherings affordable"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Drinks and bottled water",
+"f": "Small swaps like a reusable bottle that save money every week"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Using loyalty cards wisely",
+"f": "Collecting points without letting them push extra spending"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Discounts that are not deals",
+"f": "Recognising when a sale makes you spend more, not less"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Bulk buying, pros and cons",
+"f": "When buying in bulk saves money and when it leads to waste"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Your food spending check",
+"f": "Comparing your grocery plan with real spending after a few weeks"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: food and methods",
+"f": "Light review of budgeting methods and food-saving habits"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "Understanding your utility bills",
+"f": "Reading electricity, water and gas bills line by line"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Saving energy at home",
+"f": "Everyday habits that lower energy use without losing comfort"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Water-saving habits",
+"f": "Small changes in the kitchen and bathroom that reduce water bills"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Phone and internet plans",
+"f": "Checking whether your plans match what you really use"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Comparing providers calmly",
+"f": "How to compare offers on price, quality and contract terms"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Asking for a better rate",
+"f": "A friendly script for calling a provider and asking for a better deal"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Home insurance basics",
+"f": "What household insurance generally is and why to read the policy terms"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Housing costs in your budget",
+"f": "Seeing rent or housing payments as part of the bigger picture"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Sharing costs with housemates",
+"f": "Fair, clear ways to split rent, bills and shared groceries"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Home repairs and maintenance",
+"f": "Setting a little aside for things that will eventually break"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Do it yourself or call someone",
+"f": "Weighing time, skill, safety and cost before fixing things yourself"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Furniture and second-hand finds",
+"f": "Finding good used items and checking their condition"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Cleaning products for less",
+"f": "Simple, affordable cleaning basics that do the job"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Decorating on a small budget",
+"f": "Refreshing a space with plants, rearranging and small touches"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Your home costs check",
+"f": "Reviewing all home-related spending and choosing one saving"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Why saving matters",
+"f": "Saving as a gift to your future self and a source of calm"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Your first savings target",
+"f": "Picking a small, reachable amount to build the saving habit"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "What an emergency fund is",
+"f": "A cushion for unexpected costs so surprises hurt less"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Building the fund step by step",
+"f": "Growing an emergency fund slowly with small regular amounts"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Where to keep savings",
+"f": "Keeping savings separate from daily spending money and easy to reach"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Automatic transfers",
+"f": "Setting up a small automatic transfer so saving happens by itself"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Round-up saving",
+"f": "Saving small change from purchases to grow savings painlessly"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "The 30-day savings challenge",
+"f": "A playful month of small saving actions to build momentum"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Saving windfalls and extra money",
+"f": "Deciding in advance what part of unexpected money you will save"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Naming your savings pots",
+"f": "Giving savings clear names so each goal feels real"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Savings and motivation",
+"f": "Tracking progress visually to stay encouraged"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "When you need to use savings",
+"f": "Using your emergency fund without guilt and refilling it calmly"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Saving on a low income",
+"f": "Starting with very small amounts and celebrating every step"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Teaching kids about saving",
+"f": "Simple ways to talk about saving with children in the family"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Review: home and saving",
+"f": "Light review of home costs, savings habits and the emergency fund"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Understanding impulse buying",
+"f": "Why we buy on impulse and how stores and apps encourage it"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "The 24-hour rule",
+"f": "Waiting a day before non-essential purchases to see if you still want them"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Shopping lists for everything",
+"f": "Using lists for clothes and household items, not just groceries"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Online shopping traps",
+"f": "Saved cards, one-click buying and countdown timers explained"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Unsubscribing from sale emails",
+"f": "Reducing temptation by cleaning up shopping newsletters"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "The cost-per-use idea",
+"f": "Judging purchases by how often you will really use them"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Buying quality that lasts",
+"f": "When paying a bit more for durable items saves money over time"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Clothes on a budget",
+"f": "Planning a wardrobe, mixing pieces and shopping with a list"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Second-hand and swapping",
+"f": "Using swaps, markets and second-hand shops for great finds"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Repair before replacing",
+"f": "Mending clothes and fixing items to make them last longer"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Borrowing and sharing",
+"f": "Borrowing tools and books instead of buying things used rarely"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Gifts without overspending",
+"f": "Thoughtful, low-cost gift ideas and setting a gift budget"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Reviewing your subscriptions",
+"f": "Listing all subscriptions and deciding which ones bring real joy"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Pausing or rotating streaming",
+"f": "Using one service at a time instead of paying for many"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Transport costs in your budget",
+"f": "Adding up fuel, tickets, parking and maintenance honestly"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Walking, cycling and public transport",
+"f": "Cheaper ways to get around and their extra benefits"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Car costs beyond fuel",
+"f": "Insurance, maintenance and parking as part of the real cost of a car"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Free fun in your area",
+"f": "Parks, libraries, free events and other no-cost activities"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Hobbies on a budget",
+"f": "Enjoying hobbies with second-hand gear and community groups"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Health habits that also save money",
+"f": "Cooking, walking and home workouts that are kind to body and wallet"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Social pressure and spending",
+"f": "Handling invitations and trends that push spending up"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Saying no kindly",
+"f": "Friendly phrases for declining costly plans without feeling awkward"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Suggesting cheaper plans",
+"f": "Proposing fun, low-cost alternatives to friends"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Your spending personality",
+"f": "Saver, spender or in between: understanding your natural style"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Money and emotions",
+"f": "Noticing how stress, boredom or joy affect what you buy"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Building a calm money routine",
+"f": "A short weekly money moment to keep everything on track"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Budgeting with a partner or family",
+"f": "Talking openly about shared costs and agreeing on simple rules"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Tracking without obsession",
+"f": "Staying aware of money without checking it all the time"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "A month of mindful spending",
+"f": "Planning a gentle month of conscious choices"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: beginner path",
+"f": "Light review of the beginner path and celebrating your progress"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Setting medium-term goals",
+"f": "Planning goals for the next one to three years"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "SMART money goals",
+"f": "Making goals specific, measurable, achievable, relevant and timed"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Breaking goals into monthly steps",
+"f": "Turning a big amount into small monthly targets"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Sinking funds explained",
+"f": "Saving a little each month for expected future costs"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Planning for annual bills",
+"f": "Spreading yearly fees across twelve months"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Car and appliance replacement funds",
+"f": "Preparing for big replacements before they are urgent"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Holiday and celebration funds",
+"f": "Saving in advance for festive seasons and birthdays"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "A travel savings plan",
+"f": "Turning a dream trip into a savings plan with a date"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Learning and courses fund",
+"f": "Saving for skills, books and courses that help you grow"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Prioritising several goals",
+"f": "Choosing which goals come first when money is limited"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Visual goal trackers",
+"f": "Charts, jars and progress bars that keep goals in sight"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Reviewing goals every quarter",
+"f": "Checking progress every three months and adjusting plans"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "When goals change",
+"f": "Letting go of old goals and redirecting money calmly"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Goal setting with family",
+"f": "Agreeing on shared goals at home and sharing the wins"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Celebrating milestones cheaply",
+"f": "Rewarding progress without undoing the savings"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Understanding interest",
+"f": "The basic idea of interest when you borrow and when you save"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "How borrowing really costs",
+"f": "Seeing the total amount paid back, not just the monthly payment"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Credit cards: how they work",
+"f": "Statement dates, minimum payments and why paying in full matters"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Reading a credit card statement",
+"f": "Finding balance, minimum payment and interest on a statement"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Buy now, pay later explained",
+"f": "How split payments work and why they can add up quickly"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Store cards and offers",
+"f": "Understanding store credit offers before saying yes"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Listing what you owe",
+"f": "Writing down every debt with its amount, rate and due date"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Two common payoff approaches",
+"f": "Smallest-balance-first and highest-rate-first explained in general terms"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Avoiding new debt while paying off",
+"f": "Habits that help you stop adding to balances"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "When to seek debt help",
+"f": "Recognising stress signs and looking for free, trusted advice services"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Talking to lenders",
+"f": "Why early, honest contact with lenders can help when payments are hard"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Credit history basics",
+"f": "What a credit history generally is and habits that support a good one"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Checking your credit report",
+"f": "Why people review their credit report and what to look for"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Borrowing from friends and family",
+"f": "Keeping relationships healthy with clear, written agreements"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Review: goals and borrowing",
+"f": "Light review of goals, sinking funds and borrowing basics"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Bank account types",
+"f": "Everyday accounts and savings accounts and what each is for"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Understanding bank fees",
+"f": "Common fees and simple ways to avoid them"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Overdrafts explained",
+"f": "How overdrafts work and why to treat them with care"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Online and mobile banking",
+"f": "Using banking apps to track money and set alerts"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Account alerts and notifications",
+"f": "Setting low-balance and payment alerts to stay in control"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Organising multiple accounts",
+"f": "Using separate accounts for bills, spending and savings"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Digital wallets and contactless",
+"f": "Convenience and how it can make spending feel invisible"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Keeping your money safe online",
+"f": "Strong passwords, two-step login and safe devices"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Spotting money scams",
+"f": "Common signs of scams: urgency, secrecy and too-good-to-be-true offers"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Phishing messages",
+"f": "Recognising fake bank emails and texts and what to do"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Protecting your card details",
+"f": "Safe habits when paying online and in shops"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "What to do if something goes wrong",
+"f": "Steps to take quickly if your card or account is misused"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Paying abroad and in other currencies",
+"f": "Exchange rates and fees when spending in another currency"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Sending money to family",
+"f": "Comparing transfer options on fees, speed and safety"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Review: banking and safety",
+"f": "Light review of accounts, fees, digital payments and scam awareness"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Irregular income basics",
+"f": "Budgeting when income changes from month to month"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Your baseline budget",
+"f": "Calculating the minimum you need each month"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Smoothing uneven income",
+"f": "Holding money from good months to cover quieter ones"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Budgeting for freelancers",
+"f": "Separating business and personal money in simple ways"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Setting money aside for taxes",
+"f": "Why people with variable income often set aside part of each payment"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Seasonal work and budgets",
+"f": "Planning ahead when income comes in seasons"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "A raise or new job",
+"f": "Deciding what to do with extra income before it disappears"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Lifestyle creep",
+"f": "How spending quietly rises with income and how to notice it"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Side income ideas",
+"f": "Ways people earn a little extra from skills and hobbies"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Selling things you no longer use",
+"f": "Decluttering and selling unused items for extra cash"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Budgeting for students",
+"f": "Managing money on a tight student budget"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Budgeting for young adults",
+"f": "First flat, first salary and first bills: setting good habits"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "Budgeting for families",
+"f": "Handling the many categories of a busy household"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Pocket money for children",
+"f": "Using pocket money to teach planning and choices"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Teenagers and money",
+"f": "Helping teenagers learn about budgets, saving and earning"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Review: income and life stages",
+"f": "Light review of irregular income and budgets for different life stages"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Planning for festive seasons",
+"f": "Setting a budget for gifts, food and decorations ahead of time"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Birthday and party budgets",
+"f": "Planning celebrations that feel special without overspending"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Weddings and big events as guests",
+"f": "Budgeting for travel, outfits and gifts when invited"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Holidays on a budget",
+"f": "Planning trips with a clear spending limit for each part"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Travel spending while away",
+"f": "Tracking daily spending while travelling"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Back-to-school costs",
+"f": "Preparing for supplies, clothes and fees ahead of time"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Pet costs",
+"f": "Food, care and vet visits as part of the budget for a pet"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Planning a home move",
+"f": "Budgeting for moving costs, deposits and setup"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Furnishing a new place",
+"f": "Prioritising what to buy first and what can wait"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Budgeting for a new baby",
+"f": "Planning for new costs and borrowing or buying second-hand"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Health costs in the budget",
+"f": "Setting aside money for check-ups, glasses and medicines"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Gym and fitness spending",
+"f": "Finding the fitness option that fits both goals and budget"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Beauty and personal care",
+"f": "Keeping personal care costs balanced and intentional"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Technology purchases",
+"f": "Deciding when to upgrade devices and when to keep them"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Review: life events",
+"f": "Light review of planning for seasons, events and big life changes"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Negotiation basics for everyday life",
+"f": "Simple, polite ways to ask for a better price"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Haggling at markets",
+"f": "Friendly bargaining where it is normal and respectful"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Asking for discounts",
+"f": "When to ask about student, loyalty or bundle discounts"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Price matching",
+"f": "How price matching works in shops that offer it"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Timing purchases",
+"f": "Knowing typical sale periods for things you plan to buy"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Comparison shopping",
+"f": "Checking several options before a bigger purchase"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Reading reviews wisely",
+"f": "Using reviews to avoid buying things that disappoint"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Warranties and returns",
+"f": "Knowing your return rights and keeping receipts organised"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Extended warranties",
+"f": "Thinking carefully before paying extra for longer coverage"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Cashback and vouchers",
+"f": "Using cashback and vouchers only for planned purchases"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Free trials and auto-renewals",
+"f": "Setting reminders to cancel trials you do not want"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Contracts and the small print",
+"f": "Reading terms, notice periods and fees before signing"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Renting versus buying items",
+"f": "When renting tools or gear makes more sense than owning"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Group buying and sharing",
+"f": "Splitting costs with friends for things you all use"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Review: smart shopping",
+"f": "Light review of negotiation, timing and smart purchase choices"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Talking about money openly",
+"f": "Making money a normal, relaxed topic at home"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Money talks with a partner",
+"f": "Sharing goals, habits and worries in a calm conversation"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Joint and separate money",
+"f": "Different ways households organise shared and personal money"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Money and friendships",
+"f": "Handling different budgets among friends with kindness"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Splitting bills fairly",
+"f": "Fair ways to share costs at dinners and on trips"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Lending money to friends",
+"f": "Thinking through lending and keeping friendships safe"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Asking for help with money",
+"f": "Where to find free and trustworthy money guidance"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Money and culture",
+"f": "How money habits differ across cultures and families"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Generosity within your budget",
+"f": "Giving to others in a planned, sustainable way"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Teaching money skills to others",
+"f": "Sharing what you have learned with friends and family"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Budgeting with housemates",
+"f": "Shared groceries, cleaning supplies and bills made simple"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Money conflicts at home",
+"f": "Calm ways to solve disagreements about spending"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Being a good money role model",
+"f": "Showing healthy habits to younger family members"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Your money values",
+"f": "Naming what matters most so spending matches your values"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Review: money and people",
+"f": "Light review of money conversations, sharing and values"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Organising financial documents",
+"f": "A simple filing system for bills, contracts and statements"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Digital filing for paperwork",
+"f": "Scanning and organising documents safely on your devices"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Tax time organisation",
+"f": "Gathering receipts and documents early to make tax season easier"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Knowing when to ask a professional",
+"f": "When an accountant or adviser can help with complex questions"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Insurance basics revisited",
+"f": "General types of insurance and questions to ask before choosing"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Reviewing insurance yearly",
+"f": "Checking if your cover still fits your life and comparing renewals"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Your money dashboard",
+"f": "One page that shows income, spending, savings and debts"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Monthly money meetings",
+"f": "A short regular session to review and plan your money"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Automating your budget",
+"f": "Automating bills and savings so good habits run by themselves"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Checking automations",
+"f": "Making sure automatic payments are still correct and needed"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Money milestones of the year",
+"f": "Marking important money dates in your calendar"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Annual subscription audit",
+"f": "A yearly review of every subscription and membership"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Budget templates that work",
+"f": "Reusable templates that make planning faster each month"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Simplifying your accounts",
+"f": "Closing unused accounts and cards to reduce clutter"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Reading your payslip",
+"f": "Understanding gross pay, deductions and net pay on a typical payslip"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Workplace benefits in general",
+"f": "Common workplace benefits and why it pays to read the details"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Keeping track of work expenses",
+"f": "Logging work expenses and claiming them back on time"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "A household info sheet",
+"f": "Keeping key contacts, account names and policy numbers in one safe place"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Password habits for money accounts",
+"f": "Unique passwords and a password manager for financial accounts"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Paperless or paper bills",
+"f": "Choosing billing formats that keep you organised"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "How long to keep documents",
+"f": "General ideas on keeping papers and checking local official guidance"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Shredding and safe disposal",
+"f": "Disposing of old financial papers safely to protect your details"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Your weekly five-minute money check",
+"f": "A tiny weekly habit that prevents unpleasant surprises"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Review: organisation",
+"f": "Light review of documents, automation and money routines"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Your yearly budget",
+"f": "Planning income and spending for the whole year ahead"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Forecasting big months",
+"f": "Spotting expensive months early and preparing for them"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Planning large purchases",
+"f": "Saving for big items instead of borrowing when possible"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Comparing total cost of ownership",
+"f": "Looking at running costs, not only the purchase price"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Values-based spending",
+"f": "Spending generously on what you love and cutting what you do not"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Minimalism and money",
+"f": "How owning fewer things can reduce spending and stress"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Frugal versus cheap",
+"f": "The difference between smart saving and false economy"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Avoiding burnout from budgeting",
+"f": "Keeping the budget flexible so it stays sustainable"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Spending guilt and money anxiety",
+"f": "Gentle ways to handle worry and guilt about money"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Building financial confidence",
+"f": "Small wins that make you feel capable with money"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Money mistakes we all make",
+"f": "Common mistakes and how to bounce back from them"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Starting over after a setback",
+"f": "Rebuilding a budget calmly after a hard period"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Mindful money habits",
+"f": "Pausing, reflecting and choosing with intention"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Gratitude and contentment",
+"f": "How appreciating what you have can reduce the urge to buy"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Review: big-picture budgeting",
+"f": "Light review of yearly planning, values and money mindset"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Growing your emergency fund",
+"f": "Moving from a starter fund to a fuller cushion over time"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "How many months of costs to aim for",
+"f": "General ideas people use to size a fuller emergency fund"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Planning for income gaps",
+"f": "Preparing for changes like a job switch or study break"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Long-term goals in general",
+"f": "Naming goals for five years or more and estimating costs"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Learning about retirement planning",
+"f": "Why it helps to learn early and speak with a qualified adviser"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Saving versus investing in general",
+"f": "The general difference, and why investing decisions need a professional"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Questions to ask a financial adviser",
+"f": "Preparing good questions before meeting a qualified professional"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Avoiding get-rich-quick promises",
+"f": "Recognising unrealistic promises and protecting your savings"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Inflation in everyday life",
+"f": "How rising prices affect a budget over time"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Updating your budget for higher prices",
+"f": "Adjusting categories when everyday costs go up"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Saving for a home deposit in general",
+"f": "Setting a long savings goal and tracking progress"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Budgeting for further education",
+"f": "Planning for courses or study costs years in advance"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Planning a career break",
+"f": "Saving ahead for time off to rest, travel or learn"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Thinking about financial independence",
+"f": "What independence from money worries can mean for you"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Review: long-term planning",
+"f": "Light review of long-term goals, inflation and when to ask a professional"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Budgeting for a business idea",
+"f": "Estimating costs for a small project before starting"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Separating hobby and business money",
+"f": "Keeping clear records when a hobby starts to earn"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Pricing your time",
+"f": "Thinking about the value of your time in money choices"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Time versus money trade-offs",
+"f": "When paying for convenience is worth it and when it is not"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Budget experiments",
+"f": "Trying a no-spend week or a cash-only month as a learning game"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Your no-spend challenge",
+"f": "Planning and reflecting on a short no-spend period"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Cash-only month reflections",
+"f": "Learning from paying only with cash for a while"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Spending fasts for specific categories",
+"f": "Pausing one category to reset habits"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Reset your grocery budget",
+"f": "Revisiting food spending with all your new skills"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Reset your fun budget",
+"f": "Making sure fun spending still brings real joy"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Reset your subscriptions",
+"f": "Another round of checking recurring payments"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Reset your transport costs",
+"f": "Reviewing how you move around and what it costs"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Reset your home costs",
+"f": "Fresh look at bills and providers after months of practice"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Your personal money rules",
+"f": "Writing a few simple rules that guide your choices"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Review: experiments and resets",
+"f": "Light review of challenges and resets across categories"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Environmental choices and money",
+"f": "How sustainable habits often save money too"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Buying less, choosing better",
+"f": "Thoughtful consumption as a budgeting skill"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Energy efficiency at home",
+"f": "Bigger changes like efficient bulbs and appliances explained in general"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Food habits for planet and wallet",
+"f": "Plant-rich meals, less waste and local produce"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Second-hand as a lifestyle",
+"f": "Making used and refurbished items a regular choice"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Community resources",
+"f": "Libraries, tool sharing and repair cafes that save money"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Volunteering and free experiences",
+"f": "Enriching activities that cost little or nothing"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Digital minimalism and spending",
+"f": "Less screen time, fewer ads, fewer purchases"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Money and wellbeing",
+"f": "How stable habits support peace of mind"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Sleep, stress and spending",
+"f": "How tiredness and stress can influence money choices"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Celebrating progress over perfection",
+"f": "Valuing steady improvement more than flawless months"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Helping a friend start a budget",
+"f": "Guiding someone kindly through their first plan"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Budgeting across cultures",
+"f": "Interesting money habits and saving traditions from around the world"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Money proverbs and wisdom",
+"f": "Sayings from different cultures about saving and spending"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Review: values and wellbeing",
+"f": "Light review of sustainable habits, wellbeing and money wisdom"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Building a personal price index",
+"f": "Tracking how your own everyday costs change from year to year"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Analysing a year of spending",
+"f": "Looking for patterns across twelve months of spending notes"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Category trends over time",
+"f": "Spotting categories that keep growing and asking why"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Small treats or big costs",
+"f": "Small daily treats versus big fixed costs: what really moves the needle"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "The big three costs",
+"f": "Housing, transport and food as the biggest levers in most budgets"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Lowering housing costs over time",
+"f": "General ways people reduce housing costs in the long run"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Rethinking transport",
+"f": "Reconsidering how and how often you travel and what it costs"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Advanced meal planning",
+"f": "Rotating menus and planned leftovers for lower food costs"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Building a pantry on a budget",
+"f": "Stocking staples gradually so everyday meals cost less"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Prices in hours of work",
+"f": "Translating prices into the hours of work needed to pay for them"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Opportunity cost",
+"f": "Every money choice means giving up something else"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Anchoring and price psychology",
+"f": "How first prices and decoy options influence what we choose"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Marketing tricks to recognise",
+"f": "Scarcity, social proof and free-delivery thresholds explained"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Mental accounting",
+"f": "Why we treat money differently depending on where it came from"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Present bias",
+"f": "Why the future feels less important and how to plan around it"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Habit stacking for money",
+"f": "Attaching money habits to routines you already have"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Designing your environment",
+"f": "Making good choices easier and temptations harder to reach"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Accountability partners",
+"f": "Sharing goals with someone who cheers you on"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Tracking what you own and owe",
+"f": "Listing what you own and owe to see your progress over time"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Review: money psychology",
+"f": "Light review of spending analysis and the psychology of money choices"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Budgeting while studying abroad",
+"f": "Planning everyday costs in a new country while studying"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Budgeting when living alone",
+"f": "Covering every bill on a single income"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Budgeting for a growing family",
+"f": "Adjusting the plan as the household grows"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Supporting relatives",
+"f": "Helping family members within a budget you can sustain"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Budgeting during a job search",
+"f": "Stretching money calmly while looking for work"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Budgeting after a big change",
+"f": "Adapting the plan after a new job, home or household"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Budgeting for caring roles",
+"f": "Planning costs and time when you look after someone"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Thinking ahead to later life",
+"f": "Thinking about costs in later years and when to get professional help"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Budgeting for a gap year",
+"f": "Saving and planning for a year of travel, study or volunteering"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Simplifying your lifestyle",
+"f": "Choosing a simpler setup to lower monthly costs"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Taking on bigger costs carefully",
+"f": "Accepting larger commitments only when the plan supports them"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Making room for a passion",
+"f": "Funding an expensive hobby with a dedicated savings pot"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Planning a family trip",
+"f": "Budgeting for travel with several people of different ages"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Budgeting for remote work",
+"f": "Home office costs and savings from not commuting"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Budgeting in a new city",
+"f": "Learning local prices and adjusting your categories"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "A checklist before big decisions",
+"f": "A simple money checklist before committing to large costs"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Scenario planning",
+"f": "Planning for good, normal and tight months"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Stress-testing your budget",
+"f": "Asking what would happen if income dropped for a while"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Your flexible budget",
+"f": "Building a plan that bends instead of breaking"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Review: life chapters",
+"f": "Light review of budgeting through different chapters of life"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Your money story revisited",
+"f": "Looking back at how your money habits have changed this year"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Comparing your first and current budget",
+"f": "Seeing the progress between day one and now"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Your best money habit",
+"f": "Naming the habit that made the biggest difference"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Your trickiest category",
+"f": "Finding the category that still needs work and planning for it"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Refining your system",
+"f": "Polishing the methods and tools that work best for you"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Setting next year's goals",
+"f": "Choosing clear goals for the coming year"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Planning next year's sinking funds",
+"f": "Listing expected costs for next year and monthly amounts"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Your budget calendar for next year",
+"f": "Mapping important money dates for the year ahead"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Building resilience",
+"f": "Habits that help you handle surprises with calm"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Keeping motivation long term",
+"f": "Ways to stay engaged with your budget for years"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Money mentors and communities",
+"f": "Learning together with friends or groups"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "A letter to your future self",
+"f": "Writing down your money hopes for the next year"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Celebrating your year",
+"f": "Recognising a full year of learning about money"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Your plan from here",
+"f": "Choosing your next steps and how to keep going"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Review: your 365-day journey",
+"f": "A final review of the whole path and a toast to your new habits"
+}
+]
+}

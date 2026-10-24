@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 201,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Word formation: -ness, -ment, -tion",
+     "g": "Turn verbs and adjectives into nouns with common suffixes.",
+     "p": [
+      "Adjective + -ness: happy to happiness, kind to kindness, dark to darkness (y changes to i).",
+      "Verb + -ment: improve to improvement, enjoy to enjoyment, agree to agreement.",
+      "Verb + -tion/-ation: inform to information, decide to decision, invite to invitation. Spelling can change."
+     ],
+     "q": "What brings you the most happiness in daily life? Try to use two nouns with -ness, -ment or -tion.",
+     "c": "Make nouns from ten words: kind, sad, develop, pay, educate, create, weak, move, relax, ill. Use three in sentences."
+    },
+    "de": {
+     "t": "Word formation: -ness, -ment, -tion",
+     "g": "Mit typischen Endungen machst du aus Verben und Adjektiven Nomen.",
+     "p": [
+      "Adjektiv + -ness: happy zu happiness, kind zu kindness, dark zu darkness (y wird zu i).",
+      "Verb + -ment: improve zu improvement, enjoy zu enjoyment, agree zu agreement.",
+      "Verb + -tion/-ation: inform zu information, decide zu decision, invite zu invitation. Die Schreibung kann sich ändern."
+     ],
+     "q": "Was macht dich im Alltag am glücklichsten? Benutze zwei Nomen mit -ness, -ment oder -tion.",
+     "c": "Bilde Nomen aus zehn Wörtern: kind, sad, develop, pay, educate, create, weak, move, relax, ill. Drei davon in Sätzen."
+    },
+    "es": {
+     "t": "Word formation: -ness, -ment, -tion",
+     "g": "Convierte verbos y adjetivos en sustantivos con sufijos frecuentes.",
+     "p": [
+      "Adjetivo + -ness: happy a happiness, kind a kindness, dark a darkness (la y cambia a i).",
+      "Verbo + -ment: improve a improvement, enjoy a enjoyment, agree a agreement.",
+      "Verbo + -tion/-ation: inform a information, decide a decision, invite a invitation. La ortografía puede cambiar."
+     ],
+     "q": "¿Qué te da más felicidad en el día a día? Intenta usar dos sustantivos con -ness, -ment o -tion.",
+     "c": "Forma sustantivos de diez palabras: kind, sad, develop, pay, educate, create, weak, move, relax, ill. Usa tres en frases."
+    },
+    "fr": {
+     "t": "Word formation: -ness, -ment, -tion",
+     "g": "Transforme des verbes et des adjectifs en noms grâce aux suffixes courants.",
+     "p": [
+      "Adjectif + -ness : happy donne happiness, kind donne kindness, dark donne darkness (le y devient i).",
+      "Verbe + -ment : improve donne improvement, enjoy donne enjoyment, agree donne agreement.",
+      "Verbe + -tion/-ation : inform donne information, decide donne decision, invite donne invitation."
+     ],
+     "q": "Qu'est-ce qui t'apporte le plus de bonheur au quotidien ? Essaie d'utiliser deux noms en -ness, -ment ou -tion.",
+     "c": "Forme des noms à partir de dix mots : kind, sad, develop, pay, educate, create, weak, move, relax, ill. Utilises-en trois."
+    },
+    "it": {
+     "t": "Word formation: -ness, -ment, -tion",
+     "g": "Trasforma verbi e aggettivi in nomi con i suffissi più comuni.",
+     "p": [
+      "Aggettivo + -ness: happy diventa happiness, kind diventa kindness, dark diventa darkness (la y diventa i).",
+      "Verbo + -ment: improve diventa improvement, enjoy diventa enjoyment, agree diventa agreement.",
+      "Verbo + -tion/-ation: inform diventa information, decide diventa decision, invite diventa invitation."
+     ],
+     "q": "Cosa ti dà più felicità nella vita di tutti i giorni? Prova a usare due nomi con -ness, -ment o -tion.",
+     "c": "Forma i nomi da dieci parole: kind, sad, develop, pay, educate, create, weak, move, relax, ill. Usane tre in frasi."
+    },
+    "pt": {
+     "t": "Word formation: -ness, -ment, -tion",
+     "g": "Transforma verbos e adjetivos em substantivos com sufixos comuns.",
+     "p": [
+      "Adjetivo + -ness: happy dá happiness, kind dá kindness, dark dá darkness (o y passa a i).",
+      "Verbo + -ment: improve dá improvement, enjoy dá enjoyment, agree dá agreement.",
+      "Verbo + -tion/-ation: inform dá information, decide dá decision, invite dá invitation. A ortografia pode mudar."
+     ],
+     "q": "O que te dá mais felicidade no dia a dia? Tenta usar dois substantivos com -ness, -ment ou -tion.",
+     "c": "Forma substantivos a partir de dez palavras: kind, sad, develop, pay, educate, create, weak, move, relax, ill. Usa três em frases."
+    },
+    "pt_BR": {
+     "t": "Word formation: -ness, -ment, -tion",
+     "g": "Transforme verbos e adjetivos em substantivos com sufixos comuns.",
+     "p": [
+      "Adjetivo + -ness: happy vira happiness, kind vira kindness, dark vira darkness (o y vira i).",
+      "Verbo + -ment: improve vira improvement, enjoy vira enjoyment, agree vira agreement.",
+      "Verbo + -tion/-ation: inform vira information, decide vira decision, invite vira invitation. A grafia pode mudar."
+     ],
+     "q": "O que te traz mais felicidade no dia a dia? Tente usar dois substantivos com -ness, -ment ou -tion.",
+     "c": "Forme substantivos de dez palavras: kind, sad, develop, pay, educate, create, weak, move, relax, ill. Use três em frases."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "happiness",
+      "ex": "Small things bring me a lot of happiness."
+     },
+     {
+      "w": "kindness",
+      "ex": "Thank you for your kindness."
+     },
+     {
+      "w": "improvement",
+      "ex": "There's a big improvement in your English!"
+     },
+     {
+      "w": "agreement",
+      "ex": "We finally reached an agreement."
+     },
+     {
+      "w": "decision",
+      "ex": "Moving abroad was a big decision."
+     },
+     {
+      "w": "invitation",
+      "ex": "Thanks for the invitation to your party."
+     }
+    ],
+    "gram": "Noun suffixes: adjective + -ness (happiness), verb + -ment (improvement), verb + -tion/-ation/-sion (invitation, decision)."
+   }
+  },
+  {
+   "d": 202,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Prefixes: un-, dis-, re-",
+     "g": "Change the meaning of words with common prefixes.",
+     "p": [
+      "Opposites: un- (unhappy, unusual), dis- (dislike, disagree), in-/im- (incorrect, impossible).",
+      "Re- means again: redo, rewrite, rebuild, reconsider. Can you repeat that? I need to restart my phone.",
+      "Mis- means wrongly: misunderstand, misspell, mislead. Sorry, I misunderstood the question."
+     ],
+     "q": "What is something you dislike doing, and something you think is impossible to learn quickly?",
+     "c": "Add a prefix to ten words: happy, agree, possible, write, understand, polite, appear, use, visible, connect. Use four."
+    },
+    "de": {
+     "t": "Prefixes: un-, dis-, re-",
+     "g": "Mit typischen Vorsilben veränderst du die Bedeutung von Wörtern.",
+     "p": [
+      "Gegenteile: un- (unhappy, unusual), dis- (dislike, disagree), in-/im- (incorrect, impossible).",
+      "Re- heißt wieder: redo, rewrite, rebuild, reconsider. I need to restart my phone.",
+      "Mis- heißt falsch: misunderstand, misspell, mislead. Sorry, I misunderstood the question."
+     ],
+     "q": "Was machst du gar nicht gern, und was hältst du für unmöglich, schnell zu lernen?",
+     "c": "Setz eine Vorsilbe vor zehn Wörter: happy, agree, possible, write, understand, polite, appear, use, visible, connect. Nutze vier."
+    },
+    "es": {
+     "t": "Prefixes: un-, dis-, re-",
+     "g": "Cambia el significado de las palabras con prefijos frecuentes.",
+     "p": [
+      "Contrarios: un- (unhappy, unusual), dis- (dislike, disagree), in-/im- (incorrect, impossible).",
+      "Re- significa de nuevo: redo, rewrite, rebuild, reconsider. I need to restart my phone.",
+      "Mis- significa mal: misunderstand, misspell, mislead. Sorry, I misunderstood the question."
+     ],
+     "q": "¿Qué es algo que no te gusta hacer y algo que crees imposible aprender rápido?",
+     "c": "Añade un prefijo a diez palabras: happy, agree, possible, write, understand, polite, appear, use, visible, connect. Usa cuatro."
+    },
+    "fr": {
+     "t": "Prefixes: un-, dis-, re-",
+     "g": "Change le sens des mots avec des préfixes courants.",
+     "p": [
+      "Contraires : un- (unhappy, unusual), dis- (dislike, disagree), in-/im- (incorrect, impossible).",
+      "Re- veut dire à nouveau : redo, rewrite, rebuild, reconsider. I need to restart my phone.",
+      "Mis- veut dire mal : misunderstand, misspell, mislead. Sorry, I misunderstood the question."
+     ],
+     "q": "Qu'est-ce que tu n'aimes pas faire, et qu'est-ce qui te semble impossible à apprendre vite ?",
+     "c": "Ajoute un préfixe à dix mots : happy, agree, possible, write, understand, polite, appear, use, visible, connect. Utilises-en quatre."
+    },
+    "it": {
+     "t": "Prefixes: un-, dis-, re-",
+     "g": "Cambia il significato delle parole con prefissi comuni.",
+     "p": [
+      "Contrari: un- (unhappy, unusual), dis- (dislike, disagree), in-/im- (incorrect, impossible).",
+      "Re- significa di nuovo: redo, rewrite, rebuild, reconsider. I need to restart my phone.",
+      "Mis- significa in modo sbagliato: misunderstand, misspell, mislead. Sorry, I misunderstood the question."
+     ],
+     "q": "Cosa non ti piace fare, e cosa pensi sia impossibile imparare in fretta?",
+     "c": "Aggiungi un prefisso a dieci parole: happy, agree, possible, write, understand, polite, appear, use, visible, connect. Usane quattro."
+    },
+    "pt": {
+     "t": "Prefixes: un-, dis-, re-",
+     "g": "Muda o significado das palavras com prefixos comuns.",
+     "p": [
+      "Opostos: un- (unhappy, unusual), dis- (dislike, disagree), in-/im- (incorrect, impossible).",
+      "Re- significa de novo: redo, rewrite, rebuild, reconsider. I need to restart my phone.",
+      "Mis- significa mal: misunderstand, misspell, mislead. Sorry, I misunderstood the question."
+     ],
+     "q": "O que é algo que não gostas de fazer, e algo que achas impossível aprender depressa?",
+     "c": "Junta um prefixo a dez palavras: happy, agree, possible, write, understand, polite, appear, use, visible, connect. Usa quatro."
+    },
+    "pt_BR": {
+     "t": "Prefixes: un-, dis-, re-",
+     "g": "Mude o significado das palavras com prefixos comuns.",
+     "p": [
+      "Opostos: un- (unhappy, unusual), dis- (dislike, disagree), in-/im- (incorrect, impossible).",
+      "Re- significa de novo: redo, rewrite, rebuild, reconsider. I need to restart my phone.",
+      "Mis- significa errado: misunderstand, misspell, mislead. Sorry, I misunderstood the question."
+     ],
+     "q": "O que você não gosta de fazer, e o que acha impossível aprender rápido?",
+     "c": "Coloque um prefixo em dez palavras: happy, agree, possible, write, understand, polite, appear, use, visible, connect. Use quatro."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "unhappy",
+      "ex": "The kids were unhappy when the rain started."
+     },
+     {
+      "w": "dislike",
+      "ex": "I dislike waiting in long queues."
+     },
+     {
+      "w": "impossible",
+      "ex": "Nothing is impossible with practice."
+     },
+     {
+      "w": "redo",
+      "ex": "I made a mistake, so I'll redo the exercise."
+     },
+     {
+      "w": "misunderstand",
+      "ex": "Sorry, I think I misunderstood you."
+     },
+     {
+      "w": "disagree",
+      "ex": "I disagree, but I see your point."
+     }
+    ],
+    "gram": "Prefixes: un-, dis-, in-/im- make opposites (unhappy, dislike, impossible); re- = again (rewrite); mis- = wrongly (misunderstand)."
+   }
+  },
+  {
+   "d": 203,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Adjectives ending in -ed and -ing",
+     "g": "Tell the difference between how you feel (-ed) and what causes it (-ing).",
+     "p": [
+      "-ed describes feelings: I'm bored. She was interested. We were tired after the trip.",
+      "-ing describes the thing or person that causes the feeling: The film was boring. The talk was interesting.",
+      "Careful: I'm boring means people find you dull! Pairs: excited/exciting, surprised/surprising, relaxed/relaxing."
+     ],
+     "q": "What was the most interesting thing you did last month, and when did you last feel really excited?",
+     "c": "Write five pairs: one -ed and one -ing sentence each, with tired, amazed, confused, relaxed and embarrassed."
+    },
+    "de": {
+     "t": "Adjectives ending in -ed and -ing",
+     "g": "Du unterscheidest, wie du dich fühlst (-ed) und was das Gefühl auslöst (-ing).",
+     "p": [
+      "-ed beschreibt Gefühle: I'm bored. She was interested. We were tired after the trip.",
+      "-ing beschreibt, was das Gefühl auslöst: The film was boring. The talk was interesting.",
+      "Vorsicht: I'm boring heißt, du bist langweilig! Paare: excited/exciting, surprised/surprising, relaxed/relaxing."
+     ],
+     "q": "Was war das Interessanteste, das du letzten Monat gemacht hast, und wann warst du zuletzt richtig aufgeregt?",
+     "c": "Schreib fünf Satzpaare mit -ed und -ing: tired, amazed, confused, relaxed und embarrassed."
+    },
+    "es": {
+     "t": "Adjectives ending in -ed and -ing",
+     "g": "Distingue cómo te sientes (-ed) de lo que provoca ese sentimiento (-ing).",
+     "p": [
+      "-ed describe sentimientos: I'm bored. She was interested. We were tired after the trip.",
+      "-ing describe lo que causa el sentimiento: The film was boring. The talk was interesting.",
+      "Ojo: I'm boring significa que eres aburrido. Pares: excited/exciting, surprised/surprising, relaxed/relaxing."
+     ],
+     "q": "¿Qué fue lo más interesante que hiciste el mes pasado, y cuándo te sentiste emocionado de verdad por última vez?",
+     "c": "Escribe cinco pares de frases con -ed y -ing: tired, amazed, confused, relaxed y embarrassed."
+    },
+    "fr": {
+     "t": "Adjectives ending in -ed and -ing",
+     "g": "Distingue ce que tu ressens (-ed) de ce qui le provoque (-ing).",
+     "p": [
+      "-ed décrit un ressenti : I'm bored. She was interested. We were tired after the trip.",
+      "-ing décrit la cause du ressenti : The film was boring. The talk was interesting.",
+      "Attention : I'm boring veut dire que tu es ennuyeux ! Paires : excited/exciting, surprised/surprising, relaxed/relaxing."
+     ],
+     "q": "Quelle est la chose la plus intéressante que tu as faite le mois dernier, et quand as-tu été vraiment enthousiaste ?",
+     "c": "Écris cinq paires de phrases en -ed et -ing avec tired, amazed, confused, relaxed et embarrassed."
+    },
+    "it": {
+     "t": "Adjectives ending in -ed and -ing",
+     "g": "Distingui come ti senti (-ed) da ciò che provoca la sensazione (-ing).",
+     "p": [
+      "-ed descrive le sensazioni: I'm bored. She was interested. We were tired after the trip.",
+      "-ing descrive ciò che le provoca: The film was boring. The talk was interesting.",
+      "Attenzione: I'm boring vuol dire che sei noioso! Coppie: excited/exciting, surprised/surprising, relaxed/relaxing."
+     ],
+     "q": "Qual è la cosa più interessante che hai fatto il mese scorso, e quando ti sei sentito davvero entusiasta?",
+     "c": "Scrivi cinque coppie di frasi con -ed e -ing: tired, amazed, confused, relaxed ed embarrassed."
+    },
+    "pt": {
+     "t": "Adjectives ending in -ed and -ing",
+     "g": "Distingue o que sentes (-ed) daquilo que provoca o sentimento (-ing).",
+     "p": [
+      "-ed descreve sentimentos: I'm bored. She was interested. We were tired after the trip.",
+      "-ing descreve a causa do sentimento: The film was boring. The talk was interesting.",
+      "Cuidado: I'm boring quer dizer que és aborrecido! Pares: excited/exciting, surprised/surprising, relaxed/relaxing."
+     ],
+     "q": "Qual foi a coisa mais interessante que fizeste no mês passado, e quando te sentiste mesmo entusiasmado?",
+     "c": "Escreve cinco pares de frases com -ed e -ing: tired, amazed, confused, relaxed e embarrassed."
+    },
+    "pt_BR": {
+     "t": "Adjectives ending in -ed and -ing",
+     "g": "Diferencie o que você sente (-ed) do que causa o sentimento (-ing).",
+     "p": [
+      "-ed descreve sentimentos: I'm bored. She was interested. We were tired after the trip.",
+      "-ing descreve o que causa o sentimento: The film was boring. The talk was interesting.",
+      "Cuidado: I'm boring quer dizer que você é chato! Pares: excited/exciting, surprised/surprising, relaxed/relaxing."
+     ],
+     "q": "Qual foi a coisa mais interessante que você fez no mês passado, e quando se sentiu realmente animado?",
+     "c": "Escreva cinco pares de frases com -ed e -ing: tired, amazed, confused, relaxed e embarrassed."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "bored / boring",
+      "ex": "I was bored because the lesson was boring."
+     },
+     {
+      "w": "interested / interesting",
+      "ex": "I'm interested in history. It's so interesting!"
+     },
+     {
+      "w": "excited / exciting",
+      "ex": "We're excited about the exciting trip."
+     },
+     {
+      "w": "tired / tiring",
+      "ex": "It was a tiring day, so I'm tired now."
+     },
+     {
+      "w": "surprised / surprising",
+      "ex": "I was surprised. The ending was surprising."
+     },
+     {
+      "w": "relaxed / relaxing",
+      "ex": "A relaxing bath makes me feel relaxed."
+     }
+    ],
+    "gram": "-ed adjectives describe how a person feels (bored, excited); -ing adjectives describe what causes the feeling (boring, exciting)."
+   }
+  },
+  {
+   "d": 204,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Strong adjectives: huge, freezing",
+     "g": "Use extreme adjectives with absolutely to sound more natural and expressive.",
+     "p": [
+      "Normal and strong: big/huge, cold/freezing, tired/exhausted, good/fantastic, tasty/delicious, small/tiny.",
+      "With strong adjectives use absolutely or really: absolutely delicious, really exhausted. Not very delicious.",
+      "With normal adjectives use very or extremely: very cold, extremely tired. Completely also goes with strong ones."
+     ],
+     "q": "Describe your best meal ever and the hottest or coldest day you remember, using strong adjectives.",
+     "c": "Rewrite five plain sentences with strong adjectives: The room was big > The room was absolutely huge."
+    },
+    "de": {
+     "t": "Strong adjectives: huge, freezing",
+     "g": "Starke Adjektive mit absolutely machen dein Englisch natürlicher und ausdrucksvoller.",
+     "p": [
+      "Normal und stark: big/huge, cold/freezing, tired/exhausted, good/fantastic, tasty/delicious, small/tiny.",
+      "Zu starken Adjektiven passt absolutely oder really: absolutely delicious, really exhausted. Nicht very delicious.",
+      "Zu normalen Adjektiven passt very oder extremely: very cold, extremely tired. Completely geht mit starken."
+     ],
+     "q": "Beschreib dein bestes Essen aller Zeiten und den heißesten oder kältesten Tag, an den du dich erinnerst, mit starken Adjektiven.",
+     "c": "Formuliere fünf einfache Sätze mit starken Adjektiven um: The room was big > The room was absolutely huge."
+    },
+    "es": {
+     "t": "Strong adjectives: huge, freezing",
+     "g": "Usa adjetivos extremos con absolutely para sonar más natural y expresivo.",
+     "p": [
+      "Normal y fuerte: big/huge, cold/freezing, tired/exhausted, good/fantastic, tasty/delicious, small/tiny.",
+      "Con los fuertes usa absolutely o really: absolutely delicious, really exhausted. No very delicious.",
+      "Con los normales usa very o extremely: very cold, extremely tired. Completely va con los fuertes."
+     ],
+     "q": "Describe la mejor comida de tu vida y el día más caluroso o más frío que recuerdes, con adjetivos fuertes.",
+     "c": "Reescribe cinco frases simples con adjetivos fuertes: The room was big > The room was absolutely huge."
+    },
+    "fr": {
+     "t": "Strong adjectives: huge, freezing",
+     "g": "Utilise des adjectifs forts avec absolutely pour être plus naturel et expressif.",
+     "p": [
+      "Normal et fort : big/huge, cold/freezing, tired/exhausted, good/fantastic, tasty/delicious, small/tiny.",
+      "Avec les adjectifs forts : absolutely ou really. absolutely delicious, really exhausted. Pas very delicious.",
+      "Avec les adjectifs normaux : very ou extremely. very cold, extremely tired. Completely va avec les forts."
+     ],
+     "q": "Décris le meilleur repas de ta vie et le jour le plus chaud ou le plus froid dont tu te souviens, avec des adjectifs forts.",
+     "c": "Réécris cinq phrases simples avec des adjectifs forts : The room was big > The room was absolutely huge."
+    },
+    "it": {
+     "t": "Strong adjectives: huge, freezing",
+     "g": "Usa aggettivi forti con absolutely per sembrare più naturale ed espressivo.",
+     "p": [
+      "Normale e forte: big/huge, cold/freezing, tired/exhausted, good/fantastic, tasty/delicious, small/tiny.",
+      "Con gli aggettivi forti usa absolutely o really: absolutely delicious, really exhausted. Non very delicious.",
+      "Con quelli normali usa very o extremely: very cold, extremely tired. Completely va con quelli forti."
+     ],
+     "q": "Descrivi il pasto più buono della tua vita e il giorno più caldo o più freddo che ricordi, con aggettivi forti.",
+     "c": "Riscrivi cinque frasi semplici con aggettivi forti: The room was big > The room was absolutely huge."
+    },
+    "pt": {
+     "t": "Strong adjectives: huge, freezing",
+     "g": "Usa adjetivos fortes com absolutely para soares mais natural e expressivo.",
+     "p": [
+      "Normal e forte: big/huge, cold/freezing, tired/exhausted, good/fantastic, tasty/delicious, small/tiny.",
+      "Com adjetivos fortes usa absolutely ou really: absolutely delicious, really exhausted. Não very delicious.",
+      "Com os normais usa very ou extremely: very cold, extremely tired. Completely combina com os fortes."
+     ],
+     "q": "Descreve a melhor refeição da tua vida e o dia mais quente ou mais frio de que te lembras, com adjetivos fortes.",
+     "c": "Reescreve cinco frases simples com adjetivos fortes: The room was big > The room was absolutely huge."
+    },
+    "pt_BR": {
+     "t": "Strong adjectives: huge, freezing",
+     "g": "Use adjetivos fortes com absolutely para soar mais natural e expressivo.",
+     "p": [
+      "Normal e forte: big/huge, cold/freezing, tired/exhausted, good/fantastic, tasty/delicious, small/tiny.",
+      "Com adjetivos fortes use absolutely ou really: absolutely delicious, really exhausted. Não very delicious.",
+      "Com os normais use very ou extremely: very cold, extremely tired. Completely combina com os fortes."
+     ],
+     "q": "Descreva a melhor refeição da sua vida e o dia mais quente ou mais frio de que você se lembra, com adjetivos fortes.",
+     "c": "Reescreva cinco frases simples com adjetivos fortes: The room was big > The room was absolutely huge."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "huge",
+      "ex": "Their garden is absolutely huge."
+     },
+     {
+      "w": "freezing",
+      "ex": "It's freezing outside, take a scarf!"
+     },
+     {
+      "w": "exhausted",
+      "ex": "I was completely exhausted after the hike."
+     },
+     {
+      "w": "delicious",
+      "ex": "This soup is absolutely delicious."
+     },
+     {
+      "w": "tiny",
+      "ex": "They live in a tiny flat in the centre."
+     },
+     {
+      "w": "fantastic",
+      "ex": "We had a fantastic time at the festival."
+     }
+    ],
+    "gram": "Strong adjectives (huge, freezing, exhausted) go with absolutely/really/completely, not very. Normal adjectives go with very/extremely."
+   }
+  },
+  {
+   "d": 205,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Collocations: make a decision",
+     "g": "Learn words that naturally go together, so your English sounds fluent.",
+     "p": [
+      "Make: a decision, a mistake, a plan, friends, an effort. Do: homework, the shopping, exercise, your best.",
+      "Take: a photo, a break, a shower, a taxi. Catch: a cold, a bus, someone's attention.",
+      "Adjective + noun: heavy rain, strong coffee, a close friend, a busy street, fast food."
+     ],
+     "q": "What is the best decision you have ever made, and when did you last take a break just for yourself?",
+     "c": "Write six sentences, each with a different collocation: make, do, take, catch, heavy and strong."
+    },
+    "de": {
+     "t": "Collocations: make a decision",
+     "g": "Du lernst Wörter, die natürlich zusammengehören, damit dein Englisch flüssig klingt.",
+     "p": [
+      "Make: a decision, a mistake, a plan, friends, an effort. Do: homework, the shopping, exercise, your best.",
+      "Take: a photo, a break, a shower, a taxi. Catch: a cold, a bus, someone's attention.",
+      "Adjektiv + Nomen: heavy rain, strong coffee, a close friend, a busy street, fast food."
+     ],
+     "q": "Was war die beste Entscheidung deines Lebens, und wann hast du zuletzt eine Pause nur für dich gemacht?",
+     "c": "Schreib sechs Sätze mit je einer anderen Kollokation: make, do, take, catch, heavy und strong."
+    },
+    "es": {
+     "t": "Collocations: make a decision",
+     "g": "Aprende palabras que van juntas de forma natural para sonar más fluido.",
+     "p": [
+      "Make: a decision, a mistake, a plan, friends, an effort. Do: homework, the shopping, exercise, your best.",
+      "Take: a photo, a break, a shower, a taxi. Catch: a cold, a bus, someone's attention.",
+      "Adjetivo + sustantivo: heavy rain, strong coffee, a close friend, a busy street, fast food."
+     ],
+     "q": "¿Cuál es la mejor decisión que has tomado, y cuándo te tomaste por última vez un descanso solo para ti?",
+     "c": "Escribe seis frases, cada una con una colocación distinta: make, do, take, catch, heavy y strong."
+    },
+    "fr": {
+     "t": "Collocations: make a decision",
+     "g": "Apprends les mots qui vont naturellement ensemble pour parler avec aisance.",
+     "p": [
+      "Make : a decision, a mistake, a plan, friends, an effort. Do : homework, the shopping, exercise, your best.",
+      "Take : a photo, a break, a shower, a taxi. Catch : a cold, a bus, someone's attention.",
+      "Adjectif + nom : heavy rain, strong coffee, a close friend, a busy street, fast food."
+     ],
+     "q": "Quelle est la meilleure décision que tu aies prise, et quand t'es-tu accordé une pause rien que pour toi ?",
+     "c": "Écris six phrases, chacune avec une collocation différente : make, do, take, catch, heavy et strong."
+    },
+    "it": {
+     "t": "Collocations: make a decision",
+     "g": "Impara le parole che stanno bene insieme per un inglese più fluido.",
+     "p": [
+      "Make: a decision, a mistake, a plan, friends, an effort. Do: homework, the shopping, exercise, your best.",
+      "Take: a photo, a break, a shower, a taxi. Catch: a cold, a bus, someone's attention.",
+      "Aggettivo + nome: heavy rain, strong coffee, a close friend, a busy street, fast food."
+     ],
+     "q": "Qual è la decisione migliore che hai mai preso, e quando ti sei preso l'ultima pausa solo per te?",
+     "c": "Scrivi sei frasi, ognuna con una collocazione diversa: make, do, take, catch, heavy e strong."
+    },
+    "pt": {
+     "t": "Collocations: make a decision",
+     "g": "Aprende palavras que andam juntas naturalmente, para soares mais fluente.",
+     "p": [
+      "Make: a decision, a mistake, a plan, friends, an effort. Do: homework, the shopping, exercise, your best.",
+      "Take: a photo, a break, a shower, a taxi. Catch: a cold, a bus, someone's attention.",
+      "Adjetivo + substantivo: heavy rain, strong coffee, a close friend, a busy street, fast food."
+     ],
+     "q": "Qual foi a melhor decisão que já tomaste, e quando fizeste a última pausa só para ti?",
+     "c": "Escreve seis frases, cada uma com uma colocação diferente: make, do, take, catch, heavy e strong."
+    },
+    "pt_BR": {
+     "t": "Collocations: make a decision",
+     "g": "Aprenda palavras que combinam naturalmente, para soar mais fluente.",
+     "p": [
+      "Make: a decision, a mistake, a plan, friends, an effort. Do: homework, the shopping, exercise, your best.",
+      "Take: a photo, a break, a shower, a taxi. Catch: a cold, a bus, someone's attention.",
+      "Adjetivo + substantivo: heavy rain, strong coffee, a close friend, a busy street, fast food."
+     ],
+     "q": "Qual foi a melhor decisão que você já tomou, e quando fez a última pausa só para você?",
+     "c": "Escreva seis frases, cada uma com uma colocação diferente: make, do, take, catch, heavy e strong."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "make a decision",
+      "ex": "It took me a week to make a decision."
+     },
+     {
+      "w": "do your best",
+      "ex": "Don't worry, just do your best."
+     },
+     {
+      "w": "take a break",
+      "ex": "Let's take a break and get some coffee."
+     },
+     {
+      "w": "catch a cold",
+      "ex": "Wear a jacket or you'll catch a cold."
+     },
+     {
+      "w": "heavy rain",
+      "ex": "Heavy rain is expected this evening."
+     },
+     {
+      "w": "a close friend",
+      "ex": "She's been a close friend since university."
+     }
+    ],
+    "gram": "Collocations are natural word partners: make a decision (not do), do homework, take a photo, catch a cold, heavy rain, strong coffee."
+   }
+  },
+  {
+   "d": 206,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Phrasal verbs for friendships",
+     "g": "Talk about friends with common phrasal verbs.",
+     "p": [
+      "Get on (well) with = have a good relationship: I get on really well with my cousin.",
+      "Fall out (with) = argue and stop being friends; make up = become friends again: We fell out but made up the next day.",
+      "Catch up = share news after time apart; hang out = spend free time together: Let's hang out and catch up!"
+     ],
+     "q": "Who do you get on really well with, and who would you love to catch up with soon?",
+     "c": "Write a short story about two friends using get on with, fall out, make up, catch up and hang out."
+    },
+    "de": {
+     "t": "Phrasal verbs for friendships",
+     "g": "Du sprichst mit typischen Phrasal Verbs über Freundschaften.",
+     "p": [
+      "Get on (well) with = sich gut verstehen: I get on really well with my cousin.",
+      "Fall out (with) = sich zerstreiten; make up = sich versöhnen: We fell out but made up the next day.",
+      "Catch up = Neuigkeiten austauschen; hang out = Zeit zusammen verbringen: Let's hang out and catch up!"
+     ],
+     "q": "Mit wem verstehst du dich richtig gut, und mit wem würdest du gern bald mal wieder quatschen?",
+     "c": "Schreib eine kurze Geschichte über zwei Freunde mit get on with, fall out, make up, catch up und hang out."
+    },
+    "es": {
+     "t": "Phrasal verbs for friendships",
+     "g": "Habla de amistades con phrasal verbs muy comunes.",
+     "p": [
+      "Get on (well) with = llevarse bien: I get on really well with my cousin.",
+      "Fall out (with) = pelearse; make up = reconciliarse: We fell out but made up the next day.",
+      "Catch up = ponerse al día; hang out = pasar el rato juntos: Let's hang out and catch up!"
+     ],
+     "q": "¿Con quién te llevas muy bien, y con quién te encantaría ponerte al día pronto?",
+     "c": "Escribe una historia corta sobre dos amigos con get on with, fall out, make up, catch up y hang out."
+    },
+    "fr": {
+     "t": "Phrasal verbs for friendships",
+     "g": "Parle d'amitié avec des phrasal verbs courants.",
+     "p": [
+      "Get on (well) with = bien s'entendre : I get on really well with my cousin.",
+      "Fall out (with) = se brouiller ; make up = se réconcilier : We fell out but made up the next day.",
+      "Catch up = se donner des nouvelles ; hang out = passer du temps ensemble : Let's hang out and catch up!"
+     ],
+     "q": "Avec qui t'entends-tu vraiment bien, et avec qui aimerais-tu bientôt prendre des nouvelles ?",
+     "c": "Écris une petite histoire de deux amis avec get on with, fall out, make up, catch up et hang out."
+    },
+    "it": {
+     "t": "Phrasal verbs for friendships",
+     "g": "Parla di amicizia con phrasal verbs molto comuni.",
+     "p": [
+      "Get on (well) with = andare d'accordo: I get on really well with my cousin.",
+      "Fall out (with) = litigare; make up = fare pace: We fell out but made up the next day.",
+      "Catch up = aggiornarsi; hang out = passare il tempo insieme: Let's hang out and catch up!"
+     ],
+     "q": "Con chi vai davvero d'accordo, e con chi ti piacerebbe aggiornarti presto?",
+     "c": "Scrivi una breve storia su due amici con get on with, fall out, make up, catch up e hang out."
+    },
+    "pt": {
+     "t": "Phrasal verbs for friendships",
+     "g": "Fala de amizades com phrasal verbs comuns.",
+     "p": [
+      "Get on (well) with = dar-se bem: I get on really well with my cousin.",
+      "Fall out (with) = zangar-se; make up = fazer as pazes: We fell out but made up the next day.",
+      "Catch up = pôr a conversa em dia; hang out = passar tempo juntos: Let's hang out and catch up!"
+     ],
+     "q": "Com quem te dás mesmo bem, e com quem gostavas de pôr a conversa em dia em breve?",
+     "c": "Escreve uma pequena história sobre dois amigos com get on with, fall out, make up, catch up e hang out."
+    },
+    "pt_BR": {
+     "t": "Phrasal verbs for friendships",
+     "g": "Fale de amizades com phrasal verbs comuns.",
+     "p": [
+      "Get on (well) with = se dar bem: I get on really well with my cousin.",
+      "Fall out (with) = brigar; make up = fazer as pazes: We fell out but made up the next day.",
+      "Catch up = colocar o papo em dia; hang out = passar tempo juntos: Let's hang out and catch up!"
+     ],
+     "q": "Com quem você se dá muito bem, e com quem gostaria de colocar o papo em dia logo?",
+     "c": "Escreva uma pequena história sobre dois amigos com get on with, fall out, make up, catch up e hang out."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "get on with",
+      "ex": "I get on well with all my neighbours."
+     },
+     {
+      "w": "fall out",
+      "ex": "They fell out over a silly game."
+     },
+     {
+      "w": "make up",
+      "ex": "After a long talk, they made up."
+     },
+     {
+      "w": "catch up",
+      "ex": "Let's meet for coffee and catch up."
+     },
+     {
+      "w": "hang out",
+      "ex": "We usually hang out at the park on Sundays."
+     },
+     {
+      "w": "look up to",
+      "ex": "I've always looked up to my older sister."
+     }
+    ],
+    "gram": "Phrasal verbs for friends: get on with, fall out (with), make up, catch up, hang out. Many are intransitive: We made up."
+   }
+  },
+  {
+   "d": 207,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Phrasal verbs for work",
+     "g": "Use common phrasal verbs you hear in the office.",
+     "p": [
+      "Set up = start or organise: She set up her own company. Can you set up the meeting?",
+      "Carry on = continue; take over = take control or responsibility: Carry on, please. Ana will take over the project.",
+      "Deal with = handle; put off = postpone: I'll deal with the emails. Let's not put off the decision."
+     ],
+     "q": "Which task at work or school do you tend to put off, and which one do you enjoy dealing with?",
+     "c": "Write a short work update using set up, carry on, take over, deal with and put off."
+    },
+    "de": {
+     "t": "Phrasal verbs for work",
+     "g": "Du benutzt typische Phrasal Verbs aus dem Büroalltag.",
+     "p": [
+      "Set up = gründen, organisieren: She set up her own company. Can you set up the meeting?",
+      "Carry on = weitermachen; take over = übernehmen: Carry on, please. Ana will take over the project.",
+      "Deal with = sich kümmern um; put off = verschieben: I'll deal with the emails. Let's not put off the decision."
+     ],
+     "q": "Welche Aufgabe bei der Arbeit oder im Studium schiebst du gern auf, und um welche kümmerst du dich gern?",
+     "c": "Schreib ein kurzes Arbeits-Update mit set up, carry on, take over, deal with und put off."
+    },
+    "es": {
+     "t": "Phrasal verbs for work",
+     "g": "Usa los phrasal verbs que se oyen a menudo en la oficina.",
+     "p": [
+      "Set up = crear u organizar: She set up her own company. Can you set up the meeting?",
+      "Carry on = continuar; take over = hacerse cargo: Carry on, please. Ana will take over the project.",
+      "Deal with = ocuparse de; put off = aplazar: I'll deal with the emails. Let's not put off the decision."
+     ],
+     "q": "¿Qué tarea del trabajo o los estudios sueles aplazar, y de cuál te gusta ocuparte?",
+     "c": "Escribe una breve actualización de trabajo con set up, carry on, take over, deal with y put off."
+    },
+    "fr": {
+     "t": "Phrasal verbs for work",
+     "g": "Utilise les phrasal verbs courants qu'on entend au bureau.",
+     "p": [
+      "Set up = créer, organiser : She set up her own company. Can you set up the meeting?",
+      "Carry on = continuer ; take over = prendre le relais : Carry on, please. Ana will take over the project.",
+      "Deal with = s'occuper de ; put off = reporter : I'll deal with the emails. Let's not put off the decision."
+     ],
+     "q": "Quelle tâche au travail ou en cours as-tu tendance à reporter, et de laquelle aimes-tu t'occuper ?",
+     "c": "Écris un petit point d'avancement avec set up, carry on, take over, deal with et put off."
+    },
+    "it": {
+     "t": "Phrasal verbs for work",
+     "g": "Usa i phrasal verbs più comuni in ufficio.",
+     "p": [
+      "Set up = avviare, organizzare: She set up her own company. Can you set up the meeting?",
+      "Carry on = continuare; take over = subentrare: Carry on, please. Ana will take over the project.",
+      "Deal with = occuparsi di; put off = rimandare: I'll deal with the emails. Let's not put off the decision."
+     ],
+     "q": "Quale compito al lavoro o nello studio tendi a rimandare, e di quale ti piace occuparti?",
+     "c": "Scrivi un breve aggiornamento di lavoro con set up, carry on, take over, deal with e put off."
+    },
+    "pt": {
+     "t": "Phrasal verbs for work",
+     "g": "Usa os phrasal verbs que se ouvem muito no escritório.",
+     "p": [
+      "Set up = criar, organizar: She set up her own company. Can you set up the meeting?",
+      "Carry on = continuar; take over = assumir: Carry on, please. Ana will take over the project.",
+      "Deal with = tratar de; put off = adiar: I'll deal with the emails. Let's not put off the decision."
+     ],
+     "q": "Que tarefa no trabalho ou nos estudos costumas adiar, e de qual gostas de tratar?",
+     "c": "Escreve uma pequena atualização de trabalho com set up, carry on, take over, deal with e put off."
+    },
+    "pt_BR": {
+     "t": "Phrasal verbs for work",
+     "g": "Use os phrasal verbs que mais se ouvem no escritório.",
+     "p": [
+      "Set up = criar, organizar: She set up her own company. Can you set up the meeting?",
+      "Carry on = continuar; take over = assumir: Carry on, please. Ana will take over the project.",
+      "Deal with = lidar com; put off = adiar: I'll deal with the emails. Let's not put off the decision."
+     ],
+     "q": "Que tarefa no trabalho ou nos estudos você costuma adiar, e com qual gosta de lidar?",
+     "c": "Escreva uma pequena atualização de trabalho com set up, carry on, take over, deal with e put off."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "set up",
+      "ex": "We set up a new team last month."
+     },
+     {
+      "w": "carry on",
+      "ex": "Please carry on with your presentation."
+     },
+     {
+      "w": "take over",
+      "ex": "Who will take over when you're on holiday?"
+     },
+     {
+      "w": "deal with",
+      "ex": "I'll deal with the customer's request."
+     },
+     {
+      "w": "put off",
+      "ex": "Let's put off the meeting until Friday."
+     },
+     {
+      "w": "follow up",
+      "ex": "I'll follow up with an email tomorrow."
+     }
+    ],
+    "gram": "Work phrasal verbs: set up, carry on, take over, deal with, put off, follow up. Separable ones: put the meeting off / put it off."
+   }
+  },
+  {
+   "d": 208,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Idioms for everyday life",
+     "g": "Understand and use common idioms at the right moment.",
+     "p": [
+      "Piece of cake = very easy. Under the weather = a bit unwell. The test was a piece of cake!",
+      "Break the ice = make people relax at first meeting. Hit the books = study hard. A game broke the ice.",
+      "Use idioms in relaxed conversation, not in formal writing. One or two are enough to sound natural."
+     ],
+     "q": "What was a piece of cake for you this week, and what is a good way to break the ice with new people?",
+     "c": "Write a mini chat between two friends using four idioms: piece of cake, under the weather, break the ice, hit the books."
+    },
+    "de": {
+     "t": "Idioms for everyday life",
+     "g": "Du verstehst häufige Redewendungen und setzt sie im richtigen Moment ein.",
+     "p": [
+      "Piece of cake = kinderleicht. Under the weather = etwas angeschlagen. The test was a piece of cake!",
+      "Break the ice = das Eis brechen. Hit the books = fleißig lernen. A game broke the ice.",
+      "Redewendungen passen zu lockeren Gesprächen, nicht zu formellen Texten. Ein oder zwei reichen völlig."
+     ],
+     "q": "Was war diese Woche für dich kinderleicht, und wie bricht man gut das Eis mit neuen Leuten?",
+     "c": "Schreib einen Mini-Chat zwischen zwei Freunden mit vier Redewendungen: piece of cake, under the weather, break the ice, hit the books."
+    },
+    "es": {
+     "t": "Idioms for everyday life",
+     "g": "Entiende y usa expresiones idiomáticas comunes en el momento adecuado.",
+     "p": [
+      "Piece of cake = pan comido. Under the weather = un poco pachucho. The test was a piece of cake!",
+      "Break the ice = romper el hielo. Hit the books = estudiar a fondo. A game broke the ice.",
+      "Usa los modismos en conversaciones relajadas, no en textos formales. Con uno o dos basta."
+     ],
+     "q": "¿Qué fue pan comido para ti esta semana, y cuál es una buena forma de romper el hielo con gente nueva?",
+     "c": "Escribe un mini chat entre dos amigos con cuatro modismos: piece of cake, under the weather, break the ice, hit the books."
+    },
+    "fr": {
+     "t": "Idioms for everyday life",
+     "g": "Comprends et utilise des expressions idiomatiques courantes au bon moment.",
+     "p": [
+      "Piece of cake = du gâteau. Under the weather = un peu patraque. The test was a piece of cake!",
+      "Break the ice = briser la glace. Hit the books = bosser dur. A game broke the ice.",
+      "Les expressions vont avec une conversation détendue, pas un écrit formel. Une ou deux suffisent."
+     ],
+     "q": "Qu'est-ce qui a été du gâteau pour toi cette semaine, et comment briser la glace avec de nouvelles personnes ?",
+     "c": "Écris un mini chat entre deux amis avec quatre expressions : piece of cake, under the weather, break the ice, hit the books."
+    },
+    "it": {
+     "t": "Idioms for everyday life",
+     "g": "Capisci e usa modi di dire comuni nel momento giusto.",
+     "p": [
+      "Piece of cake = un gioco da ragazzi. Under the weather = un po' giù di forma. The test was a piece of cake!",
+      "Break the ice = rompere il ghiaccio. Hit the books = mettersi sui libri. A game broke the ice.",
+      "Usa i modi di dire nelle conversazioni informali, non nei testi formali. Uno o due bastano."
+     ],
+     "q": "Cosa è stato un gioco da ragazzi per te questa settimana, e come si rompe il ghiaccio con persone nuove?",
+     "c": "Scrivi una mini chat tra due amici con quattro modi di dire: piece of cake, under the weather, break the ice, hit the books."
+    },
+    "pt": {
+     "t": "Idioms for everyday life",
+     "g": "Percebe e usa expressões idiomáticas comuns no momento certo.",
+     "p": [
+      "Piece of cake = canja. Under the weather = um pouco adoentado. The test was a piece of cake!",
+      "Break the ice = quebrar o gelo. Hit the books = estudar a sério. A game broke the ice.",
+      "Usa as expressões em conversas descontraídas, não em textos formais. Uma ou duas chegam."
+     ],
+     "q": "O que foi canja para ti esta semana, e qual é uma boa forma de quebrar o gelo com pessoas novas?",
+     "c": "Escreve um mini chat entre dois amigos com quatro expressões: piece of cake, under the weather, break the ice, hit the books."
+    },
+    "pt_BR": {
+     "t": "Idioms for everyday life",
+     "g": "Entenda e use expressões idiomáticas comuns na hora certa.",
+     "p": [
+      "Piece of cake = moleza. Under the weather = meio indisposto. The test was a piece of cake!",
+      "Break the ice = quebrar o gelo. Hit the books = estudar pra valer. A game broke the ice.",
+      "Use as expressões em conversas descontraídas, não em textos formais. Uma ou duas já bastam."
+     ],
+     "q": "O que foi moleza para você esta semana, e qual é um bom jeito de quebrar o gelo com gente nova?",
+     "c": "Escreva um mini chat entre dois amigos com quatro expressões: piece of cake, under the weather, break the ice, hit the books."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "a piece of cake",
+      "ex": "Don't worry, the quiz is a piece of cake."
+     },
+     {
+      "w": "under the weather",
+      "ex": "I'm feeling a bit under the weather today."
+     },
+     {
+      "w": "break the ice",
+      "ex": "A funny story helped break the ice."
+     },
+     {
+      "w": "hit the books",
+      "ex": "Exams are next week, so I need to hit the books."
+     },
+     {
+      "w": "once in a blue moon",
+      "ex": "We only eat out once in a blue moon."
+     },
+     {
+      "w": "on the same page",
+      "ex": "Let's check we're all on the same page."
+     }
+    ],
+    "gram": "Idioms have a whole meaning you can't guess word by word: a piece of cake = very easy. Use them in informal speech, not formal writing."
+   }
+  },
+  {
+   "d": 209,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Talking about friends",
+     "g": "Describe how you met friends, what you do together and what makes a good friend.",
+     "p": [
+      "How you met: We met at university. We've known each other since we were ten. We got talking at a party.",
+      "Together: We often hang out at weekends. We've been going to the same gym for years.",
+      "Qualities: A good friend is loyal, honest and supportive. She's always there for me. He makes me laugh."
+     ],
+     "q": "Tell me about one of your best friends: how you met, what you do together and why they are special.",
+     "c": "Write a short paragraph about a friend with a present perfect, a phrasal verb and three personality adjectives."
+    },
+    "de": {
+     "t": "Talking about friends",
+     "g": "Du erzählst, wie du Freunde kennengelernt hast, was ihr zusammen macht und was gute Freunde ausmacht.",
+     "p": [
+      "Kennenlernen: We met at university. We've known each other since we were ten. We got talking at a party.",
+      "Zusammen: We often hang out at weekends. We've been going to the same gym for years.",
+      "Eigenschaften: A good friend is loyal, honest and supportive. She's always there for me. He makes me laugh."
+     ],
+     "q": "Erzähl mir von einem deiner besten Freunde: wie ihr euch kennengelernt habt, was ihr macht und warum er besonders ist.",
+     "c": "Schreib einen kurzen Absatz über einen Freund mit Present Perfect, einem Phrasal Verb und drei Charakter-Adjektiven."
+    },
+    "es": {
+     "t": "Talking about friends",
+     "g": "Cuenta cómo conociste a tus amigos, qué hacéis juntos y qué hace a un buen amigo.",
+     "p": [
+      "Cómo os conocisteis: We met at university. We've known each other since we were ten. We got talking at a party.",
+      "Juntos: We often hang out at weekends. We've been going to the same gym for years.",
+      "Cualidades: A good friend is loyal, honest and supportive. She's always there for me. He makes me laugh."
+     ],
+     "q": "Háblame de uno de tus mejores amigos: cómo os conocisteis, qué hacéis juntos y por qué es especial.",
+     "c": "Escribe un párrafo corto sobre un amigo con un present perfect, un phrasal verb y tres adjetivos de personalidad."
+    },
+    "fr": {
+     "t": "Talking about friends",
+     "g": "Raconte comment tu as rencontré tes amis, ce que vous faites ensemble et ce qui fait un bon ami.",
+     "p": [
+      "La rencontre : We met at university. We've known each other since we were ten. We got talking at a party.",
+      "Ensemble : We often hang out at weekends. We've been going to the same gym for years.",
+      "Qualités : A good friend is loyal, honest and supportive. She's always there for me. He makes me laugh."
+     ],
+     "q": "Parle-moi d'un de tes meilleurs amis : votre rencontre, ce que vous faites ensemble et pourquoi il compte pour toi.",
+     "c": "Écris un court paragraphe sur un ami avec un present perfect, un phrasal verb et trois adjectifs de personnalité."
+    },
+    "it": {
+     "t": "Talking about friends",
+     "g": "Racconta come hai conosciuto i tuoi amici, cosa fate insieme e cosa rende speciale un amico.",
+     "p": [
+      "Come vi siete conosciuti: We met at university. We've known each other since we were ten. We got talking at a party.",
+      "Insieme: We often hang out at weekends. We've been going to the same gym for years.",
+      "Qualità: A good friend is loyal, honest and supportive. She's always there for me. He makes me laugh."
+     ],
+     "q": "Parlami di uno dei tuoi migliori amici: come vi siete conosciuti, cosa fate insieme e perché è speciale.",
+     "c": "Scrivi un breve paragrafo su un amico con un present perfect, un phrasal verb e tre aggettivi di personalità."
+    },
+    "pt": {
+     "t": "Talking about friends",
+     "g": "Conta como conheceste os teus amigos, o que fazem juntos e o que faz um bom amigo.",
+     "p": [
+      "Como se conheceram: We met at university. We've known each other since we were ten. We got talking at a party.",
+      "Juntos: We often hang out at weekends. We've been going to the same gym for years.",
+      "Qualidades: A good friend is loyal, honest and supportive. She's always there for me. He makes me laugh."
+     ],
+     "q": "Fala-me de um dos teus melhores amigos: como se conheceram, o que fazem juntos e porque é especial.",
+     "c": "Escreve um parágrafo curto sobre um amigo com um present perfect, um phrasal verb e três adjetivos de personalidade."
+    },
+    "pt_BR": {
+     "t": "Talking about friends",
+     "g": "Conte como você conheceu seus amigos, o que fazem juntos e o que faz um bom amigo.",
+     "p": [
+      "Como se conheceram: We met at university. We've known each other since we were ten. We got talking at a party.",
+      "Juntos: We often hang out at weekends. We've been going to the same gym for years.",
+      "Qualidades: A good friend is loyal, honest and supportive. She's always there for me. He makes me laugh."
+     ],
+     "q": "Me fale de um dos seus melhores amigos: como se conheceram, o que fazem juntos e por que ele é especial.",
+     "c": "Escreva um parágrafo curto sobre um amigo com um present perfect, um phrasal verb e três adjetivos de personalidade."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "we met at",
+      "ex": "We met at a language exchange in Madrid."
+     },
+     {
+      "w": "we've known each other",
+      "ex": "We've known each other for fifteen years."
+     },
+     {
+      "w": "loyal",
+      "ex": "A loyal friend stays with you in hard times."
+     },
+     {
+      "w": "supportive",
+      "ex": "My friends were really supportive when I changed jobs."
+     },
+     {
+      "w": "always there for me",
+      "ex": "My best friend is always there for me."
+     },
+     {
+      "w": "have a lot in common",
+      "ex": "We have a lot in common, like music and food."
+     }
+    ],
+    "gram": "Talking about friends: past simple for how you met (We met in 2015), present perfect for duration (We've known each other for years)."
+   }
+  },
+  {
+   "d": 210,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Review: tenses and stories",
+     "g": "Recap narrative tenses, conditionals, reported speech and deduction.",
+     "p": [
+      "Stories: I was walking home when I saw an old friend. I hadn't seen him for years. We've been chatting ever since.",
+      "Imagination and wishes: If I had more time, I'd travel. I wish I could sing. If it rains, we'll stay in.",
+      "Reporting and guessing: She said she was tired. He asked if I was free. They must have left. It can't be true."
+     ],
+     "q": "Tell me a short story from your life and finish it with what someone said and how you felt.",
+     "c": "Write six sentences: one narrative, one past perfect, one second conditional, one wish, one reported and one deduction."
+    },
+    "de": {
+     "t": "Review: tenses and stories",
+     "g": "Du wiederholst Erzählzeiten, Bedingungssätze, indirekte Rede und Vermutungen.",
+     "p": [
+      "Geschichten: I was walking home when I saw an old friend. I hadn't seen him for years. We've been chatting ever since.",
+      "Vorstellung und Wünsche: If I had more time, I'd travel. I wish I could sing. If it rains, we'll stay in.",
+      "Wiedergeben und vermuten: She said she was tired. He asked if I was free. They must have left. It can't be true."
+     ],
+     "q": "Erzähl mir eine kurze Geschichte aus deinem Leben und beende sie damit, was jemand sagte und wie du dich fühltest.",
+     "c": "Schreib sechs Sätze: Erzählung, Past Perfect, Second Conditional, Wunsch, indirekte Rede und Vermutung."
+    },
+    "es": {
+     "t": "Review: tenses and stories",
+     "g": "Repasa los tiempos narrativos, los condicionales, el estilo indirecto y las deducciones.",
+     "p": [
+      "Historias: I was walking home when I saw an old friend. I hadn't seen him for years. We've been chatting ever since.",
+      "Imaginación y deseos: If I had more time, I'd travel. I wish I could sing. If it rains, we'll stay in.",
+      "Contar y deducir: She said she was tired. He asked if I was free. They must have left. It can't be true."
+     ],
+     "q": "Cuéntame una historia corta de tu vida y termínala con lo que alguien dijo y cómo te sentiste.",
+     "c": "Escribe seis frases: una narrativa, un past perfect, un second conditional, un deseo, una en estilo indirecto y una deducción."
+    },
+    "fr": {
+     "t": "Review: tenses and stories",
+     "g": "Révise les temps du récit, les conditionnelles, le discours rapporté et la déduction.",
+     "p": [
+      "Récits : I was walking home when I saw an old friend. I hadn't seen him for years. We've been chatting ever since.",
+      "Imaginaire et souhaits : If I had more time, I'd travel. I wish I could sing. If it rains, we'll stay in.",
+      "Rapporter et déduire : She said she was tired. He asked if I was free. They must have left. It can't be true."
+     ],
+     "q": "Raconte-moi une petite histoire de ta vie et termine par ce que quelqu'un a dit et ce que tu as ressenti.",
+     "c": "Écris six phrases : un récit, un past perfect, un second conditional, un souhait, un discours rapporté et une déduction."
+    },
+    "it": {
+     "t": "Review: tenses and stories",
+     "g": "Ripassa i tempi narrativi, i condizionali, il discorso indiretto e le deduzioni.",
+     "p": [
+      "Storie: I was walking home when I saw an old friend. I hadn't seen him for years. We've been chatting ever since.",
+      "Immaginazione e desideri: If I had more time, I'd travel. I wish I could sing. If it rains, we'll stay in.",
+      "Riferire e dedurre: She said she was tired. He asked if I was free. They must have left. It can't be true."
+     ],
+     "q": "Raccontami una breve storia della tua vita e concludila con ciò che qualcuno ha detto e come ti sei sentito.",
+     "c": "Scrivi sei frasi: una narrativa, un past perfect, un second conditional, un desiderio, un discorso indiretto e una deduzione."
+    },
+    "pt": {
+     "t": "Review: tenses and stories",
+     "g": "Revê os tempos narrativos, as condicionais, o discurso indireto e as deduções.",
+     "p": [
+      "Histórias: I was walking home when I saw an old friend. I hadn't seen him for years. We've been chatting ever since.",
+      "Imaginação e desejos: If I had more time, I'd travel. I wish I could sing. If it rains, we'll stay in.",
+      "Relatar e deduzir: She said she was tired. He asked if I was free. They must have left. It can't be true."
+     ],
+     "q": "Conta-me uma pequena história da tua vida e termina com o que alguém disse e como te sentiste.",
+     "c": "Escreve seis frases: uma narrativa, um past perfect, um second conditional, um desejo, um discurso indireto e uma dedução."
+    },
+    "pt_BR": {
+     "t": "Review: tenses and stories",
+     "g": "Revise os tempos narrativos, as condicionais, o discurso indireto e as deduções.",
+     "p": [
+      "Histórias: I was walking home when I saw an old friend. I hadn't seen him for years. We've been chatting ever since.",
+      "Imaginação e desejos: If I had more time, I'd travel. I wish I could sing. If it rains, we'll stay in.",
+      "Relatar e deduzir: She said she was tired. He asked if I was free. They must have left. It can't be true."
+     ],
+     "q": "Me conte uma pequena história da sua vida e termine com o que alguém disse e como você se sentiu.",
+     "c": "Escreva seis frases: uma narrativa, um past perfect, um second conditional, um desejo, um discurso indireto e uma dedução."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "was walking",
+      "ex": "I was walking to work when it started to rain."
+     },
+     {
+      "w": "had never",
+      "ex": "I had never tried sushi before that night."
+     },
+     {
+      "w": "If I had",
+      "ex": "If I had a boat, I'd sail around the islands."
+     },
+     {
+      "w": "I wish I could",
+      "ex": "I wish I could speak five languages."
+     },
+     {
+      "w": "she told me",
+      "ex": "She told me she had found a new job."
+     },
+     {
+      "w": "must have",
+      "ex": "You must have been so proud!"
+     }
+    ],
+    "gram": "B1 review: narrative tenses, present perfect continuous, conditionals and wishes, reported speech, and modal deduction (must/might/can't)."
+   }
+  }
+ ]
+}

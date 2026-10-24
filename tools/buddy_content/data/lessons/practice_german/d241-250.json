@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 241,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Enthusiasm and disappointment",
+     "g": "Show joy and disappointment in German: Toll! Wie schade! Ich bin ein bisschen enttäuscht.",
+     "p": [
+      "Enthusiasm: Toll! Super! Klasse! Wie cool! Das ist ja großartig! Ich freue mich riesig!",
+      "Disappointment: Wie schade! Schade, dass... Ich bin enttäuscht. Das ist echt blöd. Mist! (informal)",
+      "Soften it with ein bisschen or etwas: Ich bin ein bisschen enttäuscht sounds friendlier than a blunt statement."
+     ],
+     "q": "Tell me one thing that made you happy and one that disappointed you this week, in German!",
+     "c": "Write two short messages to a friend: one full of enthusiasm, one gently disappointed."
+    },
+    "de": {
+     "t": "Begeisterung und Enttäuschung",
+     "g": "Du zeigst Freude und Enttäuschung: Toll! Wie schade! Ich bin ein bisschen enttäuscht.",
+     "p": [
+      "Begeisterung: Toll! Super! Klasse! Wie cool! Das ist ja großartig! Ich freue mich riesig!",
+      "Enttäuschung: Wie schade! Schade, dass... Ich bin enttäuscht. Das ist echt blöd. Mist! (locker)",
+      "Mit ein bisschen oder etwas klingt es weicher: Ich bin ein bisschen enttäuscht ist freundlicher als direkte Kritik."
+     ],
+     "q": "Erzähl mir eine Sache, die dich diese Woche gefreut, und eine, die dich enttäuscht hat!",
+     "c": "Schreib zwei kurze Nachrichten an einen Freund: eine begeistert, eine leicht enttäuscht."
+    },
+    "es": {
+     "t": "Entusiasmo y decepción",
+     "g": "Muestra alegría y decepción en alemán: Toll! Wie schade! Ich bin ein bisschen enttäuscht.",
+     "p": [
+      "Entusiasmo: Toll! Super! Klasse! Wie cool! Das ist ja großartig! Ich freue mich riesig! (¡Me alegro muchísimo!)",
+      "Decepción: Wie schade! (¡Qué pena!) Schade, dass... Ich bin enttäuscht. Das ist echt blöd. Mist! (coloquial)",
+      "Suaviza con ein bisschen o etwas: Ich bin ein bisschen enttäuscht suena más amable que una crítica directa."
+     ],
+     "q": "Cuéntame en alemán algo que te alegró y algo que te decepcionó esta semana.",
+     "c": "Escribe dos mensajes cortos a un amigo: uno entusiasta y otro un poco decepcionado."
+    },
+    "fr": {
+     "t": "Enthousiasme et déception",
+     "g": "Exprimer la joie et la déception : Toll! Wie schade! Ich bin ein bisschen enttäuscht.",
+     "p": [
+      "Enthousiasme : Toll! Super! Klasse! Wie cool! Das ist ja großartig! Ich freue mich riesig ! (Je suis ravi !)",
+      "Déception : Wie schade ! (Dommage !) Schade, dass... Ich bin enttäuscht. Das ist echt blöd. Mist ! (familier)",
+      "Adoucis avec ein bisschen ou etwas : Ich bin ein bisschen enttäuscht est plus aimable qu'une critique directe."
+     ],
+     "q": "Raconte-moi en allemand une chose qui t'a fait plaisir et une qui t'a déçu cette semaine !",
+     "c": "Écris deux petits messages à un ami : un enthousiaste, un légèrement déçu."
+    },
+    "it": {
+     "t": "Entusiasmo e delusione",
+     "g": "Esprimi gioia e delusione in tedesco: Toll! Wie schade! Ich bin ein bisschen enttäuscht.",
+     "p": [
+      "Entusiasmo: Toll! Super! Klasse! Wie cool! Das ist ja großartig! Ich freue mich riesig! (Sono felicissimo!)",
+      "Delusione: Wie schade! (Che peccato!) Schade, dass... Ich bin enttäuscht. Das ist echt blöd. Mist! (colloquiale)",
+      "Ammorbidisci con ein bisschen o etwas: Ich bin ein bisschen enttäuscht suona più gentile di una critica diretta."
+     ],
+     "q": "Raccontami in tedesco una cosa che ti ha reso felice e una che ti ha deluso questa settimana!",
+     "c": "Scrivi due brevi messaggi a un amico: uno entusiasta e uno un po' deluso."
+    },
+    "pt": {
+     "t": "Entusiasmo e desilusão",
+     "g": "Mostrar alegria e desilusão em alemão: Toll! Wie schade! Ich bin ein bisschen enttäuscht.",
+     "p": [
+      "Entusiasmo: Toll! Super! Klasse! Wie cool! Das ist ja großartig! Ich freue mich riesig! (Estou felicíssimo!)",
+      "Desilusão: Wie schade! (Que pena!) Schade, dass... Ich bin enttäuscht. Das ist echt blöd. Mist! (coloquial)",
+      "Suaviza com ein bisschen ou etwas: Ich bin ein bisschen enttäuscht soa mais simpático do que uma crítica direta."
+     ],
+     "q": "Conta-me em alemão uma coisa que te alegrou e outra que te desiludiu esta semana!",
+     "c": "Escreve duas mensagens curtas a um amigo: uma entusiasmada e outra um pouco desiludida."
+    },
+    "pt_BR": {
+     "t": "Entusiasmo e decepção",
+     "g": "Mostrar alegria e decepção em alemão: Toll! Wie schade! Ich bin ein bisschen enttäuscht.",
+     "p": [
+      "Entusiasmo: Toll! Super! Klasse! Wie cool! Das ist ja großartig! Ich freue mich riesig! (Estou muito feliz!)",
+      "Decepção: Wie schade! (Que pena!) Schade, dass... Ich bin enttäuscht. Das ist echt blöd. Mist! (informal)",
+      "Suavize com ein bisschen ou etwas: Ich bin ein bisschen enttäuscht soa mais gentil do que uma crítica direta."
+     ],
+     "q": "Me conte em alemão uma coisa que te deixou feliz e outra que te decepcionou nesta semana!",
+     "c": "Escreva duas mensagens curtas para um amigo: uma animada e outra um pouco decepcionada."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Toll!",
+      "ex": "Du hast die Prüfung bestanden? Toll!"
+     },
+     {
+      "w": "Wie schade!",
+      "ex": "Du kannst nicht kommen? Wie schade!"
+     },
+     {
+      "w": "enttäuscht sein",
+      "ex": "Ich bin ein bisschen enttäuscht von dem Film."
+     },
+     {
+      "w": "sich riesig freuen",
+      "ex": "Ich freue mich riesig auf den Urlaub."
+     },
+     {
+      "w": "Schade, dass ...",
+      "ex": "Schade, dass es heute regnet."
+     },
+     {
+      "w": "großartig",
+      "ex": "Das Konzert war einfach großartig!"
+     }
+    ],
+    "gram": "Schade, dass + Nebensatz (Verb am Ende); enttäuscht von + Dativ; sich freuen auf (Zukunft) / über (Gegenwart)."
+   }
+  },
+  {
+   "d": 242,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Expressing annoyance politely",
+     "g": "Say what bothers you without being rude: Das nervt, ich habe die Nase voll, das stört mich etwas.",
+     "p": [
+      "Strong and informal: Das nervt! Ich habe die Nase voll (I'm fed up). Das geht mir auf die Nerven. Use these with friends.",
+      "Polite: Das stört mich etwas. Es wäre schön, wenn... Könntest du bitte...? Konjunktiv II makes requests softer.",
+      "Formula for neighbours or colleagues: describe the problem, say how you feel, then make a kind request."
+     ],
+     "q": "Imagine your neighbour plays loud music at night. What would you say, politely, in German?",
+     "c": "Turn three blunt complaints into polite requests using Es wäre nett, wenn... or Könnten Sie...?"
+    },
+    "de": {
+     "t": "Ärger höflich ausdrücken",
+     "g": "Du sagst, was dich stört, ohne unhöflich zu sein: Das nervt, ich habe die Nase voll, das stört mich etwas.",
+     "p": [
+      "Stark und locker: Das nervt! Ich habe die Nase voll. Das geht mir auf die Nerven. Nur unter Freunden.",
+      "Höflich: Das stört mich etwas. Es wäre schön, wenn... Könntest du bitte...? Der Konjunktiv II macht Bitten weicher.",
+      "Formel für Nachbarn oder Kollegen: Problem beschreiben, Gefühl nennen, dann freundlich bitten."
+     ],
+     "q": "Stell dir vor, dein Nachbar hört nachts laute Musik. Was sagst du ihm höflich?",
+     "c": "Mach aus drei direkten Beschwerden höfliche Bitten mit Es wäre nett, wenn... oder Könnten Sie...?"
+    },
+    "es": {
+     "t": "Expresar molestia con educación",
+     "g": "Di lo que te molesta sin ser grosero: Das nervt, ich habe die Nase voll, das stört mich etwas.",
+     "p": [
+      "Fuerte e informal: Das nervt! Ich habe die Nase voll (estoy harto). Das geht mir auf die Nerven. Solo con amigos.",
+      "Educado: Das stört mich etwas. Es wäre schön, wenn... Könntest du bitte...? El Konjunktiv II suaviza las peticiones.",
+      "Fórmula para vecinos o colegas: describe el problema, di cómo te sientes y haz una petición amable."
+     ],
+     "q": "Imagina que tu vecino pone música alta por la noche. ¿Qué le dirías con educación en alemán?",
+     "c": "Convierte tres quejas directas en peticiones amables con Es wäre nett, wenn... o Könnten Sie...?"
+    },
+    "fr": {
+     "t": "Exprimer l'agacement poliment",
+     "g": "Dire ce qui te dérange sans être impoli : Das nervt, ich habe die Nase voll, das stört mich etwas.",
+     "p": [
+      "Fort et familier : Das nervt ! Ich habe die Nase voll (j'en ai marre). Das geht mir auf die Nerven. Entre amis seulement.",
+      "Poli : Das stört mich etwas. Es wäre schön, wenn... Könntest du bitte... ? Le Konjunktiv II adoucit les demandes.",
+      "Formule pour voisins ou collègues : décrire le problème, dire ce que tu ressens, puis demander gentiment."
+     ],
+     "q": "Imagine que ton voisin met la musique fort la nuit. Que lui dirais-tu poliment en allemand ?",
+     "c": "Transforme trois plaintes directes en demandes polies avec Es wäre nett, wenn... ou Könnten Sie... ?"
+    },
+    "it": {
+     "t": "Esprimere fastidio con garbo",
+     "g": "Di' cosa ti dà fastidio senza essere scortese: Das nervt, ich habe die Nase voll, das stört mich etwas.",
+     "p": [
+      "Forte e informale: Das nervt! Ich habe die Nase voll (sono stufo). Das geht mir auf die Nerven. Solo tra amici.",
+      "Cortese: Das stört mich etwas. Es wäre schön, wenn... Könntest du bitte...? Il Konjunktiv II addolcisce le richieste.",
+      "Formula per vicini o colleghi: descrivi il problema, di' come ti senti, poi fai una richiesta gentile."
+     ],
+     "q": "Immagina che il vicino metta musica alta di notte. Cosa gli diresti con garbo in tedesco?",
+     "c": "Trasforma tre lamentele dirette in richieste gentili con Es wäre nett, wenn... o Könnten Sie...?"
+    },
+    "pt": {
+     "t": "Exprimir irritação com educação",
+     "g": "Diz o que te incomoda sem seres rude: Das nervt, ich habe die Nase voll, das stört mich etwas.",
+     "p": [
+      "Forte e informal: Das nervt! Ich habe die Nase voll (estou farto). Das geht mir auf die Nerven. Só entre amigos.",
+      "Educado: Das stört mich etwas. Es wäre schön, wenn... Könntest du bitte...? O Konjunktiv II suaviza os pedidos.",
+      "Fórmula para vizinhos ou colegas: descreve o problema, diz como te sentes e faz um pedido simpático."
+     ],
+     "q": "Imagina que o teu vizinho põe música alta à noite. O que lhe dirias com educação em alemão?",
+     "c": "Transforma três queixas diretas em pedidos educados com Es wäre nett, wenn... ou Könnten Sie...?"
+    },
+    "pt_BR": {
+     "t": "Expressar incômodo com educação",
+     "g": "Diga o que te incomoda sem ser grosseiro: Das nervt, ich habe die Nase voll, das stört mich etwas.",
+     "p": [
+      "Forte e informal: Das nervt! Ich habe die Nase voll (estou de saco cheio). Das geht mir auf die Nerven. Só com amigos.",
+      "Educado: Das stört mich etwas. Es wäre schön, wenn... Könntest du bitte...? O Konjunktiv II suaviza os pedidos.",
+      "Fórmula para vizinhos ou colegas: descreva o problema, diga como se sente e faça um pedido gentil."
+     ],
+     "q": "Imagine que seu vizinho põe música alta à noite. O que você diria com educação em alemão?",
+     "c": "Transforme três reclamações diretas em pedidos educados com Es wäre nett, wenn... ou Könnten Sie...?"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Das nervt!",
+      "ex": "Der Drucker funktioniert schon wieder nicht. Das nervt!"
+     },
+     {
+      "w": "die Nase voll haben",
+      "ex": "Ich habe die Nase voll vom Regen."
+     },
+     {
+      "w": "auf die Nerven gehen",
+      "ex": "Der Lärm geht mir auf die Nerven."
+     },
+     {
+      "w": "stören",
+      "ex": "Stört es Sie, wenn ich das Fenster öffne?"
+     },
+     {
+      "w": "Es wäre nett, wenn ...",
+      "ex": "Es wäre nett, wenn Sie nach 22 Uhr leiser wären."
+     },
+     {
+      "w": "sich ärgern über",
+      "ex": "Ich ärgere mich über die Verspätung."
+     }
+    ],
+    "gram": "Konjunktiv II für höfliche Bitten: Könnten Sie...? Es wäre nett, wenn... + Verb am Ende; die Nase voll haben von + Dativ."
+   }
+  },
+  {
+   "d": 243,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Encouraging and reassuring",
+     "g": "Support someone in German: Keine Sorge, das wird schon, du schaffst das, viel Erfolg.",
+     "p": [
+      "Reassuring: Keine Sorge! Mach dir keine Sorgen. Das wird schon (it'll be fine). Alles wird gut. Halb so schlimm!",
+      "Encouraging: Du schaffst das! Gib nicht auf! Ich glaube an dich. Kopf hoch! (chin up)",
+      "Before an event: Viel Erfolg! Viel Glück! Ich drücke dir die Daumen. After it: Ich bin stolz auf dich!"
+     ],
+     "q": "A friend has a job interview tomorrow and is nervous. What do you say to them in German?",
+     "c": "Write a short encouraging message for someone starting something new, using three phrases from today."
+    },
+    "de": {
+     "t": "Ermutigen und beruhigen",
+     "g": "Du unterstützt jemanden: Keine Sorge, das wird schon, du schaffst das, viel Erfolg.",
+     "p": [
+      "Beruhigen: Keine Sorge! Mach dir keine Sorgen. Das wird schon. Alles wird gut. Halb so schlimm!",
+      "Ermutigen: Du schaffst das! Gib nicht auf! Ich glaube an dich. Kopf hoch!",
+      "Vorher: Viel Erfolg! Viel Glück! Ich drücke dir die Daumen. Nachher: Ich bin stolz auf dich!"
+     ],
+     "q": "Eine Freundin hat morgen ein Vorstellungsgespräch und ist nervös. Was sagst du ihr?",
+     "c": "Schreib eine kurze aufmunternde Nachricht für jemanden, der etwas Neues beginnt, mit drei Ausdrücken von heute."
+    },
+    "es": {
+     "t": "Animar y tranquilizar",
+     "g": "Apoya a alguien en alemán: Keine Sorge, das wird schon, du schaffst das, viel Erfolg.",
+     "p": [
+      "Tranquilizar: Keine Sorge! (¡Tranquilo!) Mach dir keine Sorgen. Das wird schon (saldrá bien). Alles wird gut. Halb so schlimm!",
+      "Animar: Du schaffst das! (¡Tú puedes!) Gib nicht auf! Ich glaube an dich. Kopf hoch! (¡Ánimo!)",
+      "Antes de algo: Viel Erfolg! Viel Glück! Ich drücke dir die Daumen. Después: Ich bin stolz auf dich!"
+     ],
+     "q": "Una amiga tiene mañana una entrevista de trabajo y está nerviosa. ¿Qué le dices en alemán?",
+     "c": "Escribe un mensaje corto de ánimo para alguien que empieza algo nuevo, con tres frases de hoy."
+    },
+    "fr": {
+     "t": "Encourager et rassurer",
+     "g": "Soutenir quelqu'un en allemand : Keine Sorge, das wird schon, du schaffst das, viel Erfolg.",
+     "p": [
+      "Rassurer : Keine Sorge ! (T'inquiète !) Mach dir keine Sorgen. Das wird schon (ça va aller). Alles wird gut. Halb so schlimm !",
+      "Encourager : Du schaffst das ! (Tu vas y arriver !) Gib nicht auf ! Ich glaube an dich. Kopf hoch ! (Courage !)",
+      "Avant : Viel Erfolg ! Viel Glück ! Ich drücke dir die Daumen. Après : Ich bin stolz auf dich !"
+     ],
+     "q": "Une amie a un entretien d'embauche demain et elle stresse. Que lui dis-tu en allemand ?",
+     "c": "Écris un petit message d'encouragement pour quelqu'un qui commence quelque chose, avec trois phrases du jour."
+    },
+    "it": {
+     "t": "Incoraggiare e rassicurare",
+     "g": "Sostieni qualcuno in tedesco: Keine Sorge, das wird schon, du schaffst das, viel Erfolg.",
+     "p": [
+      "Rassicurare: Keine Sorge! (Tranquillo!) Mach dir keine Sorgen. Das wird schon (andrà bene). Alles wird gut. Halb so schlimm!",
+      "Incoraggiare: Du schaffst das! (Ce la fai!) Gib nicht auf! Ich glaube an dich. Kopf hoch! (Su con la vita!)",
+      "Prima: Viel Erfolg! Viel Glück! Ich drücke dir die Daumen. Dopo: Ich bin stolz auf dich!"
+     ],
+     "q": "Un'amica domani ha un colloquio di lavoro ed è agitata. Cosa le dici in tedesco?",
+     "c": "Scrivi un breve messaggio di incoraggiamento per chi inizia qualcosa di nuovo, con tre frasi di oggi."
+    },
+    "pt": {
+     "t": "Encorajar e tranquilizar",
+     "g": "Apoiar alguém em alemão: Keine Sorge, das wird schon, du schaffst das, viel Erfolg.",
+     "p": [
+      "Tranquilizar: Keine Sorge! (Não te preocupes!) Mach dir keine Sorgen. Das wird schon (vai correr bem). Alles wird gut.",
+      "Encorajar: Du schaffst das! (Tu consegues!) Gib nicht auf! Ich glaube an dich. Kopf hoch! (Ânimo!)",
+      "Antes: Viel Erfolg! Viel Glück! Ich drücke dir die Daumen. Depois: Ich bin stolz auf dich!"
+     ],
+     "q": "Uma amiga tem amanhã uma entrevista de emprego e está nervosa. O que lhe dizes em alemão?",
+     "c": "Escreve uma mensagem curta de encorajamento para alguém que começa algo novo, com três frases de hoje."
+    },
+    "pt_BR": {
+     "t": "Encorajar e tranquilizar",
+     "g": "Apoiar alguém em alemão: Keine Sorge, das wird schon, du schaffst das, viel Erfolg.",
+     "p": [
+      "Tranquilizar: Keine Sorge! (Fica tranquilo!) Mach dir keine Sorgen. Das wird schon (vai dar certo). Alles wird gut.",
+      "Encorajar: Du schaffst das! (Você consegue!) Gib nicht auf! Ich glaube an dich. Kopf hoch! (Força!)",
+      "Antes: Viel Erfolg! Viel Glück! Ich drücke dir die Daumen. Depois: Ich bin stolz auf dich!"
+     ],
+     "q": "Uma amiga tem uma entrevista de emprego amanhã e está nervosa. O que você diz para ela em alemão?",
+     "c": "Escreva uma mensagem curta de incentivo para alguém que começa algo novo, com três frases de hoje."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Keine Sorge!",
+      "ex": "Keine Sorge, wir finden eine Lösung."
+     },
+     {
+      "w": "Das wird schon.",
+      "ex": "Du bist gut vorbereitet. Das wird schon!"
+     },
+     {
+      "w": "Du schaffst das!",
+      "ex": "Noch zwei Kilometer, du schaffst das!"
+     },
+     {
+      "w": "Kopf hoch!",
+      "ex": "Kopf hoch, nächstes Mal klappt es bestimmt."
+     },
+     {
+      "w": "Viel Erfolg!",
+      "ex": "Viel Erfolg bei der Prüfung morgen!"
+     },
+     {
+      "w": "stolz sein auf",
+      "ex": "Ich bin wirklich stolz auf dich."
+     }
+    ],
+    "gram": "Imperativ mit du: Mach dir keine Sorgen! Gib nicht auf! Die Partikel schon beruhigt: Das wird schon (gut gehen)."
+   }
+  },
+  {
+   "d": 244,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Review: culture and expressions",
+     "g": "Recap idioms, emotions and cultural topics from the last weeks in a relaxed chat.",
+     "p": [
+      "Idioms: Daumen drücken, Da steppt der Bär, Das ist nicht mein Bier, Hals- und Beinbruch. Use them in the right situation.",
+      "Emotions: surprise (Echt? Wahnsinn!), joy (Toll!), disappointment (Wie schade!), annoyance (Das nervt) and support (Du schaffst das!).",
+      "Culture: Vereine, Austrian and Swiss words, Goethe, Bach, German films. Talk about one you liked most."
+     ],
+     "q": "Which German idiom from the last weeks is your favourite, and when would you use it?",
+     "c": "Write a short story of five sentences using two idioms and two emotional reactions."
+    },
+    "de": {
+     "t": "Wiederholung: Kultur und Ausdrücke",
+     "g": "Du wiederholst Redewendungen, Gefühle und Kulturthemen der letzten Wochen im lockeren Gespräch.",
+     "p": [
+      "Redewendungen: Daumen drücken, Da steppt der Bär, Das ist nicht mein Bier, Hals- und Beinbruch. Passend einsetzen!",
+      "Gefühle: Überraschung (Echt? Wahnsinn!), Freude (Toll!), Enttäuschung (Wie schade!), Ärger (Das nervt), Mut (Du schaffst das!).",
+      "Kultur: Vereine, österreichische und Schweizer Wörter, Goethe, Bach, deutsche Filme. Sprich über dein Lieblingsthema."
+     ],
+     "q": "Welche Redewendung der letzten Wochen magst du am liebsten, und wann würdest du sie benutzen?",
+     "c": "Schreib eine kleine Geschichte in fünf Sätzen mit zwei Redewendungen und zwei Gefühlsreaktionen."
+    },
+    "es": {
+     "t": "Repaso: cultura y expresiones",
+     "g": "Repasa modismos, emociones y temas culturales de las últimas semanas en una charla relajada.",
+     "p": [
+      "Modismos: Daumen drücken, Da steppt der Bär, Das ist nicht mein Bier, Hals- und Beinbruch. Úsalos en el momento justo.",
+      "Emociones: sorpresa (Echt? Wahnsinn!), alegría (Toll!), decepción (Wie schade!), molestia (Das nervt), ánimo (Du schaffst das!).",
+      "Cultura: Vereine, palabras austriacas y suizas, Goethe, Bach, cine alemán. Habla del tema que más te gustó."
+     ],
+     "q": "¿Cuál es tu modismo alemán favorito de estas semanas y cuándo lo usarías?",
+     "c": "Escribe una historia de cinco frases con dos modismos y dos reacciones emocionales."
+    },
+    "fr": {
+     "t": "Révision : culture et expressions",
+     "g": "Réviser expressions, émotions et thèmes culturels des dernières semaines dans une discussion détendue.",
+     "p": [
+      "Expressions : Daumen drücken, Da steppt der Bär, Das ist nicht mein Bier, Hals- und Beinbruch. À placer au bon moment.",
+      "Émotions : surprise (Echt? Wahnsinn!), joie (Toll!), déception (Wie schade!), agacement (Das nervt), soutien (Du schaffst das!).",
+      "Culture : Vereine, mots autrichiens et suisses, Goethe, Bach, films allemands. Parle de ton sujet préféré."
+     ],
+     "q": "Quelle expression allemande de ces semaines préfères-tu, et quand l'utiliserais-tu ?",
+     "c": "Écris une petite histoire de cinq phrases avec deux expressions et deux réactions émotionnelles."
+    },
+    "it": {
+     "t": "Ripasso: cultura ed espressioni",
+     "g": "Ripassa modi di dire, emozioni e temi culturali delle ultime settimane in una chiacchierata rilassata.",
+     "p": [
+      "Modi di dire: Daumen drücken, Da steppt der Bär, Das ist nicht mein Bier, Hals- und Beinbruch. Usali al momento giusto.",
+      "Emozioni: sorpresa (Echt? Wahnsinn!), gioia (Toll!), delusione (Wie schade!), fastidio (Das nervt), sostegno (Du schaffst das!).",
+      "Cultura: Vereine, parole austriache e svizzere, Goethe, Bach, cinema tedesco. Parla del tema che ti è piaciuto di più."
+     ],
+     "q": "Qual è il tuo modo di dire tedesco preferito di queste settimane e quando lo useresti?",
+     "c": "Scrivi una storia di cinque frasi con due modi di dire e due reazioni emotive."
+    },
+    "pt": {
+     "t": "Revisão: cultura e expressões",
+     "g": "Rever expressões idiomáticas, emoções e temas culturais das últimas semanas numa conversa descontraída.",
+     "p": [
+      "Expressões: Daumen drücken, Da steppt der Bär, Das ist nicht mein Bier, Hals- und Beinbruch. Usa-as na situação certa.",
+      "Emoções: surpresa (Echt? Wahnsinn!), alegria (Toll!), desilusão (Wie schade!), irritação (Das nervt), apoio (Du schaffst das!).",
+      "Cultura: Vereine, palavras austríacas e suíças, Goethe, Bach, cinema alemão. Fala do tema de que mais gostaste."
+     ],
+     "q": "Qual é a tua expressão alemã preferida destas semanas e quando a usarias?",
+     "c": "Escreve uma pequena história de cinco frases com duas expressões e duas reações emocionais."
+    },
+    "pt_BR": {
+     "t": "Revisão: cultura e expressões",
+     "g": "Revisar expressões idiomáticas, emoções e temas culturais das últimas semanas num papo descontraído.",
+     "p": [
+      "Expressões: Daumen drücken, Da steppt der Bär, Das ist nicht mein Bier, Hals- und Beinbruch. Use na situação certa.",
+      "Emoções: surpresa (Echt? Wahnsinn!), alegria (Toll!), decepção (Wie schade!), incômodo (Das nervt), apoio (Du schaffst das!).",
+      "Cultura: Vereine, palavras austríacas e suíças, Goethe, Bach, cinema alemão. Fale do tema de que você mais gostou."
+     ],
+     "q": "Qual é a sua expressão alemã favorita destas semanas e quando você a usaria?",
+     "c": "Escreva uma pequena história de cinco frases com duas expressões e duas reações emocionais."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Daumen drücken",
+      "ex": "Ich drücke dir morgen die Daumen!"
+     },
+     {
+      "w": "Da steppt der Bär.",
+      "ex": "Auf dem Stadtfest steppt heute der Bär."
+     },
+     {
+      "w": "Das ist nicht mein Bier.",
+      "ex": "Sein Streit mit dem Chef? Das ist nicht mein Bier."
+     },
+     {
+      "w": "der Verein",
+      "ex": "Mein Bruder ist seit Jahren im Fußballverein."
+     },
+     {
+      "w": "Grüezi",
+      "ex": "In Zürich sagt man zur Begrüßung Grüezi."
+     },
+     {
+      "w": "Das gibt's doch nicht!",
+      "ex": "Du hast Goethe im Original gelesen? Das gibt's doch nicht!"
+     }
+    ],
+    "gram": "Redewendungen nicht wörtlich übersetzen; Reaktion und Partikel (doch, ja, schon) zeigen das Gefühl."
+   }
+  },
+  {
+   "d": 245,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Prefixes: ver-, be-, er-, ent-",
+     "g": "See how inseparable prefixes change a verb's meaning: verstehen, bekommen, erzählen, entdecken.",
+     "p": [
+      "Inseparable prefixes never split off and take no ge- in the Perfekt: ich habe verstanden, bekommen, erzählt.",
+      "Typical meanings: ver- often change or mistake (sich verlaufen), ent- removal or start (entfernen), er- result (erreichen).",
+      "be- makes a verb transitive: antworten auf eine Frage = eine Frage beantworten. Careful: bekommen means to get, not become!"
+     ],
+     "q": "Can you guess the meaning of verschlafen, besuchen and entkommen? Make a sentence with one!",
+     "c": "Find six verbs with ver-, be-, er- or ent- and write each one in the Perfekt."
+    },
+    "de": {
+     "t": "Präfixe: ver-, be-, er-, ent-",
+     "g": "Du siehst, wie untrennbare Präfixe die Bedeutung ändern: verstehen, bekommen, erzählen, entdecken.",
+     "p": [
+      "Untrennbare Präfixe bleiben am Verb und bekommen kein ge- im Perfekt: ich habe verstanden, bekommen, erzählt.",
+      "Typisch: ver- oft Veränderung oder Fehler (sich verlaufen), ent- Wegnehmen oder Beginn (entfernen), er- Ergebnis (erreichen).",
+      "be- macht Verben transitiv: auf eine Frage antworten = eine Frage beantworten."
+     ],
+     "q": "Kannst du die Bedeutung von verschlafen, besuchen und entkommen erraten? Bilde einen Satz mit einem davon!",
+     "c": "Finde sechs Verben mit ver-, be-, er- oder ent- und schreib jedes im Perfekt."
+    },
+    "es": {
+     "t": "Prefijos: ver-, be-, er-, ent-",
+     "g": "Mira cómo los prefijos inseparables cambian el significado: verstehen, bekommen, erzählen, entdecken.",
+     "p": [
+      "Los prefijos inseparables nunca se separan y no llevan ge- en el Perfekt: ich habe verstanden, bekommen, erzählt.",
+      "Sentidos típicos: ver- cambio o error (sich verlaufen, perderse), ent- quitar o empezar (entfernen), er- resultado (erreichen).",
+      "be- vuelve transitivo el verbo: auf eine Frage antworten = eine Frage beantworten. ¡Ojo: bekommen es recibir!"
+     ],
+     "q": "¿Adivinas qué significan verschlafen, besuchen y entkommen? ¡Haz una frase con uno!",
+     "c": "Busca seis verbos con ver-, be-, er- o ent- y escribe cada uno en Perfekt."
+    },
+    "fr": {
+     "t": "Préfixes : ver-, be-, er-, ent-",
+     "g": "Voir comment les préfixes inséparables changent le sens : verstehen, bekommen, erzählen, entdecken.",
+     "p": [
+      "Les préfixes inséparables ne se détachent jamais et n'ont pas de ge- au Perfekt : ich habe verstanden, bekommen, erzählt.",
+      "Sens typiques : ver- changement ou erreur (sich verlaufen, se perdre), ent- retrait ou début (entfernen), er- résultat (erreichen).",
+      "be- rend le verbe transitif : auf eine Frage antworten = eine Frage beantworten. Attention : bekommen veut dire recevoir !"
+     ],
+     "q": "Devines-tu le sens de verschlafen, besuchen et entkommen ? Fais une phrase avec l'un d'eux !",
+     "c": "Trouve six verbes en ver-, be-, er- ou ent- et écris chacun au Perfekt."
+    },
+    "it": {
+     "t": "Prefissi: ver-, be-, er-, ent-",
+     "g": "Scopri come i prefissi inseparabili cambiano il significato: verstehen, bekommen, erzählen, entdecken.",
+     "p": [
+      "I prefissi inseparabili non si staccano mai e non prendono ge- al Perfekt: ich habe verstanden, bekommen, erzählt.",
+      "Significati tipici: ver- cambiamento o errore (sich verlaufen, perdersi), ent- togliere o iniziare (entfernen), er- risultato (erreichen).",
+      "be- rende il verbo transitivo: auf eine Frage antworten = eine Frage beantworten. Attenzione: bekommen significa ricevere!"
+     ],
+     "q": "Indovini il significato di verschlafen, besuchen ed entkommen? Fai una frase con uno di essi!",
+     "c": "Trova sei verbi con ver-, be-, er- o ent- e scrivili tutti al Perfekt."
+    },
+    "pt": {
+     "t": "Prefixos: ver-, be-, er-, ent-",
+     "g": "Ver como os prefixos inseparáveis mudam o significado: verstehen, bekommen, erzählen, entdecken.",
+     "p": [
+      "Os prefixos inseparáveis nunca se separam e não levam ge- no Perfekt: ich habe verstanden, bekommen, erzählt.",
+      "Sentidos típicos: ver- mudança ou erro (sich verlaufen, perder-se), ent- tirar ou começar (entfernen), er- resultado (erreichen).",
+      "be- torna o verbo transitivo: auf eine Frage antworten = eine Frage beantworten. Atenção: bekommen é receber!"
+     ],
+     "q": "Consegues adivinhar o que significam verschlafen, besuchen e entkommen? Faz uma frase com um deles!",
+     "c": "Procura seis verbos com ver-, be-, er- ou ent- e escreve cada um no Perfekt."
+    },
+    "pt_BR": {
+     "t": "Prefixos: ver-, be-, er-, ent-",
+     "g": "Ver como os prefixos inseparáveis mudam o significado: verstehen, bekommen, erzählen, entdecken.",
+     "p": [
+      "Os prefixos inseparáveis nunca se separam e não levam ge- no Perfekt: ich habe verstanden, bekommen, erzählt.",
+      "Sentidos típicos: ver- mudança ou erro (sich verlaufen, se perder), ent- tirar ou começar (entfernen), er- resultado (erreichen).",
+      "be- deixa o verbo transitivo: auf eine Frage antworten = eine Frage beantworten. Cuidado: bekommen é receber!"
+     ],
+     "q": "Você consegue adivinhar o que significam verschlafen, besuchen e entkommen? Faça uma frase com um deles!",
+     "c": "Procure seis verbos com ver-, be-, er- ou ent- e escreva cada um no Perfekt."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "verstehen",
+      "ex": "Hast du die Aufgabe verstanden?"
+     },
+     {
+      "w": "bekommen",
+      "ex": "Ich habe heute ein Paket bekommen."
+     },
+     {
+      "w": "erzählen",
+      "ex": "Erzähl mir von deiner Reise!"
+     },
+     {
+      "w": "entdecken",
+      "ex": "Wir haben ein kleines Café entdeckt."
+     },
+     {
+      "w": "sich verlaufen",
+      "ex": "In der Altstadt habe ich mich verlaufen."
+     },
+     {
+      "w": "beantworten",
+      "ex": "Bitte beantworten Sie alle Fragen."
+     }
+    ],
+    "gram": "Untrennbare Präfixe (be-, ent-, er-, ver-, zer-, ge-, emp-, miss-) sind unbetont: Perfekt ohne ge- (verstanden, erzählt)."
+   }
+  },
+  {
+   "d": 246,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Separable prefixes in depth",
+     "g": "One verb, many meanings: an-, aus-, mit-, vor-, zurück- with kommen, machen, gehen and more.",
+     "p": [
+      "The prefix goes to the end in main clauses: Ich mache das Licht aus. In the Perfekt, ge- sits inside: ausgemacht.",
+      "One base, many meanings: ankommen (arrive), auskommen (get by), mitkommen (come along), vorkommen (occur), zurückkommen.",
+      "In subordinate clauses the verb stays together at the end: ..., weil der Zug pünktlich ankommt."
+     ],
+     "q": "Tell me about your morning using three separable verbs, like aufstehen, anziehen and losgehen!",
+     "c": "Take machen and write sentences with aufmachen, zumachen, ausmachen, mitmachen and nachmachen."
+    },
+    "de": {
+     "t": "Trennbare Präfixe vertieft",
+     "g": "Ein Verb, viele Bedeutungen: an-, aus-, mit-, vor-, zurück- mit kommen, machen, gehen und mehr.",
+     "p": [
+      "Im Hauptsatz steht das Präfix am Ende: Ich mache das Licht aus. Im Perfekt steht ge- in der Mitte: ausgemacht.",
+      "Ein Stamm, viele Bedeutungen: ankommen, auskommen (mit wenig Geld), mitkommen, vorkommen, zurückkommen.",
+      "Im Nebensatz bleibt das Verb zusammen am Ende: ..., weil der Zug pünktlich ankommt."
+     ],
+     "q": "Erzähl mir von deinem Morgen mit drei trennbaren Verben, zum Beispiel aufstehen, anziehen und losgehen!",
+     "c": "Nimm machen und schreib Sätze mit aufmachen, zumachen, ausmachen, mitmachen und nachmachen."
+    },
+    "es": {
+     "t": "Prefijos separables a fondo",
+     "g": "Un verbo, muchos sentidos: an-, aus-, mit-, vor-, zurück- con kommen, machen, gehen y más.",
+     "p": [
+      "En la oración principal el prefijo va al final: Ich mache das Licht aus. En Perfekt, ge- va en medio: ausgemacht.",
+      "Una base, muchos sentidos: ankommen (llegar), auskommen (arreglárselas), mitkommen (acompañar), vorkommen (ocurrir).",
+      "En la subordinada el verbo va junto al final: ..., weil der Zug pünktlich ankommt."
+     ],
+     "q": "Cuéntame tu mañana con tres verbos separables, como aufstehen, anziehen y losgehen.",
+     "c": "Toma machen y escribe frases con aufmachen, zumachen, ausmachen, mitmachen y nachmachen."
+    },
+    "fr": {
+     "t": "Les préfixes séparables en détail",
+     "g": "Un verbe, plein de sens : an-, aus-, mit-, vor-, zurück- avec kommen, machen, gehen et d'autres.",
+     "p": [
+      "En principale, le préfixe part à la fin : Ich mache das Licht aus. Au Perfekt, ge- se met au milieu : ausgemacht.",
+      "Une base, plusieurs sens : ankommen (arriver), auskommen (s'en sortir), mitkommen (venir avec), vorkommen (arriver, se produire).",
+      "En subordonnée, le verbe reste soudé à la fin : ..., weil der Zug pünktlich ankommt."
+     ],
+     "q": "Raconte-moi ta matinée avec trois verbes séparables, comme aufstehen, anziehen et losgehen !",
+     "c": "Prends machen et écris des phrases avec aufmachen, zumachen, ausmachen, mitmachen et nachmachen."
+    },
+    "it": {
+     "t": "Prefissi separabili a fondo",
+     "g": "Un verbo, tanti significati: an-, aus-, mit-, vor-, zurück- con kommen, machen, gehen e altri.",
+     "p": [
+      "Nella principale il prefisso va in fondo: Ich mache das Licht aus. Al Perfekt ge- sta in mezzo: ausgemacht.",
+      "Una base, tanti sensi: ankommen (arrivare), auskommen (cavarsela), mitkommen (venire con), vorkommen (capitare).",
+      "Nella secondaria il verbo resta unito alla fine: ..., weil der Zug pünktlich ankommt."
+     ],
+     "q": "Raccontami la tua mattina con tre verbi separabili, come aufstehen, anziehen e losgehen!",
+     "c": "Prendi machen e scrivi frasi con aufmachen, zumachen, ausmachen, mitmachen e nachmachen."
+    },
+    "pt": {
+     "t": "Prefixos separáveis a fundo",
+     "g": "Um verbo, muitos sentidos: an-, aus-, mit-, vor-, zurück- com kommen, machen, gehen e outros.",
+     "p": [
+      "Na oração principal o prefixo vai para o fim: Ich mache das Licht aus. No Perfekt, ge- fica no meio: ausgemacht.",
+      "Uma base, vários sentidos: ankommen (chegar), auskommen (governar-se), mitkommen (vir junto), vorkommen (acontecer).",
+      "Na subordinada o verbo fica junto no fim: ..., weil der Zug pünktlich ankommt."
+     ],
+     "q": "Conta-me a tua manhã com três verbos separáveis, como aufstehen, anziehen e losgehen!",
+     "c": "Pega em machen e escreve frases com aufmachen, zumachen, ausmachen, mitmachen e nachmachen."
+    },
+    "pt_BR": {
+     "t": "Prefixos separáveis a fundo",
+     "g": "Um verbo, muitos sentidos: an-, aus-, mit-, vor-, zurück- com kommen, machen, gehen e outros.",
+     "p": [
+      "Na oração principal o prefixo vai para o fim: Ich mache das Licht aus. No Perfekt, ge- fica no meio: ausgemacht.",
+      "Uma base, vários sentidos: ankommen (chegar), auskommen (se virar), mitkommen (ir junto), vorkommen (acontecer).",
+      "Na subordinada o verbo fica junto no fim: ..., weil der Zug pünktlich ankommt."
+     ],
+     "q": "Me conte sua manhã com três verbos separáveis, como aufstehen, anziehen e losgehen!",
+     "c": "Pegue machen e escreva frases com aufmachen, zumachen, ausmachen, mitmachen e nachmachen."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ankommen",
+      "ex": "Wann kommt der Zug in Berlin an?"
+     },
+     {
+      "w": "auskommen mit",
+      "ex": "Ich komme mit meinem Geld gut aus."
+     },
+     {
+      "w": "mitkommen",
+      "ex": "Kommst du heute Abend mit ins Kino?"
+     },
+     {
+      "w": "vorkommen",
+      "ex": "So ein Fehler kann jedem mal vorkommen."
+     },
+     {
+      "w": "zurückrufen",
+      "ex": "Ich rufe dich später zurück."
+     },
+     {
+      "w": "ausmachen",
+      "ex": "Machst du bitte das Licht aus?"
+     }
+    ],
+    "gram": "Trennbare Präfixe sind betont: Hauptsatz Präfix am Ende (Ich rufe dich an), Perfekt mit -ge- (angerufen), zu-Infinitiv: anzurufen."
+   }
+  },
+  {
+   "d": 247,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Word families",
+     "g": "Grow your vocabulary by families: arbeiten, die Arbeit, der Arbeiter, arbeitslos.",
+     "p": [
+      "From one root come verbs, nouns and adjectives: arbeiten, die Arbeit, der Arbeiter, die Arbeiterin, arbeitsam, arbeitslos.",
+      "Compounds multiply a family: der Arbeitsplatz, die Arbeitszeit, der Arbeitgeber, der Arbeitnehmer. The last part sets the gender.",
+      "Know one member and you can guess the others: fahren, die Fahrt, der Fahrer, das Fahrrad, die Abfahrt."
+     ],
+     "q": "Pick the word spielen and tell me as many family members as you can find!",
+     "c": "Draw a word family tree for wohnen or sprechen with at least six words."
+    },
+    "de": {
+     "t": "Wortfamilien",
+     "g": "Du erweiterst deinen Wortschatz mit Wortfamilien: arbeiten, die Arbeit, der Arbeiter, arbeitslos.",
+     "p": [
+      "Aus einem Stamm entstehen Verben, Nomen und Adjektive: arbeiten, die Arbeit, der Arbeiter, die Arbeiterin, arbeitslos.",
+      "Komposita vergrößern die Familie: der Arbeitsplatz, die Arbeitszeit, der Arbeitgeber. Das letzte Wort bestimmt den Artikel.",
+      "Kennst du ein Mitglied, errätst du die anderen: fahren, die Fahrt, der Fahrer, das Fahrrad, die Abfahrt."
+     ],
+     "q": "Nimm das Wort spielen: Wie viele Mitglieder seiner Familie findest du?",
+     "c": "Zeichne einen Wortfamilien-Baum für wohnen oder sprechen mit mindestens sechs Wörtern."
+    },
+    "es": {
+     "t": "Familias de palabras",
+     "g": "Amplía tu vocabulario por familias: arbeiten, die Arbeit, der Arbeiter, arbeitslos.",
+     "p": [
+      "De una raíz salen verbos, sustantivos y adjetivos: arbeiten, die Arbeit, der Arbeiter, die Arbeiterin, arbeitslos.",
+      "Los compuestos multiplican la familia: der Arbeitsplatz, die Arbeitszeit, der Arbeitgeber. La última parte fija el género.",
+      "Si conoces a un miembro, adivinas los demás: fahren, die Fahrt, der Fahrer, das Fahrrad, die Abfahrt."
+     ],
+     "q": "Toma la palabra spielen: ¿cuántos miembros de su familia encuentras?",
+     "c": "Dibuja un árbol de familia para wohnen o sprechen con al menos seis palabras."
+    },
+    "fr": {
+     "t": "Familles de mots",
+     "g": "Enrichir ton vocabulaire par familles : arbeiten, die Arbeit, der Arbeiter, arbeitslos.",
+     "p": [
+      "D'une racine naissent verbes, noms et adjectifs : arbeiten, die Arbeit, der Arbeiter, die Arbeiterin, arbeitslos.",
+      "Les mots composés agrandissent la famille : der Arbeitsplatz, die Arbeitszeit, der Arbeitgeber. Le dernier mot donne le genre.",
+      "Connais un membre et tu devines les autres : fahren, die Fahrt, der Fahrer, das Fahrrad, die Abfahrt."
+     ],
+     "q": "Prends le mot spielen : combien de membres de sa famille trouves-tu ?",
+     "c": "Dessine l'arbre de la famille de wohnen ou sprechen avec au moins six mots."
+    },
+    "it": {
+     "t": "Famiglie di parole",
+     "g": "Arricchisci il lessico per famiglie: arbeiten, die Arbeit, der Arbeiter, arbeitslos.",
+     "p": [
+      "Da una radice nascono verbi, nomi e aggettivi: arbeiten, die Arbeit, der Arbeiter, die Arbeiterin, arbeitslos.",
+      "I composti allargano la famiglia: der Arbeitsplatz, die Arbeitszeit, der Arbeitgeber. L'ultima parte decide il genere.",
+      "Conosci un membro e indovini gli altri: fahren, die Fahrt, der Fahrer, das Fahrrad, die Abfahrt."
+     ],
+     "q": "Prendi la parola spielen: quanti membri della sua famiglia riesci a trovare?",
+     "c": "Disegna l'albero della famiglia di wohnen o sprechen con almeno sei parole."
+    },
+    "pt": {
+     "t": "Famílias de palavras",
+     "g": "Alargar o vocabulário por famílias: arbeiten, die Arbeit, der Arbeiter, arbeitslos.",
+     "p": [
+      "De uma raiz nascem verbos, nomes e adjetivos: arbeiten, die Arbeit, der Arbeiter, die Arbeiterin, arbeitslos.",
+      "As palavras compostas aumentam a família: der Arbeitsplatz, die Arbeitszeit, der Arbeitgeber. A última parte dá o género.",
+      "Conheces um membro e adivinhas os outros: fahren, die Fahrt, der Fahrer, das Fahrrad, die Abfahrt."
+     ],
+     "q": "Pega na palavra spielen: quantos membros da família dela consegues encontrar?",
+     "c": "Desenha a árvore da família de wohnen ou sprechen com pelo menos seis palavras."
+    },
+    "pt_BR": {
+     "t": "Famílias de palavras",
+     "g": "Ampliar o vocabulário por famílias: arbeiten, die Arbeit, der Arbeiter, arbeitslos.",
+     "p": [
+      "De uma raiz nascem verbos, substantivos e adjetivos: arbeiten, die Arbeit, der Arbeiter, die Arbeiterin, arbeitslos.",
+      "As palavras compostas aumentam a família: der Arbeitsplatz, die Arbeitszeit, der Arbeitgeber. A última parte define o gênero.",
+      "Conhecendo um membro, você adivinha os outros: fahren, die Fahrt, der Fahrer, das Fahrrad, die Abfahrt."
+     ],
+     "q": "Pegue a palavra spielen: quantos membros da família dela você consegue achar?",
+     "c": "Desenhe a árvore da família de wohnen ou sprechen com pelo menos seis palavras."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Arbeit",
+      "ex": "Die Arbeit macht mir heute viel Spaß."
+     },
+     {
+      "w": "der Arbeitgeber",
+      "ex": "Mein Arbeitgeber bietet flexible Zeiten an."
+     },
+     {
+      "w": "arbeitslos",
+      "ex": "Er war drei Monate arbeitslos."
+     },
+     {
+      "w": "der Arbeitsplatz",
+      "ex": "Mein Arbeitsplatz ist direkt am Fenster."
+     },
+     {
+      "w": "die Fahrt",
+      "ex": "Die Fahrt nach Hamburg dauert zwei Stunden."
+     },
+     {
+      "w": "die Abfahrt",
+      "ex": "Die Abfahrt ist um 8 Uhr."
+     }
+    ],
+    "gram": "Komposita: Das Grundwort (letztes Wort) bestimmt Artikel und Bedeutung; oft mit Fugen-s: die Arbeit + der Platz = der Arbeitsplatz."
+   }
+  },
+  {
+   "d": 248,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Suffixes: -ung, -heit, -keit, -schaft",
+     "g": "Build nouns with suffixes and guess their gender: all of these are feminine, die!",
+     "p": [
+      "-ung turns verbs into nouns: wohnen → die Wohnung, erfahren → die Erfahrung, entscheiden → die Entscheidung.",
+      "-heit and -keit come from adjectives: frei → die Freiheit, gesund → die Gesundheit, freundlich → die Freundlichkeit.",
+      "-schaft makes groups or states: der Freund → die Freundschaft, die Mannschaft, die Landschaft. Plural: -en."
+     ],
+     "q": "What is more important to you, Freiheit or Sicherheit? Tell me why!",
+     "c": "Turn six verbs or adjectives into nouns with -ung, -heit, -keit or -schaft, with their article."
+    },
+    "de": {
+     "t": "Suffixe: -ung, -heit, -keit, -schaft",
+     "g": "Du bildest Nomen mit Suffixen und kennst sofort den Artikel: Sie sind alle feminin, die!",
+     "p": [
+      "-ung macht aus Verben Nomen: wohnen → die Wohnung, erfahren → die Erfahrung, entscheiden → die Entscheidung.",
+      "-heit und -keit kommen von Adjektiven: frei → die Freiheit, gesund → die Gesundheit, freundlich → die Freundlichkeit.",
+      "-schaft bildet Gruppen oder Zustände: der Freund → die Freundschaft, die Mannschaft, die Landschaft. Plural: -en."
+     ],
+     "q": "Was ist dir wichtiger, Freiheit oder Sicherheit? Erzähl mir, warum!",
+     "c": "Mach aus sechs Verben oder Adjektiven Nomen mit -ung, -heit, -keit oder -schaft, mit Artikel."
+    },
+    "es": {
+     "t": "Sufijos: -ung, -heit, -keit, -schaft",
+     "g": "Forma sustantivos con sufijos y adivina el género: ¡todos son femeninos, die!",
+     "p": [
+      "-ung convierte verbos en sustantivos: wohnen → die Wohnung, erfahren → die Erfahrung, entscheiden → die Entscheidung.",
+      "-heit y -keit salen de adjetivos: frei → die Freiheit, gesund → die Gesundheit, freundlich → die Freundlichkeit.",
+      "-schaft forma grupos o estados: der Freund → die Freundschaft, die Mannschaft, die Landschaft. Plural: -en."
+     ],
+     "q": "¿Qué es más importante para ti, Freiheit o Sicherheit? ¡Dime por qué!",
+     "c": "Convierte seis verbos o adjetivos en sustantivos con -ung, -heit, -keit o -schaft, con artículo."
+    },
+    "fr": {
+     "t": "Suffixes : -ung, -heit, -keit, -schaft",
+     "g": "Former des noms avec des suffixes et deviner le genre : ils sont tous féminins, die !",
+     "p": [
+      "-ung transforme les verbes en noms : wohnen → die Wohnung, erfahren → die Erfahrung, entscheiden → die Entscheidung.",
+      "-heit et -keit viennent d'adjectifs : frei → die Freiheit, gesund → die Gesundheit, freundlich → die Freundlichkeit.",
+      "-schaft forme des groupes ou des états : der Freund → die Freundschaft, die Mannschaft, die Landschaft. Pluriel : -en."
+     ],
+     "q": "Qu'est-ce qui compte le plus pour toi, Freiheit ou Sicherheit ? Dis-moi pourquoi !",
+     "c": "Transforme six verbes ou adjectifs en noms avec -ung, -heit, -keit ou -schaft, avec l'article."
+    },
+    "it": {
+     "t": "Suffissi: -ung, -heit, -keit, -schaft",
+     "g": "Forma nomi con i suffissi e indovina il genere: sono tutti femminili, die!",
+     "p": [
+      "-ung trasforma i verbi in nomi: wohnen → die Wohnung, erfahren → die Erfahrung, entscheiden → die Entscheidung.",
+      "-heit e -keit vengono da aggettivi: frei → die Freiheit, gesund → die Gesundheit, freundlich → die Freundlichkeit.",
+      "-schaft forma gruppi o stati: der Freund → die Freundschaft, die Mannschaft, die Landschaft. Plurale: -en."
+     ],
+     "q": "Cosa è più importante per te, Freiheit o Sicherheit? Dimmi perché!",
+     "c": "Trasforma sei verbi o aggettivi in nomi con -ung, -heit, -keit o -schaft, con l'articolo."
+    },
+    "pt": {
+     "t": "Sufixos: -ung, -heit, -keit, -schaft",
+     "g": "Formar nomes com sufixos e adivinhar o género: são todos femininos, die!",
+     "p": [
+      "-ung transforma verbos em nomes: wohnen → die Wohnung, erfahren → die Erfahrung, entscheiden → die Entscheidung.",
+      "-heit e -keit vêm de adjetivos: frei → die Freiheit, gesund → die Gesundheit, freundlich → die Freundlichkeit.",
+      "-schaft forma grupos ou estados: der Freund → die Freundschaft, die Mannschaft, die Landschaft. Plural: -en."
+     ],
+     "q": "O que é mais importante para ti, Freiheit ou Sicherheit? Diz-me porquê!",
+     "c": "Transforma seis verbos ou adjetivos em nomes com -ung, -heit, -keit ou -schaft, com o artigo."
+    },
+    "pt_BR": {
+     "t": "Sufixos: -ung, -heit, -keit, -schaft",
+     "g": "Formar substantivos com sufixos e adivinhar o gênero: todos são femininos, die!",
+     "p": [
+      "-ung transforma verbos em substantivos: wohnen → die Wohnung, erfahren → die Erfahrung, entscheiden → die Entscheidung.",
+      "-heit e -keit vêm de adjetivos: frei → die Freiheit, gesund → die Gesundheit, freundlich → die Freundlichkeit.",
+      "-schaft forma grupos ou estados: der Freund → die Freundschaft, die Mannschaft, die Landschaft. Plural: -en."
+     ],
+     "q": "O que é mais importante para você, Freiheit ou Sicherheit? Me diga por quê!",
+     "c": "Transforme seis verbos ou adjetivos em substantivos com -ung, -heit, -keit ou -schaft, com o artigo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Erfahrung",
+      "ex": "Ich habe viel Erfahrung mit Kindern."
+     },
+     {
+      "w": "die Entscheidung",
+      "ex": "Das war eine gute Entscheidung."
+     },
+     {
+      "w": "die Freiheit",
+      "ex": "Für mich bedeutet Reisen Freiheit."
+     },
+     {
+      "w": "die Gesundheit",
+      "ex": "Sport ist gut für die Gesundheit."
+     },
+     {
+      "w": "die Freundlichkeit",
+      "ex": "Danke für Ihre Freundlichkeit!"
+     },
+     {
+      "w": "die Freundschaft",
+      "ex": "Unsere Freundschaft hält schon zwanzig Jahre."
+     }
+    ],
+    "gram": "Nomen auf -ung, -heit, -keit, -schaft sind immer feminin (die) und bilden den Plural auf -en: die Wohnungen, die Freundschaften."
+   }
+  },
+  {
+   "d": 249,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Suffixes: -bar, -lich, -ig, -los",
+     "g": "Build adjectives with suffixes: machbar, freundlich, lustig, arbeitslos.",
+     "p": [
+      "-bar means can be done: machbar (doable), essbar (edible), lesbar (readable), erreichbar (reachable).",
+      "-lich and -ig describe qualities: freundlich, täglich, gefährlich; lustig, sonnig, ruhig, wichtig.",
+      "-los means without: arbeitslos, kostenlos (free of charge), sprachlos (speechless), hoffnungslos."
+     ],
+     "q": "Describe your favourite place using three adjectives with -lich, -ig or -bar!",
+     "c": "Make six adjectives from nouns or verbs with these suffixes and use each in a short sentence."
+    },
+    "de": {
+     "t": "Suffixe: -bar, -lich, -ig, -los",
+     "g": "Du bildest Adjektive mit Suffixen: machbar, freundlich, lustig, arbeitslos.",
+     "p": [
+      "-bar bedeutet, man kann es tun: machbar, essbar, lesbar, erreichbar.",
+      "-lich und -ig beschreiben Eigenschaften: freundlich, täglich, gefährlich; lustig, sonnig, ruhig, wichtig.",
+      "-los bedeutet ohne: arbeitslos, kostenlos, sprachlos, hoffnungslos."
+     ],
+     "q": "Beschreib deinen Lieblingsort mit drei Adjektiven auf -lich, -ig oder -bar!",
+     "c": "Bilde sechs Adjektive aus Nomen oder Verben mit diesen Suffixen und benutze jedes in einem kurzen Satz."
+    },
+    "es": {
+     "t": "Sufijos: -bar, -lich, -ig, -los",
+     "g": "Forma adjetivos con sufijos: machbar, freundlich, lustig, arbeitslos.",
+     "p": [
+      "-bar significa que se puede hacer: machbar (factible), essbar (comestible), lesbar (legible), erreichbar (localizable).",
+      "-lich e -ig describen cualidades: freundlich, täglich, gefährlich; lustig, sonnig, ruhig, wichtig.",
+      "-los significa sin: arbeitslos, kostenlos (gratis), sprachlos (sin palabras), hoffnungslos."
+     ],
+     "q": "Describe tu lugar favorito con tres adjetivos en -lich, -ig o -bar.",
+     "c": "Crea seis adjetivos a partir de sustantivos o verbos con estos sufijos y usa cada uno en una frase."
+    },
+    "fr": {
+     "t": "Suffixes : -bar, -lich, -ig, -los",
+     "g": "Former des adjectifs avec des suffixes : machbar, freundlich, lustig, arbeitslos.",
+     "p": [
+      "-bar = qu'on peut faire : machbar (faisable), essbar (comestible), lesbar (lisible), erreichbar (joignable).",
+      "-lich et -ig décrivent des qualités : freundlich, täglich, gefährlich ; lustig, sonnig, ruhig, wichtig.",
+      "-los veut dire sans : arbeitslos, kostenlos (gratuit), sprachlos (sans voix), hoffnungslos."
+     ],
+     "q": "Décris ton endroit préféré avec trois adjectifs en -lich, -ig ou -bar !",
+     "c": "Crée six adjectifs à partir de noms ou de verbes avec ces suffixes et utilise chacun dans une phrase."
+    },
+    "it": {
+     "t": "Suffissi: -bar, -lich, -ig, -los",
+     "g": "Forma aggettivi con i suffissi: machbar, freundlich, lustig, arbeitslos.",
+     "p": [
+      "-bar = si può fare: machbar (fattibile), essbar (commestibile), lesbar (leggibile), erreichbar (raggiungibile).",
+      "-lich e -ig descrivono qualità: freundlich, täglich, gefährlich; lustig, sonnig, ruhig, wichtig.",
+      "-los significa senza: arbeitslos, kostenlos (gratuito), sprachlos (senza parole), hoffnungslos."
+     ],
+     "q": "Descrivi il tuo posto preferito con tre aggettivi in -lich, -ig o -bar!",
+     "c": "Crea sei aggettivi da nomi o verbi con questi suffissi e usali ciascuno in una frase."
+    },
+    "pt": {
+     "t": "Sufixos: -bar, -lich, -ig, -los",
+     "g": "Formar adjetivos com sufixos: machbar, freundlich, lustig, arbeitslos.",
+     "p": [
+      "-bar = pode fazer-se: machbar (viável), essbar (comestível), lesbar (legível), erreichbar (contactável).",
+      "-lich e -ig descrevem qualidades: freundlich, täglich, gefährlich; lustig, sonnig, ruhig, wichtig.",
+      "-los significa sem: arbeitslos, kostenlos (gratuito), sprachlos (sem palavras), hoffnungslos."
+     ],
+     "q": "Descreve o teu lugar preferido com três adjetivos em -lich, -ig ou -bar!",
+     "c": "Cria seis adjetivos a partir de nomes ou verbos com estes sufixos e usa cada um numa frase."
+    },
+    "pt_BR": {
+     "t": "Sufixos: -bar, -lich, -ig, -los",
+     "g": "Formar adjetivos com sufixos: machbar, freundlich, lustig, arbeitslos.",
+     "p": [
+      "-bar = dá para fazer: machbar (viável), essbar (comestível), lesbar (legível), erreichbar (que dá para encontrar).",
+      "-lich e -ig descrevem qualidades: freundlich, täglich, gefährlich; lustig, sonnig, ruhig, wichtig.",
+      "-los significa sem: arbeitslos, kostenlos (grátis), sprachlos (sem palavras), hoffnungslos."
+     ],
+     "q": "Descreva seu lugar favorito com três adjetivos em -lich, -ig ou -bar!",
+     "c": "Crie seis adjetivos a partir de substantivos ou verbos com esses sufixos e use cada um numa frase."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "machbar",
+      "ex": "Das Projekt ist schwierig, aber machbar."
+     },
+     {
+      "w": "erreichbar",
+      "ex": "Ich bin morgen ab 9 Uhr erreichbar."
+     },
+     {
+      "w": "gefährlich",
+      "ex": "Diese Straße ist nachts gefährlich."
+     },
+     {
+      "w": "ruhig",
+      "ex": "Wir wohnen in einer ruhigen Gegend."
+     },
+     {
+      "w": "kostenlos",
+      "ex": "Der Eintritt ins Museum ist kostenlos."
+     },
+     {
+      "w": "sprachlos",
+      "ex": "Ich war sprachlos vor Freude."
+     }
+    ],
+    "gram": "Adjektiv-Suffixe: -bar (Verbstamm: man kann es), -lich/-ig (Eigenschaft), -los (ohne). Vor Nomen dekliniert: eine ruhige Gegend."
+   }
+  },
+  {
+   "d": 250,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Nominal style",
+     "g": "Learn fixed noun-verb pairs: eine Entscheidung treffen, zur Verfügung stellen, in Frage kommen.",
+     "p": [
+      "Formal German likes noun plus verb instead of one verb: entscheiden → eine Entscheidung treffen; fragen → eine Frage stellen.",
+      "Common pairs: zur Verfügung stellen (make available), in Anspruch nehmen (use), Rücksicht nehmen auf (be considerate).",
+      "The pairs are fixed: you treffen a decision, you don't machen it. Learn them as blocks, like words."
+     ],
+     "q": "Tell me about a big decision you once made, using eine Entscheidung treffen!",
+     "c": "Write three sentences in an office style using zur Verfügung stellen, in Anspruch nehmen and eine Frage stellen."
+    },
+    "de": {
+     "t": "Nominalstil",
+     "g": "Du lernst feste Nomen-Verb-Verbindungen: eine Entscheidung treffen, zur Verfügung stellen, in Frage kommen.",
+     "p": [
+      "Formelles Deutsch nimmt gern Nomen plus Verb: entscheiden → eine Entscheidung treffen; fragen → eine Frage stellen.",
+      "Häufige Verbindungen: zur Verfügung stellen, in Anspruch nehmen, Rücksicht nehmen auf, zum Ausdruck bringen.",
+      "Die Verbindungen sind fest: Man trifft eine Entscheidung, man macht sie nicht. Lerne sie als Block."
+     ],
+     "q": "Erzähl mir von einer großen Entscheidung, die du einmal getroffen hast!",
+     "c": "Schreib drei Sätze im Bürostil mit zur Verfügung stellen, in Anspruch nehmen und eine Frage stellen."
+    },
+    "es": {
+     "t": "Estilo nominal",
+     "g": "Aprende pares fijos sustantivo-verbo: eine Entscheidung treffen, zur Verfügung stellen, in Frage kommen.",
+     "p": [
+      "El alemán formal prefiere sustantivo más verbo: entscheiden → eine Entscheidung treffen; fragen → eine Frage stellen.",
+      "Pares frecuentes: zur Verfügung stellen (poner a disposición), in Anspruch nehmen (utilizar), Rücksicht nehmen auf.",
+      "Son fijos: una decisión se trifft, no se macht. Apréndelos en bloque, como una sola palabra."
+     ],
+     "q": "Cuéntame una gran decisión que tomaste alguna vez, usando eine Entscheidung treffen.",
+     "c": "Escribe tres frases en estilo de oficina con zur Verfügung stellen, in Anspruch nehmen y eine Frage stellen."
+    },
+    "fr": {
+     "t": "Le style nominal",
+     "g": "Apprendre des locutions nom-verbe figées : eine Entscheidung treffen, zur Verfügung stellen, in Frage kommen.",
+     "p": [
+      "L'allemand formel aime nom + verbe : entscheiden → eine Entscheidung treffen ; fragen → eine Frage stellen.",
+      "Locutions fréquentes : zur Verfügung stellen (mettre à disposition), in Anspruch nehmen (recourir à), Rücksicht nehmen auf.",
+      "Elles sont figées : une décision se trifft, pas se macht. Apprends-les en bloc, comme un seul mot."
+     ],
+     "q": "Raconte-moi une grande décision que tu as prise un jour, avec eine Entscheidung treffen !",
+     "c": "Écris trois phrases style bureau avec zur Verfügung stellen, in Anspruch nehmen et eine Frage stellen."
+    },
+    "it": {
+     "t": "Stile nominale",
+     "g": "Impara coppie fisse nome-verbo: eine Entscheidung treffen, zur Verfügung stellen, in Frage kommen.",
+     "p": [
+      "Il tedesco formale preferisce nome + verbo: entscheiden → eine Entscheidung treffen; fragen → eine Frage stellen.",
+      "Coppie frequenti: zur Verfügung stellen (mettere a disposizione), in Anspruch nehmen (usufruire), Rücksicht nehmen auf.",
+      "Sono fisse: una decisione si trifft, non si macht. Imparale in blocco, come una sola parola."
+     ],
+     "q": "Raccontami una grande decisione che hai preso, usando eine Entscheidung treffen!",
+     "c": "Scrivi tre frasi in stile ufficio con zur Verfügung stellen, in Anspruch nehmen ed eine Frage stellen."
+    },
+    "pt": {
+     "t": "Estilo nominal",
+     "g": "Aprender pares fixos nome-verbo: eine Entscheidung treffen, zur Verfügung stellen, in Frage kommen.",
+     "p": [
+      "O alemão formal prefere nome + verbo: entscheiden → eine Entscheidung treffen; fragen → eine Frage stellen.",
+      "Pares frequentes: zur Verfügung stellen (pôr à disposição), in Anspruch nehmen (recorrer a), Rücksicht nehmen auf.",
+      "São fixos: uma decisão trifft-se, não se macht. Aprende-os em bloco, como uma só palavra."
+     ],
+     "q": "Conta-me uma grande decisão que tomaste um dia, usando eine Entscheidung treffen!",
+     "c": "Escreve três frases em estilo de escritório com zur Verfügung stellen, in Anspruch nehmen e eine Frage stellen."
+    },
+    "pt_BR": {
+     "t": "Estilo nominal",
+     "g": "Aprender pares fixos substantivo-verbo: eine Entscheidung treffen, zur Verfügung stellen, in Frage kommen.",
+     "p": [
+      "O alemão formal prefere substantivo + verbo: entscheiden → eine Entscheidung treffen; fragen → eine Frage stellen.",
+      "Pares frequentes: zur Verfügung stellen (pôr à disposição), in Anspruch nehmen (usar), Rücksicht nehmen auf.",
+      "São fixos: uma decisão se trifft, não se macht. Aprenda em bloco, como uma palavra só."
+     ],
+     "q": "Me conte uma grande decisão que você já tomou, usando eine Entscheidung treffen!",
+     "c": "Escreva três frases em estilo de escritório com zur Verfügung stellen, in Anspruch nehmen e eine Frage stellen."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "eine Entscheidung treffen",
+      "ex": "Wir müssen bis Freitag eine Entscheidung treffen."
+     },
+     {
+      "w": "zur Verfügung stellen",
+      "ex": "Die Firma stellt uns einen Laptop zur Verfügung."
+     },
+     {
+      "w": "in Anspruch nehmen",
+      "ex": "Sie können unseren Service jederzeit in Anspruch nehmen."
+     },
+     {
+      "w": "eine Frage stellen",
+      "ex": "Darf ich Ihnen eine Frage stellen?"
+     },
+     {
+      "w": "Rücksicht nehmen auf",
+      "ex": "Bitte nehmen Sie Rücksicht auf die Nachbarn."
+     },
+     {
+      "w": "in Frage kommen",
+      "ex": "Ein Umzug kommt für uns nicht in Frage."
+     }
+    ],
+    "gram": "Nomen-Verb-Verbindungen sind fest: eine Entscheidung treffen (nicht machen); das Verb trägt die Grammatik, das Nomen die Bedeutung."
+   }
+  }
+ ]
+}

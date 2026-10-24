@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 201,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Ser and estar: change of meaning",
+     "g": "Learn adjectives that change meaning with ser and estar.",
+     "p": [
+      "Ser listo = clever, estar listo = ready. Ser aburrido = boring, estar aburrido = bored.",
+      "Ser rico = wealthy, estar rico = tasty. Ser malo = bad, estar malo = ill. Ser verde = green, estar verde = unripe.",
+      "Ser describes what something is like; estar describes a state or result right now."
+     ],
+     "q": "When were you last aburrido (bored)? And what film or book es aburrido for you?",
+     "c": "Write four pairs of sentences showing the two meanings: listo, aburrido, rico and verde."
+    },
+    "de": {
+     "t": "Ser und estar: Bedeutungswechsel",
+     "g": "Lerne Adjektive, die mit ser und estar ihre Bedeutung ändern.",
+     "p": [
+      "Ser listo = klug, estar listo = fertig. Ser aburrido = langweilig, estar aburrido = gelangweilt.",
+      "Ser rico = reich, estar rico = lecker. Ser malo = schlecht, estar malo = krank. Estar verde = unreif.",
+      "Ser beschreibt, wie etwas ist; estar beschreibt einen Zustand oder ein Ergebnis im Moment."
+     ],
+     "q": "Bist du öfter langweilig (ser) oder gelangweilt (estar)? Erzähl es mit einem Beispiel!",
+     "c": "Schreib vier Satzpaare mit beiden Bedeutungen: listo, aburrido, rico und verde."
+    },
+    "es": {
+     "t": "Ser y estar: cambio de significado",
+     "g": "Aprende adjetivos que cambian de significado con ser y estar.",
+     "p": [
+      "Ser listo = inteligente, estar listo = preparado. Ser aburrido = que aburre, estar aburrido = sin interés.",
+      "Ser rico = tener dinero, estar rico = sabroso. Ser malo = malvado, estar malo = enfermo. Estar verde = sin madurar.",
+      "Ser describe cómo es algo; estar describe un estado o un resultado en este momento."
+     ],
+     "q": "¿Eres aburrido o estás aburrido a menudo? ¡Cuéntamelo con un ejemplo!",
+     "c": "Escribe cuatro parejas de frases con los dos significados: listo, aburrido, rico y verde."
+    },
+    "fr": {
+     "t": "Ser et estar : changement de sens",
+     "g": "Apprends des adjectifs qui changent de sens avec ser et estar.",
+     "p": [
+      "Ser listo = intelligent, estar listo = prêt. Ser aburrido = ennuyeux, estar aburrido = s'ennuyer.",
+      "Ser rico = riche, estar rico = délicieux. Ser malo = méchant, estar malo = malade. Estar verde = pas mûr.",
+      "Ser décrit ce qu'est une chose ; estar décrit un état ou un résultat en ce moment."
+     ],
+     "q": "Es-tu souvent ennuyeux (ser) ou t'ennuies-tu (estar) ? Raconte avec un exemple !",
+     "c": "Écris quatre paires de phrases montrant les deux sens : listo, aburrido, rico et verde."
+    },
+    "it": {
+     "t": "Ser ed estar: cambio di significato",
+     "g": "Impara aggettivi che cambiano significato con ser ed estar.",
+     "p": [
+      "Ser listo = intelligente, estar listo = pronto. Ser aburrido = noioso, estar aburrido = annoiato.",
+      "Ser rico = ricco, estar rico = buono da mangiare. Ser malo = cattivo, estar malo = malato. Estar verde = acerbo.",
+      "Ser descrive com'è qualcosa; estar descrive uno stato o un risultato in questo momento."
+     ],
+     "q": "Sei più spesso noioso (ser) o annoiato (estar)? Raccontamelo con un esempio!",
+     "c": "Scrivi quattro coppie di frasi con i due significati: listo, aburrido, rico e verde."
+    },
+    "pt": {
+     "t": "Ser e estar: mudança de significado",
+     "g": "Aprende adjetivos que mudam de significado com ser e estar.",
+     "p": [
+      "Ser listo = inteligente, estar listo = pronto. Ser aburrido = aborrecido, estar aburrido = entediado.",
+      "Ser rico = rico, estar rico = saboroso. Ser malo = mau, estar malo = doente. Estar verde = verde, não maduro.",
+      "Ser descreve como algo é; estar descreve um estado ou resultado neste momento."
+     ],
+     "q": "És aborrecido (ser) ou estás aborrecido (estar) muitas vezes? Conta-me com um exemplo!",
+     "c": "Escreve quatro pares de frases com os dois significados: listo, aburrido, rico e verde."
+    },
+    "pt_BR": {
+     "t": "Ser e estar: mudança de significado",
+     "g": "Aprenda adjetivos que mudam de significado com ser e estar.",
+     "p": [
+      "Ser listo = esperto, estar listo = pronto. Ser aburrido = chato, estar aburrido = entediado.",
+      "Ser rico = rico, estar rico = gostoso. Ser malo = mau, estar malo = doente. Estar verde = verde, não maduro.",
+      "Ser descreve como algo é; estar descreve um estado ou resultado neste momento."
+     ],
+     "q": "Você é chato (ser) ou fica entediado (estar) com frequência? Me conte com um exemplo!",
+     "c": "Escreva quatro pares de frases com os dois significados: listo, aburrido, rico e verde."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ser listo / estar listo",
+      "ex": "Mi hermano es muy listo y ya está listo para salir."
+     },
+     {
+      "w": "ser aburrido / estar aburrido",
+      "ex": "La película es aburrida, por eso estoy aburrido."
+     },
+     {
+      "w": "estar rico",
+      "ex": "¡Este gazpacho está riquísimo!"
+     },
+     {
+      "w": "estar malo",
+      "ex": "Hoy no voy a clase porque estoy malo."
+     },
+     {
+      "w": "estar verde",
+      "ex": "No comas ese plátano, todavía está verde."
+     },
+     {
+      "w": "ser abierto / estar abierto",
+      "ex": "Lucía es muy abierta y la tienda está abierta hasta las nueve."
+     }
+    ],
+    "gram": "Ser = cualidad (es listo, es aburrido, es rico). Estar = estado (está listo, está aburrido, está rico, está malo)."
+   }
+  },
+  {
+   "d": 202,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Por and para in depth",
+     "g": "Master the tricky pair: por la mañana, para mañana, gracias por, para mí.",
+     "p": [
+      "Para = goal and destination: para ti, para mañana, salgo para Madrid, estudio para aprender.",
+      "Por = cause, route, means and exchange: gracias por todo, paseo por el parque, por teléfono, lo compré por diez euros.",
+      "Time: por la mañana (part of the day), para el lunes (deadline). Opinion: para mí, es fácil."
+     ],
+     "q": "Thank someone for three things with gracias por..., then tell me who this lesson is para.",
+     "c": "Write six sentences: three with por (cause, route, means) and three with para (goal, deadline, opinion)."
+    },
+    "de": {
+     "t": "Por und para vertieft",
+     "g": "Meistere das knifflige Paar: por la mañana, para mañana, gracias por, para mí.",
+     "p": [
+      "Para = Ziel und Bestimmung: para ti, para mañana, salgo para Madrid, estudio para aprender.",
+      "Por = Grund, Weg, Mittel und Tausch: gracias por todo, paseo por el parque, por teléfono, por diez euros.",
+      "Zeit: por la mañana (Tageszeit), para el lunes (Frist). Meinung: para mí, es fácil."
+     ],
+     "q": "Bedanke dich für drei Dinge mit gracias por... und sag, für wen (para) diese Lektion ist.",
+     "c": "Schreib sechs Sätze: drei mit por (Grund, Weg, Mittel) und drei mit para (Ziel, Frist, Meinung)."
+    },
+    "es": {
+     "t": "Por y para a fondo",
+     "g": "Domina la pareja difícil: por la mañana, para mañana, gracias por, para mí.",
+     "p": [
+      "Para = finalidad y destino: para ti, para mañana, salgo para Madrid, estudio para aprender.",
+      "Por = causa, lugar de paso, medio e intercambio: gracias por todo, paseo por el parque, por teléfono, por diez euros.",
+      "Tiempo: por la mañana (parte del día), para el lunes (plazo). Opinión: para mí, es fácil."
+     ],
+     "q": "Da las gracias por tres cosas con gracias por... y dime para quién es esta lección.",
+     "c": "Escribe seis frases: tres con por (causa, paso, medio) y tres con para (finalidad, plazo, opinión)."
+    },
+    "fr": {
+     "t": "Por et para en profondeur",
+     "g": "Maîtrise la paire délicate : por la mañana, para mañana, gracias por, para mí.",
+     "p": [
+      "Para = but et destination : para ti, para mañana, salgo para Madrid, estudio para aprender.",
+      "Por = cause, passage, moyen et échange : gracias por todo, paseo por el parque, por teléfono, por diez euros.",
+      "Temps : por la mañana (moment), para el lunes (échéance). Opinion : para mí, es fácil."
+     ],
+     "q": "Remercie pour trois choses avec gracias por..., puis dis-moi pour qui (para) est cette leçon.",
+     "c": "Écris six phrases : trois avec por (cause, passage, moyen) et trois avec para (but, échéance, opinion)."
+    },
+    "it": {
+     "t": "Por e para a fondo",
+     "g": "Padroneggia la coppia difficile: por la mañana, para mañana, gracias por, para mí.",
+     "p": [
+      "Para = scopo e destinazione: para ti, para mañana, salgo para Madrid, estudio para aprender.",
+      "Por = causa, passaggio, mezzo e scambio: gracias por todo, paseo por el parque, por teléfono, por diez euros.",
+      "Tempo: por la mañana (parte del giorno), para el lunes (scadenza). Opinione: para mí, es fácil."
+     ],
+     "q": "Ringrazia per tre cose con gracias por..., poi dimmi per chi (para) è questa lezione.",
+     "c": "Scrivi sei frasi: tre con por (causa, passaggio, mezzo) e tre con para (scopo, scadenza, opinione)."
+    },
+    "pt": {
+     "t": "Por e para a fundo",
+     "g": "Domina o par difícil: por la mañana, para mañana, gracias por, para mí.",
+     "p": [
+      "Para = finalidade e destino: para ti, para mañana, salgo para Madrid, estudio para aprender.",
+      "Por = causa, passagem, meio e troca: gracias por todo, paseo por el parque, por teléfono, por diez euros.",
+      "Tempo: por la mañana (parte do dia), para el lunes (prazo). Opinião: para mí, es fácil."
+     ],
+     "q": "Agradece três coisas com gracias por... e diz-me para quem é esta lição.",
+     "c": "Escreve seis frases: três com por (causa, passagem, meio) e três com para (finalidade, prazo, opinião)."
+    },
+    "pt_BR": {
+     "t": "Por e para a fundo",
+     "g": "Domine o par difícil: por la mañana, para mañana, gracias por, para mí.",
+     "p": [
+      "Para = finalidade e destino: para ti, para mañana, salgo para Madrid, estudio para aprender.",
+      "Por = causa, passagem, meio e troca: gracias por todo, paseo por el parque, por teléfono, por diez euros.",
+      "Tempo: por la mañana (parte do dia), para el lunes (prazo). Opinião: para mí, es fácil."
+     ],
+     "q": "Agradeça três coisas com gracias por... e me diga para quem é esta lição.",
+     "c": "Escreva seis frases: três com por (causa, passagem, meio) e três com para (finalidade, prazo, opinião)."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "gracias por",
+      "ex": "Gracias por ayudarme con la mudanza."
+     },
+     {
+      "w": "por la mañana",
+      "ex": "Por la mañana siempre tomo un café con leche."
+     },
+     {
+      "w": "para mañana",
+      "ex": "Tengo que terminar el informe para mañana."
+     },
+     {
+      "w": "para mí",
+      "ex": "Para mí, el español es un idioma precioso."
+     },
+     {
+      "w": "por teléfono",
+      "ex": "Hablamos por teléfono cada domingo."
+     },
+     {
+      "w": "pasear por",
+      "ex": "Me encanta pasear por el casco antiguo."
+     }
+    ],
+    "gram": "Para: finalidad, destino, plazo, opinión (para ti, para el lunes). Por: causa, paso, medio, intercambio (gracias por, por el parque)."
+   }
+  },
+  {
+   "d": 203,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Verbal phrases: ponerse a, seguir",
+     "g": "Use verb phrases to show beginnings, continuation and time: ponerse a, seguir, tardar en.",
+     "p": [
+      "Start suddenly: ponerse a + infinitive: me puse a llorar de risa. Echarse a reír works the same way.",
+      "Continue: seguir + gerund: sigo estudiando español. Stop: dejar de + infinitive: dejé de fumar.",
+      "Time taken: tardar en: tardo veinte minutos en llegar. Again: volver a + infinitive: volví a llamar."
+     ],
+     "q": "What do you still do (sigues haciendo) from childhood, and what did you stop doing?",
+     "c": "Write one sentence each with ponerse a, seguir, dejar de, tardar en and volver a."
+    },
+    "de": {
+     "t": "Verbalperiphrasen: ponerse a, seguir",
+     "g": "Zeige Beginn, Fortsetzung und Dauer mit ponerse a, seguir, tardar en.",
+     "p": [
+      "Plötzlich anfangen: ponerse a + Infinitiv: me puse a llorar de risa. Echarse a reír funktioniert genauso.",
+      "Weitermachen: seguir + Gerundium: sigo estudiando español. Aufhören: dejar de + Infinitiv.",
+      "Dauer: tardar en: tardo veinte minutos en llegar. Wieder: volver a + Infinitiv: volví a llamar."
+     ],
+     "q": "Was machst du seit deiner Kindheit immer noch (sigues haciendo), und womit hast du aufgehört?",
+     "c": "Schreib je einen Satz mit ponerse a, seguir, dejar de, tardar en und volver a."
+    },
+    "es": {
+     "t": "Perífrasis: ponerse a, seguir",
+     "g": "Usa perífrasis para expresar inicio, continuidad y duración: ponerse a, seguir, tardar en.",
+     "p": [
+      "Empezar de golpe: ponerse a + infinitivo: me puse a llorar de risa. Echarse a reír funciona igual.",
+      "Continuar: seguir + gerundio: sigo estudiando español. Parar: dejar de + infinitivo.",
+      "Duración: tardar en: tardo veinte minutos en llegar. Repetir: volver a + infinitivo: volví a llamar."
+     ],
+     "q": "¿Qué sigues haciendo desde niño y qué dejaste de hacer?",
+     "c": "Escribe una frase con cada una: ponerse a, seguir, dejar de, tardar en y volver a."
+    },
+    "fr": {
+     "t": "Périphrases : ponerse a, seguir",
+     "g": "Exprime début, continuité et durée avec ponerse a, seguir, tardar en.",
+     "p": [
+      "Commencer soudain : ponerse a + infinitif : me puse a llorar de risa. Echarse a reír fonctionne pareil.",
+      "Continuer : seguir + gérondif : sigo estudiando español. Arrêter : dejar de + infinitif.",
+      "Durée : tardar en : tardo veinte minutos en llegar. Refaire : volver a + infinitif : volví a llamar."
+     ],
+     "q": "Que continues-tu à faire depuis l'enfance, et qu'as-tu arrêté de faire ?",
+     "c": "Écris une phrase avec chacune : ponerse a, seguir, dejar de, tardar en et volver a."
+    },
+    "it": {
+     "t": "Perifrasi: ponerse a, seguir",
+     "g": "Esprimi inizio, continuità e durata con ponerse a, seguir, tardar en.",
+     "p": [
+      "Iniziare all'improvviso: ponerse a + infinito: me puse a llorar de risa. Echarse a reír funziona uguale.",
+      "Continuare: seguir + gerundio: sigo estudiando español. Smettere: dejar de + infinito.",
+      "Durata: tardar en: tardo veinte minutos en llegar. Rifare: volver a + infinito: volví a llamar."
+     ],
+     "q": "Cosa continui a fare da quando eri bambino, e cosa hai smesso di fare?",
+     "c": "Scrivi una frase con ciascuna: ponerse a, seguir, dejar de, tardar en e volver a."
+    },
+    "pt": {
+     "t": "Perífrases: ponerse a, seguir",
+     "g": "Exprime início, continuidade e duração com ponerse a, seguir, tardar en.",
+     "p": [
+      "Começar de repente: ponerse a + infinitivo: me puse a llorar de risa. Echarse a reír funciona igual.",
+      "Continuar: seguir + gerúndio: sigo estudiando español. Parar: dejar de + infinitivo.",
+      "Duração: tardar en: tardo veinte minutos en llegar. Repetir: volver a + infinitivo: volví a llamar."
+     ],
+     "q": "O que continuas a fazer desde criança, e o que deixaste de fazer?",
+     "c": "Escreve uma frase com cada uma: ponerse a, seguir, dejar de, tardar en e volver a."
+    },
+    "pt_BR": {
+     "t": "Perífrases: ponerse a, seguir",
+     "g": "Expresse início, continuidade e duração com ponerse a, seguir, tardar en.",
+     "p": [
+      "Começar de repente: ponerse a + infinitivo: me puse a llorar de risa. Echarse a reír funciona igual.",
+      "Continuar: seguir + gerúndio: sigo estudiando español. Parar: dejar de + infinitivo.",
+      "Duração: tardar en: tardo veinte minutos en llegar. Repetir: volver a + infinitivo: volví a llamar."
+     ],
+     "q": "O que você continua fazendo desde criança, e o que parou de fazer?",
+     "c": "Escreva uma frase com cada uma: ponerse a, seguir, dejar de, tardar en e volver a."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ponerse a",
+      "ex": "Al ver el vídeo, me puse a llorar de risa."
+     },
+     {
+      "w": "seguir + gerundio",
+      "ex": "Sigo estudiando español todos los días."
+     },
+     {
+      "w": "dejar de",
+      "ex": "Dejé de tomar café por la noche."
+     },
+     {
+      "w": "tardar en",
+      "ex": "Tardo media hora en llegar al trabajo."
+     },
+     {
+      "w": "volver a",
+      "ex": "Mañana vuelvo a intentarlo."
+     },
+     {
+      "w": "echarse a reír",
+      "ex": "Cuando lo vio, se echó a reír."
+     }
+    ],
+    "gram": "Perífrasis: ponerse a + inf. (inicio), seguir + gerundio (continuidad), dejar de + inf., volver a + inf., tardar en + inf."
+   }
+  },
+  {
+   "d": 204,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Word formation: -ción, -dad, -miento",
+     "g": "Build nouns from verbs and adjectives: educación, felicidad, conocimiento.",
+     "p": [
+      "-ción from verbs (feminine): educar → la educación, informar → la información, celebrar → la celebración.",
+      "-dad from adjectives (feminine): feliz → la felicidad, real → la realidad, posible → la posibilidad.",
+      "-miento from verbs (masculine): conocer → el conocimiento, mover → el movimiento, sentir → el sentimiento."
+     ],
+     "q": "Pick a verb you like. Can you make a noun from it with one of these endings?",
+     "c": "Make nouns from: crear, comunicar, amable, seguro, pensar and crecer. Use two in a sentence."
+    },
+    "de": {
+     "t": "Wortbildung: -ción, -dad, -miento",
+     "g": "Bilde Nomen aus Verben und Adjektiven: educación, felicidad, conocimiento.",
+     "p": [
+      "-ción aus Verben (weiblich): educar → la educación, informar → la información, celebrar → la celebración.",
+      "-dad aus Adjektiven (weiblich): feliz → la felicidad, real → la realidad, posible → la posibilidad.",
+      "-miento aus Verben (männlich): conocer → el conocimiento, mover → el movimiento, sentir → el sentimiento."
+     ],
+     "q": "Wähl ein Verb, das du magst. Kannst du mit einer dieser Endungen ein Nomen daraus machen?",
+     "c": "Bilde Nomen aus: crear, comunicar, amable, seguro, pensar und crecer. Benutze zwei in einem Satz."
+    },
+    "es": {
+     "t": "Formación de palabras: -ción, -dad, -miento",
+     "g": "Forma sustantivos a partir de verbos y adjetivos: educación, felicidad, conocimiento.",
+     "p": [
+      "-ción viene de verbos (femenino): educar → la educación, informar → la información, celebrar → la celebración.",
+      "-dad viene de adjetivos (femenino): feliz → la felicidad, real → la realidad, posible → la posibilidad.",
+      "-miento viene de verbos (masculino): conocer → el conocimiento, mover → el movimiento, sentir → el sentimiento."
+     ],
+     "q": "Elige un verbo que te guste. ¿Puedes formar un sustantivo con una de estas terminaciones?",
+     "c": "Forma sustantivos de: crear, comunicar, amable, seguro, pensar y crecer. Usa dos en una frase."
+    },
+    "fr": {
+     "t": "Formation des mots : -ción, -dad, -miento",
+     "g": "Forme des noms à partir de verbes et d'adjectifs : educación, felicidad, conocimiento.",
+     "p": [
+      "-ción vient des verbes (féminin, comme -tion) : educar → la educación, informar → la información.",
+      "-dad vient des adjectifs (féminin, comme -té) : feliz → la felicidad, real → la realidad.",
+      "-miento vient des verbes (masculin, comme -ment) : conocer → el conocimiento, mover → el movimiento."
+     ],
+     "q": "Choisis un verbe que tu aimes. Peux-tu en faire un nom avec une de ces terminaisons ?",
+     "c": "Forme des noms à partir de : crear, comunicar, amable, seguro, pensar et crecer. Utilises-en deux."
+    },
+    "it": {
+     "t": "Formazione delle parole: -ción, -dad, -miento",
+     "g": "Forma nomi da verbi e aggettivi: educación, felicidad, conocimiento.",
+     "p": [
+      "-ción dai verbi (femminile, come -zione): educar → la educación, informar → la información.",
+      "-dad dagli aggettivi (femminile, come -tà): feliz → la felicidad, real → la realidad.",
+      "-miento dai verbi (maschile, come -mento): conocer → el conocimiento, mover → el movimiento."
+     ],
+     "q": "Scegli un verbo che ti piace. Riesci a formare un nome con una di queste desinenze?",
+     "c": "Forma nomi da: crear, comunicar, amable, seguro, pensar e crecer. Usane due in una frase."
+    },
+    "pt": {
+     "t": "Formação de palavras: -ción, -dad, -miento",
+     "g": "Forma substantivos a partir de verbos e adjetivos: educación, felicidad, conocimiento.",
+     "p": [
+      "-ción vem de verbos (feminino, como -ção): educar → la educación, informar → la información.",
+      "-dad vem de adjetivos (feminino, como -dade): feliz → la felicidad, real → la realidad.",
+      "-miento vem de verbos (masculino, como -mento): conocer → el conocimiento, mover → el movimiento."
+     ],
+     "q": "Escolhe um verbo de que gostes. Consegues formar um substantivo com uma destas terminações?",
+     "c": "Forma substantivos de: crear, comunicar, amable, seguro, pensar e crecer. Usa dois numa frase."
+    },
+    "pt_BR": {
+     "t": "Formação de palavras: -ción, -dad, -miento",
+     "g": "Forme substantivos a partir de verbos e adjetivos: educación, felicidad, conocimiento.",
+     "p": [
+      "-ción vem de verbos (feminino, como -ção): educar → la educación, informar → la información.",
+      "-dad vem de adjetivos (feminino, como -dade): feliz → la felicidad, real → la realidad.",
+      "-miento vem de verbos (masculino, como -mento): conocer → el conocimiento, mover → el movimiento."
+     ],
+     "q": "Escolha um verbo de que você gosta. Consegue formar um substantivo com uma dessas terminações?",
+     "c": "Forme substantivos de: crear, comunicar, amable, seguro, pensar e crecer. Use dois numa frase."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la educación",
+      "ex": "La educación es la base de todo."
+     },
+     {
+      "w": "la felicidad",
+      "ex": "La felicidad está en las cosas pequeñas."
+     },
+     {
+      "w": "el conocimiento",
+      "ex": "Compartir el conocimiento nos hace crecer."
+     },
+     {
+      "w": "la posibilidad",
+      "ex": "Tenemos la posibilidad de viajar en verano."
+     },
+     {
+      "w": "el movimiento",
+      "ex": "El baile es pura alegría y movimiento."
+     },
+     {
+      "w": "la comunicación",
+      "ex": "La comunicación es clave en un equipo."
+     }
+    ],
+    "gram": "Sustantivos: verbo + -ción (educación, f.), adjetivo + -dad (felicidad, f.), verbo + -miento (conocimiento, m.)."
+   }
+  },
+  {
+   "d": 205,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Prefixes: des-, in-, re-",
+     "g": "Change meaning with prefixes: deshacer, imposible, rehacer.",
+     "p": [
+      "Des- means the opposite or undoing: hacer → deshacer, conocido → desconocido, ordenado → desordenado.",
+      "In- means not; it becomes im- before p and b, and i- before l and r: posible → imposible, legal → ilegal.",
+      "Re- means again or intensely: hacer → rehacer, leer → releer, utilizar → reutilizar."
+     ],
+     "q": "Which of these words would describe your desk right now: ordenado or desordenado?",
+     "c": "Make opposites of: agradable, capaz, cómodo, paciente, and add re- to: escribir, empezar."
+    },
+    "de": {
+     "t": "Präfixe: des-, in-, re-",
+     "g": "Verändere Bedeutungen mit Präfixen: deshacer, imposible, rehacer.",
+     "p": [
+      "Des- bedeutet Gegenteil oder Rückgängigmachen: hacer → deshacer, conocido → desconocido.",
+      "In- bedeutet nicht; vor p und b wird es im-, vor l und r i-: posible → imposible, legal → ilegal.",
+      "Re- bedeutet wieder oder verstärkt: hacer → rehacer, leer → releer, utilizar → reutilizar."
+     ],
+     "q": "Welches Wort beschreibt deinen Schreibtisch gerade: ordenado oder desordenado?",
+     "c": "Bilde Gegenteile von agradable, capaz, cómodo, paciente und setze re- vor escribir und empezar."
+    },
+    "es": {
+     "t": "Prefijos: des-, in-, re-",
+     "g": "Cambia el significado con prefijos: deshacer, imposible, rehacer.",
+     "p": [
+      "Des- indica lo contrario o deshacer algo: hacer → deshacer, conocido → desconocido, ordenado → desordenado.",
+      "In- significa no; es im- ante p y b, e i- ante l y r: posible → imposible, legal → ilegal.",
+      "Re- significa otra vez o con intensidad: hacer → rehacer, leer → releer, utilizar → reutilizar."
+     ],
+     "q": "¿Qué palabra describe ahora tu mesa: ordenada o desordenada?",
+     "c": "Forma los contrarios de agradable, capaz, cómodo y paciente, y añade re- a escribir y empezar."
+    },
+    "fr": {
+     "t": "Préfixes : des-, in-, re-",
+     "g": "Change le sens avec des préfixes : deshacer, imposible, rehacer.",
+     "p": [
+      "Des- marque le contraire, comme dé- : hacer → deshacer, conocido → desconocido, ordenado → desordenado.",
+      "In- veut dire non ; im- devant p et b, i- devant l et r : posible → imposible, legal → ilegal.",
+      "Re- veut dire de nouveau : hacer → rehacer, leer → releer, utilizar → reutilizar."
+     ],
+     "q": "Quel mot décrit ton bureau en ce moment : ordenado ou desordenado ?",
+     "c": "Forme les contraires de agradable, capaz, cómodo, paciente et ajoute re- à escribir et empezar."
+    },
+    "it": {
+     "t": "Prefissi: des-, in-, re-",
+     "g": "Cambia il significato con i prefissi: deshacer, imposible, rehacer.",
+     "p": [
+      "Des- indica il contrario, come dis- o s-: hacer → deshacer, conocido → desconocido, ordenado → desordenado.",
+      "In- significa non; diventa im- davanti a p e b, i- davanti a l e r: posible → imposible, legal → ilegal.",
+      "Re- significa di nuovo, come ri-: hacer → rehacer, leer → releer, utilizar → reutilizar."
+     ],
+     "q": "Quale parola descrive la tua scrivania adesso: ordenada o desordenada?",
+     "c": "Forma i contrari di agradable, capaz, cómodo, paciente e aggiungi re- a escribir ed empezar."
+    },
+    "pt": {
+     "t": "Prefixos: des-, in-, re-",
+     "g": "Muda o significado com prefixos: deshacer, imposible, rehacer.",
+     "p": [
+      "Des- indica o contrário, como em português: hacer → deshacer, conocido → desconocido, ordenado → desordenado.",
+      "In- significa não; fica im- antes de p e b, e i- antes de l e r: posible → imposible, legal → ilegal.",
+      "Re- significa outra vez: hacer → rehacer, leer → releer, utilizar → reutilizar."
+     ],
+     "q": "Que palavra descreve agora a tua secretária: ordenada ou desordenada?",
+     "c": "Forma os contrários de agradable, capaz, cómodo, paciente e junta re- a escribir e empezar."
+    },
+    "pt_BR": {
+     "t": "Prefixos: des-, in-, re-",
+     "g": "Mude o significado com prefixos: deshacer, imposible, rehacer.",
+     "p": [
+      "Des- indica o contrário, como em português: hacer → deshacer, conocido → desconocido, ordenado → desordenado.",
+      "In- significa não; vira im- antes de p e b, e i- antes de l e r: posible → imposible, legal → ilegal.",
+      "Re- significa de novo: hacer → rehacer, leer → releer, utilizar → reutilizar."
+     ],
+     "q": "Que palavra descreve agora a sua mesa: ordenada ou desordenada?",
+     "c": "Forme os contrários de agradable, capaz, cómodo, paciente e coloque re- em escribir e empezar."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "deshacer",
+      "ex": "Tengo que deshacer la maleta al llegar."
+     },
+     {
+      "w": "desconocido",
+      "ex": "Este pueblo es casi desconocido para los turistas."
+     },
+     {
+      "w": "imposible",
+      "ex": "Nada es imposible si practicas cada día."
+     },
+     {
+      "w": "incómodo",
+      "ex": "Este sofá es bonito, pero un poco incómodo."
+     },
+     {
+      "w": "rehacer",
+      "ex": "El profesor me pidió rehacer el ejercicio."
+     },
+     {
+      "w": "reutilizar",
+      "ex": "Intento reutilizar las bolsas de la compra."
+     }
+    ],
+    "gram": "Prefijos: des- (contrario: deshacer), in-/im-/i- (negación: inútil, imposible, ilegal), re- (repetición: rehacer, releer)."
+   }
+  },
+  {
+   "d": 206,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Strong adjectives: enorme, helado",
+     "g": "Intensify your descriptions with strong adjectives and -ísimo.",
+     "p": [
+      "Strong adjectives replace muy + adjective: muy grande → enorme, muy frío → helado, muy cansado → agotado.",
+      "More: precioso (very beautiful), horrible, diminuto, buenísimo. Don't say muy enorme: it's already strong!",
+      "Add -ísimo for emphasis: rico → riquísimo, bueno → buenísimo, caro → carísimo, poco → poquísimo."
+     ],
+     "q": "Describe your last meal out using two strong adjectives.",
+     "c": "Rewrite five sentences with muy + adjective using a strong adjective or -ísimo instead."
+    },
+    "de": {
+     "t": "Starke Adjektive: enorme, helado",
+     "g": "Verstärke deine Beschreibungen mit starken Adjektiven und -ísimo.",
+     "p": [
+      "Starke Adjektive ersetzen muy + Adjektiv: muy grande → enorme, muy frío → helado, muy cansado → agotado.",
+      "Mehr: precioso (wunderschön), horrible, diminuto, buenísimo. Kein muy enorme: das ist schon stark!",
+      "Hänge -ísimo an zur Betonung: rico → riquísimo, bueno → buenísimo, caro → carísimo, poco → poquísimo."
+     ],
+     "q": "Beschreib dein letztes Essen im Restaurant mit zwei starken Adjektiven.",
+     "c": "Schreib fünf Sätze mit muy + Adjektiv um und benutze stattdessen ein starkes Adjektiv oder -ísimo."
+    },
+    "es": {
+     "t": "Adjetivos fuertes: enorme, helado",
+     "g": "Intensifica tus descripciones con adjetivos fuertes y -ísimo.",
+     "p": [
+      "Los adjetivos fuertes sustituyen a muy + adjetivo: muy grande → enorme, muy frío → helado, muy cansado → agotado.",
+      "Más: precioso, horrible, diminuto, buenísimo. No digas muy enorme: ¡ya es fuerte!",
+      "Añade -ísimo para enfatizar: rico → riquísimo, bueno → buenísimo, caro → carísimo, poco → poquísimo."
+     ],
+     "q": "Describe tu última comida fuera de casa con dos adjetivos fuertes.",
+     "c": "Reescribe cinco frases con muy + adjetivo usando un adjetivo fuerte o -ísimo."
+    },
+    "fr": {
+     "t": "Adjectifs forts : enorme, helado",
+     "g": "Intensifie tes descriptions avec des adjectifs forts et -ísimo.",
+     "p": [
+      "Les adjectifs forts remplacent muy + adjectif : muy grande → enorme, muy frío → helado, muy cansado → agotado.",
+      "Aussi : precioso (magnifique), horrible, diminuto, buenísimo. Pas de muy enorme : c'est déjà fort !",
+      "Ajoute -ísimo pour insister : rico → riquísimo, bueno → buenísimo, caro → carísimo, poco → poquísimo."
+     ],
+     "q": "Décris ton dernier repas au restaurant avec deux adjectifs forts.",
+     "c": "Réécris cinq phrases avec muy + adjectif en utilisant un adjectif fort ou -ísimo."
+    },
+    "it": {
+     "t": "Aggettivi forti: enorme, helado",
+     "g": "Intensifica le tue descrizioni con aggettivi forti e -ísimo.",
+     "p": [
+      "Gli aggettivi forti sostituiscono muy + aggettivo: muy grande → enorme, muy frío → helado, muy cansado → agotado.",
+      "Altri: precioso (bellissimo), horrible, diminuto, buenísimo. Niente muy enorme: è già forte!",
+      "Aggiungi -ísimo, come -issimo: rico → riquísimo, bueno → buenísimo, caro → carísimo, poco → poquísimo."
+     ],
+     "q": "Descrivi il tuo ultimo pasto fuori casa con due aggettivi forti.",
+     "c": "Riscrivi cinque frasi con muy + aggettivo usando un aggettivo forte o -ísimo."
+    },
+    "pt": {
+     "t": "Adjetivos fortes: enorme, helado",
+     "g": "Intensifica as tuas descrições com adjetivos fortes e -ísimo.",
+     "p": [
+      "Os adjetivos fortes substituem muy + adjetivo: muy grande → enorme, muy frío → helado, muy cansado → agotado.",
+      "Mais: precioso (lindíssimo), horrible, diminuto, buenísimo. Nada de muy enorme: já é forte!",
+      "Junta -ísimo para enfatizar: rico → riquísimo, bueno → buenísimo, caro → carísimo, poco → poquísimo."
+     ],
+     "q": "Descreve a tua última refeição fora de casa com dois adjetivos fortes.",
+     "c": "Reescreve cinco frases com muy + adjetivo usando um adjetivo forte ou -ísimo."
+    },
+    "pt_BR": {
+     "t": "Adjetivos fortes: enorme, helado",
+     "g": "Intensifique suas descrições com adjetivos fortes e -ísimo.",
+     "p": [
+      "Adjetivos fortes substituem muy + adjetivo: muy grande → enorme, muy frío → helado, muy cansado → agotado.",
+      "Mais: precioso (lindíssimo), horrible, diminuto, buenísimo. Nada de muy enorme: já é forte!",
+      "Coloque -ísimo para enfatizar: rico → riquísimo, bueno → buenísimo, caro → carísimo, poco → poquísimo."
+     ],
+     "q": "Descreva sua última refeição fora de casa com dois adjetivos fortes.",
+     "c": "Reescreva cinco frases com muy + adjetivo usando um adjetivo forte ou -ísimo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "enorme",
+      "ex": "Vivimos en una ciudad enorme."
+     },
+     {
+      "w": "helado",
+      "ex": "El agua del río estaba helada."
+     },
+     {
+      "w": "agotado",
+      "ex": "Después de la excursión, estaba agotado."
+     },
+     {
+      "w": "precioso",
+      "ex": "Desde aquí, el paisaje es precioso."
+     },
+     {
+      "w": "riquísimo",
+      "ex": "La tortilla de tu abuela está riquísima."
+     },
+     {
+      "w": "diminuto",
+      "ex": "Nos alojamos en un apartamento diminuto."
+     }
+    ],
+    "gram": "Adjetivos fuertes sin muy: enorme, helado, agotado, precioso. Superlativo con -ísimo: buenísimo, riquísimo, carísimo."
+   }
+  },
+  {
+   "d": 207,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Collocations: tomar una decisión",
+     "g": "Learn words that naturally go together: tomar una decisión, hacer una pregunta, dar un paseo.",
+     "p": [
+      "With tomar: tomar una decisión, tomar el sol, tomar nota, tomar algo (have a drink).",
+      "With hacer and dar: hacer una pregunta, hacer cola, hacer caso; dar un paseo, dar las gracias, dar una vuelta.",
+      "With echar and poner: echar de menos (to miss), echar una mano; poner atención, poner la mesa."
+     ],
+     "q": "What is the last big decision you took? Tell me with tomar una decisión.",
+     "c": "Write six sentences, each with a different collocation from today, about your week."
+    },
+    "de": {
+     "t": "Kollokationen: tomar una decisión",
+     "g": "Lerne Wörter, die natürlich zusammengehören: tomar una decisión, hacer una pregunta, dar un paseo.",
+     "p": [
+      "Mit tomar: tomar una decisión, tomar el sol, tomar nota, tomar algo (etwas trinken gehen).",
+      "Mit hacer und dar: hacer una pregunta, hacer cola, hacer caso; dar un paseo, dar las gracias, dar una vuelta.",
+      "Mit echar und poner: echar de menos (vermissen), echar una mano; poner atención, poner la mesa."
+     ],
+     "q": "Was war die letzte große Entscheidung, die du getroffen hast? Erzähl mit tomar una decisión.",
+     "c": "Schreib sechs Sätze über deine Woche, jeder mit einer anderen Kollokation von heute."
+    },
+    "es": {
+     "t": "Colocaciones: tomar una decisión",
+     "g": "Aprende palabras que van juntas de forma natural: tomar una decisión, hacer una pregunta, dar un paseo.",
+     "p": [
+      "Con tomar: tomar una decisión, tomar el sol, tomar nota, tomar algo (beber algo en un bar).",
+      "Con hacer y dar: hacer una pregunta, hacer cola, hacer caso; dar un paseo, dar las gracias, dar una vuelta.",
+      "Con echar y poner: echar de menos, echar una mano; poner atención, poner la mesa."
+     ],
+     "q": "¿Cuál es la última gran decisión que tomaste? Cuéntamelo con tomar una decisión.",
+     "c": "Escribe seis frases sobre tu semana, cada una con una colocación distinta de hoy."
+    },
+    "fr": {
+     "t": "Collocations : tomar una decisión",
+     "g": "Apprends les mots qui vont naturellement ensemble : tomar una decisión, hacer una pregunta, dar un paseo.",
+     "p": [
+      "Avec tomar : tomar una decisión, tomar el sol, tomar nota, tomar algo (prendre un verre).",
+      "Avec hacer et dar : hacer una pregunta (poser !), hacer cola, hacer caso ; dar un paseo, dar las gracias.",
+      "Avec echar et poner : echar de menos (manquer), echar una mano ; poner atención, poner la mesa."
+     ],
+     "q": "Quelle est la dernière grande décision que tu as prise ? Raconte avec tomar una decisión.",
+     "c": "Écris six phrases sur ta semaine, chacune avec une collocation différente d'aujourd'hui."
+    },
+    "it": {
+     "t": "Collocazioni: tomar una decisión",
+     "g": "Impara parole che stanno bene insieme: tomar una decisión, hacer una pregunta, dar un paseo.",
+     "p": [
+      "Con tomar: tomar una decisión (prendere!), tomar el sol, tomar nota, tomar algo (bere qualcosa).",
+      "Con hacer e dar: hacer una pregunta, hacer cola, hacer caso; dar un paseo, dar las gracias, dar una vuelta.",
+      "Con echar e poner: echar de menos (sentire la mancanza), echar una mano; poner atención, poner la mesa."
+     ],
+     "q": "Qual è l'ultima grande decisione che hai preso? Raccontala con tomar una decisión.",
+     "c": "Scrivi sei frasi sulla tua settimana, ognuna con una collocazione diversa di oggi."
+    },
+    "pt": {
+     "t": "Colocações: tomar una decisión",
+     "g": "Aprende palavras que andam juntas: tomar una decisión, hacer una pregunta, dar un paseo.",
+     "p": [
+      "Com tomar: tomar una decisión, tomar el sol, tomar nota, tomar algo (beber um copo).",
+      "Com hacer e dar: hacer una pregunta, hacer cola, hacer caso; dar un paseo, dar las gracias, dar una vuelta.",
+      "Com echar e poner: echar de menos (ter saudades), echar una mano; poner atención, poner la mesa."
+     ],
+     "q": "Qual foi a última grande decisão que tomaste? Conta-me com tomar una decisión.",
+     "c": "Escreve seis frases sobre a tua semana, cada uma com uma colocação diferente de hoje."
+    },
+    "pt_BR": {
+     "t": "Colocações: tomar una decisión",
+     "g": "Aprenda palavras que andam juntas: tomar una decisión, hacer una pregunta, dar un paseo.",
+     "p": [
+      "Com tomar: tomar una decisión, tomar el sol, tomar nota, tomar algo (tomar alguma coisa num bar).",
+      "Com hacer e dar: hacer una pregunta, hacer cola, hacer caso; dar un paseo, dar las gracias, dar una vuelta.",
+      "Com echar e poner: echar de menos (sentir saudade), echar una mano; poner atención, poner la mesa."
+     ],
+     "q": "Qual foi a última grande decisão que você tomou? Me conte com tomar una decisión.",
+     "c": "Escreva seis frases sobre a sua semana, cada uma com uma colocação diferente de hoje."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "tomar una decisión",
+      "ex": "Es difícil tomar una decisión tan importante."
+     },
+     {
+      "w": "hacer una pregunta",
+      "ex": "¿Puedo hacerte una pregunta personal?"
+     },
+     {
+      "w": "dar un paseo",
+      "ex": "Después de comer, damos un paseo por la playa."
+     },
+     {
+      "w": "echar de menos",
+      "ex": "Echo de menos la comida de mi país."
+     },
+     {
+      "w": "echar una mano",
+      "ex": "¿Me echas una mano con estas cajas?"
+     },
+     {
+      "w": "hacer cola",
+      "ex": "Tuvimos que hacer cola una hora para entrar."
+     }
+    ],
+    "gram": "Colocaciones: tomar una decisión, hacer una pregunta, hacer cola, dar un paseo, dar las gracias, echar de menos, echar una mano."
+   }
+  },
+  {
+   "d": 208,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Expressions with tener",
+     "g": "Use everyday tener phrases: tener ganas, tener prisa, tener razón, tener en cuenta.",
+     "p": [
+      "Tener ganas de + infinitive = to feel like: tengo ganas de ir a la playa. Tener prisa = to be in a hurry.",
+      "Tener razón = to be right; tener cuidado = to be careful; tener suerte = to be lucky.",
+      "Tener en cuenta = to bear in mind; tener que ver con = to have to do with; tener lugar = to take place."
+     ],
+     "q": "What do you feel like doing this weekend? Answer with tengo ganas de...",
+     "c": "Write a short dialogue between two friends using at least four tener expressions."
+    },
+    "de": {
+     "t": "Ausdrücke mit tener",
+     "g": "Benutze alltägliche tener-Ausdrücke: tener ganas, tener prisa, tener razón, tener en cuenta.",
+     "p": [
+      "Tener ganas de + Infinitiv = Lust haben: tengo ganas de ir a la playa. Tener prisa = es eilig haben.",
+      "Tener razón = recht haben; tener cuidado = vorsichtig sein; tener suerte = Glück haben.",
+      "Tener en cuenta = berücksichtigen; tener que ver con = zu tun haben mit; tener lugar = stattfinden."
+     ],
+     "q": "Worauf hast du dieses Wochenende Lust? Antworte mit tengo ganas de...",
+     "c": "Schreib einen kurzen Dialog zwischen zwei Freunden mit mindestens vier tener-Ausdrücken."
+    },
+    "es": {
+     "t": "Expresiones con tener",
+     "g": "Usa expresiones cotidianas con tener: tener ganas, tener prisa, tener razón, tener en cuenta.",
+     "p": [
+      "Tener ganas de + infinitivo = querer hacer algo: tengo ganas de ir a la playa. Tener prisa = ir con poco tiempo.",
+      "Tener razón = decir lo correcto; tener cuidado = prestar atención al peligro; tener suerte.",
+      "Tener en cuenta = considerar; tener que ver con = estar relacionado; tener lugar = celebrarse."
+     ],
+     "q": "¿Qué tienes ganas de hacer este fin de semana? Responde con tengo ganas de...",
+     "c": "Escribe un diálogo corto entre dos amigos con al menos cuatro expresiones con tener."
+    },
+    "fr": {
+     "t": "Expressions avec tener",
+     "g": "Utilise les expressions courantes avec tener : tener ganas, tener prisa, tener razón, tener en cuenta.",
+     "p": [
+      "Tener ganas de + infinitif = avoir envie de : tengo ganas de ir a la playa. Tener prisa = être pressé.",
+      "Tener razón = avoir raison ; tener cuidado = faire attention ; tener suerte = avoir de la chance.",
+      "Tener en cuenta = tenir compte de ; tener que ver con = avoir à voir avec ; tener lugar = avoir lieu."
+     ],
+     "q": "Qu'as-tu envie de faire ce week-end ? Réponds avec tengo ganas de...",
+     "c": "Écris un court dialogue entre deux amis avec au moins quatre expressions avec tener."
+    },
+    "it": {
+     "t": "Espressioni con tener",
+     "g": "Usa espressioni quotidiane con tener: tener ganas, tener prisa, tener razón, tener en cuenta.",
+     "p": [
+      "Tener ganas de + infinito = avere voglia di: tengo ganas de ir a la playa. Tener prisa = avere fretta.",
+      "Tener razón = avere ragione; tener cuidado = fare attenzione; tener suerte = avere fortuna.",
+      "Tener en cuenta = tenere conto; tener que ver con = avere a che fare con; tener lugar = avere luogo."
+     ],
+     "q": "Cosa hai voglia di fare questo fine settimana? Rispondi con tengo ganas de...",
+     "c": "Scrivi un breve dialogo tra due amici con almeno quattro espressioni con tener."
+    },
+    "pt": {
+     "t": "Expressões com tener",
+     "g": "Usa expressões do dia a dia com tener: tener ganas, tener prisa, tener razón, tener en cuenta.",
+     "p": [
+      "Tener ganas de + infinitivo = ter vontade de: tengo ganas de ir a la playa. Tener prisa = ter pressa.",
+      "Tener razón = ter razão; tener cuidado = ter cuidado; tener suerte = ter sorte.",
+      "Tener en cuenta = ter em conta; tener que ver con = ter a ver com; tener lugar = ter lugar, realizar-se."
+     ],
+     "q": "O que tens vontade de fazer este fim de semana? Responde com tengo ganas de...",
+     "c": "Escreve um diálogo curto entre dois amigos com pelo menos quatro expressões com tener."
+    },
+    "pt_BR": {
+     "t": "Expressões com tener",
+     "g": "Use expressões do dia a dia com tener: tener ganas, tener prisa, tener razón, tener en cuenta.",
+     "p": [
+      "Tener ganas de + infinitivo = ter vontade de: tengo ganas de ir a la playa. Tener prisa = estar com pressa.",
+      "Tener razón = ter razão; tener cuidado = tomar cuidado; tener suerte = ter sorte.",
+      "Tener en cuenta = levar em conta; tener que ver con = ter a ver com; tener lugar = acontecer."
+     ],
+     "q": "O que você está com vontade de fazer neste fim de semana? Responda com tengo ganas de...",
+     "c": "Escreva um diálogo curto entre dois amigos com pelo menos quatro expressões com tener."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "tener ganas de",
+      "ex": "Tengo muchas ganas de verte."
+     },
+     {
+      "w": "tener prisa",
+      "ex": "Lo siento, no puedo hablar, tengo prisa."
+     },
+     {
+      "w": "tener razón",
+      "ex": "Tienes razón, es mejor salir temprano."
+     },
+     {
+      "w": "tener en cuenta",
+      "ex": "Hay que tener en cuenta el tráfico de la mañana."
+     },
+     {
+      "w": "tener suerte",
+      "ex": "¡Qué suerte tienes! Has ganado el sorteo."
+     },
+     {
+      "w": "tener lugar",
+      "ex": "El festival tiene lugar cada año en agosto."
+     }
+    ],
+    "gram": "Expresiones con tener: tener ganas de + infinitivo, tener prisa, tener razón, tener cuidado, tener suerte, tener en cuenta."
+   }
+  },
+  {
+   "d": 209,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Everyday idioms",
+     "g": "Learn common idioms: estar en las nubes, ser pan comido, costar un ojo de la cara.",
+     "p": [
+      "Estar en las nubes = to daydream. Ser pan comido = to be a piece of cake (very easy).",
+      "Costar un ojo de la cara = to cost an arm and a leg. Tomar el pelo = to pull someone's leg.",
+      "Meter la pata = to put your foot in it. No pegar ojo = not to sleep a wink. Use them with a smile!"
+     ],
+     "q": "Which idiom from today exists in a similar form in your language?",
+     "c": "Tell a mini story about a funny day using at least three of today's idioms."
+    },
+    "de": {
+     "t": "Alltägliche Redewendungen",
+     "g": "Lerne häufige Redewendungen: estar en las nubes, ser pan comido, costar un ojo de la cara.",
+     "p": [
+      "Estar en las nubes = mit den Gedanken woanders sein. Ser pan comido = ein Kinderspiel sein.",
+      "Costar un ojo de la cara = ein Vermögen kosten. Tomar el pelo = jemanden auf den Arm nehmen.",
+      "Meter la pata = ins Fettnäpfchen treten. No pegar ojo = kein Auge zutun. Mit einem Lächeln benutzen!"
+     ],
+     "q": "Welche Redewendung von heute gibt es in ähnlicher Form in deiner Sprache?",
+     "c": "Erzähl eine Mini-Geschichte über einen lustigen Tag mit mindestens drei Redewendungen von heute."
+    },
+    "es": {
+     "t": "Modismos cotidianos",
+     "g": "Aprende modismos frecuentes: estar en las nubes, ser pan comido, costar un ojo de la cara.",
+     "p": [
+      "Estar en las nubes = estar distraído. Ser pan comido = ser facilísimo.",
+      "Costar un ojo de la cara = ser carísimo. Tomar el pelo = bromear con alguien haciéndole creer algo falso.",
+      "Meter la pata = equivocarse en algo delicado. No pegar ojo = no dormir nada. ¡Úsalos con humor!"
+     ],
+     "q": "¿Qué modismo de hoy existe de forma parecida en tu idioma?",
+     "c": "Cuenta una mini historia sobre un día divertido con al menos tres modismos de hoy."
+    },
+    "fr": {
+     "t": "Expressions idiomatiques",
+     "g": "Apprends des expressions courantes : estar en las nubes, ser pan comido, costar un ojo de la cara.",
+     "p": [
+      "Estar en las nubes = être dans la lune. Ser pan comido = être du gâteau.",
+      "Costar un ojo de la cara = coûter les yeux de la tête. Tomar el pelo = se payer la tête de quelqu'un.",
+      "Meter la pata = faire une gaffe. No pegar ojo = ne pas fermer l'œil. À utiliser avec le sourire !"
+     ],
+     "q": "Quelle expression d'aujourd'hui existe sous une forme proche dans ta langue ?",
+     "c": "Raconte une mini histoire sur une journée drôle avec au moins trois expressions d'aujourd'hui."
+    },
+    "it": {
+     "t": "Modi di dire quotidiani",
+     "g": "Impara modi di dire comuni: estar en las nubes, ser pan comido, costar un ojo de la cara.",
+     "p": [
+      "Estar en las nubes = avere la testa fra le nuvole. Ser pan comido = essere un gioco da ragazzi.",
+      "Costar un ojo de la cara = costare un occhio della testa. Tomar el pelo = prendere in giro.",
+      "Meter la pata = fare una gaffe. No pegar ojo = non chiudere occhio. Usali con un sorriso!"
+     ],
+     "q": "Quale modo di dire di oggi esiste in forma simile nella tua lingua?",
+     "c": "Racconta una mini storia su una giornata divertente con almeno tre modi di dire di oggi."
+    },
+    "pt": {
+     "t": "Expressões idiomáticas do dia a dia",
+     "g": "Aprende expressões comuns: estar en las nubes, ser pan comido, costar un ojo de la cara.",
+     "p": [
+      "Estar en las nubes = andar com a cabeça nas nuvens. Ser pan comido = ser canja.",
+      "Costar un ojo de la cara = custar os olhos da cara. Tomar el pelo = gozar com alguém.",
+      "Meter la pata = meter a pata, fazer asneira. No pegar ojo = não pregar olho. Usa-as com humor!"
+     ],
+     "q": "Que expressão de hoje existe de forma parecida na tua língua?",
+     "c": "Conta uma mini história sobre um dia divertido com pelo menos três expressões de hoje."
+    },
+    "pt_BR": {
+     "t": "Expressões idiomáticas do dia a dia",
+     "g": "Aprenda expressões comuns: estar en las nubes, ser pan comido, costar un ojo de la cara.",
+     "p": [
+      "Estar en las nubes = estar com a cabeça nas nuvens. Ser pan comido = ser moleza.",
+      "Costar un ojo de la cara = custar os olhos da cara. Tomar el pelo = tirar sarro de alguém.",
+      "Meter la pata = pisar na bola. No pegar ojo = não pregar o olho. Use com bom humor!"
+     ],
+     "q": "Qual expressão de hoje existe de forma parecida na sua língua?",
+     "c": "Conte uma mini história sobre um dia divertido com pelo menos três expressões de hoje."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "estar en las nubes",
+      "ex": "Perdona, no te escuchaba, estaba en las nubes."
+     },
+     {
+      "w": "ser pan comido",
+      "ex": "El examen de hoy fue pan comido."
+     },
+     {
+      "w": "costar un ojo de la cara",
+      "ex": "Ese hotel cuesta un ojo de la cara."
+     },
+     {
+      "w": "tomar el pelo",
+      "ex": "¿De verdad? ¡Me estás tomando el pelo!"
+     },
+     {
+      "w": "meter la pata",
+      "ex": "Metí la pata y conté la sorpresa."
+     },
+     {
+      "w": "no pegar ojo",
+      "ex": "Con el calor, anoche no pegué ojo."
+     }
+    ],
+    "gram": "Modismos: estar en las nubes, ser pan comido, costar un ojo de la cara, tomar el pelo, meter la pata, no pegar ojo."
+   }
+  },
+  {
+   "d": 210,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Review: stories and hypotheses",
+     "g": "Recap past tenses, reported speech, conditionals and idioms.",
+     "p": [
+      "Stories: era, estaba (scene), llegué, vi (action), ya había salido (before). Connect with de repente, al final.",
+      "Reported speech: dijo que estaba cansado, me preguntó si quería venir, me pidió que le ayudara.",
+      "Hypotheses: haría, si tuviera tiempo, viajaría. Plus collocations, tener phrases and idioms!"
+     ],
+     "q": "Tell me a story someone told you, then say what you would have done in their place: yo en su lugar...",
+     "c": "Write a short story with a past scene, a reported sentence, an if clause and one idiom."
+    },
+    "de": {
+     "t": "Wiederholung: Geschichten und Hypothesen",
+     "g": "Wiederhole Vergangenheitszeiten, indirekte Rede, Bedingungssätze und Redewendungen.",
+     "p": [
+      "Geschichten: era, estaba (Szene), llegué, vi (Handlung), ya había salido (vorher). Mit de repente, al final.",
+      "Indirekte Rede: dijo que estaba cansado, me preguntó si quería venir, me pidió que le ayudara.",
+      "Hypothesen: haría, si tuviera tiempo, viajaría. Dazu Kollokationen, tener-Ausdrücke und Redewendungen!"
+     ],
+     "q": "Erzähl eine Geschichte, die dir jemand erzählt hat, und sag, was du an seiner Stelle tun würdest: yo en su lugar...",
+     "c": "Schreib eine kurze Geschichte mit Szene, indirekter Rede, einem si-Satz und einer Redewendung."
+    },
+    "es": {
+     "t": "Repaso: historias e hipótesis",
+     "g": "Repasa los pasados, el estilo indirecto, las condicionales y los modismos.",
+     "p": [
+      "Historias: era, estaba (escena), llegué, vi (acción), ya había salido (antes). Conecta con de repente, al final.",
+      "Estilo indirecto: dijo que estaba cansado, me preguntó si quería venir, me pidió que le ayudara.",
+      "Hipótesis: haría, si tuviera tiempo, viajaría. ¡Y colocaciones, expresiones con tener y modismos!"
+     ],
+     "q": "Cuéntame una historia que te contaron y dime qué harías tú: yo en su lugar...",
+     "c": "Escribe una historia corta con una escena pasada, una frase en estilo indirecto, una condicional y un modismo."
+    },
+    "fr": {
+     "t": "Révision : récits et hypothèses",
+     "g": "Révise les passés, le discours indirect, les conditions et les expressions idiomatiques.",
+     "p": [
+      "Récits : era, estaba (décor), llegué, vi (action), ya había salido (avant). Relie avec de repente, al final.",
+      "Discours indirect : dijo que estaba cansado, me preguntó si quería venir, me pidió que le ayudara.",
+      "Hypothèses : haría, si tuviera tiempo, viajaría. Plus collocations, expressions avec tener et idiomes !"
+     ],
+     "q": "Raconte-moi une histoire qu'on t'a racontée, puis dis ce que tu ferais à sa place : yo en su lugar...",
+     "c": "Écris une courte histoire avec un décor passé, une phrase rapportée, une condition et une expression."
+    },
+    "it": {
+     "t": "Ripasso: storie e ipotesi",
+     "g": "Ripassa i passati, il discorso indiretto, il periodo ipotetico e i modi di dire.",
+     "p": [
+      "Storie: era, estaba (scena), llegué, vi (azione), ya había salido (prima). Collega con de repente, al final.",
+      "Discorso indiretto: dijo que estaba cansado, me preguntó si quería venir, me pidió que le ayudara.",
+      "Ipotesi: haría, si tuviera tiempo, viajaría. In più collocazioni, espressioni con tener e modi di dire!"
+     ],
+     "q": "Raccontami una storia che ti hanno raccontato e dimmi cosa faresti al suo posto: yo en su lugar...",
+     "c": "Scrivi una breve storia con una scena passata, una frase riferita, un periodo ipotetico e un modo di dire."
+    },
+    "pt": {
+     "t": "Revisão: histórias e hipóteses",
+     "g": "Revê os passados, o discurso indireto, as condicionais e as expressões idiomáticas.",
+     "p": [
+      "Histórias: era, estaba (cena), llegué, vi (ação), ya había salido (antes). Liga com de repente, al final.",
+      "Discurso indireto: dijo que estaba cansado, me preguntó si quería venir, me pidió que le ayudara.",
+      "Hipóteses: haría, si tuviera tiempo, viajaría. E ainda colocações, expressões com tener e idiomáticas!"
+     ],
+     "q": "Conta-me uma história que te contaram e diz o que farias no lugar dessa pessoa: yo en su lugar...",
+     "c": "Escreve uma história curta com uma cena passada, uma frase em discurso indireto, uma condicional e uma expressão."
+    },
+    "pt_BR": {
+     "t": "Revisão: histórias e hipóteses",
+     "g": "Revise os passados, o discurso indireto, as condicionais e as expressões idiomáticas.",
+     "p": [
+      "Histórias: era, estaba (cena), llegué, vi (ação), ya había salido (antes). Ligue com de repente, al final.",
+      "Discurso indireto: dijo que estaba cansado, me preguntó si quería venir, me pidió que le ayudara.",
+      "Hipóteses: haría, si tuviera tiempo, viajaría. E ainda colocações, expressões com tener e idiomáticas!"
+     ],
+     "q": "Me conte uma história que te contaram e diga o que você faria no lugar da pessoa: yo en su lugar...",
+     "c": "Escreva uma história curta com uma cena passada, uma frase em discurso indireto, uma condicional e uma expressão."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ya había",
+      "ex": "Cuando llegamos, la película ya había empezado."
+     },
+     {
+      "w": "me contó que",
+      "ex": "Marta me contó que se había mudado a Valencia."
+     },
+     {
+      "w": "yo en su lugar",
+      "ex": "Yo en su lugar, pediría ayuda a un amigo."
+     },
+     {
+      "w": "si pudiera",
+      "ex": "Si pudiera, volvería a ese viaje mañana mismo."
+     },
+     {
+      "w": "meter la pata",
+      "ex": "Al final metí la pata, pero todos se rieron."
+     },
+     {
+      "w": "tener ganas de",
+      "ex": "Tengo ganas de contarte lo que pasó."
+     }
+    ],
+    "gram": "Repaso B1: pasados (era, llegué, había llegado), estilo indirecto (dijo que...), si + imperfecto de subjuntivo + condicional."
+   }
+  }
+ ]
+}

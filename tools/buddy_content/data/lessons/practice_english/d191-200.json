@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 191,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Reported questions",
+     "g": "Report questions correctly with normal word order and no question mark.",
+     "p": [
+      "Wh- questions: Where do you live? becomes He asked me where I lived. No do/does/did, normal order.",
+      "Yes/no questions use if or whether: Are you ready? becomes She asked if I was ready.",
+      "Tenses move back as in statements: Can you help? becomes He asked if I could help."
+     ],
+     "q": "What questions did people ask you when you started a new job, school or course? Report two of them.",
+     "c": "Report five questions from a recent conversation: She asked me where..., He asked if..."
+    },
+    "de": {
+     "t": "Reported questions",
+     "g": "Du gibst Fragen richtig wieder: normale Wortstellung, kein Fragezeichen.",
+     "p": [
+      "W-Fragen: Where do you live? wird zu He asked me where I lived. Kein do/does/did, normale Wortstellung.",
+      "Ja/Nein-Fragen mit if oder whether: Are you ready? wird zu She asked if I was ready.",
+      "Die Zeiten verschieben sich wie bei Aussagen: Can you help? wird zu He asked if I could help."
+     ],
+     "q": "Welche Fragen hat man dir zu Beginn einer neuen Arbeit, Schule oder eines Kurses gestellt? Gib zwei davon wieder.",
+     "c": "Gib fünf Fragen aus einem neuen Gespräch wieder: She asked me where..., He asked if..."
+    },
+    "es": {
+     "t": "Reported questions",
+     "g": "Cuenta preguntas correctamente: orden normal y sin signo de interrogación.",
+     "p": [
+      "Preguntas con wh-: Where do you live? pasa a He asked me where I lived. Sin do/does/did, orden normal.",
+      "Las de sí/no usan if o whether: Are you ready? pasa a She asked if I was ready.",
+      "Los tiempos retroceden igual: Can you help? pasa a He asked if I could help."
+     ],
+     "q": "¿Qué preguntas te hicieron al empezar un trabajo, la escuela o un curso? Cuenta dos de ellas.",
+     "c": "Cuenta cinco preguntas de una conversación reciente: She asked me where..., He asked if..."
+    },
+    "fr": {
+     "t": "Reported questions",
+     "g": "Rapporte des questions correctement : ordre normal, sans point d'interrogation.",
+     "p": [
+      "Questions en wh- : Where do you live? devient He asked me where I lived. Pas de do/does/did, ordre normal.",
+      "Les questions fermées prennent if ou whether : Are you ready? devient She asked if I was ready.",
+      "Les temps reculent comme pour les phrases : Can you help? devient He asked if I could help."
+     ],
+     "q": "Quelles questions t'a-t-on posées quand tu as commencé un travail, une école ou un cours ? Rapportes-en deux.",
+     "c": "Rapporte cinq questions d'une conversation récente : She asked me where..., He asked if..."
+    },
+    "it": {
+     "t": "Reported questions",
+     "g": "Riferisci domande correttamente: ordine normale e niente punto interrogativo.",
+     "p": [
+      "Domande con wh-: Where do you live? diventa He asked me where I lived. Niente do/does/did, ordine normale.",
+      "Le domande sì/no usano if o whether: Are you ready? diventa She asked if I was ready.",
+      "I tempi si spostano come nelle frasi: Can you help? diventa He asked if I could help."
+     ],
+     "q": "Che domande ti hanno fatto quando hai iniziato un lavoro, una scuola o un corso? Riferiscine due.",
+     "c": "Riferisci cinque domande di una conversazione recente: She asked me where..., He asked if..."
+    },
+    "pt": {
+     "t": "Reported questions",
+     "g": "Relata perguntas corretamente: ordem normal e sem ponto de interrogação.",
+     "p": [
+      "Perguntas wh-: Where do you live? passa a He asked me where I lived. Sem do/does/did, ordem normal.",
+      "As de sim/não usam if ou whether: Are you ready? passa a She asked if I was ready.",
+      "Os tempos recuam como nas afirmações: Can you help? passa a He asked if I could help."
+     ],
+     "q": "Que perguntas te fizeram quando começaste um emprego, uma escola ou um curso? Relata duas.",
+     "c": "Relata cinco perguntas de uma conversa recente: She asked me where..., He asked if..."
+    },
+    "pt_BR": {
+     "t": "Reported questions",
+     "g": "Relate perguntas corretamente: ordem normal e sem ponto de interrogação.",
+     "p": [
+      "Perguntas wh-: Where do you live? vira He asked me where I lived. Sem do/does/did, ordem normal.",
+      "As de sim/não usam if ou whether: Are you ready? vira She asked if I was ready.",
+      "Os tempos recuam como nas afirmações: Can you help? vira He asked if I could help."
+     ],
+     "q": "Que perguntas fizeram para você quando começou um trabalho, escola ou curso? Relate duas.",
+     "c": "Relate cinco perguntas de uma conversa recente: She asked me where..., He asked if..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "he asked me where",
+      "ex": "He asked me where I worked."
+     },
+     {
+      "w": "she asked if",
+      "ex": "She asked if I wanted some tea."
+     },
+     {
+      "w": "whether",
+      "ex": "They asked whether we had booked a table."
+     },
+     {
+      "w": "wanted to know",
+      "ex": "My teacher wanted to know why I was late."
+     },
+     {
+      "w": "asked me how",
+      "ex": "He asked me how long I had been in London."
+     },
+     {
+      "w": "wondered",
+      "ex": "I wondered what time the shop closed."
+     }
+    ],
+    "gram": "Reported questions: asked + wh-word or if/whether + subject + verb (no do/did, no question mark). Where do you live? > where I lived."
+   }
+  },
+  {
+   "d": 192,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Reporting verbs: suggest, promise",
+     "g": "Report more precisely with verbs like suggest, promise, refuse and remind.",
+     "p": [
+      "Verb + to: promise, refuse, offer, agree. He promised to call. She offered to help. They refused to wait.",
+      "Verb + person + to: remind, tell, ask, advise. She reminded me to bring my passport.",
+      "Suggest + -ing or suggest that: He suggested going to the beach. Explain + that: She explained that..."
+     ],
+     "q": "Who reminded you to do something recently, and what did someone promise or offer to do for you?",
+     "c": "Turn five direct sentences into reported ones with five different reporting verbs: I'll help you! > He offered to help me."
+    },
+    "de": {
+     "t": "Reporting verbs: suggest, promise",
+     "g": "Mit Verben wie suggest, promise, refuse und remind gibst du Aussagen genauer wieder.",
+     "p": [
+      "Verb + to: promise, refuse, offer, agree. He promised to call. She offered to help. They refused to wait.",
+      "Verb + Person + to: remind, tell, ask, advise. She reminded me to bring my passport.",
+      "Suggest + -ing oder suggest that: He suggested going to the beach. Explain + that: She explained that..."
+     ],
+     "q": "Wer hat dich neulich an etwas erinnert, und was hat dir jemand versprochen oder angeboten?",
+     "c": "Mach aus fünf direkten Sätzen indirekte, mit fünf verschiedenen Verben: I'll help you! > He offered to help me."
+    },
+    "es": {
+     "t": "Reporting verbs: suggest, promise",
+     "g": "Cuenta lo dicho con más precisión usando suggest, promise, refuse o remind.",
+     "p": [
+      "Verbo + to: promise, refuse, offer, agree. He promised to call. She offered to help. They refused to wait.",
+      "Verbo + persona + to: remind, tell, ask, advise. She reminded me to bring my passport.",
+      "Suggest + -ing o suggest that: He suggested going to the beach. Explain + that: She explained that..."
+     ],
+     "q": "¿Quién te recordó hacer algo hace poco, y qué te prometió u ofreció alguien?",
+     "c": "Pasa cinco frases directas a estilo indirecto con cinco verbos distintos: I'll help you! > He offered to help me."
+    },
+    "fr": {
+     "t": "Reporting verbs: suggest, promise",
+     "g": "Rapporte plus précisément avec suggest, promise, refuse ou remind.",
+     "p": [
+      "Verbe + to : promise, refuse, offer, agree. He promised to call. She offered to help. They refused to wait.",
+      "Verbe + personne + to : remind, tell, ask, advise. She reminded me to bring my passport.",
+      "Suggest + -ing ou suggest that : He suggested going to the beach. Explain + that : She explained that..."
+     ],
+     "q": "Qui t'a rappelé de faire quelque chose récemment, et qu'est-ce qu'on t'a promis ou proposé ?",
+     "c": "Transforme cinq phrases directes en discours rapporté avec cinq verbes différents : I'll help you! > He offered to help me."
+    },
+    "it": {
+     "t": "Reporting verbs: suggest, promise",
+     "g": "Riferisci con più precisione usando suggest, promise, refuse e remind.",
+     "p": [
+      "Verbo + to: promise, refuse, offer, agree. He promised to call. She offered to help. They refused to wait.",
+      "Verbo + persona + to: remind, tell, ask, advise. She reminded me to bring my passport.",
+      "Suggest + -ing o suggest that: He suggested going to the beach. Explain + that: She explained that..."
+     ],
+     "q": "Chi ti ha ricordato di fare qualcosa di recente, e cosa ti ha promesso o offerto qualcuno?",
+     "c": "Trasforma cinque frasi dirette in indirette con cinque verbi diversi: I'll help you! > He offered to help me."
+    },
+    "pt": {
+     "t": "Reporting verbs: suggest, promise",
+     "g": "Relata com mais precisão usando suggest, promise, refuse e remind.",
+     "p": [
+      "Verbo + to: promise, refuse, offer, agree. He promised to call. She offered to help. They refused to wait.",
+      "Verbo + pessoa + to: remind, tell, ask, advise. She reminded me to bring my passport.",
+      "Suggest + -ing ou suggest that: He suggested going to the beach. Explain + that: She explained that..."
+     ],
+     "q": "Quem te lembrou de fazer alguma coisa recentemente, e o que te prometeram ou ofereceram?",
+     "c": "Passa cinco frases diretas para discurso indireto com cinco verbos diferentes: I'll help you! > He offered to help me."
+    },
+    "pt_BR": {
+     "t": "Reporting verbs: suggest, promise",
+     "g": "Relate com mais precisão usando suggest, promise, refuse e remind.",
+     "p": [
+      "Verbo + to: promise, refuse, offer, agree. He promised to call. She offered to help. They refused to wait.",
+      "Verbo + pessoa + to: remind, tell, ask, advise. She reminded me to bring my passport.",
+      "Suggest + -ing ou suggest that: He suggested going to the beach. Explain + that: She explained that..."
+     ],
+     "q": "Quem lembrou você de fazer algo recentemente, e o que alguém te prometeu ou ofereceu?",
+     "c": "Passe cinco frases diretas para o discurso indireto com cinco verbos diferentes: I'll help you! > He offered to help me."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "suggest",
+      "ex": "She suggested meeting at the park."
+     },
+     {
+      "w": "promise",
+      "ex": "He promised to send me the photos."
+     },
+     {
+      "w": "refuse",
+      "ex": "The cat refused to come inside."
+     },
+     {
+      "w": "offer",
+      "ex": "My neighbour offered to water my plants."
+     },
+     {
+      "w": "remind",
+      "ex": "Please remind me to buy bread."
+     },
+     {
+      "w": "explain",
+      "ex": "The guide explained that the museum closed at six."
+     }
+    ],
+    "gram": "Reporting verbs: promise/offer/refuse/agree + to; remind/advise/ask + person + to; suggest + -ing or that; explain + that."
+   }
+  },
+  {
+   "d": 193,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Telling news you heard",
+     "g": "Share news you heard in a natural, friendly way.",
+     "p": [
+      "Openers: Guess what! Did you hear about...? You'll never guess what happened!",
+      "Showing the source: Apparently, the café is closing. I heard that Tom got a new job. According to Sara...",
+      "Reactions: Really? No way! That's great news! I had no idea! Good for her!"
+     ],
+     "q": "What is a piece of good news you heard recently from a friend, your town or your work? Tell me with apparently or I heard that.",
+     "c": "Share three pieces of good news in English, each with a different opener, and add one reaction for each."
+    },
+    "de": {
+     "t": "Telling news you heard",
+     "g": "Du erzählst Neuigkeiten natürlich und freundlich im Gespräch.",
+     "p": [
+      "Einstiege: Guess what! Did you hear about...? You'll never guess what happened!",
+      "Die Quelle zeigen: Apparently, the café is closing. I heard that Tom got a new job. According to Sara...",
+      "Reaktionen: Really? No way! That's great news! I had no idea! Good for her!"
+     ],
+     "q": "Welche gute Nachricht hast du neulich gehört, von Freunden, aus deiner Stadt oder der Arbeit? Erzähl sie mit apparently oder I heard that.",
+     "c": "Teile drei gute Neuigkeiten auf Englisch, jede mit einem anderen Einstieg, und füge je eine Reaktion hinzu."
+    },
+    "es": {
+     "t": "Telling news you heard",
+     "g": "Comparte noticias de forma natural y amable en una conversación.",
+     "p": [
+      "Para empezar: Guess what! Did you hear about...? You'll never guess what happened!",
+      "Indicar la fuente: Apparently, the café is closing. I heard that Tom got a new job. According to Sara...",
+      "Reacciones: Really? No way! That's great news! I had no idea! Good for her!"
+     ],
+     "q": "¿Qué buena noticia has oído hace poco, de amigos, tu ciudad o tu trabajo? Cuéntala con apparently o I heard that.",
+     "c": "Comparte tres buenas noticias en inglés, cada una con un inicio distinto, y añade una reacción a cada una."
+    },
+    "fr": {
+     "t": "Telling news you heard",
+     "g": "Partage des nouvelles de façon naturelle et bienveillante dans une conversation.",
+     "p": [
+      "Pour lancer : Guess what! Did you hear about...? You'll never guess what happened!",
+      "Citer la source : Apparently, the café is closing. I heard that Tom got a new job. According to Sara...",
+      "Réactions : Really? No way! That's great news! I had no idea! Good for her!"
+     ],
+     "q": "Quelle bonne nouvelle as-tu apprise récemment, chez tes amis, dans ta ville ou au travail ? Raconte-la avec apparently ou I heard that.",
+     "c": "Partage trois bonnes nouvelles en anglais, chacune avec une accroche différente, et ajoute une réaction à chacune."
+    },
+    "it": {
+     "t": "Telling news you heard",
+     "g": "Condividi notizie in modo naturale e gentile durante una conversazione.",
+     "p": [
+      "Per iniziare: Guess what! Did you hear about...? You'll never guess what happened!",
+      "Indicare la fonte: Apparently, the café is closing. I heard that Tom got a new job. According to Sara...",
+      "Reazioni: Really? No way! That's great news! I had no idea! Good for her!"
+     ],
+     "q": "Quale bella notizia hai sentito di recente, da amici, dalla tua città o dal lavoro? Raccontala con apparently o I heard that.",
+     "c": "Condividi tre belle notizie in inglese, ognuna con un'apertura diversa, e aggiungi una reazione per ciascuna."
+    },
+    "pt": {
+     "t": "Telling news you heard",
+     "g": "Partilha novidades de forma natural e simpática numa conversa.",
+     "p": [
+      "Para começar: Guess what! Did you hear about...? You'll never guess what happened!",
+      "Indicar a fonte: Apparently, the café is closing. I heard that Tom got a new job. According to Sara...",
+      "Reações: Really? No way! That's great news! I had no idea! Good for her!"
+     ],
+     "q": "Que boa notícia ouviste recentemente, de amigos, da tua cidade ou do trabalho? Conta com apparently ou I heard that.",
+     "c": "Partilha três boas notícias em inglês, cada uma com uma abertura diferente, e junta uma reação a cada uma."
+    },
+    "pt_BR": {
+     "t": "Telling news you heard",
+     "g": "Compartilhe novidades de um jeito natural e simpático numa conversa.",
+     "p": [
+      "Para começar: Guess what! Did you hear about...? You'll never guess what happened!",
+      "Indicar a fonte: Apparently, the café is closing. I heard that Tom got a new job. According to Sara...",
+      "Reações: Really? No way! That's great news! I had no idea! Good for her!"
+     ],
+     "q": "Que boa notícia você ouviu recentemente, de amigos, da sua cidade ou do trabalho? Conte com apparently ou I heard that.",
+     "c": "Compartilhe três boas notícias em inglês, cada uma com uma abertura diferente, e acrescente uma reação a cada."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Guess what!",
+      "ex": "Guess what! I passed my driving test!"
+     },
+     {
+      "w": "apparently",
+      "ex": "Apparently, a new bookshop is opening downtown."
+     },
+     {
+      "w": "I heard that",
+      "ex": "I heard that Maria is moving to Canada."
+     },
+     {
+      "w": "according to",
+      "ex": "According to the forecast, it'll be sunny."
+     },
+     {
+      "w": "No way!",
+      "ex": "No way! That's amazing!"
+     },
+     {
+      "w": "I had no idea",
+      "ex": "I had no idea you could cook so well."
+     }
+    ],
+    "gram": "Sharing news: Guess what!, Did you hear...?; apparently / I heard that / according to + source; react with Really?, No way!"
+   }
+  },
+  {
+   "d": 194,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Modal deduction: must be, can't be",
+     "g": "Make logical guesses about the present with must, might and can't.",
+     "p": [
+      "Must = I'm almost sure it's true: She must be at work. Her car isn't here. You must be tired after that trip.",
+      "Can't = I'm almost sure it's false: That can't be Tom, he's in Rome. It can't be so late already!",
+      "Might, may, could = maybe: He might be in a meeting. It could be the delivery at the door."
+     ],
+     "q": "Your friend isn't answering the phone. Make three guesses with must, might and can't.",
+     "c": "Look around you and write five deductions: That must be..., This can't be..., She might be..."
+    },
+    "de": {
+     "t": "Modal deduction: must be, can't be",
+     "g": "Mit must, might und can't ziehst du logische Schlüsse über die Gegenwart.",
+     "p": [
+      "Must = fast sicher wahr: She must be at work. Her car isn't here. You must be tired after that trip.",
+      "Can't = fast sicher falsch: That can't be Tom, he's in Rome. It can't be so late already!",
+      "Might, may, could = vielleicht: He might be in a meeting. It could be the delivery at the door."
+     ],
+     "q": "Dein Freund geht nicht ans Telefon. Stell drei Vermutungen mit must, might und can't an.",
+     "c": "Schau dich um und schreib fünf Vermutungen: That must be..., This can't be..., She might be..."
+    },
+    "es": {
+     "t": "Modal deduction: must be, can't be",
+     "g": "Haz deducciones lógicas sobre el presente con must, might y can't.",
+     "p": [
+      "Must = casi seguro que es verdad: She must be at work. Her car isn't here. You must be tired after that trip.",
+      "Can't = casi seguro que es falso: That can't be Tom, he's in Rome. It can't be so late already!",
+      "Might, may, could = quizás: He might be in a meeting. It could be the delivery at the door."
+     ],
+     "q": "Tu amigo no contesta el teléfono. Haz tres suposiciones con must, might y can't.",
+     "c": "Mira a tu alrededor y escribe cinco deducciones: That must be..., This can't be..., She might be..."
+    },
+    "fr": {
+     "t": "Modal deduction: must be, can't be",
+     "g": "Fais des déductions logiques sur le présent avec must, might et can't.",
+     "p": [
+      "Must = presque sûr que c'est vrai : She must be at work. Her car isn't here. You must be tired after that trip.",
+      "Can't = presque sûr que c'est faux : That can't be Tom, he's in Rome. It can't be so late already!",
+      "Might, may, could = peut-être : He might be in a meeting. It could be the delivery at the door."
+     ],
+     "q": "Ton ami ne répond pas au téléphone. Fais trois suppositions avec must, might et can't.",
+     "c": "Regarde autour de toi et écris cinq déductions : That must be..., This can't be..., She might be..."
+    },
+    "it": {
+     "t": "Modal deduction: must be, can't be",
+     "g": "Fai deduzioni logiche sul presente con must, might e can't.",
+     "p": [
+      "Must = quasi certo che sia vero: She must be at work. Her car isn't here. You must be tired after that trip.",
+      "Can't = quasi certo che sia falso: That can't be Tom, he's in Rome. It can't be so late already!",
+      "Might, may, could = forse: He might be in a meeting. It could be the delivery at the door."
+     ],
+     "q": "Il tuo amico non risponde al telefono. Fai tre ipotesi con must, might e can't.",
+     "c": "Guardati intorno e scrivi cinque deduzioni: That must be..., This can't be..., She might be..."
+    },
+    "pt": {
+     "t": "Modal deduction: must be, can't be",
+     "g": "Faz deduções lógicas sobre o presente com must, might e can't.",
+     "p": [
+      "Must = quase certo que é verdade: She must be at work. Her car isn't here. You must be tired after that trip.",
+      "Can't = quase certo que é falso: That can't be Tom, he's in Rome. It can't be so late already!",
+      "Might, may, could = talvez: He might be in a meeting. It could be the delivery at the door."
+     ],
+     "q": "O teu amigo não atende o telefone. Faz três suposições com must, might e can't.",
+     "c": "Olha à tua volta e escreve cinco deduções: That must be..., This can't be..., She might be..."
+    },
+    "pt_BR": {
+     "t": "Modal deduction: must be, can't be",
+     "g": "Faça deduções lógicas sobre o presente com must, might e can't.",
+     "p": [
+      "Must = quase certeza de que é verdade: She must be at work. Her car isn't here. You must be tired after that trip.",
+      "Can't = quase certeza de que é falso: That can't be Tom, he's in Rome. It can't be so late already!",
+      "Might, may, could = talvez: He might be in a meeting. It could be the delivery at the door."
+     ],
+     "q": "Seu amigo não atende o telefone. Faça três suposições com must, might e can't.",
+     "c": "Olhe ao seu redor e escreva cinco deduções: That must be..., This can't be..., She might be..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "must be",
+      "ex": "You must be hungry after that long walk."
+     },
+     {
+      "w": "can't be",
+      "ex": "That can't be right. Let me check again."
+     },
+     {
+      "w": "might be",
+      "ex": "She might be stuck in traffic."
+     },
+     {
+      "w": "could be",
+      "ex": "It could be your brother at the door."
+     },
+     {
+      "w": "may be",
+      "ex": "The shop may be closed on Sundays."
+     },
+     {
+      "w": "I bet",
+      "ex": "I bet he's still asleep!"
+     }
+    ],
+    "gram": "Deduction about now: must (almost sure yes), can't (almost sure no), might/may/could (possible) + base verb: She must be busy."
+   }
+  },
+  {
+   "d": 195,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Might have, could have",
+     "g": "Guess about the past with modal + have + past participle.",
+     "p": [
+      "Must have = almost sure: They must have left early. The lights are off. You must have worked hard.",
+      "Might have / could have = maybe: He might have missed the bus. She could have forgotten.",
+      "Can't have = almost sure it didn't happen: She can't have seen us. She didn't wave."
+     ],
+     "q": "Your colleague arrived very happy this morning. What might have happened? Give three guesses.",
+     "c": "Write a mini mystery: the cake disappeared from the kitchen. Make five guesses with must have, might have, can't have."
+    },
+    "de": {
+     "t": "Might have, could have",
+     "g": "Mit Modalverb + have + Partizip vermutest du über die Vergangenheit.",
+     "p": [
+      "Must have = fast sicher: They must have left early. The lights are off. You must have worked hard.",
+      "Might have / could have = vielleicht: He might have missed the bus. She could have forgotten.",
+      "Can't have = fast sicher nicht passiert: She can't have seen us. She didn't wave."
+     ],
+     "q": "Deine Kollegin kam heute Morgen sehr glücklich an. Was könnte passiert sein? Nenne drei Vermutungen.",
+     "c": "Schreib ein Mini-Rätsel: Der Kuchen ist aus der Küche verschwunden. Fünf Vermutungen mit must have, might have, can't have."
+    },
+    "es": {
+     "t": "Might have, could have",
+     "g": "Haz suposiciones sobre el pasado con modal + have + participio.",
+     "p": [
+      "Must have = casi seguro: They must have left early. The lights are off. You must have worked hard.",
+      "Might have / could have = quizás: He might have missed the bus. She could have forgotten.",
+      "Can't have = casi seguro que no pasó: She can't have seen us. She didn't wave."
+     ],
+     "q": "Tu compañera llegó muy contenta esta mañana. ¿Qué puede haber pasado? Haz tres suposiciones.",
+     "c": "Escribe un mini misterio: el pastel desapareció de la cocina. Haz cinco suposiciones con must have, might have, can't have."
+    },
+    "fr": {
+     "t": "Might have, could have",
+     "g": "Fais des hypothèses sur le passé avec modal + have + participe passé.",
+     "p": [
+      "Must have = presque sûr : They must have left early. The lights are off. You must have worked hard.",
+      "Might have / could have = peut-être : He might have missed the bus. She could have forgotten.",
+      "Can't have = presque sûr que non : She can't have seen us. She didn't wave."
+     ],
+     "q": "Ta collègue est arrivée très joyeuse ce matin. Que s'est-il peut-être passé ? Fais trois hypothèses.",
+     "c": "Écris un mini mystère : le gâteau a disparu de la cuisine. Cinq hypothèses avec must have, might have, can't have."
+    },
+    "it": {
+     "t": "Might have, could have",
+     "g": "Fai ipotesi sul passato con modale + have + participio.",
+     "p": [
+      "Must have = quasi certo: They must have left early. The lights are off. You must have worked hard.",
+      "Might have / could have = forse: He might have missed the bus. She could have forgotten.",
+      "Can't have = quasi certo che non è successo: She can't have seen us. She didn't wave."
+     ],
+     "q": "La tua collega è arrivata molto felice stamattina. Cosa potrebbe essere successo? Fai tre ipotesi.",
+     "c": "Scrivi un mini giallo: la torta è sparita dalla cucina. Cinque ipotesi con must have, might have, can't have."
+    },
+    "pt": {
+     "t": "Might have, could have",
+     "g": "Faz suposições sobre o passado com modal + have + particípio.",
+     "p": [
+      "Must have = quase certo: They must have left early. The lights are off. You must have worked hard.",
+      "Might have / could have = talvez: He might have missed the bus. She could have forgotten.",
+      "Can't have = quase certo que não aconteceu: She can't have seen us. She didn't wave."
+     ],
+     "q": "A tua colega chegou muito contente esta manhã. O que pode ter acontecido? Faz três suposições.",
+     "c": "Escreve um mini mistério: o bolo desapareceu da cozinha. Cinco suposições com must have, might have, can't have."
+    },
+    "pt_BR": {
+     "t": "Might have, could have",
+     "g": "Faça suposições sobre o passado com modal + have + particípio.",
+     "p": [
+      "Must have = quase certeza: They must have left early. The lights are off. You must have worked hard.",
+      "Might have / could have = talvez: He might have missed the bus. She could have forgotten.",
+      "Can't have = quase certeza de que não aconteceu: She can't have seen us. She didn't wave."
+     ],
+     "q": "Sua colega chegou muito feliz hoje de manhã. O que pode ter acontecido? Faça três suposições.",
+     "c": "Escreva um mini mistério: o bolo sumiu da cozinha. Cinco suposições com must have, might have, can't have."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "must have left",
+      "ex": "They must have left already. The house is quiet."
+     },
+     {
+      "w": "might have missed",
+      "ex": "He might have missed the last train."
+     },
+     {
+      "w": "could have forgotten",
+      "ex": "She could have forgotten about the meeting."
+     },
+     {
+      "w": "can't have seen",
+      "ex": "You can't have seen him. He's on holiday."
+     },
+     {
+      "w": "must have been",
+      "ex": "That must have been a great concert!"
+     },
+     {
+      "w": "maybe",
+      "ex": "Maybe they took a different road."
+     }
+    ],
+    "gram": "Past deduction: must have / might have / could have / can't have + past participle: He might have missed the bus."
+   }
+  },
+  {
+   "d": 196,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Passive voice: more tenses",
+     "g": "Use the passive in many tenses: present perfect, continuous and future.",
+     "p": [
+      "Present perfect: has/have been + participle. The bridge has been built. My order has been sent.",
+      "Continuous: is/was being + participle. The road is being repaired. The room was being cleaned.",
+      "Future and modals: will be / can be + participle. It will be finished soon. Tickets can be bought online."
+     ],
+     "q": "What is being built or changed in your town at the moment, and what has been improved recently?",
+     "c": "Write one passive sentence in each tense: is made, was made, has been made, is being made, will be made."
+    },
+    "de": {
+     "t": "Passive voice: more tenses",
+     "g": "Du benutzt das Passiv in vielen Zeiten: Present Perfect, Verlaufsform und Zukunft.",
+     "p": [
+      "Present Perfect: has/have been + Partizip. The bridge has been built. My order has been sent.",
+      "Verlaufsform: is/was being + Partizip. The road is being repaired. The room was being cleaned.",
+      "Zukunft und Modalverben: will be / can be + Partizip. It will be finished soon. Tickets can be bought online."
+     ],
+     "q": "Was wird in deiner Stadt gerade gebaut oder verändert, und was ist neulich verbessert worden?",
+     "c": "Schreib je einen Passivsatz pro Zeit: is made, was made, has been made, is being made, will be made."
+    },
+    "es": {
+     "t": "Passive voice: more tenses",
+     "g": "Usa la pasiva en muchos tiempos: present perfect, continuo y futuro.",
+     "p": [
+      "Present perfect: has/have been + participio. The bridge has been built. My order has been sent.",
+      "Continuo: is/was being + participio. The road is being repaired. The room was being cleaned.",
+      "Futuro y modales: will be / can be + participio. It will be finished soon. Tickets can be bought online."
+     ],
+     "q": "¿Qué se está construyendo o cambiando ahora en tu ciudad, y qué se ha mejorado hace poco?",
+     "c": "Escribe una frase pasiva en cada tiempo: is made, was made, has been made, is being made, will be made."
+    },
+    "fr": {
+     "t": "Passive voice: more tenses",
+     "g": "Utilise le passif à plusieurs temps : present perfect, forme progressive et futur.",
+     "p": [
+      "Present perfect : has/have been + participe. The bridge has been built. My order has been sent.",
+      "Progressif : is/was being + participe. The road is being repaired. The room was being cleaned.",
+      "Futur et modaux : will be / can be + participe. It will be finished soon. Tickets can be bought online."
+     ],
+     "q": "Qu'est-ce qui est en train d'être construit ou changé dans ta ville, et qu'est-ce qui a été amélioré récemment ?",
+     "c": "Écris une phrase passive à chaque temps : is made, was made, has been made, is being made, will be made."
+    },
+    "it": {
+     "t": "Passive voice: more tenses",
+     "g": "Usa il passivo in molti tempi: present perfect, forma progressiva e futuro.",
+     "p": [
+      "Present perfect: has/have been + participio. The bridge has been built. My order has been sent.",
+      "Progressivo: is/was being + participio. The road is being repaired. The room was being cleaned.",
+      "Futuro e modali: will be / can be + participio. It will be finished soon. Tickets can be bought online."
+     ],
+     "q": "Cosa si sta costruendo o cambiando nella tua città in questo momento, e cosa è stato migliorato di recente?",
+     "c": "Scrivi una frase passiva per ogni tempo: is made, was made, has been made, is being made, will be made."
+    },
+    "pt": {
+     "t": "Passive voice: more tenses",
+     "g": "Usa a passiva em vários tempos: present perfect, contínuo e futuro.",
+     "p": [
+      "Present perfect: has/have been + particípio. The bridge has been built. My order has been sent.",
+      "Contínuo: is/was being + particípio. The road is being repaired. The room was being cleaned.",
+      "Futuro e modais: will be / can be + particípio. It will be finished soon. Tickets can be bought online."
+     ],
+     "q": "O que está a ser construído ou mudado na tua cidade neste momento, e o que foi melhorado recentemente?",
+     "c": "Escreve uma frase passiva em cada tempo: is made, was made, has been made, is being made, will be made."
+    },
+    "pt_BR": {
+     "t": "Passive voice: more tenses",
+     "g": "Use a voz passiva em vários tempos: present perfect, contínuo e futuro.",
+     "p": [
+      "Present perfect: has/have been + particípio. The bridge has been built. My order has been sent.",
+      "Contínuo: is/was being + particípio. The road is being repaired. The room was being cleaned.",
+      "Futuro e modais: will be / can be + particípio. It will be finished soon. Tickets can be bought online."
+     ],
+     "q": "O que está sendo construído ou mudado na sua cidade agora, e o que foi melhorado recentemente?",
+     "c": "Escreva uma frase na passiva em cada tempo: is made, was made, has been made, is being made, will be made."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "has been built",
+      "ex": "A new library has been built near the school."
+     },
+     {
+      "w": "is being repaired",
+      "ex": "My phone is being repaired this week."
+     },
+     {
+      "w": "will be finished",
+      "ex": "The new station will be finished next spring."
+     },
+     {
+      "w": "can be bought",
+      "ex": "Tickets can be bought at the door."
+     },
+     {
+      "w": "was being cleaned",
+      "ex": "The pool was being cleaned when we arrived."
+     },
+     {
+      "w": "has been sent",
+      "ex": "Your package has been sent."
+     }
+    ],
+    "gram": "Passive in more tenses: has been done, is being done, was being done, will be done, can be done. Be changes, the participle stays."
+   }
+  },
+  {
+   "d": 197,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Have something done",
+     "g": "Talk about services other people do for you with have + object + participle.",
+     "p": [
+      "Form: have + thing + past participle. I had my hair cut. We're having the kitchen painted.",
+      "It means someone else does it for you: I cut my hair (myself) vs I had my hair cut (at the hairdresser).",
+      "All tenses work: I'm going to have my car checked. She's just had her eyes tested. Get is more informal."
+     ],
+     "q": "What do you usually have done instead of doing it yourself: hair, car, clothes, computer?",
+     "c": "Write five sentences about services: one past, one present continuous, one future, one with get, one question."
+    },
+    "de": {
+     "t": "Have something done",
+     "g": "Mit have + Objekt + Partizip sprichst du über Dinge, die andere für dich erledigen.",
+     "p": [
+      "Form: have + Sache + Partizip. I had my hair cut. We're having the kitchen painted.",
+      "Jemand anders macht es: I cut my hair (selbst) vs I had my hair cut (beim Friseur).",
+      "Alle Zeiten gehen: I'm going to have my car checked. She's just had her eyes tested. Get ist lockerer."
+     ],
+     "q": "Was lässt du normalerweise machen, statt es selbst zu tun: Haare, Auto, Kleidung, Computer?",
+     "c": "Schreib fünf Sätze über Dienstleistungen: Vergangenheit, Verlaufsform, Zukunft, einen mit get und eine Frage."
+    },
+    "es": {
+     "t": "Have something done",
+     "g": "Habla de servicios que otros hacen por ti con have + objeto + participio.",
+     "p": [
+      "Forma: have + cosa + participio. I had my hair cut. We're having the kitchen painted.",
+      "Otra persona lo hace por ti: I cut my hair (yo mismo) vs I had my hair cut (en la peluquería).",
+      "Funciona en todos los tiempos: I'm going to have my car checked. She's just had her eyes tested. Get es más informal."
+     ],
+     "q": "¿Qué sueles encargar en lugar de hacerlo tú: el pelo, el coche, la ropa, el ordenador?",
+     "c": "Escribe cinco frases sobre servicios: una en pasado, una en continuo, una en futuro, una con get y una pregunta."
+    },
+    "fr": {
+     "t": "Have something done",
+     "g": "Parle des services qu'on te rend avec have + objet + participe passé.",
+     "p": [
+      "Forme : have + chose + participe. I had my hair cut. We're having the kitchen painted.",
+      "C'est quelqu'un d'autre qui le fait : I cut my hair (moi-même) vs I had my hair cut (chez le coiffeur).",
+      "Tous les temps marchent : I'm going to have my car checked. She's just had her eyes tested. Get est plus familier."
+     ],
+     "q": "Qu'est-ce que tu fais faire d'habitude au lieu de le faire toi-même : cheveux, voiture, vêtements, ordinateur ?",
+     "c": "Écris cinq phrases sur des services : une au passé, une au progressif, une au futur, une avec get et une question."
+    },
+    "it": {
+     "t": "Have something done",
+     "g": "Parla dei servizi che altri fanno per te con have + oggetto + participio.",
+     "p": [
+      "Forma: have + cosa + participio. I had my hair cut. We're having the kitchen painted.",
+      "Lo fa qualcun altro: I cut my hair (da solo) vs I had my hair cut (dal parrucchiere).",
+      "Va bene in tutti i tempi: I'm going to have my car checked. She's just had her eyes tested. Get è più informale."
+     ],
+     "q": "Cosa fai fare di solito invece di farlo da solo: capelli, auto, vestiti, computer?",
+     "c": "Scrivi cinque frasi sui servizi: una al passato, una al progressivo, una al futuro, una con get e una domanda."
+    },
+    "pt": {
+     "t": "Have something done",
+     "g": "Fala de serviços que outros fazem por ti com have + objeto + particípio.",
+     "p": [
+      "Forma: have + coisa + particípio. I had my hair cut. We're having the kitchen painted.",
+      "Outra pessoa faz por ti: I cut my hair (eu próprio) vs I had my hair cut (no cabeleireiro).",
+      "Funciona em todos os tempos: I'm going to have my car checked. She's just had her eyes tested. Get é mais informal."
+     ],
+     "q": "O que costumas mandar fazer em vez de fazer tu: cabelo, carro, roupa, computador?",
+     "c": "Escreve cinco frases sobre serviços: uma no passado, uma no contínuo, uma no futuro, uma com get e uma pergunta."
+    },
+    "pt_BR": {
+     "t": "Have something done",
+     "g": "Fale de serviços que outras pessoas fazem para você com have + objeto + particípio.",
+     "p": [
+      "Forma: have + coisa + particípio. I had my hair cut. We're having the kitchen painted.",
+      "Outra pessoa faz por você: I cut my hair (eu mesmo) vs I had my hair cut (no cabeleireiro).",
+      "Funciona em todos os tempos: I'm going to have my car checked. She's just had her eyes tested. Get é mais informal."
+     ],
+     "q": "O que você costuma mandar fazer em vez de fazer sozinho: cabelo, carro, roupa, computador?",
+     "c": "Escreva cinco frases sobre serviços: uma no passado, uma no contínuo, uma no futuro, uma com get e uma pergunta."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "have my hair cut",
+      "ex": "I have my hair cut every two months."
+     },
+     {
+      "w": "had it repaired",
+      "ex": "My bike was broken, so I had it repaired."
+     },
+     {
+      "w": "having the kitchen painted",
+      "ex": "We're having the kitchen painted next week."
+     },
+     {
+      "w": "get my car serviced",
+      "ex": "I need to get my car serviced soon."
+     },
+     {
+      "w": "had my eyes tested",
+      "ex": "I had my eyes tested last Friday."
+     },
+     {
+      "w": "have it delivered",
+      "ex": "You can have it delivered to your door."
+     }
+    ],
+    "gram": "Have/get + object + past participle: someone does a service for you. I had my hair cut. We're getting the roof fixed."
+   }
+  },
+  {
+   "d": 198,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Services: hairdresser, mechanic, tailor",
+     "g": "Book a service, explain what you want and check the result in English.",
+     "p": [
+      "Booking: I'd like to book an appointment for Friday. Do you have anything available this week?",
+      "Explaining: Just a trim, please. Could you shorten these trousers? The car makes a strange noise.",
+      "Checking: How long will it take? When will it be ready? It looks great, thank you!"
+     ],
+     "q": "Imagine you call a hairdresser or a mechanic. How would you book, and what would you ask?",
+     "c": "Write a short dialogue at a hairdresser, a garage or a tailor: book, explain, ask the time and thank them."
+    },
+    "de": {
+     "t": "Services: hairdresser, mechanic, tailor",
+     "g": "Du buchst eine Dienstleistung, erklärst deinen Wunsch und prüfst das Ergebnis auf Englisch.",
+     "p": [
+      "Buchen: I'd like to book an appointment for Friday. Do you have anything available this week?",
+      "Erklären: Just a trim, please. Could you shorten these trousers? The car makes a strange noise.",
+      "Nachfragen: How long will it take? When will it be ready? It looks great, thank you!"
+     ],
+     "q": "Stell dir vor, du rufst beim Friseur oder in der Werkstatt an. Wie buchst du, und was fragst du?",
+     "c": "Schreib einen kurzen Dialog beim Friseur, in der Werkstatt oder beim Schneider: buchen, erklären, Zeit fragen, danken."
+    },
+    "es": {
+     "t": "Services: hairdresser, mechanic, tailor",
+     "g": "Reserva un servicio, explica lo que quieres y revisa el resultado en inglés.",
+     "p": [
+      "Reservar: I'd like to book an appointment for Friday. Do you have anything available this week?",
+      "Explicar: Just a trim, please. Could you shorten these trousers? The car makes a strange noise.",
+      "Comprobar: How long will it take? When will it be ready? It looks great, thank you!"
+     ],
+     "q": "Imagina que llamas a una peluquería o a un taller. ¿Cómo reservarías y qué preguntarías?",
+     "c": "Escribe un diálogo corto en la peluquería, el taller o la sastrería: reserva, explica, pregunta el tiempo y da las gracias."
+    },
+    "fr": {
+     "t": "Services: hairdresser, mechanic, tailor",
+     "g": "Réserve un service, explique ce que tu veux et vérifie le résultat en anglais.",
+     "p": [
+      "Réserver : I'd like to book an appointment for Friday. Do you have anything available this week?",
+      "Expliquer : Just a trim, please. Could you shorten these trousers? The car makes a strange noise.",
+      "Vérifier : How long will it take? When will it be ready? It looks great, thank you!"
+     ],
+     "q": "Imagine que tu appelles un coiffeur ou un garagiste. Comment réserverais-tu, et que demanderais-tu ?",
+     "c": "Écris un petit dialogue chez le coiffeur, au garage ou chez le retoucheur : réserver, expliquer, demander le délai, remercier."
+    },
+    "it": {
+     "t": "Services: hairdresser, mechanic, tailor",
+     "g": "Prenota un servizio, spiega cosa vuoi e controlla il risultato in inglese.",
+     "p": [
+      "Prenotare: I'd like to book an appointment for Friday. Do you have anything available this week?",
+      "Spiegare: Just a trim, please. Could you shorten these trousers? The car makes a strange noise.",
+      "Verificare: How long will it take? When will it be ready? It looks great, thank you!"
+     ],
+     "q": "Immagina di chiamare un parrucchiere o un meccanico. Come prenoteresti e cosa chiederesti?",
+     "c": "Scrivi un breve dialogo dal parrucchiere, dal meccanico o dal sarto: prenota, spiega, chiedi i tempi e ringrazia."
+    },
+    "pt": {
+     "t": "Services: hairdresser, mechanic, tailor",
+     "g": "Marca um serviço, explica o que queres e verifica o resultado em inglês.",
+     "p": [
+      "Marcar: I'd like to book an appointment for Friday. Do you have anything available this week?",
+      "Explicar: Just a trim, please. Could you shorten these trousers? The car makes a strange noise.",
+      "Verificar: How long will it take? When will it be ready? It looks great, thank you!"
+     ],
+     "q": "Imagina que ligas para um cabeleireiro ou uma oficina. Como marcarias e o que perguntarias?",
+     "c": "Escreve um diálogo curto no cabeleireiro, na oficina ou na costureira: marcar, explicar, perguntar o prazo e agradecer."
+    },
+    "pt_BR": {
+     "t": "Services: hairdresser, mechanic, tailor",
+     "g": "Agende um serviço, explique o que quer e confira o resultado em inglês.",
+     "p": [
+      "Agendar: I'd like to book an appointment for Friday. Do you have anything available this week?",
+      "Explicar: Just a trim, please. Could you shorten these trousers? The car makes a strange noise.",
+      "Conferir: How long will it take? When will it be ready? It looks great, thank you!"
+     ],
+     "q": "Imagine que você liga para um cabeleireiro ou uma oficina. Como agendaria e o que perguntaria?",
+     "c": "Escreva um diálogo curto no cabeleireiro, na oficina ou na costureira: agendar, explicar, perguntar o prazo e agradecer."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "book an appointment",
+      "ex": "I'd like to book an appointment for Saturday morning."
+     },
+     {
+      "w": "just a trim",
+      "ex": "Just a trim, please, not too short."
+     },
+     {
+      "w": "shorten",
+      "ex": "Could you shorten the sleeves a little?"
+     },
+     {
+      "w": "strange noise",
+      "ex": "My car makes a strange noise when I brake."
+     },
+     {
+      "w": "When will it be ready?",
+      "ex": "When will my jacket be ready?"
+     },
+     {
+      "w": "How long will it take?",
+      "ex": "How long will the repair take?"
+     }
+    ],
+    "gram": "Service English: I'd like to book..., Could you + verb...?, will questions for time: When will it be ready? How long will it take?"
+   }
+  },
+  {
+   "d": 199,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Defining vs non-defining clauses",
+     "g": "Understand when relative clauses need commas and when they don't.",
+     "p": [
+      "Defining: no commas, the information is essential. The man who lives next door is a pilot.",
+      "Non-defining: commas, extra information. My brother, who lives in Lima, is a pilot. I have only one brother.",
+      "In non-defining clauses, use who or which, never that: Our car, which is red, is very old."
+     ],
+     "q": "Tell me about a person or place you love, adding extra information with who or which between commas.",
+     "c": "Write three defining and three non-defining sentences about your family, city and favourite things."
+    },
+    "de": {
+     "t": "Defining vs non-defining clauses",
+     "g": "Du verstehst, wann Relativsätze Kommas brauchen und wann nicht.",
+     "p": [
+      "Defining: ohne Kommas, die Info ist nötig. The man who lives next door is a pilot.",
+      "Non-defining: mit Kommas, Zusatzinfo. My brother, who lives in Lima, is a pilot. Ich habe nur einen Bruder.",
+      "In Sätzen mit Kommas nur who oder which, nie that: Our car, which is red, is very old."
+     ],
+     "q": "Erzähl mir von einer Person oder einem Ort, den du liebst, mit Zusatzinfos durch who oder which zwischen Kommas.",
+     "c": "Schreib drei Sätze ohne und drei mit Kommas über deine Familie, deine Stadt und Lieblingsdinge."
+    },
+    "es": {
+     "t": "Defining vs non-defining clauses",
+     "g": "Entiende cuándo las oraciones de relativo llevan comas y cuándo no.",
+     "p": [
+      "Defining: sin comas, la información es esencial. The man who lives next door is a pilot.",
+      "Non-defining: con comas, información extra. My brother, who lives in Lima, is a pilot. Solo tengo un hermano.",
+      "En las de comas usa who o which, nunca that: Our car, which is red, is very old."
+     ],
+     "q": "Háblame de una persona o un lugar que quieras, añadiendo información extra con who o which entre comas.",
+     "c": "Escribe tres frases sin comas y tres con comas sobre tu familia, tu ciudad y tus cosas favoritas."
+    },
+    "fr": {
+     "t": "Defining vs non-defining clauses",
+     "g": "Comprends quand les relatives prennent des virgules et quand elles n'en prennent pas.",
+     "p": [
+      "Defining : pas de virgules, l'info est essentielle. The man who lives next door is a pilot.",
+      "Non-defining : virgules, info en plus. My brother, who lives in Lima, is a pilot. Je n'ai qu'un frère.",
+      "Entre virgules, on utilise who ou which, jamais that : Our car, which is red, is very old."
+     ],
+     "q": "Parle-moi d'une personne ou d'un lieu que tu aimes, en ajoutant une info avec who ou which entre virgules.",
+     "c": "Écris trois phrases sans virgules et trois avec, sur ta famille, ta ville et tes choses préférées."
+    },
+    "it": {
+     "t": "Defining vs non-defining clauses",
+     "g": "Capisci quando le relative vogliono le virgole e quando no.",
+     "p": [
+      "Defining: niente virgole, l'informazione è essenziale. The man who lives next door is a pilot.",
+      "Non-defining: virgole, informazione in più. My brother, who lives in Lima, is a pilot. Ho un solo fratello.",
+      "Tra virgole si usa who o which, mai that: Our car, which is red, is very old."
+     ],
+     "q": "Parlami di una persona o di un luogo che ami, aggiungendo informazioni con who o which tra virgole.",
+     "c": "Scrivi tre frasi senza virgole e tre con le virgole su famiglia, città e cose preferite."
+    },
+    "pt": {
+     "t": "Defining vs non-defining clauses",
+     "g": "Percebe quando as orações relativas levam vírgulas e quando não.",
+     "p": [
+      "Defining: sem vírgulas, a informação é essencial. The man who lives next door is a pilot.",
+      "Non-defining: com vírgulas, informação extra. My brother, who lives in Lima, is a pilot. Só tenho um irmão.",
+      "Entre vírgulas usa who ou which, nunca that: Our car, which is red, is very old."
+     ],
+     "q": "Fala-me de uma pessoa ou de um lugar de que gostes, com informação extra usando who ou which entre vírgulas.",
+     "c": "Escreve três frases sem vírgulas e três com vírgulas sobre a tua família, a tua cidade e as tuas coisas favoritas."
+    },
+    "pt_BR": {
+     "t": "Defining vs non-defining clauses",
+     "g": "Entenda quando as orações relativas levam vírgulas e quando não.",
+     "p": [
+      "Defining: sem vírgulas, a informação é essencial. The man who lives next door is a pilot.",
+      "Non-defining: com vírgulas, informação extra. My brother, who lives in Lima, is a pilot. Só tenho um irmão.",
+      "Entre vírgulas use who ou which, nunca that: Our car, which is red, is very old."
+     ],
+     "q": "Fale de uma pessoa ou de um lugar que você ama, com informação extra usando who ou which entre vírgulas.",
+     "c": "Escreva três frases sem vírgulas e três com vírgulas sobre sua família, sua cidade e suas coisas favoritas."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "who",
+      "ex": "The woman who runs the café is very friendly."
+     },
+     {
+      "w": "which",
+      "ex": "Porto, which is in the north, is famous for its bridges."
+     },
+     {
+      "w": "that",
+      "ex": "This is the book that changed my life."
+     },
+     {
+      "w": "where",
+      "ex": "That's the street where I grew up."
+     },
+     {
+      "w": "whose",
+      "ex": "My friend, whose dad is a chef, cooks brilliantly."
+     },
+     {
+      "w": "my sister, who...",
+      "ex": "My sister, who is a nurse, works at night."
+     }
+    ],
+    "gram": "Defining clauses (no commas) identify: the man who... Non-defining (commas) add extra info with who/which, never that."
+   }
+  },
+  {
+   "d": 200,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Adding information with commas",
+     "g": "Use which after a comma to comment on a whole idea.",
+     "p": [
+      "Which can refer to the whole sentence: He passed all his exams, which was amazing.",
+      "Great for comments and feelings: The train was late, which meant we missed the start.",
+      "Keep the comma before which. Compare: I bought a book which was cheap (the book) vs ..., which was nice (the whole act)."
+     ],
+     "q": "Tell me two things that happened this week and comment on them with ..., which was great or ..., which meant...",
+     "c": "Write five sentences that end with a comment: ..., which was a surprise / ..., which made me happy / ..., which meant..."
+    },
+    "de": {
+     "t": "Adding information with commas",
+     "g": "Mit which nach einem Komma kommentierst du eine ganze Aussage.",
+     "p": [
+      "Which kann sich auf den ganzen Satz beziehen: He passed all his exams, which was amazing.",
+      "Ideal für Kommentare und Gefühle: The train was late, which meant we missed the start.",
+      "Das Komma vor which bleibt. Vergleich: I bought a book which was cheap (das Buch) vs ..., which was nice (das Ganze)."
+     ],
+     "q": "Erzähl mir zwei Dinge aus dieser Woche und kommentiere sie mit ..., which was great oder ..., which meant...",
+     "c": "Schreib fünf Sätze, die mit einem Kommentar enden: ..., which was a surprise / ..., which made me happy / ..., which meant..."
+    },
+    "es": {
+     "t": "Adding information with commas",
+     "g": "Usa which tras una coma para comentar una idea completa.",
+     "p": [
+      "Which puede referirse a toda la frase: He passed all his exams, which was amazing.",
+      "Ideal para comentarios y emociones: The train was late, which meant we missed the start.",
+      "Mantén la coma antes de which. Compara: I bought a book which was cheap (el libro) vs ..., which was nice (todo el hecho)."
+     ],
+     "q": "Cuéntame dos cosas que pasaron esta semana y coméntalas con ..., which was great o ..., which meant...",
+     "c": "Escribe cinco frases que terminen con un comentario: ..., which was a surprise / ..., which made me happy / ..., which meant..."
+    },
+    "fr": {
+     "t": "Adding information with commas",
+     "g": "Utilise which après une virgule pour commenter toute une idée.",
+     "p": [
+      "Which peut reprendre toute la phrase : He passed all his exams, which was amazing.",
+      "Parfait pour commenter ou réagir : The train was late, which meant we missed the start.",
+      "Garde la virgule avant which. Compare : I bought a book which was cheap (le livre) vs ..., which was nice (le fait entier)."
+     ],
+     "q": "Raconte-moi deux choses de cette semaine et commente-les avec ..., which was great ou ..., which meant...",
+     "c": "Écris cinq phrases qui finissent par un commentaire : ..., which was a surprise / ..., which made me happy / ..., which meant..."
+    },
+    "it": {
+     "t": "Adding information with commas",
+     "g": "Usa which dopo una virgola per commentare un'intera idea.",
+     "p": [
+      "Which può riferirsi a tutta la frase: He passed all his exams, which was amazing.",
+      "Perfetto per commenti ed emozioni: The train was late, which meant we missed the start.",
+      "Tieni la virgola prima di which. Confronta: I bought a book which was cheap (il libro) vs ..., which was nice (tutto il fatto)."
+     ],
+     "q": "Raccontami due cose successe questa settimana e commentale con ..., which was great o ..., which meant...",
+     "c": "Scrivi cinque frasi che finiscono con un commento: ..., which was a surprise / ..., which made me happy / ..., which meant..."
+    },
+    "pt": {
+     "t": "Adding information with commas",
+     "g": "Usa which depois de uma vírgula para comentar uma ideia inteira.",
+     "p": [
+      "Which pode referir-se à frase toda: He passed all his exams, which was amazing.",
+      "Ótimo para comentários e emoções: The train was late, which meant we missed the start.",
+      "Mantém a vírgula antes de which. Compara: I bought a book which was cheap (o livro) vs ..., which was nice (o facto todo)."
+     ],
+     "q": "Conta-me duas coisas que aconteceram esta semana e comenta-as com ..., which was great ou ..., which meant...",
+     "c": "Escreve cinco frases que acabem com um comentário: ..., which was a surprise / ..., which made me happy / ..., which meant..."
+    },
+    "pt_BR": {
+     "t": "Adding information with commas",
+     "g": "Use which depois de uma vírgula para comentar uma ideia inteira.",
+     "p": [
+      "Which pode se referir à frase toda: He passed all his exams, which was amazing.",
+      "Ótimo para comentários e emoções: The train was late, which meant we missed the start.",
+      "Mantenha a vírgula antes de which. Compare: I bought a book which was cheap (o livro) vs ..., which was nice (o fato todo)."
+     ],
+     "q": "Me conte duas coisas que aconteceram esta semana e comente com ..., which was great ou ..., which meant...",
+     "c": "Escreva cinco frases que terminem com um comentário: ..., which was a surprise / ..., which made me happy / ..., which meant..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": ", which was amazing",
+      "ex": "She sang in front of 500 people, which was amazing."
+     },
+     {
+      "w": ", which meant",
+      "ex": "It snowed all night, which meant no school."
+     },
+     {
+      "w": ", which made me happy",
+      "ex": "My friend called me, which made me happy."
+     },
+     {
+      "w": ", which was a surprise",
+      "ex": "He cooked dinner for us, which was a surprise."
+     },
+     {
+      "w": ", which is why",
+      "ex": "I love languages, which is why I'm learning English."
+     },
+     {
+      "w": "comment",
+      "ex": "Add a short comment at the end of your story."
+     }
+    ],
+    "gram": "Sentence-relative which: after a comma, which can refer to the whole previous idea: It rained all day, which was a shame."
+   }
+  }
+ ]
+}

@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 241,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Formal letters and emails",
+     "g": "Write a clear formal email in Italian, from the subject line to the closing.",
+     "p": [
+      "Start with Gentile Dottoressa Rossi or Spettabile Ditta, and fill in l'oggetto in a few precise words.",
+      "La presente per... introduces your purpose; use Lei and the conditional: vorrei, sarebbe possibile.",
+      "Close with In attesa di un Suo riscontro, porgo cordiali saluti, then your name."
+     ],
+     "q": "Who would you write a formal email to in Italian, and what would the subject line be?",
+     "c": "Write a four-line formal email asking a school for information, with oggetto and a closing formula."
+    },
+    "de": {
+     "t": "Formelle Briefe und E-Mails",
+     "g": "Du schreibst eine klare formelle E-Mail auf Italienisch, vom Betreff bis zum Gruß.",
+     "p": [
+      "Beginne mit Gentile Dottoressa Rossi oder Spettabile Ditta und formuliere l'oggetto kurz und präzise.",
+      "La presente per... nennt dein Anliegen; nutze Lei und den Konditional: vorrei, sarebbe possibile.",
+      "Zum Schluss: In attesa di un Suo riscontro, porgo cordiali saluti, dann dein Name."
+     ],
+     "q": "Wem würdest du eine formelle E-Mail auf Italienisch schreiben, und wie lautet der Betreff?",
+     "c": "Schreib eine vierzeilige formelle Mail an eine Schule mit Bitte um Infos, mit oggetto und Grußformel."
+    },
+    "es": {
+     "t": "Cartas y correos formales",
+     "g": "Escribir un correo formal claro en italiano, del asunto a la despedida.",
+     "p": [
+      "Empieza con Gentile Dottoressa Rossi o Spettabile Ditta y escribe l'oggetto en pocas palabras precisas.",
+      "La presente per... presenta tu motivo; usa Lei y el condicional: vorrei, sarebbe possibile.",
+      "Cierra con In attesa di un Suo riscontro, porgo cordiali saluti y tu nombre."
+     ],
+     "q": "¿A quién escribirías un correo formal en italiano y cuál sería el asunto?",
+     "c": "Escribe un correo formal de cuatro líneas pidiendo información a una escuela, con oggetto y despedida."
+    },
+    "fr": {
+     "t": "Lettres et e-mails formels",
+     "g": "Rédiger un e-mail formel clair en italien, de l'objet à la formule finale.",
+     "p": [
+      "Commence par Gentile Dottoressa Rossi ou Spettabile Ditta, et remplis l'oggetto en quelques mots précis.",
+      "La presente per... annonce ton but ; utilise Lei et le conditionnel : vorrei, sarebbe possibile.",
+      "Termine par In attesa di un Suo riscontro, porgo cordiali saluti, puis ton nom."
+     ],
+     "q": "À qui écrirais-tu un e-mail formel en italien, et quel en serait l'objet ?",
+     "c": "Écris un e-mail formel de quatre lignes pour demander des infos à une école, avec oggetto et formule finale."
+    },
+    "it": {
+     "t": "Lettere ed email formali",
+     "g": "Scrivere un'email formale chiara, dall'oggetto alla chiusura.",
+     "p": [
+      "Inizia con Gentile Dottoressa Rossi o Spettabile Ditta e scrivi l'oggetto in poche parole precise.",
+      "La presente per... introduce lo scopo; usa il Lei e il condizionale: vorrei, sarebbe possibile.",
+      "Chiudi con In attesa di un Suo riscontro, porgo cordiali saluti, poi il tuo nome."
+     ],
+     "q": "A chi scriveresti un'email formale in italiano, e quale sarebbe l'oggetto?",
+     "c": "Scrivi un'email formale di quattro righe per chiedere informazioni a una scuola, con oggetto e saluti."
+    },
+    "pt": {
+     "t": "Cartas e e-mails formais",
+     "g": "Escrever um e-mail formal claro em italiano, do assunto à despedida.",
+     "p": [
+      "Começa com Gentile Dottoressa Rossi ou Spettabile Ditta e preenche l'oggetto em poucas palavras precisas.",
+      "La presente per... apresenta o teu objetivo; usa o Lei e o condicional: vorrei, sarebbe possibile.",
+      "Termina com In attesa di un Suo riscontro, porgo cordiali saluti e o teu nome."
+     ],
+     "q": "A quem escreverias um e-mail formal em italiano, e qual seria o assunto?",
+     "c": "Escreve um e-mail formal de quatro linhas a pedir informações a uma escola, com oggetto e despedida."
+    },
+    "pt_BR": {
+     "t": "Cartas e e-mails formais",
+     "g": "Escrever um e-mail formal claro em italiano, do assunto à despedida.",
+     "p": [
+      "Comece com Gentile Dottoressa Rossi ou Spettabile Ditta e preencha l'oggetto em poucas palavras precisas.",
+      "La presente per... apresenta seu objetivo; use o Lei e o condicional: vorrei, sarebbe possibile.",
+      "Feche com In attesa di un Suo riscontro, porgo cordiali saluti e seu nome."
+     ],
+     "q": "Para quem você escreveria um e-mail formal em italiano, e qual seria o assunto?",
+     "c": "Escreva um e-mail formal de quatro linhas pedindo informações a uma escola, com oggetto e despedida."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "l'oggetto",
+      "ex": "Nell'oggetto ho scritto: richiesta di informazioni."
+     },
+     {
+      "w": "Gentile Signora",
+      "ex": "Gentile Signora Bianchi, La ringrazio per la risposta."
+     },
+     {
+      "w": "la presente per",
+      "ex": "Con la presente per chiederLe un appuntamento."
+     },
+     {
+      "w": "in allegato",
+      "ex": "In allegato trova il mio curriculum."
+     },
+     {
+      "w": "in attesa di un riscontro",
+      "ex": "In attesa di un Suo cortese riscontro, porgo distinti saluti."
+     },
+     {
+      "w": "cordiali saluti",
+      "ex": "Cordiali saluti, Marco Neri."
+     }
+    ],
+    "gram": "Email formale: Lei con maiuscola (La ringrazio, Suo), condizionale di cortesia (vorrei, potrebbe) e formule fisse."
+   }
+  },
+  {
+   "d": 242,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Making a complaint in writing",
+     "g": "Write a polite, firm complaint with clear facts and a concrete request.",
+     "p": [
+      "Open with the facts: in data 3 maggio ho acquistato..., purtroppo il prodotto non funziona.",
+      "Stay polite but clear: mi trovo costretto a segnalare, non sono soddisfatto del servizio.",
+      "End with a request: chiedo la sostituzione, il rimborso or un intervento al più presto."
+     ],
+     "q": "Have you ever had to complain about a product or service? What happened?",
+     "c": "Write a five-line complaint about a late delivery: facts, problem, request and closing."
+    },
+    "de": {
+     "t": "Eine schriftliche Beschwerde",
+     "g": "Du schreibst eine höfliche, klare Beschwerde mit Fakten und einer konkreten Bitte.",
+     "p": [
+      "Beginne mit den Fakten: in data 3 maggio ho acquistato..., purtroppo il prodotto non funziona.",
+      "Bleib höflich, aber deutlich: mi trovo costretto a segnalare, non sono soddisfatto del servizio.",
+      "Schließe mit einer Forderung: chiedo la sostituzione, il rimborso oder un intervento al più presto."
+     ],
+     "q": "Musstest du dich schon einmal über ein Produkt oder einen Service beschweren? Was ist passiert?",
+     "c": "Schreib eine fünfzeilige Beschwerde über eine späte Lieferung: Fakten, Problem, Bitte, Gruß."
+    },
+    "es": {
+     "t": "Hacer una reclamación por escrito",
+     "g": "Escribir una reclamación educada y firme, con hechos claros y una petición concreta.",
+     "p": [
+      "Empieza por los hechos: in data 3 maggio ho acquistato..., purtroppo il prodotto non funziona.",
+      "Sé amable pero claro: mi trovo costretto a segnalare, non sono soddisfatto del servizio.",
+      "Termina con una petición: chiedo la sostituzione, il rimborso o un intervento al più presto."
+     ],
+     "q": "¿Alguna vez tuviste que reclamar por un producto o servicio? ¿Qué pasó?",
+     "c": "Escribe una reclamación de cinco líneas por una entrega tardía: hechos, problema, petición y despedida."
+    },
+    "fr": {
+     "t": "Faire une réclamation par écrit",
+     "g": "Écrire une réclamation polie et ferme, avec des faits clairs et une demande concrète.",
+     "p": [
+      "Commence par les faits : in data 3 maggio ho acquistato..., purtroppo il prodotto non funziona.",
+      "Reste poli mais net : mi trovo costretto a segnalare, non sono soddisfatto del servizio.",
+      "Termine par une demande : chiedo la sostituzione, il rimborso ou un intervento al più presto."
+     ],
+     "q": "As-tu déjà dû te plaindre d'un produit ou d'un service ? Que s'est-il passé ?",
+     "c": "Écris une réclamation de cinq lignes pour une livraison en retard : faits, problème, demande, salutations."
+    },
+    "it": {
+     "t": "Scrivere un reclamo",
+     "g": "Scrivere un reclamo cortese e deciso, con fatti chiari e una richiesta concreta.",
+     "p": [
+      "Parti dai fatti: in data 3 maggio ho acquistato..., purtroppo il prodotto non funziona.",
+      "Resta cortese ma chiaro: mi trovo costretto a segnalare, non sono soddisfatto del servizio.",
+      "Chiudi con una richiesta: chiedo la sostituzione, il rimborso o un intervento al più presto."
+     ],
+     "q": "Ti è mai capitato di fare un reclamo per un prodotto o un servizio? Che cosa è successo?",
+     "c": "Scrivi un reclamo di cinque righe per una consegna in ritardo: fatti, problema, richiesta e saluti."
+    },
+    "pt": {
+     "t": "Fazer uma reclamação por escrito",
+     "g": "Escrever uma reclamação educada e firme, com factos claros e um pedido concreto.",
+     "p": [
+      "Começa pelos factos: in data 3 maggio ho acquistato..., purtroppo il prodotto non funziona.",
+      "Sê educado mas claro: mi trovo costretto a segnalare, non sono soddisfatto del servizio.",
+      "Termina com um pedido: chiedo la sostituzione, il rimborso ou un intervento al più presto."
+     ],
+     "q": "Já tiveste de reclamar de um produto ou serviço? O que aconteceu?",
+     "c": "Escreve uma reclamação de cinco linhas sobre uma entrega atrasada: factos, problema, pedido e despedida."
+    },
+    "pt_BR": {
+     "t": "Fazer uma reclamação por escrito",
+     "g": "Escrever uma reclamação educada e firme, com fatos claros e um pedido concreto.",
+     "p": [
+      "Comece pelos fatos: in data 3 maggio ho acquistato..., purtroppo il prodotto non funziona.",
+      "Seja educado mas claro: mi trovo costretto a segnalare, non sono soddisfatto del servizio.",
+      "Termine com um pedido: chiedo la sostituzione, il rimborso ou un intervento al più presto."
+     ],
+     "q": "Você já precisou reclamar de um produto ou serviço? O que aconteceu?",
+     "c": "Escreva uma reclamação de cinco linhas sobre uma entrega atrasada: fatos, problema, pedido e despedida."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il reclamo",
+      "ex": "Ho presentato un reclamo al servizio clienti."
+     },
+     {
+      "w": "il rimborso",
+      "ex": "Vorrei ricevere il rimborso completo."
+     },
+     {
+      "w": "la sostituzione",
+      "ex": "Chiedo la sostituzione del prodotto difettoso."
+     },
+     {
+      "w": "difettoso",
+      "ex": "La lavatrice che ho comprato è difettosa."
+     },
+     {
+      "w": "segnalare",
+      "ex": "Desidero segnalare un problema con il mio ordine."
+     },
+     {
+      "w": "al più presto",
+      "ex": "La prego di rispondermi al più presto."
+     }
+    ],
+    "gram": "Reclamo: fatti al passato prossimo, richiesta con chiedo / La prego di + infinito, tono cortese e preciso."
+   }
+  },
+  {
+   "d": 243,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Workplace Italian",
+     "g": "Talk about your working day with words like riunione, scadenza, progetto and collega.",
+     "p": [
+      "Key nouns: la riunione, la scadenza, il progetto, il collega, il capo, l'ufficio, il turno.",
+      "Useful verbs: lavorare a un progetto, rispettare una scadenza, essere in ferie, fare straordinari.",
+      "Describe your day with times and connectors: alle nove ho una riunione, poi rispondo alle email."
+     ],
+     "q": "What does a typical working or study day look like for you?",
+     "c": "Describe your working day in five Italian sentences using riunione, scadenza and collega."
+    },
+    "de": {
+     "t": "Italienisch im Job",
+     "g": "Du sprichst über deinen Arbeitstag mit Wörtern wie riunione, scadenza, progetto und collega.",
+     "p": [
+      "Wichtige Nomen: la riunione, la scadenza, il progetto, il collega, il capo, l'ufficio, il turno.",
+      "Nützliche Verben: lavorare a un progetto, rispettare una scadenza, essere in ferie, fare straordinari.",
+      "Beschreibe den Tag mit Uhrzeiten: alle nove ho una riunione, poi rispondo alle email."
+     ],
+     "q": "Wie sieht ein typischer Arbeits- oder Lerntag bei dir aus?",
+     "c": "Beschreibe deinen Arbeitstag in fünf Sätzen mit riunione, scadenza und collega."
+    },
+    "es": {
+     "t": "Italiano en el trabajo",
+     "g": "Hablar de tu jornada laboral con palabras como riunione, scadenza, progetto y collega.",
+     "p": [
+      "Sustantivos clave: la riunione, la scadenza, il progetto, il collega, il capo, l'ufficio, il turno.",
+      "Verbos útiles: lavorare a un progetto, rispettare una scadenza, essere in ferie, fare straordinari.",
+      "Describe tu día con horas y conectores: alle nove ho una riunione, poi rispondo alle email."
+     ],
+     "q": "¿Cómo es un día típico de trabajo o de estudio para ti?",
+     "c": "Describe tu jornada en cinco frases en italiano con riunione, scadenza y collega."
+    },
+    "fr": {
+     "t": "L'italien au travail",
+     "g": "Parler de ta journée de travail avec riunione, scadenza, progetto et collega.",
+     "p": [
+      "Noms clés : la riunione, la scadenza, il progetto, il collega, il capo, l'ufficio, il turno.",
+      "Verbes utiles : lavorare a un progetto, rispettare una scadenza, essere in ferie, fare straordinari.",
+      "Décris ta journée avec heures et connecteurs : alle nove ho una riunione, poi rispondo alle email."
+     ],
+     "q": "À quoi ressemble une journée typique de travail ou d'études pour toi ?",
+     "c": "Décris ta journée de travail en cinq phrases italiennes avec riunione, scadenza et collega."
+    },
+    "it": {
+     "t": "L'italiano del lavoro",
+     "g": "Parlare della tua giornata lavorativa con riunione, scadenza, progetto e collega.",
+     "p": [
+      "Nomi chiave: la riunione, la scadenza, il progetto, il collega, il capo, l'ufficio, il turno.",
+      "Verbi utili: lavorare a un progetto, rispettare una scadenza, essere in ferie, fare straordinari.",
+      "Descrivi la giornata con orari e connettivi: alle nove ho una riunione, poi rispondo alle email."
+     ],
+     "q": "Com'è una tua tipica giornata di lavoro o di studio?",
+     "c": "Descrivi la tua giornata lavorativa in cinque frasi con riunione, scadenza e collega."
+    },
+    "pt": {
+     "t": "Italiano no trabalho",
+     "g": "Falar do teu dia de trabalho com palavras como riunione, scadenza, progetto e collega.",
+     "p": [
+      "Substantivos-chave: la riunione, la scadenza, il progetto, il collega, il capo, l'ufficio, il turno.",
+      "Verbos úteis: lavorare a un progetto, rispettare una scadenza, essere in ferie, fare straordinari.",
+      "Descreve o dia com horas e conectores: alle nove ho una riunione, poi rispondo alle email."
+     ],
+     "q": "Como é um dia típico de trabalho ou de estudo para ti?",
+     "c": "Descreve o teu dia de trabalho em cinco frases em italiano com riunione, scadenza e collega."
+    },
+    "pt_BR": {
+     "t": "Italiano no trabalho",
+     "g": "Falar do seu dia de trabalho com palavras como riunione, scadenza, progetto e collega.",
+     "p": [
+      "Substantivos-chave: la riunione, la scadenza, il progetto, il collega, il capo, l'ufficio, il turno.",
+      "Verbos úteis: lavorare a un progetto, rispettare una scadenza, essere in ferie, fare straordinari.",
+      "Descreva o dia com horários e conectores: alle nove ho una riunione, poi rispondo alle email."
+     ],
+     "q": "Como é um dia típico de trabalho ou de estudo para você?",
+     "c": "Descreva seu dia de trabalho em cinco frases em italiano com riunione, scadenza e collega."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la riunione",
+      "ex": "Alle dieci abbiamo una riunione con il cliente."
+     },
+     {
+      "w": "la scadenza",
+      "ex": "La scadenza del progetto è venerdì."
+     },
+     {
+      "w": "il collega",
+      "ex": "La mia collega mi aiuta con i dati."
+     },
+     {
+      "w": "essere in ferie",
+      "ex": "Il capo è in ferie fino a lunedì."
+     },
+     {
+      "w": "fare gli straordinari",
+      "ex": "Questa settimana ho fatto gli straordinari."
+     },
+     {
+      "w": "il turno",
+      "ex": "Domani faccio il turno di mattina."
+     }
+    ],
+    "gram": "Lavorare a + progetto, essere in + ferie/riunione; presente e passato prossimo per raccontare la giornata."
+   }
+  },
+  {
+   "d": 244,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Phone calls at work",
+     "g": "Handle a work phone call: answering, transferring and taking a message.",
+     "p": [
+      "Answer formally: Pronto, ufficio vendite, sono Laura. In cosa posso esserLe utile?",
+      "Transfer or hold: Le passo il collega, resti in linea un attimo, la linea è occupata.",
+      "Messages: Vuole lasciare un messaggio? Richiamo più tardi. Può ripetere il numero?"
+     ],
+     "q": "How do you usually answer the phone at work or at home?",
+     "c": "Write a short phone dialogue: someone asks for Dr Verdi, who is out, and leaves a message."
+    },
+    "de": {
+     "t": "Telefonieren im Büro",
+     "g": "Du führst ein berufliches Telefonat: annehmen, weiterleiten, Nachricht notieren.",
+     "p": [
+      "Formell melden: Pronto, ufficio vendite, sono Laura. In cosa posso esserLe utile?",
+      "Weiterleiten oder warten: Le passo il collega, resti in linea un attimo, la linea è occupata.",
+      "Nachrichten: Vuole lasciare un messaggio? Richiamo più tardi. Può ripetere il numero?"
+     ],
+     "q": "Wie meldest du dich normalerweise am Telefon, im Job oder zu Hause?",
+     "c": "Schreib einen kurzen Telefondialog: Jemand will Dottor Verdi sprechen, er ist weg, Nachricht folgt."
+    },
+    "es": {
+     "t": "Llamadas en el trabajo",
+     "g": "Gestionar una llamada laboral: contestar, pasar la llamada y tomar un recado.",
+     "p": [
+      "Contesta formalmente: Pronto, ufficio vendite, sono Laura. In cosa posso esserLe utile?",
+      "Pasar o esperar: Le passo il collega, resti in linea un attimo, la linea è occupata.",
+      "Recados: Vuole lasciare un messaggio? Richiamo più tardi. Può ripetere il numero?"
+     ],
+     "q": "¿Cómo sueles contestar el teléfono en el trabajo o en casa?",
+     "c": "Escribe un diálogo telefónico breve: alguien busca al doctor Verdi, que no está, y deja un recado."
+    },
+    "fr": {
+     "t": "Téléphoner au travail",
+     "g": "Gérer un appel professionnel : répondre, transférer et prendre un message.",
+     "p": [
+      "Réponds formellement : Pronto, ufficio vendite, sono Laura. In cosa posso esserLe utile?",
+      "Transférer ou patienter : Le passo il collega, resti in linea un attimo, la linea è occupata.",
+      "Messages : Vuole lasciare un messaggio? Richiamo più tardi. Può ripetere il numero?"
+     ],
+     "q": "Comment réponds-tu d'habitude au téléphone, au travail ou à la maison ?",
+     "c": "Écris un court dialogue : quelqu'un demande le docteur Verdi, absent, et laisse un message."
+    },
+    "it": {
+     "t": "Telefonate di lavoro",
+     "g": "Gestire una telefonata di lavoro: rispondere, passare la chiamata e prendere un messaggio.",
+     "p": [
+      "Rispondi in modo formale: Pronto, ufficio vendite, sono Laura. In cosa posso esserLe utile?",
+      "Passare o attendere: Le passo il collega, resti in linea un attimo, la linea è occupata.",
+      "Messaggi: Vuole lasciare un messaggio? Richiamo più tardi. Può ripetere il numero?"
+     ],
+     "q": "Come rispondi di solito al telefono, al lavoro o a casa?",
+     "c": "Scrivi un breve dialogo: qualcuno cerca il dottor Verdi, che è fuori, e lascia un messaggio."
+    },
+    "pt": {
+     "t": "Telefonemas no trabalho",
+     "g": "Gerir um telefonema de trabalho: atender, passar a chamada e deixar recado.",
+     "p": [
+      "Atende formalmente: Pronto, ufficio vendite, sono Laura. In cosa posso esserLe utile?",
+      "Passar ou aguardar: Le passo il collega, resti in linea un attimo, la linea è occupata.",
+      "Recados: Vuole lasciare un messaggio? Richiamo più tardi. Può ripetere il numero?"
+     ],
+     "q": "Como costumas atender o telefone, no trabalho ou em casa?",
+     "c": "Escreve um diálogo telefónico curto: alguém procura o doutor Verdi, que saiu, e deixa recado."
+    },
+    "pt_BR": {
+     "t": "Ligações no trabalho",
+     "g": "Lidar com uma ligação de trabalho: atender, transferir e anotar recado.",
+     "p": [
+      "Atenda formalmente: Pronto, ufficio vendite, sono Laura. In cosa posso esserLe utile?",
+      "Transferir ou aguardar: Le passo il collega, resti in linea un attimo, la linea è occupata.",
+      "Recados: Vuole lasciare un messaggio? Richiamo più tardi. Può ripetere il numero?"
+     ],
+     "q": "Como você costuma atender o telefone, no trabalho ou em casa?",
+     "c": "Escreva um diálogo curto: alguém procura o doutor Verdi, que saiu, e deixa um recado."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Le passo il collega",
+      "ex": "Un momento, Le passo il collega dell'amministrazione."
+     },
+     {
+      "w": "resti in linea",
+      "ex": "Resti in linea, per favore, verifico subito."
+     },
+     {
+      "w": "richiamare",
+      "ex": "Richiamo più tardi, grazie."
+     },
+     {
+      "w": "lasciare un messaggio",
+      "ex": "Posso lasciare un messaggio per la dottoressa Gallo?"
+     },
+     {
+      "w": "la linea è occupata",
+      "ex": "Mi dispiace, la linea è occupata."
+     },
+     {
+      "w": "il numero interno",
+      "ex": "Il mio numero interno è il 214."
+     }
+    ],
+    "gram": "Al telefono: imperativo formale (resti, attenda, richiami) e pronomi con Lei: Le passo, La richiamo."
+   }
+  },
+  {
+   "d": 245,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Presentations in Italian",
+     "g": "Open, structure and close a short presentation with clear signposts.",
+     "p": [
+      "Opening: Buongiorno a tutti, oggi vi parlerò di... La presentazione si divide in tre parti.",
+      "Moving on: innanzitutto, passiamo ora a, come vedete in questa slide, per quanto riguarda.",
+      "Closing: per concludere, in sintesi, grazie per l'attenzione, ci sono domande?"
+     ],
+     "q": "If you gave a five-minute talk in Italian, what topic would you choose?",
+     "c": "Write the opening and closing lines of a short presentation about your hobby."
+    },
+    "de": {
+     "t": "Präsentationen auf Italienisch",
+     "g": "Du eröffnest, gliederst und beendest eine kurze Präsentation mit klaren Signalen.",
+     "p": [
+      "Einstieg: Buongiorno a tutti, oggi vi parlerò di... La presentazione si divide in tre parti.",
+      "Überleitungen: innanzitutto, passiamo ora a, come vedete in questa slide, per quanto riguarda.",
+      "Schluss: per concludere, in sintesi, grazie per l'attenzione, ci sono domande?"
+     ],
+     "q": "Über welches Thema würdest du einen fünfminütigen Vortrag auf Italienisch halten?",
+     "c": "Schreib Einstieg und Schluss einer kurzen Präsentation über dein Hobby."
+    },
+    "es": {
+     "t": "Presentaciones en italiano",
+     "g": "Abrir, estructurar y cerrar una presentación breve con conectores claros.",
+     "p": [
+      "Inicio: Buongiorno a tutti, oggi vi parlerò di... La presentazione si divide in tre parti.",
+      "Transiciones: innanzitutto, passiamo ora a, come vedete in questa slide, per quanto riguarda.",
+      "Cierre: per concludere, in sintesi, grazie per l'attenzione, ci sono domande?"
+     ],
+     "q": "Si dieras una charla de cinco minutos en italiano, ¿qué tema elegirías?",
+     "c": "Escribe la apertura y el cierre de una breve presentación sobre tu afición."
+    },
+    "fr": {
+     "t": "Présenter en italien",
+     "g": "Ouvrir, structurer et conclure une courte présentation avec des repères clairs.",
+     "p": [
+      "Ouverture : Buongiorno a tutti, oggi vi parlerò di... La presentazione si divide in tre parti.",
+      "Transitions : innanzitutto, passiamo ora a, come vedete in questa slide, per quanto riguarda.",
+      "Conclusion : per concludere, in sintesi, grazie per l'attenzione, ci sono domande?"
+     ],
+     "q": "Si tu faisais un exposé de cinq minutes en italien, quel sujet choisirais-tu ?",
+     "c": "Écris l'ouverture et la conclusion d'une courte présentation sur ton loisir."
+    },
+    "it": {
+     "t": "Presentazioni in italiano",
+     "g": "Aprire, strutturare e chiudere una breve presentazione con segnali chiari.",
+     "p": [
+      "Apertura: Buongiorno a tutti, oggi vi parlerò di... La presentazione si divide in tre parti.",
+      "Passaggi: innanzitutto, passiamo ora a, come vedete in questa slide, per quanto riguarda.",
+      "Chiusura: per concludere, in sintesi, grazie per l'attenzione, ci sono domande?"
+     ],
+     "q": "Se dovessi fare un intervento di cinque minuti in italiano, che argomento sceglieresti?",
+     "c": "Scrivi l'apertura e la chiusura di una breve presentazione sul tuo hobby."
+    },
+    "pt": {
+     "t": "Apresentações em italiano",
+     "g": "Abrir, estruturar e fechar uma apresentação curta com marcadores claros.",
+     "p": [
+      "Abertura: Buongiorno a tutti, oggi vi parlerò di... La presentazione si divide in tre parti.",
+      "Transições: innanzitutto, passiamo ora a, come vedete in questa slide, per quanto riguarda.",
+      "Fecho: per concludere, in sintesi, grazie per l'attenzione, ci sono domande?"
+     ],
+     "q": "Se fizesses uma apresentação de cinco minutos em italiano, que tema escolherias?",
+     "c": "Escreve a abertura e o fecho de uma apresentação curta sobre o teu passatempo."
+    },
+    "pt_BR": {
+     "t": "Apresentações em italiano",
+     "g": "Abrir, estruturar e fechar uma apresentação curta com marcadores claros.",
+     "p": [
+      "Abertura: Buongiorno a tutti, oggi vi parlerò di... La presentazione si divide in tre parti.",
+      "Transições: innanzitutto, passiamo ora a, come vedete in questa slide, per quanto riguarda.",
+      "Fechamento: per concludere, in sintesi, grazie per l'attenzione, ci sono domande?"
+     ],
+     "q": "Se você fizesse uma apresentação de cinco minutos em italiano, que tema escolheria?",
+     "c": "Escreva a abertura e o fechamento de uma apresentação curta sobre seu hobby."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "innanzitutto",
+      "ex": "Innanzitutto vorrei ringraziarvi per essere qui."
+     },
+     {
+      "w": "passiamo ora a",
+      "ex": "Passiamo ora alla seconda parte."
+     },
+     {
+      "w": "per quanto riguarda",
+      "ex": "Per quanto riguarda i costi, sono stabili."
+     },
+     {
+      "w": "come vedete",
+      "ex": "Come vedete nel grafico, le vendite crescono."
+     },
+     {
+      "w": "per concludere",
+      "ex": "Per concludere, riassumo i punti principali."
+     },
+     {
+      "w": "grazie per l'attenzione",
+      "ex": "Grazie per l'attenzione, ci sono domande?"
+     }
+    ],
+    "gram": "Presentazione: futuro per annunciare (vi parlerò, vedremo) e connettivi testuali per guidare chi ascolta."
+   }
+  },
+  {
+   "d": 246,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Negotiating and compromising",
+     "g": "Propose, counter-propose and reach an agreement politely in Italian.",
+     "p": [
+      "Propose: Che ne dice di...? Potremmo fissare la consegna per lunedì. Le propongo uno sconto.",
+      "Counter: Capisco, però... Sarebbe possibile invece...? Non posso accettare, ma potrei...",
+      "Agree: Va bene, d'accordo. Allora siamo d'accordo così. Mi sembra un buon compromesso."
+     ],
+     "q": "When did you last have to find a compromise with someone? How did it go?",
+     "c": "Write a four-line negotiation with a landlord about the date you move in."
+    },
+    "de": {
+     "t": "Verhandeln und Kompromisse finden",
+     "g": "Du schlägst vor, machst Gegenangebote und einigst dich höflich auf Italienisch.",
+     "p": [
+      "Vorschlagen: Che ne dice di...? Potremmo fissare la consegna per lunedì. Le propongo uno sconto.",
+      "Gegenangebot: Capisco, però... Sarebbe possibile invece...? Non posso accettare, ma potrei...",
+      "Einigen: Va bene, d'accordo. Allora siamo d'accordo così. Mi sembra un buon compromesso."
+     ],
+     "q": "Wann musstest du zuletzt mit jemandem einen Kompromiss finden? Wie lief es?",
+     "c": "Schreib eine vierzeilige Verhandlung mit einem Vermieter über den Einzugstermin."
+    },
+    "es": {
+     "t": "Negociar y llegar a acuerdos",
+     "g": "Proponer, contraproponer y llegar a un acuerdo con cortesía en italiano.",
+     "p": [
+      "Proponer: Che ne dice di...? Potremmo fissare la consegna per lunedì. Le propongo uno sconto.",
+      "Contraproponer: Capisco, però... Sarebbe possibile invece...? Non posso accettare, ma potrei...",
+      "Acordar: Va bene, d'accordo. Allora siamo d'accordo così. Mi sembra un buon compromesso."
+     ],
+     "q": "¿Cuándo tuviste que llegar a un acuerdo con alguien por última vez? ¿Qué tal fue?",
+     "c": "Escribe una negociación de cuatro líneas con un casero sobre la fecha de entrada."
+    },
+    "fr": {
+     "t": "Négocier et trouver un compromis",
+     "g": "Proposer, contre-proposer et trouver un accord poliment en italien.",
+     "p": [
+      "Proposer : Che ne dice di...? Potremmo fissare la consegna per lunedì. Le propongo uno sconto.",
+      "Contre-proposer : Capisco, però... Sarebbe possibile invece...? Non posso accettare, ma potrei...",
+      "Conclure : Va bene, d'accordo. Allora siamo d'accordo così. Mi sembra un buon compromesso."
+     ],
+     "q": "Quand as-tu dû trouver un compromis avec quelqu'un pour la dernière fois ? Comment ça s'est passé ?",
+     "c": "Écris une négociation de quatre lignes avec un propriétaire sur la date d'emménagement."
+    },
+    "it": {
+     "t": "Negoziare e trovare un compromesso",
+     "g": "Proporre, controproporre e arrivare a un accordo in modo cortese.",
+     "p": [
+      "Proporre: Che ne dice di...? Potremmo fissare la consegna per lunedì. Le propongo uno sconto.",
+      "Controproporre: Capisco, però... Sarebbe possibile invece...? Non posso accettare, ma potrei...",
+      "Accordarsi: Va bene, d'accordo. Allora siamo d'accordo così. Mi sembra un buon compromesso."
+     ],
+     "q": "Quando hai dovuto trovare un compromesso con qualcuno l'ultima volta? Com'è andata?",
+     "c": "Scrivi una trattativa di quattro righe con un padrone di casa sulla data di trasloco."
+    },
+    "pt": {
+     "t": "Negociar e chegar a acordo",
+     "g": "Propor, contrapropor e chegar a um acordo com delicadeza em italiano.",
+     "p": [
+      "Propor: Che ne dice di...? Potremmo fissare la consegna per lunedì. Le propongo uno sconto.",
+      "Contrapropor: Capisco, però... Sarebbe possibile invece...? Non posso accettare, ma potrei...",
+      "Concordar: Va bene, d'accordo. Allora siamo d'accordo così. Mi sembra un buon compromesso."
+     ],
+     "q": "Quando foi a última vez que tiveste de chegar a um compromisso com alguém? Como correu?",
+     "c": "Escreve uma negociação de quatro linhas com um senhorio sobre a data de mudança."
+    },
+    "pt_BR": {
+     "t": "Negociar e chegar a um acordo",
+     "g": "Propor, contrapropor e chegar a um acordo com educação em italiano.",
+     "p": [
+      "Propor: Che ne dice di...? Potremmo fissare la consegna per lunedì. Le propongo uno sconto.",
+      "Contrapropor: Capisco, però... Sarebbe possibile invece...? Non posso accettare, ma potrei...",
+      "Concordar: Va bene, d'accordo. Allora siamo d'accordo così. Mi sembra un buon compromesso."
+     ],
+     "q": "Quando foi a última vez que você precisou chegar a um acordo com alguém? Como foi?",
+     "c": "Escreva uma negociação de quatro linhas com um proprietário sobre a data da mudança."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "proporre",
+      "ex": "Le propongo di dividere le spese a metà."
+     },
+     {
+      "w": "che ne dice di",
+      "ex": "Che ne dice di spostare la riunione a giovedì?"
+     },
+     {
+      "w": "venire incontro",
+      "ex": "Possiamo venirLe incontro con uno sconto."
+     },
+     {
+      "w": "il compromesso",
+      "ex": "Alla fine abbiamo trovato un buon compromesso."
+     },
+     {
+      "w": "accettare",
+      "ex": "Non posso accettare queste condizioni."
+     },
+     {
+      "w": "siamo d'accordo",
+      "ex": "Allora siamo d'accordo: consegna entro lunedì."
+     }
+    ],
+    "gram": "Negoziare: condizionale per ammorbidire (potremmo, sarebbe possibile) e però / invece per controproporre."
+   }
+  },
+  {
+   "d": 247,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Customer service phrases",
+     "g": "Help a customer politely with the key phrases of Italian customer service.",
+     "p": [
+      "Greet and offer help: Buongiorno, in cosa posso esserLe utile? Mi dica pure.",
+      "Check and explain: Mi lasci verificare, un attimo che controllo, purtroppo non è disponibile.",
+      "Solve and close: Le posso proporre..., mi scuso per il disagio, c'è altro che posso fare per Lei?"
+     ],
+     "q": "Have you ever worked with customers? What makes good service for you?",
+     "c": "Write a short dialogue: a customer wants to change a shirt size and you help with three phrases."
+    },
+    "de": {
+     "t": "Sätze für den Kundenservice",
+     "g": "Du hilfst Kunden höflich mit den wichtigsten Wendungen des italienischen Kundenservice.",
+     "p": [
+      "Begrüßen und helfen: Buongiorno, in cosa posso esserLe utile? Mi dica pure.",
+      "Prüfen und erklären: Mi lasci verificare, un attimo che controllo, purtroppo non è disponibile.",
+      "Lösen und abschließen: Le posso proporre..., mi scuso per il disagio, c'è altro che posso fare per Lei?"
+     ],
+     "q": "Hast du schon mit Kunden gearbeitet? Was ist für dich guter Service?",
+     "c": "Schreib einen kurzen Dialog: Ein Kunde will ein Hemd umtauschen, du hilfst mit drei Wendungen."
+    },
+    "es": {
+     "t": "Frases de atención al cliente",
+     "g": "Atender a un cliente con amabilidad con las frases clave del servicio en italiano.",
+     "p": [
+      "Saludar y ofrecer ayuda: Buongiorno, in cosa posso esserLe utile? Mi dica pure.",
+      "Comprobar y explicar: Mi lasci verificare, un attimo che controllo, purtroppo non è disponibile.",
+      "Resolver y cerrar: Le posso proporre..., mi scuso per il disagio, c'è altro che posso fare per Lei?"
+     ],
+     "q": "¿Has trabajado alguna vez de cara al público? ¿Qué es para ti un buen servicio?",
+     "c": "Escribe un diálogo breve: un cliente quiere cambiar la talla de una camisa y lo ayudas con tres frases."
+    },
+    "fr": {
+     "t": "Phrases du service client",
+     "g": "Aider un client poliment avec les phrases clés du service client italien.",
+     "p": [
+      "Accueillir : Buongiorno, in cosa posso esserLe utile? Mi dica pure.",
+      "Vérifier et expliquer : Mi lasci verificare, un attimo che controllo, purtroppo non è disponibile.",
+      "Résoudre et conclure : Le posso proporre..., mi scuso per il disagio, c'è altro che posso fare per Lei?"
+     ],
+     "q": "As-tu déjà travaillé avec des clients ? Qu'est-ce qu'un bon service pour toi ?",
+     "c": "Écris un court dialogue : un client veut changer la taille d'une chemise, aide-le avec trois phrases."
+    },
+    "it": {
+     "t": "Frasi per il servizio clienti",
+     "g": "Aiutare un cliente con cortesia usando le frasi chiave del servizio clienti.",
+     "p": [
+      "Accogliere: Buongiorno, in cosa posso esserLe utile? Mi dica pure.",
+      "Verificare e spiegare: Mi lasci verificare, un attimo che controllo, purtroppo non è disponibile.",
+      "Risolvere e chiudere: Le posso proporre..., mi scuso per il disagio, c'è altro che posso fare per Lei?"
+     ],
+     "q": "Hai mai lavorato a contatto con i clienti? Che cos'è per te un buon servizio?",
+     "c": "Scrivi un breve dialogo: un cliente vuole cambiare la taglia di una camicia e tu lo aiuti con tre frasi."
+    },
+    "pt": {
+     "t": "Frases de apoio ao cliente",
+     "g": "Ajudar um cliente com cortesia usando as frases-chave do atendimento em italiano.",
+     "p": [
+      "Receber: Buongiorno, in cosa posso esserLe utile? Mi dica pure.",
+      "Verificar e explicar: Mi lasci verificare, un attimo che controllo, purtroppo non è disponibile.",
+      "Resolver e fechar: Le posso proporre..., mi scuso per il disagio, c'è altro che posso fare per Lei?"
+     ],
+     "q": "Já trabalhaste com clientes? O que é para ti um bom atendimento?",
+     "c": "Escreve um diálogo curto: um cliente quer trocar o tamanho de uma camisa e ajudas com três frases."
+    },
+    "pt_BR": {
+     "t": "Frases de atendimento ao cliente",
+     "g": "Ajudar um cliente com educação usando as frases-chave do atendimento em italiano.",
+     "p": [
+      "Receber: Buongiorno, in cosa posso esserLe utile? Mi dica pure.",
+      "Verificar e explicar: Mi lasci verificare, un attimo che controllo, purtroppo non è disponibile.",
+      "Resolver e fechar: Le posso proporre..., mi scuso per il disagio, c'è altro che posso fare per Lei?"
+     ],
+     "q": "Você já trabalhou com clientes? O que é um bom atendimento para você?",
+     "c": "Escreva um diálogo curto: um cliente quer trocar o tamanho de uma camisa e você ajuda com três frases."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "in cosa posso esserLe utile",
+      "ex": "Buongiorno, in cosa posso esserLe utile?"
+     },
+     {
+      "w": "mi lasci verificare",
+      "ex": "Mi lasci verificare se è arrivato il pacco."
+     },
+     {
+      "w": "disponibile",
+      "ex": "Purtroppo questo modello non è più disponibile."
+     },
+     {
+      "w": "il disagio",
+      "ex": "Ci scusiamo per il disagio."
+     },
+     {
+      "w": "lo scontrino",
+      "ex": "Ha ancora lo scontrino per il cambio?"
+     },
+     {
+      "w": "c'è altro",
+      "ex": "C'è altro che posso fare per Lei?"
+     }
+    ],
+    "gram": "Servizio clienti: imperativo formale con pronomi (mi dica, mi lasci, si accomodi) ed esserLe utile."
+   }
+  },
+  {
+   "d": 248,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Numbers, statistics and trends",
+     "g": "Describe charts and trends with aumentare, diminuire, la metà and per cento.",
+     "p": [
+      "Movement verbs: aumentare, crescere, diminuire, calare, rimanere stabile, raggiungere il picco.",
+      "Quantities: la metà, un terzo, il doppio, il triplo, il 40 per cento, quasi, circa, più di.",
+      "Describe change: le vendite sono aumentate del 10 per cento rispetto all'anno precedente."
+     ],
+     "q": "Which number or statistic about your country or city surprises people most?",
+     "c": "Describe an imaginary chart in three sentences: one rise, one fall and one stable value."
+    },
+    "de": {
+     "t": "Zahlen, Statistiken und Trends",
+     "g": "Du beschreibst Diagramme mit aumentare, diminuire, la metà und per cento.",
+     "p": [
+      "Bewegungsverben: aumentare, crescere, diminuire, calare, rimanere stabile, raggiungere il picco.",
+      "Mengen: la metà, un terzo, il doppio, il triplo, il 40 per cento, quasi, circa, più di.",
+      "Veränderung: le vendite sono aumentate del 10 per cento rispetto all'anno precedente."
+     ],
+     "q": "Welche Zahl über dein Land oder deine Stadt überrascht die Leute am meisten?",
+     "c": "Beschreibe ein erfundenes Diagramm in drei Sätzen: ein Anstieg, ein Rückgang, ein stabiler Wert."
+    },
+    "es": {
+     "t": "Números, estadísticas y tendencias",
+     "g": "Describir gráficos y tendencias con aumentare, diminuire, la metà y per cento.",
+     "p": [
+      "Verbos de movimiento: aumentare, crescere, diminuire, calare, rimanere stabile, raggiungere il picco.",
+      "Cantidades: la metà, un terzo, il doppio, il triplo, il 40 per cento, quasi, circa, più di.",
+      "Describe cambios: le vendite sono aumentate del 10 per cento rispetto all'anno precedente."
+     ],
+     "q": "¿Qué número o dato sobre tu país o ciudad sorprende más a la gente?",
+     "c": "Describe un gráfico inventado en tres frases: una subida, una bajada y un valor estable."
+    },
+    "fr": {
+     "t": "Chiffres, statistiques et tendances",
+     "g": "Décrire graphiques et tendances avec aumentare, diminuire, la metà et per cento.",
+     "p": [
+      "Verbes de mouvement : aumentare, crescere, diminuire, calare, rimanere stabile, raggiungere il picco.",
+      "Quantités : la metà, un terzo, il doppio, il triplo, il 40 per cento, quasi, circa, più di.",
+      "Décrire un changement : le vendite sono aumentate del 10 per cento rispetto all'anno precedente."
+     ],
+     "q": "Quel chiffre sur ton pays ou ta ville surprend le plus les gens ?",
+     "c": "Décris un graphique imaginaire en trois phrases : une hausse, une baisse et une valeur stable."
+    },
+    "it": {
+     "t": "Numeri, statistiche e tendenze",
+     "g": "Descrivere grafici e tendenze con aumentare, diminuire, la metà e per cento.",
+     "p": [
+      "Verbi di movimento: aumentare, crescere, diminuire, calare, rimanere stabile, raggiungere il picco.",
+      "Quantità: la metà, un terzo, il doppio, il triplo, il 40 per cento, quasi, circa, più di.",
+      "Descrivere un cambiamento: le vendite sono aumentate del 10 per cento rispetto all'anno precedente."
+     ],
+     "q": "Quale numero o dato sul tuo paese o sulla tua città sorprende di più la gente?",
+     "c": "Descrivi un grafico inventato in tre frasi: un aumento, un calo e un valore stabile."
+    },
+    "pt": {
+     "t": "Números, estatísticas e tendências",
+     "g": "Descrever gráficos e tendências com aumentare, diminuire, la metà e per cento.",
+     "p": [
+      "Verbos de movimento: aumentare, crescere, diminuire, calare, rimanere stabile, raggiungere il picco.",
+      "Quantidades: la metà, un terzo, il doppio, il triplo, il 40 per cento, quasi, circa, più di.",
+      "Descrever mudanças: le vendite sono aumentate del 10 per cento rispetto all'anno precedente."
+     ],
+     "q": "Que número ou dado sobre o teu país ou cidade surpreende mais as pessoas?",
+     "c": "Descreve um gráfico inventado em três frases: uma subida, uma descida e um valor estável."
+    },
+    "pt_BR": {
+     "t": "Números, estatísticas e tendências",
+     "g": "Descrever gráficos e tendências com aumentare, diminuire, la metà e per cento.",
+     "p": [
+      "Verbos de movimento: aumentare, crescere, diminuire, calare, rimanere stabile, raggiungere il picco.",
+      "Quantidades: la metà, un terzo, il doppio, il triplo, il 40 per cento, quasi, circa, più di.",
+      "Descrever mudanças: le vendite sono aumentate del 10 per cento rispetto all'anno precedente."
+     ],
+     "q": "Que número ou dado sobre seu país ou cidade mais surpreende as pessoas?",
+     "c": "Descreva um gráfico inventado em três frases: uma alta, uma queda e um valor estável."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "aumentare",
+      "ex": "Il numero di turisti è aumentato molto."
+     },
+     {
+      "w": "diminuire",
+      "ex": "Le spese sono diminuite del 5 per cento."
+     },
+     {
+      "w": "la metà",
+      "ex": "La metà degli studenti viene in bicicletta."
+     },
+     {
+      "w": "il doppio",
+      "ex": "Quest'anno abbiamo il doppio dei clienti."
+     },
+     {
+      "w": "per cento",
+      "ex": "Il 70 per cento delle persone preferisce il treno."
+     },
+     {
+      "w": "rimanere stabile",
+      "ex": "Il prezzo è rimasto stabile per mesi."
+     }
+    ],
+    "gram": "Variazioni: aumentare/diminuire di + percentuale; ausiliare essere (sono aumentate) quando il verbo è intransitivo."
+   }
+  },
+  {
+   "d": 249,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Bureaucracy vocabulary",
+     "g": "Handle Italian paperwork with words like il modulo, la ricevuta and la fila.",
+     "p": [
+      "Documents: il documento d'identità, il codice fiscale, il permesso, il certificato, la ricevuta.",
+      "At the office: fare la fila, prendere il numero, lo sportello, compilare il modulo, la firma.",
+      "Ask clearly: Quali documenti servono? Dove devo firmare? Entro quando devo consegnarlo?"
+     ],
+     "q": "What paperwork do you find most annoying, and how do you deal with it?",
+     "c": "Write three questions you would ask at an Italian office counter to register for a course."
+    },
+    "de": {
+     "t": "Wortschatz für Behördengänge",
+     "g": "Du erledigst italienischen Papierkram mit Wörtern wie il modulo, la ricevuta und la fila.",
+     "p": [
+      "Dokumente: il documento d'identità, il codice fiscale, il permesso, il certificato, la ricevuta.",
+      "Im Amt: fare la fila, prendere il numero, lo sportello, compilare il modulo, la firma.",
+      "Klar fragen: Quali documenti servono? Dove devo firmare? Entro quando devo consegnarlo?"
+     ],
+     "q": "Welcher Papierkram nervt dich am meisten, und wie gehst du damit um?",
+     "c": "Schreib drei Fragen, die du an einem italienischen Schalter stellen würdest, um dich für einen Kurs anzumelden."
+    },
+    "es": {
+     "t": "Vocabulario de trámites",
+     "g": "Hacer trámites en Italia con palabras como il modulo, la ricevuta y la fila.",
+     "p": [
+      "Documentos: il documento d'identità, il codice fiscale, il permesso, il certificato, la ricevuta.",
+      "En la oficina: fare la fila, prendere il numero, lo sportello, compilare il modulo, la firma.",
+      "Pregunta claro: Quali documenti servono? Dove devo firmare? Entro quando devo consegnarlo?"
+     ],
+     "q": "¿Qué trámite te resulta más pesado y cómo lo llevas?",
+     "c": "Escribe tres preguntas que harías en una ventanilla italiana para inscribirte en un curso."
+    },
+    "fr": {
+     "t": "Le vocabulaire administratif",
+     "g": "Gérer la paperasse italienne avec il modulo, la ricevuta et la fila.",
+     "p": [
+      "Documents : il documento d'identità, il codice fiscale, il permesso, il certificato, la ricevuta.",
+      "Au guichet : fare la fila, prendere il numero, lo sportello, compilare il modulo, la firma.",
+      "Demande clairement : Quali documenti servono? Dove devo firmare? Entro quando devo consegnarlo?"
+     ],
+     "q": "Quelle démarche administrative trouves-tu la plus pénible, et comment t'y prends-tu ?",
+     "c": "Écris trois questions à poser à un guichet italien pour t'inscrire à un cours."
+    },
+    "it": {
+     "t": "Il lessico della burocrazia",
+     "g": "Affrontare le pratiche con parole come il modulo, la ricevuta e la fila.",
+     "p": [
+      "Documenti: il documento d'identità, il codice fiscale, il permesso, il certificato, la ricevuta.",
+      "In ufficio: fare la fila, prendere il numero, lo sportello, compilare il modulo, la firma.",
+      "Chiedi con chiarezza: Quali documenti servono? Dove devo firmare? Entro quando devo consegnarlo?"
+     ],
+     "q": "Quale pratica burocratica trovi più noiosa, e come la affronti?",
+     "c": "Scrivi tre domande da fare allo sportello per iscriverti a un corso."
+    },
+    "pt": {
+     "t": "Vocabulário da burocracia",
+     "g": "Tratar de papelada em Itália com palavras como il modulo, la ricevuta e la fila.",
+     "p": [
+      "Documentos: il documento d'identità, il codice fiscale, il permesso, il certificato, la ricevuta.",
+      "No balcão: fare la fila, prendere il numero, lo sportello, compilare il modulo, la firma.",
+      "Pergunta com clareza: Quali documenti servono? Dove devo firmare? Entro quando devo consegnarlo?"
+     ],
+     "q": "Que papelada achas mais aborrecida, e como lidas com ela?",
+     "c": "Escreve três perguntas que farias num balcão italiano para te inscreveres num curso."
+    },
+    "pt_BR": {
+     "t": "Vocabulário de burocracia",
+     "g": "Resolver papelada na Itália com palavras como il modulo, la ricevuta e la fila.",
+     "p": [
+      "Documentos: il documento d'identità, il codice fiscale, il permesso, il certificato, la ricevuta.",
+      "No guichê: fare la fila, prendere il numero, lo sportello, compilare il modulo, la firma.",
+      "Pergunte com clareza: Quali documenti servono? Dove devo firmare? Entro quando devo consegnarlo?"
+     ],
+     "q": "Qual burocracia você acha mais chata, e como lida com ela?",
+     "c": "Escreva três perguntas que você faria num guichê italiano para se inscrever num curso."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il modulo",
+      "ex": "Deve compilare questo modulo in stampatello."
+     },
+     {
+      "w": "la ricevuta",
+      "ex": "Conservi la ricevuta del pagamento."
+     },
+     {
+      "w": "fare la fila",
+      "ex": "Abbiamo fatto la fila per mezz'ora."
+     },
+     {
+      "w": "lo sportello",
+      "ex": "Si rivolga allo sportello numero tre."
+     },
+     {
+      "w": "il documento d'identità",
+      "ex": "Mi serve una copia del documento d'identità."
+     },
+     {
+      "w": "la firma",
+      "ex": "Manca la firma in fondo alla pagina."
+     }
+    ],
+    "gram": "Burocrazia: servire (Quali documenti servono?) e dovere + infinito; si impersonale: si compila, si firma."
+   }
+  },
+  {
+   "d": 250,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Renting a car and road travel",
+     "g": "Rent a car and understand insurance basics and Italian road signs.",
+     "p": [
+      "At the desk: noleggiare un'auto, il contratto, la patente, il deposito, il chilometraggio illimitato.",
+      "Insurance and fuel: l'assicurazione, la franchigia, il pieno, benzina o gasolio, restituire con il pieno.",
+      "On the road: l'autostrada, il casello, la ZTL, il divieto di sosta, la rotonda, il parcheggio."
+     ],
+     "q": "Would you rather explore Italy by car or by train? Why?",
+     "c": "Write a short dialogue at a car rental desk with three questions about the contract."
+    },
+    "de": {
+     "t": "Auto mieten und unterwegs",
+     "g": "Du mietest ein Auto und verstehst Versicherung und italienische Verkehrsschilder.",
+     "p": [
+      "Am Schalter: noleggiare un'auto, il contratto, la patente, il deposito, il chilometraggio illimitato.",
+      "Versicherung und Tank: l'assicurazione, la franchigia, il pieno, benzina o gasolio, restituire con il pieno.",
+      "Unterwegs: l'autostrada, il casello, la ZTL, il divieto di sosta, la rotonda, il parcheggio."
+     ],
+     "q": "Würdest du Italien lieber mit dem Auto oder mit dem Zug erkunden? Warum?",
+     "c": "Schreib einen kurzen Dialog am Mietwagenschalter mit drei Fragen zum Vertrag."
+    },
+    "es": {
+     "t": "Alquilar un coche y viajar por carretera",
+     "g": "Alquilar un coche y entender el seguro y las señales de tráfico italianas.",
+     "p": [
+      "En el mostrador: noleggiare un'auto, il contratto, la patente, il deposito, il chilometraggio illimitato.",
+      "Seguro y combustible: l'assicurazione, la franchigia, il pieno, benzina o gasolio, restituire con il pieno.",
+      "En la carretera: l'autostrada, il casello, la ZTL, il divieto di sosta, la rotonda, il parcheggio."
+     ],
+     "q": "¿Prefieres recorrer Italia en coche o en tren? ¿Por qué?",
+     "c": "Escribe un diálogo breve en una oficina de alquiler con tres preguntas sobre el contrato."
+    },
+    "fr": {
+     "t": "Louer une voiture et prendre la route",
+     "g": "Louer une voiture, comprendre l'assurance et les panneaux routiers italiens.",
+     "p": [
+      "Au comptoir : noleggiare un'auto, il contratto, la patente, il deposito, il chilometraggio illimitato.",
+      "Assurance et carburant : l'assicurazione, la franchigia, il pieno, benzina o gasolio, restituire con il pieno.",
+      "Sur la route : l'autostrada, il casello, la ZTL, il divieto di sosta, la rotonda, il parcheggio."
+     ],
+     "q": "Préférerais-tu explorer l'Italie en voiture ou en train ? Pourquoi ?",
+     "c": "Écris un court dialogue au comptoir de location avec trois questions sur le contrat."
+    },
+    "it": {
+     "t": "Noleggiare un'auto e viaggiare in strada",
+     "g": "Noleggiare un'auto e capire assicurazione e segnali stradali.",
+     "p": [
+      "Al banco: noleggiare un'auto, il contratto, la patente, il deposito, il chilometraggio illimitato.",
+      "Assicurazione e carburante: l'assicurazione, la franchigia, il pieno, benzina o gasolio, restituire con il pieno.",
+      "Per strada: l'autostrada, il casello, la ZTL, il divieto di sosta, la rotonda, il parcheggio."
+     ],
+     "q": "Preferiresti esplorare l'Italia in macchina o in treno? Perché?",
+     "c": "Scrivi un breve dialogo al banco del noleggio con tre domande sul contratto."
+    },
+    "pt": {
+     "t": "Alugar um carro e viajar de carro",
+     "g": "Alugar um carro e perceber o seguro e os sinais de trânsito italianos.",
+     "p": [
+      "No balcão: noleggiare un'auto, il contratto, la patente, il deposito, il chilometraggio illimitato.",
+      "Seguro e combustível: l'assicurazione, la franchigia, il pieno, benzina o gasolio, restituire con il pieno.",
+      "Na estrada: l'autostrada, il casello, la ZTL, il divieto di sosta, la rotonda, il parcheggio."
+     ],
+     "q": "Preferias explorar Itália de carro ou de comboio? Porquê?",
+     "c": "Escreve um diálogo curto num balcão de aluguer com três perguntas sobre o contrato."
+    },
+    "pt_BR": {
+     "t": "Alugar um carro e viajar de carro",
+     "g": "Alugar um carro e entender o seguro e as placas de trânsito italianas.",
+     "p": [
+      "No balcão: noleggiare un'auto, il contratto, la patente, il deposito, il chilometraggio illimitato.",
+      "Seguro e combustível: l'assicurazione, la franchigia, il pieno, benzina o gasolio, restituire con il pieno.",
+      "Na estrada: l'autostrada, il casello, la ZTL, il divieto di sosta, la rotonda, il parcheggio."
+     ],
+     "q": "Você preferiria conhecer a Itália de carro ou de trem? Por quê?",
+     "c": "Escreva um diálogo curto num balcão de aluguel com três perguntas sobre o contrato."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "noleggiare",
+      "ex": "Vorremmo noleggiare un'auto per una settimana."
+     },
+     {
+      "w": "la patente",
+      "ex": "Posso vedere la Sua patente, per favore?"
+     },
+     {
+      "w": "l'assicurazione",
+      "ex": "L'assicurazione è inclusa nel prezzo?"
+     },
+     {
+      "w": "fare il pieno",
+      "ex": "Dobbiamo fare il pieno prima di restituirla."
+     },
+     {
+      "w": "il casello",
+      "ex": "Al casello si paga il pedaggio."
+     },
+     {
+      "w": "la ZTL",
+      "ex": "Attenzione, in centro c'è la ZTL."
+     }
+    ],
+    "gram": "Al noleggio: è incluso/a? bisogna + infinito; pronomi diretti con il passato: l'ho restituita con il pieno."
+   }
+  }
+ ]
+}

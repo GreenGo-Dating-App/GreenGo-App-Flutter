@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 251,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Lassen",
+     "g": "Say you have something done by someone else: Ich lasse mein Auto reparieren.",
+     "p": [
+      "lassen + infinitive = have something done: Ich lasse mir die Haare schneiden (I get my hair cut). The infinitive goes to the end.",
+      "lassen also means allow or leave: Lass mich bitte schlafen! Ich lasse den Schlüssel zu Hause.",
+      "Perfekt with a double infinitive: Ich habe mein Auto reparieren lassen (not gelassen)."
+     ],
+     "q": "What do you do yourself, and what do you have done by others: cutting hair, repairing a bike, cleaning?",
+     "c": "Write five sentences about services you use with lassen, two of them in the Perfekt."
+    },
+    "de": {
+     "t": "Lassen",
+     "g": "Du sagst, dass jemand anders etwas für dich macht: Ich lasse mein Auto reparieren.",
+     "p": [
+      "lassen + Infinitiv = etwas machen lassen: Ich lasse mir die Haare schneiden. Der Infinitiv steht am Ende.",
+      "lassen heißt auch erlauben oder zurücklassen: Lass mich bitte schlafen! Ich lasse den Schlüssel zu Hause.",
+      "Perfekt mit doppeltem Infinitiv: Ich habe mein Auto reparieren lassen (nicht gelassen)."
+     ],
+     "q": "Was machst du selbst, und was lässt du machen: Haare schneiden, Fahrrad reparieren, putzen?",
+     "c": "Schreib fünf Sätze über Dienstleistungen mit lassen, zwei davon im Perfekt."
+    },
+    "es": {
+     "t": "Lassen",
+     "g": "Di que alguien hace algo por ti: Ich lasse mein Auto reparieren (llevo el coche a reparar).",
+     "p": [
+      "lassen + infinitivo = mandar hacer algo: Ich lasse mir die Haare schneiden (me corto el pelo en la peluquería). Infinitivo al final.",
+      "lassen también es permitir o dejar: Lass mich bitte schlafen! Ich lasse den Schlüssel zu Hause.",
+      "Perfekt con doble infinitivo: Ich habe mein Auto reparieren lassen (no gelassen)."
+     ],
+     "q": "¿Qué haces tú mismo y qué mandas hacer: cortarte el pelo, arreglar la bici, limpiar?",
+     "c": "Escribe cinco frases sobre servicios que usas con lassen, dos de ellas en Perfekt."
+    },
+    "fr": {
+     "t": "Lassen",
+     "g": "Dire qu'on fait faire quelque chose : Ich lasse mein Auto reparieren (je fais réparer ma voiture).",
+     "p": [
+      "lassen + infinitif = faire faire : Ich lasse mir die Haare schneiden (je me fais couper les cheveux). L'infinitif va à la fin.",
+      "lassen veut aussi dire laisser : Lass mich bitte schlafen ! Ich lasse den Schlüssel zu Hause.",
+      "Au Perfekt, double infinitif : Ich habe mein Auto reparieren lassen (pas gelassen)."
+     ],
+     "q": "Que fais-tu toi-même et que fais-tu faire : couper les cheveux, réparer le vélo, faire le ménage ?",
+     "c": "Écris cinq phrases sur des services que tu utilises avec lassen, dont deux au Perfekt."
+    },
+    "it": {
+     "t": "Lassen",
+     "g": "Di' che fai fare qualcosa a qualcuno: Ich lasse mein Auto reparieren (faccio riparare l'auto).",
+     "p": [
+      "lassen + infinito = far fare: Ich lasse mir die Haare schneiden (mi faccio tagliare i capelli). L'infinito va in fondo.",
+      "lassen significa anche lasciare: Lass mich bitte schlafen! Ich lasse den Schlüssel zu Hause.",
+      "Al Perfekt doppio infinito: Ich habe mein Auto reparieren lassen (non gelassen)."
+     ],
+     "q": "Cosa fai da solo e cosa fai fare: tagliare i capelli, riparare la bici, pulire casa?",
+     "c": "Scrivi cinque frasi sui servizi che usi con lassen, due al Perfekt."
+    },
+    "pt": {
+     "t": "Lassen",
+     "g": "Dizer que mandas fazer algo: Ich lasse mein Auto reparieren (mando arranjar o carro).",
+     "p": [
+      "lassen + infinitivo = mandar fazer: Ich lasse mir die Haare schneiden (vou cortar o cabelo). O infinitivo vai para o fim.",
+      "lassen também é deixar: Lass mich bitte schlafen! Ich lasse den Schlüssel zu Hause.",
+      "No Perfekt, duplo infinitivo: Ich habe mein Auto reparieren lassen (não gelassen)."
+     ],
+     "q": "O que fazes tu e o que mandas fazer: cortar o cabelo, arranjar a bicicleta, limpar a casa?",
+     "c": "Escreve cinco frases sobre serviços que usas com lassen, duas no Perfekt."
+    },
+    "pt_BR": {
+     "t": "Lassen",
+     "g": "Dizer que você manda fazer algo: Ich lasse mein Auto reparieren (mando consertar o carro).",
+     "p": [
+      "lassen + infinitivo = mandar fazer: Ich lasse mir die Haare schneiden (vou cortar o cabelo). O infinitivo vai para o fim.",
+      "lassen também é deixar: Lass mich bitte schlafen! Ich lasse den Schlüssel zu Hause.",
+      "No Perfekt, duplo infinitivo: Ich habe mein Auto reparieren lassen (não gelassen)."
+     ],
+     "q": "O que você faz sozinho e o que manda fazer: cortar o cabelo, consertar a bicicleta, limpar a casa?",
+     "c": "Escreva cinco frases sobre serviços que você usa com lassen, duas no Perfekt."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "reparieren lassen",
+      "ex": "Ich lasse mein Fahrrad in der Werkstatt reparieren."
+     },
+     {
+      "w": "sich die Haare schneiden lassen",
+      "ex": "Morgen lasse ich mir die Haare schneiden."
+     },
+     {
+      "w": "liefern lassen",
+      "ex": "Wir lassen uns das Sofa nach Hause liefern."
+     },
+     {
+      "w": "jemanden in Ruhe lassen",
+      "ex": "Lass mich bitte kurz in Ruhe!"
+     },
+     {
+      "w": "liegen lassen",
+      "ex": "Ich habe meinen Schirm im Bus liegen lassen."
+     },
+     {
+      "w": "Lass uns ...!",
+      "ex": "Lass uns heute Abend Pizza essen!"
+     }
+    ],
+    "gram": "lassen + Infinitiv (am Satzende); Perfekt: haben + Infinitiv + lassen (Ich habe es reparieren lassen)."
+   }
+  },
+  {
+   "d": 252,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Verbs of perception + infinitive",
+     "g": "Describe what you see and hear happening: Ich sehe ihn kommen, ich höre sie singen.",
+     "p": [
+      "sehen, hören and fühlen take an object plus a bare infinitive, no zu: Ich höre die Kinder lachen.",
+      "Perfekt usually uses a double infinitive: Ich habe ihn kommen sehen. In speech gesehen is also heard.",
+      "Similar: Ich spüre mein Herz klopfen. Also with lassen and bleiben: Er bleibt sitzen. Wir gehen schwimmen."
+     ],
+     "q": "Look out of the window: what do you see or hear people doing right now? Use sehen or hören + infinitive!",
+     "c": "Write six sentences about a street scene: three with sehen and three with hören + infinitive."
+    },
+    "de": {
+     "t": "Wahrnehmungsverben + Infinitiv",
+     "g": "Du beschreibst, was du sehen und hören kannst: Ich sehe ihn kommen, ich höre sie singen.",
+     "p": [
+      "sehen, hören und fühlen nehmen ein Objekt plus Infinitiv ohne zu: Ich höre die Kinder lachen.",
+      "Im Perfekt meist doppelter Infinitiv: Ich habe ihn kommen sehen. Mündlich hört man auch gesehen.",
+      "Ähnlich: Ich spüre mein Herz klopfen. Auch bleiben und gehen: Er bleibt sitzen. Wir gehen schwimmen."
+     ],
+     "q": "Schau aus dem Fenster: Was siehst oder hörst du die Leute gerade tun? Benutze sehen oder hören + Infinitiv!",
+     "c": "Schreib sechs Sätze über eine Straßenszene: drei mit sehen und drei mit hören + Infinitiv."
+    },
+    "es": {
+     "t": "Verbos de percepción + infinitivo",
+     "g": "Describe lo que ves y oyes: Ich sehe ihn kommen (lo veo venir), ich höre sie singen (la oigo cantar).",
+     "p": [
+      "sehen, hören y fühlen llevan objeto más infinitivo sin zu: Ich höre die Kinder lachen.",
+      "En Perfekt suele haber doble infinitivo: Ich habe ihn kommen sehen. Hablando, también se oye gesehen.",
+      "Parecido: Ich spüre mein Herz klopfen. También bleiben y gehen: Er bleibt sitzen. Wir gehen schwimmen."
+     ],
+     "q": "Mira por la ventana: ¿qué ves u oyes hacer a la gente ahora? ¡Usa sehen o hören + infinitivo!",
+     "c": "Escribe seis frases sobre una escena callejera: tres con sehen y tres con hören + infinitivo."
+    },
+    "fr": {
+     "t": "Verbes de perception + infinitif",
+     "g": "Décrire ce que tu vois et entends : Ich sehe ihn kommen (je le vois venir), ich höre sie singen.",
+     "p": [
+      "sehen, hören et fühlen prennent un objet + infinitif sans zu : Ich höre die Kinder lachen.",
+      "Au Perfekt, en général double infinitif : Ich habe ihn kommen sehen. À l'oral, on entend aussi gesehen.",
+      "Pareil : Ich spüre mein Herz klopfen. Aussi avec bleiben et gehen : Er bleibt sitzen. Wir gehen schwimmen."
+     ],
+     "q": "Regarde par la fenêtre : que vois-tu ou entends-tu les gens faire ? Utilise sehen ou hören + infinitif !",
+     "c": "Écris six phrases sur une scène de rue : trois avec sehen et trois avec hören + infinitif."
+    },
+    "it": {
+     "t": "Verbi di percezione + infinito",
+     "g": "Descrivi ciò che vedi e senti: Ich sehe ihn kommen (lo vedo arrivare), ich höre sie singen.",
+     "p": [
+      "sehen, hören e fühlen vogliono oggetto + infinito senza zu: Ich höre die Kinder lachen.",
+      "Al Perfekt di solito doppio infinito: Ich habe ihn kommen sehen. Nel parlato si sente anche gesehen.",
+      "Simile: Ich spüre mein Herz klopfen. Anche bleiben e gehen: Er bleibt sitzen. Wir gehen schwimmen."
+     ],
+     "q": "Guarda fuori dalla finestra: cosa vedi o senti fare alla gente? Usa sehen o hören + infinito!",
+     "c": "Scrivi sei frasi su una scena di strada: tre con sehen e tre con hören + infinito."
+    },
+    "pt": {
+     "t": "Verbos de perceção + infinitivo",
+     "g": "Descrever o que vês e ouves: Ich sehe ihn kommen (vejo-o chegar), ich höre sie singen.",
+     "p": [
+      "sehen, hören e fühlen levam objeto + infinitivo sem zu: Ich höre die Kinder lachen.",
+      "No Perfekt costuma haver duplo infinitivo: Ich habe ihn kommen sehen. Na oralidade ouve-se também gesehen.",
+      "Parecido: Ich spüre mein Herz klopfen. Também bleiben e gehen: Er bleibt sitzen. Wir gehen schwimmen."
+     ],
+     "q": "Olha pela janela: o que vês ou ouves as pessoas a fazer? Usa sehen ou hören + infinitivo!",
+     "c": "Escreve seis frases sobre uma cena de rua: três com sehen e três com hören + infinitivo."
+    },
+    "pt_BR": {
+     "t": "Verbos de percepção + infinitivo",
+     "g": "Descrever o que você vê e ouve: Ich sehe ihn kommen (vejo ele chegar), ich höre sie singen.",
+     "p": [
+      "sehen, hören e fühlen levam objeto + infinitivo sem zu: Ich höre die Kinder lachen.",
+      "No Perfekt costuma haver duplo infinitivo: Ich habe ihn kommen sehen. Falando, também se ouve gesehen.",
+      "Parecido: Ich spüre mein Herz klopfen. Também bleiben e gehen: Er bleibt sitzen. Wir gehen schwimmen."
+     ],
+     "q": "Olhe pela janela: o que você vê ou ouve as pessoas fazendo? Use sehen ou hören + infinitivo!",
+     "c": "Escreva seis frases sobre uma cena de rua: três com sehen e três com hören + infinitivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "jemanden kommen sehen",
+      "ex": "Ich sehe den Bus schon kommen."
+     },
+     {
+      "w": "jemanden singen hören",
+      "ex": "Ich höre die Nachbarin jeden Morgen singen."
+     },
+     {
+      "w": "etwas spüren",
+      "ex": "Ich spüre die Sonne auf meiner Haut."
+     },
+     {
+      "w": "sitzen bleiben",
+      "ex": "Bleiben Sie bitte sitzen!"
+     },
+     {
+      "w": "schwimmen gehen",
+      "ex": "Am Wochenende gehen wir im See schwimmen."
+     },
+     {
+      "w": "lachen",
+      "ex": "Ich höre die Kinder im Garten lachen."
+     }
+    ],
+    "gram": "sehen/hören/fühlen + Akkusativ + Infinitiv ohne zu; Perfekt: Ich habe sie singen hören (doppelter Infinitiv)."
+   }
+  },
+  {
+   "d": 253,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Reflexive verbs in depth",
+     "g": "Master reflexive verbs: sich vorstellen, sich etwas vorstellen, sich beeilen.",
+     "p": [
+      "Accusative reflexive when there's no other object: Ich stelle mich vor (I introduce myself). Ich beeile mich.",
+      "Dative reflexive when there is another object: Ich stelle mir das vor (I imagine it). Ich wasche mir die Hände.",
+      "Some verbs are always reflexive: sich beeilen, sich erholen, sich freuen, sich irren, sich bedanken."
+     ],
+     "q": "Can you imagine living in Germany? Answer with Ich kann mir vorstellen, dass... or Ich kann mir nicht vorstellen...",
+     "c": "Write three pairs of sentences showing mich vs mir: sich waschen, sich vorstellen, sich kaufen."
+    },
+    "de": {
+     "t": "Reflexive Verben vertieft",
+     "g": "Du beherrschst reflexive Verben: sich vorstellen, sich etwas vorstellen, sich beeilen.",
+     "p": [
+      "Akkusativ, wenn es kein anderes Objekt gibt: Ich stelle mich vor. Ich beeile mich.",
+      "Dativ, wenn es ein weiteres Objekt gibt: Ich stelle mir das vor. Ich wasche mir die Hände.",
+      "Manche Verben sind immer reflexiv: sich beeilen, sich erholen, sich freuen, sich irren, sich bedanken."
+     ],
+     "q": "Kannst du dir vorstellen, in Deutschland zu leben? Antworte mit Ich kann mir (nicht) vorstellen, ...",
+     "c": "Schreib drei Satzpaare mit mich und mir: sich waschen, sich vorstellen, sich kaufen."
+    },
+    "es": {
+     "t": "Verbos reflexivos a fondo",
+     "g": "Domina los reflexivos: sich vorstellen, sich etwas vorstellen, sich beeilen.",
+     "p": [
+      "Acusativo si no hay otro objeto: Ich stelle mich vor (me presento). Ich beeile mich (me doy prisa).",
+      "Dativo si hay otro objeto: Ich stelle mir das vor (me lo imagino). Ich wasche mir die Hände.",
+      "Algunos siempre son reflexivos: sich beeilen, sich erholen, sich freuen, sich irren, sich bedanken."
+     ],
+     "q": "¿Te imaginas vivir en Alemania? Responde con Ich kann mir (nicht) vorstellen, ...",
+     "c": "Escribe tres pares de frases con mich y mir: sich waschen, sich vorstellen, sich kaufen."
+    },
+    "fr": {
+     "t": "Les verbes pronominaux en détail",
+     "g": "Maîtriser les verbes pronominaux : sich vorstellen, sich etwas vorstellen, sich beeilen.",
+     "p": [
+      "Accusatif s'il n'y a pas d'autre objet : Ich stelle mich vor (je me présente). Ich beeile mich (je me dépêche).",
+      "Datif s'il y a un autre objet : Ich stelle mir das vor (je l'imagine). Ich wasche mir die Hände.",
+      "Certains sont toujours pronominaux : sich beeilen, sich erholen, sich freuen, sich irren, sich bedanken."
+     ],
+     "q": "Peux-tu t'imaginer vivre en Allemagne ? Réponds avec Ich kann mir (nicht) vorstellen, ...",
+     "c": "Écris trois paires de phrases avec mich et mir : sich waschen, sich vorstellen, sich kaufen."
+    },
+    "it": {
+     "t": "Verbi riflessivi a fondo",
+     "g": "Padroneggia i riflessivi: sich vorstellen, sich etwas vorstellen, sich beeilen.",
+     "p": [
+      "Accusativo se non c'è un altro oggetto: Ich stelle mich vor (mi presento). Ich beeile mich (mi sbrigo).",
+      "Dativo se c'è un altro oggetto: Ich stelle mir das vor (me lo immagino). Ich wasche mir die Hände.",
+      "Alcuni sono sempre riflessivi: sich beeilen, sich erholen, sich freuen, sich irren, sich bedanken."
+     ],
+     "q": "Riesci a immaginarti a vivere in Germania? Rispondi con Ich kann mir (nicht) vorstellen, ...",
+     "c": "Scrivi tre coppie di frasi con mich e mir: sich waschen, sich vorstellen, sich kaufen."
+    },
+    "pt": {
+     "t": "Verbos reflexos a fundo",
+     "g": "Dominar os verbos reflexos: sich vorstellen, sich etwas vorstellen, sich beeilen.",
+     "p": [
+      "Acusativo quando não há outro objeto: Ich stelle mich vor (apresento-me). Ich beeile mich (despacho-me).",
+      "Dativo quando há outro objeto: Ich stelle mir das vor (imagino isso). Ich wasche mir die Hände.",
+      "Alguns são sempre reflexos: sich beeilen, sich erholen, sich freuen, sich irren, sich bedanken."
+     ],
+     "q": "Consegues imaginar-te a viver na Alemanha? Responde com Ich kann mir (nicht) vorstellen, ...",
+     "c": "Escreve três pares de frases com mich e mir: sich waschen, sich vorstellen, sich kaufen."
+    },
+    "pt_BR": {
+     "t": "Verbos reflexivos a fundo",
+     "g": "Dominar os verbos reflexivos: sich vorstellen, sich etwas vorstellen, sich beeilen.",
+     "p": [
+      "Acusativo quando não há outro objeto: Ich stelle mich vor (me apresento). Ich beeile mich (me apresso).",
+      "Dativo quando há outro objeto: Ich stelle mir das vor (imagino isso). Ich wasche mir die Hände.",
+      "Alguns são sempre reflexivos: sich beeilen, sich erholen, sich freuen, sich irren, sich bedanken."
+     ],
+     "q": "Você consegue se imaginar morando na Alemanha? Responda com Ich kann mir (nicht) vorstellen, ...",
+     "c": "Escreva três pares de frases com mich e mir: sich waschen, sich vorstellen, sich kaufen."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "sich vorstellen",
+      "ex": "Darf ich mich kurz vorstellen?"
+     },
+     {
+      "w": "sich etwas vorstellen",
+      "ex": "Ich kann mir ein Leben ohne Musik nicht vorstellen."
+     },
+     {
+      "w": "sich beeilen",
+      "ex": "Wir müssen uns beeilen, der Film beginnt gleich."
+     },
+     {
+      "w": "sich erholen",
+      "ex": "Im Urlaub habe ich mich gut erholt."
+     },
+     {
+      "w": "sich irren",
+      "ex": "Entschuldigung, ich habe mich geirrt."
+     },
+     {
+      "w": "sich etwas kaufen",
+      "ex": "Ich kaufe mir neue Schuhe."
+     }
+    ],
+    "gram": "Reflexivpronomen: Akkusativ ohne Objekt (Ich stelle mich vor), Dativ mit Objekt (Ich stelle mir das vor); nur mich/mir, dich/dir anders."
+   }
+  },
+  {
+   "d": 254,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "More verbs with prepositions",
+     "g": "Learn useful verb + preposition pairs: sich beschäftigen mit, sich verlassen auf, abhängen von.",
+     "p": [
+      "The preposition is part of the verb; learn it with its case: sich beschäftigen mit + Dat, sich verlassen auf + Akk.",
+      "For things, use da- words: Ich verlasse mich darauf. Questions: Womit beschäftigst du dich? For people: Auf wen?",
+      "Es hängt davon ab, ob... (it depends whether) is a very useful phrase for discussions."
+     ],
+     "q": "What do you like to occupy yourself with in your free time? Answer with Ich beschäftige mich gern mit...",
+     "c": "Write a sentence for each of today's six verbs, then turn two of them into questions with wo(r)-."
+    },
+    "de": {
+     "t": "Noch mehr Verben mit Präpositionen",
+     "g": "Du lernst nützliche Verben mit Präposition: sich beschäftigen mit, sich verlassen auf, abhängen von.",
+     "p": [
+      "Die Präposition gehört zum Verb, lern sie mit Kasus: sich beschäftigen mit + Dat., sich verlassen auf + Akk.",
+      "Bei Sachen da-Wörter: Ich verlasse mich darauf. Fragen: Womit beschäftigst du dich? Bei Personen: Auf wen?",
+      "Es hängt davon ab, ob... ist in Diskussionen sehr nützlich."
+     ],
+     "q": "Womit beschäftigst du dich gern in deiner Freizeit? Antworte mit Ich beschäftige mich gern mit...",
+     "c": "Schreib einen Satz zu jedem der sechs Verben und mach aus zwei davon Fragen mit wo(r)-."
+    },
+    "es": {
+     "t": "Más verbos con preposición",
+     "g": "Aprende pares útiles verbo + preposición: sich beschäftigen mit, sich verlassen auf, abhängen von.",
+     "p": [
+      "La preposición es parte del verbo; apréndela con su caso: sich beschäftigen mit + Dat, sich verlassen auf + Akk.",
+      "Para cosas, usa da-: Ich verlasse mich darauf. Preguntas: Womit beschäftigst du dich? Para personas: Auf wen?",
+      "Es hängt davon ab, ob... (depende de si...) es muy útil en debates."
+     ],
+     "q": "¿A qué te gusta dedicarte en tu tiempo libre? Responde con Ich beschäftige mich gern mit...",
+     "c": "Escribe una frase con cada uno de los seis verbos y convierte dos en preguntas con wo(r)-."
+    },
+    "fr": {
+     "t": "Encore des verbes à préposition",
+     "g": "Apprendre des verbes utiles avec préposition : sich beschäftigen mit, sich verlassen auf, abhängen von.",
+     "p": [
+      "La préposition fait partie du verbe ; apprends-la avec son cas : sich beschäftigen mit + Dat, sich verlassen auf + Akk.",
+      "Pour les choses, mots en da- : Ich verlasse mich darauf. Questions : Womit beschäftigst du dich ? Personnes : Auf wen ?",
+      "Es hängt davon ab, ob... (ça dépend si...) est très utile dans un débat."
+     ],
+     "q": "De quoi aimes-tu t'occuper pendant ton temps libre ? Réponds avec Ich beschäftige mich gern mit...",
+     "c": "Écris une phrase pour chacun des six verbes, puis transforme-en deux en questions avec wo(r)-."
+    },
+    "it": {
+     "t": "Altri verbi con preposizione",
+     "g": "Impara coppie utili verbo + preposizione: sich beschäftigen mit, sich verlassen auf, abhängen von.",
+     "p": [
+      "La preposizione fa parte del verbo; imparala col caso: sich beschäftigen mit + Dat, sich verlassen auf + Akk.",
+      "Per le cose usa da-: Ich verlasse mich darauf. Domande: Womit beschäftigst du dich? Per persone: Auf wen?",
+      "Es hängt davon ab, ob... (dipende se...) è utilissimo nelle discussioni."
+     ],
+     "q": "Di cosa ti piace occuparti nel tempo libero? Rispondi con Ich beschäftige mich gern mit...",
+     "c": "Scrivi una frase per ciascuno dei sei verbi e trasformane due in domande con wo(r)-."
+    },
+    "pt": {
+     "t": "Mais verbos com preposição",
+     "g": "Aprender pares úteis verbo + preposição: sich beschäftigen mit, sich verlassen auf, abhängen von.",
+     "p": [
+      "A preposição faz parte do verbo; aprende-a com o caso: sich beschäftigen mit + Dat, sich verlassen auf + Akk.",
+      "Para coisas, usa da-: Ich verlasse mich darauf. Perguntas: Womit beschäftigst du dich? Para pessoas: Auf wen?",
+      "Es hängt davon ab, ob... (depende de se...) é muito útil em discussões."
+     ],
+     "q": "Com que gostas de te ocupar nos tempos livres? Responde com Ich beschäftige mich gern mit...",
+     "c": "Escreve uma frase para cada um dos seis verbos e transforma duas em perguntas com wo(r)-."
+    },
+    "pt_BR": {
+     "t": "Mais verbos com preposição",
+     "g": "Aprender pares úteis verbo + preposição: sich beschäftigen mit, sich verlassen auf, abhängen von.",
+     "p": [
+      "A preposição faz parte do verbo; aprenda com o caso: sich beschäftigen mit + Dat, sich verlassen auf + Akk.",
+      "Para coisas, use da-: Ich verlasse mich darauf. Perguntas: Womit beschäftigst du dich? Para pessoas: Auf wen?",
+      "Es hängt davon ab, ob... (depende de se...) é muito útil em discussões."
+     ],
+     "q": "Com o que você gosta de se ocupar no tempo livre? Responda com Ich beschäftige mich gern mit...",
+     "c": "Escreva uma frase para cada um dos seis verbos e transforme duas em perguntas com wo(r)-."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "sich beschäftigen mit",
+      "ex": "Ich beschäftige mich gern mit Geschichte."
+     },
+     {
+      "w": "sich verlassen auf",
+      "ex": "Du kannst dich auf mich verlassen."
+     },
+     {
+      "w": "abhängen von",
+      "ex": "Es hängt vom Wetter ab, ob wir wandern."
+     },
+     {
+      "w": "sich kümmern um",
+      "ex": "Wer kümmert sich um deine Katze?"
+     },
+     {
+      "w": "sich gewöhnen an",
+      "ex": "Ich habe mich an das frühe Aufstehen gewöhnt."
+     },
+     {
+      "w": "teilnehmen an",
+      "ex": "Nimmst du an dem Kurs teil?"
+     }
+    ],
+    "gram": "Verb + feste Präposition + Kasus; Sachen: da(r)- / wo(r)- (darauf, womit); Personen: Präposition + Pronomen (auf ihn, mit wem)."
+   }
+  },
+  {
+   "d": 255,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Negation in depth",
+     "g": "Fine-tune negation: nicht mehr, noch nicht, kein... mehr, gar nicht, überhaupt nicht.",
+     "p": [
+      "noch nicht = not yet (Ich bin noch nicht fertig). nicht mehr / kein... mehr = no longer (Ich rauche nicht mehr. Ich habe kein Geld mehr).",
+      "Strengthen it with gar nicht or überhaupt nicht (not at all): Das gefällt mir überhaupt nicht. Gar kein Problem!",
+      "Answer with doch to contradict a negative question: Kommst du nicht? Doch, ich komme!"
+     ],
+     "q": "Tell me something you no longer do and something you haven't done yet but want to do!",
+     "c": "Write three pairs: noch nicht vs nicht mehr, and noch ein vs kein... mehr."
+    },
+    "de": {
+     "t": "Verneinung vertieft",
+     "g": "Du verneinst präzise: nicht mehr, noch nicht, kein... mehr, gar nicht, überhaupt nicht.",
+     "p": [
+      "noch nicht: Ich bin noch nicht fertig. nicht mehr / kein... mehr: Ich rauche nicht mehr. Ich habe kein Geld mehr.",
+      "Verstärkung mit gar nicht oder überhaupt nicht: Das gefällt mir überhaupt nicht. Gar kein Problem!",
+      "Auf eine verneinte Frage widersprichst du mit doch: Kommst du nicht? Doch, ich komme!"
+     ],
+     "q": "Erzähl mir etwas, das du nicht mehr machst, und etwas, das du noch nicht gemacht hast, aber machen willst!",
+     "c": "Schreib drei Satzpaare: noch nicht und nicht mehr, noch ein und kein... mehr."
+    },
+    "es": {
+     "t": "La negación a fondo",
+     "g": "Afina la negación: nicht mehr, noch nicht, kein... mehr, gar nicht, überhaupt nicht.",
+     "p": [
+      "noch nicht = todavía no (Ich bin noch nicht fertig). nicht mehr / kein... mehr = ya no (Ich habe kein Geld mehr).",
+      "Refuérzala con gar nicht o überhaupt nicht (nada en absoluto): Das gefällt mir überhaupt nicht. Gar kein Problem!",
+      "Responde doch para contradecir una pregunta negativa: Kommst du nicht? Doch, ich komme!"
+     ],
+     "q": "Cuéntame algo que ya no haces y algo que todavía no has hecho pero quieres hacer.",
+     "c": "Escribe tres pares: noch nicht frente a nicht mehr, y noch ein frente a kein... mehr."
+    },
+    "fr": {
+     "t": "La négation en détail",
+     "g": "Affiner la négation : nicht mehr, noch nicht, kein... mehr, gar nicht, überhaupt nicht.",
+     "p": [
+      "noch nicht = pas encore (Ich bin noch nicht fertig). nicht mehr / kein... mehr = ne plus (Ich habe kein Geld mehr).",
+      "Renforce avec gar nicht ou überhaupt nicht (pas du tout) : Das gefällt mir überhaupt nicht. Gar kein Problem !",
+      "Réponds doch pour contredire une question négative : Kommst du nicht ? Doch, ich komme ! (Si !)"
+     ],
+     "q": "Dis-moi une chose que tu ne fais plus et une que tu n'as pas encore faite mais que tu veux faire !",
+     "c": "Écris trois paires : noch nicht contre nicht mehr, et noch ein contre kein... mehr."
+    },
+    "it": {
+     "t": "La negazione a fondo",
+     "g": "Affina la negazione: nicht mehr, noch nicht, kein... mehr, gar nicht, überhaupt nicht.",
+     "p": [
+      "noch nicht = non ancora (Ich bin noch nicht fertig). nicht mehr / kein... mehr = non più (Ich habe kein Geld mehr).",
+      "Rafforzala con gar nicht o überhaupt nicht (per niente): Das gefällt mir überhaupt nicht. Gar kein Problem!",
+      "Rispondi doch per contraddire una domanda negativa: Kommst du nicht? Doch, ich komme! (Sì, invece!)"
+     ],
+     "q": "Dimmi una cosa che non fai più e una che non hai ancora fatto ma vuoi fare!",
+     "c": "Scrivi tre coppie: noch nicht contro nicht mehr, e noch ein contro kein... mehr."
+    },
+    "pt": {
+     "t": "A negação a fundo",
+     "g": "Afinar a negação: nicht mehr, noch nicht, kein... mehr, gar nicht, überhaupt nicht.",
+     "p": [
+      "noch nicht = ainda não (Ich bin noch nicht fertig). nicht mehr / kein... mehr = já não (Ich habe kein Geld mehr).",
+      "Reforça com gar nicht ou überhaupt nicht (nada mesmo): Das gefällt mir überhaupt nicht. Gar kein Problem!",
+      "Responde doch para contrariar uma pergunta negativa: Kommst du nicht? Doch, ich komme! (Vou, sim!)"
+     ],
+     "q": "Conta-me uma coisa que já não fazes e outra que ainda não fizeste mas queres fazer!",
+     "c": "Escreve três pares: noch nicht vs nicht mehr, e noch ein vs kein... mehr."
+    },
+    "pt_BR": {
+     "t": "A negação a fundo",
+     "g": "Refinar a negação: nicht mehr, noch nicht, kein... mehr, gar nicht, überhaupt nicht.",
+     "p": [
+      "noch nicht = ainda não (Ich bin noch nicht fertig). nicht mehr / kein... mehr = não... mais (Ich habe kein Geld mehr).",
+      "Reforce com gar nicht ou überhaupt nicht (de jeito nenhum): Das gefällt mir überhaupt nicht. Gar kein Problem!",
+      "Responda doch para contradizer uma pergunta negativa: Kommst du nicht? Doch, ich komme! (Vou, sim!)"
+     ],
+     "q": "Me conte algo que você não faz mais e algo que ainda não fez mas quer fazer!",
+     "c": "Escreva três pares: noch nicht vs nicht mehr, e noch ein vs kein... mehr."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "noch nicht",
+      "ex": "Ich war noch nicht in Wien."
+     },
+     {
+      "w": "nicht mehr",
+      "ex": "Ich wohne nicht mehr in Köln."
+     },
+     {
+      "w": "kein ... mehr",
+      "ex": "Wir haben keine Milch mehr."
+     },
+     {
+      "w": "gar nicht",
+      "ex": "Das ist gar nicht so schwer."
+     },
+     {
+      "w": "überhaupt nicht",
+      "ex": "Ich habe heute überhaupt keine Zeit."
+     },
+     {
+      "w": "Doch!",
+      "ex": "Hast du keinen Hunger? Doch, großen Hunger!"
+     }
+    ],
+    "gram": "noch ein/noch → kein... mehr/nicht mehr; schon → noch nicht; Verstärkung: gar/überhaupt nicht/kein; doch widerspricht einer Verneinung."
+   }
+  },
+  {
+   "d": 256,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Indefinite words",
+     "g": "Talk about vague places, times and people: irgendwo, irgendwann, irgendjemand, manche, einige.",
+     "p": [
+      "irgend- adds any or some: irgendwo (somewhere), irgendwann (sometime), irgendwie (somehow), irgendetwas, irgendjemand.",
+      "einige and manche mean some: Einige Leute kamen zu spät. Manche mögen es scharf. They take plural endings.",
+      "Also: jemand / niemand, etwas / nichts, überall / nirgendwo. Irgendwann besuche ich dich!"
+     ],
+     "q": "Where would you like to travel irgendwann? Tell me about a dream trip using irgend- words!",
+     "c": "Write five sentences with irgendwo, irgendwann, irgendwie, einige and niemand."
+    },
+    "de": {
+     "t": "Indefinitwörter",
+     "g": "Du sprichst über unbestimmte Orte, Zeiten und Personen: irgendwo, irgendwann, irgendjemand, manche, einige.",
+     "p": [
+      "irgend- macht es unbestimmt: irgendwo, irgendwann, irgendwie, irgendetwas, irgendjemand.",
+      "einige und manche: Einige Leute kamen zu spät. Manche mögen es scharf. Sie haben Plural-Endungen.",
+      "Auch: jemand / niemand, etwas / nichts, überall / nirgendwo. Irgendwann besuche ich dich!"
+     ],
+     "q": "Wohin möchtest du irgendwann reisen? Erzähl mir von einer Traumreise mit irgend-Wörtern!",
+     "c": "Schreib fünf Sätze mit irgendwo, irgendwann, irgendwie, einige und niemand."
+    },
+    "es": {
+     "t": "Palabras indefinidas",
+     "g": "Habla de lugares, tiempos y personas imprecisos: irgendwo, irgendwann, irgendjemand, manche, einige.",
+     "p": [
+      "irgend- añade algún o cualquier: irgendwo (en algún sitio), irgendwann (algún día), irgendwie (de alguna manera), irgendjemand.",
+      "einige y manche = algunos: Einige Leute kamen zu spät. Manche mögen es scharf. Llevan terminaciones de plural.",
+      "También: jemand / niemand, etwas / nichts, überall / nirgendwo. Irgendwann besuche ich dich!"
+     ],
+     "q": "¿Adónde te gustaría viajar irgendwann? ¡Cuéntame un viaje soñado con palabras irgend-!",
+     "c": "Escribe cinco frases con irgendwo, irgendwann, irgendwie, einige y niemand."
+    },
+    "fr": {
+     "t": "Les mots indéfinis",
+     "g": "Parler de lieux, moments et personnes vagues : irgendwo, irgendwann, irgendjemand, manche, einige.",
+     "p": [
+      "irgend- ajoute quelque/n'importe : irgendwo (quelque part), irgendwann (un jour), irgendwie (d'une façon ou d'une autre).",
+      "einige et manche = certains, quelques : Einige Leute kamen zu spät. Manche mögen es scharf. Terminaisons du pluriel.",
+      "Aussi : jemand / niemand, etwas / nichts, überall / nirgendwo. Irgendwann besuche ich dich !"
+     ],
+     "q": "Où aimerais-tu voyager irgendwann ? Raconte-moi un voyage de rêve avec des mots en irgend- !",
+     "c": "Écris cinq phrases avec irgendwo, irgendwann, irgendwie, einige et niemand."
+    },
+    "it": {
+     "t": "Parole indefinite",
+     "g": "Parla di luoghi, tempi e persone vaghi: irgendwo, irgendwann, irgendjemand, manche, einige.",
+     "p": [
+      "irgend- aggiunge qualche/qualsiasi: irgendwo (da qualche parte), irgendwann (prima o poi), irgendwie (in qualche modo).",
+      "einige e manche = alcuni: Einige Leute kamen zu spät. Manche mögen es scharf. Hanno desinenze plurali.",
+      "Anche: jemand / niemand, etwas / nichts, überall / nirgendwo. Irgendwann besuche ich dich!"
+     ],
+     "q": "Dove ti piacerebbe viaggiare irgendwann? Raccontami un viaggio dei sogni con parole irgend-!",
+     "c": "Scrivi cinque frasi con irgendwo, irgendwann, irgendwie, einige e niemand."
+    },
+    "pt": {
+     "t": "Palavras indefinidas",
+     "g": "Falar de lugares, tempos e pessoas vagos: irgendwo, irgendwann, irgendjemand, manche, einige.",
+     "p": [
+      "irgend- acrescenta algum/qualquer: irgendwo (algures), irgendwann (um dia), irgendwie (de alguma forma), irgendjemand.",
+      "einige e manche = alguns: Einige Leute kamen zu spät. Manche mögen es scharf. Levam terminações de plural.",
+      "Também: jemand / niemand, etwas / nichts, überall / nirgendwo. Irgendwann besuche ich dich!"
+     ],
+     "q": "Para onde gostavas de viajar irgendwann? Conta-me uma viagem de sonho com palavras irgend-!",
+     "c": "Escreve cinco frases com irgendwo, irgendwann, irgendwie, einige e niemand."
+    },
+    "pt_BR": {
+     "t": "Palavras indefinidas",
+     "g": "Falar de lugares, tempos e pessoas vagos: irgendwo, irgendwann, irgendjemand, manche, einige.",
+     "p": [
+      "irgend- acrescenta algum/qualquer: irgendwo (em algum lugar), irgendwann (algum dia), irgendwie (de algum jeito).",
+      "einige e manche = alguns: Einige Leute kamen zu spät. Manche mögen es scharf. Levam terminações de plural.",
+      "Também: jemand / niemand, etwas / nichts, überall / nirgendwo. Irgendwann besuche ich dich!"
+     ],
+     "q": "Para onde você gostaria de viajar irgendwann? Me conte uma viagem dos sonhos com palavras irgend-!",
+     "c": "Escreva cinco frases com irgendwo, irgendwann, irgendwie, einige e niemand."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "irgendwo",
+      "ex": "Meine Brille muss irgendwo im Wohnzimmer sein."
+     },
+     {
+      "w": "irgendwann",
+      "ex": "Irgendwann möchte ich nach Island reisen."
+     },
+     {
+      "w": "irgendwie",
+      "ex": "Irgendwie schaffen wir das schon."
+     },
+     {
+      "w": "irgendjemand",
+      "ex": "Hat irgendjemand meinen Schlüssel gesehen?"
+     },
+     {
+      "w": "einige",
+      "ex": "Einige Freunde kommen heute Abend vorbei."
+     },
+     {
+      "w": "manche",
+      "ex": "Manche Leute trinken ihren Kaffee ohne Zucker."
+     }
+    ],
+    "gram": "irgend- + Fragewort (irgendwo, irgendwann, irgendwer); einige/manche wie Plural-Artikel dekliniert: mit einigen Freunden."
+   }
+  },
+  {
+   "d": 257,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Expressing conditions",
+     "g": "Go beyond wenn: falls, sofern, vorausgesetzt, dass, es sei denn.",
+     "p": [
+      "falls = in case/if: Falls es regnet, bleiben wir zu Hause. Like wenn, it sends the verb to the end.",
+      "sofern and vorausgesetzt, dass = provided that: Wir fahren mit, vorausgesetzt, dass wir Zeit haben.",
+      "es sei denn = unless, followed by normal word order: Ich komme, es sei denn, ich muss arbeiten."
+     ],
+     "q": "Under what conditions would you move to another country? Use falls, sofern or es sei denn!",
+     "c": "Write four sentences about weekend plans, each with a different conditional connector."
+    },
+    "de": {
+     "t": "Bedingungen ausdrücken",
+     "g": "Du gehst über wenn hinaus: falls, sofern, vorausgesetzt, dass, es sei denn.",
+     "p": [
+      "falls: Falls es regnet, bleiben wir zu Hause. Wie bei wenn steht das Verb am Ende.",
+      "sofern und vorausgesetzt, dass: Wir fahren mit, vorausgesetzt, dass wir Zeit haben.",
+      "es sei denn bedeutet außer wenn, danach normale Wortstellung: Ich komme, es sei denn, ich muss arbeiten."
+     ],
+     "q": "Unter welchen Bedingungen würdest du in ein anderes Land ziehen? Benutze falls, sofern oder es sei denn!",
+     "c": "Schreib vier Sätze über Wochenendpläne, jeder mit einem anderen Bedingungs-Konnektor."
+    },
+    "es": {
+     "t": "Expresar condiciones",
+     "g": "Ve más allá de wenn: falls, sofern, vorausgesetzt, dass, es sei denn.",
+     "p": [
+      "falls = por si/si: Falls es regnet, bleiben wir zu Hause. Como wenn, manda el verbo al final.",
+      "sofern y vorausgesetzt, dass = siempre que: Wir fahren mit, vorausgesetzt, dass wir Zeit haben.",
+      "es sei denn = a menos que, con orden normal después: Ich komme, es sei denn, ich muss arbeiten."
+     ],
+     "q": "¿En qué condiciones te mudarías a otro país? ¡Usa falls, sofern o es sei denn!",
+     "c": "Escribe cuatro frases sobre planes de fin de semana, cada una con un conector condicional distinto."
+    },
+    "fr": {
+     "t": "Exprimer des conditions",
+     "g": "Aller au-delà de wenn : falls, sofern, vorausgesetzt, dass, es sei denn.",
+     "p": [
+      "falls = au cas où / si : Falls es regnet, bleiben wir zu Hause. Comme wenn, verbe à la fin.",
+      "sofern et vorausgesetzt, dass = à condition que : Wir fahren mit, vorausgesetzt, dass wir Zeit haben.",
+      "es sei denn = à moins que, suivi de l'ordre normal : Ich komme, es sei denn, ich muss arbeiten."
+     ],
+     "q": "À quelles conditions déménagerais-tu dans un autre pays ? Utilise falls, sofern ou es sei denn !",
+     "c": "Écris quatre phrases sur tes projets du week-end, chacune avec un connecteur de condition différent."
+    },
+    "it": {
+     "t": "Esprimere condizioni",
+     "g": "Vai oltre wenn: falls, sofern, vorausgesetzt, dass, es sei denn.",
+     "p": [
+      "falls = nel caso in cui: Falls es regnet, bleiben wir zu Hause. Come wenn, manda il verbo in fondo.",
+      "sofern e vorausgesetzt, dass = purché: Wir fahren mit, vorausgesetzt, dass wir Zeit haben.",
+      "es sei denn = a meno che, seguito da ordine normale: Ich komme, es sei denn, ich muss arbeiten."
+     ],
+     "q": "A quali condizioni ti trasferiresti in un altro paese? Usa falls, sofern o es sei denn!",
+     "c": "Scrivi quattro frasi sui piani del weekend, ognuna con un connettivo condizionale diverso."
+    },
+    "pt": {
+     "t": "Exprimir condições",
+     "g": "Ir além de wenn: falls, sofern, vorausgesetzt, dass, es sei denn.",
+     "p": [
+      "falls = caso: Falls es regnet, bleiben wir zu Hause. Como wenn, manda o verbo para o fim.",
+      "sofern e vorausgesetzt, dass = desde que: Wir fahren mit, vorausgesetzt, dass wir Zeit haben.",
+      "es sei denn = a não ser que, seguido de ordem normal: Ich komme, es sei denn, ich muss arbeiten."
+     ],
+     "q": "Em que condições te mudarias para outro país? Usa falls, sofern ou es sei denn!",
+     "c": "Escreve quatro frases sobre planos para o fim de semana, cada uma com um conector condicional diferente."
+    },
+    "pt_BR": {
+     "t": "Expressar condições",
+     "g": "Ir além de wenn: falls, sofern, vorausgesetzt, dass, es sei denn.",
+     "p": [
+      "falls = caso: Falls es regnet, bleiben wir zu Hause. Como wenn, manda o verbo para o fim.",
+      "sofern e vorausgesetzt, dass = desde que: Wir fahren mit, vorausgesetzt, dass wir Zeit haben.",
+      "es sei denn = a não ser que, seguido de ordem normal: Ich komme, es sei denn, ich muss arbeiten."
+     ],
+     "q": "Em que condições você se mudaria para outro país? Use falls, sofern ou es sei denn!",
+     "c": "Escreva quatro frases sobre planos de fim de semana, cada uma com um conector condicional diferente."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "falls",
+      "ex": "Falls du Fragen hast, ruf mich an."
+     },
+     {
+      "w": "sofern",
+      "ex": "Wir grillen, sofern das Wetter mitspielt."
+     },
+     {
+      "w": "vorausgesetzt, dass",
+      "ex": "Ich helfe dir, vorausgesetzt, dass du pünktlich bist."
+     },
+     {
+      "w": "es sei denn",
+      "ex": "Wir treffen uns um acht, es sei denn, du hast keine Zeit."
+     },
+     {
+      "w": "unter einer Bedingung",
+      "ex": "Ich komme mit, unter einer Bedingung: Du fährst."
+     },
+     {
+      "w": "im Fall",
+      "ex": "Im Fall eines Notfalls rufen Sie bitte diese Nummer an."
+     }
+    ],
+    "gram": "falls/sofern/vorausgesetzt, dass: Verb am Ende; es sei denn + Hauptsatz-Wortstellung (es sei denn, ich muss arbeiten)."
+   }
+  },
+  {
+   "d": 258,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Telling an anecdote",
+     "g": "Tell a short, lively story: a hook, vivid details, a climax and a funny ending.",
+     "p": [
+      "Hook: Stell dir vor... / Weißt du, was mir passiert ist? / Das glaubst du nie! It makes people want to listen.",
+      "Middle: Präteritum or Perfekt, plus plötzlich, auf einmal, zuerst, dann. Details make it vivid: what you saw and felt.",
+      "Climax and ending: Und dann... / Am Ende... / Seitdem... Laughing at yourself works well in German too."
+     ],
+     "q": "Tell me a funny or strange thing that happened to you once, starting with Stell dir vor...!",
+     "c": "Write an anecdote of six to eight sentences with a hook, plötzlich, and a funny last line."
+    },
+    "de": {
+     "t": "Eine Anekdote erzählen",
+     "g": "Du erzählst eine kurze, lebendige Geschichte: Einstieg, Details, Höhepunkt und lustiges Ende.",
+     "p": [
+      "Einstieg: Stell dir vor... / Weißt du, was mir passiert ist? / Das glaubst du nie! So hört man dir zu.",
+      "Mitte: Präteritum oder Perfekt, dazu plötzlich, auf einmal, zuerst, dann. Details machen es lebendig.",
+      "Höhepunkt und Ende: Und dann... / Am Ende... / Seitdem... Über sich selbst lachen kommt immer gut an."
+     ],
+     "q": "Erzähl mir etwas Lustiges oder Seltsames, das dir einmal passiert ist, und fang mit Stell dir vor... an!",
+     "c": "Schreib eine Anekdote mit sechs bis acht Sätzen, einem Einstieg, plötzlich und einem lustigen Schluss."
+    },
+    "es": {
+     "t": "Contar una anécdota",
+     "g": "Cuenta una historia corta y viva: gancho, detalles, clímax y final divertido.",
+     "p": [
+      "Gancho: Stell dir vor... (imagínate) / Weißt du, was mir passiert ist? / Das glaubst du nie! Así te escuchan.",
+      "Desarrollo: Präteritum o Perfekt, con plötzlich, auf einmal, zuerst, dann. Los detalles la hacen viva.",
+      "Clímax y final: Und dann... / Am Ende... / Seitdem... Reírse de uno mismo funciona también en alemán."
+     ],
+     "q": "Cuéntame algo gracioso o raro que te pasó una vez, empezando con Stell dir vor...",
+     "c": "Escribe una anécdota de seis a ocho frases con gancho, plötzlich y una última frase divertida."
+    },
+    "fr": {
+     "t": "Raconter une anecdote",
+     "g": "Raconter une petite histoire vivante : une accroche, des détails, un point culminant et une chute drôle.",
+     "p": [
+      "Accroche : Stell dir vor... (imagine) / Weißt du, was mir passiert ist ? / Das glaubst du nie ! On a envie d'écouter.",
+      "Milieu : Präteritum ou Perfekt, avec plötzlich, auf einmal, zuerst, dann. Les détails rendent l'histoire vivante.",
+      "Point culminant et fin : Und dann... / Am Ende... / Seitdem... Rire de soi-même marche aussi en allemand."
+     ],
+     "q": "Raconte-moi un truc drôle ou bizarre qui t'est arrivé, en commençant par Stell dir vor... !",
+     "c": "Écris une anecdote de six à huit phrases avec une accroche, plötzlich et une chute drôle."
+    },
+    "it": {
+     "t": "Raccontare un aneddoto",
+     "g": "Racconta una storia breve e vivace: un aggancio, dettagli, un culmine e un finale divertente.",
+     "p": [
+      "Aggancio: Stell dir vor... (immagina) / Weißt du, was mir passiert ist? / Das glaubst du nie! Così ti ascoltano.",
+      "Parte centrale: Präteritum o Perfekt, con plötzlich, auf einmal, zuerst, dann. I dettagli la rendono viva.",
+      "Culmine e finale: Und dann... / Am Ende... / Seitdem... Ridere di sé funziona anche in tedesco."
+     ],
+     "q": "Raccontami una cosa buffa o strana che ti è successa, cominciando con Stell dir vor...!",
+     "c": "Scrivi un aneddoto di sei-otto frasi con un aggancio, plötzlich e un'ultima frase divertente."
+    },
+    "pt": {
+     "t": "Contar uma peripécia",
+     "g": "Contar uma história curta e viva: um gancho, detalhes, um clímax e um final divertido.",
+     "p": [
+      "Gancho: Stell dir vor... (imagina) / Weißt du, was mir passiert ist? / Das glaubst du nie! Assim querem ouvir-te.",
+      "Meio: Präteritum ou Perfekt, com plötzlich, auf einmal, zuerst, dann. Os detalhes dão vida à história.",
+      "Clímax e fim: Und dann... / Am Ende... / Seitdem... Rir de ti próprio também resulta em alemão."
+     ],
+     "q": "Conta-me algo engraçado ou estranho que te aconteceu, a começar por Stell dir vor...!",
+     "c": "Escreve uma peripécia de seis a oito frases com gancho, plötzlich e uma última frase engraçada."
+    },
+    "pt_BR": {
+     "t": "Contar um causo",
+     "g": "Contar uma história curta e viva: um gancho, detalhes, um clímax e um final engraçado.",
+     "p": [
+      "Gancho: Stell dir vor... (imagina) / Weißt du, was mir passiert ist? / Das glaubst du nie! Assim todo mundo escuta.",
+      "Meio: Präteritum ou Perfekt, com plötzlich, auf einmal, zuerst, dann. Os detalhes dão vida à história.",
+      "Clímax e fim: Und dann... / Am Ende... / Seitdem... Rir de si mesmo também funciona em alemão."
+     ],
+     "q": "Me conte algo engraçado ou estranho que aconteceu com você, começando com Stell dir vor...!",
+     "c": "Escreva um causo de seis a oito frases com gancho, plötzlich e uma última frase engraçada."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Stell dir vor, ...",
+      "ex": "Stell dir vor, ich habe gestern meinen alten Lehrer getroffen!"
+     },
+     {
+      "w": "plötzlich",
+      "ex": "Plötzlich ging das Licht aus."
+     },
+     {
+      "w": "auf einmal",
+      "ex": "Auf einmal stand ein Hund vor der Tür."
+     },
+     {
+      "w": "passieren",
+      "ex": "Weißt du, was mir heute passiert ist?"
+     },
+     {
+      "w": "am Ende",
+      "ex": "Am Ende haben wir alle gelacht."
+     },
+     {
+      "w": "seitdem",
+      "ex": "Seitdem nehme ich immer einen Schirm mit."
+     }
+    ],
+    "gram": "Erzählen: Präteritum (schriftlich) oder Perfekt (mündlich); nach plötzlich/dann Verb auf Position 2: Plötzlich ging das Licht aus."
+   }
+  },
+  {
+   "d": 259,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Debating: making a point",
+     "g": "State and support your opinion: Ich bin der Meinung, es ist klar, dass, man darf nicht vergessen.",
+     "p": [
+      "Opinion: Ich bin der Meinung, dass... / Meiner Meinung nach... (verb comes next!) / Ich finde, ...",
+      "Support: Ein wichtiges Argument ist... / Es ist klar, dass... / Zum Beispiel... / Man darf nicht vergessen, dass...",
+      "Structure: erstens, zweitens, außerdem, schließlich. One clear point with an example beats five vague ones."
+     ],
+     "q": "Should cities ban cars from their centres? Give me your opinion with two arguments!",
+     "c": "Write a short statement on a topic you care about: opinion, two arguments with erstens/zweitens, one example."
+    },
+    "de": {
+     "t": "Diskutieren: einen Standpunkt vertreten",
+     "g": "Du vertrittst deine Meinung: Ich bin der Meinung, es ist klar, dass, man darf nicht vergessen.",
+     "p": [
+      "Meinung: Ich bin der Meinung, dass... / Meiner Meinung nach... (dann sofort das Verb!) / Ich finde, ...",
+      "Begründen: Ein wichtiges Argument ist... / Es ist klar, dass... / Zum Beispiel... / Man darf nicht vergessen, dass...",
+      "Struktur: erstens, zweitens, außerdem, schließlich. Ein klares Argument mit Beispiel ist besser als fünf vage."
+     ],
+     "q": "Sollten Städte Autos aus dem Zentrum verbannen? Sag mir deine Meinung mit zwei Argumenten!",
+     "c": "Schreib eine kurze Stellungnahme: Meinung, zwei Argumente mit erstens/zweitens, ein Beispiel."
+    },
+    "es": {
+     "t": "Debatir: defender una postura",
+     "g": "Expón y apoya tu opinión: Ich bin der Meinung, es ist klar, dass, man darf nicht vergessen.",
+     "p": [
+      "Opinión: Ich bin der Meinung, dass... / Meiner Meinung nach... (¡y luego el verbo!) / Ich finde, ...",
+      "Apoyo: Ein wichtiges Argument ist... / Es ist klar, dass... / Zum Beispiel... / Man darf nicht vergessen, dass...",
+      "Estructura: erstens, zweitens, außerdem, schließlich. Un argumento claro con ejemplo vale más que cinco vagos."
+     ],
+     "q": "¿Deberían las ciudades prohibir los coches en el centro? ¡Dame tu opinión con dos argumentos!",
+     "c": "Escribe una breve postura sobre un tema que te importe: opinión, dos argumentos con erstens/zweitens y un ejemplo."
+    },
+    "fr": {
+     "t": "Débattre : défendre un point de vue",
+     "g": "Exposer et appuyer ton avis : Ich bin der Meinung, es ist klar, dass, man darf nicht vergessen.",
+     "p": [
+      "Avis : Ich bin der Meinung, dass... / Meiner Meinung nach... (puis le verbe tout de suite !) / Ich finde, ...",
+      "Appui : Ein wichtiges Argument ist... / Es ist klar, dass... / Zum Beispiel... / Man darf nicht vergessen, dass...",
+      "Structure : erstens, zweitens, außerdem, schließlich. Un argument clair avec un exemple vaut mieux que cinq flous."
+     ],
+     "q": "Les villes devraient-elles interdire les voitures au centre ? Donne-moi ton avis avec deux arguments !",
+     "c": "Écris une courte prise de position : avis, deux arguments avec erstens/zweitens et un exemple."
+    },
+    "it": {
+     "t": "Discutere: sostenere una tesi",
+     "g": "Esponi e sostieni la tua opinione: Ich bin der Meinung, es ist klar, dass, man darf nicht vergessen.",
+     "p": [
+      "Opinione: Ich bin der Meinung, dass... / Meiner Meinung nach... (poi subito il verbo!) / Ich finde, ...",
+      "Sostegno: Ein wichtiges Argument ist... / Es ist klar, dass... / Zum Beispiel... / Man darf nicht vergessen, dass...",
+      "Struttura: erstens, zweitens, außerdem, schließlich. Un argomento chiaro con esempio batte cinque vaghi."
+     ],
+     "q": "Le città dovrebbero vietare le auto in centro? Dammi la tua opinione con due argomenti!",
+     "c": "Scrivi una breve presa di posizione: opinione, due argomenti con erstens/zweitens e un esempio."
+    },
+    "pt": {
+     "t": "Debater: defender um ponto de vista",
+     "g": "Expor e apoiar a tua opinião: Ich bin der Meinung, es ist klar, dass, man darf nicht vergessen.",
+     "p": [
+      "Opinião: Ich bin der Meinung, dass... / Meiner Meinung nach... (logo a seguir o verbo!) / Ich finde, ...",
+      "Apoio: Ein wichtiges Argument ist... / Es ist klar, dass... / Zum Beispiel... / Man darf nicht vergessen, dass...",
+      "Estrutura: erstens, zweitens, außerdem, schließlich. Um argumento claro com exemplo vale mais que cinco vagos."
+     ],
+     "q": "As cidades deviam proibir os carros no centro? Dá-me a tua opinião com dois argumentos!",
+     "c": "Escreve uma breve tomada de posição: opinião, dois argumentos com erstens/zweitens e um exemplo."
+    },
+    "pt_BR": {
+     "t": "Debater: defender um ponto de vista",
+     "g": "Expor e apoiar sua opinião: Ich bin der Meinung, es ist klar, dass, man darf nicht vergessen.",
+     "p": [
+      "Opinião: Ich bin der Meinung, dass... / Meiner Meinung nach... (logo depois o verbo!) / Ich finde, ...",
+      "Apoio: Ein wichtiges Argument ist... / Es ist klar, dass... / Zum Beispiel... / Man darf nicht vergessen, dass...",
+      "Estrutura: erstens, zweitens, außerdem, schließlich. Um argumento claro com exemplo vale mais que cinco vagos."
+     ],
+     "q": "As cidades deveriam proibir carros no centro? Me dê sua opinião com dois argumentos!",
+     "c": "Escreva um breve posicionamento: opinião, dois argumentos com erstens/zweitens e um exemplo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Ich bin der Meinung, dass ...",
+      "ex": "Ich bin der Meinung, dass Busse kostenlos sein sollten."
+     },
+     {
+      "w": "meiner Meinung nach",
+      "ex": "Meiner Meinung nach ist Radfahren die beste Lösung."
+     },
+     {
+      "w": "Es ist klar, dass ...",
+      "ex": "Es ist klar, dass wir mehr Grünflächen brauchen."
+     },
+     {
+      "w": "Man darf nicht vergessen, ...",
+      "ex": "Man darf nicht vergessen, dass viele Menschen pendeln."
+     },
+     {
+      "w": "das Argument",
+      "ex": "Das ist ein starkes Argument."
+     },
+     {
+      "w": "erstens ... zweitens",
+      "ex": "Erstens ist es billiger, zweitens ist es gesünder."
+     }
+    ],
+    "gram": "Meiner Meinung nach / Erstens + Verb auf Position 2 (Meiner Meinung nach ist...); dass-Satz: Verb am Ende."
+   }
+  },
+  {
+   "d": 260,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Debating: responding",
+     "g": "React to other opinions politely: Das mag sein, aber...; ich verstehe deinen Punkt; im Gegenteil.",
+     "p": [
+      "Agree: Da hast du recht. Genau! Das sehe ich auch so. Partly: Das stimmt teilweise. Das mag sein, aber...",
+      "Disagree politely: Ich verstehe deinen Punkt, aber... / Da bin ich anderer Meinung. / Im Gegenteil!",
+      "Ask back to keep the talk going: Wie meinst du das? Kannst du ein Beispiel geben? Was ist mit...?"
+     ],
+     "q": "I say: Homeoffice ist für alle besser. Respond to me, first partly agreeing, then disagreeing!",
+     "c": "Write a mini dialogue of six lines where two friends discuss a topic and react with today's phrases."
+    },
+    "de": {
+     "t": "Diskutieren: reagieren",
+     "g": "Du reagierst höflich auf andere Meinungen: Das mag sein, aber...; ich verstehe deinen Punkt; im Gegenteil.",
+     "p": [
+      "Zustimmen: Da hast du recht. Genau! Das sehe ich auch so. Teilweise: Das stimmt teilweise. Das mag sein, aber...",
+      "Höflich widersprechen: Ich verstehe deinen Punkt, aber... / Da bin ich anderer Meinung. / Im Gegenteil!",
+      "Nachfragen hält das Gespräch lebendig: Wie meinst du das? Kannst du ein Beispiel geben? Was ist mit...?"
+     ],
+     "q": "Ich sage: Homeoffice ist für alle besser. Reagier darauf, erst teilweise zustimmend, dann widersprechend!",
+     "c": "Schreib einen Mini-Dialog mit sechs Zeilen, in dem zwei Freunde diskutieren und mit den Ausdrücken von heute reagieren."
+    },
+    "es": {
+     "t": "Debatir: responder",
+     "g": "Reacciona con educación a otras opiniones: Das mag sein, aber...; ich verstehe deinen Punkt; im Gegenteil.",
+     "p": [
+      "Estar de acuerdo: Da hast du recht. Genau! Das sehe ich auch so. En parte: Das stimmt teilweise. Das mag sein, aber...",
+      "Discrepar con educación: Ich verstehe deinen Punkt, aber... / Da bin ich anderer Meinung. / Im Gegenteil! (¡Al contrario!)",
+      "Pregunta para seguir: Wie meinst du das? Kannst du ein Beispiel geben? Was ist mit...?"
+     ],
+     "q": "Yo digo: Homeoffice ist für alle besser. Respóndeme, primero en parte de acuerdo y luego en desacuerdo.",
+     "c": "Escribe un minidiálogo de seis líneas en el que dos amigos debaten y reaccionan con las frases de hoy."
+    },
+    "fr": {
+     "t": "Débattre : répondre",
+     "g": "Réagir poliment aux avis des autres : Das mag sein, aber... ; ich verstehe deinen Punkt ; im Gegenteil.",
+     "p": [
+      "Être d'accord : Da hast du recht. Genau ! Das sehe ich auch so. En partie : Das stimmt teilweise. Das mag sein, aber...",
+      "Contredire poliment : Ich verstehe deinen Punkt, aber... / Da bin ich anderer Meinung. / Im Gegenteil ! (Au contraire !)",
+      "Relance pour continuer : Wie meinst du das ? Kannst du ein Beispiel geben ? Was ist mit... ?"
+     ],
+     "q": "Je dis : Homeoffice ist für alle besser. Réponds-moi, d'abord en partie d'accord, puis en désaccord !",
+     "c": "Écris un mini-dialogue de six répliques où deux amis débattent avec les phrases du jour."
+    },
+    "it": {
+     "t": "Discutere: rispondere",
+     "g": "Reagisci con garbo alle opinioni altrui: Das mag sein, aber...; ich verstehe deinen Punkt; im Gegenteil.",
+     "p": [
+      "D'accordo: Da hast du recht. Genau! Das sehe ich auch so. In parte: Das stimmt teilweise. Das mag sein, aber...",
+      "Dissentire con garbo: Ich verstehe deinen Punkt, aber... / Da bin ich anderer Meinung. / Im Gegenteil! (Al contrario!)",
+      "Fai domande per continuare: Wie meinst du das? Kannst du ein Beispiel geben? Was ist mit...?"
+     ],
+     "q": "Io dico: Homeoffice ist für alle besser. Rispondimi, prima in parte d'accordo e poi in disaccordo!",
+     "c": "Scrivi un minidialogo di sei battute in cui due amici discutono e reagiscono con le frasi di oggi."
+    },
+    "pt": {
+     "t": "Debater: responder",
+     "g": "Reagir com educação a outras opiniões: Das mag sein, aber...; ich verstehe deinen Punkt; im Gegenteil.",
+     "p": [
+      "Concordar: Da hast du recht. Genau! Das sehe ich auch so. Em parte: Das stimmt teilweise. Das mag sein, aber...",
+      "Discordar com educação: Ich verstehe deinen Punkt, aber... / Da bin ich anderer Meinung. / Im Gegenteil! (Pelo contrário!)",
+      "Pergunta para continuar: Wie meinst du das? Kannst du ein Beispiel geben? Was ist mit...?"
+     ],
+     "q": "Eu digo: Homeoffice ist für alle besser. Responde-me, primeiro concordando em parte, depois discordando!",
+     "c": "Escreve um minidiálogo de seis falas em que dois amigos debatem e reagem com as frases de hoje."
+    },
+    "pt_BR": {
+     "t": "Debater: responder",
+     "g": "Reagir com educação a outras opiniões: Das mag sein, aber...; ich verstehe deinen Punkt; im Gegenteil.",
+     "p": [
+      "Concordar: Da hast du recht. Genau! Das sehe ich auch so. Em parte: Das stimmt teilweise. Das mag sein, aber...",
+      "Discordar com educação: Ich verstehe deinen Punkt, aber... / Da bin ich anderer Meinung. / Im Gegenteil! (Pelo contrário!)",
+      "Pergunte para continuar: Wie meinst du das? Kannst du ein Beispiel geben? Was ist mit...?"
+     ],
+     "q": "Eu digo: Homeoffice ist für alle besser. Me responda, primeiro concordando em parte, depois discordando!",
+     "c": "Escreva um minidiálogo de seis falas em que dois amigos debatem e reagem com as frases de hoje."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Da hast du recht.",
+      "ex": "Da hast du recht, das habe ich vergessen."
+     },
+     {
+      "w": "Das mag sein, aber ...",
+      "ex": "Das mag sein, aber es ist auch teuer."
+     },
+     {
+      "w": "Ich verstehe deinen Punkt.",
+      "ex": "Ich verstehe deinen Punkt, trotzdem sehe ich das anders."
+     },
+     {
+      "w": "anderer Meinung sein",
+      "ex": "Da bin ich ganz anderer Meinung."
+     },
+     {
+      "w": "im Gegenteil",
+      "ex": "Es ist nicht langweilig, im Gegenteil, es ist spannend!"
+     },
+     {
+      "w": "Wie meinst du das?",
+      "ex": "Wie meinst du das genau?"
+     }
+    ],
+    "gram": "Konzessiv reagieren: Das mag sein, aber... / zwar..., aber...; trotzdem + Verb auf Position 2 (trotzdem sehe ich das anders)."
+   }
+  }
+ ]
+}

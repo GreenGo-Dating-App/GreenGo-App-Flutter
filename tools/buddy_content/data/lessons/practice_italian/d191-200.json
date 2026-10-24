@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 191,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Penso che + congiuntivo",
+     "g": "Give opinions with penso che, credo che, mi sembra che plus the subjunctive.",
+     "p": [
+      "Opinion verbs take the congiuntivo: penso che sia giusto, credo che abbia ragione, mi sembra che costi troppo.",
+      "Same subject? Use di + infinitive instead: penso di avere ragione (not penso che io abbia).",
+      "Other openers: non credo che, immagino che, ho l'impressione che. But secondo me + indicativo: secondo me è giusto."
+     ],
+     "q": "What do you think about learning languages with an app? Answer with penso che or mi sembra che.",
+     "c": "Give your opinion on three topics (your city, a film, a habit) with penso che, credo che and mi sembra che."
+    },
+    "de": {
+     "t": "Penso che + congiuntivo",
+     "g": "Du äußerst Meinungen mit penso che, credo che, mi sembra che und dem Konjunktiv.",
+     "p": [
+      "Meinungsverben verlangen den congiuntivo: penso che sia giusto, credo che abbia ragione, mi sembra che costi troppo.",
+      "Gleiches Subjekt? Dann di + Infinitiv: penso di avere ragione (nicht penso che io abbia).",
+      "Weitere Einstiege: non credo che, immagino che, ho l'impressione che. Aber secondo me + Indikativ: secondo me è giusto."
+     ],
+     "q": "Was hältst du davon, Sprachen mit einer App zu lernen? Antworte mit penso che oder mi sembra che.",
+     "c": "Sag deine Meinung zu drei Themen (deine Stadt, ein Film, eine Gewohnheit) mit penso che, credo che und mi sembra che."
+    },
+    "es": {
+     "t": "Penso che + congiuntivo",
+     "g": "Dar opiniones con penso che, credo che, mi sembra che y el subjuntivo.",
+     "p": [
+      "Ojo: en italiano la opinión lleva congiuntivo: penso che sia giusto, credo che abbia ragione, mi sembra che costi troppo.",
+      "¿Mismo sujeto? Usa di + infinitivo: penso di avere ragione (no penso che io abbia).",
+      "Otros inicios: non credo che, immagino che, ho l'impressione che. Pero secondo me + indicativo: secondo me è giusto."
+     ],
+     "q": "¿Qué opinas de aprender idiomas con una app? Responde con penso che o mi sembra che.",
+     "c": "Da tu opinión sobre tres temas (tu ciudad, una película, un hábito) con penso che, credo che y mi sembra che."
+    },
+    "fr": {
+     "t": "Penso che + congiuntivo",
+     "g": "Donner son avis avec penso che, credo che, mi sembra che et le subjonctif.",
+     "p": [
+      "En italien, l'opinion demande le congiuntivo : penso che sia giusto, credo che abbia ragione, mi sembra che costi troppo.",
+      "Même sujet ? Utilise di + infinitif : penso di avere ragione (et non penso che io abbia).",
+      "Autres débuts : non credo che, immagino che, ho l'impressione che. Mais secondo me + indicatif : secondo me è giusto."
+     ],
+     "q": "Que penses-tu de l'apprentissage des langues avec une appli ? Réponds avec penso che ou mi sembra che.",
+     "c": "Donne ton avis sur trois sujets (ta ville, un film, une habitude) avec penso che, credo che et mi sembra che."
+    },
+    "it": {
+     "t": "Penso che + congiuntivo",
+     "g": "Esprimere opinioni con penso che, credo che, mi sembra che + congiuntivo.",
+     "p": [
+      "I verbi di opinione vogliono il congiuntivo: penso che sia giusto, credo che abbia ragione, mi sembra che costi troppo.",
+      "Stesso soggetto? Si usa di + infinito: penso di avere ragione (non penso che io abbia ragione).",
+      "Altri inizi: non credo che, immagino che, ho l'impressione che. Ma secondo me + indicativo: secondo me è giusto."
+     ],
+     "q": "Che cosa pensi dell'imparare le lingue con un'app? Rispondi con penso che o mi sembra che.",
+     "c": "Dai la tua opinione su tre temi (la tua città, un film, un'abitudine) con penso che, credo che e mi sembra che."
+    },
+    "pt": {
+     "t": "Penso che + congiuntivo",
+     "g": "Dar opiniões com penso che, credo che, mi sembra che e o conjuntivo.",
+     "p": [
+      "Atenção: em italiano a opinião pede congiuntivo: penso che sia giusto, credo che abbia ragione, mi sembra che costi troppo.",
+      "Mesmo sujeito? Usa di + infinitivo: penso di avere ragione (e não penso che io abbia).",
+      "Outros começos: non credo che, immagino che, ho l'impressione che. Mas secondo me + indicativo: secondo me è giusto."
+     ],
+     "q": "O que pensas de aprender línguas com uma app? Responde com penso che ou mi sembra che.",
+     "c": "Dá a tua opinião sobre três temas (a tua cidade, um filme, um hábito) com penso che, credo che e mi sembra che."
+    },
+    "pt_BR": {
+     "t": "Penso che + congiuntivo",
+     "g": "Dar opiniões com penso che, credo che, mi sembra che e o subjuntivo.",
+     "p": [
+      "Atenção: em italiano a opinião pede congiuntivo: penso che sia giusto, credo che abbia ragione, mi sembra che costi troppo.",
+      "Mesmo sujeito? Use di + infinitivo: penso di avere ragione (e não penso che io abbia).",
+      "Outros começos: non credo che, immagino che, ho l'impressione che. Mas secondo me + indicativo: secondo me è giusto."
+     ],
+     "q": "O que você acha de aprender idiomas com um app? Responda com penso che ou mi sembra che.",
+     "c": "Dê sua opinião sobre três temas (sua cidade, um filme, um hábito) com penso che, credo che e mi sembra che."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "penso che",
+      "ex": "Penso che questo ristorante sia il migliore della zona."
+     },
+     {
+      "w": "credo che",
+      "ex": "Credo che Paolo abbia già deciso."
+     },
+     {
+      "w": "mi sembra che",
+      "ex": "Mi sembra che il film duri troppo."
+     },
+     {
+      "w": "non credo che",
+      "ex": "Non credo che sia così difficile."
+     },
+     {
+      "w": "penso di",
+      "ex": "Penso di partire venerdì mattina."
+     },
+     {
+      "w": "ho l'impressione che",
+      "ex": "Ho l'impressione che tu sia un po' stanco."
+     }
+    ],
+    "gram": "Penso che, credo che, mi sembra che + congiuntivo. Stesso soggetto: penso di + infinito. Secondo me + indicativo."
+   }
+  },
+  {
+   "d": 192,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Wishes: voglio che, spero che",
+     "g": "Express wishes about other people: spero che tu stia bene, voglio che venga anche lei.",
+     "p": [
+      "Wish verbs + che + congiuntivo when the subject changes: spero che tu stia bene, voglio che venga anche lei.",
+      "Same subject: spero di vederti presto, voglio venire anch'io (infinitive, no che).",
+      "Other wish verbs: preferisco che, desidero che, mi auguro che. Classic warm closing: spero che vada tutto bene!"
+     ],
+     "q": "What do you hope for the people you love this month? Use spero che + subjunctive.",
+     "c": "Write a short message to a friend with two wishes: spero che... and mi auguro che..."
+    },
+    "de": {
+     "t": "Wünsche: voglio che, spero che",
+     "g": "Du drückst Wünsche für andere aus: spero che tu stia bene, voglio che venga anche lei.",
+     "p": [
+      "Wunschverben + che + congiuntivo, wenn das Subjekt wechselt: spero che tu stia bene, voglio che venga anche lei.",
+      "Gleiches Subjekt: spero di vederti presto, voglio venire anch'io (Infinitiv, kein che).",
+      "Weitere Wunschverben: preferisco che, desidero che, mi auguro che. Herzlicher Schluss: spero che vada tutto bene!"
+     ],
+     "q": "Was wünschst du den Menschen, die du liebst, für diesen Monat? Benutze spero che + Konjunktiv.",
+     "c": "Schreib einem Freund eine kurze Nachricht mit zwei Wünschen: spero che... und mi auguro che..."
+    },
+    "es": {
+     "t": "Deseos: voglio che, spero che",
+     "g": "Expresar deseos sobre otras personas: spero che tu stia bene, voglio che venga anche lei.",
+     "p": [
+      "Verbos de deseo + che + congiuntivo si cambia el sujeto: spero che tu stia bene, voglio che venga anche lei.",
+      "Mismo sujeto: spero di vederti presto, voglio venire anch'io (infinitivo, sin che).",
+      "Otros verbos: preferisco che, desidero che, mi auguro che. Cierre cariñoso: spero che vada tutto bene!"
+     ],
+     "q": "¿Qué deseas este mes para las personas que quieres? Usa spero che + subjuntivo.",
+     "c": "Escribe un mensaje breve a un amigo con dos deseos: spero che... y mi auguro che..."
+    },
+    "fr": {
+     "t": "Souhaits : voglio che, spero che",
+     "g": "Exprimer des souhaits pour les autres : spero che tu stia bene, voglio che venga anche lei.",
+     "p": [
+      "Verbes de souhait + che + congiuntivo si le sujet change : spero che tu stia bene, voglio che venga anche lei.",
+      "Attention : spero che prend le subjonctif, alors que j'espère que prend l'indicatif. Même sujet : spero di vederti presto.",
+      "Autres verbes : preferisco che, desidero che, mi auguro che. Belle formule : spero che vada tutto bene !"
+     ],
+     "q": "Que souhaites-tu ce mois-ci aux personnes que tu aimes ? Utilise spero che + subjonctif.",
+     "c": "Écris un petit message à un ami avec deux souhaits : spero che... et mi auguro che..."
+    },
+    "it": {
+     "t": "Desideri: voglio che, spero che",
+     "g": "Esprimere desideri sugli altri: spero che tu stia bene, voglio che venga anche lei.",
+     "p": [
+      "Verbi di desiderio + che + congiuntivo quando il soggetto cambia: spero che tu stia bene, voglio che venga anche lei.",
+      "Stesso soggetto: spero di vederti presto, voglio venire anch'io (infinito, senza che).",
+      "Altri verbi: preferisco che, desidero che, mi auguro che. Chiusura affettuosa: spero che vada tutto bene!"
+     ],
+     "q": "Che cosa speri per le persone a cui vuoi bene questo mese? Usa spero che + congiuntivo.",
+     "c": "Scrivi un breve messaggio a un amico con due auguri: spero che... e mi auguro che..."
+    },
+    "pt": {
+     "t": "Desejos: voglio che, spero che",
+     "g": "Exprimir desejos sobre outras pessoas: spero che tu stia bene, voglio che venga anche lei.",
+     "p": [
+      "Verbos de desejo + che + congiuntivo quando o sujeito muda: spero che tu stia bene, voglio che venga anche lei.",
+      "Mesmo sujeito: spero di vederti presto, voglio venire anch'io (infinitivo, sem che).",
+      "Outros verbos: preferisco che, desidero che, mi auguro che. Fecho carinhoso: spero che vada tutto bene!"
+     ],
+     "q": "O que desejas este mês para as pessoas de quem gostas? Usa spero che + conjuntivo.",
+     "c": "Escreve uma mensagem curta a um amigo com dois desejos: spero che... e mi auguro che..."
+    },
+    "pt_BR": {
+     "t": "Desejos: voglio che, spero che",
+     "g": "Expressar desejos sobre outras pessoas: spero che tu stia bene, voglio che venga anche lei.",
+     "p": [
+      "Verbos de desejo + che + congiuntivo quando o sujeito muda: spero che tu stia bene, voglio che venga anche lei.",
+      "Mesmo sujeito: spero di vederti presto, voglio venire anch'io (infinitivo, sem che).",
+      "Outros verbos: preferisco che, desidero che, mi auguro che. Fechamento carinhoso: spero che vada tutto bene!"
+     ],
+     "q": "O que você deseja neste mês para as pessoas que ama? Use spero che + subjuntivo.",
+     "c": "Escreva uma mensagem curta para um amigo com dois desejos: spero che... e mi auguro che..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "spero che tu stia bene",
+      "ex": "Ciao Anna, spero che tu stia bene!"
+     },
+     {
+      "w": "voglio che",
+      "ex": "Voglio che venga anche tua sorella."
+     },
+     {
+      "w": "preferisco che",
+      "ex": "Preferisco che ci vediamo in centro."
+     },
+     {
+      "w": "mi auguro che",
+      "ex": "Mi auguro che il viaggio sia piacevole."
+     },
+     {
+      "w": "spero di",
+      "ex": "Spero di rivederti presto."
+     },
+     {
+      "w": "vada tutto bene",
+      "ex": "Spero che vada tutto bene all'esame."
+     }
+    ],
+    "gram": "Spero che, voglio che, preferisco che, mi auguro che + congiuntivo. Stesso soggetto: spero di / voglio + infinito."
+   }
+  },
+  {
+   "d": 193,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Emotions: sono contento che",
+     "g": "Share feelings about what others do: sono felice che, mi dispiace che, ho paura che + subjunctive.",
+     "p": [
+      "Emotion + che + congiuntivo: sono contento che tu sia qui; mi dispiace che tu non stia bene.",
+      "Fear and surprise: ho paura che piova; mi stupisce che non lo sappia; è un peccato che parta.",
+      "Same subject: sono contento di essere qui, mi dispiace di non poter venire."
+     ],
+     "q": "What is something a friend did recently that made you happy? Say sono felice che...",
+     "c": "Write three sentences about your week: sono contento/a che..., mi dispiace che..., ho paura che..."
+    },
+    "de": {
+     "t": "Gefühle: sono contento che",
+     "g": "Du sprichst über Gefühle zu dem, was andere tun: sono felice che, mi dispiace che, ho paura che + Konjunktiv.",
+     "p": [
+      "Gefühl + che + congiuntivo: sono contento che tu sia qui; mi dispiace che tu non stia bene.",
+      "Angst und Staunen: ho paura che piova; mi stupisce che non lo sappia; è un peccato che parta.",
+      "Gleiches Subjekt: sono contento di essere qui, mi dispiace di non poter venire."
+     ],
+     "q": "Was hat ein Freund kürzlich getan, das dich gefreut hat? Sag sono felice che...",
+     "c": "Schreib drei Sätze über deine Woche: sono contento/a che..., mi dispiace che..., ho paura che..."
+    },
+    "es": {
+     "t": "Emociones: sono contento che",
+     "g": "Hablar de sentimientos sobre lo que hacen otros: sono felice che, mi dispiace che, ho paura che + subjuntivo.",
+     "p": [
+      "Emoción + che + congiuntivo: sono contento che tu sia qui; mi dispiace che tu non stia bene.",
+      "Miedo y sorpresa: ho paura che piova; mi stupisce che non lo sappia; è un peccato che parta.",
+      "Mismo sujeto: sono contento di essere qui, mi dispiace di non poter venire."
+     ],
+     "q": "¿Qué hizo hace poco un amigo que te alegró? Di sono felice che...",
+     "c": "Escribe tres frases sobre tu semana: sono contento/a che..., mi dispiace che..., ho paura che..."
+    },
+    "fr": {
+     "t": "Émotions : sono contento che",
+     "g": "Parler de ses sentiments face aux autres : sono felice che, mi dispiace che, ho paura che + subjonctif.",
+     "p": [
+      "Émotion + che + congiuntivo : sono contento che tu sia qui ; mi dispiace che tu non stia bene.",
+      "Peur et surprise : ho paura che piova ; mi stupisce che non lo sappia ; è un peccato che parta.",
+      "Même sujet : sono contento di essere qui, mi dispiace di non poter venire."
+     ],
+     "q": "Qu'a fait récemment un ami qui t'a rendu heureux ? Dis sono felice che...",
+     "c": "Écris trois phrases sur ta semaine : sono contento/a che..., mi dispiace che..., ho paura che..."
+    },
+    "it": {
+     "t": "Emozioni: sono contento che",
+     "g": "Esprimere sentimenti su ciò che fanno gli altri: sono felice che, mi dispiace che, ho paura che + congiuntivo.",
+     "p": [
+      "Emozione + che + congiuntivo: sono contento che tu sia qui; mi dispiace che tu non stia bene.",
+      "Paura e sorpresa: ho paura che piova; mi stupisce che non lo sappia; è un peccato che parta.",
+      "Stesso soggetto: sono contento di essere qui, mi dispiace di non poter venire."
+     ],
+     "q": "Che cosa ha fatto di recente un amico che ti ha reso felice? Di' sono felice che...",
+     "c": "Scrivi tre frasi sulla tua settimana: sono contento/a che..., mi dispiace che..., ho paura che..."
+    },
+    "pt": {
+     "t": "Emoções: sono contento che",
+     "g": "Falar de sentimentos sobre o que os outros fazem: sono felice che, mi dispiace che, ho paura che + conjuntivo.",
+     "p": [
+      "Emoção + che + congiuntivo: sono contento che tu sia qui; mi dispiace che tu non stia bene.",
+      "Medo e surpresa: ho paura che piova; mi stupisce che non lo sappia; è un peccato che parta.",
+      "Mesmo sujeito: sono contento di essere qui, mi dispiace di non poter venire."
+     ],
+     "q": "O que fez recentemente um amigo que te deixou feliz? Diz sono felice che...",
+     "c": "Escreve três frases sobre a tua semana: sono contento/a che..., mi dispiace che..., ho paura che..."
+    },
+    "pt_BR": {
+     "t": "Emoções: sono contento che",
+     "g": "Falar de sentimentos sobre o que os outros fazem: sono felice che, mi dispiace che, ho paura che + subjuntivo.",
+     "p": [
+      "Emoção + che + congiuntivo: sono contento che tu sia qui; mi dispiace che tu non stia bene.",
+      "Medo e surpresa: ho paura che piova; mi stupisce che non lo sappia; è un peccato che parta.",
+      "Mesmo sujeito: sono contento di essere qui, mi dispiace di non poter venire."
+     ],
+     "q": "O que um amigo fez recentemente que te deixou feliz? Diga sono felice che...",
+     "c": "Escreva três frases sobre sua semana: sono contento/a che..., mi dispiace che..., ho paura che..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "sono contento che",
+      "ex": "Sono contento che tu sia venuto alla festa."
+     },
+     {
+      "w": "mi dispiace che",
+      "ex": "Mi dispiace che tu non possa restare."
+     },
+     {
+      "w": "ho paura che",
+      "ex": "Ho paura che domani piova."
+     },
+     {
+      "w": "è un peccato che",
+      "ex": "È un peccato che il museo sia chiuso."
+     },
+     {
+      "w": "mi stupisce che",
+      "ex": "Mi stupisce che lui non sappia nuotare."
+     },
+     {
+      "w": "sono felice di",
+      "ex": "Sono felice di conoscerti."
+     }
+    ],
+    "gram": "Verbi ed espressioni di emozione + che + congiuntivo: sono contento che tu sia qui. Stesso soggetto: di + infinito."
+   }
+  },
+  {
+   "d": 194,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Impersonal expressions",
+     "g": "Use è importante che, bisogna che, è possibile che plus the subjunctive.",
+     "p": [
+      "Impersonal phrases + che + congiuntivo: è importante che tu dorma, bisogna che partiamo presto.",
+      "Possibility and need: è possibile che, è probabile che, è necessario che, è meglio che, basta che.",
+      "For a general rule with no specific person, use the infinitive: è importante dormire, bisogna partire presto."
+     ],
+     "q": "What is important for learning a language well? Answer with è importante che or bisogna che.",
+     "c": "Write four tips for a visitor to your city with è meglio che, bisogna che, è importante che and basta che."
+    },
+    "de": {
+     "t": "Unpersönliche Ausdrücke",
+     "g": "Du benutzt è importante che, bisogna che, è possibile che mit dem Konjunktiv.",
+     "p": [
+      "Unpersönliche Ausdrücke + che + congiuntivo: è importante che tu dorma, bisogna che partiamo presto.",
+      "Möglichkeit und Notwendigkeit: è possibile che, è probabile che, è necessario che, è meglio che, basta che.",
+      "Für allgemeine Regeln ohne Person steht der Infinitiv: è importante dormire, bisogna partire presto."
+     ],
+     "q": "Was ist wichtig, um eine Sprache gut zu lernen? Antworte mit è importante che oder bisogna che.",
+     "c": "Schreib vier Tipps für Besucher deiner Stadt mit è meglio che, bisogna che, è importante che und basta che."
+    },
+    "es": {
+     "t": "Expresiones impersonales",
+     "g": "Usar è importante che, bisogna che, è possibile che con el subjuntivo.",
+     "p": [
+      "Expresiones impersonales + che + congiuntivo: è importante che tu dorma, bisogna che partiamo presto.",
+      "Posibilidad y necesidad: è possibile che, è probabile che, è necessario che, è meglio che, basta che.",
+      "Para una regla general sin persona concreta, infinitivo: è importante dormire, bisogna partire presto."
+     ],
+     "q": "¿Qué es importante para aprender bien un idioma? Responde con è importante che o bisogna che.",
+     "c": "Escribe cuatro consejos para quien visite tu ciudad con è meglio che, bisogna che, è importante che y basta che."
+    },
+    "fr": {
+     "t": "Expressions impersonnelles",
+     "g": "Utiliser è importante che, bisogna che, è possibile che avec le subjonctif.",
+     "p": [
+      "Expressions impersonnelles + che + congiuntivo : è importante che tu dorma, bisogna che partiamo presto.",
+      "Possibilité et nécessité : è possibile che, è probabile che, è necessario che, è meglio che, basta che.",
+      "Pour une règle générale sans personne précise, l'infinitif : è importante dormire, bisogna partire presto."
+     ],
+     "q": "Qu'est-ce qui est important pour bien apprendre une langue ? Réponds avec è importante che ou bisogna che.",
+     "c": "Écris quatre conseils pour un visiteur de ta ville avec è meglio che, bisogna che, è importante che et basta che."
+    },
+    "it": {
+     "t": "Le espressioni impersonali",
+     "g": "Usare è importante che, bisogna che, è possibile che + congiuntivo.",
+     "p": [
+      "Espressioni impersonali + che + congiuntivo: è importante che tu dorma, bisogna che partiamo presto.",
+      "Possibilità e necessità: è possibile che, è probabile che, è necessario che, è meglio che, basta che.",
+      "Per una regola generale, senza una persona precisa, si usa l'infinito: è importante dormire, bisogna partire presto."
+     ],
+     "q": "Che cosa è importante per imparare bene una lingua? Rispondi con è importante che o bisogna che.",
+     "c": "Scrivi quattro consigli per chi visita la tua città con è meglio che, bisogna che, è importante che e basta che."
+    },
+    "pt": {
+     "t": "Expressões impessoais",
+     "g": "Usar è importante che, bisogna che, è possibile che com o conjuntivo.",
+     "p": [
+      "Expressões impessoais + che + congiuntivo: è importante che tu dorma, bisogna che partiamo presto.",
+      "Possibilidade e necessidade: è possibile che, è probabile che, è necessario che, è meglio che, basta che.",
+      "Para uma regra geral, sem pessoa concreta, infinitivo: è importante dormire, bisogna partire presto."
+     ],
+     "q": "O que é importante para aprender bem uma língua? Responde com è importante che ou bisogna che.",
+     "c": "Escreve quatro conselhos para quem visita a tua cidade com è meglio che, bisogna che, è importante che e basta che."
+    },
+    "pt_BR": {
+     "t": "Expressões impessoais",
+     "g": "Usar è importante che, bisogna che, è possibile che com o subjuntivo.",
+     "p": [
+      "Expressões impessoais + che + congiuntivo: è importante che tu dorma, bisogna che partiamo presto.",
+      "Possibilidade e necessidade: è possibile che, è probabile che, è necessario che, è meglio che, basta che.",
+      "Para uma regra geral, sem pessoa concreta, infinitivo: è importante dormire, bisogna partire presto."
+     ],
+     "q": "O que é importante para aprender bem um idioma? Responda com è importante che ou bisogna che.",
+     "c": "Escreva quatro dicas para quem visita sua cidade com è meglio che, bisogna che, è importante che e basta che."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "è importante che",
+      "ex": "È importante che tu beva molta acqua d'estate."
+     },
+     {
+      "w": "bisogna che",
+      "ex": "Bisogna che prenotiamo il tavolo oggi."
+     },
+     {
+      "w": "è possibile che",
+      "ex": "È possibile che il treno arrivi in ritardo."
+     },
+     {
+      "w": "è meglio che",
+      "ex": "È meglio che tu prenda l'ombrello."
+     },
+     {
+      "w": "basta che",
+      "ex": "Puoi venire anche tu, basta che arrivi in orario."
+     },
+     {
+      "w": "è necessario",
+      "ex": "È necessario mostrare il biglietto all'ingresso."
+     }
+    ],
+    "gram": "È importante/possibile/meglio che, bisogna che, basta che + congiuntivo. Senza soggetto preciso: è importante + infinito."
+   }
+  },
+  {
+   "d": 195,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Review: B1 tenses and congiuntivo",
+     "g": "Recap compound tenses, the past conditional and the present subjunctive.",
+     "p": [
+      "Compound tenses: trapassato (era già partito), futuro anteriore (avrò finito; avrà perso il treno).",
+      "Condizionale passato: regrets (avrei voluto), future in the past (ha detto che sarebbe venuto), advice (avresti dovuto).",
+      "Congiuntivo presente after opinions, wishes, emotions and impersonal phrases: penso che sia, spero che vada."
+     ],
+     "q": "Which of these structures feels most natural to you now, and which one still needs practice?",
+     "c": "Write a short paragraph about a past plan that changed, using one trapassato, one avrei voluto and one spero che."
+    },
+    "de": {
+     "t": "Wiederholung: B1-Zeiten und congiuntivo",
+     "g": "Du wiederholst zusammengesetzte Zeiten, den condizionale passato und den congiuntivo presente.",
+     "p": [
+      "Zusammengesetzte Zeiten: trapassato (era già partito), futuro anteriore (avrò finito; avrà perso il treno).",
+      "Condizionale passato: Bedauern (avrei voluto), Zukunft in der Vergangenheit (sarebbe venuto), Rat (avresti dovuto).",
+      "Congiuntivo presente nach Meinung, Wunsch, Gefühl und unpersönlichen Ausdrücken: penso che sia, spero che vada."
+     ],
+     "q": "Welche dieser Strukturen fühlt sich schon natürlich an, und welche brauchst du noch zum Üben?",
+     "c": "Schreib einen kurzen Absatz über einen geänderten Plan mit einem trapassato, einem avrei voluto und einem spero che."
+    },
+    "es": {
+     "t": "Repaso: tiempos B1 y congiuntivo",
+     "g": "Repasar los tiempos compuestos, el condizionale passato y el congiuntivo presente.",
+     "p": [
+      "Tiempos compuestos: trapassato (era già partito), futuro anteriore (avrò finito; avrà perso il treno).",
+      "Condizionale passato: lamentos (avrei voluto), futuro en el pasado (sarebbe venuto), consejos (avresti dovuto).",
+      "Congiuntivo presente tras opiniones, deseos, emociones y expresiones impersonales: penso che sia, spero che vada."
+     ],
+     "q": "¿Cuál de estas estructuras te sale ya natural y cuál necesita más práctica?",
+     "c": "Escribe un párrafo sobre un plan que cambió con un trapassato, un avrei voluto y un spero che."
+    },
+    "fr": {
+     "t": "Révision : temps B1 et congiuntivo",
+     "g": "Réviser les temps composés, le condizionale passato et le congiuntivo presente.",
+     "p": [
+      "Temps composés : trapassato (era già partito), futuro anteriore (avrò finito ; avrà perso il treno).",
+      "Condizionale passato : regrets (avrei voluto), futur dans le passé (sarebbe venuto), conseils (avresti dovuto).",
+      "Congiuntivo presente après opinion, souhait, émotion et tournures impersonnelles : penso che sia, spero che vada."
+     ],
+     "q": "Laquelle de ces structures te paraît déjà naturelle, et laquelle demande encore de la pratique ?",
+     "c": "Écris un court paragraphe sur un projet qui a changé, avec un trapassato, un avrei voluto et un spero che."
+    },
+    "it": {
+     "t": "Ripasso: tempi B1 e congiuntivo",
+     "g": "Ripassare i tempi composti, il condizionale passato e il congiuntivo presente.",
+     "p": [
+      "Tempi composti: trapassato (era già partito), futuro anteriore (avrò finito; avrà perso il treno).",
+      "Condizionale passato: rimpianti (avrei voluto), futuro nel passato (sarebbe venuto), consigli (avresti dovuto).",
+      "Congiuntivo presente dopo opinioni, desideri, emozioni ed espressioni impersonali: penso che sia, spero che vada."
+     ],
+     "q": "Quale di queste strutture ti viene già naturale e quale ha ancora bisogno di pratica?",
+     "c": "Scrivi un breve paragrafo su un progetto cambiato, con un trapassato, un avrei voluto e uno spero che."
+    },
+    "pt": {
+     "t": "Revisão: tempos B1 e congiuntivo",
+     "g": "Rever os tempos compostos, o condizionale passato e o congiuntivo presente.",
+     "p": [
+      "Tempos compostos: trapassato (era già partito), futuro anteriore (avrò finito; avrà perso il treno).",
+      "Condizionale passato: pena (avrei voluto), futuro no passado (sarebbe venuto), conselhos (avresti dovuto).",
+      "Congiuntivo presente depois de opiniões, desejos, emoções e expressões impessoais: penso che sia, spero che vada."
+     ],
+     "q": "Qual destas estruturas já te sai natural e qual ainda precisa de prática?",
+     "c": "Escreve um parágrafo curto sobre um plano que mudou, com um trapassato, um avrei voluto e um spero che."
+    },
+    "pt_BR": {
+     "t": "Revisão: tempos B1 e congiuntivo",
+     "g": "Revisar os tempos compostos, o condizionale passato e o congiuntivo presente.",
+     "p": [
+      "Tempos compostos: trapassato (era già partito), futuro anteriore (avrò finito; avrà perso il treno).",
+      "Condizionale passato: arrependimento (avrei voluto), futuro no passado (sarebbe venuto), conselhos (avresti dovuto).",
+      "Congiuntivo presente depois de opiniões, desejos, emoções e expressões impessoais: penso che sia, spero che vada."
+     ],
+     "q": "Qual dessas estruturas já sai natural para você e qual ainda precisa de prática?",
+     "c": "Escreva um parágrafo curto sobre um plano que mudou, com um trapassato, um avrei voluto e um spero che."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "era già partito",
+      "ex": "Quando ho chiamato, era già partito."
+     },
+     {
+      "w": "avrò finito",
+      "ex": "Appena avrò finito, ti raggiungerò."
+     },
+     {
+      "w": "avrei voluto",
+      "ex": "Avrei voluto restare di più a Firenze."
+     },
+     {
+      "w": "sarebbe venuto",
+      "ex": "Mi aveva detto che sarebbe venuto."
+     },
+     {
+      "w": "penso che sia",
+      "ex": "Penso che sia il momento giusto."
+     },
+     {
+      "w": "spero che vada",
+      "ex": "Spero che vada tutto per il meglio."
+     }
+    ],
+    "gram": "Ripasso B1: trapassato, futuro anteriore, condizionale passato, congiuntivo presente dopo verbi di opinione, desiderio ed emozione."
+   }
+  },
+  {
+   "d": 196,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Conjunctions with the subjunctive",
+     "g": "Use benché, sebbene, affinché, prima che, a patto che, senza che with the subjunctive.",
+     "p": [
+      "Concession: benché / sebbene piova, usciamo (although it is raining). Purpose: te lo dico affinché tu lo sappia.",
+      "Time and condition: prima che arrivi, a patto che / purché tu mi aiuti, senza che nessuno lo sappia.",
+      "Same subject? Use the infinitive: prima di partire, senza dire niente, per imparare (not prima che io parta)."
+     ],
+     "q": "Is there something you do even though it is difficult? Answer with benché or sebbene.",
+     "c": "Write four sentences about a trip with benché, prima che, a patto che and senza che."
+    },
+    "de": {
+     "t": "Konjunktionen mit dem Konjunktiv",
+     "g": "Du benutzt benché, sebbene, affinché, prima che, a patto che, senza che mit dem Konjunktiv.",
+     "p": [
+      "Einräumung: benché / sebbene piova, usciamo (obwohl es regnet). Zweck: te lo dico affinché tu lo sappia.",
+      "Zeit und Bedingung: prima che arrivi, a patto che / purché tu mi aiuti, senza che nessuno lo sappia.",
+      "Gleiches Subjekt? Dann Infinitiv: prima di partire, senza dire niente, per imparare (nicht prima che io parta)."
+     ],
+     "q": "Gibt es etwas, das du tust, obwohl es schwierig ist? Antworte mit benché oder sebbene.",
+     "c": "Schreib vier Sätze über eine Reise mit benché, prima che, a patto che und senza che."
+    },
+    "es": {
+     "t": "Conjunciones con subjuntivo",
+     "g": "Usar benché, sebbene, affinché, prima che, a patto che, senza che con el subjuntivo.",
+     "p": [
+      "Concesión: benché / sebbene piova, usciamo (aunque llueva). Finalidad: te lo dico affinché tu lo sappia.",
+      "Tiempo y condición: prima che arrivi, a patto che / purché tu mi aiuti, senza che nessuno lo sappia.",
+      "¿Mismo sujeto? Infinitivo: prima di partire, senza dire niente, per imparare (no prima che io parta)."
+     ],
+     "q": "¿Hay algo que haces aunque sea difícil? Responde con benché o sebbene.",
+     "c": "Escribe cuatro frases sobre un viaje con benché, prima che, a patto che y senza che."
+    },
+    "fr": {
+     "t": "Conjonctions + subjonctif",
+     "g": "Utiliser benché, sebbene, affinché, prima che, a patto che, senza che avec le subjonctif.",
+     "p": [
+      "Concession : benché / sebbene piova, usciamo (bien qu'il pleuve). But : te lo dico affinché tu lo sappia.",
+      "Temps et condition : prima che arrivi, a patto che / purché tu mi aiuti, senza che nessuno lo sappia.",
+      "Même sujet ? L'infinitif : prima di partire, senza dire niente, per imparare (et non prima che io parta)."
+     ],
+     "q": "Y a-t-il une chose que tu fais bien qu'elle soit difficile ? Réponds avec benché ou sebbene.",
+     "c": "Écris quatre phrases sur un voyage avec benché, prima che, a patto che et senza che."
+    },
+    "it": {
+     "t": "Congiunzioni con il congiuntivo",
+     "g": "Usare benché, sebbene, affinché, prima che, a patto che, senza che + congiuntivo.",
+     "p": [
+      "Concessione: benché / sebbene piova, usciamo. Scopo: te lo dico affinché tu lo sappia.",
+      "Tempo e condizione: prima che arrivi, a patto che / purché tu mi aiuti, senza che nessuno lo sappia.",
+      "Stesso soggetto? Si usa l'infinito: prima di partire, senza dire niente, per imparare."
+     ],
+     "q": "C'è qualcosa che fai anche se è difficile? Rispondi con benché o sebbene.",
+     "c": "Scrivi quattro frasi su un viaggio con benché, prima che, a patto che e senza che."
+    },
+    "pt": {
+     "t": "Conjunções com conjuntivo",
+     "g": "Usar benché, sebbene, affinché, prima che, a patto che, senza che com o conjuntivo.",
+     "p": [
+      "Concessão: benché / sebbene piova, usciamo (embora chova). Finalidade: te lo dico affinché tu lo sappia.",
+      "Tempo e condição: prima che arrivi, a patto che / purché tu mi aiuti, senza che nessuno lo sappia.",
+      "Mesmo sujeito? Infinitivo: prima di partire, senza dire niente, per imparare (e não prima che io parta)."
+     ],
+     "q": "Há alguma coisa que fazes embora seja difícil? Responde com benché ou sebbene.",
+     "c": "Escreve quatro frases sobre uma viagem com benché, prima che, a patto che e senza che."
+    },
+    "pt_BR": {
+     "t": "Conjunções com subjuntivo",
+     "g": "Usar benché, sebbene, affinché, prima che, a patto che, senza che com o subjuntivo.",
+     "p": [
+      "Concessão: benché / sebbene piova, usciamo (embora chova). Finalidade: te lo dico affinché tu lo sappia.",
+      "Tempo e condição: prima che arrivi, a patto che / purché tu mi aiuti, senza che nessuno lo sappia.",
+      "Mesmo sujeito? Infinitivo: prima di partire, senza dire niente, per imparare (e não prima che io parta)."
+     ],
+     "q": "Tem algo que você faz embora seja difícil? Responda com benché ou sebbene.",
+     "c": "Escreva quatro frases sobre uma viagem com benché, prima che, a patto che e senza che."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "benché",
+      "ex": "Benché sia stanca, vuole finire il libro stasera."
+     },
+     {
+      "w": "sebbene",
+      "ex": "Sebbene piova, andiamo a fare una passeggiata."
+     },
+     {
+      "w": "affinché",
+      "ex": "Parlo piano affinché tutti capiscano."
+     },
+     {
+      "w": "prima che",
+      "ex": "Torniamo a casa prima che faccia buio."
+     },
+     {
+      "w": "a patto che",
+      "ex": "Ti presto la bici a patto che tu me la riporti domani."
+     },
+     {
+      "w": "senza che",
+      "ex": "Esce sempre senza che nessuno se ne accorga."
+     }
+    ],
+    "gram": "Benché, sebbene, affinché, prima che, a patto che, purché, senza che + congiuntivo. Stesso soggetto: prima di / senza + infinito."
+   }
+  },
+  {
+   "d": 197,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Subjunctive or indicative?",
+     "g": "Tell certainty from opinion: so che è vero versus penso che sia vero.",
+     "p": [
+      "Certainty takes the indicativo: so che, sono sicuro che, è vero che, è chiaro che, vedo che + è.",
+      "Opinion, doubt and uncertainty take the congiuntivo: penso che, dubito che, non sono sicuro che + sia.",
+      "Negation can switch it: sono sicuro che viene / non sono sicuro che venga. Secondo me always takes the indicativo."
+     ],
+     "q": "Tell me one thing you know for sure about Italy and one thing you only think. Use so che and penso che.",
+     "c": "Write three pairs: so che... / penso che...; è vero che... / è possibile che...; sono sicuro che... / non sono sicuro che..."
+    },
+    "de": {
+     "t": "Konjunktiv oder Indikativ?",
+     "g": "Du unterscheidest Gewissheit von Meinung: so che è vero und penso che sia vero.",
+     "p": [
+      "Gewissheit verlangt den indicativo: so che, sono sicuro che, è vero che, è chiaro che, vedo che + è.",
+      "Meinung, Zweifel und Unsicherheit verlangen den congiuntivo: penso che, dubito che, non sono sicuro che + sia.",
+      "Verneinung kann wechseln: sono sicuro che viene / non sono sicuro che venga. Secondo me immer mit Indikativ."
+     ],
+     "q": "Nenn eine Sache, die du sicher über Italien weißt, und eine, die du nur glaubst. Mit so che und penso che.",
+     "c": "Schreib drei Paare: so che... / penso che...; è vero che... / è possibile che...; sono sicuro che... / non sono sicuro che..."
+    },
+    "es": {
+     "t": "¿Subjuntivo o indicativo?",
+     "g": "Distinguir certeza y opinión: so che è vero frente a penso che sia vero.",
+     "p": [
+      "La certeza va en indicativo: so che, sono sicuro che, è vero che, è chiaro che, vedo che + è.",
+      "Opinión, duda e incertidumbre van en congiuntivo: penso che, dubito che, non sono sicuro che + sia.",
+      "La negación puede cambiarlo: sono sicuro che viene / non sono sicuro che venga. Secondo me siempre con indicativo."
+     ],
+     "q": "Dime algo que sabes seguro sobre Italia y algo que solo crees. Usa so che y penso che.",
+     "c": "Escribe tres pares: so che... / penso che...; è vero che... / è possibile che...; sono sicuro che... / non sono sicuro che..."
+    },
+    "fr": {
+     "t": "Subjonctif ou indicatif ?",
+     "g": "Distinguer certitude et opinion : so che è vero et penso che sia vero.",
+     "p": [
+      "La certitude demande l'indicativo : so che, sono sicuro che, è vero che, è chiaro che, vedo che + è.",
+      "Opinion, doute et incertitude demandent le congiuntivo : penso che, dubito che, non sono sicuro che + sia.",
+      "La négation peut tout changer : sono sicuro che viene / non sono sicuro che venga. Secondo me + indicatif."
+     ],
+     "q": "Dis-moi une chose que tu sais sûrement sur l'Italie et une que tu crois seulement. Utilise so che et penso che.",
+     "c": "Écris trois paires : so che... / penso che... ; è vero che... / è possibile che... ; sono sicuro che... / non sono sicuro che..."
+    },
+    "it": {
+     "t": "Congiuntivo o indicativo?",
+     "g": "Distinguere certezza e opinione: so che è vero e penso che sia vero.",
+     "p": [
+      "La certezza vuole l'indicativo: so che, sono sicuro che, è vero che, è chiaro che, vedo che + è.",
+      "Opinione, dubbio e incertezza vogliono il congiuntivo: penso che, dubito che, non sono sicuro che + sia.",
+      "La negazione può cambiare modo: sono sicuro che viene / non sono sicuro che venga. Secondo me + indicativo."
+     ],
+     "q": "Dimmi una cosa che sai di sicuro sull'Italia e una che pensi soltanto. Usa so che e penso che.",
+     "c": "Scrivi tre coppie: so che... / penso che...; è vero che... / è possibile che...; sono sicuro che... / non sono sicuro che..."
+    },
+    "pt": {
+     "t": "Conjuntivo ou indicativo?",
+     "g": "Distinguir certeza e opinião: so che è vero e penso che sia vero.",
+     "p": [
+      "A certeza pede indicativo: so che, sono sicuro che, è vero che, è chiaro che, vedo che + è.",
+      "Opinião, dúvida e incerteza pedem congiuntivo: penso che, dubito che, non sono sicuro che + sia.",
+      "A negação pode mudar o modo: sono sicuro che viene / non sono sicuro che venga. Secondo me + indicativo."
+     ],
+     "q": "Diz-me uma coisa que sabes de certeza sobre Itália e outra que só achas. Usa so che e penso che.",
+     "c": "Escreve três pares: so che... / penso che...; è vero che... / è possibile che...; sono sicuro che... / non sono sicuro che..."
+    },
+    "pt_BR": {
+     "t": "Subjuntivo ou indicativo?",
+     "g": "Distinguir certeza e opinião: so che è vero e penso che sia vero.",
+     "p": [
+      "A certeza pede indicativo: so che, sono sicuro che, è vero che, è chiaro che, vedo che + è.",
+      "Opinião, dúvida e incerteza pedem congiuntivo: penso che, dubito che, non sono sicuro che + sia.",
+      "A negação pode mudar o modo: sono sicuro che viene / non sono sicuro che venga. Secondo me + indicativo."
+     ],
+     "q": "Diga uma coisa que você sabe com certeza sobre a Itália e outra que só acha. Use so che e penso che.",
+     "c": "Escreva três pares: so che... / penso che...; è vero che... / è possibile che...; sono sicuro che... / non sono sicuro che..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "so che",
+      "ex": "So che Venezia è costruita sull'acqua."
+     },
+     {
+      "w": "sono sicuro che",
+      "ex": "Sono sicuro che domani viene anche Giulia."
+     },
+     {
+      "w": "non sono sicuro che",
+      "ex": "Non sono sicuro che il negozio sia aperto."
+     },
+     {
+      "w": "è chiaro che",
+      "ex": "È chiaro che ti piace molto l'Italia."
+     },
+     {
+      "w": "dubito che",
+      "ex": "Dubito che arrivino in tempo."
+     },
+     {
+      "w": "secondo me",
+      "ex": "Secondo me questa pizza è la migliore."
+     }
+    ],
+    "gram": "Certezza (so che, è vero che, sono sicuro che) + indicativo; opinione e dubbio (penso che, dubito che) + congiuntivo."
+   }
+  },
+  {
+   "d": 198,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Congiuntivo passato",
+     "g": "Use the past subjunctive: penso che abbia già mangiato, sono contento che tu sia venuto.",
+     "p": [
+      "Form: congiuntivo of avere or essere + past participle: abbia mangiato, sia venuto/a, siano partiti.",
+      "Use it when the main verb is present and the action is already over: penso che abbia già mangiato.",
+      "Compare: spero che arrivi (now or later) versus spero che sia arrivato (already, I hope)."
+     ],
+     "q": "Think of a friend who travelled recently. What do you hope they did there? Use spero che abbia...",
+     "c": "Write three sentences with sono contento che, penso che and mi dispiace che + congiuntivo passato."
+    },
+    "de": {
+     "t": "Congiuntivo passato",
+     "g": "Du benutzt den Konjunktiv der Vergangenheit: penso che abbia già mangiato, sono contento che tu sia venuto.",
+     "p": [
+      "Bildung: congiuntivo von avere oder essere + Partizip: abbia mangiato, sia venuto/a, siano partiti.",
+      "Er steht, wenn das Hauptverb im Präsens ist und die Handlung schon vorbei: penso che abbia già mangiato.",
+      "Vergleich: spero che arrivi (jetzt oder später) und spero che sia arrivato (hoffentlich schon angekommen)."
+     ],
+     "q": "Denk an einen Freund, der kürzlich verreist ist. Was hoffst du, hat er dort gemacht? Mit spero che abbia...",
+     "c": "Schreib drei Sätze mit sono contento che, penso che und mi dispiace che + congiuntivo passato."
+    },
+    "es": {
+     "t": "Congiuntivo passato",
+     "g": "Usar el subjuntivo pasado: penso che abbia già mangiato, sono contento che tu sia venuto.",
+     "p": [
+      "Forma: congiuntivo de avere o essere + participio: abbia mangiato, sia venuto/a, siano partiti.",
+      "Se usa cuando el verbo principal está en presente y la acción ya terminó: penso che abbia già mangiato.",
+      "Compara: spero che arrivi (ahora o después) y spero che sia arrivato (espero que ya haya llegado)."
+     ],
+     "q": "Piensa en un amigo que viajó hace poco. ¿Qué esperas que haya hecho allí? Usa spero che abbia...",
+     "c": "Escribe tres frases con sono contento che, penso che y mi dispiace che + congiuntivo passato."
+    },
+    "fr": {
+     "t": "Congiuntivo passato",
+     "g": "Utiliser le subjonctif passé : penso che abbia già mangiato, sono contento che tu sia venuto.",
+     "p": [
+      "Forme : congiuntivo de avere ou essere + participe : abbia mangiato, sia venuto/a, siano partiti.",
+      "On l'emploie quand le verbe principal est au présent et l'action déjà finie : penso che abbia già mangiato.",
+      "Compare : spero che arrivi (maintenant ou plus tard) et spero che sia arrivato (déjà arrivé, j'espère)."
+     ],
+     "q": "Pense à un ami qui a voyagé récemment. Qu'espères-tu qu'il ait fait là-bas ? Utilise spero che abbia...",
+     "c": "Écris trois phrases avec sono contento che, penso che et mi dispiace che + congiuntivo passato."
+    },
+    "it": {
+     "t": "Il congiuntivo passato",
+     "g": "Usare il congiuntivo passato: penso che abbia già mangiato, sono contento che tu sia venuto.",
+     "p": [
+      "Si forma con il congiuntivo di avere o essere + participio: abbia mangiato, sia venuto/a, siano partiti.",
+      "Si usa con il verbo principale al presente e un'azione già conclusa: penso che abbia già mangiato.",
+      "Confronta: spero che arrivi (ora o dopo) e spero che sia arrivato (già, spero)."
+     ],
+     "q": "Pensa a un amico che ha viaggiato di recente. Che cosa speri che abbia fatto? Usa spero che abbia...",
+     "c": "Scrivi tre frasi con sono contento che, penso che e mi dispiace che + congiuntivo passato."
+    },
+    "pt": {
+     "t": "Congiuntivo passato",
+     "g": "Usar o conjuntivo passado: penso che abbia già mangiato, sono contento che tu sia venuto.",
+     "p": [
+      "Forma: congiuntivo de avere ou essere + particípio: abbia mangiato, sia venuto/a, siano partiti.",
+      "Usa-se com o verbo principal no presente e a ação já terminada: penso che abbia già mangiato.",
+      "Compara: spero che arrivi (agora ou depois) e spero che sia arrivato (espero que já tenha chegado)."
+     ],
+     "q": "Pensa num amigo que viajou há pouco. O que esperas que tenha feito lá? Usa spero che abbia...",
+     "c": "Escreve três frases com sono contento che, penso che e mi dispiace che + congiuntivo passato."
+    },
+    "pt_BR": {
+     "t": "Congiuntivo passato",
+     "g": "Usar o subjuntivo passado: penso che abbia già mangiato, sono contento che tu sia venuto.",
+     "p": [
+      "Forma: congiuntivo de avere ou essere + particípio: abbia mangiato, sia venuto/a, siano partiti.",
+      "Usa-se com o verbo principal no presente e a ação já terminada: penso che abbia già mangiato.",
+      "Compare: spero che arrivi (agora ou depois) e spero che sia arrivato (espero que já tenha chegado)."
+     ],
+     "q": "Pense num amigo que viajou há pouco. O que você espera que ele tenha feito lá? Use spero che abbia...",
+     "c": "Escreva três frases com sono contento che, penso che e mi dispiace che + congiuntivo passato."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "abbia mangiato",
+      "ex": "Penso che Marco abbia già mangiato."
+     },
+     {
+      "w": "tu sia venuto",
+      "ex": "Sono contento che tu sia venuto."
+     },
+     {
+      "w": "sia arrivata",
+      "ex": "Spero che sia arrivata a casa senza problemi."
+     },
+     {
+      "w": "abbiano capito",
+      "ex": "Non credo che abbiano capito la domanda."
+     },
+     {
+      "w": "si sia divertito",
+      "ex": "Spero che tu ti sia divertito alla festa."
+     },
+     {
+      "w": "abbia visto",
+      "ex": "Mi sembra che tu abbia visto questo film."
+     }
+    ],
+    "gram": "Congiuntivo passato: congiuntivo di avere/essere + participio. Verbo principale al presente, azione già conclusa."
+   }
+  },
+  {
+   "d": 199,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Relative clauses with congiuntivo",
+     "g": "Describe what you are looking for: cerco una casa che abbia un giardino.",
+     "p": [
+      "When something is wished for but not yet found, the relative clause takes the congiuntivo: cerco una casa che abbia un giardino.",
+      "A real, known thing takes the indicativo: ho trovato una casa che ha un giardino.",
+      "Also after superlatives and negatives: è il libro più bello che io abbia letto; non c'è nessuno che sappia..."
+     ],
+     "q": "Describe your ideal home or job. Start with cerco... che + subjunctive.",
+     "c": "Write an ad: cerco un coinquilino che..., cerco un lavoro che..., and one superlative with che io abbia mai..."
+    },
+    "de": {
+     "t": "Relativsätze mit congiuntivo",
+     "g": "Du beschreibst, was du suchst: cerco una casa che abbia un giardino.",
+     "p": [
+      "Gesucht, aber noch nicht gefunden: der Relativsatz steht im congiuntivo: cerco una casa che abbia un giardino.",
+      "Eine reale, bekannte Sache steht im indicativo: ho trovato una casa che ha un giardino.",
+      "Auch nach Superlativen und Verneinungen: è il libro più bello che io abbia letto; non c'è nessuno che sappia..."
+     ],
+     "q": "Beschreib dein ideales Zuhause oder deinen idealen Job. Beginne mit cerco... che + Konjunktiv.",
+     "c": "Schreib eine Anzeige: cerco un coinquilino che..., cerco un lavoro che..., und einen Superlativ mit che io abbia mai..."
+    },
+    "es": {
+     "t": "Relativas con congiuntivo",
+     "g": "Describir lo que buscas: cerco una casa che abbia un giardino.",
+     "p": [
+      "Si algo se desea pero aún no se ha encontrado, la relativa va en congiuntivo: cerco una casa che abbia un giardino.",
+      "Algo real y conocido va en indicativo: ho trovato una casa che ha un giardino. ¡Igual que en español!",
+      "También tras superlativos y negaciones: è il libro più bello che io abbia letto; non c'è nessuno che sappia..."
+     ],
+     "q": "Describe tu casa o tu trabajo ideal. Empieza con cerco... che + subjuntivo.",
+     "c": "Escribe un anuncio: cerco un coinquilino che..., cerco un lavoro che..., y un superlativo con che io abbia mai..."
+    },
+    "fr": {
+     "t": "Relatives au congiuntivo",
+     "g": "Décrire ce que tu cherches : cerco una casa che abbia un giardino.",
+     "p": [
+      "Si la chose est souhaitée mais pas encore trouvée, la relative est au congiuntivo : cerco una casa che abbia un giardino.",
+      "Une chose réelle et connue prend l'indicativo : ho trovato una casa che ha un giardino.",
+      "Aussi après un superlatif ou une négation : è il libro più bello che io abbia letto ; non c'è nessuno che sappia..."
+     ],
+     "q": "Décris ton logement ou ton travail idéal. Commence par cerco... che + subjonctif.",
+     "c": "Écris une annonce : cerco un coinquilino che..., cerco un lavoro che..., et un superlatif avec che io abbia mai..."
+    },
+    "it": {
+     "t": "Relative con il congiuntivo",
+     "g": "Descrivere ciò che cerchi: cerco una casa che abbia un giardino.",
+     "p": [
+      "Se una cosa è desiderata ma non ancora trovata, la relativa vuole il congiuntivo: cerco una casa che abbia un giardino.",
+      "Una cosa reale e conosciuta vuole l'indicativo: ho trovato una casa che ha un giardino.",
+      "Anche dopo superlativi e negazioni: è il libro più bello che io abbia letto; non c'è nessuno che sappia..."
+     ],
+     "q": "Descrivi la tua casa o il tuo lavoro ideale. Comincia con cerco... che + congiuntivo.",
+     "c": "Scrivi un annuncio: cerco un coinquilino che..., cerco un lavoro che..., e un superlativo con che io abbia mai..."
+    },
+    "pt": {
+     "t": "Relativas com congiuntivo",
+     "g": "Descrever o que procuras: cerco una casa che abbia un giardino.",
+     "p": [
+      "Se algo é desejado mas ainda não foi encontrado, a relativa vai para o congiuntivo: cerco una casa che abbia un giardino.",
+      "Algo real e conhecido vai para o indicativo: ho trovato una casa che ha un giardino. Como em português!",
+      "Também depois de superlativos e negações: è il libro più bello che io abbia letto; non c'è nessuno che sappia..."
+     ],
+     "q": "Descreve a tua casa ou o teu trabalho ideal. Começa com cerco... che + conjuntivo.",
+     "c": "Escreve um anúncio: cerco un coinquilino che..., cerco un lavoro che..., e um superlativo com che io abbia mai..."
+    },
+    "pt_BR": {
+     "t": "Relativas com congiuntivo",
+     "g": "Descrever o que você procura: cerco una casa che abbia un giardino.",
+     "p": [
+      "Se algo é desejado mas ainda não foi encontrado, a relativa vai para o congiuntivo: cerco una casa che abbia un giardino.",
+      "Algo real e conhecido vai para o indicativo: ho trovato una casa che ha un giardino. Como em português!",
+      "Também depois de superlativos e negações: è il libro più bello che io abbia letto; non c'è nessuno che sappia..."
+     ],
+     "q": "Descreva sua casa ou seu trabalho ideal. Comece com cerco... che + subjuntivo.",
+     "c": "Escreva um anúncio: cerco un coinquilino che..., cerco un lavoro che..., e um superlativo com che io abbia mai..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "cerco una casa che abbia",
+      "ex": "Cerco una casa che abbia un piccolo giardino."
+     },
+     {
+      "w": "il coinquilino",
+      "ex": "Cerco un coinquilino che sia ordinato e simpatico."
+     },
+     {
+      "w": "che io abbia mai",
+      "ex": "È il posto più bello che io abbia mai visto."
+     },
+     {
+      "w": "non c'è nessuno che",
+      "ex": "Non c'è nessuno che cucini come mia nonna."
+     },
+     {
+      "w": "qualcuno che sappia",
+      "ex": "Conosci qualcuno che sappia riparare le biciclette?"
+     },
+     {
+      "w": "ho trovato",
+      "ex": "Ho trovato un lavoro che mi piace molto."
+     }
+    ],
+    "gram": "Relativa al congiuntivo per cose cercate o ipotetiche, dopo superlativi e negazioni: cerco una casa che abbia un giardino."
+   }
+  },
+  {
+   "d": 200,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Il quale and la quale",
+     "g": "Use formal relatives: il motivo per il quale, la persona alla quale.",
+     "p": [
+      "Il quale, la quale, i quali, le quali agree with the noun: è la ragazza della quale ti ho parlato.",
+      "Mostly after prepositions, as a formal alternative to cui: il motivo per il quale (= per cui) ti scrivo.",
+      "Combine with articles: al quale, alla quale, del quale, nella quale, sul quale. Typical of emails and writing."
+     ],
+     "q": "What is the main reason for which you study Italian? Answer with il motivo per il quale...",
+     "c": "Rewrite three sentences replacing cui with il quale/la quale: la città in cui vivo, l'amica a cui scrivo, il film di cui parlo."
+    },
+    "de": {
+     "t": "Il quale und la quale",
+     "g": "Du benutzt formelle Relativpronomen: il motivo per il quale, la persona alla quale.",
+     "p": [
+      "Il quale, la quale, i quali, le quali richten sich nach dem Nomen: è la ragazza della quale ti ho parlato.",
+      "Meist nach Präpositionen, als formelle Alternative zu cui: il motivo per il quale (= per cui) ti scrivo.",
+      "Mit Artikel verbunden: al quale, alla quale, del quale, nella quale, sul quale. Typisch für E-Mails und Texte."
+     ],
+     "q": "Was ist der Hauptgrund, aus dem du Italienisch lernst? Antworte mit il motivo per il quale...",
+     "c": "Ersetze in drei Sätzen cui durch il quale/la quale: la città in cui vivo, l'amica a cui scrivo, il film di cui parlo."
+    },
+    "es": {
+     "t": "Il quale y la quale",
+     "g": "Usar relativos formales: il motivo per il quale, la persona alla quale.",
+     "p": [
+      "Il quale, la quale, i quali, le quali concuerdan con el nombre: è la ragazza della quale ti ho parlato.",
+      "Sobre todo tras preposición, como alternativa formal a cui: il motivo per il quale (= per cui) ti scrivo.",
+      "Con artículo: al quale, alla quale, del quale, nella quale, sul quale. Muy parecido a el cual, la cual."
+     ],
+     "q": "¿Cuál es el motivo principal por el que estudias italiano? Responde con il motivo per il quale...",
+     "c": "Reescribe tres frases cambiando cui por il quale/la quale: la città in cui vivo, l'amica a cui scrivo, il film di cui parlo."
+    },
+    "fr": {
+     "t": "Il quale et la quale",
+     "g": "Utiliser les relatifs soutenus : il motivo per il quale, la persona alla quale.",
+     "p": [
+      "Il quale, la quale, i quali, le quali s'accordent avec le nom : è la ragazza della quale ti ho parlato.",
+      "Surtout après une préposition, comme alternative soutenue à cui : il motivo per il quale (= per cui) ti scrivo.",
+      "Avec l'article : al quale, alla quale, del quale, nella quale, sul quale. Comme lequel, laquelle en français."
+     ],
+     "q": "Quelle est la raison principale pour laquelle tu étudies l'italien ? Réponds avec il motivo per il quale...",
+     "c": "Réécris trois phrases en remplaçant cui par il quale/la quale : la città in cui vivo, l'amica a cui scrivo, il film di cui parlo."
+    },
+    "it": {
+     "t": "Il quale e la quale",
+     "g": "Usare i relativi formali: il motivo per il quale, la persona alla quale.",
+     "p": [
+      "Il quale, la quale, i quali, le quali concordano con il nome: è la ragazza della quale ti ho parlato.",
+      "Si usano soprattutto dopo una preposizione, al posto di cui: il motivo per il quale (= per cui) ti scrivo.",
+      "Con le preposizioni articolate: al quale, alla quale, del quale, nella quale, sul quale. Tipici delle email formali."
+     ],
+     "q": "Qual è il motivo principale per il quale studi l'italiano? Rispondi con il motivo per il quale...",
+     "c": "Riscrivi tre frasi con il quale/la quale al posto di cui: la città in cui vivo, l'amica a cui scrivo, il film di cui parlo."
+    },
+    "pt": {
+     "t": "Il quale e la quale",
+     "g": "Usar relativos formais: il motivo per il quale, la persona alla quale.",
+     "p": [
+      "Il quale, la quale, i quali, le quali concordam com o nome: è la ragazza della quale ti ho parlato.",
+      "Sobretudo depois de preposição, como alternativa formal a cui: il motivo per il quale (= per cui) ti scrivo.",
+      "Com artigo: al quale, alla quale, del quale, nella quale, sul quale. Como o qual, a qual em português."
+     ],
+     "q": "Qual é o principal motivo pelo qual estudas italiano? Responde com il motivo per il quale...",
+     "c": "Reescreve três frases trocando cui por il quale/la quale: la città in cui vivo, l'amica a cui scrivo, il film di cui parlo."
+    },
+    "pt_BR": {
+     "t": "Il quale e la quale",
+     "g": "Usar relativos formais: il motivo per il quale, la persona alla quale.",
+     "p": [
+      "Il quale, la quale, i quali, le quali concordam com o nome: è la ragazza della quale ti ho parlato.",
+      "Sobretudo depois de preposição, como alternativa formal a cui: il motivo per il quale (= per cui) ti scrivo.",
+      "Com artigo: al quale, alla quale, del quale, nella quale, sul quale. Como o qual, a qual em português."
+     ],
+     "q": "Qual é o principal motivo pelo qual você estuda italiano? Responda com il motivo per il quale...",
+     "c": "Reescreva três frases trocando cui por il quale/la quale: la città in cui vivo, l'amica a cui scrivo, il film di cui parlo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il motivo per il quale",
+      "ex": "Il motivo per il quale ti scrivo è una richiesta."
+     },
+     {
+      "w": "la persona alla quale",
+      "ex": "La persona alla quale ho chiesto aiuto è stata gentile."
+     },
+     {
+      "w": "del quale",
+      "ex": "Questo è il libro del quale ti ho parlato."
+     },
+     {
+      "w": "nella quale",
+      "ex": "La città nella quale vivo è piccola ma vivace."
+     },
+     {
+      "w": "i quali",
+      "ex": "Gli studenti, i quali hanno superato l'esame, riceveranno un attestato."
+     },
+     {
+      "w": "sul quale",
+      "ex": "Il tavolo sul quale lavoro è vicino alla finestra."
+     }
+    ],
+    "gram": "Il quale, la quale, i quali, le quali: relativi formali, concordano con il nome e seguono di solito una preposizione (per il quale)."
+   }
+  }
+ ]
+}

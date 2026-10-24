@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 181,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Present perfect continuous",
+     "g": "Use have been + -ing for actions that started in the past and are still going on.",
+     "p": [
+      "Form: have/has been + -ing. I've been studying all morning. She's been working here since May.",
+      "It stresses the activity and its duration: We've been waiting for twenty minutes.",
+      "It can explain present results: I'm tired because I've been running. Your eyes are red. Have you been crying?"
+     ],
+     "q": "Welcome to B1! What have you been doing lately to improve your English?",
+     "c": "Write four sentences about things you've been doing this week: I've been reading, I've been cooking..."
+    },
+    "de": {
+     "t": "Present perfect continuous",
+     "g": "Mit have been + -ing beschreibst du Handlungen, die in der Vergangenheit begannen und noch andauern.",
+     "p": [
+      "Form: have/has been + -ing. I've been studying all morning. She's been working here since May.",
+      "Betont wird die Tätigkeit und ihre Dauer: We've been waiting for twenty minutes.",
+      "Es erklärt sichtbare Folgen: I'm tired because I've been running. Your eyes are red. Have you been crying?"
+     ],
+     "q": "Willkommen in B1! Was hast du in letzter Zeit gemacht, um dein Englisch zu verbessern?",
+     "c": "Schreib vier Sätze über Dinge, die du diese Woche machst: I've been reading, I've been cooking..."
+    },
+    "es": {
+     "t": "Present perfect continuous",
+     "g": "Usa have been + -ing para acciones que empezaron en el pasado y todavía continúan.",
+     "p": [
+      "Forma: have/has been + -ing. I've been studying all morning. She's been working here since May.",
+      "Destaca la actividad y su duración: We've been waiting for twenty minutes.",
+      "Explica resultados visibles: I'm tired because I've been running. Your eyes are red. Have you been crying?"
+     ],
+     "q": "¡Bienvenido al B1! ¿Qué has estado haciendo últimamente para mejorar tu inglés?",
+     "c": "Escribe cuatro frases sobre lo que has estado haciendo esta semana: I've been reading, I've been cooking..."
+    },
+    "fr": {
+     "t": "Present perfect continuous",
+     "g": "Utilise have been + -ing pour une action commencée dans le passé qui continue encore.",
+     "p": [
+      "Forme : have/has been + -ing. I've been studying all morning. She's been working here since May.",
+      "On insiste sur l'activité et sa durée : We've been waiting for twenty minutes.",
+      "Il explique un résultat visible : I'm tired because I've been running. Have you been crying?"
+     ],
+     "q": "Bienvenue en B1 ! Qu'est-ce que tu fais ces derniers temps pour améliorer ton anglais ?",
+     "c": "Écris quatre phrases sur ce que tu fais depuis le début de la semaine : I've been reading, I've been cooking..."
+    },
+    "it": {
+     "t": "Present perfect continuous",
+     "g": "Usa have been + -ing per azioni iniziate nel passato che continuano ancora.",
+     "p": [
+      "Forma: have/has been + -ing. I've been studying all morning. She's been working here since May.",
+      "Mette in risalto l'attività e la sua durata: We've been waiting for twenty minutes.",
+      "Spiega risultati visibili: I'm tired because I've been running. Your eyes are red. Have you been crying?"
+     ],
+     "q": "Benvenuto al B1! Cosa stai facendo ultimamente per migliorare il tuo inglese?",
+     "c": "Scrivi quattro frasi su cose che stai facendo questa settimana: I've been reading, I've been cooking..."
+    },
+    "pt": {
+     "t": "Present perfect continuous",
+     "g": "Usa have been + -ing para ações que começaram no passado e ainda continuam.",
+     "p": [
+      "Forma: have/has been + -ing. I've been studying all morning. She's been working here since May.",
+      "Realça a atividade e a sua duração: We've been waiting for twenty minutes.",
+      "Explica resultados visíveis: I'm tired because I've been running. Your eyes are red. Have you been crying?"
+     ],
+     "q": "Bem-vindo ao B1! O que tens feito ultimamente para melhorar o teu inglês?",
+     "c": "Escreve quatro frases sobre o que tens feito esta semana: I've been reading, I've been cooking..."
+    },
+    "pt_BR": {
+     "t": "Present perfect continuous",
+     "g": "Use have been + -ing para ações que começaram no passado e ainda continuam.",
+     "p": [
+      "Forma: have/has been + -ing. I've been studying all morning. She's been working here since May.",
+      "Destaca a atividade e a duração: We've been waiting for twenty minutes.",
+      "Explica resultados visíveis: I'm tired because I've been running. Your eyes are red. Have you been crying?"
+     ],
+     "q": "Bem-vindo ao B1! O que você tem feito ultimamente para melhorar seu inglês?",
+     "c": "Escreva quatro frases sobre o que você tem feito esta semana: I've been reading, I've been cooking..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "have been studying",
+      "ex": "I've been studying English every evening."
+     },
+     {
+      "w": "has been working",
+      "ex": "She has been working on a new project."
+     },
+     {
+      "w": "lately",
+      "ex": "What have you been doing lately?"
+     },
+     {
+      "w": "recently",
+      "ex": "I've been sleeping better recently."
+     },
+     {
+      "w": "all morning",
+      "ex": "It's been raining all morning."
+     },
+     {
+      "w": "have you been...?",
+      "ex": "Have you been waiting long?"
+     }
+    ],
+    "gram": "Present perfect continuous: have/has been + -ing for ongoing actions from past to now, or recent activity with a visible result."
+   }
+  },
+  {
+   "d": 182,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "How long have you been...?",
+     "g": "Ask and answer about duration with for, since and how long.",
+     "p": [
+      "Question: How long have you been learning English? How long has she been living here?",
+      "For + a period: for two years, for ages. Since + a starting point: since 2019, since I was a child.",
+      "State verbs like know, like or have use the simple form: I've known her for ten years, not I've been knowing."
+     ],
+     "q": "How long have you been learning English, and how long have you been living where you live now?",
+     "c": "Write three true answers with for and three with since about your hobbies, home and friends."
+    },
+    "de": {
+     "t": "How long have you been...?",
+     "g": "Du fragst und antwortest zur Dauer mit for, since und how long.",
+     "p": [
+      "Frage: How long have you been learning English? How long has she been living here?",
+      "For + Zeitraum: for two years, for ages. Since + Startpunkt: since 2019, since I was a child.",
+      "Zustandsverben wie know, like, have stehen in der einfachen Form: I've known her for ten years."
+     ],
+     "q": "Wie lange lernst du schon Englisch, und wie lange wohnst du schon dort, wo du jetzt lebst?",
+     "c": "Schreib drei wahre Antworten mit for und drei mit since über Hobbys, Wohnung und Freunde."
+    },
+    "es": {
+     "t": "How long have you been...?",
+     "g": "Pregunta y responde sobre la duración con for, since y how long.",
+     "p": [
+      "Pregunta: How long have you been learning English? How long has she been living here?",
+      "For + periodo: for two years, for ages. Since + punto de inicio: since 2019, since I was a child.",
+      "Los verbos de estado como know, like o have van en forma simple: I've known her for ten years."
+     ],
+     "q": "¿Cuánto tiempo llevas aprendiendo inglés y cuánto llevas viviendo donde vives ahora?",
+     "c": "Escribe tres respuestas reales con for y tres con since sobre tus aficiones, tu casa y tus amigos."
+    },
+    "fr": {
+     "t": "How long have you been...?",
+     "g": "Pose des questions et réponds sur la durée avec for, since et how long.",
+     "p": [
+      "Question : How long have you been learning English? How long has she been living here?",
+      "For + durée : for two years, for ages. Since + point de départ : since 2019, since I was a child.",
+      "Les verbes d'état comme know, like, have restent à la forme simple : I've known her for ten years."
+     ],
+     "q": "Depuis combien de temps apprends-tu l'anglais, et depuis quand habites-tu là où tu vis ?",
+     "c": "Écris trois réponses vraies avec for et trois avec since sur tes loisirs, ton logement et tes amis."
+    },
+    "it": {
+     "t": "How long have you been...?",
+     "g": "Fai domande e rispondi sulla durata con for, since e how long.",
+     "p": [
+      "Domanda: How long have you been learning English? How long has she been living here?",
+      "For + periodo: for two years, for ages. Since + punto di partenza: since 2019, since I was a child.",
+      "I verbi di stato come know, like, have usano la forma semplice: I've known her for ten years."
+     ],
+     "q": "Da quanto tempo studi inglese, e da quanto vivi dove abiti adesso?",
+     "c": "Scrivi tre risposte vere con for e tre con since sui tuoi hobby, la casa e gli amici."
+    },
+    "pt": {
+     "t": "How long have you been...?",
+     "g": "Pergunta e responde sobre duração com for, since e how long.",
+     "p": [
+      "Pergunta: How long have you been learning English? How long has she been living here?",
+      "For + período: for two years, for ages. Since + ponto de partida: since 2019, since I was a child.",
+      "Verbos de estado como know, like, have usam a forma simples: I've known her for ten years."
+     ],
+     "q": "Há quanto tempo aprendes inglês, e há quanto tempo vives onde vives agora?",
+     "c": "Escreve três respostas verdadeiras com for e três com since sobre passatempos, casa e amigos."
+    },
+    "pt_BR": {
+     "t": "How long have you been...?",
+     "g": "Pergunte e responda sobre duração com for, since e how long.",
+     "p": [
+      "Pergunta: How long have you been learning English? How long has she been living here?",
+      "For + período: for two years, for ages. Since + ponto de partida: since 2019, since I was a child.",
+      "Verbos de estado como know, like, have ficam na forma simples: I've known her for ten years."
+     ],
+     "q": "Há quanto tempo você estuda inglês, e há quanto tempo mora onde mora agora?",
+     "c": "Escreva três respostas verdadeiras com for e três com since sobre hobbies, casa e amigos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "How long have you been...?",
+      "ex": "How long have you been playing the guitar?"
+     },
+     {
+      "w": "for two years",
+      "ex": "I've been learning English for two years."
+     },
+     {
+      "w": "since",
+      "ex": "She's been living in Lisbon since 2020."
+     },
+     {
+      "w": "for ages",
+      "ex": "We've been waiting for ages!"
+     },
+     {
+      "w": "I've known",
+      "ex": "I've known my best friend since school."
+     },
+     {
+      "w": "ever since",
+      "ex": "I've loved music ever since I was a child."
+     }
+    ],
+    "gram": "How long + present perfect continuous. For + period, since + starting point. State verbs (know, like) use present perfect simple."
+   }
+  },
+  {
+   "d": 183,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Past perfect: had already left",
+     "g": "Use the past perfect to show which past action happened first.",
+     "p": [
+      "Form: had + past participle. When I arrived, the film had started. She had already eaten.",
+      "It sets the order: the earlier action is in the past perfect, the later one in the past simple.",
+      "Useful words: already, just, never, before, by the time. I had never seen snow before that trip."
+     ],
+     "q": "Think of a time you arrived late. What had already happened when you got there?",
+     "c": "Write three sentences with When I arrived... + had: When I got to the station, the train had left."
+    },
+    "de": {
+     "t": "Past perfect: had already left",
+     "g": "Mit dem Past Perfect zeigst du, welche vergangene Handlung zuerst passierte.",
+     "p": [
+      "Form: had + Partizip. When I arrived, the film had started. She had already eaten.",
+      "Es ordnet die Zeit: Die frühere Handlung steht im Past Perfect, die spätere im Past Simple.",
+      "Hilfreiche Wörter: already, just, never, before, by the time. I had never seen snow before that trip."
+     ],
+     "q": "Denk an einen Moment, als du zu spät kamst. Was war schon passiert, als du ankamst?",
+     "c": "Schreib drei Sätze mit When I arrived... + had: When I got to the station, the train had left."
+    },
+    "es": {
+     "t": "Past perfect: had already left",
+     "g": "Usa el past perfect para indicar qué acción pasada ocurrió primero.",
+     "p": [
+      "Forma: had + participio. When I arrived, the film had started. She had already eaten.",
+      "Ordena los hechos: la acción anterior va en past perfect y la posterior en past simple.",
+      "Palabras útiles: already, just, never, before, by the time. I had never seen snow before that trip."
+     ],
+     "q": "Piensa en una vez que llegaste tarde. ¿Qué había pasado ya cuando llegaste?",
+     "c": "Escribe tres frases con When I arrived... + had: When I got to the station, the train had left."
+    },
+    "fr": {
+     "t": "Past perfect: had already left",
+     "g": "Utilise le past perfect pour montrer quelle action passée a eu lieu en premier.",
+     "p": [
+      "Forme : had + participe passé. When I arrived, the film had started. She had already eaten.",
+      "Il fixe l'ordre : l'action antérieure au past perfect, la suivante au past simple.",
+      "Mots utiles : already, just, never, before, by the time. I had never seen snow before that trip."
+     ],
+     "q": "Pense à une fois où tu es arrivé en retard. Qu'est-ce qui s'était déjà passé ?",
+     "c": "Écris trois phrases avec When I arrived... + had : When I got to the station, the train had left."
+    },
+    "it": {
+     "t": "Past perfect: had already left",
+     "g": "Usa il past perfect per indicare quale azione passata è avvenuta prima.",
+     "p": [
+      "Forma: had + participio. When I arrived, the film had started. She had already eaten.",
+      "Mette in ordine i fatti: l'azione precedente al past perfect, quella successiva al past simple.",
+      "Parole utili: already, just, never, before, by the time. I had never seen snow before that trip."
+     ],
+     "q": "Pensa a una volta in cui sei arrivato in ritardo. Cosa era già successo quando sei arrivato?",
+     "c": "Scrivi tre frasi con When I arrived... + had: When I got to the station, the train had left."
+    },
+    "pt": {
+     "t": "Past perfect: had already left",
+     "g": "Usa o past perfect para mostrar que ação passada aconteceu primeiro.",
+     "p": [
+      "Forma: had + particípio. When I arrived, the film had started. She had already eaten.",
+      "Ordena os factos: a ação anterior vai no past perfect e a seguinte no past simple.",
+      "Palavras úteis: already, just, never, before, by the time. I had never seen snow before that trip."
+     ],
+     "q": "Pensa numa vez em que chegaste atrasado. O que já tinha acontecido quando chegaste?",
+     "c": "Escreve três frases com When I arrived... + had: When I got to the station, the train had left."
+    },
+    "pt_BR": {
+     "t": "Past perfect: had already left",
+     "g": "Use o past perfect para mostrar qual ação passada aconteceu primeiro.",
+     "p": [
+      "Forma: had + particípio. When I arrived, the film had started. She had already eaten.",
+      "Organiza os fatos: a ação anterior vai no past perfect e a seguinte no past simple.",
+      "Palavras úteis: already, just, never, before, by the time. I had never seen snow before that trip."
+     ],
+     "q": "Pense numa vez em que você chegou atrasado. O que já tinha acontecido quando você chegou?",
+     "c": "Escreva três frases com When I arrived... + had: When I got to the station, the train had left."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "had already left",
+      "ex": "When we got there, the bus had already left."
+     },
+     {
+      "w": "had started",
+      "ex": "The film had started when I sat down."
+     },
+     {
+      "w": "had never seen",
+      "ex": "I had never seen the sea before that summer."
+     },
+     {
+      "w": "had just",
+      "ex": "She had just finished dinner when I called."
+     },
+     {
+      "w": "by the time",
+      "ex": "By the time I woke up, everyone had gone out."
+     },
+     {
+      "w": "before",
+      "ex": "I realised I had met him before."
+     }
+    ],
+    "gram": "Past perfect: had + past participle for the earlier of two past actions. When I arrived (later), the film had started (earlier)."
+   }
+  },
+  {
+   "d": 184,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Narrative tenses together",
+     "g": "Combine past simple, past continuous and past perfect to tell a rich story.",
+     "p": [
+      "Past continuous sets the scene: It was raining and people were hurrying home.",
+      "Past simple moves the story on: Suddenly the lights went out. I opened the door.",
+      "Past perfect goes back further: I realised I had left my keys at the office."
+     ],
+     "q": "Tell me a short story about a surprising day. What was happening when something unexpected happened?",
+     "c": "Write a five-line story using all three tenses at least once. Start with: It was a sunny morning and..."
+    },
+    "de": {
+     "t": "Narrative tenses together",
+     "g": "Du kombinierst Past Simple, Past Continuous und Past Perfect für lebendige Geschichten.",
+     "p": [
+      "Past Continuous malt die Szene: It was raining and people were hurrying home.",
+      "Past Simple treibt die Handlung voran: Suddenly the lights went out. I opened the door.",
+      "Past Perfect geht noch weiter zurück: I realised I had left my keys at the office."
+     ],
+     "q": "Erzähl mir eine kurze Geschichte über einen überraschenden Tag. Was war gerade los, als etwas Unerwartetes geschah?",
+     "c": "Schreib eine Geschichte in fünf Zeilen mit allen drei Zeiten. Beginn mit: It was a sunny morning and..."
+    },
+    "es": {
+     "t": "Narrative tenses together",
+     "g": "Combina past simple, past continuous y past perfect para contar historias con vida.",
+     "p": [
+      "El past continuous crea el ambiente: It was raining and people were hurrying home.",
+      "El past simple hace avanzar la historia: Suddenly the lights went out. I opened the door.",
+      "El past perfect retrocede aún más: I realised I had left my keys at the office."
+     ],
+     "q": "Cuéntame una historia corta de un día sorprendente. ¿Qué estaba pasando cuando ocurrió algo inesperado?",
+     "c": "Escribe una historia de cinco líneas con los tres tiempos. Empieza así: It was a sunny morning and..."
+    },
+    "fr": {
+     "t": "Narrative tenses together",
+     "g": "Combine past simple, past continuous et past perfect pour raconter une histoire vivante.",
+     "p": [
+      "Le past continuous plante le décor : It was raining and people were hurrying home.",
+      "Le past simple fait avancer l'action : Suddenly the lights went out. I opened the door.",
+      "Le past perfect remonte plus loin : I realised I had left my keys at the office."
+     ],
+     "q": "Raconte-moi une petite histoire d'une journée surprenante. Que se passait-il quand l'imprévu est arrivé ?",
+     "c": "Écris une histoire de cinq lignes avec les trois temps. Commence par : It was a sunny morning and..."
+    },
+    "it": {
+     "t": "Narrative tenses together",
+     "g": "Combina past simple, past continuous e past perfect per raccontare storie ricche.",
+     "p": [
+      "Il past continuous descrive la scena: It was raining and people were hurrying home.",
+      "Il past simple fa avanzare la storia: Suddenly the lights went out. I opened the door.",
+      "Il past perfect torna ancora più indietro: I realised I had left my keys at the office."
+     ],
+     "q": "Raccontami una breve storia di una giornata sorprendente. Cosa stava succedendo quando è accaduto l'imprevisto?",
+     "c": "Scrivi una storia di cinque righe con tutti e tre i tempi. Inizia con: It was a sunny morning and..."
+    },
+    "pt": {
+     "t": "Narrative tenses together",
+     "g": "Combina past simple, past continuous e past perfect para contar histórias ricas.",
+     "p": [
+      "O past continuous descreve o cenário: It was raining and people were hurrying home.",
+      "O past simple faz a história avançar: Suddenly the lights went out. I opened the door.",
+      "O past perfect recua ainda mais: I realised I had left my keys at the office."
+     ],
+     "q": "Conta-me uma pequena história de um dia surpreendente. O que estava a acontecer quando surgiu o imprevisto?",
+     "c": "Escreve uma história de cinco linhas com os três tempos. Começa com: It was a sunny morning and..."
+    },
+    "pt_BR": {
+     "t": "Narrative tenses together",
+     "g": "Combine past simple, past continuous e past perfect para contar histórias ricas.",
+     "p": [
+      "O past continuous monta o cenário: It was raining and people were hurrying home.",
+      "O past simple faz a história andar: Suddenly the lights went out. I opened the door.",
+      "O past perfect volta ainda mais no tempo: I realised I had left my keys at the office."
+     ],
+     "q": "Me conte uma pequena história de um dia surpreendente. O que estava acontecendo quando veio o imprevisto?",
+     "c": "Escreva uma história de cinco linhas com os três tempos. Comece com: It was a sunny morning and..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "was raining",
+      "ex": "It was raining when we left the café."
+     },
+     {
+      "w": "suddenly",
+      "ex": "Suddenly, the phone rang."
+     },
+     {
+      "w": "realised",
+      "ex": "I realised I had forgotten my umbrella."
+     },
+     {
+      "w": "were walking",
+      "ex": "We were walking along the beach at sunset."
+     },
+     {
+      "w": "had left",
+      "ex": "She noticed that someone had left a note on her desk."
+     },
+     {
+      "w": "at that moment",
+      "ex": "At that moment, my friend walked in."
+     }
+    ],
+    "gram": "Narrative tenses: past continuous for background, past simple for main events, past perfect for events before the story's main time."
+   }
+  },
+  {
+   "d": 185,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Storytelling connectors",
+     "g": "Guide your listener through a story with clear time connectors.",
+     "p": [
+      "Start and order: First, at first, then, after that, next. At first I was nervous, then I relaxed.",
+      "Same time: meanwhile, while, at the same time. Meanwhile, my sister was looking for a taxi.",
+      "Finish: eventually, finally, in the end. In the end, we laughed about it all evening."
+     ],
+     "q": "What is a funny or lucky thing that happened to you on a trip? Tell it with at first, then and in the end.",
+     "c": "Retell a film or book you like in six sentences, using at least five different connectors."
+    },
+    "de": {
+     "t": "Storytelling connectors",
+     "g": "Du führst deine Zuhörer mit klaren Zeitwörtern durch eine Geschichte.",
+     "p": [
+      "Anfang und Reihenfolge: First, at first, then, after that, next. At first I was nervous, then I relaxed.",
+      "Gleichzeitig: meanwhile, while, at the same time. Meanwhile, my sister was looking for a taxi.",
+      "Schluss: eventually, finally, in the end. In the end, we laughed about it all evening."
+     ],
+     "q": "Was ist dir auf einer Reise Lustiges oder Glückliches passiert? Erzähl es mit at first, then und in the end.",
+     "c": "Erzähl einen Film oder ein Buch in sechs Sätzen nach und benutze mindestens fünf verschiedene Verbindungswörter."
+    },
+    "es": {
+     "t": "Storytelling connectors",
+     "g": "Guía a quien te escucha a lo largo de la historia con conectores de tiempo claros.",
+     "p": [
+      "Inicio y orden: First, at first, then, after that, next. At first I was nervous, then I relaxed.",
+      "Al mismo tiempo: meanwhile, while, at the same time. Meanwhile, my sister was looking for a taxi.",
+      "Final: eventually, finally, in the end. In the end, we laughed about it all evening."
+     ],
+     "q": "¿Qué cosa graciosa o afortunada te pasó en un viaje? Cuéntala con at first, then e in the end.",
+     "c": "Resume una película o un libro que te guste en seis frases con al menos cinco conectores distintos."
+    },
+    "fr": {
+     "t": "Storytelling connectors",
+     "g": "Guide ton auditeur dans ton récit avec des connecteurs de temps clairs.",
+     "p": [
+      "Début et ordre : First, at first, then, after that, next. At first I was nervous, then I relaxed.",
+      "En même temps : meanwhile, while, at the same time. Meanwhile, my sister was looking for a taxi.",
+      "Fin : eventually, finally, in the end. In the end, we laughed about it all evening."
+     ],
+     "q": "Quelle chose drôle ou chanceuse t'est arrivée en voyage ? Raconte-la avec at first, then et in the end.",
+     "c": "Raconte un film ou un livre que tu aimes en six phrases, avec au moins cinq connecteurs différents."
+    },
+    "it": {
+     "t": "Storytelling connectors",
+     "g": "Guida chi ascolta attraverso la storia con connettivi temporali chiari.",
+     "p": [
+      "Inizio e ordine: First, at first, then, after that, next. At first I was nervous, then I relaxed.",
+      "Contemporaneità: meanwhile, while, at the same time. Meanwhile, my sister was looking for a taxi.",
+      "Fine: eventually, finally, in the end. In the end, we laughed about it all evening."
+     ],
+     "q": "Cosa ti è successo di divertente o fortunato in viaggio? Raccontalo con at first, then e in the end.",
+     "c": "Racconta un film o un libro che ami in sei frasi, usando almeno cinque connettivi diversi."
+    },
+    "pt": {
+     "t": "Storytelling connectors",
+     "g": "Guia quem te ouve ao longo da história com conectores de tempo claros.",
+     "p": [
+      "Início e ordem: First, at first, then, after that, next. At first I was nervous, then I relaxed.",
+      "Ao mesmo tempo: meanwhile, while, at the same time. Meanwhile, my sister was looking for a taxi.",
+      "Fim: eventually, finally, in the end. In the end, we laughed about it all evening."
+     ],
+     "q": "Que coisa engraçada ou feliz te aconteceu numa viagem? Conta-a com at first, then e in the end.",
+     "c": "Reconta um filme ou livro de que gostes em seis frases, com pelo menos cinco conectores diferentes."
+    },
+    "pt_BR": {
+     "t": "Storytelling connectors",
+     "g": "Guie quem escuta pela história com conectores de tempo claros.",
+     "p": [
+      "Início e ordem: First, at first, then, after that, next. At first I was nervous, then I relaxed.",
+      "Ao mesmo tempo: meanwhile, while, at the same time. Meanwhile, my sister was looking for a taxi.",
+      "Final: eventually, finally, in the end. In the end, we laughed about it all evening."
+     ],
+     "q": "Que coisa engraçada ou de sorte aconteceu com você numa viagem? Conte com at first, then e in the end.",
+     "c": "Reconte um filme ou livro de que você gosta em seis frases, com pelo menos cinco conectores diferentes."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "at first",
+      "ex": "At first, I didn't understand the joke."
+     },
+     {
+      "w": "after that",
+      "ex": "After that, we went for a walk by the river."
+     },
+     {
+      "w": "meanwhile",
+      "ex": "Meanwhile, the others were setting the table."
+     },
+     {
+      "w": "eventually",
+      "ex": "Eventually, we found the right street."
+     },
+     {
+      "w": "in the end",
+      "ex": "In the end, it was a wonderful day."
+     },
+     {
+      "w": "as soon as",
+      "ex": "As soon as we arrived, it started to snow."
+     }
+    ],
+    "gram": "Story connectors: at first, then, after that (order); meanwhile, while (same time); eventually, in the end (result after time or effort)."
+   }
+  },
+  {
+   "d": 186,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Second conditional: If I won...",
+     "g": "Imagine unreal or unlikely situations with if + past, would + verb.",
+     "p": [
+      "Form: If + past simple, would + base verb. If I had more time, I would learn to paint.",
+      "It is about now or the future, but imaginary: If I won the lottery, I'd travel the world.",
+      "With be, were is common for all persons: If I were rich, if she were here. I'd = I would."
+     ],
+     "q": "If you had a free year with no work or study, what would you do with it?",
+     "c": "Finish five sentences: If I could fly..., If I lived abroad..., If I were a chef..., If I had a robot..., If I spoke ten languages..."
+    },
+    "de": {
+     "t": "Second conditional: If I won...",
+     "g": "Du stellst dir unwirkliche Situationen vor: if + Past, would + Verb.",
+     "p": [
+      "Form: If + Past Simple, would + Grundform. If I had more time, I would learn to paint.",
+      "Es geht um jetzt oder die Zukunft, aber nur in Gedanken: If I won the lottery, I'd travel the world.",
+      "Bei be nimmt man oft were für alle Personen: If I were rich, if she were here. I'd = I would."
+     ],
+     "q": "Wenn du ein freies Jahr ohne Arbeit oder Studium hättest, was würdest du damit machen?",
+     "c": "Vervollständige fünf Sätze: If I could fly..., If I lived abroad..., If I were a chef..., If I had a robot..., If I spoke ten languages..."
+    },
+    "es": {
+     "t": "Second conditional: If I won...",
+     "g": "Imagina situaciones irreales o poco probables con if + pasado, would + verbo.",
+     "p": [
+      "Forma: If + past simple, would + verbo base. If I had more time, I would learn to paint.",
+      "Habla del presente o el futuro, pero imaginario: If I won the lottery, I'd travel the world.",
+      "Con be se usa mucho were para todas las personas: If I were rich, if she were here. I'd = I would."
+     ],
+     "q": "Si tuvieras un año libre sin trabajo ni estudios, ¿qué harías con él?",
+     "c": "Completa cinco frases: If I could fly..., If I lived abroad..., If I were a chef..., If I had a robot..., If I spoke ten languages..."
+    },
+    "fr": {
+     "t": "Second conditional: If I won...",
+     "g": "Imagine des situations irréelles avec if + prétérit, would + verbe.",
+     "p": [
+      "Forme : If + past simple, would + base verbale. If I had more time, I would learn to paint.",
+      "Cela concerne le présent ou l'avenir, mais en imagination : If I won the lottery, I'd travel the world.",
+      "Avec be, on emploie souvent were partout : If I were rich, if she were here. I'd = I would."
+     ],
+     "q": "Si tu avais une année libre sans travail ni études, qu'est-ce que tu en ferais ?",
+     "c": "Termine cinq phrases : If I could fly..., If I lived abroad..., If I were a chef..., If I had a robot..., If I spoke ten languages..."
+    },
+    "it": {
+     "t": "Second conditional: If I won...",
+     "g": "Immagina situazioni irreali o improbabili con if + passato, would + verbo.",
+     "p": [
+      "Forma: If + past simple, would + verbo base. If I had more time, I would learn to paint.",
+      "Riguarda il presente o il futuro, ma immaginario: If I won the lottery, I'd travel the world.",
+      "Con be si usa spesso were per tutte le persone: If I were rich, if she were here. I'd = I would."
+     ],
+     "q": "Se avessi un anno libero senza lavoro né studio, cosa ne faresti?",
+     "c": "Completa cinque frasi: If I could fly..., If I lived abroad..., If I were a chef..., If I had a robot..., If I spoke ten languages..."
+    },
+    "pt": {
+     "t": "Second conditional: If I won...",
+     "g": "Imagina situações irreais ou pouco prováveis com if + passado, would + verbo.",
+     "p": [
+      "Forma: If + past simple, would + verbo base. If I had more time, I would learn to paint.",
+      "Fala do presente ou do futuro, mas imaginário: If I won the lottery, I'd travel the world.",
+      "Com be usa-se muito were para todas as pessoas: If I were rich, if she were here. I'd = I would."
+     ],
+     "q": "Se tivesses um ano livre sem trabalho nem estudos, o que farias com ele?",
+     "c": "Completa cinco frases: If I could fly..., If I lived abroad..., If I were a chef..., If I had a robot..., If I spoke ten languages..."
+    },
+    "pt_BR": {
+     "t": "Second conditional: If I won...",
+     "g": "Imagine situações irreais ou improváveis com if + passado, would + verbo.",
+     "p": [
+      "Forma: If + past simple, would + verbo base. If I had more time, I would learn to paint.",
+      "Fala do presente ou do futuro, mas imaginário: If I won the lottery, I'd travel the world.",
+      "Com be, usa-se muito were para todas as pessoas: If I were rich, if she were here. I'd = I would."
+     ],
+     "q": "Se você tivesse um ano livre, sem trabalho nem estudo, o que faria com ele?",
+     "c": "Complete cinco frases: If I could fly..., If I lived abroad..., If I were a chef..., If I had a robot..., If I spoke ten languages..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "If I had...",
+      "ex": "If I had more free time, I would read more."
+     },
+     {
+      "w": "I would",
+      "ex": "I would buy a small house by the sea."
+     },
+     {
+      "w": "If I were you",
+      "ex": "If I were you, I'd try the local food."
+     },
+     {
+      "w": "If I won",
+      "ex": "If I won a prize, I'd share it with my family."
+     },
+     {
+      "w": "I'd love to",
+      "ex": "I'd love to learn the piano one day."
+     },
+     {
+      "w": "could",
+      "ex": "If I could fly, I'd visit every country."
+     }
+    ],
+    "gram": "Second conditional: If + past simple, would + base verb for unreal present or future. Were is used with all persons: If I were..."
+   }
+  },
+  {
+   "d": 187,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Wishes about the present: I wish",
+     "g": "Talk about things you'd like to be different now with I wish + past.",
+     "p": [
+      "I wish + past simple for present situations: I wish I lived by the sea. I wish I had a garden.",
+      "Abilities: I wish I could sing. I wish I could speak Japanese. Be: I wish I were taller.",
+      "If only is stronger: If only it were the weekend! Keep it light and positive."
+     ],
+     "q": "What is one thing you wish you could do, and one thing you wish you had right now?",
+     "c": "Write five wishes: two about skills (I wish I could...), two about your life and one about the weather."
+    },
+    "de": {
+     "t": "Wishes about the present: I wish",
+     "g": "Du sprichst mit I wish + Past über Dinge, die jetzt anders sein sollten.",
+     "p": [
+      "I wish + Past Simple für die Gegenwart: I wish I lived by the sea. I wish I had a garden.",
+      "Fähigkeiten: I wish I could sing. I wish I could speak Japanese. Mit be: I wish I were taller.",
+      "If only ist stärker: If only it were the weekend! Bleib dabei locker und positiv."
+     ],
+     "q": "Was würdest du gern können, und was hättest du gern genau jetzt?",
+     "c": "Schreib fünf Wünsche: zwei über Fähigkeiten (I wish I could...), zwei über dein Leben und einen über das Wetter."
+    },
+    "es": {
+     "t": "Wishes about the present: I wish",
+     "g": "Habla de lo que te gustaría que fuera distinto ahora con I wish + pasado.",
+     "p": [
+      "I wish + past simple para el presente: I wish I lived by the sea. I wish I had a garden.",
+      "Habilidades: I wish I could sing. I wish I could speak Japanese. Con be: I wish I were taller.",
+      "If only es más intenso: If only it were the weekend! Mantén un tono ligero y positivo."
+     ],
+     "q": "¿Qué te gustaría saber hacer y qué te gustaría tener ahora mismo?",
+     "c": "Escribe cinco deseos: dos sobre habilidades (I wish I could...), dos sobre tu vida y uno sobre el tiempo."
+    },
+    "fr": {
+     "t": "Wishes about the present: I wish",
+     "g": "Parle de ce que tu aimerais changer maintenant avec I wish + prétérit.",
+     "p": [
+      "I wish + past simple pour le présent : I wish I lived by the sea. I wish I had a garden.",
+      "Capacités : I wish I could sing. I wish I could speak Japanese. Avec be : I wish I were taller.",
+      "If only est plus fort : If only it were the weekend! Garde un ton léger et positif."
+     ],
+     "q": "Qu'aimerais-tu savoir faire, et qu'aimerais-tu avoir en ce moment ?",
+     "c": "Écris cinq souhaits : deux sur des compétences (I wish I could...), deux sur ta vie et un sur la météo."
+    },
+    "it": {
+     "t": "Wishes about the present: I wish",
+     "g": "Parla di ciò che vorresti fosse diverso adesso con I wish + passato.",
+     "p": [
+      "I wish + past simple per il presente: I wish I lived by the sea. I wish I had a garden.",
+      "Capacità: I wish I could sing. I wish I could speak Japanese. Con be: I wish I were taller.",
+      "If only è più forte: If only it were the weekend! Mantieni un tono leggero e positivo."
+     ],
+     "q": "Cosa vorresti saper fare, e cosa vorresti avere proprio adesso?",
+     "c": "Scrivi cinque desideri: due su abilità (I wish I could...), due sulla tua vita e uno sul tempo."
+    },
+    "pt": {
+     "t": "Wishes about the present: I wish",
+     "g": "Fala do que gostavas que fosse diferente agora com I wish + passado.",
+     "p": [
+      "I wish + past simple para o presente: I wish I lived by the sea. I wish I had a garden.",
+      "Capacidades: I wish I could sing. I wish I could speak Japanese. Com be: I wish I were taller.",
+      "If only é mais forte: If only it were the weekend! Mantém um tom leve e positivo."
+     ],
+     "q": "O que gostavas de saber fazer, e o que gostavas de ter neste momento?",
+     "c": "Escreve cinco desejos: dois sobre capacidades (I wish I could...), dois sobre a tua vida e um sobre o tempo."
+    },
+    "pt_BR": {
+     "t": "Wishes about the present: I wish",
+     "g": "Fale do que você gostaria que fosse diferente agora com I wish + passado.",
+     "p": [
+      "I wish + past simple para o presente: I wish I lived by the sea. I wish I had a garden.",
+      "Habilidades: I wish I could sing. I wish I could speak Japanese. Com be: I wish I were taller.",
+      "If only é mais forte: If only it were the weekend! Mantenha um tom leve e positivo."
+     ],
+     "q": "O que você gostaria de saber fazer, e o que gostaria de ter agora mesmo?",
+     "c": "Escreva cinco desejos: dois sobre habilidades (I wish I could...), dois sobre sua vida e um sobre o tempo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "I wish I lived",
+      "ex": "I wish I lived closer to the mountains."
+     },
+     {
+      "w": "I wish I could",
+      "ex": "I wish I could play the violin."
+     },
+     {
+      "w": "I wish I had",
+      "ex": "I wish I had more time to read."
+     },
+     {
+      "w": "I wish it were",
+      "ex": "I wish it were summer already."
+     },
+     {
+      "w": "If only",
+      "ex": "If only I knew the answer!"
+     },
+     {
+      "w": "I'd like to change",
+      "ex": "I'd like to change my morning routine."
+     }
+    ],
+    "gram": "I wish / If only + past simple for present wishes: I wish I had... I wish I could... With be, use were: I wish it were sunny."
+   }
+  },
+  {
+   "d": 188,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "First vs second conditional",
+     "g": "Choose between a real possibility and pure imagination.",
+     "p": [
+      "First: If + present, will. Real and likely: If I see him, I'll tell him. If it rains, we'll stay in.",
+      "Second: If + past, would. Unreal or unlikely: If I were you, I'd go. If I had wings, I'd fly.",
+      "Same idea, different feeling: If I get the job, I'll move (possible). If I got the job, I'd move (less likely)."
+     ],
+     "q": "What will you do if the weather is nice this weekend? And what would you do if you had a whole month off?",
+     "c": "Write two pairs of sentences on the same topic: one first conditional and one second conditional each."
+    },
+    "de": {
+     "t": "First vs second conditional",
+     "g": "Du wählst zwischen echter Möglichkeit und reiner Vorstellung.",
+     "p": [
+      "First: If + Present, will. Real und wahrscheinlich: If I see him, I'll tell him. If it rains, we'll stay in.",
+      "Second: If + Past, would. Unwirklich: If I were you, I'd go. If I had wings, I'd fly.",
+      "Gleiche Idee, anderes Gefühl: If I get the job, I'll move (möglich). If I got the job, I'd move (weniger sicher)."
+     ],
+     "q": "Was machst du, wenn das Wetter am Wochenende schön ist? Und was würdest du mit einem ganzen freien Monat machen?",
+     "c": "Schreib zwei Satzpaare zum selben Thema: jeweils einen Satz mit First und einen mit Second Conditional."
+    },
+    "es": {
+     "t": "First vs second conditional",
+     "g": "Elige entre una posibilidad real y la pura imaginación.",
+     "p": [
+      "First: If + presente, will. Real y probable: If I see him, I'll tell him. If it rains, we'll stay in.",
+      "Second: If + pasado, would. Irreal o poco probable: If I were you, I'd go. If I had wings, I'd fly.",
+      "Misma idea, otra sensación: If I get the job, I'll move (posible). If I got the job, I'd move (menos probable)."
+     ],
+     "q": "¿Qué harás si hace buen tiempo este fin de semana? ¿Y qué harías si tuvieras un mes entero libre?",
+     "c": "Escribe dos pares de frases sobre el mismo tema: en cada par, una con first y otra con second conditional."
+    },
+    "fr": {
+     "t": "First vs second conditional",
+     "g": "Choisis entre une vraie possibilité et la pure imagination.",
+     "p": [
+      "First : If + présent, will. Réel et probable : If I see him, I'll tell him. If it rains, we'll stay in.",
+      "Second : If + prétérit, would. Irréel : If I were you, I'd go. If I had wings, I'd fly.",
+      "Même idée, autre nuance : If I get the job, I'll move (possible). If I got the job, I'd move (moins sûr)."
+     ],
+     "q": "Que feras-tu s'il fait beau ce week-end ? Et que ferais-tu si tu avais un mois entier de libre ?",
+     "c": "Écris deux paires de phrases sur le même sujet : dans chaque paire, une au first et une au second conditional."
+    },
+    "it": {
+     "t": "First vs second conditional",
+     "g": "Scegli tra una possibilità reale e la pura immaginazione.",
+     "p": [
+      "First: If + presente, will. Reale e probabile: If I see him, I'll tell him. If it rains, we'll stay in.",
+      "Second: If + passato, would. Irreale o improbabile: If I were you, I'd go. If I had wings, I'd fly.",
+      "Stessa idea, sfumatura diversa: If I get the job, I'll move (possibile). If I got the job, I'd move (meno probabile)."
+     ],
+     "q": "Cosa farai se questo fine settimana è bel tempo? E cosa faresti con un mese intero libero?",
+     "c": "Scrivi due coppie di frasi sullo stesso tema: in ogni coppia una con il first e una con il second conditional."
+    },
+    "pt": {
+     "t": "First vs second conditional",
+     "g": "Escolhe entre uma possibilidade real e a pura imaginação.",
+     "p": [
+      "First: If + presente, will. Real e provável: If I see him, I'll tell him. If it rains, we'll stay in.",
+      "Second: If + passado, would. Irreal ou improvável: If I were you, I'd go. If I had wings, I'd fly.",
+      "Mesma ideia, outro tom: If I get the job, I'll move (possível). If I got the job, I'd move (menos provável)."
+     ],
+     "q": "O que vais fazer se estiver bom tempo este fim de semana? E o que farias com um mês inteiro livre?",
+     "c": "Escreve dois pares de frases sobre o mesmo tema: em cada par, uma com first e outra com second conditional."
+    },
+    "pt_BR": {
+     "t": "First vs second conditional",
+     "g": "Escolha entre uma possibilidade real e a pura imaginação.",
+     "p": [
+      "First: If + presente, will. Real e provável: If I see him, I'll tell him. If it rains, we'll stay in.",
+      "Second: If + passado, would. Irreal ou improvável: If I were you, I'd go. If I had wings, I'd fly.",
+      "Mesma ideia, outro tom: If I get the job, I'll move (possível). If I got the job, I'd move (menos provável)."
+     ],
+     "q": "O que você vai fazer se fizer sol neste fim de semana? E o que faria com um mês inteiro de folga?",
+     "c": "Escreva dois pares de frases sobre o mesmo tema: em cada par, uma com first e outra com second conditional."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "If I see...",
+      "ex": "If I see Anna, I'll give her your message."
+     },
+     {
+      "w": "I'll",
+      "ex": "If it's sunny tomorrow, I'll go cycling."
+     },
+     {
+      "w": "If I were you",
+      "ex": "If I were you, I'd take the earlier train."
+     },
+     {
+      "w": "I'd",
+      "ex": "If I lived in Paris, I'd visit museums every week."
+     },
+     {
+      "w": "unless",
+      "ex": "We'll go to the beach unless it rains."
+     },
+     {
+      "w": "What would you do if...?",
+      "ex": "What would you do if you met your favourite singer?"
+     }
+    ],
+    "gram": "First conditional (if + present, will) = real, likely. Second conditional (if + past, would) = imaginary or unlikely now or later."
+   }
+  },
+  {
+   "d": 189,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Dream jobs and imagined lives",
+     "g": "Use the second conditional to talk about dream jobs and other lives.",
+     "p": [
+      "Dream job: If I could do any job, I'd be a wildlife photographer. I'd travel and work outdoors.",
+      "Give reasons: I'd love it because... The best part would be... The hardest part would be...",
+      "Other lives: If I lived in another century, I'd... If I were born on an island, I'd probably..."
+     ],
+     "q": "If you could have any job in the world for one year, what would it be, and what would a normal day look like?",
+     "c": "Describe your dream job in five sentences: what you'd do, where, with whom, the best part and the hardest part."
+    },
+    "de": {
+     "t": "Dream jobs and imagined lives",
+     "g": "Mit dem Second Conditional sprichst du über Traumberufe und andere Leben.",
+     "p": [
+      "Traumjob: If I could do any job, I'd be a wildlife photographer. I'd travel and work outdoors.",
+      "Gründe nennen: I'd love it because... The best part would be... The hardest part would be...",
+      "Andere Leben: If I lived in another century, I'd... If I were born on an island, I'd probably..."
+     ],
+     "q": "Wenn du ein Jahr lang jeden Beruf der Welt haben könntest, welcher wäre es, und wie sähe ein normaler Tag aus?",
+     "c": "Beschreib deinen Traumjob in fünf Sätzen: was, wo, mit wem, das Schönste und das Schwierigste."
+    },
+    "es": {
+     "t": "Dream jobs and imagined lives",
+     "g": "Usa el second conditional para hablar de trabajos soñados y otras vidas.",
+     "p": [
+      "Trabajo soñado: If I could do any job, I'd be a wildlife photographer. I'd travel and work outdoors.",
+      "Da razones: I'd love it because... The best part would be... The hardest part would be...",
+      "Otras vidas: If I lived in another century, I'd... If I were born on an island, I'd probably..."
+     ],
+     "q": "Si pudieras tener cualquier trabajo del mundo durante un año, ¿cuál sería y cómo sería un día normal?",
+     "c": "Describe tu trabajo soñado en cinco frases: qué harías, dónde, con quién, lo mejor y lo más difícil."
+    },
+    "fr": {
+     "t": "Dream jobs and imagined lives",
+     "g": "Utilise le second conditional pour parler de métiers de rêve et d'autres vies.",
+     "p": [
+      "Métier de rêve : If I could do any job, I'd be a wildlife photographer. I'd travel and work outdoors.",
+      "Donne des raisons : I'd love it because... The best part would be... The hardest part would be...",
+      "Autres vies : If I lived in another century, I'd... If I were born on an island, I'd probably..."
+     ],
+     "q": "Si tu pouvais faire n'importe quel métier pendant un an, lequel choisirais-tu, et à quoi ressemblerait ta journée ?",
+     "c": "Décris ton métier de rêve en cinq phrases : quoi, où, avec qui, le meilleur et le plus difficile."
+    },
+    "it": {
+     "t": "Dream jobs and imagined lives",
+     "g": "Usa il second conditional per parlare di lavori dei sogni e vite immaginarie.",
+     "p": [
+      "Lavoro dei sogni: If I could do any job, I'd be a wildlife photographer. I'd travel and work outdoors.",
+      "Dai motivi: I'd love it because... The best part would be... The hardest part would be...",
+      "Altre vite: If I lived in another century, I'd... If I were born on an island, I'd probably..."
+     ],
+     "q": "Se potessi fare qualsiasi lavoro al mondo per un anno, quale sceglieresti e come sarebbe una giornata tipo?",
+     "c": "Descrivi il tuo lavoro dei sogni in cinque frasi: cosa, dove, con chi, la parte migliore e la più difficile."
+    },
+    "pt": {
+     "t": "Dream jobs and imagined lives",
+     "g": "Usa o second conditional para falar de empregos de sonho e outras vidas.",
+     "p": [
+      "Emprego de sonho: If I could do any job, I'd be a wildlife photographer. I'd travel and work outdoors.",
+      "Dá razões: I'd love it because... The best part would be... The hardest part would be...",
+      "Outras vidas: If I lived in another century, I'd... If I were born on an island, I'd probably..."
+     ],
+     "q": "Se pudesses ter qualquer emprego do mundo durante um ano, qual seria e como seria um dia normal?",
+     "c": "Descreve o teu emprego de sonho em cinco frases: o quê, onde, com quem, a melhor parte e a mais difícil."
+    },
+    "pt_BR": {
+     "t": "Dream jobs and imagined lives",
+     "g": "Use o second conditional para falar de trabalhos dos sonhos e outras vidas.",
+     "p": [
+      "Trabalho dos sonhos: If I could do any job, I'd be a wildlife photographer. I'd travel and work outdoors.",
+      "Dê motivos: I'd love it because... The best part would be... The hardest part would be...",
+      "Outras vidas: If I lived in another century, I'd... If I were born on an island, I'd probably..."
+     ],
+     "q": "Se você pudesse ter qualquer trabalho do mundo por um ano, qual seria e como seria um dia normal?",
+     "c": "Descreva seu trabalho dos sonhos em cinco frases: o quê, onde, com quem, a melhor parte e a mais difícil."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "dream job",
+      "ex": "My dream job would be working in a bakery."
+     },
+     {
+      "w": "If I could do any job",
+      "ex": "If I could do any job, I'd design video games."
+     },
+     {
+      "w": "the best part would be",
+      "ex": "The best part would be meeting people from everywhere."
+     },
+     {
+      "w": "work outdoors",
+      "ex": "I'd love a job where I could work outdoors."
+     },
+     {
+      "w": "probably",
+      "ex": "I'd probably wake up early every day."
+     },
+     {
+      "w": "be my own boss",
+      "ex": "If I had my own café, I'd be my own boss."
+     }
+    ],
+    "gram": "Second conditional for imagined lives: If I could..., I'd... Use would be / would probably to describe an imaginary situation."
+   }
+  },
+  {
+   "d": 190,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Reported speech: statements",
+     "g": "Report what people said, usually moving the tense one step back.",
+     "p": [
+      "Say vs tell: She said (that) she was tired. He told me (that) he would come. Tell needs a person.",
+      "Backshift: am to was, will to would, can to could, have done to had done. I'm busy becomes she said she was busy.",
+      "Change words: I to he/she, here to there, today to that day, tomorrow to the next day."
+     ],
+     "q": "What is something nice a friend or colleague said to you recently? Report it with said or told me.",
+     "c": "Report five things people said today or yesterday: My mum told me that... My friend said that..."
+    },
+    "de": {
+     "t": "Reported speech: statements",
+     "g": "Du gibst wieder, was jemand gesagt hat, meist mit einer Zeitstufe zurück.",
+     "p": [
+      "Say oder tell: She said (that) she was tired. He told me (that) he would come. Tell braucht eine Person.",
+      "Zeitverschiebung: am zu was, will zu would, can zu could. I'm busy wird zu she said she was busy.",
+      "Wörter anpassen: I zu he/she, here zu there, today zu that day, tomorrow zu the next day."
+     ],
+     "q": "Was Nettes hat dir neulich ein Freund oder Kollege gesagt? Gib es mit said oder told me wieder.",
+     "c": "Gib fünf Dinge wieder, die Leute heute oder gestern gesagt haben: My mum told me that... My friend said that..."
+    },
+    "es": {
+     "t": "Reported speech: statements",
+     "g": "Cuenta lo que alguien dijo, normalmente retrocediendo un tiempo verbal.",
+     "p": [
+      "Say o tell: She said (that) she was tired. He told me (that) he would come. Tell necesita una persona.",
+      "Cambio de tiempo: am a was, will a would, can a could. I'm busy pasa a she said she was busy.",
+      "Cambia palabras: I a he/she, here a there, today a that day, tomorrow a the next day."
+     ],
+     "q": "¿Qué cosa bonita te dijo hace poco un amigo o un compañero? Cuéntalo con said o told me.",
+     "c": "Cuenta cinco cosas que alguien dijo hoy o ayer: My mum told me that... My friend said that..."
+    },
+    "fr": {
+     "t": "Reported speech: statements",
+     "g": "Rapporte ce que quelqu'un a dit, en reculant en général le temps d'un cran.",
+     "p": [
+      "Say ou tell : She said (that) she was tired. He told me (that) he would come. Tell exige une personne.",
+      "Concordance : am devient was, will devient would, can devient could. I'm busy donne she said she was busy.",
+      "Adapte les mots : I devient he/she, here devient there, today devient that day, tomorrow devient the next day."
+     ],
+     "q": "Quelle gentillesse un ami ou un collègue t'a-t-il dite récemment ? Rapporte-la avec said ou told me.",
+     "c": "Rapporte cinq choses dites aujourd'hui ou hier : My mum told me that... My friend said that..."
+    },
+    "it": {
+     "t": "Reported speech: statements",
+     "g": "Riferisci ciò che qualcuno ha detto, di solito spostando il tempo indietro di un passo.",
+     "p": [
+      "Say o tell: She said (that) she was tired. He told me (that) he would come. Tell vuole una persona.",
+      "Concordanza: am diventa was, will diventa would, can diventa could. I'm busy diventa she said she was busy.",
+      "Cambia le parole: I in he/she, here in there, today in that day, tomorrow in the next day."
+     ],
+     "q": "Qual è una cosa gentile che un amico o un collega ti ha detto di recente? Riferiscila con said o told me.",
+     "c": "Riferisci cinque cose dette oggi o ieri: My mum told me that... My friend said that..."
+    },
+    "pt": {
+     "t": "Reported speech: statements",
+     "g": "Relata o que alguém disse, normalmente recuando um tempo verbal.",
+     "p": [
+      "Say ou tell: She said (that) she was tired. He told me (that) he would come. Tell precisa de uma pessoa.",
+      "Recuo de tempo: am passa a was, will a would, can a could. I'm busy fica she said she was busy.",
+      "Muda palavras: I para he/she, here para there, today para that day, tomorrow para the next day."
+     ],
+     "q": "Que coisa simpática te disse recentemente um amigo ou colega? Relata com said ou told me.",
+     "c": "Relata cinco coisas que alguém disse hoje ou ontem: My mum told me that... My friend said that..."
+    },
+    "pt_BR": {
+     "t": "Reported speech: statements",
+     "g": "Conte o que alguém disse, normalmente voltando um tempo verbal.",
+     "p": [
+      "Say ou tell: She said (that) she was tired. He told me (that) he would come. Tell pede uma pessoa.",
+      "Recuo de tempo: am vira was, will vira would, can vira could. I'm busy fica she said she was busy.",
+      "Troque palavras: I por he/she, here por there, today por that day, tomorrow por the next day."
+     ],
+     "q": "Que coisa legal um amigo ou colega te disse recentemente? Conte usando said ou told me.",
+     "c": "Relate cinco coisas que alguém disse hoje ou ontem: My mum told me that... My friend said that..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "she said (that)",
+      "ex": "She said that she was very happy."
+     },
+     {
+      "w": "he told me (that)",
+      "ex": "He told me that he would call later."
+     },
+     {
+      "w": "the next day",
+      "ex": "They said they would arrive the next day."
+     },
+     {
+      "w": "that day",
+      "ex": "She said she was working that day."
+     },
+     {
+      "w": "could",
+      "ex": "He said he could help us."
+     },
+     {
+      "w": "had finished",
+      "ex": "She told me she had finished the book."
+     }
+    ],
+    "gram": "Reported statements: say (that) / tell someone (that). Backshift tenses: is to was, will to would, can to could, did to had done."
+   }
+  }
+ ]
+}

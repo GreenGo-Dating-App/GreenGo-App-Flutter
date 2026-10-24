@@ -1,0 +1,1305 @@
+{
+"topic": "negotiation",
+"questions": [
+{
+"id": "negotiation-001",
+"lv": "any",
+"i18n": {
+"en": "What is the best deal you have ever negotiated, and how did you do it?",
+"de": "Was ist der beste Deal, den du je ausgehandelt hast, und wie hast du das geschafft?",
+"es": "¿Cuál es el mejor acuerdo que has negociado nunca y cómo lo lograste?",
+"fr": "Quelle est la meilleure affaire que tu aies jamais négociée, et comment as-tu fait ?",
+"it": "Qual è il miglior accordo che tu abbia mai negoziato, e come ci sei riuscito?",
+"pt": "Qual foi o melhor negócio que já negociaste e como o conseguiste?",
+"pt_BR": "Qual foi o melhor acordo que você já negociou e como conseguiu?"
+}
+},
+{
+"id": "negotiation-002",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy negotiating, or do you prefer to avoid it? Why?",
+"de": "Verhandelst du gern, oder gehst du dem lieber aus dem Weg? Warum?",
+"es": "¿Te gusta negociar o prefieres evitarlo? ¿Por qué?",
+"fr": "Aimes-tu négocier, ou préfères-tu l'éviter ? Pourquoi ?",
+"it": "Ti piace negoziare o preferisci evitarlo? Perché?",
+"pt": "Gostas de negociar ou preferes evitar? Porquê?",
+"pt_BR": "Você gosta de negociar ou prefere evitar? Por quê?"
+}
+},
+{
+"id": "negotiation-003",
+"lv": "any",
+"i18n": {
+"en": "In your culture, is haggling over prices common? Where does it happen?",
+"de": "Ist Feilschen um Preise in deiner Kultur üblich? Wo passiert das?",
+"es": "En tu cultura, ¿es común regatear los precios? ¿Dónde se hace?",
+"fr": "Dans ta culture, est-il courant de marchander les prix ? Où cela se fait-il ?",
+"it": "Nella tua cultura è comune contrattare sui prezzi? Dove succede?",
+"pt": "Na tua cultura é comum regatear preços? Onde é que isso acontece?",
+"pt_BR": "Na sua cultura é comum pechinchar? Onde isso acontece?"
+}
+},
+{
+"id": "negotiation-004",
+"lv": "any",
+"i18n": {
+"en": "Who is the best negotiator you know personally, and what makes them good?",
+"de": "Wer ist die beste Verhandlerin oder der beste Verhandler, die du kennst, und was macht sie so gut?",
+"es": "¿Quién es la persona que mejor negocia de las que conoces y qué la hace tan buena?",
+"fr": "Qui est le meilleur négociateur que tu connaisses, et qu'est-ce qui le rend si bon ?",
+"it": "Chi è la persona più brava a negoziare che conosci, e cosa la rende così brava?",
+"pt": "Quem é a pessoa que melhor negoceia entre as que conheces e o que a torna tão boa?",
+"pt_BR": "Quem é a pessoa que melhor negocia que você conhece, e o que a torna tão boa?"
+}
+},
+{
+"id": "negotiation-005",
+"lv": "any",
+"i18n": {
+"en": "What kind of negotiation makes you feel most nervous, and why?",
+"de": "Bei welcher Art von Verhandlung wirst du am nervösesten, und warum?",
+"es": "¿Qué tipo de negociación te pone más nervioso y por qué?",
+"fr": "Quel type de négociation te rend le plus nerveux, et pourquoi ?",
+"it": "Quale tipo di negoziazione ti rende più nervoso, e perché?",
+"pt": "Que tipo de negociação te deixa mais nervoso e porquê?",
+"pt_BR": "Que tipo de negociação te deixa mais nervoso, e por quê?"
+}
+},
+{
+"id": "negotiation-006",
+"lv": "any",
+"i18n": {
+"en": "How do you usually decide where to eat when you are out with friends?",
+"de": "Wie entscheidet ihr normalerweise, wo ihr essen geht, wenn du mit Freunden unterwegs bist?",
+"es": "¿Cómo decidís normalmente dónde comer cuando sales con amigos?",
+"fr": "Comment décidez-vous d'habitude où manger quand tu sors avec des amis ?",
+"it": "Come decidete di solito dove mangiare quando esci con gli amici?",
+"pt": "Como é que normalmente decidem onde comer quando sais com amigos?",
+"pt_BR": "Como vocês costumam decidir onde comer quando você sai com os amigos?"
+}
+},
+{
+"id": "negotiation-007",
+"lv": "any",
+"i18n": {
+"en": "What is something you wish you had asked for but did not?",
+"de": "Worum hättest du gern gebeten, hast es aber nicht getan?",
+"es": "¿Qué es algo que te habría gustado pedir pero no pediste?",
+"fr": "Qu'est-ce que tu aurais aimé demander sans jamais oser le faire ?",
+"it": "C'è qualcosa che avresti voluto chiedere ma non hai chiesto?",
+"pt": "O que é que gostavas de ter pedido, mas acabaste por não pedir?",
+"pt_BR": "O que você gostaria de ter pedido, mas acabou não pedindo?"
+}
+},
+{
+"id": "negotiation-008",
+"lv": "any",
+"i18n": {
+"en": "Are you more of a talker or a listener in a discussion?",
+"de": "Bist du in einer Diskussion eher jemand, der redet, oder jemand, der zuhört?",
+"es": "En una conversación, ¿eres más de hablar o de escuchar?",
+"fr": "Dans une discussion, es-tu plutôt du genre à parler ou à écouter ?",
+"it": "In una discussione sei più uno che parla o uno che ascolta?",
+"pt": "Numa discussão, és mais de falar ou de ouvir?",
+"pt_BR": "Numa conversa, você é mais de falar ou de ouvir?"
+}
+},
+{
+"id": "negotiation-009",
+"lv": "any",
+"i18n": {
+"en": "How do you react when someone says no to your request?",
+"de": "Wie reagierst du, wenn jemand Nein zu deiner Bitte sagt?",
+"es": "¿Cómo reaccionas cuando alguien dice que no a lo que pides?",
+"fr": "Comment réagis-tu quand quelqu'un refuse ta demande ?",
+"it": "Come reagisci quando qualcuno dice di no a una tua richiesta?",
+"pt": "Como reages quando alguém diz que não a um pedido teu?",
+"pt_BR": "Como você reage quando alguém diz não a um pedido seu?"
+}
+},
+{
+"id": "negotiation-010",
+"lv": "any",
+"i18n": {
+"en": "What is easier for you: asking for something for yourself or for someone else?",
+"de": "Was fällt dir leichter: für dich selbst etwas zu erbitten oder für jemand anderen?",
+"es": "¿Qué te resulta más fácil: pedir algo para ti o para otra persona?",
+"fr": "Qu'est-ce qui est plus facile pour toi : demander pour toi-même ou pour quelqu'un d'autre ?",
+"it": "Cosa ti riesce più facile: chiedere qualcosa per te o per qualcun altro?",
+"pt": "O que te é mais fácil: pedir algo para ti ou para outra pessoa?",
+"pt_BR": "O que é mais fácil para você: pedir algo para si ou para outra pessoa?"
+}
+},
+{
+"id": "negotiation-011",
+"lv": "any",
+"i18n": {
+"en": "Can you remember a time when listening carefully helped you get a better result?",
+"de": "Erinnerst du dich an eine Situation, in der gutes Zuhören dir ein besseres Ergebnis gebracht hat?",
+"es": "¿Recuerdas alguna vez en que escuchar con atención te ayudó a conseguir algo mejor?",
+"fr": "Te souviens-tu d'une fois où bien écouter t'a permis d'obtenir un meilleur résultat ?",
+"it": "Ricordi una volta in cui ascoltare con attenzione ti ha aiutato a ottenere un risultato migliore?",
+"pt": "Lembras-te de uma vez em que ouvir com atenção te ajudou a conseguir um resultado melhor?",
+"pt_BR": "Você lembra de uma vez em que ouvir com atenção te ajudou a conseguir um resultado melhor?"
+}
+},
+{
+"id": "negotiation-012",
+"lv": "any",
+"i18n": {
+"en": "How do you split chores or shared tasks at home?",
+"de": "Wie teilt ihr bei dir zu Hause die Hausarbeit oder gemeinsame Aufgaben auf?",
+"es": "¿Cómo os repartís las tareas de casa o las responsabilidades compartidas?",
+"fr": "Comment vous répartissez-vous les tâches ménagères chez toi ?",
+"it": "Come vi dividete le faccende o i compiti comuni a casa?",
+"pt": "Como dividem as tarefas domésticas ou partilhadas em casa?",
+"pt_BR": "Como vocês dividem as tarefas de casa ou as responsabilidades em comum?"
+}
+},
+{
+"id": "negotiation-013",
+"lv": "any",
+"i18n": {
+"en": "What is a skill you think makes someone persuasive?",
+"de": "Welche Fähigkeit macht deiner Meinung nach einen Menschen überzeugend?",
+"es": "¿Qué habilidad crees que hace que alguien sea persuasivo?",
+"fr": "Selon toi, quelle qualité rend une personne convaincante ?",
+"it": "Secondo te, quale abilità rende una persona persuasiva?",
+"pt": "Que capacidade achas que torna alguém persuasivo?",
+"pt_BR": "Que habilidade você acha que torna alguém persuasivo?"
+}
+},
+{
+"id": "negotiation-014",
+"lv": "any",
+"i18n": {
+"en": "Have you ever changed someone's mind? What did you say?",
+"de": "Hast du schon einmal jemanden umgestimmt? Was hast du gesagt?",
+"es": "¿Alguna vez has hecho cambiar de opinión a alguien? ¿Qué le dijiste?",
+"fr": "As-tu déjà fait changer quelqu'un d'avis ? Qu'as-tu dit ?",
+"it": "Ti è mai capitato di far cambiare idea a qualcuno? Cosa hai detto?",
+"pt": "Já alguma vez fizeste alguém mudar de ideias? O que disseste?",
+"pt_BR": "Você já fez alguém mudar de ideia? O que você disse?"
+}
+},
+{
+"id": "negotiation-015",
+"lv": "any",
+"i18n": {
+"en": "Has anyone ever changed your mind with a great argument? What was it about?",
+"de": "Hat dich schon einmal jemand mit einem tollen Argument umgestimmt? Worum ging es?",
+"es": "¿Alguien te ha hecho cambiar de opinión con un gran argumento? ¿De qué se trataba?",
+"fr": "Quelqu'un t'a-t-il déjà fait changer d'avis avec un excellent argument ? C'était à quel sujet ?",
+"it": "Qualcuno ti ha mai fatto cambiare idea con un ottimo argomento? Di cosa si trattava?",
+"pt": "Alguém já te fez mudar de ideias com um ótimo argumento? Sobre o que era?",
+"pt_BR": "Alguém já te fez mudar de ideia com um ótimo argumento? Sobre o que era?"
+}
+},
+{
+"id": "negotiation-016",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer to negotiate face to face, by phone or in writing? Why?",
+"de": "Verhandelst du lieber persönlich, am Telefon oder schriftlich? Warum?",
+"es": "¿Prefieres negociar en persona, por teléfono o por escrito? ¿Por qué?",
+"fr": "Préfères-tu négocier en face à face, par téléphone ou par écrit ? Pourquoi ?",
+"it": "Preferisci negoziare di persona, al telefono o per iscritto? Perché?",
+"pt": "Preferes negociar cara a cara, por telefone ou por escrito? Porquê?",
+"pt_BR": "Você prefere negociar pessoalmente, por telefone ou por escrito? Por quê?"
+}
+},
+{
+"id": "negotiation-017",
+"lv": "any",
+"i18n": {
+"en": "What is a small favour you asked for recently, and how did it go?",
+"de": "Um welchen kleinen Gefallen hast du kürzlich gebeten, und wie lief es?",
+"es": "¿Qué pequeño favor pediste hace poco y cómo salió?",
+"fr": "Quel petit service as-tu demandé récemment, et comment ça s'est passé ?",
+"it": "Qual è un piccolo favore che hai chiesto di recente, e com'è andata?",
+"pt": "Que pequeno favor pediste recentemente e como correu?",
+"pt_BR": "Qual pequeno favor você pediu recentemente, e como foi?"
+}
+},
+{
+"id": "negotiation-018",
+"lv": "any",
+"i18n": {
+"en": "How would your friends describe your style when you disagree with someone?",
+"de": "Wie würden deine Freunde beschreiben, wie du dich verhältst, wenn du anderer Meinung bist?",
+"es": "¿Cómo describirían tus amigos tu forma de actuar cuando no estás de acuerdo con alguien?",
+"fr": "Comment tes amis décriraient-ils ta façon d'être quand tu n'es pas d'accord avec quelqu'un ?",
+"it": "Come descriverebbero i tuoi amici il tuo modo di fare quando non sei d'accordo con qualcuno?",
+"pt": "Como é que os teus amigos descreveriam o teu estilo quando discordas de alguém?",
+"pt_BR": "Como seus amigos descreveriam seu jeito quando você discorda de alguém?"
+}
+},
+{
+"id": "negotiation-019",
+"lv": "any",
+"i18n": {
+"en": "What is one thing in your life you would like to negotiate better?",
+"de": "Was möchtest du in deinem Leben gern besser verhandeln können?",
+"es": "¿Qué cosa de tu vida te gustaría negociar mejor?",
+"fr": "Dans ta vie, qu'aimerais-tu réussir à mieux négocier ?",
+"it": "C'è una cosa nella tua vita che vorresti saper negoziare meglio?",
+"pt": "Que coisa na tua vida gostavas de negociar melhor?",
+"pt_BR": "Que coisa na sua vida você gostaria de negociar melhor?"
+}
+},
+{
+"id": "negotiation-020",
+"lv": "any",
+"i18n": {
+"en": "When you buy something expensive, how do you prepare?",
+"de": "Wie bereitest du dich vor, wenn du etwas Teures kaufst?",
+"es": "Cuando compras algo caro, ¿cómo te preparas?",
+"fr": "Quand tu achètes quelque chose de cher, comment te prépares-tu ?",
+"it": "Quando compri qualcosa di costoso, come ti prepari?",
+"pt": "Quando compras algo caro, como te preparas?",
+"pt_BR": "Quando você compra algo caro, como se prepara?"
+}
+},
+{
+"id": "negotiation-021",
+"lv": "any",
+"i18n": {
+"en": "Do you find silence in a conversation comfortable or awkward?",
+"de": "Findest du Schweigen in einem Gespräch angenehm oder unangenehm?",
+"es": "¿Los silencios en una conversación te resultan cómodos o incómodos?",
+"fr": "Les silences dans une conversation te semblent-ils confortables ou gênants ?",
+"it": "Il silenzio in una conversazione ti mette a tuo agio o ti imbarazza?",
+"pt": "O silêncio numa conversa parece-te confortável ou constrangedor?",
+"pt_BR": "O silêncio numa conversa é confortável ou constrangedor para você?"
+}
+},
+{
+"id": "negotiation-022",
+"lv": "any",
+"i18n": {
+"en": "What is a compromise you made that turned out really well?",
+"de": "Welchen Kompromiss bist du eingegangen, der sich als richtig gut herausgestellt hat?",
+"es": "¿Qué acuerdo intermedio aceptaste que acabó saliendo muy bien?",
+"fr": "Quel compromis as-tu accepté qui s'est révélé vraiment réussi ?",
+"it": "Qual è un compromesso che hai accettato e che si è rivelato ottimo?",
+"pt": "Que compromisso fizeste que acabou por correr muito bem?",
+"pt_BR": "Qual meio-termo você aceitou que acabou dando muito certo?"
+}
+},
+{
+"id": "negotiation-023",
+"lv": "any",
+"i18n": {
+"en": "How do people in your country usually show politely that they disagree?",
+"de": "Wie zeigen Menschen in deinem Land normalerweise höflich, dass sie anderer Meinung sind?",
+"es": "¿Cómo muestra la gente de tu país, con educación, que no está de acuerdo?",
+"fr": "Dans ton pays, comment les gens montrent-ils poliment qu'ils ne sont pas d'accord ?",
+"it": "Nel tuo paese, come mostrano di solito le persone, con garbo, di non essere d'accordo?",
+"pt": "No teu país, como é que as pessoas costumam mostrar educadamente que discordam?",
+"pt_BR": "No seu país, como as pessoas costumam mostrar com educação que discordam?"
+}
+},
+{
+"id": "negotiation-024",
+"lv": "any",
+"i18n": {
+"en": "What would you like to practise first: asking, listening or saying no?",
+"de": "Was möchtest du zuerst üben: Fragen, Zuhören oder Neinsagen?",
+"es": "¿Qué te gustaría practicar primero: pedir, escuchar o decir que no?",
+"fr": "Que voudrais-tu travailler en premier : demander, écouter ou dire non ?",
+"it": "Cosa vorresti allenare per primo: chiedere, ascoltare o dire di no?",
+"pt": "O que gostavas de praticar primeiro: pedir, ouvir ou dizer que não?",
+"pt_BR": "O que você gostaria de praticar primeiro: pedir, ouvir ou dizer não?"
+}
+},
+{
+"id": "negotiation-025",
+"lv": "any",
+"i18n": {
+"en": "Which do you value more in a deal: a great price or a great relationship?",
+"de": "Was ist dir bei einem Deal wichtiger: ein toller Preis oder eine gute Beziehung?",
+"es": "¿Qué valoras más en un acuerdo: un gran precio o una buena relación?",
+"fr": "Qu'est-ce qui compte le plus pour toi dans un accord : un super prix ou une bonne relation ?",
+"it": "Cosa conta di più per te in un accordo: un ottimo prezzo o un buon rapporto?",
+"pt": "O que valorizas mais num acordo: um ótimo preço ou uma boa relação?",
+"pt_BR": "O que você valoriza mais num acordo: um ótimo preço ou uma boa relação?"
+}
+},
+{
+"id": "negotiation-026",
+"lv": "any",
+"i18n": {
+"en": "Have you ever sold something you owned? How did you set the price?",
+"de": "Hast du schon einmal etwas verkauft, das dir gehörte? Wie hast du den Preis festgelegt?",
+"es": "¿Has vendido alguna vez algo tuyo? ¿Cómo fijaste el precio?",
+"fr": "As-tu déjà vendu quelque chose qui t'appartenait ? Comment as-tu fixé le prix ?",
+"it": "Hai mai venduto qualcosa di tuo? Come hai deciso il prezzo?",
+"pt": "Já vendeste alguma coisa tua? Como definiste o preço?",
+"pt_BR": "Você já vendeu algo seu? Como definiu o preço?"
+}
+},
+{
+"id": "negotiation-027",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite phrase for starting a difficult conversation?",
+"de": "Mit welchem Satz beginnst du am liebsten ein schwieriges Gespräch?",
+"es": "¿Cuál es tu frase favorita para empezar una conversación difícil?",
+"fr": "Quelle est ta phrase préférée pour lancer une conversation difficile ?",
+"it": "Qual è la tua frase preferita per iniziare una conversazione difficile?",
+"pt": "Qual é a tua frase preferida para começar uma conversa difícil?",
+"pt_BR": "Qual é a sua frase preferida para começar uma conversa difícil?"
+}
+},
+{
+"id": "negotiation-028",
+"lv": "any",
+"i18n": {
+"en": "How do you feel when a salesperson is very pushy?",
+"de": "Wie fühlst du dich, wenn ein Verkäufer sehr aufdringlich ist?",
+"es": "¿Cómo te sientes cuando un vendedor es muy insistente?",
+"fr": "Que ressens-tu quand un vendeur est très insistant ?",
+"it": "Come ti senti quando un venditore è molto insistente?",
+"pt": "Como te sentes quando um vendedor é muito insistente?",
+"pt_BR": "Como você se sente quando um vendedor é muito insistente?"
+}
+},
+{
+"id": "negotiation-029",
+"lv": "any",
+"i18n": {
+"en": "Who taught you the most about asking for what you want?",
+"de": "Wer hat dir am meisten darüber beigebracht, um das zu bitten, was du willst?",
+"es": "¿Quién te enseñó más sobre cómo pedir lo que quieres?",
+"fr": "Qui t'a le plus appris à demander ce que tu veux ?",
+"it": "Chi ti ha insegnato di più a chiedere ciò che vuoi?",
+"pt": "Quem te ensinou mais sobre pedir aquilo que queres?",
+"pt_BR": "Quem mais te ensinou a pedir o que você quer?"
+}
+},
+{
+"id": "negotiation-030",
+"lv": "any",
+"i18n": {
+"en": "What is one negotiation you are looking forward to, or preparing for?",
+"de": "Auf welche Verhandlung freust du dich gerade oder bereitest du dich vor?",
+"es": "¿Qué negociación tienes por delante o estás preparando?",
+"fr": "Quelle négociation attends-tu ou prépares-tu en ce moment ?",
+"it": "C'è una negoziazione che ti aspetta o che stai preparando?",
+"pt": "Que negociação tens pela frente ou estás a preparar?",
+"pt_BR": "Que negociação você tem pela frente ou está preparando?"
+}
+},
+{
+"id": "negotiation-031",
+"lv": "any",
+"i18n": {
+"en": "Do you think good negotiators are born or made? Why?",
+"de": "Glaubst du, gute Verhandler werden so geboren oder dazu gemacht? Warum?",
+"es": "¿Crees que los buenos negociadores nacen o se hacen? ¿Por qué?",
+"fr": "Penses-tu qu'on naît bon négociateur ou qu'on le devient ? Pourquoi ?",
+"it": "Secondo te, bravi negoziatori si nasce o si diventa? Perché?",
+"pt": "Achas que os bons negociadores nascem assim ou fazem-se? Porquê?",
+"pt_BR": "Você acha que bons negociadores nascem prontos ou se formam? Por quê?"
+}
+},
+{
+"id": "negotiation-032",
+"lv": "any",
+"i18n": {
+"en": "What is a deal that felt fair to both sides? What made it fair?",
+"de": "Welcher Deal hat sich für beide Seiten fair angefühlt? Was machte ihn fair?",
+"es": "¿Qué acuerdo te pareció justo para ambas partes? ¿Qué lo hizo justo?",
+"fr": "Quel accord t'a semblé juste pour les deux parties ? Qu'est-ce qui le rendait juste ?",
+"it": "Quale accordo ti è sembrato giusto per entrambe le parti? Cosa lo rendeva giusto?",
+"pt": "Que acordo te pareceu justo para os dois lados? O que o tornou justo?",
+"pt_BR": "Qual acordo pareceu justo para os dois lados? O que o tornou justo?"
+}
+},
+{
+"id": "negotiation-033",
+"lv": "any",
+"i18n": {
+"en": "How do you plan a group trip when everyone wants something different?",
+"de": "Wie plant ihr eine Gruppenreise, wenn alle etwas anderes wollen?",
+"es": "¿Cómo organizas un viaje en grupo cuando cada uno quiere algo distinto?",
+"fr": "Comment organises-tu un voyage en groupe quand chacun veut autre chose ?",
+"it": "Come organizzi un viaggio di gruppo quando ognuno vuole qualcosa di diverso?",
+"pt": "Como planeias uma viagem em grupo quando cada um quer uma coisa diferente?",
+"pt_BR": "Como você planeja uma viagem em grupo quando cada um quer uma coisa diferente?"
+}
+},
+{
+"id": "negotiation-034",
+"lv": "any",
+"i18n": {
+"en": "What helps you stay calm when a conversation gets tense?",
+"de": "Was hilft dir, ruhig zu bleiben, wenn ein Gespräch angespannt wird?",
+"es": "¿Qué te ayuda a mantener la calma cuando una conversación se pone tensa?",
+"fr": "Qu'est-ce qui t'aide à rester calme quand une conversation devient tendue ?",
+"it": "Cosa ti aiuta a restare calmo quando una conversazione si fa tesa?",
+"pt": "O que te ajuda a manter a calma quando uma conversa fica tensa?",
+"pt_BR": "O que te ajuda a manter a calma quando uma conversa fica tensa?"
+}
+},
+{
+"id": "negotiation-035",
+"lv": "any",
+"i18n": {
+"en": "Have you ever negotiated in a foreign language? How was it?",
+"de": "Hast du schon einmal in einer Fremdsprache verhandelt? Wie war das?",
+"es": "¿Has negociado alguna vez en un idioma extranjero? ¿Qué tal fue?",
+"fr": "As-tu déjà négocié dans une langue étrangère ? Comment ça s'est passé ?",
+"it": "Hai mai negoziato in una lingua straniera? Com'è andata?",
+"pt": "Já negociaste alguma vez numa língua estrangeira? Como foi?",
+"pt_BR": "Você já negociou em uma língua estrangeira? Como foi?"
+}
+},
+{
+"id": "negotiation-036",
+"lv": "any",
+"i18n": {
+"en": "What is a small win you got recently just by asking nicely?",
+"de": "Welchen kleinen Erfolg hattest du kürzlich, nur weil du freundlich gefragt hast?",
+"es": "¿Qué pequeña victoria conseguiste hace poco solo por pedirlo con amabilidad?",
+"fr": "Quelle petite victoire as-tu obtenue récemment simplement en demandant gentiment ?",
+"it": "Qual è una piccola vittoria che hai ottenuto di recente solo chiedendo con gentilezza?",
+"pt": "Que pequena vitória conseguiste recentemente só por pedir com simpatia?",
+"pt_BR": "Que pequena vitória você conseguiu recentemente só por pedir com gentileza?"
+}
+},
+{
+"id": "negotiation-037",
+"lv": "any",
+"i18n": {
+"en": "Which matters more to you in a negotiation: being liked or being respected?",
+"de": "Was ist dir in einer Verhandlung wichtiger: gemocht oder respektiert zu werden?",
+"es": "¿Qué te importa más en una negociación: caer bien o ser respetado?",
+"fr": "Qu'est-ce qui compte le plus pour toi en négociation : être apprécié ou être respecté ?",
+"it": "Cosa conta di più per te in una trattativa: piacere o essere rispettato?",
+"pt": "O que te importa mais numa negociação: seres apreciado ou respeitado?",
+"pt_BR": "O que importa mais para você numa negociação: ser querido ou ser respeitado?"
+}
+},
+{
+"id": "negotiation-038",
+"lv": "any",
+"i18n": {
+"en": "If you could negotiate one thing in your daily routine, what would it be?",
+"de": "Wenn du eine Sache in deinem Alltag neu aushandeln könntest, welche wäre das?",
+"es": "Si pudieras negociar una sola cosa de tu rutina diaria, ¿cuál sería?",
+"fr": "Si tu pouvais négocier une chose dans ton quotidien, laquelle choisirais-tu ?",
+"it": "Se potessi negoziare una cosa della tua routine quotidiana, quale sarebbe?",
+"pt": "Se pudesses negociar uma coisa na tua rotina diária, qual seria?",
+"pt_BR": "Se você pudesse negociar uma coisa na sua rotina, qual seria?"
+}
+},
+{
+"id": "negotiation-039",
+"lv": "any",
+"i18n": {
+"en": "What does a win-win result look like to you?",
+"de": "Wie sieht für dich ein Ergebnis aus, bei dem beide gewinnen?",
+"es": "¿Cómo es para ti un resultado en el que ganan ambas partes?",
+"fr": "À quoi ressemble pour toi un résultat gagnant-gagnant ?",
+"it": "Com'è per te un risultato in cui vincono tutti e due?",
+"pt": "Como é para ti um resultado em que ambos ganham?",
+"pt_BR": "Como é para você um resultado em que os dois lados ganham?"
+}
+},
+{
+"id": "negotiation-040",
+"lv": "any",
+"i18n": {
+"en": "What negotiation topic are you most curious to learn about with me?",
+"de": "Über welches Verhandlungsthema möchtest du mit mir am liebsten mehr lernen?",
+"es": "¿Sobre qué tema de negociación tienes más curiosidad por aprender conmigo?",
+"fr": "Quel sujet de négociation as-tu le plus envie d'explorer avec moi ?",
+"it": "Quale argomento di negoziazione ti incuriosisce di più da imparare con me?",
+"pt": "Que tema de negociação tens mais curiosidade em aprender comigo?",
+"pt_BR": "Qual tema de negociação você está mais curioso para aprender comigo?"
+}
+},
+{
+"id": "negotiation-041",
+"lv": "beginner",
+"i18n": {
+"en": "What do you usually say when you want to ask for a discount?",
+"de": "Was sagst du normalerweise, wenn du um einen Rabatt bitten möchtest?",
+"es": "¿Qué sueles decir cuando quieres pedir un descuento?",
+"fr": "Que dis-tu d'habitude quand tu veux demander une réduction ?",
+"it": "Cosa dici di solito quando vuoi chiedere uno sconto?",
+"pt": "O que costumas dizer quando queres pedir um desconto?",
+"pt_BR": "O que você costuma dizer quando quer pedir um desconto?"
+}
+},
+{
+"id": "negotiation-042",
+"lv": "beginner",
+"i18n": {
+"en": "What would you do if you had no agreement at all: what is your plan B?",
+"de": "Was würdest du tun, wenn es gar keine Einigung gäbe? Was ist dein Plan B?",
+"es": "¿Qué harías si no hubiera ningún acuerdo? ¿Cuál es tu plan B?",
+"fr": "Que ferais-tu s'il n'y avait aucun accord ? Quel est ton plan B ?",
+"it": "Cosa faresti se non ci fosse nessun accordo? Qual è il tuo piano B?",
+"pt": "O que farias se não houvesse acordo nenhum? Qual é o teu plano B?",
+"pt_BR": "O que você faria se não houvesse acordo nenhum? Qual é o seu plano B?"
+}
+},
+{
+"id": "negotiation-043",
+"lv": "beginner",
+"i18n": {
+"en": "Think of something you want: why do you really want it?",
+"de": "Denk an etwas, das du dir wünschst: Warum willst du es wirklich?",
+"es": "Piensa en algo que quieras: ¿por qué lo quieres de verdad?",
+"fr": "Pense à quelque chose que tu veux : pourquoi le veux-tu vraiment ?",
+"it": "Pensa a qualcosa che desideri: perché lo vuoi davvero?",
+"pt": "Pensa em algo que queres: porque é que o queres mesmo?",
+"pt_BR": "Pense em algo que você quer: por que você quer isso de verdade?"
+}
+},
+{
+"id": "negotiation-044",
+"lv": "beginner",
+"i18n": {
+"en": "What is an open question you could ask a seller to learn more?",
+"de": "Welche offene Frage könntest du einem Verkäufer stellen, um mehr zu erfahren?",
+"es": "¿Qué pregunta abierta podrías hacerle a un vendedor para saber más?",
+"fr": "Quelle question ouverte pourrais-tu poser à un vendeur pour en savoir plus ?",
+"it": "Quale domanda aperta potresti fare a un venditore per saperne di più?",
+"pt": "Que pergunta aberta podias fazer a um vendedor para saberes mais?",
+"pt_BR": "Que pergunta aberta você poderia fazer a um vendedor para saber mais?"
+}
+},
+{
+"id": "negotiation-045",
+"lv": "beginner",
+"i18n": {
+"en": "How do you say no to a friend without hurting their feelings?",
+"de": "Wie sagst du einer Freundin oder einem Freund Nein, ohne sie zu kränken?",
+"es": "¿Cómo le dices que no a un amigo sin herir sus sentimientos?",
+"fr": "Comment dis-tu non à un ami sans le blesser ?",
+"it": "Come dici di no a un amico senza ferirlo?",
+"pt": "Como dizes que não a um amigo sem o magoar?",
+"pt_BR": "Como você diz não a um amigo sem magoá-lo?"
+}
+},
+{
+"id": "negotiation-046",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever haggled at a market? What happened?",
+"de": "Hast du schon einmal auf einem Markt gefeilscht? Was ist passiert?",
+"es": "¿Has regateado alguna vez en un mercado? ¿Qué pasó?",
+"fr": "As-tu déjà marchandé sur un marché ? Que s'est-il passé ?",
+"it": "Hai mai contrattato al mercato? Cos'è successo?",
+"pt": "Já regateaste alguma vez num mercado? O que aconteceu?",
+"pt_BR": "Você já pechinchou numa feira? O que aconteceu?"
+}
+},
+{
+"id": "negotiation-047",
+"lv": "beginner",
+"i18n": {
+"en": "What is your body language like when you feel confident?",
+"de": "Wie sieht deine Körpersprache aus, wenn du dich selbstsicher fühlst?",
+"es": "¿Cómo es tu lenguaje corporal cuando te sientes seguro?",
+"fr": "À quoi ressemble ton langage corporel quand tu te sens sûr de toi ?",
+"it": "Com'è il tuo linguaggio del corpo quando ti senti sicuro di te?",
+"pt": "Como é a tua linguagem corporal quando te sentes confiante?",
+"pt_BR": "Como é a sua linguagem corporal quando você se sente confiante?"
+}
+},
+{
+"id": "negotiation-048",
+"lv": "beginner",
+"i18n": {
+"en": "How do you start a conversation with someone you are about to negotiate with?",
+"de": "Wie beginnst du ein Gespräch mit jemandem, mit dem du gleich verhandeln wirst?",
+"es": "¿Cómo empiezas a hablar con alguien con quien vas a negociar?",
+"fr": "Comment entames-tu la conversation avec quelqu'un avec qui tu vas négocier ?",
+"it": "Come inizi a parlare con qualcuno con cui stai per negoziare?",
+"pt": "Como começas a conversa com alguém com quem vais negociar?",
+"pt_BR": "Como você começa a conversa com alguém com quem vai negociar?"
+}
+},
+{
+"id": "negotiation-049",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever returned something to a shop? How did you ask?",
+"de": "Hast du schon einmal etwas in einem Geschäft zurückgegeben? Wie hast du gefragt?",
+"es": "¿Has devuelto alguna vez algo en una tienda? ¿Cómo lo pediste?",
+"fr": "As-tu déjà rapporté un article en magasin ? Comment l'as-tu demandé ?",
+"it": "Hai mai restituito qualcosa in un negozio? Come l'hai chiesto?",
+"pt": "Já devolveste alguma coisa numa loja? Como pediste?",
+"pt_BR": "Você já devolveu algo numa loja? Como pediu?"
+}
+},
+{
+"id": "negotiation-050",
+"lv": "beginner",
+"i18n": {
+"en": "What is the lowest you would accept for something you are selling?",
+"de": "Was wäre das Mindeste, das du für etwas akzeptieren würdest, das du verkaufst?",
+"es": "¿Qué es lo mínimo que aceptarías por algo que estás vendiendo?",
+"fr": "Quel est le minimum que tu accepterais pour quelque chose que tu vends ?",
+"it": "Qual è il minimo che accetteresti per qualcosa che stai vendendo?",
+"pt": "Qual é o mínimo que aceitarias por algo que estás a vender?",
+"pt_BR": "Qual é o mínimo que você aceitaria por algo que está vendendo?"
+}
+},
+{
+"id": "negotiation-051",
+"lv": "beginner",
+"i18n": {
+"en": "How would you politely ask a neighbour to make less noise?",
+"de": "Wie würdest du einen Nachbarn höflich bitten, leiser zu sein?",
+"es": "¿Cómo le pedirías con educación a un vecino que haga menos ruido?",
+"fr": "Comment demanderais-tu poliment à un voisin de faire moins de bruit ?",
+"it": "Come chiederesti gentilmente a un vicino di fare meno rumore?",
+"pt": "Como pedirias educadamente a um vizinho para fazer menos barulho?",
+"pt_BR": "Como você pediria educadamente a um vizinho para fazer menos barulho?"
+}
+},
+{
+"id": "negotiation-052",
+"lv": "beginner",
+"i18n": {
+"en": "What do you do when you feel rushed into a decision?",
+"de": "Was machst du, wenn du dich zu einer Entscheidung gedrängt fühlst?",
+"es": "¿Qué haces cuando sientes que te presionan para decidir rápido?",
+"fr": "Que fais-tu quand tu te sens pressé de prendre une décision ?",
+"it": "Cosa fai quando ti senti spinto a decidere in fretta?",
+"pt": "O que fazes quando te sentes pressionado a decidir à pressa?",
+"pt_BR": "O que você faz quando se sente pressionado a decidir rápido?"
+}
+},
+{
+"id": "negotiation-053",
+"lv": "beginner",
+"i18n": {
+"en": "Which do you find harder: making the first offer or answering one?",
+"de": "Was fällt dir schwerer: das erste Angebot zu machen oder auf eines zu antworten?",
+"es": "¿Qué te cuesta más: hacer la primera oferta o responder a una?",
+"fr": "Qu'est-ce qui est le plus difficile pour toi : faire la première offre ou y répondre ?",
+"it": "Cosa trovi più difficile: fare la prima offerta o rispondere a una?",
+"pt": "O que achas mais difícil: fazer a primeira oferta ou responder a uma?",
+"pt_BR": "O que é mais difícil para você: fazer a primeira oferta ou responder a uma?"
+}
+},
+{
+"id": "negotiation-054",
+"lv": "beginner",
+"i18n": {
+"en": "When did a friendly smile help you get something you wanted?",
+"de": "Wann hat dir ein freundliches Lächeln geholfen, etwas zu bekommen?",
+"es": "¿Cuándo te ayudó una sonrisa amable a conseguir algo que querías?",
+"fr": "Quand un sourire aimable t'a-t-il aidé à obtenir ce que tu voulais ?",
+"it": "Quando un sorriso cordiale ti ha aiutato a ottenere qualcosa che volevi?",
+"pt": "Quando é que um sorriso simpático te ajudou a conseguir algo que querias?",
+"pt_BR": "Quando um sorriso simpático te ajudou a conseguir algo que você queria?"
+}
+},
+{
+"id": "negotiation-055",
+"lv": "beginner",
+"i18n": {
+"en": "What research do you do before buying something second-hand?",
+"de": "Was recherchierst du, bevor du etwas gebraucht kaufst?",
+"es": "¿Qué investigas antes de comprar algo de segunda mano?",
+"fr": "Quelles recherches fais-tu avant d'acheter quelque chose d'occasion ?",
+"it": "Che ricerche fai prima di comprare qualcosa di seconda mano?",
+"pt": "Que pesquisa fazes antes de comprar algo em segunda mão?",
+"pt_BR": "Que pesquisa você faz antes de comprar algo usado?"
+}
+},
+{
+"id": "negotiation-056",
+"lv": "beginner",
+"i18n": {
+"en": "How do you ask for help at work or school without feeling awkward?",
+"de": "Wie bittest du bei der Arbeit oder in der Schule um Hilfe, ohne dich unwohl zu fühlen?",
+"es": "¿Cómo pides ayuda en el trabajo o en clase sin sentirte incómodo?",
+"fr": "Comment demandes-tu de l'aide au travail ou en cours sans te sentir mal à l'aise ?",
+"it": "Come chiedi aiuto al lavoro o a scuola senza sentirti in imbarazzo?",
+"pt": "Como pedes ajuda no trabalho ou na escola sem te sentires constrangido?",
+"pt_BR": "Como você pede ajuda no trabalho ou na escola sem se sentir sem graça?"
+}
+},
+{
+"id": "negotiation-057",
+"lv": "beginner",
+"i18n": {
+"en": "What is something cheap for you to give that others really value?",
+"de": "Was kannst du leicht geben, das andere sehr schätzen?",
+"es": "¿Qué es algo que a ti te cuesta poco dar pero que otros valoran mucho?",
+"fr": "Qu'est-ce qui ne te coûte presque rien à donner mais que les autres apprécient beaucoup ?",
+"it": "Cosa ti costa poco dare ma per gli altri vale molto?",
+"pt": "O que é que te custa pouco dar mas que os outros valorizam muito?",
+"pt_BR": "O que custa pouco para você dar, mas os outros valorizam muito?"
+}
+},
+{
+"id": "negotiation-058",
+"lv": "beginner",
+"i18n": {
+"en": "How do you handle customer service when something goes wrong?",
+"de": "Wie gehst du mit dem Kundenservice um, wenn etwas schiefläuft?",
+"es": "¿Cómo hablas con atención al cliente cuando algo sale mal?",
+"fr": "Comment t'y prends-tu avec le service client quand quelque chose ne va pas ?",
+"it": "Come ti comporti con il servizio clienti quando qualcosa va storto?",
+"pt": "Como lidas com o apoio ao cliente quando algo corre mal?",
+"pt_BR": "Como você lida com o atendimento ao cliente quando algo dá errado?"
+}
+},
+{
+"id": "negotiation-059",
+"lv": "beginner",
+"i18n": {
+"en": "How do you share costs fairly when you go out with a group?",
+"de": "Wie teilt ihr die Kosten fair, wenn du mit einer Gruppe ausgehst?",
+"es": "¿Cómo repartís los gastos de forma justa cuando sales en grupo?",
+"fr": "Comment partagez-vous les frais équitablement quand tu sors en groupe ?",
+"it": "Come dividete le spese in modo equo quando esci in gruppo?",
+"pt": "Como dividem as despesas de forma justa quando sais em grupo?",
+"pt_BR": "Como vocês dividem as despesas de forma justa quando você sai em grupo?"
+}
+},
+{
+"id": "negotiation-060",
+"lv": "beginner",
+"i18n": {
+"en": "What does being assertive mean to you?",
+"de": "Was bedeutet es für dich, selbstbewusst für dich einzustehen?",
+"es": "¿Qué significa para ti ser asertivo?",
+"fr": "Que signifie pour toi être affirmé ?",
+"it": "Cosa significa per te essere assertivo?",
+"pt": "O que significa para ti ser assertivo?",
+"pt_BR": "O que significa para você ser assertivo?"
+}
+},
+{
+"id": "negotiation-061",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever walked away from a deal? How did you feel afterwards?",
+"de": "Bist du schon einmal von einem Deal zurückgetreten? Wie hast du dich danach gefühlt?",
+"es": "¿Alguna vez te has retirado de un trato? ¿Cómo te sentiste después?",
+"fr": "T'es-tu déjà retiré d'une affaire ? Comment t'es-tu senti ensuite ?",
+"it": "Ti è mai capitato di rinunciare a un affare? Come ti sei sentito dopo?",
+"pt": "Já alguma vez desististe de um negócio? Como te sentiste depois?",
+"pt_BR": "Você já desistiu de um negócio? Como se sentiu depois?"
+}
+},
+{
+"id": "negotiation-062",
+"lv": "beginner",
+"i18n": {
+"en": "What is a polite way to ask for more time to think?",
+"de": "Wie kann man höflich um mehr Bedenkzeit bitten?",
+"es": "¿Cuál es una forma educada de pedir más tiempo para pensarlo?",
+"fr": "Quelle est une façon polie de demander un temps de réflexion ?",
+"it": "Qual è un modo gentile per chiedere più tempo per pensarci?",
+"pt": "Qual é uma forma educada de pedir mais tempo para pensar?",
+"pt_BR": "Qual é um jeito educado de pedir mais tempo para pensar?"
+}
+},
+{
+"id": "negotiation-063",
+"lv": "beginner",
+"i18n": {
+"en": "Which do you like more for negotiating: email or chat messages? Why?",
+"de": "Was nutzt du zum Verhandeln lieber: E-Mail oder Chatnachrichten? Warum?",
+"es": "¿Qué prefieres para negociar: el correo o los mensajes de chat? ¿Por qué?",
+"fr": "Pour négocier, préfères-tu l'e-mail ou les messages instantanés ? Pourquoi ?",
+"it": "Per negoziare preferisci l'email o i messaggi in chat? Perché?",
+"pt": "Para negociar, preferes o e-mail ou as mensagens de chat? Porquê?",
+"pt_BR": "Para negociar, você prefere e-mail ou mensagens de chat? Por quê?"
+}
+},
+{
+"id": "negotiation-064",
+"lv": "beginner",
+"i18n": {
+"en": "How do you choose a film or show when watching with someone else?",
+"de": "Wie wählt ihr einen Film oder eine Serie aus, wenn du mit jemandem zusammen schaust?",
+"es": "¿Cómo elegís una película o serie cuando la ves con otra persona?",
+"fr": "Comment choisissez-vous un film ou une série quand tu regardes avec quelqu'un ?",
+"it": "Come scegliete un film o una serie quando guardi con qualcun altro?",
+"pt": "Como escolhem um filme ou série quando vês com outra pessoa?",
+"pt_BR": "Como vocês escolhem um filme ou série quando você assiste com alguém?"
+}
+},
+{
+"id": "negotiation-065",
+"lv": "beginner",
+"i18n": {
+"en": "What would make you trust someone quickly in a negotiation?",
+"de": "Was würde dich in einer Verhandlung schnell Vertrauen fassen lassen?",
+"es": "¿Qué haría que confiaras rápido en alguien durante una negociación?",
+"fr": "Qu'est-ce qui te ferait vite confiance à quelqu'un dans une négociation ?",
+"it": "Cosa ti farebbe fidare rapidamente di qualcuno in una trattativa?",
+"pt": "O que te faria confiar rapidamente em alguém numa negociação?",
+"pt_BR": "O que faria você confiar rapidamente em alguém numa negociação?"
+}
+},
+{
+"id": "negotiation-066",
+"lv": "intermediate",
+"i18n": {
+"en": "How would you prepare if you wanted to ask for a raise or better pay?",
+"de": "Wie würdest du dich vorbereiten, wenn du um eine Gehaltserhöhung bitten wolltest?",
+"es": "¿Cómo te prepararías si quisieras pedir un aumento de sueldo?",
+"fr": "Comment te préparerais-tu si tu voulais demander une augmentation ?",
+"it": "Come ti prepareresti se volessi chiedere un aumento?",
+"pt": "Como te prepararias se quisesses pedir um aumento?",
+"pt_BR": "Como você se prepararia se quisesse pedir um aumento?"
+}
+},
+{
+"id": "negotiation-067",
+"lv": "intermediate",
+"i18n": {
+"en": "Besides salary, what would you like to negotiate in a job?",
+"de": "Was würdest du bei einem Job außer dem Gehalt gern verhandeln?",
+"es": "Además del sueldo, ¿qué te gustaría negociar en un trabajo?",
+"fr": "En dehors du salaire, que voudrais-tu négocier dans un emploi ?",
+"it": "Oltre allo stipendio, cosa vorresti negoziare in un lavoro?",
+"pt": "Além do salário, o que gostavas de negociar num emprego?",
+"pt_BR": "Além do salário, o que você gostaria de negociar num emprego?"
+}
+},
+{
+"id": "negotiation-068",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever traded one thing for another to reach an agreement? What was it?",
+"de": "Hast du schon einmal eine Sache gegen eine andere getauscht, um dich zu einigen? Was war es?",
+"es": "¿Has cambiado alguna vez una cosa por otra para llegar a un acuerdo? ¿Qué fue?",
+"fr": "As-tu déjà échangé une chose contre une autre pour trouver un accord ? C'était quoi ?",
+"it": "Hai mai scambiato una cosa con un'altra per raggiungere un accordo? Cos'era?",
+"pt": "Já trocaste alguma vez uma coisa por outra para chegar a acordo? O que foi?",
+"pt_BR": "Você já trocou uma coisa por outra para chegar a um acordo? O que foi?"
+}
+},
+{
+"id": "negotiation-069",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you react when someone makes an extreme first offer?",
+"de": "Wie reagierst du, wenn jemand ein extremes Erstangebot macht?",
+"es": "¿Cómo reaccionas cuando alguien hace una primera oferta exagerada?",
+"fr": "Comment réagis-tu quand quelqu'un fait une première offre extrême ?",
+"it": "Come reagisci quando qualcuno fa una prima offerta esagerata?",
+"pt": "Como reages quando alguém faz uma primeira oferta exagerada?",
+"pt_BR": "Como você reage quando alguém faz uma primeira oferta exagerada?"
+}
+},
+{
+"id": "negotiation-070",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you handle a colleague who keeps adding tasks to your plate?",
+"de": "Wie gehst du mit einem Kollegen um, der dir ständig neue Aufgaben gibt?",
+"es": "¿Cómo manejas a un compañero que no para de pasarte tareas?",
+"fr": "Comment gères-tu un collègue qui n'arrête pas de te confier des tâches ?",
+"it": "Come gestisci un collega che continua ad aggiungerti compiti?",
+"pt": "Como lidas com um colega que está sempre a passar-te mais tarefas?",
+"pt_BR": "Como você lida com um colega que vive te passando mais tarefas?"
+}
+},
+{
+"id": "negotiation-071",
+"lv": "intermediate",
+"i18n": {
+"en": "Which tactic annoys you most: fake deadlines, the nibble or take-it-or-leave-it?",
+"de": "Welche Taktik nervt dich am meisten: falsche Fristen, Nachforderungen oder Friss oder stirb?",
+"es": "¿Qué táctica te molesta más: plazos falsos, pedir algo extra al final o lo tomas o lo dejas?",
+"fr": "Quelle tactique t'agace le plus : les faux délais, la petite demande de dernière minute ou c'est à prendre ou à laisser ?",
+"it": "Quale tattica ti infastidisce di più: false scadenze, richieste extra all'ultimo o prendere o lasciare?",
+"pt": "Que tática te irrita mais: prazos falsos, o pedido extra no fim ou o é pegar ou largar?",
+"pt_BR": "Qual tática te irrita mais: prazos falsos, o pedido extra no final ou o é pegar ou largar?"
+}
+},
+{
+"id": "negotiation-072",
+"lv": "intermediate",
+"i18n": {
+"en": "Tell me about a time you helped two people solve a disagreement.",
+"de": "Erzähl mir von einer Situation, in der du zwei Menschen geholfen hast, einen Streit zu lösen.",
+"es": "Cuéntame alguna vez en que ayudaste a dos personas a resolver un desacuerdo.",
+"fr": "Raconte-moi une fois où tu as aidé deux personnes à régler un désaccord.",
+"it": "Raccontami di una volta in cui hai aiutato due persone a risolvere un disaccordo.",
+"pt": "Conta-me uma vez em que ajudaste duas pessoas a resolver um desentendimento.",
+"pt_BR": "Me conta de uma vez em que você ajudou duas pessoas a resolver um desentendimento."
+}
+},
+{
+"id": "negotiation-073",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you build trust with people from a culture different from yours?",
+"de": "Wie baust du Vertrauen zu Menschen aus einer anderen Kultur auf?",
+"es": "¿Cómo generas confianza con personas de una cultura diferente a la tuya?",
+"fr": "Comment instaures-tu la confiance avec des personnes d'une autre culture ?",
+"it": "Come costruisci fiducia con persone di una cultura diversa dalla tua?",
+"pt": "Como crias confiança com pessoas de uma cultura diferente da tua?",
+"pt_BR": "Como você cria confiança com pessoas de uma cultura diferente da sua?"
+}
+},
+{
+"id": "negotiation-074",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you do when emotions run high in a discussion?",
+"de": "Was tust du, wenn in einer Diskussion die Gefühle hochkochen?",
+"es": "¿Qué haces cuando los ánimos se calientan en una discusión?",
+"fr": "Que fais-tu quand les émotions montent dans une discussion ?",
+"it": "Cosa fai quando in una discussione gli animi si scaldano?",
+"pt": "O que fazes quando os ânimos aquecem numa discussão?",
+"pt_BR": "O que você faz quando os ânimos esquentam numa discussão?"
+}
+},
+{
+"id": "negotiation-075",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you know who really makes the decision on the other side?",
+"de": "Wie findest du heraus, wer auf der anderen Seite wirklich entscheidet?",
+"es": "¿Cómo averiguas quién toma realmente la decisión en la otra parte?",
+"fr": "Comment sais-tu qui prend vraiment la décision de l'autre côté ?",
+"it": "Come capisci chi prende davvero la decisione dall'altra parte?",
+"pt": "Como descobres quem toma realmente a decisão do outro lado?",
+"pt_BR": "Como você descobre quem realmente decide do outro lado?"
+}
+},
+{
+"id": "negotiation-076",
+"lv": "intermediate",
+"i18n": {
+"en": "What is a story you could tell to make an idea more convincing?",
+"de": "Welche Geschichte könntest du erzählen, um eine Idee überzeugender zu machen?",
+"es": "¿Qué historia podrías contar para que una idea resulte más convincente?",
+"fr": "Quelle histoire pourrais-tu raconter pour rendre une idée plus convaincante ?",
+"it": "Quale storia potresti raccontare per rendere un'idea più convincente?",
+"pt": "Que história podias contar para tornar uma ideia mais convincente?",
+"pt_BR": "Que história você poderia contar para tornar uma ideia mais convincente?"
+}
+},
+{
+"id": "negotiation-077",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you answer when someone says your price is too high?",
+"de": "Was antwortest du, wenn jemand sagt, dein Preis sei zu hoch?",
+"es": "¿Qué respondes cuando alguien dice que tu precio es demasiado alto?",
+"fr": "Que réponds-tu quand quelqu'un dit que ton prix est trop élevé ?",
+"it": "Cosa rispondi quando qualcuno dice che il tuo prezzo è troppo alto?",
+"pt": "O que respondes quando alguém diz que o teu preço é demasiado alto?",
+"pt_BR": "O que você responde quando alguém diz que seu preço está alto demais?"
+}
+},
+{
+"id": "negotiation-078",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever negotiated as part of a team? How did you split the roles?",
+"de": "Hast du schon einmal im Team verhandelt? Wie habt ihr die Rollen verteilt?",
+"es": "¿Has negociado alguna vez en equipo? ¿Cómo os repartisteis los papeles?",
+"fr": "As-tu déjà négocié en équipe ? Comment vous êtes-vous réparti les rôles ?",
+"it": "Hai mai negoziato in squadra? Come vi siete divisi i ruoli?",
+"pt": "Já negociaste em equipa? Como dividiram os papéis?",
+"pt_BR": "Você já negociou em equipe? Como vocês dividiram os papéis?"
+}
+},
+{
+"id": "negotiation-079",
+"lv": "intermediate",
+"i18n": {
+"en": "Which influence principle works best on you: reciprocity, social proof or scarcity?",
+"de": "Welches Prinzip wirkt bei dir am stärksten: Gegenseitigkeit, soziale Bewährtheit oder Knappheit?",
+"es": "¿Qué principio de influencia funciona mejor contigo: reciprocidad, prueba social o escasez?",
+"fr": "Quel principe d'influence marche le mieux sur toi : réciprocité, preuve sociale ou rareté ?",
+"it": "Quale principio di influenza funziona meglio su di te: reciprocità, riprova sociale o scarsità?",
+"pt": "Que princípio de influência funciona melhor contigo: reciprocidade, prova social ou escassez?",
+"pt_BR": "Qual princípio de influência funciona melhor com você: reciprocidade, prova social ou escassez?"
+}
+},
+{
+"id": "negotiation-080",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you make sure everyone remembers what was agreed after a meeting?",
+"de": "Wie sorgst du dafür, dass sich nach einem Treffen alle an die Vereinbarungen erinnern?",
+"es": "¿Cómo te aseguras de que todos recuerden lo acordado después de una reunión?",
+"fr": "Comment t'assures-tu que tout le monde se souvient de ce qui a été convenu après une réunion ?",
+"it": "Come ti assicuri che tutti ricordino cosa è stato deciso dopo una riunione?",
+"pt": "Como garantes que todos se lembram do que foi combinado depois de uma reunião?",
+"pt_BR": "Como você garante que todos lembrem o que foi combinado depois de uma reunião?"
+}
+},
+{
+"id": "negotiation-081",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever had to rebuild trust after a disagreement? What helped?",
+"de": "Musstest du schon einmal nach einem Streit Vertrauen wieder aufbauen? Was hat geholfen?",
+"es": "¿Has tenido que recuperar la confianza después de un desacuerdo? ¿Qué te ayudó?",
+"fr": "As-tu déjà dû rétablir la confiance après un désaccord ? Qu'est-ce qui a aidé ?",
+"it": "Ti è mai capitato di dover ricostruire la fiducia dopo un disaccordo? Cosa ti ha aiutato?",
+"pt": "Já tiveste de reconstruir a confiança depois de um desentendimento? O que ajudou?",
+"pt_BR": "Você já precisou reconstruir a confiança depois de um desentendimento? O que ajudou?"
+}
+},
+{
+"id": "negotiation-082",
+"lv": "intermediate",
+"i18n": {
+"en": "What creative option have you found when the obvious solution did not work?",
+"de": "Welche kreative Lösung hast du gefunden, als die naheliegende nicht funktioniert hat?",
+"es": "¿Qué opción creativa encontraste cuando la solución obvia no funcionaba?",
+"fr": "Quelle option créative as-tu trouvée quand la solution évidente ne marchait pas ?",
+"it": "Quale soluzione creativa hai trovato quando quella ovvia non funzionava?",
+"pt": "Que opção criativa encontraste quando a solução óbvia não resultou?",
+"pt_BR": "Que opção criativa você encontrou quando a solução óbvia não funcionou?"
+}
+},
+{
+"id": "negotiation-083",
+"lv": "intermediate",
+"i18n": {
+"en": "How patient are you when a negotiation takes longer than expected?",
+"de": "Wie geduldig bist du, wenn eine Verhandlung länger dauert als erwartet?",
+"es": "¿Cuánta paciencia tienes cuando una negociación dura más de lo previsto?",
+"fr": "Es-tu patient quand une négociation dure plus longtemps que prévu ?",
+"it": "Quanto sei paziente quando una trattativa dura più del previsto?",
+"pt": "Que paciência tens quando uma negociação demora mais do que o previsto?",
+"pt_BR": "Quanta paciência você tem quando uma negociação demora mais do que o esperado?"
+}
+},
+{
+"id": "negotiation-084",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you decide when to make a concession, and what do you ask for in return?",
+"de": "Wie entscheidest du, wann du ein Zugeständnis machst, und was verlangst du dafür?",
+"es": "¿Cómo decides cuándo ceder en algo y qué pides a cambio?",
+"fr": "Comment décides-tu quand faire une concession, et que demandes-tu en échange ?",
+"it": "Come decidi quando fare una concessione, e cosa chiedi in cambio?",
+"pt": "Como decides quando fazer uma cedência e o que pedes em troca?",
+"pt_BR": "Como você decide quando ceder em algo, e o que pede em troca?"
+}
+},
+{
+"id": "negotiation-085",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you stay polite but firm with a stubborn person?",
+"de": "Wie bleibst du gegenüber einem sturen Menschen höflich, aber bestimmt?",
+"es": "¿Cómo te mantienes educado pero firme con una persona testaruda?",
+"fr": "Comment restes-tu poli mais ferme face à une personne têtue ?",
+"it": "Come resti gentile ma deciso con una persona testarda?",
+"pt": "Como te manténs educado mas firme com uma pessoa teimosa?",
+"pt_BR": "Como você se mantém educado, mas firme, com uma pessoa teimosa?"
+}
+},
+{
+"id": "negotiation-086",
+"lv": "advanced",
+"i18n": {
+"en": "How would you lead a negotiation with five people who all want different things?",
+"de": "Wie würdest du eine Verhandlung mit fünf Personen leiten, die alle etwas anderes wollen?",
+"es": "¿Cómo dirigirías una negociación con cinco personas que quieren cosas distintas?",
+"fr": "Comment mènerais-tu une négociation avec cinq personnes qui veulent toutes autre chose ?",
+"it": "Come guideresti una trattativa con cinque persone che vogliono tutte cose diverse?",
+"pt": "Como conduzirias uma negociação com cinco pessoas que querem coisas diferentes?",
+"pt_BR": "Como você conduziria uma negociação com cinco pessoas que querem coisas diferentes?"
+}
+},
+{
+"id": "negotiation-087",
+"lv": "advanced",
+"i18n": {
+"en": "What are your personal ethical lines in a negotiation?",
+"de": "Wo liegen in einer Verhandlung deine persönlichen ethischen Grenzen?",
+"es": "¿Cuáles son tus límites éticos personales en una negociación?",
+"fr": "Quelles sont tes limites éthiques personnelles dans une négociation ?",
+"it": "Quali sono i tuoi limiti etici personali in una trattativa?",
+"pt": "Quais são os teus limites éticos pessoais numa negociação?",
+"pt_BR": "Quais são os seus limites éticos pessoais numa negociação?"
+}
+},
+{
+"id": "negotiation-088",
+"lv": "advanced",
+"i18n": {
+"en": "How do you persuade people who do not report to you?",
+"de": "Wie überzeugst du Menschen, die dir nicht unterstellt sind?",
+"es": "¿Cómo convences a personas que no dependen de ti?",
+"fr": "Comment persuades-tu des personnes qui ne dépendent pas de toi ?",
+"it": "Come convinci persone che non dipendono da te?",
+"pt": "Como convences pessoas que não respondem a ti?",
+"pt_BR": "Como você convence pessoas que não estão abaixo de você na hierarquia?"
+}
+},
+{
+"id": "negotiation-089",
+"lv": "advanced",
+"i18n": {
+"en": "What would you do if a negotiation completely stalled?",
+"de": "Was würdest du tun, wenn eine Verhandlung völlig festgefahren wäre?",
+"es": "¿Qué harías si una negociación se estancara por completo?",
+"fr": "Que ferais-tu si une négociation était complètement bloquée ?",
+"it": "Cosa faresti se una trattativa si bloccasse del tutto?",
+"pt": "O que farias se uma negociação ficasse completamente parada?",
+"pt_BR": "O que você faria se uma negociação travasse completamente?"
+}
+},
+{
+"id": "negotiation-090",
+"lv": "advanced",
+"i18n": {
+"en": "How do you handle a counterpart who seems to be hiding important facts?",
+"de": "Wie gehst du mit einem Gegenüber um, das wichtige Fakten zu verschweigen scheint?",
+"es": "¿Cómo actúas con alguien que parece estar ocultando datos importantes?",
+"fr": "Comment fais-tu face à un interlocuteur qui semble cacher des faits importants ?",
+"it": "Come gestisci un interlocutore che sembra nascondere fatti importanti?",
+"pt": "Como lidas com alguém do outro lado que parece esconder factos importantes?",
+"pt_BR": "Como você lida com alguém do outro lado que parece esconder fatos importantes?"
+}
+},
+{
+"id": "negotiation-091",
+"lv": "advanced",
+"i18n": {
+"en": "How do you help the other side say yes without losing face?",
+"de": "Wie hilfst du der anderen Seite, Ja zu sagen, ohne das Gesicht zu verlieren?",
+"es": "¿Cómo ayudas a la otra parte a decir que sí sin quedar mal?",
+"fr": "Comment aides-tu l'autre partie à dire oui sans perdre la face ?",
+"it": "Come aiuti l'altra parte a dire di sì senza perdere la faccia?",
+"pt": "Como ajudas o outro lado a dizer que sim sem ficar mal visto?",
+"pt_BR": "Como você ajuda o outro lado a dizer sim sem ficar mal?"
+}
+},
+{
+"id": "negotiation-092",
+"lv": "advanced",
+"i18n": {
+"en": "What makes a long-term partnership work, in your experience?",
+"de": "Was lässt eine langfristige Partnerschaft deiner Erfahrung nach gelingen?",
+"es": "Según tu experiencia, ¿qué hace que una colaboración a largo plazo funcione?",
+"fr": "D'après ton expérience, qu'est-ce qui fait fonctionner un partenariat sur le long terme ?",
+"it": "Secondo la tua esperienza, cosa fa funzionare una collaborazione a lungo termine?",
+"pt": "Na tua experiência, o que faz uma parceria de longo prazo funcionar?",
+"pt_BR": "Na sua experiência, o que faz uma parceria de longo prazo dar certo?"
+}
+},
+{
+"id": "negotiation-093",
+"lv": "advanced",
+"i18n": {
+"en": "How would you renegotiate an agreement when circumstances change?",
+"de": "Wie würdest du eine Vereinbarung neu verhandeln, wenn sich die Umstände ändern?",
+"es": "¿Cómo renegociarías un acuerdo si cambiaran las circunstancias?",
+"fr": "Comment renégocierais-tu un accord quand les circonstances changent ?",
+"it": "Come rinegozieresti un accordo quando cambiano le circostanze?",
+"pt": "Como renegociarias um acordo quando as circunstâncias mudam?",
+"pt_BR": "Como você renegociaria um acordo quando as circunstâncias mudam?"
+}
+},
+{
+"id": "negotiation-094",
+"lv": "advanced",
+"i18n": {
+"en": "Which cognitive bias do you think affects your decisions most?",
+"de": "Welche Denkfalle beeinflusst deiner Meinung nach deine Entscheidungen am meisten?",
+"es": "¿Qué sesgo cognitivo crees que influye más en tus decisiones?",
+"fr": "Quel biais cognitif influence le plus tes décisions, selon toi ?",
+"it": "Quale distorsione cognitiva pensi che influenzi di più le tue decisioni?",
+"pt": "Que enviesamento cognitivo achas que mais influencia as tuas decisões?",
+"pt_BR": "Qual viés cognitivo você acha que mais influencia suas decisões?"
+}
+},
+{
+"id": "negotiation-095",
+"lv": "advanced",
+"i18n": {
+"en": "How would you coach a friend before an important negotiation?",
+"de": "Wie würdest du einen Freund vor einer wichtigen Verhandlung coachen?",
+"es": "¿Cómo prepararías a un amigo antes de una negociación importante?",
+"fr": "Comment coacherais-tu un ami avant une négociation importante ?",
+"it": "Come prepareresti un amico prima di una trattativa importante?",
+"pt": "Como prepararias um amigo antes de uma negociação importante?",
+"pt_BR": "Como você prepararia um amigo antes de uma negociação importante?"
+}
+},
+{
+"id": "negotiation-096",
+"lv": "advanced",
+"i18n": {
+"en": "When is it better not to negotiate at all?",
+"de": "Wann ist es besser, gar nicht zu verhandeln?",
+"es": "¿Cuándo es mejor no negociar en absoluto?",
+"fr": "Quand vaut-il mieux ne pas négocier du tout ?",
+"it": "Quando è meglio non negoziare affatto?",
+"pt": "Quando é melhor nem sequer negociar?",
+"pt_BR": "Quando é melhor nem negociar?"
+}
+},
+{
+"id": "negotiation-097",
+"lv": "advanced",
+"i18n": {
+"en": "How do you measure whether a negotiation was really a success?",
+"de": "Woran misst du, ob eine Verhandlung wirklich ein Erfolg war?",
+"es": "¿Cómo mides si una negociación fue realmente un éxito?",
+"fr": "Comment mesures-tu si une négociation a vraiment été un succès ?",
+"it": "Come misuri se una trattativa è stata davvero un successo?",
+"pt": "Como avalias se uma negociação foi realmente um sucesso?",
+"pt_BR": "Como você avalia se uma negociação foi realmente um sucesso?"
+}
+},
+{
+"id": "negotiation-098",
+"lv": "advanced",
+"i18n": {
+"en": "What would you include in your personal negotiation philosophy?",
+"de": "Was würde zu deiner persönlichen Verhandlungsphilosophie gehören?",
+"es": "¿Qué incluirías en tu filosofía personal de negociación?",
+"fr": "Que mettrais-tu dans ta philosophie personnelle de la négociation ?",
+"it": "Cosa includeresti nella tua filosofia personale di negoziazione?",
+"pt": "O que incluirias na tua filosofia pessoal de negociação?",
+"pt_BR": "O que você incluiria na sua filosofia pessoal de negociação?"
+}
+},
+{
+"id": "negotiation-099",
+"lv": "advanced",
+"i18n": {
+"en": "How would you design a role-play to teach someone negotiation?",
+"de": "Wie würdest du ein Rollenspiel gestalten, um jemandem das Verhandeln beizubringen?",
+"es": "¿Cómo diseñarías un juego de roles para enseñar a alguien a negociar?",
+"fr": "Comment concevrais-tu un jeu de rôle pour apprendre à quelqu'un à négocier ?",
+"it": "Come progetteresti un gioco di ruolo per insegnare a qualcuno a negoziare?",
+"pt": "Como desenharias um role-play para ensinar alguém a negociar?",
+"pt_BR": "Como você criaria uma simulação para ensinar alguém a negociar?"
+}
+},
+{
+"id": "negotiation-100",
+"lv": "advanced",
+"i18n": {
+"en": "Looking back, which negotiation taught you the most, and what did you learn?",
+"de": "Welche Verhandlung hat dich rückblickend am meisten gelehrt, und was hast du gelernt?",
+"es": "Mirando atrás, ¿qué negociación te enseñó más y qué aprendiste?",
+"fr": "Avec le recul, quelle négociation t'a le plus appris, et qu'en as-tu retenu ?",
+"it": "Ripensandoci, quale trattativa ti ha insegnato di più, e cosa hai imparato?",
+"pt": "Olhando para trás, que negociação te ensinou mais e o que aprendeste?",
+"pt_BR": "Olhando para trás, qual negociação mais te ensinou, e o que você aprendeu?"
+}
+}
+]
+}

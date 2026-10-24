@@ -1,0 +1,33 @@
+{
+"topic": "studying",
+"intro": {
+"en": [
+"Hi, I'm {name}! I'll guide you on a 365-day path to study smarter, from memory basics, planning and focus to exam strategies, research skills and your own learning system.",
+"One small lesson a day, easy to try with whatever you are learning right now. To get to know you: what are you studying at the moment, and what part of it feels hardest?"
+],
+"de": [
+"Hallo, ich bin {name}! Ich begleite dich 365 Tage lang zu klügerem Lernen: von Gedächtnis, Planung und Konzentration bis zu Prüfungsstrategien, Recherche und deinem eigenen Lernsystem.",
+"Jeden Tag eine kleine Lektion, die du direkt mit deinem aktuellen Lernstoff ausprobieren kannst. Erzähl mal: Was lernst du gerade, und welcher Teil fällt dir am schwersten?"
+],
+"es": [
+"¡Hola, soy {name}! Te acompañaré en un camino de 365 días para estudiar mejor: de la memoria, la planificación y la concentración a estrategias de examen, investigación y tu propio método.",
+"Una pequeña lección al día, fácil de aplicar a lo que estés aprendiendo ahora. Para conocerte: ¿qué estás estudiando en este momento y qué parte te resulta más difícil?"
+],
+"fr": [
+"Salut, je suis {name} ! Je vais t'accompagner sur un parcours de 365 jours pour mieux étudier : mémoire, organisation et concentration, puis stratégies d'examen, recherche et ta propre méthode.",
+"Une petite leçon par jour, facile à appliquer à ce que tu apprends en ce moment. Pour faire connaissance : qu'est-ce que tu étudies actuellement, et quelle partie te semble la plus difficile ?"
+],
+"it": [
+"Ciao, sono {name}! Ti guiderò in un percorso di 365 giorni per studiare meglio: dalla memoria, la pianificazione e la concentrazione alle strategie d'esame, alla ricerca e al tuo metodo personale.",
+"Una piccola lezione al giorno, facile da applicare a quello che stai imparando adesso. Per conoscerti: cosa stai studiando in questo periodo, e quale parte ti sembra più difficile?"
+],
+"pt": [
+"Olá, chamo-me {name}! Vou acompanhar-te num percurso de 365 dias para estudares melhor: da memória, do planeamento e da concentração às estratégias de exame, à pesquisa e ao teu próprio método.",
+"Uma pequena lição por dia, fácil de aplicar ao que estás a aprender agora. Para te conhecer melhor: o que estás a estudar neste momento, e que parte te parece mais difícil?"
+],
+"pt_BR": [
+"Oi, eu sou {name}! Vou te acompanhar numa jornada de 365 dias para estudar melhor: da memória, do planejamento e do foco até estratégias de prova, pesquisa e o seu próprio método de estudo.",
+"Uma pequena lição por dia, fácil de aplicar no que você está aprendendo agora. Pra te conhecer melhor: o que você está estudando no momento, e qual parte parece mais difícil?"
+]
+}
+}

@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 351,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Cinema in Spanish",
+     "g": "Talk about films and directors from the Spanish-speaking world.",
+     "p": [
+      "Pedro Almodóvar (Spain) is known for bold colours and strong female characters.",
+      "Guillermo del Toro (Mexico) creates fantasy worlds; Alfonso Cuarón (Mexico) directed Roma and Gravity.",
+      "Review a film: La trama trata de..., el guion es..., la fotografía es preciosa, te la recomiendo."
+     ],
+     "q": "Which film in Spanish have you seen or would you like to see?",
+     "c": "Write a three-sentence mini review of a film you like using la trama, el guion and te la recomiendo."
+    },
+    "de": {
+     "t": "Kino auf Spanisch",
+     "g": "Sprich über Filme und Regisseure der spanischsprachigen Welt.",
+     "p": [
+      "Pedro Almodóvar (Spanien) ist bekannt für kräftige Farben und starke Frauenfiguren.",
+      "Guillermo del Toro (Mexiko) erschafft Fantasiewelten; Alfonso Cuarón (Mexiko) drehte Roma und Gravity.",
+      "Einen Film bewerten: La trama trata de..., el guion es..., la fotografía es preciosa, te la recomiendo."
+     ],
+     "q": "Welchen spanischsprachigen Film hast du gesehen oder möchtest du sehen?",
+     "c": "Schreib eine Mini-Kritik in drei Sätzen über einen Lieblingsfilm mit la trama, el guion und te la recomiendo."
+    },
+    "es": {
+     "t": "Cine en español",
+     "g": "Habla de películas y directores del mundo hispano.",
+     "p": [
+      "Pedro Almodóvar (España) es conocido por sus colores intensos y sus personajes femeninos fuertes.",
+      "Guillermo del Toro (México) crea mundos de fantasía; Alfonso Cuarón (México) dirigió Roma y Gravity.",
+      "Reseña una película: La trama trata de..., el guion es..., la fotografía es preciosa, te la recomiendo."
+     ],
+     "q": "¿Qué película en español has visto o te gustaría ver?",
+     "c": "Escribe una minirreseña de tres frases de una película que te guste con la trama, el guion y te la recomiendo."
+    },
+    "fr": {
+     "t": "Le cinéma en espagnol",
+     "g": "Parle de films et de réalisateurs du monde hispanophone.",
+     "p": [
+      "Pedro Almodóvar (Espagne) est connu pour ses couleurs vives et ses personnages féminins forts.",
+      "Guillermo del Toro (Mexique) crée des mondes fantastiques ; Alfonso Cuarón (Mexique) a réalisé Roma et Gravity.",
+      "Critique un film : La trama trata de..., el guion es..., la fotografía es preciosa, te la recomiendo."
+     ],
+     "q": "Quel film en espagnol as-tu vu ou aimerais-tu voir ?",
+     "c": "Écris une mini-critique de trois phrases d'un film que tu aimes avec la trama, el guion et te la recomiendo."
+    },
+    "it": {
+     "t": "Il cinema in spagnolo",
+     "g": "Parla di film e registi del mondo ispanico.",
+     "p": [
+      "Pedro Almodóvar (Spagna) è noto per i colori intensi e i personaggi femminili forti.",
+      "Guillermo del Toro (Messico) crea mondi fantastici; Alfonso Cuarón (Messico) ha diretto Roma e Gravity.",
+      "Recensisci un film: La trama trata de..., el guion es..., la fotografía es preciosa, te la recomiendo."
+     ],
+     "q": "Quale film in spagnolo hai visto o vorresti vedere?",
+     "c": "Scrivi una mini recensione di tre frasi di un film che ami con la trama, el guion e te la recomiendo."
+    },
+    "pt": {
+     "t": "Cinema em espanhol",
+     "g": "Fala de filmes e realizadores do mundo hispânico.",
+     "p": [
+      "Pedro Almodóvar (Espanha) é conhecido pelas cores intensas e pelas personagens femininas fortes.",
+      "Guillermo del Toro (México) cria mundos de fantasia; Alfonso Cuarón (México) realizou Roma e Gravity.",
+      "Critica um filme: La trama trata de..., el guion es..., la fotografía es preciosa, te la recomiendo."
+     ],
+     "q": "Que filme em espanhol já viste ou gostarias de ver?",
+     "c": "Escreve uma minicrítica de três frases sobre um filme de que gostes com la trama, el guion e te la recomiendo."
+    },
+    "pt_BR": {
+     "t": "Cinema em espanhol",
+     "g": "Fale sobre filmes e diretores do mundo hispânico.",
+     "p": [
+      "Pedro Almodóvar (Espanha) é conhecido pelas cores intensas e pelas personagens femininas fortes.",
+      "Guillermo del Toro (México) cria mundos de fantasia; Alfonso Cuarón (México) dirigiu Roma e Gravidade.",
+      "Resenhe um filme: La trama trata de..., el guion es..., la fotografía es preciosa, te la recomiendo."
+     ],
+     "q": "Que filme em espanhol você já viu ou gostaria de ver?",
+     "c": "Escreva uma minirresenha de três frases sobre um filme de que você gosta com la trama, el guion e te la recomiendo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la trama",
+      "ex": "La trama es sencilla, pero emociona."
+     },
+     {
+      "w": "el guion",
+      "ex": "El guion tiene diálogos muy naturales."
+     },
+     {
+      "w": "el director",
+      "ex": "El director rodó la película en su pueblo natal."
+     },
+     {
+      "w": "la fotografía",
+      "ex": "La fotografía en blanco y negro es preciosa."
+     },
+     {
+      "w": "rodar una película",
+      "ex": "Rodaron la película en solo seis semanas."
+     },
+     {
+      "w": "te la recomiendo",
+      "ex": "Es una película preciosa: te la recomiendo."
+     }
+    ],
+    "gram": "Pronombres de objeto indirecto + directo: te la recomiendo, se la recomendé (le + la = se la)."
+   }
+  },
+  {
+   "d": 352,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Painters: Velázquez to Frida",
+     "g": "Describe and discuss famous paintings from the Hispanic world.",
+     "p": [
+      "Velázquez painted Las Meninas (1656), a puzzle of mirrors and gazes.",
+      "Picasso co-founded Cubism; Dalí painted melting clocks in La persistencia de la memoria.",
+      "Frida Kahlo (Mexico) painted vivid self-portraits full of colour and Mexican culture."
+     ],
+     "q": "Which painting would you love to see in person?",
+     "c": "Describe a painting you like in three sentences with en primer plano, al fondo and me transmite."
+    },
+    "de": {
+     "t": "Maler: von Velázquez bis Frida",
+     "g": "Beschreibe und diskutiere berühmte Gemälde der hispanischen Welt.",
+     "p": [
+      "Velázquez malte Las Meninas (1656), ein Rätsel aus Spiegeln und Blicken.",
+      "Picasso begründete den Kubismus mit; Dalí malte schmelzende Uhren in La persistencia de la memoria.",
+      "Frida Kahlo (Mexiko) malte leuchtende Selbstporträts voller Farbe und mexikanischer Kultur."
+     ],
+     "q": "Welches Gemälde würdest du gern im Original sehen?",
+     "c": "Beschreibe ein Lieblingsbild in drei Sätzen mit en primer plano, al fondo und me transmite."
+    },
+    "es": {
+     "t": "Pintores: de Velázquez a Frida",
+     "g": "Describe y comenta cuadros famosos del mundo hispano.",
+     "p": [
+      "Velázquez pintó Las Meninas (1656), un enigma de espejos y miradas.",
+      "Picasso fue cofundador del cubismo; Dalí pintó relojes blandos en La persistencia de la memoria.",
+      "Frida Kahlo (México) pintó autorretratos llenos de color y de cultura mexicana."
+     ],
+     "q": "¿Qué cuadro te encantaría ver en persona?",
+     "c": "Describe un cuadro que te guste en tres frases con en primer plano, al fondo y me transmite."
+    },
+    "fr": {
+     "t": "Peintres : de Velázquez à Frida",
+     "g": "Décris et commente des tableaux célèbres du monde hispanique.",
+     "p": [
+      "Velázquez a peint Las Meninas (1656), une énigme de miroirs et de regards.",
+      "Picasso a cofondé le cubisme ; Dalí a peint des montres molles dans La persistencia de la memoria.",
+      "Frida Kahlo (Mexique) a peint des autoportraits éclatants de couleur et de culture mexicaine."
+     ],
+     "q": "Quel tableau aimerais-tu voir en vrai ?",
+     "c": "Décris un tableau que tu aimes en trois phrases avec en primer plano, al fondo et me transmite."
+    },
+    "it": {
+     "t": "Pittori: da Velázquez a Frida",
+     "g": "Descrivi e commenta quadri famosi del mondo ispanico.",
+     "p": [
+      "Velázquez dipinse Las Meninas (1656), un enigma di specchi e sguardi.",
+      "Picasso fu cofondatore del cubismo; Dalí dipinse orologi molli in La persistencia de la memoria.",
+      "Frida Kahlo (Messico) dipinse autoritratti vivaci pieni di colore e cultura messicana."
+     ],
+     "q": "Quale quadro ti piacerebbe vedere dal vivo?",
+     "c": "Descrivi un quadro che ami in tre frasi con en primer plano, al fondo e me transmite."
+    },
+    "pt": {
+     "t": "Pintores: de Velázquez a Frida",
+     "g": "Descreve e comenta quadros famosos do mundo hispânico.",
+     "p": [
+      "Velázquez pintou Las Meninas (1656), um enigma de espelhos e olhares.",
+      "Picasso foi cofundador do cubismo; Dalí pintou relógios moles em La persistencia de la memoria.",
+      "Frida Kahlo (México) pintou autorretratos cheios de cor e de cultura mexicana."
+     ],
+     "q": "Que quadro adorarias ver ao vivo?",
+     "c": "Descreve um quadro de que gostes em três frases com en primer plano, al fondo e me transmite."
+    },
+    "pt_BR": {
+     "t": "Pintores: de Velázquez a Frida",
+     "g": "Descreva e comente quadros famosos do mundo hispânico.",
+     "p": [
+      "Velázquez pintou Las Meninas (1656), um enigma de espelhos e olhares.",
+      "Picasso foi cofundador do cubismo; Dalí pintou relógios derretidos em La persistencia de la memoria.",
+      "Frida Kahlo (México) pintou autorretratos cheios de cor e de cultura mexicana."
+     ],
+     "q": "Que quadro você adoraria ver ao vivo?",
+     "c": "Descreva um quadro de que você gosta em três frases com en primer plano, al fondo e me transmite."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el cuadro",
+      "ex": "Este cuadro está en el Museo del Prado."
+     },
+     {
+      "w": "el autorretrato",
+      "ex": "Frida pintó muchos autorretratos."
+     },
+     {
+      "w": "en primer plano",
+      "ex": "En primer plano aparece una niña con un vestido blanco."
+     },
+     {
+      "w": "al fondo",
+      "ex": "Al fondo se ve un espejo."
+     },
+     {
+      "w": "el cubismo",
+      "ex": "El cubismo muestra los objetos desde varios ángulos."
+     },
+     {
+      "w": "me transmite",
+      "ex": "Este cuadro me transmite mucha calma."
+     }
+    ],
+    "gram": "Describir imágenes: aparecer, verse (se ve, se ven) y localizadores (en primer plano, al fondo, a la izquierda)."
+   }
+  },
+  {
+   "d": 353,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Song lyrics and natural Spanish",
+     "g": "Learn real, everyday Spanish through song lyrics.",
+     "p": [
+      "Lyrics are full of contractions and slang: pa' ti, to' el día, ¿qué pasa contigo?",
+      "They show feelings with vivid images and repetition, perfect for memorising.",
+      "Sing along to hear the rhythm and linking of real speech, then read the lyrics to check."
+     ],
+     "q": "Which song in Spanish do you know or would you like to learn?",
+     "c": "Choose one Spanish song, write down two lines you like and explain what they mean."
+    },
+    "de": {
+     "t": "Songtexte und natürliches Spanisch",
+     "g": "Lerne echtes Alltagsspanisch durch Songtexte.",
+     "p": [
+      "Songtexte sind voller Verkürzungen und Slang: pa' ti, to' el día, ¿qué pasa contigo?",
+      "Sie zeigen Gefühle mit lebendigen Bildern und Wiederholungen, ideal zum Einprägen.",
+      "Sing mit, um Rhythmus und Bindungen echter Sprache zu hören, und lies dann den Text zur Kontrolle."
+     ],
+     "q": "Welches spanische Lied kennst du oder würdest du gern lernen?",
+     "c": "Wähl ein spanisches Lied, schreib zwei Zeilen auf, die dir gefallen, und erkläre ihre Bedeutung."
+    },
+    "es": {
+     "t": "Letras de canciones y español natural",
+     "g": "Aprende español real y cotidiano con letras de canciones.",
+     "p": [
+      "Las letras están llenas de contracciones y argot: pa' ti, to' el día, ¿qué pasa contigo?",
+      "Expresan sentimientos con imágenes vivas y repeticiones, ideales para memorizar.",
+      "Canta para oír el ritmo y la unión del habla real; luego lee la letra para comprobar."
+     ],
+     "q": "¿Qué canción en español conoces o te gustaría aprender?",
+     "c": "Elige una canción en español, apunta dos versos que te gusten y explica qué significan."
+    },
+    "fr": {
+     "t": "Paroles de chansons et espagnol naturel",
+     "g": "Apprends un espagnol réel et quotidien grâce aux paroles de chansons.",
+     "p": [
+      "Les paroles regorgent de contractions et d'argot : pa' ti, to' el día, ¿qué pasa contigo?",
+      "Elles expriment des émotions avec des images vives et des répétitions, idéales pour mémoriser.",
+      "Chante pour entendre le rythme et les liaisons du vrai parler, puis lis les paroles pour vérifier."
+     ],
+     "q": "Quelle chanson en espagnol connais-tu ou aimerais-tu apprendre ?",
+     "c": "Choisis une chanson espagnole, note deux vers que tu aimes et explique ce qu'ils veulent dire."
+    },
+    "it": {
+     "t": "Testi delle canzoni e spagnolo naturale",
+     "g": "Impara lo spagnolo vero e quotidiano con i testi delle canzoni.",
+     "p": [
+      "I testi sono pieni di contrazioni e slang: pa' ti, to' el día, ¿qué pasa contigo?",
+      "Esprimono emozioni con immagini vive e ripetizioni, perfette per memorizzare.",
+      "Canta per sentire ritmo e legamenti del parlato reale, poi leggi il testo per verificare."
+     ],
+     "q": "Quale canzone in spagnolo conosci o vorresti imparare?",
+     "c": "Scegli una canzone spagnola, scrivi due versi che ti piacciono e spiega cosa significano."
+    },
+    "pt": {
+     "t": "Letras de canções e espanhol natural",
+     "g": "Aprende espanhol real e quotidiano com letras de canções.",
+     "p": [
+      "As letras estão cheias de contrações e calão: pa' ti, to' el día, ¿qué pasa contigo?",
+      "Exprimem sentimentos com imagens vivas e repetições, ótimas para memorizar.",
+      "Canta para ouvir o ritmo e as ligações da fala real; depois lê a letra para confirmar."
+     ],
+     "q": "Que canção em espanhol conheces ou gostarias de aprender?",
+     "c": "Escolhe uma canção em espanhol, aponta dois versos de que gostes e explica o que significam."
+    },
+    "pt_BR": {
+     "t": "Letras de música e espanhol natural",
+     "g": "Aprenda espanhol real e do dia a dia com letras de música.",
+     "p": [
+      "As letras são cheias de contrações e gírias: pa' ti, to' el día, ¿qué pasa contigo?",
+      "Expressam sentimentos com imagens vivas e repetições, ótimas para memorizar.",
+      "Cante junto para ouvir o ritmo e as ligações da fala real; depois leia a letra para conferir."
+     ],
+     "q": "Que música em espanhol você conhece ou gostaria de aprender?",
+     "c": "Escolha uma música em espanhol, anote dois versos de que gosta e explique o que significam."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la letra",
+      "ex": "Me sé la letra de memoria."
+     },
+     {
+      "w": "el estribillo",
+      "ex": "El estribillo se repite cuatro veces."
+     },
+     {
+      "w": "pa' ti",
+      "ex": "Esta canción es pa' ti, amigo."
+     },
+     {
+      "w": "to' el día",
+      "ex": "Llevo to' el día cantando lo mismo."
+     },
+     {
+      "w": "pegadizo",
+      "ex": "¡Qué ritmo tan pegadizo tiene!"
+     },
+     {
+      "w": "tararear",
+      "ex": "Mi padre siempre tararea boleros en la cocina."
+     }
+    ],
+    "gram": "Lengua de las canciones: apócopes orales (pa', to'), repetición y hipérbaton (cambio del orden normal de las palabras)."
+   }
+  },
+  {
+   "d": 354,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Review: Hispanic culture",
+     "g": "Recap literature, cinema, art and music of the Spanish-speaking world.",
+     "p": [
+      "Literature: Cervantes and Don Quijote; García Márquez and Macondo; Machado, Lorca, Mistral.",
+      "Cinema and art: Almodóvar, del Toro, Cuarón; Velázquez, Picasso, Dalí, Frida Kahlo.",
+      "Music: lyrics with pa', to', catchy choruses and the rhythm of real speech."
+     ],
+     "q": "Which work of Hispanic culture would you recommend to a friend, and why?",
+     "c": "Recommend one book, one film and one painting from these days in a short message with te lo recomiendo."
+    },
+    "de": {
+     "t": "Wiederholung: hispanische Kultur",
+     "g": "Wiederhole Literatur, Kino, Kunst und Musik der spanischsprachigen Welt.",
+     "p": [
+      "Literatur: Cervantes und Don Quijote; García Márquez und Macondo; Machado, Lorca, Mistral.",
+      "Kino und Kunst: Almodóvar, del Toro, Cuarón; Velázquez, Picasso, Dalí, Frida Kahlo.",
+      "Musik: Texte mit pa', to', eingängige Refrains und der Rhythmus echter Sprache."
+     ],
+     "q": "Welches Werk der hispanischen Kultur würdest du einem Freund empfehlen, und warum?",
+     "c": "Empfiehl in einer kurzen Nachricht ein Buch, einen Film und ein Bild mit te lo recomiendo."
+    },
+    "es": {
+     "t": "Repaso: cultura hispana",
+     "g": "Repasa la literatura, el cine, el arte y la música del mundo hispano.",
+     "p": [
+      "Literatura: Cervantes y el Quijote; García Márquez y Macondo; Machado, Lorca, Mistral.",
+      "Cine y arte: Almodóvar, del Toro, Cuarón; Velázquez, Picasso, Dalí, Frida Kahlo.",
+      "Música: letras con pa', to', estribillos pegadizos y el ritmo del habla real."
+     ],
+     "q": "¿Qué obra de la cultura hispana recomendarías a un amigo y por qué?",
+     "c": "Recomienda un libro, una película y un cuadro de estos días en un mensaje breve con te lo recomiendo."
+    },
+    "fr": {
+     "t": "Révision : la culture hispanique",
+     "g": "Révise la littérature, le cinéma, l'art et la musique du monde hispanophone.",
+     "p": [
+      "Littérature : Cervantes et Don Quichotte ; García Márquez et Macondo ; Machado, Lorca, Mistral.",
+      "Cinéma et art : Almodóvar, del Toro, Cuarón ; Velázquez, Picasso, Dalí, Frida Kahlo.",
+      "Musique : paroles avec pa', to', refrains entraînants et rythme du vrai parler."
+     ],
+     "q": "Quelle œuvre de la culture hispanique recommanderais-tu à un ami, et pourquoi ?",
+     "c": "Recommande un livre, un film et un tableau de ces jours dans un court message avec te lo recomiendo."
+    },
+    "it": {
+     "t": "Ripasso: cultura ispanica",
+     "g": "Ripassa letteratura, cinema, arte e musica del mondo ispanico.",
+     "p": [
+      "Letteratura: Cervantes e il Chisciotte; García Márquez e Macondo; Machado, Lorca, Mistral.",
+      "Cinema e arte: Almodóvar, del Toro, Cuarón; Velázquez, Picasso, Dalí, Frida Kahlo.",
+      "Musica: testi con pa', to', ritornelli orecchiabili e il ritmo del parlato reale."
+     ],
+     "q": "Quale opera della cultura ispanica consiglieresti a un amico, e perché?",
+     "c": "Consiglia un libro, un film e un quadro di questi giorni in un breve messaggio con te lo recomiendo."
+    },
+    "pt": {
+     "t": "Revisão: cultura hispânica",
+     "g": "Revê a literatura, o cinema, a arte e a música do mundo hispânico.",
+     "p": [
+      "Literatura: Cervantes e o Quixote; García Márquez e Macondo; Machado, Lorca, Mistral.",
+      "Cinema e arte: Almodóvar, del Toro, Cuarón; Velázquez, Picasso, Dalí, Frida Kahlo.",
+      "Música: letras com pa', to', refrões que ficam no ouvido e o ritmo da fala real."
+     ],
+     "q": "Que obra da cultura hispânica recomendarias a um amigo, e porquê?",
+     "c": "Recomenda um livro, um filme e um quadro destes dias numa mensagem curta com te lo recomiendo."
+    },
+    "pt_BR": {
+     "t": "Revisão: cultura hispânica",
+     "g": "Revise a literatura, o cinema, a arte e a música do mundo hispânico.",
+     "p": [
+      "Literatura: Cervantes e o Quixote; García Márquez e Macondo; Machado, Lorca, Mistral.",
+      "Cinema e arte: Almodóvar, del Toro, Cuarón; Velázquez, Picasso, Dalí, Frida Kahlo.",
+      "Música: letras com pa', to', refrões chiclete e o ritmo da fala real."
+     ],
+     "q": "Que obra da cultura hispânica você recomendaria a um amigo, e por quê?",
+     "c": "Recomende um livro, um filme e um quadro destes dias numa mensagem curta com te lo recomiendo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la obra maestra",
+      "ex": "Las Meninas es una obra maestra."
+     },
+     {
+      "w": "el novelista",
+      "ex": "García Márquez es un novelista muy leído."
+     },
+     {
+      "w": "la película",
+      "ex": "Vi una película de Almodóvar el fin de semana."
+     },
+     {
+      "w": "el poema",
+      "ex": "Aprendí un poema de Machado de memoria."
+     },
+     {
+      "w": "la canción",
+      "ex": "Esta canción me recuerda a mi viaje a México."
+     },
+     {
+      "w": "te lo recomiendo",
+      "ex": "Es un libro precioso: te lo recomiendo."
+     }
+    ],
+    "gram": "Repaso cultural: indefinido para biografías (escribió, pintó, dirigió) y doble pronombre para recomendar (te lo recomiendo)."
+   }
+  },
+  {
+   "d": 355,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Exam skills: reading strategies",
+     "g": "Read faster and smarter in a DELE-style reading test.",
+     "p": [
+      "Skim first: read the title and first lines to get the general idea.",
+      "Scan for details: look for names, numbers and key words from the questions.",
+      "Manage time: answer easy questions first and never leave a blank answer."
+     ],
+     "q": "How do you usually read a long text in Spanish?",
+     "c": "Take a short Spanish article: skim it in one minute, then scan it for three specific details."
+    },
+    "de": {
+     "t": "Prüfungstraining: Lesestrategien",
+     "g": "Lies in einer DELE-ähnlichen Leseprüfung schneller und klüger.",
+     "p": [
+      "Erst überfliegen: Titel und erste Zeilen lesen, um den Gesamtsinn zu erfassen.",
+      "Gezielt suchen: nach Namen, Zahlen und Schlüsselwörtern aus den Fragen schauen.",
+      "Zeit managen: leichte Fragen zuerst beantworten und nie eine Antwort leer lassen."
+     ],
+     "q": "Wie liest du normalerweise einen langen Text auf Spanisch?",
+     "c": "Nimm einen kurzen spanischen Artikel: überfliege ihn in einer Minute, dann such drei Details."
+    },
+    "es": {
+     "t": "Técnicas de examen: lectura",
+     "g": "Lee más rápido y mejor en una prueba de lectura tipo DELE.",
+     "p": [
+      "Lectura rápida: lee el título y las primeras líneas para captar la idea general.",
+      "Lectura de búsqueda: localiza nombres, cifras y palabras clave de las preguntas.",
+      "Gestiona el tiempo: responde primero lo fácil y no dejes ninguna respuesta en blanco."
+     ],
+     "q": "¿Cómo sueles leer un texto largo en español?",
+     "c": "Toma un artículo breve: léelo por encima en un minuto y luego busca tres datos concretos."
+    },
+    "fr": {
+     "t": "Technique d'examen : la lecture",
+     "g": "Lis plus vite et mieux dans une épreuve de lecture type DELE.",
+     "p": [
+      "Survole d'abord : lis le titre et les premières lignes pour l'idée générale.",
+      "Repère les détails : cherche noms, chiffres et mots clés des questions.",
+      "Gère ton temps : réponds d'abord aux questions faciles et ne laisse aucune réponse vide."
+     ],
+     "q": "Comment lis-tu d'habitude un long texte en espagnol ?",
+     "c": "Prends un court article espagnol : survole-le en une minute, puis cherches-y trois détails précis."
+    },
+    "it": {
+     "t": "Tecniche d'esame: lettura",
+     "g": "Leggi più veloce e meglio in una prova di lettura tipo DELE.",
+     "p": [
+      "Prima scorri: leggi titolo e prime righe per l'idea generale.",
+      "Cerca i dettagli: individua nomi, numeri e parole chiave delle domande.",
+      "Gestisci il tempo: rispondi prima alle domande facili e non lasciare risposte in bianco."
+     ],
+     "q": "Come leggi di solito un testo lungo in spagnolo?",
+     "c": "Prendi un breve articolo spagnolo: scorrilo in un minuto, poi cerca tre dettagli precisi."
+    },
+    "pt": {
+     "t": "Técnicas de exame: leitura",
+     "g": "Lê mais depressa e melhor numa prova de leitura tipo DELE.",
+     "p": [
+      "Leitura rápida: lê o título e as primeiras linhas para a ideia geral.",
+      "Leitura de procura: localiza nomes, números e palavras-chave das perguntas.",
+      "Gere o tempo: responde primeiro ao mais fácil e não deixes nenhuma resposta em branco."
+     ],
+     "q": "Como costumas ler um texto longo em espanhol?",
+     "c": "Pega num artigo curto: lê-o por alto num minuto e depois procura três dados concretos."
+    },
+    "pt_BR": {
+     "t": "Técnicas de prova: leitura",
+     "g": "Leia mais rápido e melhor numa prova de leitura tipo DELE.",
+     "p": [
+      "Leitura rápida: leia o título e as primeiras linhas para a ideia geral.",
+      "Leitura de busca: localize nomes, números e palavras-chave das perguntas.",
+      "Administre o tempo: responda primeiro o mais fácil e não deixe nenhuma resposta em branco."
+     ],
+     "q": "Como você costuma ler um texto longo em espanhol?",
+     "c": "Pegue um artigo curto: leia por cima em um minuto e depois procure três dados concretos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "leer por encima",
+      "ex": "Primero lee el texto por encima."
+     },
+     {
+      "w": "la idea general",
+      "ex": "¿Cuál es la idea general del texto?"
+     },
+     {
+      "w": "el dato concreto",
+      "ex": "Busca un dato concreto: la fecha de apertura."
+     },
+     {
+      "w": "la palabra clave",
+      "ex": "Subraya la palabra clave de cada pregunta."
+     },
+     {
+      "w": "dejar en blanco",
+      "ex": "No dejes ninguna pregunta en blanco."
+     },
+     {
+      "w": "gestionar el tiempo",
+      "ex": "Hay que gestionar bien el tiempo en el examen."
+     }
+    ],
+    "gram": "Instrucciones de examen: imperativo afirmativo y negativo (lee, subraya, no dejes) y hay que + infinitivo."
+   }
+  },
+  {
+   "d": 356,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Exam skills: listening strategies",
+     "g": "Handle exam listening tasks calmly and effectively.",
+     "p": [
+      "Predict before you listen: read the questions and imagine likely words and topics.",
+      "Listen for key words and synonyms: the audio rarely repeats the exact words of the question.",
+      "Watch out for distractors: a speaker may mention an option and then reject it: al final no..."
+     ],
+     "q": "What is hardest for you when you listen to Spanish?",
+     "c": "Listen to a short Spanish audio twice: first predict, then note three key words you hear."
+    },
+    "de": {
+     "t": "Prüfungstraining: Hörstrategien",
+     "g": "Bewältige Höraufgaben in der Prüfung ruhig und wirksam.",
+     "p": [
+      "Vor dem Hören vorhersagen: Fragen lesen und mögliche Wörter und Themen erahnen.",
+      "Auf Schlüsselwörter und Synonyme achten: das Audio wiederholt selten die Wörter der Frage.",
+      "Vorsicht vor Ablenkern: Sprecher nennen eine Option und verwerfen sie: al final no..."
+     ],
+     "q": "Was fällt dir beim Hören von Spanisch am schwersten?",
+     "c": "Hör ein kurzes spanisches Audio zweimal: erst vorhersagen, dann drei gehörte Schlüsselwörter notieren."
+    },
+    "es": {
+     "t": "Técnicas de examen: comprensión auditiva",
+     "g": "Afronta las tareas de audición con calma y eficacia.",
+     "p": [
+      "Anticipa antes de escuchar: lee las preguntas e imagina palabras y temas probables.",
+      "Atiende a palabras clave y sinónimos: el audio rara vez repite las palabras exactas.",
+      "Cuidado con las distracciones: alguien menciona una opción y luego la descarta: al final no..."
+     ],
+     "q": "¿Qué es lo más difícil para ti al escuchar español?",
+     "c": "Escucha dos veces un audio breve: primero anticipa y luego apunta tres palabras clave que oigas."
+    },
+    "fr": {
+     "t": "Technique d'examen : la compréhension orale",
+     "g": "Aborde les tâches d'écoute avec calme et efficacité.",
+     "p": [
+      "Anticipe avant d'écouter : lis les questions et imagine les mots et thèmes probables.",
+      "Repère mots clés et synonymes : l'audio reprend rarement les mots exacts de la question.",
+      "Méfie-toi des pièges : on cite une option puis on l'écarte : al final no..."
+     ],
+     "q": "Qu'est-ce qui est le plus difficile pour toi quand tu écoutes l'espagnol ?",
+     "c": "Écoute deux fois un court audio : anticipe d'abord, puis note trois mots clés entendus."
+    },
+    "it": {
+     "t": "Tecniche d'esame: ascolto",
+     "g": "Affronta le prove di ascolto con calma ed efficacia.",
+     "p": [
+      "Anticipa prima di ascoltare: leggi le domande e immagina parole e temi probabili.",
+      "Cogli parole chiave e sinonimi: l'audio raramente ripete le parole esatte della domanda.",
+      "Attenzione ai distrattori: si cita un'opzione e poi la si scarta: al final no..."
+     ],
+     "q": "Cosa trovi più difficile quando ascolti lo spagnolo?",
+     "c": "Ascolta due volte un breve audio: prima anticipa, poi annota tre parole chiave che senti."
+    },
+    "pt": {
+     "t": "Técnicas de exame: compreensão oral",
+     "g": "Enfrenta as tarefas de audição com calma e eficácia.",
+     "p": [
+      "Antecipa antes de ouvir: lê as perguntas e imagina palavras e temas prováveis.",
+      "Atenta nas palavras-chave e sinónimos: o áudio raramente repete as palavras exatas.",
+      "Cuidado com os distratores: alguém menciona uma opção e depois descarta-a: al final no..."
+     ],
+     "q": "O que é mais difícil para ti ao ouvir espanhol?",
+     "c": "Ouve duas vezes um áudio curto: primeiro antecipa e depois aponta três palavras-chave que ouças."
+    },
+    "pt_BR": {
+     "t": "Técnicas de prova: compreensão auditiva",
+     "g": "Encare as tarefas de áudio com calma e eficiência.",
+     "p": [
+      "Antecipe antes de ouvir: leia as perguntas e imagine palavras e temas prováveis.",
+      "Fique atento a palavras-chave e sinônimos: o áudio raramente repete as palavras exatas.",
+      "Cuidado com os distratores: alguém cita uma opção e depois a descarta: al final no..."
+     ],
+     "q": "O que é mais difícil para você ao ouvir espanhol?",
+     "c": "Ouça duas vezes um áudio curto: primeiro antecipe e depois anote três palavras-chave que ouvir."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "anticipar",
+      "ex": "Antes de escuchar, intenta anticipar el tema."
+     },
+     {
+      "w": "la grabación",
+      "ex": "La grabación se escucha dos veces."
+     },
+     {
+      "w": "el distractor",
+      "ex": "Esa opción es un distractor: la mencionan, pero la descartan."
+     },
+     {
+      "w": "descartar",
+      "ex": "Descarta las respuestas imposibles primero."
+     },
+     {
+      "w": "al final no",
+      "ex": "Pensábamos ir en tren, pero al final no."
+     },
+     {
+      "w": "tomar notas",
+      "ex": "Toma notas breves mientras escuchas."
+     }
+    ],
+    "gram": "Cambio de planes en audios: pensaba / íbamos a + infinitivo, pero al final + indefinido (al final fuimos en coche)."
+   }
+  },
+  {
+   "d": 357,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Exam skills: writing",
+     "g": "Plan, write and check a B2 text in a set time.",
+     "p": [
+      "Plan for 5 minutes: read the task, list ideas and choose formal or informal register.",
+      "Write with structure: introduction, two or three paragraphs with connectors, conclusion.",
+      "Keep 5 minutes to check agreement, accents, verb tenses and the word count."
+     ],
+     "q": "Which part of writing in Spanish takes you the most time?",
+     "c": "Write a 150-word opinion text on social networks in 30 minutes, then check it with my checklist."
+    },
+    "de": {
+     "t": "Prüfungstraining: Schreiben",
+     "g": "Plane, schreibe und prüfe einen B2-Text in vorgegebener Zeit.",
+     "p": [
+      "5 Minuten planen: Aufgabe lesen, Ideen sammeln, formelles oder informelles Register wählen.",
+      "Strukturiert schreiben: Einleitung, zwei bis drei Absätze mit Konnektoren, Schluss.",
+      "5 Minuten zum Prüfen: Kongruenz, Akzente, Zeitformen und Wortzahl."
+     ],
+     "q": "Welcher Teil des Schreibens auf Spanisch kostet dich am meisten Zeit?",
+     "c": "Schreib in 30 Minuten einen Meinungstext von 150 Wörtern über soziale Netzwerke und prüf ihn mit meiner Checkliste."
+    },
+    "es": {
+     "t": "Técnicas de examen: expresión escrita",
+     "g": "Planifica, escribe y revisa un texto B2 en un tiempo limitado.",
+     "p": [
+      "Planifica 5 minutos: lee la tarea, anota ideas y elige registro formal o informal.",
+      "Escribe con estructura: introducción, dos o tres párrafos con conectores y conclusión.",
+      "Reserva 5 minutos para revisar concordancia, tildes, tiempos verbales y número de palabras."
+     ],
+     "q": "¿Qué parte de escribir en español te lleva más tiempo?",
+     "c": "Escribe en 30 minutos un texto de opinión de 150 palabras sobre las redes sociales y revísalo con mi lista."
+    },
+    "fr": {
+     "t": "Technique d'examen : l'expression écrite",
+     "g": "Planifie, écris et relis un texte B2 en temps limité.",
+     "p": [
+      "Planifie 5 minutes : lis la consigne, note tes idées, choisis le registre formel ou familier.",
+      "Écris avec structure : introduction, deux ou trois paragraphes avec connecteurs, conclusion.",
+      "Garde 5 minutes pour vérifier accords, accents, temps verbaux et nombre de mots."
+     ],
+     "q": "Quelle partie de l'écrit en espagnol te prend le plus de temps ?",
+     "c": "Écris en 30 minutes un texte d'opinion de 150 mots sur les réseaux sociaux, puis relis-le avec ma liste."
+    },
+    "it": {
+     "t": "Tecniche d'esame: produzione scritta",
+     "g": "Pianifica, scrivi e rileggi un testo B2 in un tempo stabilito.",
+     "p": [
+      "Pianifica 5 minuti: leggi la consegna, annota le idee e scegli il registro formale o informale.",
+      "Scrivi con struttura: introduzione, due o tre paragrafi con connettivi, conclusione.",
+      "Tieni 5 minuti per controllare concordanze, accenti, tempi verbali e numero di parole."
+     ],
+     "q": "Quale parte dello scrivere in spagnolo ti richiede più tempo?",
+     "c": "Scrivi in 30 minuti un testo d'opinione di 150 parole sui social, poi controllalo con la mia lista."
+    },
+    "pt": {
+     "t": "Técnicas de exame: expressão escrita",
+     "g": "Planeia, escreve e revê um texto B2 num tempo limitado.",
+     "p": [
+      "Planeia 5 minutos: lê a tarefa, aponta ideias e escolhe registo formal ou informal.",
+      "Escreve com estrutura: introdução, dois ou três parágrafos com conectores e conclusão.",
+      "Guarda 5 minutos para rever concordância, acentos, tempos verbais e número de palavras."
+     ],
+     "q": "Que parte da escrita em espanhol te leva mais tempo?",
+     "c": "Escreve em 30 minutos um texto de opinião de 150 palavras sobre redes sociais e revê-o com a minha lista."
+    },
+    "pt_BR": {
+     "t": "Técnicas de prova: produção escrita",
+     "g": "Planeje, escreva e revise um texto B2 num tempo limitado.",
+     "p": [
+      "Planeje 5 minutos: leia a tarefa, anote ideias e escolha registro formal ou informal.",
+      "Escreva com estrutura: introdução, dois ou três parágrafos com conectores e conclusão.",
+      "Reserve 5 minutos para revisar concordância, acentos, tempos verbais e número de palavras."
+     ],
+     "q": "Que parte da escrita em espanhol leva mais tempo para você?",
+     "c": "Escreva em 30 minutos um texto de opinião de 150 palavras sobre redes sociais e revise com a minha lista."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el borrador",
+      "ex": "Haz un borrador rápido antes de escribir."
+     },
+     {
+      "w": "el párrafo",
+      "ex": "Cada párrafo desarrolla una idea."
+     },
+     {
+      "w": "la concordancia",
+      "ex": "Revisa la concordancia entre sujeto y verbo."
+     },
+     {
+      "w": "la tilde",
+      "ex": "No olvides la tilde en también y después."
+     },
+     {
+      "w": "el número de palabras",
+      "ex": "Respeta el número de palabras que pide la tarea."
+     },
+     {
+      "w": "revisar",
+      "ex": "Reserva cinco minutos para revisar el texto."
+     }
+    ],
+    "gram": "Revisión B2: concordancia sujeto-verbo y sustantivo-adjetivo, tildes en agudas (también) y contraste indefinido / imperfecto."
+   }
+  },
+  {
+   "d": 358,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Exam skills: speaking test",
+     "g": "Shine in a B2 speaking test: monologue, conversation and debate.",
+     "p": [
+      "Monologue: structure your talk with para empezar, por un lado, por otro, en conclusión.",
+      "Conversation: react naturally: ¡Qué interesante!, ¿Y usted qué opina?, Estoy de acuerdo en parte.",
+      "If you get stuck, paraphrase: no recuerdo la palabra, es una cosa que sirve para..."
+     ],
+     "q": "What makes you nervous in a speaking test, and what helps you?",
+     "c": "Practise a two-minute monologue on your hobbies with me, then answer one follow-up question."
+    },
+    "de": {
+     "t": "Prüfungstraining: mündliche Prüfung",
+     "g": "Glänze in einer mündlichen B2-Prüfung: Monolog, Gespräch und Debatte.",
+     "p": [
+      "Monolog: gliedere mit para empezar, por un lado, por otro, en conclusión.",
+      "Gespräch: natürlich reagieren: ¡Qué interesante!, ¿Y usted qué opina?, Estoy de acuerdo en parte.",
+      "Wenn du hängst, umschreibe: no recuerdo la palabra, es una cosa que sirve para..."
+     ],
+     "q": "Was macht dich in einer mündlichen Prüfung nervös, und was hilft dir?",
+     "c": "Übe mit mir einen Zwei-Minuten-Monolog über deine Hobbys und beantworte dann eine Nachfrage."
+    },
+    "es": {
+     "t": "Técnicas de examen: prueba oral",
+     "g": "Brilla en una prueba oral B2: monólogo, conversación y debate.",
+     "p": [
+      "Monólogo: estructura con para empezar, por un lado, por otro, en conclusión.",
+      "Conversación: reacciona con naturalidad: ¡Qué interesante!, ¿Y usted qué opina?, Estoy de acuerdo en parte.",
+      "Si te bloqueas, parafrasea: no recuerdo la palabra, es una cosa que sirve para..."
+     ],
+     "q": "¿Qué te pone nervioso en un examen oral y qué te ayuda?",
+     "c": "Practica conmigo un monólogo de dos minutos sobre tus aficiones y responde a una pregunta posterior."
+    },
+    "fr": {
+     "t": "Technique d'examen : l'épreuve orale",
+     "g": "Brille à l'oral B2 : monologue, conversation et débat.",
+     "p": [
+      "Monologue : structure avec para empezar, por un lado, por otro, en conclusión.",
+      "Conversation : réagis naturellement : ¡Qué interesante!, ¿Y usted qué opina?, Estoy de acuerdo en parte.",
+      "Si tu bloques, paraphrase : no recuerdo la palabra, es una cosa que sirve para..."
+     ],
+     "q": "Qu'est-ce qui te rend nerveux à l'oral, et qu'est-ce qui t'aide ?",
+     "c": "Entraîne-toi avec moi à un monologue de deux minutes sur tes loisirs, puis réponds à une question."
+    },
+    "it": {
+     "t": "Tecniche d'esame: prova orale",
+     "g": "Brilla in una prova orale B2: monologo, conversazione e dibattito.",
+     "p": [
+      "Monologo: struttura con para empezar, por un lado, por otro, en conclusión.",
+      "Conversazione: reagisci con naturalezza: ¡Qué interesante!, ¿Y usted qué opina?, Estoy de acuerdo en parte.",
+      "Se ti blocchi, parafrasa: no recuerdo la palabra, es una cosa que sirve para..."
+     ],
+     "q": "Cosa ti rende nervoso in un esame orale, e cosa ti aiuta?",
+     "c": "Fai con me un monologo di due minuti sui tuoi hobby, poi rispondi a una domanda successiva."
+    },
+    "pt": {
+     "t": "Técnicas de exame: prova oral",
+     "g": "Brilha numa prova oral B2: monólogo, conversa e debate.",
+     "p": [
+      "Monólogo: estrutura com para empezar, por un lado, por otro, en conclusión.",
+      "Conversa: reage com naturalidade: ¡Qué interesante!, ¿Y usted qué opina?, Estoy de acuerdo en parte.",
+      "Se bloqueares, parafraseia: no recuerdo la palabra, es una cosa que sirve para..."
+     ],
+     "q": "O que te deixa nervoso numa prova oral e o que te ajuda?",
+     "c": "Pratica comigo um monólogo de dois minutos sobre os teus passatempos e responde a uma pergunta extra."
+    },
+    "pt_BR": {
+     "t": "Técnicas de prova: prova oral",
+     "g": "Brilhe numa prova oral B2: monólogo, conversa e debate.",
+     "p": [
+      "Monólogo: estruture com para empezar, por un lado, por otro, en conclusión.",
+      "Conversa: reaja com naturalidade: ¡Qué interesante!, ¿Y usted qué opina?, Estoy de acuerdo en parte.",
+      "Se travar, parafraseie: no recuerdo la palabra, es una cosa que sirve para..."
+     ],
+     "q": "O que deixa você nervoso numa prova oral e o que ajuda?",
+     "c": "Pratique comigo um monólogo de dois minutos sobre seus hobbies e responda a uma pergunta extra."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el monólogo",
+      "ex": "El monólogo dura unos tres minutos."
+     },
+     {
+      "w": "por un lado... por otro",
+      "ex": "Por un lado es barato; por otro, es lento."
+     },
+     {
+      "w": "¿y usted qué opina?",
+      "ex": "Yo prefiero el campo. ¿Y usted qué opina?"
+     },
+     {
+      "w": "estoy de acuerdo en parte",
+      "ex": "Estoy de acuerdo en parte con esa idea."
+     },
+     {
+      "w": "es una cosa que sirve para",
+      "ex": "Es una cosa que sirve para abrir botellas."
+     },
+     {
+      "w": "no recuerdo la palabra",
+      "ex": "No recuerdo la palabra, pero es como una caja."
+     }
+    ],
+    "gram": "Estrategias orales: estructuradores (por un lado, por otro) y circunloquio con relativo: es una cosa / un lugar donde / una persona que."
+   }
+  },
+  {
+   "d": 359,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Mock B2: reading and writing",
+     "g": "Practise exam-style reading questions and a 150-word text.",
+     "p": [
+      "Reading: read the questions first, then find the evidence in the text for each answer.",
+      "Writing: plan, write 150 words with clear paragraphs and check in the last minutes.",
+      "Use the B2 toolkit: connectors, subjunctive after opinions, formal register when needed."
+     ],
+     "q": "Which part do you expect to be easier today: reading or writing?",
+     "c": "Do a mini mock: answer three questions on a short text I give you, then write 150 words."
+    },
+    "de": {
+     "t": "Probeprüfung B2: Lesen und Schreiben",
+     "g": "Übe prüfungsnahe Leseaufgaben und einen Text mit 150 Wörtern.",
+     "p": [
+      "Lesen: zuerst die Fragen lesen, dann für jede Antwort den Beleg im Text finden.",
+      "Schreiben: planen, 150 Wörter in klaren Absätzen schreiben und in den letzten Minuten prüfen.",
+      "Nutze dein B2-Werkzeug: Konnektoren, Subjuntivo nach Meinungen, formelles Register bei Bedarf."
+     ],
+     "q": "Welcher Teil wird dir heute leichter fallen: Lesen oder Schreiben?",
+     "c": "Mach eine Mini-Probe: beantworte drei Fragen zu einem kurzen Text von mir und schreib 150 Wörter."
+    },
+    "es": {
+     "t": "Simulacro B2: lectura y escritura",
+     "g": "Practica preguntas de lectura tipo examen y un texto de 150 palabras.",
+     "p": [
+      "Lectura: lee primero las preguntas y busca en el texto la prueba de cada respuesta.",
+      "Escritura: planifica, escribe 150 palabras en párrafos claros y revisa al final.",
+      "Usa tus recursos B2: conectores, subjuntivo tras opiniones negativas y registro formal si hace falta."
+     ],
+     "q": "¿Qué parte crees que te resultará más fácil hoy: la lectura o la escritura?",
+     "c": "Haz un minisimulacro: responde tres preguntas sobre un texto breve que te daré y escribe 150 palabras."
+    },
+    "fr": {
+     "t": "Examen blanc B2 : lecture et écrit",
+     "g": "Entraîne-toi sur des questions de lecture type examen et un texte de 150 mots.",
+     "p": [
+      "Lecture : lis d'abord les questions, puis trouve dans le texte la preuve de chaque réponse.",
+      "Écrit : planifie, écris 150 mots en paragraphes clairs et relis à la fin.",
+      "Utilise ta boîte à outils B2 : connecteurs, subjonctif après les opinions, registre formel si besoin."
+     ],
+     "q": "Quelle partie te semblera la plus facile aujourd'hui : la lecture ou l'écrit ?",
+     "c": "Fais un mini-examen : réponds à trois questions sur un court texte que je te donne, puis écris 150 mots."
+    },
+    "it": {
+     "t": "Simulazione B2: lettura e scrittura",
+     "g": "Esercitati con domande di lettura tipo esame e un testo di 150 parole.",
+     "p": [
+      "Lettura: leggi prima le domande, poi trova nel testo la prova di ogni risposta.",
+      "Scrittura: pianifica, scrivi 150 parole in paragrafi chiari e rileggi alla fine.",
+      "Usa i tuoi strumenti B2: connettivi, congiuntivo dopo le opinioni, registro formale se serve."
+     ],
+     "q": "Quale parte pensi sarà più facile oggi: la lettura o la scrittura?",
+     "c": "Fai una mini simulazione: rispondi a tre domande su un breve testo che ti do, poi scrivi 150 parole."
+    },
+    "pt": {
+     "t": "Simulado B2: leitura e escrita",
+     "g": "Pratica perguntas de leitura tipo exame e um texto de 150 palavras.",
+     "p": [
+      "Leitura: lê primeiro as perguntas e procura no texto a prova de cada resposta.",
+      "Escrita: planeia, escreve 150 palavras em parágrafos claros e revê no fim.",
+      "Usa os teus recursos B2: conectores, conjuntivo após opiniões, registo formal quando for preciso."
+     ],
+     "q": "Que parte achas que vai ser mais fácil hoje: a leitura ou a escrita?",
+     "c": "Faz um minissimulado: responde a três perguntas sobre um texto curto que te dou e escreve 150 palavras."
+    },
+    "pt_BR": {
+     "t": "Simulado B2: leitura e escrita",
+     "g": "Pratique perguntas de leitura tipo prova e um texto de 150 palavras.",
+     "p": [
+      "Leitura: leia primeiro as perguntas e procure no texto a prova de cada resposta.",
+      "Escrita: planeje, escreva 150 palavras em parágrafos claros e revise no final.",
+      "Use seus recursos B2: conectores, subjuntivo após opiniões, registro formal quando precisar."
+     ],
+     "q": "Que parte você acha que vai ser mais fácil hoje: a leitura ou a escrita?",
+     "c": "Faça um minissimulado: responda a três perguntas sobre um texto curto que eu der e escreva 150 palavras."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el simulacro",
+      "ex": "Hoy hacemos un simulacro de examen."
+     },
+     {
+      "w": "según el texto",
+      "ex": "Según el texto, ¿por qué se mudó la autora?"
+     },
+     {
+      "w": "verdadero o falso",
+      "ex": "Indica si la frase es verdadera o falsa."
+     },
+     {
+      "w": "justificar",
+      "ex": "Justifica tu respuesta con una frase del texto."
+     },
+     {
+      "w": "la tarea",
+      "ex": "La tarea pide un texto de 150 palabras."
+     },
+     {
+      "w": "en mi opinión",
+      "ex": "En mi opinión, las redes acercan a las personas."
+     }
+    ],
+    "gram": "Opinión: creo / pienso que + indicativo; no creo que + subjuntivo; es importante que + subjuntivo. Preguntas: según el texto..."
+   }
+  },
+  {
+   "d": 360,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Mock B2: listening and speaking",
+     "g": "Practise exam-style listening and a structured oral answer.",
+     "p": [
+      "Listening: predict, note key words and watch out for distractors like al final no.",
+      "Speaking: give a structured answer: opinion, two reasons, an example, a conclusion.",
+      "Interact: ask for clarification politely: ¿Podría repetir la pregunta, por favor?"
+     ],
+     "q": "How confident do you feel about speaking Spanish for two minutes now?",
+     "c": "Mini mock: listen to my short message, answer two questions, then give a two-minute opinion."
+    },
+    "de": {
+     "t": "Probeprüfung B2: Hören und Sprechen",
+     "g": "Übe prüfungsnahes Hören und eine strukturierte mündliche Antwort.",
+     "p": [
+      "Hören: vorhersagen, Schlüsselwörter notieren, auf Ablenker wie al final no achten.",
+      "Sprechen: strukturiert antworten: Meinung, zwei Gründe, ein Beispiel, ein Schluss.",
+      "Interagieren: höflich nachfragen: ¿Podría repetir la pregunta, por favor?"
+     ],
+     "q": "Wie sicher fühlst du dich jetzt, zwei Minuten Spanisch zu sprechen?",
+     "c": "Mini-Probe: hör meine kurze Nachricht, beantworte zwei Fragen und sag zwei Minuten deine Meinung."
+    },
+    "es": {
+     "t": "Simulacro B2: audición y expresión oral",
+     "g": "Practica una audición tipo examen y una respuesta oral estructurada.",
+     "p": [
+      "Audición: anticipa, anota palabras clave y cuidado con distractores como al final no.",
+      "Expresión oral: responde con estructura: opinión, dos razones, un ejemplo y una conclusión.",
+      "Interactúa: pide aclaraciones con cortesía: ¿Podría repetir la pregunta, por favor?"
+     ],
+     "q": "¿Qué seguridad sientes ahora al hablar español durante dos minutos?",
+     "c": "Minisimulacro: escucha mi mensaje breve, responde dos preguntas y da tu opinión durante dos minutos."
+    },
+    "fr": {
+     "t": "Examen blanc B2 : écoute et oral",
+     "g": "Entraîne-toi à une écoute type examen et à une réponse orale structurée.",
+     "p": [
+      "Écoute : anticipe, note les mots clés et méfie-toi des pièges comme al final no.",
+      "Oral : réponds avec structure : opinion, deux raisons, un exemple, une conclusion.",
+      "Interagis : demande poliment une précision : ¿Podría repetir la pregunta, por favor?"
+     ],
+     "q": "À quel point te sens-tu capable de parler espagnol deux minutes maintenant ?",
+     "c": "Mini-examen : écoute mon court message, réponds à deux questions, puis donne ton avis deux minutes."
+    },
+    "it": {
+     "t": "Simulazione B2: ascolto e parlato",
+     "g": "Esercitati con un ascolto tipo esame e una risposta orale strutturata.",
+     "p": [
+      "Ascolto: anticipa, annota parole chiave e attenzione ai distrattori come al final no.",
+      "Parlato: rispondi con struttura: opinione, due motivi, un esempio, una conclusione.",
+      "Interagisci: chiedi chiarimenti con garbo: ¿Podría repetir la pregunta, por favor?"
+     ],
+     "q": "Quanto ti senti sicuro ora di parlare spagnolo per due minuti?",
+     "c": "Mini simulazione: ascolta il mio breve messaggio, rispondi a due domande e dai la tua opinione per due minuti."
+    },
+    "pt": {
+     "t": "Simulado B2: audição e oralidade",
+     "g": "Pratica uma audição tipo exame e uma resposta oral estruturada.",
+     "p": [
+      "Audição: antecipa, aponta palavras-chave e cuidado com distratores como al final no.",
+      "Oralidade: responde com estrutura: opinião, duas razões, um exemplo e uma conclusão.",
+      "Interage: pede esclarecimentos com cortesia: ¿Podría repetir la pregunta, por favor?"
+     ],
+     "q": "Que confiança sentes agora para falar espanhol durante dois minutos?",
+     "c": "Minissimulado: ouve a minha mensagem curta, responde a duas perguntas e dá a tua opinião durante dois minutos."
+    },
+    "pt_BR": {
+     "t": "Simulado B2: compreensão oral e fala",
+     "g": "Pratique uma audição tipo prova e uma resposta oral estruturada.",
+     "p": [
+      "Audição: antecipe, anote palavras-chave e cuidado com distratores como al final no.",
+      "Fala: responda com estrutura: opinião, duas razões, um exemplo e uma conclusão.",
+      "Interaja: peça esclarecimentos com educação: ¿Podría repetir la pregunta, por favor?"
+     ],
+     "q": "Quanta confiança você sente agora para falar espanhol por dois minutos?",
+     "c": "Minissimulado: ouça minha mensagem curta, responda a duas perguntas e dê sua opinião por dois minutos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "¿podría repetir la pregunta?",
+      "ex": "Perdone, ¿podría repetir la pregunta, por favor?"
+     },
+     {
+      "w": "la razón principal",
+      "ex": "La razón principal es que ahorro tiempo."
+     },
+     {
+      "w": "pongamos por caso",
+      "ex": "Pongamos por caso que vives lejos del trabajo."
+     },
+     {
+      "w": "a mi modo de ver",
+      "ex": "A mi modo de ver, el teletrabajo tiene más ventajas."
+     },
+     {
+      "w": "en conclusión",
+      "ex": "En conclusión, prefiero un modelo mixto."
+     },
+     {
+      "w": "el examinador",
+      "ex": "El examinador me hizo dos preguntas más."
+     }
+    ],
+    "gram": "Respuesta oral B2: opinión (a mi modo de ver) + razones (porque, ya que) + ejemplo (pongamos por caso que) + conclusión."
+   }
+  }
+ ]
+}

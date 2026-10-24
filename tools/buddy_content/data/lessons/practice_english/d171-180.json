@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 171,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Passive voice: present simple",
+     "g": "Use the present passive to focus on the action, not the person.",
+     "p": [
+      "Form: am/is/are + past participle. English is spoken here. Coffee is grown in Brazil.",
+      "Use it when the doer is unknown, obvious or not important: The office is cleaned every night.",
+      "Add by for the doer only if it matters: This bread is made by a local baker."
+     ],
+     "q": "What is your country famous for? Try: ... is made in, ... is grown in, ... is spoken in.",
+     "c": "Write five passive sentences about your country or city: food, languages, products and places."
+    },
+    "de": {
+     "t": "Passiv: present simple",
+     "g": "Du nutzt das Passiv im Präsens, um die Handlung statt der Person zu betonen.",
+     "p": [
+      "Form: am/is/are + Partizip Perfekt. English is spoken here. Coffee is grown in Brazil.",
+      "Wenn der Täter unbekannt, klar oder unwichtig ist: The office is cleaned every night.",
+      "By für den Täter nur, wenn er wichtig ist: This bread is made by a local baker."
+     ],
+     "q": "Wofür ist dein Land bekannt? Versuch: ... is made in, ... is grown in, ... is spoken in.",
+     "c": "Schreib fünf Passivsätze über dein Land oder deine Stadt: Essen, Sprachen, Produkte, Orte."
+    },
+    "es": {
+     "t": "Voz pasiva: present simple",
+     "g": "Usa la pasiva en presente para centrarte en la acción, no en la persona.",
+     "p": [
+      "Forma: am/is/are + participio. English is spoken here. Coffee is grown in Brazil.",
+      "Úsala si quien lo hace es desconocido, obvio o poco importante: The office is cleaned every night.",
+      "Añade by solo si importa quién lo hace: This bread is made by a local baker."
+     ],
+     "q": "¿Por qué es famoso tu país? Prueba: ... is made in, ... is grown in, ... is spoken in.",
+     "c": "Escribe cinco frases pasivas sobre tu país o ciudad: comida, idiomas, productos y lugares."
+    },
+    "fr": {
+     "t": "Le passif : present simple",
+     "g": "Utiliser le passif au présent pour mettre l'action en avant, pas la personne.",
+     "p": [
+      "Forme : am/is/are + participe passé. English is spoken here. Coffee is grown in Brazil.",
+      "Quand l'auteur est inconnu, évident ou peu important : The office is cleaned every night.",
+      "Ajoute by seulement si l'auteur compte : This bread is made by a local baker."
+     ],
+     "q": "Pour quoi ton pays est-il connu ? Essaie : ... is made in, ... is grown in, ... is spoken in.",
+     "c": "Écris cinq phrases au passif sur ton pays ou ta ville : cuisine, langues, produits et lieux."
+    },
+    "it": {
+     "t": "Il passivo: present simple",
+     "g": "Usa il passivo al presente per mettere al centro l'azione, non la persona.",
+     "p": [
+      "Forma: am/is/are + participio passato. English is spoken here. Coffee is grown in Brazil.",
+      "Quando chi agisce è sconosciuto, ovvio o poco importante: The office is cleaned every night.",
+      "Aggiungi by solo se conta chi agisce: This bread is made by a local baker."
+     ],
+     "q": "Per cosa è famoso il tuo paese? Prova: ... is made in, ... is grown in, ... is spoken in.",
+     "c": "Scrivi cinque frasi passive sul tuo paese o città: cibo, lingue, prodotti e luoghi."
+    },
+    "pt": {
+     "t": "Voz passiva: present simple",
+     "g": "Usa a passiva no presente para dar destaque à ação, não à pessoa.",
+     "p": [
+      "Forma: am/is/are + particípio passado. English is spoken here. Coffee is grown in Brazil.",
+      "Usa-a quando quem faz é desconhecido, óbvio ou pouco importante: The office is cleaned every night.",
+      "Junta by só se quem faz importar: This bread is made by a local baker."
+     ],
+     "q": "Pelo que é famoso o teu país? Experimenta: ... is made in, ... is grown in, ... is spoken in.",
+     "c": "Escreve cinco frases na passiva sobre o teu país ou cidade: comida, línguas, produtos e lugares."
+    },
+    "pt_BR": {
+     "t": "Voz passiva: present simple",
+     "g": "Use a passiva no presente para destacar a ação, não a pessoa.",
+     "p": [
+      "Forma: am/is/are + particípio passado. English is spoken here. Coffee is grown in Brazil.",
+      "Use quando quem faz é desconhecido, óbvio ou pouco importante: The office is cleaned every night.",
+      "Acrescente by só se quem faz for importante: This bread is made by a local baker."
+     ],
+     "q": "Seu país é famoso por quê? Tente: ... is made in, ... is grown in, ... is spoken in.",
+     "c": "Escreva cinco frases na passiva sobre seu país ou cidade: comida, idiomas, produtos e lugares."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "is spoken",
+      "ex": "Portuguese is spoken in Brazil and Portugal."
+     },
+     {
+      "w": "is made",
+      "ex": "Cheese is made from milk."
+     },
+     {
+      "w": "are grown",
+      "ex": "Oranges are grown in the south of Spain."
+     },
+     {
+      "w": "is cleaned",
+      "ex": "The beach is cleaned every morning."
+     },
+     {
+      "w": "are sold",
+      "ex": "Tickets are sold at the entrance."
+     },
+     {
+      "w": "is used",
+      "ex": "This room is used for meetings."
+     }
+    ],
+    "gram": "Present passive: am/is/are + past participle (is made, are sold). Add by + person only when the doer is important."
+   }
+  },
+  {
+   "d": 172,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Passive voice: past simple",
+     "g": "Use the past passive to talk about history and facts.",
+     "p": [
+      "Form: was/were + past participle. The bridge was built in 1932. The letters were written by hand.",
+      "Great for history: The castle was destroyed in a storm. Paper was invented in China.",
+      "Questions and negatives: When was it built? It wasn't finished until 1990."
+     ],
+     "q": "Do you know an old building in your town? When was it built, and what was it used for?",
+     "c": "Write five past passive sentences about famous places, books or events you know."
+    },
+    "de": {
+     "t": "Passiv: past simple",
+     "g": "Du nutzt das Passiv in der Vergangenheit für Geschichte und Fakten.",
+     "p": [
+      "Form: was/were + Partizip Perfekt. The bridge was built in 1932. The letters were written by hand.",
+      "Ideal für Geschichte: The castle was destroyed in a storm. Paper was invented in China.",
+      "Fragen und Verneinung: When was it built? It wasn't finished until 1990."
+     ],
+     "q": "Kennst du ein altes Gebäude in deiner Stadt? Wann wurde es gebaut, und wofür wurde es genutzt?",
+     "c": "Schreib fünf Passivsätze in der Vergangenheit über berühmte Orte, Bücher oder Ereignisse."
+    },
+    "es": {
+     "t": "Voz pasiva: past simple",
+     "g": "Usa la pasiva en pasado para hablar de historia y de hechos.",
+     "p": [
+      "Forma: was/were + participio. The bridge was built in 1932. The letters were written by hand.",
+      "Ideal para la historia: The castle was destroyed in a storm. Paper was invented in China.",
+      "Preguntas y negativas: When was it built? It wasn't finished until 1990."
+     ],
+     "q": "¿Conoces un edificio antiguo de tu ciudad? ¿Cuándo se construyó y para qué se usaba?",
+     "c": "Escribe cinco frases pasivas en pasado sobre lugares, libros o hechos famosos."
+    },
+    "fr": {
+     "t": "Le passif : past simple",
+     "g": "Utiliser le passif au passé pour parler d'histoire et de faits.",
+     "p": [
+      "Forme : was/were + participe passé. The bridge was built in 1932. The letters were written by hand.",
+      "Parfait pour l'histoire : The castle was destroyed in a storm. Paper was invented in China.",
+      "Questions et négations : When was it built? It wasn't finished until 1990."
+     ],
+     "q": "Connais-tu un vieux bâtiment dans ta ville ? Quand a-t-il été construit, et à quoi servait-il ?",
+     "c": "Écris cinq phrases au passif passé sur des lieux, des livres ou des événements célèbres."
+    },
+    "it": {
+     "t": "Il passivo: past simple",
+     "g": "Usa il passivo al passato per parlare di storia e di fatti.",
+     "p": [
+      "Forma: was/were + participio passato. The bridge was built in 1932. The letters were written by hand.",
+      "Perfetto per la storia: The castle was destroyed in a storm. Paper was invented in China.",
+      "Domande e negative: When was it built? It wasn't finished until 1990."
+     ],
+     "q": "Conosci un edificio antico nella tua città? Quando è stato costruito, e a cosa serviva?",
+     "c": "Scrivi cinque frasi passive al passato su luoghi, libri o eventi famosi."
+    },
+    "pt": {
+     "t": "Voz passiva: past simple",
+     "g": "Usa a passiva no passado para falar de história e de factos.",
+     "p": [
+      "Forma: was/were + particípio passado. The bridge was built in 1932. The letters were written by hand.",
+      "Ótima para a história: The castle was destroyed in a storm. Paper was invented in China.",
+      "Perguntas e negativas: When was it built? It wasn't finished until 1990."
+     ],
+     "q": "Conheces um edifício antigo na tua cidade? Quando foi construído, e para que era usado?",
+     "c": "Escreve cinco frases na passiva do passado sobre lugares, livros ou acontecimentos famosos."
+    },
+    "pt_BR": {
+     "t": "Voz passiva: past simple",
+     "g": "Use a passiva no passado para falar de história e de fatos.",
+     "p": [
+      "Forma: was/were + particípio passado. The bridge was built in 1932. The letters were written by hand.",
+      "Ótima para a história: The castle was destroyed in a storm. Paper was invented in China.",
+      "Perguntas e negativas: When was it built? It wasn't finished until 1990."
+     ],
+     "q": "Você conhece um prédio antigo na sua cidade? Quando foi construído, e para que era usado?",
+     "c": "Escreva cinco frases na passiva do passado sobre lugares, livros ou acontecimentos famosos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "was built",
+      "ex": "The Eiffel Tower was built for the 1889 World's Fair."
+     },
+     {
+      "w": "was written",
+      "ex": "Romeo and Juliet was written by Shakespeare."
+     },
+     {
+      "w": "were invented",
+      "ex": "The first cameras were invented in the 1800s."
+     },
+     {
+      "w": "was painted",
+      "ex": "The Mona Lisa was painted by Leonardo da Vinci."
+     },
+     {
+      "w": "was discovered",
+      "ex": "Penicillin was discovered by Alexander Fleming."
+     },
+     {
+      "w": "when was it",
+      "ex": "When was this church built?"
+     }
+    ],
+    "gram": "Past passive: was/were + past participle. Was for singular, were for plural: The house was sold. The windows were broken."
+   }
+  },
+  {
+   "d": 173,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Inventions and who made them",
+     "g": "Talk about famous inventions with the passive and by.",
+     "p": [
+      "Pattern: The telephone was invented by Alexander Graham Bell. The Web was created by Tim Berners-Lee.",
+      "Add time and place: Paper was invented in China. The first car was built in Germany in the 1880s.",
+      "Say why it matters: It changed the way we communicate. Life is easier because of it."
+     ],
+     "q": "Which invention do you think is the most important in history, and why?",
+     "c": "Choose three inventions and write who invented them or where, plus one line on why they matter."
+    },
+    "de": {
+     "t": "Erfindungen und ihre Erfinder",
+     "g": "Du sprichst mit Passiv und by über berühmte Erfindungen.",
+     "p": [
+      "Muster: The telephone was invented by Alexander Graham Bell. The Web was created by Tim Berners-Lee.",
+      "Zeit und Ort: Paper was invented in China. The first car was built in Germany in the 1880s.",
+      "Warum es wichtig ist: It changed the way we communicate. Life is easier because of it."
+     ],
+     "q": "Welche Erfindung ist für dich die wichtigste der Geschichte, und warum?",
+     "c": "Wähl drei Erfindungen und schreib, wer sie erfunden hat oder wo, plus eine Zeile, warum sie wichtig sind."
+    },
+    "es": {
+     "t": "Inventos y sus inventores",
+     "g": "Habla de inventos famosos con la pasiva y by.",
+     "p": [
+      "Estructura: The telephone was invented by Alexander Graham Bell. The Web was created by Tim Berners-Lee.",
+      "Añade tiempo y lugar: Paper was invented in China. The first car was built in Germany in the 1880s.",
+      "Di por qué importa: It changed the way we communicate. Life is easier because of it."
+     ],
+     "q": "¿Qué invento crees que es el más importante de la historia, y por qué?",
+     "c": "Elige tres inventos y escribe quién los inventó o dónde, más una línea sobre por qué importan."
+    },
+    "fr": {
+     "t": "Les inventions et leurs inventeurs",
+     "g": "Parler d'inventions célèbres avec le passif et by.",
+     "p": [
+      "Structure : The telephone was invented by Alexander Graham Bell. The Web was created by Tim Berners-Lee.",
+      "Ajoute date et lieu : Paper was invented in China. The first car was built in Germany in the 1880s.",
+      "Dis pourquoi c'est important : It changed the way we communicate. Life is easier because of it."
+     ],
+     "q": "Selon toi, quelle est l'invention la plus importante de l'histoire, et pourquoi ?",
+     "c": "Choisis trois inventions et écris qui les a inventées ou où, plus une ligne sur leur importance."
+    },
+    "it": {
+     "t": "Invenzioni e inventori",
+     "g": "Parla di invenzioni famose con il passivo e by.",
+     "p": [
+      "Struttura: The telephone was invented by Alexander Graham Bell. The Web was created by Tim Berners-Lee.",
+      "Aggiungi tempo e luogo: Paper was invented in China. The first car was built in Germany in the 1880s.",
+      "Di' perché è importante: It changed the way we communicate. Life is easier because of it."
+     ],
+     "q": "Secondo te qual è l'invenzione più importante della storia, e perché?",
+     "c": "Scegli tre invenzioni e scrivi chi le ha inventate o dove, più una riga sul perché contano."
+    },
+    "pt": {
+     "t": "Invenções e quem as criou",
+     "g": "Fala de invenções famosas com a passiva e by.",
+     "p": [
+      "Estrutura: The telephone was invented by Alexander Graham Bell. The Web was created by Tim Berners-Lee.",
+      "Junta tempo e lugar: Paper was invented in China. The first car was built in Germany in the 1880s.",
+      "Diz porque é importante: It changed the way we communicate. Life is easier because of it."
+     ],
+     "q": "Qual achas que é a invenção mais importante da história, e porquê?",
+     "c": "Escolhe três invenções e escreve quem as inventou ou onde, mais uma linha sobre a sua importância."
+    },
+    "pt_BR": {
+     "t": "Invenções e quem as criou",
+     "g": "Fale de invenções famosas com a passiva e by.",
+     "p": [
+      "Estrutura: The telephone was invented by Alexander Graham Bell. The Web was created by Tim Berners-Lee.",
+      "Acrescente tempo e lugar: Paper was invented in China. The first car was built in Germany in the 1880s.",
+      "Diga por que importa: It changed the way we communicate. Life is easier because of it."
+     ],
+     "q": "Qual você acha que é a invenção mais importante da história, e por quê?",
+     "c": "Escolha três invenções e escreva quem as inventou ou onde, mais uma linha sobre por que importam."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "invent",
+      "ex": "Who invented the telephone?"
+     },
+     {
+      "w": "was invented by",
+      "ex": "The telephone was invented by Alexander Graham Bell."
+     },
+     {
+      "w": "was created by",
+      "ex": "The World Wide Web was created by Tim Berners-Lee."
+     },
+     {
+      "w": "inventor",
+      "ex": "Thomas Edison was a famous American inventor."
+     },
+     {
+      "w": "discover",
+      "ex": "Marie Curie discovered two new elements."
+     },
+     {
+      "w": "change the way",
+      "ex": "The internet changed the way we work."
+     }
+    ],
+    "gram": "Passive + by names the inventor: The radio was invented by... Use invent for new things and discover for things that already existed."
+   }
+  },
+  {
+   "d": 174,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Large numbers and fractions",
+     "g": "Read large numbers, fractions and percentages aloud.",
+     "p": [
+      "Big numbers: 250 = two hundred and fifty, 3,400 = three thousand four hundred, 2,000,000 = two million.",
+      "No -s after a number: two hundred people, five thousand euros. But: hundreds of people.",
+      "Fractions and more: a half, a third, a quarter, three quarters, 2.5 = two point five, 40% = forty percent."
+     ],
+     "q": "How many people live in your city or town, roughly? Can you say the number in English?",
+     "c": "Write and say aloud five numbers from your life: a year, a population, a price, a fraction and a percentage."
+    },
+    "de": {
+     "t": "Große Zahlen und Brüche",
+     "g": "Du liest große Zahlen, Brüche und Prozente laut vor.",
+     "p": [
+      "Große Zahlen: 250 = two hundred and fifty, 3,400 = three thousand four hundred, 2,000,000 = two million.",
+      "Kein -s nach einer Zahl: two hundred people, five thousand euros. Aber: hundreds of people.",
+      "Brüche: a half, a third, a quarter, three quarters, 2.5 = two point five, 40% = forty percent."
+     ],
+     "q": "Wie viele Menschen leben ungefähr in deiner Stadt? Kannst du die Zahl auf Englisch sagen?",
+     "c": "Schreib fünf Zahlen aus deinem Leben und sag sie laut: Jahr, Einwohnerzahl, Preis, Bruch, Prozent."
+    },
+    "es": {
+     "t": "Números grandes y fracciones",
+     "g": "Lee en voz alta números grandes, fracciones y porcentajes.",
+     "p": [
+      "Números grandes: 250 = two hundred and fifty, 3,400 = three thousand four hundred, 2,000,000 = two million.",
+      "Sin -s tras un número: two hundred people, five thousand euros. Pero: hundreds of people.",
+      "Fracciones: a half, a third, a quarter, three quarters, 2.5 = two point five, 40% = forty percent."
+     ],
+     "q": "¿Cuántas personas viven más o menos en tu ciudad? ¿Sabes decir el número en inglés?",
+     "c": "Escribe y di en voz alta cinco números de tu vida: un año, una población, un precio, una fracción y un porcentaje."
+    },
+    "fr": {
+     "t": "Grands nombres et fractions",
+     "g": "Lire à voix haute de grands nombres, des fractions et des pourcentages.",
+     "p": [
+      "Grands nombres : 250 = two hundred and fifty, 3,400 = three thousand four hundred, 2,000,000 = two million.",
+      "Pas de -s après un nombre : two hundred people, five thousand euros. Mais : hundreds of people.",
+      "Fractions : a half, a third, a quarter, three quarters, 2.5 = two point five, 40% = forty percent."
+     ],
+     "q": "Combien d'habitants environ compte ta ville ? Sais-tu dire ce nombre en anglais ?",
+     "c": "Écris et lis cinq nombres de ta vie : une année, une population, un prix, une fraction, un pourcentage."
+    },
+    "it": {
+     "t": "Numeri grandi e frazioni",
+     "g": "Leggi ad alta voce numeri grandi, frazioni e percentuali.",
+     "p": [
+      "Numeri grandi: 250 = two hundred and fifty, 3,400 = three thousand four hundred, 2,000,000 = two million.",
+      "Niente -s dopo un numero: two hundred people, five thousand euros. Ma: hundreds of people.",
+      "Frazioni: a half, a third, a quarter, three quarters, 2.5 = two point five, 40% = forty percent."
+     ],
+     "q": "Quante persone vivono più o meno nella tua città? Sai dire il numero in inglese?",
+     "c": "Scrivi e leggi cinque numeri della tua vita: un anno, una popolazione, un prezzo, una frazione e una percentuale."
+    },
+    "pt": {
+     "t": "Números grandes e frações",
+     "g": "Lê em voz alta números grandes, frações e percentagens.",
+     "p": [
+      "Números grandes: 250 = two hundred and fifty, 3,400 = three thousand four hundred, 2,000,000 = two million.",
+      "Sem -s depois de um número: two hundred people, five thousand euros. Mas: hundreds of people.",
+      "Frações: a half, a third, a quarter, three quarters, 2.5 = two point five, 40% = forty percent."
+     ],
+     "q": "Quantas pessoas vivem mais ou menos na tua cidade? Consegues dizer o número em inglês?",
+     "c": "Escreve e diz em voz alta cinco números da tua vida: um ano, uma população, um preço, uma fração e uma percentagem."
+    },
+    "pt_BR": {
+     "t": "Números grandes e frações",
+     "g": "Leia em voz alta números grandes, frações e porcentagens.",
+     "p": [
+      "Números grandes: 250 = two hundred and fifty, 3,400 = three thousand four hundred, 2,000,000 = two million.",
+      "Sem -s depois de um número: two hundred people, five thousand euros. Mas: hundreds of people.",
+      "Frações: a half, a third, a quarter, three quarters, 2.5 = two point five, 40% = forty percent."
+     ],
+     "q": "Quantas pessoas moram mais ou menos na sua cidade? Você sabe dizer o número em inglês?",
+     "c": "Escreva e diga em voz alta cinco números da sua vida: um ano, uma população, um preço, uma fração e uma porcentagem."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "hundred",
+      "ex": "About three hundred people came to the festival."
+     },
+     {
+      "w": "thousand",
+      "ex": "The stadium holds fifty thousand fans."
+     },
+     {
+      "w": "million",
+      "ex": "Over two million people live in the city."
+     },
+     {
+      "w": "half",
+      "ex": "Half of my friends speak English."
+     },
+     {
+      "w": "a quarter",
+      "ex": "I waited for a quarter of an hour."
+     },
+     {
+      "w": "percent",
+      "ex": "Ninety percent of the students passed the exam."
+     }
+    ],
+    "gram": "Hundred/thousand/million take no -s after a number (two hundred). British English says and before tens: three hundred and twenty."
+   }
+  },
+  {
+   "d": 175,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Telephone English: leaving a message",
+     "g": "Leave a clear phone message and spell important words.",
+     "p": [
+      "Start: Hi, this is Marta calling for Mr Jones. Is he available? Can I leave a message?",
+      "The message: Could you ask her to call me back? My number is... I'll spell that for you: M-A-R-T-A.",
+      "Check and close: Could you repeat that, please? Thanks for your help. Bye for now."
+     ],
+     "q": "Do you find phone calls in English easy or hard? What helps you?",
+     "c": "Write a voicemail you could leave for a colleague: who you are, why you called and your number."
+    },
+    "de": {
+     "t": "Telefonenglisch: eine Nachricht hinterlassen",
+     "g": "Du hinterlässt eine klare Nachricht und buchstabierst Wichtiges.",
+     "p": [
+      "Beginn: Hi, this is Marta calling for Mr Jones. Is he available? Can I leave a message?",
+      "Nachricht: Could you ask her to call me back? My number is... I'll spell that for you: M-A-R-T-A.",
+      "Prüfen und beenden: Could you repeat that, please? Thanks for your help. Bye for now."
+     ],
+     "q": "Findest du Telefonate auf Englisch leicht oder schwer? Was hilft dir?",
+     "c": "Schreib eine Mailbox-Nachricht für eine Kollegin: wer du bist, warum du anrufst und deine Nummer."
+    },
+    "es": {
+     "t": "Inglés por teléfono: dejar un mensaje",
+     "g": "Deja un mensaje telefónico claro y deletrea las palabras importantes.",
+     "p": [
+      "Inicio: Hi, this is Marta calling for Mr Jones. Is he available? Can I leave a message?",
+      "Mensaje: Could you ask her to call me back? My number is... I'll spell that for you: M-A-R-T-A.",
+      "Comprobar y cerrar: Could you repeat that, please? Thanks for your help. Bye for now."
+     ],
+     "q": "¿Te resultan fáciles o difíciles las llamadas en inglés? ¿Qué te ayuda?",
+     "c": "Escribe un mensaje de buzón de voz para un compañero: quién eres, por qué llamas y tu número."
+    },
+    "fr": {
+     "t": "L'anglais au téléphone : laisser un message",
+     "g": "Laisser un message clair et épeler les mots importants.",
+     "p": [
+      "Début : Hi, this is Marta calling for Mr Jones. Is he available? Can I leave a message?",
+      "Message : Could you ask her to call me back? My number is... I'll spell that for you: M-A-R-T-A.",
+      "Vérifier et conclure : Could you repeat that, please? Thanks for your help. Bye for now."
+     ],
+     "q": "Les appels en anglais, c'est facile ou difficile pour toi ? Qu'est-ce qui t'aide ?",
+     "c": "Écris un message vocal pour un collègue : qui tu es, pourquoi tu appelles et ton numéro."
+    },
+    "it": {
+     "t": "Inglese al telefono: lasciare un messaggio",
+     "g": "Lascia un messaggio chiaro e fai lo spelling delle parole importanti.",
+     "p": [
+      "Inizio: Hi, this is Marta calling for Mr Jones. Is he available? Can I leave a message?",
+      "Messaggio: Could you ask her to call me back? My number is... I'll spell that for you: M-A-R-T-A.",
+      "Controllare e chiudere: Could you repeat that, please? Thanks for your help. Bye for now."
+     ],
+     "q": "Trovi facili o difficili le telefonate in inglese? Cosa ti aiuta?",
+     "c": "Scrivi un messaggio in segreteria per un collega: chi sei, perché chiami e il tuo numero."
+    },
+    "pt": {
+     "t": "Inglês ao telefone: deixar uma mensagem",
+     "g": "Deixa uma mensagem clara e soletra as palavras importantes.",
+     "p": [
+      "Início: Hi, this is Marta calling for Mr Jones. Is he available? Can I leave a message?",
+      "Mensagem: Could you ask her to call me back? My number is... I'll spell that for you: M-A-R-T-A.",
+      "Confirmar e terminar: Could you repeat that, please? Thanks for your help. Bye for now."
+     ],
+     "q": "Achas as chamadas em inglês fáceis ou difíceis? O que te ajuda?",
+     "c": "Escreve uma mensagem de voz para um colega: quem és, porque ligaste e o teu número."
+    },
+    "pt_BR": {
+     "t": "Inglês ao telefone: deixando recado",
+     "g": "Deixe um recado claro e soletre as palavras importantes.",
+     "p": [
+      "Início: Hi, this is Marta calling for Mr Jones. Is he available? Can I leave a message?",
+      "Recado: Could you ask her to call me back? My number is... I'll spell that for you: M-A-R-T-A.",
+      "Confirmar e encerrar: Could you repeat that, please? Thanks for your help. Bye for now."
+     ],
+     "q": "Você acha ligações em inglês fáceis ou difíceis? O que ajuda você?",
+     "c": "Escreva uma mensagem de voz para um colega: quem você é, por que ligou e seu número."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "this is ... calling",
+      "ex": "Hello, this is Daniel calling from Green Travel."
+     },
+     {
+      "w": "leave a message",
+      "ex": "Can I leave a message for Sarah?"
+     },
+     {
+      "w": "call back",
+      "ex": "Could you ask him to call me back?"
+     },
+     {
+      "w": "spell",
+      "ex": "I'll spell my surname for you: K-O-W-A-L."
+     },
+     {
+      "w": "available",
+      "ex": "Is Mrs Brown available this afternoon?"
+     },
+     {
+      "w": "repeat",
+      "ex": "Sorry, could you repeat the number, please?"
+     }
+    ],
+    "gram": "On the phone say This is Marta, not I am Marta. Call back is separable: call me back. Use Could you... for polite requests."
+   }
+  },
+  {
+   "d": 176,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Complaining politely",
+     "g": "Make a complaint clearly but politely, and ask for a solution.",
+     "p": [
+      "Start softly: Excuse me, I'm afraid there's a problem with my order. I'm sorry to bother you, but...",
+      "Explain: The soup is cold. The heating isn't working. I was charged twice.",
+      "Ask for a fix: Could you change it, please? I'd like a refund. I'd like to speak to the manager, please."
+     ],
+     "q": "Have you ever complained about something in a shop or restaurant? What happened?",
+     "c": "Write a polite complaint in four lines: a soft start, the problem, a detail and what you would like."
+    },
+    "de": {
+     "t": "Höflich reklamieren",
+     "g": "Du beschwerst dich klar, aber höflich, und bittest um eine Lösung.",
+     "p": [
+      "Sanft beginnen: Excuse me, I'm afraid there's a problem with my order. I'm sorry to bother you, but...",
+      "Erklären: The soup is cold. The heating isn't working. I was charged twice.",
+      "Lösung erbitten: Could you change it, please? I'd like a refund. I'd like to speak to the manager, please."
+     ],
+     "q": "Hast du dich schon einmal in einem Laden oder Restaurant beschwert? Was ist passiert?",
+     "c": "Schreib eine höfliche Beschwerde in vier Zeilen: sanfter Einstieg, Problem, Detail und dein Wunsch."
+    },
+    "es": {
+     "t": "Quejarse con educación",
+     "g": "Haz una queja clara pero educada y pide una solución.",
+     "p": [
+      "Empieza con suavidad: Excuse me, I'm afraid there's a problem with my order. I'm sorry to bother you, but...",
+      "Explica: The soup is cold. The heating isn't working. I was charged twice.",
+      "Pide una solución: Could you change it, please? I'd like a refund. I'd like to speak to the manager, please."
+     ],
+     "q": "¿Alguna vez te has quejado de algo en una tienda o restaurante? ¿Qué pasó?",
+     "c": "Escribe una queja educada en cuatro líneas: inicio suave, el problema, un detalle y lo que quieres."
+    },
+    "fr": {
+     "t": "Se plaindre poliment",
+     "g": "Faire une réclamation claire mais polie et demander une solution.",
+     "p": [
+      "Commencer en douceur : Excuse me, I'm afraid there's a problem with my order. I'm sorry to bother you, but...",
+      "Expliquer : The soup is cold. The heating isn't working. I was charged twice.",
+      "Demander une solution : Could you change it, please? I'd like a refund. I'd like to speak to the manager, please."
+     ],
+     "q": "T'es-tu déjà plaint dans un magasin ou un restaurant ? Que s'est-il passé ?",
+     "c": "Écris une réclamation polie en quatre lignes : début doux, le problème, un détail et ce que tu souhaites."
+    },
+    "it": {
+     "t": "Lamentarsi con gentilezza",
+     "g": "Fai un reclamo chiaro ma gentile e chiedi una soluzione.",
+     "p": [
+      "Inizia con calma: Excuse me, I'm afraid there's a problem with my order. I'm sorry to bother you, but...",
+      "Spiega: The soup is cold. The heating isn't working. I was charged twice.",
+      "Chiedi una soluzione: Could you change it, please? I'd like a refund. I'd like to speak to the manager, please."
+     ],
+     "q": "Ti sei mai lamentato di qualcosa in un negozio o ristorante? Cosa è successo?",
+     "c": "Scrivi un reclamo gentile in quattro righe: inizio morbido, il problema, un dettaglio e cosa vorresti."
+    },
+    "pt": {
+     "t": "Reclamar com educação",
+     "g": "Faz uma reclamação clara mas educada e pede uma solução.",
+     "p": [
+      "Começa com calma: Excuse me, I'm afraid there's a problem with my order. I'm sorry to bother you, but...",
+      "Explica: The soup is cold. The heating isn't working. I was charged twice.",
+      "Pede uma solução: Could you change it, please? I'd like a refund. I'd like to speak to the manager, please."
+     ],
+     "q": "Já reclamaste de alguma coisa numa loja ou restaurante? O que aconteceu?",
+     "c": "Escreve uma reclamação educada em quatro linhas: início suave, o problema, um pormenor e o que querias."
+    },
+    "pt_BR": {
+     "t": "Reclamando com educação",
+     "g": "Faça uma reclamação clara, mas educada, e peça uma solução.",
+     "p": [
+      "Comece com calma: Excuse me, I'm afraid there's a problem with my order. I'm sorry to bother you, but...",
+      "Explique: The soup is cold. The heating isn't working. I was charged twice.",
+      "Peça uma solução: Could you change it, please? I'd like a refund. I'd like to speak to the manager, please."
+     ],
+     "q": "Você já reclamou de algo em uma loja ou restaurante? O que aconteceu?",
+     "c": "Escreva uma reclamação educada em quatro linhas: início suave, o problema, um detalhe e o que você gostaria."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "I'm afraid",
+      "ex": "I'm afraid there's a problem with my room."
+     },
+     {
+      "w": "there's a problem with",
+      "ex": "There's a problem with my bill."
+     },
+     {
+      "w": "isn't working",
+      "ex": "The Wi-Fi isn't working in my room."
+     },
+     {
+      "w": "charged twice",
+      "ex": "I think I was charged twice for the coffee."
+     },
+     {
+      "w": "I'd like a refund",
+      "ex": "The item was broken, so I'd like a refund."
+     },
+     {
+      "w": "speak to the manager",
+      "ex": "Could I speak to the manager, please?"
+     }
+    ],
+    "gram": "I'm afraid... softens bad news. Use I'd like + noun/to + verb and Could you...? to ask for a solution politely."
+   }
+  },
+  {
+   "d": 177,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Apologising and responding",
+     "g": "Apologise sincerely and accept apologies kindly.",
+     "p": [
+      "Apologising: I'm so sorry. I'm really sorry I'm late. It was my fault. I didn't mean to.",
+      "Add a fix: Sorry about that, I'll fix it right away. Let me make it up to you.",
+      "Responding: No worries. Don't worry about it. It's fine. These things happen."
+     ],
+     "q": "What's a small mistake you've apologised for recently, and how did the other person react?",
+     "c": "Write three short dialogues: someone apologises for being late, forgetting and breaking something."
+    },
+    "de": {
+     "t": "Sich entschuldigen und reagieren",
+     "g": "Du entschuldigst dich aufrichtig und nimmst Entschuldigungen freundlich an.",
+     "p": [
+      "Entschuldigen: I'm so sorry. I'm really sorry I'm late. It was my fault. I didn't mean to.",
+      "Mit Lösung: Sorry about that, I'll fix it right away. Let me make it up to you.",
+      "Reagieren: No worries. Don't worry about it. It's fine. These things happen."
+     ],
+     "q": "Für welchen kleinen Fehler hast du dich zuletzt entschuldigt, und wie hat die andere Person reagiert?",
+     "c": "Schreib drei kurze Dialoge: Jemand entschuldigt sich für Zuspätkommen, Vergessen und etwas Kaputtes."
+    },
+    "es": {
+     "t": "Pedir perdón y responder",
+     "g": "Pide perdón de verdad y acepta las disculpas con amabilidad.",
+     "p": [
+      "Disculparse: I'm so sorry. I'm really sorry I'm late. It was my fault. I didn't mean to.",
+      "Con solución: Sorry about that, I'll fix it right away. Let me make it up to you.",
+      "Responder: No worries. Don't worry about it. It's fine. These things happen."
+     ],
+     "q": "¿Por qué pequeño error pediste perdón hace poco y cómo reaccionó la otra persona?",
+     "c": "Escribe tres diálogos cortos: alguien se disculpa por llegar tarde, por olvidar algo y por romper algo."
+    },
+    "fr": {
+     "t": "S'excuser et répondre",
+     "g": "S'excuser sincèrement et accepter des excuses avec gentillesse.",
+     "p": [
+      "S'excuser : I'm so sorry. I'm really sorry I'm late. It was my fault. I didn't mean to.",
+      "Proposer une solution : Sorry about that, I'll fix it right away. Let me make it up to you.",
+      "Répondre : No worries. Don't worry about it. It's fine. These things happen."
+     ],
+     "q": "Pour quelle petite erreur t'es-tu excusé récemment, et comment l'autre personne a-t-elle réagi ?",
+     "c": "Écris trois petits dialogues : quelqu'un s'excuse d'être en retard, d'avoir oublié et d'avoir cassé quelque chose."
+    },
+    "it": {
+     "t": "Scusarsi e rispondere",
+     "g": "Chiedi scusa con sincerità e accetta le scuse con gentilezza.",
+     "p": [
+      "Scusarsi: I'm so sorry. I'm really sorry I'm late. It was my fault. I didn't mean to.",
+      "Con una soluzione: Sorry about that, I'll fix it right away. Let me make it up to you.",
+      "Rispondere: No worries. Don't worry about it. It's fine. These things happen."
+     ],
+     "q": "Per quale piccolo errore ti sei scusato di recente, e come ha reagito l'altra persona?",
+     "c": "Scrivi tre brevi dialoghi: qualcuno si scusa per un ritardo, una dimenticanza e una cosa rotta."
+    },
+    "pt": {
+     "t": "Pedir desculpa e responder",
+     "g": "Pede desculpa com sinceridade e aceita desculpas com simpatia.",
+     "p": [
+      "Pedir desculpa: I'm so sorry. I'm really sorry I'm late. It was my fault. I didn't mean to.",
+      "Com solução: Sorry about that, I'll fix it right away. Let me make it up to you.",
+      "Responder: No worries. Don't worry about it. It's fine. These things happen."
+     ],
+     "q": "Por que pequeno erro pediste desculpa recentemente, e como reagiu a outra pessoa?",
+     "c": "Escreve três diálogos curtos: alguém pede desculpa por chegar tarde, por se esquecer e por partir algo."
+    },
+    "pt_BR": {
+     "t": "Pedindo desculpas e respondendo",
+     "g": "Peça desculpas com sinceridade e aceite desculpas com gentileza.",
+     "p": [
+      "Pedir desculpas: I'm so sorry. I'm really sorry I'm late. It was my fault. I didn't mean to.",
+      "Com solução: Sorry about that, I'll fix it right away. Let me make it up to you.",
+      "Responder: No worries. Don't worry about it. It's fine. These things happen."
+     ],
+     "q": "Por qual pequeno erro você pediu desculpas recentemente, e como a outra pessoa reagiu?",
+     "c": "Escreva três diálogos curtos: alguém pede desculpas por atrasar, por esquecer e por quebrar algo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "I'm so sorry",
+      "ex": "I'm so sorry. I forgot your birthday!"
+     },
+     {
+      "w": "it was my fault",
+      "ex": "Don't blame Sam. It was my fault."
+     },
+     {
+      "w": "I didn't mean to",
+      "ex": "Sorry, I didn't mean to interrupt."
+     },
+     {
+      "w": "no worries",
+      "ex": "No worries, it happens to everyone."
+     },
+     {
+      "w": "don't worry about it",
+      "ex": "Don't worry about it. It's only a cup."
+     },
+     {
+      "w": "make it up to you",
+      "ex": "Let me make it up to you. Dinner's on me!"
+     }
+    ],
+    "gram": "Sorry for + -ing or sorry (that) + clause: Sorry for being late. I'm sorry I forgot. Reply with No worries or Don't worry about it."
+   }
+  },
+  {
+   "d": 178,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "British and American English",
+     "g": "Recognise common differences between British and American English.",
+     "p": [
+      "Words (UK / US): flat / apartment, holiday / vacation, lift / elevator, autumn / fall, rubbish / trash.",
+      "Food (UK / US): biscuit / cookie, chips / fries, crisps / chips, sweets / candy.",
+      "Spelling: colour / color, centre / center, travelling / traveling. Both are correct: just be consistent."
+     ],
+     "q": "Which kind of English do you hear most in films, songs or at work: British or American?",
+     "c": "Write five sentences about your weekend in British English, then rewrite them in American English."
+    },
+    "de": {
+     "t": "Britisches und amerikanisches Englisch",
+     "g": "Du erkennst häufige Unterschiede zwischen britischem und amerikanischem Englisch.",
+     "p": [
+      "Wörter (UK / US): flat / apartment, holiday / vacation, lift / elevator, autumn / fall, rubbish / trash.",
+      "Essen (UK / US): biscuit / cookie, chips / fries, crisps / chips, sweets / candy.",
+      "Schreibung: colour / color, centre / center, travelling / traveling. Beides ist richtig, bleib einheitlich."
+     ],
+     "q": "Welches Englisch hörst du am häufigsten in Filmen, Liedern oder im Job: britisch oder amerikanisch?",
+     "c": "Schreib fünf Sätze über dein Wochenende auf britischem Englisch und dann auf amerikanischem."
+    },
+    "es": {
+     "t": "Inglés británico y americano",
+     "g": "Reconoce diferencias comunes entre el inglés británico y el americano.",
+     "p": [
+      "Palabras (UK / US): flat / apartment, holiday / vacation, lift / elevator, autumn / fall, rubbish / trash.",
+      "Comida (UK / US): biscuit / cookie, chips / fries, crisps / chips, sweets / candy.",
+      "Ortografía: colour / color, centre / center, travelling / traveling. Ambas valen, sé coherente."
+     ],
+     "q": "¿Qué inglés oyes más en películas, canciones o en el trabajo: el británico o el americano?",
+     "c": "Escribe cinco frases sobre tu fin de semana en inglés británico y luego reescríbelas en americano."
+    },
+    "fr": {
+     "t": "Anglais britannique et américain",
+     "g": "Reconnaître les différences courantes entre anglais britannique et américain.",
+     "p": [
+      "Mots (UK / US) : flat / apartment, holiday / vacation, lift / elevator, autumn / fall, rubbish / trash.",
+      "Cuisine (UK / US) : biscuit / cookie, chips / fries, crisps / chips, sweets / candy.",
+      "Orthographe : colour / color, centre / center, travelling / traveling. Les deux sont justes, sois cohérent."
+     ],
+     "q": "Quel anglais entends-tu le plus dans les films, les chansons ou au travail : britannique ou américain ?",
+     "c": "Écris cinq phrases sur ton week-end en anglais britannique, puis réécris-les en américain."
+    },
+    "it": {
+     "t": "Inglese britannico e americano",
+     "g": "Riconosci le differenze comuni tra inglese britannico e americano.",
+     "p": [
+      "Parole (UK / US): flat / apartment, holiday / vacation, lift / elevator, autumn / fall, rubbish / trash.",
+      "Cibo (UK / US): biscuit / cookie, chips / fries, crisps / chips, sweets / candy.",
+      "Ortografia: colour / color, centre / center, travelling / traveling. Vanno bene entrambe, sii coerente."
+     ],
+     "q": "Quale inglese senti di più in film, canzoni o al lavoro: britannico o americano?",
+     "c": "Scrivi cinque frasi sul tuo weekend in inglese britannico, poi riscrivile in americano."
+    },
+    "pt": {
+     "t": "Inglês britânico e americano",
+     "g": "Reconhece diferenças comuns entre o inglês britânico e o americano.",
+     "p": [
+      "Palavras (UK / US): flat / apartment, holiday / vacation, lift / elevator, autumn / fall, rubbish / trash.",
+      "Comida (UK / US): biscuit / cookie, chips / fries, crisps / chips, sweets / candy.",
+      "Ortografia: colour / color, centre / center, travelling / traveling. Ambas estão certas, sê coerente."
+     ],
+     "q": "Que inglês ouves mais em filmes, músicas ou no trabalho: o britânico ou o americano?",
+     "c": "Escreve cinco frases sobre o teu fim de semana em inglês britânico e depois reescreve-as em americano."
+    },
+    "pt_BR": {
+     "t": "Inglês britânico e americano",
+     "g": "Reconheça diferenças comuns entre o inglês britânico e o americano.",
+     "p": [
+      "Palavras (UK / US): flat / apartment, holiday / vacation, lift / elevator, autumn / fall, rubbish / trash.",
+      "Comida (UK / US): biscuit / cookie, chips / fries, crisps / chips, sweets / candy.",
+      "Ortografia: colour / color, centre / center, travelling / traveling. As duas estão certas, seja coerente."
+     ],
+     "q": "Que inglês você ouve mais em filmes, músicas ou no trabalho: o britânico ou o americano?",
+     "c": "Escreva cinco frases sobre seu fim de semana em inglês britânico e depois reescreva em americano."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "flat / apartment",
+      "ex": "We rented a small flat in London and an apartment in New York."
+     },
+     {
+      "w": "holiday / vacation",
+      "ex": "I'm going on holiday. My American friend says vacation."
+     },
+     {
+      "w": "lift / elevator",
+      "ex": "Take the lift to the fifth floor."
+     },
+     {
+      "w": "autumn / fall",
+      "ex": "The trees look beautiful in autumn."
+     },
+     {
+      "w": "biscuit / cookie",
+      "ex": "Would you like a biscuit with your tea?"
+     },
+     {
+      "w": "chips / fries",
+      "ex": "I'll have fish and chips, please."
+     }
+    ],
+    "gram": "British and American English share grammar but differ in some words and spelling (colour/color). Both are correct; stay consistent."
+   }
+  },
+  {
+   "d": 179,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Connected speech: gonna, wanna",
+     "g": "Understand how native speakers link words in fast, relaxed speech.",
+     "p": [
+      "gonna = going to, wanna = want to, gotta = have got to: I'm gonna call her. I gotta go.",
+      "whaddya = what do you, lemme = let me, kinda = kind of: Whaddya think? Lemme see.",
+      "Use them in casual speech and texts with friends, not in formal writing, emails or exams."
+     ],
+     "q": "Listen to a song or video in English today. Did you hear gonna, wanna or gotta?",
+     "c": "Write three casual sentences with gonna, wanna and gotta, then rewrite them in full standard English."
+    },
+    "de": {
+     "t": "Verbundene Aussprache: gonna, wanna",
+     "g": "Du verstehst, wie Muttersprachler Wörter in lockerer, schneller Sprache verbinden.",
+     "p": [
+      "gonna = going to, wanna = want to, gotta = have got to: I'm gonna call her. I gotta go.",
+      "whaddya = what do you, lemme = let me, kinda = kind of: Whaddya think? Lemme see.",
+      "Nutze sie locker beim Sprechen und in Chats, nicht in formellen Texten, Mails oder Prüfungen."
+     ],
+     "q": "Hör dir heute ein Lied oder Video auf Englisch an. Hast du gonna, wanna oder gotta gehört?",
+     "c": "Schreib drei lockere Sätze mit gonna, wanna und gotta und dann in vollem Standardenglisch."
+    },
+    "es": {
+     "t": "Habla conectada: gonna, wanna",
+     "g": "Entiende cómo los nativos unen palabras al hablar rápido y relajado.",
+     "p": [
+      "gonna = going to, wanna = want to, gotta = have got to: I'm gonna call her. I gotta go.",
+      "whaddya = what do you, lemme = let me, kinda = kind of: Whaddya think? Lemme see.",
+      "Úsalas al hablar y en chats con amigos, no en textos formales, emails ni exámenes."
+     ],
+     "q": "Escucha hoy una canción o un vídeo en inglés. ¿Oíste gonna, wanna o gotta?",
+     "c": "Escribe tres frases informales con gonna, wanna y gotta y luego reescríbelas en inglés estándar."
+    },
+    "fr": {
+     "t": "L'anglais parlé : gonna, wanna",
+     "g": "Comprendre comment les natifs enchaînent les mots à l'oral rapide et détendu.",
+     "p": [
+      "gonna = going to, wanna = want to, gotta = have got to : I'm gonna call her. I gotta go.",
+      "whaddya = what do you, lemme = let me, kinda = kind of : Whaddya think? Lemme see.",
+      "À utiliser à l'oral et dans les messages entre amis, pas à l'écrit formel, ni dans les e-mails ou examens."
+     ],
+     "q": "Écoute une chanson ou une vidéo en anglais aujourd'hui. As-tu entendu gonna, wanna ou gotta ?",
+     "c": "Écris trois phrases familières avec gonna, wanna et gotta, puis réécris-les en anglais standard."
+    },
+    "it": {
+     "t": "Parlato veloce: gonna, wanna",
+     "g": "Capisci come i madrelingua uniscono le parole nel parlato veloce e informale.",
+     "p": [
+      "gonna = going to, wanna = want to, gotta = have got to: I'm gonna call her. I gotta go.",
+      "whaddya = what do you, lemme = let me, kinda = kind of: Whaddya think? Lemme see.",
+      "Usale nel parlato e nelle chat con amici, non nella scrittura formale, nelle email o agli esami."
+     ],
+     "q": "Ascolta oggi una canzone o un video in inglese. Hai sentito gonna, wanna o gotta?",
+     "c": "Scrivi tre frasi informali con gonna, wanna e gotta, poi riscrivile in inglese standard."
+    },
+    "pt": {
+     "t": "Fala encadeada: gonna, wanna",
+     "g": "Percebe como os nativos ligam as palavras na fala rápida e descontraída.",
+     "p": [
+      "gonna = going to, wanna = want to, gotta = have got to: I'm gonna call her. I gotta go.",
+      "whaddya = what do you, lemme = let me, kinda = kind of: Whaddya think? Lemme see.",
+      "Usa-as a falar e em mensagens com amigos, não na escrita formal, em emails ou exames."
+     ],
+     "q": "Ouve hoje uma música ou um vídeo em inglês. Ouviste gonna, wanna ou gotta?",
+     "c": "Escreve três frases informais com gonna, wanna e gotta e depois reescreve-as em inglês padrão."
+    },
+    "pt_BR": {
+     "t": "Fala conectada: gonna, wanna",
+     "g": "Entenda como os nativos juntam as palavras na fala rápida e descontraída.",
+     "p": [
+      "gonna = going to, wanna = want to, gotta = have got to: I'm gonna call her. I gotta go.",
+      "whaddya = what do you, lemme = let me, kinda = kind of: Whaddya think? Lemme see.",
+      "Use na fala e em mensagens com amigos, não na escrita formal, em e-mails ou provas."
+     ],
+     "q": "Ouça hoje uma música ou vídeo em inglês. Você ouviu gonna, wanna ou gotta?",
+     "c": "Escreva três frases informais com gonna, wanna e gotta e depois reescreva em inglês padrão."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "gonna",
+      "ex": "I'm gonna make some coffee. Want some?"
+     },
+     {
+      "w": "wanna",
+      "ex": "Do you wanna come to the cinema?"
+     },
+     {
+      "w": "gotta",
+      "ex": "Sorry, I gotta go. See you later!"
+     },
+     {
+      "w": "whaddya",
+      "ex": "Whaddya think of my new haircut?"
+     },
+     {
+      "w": "lemme",
+      "ex": "Lemme check my calendar."
+     },
+     {
+      "w": "kinda",
+      "ex": "I'm kinda tired today."
+     }
+    ],
+    "gram": "gonna = going to, wanna = want to, gotta = (have) got to. They are informal spoken forms; write the full forms in formal English."
+   }
+  },
+  {
+   "d": 180,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Review: A2 complete!",
+     "g": "Celebrate finishing A2 by mixing everything in real situations.",
+     "p": [
+      "Modals: I might come. Could you help me? Do you mind if I sit here? You should try it.",
+      "Passive and opinions: It was built in 1900. Coffee is grown here. In my opinion... I see your point, but...",
+      "Real life: complain politely, apologise, leave a phone message, book a room. You can do it all now!"
+     ],
+     "q": "Congratulations on A2! What are you proudest of, and what would you like to improve next?",
+     "c": "Write a short chat: give an opinion, use a passive, ask permission and say sorry. Then celebrate!"
+    },
+    "de": {
+     "t": "Rückblick: A2 geschafft!",
+     "g": "Du feierst den Abschluss von A2 und mischst alles in echten Situationen.",
+     "p": [
+      "Modalverben: I might come. Could you help me? Do you mind if I sit here? You should try it.",
+      "Passiv und Meinungen: It was built in 1900. Coffee is grown here. In my opinion... I see your point, but...",
+      "Alltag: höflich reklamieren, sich entschuldigen, eine Nachricht hinterlassen, ein Zimmer buchen. Du kannst das!"
+     ],
+     "q": "Glückwunsch zu A2! Worauf bist du am meisten stolz, und was möchtest du als Nächstes verbessern?",
+     "c": "Schreib einen kurzen Chat: eine Meinung, ein Passivsatz, eine Erlaubnisfrage und eine Entschuldigung. Dann feiern!"
+    },
+    "es": {
+     "t": "Repaso: ¡A2 completado!",
+     "g": "Celebra el final del A2 combinándolo todo en situaciones reales.",
+     "p": [
+      "Modales: I might come. Could you help me? Do you mind if I sit here? You should try it.",
+      "Pasiva y opiniones: It was built in 1900. Coffee is grown here. In my opinion... I see your point, but...",
+      "Vida real: quejarte con educación, disculparte, dejar un mensaje, reservar una habitación. ¡Ya puedes!"
+     ],
+     "q": "¡Enhorabuena por el A2! ¿De qué estás más orgulloso y qué te gustaría mejorar ahora?",
+     "c": "Escribe un chat corto: da una opinión, usa una pasiva, pide permiso y pide perdón. ¡Y a celebrarlo!"
+    },
+    "fr": {
+     "t": "Révision : A2 terminé !",
+     "g": "Fêter la fin du niveau A2 en mélangeant tout dans des situations réelles.",
+     "p": [
+      "Modaux : I might come. Could you help me? Do you mind if I sit here? You should try it.",
+      "Passif et opinions : It was built in 1900. Coffee is grown here. In my opinion... I see your point, but...",
+      "Vie réelle : te plaindre poliment, t'excuser, laisser un message, réserver une chambre. Tu sais tout faire !"
+     ],
+     "q": "Bravo pour l'A2 ! De quoi es-tu le plus fier, et que veux-tu améliorer maintenant ?",
+     "c": "Écris un court échange : un avis, une phrase au passif, une demande de permission et des excuses. Puis fête ça !"
+    },
+    "it": {
+     "t": "Ripasso: A2 completato!",
+     "g": "Festeggia la fine dell'A2 mescolando tutto in situazioni reali.",
+     "p": [
+      "Modali: I might come. Could you help me? Do you mind if I sit here? You should try it.",
+      "Passivo e opinioni: It was built in 1900. Coffee is grown here. In my opinion... I see your point, but...",
+      "Vita reale: lamentarti con gentilezza, scusarti, lasciare un messaggio, prenotare una camera. Ora sai farlo!"
+     ],
+     "q": "Complimenti per l'A2! Di cosa sei più orgoglioso, e cosa vorresti migliorare adesso?",
+     "c": "Scrivi una breve chat: un'opinione, un passivo, una richiesta di permesso e delle scuse. Poi festeggia!"
+    },
+    "pt": {
+     "t": "Revisão: A2 concluído!",
+     "g": "Celebra o fim do A2 juntando tudo em situações reais.",
+     "p": [
+      "Modais: I might come. Could you help me? Do you mind if I sit here? You should try it.",
+      "Passiva e opiniões: It was built in 1900. Coffee is grown here. In my opinion... I see your point, but...",
+      "Vida real: reclamar com educação, pedir desculpa, deixar uma mensagem, reservar um quarto. Já consegues!"
+     ],
+     "q": "Parabéns pelo A2! De que tens mais orgulho, e o que gostavas de melhorar a seguir?",
+     "c": "Escreve uma conversa curta: dá uma opinião, usa a passiva, pede autorização e pede desculpa. E celebra!"
+    },
+    "pt_BR": {
+     "t": "Revisão: A2 concluído!",
+     "g": "Comemore o fim do A2 juntando tudo em situações reais.",
+     "p": [
+      "Modais: I might come. Could you help me? Do you mind if I sit here? You should try it.",
+      "Passiva e opiniões: It was built in 1900. Coffee is grown here. In my opinion... I see your point, but...",
+      "Vida real: reclamar com educação, pedir desculpas, deixar recado, reservar um quarto. Você já consegue!"
+     ],
+     "q": "Parabéns pelo A2! Do que você mais se orgulha, e o que gostaria de melhorar agora?",
+     "c": "Escreva um chat curto: dê uma opinião, use a passiva, peça permissão e peça desculpas. E comemore!"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "might",
+      "ex": "I might take a B1 course next."
+     },
+     {
+      "w": "Could you...?",
+      "ex": "Could you recommend a good English podcast?"
+     },
+     {
+      "w": "Do you mind if...?",
+      "ex": "Do you mind if I practise with you?"
+     },
+     {
+      "w": "was built",
+      "ex": "This bridge was built over a hundred years ago."
+     },
+     {
+      "w": "in my opinion",
+      "ex": "In my opinion, practice is the secret."
+     },
+     {
+      "w": "I'm so proud",
+      "ex": "I'm so proud of my progress!"
+     }
+    ],
+    "gram": "A2 review: might/may/could, permission and requests, present and past passive, opinions, agreeing and real-life polite phrases."
+   }
+  }
+ ]
+}

@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 231,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Describing art and paintings",
+     "g": "Describe a painting and your impressions: in primo piano, sullo sfondo.",
+     "p": [
+      "Positions: in primo piano (foreground), sullo sfondo (background), al centro, a destra, a sinistra, in alto, in basso.",
+      "Details: il quadro / il dipinto, i colori caldi / freddi, la luce, l'ombra, il paesaggio, il ritratto (portrait).",
+      "Impressions: mi colpisce (strikes me), mi trasmette calma, sembra che + congiuntivo: sembra che la donna sorrida."
+     ],
+     "q": "Think of a painting you like. What is in the foreground and what feeling does it give you?",
+     "c": "Describe any picture on your wall or phone in five sentences with in primo piano, sullo sfondo and mi trasmette."
+    },
+    "de": {
+     "t": "Kunst und Gemälde beschreiben",
+     "g": "Du beschreibst ein Gemälde und deine Eindrücke: in primo piano, sullo sfondo.",
+     "p": [
+      "Positionen: in primo piano (Vordergrund), sullo sfondo (Hintergrund), al centro, a destra, a sinistra, in alto, in basso.",
+      "Details: il quadro / il dipinto, i colori caldi / freddi, la luce, l'ombra, il paesaggio, il ritratto (Porträt).",
+      "Eindrücke: mi colpisce (beeindruckt mich), mi trasmette calma, sembra che + Konjunktiv: sembra che la donna sorrida."
+     ],
+     "q": "Denk an ein Gemälde, das du magst. Was ist im Vordergrund, und welches Gefühl gibt es dir?",
+     "c": "Beschreib ein Bild an deiner Wand oder auf deinem Handy in fünf Sätzen mit in primo piano, sullo sfondo und mi trasmette."
+    },
+    "es": {
+     "t": "Describir arte y cuadros",
+     "g": "Describir un cuadro y tus impresiones: in primo piano, sullo sfondo.",
+     "p": [
+      "Posiciones: in primo piano (primer plano), sullo sfondo (al fondo), al centro, a destra, a sinistra, in alto, in basso.",
+      "Detalles: il quadro / il dipinto, i colori caldi / freddi, la luce, l'ombra, il paesaggio, il ritratto (retrato).",
+      "Impresiones: mi colpisce (me llama la atención), mi trasmette calma, sembra che + subjuntivo: sembra che la donna sorrida."
+     ],
+     "q": "Piensa en un cuadro que te guste. ¿Qué hay en primer plano y qué sensación te transmite?",
+     "c": "Describe una imagen de tu pared o de tu móvil en cinco frases con in primo piano, sullo sfondo y mi trasmette."
+    },
+    "fr": {
+     "t": "Décrire l'art et les tableaux",
+     "g": "Décrire un tableau et tes impressions : in primo piano, sullo sfondo.",
+     "p": [
+      "Positions : in primo piano (premier plan), sullo sfondo (arrière-plan), al centro, a destra, a sinistra, in alto, in basso.",
+      "Détails : il quadro / il dipinto, i colori caldi / freddi, la luce, l'ombra, il paesaggio, il ritratto (portrait).",
+      "Impressions : mi colpisce (me frappe), mi trasmette calma, sembra che + subjonctif : sembra che la donna sorrida."
+     ],
+     "q": "Pense à un tableau que tu aimes. Qu'y a-t-il au premier plan, et quelle émotion te donne-t-il ?",
+     "c": "Décris une image de ton mur ou de ton téléphone en cinq phrases avec in primo piano, sullo sfondo et mi trasmette."
+    },
+    "it": {
+     "t": "Descrivere un quadro",
+     "g": "Descrivere un dipinto e le tue impressioni: in primo piano, sullo sfondo.",
+     "p": [
+      "Posizioni: in primo piano, sullo sfondo, al centro, a destra, a sinistra, in alto, in basso.",
+      "Dettagli: il quadro / il dipinto, i colori caldi / freddi, la luce, l'ombra, il paesaggio, il ritratto.",
+      "Impressioni: mi colpisce, mi trasmette calma, sembra che + congiuntivo: sembra che la donna sorrida."
+     ],
+     "q": "Pensa a un quadro che ti piace. Che cosa c'è in primo piano e che sensazione ti trasmette?",
+     "c": "Descrivi un'immagine sulla tua parete o sul telefono in cinque frasi con in primo piano, sullo sfondo e mi trasmette."
+    },
+    "pt": {
+     "t": "Descrever arte e pinturas",
+     "g": "Descrever um quadro e as tuas impressões: in primo piano, sullo sfondo.",
+     "p": [
+      "Posições: in primo piano (primeiro plano), sullo sfondo (ao fundo), al centro, a destra, a sinistra, in alto, in basso.",
+      "Detalhes: il quadro / il dipinto, i colori caldi / freddi, la luce, l'ombra, il paesaggio, il ritratto (retrato).",
+      "Impressões: mi colpisce (impressiona-me), mi trasmette calma, sembra che + conjuntivo: sembra che la donna sorrida."
+     ],
+     "q": "Pensa num quadro de que gostas. O que está em primeiro plano e que sensação te transmite?",
+     "c": "Descreve uma imagem da tua parede ou do telemóvel em cinco frases com in primo piano, sullo sfondo e mi trasmette."
+    },
+    "pt_BR": {
+     "t": "Descrever arte e pinturas",
+     "g": "Descrever um quadro e suas impressões: in primo piano, sullo sfondo.",
+     "p": [
+      "Posições: in primo piano (primeiro plano), sullo sfondo (ao fundo), al centro, a destra, a sinistra, in alto, in basso.",
+      "Detalhes: il quadro / il dipinto, i colori caldi / freddi, la luce, l'ombra, il paesaggio, il ritratto (retrato).",
+      "Impressões: mi colpisce (me impressiona), mi trasmette calma, sembra che + subjuntivo: sembra che la donna sorrida."
+     ],
+     "q": "Pense num quadro de que você gosta. O que está em primeiro plano e que sensação ele transmite?",
+     "c": "Descreva uma imagem da sua parede ou do celular em cinco frases com in primo piano, sullo sfondo e mi trasmette."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "in primo piano",
+      "ex": "In primo piano c'è una ragazza con un cappello rosso."
+     },
+     {
+      "w": "sullo sfondo",
+      "ex": "Sullo sfondo si vedono le colline toscane."
+     },
+     {
+      "w": "il ritratto",
+      "ex": "Questo ritratto è famoso in tutto il mondo."
+     },
+     {
+      "w": "il paesaggio",
+      "ex": "Il pittore ha dipinto un paesaggio di montagna."
+     },
+     {
+      "w": "mi colpisce",
+      "ex": "Mi colpisce soprattutto la luce del quadro."
+     },
+     {
+      "w": "mi trasmette",
+      "ex": "Questo dipinto mi trasmette una grande serenità."
+     }
+    ],
+    "gram": "Descrivere un'immagine: c'è / ci sono + in primo piano, sullo sfondo, al centro. Sembra che + congiuntivo."
+   }
+  },
+  {
+   "d": 232,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Italian art history in brief",
+     "g": "Learn key names and works: Giotto, Leonardo, Michelangelo, Caravaggio.",
+     "p": [
+      "Giotto (about 1300) gave figures real emotion and space: see his frescoes in the Cappella degli Scrovegni, Padua.",
+      "Renaissance: Leonardo da Vinci painted la Gioconda and l'Ultima Cena; Michelangelo carved the David and painted the Sistine Chapel ceiling.",
+      "Caravaggio (around 1600) used dramatic light and shadow, called chiaroscuro. Words: l'affresco, la scultura, il capolavoro."
+     ],
+     "q": "Which Italian artist would you most like to see in person, and which work?",
+     "c": "Write one sentence about each artist with the passive: la Gioconda è stata dipinta da..."
+    },
+    "de": {
+     "t": "Italienische Kunstgeschichte kurz",
+     "g": "Du lernst wichtige Namen und Werke: Giotto, Leonardo, Michelangelo, Caravaggio.",
+     "p": [
+      "Giotto (um 1300) gab Figuren echte Gefühle und Raum: seine Fresken in der Cappella degli Scrovegni in Padua.",
+      "Renaissance: Leonardo da Vinci malte la Gioconda und l'Ultima Cena; Michelangelo schuf den David und die Decke der Sixtina.",
+      "Caravaggio (um 1600) arbeitete mit dramatischem Licht und Schatten, dem chiaroscuro. Wörter: l'affresco, la scultura, il capolavoro."
+     ],
+     "q": "Welchen italienischen Künstler würdest du am liebsten live sehen, und welches Werk?",
+     "c": "Schreib zu jedem Künstler einen Satz im Passiv: la Gioconda è stata dipinta da..."
+    },
+    "es": {
+     "t": "Breve historia del arte italiano",
+     "g": "Conocer nombres y obras clave: Giotto, Leonardo, Miguel Ángel, Caravaggio.",
+     "p": [
+      "Giotto (hacia 1300) dio emoción y espacio reales a las figuras: sus frescos de la Cappella degli Scrovegni en Padua.",
+      "Renacimiento: Leonardo da Vinci pintó la Gioconda y l'Ultima Cena; Michelangelo esculpió el David y pintó la bóveda de la Sixtina.",
+      "Caravaggio (hacia 1600) usó luces y sombras dramáticas, el chiaroscuro. Palabras: l'affresco, la scultura, il capolavoro."
+     ],
+     "q": "¿Qué artista italiano te gustaría ver en persona y qué obra?",
+     "c": "Escribe una frase sobre cada artista en pasiva: la Gioconda è stata dipinta da..."
+    },
+    "fr": {
+     "t": "L'histoire de l'art italien en bref",
+     "g": "Connaître les noms et œuvres clés : Giotto, Léonard, Michel-Ange, Caravage.",
+     "p": [
+      "Giotto (vers 1300) donne aux figures émotion et espace : ses fresques de la Cappella degli Scrovegni à Padoue.",
+      "Renaissance : Léonard de Vinci peint la Gioconda et l'Ultima Cena ; Michel-Ange sculpte le David et peint le plafond de la Sixtine.",
+      "Le Caravage (vers 1600) joue avec une lumière et des ombres dramatiques, le chiaroscuro. Mots : l'affresco, la scultura, il capolavoro."
+     ],
+     "q": "Quel artiste italien aimerais-tu le plus voir en vrai, et quelle œuvre ?",
+     "c": "Écris une phrase sur chaque artiste au passif : la Gioconda è stata dipinta da..."
+    },
+    "it": {
+     "t": "Breve storia dell'arte italiana",
+     "g": "Conoscere i nomi e le opere principali: Giotto, Leonardo, Michelangelo, Caravaggio.",
+     "p": [
+      "Giotto (intorno al 1300) dà alle figure emozioni e spazio reali: gli affreschi della Cappella degli Scrovegni a Padova.",
+      "Rinascimento: Leonardo dipinge la Gioconda e l'Ultima Cena; Michelangelo scolpisce il David e affresca la volta della Cappella Sistina.",
+      "Caravaggio (intorno al 1600) usa luci e ombre drammatiche: il chiaroscuro. Parole: l'affresco, la scultura, il capolavoro."
+     ],
+     "q": "Quale artista italiano ti piacerebbe di più vedere dal vivo, e quale opera?",
+     "c": "Scrivi una frase su ogni artista al passivo: la Gioconda è stata dipinta da..."
+    },
+    "pt": {
+     "t": "Breve história da arte italiana",
+     "g": "Conhecer nomes e obras principais: Giotto, Leonardo, Miguel Ângelo, Caravaggio.",
+     "p": [
+      "Giotto (por volta de 1300) deu emoção e espaço reais às figuras: os frescos da Cappella degli Scrovegni em Pádua.",
+      "Renascimento: Leonardo pintou la Gioconda e l'Ultima Cena; Michelangelo esculpiu o David e pintou o teto da Capela Sistina.",
+      "Caravaggio (por volta de 1600) usou luz e sombra dramáticas, o chiaroscuro. Palavras: l'affresco, la scultura, il capolavoro."
+     ],
+     "q": "Que artista italiano gostarias mais de ver ao vivo, e que obra?",
+     "c": "Escreve uma frase sobre cada artista na passiva: la Gioconda è stata dipinta da..."
+    },
+    "pt_BR": {
+     "t": "Breve história da arte italiana",
+     "g": "Conhecer nomes e obras principais: Giotto, Leonardo, Michelangelo, Caravaggio.",
+     "p": [
+      "Giotto (por volta de 1300) deu emoção e espaço reais às figuras: os afrescos da Cappella degli Scrovegni em Pádua.",
+      "Renascimento: Leonardo pintou la Gioconda e l'Ultima Cena; Michelangelo esculpiu o Davi e pintou o teto da Capela Sistina.",
+      "Caravaggio (por volta de 1600) usou luz e sombra dramáticas, o chiaroscuro. Palavras: l'affresco, la scultura, il capolavoro."
+     ],
+     "q": "Que artista italiano você mais gostaria de ver ao vivo, e qual obra?",
+     "c": "Escreva uma frase sobre cada artista na passiva: la Gioconda è stata dipinta da..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "l'affresco",
+      "ex": "Gli affreschi di Giotto si trovano a Padova."
+     },
+     {
+      "w": "il capolavoro",
+      "ex": "Il David è il capolavoro di Michelangelo."
+     },
+     {
+      "w": "la scultura",
+      "ex": "La scultura è alta più di cinque metri."
+     },
+     {
+      "w": "il Rinascimento",
+      "ex": "Firenze è la culla del Rinascimento."
+     },
+     {
+      "w": "il chiaroscuro",
+      "ex": "Caravaggio è famoso per il suo chiaroscuro."
+     },
+     {
+      "w": "è stata dipinta da",
+      "ex": "La Gioconda è stata dipinta da Leonardo da Vinci."
+     }
+    ],
+    "gram": "Parlare di storia dell'arte: passivo (è stato scolpito da) e presente storico (Leonardo dipinge la Gioconda)."
+   }
+  },
+  {
+   "d": 233,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Italian architecture",
+     "g": "Learn Roman, Romanesque, Renaissance and Baroque buildings and their words.",
+     "p": [
+      "Roman: il Colosseo, il Pantheon, l'arco, l'acquedotto. Romanesque (romanico): thick walls, round arches, the Duomo di Modena.",
+      "Renaissance (rinascimentale): harmony and proportion, la cupola del Brunelleschi on Florence cathedral.",
+      "Baroque (barocco): curves and drama, Bernini's colonnato in Piazza San Pietro, the city of Lecce. Words: la facciata, la colonna."
+     ],
+     "q": "Which style do you prefer: the simple Romanesque or the rich Baroque? Why?",
+     "c": "Describe a building in your city: its style, la facciata, the materials and what you think of it."
+    },
+    "de": {
+     "t": "Italienische Architektur",
+     "g": "Du lernst römische, romanische, Renaissance- und Barockbauten und ihre Wörter.",
+     "p": [
+      "Römisch: il Colosseo, il Pantheon, l'arco, l'acquedotto. Romanisch (romanico): dicke Mauern, Rundbögen, der Duomo di Modena.",
+      "Renaissance (rinascimentale): Harmonie und Proportion, la cupola del Brunelleschi auf dem Dom von Florenz.",
+      "Barock (barocco): Kurven und Dramatik, Berninis colonnato auf dem Petersplatz, die Stadt Lecce. Wörter: la facciata, la colonna."
+     ],
+     "q": "Welchen Stil magst du lieber: die schlichte Romanik oder den reichen Barock? Warum?",
+     "c": "Beschreib ein Gebäude in deiner Stadt: Stil, la facciata, Materialien und deine Meinung."
+    },
+    "es": {
+     "t": "Arquitectura italiana",
+     "g": "Conocer edificios romanos, románicos, renacentistas y barrocos y su vocabulario.",
+     "p": [
+      "Romano: il Colosseo, il Pantheon, l'arco, l'acquedotto. Románico (romanico): muros gruesos, arcos redondos, el Duomo di Modena.",
+      "Renacimiento (rinascimentale): armonía y proporción, la cupola del Brunelleschi en la catedral de Florencia.",
+      "Barroco (barocco): curvas y teatralidad, el colonnato de Bernini en San Pedro, la ciudad de Lecce. Palabras: la facciata, la colonna."
+     ],
+     "q": "¿Qué estilo prefieres: el románico sencillo o el barroco recargado? ¿Por qué?",
+     "c": "Describe un edificio de tu ciudad: su estilo, la facciata, los materiales y qué te parece."
+    },
+    "fr": {
+     "t": "L'architecture italienne",
+     "g": "Découvrir les bâtiments romains, romans, Renaissance et baroques et leur vocabulaire.",
+     "p": [
+      "Romain : il Colosseo, il Pantheon, l'arco, l'acquedotto. Roman (romanico) : murs épais, arcs en plein cintre, le Duomo di Modena.",
+      "Renaissance (rinascimentale) : harmonie et proportions, la cupola del Brunelleschi sur la cathédrale de Florence.",
+      "Baroque (barocco) : courbes et théâtralité, le colonnato du Bernin place Saint-Pierre, la ville de Lecce. Mots : la facciata, la colonna."
+     ],
+     "q": "Quel style préfères-tu : le roman sobre ou le baroque foisonnant ? Pourquoi ?",
+     "c": "Décris un bâtiment de ta ville : son style, la facciata, les matériaux et ton avis."
+    },
+    "it": {
+     "t": "L'architettura italiana",
+     "g": "Conoscere edifici romani, romanici, rinascimentali e barocchi e le loro parole.",
+     "p": [
+      "Romano: il Colosseo, il Pantheon, l'arco, l'acquedotto. Romanico: muri spessi, archi a tutto sesto, il Duomo di Modena.",
+      "Rinascimentale: armonia e proporzione, la cupola del Brunelleschi sul Duomo di Firenze.",
+      "Barocco: curve e teatralità, il colonnato del Bernini in Piazza San Pietro, la città di Lecce. Parole: la facciata, la colonna."
+     ],
+     "q": "Quale stile preferisci: il romanico semplice o il barocco ricco? Perché?",
+     "c": "Descrivi un edificio della tua città: lo stile, la facciata, i materiali e che cosa ne pensi."
+    },
+    "pt": {
+     "t": "Arquitetura italiana",
+     "g": "Conhecer edifícios romanos, românicos, renascentistas e barrocos e o seu vocabulário.",
+     "p": [
+      "Romano: il Colosseo, il Pantheon, l'arco, l'acquedotto. Românico (romanico): paredes grossas, arcos redondos, o Duomo di Modena.",
+      "Renascimento (rinascimentale): harmonia e proporção, la cupola del Brunelleschi na catedral de Florença.",
+      "Barroco (barocco): curvas e teatralidade, o colonnato de Bernini em São Pedro, a cidade de Lecce. Palavras: la facciata, la colonna."
+     ],
+     "q": "Que estilo preferes: o românico simples ou o barroco rico? Porquê?",
+     "c": "Descreve um edifício da tua cidade: o estilo, la facciata, os materiais e o que achas dele."
+    },
+    "pt_BR": {
+     "t": "Arquitetura italiana",
+     "g": "Conhecer construções romanas, românicas, renascentistas e barrocas e seu vocabulário.",
+     "p": [
+      "Romano: il Colosseo, il Pantheon, l'arco, l'acquedotto. Românico (romanico): muros grossos, arcos redondos, Duomo di Modena.",
+      "Renascimento (rinascimentale): harmonia e proporção, la cupola del Brunelleschi na catedral de Florença.",
+      "Barroco (barocco): curvas e teatralidade, o colonnato de Bernini em São Pedro, a cidade de Lecce. Palavras: la facciata, la colonna."
+     ],
+     "q": "Que estilo você prefere: o românico simples ou o barroco rico? Por quê?",
+     "c": "Descreva um prédio da sua cidade: o estilo, la facciata, os materiais e o que você acha dele."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la cupola",
+      "ex": "La cupola del Brunelleschi domina il panorama di Firenze."
+     },
+     {
+      "w": "la facciata",
+      "ex": "La facciata della chiesa è in marmo bianco e verde."
+     },
+     {
+      "w": "la colonna",
+      "ex": "Il portico è sostenuto da grandi colonne."
+     },
+     {
+      "w": "l'arco",
+      "ex": "Gli antichi Romani usavano molto l'arco."
+     },
+     {
+      "w": "romanico",
+      "ex": "Il Duomo di Modena è un bell'esempio di stile romanico."
+     },
+     {
+      "w": "barocco",
+      "ex": "Lecce è famosa per le sue chiese barocche."
+     }
+    ],
+    "gram": "Aggettivi di stile: romano, romanico, rinascimentale, barocco (concordano: chiese barocche). In stile + aggettivo."
+   }
+  },
+  {
+   "d": 234,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Italian cinema classics",
+     "g": "Discover Fellini, De Sica and famous films, and describe a scene and its mood.",
+     "p": [
+      "Neorealism showed everyday life after the war: Vittorio De Sica's Ladri di biciclette (1948) follows a father and his son in Rome.",
+      "Federico Fellini's La dolce vita (1960) has the famous scene in the Fontana di Trevi. Also by Fellini: 8½ and Amarcord.",
+      "Describe mood: la scena è malinconica, poetica, ironica, sognante; il regista, la colonna sonora, in bianco e nero."
+     ],
+     "q": "Have you seen an Italian film? Describe one scene and its atmosphere.",
+     "c": "Describe a favourite film scene in four sentences with la scena, il regista, la colonna sonora and an adjective of mood."
+    },
+    "de": {
+     "t": "Klassiker des italienischen Kinos",
+     "g": "Du entdeckst Fellini, De Sica und berühmte Filme und beschreibst eine Szene und ihre Stimmung.",
+     "p": [
+      "Der Neorealismus zeigte den Alltag nach dem Krieg: De Sicas Ladri di biciclette (1948) begleitet Vater und Sohn in Rom.",
+      "Fellinis La dolce vita (1960) hat die berühmte Szene im Trevi-Brunnen. Ebenfalls von Fellini: 8½ und Amarcord.",
+      "Stimmung beschreiben: la scena è malinconica, poetica, ironica, sognante; il regista, la colonna sonora, in bianco e nero."
+     ],
+     "q": "Hast du schon einen italienischen Film gesehen? Beschreib eine Szene und ihre Atmosphäre.",
+     "c": "Beschreib eine Lieblingsfilmszene in vier Sätzen mit la scena, il regista, la colonna sonora und einem Stimmungsadjektiv."
+    },
+    "es": {
+     "t": "Clásicos del cine italiano",
+     "g": "Descubrir a Fellini, De Sica y películas famosas, y describir una escena y su ambiente.",
+     "p": [
+      "El neorrealismo mostró la vida cotidiana de posguerra: Ladri di biciclette (1948) de De Sica sigue a un padre y su hijo en Roma.",
+      "La dolce vita (1960) de Fellini tiene la famosa escena en la Fontana di Trevi. También de Fellini: 8½ y Amarcord.",
+      "Describir el ambiente: la scena è malinconica, poetica, ironica, sognante; il regista, la colonna sonora, in bianco e nero."
+     ],
+     "q": "¿Has visto alguna película italiana? Describe una escena y su atmósfera.",
+     "c": "Describe tu escena de cine favorita en cuatro frases con la scena, il regista, la colonna sonora y un adjetivo de ambiente."
+    },
+    "fr": {
+     "t": "Les classiques du cinéma italien",
+     "g": "Découvrir Fellini, De Sica et des films célèbres, et décrire une scène et son ambiance.",
+     "p": [
+      "Le néoréalisme montre le quotidien d'après-guerre : Ladri di biciclette (1948) de De Sica suit un père et son fils à Rome.",
+      "La dolce vita (1960) de Fellini contient la célèbre scène de la fontaine de Trevi. Aussi de Fellini : 8½ et Amarcord.",
+      "Décrire l'ambiance : la scena è malinconica, poetica, ironica, sognante ; il regista, la colonna sonora, in bianco e nero."
+     ],
+     "q": "As-tu vu un film italien ? Décris une scène et son atmosphère.",
+     "c": "Décris ta scène de film préférée en quatre phrases avec la scena, il regista, la colonna sonora et un adjectif d'ambiance."
+    },
+    "it": {
+     "t": "I classici del cinema italiano",
+     "g": "Scoprire Fellini, De Sica e film famosi, e descrivere una scena e la sua atmosfera.",
+     "p": [
+      "Il neorealismo racconta la vita quotidiana del dopoguerra: Ladri di biciclette (1948) di De Sica segue un padre e un figlio a Roma.",
+      "La dolce vita (1960) di Fellini ha la famosa scena nella Fontana di Trevi. Sempre di Fellini: 8½ e Amarcord.",
+      "Descrivere l'atmosfera: la scena è malinconica, poetica, ironica, sognante; il regista, la colonna sonora, in bianco e nero."
+     ],
+     "q": "Hai mai visto un film italiano? Descrivi una scena e la sua atmosfera.",
+     "c": "Descrivi la tua scena preferita in quattro frasi con la scena, il regista, la colonna sonora e un aggettivo d'atmosfera."
+    },
+    "pt": {
+     "t": "Clássicos do cinema italiano",
+     "g": "Descobrir Fellini, De Sica e filmes famosos, e descrever uma cena e o seu ambiente.",
+     "p": [
+      "O neorrealismo mostrou o quotidiano do pós-guerra: Ladri di biciclette (1948) de De Sica segue um pai e o filho em Roma.",
+      "La dolce vita (1960) de Fellini tem a famosa cena na Fontana di Trevi. Também de Fellini: 8½ e Amarcord.",
+      "Descrever o ambiente: la scena è malinconica, poetica, ironica, sognante; il regista, la colonna sonora, in bianco e nero."
+     ],
+     "q": "Já viste algum filme italiano? Descreve uma cena e a sua atmosfera.",
+     "c": "Descreve a tua cena de cinema preferida em quatro frases com la scena, il regista, la colonna sonora e um adjetivo de ambiente."
+    },
+    "pt_BR": {
+     "t": "Clássicos do cinema italiano",
+     "g": "Descobrir Fellini, De Sica e filmes famosos, e descrever uma cena e seu clima.",
+     "p": [
+      "O neorrealismo mostrou o cotidiano do pós-guerra: Ladri di biciclette (1948) de De Sica acompanha um pai e o filho em Roma.",
+      "La dolce vita (1960) de Fellini tem a famosa cena na Fontana di Trevi. Também de Fellini: 8½ e Amarcord.",
+      "Descrever o clima: la scena è malinconica, poetica, ironica, sognante; il regista, la colonna sonora, in bianco e nero."
+     ],
+     "q": "Você já viu algum filme italiano? Descreva uma cena e o clima dela.",
+     "c": "Descreva sua cena de cinema favorita em quatro frases com la scena, il regista, la colonna sonora e um adjetivo de clima."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il regista",
+      "ex": "Federico Fellini è un regista famoso in tutto il mondo."
+     },
+     {
+      "w": "la scena",
+      "ex": "La scena nella Fontana di Trevi è indimenticabile."
+     },
+     {
+      "w": "la colonna sonora",
+      "ex": "La colonna sonora del film è molto romantica e dolce."
+     },
+     {
+      "w": "in bianco e nero",
+      "ex": "Ladri di biciclette è un film in bianco e nero."
+     },
+     {
+      "w": "il neorealismo",
+      "ex": "Il neorealismo racconta la vita delle persone comuni."
+     },
+     {
+      "w": "malinconico",
+      "ex": "Il finale del film è un po' malinconico."
+     }
+    ],
+    "gram": "Parlare di un film: il film racconta / parla di..., è ambientato a..., è stato girato nel... (passivo)."
+   }
+  },
+  {
+   "d": 235,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Italian music: from opera to pop",
+     "g": "Learn music vocabulary and history: Verdi, Puccini, cantautori and Sanremo.",
+     "p": [
+      "Opera: Giuseppe Verdi (La traviata, Aida, Nabucco) and Giacomo Puccini (La bohème, Tosca). Words: l'aria, il tenore, il soprano.",
+      "Cantautori are singer-songwriters with poetic lyrics: Lucio Dalla, Lucio Battisti, Fabrizio De André, Francesco Guccini.",
+      "The Festival di Sanremo, held since 1951, is Italy's most famous song contest. Words: la canzone, il testo, il ritornello."
+     ],
+     "q": "What kind of music do you listen to? Do you know any Italian song or singer?",
+     "c": "Pick an Italian song, read the testo, and write three sentences about it: who sings it, what it talks about, how it makes you feel."
+    },
+    "de": {
+     "t": "Italienische Musik: von Oper bis Pop",
+     "g": "Du lernst Musikwortschatz und Geschichte: Verdi, Puccini, cantautori und Sanremo.",
+     "p": [
+      "Oper: Giuseppe Verdi (La traviata, Aida, Nabucco) und Giacomo Puccini (La bohème, Tosca). Wörter: l'aria, il tenore, il soprano.",
+      "Cantautori sind Liedermacher mit poetischen Texten: Lucio Dalla, Lucio Battisti, Fabrizio De André, Francesco Guccini.",
+      "Das Festival di Sanremo, seit 1951, ist Italiens berühmtester Liederwettbewerb. Wörter: la canzone, il testo, il ritornello."
+     ],
+     "q": "Welche Musik hörst du? Kennst du ein italienisches Lied oder einen Sänger?",
+     "c": "Wähl ein italienisches Lied, lies den testo und schreib drei Sätze: wer es singt, worum es geht, wie es auf dich wirkt."
+    },
+    "es": {
+     "t": "Música italiana: de la ópera al pop",
+     "g": "Aprender vocabulario e historia musical: Verdi, Puccini, cantautori y Sanremo.",
+     "p": [
+      "Ópera: Giuseppe Verdi (La traviata, Aida, Nabucco) y Giacomo Puccini (La bohème, Tosca). Palabras: l'aria, il tenore, il soprano.",
+      "Los cantautori escriben letras poéticas: Dalla, Lucio Battisti, Fabrizio De André, Francesco Guccini.",
+      "El Festival di Sanremo, desde 1951, es el concurso de canciones más famoso del país. Palabras: la canzone, il testo, il ritornello."
+     ],
+     "q": "¿Qué música escuchas? ¿Conoces alguna canción o cantante italiano?",
+     "c": "Elige una canción italiana, lee il testo y escribe tres frases: quién la canta, de qué habla y qué te hace sentir."
+    },
+    "fr": {
+     "t": "La musique italienne : de l'opéra à la pop",
+     "g": "Apprendre le vocabulaire et l'histoire de la musique : Verdi, Puccini, cantautori et Sanremo.",
+     "p": [
+      "Opéra : Giuseppe Verdi (La traviata, Aida, Nabucco) et Giacomo Puccini (La bohème, Tosca). Mots : l'aria, il tenore, il soprano.",
+      "Les cantautori écrivent des textes poétiques : Lucio Dalla, Lucio Battisti, Fabrizio De André, Francesco Guccini.",
+      "Le Festival di Sanremo, depuis 1951, est le concours de chansons le plus célèbre d'Italie. Mots : la canzone, il testo, il ritornello."
+     ],
+     "q": "Quelle musique écoutes-tu ? Connais-tu une chanson ou un chanteur italien ?",
+     "c": "Choisis une chanson italienne, lis il testo et écris trois phrases : qui la chante, de quoi elle parle, ce qu'elle te fait ressentir."
+    },
+    "it": {
+     "t": "La musica italiana: dall'opera al pop",
+     "g": "Imparare il lessico e la storia della musica: Verdi, Puccini, i cantautori e Sanremo.",
+     "p": [
+      "L'opera: Giuseppe Verdi (La traviata, Aida, Nabucco) e Giacomo Puccini (La bohème, Tosca). Parole: l'aria, il tenore, il soprano.",
+      "I cantautori scrivono e cantano testi poetici: Lucio Dalla, Lucio Battisti, Fabrizio De André, Francesco Guccini.",
+      "Il Festival di Sanremo, nato nel 1951, è la gara di canzoni più famosa d'Italia. Parole: la canzone, il testo, il ritornello."
+     ],
+     "q": "Che musica ascolti? Conosci una canzone o un cantante italiano?",
+     "c": "Scegli una canzone italiana, leggi il testo e scrivi tre frasi: chi la canta, di che cosa parla, che cosa ti fa provare."
+    },
+    "pt": {
+     "t": "Música italiana: da ópera ao pop",
+     "g": "Aprender vocabulário e história da música: Verdi, Puccini, cantautori e Sanremo.",
+     "p": [
+      "Ópera: Giuseppe Verdi (La traviata, Aida, Nabucco) e Giacomo Puccini (La bohème, Tosca). Palavras: l'aria, il tenore, il soprano.",
+      "Os cantautori são cantores-compositores com letras poéticas: Lucio Dalla, Lucio Battisti, Fabrizio De André, Francesco Guccini.",
+      "O Festival di Sanremo, realizado desde 1951, é o concurso de canções mais famoso de Itália. Palavras: la canzone, il testo, il ritornello."
+     ],
+     "q": "Que música ouves? Conheces alguma canção ou cantor italiano?",
+     "c": "Escolhe uma canção italiana, lê il testo e escreve três frases: quem a canta, de que fala e o que te faz sentir."
+    },
+    "pt_BR": {
+     "t": "Música italiana: da ópera ao pop",
+     "g": "Aprender vocabulário e história da música: Verdi, Puccini, cantautori e Sanremo.",
+     "p": [
+      "Ópera: Giuseppe Verdi (La traviata, Aida, Nabucco) e Giacomo Puccini (La bohème, Tosca). Palavras: l'aria, il tenore, il soprano.",
+      "Os cantautori são cantores-compositores com letras poéticas: Lucio Dalla, Lucio Battisti, Fabrizio De André, Francesco Guccini.",
+      "O Festival di Sanremo, realizado desde 1951, é o concurso de músicas mais famoso da Itália. Palavras: la canzone, il testo, il ritornello."
+     ],
+     "q": "Que música você ouve? Conhece alguma música ou cantor italiano?",
+     "c": "Escolha uma música italiana, leia il testo e escreva três frases: quem canta, do que fala e o que te faz sentir."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "l'opera lirica",
+      "ex": "Verdi e Puccini hanno scritto opere liriche famosissime."
+     },
+     {
+      "w": "il cantautore",
+      "ex": "Lucio Dalla è un cantautore molto amato."
+     },
+     {
+      "w": "il testo",
+      "ex": "Il testo di questa canzone è molto poetico."
+     },
+     {
+      "w": "il ritornello",
+      "ex": "Il ritornello è facile da ricordare."
+     },
+     {
+      "w": "il Festival di Sanremo",
+      "ex": "Ogni anno milioni di italiani guardano il Festival di Sanremo."
+     },
+     {
+      "w": "l'aria",
+      "ex": "Quest'aria di Puccini è conosciuta in tutto il mondo."
+     }
+    ],
+    "gram": "Parlare di musica: la canzone parla di..., è cantata da..., mi fa venire voglia di... + infinito."
+   }
+  },
+  {
+   "d": 236,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Italian literature: Dante",
+     "g": "Discover who Dante was, the Divina Commedia and phrases still used today.",
+     "p": [
+      "Dante Alighieri (Florence, 1265-1321) wrote the Divina Commedia in Florentine, not Latin: il padre della lingua italiana.",
+      "The poem is a journey in three parts (Inferno, Purgatorio, Paradiso), in tercets (terzine). It opens: Nel mezzo del cammin di nostra vita.",
+      "Phrases still used: il Bel Paese (Italy), senza infamia e senza lode (just average), non ti curar di loro, ma guarda e passa."
+     ],
+     "q": "Is there a classic writer in your country that everyone quotes? Which phrase?",
+     "c": "Learn the first line by heart and explain in Italian what senza infamia e senza lode means with an example."
+    },
+    "de": {
+     "t": "Italienische Literatur: Dante",
+     "g": "Du erfährst, wer Dante war, was die Divina Commedia ist und welche Sätze man heute noch benutzt.",
+     "p": [
+      "Dante Alighieri (Florenz, 1265-1321) schrieb die Divina Commedia auf Florentinisch, nicht Latein: il padre della lingua italiana.",
+      "Das Werk ist eine Reise in drei Teilen (Inferno, Purgatorio, Paradiso) in Terzinen. Es beginnt: Nel mezzo del cammin di nostra vita.",
+      "Noch heute: il Bel Paese (Italien), senza infamia e senza lode (mittelmäßig), non ti curar di loro, ma guarda e passa."
+     ],
+     "q": "Gibt es in deinem Land einen Klassiker, den alle zitieren? Welchen Satz?",
+     "c": "Lern den ersten Vers auswendig und erkläre auf Italienisch mit einem Beispiel, was senza infamia e senza lode bedeutet."
+    },
+    "es": {
+     "t": "Literatura italiana: Dante",
+     "g": "Descubrir quién fue Dante, la Divina Commedia y frases que aún se usan.",
+     "p": [
+      "Dante Alighieri (Florencia, 1265-1321) escribió la Divina Commedia en lengua vulgar florentina, no en latín: il padre della lingua italiana.",
+      "La obra es un viaje en tres partes (Inferno, Purgatorio, Paradiso), en tercetos. Empieza: Nel mezzo del cammin di nostra vita.",
+      "Frases vivas: il Bel Paese (Italia), senza infamia e senza lode (sin pena ni gloria), non ti curar di loro, ma guarda e passa."
+     ],
+     "q": "¿Hay un clásico en tu país que todo el mundo cita? ¿Qué frase?",
+     "c": "Aprende de memoria el primer verso y explica en italiano qué significa senza infamia e senza lode con un ejemplo."
+    },
+    "fr": {
+     "t": "La littérature italienne : Dante",
+     "g": "Découvrir qui était Dante, la Divina Commedia et des phrases encore utilisées.",
+     "p": [
+      "Dante Alighieri (Florence, 1265-1321) a écrit la Divina Commedia en florentin vulgaire, pas en latin : il padre della lingua italiana.",
+      "L'œuvre est un voyage en trois parties (Inferno, Purgatorio, Paradiso), en tercets. Elle commence : Nel mezzo del cammin di nostra vita.",
+      "Encore utilisées : il Bel Paese (l'Italie), senza infamia e senza lode (ni bien ni mal), non ti curar di loro, ma guarda e passa."
+     ],
+     "q": "Y a-t-il dans ton pays un classique que tout le monde cite ? Quelle phrase ?",
+     "c": "Apprends le premier vers par cœur et explique en italien ce que veut dire senza infamia e senza lode avec un exemple."
+    },
+    "it": {
+     "t": "La letteratura italiana: Dante",
+     "g": "Scoprire chi era Dante, la Divina Commedia e le frasi che usiamo ancora oggi.",
+     "p": [
+      "Dante Alighieri (Firenze, 1265-1321) scrisse la Divina Commedia in volgare fiorentino, non in latino: è il padre della lingua italiana.",
+      "L'opera è un viaggio in tre cantiche (Inferno, Purgatorio, Paradiso), in terzine. Comincia: Nel mezzo del cammin di nostra vita.",
+      "Frasi ancora vive: il Bel Paese (l'Italia), senza infamia e senza lode (nella media), non ti curar di loro, ma guarda e passa."
+     ],
+     "q": "Nel tuo Paese c'è uno scrittore classico che tutti citano? Quale frase?",
+     "c": "Impara a memoria il primo verso e spiega con un esempio che cosa significa senza infamia e senza lode."
+    },
+    "pt": {
+     "t": "Literatura italiana: Dante",
+     "g": "Descobrir quem foi Dante, a Divina Commedia e frases que ainda se usam.",
+     "p": [
+      "Dante Alighieri (Florença, 1265-1321) escreveu a Divina Commedia em vulgar florentino, não em latim: il padre della lingua italiana.",
+      "A obra é uma viagem em três partes (Inferno, Purgatorio, Paradiso), em tercetos. Começa: Nel mezzo del cammin di nostra vita.",
+      "Frases ainda vivas: il Bel Paese (Itália), senza infamia e senza lode (assim-assim), non ti curar di loro, ma guarda e passa."
+     ],
+     "q": "Há no teu país um clássico que toda a gente cita? Que frase?",
+     "c": "Aprende de cor o primeiro verso e explica em italiano o que significa senza infamia e senza lode, com um exemplo."
+    },
+    "pt_BR": {
+     "t": "Literatura italiana: Dante",
+     "g": "Descobrir quem foi Dante, a Divina Commedia e frases que ainda se usam.",
+     "p": [
+      "Dante Alighieri (Florença, 1265-1321) escreveu a Divina Commedia em vulgar florentino, não em latim: il padre della lingua italiana.",
+      "A obra é uma viagem em três partes (Inferno, Purgatorio, Paradiso), em tercetos. Começa: Nel mezzo del cammin di nostra vita.",
+      "Frases ainda vivas: il Bel Paese (Itália), senza infamia e senza lode (nem bom nem ruim), non ti curar di loro, ma guarda e passa."
+     ],
+     "q": "No seu país existe um clássico que todo mundo cita? Que frase?",
+     "c": "Decore o primeiro verso e explique em italiano o que significa senza infamia e senza lode, com um exemplo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la Divina Commedia",
+      "ex": "La Divina Commedia è stata scritta all'inizio del Trecento."
+     },
+     {
+      "w": "il volgare",
+      "ex": "Dante scrisse in volgare per essere capito da tutti."
+     },
+     {
+      "w": "la terzina",
+      "ex": "Ogni terzina ha tre versi."
+     },
+     {
+      "w": "il Bel Paese",
+      "ex": "Molti turisti visitano il Bel Paese ogni estate."
+     },
+     {
+      "w": "senza infamia e senza lode",
+      "ex": "Il ristorante era senza infamia e senza lode."
+     },
+     {
+      "w": "il verso",
+      "ex": "Il primo verso della Commedia è famosissimo."
+     }
+    ],
+    "gram": "Passato remoto nella storia letteraria: Dante nacque, scrisse, visse. Si usa per fatti lontani e conclusi."
+   }
+  },
+  {
+   "d": 237,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Italian literature: modern authors",
+     "g": "Meet Calvino, Ginzburg, Eco, and learn how to talk about a novel.",
+     "p": [
+      "Italo Calvino played with fantasy and structure: Il barone rampante, Le città invisibili, Marcovaldo.",
+      "Natalia Ginzburg wrote about family with a simple, ironic voice: Lessico famigliare. Umberto Eco wrote Il nome della rosa.",
+      "Talk about a book: il romanzo, la trama (plot), il personaggio, il protagonista, è ambientato a..., lo stile, me lo consiglieresti?"
+     ],
+     "q": "What is the last book you read? Tell me about the trama and the protagonista in Italian.",
+     "c": "Write a mini review: title, author, è ambientato..., la trama in two sentences, and te lo consiglio perché..."
+    },
+    "de": {
+     "t": "Italienische Literatur: moderne Autoren",
+     "g": "Du lernst Calvino, Ginzburg und Eco kennen und wie man über einen Roman spricht.",
+     "p": [
+      "Italo Calvino spielte mit Fantasie und Struktur: Il barone rampante, Le città invisibili, Marcovaldo.",
+      "Natalia Ginzburg schrieb schlicht und ironisch über Familie: Lessico famigliare. Umberto Eco schrieb Il nome della rosa.",
+      "Über ein Buch reden: il romanzo, la trama (Handlung), il personaggio, il protagonista, è ambientato a..., lo stile."
+     ],
+     "q": "Was ist das letzte Buch, das du gelesen hast? Erzähl auf Italienisch von der trama und dem protagonista.",
+     "c": "Schreib eine Minirezension: Titel, Autor, è ambientato..., la trama in zwei Sätzen und te lo consiglio perché..."
+    },
+    "es": {
+     "t": "Literatura italiana: autores modernos",
+     "g": "Conocer a Calvino, Ginzburg y Eco, y aprender a hablar de una novela.",
+     "p": [
+      "Italo Calvino jugó con la fantasía y la estructura: Il barone rampante, Le città invisibili, Marcovaldo.",
+      "Natalia Ginzburg escribió sobre la familia con voz sencilla e irónica: Lessico famigliare. Eco escribió Il nome della rosa.",
+      "Hablar de un libro: il romanzo, la trama, il personaggio, il protagonista, è ambientato a..., lo stile, me lo consiglieresti?"
+     ],
+     "q": "¿Cuál es el último libro que leíste? Háblame de la trama y del protagonista en italiano.",
+     "c": "Escribe una minirreseña: título, autor, è ambientato..., la trama en dos frases y te lo consiglio perché..."
+    },
+    "fr": {
+     "t": "Littérature italienne : auteurs modernes",
+     "g": "Découvrir Calvino, Ginzburg et Eco, et apprendre à parler d'un roman.",
+     "p": [
+      "Italo Calvino joue avec l'imaginaire et la structure : Il barone rampante, Le città invisibili, Marcovaldo.",
+      "Natalia Ginzburg écrit sur la famille d'une voix simple et ironique : Lessico famigliare. Eco a écrit Il nome della rosa.",
+      "Parler d'un livre : il romanzo, la trama (l'intrigue), il personaggio, il protagonista, è ambientato a..., lo stile."
+     ],
+     "q": "Quel est le dernier livre que tu as lu ? Parle-moi de la trama et du protagonista en italien.",
+     "c": "Écris une mini-critique : titre, auteur, è ambientato..., la trama en deux phrases et te lo consiglio perché..."
+    },
+    "it": {
+     "t": "La letteratura italiana moderna",
+     "g": "Conoscere Calvino, Ginzburg ed Eco e imparare a parlare di un romanzo.",
+     "p": [
+      "Italo Calvino gioca con la fantasia e la struttura: Il barone rampante, Le città invisibili, Marcovaldo.",
+      "Natalia Ginzburg racconta la famiglia con una voce semplice e ironica: Lessico famigliare. Umberto Eco ha scritto Il nome della rosa.",
+      "Parlare di un libro: il romanzo, la trama, il personaggio, il protagonista, è ambientato a..., lo stile, me lo consiglieresti?"
+     ],
+     "q": "Qual è l'ultimo libro che hai letto? Raccontami la trama e il protagonista.",
+     "c": "Scrivi una mini recensione: titolo, autore, è ambientato..., la trama in due frasi e te lo consiglio perché..."
+    },
+    "pt": {
+     "t": "Literatura italiana: autores modernos",
+     "g": "Conhecer Calvino, Ginzburg e Eco, e aprender a falar de um romance.",
+     "p": [
+      "Italo Calvino brincou com a fantasia e a estrutura: Il barone rampante, Le città invisibili, Marcovaldo.",
+      "Natalia Ginzburg escreveu sobre a família com uma voz simples e irónica: Lessico famigliare. Eco escreveu Il nome della rosa.",
+      "Falar de um livro: il romanzo, la trama (enredo), il personaggio, il protagonista, è ambientato a..., lo stile."
+     ],
+     "q": "Qual foi o último livro que leste? Fala-me da trama e do protagonista em italiano.",
+     "c": "Escreve uma minicrítica: título, autor, è ambientato..., la trama em duas frases e te lo consiglio perché..."
+    },
+    "pt_BR": {
+     "t": "Literatura italiana: autores modernos",
+     "g": "Conhecer Calvino, Ginzburg e Eco, e aprender a falar de um romance.",
+     "p": [
+      "Italo Calvino brincou com a fantasia e a estrutura: Il barone rampante, Le città invisibili, Marcovaldo.",
+      "Natalia Ginzburg escreveu sobre a família com uma voz simples e irônica: Lessico famigliare. Eco escreveu Il nome della rosa.",
+      "Falar de um livro: il romanzo, la trama (enredo), il personaggio, il protagonista, è ambientato a..., lo stile."
+     ],
+     "q": "Qual foi o último livro que você leu? Fale da trama e do protagonista em italiano.",
+     "c": "Escreva uma minirresenha: título, autor, è ambientato..., la trama em duas frases e te lo consiglio perché..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il romanzo",
+      "ex": "Il barone rampante è un romanzo di Italo Calvino."
+     },
+     {
+      "w": "la trama",
+      "ex": "La trama è semplice ma molto originale."
+     },
+     {
+      "w": "il personaggio",
+      "ex": "Il mio personaggio preferito è Marcovaldo."
+     },
+     {
+      "w": "è ambientato",
+      "ex": "Il romanzo è ambientato in un'abbazia medievale."
+     },
+     {
+      "w": "la recensione",
+      "ex": "Ho scritto una breve recensione del libro."
+     },
+     {
+      "w": "te lo consiglio",
+      "ex": "È un libro bellissimo, te lo consiglio."
+     }
+    ],
+    "gram": "Parlare di un libro: è ambientato a / in..., racconta la storia di..., il protagonista è... Te lo consiglio (pronomi combinati)."
+   }
+  },
+  {
+   "d": 238,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Famous Italian inventions",
+     "g": "Talk about inventions: the espresso machine, the radio pioneers, the piano.",
+     "p": [
+      "Bartolomeo Cristofori built the first piano in Florence around 1700. Alessandro Volta invented the electric battery (la pila) in 1800.",
+      "Guglielmo Marconi was a pioneer of radio and won the Nobel Prize in Physics in 1909.",
+      "Espresso machines were developed in Turin and Milan from the late 1800s. Useful: inventare, l'invenzione, l'inventore, il brevetto."
+     ],
+     "q": "Which invention could you not live without? Answer with non potrei vivere senza... perché...",
+     "c": "Write three sentences in the passive about inventions: il pianoforte è stato inventato da..."
+    },
+    "de": {
+     "t": "Berühmte italienische Erfindungen",
+     "g": "Du sprichst über Erfindungen: die Espressomaschine, die Radiopioniere, das Klavier.",
+     "p": [
+      "Bartolomeo Cristofori baute um 1700 in Florenz das erste Klavier. Alessandro Volta erfand 1800 die elektrische Batterie (la pila).",
+      "Guglielmo Marconi war ein Pionier des Radios und erhielt 1909 den Nobelpreis für Physik.",
+      "Espressomaschinen entstanden ab Ende des 19. Jahrhunderts in Turin und Mailand. Wörter: inventare, l'invenzione, l'inventore, il brevetto."
+     ],
+     "q": "Ohne welche Erfindung könntest du nicht leben? Antworte mit non potrei vivere senza... perché...",
+     "c": "Schreib drei Sätze im Passiv über Erfindungen: il pianoforte è stato inventato da..."
+    },
+    "es": {
+     "t": "Inventos italianos famosos",
+     "g": "Hablar de inventos: la máquina de espresso, los pioneros de la radio, el piano.",
+     "p": [
+      "Bartolomeo Cristofori construyó el primer piano en Florencia hacia 1700. Alessandro Volta inventó la pila eléctrica en 1800.",
+      "Guglielmo Marconi fue un pionero de la radio y ganó el Premio Nobel de Física en 1909.",
+      "Las máquinas de espresso nacieron en Turín y Milán a finales del siglo XIX. Útil: inventare, l'invenzione, l'inventore, il brevetto."
+     ],
+     "q": "¿Sin qué invento no podrías vivir? Responde con non potrei vivere senza... perché...",
+     "c": "Escribe tres frases en pasiva sobre inventos: il pianoforte è stato inventato da..."
+    },
+    "fr": {
+     "t": "Inventions italiennes célèbres",
+     "g": "Parler d'inventions : la machine à espresso, les pionniers de la radio, le piano.",
+     "p": [
+      "Bartolomeo Cristofori construit le premier piano à Florence vers 1700. Alessandro Volta invente la pile électrique en 1800.",
+      "Guglielmo Marconi fut un pionnier de la radio et reçut le prix Nobel de physique en 1909.",
+      "Les machines à espresso naissent à Turin et Milan fin XIXe siècle. Utile : inventare, l'invenzione, l'inventore, il brevetto."
+     ],
+     "q": "Sans quelle invention ne pourrais-tu pas vivre ? Réponds avec non potrei vivere senza... perché...",
+     "c": "Écris trois phrases au passif sur des inventions : il pianoforte è stato inventato da..."
+    },
+    "it": {
+     "t": "Famose invenzioni italiane",
+     "g": "Parlare di invenzioni: la macchina per l'espresso, i pionieri della radio, il pianoforte.",
+     "p": [
+      "Bartolomeo Cristofori costruì il primo pianoforte a Firenze intorno al 1700. Alessandro Volta inventò la pila elettrica nel 1800.",
+      "Guglielmo Marconi fu un pioniere della radio e vinse il premio Nobel per la fisica nel 1909.",
+      "Le macchine per l'espresso nascono a Torino e Milano dalla fine dell'Ottocento. Parole: inventare, l'invenzione, l'inventore, il brevetto."
+     ],
+     "q": "Senza quale invenzione non potresti vivere? Rispondi con non potrei vivere senza... perché...",
+     "c": "Scrivi tre frasi al passivo su alcune invenzioni: il pianoforte è stato inventato da..."
+    },
+    "pt": {
+     "t": "Invenções italianas famosas",
+     "g": "Falar de invenções: a máquina de expresso, os pioneiros da rádio, o piano.",
+     "p": [
+      "Bartolomeo Cristofori construiu o primeiro piano em Florença por volta de 1700. Alessandro Volta inventou a pilha elétrica em 1800.",
+      "Guglielmo Marconi foi um pioneiro da rádio e ganhou o Prémio Nobel da Física em 1909.",
+      "As máquinas de expresso surgiram em Turim e Milão a partir do final do século XIX. Útil: inventare, l'invenzione, l'inventore, il brevetto."
+     ],
+     "q": "Sem que invenção não conseguirias viver? Responde com non potrei vivere senza... perché...",
+     "c": "Escreve três frases na passiva sobre invenções: il pianoforte è stato inventato da..."
+    },
+    "pt_BR": {
+     "t": "Invenções italianas famosas",
+     "g": "Falar de invenções: a máquina de espresso, os pioneiros do rádio, o piano.",
+     "p": [
+      "Bartolomeo Cristofori construiu o primeiro piano em Florença por volta de 1700. Alessandro Volta inventou a pilha elétrica em 1800.",
+      "Guglielmo Marconi foi um pioneiro do rádio e ganhou o Prêmio Nobel de Física em 1909.",
+      "As máquinas de espresso surgiram em Turim e Milão a partir do fim do século XIX. Útil: inventare, l'invenzione, l'inventore, il brevetto."
+     ],
+     "q": "Sem qual invenção você não conseguiria viver? Responda com non potrei vivere senza... perché...",
+     "c": "Escreva três frases na passiva sobre invenções: il pianoforte è stato inventato da..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "l'invenzione",
+      "ex": "Il pianoforte è un'invenzione italiana."
+     },
+     {
+      "w": "l'inventore",
+      "ex": "Alessandro Volta è l'inventore della pila."
+     },
+     {
+      "w": "è stato inventato da",
+      "ex": "Il pianoforte è stato inventato da Bartolomeo Cristofori."
+     },
+     {
+      "w": "il pioniere",
+      "ex": "Marconi è stato un pioniere della radio."
+     },
+     {
+      "w": "il brevetto",
+      "ex": "L'inventore ha depositato un brevetto."
+     },
+     {
+      "w": "non potrei vivere senza",
+      "ex": "Non potrei vivere senza il mio caffè del mattino."
+     }
+    ],
+    "gram": "Passivo e passato remoto per la storia: è stato inventato da...; Marconi vinse il premio Nobel nel 1909."
+   }
+  },
+  {
+   "d": 239,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Italian design and fashion",
+     "g": "Discover Milan, made in Italy and vocabulary for style and design.",
+     "p": [
+      "Milan is a world capital of fashion (la moda) and design: la settimana della moda, le sfilate (fashion shows), lo stilista.",
+      "Made in Italy icons: la Vespa (1946), la Fiat 500, la moka Bialetti. Quality craftsmanship is called l'artigianato.",
+      "Describe style: elegante, raffinato, sobrio, colorato, di tendenza (trendy), fatto a mano (handmade), su misura (tailor-made)."
+     ],
+     "q": "What is your personal style? Describe it with three Italian adjectives.",
+     "c": "Describe an object you love (a bag, a lamp, a chair) like a designer: material, shape, colour and why it is special."
+    },
+    "de": {
+     "t": "Italienisches Design und Mode",
+     "g": "Du entdeckst Mailand, made in Italy und Wortschatz für Stil und Design.",
+     "p": [
+      "Mailand ist eine Weltstadt der Mode (la moda) und des Designs: la settimana della moda, le sfilate (Modenschauen), lo stilista.",
+      "Ikonen des Made in Italy: la Vespa (1946), la Fiat 500, la moka Bialetti. Qualitätshandwerk heißt l'artigianato.",
+      "Stil beschreiben: elegante, raffinato, sobrio, colorato, di tendenza (angesagt), fatto a mano (handgemacht), su misura (maßgeschneidert)."
+     ],
+     "q": "Wie ist dein persönlicher Stil? Beschreib ihn mit drei italienischen Adjektiven.",
+     "c": "Beschreib einen Gegenstand, den du liebst (Tasche, Lampe, Stuhl), wie ein Designer: Material, Form, Farbe und was ihn besonders macht."
+    },
+    "es": {
+     "t": "Diseño y moda italianos",
+     "g": "Descubrir Milán, el made in Italy y el vocabulario de estilo y diseño.",
+     "p": [
+      "Milán es una capital mundial de la moda y el diseño: la settimana della moda, le sfilate (desfiles), lo stilista (diseñador).",
+      "Iconos del made in Italy: la Vespa (1946), la Fiat 500, la moka Bialetti. La artesanía de calidad se llama l'artigianato.",
+      "Describir estilo: elegante, raffinato, sobrio, colorato, di tendenza (de moda), fatto a mano (hecho a mano), su misura (a medida)."
+     ],
+     "q": "¿Cuál es tu estilo personal? Descríbelo con tres adjetivos italianos.",
+     "c": "Describe un objeto que te encanta (bolso, lámpara, silla) como un diseñador: material, forma, color y por qué es especial."
+    },
+    "fr": {
+     "t": "Design et mode italiens",
+     "g": "Découvrir Milan, le made in Italy et le vocabulaire du style et du design.",
+     "p": [
+      "Milan, capitale mondiale de la mode (la moda) et du design : la settimana della moda, le sfilate (défilés), lo stilista (le styliste).",
+      "Icônes du made in Italy : la Vespa (1946), la Fiat 500, la moka Bialetti. L'artisanat de qualité se dit l'artigianato.",
+      "Décrire un style : elegante, raffinato, sobrio, colorato, di tendenza (tendance), fatto a mano (fait main), su misura (sur mesure)."
+     ],
+     "q": "Quel est ton style personnel ? Décris-le avec trois adjectifs italiens.",
+     "c": "Décris un objet que tu adores (sac, lampe, chaise) comme un designer : matière, forme, couleur et ce qui le rend spécial."
+    },
+    "it": {
+     "t": "Design e moda italiani",
+     "g": "Scoprire Milano, il made in Italy e le parole dello stile e del design.",
+     "p": [
+      "Milano è una capitale mondiale della moda e del design: la settimana della moda, le sfilate, lo stilista.",
+      "Icone del made in Italy: la Vespa (1946), la Fiat 500, la moka Bialetti. Il lavoro manuale di qualità si chiama artigianato.",
+      "Descrivere lo stile: elegante, raffinato, sobrio, colorato, di tendenza, fatto a mano, su misura."
+     ],
+     "q": "Com'è il tuo stile personale? Descrivilo con tre aggettivi italiani.",
+     "c": "Descrivi un oggetto che ami (una borsa, una lampada, una sedia) come un designer: materiale, forma, colore e perché è speciale."
+    },
+    "pt": {
+     "t": "Design e moda italianos",
+     "g": "Descobrir Milão, o made in Italy e o vocabulário de estilo e design.",
+     "p": [
+      "Milão é uma capital mundial da moda e do design: la settimana della moda, le sfilate (desfiles), lo stilista (estilista).",
+      "Ícones do made in Italy: la Vespa (1946), la Fiat 500, la moka Bialetti. O artesanato de qualidade chama-se l'artigianato.",
+      "Descrever estilo: elegante, raffinato, sobrio, colorato, di tendenza (na moda), fatto a mano (feito à mão), su misura (por medida)."
+     ],
+     "q": "Qual é o teu estilo pessoal? Descreve-o com três adjetivos italianos.",
+     "c": "Descreve um objeto de que gostas muito (mala, candeeiro, cadeira) como um designer: material, forma, cor e porque é especial."
+    },
+    "pt_BR": {
+     "t": "Design e moda italianos",
+     "g": "Descobrir Milão, o made in Italy e o vocabulário de estilo e design.",
+     "p": [
+      "Milão é uma capital mundial da moda e do design: la settimana della moda, le sfilate (desfiles), lo stilista (estilista).",
+      "Ícones do made in Italy: la Vespa (1946), la Fiat 500, la moka Bialetti. O artesanato de qualidade se chama l'artigianato.",
+      "Descrever estilo: elegante, raffinato, sobrio, colorato, di tendenza (na moda), fatto a mano (feito à mão), su misura (sob medida)."
+     ],
+     "q": "Qual é o seu estilo pessoal? Descreva-o com três adjetivos italianos.",
+     "c": "Descreva um objeto que você adora (bolsa, luminária, cadeira) como um designer: material, forma, cor e por que é especial."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la sfilata",
+      "ex": "A febbraio a Milano ci sono le sfilate di moda."
+     },
+     {
+      "w": "lo stilista",
+      "ex": "Lo stilista ha presentato una collezione molto colorata."
+     },
+     {
+      "w": "l'artigianato",
+      "ex": "L'artigianato italiano è famoso nel mondo."
+     },
+     {
+      "w": "fatto a mano",
+      "ex": "Questa borsa di pelle è fatta a mano a Firenze."
+     },
+     {
+      "w": "su misura",
+      "ex": "Mio nonno si fa fare le giacche su misura."
+     },
+     {
+      "w": "di tendenza",
+      "ex": "Quest'anno i colori pastello sono di tendenza."
+     }
+    ],
+    "gram": "Aggettivi di stile e participi come aggettivi: fatto a mano, prodotto in Italia, disegnato da... (concordano con il nome)."
+   }
+  },
+  {
+   "d": 240,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Review: culture and the arts",
+     "g": "Recap art, music, cinema and literature vocabulary.",
+     "p": [
+      "Art and architecture: il capolavoro, l'affresco, in primo piano, sullo sfondo, la cupola, romanico, barocco.",
+      "Music and cinema: l'opera lirica, il cantautore, il ritornello, il regista, la scena, la colonna sonora.",
+      "Literature and design: la Divina Commedia, il romanzo, la trama, il personaggio, l'invenzione, fatto a mano, made in Italy."
+     ],
+     "q": "If you could spend one day in Italian culture, which artist, film, song or book would you choose and why?",
+     "c": "Plan a cultural day in Italy in five sentences: a museum, a building, a film, a song and a book, using the passive once."
+    },
+    "de": {
+     "t": "Wiederholung: Kultur und Kunst",
+     "g": "Du wiederholst den Wortschatz zu Kunst, Musik, Kino und Literatur.",
+     "p": [
+      "Kunst und Architektur: il capolavoro, l'affresco, in primo piano, sullo sfondo, la cupola, romanico, barocco.",
+      "Musik und Kino: l'opera lirica, il cantautore, il ritornello, il regista, la scena, la colonna sonora.",
+      "Literatur und Design: la Divina Commedia, il romanzo, la trama, il personaggio, l'invenzione, fatto a mano, made in Italy."
+     ],
+     "q": "Wenn du einen Tag in die italienische Kultur eintauchen könntest: welchen Künstler, Film, Song oder welches Buch würdest du wählen?",
+     "c": "Plane einen Kulturtag in Italien in fünf Sätzen: Museum, Gebäude, Film, Lied und Buch, einmal mit Passiv."
+    },
+    "es": {
+     "t": "Repaso: cultura y artes",
+     "g": "Repasar el vocabulario de arte, música, cine y literatura.",
+     "p": [
+      "Arte y arquitectura: il capolavoro, l'affresco, in primo piano, sullo sfondo, la cupola, romanico, barocco.",
+      "Música y cine: l'opera lirica, il cantautore, il ritornello, il regista, la scena, la colonna sonora.",
+      "Literatura y diseño: la Divina Commedia, il romanzo, la trama, il personaggio, l'invenzione, fatto a mano, made in Italy."
+     ],
+     "q": "Si pudieras pasar un día inmerso en la cultura italiana, ¿qué artista, película, canción o libro elegirías y por qué?",
+     "c": "Planea un día cultural en Italia en cinco frases: un museo, un edificio, una película, una canción y un libro, con una pasiva."
+    },
+    "fr": {
+     "t": "Révision : culture et arts",
+     "g": "Réviser le vocabulaire de l'art, de la musique, du cinéma et de la littérature.",
+     "p": [
+      "Art et architecture : il capolavoro, l'affresco, in primo piano, sullo sfondo, la cupola, romanico, barocco.",
+      "Musique et cinéma : l'opera lirica, il cantautore, il ritornello, il regista, la scena, la colonna sonora.",
+      "Littérature et design : la Divina Commedia, il romanzo, la trama, il personaggio, l'invenzione, fatto a mano, made in Italy."
+     ],
+     "q": "Si tu pouvais passer une journée dans la culture italienne, quel artiste, film, chanson ou livre choisirais-tu, et pourquoi ?",
+     "c": "Organise une journée culturelle en Italie en cinq phrases : un musée, un bâtiment, un film, une chanson et un livre, avec un passif."
+    },
+    "it": {
+     "t": "Ripasso: cultura e arti",
+     "g": "Ripassare il lessico di arte, musica, cinema e letteratura.",
+     "p": [
+      "Arte e architettura: il capolavoro, l'affresco, in primo piano, sullo sfondo, la cupola, romanico, barocco.",
+      "Musica e cinema: l'opera lirica, il cantautore, il ritornello, il regista, la scena, la colonna sonora.",
+      "Letteratura e design: la Divina Commedia, il romanzo, la trama, il personaggio, l'invenzione, fatto a mano, made in Italy."
+     ],
+     "q": "Se potessi passare una giornata nella cultura italiana, quale artista, film, canzone o libro sceglieresti e perché?",
+     "c": "Organizza una giornata culturale in Italia in cinque frasi: un museo, un edificio, un film, una canzone e un libro, con un passivo."
+    },
+    "pt": {
+     "t": "Revisão: cultura e artes",
+     "g": "Rever o vocabulário de arte, música, cinema e literatura.",
+     "p": [
+      "Arte e arquitetura: il capolavoro, l'affresco, in primo piano, sullo sfondo, la cupola, romanico, barocco.",
+      "Música e cinema: l'opera lirica, il cantautore, il ritornello, il regista, la scena, la colonna sonora.",
+      "Literatura e design: la Divina Commedia, il romanzo, la trama, il personaggio, l'invenzione, fatto a mano, made in Italy."
+     ],
+     "q": "Se pudesses passar um dia mergulhado na cultura italiana, que artista, filme, canção ou livro escolherias, e porquê?",
+     "c": "Planeia um dia cultural em Itália em cinco frases: um museu, um edifício, um filme, uma canção e um livro, com uma passiva."
+    },
+    "pt_BR": {
+     "t": "Revisão: cultura e artes",
+     "g": "Revisar o vocabulário de arte, música, cinema e literatura.",
+     "p": [
+      "Arte e arquitetura: il capolavoro, l'affresco, in primo piano, sullo sfondo, la cupola, romanico, barocco.",
+      "Música e cinema: l'opera lirica, il cantautore, il ritornello, il regista, la scena, la colonna sonora.",
+      "Literatura e design: la Divina Commedia, il romanzo, la trama, il personaggio, l'invenzione, fatto a mano, made in Italy."
+     ],
+     "q": "Se você pudesse passar um dia mergulhado na cultura italiana, que artista, filme, música ou livro escolheria, e por quê?",
+     "c": "Planeje um dia cultural na Itália em cinco frases: um museu, um prédio, um filme, uma música e um livro, com uma passiva."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il capolavoro",
+      "ex": "La Cappella Sistina è un capolavoro assoluto."
+     },
+     {
+      "w": "il cantautore",
+      "ex": "Mi piace ascoltare i cantautori degli anni Settanta."
+     },
+     {
+      "w": "il regista",
+      "ex": "Il regista ha girato il film a Roma."
+     },
+     {
+      "w": "la trama",
+      "ex": "Mi racconti la trama del romanzo?"
+     },
+     {
+      "w": "il patrimonio culturale",
+      "ex": "L'Italia ha un patrimonio culturale ricchissimo."
+     },
+     {
+      "w": "la mostra",
+      "ex": "Sabato andiamo a vedere una mostra su Caravaggio."
+     }
+    ],
+    "gram": "Ripasso: lessico dell'arte, passivo (è stato dipinto da), passato remoto per la storia, sembra che + congiuntivo."
+   }
+  }
+ ]
+}

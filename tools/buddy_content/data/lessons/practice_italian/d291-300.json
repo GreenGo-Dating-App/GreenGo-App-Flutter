@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 291,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Gerundio passato",
+     "g": "Express cause and time elegantly with avendo finito and essendo arrivato.",
+     "p": [
+      "Form: avendo or essendo + past participle: avendo letto, essendo partiti, essendosi alzata.",
+      "Cause: avendo perso il treno, ho preso un taxi (because I had missed the train).",
+      "Time before the main action: essendo arrivati presto, abbiamo trovato posto. With essere, agree."
+     ],
+     "q": "Avendo studiato italiano per mesi, what can you do now that you couldn't before?",
+     "c": "Rewrite with gerundio passato: Poiché ho dormito poco, sono stanco. Siccome è partita tardi, è arrivata alle dieci."
+    },
+    "de": {
+     "t": "Gerundio passato",
+     "g": "Du drückst Grund und Zeit elegant aus mit avendo finito und essendo arrivato.",
+     "p": [
+      "Bildung: avendo oder essendo + Partizip: avendo letto, essendo partiti, essendosi alzata.",
+      "Grund: avendo perso il treno, ho preso un taxi (weil ich den Zug verpasst hatte).",
+      "Vorzeitigkeit: essendo arrivati presto, abbiamo trovato posto. Mit essere wird angeglichen."
+     ],
+     "q": "Avendo studiato italiano per mesi: Was kannst du jetzt, was du vorher nicht konntest?",
+     "c": "Formuliere um: Poiché ho dormito poco, sono stanco. Siccome è partita tardi, è arrivata alle dieci."
+    },
+    "es": {
+     "t": "Gerundio passato",
+     "g": "Expresar causa y tiempo con elegancia con avendo finito y essendo arrivato.",
+     "p": [
+      "Forma: avendo o essendo + participio: avendo letto, essendo partiti, essendosi alzata.",
+      "Causa: avendo perso il treno, ho preso un taxi (como había perdido el tren).",
+      "Anterioridad: essendo arrivati presto, abbiamo trovato posto. Con essere hay concordancia."
+     ],
+     "q": "Avendo studiato italiano per mesi, ¿qué puedes hacer ahora que antes no podías?",
+     "c": "Reescribe: Poiché ho dormito poco, sono stanco. Siccome è partita tardi, è arrivata alle dieci."
+    },
+    "fr": {
+     "t": "Gerundio passato",
+     "g": "Exprimer cause et temps avec élégance grâce à avendo finito et essendo arrivato.",
+     "p": [
+      "Forme : avendo ou essendo + participe : avendo letto, essendo partiti, essendosi alzata.",
+      "Cause : avendo perso il treno, ho preso un taxi (ayant raté le train).",
+      "Antériorité : essendo arrivati presto, abbiamo trovato posto. Avec essere, on accorde."
+     ],
+     "q": "Avendo studiato italiano per mesi, que sais-tu faire maintenant que tu ne savais pas avant ?",
+     "c": "Réécris : Poiché ho dormito poco, sono stanco. Siccome è partita tardi, è arrivata alle dieci."
+    },
+    "it": {
+     "t": "Gerundio passato",
+     "g": "Esprimere causa e tempo con eleganza con avendo finito ed essendo arrivato.",
+     "p": [
+      "Forma: avendo o essendo + participio passato: avendo letto, essendo partiti, essendosi alzata.",
+      "Causa: avendo perso il treno, ho preso un taxi (poiché avevo perso il treno).",
+      "Anteriorità: essendo arrivati presto, abbiamo trovato posto. Con essere il participio concorda."
+     ],
+     "q": "Avendo studiato italiano per mesi, che cosa sai fare ora che prima non sapevi?",
+     "c": "Riscrivi con il gerundio passato: Poiché ho dormito poco, sono stanco. Siccome è partita tardi, è arrivata alle dieci."
+    },
+    "pt": {
+     "t": "Gerundio passato",
+     "g": "Exprimir causa e tempo com elegância com avendo finito e essendo arrivato.",
+     "p": [
+      "Forma: avendo ou essendo + particípio: avendo letto, essendo partiti, essendosi alzata.",
+      "Causa: avendo perso il treno, ho preso un taxi (tendo perdido o comboio).",
+      "Anterioridade: essendo arrivati presto, abbiamo trovato posto. Com essere há concordância."
+     ],
+     "q": "Avendo studiato italiano per mesi, o que consegues fazer agora que antes não conseguias?",
+     "c": "Reescreve: Poiché ho dormito poco, sono stanco. Siccome è partita tardi, è arrivata alle dieci."
+    },
+    "pt_BR": {
+     "t": "Gerundio passato",
+     "g": "Expressar causa e tempo com elegância com avendo finito e essendo arrivato.",
+     "p": [
+      "Forma: avendo ou essendo + particípio: avendo letto, essendo partiti, essendosi alzata.",
+      "Causa: avendo perso il treno, ho preso un taxi (tendo perdido o trem).",
+      "Anterioridade: essendo arrivati presto, abbiamo trovato posto. Com essere há concordância."
+     ],
+     "q": "Avendo studiato italiano per mesi, o que você consegue fazer agora que antes não conseguia?",
+     "c": "Reescreva: Poiché ho dormito poco, sono stanco. Siccome è partita tardi, è arrivata alle dieci."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "avendo finito",
+      "ex": "Avendo finito i compiti, i ragazzi uscirono a giocare."
+     },
+     {
+      "w": "essendo arrivato",
+      "ex": "Essendo arrivato in anticipo, ho preso un caffè."
+     },
+     {
+      "w": "avendo perso",
+      "ex": "Avendo perso l'autobus, sono andata a piedi."
+     },
+     {
+      "w": "essendo partiti",
+      "ex": "Essendo partiti all'alba, evitammo il traffico."
+     },
+     {
+      "w": "avendo letto",
+      "ex": "Avendo letto il libro, conoscevo già il finale."
+     },
+     {
+      "w": "essendosi alzata",
+      "ex": "Essendosi alzata tardi, Anna saltò la colazione."
+     }
+    ],
+    "gram": "Gerundio passato: avendo/essendo + participio; esprime un'azione anteriore con valore causale o temporale."
+   }
+  },
+  {
+   "d": 292,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Infinito passato",
+     "g": "Use the past infinitive: dopo aver letto, mi scuso di essere arrivato tardi.",
+     "p": [
+      "Form: avere or essere + past participle; avere often drops its e: aver letto, essere partito.",
+      "Dopo + past infinitive = after doing: dopo aver cenato, siamo usciti. Same subject in both parts.",
+      "After verbs and adjectives: mi scuso di essere arrivato tardi, sono contento di averti conosciuto."
+     ],
+     "q": "What do you usually do dopo aver finito di lavorare o studiare?",
+     "c": "Write three sentences: one with dopo aver..., one with dopo essere..., one with sono felice di aver..."
+    },
+    "de": {
+     "t": "Infinito passato",
+     "g": "Du nutzt den Infinitiv Perfekt: dopo aver letto, mi scuso di essere arrivato tardi.",
+     "p": [
+      "Bildung: avere oder essere + Partizip; avere verliert oft das e: aver letto, essere partito.",
+      "Dopo + Infinitiv Perfekt = nachdem: dopo aver cenato, siamo usciti. Gleiches Subjekt in beiden Teilen.",
+      "Nach Verben und Adjektiven: mi scuso di essere arrivato tardi, sono contento di averti conosciuto."
+     ],
+     "q": "Was machst du normalerweise dopo aver finito di lavorare o studiare?",
+     "c": "Schreib drei Sätze: mit dopo aver..., mit dopo essere... und mit sono felice di aver..."
+    },
+    "es": {
+     "t": "Infinito passato",
+     "g": "Usar el infinitivo compuesto: dopo aver letto, mi scuso di essere arrivato tardi.",
+     "p": [
+      "Forma: avere o essere + participio; avere suele perder la e: aver letto, essere partito.",
+      "Dopo + infinitivo compuesto = después de: dopo aver cenato, siamo usciti. Mismo sujeto en ambas partes.",
+      "Tras verbos y adjetivos: mi scuso di essere arrivato tardi, sono contento di averti conosciuto."
+     ],
+     "q": "¿Qué sueles hacer dopo aver finito di lavorare o studiare?",
+     "c": "Escribe tres frases: con dopo aver..., con dopo essere... y con sono felice di aver..."
+    },
+    "fr": {
+     "t": "Infinito passato",
+     "g": "Utiliser l'infinitif passé : dopo aver letto, mi scuso di essere arrivato tardi.",
+     "p": [
+      "Forme : avere ou essere + participe ; avere perd souvent son e : aver letto, essere partito.",
+      "Dopo + infinitif passé = après avoir : dopo aver cenato, siamo usciti. Même sujet des deux côtés.",
+      "Après verbes et adjectifs : mi scuso di essere arrivato tardi, sono contento di averti conosciuto."
+     ],
+     "q": "Que fais-tu d'habitude dopo aver finito di lavorare o studiare ?",
+     "c": "Écris trois phrases : avec dopo aver..., avec dopo essere... et avec sono felice di aver..."
+    },
+    "it": {
+     "t": "Infinito passato",
+     "g": "Usare l'infinito passato: dopo aver letto, mi scuso di essere arrivato tardi.",
+     "p": [
+      "Forma: avere o essere + participio; avere perde spesso la e: aver letto, essere partito.",
+      "Dopo + infinito passato: dopo aver cenato, siamo usciti. Il soggetto è lo stesso nelle due frasi.",
+      "Dopo verbi e aggettivi: mi scuso di essere arrivato tardi, sono contento di averti conosciuto."
+     ],
+     "q": "Che cosa fai di solito dopo aver finito di lavorare o di studiare?",
+     "c": "Scrivi tre frasi: una con dopo aver..., una con dopo essere..., una con sono felice di aver..."
+    },
+    "pt": {
+     "t": "Infinito passato",
+     "g": "Usar o infinitivo composto: dopo aver letto, mi scuso di essere arrivato tardi.",
+     "p": [
+      "Forma: avere ou essere + particípio; avere perde muitas vezes o e: aver letto, essere partito.",
+      "Dopo + infinitivo composto = depois de: dopo aver cenato, siamo usciti. O sujeito é o mesmo.",
+      "Depois de verbos e adjetivos: mi scuso di essere arrivato tardi, sono contento di averti conosciuto."
+     ],
+     "q": "O que costumas fazer dopo aver finito di lavorare o studiare?",
+     "c": "Escreve três frases: com dopo aver..., com dopo essere... e com sono felice di aver..."
+    },
+    "pt_BR": {
+     "t": "Infinito passato",
+     "g": "Usar o infinitivo composto: dopo aver letto, mi scuso di essere arrivato tardi.",
+     "p": [
+      "Forma: avere ou essere + particípio; avere muitas vezes perde o e: aver letto, essere partito.",
+      "Dopo + infinitivo composto = depois de: dopo aver cenato, siamo usciti. O sujeito é o mesmo.",
+      "Depois de verbos e adjetivos: mi scuso di essere arrivato tardi, sono contento di averti conosciuto."
+     ],
+     "q": "O que você costuma fazer dopo aver finito di lavorare o studiare?",
+     "c": "Escreva três frases: com dopo aver..., com dopo essere... e com sono felice di aver..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "dopo aver letto",
+      "ex": "Dopo aver letto l'email, ho chiamato il cliente."
+     },
+     {
+      "w": "dopo essere arrivato",
+      "ex": "Dopo essere arrivato a Roma, ha visitato il Colosseo."
+     },
+     {
+      "w": "mi scuso di",
+      "ex": "Mi scuso di non averti risposto prima."
+     },
+     {
+      "w": "contento di averti conosciuto",
+      "ex": "Sono molto contento di averti conosciuto."
+     },
+     {
+      "w": "senza aver",
+      "ex": "È uscito senza aver salutato nessuno."
+     },
+     {
+      "w": "ricordo di aver",
+      "ex": "Ricordo di aver chiuso la porta a chiave."
+     }
+    ],
+    "gram": "Infinito passato: aver/essere + participio dopo dopo, senza, di, quando il soggetto coincide (dopo aver mangiato, sono uscito)."
+   }
+  },
+  {
+   "d": 293,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Review: advanced tenses",
+     "g": "Recap congiuntivo trapassato, passato remoto and implicit clauses.",
+     "p": [
+      "Subjunctive and hypotheses: pensavo che fosse partito, se avessi saputo, sarei venuto.",
+      "Passato remoto for history and tales: nacque, fu, fece, disse; regular -ò, -é, -ì endings.",
+      "Compact clauses: finito il lavoro, avendo letto, essendo arrivati, dopo aver mangiato."
+     ],
+     "q": "Which advanced tense do you feel most confident with now?",
+     "c": "Write a short historical story in five sentences using passato remoto, one participle clause and one dopo aver."
+    },
+    "de": {
+     "t": "Wiederholung: fortgeschrittene Zeiten",
+     "g": "Du wiederholst congiuntivo trapassato, passato remoto und verkürzte Nebensätze.",
+     "p": [
+      "Konjunktiv und Hypothesen: pensavo che fosse partito, se avessi saputo, sarei venuto.",
+      "Passato remoto für Geschichte und Märchen: nacque, fu, fece, disse; regelmäßig auf -ò, -é, -ì.",
+      "Kompakte Sätze: finito il lavoro, avendo letto, essendo arrivati, dopo aver mangiato."
+     ],
+     "q": "Bei welcher fortgeschrittenen Zeit fühlst du dich jetzt am sichersten?",
+     "c": "Schreib eine historische Kurzgeschichte in fünf Sätzen mit passato remoto, einem Partizipialsatz und dopo aver."
+    },
+    "es": {
+     "t": "Repaso: tiempos avanzados",
+     "g": "Repasar congiuntivo trapassato, passato remoto y oraciones implícitas.",
+     "p": [
+      "Subjuntivo e hipótesis: pensavo che fosse partito, se avessi saputo, sarei venuto.",
+      "Passato remoto para historia y cuentos: nacque, fu, fece, disse; regulares en -ò, -é, -ì.",
+      "Oraciones compactas: finito il lavoro, avendo letto, essendo arrivati, dopo aver mangiato."
+     ],
+     "q": "¿Con qué tiempo avanzado te sientes más seguro ahora?",
+     "c": "Escribe una breve historia de cinco frases con passato remoto, una de participio y una con dopo aver."
+    },
+    "fr": {
+     "t": "Révision : temps avancés",
+     "g": "Réviser congiuntivo trapassato, passato remoto et propositions implicites.",
+     "p": [
+      "Subjonctif et hypothèses : pensavo che fosse partito, se avessi saputo, sarei venuto.",
+      "Passato remoto pour l'histoire et les contes : nacque, fu, fece, disse ; réguliers en -ò, -é, -ì.",
+      "Propositions compactes : finito il lavoro, avendo letto, essendo arrivati, dopo aver mangiato."
+     ],
+     "q": "Avec quel temps avancé te sens-tu le plus à l'aise maintenant ?",
+     "c": "Écris une courte histoire en cinq phrases avec passato remoto, une participiale et un dopo aver."
+    },
+    "it": {
+     "t": "Ripasso: tempi avanzati",
+     "g": "Ripassare congiuntivo trapassato, passato remoto e frasi implicite.",
+     "p": [
+      "Congiuntivo e ipotesi: pensavo che fosse partito, se avessi saputo, sarei venuto.",
+      "Passato remoto per storia e fiabe: nacque, fu, fece, disse; regolari in -ò, -é, -ì.",
+      "Frasi compatte: finito il lavoro, avendo letto, essendo arrivati, dopo aver mangiato."
+     ],
+     "q": "Con quale tempo avanzato ti senti più sicuro adesso?",
+     "c": "Scrivi una breve storia di cinque frasi con il passato remoto, un participio assoluto e un dopo aver."
+    },
+    "pt": {
+     "t": "Revisão: tempos avançados",
+     "g": "Rever congiuntivo trapassato, passato remoto e orações reduzidas.",
+     "p": [
+      "Conjuntivo e hipóteses: pensavo che fosse partito, se avessi saputo, sarei venuto.",
+      "Passato remoto para história e contos: nacque, fu, fece, disse; regulares em -ò, -é, -ì.",
+      "Orações compactas: finito il lavoro, avendo letto, essendo arrivati, dopo aver mangiato."
+     ],
+     "q": "Com que tempo avançado te sentes mais seguro agora?",
+     "c": "Escreve uma pequena história de cinco frases com passato remoto, uma reduzida de particípio e um dopo aver."
+    },
+    "pt_BR": {
+     "t": "Revisão: tempos avançados",
+     "g": "Revisar congiuntivo trapassato, passato remoto e orações reduzidas.",
+     "p": [
+      "Subjuntivo e hipóteses: pensavo che fosse partito, se avessi saputo, sarei venuto.",
+      "Passato remoto para história e contos: nacque, fu, fece, disse; regulares em -ò, -é, -ì.",
+      "Orações compactas: finito il lavoro, avendo letto, essendo arrivati, dopo aver mangiato."
+     ],
+     "q": "Com qual tempo avançado você se sente mais seguro agora?",
+     "c": "Escreva uma pequena história de cinco frases com passato remoto, uma reduzida de particípio e um dopo aver."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "se avessi saputo",
+      "ex": "Se avessi saputo, ti avrei aiutato."
+     },
+     {
+      "w": "pensavo che avesse",
+      "ex": "Pensavo che avesse già prenotato."
+     },
+     {
+      "w": "nacque",
+      "ex": "Il poeta nacque in un piccolo paese."
+     },
+     {
+      "w": "finita la lezione",
+      "ex": "Finita la lezione, gli studenti uscirono in cortile."
+     },
+     {
+      "w": "avendo capito",
+      "ex": "Avendo capito l'errore, lo corresse subito."
+     },
+     {
+      "w": "dopo aver visitato",
+      "ex": "Dopo aver visitato il museo, pranzammo in piazza."
+     }
+    ],
+    "gram": "Ripasso: congiuntivo trapassato, periodo ipotetico dell'impossibilità, passato remoto, participio, gerundio e infinito passati."
+   }
+  },
+  {
+   "d": 294,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Causative fare",
+     "g": "Have something done: faccio riparare la macchina, mi sono fatto tagliare i capelli.",
+     "p": [
+      "Fare + infinitive = have someone do it: faccio riparare la bici, ho fatto pulire il tappeto.",
+      "Farsi + infinitive for yourself: mi faccio tagliare i capelli; past with essere: mi sono fatto tagliare.",
+      "Pronouns go before fare: la faccio riparare, me li sono fatti tagliare. Who does it? da: dal meccanico."
+     ],
+     "q": "What do you usually have done by someone else instead of doing it yourself?",
+     "c": "Write three sentences about things you had done recently, using fare and farsi + infinitive."
+    },
+    "de": {
+     "t": "Kausatives fare",
+     "g": "Du lässt etwas machen: faccio riparare la macchina, mi sono fatto tagliare i capelli.",
+     "p": [
+      "Fare + Infinitiv = machen lassen: faccio riparare la bici, ho fatto pulire il tappeto.",
+      "Farsi + Infinitiv für dich selbst: mi faccio tagliare i capelli; Perfekt mit essere: mi sono fatto tagliare.",
+      "Pronomen vor fare: la faccio riparare, me li sono fatti tagliare. Von wem? da: dal meccanico."
+     ],
+     "q": "Was lässt du normalerweise von anderen machen, statt es selbst zu tun?",
+     "c": "Schreib drei Sätze über Dinge, die du kürzlich hast machen lassen, mit fare und farsi + Infinitiv."
+    },
+    "es": {
+     "t": "El fare causativo",
+     "g": "Mandar hacer algo: faccio riparare la macchina, mi sono fatto tagliare i capelli.",
+     "p": [
+      "Fare + infinitivo = mandar hacer: faccio riparare la bici, ho fatto pulire il tappeto.",
+      "Farsi + infinitivo para uno mismo: mi faccio tagliare i capelli; en pasado con essere: mi sono fatto tagliare.",
+      "Los pronombres van antes de fare: la faccio riparare, me li sono fatti tagliare. ¿Quién? da: dal meccanico."
+     ],
+     "q": "¿Qué cosas sueles mandar hacer en lugar de hacerlas tú?",
+     "c": "Escribe tres frases sobre cosas que mandaste hacer hace poco, con fare y farsi + infinitivo."
+    },
+    "fr": {
+     "t": "Le fare causatif",
+     "g": "Faire faire quelque chose : faccio riparare la macchina, mi sono fatto tagliare i capelli.",
+     "p": [
+      "Fare + infinitif = faire faire : faccio riparare la bici, ho fatto pulire il tappeto.",
+      "Farsi + infinitif pour soi : mi faccio tagliare i capelli ; au passé avec essere : mi sono fatto tagliare.",
+      "Les pronoms avant fare : la faccio riparare, me li sono fatti tagliare. Par qui ? da : dal meccanico."
+     ],
+     "q": "Qu'est-ce que tu fais faire par quelqu'un d'autre au lieu de le faire toi-même ?",
+     "c": "Écris trois phrases sur des choses que tu as fait faire récemment, avec fare et farsi + infinitif."
+    },
+    "it": {
+     "t": "Il fare causativo",
+     "g": "Far fare qualcosa: faccio riparare la macchina, mi sono fatto tagliare i capelli.",
+     "p": [
+      "Fare + infinito = un altro fa l'azione: faccio riparare la bici, ho fatto pulire il tappeto.",
+      "Farsi + infinito per sé: mi faccio tagliare i capelli; al passato con essere: mi sono fatto tagliare.",
+      "I pronomi vanno prima di fare: la faccio riparare, me li sono fatti tagliare. Chi agisce? da: dal meccanico."
+     ],
+     "q": "Che cosa fai fare di solito a qualcun altro invece di farlo tu?",
+     "c": "Scrivi tre frasi su cose che hai fatto fare di recente, con fare e farsi + infinito."
+    },
+    "pt": {
+     "t": "O fare causativo",
+     "g": "Mandar fazer algo: faccio riparare la macchina, mi sono fatto tagliare i capelli.",
+     "p": [
+      "Fare + infinitivo = mandar fazer: faccio riparare la bici, ho fatto pulire il tappeto.",
+      "Farsi + infinitivo para ti próprio: mi faccio tagliare i capelli; no passado com essere: mi sono fatto tagliare.",
+      "Os pronomes vão antes de fare: la faccio riparare, me li sono fatti tagliare. Por quem? da: dal meccanico."
+     ],
+     "q": "O que costumas mandar fazer em vez de seres tu a fazer?",
+     "c": "Escreve três frases sobre coisas que mandaste fazer recentemente, com fare e farsi + infinitivo."
+    },
+    "pt_BR": {
+     "t": "O fare causativo",
+     "g": "Mandar fazer algo: faccio riparare la macchina, mi sono fatto tagliare i capelli.",
+     "p": [
+      "Fare + infinitivo = mandar fazer: faccio riparare la bici, ho fatto pulire il tappeto.",
+      "Farsi + infinitivo para você mesmo: mi faccio tagliare i capelli; no passado com essere: mi sono fatto tagliare.",
+      "Os pronomes vêm antes de fare: la faccio riparare, me li sono fatti tagliare. Por quem? da: dal meccanico."
+     ],
+     "q": "O que você costuma mandar fazer em vez de fazer você mesmo?",
+     "c": "Escreva três frases sobre coisas que você mandou fazer recentemente, com fare e farsi + infinitivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "far riparare",
+      "ex": "Devo far riparare la lavatrice."
+     },
+     {
+      "w": "farsi tagliare i capelli",
+      "ex": "Mi sono fatta tagliare i capelli ieri."
+     },
+     {
+      "w": "far vedere",
+      "ex": "Fammi vedere le foto del viaggio!"
+     },
+     {
+      "w": "far sapere",
+      "ex": "Ti faccio sapere entro domani."
+     },
+     {
+      "w": "farsi aiutare",
+      "ex": "Mi sono fatto aiutare da un amico per il trasloco."
+     },
+     {
+      "w": "far aspettare",
+      "ex": "Scusa se ti ho fatto aspettare."
+     }
+    ],
+    "gram": "Fare + infinito: il soggetto non compie l'azione (faccio lavare l'auto); farsi + infinito al passato vuole essere."
+   }
+  },
+  {
+   "d": 295,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Lasciare + infinitive",
+     "g": "Allow and let with lasciare: lascia stare, lasciami pensare.",
+     "p": [
+      "Lasciare + infinitive = to let: lascia parlare tua sorella, i miei mi lasciavano uscire fino a tardi.",
+      "Fixed phrases: lascia stare (never mind / leave it), lascia perdere (forget it), lasciami in pace.",
+      "Pronouns attach to the imperative: lasciami pensare, lasciala dormire, lasciatelo fare a me."
+     ],
+     "q": "What did your parents let you do as a child that others couldn't?",
+     "c": "Write three sentences: one with lasciami + infinitive, one with lascia stare, one about your childhood."
+    },
+    "de": {
+     "t": "Lasciare + Infinitiv",
+     "g": "Du erlaubst und lässt mit lasciare: lascia stare, lasciami pensare.",
+     "p": [
+      "Lasciare + Infinitiv = lassen: lascia parlare tua sorella, i miei mi lasciavano uscire fino a tardi.",
+      "Feste Wendungen: lascia stare (lass gut sein), lascia perdere (vergiss es), lasciami in pace.",
+      "Pronomen hängen am Imperativ: lasciami pensare, lasciala dormire, lasciatelo fare a me."
+     ],
+     "q": "Was durftest du als Kind von deinen Eltern aus tun, was andere nicht durften?",
+     "c": "Schreib drei Sätze: einen mit lasciami + Infinitiv, einen mit lascia stare, einen über deine Kindheit."
+    },
+    "es": {
+     "t": "Lasciare + infinitivo",
+     "g": "Permitir y dejar con lasciare: lascia stare, lasciami pensare.",
+     "p": [
+      "Lasciare + infinitivo = dejar: lascia parlare tua sorella, i miei mi lasciavano uscire fino a tardi.",
+      "Frases hechas: lascia stare (déjalo estar), lascia perdere (olvídalo), lasciami in pace.",
+      "Los pronombres se unen al imperativo: lasciami pensare, lasciala dormire, lasciatelo fare a me."
+     ],
+     "q": "¿Qué te dejaban hacer tus padres de niño que a otros no?",
+     "c": "Escribe tres frases: una con lasciami + infinitivo, una con lascia stare y una sobre tu infancia."
+    },
+    "fr": {
+     "t": "Lasciare + infinitif",
+     "g": "Permettre et laisser avec lasciare : lascia stare, lasciami pensare.",
+     "p": [
+      "Lasciare + infinitif = laisser : lascia parlare tua sorella, i miei mi lasciavano uscire fino a tardi.",
+      "Expressions figées : lascia stare (laisse tomber), lascia perdere (oublie), lasciami in pace.",
+      "Les pronoms s'attachent à l'impératif : lasciami pensare, lasciala dormire, lasciatelo fare a me."
+     ],
+     "q": "Qu'est-ce que tes parents te laissaient faire enfant, contrairement à d'autres ?",
+     "c": "Écris trois phrases : avec lasciami + infinitif, avec lascia stare et une sur ton enfance."
+    },
+    "it": {
+     "t": "Lasciare + infinito",
+     "g": "Permettere e lasciar fare con lasciare: lascia stare, lasciami pensare.",
+     "p": [
+      "Lasciare + infinito = permettere: lascia parlare tua sorella, i miei mi lasciavano uscire fino a tardi.",
+      "Espressioni fisse: lascia stare, lascia perdere, lasciami in pace.",
+      "I pronomi si uniscono all'imperativo: lasciami pensare, lasciala dormire, lasciatelo fare a me."
+     ],
+     "q": "Che cosa ti lasciavano fare i tuoi genitori da bambino che ad altri non era permesso?",
+     "c": "Scrivi tre frasi: una con lasciami + infinito, una con lascia stare, una sulla tua infanzia."
+    },
+    "pt": {
+     "t": "Lasciare + infinitivo",
+     "g": "Permitir e deixar com lasciare: lascia stare, lasciami pensare.",
+     "p": [
+      "Lasciare + infinitivo = deixar: lascia parlare tua sorella, i miei mi lasciavano uscire fino a tardi.",
+      "Expressões fixas: lascia stare (deixa estar), lascia perdere (esquece), lasciami in pace.",
+      "Os pronomes juntam-se ao imperativo: lasciami pensare, lasciala dormire, lasciatelo fare a me."
+     ],
+     "q": "O que é que os teus pais te deixavam fazer em criança que a outros não?",
+     "c": "Escreve três frases: uma com lasciami + infinitivo, uma com lascia stare e uma sobre a tua infância."
+    },
+    "pt_BR": {
+     "t": "Lasciare + infinitivo",
+     "g": "Permitir e deixar com lasciare: lascia stare, lasciami pensare.",
+     "p": [
+      "Lasciare + infinitivo = deixar: lascia parlare tua sorella, i miei mi lasciavano uscire fino a tardi.",
+      "Expressões fixas: lascia stare (deixa pra lá), lascia perdere (esquece), lasciami in pace.",
+      "Os pronomes se juntam ao imperativo: lasciami pensare, lasciala dormire, lasciatelo fare a me."
+     ],
+     "q": "O que seus pais deixavam você fazer quando criança que outros não podiam?",
+     "c": "Escreva três frases: uma com lasciami + infinitivo, uma com lascia stare e uma sobre sua infância."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "lascia stare",
+      "ex": "Lascia stare, ci penso io."
+     },
+     {
+      "w": "lasciami pensare",
+      "ex": "Lasciami pensare un momento."
+     },
+     {
+      "w": "lascia perdere",
+      "ex": "Lascia perdere, non è importante."
+     },
+     {
+      "w": "lasciar fare",
+      "ex": "Lascia fare a me, sono esperto."
+     },
+     {
+      "w": "lasciare entrare",
+      "ex": "Il portiere ci ha lasciato entrare."
+     },
+     {
+      "w": "lasciami in pace",
+      "ex": "Lasciami in pace, sto studiando! (scherzando)"
+     }
+    ],
+    "gram": "Lasciare + infinito = permettere; pronomi attaccati all'imperativo (lasciami, lasciatelo), prima del verbo coniugato (mi lascia)."
+   }
+  },
+  {
+   "d": 296,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Verbs with prepositions",
+     "g": "Learn verbs with fixed prepositions: pensare a, credere in, dipendere da, riuscire a, smettere di.",
+     "p": [
+      "With a: pensare a (think about), riuscire a (manage to), abituarsi a, rinunciare a.",
+      "With di: smettere di, cercare di, decidere di, ricordarsi di. With da: dipendere da. With in: credere in.",
+      "Use ci and ne to replace them: ci penso io (a), ne ho bisogno (di), ci credo (in)."
+     ],
+     "q": "What do you think about most when you are relaxing? Penso a...",
+     "c": "Write five sentences, one with each: pensare a, credere in, dipendere da, riuscire a, smettere di."
+    },
+    "de": {
+     "t": "Verben mit Präpositionen",
+     "g": "Du lernst Verben mit festen Präpositionen: pensare a, credere in, dipendere da, riuscire a, smettere di.",
+     "p": [
+      "Mit a: pensare a (denken an), riuscire a (schaffen), abituarsi a, rinunciare a.",
+      "Mit di: smettere di, cercare di, decidere di, ricordarsi di. Mit da: dipendere da. Mit in: credere in.",
+      "Ersetze sie mit ci und ne: ci penso io (a), ne ho bisogno (di), ci credo (in)."
+     ],
+     "q": "Woran denkst du am meisten, wenn du entspannst? Penso a...",
+     "c": "Schreib fünf Sätze, je einen mit pensare a, credere in, dipendere da, riuscire a, smettere di."
+    },
+    "es": {
+     "t": "Verbos con preposición",
+     "g": "Aprender verbos con preposición fija: pensare a, credere in, dipendere da, riuscire a, smettere di.",
+     "p": [
+      "Con a: pensare a (pensar en), riuscire a (lograr), abituarsi a, rinunciare a.",
+      "Con di: smettere di, cercare di, decidere di, ricordarsi di. Con da: dipendere da. Con in: credere in.",
+      "Sustitúyelos con ci y ne: ci penso io (a), ne ho bisogno (di), ci credo (in)."
+     ],
+     "q": "¿En qué piensas más cuando te relajas? Penso a...",
+     "c": "Escribe cinco frases, una con cada uno: pensare a, credere in, dipendere da, riuscire a, smettere di."
+    },
+    "fr": {
+     "t": "Verbes à préposition",
+     "g": "Apprendre des verbes à préposition fixe : pensare a, credere in, dipendere da, riuscire a, smettere di.",
+     "p": [
+      "Avec a : pensare a (penser à), riuscire a (réussir à), abituarsi a, rinunciare a.",
+      "Avec di : smettere di, cercare di, decidere di, ricordarsi di. Avec da : dipendere da. Avec in : credere in.",
+      "Remplace-les par ci et ne : ci penso io (a), ne ho bisogno (di), ci credo (in)."
+     ],
+     "q": "À quoi penses-tu le plus quand tu te détends ? Penso a...",
+     "c": "Écris cinq phrases, une avec chacun : pensare a, credere in, dipendere da, riuscire a, smettere di."
+    },
+    "it": {
+     "t": "Verbi con preposizione",
+     "g": "Imparare verbi con preposizione fissa: pensare a, credere in, dipendere da, riuscire a, smettere di.",
+     "p": [
+      "Con a: pensare a, riuscire a, abituarsi a, rinunciare a.",
+      "Con di: smettere di, cercare di, decidere di, ricordarsi di. Con da: dipendere da. Con in: credere in.",
+      "Sostituiscili con ci e ne: ci penso io (a), ne ho bisogno (di), ci credo (in)."
+     ],
+     "q": "A che cosa pensi di più quando ti rilassi? Penso a...",
+     "c": "Scrivi cinque frasi, una con ciascuno: pensare a, credere in, dipendere da, riuscire a, smettere di."
+    },
+    "pt": {
+     "t": "Verbos com preposição",
+     "g": "Aprender verbos com preposição fixa: pensare a, credere in, dipendere da, riuscire a, smettere di.",
+     "p": [
+      "Com a: pensare a (pensar em), riuscire a (conseguir), abituarsi a, rinunciare a.",
+      "Com di: smettere di, cercare di, decidere di, ricordarsi di. Com da: dipendere da. Com in: credere in.",
+      "Substitui-os por ci e ne: ci penso io (a), ne ho bisogno (di), ci credo (in)."
+     ],
+     "q": "Em que pensas mais quando relaxas? Penso a...",
+     "c": "Escreve cinco frases, uma com cada: pensare a, credere in, dipendere da, riuscire a, smettere di."
+    },
+    "pt_BR": {
+     "t": "Verbos com preposição",
+     "g": "Aprender verbos com preposição fixa: pensare a, credere in, dipendere da, riuscire a, smettere di.",
+     "p": [
+      "Com a: pensare a (pensar em), riuscire a (conseguir), abituarsi a, rinunciare a.",
+      "Com di: smettere di, cercare di, decidere di, ricordarsi di. Com da: dipendere da. Com in: credere in.",
+      "Substitua por ci e ne: ci penso io (a), ne ho bisogno (di), ci credo (in)."
+     ],
+     "q": "Em que você mais pensa quando relaxa? Penso a...",
+     "c": "Escreva cinco frases, uma com cada: pensare a, credere in, dipendere da, riuscire a, smettere di."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "pensare a",
+      "ex": "Penso spesso alle vacanze in Puglia."
+     },
+     {
+      "w": "credere in",
+      "ex": "Credo molto in questo progetto."
+     },
+     {
+      "w": "dipendere da",
+      "ex": "Dipende dal tempo: se piove, restiamo a casa."
+     },
+     {
+      "w": "riuscire a",
+      "ex": "Finalmente sono riuscito a capire il film senza sottotitoli."
+     },
+     {
+      "w": "smettere di",
+      "ex": "Ha smesso di piovere, usciamo!"
+     },
+     {
+      "w": "abituarsi a",
+      "ex": "Mi sono abituata a cenare tardi."
+     }
+    ],
+    "gram": "Verbi + preposizione: pensare a, riuscire a, credere in, dipendere da, smettere di; ci sostituisce a/in, ne sostituisce di."
+   }
+  },
+  {
+   "d": 297,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Verbs that change meaning",
+     "g": "One verb, many meanings: sentire, servire, mancare, tenere.",
+     "p": [
+      "Sentire = hear, feel, smell or taste: senti questa musica, sento freddo, senti che profumo!",
+      "Servire = to serve or to be needed: mi serve una penna. Mancare = to be missing or to miss: mi manchi.",
+      "Tenere = hold, keep, care: tieni!, tengo il posto, ci tengo molto (it matters a lot to me)."
+     ],
+     "q": "What or who do you miss most when you are away from home? Mi manca...",
+     "c": "Write four sentences, each using one verb with a different meaning from today's examples."
+    },
+    "de": {
+     "t": "Verben mit wechselnder Bedeutung",
+     "g": "Ein Verb, viele Bedeutungen: sentire, servire, mancare, tenere.",
+     "p": [
+      "Sentire = hören, fühlen, riechen, schmecken: senti questa musica, sento freddo, senti che profumo!",
+      "Servire = dienen oder gebraucht werden: mi serve una penna. Mancare = fehlen, vermissen: mi manchi.",
+      "Tenere = halten, behalten, wichtig sein: tieni!, tengo il posto, ci tengo molto (das ist mir wichtig)."
+     ],
+     "q": "Was oder wen vermisst du am meisten, wenn du weg von zu Hause bist? Mi manca...",
+     "c": "Schreib vier Sätze, jeder mit einem Verb in einer anderen Bedeutung als in den Beispielen."
+    },
+    "es": {
+     "t": "Verbos que cambian de significado",
+     "g": "Un verbo, muchos significados: sentire, servire, mancare, tenere.",
+     "p": [
+      "Sentire = oír, sentir, oler o saborear: senti questa musica, sento freddo, senti che profumo!",
+      "Servire = servir o hacer falta: mi serve una penna. Mancare = faltar o echar de menos: mi manchi.",
+      "Tenere = sostener, guardar, importar: tieni!, tengo il posto, ci tengo molto (me importa mucho)."
+     ],
+     "q": "¿Qué o a quién echas más de menos cuando estás lejos de casa? Mi manca...",
+     "c": "Escribe cuatro frases, cada una con un verbo en un significado distinto al de los ejemplos."
+    },
+    "fr": {
+     "t": "Verbes à sens multiples",
+     "g": "Un verbe, plusieurs sens : sentire, servire, mancare, tenere.",
+     "p": [
+      "Sentire = entendre, ressentir, sentir, goûter : senti questa musica, sento freddo, senti che profumo!",
+      "Servire = servir ou être nécessaire : mi serve una penna. Mancare = manquer : mi manchi (tu me manques).",
+      "Tenere = tenir, garder, tenir à : tieni!, tengo il posto, ci tengo molto (j'y tiens beaucoup)."
+     ],
+     "q": "Qu'est-ce qui ou qui te manque le plus quand tu es loin de chez toi ? Mi manca...",
+     "c": "Écris quatre phrases, chacune avec un verbe dans un sens différent des exemples."
+    },
+    "it": {
+     "t": "Verbi che cambiano significato",
+     "g": "Un verbo, tanti significati: sentire, servire, mancare, tenere.",
+     "p": [
+      "Sentire = udire, provare, odorare, gustare: senti questa musica, sento freddo, senti che profumo!",
+      "Servire = servire a tavola o essere necessario: mi serve una penna. Mancare: manca il sale, mi manchi.",
+      "Tenere = reggere, conservare, dare importanza: tieni!, tengo il posto, ci tengo molto."
+     ],
+     "q": "Che cosa o chi ti manca di più quando sei lontano da casa? Mi manca...",
+     "c": "Scrivi quattro frasi, ognuna con uno dei verbi in un significato diverso dagli esempi."
+    },
+    "pt": {
+     "t": "Verbos que mudam de significado",
+     "g": "Um verbo, muitos significados: sentire, servire, mancare, tenere.",
+     "p": [
+      "Sentire = ouvir, sentir, cheirar ou provar: senti questa musica, sento freddo, senti che profumo!",
+      "Servire = servir ou ser preciso: mi serve una penna. Mancare = faltar ou ter saudades: mi manchi.",
+      "Tenere = segurar, guardar, fazer questão: tieni!, tengo il posto, ci tengo molto (faço muita questão)."
+     ],
+     "q": "Do que ou de quem tens mais saudades quando estás longe de casa? Mi manca...",
+     "c": "Escreve quatro frases, cada uma com um verbo num significado diferente dos exemplos."
+    },
+    "pt_BR": {
+     "t": "Verbos que mudam de sentido",
+     "g": "Um verbo, muitos sentidos: sentire, servire, mancare, tenere.",
+     "p": [
+      "Sentire = ouvir, sentir, cheirar ou provar: senti questa musica, sento freddo, senti che profumo!",
+      "Servire = servir ou ser necessário: mi serve una penna. Mancare = faltar ou sentir falta: mi manchi.",
+      "Tenere = segurar, guardar, fazer questão: tieni!, tengo il posto, ci tengo molto (faço muita questão)."
+     ],
+     "q": "Do que ou de quem você mais sente falta quando está longe de casa? Mi manca...",
+     "c": "Escreva quatro frases, cada uma com um verbo num sentido diferente dos exemplos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "sentire",
+      "ex": "Senti che profumo di pane!"
+     },
+     {
+      "w": "mi serve",
+      "ex": "Mi serve un'ora per finire."
+     },
+     {
+      "w": "mi manchi",
+      "ex": "Mi manchi tanto, quando torni?"
+     },
+     {
+      "w": "manca",
+      "ex": "Alla pasta manca un po' di sale."
+     },
+     {
+      "w": "tenerci",
+      "ex": "Ci tengo molto a questa amicizia."
+     },
+     {
+      "w": "tieni",
+      "ex": "Tieni, questo è per te!"
+     }
+    ],
+    "gram": "Mancare e servire come piacere: la cosa è il soggetto (mi mancano i miei amici, mi servono due euro)."
+   }
+  },
+  {
+   "d": 298,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Nouns with two plurals",
+     "g": "Learn nouns with two plurals: il braccio, le braccia and i bracci; il muro, le mura.",
+     "p": [
+      "Body parts often take -a in the plural: le braccia, le dita, le labbra, le ginocchia, le ossa.",
+      "The masculine plural keeps a figurative meaning: i bracci della gru, i diti (separate fingers, rare).",
+      "City walls are le mura, but walls of a room are i muri. Le uova is the usual plural of l'uovo."
+     ],
+     "q": "Which Italian plural surprised you most when you first saw it?",
+     "c": "Write four sentences using le braccia, le dita, le mura and le uova."
+    },
+    "de": {
+     "t": "Nomen mit zwei Pluralformen",
+     "g": "Du lernst Nomen mit zwei Pluralen: il braccio, le braccia und i bracci; il muro, le mura.",
+     "p": [
+      "Körperteile haben oft den Plural auf -a: le braccia, le dita, le labbra, le ginocchia, le ossa.",
+      "Der männliche Plural behält eine übertragene Bedeutung: i bracci della gru (die Arme des Krans).",
+      "Stadtmauern sind le mura, Zimmerwände i muri. Le uova ist der normale Plural von l'uovo."
+     ],
+     "q": "Welcher italienische Plural hat dich beim ersten Sehen am meisten überrascht?",
+     "c": "Schreib vier Sätze mit le braccia, le dita, le mura und le uova."
+    },
+    "es": {
+     "t": "Sustantivos con dos plurales",
+     "g": "Aprender sustantivos con dos plurales: il braccio, le braccia e i bracci; il muro, le mura.",
+     "p": [
+      "Las partes del cuerpo suelen hacer el plural en -a: le braccia, le dita, le labbra, le ginocchia, le ossa.",
+      "El plural masculino guarda un sentido figurado: i bracci della gru (los brazos de la grúa).",
+      "Las murallas de la ciudad son le mura; las paredes de una habitación, i muri. Le uova es el plural de l'uovo."
+     ],
+     "q": "¿Qué plural italiano te sorprendió más la primera vez?",
+     "c": "Escribe cuatro frases con le braccia, le dita, le mura y le uova."
+    },
+    "fr": {
+     "t": "Noms à deux pluriels",
+     "g": "Apprendre les noms à deux pluriels : il braccio, le braccia et i bracci ; il muro, le mura.",
+     "p": [
+      "Les parties du corps ont souvent un pluriel en -a : le braccia, le dita, le labbra, le ginocchia, le ossa.",
+      "Le pluriel masculin garde un sens figuré : i bracci della gru (les bras de la grue).",
+      "Les remparts sont le mura, les murs d'une pièce i muri. Le uova est le pluriel courant de l'uovo."
+     ],
+     "q": "Quel pluriel italien t'a le plus surpris la première fois ?",
+     "c": "Écris quatre phrases avec le braccia, le dita, le mura et le uova."
+    },
+    "it": {
+     "t": "Nomi con due plurali",
+     "g": "Imparare i nomi con due plurali: il braccio, le braccia e i bracci; il muro, le mura.",
+     "p": [
+      "Le parti del corpo hanno spesso il plurale in -a: le braccia, le dita, le labbra, le ginocchia, le ossa.",
+      "Il plurale maschile conserva un senso figurato: i bracci della gru, i bracci di un fiume.",
+      "Le mura sono quelle della città, i muri quelli di una stanza. Le uova è il plurale di l'uovo."
+     ],
+     "q": "Quale plurale italiano ti ha sorpreso di più la prima volta?",
+     "c": "Scrivi quattro frasi con le braccia, le dita, le mura e le uova."
+    },
+    "pt": {
+     "t": "Substantivos com dois plurais",
+     "g": "Aprender substantivos com dois plurais: il braccio, le braccia e i bracci; il muro, le mura.",
+     "p": [
+      "As partes do corpo fazem muitas vezes o plural em -a: le braccia, le dita, le labbra, le ginocchia, le ossa.",
+      "O plural masculino guarda um sentido figurado: i bracci della gru (os braços da grua).",
+      "As muralhas da cidade são le mura; as paredes de um quarto, i muri. Le uova é o plural de l'uovo."
+     ],
+     "q": "Que plural italiano te surpreendeu mais da primeira vez?",
+     "c": "Escreve quatro frases com le braccia, le dita, le mura e le uova."
+    },
+    "pt_BR": {
+     "t": "Substantivos com dois plurais",
+     "g": "Aprender substantivos com dois plurais: il braccio, le braccia e i bracci; il muro, le mura.",
+     "p": [
+      "As partes do corpo costumam fazer o plural em -a: le braccia, le dita, le labbra, le ginocchia, le ossa.",
+      "O plural masculino mantém um sentido figurado: i bracci della gru (os braços do guindaste).",
+      "As muralhas da cidade são le mura; as paredes de um cômodo, i muri. Le uova é o plural de l'uovo."
+     ],
+     "q": "Que plural italiano mais surpreendeu você da primeira vez?",
+     "c": "Escreva quatro frases com le braccia, le dita, le mura e le uova."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "le braccia",
+      "ex": "Mi ha accolto a braccia aperte."
+     },
+     {
+      "w": "i bracci",
+      "ex": "I bracci della gru sono lunghissimi."
+     },
+     {
+      "w": "le mura",
+      "ex": "Abbiamo passeggiato sulle mura di Lucca."
+     },
+     {
+      "w": "i muri",
+      "ex": "I muri della cucina sono gialli."
+     },
+     {
+      "w": "le dita",
+      "ex": "Incrocio le dita per il tuo esame!"
+     },
+     {
+      "w": "le uova",
+      "ex": "Per la torta servono quattro uova."
+     }
+    ],
+    "gram": "Plurali doppi: in -a (femminile) per il senso proprio (le braccia, le mura), in -i (maschile) per il senso figurato (i bracci)."
+   }
+  },
+  {
+   "d": 299,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Collocations: fare, dare, prendere",
+     "g": "Use natural word pairs: fare una domanda, dare fastidio, prendere una decisione.",
+     "p": [
+      "Fare: fare una domanda, fare una passeggiata, fare colazione, fare la fila, fare finta (pretend).",
+      "Dare: dare fastidio (bother), dare una mano (help), dare un'occhiata (have a look), dare retta (listen to).",
+      "Prendere: prendere una decisione, prendere in giro (tease), prendere freddo, prendere appunti."
+     ],
+     "q": "Who gives you una mano when you need help?",
+     "c": "Write a short paragraph about your day with two collocations each of fare, dare and prendere."
+    },
+    "de": {
+     "t": "Kollokationen: fare, dare, prendere",
+     "g": "Du nutzt natürliche Wortverbindungen: fare una domanda, dare fastidio, prendere una decisione.",
+     "p": [
+      "Fare: fare una domanda, fare una passeggiata, fare colazione, fare la fila, fare finta (so tun als ob).",
+      "Dare: dare fastidio (stören), dare una mano (helfen), dare un'occhiata (anschauen), dare retta (hören auf).",
+      "Prendere: prendere una decisione, prendere in giro (veräppeln), prendere freddo, prendere appunti."
+     ],
+     "q": "Wer hilft dir, wer gibt dir una mano, wenn du Hilfe brauchst?",
+     "c": "Schreib einen kurzen Absatz über deinen Tag mit je zwei Kollokationen von fare, dare und prendere."
+    },
+    "es": {
+     "t": "Colocaciones: fare, dare, prendere",
+     "g": "Usar combinaciones naturales: fare una domanda, dare fastidio, prendere una decisione.",
+     "p": [
+      "Fare: fare una domanda, fare una passeggiata, fare colazione, fare la fila, fare finta (fingir).",
+      "Dare: dare fastidio (molestar), dare una mano (echar una mano), dare un'occhiata (echar un vistazo), dare retta (hacer caso).",
+      "Prendere: prendere una decisione, prendere in giro (tomar el pelo), prendere freddo, prendere appunti."
+     ],
+     "q": "¿Quién te echa una mano, te da una mano, cuando necesitas ayuda?",
+     "c": "Escribe un párrafo corto sobre tu día con dos colocaciones de fare, dare y prendere."
+    },
+    "fr": {
+     "t": "Collocations : fare, dare, prendere",
+     "g": "Utiliser des associations naturelles : fare una domanda, dare fastidio, prendere una decisione.",
+     "p": [
+      "Fare : fare una domanda, fare una passeggiata, fare colazione, fare la fila, fare finta (faire semblant).",
+      "Dare : dare fastidio (déranger), dare una mano (aider), dare un'occhiata (jeter un œil), dare retta (écouter).",
+      "Prendere : prendere una decisione, prendere in giro (se moquer), prendere freddo, prendere appunti."
+     ],
+     "q": "Qui te donne un coup de main, una mano, quand tu as besoin d'aide ?",
+     "c": "Écris un court paragraphe sur ta journée avec deux collocations de fare, dare et prendere."
+    },
+    "it": {
+     "t": "Collocazioni: fare, dare, prendere",
+     "g": "Usare combinazioni naturali: fare una domanda, dare fastidio, prendere una decisione.",
+     "p": [
+      "Fare: fare una domanda, fare una passeggiata, fare colazione, fare la fila, fare finta.",
+      "Dare: dare fastidio, dare una mano, dare un'occhiata, dare retta a qualcuno.",
+      "Prendere: prendere una decisione, prendere in giro, prendere freddo, prendere appunti."
+     ],
+     "q": "Chi ti dà una mano quando hai bisogno di aiuto?",
+     "c": "Scrivi un breve paragrafo sulla tua giornata con due collocazioni ciascuno di fare, dare e prendere."
+    },
+    "pt": {
+     "t": "Colocações: fare, dare, prendere",
+     "g": "Usar combinações naturais: fare una domanda, dare fastidio, prendere una decisione.",
+     "p": [
+      "Fare: fare una domanda, fare una passeggiata, fare colazione, fare la fila, fare finta (fingir).",
+      "Dare: dare fastidio (incomodar), dare una mano (dar uma mão), dare un'occhiata (dar uma olhadela), dare retta (dar ouvidos).",
+      "Prendere: prendere una decisione, prendere in giro (gozar com), prendere freddo, prendere appunti."
+     ],
+     "q": "Quem te dá uma mão, una mano, quando precisas de ajuda?",
+     "c": "Escreve um parágrafo curto sobre o teu dia com duas colocações de fare, dare e prendere."
+    },
+    "pt_BR": {
+     "t": "Colocações: fare, dare, prendere",
+     "g": "Usar combinações naturais: fare una domanda, dare fastidio, prendere una decisione.",
+     "p": [
+      "Fare: fare una domanda, fare una passeggiata, fare colazione, fare la fila, fare finta (fingir).",
+      "Dare: dare fastidio (incomodar), dare una mano (dar uma mão), dare un'occhiata (dar uma olhada), dare retta (dar ouvidos).",
+      "Prendere: prendere una decisione, prendere in giro (zoar), prendere freddo, prendere appunti."
+     ],
+     "q": "Quem dá uma mão, una mano, para você quando precisa de ajuda?",
+     "c": "Escreva um parágrafo curto sobre seu dia com duas colocações de fare, dare e prendere."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "fare una domanda",
+      "ex": "Posso farti una domanda personale?"
+     },
+     {
+      "w": "fare finta",
+      "ex": "Ha fatto finta di non vedermi."
+     },
+     {
+      "w": "dare fastidio",
+      "ex": "Ti dà fastidio se apro la finestra?"
+     },
+     {
+      "w": "dare una mano",
+      "ex": "Mi dai una mano a spostare il divano?"
+     },
+     {
+      "w": "prendere una decisione",
+      "ex": "Devo prendere una decisione entro domani."
+     },
+     {
+      "w": "prendere in giro",
+      "ex": "Dai, non prendermi in giro!"
+     }
+    ],
+    "gram": "Collocazioni fisse: si dice fare una domanda (non chiedere una domanda), prendere una decisione, dare fastidio a qualcuno."
+   }
+  },
+  {
+   "d": 300,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Collocations: mettere, tenere, avere",
+     "g": "Use mettere in dubbio, tenere conto and avere senso naturally.",
+     "p": [
+      "Mettere: mettere in dubbio (question), mettere in ordine (tidy), mettersi d'accordo (agree), mettere a posto.",
+      "Tenere: tenere conto di (take into account), tenere d'occhio (keep an eye on), tenere a mente.",
+      "Avere: avere senso (make sense), avere ragione, avere voglia di, avere a che fare con (deal with)."
+     ],
+     "q": "What is something that doesn't make sense to you, che non ha senso?",
+     "c": "Write four sentences using mettere in dubbio, tenere conto di, avere senso and mettersi d'accordo."
+    },
+    "de": {
+     "t": "Kollokationen: mettere, tenere, avere",
+     "g": "Du verwendest mettere in dubbio, tenere conto und avere senso natürlich.",
+     "p": [
+      "Mettere: mettere in dubbio (anzweifeln), mettere in ordine (aufräumen), mettersi d'accordo (sich einigen), mettere a posto.",
+      "Tenere: tenere conto di (berücksichtigen), tenere d'occhio (im Auge behalten), tenere a mente.",
+      "Avere: avere senso (Sinn ergeben), avere ragione, avere voglia di, avere a che fare con (zu tun haben mit)."
+     ],
+     "q": "Was ergibt für dich keinen Sinn, che non ha senso?",
+     "c": "Schreib vier Sätze mit mettere in dubbio, tenere conto di, avere senso und mettersi d'accordo."
+    },
+    "es": {
+     "t": "Colocaciones: mettere, tenere, avere",
+     "g": "Usar con naturalidad mettere in dubbio, tenere conto y avere senso.",
+     "p": [
+      "Mettere: mettere in dubbio (poner en duda), mettere in ordine (ordenar), mettersi d'accordo (ponerse de acuerdo), mettere a posto.",
+      "Tenere: tenere conto di (tener en cuenta), tenere d'occhio (vigilar), tenere a mente.",
+      "Avere: avere senso (tener sentido), avere ragione, avere voglia di, avere a che fare con (tratar con)."
+     ],
+     "q": "¿Qué cosa no tiene sentido para ti, che non ha senso?",
+     "c": "Escribe cuatro frases con mettere in dubbio, tenere conto di, avere senso y mettersi d'accordo."
+    },
+    "fr": {
+     "t": "Collocations : mettere, tenere, avere",
+     "g": "Utiliser naturellement mettere in dubbio, tenere conto et avere senso.",
+     "p": [
+      "Mettere : mettere in dubbio (mettre en doute), mettere in ordine (ranger), mettersi d'accordo (se mettre d'accord), mettere a posto.",
+      "Tenere : tenere conto di (tenir compte de), tenere d'occhio (garder à l'œil), tenere a mente.",
+      "Avere : avere senso (avoir du sens), avere ragione, avere voglia di, avere a che fare con (avoir affaire à)."
+     ],
+     "q": "Qu'est-ce qui n'a pas de sens pour toi, che non ha senso ?",
+     "c": "Écris quatre phrases avec mettere in dubbio, tenere conto di, avere senso et mettersi d'accordo."
+    },
+    "it": {
+     "t": "Collocazioni: mettere, tenere, avere",
+     "g": "Usare con naturalezza mettere in dubbio, tenere conto e avere senso.",
+     "p": [
+      "Mettere: mettere in dubbio, mettere in ordine, mettersi d'accordo, mettere a posto.",
+      "Tenere: tenere conto di, tenere d'occhio, tenere a mente.",
+      "Avere: avere senso, avere ragione, avere voglia di, avere a che fare con."
+     ],
+     "q": "Che cosa, secondo te, non ha senso?",
+     "c": "Scrivi quattro frasi con mettere in dubbio, tenere conto di, avere senso e mettersi d'accordo."
+    },
+    "pt": {
+     "t": "Colocações: mettere, tenere, avere",
+     "g": "Usar com naturalidade mettere in dubbio, tenere conto e avere senso.",
+     "p": [
+      "Mettere: mettere in dubbio (pôr em dúvida), mettere in ordine (arrumar), mettersi d'accordo (pôr-se de acordo), mettere a posto.",
+      "Tenere: tenere conto di (ter em conta), tenere d'occhio (estar de olho), tenere a mente.",
+      "Avere: avere senso (fazer sentido), avere ragione, avere voglia di, avere a che fare con (lidar com)."
+     ],
+     "q": "O que é que não faz sentido para ti, che non ha senso?",
+     "c": "Escreve quatro frases com mettere in dubbio, tenere conto di, avere senso e mettersi d'accordo."
+    },
+    "pt_BR": {
+     "t": "Colocações: mettere, tenere, avere",
+     "g": "Usar com naturalidade mettere in dubbio, tenere conto e avere senso.",
+     "p": [
+      "Mettere: mettere in dubbio (pôr em dúvida), mettere in ordine (arrumar), mettersi d'accordo (entrar em acordo), mettere a posto.",
+      "Tenere: tenere conto di (levar em conta), tenere d'occhio (ficar de olho), tenere a mente.",
+      "Avere: avere senso (fazer sentido), avere ragione, avere voglia di, avere a che fare con (lidar com)."
+     ],
+     "q": "O que não faz sentido para você, che non ha senso?",
+     "c": "Escreva quatro frases com mettere in dubbio, tenere conto di, avere senso e mettersi d'accordo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "mettere in dubbio",
+      "ex": "Nessuno mette in dubbio la tua onestà."
+     },
+     {
+      "w": "mettersi d'accordo",
+      "ex": "Ci mettiamo d'accordo per l'orario domani."
+     },
+     {
+      "w": "tenere conto di",
+      "ex": "Bisogna tenere conto del traffico."
+     },
+     {
+      "w": "tenere d'occhio",
+      "ex": "Puoi tenere d'occhio la mia borsa?"
+     },
+     {
+      "w": "avere senso",
+      "ex": "Questa frase non ha senso."
+     },
+     {
+      "w": "avere a che fare con",
+      "ex": "Al lavoro ho a che fare con molti clienti."
+     }
+    ],
+    "gram": "Collocazioni: tenere conto di + nome, mettersi d'accordo su + nome, avere senso + infinito (non ha senso aspettare)."
+   }
+  }
+ ]
+}

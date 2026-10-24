@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 261,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Social media and society",
+     "g": "Discuss social media in German: Influencer, Bildschirmzeit, Falschmeldungen.",
+     "p": [
+      "Key words: soziale Medien, der Beitrag (post), teilen, liken, folgen, der Follower, die Bildschirmzeit (screen time).",
+      "Pros and cons: in Kontakt bleiben, sich informieren vs. Falschmeldungen (fake news), Ablenkung, Vergleichsdruck.",
+      "Useful structures: Einerseits..., andererseits... / Der Vorteil ist, dass... / Ein Nachteil ist..."
+     ],
+     "q": "How much time do you spend on social media, and what do you like or dislike about it?",
+     "c": "Write four sentences about social media: two advantages and two disadvantages with einerseits/andererseits."
+    },
+    "de": {
+     "t": "Soziale Medien und Gesellschaft",
+     "g": "Du diskutierst über soziale Medien: Influencer, Bildschirmzeit, Falschmeldungen.",
+     "p": [
+      "Wichtige Wörter: soziale Medien, der Beitrag, teilen, liken, folgen, der Follower, die Bildschirmzeit.",
+      "Vor- und Nachteile: in Kontakt bleiben, sich informieren vs. Falschmeldungen, Ablenkung, Vergleichsdruck.",
+      "Nützliche Strukturen: Einerseits..., andererseits... / Der Vorteil ist, dass... / Ein Nachteil ist..."
+     ],
+     "q": "Wie viel Zeit verbringst du in sozialen Medien, und was gefällt oder stört dich daran?",
+     "c": "Schreib vier Sätze über soziale Medien: zwei Vorteile und zwei Nachteile mit einerseits/andererseits."
+    },
+    "es": {
+     "t": "Redes sociales y sociedad",
+     "g": "Habla de redes sociales en alemán: Influencer, Bildschirmzeit, Falschmeldungen.",
+     "p": [
+      "Palabras clave: soziale Medien, der Beitrag (publicación), teilen, liken, folgen, die Bildschirmzeit (tiempo de pantalla).",
+      "Pros y contras: in Kontakt bleiben, sich informieren frente a Falschmeldungen (bulos), Ablenkung, Vergleichsdruck.",
+      "Estructuras útiles: Einerseits..., andererseits... / Der Vorteil ist, dass... / Ein Nachteil ist..."
+     ],
+     "q": "¿Cuánto tiempo pasas en redes sociales y qué te gusta o molesta de ellas?",
+     "c": "Escribe cuatro frases sobre redes sociales: dos ventajas y dos desventajas con einerseits/andererseits."
+    },
+    "fr": {
+     "t": "Réseaux sociaux et société",
+     "g": "Parler des réseaux sociaux en allemand : Influencer, Bildschirmzeit, Falschmeldungen.",
+     "p": [
+      "Mots clés : soziale Medien, der Beitrag (publication), teilen, liken, folgen, die Bildschirmzeit (temps d'écran).",
+      "Pour et contre : in Kontakt bleiben, sich informieren contre Falschmeldungen (infox), Ablenkung, Vergleichsdruck.",
+      "Structures utiles : Einerseits..., andererseits... / Der Vorteil ist, dass... / Ein Nachteil ist..."
+     ],
+     "q": "Combien de temps passes-tu sur les réseaux sociaux, et qu'est-ce qui te plaît ou te gêne ?",
+     "c": "Écris quatre phrases sur les réseaux sociaux : deux avantages et deux inconvénients avec einerseits/andererseits."
+    },
+    "it": {
+     "t": "Social media e società",
+     "g": "Parla di social media in tedesco: Influencer, Bildschirmzeit, Falschmeldungen.",
+     "p": [
+      "Parole chiave: soziale Medien, der Beitrag (post), teilen, liken, folgen, die Bildschirmzeit (tempo davanti allo schermo).",
+      "Pro e contro: in Kontakt bleiben, sich informieren contro Falschmeldungen (fake news), Ablenkung, Vergleichsdruck.",
+      "Strutture utili: Einerseits..., andererseits... / Der Vorteil ist, dass... / Ein Nachteil ist..."
+     ],
+     "q": "Quanto tempo passi sui social e cosa ti piace o ti dà fastidio?",
+     "c": "Scrivi quattro frasi sui social: due vantaggi e due svantaggi con einerseits/andererseits."
+    },
+    "pt": {
+     "t": "Redes sociais e sociedade",
+     "g": "Falar de redes sociais em alemão: Influencer, Bildschirmzeit, Falschmeldungen.",
+     "p": [
+      "Palavras-chave: soziale Medien, der Beitrag (publicação), teilen, liken, folgen, die Bildschirmzeit (tempo de ecrã).",
+      "Prós e contras: in Kontakt bleiben, sich informieren vs. Falschmeldungen (notícias falsas), Ablenkung, Vergleichsdruck.",
+      "Estruturas úteis: Einerseits..., andererseits... / Der Vorteil ist, dass... / Ein Nachteil ist..."
+     ],
+     "q": "Quanto tempo passas nas redes sociais e o que gostas ou não gostas nelas?",
+     "c": "Escreve quatro frases sobre redes sociais: duas vantagens e duas desvantagens com einerseits/andererseits."
+    },
+    "pt_BR": {
+     "t": "Redes sociais e sociedade",
+     "g": "Falar de redes sociais em alemão: Influencer, Bildschirmzeit, Falschmeldungen.",
+     "p": [
+      "Palavras-chave: soziale Medien, der Beitrag (post), teilen, liken, folgen, die Bildschirmzeit (tempo de tela).",
+      "Prós e contras: in Kontakt bleiben, sich informieren vs. Falschmeldungen (fake news), Ablenkung, Vergleichsdruck.",
+      "Estruturas úteis: Einerseits..., andererseits... / Der Vorteil ist, dass... / Ein Nachteil ist..."
+     ],
+     "q": "Quanto tempo você passa nas redes sociais e do que gosta ou não gosta nelas?",
+     "c": "Escreva quatro frases sobre redes sociais: duas vantagens e duas desvantagens com einerseits/andererseits."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Beitrag",
+      "ex": "Ihr letzter Beitrag hat viele Likes bekommen."
+     },
+     {
+      "w": "teilen",
+      "ex": "Ich teile gern Fotos von meinen Reisen."
+     },
+     {
+      "w": "die Bildschirmzeit",
+      "ex": "Ich möchte meine Bildschirmzeit reduzieren."
+     },
+     {
+      "w": "die Falschmeldung",
+      "ex": "Man sollte keine Falschmeldungen teilen."
+     },
+     {
+      "w": "der Influencer / die Influencerin",
+      "ex": "Die Influencerin zeigt vegane Rezepte."
+     },
+     {
+      "w": "einerseits ... andererseits",
+      "ex": "Einerseits ist es praktisch, andererseits kostet es viel Zeit."
+     }
+    ],
+    "gram": "Einerseits..., andererseits... + Verb auf Position 2; Der Vorteil ist, dass... (Verb am Ende)."
+   }
+  },
+  {
+   "d": 262,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Technology and the future",
+     "g": "Talk about tech and tomorrow: Künstliche Intelligenz, Roboter, Homeoffice.",
+     "p": [
+      "Words: die Künstliche Intelligenz (KI), der Roboter, die Digitalisierung, das Homeoffice, das selbstfahrende Auto.",
+      "Talk about the future with werden: In zwanzig Jahren werden Roboter viele Aufgaben übernehmen.",
+      "Speculate politely: Ich könnte mir vorstellen, dass... / Wahrscheinlich... / Es ist möglich, dass..."
+     ],
+     "q": "Which technology will change our lives most in the next twenty years, in your opinion?",
+     "c": "Write five predictions about life in the future using werden, wahrscheinlich and vielleicht."
+    },
+    "de": {
+     "t": "Technik und Zukunft",
+     "g": "Du sprichst über Technik und Zukunft: Künstliche Intelligenz, Roboter, Homeoffice.",
+     "p": [
+      "Wörter: die Künstliche Intelligenz (KI), der Roboter, die Digitalisierung, das Homeoffice, das selbstfahrende Auto.",
+      "Zukunft mit werden: In zwanzig Jahren werden Roboter viele Aufgaben übernehmen.",
+      "Vorsichtig vermuten: Ich könnte mir vorstellen, dass... / Wahrscheinlich... / Es ist möglich, dass..."
+     ],
+     "q": "Welche Technik wird unser Leben in den nächsten zwanzig Jahren am meisten verändern?",
+     "c": "Schreib fünf Vorhersagen über das Leben in der Zukunft mit werden, wahrscheinlich und vielleicht."
+    },
+    "es": {
+     "t": "Tecnología y futuro",
+     "g": "Habla de tecnología y del mañana: Künstliche Intelligenz, Roboter, Homeoffice.",
+     "p": [
+      "Palabras: die Künstliche Intelligenz (KI, IA), der Roboter, die Digitalisierung, das Homeoffice (teletrabajo).",
+      "El futuro con werden: In zwanzig Jahren werden Roboter viele Aufgaben übernehmen.",
+      "Especula con prudencia: Ich könnte mir vorstellen, dass... / Wahrscheinlich... / Es ist möglich, dass..."
+     ],
+     "q": "¿Qué tecnología cambiará más nuestra vida en los próximos veinte años, en tu opinión?",
+     "c": "Escribe cinco predicciones sobre la vida en el futuro con werden, wahrscheinlich y vielleicht."
+    },
+    "fr": {
+     "t": "Technologie et avenir",
+     "g": "Parler de technologie et de demain : Künstliche Intelligenz, Roboter, Homeoffice.",
+     "p": [
+      "Mots : die Künstliche Intelligenz (KI, IA), der Roboter, die Digitalisierung, das Homeoffice (télétravail).",
+      "Le futur avec werden : In zwanzig Jahren werden Roboter viele Aufgaben übernehmen.",
+      "Faire des hypothèses : Ich könnte mir vorstellen, dass... / Wahrscheinlich... / Es ist möglich, dass..."
+     ],
+     "q": "Selon toi, quelle technologie changera le plus nos vies dans les vingt prochaines années ?",
+     "c": "Écris cinq prédictions sur la vie future avec werden, wahrscheinlich et vielleicht."
+    },
+    "it": {
+     "t": "Tecnologia e futuro",
+     "g": "Parla di tecnologia e di domani: Künstliche Intelligenz, Roboter, Homeoffice.",
+     "p": [
+      "Parole: die Künstliche Intelligenz (KI, IA), der Roboter, die Digitalisierung, das Homeoffice (lavoro da casa).",
+      "Il futuro con werden: In zwanzig Jahren werden Roboter viele Aufgaben übernehmen.",
+      "Ipotizza con cautela: Ich könnte mir vorstellen, dass... / Wahrscheinlich... / Es ist möglich, dass..."
+     ],
+     "q": "Secondo te, quale tecnologia cambierà di più la nostra vita nei prossimi vent'anni?",
+     "c": "Scrivi cinque previsioni sulla vita futura con werden, wahrscheinlich e vielleicht."
+    },
+    "pt": {
+     "t": "Tecnologia e futuro",
+     "g": "Falar de tecnologia e do amanhã: Künstliche Intelligenz, Roboter, Homeoffice.",
+     "p": [
+      "Palavras: die Künstliche Intelligenz (KI, IA), der Roboter, die Digitalisierung, das Homeoffice (teletrabalho).",
+      "O futuro com werden: In zwanzig Jahren werden Roboter viele Aufgaben übernehmen.",
+      "Especular com cuidado: Ich könnte mir vorstellen, dass... / Wahrscheinlich... / Es ist möglich, dass..."
+     ],
+     "q": "Na tua opinião, que tecnologia vai mudar mais a nossa vida nos próximos vinte anos?",
+     "c": "Escreve cinco previsões sobre a vida no futuro com werden, wahrscheinlich e vielleicht."
+    },
+    "pt_BR": {
+     "t": "Tecnologia e futuro",
+     "g": "Falar de tecnologia e do amanhã: Künstliche Intelligenz, Roboter, Homeoffice.",
+     "p": [
+      "Palavras: die Künstliche Intelligenz (KI, IA), der Roboter, die Digitalisierung, das Homeoffice (home office).",
+      "O futuro com werden: In zwanzig Jahren werden Roboter viele Aufgaben übernehmen.",
+      "Especular com cuidado: Ich könnte mir vorstellen, dass... / Wahrscheinlich... / Es ist möglich, dass..."
+     ],
+     "q": "Na sua opinião, que tecnologia vai mudar mais a nossa vida nos próximos vinte anos?",
+     "c": "Escreva cinco previsões sobre a vida no futuro com werden, wahrscheinlich e vielleicht."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Künstliche Intelligenz",
+      "ex": "Künstliche Intelligenz hilft beim Übersetzen."
+     },
+     {
+      "w": "der Roboter",
+      "ex": "In der Fabrik arbeiten viele Roboter."
+     },
+     {
+      "w": "das Homeoffice",
+      "ex": "Montags arbeite ich im Homeoffice."
+     },
+     {
+      "w": "die Digitalisierung",
+      "ex": "Die Digitalisierung verändert die Schulen."
+     },
+     {
+      "w": "übernehmen",
+      "ex": "Maschinen werden viele Aufgaben übernehmen."
+     },
+     {
+      "w": "Ich könnte mir vorstellen, dass ...",
+      "ex": "Ich könnte mir vorstellen, dass wir bald fliegende Taxis haben."
+     }
+    ],
+    "gram": "Futur I: werden + Infinitiv am Ende (Roboter werden helfen); Vermutung im Konjunktiv II: Ich könnte mir vorstellen, dass..."
+   }
+  },
+  {
+   "d": 263,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Travel planning in depth",
+     "g": "Plan a trip in detail: Reiseroute, Unterkunft, Budget and the unexpected.",
+     "p": [
+      "Plan: die Reiseroute (itinerary), die Unterkunft (accommodation), buchen, das Budget, die Sehenswürdigkeit, der Zwischenstopp.",
+      "Discuss options: Wir könnten... / Was hältst du davon, wenn...? / Lieber mit dem Zug als mit dem Auto.",
+      "Think ahead: Was machen wir, falls...? Eine Reiseversicherung abschließen, einen Plan B haben."
+     ],
+     "q": "Plan a five-day trip with me: where would you go, how, and where would you sleep?",
+     "c": "Write a short itinerary for three days in a German-speaking city, with transport and accommodation."
+    },
+    "de": {
+     "t": "Reiseplanung vertieft",
+     "g": "Du planst eine Reise im Detail: Reiseroute, Unterkunft, Budget und Unvorhergesehenes.",
+     "p": [
+      "Planen: die Reiseroute, die Unterkunft, buchen, das Budget, die Sehenswürdigkeit, der Zwischenstopp.",
+      "Optionen besprechen: Wir könnten... / Was hältst du davon, wenn...? / Lieber mit dem Zug als mit dem Auto.",
+      "Vorausdenken: Was machen wir, falls...? Eine Reiseversicherung abschließen, einen Plan B haben."
+     ],
+     "q": "Plan mit mir eine Reise von fünf Tagen: Wohin, wie, und wo würdest du übernachten?",
+     "c": "Schreib einen kurzen Reiseplan für drei Tage in einer deutschsprachigen Stadt, mit Verkehrsmittel und Unterkunft."
+    },
+    "es": {
+     "t": "Planificar un viaje a fondo",
+     "g": "Planifica un viaje al detalle: Reiseroute, Unterkunft, Budget y los imprevistos.",
+     "p": [
+      "Planificar: die Reiseroute (itinerario), die Unterkunft (alojamiento), buchen, das Budget, die Sehenswürdigkeit.",
+      "Comentar opciones: Wir könnten... / Was hältst du davon, wenn...? / Lieber mit dem Zug als mit dem Auto.",
+      "Prevé: Was machen wir, falls...? Eine Reiseversicherung abschließen (contratar un seguro), tener un plan B."
+     ],
+     "q": "Planea conmigo un viaje de cinco días: ¿adónde irías, cómo y dónde dormirías?",
+     "c": "Escribe un itinerario breve de tres días en una ciudad germanohablante, con transporte y alojamiento."
+    },
+    "fr": {
+     "t": "Préparer un voyage en détail",
+     "g": "Planifier un voyage en détail : Reiseroute, Unterkunft, Budget et les imprévus.",
+     "p": [
+      "Planifier : die Reiseroute (itinéraire), die Unterkunft (hébergement), buchen, das Budget, die Sehenswürdigkeit.",
+      "Discuter des options : Wir könnten... / Was hältst du davon, wenn... ? / Lieber mit dem Zug als mit dem Auto.",
+      "Anticiper : Was machen wir, falls... ? Eine Reiseversicherung abschließen (prendre une assurance), avoir un plan B."
+     ],
+     "q": "Prépare avec moi un voyage de cinq jours : où irais-tu, comment, et où dormirais-tu ?",
+     "c": "Écris un court itinéraire de trois jours dans une ville germanophone, avec transport et hébergement."
+    },
+    "it": {
+     "t": "Pianificare un viaggio a fondo",
+     "g": "Pianifica un viaggio nei dettagli: Reiseroute, Unterkunft, Budget e gli imprevisti.",
+     "p": [
+      "Pianificare: die Reiseroute (itinerario), die Unterkunft (alloggio), buchen, das Budget, die Sehenswürdigkeit.",
+      "Discutere opzioni: Wir könnten... / Was hältst du davon, wenn...? / Lieber mit dem Zug als mit dem Auto.",
+      "Pensa in anticipo: Was machen wir, falls...? Eine Reiseversicherung abschließen (fare un'assicurazione), un piano B."
+     ],
+     "q": "Pianifica con me un viaggio di cinque giorni: dove andresti, come e dove dormiresti?",
+     "c": "Scrivi un breve itinerario di tre giorni in una città di lingua tedesca, con trasporti e alloggio."
+    },
+    "pt": {
+     "t": "Planear uma viagem a fundo",
+     "g": "Planear uma viagem em detalhe: Reiseroute, Unterkunft, Budget e os imprevistos.",
+     "p": [
+      "Planear: die Reiseroute (itinerário), die Unterkunft (alojamento), buchen, das Budget, die Sehenswürdigkeit.",
+      "Discutir opções: Wir könnten... / Was hältst du davon, wenn...? / Lieber mit dem Zug als mit dem Auto.",
+      "Prevenir: Was machen wir, falls...? Eine Reiseversicherung abschließen (fazer um seguro), ter um plano B."
+     ],
+     "q": "Planeia comigo uma viagem de cinco dias: para onde irias, como, e onde ficarias?",
+     "c": "Escreve um itinerário curto de três dias numa cidade de língua alemã, com transporte e alojamento."
+    },
+    "pt_BR": {
+     "t": "Planejar uma viagem a fundo",
+     "g": "Planejar uma viagem em detalhe: Reiseroute, Unterkunft, Budget e os imprevistos.",
+     "p": [
+      "Planejar: die Reiseroute (roteiro), die Unterkunft (hospedagem), buchen, das Budget, die Sehenswürdigkeit.",
+      "Discutir opções: Wir könnten... / Was hältst du davon, wenn...? / Lieber mit dem Zug als mit dem Auto.",
+      "Prevenir: Was machen wir, falls...? Eine Reiseversicherung abschließen (fazer um seguro), ter um plano B."
+     ],
+     "q": "Planeje comigo uma viagem de cinco dias: para onde você iria, como, e onde ficaria?",
+     "c": "Escreva um roteiro curto de três dias numa cidade de língua alemã, com transporte e hospedagem."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Reiseroute",
+      "ex": "Unsere Reiseroute führt von München nach Salzburg."
+     },
+     {
+      "w": "die Unterkunft",
+      "ex": "Wir suchen eine günstige Unterkunft in der Altstadt."
+     },
+     {
+      "w": "buchen",
+      "ex": "Ich habe das Hotel schon online gebucht."
+     },
+     {
+      "w": "das Budget",
+      "ex": "Unser Budget für die Reise ist begrenzt."
+     },
+     {
+      "w": "Was hältst du davon, wenn ...?",
+      "ex": "Was hältst du davon, wenn wir den Nachtzug nehmen?"
+     },
+     {
+      "w": "die Reiseversicherung",
+      "ex": "Hast du eine Reiseversicherung abgeschlossen?"
+     }
+    ],
+    "gram": "Vorschläge: Wir könnten + Infinitiv; Was hältst du davon, wenn... (Verb am Ende)?; lieber... als (Ich fahre lieber Zug als Auto)."
+   }
+  },
+  {
+   "d": 264,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Solving a travel problem",
+     "g": "Handle travel trouble: Flug gestrichen, Gepäck verloren, and making a polite complaint.",
+     "p": [
+      "Problems: Mein Flug wurde gestrichen. Mein Gepäck ist nicht angekommen. Der Zug hat Verspätung. Das Zimmer ist nicht sauber.",
+      "Ask for help: Was kann ich jetzt machen? Könnten Sie mir bitte helfen? Ich hätte gern eine Lösung.",
+      "Complain politely but firmly: Ich möchte mich beschweren. Ich erwarte eine Erstattung. Stay calm and give the facts."
+     ],
+     "q": "Your suitcase did not arrive. Role-play with me: you are at the airport desk and I am the employee!",
+     "c": "Write a short polite complaint email to a hotel: what was wrong, when, and what you would like."
+    },
+    "de": {
+     "t": "Ein Reiseproblem lösen",
+     "g": "Du löst Probleme auf Reisen: Flug gestrichen, Gepäck verloren und eine höfliche Beschwerde.",
+     "p": [
+      "Probleme: Mein Flug wurde gestrichen. Mein Gepäck ist nicht angekommen. Der Zug hat Verspätung. Das Zimmer ist nicht sauber.",
+      "Um Hilfe bitten: Was kann ich jetzt machen? Könnten Sie mir bitte helfen? Ich hätte gern eine Lösung.",
+      "Höflich, aber bestimmt: Ich möchte mich beschweren. Ich erwarte eine Erstattung. Ruhig bleiben, Fakten nennen."
+     ],
+     "q": "Dein Koffer ist nicht angekommen. Rollenspiel: Du bist am Flughafenschalter, ich bin der Mitarbeiter!",
+     "c": "Schreib eine kurze, höfliche Beschwerde-Mail an ein Hotel: Was war falsch, wann, und was möchtest du?"
+    },
+    "es": {
+     "t": "Resolver un problema de viaje",
+     "g": "Resuelve problemas de viaje: Flug gestrichen, Gepäck verloren y una queja educada.",
+     "p": [
+      "Problemas: Mein Flug wurde gestrichen (cancelaron mi vuelo). Mein Gepäck ist nicht angekommen. Der Zug hat Verspätung.",
+      "Pedir ayuda: Was kann ich jetzt machen? Könnten Sie mir bitte helfen? Ich hätte gern eine Lösung.",
+      "Quejarse con educación y firmeza: Ich möchte mich beschweren. Ich erwarte eine Erstattung. Calma y hechos concretos."
+     ],
+     "q": "Tu maleta no ha llegado. Juego de rol: tú estás en el mostrador del aeropuerto y yo soy el empleado.",
+     "c": "Escribe un correo de queja breve y educado a un hotel: qué falló, cuándo y qué te gustaría."
+    },
+    "fr": {
+     "t": "Résoudre un problème de voyage",
+     "g": "Gérer les ennuis de voyage : Flug gestrichen, Gepäck verloren et une réclamation polie.",
+     "p": [
+      "Problèmes : Mein Flug wurde gestrichen (mon vol est annulé). Mein Gepäck ist nicht angekommen. Der Zug hat Verspätung.",
+      "Demander de l'aide : Was kann ich jetzt machen ? Könnten Sie mir bitte helfen ? Ich hätte gern eine Lösung.",
+      "Se plaindre poliment mais fermement : Ich möchte mich beschweren. Ich erwarte eine Erstattung. Reste calme, donne les faits."
+     ],
+     "q": "Ta valise n'est pas arrivée. Jeu de rôle : tu es au guichet de l'aéroport et je suis l'employé !",
+     "c": "Écris un court mail de réclamation poli à un hôtel : le problème, quand, et ce que tu souhaites."
+    },
+    "it": {
+     "t": "Risolvere un problema di viaggio",
+     "g": "Gestisci i guai in viaggio: Flug gestrichen, Gepäck verloren e un reclamo cortese.",
+     "p": [
+      "Problemi: Mein Flug wurde gestrichen (il volo è stato cancellato). Mein Gepäck ist nicht angekommen. Der Zug hat Verspätung.",
+      "Chiedere aiuto: Was kann ich jetzt machen? Könnten Sie mir bitte helfen? Ich hätte gern eine Lösung.",
+      "Reclama con garbo ma deciso: Ich möchte mich beschweren. Ich erwarte eine Erstattung. Calma e fatti concreti."
+     ],
+     "q": "La tua valigia non è arrivata. Gioco di ruolo: tu sei al banco dell'aeroporto e io sono l'impiegato!",
+     "c": "Scrivi una breve mail di reclamo cortese a un hotel: cosa non andava, quando e cosa desideri."
+    },
+    "pt": {
+     "t": "Resolver um problema de viagem",
+     "g": "Resolver problemas em viagem: Flug gestrichen, Gepäck verloren e uma reclamação educada.",
+     "p": [
+      "Problemas: Mein Flug wurde gestrichen (o voo foi cancelado). Mein Gepäck ist nicht angekommen. Der Zug hat Verspätung.",
+      "Pedir ajuda: Was kann ich jetzt machen? Könnten Sie mir bitte helfen? Ich hätte gern eine Lösung.",
+      "Reclamar com educação e firmeza: Ich möchte mich beschweren. Ich erwarte eine Erstattung. Calma e factos concretos."
+     ],
+     "q": "A tua mala não chegou. Jogo de papéis: estás no balcão do aeroporto e eu sou o funcionário!",
+     "c": "Escreve um e-mail de reclamação curto e educado a um hotel: o que correu mal, quando e o que gostavas."
+    },
+    "pt_BR": {
+     "t": "Resolver um problema de viagem",
+     "g": "Resolver problemas em viagem: Flug gestrichen, Gepäck verloren e uma reclamação educada.",
+     "p": [
+      "Problemas: Mein Flug wurde gestrichen (o voo foi cancelado). Mein Gepäck ist nicht angekommen. Der Zug hat Verspätung.",
+      "Pedir ajuda: Was kann ich jetzt machen? Könnten Sie mir bitte helfen? Ich hätte gern eine Lösung.",
+      "Reclamar com educação e firmeza: Ich möchte mich beschweren. Ich erwarte eine Erstattung. Calma e fatos concretos."
+     ],
+     "q": "Sua mala não chegou. Jogo de papéis: você está no balcão do aeroporto e eu sou o funcionário!",
+     "c": "Escreva um e-mail de reclamação curto e educado para um hotel: o que deu errado, quando e o que você gostaria."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "streichen (gestrichen)",
+      "ex": "Unser Flug nach Wien wurde gestrichen."
+     },
+     {
+      "w": "das Gepäck",
+      "ex": "Mein Gepäck ist leider nicht angekommen."
+     },
+     {
+      "w": "die Verspätung",
+      "ex": "Der Zug hat dreißig Minuten Verspätung."
+     },
+     {
+      "w": "sich beschweren über",
+      "ex": "Ich möchte mich über den Lärm beschweren."
+     },
+     {
+      "w": "die Erstattung",
+      "ex": "Ich hätte gern eine Erstattung des Ticketpreises."
+     },
+     {
+      "w": "der Schalter",
+      "ex": "Gehen Sie bitte zum Schalter Nummer fünf."
+     }
+    ],
+    "gram": "Vorgangspassiv im Präteritum für Probleme: Der Flug wurde gestrichen; höflich: Könnten Sie...? Ich hätte gern..."
+   }
+  },
+  {
+   "d": 265,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Renting and contracts",
+     "g": "Understand renting in Germany: der Mietvertrag, die Kaution, kündigen, die Hausordnung.",
+     "p": [
+      "Key words: der Mietvertrag (lease), die Miete, die Nebenkosten (utilities), die Kaution (deposit), der Vermieter, der Mieter.",
+      "kündigen = to give notice: Ich kündige meine Wohnung. die Kündigungsfrist is the notice period, often three months.",
+      "die Hausordnung lists house rules, e.g. Ruhezeiten (quiet hours) and Mülltrennung (waste sorting)."
+     ],
+     "q": "What matters most to you when you look for a flat: location, price, size or the neighbours?",
+     "c": "Write five questions you would ask a landlord before signing a lease."
+    },
+    "de": {
+     "t": "Mieten und Verträge",
+     "g": "Du verstehst das Mieten: der Mietvertrag, die Kaution, kündigen, die Hausordnung.",
+     "p": [
+      "Wichtige Wörter: der Mietvertrag, die Miete, die Nebenkosten, die Kaution, der Vermieter, der Mieter.",
+      "kündigen: Ich kündige meine Wohnung. Die Kündigungsfrist beträgt oft drei Monate.",
+      "Die Hausordnung regelt das Zusammenleben, zum Beispiel Ruhezeiten und Mülltrennung."
+     ],
+     "q": "Was ist dir bei der Wohnungssuche am wichtigsten: Lage, Preis, Größe oder die Nachbarn?",
+     "c": "Schreib fünf Fragen, die du einem Vermieter vor der Unterschrift stellen würdest."
+    },
+    "es": {
+     "t": "Alquiler y contratos",
+     "g": "Entiende el alquiler en Alemania: der Mietvertrag, die Kaution, kündigen, die Hausordnung.",
+     "p": [
+      "Palabras clave: der Mietvertrag (contrato), die Miete, die Nebenkosten (gastos), die Kaution (fianza), der Vermieter, der Mieter.",
+      "kündigen = rescindir: Ich kündige meine Wohnung. Die Kündigungsfrist (plazo de preaviso) suele ser de tres meses.",
+      "Die Hausordnung (normas de la comunidad) incluye Ruhezeiten (horas de silencio) y Mülltrennung (separar basura)."
+     ],
+     "q": "¿Qué es lo más importante para ti al buscar piso: la zona, el precio, el tamaño o los vecinos?",
+     "c": "Escribe cinco preguntas que le harías a un casero antes de firmar el contrato."
+    },
+    "fr": {
+     "t": "Location et contrats",
+     "g": "Comprendre la location : der Mietvertrag, die Kaution, kündigen, die Hausordnung.",
+     "p": [
+      "Mots clés : der Mietvertrag (bail), die Miete (loyer), die Nebenkosten (charges), die Kaution (caution), der Vermieter, der Mieter.",
+      "kündigen = résilier : Ich kündige meine Wohnung. Die Kündigungsfrist (préavis) est souvent de trois mois.",
+      "Die Hausordnung (règlement de l'immeuble) fixe les Ruhezeiten (heures de calme) et la Mülltrennung (tri des déchets)."
+     ],
+     "q": "Qu'est-ce qui compte le plus pour toi quand tu cherches un logement : quartier, prix, taille ou voisins ?",
+     "c": "Écris cinq questions que tu poserais à un propriétaire avant de signer le bail."
+    },
+    "it": {
+     "t": "Affitto e contratti",
+     "g": "Capire l'affitto: der Mietvertrag, die Kaution, kündigen, die Hausordnung.",
+     "p": [
+      "Parole chiave: der Mietvertrag (contratto), die Miete, die Nebenkosten (spese), die Kaution (deposito), der Vermieter, der Mieter.",
+      "kündigen = dare disdetta: Ich kündige meine Wohnung. Die Kündigungsfrist (preavviso) spesso è di tre mesi.",
+      "Die Hausordnung (regolamento condominiale) indica Ruhezeiten (ore di silenzio) e Mülltrennung (raccolta differenziata)."
+     ],
+     "q": "Cosa conta di più per te quando cerchi casa: zona, prezzo, grandezza o vicini?",
+     "c": "Scrivi cinque domande che faresti a un padrone di casa prima di firmare il contratto."
+    },
+    "pt": {
+     "t": "Arrendamento e contratos",
+     "g": "Perceber o arrendamento: der Mietvertrag, die Kaution, kündigen, die Hausordnung.",
+     "p": [
+      "Palavras-chave: der Mietvertrag (contrato), die Miete (renda), die Nebenkosten (despesas), die Kaution (caução), der Vermieter, der Mieter.",
+      "kündigen = rescindir: Ich kündige meine Wohnung. Die Kündigungsfrist (pré-aviso) é muitas vezes de três meses.",
+      "Die Hausordnung (regulamento do prédio) define Ruhezeiten (horas de silêncio) e Mülltrennung (separação do lixo)."
+     ],
+     "q": "O que é mais importante para ti quando procuras casa: zona, preço, tamanho ou vizinhos?",
+     "c": "Escreve cinco perguntas que farias a um senhorio antes de assinar o contrato."
+    },
+    "pt_BR": {
+     "t": "Aluguel e contratos",
+     "g": "Entender o aluguel: der Mietvertrag, die Kaution, kündigen, die Hausordnung.",
+     "p": [
+      "Palavras-chave: der Mietvertrag (contrato), die Miete (aluguel), die Nebenkosten (condomínio e contas), die Kaution (caução).",
+      "kündigen = rescindir: Ich kündige meine Wohnung. Die Kündigungsfrist (aviso prévio) muitas vezes é de três meses.",
+      "Die Hausordnung (regras do prédio) define Ruhezeiten (horário de silêncio) e Mülltrennung (separação do lixo)."
+     ],
+     "q": "O que é mais importante para você ao procurar apartamento: bairro, preço, tamanho ou vizinhos?",
+     "c": "Escreva cinco perguntas que você faria a um proprietário antes de assinar o contrato."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Mietvertrag",
+      "ex": "Bitte lesen Sie den Mietvertrag genau durch."
+     },
+     {
+      "w": "die Nebenkosten",
+      "ex": "Sind die Nebenkosten in der Miete enthalten?"
+     },
+     {
+      "w": "die Kaution",
+      "ex": "Die Kaution beträgt drei Monatsmieten."
+     },
+     {
+      "w": "kündigen",
+      "ex": "Ich habe meine Wohnung zum Ende des Monats gekündigt."
+     },
+     {
+      "w": "der Vermieter / die Vermieterin",
+      "ex": "Die Vermieterin repariert die Heizung nächste Woche."
+     },
+     {
+      "w": "die Hausordnung",
+      "ex": "Laut Hausordnung ist ab 22 Uhr Ruhezeit."
+     }
+    ],
+    "gram": "laut + Dativ: laut Vertrag, laut Hausordnung; Passiv mit Modalverb: Die Kaution muss gezahlt werden."
+   }
+  },
+  {
+   "d": 266,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Banking basics",
+     "g": "Handle a bank in German: ein Konto eröffnen, überweisen, die Bankkarte, die IBAN.",
+     "p": [
+      "Account: ein Konto eröffnen (open an account), das Girokonto (current account), der Kontoauszug (statement), die Filiale.",
+      "Money moves: Geld überweisen (transfer), abheben (withdraw), einzahlen (deposit), der Geldautomat (ATM).",
+      "Online: das Onlinebanking, die IBAN, die PIN. Never tell anyone your PIN, not even the bank!"
+     ],
+     "q": "Role-play: you want to open an account. What questions do you ask the bank employee?",
+     "c": "Write the steps to transfer money online in German, using erst, dann and zum Schluss."
+    },
+    "de": {
+     "t": "Bankgeschäfte",
+     "g": "Du erledigst Bankgeschäfte: ein Konto eröffnen, überweisen, die Bankkarte, die IBAN.",
+     "p": [
+      "Konto: ein Konto eröffnen, das Girokonto, der Kontoauszug, die Filiale.",
+      "Geld bewegen: Geld überweisen, abheben, einzahlen, der Geldautomat.",
+      "Online: das Onlinebanking, die IBAN, die PIN. Deine PIN verrätst du niemandem, auch nicht der Bank!"
+     ],
+     "q": "Rollenspiel: Du möchtest ein Konto eröffnen. Welche Fragen stellst du der Bankangestellten?",
+     "c": "Schreib die Schritte einer Online-Überweisung auf, mit erst, dann und zum Schluss."
+    },
+    "es": {
+     "t": "Lo básico del banco",
+     "g": "Arréglatelas en el banco: ein Konto eröffnen, überweisen, die Bankkarte, die IBAN.",
+     "p": [
+      "Cuenta: ein Konto eröffnen (abrir una cuenta), das Girokonto (cuenta corriente), der Kontoauszug (extracto), die Filiale.",
+      "Mover dinero: Geld überweisen (transferir), abheben (sacar), einzahlen (ingresar), der Geldautomat (cajero).",
+      "En línea: das Onlinebanking, die IBAN, die PIN. ¡Nunca digas tu PIN a nadie, ni siquiera al banco!"
+     ],
+     "q": "Juego de rol: quieres abrir una cuenta. ¿Qué preguntas le haces al empleado del banco?",
+     "c": "Escribe los pasos para hacer una transferencia en línea con erst, dann y zum Schluss."
+    },
+    "fr": {
+     "t": "Les bases de la banque",
+     "g": "Se débrouiller à la banque : ein Konto eröffnen, überweisen, die Bankkarte, die IBAN.",
+     "p": [
+      "Compte : ein Konto eröffnen (ouvrir un compte), das Girokonto (compte courant), der Kontoauszug (relevé), die Filiale (agence).",
+      "Argent : Geld überweisen (virer), abheben (retirer), einzahlen (déposer), der Geldautomat (distributeur).",
+      "En ligne : das Onlinebanking, die IBAN, die PIN. Ne donne jamais ton code PIN à personne, même pas à la banque !"
+     ],
+     "q": "Jeu de rôle : tu veux ouvrir un compte. Quelles questions poses-tu à l'employé de banque ?",
+     "c": "Écris les étapes d'un virement en ligne avec erst, dann et zum Schluss."
+    },
+    "it": {
+     "t": "Le basi della banca",
+     "g": "Cavatela in banca: ein Konto eröffnen, überweisen, die Bankkarte, die IBAN.",
+     "p": [
+      "Conto: ein Konto eröffnen (aprire un conto), das Girokonto (conto corrente), der Kontoauszug (estratto conto), die Filiale.",
+      "Muovere soldi: Geld überweisen (bonifico), abheben (prelevare), einzahlen (versare), der Geldautomat (bancomat).",
+      "Online: das Onlinebanking, die IBAN, die PIN. Non dire mai il tuo PIN a nessuno, nemmeno alla banca!"
+     ],
+     "q": "Gioco di ruolo: vuoi aprire un conto. Quali domande fai all'impiegato della banca?",
+     "c": "Scrivi i passaggi per un bonifico online con erst, dann e zum Schluss."
+    },
+    "pt": {
+     "t": "O básico do banco",
+     "g": "Desenrascar-se no banco: ein Konto eröffnen, überweisen, die Bankkarte, die IBAN.",
+     "p": [
+      "Conta: ein Konto eröffnen (abrir conta), das Girokonto (conta à ordem), der Kontoauszug (extrato), die Filiale (balcão).",
+      "Movimentos: Geld überweisen (transferir), abheben (levantar), einzahlen (depositar), der Geldautomat (multibanco).",
+      "Online: das Onlinebanking, die IBAN, die PIN. Nunca digas o teu PIN a ninguém, nem ao banco!"
+     ],
+     "q": "Jogo de papéis: queres abrir uma conta. Que perguntas fazes ao funcionário do banco?",
+     "c": "Escreve os passos de uma transferência online com erst, dann e zum Schluss."
+    },
+    "pt_BR": {
+     "t": "O básico do banco",
+     "g": "Se virar no banco: ein Konto eröffnen, überweisen, die Bankkarte, die IBAN.",
+     "p": [
+      "Conta: ein Konto eröffnen (abrir conta), das Girokonto (conta corrente), der Kontoauszug (extrato), die Filiale (agência).",
+      "Movimentos: Geld überweisen (transferir), abheben (sacar), einzahlen (depositar), der Geldautomat (caixa eletrônico).",
+      "Online: das Onlinebanking, die IBAN, die PIN. Nunca diga sua senha (PIN) para ninguém, nem para o banco!"
+     ],
+     "q": "Jogo de papéis: você quer abrir uma conta. Que perguntas faz ao funcionário do banco?",
+     "c": "Escreva os passos de uma transferência online com erst, dann e zum Schluss."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ein Konto eröffnen",
+      "ex": "Ich möchte gern ein Konto eröffnen."
+     },
+     {
+      "w": "überweisen",
+      "ex": "Ich überweise dir das Geld morgen."
+     },
+     {
+      "w": "abheben",
+      "ex": "Ich muss noch Geld am Automaten abheben."
+     },
+     {
+      "w": "der Kontoauszug",
+      "ex": "Den Kontoauszug sehe ich im Onlinebanking."
+     },
+     {
+      "w": "die IBAN",
+      "ex": "Können Sie mir bitte Ihre IBAN geben?"
+     },
+     {
+      "w": "die Filiale",
+      "ex": "Die nächste Filiale ist am Marktplatz."
+     }
+    ],
+    "gram": "Dativ + Akkusativ: Ich überweise dir (Dat.) das Geld (Akk.); Pronomen zuerst: Ich überweise es dir."
+   }
+  },
+  {
+   "d": 267,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Paperwork and offices",
+     "g": "Get through German bureaucracy: die Anmeldung, das Formular, der Ausweis, der Termin beim Amt.",
+     "p": [
+      "After moving you must register: die Anmeldung beim Bürgeramt. Bring your Ausweis or Reisepass and often a landlord form.",
+      "Forms: ein Formular ausfüllen (fill in), unterschreiben (sign), die Unterlagen (documents), die Bescheinigung (certificate).",
+      "Book a Termin first. Useful: Welche Unterlagen brauche ich? Wo muss ich unterschreiben? Könnten Sie das wiederholen?"
+     ],
+     "q": "Have you ever dealt with an office abroad or at home? Tell me how it went!",
+     "c": "Write a short dialogue at the Bürgeramt: greeting, what you need, which documents, and thanks."
+    },
+    "de": {
+     "t": "Behörden und Formulare",
+     "g": "Du kommst durch die Bürokratie: die Anmeldung, das Formular, der Ausweis, der Termin beim Amt.",
+     "p": [
+      "Nach dem Umzug meldest du dich an: die Anmeldung beim Bürgeramt. Mitbringen: Ausweis oder Reisepass, oft eine Bestätigung vom Vermieter.",
+      "Formulare: ein Formular ausfüllen, unterschreiben, die Unterlagen, die Bescheinigung.",
+      "Zuerst einen Termin buchen. Nützlich: Welche Unterlagen brauche ich? Wo muss ich unterschreiben? Könnten Sie das wiederholen?"
+     ],
+     "q": "Hattest du schon einmal mit einem Amt zu tun, im Ausland oder zu Hause? Erzähl mir, wie es war!",
+     "c": "Schreib einen kurzen Dialog im Bürgeramt: Begrüßung, Anliegen, Unterlagen und Dank."
+    },
+    "es": {
+     "t": "Trámites y oficinas",
+     "g": "Supera la burocracia alemana: die Anmeldung, das Formular, der Ausweis, der Termin beim Amt.",
+     "p": [
+      "Tras mudarte debes empadronarte: die Anmeldung beim Bürgeramt. Lleva Ausweis o Reisepass y a menudo un papel del casero.",
+      "Formularios: ein Formular ausfüllen (rellenar), unterschreiben (firmar), die Unterlagen (documentos), die Bescheinigung.",
+      "Pide cita (Termin) antes. Útil: Welche Unterlagen brauche ich? Wo muss ich unterschreiben? Könnten Sie das wiederholen?"
+     ],
+     "q": "¿Alguna vez has hecho trámites en una oficina, fuera o en tu país? ¡Cuéntame cómo fue!",
+     "c": "Escribe un diálogo corto en el Bürgeramt: saludo, qué necesitas, qué documentos y agradecimiento."
+    },
+    "fr": {
+     "t": "Démarches et administrations",
+     "g": "Affronter la bureaucratie : die Anmeldung, das Formular, der Ausweis, der Termin beim Amt.",
+     "p": [
+      "Après un déménagement, il faut se déclarer : die Anmeldung beim Bürgeramt. Apporte Ausweis ou Reisepass, souvent un papier du bailleur.",
+      "Formulaires : ein Formular ausfüllen (remplir), unterschreiben (signer), die Unterlagen (documents), die Bescheinigung.",
+      "Prends d'abord un Termin. Utile : Welche Unterlagen brauche ich ? Wo muss ich unterschreiben ? Könnten Sie das wiederholen ?"
+     ],
+     "q": "As-tu déjà fait des démarches dans une administration, à l'étranger ou chez toi ? Raconte-moi !",
+     "c": "Écris un court dialogue au Bürgeramt : salutation, ta demande, les documents et remerciements."
+    },
+    "it": {
+     "t": "Pratiche e uffici",
+     "g": "Supera la burocrazia tedesca: die Anmeldung, das Formular, der Ausweis, der Termin beim Amt.",
+     "p": [
+      "Dopo un trasloco ci si registra: die Anmeldung beim Bürgeramt. Porta Ausweis o Reisepass e spesso un modulo del padrone di casa.",
+      "Moduli: ein Formular ausfüllen (compilare), unterschreiben (firmare), die Unterlagen (documenti), die Bescheinigung.",
+      "Prima prenota un Termin. Utile: Welche Unterlagen brauche ich? Wo muss ich unterschreiben? Könnten Sie das wiederholen?"
+     ],
+     "q": "Hai mai avuto a che fare con un ufficio pubblico, all'estero o a casa? Raccontami com'è andata!",
+     "c": "Scrivi un breve dialogo al Bürgeramt: saluto, richiesta, documenti e ringraziamento."
+    },
+    "pt": {
+     "t": "Papelada e repartições",
+     "g": "Vencer a burocracia alemã: die Anmeldung, das Formular, der Ausweis, der Termin beim Amt.",
+     "p": [
+      "Depois de mudar de casa é preciso registar-se: die Anmeldung beim Bürgeramt. Leva Ausweis ou Reisepass e muitas vezes um papel do senhorio.",
+      "Formulários: ein Formular ausfüllen (preencher), unterschreiben (assinar), die Unterlagen (documentos), die Bescheinigung.",
+      "Marca primeiro um Termin. Útil: Welche Unterlagen brauche ich? Wo muss ich unterschreiben? Könnten Sie das wiederholen?"
+     ],
+     "q": "Já tiveste de tratar de algo numa repartição, cá ou no estrangeiro? Conta-me como correu!",
+     "c": "Escreve um diálogo curto no Bürgeramt: cumprimento, o que precisas, documentos e agradecimento."
+    },
+    "pt_BR": {
+     "t": "Papelada e repartições",
+     "g": "Vencer a burocracia alemã: die Anmeldung, das Formular, der Ausweis, der Termin beim Amt.",
+     "p": [
+      "Depois da mudança é preciso se registrar: die Anmeldung beim Bürgeramt. Leve Ausweis ou Reisepass e muitas vezes um papel do proprietário.",
+      "Formulários: ein Formular ausfüllen (preencher), unterschreiben (assinar), die Unterlagen (documentos), die Bescheinigung.",
+      "Agende antes um Termin. Útil: Welche Unterlagen brauche ich? Wo muss ich unterschreiben? Könnten Sie das wiederholen?"
+     ],
+     "q": "Você já precisou resolver algo numa repartição, aqui ou no exterior? Me conte como foi!",
+     "c": "Escreva um diálogo curto no Bürgeramt: cumprimento, o que você precisa, documentos e agradecimento."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Anmeldung",
+      "ex": "Für die Anmeldung brauchen Sie einen Termin."
+     },
+     {
+      "w": "ein Formular ausfüllen",
+      "ex": "Bitte füllen Sie dieses Formular aus."
+     },
+     {
+      "w": "unterschreiben",
+      "ex": "Unterschreiben Sie bitte hier unten."
+     },
+     {
+      "w": "die Unterlagen",
+      "ex": "Welche Unterlagen muss ich mitbringen?"
+     },
+     {
+      "w": "der Ausweis",
+      "ex": "Haben Sie Ihren Ausweis dabei?"
+     },
+     {
+      "w": "die Bescheinigung",
+      "ex": "Sie bekommen die Bescheinigung per Post."
+     }
+    ],
+    "gram": "Höfliche Imperative mit Sie: Füllen Sie bitte... aus! Indirekte Frage: Können Sie mir sagen, welche Unterlagen ich brauche?"
+   }
+  },
+  {
+   "d": 268,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Formal letters",
+     "g": "Write a clear formal letter: Betreff, Anrede, Schlussformel and a logical structure.",
+     "p": [
+      "Start: der Betreff (subject, no colon), then Sehr geehrte Frau Weber, / Sehr geehrter Herr Klein, / Sehr geehrte Damen und Herren,",
+      "After the comma, continue in lower case: Sehr geehrte Damen und Herren, ich schreibe Ihnen, weil... Use Sie, Ihnen, Ihr with capitals.",
+      "Structure: reason, details, request, then Ich freue mich auf Ihre Antwort. End with Mit freundlichen Grüßen and your name."
+     ],
+     "q": "Which situations in your life needed a formal letter or email? Tell me about one!",
+     "c": "Write a formal email asking a language school for information about evening courses."
+    },
+    "de": {
+     "t": "Formelle Briefe",
+     "g": "Du schreibst einen klaren formellen Brief: Betreff, Anrede, Schlussformel und eine logische Struktur.",
+     "p": [
+      "Anfang: der Betreff (ohne Doppelpunkt), dann Sehr geehrte Frau Weber, / Sehr geehrter Herr Klein, / Sehr geehrte Damen und Herren,",
+      "Nach dem Komma geht es klein weiter: ..., ich schreibe Ihnen, weil... Sie, Ihnen, Ihr schreibt man groß.",
+      "Aufbau: Anlass, Details, Bitte, dann Ich freue mich auf Ihre Antwort. Schluss: Mit freundlichen Grüßen und dein Name."
+     ],
+     "q": "In welchen Situationen hast du schon einen formellen Brief oder eine formelle E-Mail gebraucht?",
+     "c": "Schreib eine formelle E-Mail an eine Sprachschule und bitte um Informationen über Abendkurse."
+    },
+    "es": {
+     "t": "Cartas formales",
+     "g": "Escribe una carta formal clara: Betreff, Anrede, Schlussformel y una estructura lógica.",
+     "p": [
+      "Inicio: der Betreff (asunto, sin dos puntos), luego Sehr geehrte Frau Weber, / Sehr geehrter Herr Klein, / Sehr geehrte Damen und Herren,",
+      "Tras la coma se sigue en minúscula: ..., ich schreibe Ihnen, weil... Sie, Ihnen, Ihr van con mayúscula.",
+      "Estructura: motivo, detalles, petición y Ich freue mich auf Ihre Antwort. Cierre: Mit freundlichen Grüßen y tu nombre."
+     ],
+     "q": "¿En qué situaciones de tu vida necesitaste una carta o un correo formal? ¡Cuéntame una!",
+     "c": "Escribe un correo formal a una escuela de idiomas pidiendo información sobre cursos de tarde."
+    },
+    "fr": {
+     "t": "Lettres formelles",
+     "g": "Écrire une lettre formelle claire : Betreff, Anrede, Schlussformel et une structure logique.",
+     "p": [
+      "Début : der Betreff (objet, sans deux-points), puis Sehr geehrte Frau Weber, / Sehr geehrter Herr Klein, / Sehr geehrte Damen und Herren,",
+      "Après la virgule, on continue en minuscule : ..., ich schreibe Ihnen, weil... Sie, Ihnen, Ihr prennent une majuscule.",
+      "Plan : motif, détails, demande, puis Ich freue mich auf Ihre Antwort. Fin : Mit freundlichen Grüßen et ton nom."
+     ],
+     "q": "Dans quelles situations as-tu eu besoin d'une lettre ou d'un mail formel ? Raconte-m'en une !",
+     "c": "Écris un mail formel à une école de langues pour demander des infos sur les cours du soir."
+    },
+    "it": {
+     "t": "Lettere formali",
+     "g": "Scrivi una lettera formale chiara: Betreff, Anrede, Schlussformel e una struttura logica.",
+     "p": [
+      "Inizio: der Betreff (oggetto, senza due punti), poi Sehr geehrte Frau Weber, / Sehr geehrter Herr Klein, / Sehr geehrte Damen und Herren,",
+      "Dopo la virgola si continua in minuscolo: ..., ich schreibe Ihnen, weil... Sie, Ihnen, Ihr vanno con la maiuscola.",
+      "Struttura: motivo, dettagli, richiesta, poi Ich freue mich auf Ihre Antwort. Chiusura: Mit freundlichen Grüßen e il nome."
+     ],
+     "q": "In quali situazioni hai avuto bisogno di una lettera o mail formale? Raccontamene una!",
+     "c": "Scrivi una mail formale a una scuola di lingue per chiedere informazioni sui corsi serali."
+    },
+    "pt": {
+     "t": "Cartas formais",
+     "g": "Escrever uma carta formal clara: Betreff, Anrede, Schlussformel e uma estrutura lógica.",
+     "p": [
+      "Início: der Betreff (assunto, sem dois pontos), depois Sehr geehrte Frau Weber, / Sehr geehrter Herr Klein, / Sehr geehrte Damen und Herren,",
+      "Depois da vírgula continua-se em minúscula: ..., ich schreibe Ihnen, weil... Sie, Ihnen, Ihr levam maiúscula.",
+      "Estrutura: motivo, detalhes, pedido e Ich freue mich auf Ihre Antwort. Fecho: Mit freundlichen Grüßen e o teu nome."
+     ],
+     "q": "Em que situações precisaste de uma carta ou e-mail formal? Conta-me uma!",
+     "c": "Escreve um e-mail formal a uma escola de línguas a pedir informações sobre cursos noturnos."
+    },
+    "pt_BR": {
+     "t": "Cartas formais",
+     "g": "Escrever uma carta formal clara: Betreff, Anrede, Schlussformel e uma estrutura lógica.",
+     "p": [
+      "Início: der Betreff (assunto, sem dois-pontos), depois Sehr geehrte Frau Weber, / Sehr geehrter Herr Klein, / Sehr geehrte Damen und Herren,",
+      "Depois da vírgula, segue em minúscula: ..., ich schreibe Ihnen, weil... Sie, Ihnen, Ihr levam maiúscula.",
+      "Estrutura: motivo, detalhes, pedido e Ich freue mich auf Ihre Antwort. Fecho: Mit freundlichen Grüßen e seu nome."
+     ],
+     "q": "Em que situações você precisou de uma carta ou e-mail formal? Me conte uma!",
+     "c": "Escreva um e-mail formal para uma escola de idiomas pedindo informações sobre cursos noturnos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Betreff",
+      "ex": "Betreff: Anfrage zu Ihren Abendkursen"
+     },
+     {
+      "w": "Sehr geehrte Damen und Herren,",
+      "ex": "Sehr geehrte Damen und Herren, ich interessiere mich für Ihren Kurs."
+     },
+     {
+      "w": "sich erkundigen nach",
+      "ex": "Ich möchte mich nach den Kurszeiten erkundigen."
+     },
+     {
+      "w": "Ich wäre Ihnen dankbar, wenn ...",
+      "ex": "Ich wäre Ihnen dankbar, wenn Sie mir Informationen schicken könnten."
+     },
+     {
+      "w": "Ich freue mich auf Ihre Antwort.",
+      "ex": "Vielen Dank im Voraus. Ich freue mich auf Ihre Antwort."
+     },
+     {
+      "w": "Mit freundlichen Grüßen",
+      "ex": "Mit freundlichen Grüßen, Anna Berger"
+     }
+    ],
+    "gram": "Anrede mit Komma, danach klein weiter; Höflichkeitspronomen groß (Sie, Ihnen, Ihr); Konjunktiv II: Ich wäre Ihnen dankbar, wenn..."
+   }
+  },
+  {
+   "d": 269,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Writing an opinion paragraph",
+     "g": "Write a strong opinion paragraph: a thesis, two arguments, an example and a conclusion.",
+     "p": [
+      "Thesis first: Ich bin überzeugt, dass... / Meiner Ansicht nach... State your position in one clear sentence.",
+      "Arguments: Zum einen..., zum anderen... / Hinzu kommt, dass... Back each one with an example: So zeigt zum Beispiel...",
+      "Conclusion: Zusammenfassend lässt sich sagen, dass... / Deshalb finde ich... Keep it short and repeat your thesis in new words."
+     ],
+     "q": "Should every student learn two foreign languages at school? Tell me your thesis and one argument!",
+     "c": "Write an opinion paragraph of 80 to 100 words on Sollte man im Urlaub das Handy ausschalten?"
+    },
+    "de": {
+     "t": "Einen Meinungstext schreiben",
+     "g": "Du schreibst einen überzeugenden Absatz: These, zwei Argumente, ein Beispiel und ein Schluss.",
+     "p": [
+      "Zuerst die These: Ich bin überzeugt, dass... / Meiner Ansicht nach... Deine Position in einem klaren Satz.",
+      "Argumente: Zum einen..., zum anderen... / Hinzu kommt, dass... Jedes mit Beispiel: So zeigt zum Beispiel...",
+      "Schluss: Zusammenfassend lässt sich sagen, dass... / Deshalb finde ich... Kurz, die These mit neuen Worten."
+     ],
+     "q": "Sollte jeder Schüler zwei Fremdsprachen lernen? Nenn mir deine These und ein Argument!",
+     "c": "Schreib einen Meinungstext von 80 bis 100 Wörtern zum Thema Sollte man im Urlaub das Handy ausschalten?"
+    },
+    "es": {
+     "t": "Escribir un párrafo de opinión",
+     "g": "Escribe un párrafo de opinión sólido: tesis, dos argumentos, un ejemplo y una conclusión.",
+     "p": [
+      "Primero la tesis: Ich bin überzeugt, dass... / Meiner Ansicht nach... Tu postura en una frase clara.",
+      "Argumentos: Zum einen..., zum anderen... (por un lado, por otro) / Hinzu kommt, dass... Cada uno con ejemplo.",
+      "Conclusión: Zusammenfassend lässt sich sagen, dass... / Deshalb finde ich... Breve, repite la tesis con otras palabras."
+     ],
+     "q": "¿Debería todo alumno aprender dos idiomas extranjeros en la escuela? ¡Dime tu tesis y un argumento!",
+     "c": "Escribe un párrafo de opinión de 80 a 100 palabras sobre Sollte man im Urlaub das Handy ausschalten?"
+    },
+    "fr": {
+     "t": "Écrire un paragraphe argumenté",
+     "g": "Écrire un paragraphe d'opinion solide : une thèse, deux arguments, un exemple et une conclusion.",
+     "p": [
+      "D'abord la thèse : Ich bin überzeugt, dass... / Meiner Ansicht nach... Ta position en une phrase claire.",
+      "Arguments : Zum einen..., zum anderen... (d'une part, d'autre part) / Hinzu kommt, dass... Chacun avec un exemple.",
+      "Conclusion : Zusammenfassend lässt sich sagen, dass... / Deshalb finde ich... Courte, reformule ta thèse."
+     ],
+     "q": "Chaque élève devrait-il apprendre deux langues étrangères à l'école ? Donne-moi ta thèse et un argument !",
+     "c": "Écris un paragraphe de 80 à 100 mots sur Sollte man im Urlaub das Handy ausschalten ?"
+    },
+    "it": {
+     "t": "Scrivere un paragrafo d'opinione",
+     "g": "Scrivi un paragrafo d'opinione efficace: una tesi, due argomenti, un esempio e una conclusione.",
+     "p": [
+      "Prima la tesi: Ich bin überzeugt, dass... / Meiner Ansicht nach... La tua posizione in una frase chiara.",
+      "Argomenti: Zum einen..., zum anderen... (da un lato, dall'altro) / Hinzu kommt, dass... Ognuno con un esempio.",
+      "Conclusione: Zusammenfassend lässt sich sagen, dass... / Deshalb finde ich... Breve, ripeti la tesi con parole nuove."
+     ],
+     "q": "Ogni studente dovrebbe imparare due lingue straniere a scuola? Dimmi la tua tesi e un argomento!",
+     "c": "Scrivi un paragrafo d'opinione di 80-100 parole su Sollte man im Urlaub das Handy ausschalten?"
+    },
+    "pt": {
+     "t": "Escrever um parágrafo de opinião",
+     "g": "Escrever um parágrafo de opinião sólido: uma tese, dois argumentos, um exemplo e uma conclusão.",
+     "p": [
+      "Primeiro a tese: Ich bin überzeugt, dass... / Meiner Ansicht nach... A tua posição numa frase clara.",
+      "Argumentos: Zum einen..., zum anderen... (por um lado, por outro) / Hinzu kommt, dass... Cada um com um exemplo.",
+      "Conclusão: Zusammenfassend lässt sich sagen, dass... / Deshalb finde ich... Curta, repete a tese por outras palavras."
+     ],
+     "q": "Todos os alunos deviam aprender duas línguas estrangeiras na escola? Diz-me a tua tese e um argumento!",
+     "c": "Escreve um parágrafo de opinião de 80 a 100 palavras sobre Sollte man im Urlaub das Handy ausschalten?"
+    },
+    "pt_BR": {
+     "t": "Escrever um parágrafo de opinião",
+     "g": "Escrever um parágrafo de opinião sólido: uma tese, dois argumentos, um exemplo e uma conclusão.",
+     "p": [
+      "Primeiro a tese: Ich bin überzeugt, dass... / Meiner Ansicht nach... Sua posição numa frase clara.",
+      "Argumentos: Zum einen..., zum anderen... (por um lado, por outro) / Hinzu kommt, dass... Cada um com um exemplo.",
+      "Conclusão: Zusammenfassend lässt sich sagen, dass... / Deshalb finde ich... Curta, repita a tese com outras palavras."
+     ],
+     "q": "Todo aluno deveria aprender duas línguas estrangeiras na escola? Me diga sua tese e um argumento!",
+     "c": "Escreva um parágrafo de opinião de 80 a 100 palavras sobre Sollte man im Urlaub das Handy ausschalten?"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Ich bin überzeugt, dass ...",
+      "ex": "Ich bin überzeugt, dass Sprachenlernen den Horizont erweitert."
+     },
+     {
+      "w": "meiner Ansicht nach",
+      "ex": "Meiner Ansicht nach sollte die Schule später beginnen."
+     },
+     {
+      "w": "zum einen ... zum anderen",
+      "ex": "Zum einen spart man Geld, zum anderen schont man die Umwelt."
+     },
+     {
+      "w": "Hinzu kommt, dass ...",
+      "ex": "Hinzu kommt, dass Radfahren gesund ist."
+     },
+     {
+      "w": "zusammenfassend",
+      "ex": "Zusammenfassend lässt sich sagen, dass beide Seiten recht haben."
+     },
+     {
+      "w": "deshalb",
+      "ex": "Deshalb finde ich diese Idee sinnvoll."
+     }
+    ],
+    "gram": "Textkonnektoren mit Inversion: Deshalb finde ich...; Zusammenfassend lässt sich sagen, dass... (Verb am Ende im dass-Satz)."
+   }
+  },
+  {
+   "d": 270,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Sports and big events",
+     "g": "Talk about sport and big events: die Weltmeisterschaft, trainieren, der Wettkampf, gewinnen.",
+     "p": [
+      "Words: die Weltmeisterschaft (WM), die Olympischen Spiele, der Wettkampf, die Mannschaft, der Verein, der Fan.",
+      "Verbs: trainieren, gewinnen (gewann, gewonnen), verlieren (verlor, verloren), unentschieden spielen, anfeuern (cheer on).",
+      "Fan talk: Für welche Mannschaft bist du? Das war ein spannendes Spiel! Germany has won the men's football World Cup four times."
+     ],
+     "q": "Do you prefer playing sport or watching it? Which big event would you love to see live?",
+     "c": "Write a short match report of five sentences with gewinnen, verlieren and anfeuern in the Präteritum."
+    },
+    "de": {
+     "t": "Sport und Großereignisse",
+     "g": "Du sprichst über Sport und Großereignisse: die Weltmeisterschaft, trainieren, der Wettkampf, gewinnen.",
+     "p": [
+      "Wörter: die Weltmeisterschaft (WM), die Olympischen Spiele, der Wettkampf, die Mannschaft, der Verein, der Fan.",
+      "Verben: trainieren, gewinnen (gewann, gewonnen), verlieren (verlor, verloren), unentschieden spielen, anfeuern.",
+      "Fan-Sprache: Für welche Mannschaft bist du? Das war ein spannendes Spiel! Deutschland wurde viermal Fußball-Weltmeister der Männer."
+     ],
+     "q": "Treibst du lieber selbst Sport oder schaust du lieber zu? Welches Großereignis würdest du gern live sehen?",
+     "c": "Schreib einen kurzen Spielbericht mit fünf Sätzen mit gewinnen, verlieren und anfeuern im Präteritum."
+    },
+    "es": {
+     "t": "Deporte y grandes eventos",
+     "g": "Habla de deporte y grandes eventos: die Weltmeisterschaft, trainieren, der Wettkampf, gewinnen.",
+     "p": [
+      "Palabras: die Weltmeisterschaft (Mundial), die Olympischen Spiele, der Wettkampf (competición), die Mannschaft, der Fan.",
+      "Verbos: trainieren, gewinnen (gewann, gewonnen), verlieren (verlor, verloren), unentschieden spielen (empatar), anfeuern (animar).",
+      "Charla de aficionados: Für welche Mannschaft bist du? Alemania ha ganado cuatro veces el Mundial masculino de fútbol."
+     ],
+     "q": "¿Prefieres hacer deporte o verlo? ¿Qué gran evento te encantaría ver en directo?",
+     "c": "Escribe una breve crónica de un partido en cinco frases con gewinnen, verlieren y anfeuern en Präteritum."
+    },
+    "fr": {
+     "t": "Sport et grands événements",
+     "g": "Parler de sport et de grands événements : die Weltmeisterschaft, trainieren, der Wettkampf, gewinnen.",
+     "p": [
+      "Mots : die Weltmeisterschaft (Coupe du monde), die Olympischen Spiele, der Wettkampf (compétition), die Mannschaft, der Fan.",
+      "Verbes : trainieren, gewinnen (gewann, gewonnen), verlieren (verlor, verloren), unentschieden spielen (faire match nul), anfeuern.",
+      "Entre fans : Für welche Mannschaft bist du ? L'Allemagne a gagné quatre fois la Coupe du monde de football masculine."
+     ],
+     "q": "Tu préfères faire du sport ou en regarder ? Quel grand événement aimerais-tu voir en direct ?",
+     "c": "Écris un court compte rendu de match en cinq phrases avec gewinnen, verlieren et anfeuern au Präteritum."
+    },
+    "it": {
+     "t": "Sport e grandi eventi",
+     "g": "Parla di sport e grandi eventi: die Weltmeisterschaft, trainieren, der Wettkampf, gewinnen.",
+     "p": [
+      "Parole: die Weltmeisterschaft (Mondiali), die Olympischen Spiele, der Wettkampf (gara), die Mannschaft (squadra), der Fan.",
+      "Verbi: trainieren, gewinnen (gewann, gewonnen), verlieren (verlor, verloren), unentschieden spielen (pareggiare), anfeuern (tifare).",
+      "Da tifosi: Für welche Mannschaft bist du? La Germania ha vinto quattro volte i Mondiali di calcio maschili."
+     ],
+     "q": "Preferisci fare sport o guardarlo? Quale grande evento ti piacerebbe vedere dal vivo?",
+     "c": "Scrivi una breve cronaca di una partita in cinque frasi con gewinnen, verlieren e anfeuern al Präteritum."
+    },
+    "pt": {
+     "t": "Desporto e grandes eventos",
+     "g": "Falar de desporto e grandes eventos: die Weltmeisterschaft, trainieren, der Wettkampf, gewinnen.",
+     "p": [
+      "Palavras: die Weltmeisterschaft (Mundial), die Olympischen Spiele, der Wettkampf (competição), die Mannschaft (equipa), der Fan.",
+      "Verbos: trainieren, gewinnen (gewann, gewonnen), verlieren (verlor, verloren), unentschieden spielen (empatar), anfeuern (apoiar).",
+      "Conversa de adeptos: Für welche Mannschaft bist du? A Alemanha ganhou quatro vezes o Mundial de futebol masculino."
+     ],
+     "q": "Preferes praticar desporto ou ver? Que grande evento gostavas de ver ao vivo?",
+     "c": "Escreve uma crónica curta de um jogo em cinco frases com gewinnen, verlieren e anfeuern no Präteritum."
+    },
+    "pt_BR": {
+     "t": "Esporte e grandes eventos",
+     "g": "Falar de esporte e grandes eventos: die Weltmeisterschaft, trainieren, der Wettkampf, gewinnen.",
+     "p": [
+      "Palavras: die Weltmeisterschaft (Copa do Mundo), die Olympischen Spiele, der Wettkampf (competição), die Mannschaft (time), der Fan.",
+      "Verbos: trainieren, gewinnen (gewann, gewonnen), verlieren (verlor, verloren), unentschieden spielen (empatar), anfeuern (torcer).",
+      "Papo de torcedor: Für welche Mannschaft bist du? A Alemanha ganhou quatro vezes a Copa do Mundo masculina."
+     ],
+     "q": "Você prefere praticar esporte ou assistir? Que grande evento você adoraria ver ao vivo?",
+     "c": "Escreva uma crônica curta de um jogo em cinco frases com gewinnen, verlieren e anfeuern no Präteritum."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Weltmeisterschaft",
+      "ex": "Die Weltmeisterschaft findet alle vier Jahre statt."
+     },
+     {
+      "w": "trainieren",
+      "ex": "Ich trainiere dreimal pro Woche im Verein."
+     },
+     {
+      "w": "der Wettkampf",
+      "ex": "Morgen hat sie einen wichtigen Wettkampf."
+     },
+     {
+      "w": "gewinnen",
+      "ex": "Unsere Mannschaft hat mit 2:1 gewonnen."
+     },
+     {
+      "w": "unentschieden",
+      "ex": "Das Spiel endete unentschieden."
+     },
+     {
+      "w": "anfeuern",
+      "ex": "Die Fans feuerten ihre Mannschaft laut an."
+     }
+    ],
+    "gram": "Starke Verben im Präteritum: gewinnen – gewann – hat gewonnen; verlieren – verlor – hat verloren."
+   }
+  }
+ ]
+}

@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 301,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Writing a formal letter",
+     "g": "Write a clear formal letter or enquiry in Spanish.",
+     "p": [
+      "Open with Estimados señores or Estimada señora + surname, followed by a colon.",
+      "State your purpose early: Me dirijo a ustedes para + infinitive.",
+      "Close with Quedo a la espera de su respuesta and Atentamente, then your name."
+     ],
+     "q": "Who might you write a formal letter to in Spanish, and why?",
+     "c": "Write a five-line enquiry to a language school using me dirijo a ustedes para."
+    },
+    "de": {
+     "t": "Einen formellen Brief schreiben",
+     "g": "Schreib einen klaren formellen Brief oder eine Anfrage auf Spanisch.",
+     "p": [
+      "Beginne mit Estimados señores oder Estimada señora + Nachname, dann ein Doppelpunkt.",
+      "Nenne früh dein Anliegen: Me dirijo a ustedes para + Infinitiv.",
+      "Schließe mit Quedo a la espera de su respuesta und Atentamente, dann dein Name."
+     ],
+     "q": "An wen könntest du einen formellen Brief auf Spanisch schreiben, und warum?",
+     "c": "Schreib eine fünfzeilige Anfrage an eine Sprachschule mit me dirijo a ustedes para."
+    },
+    "es": {
+     "t": "Escribir una carta formal",
+     "g": "Redacta una carta o consulta formal clara en español.",
+     "p": [
+      "Abre con Estimados señores o Estimada señora + apellido, seguido de dos puntos.",
+      "Expón pronto el motivo: Me dirijo a ustedes para + infinitivo.",
+      "Cierra con Quedo a la espera de su respuesta y Atentamente, luego tu nombre."
+     ],
+     "q": "¿A quién podrías escribir una carta formal en español y por qué?",
+     "c": "Escribe una consulta de cinco líneas a una academia de idiomas con me dirijo a ustedes para."
+    },
+    "fr": {
+     "t": "Écrire une lettre formelle",
+     "g": "Rédige une lettre ou une demande formelle claire en espagnol.",
+     "p": [
+      "Commence par Estimados señores ou Estimada señora + nom, suivi de deux-points.",
+      "Annonce vite ton objectif : Me dirijo a ustedes para + infinitif.",
+      "Termine par Quedo a la espera de su respuesta et Atentamente, puis ton nom."
+     ],
+     "q": "À qui pourrais-tu écrire une lettre formelle en espagnol, et pourquoi ?",
+     "c": "Écris une demande de cinq lignes à une école de langues avec me dirijo a ustedes para."
+    },
+    "it": {
+     "t": "Scrivere una lettera formale",
+     "g": "Scrivi una lettera o una richiesta formale chiara in spagnolo.",
+     "p": [
+      "Apri con Estimados señores o Estimada señora + cognome, seguito dai due punti.",
+      "Indica subito lo scopo: Me dirijo a ustedes para + infinito.",
+      "Chiudi con Quedo a la espera de su respuesta e Atentamente, poi il tuo nome."
+     ],
+     "q": "A chi potresti scrivere una lettera formale in spagnolo, e perché?",
+     "c": "Scrivi una richiesta di cinque righe a una scuola di lingue con me dirijo a ustedes para."
+    },
+    "pt": {
+     "t": "Escrever uma carta formal",
+     "g": "Redige uma carta ou um pedido formal claro em espanhol.",
+     "p": [
+      "Abre com Estimados señores ou Estimada señora + apelido, seguido de dois pontos.",
+      "Diz cedo o motivo: Me dirijo a ustedes para + infinitivo.",
+      "Fecha com Quedo a la espera de su respuesta e Atentamente, depois o teu nome."
+     ],
+     "q": "A quem poderias escrever uma carta formal em espanhol, e porquê?",
+     "c": "Escreve um pedido de cinco linhas a uma escola de línguas com me dirijo a ustedes para."
+    },
+    "pt_BR": {
+     "t": "Escrever uma carta formal",
+     "g": "Redija uma carta ou um pedido formal claro em espanhol.",
+     "p": [
+      "Abra com Estimados señores ou Estimada señora + sobrenome, seguido de dois-pontos.",
+      "Diga logo o motivo: Me dirijo a ustedes para + infinitivo.",
+      "Feche com Quedo a la espera de su respuesta e Atentamente, depois seu nome."
+     ],
+     "q": "Para quem você poderia escrever uma carta formal em espanhol, e por quê?",
+     "c": "Escreva um pedido de cinco linhas para uma escola de idiomas com me dirijo a ustedes para."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Estimados señores:",
+      "ex": "Estimados señores: les escribo en relación con su anuncio."
+     },
+     {
+      "w": "me dirijo a ustedes para",
+      "ex": "Me dirijo a ustedes para solicitar información sobre el curso."
+     },
+     {
+      "w": "adjuntar",
+      "ex": "Les adjunto mi currículum y una carta de recomendación."
+     },
+     {
+      "w": "a la mayor brevedad",
+      "ex": "Les ruego que me contesten a la mayor brevedad."
+     },
+     {
+      "w": "quedo a la espera de",
+      "ex": "Quedo a la espera de su respuesta."
+     },
+     {
+      "w": "atentamente",
+      "ex": "Atentamente, Laura Gómez."
+     }
+    ],
+    "gram": "Carta formal: saludo + dos puntos, me dirijo a ustedes para + infinitivo, usted/ustedes y despedida fija: atentamente."
+   }
+  },
+  {
+   "d": 302,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Writing a report",
+     "g": "Organise a short report with clear sections in Spanish.",
+     "p": [
+      "Sections: introducción, análisis, conclusiones and recomendaciones.",
+      "Use impersonal forms: se observa que, cabe destacar que, los datos muestran.",
+      "Recommend with se recomienda + infinitive or es aconsejable que + subjunctive."
+     ],
+     "q": "What topic at work or school could you write a short report about?",
+     "c": "Write three report sentences with se observa que, cabe destacar and se recomienda."
+    },
+    "de": {
+     "t": "Einen Bericht schreiben",
+     "g": "Gliedere einen kurzen Bericht auf Spanisch in klare Abschnitte.",
+     "p": [
+      "Abschnitte: introducción, análisis, conclusiones und recomendaciones.",
+      "Nutze unpersönliche Formen: se observa que, cabe destacar que, los datos muestran.",
+      "Empfiehl mit se recomienda + Infinitiv oder es aconsejable que + Subjuntivo."
+     ],
+     "q": "Über welches Thema in Arbeit oder Schule könntest du einen kurzen Bericht schreiben?",
+     "c": "Schreib drei Berichtssätze mit se observa que, cabe destacar und se recomienda."
+    },
+    "es": {
+     "t": "Redactar un informe",
+     "g": "Organiza un informe breve en secciones claras.",
+     "p": [
+      "Secciones: introducción, análisis, conclusiones y recomendaciones.",
+      "Usa formas impersonales: se observa que, cabe destacar que, los datos muestran.",
+      "Recomienda con se recomienda + infinitivo o es aconsejable que + subjuntivo."
+     ],
+     "q": "¿Sobre qué tema del trabajo o los estudios podrías escribir un informe breve?",
+     "c": "Escribe tres frases de informe con se observa que, cabe destacar y se recomienda."
+    },
+    "fr": {
+     "t": "Rédiger un rapport",
+     "g": "Organise un court rapport en espagnol en sections claires.",
+     "p": [
+      "Sections : introducción, análisis, conclusiones et recomendaciones.",
+      "Utilise l'impersonnel : se observa que, cabe destacar que, los datos muestran.",
+      "Recommande avec se recomienda + infinitif ou es aconsejable que + subjonctif."
+     ],
+     "q": "Sur quel sujet au travail ou en cours pourrais-tu écrire un court rapport ?",
+     "c": "Écris trois phrases de rapport avec se observa que, cabe destacar et se recomienda."
+    },
+    "it": {
+     "t": "Scrivere una relazione",
+     "g": "Organizza una breve relazione in spagnolo in sezioni chiare.",
+     "p": [
+      "Sezioni: introducción, análisis, conclusiones e recomendaciones.",
+      "Usa forme impersonali: se observa que, cabe destacar que, los datos muestran.",
+      "Raccomanda con se recomienda + infinito o es aconsejable que + congiuntivo."
+     ],
+     "q": "Su quale tema di lavoro o studio potresti scrivere una breve relazione?",
+     "c": "Scrivi tre frasi da relazione con se observa que, cabe destacar e se recomienda."
+    },
+    "pt": {
+     "t": "Redigir um relatório",
+     "g": "Organiza um relatório curto em espanhol em secções claras.",
+     "p": [
+      "Secções: introducción, análisis, conclusiones e recomendaciones.",
+      "Usa formas impessoais: se observa que, cabe destacar que, los datos muestran.",
+      "Recomenda com se recomienda + infinitivo ou es aconsejable que + conjuntivo."
+     ],
+     "q": "Sobre que tema do trabalho ou dos estudos poderias escrever um relatório curto?",
+     "c": "Escreve três frases de relatório com se observa que, cabe destacar e se recomienda."
+    },
+    "pt_BR": {
+     "t": "Escrever um relatório",
+     "g": "Organize um relatório curto em espanhol em seções claras.",
+     "p": [
+      "Seções: introducción, análisis, conclusiones e recomendaciones.",
+      "Use formas impessoais: se observa que, cabe destacar que, los datos muestran.",
+      "Recomende com se recomienda + infinitivo ou es aconsejable que + subjuntivo."
+     ],
+     "q": "Sobre qual tema do trabalho ou dos estudos você poderia escrever um relatório curto?",
+     "c": "Escreva três frases de relatório com se observa que, cabe destacar e se recomienda."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el informe",
+      "ex": "El informe recoge los resultados de la encuesta."
+     },
+     {
+      "w": "se observa que",
+      "ex": "Se observa que las ventas suben en primavera."
+     },
+     {
+      "w": "cabe destacar",
+      "ex": "Cabe destacar el buen trabajo del equipo."
+     },
+     {
+      "w": "según los datos",
+      "ex": "Según los datos, el 60 % prefiere el tren."
+     },
+     {
+      "w": "en conclusión",
+      "ex": "En conclusión, el proyecto ha sido un éxito."
+     },
+     {
+      "w": "se recomienda",
+      "ex": "Se recomienda revisar el plan cada mes."
+     }
+    ],
+    "gram": "Informe: estructura fija y formas impersonales con se (se observa, se recomienda) y cabe + infinitivo."
+   }
+  },
+  {
+   "d": 303,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Summarising a text",
+     "g": "Pick out the main ideas of a text and retell them briefly.",
+     "p": [
+      "Read once for the gist, then underline the key idea of each paragraph.",
+      "Start with El texto trata de... and use En resumen or En definitiva to close.",
+      "Report ideas with verbs like el autor afirma, sostiene or plantea que."
+     ],
+     "q": "Think of an article you read recently: what is it about in one sentence?",
+     "c": "Summarise a news story you know in three sentences starting with El texto trata de."
+    },
+    "de": {
+     "t": "Einen Text zusammenfassen",
+     "g": "Erkenne die Hauptideen eines Textes und gib sie kurz wieder.",
+     "p": [
+      "Lies einmal für den Gesamtsinn, dann markiere die Kernidee jedes Absatzes.",
+      "Beginne mit El texto trata de... und schließe mit En resumen oder En definitiva.",
+      "Gib Ideen wieder mit el autor afirma, sostiene oder plantea que."
+     ],
+     "q": "Denk an einen Artikel, den du gelesen hast: Worum geht es in einem Satz?",
+     "c": "Fasse eine bekannte Nachricht in drei Sätzen zusammen, beginnend mit El texto trata de."
+    },
+    "es": {
+     "t": "Resumir un texto",
+     "g": "Identifica las ideas principales de un texto y cuéntalas con brevedad.",
+     "p": [
+      "Lee una vez para captar el sentido general y subraya la idea clave de cada párrafo.",
+      "Empieza con El texto trata de... y cierra con En resumen o En definitiva.",
+      "Transmite ideas con el autor afirma, sostiene o plantea que."
+     ],
+     "q": "Piensa en un artículo que leíste hace poco: ¿de qué trata en una frase?",
+     "c": "Resume una noticia que conozcas en tres frases empezando por El texto trata de."
+    },
+    "fr": {
+     "t": "Résumer un texte",
+     "g": "Repère les idées principales d'un texte et redis-les brièvement.",
+     "p": [
+      "Lis une fois pour le sens général, puis souligne l'idée clé de chaque paragraphe.",
+      "Commence par El texto trata de... et termine par En resumen ou En definitiva.",
+      "Rapporte les idées avec el autor afirma, sostiene ou plantea que."
+     ],
+     "q": "Pense à un article lu récemment : de quoi parle-t-il en une phrase ?",
+     "c": "Résume une actualité que tu connais en trois phrases, en commençant par El texto trata de."
+    },
+    "it": {
+     "t": "Riassumere un testo",
+     "g": "Individua le idee principali di un testo e raccontale in breve.",
+     "p": [
+      "Leggi una volta per il senso generale, poi sottolinea l'idea chiave di ogni paragrafo.",
+      "Inizia con El texto trata de... e chiudi con En resumen o En definitiva.",
+      "Riporta le idee con el autor afirma, sostiene o plantea que."
+     ],
+     "q": "Pensa a un articolo letto di recente: di cosa parla in una frase?",
+     "c": "Riassumi una notizia che conosci in tre frasi iniziando con El texto trata de."
+    },
+    "pt": {
+     "t": "Resumir um texto",
+     "g": "Identifica as ideias principais de um texto e conta-as em poucas palavras.",
+     "p": [
+      "Lê uma vez para o sentido geral e sublinha a ideia-chave de cada parágrafo.",
+      "Começa com El texto trata de... e fecha com En resumen ou En definitiva.",
+      "Transmite ideias com el autor afirma, sostiene ou plantea que."
+     ],
+     "q": "Pensa num artigo que leste há pouco: de que trata numa frase?",
+     "c": "Resume uma notícia que conheças em três frases, a começar por El texto trata de."
+    },
+    "pt_BR": {
+     "t": "Resumir um texto",
+     "g": "Identifique as ideias principais de um texto e conte-as em poucas palavras.",
+     "p": [
+      "Leia uma vez para o sentido geral e sublinhe a ideia-chave de cada parágrafo.",
+      "Comece com El texto trata de... e feche com En resumen ou En definitiva.",
+      "Transmita ideias com el autor afirma, sostiene ou plantea que."
+     ],
+     "q": "Pense num artigo que você leu há pouco: do que ele trata numa frase?",
+     "c": "Resuma uma notícia que você conhece em três frases, começando por El texto trata de."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el texto trata de",
+      "ex": "El texto trata de los hábitos de lectura de los jóvenes."
+     },
+     {
+      "w": "la idea principal",
+      "ex": "La idea principal es que leer mejora la concentración."
+     },
+     {
+      "w": "el autor sostiene que",
+      "ex": "El autor sostiene que el deporte une a las personas."
+     },
+     {
+      "w": "a grandes rasgos",
+      "ex": "A grandes rasgos, el artículo defiende el teletrabajo."
+     },
+     {
+      "w": "en resumen",
+      "ex": "En resumen, se trata de un problema con solución."
+     },
+     {
+      "w": "en definitiva",
+      "ex": "En definitiva, el estudio confirma la hipótesis."
+     }
+    ],
+    "gram": "Resumir: presente para contar el contenido y verbos de habla (afirma, sostiene, plantea que) + indicativo."
+   }
+  },
+  {
+   "d": 304,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Paraphrasing",
+     "g": "Say the same idea with different words and structures.",
+     "p": [
+      "Signal a rephrase with es decir, o sea or en otras palabras.",
+      "Swap words for synonyms: importante becomes fundamental, problema becomes dificultad.",
+      "Change structure: active to passive, or a verb into a noun (decidir, la decisión)."
+     ],
+     "q": "Can you say No me gusta madrugar in another way?",
+     "c": "Paraphrase three sentences from a Spanish text using es decir and a synonym each time."
+    },
+    "de": {
+     "t": "Umschreiben",
+     "g": "Sag dieselbe Idee mit anderen Wörtern und Strukturen.",
+     "p": [
+      "Kündige eine Umschreibung an mit es decir, o sea oder en otras palabras.",
+      "Tausche Wörter gegen Synonyme: importante wird fundamental, problema wird dificultad.",
+      "Ändere die Struktur: aktiv zu passiv oder Verb zu Nomen (decidir, la decisión)."
+     ],
+     "q": "Kannst du No me gusta madrugar anders ausdrücken?",
+     "c": "Umschreibe drei Sätze eines spanischen Textes mit es decir und jeweils einem Synonym."
+    },
+    "es": {
+     "t": "Parafrasear",
+     "g": "Expresa la misma idea con otras palabras y estructuras.",
+     "p": [
+      "Señala la reformulación con es decir, o sea o en otras palabras.",
+      "Cambia palabras por sinónimos: importante pasa a fundamental, problema a dificultad.",
+      "Cambia la estructura: de activa a pasiva o de verbo a sustantivo (decidir, la decisión)."
+     ],
+     "q": "¿Puedes decir No me gusta madrugar de otra manera?",
+     "c": "Parafrasea tres frases de un texto en español con es decir y un sinónimo en cada una."
+    },
+    "fr": {
+     "t": "Paraphraser",
+     "g": "Dis la même idée avec d'autres mots et d'autres structures.",
+     "p": [
+      "Signale la reformulation avec es decir, o sea ou en otras palabras.",
+      "Remplace par des synonymes : importante devient fundamental, problema devient dificultad.",
+      "Change la structure : actif en passif, ou verbe en nom (decidir, la decisión)."
+     ],
+     "q": "Peux-tu dire No me gusta madrugar autrement ?",
+     "c": "Paraphrase trois phrases d'un texte espagnol avec es decir et un synonyme à chaque fois."
+    },
+    "it": {
+     "t": "Parafrasare",
+     "g": "Esprimi la stessa idea con parole e strutture diverse.",
+     "p": [
+      "Segnala la riformulazione con es decir, o sea o en otras palabras.",
+      "Usa sinonimi: importante diventa fundamental, problema diventa dificultad.",
+      "Cambia struttura: da attiva a passiva o da verbo a nome (decidir, la decisión)."
+     ],
+     "q": "Sai dire No me gusta madrugar in un altro modo?",
+     "c": "Parafrasa tre frasi di un testo spagnolo con es decir e un sinonimo ogni volta."
+    },
+    "pt": {
+     "t": "Parafrasear",
+     "g": "Diz a mesma ideia com outras palavras e estruturas.",
+     "p": [
+      "Assinala a reformulação com es decir, o sea ou en otras palabras.",
+      "Troca palavras por sinónimos: importante passa a fundamental, problema a dificultad.",
+      "Muda a estrutura: ativa para passiva, ou verbo para nome (decidir, la decisión)."
+     ],
+     "q": "Consegues dizer No me gusta madrugar de outra forma?",
+     "c": "Parafraseia três frases de um texto em espanhol com es decir e um sinónimo em cada uma."
+    },
+    "pt_BR": {
+     "t": "Parafrasear",
+     "g": "Diga a mesma ideia com outras palavras e estruturas.",
+     "p": [
+      "Sinalize a reformulação com es decir, o sea ou en otras palabras.",
+      "Troque palavras por sinônimos: importante vira fundamental, problema vira dificultad.",
+      "Mude a estrutura: ativa para passiva, ou verbo para substantivo (decidir, la decisión)."
+     ],
+     "q": "Você consegue dizer No me gusta madrugar de outro jeito?",
+     "c": "Parafraseie três frases de um texto em espanhol com es decir e um sinônimo em cada uma."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "es decir",
+      "ex": "Llegó tarde, es decir, perdió el tren."
+     },
+     {
+      "w": "o sea",
+      "ex": "Mañana es festivo, o sea, no hay clase."
+     },
+     {
+      "w": "en otras palabras",
+      "ex": "En otras palabras, necesitamos más tiempo."
+     },
+     {
+      "w": "dicho de otro modo",
+      "ex": "Dicho de otro modo, el plan no funciona."
+     },
+     {
+      "w": "reformular",
+      "ex": "¿Puedes reformular la pregunta, por favor?"
+     },
+     {
+      "w": "el sinónimo",
+      "ex": "Fundamental es un sinónimo de esencial."
+     }
+    ],
+    "gram": "Parafrasear: es decir, o sea, en otras palabras + sinónimos y cambios de estructura (verbo a sustantivo, activa a pasiva)."
+   }
+  },
+  {
+   "d": 305,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Building an argument",
+     "g": "Build a convincing argument with a clear structure.",
+     "p": [
+      "Structure: tesis, argumentos, ejemplos and conclusión.",
+      "Order points with en primer lugar, además, por otro lado and por último.",
+      "Support claims: por ejemplo, un caso claro es, los datos demuestran que."
+     ],
+     "q": "Do you think everyone should learn a second language? Give one argument.",
+     "c": "Write a mini argument of four sentences for or against school uniforms."
+    },
+    "de": {
+     "t": "Ein Argument aufbauen",
+     "g": "Baue ein überzeugendes Argument mit klarer Struktur auf.",
+     "p": [
+      "Struktur: tesis, argumentos, ejemplos und conclusión.",
+      "Ordne Punkte mit en primer lugar, además, por otro lado und por último.",
+      "Belege Aussagen: por ejemplo, un caso claro es, los datos demuestran que."
+     ],
+     "q": "Sollte jeder eine zweite Sprache lernen? Nenne ein Argument.",
+     "c": "Schreib ein Mini-Argument aus vier Sätzen für oder gegen Schuluniformen."
+    },
+    "es": {
+     "t": "Construir un argumento",
+     "g": "Construye un argumento convincente con una estructura clara.",
+     "p": [
+      "Estructura: tesis, argumentos, ejemplos y conclusión.",
+      "Ordena las ideas con en primer lugar, además, por otro lado y por último.",
+      "Apoya tus afirmaciones: por ejemplo, un caso claro es, los datos demuestran que."
+     ],
+     "q": "¿Crees que todo el mundo debería aprender una segunda lengua? Da un argumento.",
+     "c": "Escribe un miniargumento de cuatro frases a favor o en contra del uniforme escolar."
+    },
+    "fr": {
+     "t": "Construire un argument",
+     "g": "Construis un argument convaincant avec une structure claire.",
+     "p": [
+      "Structure : tesis, argumentos, ejemplos et conclusión.",
+      "Ordonne tes idées avec en primer lugar, además, por otro lado et por último.",
+      "Appuie tes affirmations : por ejemplo, un caso claro es, los datos demuestran que."
+     ],
+     "q": "Penses-tu que tout le monde devrait apprendre une deuxième langue ? Donne un argument.",
+     "c": "Écris un mini-argument de quatre phrases pour ou contre l'uniforme scolaire."
+    },
+    "it": {
+     "t": "Costruire un argomento",
+     "g": "Costruisci un argomento convincente con una struttura chiara.",
+     "p": [
+      "Struttura: tesis, argumentos, ejemplos e conclusión.",
+      "Ordina le idee con en primer lugar, además, por otro lado e por último.",
+      "Sostieni le tesi: por ejemplo, un caso claro es, los datos demuestran que."
+     ],
+     "q": "Pensi che tutti dovrebbero imparare una seconda lingua? Dai un argomento.",
+     "c": "Scrivi un mini argomento di quattro frasi a favore o contro la divisa scolastica."
+    },
+    "pt": {
+     "t": "Construir um argumento",
+     "g": "Constrói um argumento convincente com uma estrutura clara.",
+     "p": [
+      "Estrutura: tesis, argumentos, ejemplos e conclusión.",
+      "Ordena as ideias com en primer lugar, además, por otro lado e por último.",
+      "Apoia o que dizes: por ejemplo, un caso claro es, los datos demuestran que."
+     ],
+     "q": "Achas que toda a gente devia aprender uma segunda língua? Dá um argumento.",
+     "c": "Escreve um miniargumento de quatro frases a favor ou contra a farda escolar."
+    },
+    "pt_BR": {
+     "t": "Construir um argumento",
+     "g": "Construa um argumento convincente com uma estrutura clara.",
+     "p": [
+      "Estrutura: tesis, argumentos, ejemplos e conclusión.",
+      "Ordene as ideias com en primer lugar, además, por otro lado e por último.",
+      "Apoie o que você diz: por ejemplo, un caso claro es, los datos demuestran que."
+     ],
+     "q": "Você acha que todo mundo deveria aprender uma segunda língua? Dê um argumento.",
+     "c": "Escreva um miniargumento de quatro frases a favor ou contra o uniforme escolar."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la tesis",
+      "ex": "Mi tesis es que el transporte público debería ser gratis."
+     },
+     {
+      "w": "en primer lugar",
+      "ex": "En primer lugar, reduciría el tráfico."
+     },
+     {
+      "w": "además",
+      "ex": "Además, ayudaría a las familias."
+     },
+     {
+      "w": "por otro lado",
+      "ex": "Por otro lado, habría que financiarlo."
+     },
+     {
+      "w": "los datos demuestran que",
+      "ex": "Los datos demuestran que el uso del tren ha crecido."
+     },
+     {
+      "w": "por todo ello",
+      "ex": "Por todo ello, apoyo esta medida."
+     }
+    ],
+    "gram": "Argumentar: tesis + conectores de orden (en primer lugar, además, por último) + ejemplos + conclusión (por todo ello)."
+   }
+  },
+  {
+   "d": 306,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Debating politely",
+     "g": "Disagree in a debate while staying friendly and respectful.",
+     "p": [
+      "Acknowledge first: Entiendo tu postura, pero... or Tienes razón en parte.",
+      "Soften disagreement: Con todo respeto, yo diría que... or No lo veo del todo así.",
+      "Remember: no creo que + subjunctive, creo que + indicative."
+     ],
+     "q": "How do you usually react when someone disagrees with you?",
+     "c": "Answer the opinion Las redes sociales son malas with entiendo tu postura, pero and no creo que."
+    },
+    "de": {
+     "t": "Höflich debattieren",
+     "g": "Widersprich in einer Debatte und bleib dabei freundlich und respektvoll.",
+     "p": [
+      "Erst anerkennen: Entiendo tu postura, pero... oder Tienes razón en parte.",
+      "Widerspruch abmildern: Con todo respeto, yo diría que... oder No lo veo del todo así.",
+      "Denk daran: no creo que + Subjuntivo, creo que + Indikativ."
+     ],
+     "q": "Wie reagierst du normalerweise, wenn jemand anderer Meinung ist?",
+     "c": "Antworte auf Las redes sociales son malas mit entiendo tu postura, pero und no creo que."
+    },
+    "es": {
+     "t": "Debatir con cortesía",
+     "g": "Discrepa en un debate sin perder la amabilidad ni el respeto.",
+     "p": [
+      "Primero reconoce: Entiendo tu postura, pero... o Tienes razón en parte.",
+      "Suaviza el desacuerdo: Con todo respeto, yo diría que... o No lo veo del todo así.",
+      "Recuerda: no creo que + subjuntivo, creo que + indicativo."
+     ],
+     "q": "¿Cómo sueles reaccionar cuando alguien no está de acuerdo contigo?",
+     "c": "Responde a Las redes sociales son malas con entiendo tu postura, pero y no creo que."
+    },
+    "fr": {
+     "t": "Débattre poliment",
+     "g": "Exprime ton désaccord dans un débat en restant aimable et respectueux.",
+     "p": [
+      "Reconnais d'abord : Entiendo tu postura, pero... ou Tienes razón en parte.",
+      "Adoucis : Con todo respeto, yo diría que... ou No lo veo del todo así.",
+      "Rappel : no creo que + subjonctif, creo que + indicatif."
+     ],
+     "q": "Comment réagis-tu d'habitude quand quelqu'un n'est pas d'accord avec toi ?",
+     "c": "Réponds à Las redes sociales son malas avec entiendo tu postura, pero et no creo que."
+    },
+    "it": {
+     "t": "Dibattere con garbo",
+     "g": "Esprimi disaccordo in un dibattito restando gentile e rispettoso.",
+     "p": [
+      "Prima riconosci: Entiendo tu postura, pero... o Tienes razón en parte.",
+      "Ammorbidisci: Con todo respeto, yo diría que... o No lo veo del todo así.",
+      "Ricorda: no creo que + congiuntivo, creo que + indicativo."
+     ],
+     "q": "Come reagisci di solito quando qualcuno non è d'accordo con te?",
+     "c": "Rispondi a Las redes sociales son malas con entiendo tu postura, pero e no creo que."
+    },
+    "pt": {
+     "t": "Debater com cortesia",
+     "g": "Discorda num debate sem perder a simpatia e o respeito.",
+     "p": [
+      "Primeiro reconhece: Entiendo tu postura, pero... ou Tienes razón en parte.",
+      "Suaviza: Con todo respeto, yo diría que... ou No lo veo del todo así.",
+      "Lembra-te: no creo que + conjuntivo, creo que + indicativo."
+     ],
+     "q": "Como costumas reagir quando alguém não concorda contigo?",
+     "c": "Responde a Las redes sociales son malas com entiendo tu postura, pero e no creo que."
+    },
+    "pt_BR": {
+     "t": "Debater com educação",
+     "g": "Discorde num debate sem perder a gentileza e o respeito.",
+     "p": [
+      "Primeiro reconheça: Entiendo tu postura, pero... ou Tienes razón en parte.",
+      "Suavize: Con todo respeto, yo diría que... ou No lo veo del todo así.",
+      "Lembre: no creo que + subjuntivo, creo que + indicativo."
+     ],
+     "q": "Como você costuma reagir quando alguém discorda de você?",
+     "c": "Responda a Las redes sociales son malas com entiendo tu postura, pero e no creo que."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "entiendo tu postura, pero",
+      "ex": "Entiendo tu postura, pero los datos dicen otra cosa."
+     },
+     {
+      "w": "con todo respeto",
+      "ex": "Con todo respeto, yo diría que exageras un poco."
+     },
+     {
+      "w": "tienes razón en parte",
+      "ex": "Tienes razón en parte, aunque hay excepciones."
+     },
+     {
+      "w": "no lo veo del todo así",
+      "ex": "No lo veo del todo así, la verdad."
+     },
+     {
+      "w": "no creo que",
+      "ex": "No creo que sea tan sencillo."
+     },
+     {
+      "w": "desde mi punto de vista",
+      "ex": "Desde mi punto de vista, ambas opciones son válidas."
+     }
+    ],
+    "gram": "Discrepar con cortesía: reconocer + pero; no creo que / no pienso que + subjuntivo; condicional (yo diría) para suavizar."
+   }
+  },
+  {
+   "d": 307,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Persuasive language",
+     "g": "Persuade an audience with strong, vivid Spanish.",
+     "p": [
+      "Ask rhetorical questions: ¿Acaso no merecemos un futuro mejor?",
+      "Use lists of three and strong verbs: transformar, impulsar, garantizar.",
+      "Appeal to the listener: imagina que..., piensa en..., no esperes más."
+     ],
+     "q": "What would you try to persuade your friends to do, in one sentence?",
+     "c": "Write a three-line advert for your favourite place using a rhetorical question and imagina."
+    },
+    "de": {
+     "t": "Überzeugende Sprache",
+     "g": "Überzeuge ein Publikum mit kraftvollem, lebendigem Spanisch.",
+     "p": [
+      "Stelle rhetorische Fragen: ¿Acaso no merecemos un futuro mejor?",
+      "Nutze Dreierlisten und starke Verben: transformar, impulsar, garantizar.",
+      "Sprich den Zuhörer an: imagina que..., piensa en..., no esperes más."
+     ],
+     "q": "Wozu würdest du deine Freunde überzeugen wollen, in einem Satz?",
+     "c": "Schreib eine dreizeilige Werbung für deinen Lieblingsort mit einer rhetorischen Frage und imagina."
+    },
+    "es": {
+     "t": "Lenguaje persuasivo",
+     "g": "Convence a tu público con un español enérgico y vivo.",
+     "p": [
+      "Haz preguntas retóricas: ¿Acaso no merecemos un futuro mejor?",
+      "Usa enumeraciones de tres y verbos fuertes: transformar, impulsar, garantizar.",
+      "Apela al oyente: imagina que..., piensa en..., no esperes más."
+     ],
+     "q": "¿A qué intentarías convencer a tus amigos, en una frase?",
+     "c": "Escribe un anuncio de tres líneas sobre tu lugar favorito con una pregunta retórica e imagina."
+    },
+    "fr": {
+     "t": "Le langage persuasif",
+     "g": "Persuade ton public avec un espagnol fort et vivant.",
+     "p": [
+      "Pose des questions rhétoriques : ¿Acaso no merecemos un futuro mejor?",
+      "Utilise des énumérations de trois et des verbes forts : transformar, impulsar, garantizar.",
+      "Interpelle l'auditeur : imagina que..., piensa en..., no esperes más."
+     ],
+     "q": "De quoi voudrais-tu convaincre tes amis, en une phrase ?",
+     "c": "Écris une pub de trois lignes pour ton lieu préféré avec une question rhétorique et imagina."
+    },
+    "it": {
+     "t": "Linguaggio persuasivo",
+     "g": "Convinci il pubblico con uno spagnolo forte e vivace.",
+     "p": [
+      "Fai domande retoriche: ¿Acaso no merecemos un futuro mejor?",
+      "Usa elenchi di tre e verbi forti: transformar, impulsar, garantizar.",
+      "Coinvolgi chi ascolta: imagina que..., piensa en..., no esperes más."
+     ],
+     "q": "Di cosa vorresti convincere i tuoi amici, in una frase?",
+     "c": "Scrivi una pubblicità di tre righe sul tuo posto preferito con una domanda retorica e imagina."
+    },
+    "pt": {
+     "t": "Linguagem persuasiva",
+     "g": "Convence o teu público com um espanhol forte e vivo.",
+     "p": [
+      "Faz perguntas retóricas: ¿Acaso no merecemos un futuro mejor?",
+      "Usa enumerações de três e verbos fortes: transformar, impulsar, garantizar.",
+      "Apela ao ouvinte: imagina que..., piensa en..., no esperes más."
+     ],
+     "q": "De que tentarias convencer os teus amigos, numa frase?",
+     "c": "Escreve um anúncio de três linhas sobre o teu lugar favorito com uma pergunta retórica e imagina."
+    },
+    "pt_BR": {
+     "t": "Linguagem persuasiva",
+     "g": "Convença seu público com um espanhol forte e vivo.",
+     "p": [
+      "Faça perguntas retóricas: ¿Acaso no merecemos un futuro mejor?",
+      "Use enumerações de três e verbos fortes: transformar, impulsar, garantizar.",
+      "Fale direto com o ouvinte: imagina que..., piensa en..., no esperes más."
+     ],
+     "q": "Do que você tentaria convencer seus amigos, numa frase?",
+     "c": "Escreva um anúncio de três linhas sobre seu lugar favorito com uma pergunta retórica e imagina."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "¿acaso no...?",
+      "ex": "¿Acaso no queremos todos vivir mejor?"
+     },
+     {
+      "w": "imagina que",
+      "ex": "Imagina que te despiertas frente al mar."
+     },
+     {
+      "w": "transformar",
+      "ex": "Este proyecto va a transformar el barrio."
+     },
+     {
+      "w": "impulsar",
+      "ex": "Queremos impulsar el comercio local."
+     },
+     {
+      "w": "sin duda",
+      "ex": "Sin duda, es la mejor decisión."
+     },
+     {
+      "w": "no esperes más",
+      "ex": "No esperes más y únete hoy."
+     }
+    ],
+    "gram": "Persuadir: preguntas retóricas con acaso, imperativo (imagina, piensa, únete), enumeraciones de tres y verbos de acción."
+   }
+  },
+  {
+   "d": 308,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Review: writing and arguing",
+     "g": "Combine register, reports, summaries and debate skills in one mini debate.",
+     "p": [
+      "Formal writing: me dirijo a ustedes, se recomienda, atentamente.",
+      "Summary and paraphrase: el texto trata de, es decir, en otras palabras.",
+      "Argue and debate: en primer lugar, entiendo tu postura, pero, no creo que + subjunctive."
+     ],
+     "q": "Is it better to study alone or in a group? Defend your view with two arguments.",
+     "c": "Hold a mini debate with me: one thesis, two arguments, one polite counterargument."
+    },
+    "de": {
+     "t": "Wiederholung: Schreiben und Argumentieren",
+     "g": "Verbinde Register, Bericht, Zusammenfassung und Debatte in einer Mini-Debatte.",
+     "p": [
+      "Formell schreiben: me dirijo a ustedes, se recomienda, atentamente.",
+      "Zusammenfassen und umschreiben: el texto trata de, es decir, en otras palabras.",
+      "Argumentieren: en primer lugar, entiendo tu postura, pero, no creo que + Subjuntivo."
+     ],
+     "q": "Lernt man besser allein oder in der Gruppe? Verteidige deine Sicht mit zwei Argumenten.",
+     "c": "Führe mit mir eine Mini-Debatte: eine These, zwei Argumente, ein höflicher Einwand."
+    },
+    "es": {
+     "t": "Repaso: escribir y argumentar",
+     "g": "Combina registro, informes, resúmenes y debate en un minidebate.",
+     "p": [
+      "Escritura formal: me dirijo a ustedes, se recomienda, atentamente.",
+      "Resumen y paráfrasis: el texto trata de, es decir, en otras palabras.",
+      "Argumentar y debatir: en primer lugar, entiendo tu postura, pero, no creo que + subjuntivo."
+     ],
+     "q": "¿Es mejor estudiar solo o en grupo? Defiende tu opinión con dos argumentos.",
+     "c": "Haz un minidebate conmigo: una tesis, dos argumentos y un contraargumento cortés."
+    },
+    "fr": {
+     "t": "Révision : écrire et argumenter",
+     "g": "Combine registre, rapport, résumé et débat dans un mini-débat.",
+     "p": [
+      "Écrit formel : me dirijo a ustedes, se recomienda, atentamente.",
+      "Résumé et paraphrase : el texto trata de, es decir, en otras palabras.",
+      "Argumenter : en primer lugar, entiendo tu postura, pero, no creo que + subjonctif."
+     ],
+     "q": "Vaut-il mieux étudier seul ou en groupe ? Défends ton avis avec deux arguments.",
+     "c": "Fais un mini-débat avec moi : une thèse, deux arguments, un contre-argument poli."
+    },
+    "it": {
+     "t": "Ripasso: scrivere e argomentare",
+     "g": "Unisci registro, relazione, riassunto e dibattito in un mini dibattito.",
+     "p": [
+      "Scrittura formale: me dirijo a ustedes, se recomienda, atentamente.",
+      "Riassunto e parafrasi: el texto trata de, es decir, en otras palabras.",
+      "Argomentare: en primer lugar, entiendo tu postura, pero, no creo que + congiuntivo."
+     ],
+     "q": "È meglio studiare da soli o in gruppo? Difendi la tua idea con due argomenti.",
+     "c": "Fai un mini dibattito con me: una tesi, due argomenti e un controargomento cortese."
+    },
+    "pt": {
+     "t": "Revisão: escrever e argumentar",
+     "g": "Junta registo, relatório, resumo e debate num minidebate.",
+     "p": [
+      "Escrita formal: me dirijo a ustedes, se recomienda, atentamente.",
+      "Resumo e paráfrase: el texto trata de, es decir, en otras palabras.",
+      "Argumentar: en primer lugar, entiendo tu postura, pero, no creo que + conjuntivo."
+     ],
+     "q": "É melhor estudar sozinho ou em grupo? Defende a tua opinião com dois argumentos.",
+     "c": "Faz um minidebate comigo: uma tese, dois argumentos e um contra-argumento cortês."
+    },
+    "pt_BR": {
+     "t": "Revisão: escrever e argumentar",
+     "g": "Junte registro, relatório, resumo e debate num minidebate.",
+     "p": [
+      "Escrita formal: me dirijo a ustedes, se recomienda, atentamente.",
+      "Resumo e paráfrase: el texto trata de, es decir, en otras palabras.",
+      "Argumentar: en primer lugar, entiendo tu postura, pero, no creo que + subjuntivo."
+     ],
+     "q": "É melhor estudar sozinho ou em grupo? Defenda sua opinião com dois argumentos.",
+     "c": "Faça um minidebate comigo: uma tese, dois argumentos e um contra-argumento educado."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el contraargumento",
+      "ex": "Antes de concluir, responde a un contraargumento."
+     },
+     {
+      "w": "me dirijo a ustedes",
+      "ex": "Me dirijo a ustedes para presentar una queja."
+     },
+     {
+      "w": "el texto trata de",
+      "ex": "El texto trata de la vida en el campo."
+     },
+     {
+      "w": "en otras palabras",
+      "ex": "En otras palabras, hay que cambiar de estrategia."
+     },
+     {
+      "w": "entiendo tu postura",
+      "ex": "Entiendo tu postura, pero no la comparto."
+     },
+     {
+      "w": "por todo ello",
+      "ex": "Por todo ello, creo que tengo razón."
+     }
+    ],
+    "gram": "Repaso: registro formal, se impersonal, conectores de orden y reformulación; no creo que + subjuntivo al debatir."
+   }
+  },
+  {
+   "d": 309,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Idioms with animals",
+     "g": "Learn colourful Spanish animal idioms and use them naturally.",
+     "p": [
+      "Estar como pez en el agua: to feel completely at ease.",
+      "Ser un gallina: to be a coward; ser un lince: to be very sharp.",
+      "Buscarle tres pies al gato: to overcomplicate things or look for problems."
+     ],
+     "q": "Where do you feel como pez en el agua?",
+     "c": "Use two animal idioms today in sentences about your own life."
+    },
+    "de": {
+     "t": "Redewendungen mit Tieren",
+     "g": "Lerne bildhafte spanische Tier-Redewendungen und nutze sie natürlich.",
+     "p": [
+      "Estar como pez en el agua: sich pudelwohl fühlen.",
+      "Ser un gallina: ein Angsthase sein; ser un lince: sehr scharfsinnig sein.",
+      "Buscarle tres pies al gato: die Dinge unnötig kompliziert machen."
+     ],
+     "q": "Wo fühlst du dich como pez en el agua?",
+     "c": "Benutze heute zwei Tier-Redewendungen in Sätzen über dein eigenes Leben."
+    },
+    "es": {
+     "t": "Expresiones con animales",
+     "g": "Aprende expresiones con animales y úsalas con naturalidad.",
+     "p": [
+      "Estar como pez en el agua: sentirse muy cómodo.",
+      "Ser un gallina: ser cobarde; ser un lince: ser muy listo y observador.",
+      "Buscarle tres pies al gato: complicar las cosas o buscar problemas donde no los hay."
+     ],
+     "q": "¿Dónde te sientes como pez en el agua?",
+     "c": "Usa hoy dos expresiones con animales en frases sobre tu propia vida."
+    },
+    "fr": {
+     "t": "Expressions avec des animaux",
+     "g": "Apprends des expressions imagées avec des animaux et utilise-les naturellement.",
+     "p": [
+      "Estar como pez en el agua : être comme un poisson dans l'eau.",
+      "Ser un gallina : être une poule mouillée ; ser un lince : être très perspicace.",
+      "Buscarle tres pies al gato : chercher la petite bête, compliquer les choses."
+     ],
+     "q": "Où te sens-tu como pez en el agua ?",
+     "c": "Utilise aujourd'hui deux expressions animales dans des phrases sur ta propre vie."
+    },
+    "it": {
+     "t": "Modi di dire con animali",
+     "g": "Impara modi di dire con animali e usali con naturalezza.",
+     "p": [
+      "Estar como pez en el agua: sentirsi come un pesce nell'acqua.",
+      "Ser un gallina: essere un fifone; ser un lince: essere molto sveglio.",
+      "Buscarle tres pies al gato: cercare il pelo nell'uovo, complicare le cose."
+     ],
+     "q": "Dove ti senti como pez en el agua?",
+     "c": "Usa oggi due modi di dire con animali in frasi sulla tua vita."
+    },
+    "pt": {
+     "t": "Expressões com animais",
+     "g": "Aprende expressões com animais e usa-as com naturalidade.",
+     "p": [
+      "Estar como pez en el agua: estar como peixe na água.",
+      "Ser un gallina: ser medricas; ser un lince: ser muito perspicaz.",
+      "Buscarle tres pies al gato: complicar as coisas, procurar problemas."
+     ],
+     "q": "Onde te sentes como pez en el agua?",
+     "c": "Usa hoje duas expressões com animais em frases sobre a tua vida."
+    },
+    "pt_BR": {
+     "t": "Expressões com animais",
+     "g": "Aprenda expressões com animais e use-as com naturalidade.",
+     "p": [
+      "Estar como pez en el agua: estar como peixe na água.",
+      "Ser un gallina: ser medroso; ser un lince: ser muito esperto e observador.",
+      "Buscarle tres pies al gato: complicar as coisas, procurar chifre em cabeça de cavalo."
+     ],
+     "q": "Onde você se sente como pez en el agua?",
+     "c": "Use hoje duas expressões com animais em frases sobre a sua vida."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "estar como pez en el agua",
+      "ex": "En la cocina estoy como pez en el agua."
+     },
+     {
+      "w": "ser un gallina",
+      "ex": "No seas gallina y sube a la montaña rusa."
+     },
+     {
+      "w": "ser un lince",
+      "ex": "Mi hermana es un lince para los números."
+     },
+     {
+      "w": "buscarle tres pies al gato",
+      "ex": "No le busques tres pies al gato, es muy fácil."
+     },
+     {
+      "w": "llevarse como el perro y el gato",
+      "ex": "Esos dos se llevan como el perro y el gato."
+     },
+     {
+      "w": "ser la oveja negra",
+      "ex": "Era la oveja negra de la familia, pero muy feliz."
+     }
+    ],
+    "gram": "Modismos: se conjugan el verbo y el posesivo (estoy, estás como pez en el agua; no le busques tres pies al gato)."
+   }
+  },
+  {
+   "d": 310,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Idioms with body parts",
+     "g": "Use common Spanish idioms built on body parts.",
+     "p": [
+      "No tener pelos en la lengua: to speak your mind openly.",
+      "Echar una mano: to help; costar un ojo de la cara: to be very expensive.",
+      "Tomar el pelo a alguien: to pull someone's leg, to tease them."
+     ],
+     "q": "Who do you know who no tiene pelos en la lengua?",
+     "c": "Write three sentences with echar una mano, tomar el pelo and costar un ojo de la cara."
+    },
+    "de": {
+     "t": "Redewendungen mit Körperteilen",
+     "g": "Nutze gängige spanische Redewendungen mit Körperteilen.",
+     "p": [
+      "No tener pelos en la lengua: kein Blatt vor den Mund nehmen.",
+      "Echar una mano: helfen; costar un ojo de la cara: ein Vermögen kosten.",
+      "Tomar el pelo a alguien: jemanden auf den Arm nehmen."
+     ],
+     "q": "Wen kennst du, der no tiene pelos en la lengua?",
+     "c": "Schreib drei Sätze mit echar una mano, tomar el pelo und costar un ojo de la cara."
+    },
+    "es": {
+     "t": "Expresiones con partes del cuerpo",
+     "g": "Usa expresiones frecuentes construidas con partes del cuerpo.",
+     "p": [
+      "No tener pelos en la lengua: decir lo que uno piensa sin rodeos.",
+      "Echar una mano: ayudar; costar un ojo de la cara: ser carísimo.",
+      "Tomar el pelo a alguien: burlarse en broma de alguien."
+     ],
+     "q": "¿Conoces a alguien que no tenga pelos en la lengua?",
+     "c": "Escribe tres frases con echar una mano, tomar el pelo y costar un ojo de la cara."
+    },
+    "fr": {
+     "t": "Expressions avec le corps",
+     "g": "Utilise des expressions courantes construites avec des parties du corps.",
+     "p": [
+      "No tener pelos en la lengua : ne pas mâcher ses mots.",
+      "Echar una mano : donner un coup de main ; costar un ojo de la cara : coûter les yeux de la tête.",
+      "Tomar el pelo a alguien : faire marcher quelqu'un."
+     ],
+     "q": "Qui connais-tu qui no tiene pelos en la lengua ?",
+     "c": "Écris trois phrases avec echar una mano, tomar el pelo et costar un ojo de la cara."
+    },
+    "it": {
+     "t": "Modi di dire con il corpo",
+     "g": "Usa modi di dire comuni costruiti con le parti del corpo.",
+     "p": [
+      "No tener pelos en la lengua: non avere peli sulla lingua.",
+      "Echar una mano: dare una mano; costar un ojo de la cara: costare un occhio della testa.",
+      "Tomar el pelo a alguien: prendere in giro qualcuno."
+     ],
+     "q": "Chi conosci che no tiene pelos en la lengua?",
+     "c": "Scrivi tre frasi con echar una mano, tomar el pelo e costar un ojo de la cara."
+    },
+    "pt": {
+     "t": "Expressões com o corpo",
+     "g": "Usa expressões comuns construídas com partes do corpo.",
+     "p": [
+      "No tener pelos en la lengua: não ter papas na língua.",
+      "Echar una mano: dar uma mão; costar un ojo de la cara: custar os olhos da cara.",
+      "Tomar el pelo a alguien: gozar com alguém, na brincadeira."
+     ],
+     "q": "Quem conheces que no tiene pelos en la lengua?",
+     "c": "Escreve três frases com echar una mano, tomar el pelo e costar un ojo de la cara."
+    },
+    "pt_BR": {
+     "t": "Expressões com o corpo",
+     "g": "Use expressões comuns construídas com partes do corpo.",
+     "p": [
+      "No tener pelos en la lengua: não ter papas na língua.",
+      "Echar una mano: dar uma mão; costar un ojo de la cara: custar os olhos da cara.",
+      "Tomar el pelo a alguien: tirar sarro de alguém, na brincadeira."
+     ],
+     "q": "Quem você conhece que no tiene pelos en la lengua?",
+     "c": "Escreva três frases com echar una mano, tomar el pelo e costar un ojo de la cara."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "no tener pelos en la lengua",
+      "ex": "Mi abuela no tiene pelos en la lengua."
+     },
+     {
+      "w": "echar una mano",
+      "ex": "¿Me echas una mano con la mudanza?"
+     },
+     {
+      "w": "costar un ojo de la cara",
+      "ex": "Ese ordenador cuesta un ojo de la cara."
+     },
+     {
+      "w": "tomar el pelo",
+      "ex": "¿Me estás tomando el pelo?"
+     },
+     {
+      "w": "meter la pata",
+      "ex": "Metí la pata y llamé a mi jefe por otro nombre."
+     },
+     {
+      "w": "no pegar ojo",
+      "ex": "Anoche no pegué ojo por el ruido."
+     }
+    ],
+    "gram": "Modismos con el cuerpo: el verbo cambia (me echas una mano, metí la pata) y a veces lleva pronombre (tomarle el pelo a alguien)."
+   }
+  }
+ ]
+}

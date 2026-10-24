@@ -1,0 +1,2195 @@
+{
+"topic": "productivity_work",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "What productivity really means",
+"f": "Getting the right things done with less stress, not just doing more things"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Busy versus productive",
+"f": "Why a full schedule is not the same as meaningful progress"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Your current work day",
+"f": "Observing how you actually spend your working hours for one day"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Time tracking basics",
+"f": "Simple ways to log your time and notice where it goes"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Energy, not just time",
+"f": "Noticing when your focus and energy are highest during the day"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Your peak hours",
+"f": "Scheduling demanding tasks for the times you think most clearly"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "The humble to-do list",
+"f": "Writing tasks down so your mind is free to focus"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Writing better tasks",
+"f": "Turning vague items into clear actions that start with a verb"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Breaking big tasks down",
+"f": "Splitting large projects into small, doable steps"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "The next physical action",
+"f": "Identifying the very first concrete step that moves a task forward"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "Urgent versus important",
+"f": "The difference between them and why important work often gets pushed aside"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "The Eisenhower matrix",
+"f": "Sorting tasks into do, schedule, delegate and drop"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Most important tasks",
+"f": "Choosing one to three key tasks for each day"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Eat the frog",
+"f": "Tackling your hardest or most dreaded task first"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "The two-minute rule",
+"f": "Doing tiny tasks immediately instead of adding them to a list"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Planning tomorrow today",
+"f": "Spending five minutes at the end of the day to set up the next one"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Starting the day well",
+"f": "A simple morning work routine that builds momentum"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Ending the day well",
+"f": "A shutdown routine that closes loops and helps you switch off"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Single-tasking",
+"f": "Why doing one thing at a time is faster than juggling many"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "The cost of multitasking",
+"f": "How switching between tasks drains attention and adds mistakes"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "The Pomodoro technique",
+"f": "Working in focused 25-minute sprints with short breaks in between"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Adapting work intervals",
+"f": "Finding focus block lengths that suit you and your tasks"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "The power of breaks",
+"f": "Why short breaks restore attention and creativity"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Movement during work",
+"f": "Stretching and short walks to stay alert at your desk"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Water and steady energy",
+"f": "General tips for staying fresh and alert through the workday"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Taming notifications",
+"f": "Turning off non-essential alerts to protect your attention"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Your phone at work",
+"f": "Simple ways to keep your phone from stealing your focus"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Common distractions",
+"f": "Identifying your biggest interruptions and what triggers them"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "The distraction list",
+"f": "Writing down stray thoughts to handle later instead of now"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: your first month",
+"f": "A light recap of tasks, priorities, focus sprints and distractions"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Setting up your workspace",
+"f": "Arranging your desk for comfort, light and focus"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "A tidy desk",
+"f": "Keeping only what you need for the task at hand within reach"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Ergonomics basics",
+"f": "General tips for chair height, screen position and posture"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Lighting and sound",
+"f": "How light and noise levels affect your concentration"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Digital desktop declutter",
+"f": "Clearing your computer desktop and organising your files"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Folder structures that work",
+"f": "Designing simple folders so files are easy to find"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Naming files clearly",
+"f": "Using dates and clear names so you never hunt for documents"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Browser tabs under control",
+"f": "Closing, grouping and saving tabs to reduce clutter"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Organised logins",
+"f": "Saving time and stress with a secure, well-organised password manager"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Bookmarks and quick links",
+"f": "Organising the pages you use most for fast access"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Email basics",
+"f": "Why email can drain your day and how to take back control"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Checking email in batches",
+"f": "Setting specific times for email instead of constant checking"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Inbox zero explained",
+"f": "Processing each message: delete, reply, delegate, defer or file"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Writing clear emails",
+"f": "Short subject lines, one purpose and a clear request"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Email templates",
+"f": "Saving reusable replies for common messages"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Unsubscribing",
+"f": "Cutting newsletters and mailing lists you no longer read"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Filters and labels",
+"f": "Letting rules sort incoming email automatically"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Calendar basics",
+"f": "Using your calendar as the single home for all time commitments"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Time blocking",
+"f": "Reserving blocks of time on your calendar for focused work"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Buffer time",
+"f": "Adding gaps between tasks and meetings for overruns and transitions"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Estimating how long tasks take",
+"f": "Improving your time estimates by tracking what really happens"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "The planning fallacy",
+"f": "Why we underestimate time and how to plan more realistically"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Parkinson's law",
+"f": "Work expands to fill the time available, so set tighter limits"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Deadlines that help",
+"f": "Using personal deadlines to create healthy momentum"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Weekly planning",
+"f": "Setting aside time each week to plan priorities and appointments"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Choosing weekly goals",
+"f": "Picking a few meaningful outcomes for the week ahead"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Theme days",
+"f": "Dedicating days to certain types of work, like meetings or creative tasks"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Batching similar tasks",
+"f": "Grouping calls, errands or admin to work more efficiently"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Saying no politely",
+"f": "Protecting your priorities by declining requests kindly"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: tools and planning",
+"f": "A light recap of workspace, email, calendar and weekly planning"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "Procrastination explained",
+"f": "Why we delay tasks and how feelings play a role"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Starting small",
+"f": "Committing to just five minutes to get past the starting barrier"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Making tasks less scary",
+"f": "Shrinking and clarifying tasks that feel overwhelming"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Rewards and motivation",
+"f": "Using small rewards to celebrate progress"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Accountability partners",
+"f": "Sharing goals with someone who checks in on your progress"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Perfectionism and progress",
+"f": "Why done is often better than perfect for many tasks"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Good enough standards",
+"f": "Deciding the quality level a task really needs"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Habits at work",
+"f": "How small repeated actions build lasting productivity"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Habit stacking",
+"f": "Attaching a new habit to an existing routine"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Tracking your habits",
+"f": "Using a simple tracker to stay consistent"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Building a morning routine",
+"f": "Designing a calm, consistent start to your workday"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Rest and productivity",
+"f": "General reasons why good sleep supports focus, memory and mood"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Lunch breaks that recharge",
+"f": "Stepping away from your desk to truly rest at midday"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "The afternoon slump",
+"f": "Simple ways to handle lower energy after lunch"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Note-taking basics",
+"f": "Capturing information so you can use it later"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Meeting notes",
+"f": "Recording decisions, owners and next steps during meetings"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "The capture habit",
+"f": "Writing ideas and tasks down the moment they appear"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "One trusted inbox",
+"f": "Keeping all incoming tasks in a few places you check regularly"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Paper or digital?",
+"f": "Choosing tools for notes and tasks that suit your style"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Choosing a task app",
+"f": "What to look for in a simple task manager"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Keeping tools simple",
+"f": "Why a few tools used well beat many tools used badly"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Your personal productivity system",
+"f": "Combining capture, lists, calendar and review into one flow"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Is this meeting needed?",
+"f": "Deciding when a meeting is worth it and when a message is better"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Preparing for meetings",
+"f": "Reading the agenda and knowing your goal before you join"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Being a great participant",
+"f": "Staying present, contributing and following up after meetings"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Running a short meeting",
+"f": "Agendas, timekeeping and clear outcomes for small meetings"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Stand-up meetings",
+"f": "Quick daily check-ins: done, doing and blocked"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Ending meetings with actions",
+"f": "Closing every meeting with owners and deadlines"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Working well with colleagues",
+"f": "Agreeing how and when to communicate for smooth teamwork"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Review: habits and meetings",
+"f": "A light recap of procrastination, habits, notes and meetings"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Focus fundamentals",
+"f": "Understanding attention as a limited resource"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Introduction to deep work",
+"f": "Long periods of distraction-free work on demanding tasks"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Shallow work",
+"f": "Recognising routine tasks and keeping them contained"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Scheduling deep work",
+"f": "Protecting regular blocks for concentrated effort"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Focus rituals",
+"f": "Small routines that tell your brain it is time to concentrate"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Music and focus",
+"f": "When background sound helps and when silence works better"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Do not disturb signals",
+"f": "Letting colleagues know when you are in focus mode"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Handling interruptions",
+"f": "Politely deferring requests that break your concentration"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Open-plan office tips",
+"f": "Staying focused in shared, noisy workspaces"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Working from home basics",
+"f": "Setting boundaries between home life and work"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "A home office routine",
+"f": "Starting and ending the workday clearly when you work remotely"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Remote communication",
+"f": "Choosing chat, email or a call for the right message"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Working in a café or shared space",
+"f": "Staying productive away from your usual desk"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Working while travelling",
+"f": "Planning tasks for trains, planes and hotel rooms"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Offline work time",
+"f": "Using offline periods for reading, thinking and writing"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Reading faster and smarter",
+"f": "Skimming, scanning and choosing what to read deeply"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Learning on the job",
+"f": "Building small daily learning habits at work"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Asking good questions at work",
+"f": "Saving time by asking clear, specific questions"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Getting unstuck",
+"f": "What to do when you are blocked on a task"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Asking for help early",
+"f": "Why raising issues early prevents bigger delays"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Giving clear instructions",
+"f": "Explaining tasks so others can complete them without confusion"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Checklists",
+"f": "Using checklists to avoid mistakes in repeated tasks"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Routines for recurring work",
+"f": "Turning weekly tasks into smooth, repeatable steps"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Keyboard shortcuts",
+"f": "Learning a few shortcuts that save time every day"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Text expanders",
+"f": "Typing common phrases with short abbreviations"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Search instead of sort",
+"f": "Using search to find files and emails quickly"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Noticing overload early",
+"f": "Spotting general signs that your workload is too heavy and slowing down"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Rest as part of productivity",
+"f": "Why time off makes you better at your work"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Celebrating small wins",
+"f": "Noticing progress to stay motivated"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: beginner graduation",
+"f": "A light recap of the first 120 days and choosing your next goals"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Welcome to intermediate",
+"f": "Moving from single tips to systems that support your whole workload"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Getting Things Done overview",
+"f": "The five steps of David Allen's GTD method"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "GTD: capture",
+"f": "Gathering every open loop into trusted collection points"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "GTD: clarify",
+"f": "Deciding what each item is and what its next action is"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "GTD: organise",
+"f": "Putting actions on the right lists and calendars"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "GTD: reflect",
+"f": "Reviewing your lists so you can trust your system"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "GTD: engage",
+"f": "Choosing what to do based on context, time and energy"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Context lists",
+"f": "Grouping tasks by place or tool, like computer or calls"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Waiting-for lists",
+"f": "Tracking work you are waiting on others to finish"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Someday maybe lists",
+"f": "Parking ideas you might pursue later without losing them"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "The weekly review",
+"f": "A regular check of projects, lists and calendar"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Your first weekly review",
+"f": "A step-by-step guided weekly review"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Projects versus tasks",
+"f": "Defining projects as outcomes that need several steps"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "A project list",
+"f": "Keeping all active projects visible in one place"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Project outcomes",
+"f": "Writing what done looks like for each project"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Kanban boards",
+"f": "Visualising work as to do, doing and done"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Limiting work in progress",
+"f": "Finishing tasks before starting new ones"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Personal Kanban in practice",
+"f": "Setting up a simple board for your own work"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Prioritisation frameworks",
+"f": "Comparing methods for deciding what matters most"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "The Pareto principle",
+"f": "How a small share of effort often drives most of the results"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Value versus effort",
+"f": "Plotting tasks by impact and effort to find quick wins"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "The ABCDE method",
+"f": "Ranking tasks by the consequences of doing or not doing them"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "The Ivy Lee method",
+"f": "Writing six tasks each evening and doing them in order the next day"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "The 1-3-5 rule",
+"f": "Planning one big, three medium and five small tasks a day"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Goals that guide work",
+"f": "How clear goals make daily decisions easier"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "SMART goals",
+"f": "Making goals specific, measurable, achievable, relevant and time-bound"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Objectives and key results",
+"f": "Setting an ambitious goal with measurable key results"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Linking goals to tasks",
+"f": "Connecting daily actions to bigger objectives"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Quarterly goals",
+"f": "Planning meaningful goals in three-month cycles"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Review: systems and goals",
+"f": "A light recap of GTD, Kanban, prioritisation and goals"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Delegation basics",
+"f": "Why delegating helps you and develops others"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "What to delegate",
+"f": "Choosing tasks others can do well or learn from"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "How to delegate clearly",
+"f": "Explaining the outcome, context, deadline and support available"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Following up on delegated work",
+"f": "Checking in without micromanaging"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Asynchronous communication",
+"f": "Working across schedules without constant meetings"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Writing for async teams",
+"f": "Writing messages complete enough that no follow-up is needed"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Status updates",
+"f": "Sharing progress in short, consistent updates"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Documentation habits",
+"f": "Writing down how things work so teams move faster"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Shared team calendars",
+"f": "Coordinating availability and deadlines across a team"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Team task boards",
+"f": "Making team work visible and shared"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Fewer, better team meetings",
+"f": "Reducing total meeting time across a team"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Meeting-free blocks",
+"f": "Agreeing on shared focus time with colleagues"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Decision logs",
+"f": "Recording decisions so they are not reopened again and again"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Handoffs between people",
+"f": "Passing work on without losing details"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Feedback that helps",
+"f": "Giving and receiving feedback that improves work"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Collaborative documents",
+"f": "Working on shared documents without chaos"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Tracking document versions",
+"f": "Keeping track of drafts and changes"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Communication norms",
+"f": "Agreeing on response times and channels in a team"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Chat etiquette",
+"f": "Using team chat clearly without creating noise"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Reducing chat overload",
+"f": "Managing channels and notifications in busy workplaces"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Energy management",
+"f": "Planning your day around physical, mental and emotional energy"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Ultradian rhythms",
+"f": "Working in natural cycles of focus and rest"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Task-energy matching",
+"f": "Doing creative work at high energy and admin at low energy"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Recovery during the workday",
+"f": "Micro-breaks and pauses that restore focus"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Handling a heavy week",
+"f": "Planning ahead when your workload peaks"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Managing overwhelm",
+"f": "Steps to regain control when everything feels urgent"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "The brain dump",
+"f": "Getting everything out of your head and onto paper"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "Triage",
+"f": "Quickly sorting a flood of tasks by urgency and impact"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Renegotiating commitments",
+"f": "Updating deadlines and promises when plans change"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Review: teams and energy",
+"f": "A light recap of delegation, async work and energy"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Personal knowledge management",
+"f": "Organising what you learn so you can use it later"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "The PARA method",
+"f": "Organising information into projects, areas, resources and archives"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Zettelkasten basics",
+"f": "Linking short notes to build connected knowledge"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Writing permanent notes",
+"f": "Summarising ideas in your own words"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Linking notes",
+"f": "Connecting related ideas for creativity and recall"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Reading notes",
+"f": "Capturing key insights from books and articles"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Progressive summarisation",
+"f": "Highlighting notes in layers to find the essentials fast"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Templates for repeat work",
+"f": "Creating templates for reports, plans and documents"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Standard operating procedures",
+"f": "Documenting step-by-step processes for recurring tasks"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Automation basics",
+"f": "Spotting repetitive tasks that tools could handle"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Simple automations",
+"f": "Using rules and shortcuts to automate small tasks"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Spreadsheet productivity",
+"f": "Formulas, filters and views that save time with data"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Calendar automation",
+"f": "Scheduling links and recurring events that save time"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Using AI tools wisely",
+"f": "Using assistants for drafts and summaries while checking the quality"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Digital minimalism at work",
+"f": "Keeping only the apps and tools that truly add value"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "The tool audit",
+"f": "Reviewing your apps and cutting the ones you do not need"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Focus apps and blockers",
+"f": "Using tools that limit distracting websites"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Screen time awareness",
+"f": "Measuring and adjusting your digital habits"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Paper planning revival",
+"f": "When a notebook or printed planner helps you focus"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Bullet journal basics",
+"f": "A flexible paper system for tasks, events and notes"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Project planning basics",
+"f": "Defining scope, milestones and deliverables"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Work breakdown structure",
+"f": "Splitting a project into manageable pieces"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Milestones",
+"f": "Setting checkpoints to track progress"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Timelines and Gantt charts",
+"f": "Visualising a project schedule over time"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Dependencies",
+"f": "Understanding which tasks must happen before others"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "The critical path",
+"f": "Finding the sequence of tasks that sets the length of a project"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Risks and buffers in projects",
+"f": "Planning for the things that might go wrong"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Tracking project progress",
+"f": "Simple ways to see whether a project is on track"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Project retrospectives",
+"f": "Reflecting on what worked and what to improve"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Review: knowledge and projects",
+"f": "A light recap of notes, automation and project planning"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Agile basics",
+"f": "Short cycles, feedback and continuous improvement"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Sprints",
+"f": "Working in fixed time boxes toward a clear goal"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Backlogs",
+"f": "Keeping an ordered list of future work"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Scrum roles in brief",
+"f": "A simple overview of product owner, team and facilitator"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Personal sprints",
+"f": "Applying sprints to your own projects"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Lean thinking",
+"f": "Reducing waste and focusing on value"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Kaizen",
+"f": "Making small, continuous improvements every day"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "The five whys",
+"f": "Finding the root cause of recurring problems"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Process mapping",
+"f": "Drawing how work flows to spot delays"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Removing bottlenecks",
+"f": "Finding and easing the slowest step in a process"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Decision making basics",
+"f": "Making good decisions faster and with less stress"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Reversible and irreversible decisions",
+"f": "Moving fast on easy-to-undo choices and carefully on the others"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Decision fatigue",
+"f": "Why many small choices drain energy and how to reduce them"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Defaults and routines",
+"f": "Pre-deciding recurring choices to save mental energy"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Pros, cons and weighting",
+"f": "Simple tools for comparing options"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Satisficing versus maximising",
+"f": "Knowing when good enough is the best choice"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Time-boxing decisions",
+"f": "Setting a time limit to avoid overthinking"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Creativity at work",
+"f": "Making space for ideas in a busy schedule"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Idea capture",
+"f": "Keeping a running list of ideas for later"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Brainstorming techniques",
+"f": "Methods for generating many ideas quickly"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Writing productively",
+"f": "Drafting first and editing later"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Faster presentations",
+"f": "Outlining your story before building slides"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Reports that get read",
+"f": "Putting the main point first"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Productive reading at work",
+"f": "Choosing what to read and taking useful notes"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Learning a new skill fast",
+"f": "Breaking skills into parts and practising them on purpose"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Deliberate practice",
+"f": "Focused practice with feedback to improve quickly"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Teaching to learn",
+"f": "Explaining what you learn to understand it better"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Mentors and peers",
+"f": "Learning faster from other people's experience"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Career growth habits",
+"f": "Small regular actions that build your professional future"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Review: methods and decisions",
+"f": "A light recap of agile, lean, decisions and learning"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Monthly reviews",
+"f": "Looking back on a month to adjust goals and habits"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Measuring what matters",
+"f": "Choosing a few useful indicators of progress"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Avoiding vanity metrics",
+"f": "Not confusing activity with results"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Personal dashboards",
+"f": "A simple overview of your goals and progress"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Reflection journaling",
+"f": "Writing briefly about your workday to learn from it"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Gratitude at work",
+"f": "Noticing what goes well to stay positive and motivated"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Practice week: deep work",
+"f": "A guided week of protected focus blocks"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Practice week: inbox control",
+"f": "A guided week of batching and processing email"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Practice week: planning",
+"f": "A guided week of daily and weekly planning rituals"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Review: intermediate graduation",
+"f": "A light recap of days 121 to 250 and setting your advanced goals"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Welcome to advanced",
+"f": "Designing systems, leading teams and sustaining high performance"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Designing your ideal week",
+"f": "Building a template week around priorities and energy"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Your productivity principles",
+"f": "Writing personal rules that guide daily choices"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Systems over goals",
+"f": "Why good systems make goals easier to reach"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Identity-based habits",
+"f": "Building habits around the person you want to become"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Environment design",
+"f": "Shaping your surroundings so good habits are the easy choice"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Friction and ease",
+"f": "Adding friction to unhelpful habits and removing it from good ones"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Flow state",
+"f": "The conditions that help you become fully absorbed in work"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Challenge and skill balance",
+"f": "Finding tasks that stretch you without overwhelming you"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Attention management",
+"f": "Directing your attention deliberately instead of reacting"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Attention residue",
+"f": "How unfinished tasks linger in the mind and reduce focus"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Context switching at scale",
+"f": "Designing days with fewer switches"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Maker and manager schedules",
+"f": "Balancing long creative blocks with meetings"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Protecting your calendar",
+"f": "Strategies to keep space for important work"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Office hours",
+"f": "Setting fixed times for questions to reduce interruptions"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Annual planning",
+"f": "Setting yearly themes and priorities"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "The yearly review",
+"f": "Looking back on the past year to learn and plan"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Balancing life areas",
+"f": "Making sure work fits well with the other parts of life"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Long-term career vision",
+"f": "Connecting daily work to where you want to be"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Review: designing your system",
+"f": "A light recap of ideal weeks, habits, flow and planning"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Leading productive teams",
+"f": "Creating the conditions for a team to do its best work"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Clear team priorities",
+"f": "Helping a team focus on what matters most"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Team goals and alignment",
+"f": "Linking individual work to shared objectives"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Removing team blockers",
+"f": "Spotting and clearing obstacles for others"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Psychological safety",
+"f": "Why people work better when they feel safe to speak up"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Effective one-to-ones",
+"f": "Regular conversations that support growth and progress"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Meeting design for leaders",
+"f": "Rethinking recurring meetings for a whole team"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Team rituals",
+"f": "Weekly and monthly routines that keep teams aligned"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Workload balance in teams",
+"f": "Distributing work fairly and sustainably"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Recognising good work",
+"f": "Showing appreciation to keep teams motivated"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Hiring with the work in mind",
+"f": "General ideas for describing roles clearly so new people fit the work"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Onboarding new colleagues",
+"f": "Helping newcomers become productive faster"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Knowledge sharing in teams",
+"f": "Building shared wikis and documentation habits"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Reducing team interruptions",
+"f": "Agreements that protect everyone's focus"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Remote team leadership",
+"f": "Leading people across places and time zones"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Hybrid work design",
+"f": "Balancing office and remote days for collaboration and focus"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Async-first teams",
+"f": "Building teams that rely mostly on written communication"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Time zone coordination",
+"f": "Making global teams work smoothly"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Team retrospectives",
+"f": "Regular reflection to improve how a team works"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Review: leading teams",
+"f": "A light recap of team priorities, safety, rituals and remote leadership"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Process improvement",
+"f": "Making work smoother step by step"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Measuring process time",
+"f": "Tracking how long work takes from start to finish"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Standardising best practices",
+"f": "Turning good ideas into shared standards"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Quality without perfectionism",
+"f": "Setting quality standards that are realistic"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Error prevention",
+"f": "Designing processes that make mistakes harder to make"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "A culture of improvement",
+"f": "Encouraging everyone to suggest improvements"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Automation strategy",
+"f": "Choosing which processes to automate first"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Productivity metrics for teams",
+"f": "Measuring outcomes, not just hours or activity"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Avoiding metric traps",
+"f": "How targets can distort behaviour"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Review: improving processes",
+"f": "A light recap of process improvement, quality and metrics"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Strategic thinking",
+"f": "Stepping back from daily tasks to see the bigger picture"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Thinking time",
+"f": "Scheduling regular time to think without interruptions"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Strategic prioritisation",
+"f": "Choosing which projects to stop, start and continue"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Saying no at scale",
+"f": "Helping an organisation focus by declining good ideas"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Opportunity cost",
+"f": "Understanding what you give up with every yes"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Essentialism",
+"f": "Doing fewer things, better"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Focus on outcomes",
+"f": "Measuring success by results rather than effort"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Priorities with stakeholders",
+"f": "Aligning expectations with many people at once"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Negotiating your workload",
+"f": "Discussing capacity and trade-offs with your manager"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Managing up for focus",
+"f": "Helping your manager understand your priorities"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Sustainable performance",
+"f": "Working at a pace you can keep up for years"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Protecting your energy",
+"f": "General habits that support energy and wellbeing at work"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Boundaries with technology",
+"f": "Deciding when you are reachable and when you are not"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "After-hours messages",
+"f": "Agreeing on norms for work messages outside working hours"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Holidays that truly recharge",
+"f": "Preparing so you can really disconnect on time off"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Returning from time off",
+"f": "Restarting smoothly after a break"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Mindful work",
+"f": "Bringing calm attention to everyday tasks"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Short breathing breaks",
+"f": "Simple pauses to reset focus and calm"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Pressure and productivity",
+"f": "How a moderate challenge helps and too much pressure gets in the way"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Resilience at work",
+"f": "Bouncing back from setbacks and busy periods"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Productivity thinkers",
+"f": "Ideas from well-known authors on work and focus"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Peter Drucker on effectiveness",
+"f": "Knowing where your time goes and focusing on your contribution"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Cal Newport on deep work",
+"f": "Key ideas about focus in a distracted world"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "James Clear on habits",
+"f": "Tiny changes and how habits compound over time"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Lessons from manufacturing",
+"f": "What lean production can teach office work"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Productivity across cultures",
+"f": "How work rhythms and breaks differ around the world"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Siesta, fika and work breaks",
+"f": "Cultural traditions of rest during the workday"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Working with international teams",
+"f": "Respecting different norms about time and communication"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Productivity myths",
+"f": "Common beliefs about productivity that do not hold up"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Review: strategy and sustainability",
+"f": "A light recap of strategic focus, wellbeing and key thinkers"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Your personal user manual",
+"f": "Writing down how you work best, for yourself and your colleagues"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "The advanced weekly review",
+"f": "Deepening your weekly review with reflection and planning"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Quarterly self-review",
+"f": "Assessing goals, habits and systems every three months"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Experimenting with your system",
+"f": "Testing changes to see what really works"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Running small experiments",
+"f": "Trying one change at a time with a clear way to measure it"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Simplifying your system",
+"f": "Removing steps that no longer add value"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Resetting after a busy season",
+"f": "Rebuilding your system after a chaotic period"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Productivity in a new job",
+"f": "Learning a new role quickly and getting organised early"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Productivity in a career change",
+"f": "Managing learning and work during a transition"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Side projects and focus",
+"f": "Balancing personal projects with your main work"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Freelancer productivity",
+"f": "Structuring your days when you manage your own time"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Managing multiple clients",
+"f": "Juggling projects for different people"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Methods for students and learners",
+"f": "Applying work methods to study and courses"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Work and family life",
+"f": "Balancing work tasks with responsibilities at home"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Teaching productivity to others",
+"f": "Sharing methods with colleagues and friends"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Coaching a colleague",
+"f": "Helping someone improve their work habits"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Building a short workshop",
+"f": "Designing a short productivity session for a team"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Measuring your year of progress",
+"f": "Comparing where you started with where you are now"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Capstone preparation",
+"f": "Choosing an area of your work to redesign in full"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Capstone: audit",
+"f": "Reviewing your current time, tools and habits"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Capstone: priorities",
+"f": "Defining the key outcomes your system must support"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Capstone: ideal week",
+"f": "Designing your new template week"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Capstone: tools and workflows",
+"f": "Choosing the simplest tool for each part of your system"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Capstone: focus plan",
+"f": "Planning deep work and your distraction rules"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Capstone: team agreements",
+"f": "Setting communication and meeting norms with others"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Capstone: habits",
+"f": "Choosing the daily and weekly habits that keep the system alive"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Capstone: review rhythm",
+"f": "Setting your daily, weekly and quarterly reviews"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Capstone: trial run",
+"f": "Testing your redesigned system for a week"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Capstone: reflection",
+"f": "Evaluating what worked and refining your system"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Review: the advanced journey",
+"f": "A light recap of the advanced skills from day 251 onward"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Your productivity toolkit",
+"f": "Collecting your favourite techniques and templates"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Habits for the long run",
+"f": "Keeping your system healthy for years to come"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Helping others grow",
+"f": "Sharing what you learned to help someone else get started"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Celebrating your progress",
+"f": "Looking back on how far your habits have come"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "A year of better work",
+"f": "A final reflection and your plan for the year ahead"
+}
+]
+}

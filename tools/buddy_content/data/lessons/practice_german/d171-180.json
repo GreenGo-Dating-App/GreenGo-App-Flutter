@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 171,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Relative clauses: accusative, dative",
+     "g": "Use relative pronouns in the accusative and dative: der Film, den ich sehe; die Frau, der ich helfe.",
+     "p": [
+      "Accusative: den, die, das, die: Der Film, den ich gestern gesehen habe, war super.",
+      "Dative: dem, der, dem, denen: Die Frau, der ich helfe, ist meine Nachbarin. Die Kinder, denen ...?",
+      "How to choose: Genus kommt vom Nomen, Kasus vom Verb im Relativsatz: sehen + Akk. → den; helfen + Dat. → der."
+     ],
+     "q": "Tell me about a film you have seen and a person you often help, using den and dem or der.",
+     "c": "Write six relative clauses: three accusative (den/die/das) and three dative (dem/der/denen)."
+    },
+    "de": {
+     "t": "Relativsätze: Akkusativ, Dativ",
+     "g": "Du benutzt Relativpronomen im Akkusativ und Dativ: der Film, den ich sehe; die Frau, der ich helfe.",
+     "p": [
+      "Akkusativ: den, die, das, die: Der Film, den ich gestern gesehen habe, war super.",
+      "Dativ: dem, der, dem, denen: Die Frau, der ich helfe, ist meine Nachbarin. Die Kinder, denen ...?",
+      "So wählst du: Genus kommt vom Nomen, Kasus vom Verb im Relativsatz: sehen + Akk. → den; helfen + Dat. → der."
+     ],
+     "q": "Erzähl von einem Film, den du gesehen hast, und einer Person, der du oft hilfst, mit den und dem oder der.",
+     "c": "Schreib sechs Relativsätze: drei im Akkusativ (den/die/das) und drei im Dativ (dem/der/denen)."
+    },
+    "es": {
+     "t": "Relativas: acusativo y dativo",
+     "g": "Usa pronombres relativos en acusativo y dativo: der Film, den ich sehe; die Frau, der ich helfe.",
+     "p": [
+      "Acusativo: den, die, das, die: Der Film, den ich gestern gesehen habe, war super.",
+      "Dativo: dem, der, dem, denen: Die Frau, der ich helfe, ist meine Nachbarin. Die Kinder, denen ...?",
+      "Cómo elegir: Genus kommt vom Nomen, Kasus vom Verb im Relativsatz: sehen + Akk. → den; helfen + Dat. → der."
+     ],
+     "q": "Háblame de una película que viste y de una persona a la que ayudas a menudo, con den y dem o der.",
+     "c": "Escribe seis oraciones de relativo: tres en acusativo (den/die/das) y tres en dativo (dem/der/denen)."
+    },
+    "fr": {
+     "t": "Les relatives : accusatif, datif",
+     "g": "Employer les pronoms relatifs à l'accusatif et au datif : der Film, den ich sehe ; die Frau, der ich helfe.",
+     "p": [
+      "Accusatif : den, die, das, die: Der Film, den ich gestern gesehen habe, war super.",
+      "Datif : dem, der, dem, denen: Die Frau, der ich helfe, ist meine Nachbarin. Die Kinder, denen ...?",
+      "Comment choisir : Genus kommt vom Nomen, Kasus vom Verb im Relativsatz: sehen + Akk. → den; helfen + Dat. → der."
+     ],
+     "q": "Parle-moi d'un film que tu as vu et d'une personne que tu aides souvent, avec den et dem ou der.",
+     "c": "Écris six relatives : trois à l'accusatif (den/die/das) et trois au datif (dem/der/denen)."
+    },
+    "it": {
+     "t": "Le relative: accusativo, dativo",
+     "g": "Usi i pronomi relativi all'accusativo e al dativo: der Film, den ich sehe; die Frau, der ich helfe.",
+     "p": [
+      "Accusativo: den, die, das, die: Der Film, den ich gestern gesehen habe, war super.",
+      "Dativo: dem, der, dem, denen: Die Frau, der ich helfe, ist meine Nachbarin. Die Kinder, denen ...?",
+      "Come scegliere: Genus kommt vom Nomen, Kasus vom Verb im Relativsatz: sehen + Akk. → den; helfen + Dat. → der."
+     ],
+     "q": "Parlami di un film che hai visto e di una persona che aiuti spesso, con den e dem o der.",
+     "c": "Scrivi sei frasi relative: tre all'accusativo (den/die/das) e tre al dativo (dem/der/denen)."
+    },
+    "pt": {
+     "t": "Relativas: acusativo e dativo",
+     "g": "Usar pronomes relativos no acusativo e no dativo: der Film, den ich sehe; die Frau, der ich helfe.",
+     "p": [
+      "Acusativo: den, die, das, die: Der Film, den ich gestern gesehen habe, war super.",
+      "Dativo: dem, der, dem, denen: Die Frau, der ich helfe, ist meine Nachbarin. Die Kinder, denen ...?",
+      "Como escolher: Genus kommt vom Nomen, Kasus vom Verb im Relativsatz: sehen + Akk. → den; helfen + Dat. → der."
+     ],
+     "q": "Fala-me de um filme que viste e de uma pessoa que ajudas muitas vezes, com den e dem ou der.",
+     "c": "Escreve seis orações relativas: três no acusativo (den/die/das) e três no dativo (dem/der/denen)."
+    },
+    "pt_BR": {
+     "t": "Relativas: acusativo e dativo",
+     "g": "Usar pronomes relativos no acusativo e no dativo: der Film, den ich sehe; die Frau, der ich helfe.",
+     "p": [
+      "Acusativo: den, die, das, die: Der Film, den ich gestern gesehen habe, war super.",
+      "Dativo: dem, der, dem, denen: Die Frau, der ich helfe, ist meine Nachbarin. Die Kinder, denen ...?",
+      "Como escolher: Genus kommt vom Nomen, Kasus vom Verb im Relativsatz: sehen + Akk. → den; helfen + Dat. → der."
+     ],
+     "q": "Me fale de um filme que você viu e de uma pessoa que você ajuda com frequência, com den e dem ou der.",
+     "c": "Escreva seis orações relativas: três no acusativo (den/die/das) e três no dativo (dem/der/denen)."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Film, den",
+      "ex": "Der Film, den wir gesehen haben, war lustig."
+     },
+     {
+      "w": "die Frau, der",
+      "ex": "Die Frau, der ich geholfen habe, war sehr dankbar."
+     },
+     {
+      "w": "das Buch, das",
+      "ex": "Das Buch, das du mir geschenkt hast, ist toll."
+     },
+     {
+      "w": "der Freund, dem",
+      "ex": "Das ist der Freund, dem ich alles erzähle."
+     },
+     {
+      "w": "die Leute, denen",
+      "ex": "Die Leute, denen das Haus gehört, sind nett."
+     },
+     {
+      "w": "mit dem",
+      "ex": "Das ist der Kollege, mit dem ich arbeite."
+     }
+    ],
+    "gram": "Relativpronomen Akk.: den, die, das, die. Dativ: dem, der, dem, denen. Präposition steht davor: der Kollege, mit dem ..."
+   }
+  },
+  {
+   "d": 172,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Describing a photo",
+     "g": "Describe a photo clearly with im Vordergrund, im Hintergrund, man sieht and es sieht so aus, als ob.",
+     "p": [
+      "Places in the photo: im Vordergrund, im Hintergrund, in der Mitte, links, rechts, oben, unten.",
+      "What you see: Auf dem Foto sieht man zwei Kinder. Sie spielen am Strand. Das Wetter ist sonnig.",
+      "Guessing: Vielleicht ist das ein Urlaub. Es sieht so aus, als ob sie glücklich wären. Ich glaube, es ist Sommer."
+     ],
+     "q": "Think of your favourite photo. Describe it to me: what is in the foreground, the background and the middle?",
+     "c": "Pick any photo on your phone and describe it in six sentences, with one guess using vielleicht or ich glaube."
+    },
+    "de": {
+     "t": "Ein Foto beschreiben",
+     "g": "Du beschreibst ein Foto klar mit im Vordergrund, im Hintergrund, man sieht und es sieht so aus, als ob.",
+     "p": [
+      "Orte im Bild: im Vordergrund, im Hintergrund, in der Mitte, links, rechts, oben, unten.",
+      "Was man sieht: Auf dem Foto sieht man zwei Kinder. Sie spielen am Strand. Das Wetter ist sonnig.",
+      "Vermuten: Vielleicht ist das ein Urlaub. Es sieht so aus, als ob sie glücklich wären. Ich glaube, es ist Sommer."
+     ],
+     "q": "Denk an dein Lieblingsfoto. Beschreib es mir: Was ist im Vordergrund, im Hintergrund und in der Mitte?",
+     "c": "Nimm ein Foto aus deinem Handy und beschreib es in sechs Sätzen, mit einer Vermutung mit vielleicht oder ich glaube."
+    },
+    "es": {
+     "t": "Describir una foto",
+     "g": "Describe una foto con im Vordergrund, im Hintergrund, man sieht y es sieht so aus, als ob.",
+     "p": [
+      "Lugares en la foto: im Vordergrund, im Hintergrund, in der Mitte, links, rechts, oben, unten.",
+      "Lo que se ve: Auf dem Foto sieht man zwei Kinder. Sie spielen am Strand. Das Wetter ist sonnig.",
+      "Suponer: Vielleicht ist das ein Urlaub. Es sieht so aus, als ob sie glücklich wären. Ich glaube, es ist Sommer."
+     ],
+     "q": "Piensa en tu foto favorita. Descríbemela: ¿qué hay en primer plano, al fondo y en el centro?",
+     "c": "Elige una foto de tu móvil y descríbela en seis frases, con una suposición con vielleicht o ich glaube."
+    },
+    "fr": {
+     "t": "Décrire une photo",
+     "g": "Décrire une photo avec im Vordergrund, im Hintergrund, man sieht et es sieht so aus, als ob.",
+     "p": [
+      "Places dans l'image : im Vordergrund, im Hintergrund, in der Mitte, links, rechts, oben, unten.",
+      "Ce qu'on voit : Auf dem Foto sieht man zwei Kinder. Sie spielen am Strand. Das Wetter ist sonnig.",
+      "Supposer : Vielleicht ist das ein Urlaub. Es sieht so aus, als ob sie glücklich wären. Ich glaube, es ist Sommer."
+     ],
+     "q": "Pense à ta photo préférée. Décris-la-moi : qu'y a-t-il au premier plan, à l'arrière-plan et au centre ?",
+     "c": "Choisis une photo de ton portable et décris-la en six phrases, avec une supposition avec vielleicht ou ich glaube."
+    },
+    "it": {
+     "t": "Descrivere una foto",
+     "g": "Descrivi una foto con im Vordergrund, im Hintergrund, man sieht ed es sieht so aus, als ob.",
+     "p": [
+      "Posizioni nella foto: im Vordergrund, im Hintergrund, in der Mitte, links, rechts, oben, unten.",
+      "Cosa si vede: Auf dem Foto sieht man zwei Kinder. Sie spielen am Strand. Das Wetter ist sonnig.",
+      "Supporre: Vielleicht ist das ein Urlaub. Es sieht so aus, als ob sie glücklich wären. Ich glaube, es ist Sommer."
+     ],
+     "q": "Pensa alla tua foto preferita. Descrivimela: che cosa c'è in primo piano, sullo sfondo e al centro?",
+     "c": "Scegli una foto del cellulare e descrivila in sei frasi, con un'ipotesi con vielleicht o ich glaube."
+    },
+    "pt": {
+     "t": "Descrever uma fotografia",
+     "g": "Descrever uma fotografia com im Vordergrund, im Hintergrund, man sieht e es sieht so aus, als ob.",
+     "p": [
+      "Lugares na foto: im Vordergrund, im Hintergrund, in der Mitte, links, rechts, oben, unten.",
+      "O que se vê: Auf dem Foto sieht man zwei Kinder. Sie spielen am Strand. Das Wetter ist sonnig.",
+      "Supor: Vielleicht ist das ein Urlaub. Es sieht so aus, als ob sie glücklich wären. Ich glaube, es ist Sommer."
+     ],
+     "q": "Pensa na tua fotografia preferida. Descreve-ma: o que está em primeiro plano, ao fundo e no meio?",
+     "c": "Escolhe uma fotografia do telemóvel e descreve-a em seis frases, com uma suposição com vielleicht ou ich glaube."
+    },
+    "pt_BR": {
+     "t": "Descrever uma foto",
+     "g": "Descrever uma foto com im Vordergrund, im Hintergrund, man sieht e es sieht so aus, als ob.",
+     "p": [
+      "Lugares na foto: im Vordergrund, im Hintergrund, in der Mitte, links, rechts, oben, unten.",
+      "O que se vê: Auf dem Foto sieht man zwei Kinder. Sie spielen am Strand. Das Wetter ist sonnig.",
+      "Supor: Vielleicht ist das ein Urlaub. Es sieht so aus, als ob sie glücklich wären. Ich glaube, es ist Sommer."
+     ],
+     "q": "Pense na sua foto favorita. Descreva para mim: o que está em primeiro plano, ao fundo e no meio?",
+     "c": "Escolha uma foto do celular e descreva em seis frases, com uma suposição com vielleicht ou ich glaube."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "im Vordergrund",
+      "ex": "Im Vordergrund sieht man einen Hund."
+     },
+     {
+      "w": "im Hintergrund",
+      "ex": "Im Hintergrund sind hohe Berge."
+     },
+     {
+      "w": "in der Mitte",
+      "ex": "In der Mitte steht ein großer Baum."
+     },
+     {
+      "w": "man sieht",
+      "ex": "Auf dem Bild sieht man eine Familie."
+     },
+     {
+      "w": "es sieht so aus, als ob",
+      "ex": "Es sieht so aus, als ob es gleich regnet."
+     },
+     {
+      "w": "vielleicht",
+      "ex": "Vielleicht feiern sie einen Geburtstag."
+     }
+    ],
+    "gram": "Ort mit Dativ: im Vordergrund, auf dem Foto. Als ob + Verb am Ende, oft mit Konjunktiv II: als ob sie müde wären."
+   }
+  },
+  {
+   "d": 173,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Narrating a trip",
+     "g": "Tell a full travel story with Perfekt, Präteritum and connectors like zuerst, dann, danach and zum Schluss.",
+     "p": [
+      "Structure: Zuerst sind wir nach Salzburg gefahren. Dann haben wir die Altstadt besichtigt. Danach ... Zum Schluss ...",
+      "Mixing tenses: Perfekt für Aktionen, Präteritum bei sein, haben, Modalverben: Es war heiß. Wir hatten Glück. Wir mussten warten.",
+      "Feelings: Am besten hat mir ... gefallen. Leider ... Das war ein unvergesslicher Tag!"
+     ],
+     "q": "Tell me about your best trip: where you went, three things you did in order, and the best moment.",
+     "c": "Write a travel story of eight sentences with four connectors, war and hatte, and two Perfekt verbs with sein."
+    },
+    "de": {
+     "t": "Eine Reise erzählen",
+     "g": "Du erzählst eine ganze Reisegeschichte mit Perfekt, Präteritum und zuerst, dann, danach, zum Schluss.",
+     "p": [
+      "Aufbau: Zuerst sind wir nach Salzburg gefahren. Dann haben wir die Altstadt besichtigt. Danach ... Zum Schluss ...",
+      "Zeiten mischen: Perfekt für Aktionen, Präteritum bei sein, haben, Modalverben: Es war heiß. Wir hatten Glück. Wir mussten warten.",
+      "Gefühle: Am besten hat mir ... gefallen. Leider ... Das war ein unvergesslicher Tag!"
+     ],
+     "q": "Erzähl von deiner schönsten Reise: wohin, drei Dinge in der richtigen Reihenfolge und der beste Moment.",
+     "c": "Schreib eine Reisegeschichte mit acht Sätzen, vier Konnektoren, war und hatte und zwei Perfektverben mit sein."
+    },
+    "es": {
+     "t": "Contar un viaje",
+     "g": "Cuenta un viaje completo con Perfekt, Präteritum y conectores como zuerst, dann, danach y zum Schluss.",
+     "p": [
+      "Estructura: Zuerst sind wir nach Salzburg gefahren. Dann haben wir die Altstadt besichtigt. Danach ... Zum Schluss ...",
+      "Mezclar tiempos: Perfekt für Aktionen, Präteritum bei sein, haben, Modalverben: Es war heiß. Wir hatten Glück. Wir mussten warten.",
+      "Sensaciones: Am besten hat mir ... gefallen. Leider ... Das war ein unvergesslicher Tag!"
+     ],
+     "q": "Cuéntame tu mejor viaje: adónde fuiste, tres cosas que hiciste en orden y el mejor momento.",
+     "c": "Escribe un relato de viaje de ocho frases con cuatro conectores, war y hatte y dos verbos en Perfekt con sein."
+    },
+    "fr": {
+     "t": "Raconter un voyage",
+     "g": "Raconter tout un voyage avec Perfekt, Präteritum et des connecteurs : zuerst, dann, danach, zum Schluss.",
+     "p": [
+      "Structure : Zuerst sind wir nach Salzburg gefahren. Dann haben wir die Altstadt besichtigt. Danach ... Zum Schluss ...",
+      "Mélanger les temps : Perfekt für Aktionen, Präteritum bei sein, haben, Modalverben: Es war heiß. Wir hatten Glück. Wir mussten warten.",
+      "Impressions : Am besten hat mir ... gefallen. Leider ... Das war ein unvergesslicher Tag!"
+     ],
+     "q": "Raconte-moi ton plus beau voyage : où tu es allé, trois choses dans l'ordre et le meilleur moment.",
+     "c": "Écris un récit de voyage de huit phrases avec quatre connecteurs, war et hatte et deux verbes au Perfekt avec sein."
+    },
+    "it": {
+     "t": "Raccontare un viaggio",
+     "g": "Racconti un viaggio completo con Perfekt, Präteritum e connettivi come zuerst, dann, danach e zum Schluss.",
+     "p": [
+      "Struttura: Zuerst sind wir nach Salzburg gefahren. Dann haben wir die Altstadt besichtigt. Danach ... Zum Schluss ...",
+      "Mischiare i tempi: Perfekt für Aktionen, Präteritum bei sein, haben, Modalverben: Es war heiß. Wir hatten Glück. Wir mussten warten.",
+      "Sensazioni: Am besten hat mir ... gefallen. Leider ... Das war ein unvergesslicher Tag!"
+     ],
+     "q": "Raccontami il tuo viaggio più bello: dove sei andato, tre cose in ordine e il momento migliore.",
+     "c": "Scrivi un racconto di viaggio di otto frasi con quattro connettivi, war e hatte e due verbi al Perfekt con sein."
+    },
+    "pt": {
+     "t": "Contar uma viagem",
+     "g": "Contar uma viagem completa com Perfekt, Präteritum e conectores como zuerst, dann, danach e zum Schluss.",
+     "p": [
+      "Estrutura: Zuerst sind wir nach Salzburg gefahren. Dann haben wir die Altstadt besichtigt. Danach ... Zum Schluss ...",
+      "Misturar tempos: Perfekt für Aktionen, Präteritum bei sein, haben, Modalverben: Es war heiß. Wir hatten Glück. Wir mussten warten.",
+      "Sensações: Am besten hat mir ... gefallen. Leider ... Das war ein unvergesslicher Tag!"
+     ],
+     "q": "Conta-me a tua melhor viagem: para onde foste, três coisas por ordem e o melhor momento.",
+     "c": "Escreve uma história de viagem de oito frases com quatro conectores, war e hatte e dois verbos no Perfekt com sein."
+    },
+    "pt_BR": {
+     "t": "Contar uma viagem",
+     "g": "Contar uma viagem completa com Perfekt, Präteritum e conectivos como zuerst, dann, danach e zum Schluss.",
+     "p": [
+      "Estrutura: Zuerst sind wir nach Salzburg gefahren. Dann haben wir die Altstadt besichtigt. Danach ... Zum Schluss ...",
+      "Misturar tempos: Perfekt für Aktionen, Präteritum bei sein, haben, Modalverben: Es war heiß. Wir hatten Glück. Wir mussten warten.",
+      "Sensações: Am besten hat mir ... gefallen. Leider ... Das war ein unvergesslicher Tag!"
+     ],
+     "q": "Me conte sua melhor viagem: para onde foi, três coisas em ordem e o melhor momento.",
+     "c": "Escreva uma história de viagem de oito frases com quatro conectivos, war e hatte e dois verbos no Perfekt com sein."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "zuerst",
+      "ex": "Zuerst haben wir das Hotel gesucht."
+     },
+     {
+      "w": "danach",
+      "ex": "Danach sind wir am Fluss spazieren gegangen."
+     },
+     {
+      "w": "zum Schluss",
+      "ex": "Zum Schluss haben wir Souvenirs gekauft."
+     },
+     {
+      "w": "besichtigen",
+      "ex": "Wir haben den Dom besichtigt."
+     },
+     {
+      "w": "unvergesslich",
+      "ex": "Die Reise war unvergesslich."
+     },
+     {
+      "w": "Glück haben",
+      "ex": "Wir hatten Glück mit dem Wetter."
+     }
+    ],
+    "gram": "Nach zuerst, dann, danach steht das Verb an Position 2: Dann sind wir ... Mündlich Perfekt, aber war, hatte, musste."
+   }
+  },
+  {
+   "d": 174,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Plusquamperfekt",
+     "g": "Use the Plusquamperfekt for the past before the past: Ich hatte schon gegessen.",
+     "p": [
+      "Form: hatte oder war (Präteritum) + Partizip II: ich hatte gegessen, ich war gefahren.",
+      "Use: Als ich ankam, war der Zug schon abgefahren. (zuerst Zug weg, dann ich da)",
+      "haben or sein: Wie im Perfekt: Bewegung mit sein: Sie war schon gegangen. Sonst mit haben: Er hatte es vergessen."
+     ],
+     "q": "Tell me about a time you arrived too late for something. What had already happened when you arrived?",
+     "c": "Write four sentences with als + Präteritum and a main clause in the Plusquamperfekt, two with hatte, two with war."
+    },
+    "de": {
+     "t": "Plusquamperfekt",
+     "g": "Du benutzt das Plusquamperfekt für die Vorvergangenheit: Ich hatte schon gegessen.",
+     "p": [
+      "Form: hatte oder war (Präteritum) + Partizip II: ich hatte gegessen, ich war gefahren.",
+      "Gebrauch: Als ich ankam, war der Zug schon abgefahren. (zuerst Zug weg, dann ich da)",
+      "haben oder sein: Wie im Perfekt: Bewegung mit sein: Sie war schon gegangen. Sonst mit haben: Er hatte es vergessen."
+     ],
+     "q": "Erzähl von einem Moment, als du zu spät warst. Was war schon passiert, als du ankamst?",
+     "c": "Schreib vier Sätze mit als + Präteritum und Hauptsatz im Plusquamperfekt, zwei mit hatte, zwei mit war."
+    },
+    "es": {
+     "t": "El Plusquamperfekt",
+     "g": "Usa el Plusquamperfekt para el pasado anterior a otro pasado: Ich hatte schon gegessen.",
+     "p": [
+      "Forma: hatte oder war (Präteritum) + Partizip II: ich hatte gegessen, ich war gefahren.",
+      "Uso: Als ich ankam, war der Zug schon abgefahren. (zuerst Zug weg, dann ich da)",
+      "haben o sein: Wie im Perfekt: Bewegung mit sein: Sie war schon gegangen. Sonst mit haben: Er hatte es vergessen."
+     ],
+     "q": "Cuéntame una vez que llegaste tarde a algo. ¿Qué había pasado ya cuando llegaste?",
+     "c": "Escribe cuatro frases con als + Präteritum y principal en Plusquamperfekt, dos con hatte y dos con war."
+    },
+    "fr": {
+     "t": "Le Plusquamperfekt",
+     "g": "Utiliser le Plusquamperfekt pour un passé antérieur à un autre : Ich hatte schon gegessen.",
+     "p": [
+      "Forme : hatte oder war (Präteritum) + Partizip II: ich hatte gegessen, ich war gefahren.",
+      "Emploi : Als ich ankam, war der Zug schon abgefahren. (zuerst Zug weg, dann ich da)",
+      "haben ou sein : Wie im Perfekt: Bewegung mit sein: Sie war schon gegangen. Sonst mit haben: Er hatte es vergessen."
+     ],
+     "q": "Raconte une fois où tu es arrivé trop tard. Que s'était-il déjà passé quand tu es arrivé ?",
+     "c": "Écris quatre phrases avec als + Präteritum et principale au Plusquamperfekt, deux avec hatte, deux avec war."
+    },
+    "it": {
+     "t": "Il Plusquamperfekt",
+     "g": "Usi il Plusquamperfekt per il passato prima del passato: Ich hatte schon gegessen.",
+     "p": [
+      "Forma: hatte oder war (Präteritum) + Partizip II: ich hatte gegessen, ich war gefahren.",
+      "Uso: Als ich ankam, war der Zug schon abgefahren. (zuerst Zug weg, dann ich da)",
+      "haben o sein: Wie im Perfekt: Bewegung mit sein: Sie war schon gegangen. Sonst mit haben: Er hatte es vergessen."
+     ],
+     "q": "Raccontami una volta in cui sei arrivato tardi. Che cosa era già successo quando sei arrivato?",
+     "c": "Scrivi quattro frasi con als + Präteritum e principale al Plusquamperfekt, due con hatte e due con war."
+    },
+    "pt": {
+     "t": "O Plusquamperfekt",
+     "g": "Usar o Plusquamperfekt para o passado antes do passado: Ich hatte schon gegessen.",
+     "p": [
+      "Forma: hatte oder war (Präteritum) + Partizip II: ich hatte gegessen, ich war gefahren.",
+      "Uso: Als ich ankam, war der Zug schon abgefahren. (zuerst Zug weg, dann ich da)",
+      "haben ou sein: Wie im Perfekt: Bewegung mit sein: Sie war schon gegangen. Sonst mit haben: Er hatte es vergessen."
+     ],
+     "q": "Conta-me uma vez em que chegaste tarde. O que já tinha acontecido quando chegaste?",
+     "c": "Escreve quatro frases com als + Präteritum e principal no Plusquamperfekt, duas com hatte e duas com war."
+    },
+    "pt_BR": {
+     "t": "O Plusquamperfekt",
+     "g": "Usar o Plusquamperfekt para o passado anterior a outro: Ich hatte schon gegessen.",
+     "p": [
+      "Forma: hatte oder war (Präteritum) + Partizip II: ich hatte gegessen, ich war gefahren.",
+      "Uso: Als ich ankam, war der Zug schon abgefahren. (zuerst Zug weg, dann ich da)",
+      "haben ou sein: Wie im Perfekt: Bewegung mit sein: Sie war schon gegangen. Sonst mit haben: Er hatte es vergessen."
+     ],
+     "q": "Me conte uma vez em que você chegou atrasado. O que já tinha acontecido quando você chegou?",
+     "c": "Escreva quatro frases com als + Präteritum e principal no Plusquamperfekt, duas com hatte e duas com war."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "hatte ... gegessen",
+      "ex": "Ich hatte schon gegessen, als er anrief."
+     },
+     {
+      "w": "war ... abgefahren",
+      "ex": "Der Bus war schon abgefahren."
+     },
+     {
+      "w": "hatte ... vergessen",
+      "ex": "Sie hatte ihren Schlüssel zu Hause vergessen."
+     },
+     {
+      "w": "war ... gegangen",
+      "ex": "Als wir kamen, war er schon gegangen."
+     },
+     {
+      "w": "schon",
+      "ex": "Der Film hatte schon angefangen."
+     },
+     {
+      "w": "noch nie",
+      "ex": "Ich war vorher noch nie in Hamburg gewesen."
+     }
+    ],
+    "gram": "Plusquamperfekt = hatte/war + Partizip II. Es zeigt, was vor einer anderen Handlung in der Vergangenheit passiert war."
+   }
+  },
+  {
+   "d": 175,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Nachdem and bevor",
+     "g": "Put events in order with nachdem (+ Plusquamperfekt) and bevor.",
+     "p": [
+      "nachdem: Nachdem ich gegessen hatte, ging ich spazieren. (Nebensatz: Plusquamperfekt, Hauptsatz: Präteritum)",
+      "bevor: Bevor ich ins Bett gehe, lese ich. Bevor wir losfuhren, tankten wir. (gleiche Zeit in beiden Teilen)",
+      "Word order: Verb am Ende des Nebensatzes; beginnt der Satz mit dem Nebensatz, kommt dann das Verb: ..., ging ich."
+     ],
+     "q": "What do you do before you go to bed, and what did you do yesterday after you had finished work or class?",
+     "c": "Tell your yesterday in four sentences: two starting with nachdem + Plusquamperfekt and two with bevor."
+    },
+    "de": {
+     "t": "Nachdem und bevor",
+     "g": "Du ordnest Ereignisse mit nachdem (+ Plusquamperfekt) und bevor.",
+     "p": [
+      "nachdem: Nachdem ich gegessen hatte, ging ich spazieren. (Nebensatz: Plusquamperfekt, Hauptsatz: Präteritum)",
+      "bevor: Bevor ich ins Bett gehe, lese ich. Bevor wir losfuhren, tankten wir. (gleiche Zeit in beiden Teilen)",
+      "Satzstellung: Verb am Ende des Nebensatzes; beginnt der Satz mit dem Nebensatz, kommt dann das Verb: ..., ging ich."
+     ],
+     "q": "Was machst du, bevor du ins Bett gehst, und was hast du gestern gemacht, nachdem du fertig warst?",
+     "c": "Erzähl deinen gestrigen Tag in vier Sätzen: zwei mit nachdem + Plusquamperfekt und zwei mit bevor."
+    },
+    "es": {
+     "t": "Nachdem y bevor",
+     "g": "Ordena acontecimientos con nachdem (+ Plusquamperfekt) y bevor.",
+     "p": [
+      "nachdem: Nachdem ich gegessen hatte, ging ich spazieren. (Nebensatz: Plusquamperfekt, Hauptsatz: Präteritum)",
+      "bevor: Bevor ich ins Bett gehe, lese ich. Bevor wir losfuhren, tankten wir. (gleiche Zeit in beiden Teilen)",
+      "Orden: Verb am Ende des Nebensatzes; beginnt der Satz mit dem Nebensatz, kommt dann das Verb: ..., ging ich."
+     ],
+     "q": "¿Qué haces antes de acostarte y qué hiciste ayer después de terminar el trabajo o las clases?",
+     "c": "Cuenta tu día de ayer en cuatro frases: dos con nachdem + Plusquamperfekt y dos con bevor."
+    },
+    "fr": {
+     "t": "Nachdem et bevor",
+     "g": "Ordonner des événements avec nachdem (+ Plusquamperfekt) et bevor.",
+     "p": [
+      "nachdem : Nachdem ich gegessen hatte, ging ich spazieren. (Nebensatz: Plusquamperfekt, Hauptsatz: Präteritum)",
+      "bevor : Bevor ich ins Bett gehe, lese ich. Bevor wir losfuhren, tankten wir. (gleiche Zeit in beiden Teilen)",
+      "Ordre des mots : Verb am Ende des Nebensatzes; beginnt der Satz mit dem Nebensatz, kommt dann das Verb: ..., ging ich."
+     ],
+     "q": "Que fais-tu avant d'aller te coucher, et qu'as-tu fait hier après avoir fini le travail ou les cours ?",
+     "c": "Raconte ta journée d'hier en quatre phrases : deux avec nachdem + Plusquamperfekt et deux avec bevor."
+    },
+    "it": {
+     "t": "Nachdem e bevor",
+     "g": "Metti in ordine gli eventi con nachdem (+ Plusquamperfekt) e bevor.",
+     "p": [
+      "nachdem: Nachdem ich gegessen hatte, ging ich spazieren. (Nebensatz: Plusquamperfekt, Hauptsatz: Präteritum)",
+      "bevor: Bevor ich ins Bett gehe, lese ich. Bevor wir losfuhren, tankten wir. (gleiche Zeit in beiden Teilen)",
+      "Ordine: Verb am Ende des Nebensatzes; beginnt der Satz mit dem Nebensatz, kommt dann das Verb: ..., ging ich."
+     ],
+     "q": "Che cosa fai prima di andare a letto e che cosa hai fatto ieri dopo aver finito lavoro o lezioni?",
+     "c": "Racconta la tua giornata di ieri in quattro frasi: due con nachdem + Plusquamperfekt e due con bevor."
+    },
+    "pt": {
+     "t": "Nachdem e bevor",
+     "g": "Ordenar acontecimentos com nachdem (+ Plusquamperfekt) e bevor.",
+     "p": [
+      "nachdem: Nachdem ich gegessen hatte, ging ich spazieren. (Nebensatz: Plusquamperfekt, Hauptsatz: Präteritum)",
+      "bevor: Bevor ich ins Bett gehe, lese ich. Bevor wir losfuhren, tankten wir. (gleiche Zeit in beiden Teilen)",
+      "Ordem: Verb am Ende des Nebensatzes; beginnt der Satz mit dem Nebensatz, kommt dann das Verb: ..., ging ich."
+     ],
+     "q": "O que fazes antes de te deitares e o que fizeste ontem depois de acabares o trabalho ou as aulas?",
+     "c": "Conta o teu dia de ontem em quatro frases: duas com nachdem + Plusquamperfekt e duas com bevor."
+    },
+    "pt_BR": {
+     "t": "Nachdem e bevor",
+     "g": "Ordenar acontecimentos com nachdem (+ Plusquamperfekt) e bevor.",
+     "p": [
+      "nachdem: Nachdem ich gegessen hatte, ging ich spazieren. (Nebensatz: Plusquamperfekt, Hauptsatz: Präteritum)",
+      "bevor: Bevor ich ins Bett gehe, lese ich. Bevor wir losfuhren, tankten wir. (gleiche Zeit in beiden Teilen)",
+      "Ordem: Verb am Ende des Nebensatzes; beginnt der Satz mit dem Nebensatz, kommt dann das Verb: ..., ging ich."
+     ],
+     "q": "O que você faz antes de dormir e o que fez ontem depois de terminar o trabalho ou as aulas?",
+     "c": "Conte seu dia de ontem em quatro frases: duas com nachdem + Plusquamperfekt e duas com bevor."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "nachdem",
+      "ex": "Nachdem wir gefrühstückt hatten, gingen wir los."
+     },
+     {
+      "w": "bevor",
+      "ex": "Bevor ich koche, kaufe ich ein."
+     },
+     {
+      "w": "losfahren",
+      "ex": "Bevor wir losfuhren, packten wir das Auto."
+     },
+     {
+      "w": "fertig sein",
+      "ex": "Nachdem ich fertig war, rief ich dich an."
+     },
+     {
+      "w": "ankommen",
+      "ex": "Nachdem der Zug angekommen war, regnete es."
+     },
+     {
+      "w": "sich die Hände waschen",
+      "ex": "Bevor man isst, wäscht man sich die Hände."
+     }
+    ],
+    "gram": "Nachdem + Plusquamperfekt, Hauptsatz Präteritum: Nachdem er gegessen hatte, schlief er. Bevor: gleiche Zeit. Verb am Ende."
+   }
+  },
+  {
+   "d": 176,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Listening tips for real German",
+     "g": "Learn strategies for fast speech, accents and swallowed endings in real German.",
+     "p": [
+      "Short forms: Hast du → haste, ich habe → ich hab, gibt es → gibt's, nicht → nich, ein → 'n.",
+      "Strategies: Zuerst das Thema verstehen, dann Schlüsselwörter suchen. Nicht jedes Wort ist wichtig.",
+      "Practice: Podcasts mit Transkript, Serien mit deutschen Untertiteln, kurze Stücke mehrmals hören."
+     ],
+     "q": "What is hardest for you when you listen to German: speed, accents or new words? What helps you?",
+     "c": "Listen to one minute of German audio three times and write down five key words and the topic."
+    },
+    "de": {
+     "t": "Hörtipps für echtes Deutsch",
+     "g": "Du lernst Strategien für schnelles Sprechen, Akzente und verschluckte Endungen im echten Deutsch.",
+     "p": [
+      "Kurzformen: Hast du → haste, ich habe → ich hab, gibt es → gibt's, nicht → nich, ein → 'n.",
+      "Strategien: Zuerst das Thema verstehen, dann Schlüsselwörter suchen. Nicht jedes Wort ist wichtig.",
+      "Üben: Podcasts mit Transkript, Serien mit deutschen Untertiteln, kurze Stücke mehrmals hören."
+     ],
+     "q": "Was ist für dich beim Hören am schwersten: das Tempo, Akzente oder neue Wörter? Was hilft dir?",
+     "c": "Hör eine Minute deutsches Audio dreimal und schreib fünf Schlüsselwörter und das Thema auf."
+    },
+    "es": {
+     "t": "Consejos para entender alemán real",
+     "g": "Aprende estrategias para el habla rápida, los acentos y las terminaciones que se tragan en alemán.",
+     "p": [
+      "Formas cortas: Hast du → haste, ich habe → ich hab, gibt es → gibt's, nicht → nich, ein → 'n.",
+      "Estrategias: Zuerst das Thema verstehen, dann Schlüsselwörter suchen. Nicht jedes Wort ist wichtig.",
+      "Práctica: Podcasts mit Transkript, Serien mit deutschen Untertiteln, kurze Stücke mehrmals hören."
+     ],
+     "q": "¿Qué te cuesta más al escuchar alemán: la velocidad, los acentos o las palabras nuevas? ¿Qué te ayuda?",
+     "c": "Escucha un minuto de audio en alemán tres veces y anota cinco palabras clave y el tema."
+    },
+    "fr": {
+     "t": "Astuces pour comprendre l'allemand réel",
+     "g": "Apprendre des stratégies face au débit rapide, aux accents et aux fins de mots avalées.",
+     "p": [
+      "Formes réduites : Hast du → haste, ich habe → ich hab, gibt es → gibt's, nicht → nich, ein → 'n.",
+      "Stratégies : Zuerst das Thema verstehen, dann Schlüsselwörter suchen. Nicht jedes Wort ist wichtig.",
+      "Pratique : Podcasts mit Transkript, Serien mit deutschen Untertiteln, kurze Stücke mehrmals hören."
+     ],
+     "q": "Qu'est-ce qui est le plus dur quand tu écoutes l'allemand : le débit, les accents ou les mots nouveaux ?",
+     "c": "Écoute une minute d'audio en allemand trois fois et note cinq mots clés et le thème."
+    },
+    "it": {
+     "t": "Consigli per capire il tedesco vero",
+     "g": "Impari strategie per il parlato veloce, gli accenti e le desinenze mangiate del tedesco vero.",
+     "p": [
+      "Forme brevi: Hast du → haste, ich habe → ich hab, gibt es → gibt's, nicht → nich, ein → 'n.",
+      "Strategie: Zuerst das Thema verstehen, dann Schlüsselwörter suchen. Nicht jedes Wort ist wichtig.",
+      "Pratica: Podcasts mit Transkript, Serien mit deutschen Untertiteln, kurze Stücke mehrmals hören."
+     ],
+     "q": "Che cosa ti è più difficile quando ascolti il tedesco: la velocità, gli accenti o le parole nuove?",
+     "c": "Ascolta un minuto di audio in tedesco tre volte e annota cinque parole chiave e l'argomento."
+    },
+    "pt": {
+     "t": "Dicas para ouvir alemão real",
+     "g": "Aprender estratégias para a fala rápida, os sotaques e as terminações engolidas do alemão real.",
+     "p": [
+      "Formas curtas: Hast du → haste, ich habe → ich hab, gibt es → gibt's, nicht → nich, ein → 'n.",
+      "Estratégias: Zuerst das Thema verstehen, dann Schlüsselwörter suchen. Nicht jedes Wort ist wichtig.",
+      "Prática: Podcasts mit Transkript, Serien mit deutschen Untertiteln, kurze Stücke mehrmals hören."
+     ],
+     "q": "O que te custa mais quando ouves alemão: a velocidade, os sotaques ou as palavras novas? O que te ajuda?",
+     "c": "Ouve um minuto de áudio em alemão três vezes e aponta cinco palavras-chave e o tema."
+    },
+    "pt_BR": {
+     "t": "Dicas para ouvir alemão de verdade",
+     "g": "Aprender estratégias para a fala rápida, os sotaques e as terminações engolidas do alemão de verdade.",
+     "p": [
+      "Formas curtas: Hast du → haste, ich habe → ich hab, gibt es → gibt's, nicht → nich, ein → 'n.",
+      "Estratégias: Zuerst das Thema verstehen, dann Schlüsselwörter suchen. Nicht jedes Wort ist wichtig.",
+      "Prática: Podcasts mit Transkript, Serien mit deutschen Untertiteln, kurze Stücke mehrmals hören."
+     ],
+     "q": "O que é mais difícil para você ao ouvir alemão: a velocidade, os sotaques ou as palavras novas?",
+     "c": "Ouça um minuto de áudio em alemão três vezes e anote cinco palavras-chave e o tema."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "das Schlüsselwort",
+      "ex": "Ich achte zuerst auf die Schlüsselwörter."
+     },
+     {
+      "w": "der Akzent",
+      "ex": "Sie spricht mit einem bayerischen Akzent."
+     },
+     {
+      "w": "schnell sprechen",
+      "ex": "Er spricht so schnell, ich verstehe nur die Hälfte."
+     },
+     {
+      "w": "der Podcast",
+      "ex": "Ich höre jeden Morgen einen Podcast auf Deutsch."
+     },
+     {
+      "w": "mehrmals",
+      "ex": "Ich höre das Lied mehrmals."
+     },
+     {
+      "w": "gibt's",
+      "ex": "Was gibt's Neues?"
+     }
+    ],
+    "gram": "Gesprochen fällt oft -e weg: ich hab, ich geh. Es wird zu 's: gibt's, wie geht's. Hast du → haste (sehr locker)."
+   }
+  },
+  {
+   "d": 177,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "German false friends",
+     "g": "Avoid traps with false friends like bekommen, Gift, Handy, aktuell and Chef.",
+     "p": [
+      "Classic traps: bekommen = erhalten (nicht werden). das Gift = giftige Substanz (Geschenk heißt das Geschenk).",
+      "More: das Handy = Mobiltelefon. aktuell = gerade jetzt, neu. der Chef = die Chefin/der Boss bei der Arbeit, nicht der Koch.",
+      "Tip: Lern solche Wörter immer in einem Satz: Ich bekomme ein Geschenk. Mein Chef ist nett."
+     ],
+     "q": "Which German word has confused you because it looks like a word in your language? Tell me what happened.",
+     "c": "Write five correct sentences, one each with bekommen, Gift, Handy, aktuell and Chef in their German meaning."
+    },
+    "de": {
+     "t": "Falsche Freunde im Deutschen",
+     "g": "Du vermeidest Fallen mit falschen Freunden wie bekommen, Gift, Handy, aktuell und Chef.",
+     "p": [
+      "Klassische Fallen: bekommen = erhalten (nicht werden). das Gift = giftige Substanz (Geschenk heißt das Geschenk).",
+      "Mehr: das Handy = Mobiltelefon. aktuell = gerade jetzt, neu. der Chef = die Chefin/der Boss bei der Arbeit, nicht der Koch.",
+      "Tipp: Lern solche Wörter immer in einem Satz: Ich bekomme ein Geschenk. Mein Chef ist nett."
+     ],
+     "q": "Welches deutsche Wort hat dich verwirrt, weil es wie ein Wort in deiner Sprache aussieht? Was ist passiert?",
+     "c": "Schreib fünf richtige Sätze, je einen mit bekommen, Gift, Handy, aktuell und Chef in der deutschen Bedeutung."
+    },
+    "es": {
+     "t": "Falsos amigos del alemán",
+     "g": "Evita trampas con falsos amigos como bekommen, Gift, Handy, aktuell y Chef.",
+     "p": [
+      "Trampas clásicas: bekommen = erhalten (nicht werden). das Gift = giftige Substanz (Geschenk heißt das Geschenk).",
+      "Más: das Handy = Mobiltelefon. aktuell = gerade jetzt, neu. der Chef = die Chefin/der Boss bei der Arbeit, nicht der Koch.",
+      "Consejo: Lern solche Wörter immer in einem Satz: Ich bekomme ein Geschenk. Mein Chef ist nett."
+     ],
+     "q": "¿Qué palabra alemana te ha confundido por parecerse a una de tu idioma? ¿Qué pasó?",
+     "c": "Escribe cinco frases correctas, una con cada palabra: bekommen, Gift, Handy, aktuell y Chef, en su sentido alemán."
+    },
+    "fr": {
+     "t": "Les faux amis en allemand",
+     "g": "Éviter les pièges des faux amis comme bekommen, Gift, Handy, aktuell et Chef.",
+     "p": [
+      "Pièges classiques : bekommen = erhalten (nicht werden). das Gift = giftige Substanz (Geschenk heißt das Geschenk).",
+      "Autres : das Handy = Mobiltelefon. aktuell = gerade jetzt, neu. der Chef = die Chefin/der Boss bei der Arbeit, nicht der Koch.",
+      "Astuce : Lern solche Wörter immer in einem Satz: Ich bekomme ein Geschenk. Mein Chef ist nett."
+     ],
+     "q": "Quel mot allemand t'a déjà piégé parce qu'il ressemble à un mot de ta langue ? Raconte.",
+     "c": "Écris cinq phrases correctes avec bekommen, Gift, Handy, aktuell et Chef dans leur sens allemand."
+    },
+    "it": {
+     "t": "Falsi amici del tedesco",
+     "g": "Eviti le trappole dei falsi amici come bekommen, Gift, Handy, aktuell e Chef.",
+     "p": [
+      "Trappole classiche: bekommen = erhalten (nicht werden). das Gift = giftige Substanz (Geschenk heißt das Geschenk).",
+      "Altri: das Handy = Mobiltelefon. aktuell = gerade jetzt, neu. der Chef = die Chefin/der Boss bei der Arbeit, nicht der Koch.",
+      "Consiglio: Lern solche Wörter immer in einem Satz: Ich bekomme ein Geschenk. Mein Chef ist nett."
+     ],
+     "q": "Quale parola tedesca ti ha confuso perché somiglia a una della tua lingua? Che cosa è successo?",
+     "c": "Scrivi cinque frasi corrette, una per parola: bekommen, Gift, Handy, aktuell e Chef nel senso tedesco."
+    },
+    "pt": {
+     "t": "Falsos amigos do alemão",
+     "g": "Evitar as armadilhas dos falsos amigos como bekommen, Gift, Handy, aktuell e Chef.",
+     "p": [
+      "Armadilhas clássicas: bekommen = erhalten (nicht werden). das Gift = giftige Substanz (Geschenk heißt das Geschenk).",
+      "Mais: das Handy = Mobiltelefon. aktuell = gerade jetzt, neu. der Chef = die Chefin/der Boss bei der Arbeit, nicht der Koch.",
+      "Dica: Lern solche Wörter immer in einem Satz: Ich bekomme ein Geschenk. Mein Chef ist nett."
+     ],
+     "q": "Que palavra alemã te confundiu por parecer uma da tua língua? O que aconteceu?",
+     "c": "Escreve cinco frases corretas, uma com cada: bekommen, Gift, Handy, aktuell e Chef no sentido alemão."
+    },
+    "pt_BR": {
+     "t": "Falsos amigos do alemão",
+     "g": "Evitar as armadilhas dos falsos amigos como bekommen, Gift, Handy, aktuell e Chef.",
+     "p": [
+      "Armadilhas clássicas: bekommen = erhalten (nicht werden). das Gift = giftige Substanz (Geschenk heißt das Geschenk).",
+      "Mais: das Handy = Mobiltelefon. aktuell = gerade jetzt, neu. der Chef = die Chefin/der Boss bei der Arbeit, nicht der Koch.",
+      "Dica: Lern solche Wörter immer in einem Satz: Ich bekomme ein Geschenk. Mein Chef ist nett."
+     ],
+     "q": "Que palavra alemã já confundiu você por parecer uma do seu idioma? O que aconteceu?",
+     "c": "Escreva cinco frases corretas, uma com cada: bekommen, Gift, Handy, aktuell e Chef no sentido alemão."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "bekommen",
+      "ex": "Zum Geburtstag habe ich ein Buch bekommen."
+     },
+     {
+      "w": "das Gift",
+      "ex": "Diese Pilze enthalten Gift, nicht essen!"
+     },
+     {
+      "w": "das Handy",
+      "ex": "Hast du dein Handy dabei?"
+     },
+     {
+      "w": "aktuell",
+      "ex": "Was sind die aktuellen Nachrichten?"
+     },
+     {
+      "w": "der Chef / die Chefin",
+      "ex": "Meine Chefin ist heute im Urlaub."
+     },
+     {
+      "w": "das Geschenk",
+      "ex": "Danke für das schöne Geschenk!"
+     }
+    ],
+    "gram": "Bekommen (Perfekt: hat bekommen, ohne ge-) heißt erhalten. Werden heißt to become: Ich werde Lehrer."
+   }
+  },
+  {
+   "d": 178,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Compound nouns",
+     "g": "Build and understand long German words: Hand + Schuh = Handschuh.",
+     "p": [
+      "The last word rules: der Handschuh (der Schuh), die Haustür (die Tür), das Wörterbuch (das Buch).",
+      "Linking letters: Geburtstag (-s-), Straßenbahn (-n-), Kinderzimmer (-er-). Oft ohne: Hausaufgabe.",
+      "Reading long words: Von hinten lesen: Kühlschranktür = Tür vom Kühlschrank. Kühl + Schrank + Tür."
+     ],
+     "q": "Give me three compound nouns you know, and I will try to guess their parts. Then I give you one!",
+     "c": "Build six compound nouns with the right article from words you know, e.g. Sommer + Urlaub."
+    },
+    "de": {
+     "t": "Zusammengesetzte Nomen",
+     "g": "Du bildest und verstehst lange Wörter: Hand + Schuh = Handschuh.",
+     "p": [
+      "Das letzte Wort bestimmt: der Handschuh (der Schuh), die Haustür (die Tür), das Wörterbuch (das Buch).",
+      "Fugenlaute: Geburtstag (-s-), Straßenbahn (-n-), Kinderzimmer (-er-). Oft ohne: Hausaufgabe.",
+      "Lange Wörter lesen: Von hinten lesen: Kühlschranktür = Tür vom Kühlschrank. Kühl + Schrank + Tür."
+     ],
+     "q": "Nenn mir drei zusammengesetzte Nomen, die du kennst, und ich errate die Teile. Dann gebe ich dir eins!",
+     "c": "Bilde sechs zusammengesetzte Nomen mit dem richtigen Artikel aus Wörtern, die du kennst, z. B. Sommer + Urlaub."
+    },
+    "es": {
+     "t": "Sustantivos compuestos",
+     "g": "Forma y entiende palabras largas alemanas: Hand + Schuh = Handschuh.",
+     "p": [
+      "Manda la última palabra: der Handschuh (der Schuh), die Haustür (die Tür), das Wörterbuch (das Buch).",
+      "Letras de unión: Geburtstag (-s-), Straßenbahn (-n-), Kinderzimmer (-er-). Oft ohne: Hausaufgabe.",
+      "Leer palabras largas: Von hinten lesen: Kühlschranktür = Tür vom Kühlschrank. Kühl + Schrank + Tür."
+     ],
+     "q": "Dime tres sustantivos compuestos que conozcas y yo adivino sus partes. ¡Luego te doy uno yo!",
+     "c": "Forma seis sustantivos compuestos con el artículo correcto a partir de palabras que conoces, p. ej. Sommer + Urlaub."
+    },
+    "fr": {
+     "t": "Les noms composés",
+     "g": "Construire et comprendre les longs mots allemands : Hand + Schuh = Handschuh.",
+     "p": [
+      "Le dernier mot décide : der Handschuh (der Schuh), die Haustür (die Tür), das Wörterbuch (das Buch).",
+      "Lettres de liaison : Geburtstag (-s-), Straßenbahn (-n-), Kinderzimmer (-er-). Oft ohne: Hausaufgabe.",
+      "Lire les mots longs : Von hinten lesen: Kühlschranktür = Tür vom Kühlschrank. Kühl + Schrank + Tür."
+     ],
+     "q": "Donne-moi trois noms composés que tu connais, je devine leurs parties. Ensuite, je t'en donne un !",
+     "c": "Forme six noms composés avec le bon article à partir de mots connus, par ex. Sommer + Urlaub."
+    },
+    "it": {
+     "t": "I nomi composti",
+     "g": "Costruisci e capisci le parole lunghe tedesche: Hand + Schuh = Handschuh.",
+     "p": [
+      "Comanda l'ultima parola: der Handschuh (der Schuh), die Haustür (die Tür), das Wörterbuch (das Buch).",
+      "Lettere di collegamento: Geburtstag (-s-), Straßenbahn (-n-), Kinderzimmer (-er-). Oft ohne: Hausaufgabe.",
+      "Leggere parole lunghe: Von hinten lesen: Kühlschranktür = Tür vom Kühlschrank. Kühl + Schrank + Tür."
+     ],
+     "q": "Dimmi tre nomi composti che conosci e io indovino le parti. Poi te ne do uno io!",
+     "c": "Forma sei nomi composti con l'articolo giusto da parole che conosci, ad es. Sommer + Urlaub."
+    },
+    "pt": {
+     "t": "Substantivos compostos",
+     "g": "Formar e perceber palavras alemãs compridas: Hand + Schuh = Handschuh.",
+     "p": [
+      "Manda a última palavra: der Handschuh (der Schuh), die Haustür (die Tür), das Wörterbuch (das Buch).",
+      "Letras de ligação: Geburtstag (-s-), Straßenbahn (-n-), Kinderzimmer (-er-). Oft ohne: Hausaufgabe.",
+      "Ler palavras compridas: Von hinten lesen: Kühlschranktür = Tür vom Kühlschrank. Kühl + Schrank + Tür."
+     ],
+     "q": "Diz-me três substantivos compostos que conheças e eu adivinho as partes. Depois dou-te um!",
+     "c": "Forma seis substantivos compostos com o artigo certo a partir de palavras que conheces, p. ex. Sommer + Urlaub."
+    },
+    "pt_BR": {
+     "t": "Substantivos compostos",
+     "g": "Formar e entender palavras alemãs compridas: Hand + Schuh = Handschuh.",
+     "p": [
+      "Manda a última palavra: der Handschuh (der Schuh), die Haustür (die Tür), das Wörterbuch (das Buch).",
+      "Letras de ligação: Geburtstag (-s-), Straßenbahn (-n-), Kinderzimmer (-er-). Oft ohne: Hausaufgabe.",
+      "Ler palavras compridas: Von hinten lesen: Kühlschranktür = Tür vom Kühlschrank. Kühl + Schrank + Tür."
+     ],
+     "q": "Me diga três substantivos compostos que você conhece e eu adivinho as partes. Depois eu te dou um!",
+     "c": "Forme seis substantivos compostos com o artigo certo a partir de palavras que você conhece, ex. Sommer + Urlaub."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Handschuh",
+      "ex": "Im Winter trage ich warme Handschuhe."
+     },
+     {
+      "w": "die Haustür",
+      "ex": "Die Haustür ist abgeschlossen."
+     },
+     {
+      "w": "das Wörterbuch",
+      "ex": "Ich suche das Wort im Wörterbuch."
+     },
+     {
+      "w": "der Geburtstag",
+      "ex": "Wann hast du Geburtstag?"
+     },
+     {
+      "w": "die Straßenbahn",
+      "ex": "Ich fahre mit der Straßenbahn zur Arbeit."
+     },
+     {
+      "w": "der Kühlschrank",
+      "ex": "Die Milch steht im Kühlschrank."
+     }
+    ],
+    "gram": "Das letzte Nomen bestimmt Artikel und Bedeutung: das Haus + die Tür = die Haustür. Manchmal mit Fugen-s oder -n."
+   }
+  },
+  {
+   "d": 179,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Talking about your goals",
+     "g": "Say what you want to achieve in German and how you will practise, with future and um ... zu.",
+     "p": [
+      "Goals: Mein Ziel ist, fließend zu sprechen. Ich möchte die B1-Prüfung machen. Ich will Filme ohne Untertitel verstehen.",
+      "Plans: Ich werde jeden Tag 15 Minuten lesen. Nächstes Jahr werde ich nach Wien fahren.",
+      "How: Ich übe mit einem Tandempartner, um mehr zu sprechen. Ich schreibe Tagebuch auf Deutsch."
+     ],
+     "q": "What is your biggest goal with German, and what will you do every week to reach it?",
+     "c": "Write your German learning plan: one goal with Mein Ziel ist, three werde sentences and one with um ... zu."
+    },
+    "de": {
+     "t": "Über deine Ziele sprechen",
+     "g": "Du sagst, was du mit Deutsch erreichen willst und wie du übst, mit Futur und um ... zu.",
+     "p": [
+      "Ziele: Mein Ziel ist, fließend zu sprechen. Ich möchte die B1-Prüfung machen. Ich will Filme ohne Untertitel verstehen.",
+      "Pläne: Ich werde jeden Tag 15 Minuten lesen. Nächstes Jahr werde ich nach Wien fahren.",
+      "Wie: Ich übe mit einem Tandempartner, um mehr zu sprechen. Ich schreibe Tagebuch auf Deutsch."
+     ],
+     "q": "Was ist dein größtes Ziel mit Deutsch, und was wirst du jede Woche dafür machen?",
+     "c": "Schreib deinen Lernplan: ein Ziel mit Mein Ziel ist, drei Sätze mit werde und einen mit um ... zu."
+    },
+    "es": {
+     "t": "Hablar de tus metas",
+     "g": "Di qué quieres lograr con el alemán y cómo vas a practicar, con futuro y um ... zu.",
+     "p": [
+      "Metas: Mein Ziel ist, fließend zu sprechen. Ich möchte die B1-Prüfung machen. Ich will Filme ohne Untertitel verstehen.",
+      "Planes: Ich werde jeden Tag 15 Minuten lesen. Nächstes Jahr werde ich nach Wien fahren.",
+      "Cómo: Ich übe mit einem Tandempartner, um mehr zu sprechen. Ich schreibe Tagebuch auf Deutsch."
+     ],
+     "q": "¿Cuál es tu mayor meta con el alemán y qué harás cada semana para lograrla?",
+     "c": "Escribe tu plan de alemán: una meta con Mein Ziel ist, tres frases con werde y una con um ... zu."
+    },
+    "fr": {
+     "t": "Parler de tes objectifs",
+     "g": "Dire ce que tu veux atteindre en allemand et comment tu vas pratiquer, avec le futur et um ... zu.",
+     "p": [
+      "Objectifs : Mein Ziel ist, fließend zu sprechen. Ich möchte die B1-Prüfung machen. Ich will Filme ohne Untertitel verstehen.",
+      "Projets : Ich werde jeden Tag 15 Minuten lesen. Nächstes Jahr werde ich nach Wien fahren.",
+      "Comment : Ich übe mit einem Tandempartner, um mehr zu sprechen. Ich schreibe Tagebuch auf Deutsch."
+     ],
+     "q": "Quel est ton plus grand objectif en allemand, et que feras-tu chaque semaine pour l'atteindre ?",
+     "c": "Écris ton plan d'apprentissage : un objectif avec Mein Ziel ist, trois phrases avec werde et une avec um ... zu."
+    },
+    "it": {
+     "t": "Parlare dei tuoi obiettivi",
+     "g": "Dici che cosa vuoi raggiungere in tedesco e come ti eserciterai, con il futuro e um ... zu.",
+     "p": [
+      "Obiettivi: Mein Ziel ist, fließend zu sprechen. Ich möchte die B1-Prüfung machen. Ich will Filme ohne Untertitel verstehen.",
+      "Piani: Ich werde jeden Tag 15 Minuten lesen. Nächstes Jahr werde ich nach Wien fahren.",
+      "Come: Ich übe mit einem Tandempartner, um mehr zu sprechen. Ich schreibe Tagebuch auf Deutsch."
+     ],
+     "q": "Qual è il tuo obiettivo più grande con il tedesco e che cosa farai ogni settimana per raggiungerlo?",
+     "c": "Scrivi il tuo piano di studio: un obiettivo con Mein Ziel ist, tre frasi con werde e una con um ... zu."
+    },
+    "pt": {
+     "t": "Falar dos teus objetivos",
+     "g": "Dizer o que queres alcançar em alemão e como vais praticar, com o futuro e um ... zu.",
+     "p": [
+      "Objetivos: Mein Ziel ist, fließend zu sprechen. Ich möchte die B1-Prüfung machen. Ich will Filme ohne Untertitel verstehen.",
+      "Planos: Ich werde jeden Tag 15 Minuten lesen. Nächstes Jahr werde ich nach Wien fahren.",
+      "Como: Ich übe mit einem Tandempartner, um mehr zu sprechen. Ich schreibe Tagebuch auf Deutsch."
+     ],
+     "q": "Qual é o teu maior objetivo com o alemão e o que vais fazer todas as semanas para o alcançar?",
+     "c": "Escreve o teu plano de estudo: um objetivo com Mein Ziel ist, três frases com werde e uma com um ... zu."
+    },
+    "pt_BR": {
+     "t": "Falar das suas metas",
+     "g": "Dizer o que você quer alcançar em alemão e como vai praticar, com o futuro e um ... zu.",
+     "p": [
+      "Metas: Mein Ziel ist, fließend zu sprechen. Ich möchte die B1-Prüfung machen. Ich will Filme ohne Untertitel verstehen.",
+      "Planos: Ich werde jeden Tag 15 Minuten lesen. Nächstes Jahr werde ich nach Wien fahren.",
+      "Como: Ich übe mit einem Tandempartner, um mehr zu sprechen. Ich schreibe Tagebuch auf Deutsch."
+     ],
+     "q": "Qual é sua maior meta com o alemão e o que você vai fazer toda semana para alcançá-la?",
+     "c": "Escreva seu plano de estudo: uma meta com Mein Ziel ist, três frases com werde e uma com um ... zu."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "das Ziel",
+      "ex": "Mein Ziel ist, in einem Jahr B1 zu haben."
+     },
+     {
+      "w": "erreichen",
+      "ex": "Mit viel Übung kann ich mein Ziel erreichen."
+     },
+     {
+      "w": "fließend",
+      "ex": "Ich möchte fließend Deutsch sprechen."
+     },
+     {
+      "w": "üben",
+      "ex": "Ich übe jeden Abend mit einer App."
+     },
+     {
+      "w": "der Tandempartner",
+      "ex": "Mein Tandempartner kommt aus Graz."
+     },
+     {
+      "w": "ich werde",
+      "ex": "Ich werde mehr deutsche Bücher lesen."
+     }
+    ],
+    "gram": "Futur I: werden + Infinitiv am Ende: Ich werde mehr üben. Mein Ziel ist, ... zu + Infinitiv: Mein Ziel ist, frei zu sprechen."
+   }
+  },
+  {
+   "d": 180,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Review: A2 checkpoint",
+     "g": "Recap all of A2 in one long conversation about your past, your present and your future plans.",
+     "p": [
+      "Past: Perfekt, Präteritum (war, hatte, konnte), Plusquamperfekt mit nachdem; Konnektoren zuerst, dann, danach.",
+      "Present and opinions: Relativsätze, weil/dass, Verben mit Präpositionen, ich finde, dass ...; Da hast du recht.",
+      "Future and wishes: Ich werde ..., um ... zu ..., Ich würde gern ..., Wenn ich mehr Zeit hätte, würde ich ..."
+     ],
+     "q": "Let's talk! Where did you live five years ago, what do you do now, and where would you like to be in five years?",
+     "c": "Write ten sentences about your life: past, present and future, with one relative clause, one wenn and one um ... zu."
+    },
+    "de": {
+     "t": "Wiederholung: A2-Checkpoint",
+     "g": "Du wiederholst das ganze A2 in einem langen Gespräch über Vergangenheit, Gegenwart und Zukunftspläne.",
+     "p": [
+      "Vergangenheit: Perfekt, Präteritum (war, hatte, konnte), Plusquamperfekt mit nachdem; Konnektoren zuerst, dann, danach.",
+      "Gegenwart und Meinung: Relativsätze, weil/dass, Verben mit Präpositionen, ich finde, dass ...; Da hast du recht.",
+      "Zukunft und Wünsche: Ich werde ..., um ... zu ..., Ich würde gern ..., Wenn ich mehr Zeit hätte, würde ich ..."
+     ],
+     "q": "Lass uns reden! Wo hast du vor fünf Jahren gewohnt, was machst du jetzt, und wo wärst du gern in fünf Jahren?",
+     "c": "Schreib zehn Sätze über dein Leben: früher, heute, später, mit einem Relativsatz, einem wenn-Satz und um ... zu."
+    },
+    "es": {
+     "t": "Repaso: control de A2",
+     "g": "Repasa todo el A2 en una conversación larga sobre tu pasado, tu presente y tus planes.",
+     "p": [
+      "Pasado: Perfekt, Präteritum (war, hatte, konnte), Plusquamperfekt mit nachdem; Konnektoren zuerst, dann, danach.",
+      "Presente y opiniones: Relativsätze, weil/dass, Verben mit Präpositionen, ich finde, dass ...; Da hast du recht.",
+      "Futuro y deseos: Ich werde ..., um ... zu ..., Ich würde gern ..., Wenn ich mehr Zeit hätte, würde ich ..."
+     ],
+     "q": "¡Hablemos! ¿Dónde vivías hace cinco años, qué haces ahora y dónde te gustaría estar dentro de cinco?",
+     "c": "Escribe diez frases sobre tu vida: pasado, presente y futuro, con una relativa, una con wenn y una con um ... zu."
+    },
+    "fr": {
+     "t": "Révision : bilan A2",
+     "g": "Réviser tout le niveau A2 dans une longue conversation sur ton passé, ton présent et tes projets.",
+     "p": [
+      "Passé : Perfekt, Präteritum (war, hatte, konnte), Plusquamperfekt mit nachdem; Konnektoren zuerst, dann, danach.",
+      "Présent et avis : Relativsätze, weil/dass, Verben mit Präpositionen, ich finde, dass ...; Da hast du recht.",
+      "Futur et souhaits : Ich werde ..., um ... zu ..., Ich würde gern ..., Wenn ich mehr Zeit hätte, würde ich ..."
+     ],
+     "q": "Parlons ! Où vivais-tu il y a cinq ans, que fais-tu maintenant, et où aimerais-tu être dans cinq ans ?",
+     "c": "Écris dix phrases sur ta vie : passé, présent, futur, avec une relative, une phrase avec wenn et une avec um ... zu."
+    },
+    "it": {
+     "t": "Ripasso: traguardo A2",
+     "g": "Ripassi tutto l'A2 in una lunga conversazione sul tuo passato, il presente e i progetti futuri.",
+     "p": [
+      "Passato: Perfekt, Präteritum (war, hatte, konnte), Plusquamperfekt mit nachdem; Konnektoren zuerst, dann, danach.",
+      "Presente e opinioni: Relativsätze, weil/dass, Verben mit Präpositionen, ich finde, dass ...; Da hast du recht.",
+      "Futuro e desideri: Ich werde ..., um ... zu ..., Ich würde gern ..., Wenn ich mehr Zeit hätte, würde ich ..."
+     ],
+     "q": "Parliamo! Dove vivevi cinque anni fa, che cosa fai adesso e dove vorresti essere tra cinque anni?",
+     "c": "Scrivi dieci frasi sulla tua vita: passato, presente e futuro, con una relativa, una con wenn e una con um ... zu."
+    },
+    "pt": {
+     "t": "Revisão: ponto de controlo A2",
+     "g": "Rever todo o A2 numa conversa longa sobre o teu passado, o presente e os planos para o futuro.",
+     "p": [
+      "Passado: Perfekt, Präteritum (war, hatte, konnte), Plusquamperfekt mit nachdem; Konnektoren zuerst, dann, danach.",
+      "Presente e opiniões: Relativsätze, weil/dass, Verben mit Präpositionen, ich finde, dass ...; Da hast du recht.",
+      "Futuro e desejos: Ich werde ..., um ... zu ..., Ich würde gern ..., Wenn ich mehr Zeit hätte, würde ich ..."
+     ],
+     "q": "Vamos conversar! Onde vivias há cinco anos, o que fazes agora e onde gostavas de estar daqui a cinco anos?",
+     "c": "Escreve dez frases sobre a tua vida: passado, presente e futuro, com uma relativa, uma com wenn e uma com um ... zu."
+    },
+    "pt_BR": {
+     "t": "Revisão: checkpoint A2",
+     "g": "Revisar todo o A2 numa conversa longa sobre seu passado, seu presente e seus planos para o futuro.",
+     "p": [
+      "Passado: Perfekt, Präteritum (war, hatte, konnte), Plusquamperfekt mit nachdem; Konnektoren zuerst, dann, danach.",
+      "Presente e opiniões: Relativsätze, weil/dass, Verben mit Präpositionen, ich finde, dass ...; Da hast du recht.",
+      "Futuro e desejos: Ich werde ..., um ... zu ..., Ich würde gern ..., Wenn ich mehr Zeit hätte, würde ich ..."
+     ],
+     "q": "Vamos conversar! Onde você morava há cinco anos, o que faz agora e onde gostaria de estar daqui a cinco anos?",
+     "c": "Escreva dez frases sobre sua vida: passado, presente e futuro, com uma relativa, uma com wenn e uma com um ... zu."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "früher",
+      "ex": "Früher habe ich in einer kleinen Stadt gewohnt."
+     },
+     {
+      "w": "heute",
+      "ex": "Heute arbeite ich in einem großen Büro."
+     },
+     {
+      "w": "in Zukunft",
+      "ex": "In Zukunft werde ich öfter reisen."
+     },
+     {
+      "w": "nachdem",
+      "ex": "Nachdem ich umgezogen war, fand ich neue Freunde."
+     },
+     {
+      "w": "wenn ich ... hätte",
+      "ex": "Wenn ich mehr Zeit hätte, würde ich Spanisch lernen."
+     },
+     {
+      "w": "stolz sein auf",
+      "ex": "Ich bin stolz auf meine Fortschritte."
+     }
+    ],
+    "gram": "A2-Mix: Perfekt/Präteritum für früher, Präsens für heute, werden + Infinitiv für später, würde/wäre/hätte für Wünsche."
+   }
+  }
+ ]
+}

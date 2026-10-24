@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 341,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Review: big ideas and varieties",
+     "g": "Recap regional varieties, slang and discussions on tech and cities.",
+     "p": [
+      "Varieties: vos sos, vení; seseo in the Americas; aspirated s in the Caribbean.",
+      "Slang by region: mola, chévere, ¿qué onda?, che, pana... with friends only.",
+      "Big ideas: me preocupa que + subjunctive, si + present + future, habría que."
+     ],
+     "q": "Which topic from these ten days did you enjoy discussing the most?",
+     "c": "Tell me in four sentences about a smart city of the future, with one vos form and one habría que."
+    },
+    "de": {
+     "t": "Wiederholung: große Ideen und Varietäten",
+     "g": "Wiederhole regionale Varietäten, Slang und Diskussionen zu Technik und Städten.",
+     "p": [
+      "Varietäten: vos sos, vení; Seseo in Amerika; gehauchtes s in der Karibik.",
+      "Slang nach Region: mola, chévere, ¿qué onda?, che, pana... nur unter Freunden.",
+      "Große Ideen: me preocupa que + Subjuntivo, si + Präsens + Futur, habría que."
+     ],
+     "q": "Welches Thema der letzten zehn Tage hast du am liebsten diskutiert?",
+     "c": "Erzähl mir in vier Sätzen von einer Smart City der Zukunft, mit einer vos-Form und habría que."
+    },
+    "es": {
+     "t": "Repaso: grandes ideas y variedades",
+     "g": "Repasa variedades regionales, argot y debates sobre tecnología y ciudades.",
+     "p": [
+      "Variedades: vos sos, vení; seseo en América; s aspirada en el Caribe.",
+      "Argot por regiones: mola, chévere, ¿qué onda?, che, pana... solo con amigos.",
+      "Grandes ideas: me preocupa que + subjuntivo, si + presente + futuro, habría que."
+     ],
+     "q": "¿Qué tema de estos diez días te gustó más debatir?",
+     "c": "Cuéntame en cuatro frases cómo será una ciudad inteligente del futuro, con una forma de vos y habría que."
+    },
+    "fr": {
+     "t": "Révision : grandes idées et variétés",
+     "g": "Révise variétés régionales, argot et débats sur la technologie et les villes.",
+     "p": [
+      "Variétés : vos sos, vení ; seseo en Amérique ; s aspiré dans les Caraïbes.",
+      "Argot par région : mola, chévere, ¿qué onda?, che, pana... seulement entre amis.",
+      "Grandes idées : me preocupa que + subjonctif, si + présent + futur, habría que."
+     ],
+     "q": "Quel sujet de ces dix jours as-tu préféré débattre ?",
+     "c": "Raconte-moi en quatre phrases une ville intelligente du futur, avec une forme de vos et habría que."
+    },
+    "it": {
+     "t": "Ripasso: grandi idee e varietà",
+     "g": "Ripassa varietà regionali, slang e discussioni su tecnologia e città.",
+     "p": [
+      "Varietà: vos sos, vení; seseo in America; s aspirata nei Caraibi.",
+      "Slang per regione: mola, chévere, ¿qué onda?, che, pana... solo tra amici.",
+      "Grandi idee: me preocupa que + congiuntivo, si + presente + futuro, habría que."
+     ],
+     "q": "Quale tema di questi dieci giorni ti è piaciuto di più discutere?",
+     "c": "Raccontami in quattro frasi una città intelligente del futuro, con una forma di vos e habría que."
+    },
+    "pt": {
+     "t": "Revisão: grandes ideias e variedades",
+     "g": "Revê variedades regionais, calão e debates sobre tecnologia e cidades.",
+     "p": [
+      "Variedades: vos sos, vení; seseo na América; s aspirado nas Caraíbas.",
+      "Calão por regiões: mola, chévere, ¿qué onda?, che, pana... só entre amigos.",
+      "Grandes ideias: me preocupa que + conjuntivo, si + presente + futuro, habría que."
+     ],
+     "q": "Que tema destes dez dias mais gostaste de debater?",
+     "c": "Conta-me em quatro frases como será uma cidade inteligente do futuro, com uma forma de vos e habría que."
+    },
+    "pt_BR": {
+     "t": "Revisão: grandes ideias e variedades",
+     "g": "Revise variedades regionais, gírias e debates sobre tecnologia e cidades.",
+     "p": [
+      "Variedades: vos sos, vení; seseo na América; s aspirado no Caribe.",
+      "Gírias por região: mola, chévere, ¿qué onda?, che, pana... só entre amigos.",
+      "Grandes ideias: me preocupa que + subjuntivo, si + presente + futuro, habría que."
+     ],
+     "q": "Qual tema destes dez dias você mais gostou de debater?",
+     "c": "Conte em quatro frases como será uma cidade inteligente do futuro, com uma forma de vos e habría que."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "vos sabés",
+      "ex": "Vos sabés mucho de tecnología."
+     },
+     {
+      "w": "chévere",
+      "ex": "Sería chévere tener más parques."
+     },
+     {
+      "w": "me preocupa que",
+      "ex": "Me preocupa que la ciudad crezca sin planificación."
+     },
+     {
+      "w": "si + presente, futuro",
+      "ex": "Si invertimos en trenes, habrá menos tráfico."
+     },
+     {
+      "w": "habría que",
+      "ex": "Habría que plantar más árboles."
+     },
+     {
+      "w": "la ciudad inteligente",
+      "ex": "En una ciudad inteligente, los semáforos se adaptan al tráfico."
+     }
+    ],
+    "gram": "Repaso: voseo (sabés, vení), subjuntivo tras expresiones de sentimiento, condicional real y habría que + infinitivo."
+   }
+  },
+  {
+   "d": 342,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Global travel and tourism",
+     "g": "Discuss travel trends and more responsible ways to travel.",
+     "p": [
+      "Key words: el turismo masivo, el viaje sostenible, los rincones escondidos, la temporada alta.",
+      "Give advice: Te recomiendo que + subjunctive; lo mejor es viajar en temporada baja.",
+      "Talk about experiences: He estado en..., nunca he visitado..., me encantaría conocer..."
+     ],
+     "q": "What hidden corner of your country would you recommend to a visitor?",
+     "c": "Write tips for a sustainable trip in three sentences with te recomiendo que."
+    },
+    "de": {
+     "t": "Reisen und Tourismus weltweit",
+     "g": "Diskutiere Reisetrends und verantwortungsvollere Arten zu reisen.",
+     "p": [
+      "Schlüsselwörter: el turismo masivo, el viaje sostenible, los rincones escondidos, la temporada alta.",
+      "Rat geben: Te recomiendo que + Subjuntivo; lo mejor es viajar en temporada baja.",
+      "Über Erfahrungen sprechen: He estado en..., nunca he visitado..., me encantaría conocer..."
+     ],
+     "q": "Welchen versteckten Winkel deines Landes würdest du Besuchern empfehlen?",
+     "c": "Schreib Tipps für eine nachhaltige Reise in drei Sätzen mit te recomiendo que."
+    },
+    "es": {
+     "t": "Viajes y turismo global",
+     "g": "Habla de tendencias de viaje y de formas más responsables de viajar.",
+     "p": [
+      "Palabras clave: el turismo masivo, el viaje sostenible, los rincones escondidos, la temporada alta.",
+      "Aconseja: Te recomiendo que + subjuntivo; lo mejor es viajar en temporada baja.",
+      "Habla de experiencias: He estado en..., nunca he visitado..., me encantaría conocer..."
+     ],
+     "q": "¿Qué rincón escondido de tu país recomendarías a un visitante?",
+     "c": "Escribe consejos para un viaje sostenible en tres frases con te recomiendo que."
+    },
+    "fr": {
+     "t": "Voyages et tourisme mondial",
+     "g": "Parle des tendances du voyage et de façons plus responsables de voyager.",
+     "p": [
+      "Mots clés : el turismo masivo, el viaje sostenible, los rincones escondidos, la temporada alta.",
+      "Conseille : Te recomiendo que + subjonctif ; lo mejor es viajar en temporada baja.",
+      "Parle d'expériences : He estado en..., nunca he visitado..., me encantaría conocer..."
+     ],
+     "q": "Quel coin caché de ton pays recommanderais-tu à un visiteur ?",
+     "c": "Écris des conseils pour un voyage durable en trois phrases avec te recomiendo que."
+    },
+    "it": {
+     "t": "Viaggi e turismo globale",
+     "g": "Parla delle tendenze di viaggio e di modi più responsabili di viaggiare.",
+     "p": [
+      "Parole chiave: el turismo masivo, el viaje sostenible, los rincones escondidos, la temporada alta.",
+      "Consiglia: Te recomiendo que + congiuntivo; lo mejor es viajar en temporada baja.",
+      "Parla di esperienze: He estado en..., nunca he visitado..., me encantaría conocer..."
+     ],
+     "q": "Quale angolo nascosto del tuo paese consiglieresti a un visitatore?",
+     "c": "Scrivi consigli per un viaggio sostenibile in tre frasi con te recomiendo que."
+    },
+    "pt": {
+     "t": "Viagens e turismo global",
+     "g": "Fala de tendências de viagem e de formas mais responsáveis de viajar.",
+     "p": [
+      "Palavras-chave: el turismo masivo, el viaje sostenible, los rincones escondidos, la temporada alta.",
+      "Aconselha: Te recomiendo que + conjuntivo; lo mejor es viajar en temporada baja.",
+      "Fala de experiências: He estado en..., nunca he visitado..., me encantaría conocer..."
+     ],
+     "q": "Que recanto escondido do teu país recomendarias a um visitante?",
+     "c": "Escreve dicas para uma viagem sustentável em três frases com te recomiendo que."
+    },
+    "pt_BR": {
+     "t": "Viagens e turismo global",
+     "g": "Fale sobre tendências de viagem e formas mais responsáveis de viajar.",
+     "p": [
+      "Palavras-chave: el turismo masivo, el viaje sostenible, los rincones escondidos, la temporada alta.",
+      "Aconselhe: Te recomiendo que + subjuntivo; lo mejor es viajar en temporada baja.",
+      "Fale de experiências: He estado en..., nunca he visitado..., me encantaría conocer..."
+     ],
+     "q": "Que cantinho escondido do seu país você recomendaria a um visitante?",
+     "c": "Escreva dicas para uma viagem sustentável em três frases com te recomiendo que."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el turismo masivo",
+      "ex": "El turismo masivo cambia la vida de los barrios."
+     },
+     {
+      "w": "el viaje sostenible",
+      "ex": "Un viaje sostenible respeta a la gente local."
+     },
+     {
+      "w": "el rincón escondido",
+      "ex": "Encontramos un rincón escondido junto al lago."
+     },
+     {
+      "w": "la temporada alta",
+      "ex": "En temporada alta los hoteles están llenos."
+     },
+     {
+      "w": "te recomiendo que",
+      "ex": "Te recomiendo que vayas en tren."
+     },
+     {
+      "w": "el alojamiento",
+      "ex": "Buscamos un alojamiento familiar en el pueblo."
+     }
+    ],
+    "gram": "Recomendar que + subjuntivo (te recomiendo que vayas) y pretérito perfecto para experiencias (he estado, nunca he visitado)."
+   }
+  },
+  {
+   "d": 343,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Creativity and innovation",
+     "g": "Talk about new ideas and how they are born.",
+     "p": [
+      "Key words: la lluvia de ideas, pensar diferente, el prototipo, la innovación.",
+      "Describe a process: se me ocurrió la idea, la probamos, la mejoramos.",
+      "Encourage ideas: ¿Y si probamos...?, No hay ideas malas, ¡Qué idea tan original!"
+     ],
+     "q": "When do your best ideas usually come to you?",
+     "c": "Describe how you would solve a small daily problem with a creative idea, using se me ocurrió."
+    },
+    "de": {
+     "t": "Kreativität und Innovation",
+     "g": "Sprich über neue Ideen und wie sie entstehen.",
+     "p": [
+      "Schlüsselwörter: la lluvia de ideas, pensar diferente, el prototipo, la innovación.",
+      "Einen Prozess beschreiben: se me ocurrió la idea, la probamos, la mejoramos.",
+      "Ideen fördern: ¿Y si probamos...?, No hay ideas malas, ¡Qué idea tan original!"
+     ],
+     "q": "Wann kommen dir normalerweise die besten Ideen?",
+     "c": "Beschreibe, wie du ein kleines Alltagsproblem kreativ lösen würdest, mit se me ocurrió."
+    },
+    "es": {
+     "t": "Creatividad e innovación",
+     "g": "Habla de las ideas nuevas y de cómo nacen.",
+     "p": [
+      "Palabras clave: la lluvia de ideas, pensar diferente, el prototipo, la innovación.",
+      "Describe un proceso: se me ocurrió la idea, la probamos, la mejoramos.",
+      "Anima a crear: ¿Y si probamos...?, No hay ideas malas, ¡Qué idea tan original!"
+     ],
+     "q": "¿Cuándo se te suelen ocurrir tus mejores ideas?",
+     "c": "Describe cómo resolverías un pequeño problema cotidiano con una idea creativa, usando se me ocurrió."
+    },
+    "fr": {
+     "t": "Créativité et innovation",
+     "g": "Parle des idées nouvelles et de leur naissance.",
+     "p": [
+      "Mots clés : la lluvia de ideas, pensar diferente, el prototipo, la innovación.",
+      "Décris un processus : se me ocurrió la idea, la probamos, la mejoramos.",
+      "Encourage les idées : ¿Y si probamos...?, No hay ideas malas, ¡Qué idea tan original!"
+     ],
+     "q": "Quand tes meilleures idées te viennent-elles d'habitude ?",
+     "c": "Décris comment tu résoudrais un petit problème du quotidien avec une idée créative, avec se me ocurrió."
+    },
+    "it": {
+     "t": "Creatività e innovazione",
+     "g": "Parla delle idee nuove e di come nascono.",
+     "p": [
+      "Parole chiave: la lluvia de ideas, pensar diferente, el prototipo, la innovación.",
+      "Descrivi un processo: se me ocurrió la idea, la probamos, la mejoramos.",
+      "Incoraggia le idee: ¿Y si probamos...?, No hay ideas malas, ¡Qué idea tan original!"
+     ],
+     "q": "Quando ti vengono di solito le idee migliori?",
+     "c": "Descrivi come risolveresti un piccolo problema quotidiano con un'idea creativa, usando se me ocurrió."
+    },
+    "pt": {
+     "t": "Criatividade e inovação",
+     "g": "Fala das ideias novas e de como nascem.",
+     "p": [
+      "Palavras-chave: la lluvia de ideas, pensar diferente, el prototipo, la innovación.",
+      "Descreve um processo: se me ocurrió la idea, la probamos, la mejoramos.",
+      "Incentiva ideias: ¿Y si probamos...?, No hay ideas malas, ¡Qué idea tan original!"
+     ],
+     "q": "Quando costumas ter as tuas melhores ideias?",
+     "c": "Descreve como resolverias um pequeno problema do dia a dia com uma ideia criativa, usando se me ocurrió."
+    },
+    "pt_BR": {
+     "t": "Criatividade e inovação",
+     "g": "Fale sobre ideias novas e como elas nascem.",
+     "p": [
+      "Palavras-chave: la lluvia de ideas, pensar diferente, el prototipo, la innovación.",
+      "Descreva um processo: se me ocurrió la idea, la probamos, la mejoramos.",
+      "Incentive ideias: ¿Y si probamos...?, No hay ideas malas, ¡Qué idea tan original!"
+     ],
+     "q": "Quando você costuma ter suas melhores ideias?",
+     "c": "Descreva como você resolveria um pequeno problema do dia a dia com uma ideia criativa, usando se me ocurrió."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la lluvia de ideas",
+      "ex": "Hicimos una lluvia de ideas de media hora."
+     },
+     {
+      "w": "pensar diferente",
+      "ex": "Para innovar hay que pensar diferente."
+     },
+     {
+      "w": "el prototipo",
+      "ex": "El prototipo estuvo listo en dos semanas."
+     },
+     {
+      "w": "se me ocurrió",
+      "ex": "Se me ocurrió la idea mientras paseaba."
+     },
+     {
+      "w": "¿y si probamos...?",
+      "ex": "¿Y si probamos con otro color?"
+     },
+     {
+      "w": "la innovación",
+      "ex": "La innovación nace de la curiosidad."
+     }
+    ],
+    "gram": "Ocurrirse funciona como gustar con se: se me ocurrió una idea, se nos ocurrieron varias; ¿y si + presente? para proponer."
+   }
+  },
+  {
+   "d": 344,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "The future of work",
+     "g": "Discuss how work is changing and which skills matter.",
+     "p": [
+      "Key words: el teletrabajo, las nuevas habilidades, la carrera flexible, la formación continua.",
+      "Predict: En el futuro habrá más..., cada vez más personas trabajarán...",
+      "Use the future perfect: Dentro de diez años habremos cambiado de profesión varias veces."
+     ],
+     "q": "Which new skill would you like to learn for the future?",
+     "c": "Write three predictions about work in ten years, one with cada vez más and one with habremos."
+    },
+    "de": {
+     "t": "Die Zukunft der Arbeit",
+     "g": "Diskutiere, wie sich Arbeit verändert und welche Fähigkeiten zählen.",
+     "p": [
+      "Schlüsselwörter: el teletrabajo, las nuevas habilidades, la carrera flexible, la formación continua.",
+      "Vorhersagen: En el futuro habrá más..., cada vez más personas trabajarán...",
+      "Futur II nutzen: Dentro de diez años habremos cambiado de profesión varias veces."
+     ],
+     "q": "Welche neue Fähigkeit würdest du gern für die Zukunft lernen?",
+     "c": "Schreib drei Vorhersagen zur Arbeit in zehn Jahren, eine mit cada vez más und eine mit habremos."
+    },
+    "es": {
+     "t": "El futuro del trabajo",
+     "g": "Habla de cómo cambia el trabajo y qué habilidades importan.",
+     "p": [
+      "Palabras clave: el teletrabajo, las nuevas habilidades, la carrera flexible, la formación continua.",
+      "Predice: En el futuro habrá más..., cada vez más personas trabajarán...",
+      "Usa el futuro compuesto: Dentro de diez años habremos cambiado de profesión varias veces."
+     ],
+     "q": "¿Qué habilidad nueva te gustaría aprender para el futuro?",
+     "c": "Escribe tres predicciones sobre el trabajo dentro de diez años, una con cada vez más y otra con habremos."
+    },
+    "fr": {
+     "t": "L'avenir du travail",
+     "g": "Parle de l'évolution du travail et des compétences qui comptent.",
+     "p": [
+      "Mots clés : el teletrabajo, las nuevas habilidades, la carrera flexible, la formación continua.",
+      "Prédis : En el futuro habrá más..., cada vez más personas trabajarán...",
+      "Utilise le futur antérieur : Dentro de diez años habremos cambiado de profesión varias veces."
+     ],
+     "q": "Quelle nouvelle compétence aimerais-tu apprendre pour l'avenir ?",
+     "c": "Écris trois prédictions sur le travail dans dix ans, une avec cada vez más et une avec habremos."
+    },
+    "it": {
+     "t": "Il futuro del lavoro",
+     "g": "Parla di come cambia il lavoro e di quali competenze contano.",
+     "p": [
+      "Parole chiave: el teletrabajo, las nuevas habilidades, la carrera flexible, la formación continua.",
+      "Prevedi: En el futuro habrá más..., cada vez más personas trabajarán...",
+      "Usa il futuro anteriore: Dentro de diez años habremos cambiado de profesión varias veces."
+     ],
+     "q": "Quale nuova competenza ti piacerebbe imparare per il futuro?",
+     "c": "Scrivi tre previsioni sul lavoro tra dieci anni, una con cada vez más e una con habremos."
+    },
+    "pt": {
+     "t": "O futuro do trabalho",
+     "g": "Fala de como o trabalho está a mudar e de que competências importam.",
+     "p": [
+      "Palavras-chave: el teletrabajo, las nuevas habilidades, la carrera flexible, la formación continua.",
+      "Prevê: En el futuro habrá más..., cada vez más personas trabajarán...",
+      "Usa o futuro composto: Dentro de diez años habremos cambiado de profesión varias veces."
+     ],
+     "q": "Que competência nova gostarias de aprender para o futuro?",
+     "c": "Escreve três previsões sobre o trabalho daqui a dez anos, uma com cada vez más e outra com habremos."
+    },
+    "pt_BR": {
+     "t": "O futuro do trabalho",
+     "g": "Fale sobre como o trabalho está mudando e que habilidades importam.",
+     "p": [
+      "Palavras-chave: el teletrabajo, las nuevas habilidades, la carrera flexible, la formación continua.",
+      "Preveja: En el futuro habrá más..., cada vez más personas trabajarán...",
+      "Use o futuro composto: Dentro de diez años habremos cambiado de profesión varias veces."
+     ],
+     "q": "Que habilidade nova você gostaria de aprender para o futuro?",
+     "c": "Escreva três previsões sobre o trabalho daqui a dez anos, uma com cada vez más e outra com habremos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "las nuevas habilidades",
+      "ex": "Las empresas buscan nuevas habilidades digitales."
+     },
+     {
+      "w": "la carrera flexible",
+      "ex": "Hoy muchos prefieren una carrera flexible."
+     },
+     {
+      "w": "la formación continua",
+      "ex": "La formación continua es clave para crecer."
+     },
+     {
+      "w": "cada vez más",
+      "ex": "Cada vez más gente trabaja desde casa."
+     },
+     {
+      "w": "habremos cambiado",
+      "ex": "Para 2040 habremos cambiado nuestra forma de trabajar."
+     },
+     {
+      "w": "el equilibrio entre vida y trabajo",
+      "ex": "Busco un buen equilibrio entre vida y trabajo."
+     }
+    ],
+    "gram": "Futuro compuesto (habré, habremos + participio) para acciones terminadas antes de un momento futuro: dentro de diez años habremos..."
+   }
+  },
+  {
+   "d": 345,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Storytelling with style",
+     "g": "Tell a story that hooks your listener from start to finish.",
+     "p": [
+      "Hook: start in the action: Eran las tres de la mañana cuando sonó el teléfono.",
+      "Build suspense: De repente..., en ese preciso instante..., sin embargo, nadie sabía que...",
+      "Use dialogue and a good ending: —¿Quién es? —preguntó. Al final, todo tuvo sentido."
+     ],
+     "q": "What is the funniest or strangest story that has happened to you?",
+     "c": "Tell me a short story of five sentences with a hook, de repente, one line of dialogue and an ending."
+    },
+    "de": {
+     "t": "Stilvoll erzählen",
+     "g": "Erzähl eine Geschichte, die deine Zuhörer von Anfang bis Ende fesselt.",
+     "p": [
+      "Einstieg mitten in der Handlung: Eran las tres de la mañana cuando sonó el teléfono.",
+      "Spannung aufbauen: De repente..., en ese preciso instante..., sin embargo, nadie sabía que...",
+      "Dialog und gutes Ende: —¿Quién es? —preguntó. Al final, todo tuvo sentido."
+     ],
+     "q": "Was ist die lustigste oder seltsamste Geschichte, die dir passiert ist?",
+     "c": "Erzähl mir eine Geschichte in fünf Sätzen mit Einstieg, de repente, einer Dialogzeile und einem Ende."
+    },
+    "es": {
+     "t": "Contar historias con estilo",
+     "g": "Cuenta una historia que enganche a quien escucha de principio a fin.",
+     "p": [
+      "Engancha empezando en plena acción: Eran las tres de la mañana cuando sonó el teléfono.",
+      "Crea suspense: De repente..., en ese preciso instante..., sin embargo, nadie sabía que...",
+      "Usa diálogos y un buen final: —¿Quién es? —preguntó. Al final, todo tuvo sentido."
+     ],
+     "q": "¿Cuál es la historia más divertida o extraña que te ha pasado?",
+     "c": "Cuéntame una historia de cinco frases con un buen inicio, de repente, un diálogo y un final."
+    },
+    "fr": {
+     "t": "Raconter avec style",
+     "g": "Raconte une histoire qui captive ton auditeur du début à la fin.",
+     "p": [
+      "Accroche en pleine action : Eran las tres de la mañana cuando sonó el teléfono.",
+      "Crée du suspense : De repente..., en ese preciso instante..., sin embargo, nadie sabía que...",
+      "Dialogue et bonne fin : —¿Quién es? —preguntó. Al final, todo tuvo sentido."
+     ],
+     "q": "Quelle est l'histoire la plus drôle ou la plus étrange qui te soit arrivée ?",
+     "c": "Raconte-moi une histoire de cinq phrases avec une accroche, de repente, une réplique et une fin."
+    },
+    "it": {
+     "t": "Raccontare con stile",
+     "g": "Racconta una storia che catturi chi ascolta dall'inizio alla fine.",
+     "p": [
+      "Aggancia partendo dall'azione: Eran las tres de la mañana cuando sonó el teléfono.",
+      "Crea suspense: De repente..., en ese preciso instante..., sin embargo, nadie sabía que...",
+      "Usa dialoghi e un buon finale: —¿Quién es? —preguntó. Al final, todo tuvo sentido."
+     ],
+     "q": "Qual è la storia più divertente o strana che ti è capitata?",
+     "c": "Raccontami una storia di cinque frasi con un inizio forte, de repente, una battuta di dialogo e un finale."
+    },
+    "pt": {
+     "t": "Contar histórias com estilo",
+     "g": "Conta uma história que prenda quem ouve do início ao fim.",
+     "p": [
+      "Prende logo, começando em plena ação: Eran las tres de la mañana cuando sonó el teléfono.",
+      "Cria suspense: De repente..., en ese preciso instante..., sin embargo, nadie sabía que...",
+      "Usa diálogos e um bom final: —¿Quién es? —preguntó. Al final, todo tuvo sentido."
+     ],
+     "q": "Qual é a história mais engraçada ou estranha que já te aconteceu?",
+     "c": "Conta-me uma história de cinco frases com um bom início, de repente, uma fala e um final."
+    },
+    "pt_BR": {
+     "t": "Contar histórias com estilo",
+     "g": "Conte uma história que prenda quem ouve do começo ao fim.",
+     "p": [
+      "Prenda logo, começando em plena ação: Eran las tres de la mañana cuando sonó el teléfono.",
+      "Crie suspense: De repente..., en ese preciso instante..., sin embargo, nadie sabía que...",
+      "Use diálogos e um bom final: —¿Quién es? —preguntó. Al final, todo tuvo sentido."
+     ],
+     "q": "Qual é a história mais engraçada ou estranha que já aconteceu com você?",
+     "c": "Conte uma história de cinco frases com um bom começo, de repente, uma fala e um final."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "de repente",
+      "ex": "De repente, se apagaron todas las luces."
+     },
+     {
+      "w": "en ese preciso instante",
+      "ex": "En ese preciso instante, alguien llamó a la puerta."
+     },
+     {
+      "w": "nadie sabía que",
+      "ex": "Nadie sabía que el abuelo guardaba un secreto."
+     },
+     {
+      "w": "el desenlace",
+      "ex": "El desenlace de la historia nos sorprendió a todos."
+     },
+     {
+      "w": "al final",
+      "ex": "Al final, el misterioso visitante era mi tío."
+     },
+     {
+      "w": "—preguntó",
+      "ex": "—¿Hay alguien ahí? —preguntó en voz baja."
+     }
+    ],
+    "gram": "Narrar: imperfecto para el fondo (eran las tres), indefinido para los hechos (sonó) y raya (—) para el diálogo."
+   }
+  },
+  {
+   "d": 346,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Describing graphs and trends",
+     "g": "Describe data and trends clearly and precisely.",
+     "p": [
+      "Rise: aumentar, subir, crecer; fall: disminuir, bajar, descender.",
+      "Add degree and speed: bruscamente, considerablemente, ligeramente, de forma gradual.",
+      "Stability and peaks: mantenerse estable, alcanzar un máximo, tocar fondo."
+     ],
+     "q": "Which trend in your life has gone up recently, and which has gone down?",
+     "c": "Describe an imaginary graph of coffee sales over a year in three sentences with adverbs."
+    },
+    "de": {
+     "t": "Diagramme und Trends beschreiben",
+     "g": "Beschreibe Daten und Trends klar und präzise.",
+     "p": [
+      "Anstieg: aumentar, subir, crecer; Rückgang: disminuir, bajar, descender.",
+      "Grad und Tempo: bruscamente, considerablemente, ligeramente, de forma gradual.",
+      "Stabilität und Spitzen: mantenerse estable, alcanzar un máximo, tocar fondo."
+     ],
+     "q": "Welcher Trend in deinem Leben ist zuletzt gestiegen, welcher gesunken?",
+     "c": "Beschreibe ein Fantasie-Diagramm zum Kaffeeverkauf über ein Jahr in drei Sätzen mit Adverbien."
+    },
+    "es": {
+     "t": "Describir gráficos y tendencias",
+     "g": "Describe datos y tendencias con claridad y precisión.",
+     "p": [
+      "Subida: aumentar, subir, crecer; bajada: disminuir, bajar, descender.",
+      "Añade grado y ritmo: bruscamente, considerablemente, ligeramente, de forma gradual.",
+      "Estabilidad y picos: mantenerse estable, alcanzar un máximo, tocar fondo."
+     ],
+     "q": "¿Qué tendencia de tu vida ha subido últimamente y cuál ha bajado?",
+     "c": "Describe un gráfico imaginario de venta de café durante un año en tres frases con adverbios."
+    },
+    "fr": {
+     "t": "Décrire graphiques et tendances",
+     "g": "Décris données et tendances avec clarté et précision.",
+     "p": [
+      "Hausse : aumentar, subir, crecer ; baisse : disminuir, bajar, descender.",
+      "Degré et rythme : bruscamente, considerablemente, ligeramente, de forma gradual.",
+      "Stabilité et pics : mantenerse estable, alcanzar un máximo, tocar fondo."
+     ],
+     "q": "Quelle tendance de ta vie a augmenté récemment, et laquelle a baissé ?",
+     "c": "Décris un graphique imaginaire des ventes de café sur un an en trois phrases avec des adverbes."
+    },
+    "it": {
+     "t": "Descrivere grafici e tendenze",
+     "g": "Descrivi dati e tendenze con chiarezza e precisione.",
+     "p": [
+      "Aumento: aumentar, subir, crecer; calo: disminuir, bajar, descender.",
+      "Grado e ritmo: bruscamente, considerablemente, ligeramente, de forma gradual.",
+      "Stabilità e picchi: mantenerse estable, alcanzar un máximo, tocar fondo."
+     ],
+     "q": "Quale tendenza della tua vita è salita di recente, e quale è scesa?",
+     "c": "Descrivi un grafico immaginario delle vendite di caffè in un anno in tre frasi con avverbi."
+    },
+    "pt": {
+     "t": "Descrever gráficos e tendências",
+     "g": "Descreve dados e tendências com clareza e precisão.",
+     "p": [
+      "Subida: aumentar, subir, crecer; descida: disminuir, bajar, descender.",
+      "Junta grau e ritmo: bruscamente, considerablemente, ligeramente, de forma gradual.",
+      "Estabilidade e picos: mantenerse estable, alcanzar un máximo, tocar fondo."
+     ],
+     "q": "Que tendência da tua vida subiu ultimamente, e qual desceu?",
+     "c": "Descreve um gráfico imaginário de venda de café ao longo de um ano em três frases com advérbios."
+    },
+    "pt_BR": {
+     "t": "Descrever gráficos e tendências",
+     "g": "Descreva dados e tendências com clareza e precisão.",
+     "p": [
+      "Alta: aumentar, subir, crecer; queda: disminuir, bajar, descender.",
+      "Acrescente grau e ritmo: bruscamente, considerablemente, ligeramente, de forma gradual.",
+      "Estabilidade e picos: mantenerse estable, alcanzar un máximo, tocar fondo."
+     ],
+     "q": "Que tendência da sua vida subiu ultimamente, e qual caiu?",
+     "c": "Descreva um gráfico imaginário de venda de café ao longo de um ano em três frases com advérbios."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "aumentar bruscamente",
+      "ex": "En julio las ventas aumentaron bruscamente."
+     },
+     {
+      "w": "disminuir ligeramente",
+      "ex": "El paro disminuyó ligeramente en otoño."
+     },
+     {
+      "w": "mantenerse estable",
+      "ex": "Los precios se mantuvieron estables todo el año."
+     },
+     {
+      "w": "alcanzar un máximo",
+      "ex": "Las visitas alcanzaron un máximo en agosto."
+     },
+     {
+      "w": "de forma gradual",
+      "ex": "El uso de la bici creció de forma gradual."
+     },
+     {
+      "w": "tocar fondo",
+      "ex": "Las ventas tocaron fondo en enero."
+     }
+    ],
+    "gram": "Gráficos: verbos de cambio + adverbios en -mente (aumentar considerablemente) y preposiciones de cifras: de 10 a 20, en un 5 %."
+   }
+  },
+  {
+   "d": 347,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Speaking at length: two minutes",
+     "g": "Plan and deliver a structured two-minute talk.",
+     "p": [
+      "Plan in 30 seconds: one main idea, two or three points, one example each.",
+      "Link with connectors: para empezar, además, por ejemplo, sin embargo, en resumen.",
+      "Keep going: use fillers like bueno, a ver, es decir... instead of long silences."
+     ],
+     "q": "What topic could you talk about for two minutes without notes?",
+     "c": "Record yourself talking for two minutes about your favourite place, using five connectors."
+    },
+    "de": {
+     "t": "Länger sprechen: zwei Minuten",
+     "g": "Plane einen strukturierten Zwei-Minuten-Vortrag und halte ihn.",
+     "p": [
+      "In 30 Sekunden planen: eine Hauptidee, zwei oder drei Punkte, je ein Beispiel.",
+      "Mit Konnektoren verbinden: para empezar, además, por ejemplo, sin embargo, en resumen.",
+      "Im Fluss bleiben: Füllwörter wie bueno, a ver, es decir... statt langer Pausen."
+     ],
+     "q": "Über welches Thema könntest du zwei Minuten ohne Notizen sprechen?",
+     "c": "Nimm dich auf, wie du zwei Minuten über deinen Lieblingsort sprichst, mit fünf Konnektoren."
+    },
+    "es": {
+     "t": "Hablar con extensión: dos minutos",
+     "g": "Planifica y realiza una intervención estructurada de dos minutos.",
+     "p": [
+      "Planifica en 30 segundos: una idea central, dos o tres puntos y un ejemplo para cada uno.",
+      "Une con conectores: para empezar, además, por ejemplo, sin embargo, en resumen.",
+      "No te detengas: usa muletillas como bueno, a ver, es decir... en vez de silencios largos."
+     ],
+     "q": "¿De qué tema podrías hablar dos minutos sin notas?",
+     "c": "Grábate hablando dos minutos sobre tu lugar favorito con cinco conectores."
+    },
+    "fr": {
+     "t": "Parler longuement : deux minutes",
+     "g": "Prépare et présente une intervention structurée de deux minutes.",
+     "p": [
+      "Prépare en 30 secondes : une idée centrale, deux ou trois points, un exemple pour chacun.",
+      "Relie avec des connecteurs : para empezar, además, por ejemplo, sin embargo, en resumen.",
+      "Continue : utilise des mots de remplissage comme bueno, a ver, es decir... plutôt que de longs silences."
+     ],
+     "q": "Sur quel sujet pourrais-tu parler deux minutes sans notes ?",
+     "c": "Enregistre-toi en parlant deux minutes de ton lieu préféré avec cinq connecteurs."
+    },
+    "it": {
+     "t": "Parlare a lungo: due minuti",
+     "g": "Prepara e fai un intervento strutturato di due minuti.",
+     "p": [
+      "Prepara in 30 secondi: un'idea centrale, due o tre punti, un esempio per ciascuno.",
+      "Collega con connettivi: para empezar, además, por ejemplo, sin embargo, en resumen.",
+      "Non fermarti: usa intercalari come bueno, a ver, es decir... invece di lunghi silenzi."
+     ],
+     "q": "Di quale tema potresti parlare due minuti senza appunti?",
+     "c": "Registrati mentre parli due minuti del tuo posto preferito usando cinque connettivi."
+    },
+    "pt": {
+     "t": "Falar mais tempo: dois minutos",
+     "g": "Planeia e faz uma intervenção estruturada de dois minutos.",
+     "p": [
+      "Planeia em 30 segundos: uma ideia central, dois ou três pontos e um exemplo para cada um.",
+      "Liga com conectores: para empezar, además, por ejemplo, sin embargo, en resumen.",
+      "Não pares: usa bordões como bueno, a ver, es decir... em vez de silêncios longos."
+     ],
+     "q": "Sobre que tema conseguirias falar dois minutos sem notas?",
+     "c": "Grava-te a falar dois minutos sobre o teu lugar favorito com cinco conectores."
+    },
+    "pt_BR": {
+     "t": "Falar por mais tempo: dois minutos",
+     "g": "Planeje e faça uma fala estruturada de dois minutos.",
+     "p": [
+      "Planeje em 30 segundos: uma ideia central, dois ou três pontos e um exemplo para cada um.",
+      "Ligue com conectores: para empezar, además, por ejemplo, sin embargo, en resumen.",
+      "Não pare: use expressões como bueno, a ver, es decir... em vez de silêncios longos."
+     ],
+     "q": "Sobre que tema você conseguiria falar dois minutos sem anotações?",
+     "c": "Grave-se falando dois minutos sobre seu lugar favorito com cinco conectores."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "para empezar",
+      "ex": "Para empezar, os diré por qué elegí este tema."
+     },
+     {
+      "w": "por ejemplo",
+      "ex": "Por ejemplo, el año pasado viajé allí en tren."
+     },
+     {
+      "w": "sin embargo",
+      "ex": "Sin embargo, no todo fue fácil."
+     },
+     {
+      "w": "a ver",
+      "ex": "A ver, ¿cómo lo explico?"
+     },
+     {
+      "w": "bueno",
+      "ex": "Bueno, lo más importante es la gente."
+     },
+     {
+      "w": "en resumen",
+      "ex": "En resumen, es un lugar que recomiendo."
+     }
+    ],
+    "gram": "Discurso oral extenso: conectores de estructura y de contraste (sin embargo) y marcadores conversacionales (bueno, a ver, o sea)."
+   }
+  },
+  {
+   "d": 348,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Don Quixote and Cervantes",
+     "g": "Meet Spain's most famous novel and the phrases it left behind.",
+     "p": [
+      "Miguel de Cervantes published Don Quijote de la Mancha in two parts, in 1605 and 1615.",
+      "Don Quixote, a dreamy knight, travels with the practical Sancho Panza on his donkey.",
+      "Living phrases: luchar contra molinos de viento (fight imaginary enemies), quijotesco (idealistic)."
+     ],
+     "q": "Do you know someone who is a bit quijotesco?",
+     "c": "Use luchar contra molinos de viento and quijotesco in two sentences about real life."
+    },
+    "de": {
+     "t": "Don Quijote und Cervantes",
+     "g": "Lerne Spaniens berühmtesten Roman und die Ausdrücke kennen, die er hinterließ.",
+     "p": [
+      "Miguel de Cervantes veröffentlichte Don Quijote de la Mancha in zwei Teilen, 1605 und 1615.",
+      "Don Quijote, ein verträumter Ritter, reist mit dem bodenständigen Sancho Panza auf seinem Esel.",
+      "Lebendige Ausdrücke: luchar contra molinos de viento (gegen Windmühlen kämpfen), quijotesco (idealistisch)."
+     ],
+     "q": "Kennst du jemanden, der ein bisschen quijotesco ist?",
+     "c": "Nutze luchar contra molinos de viento und quijotesco in zwei Sätzen über das echte Leben."
+    },
+    "es": {
+     "t": "Don Quijote y Cervantes",
+     "g": "Conoce la novela más famosa de España y las frases que nos dejó.",
+     "p": [
+      "Miguel de Cervantes publicó Don Quijote de la Mancha en dos partes, en 1605 y 1615.",
+      "Don Quijote, un caballero soñador, viaja con el práctico Sancho Panza y su burro.",
+      "Frases vivas: luchar contra molinos de viento (enemigos imaginarios), quijotesco (idealista)."
+     ],
+     "q": "¿Conoces a alguien un poco quijotesco?",
+     "c": "Usa luchar contra molinos de viento y quijotesco en dos frases sobre la vida real."
+    },
+    "fr": {
+     "t": "Don Quichotte et Cervantes",
+     "g": "Découvre le roman le plus célèbre d'Espagne et les expressions qu'il a laissées.",
+     "p": [
+      "Miguel de Cervantes a publié Don Quijote de la Mancha en deux parties, en 1605 et 1615.",
+      "Don Quichotte, chevalier rêveur, voyage avec le pragmatique Sancho Panza sur son âne.",
+      "Expressions vivantes : luchar contra molinos de viento (se battre contre des moulins), quijotesco (idéaliste)."
+     ],
+     "q": "Connais-tu quelqu'un d'un peu quijotesco ?",
+     "c": "Utilise luchar contra molinos de viento et quijotesco dans deux phrases sur la vie réelle."
+    },
+    "it": {
+     "t": "Don Chisciotte e Cervantes",
+     "g": "Scopri il romanzo più famoso della Spagna e le espressioni che ci ha lasciato.",
+     "p": [
+      "Miguel de Cervantes pubblicò Don Quijote de la Mancha in due parti, nel 1605 e nel 1615.",
+      "Don Chisciotte, cavaliere sognatore, viaggia con il pratico Sancho Panza sul suo asino.",
+      "Espressioni vive: luchar contra molinos de viento (combattere contro i mulini a vento), quijotesco (idealista)."
+     ],
+     "q": "Conosci qualcuno un po' quijotesco?",
+     "c": "Usa luchar contra molinos de viento e quijotesco in due frasi sulla vita reale."
+    },
+    "pt": {
+     "t": "Dom Quixote e Cervantes",
+     "g": "Conhece o romance mais famoso de Espanha e as expressões que nos deixou.",
+     "p": [
+      "Miguel de Cervantes publicou Don Quijote de la Mancha em duas partes, em 1605 e 1615.",
+      "Dom Quixote, um cavaleiro sonhador, viaja com o prático Sancho Pança no seu burro.",
+      "Expressões vivas: luchar contra molinos de viento (lutar contra moinhos de vento), quijotesco (idealista)."
+     ],
+     "q": "Conheces alguém um pouco quijotesco?",
+     "c": "Usa luchar contra molinos de viento e quijotesco em duas frases sobre a vida real."
+    },
+    "pt_BR": {
+     "t": "Dom Quixote e Cervantes",
+     "g": "Conheça o romance mais famoso da Espanha e as expressões que ele deixou.",
+     "p": [
+      "Miguel de Cervantes publicou Don Quijote de la Mancha em duas partes, em 1605 e 1615.",
+      "Dom Quixote, um cavaleiro sonhador, viaja com o prático Sancho Pança e seu burro.",
+      "Expressões vivas: luchar contra molinos de viento (lutar contra moinhos de vento), quijotesco (idealista)."
+     ],
+     "q": "Você conhece alguém meio quijotesco?",
+     "c": "Use luchar contra molinos de viento e quijotesco em duas frases sobre a vida real."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el caballero",
+      "ex": "El caballero salió en busca de aventuras."
+     },
+     {
+      "w": "el escudero",
+      "ex": "Sancho Panza es el fiel escudero de don Quijote."
+     },
+     {
+      "w": "luchar contra molinos de viento",
+      "ex": "Discutir con él es luchar contra molinos de viento."
+     },
+     {
+      "w": "quijotesco",
+      "ex": "Tiene un plan quijotesco para salvar el cine del barrio."
+     },
+     {
+      "w": "la aventura",
+      "ex": "Cada capítulo cuenta una aventura distinta."
+     },
+     {
+      "w": "en un lugar de la Mancha",
+      "ex": "En un lugar de la Mancha empieza la novela más famosa."
+     }
+    ],
+    "gram": "Indefinido para hechos históricos (Cervantes publicó, salió) e imperfecto para describir personajes (era soñador, tenía un caballo)."
+   }
+  },
+  {
+   "d": 349,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Magical realism: García Márquez",
+     "g": "Discover magical realism and the world of Macondo.",
+     "p": [
+      "Gabriel García Márquez, from Colombia, wrote Cien años de soledad, published in 1967.",
+      "In magical realism, extraordinary things are told as if they were normal: yellow butterflies follow a man.",
+      "The story follows the Buendía family in the imaginary town of Macondo."
+     ],
+     "q": "If your town were magical, what unusual thing would happen there every day?",
+     "c": "Write two sentences about your street in magical-realist style, telling something magical as normal."
+    },
+    "de": {
+     "t": "Magischer Realismus: García Márquez",
+     "g": "Entdecke den magischen Realismus und die Welt von Macondo.",
+     "p": [
+      "Gabriel García Márquez aus Kolumbien schrieb Cien años de soledad, erschienen 1967.",
+      "Im magischen Realismus wird Außergewöhnliches erzählt, als wäre es normal: gelbe Schmetterlinge folgen einem Mann.",
+      "Die Geschichte folgt der Familie Buendía im erfundenen Ort Macondo."
+     ],
+     "q": "Wenn dein Ort magisch wäre, was Ungewöhnliches würde dort jeden Tag passieren?",
+     "c": "Schreib zwei Sätze über deine Straße im Stil des magischen Realismus, Magisches ganz normal erzählt."
+    },
+    "es": {
+     "t": "Realismo mágico: García Márquez",
+     "g": "Descubre el realismo mágico y el mundo de Macondo.",
+     "p": [
+      "El colombiano Gabriel García Márquez escribió Cien años de soledad, publicada en 1967.",
+      "En el realismo mágico lo extraordinario se cuenta como normal: mariposas amarillas siguen a un hombre.",
+      "La novela sigue a la familia Buendía en el pueblo imaginario de Macondo."
+     ],
+     "q": "Si tu pueblo fuera mágico, ¿qué cosa insólita pasaría allí cada día?",
+     "c": "Escribe dos frases sobre tu calle al estilo del realismo mágico, contando algo mágico como normal."
+    },
+    "fr": {
+     "t": "Réalisme magique : García Márquez",
+     "g": "Découvre le réalisme magique et l'univers de Macondo.",
+     "p": [
+      "Le Colombien Gabriel García Márquez a écrit Cien años de soledad, publié en 1967.",
+      "Dans le réalisme magique, l'extraordinaire est raconté comme normal : des papillons jaunes suivent un homme.",
+      "Le roman suit la famille Buendía dans le village imaginaire de Macondo."
+     ],
+     "q": "Si ta ville était magique, quelle chose insolite s'y passerait chaque jour ?",
+     "c": "Écris deux phrases sur ta rue façon réalisme magique, en racontant du magique comme normal."
+    },
+    "it": {
+     "t": "Realismo magico: García Márquez",
+     "g": "Scopri il realismo magico e il mondo di Macondo.",
+     "p": [
+      "Il colombiano Gabriel García Márquez scrisse Cien años de soledad, pubblicato nel 1967.",
+      "Nel realismo magico lo straordinario si racconta come normale: farfalle gialle seguono un uomo.",
+      "Il romanzo segue la famiglia Buendía nel paese immaginario di Macondo."
+     ],
+     "q": "Se il tuo paese fosse magico, che cosa insolita succederebbe lì ogni giorno?",
+     "c": "Scrivi due frasi sulla tua via in stile realismo magico, raccontando qualcosa di magico come normale."
+    },
+    "pt": {
+     "t": "Realismo mágico: García Márquez",
+     "g": "Descobre o realismo mágico e o mundo de Macondo.",
+     "p": [
+      "O colombiano Gabriel García Márquez escreveu Cien años de soledad, publicado em 1967.",
+      "No realismo mágico, o extraordinário conta-se como normal: borboletas amarelas seguem um homem.",
+      "O romance acompanha a família Buendía na aldeia imaginária de Macondo."
+     ],
+     "q": "Se a tua terra fosse mágica, que coisa insólita aconteceria lá todos os dias?",
+     "c": "Escreve duas frases sobre a tua rua ao estilo do realismo mágico, contando algo mágico como normal."
+    },
+    "pt_BR": {
+     "t": "Realismo mágico: García Márquez",
+     "g": "Descubra o realismo mágico e o mundo de Macondo.",
+     "p": [
+      "O colombiano Gabriel García Márquez escreveu Cien años de soledad, publicado em 1967.",
+      "No realismo mágico, o extraordinário é contado como normal: borboletas amarelas seguem um homem.",
+      "O romance acompanha a família Buendía na cidadezinha imaginária de Macondo."
+     ],
+     "q": "Se a sua cidade fosse mágica, que coisa inusitada aconteceria lá todo dia?",
+     "c": "Escreva duas frases sobre a sua rua no estilo do realismo mágico, contando algo mágico como normal."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el realismo mágico",
+      "ex": "El realismo mágico mezcla lo cotidiano y lo fantástico."
+     },
+     {
+      "w": "insólito",
+      "ex": "En Macondo lo insólito parece normal."
+     },
+     {
+      "w": "las mariposas amarillas",
+      "ex": "De pronto, las mariposas amarillas llenaron la casa."
+     },
+     {
+      "w": "la estirpe",
+      "ex": "La novela narra la historia de la estirpe de los Buendía."
+     },
+     {
+      "w": "el pueblo imaginario",
+      "ex": "Macondo es un pueblo imaginario de la costa colombiana."
+     },
+     {
+      "w": "como si nada",
+      "ex": "Llovieron flores y la gente siguió paseando como si nada."
+     }
+    ],
+    "gram": "Si + imperfecto de subjuntivo + condicional para hipótesis (si mi pueblo fuera mágico, pasaría...); como si + imperfecto de subjuntivo."
+   }
+  },
+  {
+   "d": 350,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Poetry in Spanish",
+     "g": "Enjoy short poems and feel the rhythm and images of Spanish.",
+     "p": [
+      "Antonio Machado: Caminante, no hay camino, se hace camino al andar.",
+      "Federico García Lorca: Verde que te quiero verde, music and strong colours.",
+      "Gabriela Mistral, from Chile, was the first Latin American Nobel laureate in literature (1945)."
+     ],
+     "q": "Which line of poetry, in any language, do you remember?",
+     "c": "Read Machado's line aloud three times, then write your own two-line poem in Spanish."
+    },
+    "de": {
+     "t": "Lyrik auf Spanisch",
+     "g": "Genieße kurze Gedichte und spüre Rhythmus und Bilder des Spanischen.",
+     "p": [
+      "Antonio Machado: Caminante, no hay camino, se hace camino al andar.",
+      "Federico García Lorca: Verde que te quiero verde, Musik und starke Farben.",
+      "Gabriela Mistral aus Chile erhielt 1945 als erste Person Lateinamerikas den Literaturnobelpreis."
+     ],
+     "q": "An welche Gedichtzeile, in irgendeiner Sprache, erinnerst du dich?",
+     "c": "Lies Machados Zeile dreimal laut und schreib dann ein eigenes zweizeiliges Gedicht auf Spanisch."
+    },
+    "es": {
+     "t": "Poesía en español",
+     "g": "Disfruta de poemas breves y siente el ritmo y las imágenes del español.",
+     "p": [
+      "Antonio Machado: Caminante, no hay camino, se hace camino al andar.",
+      "Federico García Lorca: Verde que te quiero verde, música y colores intensos.",
+      "La chilena Gabriela Mistral fue la primera latinoamericana en ganar el Nobel de Literatura (1945)."
+     ],
+     "q": "¿Qué verso recuerdas, en cualquier idioma?",
+     "c": "Lee el verso de Machado en voz alta tres veces y escribe tu propio poema de dos versos."
+    },
+    "fr": {
+     "t": "La poésie en espagnol",
+     "g": "Savoure de courts poèmes et ressens le rythme et les images de l'espagnol.",
+     "p": [
+      "Antonio Machado : Caminante, no hay camino, se hace camino al andar.",
+      "Federico García Lorca : Verde que te quiero verde, musique et couleurs intenses.",
+      "La Chilienne Gabriela Mistral fut la première personne latino-américaine prix Nobel de littérature (1945)."
+     ],
+     "q": "De quel vers te souviens-tu, dans n'importe quelle langue ?",
+     "c": "Lis le vers de Machado à voix haute trois fois, puis écris ton propre poème de deux vers en espagnol."
+    },
+    "it": {
+     "t": "La poesia in spagnolo",
+     "g": "Goditi brevi poesie e senti il ritmo e le immagini dello spagnolo.",
+     "p": [
+      "Antonio Machado: Caminante, no hay camino, se hace camino al andar.",
+      "Federico García Lorca: Verde que te quiero verde, musica e colori intensi.",
+      "La cilena Gabriela Mistral fu la prima persona latinoamericana a vincere il Nobel per la letteratura (1945)."
+     ],
+     "q": "Quale verso ricordi, in qualsiasi lingua?",
+     "c": "Leggi ad alta voce tre volte il verso di Machado, poi scrivi una tua poesia di due versi in spagnolo."
+    },
+    "pt": {
+     "t": "Poesia em espanhol",
+     "g": "Aprecia poemas curtos e sente o ritmo e as imagens do espanhol.",
+     "p": [
+      "Antonio Machado: Caminante, no hay camino, se hace camino al andar.",
+      "Federico García Lorca: Verde que te quiero verde, música e cores intensas.",
+      "A chilena Gabriela Mistral foi a primeira pessoa latino-americana a ganhar o Nobel da Literatura (1945)."
+     ],
+     "q": "Que verso recordas, em qualquer língua?",
+     "c": "Lê o verso de Machado em voz alta três vezes e escreve o teu próprio poema de dois versos em espanhol."
+    },
+    "pt_BR": {
+     "t": "Poesia em espanhol",
+     "g": "Aproveite poemas curtos e sinta o ritmo e as imagens do espanhol.",
+     "p": [
+      "Antonio Machado: Caminante, no hay camino, se hace camino al andar.",
+      "Federico García Lorca: Verde que te quiero verde, música e cores intensas.",
+      "A chilena Gabriela Mistral foi a primeira pessoa latino-americana a ganhar o Nobel de Literatura (1945)."
+     ],
+     "q": "De que verso você se lembra, em qualquer língua?",
+     "c": "Leia o verso de Machado em voz alta três vezes e escreva seu próprio poema de dois versos em espanhol."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el verso",
+      "ex": "Este verso de Machado es muy conocido."
+     },
+     {
+      "w": "la estrofa",
+      "ex": "El poema tiene tres estrofas cortas."
+     },
+     {
+      "w": "la rima",
+      "ex": "Me gusta la rima de estos versos."
+     },
+     {
+      "w": "la metáfora",
+      "ex": "El camino es una metáfora de la vida."
+     },
+     {
+      "w": "caminante",
+      "ex": "Caminante, no hay camino, se hace camino al andar."
+     },
+     {
+      "w": "recitar",
+      "ex": "Mi abuela recita poemas de memoria."
+     }
+    ],
+    "gram": "Se impersonal en poesía y refranes: se hace camino al andar; al + infinitivo expresa simultaneidad (al andar = mientras andas)."
+   }
+  }
+ ]
+}

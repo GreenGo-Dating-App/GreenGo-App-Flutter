@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 211,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Job interviews",
+     "g": "Prepare clear answers for a job interview in Spanish.",
+     "p": [
+      "Classic questions: háblame de ti, ¿cuáles son tus puntos fuertes?, ¿por qué quieres trabajar aquí?",
+      "Answer with structure: tengo experiencia en..., se me da bien..., me considero una persona...",
+      "Interviews are often formal: usted, ¿podría explicar...? Ask your own question at the end: ¿cómo es un día normal?"
+     ],
+     "q": "Háblame de ti: introduce yourself in four sentences as if in an interview.",
+     "c": "Write your answers to three classic questions: puntos fuertes, un punto débil and por qué este trabajo."
+    },
+    "de": {
+     "t": "Vorstellungsgespräche",
+     "g": "Bereite klare Antworten für ein Vorstellungsgespräch auf Spanisch vor.",
+     "p": [
+      "Klassische Fragen: háblame de ti, ¿cuáles son tus puntos fuertes?, ¿por qué quieres trabajar aquí?",
+      "Antworte strukturiert: tengo experiencia en..., se me da bien..., me considero una persona...",
+      "Oft formell: usted, ¿podría explicar...? Stell am Ende eine eigene Frage: ¿cómo es un día normal?"
+     ],
+     "q": "Háblame de ti: Stell dich in vier Sätzen vor, wie in einem Vorstellungsgespräch.",
+     "c": "Schreib deine Antworten auf drei Klassiker: puntos fuertes, un punto débil und por qué este trabajo."
+    },
+    "es": {
+     "t": "Entrevistas de trabajo",
+     "g": "Prepara respuestas claras para una entrevista de trabajo en español.",
+     "p": [
+      "Preguntas clásicas: háblame de ti, ¿cuáles son tus puntos fuertes?, ¿por qué quieres trabajar aquí?",
+      "Responde con estructura: tengo experiencia en..., se me da bien..., me considero una persona...",
+      "Suelen ser formales: usted, ¿podría explicar...? Al final, pregunta tú: ¿cómo es un día normal?"
+     ],
+     "q": "Háblame de ti: preséntate en cuatro frases como en una entrevista.",
+     "c": "Escribe tus respuestas a tres preguntas clásicas: puntos fuertes, un punto débil y por qué este trabajo."
+    },
+    "fr": {
+     "t": "Entretiens d'embauche",
+     "g": "Prépare des réponses claires pour un entretien d'embauche en espagnol.",
+     "p": [
+      "Questions classiques : háblame de ti, ¿cuáles son tus puntos fuertes?, ¿por qué quieres trabajar aquí?",
+      "Réponds avec structure : tengo experiencia en..., se me da bien..., me considero una persona...",
+      "Souvent formels : usted, ¿podría explicar...? À la fin, pose ta question : ¿cómo es un día normal?"
+     ],
+     "q": "Háblame de ti : présente-toi en quatre phrases comme en entretien.",
+     "c": "Écris tes réponses à trois questions classiques : puntos fuertes, un punto débil et por qué este trabajo."
+    },
+    "it": {
+     "t": "Colloqui di lavoro",
+     "g": "Prepara risposte chiare per un colloquio di lavoro in spagnolo.",
+     "p": [
+      "Domande classiche: háblame de ti, ¿cuáles son tus puntos fuertes?, ¿por qué quieres trabajar aquí?",
+      "Rispondi con struttura: tengo experiencia en..., se me da bien..., me considero una persona...",
+      "Spesso formali: usted, ¿podría explicar...? Alla fine fai tu una domanda: ¿cómo es un día normal?"
+     ],
+     "q": "Háblame de ti: presentati in quattro frasi come in un colloquio.",
+     "c": "Scrivi le tue risposte a tre domande classiche: puntos fuertes, un punto débil e por qué este trabajo."
+    },
+    "pt": {
+     "t": "Entrevistas de emprego",
+     "g": "Prepara respostas claras para uma entrevista de emprego em espanhol.",
+     "p": [
+      "Perguntas clássicas: háblame de ti, ¿cuáles son tus puntos fuertes?, ¿por qué quieres trabajar aquí?",
+      "Responde com estrutura: tengo experiencia en..., se me da bien..., me considero una persona...",
+      "Costumam ser formais: usted, ¿podría explicar...? No fim, pergunta tu: ¿cómo es un día normal?"
+     ],
+     "q": "Háblame de ti: apresenta-te em quatro frases como numa entrevista.",
+     "c": "Escreve as tuas respostas a três perguntas clássicas: puntos fuertes, un punto débil e por qué este trabajo."
+    },
+    "pt_BR": {
+     "t": "Entrevistas de emprego",
+     "g": "Prepare respostas claras para uma entrevista de emprego em espanhol.",
+     "p": [
+      "Perguntas clássicas: háblame de ti, ¿cuáles son tus puntos fuertes?, ¿por qué quieres trabajar aquí?",
+      "Responda com estrutura: tengo experiencia en..., se me da bien..., me considero una persona...",
+      "Costumam ser formais: usted, ¿podría explicar...? No final, pergunte você: ¿cómo es un día normal?"
+     ],
+     "q": "Háblame de ti: apresente-se em quatro frases como numa entrevista.",
+     "c": "Escreva suas respostas a três perguntas clássicas: puntos fuertes, un punto débil e por qué este trabajo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "háblame de ti",
+      "ex": "Para empezar, háblame un poco de ti."
+     },
+     {
+      "w": "los puntos fuertes",
+      "ex": "Uno de mis puntos fuertes es la organización."
+     },
+     {
+      "w": "tengo experiencia en",
+      "ex": "Tengo experiencia en atención al cliente."
+     },
+     {
+      "w": "se me da bien",
+      "ex": "Se me da bien trabajar en equipo."
+     },
+     {
+      "w": "me considero",
+      "ex": "Me considero una persona responsable y creativa."
+     },
+     {
+      "w": "el puesto",
+      "ex": "Me interesa mucho este puesto de trabajo."
+     }
+    ],
+    "gram": "Entrevista: háblame de ti; tengo experiencia en + sustantivo; se me da bien + infinitivo; me considero una persona + adjetivo."
+   }
+  },
+  {
+   "d": 212,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Writing a CV in Spanish",
+     "g": "Structure a Spanish CV: experiencia laboral, formación, idiomas, habilidades.",
+     "p": [
+      "Main sections: datos personales, perfil, experiencia laboral, formación académica, idiomas, habilidades.",
+      "Experience: start with the most recent job; use nouns or past verbs: gestión de equipos, coordiné eventos.",
+      "Languages with levels: inglés nivel C1, español nivel B1. Skills: manejo de Excel, trabajo en equipo."
+     ],
+     "q": "Which section of your CV would be easiest to write in Spanish, and which hardest?",
+     "c": "Write your perfil profesional in two sentences and one line of experiencia laboral in Spanish."
+    },
+    "de": {
+     "t": "Einen Lebenslauf auf Spanisch schreiben",
+     "g": "Strukturiere einen spanischen Lebenslauf: experiencia laboral, formación, idiomas, habilidades.",
+     "p": [
+      "Hauptteile: datos personales, perfil, experiencia laboral, formación académica, idiomas, habilidades.",
+      "Erfahrung: neueste Stelle zuerst; Nomen oder Vergangenheit: gestión de equipos, coordiné eventos.",
+      "Sprachen mit Niveau: inglés nivel C1, español nivel B1. Fähigkeiten: manejo de Excel, trabajo en equipo."
+     ],
+     "q": "Welcher Teil deines Lebenslaufs wäre auf Spanisch am leichtesten, welcher am schwersten?",
+     "c": "Schreib dein perfil profesional in zwei Sätzen und eine Zeile experiencia laboral auf Spanisch."
+    },
+    "es": {
+     "t": "Escribir un currículum en español",
+     "g": "Estructura un currículum en español: experiencia laboral, formación, idiomas, habilidades.",
+     "p": [
+      "Apartados: datos personales, perfil, experiencia laboral, formación académica, idiomas, habilidades.",
+      "Experiencia: empieza por el trabajo más reciente; usa sustantivos o pasados: gestión de equipos, coordiné eventos.",
+      "Idiomas con nivel: inglés nivel C1, español nivel B1. Habilidades: manejo de Excel, trabajo en equipo."
+     ],
+     "q": "¿Qué apartado de tu currículum sería más fácil de escribir en español y cuál más difícil?",
+     "c": "Escribe tu perfil profesional en dos frases y una línea de experiencia laboral en español."
+    },
+    "fr": {
+     "t": "Rédiger un CV en espagnol",
+     "g": "Structure un CV espagnol : experiencia laboral, formación, idiomas, habilidades.",
+     "p": [
+      "Rubriques : datos personales, perfil, experiencia laboral, formación académica, idiomas, habilidades.",
+      "Expérience : commence par le poste le plus récent ; noms ou passés : gestión de equipos, coordiné eventos.",
+      "Langues avec niveau : inglés nivel C1, español nivel B1. Compétences : manejo de Excel, trabajo en equipo."
+     ],
+     "q": "Quelle rubrique de ton CV serait la plus facile à écrire en espagnol, et laquelle la plus difficile ?",
+     "c": "Écris ton perfil profesional en deux phrases et une ligne de experiencia laboral en espagnol."
+    },
+    "it": {
+     "t": "Scrivere un curriculum in spagnolo",
+     "g": "Struttura un curriculum spagnolo: experiencia laboral, formación, idiomas, habilidades.",
+     "p": [
+      "Sezioni: datos personales, perfil, experiencia laboral, formación académica, idiomas, habilidades.",
+      "Esperienza: parti dal lavoro più recente; usa nomi o passati: gestión de equipos, coordiné eventos.",
+      "Lingue con livello: inglés nivel C1, español nivel B1. Competenze: manejo de Excel, trabajo en equipo."
+     ],
+     "q": "Quale sezione del tuo curriculum sarebbe più facile da scrivere in spagnolo, e quale più difficile?",
+     "c": "Scrivi il tuo perfil profesional in due frasi e una riga di experiencia laboral in spagnolo."
+    },
+    "pt": {
+     "t": "Escrever um currículo em espanhol",
+     "g": "Estrutura um currículo espanhol: experiencia laboral, formación, idiomas, habilidades.",
+     "p": [
+      "Secções: datos personales, perfil, experiencia laboral, formación académica, idiomas, habilidades.",
+      "Experiência: começa pelo trabalho mais recente; usa substantivos ou passados: gestión de equipos, coordiné eventos.",
+      "Línguas com nível: inglés nivel C1, español nivel B1. Competências: manejo de Excel, trabajo en equipo."
+     ],
+     "q": "Que secção do teu currículo seria mais fácil de escrever em espanhol, e qual a mais difícil?",
+     "c": "Escreve o teu perfil profesional em duas frases e uma linha de experiencia laboral em espanhol."
+    },
+    "pt_BR": {
+     "t": "Escrever um currículo em espanhol",
+     "g": "Estruture um currículo em espanhol: experiencia laboral, formación, idiomas, habilidades.",
+     "p": [
+      "Seções: datos personales, perfil, experiencia laboral, formación académica, idiomas, habilidades.",
+      "Experiência: comece pelo trabalho mais recente; use substantivos ou passados: gestión de equipos, coordiné eventos.",
+      "Idiomas com nível: inglés nivel C1, español nivel B1. Habilidades: manejo de Excel, trabajo en equipo."
+     ],
+     "q": "Qual seção do seu currículo seria mais fácil de escrever em espanhol, e qual a mais difícil?",
+     "c": "Escreva o seu perfil profesional em duas frases e uma linha de experiencia laboral em espanhol."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la experiencia laboral",
+      "ex": "En mi experiencia laboral destaco tres años en ventas."
+     },
+     {
+      "w": "la formación académica",
+      "ex": "Mi formación académica incluye un grado en Turismo."
+     },
+     {
+      "w": "los idiomas",
+      "ex": "Idiomas: inglés nivel C1 y español nivel B1."
+     },
+     {
+      "w": "las habilidades",
+      "ex": "Entre mis habilidades está la comunicación."
+     },
+     {
+      "w": "el perfil profesional",
+      "ex": "Mi perfil profesional se centra en el marketing digital."
+     },
+     {
+      "w": "encargarse de",
+      "ex": "Me encargaba de organizar los eventos de la empresa."
+     }
+    ],
+    "gram": "Currículum: experiencia laboral (del más reciente al más antiguo), formación, idiomas con nivel, habilidades. Verbos en pasado."
+   }
+  },
+  {
+   "d": 213,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Meetings: giving your view",
+     "g": "Take part in a meeting: give your view, add ideas and politely disagree.",
+     "p": [
+      "Ask to speak: si me permiten, ¿puedo decir algo?, quería añadir una cosa.",
+      "Give your view: desde mi punto de vista, en mi opinión, yo propondría que + subjunctive.",
+      "Disagree softly: entiendo tu idea, pero...; no estoy del todo de acuerdo; ¿y si probamos otra opción?"
+     ],
+     "q": "Your team must choose a place for the company dinner. What would you propose and why?",
+     "c": "Write a short meeting turn: ask to speak, give your view, and politely disagree with one idea."
+    },
+    "de": {
+     "t": "Meetings: deine Meinung sagen",
+     "g": "Nimm an einem Meeting teil: Meinung sagen, Ideen ergänzen, höflich widersprechen.",
+     "p": [
+      "Ums Wort bitten: si me permiten, ¿puedo decir algo?, quería añadir una cosa.",
+      "Meinung sagen: desde mi punto de vista, en mi opinión, yo propondría que + subjuntivo.",
+      "Sanft widersprechen: entiendo tu idea, pero...; no estoy del todo de acuerdo; ¿y si probamos otra opción?"
+     ],
+     "q": "Dein Team muss einen Ort für das Firmenessen wählen. Was würdest du vorschlagen und warum?",
+     "c": "Schreib einen kurzen Meeting-Beitrag: ums Wort bitten, Meinung sagen und höflich widersprechen."
+    },
+    "es": {
+     "t": "Reuniones: dar tu opinión",
+     "g": "Participa en una reunión: da tu opinión, añade ideas y discrepa con educación.",
+     "p": [
+      "Pedir la palabra: si me permiten, ¿puedo decir algo?, quería añadir una cosa.",
+      "Dar tu opinión: desde mi punto de vista, en mi opinión, yo propondría que + subjuntivo.",
+      "Discrepar con suavidad: entiendo tu idea, pero...; no estoy del todo de acuerdo; ¿y si probamos otra opción?"
+     ],
+     "q": "Tu equipo debe elegir un sitio para la cena de empresa. ¿Qué propondrías y por qué?",
+     "c": "Escribe una intervención corta: pide la palabra, da tu opinión y discrepa de una idea con educación."
+    },
+    "fr": {
+     "t": "Réunions : donner son avis",
+     "g": "Participe à une réunion : donne ton avis, ajoute des idées et exprime un désaccord poli.",
+     "p": [
+      "Demander la parole : si me permiten, ¿puedo decir algo?, quería añadir una cosa.",
+      "Donner son avis : desde mi punto de vista, en mi opinión, yo propondría que + subjonctif.",
+      "Nuancer : entiendo tu idea, pero... ; no estoy del todo de acuerdo ; ¿y si probamos otra opción?"
+     ],
+     "q": "Ton équipe doit choisir un lieu pour le dîner d'entreprise. Que proposerais-tu et pourquoi ?",
+     "c": "Écris une courte intervention : demande la parole, donne ton avis et nuance poliment une idée."
+    },
+    "it": {
+     "t": "Riunioni: dare la propria opinione",
+     "g": "Partecipa a una riunione: esprimi la tua opinione, aggiungi idee e dissenti con garbo.",
+     "p": [
+      "Chiedere la parola: si me permiten, ¿puedo decir algo?, quería añadir una cosa.",
+      "Dare un'opinione: desde mi punto de vista, en mi opinión, yo propondría que + congiuntivo.",
+      "Dissentire con garbo: entiendo tu idea, pero...; no estoy del todo de acuerdo; ¿y si probamos otra opción?"
+     ],
+     "q": "Il tuo team deve scegliere un posto per la cena aziendale. Cosa proporresti e perché?",
+     "c": "Scrivi un breve intervento: chiedi la parola, dai la tua opinione e dissenti con garbo da un'idea."
+    },
+    "pt": {
+     "t": "Reuniões: dar a tua opinião",
+     "g": "Participa numa reunião: dá a tua opinião, acrescenta ideias e discorda com educação.",
+     "p": [
+      "Pedir a palavra: si me permiten, ¿puedo decir algo?, quería añadir una cosa.",
+      "Dar opinião: desde mi punto de vista, en mi opinión, yo propondría que + conjuntivo.",
+      "Discordar com suavidade: entiendo tu idea, pero...; no estoy del todo de acuerdo; ¿y si probamos otra opción?"
+     ],
+     "q": "A tua equipa tem de escolher um sítio para o jantar da empresa. O que proporias e porquê?",
+     "c": "Escreve uma intervenção curta: pede a palavra, dá a tua opinião e discorda de uma ideia com educação."
+    },
+    "pt_BR": {
+     "t": "Reuniões: dar a sua opinião",
+     "g": "Participe de uma reunião: dê sua opinião, acrescente ideias e discorde com educação.",
+     "p": [
+      "Pedir a palavra: si me permiten, ¿puedo decir algo?, quería añadir una cosa.",
+      "Dar opinião: desde mi punto de vista, en mi opinión, yo propondría que + subjuntivo.",
+      "Discordar com suavidade: entiendo tu idea, pero...; no estoy del todo de acuerdo; ¿y si probamos otra opción?"
+     ],
+     "q": "Sua equipe precisa escolher um lugar para o jantar da empresa. O que você proporia e por quê?",
+     "c": "Escreva uma fala curta: peça a palavra, dê sua opinião e discorde de uma ideia com educação."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "si me permiten",
+      "ex": "Si me permiten, me gustaría comentar algo."
+     },
+     {
+      "w": "desde mi punto de vista",
+      "ex": "Desde mi punto de vista, el plan es realista."
+     },
+     {
+      "w": "quería añadir",
+      "ex": "Quería añadir que el cliente necesita una respuesta hoy."
+     },
+     {
+      "w": "yo propondría que",
+      "ex": "Yo propondría que hagamos una prueba primero."
+     },
+     {
+      "w": "no estoy del todo de acuerdo",
+      "ex": "No estoy del todo de acuerdo con esa fecha."
+     },
+     {
+      "w": "el orden del día",
+      "ex": "El primer punto del orden del día es el presupuesto."
+     }
+    ],
+    "gram": "Reuniones: si me permiten; desde mi punto de vista + indicativo; propondría que + subjuntivo; no estoy del todo de acuerdo."
+   }
+  },
+  {
+   "d": 214,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Emails at work",
+     "g": "Write clear, polite work emails in Spanish.",
+     "p": [
+      "Opening: Estimado/a señor/a + surname, or Hola, Laura (less formal). Purpose: le escribo para + infinitive.",
+      "Attachments and requests: adjunto le envío el informe; le agradecería que me confirmara la fecha.",
+      "Closing: quedo a la espera de su respuesta; un saludo cordial; atentamente (very formal)."
+     ],
+     "q": "Who do you write emails to most often? Would you use usted or tú with them in Spanish?",
+     "c": "Write a five-line email asking a hotel to confirm your booking, using today's formulas."
+    },
+    "de": {
+     "t": "E-Mails im Beruf",
+     "g": "Schreib klare, höfliche Arbeits-E-Mails auf Spanisch.",
+     "p": [
+      "Anrede: Estimado/a señor/a + Nachname oder Hola, Laura (lockerer). Zweck: le escribo para + Infinitiv.",
+      "Anhänge und Bitten: adjunto le envío el informe; le agradecería que me confirmara la fecha.",
+      "Schluss: quedo a la espera de su respuesta; un saludo cordial; atentamente (sehr formell)."
+     ],
+     "q": "Wem schreibst du am häufigsten E-Mails? Würdest du auf Spanisch usted oder tú benutzen?",
+     "c": "Schreib eine E-Mail in fünf Zeilen, in der du ein Hotel um Buchungsbestätigung bittest."
+    },
+    "es": {
+     "t": "Correos en el trabajo",
+     "g": "Escribe correos de trabajo claros y educados en español.",
+     "p": [
+      "Saludo: Estimado/a señor/a + apellido, o Hola, Laura (menos formal). Motivo: le escribo para + infinitivo.",
+      "Adjuntos y peticiones: adjunto le envío el informe; le agradecería que me confirmara la fecha.",
+      "Despedida: quedo a la espera de su respuesta; un saludo cordial; atentamente (muy formal)."
+     ],
+     "q": "¿A quién escribes correos más a menudo? ¿Usarías usted o tú en español?",
+     "c": "Escribe un correo de cinco líneas pidiendo a un hotel que confirme tu reserva, con las fórmulas de hoy."
+    },
+    "fr": {
+     "t": "E-mails professionnels",
+     "g": "Écris des e-mails professionnels clairs et polis en espagnol.",
+     "p": [
+      "Formule d'appel : Estimado/a señor/a + nom, ou Hola, Laura (moins formel). Objet : le escribo para + infinitif.",
+      "Pièces jointes et demandes : adjunto le envío el informe ; le agradecería que me confirmara la fecha.",
+      "Clôture : quedo a la espera de su respuesta ; un saludo cordial ; atentamente (très formel)."
+     ],
+     "q": "À qui écris-tu le plus souvent des e-mails ? Utiliserais-tu usted ou tú en espagnol ?",
+     "c": "Écris un e-mail de cinq lignes pour demander à un hôtel de confirmer ta réservation."
+    },
+    "it": {
+     "t": "Email di lavoro",
+     "g": "Scrivi email di lavoro chiare e cortesi in spagnolo.",
+     "p": [
+      "Saluto: Estimado/a señor/a + cognome, o Hola, Laura (meno formale). Scopo: le escribo para + infinito.",
+      "Allegati e richieste: adjunto le envío el informe; le agradecería que me confirmara la fecha.",
+      "Chiusura: quedo a la espera de su respuesta; un saludo cordial; atentamente (molto formale)."
+     ],
+     "q": "A chi scrivi email più spesso? Useresti usted o tú in spagnolo?",
+     "c": "Scrivi un'email di cinque righe per chiedere a un hotel di confermare la prenotazione."
+    },
+    "pt": {
+     "t": "E-mails de trabalho",
+     "g": "Escreve e-mails de trabalho claros e educados em espanhol.",
+     "p": [
+      "Saudação: Estimado/a señor/a + apelido, ou Hola, Laura (menos formal). Motivo: le escribo para + infinitivo.",
+      "Anexos e pedidos: adjunto le envío el informe; le agradecería que me confirmara la fecha.",
+      "Despedida: quedo a la espera de su respuesta; un saludo cordial; atentamente (muito formal)."
+     ],
+     "q": "A quem escreves e-mails mais vezes? Usarias usted ou tú em espanhol?",
+     "c": "Escreve um e-mail de cinco linhas a pedir a um hotel que confirme a tua reserva."
+    },
+    "pt_BR": {
+     "t": "E-mails de trabalho",
+     "g": "Escreva e-mails de trabalho claros e educados em espanhol.",
+     "p": [
+      "Saudação: Estimado/a señor/a + sobrenome, ou Hola, Laura (menos formal). Motivo: le escribo para + infinitivo.",
+      "Anexos e pedidos: adjunto le envío el informe; le agradecería que me confirmara la fecha.",
+      "Despedida: quedo a la espera de su respuesta; un saludo cordial; atentamente (muito formal)."
+     ],
+     "q": "Para quem você mais escreve e-mails? Usaria usted ou tú em espanhol?",
+     "c": "Escreva um e-mail de cinco linhas pedindo a um hotel que confirme a sua reserva."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "estimada señora",
+      "ex": "Estimada señora López:"
+     },
+     {
+      "w": "le escribo para",
+      "ex": "Le escribo para solicitar información sobre el curso."
+     },
+     {
+      "w": "adjunto le envío",
+      "ex": "Adjunto le envío el presupuesto que nos pidió."
+     },
+     {
+      "w": "le agradecería que",
+      "ex": "Le agradecería que me respondiera antes del viernes."
+     },
+     {
+      "w": "quedo a la espera de",
+      "ex": "Quedo a la espera de su respuesta."
+     },
+     {
+      "w": "un saludo cordial",
+      "ex": "Un saludo cordial, Marta Ruiz."
+     }
+    ],
+    "gram": "Correo formal: Estimado/a + apellido; le escribo para + infinitivo; adjunto le envío; le agradecería que + imperfecto de subjuntivo."
+   }
+  },
+  {
+   "d": 215,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Presenting yourself professionally",
+     "g": "Give a short professional introduction: role, experience and goals.",
+     "p": [
+      "Role: soy ingeniera de software, trabajo como responsable de ventas en una empresa de turismo.",
+      "Experience: llevo cinco años en el sector, antes trabajaba en..., he participado en proyectos de...",
+      "Goals: ahora me gustaría..., mi objetivo es..., estoy buscando nuevas oportunidades en..."
+     ],
+     "q": "Introduce yourself professionally in three sentences: role, experience, goal.",
+     "c": "Record or write a 30-second elevator pitch about yourself in Spanish."
+    },
+    "de": {
+     "t": "Sich beruflich vorstellen",
+     "g": "Halte eine kurze berufliche Vorstellung: Rolle, Erfahrung und Ziele.",
+     "p": [
+      "Rolle: soy ingeniera de software, trabajo como responsable de ventas en una empresa de turismo.",
+      "Erfahrung: llevo cinco años en el sector, antes trabajaba en..., he participado en proyectos de...",
+      "Ziele: ahora me gustaría..., mi objetivo es..., estoy buscando nuevas oportunidades en..."
+     ],
+     "q": "Stell dich beruflich in drei Sätzen vor: Rolle, Erfahrung, Ziel.",
+     "c": "Nimm einen 30-Sekunden-Elevator-Pitch über dich auf Spanisch auf oder schreib ihn."
+    },
+    "es": {
+     "t": "Presentarte profesionalmente",
+     "g": "Haz una presentación profesional breve: puesto, experiencia y objetivos.",
+     "p": [
+      "Puesto: soy ingeniera de software, trabajo como responsable de ventas en una empresa de turismo.",
+      "Experiencia: llevo cinco años en el sector, antes trabajaba en..., he participado en proyectos de...",
+      "Objetivos: ahora me gustaría..., mi objetivo es..., estoy buscando nuevas oportunidades en..."
+     ],
+     "q": "Preséntate profesionalmente en tres frases: puesto, experiencia y objetivo.",
+     "c": "Graba o escribe una presentación de 30 segundos sobre ti en español."
+    },
+    "fr": {
+     "t": "Se présenter professionnellement",
+     "g": "Fais une courte présentation professionnelle : poste, expérience et objectifs.",
+     "p": [
+      "Poste : soy ingeniera de software, trabajo como responsable de ventas en una empresa de turismo.",
+      "Expérience : llevo cinco años en el sector, antes trabajaba en..., he participado en proyectos de...",
+      "Objectifs : ahora me gustaría..., mi objetivo es..., estoy buscando nuevas oportunidades en..."
+     ],
+     "q": "Présente-toi professionnellement en trois phrases : poste, expérience, objectif.",
+     "c": "Enregistre ou écris un pitch de 30 secondes sur toi en espagnol."
+    },
+    "it": {
+     "t": "Presentarsi professionalmente",
+     "g": "Fai una breve presentazione professionale: ruolo, esperienza e obiettivi.",
+     "p": [
+      "Ruolo: soy ingeniera de software, trabajo como responsable de ventas en una empresa de turismo.",
+      "Esperienza: llevo cinco años en el sector, antes trabajaba en..., he participado en proyectos de...",
+      "Obiettivi: ahora me gustaría..., mi objetivo es..., estoy buscando nuevas oportunidades en..."
+     ],
+     "q": "Presentati professionalmente in tre frasi: ruolo, esperienza, obiettivo.",
+     "c": "Registra o scrivi un pitch di 30 secondi su di te in spagnolo."
+    },
+    "pt": {
+     "t": "Apresentar-se profissionalmente",
+     "g": "Faz uma apresentação profissional curta: função, experiência e objetivos.",
+     "p": [
+      "Função: soy ingeniera de software, trabajo como responsable de ventas en una empresa de turismo.",
+      "Experiência: llevo cinco años en el sector, antes trabajaba en..., he participado en proyectos de...",
+      "Objetivos: ahora me gustaría..., mi objetivo es..., estoy buscando nuevas oportunidades en..."
+     ],
+     "q": "Apresenta-te profissionalmente em três frases: função, experiência, objetivo.",
+     "c": "Grava ou escreve uma apresentação de 30 segundos sobre ti em espanhol."
+    },
+    "pt_BR": {
+     "t": "Apresentar-se profissionalmente",
+     "g": "Faça uma apresentação profissional curta: cargo, experiência e objetivos.",
+     "p": [
+      "Cargo: soy ingeniera de software, trabajo como responsable de ventas en una empresa de turismo.",
+      "Experiência: llevo cinco años en el sector, antes trabajaba en..., he participado en proyectos de...",
+      "Objetivos: ahora me gustaría..., mi objetivo es..., estoy buscando nuevas oportunidades en..."
+     ],
+     "q": "Apresente-se profissionalmente em três frases: cargo, experiência, objetivo.",
+     "c": "Grave ou escreva um pitch de 30 segundos sobre você em espanhol."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "trabajo como",
+      "ex": "Trabajo como diseñadora en una agencia pequeña."
+     },
+     {
+      "w": "llevo ... años",
+      "ex": "Llevo cinco años en el sector del turismo."
+     },
+     {
+      "w": "el sector",
+      "ex": "El sector de la tecnología cambia muy rápido."
+     },
+     {
+      "w": "he participado en",
+      "ex": "He participado en proyectos internacionales."
+     },
+     {
+      "w": "mi objetivo es",
+      "ex": "Mi objetivo es liderar un equipo en el futuro."
+     },
+     {
+      "w": "estoy buscando",
+      "ex": "Estoy buscando nuevas oportunidades en Madrid."
+     }
+    ],
+    "gram": "Presentación: trabajo como + profesión; llevo + tiempo + en; he participado en; mi objetivo es + infinitivo."
+   }
+  },
+  {
+   "d": 216,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Negotiating simply",
+     "g": "Reach a simple agreement with ¿qué le parece si...?, podríamos and me parece justo.",
+     "p": [
+      "Propose: ¿qué le parece si...?, podríamos + infinitive, ¿y si hacemos...? (conditional = polite).",
+      "React: me parece justo, me parece un poco alto, no sé si es posible, eso me convence.",
+      "Close the deal: entonces, quedamos así; trato hecho; de acuerdo, lo dejamos en..."
+     ],
+     "q": "You want to swap a weekend shift with a colleague. How would you propose it?",
+     "c": "Write a six-line dialogue negotiating a delivery date, ending with trato hecho."
+    },
+    "de": {
+     "t": "Einfach verhandeln",
+     "g": "Erziele eine einfache Einigung mit ¿qué le parece si...?, podríamos und me parece justo.",
+     "p": [
+      "Vorschlagen: ¿qué le parece si...?, podríamos + Infinitiv, ¿y si hacemos...? (Konditional = höflich).",
+      "Reagieren: me parece justo, me parece un poco alto, no sé si es posible, eso me convence.",
+      "Abschließen: entonces, quedamos así; trato hecho; de acuerdo, lo dejamos en..."
+     ],
+     "q": "Du willst mit einem Kollegen eine Wochenendschicht tauschen. Wie würdest du es vorschlagen?",
+     "c": "Schreib einen Dialog in sechs Zeilen über einen Liefertermin, der mit trato hecho endet."
+    },
+    "es": {
+     "t": "Negociar de forma sencilla",
+     "g": "Llega a un acuerdo sencillo con ¿qué le parece si...?, podríamos y me parece justo.",
+     "p": [
+      "Proponer: ¿qué le parece si...?, podríamos + infinitivo, ¿y si hacemos...? (el condicional suaviza).",
+      "Reaccionar: me parece justo, me parece un poco alto, no sé si es posible, eso me convence.",
+      "Cerrar el trato: entonces, quedamos así; trato hecho; de acuerdo, lo dejamos en..."
+     ],
+     "q": "Quieres cambiar un turno de fin de semana con un compañero. ¿Cómo se lo propondrías?",
+     "c": "Escribe un diálogo de seis líneas negociando una fecha de entrega que termine con trato hecho."
+    },
+    "fr": {
+     "t": "Négocier simplement",
+     "g": "Trouve un accord simple avec ¿qué le parece si...?, podríamos et me parece justo.",
+     "p": [
+      "Proposer : ¿qué le parece si...?, podríamos + infinitif, ¿y si hacemos...? (le conditionnel adoucit).",
+      "Réagir : me parece justo, me parece un poco alto, no sé si es posible, eso me convence.",
+      "Conclure : entonces, quedamos así ; trato hecho ; de acuerdo, lo dejamos en..."
+     ],
+     "q": "Tu veux échanger un service du week-end avec un collègue. Comment le proposerais-tu ?",
+     "c": "Écris un dialogue de six lignes pour négocier une date de livraison, qui finit par trato hecho."
+    },
+    "it": {
+     "t": "Negoziare in modo semplice",
+     "g": "Raggiungi un accordo semplice con ¿qué le parece si...?, podríamos e me parece justo.",
+     "p": [
+      "Proporre: ¿qué le parece si...?, podríamos + infinito, ¿y si hacemos...? (il condizionale ammorbidisce).",
+      "Reagire: me parece justo, me parece un poco alto, no sé si es posible, eso me convence.",
+      "Chiudere: entonces, quedamos así; trato hecho; de acuerdo, lo dejamos en..."
+     ],
+     "q": "Vuoi scambiare un turno del fine settimana con un collega. Come glielo proporresti?",
+     "c": "Scrivi un dialogo di sei righe per negoziare una data di consegna, che finisca con trato hecho."
+    },
+    "pt": {
+     "t": "Negociar de forma simples",
+     "g": "Chega a um acordo simples com ¿qué le parece si...?, podríamos e me parece justo.",
+     "p": [
+      "Propor: ¿qué le parece si...?, podríamos + infinitivo, ¿y si hacemos...? (o condicional suaviza).",
+      "Reagir: me parece justo, me parece un poco alto, no sé si es posible, eso me convence.",
+      "Fechar: entonces, quedamos así; trato hecho; de acuerdo, lo dejamos en..."
+     ],
+     "q": "Queres trocar um turno de fim de semana com um colega. Como lho proporias?",
+     "c": "Escreve um diálogo de seis linhas a negociar uma data de entrega, terminando com trato hecho."
+    },
+    "pt_BR": {
+     "t": "Negociar de forma simples",
+     "g": "Chegue a um acordo simples com ¿qué le parece si...?, podríamos e me parece justo.",
+     "p": [
+      "Propor: ¿qué le parece si...?, podríamos + infinitivo, ¿y si hacemos...? (o condicional suaviza).",
+      "Reagir: me parece justo, me parece un poco alto, no sé si es posible, eso me convence.",
+      "Fechar: entonces, quedamos así; trato hecho; de acuerdo, lo dejamos en..."
+     ],
+     "q": "Você quer trocar um plantão de fim de semana com um colega. Como proporia isso?",
+     "c": "Escreva um diálogo de seis linhas negociando uma data de entrega, terminando com trato hecho."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "¿qué le parece si...?",
+      "ex": "¿Qué le parece si lo hablamos el lunes?"
+     },
+     {
+      "w": "podríamos",
+      "ex": "Podríamos dividir el trabajo entre los dos."
+     },
+     {
+      "w": "me parece justo",
+      "ex": "Me parece justo, acepto la propuesta."
+     },
+     {
+      "w": "me parece un poco alto",
+      "ex": "El precio me parece un poco alto."
+     },
+     {
+      "w": "trato hecho",
+      "ex": "Vale, cincuenta unidades el viernes. ¡Trato hecho!"
+     },
+     {
+      "w": "quedamos así",
+      "ex": "Entonces quedamos así: tú haces la primera parte."
+     }
+    ],
+    "gram": "Negociar: ¿qué le parece si + presente?; podríamos + infinitivo; me parece justo / un poco alto; trato hecho."
+   }
+  },
+  {
+   "d": 217,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Customer service Spanish",
+     "g": "Help customers politely: ¿en qué puedo ayudarle?, ahora mismo lo compruebo.",
+     "p": [
+      "Greet and offer help: buenos días, ¿en qué puedo ayudarle?; dígame.",
+      "Check and reassure: ahora mismo lo compruebo, un momento, por favor; disculpe las molestias.",
+      "Solve and close: lo solucionamos enseguida, ¿hay algo más en lo que pueda ayudarle?, gracias por su paciencia."
+     ],
+     "q": "Have you ever had excellent customer service? What did the person say or do?",
+     "c": "Write a short dialogue where a customer has a wrong order and you solve it politely."
+    },
+    "de": {
+     "t": "Spanisch im Kundenservice",
+     "g": "Hilf Kunden höflich: ¿en qué puedo ayudarle?, ahora mismo lo compruebo.",
+     "p": [
+      "Begrüßen und Hilfe anbieten: buenos días, ¿en qué puedo ayudarle?; dígame.",
+      "Prüfen und beruhigen: ahora mismo lo compruebo, un momento, por favor; disculpe las molestias.",
+      "Lösen und abschließen: lo solucionamos enseguida, ¿hay algo más en lo que pueda ayudarle?"
+     ],
+     "q": "Hattest du schon einmal hervorragenden Kundenservice? Was hat die Person gesagt oder getan?",
+     "c": "Schreib einen kurzen Dialog: Ein Kunde hat eine falsche Bestellung, und du löst es höflich."
+    },
+    "es": {
+     "t": "Español de atención al cliente",
+     "g": "Atiende a clientes con educación: ¿en qué puedo ayudarle?, ahora mismo lo compruebo.",
+     "p": [
+      "Saludar y ofrecer ayuda: buenos días, ¿en qué puedo ayudarle?; dígame.",
+      "Comprobar y tranquilizar: ahora mismo lo compruebo, un momento, por favor; disculpe las molestias.",
+      "Resolver y cerrar: lo solucionamos enseguida, ¿hay algo más en lo que pueda ayudarle?, gracias por su paciencia."
+     ],
+     "q": "¿Has recibido alguna vez una atención excelente? ¿Qué dijo o hizo esa persona?",
+     "c": "Escribe un diálogo corto: un cliente tiene un pedido equivocado y tú lo solucionas con amabilidad."
+    },
+    "fr": {
+     "t": "L'espagnol du service client",
+     "g": "Aide les clients poliment : ¿en qué puedo ayudarle?, ahora mismo lo compruebo.",
+     "p": [
+      "Accueillir et proposer : buenos días, ¿en qué puedo ayudarle? ; dígame.",
+      "Vérifier et rassurer : ahora mismo lo compruebo, un momento, por favor ; disculpe las molestias.",
+      "Résoudre et conclure : lo solucionamos enseguida, ¿hay algo más en lo que pueda ayudarle?"
+     ],
+     "q": "As-tu déjà reçu un excellent service client ? Qu'a dit ou fait la personne ?",
+     "c": "Écris un court dialogue : un client a une commande erronée et tu règles le problème poliment."
+    },
+    "it": {
+     "t": "Spagnolo per il servizio clienti",
+     "g": "Aiuta i clienti con cortesia: ¿en qué puedo ayudarle?, ahora mismo lo compruebo.",
+     "p": [
+      "Salutare e offrire aiuto: buenos días, ¿en qué puedo ayudarle?; dígame.",
+      "Controllare e rassicurare: ahora mismo lo compruebo, un momento, por favor; disculpe las molestias.",
+      "Risolvere e chiudere: lo solucionamos enseguida, ¿hay algo más en lo que pueda ayudarle?"
+     ],
+     "q": "Hai mai ricevuto un servizio clienti eccellente? Cosa ha detto o fatto la persona?",
+     "c": "Scrivi un breve dialogo: un cliente ha un ordine sbagliato e tu risolvi con gentilezza."
+    },
+    "pt": {
+     "t": "Espanhol de apoio ao cliente",
+     "g": "Atende clientes com educação: ¿en qué puedo ayudarle?, ahora mismo lo compruebo.",
+     "p": [
+      "Cumprimentar e oferecer ajuda: buenos días, ¿en qué puedo ayudarle?; dígame.",
+      "Verificar e tranquilizar: ahora mismo lo compruebo, un momento, por favor; disculpe las molestias.",
+      "Resolver e fechar: lo solucionamos enseguida, ¿hay algo más en lo que pueda ayudarle?"
+     ],
+     "q": "Já tiveste um atendimento excelente? O que disse ou fez essa pessoa?",
+     "c": "Escreve um diálogo curto: um cliente recebeu a encomenda errada e tu resolves com simpatia."
+    },
+    "pt_BR": {
+     "t": "Espanhol de atendimento ao cliente",
+     "g": "Atenda clientes com educação: ¿en qué puedo ayudarle?, ahora mismo lo compruebo.",
+     "p": [
+      "Cumprimentar e oferecer ajuda: buenos días, ¿en qué puedo ayudarle?; dígame.",
+      "Verificar e tranquilizar: ahora mismo lo compruebo, un momento, por favor; disculpe las molestias.",
+      "Resolver e fechar: lo solucionamos enseguida, ¿hay algo más en lo que pueda ayudarle?"
+     ],
+     "q": "Você já teve um atendimento excelente? O que a pessoa disse ou fez?",
+     "c": "Escreva um diálogo curto: um cliente recebeu o pedido errado e você resolve com simpatia."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "¿en qué puedo ayudarle?",
+      "ex": "Buenas tardes, ¿en qué puedo ayudarle?"
+     },
+     {
+      "w": "ahora mismo lo compruebo",
+      "ex": "Un momento, ahora mismo lo compruebo."
+     },
+     {
+      "w": "disculpe las molestias",
+      "ex": "Disculpe las molestias, ha sido un error nuestro."
+     },
+     {
+      "w": "lo solucionamos enseguida",
+      "ex": "No se preocupe, lo solucionamos enseguida."
+     },
+     {
+      "w": "el pedido",
+      "ex": "Su pedido llegará mañana por la mañana."
+     },
+     {
+      "w": "gracias por su paciencia",
+      "ex": "Muchas gracias por su paciencia."
+     }
+    ],
+    "gram": "Atención al cliente con usted: ¿en qué puedo ayudarle?, dígame, disculpe, lo compruebo, lo solucionamos enseguida."
+   }
+  },
+  {
+   "d": 218,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Phone and video calls",
+     "g": "Handle online calls in Spanish: estás silenciado, ¿me oyes bien?, comparto pantalla.",
+     "p": [
+      "Sound checks: ¿me oyes bien?, se te oye entrecortado, estás silenciado, activa el micrófono.",
+      "Video: no se te ve, apaga la cámara, comparto pantalla, ¿veis mi pantalla?",
+      "Connection: se ha cortado, se me ha congelado la imagen, te vuelvo a llamar, ¿me repites eso?"
+     ],
+     "q": "What is the funniest or strangest thing that has happened to you on a video call?",
+     "c": "Write five sentences you might need at the start of a video call with Spanish-speaking colleagues."
+    },
+    "de": {
+     "t": "Telefon- und Videoanrufe",
+     "g": "Meistere Online-Anrufe auf Spanisch: estás silenciado, ¿me oyes bien?, comparto pantalla.",
+     "p": [
+      "Tonprobe: ¿me oyes bien?, se te oye entrecortado, estás silenciado, activa el micrófono.",
+      "Video: no se te ve, apaga la cámara, comparto pantalla, ¿veis mi pantalla?",
+      "Verbindung: se ha cortado, se me ha congelado la imagen, te vuelvo a llamar, ¿me repites eso?"
+     ],
+     "q": "Was war das Lustigste oder Seltsamste, das dir in einem Videoanruf passiert ist?",
+     "c": "Schreib fünf Sätze, die du zu Beginn eines Videoanrufs mit spanischsprachigen Kollegen brauchst."
+    },
+    "es": {
+     "t": "Llamadas y videollamadas",
+     "g": "Desenvuélvete en llamadas online: estás silenciado, ¿me oyes bien?, comparto pantalla.",
+     "p": [
+      "Sonido: ¿me oyes bien?, se te oye entrecortado, estás silenciado, activa el micrófono.",
+      "Vídeo: no se te ve, apaga la cámara, comparto pantalla, ¿veis mi pantalla?",
+      "Conexión: se ha cortado, se me ha congelado la imagen, te vuelvo a llamar, ¿me repites eso?"
+     ],
+     "q": "¿Qué es lo más gracioso o raro que te ha pasado en una videollamada?",
+     "c": "Escribe cinco frases útiles para empezar una videollamada con compañeros hispanohablantes."
+    },
+    "fr": {
+     "t": "Appels et visioconférences",
+     "g": "Gère les appels en ligne en espagnol : estás silenciado, ¿me oyes bien?, comparto pantalla.",
+     "p": [
+      "Son : ¿me oyes bien?, se te oye entrecortado, estás silenciado, activa el micrófono.",
+      "Vidéo : no se te ve, apaga la cámara, comparto pantalla, ¿veis mi pantalla?",
+      "Connexion : se ha cortado, se me ha congelado la imagen, te vuelvo a llamar, ¿me repites eso?"
+     ],
+     "q": "Quelle est la chose la plus drôle ou étrange qui t'est arrivée en visio ?",
+     "c": "Écris cinq phrases utiles pour commencer une visio avec des collègues hispanophones."
+    },
+    "it": {
+     "t": "Telefonate e videochiamate",
+     "g": "Gestisci le chiamate online in spagnolo: estás silenciado, ¿me oyes bien?, comparto pantalla.",
+     "p": [
+      "Audio: ¿me oyes bien?, se te oye entrecortado, estás silenciado, activa el micrófono.",
+      "Video: no se te ve, apaga la cámara, comparto pantalla, ¿veis mi pantalla?",
+      "Connessione: se ha cortado, se me ha congelado la imagen, te vuelvo a llamar, ¿me repites eso?"
+     ],
+     "q": "Qual è la cosa più divertente o strana che ti è successa in videochiamata?",
+     "c": "Scrivi cinque frasi utili per iniziare una videochiamata con colleghi ispanofoni."
+    },
+    "pt": {
+     "t": "Chamadas e videochamadas",
+     "g": "Desenrasca-te em chamadas online: estás silenciado, ¿me oyes bien?, comparto pantalla.",
+     "p": [
+      "Som: ¿me oyes bien?, se te oye entrecortado, estás silenciado, activa el micrófono.",
+      "Vídeo: no se te ve, apaga la cámara, comparto pantalla, ¿veis mi pantalla?",
+      "Ligação: se ha cortado, se me ha congelado la imagen, te vuelvo a llamar, ¿me repites eso?"
+     ],
+     "q": "Qual foi a coisa mais engraçada ou estranha que te aconteceu numa videochamada?",
+     "c": "Escreve cinco frases úteis para começar uma videochamada com colegas hispanófonos."
+    },
+    "pt_BR": {
+     "t": "Ligações e videochamadas",
+     "g": "Se vire em chamadas online: estás silenciado, ¿me oyes bien?, comparto pantalla.",
+     "p": [
+      "Som: ¿me oyes bien?, se te oye entrecortado, estás silenciado, activa el micrófono.",
+      "Vídeo: no se te ve, apaga la cámara, comparto pantalla, ¿veis mi pantalla?",
+      "Conexão: se ha cortado, se me ha congelado la imagen, te vuelvo a llamar, ¿me repites eso?"
+     ],
+     "q": "Qual foi a coisa mais engraçada ou estranha que aconteceu com você numa videochamada?",
+     "c": "Escreva cinco frases úteis para começar uma videochamada com colegas hispanofalantes."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "estás silenciado",
+      "ex": "Perdona, estás silenciado, no te oímos."
+     },
+     {
+      "w": "¿me oyes bien?",
+      "ex": "Hola a todos, ¿me oís bien?"
+     },
+     {
+      "w": "comparto pantalla",
+      "ex": "Ahora comparto pantalla y os enseño el gráfico."
+     },
+     {
+      "w": "se te oye entrecortado",
+      "ex": "Se te oye entrecortado, ¿puedes acercarte al router?"
+     },
+     {
+      "w": "se ha cortado",
+      "ex": "Lo siento, se ha cortado la llamada."
+     },
+     {
+      "w": "te vuelvo a llamar",
+      "ex": "No hay buena conexión, te vuelvo a llamar."
+     }
+    ],
+    "gram": "Videollamadas: se te oye / no se te ve (se + te + verbo); estás silenciado; comparto pantalla; se ha cortado."
+   }
+  },
+  {
+   "d": 219,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Workplace small talk",
+     "g": "Build good relations at work: ¿qué tal el fin de semana?, ¿cómo va el proyecto?",
+     "p": [
+      "Openers: ¿qué tal el fin de semana?, ¿hiciste algo especial?, ¿qué tal las vacaciones?",
+      "Work chat: ¿cómo va el proyecto?, ¡vaya semana!, ¿tomamos un café?",
+      "Keep it light and friendly: weather, weekend plans, food, series. Show interest: ¿ah, sí? ¡Qué bien!"
+     ],
+     "q": "It's Monday at the coffee machine. How do you start a chat with a colleague?",
+     "c": "Write a short coffee-break chat between two colleagues with three openers and two reactions."
+    },
+    "de": {
+     "t": "Smalltalk bei der Arbeit",
+     "g": "Pflege gute Beziehungen bei der Arbeit: ¿qué tal el fin de semana?, ¿cómo va el proyecto?",
+     "p": [
+      "Einstiege: ¿qué tal el fin de semana?, ¿hiciste algo especial?, ¿qué tal las vacaciones?",
+      "Arbeitsgespräch: ¿cómo va el proyecto?, ¡vaya semana!, ¿tomamos un café?",
+      "Leicht und freundlich: Wetter, Wochenende, Essen, Serien. Interesse zeigen: ¿ah, sí? ¡Qué bien!"
+     ],
+     "q": "Montag an der Kaffeemaschine. Wie beginnst du ein Gespräch mit einer Kollegin?",
+     "c": "Schreib einen kurzen Kaffeepausen-Dialog mit drei Einstiegen und zwei Reaktionen."
+    },
+    "es": {
+     "t": "Charla informal en el trabajo",
+     "g": "Crea buen ambiente en el trabajo: ¿qué tal el fin de semana?, ¿cómo va el proyecto?",
+     "p": [
+      "Para empezar: ¿qué tal el fin de semana?, ¿hiciste algo especial?, ¿qué tal las vacaciones?",
+      "Sobre el trabajo: ¿cómo va el proyecto?, ¡vaya semana!, ¿tomamos un café?",
+      "Temas ligeros y amables: el tiempo, planes, comida, series. Muestra interés: ¿ah, sí? ¡Qué bien!"
+     ],
+     "q": "Es lunes en la máquina de café. ¿Cómo empiezas una charla con una compañera?",
+     "c": "Escribe una charla corta de pausa para el café con tres preguntas para empezar y dos reacciones."
+    },
+    "fr": {
+     "t": "Small talk au travail",
+     "g": "Crée de bonnes relations au travail : ¿qué tal el fin de semana?, ¿cómo va el proyecto?",
+     "p": [
+      "Pour lancer : ¿qué tal el fin de semana?, ¿hiciste algo especial?, ¿qué tal las vacaciones?",
+      "Côté travail : ¿cómo va el proyecto?, ¡vaya semana!, ¿tomamos un café?",
+      "Reste léger : météo, week-end, cuisine, séries. Montre ton intérêt : ¿ah, sí? ¡Qué bien!"
+     ],
+     "q": "C'est lundi devant la machine à café. Comment lances-tu la conversation avec une collègue ?",
+     "c": "Écris une courte discussion de pause café avec trois questions d'ouverture et deux réactions."
+    },
+    "it": {
+     "t": "Due chiacchiere al lavoro",
+     "g": "Crea buoni rapporti al lavoro: ¿qué tal el fin de semana?, ¿cómo va el proyecto?",
+     "p": [
+      "Per iniziare: ¿qué tal el fin de semana?, ¿hiciste algo especial?, ¿qué tal las vacaciones?",
+      "Sul lavoro: ¿cómo va el proyecto?, ¡vaya semana!, ¿tomamos un café?",
+      "Temi leggeri: tempo, fine settimana, cibo, serie. Mostra interesse: ¿ah, sí? ¡Qué bien!"
+     ],
+     "q": "È lunedì alla macchinetta del caffè. Come inizi a chiacchierare con una collega?",
+     "c": "Scrivi una breve chiacchierata in pausa caffè con tre domande d'apertura e due reazioni."
+    },
+    "pt": {
+     "t": "Conversa informal no trabalho",
+     "g": "Cria boas relações no trabalho: ¿qué tal el fin de semana?, ¿cómo va el proyecto?",
+     "p": [
+      "Para começar: ¿qué tal el fin de semana?, ¿hiciste algo especial?, ¿qué tal las vacaciones?",
+      "Sobre trabalho: ¿cómo va el proyecto?, ¡vaya semana!, ¿tomamos un café?",
+      "Temas leves: tempo, fim de semana, comida, séries. Mostra interesse: ¿ah, sí? ¡Qué bien!"
+     ],
+     "q": "É segunda-feira junto à máquina do café. Como começas a conversa com uma colega?",
+     "c": "Escreve uma conversa curta de pausa para café com três perguntas de abertura e duas reações."
+    },
+    "pt_BR": {
+     "t": "Papo informal no trabalho",
+     "g": "Crie boas relações no trabalho: ¿qué tal el fin de semana?, ¿cómo va el proyecto?",
+     "p": [
+      "Para começar: ¿qué tal el fin de semana?, ¿hiciste algo especial?, ¿qué tal las vacaciones?",
+      "Sobre trabalho: ¿cómo va el proyecto?, ¡vaya semana!, ¿tomamos un café?",
+      "Temas leves: tempo, fim de semana, comida, séries. Mostre interesse: ¿ah, sí? ¡Qué bien!"
+     ],
+     "q": "É segunda-feira na máquina de café. Como você começa um papo com uma colega?",
+     "c": "Escreva um papo curto de pausa para o café com três perguntas de abertura e duas reações."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "¿qué tal el fin de semana?",
+      "ex": "¡Buenos días! ¿Qué tal el fin de semana?"
+     },
+     {
+      "w": "¿cómo va el proyecto?",
+      "ex": "Oye, ¿cómo va el proyecto nuevo?"
+     },
+     {
+      "w": "¡vaya semana!",
+      "ex": "¡Vaya semana! Por fin es viernes."
+     },
+     {
+      "w": "¿tomamos un café?",
+      "ex": "¿Tomamos un café a las once?"
+     },
+     {
+      "w": "¿hiciste algo especial?",
+      "ex": "¿Hiciste algo especial el sábado?"
+     },
+     {
+      "w": "¡qué bien!",
+      "ex": "¿Te vas a Asturias? ¡Qué bien!"
+     }
+    ],
+    "gram": "Charla informal: ¿qué tal + sustantivo? (¿qué tal el fin de semana?), ¿cómo va...?, exclamaciones: ¡vaya semana!, ¡qué bien!"
+   }
+  },
+  {
+   "d": 220,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Goals and ambitions",
+     "g": "Share plans and dreams: mi objetivo es, me encantaría, tengo pensado.",
+     "p": [
+      "Plans: tengo pensado + infinitive (I'm planning to), voy a + infinitive, el año que viene quiero...",
+      "Dreams: me encantaría + infinitive, mi sueño es..., ojalá algún día pueda...",
+      "Goals: mi objetivo es..., para conseguirlo, voy a...; poco a poco, paso a paso."
+     ],
+     "q": "What is one professional goal and one personal dream you have?",
+     "c": "Write your three goals for the next year in Spanish, each with a first step: para conseguirlo..."
+    },
+    "de": {
+     "t": "Ziele und Ambitionen",
+     "g": "Teile Pläne und Träume: mi objetivo es, me encantaría, tengo pensado.",
+     "p": [
+      "Pläne: tengo pensado + Infinitiv (ich habe vor), voy a + Infinitiv, el año que viene quiero...",
+      "Träume: me encantaría + Infinitiv, mi sueño es..., ojalá algún día pueda...",
+      "Ziele: mi objetivo es..., para conseguirlo, voy a...; poco a poco, paso a paso."
+     ],
+     "q": "Was ist ein berufliches Ziel und ein persönlicher Traum von dir?",
+     "c": "Schreib deine drei Ziele fürs nächste Jahr auf Spanisch, jedes mit einem ersten Schritt: para conseguirlo..."
+    },
+    "es": {
+     "t": "Metas y ambiciones",
+     "g": "Comparte planes y sueños: mi objetivo es, me encantaría, tengo pensado.",
+     "p": [
+      "Planes: tengo pensado + infinitivo, voy a + infinitivo, el año que viene quiero...",
+      "Sueños: me encantaría + infinitivo, mi sueño es..., ojalá algún día pueda...",
+      "Metas: mi objetivo es..., para conseguirlo, voy a...; poco a poco, paso a paso."
+     ],
+     "q": "¿Cuál es una meta profesional y un sueño personal que tienes?",
+     "c": "Escribe tus tres metas para el próximo año, cada una con un primer paso: para conseguirlo..."
+    },
+    "fr": {
+     "t": "Objectifs et ambitions",
+     "g": "Partage tes projets et tes rêves : mi objetivo es, me encantaría, tengo pensado.",
+     "p": [
+      "Projets : tengo pensado + infinitif (j'ai l'intention de), voy a + infinitif, el año que viene quiero...",
+      "Rêves : me encantaría + infinitif, mi sueño es..., ojalá algún día pueda...",
+      "Objectifs : mi objetivo es..., para conseguirlo, voy a... ; poco a poco, paso a paso."
+     ],
+     "q": "Quel est ton objectif professionnel et ton rêve personnel ?",
+     "c": "Écris tes trois objectifs pour l'année prochaine, chacun avec une première étape : para conseguirlo..."
+    },
+    "it": {
+     "t": "Obiettivi e ambizioni",
+     "g": "Condividi progetti e sogni: mi objetivo es, me encantaría, tengo pensado.",
+     "p": [
+      "Progetti: tengo pensado + infinito (ho intenzione di), voy a + infinito, el año que viene quiero...",
+      "Sogni: me encantaría + infinito, mi sueño es..., ojalá algún día pueda...",
+      "Obiettivi: mi objetivo es..., para conseguirlo, voy a...; poco a poco, paso a paso."
+     ],
+     "q": "Qual è un tuo obiettivo professionale e un tuo sogno personale?",
+     "c": "Scrivi i tuoi tre obiettivi per il prossimo anno, ognuno con un primo passo: para conseguirlo..."
+    },
+    "pt": {
+     "t": "Metas e ambições",
+     "g": "Partilha planos e sonhos: mi objetivo es, me encantaría, tengo pensado.",
+     "p": [
+      "Planos: tengo pensado + infinitivo (tenciono), voy a + infinitivo, el año que viene quiero...",
+      "Sonhos: me encantaría + infinitivo, mi sueño es..., ojalá algún día pueda...",
+      "Metas: mi objetivo es..., para conseguirlo, voy a...; poco a poco, paso a paso."
+     ],
+     "q": "Qual é uma meta profissional e um sonho pessoal que tens?",
+     "c": "Escreve as tuas três metas para o próximo ano, cada uma com um primeiro passo: para conseguirlo..."
+    },
+    "pt_BR": {
+     "t": "Metas e ambições",
+     "g": "Compartilhe planos e sonhos: mi objetivo es, me encantaría, tengo pensado.",
+     "p": [
+      "Planos: tengo pensado + infinitivo (estou pensando em), voy a + infinitivo, el año que viene quiero...",
+      "Sonhos: me encantaría + infinitivo, mi sueño es..., ojalá algún día pueda...",
+      "Metas: mi objetivo es..., para conseguirlo, voy a...; poco a poco, paso a paso."
+     ],
+     "q": "Qual é uma meta profissional e um sonho pessoal que você tem?",
+     "c": "Escreva suas três metas para o próximo ano, cada uma com um primeiro passo: para conseguirlo..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "mi objetivo es",
+      "ex": "Mi objetivo es hablar español con fluidez."
+     },
+     {
+      "w": "tengo pensado",
+      "ex": "Tengo pensado hacer un curso de fotografía."
+     },
+     {
+      "w": "me encantaría",
+      "ex": "Me encantaría vivir un año en Buenos Aires."
+     },
+     {
+      "w": "mi sueño es",
+      "ex": "Mi sueño es abrir una pequeña librería."
+     },
+     {
+      "w": "para conseguirlo",
+      "ex": "Para conseguirlo, voy a practicar cada día."
+     },
+     {
+      "w": "paso a paso",
+      "ex": "Paso a paso, todo es posible."
+     }
+    ],
+    "gram": "Metas: mi objetivo es + infinitivo; tengo pensado + infinitivo; me encantaría + infinitivo; ojalá algún día pueda + infinitivo."
+   }
+  }
+ ]
+}

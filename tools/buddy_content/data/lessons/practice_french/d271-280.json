@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_french",
+ "lessons": [
+  {
+   "d": 271,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Gastronomy and wine regions",
+     "g": "Explore French gastronomy in French: terroir, AOC labels and famous regions like Bordeaux and Burgundy.",
+     "p": [
+      "Gastronomy: la gastronomie française ; le repas gastronomique des Français est au patrimoine de l'UNESCO depuis 2010",
+      "Quality labels: une AOC (appellation d'origine contrôlée), le terroir, un produit du terroir",
+      "Regions: le Bordelais, la Bourgogne, la Champagne ; un fromage AOP comme le comté"
+     ],
+     "q": "Which regional food from your country should every visitor try? Describe it in French with de + region.",
+     "c": "Choose a French region and write three sentences about its typical products, using the regional adjective."
+    },
+    "de": {
+     "t": "Gastronomie und Weinregionen",
+     "g": "Du entdeckst die französische Küche: Terroir, AOC-Siegel und Regionen wie Bordeaux und Burgund.",
+     "p": [
+      "Gastronomie: la gastronomie française ; le repas gastronomique des Français est au patrimoine de l'UNESCO depuis 2010",
+      "Gütesiegel: une AOC (appellation d'origine contrôlée), le terroir, un produit du terroir",
+      "Regionen: le Bordelais, la Bourgogne, la Champagne ; un fromage AOP comme le comté"
+     ],
+     "q": "Welches regionale Gericht aus deinem Land sollte jeder probieren? Beschreib es auf Französisch mit de + Region.",
+     "c": "Wähle eine französische Region und schreib drei Sätze über ihre typischen Produkte, mit dem Regionsadjektiv."
+    },
+    "es": {
+     "t": "Gastronomía y regiones vinícolas",
+     "g": "Descubre la gastronomía francesa en francés: terroir, sellos AOC y regiones como Burdeos y Borgoña.",
+     "p": [
+      "Gastronomía: la gastronomie française ; le repas gastronomique des Français est au patrimoine de l'UNESCO depuis 2010",
+      "Sellos de calidad: une AOC (appellation d'origine contrôlée), le terroir, un produit du terroir",
+      "Regiones: le Bordelais, la Bourgogne, la Champagne ; un fromage AOP comme le comté"
+     ],
+     "q": "¿Qué plato regional de tu país debería probar todo visitante? Descríbelo en francés con de + región.",
+     "c": "Elige una región francesa y escribe tres frases sobre sus productos típicos, con el adjetivo regional."
+    },
+    "fr": {
+     "t": "Gastronomie et régions viticoles",
+     "g": "Découvrir la gastronomie française : terroir, AOC et grandes régions comme Bordeaux et la Bourgogne.",
+     "p": [
+      "La gastronomie : la gastronomie française ; le repas gastronomique des Français est au patrimoine de l'UNESCO depuis 2010",
+      "Les labels : une AOC (appellation d'origine contrôlée), le terroir, un produit du terroir",
+      "Les régions : le Bordelais, la Bourgogne, la Champagne ; un fromage AOP comme le comté"
+     ],
+     "q": "Quel plat régional de ton pays chaque visiteur devrait-il goûter ? Décris-le avec de + région.",
+     "c": "Choisis une région française et écris trois phrases sur ses produits typiques, avec l'adjectif régional."
+    },
+    "it": {
+     "t": "Gastronomia e regioni vinicole",
+     "g": "Scopri la gastronomia francese in francese: terroir, marchi AOC e regioni come Bordeaux e Borgogna.",
+     "p": [
+      "Gastronomia: la gastronomie française ; le repas gastronomique des Français est au patrimoine de l'UNESCO depuis 2010",
+      "Marchi di qualità: une AOC (appellation d'origine contrôlée), le terroir, un produit du terroir",
+      "Regioni: le Bordelais, la Bourgogne, la Champagne ; un fromage AOP comme le comté"
+     ],
+     "q": "Quale piatto regionale del tuo paese dovrebbe assaggiare ogni visitatore? Descrivilo in francese con de + regione.",
+     "c": "Scegli una regione francese e scrivi tre frasi sui suoi prodotti tipici, con l'aggettivo regionale."
+    },
+    "pt": {
+     "t": "Gastronomia e regiões vinícolas",
+     "g": "Descobre a gastronomia francesa em francês: terroir, selos AOC e regiões como Bordéus e Borgonha.",
+     "p": [
+      "Gastronomia: la gastronomie française ; le repas gastronomique des Français est au patrimoine de l'UNESCO depuis 2010",
+      "Selos de qualidade: une AOC (appellation d'origine contrôlée), le terroir, un produit du terroir",
+      "Regiões: le Bordelais, la Bourgogne, la Champagne ; un fromage AOP comme le comté"
+     ],
+     "q": "Que prato regional do teu país todos os visitantes deviam provar? Descreve-o em francês com de + região.",
+     "c": "Escolhe uma região francesa e escreve três frases sobre os seus produtos típicos, com o adjetivo regional."
+    },
+    "pt_BR": {
+     "t": "Gastronomia e regiões de vinho",
+     "g": "Descubra a gastronomia francesa em francês: terroir, selos AOC e regiões como Bordeaux e Borgonha.",
+     "p": [
+      "Gastronomia: la gastronomie française ; le repas gastronomique des Français est au patrimoine de l'UNESCO depuis 2010",
+      "Selos de qualidade: une AOC (appellation d'origine contrôlée), le terroir, un produit du terroir",
+      "Regiões: le Bordelais, la Bourgogne, la Champagne ; un fromage AOP comme le comté"
+     ],
+     "q": "Que prato regional do seu país todo visitante deveria provar? Descreva em francês com de + região.",
+     "c": "Escolha uma região francesa e escreva três frases sobre seus produtos típicos, com o adjetivo regional."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la gastronomie",
+      "ex": "La gastronomie lyonnaise est célèbre dans le monde entier."
+     },
+     {
+      "w": "le terroir",
+      "ex": "Ce fromage a le goût de son terroir."
+     },
+     {
+      "w": "une appellation d'origine",
+      "ex": "Le roquefort a une appellation d'origine protégée."
+     },
+     {
+      "w": "un produit régional",
+      "ex": "Au marché, on trouve beaucoup de produits régionaux."
+     },
+     {
+      "w": "un vignoble",
+      "ex": "Les vignobles de Bourgogne sont magnifiques en automne."
+     },
+     {
+      "w": "un accord mets et vins",
+      "ex": "Le serveur nous a conseillé un accord mets et vins."
+     }
+    ],
+    "gram": "Origine : un vin de Bourgogne, un fromage du Jura (de + région) ; adjectif de lieu : la cuisine lyonnaise, les vins bordelais."
+   }
+  },
+  {
+   "d": 272,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Cooking conversation",
+     "g": "Talk like a cook in French: mijoter, faire revenir, assaisonner, and give recipe steps.",
+     "p": [
+      "Techniques: mijoter, faire revenir, faire dorer, assaisonner, émincer",
+      "Heat and quantities: à feu doux, à feu vif, une pincée de sel, un filet d'huile d'olive",
+      "A recipe step: Faites revenir les oignons, puis laissez mijoter vingt minutes."
+     ],
+     "q": "What dish do you cook best? Explain the first three steps in French, like a recipe.",
+     "c": "Write a five-step recipe in French for a simple dish, using the imperative and laissez + infinitive."
+    },
+    "de": {
+     "t": "Küchengespräche",
+     "g": "Du sprichst wie ein Koch auf Französisch: mijoter, faire revenir, assaisonner und Rezeptschritte.",
+     "p": [
+      "Techniken: mijoter, faire revenir, faire dorer, assaisonner, émincer",
+      "Hitze und Mengen: à feu doux, à feu vif, une pincée de sel, un filet d'huile d'olive",
+      "Ein Rezeptschritt: Faites revenir les oignons, puis laissez mijoter vingt minutes."
+     ],
+     "q": "Welches Gericht kochst du am besten? Erklär die ersten drei Schritte auf Französisch wie ein Rezept.",
+     "c": "Schreib ein Rezept in fünf Schritten für ein einfaches Gericht, mit Imperativ und laissez + Infinitiv."
+    },
+    "es": {
+     "t": "Hablar de cocina",
+     "g": "Habla como un cocinero en francés: mijoter, faire revenir, assaisonner y pasos de receta.",
+     "p": [
+      "Técnicas: mijoter, faire revenir, faire dorer, assaisonner, émincer",
+      "Fuego y cantidades: à feu doux, à feu vif, une pincée de sel, un filet d'huile d'olive",
+      "Un paso de receta: Faites revenir les oignons, puis laissez mijoter vingt minutes."
+     ],
+     "q": "¿Qué plato cocinas mejor? Explica los tres primeros pasos en francés, como una receta.",
+     "c": "Escribe una receta de cinco pasos en francés para un plato sencillo, con imperativo y laissez + infinitivo."
+    },
+    "fr": {
+     "t": "Parler cuisine",
+     "g": "Parler comme un cuisinier : mijoter, faire revenir, assaisonner et donner les étapes d'une recette.",
+     "p": [
+      "Les techniques : mijoter, faire revenir, faire dorer, assaisonner, émincer",
+      "Feu et quantités : à feu doux, à feu vif, une pincée de sel, un filet d'huile d'olive",
+      "Une étape : Faites revenir les oignons, puis laissez mijoter vingt minutes."
+     ],
+     "q": "Quel plat cuisines-tu le mieux ? Explique les trois premières étapes comme une recette.",
+     "c": "Écris une recette en cinq étapes pour un plat simple, avec l'impératif et laissez + infinitif."
+    },
+    "it": {
+     "t": "Parlare di cucina",
+     "g": "Parla come un cuoco in francese: mijoter, faire revenir, assaisonner e i passi di una ricetta.",
+     "p": [
+      "Tecniche: mijoter, faire revenir, faire dorer, assaisonner, émincer",
+      "Fuoco e quantità: à feu doux, à feu vif, une pincée de sel, un filet d'huile d'olive",
+      "Un passo della ricetta: Faites revenir les oignons, puis laissez mijoter vingt minutes."
+     ],
+     "q": "Qual è il piatto che cucini meglio? Spiega i primi tre passi in francese, come una ricetta.",
+     "c": "Scrivi una ricetta in cinque passi per un piatto semplice, con l'imperativo e laissez + infinito."
+    },
+    "pt": {
+     "t": "Conversa de cozinha",
+     "g": "Fala como um cozinheiro em francês: mijoter, faire revenir, assaisonner e passos de receita.",
+     "p": [
+      "Técnicas: mijoter, faire revenir, faire dorer, assaisonner, émincer",
+      "Lume e quantidades: à feu doux, à feu vif, une pincée de sel, un filet d'huile d'olive",
+      "Um passo da receita: Faites revenir les oignons, puis laissez mijoter vingt minutes."
+     ],
+     "q": "Que prato cozinhas melhor? Explica os três primeiros passos em francês, como uma receita.",
+     "c": "Escreve uma receita de cinco passos em francês para um prato simples, com imperativo e laissez + infinitivo."
+    },
+    "pt_BR": {
+     "t": "Papo de cozinha",
+     "g": "Fale como um cozinheiro em francês: mijoter, faire revenir, assaisonner e passos de receita.",
+     "p": [
+      "Técnicas: mijoter, faire revenir, faire dorer, assaisonner, émincer",
+      "Fogo e quantidades: à feu doux, à feu vif, une pincée de sel, un filet d'huile d'olive",
+      "Um passo da receita: Faites revenir les oignons, puis laissez mijoter vingt minutes."
+     ],
+     "q": "Qual prato você cozinha melhor? Explique os três primeiros passos em francês, como uma receita.",
+     "c": "Escreva uma receita de cinco passos em francês para um prato simples, com imperativo e laissez + infinitivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "mijoter",
+      "ex": "Le bœuf bourguignon mijote pendant trois heures."
+     },
+     {
+      "w": "faire revenir",
+      "ex": "Fais revenir l'ail dans un peu de beurre."
+     },
+     {
+      "w": "assaisonner",
+      "ex": "N'oublie pas d'assaisonner la salade."
+     },
+     {
+      "w": "émincer",
+      "ex": "Émincez finement les oignons."
+     },
+     {
+      "w": "à feu doux",
+      "ex": "Laissez cuire la sauce à feu doux."
+     },
+     {
+      "w": "une pincée de",
+      "ex": "Ajoutez une pincée de sel et de poivre."
+     }
+    ],
+    "gram": "Recette : impératif (faites revenir) ou infinitif (faire revenir) ; laisser + infinitif : laissez mijoter, laissez reposer."
+   }
+  },
+  {
+   "d": 273,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Fashion and style",
+     "g": "Talk about fashion in French: haute couture, being in style and describing your own look.",
+     "p": [
+      "The fashion world: la haute couture, un créateur, un défilé, une maison de couture",
+      "Personal style: s'habiller, être à la mode, démodé(e), avoir du style, être bien habillé(e)",
+      "A bit of history: Coco Chanel a popularisé la petite robe noire ; le prêt-à-porter"
+     ],
+     "q": "How would you describe your style in French? Do you follow fashion or prefer comfort?",
+     "c": "Describe what you are wearing today in three French sentences, using porter and aller bien à."
+    },
+    "de": {
+     "t": "Mode und Stil",
+     "g": "Du sprichst über Mode auf Französisch: Haute Couture, modisch sein und deinen eigenen Look.",
+     "p": [
+      "Die Modewelt: la haute couture, un créateur, un défilé, une maison de couture",
+      "Persönlicher Stil: s'habiller, être à la mode, démodé(e), avoir du style, être bien habillé(e)",
+      "Ein bisschen Geschichte: Coco Chanel a popularisé la petite robe noire ; le prêt-à-porter"
+     ],
+     "q": "Wie würdest du deinen Stil auf Französisch beschreiben? Folgst du der Mode oder magst du es bequem?",
+     "c": "Beschreib in drei französischen Sätzen, was du heute trägst, mit porter und aller bien à."
+    },
+    "es": {
+     "t": "Moda y estilo",
+     "g": "Habla de moda en francés: alta costura, ir a la moda y describir tu propio look.",
+     "p": [
+      "El mundo de la moda: la haute couture, un créateur, un défilé, une maison de couture",
+      "Estilo personal: s'habiller, être à la mode, démodé(e), avoir du style, être bien habillé(e)",
+      "Un poco de historia: Coco Chanel a popularisé la petite robe noire ; le prêt-à-porter"
+     ],
+     "q": "¿Cómo describirías tu estilo en francés? ¿Sigues la moda o prefieres la comodidad?",
+     "c": "Describe lo que llevas hoy en tres frases en francés, con porter y aller bien à."
+    },
+    "fr": {
+     "t": "Mode et style",
+     "g": "Parler de mode : haute couture, être à la mode et décrire son propre style.",
+     "p": [
+      "L'univers de la mode : la haute couture, un créateur, un défilé, une maison de couture",
+      "Le style personnel : s'habiller, être à la mode, démodé(e), avoir du style, être bien habillé(e)",
+      "Un peu d'histoire : Coco Chanel a popularisé la petite robe noire ; le prêt-à-porter"
+     ],
+     "q": "Comment décrirais-tu ton style ? Suis-tu la mode ou préfères-tu le confort ?",
+     "c": "Décris ta tenue du jour en trois phrases avec porter et aller bien à."
+    },
+    "it": {
+     "t": "Moda e stile",
+     "g": "Parla di moda in francese: alta moda, essere alla moda e descrivere il tuo look.",
+     "p": [
+      "Il mondo della moda: la haute couture, un créateur, un défilé, une maison de couture",
+      "Stile personale: s'habiller, être à la mode, démodé(e), avoir du style, être bien habillé(e)",
+      "Un po' di storia: Coco Chanel a popularisé la petite robe noire ; le prêt-à-porter"
+     ],
+     "q": "Come descriveresti il tuo stile in francese? Segui la moda o preferisci la comodità?",
+     "c": "Descrivi cosa indossi oggi in tre frasi in francese, con porter e aller bien à."
+    },
+    "pt": {
+     "t": "Moda e estilo",
+     "g": "Fala de moda em francês: alta-costura, estar na moda e descrever o teu próprio estilo.",
+     "p": [
+      "O mundo da moda: la haute couture, un créateur, un défilé, une maison de couture",
+      "Estilo pessoal: s'habiller, être à la mode, démodé(e), avoir du style, être bien habillé(e)",
+      "Um pouco de história: Coco Chanel a popularisé la petite robe noire ; le prêt-à-porter"
+     ],
+     "q": "Como descreverias o teu estilo em francês? Segues a moda ou preferes o conforto?",
+     "c": "Descreve o que vestes hoje em três frases em francês, com porter e aller bien à."
+    },
+    "pt_BR": {
+     "t": "Moda e estilo",
+     "g": "Fale de moda em francês: alta-costura, estar na moda e descrever seu próprio estilo.",
+     "p": [
+      "O mundo da moda: la haute couture, un créateur, un défilé, une maison de couture",
+      "Estilo pessoal: s'habiller, être à la mode, démodé(e), avoir du style, être bien habillé(e)",
+      "Um pouco de história: Coco Chanel a popularisé la petite robe noire ; le prêt-à-porter"
+     ],
+     "q": "Como você descreveria seu estilo em francês? Segue a moda ou prefere o conforto?",
+     "c": "Descreva a roupa que você está usando hoje em três frases em francês, com porter e aller bien à."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la haute couture",
+      "ex": "Paris est la capitale de la haute couture."
+     },
+     {
+      "w": "un défilé",
+      "ex": "Le défilé a lieu dans un ancien théâtre."
+     },
+     {
+      "w": "être à la mode",
+      "ex": "Les baskets blanches sont toujours à la mode."
+     },
+     {
+      "w": "démodé(e)",
+      "ex": "Ce manteau n'est pas démodé, il est vintage !"
+     },
+     {
+      "w": "avoir du style",
+      "ex": "Ma grand-mère a beaucoup de style."
+     },
+     {
+      "w": "le prêt-à-porter",
+      "ex": "Je préfère le prêt-à-porter, c'est plus pratique."
+     }
+    ],
+    "gram": "Style : aller bien à quelqu'un (cette veste te va bien), porter + vêtement, s'habiller + adverbe (s'habiller simplement)."
+   }
+  },
+  {
+   "d": 274,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Describing feelings in depth",
+     "g": "Name subtle feelings in French: ému, soulagé, gêné, fier, nostalgique, reconnaissant.",
+     "p": [
+      "Strong moments: ému(e), soulagé(e), gêné(e), fier / fière",
+      "Softer feelings: nostalgique, reconnaissant(e), touché(e), comblé(e)",
+      "Building sentences: Je suis fier d'avoir réussi. Je suis soulagé que ce soit fini."
+     ],
+     "q": "Tell me about a moment when you felt really proud or relieved. What happened?",
+     "c": "Write four French sentences about your month, each with a different feeling and de + infinitive or que + subjunctive."
+    },
+    "de": {
+     "t": "Gefühle genau beschreiben",
+     "g": "Du benennst feine Gefühle auf Französisch: ému, soulagé, gêné, fier, nostalgique, reconnaissant.",
+     "p": [
+      "Starke Momente: ému(e), soulagé(e), gêné(e), fier / fière",
+      "Sanftere Gefühle: nostalgique, reconnaissant(e), touché(e), comblé(e)",
+      "Sätze bauen: Je suis fier d'avoir réussi. Je suis soulagé que ce soit fini."
+     ],
+     "q": "Erzähl mir von einem Moment, in dem du richtig stolz oder erleichtert warst. Was ist passiert?",
+     "c": "Schreib vier Sätze über deinen Monat, jeder mit einem anderen Gefühl und de + Infinitiv oder que + Subjonctif."
+    },
+    "es": {
+     "t": "Describir sentimientos a fondo",
+     "g": "Nombra sentimientos sutiles en francés: ému, soulagé, gêné, fier, nostalgique, reconnaissant.",
+     "p": [
+      "Momentos fuertes: ému(e), soulagé(e), gêné(e), fier / fière",
+      "Sentimientos suaves: nostalgique, reconnaissant(e), touché(e), comblé(e)",
+      "Construir frases: Je suis fier d'avoir réussi. Je suis soulagé que ce soit fini."
+     ],
+     "q": "Cuéntame un momento en que te sentiste muy orgulloso o aliviado. ¿Qué pasó?",
+     "c": "Escribe cuatro frases sobre tu mes, cada una con un sentimiento distinto y de + infinitivo o que + subjuntivo."
+    },
+    "fr": {
+     "t": "Décrire ses sentiments en détail",
+     "g": "Nommer des sentiments nuancés : ému, soulagé, gêné, fier, nostalgique, reconnaissant.",
+     "p": [
+      "Les moments forts : ému(e), soulagé(e), gêné(e), fier / fière",
+      "Les sentiments doux : nostalgique, reconnaissant(e), touché(e), comblé(e)",
+      "Construire la phrase : Je suis fier d'avoir réussi. Je suis soulagé que ce soit fini."
+     ],
+     "q": "Raconte-moi un moment où tu t'es senti vraiment fier ou soulagé. Que s'est-il passé ?",
+     "c": "Écris quatre phrases sur ton mois, chacune avec un sentiment différent et de + infinitif ou que + subjonctif."
+    },
+    "it": {
+     "t": "Descrivere i sentimenti a fondo",
+     "g": "Dai un nome a sentimenti sottili in francese: ému, soulagé, gêné, fier, nostalgique, reconnaissant.",
+     "p": [
+      "Momenti forti: ému(e), soulagé(e), gêné(e), fier / fière",
+      "Sentimenti più lievi: nostalgique, reconnaissant(e), touché(e), comblé(e)",
+      "Costruire le frasi: Je suis fier d'avoir réussi. Je suis soulagé que ce soit fini."
+     ],
+     "q": "Raccontami un momento in cui ti sei sentito davvero fiero o sollevato. Cos'è successo?",
+     "c": "Scrivi quattro frasi sul tuo mese, ognuna con un sentimento diverso e de + infinito o que + congiuntivo."
+    },
+    "pt": {
+     "t": "Descrever sentimentos a fundo",
+     "g": "Dá nome a sentimentos subtis em francês: ému, soulagé, gêné, fier, nostalgique, reconnaissant.",
+     "p": [
+      "Momentos fortes: ému(e), soulagé(e), gêné(e), fier / fière",
+      "Sentimentos suaves: nostalgique, reconnaissant(e), touché(e), comblé(e)",
+      "Construir frases: Je suis fier d'avoir réussi. Je suis soulagé que ce soit fini."
+     ],
+     "q": "Conta-me um momento em que te sentiste mesmo orgulhoso ou aliviado. O que aconteceu?",
+     "c": "Escreve quatro frases sobre o teu mês, cada uma com um sentimento diferente e de + infinitivo ou que + conjuntivo."
+    },
+    "pt_BR": {
+     "t": "Descrevendo sentimentos a fundo",
+     "g": "Dê nome a sentimentos sutis em francês: ému, soulagé, gêné, fier, nostalgique, reconnaissant.",
+     "p": [
+      "Momentos fortes: ému(e), soulagé(e), gêné(e), fier / fière",
+      "Sentimentos suaves: nostalgique, reconnaissant(e), touché(e), comblé(e)",
+      "Montando frases: Je suis fier d'avoir réussi. Je suis soulagé que ce soit fini."
+     ],
+     "q": "Me conte um momento em que você se sentiu muito orgulhoso ou aliviado. O que aconteceu?",
+     "c": "Escreva quatro frases sobre o seu mês, cada uma com um sentimento diferente e de + infinitivo ou que + subjuntivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ému(e)",
+      "ex": "J'étais très ému pendant le discours de mon frère."
+     },
+     {
+      "w": "soulagé(e)",
+      "ex": "Elle est soulagée d'avoir trouvé ses clés."
+     },
+     {
+      "w": "gêné(e)",
+      "ex": "J'étais un peu gêné d'arriver en retard."
+     },
+     {
+      "w": "fier, fière",
+      "ex": "Je suis fière de mes progrès en français."
+     },
+     {
+      "w": "nostalgique",
+      "ex": "Cette chanson me rend nostalgique."
+     },
+     {
+      "w": "reconnaissant(e)",
+      "ex": "Je vous suis très reconnaissant pour votre aide."
+     }
+    ],
+    "gram": "Sentiments : être + adjectif + de + infinitif (fier d'avoir réussi) ou + que + subjonctif (soulagé que ce soit fini)."
+   }
+  },
+  {
+   "d": 275,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Friendship and conflict",
+     "g": "Talk about friendship ups and downs in French: misunderstandings, apologies, making up and keeping in touch.",
+     "p": [
+      "Conflict: se disputer, un malentendu, être fâché(e) avec quelqu'un",
+      "Making up: s'excuser, présenter ses excuses, se réconcilier, faire la paix",
+      "Staying close: garder le contact, prendre des nouvelles, perdre quelqu'un de vue"
+     ],
+     "q": "How do you keep in touch with friends who live far away? Tell me in French.",
+     "c": "Write a short story in French about two friends who argue and make up, using three reciprocal verbs in the passé composé."
+    },
+    "de": {
+     "t": "Freundschaft und Konflikte",
+     "g": "Du sprichst über Höhen und Tiefen der Freundschaft: Missverständnisse, Entschuldigungen, Versöhnung, Kontakt.",
+     "p": [
+      "Konflikt: se disputer, un malentendu, être fâché(e) avec quelqu'un",
+      "Versöhnung: s'excuser, présenter ses excuses, se réconcilier, faire la paix",
+      "In Kontakt bleiben: garder le contact, prendre des nouvelles, perdre quelqu'un de vue"
+     ],
+     "q": "Wie hältst du Kontakt zu Freunden, die weit weg wohnen? Erzähl es auf Französisch.",
+     "c": "Schreib eine kurze Geschichte über zwei Freunde, die streiten und sich versöhnen, mit drei reziproken Verben im passé composé."
+    },
+    "es": {
+     "t": "Amistad y conflictos",
+     "g": "Habla de los altibajos de la amistad en francés: malentendidos, disculpas, reconciliación y mantener el contacto.",
+     "p": [
+      "Conflicto: se disputer, un malentendu, être fâché(e) avec quelqu'un",
+      "Reconciliarse: s'excuser, présenter ses excuses, se réconcilier, faire la paix",
+      "Seguir cerca: garder le contact, prendre des nouvelles, perdre quelqu'un de vue"
+     ],
+     "q": "¿Cómo mantienes el contacto con amigos que viven lejos? Cuéntamelo en francés.",
+     "c": "Escribe una historia corta sobre dos amigos que discuten y se reconcilian, con tres verbos recíprocos en passé composé."
+    },
+    "fr": {
+     "t": "Amitié et conflits",
+     "g": "Parler des hauts et des bas de l'amitié : malentendus, excuses, réconciliation et garder le contact.",
+     "p": [
+      "Le conflit : se disputer, un malentendu, être fâché(e) avec quelqu'un",
+      "La réconciliation : s'excuser, présenter ses excuses, se réconcilier, faire la paix",
+      "Rester proches : garder le contact, prendre des nouvelles, perdre quelqu'un de vue"
+     ],
+     "q": "Comment gardes-tu le contact avec tes amis qui habitent loin ?",
+     "c": "Écris une petite histoire de deux amis qui se disputent et se réconcilient, avec trois verbes réciproques au passé composé."
+    },
+    "it": {
+     "t": "Amicizia e conflitti",
+     "g": "Parla degli alti e bassi dell'amicizia in francese: malintesi, scuse, riconciliazione e restare in contatto.",
+     "p": [
+      "Il conflitto: se disputer, un malentendu, être fâché(e) avec quelqu'un",
+      "Fare pace: s'excuser, présenter ses excuses, se réconcilier, faire la paix",
+      "Restare vicini: garder le contact, prendre des nouvelles, perdre quelqu'un de vue"
+     ],
+     "q": "Come resti in contatto con gli amici che vivono lontano? Raccontamelo in francese.",
+     "c": "Scrivi una breve storia di due amici che litigano e fanno pace, con tre verbi reciproci al passé composé."
+    },
+    "pt": {
+     "t": "Amizade e conflitos",
+     "g": "Fala dos altos e baixos da amizade em francês: mal-entendidos, desculpas, reconciliação e manter o contacto.",
+     "p": [
+      "O conflito: se disputer, un malentendu, être fâché(e) avec quelqu'un",
+      "Fazer as pazes: s'excuser, présenter ses excuses, se réconcilier, faire la paix",
+      "Manter a proximidade: garder le contact, prendre des nouvelles, perdre quelqu'un de vue"
+     ],
+     "q": "Como manténs o contacto com amigos que vivem longe? Conta-me em francês.",
+     "c": "Escreve uma pequena história de dois amigos que discutem e fazem as pazes, com três verbos recíprocos no passé composé."
+    },
+    "pt_BR": {
+     "t": "Amizade e conflitos",
+     "g": "Fale dos altos e baixos da amizade em francês: mal-entendidos, desculpas, reconciliação e manter contato.",
+     "p": [
+      "O conflito: se disputer, un malentendu, être fâché(e) avec quelqu'un",
+      "Fazer as pazes: s'excuser, présenter ses excuses, se réconcilier, faire la paix",
+      "Continuar perto: garder le contact, prendre des nouvelles, perdre quelqu'un de vue"
+     ],
+     "q": "Como você mantém contato com amigos que moram longe? Me conte em francês.",
+     "c": "Escreva uma historinha de dois amigos que brigam e fazem as pazes, com três verbos recíprocos no passé composé."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un malentendu",
+      "ex": "Ce n'était qu'un malentendu, tout va bien."
+     },
+     {
+      "w": "s'excuser",
+      "ex": "Je m'excuse, je ne voulais pas te vexer."
+     },
+     {
+      "w": "se réconcilier",
+      "ex": "Ils se sont réconciliés autour d'un café."
+     },
+     {
+      "w": "garder le contact",
+      "ex": "On a gardé le contact depuis le lycée."
+     },
+     {
+      "w": "prendre des nouvelles",
+      "ex": "J'appelle ma tante pour prendre des nouvelles."
+     },
+     {
+      "w": "perdre de vue",
+      "ex": "J'ai perdu de vue mes amis d'enfance."
+     }
+    ],
+    "gram": "Pronominaux réciproques au passé composé avec être : ils se sont disputés, puis ils se sont réconciliés."
+   }
+  },
+  {
+   "d": 276,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Futur proche vs futur simple",
+     "g": "Feel the nuance between near, decided plans (je vais partir) and long-term predictions (je partirai).",
+     "p": [
+      "Near and decided: futur proche : je vais partir dans cinq minutes (proche, déjà décidé)",
+      "Further away or promised: futur simple : un jour, je partirai au Canada (lointain, prévision, promesse)",
+      "Side by side: Attention, il va pleuvoir ! / Demain, il pleuvra sur la Bretagne."
+     ],
+     "q": "What are you going to do tonight, and what will you do one day in the far future? Use both futures!",
+     "c": "Write two French sentences about this evening with the futur proche and two about your life in ten years with the futur simple."
+    },
+    "de": {
+     "t": "Futur proche oder futur simple",
+     "g": "Du spürst den Unterschied zwischen nahen Plänen (je vais partir) und fernen Vorhersagen (je partirai).",
+     "p": [
+      "Nah und beschlossen: futur proche : je vais partir dans cinq minutes (proche, déjà décidé)",
+      "Fern oder versprochen: futur simple : un jour, je partirai au Canada (lointain, prévision, promesse)",
+      "Im Vergleich: Attention, il va pleuvoir ! / Demain, il pleuvra sur la Bretagne."
+     ],
+     "q": "Was machst du heute Abend, und was wirst du eines Tages in ferner Zukunft tun? Nutze beide Zeiten!",
+     "c": "Schreib zwei Sätze über heute Abend im futur proche und zwei über dein Leben in zehn Jahren im futur simple."
+    },
+    "es": {
+     "t": "Futur proche o futur simple",
+     "g": "Siente el matiz entre planes cercanos y decididos (je vais partir) y predicciones lejanas (je partirai).",
+     "p": [
+      "Cercano y decidido: futur proche : je vais partir dans cinq minutes (proche, déjà décidé)",
+      "Lejano o prometido: futur simple : un jour, je partirai au Canada (lointain, prévision, promesse)",
+      "Comparados: Attention, il va pleuvoir ! / Demain, il pleuvra sur la Bretagne."
+     ],
+     "q": "¿Qué vas a hacer esta noche y qué harás algún día en el futuro lejano? ¡Usa los dos futuros!",
+     "c": "Escribe dos frases sobre esta noche en futur proche y dos sobre tu vida dentro de diez años en futur simple."
+    },
+    "fr": {
+     "t": "Futur proche ou futur simple",
+     "g": "Sentir la nuance entre un projet proche et décidé (je vais partir) et une prévision lointaine (je partirai).",
+     "p": [
+      "Proche et décidé : futur proche : je vais partir dans cinq minutes (proche, déjà décidé)",
+      "Lointain ou promis : futur simple : un jour, je partirai au Canada (lointain, prévision, promesse)",
+      "Côte à côte : Attention, il va pleuvoir ! / Demain, il pleuvra sur la Bretagne."
+     ],
+     "q": "Que vas-tu faire ce soir, et que feras-tu un jour, dans longtemps ? Utilise les deux futurs !",
+     "c": "Écris deux phrases sur ce soir au futur proche et deux sur ta vie dans dix ans au futur simple."
+    },
+    "it": {
+     "t": "Futur proche o futur simple",
+     "g": "Senti la sfumatura tra piani vicini e decisi (je vais partir) e previsioni lontane (je partirai).",
+     "p": [
+      "Vicino e deciso: futur proche : je vais partir dans cinq minutes (proche, déjà décidé)",
+      "Lontano o promesso: futur simple : un jour, je partirai au Canada (lointain, prévision, promesse)",
+      "A confronto: Attention, il va pleuvoir ! / Demain, il pleuvra sur la Bretagne."
+     ],
+     "q": "Cosa farai stasera e cosa farai un giorno nel lontano futuro? Usa entrambi i futuri!",
+     "c": "Scrivi due frasi su stasera al futur proche e due sulla tua vita tra dieci anni al futur simple."
+    },
+    "pt": {
+     "t": "Futur proche ou futur simple",
+     "g": "Sente a nuance entre planos próximos e decididos (je vais partir) e previsões distantes (je partirai).",
+     "p": [
+      "Próximo e decidido: futur proche : je vais partir dans cinq minutes (proche, déjà décidé)",
+      "Distante ou prometido: futur simple : un jour, je partirai au Canada (lointain, prévision, promesse)",
+      "Lado a lado: Attention, il va pleuvoir ! / Demain, il pleuvra sur la Bretagne."
+     ],
+     "q": "O que vais fazer esta noite e o que farás um dia num futuro distante? Usa os dois futuros!",
+     "c": "Escreve duas frases sobre esta noite no futur proche e duas sobre a tua vida daqui a dez anos no futur simple."
+    },
+    "pt_BR": {
+     "t": "Futur proche ou futur simple",
+     "g": "Sinta a nuance entre planos próximos e decididos (je vais partir) e previsões distantes (je partirai).",
+     "p": [
+      "Próximo e decidido: futur proche : je vais partir dans cinq minutes (proche, déjà décidé)",
+      "Distante ou prometido: futur simple : un jour, je partirai au Canada (lointain, prévision, promesse)",
+      "Lado a lado: Attention, il va pleuvoir ! / Demain, il pleuvra sur la Bretagne."
+     ],
+     "q": "O que você vai fazer hoje à noite e o que fará um dia num futuro distante? Use os dois futuros!",
+     "c": "Escreva duas frases sobre hoje à noite no futur proche e duas sobre sua vida daqui a dez anos no futur simple."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "tout à l'heure",
+      "ex": "Je vais t'appeler tout à l'heure."
+     },
+     {
+      "w": "bientôt",
+      "ex": "Le train va bientôt arriver."
+     },
+     {
+      "w": "un jour",
+      "ex": "Un jour, je visiterai Tahiti."
+     },
+     {
+      "w": "dans dix ans",
+      "ex": "Dans dix ans, je parlerai couramment français."
+     },
+     {
+      "w": "je te promets que",
+      "ex": "Je te promets que je viendrai à ta fête."
+     },
+     {
+      "w": "il va pleuvoir",
+      "ex": "Prends un parapluie, il va pleuvoir !"
+     }
+    ],
+    "gram": "Futur proche (aller + infinitif) : action imminente ou déjà décidée ; futur simple : prévision, avenir lointain, promesse."
+   }
+  },
+  {
+   "d": 277,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Advanced time expressions",
+     "g": "Link actions in time with dès que, aussitôt que, tant que and au fur et à mesure.",
+     "p": [
+      "As soon as + future: dès que, aussitôt que + futur : dès que j'arriverai, je t'appellerai",
+      "As long as: tant que : tant qu'il pleut, on reste à l'intérieur",
+      "Gradually and meanwhile: au fur et à mesure : on apprend au fur et à mesure ; d'ici là, en attendant"
+     ],
+     "q": "What is the first thing you will do dès que you finish today's lesson? Answer with the futur simple!",
+     "c": "Write three promises to yourself in French with dès que, tant que and en attendant."
+    },
+    "de": {
+     "t": "Zeitausdrücke für Fortgeschrittene",
+     "g": "Du verknüpfst Handlungen zeitlich mit dès que, aussitôt que, tant que und au fur et à mesure.",
+     "p": [
+      "Sobald + Futur: dès que, aussitôt que + futur : dès que j'arriverai, je t'appellerai",
+      "Solange: tant que : tant qu'il pleut, on reste à l'intérieur",
+      "Nach und nach, inzwischen: au fur et à mesure : on apprend au fur et à mesure ; d'ici là, en attendant"
+     ],
+     "q": "Was ist das Erste, was du tun wirst, dès que du die heutige Lektion beendest? Antworte im futur simple!",
+     "c": "Schreib drei Versprechen an dich selbst auf Französisch mit dès que, tant que und en attendant."
+    },
+    "es": {
+     "t": "Expresiones de tiempo avanzadas",
+     "g": "Une acciones en el tiempo con dès que, aussitôt que, tant que y au fur et à mesure.",
+     "p": [
+      "En cuanto + futuro: dès que, aussitôt que + futur : dès que j'arriverai, je t'appellerai",
+      "Mientras: tant que : tant qu'il pleut, on reste à l'intérieur",
+      "Poco a poco y mientras tanto: au fur et à mesure : on apprend au fur et à mesure ; d'ici là, en attendant"
+     ],
+     "q": "¿Qué será lo primero que harás dès que termines la lección de hoy? ¡Responde en futur simple!",
+     "c": "Escribe tres promesas para ti en francés con dès que, tant que y en attendant."
+    },
+    "fr": {
+     "t": "Expressions de temps avancées",
+     "g": "Relier des actions dans le temps avec dès que, aussitôt que, tant que et au fur et à mesure.",
+     "p": [
+      "Dès que + futur : dès que, aussitôt que + futur : dès que j'arriverai, je t'appellerai",
+      "Tant que : tant que : tant qu'il pleut, on reste à l'intérieur",
+      "Progressivement et en attendant : au fur et à mesure : on apprend au fur et à mesure ; d'ici là, en attendant"
+     ],
+     "q": "Quelle est la première chose que tu feras dès que tu auras fini la leçon ? Réponds au futur !",
+     "c": "Écris trois promesses à toi-même avec dès que, tant que et en attendant."
+    },
+    "it": {
+     "t": "Espressioni di tempo avanzate",
+     "g": "Collega azioni nel tempo con dès que, aussitôt que, tant que e au fur et à mesure.",
+     "p": [
+      "Appena + futuro: dès que, aussitôt que + futur : dès que j'arriverai, je t'appellerai",
+      "Finché: tant que : tant qu'il pleut, on reste à l'intérieur",
+      "Man mano e intanto: au fur et à mesure : on apprend au fur et à mesure ; d'ici là, en attendant"
+     ],
+     "q": "Qual è la prima cosa che farai dès que finisci la lezione di oggi? Rispondi al futur simple!",
+     "c": "Scrivi tre promesse a te stesso in francese con dès que, tant que e en attendant."
+    },
+    "pt": {
+     "t": "Expressões de tempo avançadas",
+     "g": "Liga ações no tempo com dès que, aussitôt que, tant que e au fur et à mesure.",
+     "p": [
+      "Assim que + futuro: dès que, aussitôt que + futur : dès que j'arriverai, je t'appellerai",
+      "Enquanto: tant que : tant qu'il pleut, on reste à l'intérieur",
+      "Aos poucos e entretanto: au fur et à mesure : on apprend au fur et à mesure ; d'ici là, en attendant"
+     ],
+     "q": "Qual é a primeira coisa que vais fazer dès que acabares a lição de hoje? Responde no futur simple!",
+     "c": "Escreve três promessas a ti mesmo em francês com dès que, tant que e en attendant."
+    },
+    "pt_BR": {
+     "t": "Expressões de tempo avançadas",
+     "g": "Ligue ações no tempo com dès que, aussitôt que, tant que e au fur et à mesure.",
+     "p": [
+      "Assim que + futuro: dès que, aussitôt que + futur : dès que j'arriverai, je t'appellerai",
+      "Enquanto: tant que : tant qu'il pleut, on reste à l'intérieur",
+      "Aos poucos e enquanto isso: au fur et à mesure : on apprend au fur et à mesure ; d'ici là, en attendant"
+     ],
+     "q": "Qual é a primeira coisa que você vai fazer dès que terminar a lição de hoje? Responda no futur simple!",
+     "c": "Escreva três promessas para você mesmo em francês com dès que, tant que e en attendant."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "dès que",
+      "ex": "Dès que tu seras prêt, on partira."
+     },
+     {
+      "w": "aussitôt que",
+      "ex": "Je t'écrirai aussitôt que j'aurai la réponse."
+     },
+     {
+      "w": "tant que",
+      "ex": "Tant que tu pratiques, tu progresses."
+     },
+     {
+      "w": "au fur et à mesure",
+      "ex": "On range la cuisine au fur et à mesure."
+     },
+     {
+      "w": "d'ici là",
+      "ex": "Le film sort en mai ; d'ici là, je lis le livre."
+     },
+     {
+      "w": "en attendant",
+      "ex": "En attendant le bus, j'écoute un podcast."
+     }
+    ],
+    "gram": "Dès que, aussitôt que, tant que + futur pour parler de l'avenir (dès que tu seras là) ; au fur et à mesure = progressivement."
+   }
+  },
+  {
+   "d": 278,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Spoken vs written French",
+     "g": "Recognise the familier, courant and soutenu registers and choose the right one for each situation.",
+     "p": [
+      "Familiar: familier : t'as vu ? j'sais pas, c'est trop bien, une bagnole, le boulot",
+      "Standard: courant : tu as vu ? je ne sais pas, c'est très bien, une voiture, le travail",
+      "Formal: soutenu : avez-vous vu ? je l'ignore, c'est remarquable, un véhicule, un emploi"
+     ],
+     "q": "Which French slang word have you heard in films or songs? Tell me what it means in standard French.",
+     "c": "Take one sentence, like Je ne sais pas où est ma voiture, and write it in all three registers."
+    },
+    "de": {
+     "t": "Gesprochenes und geschriebenes Französisch",
+     "g": "Du erkennst die Register familier, courant und soutenu und wählst das passende.",
+     "p": [
+      "Umgangssprachlich: familier : t'as vu ? j'sais pas, c'est trop bien, une bagnole, le boulot",
+      "Standard: courant : tu as vu ? je ne sais pas, c'est très bien, une voiture, le travail",
+      "Gehoben: soutenu : avez-vous vu ? je l'ignore, c'est remarquable, un véhicule, un emploi"
+     ],
+     "q": "Welches französische Slangwort kennst du aus Filmen oder Liedern? Was heißt es auf Standardfranzösisch?",
+     "c": "Nimm einen Satz wie Je ne sais pas où est ma voiture und schreib ihn in allen drei Registern."
+    },
+    "es": {
+     "t": "Francés hablado y escrito",
+     "g": "Reconoce los registros familier, courant y soutenu y elige el adecuado en cada situación.",
+     "p": [
+      "Coloquial: familier : t'as vu ? j'sais pas, c'est trop bien, une bagnole, le boulot",
+      "Estándar: courant : tu as vu ? je ne sais pas, c'est très bien, une voiture, le travail",
+      "Formal: soutenu : avez-vous vu ? je l'ignore, c'est remarquable, un véhicule, un emploi"
+     ],
+     "q": "¿Qué palabra de argot francés has oído en películas o canciones? Dime qué significa en francés estándar.",
+     "c": "Toma una frase como Je ne sais pas où est ma voiture y escríbela en los tres registros."
+    },
+    "fr": {
+     "t": "Français oral et écrit",
+     "g": "Reconnaître les registres familier, courant et soutenu et choisir le bon selon la situation.",
+     "p": [
+      "Familier : familier : t'as vu ? j'sais pas, c'est trop bien, une bagnole, le boulot",
+      "Courant : courant : tu as vu ? je ne sais pas, c'est très bien, une voiture, le travail",
+      "Soutenu : soutenu : avez-vous vu ? je l'ignore, c'est remarquable, un véhicule, un emploi"
+     ],
+     "q": "Quel mot familier as-tu entendu dans un film ou une chanson ? Que veut-il dire en français courant ?",
+     "c": "Prends une phrase comme Je ne sais pas où est ma voiture et écris-la dans les trois registres."
+    },
+    "it": {
+     "t": "Francese parlato e scritto",
+     "g": "Riconosci i registri familier, courant e soutenu e scegli quello giusto in ogni situazione.",
+     "p": [
+      "Familiare: familier : t'as vu ? j'sais pas, c'est trop bien, une bagnole, le boulot",
+      "Standard: courant : tu as vu ? je ne sais pas, c'est très bien, une voiture, le travail",
+      "Formale: soutenu : avez-vous vu ? je l'ignore, c'est remarquable, un véhicule, un emploi"
+     ],
+     "q": "Quale parola gergale francese hai sentito in film o canzoni? Dimmi cosa significa in francese standard.",
+     "c": "Prendi una frase come Je ne sais pas où est ma voiture e scrivila in tutti e tre i registri."
+    },
+    "pt": {
+     "t": "Francês falado e escrito",
+     "g": "Reconhece os registos familier, courant e soutenu e escolhe o certo para cada situação.",
+     "p": [
+      "Familiar: familier : t'as vu ? j'sais pas, c'est trop bien, une bagnole, le boulot",
+      "Corrente: courant : tu as vu ? je ne sais pas, c'est très bien, une voiture, le travail",
+      "Formal: soutenu : avez-vous vu ? je l'ignore, c'est remarquable, un véhicule, un emploi"
+     ],
+     "q": "Que palavra de calão francês ouviste em filmes ou canções? Diz-me o que significa em francês corrente.",
+     "c": "Pega numa frase como Je ne sais pas où est ma voiture e escreve-a nos três registos."
+    },
+    "pt_BR": {
+     "t": "Francês falado e escrito",
+     "g": "Reconheça os registros familier, courant e soutenu e escolha o certo para cada situação.",
+     "p": [
+      "Informal: familier : t'as vu ? j'sais pas, c'est trop bien, une bagnole, le boulot",
+      "Padrão: courant : tu as vu ? je ne sais pas, c'est très bien, une voiture, le travail",
+      "Formal: soutenu : avez-vous vu ? je l'ignore, c'est remarquable, un véhicule, un emploi"
+     ],
+     "q": "Que gíria francesa você já ouviu em filmes ou músicas? Diga o que ela significa em francês padrão.",
+     "c": "Pegue uma frase como Je ne sais pas où est ma voiture e escreva nos três registros."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "le boulot",
+      "ex": "Je finis le boulot à 18 h ce soir."
+     },
+     {
+      "w": "une bagnole",
+      "ex": "Il a garé sa bagnole devant chez moi."
+     },
+     {
+      "w": "un truc",
+      "ex": "Passe-moi le truc sur la table, s'il te plaît."
+     },
+     {
+      "w": "bosser",
+      "ex": "Je bosse sur un projet très sympa."
+     },
+     {
+      "w": "se marrer",
+      "ex": "On s'est bien marrés hier soir."
+     },
+     {
+      "w": "un mec",
+      "ex": "C'est un mec vraiment gentil."
+     }
+    ],
+    "gram": "Registres : à l'oral familier, on supprime souvent ne (j'sais pas) ; à l'écrit soutenu, on garde ne et on utilise l'inversion."
+   }
+  },
+  {
+   "d": 279,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Preparing a B1 style talk",
+     "g": "Structure a short French monologue and handle follow-up questions calmly, like in a B1 oral exam.",
+     "p": [
+      "Introduction: Je vais vous parler de... Mon exposé comporte deux parties.",
+      "Development: Tout d'abord... Ensuite... Pour illustrer cela... Pour terminer...",
+      "Questions: C'est une bonne question. Si j'ai bien compris, vous demandez si..."
+     ],
+     "q": "If you had to give a three-minute talk in French, which topic would you choose and why?",
+     "c": "Prepare the outline of a two-part talk on your topic and record yourself saying the introduction aloud."
+    },
+    "de": {
+     "t": "Einen B1-Vortrag vorbereiten",
+     "g": "Du gliederst einen kurzen französischen Monolog und gehst gelassen mit Nachfragen um, wie in der B1-Prüfung.",
+     "p": [
+      "Einleitung: Je vais vous parler de... Mon exposé comporte deux parties.",
+      "Hauptteil: Tout d'abord... Ensuite... Pour illustrer cela... Pour terminer...",
+      "Fragen: C'est une bonne question. Si j'ai bien compris, vous demandez si..."
+     ],
+     "q": "Wenn du drei Minuten auf Französisch sprechen müsstest, welches Thema würdest du wählen und warum?",
+     "c": "Bereite die Gliederung eines zweiteiligen Vortrags vor und nimm dich beim lauten Sprechen der Einleitung auf."
+    },
+    "es": {
+     "t": "Preparar una exposición tipo B1",
+     "g": "Estructura un monólogo corto en francés y responde preguntas con calma, como en un examen oral B1.",
+     "p": [
+      "Introducción: Je vais vous parler de... Mon exposé comporte deux parties.",
+      "Desarrollo: Tout d'abord... Ensuite... Pour illustrer cela... Pour terminer...",
+      "Preguntas: C'est une bonne question. Si j'ai bien compris, vous demandez si..."
+     ],
+     "q": "Si tuvieras que hablar tres minutos en francés, ¿qué tema elegirías y por qué?",
+     "c": "Prepara el esquema de una exposición en dos partes y grábate diciendo la introducción en voz alta."
+    },
+    "fr": {
+     "t": "Préparer un exposé niveau B1",
+     "g": "Structurer un court monologue et gérer sereinement les questions, comme à l'oral du DELF B1.",
+     "p": [
+      "L'introduction : Je vais vous parler de... Mon exposé comporte deux parties.",
+      "Le développement : Tout d'abord... Ensuite... Pour illustrer cela... Pour terminer...",
+      "Les questions : C'est une bonne question. Si j'ai bien compris, vous demandez si..."
+     ],
+     "q": "Si tu devais parler trois minutes, quel sujet choisirais-tu et pourquoi ?",
+     "c": "Prépare le plan d'un exposé en deux parties et enregistre-toi en disant l'introduction à voix haute."
+    },
+    "it": {
+     "t": "Preparare un'esposizione B1",
+     "g": "Struttura un breve monologo in francese e gestisci con calma le domande, come all'orale B1.",
+     "p": [
+      "Introduzione: Je vais vous parler de... Mon exposé comporte deux parties.",
+      "Sviluppo: Tout d'abord... Ensuite... Pour illustrer cela... Pour terminer...",
+      "Domande: C'est une bonne question. Si j'ai bien compris, vous demandez si..."
+     ],
+     "q": "Se dovessi parlare tre minuti in francese, quale argomento sceglieresti e perché?",
+     "c": "Prepara lo schema di un'esposizione in due parti e registrati mentre dici l'introduzione ad alta voce."
+    },
+    "pt": {
+     "t": "Preparar uma apresentação B1",
+     "g": "Estrutura um monólogo curto em francês e responde às perguntas com calma, como na oral do B1.",
+     "p": [
+      "Introdução: Je vais vous parler de... Mon exposé comporte deux parties.",
+      "Desenvolvimento: Tout d'abord... Ensuite... Pour illustrer cela... Pour terminer...",
+      "Perguntas: C'est une bonne question. Si j'ai bien compris, vous demandez si..."
+     ],
+     "q": "Se tivesses de falar três minutos em francês, que tema escolherias e porquê?",
+     "c": "Prepara o plano de uma apresentação em duas partes e grava-te a dizer a introdução em voz alta."
+    },
+    "pt_BR": {
+     "t": "Preparando uma apresentação B1",
+     "g": "Estruture um monólogo curto em francês e responda às perguntas com calma, como na prova oral B1.",
+     "p": [
+      "Introdução: Je vais vous parler de... Mon exposé comporte deux parties.",
+      "Desenvolvimento: Tout d'abord... Ensuite... Pour illustrer cela... Pour terminer...",
+      "Perguntas: C'est une bonne question. Si j'ai bien compris, vous demandez si..."
+     ],
+     "q": "Se você tivesse que falar três minutos em francês, que tema escolheria e por quê?",
+     "c": "Prepare o roteiro de uma apresentação em duas partes e grave você dizendo a introdução em voz alta."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "je vais vous parler de",
+      "ex": "Aujourd'hui, je vais vous parler de ma ville natale."
+     },
+     {
+      "w": "tout d'abord",
+      "ex": "Tout d'abord, je présenterai l'histoire de la ville."
+     },
+     {
+      "w": "pour illustrer",
+      "ex": "Pour illustrer cela, voici un exemple concret."
+     },
+     {
+      "w": "c'est une bonne question",
+      "ex": "C'est une bonne question, merci de l'avoir posée."
+     },
+     {
+      "w": "si j'ai bien compris",
+      "ex": "Si j'ai bien compris, vous voulez savoir pourquoi."
+     },
+     {
+      "w": "pour terminer",
+      "ex": "Pour terminer, je vous remercie de votre attention."
+     }
+    ],
+    "gram": "Exposé oral : annoncer le plan, enchaîner avec des connecteurs, reformuler une question : si j'ai bien compris, vous demandez si..."
+   }
+  },
+  {
+   "d": 280,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Review: B1 checkpoint",
+     "g": "Celebrate B1: recap storytelling, debating and nuance with a short debate and a personal story.",
+     "p": [
+      "Telling stories: récit : imparfait + passé composé, plus-que-parfait, discours indirect",
+      "Debating: débat : je soutiens que, certes... mais, à condition que + subjonctif",
+      "Nuance: nuances : subjonctif, conditionnel, pronoms y, en, dont, faire + infinitif"
+     ],
+     "q": "Tell me a personal story about your French journey so far: a funny moment, a difficulty and a success.",
+     "c": "Write a short debate with yourself on a light topic, then a five-sentence anecdote using past tenses."
+    },
+    "de": {
+     "t": "Wiederholung: B1-Etappe",
+     "g": "Du feierst B1: Erzählen, Debattieren und Nuancieren mit einer kleinen Debatte und einer eigenen Geschichte.",
+     "p": [
+      "Erzählen: récit : imparfait + passé composé, plus-que-parfait, discours indirect",
+      "Debattieren: débat : je soutiens que, certes... mais, à condition que + subjonctif",
+      "Nuancen: nuances : subjonctif, conditionnel, pronoms y, en, dont, faire + infinitif"
+     ],
+     "q": "Erzähl mir eine persönliche Geschichte über deinen Französischweg: ein lustiger Moment, eine Hürde, ein Erfolg.",
+     "c": "Schreib eine kurze Debatte mit dir selbst zu einem leichten Thema, dann eine Anekdote in fünf Sätzen in der Vergangenheit."
+    },
+    "es": {
+     "t": "Repaso: etapa B1",
+     "g": "Celebra el B1: repasa narrar, debatir y matizar con un pequeño debate y una historia personal.",
+     "p": [
+      "Narrar: récit : imparfait + passé composé, plus-que-parfait, discours indirect",
+      "Debatir: débat : je soutiens que, certes... mais, à condition que + subjonctif",
+      "Matices: nuances : subjonctif, conditionnel, pronoms y, en, dont, faire + infinitif"
+     ],
+     "q": "Cuéntame una historia personal sobre tu camino con el francés: un momento gracioso, una dificultad y un éxito.",
+     "c": "Escribe un breve debate contigo mismo sobre un tema ligero y luego una anécdota de cinco frases en pasado."
+    },
+    "fr": {
+     "t": "Révision : étape B1",
+     "g": "Fêter le B1 : réviser le récit, le débat et la nuance avec un petit débat et une histoire personnelle.",
+     "p": [
+      "Raconter : récit : imparfait + passé composé, plus-que-parfait, discours indirect",
+      "Débattre : débat : je soutiens que, certes... mais, à condition que + subjonctif",
+      "Nuancer : nuances : subjonctif, conditionnel, pronoms y, en, dont, faire + infinitif"
+     ],
+     "q": "Raconte-moi ton parcours en français : un moment drôle, une difficulté et une réussite.",
+     "c": "Écris un petit débat avec toi-même sur un sujet léger, puis une anecdote de cinq phrases au passé."
+    },
+    "it": {
+     "t": "Ripasso: tappa B1",
+     "g": "Festeggia il B1: ripassa racconto, dibattito e sfumature con un piccolo dibattito e una storia personale.",
+     "p": [
+      "Raccontare: récit : imparfait + passé composé, plus-que-parfait, discours indirect",
+      "Dibattere: débat : je soutiens que, certes... mais, à condition que + subjonctif",
+      "Sfumature: nuances : subjonctif, conditionnel, pronoms y, en, dont, faire + infinitif"
+     ],
+     "q": "Raccontami una storia personale sul tuo percorso con il francese: un momento buffo, una difficoltà e un successo.",
+     "c": "Scrivi un breve dibattito con te stesso su un tema leggero, poi un aneddoto di cinque frasi al passato."
+    },
+    "pt": {
+     "t": "Revisão: etapa B1",
+     "g": "Celebra o B1: revê a narração, o debate e a nuance com um pequeno debate e uma história pessoal.",
+     "p": [
+      "Narrar: récit : imparfait + passé composé, plus-que-parfait, discours indirect",
+      "Debater: débat : je soutiens que, certes... mais, à condition que + subjonctif",
+      "Nuance: nuances : subjonctif, conditionnel, pronoms y, en, dont, faire + infinitif"
+     ],
+     "q": "Conta-me uma história pessoal sobre o teu percurso no francês: um momento engraçado, uma dificuldade e um sucesso.",
+     "c": "Escreve um pequeno debate contigo mesmo sobre um tema leve e depois uma história de cinco frases no passado."
+    },
+    "pt_BR": {
+     "t": "Revisão: etapa B1",
+     "g": "Comemore o B1: revise narração, debate e nuance com um pequeno debate e uma história pessoal.",
+     "p": [
+      "Narrar: récit : imparfait + passé composé, plus-que-parfait, discours indirect",
+      "Debater: débat : je soutiens que, certes... mais, à condition que + subjonctif",
+      "Nuance: nuances : subjonctif, conditionnel, pronoms y, en, dont, faire + infinitif"
+     ],
+     "q": "Me conte uma história pessoal da sua jornada no francês: um momento engraçado, uma dificuldade e uma conquista.",
+     "c": "Escreva um pequeno debate com você mesmo sobre um tema leve e depois um causo de cinco frases no passado."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "figure-toi que",
+      "ex": "Figure-toi que j'ai enfin trouvé un appartement !"
+     },
+     {
+      "w": "certes... mais",
+      "ex": "Certes, c'était difficile, mais j'ai beaucoup appris."
+     },
+     {
+      "w": "à condition que",
+      "ex": "Je viendrai à condition que tu m'attendes."
+     },
+     {
+      "w": "se rendre compte que",
+      "ex": "Je me suis rendu compte que je comprenais tout."
+     },
+     {
+      "w": "au fur et à mesure",
+      "ex": "Mon vocabulaire s'enrichit au fur et à mesure."
+     },
+     {
+      "w": "en somme",
+      "ex": "En somme, le niveau B1 est une belle réussite."
+     }
+    ],
+    "gram": "Bilan B1 : raconter au passé, argumenter et répondre, nuancer avec le subjonctif et le conditionnel, adapter son registre."
+   }
+  }
+ ]
+}

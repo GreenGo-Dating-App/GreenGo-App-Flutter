@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 191,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Pluperfect: había comido",
+     "g": "Use the pluperfect to say what had happened before another past event.",
+     "p": [
+      "Form: había, habías, había, habíamos, habíais, habían + participle: había comido, habían salido.",
+      "It goes further back in the past: cuando llegué a la estación, el tren ya había salido.",
+      "Ya and todavía no help a lot: ya había cenado; todavía no había visto la película."
+     ],
+     "q": "Think of a day when you arrived late. What had already happened when you got there?",
+     "c": "Write three sentences with cuando llegué..., ya había... about a party, a class and a trip."
+    },
+    "de": {
+     "t": "Plusquamperfekt: había comido",
+     "g": "Benutze das Plusquamperfekt für das, was vor einem anderen Ereignis passiert war.",
+     "p": [
+      "Form: había, habías, había, habíamos, habíais, habían + Partizip: había comido, habían salido.",
+      "Es geht weiter zurück in die Vergangenheit: cuando llegué a la estación, el tren ya había salido.",
+      "Ya und todavía no helfen sehr: ya había cenado; todavía no había visto la película."
+     ],
+     "q": "Denk an einen Tag, an dem du zu spät kamst. Was war schon passiert, als du ankamst?",
+     "c": "Schreib drei Sätze mit cuando llegué..., ya había... über eine Party, einen Kurs und eine Reise."
+    },
+    "es": {
+     "t": "Pluscuamperfecto: había comido",
+     "g": "Usa el pluscuamperfecto para decir qué había pasado antes de otro hecho pasado.",
+     "p": [
+      "Forma: había, habías, había, habíamos, habíais, habían + participio: había comido, habían salido.",
+      "Va más atrás en el pasado: cuando llegué a la estación, el tren ya había salido.",
+      "Ya y todavía no ayudan mucho: ya había cenado; todavía no había visto la película."
+     ],
+     "q": "Piensa en un día en que llegaste tarde. ¿Qué había pasado ya cuando llegaste?",
+     "c": "Escribe tres frases con cuando llegué..., ya había... sobre una fiesta, una clase y un viaje."
+    },
+    "fr": {
+     "t": "Plus-que-parfait : había comido",
+     "g": "Utilise le plus-que-parfait pour dire ce qui s'était passé avant un autre fait passé.",
+     "p": [
+      "Forme : había, habías, había, habíamos, habíais, habían + participe : había comido, habían salido.",
+      "Comme en français, il remonte plus loin : cuando llegué a la estación, el tren ya había salido.",
+      "Attention : toujours haber, jamais ser : ya había cenado ; ellas habían salido (participe invariable)."
+     ],
+     "q": "Pense à un jour où tu es arrivé en retard. Que s'était-il déjà passé à ton arrivée ?",
+     "c": "Écris trois phrases avec cuando llegué..., ya había... sur une fête, un cours et un voyage."
+    },
+    "it": {
+     "t": "Trapassato: había comido",
+     "g": "Usa il trapassato per dire cosa era successo prima di un altro fatto passato.",
+     "p": [
+      "Forma: había, habías, había, habíamos, habíais, habían + participio: había comido, habían salido.",
+      "Come in italiano, va più indietro: cuando llegué a la estación, el tren ya había salido.",
+      "Attenzione: sempre haber, mai ser: ella había salido (non era uscita), participio invariabile."
+     ],
+     "q": "Pensa a un giorno in cui sei arrivato tardi. Cosa era già successo quando sei arrivato?",
+     "c": "Scrivi tre frasi con cuando llegué..., ya había... su una festa, una lezione e un viaggio."
+    },
+    "pt": {
+     "t": "Mais-que-perfeito: había comido",
+     "g": "Usa o mais-que-perfeito para dizer o que tinha acontecido antes de outro facto passado.",
+     "p": [
+      "Forma: había, habías, había, habíamos, habíais, habían + particípio: había comido, habían salido.",
+      "Como em português (tinha comido): cuando llegué a la estación, el tren ya había salido.",
+      "Ya e todavía no ajudam muito: ya había cenado; todavía no había visto la película."
+     ],
+     "q": "Pensa num dia em que chegaste atrasado. O que já tinha acontecido quando chegaste?",
+     "c": "Escreve três frases com cuando llegué..., ya había... sobre uma festa, uma aula e uma viagem."
+    },
+    "pt_BR": {
+     "t": "Mais-que-perfeito: había comido",
+     "g": "Use o mais-que-perfeito para dizer o que tinha acontecido antes de outro fato passado.",
+     "p": [
+      "Forma: había, habías, había, habíamos, habíais, habían + particípio: había comido, habían salido.",
+      "Como em português (tinha comido): cuando llegué a la estación, el tren ya había salido.",
+      "Ya e todavía no ajudam muito: ya había cenado; todavía no había visto la película."
+     ],
+     "q": "Pense num dia em que você chegou atrasado. O que já tinha acontecido quando você chegou?",
+     "c": "Escreva três frases com cuando llegué..., ya había... sobre uma festa, uma aula e uma viagem."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "había comido",
+      "ex": "No tenía hambre porque ya había comido."
+     },
+     {
+      "w": "habían salido",
+      "ex": "Cuando llegué, mis amigos ya habían salido."
+     },
+     {
+      "w": "ya había",
+      "ex": "Cuando me llamaste, ya había terminado el trabajo."
+     },
+     {
+      "w": "todavía no había",
+      "ex": "Todavía no había visto el mar hasta ese verano."
+     },
+     {
+      "w": "nunca había",
+      "ex": "Nunca había probado un plato tan picante."
+     },
+     {
+      "w": "me di cuenta de que",
+      "ex": "Me di cuenta de que había olvidado las llaves."
+     }
+    ],
+    "gram": "Pluscuamperfecto: había + participio (había comido). Acción anterior a otra pasada: cuando llegué, ya habían salido."
+   }
+  },
+  {
+   "d": 192,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Narrating with all past tenses",
+     "g": "Combine preterite, imperfect and pluperfect to tell a rich story.",
+     "p": [
+      "Imperfect sets the scene: hacía sol, era tarde, estaba cansado. Preterite moves the action: entré, vi, grité.",
+      "Pluperfect adds background from earlier: no lo reconocí porque se había cortado el pelo.",
+      "A story pattern: Era un día... Estaba... De repente pasó... Resultó que alguien había..."
+     ],
+     "q": "Tell me about a surprise you had once. What was the scene, what happened, what had happened before?",
+     "c": "Write a six-sentence story using at least two verbs in each tense: imperfect, preterite, pluperfect."
+    },
+    "de": {
+     "t": "Erzählen mit allen Vergangenheitszeiten",
+     "g": "Kombiniere Indefinido, Imperfekt und Plusquamperfekt für eine lebendige Geschichte.",
+     "p": [
+      "Imperfekt beschreibt die Szene: hacía sol, era tarde, estaba cansado. Indefinido treibt an: entré, vi, grité.",
+      "Plusquamperfekt liefert Vorgeschichte: no lo reconocí porque se había cortado el pelo.",
+      "Ein Muster: Era un día... Estaba... De repente pasó... Resultó que alguien había..."
+     ],
+     "q": "Erzähl von einer Überraschung: Wie war die Szene, was passierte, was war vorher passiert?",
+     "c": "Schreib eine Geschichte in sechs Sätzen mit je mindestens zwei Verben in Imperfekt, Indefinido, Plusquamperfekt."
+    },
+    "es": {
+     "t": "Narrar con todos los pasados",
+     "g": "Combina indefinido, imperfecto y pluscuamperfecto para contar una historia rica.",
+     "p": [
+      "El imperfecto describe la escena: hacía sol, era tarde, estaba cansado. El indefinido avanza: entré, vi, grité.",
+      "El pluscuamperfecto añade lo anterior: no lo reconocí porque se había cortado el pelo.",
+      "Un esquema: Era un día... Estaba... De repente pasó... Resultó que alguien había..."
+     ],
+     "q": "Cuéntame una sorpresa que tuviste: ¿cómo era la escena, qué pasó y qué había pasado antes?",
+     "c": "Escribe una historia de seis frases con al menos dos verbos en imperfecto, indefinido y pluscuamperfecto."
+    },
+    "fr": {
+     "t": "Raconter avec tous les passés",
+     "g": "Combine passé simple espagnol, imparfait et plus-que-parfait pour une histoire riche.",
+     "p": [
+      "L'imparfait pose le décor : hacía sol, era tarde, estaba cansado. L'indefinido fait avancer : entré, vi, grité.",
+      "Le plus-que-parfait ajoute l'avant : no lo reconocí porque se había cortado el pelo.",
+      "Un schéma : Era un día... Estaba... De repente pasó... Resultó que alguien había..."
+     ],
+     "q": "Raconte-moi une surprise : quel était le décor, que s'est-il passé, que s'était-il passé avant ?",
+     "c": "Écris une histoire de six phrases avec au moins deux verbes à l'imparfait, à l'indefinido et au plus-que-parfait."
+    },
+    "it": {
+     "t": "Raccontare con tutti i passati",
+     "g": "Combina indefinido, imperfetto e trapassato per raccontare una storia ricca.",
+     "p": [
+      "L'imperfetto descrive la scena: hacía sol, era tarde, estaba cansado. L'indefinido fa avanzare: entré, vi, grité.",
+      "Il trapassato aggiunge il prima: no lo reconocí porque se había cortado el pelo.",
+      "Uno schema: Era un día... Estaba... De repente pasó... Resultó que alguien había..."
+     ],
+     "q": "Raccontami una sorpresa: com'era la scena, cosa è successo e cosa era successo prima?",
+     "c": "Scrivi una storia di sei frasi con almeno due verbi all'imperfetto, all'indefinido e al trapassato."
+    },
+    "pt": {
+     "t": "Narrar com todos os passados",
+     "g": "Combina indefinido, imperfeito e mais-que-perfeito para contar uma história rica.",
+     "p": [
+      "O imperfeito descreve a cena: hacía sol, era tarde, estaba cansado. O indefinido faz avançar: entré, vi, grité.",
+      "O mais-que-perfeito junta o antes: no lo reconocí porque se había cortado el pelo.",
+      "Um esquema: Era un día... Estaba... De repente pasó... Resultó que alguien había..."
+     ],
+     "q": "Conta-me uma surpresa: como era a cena, o que aconteceu e o que tinha acontecido antes?",
+     "c": "Escreve uma história de seis frases com pelo menos dois verbos no imperfeito, indefinido e mais-que-perfeito."
+    },
+    "pt_BR": {
+     "t": "Narrar com todos os passados",
+     "g": "Combine indefinido, imperfeito e mais-que-perfeito para contar uma história rica.",
+     "p": [
+      "O imperfeito descreve a cena: hacía sol, era tarde, estaba cansado. O indefinido faz avançar: entré, vi, grité.",
+      "O mais-que-perfeito acrescenta o antes: no lo reconocí porque se había cortado el pelo.",
+      "Um esquema: Era un día... Estaba... De repente pasó... Resultó que alguien había..."
+     ],
+     "q": "Me conte uma surpresa: como era a cena, o que aconteceu e o que tinha acontecido antes?",
+     "c": "Escreva uma história de seis frases com pelo menos dois verbos no imperfeito, indefinido e mais-que-perfeito."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "hacía",
+      "ex": "Hacía un frío terrible aquella mañana."
+     },
+     {
+      "w": "estaba",
+      "ex": "Estaba leyendo en el sofá cuando sonó el timbre."
+     },
+     {
+      "w": "de repente",
+      "ex": "De repente, se fue la luz en todo el edificio."
+     },
+     {
+      "w": "resultó que",
+      "ex": "Resultó que mis amigos habían preparado una fiesta."
+     },
+     {
+      "w": "se había",
+      "ex": "No lo reconocí porque se había dejado barba."
+     },
+     {
+      "w": "al final",
+      "ex": "Al final, todos nos reímos mucho."
+     }
+    ],
+    "gram": "Imperfecto = escena (hacía sol), indefinido = acción (entré), pluscuamperfecto = antes (ya habían llegado)."
+   }
+  },
+  {
+   "d": 193,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Story connectors",
+     "g": "Guide your listener with connectors: al principio, mientras, de repente, más tarde, finalmente.",
+     "p": [
+      "Start: al principio, primero, aquel día. Middle: luego, después, más tarde, al cabo de un rato.",
+      "Simultaneous and sudden: mientras + imperfect (mientras cocinaba), de repente, en ese momento.",
+      "Ending: al final, finalmente, por fin (after waiting), total que (informal summary)."
+     ],
+     "q": "How did your last weekend go? Tell it with at least four connectors.",
+     "c": "Rewrite yesterday as a mini story using al principio, mientras, de repente and al final."
+    },
+    "de": {
+     "t": "Erzählkonnektoren",
+     "g": "Führe deinen Zuhörer mit al principio, mientras, de repente, más tarde, finalmente.",
+     "p": [
+      "Anfang: al principio, primero, aquel día. Mitte: luego, después, más tarde, al cabo de un rato.",
+      "Gleichzeitig und plötzlich: mientras + Imperfekt (mientras cocinaba), de repente, en ese momento.",
+      "Ende: al final, finalmente, por fin (nach Warten), total que (umgangssprachliche Zusammenfassung)."
+     ],
+     "q": "Wie war dein letztes Wochenende? Erzähl es mit mindestens vier Konnektoren.",
+     "c": "Erzähl den gestrigen Tag als Mini-Geschichte mit al principio, mientras, de repente und al final."
+    },
+    "es": {
+     "t": "Conectores para contar historias",
+     "g": "Guía a quien te escucha con al principio, mientras, de repente, más tarde, finalmente.",
+     "p": [
+      "Inicio: al principio, primero, aquel día. Desarrollo: luego, después, más tarde, al cabo de un rato.",
+      "Simultáneo y repentino: mientras + imperfecto (mientras cocinaba), de repente, en ese momento.",
+      "Final: al final, finalmente, por fin (tras esperar), total que (resumen coloquial)."
+     ],
+     "q": "¿Qué tal tu último fin de semana? Cuéntalo con al menos cuatro conectores.",
+     "c": "Reescribe el día de ayer como una mini historia con al principio, mientras, de repente y al final."
+    },
+    "fr": {
+     "t": "Connecteurs pour raconter",
+     "g": "Guide ton auditeur avec al principio, mientras, de repente, más tarde, finalmente.",
+     "p": [
+      "Début : al principio, primero, aquel día. Milieu : luego, después, más tarde, al cabo de un rato.",
+      "Simultané et soudain : mientras + imparfait (mientras cocinaba), de repente, en ese momento.",
+      "Fin : al final, finalmente, por fin (après attente), total que (résumé familier)."
+     ],
+     "q": "Comment s'est passé ton dernier week-end ? Raconte-le avec au moins quatre connecteurs.",
+     "c": "Réécris ta journée d'hier en mini histoire avec al principio, mientras, de repente et al final."
+    },
+    "it": {
+     "t": "Connettivi per raccontare",
+     "g": "Guida chi ascolta con al principio, mientras, de repente, más tarde, finalmente.",
+     "p": [
+      "Inizio: al principio, primero, aquel día. Sviluppo: luego, después, más tarde, al cabo de un rato.",
+      "Contemporaneo e improvviso: mientras + imperfetto (mientras cocinaba), de repente, en ese momento.",
+      "Fine: al final, finalmente, por fin (dopo un'attesa), total que (riassunto colloquiale)."
+     ],
+     "q": "Com'è andato il tuo ultimo fine settimana? Raccontalo con almeno quattro connettivi.",
+     "c": "Riscrivi la giornata di ieri come mini storia con al principio, mientras, de repente e al final."
+    },
+    "pt": {
+     "t": "Conectores para contar histórias",
+     "g": "Guia quem te ouve com al principio, mientras, de repente, más tarde, finalmente.",
+     "p": [
+      "Início: al principio, primero, aquel día. Meio: luego, después, más tarde, al cabo de un rato.",
+      "Simultâneo e súbito: mientras + imperfeito (mientras cocinaba), de repente, en ese momento.",
+      "Fim: al final, finalmente, por fin (depois de esperar), total que (resumo informal)."
+     ],
+     "q": "Como foi o teu último fim de semana? Conta-o com pelo menos quatro conectores.",
+     "c": "Reescreve o dia de ontem como uma mini história com al principio, mientras, de repente e al final."
+    },
+    "pt_BR": {
+     "t": "Conectores para contar histórias",
+     "g": "Guie quem escuta com al principio, mientras, de repente, más tarde, finalmente.",
+     "p": [
+      "Início: al principio, primero, aquel día. Meio: luego, después, más tarde, al cabo de un rato.",
+      "Simultâneo e súbito: mientras + imperfeito (mientras cocinaba), de repente, en ese momento.",
+      "Fim: al final, finalmente, por fin (depois de esperar), total que (resumo informal)."
+     ],
+     "q": "Como foi o seu último fim de semana? Conte com pelo menos quatro conectores.",
+     "c": "Reescreva o dia de ontem como uma mini história com al principio, mientras, de repente e al final."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "al principio",
+      "ex": "Al principio no entendía nada, pero luego mejoré."
+     },
+     {
+      "w": "mientras",
+      "ex": "Mientras esperaba el autobús, empezó a llover."
+     },
+     {
+      "w": "de repente",
+      "ex": "De repente, alguien gritó mi nombre."
+     },
+     {
+      "w": "más tarde",
+      "ex": "Más tarde fuimos a cenar a un sitio pequeño."
+     },
+     {
+      "w": "al cabo de un rato",
+      "ex": "Al cabo de un rato, llegó el camarero."
+     },
+     {
+      "w": "por fin",
+      "ex": "Después de dos horas, por fin llegamos al hotel."
+     }
+    ],
+    "gram": "Conectores: al principio, luego, más tarde, mientras (+ imperfecto), de repente, en ese momento, al final, por fin."
+   }
+  },
+  {
+   "d": 194,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Reported speech: statements",
+     "g": "Report what people say: dice que está cansado, dijo que estaba cansado.",
+     "p": [
+      "Present reporting verb keeps the tense: dice que está cansado, dice que vendrá.",
+      "Past reporting verb shifts back: está → estaba, vendrá → vendría, ha comido → había comido.",
+      "Change pronouns and place words too: aquí → allí, hoy → ese día, mañana → al día siguiente."
+     ],
+     "q": "What did someone tell you recently? Report it with me dijo que...",
+     "c": "Report three things a friend said yesterday, changing the tenses after dijo que."
+    },
+    "de": {
+     "t": "Indirekte Rede: Aussagen",
+     "g": "Gib wieder, was Leute sagen: dice que está cansado, dijo que estaba cansado.",
+     "p": [
+      "Einleitendes Verb im Präsens behält die Zeit: dice que está cansado, dice que vendrá.",
+      "Einleitendes Verb in der Vergangenheit verschiebt: está → estaba, vendrá → vendría, ha comido → había comido.",
+      "Auch Pronomen und Ortsangaben ändern sich: aquí → allí, hoy → ese día, mañana → al día siguiente."
+     ],
+     "q": "Was hat dir neulich jemand erzählt? Gib es mit me dijo que... wieder.",
+     "c": "Gib drei Dinge wieder, die ein Freund gestern sagte, und ändere die Zeiten nach dijo que."
+    },
+    "es": {
+     "t": "Estilo indirecto: afirmaciones",
+     "g": "Cuenta lo que dice la gente: dice que está cansado, dijo que estaba cansado.",
+     "p": [
+      "Con el verbo en presente, el tiempo no cambia: dice que está cansado, dice que vendrá.",
+      "Con el verbo en pasado, el tiempo retrocede: está → estaba, vendrá → vendría, ha comido → había comido.",
+      "Cambian también pronombres y lugares: aquí → allí, hoy → ese día, mañana → al día siguiente."
+     ],
+     "q": "¿Qué te contó alguien hace poco? Cuéntalo con me dijo que...",
+     "c": "Cuenta tres cosas que dijo un amigo ayer, cambiando los tiempos después de dijo que."
+    },
+    "fr": {
+     "t": "Discours indirect : affirmations",
+     "g": "Rapporte ce que disent les gens : dice que está cansado, dijo que estaba cansado.",
+     "p": [
+      "Verbe introducteur au présent : pas de changement : dice que está cansado, dice que vendrá.",
+      "Au passé, le temps recule : está → estaba, vendrá → vendría, ha comido → había comido.",
+      "Pronoms et repères changent aussi : aquí → allí, hoy → ese día, mañana → al día siguiente."
+     ],
+     "q": "Qu'est-ce que quelqu'un t'a dit récemment ? Rapporte-le avec me dijo que...",
+     "c": "Rapporte trois choses qu'un ami a dites hier, en changeant les temps après dijo que."
+    },
+    "it": {
+     "t": "Discorso indiretto: affermazioni",
+     "g": "Riferisci ciò che dice la gente: dice que está cansado, dijo que estaba cansado.",
+     "p": [
+      "Con il verbo al presente il tempo non cambia: dice que está cansado, dice que vendrá.",
+      "Con il verbo al passato il tempo arretra: está → estaba, vendrá → vendría, ha comido → había comido.",
+      "Cambiano anche pronomi e luoghi: aquí → allí, hoy → ese día, mañana → al día siguiente."
+     ],
+     "q": "Cosa ti ha detto qualcuno di recente? Riferiscilo con me dijo que...",
+     "c": "Riferisci tre cose che ha detto un amico ieri, cambiando i tempi dopo dijo que."
+    },
+    "pt": {
+     "t": "Discurso indireto: afirmações",
+     "g": "Conta o que as pessoas dizem: dice que está cansado, dijo que estaba cansado.",
+     "p": [
+      "Com o verbo no presente, o tempo não muda: dice que está cansado, dice que vendrá.",
+      "Com o verbo no passado, o tempo recua: está → estaba, vendrá → vendría, ha comido → había comido.",
+      "Mudam também pronomes e lugares: aquí → allí, hoy → ese día, mañana → al día siguiente."
+     ],
+     "q": "O que é que alguém te contou há pouco? Conta com me dijo que...",
+     "c": "Conta três coisas que um amigo disse ontem, mudando os tempos depois de dijo que."
+    },
+    "pt_BR": {
+     "t": "Discurso indireto: afirmações",
+     "g": "Conte o que as pessoas dizem: dice que está cansado, dijo que estaba cansado.",
+     "p": [
+      "Com o verbo no presente, o tempo não muda: dice que está cansado, dice que vendrá.",
+      "Com o verbo no passado, o tempo recua: está → estaba, vendrá → vendría, ha comido → había comido.",
+      "Mudam também pronomes e lugares: aquí → allí, hoy → ese día, mañana → al día siguiente."
+     ],
+     "q": "O que alguém te contou recentemente? Conte com me dijo que...",
+     "c": "Conte três coisas que um amigo disse ontem, mudando os tempos depois de dijo que."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "dice que",
+      "ex": "Mi hermana dice que está muy contenta en Madrid."
+     },
+     {
+      "w": "dijo que",
+      "ex": "Pedro dijo que estaba cansado y se fue a casa."
+     },
+     {
+      "w": "me contó que",
+      "ex": "Ana me contó que había encontrado trabajo."
+     },
+     {
+      "w": "comentó que",
+      "ex": "El profesor comentó que el examen sería fácil."
+     },
+     {
+      "w": "al día siguiente",
+      "ex": "Dijo que volvería al día siguiente."
+     },
+     {
+      "w": "explicó que",
+      "ex": "Nos explicó que el museo estaba cerrado por obras."
+     }
+    ],
+    "gram": "Estilo indirecto: dice que está (sin cambio); dijo que estaba. Vendrá → vendría, ha ido → había ido, hoy → ese día."
+   }
+  },
+  {
+   "d": 195,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Reported questions and requests",
+     "g": "Report questions with si or question words, and requests with pedir que + subjunctive.",
+     "p": [
+      "Yes/no questions use si: ¿Quieres venir? → Me preguntó si quería venir.",
+      "Wh-questions keep the word with its accent: ¿Dónde vives? → Me preguntó dónde vivía.",
+      "Requests and orders: ¡Ayúdame! → Me pidió que le ayudara. Past verb → imperfect subjunctive (preview!)."
+     ],
+     "q": "What did someone ask you this week? Report it with me preguntó si... or me pidió que...",
+     "c": "Report two questions and one request from a recent conversation."
+    },
+    "de": {
+     "t": "Indirekte Fragen und Bitten",
+     "g": "Gib Fragen mit si oder Fragewort wieder und Bitten mit pedir que + subjuntivo.",
+     "p": [
+      "Ja/Nein-Fragen mit si: ¿Quieres venir? → Me preguntó si quería venir.",
+      "W-Fragen behalten das Fragewort mit Akzent: ¿Dónde vives? → Me preguntó dónde vivía.",
+      "Bitten und Befehle: ¡Ayúdame! → Me pidió que le ayudara. Vergangenheit → subjuntivo imperfecto (Vorschau!)."
+     ],
+     "q": "Was hat dich diese Woche jemand gefragt? Gib es mit me preguntó si... oder me pidió que... wieder.",
+     "c": "Gib zwei Fragen und eine Bitte aus einem neulichen Gespräch wieder."
+    },
+    "es": {
+     "t": "Preguntas y peticiones en estilo indirecto",
+     "g": "Cuenta preguntas con si o con interrogativos, y peticiones con pedir que + subjuntivo.",
+     "p": [
+      "Las preguntas de sí o no usan si: ¿Quieres venir? → Me preguntó si quería venir.",
+      "Las preguntas abiertas mantienen la palabra con tilde: ¿Dónde vives? → Me preguntó dónde vivía.",
+      "Peticiones y órdenes: ¡Ayúdame! → Me pidió que le ayudara. En pasado va el imperfecto de subjuntivo."
+     ],
+     "q": "¿Qué te preguntó alguien esta semana? Cuéntalo con me preguntó si... o me pidió que...",
+     "c": "Cuenta dos preguntas y una petición de una conversación reciente."
+    },
+    "fr": {
+     "t": "Questions et demandes au discours indirect",
+     "g": "Rapporte des questions avec si ou un mot interrogatif, et des demandes avec pedir que + subjonctif.",
+     "p": [
+      "Questions oui/non avec si : ¿Quieres venir? → Me preguntó si quería venir.",
+      "Questions ouvertes : le mot garde son accent : ¿Dónde vives? → Me preguntó dónde vivía.",
+      "Demandes et ordres : ¡Ayúdame! → Me pidió que le ayudara. Au passé : subjonctif imparfait (aperçu !)."
+     ],
+     "q": "Qu'est-ce qu'on t'a demandé cette semaine ? Rapporte-le avec me preguntó si... ou me pidió que...",
+     "c": "Rapporte deux questions et une demande d'une conversation récente."
+    },
+    "it": {
+     "t": "Domande e richieste nel discorso indiretto",
+     "g": "Riferisci domande con si o con le parole interrogative, e richieste con pedir que + congiuntivo.",
+     "p": [
+      "Domande sì/no con si: ¿Quieres venir? → Me preguntó si quería venir.",
+      "Domande aperte: la parola mantiene l'accento: ¿Dónde vives? → Me preguntó dónde vivía.",
+      "Richieste e ordini: ¡Ayúdame! → Me pidió que le ayudara. Al passato: congiuntivo imperfetto (anteprima!)."
+     ],
+     "q": "Cosa ti ha chiesto qualcuno questa settimana? Riferiscilo con me preguntó si... o me pidió que...",
+     "c": "Riferisci due domande e una richiesta di una conversazione recente."
+    },
+    "pt": {
+     "t": "Perguntas e pedidos no discurso indireto",
+     "g": "Conta perguntas com si ou palavras interrogativas, e pedidos com pedir que + conjuntivo.",
+     "p": [
+      "Perguntas de sim ou não usam si: ¿Quieres venir? → Me preguntó si quería venir.",
+      "Perguntas abertas mantêm a palavra com acento: ¿Dónde vives? → Me preguntó dónde vivía.",
+      "Pedidos e ordens: ¡Ayúdame! → Me pidió que le ayudara. No passado: imperfeito do conjuntivo (antevisão!)."
+     ],
+     "q": "O que te perguntaram esta semana? Conta com me preguntó si... ou me pidió que...",
+     "c": "Conta duas perguntas e um pedido de uma conversa recente."
+    },
+    "pt_BR": {
+     "t": "Perguntas e pedidos no discurso indireto",
+     "g": "Conte perguntas com si ou palavras interrogativas, e pedidos com pedir que + subjuntivo.",
+     "p": [
+      "Perguntas de sim ou não usam si: ¿Quieres venir? → Me preguntó si quería venir.",
+      "Perguntas abertas mantêm a palavra com acento: ¿Dónde vives? → Me preguntó dónde vivía.",
+      "Pedidos e ordens: ¡Ayúdame! → Me pidió que le ayudara. No passado: imperfeito do subjuntivo (prévia!)."
+     ],
+     "q": "O que te perguntaram esta semana? Conte com me preguntó si... ou me pidió que...",
+     "c": "Conte duas perguntas e um pedido de uma conversa recente."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "me preguntó si",
+      "ex": "Me preguntó si quería ir al cine con ellos."
+     },
+     {
+      "w": "me preguntó dónde",
+      "ex": "La recepcionista me preguntó dónde vivía."
+     },
+     {
+      "w": "quería saber",
+      "ex": "Mi jefe quería saber cuándo terminaría el informe."
+     },
+     {
+      "w": "me pidió que",
+      "ex": "Mi vecina me pidió que le regara las plantas."
+     },
+     {
+      "w": "me dijo que + subjuntivo",
+      "ex": "Mi madre me dijo que la llamara al llegar."
+     },
+     {
+      "w": "me preguntó cuánto",
+      "ex": "Me preguntó cuánto costaba el billete."
+     }
+    ],
+    "gram": "Preguntas: me preguntó si quería venir / dónde vivía. Peticiones: me pide que le ayude; me pidió que le ayudara."
+   }
+  },
+  {
+   "d": 196,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Conditional: haría",
+     "g": "Imagine and hypothesise with the simple conditional: haría, diría, viajaría.",
+     "p": [
+      "Add -ía, -ías, -ía, -íamos, -íais, -ían to the infinitive: viajar → viajaría, comer → comería.",
+      "Irregular stems match the future: haría, diría, tendría, podría, saldría, vendría, querría, sabría.",
+      "Uses: polite requests (¿podrías ayudarme?), advice (yo que tú, iría) and imagining (viviría en la playa)."
+     ],
+     "q": "With a free month, what would you do? Use at least three conditional verbs.",
+     "c": "Write five sentences about your ideal day: me levantaría..., desayunaría..., iría..."
+    },
+    "de": {
+     "t": "Konditional: haría",
+     "g": "Stell dir Dinge vor mit dem einfachen Konditional: haría, diría, viajaría.",
+     "p": [
+      "Hänge -ía, -ías, -ía, -íamos, -íais, -ían an den Infinitiv: viajar → viajaría, comer → comería.",
+      "Unregelmäßige Stämme wie im Futur: haría, diría, tendría, podría, saldría, vendría, querría, sabría.",
+      "Gebrauch: höfliche Bitten (¿podrías ayudarme?), Rat (yo que tú, iría) und Vorstellen (viviría en la playa)."
+     ],
+     "q": "Mit einem freien Monat, was würdest du tun? Benutze mindestens drei Konditionalformen.",
+     "c": "Schreib fünf Sätze über deinen idealen Tag: me levantaría..., desayunaría..., iría..."
+    },
+    "es": {
+     "t": "Condicional: haría",
+     "g": "Imagina e hipotetiza con el condicional simple: haría, diría, viajaría.",
+     "p": [
+      "Añade -ía, -ías, -ía, -íamos, -íais, -ían al infinitivo: viajar → viajaría, comer → comería.",
+      "Las raíces irregulares son las del futuro: haría, diría, tendría, podría, saldría, vendría, querría, sabría.",
+      "Usos: pedir con cortesía (¿podrías ayudarme?), aconsejar (yo que tú, iría) e imaginar (viviría en la playa)."
+     ],
+     "q": "Con un mes libre, ¿qué harías? Usa al menos tres verbos en condicional.",
+     "c": "Escribe cinco frases sobre tu día ideal: me levantaría..., desayunaría..., iría..."
+    },
+    "fr": {
+     "t": "Conditionnel : haría",
+     "g": "Imagine et fais des hypothèses avec le conditionnel : haría, diría, viajaría.",
+     "p": [
+      "Ajoute -ía, -ías, -ía, -íamos, -íais, -ían à l'infinitif : viajar → viajaría, comer → comería.",
+      "Les radicaux irréguliers sont ceux du futur : haría, diría, tendría, podría, saldría, vendría, sabría.",
+      "Emplois : demande polie (¿podrías ayudarme?), conseil (yo que tú, iría), imaginer (viviría en la playa)."
+     ],
+     "q": "Avec un mois libre, que ferais-tu ? Utilise au moins trois verbes au conditionnel.",
+     "c": "Écris cinq phrases sur ta journée idéale : me levantaría..., desayunaría..., iría..."
+    },
+    "it": {
+     "t": "Condizionale: haría",
+     "g": "Immagina e fai ipotesi con il condizionale semplice: haría, diría, viajaría.",
+     "p": [
+      "Aggiungi -ía, -ías, -ía, -íamos, -íais, -ían all'infinito: viajar → viajaría, comer → comería.",
+      "Le radici irregolari sono quelle del futuro: haría, diría, tendría, podría, saldría, vendría, sabría.",
+      "Usi: richieste gentili (¿podrías ayudarme?), consigli (yo que tú, iría) e immaginare (viviría en la playa)."
+     ],
+     "q": "Con un mese libero, cosa faresti? Usa almeno tre verbi al condizionale.",
+     "c": "Scrivi cinque frasi sulla tua giornata ideale: me levantaría..., desayunaría..., iría..."
+    },
+    "pt": {
+     "t": "Condicional: haría",
+     "g": "Imagina e cria hipóteses com o condicional simples: haría, diría, viajaría.",
+     "p": [
+      "Junta -ía, -ías, -ía, -íamos, -íais, -ían ao infinitivo: viajar → viajaría, comer → comería.",
+      "As raízes irregulares são as do futuro: haría, diría, tendría, podría, saldría, vendría, querría, sabría.",
+      "Usos: pedidos educados (¿podrías ayudarme?), conselhos (yo que tú, iría) e imaginar (viviría en la playa)."
+     ],
+     "q": "Com um mês livre, o que farias? Usa pelo menos três verbos no condicional.",
+     "c": "Escreve cinco frases sobre o teu dia ideal: me levantaría..., desayunaría..., iría..."
+    },
+    "pt_BR": {
+     "t": "Condicional: haría",
+     "g": "Imagine e levante hipóteses com o condicional simples: haría, diría, viajaría.",
+     "p": [
+      "Acrescente -ía, -ías, -ía, -íamos, -íais, -ían ao infinitivo: viajar → viajaría, comer → comería.",
+      "As raízes irregulares são as do futuro: haría, diría, tendría, podría, saldría, vendría, querría, sabría.",
+      "Usos: pedidos educados (¿podrías ayudarme?), conselhos (yo que tú, iría) e imaginar (viviría en la playa)."
+     ],
+     "q": "Com um mês livre, o que você faria? Use pelo menos três verbos no condicional.",
+     "c": "Escreva cinco frases sobre o seu dia ideal: me levantaría..., desayunaría..., iría..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "haría",
+      "ex": "Con más tiempo, haría un curso de cocina."
+     },
+     {
+      "w": "viajaría",
+      "ex": "Viajaría por toda Sudamérica en tren."
+     },
+     {
+      "w": "¿podrías...?",
+      "ex": "¿Podrías cerrar la ventana, por favor?"
+     },
+     {
+      "w": "me gustaría",
+      "ex": "Me gustaría aprender a tocar la guitarra."
+     },
+     {
+      "w": "tendría",
+      "ex": "Yo en tu lugar tendría más paciencia."
+     },
+     {
+      "w": "diría",
+      "ex": "Yo diría que es la mejor playa de la región."
+     }
+    ],
+    "gram": "Condicional: infinitivo + -ía (hablaría, comería). Irregulares: haría, diría, tendría, podría, saldría, vendría, sabría."
+   }
+  },
+  {
+   "d": 197,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Imperfect subjunctive: forms",
+     "g": "Form the imperfect subjunctive: hablara, comiera, tuviera, fuera.",
+     "p": [
+      "Take the ellos preterite, drop -ron and add -ra: hablaron → hablara, comieron → comiera.",
+      "Irregular preterites carry over: tuvieron → tuviera, fueron → fuera, hicieron → hiciera, dijeron → dijera.",
+      "Endings: -ra, -ras, -ra, -ramos, -rais, -ran. Nosotros has an accent: habláramos, fuéramos."
+     ],
+     "q": "Which preterite forms do you know well? Turn three of them into the imperfect subjunctive.",
+     "c": "Write the imperfect subjunctive of estar, poder, ir and venir for yo and nosotros."
+    },
+    "de": {
+     "t": "Subjuntivo imperfecto: Formen",
+     "g": "Bilde den subjuntivo imperfecto: hablara, comiera, tuviera, fuera.",
+     "p": [
+      "Nimm die ellos-Form des Indefinido, streiche -ron, hänge -ra an: hablaron → hablara, comieron → comiera.",
+      "Unregelmäßige Formen bleiben: tuvieron → tuviera, fueron → fuera, hicieron → hiciera, dijeron → dijera.",
+      "Endungen: -ra, -ras, -ra, -ramos, -rais, -ran. Nosotros trägt einen Akzent: habláramos, fuéramos."
+     ],
+     "q": "Welche Indefinido-Formen kennst du gut? Mach aus dreien den subjuntivo imperfecto.",
+     "c": "Schreib den subjuntivo imperfecto von estar, poder, ir und venir für yo und nosotros."
+    },
+    "es": {
+     "t": "Imperfecto de subjuntivo: formas",
+     "g": "Forma el imperfecto de subjuntivo: hablara, comiera, tuviera, fuera.",
+     "p": [
+      "Toma la forma ellos del indefinido, quita -ron y añade -ra: hablaron → hablara, comieron → comiera.",
+      "Los indefinidos irregulares se mantienen: tuvieron → tuviera, fueron → fuera, hicieron → hiciera.",
+      "Terminaciones: -ra, -ras, -ra, -ramos, -rais, -ran. Nosotros lleva tilde: habláramos, fuéramos."
+     ],
+     "q": "¿Qué formas del indefinido conoces bien? Pasa tres al imperfecto de subjuntivo.",
+     "c": "Escribe el imperfecto de subjuntivo de estar, poder, ir y venir para yo y nosotros."
+    },
+    "fr": {
+     "t": "Subjonctif imparfait : formes",
+     "g": "Forme le subjonctif imparfait : hablara, comiera, tuviera, fuera.",
+     "p": [
+      "Prends la forme ellos de l'indefinido, enlève -ron, ajoute -ra : hablaron → hablara, comieron → comiera.",
+      "Les irréguliers se gardent : tuvieron → tuviera, fueron → fuera, hicieron → hiciera, dijeron → dijera.",
+      "Terminaisons : -ra, -ras, -ra, -ramos, -rais, -ran. Nosotros a un accent : habláramos, fuéramos."
+     ],
+     "q": "Quelles formes de l'indefinido connais-tu bien ? Mets-en trois au subjonctif imparfait.",
+     "c": "Écris le subjonctif imparfait de estar, poder, ir et venir pour yo et nosotros."
+    },
+    "it": {
+     "t": "Congiuntivo imperfetto: forme",
+     "g": "Forma il congiuntivo imperfetto: hablara, comiera, tuviera, fuera.",
+     "p": [
+      "Prendi la forma ellos dell'indefinido, togli -ron, aggiungi -ra: hablaron → hablara, comieron → comiera.",
+      "Gli irregolari restano: tuvieron → tuviera, fueron → fuera, hicieron → hiciera, dijeron → dijera.",
+      "Desinenze: -ra, -ras, -ra, -ramos, -rais, -ran. Nosotros ha l'accento: habláramos, fuéramos."
+     ],
+     "q": "Quali forme dell'indefinido conosci bene? Trasformane tre nel congiuntivo imperfetto.",
+     "c": "Scrivi il congiuntivo imperfetto di estar, poder, ir e venir per yo e nosotros."
+    },
+    "pt": {
+     "t": "Imperfeito do conjuntivo: formas",
+     "g": "Forma o imperfeito do conjuntivo: hablara, comiera, tuviera, fuera.",
+     "p": [
+      "Pega na forma ellos do indefinido, tira -ron e junta -ra: hablaron → hablara, comieron → comiera.",
+      "Os irregulares mantêm-se: tuvieron → tuviera, fueron → fuera, hicieron → hiciera, dijeron → dijera.",
+      "Terminações: -ra, -ras, -ra, -ramos, -rais, -ran. Nosotros leva acento: habláramos, fuéramos."
+     ],
+     "q": "Que formas do indefinido conheces bem? Passa três para o imperfeito do conjuntivo.",
+     "c": "Escreve o imperfeito do conjuntivo de estar, poder, ir e venir para yo e nosotros."
+    },
+    "pt_BR": {
+     "t": "Imperfeito do subjuntivo: formas",
+     "g": "Forme o imperfeito do subjuntivo: hablara, comiera, tuviera, fuera.",
+     "p": [
+      "Pegue a forma ellos do indefinido, tire -ron e coloque -ra: hablaron → hablara, comieron → comiera.",
+      "Os irregulares continuam: tuvieron → tuviera, fueron → fuera, hicieron → hiciera, dijeron → dijera.",
+      "Terminações: -ra, -ras, -ra, -ramos, -rais, -ran. Nosotros tem acento: habláramos, fuéramos."
+     ],
+     "q": "Quais formas do indefinido você conhece bem? Passe três para o imperfeito do subjuntivo.",
+     "c": "Escreva o imperfeito do subjuntivo de estar, poder, ir e venir para yo e nosotros."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "hablara",
+      "ex": "Mi profesora quería que hablara más en clase."
+     },
+     {
+      "w": "comiera",
+      "ex": "El médico le dijo que comiera más fruta."
+     },
+     {
+      "w": "tuviera",
+      "ex": "Ojalá tuviera más tiempo libre."
+     },
+     {
+      "w": "fuera",
+      "ex": "Me pidió que fuera a buscarla al aeropuerto."
+     },
+     {
+      "w": "hiciera",
+      "ex": "Nos pidieron que hiciéramos menos ruido."
+     },
+     {
+      "w": "pudiera",
+      "ex": "Ojalá pudiera visitar Perú este verano."
+     }
+    ],
+    "gram": "Imperfecto de subjuntivo: ellos del indefinido - ron + ra: hablaron → hablara, tuvieron → tuviera, fueron → fuera."
+   }
+  },
+  {
+   "d": 198,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "If clauses: si tuviera tiempo",
+     "g": "Imagine unreal situations: si + imperfect subjunctive, conditional.",
+     "p": [
+      "Pattern: si + imperfect subjunctive, + conditional: si tuviera más tiempo, aprendería a bailar.",
+      "The order can flip: aprendería a bailar si tuviera más tiempo. Never use the conditional after si!",
+      "Very common: si yo fuera tú..., si pudiera..., si tuviera dinero..., si viviera en España..."
+     ],
+     "q": "If you could live anywhere in the Spanish-speaking world, where would you live?",
+     "c": "Complete five sentences: si fuera rico..., si pudiera volar..., si hablara diez idiomas..., and two of your own."
+    },
+    "de": {
+     "t": "Bedingungssätze: si tuviera tiempo",
+     "g": "Stell dir irreale Situationen vor: si + subjuntivo imperfecto, Konditional.",
+     "p": [
+      "Muster: si + subjuntivo imperfecto, + Konditional: si tuviera más tiempo, aprendería a bailar.",
+      "Die Reihenfolge kann wechseln: aprendería a bailar si tuviera más tiempo. Nie Konditional nach si!",
+      "Sehr häufig: si yo fuera tú..., si pudiera..., si tuviera dinero..., si viviera en España..."
+     ],
+     "q": "Wenn du überall in der spanischsprachigen Welt leben könntest, wo würdest du leben?",
+     "c": "Ergänze fünf Sätze: si fuera rico..., si pudiera volar..., si hablara diez idiomas... und zwei eigene."
+    },
+    "es": {
+     "t": "Condicionales: si tuviera tiempo",
+     "g": "Imagina situaciones irreales: si + imperfecto de subjuntivo, condicional.",
+     "p": [
+      "Esquema: si + imperfecto de subjuntivo, + condicional: si tuviera más tiempo, aprendería a bailar.",
+      "El orden puede cambiar: aprendería a bailar si tuviera más tiempo. ¡Nunca condicional después de si!",
+      "Muy frecuentes: si yo fuera tú..., si pudiera..., si tuviera dinero..., si viviera en España..."
+     ],
+     "q": "Si pudieras vivir en cualquier lugar del mundo hispano, ¿dónde vivirías?",
+     "c": "Completa cinco frases: si fuera rico..., si pudiera volar..., si hablara diez idiomas... y dos tuyas."
+    },
+    "fr": {
+     "t": "Hypothèses : si tuviera tiempo",
+     "g": "Imagine des situations irréelles : si + subjonctif imparfait, conditionnel.",
+     "p": [
+      "Schéma : si + subjonctif imparfait, + conditionnel : si tuviera más tiempo, aprendería a bailar.",
+      "Là où le français dit si j'avais, l'espagnol met le subjonctif : si tuviera. Jamais de conditionnel après si !",
+      "Très courant : si yo fuera tú..., si pudiera..., si tuviera dinero..., si viviera en España..."
+     ],
+     "q": "Si tu pouvais vivre n'importe où dans le monde hispanophone, où vivrais-tu ?",
+     "c": "Complète cinq phrases : si fuera rico..., si pudiera volar..., si hablara diez idiomas... et deux à toi."
+    },
+    "it": {
+     "t": "Periodo ipotetico: si tuviera tiempo",
+     "g": "Immagina situazioni irreali: si + congiuntivo imperfetto, condizionale.",
+     "p": [
+      "Schema: si + congiuntivo imperfetto, + condizionale: si tuviera más tiempo, aprendería a bailar.",
+      "Proprio come se avessi... in italiano! L'ordine può cambiare. Mai il condizionale dopo si.",
+      "Molto comuni: si yo fuera tú..., si pudiera..., si tuviera dinero..., si viviera en España..."
+     ],
+     "q": "Se potessi vivere ovunque nel mondo ispanico, dove vivresti?",
+     "c": "Completa cinque frasi: si fuera rico..., si pudiera volar..., si hablara diez idiomas... e due tue."
+    },
+    "pt": {
+     "t": "Condicionais: si tuviera tiempo",
+     "g": "Imagina situações irreais: si + imperfeito do conjuntivo, condicional.",
+     "p": [
+      "Esquema: si + imperfeito do conjuntivo, + condicional: si tuviera más tiempo, aprendería a bailar.",
+      "Como se tivesse... em português! A ordem pode mudar. Nunca condicional depois de si.",
+      "Muito frequentes: si yo fuera tú..., si pudiera..., si tuviera dinero..., si viviera en España..."
+     ],
+     "q": "Se pudesses viver em qualquer lugar do mundo hispânico, onde vivirias?",
+     "c": "Completa cinco frases: si fuera rico..., si pudiera volar..., si hablara diez idiomas... e duas tuas."
+    },
+    "pt_BR": {
+     "t": "Condicionais: si tuviera tiempo",
+     "g": "Imagine situações irreais: si + imperfeito do subjuntivo, condicional.",
+     "p": [
+      "Esquema: si + imperfeito do subjuntivo, + condicional: si tuviera más tiempo, aprendería a bailar.",
+      "Como se eu tivesse... em português! A ordem pode mudar. Nunca condicional depois de si.",
+      "Muito comuns: si yo fuera tú..., si pudiera..., si tuviera dinero..., si viviera en España..."
+     ],
+     "q": "Se você pudesse morar em qualquer lugar do mundo hispânico, onde moraria?",
+     "c": "Complete cinco frases: si fuera rico..., si pudiera volar..., si hablara diez idiomas... e duas suas."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "si tuviera",
+      "ex": "Si tuviera más tiempo, aprendería a bailar salsa."
+     },
+     {
+      "w": "si fuera",
+      "ex": "Si fuera tú, aceptaría ese trabajo."
+     },
+     {
+      "w": "si pudiera",
+      "ex": "Si pudiera, viajaría a la Patagonia mañana."
+     },
+     {
+      "w": "si viviera",
+      "ex": "Si viviera en Sevilla, pasearía cada tarde por el río."
+     },
+     {
+      "w": "si supiera",
+      "ex": "Si supiera cocinar, te invitaría a cenar."
+     },
+     {
+      "w": "si ganara",
+      "ex": "Si ganara un premio, compraría una casa con jardín."
+     }
+    ],
+    "gram": "Condición irreal: si + imperfecto de subjuntivo, + condicional: si tuviera dinero, viajaría. Nunca: si tendría."
+   }
+  },
+  {
+   "d": 199,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Real vs unreal conditions",
+     "g": "Choose between possibility (si llueve) and imagination (si lloviera).",
+     "p": [
+      "Real or likely: si + present, + present/future/command: si llueve, me quedo en casa; si puedes, ven.",
+      "Unreal or unlikely: si + imperfect subjunctive, + conditional: si lloviera, me quedaría en casa.",
+      "The choice shows how you see it: si gano la lotería (I bought a ticket!) vs si ganara la lotería (a dream)."
+     ],
+     "q": "What will you do if it rains this weekend? And what would you do if it snowed in summer?",
+     "c": "Write two pairs: one real and one unreal version of the same idea, like si tengo/si tuviera tiempo."
+    },
+    "de": {
+     "t": "Reale und irreale Bedingungen",
+     "g": "Wähle zwischen Möglichkeit (si llueve) und Vorstellung (si lloviera).",
+     "p": [
+      "Real oder wahrscheinlich: si + Präsens, + Präsens/Futur/Imperativ: si llueve, me quedo en casa; si puedes, ven.",
+      "Irreal oder unwahrscheinlich: si + subjuntivo imperfecto, + Konditional: si lloviera, me quedaría en casa.",
+      "Die Wahl zeigt deine Sicht: si gano la lotería (ich habe ein Los!) vs si ganara la lotería (ein Traum)."
+     ],
+     "q": "Was machst du, wenn es am Wochenende regnet? Und was, wenn es im Sommer schneien würde?",
+     "c": "Schreib zwei Paare: eine reale und eine irreale Version derselben Idee, wie si tengo/si tuviera tiempo."
+    },
+    "es": {
+     "t": "Condiciones reales e irreales",
+     "g": "Elige entre posibilidad (si llueve) e imaginación (si lloviera).",
+     "p": [
+      "Real o probable: si + presente, + presente/futuro/imperativo: si llueve, me quedo en casa; si puedes, ven.",
+      "Irreal o poco probable: si + imperfecto de subjuntivo, + condicional: si lloviera, me quedaría en casa.",
+      "La elección muestra tu visión: si gano la lotería (¡tengo boleto!) frente a si ganara la lotería (un sueño)."
+     ],
+     "q": "¿Qué harás si llueve este fin de semana? ¿Y qué harías si nevara en verano?",
+     "c": "Escribe dos parejas: una versión real y otra irreal de la misma idea, como si tengo/si tuviera tiempo."
+    },
+    "fr": {
+     "t": "Conditions réelles et irréelles",
+     "g": "Choisis entre possibilité (si llueve) et imagination (si lloviera).",
+     "p": [
+      "Réel ou probable : si + présent, + présent/futur/impératif : si llueve, me quedo en casa ; si puedes, ven.",
+      "Irréel ou peu probable : si + subjonctif imparfait, + conditionnel : si lloviera, me quedaría en casa.",
+      "Le choix montre ton regard : si gano la lotería (j'ai un billet !) ou si ganara la lotería (un rêve)."
+     ],
+     "q": "Que feras-tu s'il pleut ce week-end ? Et que ferais-tu s'il neigeait en été ?",
+     "c": "Écris deux paires : une version réelle et une irréelle de la même idée, comme si tengo/si tuviera tiempo."
+    },
+    "it": {
+     "t": "Condizioni reali e irreali",
+     "g": "Scegli tra possibilità (si llueve) e immaginazione (si lloviera).",
+     "p": [
+      "Reale o probabile: si + presente, + presente/futuro/imperativo: si llueve, me quedo en casa; si puedes, ven.",
+      "Irreale o improbabile: si + congiuntivo imperfetto, + condizionale: si lloviera, me quedaría en casa.",
+      "La scelta mostra il tuo punto di vista: si gano la lotería (ho il biglietto!) o si ganara la lotería (un sogno)."
+     ],
+     "q": "Cosa farai se piove questo fine settimana? E cosa faresti se nevicasse d'estate?",
+     "c": "Scrivi due coppie: una versione reale e una irreale della stessa idea, come si tengo/si tuviera tiempo."
+    },
+    "pt": {
+     "t": "Condições reais e irreais",
+     "g": "Escolhe entre possibilidade (si llueve) e imaginação (si lloviera).",
+     "p": [
+      "Real ou provável: si + presente, + presente/futuro/imperativo: si llueve, me quedo en casa; si puedes, ven.",
+      "Irreal ou pouco provável: si + imperfeito do conjuntivo, + condicional: si lloviera, me quedaría en casa.",
+      "Atenção: se chover é si llueve, nunca futuro do conjuntivo. Si gano la lotería é possível; si ganara, um sonho."
+     ],
+     "q": "O que vais fazer se chover este fim de semana? E o que farias se nevasse no verão?",
+     "c": "Escreve dois pares: uma versão real e uma irreal da mesma ideia, como si tengo/si tuviera tiempo."
+    },
+    "pt_BR": {
+     "t": "Condições reais e irreais",
+     "g": "Escolha entre possibilidade (si llueve) e imaginação (si lloviera).",
+     "p": [
+      "Real ou provável: si + presente, + presente/futuro/imperativo: si llueve, me quedo en casa; si puedes, ven.",
+      "Irreal ou pouco provável: si + imperfeito do subjuntivo, + condicional: si lloviera, me quedaría en casa.",
+      "Atenção: se chover é si llueve, nunca futuro do subjuntivo. Si gano la lotería é possível; si ganara, um sonho."
+     ],
+     "q": "O que você vai fazer se chover neste fim de semana? E o que faria se nevasse no verão?",
+     "c": "Escreva dois pares: uma versão real e uma irreal da mesma ideia, como si tengo/si tuviera tiempo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "si llueve",
+      "ex": "Si llueve mañana, vamos al museo."
+     },
+     {
+      "w": "si lloviera",
+      "ex": "Si lloviera en el desierto, todo florecería."
+     },
+     {
+      "w": "si puedes",
+      "ex": "Si puedes, tráeme un café, por favor."
+     },
+     {
+      "w": "si tengo tiempo",
+      "ex": "Si tengo tiempo esta tarde, te llamo."
+     },
+     {
+      "w": "si tuviera tiempo",
+      "ex": "Si tuviera tiempo, leería un libro cada semana."
+     },
+     {
+      "w": "en caso de que",
+      "ex": "En caso de que llueva, la fiesta será dentro."
+     }
+    ],
+    "gram": "Real: si + presente, + presente/futuro/imperativo (si llueve, me quedo). Irreal: si + imperfecto de subjuntivo, + condicional."
+   }
+  },
+  {
+   "d": 200,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Dream jobs and imagined lives",
+     "g": "Talk about dream jobs and other lives with ¿qué harías si...?",
+     "p": [
+      "Ask and dream: ¿qué harías si pudieras elegir cualquier trabajo? Sería guía de montaña en los Andes.",
+      "Give reasons: me encantaría porque..., lo mejor sería..., lo único malo sería que...",
+      "Jobs to know: el traductor, la fotógrafa, el cocinero, la bióloga marina, el diseñador. Day 200, bravo!"
+     ],
+     "q": "If you could have any job for one year, what would it be and why?",
+     "c": "Describe your imagined life in another country in five sentences with si + imperfect subjunctive and conditional."
+    },
+    "de": {
+     "t": "Traumberufe und erträumte Leben",
+     "g": "Sprich über Traumberufe und andere Leben mit ¿qué harías si...?",
+     "p": [
+      "Fragen und träumen: ¿qué harías si pudieras elegir cualquier trabajo? Sería guía de montaña en los Andes.",
+      "Begründe: me encantaría porque..., lo mejor sería..., lo único malo sería que...",
+      "Berufe: el traductor, la fotógrafa, el cocinero, la bióloga marina, el diseñador. Tag 200, bravo!"
+     ],
+     "q": "Wenn du ein Jahr lang jeden Beruf haben könntest, welcher wäre es und warum?",
+     "c": "Beschreib dein erträumtes Leben in einem anderen Land in fünf Sätzen mit si + subjuntivo imperfecto und Konditional."
+    },
+    "es": {
+     "t": "Trabajos soñados y vidas imaginadas",
+     "g": "Habla de trabajos soñados y otras vidas con ¿qué harías si...?",
+     "p": [
+      "Pregunta y sueña: ¿qué harías si pudieras elegir cualquier trabajo? Sería guía de montaña en los Andes.",
+      "Da razones: me encantaría porque..., lo mejor sería..., lo único malo sería que...",
+      "Profesiones: el traductor, la fotógrafa, el cocinero, la bióloga marina, el diseñador. ¡Día 200, bravo!"
+     ],
+     "q": "Si pudieras tener cualquier trabajo durante un año, ¿cuál sería y por qué?",
+     "c": "Describe tu vida imaginada en otro país en cinco frases con si + imperfecto de subjuntivo y condicional."
+    },
+    "fr": {
+     "t": "Métiers de rêve et vies imaginées",
+     "g": "Parle de métiers de rêve et d'autres vies avec ¿qué harías si...?",
+     "p": [
+      "Demande et rêve : ¿qué harías si pudieras elegir cualquier trabajo? Sería guía de montaña en los Andes.",
+      "Donne des raisons : me encantaría porque..., lo mejor sería..., lo único malo sería que...",
+      "Métiers : el traductor, la fotógrafa, el cocinero, la bióloga marina, el diseñador. Jour 200, bravo !"
+     ],
+     "q": "Si tu pouvais faire n'importe quel métier pendant un an, lequel choisirais-tu et pourquoi ?",
+     "c": "Décris ta vie imaginée dans un autre pays en cinq phrases avec si + subjonctif imparfait et conditionnel."
+    },
+    "it": {
+     "t": "Lavori dei sogni e vite immaginate",
+     "g": "Parla di lavori dei sogni e altre vite con ¿qué harías si...?",
+     "p": [
+      "Chiedi e sogna: ¿qué harías si pudieras elegir cualquier trabajo? Sería guía de montaña en los Andes.",
+      "Dai motivi: me encantaría porque..., lo mejor sería..., lo único malo sería que...",
+      "Mestieri: el traductor, la fotógrafa, el cocinero, la bióloga marina, el diseñador. Giorno 200, bravo!"
+     ],
+     "q": "Se potessi fare qualsiasi lavoro per un anno, quale sarebbe e perché?",
+     "c": "Descrivi la tua vita immaginata in un altro paese in cinque frasi con si + congiuntivo imperfetto e condizionale."
+    },
+    "pt": {
+     "t": "Trabalhos de sonho e vidas imaginadas",
+     "g": "Fala de trabalhos de sonho e outras vidas com ¿qué harías si...?",
+     "p": [
+      "Pergunta e sonha: ¿qué harías si pudieras elegir cualquier trabajo? Sería guía de montaña en los Andes.",
+      "Dá razões: me encantaría porque..., lo mejor sería..., lo único malo sería que...",
+      "Profissões: el traductor, la fotógrafa, el cocinero, la bióloga marina, el diseñador. Dia 200, parabéns!"
+     ],
+     "q": "Se pudesses ter qualquer trabalho durante um ano, qual seria e porquê?",
+     "c": "Descreve a tua vida imaginada noutro país em cinco frases com si + imperfeito do conjuntivo e condicional."
+    },
+    "pt_BR": {
+     "t": "Trabalhos dos sonhos e vidas imaginadas",
+     "g": "Fale de trabalhos dos sonhos e outras vidas com ¿qué harías si...?",
+     "p": [
+      "Pergunte e sonhe: ¿qué harías si pudieras elegir cualquier trabajo? Sería guía de montaña en los Andes.",
+      "Dê motivos: me encantaría porque..., lo mejor sería..., lo único malo sería que...",
+      "Profissões: el traductor, la fotógrafa, el cocinero, la bióloga marina, el diseñador. Dia 200, parabéns!"
+     ],
+     "q": "Se você pudesse ter qualquer trabalho por um ano, qual seria e por quê?",
+     "c": "Descreva sua vida imaginada em outro país em cinco frases com si + imperfeito do subjuntivo e condicional."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "¿qué harías si...?",
+      "ex": "¿Qué harías si pudieras vivir en otro país?"
+     },
+     {
+      "w": "sería",
+      "ex": "Sería fotógrafa de naturaleza en Costa Rica."
+     },
+     {
+      "w": "me encantaría",
+      "ex": "Me encantaría trabajar como guía turístico."
+     },
+     {
+      "w": "lo mejor sería",
+      "ex": "Lo mejor sería conocer gente de todo el mundo."
+     },
+     {
+      "w": "el trabajo de mis sueños",
+      "ex": "El trabajo de mis sueños es ser cocinero en Lima."
+     },
+     {
+      "w": "lo único malo sería",
+      "ex": "Lo único malo sería estar lejos de mi familia."
+     }
+    ],
+    "gram": "Hipótesis: ¿qué harías si pudieras...? Si pudiera elegir, sería guía. Me encantaría + infinitivo. Lo mejor sería..."
+   }
+  }
+ ]
+}

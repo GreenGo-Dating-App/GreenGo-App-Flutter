@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 241,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Food culture across the Hispanic world",
+     "g": "Talk about famous dishes and the regions they come from.",
+     "p": [
+      "Paella comes from Valencia, arepas from Venezuela and Colombia, ceviche from Peru, mole from Mexico.",
+      "Use es típico de and se hace con to explain a dish: el mole es típico de Puebla y se hace con chiles.",
+      "Empanadas exist in many countries, each with its own filling and shape."
+     ],
+     "q": "Which Hispanic dish would you like to try? Answer with me gustaría probar... porque...",
+     "c": "Describe a dish from your country in Spanish using es típico de and se hace con."
+    },
+    "de": {
+     "t": "Esskultur in der spanischsprachigen Welt",
+     "g": "Sprich über berühmte Gerichte und ihre Herkunftsregionen.",
+     "p": [
+      "Paella stammt aus Valencia, Arepas aus Venezuela und Kolumbien, Ceviche aus Peru, Mole aus Mexiko.",
+      "Mit es típico de und se hace con erklärst du ein Gericht: el mole es típico de Puebla y se hace con chiles.",
+      "Empanadas gibt es in vielen Ländern, jeweils mit eigener Füllung und Form."
+     ],
+     "q": "Welches Gericht würdest du gern probieren? Antworte mit me gustaría probar... porque...",
+     "c": "Beschreibe ein Gericht aus deinem Land auf Spanisch mit es típico de und se hace con."
+    },
+    "es": {
+     "t": "La cultura gastronómica hispana",
+     "g": "Habla de platos famosos y de las regiones de donde vienen.",
+     "p": [
+      "La paella viene de Valencia, las arepas de Venezuela y Colombia, el ceviche de Perú y el mole de México.",
+      "Usa es típico de y se hace con para explicar un plato: el mole es típico de Puebla y se hace con chiles.",
+      "Las empanadas existen en muchos países, cada uno con su relleno y su forma."
+     ],
+     "q": "¿Qué plato hispano te gustaría probar? Responde con me gustaría probar... porque...",
+     "c": "Describe un plato de tu país en español con es típico de y se hace con."
+    },
+    "fr": {
+     "t": "La gastronomie du monde hispanique",
+     "g": "Parle de plats célèbres et des régions d'où ils viennent.",
+     "p": [
+      "La paella vient de Valence, les arepas du Venezuela et de Colombie, le ceviche du Pérou, le mole du Mexique.",
+      "Avec es típico de et se hace con, tu expliques un plat : el mole es típico de Puebla y se hace con chiles.",
+      "Les empanadas existent dans beaucoup de pays, chacun avec sa farce et sa forme."
+     ],
+     "q": "Quel plat hispanique aimerais-tu goûter ? Réponds avec me gustaría probar... porque...",
+     "c": "Décris un plat de ton pays en espagnol avec es típico de et se hace con."
+    },
+    "it": {
+     "t": "La cultura del cibo nel mondo ispanico",
+     "g": "Parla di piatti famosi e delle regioni da cui provengono.",
+     "p": [
+      "La paella viene da Valencia, le arepas da Venezuela e Colombia, il ceviche dal Perù, il mole dal Messico.",
+      "Con es típico de e se hace con spieghi un piatto: el mole es típico de Puebla y se hace con chiles.",
+      "Le empanadas esistono in molti paesi, ognuno con il suo ripieno e la sua forma."
+     ],
+     "q": "Quale piatto ispanico ti piacerebbe assaggiare? Rispondi con me gustaría probar... porque...",
+     "c": "Descrivi un piatto del tuo paese in spagnolo con es típico de e se hace con."
+    },
+    "pt": {
+     "t": "A cultura gastronómica hispânica",
+     "g": "Fala de pratos famosos e das regiões de onde vêm.",
+     "p": [
+      "A paella vem de Valência, as arepas da Venezuela e da Colômbia, o ceviche do Peru e o mole do México.",
+      "Usa es típico de e se hace con para explicar um prato: el mole es típico de Puebla y se hace con chiles.",
+      "As empanadas existem em muitos países, cada um com o seu recheio e a sua forma."
+     ],
+     "q": "Que prato hispânico gostavas de provar? Responde com me gustaría probar... porque...",
+     "c": "Descreve um prato do teu país em espanhol com es típico de e se hace con."
+    },
+    "pt_BR": {
+     "t": "A cultura gastronômica hispânica",
+     "g": "Fale de pratos famosos e das regiões de onde eles vêm.",
+     "p": [
+      "A paella vem de Valência, as arepas da Venezuela e da Colômbia, o ceviche do Peru e o mole do México.",
+      "Use es típico de e se hace con para explicar um prato: el mole es típico de Puebla y se hace con chiles.",
+      "As empanadas existem em muitos países, cada um com seu recheio e seu formato."
+     ],
+     "q": "Qual prato hispânico você gostaria de provar? Responda com me gustaría probar... porque...",
+     "c": "Descreva um prato do seu país em espanhol com es típico de e se hace con."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la paella",
+      "ex": "La paella valenciana lleva arroz, pollo y verduras."
+     },
+     {
+      "w": "las arepas",
+      "ex": "En Venezuela desayunamos arepas con queso."
+     },
+     {
+      "w": "el ceviche",
+      "ex": "El ceviche peruano se prepara con pescado y limón."
+     },
+     {
+      "w": "el mole",
+      "ex": "El mole es una salsa mexicana con chiles y chocolate."
+     },
+     {
+      "w": "las empanadas",
+      "ex": "En Argentina las empanadas se hornean."
+     },
+     {
+      "w": "es típico de",
+      "ex": "El gazpacho es típico de Andalucía."
+     }
+    ],
+    "gram": "Se impersonal para recetas: se hace con, se sirve frío. Es típico de + lugar para hablar del origen de un plato."
+   }
+  },
+  {
+   "d": 242,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Table manners and sobremesa",
+     "g": "Learn the customs and phrases of eating together in Spanish.",
+     "p": [
+      "Say ¡buen provecho! or ¡que aproveche! to people who are eating; it is friendly, not formal.",
+      "La sobremesa is the relaxed chat at the table after the meal; nobody rushes to leave.",
+      "Sharing dishes is common: ¿compartimos unas raciones? ¿Me pasas el pan, por favor?"
+     ],
+     "q": "Do people in your country have something like la sobremesa? Tell me about it.",
+     "c": "Use three table phrases today: buen provecho, ¿me pasas...?, and estaba riquísimo."
+    },
+    "de": {
+     "t": "Tischmanieren und Sobremesa",
+     "g": "Lerne Bräuche und Sätze rund ums gemeinsame Essen auf Spanisch.",
+     "p": [
+      "Mit ¡buen provecho! oder ¡que aproveche! wünschst du Leuten beim Essen guten Appetit, ganz locker.",
+      "Die Sobremesa ist das entspannte Gespräch am Tisch nach dem Essen; niemand hat es eilig.",
+      "Teilen ist üblich: ¿compartimos unas raciones? ¿Me pasas el pan, por favor?"
+     ],
+     "q": "Gibt es in deinem Land etwas wie die Sobremesa? Erzähl mir davon.",
+     "c": "Benutze heute drei Tischsätze: buen provecho, ¿me pasas...? und estaba riquísimo."
+    },
+    "es": {
+     "t": "Modales en la mesa y sobremesa",
+     "g": "Aprende costumbres y frases para comer en compañía.",
+     "p": [
+      "Di ¡buen provecho! o ¡que aproveche! a quien está comiendo; es amable, no formal.",
+      "La sobremesa es la charla tranquila en la mesa después de comer; nadie tiene prisa por irse.",
+      "Compartir platos es normal: ¿compartimos unas raciones? ¿Me pasas el pan, por favor?"
+     ],
+     "q": "¿En tu país existe algo parecido a la sobremesa? Cuéntamelo.",
+     "c": "Usa hoy tres frases de mesa: buen provecho, ¿me pasas...? y estaba riquísimo."
+    },
+    "fr": {
+     "t": "Les manières de table et la sobremesa",
+     "g": "Apprends les coutumes et phrases pour manger ensemble en espagnol.",
+     "p": [
+      "On dit ¡buen provecho! ou ¡que aproveche! à ceux qui mangent ; c'est amical, pas formel.",
+      "La sobremesa, c'est la discussion détendue à table après le repas ; personne ne se presse.",
+      "Partager les plats est courant : ¿compartimos unas raciones? ¿Me pasas el pan, por favor?"
+     ],
+     "q": "Existe-t-il quelque chose comme la sobremesa dans ton pays ? Raconte-moi.",
+     "c": "Utilise trois phrases de table aujourd'hui : buen provecho, ¿me pasas...? et estaba riquísimo."
+    },
+    "it": {
+     "t": "Galateo a tavola e sobremesa",
+     "g": "Impara usanze e frasi per mangiare insieme in spagnolo.",
+     "p": [
+      "Si dice ¡buen provecho! o ¡que aproveche! a chi sta mangiando; è cordiale, non formale.",
+      "La sobremesa è la chiacchierata rilassata a tavola dopo il pasto; nessuno ha fretta di andarsene.",
+      "Condividere i piatti è normale: ¿compartimos unas raciones? ¿Me pasas el pan, por favor?"
+     ],
+     "q": "Nel tuo paese esiste qualcosa di simile alla sobremesa? Raccontamelo.",
+     "c": "Usa oggi tre frasi da tavola: buen provecho, ¿me pasas...? e estaba riquísimo."
+    },
+    "pt": {
+     "t": "Boas maneiras à mesa e sobremesa",
+     "g": "Aprende costumes e frases para comer em companhia em espanhol.",
+     "p": [
+      "Diz ¡buen provecho! ou ¡que aproveche! a quem está a comer; é simpático, não formal.",
+      "A sobremesa é a conversa tranquila à mesa depois da refeição; ninguém tem pressa de sair.",
+      "Partilhar pratos é comum: ¿compartimos unas raciones? ¿Me pasas el pan, por favor?"
+     ],
+     "q": "No teu país existe algo parecido com a sobremesa? Conta-me.",
+     "c": "Usa hoje três frases de mesa: buen provecho, ¿me pasas...? e estaba riquísimo."
+    },
+    "pt_BR": {
+     "t": "Etiqueta à mesa e sobremesa",
+     "g": "Aprenda costumes e frases para comer junto em espanhol.",
+     "p": [
+      "Diga ¡buen provecho! ou ¡que aproveche! para quem está comendo; é simpático, não formal.",
+      "A sobremesa em espanhol é o papo tranquilo à mesa depois de comer, não o doce; ninguém tem pressa.",
+      "Dividir pratos é comum: ¿compartimos unas raciones? ¿Me pasas el pan, por favor?"
+     ],
+     "q": "No seu país existe algo parecido com a sobremesa? Me conte.",
+     "c": "Use hoje três frases de mesa: buen provecho, ¿me pasas...? e estaba riquísimo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "¡buen provecho!",
+      "ex": "¡Buen provecho! Que disfrutéis de la comida."
+     },
+     {
+      "w": "la sobremesa",
+      "ex": "Después de comer hicimos una sobremesa de dos horas."
+     },
+     {
+      "w": "compartir platos",
+      "ex": "En las tapas es normal compartir platos."
+     },
+     {
+      "w": "¿me pasas...?",
+      "ex": "¿Me pasas la sal, por favor?"
+     },
+     {
+      "w": "la ración",
+      "ex": "Pedimos una ración de calamares para todos."
+     },
+     {
+      "w": "estaba riquísimo",
+      "ex": "Gracias por la cena, estaba riquísimo."
+     }
+    ],
+    "gram": "Pedir con naturalidad: ¿me pasas + objeto? Elogiar con el superlativo -ísimo: riquísimo, buenísimo."
+   }
+  },
+  {
+   "d": 243,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Gifts and greetings",
+     "g": "Know how people greet each other and give gifts in Spanish-speaking places.",
+     "p": [
+      "Dos besos in Spain, one kiss in much of Latin America, un abrazo between friends, la mano at work.",
+      "Bringing a small gift when invited is kind: unas flores, un postre, una botella de vino.",
+      "Gifts are often opened right away: ¡Qué detalle! ¡No hacía falta! Muchas gracias."
+     ],
+     "q": "How do you greet a new colleague in your culture? Explain it in Spanish.",
+     "c": "Practise reacting to a gift: say ¡Qué detalle! and ¡No hacía falta! out loud."
+    },
+    "de": {
+     "t": "Geschenke und Begrüßungen",
+     "g": "Erfahre, wie man sich in spanischsprachigen Ländern begrüßt und beschenkt.",
+     "p": [
+      "Dos besos in Spanien, ein Kuss in weiten Teilen Lateinamerikas, un abrazo unter Freunden, la mano im Job.",
+      "Bei einer Einladung ist ein kleines Geschenk nett: unas flores, un postre, una botella de vino.",
+      "Geschenke werden oft sofort geöffnet: ¡Qué detalle! ¡No hacía falta! Muchas gracias."
+     ],
+     "q": "Wie begrüßt man in deiner Kultur einen neuen Kollegen? Erkläre es auf Spanisch.",
+     "c": "Übe die Reaktion auf ein Geschenk: sag laut ¡Qué detalle! und ¡No hacía falta!"
+    },
+    "es": {
+     "t": "Regalos y saludos",
+     "g": "Conoce cómo se saluda y se hacen regalos en el mundo hispano.",
+     "p": [
+      "Dos besos en España, un beso en gran parte de Latinoamérica, un abrazo entre amigos y la mano en el trabajo.",
+      "Si te invitan, llevar un detalle es amable: unas flores, un postre, una botella de vino.",
+      "Los regalos se suelen abrir enseguida: ¡Qué detalle! ¡No hacía falta! Muchas gracias."
+     ],
+     "q": "¿Cómo saludas a un compañero nuevo en tu cultura? Explícalo en español.",
+     "c": "Practica cómo reaccionar a un regalo: di en voz alta ¡Qué detalle! y ¡No hacía falta!"
+    },
+    "fr": {
+     "t": "Cadeaux et salutations",
+     "g": "Découvre comment on se salue et on offre des cadeaux dans le monde hispanique.",
+     "p": [
+      "Dos besos en Espagne, une bise dans une grande partie de l'Amérique latine, un abrazo entre amis, la mano au travail.",
+      "Quand on est invité, un petit cadeau fait plaisir : unas flores, un postre, una botella de vino.",
+      "On ouvre souvent le cadeau tout de suite : ¡Qué detalle! ¡No hacía falta! Muchas gracias."
+     ],
+     "q": "Comment salues-tu un nouveau collègue dans ta culture ? Explique-le en espagnol.",
+     "c": "Entraîne-toi à réagir à un cadeau : dis à voix haute ¡Qué detalle! et ¡No hacía falta!"
+    },
+    "it": {
+     "t": "Regali e saluti",
+     "g": "Scopri come ci si saluta e si fanno regali nel mondo ispanico.",
+     "p": [
+      "Dos besos in Spagna, un bacio in gran parte dell'America Latina, un abrazo tra amici, la mano al lavoro.",
+      "Se ti invitano, un pensierino è gentile: unas flores, un postre, una botella de vino.",
+      "I regali si aprono spesso subito: ¡Qué detalle! ¡No hacía falta! Muchas gracias."
+     ],
+     "q": "Come saluti un nuovo collega nella tua cultura? Spiegalo in spagnolo.",
+     "c": "Esercitati a reagire a un regalo: di' ad alta voce ¡Qué detalle! e ¡No hacía falta!"
+    },
+    "pt": {
+     "t": "Presentes e cumprimentos",
+     "g": "Conhece como se cumprimenta e se oferecem presentes no mundo hispânico.",
+     "p": [
+      "Dos besos em Espanha, um beijo em grande parte da América Latina, un abrazo entre amigos, la mano no trabalho.",
+      "Quando te convidam, levar uma lembrança é simpático: unas flores, un postre, una botella de vino.",
+      "Os presentes abrem-se muitas vezes logo: ¡Qué detalle! ¡No hacía falta! Muchas gracias."
+     ],
+     "q": "Como cumprimentas um colega novo na tua cultura? Explica em espanhol.",
+     "c": "Treina a reação a um presente: diz em voz alta ¡Qué detalle! e ¡No hacía falta!"
+    },
+    "pt_BR": {
+     "t": "Presentes e cumprimentos",
+     "g": "Conheça como as pessoas se cumprimentam e dão presentes no mundo hispânico.",
+     "p": [
+      "Dos besos na Espanha, um beijo em grande parte da América Latina, un abrazo entre amigos, la mano no trabalho.",
+      "Quando te convidam, levar uma lembrancinha é gentil: unas flores, un postre, una botella de vino.",
+      "Os presentes costumam ser abertos na hora: ¡Qué detalle! ¡No hacía falta! Muchas gracias."
+     ],
+     "q": "Como você cumprimenta um colega novo na sua cultura? Explique em espanhol.",
+     "c": "Treine a reação a um presente: diga em voz alta ¡Qué detalle! e ¡No hacía falta!"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "dar la mano",
+      "ex": "En una entrevista de trabajo se suele dar la mano."
+     },
+     {
+      "w": "un abrazo",
+      "ex": "Cuando vi a mi amigo, le di un abrazo enorme."
+     },
+     {
+      "w": "un detalle",
+      "ex": "Te he traído un detalle para tu casa nueva."
+     },
+     {
+      "w": "¡No hacía falta!",
+      "ex": "¡Unas flores! ¡No hacía falta, de verdad!"
+     },
+     {
+      "w": "envolver",
+      "ex": "¿Me lo puede envolver para regalo?"
+     },
+     {
+      "w": "saludarse",
+      "ex": "Los compañeros se saludan cada mañana."
+     }
+    ],
+    "gram": "Verbos recíprocos con se: nos saludamos, se dan dos besos. Agradecer: ¡Qué detalle! = ¡Qué amable!"
+   }
+  },
+  {
+   "d": 244,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Living abroad",
+     "g": "Talk about adapting to life in another country.",
+     "p": [
+      "Echar de menos means to miss: echo de menos a mi familia, echo de menos la comida de casa.",
+      "El choque cultural is culture shock; adaptarse a is to adapt to: me costó adaptarme al horario.",
+      "Hacer amigos takes time: me apunté a un club, conocí a gente en un intercambio."
+     ],
+     "q": "What would you miss most if you lived abroad? Use echaría de menos...",
+     "c": "Write three sentences about adapting: me costó..., echo de menos... and lo mejor es..."
+    },
+    "de": {
+     "t": "Leben im Ausland",
+     "g": "Sprich darüber, wie man sich an das Leben in einem anderen Land gewöhnt.",
+     "p": [
+      "Echar de menos heißt vermissen: echo de menos a mi familia, echo de menos la comida de casa.",
+      "El choque cultural ist der Kulturschock; adaptarse a heißt sich anpassen: me costó adaptarme al horario.",
+      "Freunde finden braucht Zeit: me apunté a un club, conocí a gente en un intercambio."
+     ],
+     "q": "Was würdest du im Ausland am meisten vermissen? Benutze echaría de menos...",
+     "c": "Schreib drei Sätze übers Eingewöhnen: me costó..., echo de menos... und lo mejor es..."
+    },
+    "es": {
+     "t": "Vivir en el extranjero",
+     "g": "Habla de cómo adaptarse a la vida en otro país.",
+     "p": [
+      "Echar de menos es sentir la falta de algo: echo de menos a mi familia, echo de menos la comida de casa.",
+      "El choque cultural llega al principio; adaptarse lleva tiempo: me costó adaptarme al horario.",
+      "Hacer amigos requiere paciencia: me apunté a un club, conocí a gente en un intercambio."
+     ],
+     "q": "¿Qué echarías de menos si vivieras en otro país? Usa echaría de menos...",
+     "c": "Escribe tres frases sobre adaptarte: me costó..., echo de menos... y lo mejor es..."
+    },
+    "fr": {
+     "t": "Vivre à l'étranger",
+     "g": "Parle de l'adaptation à la vie dans un autre pays.",
+     "p": [
+      "Echar de menos signifie manquer : echo de menos a mi familia, echo de menos la comida de casa.",
+      "El choque cultural est le choc culturel ; adaptarse a, s'adapter : me costó adaptarme al horario.",
+      "Se faire des amis prend du temps : me apunté a un club, conocí a gente en un intercambio."
+     ],
+     "q": "Qu'est-ce qui te manquerait le plus à l'étranger ? Utilise echaría de menos...",
+     "c": "Écris trois phrases sur l'adaptation : me costó..., echo de menos... et lo mejor es..."
+    },
+    "it": {
+     "t": "Vivere all'estero",
+     "g": "Parla di come ci si adatta alla vita in un altro paese.",
+     "p": [
+      "Echar de menos significa sentire la mancanza: echo de menos a mi familia, echo de menos la comida de casa.",
+      "El choque cultural è lo shock culturale; adaptarse a vuol dire adattarsi: me costó adaptarme al horario.",
+      "Fare amicizia richiede tempo: me apunté a un club, conocí a gente en un intercambio."
+     ],
+     "q": "Cosa ti mancherebbe di più vivendo all'estero? Usa echaría de menos...",
+     "c": "Scrivi tre frasi sull'adattarsi: me costó..., echo de menos... e lo mejor es..."
+    },
+    "pt": {
+     "t": "Viver no estrangeiro",
+     "g": "Fala de como te adaptas à vida noutro país.",
+     "p": [
+      "Echar de menos significa ter saudades: echo de menos a mi familia, echo de menos la comida de casa.",
+      "El choque cultural é o choque cultural; adaptarse a é adaptar-se: me costó adaptarme al horario.",
+      "Fazer amigos leva tempo: me apunté a un club, conocí a gente en un intercambio."
+     ],
+     "q": "Do que terias mais saudades se vivesses no estrangeiro? Usa echaría de menos...",
+     "c": "Escreve três frases sobre adaptação: me costó..., echo de menos... e lo mejor es..."
+    },
+    "pt_BR": {
+     "t": "Morar no exterior",
+     "g": "Fale de como se adaptar à vida em outro país.",
+     "p": [
+      "Echar de menos significa sentir saudade: echo de menos a mi familia, echo de menos la comida de casa.",
+      "El choque cultural é o choque cultural; adaptarse a é se adaptar: me costó adaptarme al horario.",
+      "Fazer amigos leva tempo: me apunté a un club, conocí a gente en un intercambio."
+     ],
+     "q": "Do que você sentiria mais saudade morando fora? Use echaría de menos...",
+     "c": "Escreva três frases sobre adaptação: me costó..., echo de menos... e lo mejor es..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "echar de menos",
+      "ex": "Echo de menos los domingos con mi familia."
+     },
+     {
+      "w": "adaptarse a",
+      "ex": "Me adapté rápido al clima de Madrid."
+     },
+     {
+      "w": "el choque cultural",
+      "ex": "Al principio sentí un pequeño choque cultural."
+     },
+     {
+      "w": "hacer amigos",
+      "ex": "En la residencia es fácil hacer amigos."
+     },
+     {
+      "w": "me costó",
+      "ex": "Me costó entender el acento de la zona."
+     },
+     {
+      "w": "el extranjero",
+      "ex": "Mi hermana vive en el extranjero desde hace dos años."
+     }
+    ],
+    "gram": "Me costó + infinitivo (dificultad en el pasado). Echar de menos + a + persona: echo de menos a mis amigos."
+   }
+  },
+  {
+   "d": 245,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Language learning tips",
+     "g": "Share strategies that really help you learn Spanish.",
+     "p": [
+      "Intercambios: meet a Spanish speaker and swap languages, half the time each.",
+      "Watch series con subtítulos en español, then try without them.",
+      "Pensar en español: describe your day in your head; give advice with te recomiendo que + subjunctive."
+     ],
+     "q": "Which strategy works best for you? Explain it with lo que más me ayuda es...",
+     "c": "Give a friend two tips in Spanish starting with te recomiendo que..."
+    },
+    "de": {
+     "t": "Tipps zum Sprachenlernen",
+     "g": "Teile Strategien, die beim Spanischlernen wirklich helfen.",
+     "p": [
+      "Intercambios: Triff jemanden, der Spanisch spricht, und tauscht die Sprachen, halbe-halbe.",
+      "Schau Serien con subtítulos en español, dann versuch es ohne.",
+      "Pensar en español: Beschreibe deinen Tag im Kopf; Rat geben mit te recomiendo que + Subjuntivo."
+     ],
+     "q": "Welche Strategie hilft dir am meisten? Erkläre es mit lo que más me ayuda es...",
+     "c": "Gib einem Freund zwei Tipps auf Spanisch, beginnend mit te recomiendo que..."
+    },
+    "es": {
+     "t": "Consejos para aprender idiomas",
+     "g": "Comparte estrategias que de verdad ayudan a aprender español.",
+     "p": [
+      "Intercambios: queda con un hispanohablante y alternad los idiomas, mitad y mitad.",
+      "Mira series con subtítulos en español y luego intenta verlas sin ellos.",
+      "Piensa en español: describe tu día mentalmente; aconseja con te recomiendo que + subjuntivo."
+     ],
+     "q": "¿Qué estrategia te funciona mejor? Explícalo con lo que más me ayuda es...",
+     "c": "Da a un amigo dos consejos en español empezando por te recomiendo que..."
+    },
+    "fr": {
+     "t": "Astuces pour apprendre les langues",
+     "g": "Partage des stratégies qui aident vraiment à apprendre l'espagnol.",
+     "p": [
+      "Intercambios : retrouve un hispanophone et échangez vos langues, moitié-moitié.",
+      "Regarde des séries con subtítulos en español, puis essaie sans.",
+      "Pensar en español : décris ta journée dans ta tête ; conseille avec te recomiendo que + subjonctif."
+     ],
+     "q": "Quelle stratégie marche le mieux pour toi ? Explique avec lo que más me ayuda es...",
+     "c": "Donne deux conseils en espagnol à un ami en commençant par te recomiendo que..."
+    },
+    "it": {
+     "t": "Consigli per imparare le lingue",
+     "g": "Condividi strategie che aiutano davvero a imparare lo spagnolo.",
+     "p": [
+      "Intercambios: incontra un ispanofono e scambiatevi le lingue, metà e metà.",
+      "Guarda serie con subtítulos en español, poi prova senza.",
+      "Pensar en español: descrivi la giornata nella tua testa; consiglia con te recomiendo que + congiuntivo."
+     ],
+     "q": "Quale strategia funziona meglio per te? Spiegalo con lo que más me ayuda es...",
+     "c": "Dai a un amico due consigli in spagnolo iniziando con te recomiendo que..."
+    },
+    "pt": {
+     "t": "Dicas para aprender línguas",
+     "g": "Partilha estratégias que ajudam mesmo a aprender espanhol.",
+     "p": [
+      "Intercambios: encontra-te com um hispanófono e trocam de língua, metade do tempo cada.",
+      "Vê séries con subtítulos en español e depois tenta sem eles.",
+      "Pensar en español: descreve o teu dia mentalmente; aconselha com te recomiendo que + conjuntivo."
+     ],
+     "q": "Que estratégia funciona melhor contigo? Explica com lo que más me ayuda es...",
+     "c": "Dá a um amigo duas dicas em espanhol a começar por te recomiendo que..."
+    },
+    "pt_BR": {
+     "t": "Dicas para aprender idiomas",
+     "g": "Compartilhe estratégias que realmente ajudam a aprender espanhol.",
+     "p": [
+      "Intercambios: encontre um falante de espanhol e troquem de idioma, metade do tempo cada.",
+      "Assista a séries con subtítulos en español e depois tente sem eles.",
+      "Pensar en español: descreva seu dia mentalmente; aconselhe com te recomiendo que + subjuntivo."
+     ],
+     "q": "Qual estratégia funciona melhor para você? Explique com lo que más me ayuda es...",
+     "c": "Dê a um amigo duas dicas em espanhol começando com te recomiendo que..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el intercambio",
+      "ex": "Hago un intercambio de idiomas cada jueves."
+     },
+     {
+      "w": "los subtítulos",
+      "ex": "Veo las series con subtítulos en español."
+     },
+     {
+      "w": "pensar en español",
+      "ex": "Intento pensar en español cuando cocino."
+     },
+     {
+      "w": "repasar",
+      "ex": "Repaso el vocabulario antes de dormir."
+     },
+     {
+      "w": "te recomiendo que",
+      "ex": "Te recomiendo que hables un poco cada día."
+     },
+     {
+      "w": "equivocarse",
+      "ex": "No pasa nada si te equivocas: así se aprende."
+     }
+    ],
+    "gram": "Recomendar que + subjuntivo: te recomiendo que leas, os aconsejo que practiquéis. Lo que más me ayuda es + infinitivo."
+   }
+  },
+  {
+   "d": 246,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Education systems",
+     "g": "Compare school and university systems in Spanish.",
+     "p": [
+      "In Spain: primaria (6-12), la ESO (12-16), bachillerato (16-18), then la carrera at university.",
+      "Names change by country: in Mexico secundaria and preparatoria; in many places colegio means school.",
+      "Useful verbs: aprobar, suspender (Spain) or reprobar (Latin America), sacar buena nota, licenciarse."
+     ],
+     "q": "How is the school system in your country different? Compare with en cambio and mientras que.",
+     "c": "Write your own education path in Spanish: hice la primaria en..., luego estudié..."
+    },
+    "de": {
+     "t": "Bildungssysteme",
+     "g": "Vergleiche Schul- und Hochschulsysteme auf Spanisch.",
+     "p": [
+      "In Spanien: primaria (6-12), la ESO (12-16), bachillerato (16-18), dann la carrera an der Uni.",
+      "Die Namen ändern sich je nach Land: in Mexiko secundaria und preparatoria; colegio heißt oft Schule.",
+      "Nützliche Verben: aprobar, suspender (Spanien) oder reprobar (Lateinamerika), sacar buena nota, licenciarse."
+     ],
+     "q": "Was ist am Schulsystem deines Landes anders? Vergleiche mit en cambio und mientras que.",
+     "c": "Schreib deinen Bildungsweg auf Spanisch: hice la primaria en..., luego estudié..."
+    },
+    "es": {
+     "t": "Sistemas educativos",
+     "g": "Compara sistemas escolares y universitarios en español.",
+     "p": [
+      "En España: primaria (6-12), la ESO (12-16), bachillerato (16-18) y luego la carrera universitaria.",
+      "Los nombres cambian según el país: en México, secundaria y preparatoria; colegio suele ser la escuela.",
+      "Verbos útiles: aprobar, suspender (España) o reprobar (Latinoamérica), sacar buena nota, licenciarse."
+     ],
+     "q": "¿En qué se diferencia el sistema escolar de tu país? Compara con en cambio y mientras que.",
+     "c": "Escribe tu camino educativo: hice la primaria en..., luego estudié..."
+    },
+    "fr": {
+     "t": "Systèmes éducatifs",
+     "g": "Compare les systèmes scolaires et universitaires en espagnol.",
+     "p": [
+      "En Espagne : primaria (6-12), la ESO (12-16), bachillerato (16-18), puis la carrera à l'université.",
+      "Les noms varient selon le pays : au Mexique secundaria et preparatoria ; colegio veut souvent dire école.",
+      "Verbes utiles : aprobar, suspender (Espagne) ou reprobar (Amérique latine), sacar buena nota, licenciarse."
+     ],
+     "q": "En quoi le système scolaire de ton pays est-il différent ? Compare avec en cambio et mientras que.",
+     "c": "Écris ton parcours scolaire en espagnol : hice la primaria en..., luego estudié..."
+    },
+    "it": {
+     "t": "Sistemi scolastici",
+     "g": "Confronta i sistemi scolastici e universitari in spagnolo.",
+     "p": [
+      "In Spagna: primaria (6-12), la ESO (12-16), bachillerato (16-18), poi la carrera all'università.",
+      "I nomi cambiano da paese a paese: in Messico secundaria e preparatoria; colegio spesso indica la scuola.",
+      "Verbi utili: aprobar, suspender (Spagna) o reprobar (America Latina), sacar buena nota, licenciarse."
+     ],
+     "q": "In cosa è diverso il sistema scolastico del tuo paese? Confronta con en cambio e mientras que.",
+     "c": "Scrivi il tuo percorso di studi in spagnolo: hice la primaria en..., luego estudié..."
+    },
+    "pt": {
+     "t": "Sistemas de ensino",
+     "g": "Compara sistemas escolares e universitários em espanhol.",
+     "p": [
+      "Em Espanha: primaria (6-12), la ESO (12-16), bachillerato (16-18) e depois la carrera na universidade.",
+      "Os nomes mudam de país para país: no México secundaria e preparatoria; colegio costuma ser escola.",
+      "Verbos úteis: aprobar, suspender (Espanha) ou reprobar (América Latina), sacar buena nota, licenciarse."
+     ],
+     "q": "Em que é diferente o sistema escolar do teu país? Compara com en cambio e mientras que.",
+     "c": "Escreve o teu percurso escolar em espanhol: hice la primaria en..., luego estudié..."
+    },
+    "pt_BR": {
+     "t": "Sistemas de ensino",
+     "g": "Compare sistemas escolares e universitários em espanhol.",
+     "p": [
+      "Na Espanha: primaria (6-12), la ESO (12-16), bachillerato (16-18) e depois la carrera na faculdade.",
+      "Os nomes mudam conforme o país: no México secundaria e preparatoria; colegio costuma ser escola.",
+      "Verbos úteis: aprobar, suspender (Espanha) ou reprobar (América Latina), sacar buena nota, licenciarse."
+     ],
+     "q": "O que é diferente no sistema escolar do seu país? Compare com en cambio e mientras que.",
+     "c": "Escreva sua trajetória escolar em espanhol: hice la primaria en..., luego estudié..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la primaria",
+      "ex": "Hice la primaria en un colegio cerca de casa."
+     },
+     {
+      "w": "el bachillerato",
+      "ex": "Después del bachillerato quiero estudiar Biología."
+     },
+     {
+      "w": "la carrera",
+      "ex": "Mi hermano está terminando la carrera de Derecho."
+     },
+     {
+      "w": "aprobar",
+      "ex": "¡He aprobado el examen de matemáticas!"
+     },
+     {
+      "w": "sacar buena nota",
+      "ex": "Saqué muy buena nota en el trabajo final."
+     },
+     {
+      "w": "mientras que",
+      "ex": "En España se empieza a los seis, mientras que allí a los siete."
+     }
+    ],
+    "gram": "Comparar con mientras que y en cambio: aquí es gratis, en cambio allí se paga. Aprobar ≠ suspender."
+   }
+  },
+  {
+   "d": 247,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Art and museums",
+     "g": "Talk about paintings, sculptures and famous Hispanic artists.",
+     "p": [
+      "El Prado in Madrid holds Las Meninas, the masterpiece (obra maestra) by Velázquez.",
+      "Frida Kahlo painted many self-portraits (autorretratos) full of Mexican colour and symbols.",
+      "Una exposición is an exhibition; un cuadro a painting; una escultura a sculpture."
+     ],
+     "q": "Which work of art would you love to see in person? Say why with me encantaría ver...",
+     "c": "Look up a painting by Velázquez or Kahlo and name three things you see in Spanish."
+    },
+    "de": {
+     "t": "Kunst und Museen",
+     "g": "Sprich über Gemälde, Skulpturen und berühmte hispanische Künstler.",
+     "p": [
+      "Im Prado in Madrid hängt Las Meninas, das Meisterwerk (obra maestra) von Velázquez.",
+      "Frida Kahlo malte viele Selbstporträts (autorretratos) voller mexikanischer Farben und Symbole.",
+      "Una exposición ist eine Ausstellung, un cuadro ein Gemälde, una escultura eine Skulptur."
+     ],
+     "q": "Welches Kunstwerk würdest du gern live sehen? Sag warum mit me encantaría ver...",
+     "c": "Such ein Bild von Velázquez oder Kahlo und nenne drei Dinge darauf auf Spanisch."
+    },
+    "es": {
+     "t": "Arte y museos",
+     "g": "Habla de cuadros, esculturas y artistas hispanos famosos.",
+     "p": [
+      "En el Prado de Madrid está Las Meninas, la obra maestra de Velázquez.",
+      "Frida Kahlo pintó muchos autorretratos llenos de color y símbolos mexicanos.",
+      "Vocabulario clave: una exposición, un cuadro, una escultura, un pintor, una sala del museo."
+     ],
+     "q": "¿Qué obra de arte te encantaría ver en persona? Di por qué con me encantaría ver...",
+     "c": "Busca un cuadro de Velázquez o de Kahlo y nombra tres cosas que ves, en español."
+    },
+    "fr": {
+     "t": "Art et musées",
+     "g": "Parle de tableaux, de sculptures et d'artistes hispaniques célèbres.",
+     "p": [
+      "Au Prado de Madrid se trouve Las Meninas, le chef-d'œuvre (obra maestra) de Velázquez.",
+      "Frida Kahlo a peint de nombreux autoportraits (autorretratos) pleins de couleurs et symboles mexicains.",
+      "Una exposición est une exposition, un cuadro un tableau, una escultura une sculpture."
+     ],
+     "q": "Quelle œuvre aimerais-tu voir en vrai ? Dis pourquoi avec me encantaría ver...",
+     "c": "Cherche un tableau de Velázquez ou de Kahlo et nomme trois choses que tu vois en espagnol."
+    },
+    "it": {
+     "t": "Arte e musei",
+     "g": "Parla di quadri, sculture e famosi artisti ispanici.",
+     "p": [
+      "Al Prado di Madrid si trova Las Meninas, il capolavoro (obra maestra) di Velázquez.",
+      "Frida Kahlo dipinse molti autoritratti (autorretratos) pieni di colori e simboli messicani.",
+      "Una exposición è una mostra, un cuadro un quadro, una escultura una scultura."
+     ],
+     "q": "Quale opera d'arte ti piacerebbe vedere dal vivo? Di' perché con me encantaría ver...",
+     "c": "Cerca un quadro di Velázquez o di Kahlo e nomina tre cose che vedi in spagnolo."
+    },
+    "pt": {
+     "t": "Arte e museus",
+     "g": "Fala de quadros, esculturas e artistas hispânicos famosos.",
+     "p": [
+      "No Prado, em Madrid, está Las Meninas, a obra-prima (obra maestra) de Velázquez.",
+      "Frida Kahlo pintou muitos autorretratos (autorretratos) cheios de cores e símbolos mexicanos.",
+      "Una exposición é uma exposição, un cuadro um quadro, una escultura uma escultura."
+     ],
+     "q": "Que obra de arte adorarias ver ao vivo? Diz porquê com me encantaría ver...",
+     "c": "Procura um quadro de Velázquez ou de Kahlo e nomeia três coisas que vês em espanhol."
+    },
+    "pt_BR": {
+     "t": "Arte e museus",
+     "g": "Fale de quadros, esculturas e artistas hispânicos famosos.",
+     "p": [
+      "No Prado, em Madri, está Las Meninas, a obra-prima (obra maestra) de Velázquez.",
+      "Frida Kahlo pintou muitos autorretratos (autorretratos) cheios de cores e símbolos mexicanos.",
+      "Una exposición é uma exposição, un cuadro um quadro, una escultura uma escultura."
+     ],
+     "q": "Qual obra de arte você adoraria ver pessoalmente? Diga por quê com me encantaría ver...",
+     "c": "Procure um quadro de Velázquez ou de Kahlo e cite três coisas que você vê, em espanhol."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la exposición",
+      "ex": "Fuimos a una exposición de fotografía."
+     },
+     {
+      "w": "el cuadro",
+      "ex": "Este cuadro de Goya es impresionante."
+     },
+     {
+      "w": "la escultura",
+      "ex": "En la plaza hay una escultura de bronce."
+     },
+     {
+      "w": "la obra maestra",
+      "ex": "Las Meninas es una obra maestra de Velázquez."
+     },
+     {
+      "w": "el autorretrato",
+      "ex": "Frida Kahlo pintó muchos autorretratos."
+     },
+     {
+      "w": "me encantaría ver",
+      "ex": "Me encantaría ver el Guernica de Picasso."
+     }
+    ],
+    "gram": "Pretérito para hablar de artistas: Velázquez pintó, Kahlo nació en Coyoacán. Me encantaría + infinitivo para deseos."
+   }
+  },
+  {
+   "d": 248,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Describing a picture",
+     "g": "Describe an image and guess what is happening in it.",
+     "p": [
+      "Place things: en primer plano (foreground), al fondo (background), a la izquierda, en el centro.",
+      "Speculate: parece que están de vacaciones, podría ser una boda, seguramente es verano.",
+      "Use estar + gerund for actions in the picture: una niña está corriendo, dos señores están charlando."
+     ],
+     "q": "Think of a photo on your phone. Describe it to me with en primer plano and al fondo.",
+     "c": "Describe one picture in five sentences, including one guess with parece que or podría ser."
+    },
+    "de": {
+     "t": "Ein Bild beschreiben",
+     "g": "Beschreibe ein Bild und vermute, was darauf passiert.",
+     "p": [
+      "Orte angeben: en primer plano (Vordergrund), al fondo (Hintergrund), a la izquierda, en el centro.",
+      "Vermuten: parece que están de vacaciones, podría ser una boda, seguramente es verano.",
+      "Für Handlungen im Bild estar + Gerundium: una niña está corriendo, dos señores están charlando."
+     ],
+     "q": "Denk an ein Foto auf deinem Handy. Beschreib es mir mit en primer plano und al fondo.",
+     "c": "Beschreibe ein Bild in fünf Sätzen, darunter eine Vermutung mit parece que oder podría ser."
+    },
+    "es": {
+     "t": "Describir una imagen",
+     "g": "Describe una imagen y haz hipótesis sobre lo que pasa.",
+     "p": [
+      "Sitúa las cosas: en primer plano, al fondo, a la izquierda, a la derecha, en el centro.",
+      "Haz suposiciones: parece que están de vacaciones, podría ser una boda, seguramente es verano.",
+      "Usa estar + gerundio para las acciones: una niña está corriendo, dos señores están charlando."
+     ],
+     "q": "Piensa en una foto de tu móvil. Descríbemela con en primer plano y al fondo.",
+     "c": "Describe una imagen en cinco frases, con una suposición con parece que o podría ser."
+    },
+    "fr": {
+     "t": "Décrire une image",
+     "g": "Décris une image et fais des hypothèses sur ce qui s'y passe.",
+     "p": [
+      "Situe les éléments : en primer plano (premier plan), al fondo (arrière-plan), a la izquierda, en el centro.",
+      "Fais des suppositions : parece que están de vacaciones, podría ser una boda, seguramente es verano.",
+      "Pour les actions, estar + gérondif : una niña está corriendo, dos señores están charlando."
+     ],
+     "q": "Pense à une photo de ton téléphone. Décris-la-moi avec en primer plano et al fondo.",
+     "c": "Décris une image en cinq phrases, avec une hypothèse en parece que ou podría ser."
+    },
+    "it": {
+     "t": "Descrivere un'immagine",
+     "g": "Descrivi un'immagine e fai ipotesi su cosa succede.",
+     "p": [
+      "Colloca gli elementi: en primer plano (primo piano), al fondo (sfondo), a la izquierda, en el centro.",
+      "Fai ipotesi: parece que están de vacaciones, podría ser una boda, seguramente es verano.",
+      "Per le azioni usa estar + gerundio: una niña está corriendo, dos señores están charlando."
+     ],
+     "q": "Pensa a una foto sul tuo telefono. Descrivimela con en primer plano e al fondo.",
+     "c": "Descrivi un'immagine in cinque frasi, con un'ipotesi usando parece que o podría ser."
+    },
+    "pt": {
+     "t": "Descrever uma imagem",
+     "g": "Descreve uma imagem e faz hipóteses sobre o que acontece.",
+     "p": [
+      "Situa as coisas: en primer plano (primeiro plano), al fondo (fundo), a la izquierda, en el centro.",
+      "Faz suposições: parece que están de vacaciones, podría ser una boda, seguramente es verano.",
+      "Para as ações usa estar + gerúndio: una niña está corriendo, dos señores están charlando."
+     ],
+     "q": "Pensa numa foto do teu telemóvel. Descreve-ma com en primer plano e al fondo.",
+     "c": "Descreve uma imagem em cinco frases, com uma suposição usando parece que ou podría ser."
+    },
+    "pt_BR": {
+     "t": "Descrever uma imagem",
+     "g": "Descreva uma imagem e levante hipóteses sobre o que acontece.",
+     "p": [
+      "Situe as coisas: en primer plano (primeiro plano), al fondo (fundo), a la izquierda, en el centro.",
+      "Faça suposições: parece que están de vacaciones, podría ser una boda, seguramente es verano.",
+      "Para as ações use estar + gerúndio: una niña está corriendo, dos señores están charlando."
+     ],
+     "q": "Pense numa foto do seu celular. Descreva para mim com en primer plano e al fondo.",
+     "c": "Descreva uma imagem em cinco frases, com uma suposição usando parece que ou podría ser."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "en primer plano",
+      "ex": "En primer plano hay una mesa con fruta."
+     },
+     {
+      "w": "al fondo",
+      "ex": "Al fondo se ven unas montañas nevadas."
+     },
+     {
+      "w": "parece que",
+      "ex": "Parece que la familia está celebrando algo."
+     },
+     {
+      "w": "podría ser",
+      "ex": "Podría ser una fiesta de cumpleaños."
+     },
+     {
+      "w": "seguramente",
+      "ex": "Seguramente la foto es de un día de verano."
+     },
+     {
+      "w": "a la izquierda",
+      "ex": "A la izquierda hay un perro durmiendo."
+     }
+    ],
+    "gram": "Hipótesis: parece que + indicativo, podría ser + nombre, seguramente + indicativo. Hay + nombre para describir."
+   }
+  },
+  {
+   "d": 249,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Film reviews",
+     "g": "Give your opinion about a film in natural Spanish.",
+     "p": [
+      "Talk about the plot: el argumento engancha (it hooks you), el final es sorprendente.",
+      "Praise or criticise: los actores están geniales, la banda sonora es preciosa, se hace un poco larga.",
+      "Recommend it: te la recomiendo; or not: no te la recomiendo, mejor otra."
+     ],
+     "q": "What is the last film you saw? Tell me about it and say if you recommend it.",
+     "c": "Write a four-sentence film review using el argumento, los actores and te la recomiendo."
+    },
+    "de": {
+     "t": "Filmkritiken",
+     "g": "Sag deine Meinung zu einem Film in natürlichem Spanisch.",
+     "p": [
+      "Über die Handlung: el argumento engancha (sie fesselt), el final es sorprendente.",
+      "Loben oder kritisieren: los actores están geniales, la banda sonora es preciosa, se hace un poco larga.",
+      "Empfehlen: te la recomiendo; oder nicht: no te la recomiendo, mejor otra."
+     ],
+     "q": "Welchen Film hast du zuletzt gesehen? Erzähl davon und sag, ob du ihn empfiehlst.",
+     "c": "Schreib eine Filmkritik in vier Sätzen mit el argumento, los actores und te la recomiendo."
+    },
+    "es": {
+     "t": "Críticas de cine",
+     "g": "Da tu opinión sobre una película en un español natural.",
+     "p": [
+      "Habla del argumento: el argumento engancha, el final es sorprendente.",
+      "Elogia o critica: los actores están geniales, la banda sonora es preciosa, se hace un poco larga.",
+      "Recomienda: te la recomiendo; o no: no te la recomiendo, mejor otra."
+     ],
+     "q": "¿Cuál es la última película que viste? Cuéntamela y dime si la recomiendas.",
+     "c": "Escribe una crítica de cuatro frases con el argumento, los actores y te la recomiendo."
+    },
+    "fr": {
+     "t": "Critiques de films",
+     "g": "Donne ton avis sur un film dans un espagnol naturel.",
+     "p": [
+      "Parle de l'intrigue : el argumento engancha (elle accroche), el final es sorprendente.",
+      "Félicite ou critique : los actores están geniales, la banda sonora es preciosa, se hace un poco larga.",
+      "Recommande-le : te la recomiendo ; ou pas : no te la recomiendo, mejor otra."
+     ],
+     "q": "Quel est le dernier film que tu as vu ? Parle-m'en et dis si tu le recommandes.",
+     "c": "Écris une critique de quatre phrases avec el argumento, los actores et te la recomiendo."
+    },
+    "it": {
+     "t": "Recensioni di film",
+     "g": "Esprimi la tua opinione su un film in uno spagnolo naturale.",
+     "p": [
+      "Parla della trama: el argumento engancha (ti prende), el final es sorprendente.",
+      "Loda o critica: los actores están geniales, la banda sonora es preciosa, se hace un poco larga.",
+      "Consiglialo: te la recomiendo; oppure no: no te la recomiendo, mejor otra."
+     ],
+     "q": "Qual è l'ultimo film che hai visto? Raccontamelo e dimmi se lo consigli.",
+     "c": "Scrivi una recensione di quattro frasi con el argumento, los actores e te la recomiendo."
+    },
+    "pt": {
+     "t": "Críticas de cinema",
+     "g": "Dá a tua opinião sobre um filme num espanhol natural.",
+     "p": [
+      "Fala do enredo: el argumento engancha (prende), el final es sorprendente.",
+      "Elogia ou critica: los actores están geniales, la banda sonora es preciosa, se hace un poco larga.",
+      "Recomenda: te la recomiendo; ou não: no te la recomiendo, mejor otra."
+     ],
+     "q": "Qual foi o último filme que viste? Conta-me e diz se o recomendas.",
+     "c": "Escreve uma crítica de quatro frases com el argumento, los actores e te la recomiendo."
+    },
+    "pt_BR": {
+     "t": "Críticas de filmes",
+     "g": "Dê sua opinião sobre um filme num espanhol natural.",
+     "p": [
+      "Fale do enredo: el argumento engancha (prende), el final es sorprendente.",
+      "Elogie ou critique: los actores están geniales, la banda sonora es preciosa, se hace un poco larga.",
+      "Recomende: te la recomiendo; ou não: no te la recomiendo, mejor otra."
+     ],
+     "q": "Qual foi o último filme que você viu? Me conte e diga se recomenda.",
+     "c": "Escreva uma crítica de quatro frases com el argumento, los actores e te la recomiendo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el argumento",
+      "ex": "El argumento engancha desde el primer minuto."
+     },
+     {
+      "w": "los actores",
+      "ex": "Los actores están geniales en sus papeles."
+     },
+     {
+      "w": "la banda sonora",
+      "ex": "La banda sonora me puso la piel de gallina."
+     },
+     {
+      "w": "se hace larga",
+      "ex": "La película está bien, pero se hace un poco larga."
+     },
+     {
+      "w": "te la recomiendo",
+      "ex": "Si te gusta el suspense, te la recomiendo."
+     },
+     {
+      "w": "el final",
+      "ex": "El final me dejó con la boca abierta."
+     }
+    ],
+    "gram": "Pronombres dobles: te la recomiendo (te = a ti, la = la película). Estar + adjetivo para actuaciones: están geniales."
+   }
+  },
+  {
+   "d": 250,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Review: culture and linking",
+     "g": "Combine culture vocabulary, descriptions and linking words in conversation.",
+     "p": [
+      "Link ideas: además, sin embargo, por eso, mientras que, en cambio, aunque.",
+      "Reuse this block: dishes, sobremesa, greetings, living abroad, art, pictures and films.",
+      "Give opinions with reasons: me parece interesante porque..., lo que más me gustó fue..."
+     ],
+     "q": "Tell me about a cultural experience you loved, using at least three linking words.",
+     "c": "Record a one-minute talk about food, art or film using además, sin embargo and por eso."
+    },
+    "de": {
+     "t": "Wiederholung: Kultur und Verbindungswörter",
+     "g": "Verbinde Kulturwortschatz, Beschreibungen und Konnektoren im Gespräch.",
+     "p": [
+      "Ideen verbinden: además, sin embargo, por eso, mientras que, en cambio, aunque.",
+      "Wiederhole diesen Block: Gerichte, Sobremesa, Begrüßungen, Ausland, Kunst, Bilder und Filme.",
+      "Meinung mit Begründung: me parece interesante porque..., lo que más me gustó fue..."
+     ],
+     "q": "Erzähl mir von einem kulturellen Erlebnis, das dir gefallen hat, mit mindestens drei Konnektoren.",
+     "c": "Nimm eine Minute über Essen, Kunst oder Film auf, mit además, sin embargo und por eso."
+    },
+    "es": {
+     "t": "Repaso: cultura y conectores",
+     "g": "Combina vocabulario cultural, descripciones y conectores en una conversación.",
+     "p": [
+      "Conecta ideas: además, sin embargo, por eso, mientras que, en cambio, aunque.",
+      "Repasa el bloque: platos, sobremesa, saludos, vivir fuera, arte, imágenes y cine.",
+      "Opina con razones: me parece interesante porque..., lo que más me gustó fue..."
+     ],
+     "q": "Cuéntame una experiencia cultural que te encantó, con al menos tres conectores.",
+     "c": "Graba un minuto sobre comida, arte o cine usando además, sin embargo y por eso."
+    },
+    "fr": {
+     "t": "Révision : culture et connecteurs",
+     "g": "Combine vocabulaire culturel, descriptions et connecteurs dans une conversation.",
+     "p": [
+      "Relie les idées : además, sin embargo, por eso, mientras que, en cambio, aunque.",
+      "Révise le bloc : plats, sobremesa, salutations, vie à l'étranger, art, images et cinéma.",
+      "Donne ton avis avec des raisons : me parece interesante porque..., lo que más me gustó fue..."
+     ],
+     "q": "Raconte-moi une expérience culturelle que tu as adorée, avec au moins trois connecteurs.",
+     "c": "Enregistre une minute sur la cuisine, l'art ou le cinéma avec además, sin embargo et por eso."
+    },
+    "it": {
+     "t": "Ripasso: cultura e connettivi",
+     "g": "Combina lessico culturale, descrizioni e connettivi in una conversazione.",
+     "p": [
+      "Collega le idee: además, sin embargo, por eso, mientras que, en cambio, aunque.",
+      "Ripassa il blocco: piatti, sobremesa, saluti, vivere all'estero, arte, immagini e cinema.",
+      "Esprimi opinioni motivate: me parece interesante porque..., lo que más me gustó fue..."
+     ],
+     "q": "Raccontami un'esperienza culturale che ti è piaciuta, con almeno tre connettivi.",
+     "c": "Registra un minuto su cibo, arte o cinema usando además, sin embargo e por eso."
+    },
+    "pt": {
+     "t": "Revisão: cultura e conectores",
+     "g": "Combina vocabulário cultural, descrições e conectores numa conversa.",
+     "p": [
+      "Liga ideias: además, sin embargo, por eso, mientras que, en cambio, aunque.",
+      "Revê o bloco: pratos, sobremesa, cumprimentos, viver fora, arte, imagens e cinema.",
+      "Opina com razões: me parece interesante porque..., lo que más me gustó fue..."
+     ],
+     "q": "Conta-me uma experiência cultural de que gostaste muito, com pelo menos três conectores.",
+     "c": "Grava um minuto sobre comida, arte ou cinema usando además, sin embargo e por eso."
+    },
+    "pt_BR": {
+     "t": "Revisão: cultura e conectores",
+     "g": "Combine vocabulário cultural, descrições e conectores numa conversa.",
+     "p": [
+      "Ligue ideias: además, sin embargo, por eso, mientras que, en cambio, aunque.",
+      "Revise o bloco: pratos, sobremesa, cumprimentos, morar fora, arte, imagens e cinema.",
+      "Opine com motivos: me parece interesante porque..., lo que más me gustó fue..."
+     ],
+     "q": "Me conte uma experiência cultural que você adorou, com pelo menos três conectores.",
+     "c": "Grave um minuto sobre comida, arte ou cinema usando además, sin embargo e por eso."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "además",
+      "ex": "La comida era buena y, además, barata."
+     },
+     {
+      "w": "sin embargo",
+      "ex": "El museo es pequeño; sin embargo, tiene obras increíbles."
+     },
+     {
+      "w": "por eso",
+      "ex": "Me encanta el cine, por eso voy cada semana."
+     },
+     {
+      "w": "en cambio",
+      "ex": "Mi hermano prefiere el arte moderno; yo, en cambio, el clásico."
+     },
+     {
+      "w": "aunque",
+      "ex": "Aunque estaba cansado, fui a la exposición."
+     },
+     {
+      "w": "lo que más me gustó",
+      "ex": "Lo que más me gustó fue la sobremesa."
+     }
+    ],
+    "gram": "Conectores: adición (además), contraste (sin embargo, en cambio), causa-consecuencia (por eso), concesión (aunque + indicativo)."
+   }
+  }
+ ]
+}

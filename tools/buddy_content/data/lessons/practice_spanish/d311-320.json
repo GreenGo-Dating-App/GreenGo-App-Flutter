@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 311,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Idioms with food",
+     "g": "Spice up your Spanish with food idioms.",
+     "p": [
+      "Ser pan comido: to be a piece of cake, very easy.",
+      "Ponerse como un tomate: to blush; ponerse como una sopa: to get soaked.",
+      "Me importa un pimiento: I couldn't care less (informal, use with friends)."
+     ],
+     "q": "What task is pan comido for you?",
+     "c": "Tell me about a time you se puso como un tomate, using the preterite."
+    },
+    "de": {
+     "t": "Redewendungen mit Essen",
+     "g": "Würze dein Spanisch mit Redewendungen rund ums Essen.",
+     "p": [
+      "Ser pan comido: ein Kinderspiel sein.",
+      "Ponerse como un tomate: rot werden; ponerse como una sopa: klatschnass werden.",
+      "Me importa un pimiento: das ist mir völlig egal (locker, unter Freunden)."
+     ],
+     "q": "Welche Aufgabe ist für dich pan comido?",
+     "c": "Erzähl von einem Moment, in dem du te pusiste como un tomate, im Indefinido."
+    },
+    "es": {
+     "t": "Expresiones con comida",
+     "g": "Dale sabor a tu español con expresiones de comida.",
+     "p": [
+      "Ser pan comido: ser facilísimo.",
+      "Ponerse como un tomate: ruborizarse; ponerse como una sopa: empaparse.",
+      "Me importa un pimiento: no me importa nada (coloquial, entre amigos)."
+     ],
+     "q": "¿Qué tarea es pan comido para ti?",
+     "c": "Cuéntame una vez que te pusiste como un tomate, usando el pretérito indefinido."
+    },
+    "fr": {
+     "t": "Expressions avec la nourriture",
+     "g": "Pimente ton espagnol avec des expressions culinaires.",
+     "p": [
+      "Ser pan comido : être du gâteau, très facile.",
+      "Ponerse como un tomate : rougir comme une tomate ; ponerse como una sopa : être trempé.",
+      "Me importa un pimiento : je m'en fiche complètement (familier, entre amis)."
+     ],
+     "q": "Quelle tâche est pan comido pour toi ?",
+     "c": "Raconte une fois où tu te pusiste como un tomate, au passé simple espagnol (indefinido)."
+    },
+    "it": {
+     "t": "Modi di dire con il cibo",
+     "g": "Dai sapore al tuo spagnolo con modi di dire sul cibo.",
+     "p": [
+      "Ser pan comido: essere un gioco da ragazzi.",
+      "Ponerse como un tomate: diventare rosso; ponerse como una sopa: bagnarsi fradicio.",
+      "Me importa un pimiento: non me ne importa un fico secco (colloquiale)."
+     ],
+     "q": "Quale compito è pan comido per te?",
+     "c": "Raccontami di quando te pusiste como un tomate, usando il pretérito indefinido."
+    },
+    "pt": {
+     "t": "Expressões com comida",
+     "g": "Dá sabor ao teu espanhol com expressões de comida.",
+     "p": [
+      "Ser pan comido: ser canja, muito fácil.",
+      "Ponerse como un tomate: corar; ponerse como una sopa: ficar encharcado.",
+      "Me importa un pimiento: não quero saber nada disso (coloquial, entre amigos)."
+     ],
+     "q": "Que tarefa é pan comido para ti?",
+     "c": "Conta-me uma vez em que te pusiste como un tomate, usando o pretérito indefinido."
+    },
+    "pt_BR": {
+     "t": "Expressões com comida",
+     "g": "Dê sabor ao seu espanhol com expressões de comida.",
+     "p": [
+      "Ser pan comido: ser moleza, muito fácil.",
+      "Ponerse como un tomate: ficar vermelho; ponerse como una sopa: ficar encharcado.",
+      "Me importa un pimiento: estou nem aí (coloquial, entre amigos)."
+     ],
+     "q": "Que tarefa é pan comido para você?",
+     "c": "Conte uma vez em que você se puso como un tomate, usando o pretérito indefinido."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ser pan comido",
+      "ex": "El examen de ayer fue pan comido."
+     },
+     {
+      "w": "ponerse como un tomate",
+      "ex": "Se puso como un tomate al oír su nombre."
+     },
+     {
+      "w": "ponerse como una sopa",
+      "ex": "Salí sin paraguas y me puse como una sopa."
+     },
+     {
+      "w": "importar un pimiento",
+      "ex": "A mi gato le importa un pimiento el fútbol."
+     },
+     {
+      "w": "la guinda del pastel",
+      "ex": "El postre fue la guinda del pastel de una cena perfecta."
+     },
+     {
+      "w": "estar en el ajo",
+      "ex": "Pregúntale a Marta, ella está en el ajo."
+     }
+    ],
+    "gram": "Ponerse + como + comida expresa un cambio de estado: me puse como un tomate. Importar funciona como gustar: me importa."
+   }
+  },
+  {
+   "d": 312,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Idioms about time and money",
+     "g": "Talk about time and money with natural Spanish idioms.",
+     "p": [
+      "A buenas horas: too late to be useful; de higos a brevas: once in a blue moon.",
+      "Estar sin blanca: to be broke; tirar la casa por la ventana: to splash out.",
+      "Ahorrar para los días de lluvia is not Spanish; say ahorrar por si acaso."
+     ],
+     "q": "When did you last tirar la casa por la ventana?",
+     "c": "Describe a friend you see de higos a brevas, using two of today's idioms."
+    },
+    "de": {
+     "t": "Redewendungen zu Zeit und Geld",
+     "g": "Sprich mit natürlichen Redewendungen über Zeit und Geld.",
+     "p": [
+      "A buenas horas: zu spät, um zu nützen; de higos a brevas: alle Jubeljahre.",
+      "Estar sin blanca: pleite sein; tirar la casa por la ventana: es krachen lassen.",
+      "Für Notgroschen sagt man ahorrar por si acaso, nicht wörtlich übersetzt."
+     ],
+     "q": "Wann hast du zuletzt tirado la casa por la ventana?",
+     "c": "Beschreibe einen Freund, den du de higos a brevas siehst, mit zwei heutigen Wendungen."
+    },
+    "es": {
+     "t": "Expresiones de tiempo y dinero",
+     "g": "Habla del tiempo y del dinero con expresiones naturales.",
+     "p": [
+      "A buenas horas: demasiado tarde; de higos a brevas: muy de vez en cuando.",
+      "Estar sin blanca: no tener dinero; tirar la casa por la ventana: gastar sin medida.",
+      "Para hablar de ahorrar con prudencia se dice ahorrar por si acaso."
+     ],
+     "q": "¿Cuándo fue la última vez que tiraste la casa por la ventana?",
+     "c": "Describe a un amigo al que ves de higos a brevas con dos expresiones de hoy."
+    },
+    "fr": {
+     "t": "Expressions sur le temps et l'argent",
+     "g": "Parle du temps et de l'argent avec des expressions naturelles.",
+     "p": [
+      "A buenas horas : trop tard ; de higos a brevas : tous les trente-six du mois.",
+      "Estar sin blanca : être fauché ; tirar la casa por la ventana : jeter l'argent par les fenêtres.",
+      "Pour l'épargne de précaution, on dit ahorrar por si acaso."
+     ],
+     "q": "Quand as-tu tirado la casa por la ventana pour la dernière fois ?",
+     "c": "Décris un ami que tu vois de higos a brevas avec deux expressions du jour."
+    },
+    "it": {
+     "t": "Modi di dire su tempo e denaro",
+     "g": "Parla di tempo e denaro con modi di dire naturali.",
+     "p": [
+      "A buenas horas: troppo tardi; de higos a brevas: ogni morte di papa.",
+      "Estar sin blanca: essere al verde; tirar la casa por la ventana: fare le cose in grande.",
+      "Per il risparmio prudente si dice ahorrar por si acaso."
+     ],
+     "q": "Quando hai tirado la casa por la ventana l'ultima volta?",
+     "c": "Descrivi un amico che vedi de higos a brevas con due espressioni di oggi."
+    },
+    "pt": {
+     "t": "Expressões de tempo e dinheiro",
+     "g": "Fala de tempo e dinheiro com expressões naturais.",
+     "p": [
+      "A buenas horas: tarde demais; de higos a brevas: de longe a longe.",
+      "Estar sin blanca: estar teso; tirar la casa por la ventana: deitar a casa abaixo nos gastos.",
+      "Para poupar por precaução diz-se ahorrar por si acaso."
+     ],
+     "q": "Quando foi a última vez que tiraste la casa por la ventana?",
+     "c": "Descreve um amigo que vês de higos a brevas com duas expressões de hoje."
+    },
+    "pt_BR": {
+     "t": "Expressões de tempo e dinheiro",
+     "g": "Fale de tempo e dinheiro com expressões naturais.",
+     "p": [
+      "A buenas horas: tarde demais; de higos a brevas: muito de vez em quando.",
+      "Estar sin blanca: estar duro, sem grana; tirar la casa por la ventana: gastar sem dó.",
+      "Para poupar por precaução se diz ahorrar por si acaso."
+     ],
+     "q": "Quando foi a última vez que você tiró la casa por la ventana?",
+     "c": "Descreva um amigo que você vê de higos a brevas com duas expressões de hoje."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "a buenas horas",
+      "ex": "¿Ahora me avisas? ¡A buenas horas!"
+     },
+     {
+      "w": "de higos a brevas",
+      "ex": "Nos vemos de higos a brevas, pero siempre con alegría."
+     },
+     {
+      "w": "estar sin blanca",
+      "ex": "A final de mes siempre estoy sin blanca."
+     },
+     {
+      "w": "tirar la casa por la ventana",
+      "ex": "Para su boda tiraron la casa por la ventana."
+     },
+     {
+      "w": "ahorrar por si acaso",
+      "ex": "Guardo algo cada mes, por si acaso."
+     },
+     {
+      "w": "el tiempo es oro",
+      "ex": "Date prisa, que el tiempo es oro."
+     }
+    ],
+    "gram": "Expresiones fijas: no cambian sus palabras, solo el verbo se conjuga (estoy sin blanca, tiraron la casa por la ventana)."
+   }
+  },
+  {
+   "d": 313,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Spanish proverbs",
+     "g": "Understand popular Spanish proverbs and use them at the right moment.",
+     "p": [
+      "Más vale tarde que nunca: better late than never.",
+      "En boca cerrada no entran moscas: sometimes it is wiser to stay quiet.",
+      "Quien madruga, Dios le ayuda: the early bird catches the worm."
+     ],
+     "q": "Is there a proverb in your language you love? What does it mean?",
+     "c": "Use one Spanish proverb today to react to something that happens to you."
+    },
+    "de": {
+     "t": "Spanische Sprichwörter",
+     "g": "Verstehe beliebte spanische Sprichwörter und nutze sie im richtigen Moment.",
+     "p": [
+      "Más vale tarde que nunca: besser spät als nie.",
+      "En boca cerrada no entran moscas: manchmal ist Schweigen klüger.",
+      "Quien madruga, Dios le ayuda: Morgenstund hat Gold im Mund."
+     ],
+     "q": "Gibt es ein Sprichwort in deiner Sprache, das du liebst? Was bedeutet es?",
+     "c": "Reagiere heute mit einem spanischen Sprichwort auf etwas, das dir passiert."
+    },
+    "es": {
+     "t": "Refranes españoles",
+     "g": "Entiende refranes populares y úsalos en el momento oportuno.",
+     "p": [
+      "Más vale tarde que nunca: mejor hacerlo tarde que no hacerlo.",
+      "En boca cerrada no entran moscas: a veces es mejor callar.",
+      "Quien madruga, Dios le ayuda: el esfuerzo temprano da frutos."
+     ],
+     "q": "¿Hay algún refrán de tu lengua que te encante? ¿Qué significa?",
+     "c": "Usa hoy un refrán español para reaccionar a algo que te pase."
+    },
+    "fr": {
+     "t": "Proverbes espagnols",
+     "g": "Comprends des proverbes espagnols populaires et utilise-les au bon moment.",
+     "p": [
+      "Más vale tarde que nunca : mieux vaut tard que jamais.",
+      "En boca cerrada no entran moscas : parfois, mieux vaut se taire.",
+      "Quien madruga, Dios le ayuda : le monde appartient à ceux qui se lèvent tôt."
+     ],
+     "q": "Y a-t-il un proverbe de ta langue que tu adores ? Que veut-il dire ?",
+     "c": "Utilise aujourd'hui un proverbe espagnol pour réagir à ce qui t'arrive."
+    },
+    "it": {
+     "t": "Proverbi spagnoli",
+     "g": "Capisci proverbi spagnoli popolari e usali al momento giusto.",
+     "p": [
+      "Más vale tarde que nunca: meglio tardi che mai.",
+      "En boca cerrada no entran moscas: a volte è meglio tacere.",
+      "Quien madruga, Dios le ayuda: il mattino ha l'oro in bocca."
+     ],
+     "q": "C'è un proverbio della tua lingua che ami? Cosa significa?",
+     "c": "Usa oggi un proverbio spagnolo per reagire a qualcosa che ti succede."
+    },
+    "pt": {
+     "t": "Provérbios espanhóis",
+     "g": "Compreende provérbios espanhóis populares e usa-os no momento certo.",
+     "p": [
+      "Más vale tarde que nunca: mais vale tarde do que nunca.",
+      "En boca cerrada no entran moscas: às vezes é melhor ficar calado.",
+      "Quien madruga, Dios le ayuda: Deus ajuda quem cedo madruga."
+     ],
+     "q": "Há algum provérbio da tua língua de que gostes muito? O que significa?",
+     "c": "Usa hoje um provérbio espanhol para reagir a algo que te aconteça."
+    },
+    "pt_BR": {
+     "t": "Provérbios espanhóis",
+     "g": "Entenda provérbios espanhóis populares e use-os na hora certa.",
+     "p": [
+      "Más vale tarde que nunca: antes tarde do que nunca.",
+      "En boca cerrada no entran moscas: em boca fechada não entra mosquito.",
+      "Quien madruga, Dios le ayuda: Deus ajuda quem cedo madruga."
+     ],
+     "q": "Tem algum provérbio da sua língua que você adora? O que ele significa?",
+     "c": "Use hoje um provérbio espanhol para reagir a algo que acontecer com você."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "más vale tarde que nunca",
+      "ex": "Llegaste tarde, pero más vale tarde que nunca."
+     },
+     {
+      "w": "en boca cerrada no entran moscas",
+      "ex": "Mejor no digas nada: en boca cerrada no entran moscas."
+     },
+     {
+      "w": "quien madruga, Dios le ayuda",
+      "ex": "Me levanto a las seis: quien madruga, Dios le ayuda."
+     },
+     {
+      "w": "no hay mal que por bien no venga",
+      "ex": "Perdí el tren y conocí a mi socio: no hay mal que por bien no venga."
+     },
+     {
+      "w": "ojos que no ven, corazón que no siente",
+      "ex": "Ojos que no ven, corazón que no siente, dice mi madre."
+     },
+     {
+      "w": "como dice el refrán",
+      "ex": "Como dice el refrán, más vale prevenir que curar."
+     }
+    ],
+    "gram": "Refranes: frases fijas en presente atemporal; se introducen con como dice el refrán o ya lo dice el refrán."
+   }
+  },
+  {
+   "d": 314,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Verbs with prepositions",
+     "g": "Use verbs that always take a fixed preposition.",
+     "p": [
+      "Pensar en (think about), soñar con (dream of), depender de (depend on).",
+      "Acordarse de (remember), confiar en (trust), casarse con... keep the pair together.",
+      "Questions keep the preposition in front: ¿En qué piensas? ¿De qué depende?"
+     ],
+     "q": "¿Con qué sueñas para el futuro?",
+     "c": "Write five sentences about yourself with pensar en, soñar con, depender de, acordarse de and confiar en."
+    },
+    "de": {
+     "t": "Verben mit Präpositionen",
+     "g": "Nutze Verben, die immer eine feste Präposition haben.",
+     "p": [
+      "Pensar en (denken an), soñar con (träumen von), depender de (abhängen von).",
+      "Acordarse de (sich erinnern an), confiar en (vertrauen): lerne sie als Paar.",
+      "In Fragen steht die Präposition vorn: ¿En qué piensas? ¿De qué depende?"
+     ],
+     "q": "¿Con qué sueñas para el futuro?",
+     "c": "Schreib fünf Sätze über dich mit pensar en, soñar con, depender de, acordarse de und confiar en."
+    },
+    "es": {
+     "t": "Verbos con preposición",
+     "g": "Usa verbos que siempre van con una preposición fija.",
+     "p": [
+      "Pensar en, soñar con, depender de: el verbo y su preposición van juntos.",
+      "Acordarse de, confiar en, contar con: apréndelos siempre en pareja.",
+      "En las preguntas la preposición va delante: ¿En qué piensas? ¿De qué depende?"
+     ],
+     "q": "¿Con qué sueñas para el futuro?",
+     "c": "Escribe cinco frases sobre ti con pensar en, soñar con, depender de, acordarse de y confiar en."
+    },
+    "fr": {
+     "t": "Verbes avec préposition",
+     "g": "Utilise des verbes qui prennent toujours une préposition fixe.",
+     "p": [
+      "Pensar en (penser à), soñar con (rêver de), depender de (dépendre de).",
+      "Acordarse de (se souvenir de), confiar en (faire confiance à) : apprends-les en paire.",
+      "Dans les questions, la préposition passe devant : ¿En qué piensas? ¿De qué depende?"
+     ],
+     "q": "¿Con qué sueñas para el futuro?",
+     "c": "Écris cinq phrases sur toi avec pensar en, soñar con, depender de, acordarse de et confiar en."
+    },
+    "it": {
+     "t": "Verbi con preposizione",
+     "g": "Usa verbi che vogliono sempre una preposizione fissa.",
+     "p": [
+      "Pensar en (pensare a), soñar con (sognare di), depender de (dipendere da).",
+      "Acordarse de (ricordarsi di), confiar en (fidarsi di): imparali sempre in coppia.",
+      "Nelle domande la preposizione va davanti: ¿En qué piensas? ¿De qué depende?"
+     ],
+     "q": "¿Con qué sueñas para el futuro?",
+     "c": "Scrivi cinque frasi su di te con pensar en, soñar con, depender de, acordarse de e confiar en."
+    },
+    "pt": {
+     "t": "Verbos com preposição",
+     "g": "Usa verbos que levam sempre uma preposição fixa.",
+     "p": [
+      "Pensar en (pensar em), soñar con (sonhar com), depender de (depender de).",
+      "Acordarse de (lembrar-se de), confiar en (confiar em): aprende-os aos pares.",
+      "Nas perguntas a preposição vai à frente: ¿En qué piensas? ¿De qué depende?"
+     ],
+     "q": "¿Con qué sueñas para el futuro?",
+     "c": "Escreve cinco frases sobre ti com pensar en, soñar con, depender de, acordarse de e confiar en."
+    },
+    "pt_BR": {
+     "t": "Verbos com preposição",
+     "g": "Use verbos que sempre levam uma preposição fixa.",
+     "p": [
+      "Pensar en (pensar em), soñar con (sonhar com), depender de (depender de).",
+      "Acordarse de (lembrar de), confiar en (confiar em): aprenda sempre em pares.",
+      "Nas perguntas a preposição vem antes: ¿En qué piensas? ¿De qué depende?"
+     ],
+     "q": "¿Con qué sueñas para el futuro?",
+     "c": "Escreva cinco frases sobre você com pensar en, soñar con, depender de, acordarse de e confiar en."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "pensar en",
+      "ex": "Siempre pienso en mis amigos de la infancia."
+     },
+     {
+      "w": "soñar con",
+      "ex": "Sueño con recorrer Sudamérica en tren."
+     },
+     {
+      "w": "depender de",
+      "ex": "Todo depende del tiempo que haga."
+     },
+     {
+      "w": "acordarse de",
+      "ex": "¿Te acuerdas de nuestro primer viaje?"
+     },
+     {
+      "w": "confiar en",
+      "ex": "Confío en ti para organizar la fiesta."
+     },
+     {
+      "w": "contar con",
+      "ex": "Puedes contar conmigo para lo que necesites."
+     }
+    ],
+    "gram": "Régimen preposicional: verbo + preposición fija (pensar en, soñar con, depender de); en preguntas: ¿En qué...? ¿Con quién...?"
+   }
+  },
+  {
+   "d": 315,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Collocations at work",
+     "g": "Sound natural at work with fixed word combinations.",
+     "p": [
+      "Cumplir un plazo (meet a deadline), lanzar un producto (launch a product).",
+      "Llegar a un acuerdo (reach an agreement), obtener beneficios (make a profit).",
+      "Tomar una decisión, not hacer una decisión; asistir a una reunión (attend)."
+     ],
+     "q": "What deadline did you cumplir recently, and how did it go?",
+     "c": "Describe a project you know in four sentences using four collocations from today."
+    },
+    "de": {
+     "t": "Kollokationen im Beruf",
+     "g": "Klinge im Job natürlich mit festen Wortverbindungen.",
+     "p": [
+      "Cumplir un plazo (eine Frist einhalten), lanzar un producto (ein Produkt einführen).",
+      "Llegar a un acuerdo (sich einigen), obtener beneficios (Gewinn erzielen).",
+      "Tomar una decisión, nicht hacer; asistir a una reunión (an einer Sitzung teilnehmen)."
+     ],
+     "q": "Welche Frist hast du zuletzt eingehalten, und wie lief es?",
+     "c": "Beschreibe ein Projekt in vier Sätzen mit vier Kollokationen von heute."
+    },
+    "es": {
+     "t": "Colocaciones en el trabajo",
+     "g": "Suena natural en el trabajo con combinaciones fijas de palabras.",
+     "p": [
+      "Cumplir un plazo, lanzar un producto: el verbo y el sustantivo van unidos.",
+      "Llegar a un acuerdo, obtener beneficios: combinaciones típicas del mundo laboral.",
+      "Se dice tomar una decisión, no hacer una decisión; asistir a una reunión."
+     ],
+     "q": "¿Qué plazo cumpliste hace poco y cómo te fue?",
+     "c": "Describe un proyecto en cuatro frases con cuatro colocaciones de hoy."
+    },
+    "fr": {
+     "t": "Collocations au travail",
+     "g": "Parle naturellement au travail grâce aux combinaisons fixes.",
+     "p": [
+      "Cumplir un plazo (respecter un délai), lanzar un producto (lancer un produit).",
+      "Llegar a un acuerdo (parvenir à un accord), obtener beneficios (faire des bénéfices).",
+      "On dit tomar una decisión, pas hacer ; asistir a una reunión (assister à une réunion)."
+     ],
+     "q": "Quel délai as-tu respecté récemment, et comment ça s'est passé ?",
+     "c": "Décris un projet en quatre phrases avec quatre collocations du jour."
+    },
+    "it": {
+     "t": "Collocazioni al lavoro",
+     "g": "Suona naturale al lavoro con combinazioni fisse di parole.",
+     "p": [
+      "Cumplir un plazo (rispettare una scadenza), lanzar un producto (lanciare un prodotto).",
+      "Llegar a un acuerdo (raggiungere un accordo), obtener beneficios (ottenere utili).",
+      "Si dice tomar una decisión, non hacer; asistir a una reunión (partecipare a una riunione)."
+     ],
+     "q": "Quale scadenza hai rispettato di recente, e com'è andata?",
+     "c": "Descrivi un progetto in quattro frasi con quattro collocazioni di oggi."
+    },
+    "pt": {
+     "t": "Colocações no trabalho",
+     "g": "Soa natural no trabalho com combinações fixas de palavras.",
+     "p": [
+      "Cumplir un plazo (cumprir um prazo), lanzar un producto (lançar um produto).",
+      "Llegar a un acuerdo (chegar a acordo), obtener beneficios (obter lucros).",
+      "Diz-se tomar una decisión, não hacer; asistir a una reunión (assistir a uma reunião)."
+     ],
+     "q": "Que prazo cumpriste recentemente e como correu?",
+     "c": "Descreve um projeto em quatro frases com quatro colocações de hoje."
+    },
+    "pt_BR": {
+     "t": "Colocações no trabalho",
+     "g": "Soe natural no trabalho com combinações fixas de palavras.",
+     "p": [
+      "Cumplir un plazo (cumprir um prazo), lanzar un producto (lançar um produto).",
+      "Llegar a un acuerdo (chegar a um acordo), obtener beneficios (ter lucro).",
+      "Diz-se tomar una decisión, não hacer; asistir a una reunión (participar de uma reunião)."
+     ],
+     "q": "Que prazo você cumpriu recentemente e como foi?",
+     "c": "Descreva um projeto em quatro frases com quatro colocações de hoje."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "cumplir un plazo",
+      "ex": "Conseguimos cumplir el plazo por los pelos."
+     },
+     {
+      "w": "lanzar un producto",
+      "ex": "La empresa lanzará un producto nuevo en otoño."
+     },
+     {
+      "w": "llegar a un acuerdo",
+      "ex": "Tras dos horas, llegamos a un acuerdo."
+     },
+     {
+      "w": "obtener beneficios",
+      "ex": "Este año hemos obtenido beneficios."
+     },
+     {
+      "w": "tomar una decisión",
+      "ex": "Hay que tomar una decisión hoy."
+     },
+     {
+      "w": "asistir a una reunión",
+      "ex": "Mañana asisto a una reunión con el cliente."
+     }
+    ],
+    "gram": "Colocaciones: combinaciones fijas verbo + sustantivo (tomar una decisión, cumplir un plazo); no se traducen palabra por palabra."
+   }
+  },
+  {
+   "d": 316,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Nuance: grande, enorme, inmenso",
+     "g": "Choose the synonym with the right strength and tone.",
+     "p": [
+      "Grande is neutral; enorme is very big; gigantesco and inmenso are huge, often emotional.",
+      "Inmenso suits feelings and spaces: una alegría inmensa, el inmenso océano.",
+      "Strong adjectives do not take muy: say enorme, not muy enorme."
+     ],
+     "q": "What is the most inmenso place you have ever seen?",
+     "c": "Describe three things with grande, enorme and inmenso, choosing the right tone each time."
+    },
+    "de": {
+     "t": "Nuancen: grande, enorme, inmenso",
+     "g": "Wähle das Synonym mit der passenden Stärke und dem passenden Ton.",
+     "p": [
+      "Grande ist neutral; enorme ist sehr groß; gigantesco und inmenso sind riesig, oft emotional.",
+      "Inmenso passt zu Gefühlen und Weiten: una alegría inmensa, el inmenso océano.",
+      "Starke Adjektive nehmen kein muy: enorme, nicht muy enorme."
+     ],
+     "q": "Was ist der inmenso-ste Ort, den du je gesehen hast?",
+     "c": "Beschreibe drei Dinge mit grande, enorme und inmenso im jeweils passenden Ton."
+    },
+    "es": {
+     "t": "Matices: grande, enorme, inmenso",
+     "g": "Elige el sinónimo con la intensidad y el tono adecuados.",
+     "p": [
+      "Grande es neutro; enorme, muy grande; gigantesco e inmenso, aún más, a menudo con emoción.",
+      "Inmenso va bien con sentimientos y espacios: una alegría inmensa, el inmenso océano.",
+      "Los adjetivos fuertes no llevan muy: enorme, no muy enorme."
+     ],
+     "q": "¿Cuál es el lugar más inmenso que has visto?",
+     "c": "Describe tres cosas con grande, enorme e inmenso, eligiendo bien el tono."
+    },
+    "fr": {
+     "t": "Nuances : grande, enorme, inmenso",
+     "g": "Choisis le synonyme à la bonne intensité et au bon ton.",
+     "p": [
+      "Grande est neutre ; enorme, très grand ; gigantesco et inmenso, immenses, souvent avec émotion.",
+      "Inmenso va avec sentiments et espaces : una alegría inmensa, el inmenso océano.",
+      "Les adjectifs forts ne prennent pas muy : enorme, pas muy enorme."
+     ],
+     "q": "Quel est l'endroit le plus inmenso que tu aies vu ?",
+     "c": "Décris trois choses avec grande, enorme et inmenso en choisissant le bon ton."
+    },
+    "it": {
+     "t": "Sfumature: grande, enorme, inmenso",
+     "g": "Scegli il sinonimo con la giusta intensità e il tono giusto.",
+     "p": [
+      "Grande è neutro; enorme, molto grande; gigantesco e inmenso, immensi, spesso emotivi.",
+      "Inmenso si usa per sentimenti e spazi: una alegría inmensa, el inmenso océano.",
+      "Gli aggettivi forti non vogliono muy: enorme, non muy enorme."
+     ],
+     "q": "Qual è il posto più inmenso che hai mai visto?",
+     "c": "Descrivi tre cose con grande, enorme e inmenso scegliendo bene il tono."
+    },
+    "pt": {
+     "t": "Matizes: grande, enorme, inmenso",
+     "g": "Escolhe o sinónimo com a intensidade e o tom certos.",
+     "p": [
+      "Grande é neutro; enorme, muito grande; gigantesco e inmenso, imensos, muitas vezes com emoção.",
+      "Inmenso serve para sentimentos e espaços: una alegría inmensa, el inmenso océano.",
+      "Adjetivos fortes não levam muy: enorme, não muy enorme."
+     ],
+     "q": "Qual é o lugar mais inmenso que já viste?",
+     "c": "Descreve três coisas com grande, enorme e inmenso, escolhendo bem o tom."
+    },
+    "pt_BR": {
+     "t": "Nuances: grande, enorme, inmenso",
+     "g": "Escolha o sinônimo com a intensidade e o tom certos.",
+     "p": [
+      "Grande é neutro; enorme, muito grande; gigantesco e inmenso, imensos, muitas vezes com emoção.",
+      "Inmenso combina com sentimentos e espaços: una alegría inmensa, el inmenso océano.",
+      "Adjetivos fortes não levam muy: enorme, não muy enorme."
+     ],
+     "q": "Qual é o lugar mais inmenso que você já viu?",
+     "c": "Descreva três coisas com grande, enorme e inmenso, escolhendo bem o tom."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "grande",
+      "ex": "Vivo en una casa grande con jardín."
+     },
+     {
+      "w": "enorme",
+      "ex": "Había una cola enorme en el museo."
+     },
+     {
+      "w": "gigantesco",
+      "ex": "Vimos un árbol gigantesco en el parque."
+     },
+     {
+      "w": "inmenso",
+      "ex": "Sentí una alegría inmensa al verte."
+     },
+     {
+      "w": "diminuto",
+      "ex": "El pueblo tiene una plaza diminuta y preciosa."
+     },
+     {
+      "w": "minúsculo",
+      "ex": "Me dieron un café en una taza minúscula."
+     }
+    ],
+    "gram": "Adjetivos extremos (enorme, inmenso, diminuto) no admiten muy; se intensifican con realmente o verdaderamente."
+   }
+  },
+  {
+   "d": 317,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Confusing pairs: sino or pero",
+     "g": "Master Spanish pairs that learners often mix up.",
+     "p": [
+      "Pero adds a contrast; sino corrects a negative: No es rojo, sino azul.",
+      "Porque answers (because); ¿por qué? asks (why); el porqué is a noun (the reason).",
+      "Si without accent means if; sí with accent means yes or oneself."
+     ],
+     "q": "Can you correct this: No quiero té, pero café?",
+     "c": "Write three sentence pairs: pero vs sino, porque vs por qué, si vs sí."
+    },
+    "de": {
+     "t": "Verwechslungspaare: sino oder pero",
+     "g": "Meistere spanische Wortpaare, die Lernende oft verwechseln.",
+     "p": [
+      "Pero setzt einen Gegensatz; sino korrigiert eine Verneinung: No es rojo, sino azul.",
+      "Porque antwortet (weil); ¿por qué? fragt (warum); el porqué ist ein Nomen (der Grund).",
+      "Si ohne Akzent heißt wenn/ob; sí mit Akzent heißt ja oder sich."
+     ],
+     "q": "Kannst du das korrigieren: No quiero té, pero café?",
+     "c": "Schreib drei Satzpaare: pero vs. sino, porque vs. por qué, si vs. sí."
+    },
+    "es": {
+     "t": "Pares confusos: sino o pero",
+     "g": "Domina los pares que más se confunden al aprender español.",
+     "p": [
+      "Pero añade un contraste; sino corrige una negación: No es rojo, sino azul.",
+      "Porque responde; ¿por qué? pregunta; el porqué es un sustantivo (el motivo).",
+      "Si sin tilde es condicional; sí con tilde es afirmación o pronombre (para sí)."
+     ],
+     "q": "¿Puedes corregir esto: No quiero té, pero café?",
+     "c": "Escribe tres pares de frases: pero y sino, porque y por qué, si y sí."
+    },
+    "fr": {
+     "t": "Paires piégeuses : sino ou pero",
+     "g": "Maîtrise les paires que les apprenants confondent souvent.",
+     "p": [
+      "Pero ajoute une opposition ; sino corrige une négation : No es rojo, sino azul.",
+      "Porque répond (parce que) ; ¿por qué? demande (pourquoi) ; el porqué est un nom (la raison).",
+      "Si sans accent veut dire si ; sí avec accent veut dire oui ou soi."
+     ],
+     "q": "Peux-tu corriger : No quiero té, pero café ?",
+     "c": "Écris trois paires de phrases : pero/sino, porque/por qué, si/sí."
+    },
+    "it": {
+     "t": "Coppie insidiose: sino o pero",
+     "g": "Padroneggia le coppie che chi impara confonde spesso.",
+     "p": [
+      "Pero aggiunge un contrasto; sino corregge una negazione: No es rojo, sino azul.",
+      "Porque risponde (perché); ¿por qué? chiede (perché?); el porqué è un nome (il motivo).",
+      "Si senza accento significa se; sí con accento significa sì o sé."
+     ],
+     "q": "Sai correggere questa frase: No quiero té, pero café?",
+     "c": "Scrivi tre coppie di frasi: pero/sino, porque/por qué, si/sí."
+    },
+    "pt": {
+     "t": "Pares confusos: sino ou pero",
+     "g": "Domina os pares que os alunos costumam confundir.",
+     "p": [
+      "Pero acrescenta contraste; sino corrige uma negação: No es rojo, sino azul.",
+      "Porque responde (porque); ¿por qué? pergunta (porquê?); el porqué é um nome (o motivo).",
+      "Si sem acento quer dizer se; sí com acento quer dizer sim ou si próprio."
+     ],
+     "q": "Consegues corrigir isto: No quiero té, pero café?",
+     "c": "Escreve três pares de frases: pero/sino, porque/por qué, si/sí."
+    },
+    "pt_BR": {
+     "t": "Pares confusos: sino ou pero",
+     "g": "Domine os pares que os alunos costumam confundir.",
+     "p": [
+      "Pero acrescenta contraste; sino corrige uma negação: No es rojo, sino azul.",
+      "Porque responde (porque); ¿por qué? pergunta (por quê?); el porqué é um substantivo (o motivo).",
+      "Si sem acento significa se; sí com acento significa sim ou si mesmo."
+     ],
+     "q": "Você consegue corrigir isto: No quiero té, pero café?",
+     "c": "Escreva três pares de frases: pero/sino, porque/por qué, si/sí."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "sino",
+      "ex": "No vivo en Madrid, sino en Sevilla."
+     },
+     {
+      "w": "pero",
+      "ex": "Es caro, pero merece la pena."
+     },
+     {
+      "w": "no solo... sino también",
+      "ex": "No solo canta, sino también baila."
+     },
+     {
+      "w": "¿por qué?",
+      "ex": "¿Por qué estudias español?"
+     },
+     {
+      "w": "el porqué",
+      "ex": "Nadie entiende el porqué de su decisión."
+     },
+     {
+      "w": "sí",
+      "ex": "Sí, claro, mañana te llamo si puedo."
+     }
+    ],
+    "gram": "Sino tras negación para corregir (no A sino B); pero para contrastar. Por qué pregunta, porque responde; si condicional, sí afirma."
+   }
+  },
+  {
+   "d": 318,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Word families",
+     "g": "Grow your vocabulary by learning words in families.",
+     "p": [
+      "One root, many words: crear, la creación, creativo, la creatividad.",
+      "Common endings: -ción and -dad make nouns, -ivo and -oso make adjectives.",
+      "Add prefixes: hacer, deshacer, rehacer; posible, imposible."
+     ],
+     "q": "Which word family could you build from trabajar?",
+     "c": "Build two word families of four words each and use one word of each in a sentence."
+    },
+    "de": {
+     "t": "Wortfamilien",
+     "g": "Erweitere deinen Wortschatz, indem du Wörter in Familien lernst.",
+     "p": [
+      "Eine Wurzel, viele Wörter: crear, la creación, creativo, la creatividad.",
+      "Typische Endungen: -ción und -dad bilden Nomen, -ivo und -oso Adjektive.",
+      "Füge Präfixe hinzu: hacer, deshacer, rehacer; posible, imposible."
+     ],
+     "q": "Welche Wortfamilie kannst du aus trabajar bilden?",
+     "c": "Bilde zwei Wortfamilien mit je vier Wörtern und nutze je ein Wort in einem Satz."
+    },
+    "es": {
+     "t": "Familias de palabras",
+     "g": "Amplía tu vocabulario aprendiendo palabras por familias.",
+     "p": [
+      "Una raíz, muchas palabras: crear, la creación, creativo, la creatividad.",
+      "Sufijos frecuentes: -ción y -dad forman sustantivos; -ivo y -oso, adjetivos.",
+      "Añade prefijos: hacer, deshacer, rehacer; posible, imposible."
+     ],
+     "q": "¿Qué familia de palabras puedes formar a partir de trabajar?",
+     "c": "Forma dos familias de cuatro palabras y usa una de cada una en una frase."
+    },
+    "fr": {
+     "t": "Familles de mots",
+     "g": "Enrichis ton vocabulaire en apprenant les mots par familles.",
+     "p": [
+      "Une racine, plusieurs mots : crear, la creación, creativo, la creatividad.",
+      "Suffixes courants : -ción et -dad forment des noms, -ivo et -oso des adjectifs.",
+      "Ajoute des préfixes : hacer, deshacer, rehacer ; posible, imposible."
+     ],
+     "q": "Quelle famille de mots peux-tu construire à partir de trabajar ?",
+     "c": "Construis deux familles de quatre mots et utilise un mot de chacune dans une phrase."
+    },
+    "it": {
+     "t": "Famiglie di parole",
+     "g": "Arricchisci il lessico imparando le parole per famiglie.",
+     "p": [
+      "Una radice, tante parole: crear, la creación, creativo, la creatividad.",
+      "Suffissi comuni: -ción e -dad formano nomi, -ivo e -oso aggettivi.",
+      "Aggiungi prefissi: hacer, deshacer, rehacer; posible, imposible."
+     ],
+     "q": "Quale famiglia di parole puoi costruire da trabajar?",
+     "c": "Costruisci due famiglie di quattro parole e usa una parola di ciascuna in una frase."
+    },
+    "pt": {
+     "t": "Famílias de palavras",
+     "g": "Alarga o teu vocabulário aprendendo palavras por famílias.",
+     "p": [
+      "Uma raiz, muitas palavras: crear, la creación, creativo, la creatividad.",
+      "Sufixos frequentes: -ción e -dad formam nomes; -ivo e -oso, adjetivos.",
+      "Junta prefixos: hacer, deshacer, rehacer; posible, imposible."
+     ],
+     "q": "Que família de palavras consegues formar a partir de trabajar?",
+     "c": "Forma duas famílias de quatro palavras e usa uma de cada numa frase."
+    },
+    "pt_BR": {
+     "t": "Famílias de palavras",
+     "g": "Amplie seu vocabulário aprendendo palavras por famílias.",
+     "p": [
+      "Uma raiz, muitas palavras: crear, la creación, creativo, la creatividad.",
+      "Sufixos frequentes: -ción e -dad formam substantivos; -ivo e -oso, adjetivos.",
+      "Acrescente prefixos: hacer, deshacer, rehacer; posible, imposible."
+     ],
+     "q": "Que família de palavras você consegue formar a partir de trabajar?",
+     "c": "Forme duas famílias de quatro palavras e use uma de cada numa frase."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "crear",
+      "ex": "Queremos crear un club de lectura."
+     },
+     {
+      "w": "la creación",
+      "ex": "La creación del parque llevó dos años."
+     },
+     {
+      "w": "creativo",
+      "ex": "Es una persona muy creativa."
+     },
+     {
+      "w": "la creatividad",
+      "ex": "La creatividad se entrena cada día."
+     },
+     {
+      "w": "deshacer",
+      "ex": "Tengo que deshacer la maleta."
+     },
+     {
+      "w": "imposible",
+      "ex": "Nada es imposible con paciencia."
+     }
+    ],
+    "gram": "Derivación: raíz + sufijo (-ción, -dad sustantivos; -ivo, -oso adjetivos) y prefijos (des-, re-, im-/in-) que cambian el sentido."
+   }
+  },
+  {
+   "d": 319,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Academic vocabulary",
+     "g": "Use precise words for study and professional writing.",
+     "p": [
+      "Analizar, significativo, enfoque, factor and evidencia appear in reports and essays.",
+      "Prefer precise verbs: analizar instead of mirar, demostrar instead of enseñar.",
+      "Hedge claims: parece indicar que, según la evidencia disponible."
+     ],
+     "q": "Which subject would you like to analizar in depth, and why?",
+     "c": "Write two academic sentences about a topic you like with analizar and significativo."
+    },
+    "de": {
+     "t": "Akademischer Wortschatz",
+     "g": "Nutze präzise Wörter für Studium und berufliches Schreiben.",
+     "p": [
+      "Analizar, significativo, enfoque, factor und evidencia stehen in Berichten und Aufsätzen.",
+      "Wähle präzise Verben: analizar statt mirar, demostrar statt enseñar.",
+      "Formuliere vorsichtig: parece indicar que, según la evidencia disponible."
+     ],
+     "q": "Welches Thema würdest du gern gründlich analizar, und warum?",
+     "c": "Schreib zwei akademische Sätze über ein Lieblingsthema mit analizar und significativo."
+    },
+    "es": {
+     "t": "Vocabulario académico",
+     "g": "Usa palabras precisas para estudiar y escribir en el trabajo.",
+     "p": [
+      "Analizar, significativo, enfoque, factor y evidencia aparecen en informes y ensayos.",
+      "Prefiere verbos precisos: analizar en vez de mirar, demostrar en vez de enseñar.",
+      "Matiza tus afirmaciones: parece indicar que, según la evidencia disponible."
+     ],
+     "q": "¿Qué tema te gustaría analizar a fondo y por qué?",
+     "c": "Escribe dos frases académicas sobre un tema que te guste con analizar y significativo."
+    },
+    "fr": {
+     "t": "Vocabulaire académique",
+     "g": "Utilise des mots précis pour les études et l'écrit professionnel.",
+     "p": [
+      "Analizar, significativo, enfoque, factor et evidencia apparaissent dans rapports et essais.",
+      "Préfère des verbes précis : analizar plutôt que mirar, demostrar plutôt que enseñar.",
+      "Nuance tes affirmations : parece indicar que, según la evidencia disponible."
+     ],
+     "q": "Quel sujet aimerais-tu analizar en profondeur, et pourquoi ?",
+     "c": "Écris deux phrases académiques sur un sujet qui te plaît avec analizar et significativo."
+    },
+    "it": {
+     "t": "Lessico accademico",
+     "g": "Usa parole precise per lo studio e la scrittura professionale.",
+     "p": [
+      "Analizar, significativo, enfoque, factor ed evidencia compaiono in relazioni e saggi.",
+      "Preferisci verbi precisi: analizar invece di mirar, demostrar invece di enseñar.",
+      "Attenua le affermazioni: parece indicar que, según la evidencia disponible."
+     ],
+     "q": "Quale tema ti piacerebbe analizar a fondo, e perché?",
+     "c": "Scrivi due frasi accademiche su un tema che ami con analizar e significativo."
+    },
+    "pt": {
+     "t": "Vocabulário académico",
+     "g": "Usa palavras precisas para estudar e escrever no trabalho.",
+     "p": [
+      "Analizar, significativo, enfoque, factor e evidencia aparecem em relatórios e ensaios.",
+      "Prefere verbos precisos: analizar em vez de mirar, demostrar em vez de enseñar.",
+      "Matiza as afirmações: parece indicar que, según la evidencia disponible."
+     ],
+     "q": "Que tema gostarias de analizar a fundo, e porquê?",
+     "c": "Escreve duas frases académicas sobre um tema de que gostes com analizar e significativo."
+    },
+    "pt_BR": {
+     "t": "Vocabulário acadêmico",
+     "g": "Use palavras precisas para estudar e escrever no trabalho.",
+     "p": [
+      "Analizar, significativo, enfoque, factor e evidencia aparecem em relatórios e ensaios.",
+      "Prefira verbos precisos: analizar em vez de mirar, demostrar em vez de enseñar.",
+      "Suavize as afirmações: parece indicar que, según la evidencia disponible."
+     ],
+     "q": "Que tema você gostaria de analizar a fundo, e por quê?",
+     "c": "Escreva duas frases acadêmicas sobre um tema de que você gosta com analizar e significativo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "analizar",
+      "ex": "En este trabajo vamos a analizar los resultados."
+     },
+     {
+      "w": "significativo",
+      "ex": "Se observa un aumento significativo de usuarios."
+     },
+     {
+      "w": "el enfoque",
+      "ex": "Proponemos un enfoque práctico del problema."
+     },
+     {
+      "w": "el factor",
+      "ex": "El precio es un factor clave en la decisión."
+     },
+     {
+      "w": "la evidencia",
+      "ex": "La evidencia disponible apoya esta idea."
+     },
+     {
+      "w": "parece indicar que",
+      "ex": "Todo parece indicar que el método funciona."
+     }
+    ],
+    "gram": "Registro académico: verbos precisos (analizar, demostrar), sustantivos abstractos y atenuación (parece indicar que, cabe pensar que)."
+   }
+  },
+  {
+   "d": 320,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Review: vocabulary in depth",
+     "g": "Play with idioms, proverbs, verbs with prepositions and nuance.",
+     "p": [
+      "Idioms: estar como pez en el agua, echar una mano, ser pan comido, estar sin blanca.",
+      "Proverbs and pairs: más vale tarde que nunca; no A sino B; pensar en, soñar con.",
+      "Nuance and families: enorme vs inmenso; crear, creación, creativo."
+     ],
+     "q": "Which idiom from these ten days is your favourite, and why?",
+     "c": "Word game: tell me a mini story of four sentences with two idioms, one proverb and sino."
+    },
+    "de": {
+     "t": "Wiederholung: Wortschatz in der Tiefe",
+     "g": "Spiele mit Redewendungen, Sprichwörtern, Verben mit Präposition und Nuancen.",
+     "p": [
+      "Redewendungen: estar como pez en el agua, echar una mano, ser pan comido, estar sin blanca.",
+      "Sprichwörter und Paare: más vale tarde que nunca; no A sino B; pensar en, soñar con.",
+      "Nuancen und Familien: enorme vs. inmenso; crear, creación, creativo."
+     ],
+     "q": "Welche Redewendung der letzten zehn Tage magst du am liebsten, und warum?",
+     "c": "Wortspiel: Erzähl eine Mini-Geschichte in vier Sätzen mit zwei Wendungen, einem Sprichwort und sino."
+    },
+    "es": {
+     "t": "Repaso: vocabulario a fondo",
+     "g": "Juega con expresiones, refranes, verbos con preposición y matices.",
+     "p": [
+      "Expresiones: estar como pez en el agua, echar una mano, ser pan comido, estar sin blanca.",
+      "Refranes y pares: más vale tarde que nunca; no A sino B; pensar en, soñar con.",
+      "Matices y familias: enorme o inmenso; crear, creación, creativo."
+     ],
+     "q": "¿Qué expresión de estos diez días es tu favorita y por qué?",
+     "c": "Juego: cuéntame una minihistoria de cuatro frases con dos expresiones, un refrán y sino."
+    },
+    "fr": {
+     "t": "Révision : le vocabulaire en profondeur",
+     "g": "Joue avec expressions, proverbes, verbes à préposition et nuances.",
+     "p": [
+      "Expressions : estar como pez en el agua, echar una mano, ser pan comido, estar sin blanca.",
+      "Proverbes et paires : más vale tarde que nunca ; no A sino B ; pensar en, soñar con.",
+      "Nuances et familles : enorme ou inmenso ; crear, creación, creativo."
+     ],
+     "q": "Quelle expression de ces dix jours préfères-tu, et pourquoi ?",
+     "c": "Jeu : raconte une mini-histoire de quatre phrases avec deux expressions, un proverbe et sino."
+    },
+    "it": {
+     "t": "Ripasso: lessico in profondità",
+     "g": "Gioca con modi di dire, proverbi, verbi con preposizione e sfumature.",
+     "p": [
+      "Modi di dire: estar como pez en el agua, echar una mano, ser pan comido, estar sin blanca.",
+      "Proverbi e coppie: más vale tarde que nunca; no A sino B; pensar en, soñar con.",
+      "Sfumature e famiglie: enorme o inmenso; crear, creación, creativo."
+     ],
+     "q": "Quale modo di dire di questi dieci giorni preferisci, e perché?",
+     "c": "Gioco: raccontami una mini storia di quattro frasi con due modi di dire, un proverbio e sino."
+    },
+    "pt": {
+     "t": "Revisão: vocabulário a fundo",
+     "g": "Brinca com expressões, provérbios, verbos com preposição e matizes.",
+     "p": [
+      "Expressões: estar como pez en el agua, echar una mano, ser pan comido, estar sin blanca.",
+      "Provérbios e pares: más vale tarde que nunca; no A sino B; pensar en, soñar con.",
+      "Matizes e famílias: enorme ou inmenso; crear, creación, creativo."
+     ],
+     "q": "Qual é a tua expressão favorita destes dez dias, e porquê?",
+     "c": "Jogo: conta-me uma mini-história de quatro frases com duas expressões, um provérbio e sino."
+    },
+    "pt_BR": {
+     "t": "Revisão: vocabulário a fundo",
+     "g": "Brinque com expressões, provérbios, verbos com preposição e nuances.",
+     "p": [
+      "Expressões: estar como pez en el agua, echar una mano, ser pan comido, estar sin blanca.",
+      "Provérbios e pares: más vale tarde que nunca; no A sino B; pensar en, soñar con.",
+      "Nuances e famílias: enorme ou inmenso; crear, creación, creativo."
+     ],
+     "q": "Qual é a sua expressão favorita destes dez dias, e por quê?",
+     "c": "Jogo: conte uma mini-história de quatro frases com duas expressões, um provérbio e sino."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "estar como pez en el agua",
+      "ex": "En mi nuevo trabajo estoy como pez en el agua."
+     },
+     {
+      "w": "echar una mano",
+      "ex": "Mis vecinos siempre me echan una mano."
+     },
+     {
+      "w": "ser pan comido",
+      "ex": "Para ti, este crucigrama es pan comido."
+     },
+     {
+      "w": "soñar con",
+      "ex": "De niño soñaba con ser astronauta."
+     },
+     {
+      "w": "no... sino",
+      "ex": "No fue mala suerte, sino falta de preparación."
+     },
+     {
+      "w": "más vale tarde que nunca",
+      "ex": "Empecé a correr a los cincuenta: más vale tarde que nunca."
+     }
+    ],
+    "gram": "Repaso léxico: modismos con verbo conjugado, refranes fijos, verbo + preposición, no... sino y adjetivos extremos sin muy."
+   }
+  }
+ ]
+}

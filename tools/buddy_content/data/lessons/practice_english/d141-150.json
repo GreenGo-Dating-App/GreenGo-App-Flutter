@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 141,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Used to: past habits",
+     "g": "Talk about habits and states that are no longer true.",
+     "p": [
+      "Form: used to + verb. I used to play the piano. (I don't play now.)",
+      "Negative and question: I didn't use to like coffee. Did you use to live here? No -d after did.",
+      "For one action at a time, use the past simple: I went to Paris in 2015, not I used to go once."
+     ],
+     "q": "What's something you used to do as a teenager that you don't do any more?",
+     "c": "Write five sentences about your life ten years ago: three with used to, two with didn't use to."
+    },
+    "de": {
+     "t": "Used to: frühere Gewohnheiten",
+     "g": "Du sprichst über Gewohnheiten und Zustände, die nicht mehr stimmen.",
+     "p": [
+      "Form: used to + Verb. I used to play the piano. (Heute spiele ich nicht mehr.)",
+      "Verneinung und Frage: I didn't use to like coffee. Did you use to live here? Nach did ohne -d.",
+      "Für ein einmaliges Ereignis Past Simple: I went to Paris in 2015, nicht used to."
+     ],
+     "q": "Was hast du als Teenager gemacht, was du heute nicht mehr machst?",
+     "c": "Schreib fünf Sätze über dein Leben vor zehn Jahren: drei mit used to, zwei mit didn't use to."
+    },
+    "es": {
+     "t": "Used to: hábitos del pasado",
+     "g": "Habla de hábitos y estados que ya no son verdad.",
+     "p": [
+      "Forma: used to + verbo. I used to play the piano. (Ya no toco.)",
+      "Negativa y pregunta: I didn't use to like coffee. Did you use to live here? Sin -d tras did.",
+      "Para una acción puntual, usa el pasado simple: I went to Paris in 2015, no used to."
+     ],
+     "q": "¿Qué hacías de adolescente que ya no haces?",
+     "c": "Escribe cinco frases sobre tu vida hace diez años: tres con used to y dos con didn't use to."
+    },
+    "fr": {
+     "t": "Used to : les habitudes passées",
+     "g": "Parler d'habitudes et d'états qui ne sont plus vrais.",
+     "p": [
+      "Forme : used to + verbe. I used to play the piano. (Je n'en joue plus.)",
+      "Négation et question : I didn't use to like coffee. Did you use to live here? Pas de -d après did.",
+      "Pour une action unique, prends le past simple : I went to Paris in 2015, pas used to."
+     ],
+     "q": "Qu'est-ce que tu faisais adolescent et que tu ne fais plus ?",
+     "c": "Écris cinq phrases sur ta vie il y a dix ans : trois avec used to, deux avec didn't use to."
+    },
+    "it": {
+     "t": "Used to: abitudini passate",
+     "g": "Parla di abitudini e situazioni che non sono più vere.",
+     "p": [
+      "Forma: used to + verbo. I used to play the piano. (Ora non suono più.)",
+      "Negativa e domanda: I didn't use to like coffee. Did you use to live here? Niente -d dopo did.",
+      "Per un'azione singola usa il past simple: I went to Paris in 2015, non used to."
+     ],
+     "q": "C'è qualcosa che facevi da adolescente e che non fai più?",
+     "c": "Scrivi cinque frasi sulla tua vita di dieci anni fa: tre con used to e due con didn't use to."
+    },
+    "pt": {
+     "t": "Used to: hábitos do passado",
+     "g": "Fala de hábitos e estados que já não são verdade.",
+     "p": [
+      "Forma: used to + verbo. I used to play the piano. (Já não toco.)",
+      "Negativa e pergunta: I didn't use to like coffee. Did you use to live here? Sem -d depois de did.",
+      "Para uma ação única, usa o past simple: I went to Paris in 2015, não used to."
+     ],
+     "q": "O que é que fazias na adolescência e já não fazes?",
+     "c": "Escreve cinco frases sobre a tua vida há dez anos: três com used to e duas com didn't use to."
+    },
+    "pt_BR": {
+     "t": "Used to: hábitos do passado",
+     "g": "Fale de hábitos e situações que não são mais verdade.",
+     "p": [
+      "Forma: used to + verbo. I used to play the piano. (Não toco mais.)",
+      "Negativa e pergunta: I didn't use to like coffee. Did you use to live here? Sem -d depois de did.",
+      "Para uma ação única, use o past simple: I went to Paris in 2015, não used to."
+     ],
+     "q": "O que você fazia na adolescência e não faz mais?",
+     "c": "Escreva cinco frases sobre sua vida há dez anos: três com used to e duas com didn't use to."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "used to",
+      "ex": "I used to walk to school every day."
+     },
+     {
+      "w": "didn't use to",
+      "ex": "I didn't use to like vegetables."
+     },
+     {
+      "w": "did you use to",
+      "ex": "Did you use to have long hair?"
+     },
+     {
+      "w": "any more",
+      "ex": "I don't play football any more."
+     },
+     {
+      "w": "these days",
+      "ex": "These days I prefer quiet evenings at home."
+     },
+     {
+      "w": "not any longer",
+      "ex": "We don't live in that flat any longer."
+     }
+    ],
+    "gram": "used to + base verb for past habits/states. Negative/question: didn't use to, did you use to (no -d). Not for single events."
+   }
+  },
+  {
+   "d": 142,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Childhood memories",
+     "g": "Share memories of your childhood in a natural way.",
+     "p": [
+      "Start with time: When I was a child, when I was seven, as a kid...",
+      "Habits with used to: We used to spend summers at my grandparents'. Single events: Once, I fell in a river!",
+      "Feelings: I remember feeling so proud. My favourite toy was... I loved / I was scared of..."
+     ],
+     "q": "What's one happy memory from your childhood that still makes you smile?",
+     "c": "Write a short paragraph about your childhood with when I was, used to and one special event."
+    },
+    "de": {
+     "t": "Kindheitserinnerungen",
+     "g": "Du erzählst ganz natürlich von deiner Kindheit.",
+     "p": [
+      "Starte mit der Zeit: When I was a child, when I was seven, as a kid...",
+      "Gewohnheiten mit used to: We used to spend summers at my grandparents'. Einmalig: Once, I fell in a river!",
+      "Gefühle: I remember feeling so proud. My favourite toy was... I loved / I was scared of..."
+     ],
+     "q": "Welche schöne Kindheitserinnerung bringt dich heute noch zum Lächeln?",
+     "c": "Schreib einen kurzen Absatz über deine Kindheit mit when I was, used to und einem besonderen Erlebnis."
+    },
+    "es": {
+     "t": "Recuerdos de infancia",
+     "g": "Comparte recuerdos de tu infancia de forma natural.",
+     "p": [
+      "Empieza con el tiempo: When I was a child, when I was seven, as a kid...",
+      "Hábitos con used to: We used to spend summers at my grandparents'. Hecho único: Once, I fell in a river!",
+      "Sentimientos: I remember feeling so proud. My favourite toy was... I loved / I was scared of..."
+     ],
+     "q": "¿Qué recuerdo feliz de tu infancia todavía te hace sonreír?",
+     "c": "Escribe un párrafo corto sobre tu infancia con when I was, used to y un momento especial."
+    },
+    "fr": {
+     "t": "Souvenirs d'enfance",
+     "g": "Partager des souvenirs d'enfance de façon naturelle.",
+     "p": [
+      "Commence par le temps : When I was a child, when I was seven, as a kid...",
+      "Habitudes avec used to : We used to spend summers at my grandparents'. Événement unique : Once, I fell in a river!",
+      "Émotions : I remember feeling so proud. My favourite toy was... I loved / I was scared of..."
+     ],
+     "q": "Quel joyeux souvenir d'enfance te fait encore sourire ?",
+     "c": "Écris un court paragraphe sur ton enfance avec when I was, used to et un moment spécial."
+    },
+    "it": {
+     "t": "Ricordi d'infanzia",
+     "g": "Racconta ricordi della tua infanzia in modo naturale.",
+     "p": [
+      "Inizia dal tempo: When I was a child, when I was seven, as a kid...",
+      "Abitudini con used to: We used to spend summers at my grandparents'. Evento singolo: Once, I fell in a river!",
+      "Emozioni: I remember feeling so proud. My favourite toy was... I loved / I was scared of..."
+     ],
+     "q": "Qual è un ricordo felice della tua infanzia che ti fa ancora sorridere?",
+     "c": "Scrivi un breve paragrafo sulla tua infanzia con when I was, used to e un momento speciale."
+    },
+    "pt": {
+     "t": "Memórias de infância",
+     "g": "Partilha memórias da tua infância de forma natural.",
+     "p": [
+      "Começa pelo tempo: When I was a child, when I was seven, as a kid...",
+      "Hábitos com used to: We used to spend summers at my grandparents'. Momento único: Once, I fell in a river!",
+      "Sentimentos: I remember feeling so proud. My favourite toy was... I loved / I was scared of..."
+     ],
+     "q": "Que memória feliz da tua infância ainda te faz sorrir?",
+     "c": "Escreve um parágrafo curto sobre a tua infância com when I was, used to e um momento especial."
+    },
+    "pt_BR": {
+     "t": "Lembranças de infância",
+     "g": "Compartilhe lembranças da sua infância de forma natural.",
+     "p": [
+      "Comece pelo tempo: When I was a child, when I was seven, as a kid...",
+      "Hábitos com used to: We used to spend summers at my grandparents'. Momento único: Once, I fell in a river!",
+      "Sentimentos: I remember feeling so proud. My favourite toy was... I loved / I was scared of..."
+     ],
+     "q": "Que lembrança feliz da sua infância ainda faz você sorrir?",
+     "c": "Escreva um parágrafo curto sobre sua infância com when I was, used to e um momento especial."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "when I was a child",
+      "ex": "When I was a child, I lived near a forest."
+     },
+     {
+      "w": "as a kid",
+      "ex": "As a kid, I loved drawing animals."
+     },
+     {
+      "w": "I remember",
+      "ex": "I remember my first day at school very well."
+     },
+     {
+      "w": "my favourite toy",
+      "ex": "My favourite toy was a red bike."
+     },
+     {
+      "w": "grandparents",
+      "ex": "We used to visit my grandparents every Sunday."
+     },
+     {
+      "w": "once",
+      "ex": "Once, we saw dolphins from the boat!"
+     }
+    ],
+    "gram": "Childhood stories: used to for repeated habits, past simple for single events, I remember + -ing for memories (I remember playing...)."
+   }
+  },
+  {
+   "d": 143,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "School subjects and education",
+     "g": "Talk about school subjects and your school days.",
+     "p": [
+      "Subjects: maths, history, geography, science, art, PE (physical education), languages.",
+      "Stages: primary school, secondary school, university. I went to a small primary school.",
+      "Exams: take an exam, pass an exam, fail an exam, study for a test, get good marks."
+     ],
+     "q": "What was your favourite subject at school, and which one did you find difficult?",
+     "c": "Describe your school days in five sentences: subjects, a teacher, exams and a good memory."
+    },
+    "de": {
+     "t": "Schulfächer und Bildung",
+     "g": "Du sprichst über Schulfächer und deine Schulzeit.",
+     "p": [
+      "Fächer: maths, history, geography, science, art, PE (Sport), languages.",
+      "Stufen: primary school, secondary school, university. I went to a small primary school.",
+      "Prüfungen: take an exam (eine schreiben), pass, fail, study for a test, get good marks."
+     ],
+     "q": "Was war in der Schule dein Lieblingsfach, und welches fandest du schwer?",
+     "c": "Beschreib deine Schulzeit in fünf Sätzen: Fächer, eine Lehrkraft, Prüfungen, eine schöne Erinnerung."
+    },
+    "es": {
+     "t": "Asignaturas y educación",
+     "g": "Habla de asignaturas y de tus años de colegio.",
+     "p": [
+      "Asignaturas: maths, history, geography, science, art, PE (educación física), languages.",
+      "Etapas: primary school, secondary school, university. I went to a small primary school.",
+      "Exámenes: take an exam (hacerlo), pass (aprobar), fail (suspender), study for a test, get good marks."
+     ],
+     "q": "¿Cuál era tu asignatura favorita en el colegio y cuál te costaba más?",
+     "c": "Describe tus años de colegio en cinco frases: asignaturas, un profesor, exámenes y un buen recuerdo."
+    },
+    "fr": {
+     "t": "Matières scolaires et études",
+     "g": "Parler des matières et de tes années d'école.",
+     "p": [
+      "Matières : maths, history, geography, science, art, PE (sport), languages.",
+      "Étapes : primary school, secondary school, university. I went to a small primary school.",
+      "Examens : take an exam (passer), pass (réussir), fail (rater), study for a test, get good marks."
+     ],
+     "q": "Quelle était ta matière préférée à l'école, et laquelle trouvais-tu difficile ?",
+     "c": "Décris tes années d'école en cinq phrases : matières, un prof, examens et un bon souvenir."
+    },
+    "it": {
+     "t": "Materie scolastiche e istruzione",
+     "g": "Parla delle materie e dei tuoi anni di scuola.",
+     "p": [
+      "Materie: maths, history, geography, science, art, PE (educazione fisica), languages.",
+      "Livelli: primary school, secondary school, university. I went to a small primary school.",
+      "Esami: take an exam (sostenere), pass (superare), fail (essere bocciato), study for a test, get good marks."
+     ],
+     "q": "Qual era la tua materia preferita a scuola, e quale trovavi difficile?",
+     "c": "Descrivi i tuoi anni di scuola in cinque frasi: materie, un insegnante, esami e un bel ricordo."
+    },
+    "pt": {
+     "t": "Disciplinas e educação",
+     "g": "Fala das disciplinas e dos teus tempos de escola.",
+     "p": [
+      "Disciplinas: maths, history, geography, science, art, PE (educação física), languages.",
+      "Etapas: primary school, secondary school, university. I went to a small primary school.",
+      "Exames: take an exam (fazer), pass (passar), fail (chumbar), study for a test, get good marks."
+     ],
+     "q": "Qual era a tua disciplina preferida na escola, e qual achavas difícil?",
+     "c": "Descreve os teus tempos de escola em cinco frases: disciplinas, um professor, exames e uma boa memória."
+    },
+    "pt_BR": {
+     "t": "Matérias escolares e educação",
+     "g": "Fale das matérias e da sua época de escola.",
+     "p": [
+      "Matérias: maths, history, geography, science, art, PE (educação física), languages.",
+      "Etapas: primary school, secondary school, university. I went to a small primary school.",
+      "Provas: take an exam (fazer), pass (passar), fail (reprovar), study for a test, get good marks."
+     ],
+     "q": "Qual era sua matéria favorita na escola, e qual você achava difícil?",
+     "c": "Descreva sua época de escola em cinco frases: matérias, um professor, provas e uma boa lembrança."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "maths",
+      "ex": "Maths was my favourite subject at school."
+     },
+     {
+      "w": "history",
+      "ex": "We learned about ancient Rome in history."
+     },
+     {
+      "w": "primary school",
+      "ex": "My primary school was just around the corner."
+     },
+     {
+      "w": "take an exam",
+      "ex": "I'm taking an English exam next month."
+     },
+     {
+      "w": "pass",
+      "ex": "I studied hard and passed all my exams."
+     },
+     {
+      "w": "get good marks",
+      "ex": "She always got good marks in science."
+     }
+    ],
+    "gram": "Take an exam = do it; pass = succeed; fail = not succeed. School subjects have no article: I like history (not the history)."
+   }
+  },
+  {
+   "d": 144,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Verbs + to or -ing",
+     "g": "Know which verbs are followed by to + verb and which by -ing.",
+     "p": [
+      "Verb + to: want, decide, hope, plan, need, learn, would like. I've decided to learn Spanish.",
+      "Verb + -ing: enjoy, finish, mind, avoid, practise, suggest. I enjoy cooking.",
+      "Like, love, hate and start can take both: I love swimming = I love to swim."
+     ],
+     "q": "What do you enjoy doing in your free time, and what do you want to learn next?",
+     "c": "Write six sentences about yourself: three with to-verbs (want, hope, plan) and three with -ing verbs."
+    },
+    "de": {
+     "t": "Verben + to oder -ing",
+     "g": "Du weißt, welche Verben to + Verb und welche -ing nach sich ziehen.",
+     "p": [
+      "Verb + to: want, decide, hope, plan, need, learn, would like. I've decided to learn Spanish.",
+      "Verb + -ing: enjoy, finish, mind, avoid, practise, suggest. I enjoy cooking.",
+      "Like, love, hate und start gehen mit beidem: I love swimming = I love to swim."
+     ],
+     "q": "Was machst du gern in deiner Freizeit, und was möchtest du als Nächstes lernen?",
+     "c": "Schreib sechs Sätze über dich: drei mit to-Verben (want, hope, plan) und drei mit -ing-Verben."
+    },
+    "es": {
+     "t": "Verbos + to o -ing",
+     "g": "Aprende qué verbos van con to + verbo y cuáles con -ing.",
+     "p": [
+      "Verbo + to: want, decide, hope, plan, need, learn, would like. I've decided to learn Spanish.",
+      "Verbo + -ing: enjoy, finish, mind, avoid, practise, suggest. I enjoy cooking.",
+      "Like, love, hate y start admiten los dos: I love swimming = I love to swim."
+     ],
+     "q": "¿Qué disfrutas haciendo en tu tiempo libre y qué quieres aprender después?",
+     "c": "Escribe seis frases sobre ti: tres con verbos + to (want, hope, plan) y tres con verbos + -ing."
+    },
+    "fr": {
+     "t": "Verbes + to ou -ing",
+     "g": "Savoir quels verbes sont suivis de to + verbe et lesquels de -ing.",
+     "p": [
+      "Verbe + to : want, decide, hope, plan, need, learn, would like. I've decided to learn Spanish.",
+      "Verbe + -ing : enjoy, finish, mind, avoid, practise, suggest. I enjoy cooking.",
+      "Like, love, hate et start acceptent les deux : I love swimming = I love to swim."
+     ],
+     "q": "Qu'aimes-tu faire pendant ton temps libre, et que veux-tu apprendre ensuite ?",
+     "c": "Écris six phrases sur toi : trois avec des verbes + to (want, hope, plan) et trois avec -ing."
+    },
+    "it": {
+     "t": "Verbi + to o -ing",
+     "g": "Impara quali verbi vogliono to + verbo e quali -ing.",
+     "p": [
+      "Verbo + to: want, decide, hope, plan, need, learn, would like. I've decided to learn Spanish.",
+      "Verbo + -ing: enjoy, finish, mind, avoid, practise, suggest. I enjoy cooking.",
+      "Like, love, hate e start accettano entrambi: I love swimming = I love to swim."
+     ],
+     "q": "Cosa ti piace fare nel tempo libero e cosa vuoi imparare dopo?",
+     "c": "Scrivi sei frasi su di te: tre con verbi + to (want, hope, plan) e tre con verbi + -ing."
+    },
+    "pt": {
+     "t": "Verbos + to ou -ing",
+     "g": "Fica a saber que verbos levam to + verbo e quais levam -ing.",
+     "p": [
+      "Verbo + to: want, decide, hope, plan, need, learn, would like. I've decided to learn Spanish.",
+      "Verbo + -ing: enjoy, finish, mind, avoid, practise, suggest. I enjoy cooking.",
+      "Like, love, hate e start aceitam os dois: I love swimming = I love to swim."
+     ],
+     "q": "O que gostas de fazer nos tempos livres e o que queres aprender a seguir?",
+     "c": "Escreve seis frases sobre ti: três com verbos + to (want, hope, plan) e três com verbos + -ing."
+    },
+    "pt_BR": {
+     "t": "Verbos + to ou -ing",
+     "g": "Saiba quais verbos pedem to + verbo e quais pedem -ing.",
+     "p": [
+      "Verbo + to: want, decide, hope, plan, need, learn, would like. I've decided to learn Spanish.",
+      "Verbo + -ing: enjoy, finish, mind, avoid, practise, suggest. I enjoy cooking.",
+      "Like, love, hate e start aceitam os dois: I love swimming = I love to swim."
+     ],
+     "q": "O que você curte fazer no tempo livre, e o que quer aprender depois?",
+     "c": "Escreva seis frases sobre você: três com verbos + to (want, hope, plan) e três com verbos + -ing."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "want to",
+      "ex": "I want to visit Japan one day."
+     },
+     {
+      "w": "decide to",
+      "ex": "We decided to take the train."
+     },
+     {
+      "w": "hope to",
+      "ex": "I hope to see you again soon."
+     },
+     {
+      "w": "enjoy -ing",
+      "ex": "I really enjoy reading in the park."
+     },
+     {
+      "w": "finish -ing",
+      "ex": "Have you finished writing your email?"
+     },
+     {
+      "w": "avoid -ing",
+      "ex": "I try to avoid eating late at night."
+     }
+    ],
+    "gram": "want/decide/hope/plan/need + to + verb. enjoy/finish/mind/avoid/practise + verb-ing. like/love/hate/start + either."
+   }
+  },
+  {
+   "d": 145,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Verbs + object + to",
+     "g": "Ask and want other people to do things with verb + object + to.",
+     "p": [
+      "Pattern: verb + person + to + verb. She asked me to help. I want you to come.",
+      "Common verbs: ask, tell, want, would like, help, remind, invite, teach.",
+      "Use object pronouns: me, you, him, her, us, them. Not: I want that you come."
+     ],
+     "q": "What did someone ask you to do this week, and what would you like a friend to do for you?",
+     "c": "Write five sentences with ask, tell, want, remind and invite + someone + to."
+    },
+    "de": {
+     "t": "Verben + Objekt + to",
+     "g": "Du sagst, was andere tun sollen: Verb + Objekt + to.",
+     "p": [
+      "Muster: Verb + Person + to + Verb. She asked me to help. I want you to come.",
+      "Häufige Verben: ask, tell, want, would like, help, remind, invite, teach.",
+      "Mit Objektpronomen: me, you, him, her, us, them. Nicht: I want that you come."
+     ],
+     "q": "Worum hat dich diese Woche jemand gebeten, und was möchtest du, dass ein Freund für dich tut?",
+     "c": "Schreib fünf Sätze mit ask, tell, want, remind und invite + jemand + to."
+    },
+    "es": {
+     "t": "Verbos + objeto + to",
+     "g": "Pide y di lo que quieres que hagan otros con verbo + objeto + to.",
+     "p": [
+      "Estructura: verbo + persona + to + verbo. She asked me to help. I want you to come.",
+      "Verbos frecuentes: ask, tell, want, would like, help, remind, invite, teach.",
+      "Con pronombres objeto: me, you, him, her, us, them. No: I want that you come."
+     ],
+     "q": "¿Qué te pidió alguien que hicieras esta semana y qué te gustaría que un amigo hiciera por ti?",
+     "c": "Escribe cinco frases con ask, tell, want, remind e invite + alguien + to."
+    },
+    "fr": {
+     "t": "Verbes + complément + to",
+     "g": "Demander et vouloir que d'autres fassent quelque chose : verbe + complément + to.",
+     "p": [
+      "Structure : verbe + personne + to + verbe. She asked me to help. I want you to come.",
+      "Verbes courants : ask, tell, want, would like, help, remind, invite, teach.",
+      "Avec les pronoms compléments : me, you, him, her, us, them. Pas : I want that you come."
+     ],
+     "q": "Qu'est-ce qu'on t'a demandé de faire cette semaine, et que voudrais-tu qu'un ami fasse pour toi ?",
+     "c": "Écris cinq phrases avec ask, tell, want, remind et invite + quelqu'un + to."
+    },
+    "it": {
+     "t": "Verbi + oggetto + to",
+     "g": "Chiedi e di' cosa vuoi che facciano gli altri con verbo + oggetto + to.",
+     "p": [
+      "Struttura: verbo + persona + to + verbo. She asked me to help. I want you to come.",
+      "Verbi comuni: ask, tell, want, would like, help, remind, invite, teach.",
+      "Con i pronomi oggetto: me, you, him, her, us, them. Non: I want that you come."
+     ],
+     "q": "Cosa ti ha chiesto di fare qualcuno questa settimana, e cosa vorresti che un amico facesse per te?",
+     "c": "Scrivi cinque frasi con ask, tell, want, remind e invite + qualcuno + to."
+    },
+    "pt": {
+     "t": "Verbos + objeto + to",
+     "g": "Pede e diz o que queres que os outros façam com verbo + objeto + to.",
+     "p": [
+      "Estrutura: verbo + pessoa + to + verbo. She asked me to help. I want you to come.",
+      "Verbos comuns: ask, tell, want, would like, help, remind, invite, teach.",
+      "Com pronomes de objeto: me, you, him, her, us, them. Não: I want that you come."
+     ],
+     "q": "O que é que alguém te pediu para fazer esta semana, e o que gostavas que um amigo fizesse por ti?",
+     "c": "Escreve cinco frases com ask, tell, want, remind e invite + alguém + to."
+    },
+    "pt_BR": {
+     "t": "Verbos + objeto + to",
+     "g": "Peça e diga o que quer que os outros façam com verbo + objeto + to.",
+     "p": [
+      "Estrutura: verbo + pessoa + to + verbo. She asked me to help. I want you to come.",
+      "Verbos comuns: ask, tell, want, would like, help, remind, invite, teach.",
+      "Com pronomes objeto: me, you, him, her, us, them. Não: I want that you come."
+     ],
+     "q": "O que alguém pediu para você fazer esta semana, e o que você gostaria que um amigo fizesse por você?",
+     "c": "Escreva cinco frases com ask, tell, want, remind e invite + alguém + to."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ask someone to",
+      "ex": "Can you ask Tom to call me?"
+     },
+     {
+      "w": "want someone to",
+      "ex": "My mum wants me to study medicine."
+     },
+     {
+      "w": "tell someone to",
+      "ex": "The doctor told him to rest."
+     },
+     {
+      "w": "remind someone to",
+      "ex": "Please remind me to buy milk."
+     },
+     {
+      "w": "invite someone to",
+      "ex": "They invited us to join them for dinner."
+     },
+     {
+      "w": "help someone to",
+      "ex": "My friend helped me to move house."
+     }
+    ],
+    "gram": "verb + object + to + base verb: I want you to stay (not I want that you stay). Negative: She asked me not to be late."
+   }
+  },
+  {
+   "d": 146,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Technology vocabulary",
+     "g": "Talk about your devices and everyday tech problems.",
+     "p": [
+      "Devices and parts: screen, keyboard, battery, charger, headphones, laptop, tablet.",
+      "Actions: download, update, install, charge, restart, save, delete.",
+      "Problems: My battery is dead. The screen is frozen. I forgot my password."
+     ],
+     "q": "Which device do you use most every day, and what do you use it for?",
+     "c": "Describe a small tech problem you had and how you fixed it, using four tech words."
+    },
+    "de": {
+     "t": "Technikwortschatz",
+     "g": "Du sprichst über deine Geräte und kleine Technikprobleme.",
+     "p": [
+      "Geräte und Teile: screen, keyboard, battery, charger, headphones, laptop, tablet.",
+      "Aktionen: download, update, install, charge, restart, save, delete.",
+      "Probleme: My battery is dead. The screen is frozen. I forgot my password."
+     ],
+     "q": "Welches Gerät benutzt du täglich am meisten, und wofür?",
+     "c": "Beschreib ein kleines Technikproblem und wie du es gelöst hast, mit vier Technikwörtern."
+    },
+    "es": {
+     "t": "Vocabulario de tecnología",
+     "g": "Habla de tus aparatos y de problemas técnicos cotidianos.",
+     "p": [
+      "Aparatos y partes: screen, keyboard, battery, charger, headphones, laptop, tablet.",
+      "Acciones: download, update, install, charge, restart, save, delete.",
+      "Problemas: My battery is dead. The screen is frozen. I forgot my password."
+     ],
+     "q": "¿Qué aparato usas más cada día y para qué?",
+     "c": "Describe un pequeño problema técnico que tuviste y cómo lo solucionaste, con cuatro palabras de tecnología."
+    },
+    "fr": {
+     "t": "Vocabulaire de la technologie",
+     "g": "Parler de tes appareils et des petits soucis techniques du quotidien.",
+     "p": [
+      "Appareils et éléments : screen, keyboard, battery, charger, headphones, laptop, tablet.",
+      "Actions : download, update, install, charge, restart, save, delete.",
+      "Problèmes : My battery is dead. The screen is frozen. I forgot my password."
+     ],
+     "q": "Quel appareil utilises-tu le plus chaque jour, et pour quoi faire ?",
+     "c": "Décris un petit souci technique et comment tu l'as réglé, avec quatre mots de technologie."
+    },
+    "it": {
+     "t": "Lessico della tecnologia",
+     "g": "Parla dei tuoi dispositivi e dei piccoli problemi tecnici quotidiani.",
+     "p": [
+      "Dispositivi e parti: screen, keyboard, battery, charger, headphones, laptop, tablet.",
+      "Azioni: download, update, install, charge, restart, save, delete.",
+      "Problemi: My battery is dead. The screen is frozen. I forgot my password."
+     ],
+     "q": "Quale dispositivo usi di più ogni giorno, e per cosa?",
+     "c": "Descrivi un piccolo problema tecnico e come l'hai risolto, usando quattro parole di tecnologia."
+    },
+    "pt": {
+     "t": "Vocabulário de tecnologia",
+     "g": "Fala dos teus aparelhos e de pequenos problemas técnicos do dia a dia.",
+     "p": [
+      "Aparelhos e partes: screen, keyboard, battery, charger, headphones, laptop, tablet.",
+      "Ações: download, update, install, charge, restart, save, delete.",
+      "Problemas: My battery is dead. The screen is frozen. I forgot my password."
+     ],
+     "q": "Que aparelho usas mais todos os dias, e para quê?",
+     "c": "Descreve um pequeno problema técnico que tiveste e como o resolveste, com quatro palavras de tecnologia."
+    },
+    "pt_BR": {
+     "t": "Vocabulário de tecnologia",
+     "g": "Fale dos seus aparelhos e de pequenos problemas técnicos do dia a dia.",
+     "p": [
+      "Aparelhos e partes: screen, keyboard, battery, charger, headphones, laptop, tablet.",
+      "Ações: download, update, install, charge, restart, save, delete.",
+      "Problemas: My battery is dead. The screen is frozen. I forgot my password."
+     ],
+     "q": "Qual aparelho você usa mais todo dia, e para quê?",
+     "c": "Descreva um pequeno problema técnico que você teve e como resolveu, com quatro palavras de tecnologia."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "download",
+      "ex": "I downloaded a new language app yesterday."
+     },
+     {
+      "w": "update",
+      "ex": "My phone needs an update tonight."
+     },
+     {
+      "w": "password",
+      "ex": "Choose a strong password with numbers."
+     },
+     {
+      "w": "screen",
+      "ex": "The screen on my old phone is cracked."
+     },
+     {
+      "w": "battery",
+      "ex": "My battery is almost dead. Can I charge it here?"
+     },
+     {
+      "w": "charger",
+      "ex": "Have you got a charger I could borrow?"
+     }
+    ],
+    "gram": "Tech verbs are regular in the past: downloaded, updated, installed. My battery is dead/low = it has no/little power."
+   }
+  },
+  {
+   "d": 147,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Using apps and the internet",
+     "g": "Explain how you use apps and the internet.",
+     "p": [
+      "Getting started: sign up for an account, log in, log out, enter your email.",
+      "Activities: search for information, share a photo, post a comment, follow someone.",
+      "Habits: I usually check my messages in the morning. I'm always looking for new podcasts."
+     ],
+     "q": "Which apps do you use most, and what do you use them for?",
+     "c": "Write five sentences about your online habits using sign up, log in, search for, share and post."
+    },
+    "de": {
+     "t": "Apps und Internet nutzen",
+     "g": "Du erklärst, wie du Apps und das Internet nutzt.",
+     "p": [
+      "Einstieg: sign up for an account, log in, log out, enter your email.",
+      "Aktivitäten: search for information, share a photo, post a comment, follow someone.",
+      "Gewohnheiten: I usually check my messages in the morning. I'm always looking for new podcasts."
+     ],
+     "q": "Welche Apps benutzt du am meisten, und wofür?",
+     "c": "Schreib fünf Sätze über deine Online-Gewohnheiten mit sign up, log in, search for, share und post."
+    },
+    "es": {
+     "t": "Usar apps e internet",
+     "g": "Explica cómo usas las apps e internet.",
+     "p": [
+      "Empezar: sign up for an account, log in, log out, enter your email.",
+      "Actividades: search for information, share a photo, post a comment, follow someone.",
+      "Hábitos: I usually check my messages in the morning. I'm always looking for new podcasts."
+     ],
+     "q": "¿Qué apps usas más y para qué?",
+     "c": "Escribe cinco frases sobre tus hábitos en internet con sign up, log in, search for, share y post."
+    },
+    "fr": {
+     "t": "Utiliser les applis et internet",
+     "g": "Expliquer comment tu utilises les applis et internet.",
+     "p": [
+      "Pour commencer : sign up for an account, log in, log out, enter your email.",
+      "Activités : search for information, share a photo, post a comment, follow someone.",
+      "Habitudes : I usually check my messages in the morning. I'm always looking for new podcasts."
+     ],
+     "q": "Quelles applis utilises-tu le plus, et pour quoi faire ?",
+     "c": "Écris cinq phrases sur tes habitudes en ligne avec sign up, log in, search for, share et post."
+    },
+    "it": {
+     "t": "Usare app e internet",
+     "g": "Spiega come usi le app e internet.",
+     "p": [
+      "Per iniziare: sign up for an account, log in, log out, enter your email.",
+      "Attività: search for information, share a photo, post a comment, follow someone.",
+      "Abitudini: I usually check my messages in the morning. I'm always looking for new podcasts."
+     ],
+     "q": "Quali app usi di più e per cosa?",
+     "c": "Scrivi cinque frasi sulle tue abitudini online con sign up, log in, search for, share e post."
+    },
+    "pt": {
+     "t": "Usar apps e a internet",
+     "g": "Explica como usas as apps e a internet.",
+     "p": [
+      "Para começar: sign up for an account, log in, log out, enter your email.",
+      "Atividades: search for information, share a photo, post a comment, follow someone.",
+      "Hábitos: I usually check my messages in the morning. I'm always looking for new podcasts."
+     ],
+     "q": "Que apps usas mais, e para quê?",
+     "c": "Escreve cinco frases sobre os teus hábitos online com sign up, log in, search for, share e post."
+    },
+    "pt_BR": {
+     "t": "Usando apps e a internet",
+     "g": "Explique como você usa os apps e a internet.",
+     "p": [
+      "Para começar: sign up for an account, log in, log out, enter your email.",
+      "Atividades: search for information, share a photo, post a comment, follow someone.",
+      "Hábitos: I usually check my messages in the morning. I'm always looking for new podcasts."
+     ],
+     "q": "Quais apps você mais usa, e para quê?",
+     "c": "Escreva cinco frases sobre seus hábitos online com sign up, log in, search for, share e post."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "sign up",
+      "ex": "I signed up for a free language course."
+     },
+     {
+      "w": "log in",
+      "ex": "I can't log in. I think my password is wrong."
+     },
+     {
+      "w": "search for",
+      "ex": "I searched for a good recipe online."
+     },
+     {
+      "w": "share",
+      "ex": "She shared some lovely photos from her trip."
+     },
+     {
+      "w": "post",
+      "ex": "He posts a new video every week."
+     },
+     {
+      "w": "follow",
+      "ex": "I follow a few English teachers online."
+     }
+    ],
+    "gram": "Internet phrasal verbs: sign up for, log in/out, search for. Use the present simple for routines: I check my email every day."
+   }
+  },
+  {
+   "d": 148,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Writing a friendly email",
+     "g": "Write a warm, well-organised email to a friend.",
+     "p": [
+      "Openings: Hi Sam, / Hello Maria, / Thanks for your email! / It was great to hear from you.",
+      "Middle: share news (I've just started a new course), then ask questions (How's your new job?).",
+      "Closings: Hope to hear from you soon. / Best wishes, / Take care, / Talk soon,"
+     ],
+     "q": "Who would you like to write a friendly email to, and what news would you share?",
+     "c": "Write a short email to a friend: an opening, two pieces of news, one question and a closing."
+    },
+    "de": {
+     "t": "Eine freundliche E-Mail schreiben",
+     "g": "Du schreibst einer Freundin oder einem Freund eine herzliche, klar aufgebaute E-Mail.",
+     "p": [
+      "Anfang: Hi Sam, / Hello Maria, / Thanks for your email! / It was great to hear from you.",
+      "Mitte: Neuigkeiten (I've just started a new course), dann Fragen (How's your new job?).",
+      "Schluss: Hope to hear from you soon. / Best wishes, / Take care, / Talk soon,"
+     ],
+     "q": "Wem würdest du gern eine freundliche E-Mail schreiben, und welche Neuigkeiten hättest du?",
+     "c": "Schreib eine kurze Mail an einen Freund: Anfang, zwei Neuigkeiten, eine Frage und ein Schluss."
+    },
+    "es": {
+     "t": "Escribir un email amistoso",
+     "g": "Escribe un email cálido y bien organizado a un amigo.",
+     "p": [
+      "Saludos: Hi Sam, / Hello Maria, / Thanks for your email! / It was great to hear from you.",
+      "Cuerpo: cuenta novedades (I've just started a new course) y pregunta (How's your new job?).",
+      "Despedidas: Hope to hear from you soon. / Best wishes, / Take care, / Talk soon,"
+     ],
+     "q": "¿A quién te gustaría escribir un email amistoso y qué novedades le contarías?",
+     "c": "Escribe un email corto a un amigo: saludo, dos novedades, una pregunta y una despedida."
+    },
+    "fr": {
+     "t": "Écrire un e-mail amical",
+     "g": "Écrire un e-mail chaleureux et bien organisé à un ami.",
+     "p": [
+      "Début : Hi Sam, / Hello Maria, / Thanks for your email! / It was great to hear from you.",
+      "Milieu : des nouvelles (I've just started a new course), puis des questions (How's your new job?).",
+      "Fin : Hope to hear from you soon. / Best wishes, / Take care, / Talk soon,"
+     ],
+     "q": "À qui aimerais-tu écrire un e-mail amical, et quelles nouvelles partagerais-tu ?",
+     "c": "Écris un court e-mail à un ami : un début, deux nouvelles, une question et une formule de fin."
+    },
+    "it": {
+     "t": "Scrivere un'email amichevole",
+     "g": "Scrivi un'email calorosa e ben organizzata a un amico.",
+     "p": [
+      "Apertura: Hi Sam, / Hello Maria, / Thanks for your email! / It was great to hear from you.",
+      "Corpo: racconta novità (I've just started a new course) e fai domande (How's your new job?).",
+      "Chiusura: Hope to hear from you soon. / Best wishes, / Take care, / Talk soon,"
+     ],
+     "q": "A chi ti piacerebbe scrivere un'email amichevole, e quali novità racconteresti?",
+     "c": "Scrivi una breve email a un amico: apertura, due novità, una domanda e una chiusura."
+    },
+    "pt": {
+     "t": "Escrever um email amigável",
+     "g": "Escreve um email caloroso e bem organizado a um amigo.",
+     "p": [
+      "Início: Hi Sam, / Hello Maria, / Thanks for your email! / It was great to hear from you.",
+      "Meio: conta novidades (I've just started a new course) e faz perguntas (How's your new job?).",
+      "Fim: Hope to hear from you soon. / Best wishes, / Take care, / Talk soon,"
+     ],
+     "q": "A quem gostavas de escrever um email amigável, e que novidades contavas?",
+     "c": "Escreve um email curto a um amigo: início, duas novidades, uma pergunta e uma despedida."
+    },
+    "pt_BR": {
+     "t": "Escrevendo um e-mail amigável",
+     "g": "Escreva um e-mail caloroso e bem organizado para um amigo.",
+     "p": [
+      "Abertura: Hi Sam, / Hello Maria, / Thanks for your email! / It was great to hear from you.",
+      "Meio: conte novidades (I've just started a new course) e faça perguntas (How's your new job?).",
+      "Despedida: Hope to hear from you soon. / Best wishes, / Take care, / Talk soon,"
+     ],
+     "q": "Para quem você gostaria de escrever um e-mail amigável, e que novidades contaria?",
+     "c": "Escreva um e-mail curto para um amigo: abertura, duas novidades, uma pergunta e uma despedida."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "thanks for your email",
+      "ex": "Thanks for your email. It made me smile!"
+     },
+     {
+      "w": "great to hear from you",
+      "ex": "It was great to hear from you."
+     },
+     {
+      "w": "I've just",
+      "ex": "I've just moved to a new flat."
+     },
+     {
+      "w": "how's",
+      "ex": "How's your family? How's the new job?"
+     },
+     {
+      "w": "best wishes",
+      "ex": "Best wishes, Anna"
+     },
+     {
+      "w": "talk soon",
+      "ex": "Can't wait to see you. Talk soon!"
+     }
+    ],
+    "gram": "Friendly emails use contractions (I'm, it's) and the present perfect for news: I've just started, we've booked."
+   }
+  },
+  {
+   "d": 149,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Formal and informal English",
+     "g": "Choose the right tone for friends, colleagues and strangers.",
+     "p": [
+      "Greetings: Hi / Hey (informal) vs Dear Mr Smith / Good morning (formal).",
+      "Requests: Can you...? (friends) vs Could you...? / Would you mind...? (polite, formal).",
+      "Thanks and endings: thanks, cheers, see you vs thank you very much, kind regards."
+     ],
+     "q": "Who do you usually speak formally to, and who informally?",
+     "c": "Write the same request twice: a text to a friend and a short formal email to a stranger."
+    },
+    "de": {
+     "t": "Formelles und informelles Englisch",
+     "g": "Du wählst den passenden Ton für Freunde, Kollegen und Fremde.",
+     "p": [
+      "Begrüßung: Hi / Hey (locker) vs Dear Mr Smith / Good morning (formell).",
+      "Bitten: Can you...? (Freunde) vs Could you...? / Would you mind...? (höflich, formell).",
+      "Dank und Schluss: thanks, cheers, see you vs thank you very much, kind regards."
+     ],
+     "q": "Mit wem sprichst du normalerweise formell und mit wem locker?",
+     "c": "Schreib dieselbe Bitte zweimal: als Nachricht an einen Freund und als formelle Mail an eine fremde Person."
+    },
+    "es": {
+     "t": "Inglés formal e informal",
+     "g": "Elige el tono adecuado para amigos, compañeros y desconocidos.",
+     "p": [
+      "Saludos: Hi / Hey (informal) vs Dear Mr Smith / Good morning (formal).",
+      "Peticiones: Can you...? (amigos) vs Could you...? / Would you mind...? (educado, formal).",
+      "Gracias y despedidas: thanks, cheers, see you vs thank you very much, kind regards."
+     ],
+     "q": "¿Con quién hablas normalmente de manera formal y con quién de manera informal?",
+     "c": "Escribe la misma petición dos veces: un mensaje a un amigo y un email formal a un desconocido."
+    },
+    "fr": {
+     "t": "Anglais formel et informel",
+     "g": "Choisir le bon ton avec des amis, des collègues et des inconnus.",
+     "p": [
+      "Salutations : Hi / Hey (familier) vs Dear Mr Smith / Good morning (formel).",
+      "Demandes : Can you...? (amis) vs Could you...? / Would you mind...? (poli, formel).",
+      "Remerciements et fins : thanks, cheers, see you vs thank you very much, kind regards."
+     ],
+     "q": "À qui parles-tu habituellement de façon formelle, et à qui de façon familière ?",
+     "c": "Écris la même demande deux fois : un message à un ami et un court e-mail formel à un inconnu."
+    },
+    "it": {
+     "t": "Inglese formale e informale",
+     "g": "Scegli il tono giusto con amici, colleghi e sconosciuti.",
+     "p": [
+      "Saluti: Hi / Hey (informale) vs Dear Mr Smith / Good morning (formale).",
+      "Richieste: Can you...? (amici) vs Could you...? / Would you mind...? (cortese, formale).",
+      "Grazie e chiusure: thanks, cheers, see you vs thank you very much, kind regards."
+     ],
+     "q": "Con chi parli di solito in modo formale e con chi in modo informale?",
+     "c": "Scrivi la stessa richiesta due volte: un messaggio a un amico e una breve email formale a uno sconosciuto."
+    },
+    "pt": {
+     "t": "Inglês formal e informal",
+     "g": "Escolhe o tom certo para amigos, colegas e desconhecidos.",
+     "p": [
+      "Cumprimentos: Hi / Hey (informal) vs Dear Mr Smith / Good morning (formal).",
+      "Pedidos: Can you...? (amigos) vs Could you...? / Would you mind...? (educado, formal).",
+      "Agradecimentos e despedidas: thanks, cheers, see you vs thank you very much, kind regards."
+     ],
+     "q": "Com quem falas normalmente de forma formal e com quem de forma informal?",
+     "c": "Escreve o mesmo pedido duas vezes: uma mensagem a um amigo e um email formal a um desconhecido."
+    },
+    "pt_BR": {
+     "t": "Inglês formal e informal",
+     "g": "Escolha o tom certo para amigos, colegas e desconhecidos.",
+     "p": [
+      "Cumprimentos: Hi / Hey (informal) vs Dear Mr Smith / Good morning (formal).",
+      "Pedidos: Can you...? (amigos) vs Could you...? / Would you mind...? (educado, formal).",
+      "Agradecimentos e despedidas: thanks, cheers, see you vs thank you very much, kind regards."
+     ],
+     "q": "Com quem você costuma falar de forma formal, e com quem de forma informal?",
+     "c": "Escreva o mesmo pedido duas vezes: uma mensagem para um amigo e um e-mail formal para um desconhecido."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Dear",
+      "ex": "Dear Ms Taylor, thank you for your reply."
+     },
+     {
+      "w": "Could you...?",
+      "ex": "Could you send me the details, please?"
+     },
+     {
+      "w": "Would you mind...?",
+      "ex": "Would you mind closing the door?"
+     },
+     {
+      "w": "kind regards",
+      "ex": "Kind regards, Pedro Lima"
+     },
+     {
+      "w": "cheers",
+      "ex": "Cheers for the help, mate!"
+     },
+     {
+      "w": "I'm writing to",
+      "ex": "I'm writing to ask about your English courses."
+     }
+    ],
+    "gram": "Formal English avoids slang and often contractions, and uses could/would for requests. Informal English uses can and short forms."
+   }
+  },
+  {
+   "d": 150,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Review: plans, rules and memories",
+     "g": "Bring together conditionals, relative clauses, used to and travel English.",
+     "p": [
+      "Future: If it rains, we'll stay in. I'll call you when I arrive. I won't go unless you come.",
+      "Details: the friend who helped me, the hotel where we stayed, the man whose bag was lost.",
+      "Memories: I used to travel a lot. Travel: Is breakfast included? My flight was delayed."
+     ],
+     "q": "Tell me about a trip you used to take, the place where you stayed and what you'll do if you go back.",
+     "c": "Write a short chat with a friend that uses if, when, who, where and used to at least once each."
+    },
+    "de": {
+     "t": "Rückblick: Pläne, Regeln und Erinnerungen",
+     "g": "Du verbindest Bedingungssätze, Relativsätze, used to und Reiseenglisch.",
+     "p": [
+      "Zukunft: If it rains, we'll stay in. I'll call you when I arrive. I won't go unless you come.",
+      "Details: the friend who helped me, the hotel where we stayed, the man whose bag was lost.",
+      "Erinnerungen: I used to travel a lot. Reise: Is breakfast included? My flight was delayed."
+     ],
+     "q": "Erzähl von einer Reise, die du früher gemacht hast, wo du gewohnt hast und was du tust, wenn du zurückkehrst.",
+     "c": "Schreib einen kurzen Chat mit einem Freund, der if, when, who, where und used to je einmal enthält."
+    },
+    "es": {
+     "t": "Repaso: planes, normas y recuerdos",
+     "g": "Junta condicionales, oraciones de relativo, used to e inglés de viaje.",
+     "p": [
+      "Futuro: If it rains, we'll stay in. I'll call you when I arrive. I won't go unless you come.",
+      "Detalles: the friend who helped me, the hotel where we stayed, the man whose bag was lost.",
+      "Recuerdos: I used to travel a lot. Viaje: Is breakfast included? My flight was delayed."
+     ],
+     "q": "Háblame de un viaje que solías hacer, el lugar donde te alojabas y qué harás si vuelves.",
+     "c": "Escribe un chat corto con un amigo que use if, when, who, where y used to al menos una vez."
+    },
+    "fr": {
+     "t": "Révision : projets, règles et souvenirs",
+     "g": "Réunir conditionnelles, relatives, used to et anglais du voyage.",
+     "p": [
+      "Futur : If it rains, we'll stay in. I'll call you when I arrive. I won't go unless you come.",
+      "Détails : the friend who helped me, the hotel where we stayed, the man whose bag was lost.",
+      "Souvenirs : I used to travel a lot. Voyage : Is breakfast included? My flight was delayed."
+     ],
+     "q": "Parle-moi d'un voyage que tu faisais souvent, de l'endroit où tu logeais et de ce que tu feras si tu y retournes.",
+     "c": "Écris un court échange avec un ami qui utilise if, when, who, where et used to au moins une fois."
+    },
+    "it": {
+     "t": "Ripasso: piani, regole e ricordi",
+     "g": "Metti insieme condizionali, relative, used to e inglese da viaggio.",
+     "p": [
+      "Futuro: If it rains, we'll stay in. I'll call you when I arrive. I won't go unless you come.",
+      "Dettagli: the friend who helped me, the hotel where we stayed, the man whose bag was lost.",
+      "Ricordi: I used to travel a lot. Viaggio: Is breakfast included? My flight was delayed."
+     ],
+     "q": "Raccontami un viaggio che facevi spesso, il posto dove alloggiavi e cosa farai se ci torni.",
+     "c": "Scrivi una breve chat con un amico che usi if, when, who, where e used to almeno una volta."
+    },
+    "pt": {
+     "t": "Revisão: planos, regras e memórias",
+     "g": "Junta condicionais, orações relativas, used to e inglês de viagem.",
+     "p": [
+      "Futuro: If it rains, we'll stay in. I'll call you when I arrive. I won't go unless you come.",
+      "Pormenores: the friend who helped me, the hotel where we stayed, the man whose bag was lost.",
+      "Memórias: I used to travel a lot. Viagem: Is breakfast included? My flight was delayed."
+     ],
+     "q": "Fala-me de uma viagem que costumavas fazer, do sítio onde ficavas e do que vais fazer se voltares.",
+     "c": "Escreve uma conversa curta com um amigo que use if, when, who, where e used to pelo menos uma vez."
+    },
+    "pt_BR": {
+     "t": "Revisão: planos, regras e lembranças",
+     "g": "Junte condicionais, orações relativas, used to e inglês de viagem.",
+     "p": [
+      "Futuro: If it rains, we'll stay in. I'll call you when I arrive. I won't go unless you come.",
+      "Detalhes: the friend who helped me, the hotel where we stayed, the man whose bag was lost.",
+      "Lembranças: I used to travel a lot. Viagem: Is breakfast included? My flight was delayed."
+     ],
+     "q": "Me conte de uma viagem que você costumava fazer, onde ficava e o que vai fazer se voltar lá.",
+     "c": "Escreva um chat curto com um amigo que use if, when, who, where e used to pelo menos uma vez."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "if + present, will",
+      "ex": "If we leave early, we'll avoid the traffic."
+     },
+     {
+      "w": "as soon as",
+      "ex": "I'll send you the photos as soon as I get home."
+     },
+     {
+      "w": "who / which",
+      "ex": "That's the guide who showed us the old town."
+     },
+     {
+      "w": "where / whose",
+      "ex": "It's the village where my friend whose dad is a fisherman lives."
+     },
+     {
+      "w": "used to",
+      "ex": "We used to go camping every summer."
+     },
+     {
+      "w": "Is ... included?",
+      "ex": "Is breakfast included in the price?"
+     }
+    ],
+    "gram": "Review: first conditional, time clauses with present, relative pronouns who/which/that/where/whose, used to for past habits."
+   }
+  }
+ ]
+}

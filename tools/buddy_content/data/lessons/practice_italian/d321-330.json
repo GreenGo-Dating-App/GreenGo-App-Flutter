@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 321,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "The Italian language story",
+     "g": "Trace Italian from Latin to Tuscan to the standard language, and Dante's role.",
+     "p": [
+      "Italian comes from spoken Latin; over centuries many local vernaculars, i volgari, developed.",
+      "Dante wrote the Divina Commedia in Florentine vernacular; with Petrarca and Boccaccio he made Tuscan prestigious.",
+      "After 1861 only a minority spoke Italian daily; school, radio and TV spread the standard language."
+     ],
+     "q": "Did you know that many Italians also speak a regional dialect?",
+     "c": "Find three Italian words that come from Latin and look similar in your language."
+    },
+    "de": {
+     "t": "Die Geschichte der italienischen Sprache",
+     "g": "Du verfolgst das Italienische vom Latein über das Toskanische zur Standardsprache und Dantes Rolle.",
+     "p": [
+      "Italienisch stammt vom gesprochenen Latein; über Jahrhunderte entstanden viele lokale Volkssprachen, i volgari.",
+      "Dante schrieb die Divina Commedia im Florentiner Volgare; mit Petrarca und Boccaccio machte er das Toskanische angesehen.",
+      "Nach 1861 sprach nur eine Minderheit täglich Italienisch; Schule, Radio und Fernsehen verbreiteten die Standardsprache."
+     ],
+     "q": "Wusstest du, dass viele Italiener auch einen regionalen Dialekt sprechen?",
+     "c": "Finde drei italienische Wörter aus dem Latein, die in deiner Sprache ähnlich aussehen."
+    },
+    "es": {
+     "t": "La historia del italiano",
+     "g": "Seguir el italiano del latín al toscano y a la lengua estándar, y el papel de Dante.",
+     "p": [
+      "El italiano viene del latín hablado; con los siglos surgieron muchas lenguas locales, i volgari.",
+      "Dante escribió la Divina Commedia en florentino; con Petrarca y Boccaccio dio prestigio al toscano.",
+      "Tras 1861 solo una minoría hablaba italiano a diario; la escuela, la radio y la tele difundieron el estándar."
+     ],
+     "q": "¿Sabías que muchos italianos también hablan un dialecto regional?",
+     "c": "Busca tres palabras italianas que vengan del latín y se parezcan a palabras de tu idioma."
+    },
+    "fr": {
+     "t": "L'histoire de la langue italienne",
+     "g": "Suivre l'italien du latin au toscan puis à la langue standard, et le rôle de Dante.",
+     "p": [
+      "L'italien vient du latin parlé ; au fil des siècles sont nés de nombreux parlers locaux, i volgari.",
+      "Dante écrivit la Divina Commedia en florentin ; avec Pétrarque et Boccace, il rendit le toscan prestigieux.",
+      "Après 1861, seule une minorité parlait italien au quotidien ; l'école, la radio et la télé diffusèrent la langue standard."
+     ],
+     "q": "Savais-tu que beaucoup d'Italiens parlent aussi un dialecte régional ?",
+     "c": "Trouve trois mots italiens venus du latin qui ressemblent à des mots de ta langue."
+    },
+    "it": {
+     "t": "La storia della lingua italiana",
+     "g": "Seguire l'italiano dal latino al toscano fino alla lingua standard, e il ruolo di Dante.",
+     "p": [
+      "L'italiano deriva dal latino parlato; nei secoli nacquero molti volgari locali.",
+      "Dante scrisse la Divina Commedia in volgare fiorentino; con Petrarca e Boccaccio rese prestigioso il toscano.",
+      "Dopo il 1861 solo una minoranza parlava italiano ogni giorno; scuola, radio e TV diffusero la lingua standard."
+     ],
+     "q": "Sapevi che molti italiani parlano anche un dialetto regionale?",
+     "c": "Trova tre parole italiane che vengono dal latino e somigliano a parole della tua lingua."
+    },
+    "pt": {
+     "t": "A história da língua italiana",
+     "g": "Seguir o italiano do latim ao toscano e à língua padrão, e o papel de Dante.",
+     "p": [
+      "O italiano vem do latim falado; ao longo dos séculos surgiram muitos falares locais, i volgari.",
+      "Dante escreveu a Divina Commedia em florentino; com Petrarca e Boccaccio deu prestígio ao toscano.",
+      "Depois de 1861 só uma minoria falava italiano no dia a dia; a escola, a rádio e a TV espalharam a língua padrão."
+     ],
+     "q": "Sabias que muitos italianos também falam um dialeto regional?",
+     "c": "Encontra três palavras italianas vindas do latim que se pareçam com palavras da tua língua."
+    },
+    "pt_BR": {
+     "t": "A história da língua italiana",
+     "g": "Acompanhar o italiano do latim ao toscano e à língua padrão, e o papel de Dante.",
+     "p": [
+      "O italiano vem do latim falado; ao longo dos séculos surgiram muitos falares locais, i volgari.",
+      "Dante escreveu a Divina Commedia em florentino; com Petrarca e Boccaccio deu prestígio ao toscano.",
+      "Depois de 1861 só uma minoria falava italiano no dia a dia; a escola, o rádio e a TV espalharam a língua padrão."
+     ],
+     "q": "Você sabia que muitos italianos também falam um dialeto regional?",
+     "c": "Encontre três palavras italianas vindas do latim que se pareçam com palavras da sua língua."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il volgare",
+      "ex": "Dante scelse il volgare invece del latino."
+     },
+     {
+      "w": "il dialetto",
+      "ex": "Mia nonna parla ancora il dialetto del suo paese."
+     },
+     {
+      "w": "derivare da",
+      "ex": "Molte parole italiane derivano dal latino."
+     },
+     {
+      "w": "la lingua standard",
+      "ex": "La televisione ha diffuso la lingua standard."
+     },
+     {
+      "w": "il padre della lingua",
+      "ex": "Dante è considerato il padre della lingua italiana."
+     },
+     {
+      "w": "diffondersi",
+      "ex": "L'italiano si diffuse grazie alla scuola."
+     }
+    ],
+    "gram": "Derivare da + articolo: deriva dal latino, derivano dalla lingua parlata. Si passivante: si diffuse, si parla."
+   }
+  },
+  {
+   "d": 322,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Italian geography in depth",
+     "g": "Describe the Alps, the Apennines, the islands, the lakes and the coasts.",
+     "p": [
+      "The Alps form the northern border; the Apennines run down the peninsula like a spine.",
+      "Main islands: Sicilia, the largest in the Mediterranean, and Sardegna; plus many small ones like Capri and Elba.",
+      "The great lakes are in the north (Garda, Maggiore, Como); the coasts face the Tyrrhenian, Adriatic and Ionian seas."
+     ],
+     "q": "Do you prefer mountains, lakes or the sea for a trip to Italy?",
+     "c": "Describe one Italian region in three sentences: where it is, its landscape and its sea or mountains."
+    },
+    "de": {
+     "t": "Italiens Geografie im Detail",
+     "g": "Du beschreibst Alpen, Apennin, Inseln, Seen und Küsten.",
+     "p": [
+      "Die Alpen bilden die Nordgrenze; der Apennin zieht sich wie ein Rückgrat durch die Halbinsel.",
+      "Hauptinseln: Sicilia, die größte im Mittelmeer, und Sardegna; dazu viele kleine wie Capri und Elba.",
+      "Die großen Seen liegen im Norden (Garda, Maggiore, Como); die Küsten liegen am Tyrrhenischen, Adriatischen und Ionischen Meer."
+     ],
+     "q": "Magst du für eine Italienreise lieber Berge, Seen oder das Meer?",
+     "c": "Beschreibe eine italienische Region in drei Sätzen: Lage, Landschaft, Meer oder Berge."
+    },
+    "es": {
+     "t": "La geografía de Italia a fondo",
+     "g": "Describir los Alpes, los Apeninos, las islas, los lagos y las costas.",
+     "p": [
+      "Los Alpes forman la frontera norte; los Apeninos recorren la península como una columna vertebral.",
+      "Islas principales: Sicilia, la mayor del Mediterráneo, y Cerdeña; y muchas pequeñas como Capri y Elba.",
+      "Los grandes lagos están en el norte (Garda, Maggiore, Como); las costas dan al Tirreno, al Adriático y al Jónico."
+     ],
+     "q": "¿Prefieres montaña, lagos o mar para un viaje a Italia?",
+     "c": "Describe una región italiana en tres frases: dónde está, su paisaje y su mar o montañas."
+    },
+    "fr": {
+     "t": "La géographie de l'Italie en détail",
+     "g": "Décrire les Alpes, les Apennins, les îles, les lacs et les côtes.",
+     "p": [
+      "Les Alpes forment la frontière nord ; les Apennins parcourent la péninsule comme une colonne vertébrale.",
+      "Îles principales : la Sicile, la plus grande de Méditerranée, et la Sardaigne ; plus de petites îles comme Capri et l'île d'Elbe.",
+      "Les grands lacs sont au nord (Garde, Majeur, Côme) ; les côtes bordent les mers Tyrrhénienne, Adriatique et Ionienne."
+     ],
+     "q": "Tu préfères la montagne, les lacs ou la mer pour un voyage en Italie ?",
+     "c": "Décris une région italienne en trois phrases : où elle est, son paysage, sa mer ou ses montagnes."
+    },
+    "it": {
+     "t": "La geografia italiana in profondità",
+     "g": "Descrivere Alpi, Appennini, isole, laghi e coste.",
+     "p": [
+      "Le Alpi formano il confine settentrionale; gli Appennini percorrono la penisola come una spina dorsale.",
+      "Isole principali: la Sicilia, la più grande del Mediterraneo, e la Sardegna; poi tante piccole come Capri ed Elba.",
+      "I grandi laghi sono al Nord (Garda, Maggiore, Como); le coste si affacciano sul Tirreno, sull'Adriatico e sullo Ionio."
+     ],
+     "q": "Per un viaggio in Italia preferisci montagna, laghi o mare?",
+     "c": "Descrivi una regione italiana in tre frasi: dove si trova, il paesaggio, il mare o le montagne."
+    },
+    "pt": {
+     "t": "A geografia italiana a fundo",
+     "g": "Descrever os Alpes, os Apeninos, as ilhas, os lagos e as costas.",
+     "p": [
+      "Os Alpes formam a fronteira norte; os Apeninos percorrem a península como uma coluna vertebral.",
+      "Ilhas principais: a Sicília, a maior do Mediterrâneo, e a Sardenha; e muitas pequenas como Capri e Elba.",
+      "Os grandes lagos ficam no norte (Garda, Maggiore, Como); as costas dão para o Tirreno, o Adriático e o Jónico."
+     ],
+     "q": "Preferes montanha, lagos ou mar para uma viagem a Itália?",
+     "c": "Descreve uma região italiana em três frases: onde fica, a paisagem e o mar ou as montanhas."
+    },
+    "pt_BR": {
+     "t": "A geografia italiana a fundo",
+     "g": "Descrever os Alpes, os Apeninos, as ilhas, os lagos e os litorais.",
+     "p": [
+      "Os Alpes formam a fronteira norte; os Apeninos percorrem a península como uma coluna vertebral.",
+      "Ilhas principais: a Sicília, a maior do Mediterrâneo, e a Sardenha; e muitas pequenas como Capri e Elba.",
+      "Os grandes lagos ficam no norte (Garda, Maggiore, Como); o litoral dá para o Tirreno, o Adriático e o Jônico."
+     ],
+     "q": "Você prefere montanha, lagos ou mar para uma viagem à Itália?",
+     "c": "Descreva uma região italiana em três frases: onde fica, a paisagem e o mar ou as montanhas."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la catena montuosa",
+      "ex": "Gli Appennini sono una lunga catena montuosa."
+     },
+     {
+      "w": "la penisola",
+      "ex": "L'Italia è una penisola a forma di stivale."
+     },
+     {
+      "w": "affacciarsi su",
+      "ex": "La Liguria si affaccia sul Mar Ligure."
+     },
+     {
+      "w": "la pianura",
+      "ex": "La Pianura Padana è la più grande d'Italia."
+     },
+     {
+      "w": "il vulcano",
+      "ex": "L'Etna è un vulcano attivo in Sicilia."
+     },
+     {
+      "w": "settentrionale",
+      "ex": "Le Alpi si trovano nell'Italia settentrionale."
+     }
+    ],
+    "gram": "Si trova / si affaccia: verbi pronominali per la posizione. Punti cardinali: al Nord, nel Sud, nell'Italia centrale."
+   }
+  },
+  {
+   "d": 323,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "UNESCO sites of Italy",
+     "g": "Describe heritage sites like Pompeii, Venice, Cinque Terre and Matera.",
+     "p": [
+      "Italy has one of the highest numbers of UNESCO World Heritage sites in the world.",
+      "Pompei was buried by Vesuvius in 79 AD; Venice is built on a lagoon; Cinque Terre are five coastal villages.",
+      "Matera is famous for its Sassi, ancient homes carved into the rock. Use è stato dichiarato patrimonio."
+     ],
+     "q": "Which Italian heritage site would you most like to visit?",
+     "c": "Describe a heritage site in three sentences: where it is, why it is special and what you can see."
+    },
+    "de": {
+     "t": "UNESCO-Stätten Italiens",
+     "g": "Du beschreibst Welterbestätten wie Pompeji, Venedig, Cinque Terre und Matera.",
+     "p": [
+      "Italien hat eine der höchsten Zahlen an UNESCO-Welterbestätten der Welt.",
+      "Pompei wurde 79 n. Chr. vom Vesuv verschüttet; Venedig steht in einer Lagune; die Cinque Terre sind fünf Küstendörfer.",
+      "Matera ist berühmt für die Sassi, alte in den Fels gehauene Wohnungen. Sag è stato dichiarato patrimonio."
+     ],
+     "q": "Welche Welterbestätte Italiens würdest du am liebsten besuchen?",
+     "c": "Beschreibe eine Welterbestätte in drei Sätzen: wo sie liegt, was sie besonders macht, was man sieht."
+    },
+    "es": {
+     "t": "Sitios UNESCO de Italia",
+     "g": "Describir lugares patrimonio como Pompeya, Venecia, Cinque Terre y Matera.",
+     "p": [
+      "Italia tiene uno de los mayores números de sitios Patrimonio de la Humanidad del mundo.",
+      "Pompeya quedó sepultada por el Vesubio en el 79 d. C.; Venecia está en una laguna; Cinque Terre son cinco pueblos costeros.",
+      "Matera es famosa por sus Sassi, antiguas casas excavadas en la roca. Usa è stato dichiarato patrimonio."
+     ],
+     "q": "¿Qué sitio patrimonio de Italia te gustaría más visitar?",
+     "c": "Describe un sitio patrimonio en tres frases: dónde está, por qué es especial y qué se puede ver."
+    },
+    "fr": {
+     "t": "Les sites UNESCO d'Italie",
+     "g": "Décrire des sites du patrimoine comme Pompéi, Venise, les Cinque Terre et Matera.",
+     "p": [
+      "L'Italie compte l'un des plus grands nombres de sites du patrimoine mondial de l'UNESCO.",
+      "Pompéi fut ensevelie par le Vésuve en 79 ; Venise est bâtie sur une lagune ; les Cinque Terre sont cinq villages côtiers.",
+      "Matera est célèbre pour ses Sassi, d'anciennes habitations creusées dans la roche. Dis è stato dichiarato patrimonio."
+     ],
+     "q": "Quel site du patrimoine italien aimerais-tu le plus visiter ?",
+     "c": "Décris un site en trois phrases : où il se trouve, pourquoi il est spécial et ce qu'on peut y voir."
+    },
+    "it": {
+     "t": "I siti UNESCO d'Italia",
+     "g": "Descrivere siti del patrimonio come Pompei, Venezia, le Cinque Terre e Matera.",
+     "p": [
+      "L'Italia ha uno dei numeri più alti al mondo di siti Patrimonio dell'Umanità UNESCO.",
+      "Pompei fu sepolta dal Vesuvio nel 79 d.C.; Venezia sorge su una laguna; le Cinque Terre sono cinque borghi sul mare.",
+      "Matera è famosa per i Sassi, antiche abitazioni scavate nella roccia. Usa è stato dichiarato patrimonio."
+     ],
+     "q": "Quale sito del patrimonio italiano ti piacerebbe di più visitare?",
+     "c": "Descrivi un sito in tre frasi: dove si trova, perché è speciale e che cosa si può vedere."
+    },
+    "pt": {
+     "t": "Os sítios UNESCO de Itália",
+     "g": "Descrever locais de património como Pompeia, Veneza, Cinque Terre e Matera.",
+     "p": [
+      "A Itália tem um dos maiores números de sítios Património Mundial da UNESCO.",
+      "Pompeia foi soterrada pelo Vesúvio em 79 d.C.; Veneza ergue-se numa lagoa; as Cinque Terre são cinco aldeias costeiras.",
+      "Matera é famosa pelos Sassi, antigas casas escavadas na rocha. Usa è stato dichiarato patrimonio."
+     ],
+     "q": "Que sítio do património italiano mais gostarias de visitar?",
+     "c": "Descreve um sítio em três frases: onde fica, porque é especial e o que se pode ver."
+    },
+    "pt_BR": {
+     "t": "Os patrimônios da UNESCO na Itália",
+     "g": "Descrever patrimônios como Pompeia, Veneza, Cinque Terre e Matera.",
+     "p": [
+      "A Itália tem um dos maiores números de sítios Patrimônio Mundial da UNESCO.",
+      "Pompeia foi soterrada pelo Vesúvio em 79 d.C.; Veneza fica numa laguna; as Cinque Terre são cinco vilarejos costeiros.",
+      "Matera é famosa pelos Sassi, antigas casas escavadas na rocha. Use è stato dichiarato patrimonio."
+     ],
+     "q": "Que patrimônio italiano você mais gostaria de visitar?",
+     "c": "Descreva um patrimônio em três frases: onde fica, por que é especial e o que se pode ver."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il patrimonio",
+      "ex": "Venezia è patrimonio dell'umanità."
+     },
+     {
+      "w": "il sito archeologico",
+      "ex": "Pompei è un sito archeologico unico al mondo."
+     },
+     {
+      "w": "il borgo",
+      "ex": "Le Cinque Terre sono cinque borghi colorati."
+     },
+     {
+      "w": "scavato nella roccia",
+      "ex": "A Matera ci sono case scavate nella roccia."
+     },
+     {
+      "w": "la laguna",
+      "ex": "Venezia sorge al centro di una laguna."
+     },
+     {
+      "w": "essere dichiarato",
+      "ex": "Il centro storico è stato dichiarato patrimonio UNESCO."
+     }
+    ],
+    "gram": "Passivo con essere al passato prossimo: è stato dichiarato, sono stati restaurati (participio concordato)."
+   }
+  },
+  {
+   "d": 324,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Italian gastronomy in depth",
+     "g": "Discuss DOP products, slow food and regional cooking philosophy.",
+     "p": [
+      "DOP (Denominazione di Origine Protetta) protects products tied to a place: Parmigiano Reggiano, Prosciutto di Parma.",
+      "Slow Food, born in Piedmont in the 1980s, defends local, seasonal and traditional food.",
+      "Italian cooking is regional: few quality ingredients, cucina di stagione and recipes that change from town to town."
+     ],
+     "q": "What is a traditional product from your region that deserves protection?",
+     "c": "Describe a regional dish in three sentences: its origin, its ingredients and when people eat it."
+    },
+    "de": {
+     "t": "Italienische Gastronomie im Detail",
+     "g": "Du sprichst über DOP-Produkte, Slow Food und die regionale Kochphilosophie.",
+     "p": [
+      "DOP (Denominazione di Origine Protetta) schützt ortsgebundene Produkte: Parmigiano Reggiano, Prosciutto di Parma.",
+      "Slow Food, in den 1980ern im Piemont entstanden, verteidigt lokales, saisonales und traditionelles Essen.",
+      "Italienische Küche ist regional: wenige gute Zutaten, cucina di stagione, Rezepte, die sich von Ort zu Ort ändern."
+     ],
+     "q": "Welches traditionelle Produkt deiner Region verdient Schutz?",
+     "c": "Beschreibe ein regionales Gericht in drei Sätzen: Herkunft, Zutaten und wann man es isst."
+    },
+    "es": {
+     "t": "La gastronomía italiana a fondo",
+     "g": "Hablar de productos DOP, slow food y la filosofía de la cocina regional.",
+     "p": [
+      "La DOP (Denominazione di Origine Protetta) protege productos ligados a un lugar: Parmigiano Reggiano, Prosciutto di Parma.",
+      "Slow Food, nacido en el Piamonte en los años 80, defiende la comida local, de temporada y tradicional.",
+      "La cocina italiana es regional: pocos ingredientes de calidad, cucina di stagione y recetas que cambian de pueblo en pueblo."
+     ],
+     "q": "¿Qué producto tradicional de tu región merece protección?",
+     "c": "Describe un plato regional en tres frases: su origen, sus ingredientes y cuándo se come."
+    },
+    "fr": {
+     "t": "La gastronomie italienne en détail",
+     "g": "Parler des produits DOP, du slow food et de la philosophie de la cuisine régionale.",
+     "p": [
+      "La DOP (Denominazione di Origine Protetta) protège des produits liés à un lieu : Parmigiano Reggiano, Prosciutto di Parma.",
+      "Slow Food, né dans le Piémont dans les années 1980, défend une cuisine locale, de saison et traditionnelle.",
+      "La cuisine italienne est régionale : peu d'ingrédients de qualité, cucina di stagione et recettes qui changent d'une ville à l'autre."
+     ],
+     "q": "Quel produit traditionnel de ta région mériterait d'être protégé ?",
+     "c": "Décris un plat régional en trois phrases : son origine, ses ingrédients et quand on le mange."
+    },
+    "it": {
+     "t": "La gastronomia italiana in profondità",
+     "g": "Parlare di prodotti DOP, slow food e della filosofia della cucina regionale.",
+     "p": [
+      "La DOP (Denominazione di Origine Protetta) tutela prodotti legati a un territorio: Parmigiano Reggiano, Prosciutto di Parma.",
+      "Slow Food, nato in Piemonte negli anni Ottanta, difende il cibo locale, di stagione e tradizionale.",
+      "La cucina italiana è regionale: pochi ingredienti di qualità, cucina di stagione e ricette che cambiano da paese a paese."
+     ],
+     "q": "Quale prodotto tipico della tua regione meriterebbe di essere tutelato?",
+     "c": "Descrivi un piatto regionale in tre frasi: origine, ingredienti e quando si mangia."
+    },
+    "pt": {
+     "t": "A gastronomia italiana a fundo",
+     "g": "Falar de produtos DOP, slow food e da filosofia da cozinha regional.",
+     "p": [
+      "A DOP (Denominazione di Origine Protetta) protege produtos ligados a um lugar: Parmigiano Reggiano, Prosciutto di Parma.",
+      "O Slow Food, nascido no Piemonte nos anos 80, defende comida local, da época e tradicional.",
+      "A cozinha italiana é regional: poucos ingredientes de qualidade, cucina di stagione e receitas que mudam de terra para terra."
+     ],
+     "q": "Que produto tradicional da tua região merecia ser protegido?",
+     "c": "Descreve um prato regional em três frases: origem, ingredientes e quando se come."
+    },
+    "pt_BR": {
+     "t": "A gastronomia italiana a fundo",
+     "g": "Falar de produtos DOP, slow food e da filosofia da cozinha regional.",
+     "p": [
+      "A DOP (Denominazione di Origine Protetta) protege produtos ligados a um lugar: Parmigiano Reggiano, Prosciutto di Parma.",
+      "O Slow Food, nascido no Piemonte nos anos 80, defende comida local, da estação e tradicional.",
+      "A cozinha italiana é regional: poucos ingredientes de qualidade, cucina di stagione e receitas que mudam de cidade para cidade."
+     ],
+     "q": "Que produto tradicional da sua região merecia ser protegido?",
+     "c": "Descreva um prato regional em três frases: origem, ingredientes e quando se come."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il prodotto tipico",
+      "ex": "Il pesto è un prodotto tipico della Liguria."
+     },
+     {
+      "w": "a chilometro zero",
+      "ex": "Al mercato compro verdura a chilometro zero."
+     },
+     {
+      "w": "di stagione",
+      "ex": "In inverno cuciniamo solo verdure di stagione."
+     },
+     {
+      "w": "tutelare",
+      "ex": "La DOP tutela i prodotti del territorio."
+     },
+     {
+      "w": "la materia prima",
+      "ex": "In cucina conta soprattutto la materia prima."
+     },
+     {
+      "w": "stagionato",
+      "ex": "Il Parmigiano Reggiano è un formaggio stagionato."
+     }
+    ],
+    "gram": "Si impersonale e passivante in cucina: si usa poco olio, si mangiano i tortellini a Natale (verbo concordato)."
+   }
+  },
+  {
+   "d": 325,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "The art of Italian conversation",
+     "g": "Take turns, interrupt politely and keep a chat alive.",
+     "p": [
+      "Take the floor politely: Scusa se ti interrompo..., Posso dire una cosa?, Volevo aggiungere che...",
+      "Keep it alive with reactions and questions: Ah sì? Davvero? E poi? Tu che ne pensi?",
+      "Give the turn back: Ma dimmi di te. Scusa, stavi dicendo? Prego, continua."
+     ],
+     "q": "In your culture, is interrupting rude or a sign of interest?",
+     "c": "In our next chat, use Scusa se ti interrompo, E poi? and Tu che ne pensi? at least once."
+    },
+    "de": {
+     "t": "Die Kunst der italienischen Unterhaltung",
+     "g": "Du wechselst dich ab, unterbrichst höflich und hältst ein Gespräch am Laufen.",
+     "p": [
+      "Höflich das Wort ergreifen: Scusa se ti interrompo..., Posso dire una cosa?, Volevo aggiungere che...",
+      "Am Leben halten mit Reaktionen und Fragen: Ah sì? Davvero? E poi? Tu che ne pensi?",
+      "Das Wort zurückgeben: Ma dimmi di te. Scusa, stavi dicendo? Prego, continua."
+     ],
+     "q": "Ist Unterbrechen in deiner Kultur unhöflich oder ein Zeichen von Interesse?",
+     "c": "Verwende in unserem nächsten Chat mindestens einmal Scusa se ti interrompo, E poi? und Tu che ne pensi?"
+    },
+    "es": {
+     "t": "El arte de la conversación italiana",
+     "g": "Respetar turnos, interrumpir con cortesía y mantener viva la charla.",
+     "p": [
+      "Toma la palabra con cortesía: Scusa se ti interrompo..., Posso dire una cosa?, Volevo aggiungere che...",
+      "Mantenla viva con reacciones y preguntas: Ah sì? Davvero? E poi? Tu che ne pensi?",
+      "Devuelve el turno: Ma dimmi di te. Scusa, stavi dicendo? Prego, continua."
+     ],
+     "q": "En tu cultura, ¿interrumpir es de mala educación o señal de interés?",
+     "c": "En nuestra próxima charla usa al menos una vez Scusa se ti interrompo, E poi? y Tu che ne pensi?"
+    },
+    "fr": {
+     "t": "L'art de la conversation italienne",
+     "g": "Respecter les tours de parole, interrompre poliment et faire vivre la discussion.",
+     "p": [
+      "Prendre la parole poliment : Scusa se ti interrompo..., Posso dire una cosa?, Volevo aggiungere che...",
+      "Relancer avec réactions et questions : Ah sì? Davvero? E poi? Tu che ne pensi?",
+      "Rendre la parole : Ma dimmi di te. Scusa, stavi dicendo? Prego, continua."
+     ],
+     "q": "Dans ta culture, interrompre est-il impoli ou un signe d'intérêt ?",
+     "c": "Dans notre prochain échange, utilise au moins une fois Scusa se ti interrompo, E poi? et Tu che ne pensi?"
+    },
+    "it": {
+     "t": "L'arte della conversazione italiana",
+     "g": "Rispettare i turni, interrompere con garbo e tenere viva una chiacchierata.",
+     "p": [
+      "Prendere la parola con garbo: Scusa se ti interrompo..., Posso dire una cosa?, Volevo aggiungere che...",
+      "Tenere viva la conversazione con reazioni e domande: Ah sì? Davvero? E poi? Tu che ne pensi?",
+      "Restituire la parola: Ma dimmi di te. Scusa, stavi dicendo? Prego, continua."
+     ],
+     "q": "Nella tua cultura interrompere è scortese o un segno di interesse?",
+     "c": "Nella prossima chiacchierata usa almeno una volta Scusa se ti interrompo, E poi? e Tu che ne pensi?"
+    },
+    "pt": {
+     "t": "A arte da conversa italiana",
+     "g": "Respeitar a vez, interromper com educação e manter a conversa viva.",
+     "p": [
+      "Tomar a palavra com educação: Scusa se ti interrompo..., Posso dire una cosa?, Volevo aggiungere che...",
+      "Manter a conversa viva com reações e perguntas: Ah sì? Davvero? E poi? Tu che ne pensi?",
+      "Devolver a palavra: Ma dimmi di te. Scusa, stavi dicendo? Prego, continua."
+     ],
+     "q": "Na tua cultura, interromper é falta de educação ou sinal de interesse?",
+     "c": "Na nossa próxima conversa usa pelo menos uma vez Scusa se ti interrompo, E poi? e Tu che ne pensi?"
+    },
+    "pt_BR": {
+     "t": "A arte da conversa italiana",
+     "g": "Respeitar a vez, interromper com educação e manter o papo vivo.",
+     "p": [
+      "Pedir a palavra com educação: Scusa se ti interrompo..., Posso dire una cosa?, Volevo aggiungere che...",
+      "Manter o papo vivo com reações e perguntas: Ah sì? Davvero? E poi? Tu che ne pensi?",
+      "Devolver a palavra: Ma dimmi di te. Scusa, stavi dicendo? Prego, continua."
+     ],
+     "q": "Na sua cultura, interromper é falta de educação ou sinal de interesse?",
+     "c": "No nosso próximo papo use pelo menos uma vez Scusa se ti interrompo, E poi? e Tu che ne pensi?"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "scusa se ti interrompo",
+      "ex": "Scusa se ti interrompo, ma è importante."
+     },
+     {
+      "w": "volevo aggiungere",
+      "ex": "Volevo aggiungere una piccola cosa."
+     },
+     {
+      "w": "E poi?",
+      "ex": "E poi? Com'è finita la storia?"
+     },
+     {
+      "w": "Tu che ne pensi?",
+      "ex": "Io ho scelto il mare. Tu che ne pensi?"
+     },
+     {
+      "w": "stavi dicendo",
+      "ex": "Scusa, stavi dicendo qualcosa?"
+     },
+     {
+      "w": "dimmi di te",
+      "ex": "Basta parlare di me, dimmi di te!"
+     }
+    ],
+    "gram": "Imperfetto di cortesia: volevo aggiungere, volevo chiedere; stare + gerundio all'imperfetto: stavi dicendo."
+   }
+  },
+  {
+   "d": 326,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Review: Italy's history and culture",
+     "g": "Recap the language for history, geography and gastronomy discussions.",
+     "p": [
+      "History: passato remoto (fondò, fu, nacque) and passive (fu proclamato); centuries: il Quattrocento.",
+      "Geography and heritage: si trova, si affaccia su, è stato dichiarato patrimonio, scavato nella roccia.",
+      "Culture: DOP, cucina di stagione, il volgare, and polite turn-taking like Scusa se ti interrompo."
+     ],
+     "q": "What is the most surprising thing you learned about Italy in these lessons?",
+     "c": "Tell me a mini-history of one Italian city in five sentences: founding, a key century, today."
+    },
+    "de": {
+     "t": "Wiederholung: Geschichte und Kultur Italiens",
+     "g": "Du wiederholst die Sprache für Geschichte, Geografie und Gastronomie.",
+     "p": [
+      "Geschichte: passato remoto (fondò, fu, nacque) und Passiv (fu proclamato); Jahrhunderte: il Quattrocento.",
+      "Geografie und Erbe: si trova, si affaccia su, è stato dichiarato patrimonio, scavato nella roccia.",
+      "Kultur: DOP, cucina di stagione, il volgare und höfliches Abwechseln wie Scusa se ti interrompo."
+     ],
+     "q": "Was ist das Überraschendste, das du in diesen Lektionen über Italien gelernt hast?",
+     "c": "Erzähl mir in fünf Sätzen die Mini-Geschichte einer italienischen Stadt: Gründung, wichtiges Jahrhundert, heute."
+    },
+    "es": {
+     "t": "Repaso: historia y cultura de Italia",
+     "g": "Repasar el lenguaje para hablar de historia, geografía y gastronomía.",
+     "p": [
+      "Historia: passato remoto (fondò, fu, nacque) y pasiva (fu proclamato); siglos: il Quattrocento.",
+      "Geografía y patrimonio: si trova, si affaccia su, è stato dichiarato patrimonio, scavato nella roccia.",
+      "Cultura: DOP, cucina di stagione, il volgare y turnos corteses como Scusa se ti interrompo."
+     ],
+     "q": "¿Qué es lo más sorprendente que has aprendido sobre Italia en estas lecciones?",
+     "c": "Cuéntame la minihistoria de una ciudad italiana en cinco frases: fundación, un siglo clave, hoy."
+    },
+    "fr": {
+     "t": "Révision : histoire et culture de l'Italie",
+     "g": "Réviser le vocabulaire de l'histoire, de la géographie et de la gastronomie.",
+     "p": [
+      "Histoire : passato remoto (fondò, fu, nacque) et passif (fu proclamato) ; siècles : il Quattrocento.",
+      "Géographie et patrimoine : si trova, si affaccia su, è stato dichiarato patrimonio, scavato nella roccia.",
+      "Culture : DOP, cucina di stagione, il volgare et la prise de parole polie comme Scusa se ti interrompo."
+     ],
+     "q": "Qu'as-tu appris de plus surprenant sur l'Italie dans ces leçons ?",
+     "c": "Raconte-moi la mini-histoire d'une ville italienne en cinq phrases : fondation, un siècle clé, aujourd'hui."
+    },
+    "it": {
+     "t": "Ripasso: storia e cultura d'Italia",
+     "g": "Ripassare la lingua per parlare di storia, geografia e gastronomia.",
+     "p": [
+      "Storia: passato remoto (fondò, fu, nacque) e passivo (fu proclamato); i secoli: il Quattrocento.",
+      "Geografia e patrimonio: si trova, si affaccia su, è stato dichiarato patrimonio, scavato nella roccia.",
+      "Cultura: DOP, cucina di stagione, il volgare e i turni di parola come Scusa se ti interrompo."
+     ],
+     "q": "Qual è la cosa più sorprendente che hai imparato sull'Italia in queste lezioni?",
+     "c": "Raccontami la mini-storia di una città italiana in cinque frasi: fondazione, un secolo chiave, oggi."
+    },
+    "pt": {
+     "t": "Revisão: história e cultura de Itália",
+     "g": "Rever a linguagem para falar de história, geografia e gastronomia.",
+     "p": [
+      "História: passato remoto (fondò, fu, nacque) e passiva (fu proclamato); séculos: il Quattrocento.",
+      "Geografia e património: si trova, si affaccia su, è stato dichiarato patrimonio, scavato nella roccia.",
+      "Cultura: DOP, cucina di stagione, il volgare e a vez de falar com Scusa se ti interrompo."
+     ],
+     "q": "Qual foi a coisa mais surpreendente que aprendeste sobre a Itália nestas lições?",
+     "c": "Conta-me a mini-história de uma cidade italiana em cinco frases: fundação, um século-chave, hoje."
+    },
+    "pt_BR": {
+     "t": "Revisão: história e cultura da Itália",
+     "g": "Revisar a linguagem para falar de história, geografia e gastronomia.",
+     "p": [
+      "História: passato remoto (fondò, fu, nacque) e passiva (fu proclamato); séculos: il Quattrocento.",
+      "Geografia e patrimônio: si trova, si affaccia su, è stato dichiarato patrimonio, scavato nella roccia.",
+      "Cultura: DOP, cucina di stagione, il volgare e a vez de falar com Scusa se ti interrompo."
+     ],
+     "q": "Qual foi a coisa mais surpreendente que você aprendeu sobre a Itália nestas lições?",
+     "c": "Conte a mini-história de uma cidade italiana em cinco frases: fundação, um século-chave, hoje."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "fu fondata",
+      "ex": "Torino fu fondata dai Romani."
+     },
+     {
+      "w": "il Quattrocento",
+      "ex": "Nel Quattrocento Firenze era il centro dell'arte."
+     },
+     {
+      "w": "si affaccia su",
+      "ex": "Napoli si affaccia su un golfo splendido."
+     },
+     {
+      "w": "la tradizione",
+      "ex": "Secondo la tradizione, la pizza Margherita nacque a Napoli."
+     },
+     {
+      "w": "il territorio",
+      "ex": "Ogni territorio ha i suoi piatti tipici."
+     },
+     {
+      "w": "la civiltà",
+      "ex": "La civiltà romana ha lasciato strade e ponti."
+     }
+    ],
+    "gram": "Passato remoto per fatti storici conclusi, imperfetto per descrizioni: Firenze era ricca e nacque il Rinascimento."
+   }
+  },
+  {
+   "d": 327,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Idioms at B2 level",
+     "g": "Use idioms like prendere due piccioni con una fava and rompere il ghiaccio.",
+     "p": [
+      "Prendere due piccioni con una fava = to kill two birds with one stone (to get two results at once).",
+      "Rompere il ghiaccio = to break the ice; essere al verde = to be broke, to have no money left.",
+      "Also useful: in bocca al lupo (good luck, reply crepi!), avere le mani in pasta, costare un occhio della testa."
+     ],
+     "q": "Which Italian idiom do you find the funniest or most surprising?",
+     "c": "Use two of today's idioms in a short story about your week."
+    },
+    "de": {
+     "t": "Redewendungen auf B2-Niveau",
+     "g": "Du verwendest Redewendungen wie prendere due piccioni con una fava und rompere il ghiaccio.",
+     "p": [
+      "Prendere due piccioni con una fava = zwei Fliegen mit einer Klappe schlagen.",
+      "Rompere il ghiaccio = das Eis brechen; essere al verde = pleite sein, kein Geld mehr haben.",
+      "Auch nützlich: in bocca al lupo (viel Glück, Antwort crepi!), avere le mani in pasta, costare un occhio della testa."
+     ],
+     "q": "Welche italienische Redewendung findest du am lustigsten oder überraschendsten?",
+     "c": "Verwende zwei der heutigen Redewendungen in einer kurzen Geschichte über deine Woche."
+    },
+    "es": {
+     "t": "Modismos de nivel B2",
+     "g": "Usar modismos como prendere due piccioni con una fava y rompere il ghiaccio.",
+     "p": [
+      "Prendere due piccioni con una fava = matar dos pájaros de un tiro.",
+      "Rompere il ghiaccio = romper el hielo; essere al verde = estar sin blanca, sin dinero.",
+      "También útiles: in bocca al lupo (suerte, se responde crepi!), avere le mani in pasta, costare un occhio della testa."
+     ],
+     "q": "¿Qué modismo italiano te parece más gracioso o sorprendente?",
+     "c": "Usa dos modismos de hoy en una historia breve sobre tu semana."
+    },
+    "fr": {
+     "t": "Expressions idiomatiques niveau B2",
+     "g": "Utiliser des expressions comme prendere due piccioni con una fava et rompere il ghiaccio.",
+     "p": [
+      "Prendere due piccioni con una fava = faire d'une pierre deux coups.",
+      "Rompere il ghiaccio = briser la glace ; essere al verde = être fauché, sans argent.",
+      "Aussi utiles : in bocca al lupo (bonne chance, réponse crepi!), avere le mani in pasta, costare un occhio della testa."
+     ],
+     "q": "Quelle expression italienne trouves-tu la plus drôle ou la plus surprenante ?",
+     "c": "Utilise deux expressions du jour dans une courte histoire sur ta semaine."
+    },
+    "it": {
+     "t": "Modi di dire di livello B2",
+     "g": "Usare modi di dire come prendere due piccioni con una fava e rompere il ghiaccio.",
+     "p": [
+      "Prendere due piccioni con una fava: ottenere due risultati con una sola azione.",
+      "Rompere il ghiaccio: superare l'imbarazzo iniziale; essere al verde: non avere più soldi.",
+      "Utili anche: in bocca al lupo (risposta: crepi!), avere le mani in pasta, costare un occhio della testa."
+     ],
+     "q": "Quale modo di dire italiano trovi più divertente o sorprendente?",
+     "c": "Usa due modi di dire di oggi in un breve racconto sulla tua settimana."
+    },
+    "pt": {
+     "t": "Expressões idiomáticas de nível B2",
+     "g": "Usar expressões como prendere due piccioni con una fava e rompere il ghiaccio.",
+     "p": [
+      "Prendere due piccioni con una fava = matar dois coelhos de uma cajadada.",
+      "Rompere il ghiaccio = quebrar o gelo; essere al verde = estar teso, sem dinheiro.",
+      "Também úteis: in bocca al lupo (boa sorte, responde-se crepi!), avere le mani in pasta, costare un occhio della testa."
+     ],
+     "q": "Que expressão italiana achas mais engraçada ou surpreendente?",
+     "c": "Usa duas expressões de hoje numa pequena história sobre a tua semana."
+    },
+    "pt_BR": {
+     "t": "Expressões idiomáticas de nível B2",
+     "g": "Usar expressões como prendere due piccioni con una fava e rompere il ghiaccio.",
+     "p": [
+      "Prendere due piccioni con una fava = matar dois coelhos com uma cajadada só.",
+      "Rompere il ghiaccio = quebrar o gelo; essere al verde = estar duro, sem dinheiro.",
+      "Também úteis: in bocca al lupo (boa sorte, responde-se crepi!), avere le mani in pasta, costare un occhio della testa."
+     ],
+     "q": "Que expressão italiana você acha mais engraçada ou surpreendente?",
+     "c": "Use duas expressões de hoje numa pequena história sobre a sua semana."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "prendere due piccioni con una fava",
+      "ex": "Vado in centro e faccio la spesa: due piccioni con una fava!"
+     },
+     {
+      "w": "rompere il ghiaccio",
+      "ex": "Una battuta è servita a rompere il ghiaccio."
+     },
+     {
+      "w": "essere al verde",
+      "ex": "A fine mese sono sempre al verde."
+     },
+     {
+      "w": "in bocca al lupo",
+      "ex": "Domani hai l'esame? In bocca al lupo! Crepi!"
+     },
+     {
+      "w": "costare un occhio della testa",
+      "ex": "Quella borsa costa un occhio della testa."
+     },
+     {
+      "w": "avere le mani in pasta",
+      "ex": "Lui ha le mani in pasta in molti progetti."
+     }
+    ],
+    "gram": "I modi di dire non si traducono parola per parola: il verbo si coniuga normalmente (ho rotto il ghiaccio)."
+   }
+  },
+  {
+   "d": 328,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Phrasal-like verbs: tirare fuori",
+     "g": "Use verb + adverb combinations like tirare fuori, buttare giù and mettere su.",
+     "p": [
+      "Italian, like English, combines verbs with fuori, giù, su, via: the adverb changes the meaning.",
+      "Tirare fuori (to take out, to bring up), buttare giù (to knock down, to jot down, to feel down), mettere su (to set up, to put on).",
+      "Venire fuori (to come out, to emerge), andare via (to leave), portare via (to take away)."
+     ],
+     "q": "Is there something you'd like to tirare fuori from a drawer or a memory today?",
+     "c": "Write four sentences with tirare fuori, buttare giù, mettere su and venire fuori."
+    },
+    "de": {
+     "t": "Verben mit Partikel: tirare fuori",
+     "g": "Du verwendest Verb + Adverb wie tirare fuori, buttare giù und mettere su.",
+     "p": [
+      "Italienisch verbindet Verben mit fuori, giù, su, via: das Adverb verändert die Bedeutung.",
+      "Tirare fuori (herausholen, zur Sprache bringen), buttare giù (abreißen, notieren, entmutigen), mettere su (aufbauen, aufsetzen).",
+      "Venire fuori (herauskommen), andare via (weggehen), portare via (mitnehmen, wegbringen)."
+     ],
+     "q": "Gibt es etwas, das du heute aus einer Schublade oder Erinnerung tirare fuori möchtest?",
+     "c": "Schreib vier Sätze mit tirare fuori, buttare giù, mettere su und venire fuori."
+    },
+    "es": {
+     "t": "Verbos con partícula: tirare fuori",
+     "g": "Usar verbo + adverbio como tirare fuori, buttare giù y mettere su.",
+     "p": [
+      "El italiano une verbos con fuori, giù, su, via: el adverbio cambia el significado.",
+      "Tirare fuori (sacar), buttare giù (derribar, apuntar, desanimar), mettere su (montar, poner al fuego).",
+      "Venire fuori (salir a la luz), andare via (irse), portare via (llevarse)."
+     ],
+     "q": "¿Hay algo que te gustaría tirare fuori de un cajón o de un recuerdo hoy?",
+     "c": "Escribe cuatro frases con tirare fuori, buttare giù, mettere su y venire fuori."
+    },
+    "fr": {
+     "t": "Verbes à particule : tirare fuori",
+     "g": "Utiliser verbe + adverbe comme tirare fuori, buttare giù et mettere su.",
+     "p": [
+      "L'italien combine des verbes avec fuori, giù, su, via : l'adverbe change le sens.",
+      "Tirare fuori (sortir, évoquer), buttare giù (démolir, noter, abattre le moral), mettere su (monter, mettre à chauffer).",
+      "Venire fuori (ressortir, apparaître), andare via (partir), portare via (emporter)."
+     ],
+     "q": "Y a-t-il quelque chose que tu aimerais tirare fuori d'un tiroir ou d'un souvenir aujourd'hui ?",
+     "c": "Écris quatre phrases avec tirare fuori, buttare giù, mettere su et venire fuori."
+    },
+    "it": {
+     "t": "Verbi sintagmatici: tirare fuori",
+     "g": "Usare verbo + avverbio come tirare fuori, buttare giù e mettere su.",
+     "p": [
+      "L'italiano unisce verbi e avverbi come fuori, giù, su, via: l'avverbio cambia il significato.",
+      "Tirare fuori (estrarre, rivelare), buttare giù (abbattere, scrivere in fretta, demoralizzare), mettere su (organizzare, mettere a cuocere).",
+      "Venire fuori (emergere), andare via (partire), portare via (prendere e portare altrove)."
+     ],
+     "q": "C'è qualcosa che oggi vorresti tirare fuori da un cassetto o da un ricordo?",
+     "c": "Scrivi quattro frasi con tirare fuori, buttare giù, mettere su e venire fuori."
+    },
+    "pt": {
+     "t": "Verbos com partícula: tirare fuori",
+     "g": "Usar verbo + advérbio como tirare fuori, buttare giù e mettere su.",
+     "p": [
+      "O italiano junta verbos com fuori, giù, su, via: o advérbio muda o significado.",
+      "Tirare fuori (tirar para fora, revelar), buttare giù (deitar abaixo, apontar, desanimar), mettere su (montar, pôr ao lume).",
+      "Venire fuori (vir à tona), andare via (ir-se embora), portare via (levar)."
+     ],
+     "q": "Há alguma coisa que gostarias de tirare fuori de uma gaveta ou de uma memória hoje?",
+     "c": "Escreve quatro frases com tirare fuori, buttare giù, mettere su e venire fuori."
+    },
+    "pt_BR": {
+     "t": "Verbos com partícula: tirare fuori",
+     "g": "Usar verbo + advérbio como tirare fuori, buttare giù e mettere su.",
+     "p": [
+      "O italiano junta verbos com fuori, giù, su, via: o advérbio muda o significado.",
+      "Tirare fuori (tirar, revelar), buttare giù (derrubar, anotar, desanimar), mettere su (montar, pôr no fogo).",
+      "Venire fuori (vir à tona), andare via (ir embora), portare via (levar embora)."
+     ],
+     "q": "Existe algo que você gostaria de tirare fuori de uma gaveta ou de uma lembrança hoje?",
+     "c": "Escreva quatro frases com tirare fuori, buttare giù, mettere su e venire fuori."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "tirare fuori",
+      "ex": "Ha tirato fuori le foto delle vacanze."
+     },
+     {
+      "w": "buttare giù",
+      "ex": "Butta giù due idee prima della riunione."
+     },
+     {
+      "w": "mettere su",
+      "ex": "Metto su l'acqua per la pasta."
+     },
+     {
+      "w": "venire fuori",
+      "ex": "Alla fine è venuta fuori la verità."
+     },
+     {
+      "w": "andare via",
+      "ex": "Devo andare via presto stasera."
+     },
+     {
+      "w": "portare via",
+      "ex": "Un caffè da portare via, per favore."
+     }
+    ],
+    "gram": "Verbi sintagmatici: verbo + avverbio (fuori, giù, su, via) con significato nuovo; il pronome va prima: l'ho tirato fuori."
+   }
+  },
+  {
+   "d": 329,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Word formation in depth",
+     "g": "Build word families: lavoro, lavorare, lavoratore, lavorativo.",
+     "p": [
+      "From one root you get nouns, verbs, people and adjectives: lavoro, lavorare, lavoratore, lavorativo.",
+      "Common suffixes: -tore/-trice (person), -zione (action), -ivo/-ale (adjective), -mente (adverb).",
+      "Prefixes change meaning: ri- (again: rifare), dis- and in- (opposite: disordine, incapace), pre- (before)."
+     ],
+     "q": "Which Italian word family do you know best?",
+     "c": "Build the family of one root (e.g. studio, giorno or vita): find a verb, a person, an adjective and an adverb."
+    },
+    "de": {
+     "t": "Wortbildung im Detail",
+     "g": "Du bildest Wortfamilien: lavoro, lavorare, lavoratore, lavorativo.",
+     "p": [
+      "Aus einer Wurzel entstehen Nomen, Verben, Personen und Adjektive: lavoro, lavorare, lavoratore, lavorativo.",
+      "Häufige Suffixe: -tore/-trice (Person), -zione (Handlung), -ivo/-ale (Adjektiv), -mente (Adverb).",
+      "Präfixe verändern die Bedeutung: ri- (wieder: rifare), dis- und in- (Gegenteil: disordine, incapace), pre- (vor)."
+     ],
+     "q": "Welche italienische Wortfamilie kennst du am besten?",
+     "c": "Bilde die Familie einer Wurzel (z. B. studio, giorno oder vita): Verb, Person, Adjektiv und Adverb."
+    },
+    "es": {
+     "t": "Formación de palabras a fondo",
+     "g": "Construir familias de palabras: lavoro, lavorare, lavoratore, lavorativo.",
+     "p": [
+      "De una raíz salen sustantivos, verbos, personas y adjetivos: lavoro, lavorare, lavoratore, lavorativo.",
+      "Sufijos comunes: -tore/-trice (persona), -zione (acción), -ivo/-ale (adjetivo), -mente (adverbio).",
+      "Los prefijos cambian el sentido: ri- (de nuevo: rifare), dis- e in- (contrario: disordine, incapace), pre- (antes)."
+     ],
+     "q": "¿Qué familia de palabras italiana conoces mejor?",
+     "c": "Construye la familia de una raíz (studio, giorno o vita): un verbo, una persona, un adjetivo y un adverbio."
+    },
+    "fr": {
+     "t": "La formation des mots en détail",
+     "g": "Construire des familles de mots : lavoro, lavorare, lavoratore, lavorativo.",
+     "p": [
+      "D'une racine naissent noms, verbes, personnes et adjectifs : lavoro, lavorare, lavoratore, lavorativo.",
+      "Suffixes courants : -tore/-trice (personne), -zione (action), -ivo/-ale (adjectif), -mente (adverbe).",
+      "Les préfixes changent le sens : ri- (à nouveau : rifare), dis- et in- (contraire : disordine, incapace), pre- (avant)."
+     ],
+     "q": "Quelle famille de mots italienne connais-tu le mieux ?",
+     "c": "Construis la famille d'une racine (studio, giorno ou vita) : un verbe, une personne, un adjectif, un adverbe."
+    },
+    "it": {
+     "t": "La formazione delle parole",
+     "g": "Costruire famiglie di parole: lavoro, lavorare, lavoratore, lavorativo.",
+     "p": [
+      "Da una radice nascono nomi, verbi, persone e aggettivi: lavoro, lavorare, lavoratore, lavorativo.",
+      "Suffissi comuni: -tore/-trice (persona), -zione (azione), -ivo/-ale (aggettivo), -mente (avverbio).",
+      "I prefissi cambiano il senso: ri- (di nuovo: rifare), dis- e in- (contrario: disordine, incapace), pre- (prima)."
+     ],
+     "q": "Quale famiglia di parole italiane conosci meglio?",
+     "c": "Costruisci la famiglia di una radice (studio, giorno o vita): un verbo, una persona, un aggettivo e un avverbio."
+    },
+    "pt": {
+     "t": "Formação de palavras a fundo",
+     "g": "Construir famílias de palavras: lavoro, lavorare, lavoratore, lavorativo.",
+     "p": [
+      "De uma raiz nascem nomes, verbos, pessoas e adjetivos: lavoro, lavorare, lavoratore, lavorativo.",
+      "Sufixos comuns: -tore/-trice (pessoa), -zione (ação), -ivo/-ale (adjetivo), -mente (advérbio).",
+      "Os prefixos mudam o sentido: ri- (de novo: rifare), dis- e in- (contrário: disordine, incapace), pre- (antes)."
+     ],
+     "q": "Que família de palavras italianas conheces melhor?",
+     "c": "Constrói a família de uma raiz (studio, giorno ou vita): um verbo, uma pessoa, um adjetivo e um advérbio."
+    },
+    "pt_BR": {
+     "t": "Formação de palavras a fundo",
+     "g": "Construir famílias de palavras: lavoro, lavorare, lavoratore, lavorativo.",
+     "p": [
+      "De uma raiz nascem substantivos, verbos, pessoas e adjetivos: lavoro, lavorare, lavoratore, lavorativo.",
+      "Sufixos comuns: -tore/-trice (pessoa), -zione (ação), -ivo/-ale (adjetivo), -mente (advérbio).",
+      "Os prefixos mudam o sentido: ri- (de novo: rifare), dis- e in- (contrário: disordine, incapace), pre- (antes)."
+     ],
+     "q": "Que família de palavras italianas você conhece melhor?",
+     "c": "Monte a família de uma raiz (studio, giorno ou vita): um verbo, uma pessoa, um adjetivo e um advérbio."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il lavoratore",
+      "ex": "È un lavoratore serio e puntuale."
+     },
+     {
+      "w": "lavorativo",
+      "ex": "La giornata lavorativa finisce alle sei."
+     },
+     {
+      "w": "rifare",
+      "ex": "Devo rifare l'esercizio da capo."
+     },
+     {
+      "w": "il disordine",
+      "ex": "Scusa il disordine, sto traslocando."
+     },
+     {
+      "w": "incapace",
+      "ex": "Non sono incapace, ho solo bisogno di tempo."
+     },
+     {
+      "w": "la traduttrice",
+      "ex": "Mia sorella fa la traduttrice."
+     }
+    ],
+    "gram": "Suffissi: -tore/-trice per persone (lettore, lettrice), -mente per avverbi (veloce > velocemente)."
+   }
+  },
+  {
+   "d": 330,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Synonyms to enrich your style",
+     "g": "Replace dire, fare and bello with precise alternatives.",
+     "p": [
+      "Instead of dire: affermare, spiegare, raccontare, sostenere, rispondere, aggiungere.",
+      "Instead of fare: preparare (una torta), commettere (un errore), scattare (una foto), praticare (uno sport).",
+      "Instead of bello: splendido, affascinante, suggestivo (a place), elegante, piacevole (a day)."
+     ],
+     "q": "Which word do you overuse in your own language?",
+     "c": "Rewrite: Ho fatto una foto bella e ho detto che il posto era bello. Use three better words."
+    },
+    "de": {
+     "t": "Synonyme für einen reicheren Stil",
+     "g": "Du ersetzt dire, fare und bello durch genauere Alternativen.",
+     "p": [
+      "Statt dire: affermare, spiegare, raccontare, sostenere, rispondere, aggiungere.",
+      "Statt fare: preparare (una torta), commettere (un errore), scattare (una foto), praticare (uno sport).",
+      "Statt bello: splendido, affascinante, suggestivo (ein Ort), elegante, piacevole (ein Tag)."
+     ],
+     "q": "Welches Wort benutzt du in deiner Sprache zu oft?",
+     "c": "Schreib um: Ho fatto una foto bella e ho detto che il posto era bello. Nutze drei bessere Wörter."
+    },
+    "es": {
+     "t": "Sinónimos para enriquecer tu estilo",
+     "g": "Sustituir dire, fare y bello por alternativas precisas.",
+     "p": [
+      "En vez de dire: affermare, spiegare, raccontare, sostenere, rispondere, aggiungere.",
+      "En vez de fare: preparare (una torta), commettere (un errore), scattare (una foto), praticare (uno sport).",
+      "En vez de bello: splendido, affascinante, suggestivo (un lugar), elegante, piacevole (un día)."
+     ],
+     "q": "¿Qué palabra usas demasiado en tu propio idioma?",
+     "c": "Reescribe: Ho fatto una foto bella e ho detto che il posto era bello. Usa tres palabras mejores."
+    },
+    "fr": {
+     "t": "Des synonymes pour enrichir ton style",
+     "g": "Remplacer dire, fare et bello par des mots plus précis.",
+     "p": [
+      "Au lieu de dire : affermare, spiegare, raccontare, sostenere, rispondere, aggiungere.",
+      "Au lieu de fare : preparare (una torta), commettere (un errore), scattare (una foto), praticare (uno sport).",
+      "Au lieu de bello : splendido, affascinante, suggestivo (un lieu), elegante, piacevole (une journée)."
+     ],
+     "q": "Quel mot utilises-tu trop dans ta propre langue ?",
+     "c": "Réécris : Ho fatto una foto bella e ho detto che il posto era bello. Utilise trois meilleurs mots."
+    },
+    "it": {
+     "t": "Sinonimi per arricchire lo stile",
+     "g": "Sostituire dire, fare e bello con alternative precise.",
+     "p": [
+      "Invece di dire: affermare, spiegare, raccontare, sostenere, rispondere, aggiungere.",
+      "Invece di fare: preparare (una torta), commettere (un errore), scattare (una foto), praticare (uno sport).",
+      "Invece di bello: splendido, affascinante, suggestivo (un luogo), elegante, piacevole (una giornata)."
+     ],
+     "q": "Quale parola usi troppo nella tua lingua?",
+     "c": "Riscrivi: Ho fatto una foto bella e ho detto che il posto era bello. Usa tre parole migliori."
+    },
+    "pt": {
+     "t": "Sinónimos para enriquecer o estilo",
+     "g": "Substituir dire, fare e bello por alternativas precisas.",
+     "p": [
+      "Em vez de dire: affermare, spiegare, raccontare, sostenere, rispondere, aggiungere.",
+      "Em vez de fare: preparare (una torta), commettere (un errore), scattare (una foto), praticare (uno sport).",
+      "Em vez de bello: splendido, affascinante, suggestivo (um lugar), elegante, piacevole (um dia)."
+     ],
+     "q": "Que palavra usas demasiado na tua própria língua?",
+     "c": "Reescreve: Ho fatto una foto bella e ho detto che il posto era bello. Usa três palavras melhores."
+    },
+    "pt_BR": {
+     "t": "Sinônimos para enriquecer o estilo",
+     "g": "Substituir dire, fare e bello por alternativas precisas.",
+     "p": [
+      "Em vez de dire: affermare, spiegare, raccontare, sostenere, rispondere, aggiungere.",
+      "Em vez de fare: preparare (una torta), commettere (un errore), scattare (una foto), praticare (uno sport).",
+      "Em vez de bello: splendido, affascinante, suggestivo (um lugar), elegante, piacevole (um dia)."
+     ],
+     "q": "Que palavra você usa demais na sua própria língua?",
+     "c": "Reescreva: Ho fatto una foto bella e ho detto che il posto era bello. Use três palavras melhores."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "affermare",
+      "ex": "Il direttore ha affermato che i risultati sono buoni."
+     },
+     {
+      "w": "scattare una foto",
+      "ex": "Mi scatti una foto davanti alla fontana?"
+     },
+     {
+      "w": "commettere un errore",
+      "ex": "Tutti commettono errori quando imparano."
+     },
+     {
+      "w": "suggestivo",
+      "ex": "Il borgo al tramonto è molto suggestivo."
+     },
+     {
+      "w": "affascinante",
+      "ex": "Ho letto una storia affascinante."
+     },
+     {
+      "w": "piacevole",
+      "ex": "Abbiamo passato una serata piacevole."
+     }
+    ],
+    "gram": "Verbi precisi al posto di fare: fare una domanda > porre una domanda; fare un errore > commettere un errore."
+   }
+  }
+ ]
+}

@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 331,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Homographs and accents",
+     "g": "Recognise words that change meaning with stress: pèsca and pésca, àncora and ancóra.",
+     "p": [
+      "Pèsca (open e) is the peach; pésca (closed e) is fishing. Written accents usually don't show this.",
+      "Àncora is an anchor; ancóra means again or still. Context tells you which one is meant.",
+      "Other pairs: prìncipi (princes) and princìpi (principles), càpitano (they happen) and capitàno (captain)."
+     ],
+     "q": "Do you know similar word pairs in your language that change with stress?",
+     "c": "Say aloud: Vorrei ancora una pesca, then explain which stress each word has."
+    },
+    "de": {
+     "t": "Homographen und Betonung",
+     "g": "Du erkennst Wörter, deren Bedeutung sich mit der Betonung ändert: pèsca und pésca, àncora und ancóra.",
+     "p": [
+      "Pèsca (offenes e) ist der Pfirsich; pésca (geschlossenes e) ist das Angeln. Meist wird das nicht geschrieben.",
+      "Àncora ist ein Anker; ancóra heißt noch oder wieder. Der Kontext zeigt, was gemeint ist.",
+      "Weitere Paare: prìncipi (Prinzen) und princìpi (Prinzipien), càpitano (sie geschehen) und capitàno (Kapitän)."
+     ],
+     "q": "Kennst du ähnliche Wortpaare in deiner Sprache, die sich mit der Betonung ändern?",
+     "c": "Sprich laut: Vorrei ancora una pesca, und erkläre, wie jedes Wort betont wird."
+    },
+    "es": {
+     "t": "Homógrafos y acentos",
+     "g": "Reconocer palabras que cambian de significado con el acento: pèsca y pésca, àncora y ancóra.",
+     "p": [
+      "Pèsca (e abierta) es el melocotón; pésca (e cerrada) es la pesca. Normalmente no se escribe el acento.",
+      "Àncora es un ancla; ancóra significa todavía u otra vez. El contexto lo aclara.",
+      "Otros pares: prìncipi (príncipes) y princìpi (principios), càpitano (ocurren) y capitàno (capitán)."
+     ],
+     "q": "¿Conoces pares parecidos en tu idioma que cambian con el acento?",
+     "c": "Di en voz alta: Vorrei ancora una pesca, y explica dónde va el acento de cada palabra."
+    },
+    "fr": {
+     "t": "Homographes et accent tonique",
+     "g": "Reconnaître les mots qui changent de sens selon l'accent : pèsca et pésca, àncora et ancóra.",
+     "p": [
+      "Pèsca (e ouvert) est la pêche, le fruit ; pésca (e fermé) est la pêche, l'activité. On ne l'écrit pas d'habitude.",
+      "Àncora est une ancre ; ancóra veut dire encore. Le contexte indique le sens.",
+      "Autres paires : prìncipi (princes) et princìpi (principes), càpitano (ils arrivent) et capitàno (capitaine)."
+     ],
+     "q": "Connais-tu des paires semblables dans ta langue qui changent selon l'accent ?",
+     "c": "Dis à voix haute : Vorrei ancora una pesca, puis explique l'accent de chaque mot."
+    },
+    "it": {
+     "t": "Omografi e accento",
+     "g": "Riconoscere le parole che cambiano significato con l'accento: pèsca e pésca, àncora e ancóra.",
+     "p": [
+      "Pèsca (e aperta) è il frutto; pésca (e chiusa) è l'attività del pescare. Di solito l'accento non si scrive.",
+      "Àncora è lo strumento della nave; ancóra significa di nuovo o tuttora. Decide il contesto.",
+      "Altre coppie: prìncipi e princìpi, càpitano (verbo capitare) e capitàno."
+     ],
+     "q": "Conosci coppie simili nella tua lingua che cambiano con l'accento?",
+     "c": "Leggi ad alta voce: Vorrei ancora una pesca, poi spiega dove cade l'accento di ogni parola."
+    },
+    "pt": {
+     "t": "Homógrafos e acento",
+     "g": "Reconhecer palavras que mudam de sentido com o acento: pèsca e pésca, àncora e ancóra.",
+     "p": [
+      "Pèsca (e aberto) é o pêssego; pésca (e fechado) é a pesca. Normalmente o acento não se escreve.",
+      "Àncora é uma âncora; ancóra significa ainda ou outra vez. O contexto esclarece.",
+      "Outros pares: prìncipi (príncipes) e princìpi (princípios), càpitano (acontecem) e capitàno (capitão)."
+     ],
+     "q": "Conheces pares parecidos na tua língua que mudam com o acento?",
+     "c": "Diz em voz alta: Vorrei ancora una pesca, e explica onde cai o acento de cada palavra."
+    },
+    "pt_BR": {
+     "t": "Homógrafos e acento tônico",
+     "g": "Reconhecer palavras que mudam de sentido com o acento: pèsca e pésca, àncora e ancóra.",
+     "p": [
+      "Pèsca (e aberto) é o pêssego; pésca (e fechado) é a pesca. Normalmente o acento não é escrito.",
+      "Àncora é uma âncora; ancóra significa ainda ou de novo. O contexto esclarece.",
+      "Outros pares: prìncipi (príncipes) e princìpi (princípios), càpitano (acontecem) e capitàno (capitão)."
+     ],
+     "q": "Você conhece pares parecidos na sua língua que mudam com o acento?",
+     "c": "Diga em voz alta: Vorrei ancora una pesca, e explique onde cai o acento de cada palavra."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la pesca (frutto)",
+      "ex": "Per merenda mangio una pesca matura."
+     },
+     {
+      "w": "la pesca (attività)",
+      "ex": "Mio nonno va a pesca ogni domenica."
+     },
+     {
+      "w": "l'ancora",
+      "ex": "La nave ha gettato l'ancora nel porto."
+     },
+     {
+      "w": "ancora",
+      "ex": "Vuoi ancora un po' di caffè?"
+     },
+     {
+      "w": "i principi",
+      "ex": "Ho dei principi molto chiari sul lavoro."
+     },
+     {
+      "w": "il capitano",
+      "ex": "Il capitano della squadra ha segnato un gol."
+     }
+    ],
+    "gram": "Accento tonico: in genere non si scrive dentro la parola; è obbligatorio solo sulla vocale finale (città, perché)."
+   }
+  },
+  {
+   "d": 332,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Punctuation and style",
+     "g": "Use commas, semicolons and paragraphs well in Italian writing.",
+     "p": [
+      "Commas separate lists and clauses, but never put a comma between subject and verb: Il libro è bello.",
+      "The semicolon (punto e virgola) links two related ideas more strongly than a comma, less than a full stop.",
+      "One idea per paragraph; Italian quotes use « » or quotation marks, and dialogue often uses a dash."
+     ],
+     "q": "Do you prefer long flowing sentences or short punchy ones when you write?",
+     "c": "Write a short paragraph with at least one semicolon and one list separated by commas."
+    },
+    "de": {
+     "t": "Zeichensetzung und Stil",
+     "g": "Du setzt Kommas, Semikolons und Absätze im Italienischen richtig.",
+     "p": [
+      "Kommas trennen Aufzählungen und Satzteile, aber nie zwischen Subjekt und Verb: Il libro è bello.",
+      "Das Semikolon (punto e virgola) verbindet zwei verwandte Gedanken stärker als ein Komma, schwächer als ein Punkt.",
+      "Ein Gedanke pro Absatz; Zitate stehen in « » oder Anführungszeichen, Dialoge oft mit Gedankenstrich."
+     ],
+     "q": "Schreibst du lieber lange, fließende oder kurze, knackige Sätze?",
+     "c": "Schreib einen kurzen Absatz mit mindestens einem Semikolon und einer Aufzählung mit Kommas."
+    },
+    "es": {
+     "t": "Puntuación y estilo",
+     "g": "Usar bien comas, punto y coma y párrafos al escribir en italiano.",
+     "p": [
+      "La coma separa listas y oraciones, pero nunca va entre sujeto y verbo: Il libro è bello.",
+      "El punto y coma (punto e virgola) une dos ideas relacionadas más que una coma y menos que un punto.",
+      "Una idea por párrafo; las citas van entre « » o comillas, y el diálogo usa a menudo la raya."
+     ],
+     "q": "Al escribir, ¿prefieres frases largas y fluidas o cortas y directas?",
+     "c": "Escribe un párrafo breve con al menos un punto y coma y una enumeración con comas."
+    },
+    "fr": {
+     "t": "Ponctuation et style",
+     "g": "Bien utiliser virgules, points-virgules et paragraphes en italien.",
+     "p": [
+      "La virgule sépare listes et propositions, mais jamais le sujet du verbe : Il libro è bello.",
+      "Le point-virgule (punto e virgola) relie deux idées proches, plus fort qu'une virgule, moins qu'un point.",
+      "Une idée par paragraphe ; les citations sont entre « » ou guillemets, le dialogue utilise souvent le tiret."
+     ],
+     "q": "En écrivant, tu préfères les phrases longues et fluides ou courtes et percutantes ?",
+     "c": "Écris un court paragraphe avec au moins un point-virgule et une énumération avec virgules."
+    },
+    "it": {
+     "t": "Punteggiatura e stile",
+     "g": "Usare bene virgole, punto e virgola e paragrafi nella scrittura.",
+     "p": [
+      "La virgola separa elenchi e frasi, ma non si mette mai tra soggetto e verbo: Il libro è bello.",
+      "Il punto e virgola unisce due idee collegate più di una virgola e meno di un punto.",
+      "Un'idea per paragrafo; le citazioni vanno tra « » o virgolette, il dialogo usa spesso la lineetta."
+     ],
+     "q": "Quando scrivi preferisci frasi lunghe e scorrevoli o brevi e incisive?",
+     "c": "Scrivi un breve paragrafo con almeno un punto e virgola e un elenco separato da virgole."
+    },
+    "pt": {
+     "t": "Pontuação e estilo",
+     "g": "Usar bem vírgulas, pontos e vírgulas e parágrafos ao escrever em italiano.",
+     "p": [
+      "A vírgula separa listas e orações, mas nunca entre sujeito e verbo: Il libro è bello.",
+      "O ponto e vírgula (punto e virgola) liga duas ideias próximas, mais do que a vírgula e menos do que o ponto.",
+      "Uma ideia por parágrafo; as citações vão entre « » ou aspas, e o diálogo usa muitas vezes o travessão."
+     ],
+     "q": "Quando escreves, preferes frases longas e fluidas ou curtas e incisivas?",
+     "c": "Escreve um parágrafo curto com pelo menos um ponto e vírgula e uma enumeração com vírgulas."
+    },
+    "pt_BR": {
+     "t": "Pontuação e estilo",
+     "g": "Usar bem vírgulas, ponto e vírgula e parágrafos ao escrever em italiano.",
+     "p": [
+      "A vírgula separa listas e orações, mas nunca fica entre sujeito e verbo: Il libro è bello.",
+      "O ponto e vírgula (punto e virgola) liga duas ideias próximas, mais que a vírgula e menos que o ponto.",
+      "Uma ideia por parágrafo; citações vão entre « » ou aspas, e o diálogo usa muitas vezes o travessão."
+     ],
+     "q": "Quando você escreve, prefere frases longas e fluidas ou curtas e diretas?",
+     "c": "Escreva um parágrafo curto com pelo menos um ponto e vírgula e uma enumeração com vírgulas."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la virgola",
+      "ex": "Qui manca una virgola prima di ma."
+     },
+     {
+      "w": "il punto e virgola",
+      "ex": "Usa il punto e virgola tra due frasi collegate."
+     },
+     {
+      "w": "il paragrafo",
+      "ex": "Ogni paragrafo sviluppa un'idea."
+     },
+     {
+      "w": "i due punti",
+      "ex": "Ho comprato tre cose: pane, latte e uova."
+     },
+     {
+      "w": "le virgolette",
+      "ex": "Il titolo del libro va tra virgolette."
+     },
+     {
+      "w": "andare a capo",
+      "ex": "Dopo questa frase, vai a capo."
+     }
+    ],
+    "gram": "Mai la virgola tra soggetto e verbo; sì prima di ma e dopo un inciso: Marco, il mio vicino, è medico."
+   }
+  },
+  {
+   "d": 333,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Spelling traps for advanced learners",
+     "g": "Avoid traps like qu versus cu, un'amica with apostrophe, and accents on è and perché.",
+     "p": [
+      "Qu or cu? Mostly qu (quadro, acqua), but cu in cuore, scuola, cuoco; acqua has cq, and soqquadro has qq.",
+      "Apostrophe: un amico (no apostrophe) but un'amica (feminine); qual è never takes an apostrophe.",
+      "Accents: è (is) versus e (and); perché, poiché, affinché take an acute accent; sì (yes) versus si."
+     ],
+     "q": "Which Italian spelling mistake do you make most often?",
+     "c": "Write five short sentences that each contain one of today's traps, spelled correctly."
+    },
+    "de": {
+     "t": "Rechtschreibfallen für Fortgeschrittene",
+     "g": "Du vermeidest Fallen wie qu oder cu, un'amica mit Apostroph und Akzente auf è und perché.",
+     "p": [
+      "Qu oder cu? Meist qu (quadro, acqua), aber cu in cuore, scuola, cuoco; acqua mit cq, soqquadro mit qq.",
+      "Apostroph: un amico (ohne) aber un'amica (weiblich); qual è hat nie einen Apostroph.",
+      "Akzente: è (ist) und e (und); perché, poiché, affinché mit Akut; sì (ja) und si."
+     ],
+     "q": "Welchen italienischen Rechtschreibfehler machst du am häufigsten?",
+     "c": "Schreib fünf kurze Sätze, die jeweils eine der heutigen Fallen richtig enthalten."
+    },
+    "es": {
+     "t": "Trampas ortográficas para avanzados",
+     "g": "Evitar trampas como qu o cu, un'amica con apóstrofo y los acentos de è y perché.",
+     "p": [
+      "¿Qu o cu? Casi siempre qu (quadro, acqua), pero cu en cuore, scuola, cuoco; acqua con cq, soqquadro con qq.",
+      "Apóstrofo: un amico (sin) pero un'amica (femenino); qual è nunca lleva apóstrofo.",
+      "Acentos: è (es) frente a e (y); perché, poiché, affinché con acento agudo; sì (sí) frente a si."
+     ],
+     "q": "¿Qué error ortográfico en italiano cometes más a menudo?",
+     "c": "Escribe cinco frases cortas que contengan cada una una trampa de hoy, bien escrita."
+    },
+    "fr": {
+     "t": "Pièges d'orthographe pour avancés",
+     "g": "Éviter les pièges comme qu ou cu, un'amica avec apostrophe et les accents de è et perché.",
+     "p": [
+      "Qu ou cu ? Surtout qu (quadro, acqua), mais cu dans cuore, scuola, cuoco ; acqua avec cq, soqquadro avec qq.",
+      "Apostrophe : un amico (sans) mais un'amica (féminin) ; qual è ne prend jamais d'apostrophe.",
+      "Accents : è (est) contre e (et) ; perché, poiché, affinché avec accent aigu ; sì (oui) contre si."
+     ],
+     "q": "Quelle faute d'orthographe italienne fais-tu le plus souvent ?",
+     "c": "Écris cinq phrases courtes contenant chacune un piège du jour, bien orthographié."
+    },
+    "it": {
+     "t": "Trappole ortografiche per livelli avanzati",
+     "g": "Evitare trappole come qu o cu, l'apostrofo in un'amica e gli accenti su è e perché.",
+     "p": [
+      "Qu o cu? Di solito qu (quadro, acqua), ma cu in cuore, scuola, cuoco; acqua vuole cq, soqquadro qq.",
+      "Apostrofo: un amico (senza) ma un'amica (femminile); qual è non vuole mai l'apostrofo.",
+      "Accenti: è (verbo) ed e (congiunzione); perché, poiché, affinché con accento acuto; sì (affermazione) e si."
+     ],
+     "q": "Quale errore di ortografia italiana fai più spesso?",
+     "c": "Scrivi cinque frasi brevi, ognuna con una trappola di oggi scritta correttamente."
+    },
+    "pt": {
+     "t": "Armadilhas ortográficas para avançados",
+     "g": "Evitar armadilhas como qu ou cu, un'amica com apóstrofo e os acentos de è e perché.",
+     "p": [
+      "Qu ou cu? Quase sempre qu (quadro, acqua), mas cu em cuore, scuola, cuoco; acqua com cq, soqquadro com qq.",
+      "Apóstrofo: un amico (sem) mas un'amica (feminino); qual è nunca leva apóstrofo.",
+      "Acentos: è (é) e e (e); perché, poiché, affinché com acento agudo; sì (sim) e si."
+     ],
+     "q": "Que erro ortográfico em italiano dás mais vezes?",
+     "c": "Escreve cinco frases curtas, cada uma com uma armadilha de hoje, bem escrita."
+    },
+    "pt_BR": {
+     "t": "Pegadinhas ortográficas para avançados",
+     "g": "Evitar pegadinhas como qu ou cu, un'amica com apóstrofo e os acentos de è e perché.",
+     "p": [
+      "Qu ou cu? Quase sempre qu (quadro, acqua), mas cu em cuore, scuola, cuoco; acqua com cq, soqquadro com qq.",
+      "Apóstrofo: un amico (sem) mas un'amica (feminino); qual è nunca leva apóstrofo.",
+      "Acentos: è (é) e e (e); perché, poiché, affinché com acento agudo; sì (sim) e si."
+     ],
+     "q": "Qual erro de ortografia em italiano você comete mais?",
+     "c": "Escreva cinco frases curtas, cada uma com uma pegadinha de hoje, escrita corretamente."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la scuola",
+      "ex": "La scuola è vicino a casa mia."
+     },
+     {
+      "w": "l'acqua",
+      "ex": "Un bicchiere d'acqua, per favore."
+     },
+     {
+      "w": "un'amica",
+      "ex": "Stasera esco con un'amica."
+     },
+     {
+      "w": "qual è",
+      "ex": "Qual è il tuo libro preferito?"
+     },
+     {
+      "w": "perché",
+      "ex": "Perché studi l'italiano? Perché mi piace."
+     },
+     {
+      "w": "sì",
+      "ex": "Sì, vengo anch'io, se si mangia bene."
+     }
+    ],
+    "gram": "Un + maschile senza apostrofo (un amico), un' + femminile con apostrofo (un'amica); qual è senza apostrofo."
+   }
+  },
+  {
+   "d": 334,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Translating your thoughts naturally",
+     "g": "Avoid literal translation and think in Italian structures.",
+     "p": [
+      "Italian often uses different verbs: ho fame (I am hungry), fa freddo (it is cold), ho ragione (I am right).",
+      "Mind false friends: camera (room), parenti (relatives), libreria (bookshop), fattoria (farm).",
+      "Think in chunks, not single words: Mi manchi (I miss you), Ci vuole tempo (it takes time), Ne vale la pena."
+     ],
+     "q": "Is there a phrase from your language that you always translate too literally?",
+     "c": "Pick three sentences you'd say today and express them with Italian chunks, not word by word."
+    },
+    "de": {
+     "t": "Gedanken natürlich übersetzen",
+     "g": "Du vermeidest wörtliche Übersetzung und denkst in italienischen Strukturen.",
+     "p": [
+      "Italienisch nutzt oft andere Verben: ho fame (ich habe Hunger), fa freddo (es ist kalt), ho ragione (ich habe recht).",
+      "Achte auf falsche Freunde: camera (Zimmer), parenti (Verwandte), libreria (Buchhandlung), fattoria (Bauernhof).",
+      "Denk in Wortblöcken: Mi manchi (du fehlst mir), Ci vuole tempo (es braucht Zeit), Ne vale la pena."
+     ],
+     "q": "Gibt es eine Wendung deiner Sprache, die du immer zu wörtlich übersetzt?",
+     "c": "Nimm drei Sätze, die du heute sagen würdest, und drück sie mit italienischen Wendungen aus."
+    },
+    "es": {
+     "t": "Traducir tus pensamientos con naturalidad",
+     "g": "Evitar la traducción literal y pensar con estructuras italianas.",
+     "p": [
+      "El italiano usa a veces otros verbos: ho fame (tengo hambre), fa freddo (hace frío), ho ragione (tengo razón).",
+      "Cuidado con los falsos amigos: camera (habitación), burro (mantequilla), salire (subir), guardare (mirar).",
+      "Piensa en bloques: Mi manchi (te echo de menos), Ci vuole tempo (lleva tiempo), Ne vale la pena."
+     ],
+     "q": "¿Hay alguna frase de tu idioma que siempre traduces demasiado literal?",
+     "c": "Elige tres frases que dirías hoy y exprésalas con bloques italianos, no palabra por palabra."
+    },
+    "fr": {
+     "t": "Traduire tes pensées naturellement",
+     "g": "Éviter la traduction littérale et penser avec des structures italiennes.",
+     "p": [
+      "L'italien utilise parfois d'autres verbes : ho fame (j'ai faim), fa freddo (il fait froid), ho ragione (j'ai raison).",
+      "Attention aux faux amis : camera (chambre), parenti (proches), libreria (librairie), fattoria (ferme).",
+      "Pense en blocs : Mi manchi (tu me manques), Ci vuole tempo (il faut du temps), Ne vale la pena."
+     ],
+     "q": "Y a-t-il une phrase de ta langue que tu traduis toujours trop littéralement ?",
+     "c": "Choisis trois phrases que tu dirais aujourd'hui et exprime-les avec des blocs italiens."
+    },
+    "it": {
+     "t": "Tradurre i pensieri con naturalezza",
+     "g": "Evitare la traduzione letterale e pensare con strutture italiane.",
+     "p": [
+      "L'italiano usa spesso verbi diversi da altre lingue: ho fame, fa freddo, ho ragione, ho sonno.",
+      "Attenzione ai falsi amici: camera (stanza), parenti (familiari), libreria (negozio di libri), fattoria.",
+      "Pensa per blocchi, non per parole: Mi manchi, Ci vuole tempo, Ne vale la pena."
+     ],
+     "q": "C'è un'espressione della tua lingua che traduci sempre troppo alla lettera?",
+     "c": "Scegli tre frasi che diresti oggi ed esprimile con blocchi italiani, non parola per parola."
+    },
+    "pt": {
+     "t": "Traduzir os pensamentos com naturalidade",
+     "g": "Evitar a tradução literal e pensar com estruturas italianas.",
+     "p": [
+      "O italiano usa por vezes outros verbos: ho fame (tenho fome), fa freddo (está frio), ho ragione (tenho razão).",
+      "Cuidado com os falsos amigos: burro (manteiga), squisito (delicioso), salire (subir), guardare (olhar).",
+      "Pensa em blocos: Mi manchi (tenho saudades tuas), Ci vuole tempo (leva tempo), Ne vale la pena."
+     ],
+     "q": "Há alguma expressão da tua língua que traduzes sempre demasiado à letra?",
+     "c": "Escolhe três frases que dirias hoje e exprime-as com blocos italianos, não palavra a palavra."
+    },
+    "pt_BR": {
+     "t": "Traduzindo pensamentos com naturalidade",
+     "g": "Evitar a tradução literal e pensar com estruturas italianas.",
+     "p": [
+      "O italiano às vezes usa outros verbos: ho fame (estou com fome), fa freddo (está frio), ho ragione (tenho razão).",
+      "Cuidado com os falsos amigos: burro (manteiga), squisito (delicioso), salire (subir), guardare (olhar).",
+      "Pense em blocos: Mi manchi (sinto sua falta), Ci vuole tempo (leva tempo), Ne vale la pena."
+     ],
+     "q": "Existe alguma expressão da sua língua que você sempre traduz ao pé da letra?",
+     "c": "Escolha três frases que você diria hoje e expresse com blocos italianos, não palavra por palavra."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "mi manchi",
+      "ex": "Quando sei lontano, mi manchi molto."
+     },
+     {
+      "w": "ci vuole tempo",
+      "ex": "Per imparare una lingua ci vuole tempo."
+     },
+     {
+      "w": "ne vale la pena",
+      "ex": "È faticoso, ma ne vale la pena."
+     },
+     {
+      "w": "fa freddo",
+      "ex": "Oggi fa freddo, mettiti la sciarpa."
+     },
+     {
+      "w": "il falso amico",
+      "ex": "Libreria è un falso amico per chi parla inglese."
+     },
+     {
+      "w": "alla lettera",
+      "ex": "Non tradurre questa frase alla lettera."
+     }
+    ],
+    "gram": "Mancare funziona al contrario: tu mi manchi (lo sento io); ci vuole + singolare, ci vogliono + plurale."
+   }
+  },
+  {
+   "d": 335,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Listening to podcasts and radio",
+     "g": "Use strategies to follow long, fast speech and take notes.",
+     "p": [
+      "Before listening, predict the topic from the title; while listening, focus on key words, not every word.",
+      "Take short notes: names, numbers, connectors like però, quindi, insomma that signal the structure.",
+      "Listen twice: first for the gist, then for details. Slow the speed a little if the app allows it."
+     ],
+     "q": "What kind of Italian podcast or radio show would you enjoy?",
+     "c": "Listen to five minutes of Italian audio and write down three key words and one main idea."
+    },
+    "de": {
+     "t": "Podcasts und Radio hören",
+     "g": "Du nutzt Strategien, um langer, schneller Rede zu folgen und Notizen zu machen.",
+     "p": [
+      "Vor dem Hören das Thema aus dem Titel erraten; beim Hören auf Schlüsselwörter achten, nicht auf jedes Wort.",
+      "Kurze Notizen: Namen, Zahlen, Konnektoren wie però, quindi, insomma, die die Struktur zeigen.",
+      "Zweimal hören: erst fürs Grobe, dann für Details. Wenn möglich, das Tempo etwas drosseln."
+     ],
+     "q": "Welche Art italienischer Podcast oder Radiosendung würde dir gefallen?",
+     "c": "Hör fünf Minuten italienisches Audio und notiere drei Schlüsselwörter und eine Hauptidee."
+    },
+    "es": {
+     "t": "Escuchar pódcasts y radio",
+     "g": "Usar estrategias para seguir un discurso largo y rápido y tomar notas.",
+     "p": [
+      "Antes de escuchar, adivina el tema por el título; al escuchar, céntrate en palabras clave, no en todas.",
+      "Toma notas breves: nombres, números y conectores como però, quindi, insomma que marcan la estructura.",
+      "Escucha dos veces: primero lo esencial, luego los detalles. Si la app lo permite, baja un poco la velocidad."
+     ],
+     "q": "¿Qué tipo de pódcast o programa de radio italiano te gustaría?",
+     "c": "Escucha cinco minutos de audio en italiano y apunta tres palabras clave y una idea principal."
+    },
+    "fr": {
+     "t": "Écouter podcasts et radio",
+     "g": "Utiliser des stratégies pour suivre un discours long et rapide et prendre des notes.",
+     "p": [
+      "Avant d'écouter, devine le sujet d'après le titre ; en écoutant, concentre-toi sur les mots clés.",
+      "Prends des notes courtes : noms, chiffres, connecteurs comme però, quindi, insomma qui montrent la structure.",
+      "Écoute deux fois : d'abord l'essentiel, puis les détails. Ralentis un peu la vitesse si l'appli le permet."
+     ],
+     "q": "Quel genre de podcast ou d'émission de radio italienne te plairait ?",
+     "c": "Écoute cinq minutes d'audio italien et note trois mots clés et une idée principale."
+    },
+    "it": {
+     "t": "Ascoltare podcast e radio",
+     "g": "Usare strategie per seguire discorsi lunghi e veloci e prendere appunti.",
+     "p": [
+      "Prima di ascoltare, prevedi l'argomento dal titolo; durante l'ascolto concentrati sulle parole chiave.",
+      "Prendi appunti brevi: nomi, numeri e connettivi come però, quindi, insomma, che segnalano la struttura.",
+      "Ascolta due volte: prima il senso generale, poi i dettagli. Se l'app lo permette, rallenta un po' la velocità."
+     ],
+     "q": "Che tipo di podcast o programma radio italiano ti piacerebbe?",
+     "c": "Ascolta cinque minuti di audio in italiano e annota tre parole chiave e un'idea principale."
+    },
+    "pt": {
+     "t": "Ouvir podcasts e rádio",
+     "g": "Usar estratégias para acompanhar discursos longos e rápidos e tirar notas.",
+     "p": [
+      "Antes de ouvir, prevê o tema pelo título; ao ouvir, concentra-te nas palavras-chave, não em todas.",
+      "Toma notas curtas: nomes, números e conectores como però, quindi, insomma, que mostram a estrutura.",
+      "Ouve duas vezes: primeiro o essencial, depois os pormenores. Se a app deixar, baixa um pouco a velocidade."
+     ],
+     "q": "Que tipo de podcast ou programa de rádio italiano gostarias de ouvir?",
+     "c": "Ouve cinco minutos de áudio em italiano e anota três palavras-chave e uma ideia principal."
+    },
+    "pt_BR": {
+     "t": "Ouvindo podcasts e rádio",
+     "g": "Usar estratégias para acompanhar falas longas e rápidas e fazer anotações.",
+     "p": [
+      "Antes de ouvir, adivinhe o tema pelo título; ao ouvir, foque nas palavras-chave, não em todas.",
+      "Faça anotações curtas: nomes, números e conectivos como però, quindi, insomma, que mostram a estrutura.",
+      "Ouça duas vezes: primeiro o essencial, depois os detalhes. Se o app permitir, diminua um pouco a velocidade."
+     ],
+     "q": "Que tipo de podcast ou programa de rádio italiano você curtiria?",
+     "c": "Ouça cinco minutos de áudio em italiano e anote três palavras-chave e uma ideia principal."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la puntata",
+      "ex": "Ho ascoltato l'ultima puntata del podcast."
+     },
+     {
+      "w": "prendere appunti",
+      "ex": "Durante la lezione prendo sempre appunti."
+     },
+     {
+      "w": "la parola chiave",
+      "ex": "Sottolinea le parole chiave del testo."
+     },
+     {
+      "w": "insomma",
+      "ex": "Insomma, è stata una giornata lunga."
+     },
+     {
+      "w": "il conduttore",
+      "ex": "Il conduttore parla in modo chiaro e simpatico."
+     },
+     {
+      "w": "riascoltare",
+      "ex": "Ho riascoltato l'intervista due volte."
+     }
+    ],
+    "gram": "Segnali discorsivi: insomma (per riassumere), però (contrasto), quindi (conseguenza), cioè (per spiegare)."
+   }
+  },
+  {
+   "d": 336,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Understanding films without subtitles",
+     "g": "Train your ear for dialogue, slang and regional voices.",
+     "p": [
+      "Start with Italian subtitles, then remove them; rewatch scenes you love several times.",
+      "Expect fast spoken forms: 'sto (questo), ce l'hai?, mo' (now, in the south), boh (I don't know).",
+      "Regional accents are normal: Roman, Neapolitan and Milanese voices differ, but the standard is understood everywhere."
+     ],
+     "q": "Which Italian film or series would you like to watch without subtitles?",
+     "c": "Watch a two-minute scene twice without subtitles and write down five words you heard."
+    },
+    "de": {
+     "t": "Filme ohne Untertitel verstehen",
+     "g": "Du trainierst dein Ohr für Dialoge, Umgangssprache und regionale Stimmen.",
+     "p": [
+      "Beginne mit italienischen Untertiteln, dann ohne; schau Lieblingsszenen mehrmals an.",
+      "Rechne mit schnellen Sprechformen: 'sto (questo), ce l'hai?, mo' (jetzt, im Süden), boh (keine Ahnung).",
+      "Regionale Akzente sind normal: Römisch, Neapolitanisch und Mailändisch klingen anders, Standard versteht man überall."
+     ],
+     "q": "Welchen italienischen Film oder welche Serie würdest du gern ohne Untertitel sehen?",
+     "c": "Sieh dir eine Zwei-Minuten-Szene zweimal ohne Untertitel an und notiere fünf gehörte Wörter."
+    },
+    "es": {
+     "t": "Entender películas sin subtítulos",
+     "g": "Entrenar el oído para diálogos, jerga y voces regionales.",
+     "p": [
+      "Empieza con subtítulos en italiano y luego quítalos; vuelve a ver varias veces tus escenas favoritas.",
+      "Espera formas rápidas: 'sto (questo), ce l'hai?, mo' (ahora, en el sur), boh (ni idea).",
+      "Los acentos regionales son normales: romano, napolitano y milanés suenan distinto, pero el estándar se entiende en todas partes."
+     ],
+     "q": "¿Qué película o serie italiana te gustaría ver sin subtítulos?",
+     "c": "Mira una escena de dos minutos dos veces sin subtítulos y apunta cinco palabras que oíste."
+    },
+    "fr": {
+     "t": "Comprendre les films sans sous-titres",
+     "g": "Entraîner ton oreille aux dialogues, à l'argot et aux accents régionaux.",
+     "p": [
+      "Commence avec des sous-titres italiens, puis enlève-les ; revois plusieurs fois les scènes que tu aimes.",
+      "Attends-toi à des formes rapides : 'sto (questo), ce l'hai?, mo' (maintenant, au sud), boh (aucune idée).",
+      "Les accents régionaux sont normaux : romain, napolitain et milanais diffèrent, mais le standard se comprend partout."
+     ],
+     "q": "Quel film ou quelle série italienne aimerais-tu regarder sans sous-titres ?",
+     "c": "Regarde deux fois une scène de deux minutes sans sous-titres et note cinq mots entendus."
+    },
+    "it": {
+     "t": "Capire i film senza sottotitoli",
+     "g": "Allenare l'orecchio a dialoghi, gergo e voci regionali.",
+     "p": [
+      "Inizia con i sottotitoli in italiano, poi toglili; riguarda più volte le scene che ami.",
+      "Aspettati forme rapide del parlato: 'sto (questo), ce l'hai?, mo' (adesso, al Sud), boh (non lo so).",
+      "Gli accenti regionali sono normali: romano, napoletano e milanese suonano diversi, ma lo standard si capisce ovunque."
+     ],
+     "q": "Quale film o serie italiana ti piacerebbe vedere senza sottotitoli?",
+     "c": "Guarda due volte una scena di due minuti senza sottotitoli e annota cinque parole che hai sentito."
+    },
+    "pt": {
+     "t": "Perceber filmes sem legendas",
+     "g": "Treinar o ouvido para diálogos, calão e sotaques regionais.",
+     "p": [
+      "Começa com legendas em italiano e depois tira-as; revê várias vezes as cenas de que gostas.",
+      "Conta com formas rápidas: 'sto (questo), ce l'hai?, mo' (agora, no sul), boh (sei lá).",
+      "Os sotaques regionais são normais: romano, napolitano e milanês soam diferentes, mas o padrão percebe-se em todo o lado."
+     ],
+     "q": "Que filme ou série italiana gostarias de ver sem legendas?",
+     "c": "Vê duas vezes uma cena de dois minutos sem legendas e anota cinco palavras que ouviste."
+    },
+    "pt_BR": {
+     "t": "Entendendo filmes sem legenda",
+     "g": "Treinar o ouvido para diálogos, gírias e sotaques regionais.",
+     "p": [
+      "Comece com legendas em italiano e depois tire; reveja várias vezes as cenas de que você gosta.",
+      "Espere formas rápidas: 'sto (questo), ce l'hai?, mo' (agora, no sul), boh (sei lá).",
+      "Sotaques regionais são normais: romano, napolitano e milanês soam diferentes, mas o padrão é entendido em todo lugar."
+     ],
+     "q": "Que filme ou série italiana você gostaria de ver sem legenda?",
+     "c": "Assista duas vezes a uma cena de dois minutos sem legenda e anote cinco palavras que ouviu."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "i sottotitoli",
+      "ex": "Stasera guardo il film senza sottotitoli."
+     },
+     {
+      "w": "la battuta",
+      "ex": "La battuta finale del film è famosissima."
+     },
+     {
+      "w": "il doppiaggio",
+      "ex": "In Italia il doppiaggio dei film è molto curato."
+     },
+     {
+      "w": "ce l'hai?",
+      "ex": "Hai una penna? Sì, ce l'ho."
+     },
+     {
+      "w": "boh",
+      "ex": "Dove sono le chiavi? Boh, non lo so."
+     },
+     {
+      "w": "l'accento",
+      "ex": "Ha un accento romano molto simpatico."
+     }
+    ],
+    "gram": "Averci nel parlato: ce l'hai? ce l'ho (con pronome diretto lo/la/li/le); ci + avere davanti a lo diventa ce l'."
+   }
+  },
+  {
+   "d": 337,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Review: style and comprehension",
+     "g": "Recap vocabulary building, spelling and listening strategies.",
+     "p": [
+      "Words: idioms (rompere il ghiaccio), verb + adverb (tirare fuori), word families and precise synonyms.",
+      "Writing: stress pairs (pèsca, pésca), punctuation, un'amica and qual è, natural chunks instead of literal translation.",
+      "Listening: predict, catch key words and connectors, listen twice; with films, start with Italian subtitles."
+     ],
+     "q": "Which strategy from these lessons has helped you most?",
+     "c": "Write a short paragraph with an idiom, a verb with fuori or giù and a precise synonym of bello."
+    },
+    "de": {
+     "t": "Wiederholung: Stil und Verstehen",
+     "g": "Du wiederholst Wortschatzaufbau, Rechtschreibung und Hörstrategien.",
+     "p": [
+      "Wörter: Redewendungen (rompere il ghiaccio), Verb + Adverb (tirare fuori), Wortfamilien und genaue Synonyme.",
+      "Schreiben: Betonungspaare (pèsca, pésca), Zeichensetzung, un'amica und qual è, Wendungen statt wörtlicher Übersetzung.",
+      "Hören: vorhersagen, Schlüsselwörter und Konnektoren erfassen, zweimal hören; bei Filmen mit italienischen Untertiteln starten."
+     ],
+     "q": "Welche Strategie aus diesen Lektionen hat dir am meisten geholfen?",
+     "c": "Schreib einen kurzen Absatz mit einer Redewendung, einem Verb mit fuori oder giù und einem Synonym für bello."
+    },
+    "es": {
+     "t": "Repaso: estilo y comprensión",
+     "g": "Repasar vocabulario, ortografía y estrategias de escucha.",
+     "p": [
+      "Palabras: modismos (rompere il ghiaccio), verbo + adverbio (tirare fuori), familias de palabras y sinónimos precisos.",
+      "Escritura: pares por acento (pèsca, pésca), puntuación, un'amica y qual è, bloques en vez de traducción literal.",
+      "Escucha: anticipar, captar palabras clave y conectores, escuchar dos veces; en el cine, empezar con subtítulos en italiano."
+     ],
+     "q": "¿Qué estrategia de estas lecciones te ha ayudado más?",
+     "c": "Escribe un párrafo breve con un modismo, un verbo con fuori o giù y un sinónimo preciso de bello."
+    },
+    "fr": {
+     "t": "Révision : style et compréhension",
+     "g": "Réviser l'enrichissement du vocabulaire, l'orthographe et les stratégies d'écoute.",
+     "p": [
+      "Mots : expressions (rompere il ghiaccio), verbe + adverbe (tirare fuori), familles de mots et synonymes précis.",
+      "Écrit : paires d'accent (pèsca, pésca), ponctuation, un'amica et qual è, blocs plutôt que traduction littérale.",
+      "Écoute : anticiper, saisir mots clés et connecteurs, écouter deux fois ; au cinéma, commencer avec sous-titres italiens."
+     ],
+     "q": "Quelle stratégie de ces leçons t'a le plus aidé ?",
+     "c": "Écris un court paragraphe avec une expression, un verbe avec fuori ou giù et un synonyme précis de bello."
+    },
+    "it": {
+     "t": "Ripasso: stile e comprensione",
+     "g": "Ripassare arricchimento lessicale, ortografia e strategie di ascolto.",
+     "p": [
+      "Parole: modi di dire (rompere il ghiaccio), verbo + avverbio (tirare fuori), famiglie di parole e sinonimi precisi.",
+      "Scrittura: coppie di accento (pèsca, pésca), punteggiatura, un'amica e qual è, blocchi invece di traduzioni letterali.",
+      "Ascolto: prevedere, cogliere parole chiave e connettivi, ascoltare due volte; per i film, iniziare con i sottotitoli in italiano."
+     ],
+     "q": "Quale strategia di queste lezioni ti è stata più utile?",
+     "c": "Scrivi un breve paragrafo con un modo di dire, un verbo con fuori o giù e un sinonimo preciso di bello."
+    },
+    "pt": {
+     "t": "Revisão: estilo e compreensão",
+     "g": "Rever vocabulário, ortografia e estratégias de audição.",
+     "p": [
+      "Palavras: expressões (rompere il ghiaccio), verbo + advérbio (tirare fuori), famílias de palavras e sinónimos precisos.",
+      "Escrita: pares de acento (pèsca, pésca), pontuação, un'amica e qual è, blocos em vez de tradução literal.",
+      "Audição: prever, apanhar palavras-chave e conectores, ouvir duas vezes; nos filmes, começar com legendas em italiano."
+     ],
+     "q": "Que estratégia destas lições te ajudou mais?",
+     "c": "Escreve um parágrafo curto com uma expressão, um verbo com fuori ou giù e um sinónimo preciso de bello."
+    },
+    "pt_BR": {
+     "t": "Revisão: estilo e compreensão",
+     "g": "Revisar vocabulário, ortografia e estratégias de escuta.",
+     "p": [
+      "Palavras: expressões (rompere il ghiaccio), verbo + advérbio (tirare fuori), famílias de palavras e sinônimos precisos.",
+      "Escrita: pares de acento (pèsca, pésca), pontuação, un'amica e qual è, blocos em vez de tradução literal.",
+      "Escuta: prever, pegar palavras-chave e conectivos, ouvir duas vezes; nos filmes, começar com legenda em italiano."
+     ],
+     "q": "Qual estratégia destas lições mais ajudou você?",
+     "c": "Escreva um parágrafo curto com uma expressão, um verbo com fuori ou giù e um sinônimo preciso de bello."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "rompere il ghiaccio",
+      "ex": "Il gioco iniziale serve a rompere il ghiaccio."
+     },
+     {
+      "w": "venire fuori",
+      "ex": "Durante la discussione sono venute fuori buone idee."
+     },
+     {
+      "w": "suggestivo",
+      "ex": "Abbiamo visitato un castello davvero suggestivo."
+     },
+     {
+      "w": "qual è",
+      "ex": "Qual è la parola più difficile per te?"
+     },
+     {
+      "w": "ci vuole",
+      "ex": "Ci vuole pazienza per capire i film."
+     },
+     {
+      "w": "insomma",
+      "ex": "Insomma, ho capito quasi tutto!"
+     }
+    ],
+    "gram": "Ricorda: un'amica ma un amico, qual è senza apostrofo, nessuna virgola tra soggetto e verbo."
+   }
+  },
+  {
+   "d": 338,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Talking about society and change",
+     "g": "Discuss family, work and technology trends with balanced arguments.",
+     "p": [
+      "Describe trends: sempre più persone (more and more people), sempre meno, è in aumento, è in calo.",
+      "Compare past and present: Una volta si viveva..., mentre oggi..., Rispetto al passato...",
+      "Balance your view: da un lato... dall'altro, ci sono vantaggi e svantaggi, dipende dai casi."
+     ],
+     "q": "What is one change in society that you see as positive?",
+     "c": "Write three sentences about a social trend using sempre più, rispetto al passato and da un lato... dall'altro."
+    },
+    "de": {
+     "t": "Über Gesellschaft und Wandel sprechen",
+     "g": "Du diskutierst Trends in Familie, Arbeit und Technik mit ausgewogenen Argumenten.",
+     "p": [
+      "Trends beschreiben: sempre più persone (immer mehr Menschen), sempre meno, è in aumento, è in calo.",
+      "Vergangenheit und Gegenwart vergleichen: Una volta si viveva..., mentre oggi..., Rispetto al passato...",
+      "Ausgewogen: da un lato... dall'altro, ci sono vantaggi e svantaggi, dipende dai casi."
+     ],
+     "q": "Welchen gesellschaftlichen Wandel siehst du positiv?",
+     "c": "Schreib drei Sätze über einen Trend mit sempre più, rispetto al passato und da un lato... dall'altro."
+    },
+    "es": {
+     "t": "Hablar de la sociedad y el cambio",
+     "g": "Debatir tendencias de familia, trabajo y tecnología con argumentos equilibrados.",
+     "p": [
+      "Describir tendencias: sempre più persone (cada vez más gente), sempre meno, è in aumento, è in calo.",
+      "Comparar pasado y presente: Una volta si viveva..., mentre oggi..., Rispetto al passato...",
+      "Equilibrar: da un lato... dall'altro, ci sono vantaggi e svantaggi, dipende dai casi."
+     ],
+     "q": "¿Qué cambio social ves como positivo?",
+     "c": "Escribe tres frases sobre una tendencia con sempre più, rispetto al passato y da un lato... dall'altro."
+    },
+    "fr": {
+     "t": "Parler de la société et du changement",
+     "g": "Discuter des évolutions de la famille, du travail et de la technologie de façon équilibrée.",
+     "p": [
+      "Décrire des tendances : sempre più persone (de plus en plus de gens), sempre meno, è in aumento, è in calo.",
+      "Comparer passé et présent : Una volta si viveva..., mentre oggi..., Rispetto al passato...",
+      "Équilibrer : da un lato... dall'altro, ci sono vantaggi e svantaggi, dipende dai casi."
+     ],
+     "q": "Quel changement de société vois-tu comme positif ?",
+     "c": "Écris trois phrases sur une tendance avec sempre più, rispetto al passato et da un lato... dall'altro."
+    },
+    "it": {
+     "t": "Parlare di società e cambiamento",
+     "g": "Discutere di tendenze su famiglia, lavoro e tecnologia con argomenti equilibrati.",
+     "p": [
+      "Descrivere tendenze: sempre più persone, sempre meno, è in aumento, è in calo.",
+      "Confrontare passato e presente: Una volta si viveva..., mentre oggi..., Rispetto al passato...",
+      "Equilibrare: da un lato... dall'altro, ci sono vantaggi e svantaggi, dipende dai casi."
+     ],
+     "q": "Quale cambiamento nella società consideri positivo?",
+     "c": "Scrivi tre frasi su una tendenza con sempre più, rispetto al passato e da un lato... dall'altro."
+    },
+    "pt": {
+     "t": "Falar da sociedade e da mudança",
+     "g": "Discutir tendências da família, do trabalho e da tecnologia com argumentos equilibrados.",
+     "p": [
+      "Descrever tendências: sempre più persone (cada vez mais pessoas), sempre meno, è in aumento, è in calo.",
+      "Comparar passado e presente: Una volta si viveva..., mentre oggi..., Rispetto al passato...",
+      "Equilibrar: da un lato... dall'altro, ci sono vantaggi e svantaggi, dipende dai casi."
+     ],
+     "q": "Que mudança na sociedade vês como positiva?",
+     "c": "Escreve três frases sobre uma tendência com sempre più, rispetto al passato e da un lato... dall'altro."
+    },
+    "pt_BR": {
+     "t": "Falando de sociedade e mudança",
+     "g": "Discutir tendências da família, do trabalho e da tecnologia com argumentos equilibrados.",
+     "p": [
+      "Descrever tendências: sempre più persone (cada vez mais pessoas), sempre meno, è in aumento, è in calo.",
+      "Comparar passado e presente: Una volta si viveva..., mentre oggi..., Rispetto al passato...",
+      "Equilibrar: da un lato... dall'altro, ci sono vantaggi e svantaggi, dipende dai casi."
+     ],
+     "q": "Que mudança na sociedade você vê como positiva?",
+     "c": "Escreva três frases sobre uma tendência com sempre più, rispetto al passato e da un lato... dall'altro."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "sempre più",
+      "ex": "Sempre più giovani lavorano da casa."
+     },
+     {
+      "w": "essere in aumento",
+      "ex": "Il numero di persone che vanno in bici è in aumento."
+     },
+     {
+      "w": "rispetto al passato",
+      "ex": "Rispetto al passato, le famiglie sono più piccole."
+     },
+     {
+      "w": "una volta",
+      "ex": "Una volta si scrivevano lettere, oggi messaggi."
+     },
+     {
+      "w": "da un lato... dall'altro",
+      "ex": "Da un lato è comodo, dall'altro ci rende pigri."
+     },
+     {
+      "w": "la tendenza",
+      "ex": "È una tendenza diffusa in tutta Europa."
+     }
+    ],
+    "gram": "Imperfetto per abitudini passate (una volta si viveva) contro presente (oggi si vive); sempre più + nome o aggettivo."
+   }
+  },
+  {
+   "d": 339,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Education systems compared",
+     "g": "Compare school in Italy with your country and discuss pros and cons.",
+     "p": [
+      "In Italy: scuola primaria (5 years), scuola secondaria di primo grado (3), then liceo or istituto (5).",
+      "The final exam is called la maturità; many university exams are oral, with grades out of 30 (30 e lode is the top).",
+      "Compare: In Italia..., mentre nel mio Paese...; Il vantaggio è che..., Lo svantaggio è che..."
+     ],
+     "q": "What did you like most about your school years?",
+     "c": "Write four sentences comparing school in Italy and in your country with mentre and invece."
+    },
+    "de": {
+     "t": "Bildungssysteme im Vergleich",
+     "g": "Du vergleichst die Schule in Italien mit deinem Land und diskutierst Vor- und Nachteile.",
+     "p": [
+      "In Italien: scuola primaria (5 Jahre), scuola secondaria di primo grado (3), dann liceo oder istituto (5).",
+      "Die Abschlussprüfung heißt la maturità; viele Uniprüfungen sind mündlich, Noten bis 30 (30 e lode ist die Bestnote).",
+      "Vergleichen: In Italia..., mentre nel mio Paese...; Il vantaggio è che..., Lo svantaggio è che..."
+     ],
+     "q": "Was hat dir an deiner Schulzeit am besten gefallen?",
+     "c": "Schreib vier Sätze, die die Schule in Italien und in deinem Land mit mentre und invece vergleichen."
+    },
+    "es": {
+     "t": "Sistemas educativos comparados",
+     "g": "Comparar la escuela en Italia con tu país y debatir pros y contras.",
+     "p": [
+      "En Italia: scuola primaria (5 años), scuola secondaria di primo grado (3) y luego liceo o istituto (5).",
+      "El examen final se llama la maturità; muchos exámenes universitarios son orales, con notas sobre 30 (30 e lode es la máxima).",
+      "Compara: In Italia..., mentre nel mio Paese...; Il vantaggio è che..., Lo svantaggio è che..."
+     ],
+     "q": "¿Qué es lo que más te gustó de tus años de escuela?",
+     "c": "Escribe cuatro frases comparando la escuela en Italia y en tu país con mentre e invece."
+    },
+    "fr": {
+     "t": "Systèmes éducatifs comparés",
+     "g": "Comparer l'école en Italie et dans ton pays et discuter des avantages et inconvénients.",
+     "p": [
+      "En Italie : scuola primaria (5 ans), scuola secondaria di primo grado (3), puis liceo ou istituto (5).",
+      "L'examen final s'appelle la maturità ; à l'université, beaucoup d'examens sont oraux, notés sur 30 (30 e lode est le maximum).",
+      "Comparer : In Italia..., mentre nel mio Paese... ; Il vantaggio è che..., Lo svantaggio è che..."
+     ],
+     "q": "Qu'as-tu le plus aimé pendant tes années d'école ?",
+     "c": "Écris quatre phrases comparant l'école en Italie et dans ton pays avec mentre et invece."
+    },
+    "it": {
+     "t": "Sistemi scolastici a confronto",
+     "g": "Confrontare la scuola in Italia con quella del tuo Paese, con pro e contro.",
+     "p": [
+      "In Italia: scuola primaria (5 anni), scuola secondaria di primo grado (3), poi liceo o istituto (5).",
+      "L'esame finale si chiama maturità; all'università molti esami sono orali, con voti in trentesimi (30 e lode è il massimo).",
+      "Confronta: In Italia..., mentre nel mio Paese...; Il vantaggio è che..., Lo svantaggio è che..."
+     ],
+     "q": "Che cosa ti è piaciuto di più dei tuoi anni di scuola?",
+     "c": "Scrivi quattro frasi che confrontano la scuola in Italia e nel tuo Paese con mentre e invece."
+    },
+    "pt": {
+     "t": "Sistemas de ensino comparados",
+     "g": "Comparar a escola em Itália com o teu país e discutir prós e contras.",
+     "p": [
+      "Em Itália: scuola primaria (5 anos), scuola secondaria di primo grado (3), depois liceo ou istituto (5).",
+      "O exame final chama-se la maturità; na universidade muitos exames são orais, com notas até 30 (30 e lode é a máxima).",
+      "Compara: In Italia..., mentre nel mio Paese...; Il vantaggio è che..., Lo svantaggio è che..."
+     ],
+     "q": "De que gostaste mais nos teus anos de escola?",
+     "c": "Escreve quatro frases a comparar a escola em Itália e no teu país com mentre e invece."
+    },
+    "pt_BR": {
+     "t": "Sistemas de ensino comparados",
+     "g": "Comparar a escola na Itália com a do seu país e discutir prós e contras.",
+     "p": [
+      "Na Itália: scuola primaria (5 anos), scuola secondaria di primo grado (3), depois liceo ou istituto (5).",
+      "O exame final se chama la maturità; na faculdade muitas provas são orais, com notas até 30 (30 e lode é a máxima).",
+      "Compare: In Italia..., mentre nel mio Paese...; Il vantaggio è che..., Lo svantaggio è che..."
+     ],
+     "q": "Do que você mais gostou nos seus anos de escola?",
+     "c": "Escreva quatro frases comparando a escola na Itália e no seu país com mentre e invece."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la maturità",
+      "ex": "Dopo la maturità vorrei studiare medicina."
+     },
+     {
+      "w": "il liceo",
+      "ex": "Ho frequentato il liceo scientifico."
+     },
+     {
+      "w": "l'esame orale",
+      "ex": "All'università ho dato molti esami orali."
+     },
+     {
+      "w": "trenta e lode",
+      "ex": "Ho preso trenta e lode all'esame di storia!"
+     },
+     {
+      "w": "la materia",
+      "ex": "La mia materia preferita era la geografia."
+     },
+     {
+      "w": "invece",
+      "ex": "Io ho studiato lingue; mio fratello, invece, ingegneria."
+     }
+    ],
+    "gram": "Mentre e invece per contrasti: In Italia c'è la maturità, mentre da noi... ; io invece preferivo..."
+   }
+  },
+  {
+   "d": 340,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Work-life balance",
+     "g": "Discuss modern work habits: smart working, ferie, working hours.",
+     "p": [
+      "In Italian, smart working means working remotely; also lavoro da remoto or telelavoro.",
+      "Le ferie are paid holidays; il ponte is a long weekend bridging a holiday; la pausa pranzo is the lunch break.",
+      "Express preferences: Preferirei lavorare da casa, Per me è fondamentale avere tempo per..., staccare (to switch off)."
+     ],
+     "q": "How do you find balance between work or study and free time?",
+     "c": "Describe your ideal working week in four sentences, using preferirei and staccare."
+    },
+    "de": {
+     "t": "Work-Life-Balance",
+     "g": "Du sprichst über moderne Arbeitsgewohnheiten: smart working, ferie, Arbeitszeiten.",
+     "p": [
+      "Auf Italienisch heißt smart working Arbeiten von zu Hause; auch lavoro da remoto oder telelavoro.",
+      "Le ferie ist bezahlter Urlaub; il ponte ein Brückentag; la pausa pranzo die Mittagspause.",
+      "Vorlieben ausdrücken: Preferirei lavorare da casa, Per me è fondamentale avere tempo per..., staccare (abschalten)."
+     ],
+     "q": "Wie findest du ein Gleichgewicht zwischen Arbeit oder Studium und Freizeit?",
+     "c": "Beschreibe deine ideale Arbeitswoche in vier Sätzen mit preferirei und staccare."
+    },
+    "es": {
+     "t": "Equilibrio entre vida y trabajo",
+     "g": "Hablar de hábitos laborales modernos: smart working, ferie, horarios.",
+     "p": [
+      "En italiano, smart working significa teletrabajo; también lavoro da remoto o telelavoro.",
+      "Le ferie son las vacaciones pagadas; il ponte es un puente festivo; la pausa pranzo es la pausa para comer.",
+      "Expresar preferencias: Preferirei lavorare da casa, Per me è fondamentale avere tempo per..., staccare (desconectar)."
+     ],
+     "q": "¿Cómo encuentras el equilibrio entre trabajo o estudio y tiempo libre?",
+     "c": "Describe tu semana laboral ideal en cuatro frases, con preferirei y staccare."
+    },
+    "fr": {
+     "t": "Équilibre vie pro et vie perso",
+     "g": "Parler des habitudes de travail modernes : smart working, ferie, horaires.",
+     "p": [
+      "En italien, smart working signifie télétravail ; on dit aussi lavoro da remoto ou telelavoro.",
+      "Le ferie sont les congés payés ; il ponte est un pont ; la pausa pranzo est la pause déjeuner.",
+      "Exprimer des préférences : Preferirei lavorare da casa, Per me è fondamentale avere tempo per..., staccare (décrocher)."
+     ],
+     "q": "Comment trouves-tu l'équilibre entre travail ou études et temps libre ?",
+     "c": "Décris ta semaine de travail idéale en quatre phrases, avec preferirei et staccare."
+    },
+    "it": {
+     "t": "L'equilibrio tra lavoro e vita privata",
+     "g": "Parlare delle abitudini di lavoro moderne: smart working, ferie, orari.",
+     "p": [
+      "In italiano smart working indica il lavoro da casa; si dice anche lavoro da remoto o telelavoro.",
+      "Le ferie sono le vacanze retribuite; il ponte unisce una festa al fine settimana; la pausa pranzo è a metà giornata.",
+      "Esprimere preferenze: Preferirei lavorare da casa, Per me è fondamentale avere tempo per..., staccare."
+     ],
+     "q": "Come trovi l'equilibrio tra lavoro o studio e tempo libero?",
+     "c": "Descrivi la tua settimana lavorativa ideale in quattro frasi, con preferirei e staccare."
+    },
+    "pt": {
+     "t": "Equilíbrio entre trabalho e vida pessoal",
+     "g": "Falar de hábitos de trabalho modernos: smart working, ferie, horários.",
+     "p": [
+      "Em italiano, smart working significa teletrabalho; também lavoro da remoto ou telelavoro.",
+      "Le ferie são as férias pagas; il ponte é uma ponte entre feriado e fim de semana; la pausa pranzo é a hora de almoço.",
+      "Exprimir preferências: Preferirei lavorare da casa, Per me è fondamentale avere tempo per..., staccare (desligar)."
+     ],
+     "q": "Como encontras o equilíbrio entre trabalho ou estudo e tempo livre?",
+     "c": "Descreve a tua semana de trabalho ideal em quatro frases, com preferirei e staccare."
+    },
+    "pt_BR": {
+     "t": "Equilíbrio entre trabalho e vida pessoal",
+     "g": "Falar de hábitos de trabalho modernos: smart working, ferie, horários.",
+     "p": [
+      "Em italiano, smart working significa home office; também lavoro da remoto ou telelavoro.",
+      "Le ferie são as férias remuneradas; il ponte é o feriado emendado; la pausa pranzo é a hora do almoço.",
+      "Expressar preferências: Preferirei lavorare da casa, Per me è fondamentale avere tempo per..., staccare (desligar)."
+     ],
+     "q": "Como você equilibra trabalho ou estudo e tempo livre?",
+     "c": "Descreva sua semana de trabalho ideal em quatro frases, com preferirei e staccare."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "lo smart working",
+      "ex": "Il venerdì faccio smart working."
+     },
+     {
+      "w": "le ferie",
+      "ex": "Ad agosto prendo tre settimane di ferie."
+     },
+     {
+      "w": "fare il ponte",
+      "ex": "Giovedì è festa e venerdì facciamo il ponte."
+     },
+     {
+      "w": "la pausa pranzo",
+      "ex": "Durante la pausa pranzo faccio due passi."
+     },
+     {
+      "w": "staccare",
+      "ex": "La sera spengo il telefono per staccare."
+     },
+     {
+      "w": "l'orario flessibile",
+      "ex": "Nella mia azienda c'è l'orario flessibile."
+     }
+    ],
+    "gram": "Ferie è sempre plurale femminile: le ferie, sono in ferie. Preferirei + infinito per desideri cortesi."
+   }
+  }
+ ]
+}

@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 261,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Explaining a process",
+     "g": "Explain step by step how something is made.",
+     "p": [
+      "Use impersonal se: se mezcla la harina, se calienta el aceite, se añade la sal.",
+      "Order the steps: primero, después, luego, a continuación, por último.",
+      "Add time and manner: durante diez minutos, a fuego lento, poco a poco, hasta que esté dorado."
+     ],
+     "q": "How do you make your favourite drink or snack? Explain it with se and primero, luego...",
+     "c": "Explain a simple recipe in five steps using se mezcla, se añade and por último."
+    },
+    "de": {
+     "t": "Einen Ablauf erklären",
+     "g": "Erkläre Schritt für Schritt, wie etwas gemacht wird.",
+     "p": [
+      "Unpersönliches se: se mezcla la harina, se calienta el aceite, se añade la sal.",
+      "Schritte ordnen: primero, después, luego, a continuación, por último.",
+      "Zeit und Art: durante diez minutos, a fuego lento, poco a poco, hasta que esté dorado."
+     ],
+     "q": "Wie machst du dein Lieblingsgetränk oder deinen Lieblingssnack? Erkläre es mit se und primero, luego...",
+     "c": "Erkläre ein einfaches Rezept in fünf Schritten mit se mezcla, se añade und por último."
+    },
+    "es": {
+     "t": "Explicar un proceso",
+     "g": "Explica paso a paso cómo se hace algo.",
+     "p": [
+      "Usa se impersonal: se mezcla la harina, se calienta el aceite, se añade la sal.",
+      "Ordena los pasos: primero, después, luego, a continuación, por último.",
+      "Añade tiempo y modo: durante diez minutos, a fuego lento, poco a poco, hasta que esté dorado."
+     ],
+     "q": "¿Cómo se prepara tu bebida o tentempié favorito? Explícalo con se y primero, luego...",
+     "c": "Explica una receta sencilla en cinco pasos con se mezcla, se añade y por último."
+    },
+    "fr": {
+     "t": "Expliquer un processus",
+     "g": "Explique étape par étape comment on fabrique quelque chose.",
+     "p": [
+      "Utilise le se impersonnel : se mezcla la harina, se calienta el aceite, se añade la sal.",
+      "Ordonne les étapes : primero, después, luego, a continuación, por último.",
+      "Ajoute temps et manière : durante diez minutos, a fuego lento, poco a poco, hasta que esté dorado."
+     ],
+     "q": "Comment prépares-tu ta boisson ou ton en-cas préféré ? Explique avec se et primero, luego...",
+     "c": "Explique une recette simple en cinq étapes avec se mezcla, se añade et por último."
+    },
+    "it": {
+     "t": "Spiegare un procedimento",
+     "g": "Spiega passo dopo passo come si fa qualcosa.",
+     "p": [
+      "Usa il se impersonale: se mezcla la harina, se calienta el aceite, se añade la sal.",
+      "Ordina i passaggi: primero, después, luego, a continuación, por último.",
+      "Aggiungi tempo e modo: durante diez minutos, a fuego lento, poco a poco, hasta que esté dorado."
+     ],
+     "q": "Come si prepara la tua bevanda o il tuo snack preferito? Spiegalo con se e primero, luego...",
+     "c": "Spiega una ricetta semplice in cinque passaggi con se mezcla, se añade e por último."
+    },
+    "pt": {
+     "t": "Explicar um processo",
+     "g": "Explica passo a passo como se faz alguma coisa.",
+     "p": [
+      "Usa o se impessoal: se mezcla la harina, se calienta el aceite, se añade la sal.",
+      "Ordena os passos: primero, después, luego, a continuación, por último.",
+      "Junta tempo e modo: durante diez minutos, a fuego lento, poco a poco, hasta que esté dorado."
+     ],
+     "q": "Como se prepara a tua bebida ou petisco preferido? Explica com se e primero, luego...",
+     "c": "Explica uma receita simples em cinco passos com se mezcla, se añade e por último."
+    },
+    "pt_BR": {
+     "t": "Explicar um processo",
+     "g": "Explique passo a passo como se faz alguma coisa.",
+     "p": [
+      "Use o se impessoal: se mezcla la harina, se calienta el aceite, se añade la sal.",
+      "Ordene os passos: primero, después, luego, a continuación, por último.",
+      "Acrescente tempo e modo: durante diez minutos, a fuego lento, poco a poco, hasta que esté dorado."
+     ],
+     "q": "Como se prepara sua bebida ou lanche favorito? Explique com se e primero, luego...",
+     "c": "Explique uma receita simples em cinco passos com se mezcla, se añade e por último."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "se mezcla",
+      "ex": "Se mezclan los huevos con el azúcar."
+     },
+     {
+      "w": "se calienta",
+      "ex": "Se calienta el aceite en una sartén."
+     },
+     {
+      "w": "se añade",
+      "ex": "Luego se añade una pizca de sal."
+     },
+     {
+      "w": "a fuego lento",
+      "ex": "La salsa se cocina a fuego lento."
+     },
+     {
+      "w": "a continuación",
+      "ex": "A continuación, se corta el pan en rodajas."
+     },
+     {
+      "w": "hasta que",
+      "ex": "Se remueve hasta que esté espeso."
+     }
+    ],
+    "gram": "Se impersonal/pasivo: se añade la sal (singular), se añaden los huevos (plural). Hasta que + subjuntivo para un punto futuro."
+   }
+  },
+  {
+   "d": 262,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Problem-solving conversations",
+     "g": "Work through a problem together in Spanish.",
+     "p": [
+      "Define it: ¿Cuál es el problema exactamente? Lo que pasa es que...",
+      "Propose options: una opción sería..., otra posibilidad es..., ¿y si probamos...?",
+      "Weigh them: valoremos los pros y los contras; la ventaja es que..., el inconveniente es que..."
+     ],
+     "q": "Your phone battery dies on a trip. What are two options? Use una opción sería...",
+     "c": "Solve a small everyday problem in Spanish: describe it, list two options and choose one."
+    },
+    "de": {
+     "t": "Gespräche zur Problemlösung",
+     "g": "Löse gemeinsam ein Problem auf Spanisch.",
+     "p": [
+      "Benennen: ¿Cuál es el problema exactamente? Lo que pasa es que...",
+      "Optionen vorschlagen: una opción sería..., otra posibilidad es..., ¿y si probamos...?",
+      "Abwägen: valoremos los pros y los contras; la ventaja es que..., el inconveniente es que..."
+     ],
+     "q": "Auf einer Reise ist dein Handyakku leer. Nenne zwei Optionen mit una opción sería...",
+     "c": "Löse auf Spanisch ein kleines Alltagsproblem: beschreib es, nenne zwei Optionen, wähle eine."
+    },
+    "es": {
+     "t": "Conversaciones para resolver problemas",
+     "g": "Resuelve un problema en equipo en español.",
+     "p": [
+      "Defínelo: ¿Cuál es el problema exactamente? Lo que pasa es que...",
+      "Propón opciones: una opción sería..., otra posibilidad es..., ¿y si probamos...?",
+      "Valóralas: valoremos los pros y los contras; la ventaja es que..., el inconveniente es que..."
+     ],
+     "q": "En un viaje se te acaba la batería del móvil. ¿Dos opciones? Usa una opción sería...",
+     "c": "Resuelve un pequeño problema cotidiano: descríbelo, da dos opciones y elige una."
+    },
+    "fr": {
+     "t": "Conversations pour résoudre un problème",
+     "g": "Résous un problème à plusieurs en espagnol.",
+     "p": [
+      "Le définir : ¿Cuál es el problema exactamente? Lo que pasa es que...",
+      "Proposer des options : una opción sería..., otra posibilidad es..., ¿y si probamos...?",
+      "Les peser : valoremos los pros y los contras ; la ventaja es que..., el inconveniente es que..."
+     ],
+     "q": "En voyage, ta batterie de téléphone est vide. Deux options ? Utilise una opción sería...",
+     "c": "Résous un petit problème du quotidien en espagnol : décris-le, donne deux options, choisis-en une."
+    },
+    "it": {
+     "t": "Conversazioni per risolvere problemi",
+     "g": "Risolvi un problema insieme in spagnolo.",
+     "p": [
+      "Definiscilo: ¿Cuál es el problema exactamente? Lo que pasa es que...",
+      "Proponi opzioni: una opción sería..., otra posibilidad es..., ¿y si probamos...?",
+      "Valutale: valoremos los pros y los contras; la ventaja es que..., el inconveniente es que..."
+     ],
+     "q": "In viaggio ti si scarica il telefono. Due opzioni? Usa una opción sería...",
+     "c": "Risolvi un piccolo problema quotidiano in spagnolo: descrivilo, dai due opzioni e scegline una."
+    },
+    "pt": {
+     "t": "Conversas para resolver problemas",
+     "g": "Resolve um problema em conjunto em espanhol.",
+     "p": [
+      "Define-o: ¿Cuál es el problema exactamente? Lo que pasa es que...",
+      "Propõe opções: una opción sería..., otra posibilidad es..., ¿y si probamos...?",
+      "Pesa-as: valoremos los pros y los contras; la ventaja es que..., el inconveniente es que..."
+     ],
+     "q": "Numa viagem fica-se sem bateria no telemóvel. Duas opções? Usa una opción sería...",
+     "c": "Resolve um pequeno problema do dia a dia: descreve-o, dá duas opções e escolhe uma."
+    },
+    "pt_BR": {
+     "t": "Conversas para resolver problemas",
+     "g": "Resolva um problema em conjunto em espanhol.",
+     "p": [
+      "Defina: ¿Cuál es el problema exactamente? Lo que pasa es que...",
+      "Proponha opções: una opción sería..., otra posibilidad es..., ¿y si probamos...?",
+      "Avalie: valoremos los pros y los contras; la ventaja es que..., el inconveniente es que..."
+     ],
+     "q": "Numa viagem a bateria do celular acaba. Duas opções? Use una opción sería...",
+     "c": "Resolva um pequeno problema do dia a dia: descreva, dê duas opções e escolha uma."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "lo que pasa es que",
+      "ex": "Lo que pasa es que el tren sale muy temprano."
+     },
+     {
+      "w": "una opción sería",
+      "ex": "Una opción sería pedir ayuda a los vecinos."
+     },
+     {
+      "w": "otra posibilidad",
+      "ex": "Otra posibilidad es cambiar la fecha."
+     },
+     {
+      "w": "valorar",
+      "ex": "Valoremos todas las opciones con calma."
+     },
+     {
+      "w": "la ventaja",
+      "ex": "La ventaja es que no cuesta nada."
+     },
+     {
+      "w": "el inconveniente",
+      "ex": "El inconveniente es que tarda más."
+     }
+    ],
+    "gram": "Proponer con condicional: una opción sería + infinitivo. Exhortar con subjuntivo en 1.ª plural: valoremos, probemos."
+   }
+  },
+  {
+   "d": 263,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Consumer choices",
+     "g": "Explain how you choose what to buy.",
+     "p": [
+      "Key ideas: la marca (brand), la calidad, el precio, la relación calidad-precio.",
+      "Mention sources: leo las opiniones de otros clientes, comparo precios, pregunto a amigos.",
+      "Justify: me fijo en..., lo que más me importa es..., prefiero pagar más si dura más."
+     ],
+     "q": "What do you look at first when you buy shoes or a phone? Use me fijo en...",
+     "c": "Compare two products you know in Spanish using relación calidad-precio and lo que más me importa."
+    },
+    "de": {
+     "t": "Kaufentscheidungen",
+     "g": "Erkläre, wie du entscheidest, was du kaufst.",
+     "p": [
+      "Schlüsselbegriffe: la marca (Marke), la calidad, el precio, la relación calidad-precio.",
+      "Quellen nennen: leo las opiniones de otros clientes, comparo precios, pregunto a amigos.",
+      "Begründen: me fijo en..., lo que más me importa es..., prefiero pagar más si dura más."
+     ],
+     "q": "Worauf achtest du zuerst beim Kauf von Schuhen oder einem Handy? Nutze me fijo en...",
+     "c": "Vergleiche zwei Produkte auf Spanisch mit relación calidad-precio und lo que más me importa."
+    },
+    "es": {
+     "t": "Decisiones de compra",
+     "g": "Explica cómo eliges lo que compras.",
+     "p": [
+      "Ideas clave: la marca, la calidad, el precio, la relación calidad-precio.",
+      "Menciona tus fuentes: leo las opiniones de otros clientes, comparo precios, pregunto a amigos.",
+      "Justifica: me fijo en..., lo que más me importa es..., prefiero pagar más si dura más."
+     ],
+     "q": "¿En qué te fijas primero al comprar zapatos o un móvil? Usa me fijo en...",
+     "c": "Compara dos productos que conoces con relación calidad-precio y lo que más me importa."
+    },
+    "fr": {
+     "t": "Choix de consommation",
+     "g": "Explique comment tu choisis ce que tu achètes.",
+     "p": [
+      "Idées clés : la marca (marque), la calidad, el precio, la relación calidad-precio.",
+      "Cite tes sources : leo las opiniones de otros clientes, comparo precios, pregunto a amigos.",
+      "Justifie : me fijo en..., lo que más me importa es..., prefiero pagar más si dura más."
+     ],
+     "q": "À quoi fais-tu attention d'abord en achetant des chaussures ou un téléphone ? Utilise me fijo en...",
+     "c": "Compare deux produits en espagnol avec relación calidad-precio et lo que más me importa."
+    },
+    "it": {
+     "t": "Scelte di consumo",
+     "g": "Spiega come scegli cosa comprare.",
+     "p": [
+      "Concetti chiave: la marca, la calidad, el precio, la relación calidad-precio.",
+      "Cita le fonti: leo las opiniones de otros clientes, comparo precios, pregunto a amigos.",
+      "Motiva: me fijo en..., lo que más me importa es..., prefiero pagar más si dura más."
+     ],
+     "q": "A cosa guardi per prima cosa quando compri scarpe o un telefono? Usa me fijo en...",
+     "c": "Confronta due prodotti in spagnolo con relación calidad-precio e lo que más me importa."
+    },
+    "pt": {
+     "t": "Escolhas de consumo",
+     "g": "Explica como escolhes o que compras.",
+     "p": [
+      "Ideias-chave: la marca, la calidad, el precio, la relación calidad-precio.",
+      "Refere as fontes: leo las opiniones de otros clientes, comparo precios, pregunto a amigos.",
+      "Justifica: me fijo en..., lo que más me importa es..., prefiero pagar más si dura más."
+     ],
+     "q": "Em que reparas primeiro quando compras sapatos ou um telemóvel? Usa me fijo en...",
+     "c": "Compara dois produtos em espanhol com relación calidad-precio e lo que más me importa."
+    },
+    "pt_BR": {
+     "t": "Escolhas de consumo",
+     "g": "Explique como você escolhe o que compra.",
+     "p": [
+      "Ideias-chave: la marca, la calidad, el precio, la relación calidad-precio.",
+      "Cite suas fontes: leo las opiniones de otros clientes, comparo precios, pregunto a amigos.",
+      "Justifique: me fijo en..., lo que más me importa es..., prefiero pagar más si dura más."
+     ],
+     "q": "No que você repara primeiro ao comprar sapatos ou um celular? Use me fijo en...",
+     "c": "Compare dois produtos em espanhol com relación calidad-precio e lo que más me importa."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la marca",
+      "ex": "No me importa la marca, sino la calidad."
+     },
+     {
+      "w": "la relación calidad-precio",
+      "ex": "Este hotel tiene muy buena relación calidad-precio."
+     },
+     {
+      "w": "las opiniones",
+      "ex": "Antes de comprar, leo las opiniones en internet."
+     },
+     {
+      "w": "fijarse en",
+      "ex": "Me fijo mucho en los materiales."
+     },
+     {
+      "w": "comparar precios",
+      "ex": "Siempre comparo precios en varias tiendas."
+     },
+     {
+      "w": "durar",
+      "ex": "Prefiero unas botas que duren muchos años."
+     }
+    ],
+    "gram": "Fijarse en + nombre: me fijo en el precio. Lo que más me importa es + nombre/infinitivo. Prefiero que + subjuntivo."
+   }
+  },
+  {
+   "d": 264,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Giving instructions clearly",
+     "g": "Give step-by-step instructions that are easy to follow.",
+     "p": [
+      "Use the tú imperative: abre la app, pulsa aquí, escribe tu nombre.",
+      "Useful frames: asegúrate de + infinitive, no te olvides de + infinitive, ten cuidado con...",
+      "Check understanding: ¿Me sigues? ¿Está claro? Si tienes dudas, pregúntame."
+     ],
+     "q": "Tell me how to get from your home to your favourite café, step by step.",
+     "c": "Give instructions for a daily task in Spanish with primero, asegúrate de and no te olvides de."
+    },
+    "de": {
+     "t": "Klare Anweisungen geben",
+     "g": "Gib Schritt-für-Schritt-Anweisungen, die leicht verständlich sind.",
+     "p": [
+      "Nutze den Imperativ mit tú: abre la app, pulsa aquí, escribe tu nombre.",
+      "Nützliche Formeln: asegúrate de + Infinitiv, no te olvides de + Infinitiv, ten cuidado con...",
+      "Verständnis prüfen: ¿Me sigues? ¿Está claro? Si tienes dudas, pregúntame."
+     ],
+     "q": "Erklär mir Schritt für Schritt, wie man von dir zu deinem Lieblingscafé kommt.",
+     "c": "Gib Anweisungen für eine Alltagsaufgabe mit primero, asegúrate de und no te olvides de."
+    },
+    "es": {
+     "t": "Dar instrucciones claras",
+     "g": "Da instrucciones paso a paso fáciles de seguir.",
+     "p": [
+      "Usa el imperativo de tú: abre la app, pulsa aquí, escribe tu nombre.",
+      "Fórmulas útiles: asegúrate de + infinitivo, no te olvides de + infinitivo, ten cuidado con...",
+      "Comprueba que te entienden: ¿Me sigues? ¿Está claro? Si tienes dudas, pregúntame."
+     ],
+     "q": "Explícame paso a paso cómo llegar de tu casa a tu cafetería favorita.",
+     "c": "Da instrucciones para una tarea diaria con primero, asegúrate de y no te olvides de."
+    },
+    "fr": {
+     "t": "Donner des instructions claires",
+     "g": "Donne des instructions étape par étape faciles à suivre.",
+     "p": [
+      "Utilise l'impératif avec tú : abre la app, pulsa aquí, escribe tu nombre.",
+      "Formules utiles : asegúrate de + infinitif, no te olvides de + infinitif, ten cuidado con...",
+      "Vérifie la compréhension : ¿Me sigues? ¿Está claro? Si tienes dudas, pregúntame."
+     ],
+     "q": "Explique-moi étape par étape comment aller de chez toi à ton café préféré.",
+     "c": "Donne des instructions pour une tâche quotidienne avec primero, asegúrate de et no te olvides de."
+    },
+    "it": {
+     "t": "Dare istruzioni chiare",
+     "g": "Dai istruzioni passo dopo passo facili da seguire.",
+     "p": [
+      "Usa l'imperativo con tú: abre la app, pulsa aquí, escribe tu nombre.",
+      "Formule utili: asegúrate de + infinito, no te olvides de + infinito, ten cuidado con...",
+      "Verifica che capiscano: ¿Me sigues? ¿Está claro? Si tienes dudas, pregúntame."
+     ],
+     "q": "Spiegami passo dopo passo come arrivare da casa tua al tuo bar preferito.",
+     "c": "Dai istruzioni per un'attività quotidiana con primero, asegúrate de e no te olvides de."
+    },
+    "pt": {
+     "t": "Dar instruções claras",
+     "g": "Dá instruções passo a passo fáceis de seguir.",
+     "p": [
+      "Usa o imperativo de tú: abre la app, pulsa aquí, escribe tu nombre.",
+      "Fórmulas úteis: asegúrate de + infinitivo, no te olvides de + infinitivo, ten cuidado con...",
+      "Confirma que percebem: ¿Me sigues? ¿Está claro? Si tienes dudas, pregúntame."
+     ],
+     "q": "Explica-me passo a passo como ir da tua casa ao teu café preferido.",
+     "c": "Dá instruções para uma tarefa diária com primero, asegúrate de e no te olvides de."
+    },
+    "pt_BR": {
+     "t": "Dar instruções claras",
+     "g": "Dê instruções passo a passo fáceis de seguir.",
+     "p": [
+      "Use o imperativo de tú: abre la app, pulsa aquí, escribe tu nombre.",
+      "Fórmulas úteis: asegúrate de + infinitivo, no te olvides de + infinitivo, ten cuidado con...",
+      "Confira se entenderam: ¿Me sigues? ¿Está claro? Si tienes dudas, pregúntame."
+     ],
+     "q": "Me explique passo a passo como ir da sua casa até sua cafeteria favorita.",
+     "c": "Dê instruções para uma tarefa diária com primero, asegúrate de e no te olvides de."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "asegúrate de",
+      "ex": "Asegúrate de cerrar la puerta con llave."
+     },
+     {
+      "w": "no te olvides de",
+      "ex": "No te olvides de traer el pasaporte."
+     },
+     {
+      "w": "pulsa",
+      "ex": "Pulsa el botón verde para empezar."
+     },
+     {
+      "w": "ten cuidado con",
+      "ex": "Ten cuidado con el escalón de la entrada."
+     },
+     {
+      "w": "¿Me sigues?",
+      "ex": "Giras a la derecha y luego cruzas. ¿Me sigues?"
+     },
+     {
+      "w": "gira",
+      "ex": "Gira a la izquierda en el segundo semáforo."
+     }
+    ],
+    "gram": "Imperativo de tú: abre, pulsa, gira; irregulares: ten, pon, ven, haz. Asegúrate de / no te olvides de + infinitivo."
+   }
+  },
+  {
+   "d": 265,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Showing interest: ¿En serio?",
+     "g": "React naturally to show you are listening.",
+     "p": [
+      "Surprise: ¿En serio?, ¡No me digas!, ¡Qué fuerte! (Spain), ¡No puede ser!",
+      "Joy or sympathy: ¡Qué bien!, ¡Me alegro mucho!, ¡Qué pena!, ¡Vaya!",
+      "After ¡Qué bien que...! or me alegro de que... use the subjunctive: me alegro de que vengas."
+     ],
+     "q": "Imagine I tell you I won a cooking contest. How do you react in Spanish?",
+     "c": "In your next chat, use at least three reactions: ¿En serio?, ¡Qué bien! and ¡No me digas!"
+    },
+    "de": {
+     "t": "Interesse zeigen: ¿En serio?",
+     "g": "Reagiere natürlich und zeig, dass du zuhörst.",
+     "p": [
+      "Überraschung: ¿En serio?, ¡No me digas!, ¡Qué fuerte! (Spanien), ¡No puede ser!",
+      "Freude oder Mitgefühl: ¡Qué bien!, ¡Me alegro mucho!, ¡Qué pena!, ¡Vaya!",
+      "Nach ¡Qué bien que...! oder me alegro de que... folgt Subjuntivo: me alegro de que vengas."
+     ],
+     "q": "Stell dir vor, ich habe einen Kochwettbewerb gewonnen. Wie reagierst du auf Spanisch?",
+     "c": "Nutze im nächsten Chat mindestens drei Reaktionen: ¿En serio?, ¡Qué bien! und ¡No me digas!"
+    },
+    "es": {
+     "t": "Mostrar interés: ¿En serio?",
+     "g": "Reacciona con naturalidad para mostrar que escuchas.",
+     "p": [
+      "Sorpresa: ¿En serio?, ¡No me digas!, ¡Qué fuerte! (España), ¡No puede ser!",
+      "Alegría o empatía: ¡Qué bien!, ¡Me alegro mucho!, ¡Qué pena!, ¡Vaya!",
+      "Tras ¡Qué bien que...! o me alegro de que... va subjuntivo: me alegro de que vengas."
+     ],
+     "q": "Imagina que te cuento que gané un concurso de cocina. ¿Cómo reaccionas?",
+     "c": "En tu próxima charla, usa al menos tres reacciones: ¿En serio?, ¡Qué bien! y ¡No me digas!"
+    },
+    "fr": {
+     "t": "Montrer de l'intérêt : ¿En serio?",
+     "g": "Réagis naturellement pour montrer que tu écoutes.",
+     "p": [
+      "Surprise : ¿En serio?, ¡No me digas!, ¡Qué fuerte! (Espagne), ¡No puede ser!",
+      "Joie ou compassion : ¡Qué bien!, ¡Me alegro mucho!, ¡Qué pena!, ¡Vaya!",
+      "Après ¡Qué bien que...! ou me alegro de que..., subjonctif : me alegro de que vengas."
+     ],
+     "q": "Imagine que je te raconte que j'ai gagné un concours de cuisine. Comment réagis-tu en espagnol ?",
+     "c": "Dans ta prochaine discussion, utilise au moins trois réactions : ¿En serio?, ¡Qué bien! et ¡No me digas!"
+    },
+    "it": {
+     "t": "Mostrare interesse: ¿En serio?",
+     "g": "Reagisci in modo naturale per mostrare che ascolti.",
+     "p": [
+      "Sorpresa: ¿En serio?, ¡No me digas!, ¡Qué fuerte! (Spagna), ¡No puede ser!",
+      "Gioia o empatia: ¡Qué bien!, ¡Me alegro mucho!, ¡Qué pena!, ¡Vaya!",
+      "Dopo ¡Qué bien que...! o me alegro de que... ci vuole il congiuntivo: me alegro de que vengas."
+     ],
+     "q": "Immagina che ti racconti di aver vinto una gara di cucina. Come reagisci in spagnolo?",
+     "c": "Nella prossima chiacchierata usa almeno tre reazioni: ¿En serio?, ¡Qué bien! e ¡No me digas!"
+    },
+    "pt": {
+     "t": "Mostrar interesse: ¿En serio?",
+     "g": "Reage com naturalidade para mostrar que estás a ouvir.",
+     "p": [
+      "Surpresa: ¿En serio?, ¡No me digas!, ¡Qué fuerte! (Espanha), ¡No puede ser!",
+      "Alegria ou empatia: ¡Qué bien!, ¡Me alegro mucho!, ¡Qué pena!, ¡Vaya!",
+      "Depois de ¡Qué bien que...! ou me alegro de que... vem o conjuntivo: me alegro de que vengas."
+     ],
+     "q": "Imagina que te conto que ganhei um concurso de culinária. Como reages em espanhol?",
+     "c": "Na tua próxima conversa usa pelo menos três reações: ¿En serio?, ¡Qué bien! e ¡No me digas!"
+    },
+    "pt_BR": {
+     "t": "Mostrar interesse: ¿En serio?",
+     "g": "Reaja com naturalidade para mostrar que está ouvindo.",
+     "p": [
+      "Surpresa: ¿En serio?, ¡No me digas!, ¡Qué fuerte! (Espanha), ¡No puede ser!",
+      "Alegria ou empatia: ¡Qué bien!, ¡Me alegro mucho!, ¡Qué pena!, ¡Vaya!",
+      "Depois de ¡Qué bien que...! ou me alegro de que... vem o subjuntivo: me alegro de que vengas."
+     ],
+     "q": "Imagine que eu te conto que ganhei um concurso de culinária. Como você reage em espanhol?",
+     "c": "Na sua próxima conversa use pelo menos três reações: ¿En serio?, ¡Qué bien! e ¡No me digas!"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "¿En serio?",
+      "ex": "¿En serio? ¿Has aprobado todo a la primera?"
+     },
+     {
+      "w": "¡No me digas!",
+      "ex": "¡No me digas! ¿Te vas a vivir a Chile?"
+     },
+     {
+      "w": "¡Qué fuerte!",
+      "ex": "¡Qué fuerte! Nos encontramos en el mismo hotel."
+     },
+     {
+      "w": "¡Me alegro mucho!",
+      "ex": "¿Tienes trabajo nuevo? ¡Me alegro mucho!"
+     },
+     {
+      "w": "¡Vaya!",
+      "ex": "¡Vaya! Se ha cancelado el concierto."
+     },
+     {
+      "w": "¡Qué pena!",
+      "ex": "¿No puedes venir? ¡Qué pena!"
+     }
+    ],
+    "gram": "Reaccionar: ¡Qué + adjetivo/nombre! (¡Qué bien!, ¡Qué pena!). Me alegro de que / ¡Qué bien que! + subjuntivo."
+   }
+  },
+  {
+   "d": 266,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Asking follow-up questions",
+     "g": "Keep a conversation flowing with good follow-up questions.",
+     "p": [
+      "Ask for more story: ¿Y luego qué pasó? ¿Y al final? ¿Cómo terminó?",
+      "Ask about feelings and details: ¿Cómo te sentiste? ¿Con quién fuiste? ¿Qué fue lo mejor?",
+      "Echo a key word as a question: — Fui a Lima. — ¿A Lima? ¡Qué bien! ¿Y qué tal?"
+     ],
+     "q": "Tell me about a recent weekend, and I will ask you follow-up questions. Ready?",
+     "c": "In your next conversation, ask three follow-up questions before talking about yourself."
+    },
+    "de": {
+     "t": "Nachfragen stellen",
+     "g": "Halte ein Gespräch mit guten Nachfragen im Fluss.",
+     "p": [
+      "Nach dem Verlauf fragen: ¿Y luego qué pasó? ¿Y al final? ¿Cómo terminó?",
+      "Nach Gefühlen und Details: ¿Cómo te sentiste? ¿Con quién fuiste? ¿Qué fue lo mejor?",
+      "Ein Schlüsselwort als Frage wiederholen: — Fui a Lima. — ¿A Lima? ¡Qué bien! ¿Y qué tal?"
+     ],
+     "q": "Erzähl mir von einem Wochenende, und ich stelle dir Nachfragen. Bereit?",
+     "c": "Stell im nächsten Gespräch drei Nachfragen, bevor du von dir erzählst."
+    },
+    "es": {
+     "t": "Hacer preguntas de seguimiento",
+     "g": "Mantén viva la conversación con buenas preguntas de seguimiento.",
+     "p": [
+      "Pide más historia: ¿Y luego qué pasó? ¿Y al final? ¿Cómo terminó?",
+      "Pregunta por sentimientos y detalles: ¿Cómo te sentiste? ¿Con quién fuiste? ¿Qué fue lo mejor?",
+      "Repite una palabra clave como pregunta: — Fui a Lima. — ¿A Lima? ¡Qué bien! ¿Y qué tal?"
+     ],
+     "q": "Cuéntame un fin de semana reciente y yo te haré preguntas. ¿Preparado?",
+     "c": "En tu próxima conversación, haz tres preguntas de seguimiento antes de hablar de ti."
+    },
+    "fr": {
+     "t": "Poser des questions de relance",
+     "g": "Fais vivre la conversation avec de bonnes relances.",
+     "p": [
+      "Demande la suite : ¿Y luego qué pasó? ¿Y al final? ¿Cómo terminó?",
+      "Sentiments et détails : ¿Cómo te sentiste? ¿Con quién fuiste? ¿Qué fue lo mejor?",
+      "Reprends un mot clé en question : — Fui a Lima. — ¿A Lima? ¡Qué bien! ¿Y qué tal?"
+     ],
+     "q": "Raconte-moi un week-end récent et je te poserai des questions. Prêt ?",
+     "c": "Dans ta prochaine conversation, pose trois relances avant de parler de toi."
+    },
+    "it": {
+     "t": "Fare domande di approfondimento",
+     "g": "Mantieni viva la conversazione con buone domande.",
+     "p": [
+      "Chiedi il seguito: ¿Y luego qué pasó? ¿Y al final? ¿Cómo terminó?",
+      "Chiedi emozioni e dettagli: ¿Cómo te sentiste? ¿Con quién fuiste? ¿Qué fue lo mejor?",
+      "Ripeti una parola chiave come domanda: — Fui a Lima. — ¿A Lima? ¡Qué bien! ¿Y qué tal?"
+     ],
+     "q": "Raccontami un weekend recente e io ti farò delle domande. Pronto?",
+     "c": "Nella prossima conversazione fai tre domande di approfondimento prima di parlare di te."
+    },
+    "pt": {
+     "t": "Fazer perguntas de seguimento",
+     "g": "Mantém a conversa viva com boas perguntas de seguimento.",
+     "p": [
+      "Pede mais história: ¿Y luego qué pasó? ¿Y al final? ¿Cómo terminó?",
+      "Pergunta por sentimentos e detalhes: ¿Cómo te sentiste? ¿Con quién fuiste? ¿Qué fue lo mejor?",
+      "Repete uma palavra-chave como pergunta: — Fui a Lima. — ¿A Lima? ¡Qué bien! ¿Y qué tal?"
+     ],
+     "q": "Conta-me um fim de semana recente e eu faço-te perguntas. Preparado?",
+     "c": "Na tua próxima conversa, faz três perguntas de seguimento antes de falar de ti."
+    },
+    "pt_BR": {
+     "t": "Fazer perguntas de acompanhamento",
+     "g": "Mantenha a conversa viva com boas perguntas de acompanhamento.",
+     "p": [
+      "Peça mais da história: ¿Y luego qué pasó? ¿Y al final? ¿Cómo terminó?",
+      "Pergunte sobre sentimentos e detalhes: ¿Cómo te sentiste? ¿Con quién fuiste? ¿Qué fue lo mejor?",
+      "Repita uma palavra-chave como pergunta: — Fui a Lima. — ¿A Lima? ¡Qué bien! ¿Y qué tal?"
+     ],
+     "q": "Me conte um fim de semana recente e eu faço perguntas. Preparado?",
+     "c": "Na sua próxima conversa, faça três perguntas de acompanhamento antes de falar de você."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "¿Y luego qué pasó?",
+      "ex": "Perdiste el tren... ¿y luego qué pasó?"
+     },
+     {
+      "w": "¿Cómo te sentiste?",
+      "ex": "¿Cómo te sentiste el primer día de trabajo?"
+     },
+     {
+      "w": "¿Y qué tal?",
+      "ex": "¿Fuiste a la boda de tu prima? ¿Y qué tal?"
+     },
+     {
+      "w": "¿Qué fue lo mejor?",
+      "ex": "¿Qué fue lo mejor del viaje?"
+     },
+     {
+      "w": "¿Con quién fuiste?",
+      "ex": "¿Con quién fuiste al concierto?"
+     },
+     {
+      "w": "¿Cómo terminó?",
+      "ex": "¿Y la historia cómo terminó?"
+     }
+    ],
+    "gram": "Preguntas abiertas con qué, cómo, con quién y cuándo. Indefinido para hechos concretos: ¿cómo te sentiste?, ¿qué pasó?"
+   }
+  },
+  {
+   "d": 267,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Softening what you say",
+     "g": "Sound polite and less direct when you disagree or ask.",
+     "p": [
+      "Small softeners: un poco, más bien, algo, igual (Spain), a lo mejor.",
+      "Soften opinions: es un poco caro → más bien caro; no me gusta → no me convence mucho.",
+      "Use the conditional and imperfect: querría pedirte algo, quería saber si..., ¿podrías...?"
+     ],
+     "q": "How would you politely say a film was boring? Try with un poco or no me convenció mucho.",
+     "c": "Rewrite three direct sentences in a softer way using a lo mejor, un poco and ¿podrías...?"
+    },
+    "de": {
+     "t": "Weicher formulieren",
+     "g": "Klinge höflich und weniger direkt, wenn du widersprichst oder bittest.",
+     "p": [
+      "Kleine Weichmacher: un poco, más bien, algo, igual (Spanien), a lo mejor.",
+      "Meinungen abschwächen: es un poco caro → más bien caro; no me gusta → no me convence mucho.",
+      "Konditional und Imperfekt: querría pedirte algo, quería saber si..., ¿podrías...?"
+     ],
+     "q": "Wie sagst du höflich, dass ein Film langweilig war? Versuch es mit un poco oder no me convenció mucho.",
+     "c": "Formuliere drei direkte Sätze weicher mit a lo mejor, un poco und ¿podrías...?"
+    },
+    "es": {
+     "t": "Suavizar lo que dices",
+     "g": "Suena educado y menos directo al discrepar o pedir algo.",
+     "p": [
+      "Atenuadores: un poco, más bien, algo, igual (España), a lo mejor.",
+      "Suaviza opiniones: es caro → es un poco caro; no me gusta → no me convence mucho.",
+      "Usa el condicional y el imperfecto: querría pedirte algo, quería saber si..., ¿podrías...?"
+     ],
+     "q": "¿Cómo dirías con tacto que una película fue aburrida? Prueba con un poco o no me convenció mucho.",
+     "c": "Reescribe tres frases directas de forma más suave con a lo mejor, un poco y ¿podrías...?"
+    },
+    "fr": {
+     "t": "Adoucir ses propos",
+     "g": "Sois poli et moins direct quand tu n'es pas d'accord ou que tu demandes.",
+     "p": [
+      "Petits adoucisseurs : un poco, más bien, algo, igual (Espagne), a lo mejor.",
+      "Adoucis tes avis : es caro → es un poco caro ; no me gusta → no me convence mucho.",
+      "Conditionnel et imparfait : querría pedirte algo, quería saber si..., ¿podrías...?"
+     ],
+     "q": "Comment dire poliment qu'un film était ennuyeux ? Essaie avec un poco ou no me convenció mucho.",
+     "c": "Réécris trois phrases directes plus doucement avec a lo mejor, un poco et ¿podrías...?"
+    },
+    "it": {
+     "t": "Ammorbidire ciò che dici",
+     "g": "Sii cortese e meno diretto quando non sei d'accordo o chiedi qualcosa.",
+     "p": [
+      "Piccoli attenuatori: un poco, más bien, algo, igual (Spagna), a lo mejor.",
+      "Ammorbidisci le opinioni: es caro → es un poco caro; no me gusta → no me convence mucho.",
+      "Condizionale e imperfetto: querría pedirte algo, quería saber si..., ¿podrías...?"
+     ],
+     "q": "Come diresti con garbo che un film era noioso? Prova con un poco o no me convenció mucho.",
+     "c": "Riscrivi tre frasi dirette in modo più morbido con a lo mejor, un poco e ¿podrías...?"
+    },
+    "pt": {
+     "t": "Suavizar o que dizes",
+     "g": "Soa educado e menos direto quando discordas ou pedes algo.",
+     "p": [
+      "Atenuadores: un poco, más bien, algo, igual (Espanha), a lo mejor.",
+      "Suaviza opiniões: es caro → es un poco caro; no me gusta → no me convence mucho.",
+      "Usa o condicional e o imperfeito: querría pedirte algo, quería saber si..., ¿podrías...?"
+     ],
+     "q": "Como dirias com tato que um filme foi aborrecido? Tenta com un poco ou no me convenció mucho.",
+     "c": "Reescreve três frases diretas de forma mais suave com a lo mejor, un poco e ¿podrías...?"
+    },
+    "pt_BR": {
+     "t": "Suavizar o que você diz",
+     "g": "Soe educado e menos direto ao discordar ou pedir algo.",
+     "p": [
+      "Atenuadores: un poco, más bien, algo, igual (Espanha), a lo mejor.",
+      "Suavize opiniões: es caro → es un poco caro; no me gusta → no me convence mucho.",
+      "Use o condicional e o imperfeito: querría pedirte algo, quería saber si..., ¿podrías...?"
+     ],
+     "q": "Como você diria com jeito que um filme foi chato? Tente com un poco ou no me convenció mucho.",
+     "c": "Reescreva três frases diretas de forma mais suave com a lo mejor, un poco e ¿podrías...?"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un poco",
+      "ex": "La sopa está un poco salada, ¿no?"
+     },
+     {
+      "w": "más bien",
+      "ex": "No es feo; es más bien original."
+     },
+     {
+      "w": "a lo mejor",
+      "ex": "A lo mejor podríamos salir un poco antes."
+     },
+     {
+      "w": "igual",
+      "ex": "Igual llego tarde, ya te aviso."
+     },
+     {
+      "w": "quería saber si",
+      "ex": "Quería saber si tienen mesa para cuatro."
+     },
+     {
+      "w": "¿podrías...?",
+      "ex": "¿Podrías bajar un poco la música?"
+     }
+    ],
+    "gram": "Cortesía: condicional (¿podrías?, querría) e imperfecto de cortesía (quería saber si). A lo mejor + indicativo."
+   }
+  },
+  {
+   "d": 268,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Jokes and wordplay",
+     "g": "Enjoy simple Spanish jokes and see why they are funny.",
+     "p": [
+      "Many jokes play with double meanings: ¿Qué le dice un jaguar a otro? Jaguar you (¿Ja, guar yu?).",
+      "Classic format: ¿Qué le dijo... a...? — ¿Qué le dijo una pared a otra? Nos vemos en la esquina.",
+      "Puns use sounds: ¿Cuál es el café más peligroso? El ex-preso (espresso)."
+     ],
+     "q": "Do you know a joke in your language? Try telling it in Spanish, even if the pun is lost.",
+     "c": "Learn one Spanish joke by heart and tell it to someone today."
+    },
+    "de": {
+     "t": "Witze und Wortspiele",
+     "g": "Hab Spaß an einfachen spanischen Witzen und verstehe, warum sie lustig sind.",
+     "p": [
+      "Viele Witze spielen mit Doppeldeutigkeiten: ¿Qué le dice un jaguar a otro? Jaguar you (¿Ja, guar yu?).",
+      "Klassisches Format: ¿Qué le dijo... a...? — ¿Qué le dijo una pared a otra? Nos vemos en la esquina.",
+      "Wortspiele nutzen Klänge: ¿Cuál es el café más peligroso? El ex-preso (espresso)."
+     ],
+     "q": "Kennst du einen Witz in deiner Sprache? Erzähl ihn auf Spanisch, auch wenn das Wortspiel verloren geht.",
+     "c": "Lern einen spanischen Witz auswendig und erzähl ihn heute jemandem."
+    },
+    "es": {
+     "t": "Chistes y juegos de palabras",
+     "g": "Disfruta de chistes sencillos en español y entiende por qué hacen gracia.",
+     "p": [
+      "Muchos chistes juegan con dobles sentidos: ¿Qué le dice un jaguar a otro? Jaguar you (¿Ja, guar yu?).",
+      "Formato clásico: ¿Qué le dijo una pared a otra? Nos vemos en la esquina.",
+      "Los juegos de palabras usan sonidos: ¿Cuál es el café más peligroso? El ex-preso."
+     ],
+     "q": "¿Sabes algún chiste en tu idioma? Intenta contarlo en español, aunque se pierda el juego.",
+     "c": "Apréndete un chiste en español de memoria y cuéntaselo hoy a alguien."
+    },
+    "fr": {
+     "t": "Blagues et jeux de mots",
+     "g": "Profite de blagues espagnoles simples et comprends pourquoi elles sont drôles.",
+     "p": [
+      "Beaucoup jouent sur le double sens : ¿Qué le dice un jaguar a otro? Jaguar you (¿Ja, guar yu?).",
+      "Format classique : ¿Qué le dijo... a...? — ¿Qué le dijo una pared a otra? Nos vemos en la esquina.",
+      "Les calembours jouent sur les sons : ¿Cuál es el café más peligroso? El ex-preso (espresso)."
+     ],
+     "q": "Tu connais une blague dans ta langue ? Raconte-la en espagnol, même si le jeu de mots se perd.",
+     "c": "Apprends une blague espagnole par cœur et raconte-la à quelqu'un aujourd'hui."
+    },
+    "it": {
+     "t": "Barzellette e giochi di parole",
+     "g": "Goditi semplici barzellette spagnole e capisci perché fanno ridere.",
+     "p": [
+      "Molte giocano sul doppio senso: ¿Qué le dice un jaguar a otro? Jaguar you (¿Ja, guar yu?).",
+      "Formato classico: ¿Qué le dijo... a...? — ¿Qué le dijo una pared a otra? Nos vemos en la esquina.",
+      "I giochi di parole usano i suoni: ¿Cuál es el café más peligroso? El ex-preso (espresso)."
+     ],
+     "q": "Conosci una barzelletta nella tua lingua? Prova a raccontarla in spagnolo, anche se il gioco si perde.",
+     "c": "Impara a memoria una barzelletta spagnola e raccontala oggi a qualcuno."
+    },
+    "pt": {
+     "t": "Piadas e trocadilhos",
+     "g": "Diverte-te com piadas simples em espanhol e percebe porque têm graça.",
+     "p": [
+      "Muitas piadas jogam com duplos sentidos: ¿Qué le dice un jaguar a otro? Jaguar you (¿Ja, guar yu?).",
+      "Formato clássico: ¿Qué le dijo... a...? — ¿Qué le dijo una pared a otra? Nos vemos en la esquina.",
+      "Os trocadilhos usam sons: ¿Cuál es el café más peligroso? El ex-preso (espresso)."
+     ],
+     "q": "Sabes alguma piada na tua língua? Tenta contá-la em espanhol, mesmo que o trocadilho se perca.",
+     "c": "Decora uma piada em espanhol e conta-a hoje a alguém."
+    },
+    "pt_BR": {
+     "t": "Piadas e trocadilhos",
+     "g": "Divirta-se com piadas simples em espanhol e entenda por que têm graça.",
+     "p": [
+      "Muitas piadas brincam com duplo sentido: ¿Qué le dice un jaguar a otro? Jaguar you (¿Ja, guar yu?).",
+      "Formato clássico: ¿Qué le dijo... a...? — ¿Qué le dijo una pared a otra? Nos vemos en la esquina.",
+      "Os trocadilhos usam sons: ¿Cuál es el café más peligroso? El ex-preso (espresso)."
+     ],
+     "q": "Você sabe alguma piada na sua língua? Tente contar em espanhol, mesmo que o trocadilho se perca.",
+     "c": "Decore uma piada em espanhol e conte para alguém hoje."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el chiste",
+      "ex": "Mi abuelo siempre cuenta el mismo chiste."
+     },
+     {
+      "w": "hacer gracia",
+      "ex": "Ese chiste me hace mucha gracia."
+     },
+     {
+      "w": "el juego de palabras",
+      "ex": "El chiste es un juego de palabras con café."
+     },
+     {
+      "w": "el doble sentido",
+      "ex": "Esa frase tiene doble sentido."
+     },
+     {
+      "w": "contar un chiste",
+      "ex": "¿Te cuento un chiste muy malo?"
+     },
+     {
+      "w": "partirse de risa",
+      "ex": "Nos partimos de risa con sus historias."
+     }
+    ],
+    "gram": "Hacer gracia funciona como gustar: me hace gracia, nos hacen gracia sus chistes. ¿Qué le dijo X a Y? + estilo directo."
+   }
+  },
+  {
+   "d": 269,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Intonation in Spanish",
+     "g": "Use rising and falling melody to sound natural.",
+     "p": [
+      "Yes/no questions usually rise at the end: ¿Vienes mañana? ↗",
+      "Questions with qué, dónde, cómo usually fall: ¿Dónde vives? ↘; statements also fall.",
+      "Lists rise on each item and fall on the last: manzanas ↗, peras ↗ y uvas ↘. Surprise goes high: ¡¿En serio?!"
+     ],
+     "q": "Say ¿Tienes hambre? and Tienes hambre. out loud. Can you hear the difference?",
+     "c": "Record yourself reading one question, one statement and one list, and check the melody."
+    },
+    "de": {
+     "t": "Intonation im Spanischen",
+     "g": "Nutze steigende und fallende Melodie, um natürlich zu klingen.",
+     "p": [
+      "Ja/Nein-Fragen steigen meist am Ende: ¿Vienes mañana? ↗",
+      "Fragen mit qué, dónde, cómo fallen meist: ¿Dónde vives? ↘; Aussagen fallen auch.",
+      "Aufzählungen steigen bei jedem Element und fallen am Ende: manzanas ↗, peras ↗ y uvas ↘. Überraschung: hoch."
+     ],
+     "q": "Sag laut ¿Tienes hambre? und Tienes hambre. Hörst du den Unterschied?",
+     "c": "Nimm eine Frage, eine Aussage und eine Aufzählung auf und prüfe die Melodie."
+    },
+    "es": {
+     "t": "La entonación en español",
+     "g": "Usa una melodía ascendente y descendente para sonar natural.",
+     "p": [
+      "Las preguntas de sí o no suelen subir al final: ¿Vienes mañana? ↗",
+      "Las preguntas con qué, dónde, cómo suelen bajar: ¿Dónde vives? ↘; las afirmaciones también bajan.",
+      "En las enumeraciones sube cada elemento y baja el último: manzanas ↗, peras ↗ y uvas ↘. La sorpresa va alta."
+     ],
+     "q": "Di en voz alta ¿Tienes hambre? y Tienes hambre. ¿Notas la diferencia?",
+     "c": "Grábate leyendo una pregunta, una afirmación y una enumeración, y revisa la melodía."
+    },
+    "fr": {
+     "t": "L'intonation en espagnol",
+     "g": "Utilise une mélodie montante et descendante pour paraître naturel.",
+     "p": [
+      "Les questions fermées montent à la fin : ¿Vienes mañana? ↗",
+      "Les questions avec qué, dónde, cómo descendent : ¿Dónde vives? ↘ ; les affirmations aussi.",
+      "Les listes montent sur chaque élément et descendent sur le dernier : manzanas ↗, peras ↗ y uvas ↘."
+     ],
+     "q": "Dis à voix haute ¿Tienes hambre? et Tienes hambre. Tu entends la différence ?",
+     "c": "Enregistre-toi en lisant une question, une affirmation et une liste, puis vérifie la mélodie."
+    },
+    "it": {
+     "t": "L'intonazione in spagnolo",
+     "g": "Usa una melodia ascendente e discendente per sembrare naturale.",
+     "p": [
+      "Le domande sì/no di solito salgono alla fine: ¿Vienes mañana? ↗",
+      "Le domande con qué, dónde, cómo di solito scendono: ¿Dónde vives? ↘; anche le affermazioni.",
+      "Negli elenchi ogni elemento sale e l'ultimo scende: manzanas ↗, peras ↗ y uvas ↘. La sorpresa va in alto."
+     ],
+     "q": "Di' ad alta voce ¿Tienes hambre? e Tienes hambre. Senti la differenza?",
+     "c": "Registrati mentre leggi una domanda, un'affermazione e un elenco, e controlla la melodia."
+    },
+    "pt": {
+     "t": "A entoação em espanhol",
+     "g": "Usa uma melodia ascendente e descendente para soar natural.",
+     "p": [
+      "As perguntas de sim ou não costumam subir no fim: ¿Vienes mañana? ↗",
+      "As perguntas com qué, dónde, cómo costumam descer: ¿Dónde vives? ↘; as afirmações também.",
+      "Nas enumerações cada elemento sobe e o último desce: manzanas ↗, peras ↗ y uvas ↘. A surpresa vai alta."
+     ],
+     "q": "Diz em voz alta ¿Tienes hambre? e Tienes hambre. Notas a diferença?",
+     "c": "Grava-te a ler uma pergunta, uma afirmação e uma enumeração, e verifica a melodia."
+    },
+    "pt_BR": {
+     "t": "A entonação em espanhol",
+     "g": "Use uma melodia que sobe e desce para soar natural.",
+     "p": [
+      "Perguntas de sim ou não costumam subir no final: ¿Vienes mañana? ↗",
+      "Perguntas com qué, dónde, cómo costumam descer: ¿Dónde vives? ↘; afirmações também.",
+      "Nas enumerações cada item sobe e o último desce: manzanas ↗, peras ↗ y uvas ↘. A surpresa vai lá em cima."
+     ],
+     "q": "Diga em voz alta ¿Tienes hambre? e Tienes hambre. Percebe a diferença?",
+     "c": "Grave-se lendo uma pergunta, uma afirmação e uma enumeração, e confira a melodia."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la entonación",
+      "ex": "La entonación cambia el sentido de la frase."
+     },
+     {
+      "w": "subir el tono",
+      "ex": "En las preguntas de sí o no subimos el tono."
+     },
+     {
+      "w": "bajar el tono",
+      "ex": "Al terminar una afirmación bajamos el tono."
+     },
+     {
+      "w": "la enumeración",
+      "ex": "En una enumeración, el último elemento baja."
+     },
+     {
+      "w": "la pregunta",
+      "ex": "¿Vienes mañana? es una pregunta de sí o no."
+     },
+     {
+      "w": "la sorpresa",
+      "ex": "¡¿Ganaste?! Se nota la sorpresa en la voz."
+     }
+    ],
+    "gram": "Sí/no: tono final ascendente (¿Vienes?). Con interrogativo: descendente (¿Dónde vives?). Afirmación: descendente."
+   }
+  },
+  {
+   "d": 270,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Spelling rules: b or v, h, g or j",
+     "g": "Learn useful patterns for letters that sound the same.",
+     "p": [
+      "B and v sound the same. Use b before l and r (blanco, brazo) and in -aba endings (cantaba).",
+      "H is silent: hola, hacer, ahora. Words starting with hue-, hie- take h: huevo, hielo.",
+      "G before e, i sounds like j: gente, girar. Verbs in -ger, -gir keep g (coger, elegir) except tejer."
+     ],
+     "q": "Which Spanish word do you always misspell? Tell me and we will find a rule.",
+     "c": "Write ten words from today's patterns from memory, then check them."
+    },
+    "de": {
+     "t": "Rechtschreibung: b oder v, h, g oder j",
+     "g": "Lerne nützliche Muster für gleich klingende Buchstaben.",
+     "p": [
+      "B und v klingen gleich. B vor l und r (blanco, brazo) und in Endungen auf -aba (cantaba).",
+      "H ist stumm: hola, hacer, ahora. Wörter mit hue-, hie- am Anfang haben h: huevo, hielo.",
+      "G vor e, i klingt wie j: gente, girar. Verben auf -ger, -gir behalten g (coger, elegir), außer tejer."
+     ],
+     "q": "Welches spanische Wort schreibst du immer falsch? Sag es mir, wir finden eine Regel.",
+     "c": "Schreib zehn Wörter zu den heutigen Mustern aus dem Gedächtnis und kontrolliere sie."
+    },
+    "es": {
+     "t": "Ortografía: b o v, h, g o j",
+     "g": "Aprende patrones útiles para letras que suenan igual.",
+     "p": [
+      "La b y la v suenan igual. Se escribe b antes de l y r (blanco, brazo) y en las terminaciones -aba (cantaba).",
+      "La h no suena: hola, hacer, ahora. Las palabras que empiezan por hue-, hie- llevan h: huevo, hielo.",
+      "La g ante e, i suena como j: gente, girar. Los verbos en -ger, -gir llevan g (coger, elegir), salvo tejer."
+     ],
+     "q": "¿Qué palabra en español escribes siempre mal? Dímela y buscamos una regla.",
+     "c": "Escribe de memoria diez palabras con los patrones de hoy y luego compruébalas."
+    },
+    "fr": {
+     "t": "Orthographe : b ou v, h, g ou j",
+     "g": "Apprends des règles utiles pour les lettres qui se prononcent pareil.",
+     "p": [
+      "B et v se prononcent pareil. On écrit b devant l et r (blanco, brazo) et dans les finales en -aba (cantaba).",
+      "Le h est muet : hola, hacer, ahora. Les mots qui commencent par hue-, hie- ont un h : huevo, hielo.",
+      "G devant e, i se prononce comme j : gente, girar. Les verbes en -ger, -gir gardent g (coger, elegir), sauf tejer."
+     ],
+     "q": "Quel mot espagnol écris-tu toujours mal ? Dis-le-moi et on trouvera une règle.",
+     "c": "Écris de mémoire dix mots suivant les règles du jour, puis vérifie-les."
+    },
+    "it": {
+     "t": "Ortografia: b o v, h, g o j",
+     "g": "Impara schemi utili per lettere che suonano uguali.",
+     "p": [
+      "B e v suonano uguali. Si scrive b davanti a l e r (blanco, brazo) e nelle desinenze -aba (cantaba).",
+      "La h è muta: hola, hacer, ahora. Le parole che iniziano con hue-, hie- hanno la h: huevo, hielo.",
+      "G davanti a e, i suona come j: gente, girar. I verbi in -ger, -gir hanno la g (coger, elegir), tranne tejer."
+     ],
+     "q": "Quale parola spagnola sbagli sempre? Dimmela e troviamo una regola.",
+     "c": "Scrivi a memoria dieci parole con gli schemi di oggi, poi controllale."
+    },
+    "pt": {
+     "t": "Ortografia: b ou v, h, g ou j",
+     "g": "Aprende padrões úteis para letras que soam igual.",
+     "p": [
+      "B e v soam igual. Escreve-se b antes de l e r (blanco, brazo) e nas terminações -aba (cantaba).",
+      "O h não se pronuncia: hola, hacer, ahora. As palavras que começam por hue-, hie- levam h: huevo, hielo.",
+      "G antes de e, i soa como j: gente, girar. Os verbos em -ger, -gir levam g (coger, elegir), exceto tejer."
+     ],
+     "q": "Que palavra em espanhol escreves sempre mal? Diz-ma e procuramos uma regra.",
+     "c": "Escreve de memória dez palavras com os padrões de hoje e depois verifica-as."
+    },
+    "pt_BR": {
+     "t": "Ortografia: b ou v, h, g ou j",
+     "g": "Aprenda padrões úteis para letras que soam igual.",
+     "p": [
+      "B e v soam igual. Escreve-se b antes de l e r (blanco, brazo) e nas terminações -aba (cantaba).",
+      "O h é mudo: hola, hacer, ahora. Palavras que começam com hue-, hie- levam h: huevo, hielo.",
+      "G antes de e, i soa como j: gente, girar. Verbos em -ger, -gir levam g (coger, elegir), exceto tejer."
+     ],
+     "q": "Qual palavra em espanhol você sempre escreve errado? Me diga e achamos uma regra.",
+     "c": "Escreva de memória dez palavras com os padrões de hoje e depois confira."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el brazo",
+      "ex": "Me duele un poco el brazo derecho."
+     },
+     {
+      "w": "cantaba",
+      "ex": "De niña cantaba en el coro del colegio."
+     },
+     {
+      "w": "el huevo",
+      "ex": "Para la tortilla necesito seis huevos."
+     },
+     {
+      "w": "el hielo",
+      "ex": "¿Quieres el refresco con hielo?"
+     },
+     {
+      "w": "elegir",
+      "ex": "Es difícil elegir entre tantos postres."
+     },
+     {
+      "w": "la gente",
+      "ex": "La gente del pueblo es muy amable."
+     }
+    ],
+    "gram": "Se escribe b antes de l/r y en -aba; h en hue-/hie-; g en los verbos -ger/-gir (elegir), pero j en el pretérito de decir: dije."
+   }
+  }
+ ]
+}

@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 131,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Unless and when for the future",
+     "g": "Use unless, when, as soon as and before to talk about the future.",
+     "p": [
+      "After when, as soon as, before and unless, use the present: When I get home, I'll call you.",
+      "Unless means if not: I'll go unless it rains = I'll go if it doesn't rain.",
+      "When is sure, if is possible: When I see Ana (I will) vs If I see Ana (maybe)."
+     ],
+     "q": "What's the first thing you'll do as soon as you get home today?",
+     "c": "Write four sentences about tomorrow, one each with when, as soon as, before and unless."
+    },
+    "de": {
+     "t": "Unless und when für die Zukunft",
+     "g": "Du sprichst mit unless, when, as soon as und before über die Zukunft.",
+     "p": [
+      "Nach when, as soon as, before und unless steht Präsens: When I get home, I'll call you.",
+      "Unless heißt wenn nicht: I'll go unless it rains = I'll go if it doesn't rain.",
+      "When ist sicher, if nur möglich: When I see Ana (sicher) vs If I see Ana (vielleicht)."
+     ],
+     "q": "Was machst du heute als Erstes, sobald du nach Hause kommst?",
+     "c": "Schreib vier Sätze über morgen, je einen mit when, as soon as, before und unless."
+    },
+    "es": {
+     "t": "Unless y when para el futuro",
+     "g": "Usa unless, when, as soon as y before para hablar del futuro.",
+     "p": [
+      "Tras when, as soon as, before y unless va presente: When I get home, I'll call you.",
+      "Unless significa si no: I'll go unless it rains = I'll go if it doesn't rain.",
+      "When es seguro, if es posible: When I see Ana (seguro) vs If I see Ana (quizás)."
+     ],
+     "q": "¿Qué es lo primero que harás en cuanto llegues a casa hoy?",
+     "c": "Escribe cuatro frases sobre mañana, una con when, as soon as, before y unless."
+    },
+    "fr": {
+     "t": "Unless et when pour le futur",
+     "g": "Utiliser unless, when, as soon as et before pour parler du futur.",
+     "p": [
+      "Après when, as soon as, before et unless, on met le présent : When I get home, I'll call you.",
+      "Unless veut dire si... ne pas : I'll go unless it rains = I'll go if it doesn't rain.",
+      "When est sûr, if est possible : When I see Ana (sûr) vs If I see Ana (peut-être)."
+     ],
+     "q": "Quelle est la première chose que tu feras dès que tu rentreras aujourd'hui ?",
+     "c": "Écris quatre phrases sur demain, une avec when, as soon as, before et unless."
+    },
+    "it": {
+     "t": "Unless e when per il futuro",
+     "g": "Usa unless, when, as soon as e before per parlare del futuro.",
+     "p": [
+      "Dopo when, as soon as, before e unless si usa il presente: When I get home, I'll call you.",
+      "Unless significa se non: I'll go unless it rains = I'll go if it doesn't rain.",
+      "When è sicuro, if è possibile: When I see Ana (sicuro) vs If I see Ana (forse)."
+     ],
+     "q": "Qual è la prima cosa che farai appena arrivi a casa oggi?",
+     "c": "Scrivi quattro frasi su domani, una con when, as soon as, before e unless."
+    },
+    "pt": {
+     "t": "Unless e when para o futuro",
+     "g": "Usa unless, when, as soon as e before para falar do futuro.",
+     "p": [
+      "Depois de when, as soon as, before e unless usa-se o presente: When I get home, I'll call you.",
+      "Unless quer dizer se não: I'll go unless it rains = I'll go if it doesn't rain.",
+      "When é certo, if é possível: When I see Ana (certo) vs If I see Ana (talvez)."
+     ],
+     "q": "Qual é a primeira coisa que vais fazer assim que chegares a casa hoje?",
+     "c": "Escreve quatro frases sobre amanhã, uma com when, as soon as, before e unless."
+    },
+    "pt_BR": {
+     "t": "Unless e when para o futuro",
+     "g": "Use unless, when, as soon as e before para falar do futuro.",
+     "p": [
+      "Depois de when, as soon as, before e unless vem o presente: When I get home, I'll call you.",
+      "Unless quer dizer se não: I'll go unless it rains = I'll go if it doesn't rain.",
+      "When é certo, if é possível: When I see Ana (certo) vs If I see Ana (talvez)."
+     ],
+     "q": "Qual é a primeira coisa que você vai fazer assim que chegar em casa hoje?",
+     "c": "Escreva quatro frases sobre amanhã, uma com when, as soon as, before e unless."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "unless",
+      "ex": "We'll walk unless it's too cold."
+     },
+     {
+      "w": "when I get home",
+      "ex": "When I get home, I'll make some tea."
+     },
+     {
+      "w": "as soon as",
+      "ex": "I'll text you as soon as I arrive."
+     },
+     {
+      "w": "before you leave",
+      "ex": "Please close the window before you leave."
+     },
+     {
+      "w": "after",
+      "ex": "After I finish work, I'll go to the gym."
+     },
+     {
+      "w": "until",
+      "ex": "I'll wait here until you come back."
+     }
+    ],
+    "gram": "Time words (when, as soon as, before, after, until) and unless take the present for future meaning: as soon as I arrive."
+   }
+  },
+  {
+   "d": 132,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Weather forecasts",
+     "g": "Understand a weather forecast and talk about tomorrow's weather.",
+     "p": [
+      "Weather words: sunny, cloudy, foggy, windy, showers, thunderstorms, frost.",
+      "Forecast language: Temperatures will rise. It's going to be wet. There'll be some sunshine.",
+      "Degrees: It'll be around 20 degrees. Highs of 25, lows of 12. It's below zero."
+     ],
+     "q": "What does the forecast say for your city tomorrow, and how will it change your plans?",
+     "c": "Write a short forecast for your area for the next two days, like a TV presenter."
+    },
+    "de": {
+     "t": "Wettervorhersagen",
+     "g": "Du verstehst eine Wettervorhersage und sprichst über das Wetter von morgen.",
+     "p": [
+      "Wetterwörter: sunny, cloudy, foggy, windy, showers, thunderstorms, frost.",
+      "Vorhersage: Temperatures will rise. It's going to be wet. There'll be some sunshine.",
+      "Grad: It'll be around 20 degrees. Highs of 25, lows of 12. It's below zero."
+     ],
+     "q": "Was sagt die Vorhersage für deine Stadt morgen, und wie ändert das deine Pläne?",
+     "c": "Schreib eine kurze Vorhersage für die nächsten zwei Tage bei dir, wie im Fernsehen."
+    },
+    "es": {
+     "t": "El pronóstico del tiempo",
+     "g": "Entiende un pronóstico y habla del tiempo que hará mañana.",
+     "p": [
+      "Palabras del tiempo: sunny, cloudy, foggy, windy, showers, thunderstorms, frost.",
+      "Lenguaje del pronóstico: Temperatures will rise. It's going to be wet. There'll be some sunshine.",
+      "Grados: It'll be around 20 degrees. Highs of 25, lows of 12. It's below zero."
+     ],
+     "q": "¿Qué dice el pronóstico para tu ciudad mañana y cómo cambia tus planes?",
+     "c": "Escribe un pronóstico breve de tu zona para los próximos dos días, como en la tele."
+    },
+    "fr": {
+     "t": "La météo",
+     "g": "Comprendre un bulletin météo et parler du temps de demain.",
+     "p": [
+      "Mots de la météo : sunny, cloudy, foggy, windy, showers, thunderstorms, frost.",
+      "Langage du bulletin : Temperatures will rise. It's going to be wet. There'll be some sunshine.",
+      "Degrés : It'll be around 20 degrees. Highs of 25, lows of 12. It's below zero."
+     ],
+     "q": "Que dit la météo pour ta ville demain, et comment cela change-t-il tes projets ?",
+     "c": "Écris un court bulletin météo pour ta région pour les deux prochains jours, comme à la télé."
+    },
+    "it": {
+     "t": "Le previsioni del tempo",
+     "g": "Capisci le previsioni del tempo e parla del tempo di domani.",
+     "p": [
+      "Parole del meteo: sunny, cloudy, foggy, windy, showers, thunderstorms, frost.",
+      "Linguaggio delle previsioni: Temperatures will rise. It's going to be wet. There'll be some sunshine.",
+      "Gradi: It'll be around 20 degrees. Highs of 25, lows of 12. It's below zero."
+     ],
+     "q": "Cosa dicono le previsioni per la tua città domani, e come cambiano i tuoi piani?",
+     "c": "Scrivi brevi previsioni per la tua zona per i prossimi due giorni, come in TV."
+    },
+    "pt": {
+     "t": "A previsão do tempo",
+     "g": "Percebe uma previsão do tempo e fala do tempo de amanhã.",
+     "p": [
+      "Palavras do tempo: sunny, cloudy, foggy, windy, showers, thunderstorms, frost.",
+      "Linguagem da previsão: Temperatures will rise. It's going to be wet. There'll be some sunshine.",
+      "Graus: It'll be around 20 degrees. Highs of 25, lows of 12. It's below zero."
+     ],
+     "q": "O que diz a previsão para a tua cidade amanhã, e como muda os teus planos?",
+     "c": "Escreve uma previsão curta para a tua zona nos próximos dois dias, como na televisão."
+    },
+    "pt_BR": {
+     "t": "A previsão do tempo",
+     "g": "Entenda uma previsão do tempo e fale do clima de amanhã.",
+     "p": [
+      "Palavras do tempo: sunny, cloudy, foggy, windy, showers, thunderstorms, frost.",
+      "Linguagem da previsão: Temperatures will rise. It's going to be wet. There'll be some sunshine.",
+      "Graus: It'll be around 20 degrees. Highs of 25, lows of 12. It's below zero."
+     ],
+     "q": "O que diz a previsão para sua cidade amanhã, e como isso muda seus planos?",
+     "c": "Escreva uma previsão curta para a sua região nos próximos dois dias, como na TV."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "cloudy",
+      "ex": "It'll be cloudy in the morning."
+     },
+     {
+      "w": "showers",
+      "ex": "There will be showers in the afternoon."
+     },
+     {
+      "w": "foggy",
+      "ex": "Drive carefully. It's very foggy today."
+     },
+     {
+      "w": "windy",
+      "ex": "It's going to be windy on the coast."
+     },
+     {
+      "w": "temperatures will rise",
+      "ex": "Temperatures will rise at the weekend."
+     },
+     {
+      "w": "degrees",
+      "ex": "It'll be about eighteen degrees tomorrow."
+     }
+    ],
+    "gram": "Forecasts use will and going to: It will be sunny. There'll be rain. Use it's + adjective: It's foggy, not It has fog."
+   }
+  },
+  {
+   "d": 133,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Holidays and packing",
+     "g": "Talk about trips and decide what to pack.",
+     "p": [
+      "Packing words: suitcase, backpack, passport, sunscreen, charger, toiletries.",
+      "Useful verbs: pack, unpack, forget, bring, take, check you have everything.",
+      "Plans: I'm going to the beach for a week, so I'll pack light clothes and sunscreen."
+     ],
+     "q": "What three things do you never travel without, and why?",
+     "c": "Make a packing list for a weekend trip and explain two items with because or so."
+    },
+    "de": {
+     "t": "Urlaub und Kofferpacken",
+     "g": "Du sprichst über Reisen und entscheidest, was du einpackst.",
+     "p": [
+      "Packwörter: suitcase, backpack, passport, sunscreen, charger, toiletries.",
+      "Nützliche Verben: pack, unpack, forget, bring, take, check you have everything.",
+      "Pläne: I'm going to the beach for a week, so I'll pack light clothes and sunscreen."
+     ],
+     "q": "Welche drei Dinge nimmst du immer mit auf Reisen, und warum?",
+     "c": "Mach eine Packliste für einen Wochenendtrip und erklär zwei Dinge mit because oder so."
+    },
+    "es": {
+     "t": "Vacaciones y maletas",
+     "g": "Habla de viajes y decide qué meter en la maleta.",
+     "p": [
+      "Palabras de equipaje: suitcase, backpack, passport, sunscreen, charger, toiletries.",
+      "Verbos útiles: pack, unpack, forget, bring, take, check you have everything.",
+      "Planes: I'm going to the beach for a week, so I'll pack light clothes and sunscreen."
+     ],
+     "q": "¿Qué tres cosas nunca faltan cuando viajas, y por qué?",
+     "c": "Haz una lista de equipaje para un fin de semana y explica dos cosas con because o so."
+    },
+    "fr": {
+     "t": "Vacances et valises",
+     "g": "Parler de voyages et décider quoi mettre dans sa valise.",
+     "p": [
+      "Mots du voyage : suitcase, backpack, passport, sunscreen, charger, toiletries.",
+      "Verbes utiles : pack, unpack, forget, bring, take, check you have everything.",
+      "Projets : I'm going to the beach for a week, so I'll pack light clothes and sunscreen."
+     ],
+     "q": "Quelles sont les trois choses que tu emportes toujours en voyage, et pourquoi ?",
+     "c": "Fais une liste de bagages pour un week-end et explique deux objets avec because ou so."
+    },
+    "it": {
+     "t": "Vacanze e valigie",
+     "g": "Parla di viaggi e decidi cosa mettere in valigia.",
+     "p": [
+      "Parole da viaggio: suitcase, backpack, passport, sunscreen, charger, toiletries.",
+      "Verbi utili: pack, unpack, forget, bring, take, check you have everything.",
+      "Piani: I'm going to the beach for a week, so I'll pack light clothes and sunscreen."
+     ],
+     "q": "Quali sono le tre cose che porti sempre in viaggio, e perché?",
+     "c": "Fai una lista per la valigia di un weekend e spiega due oggetti con because o so."
+    },
+    "pt": {
+     "t": "Férias e malas",
+     "g": "Fala de viagens e decide o que levar na mala.",
+     "p": [
+      "Palavras de viagem: suitcase, backpack, passport, sunscreen, charger, toiletries.",
+      "Verbos úteis: pack, unpack, forget, bring, take, check you have everything.",
+      "Planos: I'm going to the beach for a week, so I'll pack light clothes and sunscreen."
+     ],
+     "q": "Quais são as três coisas que levas sempre quando viajas, e porquê?",
+     "c": "Faz uma lista de mala para um fim de semana e explica duas coisas com because ou so."
+    },
+    "pt_BR": {
+     "t": "Férias e malas",
+     "g": "Fale de viagens e decida o que levar na mala.",
+     "p": [
+      "Palavras de viagem: suitcase, backpack, passport, sunscreen, charger, toiletries.",
+      "Verbos úteis: pack, unpack, forget, bring, take, check you have everything.",
+      "Planos: I'm going to the beach for a week, so I'll pack light clothes and sunscreen."
+     ],
+     "q": "Quais são as três coisas que você sempre leva quando viaja, e por quê?",
+     "c": "Faça uma lista de mala para um fim de semana e explique duas coisas com because ou so."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "suitcase",
+      "ex": "My suitcase is too heavy. I packed too much!"
+     },
+     {
+      "w": "passport",
+      "ex": "Don't forget your passport."
+     },
+     {
+      "w": "sunscreen",
+      "ex": "Put on some sunscreen before you go to the beach."
+     },
+     {
+      "w": "charger",
+      "ex": "I always pack an extra phone charger."
+     },
+     {
+      "w": "pack light",
+      "ex": "It's a short trip, so I'll pack light."
+     },
+     {
+      "w": "unpack",
+      "ex": "The first thing I do at the hotel is unpack."
+     }
+    ],
+    "gram": "Bring = to where you are going with someone (bring a jacket). Take = carry away from here (take your passport)."
+   }
+  },
+  {
+   "d": 134,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "At the airport",
+     "g": "Get through check-in, security and boarding in English.",
+     "p": [
+      "Steps: check in, drop your bag, go through security, find your gate, board the plane.",
+      "Key words: boarding pass, gate, departure, delayed, cancelled, hand luggage.",
+      "Questions: Which gate is it? Is the flight on time? Can I take this in my hand luggage?"
+     ],
+     "q": "What do you find easiest and hardest about airports?",
+     "c": "Describe your last trip through an airport in five steps, from check-in to boarding."
+    },
+    "de": {
+     "t": "Am Flughafen",
+     "g": "Du schaffst Check-in, Sicherheitskontrolle und Boarding auf Englisch.",
+     "p": [
+      "Ablauf: check in, drop your bag, go through security, find your gate, board the plane.",
+      "Schlüsselwörter: boarding pass, gate, departure, delayed, cancelled, hand luggage.",
+      "Fragen: Which gate is it? Is the flight on time? Can I take this in my hand luggage?"
+     ],
+     "q": "Was findest du am Flughafen am einfachsten und was am schwierigsten?",
+     "c": "Beschreib deine letzte Reise durch einen Flughafen in fünf Schritten, vom Check-in bis zum Boarding."
+    },
+    "es": {
+     "t": "En el aeropuerto",
+     "g": "Pasa por facturación, control de seguridad y embarque en inglés.",
+     "p": [
+      "Pasos: check in, drop your bag, go through security, find your gate, board the plane.",
+      "Palabras clave: boarding pass, gate, departure, delayed, cancelled, hand luggage.",
+      "Preguntas: Which gate is it? Is the flight on time? Can I take this in my hand luggage?"
+     ],
+     "q": "¿Qué te resulta más fácil y más difícil en los aeropuertos?",
+     "c": "Describe tu último paso por un aeropuerto en cinco pasos, desde la facturación hasta el embarque."
+    },
+    "fr": {
+     "t": "À l'aéroport",
+     "g": "Passer l'enregistrement, la sécurité et l'embarquement en anglais.",
+     "p": [
+      "Étapes : check in, drop your bag, go through security, find your gate, board the plane.",
+      "Mots clés : boarding pass, gate, departure, delayed, cancelled, hand luggage.",
+      "Questions : Which gate is it? Is the flight on time? Can I take this in my hand luggage?"
+     ],
+     "q": "Qu'est-ce qui est le plus facile et le plus difficile pour toi dans un aéroport ?",
+     "c": "Décris ton dernier passage à l'aéroport en cinq étapes, de l'enregistrement à l'embarquement."
+    },
+    "it": {
+     "t": "All'aeroporto",
+     "g": "Supera check-in, controlli di sicurezza e imbarco in inglese.",
+     "p": [
+      "Passaggi: check in, drop your bag, go through security, find your gate, board the plane.",
+      "Parole chiave: boarding pass, gate, departure, delayed, cancelled, hand luggage.",
+      "Domande: Which gate is it? Is the flight on time? Can I take this in my hand luggage?"
+     ],
+     "q": "Cosa trovi più facile e cosa più difficile negli aeroporti?",
+     "c": "Descrivi il tuo ultimo passaggio in aeroporto in cinque passi, dal check-in all'imbarco."
+    },
+    "pt": {
+     "t": "No aeroporto",
+     "g": "Passa pelo check-in, pela segurança e pelo embarque em inglês.",
+     "p": [
+      "Passos: check in, drop your bag, go through security, find your gate, board the plane.",
+      "Palavras-chave: boarding pass, gate, departure, delayed, cancelled, hand luggage.",
+      "Perguntas: Which gate is it? Is the flight on time? Can I take this in my hand luggage?"
+     ],
+     "q": "O que achas mais fácil e mais difícil nos aeroportos?",
+     "c": "Descreve a tua última passagem por um aeroporto em cinco passos, do check-in ao embarque."
+    },
+    "pt_BR": {
+     "t": "No aeroporto",
+     "g": "Passe pelo check-in, pela segurança e pelo embarque em inglês.",
+     "p": [
+      "Passos: check in, drop your bag, go through security, find your gate, board the plane.",
+      "Palavras-chave: boarding pass, gate, departure, delayed, cancelled, hand luggage.",
+      "Perguntas: Which gate is it? Is the flight on time? Can I take this in my hand luggage?"
+     ],
+     "q": "O que você acha mais fácil e mais difícil nos aeroportos?",
+     "c": "Descreva sua última passagem por um aeroporto em cinco passos, do check-in ao embarque."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "check in",
+      "ex": "We need to check in two hours before the flight."
+     },
+     {
+      "w": "boarding pass",
+      "ex": "Can I see your boarding pass, please?"
+     },
+     {
+      "w": "gate",
+      "ex": "Our flight leaves from gate 12."
+     },
+     {
+      "w": "delayed",
+      "ex": "The flight is delayed by forty minutes."
+     },
+     {
+      "w": "security",
+      "ex": "Take your laptop out at security."
+     },
+     {
+      "w": "hand luggage",
+      "ex": "I only have hand luggage today."
+     }
+    ],
+    "gram": "Phrasal verbs of travel: check in, go through (security), take off (the plane leaves), get on/off the plane."
+   }
+  },
+  {
+   "d": 135,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Problems when travelling",
+     "g": "Explain a travel problem clearly and ask for help.",
+     "p": [
+      "Say what happened: My luggage is lost. I've missed my train. My flight was cancelled.",
+      "Describe the problem: The room is noisy. The air conditioning doesn't work.",
+      "Ask for a solution: What can I do? Could I change rooms? When is the next train?"
+     ],
+     "q": "Have you ever had a problem on a trip? How did you solve it?",
+     "c": "Write a short dialogue: you report a lost bag at the airport and ask what to do next."
+    },
+    "de": {
+     "t": "Probleme auf Reisen",
+     "g": "Du erklärst ein Reiseproblem klar und bittest um Hilfe.",
+     "p": [
+      "Sag, was passiert ist: My luggage is lost. I've missed my train. My flight was cancelled.",
+      "Beschreib das Problem: The room is noisy. The air conditioning doesn't work.",
+      "Bitte um eine Lösung: What can I do? Could I change rooms? When is the next train?"
+     ],
+     "q": "Hattest du schon einmal ein Problem auf einer Reise? Wie hast du es gelöst?",
+     "c": "Schreib einen kurzen Dialog: Du meldest am Flughafen einen verlorenen Koffer und fragst, was jetzt."
+    },
+    "es": {
+     "t": "Problemas al viajar",
+     "g": "Explica un problema de viaje con claridad y pide ayuda.",
+     "p": [
+      "Di qué pasó: My luggage is lost. I've missed my train. My flight was cancelled.",
+      "Describe el problema: The room is noisy. The air conditioning doesn't work.",
+      "Pide una solución: What can I do? Could I change rooms? When is the next train?"
+     ],
+     "q": "¿Alguna vez tuviste un problema en un viaje? ¿Cómo lo resolviste?",
+     "c": "Escribe un diálogo corto: denuncias una maleta perdida en el aeropuerto y preguntas qué hacer."
+    },
+    "fr": {
+     "t": "Problèmes en voyage",
+     "g": "Expliquer clairement un problème de voyage et demander de l'aide.",
+     "p": [
+      "Dire ce qui s'est passé : My luggage is lost. I've missed my train. My flight was cancelled.",
+      "Décrire le problème : The room is noisy. The air conditioning doesn't work.",
+      "Demander une solution : What can I do? Could I change rooms? When is the next train?"
+     ],
+     "q": "As-tu déjà eu un problème en voyage ? Comment l'as-tu résolu ?",
+     "c": "Écris un court dialogue : tu signales un bagage perdu à l'aéroport et demandes quoi faire."
+    },
+    "it": {
+     "t": "Problemi in viaggio",
+     "g": "Spiega con chiarezza un problema di viaggio e chiedi aiuto.",
+     "p": [
+      "Di' cosa è successo: My luggage is lost. I've missed my train. My flight was cancelled.",
+      "Descrivi il problema: The room is noisy. The air conditioning doesn't work.",
+      "Chiedi una soluzione: What can I do? Could I change rooms? When is the next train?"
+     ],
+     "q": "Hai mai avuto un problema durante un viaggio? Come l'hai risolto?",
+     "c": "Scrivi un breve dialogo: denunci un bagaglio perso in aeroporto e chiedi cosa fare."
+    },
+    "pt": {
+     "t": "Problemas em viagem",
+     "g": "Explica um problema de viagem com clareza e pede ajuda.",
+     "p": [
+      "Diz o que aconteceu: My luggage is lost. I've missed my train. My flight was cancelled.",
+      "Descreve o problema: The room is noisy. The air conditioning doesn't work.",
+      "Pede uma solução: What can I do? Could I change rooms? When is the next train?"
+     ],
+     "q": "Já tiveste algum problema numa viagem? Como o resolveste?",
+     "c": "Escreve um diálogo curto: comunicas uma mala perdida no aeroporto e perguntas o que fazer."
+    },
+    "pt_BR": {
+     "t": "Problemas em viagem",
+     "g": "Explique um problema de viagem com clareza e peça ajuda.",
+     "p": [
+      "Diga o que aconteceu: My luggage is lost. I've missed my train. My flight was cancelled.",
+      "Descreva o problema: The room is noisy. The air conditioning doesn't work.",
+      "Peça uma solução: What can I do? Could I change rooms? When is the next train?"
+     ],
+     "q": "Você já teve algum problema em uma viagem? Como resolveu?",
+     "c": "Escreva um diálogo curto: você informa uma mala perdida no aeroporto e pergunta o que fazer."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "lost luggage",
+      "ex": "Where is the lost luggage desk, please?"
+     },
+     {
+      "w": "miss a train",
+      "ex": "I missed my train because the bus was late."
+     },
+     {
+      "w": "cancelled",
+      "ex": "Our flight was cancelled because of the snow."
+     },
+     {
+      "w": "noisy",
+      "ex": "My room is very noisy. Could I change rooms?"
+     },
+     {
+      "w": "doesn't work",
+      "ex": "The shower in my room doesn't work."
+     },
+     {
+      "w": "the next train",
+      "ex": "When is the next train to Bristol?"
+     }
+    ],
+    "gram": "Use the present perfect for a problem with a result now (I've lost my ticket) and the past simple for details (I lost it at the station)."
+   }
+  },
+  {
+   "d": 136,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Booking accommodation",
+     "g": "Book a hotel or guesthouse room and ask the right questions.",
+     "p": [
+      "Room types: a single room, a double room, a twin room, a room with a sea view.",
+      "Booking: I'd like to book a double room for three nights, from the 5th to the 8th.",
+      "Questions: Is breakfast included? Is there Wi-Fi? What time is check-out?"
+     ],
+     "q": "What's most important to you when you choose a place to stay?",
+     "c": "Role-play with me: book a room for two nights and ask three questions about the hotel."
+    },
+    "de": {
+     "t": "Eine Unterkunft buchen",
+     "g": "Du buchst ein Hotelzimmer und stellst die richtigen Fragen.",
+     "p": [
+      "Zimmerarten: a single room, a double room, a twin room, a room with a sea view.",
+      "Buchen: I'd like to book a double room for three nights, from the 5th to the 8th.",
+      "Fragen: Is breakfast included? Is there Wi-Fi? What time is check-out?"
+     ],
+     "q": "Was ist dir am wichtigsten, wenn du eine Unterkunft auswählst?",
+     "c": "Rollenspiel mit mir: Buch ein Zimmer für zwei Nächte und stell drei Fragen zum Hotel."
+    },
+    "es": {
+     "t": "Reservar alojamiento",
+     "g": "Reserva una habitación de hotel y haz las preguntas adecuadas.",
+     "p": [
+      "Tipos de habitación: a single room, a double room, a twin room, a room with a sea view.",
+      "Reservar: I'd like to book a double room for three nights, from the 5th to the 8th.",
+      "Preguntas: Is breakfast included? Is there Wi-Fi? What time is check-out?"
+     ],
+     "q": "¿Qué es lo más importante para ti al elegir dónde alojarte?",
+     "c": "Role-play conmigo: reserva una habitación para dos noches y haz tres preguntas sobre el hotel."
+    },
+    "fr": {
+     "t": "Réserver un hébergement",
+     "g": "Réserver une chambre d'hôtel et poser les bonnes questions.",
+     "p": [
+      "Types de chambre : a single room, a double room, a twin room, a room with a sea view.",
+      "Réserver : I'd like to book a double room for three nights, from the 5th to the 8th.",
+      "Questions : Is breakfast included? Is there Wi-Fi? What time is check-out?"
+     ],
+     "q": "Qu'est-ce qui compte le plus pour toi quand tu choisis un logement ?",
+     "c": "Jeu de rôle avec moi : réserve une chambre pour deux nuits et pose trois questions sur l'hôtel."
+    },
+    "it": {
+     "t": "Prenotare un alloggio",
+     "g": "Prenota una camera d'albergo e fai le domande giuste.",
+     "p": [
+      "Tipi di camera: a single room, a double room, a twin room, a room with a sea view.",
+      "Prenotare: I'd like to book a double room for three nights, from the 5th to the 8th.",
+      "Domande: Is breakfast included? Is there Wi-Fi? What time is check-out?"
+     ],
+     "q": "Cosa conta di più per te quando scegli dove alloggiare?",
+     "c": "Gioco di ruolo con me: prenota una camera per due notti e fai tre domande sull'hotel."
+    },
+    "pt": {
+     "t": "Reservar alojamento",
+     "g": "Reserva um quarto de hotel e faz as perguntas certas.",
+     "p": [
+      "Tipos de quarto: a single room, a double room, a twin room, a room with a sea view.",
+      "Reservar: I'd like to book a double room for three nights, from the 5th to the 8th.",
+      "Perguntas: Is breakfast included? Is there Wi-Fi? What time is check-out?"
+     ],
+     "q": "O que é mais importante para ti quando escolhes onde ficar?",
+     "c": "Faz um role-play comigo: reserva um quarto para duas noites e faz três perguntas sobre o hotel."
+    },
+    "pt_BR": {
+     "t": "Reservando hospedagem",
+     "g": "Reserve um quarto de hotel e faça as perguntas certas.",
+     "p": [
+      "Tipos de quarto: a single room, a double room, a twin room, a room with a sea view.",
+      "Reservar: I'd like to book a double room for three nights, from the 5th to the 8th.",
+      "Perguntas: Is breakfast included? Is there Wi-Fi? What time is check-out?"
+     ],
+     "q": "O que é mais importante para você na hora de escolher onde ficar?",
+     "c": "Faça um role-play comigo: reserve um quarto para duas noites e faça três perguntas sobre o hotel."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "a double room",
+      "ex": "I'd like a double room, please."
+     },
+     {
+      "w": "book",
+      "ex": "I'd like to book a room for three nights."
+     },
+     {
+      "w": "breakfast included",
+      "ex": "Is breakfast included in the price?"
+     },
+     {
+      "w": "check-out",
+      "ex": "Check-out is at eleven o'clock."
+     },
+     {
+      "w": "available",
+      "ex": "Do you have any rooms available this weekend?"
+     },
+     {
+      "w": "a sea view",
+      "ex": "Could we have a room with a sea view?"
+     }
+    ],
+    "gram": "Use I'd like to + verb to book politely (I'd like to book...) and for + time to say how long (for three nights)."
+   }
+  },
+  {
+   "d": 137,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Writing a postcard or travel post",
+     "g": "Describe a trip in a few friendly lines.",
+     "p": [
+      "Mix tenses: The weather is lovely. We've seen the old town. Tomorrow we're going to the lake.",
+      "Add feelings and details: The food is amazing. The people are really friendly.",
+      "Friendly opening and ending: Hi everyone! / Wish you were here! / See you soon."
+     ],
+     "q": "If you posted about your favourite trip, what three things would you mention?",
+     "c": "Write a five-line postcard or travel post: the weather, what you've done and tomorrow's plan."
+    },
+    "de": {
+     "t": "Eine Postkarte oder einen Reisepost schreiben",
+     "g": "Du beschreibst eine Reise in ein paar freundlichen Zeilen.",
+     "p": [
+      "Zeiten mischen: The weather is lovely. We've seen the old town. Tomorrow we're going to the lake.",
+      "Gefühle und Details: The food is amazing. The people are really friendly.",
+      "Anfang und Schluss: Hi everyone! / Wish you were here! / See you soon."
+     ],
+     "q": "Wenn du über deine Lieblingsreise posten würdest, welche drei Dinge würdest du erwähnen?",
+     "c": "Schreib eine Karte oder einen Post in fünf Zeilen: Wetter, was du gesehen hast, Plan für morgen."
+    },
+    "es": {
+     "t": "Escribir una postal o un post de viaje",
+     "g": "Describe un viaje en unas pocas líneas cercanas.",
+     "p": [
+      "Mezcla tiempos: The weather is lovely. We've seen the old town. Tomorrow we're going to the lake.",
+      "Añade sensaciones y detalles: The food is amazing. The people are really friendly.",
+      "Saludo y despedida: Hi everyone! / Wish you were here! / See you soon."
+     ],
+     "q": "Si publicaras sobre tu viaje favorito, ¿qué tres cosas mencionarías?",
+     "c": "Escribe una postal o post de cinco líneas: el tiempo, lo que has hecho y el plan de mañana."
+    },
+    "fr": {
+     "t": "Écrire une carte postale ou un post de voyage",
+     "g": "Décrire un voyage en quelques lignes chaleureuses.",
+     "p": [
+      "Mélanger les temps : The weather is lovely. We've seen the old town. Tomorrow we're going to the lake.",
+      "Ajouter impressions et détails : The food is amazing. The people are really friendly.",
+      "Début et fin : Hi everyone! / Wish you were here! / See you soon."
+     ],
+     "q": "Si tu publiais un post sur ton voyage préféré, quelles trois choses mentionnerais-tu ?",
+     "c": "Écris une carte ou un post de cinq lignes : la météo, ce que tu as fait et le projet de demain."
+    },
+    "it": {
+     "t": "Scrivere una cartolina o un post di viaggio",
+     "g": "Descrivi un viaggio in poche righe amichevoli.",
+     "p": [
+      "Mescola i tempi: The weather is lovely. We've seen the old town. Tomorrow we're going to the lake.",
+      "Aggiungi emozioni e dettagli: The food is amazing. The people are really friendly.",
+      "Apertura e chiusura: Hi everyone! / Wish you were here! / See you soon."
+     ],
+     "q": "Se pubblicassi un post sul tuo viaggio preferito, quali tre cose racconteresti?",
+     "c": "Scrivi una cartolina o un post di cinque righe: il tempo, cosa hai fatto e il piano per domani."
+    },
+    "pt": {
+     "t": "Escrever um postal ou um post de viagem",
+     "g": "Descreve uma viagem em poucas linhas simpáticas.",
+     "p": [
+      "Mistura tempos: The weather is lovely. We've seen the old town. Tomorrow we're going to the lake.",
+      "Junta sensações e pormenores: The food is amazing. The people are really friendly.",
+      "Início e fim: Hi everyone! / Wish you were here! / See you soon."
+     ],
+     "q": "Se publicasses sobre a tua viagem preferida, que três coisas mencionavas?",
+     "c": "Escreve um postal ou post de cinco linhas: o tempo, o que já fizeste e o plano para amanhã."
+    },
+    "pt_BR": {
+     "t": "Escrevendo um cartão-postal ou post de viagem",
+     "g": "Descreva uma viagem em poucas linhas simpáticas.",
+     "p": [
+      "Misture tempos: The weather is lovely. We've seen the old town. Tomorrow we're going to the lake.",
+      "Acrescente sensações e detalhes: The food is amazing. The people are really friendly.",
+      "Abertura e despedida: Hi everyone! / Wish you were here! / See you soon."
+     ],
+     "q": "Se você postasse sobre sua viagem favorita, que três coisas mencionaria?",
+     "c": "Escreva um cartão ou post de cinco linhas: o tempo, o que você já fez e o plano de amanhã."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "the weather is lovely",
+      "ex": "The weather is lovely and warm here."
+     },
+     {
+      "w": "we've seen",
+      "ex": "We've seen the castle and the old market."
+     },
+     {
+      "w": "tomorrow we're going",
+      "ex": "Tomorrow we're going on a boat trip."
+     },
+     {
+      "w": "amazing",
+      "ex": "The views from the hotel are amazing."
+     },
+     {
+      "w": "wish you were here",
+      "ex": "Having a great time. Wish you were here!"
+     },
+     {
+      "w": "see you soon",
+      "ex": "Lots of love, see you soon!"
+     }
+    ],
+    "gram": "Travel posts mix present simple (it's sunny), present perfect (we've visited) and present continuous for plans (we're leaving on Monday)."
+   }
+  },
+  {
+   "d": 138,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Relative clauses: who, which, that",
+     "g": "Join two sentences with who, which and that.",
+     "p": [
+      "Who for people: She's the teacher who helped me. Which for things: the bus which goes to town.",
+      "That works for both in everyday speech: the man that called, the film that won.",
+      "Don't repeat the subject: the book which is on the table, not the book which it is on the table."
+     ],
+     "q": "Can you describe your favourite person and favourite object using who and which?",
+     "c": "Join five pairs of sentences about your life with who, which or that."
+    },
+    "de": {
+     "t": "Relativsätze: who, which, that",
+     "g": "Du verbindest zwei Sätze mit who, which und that.",
+     "p": [
+      "Who für Personen: She's the teacher who helped me. Which für Dinge: the bus which goes to town.",
+      "That geht im Alltag für beides: the man that called, the film that won.",
+      "Kein doppeltes Subjekt: the book which is on the table, nicht the book which it is on the table."
+     ],
+     "q": "Kannst du deinen Lieblingsmenschen und deinen Lieblingsgegenstand mit who und which beschreiben?",
+     "c": "Verbinde fünf Satzpaare über dein Leben mit who, which oder that."
+    },
+    "es": {
+     "t": "Oraciones de relativo: who, which, that",
+     "g": "Une dos frases con who, which y that.",
+     "p": [
+      "Who para personas: She's the teacher who helped me. Which para cosas: the bus which goes to town.",
+      "That sirve para ambos en el habla diaria: the man that called, the film that won.",
+      "No repitas el sujeto: the book which is on the table, no the book which it is on the table."
+     ],
+     "q": "¿Puedes describir a tu persona favorita y tu objeto favorito usando who y which?",
+     "c": "Une cinco pares de frases sobre tu vida con who, which o that."
+    },
+    "fr": {
+     "t": "Les relatives : who, which, that",
+     "g": "Relier deux phrases avec who, which et that.",
+     "p": [
+      "Who pour les personnes : She's the teacher who helped me. Which pour les choses : the bus which goes to town.",
+      "That marche pour les deux à l'oral : the man that called, the film that won.",
+      "Pas de sujet en double : the book which is on the table, pas the book which it is on the table."
+     ],
+     "q": "Peux-tu décrire ta personne préférée et ton objet préféré avec who et which ?",
+     "c": "Relie cinq paires de phrases sur ta vie avec who, which ou that."
+    },
+    "it": {
+     "t": "Le relative: who, which, that",
+     "g": "Unisci due frasi con who, which e that.",
+     "p": [
+      "Who per le persone: She's the teacher who helped me. Which per le cose: the bus which goes to town.",
+      "That va bene per entrambi nel parlato: the man that called, the film that won.",
+      "Non ripetere il soggetto: the book which is on the table, non the book which it is on the table."
+     ],
+     "q": "Riesci a descrivere la tua persona preferita e il tuo oggetto preferito con who e which?",
+     "c": "Unisci cinque coppie di frasi sulla tua vita con who, which o that."
+    },
+    "pt": {
+     "t": "Orações relativas: who, which, that",
+     "g": "Junta duas frases com who, which e that.",
+     "p": [
+      "Who para pessoas: She's the teacher who helped me. Which para coisas: the bus which goes to town.",
+      "That serve para ambos no dia a dia: the man that called, the film that won.",
+      "Não repitas o sujeito: the book which is on the table, não the book which it is on the table."
+     ],
+     "q": "Consegues descrever a tua pessoa preferida e o teu objeto preferido com who e which?",
+     "c": "Junta cinco pares de frases sobre a tua vida com who, which ou that."
+    },
+    "pt_BR": {
+     "t": "Orações relativas: who, which, that",
+     "g": "Junte duas frases com who, which e that.",
+     "p": [
+      "Who para pessoas: She's the teacher who helped me. Which para coisas: the bus which goes to town.",
+      "That serve para os dois no dia a dia: the man that called, the film that won.",
+      "Não repita o sujeito: the book which is on the table, não the book which it is on the table."
+     ],
+     "q": "Você consegue descrever sua pessoa favorita e seu objeto favorito com who e which?",
+     "c": "Junte cinco pares de frases sobre sua vida com who, which ou that."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "who",
+      "ex": "I have a friend who speaks five languages."
+     },
+     {
+      "w": "which",
+      "ex": "This is the train which goes to the airport."
+     },
+     {
+      "w": "that",
+      "ex": "The cake that you made was delicious."
+     },
+     {
+      "w": "the person who",
+      "ex": "She's the person who taught me to swim."
+     },
+     {
+      "w": "the place which",
+      "ex": "It's a place which is famous for its beaches."
+     },
+     {
+      "w": "something that",
+      "ex": "I want something that is easy to cook."
+     }
+    ],
+    "gram": "Relative pronouns: who for people, which for things, that for both. The pronoun replaces he, she or it: the man who lives here."
+   }
+  },
+  {
+   "d": 139,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Where and whose in relative clauses",
+     "g": "Add details about places and owners with where and whose.",
+     "p": [
+      "Where for places: That's the café where we met. This is the town where I grew up.",
+      "Whose for possession: I have a friend whose dog is huge. (= her dog is huge)",
+      "Whose replaces his, her or their: the boy whose bike was stolen, not the boy who his bike."
+     ],
+     "q": "Tell me about a place where something important happened to you.",
+     "c": "Write three sentences with where about places you love and three with whose about people."
+    },
+    "de": {
+     "t": "Where und whose in Relativsätzen",
+     "g": "Du ergänzt Details zu Orten und Besitzern mit where und whose.",
+     "p": [
+      "Where für Orte: That's the café where we met. This is the town where I grew up.",
+      "Whose für Besitz: I have a friend whose dog is huge. (= ihr Hund ist riesig)",
+      "Whose ersetzt his, her, their: the boy whose bike was stolen, nicht the boy who his bike."
+     ],
+     "q": "Erzähl mir von einem Ort, an dem dir etwas Wichtiges passiert ist.",
+     "c": "Schreib drei Sätze mit where über Lieblingsorte und drei mit whose über Menschen."
+    },
+    "es": {
+     "t": "Where y whose en oraciones de relativo",
+     "g": "Añade detalles sobre lugares y dueños con where y whose.",
+     "p": [
+      "Where para lugares: That's the café where we met. This is the town where I grew up.",
+      "Whose para posesión: I have a friend whose dog is huge. (= su perro es enorme)",
+      "Whose sustituye a his, her, their: the boy whose bike was stolen, no the boy who his bike."
+     ],
+     "q": "Háblame de un lugar donde te pasó algo importante.",
+     "c": "Escribe tres frases con where sobre lugares que te encantan y tres con whose sobre personas."
+    },
+    "fr": {
+     "t": "Where et whose dans les relatives",
+     "g": "Ajouter des détails sur des lieux et des possesseurs avec where et whose.",
+     "p": [
+      "Where pour les lieux : That's the café where we met. This is the town where I grew up.",
+      "Whose pour la possession : I have a friend whose dog is huge. (= son chien est énorme)",
+      "Whose remplace his, her, their : the boy whose bike was stolen, pas the boy who his bike."
+     ],
+     "q": "Parle-moi d'un endroit où il t'est arrivé quelque chose d'important.",
+     "c": "Écris trois phrases avec where sur des lieux que tu aimes et trois avec whose sur des gens."
+    },
+    "it": {
+     "t": "Where e whose nelle relative",
+     "g": "Aggiungi dettagli su luoghi e possessori con where e whose.",
+     "p": [
+      "Where per i luoghi: That's the café where we met. This is the town where I grew up.",
+      "Whose per il possesso: I have a friend whose dog is huge. (= il suo cane è enorme)",
+      "Whose sostituisce his, her, their: the boy whose bike was stolen, non the boy who his bike."
+     ],
+     "q": "Parlami di un luogo dove ti è successo qualcosa di importante.",
+     "c": "Scrivi tre frasi con where su luoghi che ami e tre con whose su delle persone."
+    },
+    "pt": {
+     "t": "Where e whose nas orações relativas",
+     "g": "Junta pormenores sobre lugares e donos com where e whose.",
+     "p": [
+      "Where para lugares: That's the café where we met. This is the town where I grew up.",
+      "Whose para posse: I have a friend whose dog is huge. (= o cão dela é enorme)",
+      "Whose substitui his, her, their: the boy whose bike was stolen, não the boy who his bike."
+     ],
+     "q": "Fala-me de um lugar onde te aconteceu algo importante.",
+     "c": "Escreve três frases com where sobre lugares de que gostas e três com whose sobre pessoas."
+    },
+    "pt_BR": {
+     "t": "Where e whose nas orações relativas",
+     "g": "Acrescente detalhes sobre lugares e donos com where e whose.",
+     "p": [
+      "Where para lugares: That's the café where we met. This is the town where I grew up.",
+      "Whose para posse: I have a friend whose dog is huge. (= o cachorro dela é enorme)",
+      "Whose substitui his, her, their: the boy whose bike was stolen, não the boy who his bike."
+     ],
+     "q": "Me fale de um lugar onde aconteceu algo importante com você.",
+     "c": "Escreva três frases com where sobre lugares que você ama e três com whose sobre pessoas."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "where",
+      "ex": "This is the park where I learned to ride a bike."
+     },
+     {
+      "w": "whose",
+      "ex": "I have a neighbour whose cat visits me every day."
+     },
+     {
+      "w": "the town where",
+      "ex": "Porto is the town where my parents met."
+     },
+     {
+      "w": "a friend whose",
+      "ex": "I have a friend whose brother is a chef."
+     },
+     {
+      "w": "the café where",
+      "ex": "Let's go to the café where we had lunch last time."
+     },
+     {
+      "w": "grow up",
+      "ex": "I grew up in a small village near the sea."
+     }
+    ],
+    "gram": "Where = in/at which (for places). Whose = possession and replaces his/her/their/its: the woman whose car is red."
+   }
+  },
+  {
+   "d": 140,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Describing objects you can't name",
+     "g": "Talk around a word you don't know so people still understand.",
+     "p": [
+      "Purpose: It's a thing for opening bottles. You use it to cut paper.",
+      "Material and shape: It's made of metal. It's round, long and thin, about this big.",
+      "Comparison: It looks like a small spoon. It's a kind of tool. It's similar to a cup."
+     ],
+     "q": "Can you describe an object in your home without saying its name, so I can guess it?",
+     "c": "Choose three objects and describe each one in three sentences without naming it."
+    },
+    "de": {
+     "t": "Dinge beschreiben, deren Namen du nicht kennst",
+     "g": "Du umschreibst ein Wort, das dir fehlt, damit man dich trotzdem versteht.",
+     "p": [
+      "Zweck: It's a thing for opening bottles. You use it to cut paper.",
+      "Material und Form: It's made of metal. It's round, long and thin, about this big.",
+      "Vergleich: It looks like a small spoon. It's a kind of tool. It's similar to a cup."
+     ],
+     "q": "Kannst du einen Gegenstand bei dir zu Hause beschreiben, ohne ihn zu nennen, damit ich rate?",
+     "c": "Wähl drei Gegenstände und beschreib jeden in drei Sätzen, ohne seinen Namen zu sagen."
+    },
+    "es": {
+     "t": "Describir objetos cuyo nombre no sabes",
+     "g": "Explica una palabra que no sabes para que igualmente te entiendan.",
+     "p": [
+      "Función: It's a thing for opening bottles. You use it to cut paper.",
+      "Material y forma: It's made of metal. It's round, long and thin, about this big.",
+      "Comparación: It looks like a small spoon. It's a kind of tool. It's similar to a cup."
+     ],
+     "q": "¿Puedes describir un objeto de tu casa sin decir su nombre para que yo lo adivine?",
+     "c": "Elige tres objetos y describe cada uno en tres frases sin decir su nombre."
+    },
+    "fr": {
+     "t": "Décrire un objet dont on ignore le nom",
+     "g": "Contourner un mot inconnu pour qu'on te comprenne quand même.",
+     "p": [
+      "Fonction : It's a thing for opening bottles. You use it to cut paper.",
+      "Matière et forme : It's made of metal. It's round, long and thin, about this big.",
+      "Comparaison : It looks like a small spoon. It's a kind of tool. It's similar to a cup."
+     ],
+     "q": "Peux-tu décrire un objet de chez toi sans dire son nom, pour que je le devine ?",
+     "c": "Choisis trois objets et décris chacun en trois phrases sans le nommer."
+    },
+    "it": {
+     "t": "Descrivere oggetti di cui non sai il nome",
+     "g": "Gira intorno a una parola che non conosci per farti capire lo stesso.",
+     "p": [
+      "Funzione: It's a thing for opening bottles. You use it to cut paper.",
+      "Materiale e forma: It's made of metal. It's round, long and thin, about this big.",
+      "Paragone: It looks like a small spoon. It's a kind of tool. It's similar to a cup."
+     ],
+     "q": "Riesci a descrivere un oggetto di casa tua senza dirne il nome, così provo a indovinare?",
+     "c": "Scegli tre oggetti e descrivili ognuno in tre frasi senza nominarli."
+    },
+    "pt": {
+     "t": "Descrever objetos cujo nome não sabes",
+     "g": "Contorna uma palavra que não sabes para te perceberem na mesma.",
+     "p": [
+      "Função: It's a thing for opening bottles. You use it to cut paper.",
+      "Material e forma: It's made of metal. It's round, long and thin, about this big.",
+      "Comparação: It looks like a small spoon. It's a kind of tool. It's similar to a cup."
+     ],
+     "q": "Consegues descrever um objeto da tua casa sem dizer o nome, para eu adivinhar?",
+     "c": "Escolhe três objetos e descreve cada um em três frases sem dizer o nome."
+    },
+    "pt_BR": {
+     "t": "Descrevendo objetos sem saber o nome",
+     "g": "Explique uma palavra que você não sabe para que entendam mesmo assim.",
+     "p": [
+      "Função: It's a thing for opening bottles. You use it to cut paper.",
+      "Material e forma: It's made of metal. It's round, long and thin, about this big.",
+      "Comparação: It looks like a small spoon. It's a kind of tool. It's similar to a cup."
+     ],
+     "q": "Você consegue descrever um objeto da sua casa sem dizer o nome, para eu adivinhar?",
+     "c": "Escolha três objetos e descreva cada um em três frases sem dizer o nome."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "a thing for",
+      "ex": "It's a thing for keeping food cold."
+     },
+     {
+      "w": "you use it to",
+      "ex": "You use it to dry your hair."
+     },
+     {
+      "w": "it's made of",
+      "ex": "It's made of wood and glass."
+     },
+     {
+      "w": "it looks like",
+      "ex": "It looks like a small box with buttons."
+     },
+     {
+      "w": "a kind of",
+      "ex": "It's a kind of bag for carrying a laptop."
+     },
+     {
+      "w": "about this big",
+      "ex": "It's round and about this big."
+     }
+    ],
+    "gram": "Describe by purpose: a thing for + -ing or you use it to + verb. Material: made of. Appearance: looks like + noun."
+   }
+  }
+ ]
+}

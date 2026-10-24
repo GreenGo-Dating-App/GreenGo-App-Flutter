@@ -1,0 +1,1305 @@
+{
+"topic": "productivity_work",
+"questions": [
+{
+"id": "productivity_work-001",
+"lv": "any",
+"i18n": {
+"en": "What does a really productive workday look like for you?",
+"de": "Wie sieht für dich ein richtig produktiver Arbeitstag aus?",
+"es": "¿Cómo es para ti un día de trabajo realmente productivo?",
+"fr": "À quoi ressemble pour toi une journée de travail vraiment productive ?",
+"it": "Com'è per te una giornata di lavoro davvero produttiva?",
+"pt": "Como é para ti um dia de trabalho realmente produtivo?",
+"pt_BR": "Como é para você um dia de trabalho realmente produtivo?"
+}
+},
+{
+"id": "productivity_work-002",
+"lv": "any",
+"i18n": {
+"en": "At what time of day do you think most clearly?",
+"de": "Zu welcher Tageszeit kannst du am klarsten denken?",
+"es": "¿A qué hora del día piensas con más claridad?",
+"fr": "À quel moment de la journée as-tu les idées les plus claires ?",
+"it": "In quale momento della giornata pensi con più lucidità?",
+"pt": "A que hora do dia pensas com mais clareza?",
+"pt_BR": "Em que horário do dia você pensa com mais clareza?"
+}
+},
+{
+"id": "productivity_work-003",
+"lv": "any",
+"i18n": {
+"en": "Do you use a to-do list? On paper or in an app?",
+"de": "Nutzt du eine To-do-Liste? Auf Papier oder in einer App?",
+"es": "¿Usas una lista de tareas? ¿En papel o en una app?",
+"fr": "Utilises-tu une liste de tâches ? Sur papier ou dans une appli ?",
+"it": "Usi una lista di cose da fare? Su carta o in un'app?",
+"pt": "Usas uma lista de tarefas? Em papel ou numa app?",
+"pt_BR": "Você usa uma lista de tarefas? No papel ou num aplicativo?"
+}
+},
+{
+"id": "productivity_work-004",
+"lv": "any",
+"i18n": {
+"en": "What is the biggest distraction in your workday?",
+"de": "Was ist die größte Ablenkung in deinem Arbeitstag?",
+"es": "¿Cuál es la mayor distracción de tu jornada de trabajo?",
+"fr": "Quelle est la plus grande source de distraction dans ta journée de travail ?",
+"it": "Qual è la distrazione più grande della tua giornata lavorativa?",
+"pt": "Qual é a maior distração do teu dia de trabalho?",
+"pt_BR": "Qual é a maior distração do seu dia de trabalho?"
+}
+},
+{
+"id": "productivity_work-005",
+"lv": "any",
+"i18n": {
+"en": "How do you usually start your workday?",
+"de": "Wie beginnst du normalerweise deinen Arbeitstag?",
+"es": "¿Cómo sueles empezar tu jornada de trabajo?",
+"fr": "Comment commences-tu généralement ta journée de travail ?",
+"it": "Come inizi di solito la tua giornata di lavoro?",
+"pt": "Como costumas começar o teu dia de trabalho?",
+"pt_BR": "Como você costuma começar seu dia de trabalho?"
+}
+},
+{
+"id": "productivity_work-006",
+"lv": "any",
+"i18n": {
+"en": "How do you switch off at the end of the day?",
+"de": "Wie schaltest du am Ende des Tages ab?",
+"es": "¿Cómo desconectas al final del día?",
+"fr": "Comment décroches-tu à la fin de la journée ?",
+"it": "Come stacchi la spina alla fine della giornata?",
+"pt": "Como desligas no fim do dia?",
+"pt_BR": "Como você desliga no fim do dia?"
+}
+},
+{
+"id": "productivity_work-007",
+"lv": "any",
+"i18n": {
+"en": "What kind of work makes you lose track of time in a good way?",
+"de": "Bei welcher Arbeit vergisst du auf gute Weise die Zeit?",
+"es": "¿Qué tipo de trabajo te hace perder la noción del tiempo, en el buen sentido?",
+"fr": "Quel type de travail te fait oublier le temps, dans le bon sens ?",
+"it": "Che tipo di lavoro ti fa perdere la cognizione del tempo, in senso positivo?",
+"pt": "Que tipo de trabalho te faz perder a noção do tempo, no bom sentido?",
+"pt_BR": "Que tipo de trabalho faz você perder a noção do tempo, no bom sentido?"
+}
+},
+{
+"id": "productivity_work-008",
+"lv": "any",
+"i18n": {
+"en": "How many hours of truly focused work do you think you do each day?",
+"de": "Wie viele Stunden wirklich konzentrierter Arbeit schaffst du deiner Meinung nach pro Tag?",
+"es": "¿Cuántas horas de trabajo realmente concentrado crees que haces cada día?",
+"fr": "Combien d'heures de travail vraiment concentré penses-tu faire chaque jour ?",
+"it": "Quante ore di lavoro davvero concentrato pensi di fare ogni giorno?",
+"pt": "Quantas horas de trabalho realmente concentrado achas que fazes por dia?",
+"pt_BR": "Quantas horas de trabalho realmente focado você acha que faz por dia?"
+}
+},
+{
+"id": "productivity_work-009",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer working in silence or with background sound?",
+"de": "Arbeitest du lieber in Stille oder mit Hintergrundgeräuschen?",
+"es": "¿Prefieres trabajar en silencio o con algo de sonido de fondo?",
+"fr": "Préfères-tu travailler dans le silence ou avec un fond sonore ?",
+"it": "Preferisci lavorare in silenzio o con un sottofondo?",
+"pt": "Preferes trabalhar em silêncio ou com som de fundo?",
+"pt_BR": "Você prefere trabalhar em silêncio ou com som de fundo?"
+}
+},
+{
+"id": "productivity_work-010",
+"lv": "any",
+"i18n": {
+"en": "What does your workspace look like right now?",
+"de": "Wie sieht dein Arbeitsplatz gerade aus?",
+"es": "¿Cómo es tu espacio de trabajo ahora mismo?",
+"fr": "À quoi ressemble ton espace de travail en ce moment ?",
+"it": "Com'è il tuo spazio di lavoro in questo momento?",
+"pt": "Como é o teu espaço de trabalho neste momento?",
+"pt_BR": "Como está o seu espaço de trabalho agora?"
+}
+},
+{
+"id": "productivity_work-011",
+"lv": "any",
+"i18n": {
+"en": "How do you feel about your email inbox?",
+"de": "Wie fühlst du dich, wenn du an dein E-Mail-Postfach denkst?",
+"es": "¿Qué sientes cuando piensas en tu bandeja de entrada?",
+"fr": "Que ressens-tu quand tu penses à ta boîte de réception ?",
+"it": "Come ti senti quando pensi alla tua casella di posta?",
+"pt": "O que sentes quando pensas na tua caixa de entrada?",
+"pt_BR": "O que você sente quando pensa na sua caixa de entrada?"
+}
+},
+{
+"id": "productivity_work-012",
+"lv": "any",
+"i18n": {
+"en": "What task do you tend to put off the most?",
+"de": "Welche Aufgabe schiebst du am häufigsten auf?",
+"es": "¿Qué tarea sueles dejar más para después?",
+"fr": "Quelle tâche as-tu le plus tendance à repousser ?",
+"it": "Quale compito tendi a rimandare di più?",
+"pt": "Que tarefa costumas adiar mais?",
+"pt_BR": "Que tarefa você costuma adiar mais?"
+}
+},
+{
+"id": "productivity_work-013",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer working from home or in an office? Why?",
+"de": "Arbeitest du lieber von zu Hause oder im Büro? Warum?",
+"es": "¿Prefieres trabajar desde casa o en una oficina? ¿Por qué?",
+"fr": "Préfères-tu travailler à la maison ou au bureau ? Pourquoi ?",
+"it": "Preferisci lavorare da casa o in ufficio? Perché?",
+"pt": "Preferes trabalhar a partir de casa ou num escritório? Porquê?",
+"pt_BR": "Você prefere trabalhar de casa ou no escritório? Por quê?"
+}
+},
+{
+"id": "productivity_work-014",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite productivity tip that really works for you?",
+"de": "Was ist dein liebster Produktivitätstipp, der bei dir wirklich funktioniert?",
+"es": "¿Cuál es tu truco de productividad favorito que de verdad te funciona?",
+"fr": "Quelle est ton astuce de productivité préférée, celle qui marche vraiment pour toi ?",
+"it": "Qual è il tuo consiglio di produttività preferito che funziona davvero per te?",
+"pt": "Qual é a tua dica de produtividade preferida que resulta mesmo contigo?",
+"pt_BR": "Qual é a sua dica de produtividade preferida que realmente funciona para você?"
+}
+},
+{
+"id": "productivity_work-015",
+"lv": "any",
+"i18n": {
+"en": "How do you take breaks during your workday?",
+"de": "Wie machst du Pausen während deines Arbeitstages?",
+"es": "¿Cómo haces las pausas durante tu jornada?",
+"fr": "Comment fais-tu tes pauses pendant la journée de travail ?",
+"it": "Come fai le pause durante la giornata lavorativa?",
+"pt": "Como fazes as pausas durante o teu dia de trabalho?",
+"pt_BR": "Como você faz as pausas durante o dia de trabalho?"
+}
+},
+{
+"id": "productivity_work-016",
+"lv": "any",
+"i18n": {
+"en": "How do you feel about meetings in general?",
+"de": "Wie stehst du generell zu Meetings?",
+"es": "¿Qué opinas de las reuniones en general?",
+"fr": "Que penses-tu des réunions en général ?",
+"it": "Cosa pensi delle riunioni in generale?",
+"pt": "O que achas das reuniões em geral?",
+"pt_BR": "O que você acha de reuniões em geral?"
+}
+},
+{
+"id": "productivity_work-017",
+"lv": "any",
+"i18n": {
+"en": "What app or tool helps you most at work?",
+"de": "Welche App oder welches Tool hilft dir bei der Arbeit am meisten?",
+"es": "¿Qué aplicación o herramienta te ayuda más en el trabajo?",
+"fr": "Quelle appli ou quel outil t'aide le plus au travail ?",
+"it": "Quale app o strumento ti aiuta di più al lavoro?",
+"pt": "Que aplicação ou ferramenta te ajuda mais no trabalho?",
+"pt_BR": "Qual aplicativo ou ferramenta mais te ajuda no trabalho?"
+}
+},
+{
+"id": "productivity_work-018",
+"lv": "any",
+"i18n": {
+"en": "How do you decide what to work on first in the morning?",
+"de": "Wie entscheidest du morgens, woran du zuerst arbeitest?",
+"es": "¿Cómo decides por la mañana en qué trabajar primero?",
+"fr": "Comment décides-tu le matin par quoi commencer ?",
+"it": "Come decidi la mattina da cosa iniziare?",
+"pt": "Como decides de manhã em que trabalhar primeiro?",
+"pt_BR": "Como você decide de manhã no que trabalhar primeiro?"
+}
+},
+{
+"id": "productivity_work-019",
+"lv": "any",
+"i18n": {
+"en": "Where does your phone stay while you work?",
+"de": "Wo liegt dein Handy, während du arbeitest?",
+"es": "¿Dónde dejas el móvil mientras trabajas?",
+"fr": "Où se trouve ton téléphone pendant que tu travailles ?",
+"it": "Dove tieni il telefono mentre lavori?",
+"pt": "Onde fica o teu telemóvel enquanto trabalhas?",
+"pt_BR": "Onde fica o seu celular enquanto você trabalha?"
+}
+},
+{
+"id": "productivity_work-020",
+"lv": "any",
+"i18n": {
+"en": "What is one work habit you are proud of?",
+"de": "Auf welche Arbeitsgewohnheit bist du stolz?",
+"es": "¿De qué hábito de trabajo te sientes orgulloso?",
+"fr": "De quelle habitude de travail es-tu fier ?",
+"it": "Di quale abitudine di lavoro vai fiero?",
+"pt": "De que hábito de trabalho te orgulhas?",
+"pt_BR": "De qual hábito de trabalho você se orgulha?"
+}
+},
+{
+"id": "productivity_work-021",
+"lv": "any",
+"i18n": {
+"en": "What is one work habit you would love to change?",
+"de": "Welche Arbeitsgewohnheit würdest du gern ändern?",
+"es": "¿Qué hábito de trabajo te encantaría cambiar?",
+"fr": "Quelle habitude de travail aimerais-tu changer ?",
+"it": "Quale abitudine di lavoro ti piacerebbe cambiare?",
+"pt": "Que hábito de trabalho gostavas muito de mudar?",
+"pt_BR": "Qual hábito de trabalho você adoraria mudar?"
+}
+},
+{
+"id": "productivity_work-022",
+"lv": "any",
+"i18n": {
+"en": "Who is the most organised person you know, and what do they do differently?",
+"de": "Wer ist der organisierteste Mensch, den du kennst, und was macht er anders?",
+"es": "¿Quién es la persona más organizada que conoces y qué hace diferente?",
+"fr": "Qui est la personne la plus organisée que tu connaisses, et que fait-elle différemment ?",
+"it": "Chi è la persona più organizzata che conosci, e cosa fa di diverso?",
+"pt": "Quem é a pessoa mais organizada que conheces e o que faz de diferente?",
+"pt_BR": "Quem é a pessoa mais organizada que você conhece, e o que ela faz de diferente?"
+}
+},
+{
+"id": "productivity_work-023",
+"lv": "any",
+"i18n": {
+"en": "How do work habits differ in your country compared with others you know?",
+"de": "Wie unterscheiden sich die Arbeitsgewohnheiten in deinem Land von anderen, die du kennst?",
+"es": "¿En qué se diferencian los hábitos de trabajo de tu país de otros que conoces?",
+"fr": "En quoi les habitudes de travail de ton pays diffèrent-elles d'autres que tu connais ?",
+"it": "In cosa differiscono le abitudini di lavoro del tuo paese da altre che conosci?",
+"pt": "Em que diferem os hábitos de trabalho do teu país de outros que conheces?",
+"pt_BR": "Em que os hábitos de trabalho do seu país diferem de outros que você conhece?"
+}
+},
+{
+"id": "productivity_work-024",
+"lv": "any",
+"i18n": {
+"en": "Are you a planner or do you prefer to go with the flow?",
+"de": "Planst du gern, oder lässt du die Dinge lieber auf dich zukommen?",
+"es": "¿Eres de planificar o prefieres dejarte llevar?",
+"fr": "Es-tu plutôt du genre à tout planifier ou à suivre le courant ?",
+"it": "Sei uno che pianifica o preferisci lasciarti andare?",
+"pt": "És mais de planear ou preferes deixar andar?",
+"pt_BR": "Você é de planejar ou prefere deixar rolar?"
+}
+},
+{
+"id": "productivity_work-025",
+"lv": "any",
+"i18n": {
+"en": "How do you celebrate when you finish a big task?",
+"de": "Wie feierst du, wenn du eine große Aufgabe abgeschlossen hast?",
+"es": "¿Cómo lo celebras cuando terminas una tarea grande?",
+"fr": "Comment fêtes-tu la fin d'une grosse tâche ?",
+"it": "Come festeggi quando finisci un compito importante?",
+"pt": "Como celebras quando terminas uma tarefa grande?",
+"pt_BR": "Como você comemora quando termina uma tarefa grande?"
+}
+},
+{
+"id": "productivity_work-026",
+"lv": "any",
+"i18n": {
+"en": "What is the best piece of work advice you have ever received?",
+"de": "Was ist der beste Ratschlag zur Arbeit, den du je bekommen hast?",
+"es": "¿Cuál es el mejor consejo de trabajo que has recibido?",
+"fr": "Quel est le meilleur conseil professionnel qu'on t'ait jamais donné ?",
+"it": "Qual è il miglior consiglio di lavoro che tu abbia mai ricevuto?",
+"pt": "Qual foi o melhor conselho de trabalho que já recebeste?",
+"pt_BR": "Qual foi o melhor conselho de trabalho que você já recebeu?"
+}
+},
+{
+"id": "productivity_work-027",
+"lv": "any",
+"i18n": {
+"en": "How do you keep track of ideas that pop into your head?",
+"de": "Wie hältst du Ideen fest, die dir plötzlich einfallen?",
+"es": "¿Cómo guardas las ideas que se te ocurren de repente?",
+"fr": "Comment notes-tu les idées qui te viennent soudainement ?",
+"it": "Come tieni traccia delle idee che ti vengono all'improvviso?",
+"pt": "Como guardas as ideias que te surgem de repente?",
+"pt_BR": "Como você guarda as ideias que surgem de repente?"
+}
+},
+{
+"id": "productivity_work-028",
+"lv": "any",
+"i18n": {
+"en": "What does a good work-life balance mean to you?",
+"de": "Was bedeutet eine gute Balance zwischen Arbeit und Privatleben für dich?",
+"es": "¿Qué significa para ti un buen equilibrio entre trabajo y vida personal?",
+"fr": "Que signifie pour toi un bon équilibre entre vie pro et vie perso ?",
+"it": "Cosa significa per te un buon equilibrio tra lavoro e vita privata?",
+"pt": "O que significa para ti um bom equilíbrio entre trabalho e vida pessoal?",
+"pt_BR": "O que significa para você um bom equilíbrio entre trabalho e vida pessoal?"
+}
+},
+{
+"id": "productivity_work-029",
+"lv": "any",
+"i18n": {
+"en": "Do you work better alone or with others?",
+"de": "Arbeitest du besser allein oder mit anderen?",
+"es": "¿Trabajas mejor solo o con otras personas?",
+"fr": "Travailles-tu mieux seul ou avec d'autres ?",
+"it": "Lavori meglio da solo o con gli altri?",
+"pt": "Trabalhas melhor sozinho ou com outras pessoas?",
+"pt_BR": "Você trabalha melhor sozinho ou com outras pessoas?"
+}
+},
+{
+"id": "productivity_work-030",
+"lv": "any",
+"i18n": {
+"en": "What part of your job gives you the most energy?",
+"de": "Welcher Teil deiner Arbeit gibt dir die meiste Energie?",
+"es": "¿Qué parte de tu trabajo te da más energía?",
+"fr": "Quelle partie de ton travail te donne le plus d'énergie ?",
+"it": "Quale parte del tuo lavoro ti dà più energia?",
+"pt": "Que parte do teu trabalho te dá mais energia?",
+"pt_BR": "Qual parte do seu trabalho te dá mais energia?"
+}
+},
+{
+"id": "productivity_work-031",
+"lv": "any",
+"i18n": {
+"en": "What part of your job drains your energy most?",
+"de": "Welcher Teil deiner Arbeit kostet dich die meiste Energie?",
+"es": "¿Qué parte de tu trabajo te agota más?",
+"fr": "Quelle partie de ton travail te fatigue le plus ?",
+"it": "Quale parte del tuo lavoro ti stanca di più?",
+"pt": "Que parte do teu trabalho te cansa mais?",
+"pt_BR": "Qual parte do seu trabalho mais te cansa?"
+}
+},
+{
+"id": "productivity_work-032",
+"lv": "any",
+"i18n": {
+"en": "How do you plan your week, if you plan it at all?",
+"de": "Wie planst du deine Woche, falls du sie überhaupt planst?",
+"es": "¿Cómo planificas tu semana, si es que lo haces?",
+"fr": "Comment organises-tu ta semaine, si tu le fais ?",
+"it": "Come pianifichi la tua settimana, se lo fai?",
+"pt": "Como planeias a tua semana, se é que a planeias?",
+"pt_BR": "Como você planeja sua semana, se é que planeja?"
+}
+},
+{
+"id": "productivity_work-033",
+"lv": "any",
+"i18n": {
+"en": "What is a deadline you remember meeting against the odds?",
+"de": "An welche Frist erinnerst du dich, die du entgegen allen Erwartungen eingehalten hast?",
+"es": "¿Qué plazo recuerdas haber cumplido cuando parecía imposible?",
+"fr": "Quelle échéance te souviens-tu avoir tenue alors que tout semblait contre toi ?",
+"it": "Quale scadenza ricordi di aver rispettato quando sembrava impossibile?",
+"pt": "Que prazo te lembras de ter cumprido quando parecia impossível?",
+"pt_BR": "Qual prazo você lembra de ter cumprido quando parecia impossível?"
+}
+},
+{
+"id": "productivity_work-034",
+"lv": "any",
+"i18n": {
+"en": "How do you handle a day when nothing goes as planned?",
+"de": "Wie gehst du mit einem Tag um, an dem nichts nach Plan läuft?",
+"es": "¿Cómo llevas un día en el que nada sale como estaba previsto?",
+"fr": "Comment gères-tu une journée où rien ne se passe comme prévu ?",
+"it": "Come gestisci una giornata in cui niente va come previsto?",
+"pt": "Como lidas com um dia em que nada corre como planeado?",
+"pt_BR": "Como você lida com um dia em que nada sai como planejado?"
+}
+},
+{
+"id": "productivity_work-035",
+"lv": "any",
+"i18n": {
+"en": "Do you check messages first thing in the morning? How does it affect your day?",
+"de": "Schaust du morgens als Erstes auf deine Nachrichten? Wie wirkt sich das auf deinen Tag aus?",
+"es": "¿Miras los mensajes nada más levantarte? ¿Cómo afecta eso a tu día?",
+"fr": "Consultes-tu tes messages dès le matin ? Quel effet cela a-t-il sur ta journée ?",
+"it": "Controlli i messaggi appena sveglio? Che effetto ha sulla tua giornata?",
+"pt": "Vês as mensagens logo de manhã? Como é que isso afeta o teu dia?",
+"pt_BR": "Você olha as mensagens logo de manhã? Como isso afeta seu dia?"
+}
+},
+{
+"id": "productivity_work-036",
+"lv": "any",
+"i18n": {
+"en": "What would you do with one extra free hour each workday?",
+"de": "Was würdest du mit einer zusätzlichen freien Stunde an jedem Arbeitstag machen?",
+"es": "¿Qué harías con una hora libre extra cada día laborable?",
+"fr": "Que ferais-tu d'une heure libre en plus chaque jour de travail ?",
+"it": "Cosa faresti con un'ora libera in più ogni giorno di lavoro?",
+"pt": "O que farias com uma hora livre a mais em cada dia de trabalho?",
+"pt_BR": "O que você faria com uma hora livre a mais em cada dia de trabalho?"
+}
+},
+{
+"id": "productivity_work-037",
+"lv": "any",
+"i18n": {
+"en": "How do you feel about multitasking: helpful or harmful?",
+"de": "Was hältst du von Multitasking: hilfreich oder schädlich?",
+"es": "¿Qué opinas de hacer varias cosas a la vez: ayuda o perjudica?",
+"fr": "Que penses-tu du multitâche : utile ou nuisible ?",
+"it": "Cosa pensi del multitasking: utile o dannoso?",
+"pt": "O que achas de fazer várias coisas ao mesmo tempo: ajuda ou prejudica?",
+"pt_BR": "O que você acha de fazer várias coisas ao mesmo tempo: ajuda ou atrapalha?"
+}
+},
+{
+"id": "productivity_work-038",
+"lv": "any",
+"i18n": {
+"en": "Which productivity topic would you like to explore first with me?",
+"de": "Welches Produktivitätsthema möchtest du als Erstes mit mir erkunden?",
+"es": "¿Qué tema de productividad te gustaría explorar primero conmigo?",
+"fr": "Quel sujet de productivité aimerais-tu explorer en premier avec moi ?",
+"it": "Quale tema di produttività vorresti esplorare per primo con me?",
+"pt": "Que tema de produtividade gostavas de explorar primeiro comigo?",
+"pt_BR": "Qual tema de produtividade você gostaria de explorar primeiro comigo?"
+}
+},
+{
+"id": "productivity_work-039",
+"lv": "any",
+"i18n": {
+"en": "What makes you feel satisfied at the end of a workday?",
+"de": "Was gibt dir am Ende eines Arbeitstages ein zufriedenes Gefühl?",
+"es": "¿Qué te hace sentir satisfecho al final de una jornada de trabajo?",
+"fr": "Qu'est-ce qui te donne un sentiment de satisfaction à la fin d'une journée de travail ?",
+"it": "Cosa ti fa sentire soddisfatto alla fine di una giornata di lavoro?",
+"pt": "O que te faz sentir satisfeito no fim de um dia de trabalho?",
+"pt_BR": "O que faz você se sentir satisfeito no fim de um dia de trabalho?"
+}
+},
+{
+"id": "productivity_work-040",
+"lv": "any",
+"i18n": {
+"en": "What does your ideal place to work look and sound like?",
+"de": "Wie sieht dein idealer Arbeitsort aus, und wie klingt er?",
+"es": "¿Cómo sería tu lugar ideal para trabajar, en aspecto y en sonido?",
+"fr": "À quoi ressemblerait ton lieu de travail idéal, côté décor et ambiance sonore ?",
+"it": "Come sarebbe il tuo posto ideale per lavorare, nell'aspetto e nei suoni?",
+"pt": "Como seria o teu lugar ideal para trabalhar, no aspeto e no som?",
+"pt_BR": "Como seria o seu lugar ideal para trabalhar, no visual e no som?"
+}
+},
+{
+"id": "productivity_work-041",
+"lv": "beginner",
+"i18n": {
+"en": "What are the three most important tasks on your list today?",
+"de": "Was sind heute die drei wichtigsten Aufgaben auf deiner Liste?",
+"es": "¿Cuáles son las tres tareas más importantes de tu lista hoy?",
+"fr": "Quelles sont les trois tâches les plus importantes de ta liste aujourd'hui ?",
+"it": "Quali sono i tre compiti più importanti della tua lista oggi?",
+"pt": "Quais são as três tarefas mais importantes da tua lista hoje?",
+"pt_BR": "Quais são as três tarefas mais importantes da sua lista hoje?"
+}
+},
+{
+"id": "productivity_work-042",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever tried the Pomodoro technique? How did it go?",
+"de": "Hast du schon einmal die Pomodoro-Technik ausprobiert? Wie lief es?",
+"es": "¿Has probado alguna vez la técnica Pomodoro? ¿Qué tal te fue?",
+"fr": "As-tu déjà essayé la technique Pomodoro ? Comment ça s'est passé ?",
+"it": "Hai mai provato la tecnica del pomodoro? Com'è andata?",
+"pt": "Já experimentaste a técnica Pomodoro? Como correu?",
+"pt_BR": "Você já experimentou a técnica Pomodoro? Como foi?"
+}
+},
+{
+"id": "productivity_work-043",
+"lv": "beginner",
+"i18n": {
+"en": "Which notifications could you turn off today without missing anything important?",
+"de": "Welche Benachrichtigungen könntest du heute ausschalten, ohne etwas Wichtiges zu verpassen?",
+"es": "¿Qué notificaciones podrías desactivar hoy sin perderte nada importante?",
+"fr": "Quelles notifications pourrais-tu couper aujourd'hui sans rien rater d'important ?",
+"it": "Quali notifiche potresti disattivare oggi senza perderti niente di importante?",
+"pt": "Que notificações podias desligar hoje sem perder nada importante?",
+"pt_BR": "Quais notificações você poderia desligar hoje sem perder nada importante?"
+}
+},
+{
+"id": "productivity_work-044",
+"lv": "beginner",
+"i18n": {
+"en": "What is one big task you could break into smaller steps?",
+"de": "Welche große Aufgabe könntest du in kleinere Schritte aufteilen?",
+"es": "¿Qué tarea grande podrías dividir en pasos más pequeños?",
+"fr": "Quelle grosse tâche pourrais-tu découper en petites étapes ?",
+"it": "Quale compito grande potresti suddividere in passi più piccoli?",
+"pt": "Que tarefa grande podias dividir em passos mais pequenos?",
+"pt_BR": "Que tarefa grande você poderia dividir em passos menores?"
+}
+},
+{
+"id": "productivity_work-045",
+"lv": "beginner",
+"i18n": {
+"en": "Which tasks on your list are urgent, and which are truly important?",
+"de": "Welche Aufgaben auf deiner Liste sind dringend, und welche sind wirklich wichtig?",
+"es": "¿Qué tareas de tu lista son urgentes y cuáles son realmente importantes?",
+"fr": "Quelles tâches de ta liste sont urgentes, et lesquelles sont vraiment importantes ?",
+"it": "Quali compiti della tua lista sono urgenti e quali davvero importanti?",
+"pt": "Que tarefas da tua lista são urgentes e quais são realmente importantes?",
+"pt_BR": "Quais tarefas da sua lista são urgentes e quais são realmente importantes?"
+}
+},
+{
+"id": "productivity_work-046",
+"lv": "beginner",
+"i18n": {
+"en": "How long do you usually work before taking a break?",
+"de": "Wie lange arbeitest du normalerweise, bevor du eine Pause machst?",
+"es": "¿Cuánto tiempo sueles trabajar antes de hacer una pausa?",
+"fr": "Combien de temps travailles-tu d'habitude avant de faire une pause ?",
+"it": "Quanto lavori di solito prima di fare una pausa?",
+"pt": "Quanto tempo costumas trabalhar antes de fazer uma pausa?",
+"pt_BR": "Quanto tempo você costuma trabalhar antes de fazer uma pausa?"
+}
+},
+{
+"id": "productivity_work-047",
+"lv": "beginner",
+"i18n": {
+"en": "What tiny task could you finish in two minutes right now?",
+"de": "Welche Mini-Aufgabe könntest du jetzt sofort in zwei Minuten erledigen?",
+"es": "¿Qué tarea pequeñita podrías terminar ahora mismo en dos minutos?",
+"fr": "Quelle petite tâche pourrais-tu terminer tout de suite en deux minutes ?",
+"it": "Quale piccolo compito potresti finire adesso in due minuti?",
+"pt": "Que pequena tarefa podias terminar agora mesmo em dois minutos?",
+"pt_BR": "Que tarefinha você poderia terminar agora mesmo em dois minutos?"
+}
+},
+{
+"id": "productivity_work-048",
+"lv": "beginner",
+"i18n": {
+"en": "How many tabs are open in your browser right now?",
+"de": "Wie viele Tabs sind gerade in deinem Browser geöffnet?",
+"es": "¿Cuántas pestañas tienes abiertas ahora mismo en el navegador?",
+"fr": "Combien d'onglets sont ouverts dans ton navigateur en ce moment ?",
+"it": "Quante schede hai aperte nel browser in questo momento?",
+"pt": "Quantos separadores tens abertos no navegador neste momento?",
+"pt_BR": "Quantas abas estão abertas no seu navegador agora?"
+}
+},
+{
+"id": "productivity_work-049",
+"lv": "beginner",
+"i18n": {
+"en": "What would make your desk a nicer place to work?",
+"de": "Was würde deinen Schreibtisch zu einem schöneren Arbeitsplatz machen?",
+"es": "¿Qué haría de tu escritorio un lugar más agradable para trabajar?",
+"fr": "Qu'est-ce qui rendrait ton bureau plus agréable pour travailler ?",
+"it": "Cosa renderebbe la tua scrivania un posto più piacevole per lavorare?",
+"pt": "O que tornaria a tua secretária um lugar mais agradável para trabalhar?",
+"pt_BR": "O que deixaria sua mesa um lugar mais agradável para trabalhar?"
+}
+},
+{
+"id": "productivity_work-050",
+"lv": "beginner",
+"i18n": {
+"en": "How do you name and organise your files?",
+"de": "Wie benennst und ordnest du deine Dateien?",
+"es": "¿Cómo nombras y organizas tus archivos?",
+"fr": "Comment nommes-tu et ranges-tu tes fichiers ?",
+"it": "Come dai il nome ai tuoi file e come li organizzi?",
+"pt": "Como dás nome aos teus ficheiros e como os organizas?",
+"pt_BR": "Como você nomeia e organiza seus arquivos?"
+}
+},
+{
+"id": "productivity_work-051",
+"lv": "beginner",
+"i18n": {
+"en": "How often do you check your email during the day?",
+"de": "Wie oft schaust du tagsüber in deine E-Mails?",
+"es": "¿Con qué frecuencia miras el correo durante el día?",
+"fr": "Combien de fois par jour consultes-tu tes e-mails ?",
+"it": "Quante volte al giorno controlli l'email?",
+"pt": "Quantas vezes por dia vês o teu e-mail?",
+"pt_BR": "Quantas vezes por dia você olha seu e-mail?"
+}
+},
+{
+"id": "productivity_work-052",
+"lv": "beginner",
+"i18n": {
+"en": "What do you do when you notice you are procrastinating?",
+"de": "Was tust du, wenn du merkst, dass du etwas aufschiebst?",
+"es": "¿Qué haces cuando te das cuenta de que estás procrastinando?",
+"fr": "Que fais-tu quand tu remarques que tu procrastines ?",
+"it": "Cosa fai quando ti accorgi che stai procrastinando?",
+"pt": "O que fazes quando percebes que estás a procrastinar?",
+"pt_BR": "O que você faz quando percebe que está procrastinando?"
+}
+},
+{
+"id": "productivity_work-053",
+"lv": "beginner",
+"i18n": {
+"en": "How do you say no when someone asks you to take on extra work?",
+"de": "Wie sagst du Nein, wenn dich jemand bittet, zusätzliche Arbeit zu übernehmen?",
+"es": "¿Cómo dices que no cuando alguien te pide asumir trabajo extra?",
+"fr": "Comment dis-tu non quand quelqu'un te demande de prendre du travail en plus ?",
+"it": "Come dici di no quando qualcuno ti chiede di occuparti di lavoro extra?",
+"pt": "Como dizes que não quando alguém te pede para assumir trabalho extra?",
+"pt_BR": "Como você diz não quando alguém pede para você assumir trabalho extra?"
+}
+},
+{
+"id": "productivity_work-054",
+"lv": "beginner",
+"i18n": {
+"en": "What would a perfect morning routine before work look like for you?",
+"de": "Wie würde für dich eine perfekte Morgenroutine vor der Arbeit aussehen?",
+"es": "¿Cómo sería para ti una rutina matinal perfecta antes del trabajo?",
+"fr": "À quoi ressemblerait pour toi une routine matinale idéale avant le travail ?",
+"it": "Come sarebbe per te una routine mattutina perfetta prima del lavoro?",
+"pt": "Como seria para ti uma rotina matinal perfeita antes do trabalho?",
+"pt_BR": "Como seria para você uma rotina matinal perfeita antes do trabalho?"
+}
+},
+{
+"id": "productivity_work-055",
+"lv": "beginner",
+"i18n": {
+"en": "What do you do at lunchtime to recharge?",
+"de": "Was machst du in der Mittagspause, um neue Energie zu tanken?",
+"es": "¿Qué haces a la hora de comer para recargar energía?",
+"fr": "Que fais-tu à la pause déjeuner pour recharger tes batteries ?",
+"it": "Cosa fai in pausa pranzo per ricaricarti?",
+"pt": "O que fazes à hora de almoço para recarregar energias?",
+"pt_BR": "O que você faz na hora do almoço para recarregar as energias?"
+}
+},
+{
+"id": "productivity_work-056",
+"lv": "beginner",
+"i18n": {
+"en": "How do you handle the energy dip after lunch?",
+"de": "Wie gehst du mit dem Energietief nach dem Mittagessen um?",
+"es": "¿Cómo llevas el bajón de energía después de comer?",
+"fr": "Comment gères-tu le coup de fatigue après le déjeuner ?",
+"it": "Come gestisci il calo di energia dopo pranzo?",
+"pt": "Como lidas com a quebra de energia depois do almoço?",
+"pt_BR": "Como você lida com a queda de energia depois do almoço?"
+}
+},
+{
+"id": "productivity_work-057",
+"lv": "beginner",
+"i18n": {
+"en": "Do you take notes in meetings? How do you use them later?",
+"de": "Machst du dir in Meetings Notizen? Wie nutzt du sie später?",
+"es": "¿Tomas notas en las reuniones? ¿Cómo las usas después?",
+"fr": "Prends-tu des notes en réunion ? Comment les utilises-tu ensuite ?",
+"it": "Prendi appunti durante le riunioni? Come li usi dopo?",
+"pt": "Tiras notas nas reuniões? Como as usas depois?",
+"pt_BR": "Você faz anotações nas reuniões? Como usa depois?"
+}
+},
+{
+"id": "productivity_work-058",
+"lv": "beginner",
+"i18n": {
+"en": "What small reward motivates you to finish a task?",
+"de": "Welche kleine Belohnung motiviert dich, eine Aufgabe abzuschließen?",
+"es": "¿Qué pequeña recompensa te motiva a terminar una tarea?",
+"fr": "Quelle petite récompense te motive à terminer une tâche ?",
+"it": "Quale piccola ricompensa ti motiva a finire un compito?",
+"pt": "Que pequena recompensa te motiva a terminar uma tarefa?",
+"pt_BR": "Que pequena recompensa te motiva a terminar uma tarefa?"
+}
+},
+{
+"id": "productivity_work-059",
+"lv": "beginner",
+"i18n": {
+"en": "How do you plan tomorrow before you finish today?",
+"de": "Wie planst du den morgigen Tag, bevor du heute Feierabend machst?",
+"es": "¿Cómo planificas el día de mañana antes de terminar hoy?",
+"fr": "Comment prépares-tu demain avant de finir ta journée ?",
+"it": "Come pianifichi il giorno dopo prima di finire oggi?",
+"pt": "Como planeias o dia de amanhã antes de terminares hoje?",
+"pt_BR": "Como você planeja o dia de amanhã antes de encerrar hoje?"
+}
+},
+{
+"id": "productivity_work-060",
+"lv": "beginner",
+"i18n": {
+"en": "Which is your hardest task this week, and when will you do it?",
+"de": "Was ist deine schwierigste Aufgabe diese Woche, und wann erledigst du sie?",
+"es": "¿Cuál es tu tarea más difícil esta semana y cuándo la harás?",
+"fr": "Quelle est ta tâche la plus difficile cette semaine, et quand vas-tu la faire ?",
+"it": "Qual è il compito più difficile di questa settimana, e quando lo farai?",
+"pt": "Qual é a tua tarefa mais difícil esta semana e quando a vais fazer?",
+"pt_BR": "Qual é a sua tarefa mais difícil desta semana, e quando você vai fazê-la?"
+}
+},
+{
+"id": "productivity_work-061",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer paper notebooks or digital notes? Why?",
+"de": "Magst du lieber Notizbücher aus Papier oder digitale Notizen? Warum?",
+"es": "¿Prefieres cuadernos de papel o notas digitales? ¿Por qué?",
+"fr": "Préfères-tu les carnets papier ou les notes numériques ? Pourquoi ?",
+"it": "Preferisci i quaderni di carta o gli appunti digitali? Perché?",
+"pt": "Preferes cadernos de papel ou notas digitais? Porquê?",
+"pt_BR": "Você prefere cadernos de papel ou anotações digitais? Por quê?"
+}
+},
+{
+"id": "productivity_work-062",
+"lv": "beginner",
+"i18n": {
+"en": "What helps you get started when a task feels too big?",
+"de": "Was hilft dir, anzufangen, wenn sich eine Aufgabe zu groß anfühlt?",
+"es": "¿Qué te ayuda a empezar cuando una tarea parece demasiado grande?",
+"fr": "Qu'est-ce qui t'aide à démarrer quand une tâche te semble trop grosse ?",
+"it": "Cosa ti aiuta a iniziare quando un compito sembra troppo grande?",
+"pt": "O que te ajuda a começar quando uma tarefa parece grande demais?",
+"pt_BR": "O que te ajuda a começar quando uma tarefa parece grande demais?"
+}
+},
+{
+"id": "productivity_work-063",
+"lv": "beginner",
+"i18n": {
+"en": "How do you let colleagues know you need time to focus?",
+"de": "Wie zeigst du Kollegen, dass du Zeit zum Konzentrieren brauchst?",
+"es": "¿Cómo avisas a tus compañeros de que necesitas tiempo para concentrarte?",
+"fr": "Comment fais-tu savoir à tes collègues que tu as besoin de te concentrer ?",
+"it": "Come fai capire ai colleghi che hai bisogno di tempo per concentrarti?",
+"pt": "Como avisas os colegas de que precisas de tempo para te concentrar?",
+"pt_BR": "Como você avisa os colegas que precisa de tempo para se concentrar?"
+}
+},
+{
+"id": "productivity_work-064",
+"lv": "beginner",
+"i18n": {
+"en": "What is one keyboard shortcut you use all the time?",
+"de": "Welches Tastenkürzel benutzt du ständig?",
+"es": "¿Qué atajo de teclado usas todo el tiempo?",
+"fr": "Quel raccourci clavier utilises-tu tout le temps ?",
+"it": "Quale scorciatoia da tastiera usi in continuazione?",
+"pt": "Que atalho de teclado usas a toda a hora?",
+"pt_BR": "Qual atalho de teclado você usa o tempo todo?"
+}
+},
+{
+"id": "productivity_work-065",
+"lv": "beginner",
+"i18n": {
+"en": "What small win from this week are you happy about?",
+"de": "Über welchen kleinen Erfolg dieser Woche freust du dich?",
+"es": "¿Qué pequeño logro de esta semana te hace feliz?",
+"fr": "De quelle petite victoire de cette semaine es-tu content ?",
+"it": "Di quale piccolo successo di questa settimana sei contento?",
+"pt": "Que pequena vitória desta semana te deixa contente?",
+"pt_BR": "Que pequena vitória desta semana te deixa feliz?"
+}
+},
+{
+"id": "productivity_work-066",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever done a weekly review? What did you notice?",
+"de": "Hast du schon einmal einen Wochenrückblick gemacht? Was ist dir aufgefallen?",
+"es": "¿Has hecho alguna vez una revisión semanal? ¿Qué descubriste?",
+"fr": "As-tu déjà fait une revue hebdomadaire ? Qu'as-tu remarqué ?",
+"it": "Hai mai fatto una revisione settimanale? Cosa hai notato?",
+"pt": "Já fizeste alguma vez uma revisão semanal? O que notaste?",
+"pt_BR": "Você já fez uma revisão semanal? O que percebeu?"
+}
+},
+{
+"id": "productivity_work-067",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you keep track of tasks you are waiting on from others?",
+"de": "Wie behältst du Aufgaben im Blick, bei denen du auf andere wartest?",
+"es": "¿Cómo controlas las tareas que dependen de que otros te respondan?",
+"fr": "Comment suis-tu les tâches pour lesquelles tu attends quelqu'un d'autre ?",
+"it": "Come tieni traccia dei compiti per cui aspetti qualcun altro?",
+"pt": "Como acompanhas as tarefas em que estás à espera de outras pessoas?",
+"pt_BR": "Como você acompanha as tarefas em que está esperando por outras pessoas?"
+}
+},
+{
+"id": "productivity_work-068",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you find hardest to delegate, and why?",
+"de": "Was fällt dir am schwersten abzugeben, und warum?",
+"es": "¿Qué te cuesta más delegar y por qué?",
+"fr": "Qu'est-ce que tu as le plus de mal à déléguer, et pourquoi ?",
+"it": "Cosa ti è più difficile delegare, e perché?",
+"pt": "O que te custa mais delegar e porquê?",
+"pt_BR": "O que é mais difícil para você delegar, e por quê?"
+}
+},
+{
+"id": "productivity_work-069",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you protect time for deep, focused work?",
+"de": "Wie schützt du Zeit für tiefes, konzentriertes Arbeiten?",
+"es": "¿Cómo proteges tu tiempo para el trabajo profundo y concentrado?",
+"fr": "Comment protèges-tu du temps pour un travail profond et concentré ?",
+"it": "Come proteggi il tempo per il lavoro profondo e concentrato?",
+"pt": "Como proteges tempo para trabalho profundo e concentrado?",
+"pt_BR": "Como você protege tempo para um trabalho profundo e focado?"
+}
+},
+{
+"id": "productivity_work-070",
+"lv": "intermediate",
+"i18n": {
+"en": "Which goal are you working toward this quarter?",
+"de": "Auf welches Ziel arbeitest du in diesem Quartal hin?",
+"es": "¿Hacia qué objetivo estás trabajando este trimestre?",
+"fr": "Vers quel objectif travailles-tu ce trimestre ?",
+"it": "Verso quale obiettivo stai lavorando in questo trimestre?",
+"pt": "Para que objetivo estás a trabalhar neste trimestre?",
+"pt_BR": "Em qual objetivo você está trabalhando neste trimestre?"
+}
+},
+{
+"id": "productivity_work-071",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever used a Kanban board? What did you like or dislike?",
+"de": "Hast du schon einmal ein Kanban-Board benutzt? Was hat dir gefallen oder nicht?",
+"es": "¿Has usado alguna vez un tablero Kanban? ¿Qué te gustó y qué no?",
+"fr": "As-tu déjà utilisé un tableau Kanban ? Qu'as-tu aimé ou pas ?",
+"it": "Hai mai usato una bacheca Kanban? Cosa ti è piaciuto e cosa no?",
+"pt": "Já usaste um quadro Kanban? O que gostaste e não gostaste?",
+"pt_BR": "Você já usou um quadro Kanban? Do que gostou e do que não gostou?"
+}
+},
+{
+"id": "productivity_work-072",
+"lv": "intermediate",
+"i18n": {
+"en": "How does your team usually communicate: chat, email or meetings?",
+"de": "Wie kommuniziert dein Team meistens: per Chat, E-Mail oder in Meetings?",
+"es": "¿Cómo se comunica normalmente tu equipo: chat, correo o reuniones?",
+"fr": "Comment ton équipe communique-t-elle d'habitude : messagerie, e-mail ou réunions ?",
+"it": "Come comunica di solito il tuo team: chat, email o riunioni?",
+"pt": "Como é que a tua equipa costuma comunicar: chat, e-mail ou reuniões?",
+"pt_BR": "Como sua equipe costuma se comunicar: chat, e-mail ou reuniões?"
+}
+},
+{
+"id": "productivity_work-073",
+"lv": "intermediate",
+"i18n": {
+"en": "What repetitive task in your work could be automated?",
+"de": "Welche wiederkehrende Aufgabe in deiner Arbeit könnte automatisiert werden?",
+"es": "¿Qué tarea repetitiva de tu trabajo se podría automatizar?",
+"fr": "Quelle tâche répétitive de ton travail pourrait être automatisée ?",
+"it": "Quale compito ripetitivo del tuo lavoro si potrebbe automatizzare?",
+"pt": "Que tarefa repetitiva do teu trabalho podia ser automatizada?",
+"pt_BR": "Que tarefa repetitiva do seu trabalho poderia ser automatizada?"
+}
+},
+{
+"id": "productivity_work-074",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you organise the things you learn so you can find them later?",
+"de": "Wie ordnest du das, was du lernst, damit du es später wiederfindest?",
+"es": "¿Cómo organizas lo que aprendes para encontrarlo después?",
+"fr": "Comment organises-tu ce que tu apprends pour le retrouver plus tard ?",
+"it": "Come organizzi quello che impari per ritrovarlo in seguito?",
+"pt": "Como organizas o que aprendes para o encontrares mais tarde?",
+"pt_BR": "Como você organiza o que aprende para encontrar depois?"
+}
+},
+{
+"id": "productivity_work-075",
+"lv": "intermediate",
+"i18n": {
+"en": "When do you feel most energetic, and what work do you save for that time?",
+"de": "Wann hast du die meiste Energie, und welche Arbeit hebst du dir dafür auf?",
+"es": "¿Cuándo te sientes con más energía y qué trabajo reservas para ese momento?",
+"fr": "Quand te sens-tu le plus en forme, et quel travail gardes-tu pour ce moment-là ?",
+"it": "Quando ti senti più carico di energia, e quale lavoro riservi a quel momento?",
+"pt": "Quando te sentes com mais energia e que trabalho guardas para esse momento?",
+"pt_BR": "Quando você se sente com mais energia, e que trabalho guarda para esse momento?"
+}
+},
+{
+"id": "productivity_work-076",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you handle a week when everything seems urgent?",
+"de": "Wie gehst du mit einer Woche um, in der alles dringend scheint?",
+"es": "¿Cómo afrontas una semana en la que todo parece urgente?",
+"fr": "Comment gères-tu une semaine où tout semble urgent ?",
+"it": "Come affronti una settimana in cui tutto sembra urgente?",
+"pt": "Como lidas com uma semana em que tudo parece urgente?",
+"pt_BR": "Como você lida com uma semana em que tudo parece urgente?"
+}
+},
+{
+"id": "productivity_work-077",
+"lv": "intermediate",
+"i18n": {
+"en": "What makes a meeting worth your time?",
+"de": "Was macht ein Meeting deine Zeit wert?",
+"es": "¿Qué hace que una reunión merezca tu tiempo?",
+"fr": "Qu'est-ce qui fait qu'une réunion vaut ton temps ?",
+"it": "Cosa rende una riunione degna del tuo tempo?",
+"pt": "O que faz uma reunião valer o teu tempo?",
+"pt_BR": "O que faz uma reunião valer o seu tempo?"
+}
+},
+{
+"id": "productivity_work-078",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you write a message so that nobody needs to ask follow-up questions?",
+"de": "Wie schreibst du eine Nachricht so, dass niemand nachfragen muss?",
+"es": "¿Cómo escribes un mensaje para que nadie tenga que hacer más preguntas?",
+"fr": "Comment rédiges-tu un message pour que personne n'ait besoin de poser de questions ?",
+"it": "Come scrivi un messaggio in modo che nessuno debba fare altre domande?",
+"pt": "Como escreves uma mensagem para que ninguém precise de fazer mais perguntas?",
+"pt_BR": "Como você escreve uma mensagem para que ninguém precise fazer mais perguntas?"
+}
+},
+{
+"id": "productivity_work-079",
+"lv": "intermediate",
+"i18n": {
+"en": "Which prioritisation method do you like most, and why?",
+"de": "Welche Methode zum Priorisieren gefällt dir am besten, und warum?",
+"es": "¿Qué método de priorización te gusta más y por qué?",
+"fr": "Quelle méthode de priorisation préfères-tu, et pourquoi ?",
+"it": "Quale metodo per stabilire le priorità ti piace di più, e perché?",
+"pt": "Que método de definição de prioridades preferes e porquê?",
+"pt_BR": "Qual método de priorização você prefere, e por quê?"
+}
+},
+{
+"id": "productivity_work-080",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you give feedback to a colleague in a helpful way?",
+"de": "Wie gibst du einem Kollegen auf hilfreiche Weise Feedback?",
+"es": "¿Cómo das tu opinión a un compañero de forma útil?",
+"fr": "Comment fais-tu un retour utile à un collègue ?",
+"it": "Come dai un feedback utile a un collega?",
+"pt": "Como dás feedback a um colega de forma útil?",
+"pt_BR": "Como você dá feedback a um colega de um jeito útil?"
+}
+},
+{
+"id": "productivity_work-081",
+"lv": "intermediate",
+"i18n": {
+"en": "What does good enough mean for the tasks you do?",
+"de": "Was bedeutet gut genug bei den Aufgaben, die du erledigst?",
+"es": "¿Qué significa suficientemente bueno en las tareas que haces?",
+"fr": "Que signifie assez bien pour les tâches que tu fais ?",
+"it": "Cosa significa abbastanza buono per i compiti che svolgi?",
+"pt": "O que significa suficientemente bom nas tarefas que fazes?",
+"pt_BR": "O que significa bom o suficiente nas tarefas que você faz?"
+}
+},
+{
+"id": "productivity_work-082",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you decide quickly when a choice is easy to undo?",
+"de": "Wie entscheidest du schnell, wenn eine Wahl leicht rückgängig zu machen ist?",
+"es": "¿Cómo decides rápido cuando una elección se puede deshacer fácilmente?",
+"fr": "Comment décides-tu vite quand un choix est facile à défaire ?",
+"it": "Come decidi in fretta quando una scelta è facile da annullare?",
+"pt": "Como decides rapidamente quando uma escolha é fácil de desfazer?",
+"pt_BR": "Como você decide rápido quando uma escolha é fácil de desfazer?"
+}
+},
+{
+"id": "productivity_work-083",
+"lv": "intermediate",
+"i18n": {
+"en": "What new skill would make your work easier, and how could you learn it?",
+"de": "Welche neue Fähigkeit würde dir die Arbeit erleichtern, und wie könntest du sie lernen?",
+"es": "¿Qué nueva habilidad te facilitaría el trabajo y cómo podrías aprenderla?",
+"fr": "Quelle nouvelle compétence te faciliterait le travail, et comment pourrais-tu l'apprendre ?",
+"it": "Quale nuova abilità ti renderebbe il lavoro più facile, e come potresti impararla?",
+"pt": "Que nova competência te facilitaria o trabalho e como a podias aprender?",
+"pt_BR": "Que nova habilidade facilitaria seu trabalho, e como você poderia aprendê-la?"
+}
+},
+{
+"id": "productivity_work-084",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you keep remote work organised and connected?",
+"de": "Wie hältst du die Arbeit aus der Ferne organisiert und verbunden?",
+"es": "¿Cómo mantienes el trabajo en remoto organizado y conectado?",
+"fr": "Comment gardes-tu le télétravail organisé et le lien avec les autres ?",
+"it": "Come mantieni il lavoro da remoto organizzato e connesso?",
+"pt": "Como manténs o trabalho remoto organizado e ligado aos outros?",
+"pt_BR": "Como você mantém o trabalho remoto organizado e conectado com os outros?"
+}
+},
+{
+"id": "productivity_work-085",
+"lv": "intermediate",
+"i18n": {
+"en": "What templates or checklists save you the most time?",
+"de": "Welche Vorlagen oder Checklisten sparen dir am meisten Zeit?",
+"es": "¿Qué plantillas o listas de control te ahorran más tiempo?",
+"fr": "Quels modèles ou listes de contrôle te font gagner le plus de temps ?",
+"it": "Quali modelli o checklist ti fanno risparmiare più tempo?",
+"pt": "Que modelos ou listas de verificação te poupam mais tempo?",
+"pt_BR": "Quais modelos ou checklists mais economizam seu tempo?"
+}
+},
+{
+"id": "productivity_work-086",
+"lv": "advanced",
+"i18n": {
+"en": "If you designed your ideal work week from scratch, what would it look like?",
+"de": "Wenn du deine ideale Arbeitswoche ganz neu entwerfen könntest, wie sähe sie aus?",
+"es": "Si diseñaras tu semana laboral ideal desde cero, ¿cómo sería?",
+"fr": "Si tu concevais ta semaine de travail idéale de zéro, à quoi ressemblerait-elle ?",
+"it": "Se progettassi da zero la tua settimana lavorativa ideale, come sarebbe?",
+"pt": "Se desenhasses a tua semana de trabalho ideal do zero, como seria?",
+"pt_BR": "Se você criasse sua semana de trabalho ideal do zero, como ela seria?"
+}
+},
+{
+"id": "productivity_work-087",
+"lv": "advanced",
+"i18n": {
+"en": "When did you last experience a state of flow at work?",
+"de": "Wann hast du zuletzt bei der Arbeit einen Flow-Zustand erlebt?",
+"es": "¿Cuándo fue la última vez que entraste en estado de flujo en el trabajo?",
+"fr": "Quand as-tu ressenti un état de flow au travail pour la dernière fois ?",
+"it": "Quando hai sperimentato l'ultima volta uno stato di flow al lavoro?",
+"pt": "Quando foi a última vez que entraste em estado de fluxo no trabalho?",
+"pt_BR": "Quando foi a última vez que você entrou em estado de fluxo no trabalho?"
+}
+},
+{
+"id": "productivity_work-088",
+"lv": "advanced",
+"i18n": {
+"en": "How would you help a team spend less time in meetings?",
+"de": "Wie würdest du einem Team helfen, weniger Zeit in Meetings zu verbringen?",
+"es": "¿Cómo ayudarías a un equipo a pasar menos tiempo en reuniones?",
+"fr": "Comment aiderais-tu une équipe à passer moins de temps en réunion ?",
+"it": "Come aiuteresti un team a passare meno tempo in riunione?",
+"pt": "Como ajudarias uma equipa a passar menos tempo em reuniões?",
+"pt_BR": "Como você ajudaria uma equipe a passar menos tempo em reuniões?"
+}
+},
+{
+"id": "productivity_work-089",
+"lv": "advanced",
+"i18n": {
+"en": "What personal rules guide how you work?",
+"de": "Welche persönlichen Regeln bestimmen, wie du arbeitest?",
+"es": "¿Qué reglas personales guían tu forma de trabajar?",
+"fr": "Quelles règles personnelles guident ta façon de travailler ?",
+"it": "Quali regole personali guidano il tuo modo di lavorare?",
+"pt": "Que regras pessoais orientam a tua forma de trabalhar?",
+"pt_BR": "Quais regras pessoais orientam seu jeito de trabalhar?"
+}
+},
+{
+"id": "productivity_work-090",
+"lv": "advanced",
+"i18n": {
+"en": "Which project would you stop if you had to focus on fewer things?",
+"de": "Welches Projekt würdest du beenden, wenn du dich auf weniger Dinge konzentrieren müsstest?",
+"es": "¿Qué proyecto dejarías si tuvieras que centrarte en menos cosas?",
+"fr": "Quel projet arrêterais-tu si tu devais te concentrer sur moins de choses ?",
+"it": "Quale progetto interromperesti se dovessi concentrarti su meno cose?",
+"pt": "Que projeto deixarias se tivesses de te concentrar em menos coisas?",
+"pt_BR": "Qual projeto você deixaria se precisasse focar em menos coisas?"
+}
+},
+{
+"id": "productivity_work-091",
+"lv": "advanced",
+"i18n": {
+"en": "How do you make sure a team feels safe to share problems early?",
+"de": "Wie sorgst du dafür, dass sich ein Team sicher fühlt, Probleme früh anzusprechen?",
+"es": "¿Cómo consigues que un equipo se sienta seguro para contar los problemas pronto?",
+"fr": "Comment fais-tu pour qu'une équipe se sente à l'aise de signaler les problèmes tôt ?",
+"it": "Come fai in modo che un team si senta sicuro di segnalare presto i problemi?",
+"pt": "Como garantes que uma equipa se sente segura para partilhar problemas cedo?",
+"pt_BR": "Como você garante que uma equipe se sinta segura para contar problemas cedo?"
+}
+},
+{
+"id": "productivity_work-092",
+"lv": "advanced",
+"i18n": {
+"en": "What would you measure to know if your team is truly productive?",
+"de": "Was würdest du messen, um zu wissen, ob dein Team wirklich produktiv ist?",
+"es": "¿Qué medirías para saber si tu equipo es realmente productivo?",
+"fr": "Que mesurerais-tu pour savoir si ton équipe est vraiment productive ?",
+"it": "Cosa misureresti per sapere se il tuo team è davvero produttivo?",
+"pt": "O que medirias para saber se a tua equipa é realmente produtiva?",
+"pt_BR": "O que você mediria para saber se sua equipe é realmente produtiva?"
+}
+},
+{
+"id": "productivity_work-093",
+"lv": "advanced",
+"i18n": {
+"en": "How do you keep a sustainable pace during a very busy season?",
+"de": "Wie hältst du in einer sehr arbeitsreichen Phase ein gesundes Tempo?",
+"es": "¿Cómo mantienes un ritmo sostenible en una temporada de mucho trabajo?",
+"fr": "Comment gardes-tu un rythme tenable pendant une période très chargée ?",
+"it": "Come mantieni un ritmo sostenibile in un periodo molto intenso?",
+"pt": "Como manténs um ritmo sustentável numa época de muito trabalho?",
+"pt_BR": "Como você mantém um ritmo sustentável numa fase de muito trabalho?"
+}
+},
+{
+"id": "productivity_work-094",
+"lv": "advanced",
+"i18n": {
+"en": "What process at work would you redesign if you could?",
+"de": "Welchen Arbeitsprozess würdest du neu gestalten, wenn du könntest?",
+"es": "¿Qué proceso de tu trabajo rediseñarías si pudieras?",
+"fr": "Quel processus de travail repenserais-tu si tu le pouvais ?",
+"it": "Quale processo di lavoro riprogetteresti se potessi?",
+"pt": "Que processo de trabalho redesenharias se pudesses?",
+"pt_BR": "Qual processo de trabalho você redesenharia se pudesse?"
+}
+},
+{
+"id": "productivity_work-095",
+"lv": "advanced",
+"i18n": {
+"en": "How do you set boundaries with work messages after hours?",
+"de": "Wie setzt du Grenzen bei Arbeitsnachrichten nach Feierabend?",
+"es": "¿Cómo pones límites a los mensajes de trabajo fuera del horario?",
+"fr": "Comment poses-tu des limites aux messages professionnels en dehors des heures de travail ?",
+"it": "Come metti dei limiti ai messaggi di lavoro fuori orario?",
+"pt": "Como defines limites para mensagens de trabalho fora de horas?",
+"pt_BR": "Como você coloca limites nas mensagens de trabalho fora do expediente?"
+}
+},
+{
+"id": "productivity_work-096",
+"lv": "advanced",
+"i18n": {
+"en": "Which productivity idea or book changed the way you work?",
+"de": "Welche Produktivitätsidee oder welches Buch hat deine Arbeitsweise verändert?",
+"es": "¿Qué idea o libro de productividad cambió tu forma de trabajar?",
+"fr": "Quelle idée ou quel livre sur la productivité a changé ta façon de travailler ?",
+"it": "Quale idea o libro sulla produttività ha cambiato il tuo modo di lavorare?",
+"pt": "Que ideia ou livro sobre produtividade mudou a tua forma de trabalhar?",
+"pt_BR": "Qual ideia ou livro sobre produtividade mudou seu jeito de trabalhar?"
+}
+},
+{
+"id": "productivity_work-097",
+"lv": "advanced",
+"i18n": {
+"en": "How would you explain your way of working to a new colleague?",
+"de": "Wie würdest du einem neuen Kollegen deine Arbeitsweise erklären?",
+"es": "¿Cómo le explicarías tu forma de trabajar a un compañero nuevo?",
+"fr": "Comment expliquerais-tu ta façon de travailler à un nouveau collègue ?",
+"it": "Come spiegheresti il tuo modo di lavorare a un nuovo collega?",
+"pt": "Como explicarias a tua forma de trabalhar a um colega novo?",
+"pt_BR": "Como você explicaria seu jeito de trabalhar para um colega novo?"
+}
+},
+{
+"id": "productivity_work-098",
+"lv": "advanced",
+"i18n": {
+"en": "What small experiment could you run next week to improve your system?",
+"de": "Welches kleine Experiment könntest du nächste Woche machen, um dein System zu verbessern?",
+"es": "¿Qué pequeño experimento podrías hacer la próxima semana para mejorar tu sistema?",
+"fr": "Quelle petite expérience pourrais-tu tenter la semaine prochaine pour améliorer ton système ?",
+"it": "Quale piccolo esperimento potresti fare la prossima settimana per migliorare il tuo sistema?",
+"pt": "Que pequena experiência podias fazer na próxima semana para melhorar o teu sistema?",
+"pt_BR": "Que pequeno experimento você poderia fazer na próxima semana para melhorar seu sistema?"
+}
+},
+{
+"id": "productivity_work-099",
+"lv": "advanced",
+"i18n": {
+"en": "How would you coach a colleague who always feels overwhelmed?",
+"de": "Wie würdest du einen Kollegen coachen, der sich ständig überfordert fühlt?",
+"es": "¿Cómo acompañarías a un compañero que siempre se siente desbordado?",
+"fr": "Comment accompagnerais-tu un collègue qui se sent toujours débordé ?",
+"it": "Come aiuteresti un collega che si sente sempre sopraffatto?",
+"pt": "Como ajudarias um colega que se sente sempre sobrecarregado?",
+"pt_BR": "Como você ajudaria um colega que vive se sentindo sobrecarregado?"
+}
+},
+{
+"id": "productivity_work-100",
+"lv": "advanced",
+"i18n": {
+"en": "Looking back at the past year, what is the biggest change in how you work?",
+"de": "Was ist rückblickend auf das vergangene Jahr die größte Veränderung in deiner Arbeitsweise?",
+"es": "Mirando el último año, ¿cuál es el mayor cambio en tu forma de trabajar?",
+"fr": "Avec le recul sur l'année écoulée, quel est le plus grand changement dans ta façon de travailler ?",
+"it": "Ripensando all'ultimo anno, qual è il cambiamento più grande nel tuo modo di lavorare?",
+"pt": "Olhando para o último ano, qual foi a maior mudança na tua forma de trabalhar?",
+"pt_BR": "Olhando para o último ano, qual foi a maior mudança no seu jeito de trabalhar?"
+}
+}
+]
+}

@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 291,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Fronting for emphasis",
+     "g": "Put the topic first for emphasis: Den Film habe ich schon gesehen.",
+     "p": [
+      "German word order is flexible: any element can go to position 1, as long as the verb stays in position 2.",
+      "Fronting an object stresses or links it: Den Film habe ich schon gesehen, aber das Buch noch nicht.",
+      "Fronting time or place sets the scene: Gestern habe ich... / In Wien gibt es... The subject then comes right after the verb."
+     ],
+     "q": "Answer with the object first: What about coffee? Kaffee trinke ich... Tell me three likes and dislikes this way!",
+     "c": "Take three neutral sentences and rewrite each one twice with a different element in position 1."
+    },
+    "de": {
+     "t": "Vorfeld für Betonung",
+     "g": "Du stellst das Thema nach vorn: Den Film habe ich schon gesehen.",
+     "p": [
+      "Die Wortstellung ist flexibel: Jedes Satzglied kann auf Position 1, solange das Verb auf Position 2 bleibt.",
+      "Ein Objekt im Vorfeld betont oder verbindet: Den Film habe ich schon gesehen, aber das Buch noch nicht.",
+      "Zeit oder Ort im Vorfeld setzen die Szene: Gestern habe ich... / In Wien gibt es... Das Subjekt folgt direkt nach dem Verb."
+     ],
+     "q": "Antworte mit dem Objekt zuerst: Und Kaffee? Kaffee trinke ich... Nenn mir so drei Vorlieben und Abneigungen!",
+     "c": "Nimm drei neutrale Sätze und schreib jeden zweimal neu, mit einem anderen Satzglied auf Position 1."
+    },
+    "es": {
+     "t": "Anteponer para enfatizar",
+     "g": "Pon el tema delante para enfatizar: Den Film habe ich schon gesehen (esa película ya la he visto).",
+     "p": [
+      "El orden alemán es flexible: cualquier elemento puede ir en la posición 1 si el verbo sigue en la posición 2.",
+      "Anteponer el objeto lo destaca o lo enlaza: Den Film habe ich schon gesehen, aber das Buch noch nicht.",
+      "Anteponer tiempo o lugar sitúa la escena: Gestern habe ich... / In Wien gibt es... El sujeto va justo tras el verbo."
+     ],
+     "q": "Responde con el objeto delante: ¿Y el café? Kaffee trinke ich... ¡Dime así tres gustos y tres disgustos!",
+     "c": "Toma tres frases neutras y reescribe cada una dos veces con otro elemento en la posición 1."
+    },
+    "fr": {
+     "t": "Mettre en tête pour insister",
+     "g": "Placer le thème en tête pour insister : Den Film habe ich schon gesehen (ce film, je l'ai déjà vu).",
+     "p": [
+      "L'ordre allemand est souple : tout élément peut aller en position 1, tant que le verbe reste en position 2.",
+      "Un objet en tête le met en relief ou fait le lien : Den Film habe ich schon gesehen, aber das Buch noch nicht.",
+      "Le temps ou le lieu en tête plante le décor : Gestern habe ich... / In Wien gibt es... Le sujet suit alors le verbe."
+     ],
+     "q": "Réponds avec l'objet en tête : Et le café ? Kaffee trinke ich... Donne-moi ainsi trois goûts et trois dégoûts !",
+     "c": "Prends trois phrases neutres et réécris chacune deux fois avec un autre élément en position 1."
+    },
+    "it": {
+     "t": "Anteporre per dare enfasi",
+     "g": "Metti il tema all'inizio per enfasi: Den Film habe ich schon gesehen (quel film l'ho già visto).",
+     "p": [
+      "L'ordine tedesco è flessibile: qualsiasi elemento può stare in posizione 1, purché il verbo resti in posizione 2.",
+      "Anteporre l'oggetto lo mette in risalto o lo collega: Den Film habe ich schon gesehen, aber das Buch noch nicht.",
+      "Anteporre tempo o luogo crea la scena: Gestern habe ich... / In Wien gibt es... Il soggetto segue subito il verbo."
+     ],
+     "q": "Rispondi con l'oggetto davanti: E il caffè? Kaffee trinke ich... Dimmi così tre cose che ami e tre che non sopporti!",
+     "c": "Prendi tre frasi neutre e riscrivile due volte ciascuna con un altro elemento in posizione 1."
+    },
+    "pt": {
+     "t": "Antepor para dar ênfase",
+     "g": "Pôr o tema à frente para dar ênfase: Den Film habe ich schon gesehen (esse filme já eu vi).",
+     "p": [
+      "A ordem alemã é flexível: qualquer elemento pode ir para a posição 1, desde que o verbo fique na posição 2.",
+      "Antepor o objeto realça-o ou liga-o: Den Film habe ich schon gesehen, aber das Buch noch nicht.",
+      "Antepor tempo ou lugar cria a cena: Gestern habe ich... / In Wien gibt es... O sujeito vem logo a seguir ao verbo."
+     ],
+     "q": "Responde com o objeto à frente: E café? Kaffee trinke ich... Diz-me assim três gostos e três coisas de que não gostas!",
+     "c": "Pega em três frases neutras e reescreve cada uma duas vezes com outro elemento na posição 1."
+    },
+    "pt_BR": {
+     "t": "Antepor para dar ênfase",
+     "g": "Colocar o tema na frente para dar ênfase: Den Film habe ich schon gesehen (esse filme eu já vi).",
+     "p": [
+      "A ordem alemã é flexível: qualquer elemento pode ir para a posição 1, desde que o verbo fique na posição 2.",
+      "Antepor o objeto destaca ou conecta: Den Film habe ich schon gesehen, aber das Buch noch nicht.",
+      "Antepor tempo ou lugar monta a cena: Gestern habe ich... / In Wien gibt es... O sujeito vem logo depois do verbo."
+     ],
+     "q": "Responda com o objeto na frente: E café? Kaffee trinke ich... Me diga assim três coisas de que gosta e três de que não gosta!",
+     "c": "Pegue três frases neutras e reescreva cada uma duas vezes com outro elemento na posição 1."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Den Film habe ich ...",
+      "ex": "Den Film habe ich schon zweimal gesehen."
+     },
+     {
+      "w": "Das weiß ich nicht.",
+      "ex": "Wann der Zug kommt? Das weiß ich nicht."
+     },
+     {
+      "w": "Kaffee trinke ich ...",
+      "ex": "Kaffee trinke ich nur am Morgen."
+     },
+     {
+      "w": "Gestern habe ich ...",
+      "ex": "Gestern habe ich endlich meine Steuererklärung gemacht."
+     },
+     {
+      "w": "In Wien gibt es ...",
+      "ex": "In Wien gibt es unglaublich viele Kaffeehäuser."
+     },
+     {
+      "w": "Ihm habe ich ...",
+      "ex": "Ihm habe ich alles erzählt, ihr nicht."
+     }
+    ],
+    "gram": "Vorfeld: genau ein Satzglied vor dem finiten Verb (Position 2); Objekt im Vorfeld = Betonung/Kontrast: Den Film kenne ich."
+   }
+  },
+  {
+   "d": 292,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Es as a placeholder",
+     "g": "Use es as a placeholder: Es freut mich, dass...; es wurde viel gelacht.",
+     "p": [
+      "es holds position 1 for a later clause: Es freut mich, dass du da bist. Clause first, no es: Dass du da bist, freut mich.",
+      "Impersonal passive with es: Es wurde viel gelacht (there was a lot of laughing). Without es: Gestern wurde viel gelacht.",
+      "Fixed expressions: Es geht um... (it's about), Es gibt..., Es lohnt sich (it's worth it), Es kommt darauf an (it depends)."
+     ],
+     "q": "What is es worth doing in your city? Answer with Es lohnt sich, ... zu besuchen!",
+     "c": "Write five sentences with es: Es freut mich, Es geht um, Es lohnt sich, Es kommt darauf an and an es-passive."
+    },
+    "de": {
+     "t": "Es als Platzhalter",
+     "g": "Du benutzt es als Platzhalter: Es freut mich, dass...; es wurde viel gelacht.",
+     "p": [
+      "es besetzt Position 1 für einen späteren Satz: Es freut mich, dass du da bist. Satz vorn, ohne es: Dass du da bist, freut mich.",
+      "Unpersönliches Passiv mit es: Es wurde viel gelacht. Ohne es: Gestern wurde viel gelacht.",
+      "Feste Ausdrücke: Es geht um..., Es gibt..., Es lohnt sich, Es kommt darauf an."
+     ],
+     "q": "Was lohnt sich in deiner Stadt? Antworte mit Es lohnt sich, ... zu besuchen!",
+     "c": "Schreib fünf Sätze mit es: Es freut mich, Es geht um, Es lohnt sich, Es kommt darauf an und ein es-Passiv."
+    },
+    "es": {
+     "t": "Es como comodín",
+     "g": "Usa es como marcador de posición: Es freut mich, dass... (me alegra que...); es wurde viel gelacht.",
+     "p": [
+      "es ocupa la posición 1: Es freut mich, dass du da bist. Oración delante, sin es: Dass du da bist, freut mich.",
+      "Pasiva impersonal con es: Es wurde viel gelacht (se rió mucho). Sin es: Gestern wurde viel gelacht.",
+      "Expresiones fijas: Es geht um... (se trata de), Es gibt..., Es lohnt sich (vale la pena), Es kommt darauf an (depende)."
+     ],
+     "q": "¿Qué vale la pena en tu ciudad? ¡Responde con Es lohnt sich, ... zu besuchen!",
+     "c": "Escribe cinco frases con es: Es freut mich, Es geht um, Es lohnt sich, Es kommt darauf an y una pasiva con es."
+    },
+    "fr": {
+     "t": "Es comme élément explétif",
+     "g": "Utiliser es comme bouche-trou : Es freut mich, dass... (je suis content que...) ; es wurde viel gelacht.",
+     "p": [
+      "es occupe la position 1 : Es freut mich, dass du da bist. Proposition en tête, sans es : Dass du da bist, freut mich.",
+      "Passif impersonnel avec es : Es wurde viel gelacht (on a beaucoup ri). Sans es : Gestern wurde viel gelacht.",
+      "Expressions figées : Es geht um... (il s'agit de), Es gibt..., Es lohnt sich (ça vaut le coup), Es kommt darauf an (ça dépend)."
+     ],
+     "q": "Qu'est-ce qui vaut le coup dans ta ville ? Réponds avec Es lohnt sich, ... zu besuchen !",
+     "c": "Écris cinq phrases avec es : Es freut mich, Es geht um, Es lohnt sich, Es kommt darauf an et un passif en es."
+    },
+    "it": {
+     "t": "Es come segnaposto",
+     "g": "Usa es come segnaposto: Es freut mich, dass... (mi fa piacere che...); es wurde viel gelacht.",
+     "p": [
+      "es occupa la posizione 1: Es freut mich, dass du da bist. Frase davanti, senza es: Dass du da bist, freut mich.",
+      "Passivo impersonale con es: Es wurde viel gelacht (si è riso molto). Senza es: Gestern wurde viel gelacht.",
+      "Espressioni fisse: Es geht um... (si tratta di), Es gibt..., Es lohnt sich (ne vale la pena), Es kommt darauf an (dipende)."
+     ],
+     "q": "Cosa vale la pena nella tua città? Rispondi con Es lohnt sich, ... zu besuchen!",
+     "c": "Scrivi cinque frasi con es: Es freut mich, Es geht um, Es lohnt sich, Es kommt darauf an e un passivo con es."
+    },
+    "pt": {
+     "t": "Es como marcador de posição",
+     "g": "Usar es como marcador: Es freut mich, dass... (fico contente que...); es wurde viel gelacht.",
+     "p": [
+      "es ocupa a posição 1: Es freut mich, dass du da bist. Oração à frente, sem es: Dass du da bist, freut mich.",
+      "Passiva impessoal com es: Es wurde viel gelacht (riu-se muito). Sem es: Gestern wurde viel gelacht.",
+      "Expressões fixas: Es geht um... (trata-se de), Es gibt..., Es lohnt sich (vale a pena), Es kommt darauf an (depende)."
+     ],
+     "q": "O que vale a pena na tua cidade? Responde com Es lohnt sich, ... zu besuchen!",
+     "c": "Escreve cinco frases com es: Es freut mich, Es geht um, Es lohnt sich, Es kommt darauf an e uma passiva com es."
+    },
+    "pt_BR": {
+     "t": "Es como marcador de posição",
+     "g": "Usar es como marcador: Es freut mich, dass... (fico feliz que...); es wurde viel gelacht.",
+     "p": [
+      "es ocupa a posição 1: Es freut mich, dass du da bist. Oração na frente, sem es: Dass du da bist, freut mich.",
+      "Passiva impessoal com es: Es wurde viel gelacht (riu-se muito). Sem es: Gestern wurde viel gelacht.",
+      "Expressões fixas: Es geht um... (trata-se de), Es gibt..., Es lohnt sich (vale a pena), Es kommt darauf an (depende)."
+     ],
+     "q": "O que vale a pena na sua cidade? Responda com Es lohnt sich, ... zu besuchen!",
+     "c": "Escreva cinco frases com es: Es freut mich, Es geht um, Es lohnt sich, Es kommt darauf an e uma passiva com es."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Es freut mich, dass ...",
+      "ex": "Es freut mich, dass du gekommen bist."
+     },
+     {
+      "w": "Es geht um ...",
+      "ex": "In dem Roman geht es um eine Familie in Hamburg."
+     },
+     {
+      "w": "Es lohnt sich.",
+      "ex": "Es lohnt sich, früh aufzustehen und den Sonnenaufgang zu sehen."
+     },
+     {
+      "w": "Es kommt darauf an.",
+      "ex": "Ob wir wandern? Es kommt darauf an, wie das Wetter wird."
+     },
+     {
+      "w": "Es wurde viel gelacht.",
+      "ex": "Auf der Party wurde viel getanzt und gelacht."
+     },
+     {
+      "w": "Es ist wichtig, dass ...",
+      "ex": "Es ist wichtig, dass wir pünktlich sind."
+     }
+    ],
+    "gram": "Platzhalter-es nur auf Position 1 (Es freut mich, dass...); steht der Nebensatz vorn oder etwas anderes im Vorfeld, entfällt es."
+   }
+  },
+  {
+   "d": 293,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Advanced connectors",
+     "g": "Link ideas like a pro: dennoch, folglich, somit, zudem, allerdings.",
+     "p": [
+      "dennoch = nevertheless (formal trotzdem): Es regnete, dennoch gingen wir spazieren. It takes position 1 with inversion.",
+      "folglich / somit = consequently, thus: Der Zug fiel aus, folglich kamen wir zu spät. zudem = moreover, like außerdem.",
+      "allerdings = however, admittedly: Das Hotel war schön, allerdings etwas laut. It can also stand in the middle field."
+     ],
+     "q": "Tell me about a choice you made, with one advantage and one drawback, using zudem and allerdings!",
+     "c": "Write a short paragraph about remote work using dennoch, folglich, zudem and allerdings."
+    },
+    "de": {
+     "t": "Fortgeschrittene Konnektoren",
+     "g": "Du verbindest Gedanken wie ein Profi: dennoch, folglich, somit, zudem, allerdings.",
+     "p": [
+      "dennoch = trotzdem (formeller): Es regnete, dennoch gingen wir spazieren. Auf Position 1 mit Inversion.",
+      "folglich / somit = also, deshalb: Der Zug fiel aus, folglich kamen wir zu spät. zudem = außerdem.",
+      "allerdings = aber, jedoch: Das Hotel war schön, allerdings etwas laut. Es kann auch im Mittelfeld stehen."
+     ],
+     "q": "Erzähl mir von einer Entscheidung mit einem Vorteil und einem Nachteil, mit zudem und allerdings!",
+     "c": "Schreib einen kurzen Absatz über Homeoffice mit dennoch, folglich, zudem und allerdings."
+    },
+    "es": {
+     "t": "Conectores avanzados",
+     "g": "Enlaza ideas como un profesional: dennoch, folglich, somit, zudem, allerdings.",
+     "p": [
+      "dennoch = no obstante (trotzdem formal): Es regnete, dennoch gingen wir spazieren. Va en posición 1 con inversión.",
+      "folglich / somit = por consiguiente: Der Zug fiel aus, folglich kamen wir zu spät. zudem = además, como außerdem.",
+      "allerdings = sin embargo, eso sí: Das Hotel war schön, allerdings etwas laut. También puede ir en el campo medio."
+     ],
+     "q": "Cuéntame una decisión que tomaste, con una ventaja y un inconveniente, usando zudem y allerdings.",
+     "c": "Escribe un párrafo corto sobre el teletrabajo con dennoch, folglich, zudem y allerdings."
+    },
+    "fr": {
+     "t": "Connecteurs avancés",
+     "g": "Relier les idées comme un pro : dennoch, folglich, somit, zudem, allerdings.",
+     "p": [
+      "dennoch = néanmoins (trotzdem soutenu) : Es regnete, dennoch gingen wir spazieren. En position 1 avec inversion.",
+      "folglich / somit = par conséquent : Der Zug fiel aus, folglich kamen wir zu spät. zudem = de plus, comme außerdem.",
+      "allerdings = toutefois : Das Hotel war schön, allerdings etwas laut. Il peut aussi se placer dans le champ central."
+     ],
+     "q": "Parle-moi d'un choix que tu as fait, avec un avantage et un inconvénient, en utilisant zudem et allerdings !",
+     "c": "Écris un court paragraphe sur le télétravail avec dennoch, folglich, zudem et allerdings."
+    },
+    "it": {
+     "t": "Connettivi avanzati",
+     "g": "Collega le idee da professionista: dennoch, folglich, somit, zudem, allerdings.",
+     "p": [
+      "dennoch = tuttavia (trotzdem formale): Es regnete, dennoch gingen wir spazieren. In posizione 1 con inversione.",
+      "folglich / somit = di conseguenza: Der Zug fiel aus, folglich kamen wir zu spät. zudem = inoltre, come außerdem.",
+      "allerdings = però, comunque: Das Hotel war schön, allerdings etwas laut. Può stare anche nel campo centrale."
+     ],
+     "q": "Raccontami una scelta che hai fatto, con un vantaggio e uno svantaggio, usando zudem e allerdings!",
+     "c": "Scrivi un breve paragrafo sul lavoro da casa con dennoch, folglich, zudem e allerdings."
+    },
+    "pt": {
+     "t": "Conectores avançados",
+     "g": "Ligar ideias como um profissional: dennoch, folglich, somit, zudem, allerdings.",
+     "p": [
+      "dennoch = no entanto (trotzdem formal): Es regnete, dennoch gingen wir spazieren. Na posição 1 com inversão.",
+      "folglich / somit = por conseguinte: Der Zug fiel aus, folglich kamen wir zu spät. zudem = além disso, como außerdem.",
+      "allerdings = contudo: Das Hotel war schön, allerdings etwas laut. Também pode ficar no campo central."
+     ],
+     "q": "Conta-me uma escolha que fizeste, com uma vantagem e uma desvantagem, usando zudem e allerdings!",
+     "c": "Escreve um parágrafo curto sobre teletrabalho com dennoch, folglich, zudem e allerdings."
+    },
+    "pt_BR": {
+     "t": "Conectores avançados",
+     "g": "Ligar ideias como um profissional: dennoch, folglich, somit, zudem, allerdings.",
+     "p": [
+      "dennoch = no entanto (trotzdem formal): Es regnete, dennoch gingen wir spazieren. Na posição 1 com inversão.",
+      "folglich / somit = consequentemente: Der Zug fiel aus, folglich kamen wir zu spät. zudem = além disso, como außerdem.",
+      "allerdings = porém: Das Hotel war schön, allerdings etwas laut. Também pode ficar no campo central."
+     ],
+     "q": "Me conte uma escolha que você fez, com uma vantagem e uma desvantagem, usando zudem e allerdings!",
+     "c": "Escreva um parágrafo curto sobre home office com dennoch, folglich, zudem e allerdings."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "dennoch",
+      "ex": "Die Aufgabe war schwer, dennoch haben wir sie gelöst."
+     },
+     {
+      "w": "folglich",
+      "ex": "Er hat nicht trainiert, folglich hat er verloren."
+     },
+     {
+      "w": "somit",
+      "ex": "Alle haben zugestimmt, somit ist die Sache entschieden."
+     },
+     {
+      "w": "zudem",
+      "ex": "Die Wohnung ist günstig, zudem liegt sie zentral."
+     },
+     {
+      "w": "allerdings",
+      "ex": "Der Film war gut, allerdings etwas zu lang."
+     },
+     {
+      "w": "jedoch",
+      "ex": "Wir wollten kommen, jedoch fiel der Zug aus."
+     }
+    ],
+    "gram": "dennoch, folglich, somit, zudem auf Position 1 → Inversion (dennoch gingen wir); allerdings/jedoch auch im Mittelfeld möglich."
+   }
+  },
+  {
+   "d": 294,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Prepositions with genitive",
+     "g": "Use formal genitive prepositions: angesichts, innerhalb, außerhalb, anstatt, aufgrund.",
+     "p": [
+      "aufgrund / wegen = because of: Aufgrund des Wetters fällt das Spiel aus. angesichts = in view of: angesichts der Lage.",
+      "innerhalb / außerhalb = within / outside: innerhalb einer Woche, außerhalb der Stadt. Also time: innerhalb von zwei Tagen.",
+      "anstatt / statt = instead of: Statt eines Autos kaufte er ein Fahrrad. Also: trotz, während, laut (often with dative in speech)."
+     ],
+     "q": "What would you do instead of watching TV tonight? Answer with Statt des Fernsehens...",
+     "c": "Write one sentence for each preposition of today, with the correct genitive endings (des, der, eines)."
+    },
+    "de": {
+     "t": "Präpositionen mit Genitiv",
+     "g": "Du benutzt formelle Genitiv-Präpositionen: angesichts, innerhalb, außerhalb, anstatt, aufgrund.",
+     "p": [
+      "aufgrund / wegen: Aufgrund des Wetters fällt das Spiel aus. angesichts: angesichts der Lage.",
+      "innerhalb / außerhalb: innerhalb einer Woche, außerhalb der Stadt. Auch Zeit: innerhalb von zwei Tagen.",
+      "anstatt / statt: Statt eines Autos kaufte er ein Fahrrad. Auch: trotz, während, laut (mündlich oft mit Dativ)."
+     ],
+     "q": "Was würdest du heute Abend statt des Fernsehens machen? Antworte mit Statt des Fernsehens...",
+     "c": "Schreib zu jeder Präposition von heute einen Satz mit den richtigen Genitiv-Endungen (des, der, eines)."
+    },
+    "es": {
+     "t": "Preposiciones con genitivo",
+     "g": "Usa preposiciones formales de genitivo: angesichts, innerhalb, außerhalb, anstatt, aufgrund.",
+     "p": [
+      "aufgrund / wegen = debido a: Aufgrund des Wetters fällt das Spiel aus. angesichts = ante: angesichts der Lage.",
+      "innerhalb / außerhalb = dentro de / fuera de: innerhalb einer Woche, außerhalb der Stadt. Tiempo: innerhalb von zwei Tagen.",
+      "anstatt / statt = en lugar de: Statt eines Autos kaufte er ein Fahrrad. También: trotz, während, laut (al hablar, a menudo con dativo)."
+     ],
+     "q": "¿Qué harías esta noche en lugar de ver la tele? Responde con Statt des Fernsehens...",
+     "c": "Escribe una frase con cada preposición de hoy y las terminaciones correctas de genitivo (des, der, eines)."
+    },
+    "fr": {
+     "t": "Prépositions avec génitif",
+     "g": "Utiliser les prépositions soutenues au génitif : angesichts, innerhalb, außerhalb, anstatt, aufgrund.",
+     "p": [
+      "aufgrund / wegen = en raison de : Aufgrund des Wetters fällt das Spiel aus. angesichts = face à : angesichts der Lage.",
+      "innerhalb / außerhalb = à l'intérieur de / en dehors de : innerhalb einer Woche, außerhalb der Stadt. Temps : innerhalb von zwei Tagen.",
+      "anstatt / statt = au lieu de : Statt eines Autos kaufte er ein Fahrrad. Aussi : trotz, während, laut (souvent datif à l'oral)."
+     ],
+     "q": "Que ferais-tu ce soir au lieu de regarder la télé ? Réponds avec Statt des Fernsehens...",
+     "c": "Écris une phrase pour chaque préposition du jour avec les bonnes terminaisons du génitif (des, der, eines)."
+    },
+    "it": {
+     "t": "Preposizioni col genitivo",
+     "g": "Usa le preposizioni formali col genitivo: angesichts, innerhalb, außerhalb, anstatt, aufgrund.",
+     "p": [
+      "aufgrund / wegen = a causa di: Aufgrund des Wetters fällt das Spiel aus. angesichts = di fronte a: angesichts der Lage.",
+      "innerhalb / außerhalb = entro, dentro / fuori: innerhalb einer Woche, außerhalb der Stadt. Tempo: innerhalb von zwei Tagen.",
+      "anstatt / statt = invece di: Statt eines Autos kaufte er ein Fahrrad. Anche: trotz, während, laut (a voce spesso col dativo)."
+     ],
+     "q": "Cosa faresti stasera invece di guardare la TV? Rispondi con Statt des Fernsehens...",
+     "c": "Scrivi una frase per ogni preposizione di oggi con le desinenze giuste del genitivo (des, der, eines)."
+    },
+    "pt": {
+     "t": "Preposições com genitivo",
+     "g": "Usar preposições formais com genitivo: angesichts, innerhalb, außerhalb, anstatt, aufgrund.",
+     "p": [
+      "aufgrund / wegen = devido a: Aufgrund des Wetters fällt das Spiel aus. angesichts = perante: angesichts der Lage.",
+      "innerhalb / außerhalb = dentro de / fora de: innerhalb einer Woche, außerhalb der Stadt. Tempo: innerhalb von zwei Tagen.",
+      "anstatt / statt = em vez de: Statt eines Autos kaufte er ein Fahrrad. Também: trotz, während, laut (na fala muitas vezes com dativo)."
+     ],
+     "q": "O que farias esta noite em vez de ver televisão? Responde com Statt des Fernsehens...",
+     "c": "Escreve uma frase para cada preposição de hoje com as terminações certas do genitivo (des, der, eines)."
+    },
+    "pt_BR": {
+     "t": "Preposições com genitivo",
+     "g": "Usar preposições formais com genitivo: angesichts, innerhalb, außerhalb, anstatt, aufgrund.",
+     "p": [
+      "aufgrund / wegen = devido a: Aufgrund des Wetters fällt das Spiel aus. angesichts = diante de: angesichts der Lage.",
+      "innerhalb / außerhalb = dentro de / fora de: innerhalb einer Woche, außerhalb der Stadt. Tempo: innerhalb von zwei Tagen.",
+      "anstatt / statt = em vez de: Statt eines Autos kaufte er ein Fahrrad. Também: trotz, während, laut (falando, muitas vezes com dativo)."
+     ],
+     "q": "O que você faria hoje à noite em vez de ver TV? Responda com Statt des Fernsehens...",
+     "c": "Escreva uma frase para cada preposição de hoje com as terminações certas do genitivo (des, der, eines)."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "aufgrund",
+      "ex": "Aufgrund des Streiks fahren heute keine Busse."
+     },
+     {
+      "w": "angesichts",
+      "ex": "Angesichts der Kosten verschieben wir das Projekt."
+     },
+     {
+      "w": "innerhalb",
+      "ex": "Bitte antworten Sie innerhalb einer Woche."
+     },
+     {
+      "w": "außerhalb",
+      "ex": "Wir wohnen etwas außerhalb der Stadt."
+     },
+     {
+      "w": "anstatt",
+      "ex": "Anstatt eines Geschenks spenden wir Geld."
+     },
+     {
+      "w": "trotz",
+      "ex": "Trotz des Regens war die Stimmung super."
+     }
+    ],
+    "gram": "Genitiv-Präpositionen: aufgrund, angesichts, innerhalb, außerhalb, (an)statt, trotz, während + des/der/eines (des Wetters)."
+   }
+  },
+  {
+   "d": 295,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Review: advanced grammar",
+     "g": "Recap Konjunktiv I, participles, modals for assumptions and word order in a news-style chat.",
+     "p": [
+      "Konjunktiv I for reports: Sie sagte, sie habe keine Zeit gehabt. Participles: die gestern veröffentlichte Studie, im Park angekommen.",
+      "Modals for guesses: Er muss krank sein. Sie könnte es vergessen haben. Regret: Ich hätte früher fragen sollen.",
+      "Word order: pronouns first, fronting for emphasis, es as a placeholder, je... desto, and genitive prepositions."
+     ],
+     "q": "Report a piece of news you heard recently in Konjunktiv I and add one guess with a modal verb!",
+     "c": "Write a short news report of six sentences using Konjunktiv I, one extended attribute and one je... desto."
+    },
+    "de": {
+     "t": "Wiederholung: fortgeschrittene Grammatik",
+     "g": "Du wiederholst Konjunktiv I, Partizipien, Modalverben und Wortstellung in einem Gespräch im Nachrichtenstil.",
+     "p": [
+      "Konjunktiv I: Sie sagte, sie habe keine Zeit gehabt. Partizipien: die gestern veröffentlichte Studie, im Park angekommen.",
+      "Modalverben für Vermutungen: Er muss krank sein. Sie könnte es vergessen haben. Bedauern: Ich hätte früher fragen sollen.",
+      "Wortstellung: Pronomen zuerst, Vorfeld für Betonung, es als Platzhalter, je... desto und Genitiv-Präpositionen."
+     ],
+     "q": "Gib eine Nachricht, die du neulich gehört hast, im Konjunktiv I wieder und füg eine Vermutung mit Modalverb hinzu!",
+     "c": "Schreib eine kurze Meldung mit sechs Sätzen mit Konjunktiv I, einem erweiterten Attribut und je... desto."
+    },
+    "es": {
+     "t": "Repaso: gramática avanzada",
+     "g": "Repasa Konjunktiv I, participios, modales y orden de palabras en una charla al estilo noticias.",
+     "p": [
+      "Konjunktiv I: Sie sagte, sie habe keine Zeit gehabt. Participios: die gestern veröffentlichte Studie, im Park angekommen.",
+      "Modales para suponer: Er muss krank sein. Sie könnte es vergessen haben. Lamento: Ich hätte früher fragen sollen.",
+      "Orden: pronombres primero, anteposición para enfatizar, es como comodín, je... desto y preposiciones de genitivo."
+     ],
+     "q": "Cuéntame una noticia que oíste hace poco en Konjunktiv I y añade una suposición con un modal.",
+     "c": "Escribe una noticia breve de seis frases con Konjunktiv I, un atributo extendido y un je... desto."
+    },
+    "fr": {
+     "t": "Révision : grammaire avancée",
+     "g": "Réviser Konjunktiv I, participes, modaux et ordre des mots dans une discussion façon actualité.",
+     "p": [
+      "Konjunktiv I : Sie sagte, sie habe keine Zeit gehabt. Participes : die gestern veröffentlichte Studie, im Park angekommen.",
+      "Modaux de supposition : Er muss krank sein. Sie könnte es vergessen haben. Regret : Ich hätte früher fragen sollen.",
+      "Ordre : pronoms d'abord, mise en tête, es explétif, je... desto et prépositions au génitif."
+     ],
+     "q": "Rapporte une info entendue récemment au Konjunktiv I et ajoute une supposition avec un modal !",
+     "c": "Écris une brève de six phrases avec Konjunktiv I, un groupe participial étendu et un je... desto."
+    },
+    "it": {
+     "t": "Ripasso: grammatica avanzata",
+     "g": "Ripassa Konjunktiv I, participi, modali e ordine delle parole in una chiacchierata in stile notiziario.",
+     "p": [
+      "Konjunktiv I: Sie sagte, sie habe keine Zeit gehabt. Participi: die gestern veröffentlichte Studie, im Park angekommen.",
+      "Modali per ipotesi: Er muss krank sein. Sie könnte es vergessen haben. Rimpianto: Ich hätte früher fragen sollen.",
+      "Ordine: prima i pronomi, anteposizione per enfasi, es segnaposto, je... desto e preposizioni col genitivo."
+     ],
+     "q": "Riferisci una notizia sentita di recente al Konjunktiv I e aggiungi un'ipotesi con un modale!",
+     "c": "Scrivi una breve notizia di sei frasi con Konjunktiv I, un attributo esteso e un je... desto."
+    },
+    "pt": {
+     "t": "Revisão: gramática avançada",
+     "g": "Rever Konjunktiv I, particípios, modais e ordem das palavras numa conversa ao estilo noticiário.",
+     "p": [
+      "Konjunktiv I: Sie sagte, sie habe keine Zeit gehabt. Particípios: die gestern veröffentlichte Studie, im Park angekommen.",
+      "Modais para supor: Er muss krank sein. Sie könnte es vergessen haben. Arrependimento: Ich hätte früher fragen sollen.",
+      "Ordem: pronomes primeiro, anteposição para ênfase, es como marcador, je... desto e preposições com genitivo."
+     ],
+     "q": "Relata uma notícia que ouviste há pouco em Konjunktiv I e junta uma suposição com um modal!",
+     "c": "Escreve uma notícia curta de seis frases com Konjunktiv I, um atributo alargado e um je... desto."
+    },
+    "pt_BR": {
+     "t": "Revisão: gramática avançada",
+     "g": "Revisar Konjunktiv I, particípios, modais e ordem das palavras num papo em estilo de noticiário.",
+     "p": [
+      "Konjunktiv I: Sie sagte, sie habe keine Zeit gehabt. Particípios: die gestern veröffentlichte Studie, im Park angekommen.",
+      "Modais para supor: Er muss krank sein. Sie könnte es vergessen haben. Arrependimento: Ich hätte früher fragen sollen.",
+      "Ordem: pronomes primeiro, anteposição para ênfase, es como marcador, je... desto e preposições com genitivo."
+     ],
+     "q": "Relate uma notícia que você ouviu recentemente em Konjunktiv I e acrescente uma suposição com um modal!",
+     "c": "Escreva uma notícia curta de seis frases com Konjunktiv I, um atributo estendido e um je... desto."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Sie sagte, sie habe ...",
+      "ex": "Sie sagte, sie habe den Brief nie bekommen."
+     },
+     {
+      "w": "die veröffentlichte Studie",
+      "ex": "Die kürzlich veröffentlichte Studie zeigt Erstaunliches."
+     },
+     {
+      "w": "Er muss ... haben.",
+      "ex": "Er muss den Termin vergessen haben."
+     },
+     {
+      "w": "je mehr ... desto",
+      "ex": "Je mehr Leute mitmachen, desto besser."
+     },
+     {
+      "w": "Es ist bekannt, dass ...",
+      "ex": "Es ist bekannt, dass Bewegung gesund ist."
+     },
+     {
+      "w": "aufgrund",
+      "ex": "Aufgrund der großen Nachfrage gibt es ein Zusatzkonzert."
+     }
+    ],
+    "gram": "B2-Mix: Konjunktiv I (habe, sei), Partizipialattribut, muss/könnte + Infinitiv Perfekt, Vorfeld-es, Genitiv-Präpositionen."
+   }
+  },
+  {
+   "d": 296,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Formal register",
+     "g": "Recognise and use elevated German: vocabulary and structures of gehobene Sprache.",
+     "p": [
+      "Formal synonyms: bekommen → erhalten, anfangen → beginnen, zeigen → darlegen, helfen → unterstützen, sagen → äußern.",
+      "Typical structures: nominal style (die Durchführung des Projekts), passive, Genitiv, Konjunktiv I and Präteritum.",
+      "Polite distance: Ich erlaube mir, ... / Hiermit teile ich Ihnen mit, dass... Use it in letters, speeches and reports."
+     ],
+     "q": "Rephrase in formal German: Ich hab deine Mail gekriegt und fange morgen an. How would you say it to a director?",
+     "c": "Rewrite a casual paragraph of four sentences in formal register, using at least four formal synonyms."
+    },
+    "de": {
+     "t": "Gehobene Sprache",
+     "g": "Du erkennst und benutzt gehobenes Deutsch: Wortschatz und Strukturen der gehobenen Sprache.",
+     "p": [
+      "Gehobene Synonyme: bekommen → erhalten, anfangen → beginnen, zeigen → darlegen, helfen → unterstützen, sagen → äußern.",
+      "Typische Strukturen: Nominalstil (die Durchführung des Projekts), Passiv, Genitiv, Konjunktiv I und Präteritum.",
+      "Höfliche Distanz: Ich erlaube mir, ... / Hiermit teile ich Ihnen mit, dass... Für Briefe, Reden und Berichte."
+     ],
+     "q": "Formulier gehoben: Ich hab deine Mail gekriegt und fange morgen an. Wie sagst du das einer Direktorin?",
+     "c": "Schreib einen lockeren Absatz von vier Sätzen gehoben um, mit mindestens vier gehobenen Synonymen."
+    },
+    "es": {
+     "t": "Registro formal",
+     "g": "Reconoce y usa el alemán culto: vocabulario y estructuras de la gehobene Sprache.",
+     "p": [
+      "Sinónimos formales: bekommen → erhalten, anfangen → beginnen, zeigen → darlegen, helfen → unterstützen, sagen → äußern.",
+      "Estructuras típicas: estilo nominal (die Durchführung des Projekts), pasiva, genitivo, Konjunktiv I y Präteritum.",
+      "Distancia cortés: Ich erlaube mir, ... / Hiermit teile ich Ihnen mit, dass... Para cartas, discursos e informes."
+     ],
+     "q": "Reformula en alemán formal: Ich hab deine Mail gekriegt und fange morgen an. ¿Cómo se lo dirías a una directora?",
+     "c": "Reescribe un párrafo informal de cuatro frases en registro formal, con al menos cuatro sinónimos formales."
+    },
+    "fr": {
+     "t": "Le registre soutenu",
+     "g": "Reconnaître et utiliser l'allemand soutenu : vocabulaire et structures de la gehobene Sprache.",
+     "p": [
+      "Synonymes soutenus : bekommen → erhalten, anfangen → beginnen, zeigen → darlegen, helfen → unterstützen, sagen → äußern.",
+      "Structures typiques : style nominal (die Durchführung des Projekts), passif, génitif, Konjunktiv I et Präteritum.",
+      "Distance polie : Ich erlaube mir, ... / Hiermit teile ich Ihnen mit, dass... Pour lettres, discours et rapports."
+     ],
+     "q": "Reformule en allemand soutenu : Ich hab deine Mail gekriegt und fange morgen an. Comment le dirais-tu à une directrice ?",
+     "c": "Réécris un paragraphe familier de quatre phrases en registre soutenu, avec au moins quatre synonymes soutenus."
+    },
+    "it": {
+     "t": "Registro formale",
+     "g": "Riconosci e usa il tedesco formale: lessico e strutture della gehobene Sprache.",
+     "p": [
+      "Sinonimi formali: bekommen → erhalten, anfangen → beginnen, zeigen → darlegen, helfen → unterstützen, sagen → äußern.",
+      "Strutture tipiche: stile nominale (die Durchführung des Projekts), passivo, genitivo, Konjunktiv I e Präteritum.",
+      "Distanza cortese: Ich erlaube mir, ... / Hiermit teile ich Ihnen mit, dass... Per lettere, discorsi e relazioni."
+     ],
+     "q": "Riformula in tedesco formale: Ich hab deine Mail gekriegt und fange morgen an. Come lo diresti a una direttrice?",
+     "c": "Riscrivi un paragrafo informale di quattro frasi in registro formale, con almeno quattro sinonimi formali."
+    },
+    "pt": {
+     "t": "Registo formal",
+     "g": "Reconhecer e usar o alemão cuidado: vocabulário e estruturas da gehobene Sprache.",
+     "p": [
+      "Sinónimos formais: bekommen → erhalten, anfangen → beginnen, zeigen → darlegen, helfen → unterstützen, sagen → äußern.",
+      "Estruturas típicas: estilo nominal (die Durchführung des Projekts), passiva, genitivo, Konjunktiv I e Präteritum.",
+      "Distância cortês: Ich erlaube mir, ... / Hiermit teile ich Ihnen mit, dass... Para cartas, discursos e relatórios."
+     ],
+     "q": "Reformula em alemão formal: Ich hab deine Mail gekriegt und fange morgen an. Como o dirias a uma diretora?",
+     "c": "Reescreve um parágrafo informal de quatro frases em registo formal, com pelo menos quatro sinónimos formais."
+    },
+    "pt_BR": {
+     "t": "Registro formal",
+     "g": "Reconhecer e usar o alemão culto: vocabulário e estruturas da gehobene Sprache.",
+     "p": [
+      "Sinônimos formais: bekommen → erhalten, anfangen → beginnen, zeigen → darlegen, helfen → unterstützen, sagen → äußern.",
+      "Estruturas típicas: estilo nominal (die Durchführung des Projekts), passiva, genitivo, Konjunktiv I e Präteritum.",
+      "Distância cortês: Ich erlaube mir, ... / Hiermit teile ich Ihnen mit, dass... Para cartas, discursos e relatórios."
+     ],
+     "q": "Reformule em alemão formal: Ich hab deine Mail gekriegt und fange morgen an. Como você diria isso a uma diretora?",
+     "c": "Reescreva um parágrafo informal de quatro frases em registro formal, com pelo menos quatro sinônimos formais."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "erhalten",
+      "ex": "Wir haben Ihre Bewerbung erhalten."
+     },
+     {
+      "w": "darlegen",
+      "ex": "Im Folgenden lege ich meine Gründe dar."
+     },
+     {
+      "w": "unterstützen",
+      "ex": "Wir unterstützen Sie gern bei der Planung."
+     },
+     {
+      "w": "sich äußern",
+      "ex": "Die Direktorin äußerte sich positiv über das Projekt."
+     },
+     {
+      "w": "hiermit",
+      "ex": "Hiermit bestätige ich den Termin."
+     },
+     {
+      "w": "die Durchführung",
+      "ex": "Die Durchführung des Projekts dauert ein Jahr."
+     }
+    ],
+    "gram": "Gehobener Stil: Nominalisierung + Genitiv (die Durchführung des Projekts), Passiv, Präteritum, Funktionsverbgefüge."
+   }
+  },
+  {
+   "d": 297,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Nuancing your opinion",
+     "g": "Express shades of opinion: Mir scheint, gewissermaßen, im Grunde, eher.",
+     "p": [
+      "Softening: Mir scheint, dass... (it seems to me), Ich habe den Eindruck, dass... These sound thoughtful, not absolute.",
+      "Degree: eher (rather), ziemlich, gewissermaßen (to a certain extent), in gewisser Hinsicht, im Grunde (basically).",
+      "Balance: Einerseits stimme ich zu, andererseits... / Das ist nicht ganz falsch, aber... B2 speakers avoid black and white."
+     ],
+     "q": "Is social media good or bad? Give me a nuanced answer with eher, gewissermaßen and im Grunde!",
+     "c": "Take a strong opinion (Alle sollten vegetarisch essen) and rewrite it three times with more nuance."
+    },
+    "de": {
+     "t": "Die eigene Meinung nuancieren",
+     "g": "Du drückst Meinungen differenziert aus: Mir scheint, gewissermaßen, im Grunde, eher.",
+     "p": [
+      "Abschwächen: Mir scheint, dass... / Ich habe den Eindruck, dass... Das klingt überlegt, nicht absolut.",
+      "Grad: eher, ziemlich, gewissermaßen, in gewisser Hinsicht, im Grunde.",
+      "Abwägen: Einerseits stimme ich zu, andererseits... / Das ist nicht ganz falsch, aber... Auf B2 vermeidet man Schwarz-Weiß."
+     ],
+     "q": "Sind soziale Medien gut oder schlecht? Gib mir eine differenzierte Antwort mit eher, gewissermaßen und im Grunde!",
+     "c": "Nimm eine starke Meinung (Alle sollten vegetarisch essen) und formuliere sie dreimal differenzierter."
+    },
+    "es": {
+     "t": "Matizar tu opinión",
+     "g": "Expresa matices de opinión: Mir scheint, gewissermaßen, im Grunde, eher.",
+     "p": [
+      "Suavizar: Mir scheint, dass... (me parece que), Ich habe den Eindruck, dass... Suenan reflexivos, no absolutos.",
+      "Grado: eher (más bien), ziemlich, gewissermaßen (en cierto modo), in gewisser Hinsicht, im Grunde (en el fondo).",
+      "Equilibrio: Einerseits stimme ich zu, andererseits... / Das ist nicht ganz falsch, aber... En B2 se evita el blanco y negro."
+     ],
+     "q": "¿Las redes sociales son buenas o malas? ¡Dame una respuesta matizada con eher, gewissermaßen e im Grunde!",
+     "c": "Toma una opinión tajante (Alle sollten vegetarisch essen) y reescríbela tres veces con más matices."
+    },
+    "fr": {
+     "t": "Nuancer son opinion",
+     "g": "Exprimer des nuances : Mir scheint, gewissermaßen, im Grunde, eher.",
+     "p": [
+      "Atténuer : Mir scheint, dass... (il me semble que), Ich habe den Eindruck, dass... Cela sonne réfléchi, pas catégorique.",
+      "Degré : eher (plutôt), ziemlich, gewissermaßen (dans une certaine mesure), in gewisser Hinsicht, im Grunde (au fond).",
+      "Équilibre : Einerseits stimme ich zu, andererseits... / Das ist nicht ganz falsch, aber... Au niveau B2, on évite le tout noir ou blanc."
+     ],
+     "q": "Les réseaux sociaux, bons ou mauvais ? Donne une réponse nuancée avec eher, gewissermaßen et im Grunde !",
+     "c": "Prends une opinion tranchée (Alle sollten vegetarisch essen) et réécris-la trois fois avec plus de nuance."
+    },
+    "it": {
+     "t": "Sfumare la propria opinione",
+     "g": "Esprimi sfumature d'opinione: Mir scheint, gewissermaßen, im Grunde, eher.",
+     "p": [
+      "Attenuare: Mir scheint, dass... (mi sembra che), Ich habe den Eindruck, dass... Suonano riflessivi, non assoluti.",
+      "Grado: eher (piuttosto), ziemlich, gewissermaßen (in un certo senso), in gewisser Hinsicht, im Grunde (in fondo).",
+      "Equilibrio: Einerseits stimme ich zu, andererseits... / Das ist nicht ganz falsch, aber... A livello B2 si evita il bianco o nero."
+     ],
+     "q": "I social sono buoni o cattivi? Dammi una risposta sfumata con eher, gewissermaßen e im Grunde!",
+     "c": "Prendi un'opinione netta (Alle sollten vegetarisch essen) e riscrivila tre volte con più sfumature."
+    },
+    "pt": {
+     "t": "Matizar a tua opinião",
+     "g": "Exprimir nuances de opinião: Mir scheint, gewissermaßen, im Grunde, eher.",
+     "p": [
+      "Suavizar: Mir scheint, dass... (parece-me que), Ich habe den Eindruck, dass... Soam ponderados, não absolutos.",
+      "Grau: eher (antes), ziemlich, gewissermaßen (de certa forma), in gewisser Hinsicht, im Grunde (no fundo).",
+      "Equilíbrio: Einerseits stimme ich zu, andererseits... / Das ist nicht ganz falsch, aber... No B2 evita-se o preto e branco."
+     ],
+     "q": "As redes sociais são boas ou más? Dá-me uma resposta matizada com eher, gewissermaßen e im Grunde!",
+     "c": "Pega numa opinião radical (Alle sollten vegetarisch essen) e reescreve-a três vezes com mais nuance."
+    },
+    "pt_BR": {
+     "t": "Matizar sua opinião",
+     "g": "Expressar nuances de opinião: Mir scheint, gewissermaßen, im Grunde, eher.",
+     "p": [
+      "Suavizar: Mir scheint, dass... (me parece que), Ich habe den Eindruck, dass... Soam ponderados, não absolutos.",
+      "Grau: eher (mais para), ziemlich, gewissermaßen (de certa forma), in gewisser Hinsicht, im Grunde (no fundo).",
+      "Equilíbrio: Einerseits stimme ich zu, andererseits... / Das ist nicht ganz falsch, aber... No B2 se evita o preto e branco."
+     ],
+     "q": "Redes sociais são boas ou ruins? Me dê uma resposta matizada com eher, gewissermaßen e im Grunde!",
+     "c": "Pegue uma opinião radical (Alle sollten vegetarisch essen) e reescreva três vezes com mais nuance."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Mir scheint, dass ...",
+      "ex": "Mir scheint, dass viele Menschen gestresst sind."
+     },
+     {
+      "w": "Ich habe den Eindruck, dass ...",
+      "ex": "Ich habe den Eindruck, dass das Thema wichtiger wird."
+     },
+     {
+      "w": "eher",
+      "ex": "Ich bin eher skeptisch."
+     },
+     {
+      "w": "gewissermaßen",
+      "ex": "Das ist gewissermaßen ein Kompromiss."
+     },
+     {
+      "w": "im Grunde",
+      "ex": "Im Grunde haben wir dasselbe Ziel."
+     },
+     {
+      "w": "in gewisser Hinsicht",
+      "ex": "In gewisser Hinsicht hast du recht."
+     }
+    ],
+    "gram": "Abschwächung: Mir scheint (Dativ!), eher/ziemlich + Adjektiv; Einschränkung: in gewisser Hinsicht, im Grunde + Verb auf Position 2."
+   }
+  },
+  {
+   "d": 298,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Hedging and politeness",
+     "g": "Make requests and questions extra polite: Ich wollte fragen, ob...; wären Sie so freundlich.",
+     "p": [
+      "Past tense as politeness: Ich wollte fragen, ob Sie Zeit haben. Ich wollte nur kurz sagen, dass... It sounds less direct.",
+      "Konjunktiv II for maximum courtesy: Wären Sie so freundlich, mir zu helfen? Hätten Sie einen Moment Zeit? Dürfte ich...?",
+      "Hedges: vielleicht, eventuell, eigentlich, ein bisschen: Könnten Sie das eventuell bis Freitag schicken?"
+     ],
+     "q": "You need a colleague to cover your shift. Ask them as politely as possible in German!",
+     "c": "Write three very polite requests to a neighbour, a teacher and a stranger, each with a different structure."
+    },
+    "de": {
+     "t": "Abschwächen und Höflichkeit",
+     "g": "Du formulierst Bitten und Fragen besonders höflich: Ich wollte fragen, ob...; wären Sie so freundlich.",
+     "p": [
+      "Vergangenheit als Höflichkeit: Ich wollte fragen, ob Sie Zeit haben. Ich wollte nur kurz sagen, dass... Das klingt weniger direkt.",
+      "Konjunktiv II für maximale Höflichkeit: Wären Sie so freundlich, mir zu helfen? Hätten Sie einen Moment Zeit? Dürfte ich...?",
+      "Weichmacher: vielleicht, eventuell, eigentlich, ein bisschen: Könnten Sie das eventuell bis Freitag schicken?"
+     ],
+     "q": "Ein Kollege soll deine Schicht übernehmen. Frag ihn so höflich wie möglich!",
+     "c": "Schreib drei sehr höfliche Bitten an eine Nachbarin, einen Lehrer und eine fremde Person, jede mit einer anderen Struktur."
+    },
+    "es": {
+     "t": "Atenuación y cortesía",
+     "g": "Haz peticiones y preguntas muy corteses: Ich wollte fragen, ob... (quería preguntar si...); wären Sie so freundlich.",
+     "p": [
+      "El pasado como cortesía: Ich wollte fragen, ob Sie Zeit haben. Ich wollte nur kurz sagen, dass... Suena menos directo.",
+      "Konjunktiv II para la máxima cortesía: Wären Sie so freundlich, mir zu helfen? Hätten Sie einen Moment Zeit? Dürfte ich...?",
+      "Atenuadores: vielleicht, eventuell, eigentlich, ein bisschen: Könnten Sie das eventuell bis Freitag schicken?"
+     ],
+     "q": "Necesitas que un compañero te cubra el turno. ¡Pídeselo en alemán con la máxima cortesía!",
+     "c": "Escribe tres peticiones muy corteses a una vecina, un profesor y un desconocido, cada una con una estructura distinta."
+    },
+    "fr": {
+     "t": "Atténuation et politesse",
+     "g": "Formuler demandes et questions très poliment : Ich wollte fragen, ob... (je voulais demander si...) ; wären Sie so freundlich.",
+     "p": [
+      "Le passé de politesse : Ich wollte fragen, ob Sie Zeit haben. Ich wollte nur kurz sagen, dass... C'est moins direct.",
+      "Konjunktiv II pour un maximum de courtoisie : Wären Sie so freundlich, mir zu helfen ? Hätten Sie einen Moment Zeit ? Dürfte ich... ?",
+      "Atténuateurs : vielleicht, eventuell, eigentlich, ein bisschen : Könnten Sie das eventuell bis Freitag schicken ?"
+     ],
+     "q": "Tu as besoin qu'un collègue te remplace. Demande-le-lui en allemand le plus poliment possible !",
+     "c": "Écris trois demandes très polies à une voisine, un professeur et un inconnu, chacune avec une structure différente."
+    },
+    "it": {
+     "t": "Attenuazione e cortesia",
+     "g": "Fai richieste e domande molto cortesi: Ich wollte fragen, ob... (volevo chiedere se...); wären Sie so freundlich.",
+     "p": [
+      "Il passato di cortesia: Ich wollte fragen, ob Sie Zeit haben. Ich wollte nur kurz sagen, dass... Suona meno diretto.",
+      "Konjunktiv II per la massima cortesia: Wären Sie so freundlich, mir zu helfen? Hätten Sie einen Moment Zeit? Dürfte ich...?",
+      "Attenuatori: vielleicht, eventuell, eigentlich, ein bisschen: Könnten Sie das eventuell bis Freitag schicken?"
+     ],
+     "q": "Ti serve che un collega ti copra il turno. Chiediglielo in tedesco con la massima cortesia!",
+     "c": "Scrivi tre richieste molto cortesi a una vicina, un insegnante e uno sconosciuto, ognuna con una struttura diversa."
+    },
+    "pt": {
+     "t": "Atenuação e cortesia",
+     "g": "Fazer pedidos e perguntas muito educados: Ich wollte fragen, ob... (queria perguntar se...); wären Sie so freundlich.",
+     "p": [
+      "O passado como cortesia: Ich wollte fragen, ob Sie Zeit haben. Ich wollte nur kurz sagen, dass... Soa menos direto.",
+      "Konjunktiv II para máxima cortesia: Wären Sie so freundlich, mir zu helfen? Hätten Sie einen Moment Zeit? Dürfte ich...?",
+      "Atenuadores: vielleicht, eventuell, eigentlich, ein bisschen: Könnten Sie das eventuell bis Freitag schicken?"
+     ],
+     "q": "Precisas que um colega te substitua no turno. Pede-lhe em alemão com a máxima cortesia!",
+     "c": "Escreve três pedidos muito educados a uma vizinha, um professor e um desconhecido, cada um com uma estrutura diferente."
+    },
+    "pt_BR": {
+     "t": "Atenuação e cortesia",
+     "g": "Fazer pedidos e perguntas bem educados: Ich wollte fragen, ob... (queria perguntar se...); wären Sie so freundlich.",
+     "p": [
+      "O passado como cortesia: Ich wollte fragen, ob Sie Zeit haben. Ich wollte nur kurz sagen, dass... Soa menos direto.",
+      "Konjunktiv II para máxima cortesia: Wären Sie so freundlich, mir zu helfen? Hätten Sie einen Moment Zeit? Dürfte ich...?",
+      "Atenuadores: vielleicht, eventuell, eigentlich, ein bisschen: Könnten Sie das eventuell bis Freitag schicken?"
+     ],
+     "q": "Você precisa que um colega cubra seu turno. Peça em alemão com a máxima cortesia!",
+     "c": "Escreva três pedidos bem educados para uma vizinha, um professor e um desconhecido, cada um com uma estrutura diferente."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Ich wollte fragen, ob ...",
+      "ex": "Ich wollte fragen, ob Sie morgen Zeit haben."
+     },
+     {
+      "w": "Wären Sie so freundlich, ...",
+      "ex": "Wären Sie so freundlich, mir die Tür aufzuhalten?"
+     },
+     {
+      "w": "Hätten Sie einen Moment Zeit?",
+      "ex": "Entschuldigung, hätten Sie einen Moment Zeit?"
+     },
+     {
+      "w": "Dürfte ich ...?",
+      "ex": "Dürfte ich kurz Ihr Telefon benutzen?"
+     },
+     {
+      "w": "eventuell",
+      "ex": "Könnten Sie mich eventuell zurückrufen?"
+     },
+     {
+      "w": "Es wäre sehr nett, wenn ...",
+      "ex": "Es wäre sehr nett, wenn du mir kurz hilfst."
+     }
+    ],
+    "gram": "Höflichkeit: Präteritum (Ich wollte fragen, ob...), Konjunktiv II (Wären Sie so freundlich, ... zu + Infinitiv?), Abtönung eventuell."
+   }
+  },
+  {
+   "d": 299,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Persuasion techniques",
+     "g": "Convince others: rhetorical questions, examples and appeals to shared values.",
+     "p": [
+      "Rhetorical questions: Wer möchte nicht in einer sauberen Stadt leben? Ist es nicht seltsam, dass...? They pull listeners in.",
+      "Examples and facts: Nehmen wir zum Beispiel... / Stellen Sie sich vor... Concrete pictures convince more than abstract claims.",
+      "Shared values: Uns allen ist wichtig, dass... / Wir alle wollen... End with a call: Lassen Sie uns gemeinsam...!"
+     ],
+     "q": "Convince me to try your favourite hobby, using a rhetorical question, an example and Lassen Sie uns...!",
+     "c": "Write a short persuasive speech of six sentences for a car-free Sunday in your town."
+    },
+    "de": {
+     "t": "Überzeugungstechniken",
+     "g": "Du überzeugst andere: rhetorische Fragen, Beispiele und gemeinsame Werte.",
+     "p": [
+      "Rhetorische Fragen: Wer möchte nicht in einer sauberen Stadt leben? Ist es nicht seltsam, dass...? Sie ziehen Zuhörer hinein.",
+      "Beispiele und Fakten: Nehmen wir zum Beispiel... / Stellen Sie sich vor... Konkrete Bilder überzeugen mehr als abstrakte Thesen.",
+      "Gemeinsame Werte: Uns allen ist wichtig, dass... / Wir alle wollen... Schluss mit Appell: Lassen Sie uns gemeinsam...!"
+     ],
+     "q": "Überzeug mich, dein Lieblingshobby auszuprobieren, mit rhetorischer Frage, Beispiel und Lassen Sie uns...!",
+     "c": "Schreib eine kurze Überzeugungsrede mit sechs Sätzen für einen autofreien Sonntag in deiner Stadt."
+    },
+    "es": {
+     "t": "Técnicas de persuasión",
+     "g": "Convence a otros: preguntas retóricas, ejemplos y valores compartidos.",
+     "p": [
+      "Preguntas retóricas: Wer möchte nicht in einer sauberen Stadt leben? Ist es nicht seltsam, dass...? Atraen al público.",
+      "Ejemplos y datos: Nehmen wir zum Beispiel... / Stellen Sie sich vor... Las imágenes concretas convencen más que lo abstracto.",
+      "Valores compartidos: Uns allen ist wichtig, dass... / Wir alle wollen... Cierra con un llamado: Lassen Sie uns gemeinsam...!"
+     ],
+     "q": "Convénceme de probar tu afición favorita, con una pregunta retórica, un ejemplo y Lassen Sie uns...",
+     "c": "Escribe un breve discurso persuasivo de seis frases a favor de un domingo sin coches en tu ciudad."
+    },
+    "fr": {
+     "t": "Techniques de persuasion",
+     "g": "Convaincre : questions rhétoriques, exemples et appel aux valeurs communes.",
+     "p": [
+      "Questions rhétoriques : Wer möchte nicht in einer sauberen Stadt leben ? Ist es nicht seltsam, dass... ? Elles captent l'auditoire.",
+      "Exemples et faits : Nehmen wir zum Beispiel... / Stellen Sie sich vor... Le concret convainc plus que l'abstrait.",
+      "Valeurs communes : Uns allen ist wichtig, dass... / Wir alle wollen... Termine par un appel : Lassen Sie uns gemeinsam... !"
+     ],
+     "q": "Convaincs-moi d'essayer ton loisir préféré avec une question rhétorique, un exemple et Lassen Sie uns... !",
+     "c": "Écris un court discours persuasif de six phrases pour un dimanche sans voitures dans ta ville."
+    },
+    "it": {
+     "t": "Tecniche di persuasione",
+     "g": "Convinci gli altri: domande retoriche, esempi e valori condivisi.",
+     "p": [
+      "Domande retoriche: Wer möchte nicht in einer sauberen Stadt leben? Ist es nicht seltsam, dass...? Coinvolgono chi ascolta.",
+      "Esempi e fatti: Nehmen wir zum Beispiel... / Stellen Sie sich vor... Le immagini concrete convincono più delle tesi astratte.",
+      "Valori condivisi: Uns allen ist wichtig, dass... / Wir alle wollen... Chiudi con un appello: Lassen Sie uns gemeinsam...!"
+     ],
+     "q": "Convincimi a provare il tuo hobby preferito, con una domanda retorica, un esempio e Lassen Sie uns...!",
+     "c": "Scrivi un breve discorso persuasivo di sei frasi per una domenica senz'auto nella tua città."
+    },
+    "pt": {
+     "t": "Técnicas de persuasão",
+     "g": "Convencer os outros: perguntas retóricas, exemplos e valores partilhados.",
+     "p": [
+      "Perguntas retóricas: Wer möchte nicht in einer sauberen Stadt leben? Ist es nicht seltsam, dass...? Envolvem o público.",
+      "Exemplos e factos: Nehmen wir zum Beispiel... / Stellen Sie sich vor... Imagens concretas convencem mais do que teses abstratas.",
+      "Valores partilhados: Uns allen ist wichtig, dass... / Wir alle wollen... Termina com um apelo: Lassen Sie uns gemeinsam...!"
+     ],
+     "q": "Convence-me a experimentar o teu passatempo preferido, com pergunta retórica, exemplo e Lassen Sie uns...!",
+     "c": "Escreve um discurso persuasivo curto de seis frases a favor de um domingo sem carros na tua cidade."
+    },
+    "pt_BR": {
+     "t": "Técnicas de persuasão",
+     "g": "Convencer os outros: perguntas retóricas, exemplos e valores compartilhados.",
+     "p": [
+      "Perguntas retóricas: Wer möchte nicht in einer sauberen Stadt leben? Ist es nicht seltsam, dass...? Envolvem o público.",
+      "Exemplos e fatos: Nehmen wir zum Beispiel... / Stellen Sie sich vor... Imagens concretas convencem mais do que teses abstratas.",
+      "Valores compartilhados: Uns allen ist wichtig, dass... / Wir alle wollen... Termine com um apelo: Lassen Sie uns gemeinsam...!"
+     ],
+     "q": "Me convença a experimentar seu hobby favorito, com pergunta retórica, exemplo e Lassen Sie uns...!",
+     "c": "Escreva um discurso persuasivo curto de seis frases a favor de um domingo sem carros na sua cidade."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Wer möchte nicht ...?",
+      "ex": "Wer möchte nicht mehr Zeit für die Familie haben?"
+     },
+     {
+      "w": "Nehmen wir zum Beispiel ...",
+      "ex": "Nehmen wir zum Beispiel Kopenhagen: Dort fahren fast alle Rad."
+     },
+     {
+      "w": "Stellen Sie sich vor, ...",
+      "ex": "Stellen Sie sich vor, die Straßen wären voller Kinder statt Autos."
+     },
+     {
+      "w": "Uns allen ist wichtig, dass ...",
+      "ex": "Uns allen ist wichtig, dass unsere Kinder sicher sind."
+     },
+     {
+      "w": "Lassen Sie uns gemeinsam ...",
+      "ex": "Lassen Sie uns gemeinsam etwas verändern!"
+     },
+     {
+      "w": "überzeugen",
+      "ex": "Mit guten Beispielen kann man viele überzeugen."
+     }
+    ],
+    "gram": "Appell: Lassen Sie uns + Infinitiv; rhetorische Frage mit nicht (Ist es nicht...?); Stellen Sie sich vor + Konjunktiv II."
+   }
+  },
+  {
+   "d": 300,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Writing an essay: introduction",
+     "g": "Open an essay well: a hook, the central question and an outline.",
+     "p": [
+      "Hook: a surprising fact, a question or a quote: Immer mehr Menschen arbeiten von zu Hause aus. Doch ist das wirklich ein Fortschritt?",
+      "Central question: Im Folgenden soll die Frage erörtert werden, ob... / Dieser Text beschäftigt sich mit der Frage, ...",
+      "Outline: Zunächst werde ich..., anschließend..., abschließend... It tells the reader the path of your argument."
+     ],
+     "q": "Topic: Sollte das Studium kostenlos sein? Give me a hook sentence and your central question!",
+     "c": "Write a complete essay introduction of 60 to 80 words on a topic you choose: hook, question and outline."
+    },
+    "de": {
+     "t": "Einen Aufsatz schreiben: die Einleitung",
+     "g": "Du beginnst einen Aufsatz gut: Aufhänger, zentrale Frage und Gliederung.",
+     "p": [
+      "Aufhänger: eine überraschende Tatsache, Frage oder ein Zitat: Immer mehr Menschen arbeiten von zu Hause aus. Doch ist das ein Fortschritt?",
+      "Zentrale Frage: Im Folgenden soll die Frage erörtert werden, ob... / Dieser Text beschäftigt sich mit der Frage, ...",
+      "Gliederung: Zunächst werde ich..., anschließend..., abschließend... So kennt der Leser deinen Weg."
+     ],
+     "q": "Thema: Sollte das Studium kostenlos sein? Gib mir einen Aufhänger und deine zentrale Frage!",
+     "c": "Schreib eine vollständige Einleitung von 60 bis 80 Wörtern zu einem Thema deiner Wahl: Aufhänger, Frage, Gliederung."
+    },
+    "es": {
+     "t": "Escribir un ensayo: la introducción",
+     "g": "Empieza bien un ensayo: un gancho, la pregunta central y un esquema.",
+     "p": [
+      "Gancho: un dato sorprendente, una pregunta o una cita: Immer mehr Menschen arbeiten von zu Hause aus. Doch ist das ein Fortschritt?",
+      "Pregunta central: Im Folgenden soll die Frage erörtert werden, ob... / Dieser Text beschäftigt sich mit der Frage, ...",
+      "Esquema: Zunächst werde ich..., anschließend..., abschließend... Así el lector conoce el camino de tu argumento."
+     ],
+     "q": "Tema: Sollte das Studium kostenlos sein? ¡Dame una frase gancho y tu pregunta central!",
+     "c": "Escribe una introducción completa de 60 a 80 palabras sobre un tema que elijas: gancho, pregunta y esquema."
+    },
+    "fr": {
+     "t": "Écrire une dissertation : l'introduction",
+     "g": "Bien commencer une dissertation : une accroche, la problématique et l'annonce du plan.",
+     "p": [
+      "Accroche : un fait surprenant, une question ou une citation : Immer mehr Menschen arbeiten von zu Hause aus. Doch ist das ein Fortschritt ?",
+      "Problématique : Im Folgenden soll die Frage erörtert werden, ob... / Dieser Text beschäftigt sich mit der Frage, ...",
+      "Annonce du plan : Zunächst werde ich..., anschließend..., abschließend... Le lecteur connaît ainsi ton chemin."
+     ],
+     "q": "Sujet : Sollte das Studium kostenlos sein ? Donne-moi une phrase d'accroche et ta problématique !",
+     "c": "Écris une introduction complète de 60 à 80 mots sur un sujet de ton choix : accroche, problématique, plan."
+    },
+    "it": {
+     "t": "Scrivere un saggio: l'introduzione",
+     "g": "Inizia bene un saggio: un aggancio, la domanda centrale e una scaletta.",
+     "p": [
+      "Aggancio: un fatto sorprendente, una domanda o una citazione: Immer mehr Menschen arbeiten von zu Hause aus. Doch ist das ein Fortschritt?",
+      "Domanda centrale: Im Folgenden soll die Frage erörtert werden, ob... / Dieser Text beschäftigt sich mit der Frage, ...",
+      "Scaletta: Zunächst werde ich..., anschließend..., abschließend... Così il lettore conosce il percorso."
+     ],
+     "q": "Tema: Sollte das Studium kostenlos sein? Dammi una frase d'aggancio e la tua domanda centrale!",
+     "c": "Scrivi un'introduzione completa di 60-80 parole su un tema a scelta: aggancio, domanda e scaletta."
+    },
+    "pt": {
+     "t": "Escrever um ensaio: a introdução",
+     "g": "Começar bem um ensaio: um gancho, a questão central e um plano.",
+     "p": [
+      "Gancho: um facto surpreendente, uma pergunta ou uma citação: Immer mehr Menschen arbeiten von zu Hause aus. Doch ist das ein Fortschritt?",
+      "Questão central: Im Folgenden soll die Frage erörtert werden, ob... / Dieser Text beschäftigt sich mit der Frage, ...",
+      "Plano: Zunächst werde ich..., anschließend..., abschließend... Assim o leitor conhece o teu percurso."
+     ],
+     "q": "Tema: Sollte das Studium kostenlos sein? Dá-me uma frase de gancho e a tua questão central!",
+     "c": "Escreve uma introdução completa de 60 a 80 palavras sobre um tema à tua escolha: gancho, questão e plano."
+    },
+    "pt_BR": {
+     "t": "Escrever uma redação: a introdução",
+     "g": "Começar bem uma redação: um gancho, a questão central e um roteiro.",
+     "p": [
+      "Gancho: um fato surpreendente, uma pergunta ou uma citação: Immer mehr Menschen arbeiten von zu Hause aus. Doch ist das ein Fortschritt?",
+      "Questão central: Im Folgenden soll die Frage erörtert werden, ob... / Dieser Text beschäftigt sich mit der Frage, ...",
+      "Roteiro: Zunächst werde ich..., anschließend..., abschließend... Assim o leitor conhece seu caminho."
+     ],
+     "q": "Tema: Sollte das Studium kostenlos sein? Me dê uma frase de gancho e sua questão central!",
+     "c": "Escreva uma introdução completa de 60 a 80 palavras sobre um tema à sua escolha: gancho, questão e roteiro."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Einleitung",
+      "ex": "Eine gute Einleitung weckt das Interesse der Leser."
+     },
+     {
+      "w": "erörtern",
+      "ex": "Im Folgenden soll die Frage erörtert werden, ob Hausaufgaben sinnvoll sind."
+     },
+     {
+      "w": "sich beschäftigen mit",
+      "ex": "Dieser Aufsatz beschäftigt sich mit dem Thema Wohnen."
+     },
+     {
+      "w": "zunächst",
+      "ex": "Zunächst werde ich die Vorteile darstellen."
+     },
+     {
+      "w": "anschließend",
+      "ex": "Anschließend gehe ich auf die Nachteile ein."
+     },
+     {
+      "w": "abschließend",
+      "ex": "Abschließend ziehe ich ein Fazit."
+     }
+    ],
+    "gram": "Einleitung: Passiv mit Modalverb (soll erörtert werden); Futur für die Gliederung (Zunächst werde ich... darstellen)."
+   }
+  }
+ ]
+}

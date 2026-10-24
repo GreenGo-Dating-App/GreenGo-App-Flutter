@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 181,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Präteritum of regular verbs",
+     "g": "Form the written past of regular verbs: ich machte, er spielte, wir wohnten.",
+     "p": [
+      "Take the stem and add -te: machen > ich machte, du machtest, er machte, wir machten, ihr machtet, sie machten.",
+      "Stems ending in -t or -d add an extra e: arbeiten > ich arbeitete, reden > er redete.",
+      "Präteritum is the past of books, news and reports; in speech most verbs still use the Perfekt."
+     ],
+     "q": "Tell me about your childhood in the Präteritum: Wo wohntest du und was spieltest du gern?",
+     "c": "Rewrite five Perfekt sentences in the Präteritum, for example: Ich habe gekocht > Ich kochte."
+    },
+    "de": {
+     "t": "Präteritum der regelmäßigen Verben",
+     "g": "Du bildest die geschriebene Vergangenheit regelmäßiger Verben: ich machte, er spielte, wir wohnten.",
+     "p": [
+      "Stamm + -te: machen > ich machte, du machtest, er machte, wir machten, ihr machtet, sie machten.",
+      "Endet der Stamm auf -t oder -d, kommt ein e dazu: arbeiten > ich arbeitete, reden > er redete.",
+      "Das Präteritum steht in Büchern, Nachrichten und Berichten; beim Sprechen nimmt man meist das Perfekt."
+     ],
+     "q": "Erzähl mir von deiner Kindheit im Präteritum: Wo wohntest du und was spieltest du gern?",
+     "c": "Schreib fünf Perfekt-Sätze ins Präteritum um, zum Beispiel: Ich habe gekocht > Ich kochte."
+    },
+    "es": {
+     "t": "Präteritum de los verbos regulares",
+     "g": "Aprende el pasado escrito de los verbos regulares: ich machte, er spielte, wir wohnten.",
+     "p": [
+      "Raíz + -te: machen > ich machte, du machtest, er machte, wir machten, ihr machtet, sie machten.",
+      "Si la raíz termina en -t o -d, se añade una e: arbeiten > ich arbeitete, reden > er redete.",
+      "El Präteritum es el pasado de libros, noticias e informes; al hablar casi siempre se usa el Perfekt."
+     ],
+     "q": "Cuéntame tu infancia en Präteritum: Wo wohntest du und was spieltest du gern?",
+     "c": "Pasa cinco frases del Perfekt al Präteritum, por ejemplo: Ich habe gekocht > Ich kochte."
+    },
+    "fr": {
+     "t": "Le Präteritum des verbes réguliers",
+     "g": "Former le passé écrit des verbes réguliers : ich machte, er spielte, wir wohnten.",
+     "p": [
+      "Radical + -te : machen > ich machte, du machtest, er machte, wir machten, ihr machtet, sie machten.",
+      "Si le radical finit par -t ou -d, on ajoute un e : arbeiten > ich arbeitete, reden > er redete.",
+      "Le Präteritum est le passé des livres, des infos et des rapports ; à l'oral on préfère le Perfekt."
+     ],
+     "q": "Raconte-moi ton enfance au Präteritum : Wo wohntest du und was spieltest du gern ?",
+     "c": "Transforme cinq phrases au Perfekt en Präteritum, par exemple : Ich habe gekocht > Ich kochte."
+    },
+    "it": {
+     "t": "Il Präteritum dei verbi regolari",
+     "g": "Impari il passato scritto dei verbi regolari: ich machte, er spielte, wir wohnten.",
+     "p": [
+      "Radice + -te: machen > ich machte, du machtest, er machte, wir machten, ihr machtet, sie machten.",
+      "Se la radice finisce in -t o -d si aggiunge una e: arbeiten > ich arbeitete, reden > er redete.",
+      "Il Präteritum è il passato di libri, notizie e relazioni; parlando si usa quasi sempre il Perfekt."
+     ],
+     "q": "Raccontami la tua infanzia al Präteritum: Wo wohntest du und was spieltest du gern?",
+     "c": "Trasforma cinque frasi dal Perfekt al Präteritum, per esempio: Ich habe gekocht > Ich kochte."
+    },
+    "pt": {
+     "t": "Präteritum dos verbos regulares",
+     "g": "Formar o passado escrito dos verbos regulares: ich machte, er spielte, wir wohnten.",
+     "p": [
+      "Radical + -te: machen > ich machte, du machtest, er machte, wir machten, ihr machtet, sie machten.",
+      "Se o radical acaba em -t ou -d, junta-se um e: arbeiten > ich arbeitete, reden > er redete.",
+      "O Präteritum é o passado dos livros, notícias e relatórios; a falar usa-se sobretudo o Perfekt."
+     ],
+     "q": "Conta-me a tua infância no Präteritum: Wo wohntest du und was spieltest du gern?",
+     "c": "Passa cinco frases do Perfekt para o Präteritum, por exemplo: Ich habe gekocht > Ich kochte."
+    },
+    "pt_BR": {
+     "t": "Präteritum dos verbos regulares",
+     "g": "Formar o passado escrito dos verbos regulares: ich machte, er spielte, wir wohnten.",
+     "p": [
+      "Radical + -te: machen > ich machte, du machtest, er machte, wir machten, ihr machtet, sie machten.",
+      "Se o radical termina em -t ou -d, entra um e a mais: arbeiten > ich arbeitete, reden > er redete.",
+      "O Präteritum é o passado de livros, notícias e relatórios; na fala quase sempre se usa o Perfekt."
+     ],
+     "q": "Me conte sua infância no Präteritum: Wo wohntest du und was spieltest du gern?",
+     "c": "Passe cinco frases do Perfekt para o Präteritum, por exemplo: Ich habe gekocht > Ich kochte."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "machen – machte",
+      "ex": "Am Wochenende machte sie einen langen Spaziergang."
+     },
+     {
+      "w": "spielen – spielte",
+      "ex": "Als Kind spielte ich jeden Tag Fußball."
+     },
+     {
+      "w": "wohnen – wohnte",
+      "ex": "Mein Großvater wohnte in einem kleinen Dorf."
+     },
+     {
+      "w": "arbeiten – arbeitete",
+      "ex": "Er arbeitete zehn Jahre bei derselben Firma."
+     },
+     {
+      "w": "kaufen – kaufte",
+      "ex": "Wir kauften frisches Brot beim Bäcker."
+     },
+     {
+      "w": "lernen – lernte",
+      "ex": "Sie lernte schnell Deutsch."
+     }
+    ],
+    "gram": "Regelmäßiges Präteritum: Stamm + -te + Endung (ich machte, wir machten); nach -t/-d: -ete (er arbeitete)."
+   }
+  },
+  {
+   "d": 182,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Präteritum of irregular verbs",
+     "g": "Learn the strong past forms that tell stories: ging, kam, sah, nahm, fand.",
+     "p": [
+      "Strong verbs change their vowel and take no -te: gehen > ging, kommen > kam, sehen > sah, finden > fand.",
+      "The ich and er forms have no ending: ich ging, er ging; the others add -st, -en, -t: du gingst, wir gingen.",
+      "Learn them in sets of three: gehen, ging, gegangen; nehmen, nahm, genommen; sprechen, sprach, gesprochen."
+     ],
+     "q": "What did you do yesterday? Answer with three strong verbs: Ich ging..., ich sah..., ich fand...",
+     "c": "Write ten strong verbs with their Präteritum and Partizip II and say them aloud three times."
+    },
+    "de": {
+     "t": "Präteritum der unregelmäßigen Verben",
+     "g": "Du lernst die starken Vergangenheitsformen für Geschichten: ging, kam, sah, nahm, fand.",
+     "p": [
+      "Starke Verben ändern den Vokal und haben kein -te: gehen > ging, kommen > kam, sehen > sah, finden > fand.",
+      "Ich- und er-Form haben keine Endung: ich ging, er ging; sonst -st, -en, -t: du gingst, wir gingen.",
+      "Lerne sie in Dreiergruppen: gehen, ging, gegangen; nehmen, nahm, genommen; sprechen, sprach, gesprochen."
+     ],
+     "q": "Was hast du gestern gemacht? Antworte mit drei starken Verben: Ich ging..., ich sah..., ich fand...",
+     "c": "Schreib zehn starke Verben mit Präteritum und Partizip II auf und sprich sie dreimal laut."
+    },
+    "es": {
+     "t": "Präteritum de los verbos irregulares",
+     "g": "Aprende las formas fuertes del pasado que cuentan historias: ging, kam, sah, nahm, fand.",
+     "p": [
+      "Los verbos fuertes cambian la vocal y no llevan -te: gehen > ging, kommen > kam, sehen > sah, finden > fand.",
+      "Las formas ich y er no tienen terminación: ich ging, er ging; las demás: du gingst, wir gingen, ihr gingt.",
+      "Apréndelos de tres en tres: gehen, ging, gegangen; nehmen, nahm, genommen; sprechen, sprach, gesprochen."
+     ],
+     "q": "¿Qué hiciste ayer? Responde con tres verbos fuertes: Ich ging..., ich sah..., ich fand...",
+     "c": "Escribe diez verbos fuertes con su Präteritum y su Partizip II y dilos en voz alta tres veces."
+    },
+    "fr": {
+     "t": "Le Präteritum des verbes irréguliers",
+     "g": "Apprendre les formes fortes du passé qui racontent : ging, kam, sah, nahm, fand.",
+     "p": [
+      "Les verbes forts changent de voyelle, sans -te : gehen > ging, kommen > kam, sehen > sah, finden > fand.",
+      "Ich et er n'ont pas de terminaison : ich ging, er ging ; ailleurs : du gingst, wir gingen, ihr gingt.",
+      "Apprends-les par trois : gehen, ging, gegangen ; nehmen, nahm, genommen ; sprechen, sprach, gesprochen."
+     ],
+     "q": "Qu'as-tu fait hier ? Réponds avec trois verbes forts : Ich ging..., ich sah..., ich fand...",
+     "c": "Écris dix verbes forts avec leur Präteritum et leur Partizip II, et dis-les trois fois à voix haute."
+    },
+    "it": {
+     "t": "Il Präteritum dei verbi irregolari",
+     "g": "Impari le forme forti del passato che raccontano storie: ging, kam, sah, nahm, fand.",
+     "p": [
+      "I verbi forti cambiano vocale e non hanno -te: gehen > ging, kommen > kam, sehen > sah, finden > fand.",
+      "Le forme ich ed er non hanno desinenza: ich ging, er ging; le altre: du gingst, wir gingen, ihr gingt.",
+      "Imparali a gruppi di tre: gehen, ging, gegangen; nehmen, nahm, genommen; sprechen, sprach, gesprochen."
+     ],
+     "q": "Che cosa hai fatto ieri? Rispondi con tre verbi forti: Ich ging..., ich sah..., ich fand...",
+     "c": "Scrivi dieci verbi forti con Präteritum e Partizip II e ripetili ad alta voce tre volte."
+    },
+    "pt": {
+     "t": "Präteritum dos verbos irregulares",
+     "g": "Aprender as formas fortes do passado que contam histórias: ging, kam, sah, nahm, fand.",
+     "p": [
+      "Os verbos fortes mudam a vogal e não levam -te: gehen > ging, kommen > kam, sehen > sah, finden > fand.",
+      "As formas ich e er não têm terminação: ich ging, er ging; as outras: du gingst, wir gingen, ihr gingt.",
+      "Aprende-os em grupos de três: gehen, ging, gegangen; nehmen, nahm, genommen; sprechen, sprach, gesprochen."
+     ],
+     "q": "O que fizeste ontem? Responde com três verbos fortes: Ich ging..., ich sah..., ich fand...",
+     "c": "Escreve dez verbos fortes com o Präteritum e o Partizip II e di-los em voz alta três vezes."
+    },
+    "pt_BR": {
+     "t": "Präteritum dos verbos irregulares",
+     "g": "Aprender as formas fortes do passado que contam histórias: ging, kam, sah, nahm, fand.",
+     "p": [
+      "Os verbos fortes mudam a vogal e não levam -te: gehen > ging, kommen > kam, sehen > sah, finden > fand.",
+      "As formas ich e er não têm terminação: ich ging, er ging; as outras: du gingst, wir gingen, ihr gingt.",
+      "Aprenda em grupos de três: gehen, ging, gegangen; nehmen, nahm, genommen; sprechen, sprach, gesprochen."
+     ],
+     "q": "O que você fez ontem? Responda com três verbos fortes: Ich ging..., ich sah..., ich fand...",
+     "c": "Escreva dez verbos fortes com o Präteritum e o Partizip II e fale em voz alta três vezes."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "gehen – ging",
+      "ex": "Nach dem Essen ging er spazieren."
+     },
+     {
+      "w": "kommen – kam",
+      "ex": "Der Zug kam pünktlich an."
+     },
+     {
+      "w": "sehen – sah",
+      "ex": "Plötzlich sah sie einen alten Freund."
+     },
+     {
+      "w": "nehmen – nahm",
+      "ex": "Ich nahm den Bus in die Stadt."
+     },
+     {
+      "w": "finden – fand",
+      "ex": "Wir fanden ein schönes Café am Fluss."
+     },
+     {
+      "w": "sprechen – sprach",
+      "ex": "Der Lehrer sprach langsam und deutlich."
+     }
+    ],
+    "gram": "Starke Verben im Präteritum: Vokalwechsel ohne -te; ich/er ohne Endung (ich ging, er kam), wir/sie mit -en (wir gingen)."
+   }
+  },
+  {
+   "d": 183,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Präteritum in stories",
+     "g": "Read and tell a fairy tale in the Präteritum, starting with Es war einmal...",
+     "p": [
+      "German fairy tales open with Es war einmal... (Once upon a time...), just like the tales of the Brothers Grimm.",
+      "Narration mixes regular and strong forms: lebte, wohnte, ging, kam, sprach, rief.",
+      "Linking words keep the story moving: eines Tages, plötzlich, da, danach, am Ende."
+     ],
+     "q": "Can you tell me a short fairy tale you know, starting with Es war einmal...?",
+     "c": "Write a five-sentence mini fairy tale with Es war einmal, eines Tages, plötzlich and am Ende."
+    },
+    "de": {
+     "t": "Präteritum in Geschichten",
+     "g": "Du liest und erzählst ein Märchen im Präteritum und beginnst mit Es war einmal...",
+     "p": [
+      "Deutsche Märchen beginnen mit Es war einmal..., genau wie die Märchen der Brüder Grimm.",
+      "Beim Erzählen mischen sich schwache und starke Formen: lebte, wohnte, ging, kam, sprach, rief.",
+      "Verbindungswörter treiben die Geschichte voran: eines Tages, plötzlich, da, danach, am Ende."
+     ],
+     "q": "Kannst du mir ein kurzes Märchen erzählen, das du kennst? Fang mit Es war einmal... an!",
+     "c": "Schreib ein Mini-Märchen in fünf Sätzen mit Es war einmal, eines Tages, plötzlich und am Ende."
+    },
+    "es": {
+     "t": "El Präteritum en los cuentos",
+     "g": "Lee y cuenta un cuento de hadas en Präteritum empezando por Es war einmal...",
+     "p": [
+      "Los cuentos alemanes empiezan con Es war einmal... (Érase una vez...), como los de los hermanos Grimm.",
+      "Al narrar se mezclan formas regulares y fuertes: lebte, wohnte, ging, kam, sprach, rief.",
+      "Los conectores hacen avanzar la historia: eines Tages, plötzlich, da, danach, am Ende."
+     ],
+     "q": "¿Me cuentas un cuento corto que conozcas empezando con Es war einmal...?",
+     "c": "Escribe un minicuento de cinco frases con Es war einmal, eines Tages, plötzlich y am Ende."
+    },
+    "fr": {
+     "t": "Le Präteritum dans les récits",
+     "g": "Lire et raconter un conte au Präteritum, en commençant par Es war einmal...",
+     "p": [
+      "Les contes allemands commencent par Es war einmal... (Il était une fois...), comme chez les frères Grimm.",
+      "Le récit mélange formes faibles et fortes : lebte, wohnte, ging, kam, sprach, rief.",
+      "Les mots de liaison font avancer l'histoire : eines Tages, plötzlich, da, danach, am Ende."
+     ],
+     "q": "Peux-tu me raconter un petit conte que tu connais, en commençant par Es war einmal... ?",
+     "c": "Écris un mini-conte de cinq phrases avec Es war einmal, eines Tages, plötzlich et am Ende."
+    },
+    "it": {
+     "t": "Il Präteritum nei racconti",
+     "g": "Leggi e racconti una fiaba al Präteritum, cominciando con Es war einmal...",
+     "p": [
+      "Le fiabe tedesche iniziano con Es war einmal... (C'era una volta...), come quelle dei fratelli Grimm.",
+      "Nel racconto si mescolano forme deboli e forti: lebte, wohnte, ging, kam, sprach, rief.",
+      "I connettivi fanno andare avanti la storia: eines Tages, plötzlich, da, danach, am Ende."
+     ],
+     "q": "Mi racconti una breve fiaba che conosci, cominciando con Es war einmal...?",
+     "c": "Scrivi una minifiaba di cinque frasi con Es war einmal, eines Tages, plötzlich e am Ende."
+    },
+    "pt": {
+     "t": "O Präteritum nas histórias",
+     "g": "Ler e contar um conto de fadas no Präteritum, a começar por Es war einmal...",
+     "p": [
+      "Os contos alemães começam com Es war einmal... (Era uma vez...), como os dos irmãos Grimm.",
+      "Na narração misturam-se formas fracas e fortes: lebte, wohnte, ging, kam, sprach, rief.",
+      "Os conectores fazem a história avançar: eines Tages, plötzlich, da, danach, am Ende."
+     ],
+     "q": "Contas-me um conto curto que conheças, a começar por Es war einmal...?",
+     "c": "Escreve um miniconto de cinco frases com Es war einmal, eines Tages, plötzlich e am Ende."
+    },
+    "pt_BR": {
+     "t": "O Präteritum nas histórias",
+     "g": "Ler e contar um conto de fadas no Präteritum, começando com Es war einmal...",
+     "p": [
+      "Os contos alemães começam com Es war einmal... (Era uma vez...), como os dos irmãos Grimm.",
+      "Na narração se misturam formas fracas e fortes: lebte, wohnte, ging, kam, sprach, rief.",
+      "Os conectores fazem a história andar: eines Tages, plötzlich, da, danach, am Ende."
+     ],
+     "q": "Você me conta um conto curto que conhece, começando com Es war einmal...?",
+     "c": "Escreva um miniconto de cinco frases com Es war einmal, eines Tages, plötzlich e am Ende."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Es war einmal...",
+      "ex": "Es war einmal eine junge Müllerin."
+     },
+     {
+      "w": "eines Tages",
+      "ex": "Eines Tages ging sie in den Wald."
+     },
+     {
+      "w": "plötzlich",
+      "ex": "Plötzlich stand ein kleiner Mann vor ihr."
+     },
+     {
+      "w": "rufen – rief",
+      "ex": "Sie rief laut um Hilfe."
+     },
+     {
+      "w": "der Wald",
+      "ex": "Der Wald war dunkel und still."
+     },
+     {
+      "w": "am Ende",
+      "ex": "Am Ende lebten alle glücklich zusammen."
+     }
+    ],
+    "gram": "Erzählzeit Präteritum: Märchen und Geschichten stehen fast immer im Präteritum (lebte, ging, sprach)."
+   }
+  },
+  {
+   "d": 184,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Passive voice: present",
+     "g": "Use the present passive to focus on the action: Das Haus wird gebaut.",
+     "p": [
+      "Form: werden (conjugated) + Partizip II at the end: Das Brot wird gebacken. Die Briefe werden geschrieben.",
+      "The doer is often unknown or unimportant; if needed, add von + dative: Das Buch wird von vielen gelesen.",
+      "Passive is common in processes and recipes: Die Kartoffeln werden geschält und gekocht."
+     ],
+     "q": "How is your favourite dish made? Describe it in the passive: Zuerst wird... dann werden...",
+     "c": "Describe three steps of making coffee or tea using wird/werden + Partizip II."
+    },
+    "de": {
+     "t": "Passiv im Präsens",
+     "g": "Du benutzt das Passiv im Präsens, um die Handlung zu betonen: Das Haus wird gebaut.",
+     "p": [
+      "Form: werden (konjugiert) + Partizip II am Ende: Das Brot wird gebacken. Die Briefe werden geschrieben.",
+      "Wer es tut, ist oft unbekannt oder unwichtig; sonst mit von + Dativ: Das Buch wird von vielen gelesen.",
+      "Das Passiv passt zu Abläufen und Rezepten: Die Kartoffeln werden geschält und gekocht."
+     ],
+     "q": "Wie wird dein Lieblingsessen gemacht? Beschreib es im Passiv: Zuerst wird... dann werden...",
+     "c": "Beschreib drei Schritte beim Kaffee- oder Teekochen mit wird/werden + Partizip II."
+    },
+    "es": {
+     "t": "La voz pasiva en presente",
+     "g": "Usa la pasiva en presente para centrarte en la acción: Das Haus wird gebaut.",
+     "p": [
+      "Forma: werden conjugado + Partizip II al final: Das Brot wird gebacken. Die Briefe werden geschrieben.",
+      "Quien lo hace suele ser desconocido o poco importante; si hace falta: von + dativo (von vielen gelesen).",
+      "La pasiva es típica en procesos y recetas: Die Kartoffeln werden geschält und gekocht."
+     ],
+     "q": "¿Cómo se prepara tu plato favorito? Descríbelo en pasiva: Zuerst wird... dann werden...",
+     "c": "Describe tres pasos para hacer café o té con wird/werden + Partizip II."
+    },
+    "fr": {
+     "t": "Le passif au présent",
+     "g": "Utiliser le passif présent pour mettre l'action en avant : Das Haus wird gebaut.",
+     "p": [
+      "Forme : werden conjugué + Partizip II à la fin : Das Brot wird gebacken. Die Briefe werden geschrieben.",
+      "L'auteur est souvent inconnu ou peu important ; sinon, von + datif : Das Buch wird von vielen gelesen.",
+      "Le passif est courant pour les processus et les recettes : Die Kartoffeln werden geschält und gekocht."
+     ],
+     "q": "Comment prépare-t-on ton plat préféré ? Décris-le au passif : Zuerst wird... dann werden...",
+     "c": "Décris trois étapes pour faire du café ou du thé avec wird/werden + Partizip II."
+    },
+    "it": {
+     "t": "Il passivo al presente",
+     "g": "Usi il passivo presente per mettere in primo piano l'azione: Das Haus wird gebaut.",
+     "p": [
+      "Forma: werden coniugato + Partizip II in fondo: Das Brot wird gebacken. Die Briefe werden geschrieben.",
+      "Chi agisce è spesso ignoto o poco importante; se serve: von + dativo (von vielen gelesen).",
+      "Il passivo è tipico di processi e ricette: Die Kartoffeln werden geschält und gekocht."
+     ],
+     "q": "Come si prepara il tuo piatto preferito? Descrivilo al passivo: Zuerst wird... dann werden...",
+     "c": "Descrivi tre passaggi per preparare caffè o tè con wird/werden + Partizip II."
+    },
+    "pt": {
+     "t": "A voz passiva no presente",
+     "g": "Usar a passiva no presente para pôr a ação em destaque: Das Haus wird gebaut.",
+     "p": [
+      "Forma: werden conjugado + Partizip II no fim: Das Brot wird gebacken. Die Briefe werden geschrieben.",
+      "Quem faz a ação é muitas vezes desconhecido; se for preciso: von + dativo (von vielen gelesen).",
+      "A passiva é comum em processos e receitas: Die Kartoffeln werden geschält und gekocht."
+     ],
+     "q": "Como se faz o teu prato preferido? Descreve-o na passiva: Zuerst wird... dann werden...",
+     "c": "Descreve três passos para fazer café ou chá com wird/werden + Partizip II."
+    },
+    "pt_BR": {
+     "t": "A voz passiva no presente",
+     "g": "Usar a passiva no presente para destacar a ação: Das Haus wird gebaut.",
+     "p": [
+      "Forma: werden conjugado + Partizip II no final: Das Brot wird gebacken. Die Briefe werden geschrieben.",
+      "Quem faz a ação muitas vezes é desconhecido; se precisar: von + dativo (von vielen gelesen).",
+      "A passiva é comum em processos e receitas: Die Kartoffeln werden geschält und gekocht."
+     ],
+     "q": "Como se faz o seu prato favorito? Descreva na passiva: Zuerst wird... dann werden...",
+     "c": "Descreva três passos para fazer café ou chá com wird/werden + Partizip II."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "gebaut werden",
+      "ex": "Hier wird eine neue Schule gebaut."
+     },
+     {
+      "w": "gebacken werden",
+      "ex": "Das Brot wird jeden Morgen frisch gebacken."
+     },
+     {
+      "w": "repariert werden",
+      "ex": "Mein Fahrrad wird gerade repariert."
+     },
+     {
+      "w": "gesprochen werden",
+      "ex": "In der Schweiz werden vier Sprachen gesprochen."
+     },
+     {
+      "w": "von + Dativ",
+      "ex": "Der Kuchen wird von meiner Oma gemacht."
+     },
+     {
+      "w": "der Ablauf",
+      "ex": "Der Ablauf wird genau erklärt."
+     }
+    ],
+    "gram": "Vorgangspassiv Präsens: werden + Partizip II (Das Haus wird gebaut); Täter mit von + Dativ."
+   }
+  },
+  {
+   "d": 185,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Passive in the past",
+     "g": "Put the passive into the past: Das Haus wurde gebaut, ist gebaut worden.",
+     "p": [
+      "Präteritum passive: wurde + Partizip II: Das Schloss wurde 1850 gebaut. Die Briefe wurden verschickt.",
+      "Perfekt passive: sein + Partizip II + worden (not geworden!): Das Auto ist repariert worden.",
+      "Writers prefer wurde; in conversation ist... worden is also common, especially for recent events."
+     ],
+     "q": "What was built, invented or discovered in your town or country? Tell me with wurde + Partizip II.",
+     "c": "Write three famous facts in the passive past, for example: Der Buchdruck wurde von Gutenberg erfunden."
+    },
+    "de": {
+     "t": "Passiv in der Vergangenheit",
+     "g": "Du setzt das Passiv in die Vergangenheit: Das Haus wurde gebaut, ist gebaut worden.",
+     "p": [
+      "Passiv Präteritum: wurde + Partizip II: Das Schloss wurde 1850 gebaut. Die Briefe wurden verschickt.",
+      "Passiv Perfekt: sein + Partizip II + worden (nicht geworden!): Das Auto ist repariert worden.",
+      "Schriftlich nimmt man meist wurde; mündlich hört man auch ist... worden, vor allem bei Neuem."
+     ],
+     "q": "Was wurde in deiner Stadt oder deinem Land gebaut, erfunden oder entdeckt? Erzähl mit wurde + Partizip II.",
+     "c": "Schreib drei bekannte Fakten im Passiv Präteritum, z. B.: Der Buchdruck wurde von Gutenberg erfunden."
+    },
+    "es": {
+     "t": "La pasiva en pasado",
+     "g": "Pasa la pasiva al pasado: Das Haus wurde gebaut, ist gebaut worden.",
+     "p": [
+      "Pasiva en Präteritum: wurde + Partizip II: Das Schloss wurde 1850 gebaut. Die Briefe wurden verschickt.",
+      "Pasiva en Perfekt: sein + Partizip II + worden (¡no geworden!): Das Auto ist repariert worden.",
+      "Por escrito se prefiere wurde; al hablar también se oye ist... worden, sobre todo para algo reciente."
+     ],
+     "q": "¿Qué se construyó, inventó o descubrió en tu ciudad o país? Cuéntamelo con wurde + Partizip II.",
+     "c": "Escribe tres datos famosos en pasiva pasada, por ejemplo: Der Buchdruck wurde von Gutenberg erfunden."
+    },
+    "fr": {
+     "t": "Le passif au passé",
+     "g": "Mettre le passif au passé : Das Haus wurde gebaut, ist gebaut worden.",
+     "p": [
+      "Passif au Präteritum : wurde + Partizip II : Das Schloss wurde 1850 gebaut. Die Briefe wurden verschickt.",
+      "Passif au Perfekt : sein + Partizip II + worden (pas geworden !) : Das Auto ist repariert worden.",
+      "À l'écrit on préfère wurde ; à l'oral on entend aussi ist... worden, surtout pour un fait récent."
+     ],
+     "q": "Qu'est-ce qui a été construit, inventé ou découvert dans ta ville ou ton pays ? Dis-le avec wurde + Partizip II.",
+     "c": "Écris trois faits célèbres au passif passé, par exemple : Der Buchdruck wurde von Gutenberg erfunden."
+    },
+    "it": {
+     "t": "Il passivo al passato",
+     "g": "Metti il passivo al passato: Das Haus wurde gebaut, ist gebaut worden.",
+     "p": [
+      "Passivo al Präteritum: wurde + Partizip II: Das Schloss wurde 1850 gebaut. Die Briefe wurden verschickt.",
+      "Passivo al Perfekt: sein + Partizip II + worden (non geworden!): Das Auto ist repariert worden.",
+      "Per iscritto si preferisce wurde; parlando si sente anche ist... worden, soprattutto per fatti recenti."
+     ],
+     "q": "Che cosa è stato costruito, inventato o scoperto nella tua città o nel tuo paese? Dimmelo con wurde + Partizip II.",
+     "c": "Scrivi tre fatti famosi al passivo passato, per esempio: Der Buchdruck wurde von Gutenberg erfunden."
+    },
+    "pt": {
+     "t": "A passiva no passado",
+     "g": "Pôr a passiva no passado: Das Haus wurde gebaut, ist gebaut worden.",
+     "p": [
+      "Passiva no Präteritum: wurde + Partizip II: Das Schloss wurde 1850 gebaut. Die Briefe wurden verschickt.",
+      "Passiva no Perfekt: sein + Partizip II + worden (não geworden!): Das Auto ist repariert worden.",
+      "Por escrito prefere-se wurde; a falar também se ouve ist... worden, sobretudo para algo recente."
+     ],
+     "q": "O que foi construído, inventado ou descoberto na tua cidade ou país? Conta-me com wurde + Partizip II.",
+     "c": "Escreve três factos famosos na passiva do passado, por exemplo: Der Buchdruck wurde von Gutenberg erfunden."
+    },
+    "pt_BR": {
+     "t": "A passiva no passado",
+     "g": "Colocar a passiva no passado: Das Haus wurde gebaut, ist gebaut worden.",
+     "p": [
+      "Passiva no Präteritum: wurde + Partizip II: Das Schloss wurde 1850 gebaut. Die Briefe wurden verschickt.",
+      "Passiva no Perfekt: sein + Partizip II + worden (não geworden!): Das Auto ist repariert worden.",
+      "Na escrita se prefere wurde; na fala também se ouve ist... worden, principalmente para algo recente."
+     ],
+     "q": "O que foi construído, inventado ou descoberto na sua cidade ou país? Me conte com wurde + Partizip II.",
+     "c": "Escreva três fatos famosos na passiva do passado, por exemplo: Der Buchdruck wurde von Gutenberg erfunden."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "wurde gebaut",
+      "ex": "Der Kölner Dom wurde über viele Jahrhunderte gebaut."
+     },
+     {
+      "w": "wurde erfunden",
+      "ex": "Der Buchdruck wurde von Gutenberg erfunden."
+     },
+     {
+      "w": "wurde entdeckt",
+      "ex": "Die Höhle wurde zufällig entdeckt."
+     },
+     {
+      "w": "ist ... worden",
+      "ex": "Das Paket ist heute Morgen geliefert worden."
+     },
+     {
+      "w": "wurden eingeladen",
+      "ex": "Alle Nachbarn wurden zum Fest eingeladen."
+     },
+     {
+      "w": "gegründet",
+      "ex": "Die Stadt wurde im Mittelalter gegründet."
+     }
+    ],
+    "gram": "Passiv Präteritum: wurde + Partizip II; Passiv Perfekt: ist + Partizip II + worden (Das Haus ist gebaut worden)."
+   }
+  },
+  {
+   "d": 186,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Passive with modal verbs",
+     "g": "Give rules and instructions with modal + passive: Das muss gemacht werden.",
+     "p": [
+      "Form: modal verb (conjugated) + Partizip II + werden at the end: Das Formular muss ausgefüllt werden.",
+      "Typical for signs, rules and manuals: Hier darf nicht geraucht werden. Der Akku kann geladen werden.",
+      "Past: modal in Präteritum: Die Rechnung musste bezahlt werden. Das konnte nicht repariert werden."
+     ],
+     "q": "What must be done in your home this week? Tell me three things: ... muss gemacht werden.",
+     "c": "Write five house rules for a shared flat with muss/darf/soll + Partizip II + werden."
+    },
+    "de": {
+     "t": "Passiv mit Modalverben",
+     "g": "Du formulierst Regeln und Anweisungen mit Modalverb + Passiv: Das muss gemacht werden.",
+     "p": [
+      "Form: Modalverb (konjugiert) + Partizip II + werden am Ende: Das Formular muss ausgefüllt werden.",
+      "Typisch für Schilder, Regeln und Anleitungen: Hier darf nicht geraucht werden. Der Akku kann geladen werden.",
+      "Vergangenheit: Modalverb im Präteritum: Die Rechnung musste bezahlt werden. Das konnte nicht repariert werden."
+     ],
+     "q": "Was muss diese Woche bei dir zu Hause erledigt werden? Nenn drei Dinge: ... muss gemacht werden.",
+     "c": "Schreib fünf Regeln für eine WG mit muss/darf/soll + Partizip II + werden."
+    },
+    "es": {
+     "t": "La pasiva con verbos modales",
+     "g": "Da normas e instrucciones con modal + pasiva: Das muss gemacht werden.",
+     "p": [
+      "Forma: modal conjugado + Partizip II + werden al final: Das Formular muss ausgefüllt werden.",
+      "Típico en carteles, normas y manuales: Hier darf nicht geraucht werden. Der Akku kann geladen werden.",
+      "En pasado, el modal va en Präteritum: Die Rechnung musste bezahlt werden. Das konnte nicht repariert werden."
+     ],
+     "q": "¿Qué hay que hacer en tu casa esta semana? Dime tres cosas: ... muss gemacht werden.",
+     "c": "Escribe cinco normas para un piso compartido con muss/darf/soll + Partizip II + werden."
+    },
+    "fr": {
+     "t": "Le passif avec les verbes de modalité",
+     "g": "Formuler règles et consignes avec modal + passif : Das muss gemacht werden.",
+     "p": [
+      "Forme : modal conjugué + Partizip II + werden à la fin : Das Formular muss ausgefüllt werden.",
+      "Typique des panneaux, règles et notices : Hier darf nicht geraucht werden. Der Akku kann geladen werden.",
+      "Au passé, le modal est au Präteritum : Die Rechnung musste bezahlt werden. Das konnte nicht repariert werden."
+     ],
+     "q": "Qu'est-ce qui doit être fait chez toi cette semaine ? Cite trois choses : ... muss gemacht werden.",
+     "c": "Écris cinq règles pour une colocation avec muss/darf/soll + Partizip II + werden."
+    },
+    "it": {
+     "t": "Il passivo con i verbi modali",
+     "g": "Dai regole e istruzioni con modale + passivo: Das muss gemacht werden.",
+     "p": [
+      "Forma: modale coniugato + Partizip II + werden in fondo: Das Formular muss ausgefüllt werden.",
+      "Tipico di cartelli, regole e manuali: Hier darf nicht geraucht werden. Der Akku kann geladen werden.",
+      "Al passato il modale va al Präteritum: Die Rechnung musste bezahlt werden. Das konnte nicht repariert werden."
+     ],
+     "q": "Che cosa deve essere fatto a casa tua questa settimana? Dimmi tre cose: ... muss gemacht werden.",
+     "c": "Scrivi cinque regole per un appartamento condiviso con muss/darf/soll + Partizip II + werden."
+    },
+    "pt": {
+     "t": "A passiva com verbos modais",
+     "g": "Dar regras e instruções com modal + passiva: Das muss gemacht werden.",
+     "p": [
+      "Forma: modal conjugado + Partizip II + werden no fim: Das Formular muss ausgefüllt werden.",
+      "Típico de placas, regras e manuais: Hier darf nicht geraucht werden. Der Akku kann geladen werden.",
+      "No passado, o modal vai para o Präteritum: Die Rechnung musste bezahlt werden. Das konnte nicht repariert werden."
+     ],
+     "q": "O que tem de ser feito em tua casa esta semana? Diz-me três coisas: ... muss gemacht werden.",
+     "c": "Escreve cinco regras para uma casa partilhada com muss/darf/soll + Partizip II + werden."
+    },
+    "pt_BR": {
+     "t": "A passiva com verbos modais",
+     "g": "Dar regras e instruções com modal + passiva: Das muss gemacht werden.",
+     "p": [
+      "Forma: modal conjugado + Partizip II + werden no final: Das Formular muss ausgefüllt werden.",
+      "Típico de placas, regras e manuais: Hier darf nicht geraucht werden. Der Akku kann geladen werden.",
+      "No passado, o modal vai para o Präteritum: Die Rechnung musste bezahlt werden. Das konnte nicht repariert werden."
+     ],
+     "q": "O que precisa ser feito na sua casa esta semana? Me diga três coisas: ... muss gemacht werden.",
+     "c": "Escreva cinco regras para uma república com muss/darf/soll + Partizip II + werden."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "muss gemacht werden",
+      "ex": "Die Hausaufgabe muss bis morgen gemacht werden."
+     },
+     {
+      "w": "darf nicht ... werden",
+      "ex": "Hier darf nicht geparkt werden."
+     },
+     {
+      "w": "kann ... werden",
+      "ex": "Das Ticket kann online gekauft werden."
+     },
+     {
+      "w": "soll ... werden",
+      "ex": "Der Müll soll getrennt werden."
+     },
+     {
+      "w": "ausfüllen",
+      "ex": "Das Formular muss vollständig ausgefüllt werden."
+     },
+     {
+      "w": "die Anleitung",
+      "ex": "Laut Anleitung muss das Gerät zuerst geladen werden."
+     }
+    ],
+    "gram": "Passiv mit Modalverb: Modalverb + Partizip II + werden (Das muss gemacht werden; Das musste gemacht werden)."
+   }
+  },
+  {
+   "d": 187,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Alternatives to the passive",
+     "g": "Say the same thing without the passive: man, sich lassen and adjectives in -bar.",
+     "p": [
+      "Man + active verb is the everyday option: Man baut hier ein Haus = Hier wird ein Haus gebaut.",
+      "Sich lassen + infinitive means it can be done: Das lässt sich machen. Das Fenster lässt sich nicht öffnen.",
+      "Verb stem + -bar makes an adjective of possibility: machbar, essbar, lesbar, erreichbar."
+     ],
+     "q": "Is your German project machbar? Tell me one thing that lässt sich leicht machen and one that doesn't.",
+     "c": "Rewrite three passive sentences with man and turn three verbs into -bar adjectives."
+    },
+    "de": {
+     "t": "Alternativen zum Passiv",
+     "g": "Du sagst dasselbe ohne Passiv: mit man, sich lassen und Adjektiven auf -bar.",
+     "p": [
+      "Man + Aktiv ist die Alltagsform: Man baut hier ein Haus = Hier wird ein Haus gebaut.",
+      "Sich lassen + Infinitiv heißt: es ist möglich. Das lässt sich machen. Das Fenster lässt sich nicht öffnen.",
+      "Verbstamm + -bar ergibt ein Adjektiv der Möglichkeit: machbar, essbar, lesbar, erreichbar."
+     ],
+     "q": "Ist dein Deutschprojekt machbar? Nenn eine Sache, die sich leicht machen lässt, und eine, die schwer ist.",
+     "c": "Formuliere drei Passivsätze mit man um und bilde drei Adjektive auf -bar."
+    },
+    "es": {
+     "t": "Alternativas a la pasiva",
+     "g": "Di lo mismo sin pasiva: con man, sich lassen y adjetivos en -bar.",
+     "p": [
+      "Man + activa es la opción cotidiana: Man baut hier ein Haus = Hier wird ein Haus gebaut.",
+      "Sich lassen + infinitivo indica posibilidad: Das lässt sich machen. Das Fenster lässt sich nicht öffnen.",
+      "Raíz del verbo + -bar da un adjetivo de posibilidad: machbar, essbar, lesbar, erreichbar (factible, comestible...)."
+     ],
+     "q": "¿Tu proyecto de alemán es machbar? Dime algo que lässt sich leicht machen y algo que no.",
+     "c": "Reescribe tres frases pasivas con man y forma tres adjetivos en -bar."
+    },
+    "fr": {
+     "t": "Alternatives au passif",
+     "g": "Dire la même chose sans passif : avec man, sich lassen et les adjectifs en -bar.",
+     "p": [
+      "Man + actif, c'est la version courante : Man baut hier ein Haus = Hier wird ein Haus gebaut.",
+      "Sich lassen + infinitif exprime la possibilité : Das lässt sich machen. Das Fenster lässt sich nicht öffnen.",
+      "Radical + -bar donne un adjectif de possibilité, comme -able : machbar, essbar, lesbar, erreichbar."
+     ],
+     "q": "Ton projet d'allemand est-il machbar ? Dis-moi une chose qui lässt sich leicht machen et une qui non.",
+     "c": "Réécris trois phrases passives avec man et forme trois adjectifs en -bar."
+    },
+    "it": {
+     "t": "Alternative al passivo",
+     "g": "Dici la stessa cosa senza passivo: con man, sich lassen e gli aggettivi in -bar.",
+     "p": [
+      "Man + attivo è la forma di tutti i giorni: Man baut hier ein Haus = Hier wird ein Haus gebaut.",
+      "Sich lassen + infinito esprime possibilità: Das lässt sich machen. Das Fenster lässt sich nicht öffnen.",
+      "Radice + -bar forma un aggettivo di possibilità, come -abile: machbar, essbar, lesbar, erreichbar."
+     ],
+     "q": "Il tuo progetto di tedesco è machbar? Dimmi una cosa che lässt sich leicht machen e una no.",
+     "c": "Riscrivi tre frasi passive con man e forma tre aggettivi in -bar."
+    },
+    "pt": {
+     "t": "Alternativas à passiva",
+     "g": "Dizer o mesmo sem passiva: com man, sich lassen e adjetivos em -bar.",
+     "p": [
+      "Man + ativa é a forma do dia a dia: Man baut hier ein Haus = Hier wird ein Haus gebaut.",
+      "Sich lassen + infinitivo indica possibilidade: Das lässt sich machen. Das Fenster lässt sich nicht öffnen.",
+      "Radical + -bar forma um adjetivo de possibilidade, como -ável: machbar, essbar, lesbar, erreichbar."
+     ],
+     "q": "O teu projeto de alemão é machbar? Diz-me uma coisa que lässt sich leicht machen e uma que não.",
+     "c": "Reescreve três frases passivas com man e forma três adjetivos em -bar."
+    },
+    "pt_BR": {
+     "t": "Alternativas à passiva",
+     "g": "Dizer o mesmo sem passiva: com man, sich lassen e adjetivos em -bar.",
+     "p": [
+      "Man + ativa é a forma do dia a dia: Man baut hier ein Haus = Hier wird ein Haus gebaut.",
+      "Sich lassen + infinitivo indica possibilidade: Das lässt sich machen. Das Fenster lässt sich nicht öffnen.",
+      "Radical + -bar forma um adjetivo de possibilidade, como -ável: machbar, essbar, lesbar, erreichbar."
+     ],
+     "q": "Seu projeto de alemão é machbar? Me diga uma coisa que lässt sich leicht machen e uma que não.",
+     "c": "Reescreva três frases passivas com man e forme três adjetivos em -bar."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "man",
+      "ex": "Man spricht hier Deutsch und Französisch."
+     },
+     {
+      "w": "sich lassen",
+      "ex": "Das Problem lässt sich schnell lösen."
+     },
+     {
+      "w": "machbar",
+      "ex": "Der Plan ist schwierig, aber machbar."
+     },
+     {
+      "w": "essbar",
+      "ex": "Sind diese Pilze essbar?"
+     },
+     {
+      "w": "erreichbar",
+      "ex": "Ich bin ab acht Uhr telefonisch erreichbar."
+     },
+     {
+      "w": "lesbar",
+      "ex": "Deine Handschrift ist gut lesbar."
+     }
+    ],
+    "gram": "Passiversatz: man + Aktiv; sich lassen + Infinitiv (Das lässt sich machen); Verbstamm + -bar (machbar = kann gemacht werden)."
+   }
+  },
+  {
+   "d": 188,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Konjunktiv II past",
+     "g": "Talk about other possible pasts: ich hätte gemacht, ich wäre gegangen.",
+     "p": [
+      "Form: hätte or wäre + Partizip II. Use wäre where the Perfekt uses sein: ich wäre gefahren, ich hätte gekauft.",
+      "It describes things that did not happen: Ich hätte dich angerufen, aber ich hatte kein Netz.",
+      "With wenn: Wenn ich Zeit gehabt hätte, wäre ich mitgekommen. Both verbs go to the end of their clause."
+     ],
+     "q": "Imagine a different past: Was hättest du gemacht, wenn du in einem anderen Land geboren wärst?",
+     "c": "Write three sentences with hätte + Partizip II and three with wäre + Partizip II about last weekend."
+    },
+    "de": {
+     "t": "Konjunktiv II der Vergangenheit",
+     "g": "Du sprichst über andere mögliche Vergangenheiten: ich hätte gemacht, ich wäre gegangen.",
+     "p": [
+      "Form: hätte oder wäre + Partizip II. Wäre steht, wo das Perfekt sein hat: ich wäre gefahren, ich hätte gekauft.",
+      "Es geht um Dinge, die nicht passiert sind: Ich hätte dich angerufen, aber ich hatte kein Netz.",
+      "Mit wenn: Wenn ich Zeit gehabt hätte, wäre ich mitgekommen. Die Verben stehen am Ende des Satzteils."
+     ],
+     "q": "Stell dir eine andere Vergangenheit vor: Was hättest du gemacht, wenn du in einem anderen Land geboren wärst?",
+     "c": "Schreib je drei Sätze mit hätte + Partizip II und wäre + Partizip II über dein letztes Wochenende."
+    },
+    "es": {
+     "t": "Konjunktiv II en pasado",
+     "g": "Habla de pasados posibles: ich hätte gemacht (habría hecho), ich wäre gegangen.",
+     "p": [
+      "Forma: hätte o wäre + Partizip II. Wäre va donde el Perfekt lleva sein: ich wäre gefahren, ich hätte gekauft.",
+      "Expresa cosas que no ocurrieron: Ich hätte dich angerufen, aber ich hatte kein Netz.",
+      "Con wenn: Wenn ich Zeit gehabt hätte, wäre ich mitgekommen. Los verbos van al final de su oración."
+     ],
+     "q": "Imagina otro pasado: Was hättest du gemacht, wenn du in einem anderen Land geboren wärst?",
+     "c": "Escribe tres frases con hätte + Partizip II y tres con wäre + Partizip II sobre tu último fin de semana."
+    },
+    "fr": {
+     "t": "Le Konjunktiv II passé",
+     "g": "Parler des passés possibles : ich hätte gemacht (j'aurais fait), ich wäre gegangen.",
+     "p": [
+      "Forme : hätte ou wäre + Partizip II. Wäre là où le Perfekt prend sein : ich wäre gefahren, ich hätte gekauft.",
+      "Il décrit ce qui n'est pas arrivé : Ich hätte dich angerufen, aber ich hatte kein Netz.",
+      "Avec wenn : Wenn ich Zeit gehabt hätte, wäre ich mitgekommen. Les verbes vont en fin de proposition."
+     ],
+     "q": "Imagine un autre passé : Was hättest du gemacht, wenn du in einem anderen Land geboren wärst ?",
+     "c": "Écris trois phrases avec hätte + Partizip II et trois avec wäre + Partizip II sur ton dernier week-end."
+    },
+    "it": {
+     "t": "Il Konjunktiv II passato",
+     "g": "Parli di passati possibili: ich hätte gemacht (avrei fatto), ich wäre gegangen.",
+     "p": [
+      "Forma: hätte o wäre + Partizip II. Wäre dove il Perfekt usa sein: ich wäre gefahren, ich hätte gekauft.",
+      "Descrive cose che non sono successe: Ich hätte dich angerufen, aber ich hatte kein Netz.",
+      "Con wenn: Wenn ich Zeit gehabt hätte, wäre ich mitgekommen. I verbi vanno in fondo alla frase."
+     ],
+     "q": "Immagina un altro passato: Was hättest du gemacht, wenn du in einem anderen Land geboren wärst?",
+     "c": "Scrivi tre frasi con hätte + Partizip II e tre con wäre + Partizip II sul tuo ultimo fine settimana."
+    },
+    "pt": {
+     "t": "Konjunktiv II no passado",
+     "g": "Falar de passados possíveis: ich hätte gemacht (teria feito), ich wäre gegangen.",
+     "p": [
+      "Forma: hätte ou wäre + Partizip II. Wäre onde o Perfekt usa sein: ich wäre gefahren, ich hätte gekauft.",
+      "Descreve coisas que não aconteceram: Ich hätte dich angerufen, aber ich hatte kein Netz.",
+      "Com wenn: Wenn ich Zeit gehabt hätte, wäre ich mitgekommen. Os verbos vão para o fim da oração."
+     ],
+     "q": "Imagina outro passado: Was hättest du gemacht, wenn du in einem anderen Land geboren wärst?",
+     "c": "Escreve três frases com hätte + Partizip II e três com wäre + Partizip II sobre o teu último fim de semana."
+    },
+    "pt_BR": {
+     "t": "Konjunktiv II no passado",
+     "g": "Falar de passados possíveis: ich hätte gemacht (teria feito), ich wäre gegangen.",
+     "p": [
+      "Forma: hätte ou wäre + Partizip II. Wäre onde o Perfekt usa sein: ich wäre gefahren, ich hätte gekauft.",
+      "Descreve coisas que não aconteceram: Ich hätte dich angerufen, aber ich hatte kein Netz.",
+      "Com wenn: Wenn ich Zeit gehabt hätte, wäre ich mitgekommen. Os verbos vão para o fim da oração."
+     ],
+     "q": "Imagine outro passado: Was hättest du gemacht, wenn du in einem anderen Land geboren wärst?",
+     "c": "Escreva três frases com hätte + Partizip II e três com wäre + Partizip II sobre seu último fim de semana."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ich hätte gemacht",
+      "ex": "Ich hätte das anders gemacht."
+     },
+     {
+      "w": "ich wäre gegangen",
+      "ex": "Bei Regen wäre ich nicht gegangen."
+     },
+     {
+      "w": "wir hätten gewonnen",
+      "ex": "Mit etwas Glück hätten wir gewonnen."
+     },
+     {
+      "w": "sie wäre gekommen",
+      "ex": "Sie wäre gern gekommen, aber sie war krank."
+     },
+     {
+      "w": "wenn ich gewusst hätte",
+      "ex": "Wenn ich das gewusst hätte, hätte ich geholfen."
+     },
+     {
+      "w": "beinahe",
+      "ex": "Beinahe hätte ich den Zug verpasst."
+     }
+    ],
+    "gram": "Konjunktiv II Vergangenheit: hätte/wäre + Partizip II für Irreales in der Vergangenheit (Ich wäre gekommen)."
+   }
+  },
+  {
+   "d": 189,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Talking about regrets",
+     "g": "Express regrets and missed chances: Hätte ich nur..., wenn ich das gewusst hätte...",
+     "p": [
+      "Hätte ich nur... / Wäre ich doch... starts with the verb: Hätte ich nur mehr geübt! Wäre ich doch früher gekommen!",
+      "Wenn ich das gewusst hätte, hätte ich... links a past condition and its result.",
+      "Keep it light and positive: Beim nächsten Mal mache ich es anders. Daraus habe ich gelernt."
+     ],
+     "q": "Is there a small thing you would do differently? Tell me with Hätte ich nur... and what you learned.",
+     "c": "Write three small regrets with Hätte ich nur / Wäre ich doch, then one positive plan for next time."
+    },
+    "de": {
+     "t": "Über Bedauern sprechen",
+     "g": "Du drückst Bedauern und verpasste Chancen aus: Hätte ich nur..., wenn ich das gewusst hätte...",
+     "p": [
+      "Hätte ich nur... / Wäre ich doch... beginnt mit dem Verb: Hätte ich nur mehr geübt! Wäre ich doch früher gekommen!",
+      "Wenn ich das gewusst hätte, hätte ich... verbindet eine Bedingung in der Vergangenheit mit der Folge.",
+      "Bleib positiv: Beim nächsten Mal mache ich es anders. Daraus habe ich gelernt."
+     ],
+     "q": "Gibt es eine Kleinigkeit, die du anders machen würdest? Sag es mit Hätte ich nur... und was du gelernt hast.",
+     "c": "Schreib drei kleine Bedauern mit Hätte ich nur / Wäre ich doch und dann einen positiven Plan."
+    },
+    "es": {
+     "t": "Hablar de arrepentimientos",
+     "g": "Expresa pesar y ocasiones perdidas: Hätte ich nur..., wenn ich das gewusst hätte...",
+     "p": [
+      "Hätte ich nur... / Wäre ich doch... empieza con el verbo (¡Ojalá hubiera...!): Hätte ich nur mehr geübt!",
+      "Wenn ich das gewusst hätte, hätte ich... une una condición pasada con su resultado.",
+      "Mantén un tono positivo: Beim nächsten Mal mache ich es anders. Daraus habe ich gelernt."
+     ],
+     "q": "¿Hay algo pequeño que harías distinto? Dímelo con Hätte ich nur... y qué aprendiste.",
+     "c": "Escribe tres pequeños lamentos con Hätte ich nur / Wäre ich doch y luego un plan positivo."
+    },
+    "fr": {
+     "t": "Exprimer des regrets",
+     "g": "Exprimer regrets et occasions manquées : Hätte ich nur..., wenn ich das gewusst hätte...",
+     "p": [
+      "Hätte ich nur... / Wäre ich doch... commence par le verbe (Si seulement...) : Hätte ich nur mehr geübt !",
+      "Wenn ich das gewusst hätte, hätte ich... relie une condition passée et sa conséquence.",
+      "Reste positif : Beim nächsten Mal mache ich es anders. Daraus habe ich gelernt."
+     ],
+     "q": "Y a-t-il une petite chose que tu ferais autrement ? Dis-le avec Hätte ich nur... et ce que tu as appris.",
+     "c": "Écris trois petits regrets avec Hätte ich nur / Wäre ich doch, puis un plan positif pour la suite."
+    },
+    "it": {
+     "t": "Parlare di rimpianti",
+     "g": "Esprimi rimpianti e occasioni perse: Hätte ich nur..., wenn ich das gewusst hätte...",
+     "p": [
+      "Hätte ich nur... / Wäre ich doch... inizia col verbo (Se solo avessi...): Hätte ich nur mehr geübt!",
+      "Wenn ich das gewusst hätte, hätte ich... unisce una condizione passata e la sua conseguenza.",
+      "Resta positivo: Beim nächsten Mal mache ich es anders. Daraus habe ich gelernt."
+     ],
+     "q": "C'è una piccola cosa che faresti diversamente? Dimmelo con Hätte ich nur... e cosa hai imparato.",
+     "c": "Scrivi tre piccoli rimpianti con Hätte ich nur / Wäre ich doch e poi un piano positivo."
+    },
+    "pt": {
+     "t": "Falar de arrependimentos",
+     "g": "Exprimir pena e oportunidades perdidas: Hätte ich nur..., wenn ich das gewusst hätte...",
+     "p": [
+      "Hätte ich nur... / Wäre ich doch... começa pelo verbo (Quem me dera...): Hätte ich nur mehr geübt!",
+      "Wenn ich das gewusst hätte, hätte ich... liga uma condição passada ao seu resultado.",
+      "Mantém o tom positivo: Beim nächsten Mal mache ich es anders. Daraus habe ich gelernt."
+     ],
+     "q": "Há alguma pequena coisa que farias de outra forma? Diz-mo com Hätte ich nur... e o que aprendeste.",
+     "c": "Escreve três pequenos arrependimentos com Hätte ich nur / Wäre ich doch e depois um plano positivo."
+    },
+    "pt_BR": {
+     "t": "Falar de arrependimentos",
+     "g": "Expressar pena e chances perdidas: Hätte ich nur..., wenn ich das gewusst hätte...",
+     "p": [
+      "Hätte ich nur... / Wäre ich doch... começa com o verbo (Se eu tivesse...): Hätte ich nur mehr geübt!",
+      "Wenn ich das gewusst hätte, hätte ich... liga uma condição passada ao seu resultado.",
+      "Mantenha o tom positivo: Beim nächsten Mal mache ich es anders. Daraus habe ich gelernt."
+     ],
+     "q": "Tem alguma coisinha que você faria diferente? Me diga com Hätte ich nur... e o que aprendeu.",
+     "c": "Escreva três pequenos arrependimentos com Hätte ich nur / Wäre ich doch e depois um plano positivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Hätte ich nur...!",
+      "ex": "Hätte ich nur meinen Regenschirm mitgenommen!"
+     },
+     {
+      "w": "Wäre ich doch...!",
+      "ex": "Wäre ich doch früher aufgestanden!"
+     },
+     {
+      "w": "bedauern",
+      "ex": "Ich bedaure, dass ich nicht dabei war."
+     },
+     {
+      "w": "schade, dass",
+      "ex": "Schade, dass wir uns verpasst haben."
+     },
+     {
+      "w": "beim nächsten Mal",
+      "ex": "Beim nächsten Mal buche ich früher."
+     },
+     {
+      "w": "aus etwas lernen",
+      "ex": "Aus diesem Fehler habe ich viel gelernt."
+     }
+    ],
+    "gram": "Irreale Wünsche in der Vergangenheit: Verb zuerst + nur/doch: Hätte ich nur geübt! Wäre ich doch gekommen!"
+   }
+  },
+  {
+   "d": 190,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Konjunktiv II with modals",
+     "g": "Say what should or could have happened: ich hätte kommen sollen, du hättest anrufen können.",
+     "p": [
+      "Form: hätte + infinitive + modal infinitive at the end (double infinitive): Ich hätte kommen sollen.",
+      "Always hätte, never wäre, with modals: Er hätte früher gehen müssen. Wir hätten helfen können.",
+      "In a subordinate clause hätte comes before the two infinitives: ..., dass du hättest anrufen können."
+     ],
+     "q": "What could you have done better in your German practice this week? Use hätte ... können or sollen.",
+     "c": "Write four sentences: hätte ... sollen, hätte ... können, hätte ... müssen and hätte ... dürfen."
+    },
+    "de": {
+     "t": "Konjunktiv II mit Modalverben",
+     "g": "Du sagst, was hätte passieren sollen oder können: ich hätte kommen sollen, du hättest anrufen können.",
+     "p": [
+      "Form: hätte + Infinitiv + Modalverb im Infinitiv am Ende (Doppelinfinitiv): Ich hätte kommen sollen.",
+      "Mit Modalverben immer hätte, nie wäre: Er hätte früher gehen müssen. Wir hätten helfen können.",
+      "Im Nebensatz steht hätte vor den zwei Infinitiven: ..., dass du hättest anrufen können."
+     ],
+     "q": "Was hättest du diese Woche beim Deutschüben besser machen können? Benutze hätte ... können oder sollen.",
+     "c": "Schreib vier Sätze: hätte ... sollen, hätte ... können, hätte ... müssen und hätte ... dürfen."
+    },
+    "es": {
+     "t": "Konjunktiv II con modales",
+     "g": "Di lo que debería o podría haber pasado: ich hätte kommen sollen, du hättest anrufen können.",
+     "p": [
+      "Forma: hätte + infinitivo + modal en infinitivo al final (doble infinitivo): Ich hätte kommen sollen.",
+      "Con modales siempre hätte, nunca wäre: Er hätte früher gehen müssen. Wir hätten helfen können.",
+      "En la subordinada, hätte va delante de los dos infinitivos: ..., dass du hättest anrufen können."
+     ],
+     "q": "¿Qué podrías haber hecho mejor al practicar alemán esta semana? Usa hätte ... können o sollen.",
+     "c": "Escribe cuatro frases: hätte ... sollen, hätte ... können, hätte ... müssen y hätte ... dürfen."
+    },
+    "fr": {
+     "t": "Le Konjunktiv II avec les modaux",
+     "g": "Dire ce qui aurait dû ou pu arriver : ich hätte kommen sollen, du hättest anrufen können.",
+     "p": [
+      "Forme : hätte + infinitif + modal à l'infinitif à la fin (double infinitif) : Ich hätte kommen sollen.",
+      "Avec un modal, toujours hätte, jamais wäre : Er hätte früher gehen müssen. Wir hätten helfen können.",
+      "En subordonnée, hätte se place avant les deux infinitifs : ..., dass du hättest anrufen können."
+     ],
+     "q": "Qu'aurais-tu pu mieux faire en pratiquant l'allemand cette semaine ? Utilise hätte ... können ou sollen.",
+     "c": "Écris quatre phrases : hätte ... sollen, hätte ... können, hätte ... müssen et hätte ... dürfen."
+    },
+    "it": {
+     "t": "Il Konjunktiv II con i modali",
+     "g": "Dici cosa sarebbe dovuto o potuto succedere: ich hätte kommen sollen, du hättest anrufen können.",
+     "p": [
+      "Forma: hätte + infinito + modale all'infinito in fondo (doppio infinito): Ich hätte kommen sollen.",
+      "Con i modali sempre hätte, mai wäre: Er hätte früher gehen müssen. Wir hätten helfen können.",
+      "Nella subordinata hätte va prima dei due infiniti: ..., dass du hättest anrufen können."
+     ],
+     "q": "Che cosa avresti potuto fare meglio esercitando il tedesco questa settimana? Usa hätte ... können o sollen.",
+     "c": "Scrivi quattro frasi: hätte ... sollen, hätte ... können, hätte ... müssen e hätte ... dürfen."
+    },
+    "pt": {
+     "t": "Konjunktiv II com modais",
+     "g": "Dizer o que devia ou podia ter acontecido: ich hätte kommen sollen, du hättest anrufen können.",
+     "p": [
+      "Forma: hätte + infinitivo + modal no infinitivo no fim (duplo infinitivo): Ich hätte kommen sollen.",
+      "Com modais é sempre hätte, nunca wäre: Er hätte früher gehen müssen. Wir hätten helfen können.",
+      "Na subordinada, hätte vem antes dos dois infinitivos: ..., dass du hättest anrufen können."
+     ],
+     "q": "O que podias ter feito melhor ao praticar alemão esta semana? Usa hätte ... können ou sollen.",
+     "c": "Escreve quatro frases: hätte ... sollen, hätte ... können, hätte ... müssen e hätte ... dürfen."
+    },
+    "pt_BR": {
+     "t": "Konjunktiv II com modais",
+     "g": "Dizer o que deveria ou poderia ter acontecido: ich hätte kommen sollen, du hättest anrufen können.",
+     "p": [
+      "Forma: hätte + infinitivo + modal no infinitivo no final (duplo infinitivo): Ich hätte kommen sollen.",
+      "Com modais é sempre hätte, nunca wäre: Er hätte früher gehen müssen. Wir hätten helfen können.",
+      "Na subordinada, hätte vem antes dos dois infinitivos: ..., dass du hättest anrufen können."
+     ],
+     "q": "O que você poderia ter feito melhor ao praticar alemão esta semana? Use hätte ... können ou sollen.",
+     "c": "Escreva quatro frases: hätte ... sollen, hätte ... können, hätte ... müssen e hätte ... dürfen."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "hätte ... sollen",
+      "ex": "Ich hätte früher losfahren sollen."
+     },
+     {
+      "w": "hätte ... können",
+      "ex": "Du hättest mich ruhig anrufen können."
+     },
+     {
+      "w": "hätte ... müssen",
+      "ex": "Wir hätten die Tickets früher kaufen müssen."
+     },
+     {
+      "w": "hätte ... dürfen",
+      "ex": "Eigentlich hätte er dort nicht parken dürfen."
+     },
+     {
+      "w": "eigentlich",
+      "ex": "Eigentlich hätte ich mehr üben sollen."
+     },
+     {
+      "w": "ruhig",
+      "ex": "Du hättest ruhig fragen können."
+     }
+    ],
+    "gram": "Konjunktiv II Vergangenheit mit Modalverb: hätte + Infinitiv + Modalverb-Infinitiv (Ich hätte kommen sollen)."
+   }
+  }
+ ]
+}

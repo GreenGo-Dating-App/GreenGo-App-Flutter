@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 351,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Irony and understatement",
+     "g": "Say more by saying less: Non è proprio un genio.",
+     "p": [
+      "Understatement softens criticism: non è proprio un genio (he's not very clever), non è il massimo (it's not great).",
+      "Irony says the opposite with a tone: Che bella giornata! in pouring rain; Bravo, complimenti! after a mistake.",
+      "Useful softeners: non è che sia..., diciamo che..., un tantino (a tiny bit): è un tantino in ritardo."
+     ],
+     "q": "Do people in your culture use irony a lot, or prefer to speak directly?",
+     "c": "Rewrite three direct criticisms as polite understatements with non è proprio or non è il massimo."
+    },
+    "de": {
+     "t": "Ironie und Untertreibung",
+     "g": "Du sagst mehr mit weniger: Non è proprio un genio.",
+     "p": [
+      "Untertreibung mildert Kritik: non è proprio un genio (nicht gerade ein Genie), non è il massimo (nicht das Gelbe vom Ei).",
+      "Ironie sagt mit dem Tonfall das Gegenteil: Che bella giornata! bei Regen; Bravo, complimenti! nach einem Fehler.",
+      "Nützliche Abschwächer: non è che sia..., diciamo che..., un tantino (ein klein wenig): è un tantino in ritardo."
+     ],
+     "q": "Nutzt man in deiner Kultur viel Ironie oder spricht man lieber direkt?",
+     "c": "Formuliere drei direkte Kritiken als höfliche Untertreibung mit non è proprio oder non è il massimo."
+    },
+    "es": {
+     "t": "Ironía y atenuación",
+     "g": "Decir más diciendo menos: Non è proprio un genio.",
+     "p": [
+      "La atenuación suaviza la crítica: non è proprio un genio (no es precisamente un genio), non è il massimo (no es lo mejor).",
+      "La ironía dice lo contrario con el tono: Che bella giornata! bajo la lluvia; Bravo, complimenti! tras un error.",
+      "Atenuantes útiles: non è che sia..., diciamo che..., un tantino (un poquito): è un tantino in ritardo."
+     ],
+     "q": "¿En tu cultura se usa mucho la ironía o se prefiere hablar claro?",
+     "c": "Reescribe tres críticas directas como atenuaciones corteses con non è proprio o non è il massimo."
+    },
+    "fr": {
+     "t": "Ironie et litote",
+     "g": "Dire plus en disant moins : Non è proprio un genio.",
+     "p": [
+      "La litote adoucit la critique : non è proprio un genio (ce n'est pas un génie), non è il massimo (ce n'est pas terrible).",
+      "L'ironie dit le contraire par le ton : Che bella giornata! sous la pluie ; Bravo, complimenti! après une erreur.",
+      "Atténuateurs utiles : non è che sia..., diciamo che..., un tantino (un tout petit peu) : è un tantino in ritardo."
+     ],
+     "q": "Dans ta culture, utilise-t-on beaucoup l'ironie ou préfère-t-on parler franchement ?",
+     "c": "Réécris trois critiques directes en litotes polies avec non è proprio ou non è il massimo."
+    },
+    "it": {
+     "t": "Ironia e understatement",
+     "g": "Dire di più dicendo di meno: Non è proprio un genio.",
+     "p": [
+      "L'attenuazione ammorbidisce la critica: non è proprio un genio, non è il massimo, poteva andare meglio.",
+      "L'ironia dice il contrario con il tono: Che bella giornata! sotto la pioggia; Bravo, complimenti! dopo un errore.",
+      "Attenuatori utili: non è che sia..., diciamo che..., un tantino: è un tantino in ritardo."
+     ],
+     "q": "Nella tua cultura si usa molto l'ironia o si preferisce parlare in modo diretto?",
+     "c": "Riscrivi tre critiche dirette come attenuazioni cortesi con non è proprio o non è il massimo."
+    },
+    "pt": {
+     "t": "Ironia e eufemismo",
+     "g": "Dizer mais dizendo menos: Non è proprio un genio.",
+     "p": [
+      "A atenuação suaviza a crítica: non è proprio un genio (não é propriamente um génio), non è il massimo (não é o ideal).",
+      "A ironia diz o contrário com o tom: Che bella giornata! à chuva; Bravo, complimenti! depois de um erro.",
+      "Atenuadores úteis: non è che sia..., diciamo che..., un tantino (um bocadinho): è un tantino in ritardo."
+     ],
+     "q": "Na tua cultura usa-se muito a ironia ou prefere-se falar direto?",
+     "c": "Reescreve três críticas diretas como atenuações educadas com non è proprio ou non è il massimo."
+    },
+    "pt_BR": {
+     "t": "Ironia e eufemismo",
+     "g": "Dizer mais dizendo menos: Non è proprio un genio.",
+     "p": [
+      "A atenuação suaviza a crítica: non è proprio un genio (não é bem um gênio), non è il massimo (não é lá essas coisas).",
+      "A ironia diz o contrário com o tom: Che bella giornata! debaixo de chuva; Bravo, complimenti! depois de um erro.",
+      "Atenuadores úteis: non è che sia..., diciamo che..., un tantino (um pouquinho): è un tantino in ritardo."
+     ],
+     "q": "Na sua cultura se usa muito a ironia ou se prefere falar direto?",
+     "c": "Reescreva três críticas diretas como atenuações educadas com non è proprio ou non è il massimo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "non è proprio un genio",
+      "ex": "Simpatico, ma non è proprio un genio in cucina."
+     },
+     {
+      "w": "non è il massimo",
+      "ex": "Il wifi dell'albergo non è il massimo."
+     },
+     {
+      "w": "un tantino",
+      "ex": "Il caffè è un tantino forte per me."
+     },
+     {
+      "w": "diciamo che",
+      "ex": "Diciamo che la cena non era indimenticabile."
+     },
+     {
+      "w": "poteva andare meglio",
+      "ex": "L'esame? Poteva andare meglio."
+     },
+     {
+      "w": "non è che sia",
+      "ex": "Non è che sia brutto, ma preferisco l'altro."
+     }
+    ],
+    "gram": "Non è che + congiuntivo attenua: non è che sia difficile, non è che io abbia molta voglia."
+   }
+  },
+  {
+   "d": 352,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Telling jokes in Italian",
+     "g": "Master timing, wordplay and simple barzellette that work.",
+     "p": [
+      "A barzelletta often starts: C'è un italiano, un francese e un inglese... or Sai qual è il colmo per...?",
+      "Il colmo (the height of) is classic wordplay: Il colmo per un elettricista? Non fare scintille a scuola.",
+      "Timing: pause before the punchline (la battuta finale), keep it short, and laugh with people, never at them."
+     ],
+     "q": "What kind of humour do you enjoy: wordplay, absurd stories or funny anecdotes?",
+     "c": "Learn one colmo joke in Italian and tell it to me with good timing."
+    },
+    "de": {
+     "t": "Witze auf Italienisch erzählen",
+     "g": "Du beherrschst Timing, Wortspiele und einfache barzellette, die funktionieren.",
+     "p": [
+      "Eine barzelletta beginnt oft: C'è un italiano, un francese e un inglese... oder Sai qual è il colmo per...?",
+      "Il colmo (der Gipfel) ist ein klassisches Wortspiel: Il colmo per un elettricista? Non fare scintille a scuola.",
+      "Timing: Pause vor der Pointe (la battuta finale), kurz halten, mit Menschen lachen, nie über sie."
+     ],
+     "q": "Welchen Humor magst du: Wortspiele, absurde Geschichten oder lustige Anekdoten?",
+     "c": "Lerne einen colmo-Witz auf Italienisch und erzähl ihn mir mit gutem Timing."
+    },
+    "es": {
+     "t": "Contar chistes en italiano",
+     "g": "Dominar el ritmo, los juegos de palabras y barzellette sencillas que funcionen.",
+     "p": [
+      "Una barzelletta suele empezar: C'è un italiano, un francese e un inglese... o Sai qual è il colmo per...?",
+      "Il colmo (el colmo) es un juego de palabras clásico: Il colmo per un elettricista? Non fare scintille a scuola.",
+      "Ritmo: pausa antes del remate (la battuta finale), brevedad, y reír con la gente, nunca de ella."
+     ],
+     "q": "¿Qué humor te gusta: juegos de palabras, historias absurdas o anécdotas graciosas?",
+     "c": "Aprende un chiste de colmo en italiano y cuéntamelo con buen ritmo."
+    },
+    "fr": {
+     "t": "Raconter des blagues en italien",
+     "g": "Maîtriser le timing, les jeux de mots et des barzellette simples qui marchent.",
+     "p": [
+      "Une barzelletta commence souvent par : C'è un italiano, un francese e un inglese... ou Sai qual è il colmo per...?",
+      "Il colmo (le comble) est un jeu de mots classique : Il colmo per un elettricista? Non fare scintille a scuola.",
+      "Timing : pause avant la chute (la battuta finale), reste bref, et ris avec les gens, jamais d'eux."
+     ],
+     "q": "Quel humour aimes-tu : jeux de mots, histoires absurdes ou anecdotes drôles ?",
+     "c": "Apprends une blague de colmo en italien et raconte-la-moi avec un bon timing."
+    },
+    "it": {
+     "t": "Raccontare barzellette",
+     "g": "Padroneggiare tempi comici, giochi di parole e barzellette semplici che funzionano.",
+     "p": [
+      "Una barzelletta spesso inizia così: C'è un italiano, un francese e un inglese... oppure Sai qual è il colmo per...?",
+      "Il colmo è un classico gioco di parole: Il colmo per un elettricista? Non fare scintille a scuola.",
+      "Tempi: una pausa prima della battuta finale, brevità, e si ride con le persone, mai delle persone."
+     ],
+     "q": "Che tipo di umorismo ti piace: giochi di parole, storie assurde o aneddoti divertenti?",
+     "c": "Impara una barzelletta sul colmo e raccontamela con i tempi giusti."
+    },
+    "pt": {
+     "t": "Contar anedotas em italiano",
+     "g": "Dominar o ritmo, os trocadilhos e barzellette simples que funcionam.",
+     "p": [
+      "Uma barzelletta começa muitas vezes: C'è un italiano, un francese e un inglese... ou Sai qual è il colmo per...?",
+      "Il colmo (o cúmulo) é um trocadilho clássico: Il colmo per un elettricista? Non fare scintille a scuola.",
+      "Ritmo: pausa antes da piada final (la battuta finale), brevidade, e rir com as pessoas, nunca delas."
+     ],
+     "q": "Que tipo de humor aprecias mais: trocadilhos, histórias absurdas ou episódios engraçados?",
+     "c": "Aprende uma anedota de colmo em italiano e conta-ma com bom ritmo."
+    },
+    "pt_BR": {
+     "t": "Contando piadas em italiano",
+     "g": "Dominar o timing, os trocadilhos e barzellette simples que funcionam.",
+     "p": [
+      "Uma barzelletta muitas vezes começa: C'è un italiano, un francese e un inglese... ou Sai qual è il colmo per...?",
+      "Il colmo (o cúmulo) é um trocadilho clássico: Il colmo per un elettricista? Non fare scintille a scuola.",
+      "Timing: pausa antes do desfecho (la battuta finale), seja breve, e ria com as pessoas, nunca delas."
+     ],
+     "q": "Que tipo de humor você curte: trocadilhos, histórias absurdas ou casos engraçados?",
+     "c": "Aprenda uma piada de colmo em italiano e conte para mim com bom timing."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la barzelletta",
+      "ex": "Mio zio racconta sempre la stessa barzelletta."
+     },
+     {
+      "w": "il colmo",
+      "ex": "Il colmo per un orologiaio? Non avere mai tempo!"
+     },
+     {
+      "w": "la battuta",
+      "ex": "Non ho capito la battuta, me la spieghi?"
+     },
+     {
+      "w": "far ridere",
+      "ex": "Questa storia mi fa ridere ogni volta."
+     },
+     {
+      "w": "il gioco di parole",
+      "ex": "La barzelletta si basa su un gioco di parole."
+     },
+     {
+      "w": "scherzare",
+      "ex": "Dai, stavo solo scherzando!"
+     }
+    ],
+    "gram": "Fare + infinito: far ridere, far piangere; pronome prima: mi fa ridere, ci ha fatto ridere tutti."
+   }
+  },
+  {
+   "d": 353,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Giving a toast or a speech",
+     "g": "Structure a short, warm speech for a celebration: un brindisi.",
+     "p": [
+      "Open by getting attention and thanking: Posso avere un attimo di attenzione? Grazie a tutti di essere qui.",
+      "Middle: a short anecdote or a quality of the person: Ricordo quando..., Marta è una persona che...",
+      "Close with wishes and the toast: Vi auguro..., Alziamo i calici a...! Cin cin! Auguri!"
+     ],
+     "q": "Have you ever given a speech or a toast at a celebration?",
+     "c": "Write a five-sentence toast for a friend's birthday or graduation, with an anecdote and a wish."
+    },
+    "de": {
+     "t": "Einen Trinkspruch oder eine Rede halten",
+     "g": "Du baust eine kurze, herzliche Rede für eine Feier auf: un brindisi.",
+     "p": [
+      "Beginn: Aufmerksamkeit holen und danken: Posso avere un attimo di attenzione? Grazie a tutti di essere qui.",
+      "Mitte: eine kurze Anekdote oder eine Eigenschaft der Person: Ricordo quando..., Marta è una persona che...",
+      "Schluss mit Wünschen und Toast: Vi auguro..., Alziamo i calici a...! Cin cin! Auguri!"
+     ],
+     "q": "Hast du schon einmal eine Rede oder einen Trinkspruch auf einer Feier gehalten?",
+     "c": "Schreib einen Trinkspruch in fünf Sätzen zum Geburtstag oder Abschluss eines Freundes, mit Anekdote und Wunsch."
+    },
+    "es": {
+     "t": "Hacer un brindis o un discurso",
+     "g": "Estructurar un discurso breve y cálido para una celebración: un brindisi.",
+     "p": [
+      "Abre captando la atención y agradeciendo: Posso avere un attimo di attenzione? Grazie a tutti di essere qui.",
+      "Parte central: una anécdota o una cualidad de la persona: Ricordo quando..., Marta è una persona che...",
+      "Cierra con deseos y el brindis: Vi auguro..., Alziamo i calici a...! Cin cin! Auguri!"
+     ],
+     "q": "¿Alguna vez has dado un discurso o un brindis en una celebración?",
+     "c": "Escribe un brindis de cinco frases para el cumpleaños o la graduación de un amigo, con anécdota y deseo."
+    },
+    "fr": {
+     "t": "Porter un toast ou faire un discours",
+     "g": "Structurer un discours court et chaleureux pour une fête : un brindisi.",
+     "p": [
+      "Ouvre en captant l'attention et en remerciant : Posso avere un attimo di attenzione? Grazie a tutti di essere qui.",
+      "Milieu : une anecdote ou une qualité de la personne : Ricordo quando..., Marta è una persona che...",
+      "Termine par des vœux et le toast : Vi auguro..., Alziamo i calici a...! Cin cin! Auguri!"
+     ],
+     "q": "As-tu déjà fait un discours ou porté un toast lors d'une fête ?",
+     "c": "Écris un toast en cinq phrases pour l'anniversaire ou le diplôme d'un ami, avec une anecdote et un vœu."
+    },
+    "it": {
+     "t": "Fare un brindisi o un discorso",
+     "g": "Strutturare un discorso breve e caloroso per una festa: un brindisi.",
+     "p": [
+      "Apri chiedendo attenzione e ringraziando: Posso avere un attimo di attenzione? Grazie a tutti di essere qui.",
+      "Al centro un breve aneddoto o una qualità della persona: Ricordo quando..., Marta è una persona che...",
+      "Chiudi con gli auguri e il brindisi: Vi auguro..., Alziamo i calici a...! Cin cin! Auguri!"
+     ],
+     "q": "Ti è mai capitato di fare un discorso o un brindisi a una festa?",
+     "c": "Scrivi un brindisi di cinque frasi per il compleanno o la laurea di un amico, con un aneddoto e un augurio."
+    },
+    "pt": {
+     "t": "Fazer um brinde ou um discurso",
+     "g": "Estruturar um discurso curto e caloroso para uma celebração: un brindisi.",
+     "p": [
+      "Abre a pedir atenção e a agradecer: Posso avere un attimo di attenzione? Grazie a tutti di essere qui.",
+      "Meio: uma pequena história ou uma qualidade da pessoa: Ricordo quando..., Marta è una persona che...",
+      "Fecha com votos e o brinde: Vi auguro..., Alziamo i calici a...! Cin cin! Auguri!"
+     ],
+     "q": "Já fizeste um discurso ou um brinde numa celebração?",
+     "c": "Escreve um brinde de cinco frases para o aniversário ou a formatura de um amigo, com uma história e um voto."
+    },
+    "pt_BR": {
+     "t": "Fazendo um brinde ou discurso",
+     "g": "Estruturar um discurso curto e caloroso para uma comemoração: un brindisi.",
+     "p": [
+      "Abra pedindo atenção e agradecendo: Posso avere un attimo di attenzione? Grazie a tutti di essere qui.",
+      "Meio: uma pequena história ou uma qualidade da pessoa: Ricordo quando..., Marta è una persona che...",
+      "Feche com votos e o brinde: Vi auguro..., Alziamo i calici a...! Cin cin! Auguri!"
+     ],
+     "q": "Você já fez um discurso ou um brinde numa comemoração?",
+     "c": "Escreva um brinde de cinco frases para o aniversário ou a formatura de um amigo, com uma história e um desejo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un attimo di attenzione",
+      "ex": "Scusate, posso avere un attimo di attenzione?"
+     },
+     {
+      "w": "alzare i calici",
+      "ex": "Alziamo i calici agli sposi!"
+     },
+     {
+      "w": "l'aneddoto",
+      "ex": "Vi racconto un aneddoto divertente su Luca."
+     },
+     {
+      "w": "augurare",
+      "ex": "Ti auguro tanta felicità e successo."
+     },
+     {
+      "w": "la laurea",
+      "ex": "Festeggiamo la laurea di Chiara!"
+     },
+     {
+      "w": "ringraziare di cuore",
+      "ex": "Vi ringrazio di cuore per essere venuti."
+     }
+    ],
+    "gram": "Augurare a qualcuno qualcosa / di + infinito: ti auguro di realizzare i tuoi sogni; vi auguro buon viaggio."
+   }
+  },
+  {
+   "d": 354,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Arguing both sides",
+     "g": "Present pros and cons fairly before giving your view.",
+     "p": [
+      "Present the pros: Tra i vantaggi c'è..., A favore di questa idea si può dire che...",
+      "Present the cons: Tra gli svantaggi..., D'altra parte, bisogna considerare che..., Il rovescio della medaglia è...",
+      "Then decide: Tutto sommato (all things considered), Dopo aver valutato i pro e i contro, ritengo che..."
+     ],
+     "q": "Is there a decision you made recently after weighing pros and cons?",
+     "c": "Choose a topic (city or countryside?) and write two pros, two cons and your final view with tutto sommato."
+    },
+    "de": {
+     "t": "Beide Seiten darlegen",
+     "g": "Du stellst Vor- und Nachteile fair dar, bevor du deine Meinung sagst.",
+     "p": [
+      "Vorteile: Tra i vantaggi c'è..., A favore di questa idea si può dire che...",
+      "Nachteile: Tra gli svantaggi..., D'altra parte, bisogna considerare che..., Il rovescio della medaglia è... (die Kehrseite).",
+      "Dann entscheiden: Tutto sommato (alles in allem), Dopo aver valutato i pro e i contro, ritengo che..."
+     ],
+     "q": "Hast du kürzlich eine Entscheidung nach Abwägen von Vor- und Nachteilen getroffen?",
+     "c": "Wähle ein Thema (Stadt oder Land?) und schreib zwei Vorteile, zwei Nachteile und dein Fazit mit tutto sommato."
+    },
+    "es": {
+     "t": "Argumentar ambas posturas",
+     "g": "Presentar con justicia los pros y los contras antes de dar tu opinión.",
+     "p": [
+      "Los pros: Tra i vantaggi c'è..., A favore di questa idea si può dire che...",
+      "Los contras: Tra gli svantaggi..., D'altra parte, bisogna considerare che..., Il rovescio della medaglia è... (la otra cara).",
+      "Y decide: Tutto sommato (en resumidas cuentas), Dopo aver valutato i pro e i contro, ritengo che..."
+     ],
+     "q": "¿Has tomado hace poco alguna decisión tras sopesar pros y contras?",
+     "c": "Elige un tema (¿ciudad o campo?) y escribe dos pros, dos contras y tu opinión final con tutto sommato."
+    },
+    "fr": {
+     "t": "Présenter les deux côtés",
+     "g": "Présenter honnêtement le pour et le contre avant de donner ton avis.",
+     "p": [
+      "Le pour : Tra i vantaggi c'è..., A favore di questa idea si può dire che...",
+      "Le contre : Tra gli svantaggi..., D'altra parte, bisogna considerare che..., Il rovescio della medaglia è... (le revers de la médaille).",
+      "Puis tranche : Tutto sommato (tout bien considéré), Dopo aver valutato i pro e i contro, ritengo che..."
+     ],
+     "q": "As-tu pris récemment une décision après avoir pesé le pour et le contre ?",
+     "c": "Choisis un sujet (ville ou campagne ?) et écris deux pour, deux contre et ton avis final avec tutto sommato."
+    },
+    "it": {
+     "t": "Argomentare le due posizioni",
+     "g": "Presentare in modo equilibrato pro e contro prima di dare la tua opinione.",
+     "p": [
+      "I pro: Tra i vantaggi c'è..., A favore di questa idea si può dire che...",
+      "I contro: Tra gli svantaggi..., D'altra parte, bisogna considerare che..., Il rovescio della medaglia è...",
+      "Poi decidi: Tutto sommato, Dopo aver valutato i pro e i contro, ritengo che..."
+     ],
+     "q": "Hai preso di recente una decisione dopo aver valutato pro e contro?",
+     "c": "Scegli un tema (città o campagna?) e scrivi due pro, due contro e la tua opinione finale con tutto sommato."
+    },
+    "pt": {
+     "t": "Argumentar os dois lados",
+     "g": "Apresentar com justiça os prós e os contras antes de dar a tua opinião.",
+     "p": [
+      "Os prós: Tra i vantaggi c'è..., A favore di questa idea si può dire che...",
+      "Os contras: Tra gli svantaggi..., D'altra parte, bisogna considerare che..., Il rovescio della medaglia è... (o reverso da medalha).",
+      "Depois decide: Tutto sommato (feitas as contas), Dopo aver valutato i pro e i contro, ritengo che..."
+     ],
+     "q": "Tomaste recentemente alguma decisão depois de pesar prós e contras?",
+     "c": "Escolhe um tema (cidade ou campo?) e escreve dois prós, dois contras e a tua opinião final com tutto sommato."
+    },
+    "pt_BR": {
+     "t": "Argumentando os dois lados",
+     "g": "Apresentar com justiça os prós e os contras antes de dar sua opinião.",
+     "p": [
+      "Os prós: Tra i vantaggi c'è..., A favore di questa idea si può dire che...",
+      "Os contras: Tra gli svantaggi..., D'altra parte, bisogna considerare che..., Il rovescio della medaglia è... (o outro lado da moeda).",
+      "Depois decida: Tutto sommato (no fim das contas), Dopo aver valutato i pro e i contro, ritengo che..."
+     ],
+     "q": "Você tomou recentemente alguma decisão depois de pesar prós e contras?",
+     "c": "Escolha um tema (cidade ou campo?) e escreva dois prós, dois contras e sua opinião final com tutto sommato."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "i pro e i contro",
+      "ex": "Prima di decidere, valutiamo i pro e i contro."
+     },
+     {
+      "w": "tra i vantaggi",
+      "ex": "Tra i vantaggi della città c'è la vita culturale."
+     },
+     {
+      "w": "il rovescio della medaglia",
+      "ex": "Il rovescio della medaglia è il traffico."
+     },
+     {
+      "w": "bisogna considerare",
+      "ex": "Bisogna considerare anche il costo della vita."
+     },
+     {
+      "w": "tutto sommato",
+      "ex": "Tutto sommato, preferisco vivere in campagna."
+     },
+     {
+      "w": "dopo aver valutato",
+      "ex": "Dopo aver valutato tutto, ho cambiato idea."
+     }
+    ],
+    "gram": "Dopo + infinito passato: dopo aver valutato, dopo essere arrivato (stesso soggetto della frase principale)."
+   }
+  },
+  {
+   "d": 355,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Improvisation games",
+     "g": "Keep talking on a random topic for one minute without stopping.",
+     "p": [
+      "Gain time naturally with fillers: allora, dunque, vediamo, come dire, ecco, insomma.",
+      "Use a simple frame: what it is, a personal memory, an opinion, a conclusion: Per me..., Mi ricordo che..., Insomma...",
+      "If you lack a word, paraphrase: è una cosa che si usa per..., è come... ma più piccolo."
+     ],
+     "q": "If I gave you the topic l'ombrello, could you talk for one minute?",
+     "c": "Set a timer for one minute and talk aloud in Italian about a random object near you."
+    },
+    "de": {
+     "t": "Improvisationsspiele",
+     "g": "Du sprichst eine Minute lang ohne Pause über ein zufälliges Thema.",
+     "p": [
+      "Gewinne natürlich Zeit mit Füllwörtern: allora, dunque, vediamo, come dire, ecco, insomma.",
+      "Nutze ein Gerüst: was es ist, eine Erinnerung, eine Meinung, ein Fazit: Per me..., Mi ricordo che..., Insomma...",
+      "Fehlt ein Wort, umschreibe: è una cosa che si usa per..., è come... ma più piccolo."
+     ],
+     "q": "Wenn ich dir das Thema l'ombrello gäbe, könntest du eine Minute sprechen?",
+     "c": "Stell einen Timer auf eine Minute und sprich laut auf Italienisch über einen Gegenstand in deiner Nähe."
+    },
+    "es": {
+     "t": "Juegos de improvisación",
+     "g": "Hablar un minuto sin parar sobre un tema al azar.",
+     "p": [
+      "Gana tiempo con naturalidad con muletillas: allora, dunque, vediamo, come dire, ecco, insomma.",
+      "Usa un esquema: qué es, un recuerdo, una opinión, una conclusión: Per me..., Mi ricordo che..., Insomma...",
+      "Si te falta una palabra, parafrasea: è una cosa che si usa per..., è come... ma più piccolo."
+     ],
+     "q": "Si te diera el tema l'ombrello, ¿podrías hablar un minuto?",
+     "c": "Pon un temporizador de un minuto y habla en voz alta en italiano sobre un objeto cercano."
+    },
+    "fr": {
+     "t": "Jeux d'improvisation",
+     "g": "Parler une minute sans t'arrêter sur un sujet tiré au hasard.",
+     "p": [
+      "Gagne du temps naturellement avec des mots de remplissage : allora, dunque, vediamo, come dire, ecco, insomma.",
+      "Utilise un plan simple : ce que c'est, un souvenir, un avis, une conclusion : Per me..., Mi ricordo che..., Insomma...",
+      "Si un mot te manque, paraphrase : è una cosa che si usa per..., è come... ma più piccolo."
+     ],
+     "q": "Si je te donnais le sujet l'ombrello, pourrais-tu parler une minute ?",
+     "c": "Lance un minuteur d'une minute et parle à voix haute en italien d'un objet près de toi."
+    },
+    "it": {
+     "t": "Giochi di improvvisazione",
+     "g": "Parlare per un minuto senza fermarti su un argomento a caso.",
+     "p": [
+      "Prendi tempo in modo naturale con gli intercalari: allora, dunque, vediamo, come dire, ecco, insomma.",
+      "Usa uno schema semplice: che cos'è, un ricordo, un'opinione, una conclusione: Per me..., Mi ricordo che..., Insomma...",
+      "Se ti manca una parola, usa una perifrasi: è una cosa che si usa per..., è come... ma più piccolo."
+     ],
+     "q": "Se ti dessi l'argomento l'ombrello, riusciresti a parlare per un minuto?",
+     "c": "Imposta un timer di un minuto e parla ad alta voce di un oggetto vicino a te."
+    },
+    "pt": {
+     "t": "Jogos de improviso",
+     "g": "Falar um minuto sem parar sobre um tema ao acaso.",
+     "p": [
+      "Ganha tempo com naturalidade com bordões: allora, dunque, vediamo, come dire, ecco, insomma.",
+      "Usa um esquema simples: o que é, uma memória, uma opinião, uma conclusão: Per me..., Mi ricordo che..., Insomma...",
+      "Se te faltar uma palavra, parafraseia: è una cosa che si usa per..., è come... ma più piccolo."
+     ],
+     "q": "Se eu te desse o tema l'ombrello, conseguias falar um minuto?",
+     "c": "Põe um temporizador de um minuto e fala em voz alta em italiano sobre um objeto perto de ti."
+    },
+    "pt_BR": {
+     "t": "Jogos de improviso",
+     "g": "Falar um minuto sem parar sobre um tema aleatório.",
+     "p": [
+      "Ganhe tempo com naturalidade usando bordões: allora, dunque, vediamo, come dire, ecco, insomma.",
+      "Use um esquema simples: o que é, uma lembrança, uma opinião, uma conclusão: Per me..., Mi ricordo che..., Insomma...",
+      "Se faltar uma palavra, parafraseie: è una cosa che si usa per..., è come... ma più piccolo."
+     ],
+     "q": "Se eu desse o tema l'ombrello, você conseguiria falar por um minuto?",
+     "c": "Coloque um timer de um minuto e fale em voz alta em italiano sobre um objeto perto de você."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "allora",
+      "ex": "Allora, vediamo... l'ombrello è utilissimo."
+     },
+     {
+      "w": "come dire",
+      "ex": "È, come dire, un po' complicato."
+     },
+     {
+      "w": "ecco",
+      "ex": "Ecco, questo è il punto principale."
+     },
+     {
+      "w": "si usa per",
+      "ex": "È una cosa che si usa per aprire le bottiglie."
+     },
+     {
+      "w": "mi ricordo che",
+      "ex": "Mi ricordo che da bambino lo perdevo sempre."
+     },
+     {
+      "w": "improvvisare",
+      "ex": "Non ho preparato niente, devo improvvisare!"
+     }
+    ],
+    "gram": "Perifrasi quando manca una parola: è una cosa che si usa per + infinito; è un tipo di + nome; è simile a..."
+   }
+  },
+  {
+   "d": 356,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Review: creative Italian",
+     "g": "Recap poetry, storytelling, humour and speeches.",
+     "p": [
+      "Poetry and songs: il verso, la strofa, il ritornello; talk about texts in the present: il testo parla di...",
+      "Stories and feelings: imperfetto for background, passato remoto for action; provare nostalgia, mi mette allegria.",
+      "Humour and speeches: understatement (non è il massimo), il colmo, and a toast with Alziamo i calici!"
+     ],
+     "q": "Which creative activity in Italian did you enjoy most?",
+     "c": "Tell me a tiny story in four sentences that ends with an ironic line."
+    },
+    "de": {
+     "t": "Wiederholung: kreatives Italienisch",
+     "g": "Du wiederholst Lyrik, Erzählen, Humor und Reden.",
+     "p": [
+      "Lyrik und Lieder: il verso, la strofa, il ritornello; über Texte im Präsens: il testo parla di...",
+      "Geschichten und Gefühle: imperfetto für den Hintergrund, passato remoto für Handlung; provare nostalgia, mi mette allegria.",
+      "Humor und Reden: Untertreibung (non è il massimo), il colmo und ein Toast mit Alziamo i calici!"
+     ],
+     "q": "Welche kreative Aktivität auf Italienisch hat dir am meisten Spaß gemacht?",
+     "c": "Erzähl mir eine winzige Geschichte in vier Sätzen, die mit einem ironischen Satz endet."
+    },
+    "es": {
+     "t": "Repaso: italiano creativo",
+     "g": "Repasar poesía, narración, humor y discursos.",
+     "p": [
+      "Poesía y canciones: il verso, la strofa, il ritornello; hablar de textos en presente: il testo parla di...",
+      "Relatos y sentimientos: imperfetto para el fondo, passato remoto para la acción; provare nostalgia, mi mette allegria.",
+      "Humor y discursos: atenuación (non è il massimo), il colmo y un brindis con Alziamo i calici!"
+     ],
+     "q": "¿Qué actividad creativa en italiano disfrutaste más?",
+     "c": "Cuéntame una historia mínima de cuatro frases que termine con una frase irónica."
+    },
+    "fr": {
+     "t": "Révision : italien créatif",
+     "g": "Réviser la poésie, le récit, l'humour et les discours.",
+     "p": [
+      "Poésie et chansons : il verso, la strofa, il ritornello ; parler des textes au présent : il testo parla di...",
+      "Récits et émotions : imperfetto pour le décor, passato remoto pour l'action ; provare nostalgia, mi mette allegria.",
+      "Humour et discours : litote (non è il massimo), il colmo et un toast avec Alziamo i calici!"
+     ],
+     "q": "Quelle activité créative en italien as-tu préférée ?",
+     "c": "Raconte-moi une mini-histoire en quatre phrases qui finit par une phrase ironique."
+    },
+    "it": {
+     "t": "Ripasso: italiano creativo",
+     "g": "Ripassare poesia, narrazione, umorismo e discorsi.",
+     "p": [
+      "Poesia e canzoni: il verso, la strofa, il ritornello; parlare dei testi al presente: il testo parla di...",
+      "Racconti ed emozioni: imperfetto per lo sfondo, passato remoto per l'azione; provare nostalgia, mi mette allegria.",
+      "Umorismo e discorsi: attenuazione (non è il massimo), il colmo e un brindisi con Alziamo i calici!"
+     ],
+     "q": "Quale attività creativa in italiano ti è piaciuta di più?",
+     "c": "Raccontami una storia minima in quattro frasi che finisca con una battuta ironica."
+    },
+    "pt": {
+     "t": "Revisão: italiano criativo",
+     "g": "Rever poesia, narração, humor e discursos.",
+     "p": [
+      "Poesia e canções: il verso, la strofa, il ritornello; falar de textos no presente: il testo parla di...",
+      "Histórias e sentimentos: imperfetto para o fundo, passato remoto para a ação; provare nostalgia, mi mette allegria.",
+      "Humor e discursos: atenuação (non è il massimo), il colmo e um brinde com Alziamo i calici!"
+     ],
+     "q": "Que atividade criativa em italiano te deu mais gosto?",
+     "c": "Conta-me uma mini-história em quatro frases que acabe com uma frase irónica."
+    },
+    "pt_BR": {
+     "t": "Revisão: italiano criativo",
+     "g": "Revisar poesia, narração, humor e discursos.",
+     "p": [
+      "Poesia e canções: il verso, la strofa, il ritornello; falar de textos no presente: il testo parla di...",
+      "Histórias e sentimentos: imperfetto para o fundo, passato remoto para a ação; provare nostalgia, mi mette allegria.",
+      "Humor e discursos: atenuação (non è il massimo), il colmo e um brinde com Alziamo i calici!"
+     ],
+     "q": "Qual atividade criativa em italiano você mais curtiu?",
+     "c": "Conte uma mini-história em quatro frases que termine com uma frase irônica."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la poesia",
+      "ex": "Questa poesia parla del mare d'inverno."
+     },
+     {
+      "w": "il racconto",
+      "ex": "Nel mio racconto c'è un colpo di scena."
+     },
+     {
+      "w": "provare nostalgia",
+      "ex": "Guardando le foto provo nostalgia."
+     },
+     {
+      "w": "la battuta finale",
+      "ex": "La battuta finale ha fatto ridere tutti."
+     },
+     {
+      "w": "il brindisi",
+      "ex": "Il brindisi di Anna è stato commovente."
+     },
+     {
+      "w": "non è il massimo",
+      "ex": "Il finale non è il massimo, ma il libro sì."
+     }
+    ],
+    "gram": "Imperfetto (descrizione) + passato remoto (evento): Mentre camminavo, incontrai un vecchio amico."
+   }
+  },
+  {
+   "d": 357,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Italian for travellers: expert tips",
+     "g": "Handle any travel situation with confidence and local phrases.",
+     "p": [
+      "Trains: convalidare il biglietto (validate regional tickets), il binario, il treno è in ritardo, la coincidenza (connection).",
+      "At the bar: il caffè al banco (at the counter) costs less than al tavolo; you often pay first at la cassa, then order.",
+      "Problems: Mi scusi, c'è un problema con la prenotazione. Potrebbe aiutarmi? Ho perso la coincidenza."
+     ],
+     "q": "What is the trickiest travel situation you have ever handled?",
+     "c": "Write a polite three-sentence dialogue to solve a travel problem at a station or hotel."
+    },
+    "de": {
+     "t": "Italienisch für Reisende: Profi-Tipps",
+     "g": "Du meisterst jede Reisesituation sicher und mit lokalen Wendungen.",
+     "p": [
+      "Züge: convalidare il biglietto (Regionaltickets entwerten), il binario, il treno è in ritardo, la coincidenza (Anschluss).",
+      "In der Bar: il caffè al banco (an der Theke) kostet weniger als al tavolo; oft zahlt man zuerst an la cassa.",
+      "Probleme: Mi scusi, c'è un problema con la prenotazione. Potrebbe aiutarmi? Ho perso la coincidenza."
+     ],
+     "q": "Was war die kniffligste Reisesituation, die du je gemeistert hast?",
+     "c": "Schreib einen höflichen Dialog in drei Sätzen, um ein Reiseproblem am Bahnhof oder im Hotel zu lösen."
+    },
+    "es": {
+     "t": "Italiano para viajeros: consejos expertos",
+     "g": "Resolver cualquier situación de viaje con seguridad y frases locales.",
+     "p": [
+      "Trenes: convalidare il biglietto (validar billetes regionales), il binario (andén), il treno è in ritardo, la coincidenza (enlace).",
+      "En el bar: il caffè al banco (en la barra) cuesta menos que al tavolo; a menudo se paga primero en la cassa.",
+      "Problemas: Mi scusi, c'è un problema con la prenotazione. Potrebbe aiutarmi? Ho perso la coincidenza."
+     ],
+     "q": "¿Cuál es la situación de viaje más complicada que has resuelto?",
+     "c": "Escribe un diálogo cortés de tres frases para resolver un problema en una estación o un hotel."
+    },
+    "fr": {
+     "t": "L'italien en voyage : astuces d'expert",
+     "g": "Gérer toute situation de voyage avec assurance et des expressions locales.",
+     "p": [
+      "Trains : convalidare il biglietto (composter un billet régional), il binario (quai), il treno è in ritardo, la coincidenza.",
+      "Au bar : il caffè al banco (au comptoir) coûte moins cher qu'al tavolo ; on paie souvent d'abord à la cassa.",
+      "Problèmes : Mi scusi, c'è un problema con la prenotazione. Potrebbe aiutarmi? Ho perso la coincidenza."
+     ],
+     "q": "Quelle est la situation de voyage la plus délicate que tu aies gérée ?",
+     "c": "Écris un dialogue poli de trois phrases pour régler un problème à la gare ou à l'hôtel."
+    },
+    "it": {
+     "t": "Italiano per viaggiatori esperti",
+     "g": "Affrontare ogni situazione di viaggio con sicurezza ed espressioni locali.",
+     "p": [
+      "Treni: convalidare il biglietto regionale, il binario, il treno è in ritardo, la coincidenza.",
+      "Al bar: il caffè al banco costa meno che al tavolo; spesso si paga prima alla cassa e poi si ordina.",
+      "Problemi: Mi scusi, c'è un problema con la prenotazione. Potrebbe aiutarmi? Ho perso la coincidenza."
+     ],
+     "q": "Qual è la situazione di viaggio più complicata che hai affrontato?",
+     "c": "Scrivi un dialogo cortese di tre frasi per risolvere un problema in stazione o in albergo."
+    },
+    "pt": {
+     "t": "Italiano para viajantes: dicas de especialista",
+     "g": "Resolver qualquer situação de viagem com confiança e expressões locais.",
+     "p": [
+      "Comboios: convalidare il biglietto (validar bilhetes regionais), il binario (linha), il treno è in ritardo, la coincidenza (ligação).",
+      "No bar: il caffè al banco (ao balcão) custa menos do que al tavolo; muitas vezes paga-se primeiro na cassa.",
+      "Problemas: Mi scusi, c'è un problema con la prenotazione. Potrebbe aiutarmi? Ho perso la coincidenza."
+     ],
+     "q": "Qual foi a situação de viagem mais complicada que já resolveste?",
+     "c": "Escreve um diálogo cortês de três frases para resolver um problema numa estação ou num hotel."
+    },
+    "pt_BR": {
+     "t": "Italiano para viajantes: dicas de especialista",
+     "g": "Resolver qualquer situação de viagem com confiança e expressões locais.",
+     "p": [
+      "Trens: convalidare il biglietto (validar bilhetes regionais), il binario (plataforma), il treno è in ritardo, la coincidenza (conexão).",
+      "No bar: il caffè al banco (no balcão) custa menos que al tavolo; muitas vezes se paga primeiro na cassa.",
+      "Problemas: Mi scusi, c'è un problema con la prenotazione. Potrebbe aiutarmi? Ho perso la coincidenza."
+     ],
+     "q": "Qual foi a situação de viagem mais complicada que você já resolveu?",
+     "c": "Escreva um diálogo educado de três frases para resolver um problema numa estação ou num hotel."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "convalidare il biglietto",
+      "ex": "Ricordati di convalidare il biglietto prima di salire."
+     },
+     {
+      "w": "la coincidenza",
+      "ex": "Ho perso la coincidenza per Firenze."
+     },
+     {
+      "w": "al banco",
+      "ex": "Prendo un caffè al banco, grazie."
+     },
+     {
+      "w": "la prenotazione",
+      "ex": "C'è un problema con la mia prenotazione."
+     },
+     {
+      "w": "il binario",
+      "ex": "Il treno per Bologna parte dal binario 5."
+     },
+     {
+      "w": "Potrebbe aiutarmi?",
+      "ex": "Mi scusi, potrebbe aiutarmi con la valigia?"
+     }
+    ],
+    "gram": "Condizionale di cortesia nelle richieste: potrebbe, saprebbe dirmi, vorrei; Mi scusi (Lei) per estranei."
+   }
+  },
+  {
+   "d": 358,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Living in Italy: everyday culture",
+     "g": "Understand habits, schedules, meals and social codes that surprise newcomers.",
+     "p": [
+      "Meal times: lunch around 13, dinner often after 20, later in the south; cappuccino is mostly a morning drink.",
+      "Shops and services may close at lunchtime, especially in small towns; Sunday is often a family day.",
+      "Social codes: greet when entering a shop (Buongiorno!), dress neatly, and la bella figura matters."
+     ],
+     "q": "Which Italian habit would be easiest or hardest for you to adopt?",
+     "c": "Compare three daily habits in Italy and in your country in three sentences with mentre."
+    },
+    "de": {
+     "t": "Leben in Italien: Alltagskultur",
+     "g": "Du verstehst Gewohnheiten, Zeiten, Mahlzeiten und soziale Codes, die Neuankömmlinge überraschen.",
+     "p": [
+      "Essenszeiten: Mittagessen gegen 13 Uhr, Abendessen oft nach 20, im Süden später; Cappuccino trinkt man vor allem morgens.",
+      "Läden und Dienste schließen mittags oft, besonders in kleinen Orten; Sonntag ist oft Familientag.",
+      "Soziale Codes: beim Betreten eines Ladens grüßen (Buongiorno!), gepflegt auftreten, la bella figura zählt."
+     ],
+     "q": "Welche italienische Gewohnheit fiele dir am leichtesten oder schwersten?",
+     "c": "Vergleiche drei Alltagsgewohnheiten in Italien und deinem Land in drei Sätzen mit mentre."
+    },
+    "es": {
+     "t": "Vivir en Italia: cultura cotidiana",
+     "g": "Entender hábitos, horarios, comidas y códigos sociales que sorprenden a los recién llegados.",
+     "p": [
+      "Horarios: comida hacia las 13, cena a menudo después de las 20, más tarde en el sur; el cappuccino es sobre todo de mañana.",
+      "Tiendas y servicios pueden cerrar al mediodía, sobre todo en pueblos; el domingo suele ser día de familia.",
+      "Códigos sociales: saluda al entrar en una tienda (Buongiorno!), viste con cuidado; la bella figura importa."
+     ],
+     "q": "¿Qué costumbre italiana te sería más fácil o más difícil de adoptar?",
+     "c": "Compara tres hábitos diarios en Italia y en tu país en tres frases con mentre."
+    },
+    "fr": {
+     "t": "Vivre en Italie : culture du quotidien",
+     "g": "Comprendre habitudes, horaires, repas et codes sociaux qui surprennent les nouveaux venus.",
+     "p": [
+      "Repas : déjeuner vers 13 h, dîner souvent après 20 h, plus tard au sud ; le cappuccino se boit surtout le matin.",
+      "Magasins et services peuvent fermer à midi, surtout dans les petites villes ; le dimanche est souvent familial.",
+      "Codes sociaux : saluer en entrant dans un magasin (Buongiorno!), être soigné ; la bella figura compte."
+     ],
+     "q": "Quelle habitude italienne serait la plus facile ou la plus difficile à adopter pour toi ?",
+     "c": "Compare trois habitudes quotidiennes en Italie et dans ton pays en trois phrases avec mentre."
+    },
+    "it": {
+     "t": "Vivere in Italia: la cultura quotidiana",
+     "g": "Capire abitudini, orari, pasti e codici sociali che sorprendono chi arriva.",
+     "p": [
+      "Orari dei pasti: pranzo verso le 13, cena spesso dopo le 20, più tardi al Sud; il cappuccino si beve soprattutto la mattina.",
+      "Negozi e servizi possono chiudere all'ora di pranzo, soprattutto nei piccoli centri; la domenica è spesso per la famiglia.",
+      "Codici sociali: salutare entrando in un negozio (Buongiorno!), vestirsi con cura; la bella figura conta."
+     ],
+     "q": "Quale abitudine italiana sarebbe più facile o più difficile da adottare per te?",
+     "c": "Confronta tre abitudini quotidiane in Italia e nel tuo Paese in tre frasi con mentre."
+    },
+    "pt": {
+     "t": "Viver em Itália: cultura do dia a dia",
+     "g": "Perceber hábitos, horários, refeições e códigos sociais que surpreendem quem chega.",
+     "p": [
+      "Refeições: almoço por volta das 13h, jantar muitas vezes depois das 20h, mais tarde no sul; o cappuccino é sobretudo de manhã.",
+      "Lojas e serviços podem fechar à hora de almoço, sobretudo em terras pequenas; o domingo é muitas vezes da família.",
+      "Códigos sociais: cumprimentar ao entrar numa loja (Buongiorno!), vestir com cuidado; la bella figura conta."
+     ],
+     "q": "Que hábito italiano seria mais fácil ou mais difícil de adotar para ti?",
+     "c": "Compara três hábitos diários em Itália e no teu país em três frases com mentre."
+    },
+    "pt_BR": {
+     "t": "Morando na Itália: cultura do dia a dia",
+     "g": "Entender hábitos, horários, refeições e códigos sociais que surpreendem quem chega.",
+     "p": [
+      "Refeições: almoço por volta das 13h, jantar muitas vezes depois das 20h, mais tarde no sul; cappuccino é mais de manhã.",
+      "Lojas e serviços podem fechar na hora do almoço, sobretudo em cidades pequenas; o domingo costuma ser da família.",
+      "Códigos sociais: cumprimentar ao entrar numa loja (Buongiorno!), se vestir com capricho; la bella figura conta."
+     ],
+     "q": "Que hábito italiano seria mais fácil ou mais difícil de adotar para você?",
+     "c": "Compare três hábitos diários na Itália e no seu país em três frases com mentre."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la bella figura",
+      "ex": "In Italia si tiene molto a fare bella figura."
+     },
+     {
+      "w": "l'orario continuato",
+      "ex": "Il supermercato fa orario continuato."
+     },
+     {
+      "w": "la passeggiata",
+      "ex": "La sera c'è la passeggiata in centro."
+     },
+     {
+      "w": "il pranzo della domenica",
+      "ex": "Il pranzo della domenica dura tutto il pomeriggio."
+     },
+     {
+      "w": "l'aperitivo",
+      "ex": "Ci vediamo per l'aperitivo alle sette?"
+     },
+     {
+      "w": "abituarsi a",
+      "ex": "Mi sono abituato a cenare tardi."
+     }
+    ],
+    "gram": "Abituarsi a + nome o infinito, con essere al passato: mi sono abituata agli orari, ci siamo abituati a cenare tardi."
+   }
+  },
+  {
+   "d": 359,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Mock B2 exam: reading and writing",
+     "g": "Practise exam-style reading questions and a 150-word text.",
+     "p": [
+      "Reading: skim first for the general idea, then scan for details; watch for synonyms between text and questions.",
+      "Writing task: plan in two minutes (introduction, two paragraphs, conclusion) and count about 150 words.",
+      "Check at the end: agreement, subjunctive after penso che, accents, apostrophes and varied connectors."
+     ],
+     "q": "Which part of an exam do you find harder, reading or writing?",
+     "c": "Write a 150-word email to a friend about a trip, then check it with the five-point list above."
+    },
+    "de": {
+     "t": "B2-Probeprüfung: Lesen und Schreiben",
+     "g": "Du übst Leseaufgaben im Prüfungsstil und einen Text mit 150 Wörtern.",
+     "p": [
+      "Lesen: erst überfliegen für die Hauptidee, dann gezielt Details suchen; achte auf Synonyme zwischen Text und Fragen.",
+      "Schreibaufgabe: zwei Minuten planen (Einleitung, zwei Absätze, Schluss) und etwa 150 Wörter zählen.",
+      "Am Ende prüfen: Kongruenz, Konjunktiv nach penso che, Akzente, Apostrophe und abwechslungsreiche Konnektoren."
+     ],
+     "q": "Welcher Prüfungsteil fällt dir schwerer, Lesen oder Schreiben?",
+     "c": "Schreib einer Freundin eine E-Mail mit 150 Wörtern über eine Reise und prüfe sie mit der Liste oben."
+    },
+    "es": {
+     "t": "Simulacro B2: comprensión lectora y escritura",
+     "g": "Practicar preguntas de lectura tipo examen y un texto de 150 palabras.",
+     "p": [
+      "Lectura: primero lee por encima para la idea general, luego busca detalles; atento a los sinónimos entre texto y preguntas.",
+      "Escritura: planifica en dos minutos (introducción, dos párrafos, conclusión) y cuenta unas 150 palabras.",
+      "Revisa al final: concordancia, subjuntivo tras penso che, acentos, apóstrofos y conectores variados."
+     ],
+     "q": "¿Qué parte de un examen te resulta más difícil, leer o escribir?",
+     "c": "Escribe un correo de 150 palabras a un amigo sobre un viaje y revísalo con la lista de arriba."
+    },
+    "fr": {
+     "t": "Examen blanc B2 : lecture et écriture",
+     "g": "S'entraîner aux questions de lecture type examen et à un texte de 150 mots.",
+     "p": [
+      "Lecture : survole d'abord pour l'idée générale, puis cherche les détails ; attention aux synonymes entre texte et questions.",
+      "Écriture : planifie en deux minutes (introduction, deux paragraphes, conclusion) et vise environ 150 mots.",
+      "Relis à la fin : accords, subjonctif après penso che, accents, apostrophes et connecteurs variés."
+     ],
+     "q": "Quelle partie d'un examen trouves-tu la plus difficile, la lecture ou l'écriture ?",
+     "c": "Écris un e-mail de 150 mots à un ami sur un voyage, puis vérifie-le avec la liste ci-dessus."
+    },
+    "it": {
+     "t": "Simulazione B2: lettura e scrittura",
+     "g": "Esercitarsi con domande di lettura tipo esame e un testo di 150 parole.",
+     "p": [
+      "Lettura: prima scorri il testo per l'idea generale, poi cerca i dettagli; attenzione ai sinonimi tra testo e domande.",
+      "Scrittura: pianifica in due minuti (introduzione, due paragrafi, conclusione) e conta circa 150 parole.",
+      "Controlla alla fine: concordanze, congiuntivo dopo penso che, accenti, apostrofi e connettivi vari."
+     ],
+     "q": "Quale parte di un esame trovi più difficile, la lettura o la scrittura?",
+     "c": "Scrivi un'email di 150 parole a un amico su un viaggio, poi controllala con la lista qui sopra."
+    },
+    "pt": {
+     "t": "Simulação B2: leitura e escrita",
+     "g": "Praticar perguntas de leitura tipo exame e um texto de 150 palavras.",
+     "p": [
+      "Leitura: primeiro lê na diagonal para a ideia geral, depois procura os pormenores; atenção aos sinónimos entre texto e perguntas.",
+      "Escrita: planeia em dois minutos (introdução, dois parágrafos, conclusão) e conta cerca de 150 palavras.",
+      "Revê no fim: concordância, conjuntivo depois de penso che, acentos, apóstrofos e conectores variados."
+     ],
+     "q": "Que parte de um exame achas mais difícil, a leitura ou a escrita?",
+     "c": "Escreve um email de 150 palavras a um amigo sobre uma viagem e revê-o com a lista acima."
+    },
+    "pt_BR": {
+     "t": "Simulado B2: leitura e escrita",
+     "g": "Praticar questões de leitura estilo prova e um texto de 150 palavras.",
+     "p": [
+      "Leitura: primeiro passe os olhos para a ideia geral, depois busque os detalhes; atenção aos sinônimos entre texto e perguntas.",
+      "Escrita: planeje em dois minutos (introdução, dois parágrafos, conclusão) e conte cerca de 150 palavras.",
+      "Revise no fim: concordância, subjuntivo depois de penso che, acentos, apóstrofos e conectivos variados."
+     ],
+     "q": "Que parte de uma prova você acha mais difícil, leitura ou escrita?",
+     "c": "Escreva um e-mail de 150 palavras a um amigo sobre uma viagem e revise com a lista acima."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la comprensione scritta",
+      "ex": "La prova di comprensione scritta dura un'ora."
+     },
+     {
+      "w": "la produzione scritta",
+      "ex": "Nella produzione scritta bisogna scrivere 150 parole."
+     },
+     {
+      "w": "la traccia",
+      "ex": "Leggi bene la traccia prima di scrivere."
+     },
+     {
+      "w": "la brutta copia",
+      "ex": "Scrivo prima in brutta copia, poi in bella."
+     },
+     {
+      "w": "rileggere",
+      "ex": "Rileggi sempre il testo prima di consegnarlo."
+     },
+     {
+      "w": "consegnare",
+      "ex": "Abbiamo consegnato il compito in tempo."
+     }
+    ],
+    "gram": "Prima di + infinito: prima di scrivere, prima di consegnare; dopo + infinito passato: dopo aver riletto."
+   }
+  },
+  {
+   "d": 360,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Mock B2 exam: listening and speaking",
+     "g": "Practise exam-style listening and a structured oral presentation.",
+     "p": [
+      "Listening: read the questions before the audio, note key words, and don't panic if you miss one detail.",
+      "Oral presentation: introduce the topic, give two or three points with examples, and conclude in two minutes.",
+      "Useful phrases: Vorrei parlare di..., Innanzitutto..., Per fare un esempio..., Per concludere..."
+     ],
+     "q": "What topic would you choose for a two-minute presentation in Italian?",
+     "c": "Record yourself giving a two-minute presentation on a topic you like, using the four phrases above."
+    },
+    "de": {
+     "t": "B2-Probeprüfung: Hören und Sprechen",
+     "g": "Du übst Hörverstehen im Prüfungsstil und eine strukturierte mündliche Präsentation.",
+     "p": [
+      "Hören: die Fragen vor dem Audio lesen, Schlüsselwörter notieren, keine Panik, wenn ein Detail fehlt.",
+      "Präsentation: Thema einführen, zwei oder drei Punkte mit Beispielen, in zwei Minuten abschließen.",
+      "Nützliche Wendungen: Vorrei parlare di..., Innanzitutto..., Per fare un esempio..., Per concludere..."
+     ],
+     "q": "Welches Thema würdest du für eine zweiminütige Präsentation auf Italienisch wählen?",
+     "c": "Nimm dich bei einer zweiminütigen Präsentation zu einem Lieblingsthema auf, mit den vier Wendungen oben."
+    },
+    "es": {
+     "t": "Simulacro B2: comprensión auditiva y expresión oral",
+     "g": "Practicar la escucha tipo examen y una presentación oral estructurada.",
+     "p": [
+      "Escucha: lee las preguntas antes del audio, apunta palabras clave y no te agobies si se te escapa un detalle.",
+      "Presentación oral: introduce el tema, da dos o tres puntos con ejemplos y concluye en dos minutos.",
+      "Frases útiles: Vorrei parlare di..., Innanzitutto..., Per fare un esempio..., Per concludere..."
+     ],
+     "q": "¿Qué tema elegirías para una presentación de dos minutos en italiano?",
+     "c": "Grábate haciendo una presentación de dos minutos sobre un tema que te guste, con las cuatro frases de arriba."
+    },
+    "fr": {
+     "t": "Examen blanc B2 : écoute et oral",
+     "g": "S'entraîner à l'écoute type examen et à une présentation orale structurée.",
+     "p": [
+      "Écoute : lis les questions avant l'audio, note les mots clés et ne panique pas si un détail t'échappe.",
+      "Exposé oral : présente le sujet, donne deux ou trois points avec exemples et conclus en deux minutes.",
+      "Phrases utiles : Vorrei parlare di..., Innanzitutto..., Per fare un esempio..., Per concludere..."
+     ],
+     "q": "Quel sujet choisirais-tu pour un exposé de deux minutes en italien ?",
+     "c": "Enregistre-toi pendant un exposé de deux minutes sur un sujet que tu aimes, avec les quatre phrases ci-dessus."
+    },
+    "it": {
+     "t": "Simulazione B2: ascolto e parlato",
+     "g": "Esercitarsi con l'ascolto tipo esame e una presentazione orale strutturata.",
+     "p": [
+      "Ascolto: leggi le domande prima dell'audio, annota le parole chiave e niente panico se perdi un dettaglio.",
+      "Presentazione orale: introduci il tema, sviluppa due o tre punti con esempi e concludi in due minuti.",
+      "Frasi utili: Vorrei parlare di..., Innanzitutto..., Per fare un esempio..., Per concludere..."
+     ],
+     "q": "Quale argomento sceglieresti per una presentazione di due minuti?",
+     "c": "Registrati mentre fai una presentazione di due minuti su un tema che ti piace, con le quattro frasi qui sopra."
+    },
+    "pt": {
+     "t": "Simulação B2: compreensão oral e expressão oral",
+     "g": "Praticar a audição tipo exame e uma apresentação oral estruturada.",
+     "p": [
+      "Audição: lê as perguntas antes do áudio, anota palavras-chave e não entres em pânico se perderes um pormenor.",
+      "Apresentação oral: apresenta o tema, desenvolve dois ou três pontos com exemplos e conclui em dois minutos.",
+      "Frases úteis: Vorrei parlare di..., Innanzitutto..., Per fare un esempio..., Per concludere..."
+     ],
+     "q": "Que tema escolherias para uma apresentação de dois minutos em italiano?",
+     "c": "Grava-te a fazer uma apresentação de dois minutos sobre um tema de que gostes, com as quatro frases acima."
+    },
+    "pt_BR": {
+     "t": "Simulado B2: compreensão auditiva e fala",
+     "g": "Praticar a escuta estilo prova e uma apresentação oral estruturada.",
+     "p": [
+      "Escuta: leia as perguntas antes do áudio, anote palavras-chave e não entre em pânico se perder um detalhe.",
+      "Apresentação oral: apresente o tema, desenvolva dois ou três pontos com exemplos e conclua em dois minutos.",
+      "Frases úteis: Vorrei parlare di..., Innanzitutto..., Per fare un esempio..., Per concludere..."
+     ],
+     "q": "Que tema você escolheria para uma apresentação de dois minutos em italiano?",
+     "c": "Grave-se fazendo uma apresentação de dois minutos sobre um tema de que você goste, com as quatro frases acima."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la comprensione orale",
+      "ex": "Nella comprensione orale si ascolta due volte."
+     },
+     {
+      "w": "la produzione orale",
+      "ex": "La produzione orale dura circa dieci minuti."
+     },
+     {
+      "w": "vorrei parlare di",
+      "ex": "Oggi vorrei parlare del turismo lento."
+     },
+     {
+      "w": "innanzitutto",
+      "ex": "Innanzitutto, vi spiego perché ho scelto questo tema."
+     },
+     {
+      "w": "per fare un esempio",
+      "ex": "Per fare un esempio, pensiamo a Venezia."
+     },
+     {
+      "w": "per concludere",
+      "ex": "Per concludere, ringrazio tutti per l'attenzione."
+     }
+    ],
+    "gram": "Struttura del discorso: innanzitutto, in secondo luogo, inoltre, per concludere; vorrei + infinito per presentare."
+   }
+  }
+ ]
+}

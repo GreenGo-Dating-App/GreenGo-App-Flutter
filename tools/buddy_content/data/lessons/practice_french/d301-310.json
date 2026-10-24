@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_french",
+ "lessons": [
+  {
+   "d": 301,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Writing an essay: the body",
+     "g": "Build the body of a French essay with clear arguments, solid examples and smooth transitions.",
+     "p": [
+      "One paragraph, one idea: state the argument, explain it, then give a concrete example.",
+      "Introduce examples with par exemple, ainsi, c'est le cas de, comme le montre...",
+      "Link the parts: Après avoir vu..., intéressons-nous maintenant à... is a classic transition."
+     ],
+     "q": "What example would you use to show that learning a language opens your mind?",
+     "c": "Write one French paragraph: an argument, an explanation and an example, ending with a transition sentence."
+    },
+    "de": {
+     "t": "Aufsatz schreiben: der Hauptteil",
+     "g": "Du baust den Hauptteil eines französischen Aufsatzes mit klaren Argumenten, Beispielen und Übergängen.",
+     "p": [
+      "Ein Absatz, eine Idee: Argument nennen, erklären, dann ein konkretes Beispiel geben.",
+      "Beispiele leitest du ein mit par exemple, ainsi, c'est le cas de, comme le montre...",
+      "Teile verbinden: Après avoir vu..., intéressons-nous maintenant à... ist ein klassischer Übergang."
+     ],
+     "q": "Welches Beispiel würdest du nehmen, um zu zeigen, dass eine Sprache den Horizont erweitert?",
+     "c": "Schreib einen französischen Absatz: Argument, Erklärung, Beispiel und am Ende ein Übergangssatz."
+    },
+    "es": {
+     "t": "Redactar un ensayo: el desarrollo",
+     "g": "Construye el desarrollo de un ensayo francés con argumentos claros, ejemplos sólidos y buenas transiciones.",
+     "p": [
+      "Un párrafo, una idea: plantea el argumento, explícalo y da un ejemplo concreto.",
+      "Introduce ejemplos con par exemple, ainsi, c'est le cas de, comme le montre...",
+      "Une las partes: Après avoir vu..., intéressons-nous maintenant à... es una transición clásica."
+     ],
+     "q": "¿Qué ejemplo usarías para mostrar que aprender un idioma abre la mente?",
+     "c": "Escribe un párrafo en francés: argumento, explicación y ejemplo, y termina con una frase de transición."
+    },
+    "fr": {
+     "t": "La dissertation : le développement",
+     "g": "Construire le développement d'une dissertation avec des arguments clairs, des exemples solides et des transitions.",
+     "p": [
+      "Un paragraphe, une idée : on énonce l'argument, on l'explique, puis on donne un exemple précis.",
+      "Pour illustrer : par exemple, ainsi, c'est le cas de, comme le montre...",
+      "Pour enchaîner : Après avoir vu..., intéressons-nous maintenant à... est une transition classique."
+     ],
+     "q": "Quel exemple choisirais-tu pour montrer qu'apprendre une langue ouvre l'esprit ?",
+     "c": "Rédige un paragraphe : un argument, une explication, un exemple et une phrase de transition pour finir."
+    },
+    "it": {
+     "t": "Scrivere un tema: lo sviluppo",
+     "g": "Costruisci lo sviluppo di un tema francese con argomenti chiari, esempi solidi e transizioni fluide.",
+     "p": [
+      "Un paragrafo, un'idea: enuncia l'argomento, spiegalo e poi dai un esempio concreto.",
+      "Introduci gli esempi con par exemple, ainsi, c'est le cas de, comme le montre...",
+      "Collega le parti: Après avoir vu..., intéressons-nous maintenant à... è una transizione classica."
+     ],
+     "q": "Quale esempio useresti per mostrare che imparare una lingua apre la mente?",
+     "c": "Scrivi un paragrafo in francese: argomento, spiegazione ed esempio, chiudendo con una frase di transizione."
+    },
+    "pt": {
+     "t": "Escrever uma dissertação: o desenvolvimento",
+     "g": "Constrói o desenvolvimento de uma dissertação francesa com argumentos claros, bons exemplos e transições.",
+     "p": [
+      "Um parágrafo, uma ideia: apresenta o argumento, explica-o e dá um exemplo concreto.",
+      "Introduz exemplos com par exemple, ainsi, c'est le cas de, comme le montre...",
+      "Liga as partes: Après avoir vu..., intéressons-nous maintenant à... é uma transição clássica."
+     ],
+     "q": "Que exemplo usarias para mostrar que aprender uma língua abre a mente?",
+     "c": "Escreve um parágrafo em francês: argumento, explicação e exemplo, terminando com uma frase de transição."
+    },
+    "pt_BR": {
+     "t": "Escrevendo uma redação: o desenvolvimento",
+     "g": "Construa o desenvolvimento de uma redação francesa com argumentos claros, bons exemplos e transições.",
+     "p": [
+      "Um parágrafo, uma ideia: apresente o argumento, explique e dê um exemplo concreto.",
+      "Introduza exemplos com par exemple, ainsi, c'est le cas de, comme le montre...",
+      "Ligue as partes: Après avoir vu..., intéressons-nous maintenant à... é uma transição clássica."
+     ],
+     "q": "Que exemplo você usaria para mostrar que aprender um idioma abre a mente?",
+     "c": "Escreva um parágrafo em francês: argumento, explicação e exemplo, fechando com uma frase de transição."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un argument",
+      "ex": "Ce premier argument me semble décisif."
+     },
+     {
+      "w": "par exemple",
+      "ex": "Par exemple, beaucoup d'étudiants partent à l'étranger."
+     },
+     {
+      "w": "c'est le cas de",
+      "ex": "C'est le cas de nombreuses villes européennes."
+     },
+     {
+      "w": "comme le montre",
+      "ex": "Comme le montre cette étude, les jeunes lisent moins."
+     },
+     {
+      "w": "après avoir vu",
+      "ex": "Après avoir vu les avantages, examinons les limites."
+     },
+     {
+      "w": "en outre",
+      "ex": "En outre, cette solution coûte moins cher."
+     }
+    ],
+    "gram": "Développement : un paragraphe par idée (argument, explication, exemple) et des transitions comme après avoir vu..., intéressons-nous à..."
+   }
+  },
+  {
+   "d": 302,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Writing an essay: the conclusion",
+     "g": "Close your French essay with a synthèse that answers the question and an ouverture to a wider view.",
+     "p": [
+      "The synthèse: sum up your path and answer the problématique: En définitive, nous avons montré que...",
+      "The ouverture: widen the topic with a related question: On peut alors se demander si...",
+      "Never add a new argument in the conclusion, and keep it shorter than the introduction."
+     ],
+     "q": "How would you open up a debate on screens at school towards a bigger question?",
+     "c": "Write a three-sentence French conclusion for yesterday's paragraph: synthesis, answer and opening."
+    },
+    "de": {
+     "t": "Aufsatz schreiben: der Schluss",
+     "g": "Du schließt den Aufsatz mit einer synthèse, die die Frage beantwortet, und einer ouverture zu einem weiteren Blick.",
+     "p": [
+      "Die synthèse: Weg zusammenfassen und Leitfrage beantworten: En définitive, nous avons montré que...",
+      "Die ouverture: Thema öffnen mit einer verwandten Frage: On peut alors se demander si...",
+      "Kein neues Argument im Schluss, und er bleibt kürzer als die Einleitung."
+     ],
+     "q": "Wie würdest du eine Debatte über Bildschirme in der Schule zu einer größeren Frage öffnen?",
+     "c": "Schreib einen französischen Schluss in drei Sätzen: Synthese, Antwort und Öffnung."
+    },
+    "es": {
+     "t": "Redactar un ensayo: la conclusión",
+     "g": "Cierra tu ensayo francés con una synthèse que responde a la pregunta y una ouverture hacia una visión más amplia.",
+     "p": [
+      "La synthèse: resume el recorrido y responde a la problématique: En définitive, nous avons montré que...",
+      "La ouverture: amplía el tema con una pregunta afín: On peut alors se demander si...",
+      "Nunca añadas un argumento nuevo en la conclusión y hazla más corta que la introducción."
+     ],
+     "q": "¿Cómo abrirías un debate sobre las pantallas en la escuela hacia una pregunta más amplia?",
+     "c": "Escribe una conclusión en francés de tres frases: síntesis, respuesta y apertura."
+    },
+    "fr": {
+     "t": "La dissertation : la conclusion",
+     "g": "Terminer la dissertation par une synthèse qui répond à la problématique et une ouverture vers une perspective plus large.",
+     "p": [
+      "La synthèse : on résume le parcours et on répond : En définitive, nous avons montré que...",
+      "L'ouverture : on élargit avec une question voisine : On peut alors se demander si...",
+      "Jamais d'argument nouveau dans la conclusion, et elle reste plus courte que l'introduction."
+     ],
+     "q": "Comment ouvrirais-tu un débat sur les écrans à l'école vers une question plus large ?",
+     "c": "Rédige une conclusion de trois phrases : synthèse, réponse et ouverture."
+    },
+    "it": {
+     "t": "Scrivere un tema: la conclusione",
+     "g": "Chiudi il tema francese con una synthèse che risponde alla domanda e un'ouverture verso una visione più ampia.",
+     "p": [
+      "La synthèse: riassumi il percorso e rispondi alla problématique: En définitive, nous avons montré que...",
+      "L'ouverture: allarga il tema con una domanda vicina: On peut alors se demander si...",
+      "Mai un argomento nuovo nella conclusione, e tienila più breve dell'introduzione."
+     ],
+     "q": "Come apriresti un dibattito sugli schermi a scuola verso una domanda più ampia?",
+     "c": "Scrivi una conclusione in francese di tre frasi: sintesi, risposta e apertura."
+    },
+    "pt": {
+     "t": "Escrever uma dissertação: a conclusão",
+     "g": "Fecha a dissertação francesa com uma synthèse que responde à questão e uma ouverture para uma visão mais ampla.",
+     "p": [
+      "A synthèse: resume o percurso e responde à problématique: En définitive, nous avons montré que...",
+      "A ouverture: alarga o tema com uma questão próxima: On peut alors se demander si...",
+      "Nunca acrescentes um argumento novo na conclusão e mantém-na mais curta do que a introdução."
+     ],
+     "q": "Como abririas um debate sobre ecrãs na escola para uma questão mais ampla?",
+     "c": "Escreve uma conclusão em francês com três frases: síntese, resposta e abertura."
+    },
+    "pt_BR": {
+     "t": "Escrevendo uma redação: a conclusão",
+     "g": "Feche a redação francesa com uma synthèse que responde à questão e uma ouverture para uma visão mais ampla.",
+     "p": [
+      "A synthèse: resuma o percurso e responda à problématique: En définitive, nous avons montré que...",
+      "A ouverture: amplie o tema com uma pergunta próxima: On peut alors se demander si...",
+      "Nunca coloque um argumento novo na conclusão e deixe-a mais curta que a introdução."
+     ],
+     "q": "Como você abriria um debate sobre telas na escola para uma pergunta maior?",
+     "c": "Escreva uma conclusão em francês com três frases: síntese, resposta e abertura."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "en définitive",
+      "ex": "En définitive, le télétravail présente plus d'atouts que de limites."
+     },
+     {
+      "w": "nous avons montré que",
+      "ex": "Nous avons montré que la lecture développe l'imagination."
+     },
+     {
+      "w": "la synthèse",
+      "ex": "La synthèse reprend les idées principales."
+     },
+     {
+      "w": "l'ouverture",
+      "ex": "L'ouverture élargit la réflexion à un autre domaine."
+     },
+     {
+      "w": "on peut alors se demander si",
+      "ex": "On peut alors se demander si l'école doit changer."
+     },
+     {
+      "w": "en somme",
+      "ex": "En somme, chaque solution a ses avantages."
+     }
+    ],
+    "gram": "Conclusion : synthèse au passé composé (nous avons montré que...) puis ouverture par une question (on peut se demander si...)."
+   }
+  },
+  {
+   "d": 303,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "A formal letter of complaint",
+     "g": "Write a complaint in French that follows the formal layout and stays firm but polite.",
+     "p": [
+      "Layout: your details, the recipient, place and date, Objet : Réclamation concernant..., then Madame, Monsieur,",
+      "Facts first, then your request: Je me permets de vous signaler que... Je vous serais reconnaissant de...",
+      "Close formally: Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées."
+     ],
+     "q": "Have you ever had to complain about a product or service? How did it go?",
+     "c": "Write a short French complaint about a parcel that arrived late, with an Objet line and a formal closing."
+    },
+    "de": {
+     "t": "Ein formeller Beschwerdebrief",
+     "g": "Du schreibst eine französische Beschwerde im formellen Aufbau, bestimmt, aber höflich.",
+     "p": [
+      "Aufbau: Absender, Empfänger, Ort und Datum, Objet : Réclamation concernant..., dann Madame, Monsieur,",
+      "Erst die Fakten, dann die Bitte: Je me permets de vous signaler que... Je vous serais reconnaissant de...",
+      "Formeller Schluss: Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées."
+     ],
+     "q": "Musstest du dich schon einmal über ein Produkt oder einen Service beschweren? Wie lief es?",
+     "c": "Schreib eine kurze französische Beschwerde über ein verspätetes Paket, mit Objet-Zeile und formellem Schluss."
+    },
+    "es": {
+     "t": "Una carta formal de reclamación",
+     "g": "Redacta una reclamación en francés con la estructura formal, firme pero educada.",
+     "p": [
+      "Estructura: tus datos, el destinatario, lugar y fecha, Objet : Réclamation concernant..., luego Madame, Monsieur,",
+      "Primero los hechos, después la petición: Je me permets de vous signaler que... Je vous serais reconnaissant de...",
+      "Cierre formal: Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées."
+     ],
+     "q": "¿Alguna vez tuviste que reclamar por un producto o servicio? ¿Cómo fue?",
+     "c": "Escribe una breve reclamación en francés por un paquete que llegó tarde, con línea Objet y cierre formal."
+    },
+    "fr": {
+     "t": "La lettre de réclamation",
+     "g": "Écrire une réclamation qui respecte la présentation formelle et reste ferme mais polie.",
+     "p": [
+      "Présentation : coordonnées, destinataire, lieu et date, Objet : Réclamation concernant..., puis Madame, Monsieur,",
+      "D'abord les faits, ensuite la demande : Je me permets de vous signaler que... Je vous serais reconnaissant de...",
+      "Formule finale : Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées."
+     ],
+     "q": "As-tu déjà dû faire une réclamation pour un produit ou un service ? Comment ça s'est passé ?",
+     "c": "Rédige une courte réclamation pour un colis arrivé en retard, avec une ligne Objet et une formule finale."
+    },
+    "it": {
+     "t": "Una lettera formale di reclamo",
+     "g": "Scrivi un reclamo in francese con la struttura formale, deciso ma cortese.",
+     "p": [
+      "Struttura: i tuoi dati, il destinatario, luogo e data, Objet : Réclamation concernant..., poi Madame, Monsieur,",
+      "Prima i fatti, poi la richiesta: Je me permets de vous signaler que... Je vous serais reconnaissant de...",
+      "Chiusura formale: Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées."
+     ],
+     "q": "Ti è mai capitato di fare un reclamo per un prodotto o un servizio? Com'è andata?",
+     "c": "Scrivi un breve reclamo in francese per un pacco arrivato in ritardo, con riga Objet e chiusura formale."
+    },
+    "pt": {
+     "t": "Uma carta formal de reclamação",
+     "g": "Escreve uma reclamação em francês com a estrutura formal, firme mas educada.",
+     "p": [
+      "Estrutura: os teus dados, o destinatário, local e data, Objet : Réclamation concernant..., depois Madame, Monsieur,",
+      "Primeiro os factos, depois o pedido: Je me permets de vous signaler que... Je vous serais reconnaissant de...",
+      "Fecho formal: Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées."
+     ],
+     "q": "Já tiveste de reclamar de um produto ou serviço? Como correu?",
+     "c": "Escreve uma breve reclamação em francês sobre uma encomenda atrasada, com linha Objet e fecho formal."
+    },
+    "pt_BR": {
+     "t": "Uma carta formal de reclamação",
+     "g": "Escreva uma reclamação em francês com a estrutura formal, firme mas educada.",
+     "p": [
+      "Estrutura: seus dados, o destinatário, local e data, Objet : Réclamation concernant..., depois Madame, Monsieur,",
+      "Primeiro os fatos, depois o pedido: Je me permets de vous signaler que... Je vous serais reconnaissant de...",
+      "Fecho formal: Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées."
+     ],
+     "q": "Você já precisou reclamar de um produto ou serviço? Como foi?",
+     "c": "Escreva uma breve reclamação em francês sobre uma encomenda atrasada, com linha Objet e fecho formal."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "une réclamation",
+      "ex": "J'adresse cette réclamation à votre service client."
+     },
+     {
+      "w": "je me permets de",
+      "ex": "Je me permets de vous signaler un problème de livraison."
+     },
+     {
+      "w": "je constate que",
+      "ex": "Je constate que la facture comporte une erreur."
+     },
+     {
+      "w": "un remboursement",
+      "ex": "Je souhaite obtenir un remboursement complet."
+     },
+     {
+      "w": "je vous serais reconnaissant de",
+      "ex": "Je vous serais reconnaissant de me répondre rapidement."
+     },
+     {
+      "w": "dans l'attente de",
+      "ex": "Dans l'attente de votre réponse, je reste à votre disposition."
+     }
+    ],
+    "gram": "Ton ferme et poli : conditionnel de politesse (je vous serais reconnaissant de + infinitif) et formules figées de la lettre formelle."
+   }
+  },
+  {
+   "d": 304,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "A cover letter in French",
+     "g": "Write a lettre de motivation with the classic vous, moi, nous structure.",
+     "p": [
+      "Vous: show you know the company: Leader dans le domaine de..., votre entreprise...",
+      "Moi: your skills and experience: Fort(e) d'une expérience de trois ans en..., j'ai développé...",
+      "Nous: what you will do together, then ask for an interview: Je serais ravi(e) de vous rencontrer."
+     ],
+     "q": "Which of your skills would you put forward first in a French cover letter?",
+     "c": "Write the moi paragraph of a cover letter in French: three sentences about your experience and strengths."
+    },
+    "de": {
+     "t": "Das Anschreiben auf Französisch",
+     "g": "Du schreibst eine lettre de motivation mit der klassischen Struktur vous, moi, nous.",
+     "p": [
+      "Vous: Zeig, dass du das Unternehmen kennst: Leader dans le domaine de..., votre entreprise...",
+      "Moi: Deine Kompetenzen und Erfahrung: Fort(e) d'une expérience de trois ans en..., j'ai développé...",
+      "Nous: Was ihr gemeinsam erreicht, dann um ein Gespräch bitten: Je serais ravi(e) de vous rencontrer."
+     ],
+     "q": "Welche deiner Stärken würdest du in einem französischen Anschreiben zuerst nennen?",
+     "c": "Schreib den moi-Absatz eines Anschreibens auf Französisch: drei Sätze über Erfahrung und Stärken."
+    },
+    "es": {
+     "t": "La carta de presentación en francés",
+     "g": "Redacta una lettre de motivation con la estructura clásica vous, moi, nous.",
+     "p": [
+      "Vous: demuestra que conoces la empresa: Leader dans le domaine de..., votre entreprise...",
+      "Moi: tus competencias y experiencia: Fort(e) d'une expérience de trois ans en..., j'ai développé...",
+      "Nous: lo que haréis juntos y pide una entrevista: Je serais ravi(e) de vous rencontrer."
+     ],
+     "q": "¿Qué competencia tuya destacarías primero en una carta de presentación en francés?",
+     "c": "Escribe el párrafo moi de una carta en francés: tres frases sobre tu experiencia y tus puntos fuertes."
+    },
+    "fr": {
+     "t": "La lettre de motivation",
+     "g": "Rédiger une lettre de motivation selon la structure classique vous, moi, nous.",
+     "p": [
+      "Vous : montrer qu'on connaît l'entreprise : Leader dans le domaine de..., votre entreprise...",
+      "Moi : ses compétences et son parcours : Fort(e) d'une expérience de trois ans en..., j'ai développé...",
+      "Nous : ce qu'on fera ensemble, puis demander un entretien : Je serais ravi(e) de vous rencontrer."
+     ],
+     "q": "Quelle compétence mettrais-tu en avant en premier dans une lettre de motivation ?",
+     "c": "Rédige le paragraphe moi d'une lettre de motivation : trois phrases sur ton expérience et tes atouts."
+    },
+    "it": {
+     "t": "La lettera di presentazione in francese",
+     "g": "Scrivi una lettre de motivation con la struttura classica vous, moi, nous.",
+     "p": [
+      "Vous: mostra che conosci l'azienda: Leader dans le domaine de..., votre entreprise...",
+      "Moi: competenze ed esperienza: Fort(e) d'une expérience de trois ans en..., j'ai développé...",
+      "Nous: cosa farete insieme, poi chiedi un colloquio: Je serais ravi(e) de vous rencontrer."
+     ],
+     "q": "Quale tua competenza metteresti in evidenza per prima in una lettera in francese?",
+     "c": "Scrivi il paragrafo moi di una lettera in francese: tre frasi sulla tua esperienza e i tuoi punti di forza."
+    },
+    "pt": {
+     "t": "A carta de motivação em francês",
+     "g": "Escreve uma lettre de motivation com a estrutura clássica vous, moi, nous.",
+     "p": [
+      "Vous: mostra que conheces a empresa: Leader dans le domaine de..., votre entreprise...",
+      "Moi: as tuas competências e experiência: Fort(e) d'une expérience de trois ans en..., j'ai développé...",
+      "Nous: o que farão juntos e pede uma entrevista: Je serais ravi(e) de vous rencontrer."
+     ],
+     "q": "Que competência tua destacarias primeiro numa carta de motivação em francês?",
+     "c": "Escreve o parágrafo moi de uma carta em francês: três frases sobre a tua experiência e pontos fortes."
+    },
+    "pt_BR": {
+     "t": "A carta de apresentação em francês",
+     "g": "Escreva uma lettre de motivation com a estrutura clássica vous, moi, nous.",
+     "p": [
+      "Vous: mostre que conhece a empresa: Leader dans le domaine de..., votre entreprise...",
+      "Moi: suas competências e experiência: Fort(e) d'une expérience de trois ans en..., j'ai développé...",
+      "Nous: o que vocês farão juntos e peça uma entrevista: Je serais ravi(e) de vous rencontrer."
+     ],
+     "q": "Qual competência sua você destacaria primeiro numa carta de apresentação em francês?",
+     "c": "Escreva o parágrafo moi de uma carta em francês: três frases sobre sua experiência e pontos fortes."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la lettre de motivation",
+      "ex": "J'ai joint ma lettre de motivation à mon CV."
+     },
+     {
+      "w": "fort d'une expérience de",
+      "ex": "Fort d'une expérience de cinq ans, je connais bien ce secteur."
+     },
+     {
+      "w": "mes compétences",
+      "ex": "Mes compétences en gestion seraient utiles à votre équipe."
+     },
+     {
+      "w": "un atout",
+      "ex": "Mon bilinguisme est un véritable atout."
+     },
+     {
+      "w": "contribuer à",
+      "ex": "Je souhaite contribuer au développement de votre entreprise."
+     },
+     {
+      "w": "un entretien",
+      "ex": "Je serais ravi de vous rencontrer lors d'un entretien."
+     }
+    ],
+    "gram": "Structure vous, moi, nous ; apposition fort(e) de + nom pour présenter son expérience ; conditionnel je serais ravi(e) de."
+   }
+  },
+  {
+   "d": 305,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "The job interview, advanced level",
+     "g": "Answer the big interview questions in French: yourself, your weak points and your ambitions.",
+     "p": [
+      "Parlez-moi de vous: a 1-minute story: studies, experience, why this job. Avoid reciting your CV.",
+      "Vos points faibles: name a real one and how you work on it: J'ai tendance à..., mais j'apprends à...",
+      "Vos ambitions: D'ici cinq ans, j'aimerais... shows a future tense plan linked to the company."
+     ],
+     "q": "How would you answer Parlez-moi de vous in about four sentences?",
+     "c": "Prepare your answer to Quels sont vos points faibles ? in French, with J'ai tendance à... mais..."
+    },
+    "de": {
+     "t": "Vorstellungsgespräch für Fortgeschrittene",
+     "g": "Du beantwortest die großen Fragen im Gespräch auf Französisch: über dich, Schwächen und Ziele.",
+     "p": [
+      "Parlez-moi de vous: eine Geschichte in einer Minute: Studium, Erfahrung, warum diese Stelle. Kein Lebenslauf ablesen.",
+      "Vos points faibles: eine echte Schwäche und wie du daran arbeitest: J'ai tendance à..., mais j'apprends à...",
+      "Vos ambitions: D'ici cinq ans, j'aimerais... zeigt einen Plan, der zum Unternehmen passt."
+     ],
+     "q": "Wie würdest du Parlez-moi de vous in etwa vier Sätzen beantworten?",
+     "c": "Bereite deine Antwort auf Quels sont vos points faibles ? auf Französisch vor, mit J'ai tendance à... mais..."
+    },
+    "es": {
+     "t": "La entrevista de trabajo, nivel avanzado",
+     "g": "Responde en francés a las grandes preguntas: quién eres, tus puntos débiles y tus ambiciones.",
+     "p": [
+      "Parlez-moi de vous: una historia de un minuto: estudios, experiencia, por qué este puesto. No recites el CV.",
+      "Vos points faibles: nombra uno real y cómo lo trabajas: J'ai tendance à..., mais j'apprends à...",
+      "Vos ambitions: D'ici cinq ans, j'aimerais... muestra un plan ligado a la empresa."
+     ],
+     "q": "¿Cómo responderías a Parlez-moi de vous en unas cuatro frases?",
+     "c": "Prepara tu respuesta a Quels sont vos points faibles ? en francés, con J'ai tendance à... mais..."
+    },
+    "fr": {
+     "t": "L'entretien d'embauche avancé",
+     "g": "Répondre aux grandes questions de l'entretien : se présenter, ses points faibles et ses ambitions.",
+     "p": [
+      "Parlez-moi de vous : un récit d'une minute : études, expérience, pourquoi ce poste. Ne récitez pas le CV.",
+      "Vos points faibles : un vrai défaut et comment vous y travaillez : J'ai tendance à..., mais j'apprends à...",
+      "Vos ambitions : D'ici cinq ans, j'aimerais... montre un projet lié à l'entreprise."
+     ],
+     "q": "Comment répondrais-tu à Parlez-moi de vous en quatre phrases environ ?",
+     "c": "Prépare ta réponse à Quels sont vos points faibles ? avec J'ai tendance à... mais..."
+    },
+    "it": {
+     "t": "Il colloquio di lavoro, livello avanzato",
+     "g": "Rispondi in francese alle grandi domande del colloquio: chi sei, i punti deboli e le ambizioni.",
+     "p": [
+      "Parlez-moi de vous: una storia di un minuto: studi, esperienza, perché questo posto. Non recitare il CV.",
+      "Vos points faibles: nominane uno vero e come ci lavori: J'ai tendance à..., mais j'apprends à...",
+      "Vos ambitions: D'ici cinq ans, j'aimerais... mostra un progetto legato all'azienda."
+     ],
+     "q": "Come risponderesti a Parlez-moi de vous in circa quattro frasi?",
+     "c": "Prepara la tua risposta a Quels sont vos points faibles ? in francese, con J'ai tendance à... mais..."
+    },
+    "pt": {
+     "t": "A entrevista de emprego, nível avançado",
+     "g": "Responde em francês às grandes perguntas: quem és, os teus pontos fracos e as tuas ambições.",
+     "p": [
+      "Parlez-moi de vous: uma história de um minuto: estudos, experiência, porquê este cargo. Não recites o CV.",
+      "Vos points faibles: nomeia um real e como o trabalhas: J'ai tendance à..., mais j'apprends à...",
+      "Vos ambitions: D'ici cinq ans, j'aimerais... mostra um plano ligado à empresa."
+     ],
+     "q": "Como responderias a Parlez-moi de vous em cerca de quatro frases?",
+     "c": "Prepara a tua resposta a Quels sont vos points faibles ? em francês, com J'ai tendance à... mais..."
+    },
+    "pt_BR": {
+     "t": "A entrevista de emprego, nível avançado",
+     "g": "Responda em francês às grandes perguntas: quem você é, seus pontos fracos e suas ambições.",
+     "p": [
+      "Parlez-moi de vous: uma história de um minuto: estudos, experiência, por que esta vaga. Não recite o currículo.",
+      "Vos points faibles: cite um real e como você trabalha nele: J'ai tendance à..., mais j'apprends à...",
+      "Vos ambitions: D'ici cinq ans, j'aimerais... mostra um plano ligado à empresa."
+     ],
+     "q": "Como você responderia a Parlez-moi de vous em umas quatro frases?",
+     "c": "Prepare sua resposta a Quels sont vos points faibles ? em francês, com J'ai tendance à... mais..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "parlez-moi de vous",
+      "ex": "Parlez-moi de vous et de votre parcours."
+     },
+     {
+      "w": "un point faible",
+      "ex": "Mon point faible, c'est le perfectionnisme."
+     },
+     {
+      "w": "j'ai tendance à",
+      "ex": "J'ai tendance à trop vérifier mon travail."
+     },
+     {
+      "w": "j'apprends à",
+      "ex": "J'apprends à déléguer certaines tâches."
+     },
+     {
+      "w": "d'ici cinq ans",
+      "ex": "D'ici cinq ans, j'aimerais diriger une petite équipe."
+     },
+     {
+      "w": "une ambition",
+      "ex": "Mon ambition est de travailler à l'international."
+     }
+    ],
+    "gram": "Parler de soi : présent pour le profil, passé composé pour le parcours, conditionnel (j'aimerais) pour les ambitions."
+   }
+  },
+  {
+   "d": 306,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Negotiating",
+     "g": "Make an offer, find a compromise and close a deal in French.",
+     "p": [
+      "The offer: Je vous propose... / Nous serions prêts à... The conditional softens every proposal.",
+      "The compromise: Et si on coupait la poire en deux ? / À condition que + subjunctive: à condition que vous livriez en mai.",
+      "The deal: Marché conclu ! / Nous sommes d'accord sur ce point. Then sum up what was agreed."
+     ],
+     "q": "Are you a good negotiator? Tell me about a time you found a compromise.",
+     "c": "Write a short French dialogue: a seller and a buyer agree on a price with à condition que."
+    },
+    "de": {
+     "t": "Verhandeln",
+     "g": "Du machst ein Angebot, findest einen Kompromiss und schließt eine Einigung auf Französisch.",
+     "p": [
+      "Das Angebot: Je vous propose... / Nous serions prêts à... Der Konditional macht jedes Angebot weicher.",
+      "Der Kompromiss: Et si on coupait la poire en deux ? / À condition que + Subjonctif: à condition que vous livriez en mai.",
+      "Die Einigung: Marché conclu ! / Nous sommes d'accord sur ce point. Dann das Ergebnis zusammenfassen."
+     ],
+     "q": "Bist du gut im Verhandeln? Erzähl von einem Kompromiss, den du gefunden hast.",
+     "c": "Schreib einen kurzen französischen Dialog: Verkäufer und Käufer einigen sich mit à condition que auf einen Preis."
+    },
+    "es": {
+     "t": "Negociar",
+     "g": "Haz una oferta, encuentra un compromiso y cierra un acuerdo en francés.",
+     "p": [
+      "La oferta: Je vous propose... / Nous serions prêts à... El condicional suaviza cada propuesta.",
+      "El compromiso: Et si on coupait la poire en deux ? / À condition que + subjuntivo: à condition que vous livriez en mai.",
+      "El acuerdo: Marché conclu ! / Nous sommes d'accord sur ce point. Luego resume lo acordado."
+     ],
+     "q": "¿Se te da bien negociar? Cuéntame una vez que encontraste un compromiso.",
+     "c": "Escribe un breve diálogo en francés: vendedor y comprador acuerdan un precio con à condition que."
+    },
+    "fr": {
+     "t": "Négocier",
+     "g": "Faire une offre, trouver un compromis et conclure un accord.",
+     "p": [
+      "L'offre : Je vous propose... / Nous serions prêts à... Le conditionnel adoucit chaque proposition.",
+      "Le compromis : Et si on coupait la poire en deux ? / À condition que + subjonctif : à condition que vous livriez en mai.",
+      "L'accord : Marché conclu ! / Nous sommes d'accord sur ce point. Puis on récapitule ce qui est décidé."
+     ],
+     "q": "Es-tu bon négociateur ? Raconte une fois où tu as trouvé un compromis.",
+     "c": "Écris un court dialogue : un vendeur et un acheteur s'accordent sur un prix avec à condition que."
+    },
+    "it": {
+     "t": "Negoziare",
+     "g": "Fai un'offerta, trova un compromesso e concludi un accordo in francese.",
+     "p": [
+      "L'offerta: Je vous propose... / Nous serions prêts à... Il condizionale ammorbidisce ogni proposta.",
+      "Il compromesso: Et si on coupait la poire en deux ? / À condition que + congiuntivo: à condition que vous livriez en mai.",
+      "L'accordo: Marché conclu ! / Nous sommes d'accord sur ce point. Poi riassumi quanto deciso."
+     ],
+     "q": "Sei bravo a negoziare? Raccontami di una volta in cui hai trovato un compromesso.",
+     "c": "Scrivi un breve dialogo in francese: venditore e compratore si accordano su un prezzo con à condition que."
+    },
+    "pt": {
+     "t": "Negociar",
+     "g": "Faz uma oferta, encontra um compromisso e fecha um acordo em francês.",
+     "p": [
+      "A oferta: Je vous propose... / Nous serions prêts à... O condicional suaviza cada proposta.",
+      "O compromisso: Et si on coupait la poire en deux ? / À condition que + conjuntivo: à condition que vous livriez en mai.",
+      "O acordo: Marché conclu ! / Nous sommes d'accord sur ce point. Depois resume o que ficou decidido."
+     ],
+     "q": "És bom a negociar? Conta-me uma vez em que encontraste um compromisso.",
+     "c": "Escreve um breve diálogo em francês: vendedor e comprador acordam um preço com à condition que."
+    },
+    "pt_BR": {
+     "t": "Negociando",
+     "g": "Faça uma oferta, encontre um meio-termo e feche um acordo em francês.",
+     "p": [
+      "A oferta: Je vous propose... / Nous serions prêts à... O condicional suaviza cada proposta.",
+      "O meio-termo: Et si on coupait la poire en deux ? / À condition que + subjuntivo: à condition que vous livriez en mai.",
+      "O acordo: Marché conclu ! / Nous sommes d'accord sur ce point. Depois resuma o que foi combinado."
+     ],
+     "q": "Você negocia bem? Conte uma vez em que encontrou um meio-termo.",
+     "c": "Escreva um breve diálogo em francês: vendedor e comprador combinam um preço com à condition que."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "faire une offre",
+      "ex": "Nous allons vous faire une offre intéressante."
+     },
+     {
+      "w": "nous serions prêts à",
+      "ex": "Nous serions prêts à baisser le prix de dix pour cent."
+     },
+     {
+      "w": "un compromis",
+      "ex": "Nous avons fini par trouver un compromis."
+     },
+     {
+      "w": "couper la poire en deux",
+      "ex": "Et si on coupait la poire en deux ?"
+     },
+     {
+      "w": "à condition que",
+      "ex": "J'accepte, à condition que vous livriez avant mai."
+     },
+     {
+      "w": "marché conclu",
+      "ex": "Parfait, marché conclu !"
+     }
+    ],
+    "gram": "Négocier : conditionnel pour proposer (nous serions prêts à) et à condition que + subjonctif pour poser une condition."
+   }
+  },
+  {
+   "d": 307,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Leading a meeting",
+     "g": "Run a meeting in French: open it, give the floor, refocus and take stock.",
+     "p": [
+      "Open: Merci d'être là. L'ordre du jour comporte trois points. Give the floor: Je laisse la parole à Léa.",
+      "Refocus politely: Revenons à notre sujet. / Je propose qu'on en reparle plus tard.",
+      "Take stock: Faisons le point. / Pour résumer, nous avons décidé que... Then assign tasks and a date."
+     ],
+     "q": "In your meetings, who usually speaks most? How would you give the floor to others in French?",
+     "c": "Write the opening and closing lines of a 30-minute team meeting in French."
+    },
+    "de": {
+     "t": "Eine Besprechung leiten",
+     "g": "Du leitest eine Besprechung auf Französisch: eröffnen, das Wort erteilen, zurückführen, Bilanz ziehen.",
+     "p": [
+      "Eröffnen: Merci d'être là. L'ordre du jour comporte trois points. Wort erteilen: Je laisse la parole à Léa.",
+      "Höflich zurückführen: Revenons à notre sujet. / Je propose qu'on en reparle plus tard.",
+      "Bilanz: Faisons le point. / Pour résumer, nous avons décidé que... Dann Aufgaben und Termin verteilen."
+     ],
+     "q": "Wer spricht in deinen Besprechungen am meisten? Wie würdest du anderen auf Französisch das Wort geben?",
+     "c": "Schreib die Eröffnungs- und Schlusssätze einer 30-minütigen Teambesprechung auf Französisch."
+    },
+    "es": {
+     "t": "Dirigir una reunión",
+     "g": "Dirige una reunión en francés: abrir, dar la palabra, reconducir y hacer balance.",
+     "p": [
+      "Abrir: Merci d'être là. L'ordre du jour comporte trois points. Dar la palabra: Je laisse la parole à Léa.",
+      "Reconducir con tacto: Revenons à notre sujet. / Je propose qu'on en reparle plus tard.",
+      "Hacer balance: Faisons le point. / Pour résumer, nous avons décidé que... Luego reparte tareas y fecha."
+     ],
+     "q": "En tus reuniones, ¿quién habla más? ¿Cómo darías la palabra a otros en francés?",
+     "c": "Escribe las frases de apertura y cierre de una reunión de equipo de 30 minutos en francés."
+    },
+    "fr": {
+     "t": "Animer une réunion",
+     "g": "Animer une réunion : ouvrir, donner la parole, recadrer et faire le point.",
+     "p": [
+      "Ouvrir : Merci d'être là. L'ordre du jour comporte trois points. Donner la parole : Je laisse la parole à Léa.",
+      "Recadrer poliment : Revenons à notre sujet. / Je propose qu'on en reparle plus tard.",
+      "Faire le point : Pour résumer, nous avons décidé que... Puis on répartit les tâches et on fixe une date."
+     ],
+     "q": "Dans tes réunions, qui parle le plus ? Comment donnerais-tu la parole aux autres ?",
+     "c": "Écris les phrases d'ouverture et de clôture d'une réunion d'équipe de 30 minutes."
+    },
+    "it": {
+     "t": "Condurre una riunione",
+     "g": "Conduci una riunione in francese: aprire, dare la parola, riportare al tema e fare il punto.",
+     "p": [
+      "Aprire: Merci d'être là. L'ordre du jour comporte trois points. Dare la parola: Je laisse la parole à Léa.",
+      "Riportare al tema con garbo: Revenons à notre sujet. / Je propose qu'on en reparle plus tard.",
+      "Fare il punto: Faisons le point. / Pour résumer, nous avons décidé que... Poi assegna compiti e data."
+     ],
+     "q": "Nelle tue riunioni chi parla di più? Come daresti la parola agli altri in francese?",
+     "c": "Scrivi le frasi di apertura e di chiusura di una riunione di squadra di 30 minuti in francese."
+    },
+    "pt": {
+     "t": "Conduzir uma reunião",
+     "g": "Conduz uma reunião em francês: abrir, dar a palavra, reorientar e fazer o ponto da situação.",
+     "p": [
+      "Abrir: Merci d'être là. L'ordre du jour comporte trois points. Dar a palavra: Je laisse la parole à Léa.",
+      "Reorientar com tato: Revenons à notre sujet. / Je propose qu'on en reparle plus tard.",
+      "Fazer o ponto: Faisons le point. / Pour résumer, nous avons décidé que... Depois distribui tarefas e uma data."
+     ],
+     "q": "Nas tuas reuniões, quem fala mais? Como darias a palavra aos outros em francês?",
+     "c": "Escreve as frases de abertura e de fecho de uma reunião de equipa de 30 minutos em francês."
+    },
+    "pt_BR": {
+     "t": "Conduzindo uma reunião",
+     "g": "Conduza uma reunião em francês: abrir, dar a palavra, retomar o foco e fazer um balanço.",
+     "p": [
+      "Abrir: Merci d'être là. L'ordre du jour comporte trois points. Dar a palavra: Je laisse la parole à Léa.",
+      "Retomar o foco com jeito: Revenons à notre sujet. / Je propose qu'on en reparle plus tard.",
+      "Balanço: Faisons le point. / Pour résumer, nous avons décidé que... Depois distribua tarefas e um prazo."
+     ],
+     "q": "Nas suas reuniões, quem fala mais? Como você daria a palavra aos outros em francês?",
+     "c": "Escreva as frases de abertura e de encerramento de uma reunião de equipe de 30 minutos em francês."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "l'ordre du jour",
+      "ex": "Le premier point à l'ordre du jour est le budget."
+     },
+     {
+      "w": "donner la parole à",
+      "ex": "Je donne maintenant la parole à Karim."
+     },
+     {
+      "w": "recadrer",
+      "ex": "Il a dû recadrer le débat qui partait dans tous les sens."
+     },
+     {
+      "w": "revenons à notre sujet",
+      "ex": "C'est intéressant, mais revenons à notre sujet."
+     },
+     {
+      "w": "faire le point",
+      "ex": "Faisons le point avant de passer au vote."
+     },
+     {
+      "w": "un compte rendu",
+      "ex": "Claire enverra le compte rendu demain."
+     }
+    ],
+    "gram": "Animer : impératif à la 1re personne du pluriel (revenons, faisons le point) et je propose que + subjonctif."
+   }
+  },
+  {
+   "d": 308,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Giving a presentation",
+     "g": "Give a presentation in French that captivates the audience, uses examples and handles questions.",
+     "p": [
+      "Captivate: start with a question or a surprising fact: Saviez-vous que...? Then announce your plan in one line.",
+      "Illustrate: Prenons un exemple concret. / Comme vous pouvez le voir sur ce graphique...",
+      "Questions: C'est une excellente question. / Si je vous ai bien compris, vous demandez si..."
+     ],
+     "q": "What topic could you present in French for five minutes without notes?",
+     "c": "Write the first 30 seconds of a French presentation on a hobby, starting with Saviez-vous que...?"
+    },
+    "de": {
+     "t": "Eine Präsentation halten",
+     "g": "Du hältst eine Präsentation auf Französisch, die fesselt, Beispiele nutzt und Fragen souverän beantwortet.",
+     "p": [
+      "Fesseln: Starte mit einer Frage oder einer überraschenden Tatsache: Saviez-vous que...? Dann den Plan in einem Satz.",
+      "Veranschaulichen: Prenons un exemple concret. / Comme vous pouvez le voir sur ce graphique...",
+      "Fragen: C'est une excellente question. / Si je vous ai bien compris, vous demandez si..."
+     ],
+     "q": "Über welches Thema könntest du fünf Minuten frei auf Französisch sprechen?",
+     "c": "Schreib die ersten 30 Sekunden einer französischen Präsentation über ein Hobby, beginnend mit Saviez-vous que...?"
+    },
+    "es": {
+     "t": "Hacer una presentación",
+     "g": "Haz una presentación en francés que capte al público, use ejemplos y responda bien a las preguntas.",
+     "p": [
+      "Captar: empieza con una pregunta o un dato sorprendente: Saviez-vous que...? Luego anuncia el plan en una línea.",
+      "Ilustrar: Prenons un exemple concret. / Comme vous pouvez le voir sur ce graphique...",
+      "Preguntas: C'est une excellente question. / Si je vous ai bien compris, vous demandez si..."
+     ],
+     "q": "¿Sobre qué tema podrías hablar cinco minutos en francés sin notas?",
+     "c": "Escribe los primeros 30 segundos de una presentación en francés sobre un hobby, empezando con Saviez-vous que...?"
+    },
+    "fr": {
+     "t": "Faire un exposé",
+     "g": "Présenter un exposé qui capte l'auditoire, l'illustrer et répondre aux questions.",
+     "p": [
+      "Capter : commencer par une question ou un fait surprenant : Saviez-vous que... ? Puis annoncer le plan en une phrase.",
+      "Illustrer : Prenons un exemple concret. / Comme vous pouvez le voir sur ce graphique...",
+      "Les questions : C'est une excellente question. / Si je vous ai bien compris, vous demandez si..."
+     ],
+     "q": "Sur quel sujet pourrais-tu parler cinq minutes sans notes ?",
+     "c": "Écris les 30 premières secondes d'un exposé sur un loisir, en commençant par Saviez-vous que... ?"
+    },
+    "it": {
+     "t": "Fare una presentazione",
+     "g": "Fai una presentazione in francese che catturi il pubblico, usi esempi e gestisca le domande.",
+     "p": [
+      "Catturare: inizia con una domanda o un dato sorprendente: Saviez-vous que...? Poi annuncia lo schema in una riga.",
+      "Illustrare: Prenons un exemple concret. / Comme vous pouvez le voir sur ce graphique...",
+      "Domande: C'est une excellente question. / Si je vous ai bien compris, vous demandez si..."
+     ],
+     "q": "Su quale argomento potresti parlare cinque minuti in francese senza appunti?",
+     "c": "Scrivi i primi 30 secondi di una presentazione in francese su un hobby, iniziando con Saviez-vous que...?"
+    },
+    "pt": {
+     "t": "Fazer uma apresentação",
+     "g": "Faz uma apresentação em francês que cativa o público, usa exemplos e responde bem a perguntas.",
+     "p": [
+      "Cativar: começa com uma pergunta ou um facto surpreendente: Saviez-vous que...? Depois anuncia o plano numa linha.",
+      "Ilustrar: Prenons un exemple concret. / Comme vous pouvez le voir sur ce graphique...",
+      "Perguntas: C'est une excellente question. / Si je vous ai bien compris, vous demandez si..."
+     ],
+     "q": "Sobre que tema conseguirias falar cinco minutos em francês sem notas?",
+     "c": "Escreve os primeiros 30 segundos de uma apresentação em francês sobre um passatempo, começando com Saviez-vous que...?"
+    },
+    "pt_BR": {
+     "t": "Fazendo uma apresentação",
+     "g": "Faça uma apresentação em francês que prenda o público, use exemplos e responda bem às perguntas.",
+     "p": [
+      "Prender: comece com uma pergunta ou um fato surpreendente: Saviez-vous que...? Depois anuncie o plano numa linha.",
+      "Ilustrar: Prenons un exemple concret. / Comme vous pouvez le voir sur ce graphique...",
+      "Perguntas: C'est une excellente question. / Si je vous ai bien compris, vous demandez si..."
+     ],
+     "q": "Sobre qual tema você conseguiria falar cinco minutos em francês sem anotações?",
+     "c": "Escreva os primeiros 30 segundos de uma apresentação em francês sobre um hobby, começando com Saviez-vous que...?"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un exposé",
+      "ex": "Elle a fait un exposé passionnant sur les abeilles."
+     },
+     {
+      "w": "saviez-vous que",
+      "ex": "Saviez-vous que le français est parlé sur cinq continents ?"
+     },
+     {
+      "w": "prenons un exemple",
+      "ex": "Prenons un exemple concret : le vélo en ville."
+     },
+     {
+      "w": "comme vous pouvez le voir",
+      "ex": "Comme vous pouvez le voir, les chiffres augmentent."
+     },
+     {
+      "w": "l'auditoire",
+      "ex": "Il a su captiver l'auditoire dès la première minute."
+     },
+     {
+      "w": "si je vous ai bien compris",
+      "ex": "Si je vous ai bien compris, vous voulez plus de détails ?"
+     }
+    ],
+    "gram": "Exposé : questions rhétoriques (saviez-vous que...?), impératif nous (prenons) et reformulation des questions (si je vous ai bien compris)."
+   }
+  },
+  {
+   "d": 309,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Economy vocabulary",
+     "g": "Talk about the economy in French: growth, jobs, purchasing power and companies.",
+     "p": [
+      "Key words: la croissance (growth), l'emploi (employment), le chômage (unemployment), le pouvoir d'achat.",
+      "Companies: une entreprise, une PME (small business), un salarié (employee), embaucher (to hire).",
+      "Verbs of change: la croissance ralentit, le chômage recule, les prix augmentent."
+     ],
+     "q": "What matters more to you in a job: salary, stability or meaning?",
+     "c": "Write three French sentences about the economy of your region using croissance, emploi and entreprise."
+    },
+    "de": {
+     "t": "Wirtschaftswortschatz",
+     "g": "Du sprichst auf Französisch über Wirtschaft: Wachstum, Beschäftigung, Kaufkraft und Unternehmen.",
+     "p": [
+      "Schlüsselwörter: la croissance (Wachstum), l'emploi (Beschäftigung), le chômage (Arbeitslosigkeit), le pouvoir d'achat (Kaufkraft).",
+      "Unternehmen: une entreprise, une PME (KMU), un salarié (Angestellter), embaucher (einstellen).",
+      "Verben der Veränderung: la croissance ralentit, le chômage recule, les prix augmentent."
+     ],
+     "q": "Was ist dir bei einem Job wichtiger: Gehalt, Sicherheit oder Sinn?",
+     "c": "Schreib drei französische Sätze über die Wirtschaft deiner Region mit croissance, emploi und entreprise."
+    },
+    "es": {
+     "t": "Vocabulario de economía",
+     "g": "Habla de economía en francés: crecimiento, empleo, poder adquisitivo y empresas.",
+     "p": [
+      "Palabras clave: la croissance (crecimiento), l'emploi (empleo), le chômage (paro), le pouvoir d'achat (poder adquisitivo).",
+      "Empresas: une entreprise, une PME (pyme), un salarié (asalariado), embaucher (contratar).",
+      "Verbos de cambio: la croissance ralentit, le chômage recule, les prix augmentent."
+     ],
+     "q": "¿Qué te importa más en un trabajo: el sueldo, la estabilidad o el sentido?",
+     "c": "Escribe tres frases en francés sobre la economía de tu región con croissance, emploi y entreprise."
+    },
+    "fr": {
+     "t": "Le vocabulaire de l'économie",
+     "g": "Parler d'économie : la croissance, l'emploi, le pouvoir d'achat et l'entreprise.",
+     "p": [
+      "Les mots clés : la croissance, l'emploi, le chômage, le pouvoir d'achat (ce qu'on peut acheter avec son revenu).",
+      "L'entreprise : une PME (petite ou moyenne entreprise), un salarié, embaucher, un chef d'entreprise.",
+      "Verbes d'évolution : la croissance ralentit, le chômage recule, les prix augmentent."
+     ],
+     "q": "Qu'est-ce qui compte le plus pour toi dans un travail : le salaire, la stabilité ou le sens ?",
+     "c": "Écris trois phrases sur l'économie de ta région avec croissance, emploi et entreprise."
+    },
+    "it": {
+     "t": "Il lessico dell'economia",
+     "g": "Parla di economia in francese: crescita, occupazione, potere d'acquisto e imprese.",
+     "p": [
+      "Parole chiave: la croissance (crescita), l'emploi (occupazione), le chômage (disoccupazione), le pouvoir d'achat (potere d'acquisto).",
+      "Imprese: une entreprise, une PME (PMI), un salarié (dipendente), embaucher (assumere).",
+      "Verbi di cambiamento: la croissance ralentit, le chômage recule, les prix augmentent."
+     ],
+     "q": "Cosa conta di più per te in un lavoro: lo stipendio, la stabilità o il senso?",
+     "c": "Scrivi tre frasi in francese sull'economia della tua regione con croissance, emploi ed entreprise."
+    },
+    "pt": {
+     "t": "Vocabulário de economia",
+     "g": "Fala de economia em francês: crescimento, emprego, poder de compra e empresas.",
+     "p": [
+      "Palavras-chave: la croissance (crescimento), l'emploi (emprego), le chômage (desemprego), le pouvoir d'achat (poder de compra).",
+      "Empresas: une entreprise, une PME (PME), un salarié (trabalhador por conta de outrem), embaucher (contratar).",
+      "Verbos de mudança: la croissance ralentit, le chômage recule, les prix augmentent."
+     ],
+     "q": "O que conta mais para ti num emprego: o salário, a estabilidade ou o sentido?",
+     "c": "Escreve três frases em francês sobre a economia da tua região com croissance, emploi e entreprise."
+    },
+    "pt_BR": {
+     "t": "Vocabulário de economia",
+     "g": "Fale de economia em francês: crescimento, emprego, poder de compra e empresas.",
+     "p": [
+      "Palavras-chave: la croissance (crescimento), l'emploi (emprego), le chômage (desemprego), le pouvoir d'achat (poder de compra).",
+      "Empresas: une entreprise, une PME (pequena ou média empresa), un salarié (funcionário), embaucher (contratar).",
+      "Verbos de mudança: la croissance ralentit, le chômage recule, les prix augmentent."
+     ],
+     "q": "O que pesa mais para você num trabalho: salário, estabilidade ou propósito?",
+     "c": "Escreva três frases em francês sobre a economia da sua região com croissance, emploi e entreprise."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la croissance",
+      "ex": "La croissance a ralenti au dernier trimestre."
+     },
+     {
+      "w": "l'emploi",
+      "ex": "Le tourisme crée beaucoup d'emplois dans la région."
+     },
+     {
+      "w": "le chômage",
+      "ex": "Le chômage des jeunes recule lentement."
+     },
+     {
+      "w": "le pouvoir d'achat",
+      "ex": "La hausse des prix pèse sur le pouvoir d'achat."
+     },
+     {
+      "w": "une entreprise",
+      "ex": "Elle a créé son entreprise à vingt-cinq ans."
+     },
+     {
+      "w": "embaucher",
+      "ex": "Cette PME va embaucher trois salariés."
+     }
+    ],
+    "gram": "Verbes d'évolution au présent (ralentir, reculer, augmenter) avec des noms abstraits sujets : la croissance ralentit."
+   }
+  },
+  {
+   "d": 310,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Science and research",
+     "g": "Talk about science in French: a study, a hypothesis, a discovery and how to prove it.",
+     "p": [
+      "The method: on formule une hypothèse, on mène une étude, on analyse les résultats.",
+      "Results: une découverte, les résultats montrent que..., prouver / démontrer que...",
+      "Be cautious: Il semblerait que... / Selon cette étude... The conditional shows information is not certain."
+     ],
+     "q": "Which scientific discovery do you find the most fascinating, and why?",
+     "c": "Describe a famous discovery in three French sentences using hypothèse, étude and prouver."
+    },
+    "de": {
+     "t": "Wissenschaft und Forschung",
+     "g": "Du sprichst auf Französisch über Wissenschaft: Studie, Hypothese, Entdeckung und Beweis.",
+     "p": [
+      "Die Methode: on formule une hypothèse, on mène une étude, on analyse les résultats.",
+      "Ergebnisse: une découverte, les résultats montrent que..., prouver / démontrer que...",
+      "Vorsichtig bleiben: Il semblerait que... / Selon cette étude... Der Konditional zeigt, dass etwas nicht sicher ist."
+     ],
+     "q": "Welche wissenschaftliche Entdeckung findest du am faszinierendsten, und warum?",
+     "c": "Beschreib eine berühmte Entdeckung in drei französischen Sätzen mit hypothèse, étude und prouver."
+    },
+    "es": {
+     "t": "Ciencia e investigación",
+     "g": "Habla de ciencia en francés: un estudio, una hipótesis, un descubrimiento y cómo probarlo.",
+     "p": [
+      "El método: on formule une hypothèse, on mène une étude, on analyse les résultats.",
+      "Resultados: une découverte, les résultats montrent que..., prouver / démontrer que...",
+      "Con prudencia: Il semblerait que... / Selon cette étude... El condicional indica que algo no es seguro."
+     ],
+     "q": "¿Qué descubrimiento científico te parece más fascinante y por qué?",
+     "c": "Describe un descubrimiento famoso en tres frases en francés con hypothèse, étude y prouver."
+    },
+    "fr": {
+     "t": "Science et recherche",
+     "g": "Parler de science : une étude, une hypothèse, une découverte, prouver.",
+     "p": [
+      "La démarche : on formule une hypothèse, on mène une étude, on analyse les résultats.",
+      "Les résultats : une découverte, les résultats montrent que..., prouver / démontrer que...",
+      "La prudence : Il semblerait que... / Selon cette étude, le café serait... Le conditionnel signale une info non vérifiée."
+     ],
+     "q": "Quelle découverte scientifique te fascine le plus, et pourquoi ?",
+     "c": "Décris une découverte célèbre en trois phrases avec hypothèse, étude et prouver."
+    },
+    "it": {
+     "t": "Scienza e ricerca",
+     "g": "Parla di scienza in francese: uno studio, un'ipotesi, una scoperta e come dimostrarla.",
+     "p": [
+      "Il metodo: on formule une hypothèse, on mène une étude, on analyse les résultats.",
+      "Risultati: une découverte, les résultats montrent que..., prouver / démontrer que...",
+      "Con prudenza: Il semblerait que... / Selon cette étude... Il condizionale segnala un'informazione non certa."
+     ],
+     "q": "Quale scoperta scientifica trovi più affascinante, e perché?",
+     "c": "Descrivi una scoperta famosa in tre frasi in francese con hypothèse, étude e prouver."
+    },
+    "pt": {
+     "t": "Ciência e investigação",
+     "g": "Fala de ciência em francês: um estudo, uma hipótese, uma descoberta e como prová-la.",
+     "p": [
+      "O método: on formule une hypothèse, on mène une étude, on analyse les résultats.",
+      "Resultados: une découverte, les résultats montrent que..., prouver / démontrer que...",
+      "Com prudência: Il semblerait que... / Selon cette étude... O condicional indica que algo não é certo."
+     ],
+     "q": "Que descoberta científica achas mais fascinante, e porquê?",
+     "c": "Descreve uma descoberta famosa em três frases em francês com hypothèse, étude e prouver."
+    },
+    "pt_BR": {
+     "t": "Ciência e pesquisa",
+     "g": "Fale de ciência em francês: um estudo, uma hipótese, uma descoberta e como prová-la.",
+     "p": [
+      "O método: on formule une hypothèse, on mène une étude, on analyse les résultats.",
+      "Resultados: une découverte, les résultats montrent que..., prouver / démontrer que...",
+      "Com cautela: Il semblerait que... / Selon cette étude... O condicional indica que algo não é certo."
+     ],
+     "q": "Qual descoberta científica você acha mais fascinante, e por quê?",
+     "c": "Descreva uma descoberta famosa em três frases em francês com hypothèse, étude e prouver."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "une étude",
+      "ex": "Une étude récente porte sur le sommeil des adolescents."
+     },
+     {
+      "w": "une hypothèse",
+      "ex": "Les chercheurs ont formulé une nouvelle hypothèse."
+     },
+     {
+      "w": "une découverte",
+      "ex": "Marie Curie a fait des découvertes majeures sur la radioactivité."
+     },
+     {
+      "w": "prouver",
+      "ex": "Il faut encore prouver cette théorie."
+     },
+     {
+      "w": "les résultats montrent que",
+      "ex": "Les résultats montrent que le sport améliore la mémoire."
+     },
+     {
+      "w": "il semblerait que",
+      "ex": "Il semblerait que ce médicament soit efficace."
+     }
+    ],
+    "gram": "Conditionnel journalistique pour une info non confirmée : selon cette étude, le café protégerait le cœur."
+   }
+  }
+ ]
+}

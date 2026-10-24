@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 61,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Was and were",
+     "g": "Use was and were to talk about the past of to be.",
+     "p": [
+      "I, he, she and it take was: I was at home, she was tired.",
+      "You, we and they take were: we were happy, they were late.",
+      "Questions flip the order: Were you at work? Was it good?"
+     ],
+     "q": "Where were you yesterday at eight in the evening?",
+     "c": "Write four sentences about last Sunday with was and were."
+    },
+    "de": {
+     "t": "Was und were",
+     "g": "Du lernst was und were, die Vergangenheit von to be.",
+     "p": [
+      "I, he, she und it bekommen was: I was at home, she was tired.",
+      "You, we und they bekommen were: we were happy, they were late.",
+      "In Fragen tauschst du die Reihenfolge: Were you at work? Was it good?"
+     ],
+     "q": "Wo warst du gestern um acht Uhr abends?",
+     "c": "Schreib vier Sätze über letzten Sonntag mit was und were."
+    },
+    "es": {
+     "t": "Was y were",
+     "g": "Aprende was y were, el pasado del verbo to be.",
+     "p": [
+      "I, he, she e it llevan was: I was at home, she was tired.",
+      "You, we y they llevan were: we were happy, they were late.",
+      "En preguntas se invierte el orden: Were you at work? Was it good?"
+     ],
+     "q": "¿Dónde estabas ayer a las ocho de la tarde?",
+     "c": "Escribe cuatro frases sobre el domingo pasado con was y were."
+    },
+    "fr": {
+     "t": "Was et were",
+     "g": "Apprendre was et were, le passé du verbe to be.",
+     "p": [
+      "I, he, she et it prennent was : I was at home, she was tired.",
+      "You, we et they prennent were : we were happy, they were late.",
+      "Pour une question, on inverse : Were you at work? Was it good?"
+     ],
+     "q": "Où étais-tu hier à huit heures du soir ?",
+     "c": "Écris quatre phrases sur dimanche dernier avec was et were."
+    },
+    "it": {
+     "t": "Was e were",
+     "g": "Impari was e were, il passato del verbo to be.",
+     "p": [
+      "I, he, she e it vogliono was: I was at home, she was tired.",
+      "You, we e they vogliono were: we were happy, they were late.",
+      "Nelle domande si inverte l'ordine: Were you at work? Was it good?"
+     ],
+     "q": "Dov'eri ieri alle otto di sera?",
+     "c": "Scrivi quattro frasi su domenica scorsa con was e were."
+    },
+    "pt": {
+     "t": "Was e were",
+     "g": "Aprende was e were, o passado do verbo to be.",
+     "p": [
+      "I, he, she e it usam was: I was at home, she was tired.",
+      "You, we e they usam were: we were happy, they were late.",
+      "Nas perguntas troca-se a ordem: Were you at work? Was it good?"
+     ],
+     "q": "Onde estavas ontem às oito da noite?",
+     "c": "Escreve quatro frases sobre o domingo passado com was e were."
+    },
+    "pt_BR": {
+     "t": "Was e were",
+     "g": "Aprenda was e were, o passado do verbo to be.",
+     "p": [
+      "I, he, she e it usam was: I was at home, she was tired.",
+      "You, we e they usam were: we were happy, they were late.",
+      "Nas perguntas a ordem se inverte: Were you at work? Was it good?"
+     ],
+     "q": "Onde você estava ontem às oito da noite?",
+     "c": "Escreva quatro frases sobre o domingo passado com was e were."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "was",
+      "ex": "I was at home last night."
+     },
+     {
+      "w": "were",
+      "ex": "We were very happy at the party."
+     },
+     {
+      "w": "wasn't",
+      "ex": "The film wasn't very good."
+     },
+     {
+      "w": "weren't",
+      "ex": "They weren't at school yesterday."
+     },
+     {
+      "w": "Were you...?",
+      "ex": "Were you tired after the trip?"
+     },
+     {
+      "w": "yesterday",
+      "ex": "It was cold yesterday."
+     }
+    ],
+    "gram": "Past of to be: I/he/she/it was, you/we/they were. Negative: wasn't, weren't. Question: Was he...? Were you...?"
+   }
+  },
+  {
+   "d": 62,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Past simple: regular verbs",
+     "g": "Talk about finished actions with regular verbs ending in -ed.",
+     "p": [
+      "Most verbs just add -ed: work becomes worked, visit becomes visited.",
+      "Verbs ending in -e add -d: live becomes lived. Consonant plus -y: study becomes studied.",
+      "The form is the same for every person: I played, she played, they played."
+     ],
+     "q": "What did you do last weekend? Use two regular verbs in your answer.",
+     "c": "Write five things you did yesterday with regular -ed verbs."
+    },
+    "de": {
+     "t": "Past simple: regelmäßige Verben",
+     "g": "Du erzählst abgeschlossene Handlungen mit regelmäßigen Verben auf -ed.",
+     "p": [
+      "Meist hängst du einfach -ed an: work wird worked, visit wird visited.",
+      "Endet das Verb auf -e, nur -d: live wird lived. Konsonant plus -y: study wird studied.",
+      "Die Form ist für alle Personen gleich: I played, she played, they played."
+     ],
+     "q": "Was hast du letztes Wochenende gemacht? Nutze zwei regelmäßige Verben.",
+     "c": "Schreib fünf Dinge, die du gestern gemacht hast, mit regelmäßigen -ed-Verben."
+    },
+    "es": {
+     "t": "Past simple: verbos regulares",
+     "g": "Habla de acciones terminadas con verbos regulares en -ed.",
+     "p": [
+      "Casi todos solo añaden -ed: work pasa a worked, visit pasa a visited.",
+      "Si acaban en -e, solo -d: live pasa a lived. Consonante más -y: study pasa a studied.",
+      "La forma es igual para todas las personas: I played, she played, they played."
+     ],
+     "q": "¿Qué hiciste el fin de semana pasado? Usa dos verbos regulares.",
+     "c": "Escribe cinco cosas que hiciste ayer con verbos regulares en -ed."
+    },
+    "fr": {
+     "t": "Past simple : verbes réguliers",
+     "g": "Parler d'actions terminées avec les verbes réguliers en -ed.",
+     "p": [
+      "La plupart ajoutent juste -ed : work devient worked, visit devient visited.",
+      "Finale en -e : juste -d, live devient lived. Consonne plus -y : study devient studied.",
+      "La forme est la même pour tous : I played, she played, they played."
+     ],
+     "q": "Qu'as-tu fait le week-end dernier ? Utilise deux verbes réguliers.",
+     "c": "Écris cinq choses que tu as faites hier avec des verbes réguliers en -ed."
+    },
+    "it": {
+     "t": "Past simple: verbi regolari",
+     "g": "Parli di azioni concluse con i verbi regolari in -ed.",
+     "p": [
+      "Quasi tutti aggiungono solo -ed: work diventa worked, visit diventa visited.",
+      "Se finiscono in -e, solo -d: live diventa lived. Consonante più -y: study diventa studied.",
+      "La forma è uguale per tutte le persone: I played, she played, they played."
+     ],
+     "q": "Cosa hai fatto lo scorso weekend? Usa due verbi regolari.",
+     "c": "Scrivi cinque cose che hai fatto ieri con verbi regolari in -ed."
+    },
+    "pt": {
+     "t": "Past simple: verbos regulares",
+     "g": "Fala de ações terminadas com verbos regulares em -ed.",
+     "p": [
+      "A maioria só junta -ed: work fica worked, visit fica visited.",
+      "Se acabam em -e, só -d: live fica lived. Consoante mais -y: study fica studied.",
+      "A forma é igual para todas as pessoas: I played, she played, they played."
+     ],
+     "q": "O que fizeste no fim de semana passado? Usa dois verbos regulares.",
+     "c": "Escreve cinco coisas que fizeste ontem com verbos regulares em -ed."
+    },
+    "pt_BR": {
+     "t": "Past simple: verbos regulares",
+     "g": "Fale de ações terminadas com verbos regulares em -ed.",
+     "p": [
+      "A maioria só ganha -ed: work vira worked, visit vira visited.",
+      "Se terminam em -e, só -d: live vira lived. Consoante mais -y: study vira studied.",
+      "A forma é igual para todas as pessoas: I played, she played, they played."
+     ],
+     "q": "O que você fez no fim de semana passado? Use dois verbos regulares.",
+     "c": "Escreva cinco coisas que você fez ontem com verbos regulares em -ed."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "worked",
+      "ex": "I worked from home on Monday."
+     },
+     {
+      "w": "played",
+      "ex": "She played tennis with her brother."
+     },
+     {
+      "w": "visited",
+      "ex": "We visited my grandparents last month."
+     },
+     {
+      "w": "watched",
+      "ex": "They watched a film on Friday night."
+     },
+     {
+      "w": "studied",
+      "ex": "He studied English for two hours."
+     },
+     {
+      "w": "cooked",
+      "ex": "I cooked pasta for dinner."
+     }
+    ],
+    "gram": "Past simple regular verbs: base + -ed (worked), -e + -d (lived), consonant + y becomes -ied (studied). Same form for all persons."
+   }
+  },
+  {
+   "d": 63,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Pronouncing -ed endings",
+     "g": "Say the -ed ending of regular verbs with the right sound.",
+     "p": [
+      "After sounds like p, k, s, sh, ch, -ed sounds like /t/: walked, stopped, watched.",
+      "After voiced sounds like n, l, v or a vowel, it sounds like /d/: played, lived, cleaned.",
+      "After t or d, add a syllable /id/: wanted, needed, visited."
+     ],
+     "q": "Can you say walked, played and wanted aloud? Which one has an extra syllable?",
+     "c": "Sort ten -ed verbs into three groups: /t/, /d/ and /id/, then say them aloud."
+    },
+    "de": {
+     "t": "Die Aussprache von -ed",
+     "g": "Du sprichst die Endung -ed regelmäßiger Verben richtig aus.",
+     "p": [
+      "Nach Lauten wie p, k, s, sh, ch klingt -ed wie /t/: walked, stopped, watched.",
+      "Nach stimmhaften Lauten wie n, l, v oder Vokalen klingt es wie /d/: played, lived, cleaned.",
+      "Nach t oder d kommt eine Silbe /id/ dazu: wanted, needed, visited."
+     ],
+     "q": "Kannst du walked, played und wanted laut sagen? Welches hat eine Silbe mehr?",
+     "c": "Sortiere zehn -ed-Verben in drei Gruppen: /t/, /d/ und /id/, und sprich sie laut."
+    },
+    "es": {
+     "t": "Cómo se pronuncia -ed",
+     "g": "Pronuncia bien la terminación -ed de los verbos regulares.",
+     "p": [
+      "Tras sonidos como p, k, s, sh, ch, -ed suena /t/: walked, stopped, watched.",
+      "Tras sonidos sonoros como n, l, v o vocal, suena /d/: played, lived, cleaned.",
+      "Tras t o d, se añade una sílaba /id/: wanted, needed, visited."
+     ],
+     "q": "¿Puedes decir walked, played y wanted en voz alta? ¿Cuál tiene una sílaba más?",
+     "c": "Clasifica diez verbos en -ed en tres grupos: /t/, /d/ e /id/, y dilos en voz alta."
+    },
+    "fr": {
+     "t": "Prononcer la finale -ed",
+     "g": "Prononcer correctement la finale -ed des verbes réguliers.",
+     "p": [
+      "Après des sons comme p, k, s, sh, ch, -ed se dit /t/ : walked, stopped, watched.",
+      "Après un son sonore comme n, l, v ou une voyelle, il se dit /d/ : played, lived, cleaned.",
+      "Après t ou d, on ajoute une syllabe /id/ : wanted, needed, visited."
+     ],
+     "q": "Peux-tu dire walked, played et wanted à voix haute ? Lequel a une syllabe de plus ?",
+     "c": "Classe dix verbes en -ed en trois groupes : /t/, /d/ et /id/, puis dis-les à voix haute."
+    },
+    "it": {
+     "t": "Pronunciare la desinenza -ed",
+     "g": "Pronunci bene la desinenza -ed dei verbi regolari.",
+     "p": [
+      "Dopo suoni come p, k, s, sh, ch, -ed si legge /t/: walked, stopped, watched.",
+      "Dopo suoni sonori come n, l, v o una vocale, si legge /d/: played, lived, cleaned.",
+      "Dopo t o d si aggiunge una sillaba /id/: wanted, needed, visited."
+     ],
+     "q": "Sai dire ad alta voce walked, played e wanted? Quale ha una sillaba in più?",
+     "c": "Dividi dieci verbi in -ed in tre gruppi: /t/, /d/ e /id/, poi dilli ad alta voce."
+    },
+    "pt": {
+     "t": "Como se pronuncia -ed",
+     "g": "Pronuncia bem a terminação -ed dos verbos regulares.",
+     "p": [
+      "Depois de sons como p, k, s, sh, ch, -ed soa /t/: walked, stopped, watched.",
+      "Depois de sons vozeados como n, l, v ou vogal, soa /d/: played, lived, cleaned.",
+      "Depois de t ou d, junta-se uma sílaba /id/: wanted, needed, visited."
+     ],
+     "q": "Consegues dizer walked, played e wanted em voz alta? Qual tem uma sílaba a mais?",
+     "c": "Separa dez verbos em -ed em três grupos: /t/, /d/ e /id/, e di-los em voz alta."
+    },
+    "pt_BR": {
+     "t": "Como pronunciar o -ed",
+     "g": "Pronuncie direito a terminação -ed dos verbos regulares.",
+     "p": [
+      "Depois de sons como p, k, s, sh, ch, o -ed soa /t/: walked, stopped, watched.",
+      "Depois de sons sonoros como n, l, v ou vogal, soa /d/: played, lived, cleaned.",
+      "Depois de t ou d, entra uma sílaba /id/: wanted, needed, visited."
+     ],
+     "q": "Você consegue dizer walked, played e wanted em voz alta? Qual tem uma sílaba a mais?",
+     "c": "Separe dez verbos em -ed em três grupos: /t/, /d/ e /id/, e fale todos em voz alta."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "walked /t/",
+      "ex": "I walked to the park after lunch."
+     },
+     {
+      "w": "stopped /t/",
+      "ex": "The bus stopped near my house."
+     },
+     {
+      "w": "played /d/",
+      "ex": "We played cards all evening."
+     },
+     {
+      "w": "cleaned /d/",
+      "ex": "She cleaned the kitchen this morning."
+     },
+     {
+      "w": "wanted /id/",
+      "ex": "I wanted a cup of tea."
+     },
+     {
+      "w": "needed /id/",
+      "ex": "They needed help with the bags."
+     }
+    ],
+    "gram": "-ed sounds /t/ after voiceless sounds (walked), /d/ after voiced sounds (played), /id/ after t or d (wanted)."
+   }
+  },
+  {
+   "d": 64,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Past simple: common irregular verbs",
+     "g": "Learn the irregular past forms you use every day.",
+     "p": [
+      "Some verbs change completely: go becomes went, see becomes saw, eat becomes ate.",
+      "Others change a little: have becomes had, make becomes made, get becomes got.",
+      "Learn them in small groups and use them in real sentences every day."
+     ],
+     "q": "What did you eat yesterday, and where did you go after work or school?",
+     "c": "Write a mini diary of yesterday using went, had, saw, ate, got and came."
+    },
+    "de": {
+     "t": "Past simple: häufige unregelmäßige Verben",
+     "g": "Du lernst die unregelmäßigen Vergangenheitsformen für jeden Tag.",
+     "p": [
+      "Manche Verben ändern sich ganz: go wird went, see wird saw, eat wird ate.",
+      "Andere ändern sich wenig: have wird had, make wird made, get wird got.",
+      "Lern sie in kleinen Gruppen und benutze sie täglich in echten Sätzen."
+     ],
+     "q": "Was hast du gestern gegessen, und wohin bist du nach der Arbeit oder Schule gegangen?",
+     "c": "Schreib ein Mini-Tagebuch von gestern mit went, had, saw, ate, got und came."
+    },
+    "es": {
+     "t": "Past simple: irregulares frecuentes",
+     "g": "Aprende los pasados irregulares que usas todos los días.",
+     "p": [
+      "Algunos cambian del todo: go pasa a went, see a saw, eat a ate.",
+      "Otros cambian poco: have pasa a had, make a made, get a got.",
+      "Apréndelos en grupos pequeños y úsalos cada día en frases reales."
+     ],
+     "q": "¿Qué comiste ayer y adónde fuiste después del trabajo o de clase?",
+     "c": "Escribe un mini diario de ayer con went, had, saw, ate, got y came."
+    },
+    "fr": {
+     "t": "Past simple : irréguliers courants",
+     "g": "Apprendre les passés irréguliers que l'on utilise chaque jour.",
+     "p": [
+      "Certains changent tout : go devient went, see devient saw, eat devient ate.",
+      "D'autres changent peu : have devient had, make devient made, get devient got.",
+      "Apprends-les par petits groupes et utilise-les chaque jour dans de vraies phrases."
+     ],
+     "q": "Qu'as-tu mangé hier, et où es-tu allé après le travail ou les cours ?",
+     "c": "Écris un mini journal d'hier avec went, had, saw, ate, got et came."
+    },
+    "it": {
+     "t": "Past simple: irregolari comuni",
+     "g": "Impari i passati irregolari che usi ogni giorno.",
+     "p": [
+      "Alcuni cambiano del tutto: go diventa went, see diventa saw, eat diventa ate.",
+      "Altri cambiano poco: have diventa had, make diventa made, get diventa got.",
+      "Imparali a piccoli gruppi e usali ogni giorno in frasi vere."
+     ],
+     "q": "Cosa hai mangiato ieri e dove sei andato dopo il lavoro o la scuola?",
+     "c": "Scrivi un mini diario di ieri con went, had, saw, ate, got e came."
+    },
+    "pt": {
+     "t": "Past simple: irregulares frequentes",
+     "g": "Aprende os passados irregulares que usas todos os dias.",
+     "p": [
+      "Alguns mudam por completo: go fica went, see fica saw, eat fica ate.",
+      "Outros mudam pouco: have fica had, make fica made, get fica got.",
+      "Aprende-os em pequenos grupos e usa-os todos os dias em frases reais."
+     ],
+     "q": "O que comeste ontem e aonde foste depois do trabalho ou das aulas?",
+     "c": "Escreve um mini diário de ontem com went, had, saw, ate, got e came."
+    },
+    "pt_BR": {
+     "t": "Past simple: irregulares comuns",
+     "g": "Aprenda os passados irregulares que você usa todo dia.",
+     "p": [
+      "Alguns mudam totalmente: go vira went, see vira saw, eat vira ate.",
+      "Outros mudam pouco: have vira had, make vira made, get vira got.",
+      "Aprenda em pequenos grupos e use todo dia em frases reais."
+     ],
+     "q": "O que você comeu ontem e aonde foi depois do trabalho ou da aula?",
+     "c": "Escreva um mini diário de ontem com went, had, saw, ate, got e came."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "went (go)",
+      "ex": "I went to the beach on Saturday."
+     },
+     {
+      "w": "had (have)",
+      "ex": "We had pizza for lunch."
+     },
+     {
+      "w": "saw (see)",
+      "ex": "She saw her friend at the station."
+     },
+     {
+      "w": "ate (eat)",
+      "ex": "They ate breakfast at seven."
+     },
+     {
+      "w": "got (get)",
+      "ex": "He got a message from his boss."
+     },
+     {
+      "w": "came (come)",
+      "ex": "My cousin came to visit us."
+     }
+    ],
+    "gram": "Irregular verbs have their own past form: go-went, have-had, see-saw, eat-ate, get-got, make-made, come-came."
+   }
+  },
+  {
+   "d": 65,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Past questions with did",
+     "g": "Ask questions about the past with did and the base verb.",
+     "p": [
+      "Use did plus subject plus base verb: Did you sleep well?",
+      "Add a question word in front: Where did you go? What did she buy?",
+      "After did, the verb goes back to its base form: Did you go?, not Did you went?"
+     ],
+     "q": "Did you enjoy your last holiday? Ask me one past question back with did.",
+     "c": "Write five past questions with did for a friend and answer them yourself."
+    },
+    "de": {
+     "t": "Fragen in der Vergangenheit mit did",
+     "g": "Du stellst Fragen zur Vergangenheit mit did und der Grundform.",
+     "p": [
+      "Muster: did plus Subjekt plus Grundform: Did you sleep well?",
+      "Ein Fragewort kommt davor: Where did you go? What did she buy?",
+      "Nach did steht die Grundform: Did you go?, nicht Did you went?"
+     ],
+     "q": "Hat dir dein letzter Urlaub gefallen? Stell mir eine Frage mit did zurück.",
+     "c": "Schreib fünf Fragen mit did für einen Freund und beantworte sie selbst."
+    },
+    "es": {
+     "t": "Preguntas en pasado con did",
+     "g": "Haz preguntas sobre el pasado con did y el verbo base.",
+     "p": [
+      "Usa did más sujeto más verbo base: Did you sleep well?",
+      "Pon la palabra interrogativa delante: Where did you go? What did she buy?",
+      "Después de did, el verbo vuelve a su forma base: Did you go?, no Did you went?"
+     ],
+     "q": "¿Disfrutaste tus últimas vacaciones? Hazme tú una pregunta con did.",
+     "c": "Escribe cinco preguntas en pasado con did para un amigo y contéstalas tú."
+    },
+    "fr": {
+     "t": "Questions au passé avec did",
+     "g": "Poser des questions sur le passé avec did et la base verbale.",
+     "p": [
+      "Schéma : did plus sujet plus base verbale : Did you sleep well?",
+      "Le mot interrogatif se place devant : Where did you go? What did she buy?",
+      "Après did, le verbe reprend sa base : Did you go?, pas Did you went?"
+     ],
+     "q": "As-tu aimé tes dernières vacances ? Pose-moi à ton tour une question avec did.",
+     "c": "Écris cinq questions au passé avec did pour un ami et réponds-y toi-même."
+    },
+    "it": {
+     "t": "Domande al passato con did",
+     "g": "Fai domande sul passato con did e il verbo base.",
+     "p": [
+      "Usa did più soggetto più verbo base: Did you sleep well?",
+      "La parola interrogativa va davanti: Where did you go? What did she buy?",
+      "Dopo did il verbo torna alla forma base: Did you go?, non Did you went?"
+     ],
+     "q": "Ti è piaciuta la tua ultima vacanza? Fammi tu una domanda con did.",
+     "c": "Scrivi cinque domande al passato con did per un amico e rispondi tu stesso."
+    },
+    "pt": {
+     "t": "Perguntas no passado com did",
+     "g": "Faz perguntas sobre o passado com did e o verbo base.",
+     "p": [
+      "Usa did mais sujeito mais verbo base: Did you sleep well?",
+      "A palavra interrogativa vem à frente: Where did you go? What did she buy?",
+      "Depois de did, o verbo volta à forma base: Did you go?, e não Did you went?"
+     ],
+     "q": "Gostaste das tuas últimas férias? Faz-me tu uma pergunta com did.",
+     "c": "Escreve cinco perguntas no passado com did para um amigo e responde tu mesmo."
+    },
+    "pt_BR": {
+     "t": "Perguntas no passado com did",
+     "g": "Faça perguntas sobre o passado com did e o verbo base.",
+     "p": [
+      "Use did mais sujeito mais verbo base: Did you sleep well?",
+      "A palavra interrogativa vem na frente: Where did you go? What did she buy?",
+      "Depois de did, o verbo volta à forma base: Did you go?, e não Did you went?"
+     ],
+     "q": "Você curtiu suas últimas férias? Me faça uma pergunta com did.",
+     "c": "Escreva cinco perguntas no passado com did para um amigo e responda você mesmo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Did you...?",
+      "ex": "Did you sleep well last night?"
+     },
+     {
+      "w": "Where did...?",
+      "ex": "Where did you go on holiday?"
+     },
+     {
+      "w": "What did...?",
+      "ex": "What did you have for dinner?"
+     },
+     {
+      "w": "When did...?",
+      "ex": "When did they arrive?"
+     },
+     {
+      "w": "Yes, I did.",
+      "ex": "Did you like the film? Yes, I did."
+     },
+     {
+      "w": "No, I didn't.",
+      "ex": "Did she call you? No, she didn't."
+     }
+    ],
+    "gram": "Past questions: (Question word) + did + subject + base verb: Did you go? Where did you go? Short answers: Yes, I did. No, I didn't."
+   }
+  },
+  {
+   "d": 66,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Past negatives: didn't",
+     "g": "Say what did not happen with didn't and the base verb.",
+     "p": [
+      "Use didn't plus base verb for every person: I didn't see it, he didn't call.",
+      "Do not add -ed after didn't: I didn't watch, not I didn't watched.",
+      "For was and were, just add not: I wasn't hungry, they weren't there."
+     ],
+     "q": "Tell me one thing you didn't do yesterday but wanted to do.",
+     "c": "Write three true and three false sentences about your week with didn't."
+    },
+    "de": {
+     "t": "Verneinung in der Vergangenheit: didn't",
+     "g": "Du sagst mit didn't und der Grundform, was nicht passiert ist.",
+     "p": [
+      "Didn't plus Grundform gilt für alle Personen: I didn't see it, he didn't call.",
+      "Nach didn't kein -ed: I didn't watch, nicht I didn't watched.",
+      "Bei was und were reicht not: I wasn't hungry, they weren't there."
+     ],
+     "q": "Nenn mir eine Sache, die du gestern nicht gemacht hast, aber wolltest.",
+     "c": "Schreib drei wahre und drei falsche Sätze über deine Woche mit didn't."
+    },
+    "es": {
+     "t": "Negativas en pasado: didn't",
+     "g": "Di lo que no pasó con didn't y el verbo base.",
+     "p": [
+      "Usa didn't más verbo base para todas las personas: I didn't see it, he didn't call.",
+      "No pongas -ed después de didn't: I didn't watch, no I didn't watched.",
+      "Con was y were basta con not: I wasn't hungry, they weren't there."
+     ],
+     "q": "Cuéntame algo que no hiciste ayer pero querías hacer.",
+     "c": "Escribe tres frases verdaderas y tres falsas sobre tu semana con didn't."
+    },
+    "fr": {
+     "t": "La négation au passé : didn't",
+     "g": "Dire ce qui ne s'est pas passé avec didn't et la base verbale.",
+     "p": [
+      "Didn't plus base verbale pour toutes les personnes : I didn't see it, he didn't call.",
+      "Pas de -ed après didn't : I didn't watch, pas I didn't watched.",
+      "Avec was et were, on ajoute juste not : I wasn't hungry, they weren't there."
+     ],
+     "q": "Dis-moi une chose que tu n'as pas faite hier mais que tu voulais faire.",
+     "c": "Écris trois phrases vraies et trois fausses sur ta semaine avec didn't."
+    },
+    "it": {
+     "t": "Negative al passato: didn't",
+     "g": "Dici cosa non è successo con didn't e il verbo base.",
+     "p": [
+      "Didn't più verbo base per tutte le persone: I didn't see it, he didn't call.",
+      "Niente -ed dopo didn't: I didn't watch, non I didn't watched.",
+      "Con was e were basta not: I wasn't hungry, they weren't there."
+     ],
+     "q": "Dimmi una cosa che ieri non hai fatto ma volevi fare.",
+     "c": "Scrivi tre frasi vere e tre false sulla tua settimana con didn't."
+    },
+    "pt": {
+     "t": "Negativas no passado: didn't",
+     "g": "Diz o que não aconteceu com didn't e o verbo base.",
+     "p": [
+      "Usa didn't mais verbo base para todas as pessoas: I didn't see it, he didn't call.",
+      "Não ponhas -ed depois de didn't: I didn't watch, e não I didn't watched.",
+      "Com was e were basta not: I wasn't hungry, they weren't there."
+     ],
+     "q": "Diz-me uma coisa que não fizeste ontem mas querias fazer.",
+     "c": "Escreve três frases verdadeiras e três falsas sobre a tua semana com didn't."
+    },
+    "pt_BR": {
+     "t": "Negativas no passado: didn't",
+     "g": "Diga o que não aconteceu com didn't e o verbo base.",
+     "p": [
+      "Use didn't mais verbo base para todas as pessoas: I didn't see it, he didn't call.",
+      "Não coloque -ed depois de didn't: I didn't watch, e não I didn't watched.",
+      "Com was e were basta not: I wasn't hungry, they weren't there."
+     ],
+     "q": "Me conte uma coisa que você não fez ontem mas queria fazer.",
+     "c": "Escreva três frases verdadeiras e três falsas sobre sua semana com didn't."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "didn't see",
+      "ex": "I didn't see the message."
+     },
+     {
+      "w": "didn't call",
+      "ex": "She didn't call me back."
+     },
+     {
+      "w": "didn't go",
+      "ex": "We didn't go out on Friday."
+     },
+     {
+      "w": "didn't have",
+      "ex": "He didn't have time for lunch."
+     },
+     {
+      "w": "wasn't",
+      "ex": "The shop wasn't open."
+     },
+     {
+      "w": "weren't",
+      "ex": "My friends weren't at home."
+     }
+    ],
+    "gram": "Past negative: subject + didn't + base verb (I didn't go). With be: wasn't / weren't (It wasn't easy)."
+   }
+  },
+  {
+   "d": 67,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Telling your weekend story",
+     "g": "Use the past simple to tell what you did last weekend.",
+     "p": [
+      "Start with when and where: On Saturday morning I was at home.",
+      "Use first, then and after that to put actions in order.",
+      "Mix regular and irregular verbs and add a feeling: It was fun!"
+     ],
+     "q": "What was the best part of your last weekend? Tell me in three sentences.",
+     "c": "Record or write your weekend story in six sentences with first, then and after that."
+    },
+    "de": {
+     "t": "Deine Wochenendgeschichte",
+     "g": "Du erzählst im past simple, was du am Wochenende gemacht hast.",
+     "p": [
+      "Beginne mit wann und wo: On Saturday morning I was at home.",
+      "Mit first, then und after that bringst du die Handlungen in Reihenfolge.",
+      "Misch regelmäßige und unregelmäßige Verben und füg ein Gefühl hinzu: It was fun!"
+     ],
+     "q": "Was war das Beste an deinem letzten Wochenende? Erzähl es in drei Sätzen.",
+     "c": "Schreib oder sprich deine Wochenendgeschichte in sechs Sätzen mit first, then, after that."
+    },
+    "es": {
+     "t": "Cuenta tu fin de semana",
+     "g": "Usa el past simple para contar qué hiciste el fin de semana.",
+     "p": [
+      "Empieza con cuándo y dónde: On Saturday morning I was at home.",
+      "Usa first, then y after that para ordenar las acciones.",
+      "Mezcla verbos regulares e irregulares y añade una emoción: It was fun!"
+     ],
+     "q": "¿Qué fue lo mejor de tu último fin de semana? Cuéntamelo en tres frases.",
+     "c": "Graba o escribe tu fin de semana en seis frases con first, then y after that."
+    },
+    "fr": {
+     "t": "Raconter ton week-end",
+     "g": "Utiliser le past simple pour raconter ton week-end.",
+     "p": [
+      "Commence par quand et où : On Saturday morning I was at home.",
+      "Utilise first, then et after that pour mettre les actions dans l'ordre.",
+      "Mélange verbes réguliers et irréguliers et ajoute une émotion : It was fun!"
+     ],
+     "q": "Quel a été le meilleur moment de ton dernier week-end ? Raconte-le en trois phrases.",
+     "c": "Enregistre ou écris ton week-end en six phrases avec first, then et after that."
+    },
+    "it": {
+     "t": "Racconta il tuo weekend",
+     "g": "Usi il past simple per raccontare cosa hai fatto nel weekend.",
+     "p": [
+      "Comincia con quando e dove: On Saturday morning I was at home.",
+      "Usa first, then e after that per mettere in ordine le azioni.",
+      "Mescola verbi regolari e irregolari e aggiungi un'emozione: It was fun!"
+     ],
+     "q": "Qual è stata la parte migliore del tuo ultimo weekend? Raccontala in tre frasi.",
+     "c": "Registra o scrivi il tuo weekend in sei frasi con first, then e after that."
+    },
+    "pt": {
+     "t": "Conta o teu fim de semana",
+     "g": "Usa o past simple para contar o que fizeste no fim de semana.",
+     "p": [
+      "Começa com quando e onde: On Saturday morning I was at home.",
+      "Usa first, then e after that para pôr as ações por ordem.",
+      "Mistura verbos regulares e irregulares e junta uma emoção: It was fun!"
+     ],
+     "q": "Qual foi a melhor parte do teu último fim de semana? Conta em três frases.",
+     "c": "Grava ou escreve o teu fim de semana em seis frases com first, then e after that."
+    },
+    "pt_BR": {
+     "t": "Conte seu fim de semana",
+     "g": "Use o past simple para contar o que você fez no fim de semana.",
+     "p": [
+      "Comece com quando e onde: On Saturday morning I was at home.",
+      "Use first, then e after that para colocar as ações em ordem.",
+      "Misture verbos regulares e irregulares e acrescente uma emoção: It was fun!"
+     ],
+     "q": "Qual foi a melhor parte do seu último fim de semana? Conte em três frases.",
+     "c": "Grave ou escreva seu fim de semana em seis frases com first, then e after that."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "on Saturday morning",
+      "ex": "On Saturday morning I went to the market."
+     },
+     {
+      "w": "first",
+      "ex": "First, I had a big breakfast."
+     },
+     {
+      "w": "then",
+      "ex": "Then I met my friends in the park."
+     },
+     {
+      "w": "after that",
+      "ex": "After that, we watched a film."
+     },
+     {
+      "w": "It was fun!",
+      "ex": "We played football. It was fun!"
+     },
+     {
+      "w": "in the evening",
+      "ex": "In the evening I stayed at home."
+     }
+    ],
+    "gram": "Tell a story in order with the past simple and sequencers: first, then, after that, in the end."
+   }
+  },
+  {
+   "d": 68,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Time words: yesterday, last week, ago",
+     "g": "Place events in the past with time words like yesterday, last and ago.",
+     "p": [
+      "Yesterday works alone: yesterday, yesterday morning, yesterday evening.",
+      "Last comes before the period: last night, last week, last year, without the.",
+      "Ago comes after the time: two days ago, ten minutes ago, a long time ago."
+     ],
+     "q": "When did you last see a film at the cinema? Answer with ago.",
+     "c": "Write five sentences about past events, each with a different time word."
+    },
+    "de": {
+     "t": "Zeitwörter: yesterday, last week, ago",
+     "g": "Du ordnest Ereignisse mit yesterday, last und ago in die Vergangenheit ein.",
+     "p": [
+      "Yesterday steht allein: yesterday, yesterday morning, yesterday evening.",
+      "Last steht vor dem Zeitraum: last night, last week, last year, ohne the.",
+      "Ago steht hinter der Zeit: two days ago, ten minutes ago, a long time ago."
+     ],
+     "q": "Wann warst du zuletzt im Kino? Antworte mit ago.",
+     "c": "Schreib fünf Sätze über Vergangenes, jeder mit einem anderen Zeitwort."
+    },
+    "es": {
+     "t": "Palabras de tiempo: yesterday, last, ago",
+     "g": "Sitúa hechos en el pasado con yesterday, last y ago.",
+     "p": [
+      "Yesterday va solo: yesterday, yesterday morning, yesterday evening.",
+      "Last va antes del periodo: last night, last week, last year, sin the.",
+      "Ago va después del tiempo: two days ago, ten minutes ago, a long time ago."
+     ],
+     "q": "¿Cuándo fuiste al cine por última vez? Contesta con ago.",
+     "c": "Escribe cinco frases sobre el pasado, cada una con una palabra de tiempo distinta."
+    },
+    "fr": {
+     "t": "Mots de temps : yesterday, last, ago",
+     "g": "Situer des faits dans le passé avec yesterday, last et ago.",
+     "p": [
+      "Yesterday s'emploie seul : yesterday, yesterday morning, yesterday evening.",
+      "Last se place avant la période : last night, last week, last year, sans the.",
+      "Ago se place après la durée : two days ago, ten minutes ago, a long time ago."
+     ],
+     "q": "Quand es-tu allé au cinéma pour la dernière fois ? Réponds avec ago.",
+     "c": "Écris cinq phrases sur le passé, chacune avec un mot de temps différent."
+    },
+    "it": {
+     "t": "Parole di tempo: yesterday, last, ago",
+     "g": "Collochi i fatti nel passato con yesterday, last e ago.",
+     "p": [
+      "Yesterday sta da solo: yesterday, yesterday morning, yesterday evening.",
+      "Last va prima del periodo: last night, last week, last year, senza the.",
+      "Ago va dopo il tempo: two days ago, ten minutes ago, a long time ago."
+     ],
+     "q": "Quando sei andato al cinema l'ultima volta? Rispondi con ago.",
+     "c": "Scrivi cinque frasi sul passato, ognuna con una parola di tempo diversa."
+    },
+    "pt": {
+     "t": "Palavras de tempo: yesterday, last, ago",
+     "g": "Situa acontecimentos no passado com yesterday, last e ago.",
+     "p": [
+      "Yesterday usa-se sozinho: yesterday, yesterday morning, yesterday evening.",
+      "Last vem antes do período: last night, last week, last year, sem the.",
+      "Ago vem depois do tempo: two days ago, ten minutes ago, a long time ago."
+     ],
+     "q": "Quando foste ao cinema pela última vez? Responde com ago.",
+     "c": "Escreve cinco frases sobre o passado, cada uma com uma palavra de tempo diferente."
+    },
+    "pt_BR": {
+     "t": "Palavras de tempo: yesterday, last, ago",
+     "g": "Situe fatos no passado com yesterday, last e ago.",
+     "p": [
+      "Yesterday aparece sozinho: yesterday, yesterday morning, yesterday evening.",
+      "Last vem antes do período: last night, last week, last year, sem the.",
+      "Ago vem depois do tempo: two days ago, ten minutes ago, a long time ago."
+     ],
+     "q": "Quando você foi ao cinema pela última vez? Responda com ago.",
+     "c": "Escreva cinco frases sobre o passado, cada uma com uma palavra de tempo diferente."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "yesterday morning",
+      "ex": "I went running yesterday morning."
+     },
+     {
+      "w": "last night",
+      "ex": "We had dinner with friends last night."
+     },
+     {
+      "w": "last week",
+      "ex": "She started a new job last week."
+     },
+     {
+      "w": "last year",
+      "ex": "They moved to a new city last year."
+     },
+     {
+      "w": "two days ago",
+      "ex": "I bought these shoes two days ago."
+     },
+     {
+      "w": "a long time ago",
+      "ex": "I visited London a long time ago."
+     }
+    ],
+    "gram": "Past time words: yesterday (+ morning), last + night/week/year (no the), time period + ago (two days ago)."
+   }
+  },
+  {
+   "d": 69,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Ordinal numbers: first, second",
+     "g": "Use ordinal numbers for dates, floors and rankings.",
+     "p": [
+      "The special ones: first, second, third. Then add -th: fourth, fifth, tenth.",
+      "Big numbers use the last digit: twenty-first, thirty-second, forty-third.",
+      "Dates: the fifth of May or May fifth. Floors: I live on the third floor."
+     ],
+     "q": "When is your birthday? Say the date with an ordinal number.",
+     "c": "Write the dates of five important days in your year using ordinal numbers."
+    },
+    "de": {
+     "t": "Ordnungszahlen: first, second",
+     "g": "Du benutzt Ordnungszahlen für Daten, Stockwerke und Platzierungen.",
+     "p": [
+      "Die besonderen: first, second, third. Danach -th: fourth, fifth, tenth.",
+      "Bei großen Zahlen zählt die letzte Ziffer: twenty-first, thirty-second, forty-third.",
+      "Daten: the fifth of May oder May fifth. Etage: I live on the third floor."
+     ],
+     "q": "Wann hast du Geburtstag? Sag das Datum mit einer Ordnungszahl.",
+     "c": "Schreib die Daten von fünf wichtigen Tagen deines Jahres mit Ordnungszahlen."
+    },
+    "es": {
+     "t": "Ordinales: first, second",
+     "g": "Usa los ordinales para fechas, pisos y clasificaciones.",
+     "p": [
+      "Los especiales: first, second, third. Luego se añade -th: fourth, fifth, tenth.",
+      "En números grandes manda la última cifra: twenty-first, thirty-second, forty-third.",
+      "Fechas: the fifth of May o May fifth. Pisos: I live on the third floor."
+     ],
+     "q": "¿Cuándo es tu cumpleaños? Di la fecha con un ordinal.",
+     "c": "Escribe las fechas de cinco días importantes de tu año con ordinales."
+    },
+    "fr": {
+     "t": "Nombres ordinaux : first, second",
+     "g": "Utiliser les ordinaux pour les dates, les étages et les classements.",
+     "p": [
+      "Les spéciaux : first, second, third. Ensuite on ajoute -th : fourth, fifth, tenth.",
+      "Pour les grands nombres, c'est le dernier chiffre qui compte : twenty-first, thirty-second.",
+      "Dates : the fifth of May ou May fifth. Étage : I live on the third floor."
+     ],
+     "q": "Quand est ton anniversaire ? Dis la date avec un ordinal.",
+     "c": "Écris les dates de cinq jours importants de ton année avec des ordinaux."
+    },
+    "it": {
+     "t": "Numeri ordinali: first, second",
+     "g": "Usi gli ordinali per date, piani e classifiche.",
+     "p": [
+      "Quelli speciali: first, second, third. Poi si aggiunge -th: fourth, fifth, tenth.",
+      "Nei numeri grandi conta l'ultima cifra: twenty-first, thirty-second, forty-third.",
+      "Date: the fifth of May o May fifth. Piani: I live on the third floor."
+     ],
+     "q": "Quando è il tuo compleanno? Di' la data con un ordinale.",
+     "c": "Scrivi le date di cinque giorni importanti del tuo anno con gli ordinali."
+    },
+    "pt": {
+     "t": "Números ordinais: first, second",
+     "g": "Usa os ordinais para datas, andares e classificações.",
+     "p": [
+      "Os especiais: first, second, third. Depois junta-se -th: fourth, fifth, tenth.",
+      "Nos números grandes conta o último algarismo: twenty-first, thirty-second, forty-third.",
+      "Datas: the fifth of May ou May fifth. Andares: I live on the third floor."
+     ],
+     "q": "Quando é o teu aniversário? Diz a data com um ordinal.",
+     "c": "Escreve as datas de cinco dias importantes do teu ano com ordinais."
+    },
+    "pt_BR": {
+     "t": "Números ordinais: first, second",
+     "g": "Use os ordinais para datas, andares e classificações.",
+     "p": [
+      "Os especiais: first, second, third. Depois entra o -th: fourth, fifth, tenth.",
+      "Nos números grandes vale o último algarismo: twenty-first, thirty-second, forty-third.",
+      "Datas: the fifth of May ou May fifth. Andares: I live on the third floor."
+     ],
+     "q": "Quando é o seu aniversário? Diga a data com um ordinal.",
+     "c": "Escreva as datas de cinco dias importantes do seu ano com ordinais."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "first (1st)",
+      "ex": "January is the first month of the year."
+     },
+     {
+      "w": "second (2nd)",
+      "ex": "She finished second in the race."
+     },
+     {
+      "w": "third (3rd)",
+      "ex": "Our flat is on the third floor."
+     },
+     {
+      "w": "fifth (5th)",
+      "ex": "My birthday is on the fifth of June."
+     },
+     {
+      "w": "twelfth (12th)",
+      "ex": "December is the twelfth month."
+     },
+     {
+      "w": "twenty-first (21st)",
+      "ex": "The party is on the twenty-first."
+     }
+    ],
+    "gram": "Ordinals: first, second, third, then number + -th (fourth). Dates: the fifth of May / May fifth. Floors: on the third floor."
+   }
+  },
+  {
+   "d": 70,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Birthdays and celebrations",
+     "g": "Learn the words and wishes for birthdays and special days.",
+     "p": [
+      "Happy birthday! is the classic wish. Many happy returns! is extra friendly.",
+      "Congratulations! is for good news: a new job, a wedding, passing an exam.",
+      "Happy New Year! and Have a great holiday! work for seasonal celebrations."
+     ],
+     "q": "How did you celebrate your last birthday? Use the past simple.",
+     "c": "Write a short birthday message in English for a friend or family member."
+    },
+    "de": {
+     "t": "Geburtstage und Feiern",
+     "g": "Du lernst Wörter und Wünsche für Geburtstage und besondere Tage.",
+     "p": [
+      "Happy birthday! ist der klassische Wunsch. Many happy returns! klingt besonders herzlich.",
+      "Congratulations! passt zu guten Nachrichten: neuer Job, Hochzeit, bestandene Prüfung.",
+      "Happy New Year! und Have a great holiday! passen zu Festen im Jahr."
+     ],
+     "q": "Wie hast du deinen letzten Geburtstag gefeiert? Benutze das past simple.",
+     "c": "Schreib eine kurze Geburtstagsnachricht auf Englisch an Freunde oder Familie."
+    },
+    "es": {
+     "t": "Cumpleaños y celebraciones",
+     "g": "Aprende palabras y felicitaciones para cumpleaños y días especiales.",
+     "p": [
+      "Happy birthday! es la felicitación clásica. Many happy returns! suena muy cariñoso.",
+      "Congratulations! es para buenas noticias: un trabajo nuevo, una boda, aprobar un examen.",
+      "Happy New Year! y Have a great holiday! sirven para las fiestas del año."
+     ],
+     "q": "¿Cómo celebraste tu último cumpleaños? Usa el past simple.",
+     "c": "Escribe un breve mensaje de cumpleaños en inglés para un amigo o familiar."
+    },
+    "fr": {
+     "t": "Anniversaires et fêtes",
+     "g": "Apprendre les mots et les vœux pour les anniversaires et jours spéciaux.",
+     "p": [
+      "Happy birthday! est le vœu classique. Many happy returns! est très chaleureux.",
+      "Congratulations! sert pour les bonnes nouvelles : nouveau travail, mariage, examen réussi.",
+      "Happy New Year! et Have a great holiday! conviennent aux fêtes de l'année."
+     ],
+     "q": "Comment as-tu fêté ton dernier anniversaire ? Utilise le past simple.",
+     "c": "Écris un court message d'anniversaire en anglais pour un ami ou un proche."
+    },
+    "it": {
+     "t": "Compleanni e feste",
+     "g": "Impari parole e auguri per compleanni e giorni speciali.",
+     "p": [
+      "Happy birthday! è l'augurio classico. Many happy returns! è molto affettuoso.",
+      "Congratulations! è per le belle notizie: un nuovo lavoro, un matrimonio, un esame superato.",
+      "Happy New Year! e Have a great holiday! vanno bene per le feste dell'anno."
+     ],
+     "q": "Come hai festeggiato il tuo ultimo compleanno? Usa il past simple.",
+     "c": "Scrivi un breve messaggio di compleanno in inglese per un amico o un familiare."
+    },
+    "pt": {
+     "t": "Aniversários e celebrações",
+     "g": "Aprende palavras e votos para aniversários e dias especiais.",
+     "p": [
+      "Happy birthday! é o voto clássico. Many happy returns! é muito carinhoso.",
+      "Congratulations! é para boas notícias: um emprego novo, um casamento, passar num exame.",
+      "Happy New Year! e Have a great holiday! servem para as festas do ano."
+     ],
+     "q": "Como celebraste o teu último aniversário? Usa o past simple.",
+     "c": "Escreve uma mensagem curta de aniversário em inglês para um amigo ou familiar."
+    },
+    "pt_BR": {
+     "t": "Aniversários e comemorações",
+     "g": "Aprenda palavras e votos para aniversários e dias especiais.",
+     "p": [
+      "Happy birthday! é o parabéns clássico. Many happy returns! é bem carinhoso.",
+      "Congratulations! é para boas notícias: emprego novo, casamento, passar numa prova.",
+      "Happy New Year! e Have a great holiday! servem para as festas do ano."
+     ],
+     "q": "Como você comemorou seu último aniversário? Use o past simple.",
+     "c": "Escreva uma mensagem curta de aniversário em inglês para um amigo ou parente."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Happy birthday!",
+      "ex": "Happy birthday, Maria! Have a great day!"
+     },
+     {
+      "w": "Congratulations!",
+      "ex": "You passed the exam? Congratulations!"
+     },
+     {
+      "w": "Happy New Year!",
+      "ex": "Happy New Year to you and your family!"
+     },
+     {
+      "w": "a birthday cake",
+      "ex": "We made a chocolate birthday cake."
+     },
+     {
+      "w": "a present",
+      "ex": "I bought her a present."
+     },
+     {
+      "w": "celebrate",
+      "ex": "We celebrated with a picnic in the park."
+     }
+    ],
+    "gram": "Wishes use Happy + occasion (Happy birthday!), Congratulations! for success, Have a great + noun! (Have a great day!)."
+   }
+  }
+ ]
+}

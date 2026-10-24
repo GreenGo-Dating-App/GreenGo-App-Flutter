@@ -1,0 +1,33 @@
+{
+ "topic": "minimalism",
+ "intro": {
+  "en": [
+   "Hi, I'm {name}! I'll be your guide on a 365-day path into minimalism, with one small, friendly lesson every day.",
+   "We'll start with easy decluttering, then move on to mindful buying, digital calm and simple living ideas from around the world. What part of your life feels most cluttered right now?"
+  ],
+  "de": [
+   "Hallo, ich bin {name}! Ich begleite dich auf einem 365-Tage-Weg in den Minimalismus, mit einer kleinen, entspannten Lektion pro Tag.",
+   "Wir beginnen mit leichtem Ausmisten und gehen dann zu bewusstem Konsum, digitaler Ruhe und Ideen für ein einfaches Leben weiter. Welcher Bereich deines Lebens fühlt sich gerade am vollsten an?"
+  ],
+  "es": [
+   "¡Hola, soy {name}! Te acompañaré en un camino de 365 días hacia el minimalismo, con una pequeña lección amable cada día.",
+   "Empezaremos ordenando cosas sencillas y luego veremos compras conscientes, calma digital e ideas de vida simple de todo el mundo. ¿Qué parte de tu vida sientes más abarrotada ahora mismo?"
+  ],
+  "fr": [
+   "Salut, je suis {name} ! Je vais t'accompagner sur un parcours de 365 jours vers le minimalisme, avec une petite leçon bienveillante chaque jour.",
+   "On commencera par un désencombrement facile, puis on verra la consommation consciente, le calme numérique et l'art de vivre simplement. Quel coin de ta vie te semble le plus encombré en ce moment ?"
+  ],
+  "it": [
+   "Ciao, sono {name}! Ti guiderò in un percorso di 365 giorni nel minimalismo, con una piccola lezione leggera ogni giorno.",
+   "Partiremo dal decluttering più semplice, poi passeremo agli acquisti consapevoli, alla calma digitale e alla vita semplice. Quale parte della tua vita ti sembra più piena di cose adesso?"
+  ],
+  "pt": [
+   "Olá, eu sou {name}! Vou acompanhar-te num percurso de 365 dias pelo minimalismo, com uma pequena lição descontraída por dia.",
+   "Começamos por destralhar coisas simples e depois passamos ao consumo consciente, à calma digital e a ideias de vida simples de todo o mundo. Que parte da tua vida sentes mais atravancada agora?"
+  ],
+  "pt_BR": [
+   "Oi, eu sou {name}! Vou te guiar numa jornada de 365 dias pelo minimalismo, com uma pequena lição tranquila por dia.",
+   "A gente começa destralhando coisas fáceis e depois passa pelo consumo consciente, pela calma digital e por ideias de vida simples do mundo todo. Que parte da sua vida está mais bagunçada agora?"
+  ]
+ }
+}

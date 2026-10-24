@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_french",
+ "lessons": [
+  {
+   "d": 221,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Learning languages",
+     "g": "Talk about your methods, motivation and progress in languages.",
+     "p": [
+      "Methods: apprendre par cœur, réviser, faire des exercices, regarder des séries en VO, parler avec des natifs.",
+      "Motivation: ce qui me motive, c'est..., j'apprends le français pour..., j'ai envie de...",
+      "Progress: j'ai fait des progrès, je me débrouille, je suis à l'aise à l'oral, j'ai encore du mal avec..."
+     ],
+     "q": "What helps you most to learn French, and what is still difficult for you? Be honest, it is normal!",
+     "c": "Write a short language profile: your languages, your best method, one thing you find easy and one you find hard."
+    },
+    "de": {
+     "t": "Sprachen lernen",
+     "g": "Du sprichst über deine Methoden, deine Motivation und deine Fortschritte.",
+     "p": [
+      "Methoden: apprendre par cœur, réviser, faire des exercices, regarder des séries en VO, parler avec des natifs.",
+      "Motivation: ce qui me motive, c'est..., j'apprends le français pour..., j'ai envie de...",
+      "Fortschritt: j'ai fait des progrès, je me débrouille, je suis à l'aise à l'oral, j'ai encore du mal avec..."
+     ],
+     "q": "Was hilft dir am meisten beim Französischlernen, und was fällt dir noch schwer? Das ist ganz normal!",
+     "c": "Schreib ein kurzes Sprachprofil: deine Sprachen, deine beste Methode, etwas Leichtes und etwas Schweres."
+    },
+    "es": {
+     "t": "Aprender idiomas",
+     "g": "Habla de tus métodos, tu motivación y tus progresos con los idiomas.",
+     "p": [
+      "Métodos: apprendre par cœur, réviser, faire des exercices, regarder des séries en VO, parler avec des natifs.",
+      "Motivación: ce qui me motive, c'est..., j'apprends le français pour..., j'ai envie de...",
+      "Progreso: j'ai fait des progrès, je me débrouille, je suis à l'aise à l'oral, j'ai encore du mal avec..."
+     ],
+     "q": "¿Qué te ayuda más a aprender francés y qué te sigue costando? ¡Es normal!",
+     "c": "Escribe un perfil lingüístico corto: tus idiomas, tu mejor método, algo fácil y algo difícil para ti."
+    },
+    "fr": {
+     "t": "Apprendre les langues",
+     "g": "Parler de ses méthodes, de sa motivation et de ses progrès.",
+     "p": [
+      "Méthodes : apprendre par cœur, réviser, faire des exercices, regarder des séries en VO, parler avec des natifs.",
+      "Motivation : ce qui me motive, c'est..., j'apprends le français pour..., j'ai envie de...",
+      "Progrès : j'ai fait des progrès, je me débrouille, je suis à l'aise à l'oral, j'ai encore du mal avec..."
+     ],
+     "q": "Qu'est-ce qui t'aide le plus à apprendre le français, et qu'est-ce qui reste difficile ? C'est normal !",
+     "c": "Écris ton profil de langues : tes langues, ta meilleure méthode, une chose facile et une chose difficile."
+    },
+    "it": {
+     "t": "Imparare le lingue",
+     "g": "Parla dei tuoi metodi, della tua motivazione e dei tuoi progressi.",
+     "p": [
+      "Metodi: apprendre par cœur, réviser, faire des exercices, regarder des séries en VO, parler avec des natifs.",
+      "Motivazione: ce qui me motive, c'est..., j'apprends le français pour..., j'ai envie de...",
+      "Progressi: j'ai fait des progrès, je me débrouille, je suis à l'aise à l'oral, j'ai encore du mal avec..."
+     ],
+     "q": "Cosa ti aiuta di più a imparare il francese e cosa ti risulta ancora difficile? È normale!",
+     "c": "Scrivi un breve profilo linguistico: le tue lingue, il tuo metodo migliore, una cosa facile e una difficile."
+    },
+    "pt": {
+     "t": "Aprender línguas",
+     "g": "Fala dos teus métodos, da tua motivação e dos teus progressos.",
+     "p": [
+      "Métodos: apprendre par cœur, réviser, faire des exercices, regarder des séries en VO, parler avec des natifs.",
+      "Motivação: ce qui me motive, c'est..., j'apprends le français pour..., j'ai envie de...",
+      "Progresso: j'ai fait des progrès, je me débrouille, je suis à l'aise à l'oral, j'ai encore du mal avec..."
+     ],
+     "q": "O que te ajuda mais a aprender francês e o que ainda te custa? É normal!",
+     "c": "Escreve um perfil linguístico curto: as tuas línguas, o teu melhor método, algo fácil e algo difícil."
+    },
+    "pt_BR": {
+     "t": "Aprendendo idiomas",
+     "g": "Fale dos seus métodos, da sua motivação e do seu progresso.",
+     "p": [
+      "Métodos: apprendre par cœur, réviser, faire des exercices, regarder des séries en VO, parler avec des natifs.",
+      "Motivação: ce qui me motive, c'est..., j'apprends le français pour..., j'ai envie de...",
+      "Progresso: j'ai fait des progrès, je me débrouille, je suis à l'aise à l'oral, j'ai encore du mal avec..."
+     ],
+     "q": "O que mais te ajuda a aprender francês e o que ainda é difícil? É normal!",
+     "c": "Escreva um perfil linguístico curto: seus idiomas, seu melhor método, algo fácil e algo difícil."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "apprendre par cœur",
+      "ex": "J'apprends dix mots par cœur chaque jour."
+     },
+     {
+      "w": "se débrouiller",
+      "ex": "Je me débrouille bien en espagnol."
+     },
+     {
+      "w": "faire des progrès",
+      "ex": "Tu as fait beaucoup de progrès depuis l'été !"
+     },
+     {
+      "w": "avoir du mal à",
+      "ex": "J'ai encore du mal à comprendre les films."
+     },
+     {
+      "w": "être à l'aise",
+      "ex": "Je suis plus à l'aise à l'écrit qu'à l'oral."
+     },
+     {
+      "w": "une langue maternelle",
+      "ex": "Ma langue maternelle est le portugais."
+     }
+    ],
+    "gram": "Avoir du mal à + infinitif ; se débrouiller en + langue ; faire des progrès ; ce qui me motive, c'est de + infinitif."
+   }
+  },
+  {
+   "d": 222,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Health and well-being",
+     "g": "Talk about stress, sleep, relaxation and taking care of yourself.",
+     "p": [
+      "Stress: être stressé(e), avoir beaucoup de pression, se sentir fatigué(e), avoir besoin de souffler.",
+      "Good habits: bien dormir, faire une sieste, se détendre, méditer, se promener dans la nature.",
+      "Prendre soin de soi: prendre du temps pour soi, faire une pause, se faire plaisir. General ideas only."
+     ],
+     "q": "What do you do to relax after a busy day? Tell me with pour me détendre, je...",
+     "c": "Write your ideal relaxing day in five sentences using se détendre, prendre soin de soi and bien dormir."
+    },
+    "de": {
+     "t": "Gesundheit und Wohlbefinden",
+     "g": "Du sprichst über Stress, Schlaf, Entspannung und Selbstfürsorge.",
+     "p": [
+      "Stress: être stressé(e), avoir beaucoup de pression, se sentir fatigué(e), avoir besoin de souffler.",
+      "Gute Gewohnheiten: bien dormir, faire une sieste, se détendre, méditer, se promener dans la nature.",
+      "Prendre soin de soi: prendre du temps pour soi, faire une pause, se faire plaisir. Nur allgemeine Ideen."
+     ],
+     "q": "Was machst du, um dich nach einem vollen Tag zu entspannen? Erzähl mit pour me détendre, je...",
+     "c": "Beschreib deinen idealen Entspannungstag in fünf Sätzen mit se détendre, prendre soin de soi und bien dormir."
+    },
+    "es": {
+     "t": "Salud y bienestar",
+     "g": "Habla del estrés, el sueño, la relajación y del cuidado personal.",
+     "p": [
+      "Estrés: être stressé(e), avoir beaucoup de pression, se sentir fatigué(e), avoir besoin de souffler.",
+      "Buenos hábitos: bien dormir, faire une sieste, se détendre, méditer, se promener dans la nature.",
+      "Prendre soin de soi: prendre du temps pour soi, faire une pause, se faire plaisir. Solo ideas generales."
+     ],
+     "q": "¿Qué haces para relajarte después de un día ajetreado? Cuéntame con pour me détendre, je...",
+     "c": "Describe tu día relajante ideal en cinco frases con se détendre, prendre soin de soi y bien dormir."
+    },
+    "fr": {
+     "t": "Santé et bien-être",
+     "g": "Parler du stress, du sommeil, de la détente et du soin de soi.",
+     "p": [
+      "Le stress : être stressé(e), avoir beaucoup de pression, se sentir fatigué(e), avoir besoin de souffler.",
+      "Bonnes habitudes : bien dormir, faire une sieste, se détendre, méditer, se promener dans la nature.",
+      "Prendre soin de soi : prendre du temps pour soi, faire une pause, se faire plaisir. Idées générales seulement."
+     ],
+     "q": "Que fais-tu pour te détendre après une journée chargée ? Raconte avec pour me détendre, je...",
+     "c": "Décris ta journée détente idéale en cinq phrases avec se détendre, prendre soin de soi et bien dormir."
+    },
+    "it": {
+     "t": "Salute e benessere",
+     "g": "Parla di stress, sonno, relax e cura di sé.",
+     "p": [
+      "Stress: être stressé(e), avoir beaucoup de pression, se sentir fatigué(e), avoir besoin de souffler.",
+      "Buone abitudini: bien dormir, faire une sieste, se détendre, méditer, se promener dans la nature.",
+      "Prendre soin de soi: prendre du temps pour soi, faire une pause, se faire plaisir. Solo idee generali."
+     ],
+     "q": "Cosa fai per rilassarti dopo una giornata piena? Raccontamelo con pour me détendre, je...",
+     "c": "Descrivi la tua giornata di relax ideale in cinque frasi con se détendre, prendre soin de soi e bien dormir."
+    },
+    "pt": {
+     "t": "Saúde e bem-estar",
+     "g": "Fala de stress, sono, descanso e de cuidar de ti.",
+     "p": [
+      "Stress: être stressé(e), avoir beaucoup de pression, se sentir fatigué(e), avoir besoin de souffler.",
+      "Bons hábitos: bien dormir, faire une sieste, se détendre, méditer, se promener dans la nature.",
+      "Prendre soin de soi: prendre du temps pour soi, faire une pause, se faire plaisir. Só ideias gerais."
+     ],
+     "q": "O que fazes para relaxar depois de um dia cheio? Conta com pour me détendre, je...",
+     "c": "Descreve o teu dia de descanso ideal em cinco frases com se détendre, prendre soin de soi e bien dormir."
+    },
+    "pt_BR": {
+     "t": "Saúde e bem-estar",
+     "g": "Fale de estresse, sono, relaxamento e autocuidado.",
+     "p": [
+      "Estresse: être stressé(e), avoir beaucoup de pression, se sentir fatigué(e), avoir besoin de souffler.",
+      "Bons hábitos: bien dormir, faire une sieste, se détendre, méditer, se promener dans la nature.",
+      "Prendre soin de soi: prendre du temps pour soi, faire une pause, se faire plaisir. Só ideias gerais."
+     ],
+     "q": "O que você faz para relaxar depois de um dia corrido? Conte com pour me détendre, je...",
+     "c": "Descreva seu dia de descanso ideal em cinco frases com se détendre, prendre soin de soi e bien dormir."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "le stress",
+      "ex": "Le sport m'aide à gérer le stress."
+     },
+     {
+      "w": "le sommeil",
+      "ex": "Un bon sommeil est important pour la concentration."
+     },
+     {
+      "w": "se détendre",
+      "ex": "Le soir, je me détends en lisant."
+     },
+     {
+      "w": "prendre soin de soi",
+      "ex": "Le dimanche, je prends soin de moi."
+     },
+     {
+      "w": "souffler",
+      "ex": "J'ai besoin de souffler un peu ce week-end."
+     },
+     {
+      "w": "se sentir bien",
+      "ex": "Après une promenade, je me sens bien."
+     }
+    ],
+    "gram": "Verbes pronominaux du bien-être : se détendre, se reposer, se sentir bien ; prendre soin de soi ; avoir besoin de + infinitif."
+   }
+  },
+  {
+   "d": 223,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "At the doctor in detail",
+     "g": "Describe symptoms precisely and understand general advice.",
+     "p": [
+      "Symptoms: j'ai mal à la gorge, j'ai de la fièvre, je tousse, j'ai le nez qui coule, je me sens faible.",
+      "Details: depuis quand ? depuis trois jours ; c'est une douleur légère / forte ; ça me fait mal quand j'avale.",
+      "Advice you may hear: reposez-vous, buvez beaucoup d'eau, revenez si ça ne va pas mieux. This is language practice only."
+     ],
+     "q": "Let's role-play: I am the doctor. Bonjour, qu'est-ce qui vous amène ? Describe a simple cold.",
+     "c": "Write a short dialogue at the doctor: two symptoms, depuis quand, and one piece of advice."
+    },
+    "de": {
+     "t": "Beim Arzt im Detail",
+     "g": "Du beschreibst Symptome genau und verstehst allgemeine Ratschläge.",
+     "p": [
+      "Symptome: j'ai mal à la gorge, j'ai de la fièvre, je tousse, j'ai le nez qui coule, je me sens faible.",
+      "Details: depuis quand ? depuis trois jours ; c'est une douleur légère / forte ; ça me fait mal quand j'avale.",
+      "Mögliche Ratschläge: reposez-vous, buvez beaucoup d'eau, revenez si ça ne va pas mieux. Nur Sprachübung."
+     ],
+     "q": "Rollenspiel: Ich bin die Ärztin. Bonjour, qu'est-ce qui vous amène ? Beschreib eine einfache Erkältung.",
+     "c": "Schreib einen kurzen Dialog beim Arzt: zwei Symptome, depuis quand und ein Ratschlag."
+    },
+    "es": {
+     "t": "En el médico con detalle",
+     "g": "Describe síntomas con precisión y entiende consejos generales.",
+     "p": [
+      "Síntomas: j'ai mal à la gorge, j'ai de la fièvre, je tousse, j'ai le nez qui coule, je me sens faible.",
+      "Detalles: depuis quand ? depuis trois jours ; c'est une douleur légère / forte ; ça me fait mal quand j'avale.",
+      "Consejos que oirás: reposez-vous, buvez beaucoup d'eau, revenez si ça ne va pas mieux. Solo práctica de idioma."
+     ],
+     "q": "Juego de roles: yo soy la médica. Bonjour, qu'est-ce qui vous amène ? Describe un resfriado simple.",
+     "c": "Escribe un diálogo corto en el médico: dos síntomas, depuis quand y un consejo."
+    },
+    "fr": {
+     "t": "Chez le médecin en détail",
+     "g": "Décrire précisément des symptômes et comprendre des conseils généraux.",
+     "p": [
+      "Symptômes : j'ai mal à la gorge, j'ai de la fièvre, je tousse, j'ai le nez qui coule, je me sens faible.",
+      "Précisions : depuis quand ? depuis trois jours ; une douleur légère / forte ; ça me fait mal quand j'avale.",
+      "Conseils possibles : reposez-vous, buvez beaucoup d'eau, revenez si ça ne va pas mieux. Pratique de langue seulement."
+     ],
+     "q": "Jeu de rôle : je suis la médecin. Bonjour, qu'est-ce qui vous amène ? Décris un simple rhume.",
+     "c": "Écris un court dialogue chez le médecin : deux symptômes, depuis quand et un conseil."
+    },
+    "it": {
+     "t": "Dal medico nei dettagli",
+     "g": "Descrivi i sintomi con precisione e capisci consigli generali.",
+     "p": [
+      "Sintomi: j'ai mal à la gorge, j'ai de la fièvre, je tousse, j'ai le nez qui coule, je me sens faible.",
+      "Dettagli: depuis quand ? depuis trois jours ; c'est une douleur légère / forte ; ça me fait mal quand j'avale.",
+      "Consigli che puoi sentire: reposez-vous, buvez beaucoup d'eau, revenez si ça ne va pas mieux. Solo pratica linguistica."
+     ],
+     "q": "Gioco di ruolo: io sono la dottoressa. Bonjour, qu'est-ce qui vous amène ? Descrivi un semplice raffreddore.",
+     "c": "Scrivi un breve dialogo dal medico: due sintomi, depuis quand e un consiglio."
+    },
+    "pt": {
+     "t": "No médico em pormenor",
+     "g": "Descreve sintomas com precisão e percebe conselhos gerais.",
+     "p": [
+      "Sintomas: j'ai mal à la gorge, j'ai de la fièvre, je tousse, j'ai le nez qui coule, je me sens faible.",
+      "Pormenores: depuis quand ? depuis trois jours ; c'est une douleur légère / forte ; ça me fait mal quand j'avale.",
+      "Conselhos que podes ouvir: reposez-vous, buvez beaucoup d'eau, revenez si ça ne va pas mieux. Só prática de língua."
+     ],
+     "q": "Vamos simular: eu sou a médica. Bonjour, qu'est-ce qui vous amène ? Descreve uma constipação simples.",
+     "c": "Escreve um diálogo curto no médico: dois sintomas, depuis quand e um conselho."
+    },
+    "pt_BR": {
+     "t": "No médico em detalhes",
+     "g": "Descreva sintomas com precisão e entenda conselhos gerais.",
+     "p": [
+      "Sintomas: j'ai mal à la gorge, j'ai de la fièvre, je tousse, j'ai le nez qui coule, je me sens faible.",
+      "Detalhes: depuis quand ? depuis trois jours ; c'est une douleur légère / forte ; ça me fait mal quand j'avale.",
+      "Conselhos que você pode ouvir: reposez-vous, buvez beaucoup d'eau, revenez si ça ne va pas mieux. Só prática de idioma."
+     ],
+     "q": "Vamos encenar: eu sou a médica. Bonjour, qu'est-ce qui vous amène ? Descreva um resfriado simples.",
+     "c": "Escreva um diálogo curto no médico: dois sintomas, depuis quand e um conselho."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "avoir mal à la gorge",
+      "ex": "J'ai mal à la gorge depuis hier."
+     },
+     {
+      "w": "avoir de la fièvre",
+      "ex": "Mon fils a un peu de fièvre ce matin."
+     },
+     {
+      "w": "tousser",
+      "ex": "Je tousse surtout la nuit."
+     },
+     {
+      "w": "avoir le nez qui coule",
+      "ex": "J'ai le nez qui coule et j'éternue."
+     },
+     {
+      "w": "depuis quand ?",
+      "ex": "Depuis quand avez-vous ces symptômes ?"
+     },
+     {
+      "w": "se reposer",
+      "ex": "Reposez-vous bien et buvez beaucoup d'eau."
+     }
+    ],
+    "gram": "Avoir mal à + partie du corps ; avoir de la fièvre ; depuis + durée avec le présent : je tousse depuis trois jours."
+   }
+  },
+  {
+   "d": 224,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Sustainable living",
+     "g": "Talk about eco-friendly habits: buying local, reducing waste, cycling.",
+     "p": [
+      "Consommer local: acheter au marché, des produits de saison, chez les producteurs.",
+      "Réduire ses déchets: trier, recycler, composter, utiliser un sac réutilisable, éviter le plastique.",
+      "Se déplacer autrement: le vélo en ville, les transports en commun, le covoiturage, marcher."
+     ],
+     "q": "What do you already do for the planet, and what would you like to try? J'essaie de..., j'aimerais...",
+     "c": "List six eco-friendly habits: three you already have (je trie...) and three you will try (je vais essayer de...)."
+    },
+    "de": {
+     "t": "Nachhaltig leben",
+     "g": "Du sprichst über umweltfreundliche Gewohnheiten: regional kaufen, Müll vermeiden, Rad fahren.",
+     "p": [
+      "Consommer local: acheter au marché, des produits de saison, chez les producteurs.",
+      "Réduire ses déchets: trier, recycler, composter, utiliser un sac réutilisable, éviter le plastique.",
+      "Se déplacer autrement: le vélo en ville, les transports en commun, le covoiturage, marcher."
+     ],
+     "q": "Was tust du schon für den Planeten, und was möchtest du ausprobieren? J'essaie de..., j'aimerais...",
+     "c": "Nenne sechs umweltfreundliche Gewohnheiten: drei, die du hast (je trie...), drei neue (je vais essayer de...)."
+    },
+    "es": {
+     "t": "Vivir de forma sostenible",
+     "g": "Habla de hábitos ecológicos: comprar local, reducir residuos, ir en bici.",
+     "p": [
+      "Consommer local: acheter au marché, des produits de saison, chez les producteurs.",
+      "Réduire ses déchets: trier, recycler, composter, utiliser un sac réutilisable, éviter le plastique.",
+      "Se déplacer autrement: le vélo en ville, les transports en commun, le covoiturage, marcher."
+     ],
+     "q": "¿Qué haces ya por el planeta y qué te gustaría probar? J'essaie de..., j'aimerais...",
+     "c": "Haz una lista de seis hábitos ecológicos: tres que ya tienes (je trie...) y tres nuevos (je vais essayer de...)."
+    },
+    "fr": {
+     "t": "Vivre de façon durable",
+     "g": "Parler des gestes écologiques : consommer local, réduire ses déchets, le vélo.",
+     "p": [
+      "Consommer local : acheter au marché, des produits de saison, chez les producteurs.",
+      "Réduire ses déchets : trier, recycler, composter, utiliser un sac réutilisable, éviter le plastique.",
+      "Se déplacer autrement : le vélo en ville, les transports en commun, le covoiturage, marcher."
+     ],
+     "q": "Que fais-tu déjà pour la planète, et qu'aimerais-tu essayer ? J'essaie de..., j'aimerais...",
+     "c": "Liste six gestes écologiques : trois que tu fais déjà (je trie...) et trois à essayer (je vais essayer de...)."
+    },
+    "it": {
+     "t": "Vivere in modo sostenibile",
+     "g": "Parla di abitudini ecologiche: comprare locale, ridurre i rifiuti, la bici.",
+     "p": [
+      "Consommer local: acheter au marché, des produits de saison, chez les producteurs.",
+      "Réduire ses déchets: trier, recycler, composter, utiliser un sac réutilisable, éviter le plastique.",
+      "Se déplacer autrement: le vélo en ville, les transports en commun, le covoiturage, marcher."
+     ],
+     "q": "Cosa fai già per il pianeta e cosa vorresti provare? J'essaie de..., j'aimerais...",
+     "c": "Elenca sei gesti ecologici: tre che fai già (je trie...) e tre da provare (je vais essayer de...)."
+    },
+    "pt": {
+     "t": "Viver de forma sustentável",
+     "g": "Fala de hábitos ecológicos: comprar local, reduzir o lixo, andar de bicicleta.",
+     "p": [
+      "Consommer local: acheter au marché, des produits de saison, chez les producteurs.",
+      "Réduire ses déchets: trier, recycler, composter, utiliser un sac réutilisable, éviter le plastique.",
+      "Se déplacer autrement: le vélo en ville, les transports en commun, le covoiturage, marcher."
+     ],
+     "q": "O que já fazes pelo planeta e o que gostavas de experimentar? J'essaie de..., j'aimerais...",
+     "c": "Faz uma lista de seis hábitos ecológicos: três que já tens (je trie...) e três novos (je vais essayer de...)."
+    },
+    "pt_BR": {
+     "t": "Vivendo de forma sustentável",
+     "g": "Fale de hábitos ecológicos: comprar local, reduzir o lixo, andar de bicicleta.",
+     "p": [
+      "Consommer local: acheter au marché, des produits de saison, chez les producteurs.",
+      "Réduire ses déchets: trier, recycler, composter, utiliser un sac réutilisable, éviter le plastique.",
+      "Se déplacer autrement: le vélo en ville, les transports en commun, le covoiturage, marcher."
+     ],
+     "q": "O que você já faz pelo planeta e o que gostaria de experimentar? J'essaie de..., j'aimerais...",
+     "c": "Faça uma lista de seis hábitos ecológicos: três que você já tem (je trie...) e três novos (je vais essayer de...)."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "consommer local",
+      "ex": "J'essaie de consommer local et de saison."
+     },
+     {
+      "w": "réduire ses déchets",
+      "ex": "Nous voulons réduire nos déchets à la maison."
+     },
+     {
+      "w": "trier",
+      "ex": "Chez nous, on trie le verre et le papier."
+     },
+     {
+      "w": "un sac réutilisable",
+      "ex": "J'ai toujours un sac réutilisable dans mon sac à dos."
+     },
+     {
+      "w": "le covoiturage",
+      "ex": "Pour aller au travail, je fais du covoiturage."
+     },
+     {
+      "w": "se déplacer à vélo",
+      "ex": "En ville, je me déplace à vélo."
+     }
+    ],
+    "gram": "Essayer de + infinitif ; réduire, trier, recycler ; se déplacer à vélo / à pied, en transports en commun."
+   }
+  },
+  {
+   "d": 225,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Climate and nature",
+     "g": "Talk about climate, biodiversity and protecting nature in simple, positive terms.",
+     "p": [
+      "Climate: le réchauffement climatique, les températures augmentent, les énergies renouvelables (solaire, éolienne).",
+      "Nature: la biodiversité, les espèces, les forêts, les océans, les abeilles, un parc naturel.",
+      "Acting: protéger la nature, planter des arbres, préserver les ressources, il est important que + subjunctive."
+     ],
+     "q": "Which natural place do you love most, and why is it important to protect it?",
+     "c": "Write four sentences about protecting nature: two with il faut que and two with il est important de."
+    },
+    "de": {
+     "t": "Klima und Natur",
+     "g": "Du sprichst einfach und positiv über Klima, Artenvielfalt und Naturschutz.",
+     "p": [
+      "Klima: le réchauffement climatique, les températures augmentent, les énergies renouvelables (solaire, éolienne).",
+      "Natur: la biodiversité, les espèces, les forêts, les océans, les abeilles, un parc naturel.",
+      "Handeln: protéger la nature, planter des arbres, préserver les ressources, il est important que + Subjonctif."
+     ],
+     "q": "Welchen Ort in der Natur liebst du am meisten, und warum sollte man ihn schützen?",
+     "c": "Schreib vier Sätze zum Naturschutz: zwei mit il faut que und zwei mit il est important de."
+    },
+    "es": {
+     "t": "Clima y naturaleza",
+     "g": "Habla del clima, la biodiversidad y la protección de la naturaleza de forma sencilla y positiva.",
+     "p": [
+      "Clima: le réchauffement climatique, les températures augmentent, les énergies renouvelables (solaire, éolienne).",
+      "Naturaleza: la biodiversité, les espèces, les forêts, les océans, les abeilles, un parc naturel.",
+      "Actuar: protéger la nature, planter des arbres, préserver les ressources, il est important que + subjuntivo."
+     ],
+     "q": "¿Qué lugar natural te gusta más y por qué es importante protegerlo?",
+     "c": "Escribe cuatro frases sobre proteger la naturaleza: dos con il faut que y dos con il est important de."
+    },
+    "fr": {
+     "t": "Climat et nature",
+     "g": "Parler du climat, de la biodiversité et de la protection de la nature, simplement et positivement.",
+     "p": [
+      "Climat : le réchauffement climatique, les températures augmentent, les énergies renouvelables (solaire, éolienne).",
+      "Nature : la biodiversité, les espèces, les forêts, les océans, les abeilles, un parc naturel.",
+      "Agir : protéger la nature, planter des arbres, préserver les ressources, il est important que + subjonctif."
+     ],
+     "q": "Quel lieu naturel préfères-tu, et pourquoi est-il important de le protéger ?",
+     "c": "Écris quatre phrases sur la protection de la nature : deux avec il faut que, deux avec il est important de."
+    },
+    "it": {
+     "t": "Clima e natura",
+     "g": "Parla di clima, biodiversità e tutela della natura in modo semplice e positivo.",
+     "p": [
+      "Clima: le réchauffement climatique, les températures augmentent, les énergies renouvelables (solaire, éolienne).",
+      "Natura: la biodiversité, les espèces, les forêts, les océans, les abeilles, un parc naturel.",
+      "Agire: protéger la nature, planter des arbres, préserver les ressources, il est important que + subjonctif."
+     ],
+     "q": "Qual è il luogo naturale che ami di più e perché è importante proteggerlo?",
+     "c": "Scrivi quattro frasi sulla tutela della natura: due con il faut que e due con il est important de."
+    },
+    "pt": {
+     "t": "Clima e natureza",
+     "g": "Fala do clima, da biodiversidade e da proteção da natureza de forma simples e positiva.",
+     "p": [
+      "Clima: le réchauffement climatique, les températures augmentent, les énergies renouvelables (solaire, éolienne).",
+      "Natureza: la biodiversité, les espèces, les forêts, les océans, les abeilles, un parc naturel.",
+      "Agir: protéger la nature, planter des arbres, préserver les ressources, il est important que + subjonctif."
+     ],
+     "q": "Qual é o lugar natural de que mais gostas e porque é importante protegê-lo?",
+     "c": "Escreve quatro frases sobre proteger a natureza: duas com il faut que e duas com il est important de."
+    },
+    "pt_BR": {
+     "t": "Clima e natureza",
+     "g": "Fale do clima, da biodiversidade e da proteção da natureza de forma simples e positiva.",
+     "p": [
+      "Clima: le réchauffement climatique, les températures augmentent, les énergies renouvelables (solaire, éolienne).",
+      "Natureza: la biodiversité, les espèces, les forêts, les océans, les abeilles, un parc naturel.",
+      "Agir: protéger la nature, planter des arbres, préserver les ressources, il est important que + subjonctif."
+     ],
+     "q": "Qual é o lugar na natureza de que você mais gosta e por que é importante protegê-lo?",
+     "c": "Escreva quatro frases sobre proteger a natureza: duas com il faut que e duas com il est important de."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "le réchauffement climatique",
+      "ex": "Le réchauffement climatique concerne toute la planète."
+     },
+     {
+      "w": "la biodiversité",
+      "ex": "Les haies protègent la biodiversité à la campagne."
+     },
+     {
+      "w": "protéger la nature",
+      "ex": "Il est important que nous protégions la nature."
+     },
+     {
+      "w": "les énergies renouvelables",
+      "ex": "Les énergies renouvelables se développent partout."
+     },
+     {
+      "w": "une espèce",
+      "ex": "Ce parc abrite des espèces rares d'oiseaux."
+     },
+     {
+      "w": "planter des arbres",
+      "ex": "Notre école a planté vingt arbres."
+     }
+    ],
+    "gram": "Il est important de + infinitif (général) / il est important que + subjonctif (personne précise) : que nous protégions."
+   }
+  },
+  {
+   "d": 226,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Volunteering and solidarity",
+     "g": "Talk about helping others, associations and volunteering.",
+     "p": [
+      "Faire du bénévolat: être bénévole dans une association, donner de son temps, s'engager pour une cause.",
+      "Examples: aider à la banque alimentaire, donner des cours de soutien, s'occuper d'animaux, nettoyer une plage.",
+      "Solidarity words: l'entraide, rendre service, donner un coup de main, se sentir utile."
+     ],
+     "q": "Have you ever helped in an association or a neighbour? How did it make you feel?",
+     "c": "Imagine your perfect volunteering day: write five sentences with je donnerais, j'aiderais, je me sentirais."
+    },
+    "de": {
+     "t": "Ehrenamt und Solidarität",
+     "g": "Du sprichst über Hilfe für andere, Vereine und ehrenamtliche Arbeit.",
+     "p": [
+      "Faire du bénévolat: être bénévole dans une association, donner de son temps, s'engager pour une cause.",
+      "Beispiele: aider à la banque alimentaire, donner des cours de soutien, s'occuper d'animaux, nettoyer une plage.",
+      "Wörter der Solidarität: l'entraide, rendre service, donner un coup de main, se sentir utile."
+     ],
+     "q": "Hast du schon einmal in einem Verein oder einem Nachbarn geholfen? Wie hast du dich gefühlt?",
+     "c": "Stell dir deinen idealen Ehrenamtstag vor: fünf Sätze mit je donnerais, j'aiderais, je me sentirais."
+    },
+    "es": {
+     "t": "Voluntariado y solidaridad",
+     "g": "Habla de ayudar a los demás, las asociaciones y el voluntariado.",
+     "p": [
+      "Faire du bénévolat: être bénévole dans une association, donner de son temps, s'engager pour une cause.",
+      "Ejemplos: aider à la banque alimentaire, donner des cours de soutien, s'occuper d'animaux, nettoyer une plage.",
+      "Palabras solidarias: l'entraide, rendre service, donner un coup de main, se sentir utile."
+     ],
+     "q": "¿Has ayudado alguna vez en una asociación o a un vecino? ¿Cómo te sentiste?",
+     "c": "Imagina tu día de voluntariado perfecto: cinco frases con je donnerais, j'aiderais, je me sentirais."
+    },
+    "fr": {
+     "t": "Bénévolat et solidarité",
+     "g": "Parler d'aider les autres, des associations et du bénévolat.",
+     "p": [
+      "Faire du bénévolat : être bénévole dans une association, donner de son temps, s'engager pour une cause.",
+      "Exemples : aider à la banque alimentaire, donner des cours de soutien, s'occuper d'animaux, nettoyer une plage.",
+      "Solidarité : l'entraide, rendre service, donner un coup de main, se sentir utile."
+     ],
+     "q": "As-tu déjà aidé dans une association ou un voisin ? Comment t'es-tu senti(e) ?",
+     "c": "Imagine ta journée de bénévolat idéale : cinq phrases avec je donnerais, j'aiderais, je me sentirais."
+    },
+    "it": {
+     "t": "Volontariato e solidarietà",
+     "g": "Parla di aiutare gli altri, di associazioni e di volontariato.",
+     "p": [
+      "Faire du bénévolat: être bénévole dans une association, donner de son temps, s'engager pour une cause.",
+      "Esempi: aider à la banque alimentaire, donner des cours de soutien, s'occuper d'animaux, nettoyer une plage.",
+      "Parole di solidarietà: l'entraide, rendre service, donner un coup de main, se sentir utile."
+     ],
+     "q": "Hai mai aiutato in un'associazione o un vicino? Come ti sei sentito?",
+     "c": "Immagina la tua giornata di volontariato ideale: cinque frasi con je donnerais, j'aiderais, je me sentirais."
+    },
+    "pt": {
+     "t": "Voluntariado e solidariedade",
+     "g": "Fala de ajudar os outros, de associações e de voluntariado.",
+     "p": [
+      "Faire du bénévolat: être bénévole dans une association, donner de son temps, s'engager pour une cause.",
+      "Exemplos: aider à la banque alimentaire, donner des cours de soutien, s'occuper d'animaux, nettoyer une plage.",
+      "Palavras solidárias: l'entraide, rendre service, donner un coup de main, se sentir utile."
+     ],
+     "q": "Já ajudaste numa associação ou um vizinho? Como te sentiste?",
+     "c": "Imagina o teu dia de voluntariado ideal: cinco frases com je donnerais, j'aiderais, je me sentirais."
+    },
+    "pt_BR": {
+     "t": "Voluntariado e solidariedade",
+     "g": "Fale de ajudar os outros, de associações e de voluntariado.",
+     "p": [
+      "Faire du bénévolat: être bénévole dans une association, donner de son temps, s'engager pour une cause.",
+      "Exemplos: aider à la banque alimentaire, donner des cours de soutien, s'occuper d'animaux, nettoyer une plage.",
+      "Palavras solidárias: l'entraide, rendre service, donner un coup de main, se sentir utile."
+     ],
+     "q": "Você já ajudou em uma associação ou um vizinho? Como se sentiu?",
+     "c": "Imagine seu dia de voluntariado ideal: cinco frases com je donnerais, j'aiderais, je me sentirais."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "faire du bénévolat",
+      "ex": "Le samedi, je fais du bénévolat dans un refuge."
+     },
+     {
+      "w": "une association",
+      "ex": "Elle travaille dans une association pour les jeunes."
+     },
+     {
+      "w": "donner un coup de main",
+      "ex": "Tu peux me donner un coup de main ?"
+     },
+     {
+      "w": "rendre service",
+      "ex": "J'aime bien rendre service à mes voisins."
+     },
+     {
+      "w": "l'entraide",
+      "ex": "Dans notre quartier, l'entraide est très forte."
+     },
+     {
+      "w": "se sentir utile",
+      "ex": "Quand j'aide les autres, je me sens utile."
+     }
+    ],
+    "gram": "Faire du bénévolat ; être bénévole dans + association ; s'engager pour ; conditionnel pour imaginer : j'aiderais."
+   }
+  },
+  {
+   "d": 227,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Cities of the francophonie",
+     "g": "Compare French-speaking cities: Montréal, Bruxelles, Genève, Dakar and Marseille.",
+     "p": [
+      "Montréal (Québec, Canada) is bilingual and lively ; Bruxelles is the capital of Belgium, famous for its Grand-Place.",
+      "Genève (Switzerland) sits on Lac Léman and hosts many international organisations ; Dakar is the capital of Senegal.",
+      "Marseille is France's oldest city and a big Mediterranean port. Compare: plus animée que, aussi belle que."
+     ],
+     "q": "Which French-speaking city would you like to visit first, and why? Compare it with your city.",
+     "c": "Write five comparisons between two francophone cities using plus... que, moins... que, aussi... que and le plus."
+    },
+    "de": {
+     "t": "Städte der Frankophonie",
+     "g": "Du vergleichst französischsprachige Städte: Montréal, Bruxelles, Genève, Dakar und Marseille.",
+     "p": [
+      "Montréal (Québec, Kanada) ist zweisprachig und lebendig ; Bruxelles ist Belgiens Hauptstadt, berühmt für die Grand-Place.",
+      "Genève (Schweiz) liegt am Lac Léman, mit vielen internationalen Organisationen ; Dakar ist die Hauptstadt Senegals.",
+      "Marseille ist Frankreichs älteste Stadt und großer Mittelmeerhafen. Vergleiche: plus animée que, aussi belle que."
+     ],
+     "q": "Welche französischsprachige Stadt möchtest du zuerst besuchen, und warum? Vergleich sie mit deiner Stadt.",
+     "c": "Schreib fünf Vergleiche zwischen zwei frankophonen Städten mit plus... que, moins... que, aussi... que und le plus."
+    },
+    "es": {
+     "t": "Ciudades de la francofonía",
+     "g": "Compara ciudades francófonas: Montréal, Bruxelles, Genève, Dakar y Marseille.",
+     "p": [
+      "Montréal (Quebec, Canadá) es bilingüe y animada ; Bruxelles es la capital de Bélgica, famosa por su Grand-Place.",
+      "Genève (Suiza) está a orillas del Lac Léman y acoge muchas organizaciones internacionales ; Dakar es la capital de Senegal.",
+      "Marseille es la ciudad más antigua de Francia y un gran puerto mediterráneo. Compara: plus animée que, aussi belle que."
+     ],
+     "q": "¿Qué ciudad francófona te gustaría visitar primero y por qué? Compárala con tu ciudad.",
+     "c": "Escribe cinco comparaciones entre dos ciudades francófonas con plus... que, moins... que, aussi... que y le plus."
+    },
+    "fr": {
+     "t": "Les villes de la francophonie",
+     "g": "Comparer des villes francophones : Montréal, Bruxelles, Genève, Dakar et Marseille.",
+     "p": [
+      "Montréal (Québec, Canada) est bilingue et animée ; Bruxelles, capitale de la Belgique, est célèbre pour sa Grand-Place.",
+      "Genève (Suisse), au bord du lac Léman, accueille de nombreuses organisations internationales ; Dakar est la capitale du Sénégal.",
+      "Marseille est la plus ancienne ville de France et un grand port méditerranéen. Comparer : plus animée que, aussi belle que."
+     ],
+     "q": "Quelle ville francophone aimerais-tu visiter en premier, et pourquoi ? Compare-la avec ta ville.",
+     "c": "Écris cinq comparaisons entre deux villes francophones avec plus... que, moins... que, aussi... que et le plus."
+    },
+    "it": {
+     "t": "Città della francofonia",
+     "g": "Confronta città francofone: Montréal, Bruxelles, Genève, Dakar e Marseille.",
+     "p": [
+      "Montréal (Québec, Canada) è bilingue e vivace ; Bruxelles è la capitale del Belgio, famosa per la Grand-Place.",
+      "Genève (Svizzera) è sul Lac Léman e ospita molte organizzazioni internazionali ; Dakar è la capitale del Senegal.",
+      "Marseille è la città più antica di Francia e un grande porto mediterraneo. Confronta: plus animée que, aussi belle que."
+     ],
+     "q": "Quale città francofona vorresti visitare per prima e perché? Confrontala con la tua città.",
+     "c": "Scrivi cinque confronti tra due città francofone con plus... que, moins... que, aussi... que e le plus."
+    },
+    "pt": {
+     "t": "Cidades da francofonia",
+     "g": "Compara cidades francófonas: Montréal, Bruxelles, Genève, Dakar e Marseille.",
+     "p": [
+      "Montréal (Quebeque, Canadá) é bilingue e animada ; Bruxelles é a capital da Bélgica, famosa pela Grand-Place.",
+      "Genève (Suíça) fica junto ao Lac Léman e acolhe muitas organizações internacionais ; Dakar é a capital do Senegal.",
+      "Marseille é a cidade mais antiga de França e um grande porto mediterrânico. Compara: plus animée que, aussi belle que."
+     ],
+     "q": "Que cidade francófona gostavas de visitar primeiro e porquê? Compara-a com a tua cidade.",
+     "c": "Escreve cinco comparações entre duas cidades francófonas com plus... que, moins... que, aussi... que e le plus."
+    },
+    "pt_BR": {
+     "t": "Cidades da francofonia",
+     "g": "Compare cidades francófonas: Montréal, Bruxelles, Genève, Dakar e Marseille.",
+     "p": [
+      "Montréal (Quebec, Canadá) é bilíngue e animada ; Bruxelles é a capital da Bélgica, famosa pela Grand-Place.",
+      "Genève (Suíça) fica às margens do Lac Léman e abriga muitas organizações internacionais ; Dakar é a capital do Senegal.",
+      "Marseille é a cidade mais antiga da França e um grande porto do Mediterrâneo. Compare: plus animée que, aussi belle que."
+     ],
+     "q": "Que cidade francófona você gostaria de visitar primeiro e por quê? Compare com a sua cidade.",
+     "c": "Escreva cinco comparações entre duas cidades francófonas com plus... que, moins... que, aussi... que e le plus."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "une ville francophone",
+      "ex": "Dakar est une grande ville francophone d'Afrique."
+     },
+     {
+      "w": "bilingue",
+      "ex": "Montréal est une ville bilingue et très animée."
+     },
+     {
+      "w": "au bord du lac",
+      "ex": "Genève se trouve au bord du lac Léman."
+     },
+     {
+      "w": "un port",
+      "ex": "Marseille est un grand port de la Méditerranée."
+     },
+     {
+      "w": "la capitale",
+      "ex": "Bruxelles est la capitale de la Belgique."
+     },
+     {
+      "w": "plus animé(e) que",
+      "ex": "Pour moi, Marseille est plus animée que Genève."
+     }
+    ],
+    "gram": "Comparatif : plus / moins / aussi + adjectif + que ; superlatif : la ville la plus ancienne de France."
+   }
+  },
+  {
+   "d": 228,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Québec French",
+     "g": "Discover words and expressions typical of French in Québec.",
+     "p": [
+      "Everyday words: magasiner (to shop), la fin de semaine (weekend), un char (car), un chum (friend, boyfriend).",
+      "Meals: in Québec, le déjeuner is breakfast, le dîner is lunch and le souper is the evening meal.",
+      "Expressions: c'est le fun !, bienvenue (you're welcome), allô (hello), il fait frette (it's very cold)."
+     ],
+     "q": "Which Québec word do you like most? Try to use two of them in a sentence about your weekend.",
+     "c": "Rewrite three sentences in Québec style: Ce week-end, je fais du shopping en voiture → Cette fin de semaine..."
+    },
+    "de": {
+     "t": "Québec-Französisch",
+     "g": "Du entdeckst typische Wörter und Ausdrücke des Französischen in Québec.",
+     "p": [
+      "Alltagswörter: magasiner (einkaufen), la fin de semaine (Wochenende), un char (Auto), un chum (Freund).",
+      "Mahlzeiten: In Québec ist le déjeuner das Frühstück, le dîner das Mittagessen und le souper das Abendessen.",
+      "Ausdrücke: c'est le fun !, bienvenue (gern geschehen), allô (hallo), il fait frette (es ist sehr kalt)."
+     ],
+     "q": "Welches Québec-Wort gefällt dir am besten? Verwende zwei davon in einem Satz über dein Wochenende.",
+     "c": "Schreib drei Sätze im Québec-Stil um: Ce week-end, je fais du shopping en voiture → Cette fin de semaine..."
+    },
+    "es": {
+     "t": "El francés de Quebec",
+     "g": "Descubre palabras y expresiones típicas del francés de Quebec.",
+     "p": [
+      "Palabras diarias: magasiner (ir de compras), la fin de semaine (fin de semana), un char (coche), un chum (amigo, novio).",
+      "Comidas: en Quebec, le déjeuner es el desayuno, le dîner la comida del mediodía y le souper la cena.",
+      "Expresiones: c'est le fun !, bienvenue (de nada), allô (hola), il fait frette (hace mucho frío)."
+     ],
+     "q": "¿Qué palabra de Quebec te gusta más? Usa dos de ellas en una frase sobre tu fin de semana.",
+     "c": "Reescribe tres frases al estilo de Quebec: Ce week-end, je fais du shopping en voiture → Cette fin de semaine..."
+    },
+    "fr": {
+     "t": "Le français du Québec",
+     "g": "Découvrir des mots et expressions typiques du français québécois.",
+     "p": [
+      "Mots du quotidien : magasiner (faire du shopping), la fin de semaine (le week-end), un char (une voiture), un chum (un ami).",
+      "Les repas : au Québec, le déjeuner est le repas du matin, le dîner celui du midi et le souper celui du soir.",
+      "Expressions : c'est le fun !, bienvenue (de rien), allô (salut), il fait frette (il fait très froid)."
+     ],
+     "q": "Quel mot québécois préfères-tu ? Utilise-en deux dans une phrase sur ton week-end.",
+     "c": "Réécris trois phrases à la québécoise : Ce week-end, je fais du shopping en voiture → Cette fin de semaine..."
+    },
+    "it": {
+     "t": "Il francese del Québec",
+     "g": "Scopri parole ed espressioni tipiche del francese del Québec.",
+     "p": [
+      "Parole quotidiane: magasiner (fare shopping), la fin de semaine (weekend), un char (auto), un chum (amico, ragazzo).",
+      "Pasti: in Québec le déjeuner è la colazione, le dîner il pranzo e le souper la cena.",
+      "Espressioni: c'est le fun !, bienvenue (prego), allô (ciao), il fait frette (fa molto freddo)."
+     ],
+     "q": "Quale parola del Québec ti piace di più? Usane due in una frase sul tuo weekend.",
+     "c": "Riscrivi tre frasi in stile Québec: Ce week-end, je fais du shopping en voiture → Cette fin de semaine..."
+    },
+    "pt": {
+     "t": "O francês do Quebeque",
+     "g": "Descobre palavras e expressões típicas do francês do Quebeque.",
+     "p": [
+      "Palavras do dia a dia: magasiner (fazer compras), la fin de semaine (fim de semana), un char (carro), un chum (amigo, namorado).",
+      "Refeições: no Quebeque, le déjeuner é o pequeno-almoço, le dîner o almoço e le souper o jantar.",
+      "Expressões: c'est le fun !, bienvenue (de nada), allô (olá), il fait frette (está muito frio)."
+     ],
+     "q": "Que palavra do Quebeque preferes? Usa duas numa frase sobre o teu fim de semana.",
+     "c": "Reescreve três frases à maneira do Quebeque: Ce week-end, je fais du shopping en voiture → Cette fin de semaine..."
+    },
+    "pt_BR": {
+     "t": "O francês do Quebec",
+     "g": "Descubra palavras e expressões típicas do francês do Quebec.",
+     "p": [
+      "Palavras do dia a dia: magasiner (fazer compras), la fin de semaine (fim de semana), un char (carro), un chum (amigo, namorado).",
+      "Refeições: no Quebec, le déjeuner é o café da manhã, le dîner o almoço e le souper o jantar.",
+      "Expressões: c'est le fun !, bienvenue (de nada), allô (oi), il fait frette (está muito frio)."
+     ],
+     "q": "Qual palavra do Quebec você prefere? Use duas em uma frase sobre o seu fim de semana.",
+     "c": "Reescreva três frases no estilo do Quebec: Ce week-end, je fais du shopping en voiture → Cette fin de semaine..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "magasiner",
+      "ex": "Samedi, on va magasiner au centre-ville."
+     },
+     {
+      "w": "la fin de semaine",
+      "ex": "Qu'est-ce que tu fais en fin de semaine ?"
+     },
+     {
+      "w": "un char",
+      "ex": "Mon char est stationné devant la maison."
+     },
+     {
+      "w": "le souper",
+      "ex": "On soupe à six heures chez mes parents."
+     },
+     {
+      "w": "c'est le fun",
+      "ex": "Le Carnaval de Québec, c'est vraiment le fun !"
+     },
+     {
+      "w": "bienvenue",
+      "ex": "Merci beaucoup ! – Bienvenue !"
+     }
+    ],
+    "gram": "Au Québec : déjeuner (matin), dîner (midi), souper (soir) ; magasiner, la fin de semaine, un char ; bienvenue = de rien."
+   }
+  },
+  {
+   "d": 229,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Belgian and Swiss French",
+     "g": "Learn the main regional differences of French in Belgium and Switzerland.",
+     "p": [
+      "Numbers: septante (70) and nonante (90) are used in Belgium and Switzerland ; some Swiss regions say huitante (80).",
+      "Meals: as in Québec, le déjeuner is breakfast, le dîner is lunch and le souper is dinner in both countries.",
+      "Belgian words: une fois (as a filler), un GSM (mobile phone) ; Swiss words: un natel (mobile phone), panosse (mop)."
+     ],
+     "q": "Can you say your phone number or your age the Belgian way, with septante or nonante?",
+     "c": "Write three prices and three years using septante, huitante and nonante, then say them aloud."
+    },
+    "de": {
+     "t": "Belgisches und Schweizer Französisch",
+     "g": "Du lernst die wichtigsten regionalen Unterschiede in Belgien und der Schweiz.",
+     "p": [
+      "Zahlen: septante (70) und nonante (90) sagt man in Belgien und der Schweiz ; manche Schweizer Regionen sagen huitante (80).",
+      "Mahlzeiten: wie in Québec ist le déjeuner Frühstück, le dîner Mittagessen und le souper Abendessen.",
+      "Belgisch: une fois (Füllwort), un GSM (Handy) ; Schweizerisch: un natel (Handy), une panosse (Wischmopp)."
+     ],
+     "q": "Kannst du deine Telefonnummer oder dein Alter auf belgische Art sagen, mit septante oder nonante?",
+     "c": "Schreib drei Preise und drei Jahreszahlen mit septante, huitante und nonante und sag sie laut."
+    },
+    "es": {
+     "t": "El francés de Bélgica y Suiza",
+     "g": "Aprende las principales diferencias regionales del francés en Bélgica y Suiza.",
+     "p": [
+      "Números: septante (70) y nonante (90) se usan en Bélgica y Suiza ; algunas regiones suizas dicen huitante (80).",
+      "Comidas: como en Quebec, le déjeuner es el desayuno, le dîner la comida y le souper la cena.",
+      "Belga: une fois (muletilla), un GSM (móvil) ; suizo: un natel (móvil), une panosse (fregona)."
+     ],
+     "q": "¿Sabes decir tu número de teléfono o tu edad a la belga, con septante o nonante?",
+     "c": "Escribe tres precios y tres años con septante, huitante y nonante y dilos en voz alta."
+    },
+    "fr": {
+     "t": "Le français de Belgique et de Suisse",
+     "g": "Découvrir les principales différences régionales du français en Belgique et en Suisse.",
+     "p": [
+      "Nombres : septante (70) et nonante (90) en Belgique et en Suisse ; certains cantons suisses disent huitante (80).",
+      "Les repas : comme au Québec, déjeuner le matin, dîner à midi et souper le soir.",
+      "En Belgique : une fois (tic de langage), un GSM (portable) ; en Suisse : un natel (portable), une panosse (serpillière)."
+     ],
+     "q": "Sais-tu dire ton numéro de téléphone ou ton âge à la belge, avec septante ou nonante ?",
+     "c": "Écris trois prix et trois années avec septante, huitante et nonante, puis dis-les à voix haute."
+    },
+    "it": {
+     "t": "Il francese del Belgio e della Svizzera",
+     "g": "Impara le principali differenze regionali del francese in Belgio e Svizzera.",
+     "p": [
+      "Numeri: septante (70) e nonante (90) si usano in Belgio e Svizzera ; alcune regioni svizzere dicono huitante (80).",
+      "Pasti: come in Québec, le déjeuner è la colazione, le dîner il pranzo e le souper la cena.",
+      "Belga: une fois (intercalare), un GSM (cellulare) ; svizzero: un natel (cellulare), une panosse (mocio)."
+     ],
+     "q": "Sai dire il tuo numero di telefono o la tua età alla belga, con septante o nonante?",
+     "c": "Scrivi tre prezzi e tre anni con septante, huitante e nonante, poi dilli ad alta voce."
+    },
+    "pt": {
+     "t": "O francês da Bélgica e da Suíça",
+     "g": "Aprende as principais diferenças regionais do francês na Bélgica e na Suíça.",
+     "p": [
+      "Números: septante (70) e nonante (90) usam-se na Bélgica e na Suíça ; algumas regiões suíças dizem huitante (80).",
+      "Refeições: como no Quebeque, le déjeuner é o pequeno-almoço, le dîner o almoço e le souper o jantar.",
+      "Belga: une fois (bordão), un GSM (telemóvel) ; suíço: un natel (telemóvel), une panosse (esfregona)."
+     ],
+     "q": "Consegues dizer o teu número de telefone ou a tua idade à belga, com septante ou nonante?",
+     "c": "Escreve três preços e três anos com septante, huitante e nonante e diz em voz alta."
+    },
+    "pt_BR": {
+     "t": "O francês da Bélgica e da Suíça",
+     "g": "Aprenda as principais diferenças regionais do francês na Bélgica e na Suíça.",
+     "p": [
+      "Números: septante (70) e nonante (90) são usados na Bélgica e na Suíça ; algumas regiões suíças dizem huitante (80).",
+      "Refeições: como no Quebec, le déjeuner é o café da manhã, le dîner o almoço e le souper o jantar.",
+      "Belga: une fois (bordão), un GSM (celular) ; suíço: un natel (celular), une panosse (esfregão)."
+     ],
+     "q": "Você consegue dizer seu telefone ou sua idade do jeito belga, com septante ou nonante?",
+     "c": "Escreva três preços e três anos com septante, huitante e nonante e fale em voz alta."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "septante",
+      "ex": "Mon grand-père a septante-cinq ans."
+     },
+     {
+      "w": "nonante",
+      "ex": "Ça coûte nonante euros."
+     },
+     {
+      "w": "huitante",
+      "ex": "Dans le canton de Vaud, on dit huitante."
+     },
+     {
+      "w": "le dîner (à midi)",
+      "ex": "À Bruxelles, on dîne vers midi et demi."
+     },
+     {
+      "w": "un GSM",
+      "ex": "J'ai oublié mon GSM à la maison."
+     },
+     {
+      "w": "un natel",
+      "ex": "À Genève, il m'a donné son numéro de natel."
+     }
+    ],
+    "gram": "Belgique et Suisse : septante, nonante (huitante dans certains cantons) ; déjeuner / dîner / souper ; GSM, natel."
+   }
+  },
+  {
+   "d": 230,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "French history highlights",
+     "g": "Tell key moments of French history, from Charlemagne to the Belle Époque.",
+     "p": [
+      "Charlemagne was crowned emperor in 800 ; much later, Louis XIV, the Sun King, made Versailles a symbol of power.",
+      "The Revolution began in 1789 ; on 14 July the Bastille was taken, now la fête nationale. Values: liberté, égalité, fraternité.",
+      "The Belle Époque (about 1871-1914) was a time of progress and art ; the Eiffel Tower was built for 1889."
+     ],
+     "q": "Which period of French history would you like to visit, and what would you do there?",
+     "c": "Write a mini timeline of five dates in French using the passive or passé composé: en 1789, la Bastille a été prise..."
+    },
+    "de": {
+     "t": "Höhepunkte der französischen Geschichte",
+     "g": "Du erzählst wichtige Momente von Karl dem Großen bis zur Belle Époque.",
+     "p": [
+      "Karl der Große (Charlemagne) wurde 800 zum Kaiser gekrönt ; später machte Ludwig XIV., der Sonnenkönig, Versailles zum Machtsymbol.",
+      "Die Revolution begann 1789 ; am 14. Juli wurde die Bastille gestürmt, heute la fête nationale. Liberté, égalité, fraternité.",
+      "Die Belle Époque (etwa 1871-1914) war eine Zeit des Fortschritts und der Kunst ; der Eiffelturm entstand für 1889."
+     ],
+     "q": "Welche Epoche der französischen Geschichte würdest du gern besuchen, und was würdest du dort tun?",
+     "c": "Schreib eine Mini-Zeitleiste mit fünf Daten auf Französisch, im Passiv oder passé composé: en 1789, la Bastille a été prise..."
+    },
+    "es": {
+     "t": "Momentos clave de la historia de Francia",
+     "g": "Cuenta momentos clave de la historia francesa, de Carlomagno a la Belle Époque.",
+     "p": [
+      "Carlomagno fue coronado emperador en el año 800 ; mucho después, Luis XIV, el Rey Sol, hizo de Versalles un símbolo de poder.",
+      "La Revolución empezó en 1789 ; el 14 de julio se tomó la Bastilla, hoy la fête nationale. Liberté, égalité, fraternité.",
+      "La Belle Époque (aprox. 1871-1914) fue una época de progreso y arte ; la torre Eiffel se construyó para 1889."
+     ],
+     "q": "¿Qué época de la historia de Francia te gustaría visitar y qué harías allí?",
+     "c": "Escribe una mini cronología de cinco fechas en francés con pasiva o passé composé: en 1789, la Bastille a été prise..."
+    },
+    "fr": {
+     "t": "Les grands moments de l'histoire de France",
+     "g": "Raconter quelques moments clés, de Charlemagne à la Belle Époque.",
+     "p": [
+      "Charlemagne est couronné empereur en 800 ; bien plus tard, Louis XIV, le Roi-Soleil, fait de Versailles un symbole de pouvoir.",
+      "La Révolution commence en 1789 ; le 14 juillet, la Bastille est prise : c'est la fête nationale. Liberté, égalité, fraternité.",
+      "La Belle Époque (vers 1871-1914) est une période de progrès et d'art ; la tour Eiffel est construite pour 1889."
+     ],
+     "q": "Quelle époque de l'histoire de France aimerais-tu visiter, et qu'y ferais-tu ?",
+     "c": "Écris une mini frise de cinq dates au passif ou au passé composé : en 1789, la Bastille a été prise..."
+    },
+    "it": {
+     "t": "Grandi momenti della storia francese",
+     "g": "Racconta momenti chiave della storia francese, da Carlo Magno alla Belle Époque.",
+     "p": [
+      "Carlo Magno fu incoronato imperatore nell'800 ; molto più tardi Luigi XIV, il Re Sole, fece di Versailles un simbolo di potere.",
+      "La Rivoluzione iniziò nel 1789 ; il 14 luglio fu presa la Bastiglia, oggi la fête nationale. Liberté, égalité, fraternité.",
+      "La Belle Époque (circa 1871-1914) fu un periodo di progresso e arte ; la torre Eiffel fu costruita per il 1889."
+     ],
+     "q": "Quale epoca della storia francese vorresti visitare e cosa faresti lì?",
+     "c": "Scrivi una mini linea del tempo di cinque date in francese con il passivo o il passé composé: en 1789, la Bastille a été prise..."
+    },
+    "pt": {
+     "t": "Grandes momentos da história de França",
+     "g": "Conta momentos-chave da história francesa, de Carlos Magno à Belle Époque.",
+     "p": [
+      "Carlos Magno foi coroado imperador em 800 ; muito depois, Luís XIV, o Rei-Sol, fez de Versalhes um símbolo de poder.",
+      "A Revolução começou em 1789 ; a 14 de julho foi tomada a Bastilha, hoje la fête nationale. Liberté, égalité, fraternité.",
+      "A Belle Époque (cerca de 1871-1914) foi um tempo de progresso e arte ; a torre Eiffel foi construída para 1889."
+     ],
+     "q": "Que época da história de França gostavas de visitar e o que farias lá?",
+     "c": "Escreve uma mini cronologia de cinco datas em francês, na passiva ou no passé composé: en 1789, la Bastille a été prise..."
+    },
+    "pt_BR": {
+     "t": "Grandes momentos da história da França",
+     "g": "Conte momentos-chave da história francesa, de Carlos Magno à Belle Époque.",
+     "p": [
+      "Carlos Magno foi coroado imperador em 800 ; muito depois, Luís XIV, o Rei Sol, fez de Versalhes um símbolo de poder.",
+      "A Revolução começou em 1789 ; em 14 de julho a Bastilha foi tomada, hoje la fête nationale. Liberté, égalité, fraternité.",
+      "A Belle Époque (cerca de 1871-1914) foi um tempo de progresso e arte ; a torre Eiffel foi construída para 1889."
+     ],
+     "q": "Que época da história da França você gostaria de visitar e o que faria lá?",
+     "c": "Escreva uma mini linha do tempo de cinco datas em francês, na passiva ou no passé composé: en 1789, la Bastille a été prise..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "être couronné",
+      "ex": "Charlemagne a été couronné empereur en 800."
+     },
+     {
+      "w": "le Roi-Soleil",
+      "ex": "Louis XIV, le Roi-Soleil, a vécu à Versailles."
+     },
+     {
+      "w": "la Révolution",
+      "ex": "La Révolution française a commencé en 1789."
+     },
+     {
+      "w": "la prise de la Bastille",
+      "ex": "La prise de la Bastille a eu lieu le 14 juillet 1789."
+     },
+     {
+      "w": "la Belle Époque",
+      "ex": "La Belle Époque est une période de grande créativité."
+     },
+     {
+      "w": "un siècle",
+      "ex": "Versailles a été construit au XVIIe siècle."
+     }
+    ],
+    "gram": "Raconter l'histoire : passé composé, passif (la Bastille a été prise) ou présent de narration ; en + année ; au XVIIe siècle."
+   }
+  }
+ ]
+}

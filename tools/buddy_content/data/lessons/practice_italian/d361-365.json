@@ -1,0 +1,565 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 361,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Your Italian journey",
+     "g": "Reflect on your progress, favourite words and next goals in Italian.",
+     "p": [
+      "Look back: from Ciao and Buongiorno to connectors like tuttavia and purché: you have come a long way!",
+      "Talk about progress with the passato prossimo and ormai: Ho imparato a..., Ormai riesco a capire...",
+      "Set goals with the future and vorrei: Il prossimo anno leggerò un romanzo, Vorrei parlare con più scioltezza."
+     ],
+     "q": "What is your favourite Italian word you've learned, and why?",
+     "c": "Write three sentences: something you've learned, your favourite word and one goal for next year."
+    },
+    "de": {
+     "t": "Deine Italienisch-Reise",
+     "g": "Du denkst über deine Fortschritte, Lieblingswörter und nächsten Ziele auf Italienisch nach.",
+     "p": [
+      "Rückblick: von Ciao und Buongiorno bis zu Konnektoren wie tuttavia und purché: du bist weit gekommen!",
+      "Über Fortschritte sprechen mit passato prossimo und ormai: Ho imparato a..., Ormai riesco a capire...",
+      "Ziele setzen mit Futur und vorrei: Il prossimo anno leggerò un romanzo, Vorrei parlare con più scioltezza."
+     ],
+     "q": "Welches gelernte italienische Wort ist dein Lieblingswort, und warum?",
+     "c": "Schreib drei Sätze: etwas Gelerntes, dein Lieblingswort und ein Ziel fürs nächste Jahr."
+    },
+    "es": {
+     "t": "Tu viaje con el italiano",
+     "g": "Reflexionar sobre tu progreso, tus palabras favoritas y tus próximas metas en italiano.",
+     "p": [
+      "Mira atrás: de Ciao y Buongiorno a conectores como tuttavia y purché: ¡has recorrido un largo camino!",
+      "Habla del progreso con el passato prossimo y ormai: Ho imparato a..., Ormai riesco a capire...",
+      "Fija metas con el futuro y vorrei: Il prossimo anno leggerò un romanzo, Vorrei parlare con più scioltezza."
+     ],
+     "q": "¿Cuál es tu palabra italiana favorita de las que has aprendido, y por qué?",
+     "c": "Escribe tres frases: algo que has aprendido, tu palabra favorita y una meta para el próximo año."
+    },
+    "fr": {
+     "t": "Ton parcours en italien",
+     "g": "Réfléchir à tes progrès, à tes mots préférés et à tes prochains objectifs en italien.",
+     "p": [
+      "Regarde en arrière : de Ciao et Buongiorno aux connecteurs comme tuttavia et purché, quel chemin parcouru !",
+      "Parler de tes progrès avec le passato prossimo et ormai : Ho imparato a..., Ormai riesco a capire...",
+      "Fixer des objectifs avec le futur et vorrei : Il prossimo anno leggerò un romanzo, Vorrei parlare con più scioltezza."
+     ],
+     "q": "Quel est ton mot italien préféré parmi ceux que tu as appris, et pourquoi ?",
+     "c": "Écris trois phrases : une chose apprise, ton mot préféré et un objectif pour l'an prochain."
+    },
+    "it": {
+     "t": "Il tuo percorso con l'italiano",
+     "g": "Riflettere sui tuoi progressi, sulle parole preferite e sui prossimi obiettivi.",
+     "p": [
+      "Guarda indietro: da Ciao e Buongiorno a connettivi come tuttavia e purché, quanta strada hai fatto!",
+      "Parla dei progressi con il passato prossimo e ormai: Ho imparato a..., Ormai riesco a capire...",
+      "Fissa obiettivi con il futuro e vorrei: Il prossimo anno leggerò un romanzo, Vorrei parlare con più scioltezza."
+     ],
+     "q": "Qual è la tua parola italiana preferita tra quelle che hai imparato, e perché?",
+     "c": "Scrivi tre frasi: una cosa che hai imparato, la tua parola preferita e un obiettivo per il prossimo anno."
+    },
+    "pt": {
+     "t": "O teu percurso com o italiano",
+     "g": "Refletir sobre o teu progresso, as palavras favoritas e os próximos objetivos em italiano.",
+     "p": [
+      "Olha para trás: de Ciao e Buongiorno a conectores como tuttavia e purché, que caminho fizeste!",
+      "Fala do progresso com o passato prossimo e ormai: Ho imparato a..., Ormai riesco a capire...",
+      "Define objetivos com o futuro e vorrei: Il prossimo anno leggerò un romanzo, Vorrei parlare con più scioltezza."
+     ],
+     "q": "Qual é a tua palavra italiana favorita das que aprendeste, e porquê?",
+     "c": "Escreve três frases: algo que aprendeste, a tua palavra favorita e um objetivo para o próximo ano."
+    },
+    "pt_BR": {
+     "t": "Sua jornada com o italiano",
+     "g": "Refletir sobre seu progresso, suas palavras favoritas e suas próximas metas em italiano.",
+     "p": [
+      "Olhe para trás: de Ciao e Buongiorno a conectivos como tuttavia e purché, que caminhada!",
+      "Fale do progresso com o passato prossimo e ormai: Ho imparato a..., Ormai riesco a capire...",
+      "Defina metas com o futuro e vorrei: Il prossimo anno leggerò un romanzo, Vorrei parlare con più scioltezza."
+     ],
+     "q": "Qual é sua palavra italiana favorita entre as que aprendeu, e por quê?",
+     "c": "Escreva três frases: algo que aprendeu, sua palavra favorita e uma meta para o próximo ano."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il percorso",
+      "ex": "Il mio percorso con l'italiano è stato bellissimo."
+     },
+     {
+      "w": "i progressi",
+      "ex": "Ho fatto molti progressi quest'anno."
+     },
+     {
+      "w": "ormai",
+      "ex": "Ormai capisco quasi tutti i film."
+     },
+     {
+      "w": "la scioltezza",
+      "ex": "Vorrei parlare con più scioltezza."
+     },
+     {
+      "w": "l'obiettivo",
+      "ex": "Il mio obiettivo è leggere un romanzo in italiano."
+     },
+     {
+      "w": "fare strada",
+      "ex": "Abbiamo fatto tanta strada insieme!"
+     }
+    ],
+    "gram": "Ormai + presente o passato prossimo indica un risultato raggiunto: ormai so ordinare, ormai ho capito."
+   }
+  },
+  {
+   "d": 362,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Italian etiquette in depth",
+     "g": "Know the codes for gifts, punctuality, greetings with kisses and table manners.",
+     "p": [
+      "Greetings: friends often greet with two kisses on the cheeks (il bacio sulla guancia); a handshake in formal settings.",
+      "Gifts: bring dolci, wine or flowers when invited; it is polite to open a gift in front of the giver.",
+      "At the table: wait for Buon appetito!, keep hands visible, don't cut spaghetti; punctuality is flexible socially, strict at work."
+     ],
+     "q": "Which Italian etiquette rule is most different from your culture?",
+     "c": "Write three tips for a friend invited to dinner at an Italian home, using the imperative."
+    },
+    "de": {
+     "t": "Italienische Etikette im Detail",
+     "g": "Du kennst die Regeln für Geschenke, Pünktlichkeit, Begrüßungsküsse und Tischmanieren.",
+     "p": [
+      "Begrüßung: Freunde begrüßen sich oft mit zwei Wangenküssen (il bacio sulla guancia); formell mit Handschlag.",
+      "Geschenke: bei Einladungen dolci, Wein oder Blumen mitbringen; ein Geschenk öffnet man höflich vor dem Schenkenden.",
+      "Bei Tisch: auf Buon appetito! warten, Hände sichtbar, Spaghetti nicht schneiden; privat ist Pünktlichkeit flexibel, beruflich streng."
+     ],
+     "q": "Welche italienische Benimmregel unterscheidet sich am meisten von deiner Kultur?",
+     "c": "Schreib drei Tipps im Imperativ für jemanden, der bei Italienern zum Essen eingeladen ist."
+    },
+    "es": {
+     "t": "La etiqueta italiana a fondo",
+     "g": "Conocer los códigos de regalos, puntualidad, saludos con besos y modales en la mesa.",
+     "p": [
+      "Saludos: entre amigos se suelen dar dos besos en las mejillas (il bacio sulla guancia); en lo formal, un apretón de manos.",
+      "Regalos: lleva dolci, vino o flores si te invitan; es educado abrir el regalo delante de quien lo da.",
+      "En la mesa: espera el Buon appetito!, manos a la vista, no cortes los espaguetis; puntualidad flexible en lo social, estricta en el trabajo."
+     ],
+     "q": "¿Qué norma de etiqueta italiana es más distinta de tu cultura?",
+     "c": "Escribe tres consejos en imperativo para un amigo invitado a cenar en una casa italiana."
+    },
+    "fr": {
+     "t": "L'étiquette italienne en détail",
+     "g": "Connaître les codes des cadeaux, de la ponctualité, des bises et des manières à table.",
+     "p": [
+      "Salutations : entre amis, on se fait souvent deux bises (il bacio sulla guancia) ; poignée de main en contexte formel.",
+      "Cadeaux : apporte dolci, vin ou fleurs quand on t'invite ; il est poli d'ouvrir un cadeau devant celui qui l'offre.",
+      "À table : attends le Buon appetito!, mains visibles, ne coupe pas les spaghettis ; ponctualité souple entre amis, stricte au travail."
+     ],
+     "q": "Quelle règle de savoir-vivre italienne est la plus différente de ta culture ?",
+     "c": "Écris trois conseils à l'impératif pour un ami invité à dîner chez des Italiens."
+    },
+    "it": {
+     "t": "Il galateo italiano in profondità",
+     "g": "Conoscere le regole su regali, puntualità, saluti con i baci e buone maniere a tavola.",
+     "p": [
+      "Saluti: tra amici ci si saluta spesso con due baci sulle guance; in contesti formali con una stretta di mano.",
+      "Regali: se sei invitato porta dolci, vino o fiori; è cortese aprire il regalo davanti a chi lo offre.",
+      "A tavola: aspetta il Buon appetito!, mani in vista, non tagliare gli spaghetti; puntualità flessibile tra amici, rigida al lavoro."
+     ],
+     "q": "Quale regola del galateo italiano è più diversa dalla tua cultura?",
+     "c": "Scrivi tre consigli all'imperativo per un amico invitato a cena in una casa italiana."
+    },
+    "pt": {
+     "t": "A etiqueta italiana a fundo",
+     "g": "Conhecer os códigos de presentes, pontualidade, cumprimentos com beijos e maneiras à mesa.",
+     "p": [
+      "Cumprimentos: entre amigos é comum dar dois beijos na cara (il bacio sulla guancia); em contexto formal, um aperto de mão.",
+      "Presentes: leva dolci, vinho ou flores quando te convidam; é educado abrir o presente à frente de quem o dá.",
+      "À mesa: espera pelo Buon appetito!, mãos à vista, não cortes o esparguete; pontualidade flexível entre amigos, rigorosa no trabalho."
+     ],
+     "q": "Que regra de etiqueta italiana é mais diferente da tua cultura?",
+     "c": "Escreve três conselhos no imperativo para um amigo convidado a jantar em casa de italianos."
+    },
+    "pt_BR": {
+     "t": "A etiqueta italiana a fundo",
+     "g": "Conhecer os códigos de presentes, pontualidade, cumprimentos com beijos e boas maneiras à mesa.",
+     "p": [
+      "Cumprimentos: entre amigos é comum dar dois beijos no rosto (il bacio sulla guancia); em contexto formal, um aperto de mão.",
+      "Presentes: leve dolci, vinho ou flores quando for convidado; é educado abrir o presente na frente de quem deu.",
+      "À mesa: espere o Buon appetito!, mãos à vista, não corte o espaguete; pontualidade flexível entre amigos, rigorosa no trabalho."
+     ],
+     "q": "Que regra de etiqueta italiana é mais diferente da sua cultura?",
+     "c": "Escreva três conselhos no imperativo para um amigo convidado a jantar na casa de italianos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il galateo",
+      "ex": "Secondo il galateo, non si parla con la bocca piena."
+     },
+     {
+      "w": "il bacio sulla guancia",
+      "ex": "In Italia ci si saluta con un bacio sulla guancia."
+     },
+     {
+      "w": "la stretta di mano",
+      "ex": "Al colloquio basta una stretta di mano."
+     },
+     {
+      "w": "essere invitato a cena",
+      "ex": "Sabato sono invitato a cena dai Rossi."
+     },
+     {
+      "w": "portare un pensierino",
+      "ex": "Porto un pensierino alla padrona di casa."
+     },
+     {
+      "w": "essere puntuale",
+      "ex": "Al lavoro è importante essere puntuali."
+     }
+    ],
+    "gram": "Imperativo informale per consigli: porta dei fiori, aspetta, non tagliare (negativo con tu = non + infinito)."
+   }
+  },
+  {
+   "d": 363,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Exploring Italian proverbs deeper",
+     "g": "Understand and use weather proverbs like Rosso di sera bel tempo si spera.",
+     "p": [
+      "Rosso di sera bel tempo si spera: a red sunset promises good weather tomorrow; it also means hoping for the best.",
+      "Other weather proverbs: Aprile, ogni goccia un barile (April rain is precious); Cielo a pecorelle, acqua a catinelle.",
+      "Proverbs are used to comment: Come dice il proverbio..., they often rhyme and drop articles to sound old and wise."
+     ],
+     "q": "Is there a weather proverb in your language? What does it say?",
+     "c": "Use Rosso di sera bel tempo si spera in a short dialogue about tomorrow's plans."
+    },
+    "de": {
+     "t": "Italienische Sprichwörter vertiefen",
+     "g": "Du verstehst und verwendest Wettersprichwörter wie Rosso di sera bel tempo si spera.",
+     "p": [
+      "Rosso di sera bel tempo si spera: Abendrot verspricht gutes Wetter; es heißt auch, auf das Beste zu hoffen.",
+      "Weitere Wettersprichwörter: Aprile, ogni goccia un barile (Aprilregen ist kostbar); Cielo a pecorelle, acqua a catinelle.",
+      "Sprichwörter kommentieren: Come dice il proverbio...; sie reimen sich oft und lassen Artikel weg, um alt und weise zu klingen."
+     ],
+     "q": "Gibt es in deiner Sprache ein Wettersprichwort? Was sagt es?",
+     "c": "Verwende Rosso di sera bel tempo si spera in einem kurzen Dialog über die Pläne für morgen."
+    },
+    "es": {
+     "t": "Profundizar en los refranes italianos",
+     "g": "Entender y usar refranes del tiempo como Rosso di sera bel tempo si spera.",
+     "p": [
+      "Rosso di sera bel tempo si spera: un atardecer rojo promete buen tiempo; también significa esperar lo mejor.",
+      "Otros refranes del tiempo: Aprile, ogni goccia un barile (la lluvia de abril vale oro); Cielo a pecorelle, acqua a catinelle.",
+      "Los refranes sirven para comentar: Come dice il proverbio...; suelen rimar y omitir artículos para sonar antiguos y sabios."
+     ],
+     "q": "¿Hay algún refrán sobre el tiempo en tu idioma? ¿Qué dice?",
+     "c": "Usa Rosso di sera bel tempo si spera en un breve diálogo sobre los planes de mañana."
+    },
+    "fr": {
+     "t": "Approfondir les proverbes italiens",
+     "g": "Comprendre et utiliser les dictons météo comme Rosso di sera bel tempo si spera.",
+     "p": [
+      "Rosso di sera bel tempo si spera : un coucher de soleil rouge annonce le beau temps ; cela veut aussi dire espérer le meilleur.",
+      "Autres dictons météo : Aprile, ogni goccia un barile (la pluie d'avril est précieuse) ; Cielo a pecorelle, acqua a catinelle.",
+      "Les proverbes servent à commenter : Come dice il proverbio... ; ils riment souvent et omettent les articles pour sonner anciens et sages."
+     ],
+     "q": "Existe-t-il un dicton météo dans ta langue ? Que dit-il ?",
+     "c": "Utilise Rosso di sera bel tempo si spera dans un court dialogue sur les projets de demain."
+    },
+    "it": {
+     "t": "Approfondire i proverbi italiani",
+     "g": "Capire e usare i proverbi sul tempo come Rosso di sera bel tempo si spera.",
+     "p": [
+      "Rosso di sera bel tempo si spera: un tramonto rosso promette bel tempo; si usa anche per sperare nel meglio.",
+      "Altri proverbi sul tempo: Aprile, ogni goccia un barile; Cielo a pecorelle, acqua a catinelle.",
+      "I proverbi servono a commentare: Come dice il proverbio...; spesso fanno rima e tolgono gli articoli per suonare antichi e saggi."
+     ],
+     "q": "Nella tua lingua c'è un proverbio sul tempo? Che cosa dice?",
+     "c": "Usa Rosso di sera bel tempo si spera in un breve dialogo sui programmi di domani."
+    },
+    "pt": {
+     "t": "Aprofundar os provérbios italianos",
+     "g": "Perceber e usar provérbios sobre o tempo como Rosso di sera bel tempo si spera.",
+     "p": [
+      "Rosso di sera bel tempo si spera: um pôr do sol vermelho promete bom tempo; também quer dizer esperar o melhor.",
+      "Outros provérbios do tempo: Aprile, ogni goccia un barile (a chuva de abril é preciosa); Cielo a pecorelle, acqua a catinelle.",
+      "Os provérbios servem para comentar: Come dice il proverbio...; muitas vezes rimam e tiram os artigos para soar antigos e sábios."
+     ],
+     "q": "Há algum provérbio sobre o tempo na tua língua? O que diz?",
+     "c": "Usa Rosso di sera bel tempo si spera num pequeno diálogo sobre os planos de amanhã."
+    },
+    "pt_BR": {
+     "t": "Aprofundando os provérbios italianos",
+     "g": "Entender e usar provérbios sobre o tempo como Rosso di sera bel tempo si spera.",
+     "p": [
+      "Rosso di sera bel tempo si spera: um pôr do sol vermelho promete tempo bom; também quer dizer esperar o melhor.",
+      "Outros provérbios do tempo: Aprile, ogni goccia un barile (a chuva de abril é preciosa); Cielo a pecorelle, acqua a catinelle.",
+      "Os provérbios servem para comentar: Come dice il proverbio...; muitas vezes rimam e tiram os artigos para soar antigos e sábios."
+     ],
+     "q": "Existe algum provérbio sobre o tempo na sua língua? O que ele diz?",
+     "c": "Use Rosso di sera bel tempo si spera num pequeno diálogo sobre os planos de amanhã."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "rosso di sera bel tempo si spera",
+      "ex": "Guarda il tramonto: rosso di sera bel tempo si spera!"
+     },
+     {
+      "w": "il proverbio",
+      "ex": "Come dice il proverbio, chi va piano va sano e va lontano."
+     },
+     {
+      "w": "aprile, ogni goccia un barile",
+      "ex": "Piove? Aprile, ogni goccia un barile!"
+     },
+     {
+      "w": "a catinelle",
+      "ex": "Ieri pioveva a catinelle."
+     },
+     {
+      "w": "il tramonto",
+      "ex": "Il tramonto sul mare era tutto rosso."
+     },
+     {
+      "w": "le previsioni del tempo",
+      "ex": "Hai visto le previsioni del tempo per domani?"
+     }
+    ],
+    "gram": "I proverbi omettono spesso articoli e verbi (Rosso di sera...) e usano il si impersonale: bel tempo si spera."
+   }
+  },
+  {
+   "d": 364,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Fluency sprint: talk for three minutes",
+     "g": "Speak on a familiar topic for three minutes using B2 connectors.",
+     "p": [
+      "Pick a familiar topic (your city, a hobby, your job) and plan three parts: introduction, development, conclusion.",
+      "Link with B2 connectors: innanzitutto, inoltre, tuttavia, nonostante, di conseguenza, in conclusione.",
+      "Keep going with fillers and paraphrases (allora, come dire, è una cosa che...) and don't stop for small mistakes."
+     ],
+     "q": "Which topic could you talk about for three minutes right now?",
+     "c": "Set a three-minute timer and speak about your topic, using at least five connectors from today."
+    },
+    "de": {
+     "t": "Sprechsprint: drei Minuten reden",
+     "g": "Du sprichst drei Minuten über ein vertrautes Thema mit B2-Konnektoren.",
+     "p": [
+      "Wähle ein vertrautes Thema (deine Stadt, ein Hobby, dein Beruf) und plane drei Teile: Einleitung, Hauptteil, Schluss.",
+      "Verbinde mit B2-Konnektoren: innanzitutto, inoltre, tuttavia, nonostante, di conseguenza, in conclusione.",
+      "Bleib im Fluss mit Füllwörtern und Umschreibungen (allora, come dire, è una cosa che...) und halte bei kleinen Fehlern nicht an."
+     ],
+     "q": "Über welches Thema könntest du jetzt sofort drei Minuten sprechen?",
+     "c": "Stell einen Drei-Minuten-Timer und sprich über dein Thema mit mindestens fünf heutigen Konnektoren."
+    },
+    "es": {
+     "t": "Sprint de fluidez: habla tres minutos",
+     "g": "Hablar tres minutos sobre un tema conocido usando conectores de nivel B2.",
+     "p": [
+      "Elige un tema conocido (tu ciudad, una afición, tu trabajo) y planifica tres partes: introducción, desarrollo, conclusión.",
+      "Enlaza con conectores B2: innanzitutto, inoltre, tuttavia, nonostante, di conseguenza, in conclusione.",
+      "Sigue adelante con muletillas y paráfrasis (allora, come dire, è una cosa che...) y no te detengas por pequeños errores."
+     ],
+     "q": "¿Sobre qué tema podrías hablar tres minutos ahora mismo?",
+     "c": "Pon un temporizador de tres minutos y habla de tu tema usando al menos cinco conectores de hoy."
+    },
+    "fr": {
+     "t": "Sprint d'aisance : parler trois minutes",
+     "g": "Parler trois minutes d'un sujet familier avec des connecteurs de niveau B2.",
+     "p": [
+      "Choisis un sujet familier (ta ville, un loisir, ton métier) et prévois trois parties : introduction, développement, conclusion.",
+      "Relie avec des connecteurs B2 : innanzitutto, inoltre, tuttavia, nonostante, di conseguenza, in conclusione.",
+      "Continue avec des mots de remplissage et des paraphrases (allora, come dire, è una cosa che...) sans t'arrêter aux petites fautes."
+     ],
+     "q": "De quel sujet pourrais-tu parler trois minutes tout de suite ?",
+     "c": "Lance un minuteur de trois minutes et parle de ton sujet avec au moins cinq connecteurs du jour."
+    },
+    "it": {
+     "t": "Sprint di scioltezza: parla per tre minuti",
+     "g": "Parlare per tre minuti di un tema familiare usando connettivi di livello B2.",
+     "p": [
+      "Scegli un tema familiare (la tua città, un hobby, il lavoro) e pianifica tre parti: introduzione, sviluppo, conclusione.",
+      "Collega le idee con connettivi B2: innanzitutto, inoltre, tuttavia, nonostante, di conseguenza, in conclusione.",
+      "Vai avanti con intercalari e perifrasi (allora, come dire, è una cosa che...) e non fermarti per piccoli errori."
+     ],
+     "q": "Di quale argomento potresti parlare per tre minuti proprio adesso?",
+     "c": "Imposta un timer di tre minuti e parla del tuo tema usando almeno cinque connettivi di oggi."
+    },
+    "pt": {
+     "t": "Sprint de fluência: fala três minutos",
+     "g": "Falar três minutos sobre um tema conhecido usando conectores de nível B2.",
+     "p": [
+      "Escolhe um tema conhecido (a tua cidade, um passatempo, o teu trabalho) e planeia três partes: introdução, desenvolvimento, conclusão.",
+      "Liga as ideias com conectores B2: innanzitutto, inoltre, tuttavia, nonostante, di conseguenza, in conclusione.",
+      "Continua com bordões e paráfrases (allora, come dire, è una cosa che...) e não pares por pequenos erros."
+     ],
+     "q": "Sobre que tema conseguirias falar três minutos agora mesmo?",
+     "c": "Põe um temporizador de três minutos e fala do teu tema usando pelo menos cinco conectores de hoje."
+    },
+    "pt_BR": {
+     "t": "Sprint de fluência: fale três minutos",
+     "g": "Falar três minutos sobre um tema conhecido usando conectivos de nível B2.",
+     "p": [
+      "Escolha um tema conhecido (sua cidade, um hobby, seu trabalho) e planeje três partes: introdução, desenvolvimento, conclusão.",
+      "Ligue as ideias com conectivos B2: innanzitutto, inoltre, tuttavia, nonostante, di conseguenza, in conclusione.",
+      "Siga em frente com bordões e paráfrases (allora, come dire, è una cosa che...) e não pare por pequenos erros."
+     ],
+     "q": "Sobre que tema você conseguiria falar três minutos agora mesmo?",
+     "c": "Coloque um timer de três minutos e fale do seu tema usando pelo menos cinco conectivos de hoje."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "innanzitutto",
+      "ex": "Innanzitutto, vi presento la mia città."
+     },
+     {
+      "w": "di conseguenza",
+      "ex": "Il centro è chiuso al traffico; di conseguenza, l'aria è pulita."
+     },
+     {
+      "w": "tuttavia",
+      "ex": "È una città piccola; tuttavia, offre molto."
+     },
+     {
+      "w": "nonostante",
+      "ex": "Nonostante il freddo, d'inverno è bellissima."
+     },
+     {
+      "w": "per quanto riguarda",
+      "ex": "Per quanto riguarda il cibo, la specialità è il risotto."
+     },
+     {
+      "w": "in conclusione",
+      "ex": "In conclusione, vi consiglio di visitarla."
+     }
+    ],
+    "gram": "Per quanto riguarda + nome introduce un nuovo punto; di conseguenza esprime l'effetto; nonostante + nome o che + congiuntivo."
+   }
+  },
+  {
+   "d": 365,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Review: B2 complete, bravissimo!",
+     "g": "Celebrate a full year: recap the B2 essentials and plan what comes next.",
+     "p": [
+      "A whole year of Italian: from greetings to the subjunctive, connectors, formal writing and creative speech. Bravissimo!",
+      "B2 essentials: congiuntivo, periodo ipotetico, passato remoto, passive, register, connectors and idioms.",
+      "Next steps: read a novel, watch films without subtitles, chat with natives and keep practising with me every day."
+     ],
+     "q": "What are you proudest of after this year of Italian?",
+     "c": "Write a short toast in Italian to celebrate your year: what you learned, a thank-you and a wish for the future."
+    },
+    "de": {
+     "t": "Wiederholung: B2 geschafft, bravissimo!",
+     "g": "Du feierst ein ganzes Jahr: B2-Grundlagen wiederholen und die nächsten Schritte planen.",
+     "p": [
+      "Ein ganzes Jahr Italienisch: von Grüßen bis zu Konjunktiv, Konnektoren, formellem Schreiben und kreativem Sprechen. Bravissimo!",
+      "B2-Grundlagen: congiuntivo, periodo ipotetico, passato remoto, Passiv, Register, Konnektoren und Redewendungen.",
+      "Nächste Schritte: einen Roman lesen, Filme ohne Untertitel sehen, mit Muttersprachlern reden und jeden Tag mit mir üben."
+     ],
+     "q": "Worauf bist du nach diesem Jahr Italienisch am stolzesten?",
+     "c": "Schreib einen kurzen Trinkspruch auf Italienisch für dein Jahr: was du gelernt hast, ein Dank und ein Wunsch."
+    },
+    "es": {
+     "t": "Repaso: ¡B2 completado, bravissimo!",
+     "g": "Celebrar un año entero: repasar lo esencial del B2 y planear lo que viene.",
+     "p": [
+      "Un año entero de italiano: de los saludos al subjuntivo, los conectores, la escritura formal y la expresión creativa. ¡Bravissimo!",
+      "Lo esencial del B2: congiuntivo, periodo ipotetico, passato remoto, pasiva, registro, conectores y modismos.",
+      "Próximos pasos: leer una novela, ver películas sin subtítulos, charlar con nativos y seguir practicando conmigo cada día."
+     ],
+     "q": "¿De qué te sientes más orgulloso tras este año de italiano?",
+     "c": "Escribe un breve brindis en italiano para celebrar tu año: lo que aprendiste, un agradecimiento y un deseo."
+    },
+    "fr": {
+     "t": "Révision : B2 terminé, bravissimo !",
+     "g": "Fêter une année entière : réviser l'essentiel du B2 et préparer la suite.",
+     "p": [
+      "Une année d'italien : des salutations au subjonctif, aux connecteurs, à l'écrit formel et à l'expression créative. Bravissimo !",
+      "L'essentiel du B2 : congiuntivo, periodo ipotetico, passato remoto, passif, registres, connecteurs et expressions.",
+      "Prochaines étapes : lire un roman, voir des films sans sous-titres, parler avec des natifs et continuer chaque jour avec moi."
+     ],
+     "q": "De quoi es-tu le plus fier après cette année d'italien ?",
+     "c": "Écris un court toast en italien pour fêter ton année : ce que tu as appris, un merci et un vœu pour l'avenir."
+    },
+    "it": {
+     "t": "Ripasso: B2 completato, bravissimo!",
+     "g": "Festeggiare un anno intero: ripassare l'essenziale del B2 e pianificare il futuro.",
+     "p": [
+      "Un anno intero di italiano: dai saluti al congiuntivo, ai connettivi, alla scrittura formale e creativa. Bravissimo!",
+      "L'essenziale del B2: congiuntivo, periodo ipotetico, passato remoto, passivo, registri, connettivi e modi di dire.",
+      "Prossimi passi: leggere un romanzo, guardare film senza sottotitoli, parlare con madrelingua e continuare a esercitarti con me."
+     ],
+     "q": "Di che cosa sei più orgoglioso dopo questo anno di italiano?",
+     "c": "Scrivi un breve brindisi per festeggiare il tuo anno: che cosa hai imparato, un grazie e un augurio per il futuro."
+    },
+    "pt": {
+     "t": "Revisão: B2 concluído, bravissimo!",
+     "g": "Celebrar um ano inteiro: rever o essencial do B2 e planear o que vem a seguir.",
+     "p": [
+      "Um ano inteiro de italiano: dos cumprimentos ao conjuntivo, aos conectores, à escrita formal e à expressão criativa. Bravissimo!",
+      "O essencial do B2: congiuntivo, periodo ipotetico, passato remoto, passiva, registo, conectores e expressões.",
+      "Próximos passos: ler um romance, ver filmes sem legendas, conversar com nativos e continuar a praticar comigo todos os dias."
+     ],
+     "q": "De que te orgulhas mais depois deste ano de italiano?",
+     "c": "Escreve um pequeno brinde em italiano para celebrar o teu ano: o que aprendeste, um agradecimento e um voto para o futuro."
+    },
+    "pt_BR": {
+     "t": "Revisão: B2 concluído, bravissimo!",
+     "g": "Comemorar um ano inteiro: revisar o essencial do B2 e planejar o que vem pela frente.",
+     "p": [
+      "Um ano inteiro de italiano: dos cumprimentos ao subjuntivo, aos conectivos, à escrita formal e à expressão criativa. Bravissimo!",
+      "O essencial do B2: congiuntivo, periodo ipotetico, passato remoto, passiva, registro, conectivos e expressões.",
+      "Próximos passos: ler um romance, ver filmes sem legenda, conversar com nativos e continuar praticando comigo todo dia."
+     ],
+     "q": "Do que você mais se orgulha depois deste ano de italiano?",
+     "c": "Escreva um pequeno brinde em italiano para comemorar seu ano: o que aprendeu, um agradecimento e um desejo para o futuro."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "bravissimo",
+      "ex": "Hai finito tutto il percorso: bravissimo!"
+     },
+     {
+      "w": "festeggiare",
+      "ex": "Stasera festeggiamo un anno di italiano!"
+     },
+     {
+      "w": "il traguardo",
+      "ex": "Il livello B2 è un traguardo importante."
+     },
+     {
+      "w": "essere orgoglioso di",
+      "ex": "Sono orgogliosa di quello che ho imparato."
+     },
+     {
+      "w": "continuare a",
+      "ex": "Continuerò a parlare italiano ogni giorno."
+     },
+     {
+      "w": "il prossimo passo",
+      "ex": "Il prossimo passo è leggere un romanzo intero."
+     }
+    ],
+    "gram": "Riepilogo B2: se avessi tempo, leggerei (ipotesi); penso che sia utile (congiuntivo); fu fondata (passivo storico)."
+   }
+  }
+ ]
+}

@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 161,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Films and series",
+     "g": "Talk about what you watch and recommend it in Spanish.",
+     "p": [
+      "Words: la película, la serie, el capítulo, la temporada, el actor, la actriz, la trama, el final.",
+      "Ask about the plot: ¿De qué va? Answer: va de dos hermanos que...",
+      "Opinions: me ha enganchado (I'm hooked), es un poco lenta, el final es increíble, te la recomiendo."
+     ],
+     "q": "What series or film has hooked you recently, and what is it about?",
+     "c": "Recommend a film or series in four sentences: title, what it is about, one opinion and who should watch it."
+    },
+    "de": {
+     "t": "Filme und Serien",
+     "g": "Du sprichst über das, was du schaust, und empfiehlst es auf Spanisch.",
+     "p": [
+      "Wörter: la película, la serie, el capítulo, la temporada, el actor, la actriz, la trama, el final.",
+      "Nach der Handlung fragen: ¿De qué va? Antwort: va de dos hermanos que...",
+      "Meinungen: me ha enganchado (ich bin süchtig danach), es un poco lenta, el final es increíble."
+     ],
+     "q": "Welche Serie oder welcher Film hat dich zuletzt gefesselt, und worum geht es?",
+     "c": "Empfiehl einen Film oder eine Serie in vier Sätzen: Titel, Inhalt, eine Meinung und für wen."
+    },
+    "es": {
+     "t": "Películas y series",
+     "g": "Habla de lo que ves y recomiéndalo.",
+     "p": [
+      "Palabras: la película, la serie, el capítulo, la temporada, el actor, la actriz, la trama, el final.",
+      "Para el argumento: ¿De qué va? Respuesta: va de dos hermanos que...",
+      "Opiniones: me ha enganchado, es un poco lenta, el final es increíble, te la recomiendo."
+     ],
+     "q": "¿Qué serie o película te ha enganchado últimamente y de qué va?",
+     "c": "Recomienda una película o serie en cuatro frases: título, de qué va, una opinión y para quién es."
+    },
+    "fr": {
+     "t": "Films et séries",
+     "g": "Parler de ce que tu regardes et le recommander en espagnol.",
+     "p": [
+      "Mots : la película, la serie, el capítulo, la temporada, el actor, la actriz, la trama, el final.",
+      "Demander l'histoire : ¿De qué va? Réponse : va de dos hermanos que...",
+      "Avis : me ha enganchado (je suis accro), es un poco lenta, el final es increíble, te la recomiendo."
+     ],
+     "q": "Quelle série ou quel film t'a rendu accro récemment, et de quoi ça parle ?",
+     "c": "Recommande un film ou une série en quatre phrases : titre, sujet, un avis et pour qui."
+    },
+    "it": {
+     "t": "Film e serie",
+     "g": "Parli di cosa guardi e lo consigli in spagnolo.",
+     "p": [
+      "Parole: la película, la serie, el capítulo, la temporada, el actor, la actriz, la trama, el final.",
+      "Chiedere la trama: ¿De qué va? Risposta: va de dos hermanos que...",
+      "Opinioni: me ha enganchado (mi ha preso), es un poco lenta, el final es increíble, te la recomiendo."
+     ],
+     "q": "Quale serie o film ti ha preso di recente, e di cosa parla?",
+     "c": "Consiglia un film o una serie in quattro frasi: titolo, di cosa parla, un'opinione e per chi è."
+    },
+    "pt": {
+     "t": "Filmes e séries",
+     "g": "Falas do que vês e recomendas em espanhol.",
+     "p": [
+      "Palavras: la película, la serie, el capítulo, la temporada, el actor, la actriz, la trama, el final.",
+      "Perguntar o enredo: ¿De qué va? Resposta: va de dos hermanos que...",
+      "Opiniões: me ha enganchado (fiquei viciado), es un poco lenta, el final es increíble, te la recomiendo."
+     ],
+     "q": "Que série ou filme te viciou ultimamente, e de que trata?",
+     "c": "Recomenda um filme ou série em quatro frases: título, de que trata, uma opinião e para quem é."
+    },
+    "pt_BR": {
+     "t": "Filmes e séries",
+     "g": "Fale do que você assiste e recomende em espanhol.",
+     "p": [
+      "Palavras: la película, la serie, el capítulo, la temporada, el actor, la actriz, la trama, el final.",
+      "Perguntar a história: ¿De qué va? Resposta: va de dos hermanos que...",
+      "Opiniões: me ha enganchado (fiquei viciado), es un poco lenta, el final es increíble, te la recomiendo."
+     ],
+     "q": "Que série ou filme te viciou ultimamente, e sobre o que é?",
+     "c": "Recomende um filme ou série em quatro frases: título, do que se trata, uma opinião e para quem é."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la película",
+      "ex": "Anoche vi una película de miedo."
+     },
+     {
+      "w": "la serie",
+      "ex": "Estoy viendo una serie española muy buena."
+     },
+     {
+      "w": "el capítulo",
+      "ex": "Solo me queda un capítulo para terminarla."
+     },
+     {
+      "w": "la temporada",
+      "ex": "La segunda temporada es mejor que la primera."
+     },
+     {
+      "w": "la trama",
+      "ex": "La trama es muy original."
+     },
+     {
+      "w": "¿de qué va?",
+      "ex": "¿De qué va la película? Va de un robo."
+     }
+    ],
+    "gram": "¿De qué va? / Va de... para contar el tema. Trata sobre... es más formal. Opinar: me ha enganchado, es aburrida, te la recomiendo."
+   }
+  },
+  {
+   "d": 162,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Music and dance",
+     "g": "Talk about the music you love and dances from the Spanish-speaking world.",
+     "p": [
+      "Words: la canción, la letra (lyrics), el cantante, el grupo, el concierto, el disco.",
+      "Styles: salsa (Caribbean), flamenco (Andalusia), tango (Río de la Plata), reguetón, cumbia.",
+      "Skills with saber: sé bailar salsa, no sé cantar. Memories: esta canción me recuerda a..."
+     ],
+     "q": "What song reminds you of a special moment, and why?",
+     "c": "Share a Spanish-language song you like: who sings it, what style it is and what the lyrics are about."
+    },
+    "de": {
+     "t": "Musik und Tanz",
+     "g": "Du sprichst über deine Lieblingsmusik und Tänze der spanischsprachigen Welt.",
+     "p": [
+      "Wörter: la canción, la letra (Liedtext), el cantante, el grupo, el concierto, el disco.",
+      "Stile: Salsa (Karibik), Flamenco (Andalusien), Tango (Río de la Plata), Reguetón, Cumbia.",
+      "Können mit saber: sé bailar salsa, no sé cantar. Erinnerungen: esta canción me recuerda a..."
+     ],
+     "q": "Welches Lied erinnert dich an einen besonderen Moment, und warum?",
+     "c": "Stell ein spanischsprachiges Lied vor: wer singt, welcher Stil und worum es im Text geht."
+    },
+    "es": {
+     "t": "Música y baile",
+     "g": "Habla de la música que te gusta y de los bailes del mundo hispano.",
+     "p": [
+      "Palabras: la canción, la letra, el cantante, el grupo, el concierto, el disco.",
+      "Estilos: salsa (Caribe), flamenco (Andalucía), tango (Río de la Plata), reguetón, cumbia.",
+      "Habilidades con saber: sé bailar salsa, no sé cantar. Recuerdos: esta canción me recuerda a..."
+     ],
+     "q": "¿Qué canción te recuerda un momento especial y por qué?",
+     "c": "Presenta una canción en español que te guste: quién la canta, qué estilo es y de qué habla la letra."
+    },
+    "fr": {
+     "t": "Musique et danse",
+     "g": "Parler de la musique que tu aimes et des danses du monde hispanique.",
+     "p": [
+      "Mots : la canción, la letra (paroles), el cantante, el grupo, el concierto, el disco.",
+      "Styles : salsa (Caraïbes), flamenco (Andalousie), tango (Río de la Plata), reguetón, cumbia.",
+      "Savoir-faire avec saber : sé bailar salsa, no sé cantar. Souvenirs : esta canción me recuerda a..."
+     ],
+     "q": "Quelle chanson te rappelle un moment spécial, et pourquoi ?",
+     "c": "Présente une chanson en espagnol que tu aimes : qui la chante, quel style et de quoi parlent les paroles."
+    },
+    "it": {
+     "t": "Musica e ballo",
+     "g": "Parli della musica che ami e dei balli del mondo ispanico.",
+     "p": [
+      "Parole: la canción, la letra (il testo), el cantante, el grupo, el concierto, el disco.",
+      "Stili: salsa (Caraibi), flamenco (Andalusia), tango (Río de la Plata), reguetón, cumbia.",
+      "Abilità con saber: sé bailar salsa, no sé cantar. Ricordi: esta canción me recuerda a..."
+     ],
+     "q": "Quale canzone ti ricorda un momento speciale, e perché?",
+     "c": "Presenta una canzone in spagnolo che ti piace: chi la canta, che stile è e di cosa parla il testo."
+    },
+    "pt": {
+     "t": "Música e dança",
+     "g": "Falas da música de que gostas e das danças do mundo hispânico.",
+     "p": [
+      "Palavras: la canción, la letra, el cantante, el grupo, el concierto, el disco.",
+      "Estilos: salsa (Caraíbas), flamenco (Andaluzia), tango (Río de la Plata), reguetón, cumbia.",
+      "Saber fazer: sé bailar salsa, no sé cantar. Memórias: esta canción me recuerda a..."
+     ],
+     "q": "Que canção te lembra um momento especial, e porquê?",
+     "c": "Apresenta uma canção em espanhol de que gostes: quem canta, que estilo é e de que fala a letra."
+    },
+    "pt_BR": {
+     "t": "Música e dança",
+     "g": "Fale da música que você ama e das danças do mundo hispânico.",
+     "p": [
+      "Palavras: la canción, la letra, el cantante, el grupo, el concierto, el disco.",
+      "Estilos: salsa (Caribe), flamenco (Andaluzia), tango (Río de la Plata), reguetón, cumbia.",
+      "Saber fazer: sé bailar salsa, no sé cantar. Lembranças: esta canción me recuerda a..."
+     ],
+     "q": "Que música te lembra um momento especial, e por quê?",
+     "c": "Apresente uma música em espanhol de que você gosta: quem canta, que estilo é e do que fala a letra."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la canción",
+      "ex": "Esta canción me recuerda a mi infancia."
+     },
+     {
+      "w": "la letra",
+      "ex": "No entiendo toda la letra, pero me encanta."
+     },
+     {
+      "w": "el concierto",
+      "ex": "El sábado vamos a un concierto de rock."
+     },
+     {
+      "w": "bailar salsa",
+      "ex": "Estoy aprendiendo a bailar salsa."
+     },
+     {
+      "w": "el flamenco",
+      "ex": "El flamenco nació en Andalucía."
+     },
+     {
+      "w": "el reguetón",
+      "ex": "El reguetón se escucha en todas partes."
+     }
+    ],
+    "gram": "Me recuerda a + nombre: esta canción me recuerda a mi madre. Saber + infinitivo para habilidades: sé bailar salsa, no sé tocar la guitarra."
+   }
+  },
+  {
+   "d": 163,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Books and reading",
+     "g": "Share books you enjoyed and talk about characters and plots.",
+     "p": [
+      "Words: la novela, el cuento, el autor, la autora, el personaje, el capítulo, el final.",
+      "Plot: trata de una familia..., el personaje principal es..., pasa en Colombia.",
+      "Now and before: estoy leyendo..., leí... el año pasado, me enganché desde la primera página."
+     ],
+     "q": "What book has stayed with you, and what is it about?",
+     "c": "Write a mini review of a book: title, author, what it is about, a character and your opinion."
+    },
+    "de": {
+     "t": "Bücher und Lesen",
+     "g": "Du erzählst von Büchern, die dir gefallen haben, ihren Figuren und ihrer Handlung.",
+     "p": [
+      "Wörter: la novela, el cuento, el autor, la autora, el personaje, el capítulo, el final.",
+      "Handlung: trata de una familia..., el personaje principal es..., pasa en Colombia.",
+      "Jetzt und früher: estoy leyendo..., leí... el año pasado, me enganché desde la primera página."
+     ],
+     "q": "Welches Buch ist dir im Gedächtnis geblieben, und worum geht es?",
+     "c": "Schreib eine Mini-Rezension: Titel, Autor, Inhalt, eine Figur und deine Meinung."
+    },
+    "es": {
+     "t": "Libros y lectura",
+     "g": "Comparte libros que te han gustado y habla de personajes y argumentos.",
+     "p": [
+      "Palabras: la novela, el cuento, el autor, la autora, el personaje, el capítulo, el final.",
+      "Argumento: trata de una familia..., el personaje principal es..., pasa en Colombia.",
+      "Ahora y antes: estoy leyendo..., leí... el año pasado, me enganché desde la primera página."
+     ],
+     "q": "¿Qué libro te ha marcado y de qué trata?",
+     "c": "Escribe una minirreseña de un libro: título, autor, de qué trata, un personaje y tu opinión."
+    },
+    "fr": {
+     "t": "Livres et lecture",
+     "g": "Parler de livres que tu as aimés, de leurs personnages et de leurs intrigues.",
+     "p": [
+      "Mots : la novela, el cuento, el autor, la autora, el personaje, el capítulo, el final.",
+      "Intrigue : trata de una familia..., el personaje principal es..., pasa en Colombia.",
+      "Maintenant et avant : estoy leyendo..., leí... el año pasado, me enganché desde la primera página."
+     ],
+     "q": "Quel livre t'a marqué, et de quoi parle-t-il ?",
+     "c": "Écris une mini-critique d'un livre : titre, auteur, sujet, un personnage et ton avis."
+    },
+    "it": {
+     "t": "Libri e lettura",
+     "g": "Parli dei libri che ti sono piaciuti, dei personaggi e delle trame.",
+     "p": [
+      "Parole: la novela, el cuento, el autor, la autora, el personaje, el capítulo, el final.",
+      "Trama: trata de una familia..., el personaje principal es..., pasa en Colombia.",
+      "Ora e prima: estoy leyendo..., leí... el año pasado, me enganché desde la primera página."
+     ],
+     "q": "Quale libro ti è rimasto dentro, e di cosa parla?",
+     "c": "Scrivi una mini recensione: titolo, autore, di cosa parla, un personaggio e la tua opinione."
+    },
+    "pt": {
+     "t": "Livros e leitura",
+     "g": "Partilhas livros de que gostaste e falas de personagens e enredos.",
+     "p": [
+      "Palavras: la novela, el cuento, el autor, la autora, el personaje, el capítulo, el final.",
+      "Enredo: trata de una familia..., el personaje principal es..., pasa en Colombia.",
+      "Agora e antes: estoy leyendo..., leí... el año pasado, me enganché desde la primera página."
+     ],
+     "q": "Que livro te marcou, e de que trata?",
+     "c": "Escreve uma mini crítica de um livro: título, autor, de que trata, uma personagem e a tua opinião."
+    },
+    "pt_BR": {
+     "t": "Livros e leitura",
+     "g": "Compartilhe livros de que você gostou e fale de personagens e enredos.",
+     "p": [
+      "Palavras: la novela, el cuento, el autor, la autora, el personaje, el capítulo, el final.",
+      "Enredo: trata de una familia..., el personaje principal es..., pasa en Colombia.",
+      "Agora e antes: estoy leyendo..., leí... el año pasado, me enganché desde la primera página."
+     ],
+     "q": "Que livro marcou você, e sobre o que é?",
+     "c": "Escreva uma mini resenha de um livro: título, autor, do que trata, um personagem e sua opinião."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la novela",
+      "ex": "Estoy leyendo una novela policiaca."
+     },
+     {
+      "w": "el autor, la autora",
+      "ex": "Isabel Allende es mi autora favorita."
+     },
+     {
+      "w": "el personaje",
+      "ex": "El personaje principal es una detective."
+     },
+     {
+      "w": "el capítulo",
+      "ex": "Leo un capítulo cada noche."
+     },
+     {
+      "w": "trata de",
+      "ex": "El libro trata de una familia en Chile."
+     },
+     {
+      "w": "engancharse",
+      "ex": "Me enganché al libro desde la primera página."
+     }
+    ],
+    "gram": "Tratar de + tema: el libro trata de la guerra. Estar + gerundio para lo que lees ahora: estoy leyendo una novela de García Márquez."
+   }
+  },
+  {
+   "d": 164,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Sports: rules and fans",
+     "g": "Talk about matches, results and being a fan.",
+     "p": [
+      "Match words: el partido, el equipo, el jugador, el árbitro, el estadio, la afición (the fans).",
+      "Results: ganar, perder, empatar, marcar un gol; ganamos dos a uno, empataron a cero.",
+      "Tell a match in the preterite: ¿Viste el partido? Sí, marcaron en el último minuto."
+     ],
+     "q": "Which sport do you like to watch or play, and which team do you support?",
+     "c": "Describe a memorable match in four sentences: who played, the result, the best moment and how you felt."
+    },
+    "de": {
+     "t": "Sport: Regeln und Fans",
+     "g": "Du sprichst über Spiele, Ergebnisse und das Fansein.",
+     "p": [
+      "Spielwörter: el partido, el equipo, el jugador, el árbitro, el estadio, la afición (die Fans).",
+      "Ergebnisse: ganar, perder, empatar, marcar un gol; ganamos dos a uno, empataron a cero.",
+      "Ein Spiel im Indefinido erzählen: ¿Viste el partido? Sí, marcaron en el último minuto."
+     ],
+     "q": "Welchen Sport schaust oder treibst du gern, und für welches Team bist du?",
+     "c": "Beschreib ein denkwürdiges Spiel in vier Sätzen: wer spielte, Ergebnis, bester Moment, dein Gefühl."
+    },
+    "es": {
+     "t": "Deportes: reglas y afición",
+     "g": "Habla de partidos, resultados y de ser aficionado.",
+     "p": [
+      "Palabras: el partido, el equipo, el jugador, el árbitro, el estadio, la afición.",
+      "Resultados: ganar, perder, empatar, marcar un gol; ganamos dos a uno, empataron a cero.",
+      "Cuenta un partido en indefinido: ¿Viste el partido? Sí, marcaron en el último minuto."
+     ],
+     "q": "¿Qué deporte te gusta ver o practicar y de qué equipo eres?",
+     "c": "Describe un partido memorable en cuatro frases: quién jugó, el resultado, el mejor momento y cómo te sentiste."
+    },
+    "fr": {
+     "t": "Sport : règles et supporters",
+     "g": "Parler de matchs, de résultats et de supporters.",
+     "p": [
+      "Mots : el partido, el equipo, el jugador, el árbitro, el estadio, la afición (les supporters).",
+      "Résultats : ganar, perder, empatar, marcar un gol ; ganamos dos a uno, empataron a cero.",
+      "Raconter un match au passé : ¿Viste el partido? Sí, marcaron en el último minuto."
+     ],
+     "q": "Quel sport aimes-tu regarder ou pratiquer, et quelle équipe soutiens-tu ?",
+     "c": "Décris un match mémorable en quatre phrases : qui a joué, le score, le meilleur moment et ton ressenti."
+    },
+    "it": {
+     "t": "Sport: regole e tifosi",
+     "g": "Parli di partite, risultati e tifo.",
+     "p": [
+      "Parole: el partido, el equipo, el jugador, el árbitro, el estadio, la afición (i tifosi).",
+      "Risultati: ganar, perder, empatar, marcar un gol; ganamos dos a uno, empataron a cero.",
+      "Racconta una partita al passato: ¿Viste el partido? Sí, marcaron en el último minuto."
+     ],
+     "q": "Quale sport ti piace guardare o praticare, e per quale squadra tifi?",
+     "c": "Descrivi una partita memorabile in quattro frasi: chi ha giocato, il risultato, il momento migliore e come ti sei sentito."
+    },
+    "pt": {
+     "t": "Desporto: regras e adeptos",
+     "g": "Falas de jogos, resultados e de ser adepto.",
+     "p": [
+      "Palavras: el partido, el equipo, el jugador, el árbitro, el estadio, la afición (os adeptos).",
+      "Resultados: ganar, perder, empatar, marcar un gol; ganamos dos a uno, empataron a cero.",
+      "Contar um jogo no passado: ¿Viste el partido? Sí, marcaron en el último minuto."
+     ],
+     "q": "Que desporto gostas de ver ou praticar, e de que equipa és?",
+     "c": "Descreve um jogo memorável em quatro frases: quem jogou, o resultado, o melhor momento e o que sentiste."
+    },
+    "pt_BR": {
+     "t": "Esportes: regras e torcida",
+     "g": "Fale de jogos, resultados e de torcer por um time.",
+     "p": [
+      "Palavras: el partido, el equipo, el jugador, el árbitro, el estadio, la afición (a torcida).",
+      "Resultados: ganar, perder, empatar, marcar un gol; ganamos dos a uno, empataron a cero.",
+      "Conte um jogo no passado: ¿Viste el partido? Sí, marcaron en el último minuto."
+     ],
+     "q": "Que esporte você gosta de ver ou praticar, e para que time você torce?",
+     "c": "Descreva um jogo memorável em quatro frases: quem jogou, o placar, o melhor momento e como você se sentiu."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "marcar un gol",
+      "ex": "Messi marcó un gol increíble."
+     },
+     {
+      "w": "ganar",
+      "ex": "Ganamos el partido dos a uno."
+     },
+     {
+      "w": "perder",
+      "ex": "Mi equipo perdió en el último minuto."
+     },
+     {
+      "w": "empatar",
+      "ex": "Empataron a cero."
+     },
+     {
+      "w": "el partido",
+      "ex": "¿Viste el partido de anoche?"
+     },
+     {
+      "w": "la afición",
+      "ex": "La afición del Betis es muy fiel."
+     }
+    ],
+    "gram": "Resultados: ganar dos a uno, perder tres a cero, empatar a uno. Indefinido para contar un partido: marcó, ganaron, perdimos."
+   }
+  },
+  {
+   "d": 165,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Reciprocal actions: nos vemos",
+     "g": "Describe actions people do to each other.",
+     "p": [
+      "Plural verb + nos, os, se = each other: nos llamamos, os veis, se ayudan.",
+      "Past stories: nos conocimos en 2019, nos escribimos durante meses.",
+      "Useful: llevarse bien / mal (get along), nos vemos (see you), se quieren (they love each other)."
+     ],
+     "q": "How did you meet your best friend, and how often do you see each other?",
+     "c": "Write the story of two friends or a couple in five sentences with reciprocal verbs."
+    },
+    "de": {
+     "t": "Wechselseitige Handlungen: nos vemos",
+     "g": "Du beschreibst, was Menschen miteinander oder füreinander tun.",
+     "p": [
+      "Pluralverb + nos, os, se = einander: nos llamamos, os veis, se ayudan.",
+      "Geschichten: nos conocimos en 2019, nos escribimos durante meses.",
+      "Nützlich: llevarse bien / mal (sich verstehen), nos vemos (bis dann), se quieren (sie lieben sich)."
+     ],
+     "q": "Wie hast du deinen besten Freund kennengelernt, und wie oft seht ihr euch?",
+     "c": "Schreib die Geschichte zweier Freunde oder eines Paares in fünf Sätzen mit reziproken Verben."
+    },
+    "es": {
+     "t": "Acciones recíprocas: nos vemos",
+     "g": "Describe acciones que las personas se hacen mutuamente.",
+     "p": [
+      "Verbo en plural + nos, os, se: nos llamamos, os veis, se ayudan.",
+      "Historias en pasado: nos conocimos en 2019, nos escribimos durante meses.",
+      "Útiles: llevarse bien o mal, nos vemos, se quieren."
+     ],
+     "q": "¿Cómo conociste a tu mejor amigo y cada cuánto os veis?",
+     "c": "Escribe en cinco frases la historia de dos amigos o una pareja con verbos recíprocos."
+    },
+    "fr": {
+     "t": "Actions réciproques : nos vemos",
+     "g": "Décrire des actions que les gens font l'un pour l'autre.",
+     "p": [
+      "Verbe au pluriel + nos, os, se = l'un l'autre : nos llamamos, os veis, se ayudan.",
+      "Récits au passé : nos conocimos en 2019, nos escribimos durante meses.",
+      "Utile : llevarse bien / mal (s'entendre), nos vemos (à plus), se quieren (ils s'aiment)."
+     ],
+     "q": "Comment as-tu rencontré ton meilleur ami, et à quelle fréquence vous voyez-vous ?",
+     "c": "Écris l'histoire de deux amis ou d'un couple en cinq phrases avec des verbes réciproques."
+    },
+    "it": {
+     "t": "Azioni reciproche: nos vemos",
+     "g": "Descrivi azioni che le persone fanno l'una all'altra.",
+     "p": [
+      "Verbo al plurale + nos, os, se = l'un l'altro: nos llamamos, os veis, se ayudan.",
+      "Racconti al passato: nos conocimos en 2019, nos escribimos durante meses.",
+      "Utili: llevarse bien / mal (andare d'accordo), nos vemos (ci vediamo), se quieren (si vogliono bene)."
+     ],
+     "q": "Come hai conosciuto il tuo migliore amico e quanto spesso vi vedete?",
+     "c": "Scrivi la storia di due amici o di una coppia in cinque frasi con verbi reciproci."
+    },
+    "pt": {
+     "t": "Ações recíprocas: nos vemos",
+     "g": "Descreves ações que as pessoas fazem uma à outra.",
+     "p": [
+      "Verbo no plural + nos, os, se = um ao outro: nos llamamos, os veis, se ayudan.",
+      "Histórias no passado: nos conocimos en 2019, nos escribimos durante meses.",
+      "Úteis: llevarse bien / mal (dar-se bem), nos vemos (até logo), se quieren (gostam um do outro)."
+     ],
+     "q": "Como conheceste o teu melhor amigo e com que frequência se veem?",
+     "c": "Escreve a história de dois amigos ou de um casal em cinco frases com verbos recíprocos."
+    },
+    "pt_BR": {
+     "t": "Ações recíprocas: nos vemos",
+     "g": "Descreva ações que as pessoas fazem uma com a outra.",
+     "p": [
+      "Verbo no plural + nos, os, se = um ao outro: nos llamamos, os veis, se ayudan.",
+      "Histórias no passado: nos conocimos en 2019, nos escribimos durante meses.",
+      "Úteis: llevarse bien / mal (se dar bem), nos vemos (até mais), se quieren (se amam)."
+     ],
+     "q": "Como você conheceu seu melhor amigo e com que frequência vocês se veem?",
+     "c": "Escreva a história de dois amigos ou de um casal em cinco frases com verbos recíprocos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "nos conocimos",
+      "ex": "Nos conocimos en la universidad."
+     },
+     {
+      "w": "se ayudan",
+      "ex": "Mis hermanos se ayudan mucho."
+     },
+     {
+      "w": "nos escribimos",
+      "ex": "Nos escribimos todos los días."
+     },
+     {
+      "w": "se quieren",
+      "ex": "Mis abuelos se quieren mucho."
+     },
+     {
+      "w": "nos vemos",
+      "ex": "Nos vemos el viernes, ¿vale?"
+     },
+     {
+      "w": "se llevan bien",
+      "ex": "Mi madre y mi suegra se llevan muy bien."
+     }
+    ],
+    "gram": "Acción recíproca con nos, os, se + verbo en plural: nos llamamos, os veis, se abrazan. Significa el uno al otro."
+   }
+  },
+  {
+   "d": 166,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Large numbers and percentages",
+     "g": "Read big numbers, fractions and percentages aloud.",
+     "p": [
+      "Mil has no un and no plural: mil, dos mil, diez mil. Millón does: un millón, dos millones de.",
+      "Watch out: cien euros but ciento veinte; doscientas personas agrees with a feminine noun.",
+      "Parts: la mitad, un tercio, un cuarto, el diez por ciento, la mayoría de."
+     ],
+     "q": "How many people live in your city or country? Say the number in Spanish.",
+     "c": "Find three statistics about your country and say them aloud in Spanish with a number, a fraction and a percentage."
+    },
+    "de": {
+     "t": "Große Zahlen und Prozente",
+     "g": "Du liest große Zahlen, Brüche und Prozente laut vor.",
+     "p": [
+      "Mil ohne un und ohne Plural: mil, dos mil, diez mil. Millón schon: un millón, dos millones de.",
+      "Achtung: cien euros, aber ciento veinte; doscientas personas passt sich dem Femininum an.",
+      "Anteile: la mitad, un tercio, un cuarto, el diez por ciento, la mayoría de."
+     ],
+     "q": "Wie viele Menschen leben in deiner Stadt oder deinem Land? Sag die Zahl auf Spanisch.",
+     "c": "Such drei Statistiken über dein Land und sag sie laut auf Spanisch: eine Zahl, einen Bruch und eine Prozentzahl."
+    },
+    "es": {
+     "t": "Números grandes y porcentajes",
+     "g": "Lee en voz alta números grandes, fracciones y porcentajes.",
+     "p": [
+      "Mil no lleva un ni plural: mil, dos mil, diez mil. Millón sí: un millón, dos millones de.",
+      "Ojo: cien euros pero ciento veinte; doscientas personas concuerda con el femenino.",
+      "Partes: la mitad, un tercio, un cuarto, el diez por ciento, la mayoría de."
+     ],
+     "q": "¿Cuántas personas viven en tu ciudad o en tu país? Di el número en español.",
+     "c": "Busca tres datos de tu país y dilos en voz alta: un número, una fracción y un porcentaje."
+    },
+    "fr": {
+     "t": "Grands nombres et pourcentages",
+     "g": "Lire à voix haute de grands nombres, des fractions et des pourcentages.",
+     "p": [
+      "Mil sans un ni pluriel : mil, dos mil, diez mil. Millón, si : un millón, dos millones de.",
+      "Attention : cien euros mais ciento veinte ; doscientas personas s'accorde au féminin.",
+      "Parts : la mitad, un tercio, un cuarto, el diez por ciento, la mayoría de."
+     ],
+     "q": "Combien de personnes vivent dans ta ville ou ton pays ? Dis le nombre en espagnol.",
+     "c": "Trouve trois statistiques sur ton pays et dis-les à voix haute : un nombre, une fraction et un pourcentage."
+    },
+    "it": {
+     "t": "Numeri grandi e percentuali",
+     "g": "Leggi ad alta voce numeri grandi, frazioni e percentuali.",
+     "p": [
+      "Mil senza un e senza plurale: mil, dos mil, diez mil. Millón sì: un millón, dos millones de.",
+      "Attenzione: cien euros ma ciento veinte; doscientas personas si accorda al femminile.",
+      "Parti: la mitad, un tercio, un cuarto, el diez por ciento, la mayoría de."
+     ],
+     "q": "Quante persone vivono nella tua città o nel tuo paese? Di' il numero in spagnolo.",
+     "c": "Trova tre statistiche sul tuo paese e dille ad alta voce: un numero, una frazione e una percentuale."
+    },
+    "pt": {
+     "t": "Números grandes e percentagens",
+     "g": "Lês em voz alta números grandes, frações e percentagens.",
+     "p": [
+      "Mil sem un e sem plural: mil, dos mil, diez mil. Millón sim: un millón, dos millones de.",
+      "Atenção: cien euros mas ciento veinte; doscientas personas concorda com o feminino.",
+      "Partes: la mitad, un tercio, un cuarto, el diez por ciento, la mayoría de."
+     ],
+     "q": "Quantas pessoas vivem na tua cidade ou no teu país? Diz o número em espanhol.",
+     "c": "Procura três dados sobre o teu país e di-los em voz alta: um número, uma fração e uma percentagem."
+    },
+    "pt_BR": {
+     "t": "Números grandes e porcentagens",
+     "g": "Leia em voz alta números grandes, frações e porcentagens.",
+     "p": [
+      "Mil sem un e sem plural: mil, dos mil, diez mil. Millón sim: un millón, dos millones de.",
+      "Atenção: cien euros mas ciento veinte; doscientas personas concorda com o feminino.",
+      "Partes: la mitad, un tercio, un cuarto, el diez por ciento, la mayoría de."
+     ],
+     "q": "Quantas pessoas moram na sua cidade ou no seu país? Diga o número em espanhol.",
+     "c": "Procure três dados sobre o seu país e diga em voz alta: um número, uma fração e uma porcentagem."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "mil",
+      "ex": "La ciudad tiene trescientos mil habitantes."
+     },
+     {
+      "w": "un millón de",
+      "ex": "España tiene unos cuarenta y ocho millones de habitantes."
+     },
+     {
+      "w": "la mitad",
+      "ex": "La mitad de la clase habla inglés."
+     },
+     {
+      "w": "un cuarto",
+      "ex": "Un cuarto de los estudiantes vive fuera."
+     },
+     {
+      "w": "por ciento",
+      "ex": "El veinte por ciento de la gente trabaja desde casa."
+     },
+     {
+      "w": "la mayoría",
+      "ex": "La mayoría de mis amigos tiene perro."
+     }
+    ],
+    "gram": "Mil no lleva un ni plural: mil, dos mil. Millón sí: un millón de personas, dos millones de euros. Cien pero ciento veinte."
+   }
+  },
+  {
+   "d": 167,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Phone calls: leaving a message",
+     "g": "Handle a phone call: ask for someone, leave a message and say goodbye.",
+     "p": [
+      "Answering: ¿Diga? or ¿Dígame? in Spain, ¿Aló? or ¿Bueno? in parts of Latin America.",
+      "On the phone say soy Marta, not estoy Marta. Ask: ¿Está Carmen?, ¿De parte de quién?",
+      "Messages: ahora no está, ¿puedo dejar un mensaje?, le llamo más tarde, dígale que me llame."
+     ],
+     "q": "Do you prefer calling or sending messages? Why?",
+     "c": "Write a phone dialogue: you call a company, the person is out, and you leave a message with your number."
+    },
+    "de": {
+     "t": "Telefonieren: eine Nachricht hinterlassen",
+     "g": "Du führst ein Telefonat: nach jemandem fragen, Nachricht hinterlassen, verabschieden.",
+     "p": [
+      "Melden: ¿Diga? oder ¿Dígame? in Spanien, ¿Aló? oder ¿Bueno? in Teilen Lateinamerikas.",
+      "Am Telefon sagt man soy Marta, nicht estoy Marta. Fragen: ¿Está Carmen?, ¿De parte de quién?",
+      "Nachrichten: ahora no está, ¿puedo dejar un mensaje?, le llamo más tarde, dígale que me llame."
+     ],
+     "q": "Telefonierst du lieber oder schreibst du Nachrichten? Warum?",
+     "c": "Schreib ein Telefonat: Du rufst eine Firma an, die Person ist nicht da, du hinterlässt Nachricht und Nummer."
+    },
+    "es": {
+     "t": "Llamadas: dejar un mensaje",
+     "g": "Gestiona una llamada: pregunta por alguien, deja un mensaje y despídete.",
+     "p": [
+      "Para contestar: ¿Diga? o ¿Dígame? en España; ¿Aló? o ¿Bueno? en partes de Latinoamérica.",
+      "Al teléfono se dice soy Marta, no estoy Marta. Pregunta: ¿Está Carmen?, ¿De parte de quién?",
+      "Mensajes: ahora no está, ¿puedo dejar un mensaje?, le llamo más tarde, dígale que me llame."
+     ],
+     "q": "¿Prefieres llamar o mandar mensajes? ¿Por qué?",
+     "c": "Escribe un diálogo: llamas a una empresa, la persona no está y dejas un mensaje con tu número."
+    },
+    "fr": {
+     "t": "Au téléphone : laisser un message",
+     "g": "Gérer un appel : demander quelqu'un, laisser un message et dire au revoir.",
+     "p": [
+      "Répondre : ¿Diga? ou ¿Dígame? en Espagne, ¿Aló? ou ¿Bueno? dans certains pays d'Amérique latine.",
+      "Au téléphone on dit soy Marta, pas estoy Marta. Demander : ¿Está Carmen?, ¿De parte de quién?",
+      "Messages : ahora no está, ¿puedo dejar un mensaje?, le llamo más tarde, dígale que me llame."
+     ],
+     "q": "Préfères-tu appeler ou envoyer des messages ? Pourquoi ?",
+     "c": "Écris un dialogue : tu appelles une entreprise, la personne est absente et tu laisses un message avec ton numéro."
+    },
+    "it": {
+     "t": "Al telefono: lasciare un messaggio",
+     "g": "Gestisci una telefonata: chiedi di qualcuno, lasci un messaggio e saluti.",
+     "p": [
+      "Rispondere: ¿Diga? o ¿Dígame? in Spagna, ¿Aló? o ¿Bueno? in parte dell'America Latina.",
+      "Al telefono si dice soy Marta, non estoy Marta. Chiedere: ¿Está Carmen?, ¿De parte de quién?",
+      "Messaggi: ahora no está, ¿puedo dejar un mensaje?, le llamo más tarde, dígale que me llame."
+     ],
+     "q": "Preferisci telefonare o mandare messaggi? Perché?",
+     "c": "Scrivi un dialogo: chiami un'azienda, la persona non c'è e lasci un messaggio con il tuo numero."
+    },
+    "pt": {
+     "t": "Telefonemas: deixar uma mensagem",
+     "g": "Geres uma chamada: perguntas por alguém, deixas mensagem e despedes-te.",
+     "p": [
+      "Atender: ¿Diga? ou ¿Dígame? em Espanha, ¿Aló? ou ¿Bueno? em partes da América Latina.",
+      "Ao telefone diz-se soy Marta, não estoy Marta. Perguntar: ¿Está Carmen?, ¿De parte de quién?",
+      "Mensagens: ahora no está, ¿puedo dejar un mensaje?, le llamo más tarde, dígale que me llame."
+     ],
+     "q": "Preferes telefonar ou mandar mensagens? Porquê?",
+     "c": "Escreve um diálogo: ligas para uma empresa, a pessoa não está e deixas uma mensagem com o teu número."
+    },
+    "pt_BR": {
+     "t": "Ligações: deixar um recado",
+     "g": "Lide com uma ligação: pergunte por alguém, deixe um recado e se despeça.",
+     "p": [
+      "Atender: ¿Diga? ou ¿Dígame? na Espanha, ¿Aló? ou ¿Bueno? em partes da América Latina.",
+      "No telefone se diz soy Marta, não estoy Marta. Perguntar: ¿Está Carmen?, ¿De parte de quién?",
+      "Recados: ahora no está, ¿puedo dejar un mensaje?, le llamo más tarde, dígale que me llame."
+     ],
+     "q": "Você prefere ligar ou mandar mensagens? Por quê?",
+     "c": "Escreva um diálogo: você liga para uma empresa, a pessoa não está e você deixa um recado com seu número."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "¿diga? / ¿dígame?",
+      "ex": "¿Dígame? Hola, ¿está Carmen?"
+     },
+     {
+      "w": "¿de parte de quién?",
+      "ex": "¿De parte de quién, por favor?"
+     },
+     {
+      "w": "ahora no está",
+      "ex": "Lo siento, ahora no está."
+     },
+     {
+      "w": "¿puedo dejar un mensaje?",
+      "ex": "¿Puedo dejarle un mensaje?"
+     },
+     {
+      "w": "le llamo más tarde",
+      "ex": "Vale, le llamo más tarde."
+     },
+     {
+      "w": "se ha cortado",
+      "ex": "Perdona, se ha cortado la llamada."
+     }
+    ],
+    "gram": "Al teléfono: soy + nombre (no estoy): Hola, soy Marta. Usted con le: le llamo, ¿le digo algo? Tú con te: te llamo luego."
+   }
+  },
+  {
+   "d": 168,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Complaining politely",
+     "g": "Make a complaint firmly but politely in a shop, restaurant or hotel.",
+     "p": [
+      "Start softly: disculpe, perdone, quería poner una reclamación.",
+      "Explain: hay un problema con..., no es lo que pedí, llevo media hora esperando.",
+      "Ask for action: ¿podría hablar con el encargado?, me gustaría un reembolso. In Spain shops have una hoja de reclamaciones."
+     ],
+     "q": "When did you last complain about something, and how did it go?",
+     "c": "Write a polite complaint in five sentences about a cold meal at a restaurant."
+    },
+    "de": {
+     "t": "Höflich reklamieren",
+     "g": "Du beschwerst dich bestimmt, aber höflich in Laden, Restaurant oder Hotel.",
+     "p": [
+      "Sanft beginnen: disculpe, perdone, quería poner una reclamación.",
+      "Erklären: hay un problema con..., no es lo que pedí, llevo media hora esperando.",
+      "Lösung fordern: ¿podría hablar con el encargado?, me gustaría un reembolso. In Spanien gibt es una hoja de reclamaciones."
+     ],
+     "q": "Wann hast du dich zuletzt beschwert, und wie lief es?",
+     "c": "Schreib eine höfliche Beschwerde in fünf Sätzen über ein kaltes Essen im Restaurant."
+    },
+    "es": {
+     "t": "Quejarse con educación",
+     "g": "Presenta una queja con firmeza y educación en una tienda, un restaurante o un hotel.",
+     "p": [
+      "Empieza con suavidad: disculpe, perdone, quería poner una reclamación.",
+      "Explica: hay un problema con..., no es lo que pedí, llevo media hora esperando.",
+      "Pide una solución: ¿podría hablar con el encargado?, me gustaría un reembolso, la hoja de reclamaciones."
+     ],
+     "q": "¿Cuándo fue la última vez que te quejaste de algo y cómo salió?",
+     "c": "Escribe una queja educada de cinco frases sobre una comida fría en un restaurante."
+    },
+    "fr": {
+     "t": "Se plaindre poliment",
+     "g": "Faire une réclamation ferme mais polie en magasin, au restaurant ou à l'hôtel.",
+     "p": [
+      "Commencer en douceur : disculpe, perdone, quería poner una reclamación.",
+      "Expliquer : hay un problema con..., no es lo que pedí, llevo media hora esperando.",
+      "Demander une action : ¿podría hablar con el encargado?, me gustaría un reembolso. En Espagne existe la hoja de reclamaciones."
+     ],
+     "q": "Quand t'es-tu plaint pour la dernière fois, et comment ça s'est passé ?",
+     "c": "Écris une réclamation polie en cinq phrases à propos d'un plat froid au restaurant."
+    },
+    "it": {
+     "t": "Lamentarsi con garbo",
+     "g": "Fai un reclamo deciso ma cortese in negozio, al ristorante o in hotel.",
+     "p": [
+      "Inizia con calma: disculpe, perdone, quería poner una reclamación.",
+      "Spiega: hay un problema con..., no es lo que pedí, llevo media hora esperando.",
+      "Chiedi una soluzione: ¿podría hablar con el encargado?, me gustaría un reembolso. In Spagna c'è la hoja de reclamaciones."
+     ],
+     "q": "Quando ti sei lamentato l'ultima volta, e com'è andata?",
+     "c": "Scrivi un reclamo cortese di cinque frasi per un piatto freddo al ristorante."
+    },
+    "pt": {
+     "t": "Reclamar com educação",
+     "g": "Fazes uma reclamação firme mas educada numa loja, restaurante ou hotel.",
+     "p": [
+      "Começa com suavidade: disculpe, perdone, quería poner una reclamación.",
+      "Explica: hay un problema con..., no es lo que pedí, llevo media hora esperando.",
+      "Pede uma solução: ¿podría hablar con el encargado?, me gustaría un reembolso. Em Espanha há la hoja de reclamaciones."
+     ],
+     "q": "Quando foi a última vez que reclamaste de algo, e como correu?",
+     "c": "Escreve uma reclamação educada em cinco frases sobre uma refeição fria num restaurante."
+    },
+    "pt_BR": {
+     "t": "Reclamar com educação",
+     "g": "Faça uma reclamação firme mas educada numa loja, restaurante ou hotel.",
+     "p": [
+      "Comece com suavidade: disculpe, perdone, quería poner una reclamación.",
+      "Explique: hay un problema con..., no es lo que pedí, llevo media hora esperando.",
+      "Peça uma solução: ¿podría hablar con el encargado?, me gustaría un reembolso. Na Espanha existe la hoja de reclamaciones."
+     ],
+     "q": "Quando foi a última vez que você reclamou de algo, e como foi?",
+     "c": "Escreva uma reclamação educada em cinco frases sobre uma comida fria num restaurante."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "quería poner una reclamación",
+      "ex": "Quería poner una reclamación, por favor."
+     },
+     {
+      "w": "hay un problema con",
+      "ex": "Hay un problema con mi pedido."
+     },
+     {
+      "w": "el encargado, la encargada",
+      "ex": "¿Podría hablar con el encargado?"
+     },
+     {
+      "w": "la hoja de reclamaciones",
+      "ex": "¿Me da la hoja de reclamaciones?"
+     },
+     {
+      "w": "no es lo que pedí",
+      "ex": "Perdone, esto no es lo que pedí."
+     },
+     {
+      "w": "el reembolso",
+      "ex": "Me gustaría pedir un reembolso."
+     }
+    ],
+    "gram": "Quejarse con cortesía: quería + infinitivo, ¿podría + infinitivo?, me gustaría + infinitivo. Disculpe o perdone para empezar."
+   }
+  },
+  {
+   "d": 169,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Apologising and responding",
+     "g": "Say sorry in the right way and accept other people's apologies.",
+     "p": [
+      "Apologise: lo siento mucho, perdona (tú) / perdone (usted), te pido perdón, ha sido sin querer.",
+      "Say why: siento llegar tarde, lo siento por el ruido.",
+      "Accept: no pasa nada, no te preocupes, tranquilo, no es culpa tuya."
+     ],
+     "q": "When was the last time you had to apologise, and what did you say?",
+     "c": "Write three mini dialogues: someone apologises for being late, for a broken glass and for forgetting a birthday."
+    },
+    "de": {
+     "t": "Sich entschuldigen und reagieren",
+     "g": "Du entschuldigst dich richtig und nimmst Entschuldigungen an.",
+     "p": [
+      "Entschuldigen: lo siento mucho, perdona (tú) / perdone (usted), te pido perdón, ha sido sin querer.",
+      "Den Grund nennen: siento llegar tarde, lo siento por el ruido.",
+      "Annehmen: no pasa nada, no te preocupes, tranquilo, no es culpa tuya."
+     ],
+     "q": "Wann musstest du dich zuletzt entschuldigen, und was hast du gesagt?",
+     "c": "Schreib drei Mini-Dialoge: Entschuldigung fürs Zuspätkommen, ein kaputtes Glas und einen vergessenen Geburtstag."
+    },
+    "es": {
+     "t": "Pedir perdón y responder",
+     "g": "Pide perdón de forma adecuada y acepta las disculpas de otros.",
+     "p": [
+      "Disculparse: lo siento mucho, perdona (tú) o perdone (usted), te pido perdón, ha sido sin querer.",
+      "Di el motivo: siento llegar tarde, lo siento por el ruido.",
+      "Aceptar: no pasa nada, no te preocupes, tranquilo, no es culpa tuya."
+     ],
+     "q": "¿Cuándo fue la última vez que tuviste que pedir perdón y qué dijiste?",
+     "c": "Escribe tres minidiálogos: alguien pide perdón por llegar tarde, por romper un vaso y por olvidar un cumpleaños."
+    },
+    "fr": {
+     "t": "S'excuser et répondre",
+     "g": "Présenter des excuses correctement et accepter celles des autres.",
+     "p": [
+      "S'excuser : lo siento mucho, perdona (tú) / perdone (usted), te pido perdón, ha sido sin querer.",
+      "Donner la raison : siento llegar tarde, lo siento por el ruido.",
+      "Accepter : no pasa nada, no te preocupes, tranquilo, no es culpa tuya."
+     ],
+     "q": "Quand as-tu dû t'excuser pour la dernière fois, et qu'as-tu dit ?",
+     "c": "Écris trois mini-dialogues : excuses pour un retard, un verre cassé et un anniversaire oublié."
+    },
+    "it": {
+     "t": "Chiedere scusa e rispondere",
+     "g": "Chiedi scusa nel modo giusto e accetti le scuse degli altri.",
+     "p": [
+      "Scusarsi: lo siento mucho, perdona (tú) / perdone (usted), te pido perdón, ha sido sin querer.",
+      "Dire il motivo: siento llegar tarde, lo siento por el ruido.",
+      "Accettare: no pasa nada, no te preocupes, tranquilo, no es culpa tuya."
+     ],
+     "q": "Quando hai dovuto chiedere scusa l'ultima volta, e cosa hai detto?",
+     "c": "Scrivi tre mini dialoghi: scuse per un ritardo, per un bicchiere rotto e per un compleanno dimenticato."
+    },
+    "pt": {
+     "t": "Pedir desculpa e responder",
+     "g": "Pedes desculpa da forma certa e aceitas as desculpas dos outros.",
+     "p": [
+      "Desculpar-se: lo siento mucho, perdona (tú) / perdone (usted), te pido perdón, ha sido sin querer.",
+      "Dizer o motivo: siento llegar tarde, lo siento por el ruido.",
+      "Aceitar: no pasa nada, no te preocupes, tranquilo, no es culpa tuya."
+     ],
+     "q": "Quando foi a última vez que tiveste de pedir desculpa, e o que disseste?",
+     "c": "Escreve três minidiálogos: desculpas por chegar tarde, por partir um copo e por esquecer um aniversário."
+    },
+    "pt_BR": {
+     "t": "Pedir desculpas e responder",
+     "g": "Peça desculpas do jeito certo e aceite as desculpas dos outros.",
+     "p": [
+      "Desculpar-se: lo siento mucho, perdona (tú) / perdone (usted), te pido perdón, ha sido sin querer.",
+      "Dizer o motivo: siento llegar tarde, lo siento por el ruido.",
+      "Aceitar: no pasa nada, no te preocupes, tranquilo, no es culpa tuya."
+     ],
+     "q": "Quando foi a última vez que você teve que pedir desculpas, e o que disse?",
+     "c": "Escreva três minidiálogos: desculpas por chegar atrasado, por quebrar um copo e por esquecer um aniversário."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "lo siento mucho",
+      "ex": "Lo siento mucho, no quería molestarte."
+     },
+     {
+      "w": "perdona / perdone",
+      "ex": "Perdona, ¿te he hecho daño?"
+     },
+     {
+      "w": "no pasa nada",
+      "ex": "¿Llego tarde? No pasa nada."
+     },
+     {
+      "w": "no te preocupes",
+      "ex": "No te preocupes, no es culpa tuya."
+     },
+     {
+      "w": "ha sido sin querer",
+      "ex": "Perdón, ha sido sin querer."
+     },
+     {
+      "w": "te pido perdón",
+      "ex": "Te pido perdón por lo de ayer."
+     }
+    ],
+    "gram": "Lo siento + por + nombre o infinitivo: siento llegar tarde, lo siento por el retraso. Perdona (tú) y perdone (usted)."
+   }
+  },
+  {
+   "d": 170,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Inventions and discoveries",
+     "g": "Talk about famous inventions and discoveries with the preterite.",
+     "p": [
+      "Ask and answer: ¿Quién inventó...? Lo inventó... en 1876.",
+      "Without saying who: se inventó en España, se descubrió por casualidad.",
+      "Dates: en 1928, en el siglo XX (veinte), hace más de cien años. Fun fact: la fregona (mop) is Spanish."
+     ],
+     "q": "Which invention could you not live without, and who invented it?",
+     "c": "Write four facts about inventions or discoveries, two with inventó or descubrió and two with se."
+    },
+    "de": {
+     "t": "Erfindungen und Entdeckungen",
+     "g": "Du sprichst mit dem Indefinido über berühmte Erfindungen und Entdeckungen.",
+     "p": [
+      "Fragen und antworten: ¿Quién inventó...? Lo inventó... en 1876.",
+      "Ohne Urheber: se inventó en España, se descubrió por casualidad.",
+      "Daten: en 1928, en el siglo XX (veinte), hace más de cien años. Fun Fact: la fregona (Wischmopp) ist spanisch."
+     ],
+     "q": "Auf welche Erfindung könntest du nicht verzichten, und wer hat sie erfunden?",
+     "c": "Schreib vier Fakten über Erfindungen oder Entdeckungen, zwei mit inventó oder descubrió, zwei mit se."
+    },
+    "es": {
+     "t": "Inventos y descubrimientos",
+     "g": "Habla de inventos y descubrimientos famosos con el indefinido.",
+     "p": [
+      "Pregunta y responde: ¿Quién inventó...? Lo inventó... en 1876.",
+      "Sin decir quién: se inventó en España, se descubrió por casualidad.",
+      "Fechas: en 1928, en el siglo XX, hace más de cien años. Curiosidad: la fregona es un invento español."
+     ],
+     "q": "¿Sin qué invento no podrías vivir y quién lo inventó?",
+     "c": "Escribe cuatro datos sobre inventos o descubrimientos, dos con inventó o descubrió y dos con se."
+    },
+    "fr": {
+     "t": "Inventions et découvertes",
+     "g": "Parler d'inventions et de découvertes célèbres au passé (indefinido).",
+     "p": [
+      "Demander et répondre : ¿Quién inventó...? Lo inventó... en 1876.",
+      "Sans dire qui : se inventó en España, se descubrió por casualidad.",
+      "Dates : en 1928, en el siglo XX (veinte), hace más de cien años. Anecdote : la fregona (serpillière à manche) est espagnole."
+     ],
+     "q": "Sans quelle invention ne pourrais-tu pas vivre, et qui l'a inventée ?",
+     "c": "Écris quatre faits sur des inventions, deux avec inventó ou descubrió et deux avec se."
+    },
+    "it": {
+     "t": "Invenzioni e scoperte",
+     "g": "Parli di invenzioni e scoperte famose con il passato remoto spagnolo.",
+     "p": [
+      "Chiedere e rispondere: ¿Quién inventó...? Lo inventó... en 1876.",
+      "Senza dire chi: se inventó en España, se descubrió por casualidad.",
+      "Date: en 1928, en el siglo XX (veinte), hace más de cien años. Curiosità: la fregona (il mocio) è spagnola."
+     ],
+     "q": "Senza quale invenzione non potresti vivere, e chi l'ha inventata?",
+     "c": "Scrivi quattro fatti su invenzioni o scoperte, due con inventó o descubrió e due con se."
+    },
+    "pt": {
+     "t": "Invenções e descobertas",
+     "g": "Falas de invenções e descobertas famosas com o pretérito indefinido.",
+     "p": [
+      "Perguntar e responder: ¿Quién inventó...? Lo inventó... en 1876.",
+      "Sem dizer quem: se inventó en España, se descubrió por casualidad.",
+      "Datas: en 1928, en el siglo XX (veinte), hace más de cien años. Curiosidade: la fregona (esfregona) é espanhola."
+     ],
+     "q": "Sem que invenção não conseguirias viver, e quem a inventou?",
+     "c": "Escreve quatro factos sobre invenções ou descobertas, dois com inventó ou descubrió e dois com se."
+    },
+    "pt_BR": {
+     "t": "Invenções e descobertas",
+     "g": "Fale de invenções e descobertas famosas com o pretérito indefinido.",
+     "p": [
+      "Perguntar e responder: ¿Quién inventó...? Lo inventó... en 1876.",
+      "Sem dizer quem: se inventó en España, se descubrió por casualidad.",
+      "Datas: en 1928, en el siglo XX (veinte), hace más de cien años. Curiosidade: la fregona (o esfregão com cabo) é espanhola."
+     ],
+     "q": "Sem qual invenção você não conseguiria viver, e quem a inventou?",
+     "c": "Escreva quatro fatos sobre invenções ou descobertas, dois com inventó ou descubrió e dois com se."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "inventar",
+      "ex": "¿Quién inventó el teléfono?"
+     },
+     {
+      "w": "descubrir",
+      "ex": "Fleming descubrió la penicilina en 1928."
+     },
+     {
+      "w": "se descubrió",
+      "ex": "La penicilina se descubrió por casualidad."
+     },
+     {
+      "w": "el invento",
+      "ex": "La fregona es un invento español."
+     },
+     {
+      "w": "el siglo",
+      "ex": "La imprenta llegó a España en el siglo XV."
+     },
+     {
+      "w": "gracias a",
+      "ex": "Gracias a la vacuna, se salvaron millones de vidas."
+     }
+    ],
+    "gram": "Indefinido para hechos históricos: inventó, descubrió, creó. Sin sujeto: se inventó en 1956. Siglos con romanos: el siglo XX."
+   }
+  }
+ ]
+}

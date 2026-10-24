@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 181,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Present subjunctive: regular forms",
+     "g": "Form the present subjunctive of regular verbs from the yo form of the present.",
+     "p": [
+      "Take the yo form, drop the -o and add the opposite vowel: hablo → hable, como → coma, vivo → viva.",
+      "-ar verbs get -e endings (hable, hables, hablemos); -er and -ir verbs get -a endings (coma, vivamos).",
+      "Irregular yo forms carry over: tengo → tenga, digo → diga, conozco → conozca. Welcome to B1!"
+     ],
+     "q": "Which verb do you use most in Spanish? Can you build its subjunctive?",
+     "c": "Write the full present subjunctive of trabajar, leer and escribir."
+    },
+    "de": {
+     "t": "Subjuntivo Präsens: regelmäßige Formen",
+     "g": "Bilde den subjuntivo im Präsens regelmäßiger Verben aus der yo-Form.",
+     "p": [
+      "Nimm die yo-Form, streiche das -o und hänge den Gegenvokal an: hablo → hable, como → coma, vivo → viva.",
+      "Verben auf -ar bekommen -e (hable, hables, hablemos); Verben auf -er und -ir bekommen -a (coma, vivamos).",
+      "Unregelmäßige yo-Formen bleiben erhalten: tengo → tenga, digo → diga, conozco → conozca. Willkommen in B1!"
+     ],
+     "q": "Welches Verb benutzt du am häufigsten auf Spanisch? Kannst du seinen subjuntivo bilden?",
+     "c": "Schreib den kompletten subjuntivo von trabajar, leer und escribir auf."
+    },
+    "es": {
+     "t": "Presente de subjuntivo: formas regulares",
+     "g": "Forma el presente de subjuntivo de los verbos regulares a partir de la forma yo.",
+     "p": [
+      "Toma la forma yo, quita la -o y añade la vocal contraria: hablo → hable, como → coma, vivo → viva.",
+      "Los verbos en -ar llevan -e (hable, hables, hablemos); los verbos en -er e -ir llevan -a (coma, vivamos).",
+      "Las formas yo irregulares se mantienen: tengo → tenga, digo → diga, conozco → conozca. ¡Bienvenido al B1!"
+     ],
+     "q": "¿Qué verbo usas más en español? ¿Sabes formar su subjuntivo?",
+     "c": "Escribe el presente de subjuntivo completo de trabajar, leer y escribir."
+    },
+    "fr": {
+     "t": "Subjonctif présent : formes régulières",
+     "g": "Forme le subjonctif présent des verbes réguliers à partir de la forme yo.",
+     "p": [
+      "Prends la forme yo, enlève le -o et ajoute la voyelle opposée : hablo → hable, como → coma, vivo → viva.",
+      "Les verbes en -ar prennent -e (hable, hables, hablemos) ; ceux en -er et -ir prennent -a (coma, vivamos).",
+      "Les formes yo irrégulières se gardent : tengo → tenga, digo → diga, conozco → conozca. Bienvenue au B1 !"
+     ],
+     "q": "Quel verbe utilises-tu le plus en espagnol ? Sais-tu former son subjonctif ?",
+     "c": "Écris le subjonctif présent complet de trabajar, leer et escribir."
+    },
+    "it": {
+     "t": "Congiuntivo presente: forme regolari",
+     "g": "Forma il congiuntivo presente dei verbi regolari partendo dalla forma yo.",
+     "p": [
+      "Prendi la forma yo, togli la -o e aggiungi la vocale opposta: hablo → hable, como → coma, vivo → viva.",
+      "I verbi in -ar prendono -e (hable, hables, hablemos); quelli in -er e -ir prendono -a (coma, vivamos).",
+      "Le forme yo irregolari restano: tengo → tenga, digo → diga, conozco → conozca. Benvenuto al B1!"
+     ],
+     "q": "Quale verbo usi di più in spagnolo? Sai formare il suo congiuntivo?",
+     "c": "Scrivi il congiuntivo presente completo di trabajar, leer ed escribir."
+    },
+    "pt": {
+     "t": "Conjuntivo presente: formas regulares",
+     "g": "Forma o presente do conjuntivo dos verbos regulares a partir da forma yo.",
+     "p": [
+      "Pega na forma yo, tira o -o e junta a vogal contrária: hablo → hable, como → coma, vivo → viva.",
+      "Os verbos em -ar levam -e (hable, hables, hablemos); os verbos em -er e -ir levam -a (coma, vivamos).",
+      "As formas yo irregulares mantêm-se: tengo → tenga, digo → diga, conozco → conozca. Bem-vindo ao B1!"
+     ],
+     "q": "Que verbo usas mais em espanhol? Consegues formar o seu conjuntivo?",
+     "c": "Escreve o presente do conjuntivo completo de trabajar, leer e escribir."
+    },
+    "pt_BR": {
+     "t": "Presente do subjuntivo: formas regulares",
+     "g": "Forme o presente do subjuntivo dos verbos regulares a partir da forma yo.",
+     "p": [
+      "Pegue a forma yo, tire o -o e coloque a vogal contrária: hablo → hable, como → coma, vivo → viva.",
+      "Verbos em -ar levam -e (hable, hables, hablemos); verbos em -er e -ir levam -a (coma, vivamos).",
+      "Formas yo irregulares continuam: tengo → tenga, digo → diga, conozco → conozca. Bem-vindo ao B1!"
+     ],
+     "q": "Qual verbo você mais usa em espanhol? Consegue formar o subjuntivo dele?",
+     "c": "Escreva o presente do subjuntivo completo de trabajar, leer e escribir."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "que hable",
+      "ex": "Quiero que hables más despacio, por favor."
+     },
+     {
+      "w": "que coma",
+      "ex": "Mi madre quiere que coma más verdura."
+     },
+     {
+      "w": "que viva",
+      "ex": "Es bueno que vivas cerca del trabajo."
+     },
+     {
+      "w": "que tenga",
+      "ex": "Espero que tengas un buen día."
+     },
+     {
+      "w": "que conozca",
+      "ex": "Quiero que conozcas a mi hermana."
+     },
+     {
+      "w": "que escriban",
+      "ex": "El profesor quiere que escriban un texto corto."
+     }
+    ],
+    "gram": "Subjuntivo: forma yo sin -o + vocal contraria. -ar: hable, hables, hable, hablemos, habléis, hablen. -er/-ir: coma, viva."
+   }
+  },
+  {
+   "d": 182,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Present subjunctive: irregulars",
+     "g": "Learn the key irregular subjunctive forms: sea, vaya, haya, sepa, esté, dé.",
+     "p": [
+      "Six verbs break the yo rule: ser → sea, ir → vaya, haber → haya, saber → sepa, estar → esté, dar → dé.",
+      "Verbs with irregular yo keep it: tener → tenga, hacer → haga, poner → ponga, salir → salga, venir → venga.",
+      "Stem-changers change in the same places: quiera, pueda, but queramos, podamos (no change in nosotros)."
+     ],
+     "q": "Which of these irregular forms sounds strangest to you, and why?",
+     "c": "Make one sentence with quiero que for each of sea, vaya, haya, sepa, esté and dé."
+    },
+    "de": {
+     "t": "Subjuntivo Präsens: unregelmäßige Formen",
+     "g": "Lerne die wichtigsten unregelmäßigen Formen: sea, vaya, haya, sepa, esté, dé.",
+     "p": [
+      "Sechs Verben folgen nicht der yo-Regel: ser → sea, ir → vaya, haber → haya, saber → sepa, estar → esté, dar → dé.",
+      "Verben mit unregelmäßigem yo behalten es: tener → tenga, hacer → haga, poner → ponga, salir → salga.",
+      "Stammwechsler ändern sich an den gleichen Stellen: quiera, pueda, aber queramos, podamos ohne Wechsel."
+     ],
+     "q": "Welche dieser unregelmäßigen Formen klingt für dich am seltsamsten, und warum?",
+     "c": "Bilde mit quiero que je einen Satz mit sea, vaya, haya, sepa, esté und dé."
+    },
+    "es": {
+     "t": "Presente de subjuntivo: irregulares",
+     "g": "Aprende las formas irregulares clave del subjuntivo: sea, vaya, haya, sepa, esté, dé.",
+     "p": [
+      "Seis verbos rompen la regla del yo: ser → sea, ir → vaya, haber → haya, saber → sepa, estar → esté, dar → dé.",
+      "Los verbos con yo irregular lo conservan: tener → tenga, hacer → haga, poner → ponga, salir → salga.",
+      "Los verbos con cambio vocálico cambian igual: quiera, pueda, pero queramos, podamos (sin cambio)."
+     ],
+     "q": "¿Cuál de estas formas irregulares te parece más rara y por qué?",
+     "c": "Haz una frase con quiero que para cada forma: sea, vaya, haya, sepa, esté y dé."
+    },
+    "fr": {
+     "t": "Subjonctif présent : les irréguliers",
+     "g": "Apprends les formes irrégulières clés du subjonctif : sea, vaya, haya, sepa, esté, dé.",
+     "p": [
+      "Six verbes cassent la règle du yo : ser → sea, ir → vaya, haber → haya, saber → sepa, estar → esté, dar → dé.",
+      "Les verbes au yo irrégulier le gardent : tener → tenga, hacer → haga, poner → ponga, salir → salga.",
+      "Les verbes à diphtongue changent aux mêmes endroits : quiera, pueda, mais queramos, podamos."
+     ],
+     "q": "Laquelle de ces formes irrégulières te semble la plus étrange, et pourquoi ?",
+     "c": "Fais une phrase avec quiero que pour chaque forme : sea, vaya, haya, sepa, esté et dé."
+    },
+    "it": {
+     "t": "Congiuntivo presente: gli irregolari",
+     "g": "Impara le forme irregolari chiave del congiuntivo: sea, vaya, haya, sepa, esté, dé.",
+     "p": [
+      "Sei verbi rompono la regola dello yo: ser → sea, ir → vaya, haber → haya, saber → sepa, estar → esté, dar → dé.",
+      "I verbi con yo irregolare lo mantengono: tener → tenga, hacer → haga, poner → ponga, salir → salga.",
+      "I verbi con dittongo cambiano negli stessi punti: quiera, pueda, ma queramos, podamos."
+     ],
+     "q": "Quale di queste forme irregolari ti sembra più strana, e perché?",
+     "c": "Fai una frase con quiero que per ogni forma: sea, vaya, haya, sepa, esté e dé."
+    },
+    "pt": {
+     "t": "Conjuntivo presente: irregulares",
+     "g": "Aprende as formas irregulares essenciais do conjuntivo: sea, vaya, haya, sepa, esté, dé.",
+     "p": [
+      "Seis verbos fogem à regra do yo: ser → sea, ir → vaya, haber → haya, saber → sepa, estar → esté, dar → dé.",
+      "Os verbos com yo irregular mantêm-no: tener → tenga, hacer → haga, poner → ponga, salir → salga.",
+      "Os verbos com ditongo mudam nos mesmos sítios: quiera, pueda, mas queramos, podamos."
+     ],
+     "q": "Qual destas formas irregulares te parece mais estranha, e porquê?",
+     "c": "Faz uma frase com quiero que para cada forma: sea, vaya, haya, sepa, esté e dé."
+    },
+    "pt_BR": {
+     "t": "Presente do subjuntivo: irregulares",
+     "g": "Aprenda as formas irregulares essenciais do subjuntivo: sea, vaya, haya, sepa, esté, dé.",
+     "p": [
+      "Seis verbos fogem da regra do yo: ser → sea, ir → vaya, haber → haya, saber → sepa, estar → esté, dar → dé.",
+      "Verbos com yo irregular mantêm a forma: tener → tenga, hacer → haga, poner → ponga, salir → salga.",
+      "Verbos com ditongo mudam nos mesmos lugares: quiera, pueda, mas queramos, podamos."
+     ],
+     "q": "Qual dessas formas irregulares parece mais estranha para você, e por quê?",
+     "c": "Faça uma frase com quiero que para cada forma: sea, vaya, haya, sepa, esté e dé."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "que sea",
+      "ex": "Quiero que la fiesta sea una sorpresa."
+     },
+     {
+      "w": "que vaya",
+      "ex": "Prefiero que vayas tú al supermercado."
+     },
+     {
+      "w": "que haya",
+      "ex": "Ojalá haya entradas para el concierto."
+     },
+     {
+      "w": "que sepa",
+      "ex": "Es importante que sepas la dirección."
+     },
+     {
+      "w": "que esté",
+      "ex": "Quiero que todo esté listo a las ocho."
+     },
+     {
+      "w": "que haga",
+      "ex": "Mi jefe quiere que haga un informe."
+     }
+    ],
+    "gram": "Irregulares: ser-sea, ir-vaya, haber-haya, saber-sepa, estar-esté, dar-dé. Yo irregular: tenga, haga, ponga, salga, venga, diga."
+   }
+  },
+  {
+   "d": 183,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Wishes: ojalá and espero que",
+     "g": "Express wishes for yourself and others with ojalá and espero que + subjunctive.",
+     "p": [
+      "Ojalá always takes the subjunctive: ojalá haga sol mañana. It comes from Arabic and means I really hope.",
+      "Espero que + subjunctive when the subject changes: espero que estés bien. Same subject: espero verte pronto.",
+      "Other wishes: quiero que, deseo que, que + subjunctive alone: ¡Que tengas buen viaje! ¡Que te mejores!"
+     ],
+     "q": "What do you hope for this weekend? Start with ojalá...",
+     "c": "Write three wishes for a friend using ojalá, espero que and que + subjunctive."
+    },
+    "de": {
+     "t": "Wünsche: ojalá und espero que",
+     "g": "Drücke Wünsche für dich und andere mit ojalá und espero que + subjuntivo aus.",
+     "p": [
+      "Ojalá steht immer mit subjuntivo: ojalá haga sol mañana. Es stammt aus dem Arabischen und heißt hoffentlich.",
+      "Espero que + subjuntivo bei Subjektwechsel: espero que estés bien. Gleiches Subjekt: espero verte pronto.",
+      "Weitere Wünsche: quiero que, deseo que oder nur que + subjuntivo: ¡Que tengas buen viaje! ¡Que te mejores!"
+     ],
+     "q": "Was erhoffst du dir für dieses Wochenende? Fang mit ojalá an...",
+     "c": "Schreib drei Wünsche für einen Freund mit ojalá, espero que und que + subjuntivo."
+    },
+    "es": {
+     "t": "Deseos: ojalá y espero que",
+     "g": "Expresa deseos para ti y para otros con ojalá y espero que + subjuntivo.",
+     "p": [
+      "Ojalá siempre va con subjuntivo: ojalá haga sol mañana. Viene del árabe y expresa un deseo fuerte.",
+      "Espero que + subjuntivo si cambia el sujeto: espero que estés bien. Mismo sujeto: espero verte pronto.",
+      "Otros deseos: quiero que, deseo que o solo que + subjuntivo: ¡Que tengas buen viaje! ¡Que te mejores!"
+     ],
+     "q": "¿Qué esperas para este fin de semana? Empieza con ojalá...",
+     "c": "Escribe tres deseos para un amigo con ojalá, espero que y que + subjuntivo."
+    },
+    "fr": {
+     "t": "Souhaits : ojalá et espero que",
+     "g": "Exprime des souhaits pour toi et les autres avec ojalá et espero que + subjonctif.",
+     "p": [
+      "Ojalá est toujours suivi du subjonctif : ojalá haga sol mañana. Il vient de l'arabe et signifie pourvu que.",
+      "Espero que + subjonctif si le sujet change : espero que estés bien. Même sujet : espero verte pronto.",
+      "Autres souhaits : quiero que, deseo que ou que + subjonctif seul : ¡Que tengas buen viaje! ¡Que te mejores!"
+     ],
+     "q": "Qu'espères-tu pour ce week-end ? Commence par ojalá...",
+     "c": "Écris trois souhaits pour un ami avec ojalá, espero que et que + subjonctif."
+    },
+    "it": {
+     "t": "Desideri: ojalá ed espero que",
+     "g": "Esprimi desideri per te e per gli altri con ojalá ed espero que + congiuntivo.",
+     "p": [
+      "Ojalá vuole sempre il congiuntivo: ojalá haga sol mañana. Viene dall'arabo e significa magari.",
+      "Espero que + congiuntivo se cambia il soggetto: espero que estés bien. Stesso soggetto: espero verte pronto.",
+      "Altri desideri: quiero que, deseo que o solo que + congiuntivo: ¡Que tengas buen viaje! ¡Que te mejores!"
+     ],
+     "q": "Cosa speri per questo fine settimana? Comincia con ojalá...",
+     "c": "Scrivi tre desideri per un amico con ojalá, espero que e que + congiuntivo."
+    },
+    "pt": {
+     "t": "Desejos: ojalá e espero que",
+     "g": "Exprime desejos para ti e para os outros com ojalá e espero que + conjuntivo.",
+     "p": [
+      "Ojalá leva sempre conjuntivo: ojalá haga sol mañana. Vem do árabe e significa oxalá.",
+      "Espero que + conjuntivo se o sujeito muda: espero que estés bien. Mesmo sujeito: espero verte pronto.",
+      "Outros desejos: quiero que, deseo que ou só que + conjuntivo: ¡Que tengas buen viaje! ¡Que te mejores!"
+     ],
+     "q": "O que esperas para este fim de semana? Começa com ojalá...",
+     "c": "Escreve três desejos para um amigo com ojalá, espero que e que + conjuntivo."
+    },
+    "pt_BR": {
+     "t": "Desejos: ojalá e espero que",
+     "g": "Expresse desejos para você e para os outros com ojalá e espero que + subjuntivo.",
+     "p": [
+      "Ojalá sempre pede subjuntivo: ojalá haga sol mañana. Vem do árabe e significa tomara.",
+      "Espero que + subjuntivo quando o sujeito muda: espero que estés bien. Mesmo sujeito: espero verte pronto.",
+      "Outros desejos: quiero que, deseo que ou só que + subjuntivo: ¡Que tengas buen viaje! ¡Que te mejores!"
+     ],
+     "q": "O que você espera para este fim de semana? Comece com ojalá...",
+     "c": "Escreva três desejos para um amigo com ojalá, espero que e que + subjuntivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ojalá",
+      "ex": "Ojalá haga buen tiempo el sábado."
+     },
+     {
+      "w": "espero que",
+      "ex": "Espero que estés bien y que todo vaya genial."
+     },
+     {
+      "w": "¡Que te mejores!",
+      "ex": "Siento que estés resfriado. ¡Que te mejores!"
+     },
+     {
+      "w": "¡Que tengas buen viaje!",
+      "ex": "Mañana te vas a México. ¡Que tengas buen viaje!"
+     },
+     {
+      "w": "¡Que lo pases bien!",
+      "ex": "¿Vas a la fiesta? ¡Que lo pases bien!"
+     },
+     {
+      "w": "deseo que",
+      "ex": "Os deseo que seáis muy felices en la casa nueva."
+     }
+    ],
+    "gram": "Ojalá + subjuntivo. Espero que + subjuntivo (otro sujeto); espero + infinitivo (mismo sujeto). ¡Que + subjuntivo! para desear."
+   }
+  },
+  {
+   "d": 184,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Recommendations: te recomiendo que",
+     "g": "Give advice with te recomiendo que, te aconsejo que and es mejor que + subjunctive.",
+     "p": [
+      "Advice verbs + que + subjunctive: te recomiendo que vayas al Prado, te aconsejo que reserves antes.",
+      "Impersonal advice: es mejor que descanses, es buena idea que lleves paraguas.",
+      "Softer options: yo que tú, iría temprano; ¿por qué no pruebas...? Both sound friendly and natural."
+     ],
+     "q": "A friend is visiting your city. What do you recommend that they see or eat?",
+     "c": "Give three tips to someone learning Spanish, using te recomiendo que, te aconsejo que and es mejor que."
+    },
+    "de": {
+     "t": "Empfehlungen: te recomiendo que",
+     "g": "Gib Ratschläge mit te recomiendo que, te aconsejo que und es mejor que + subjuntivo.",
+     "p": [
+      "Verben des Ratens + que + subjuntivo: te recomiendo que vayas al Prado, te aconsejo que reserves antes.",
+      "Unpersönliche Ratschläge: es mejor que descanses, es buena idea que lleves paraguas.",
+      "Sanftere Varianten: yo que tú, iría temprano; ¿por qué no pruebas...? Beides klingt freundlich."
+     ],
+     "q": "Ein Freund besucht deine Stadt. Was empfiehlst du ihm zu sehen oder zu essen?",
+     "c": "Gib drei Tipps zum Spanischlernen mit te recomiendo que, te aconsejo que und es mejor que."
+    },
+    "es": {
+     "t": "Recomendaciones: te recomiendo que",
+     "g": "Da consejos con te recomiendo que, te aconsejo que y es mejor que + subjuntivo.",
+     "p": [
+      "Verbos de consejo + que + subjuntivo: te recomiendo que vayas al Prado, te aconsejo que reserves antes.",
+      "Consejos impersonales: es mejor que descanses, es buena idea que lleves paraguas.",
+      "Opciones más suaves: yo que tú, iría temprano; ¿por qué no pruebas...? Suenan cercanas y naturales."
+     ],
+     "q": "Un amigo visita tu ciudad. ¿Qué le recomiendas que vea o que coma?",
+     "c": "Da tres consejos a alguien que aprende español con te recomiendo que, te aconsejo que y es mejor que."
+    },
+    "fr": {
+     "t": "Recommandations : te recomiendo que",
+     "g": "Donne des conseils avec te recomiendo que, te aconsejo que et es mejor que + subjonctif.",
+     "p": [
+      "Verbes de conseil + que + subjonctif : te recomiendo que vayas al Prado, te aconsejo que reserves antes.",
+      "Conseils impersonnels : es mejor que descanses, es buena idea que lleves paraguas.",
+      "Plus doux : yo que tú, iría temprano ; ¿por qué no pruebas...? Les deux sonnent amicaux."
+     ],
+     "q": "Un ami visite ta ville. Que lui recommandes-tu de voir ou de manger ?",
+     "c": "Donne trois conseils pour apprendre l'espagnol avec te recomiendo que, te aconsejo que et es mejor que."
+    },
+    "it": {
+     "t": "Consigli: te recomiendo que",
+     "g": "Dai consigli con te recomiendo que, te aconsejo que ed es mejor que + congiuntivo.",
+     "p": [
+      "Verbi di consiglio + que + congiuntivo: te recomiendo que vayas al Prado, te aconsejo que reserves antes.",
+      "Consigli impersonali: es mejor que descanses, es buena idea que lleves paraguas.",
+      "Più morbido: yo que tú, iría temprano; ¿por qué no pruebas...? Suonano amichevoli e naturali."
+     ],
+     "q": "Un amico visita la tua città. Cosa gli consigli di vedere o mangiare?",
+     "c": "Dai tre consigli a chi studia spagnolo con te recomiendo que, te aconsejo que ed es mejor que."
+    },
+    "pt": {
+     "t": "Recomendações: te recomiendo que",
+     "g": "Dá conselhos com te recomiendo que, te aconsejo que e es mejor que + conjuntivo.",
+     "p": [
+      "Verbos de conselho + que + conjuntivo: te recomiendo que vayas al Prado, te aconsejo que reserves antes.",
+      "Conselhos impessoais: es mejor que descanses, es buena idea que lleves paraguas.",
+      "Mais suave: yo que tú, iría temprano; ¿por qué no pruebas...? Soam simpáticos e naturais."
+     ],
+     "q": "Um amigo vem visitar a tua cidade. O que lhe recomendas que veja ou coma?",
+     "c": "Dá três conselhos a quem aprende espanhol com te recomiendo que, te aconsejo que e es mejor que."
+    },
+    "pt_BR": {
+     "t": "Recomendações: te recomiendo que",
+     "g": "Dê conselhos com te recomiendo que, te aconsejo que e es mejor que + subjuntivo.",
+     "p": [
+      "Verbos de conselho + que + subjuntivo: te recomiendo que vayas al Prado, te aconsejo que reserves antes.",
+      "Conselhos impessoais: es mejor que descanses, es buena idea que lleves paraguas.",
+      "Mais suave: yo que tú, iría temprano; ¿por qué no pruebas...? Soam simpáticos e naturais."
+     ],
+     "q": "Um amigo vai visitar sua cidade. O que você recomenda que ele veja ou coma?",
+     "c": "Dê três conselhos a quem aprende espanhol com te recomiendo que, te aconsejo que e es mejor que."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "te recomiendo que",
+      "ex": "Te recomiendo que vayas al museo por la mañana."
+     },
+     {
+      "w": "te aconsejo que",
+      "ex": "Te aconsejo que reserves mesa con antelación."
+     },
+     {
+      "w": "es mejor que",
+      "ex": "Es mejor que descanses antes del examen."
+     },
+     {
+      "w": "es buena idea que",
+      "ex": "Es buena idea que lleves una chaqueta."
+     },
+     {
+      "w": "yo que tú",
+      "ex": "Yo que tú, probaría la paella de la casa."
+     },
+     {
+      "w": "¿por qué no...?",
+      "ex": "¿Por qué no pruebas a escuchar podcasts en español?"
+     }
+    ],
+    "gram": "Consejo + que + subjuntivo: te recomiendo que vayas, te aconsejo que reserves, es mejor que descanses. Yo que tú + condicional."
+   }
+  },
+  {
+   "d": 185,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Emotions: me alegra que",
+     "g": "Talk about how others' actions make you feel with me alegra que + subjunctive.",
+     "p": [
+      "Me alegra que, me encanta que, me molesta que + subjunctive: me alegra que vengas, me molesta que llegue tarde.",
+      "Same subject? Use the infinitive: me alegra verte. Different subject? Subjunctive: me alegra que me veas.",
+      "Also: siento que estés mal, me sorprende que no lo sepas, me da pena que te vayas."
+     ],
+     "q": "What makes you happy that other people do? Use me alegra que...",
+     "c": "Write two sentences with me encanta que and two with me molesta que about daily life."
+    },
+    "de": {
+     "t": "Gefühle: me alegra que",
+     "g": "Sprich darüber, wie das Handeln anderer dich fühlen lässt: me alegra que + subjuntivo.",
+     "p": [
+      "Me alegra que, me encanta que, me molesta que + subjuntivo: me alegra que vengas, me molesta que llegue tarde.",
+      "Gleiches Subjekt? Infinitiv: me alegra verte. Anderes Subjekt? Subjuntivo: me alegra que me veas.",
+      "Außerdem: siento que estés mal, me sorprende que no lo sepas, me da pena que te vayas."
+     ],
+     "q": "Was freut dich, wenn andere es tun? Benutze me alegra que...",
+     "c": "Schreib zwei Sätze mit me encanta que und zwei mit me molesta que über deinen Alltag."
+    },
+    "es": {
+     "t": "Emociones: me alegra que",
+     "g": "Habla de cómo te hacen sentir las acciones de otros con me alegra que + subjuntivo.",
+     "p": [
+      "Me alegra que, me encanta que, me molesta que + subjuntivo: me alegra que vengas, me molesta que llegue tarde.",
+      "¿Mismo sujeto? Infinitivo: me alegra verte. ¿Otro sujeto? Subjuntivo: me alegra que me veas.",
+      "También: siento que estés mal, me sorprende que no lo sepas, me da pena que te vayas."
+     ],
+     "q": "¿Qué te alegra que hagan los demás? Usa me alegra que...",
+     "c": "Escribe dos frases con me encanta que y dos con me molesta que sobre tu día a día."
+    },
+    "fr": {
+     "t": "Émotions : me alegra que",
+     "g": "Parle de ce que tu ressens face aux actions des autres avec me alegra que + subjonctif.",
+     "p": [
+      "Me alegra que, me encanta que, me molesta que + subjonctif : me alegra que vengas, me molesta que llegue tarde.",
+      "Même sujet ? Infinitif : me alegra verte. Sujet différent ? Subjonctif : me alegra que me veas.",
+      "Aussi : siento que estés mal, me sorprende que no lo sepas, me da pena que te vayas."
+     ],
+     "q": "Qu'est-ce qui te fait plaisir quand les autres le font ? Utilise me alegra que...",
+     "c": "Écris deux phrases avec me encanta que et deux avec me molesta que sur ton quotidien."
+    },
+    "it": {
+     "t": "Emozioni: me alegra que",
+     "g": "Parla di come ti fanno sentire le azioni degli altri con me alegra que + congiuntivo.",
+     "p": [
+      "Me alegra que, me encanta que, me molesta que + congiuntivo: me alegra que vengas, me molesta que llegue tarde.",
+      "Stesso soggetto? Infinito: me alegra verte. Soggetto diverso? Congiuntivo: me alegra que me veas.",
+      "Anche: siento que estés mal, me sorprende que no lo sepas, me da pena que te vayas."
+     ],
+     "q": "Cosa ti fa piacere che facciano gli altri? Usa me alegra que...",
+     "c": "Scrivi due frasi con me encanta que e due con me molesta que sulla tua vita quotidiana."
+    },
+    "pt": {
+     "t": "Emoções: me alegra que",
+     "g": "Fala de como as ações dos outros te fazem sentir com me alegra que + conjuntivo.",
+     "p": [
+      "Me alegra que, me encanta que, me molesta que + conjuntivo: me alegra que vengas, me molesta que llegue tarde.",
+      "Mesmo sujeito? Infinitivo: me alegra verte. Sujeito diferente? Conjuntivo: me alegra que me veas.",
+      "Também: siento que estés mal, me sorprende que no lo sepas, me da pena que te vayas."
+     ],
+     "q": "O que te alegra que os outros façam? Usa me alegra que...",
+     "c": "Escreve duas frases com me encanta que e duas com me molesta que sobre o teu dia a dia."
+    },
+    "pt_BR": {
+     "t": "Emoções: me alegra que",
+     "g": "Fale de como as ações dos outros fazem você se sentir com me alegra que + subjuntivo.",
+     "p": [
+      "Me alegra que, me encanta que, me molesta que + subjuntivo: me alegra que vengas, me molesta que llegue tarde.",
+      "Mesmo sujeito? Infinitivo: me alegra verte. Sujeito diferente? Subjuntivo: me alegra que me veas.",
+      "Também: siento que estés mal, me sorprende que no lo sepas, me da pena que te vayas."
+     ],
+     "q": "O que te deixa feliz quando os outros fazem? Use me alegra que...",
+     "c": "Escreva duas frases com me encanta que e duas com me molesta que sobre o seu dia a dia."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "me alegra que",
+      "ex": "Me alegra que vengas a la cena esta noche."
+     },
+     {
+      "w": "me encanta que",
+      "ex": "Me encanta que mis amigos me escriban en español."
+     },
+     {
+      "w": "me molesta que",
+      "ex": "Me molesta que la gente hable alto en el cine."
+     },
+     {
+      "w": "siento que",
+      "ex": "Siento que no puedas venir a la excursión."
+     },
+     {
+      "w": "me sorprende que",
+      "ex": "Me sorprende que no conozcas esta canción."
+     },
+     {
+      "w": "me da pena que",
+      "ex": "Me da pena que te vayas tan pronto."
+     }
+    ],
+    "gram": "Emoción + que + subjuntivo si cambia el sujeto: me alegra que vengas. Mismo sujeto + infinitivo: me alegra venir."
+   }
+  },
+  {
+   "d": 186,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Doubt: no creo que",
+     "g": "Contrast certainty and doubt: creo que + indicative, no creo que + subjunctive.",
+     "p": [
+      "Certainty uses the indicative: creo que es verdad, pienso que tiene razón, estoy seguro de que viene.",
+      "Doubt or denial uses the subjunctive: no creo que sea verdad, dudo que venga, no es cierto que llueva.",
+      "Quizás and tal vez can take both: quizás viene (likely), quizás venga (less sure). Tone matters!"
+     ],
+     "q": "Tell me something you believe about the future, and something you doubt.",
+     "c": "Turn three sentences with creo que into doubt with no creo que and change the verb."
+    },
+    "de": {
+     "t": "Zweifel: no creo que",
+     "g": "Unterscheide Gewissheit und Zweifel: creo que + Indikativ, no creo que + subjuntivo.",
+     "p": [
+      "Gewissheit mit Indikativ: creo que es verdad, pienso que tiene razón, estoy seguro de que viene.",
+      "Zweifel oder Verneinung mit subjuntivo: no creo que sea verdad, dudo que venga, no es cierto que llueva.",
+      "Quizás und tal vez gehen mit beiden: quizás viene (wahrscheinlich), quizás venga (unsicherer)."
+     ],
+     "q": "Nenne mir etwas, das du über die Zukunft glaubst, und etwas, das du bezweifelst.",
+     "c": "Verwandle drei Sätze mit creo que in Zweifel mit no creo que und ändere das Verb."
+    },
+    "es": {
+     "t": "Duda: no creo que",
+     "g": "Contrasta certeza y duda: creo que + indicativo, no creo que + subjuntivo.",
+     "p": [
+      "La certeza va con indicativo: creo que es verdad, pienso que tiene razón, estoy seguro de que viene.",
+      "La duda o la negación van con subjuntivo: no creo que sea verdad, dudo que venga, no es cierto que llueva.",
+      "Quizás y tal vez admiten los dos: quizás viene (probable), quizás venga (menos seguro)."
+     ],
+     "q": "Dime algo que crees sobre el futuro y algo de lo que dudas.",
+     "c": "Transforma tres frases con creo que en duda con no creo que y cambia el verbo."
+    },
+    "fr": {
+     "t": "Le doute : no creo que",
+     "g": "Oppose certitude et doute : creo que + indicatif, no creo que + subjonctif.",
+     "p": [
+      "La certitude prend l'indicatif : creo que es verdad, pienso que tiene razón, estoy seguro de que viene.",
+      "Le doute ou la négation prennent le subjonctif : no creo que sea verdad, dudo que venga.",
+      "Quizás et tal vez acceptent les deux : quizás viene (probable), quizás venga (moins sûr)."
+     ],
+     "q": "Dis-moi une chose que tu crois sur l'avenir et une chose dont tu doutes.",
+     "c": "Transforme trois phrases avec creo que en doute avec no creo que et change le verbe."
+    },
+    "it": {
+     "t": "Il dubbio: no creo que",
+     "g": "Distingui certezza e dubbio: creo que + indicativo, no creo que + congiuntivo.",
+     "p": [
+      "Attenzione: in spagnolo creo que vuole l'indicativo: creo que es verdad, pienso que tiene razón.",
+      "Dubbio o negazione vogliono il congiuntivo: no creo que sea verdad, dudo que venga, no es cierto que llueva.",
+      "Quizás e tal vez accettano entrambi: quizás viene (probabile), quizás venga (meno sicuro)."
+     ],
+     "q": "Dimmi una cosa che credi sul futuro e una di cui dubiti.",
+     "c": "Trasforma tre frasi con creo que in dubbio con no creo que e cambia il verbo."
+    },
+    "pt": {
+     "t": "Dúvida: no creo que",
+     "g": "Contrasta certeza e dúvida: creo que + indicativo, no creo que + conjuntivo.",
+     "p": [
+      "A certeza leva indicativo: creo que es verdad, pienso que tiene razón, estoy seguro de que viene.",
+      "A dúvida ou negação levam conjuntivo: no creo que sea verdad, dudo que venga, no es cierto que llueva.",
+      "Quizás e tal vez aceitam os dois: quizás viene (provável), quizás venga (menos certo)."
+     ],
+     "q": "Diz-me algo em que acreditas sobre o futuro e algo de que duvidas.",
+     "c": "Transforma três frases com creo que em dúvida com no creo que e muda o verbo."
+    },
+    "pt_BR": {
+     "t": "Dúvida: no creo que",
+     "g": "Contraste certeza e dúvida: creo que + indicativo, no creo que + subjuntivo.",
+     "p": [
+      "A certeza pede indicativo: creo que es verdad, pienso que tiene razón, estoy seguro de que viene.",
+      "A dúvida ou negação pedem subjuntivo: no creo que sea verdad, dudo que venga, no es cierto que llueva.",
+      "Quizás e tal vez aceitam os dois: quizás viene (provável), quizás venga (menos certo)."
+     ],
+     "q": "Me diga algo em que você acredita sobre o futuro e algo de que duvida.",
+     "c": "Transforme três frases com creo que em dúvida com no creo que e mude o verbo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "creo que",
+      "ex": "Creo que el tren sale a las diez."
+     },
+     {
+      "w": "no creo que",
+      "ex": "No creo que el tren salga a tiempo."
+     },
+     {
+      "w": "dudo que",
+      "ex": "Dudo que haya mesa libre a esta hora."
+     },
+     {
+      "w": "estoy seguro de que",
+      "ex": "Estoy seguro de que vas a aprobar."
+     },
+     {
+      "w": "no es cierto que",
+      "ex": "No es cierto que los españoles cenen a las seis."
+     },
+     {
+      "w": "tal vez",
+      "ex": "Tal vez vayamos a la playa el domingo."
+     }
+    ],
+    "gram": "Certeza + indicativo: creo que es, estoy seguro de que viene. Duda o negación + subjuntivo: no creo que sea, dudo que venga."
+   }
+  },
+  {
+   "d": 187,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Cuando + subjunctive",
+     "g": "Talk about future moments with cuando + subjunctive: cuando llegues, llámame.",
+     "p": [
+      "Future time clauses take the subjunctive: cuando llegues a casa, llámame; cuando tenga dinero, viajaré.",
+      "Habits and the past use the indicative: cuando llego a casa, ceno; cuando era niño, jugaba mucho.",
+      "Questions use the indicative too: ¿cuándo vienes? Only the future clause after cuando needs subjunctive."
+     ],
+     "q": "What will you do when you finish your Spanish course? Start with cuando termine...",
+     "c": "Write three plans: cuando tenga vacaciones..., cuando hable bien español..., cuando sea mayor..."
+    },
+    "de": {
+     "t": "Cuando + subjuntivo",
+     "g": "Sprich über zukünftige Momente mit cuando + subjuntivo: cuando llegues, llámame.",
+     "p": [
+      "Zukünftige Zeitsätze stehen im subjuntivo: cuando llegues a casa, llámame; cuando tenga dinero, viajaré.",
+      "Gewohnheiten und Vergangenes im Indikativ: cuando llego a casa, ceno; cuando era niño, jugaba mucho.",
+      "Fragen stehen im Indikativ: ¿cuándo vienes? Nur der Zukunftssatz nach cuando braucht subjuntivo."
+     ],
+     "q": "Was wirst du tun, wenn du deinen Spanischkurs beendest? Beginne mit cuando termine...",
+     "c": "Schreib drei Pläne: cuando tenga vacaciones..., cuando hable bien español..., cuando sea mayor..."
+    },
+    "es": {
+     "t": "Cuando + subjuntivo",
+     "g": "Habla de momentos futuros con cuando + subjuntivo: cuando llegues, llámame.",
+     "p": [
+      "Las oraciones temporales de futuro llevan subjuntivo: cuando llegues a casa, llámame; cuando tenga dinero, viajaré.",
+      "Hábitos y pasado van con indicativo: cuando llego a casa, ceno; cuando era niño, jugaba mucho.",
+      "Las preguntas van con indicativo: ¿cuándo vienes? Solo la oración futura tras cuando pide subjuntivo."
+     ],
+     "q": "¿Qué harás cuando termines tu curso de español? Empieza con cuando termine...",
+     "c": "Escribe tres planes: cuando tenga vacaciones..., cuando hable bien español..., cuando sea mayor..."
+    },
+    "fr": {
+     "t": "Cuando + subjonctif",
+     "g": "Parle de moments futurs avec cuando + subjonctif : cuando llegues, llámame.",
+     "p": [
+      "Le futur après cuando prend le subjonctif : cuando llegues a casa, llámame ; cuando tenga dinero, viajaré.",
+      "Habitudes et passé prennent l'indicatif : cuando llego a casa, ceno ; cuando era niño, jugaba mucho.",
+      "Les questions prennent l'indicatif : ¿cuándo vienes? Attention : en français on dirait quand tu arriveras."
+     ],
+     "q": "Que feras-tu quand tu finiras ton cours d'espagnol ? Commence par cuando termine...",
+     "c": "Écris trois projets : cuando tenga vacaciones..., cuando hable bien español..., cuando sea mayor..."
+    },
+    "it": {
+     "t": "Cuando + congiuntivo",
+     "g": "Parla di momenti futuri con cuando + congiuntivo: cuando llegues, llámame.",
+     "p": [
+      "Il futuro dopo cuando vuole il congiuntivo: cuando llegues a casa, llámame; cuando tenga dinero, viajaré.",
+      "Abitudini e passato vogliono l'indicativo: cuando llego a casa, ceno; cuando era niño, jugaba mucho.",
+      "Le domande vogliono l'indicativo: ¿cuándo vienes? Attenzione: in italiano diremmo quando arriverai."
+     ],
+     "q": "Cosa farai quando finirai il corso di spagnolo? Comincia con cuando termine...",
+     "c": "Scrivi tre progetti: cuando tenga vacaciones..., cuando hable bien español..., cuando sea mayor..."
+    },
+    "pt": {
+     "t": "Cuando + conjuntivo",
+     "g": "Fala de momentos futuros com cuando + conjuntivo: cuando llegues, llámame.",
+     "p": [
+      "O futuro depois de cuando leva conjuntivo presente, não futuro: cuando llegues a casa, llámame.",
+      "Hábitos e passado levam indicativo: cuando llego a casa, ceno; cuando era niño, jugaba mucho.",
+      "Atenção: em português diz-se quando chegares, mas em espanhol é cuando llegues. ¿Cuándo vienes? é indicativo."
+     ],
+     "q": "O que vais fazer quando acabares o curso de espanhol? Começa com cuando termine...",
+     "c": "Escreve três planos: cuando tenga vacaciones..., cuando hable bien español..., cuando sea mayor..."
+    },
+    "pt_BR": {
+     "t": "Cuando + subjuntivo",
+     "g": "Fale de momentos futuros com cuando + subjuntivo: cuando llegues, llámame.",
+     "p": [
+      "O futuro depois de cuando pede subjuntivo presente: cuando llegues a casa, llámame; cuando tenga dinero, viajaré.",
+      "Hábitos e passado pedem indicativo: cuando llego a casa, ceno; cuando era niño, jugaba mucho.",
+      "Atenção: em português é quando você chegar, mas em espanhol é cuando llegues. ¿Cuándo vienes? é indicativo."
+     ],
+     "q": "O que você vai fazer quando terminar o curso de espanhol? Comece com cuando termine...",
+     "c": "Escreva três planos: cuando tenga vacaciones..., cuando hable bien español..., cuando sea mayor..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "cuando llegues",
+      "ex": "Cuando llegues al hotel, mándame un mensaje."
+     },
+     {
+      "w": "cuando tenga tiempo",
+      "ex": "Cuando tenga tiempo, leeré ese libro."
+     },
+     {
+      "w": "cuando sea mayor",
+      "ex": "Cuando sea mayor, quiero vivir cerca del mar."
+     },
+     {
+      "w": "cuando termine",
+      "ex": "Cuando termine el trabajo, iré al gimnasio."
+     },
+     {
+      "w": "cuando puedas",
+      "ex": "Llámame cuando puedas, no hay prisa."
+     },
+     {
+      "w": "cuando llego",
+      "ex": "Normalmente, cuando llego a casa, preparo la cena."
+     }
+    ],
+    "gram": "Cuando + subjuntivo para el futuro: cuando llegues, llámame. Cuando + indicativo para hábitos y pasado: cuando llego, ceno."
+   }
+  },
+  {
+   "d": 188,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Para que and other purposes",
+     "g": "Express purpose with para + infinitive or para que + subjunctive.",
+     "p": [
+      "Same subject: para + infinitive: estudio para aprobar. Different subject: para que + subjunctive.",
+      "Te lo explico para que lo entiendas; hablo despacio para que me entiendan todos.",
+      "Similar connectors: a fin de que (formal), con el objetivo de + infinitive. ¿Para qué? asks for purpose."
+     ],
+     "q": "Why are you learning Spanish? Answer with para... and para que...",
+     "c": "Write three sentences about things you do for others using para que + subjunctive."
+    },
+    "de": {
+     "t": "Para que und andere Zwecke",
+     "g": "Drücke einen Zweck aus mit para + Infinitiv oder para que + subjuntivo.",
+     "p": [
+      "Gleiches Subjekt: para + Infinitiv: estudio para aprobar. Anderes Subjekt: para que + subjuntivo.",
+      "Te lo explico para que lo entiendas; hablo despacio para que me entiendan todos.",
+      "Ähnliche Konnektoren: a fin de que (formell), con el objetivo de + Infinitiv. ¿Para qué? fragt nach dem Zweck."
+     ],
+     "q": "Warum lernst du Spanisch? Antworte mit para... und para que...",
+     "c": "Schreib drei Sätze darüber, was du für andere tust, mit para que + subjuntivo."
+    },
+    "es": {
+     "t": "Para que y otras finalidades",
+     "g": "Expresa finalidad con para + infinitivo o para que + subjuntivo.",
+     "p": [
+      "Mismo sujeto: para + infinitivo: estudio para aprobar. Otro sujeto: para que + subjuntivo.",
+      "Te lo explico para que lo entiendas; hablo despacio para que me entiendan todos.",
+      "Conectores parecidos: a fin de que (formal), con el objetivo de + infinitivo. ¿Para qué? pregunta la finalidad."
+     ],
+     "q": "¿Para qué aprendes español? Responde con para... y para que...",
+     "c": "Escribe tres frases sobre cosas que haces por otros con para que + subjuntivo."
+    },
+    "fr": {
+     "t": "Para que et autres buts",
+     "g": "Exprime le but avec para + infinitif ou para que + subjonctif.",
+     "p": [
+      "Même sujet : para + infinitif : estudio para aprobar. Sujet différent : para que + subjonctif.",
+      "Te lo explico para que lo entiendas, comme pour que tu comprennes ; hablo despacio para que me entiendan.",
+      "Connecteurs proches : a fin de que (formel), con el objetivo de + infinitif. ¿Para qué? demande le but."
+     ],
+     "q": "Pourquoi apprends-tu l'espagnol ? Réponds avec para... et para que...",
+     "c": "Écris trois phrases sur ce que tu fais pour les autres avec para que + subjonctif."
+    },
+    "it": {
+     "t": "Para que e altri scopi",
+     "g": "Esprimi lo scopo con para + infinito o para que + congiuntivo.",
+     "p": [
+      "Stesso soggetto: para + infinito: estudio para aprobar. Soggetto diverso: para que + congiuntivo.",
+      "Te lo explico para que lo entiendas, come perché tu capisca; hablo despacio para que me entiendan.",
+      "Connettivi simili: a fin de que (formale), con el objetivo de + infinito. ¿Para qué? chiede lo scopo."
+     ],
+     "q": "Perché studi spagnolo? Rispondi con para... e para que...",
+     "c": "Scrivi tre frasi su cose che fai per gli altri con para que + congiuntivo."
+    },
+    "pt": {
+     "t": "Para que e outras finalidades",
+     "g": "Exprime finalidade com para + infinitivo ou para que + conjuntivo.",
+     "p": [
+      "Mesmo sujeito: para + infinitivo: estudio para aprobar. Sujeito diferente: para que + conjuntivo.",
+      "Te lo explico para que lo entiendas, como para que percebas; hablo despacio para que me entiendan.",
+      "Conectores parecidos: a fin de que (formal), con el objetivo de + infinitivo. ¿Para qué? pergunta a finalidade."
+     ],
+     "q": "Para que aprendes espanhol? Responde com para... e para que...",
+     "c": "Escreve três frases sobre coisas que fazes pelos outros com para que + conjuntivo."
+    },
+    "pt_BR": {
+     "t": "Para que e outras finalidades",
+     "g": "Expresse finalidade com para + infinitivo ou para que + subjuntivo.",
+     "p": [
+      "Mesmo sujeito: para + infinitivo: estudio para aprobar. Sujeito diferente: para que + subjuntivo.",
+      "Te lo explico para que lo entiendas, como para que você entenda; hablo despacio para que me entiendan.",
+      "Conectores parecidos: a fin de que (formal), con el objetivo de + infinitivo. ¿Para qué? pergunta a finalidade."
+     ],
+     "q": "Para que você aprende espanhol? Responda com para... e para que...",
+     "c": "Escreva três frases sobre coisas que você faz pelos outros com para que + subjuntivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "para que",
+      "ex": "Te lo explico otra vez para que lo entiendas."
+     },
+     {
+      "w": "para + infinitivo",
+      "ex": "Ahorro dinero para viajar a Colombia."
+     },
+     {
+      "w": "a fin de que",
+      "ex": "Enviamos el horario a fin de que todos lleguen a tiempo."
+     },
+     {
+      "w": "con el objetivo de",
+      "ex": "Estudio cada día con el objetivo de hablar mejor."
+     },
+     {
+      "w": "¿para qué?",
+      "ex": "¿Para qué necesitas tantas maletas?"
+     },
+     {
+      "w": "de modo que",
+      "ex": "Habla más alto, de modo que te oigan todos."
+     }
+    ],
+    "gram": "Finalidad: para + infinitivo (mismo sujeto): estudio para aprobar. Para que + subjuntivo (otro sujeto): lo repito para que lo entiendas."
+   }
+  },
+  {
+   "d": 189,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Impersonal expressions",
+     "g": "Evaluate situations with es importante que, es necesario que, es posible que + subjunctive.",
+     "p": [
+      "Es + adjective + que + subjunctive: es importante que duermas bien, es posible que llueva.",
+      "Without a specific person, use the infinitive: es importante dormir bien, es necesario practicar.",
+      "Facts use the indicative: es verdad que, es obvio que, está claro que + indicative: es verdad que es caro."
+     ],
+     "q": "What is important for you to do this week? Use es importante que...",
+     "c": "Write four tips for a healthy routine with es importante que, es necesario que, es mejor que and es normal que."
+    },
+    "de": {
+     "t": "Unpersönliche Ausdrücke",
+     "g": "Bewerte Situationen mit es importante que, es necesario que, es posible que + subjuntivo.",
+     "p": [
+      "Es + Adjektiv + que + subjuntivo: es importante que duermas bien, es posible que llueva.",
+      "Ohne bestimmte Person steht der Infinitiv: es importante dormir bien, es necesario practicar.",
+      "Tatsachen im Indikativ: es verdad que, es obvio que, está claro que + Indikativ: es verdad que es caro."
+     ],
+     "q": "Was ist für dich diese Woche wichtig zu tun? Benutze es importante que...",
+     "c": "Schreib vier Tipps für eine gesunde Routine mit es importante que, es necesario que, es mejor que, es normal que."
+    },
+    "es": {
+     "t": "Expresiones impersonales",
+     "g": "Valora situaciones con es importante que, es necesario que, es posible que + subjuntivo.",
+     "p": [
+      "Es + adjetivo + que + subjuntivo: es importante que duermas bien, es posible que llueva.",
+      "Sin una persona concreta, usa el infinitivo: es importante dormir bien, es necesario practicar.",
+      "Los hechos van con indicativo: es verdad que, es obvio que, está claro que: es verdad que es caro."
+     ],
+     "q": "¿Qué es importante que hagas esta semana? Usa es importante que...",
+     "c": "Escribe cuatro consejos para una rutina sana con es importante que, es necesario que, es mejor que y es normal que."
+    },
+    "fr": {
+     "t": "Expressions impersonnelles",
+     "g": "Évalue des situations avec es importante que, es necesario que, es posible que + subjonctif.",
+     "p": [
+      "Es + adjectif + que + subjonctif : es importante que duermas bien, es posible que llueva.",
+      "Sans personne précise, mets l'infinitif : es importante dormir bien, es necesario practicar.",
+      "Les faits prennent l'indicatif : es verdad que, es obvio que, está claro que : es verdad que es caro."
+     ],
+     "q": "Qu'est-il important que tu fasses cette semaine ? Utilise es importante que...",
+     "c": "Écris quatre conseils pour une routine saine avec es importante que, es necesario que, es mejor que, es normal que."
+    },
+    "it": {
+     "t": "Espressioni impersonali",
+     "g": "Valuta situazioni con es importante que, es necesario que, es posible que + congiuntivo.",
+     "p": [
+      "Es + aggettivo + que + congiuntivo: es importante que duermas bien, es posible que llueva.",
+      "Senza una persona precisa, usa l'infinito: es importante dormir bien, es necesario practicar.",
+      "I fatti vogliono l'indicativo: es verdad que, es obvio que, está claro que: es verdad que es caro."
+     ],
+     "q": "Cosa è importante che tu faccia questa settimana? Usa es importante que...",
+     "c": "Scrivi quattro consigli per una routine sana con es importante que, es necesario que, es mejor que, es normal que."
+    },
+    "pt": {
+     "t": "Expressões impessoais",
+     "g": "Avalia situações com es importante que, es necesario que, es posible que + conjuntivo.",
+     "p": [
+      "Es + adjetivo + que + conjuntivo: es importante que duermas bien, es posible que llueva.",
+      "Sem uma pessoa concreta, usa o infinitivo: es importante dormir bien, es necesario practicar.",
+      "Os factos levam indicativo: es verdad que, es obvio que, está claro que: es verdad que es caro."
+     ],
+     "q": "O que é importante que faças esta semana? Usa es importante que...",
+     "c": "Escreve quatro conselhos para uma rotina saudável com es importante que, es necesario que, es mejor que, es normal que."
+    },
+    "pt_BR": {
+     "t": "Expressões impessoais",
+     "g": "Avalie situações com es importante que, es necesario que, es posible que + subjuntivo.",
+     "p": [
+      "Es + adjetivo + que + subjuntivo: es importante que duermas bien, es posible que llueva.",
+      "Sem uma pessoa específica, use o infinitivo: es importante dormir bien, es necesario practicar.",
+      "Fatos pedem indicativo: es verdad que, es obvio que, está claro que: es verdad que es caro."
+     ],
+     "q": "O que é importante que você faça esta semana? Use es importante que...",
+     "c": "Escreva quatro dicas para uma rotina saudável com es importante que, es necesario que, es mejor que, es normal que."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "es importante que",
+      "ex": "Es importante que bebas agua durante el día."
+     },
+     {
+      "w": "es necesario que",
+      "ex": "Es necesario que traigas el pasaporte."
+     },
+     {
+      "w": "es posible que",
+      "ex": "Es posible que llueva esta tarde."
+     },
+     {
+      "w": "es normal que",
+      "ex": "Es normal que te equivoques al principio."
+     },
+     {
+      "w": "es una pena que",
+      "ex": "Es una pena que el museo cierre los lunes."
+     },
+     {
+      "w": "está claro que",
+      "ex": "Está claro que practicar cada día ayuda mucho."
+     }
+    ],
+    "gram": "Es + adjetivo + que + subjuntivo: es importante que duermas. Sin sujeto: es importante dormir. Hechos: es verdad que + indicativo."
+   }
+  },
+  {
+   "d": 190,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Review: the subjunctive so far",
+     "g": "Recap wishes, advice, emotions and doubt with the subjunctive in real conversation.",
+     "p": [
+      "Wishes and advice: ojalá venga, espero que estés bien, te recomiendo que vayas, es mejor que descanses.",
+      "Emotions and doubt: me alegra que estés aquí, no creo que sea difícil, dudo que llueva.",
+      "Time and purpose: cuando llegues, llámame; te lo digo para que lo sepas. Great progress in B1!"
+     ],
+     "q": "Tell me about a friend: what do you hope, recommend and doubt about their plans?",
+     "c": "Write a short message to a friend with one wish, one tip, one feeling and one doubt, all with subjunctive."
+    },
+    "de": {
+     "t": "Wiederholung: der subjuntivo bisher",
+     "g": "Wiederhole Wünsche, Ratschläge, Gefühle und Zweifel mit subjuntivo im Gespräch.",
+     "p": [
+      "Wünsche und Rat: ojalá venga, espero que estés bien, te recomiendo que vayas, es mejor que descanses.",
+      "Gefühle und Zweifel: me alegra que estés aquí, no creo que sea difícil, dudo que llueva.",
+      "Zeit und Zweck: cuando llegues, llámame; te lo digo para que lo sepas. Toller Fortschritt in B1!"
+     ],
+     "q": "Erzähl mir von einem Freund: Was hoffst, empfiehlst und bezweifelst du bei seinen Plänen?",
+     "c": "Schreib einem Freund mit einem Wunsch, einem Tipp, einem Gefühl und einem Zweifel, alles mit subjuntivo."
+    },
+    "es": {
+     "t": "Repaso: el subjuntivo hasta ahora",
+     "g": "Repasa deseos, consejos, emociones y duda con el subjuntivo en una conversación real.",
+     "p": [
+      "Deseos y consejos: ojalá venga, espero que estés bien, te recomiendo que vayas, es mejor que descanses.",
+      "Emociones y duda: me alegra que estés aquí, no creo que sea difícil, dudo que llueva.",
+      "Tiempo y finalidad: cuando llegues, llámame; te lo digo para que lo sepas. ¡Gran avance en el B1!"
+     ],
+     "q": "Háblame de un amigo: ¿qué esperas, qué le recomiendas y de qué dudas sobre sus planes?",
+     "c": "Escribe un mensaje a un amigo con un deseo, un consejo, un sentimiento y una duda, todo con subjuntivo."
+    },
+    "fr": {
+     "t": "Révision : le subjonctif jusqu'ici",
+     "g": "Révise souhaits, conseils, émotions et doute avec le subjonctif dans une vraie conversation.",
+     "p": [
+      "Souhaits et conseils : ojalá venga, espero que estés bien, te recomiendo que vayas, es mejor que descanses.",
+      "Émotions et doute : me alegra que estés aquí, no creo que sea difícil, dudo que llueva.",
+      "Temps et but : cuando llegues, llámame ; te lo digo para que lo sepas. Beau progrès au B1 !"
+     ],
+     "q": "Parle-moi d'un ami : qu'espères-tu, que lui conseilles-tu et de quoi doutes-tu sur ses projets ?",
+     "c": "Écris un message à un ami avec un souhait, un conseil, une émotion et un doute, tout au subjonctif."
+    },
+    "it": {
+     "t": "Ripasso: il congiuntivo finora",
+     "g": "Ripassa desideri, consigli, emozioni e dubbi con il congiuntivo in una conversazione reale.",
+     "p": [
+      "Desideri e consigli: ojalá venga, espero que estés bien, te recomiendo que vayas, es mejor que descanses.",
+      "Emozioni e dubbi: me alegra que estés aquí, no creo que sea difícil, dudo que llueva.",
+      "Tempo e scopo: cuando llegues, llámame; te lo digo para que lo sepas. Ottimi progressi nel B1!"
+     ],
+     "q": "Parlami di un amico: cosa speri, cosa gli consigli e di cosa dubiti sui suoi progetti?",
+     "c": "Scrivi un messaggio a un amico con un desiderio, un consiglio, un'emozione e un dubbio, tutto al congiuntivo."
+    },
+    "pt": {
+     "t": "Revisão: o conjuntivo até agora",
+     "g": "Revê desejos, conselhos, emoções e dúvida com o conjuntivo numa conversa real.",
+     "p": [
+      "Desejos e conselhos: ojalá venga, espero que estés bien, te recomiendo que vayas, es mejor que descanses.",
+      "Emoções e dúvida: me alegra que estés aquí, no creo que sea difícil, dudo que llueva.",
+      "Tempo e finalidade: cuando llegues, llámame; te lo digo para que lo sepas. Grande progresso no B1!"
+     ],
+     "q": "Fala-me de um amigo: o que esperas, o que lhe recomendas e de que duvidas nos planos dele?",
+     "c": "Escreve uma mensagem a um amigo com um desejo, um conselho, uma emoção e uma dúvida, tudo no conjuntivo."
+    },
+    "pt_BR": {
+     "t": "Revisão: o subjuntivo até agora",
+     "g": "Revise desejos, conselhos, emoções e dúvida com o subjuntivo numa conversa real.",
+     "p": [
+      "Desejos e conselhos: ojalá venga, espero que estés bien, te recomiendo que vayas, es mejor que descanses.",
+      "Emoções e dúvida: me alegra que estés aquí, no creo que sea difícil, dudo que llueva.",
+      "Tempo e finalidade: cuando llegues, llámame; te lo digo para que lo sepas. Grande progresso no B1!"
+     ],
+     "q": "Me fale de um amigo: o que você espera, recomenda e de que duvida nos planos dele?",
+     "c": "Escreva uma mensagem a um amigo com um desejo, um conselho, uma emoção e uma dúvida, tudo no subjuntivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ojalá",
+      "ex": "Ojalá podamos vernos pronto."
+     },
+     {
+      "w": "te recomiendo que",
+      "ex": "Te recomiendo que pruebes el gazpacho."
+     },
+     {
+      "w": "me alegra que",
+      "ex": "Me alegra que te guste tu nuevo trabajo."
+     },
+     {
+      "w": "no creo que",
+      "ex": "No creo que sea tan difícil como parece."
+     },
+     {
+      "w": "cuando + subjuntivo",
+      "ex": "Cuando vuelvas de vacaciones, cuéntamelo todo."
+     },
+     {
+      "w": "para que",
+      "ex": "Te dejo las llaves para que entres cuando quieras."
+     }
+    ],
+    "gram": "Subjuntivo tras deseo (ojalá), consejo (te recomiendo que), emoción (me alegra que), duda (no creo que), cuando futuro y para que."
+   }
+  }
+ ]
+}

@@ -1,0 +1,2195 @@
+{
+"topic": "gardening",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "Why gardening is good for you",
+"f": "How caring for plants brings calm, fresh food, beauty and a connection with nature"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "What every plant needs",
+"f": "The five basics: light, water, air, nutrients and the right temperature"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "How plants grow",
+"f": "Roots, stems, leaves and flowers explained simply and what each part does for the plant"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Photosynthesis made simple",
+"f": "How leaves turn light, water and air into the energy a plant needs to grow"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Reading your light",
+"f": "Finding out how much sun your windows, balcony or garden really get through the day"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Direct, bright and low light",
+"f": "What plant labels mean by full sun, bright indirect light and shade"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Choosing your first plants",
+"f": "Starting with forgiving plants that suit your light, space and lifestyle"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Easy houseplants for beginners",
+"f": "Pothos, snake plant, ZZ plant and spider plant: tough plants that forgive mistakes"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Easy outdoor plants for beginners",
+"f": "Marigolds, nasturtiums, lavender and herbs that grow well with little fuss"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Understanding plant labels",
+"f": "Reading the tag: light needs, watering, height, spread and hardiness"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "Pots and drainage",
+"f": "Why drainage holes matter and how standing water harms roots"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Choosing pot sizes",
+"f": "Matching the pot to the plant so roots have room without staying soggy"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Pot materials compared",
+"f": "Terracotta, plastic, ceramic and fabric pots and how each affects watering"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "What soil really is",
+"f": "Minerals, organic matter, air and water: the living mix plants grow in"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Potting mix versus garden soil",
+"f": "Why containers need light, airy potting mix rather than heavy garden earth"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Watering basics",
+"f": "Watering deeply but less often and checking the soil before you pour"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "The finger test",
+"f": "Pushing a finger into the soil to know when a plant is really thirsty"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Signs of overwatering",
+"f": "Yellow leaves, soft stems and soggy soil: recognising the most common mistake"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Signs of underwatering",
+"f": "Drooping, crispy edges and dry soil pulling away from the pot"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "The best time to water",
+"f": "Why morning watering usually helps plants and reduces disease"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Your basic gardening toolkit",
+"f": "A trowel, watering can, pruners, gloves and a few other simple essentials"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Caring for your tools",
+"f": "Cleaning, drying and sharpening tools so they last and keep plants healthy"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Gardening gloves and safety",
+"f": "Protecting hands, using tools carefully and knowing which plants can irritate skin"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Plants and pets",
+"f": "Checking which common plants are unsafe for cats and dogs before bringing them home"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Bringing a new plant home",
+"f": "Inspecting for pests, letting it settle and avoiding repotting straight away"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Naming and tracking plants",
+"f": "Keeping a simple plant journal with names, dates and care notes"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Your gardening space",
+"f": "Mapping your windowsills, balcony or garden to see what you can grow where"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Climate and hardiness zones",
+"f": "How local temperatures decide which plants survive outdoors in your area"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Setting realistic goals",
+"f": "Starting small with a few plants so success builds your confidence"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: your first month",
+"f": "Looking back at what you learned about light, water, soil and pots"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Houseplant care routine",
+"f": "A simple weekly check: water, look at leaves, turn the pot and remove dust"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Humidity and houseplants",
+"f": "Why tropical plants like moist air and easy ways to raise humidity indoors"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Grouping plants together",
+"f": "How clustering plants creates a small humid microclimate"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Dusting and cleaning leaves",
+"f": "Wiping leaves so they can breathe and catch more light"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Rotating plants",
+"f": "Turning pots regularly so plants grow evenly instead of leaning"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Feeding houseplants",
+"f": "When and how to use a diluted fertiliser during the growing season"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Understanding N-P-K",
+"f": "What nitrogen, phosphorus and potassium do for leaves, roots and flowers"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Rest periods in winter",
+"f": "Why many houseplants grow slowly in winter and need less water and food"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Repotting step by step",
+"f": "When roots outgrow the pot and how to move a plant to a slightly bigger one"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Root-bound plants",
+"f": "Recognising circling roots and gently loosening them when repotting"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Pothos and philodendron care",
+"f": "Trailing favourites: light, watering and how to keep vines full"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Snake plant and ZZ plant care",
+"f": "Very tough plants that prefer drying out and tolerate low light"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Spider plant and its babies",
+"f": "Caring for spider plants and potting up the little plantlets"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Peace lily care",
+"f": "A plant that droops when thirsty and recovers quickly after watering"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Monstera care",
+"f": "Light, support and space for the popular plant with split leaves"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Ferns indoors",
+"f": "Keeping ferns happy with steady moisture and good humidity"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Succulents indoors",
+"f": "Bright light, gritty soil and very careful watering for fleshy plants"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Cacti care basics",
+"f": "Sun, dry periods and well-draining mix for healthy cacti"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Orchids for beginners",
+"f": "How the common moth orchid grows and how to water and rebloom it"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Herbs on the windowsill",
+"f": "Growing basil, parsley and mint indoors for fresh flavour"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Flowering houseplants",
+"f": "African violets, anthuriums and other indoor plants that bloom"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Plants for low-light rooms",
+"f": "The best choices for darker corners, offices and north-facing windows"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Plants for bathrooms",
+"f": "Humidity-loving plants that enjoy steamy, bright bathrooms"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Hanging and trailing plants",
+"f": "Displaying plants at different heights with hangers and shelves"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Plant shelves and stands",
+"f": "Arranging plants so each gets light while creating a beautiful display"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Grow lights basics",
+"f": "When a simple LED grow light helps plants in dark homes"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Holiday care for plants",
+"f": "Keeping plants watered while you travel with simple tricks"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Common houseplant pests",
+"f": "Spotting fungus gnats, spider mites, mealybugs and aphids early"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Gentle pest control",
+"f": "Wiping, showering, sticky traps and soapy sprays for small infestations"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: indoor plants",
+"f": "Revisiting houseplant routines and choosing the next plants to try"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "Propagation basics",
+"f": "How many plants can grow new roots and become free new plants"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Stem cuttings in water",
+"f": "Rooting pothos, tradescantia and other easy plants in a glass of water"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Cuttings in soil",
+"f": "Rooting cuttings directly in moist mix for stronger roots"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Leaf cuttings",
+"f": "Growing new succulents and other plants from a single leaf"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Dividing plants",
+"f": "Splitting clumping plants like peace lilies and ferns into several pots"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Sharing plants with friends",
+"f": "Swapping cuttings and starting a friendly plant exchange"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Seeds: how they work",
+"f": "What is inside a seed and what it needs to wake up and sprout"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Reading a seed packet",
+"f": "Sowing depth, spacing, timing and days to harvest explained"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Sowing seeds indoors",
+"f": "Starting seeds in trays or small pots for a head start on the season"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Light for seedlings",
+"f": "Why seedlings need strong light to grow sturdy instead of tall and weak"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Thinning seedlings",
+"f": "Removing extra sprouts so the strongest plants have room to grow"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Pricking out and potting on",
+"f": "Moving seedlings into bigger pots as they grow their first true leaves"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Hardening off",
+"f": "Slowly getting indoor seedlings used to sun, wind and outdoor temperatures"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Direct sowing outdoors",
+"f": "Sowing seeds straight into the garden for plants that dislike moving"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Balcony gardening basics",
+"f": "Making the most of a small balcony with pots, rails and vertical space"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Container gardening outdoors",
+"f": "Choosing containers, mix and plants for patios and terraces"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Watering containers outdoors",
+"f": "Why pots dry fast in summer and how to keep them evenly moist"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Window boxes",
+"f": "Planting colourful and edible window boxes that thrive"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Vertical gardening",
+"f": "Using walls, trellises and pockets to grow upwards in small spaces"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "An easy herb garden",
+"f": "Growing rosemary, thyme, oregano, chives and mint outdoors"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Harvesting herbs",
+"f": "Picking herbs the right way so plants keep producing"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Mint and its spreading habit",
+"f": "Why mint is best kept in its own pot so it does not take over"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Edible flowers",
+"f": "Nasturtiums, calendula and violas that look pretty and add colour to food"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Annuals, biennials and perennials",
+"f": "Understanding plant life cycles to plan what to grow"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Easy summer flowers",
+"f": "Cosmos, zinnias, sunflowers and marigolds for cheerful colour"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Bulbs for spring colour",
+"f": "Planting tulips, daffodils and crocuses in autumn for spring flowers"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Plants for bees and butterflies",
+"f": "Choosing flowers that feed pollinators throughout the season"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Planning a small flower bed",
+"f": "Arranging plants by height, colour and flowering time"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Mulch basics",
+"f": "How a layer of mulch keeps soil moist, cool and free of weeds"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Review: seeds and small spaces",
+"f": "Looking back at propagation, sowing and container gardening"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Your first vegetables",
+"f": "Easy crops for beginners: lettuce, radishes, beans, courgettes and tomatoes"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Salad greens in pots",
+"f": "Growing lettuce, rocket and spinach for quick, repeated harvests"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Radishes: the fast crop",
+"f": "A vegetable ready in a few weeks that is perfect for first-timers"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Growing tomatoes",
+"f": "Choosing varieties, sunlight, support and regular watering for tomatoes"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Peppers and chillies",
+"f": "Warmth-loving plants that grow well in pots on sunny balconies"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Beans and peas",
+"f": "Climbing and bush varieties that also enrich the soil"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Courgettes and squash",
+"f": "Productive plants that need space, sun and regular picking"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Strawberries in containers",
+"f": "Growing sweet strawberries in pots, hanging baskets and planters"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Potatoes in a bag",
+"f": "Growing potatoes in containers and harvesting them like treasure"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Spring onions and garlic",
+"f": "Simple alliums that grow in small spaces with little care"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Microgreens",
+"f": "Growing tiny, nutritious greens on a windowsill in under two weeks"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Sprouting seeds",
+"f": "Growing crunchy sprouts in a jar for fresh flavour all year"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Weeds: friend or foe",
+"f": "Recognising common weeds and removing them before they set seed"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Weeding made easier",
+"f": "Little and often, hoeing and mulching to keep weeds under control"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Watering a vegetable patch",
+"f": "Deep, regular watering at the roots for healthy crops"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Supporting plants",
+"f": "Stakes, cages, canes and trellises that keep plants upright"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Simple pruning for beginners",
+"f": "Removing dead, damaged and crowded growth to keep plants healthy"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Deadheading flowers",
+"f": "Snipping faded blooms so plants keep flowering longer"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "The gardening seasons",
+"f": "What happens in the garden in spring, summer, autumn and winter"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Spring tasks",
+"f": "Sowing, planting and preparing beds as the days get warmer"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Summer tasks",
+"f": "Watering, harvesting, deadheading and keeping an eye on pests"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Autumn tasks",
+"f": "Planting bulbs, collecting seeds and tidying the garden"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Winter tasks",
+"f": "Planning, protecting tender plants and caring for tools"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Composting basics",
+"f": "Turning kitchen and garden scraps into rich compost"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Greens and browns",
+"f": "Balancing nitrogen-rich and carbon-rich materials for good compost"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Worm composting",
+"f": "Using a small worm bin to compost scraps in apartments"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Beginner mistakes to avoid",
+"f": "Overwatering, too much sun, too little light and planting too close"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Learning from failure",
+"f": "Why every gardener loses plants and how each loss teaches something"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Your gardening calendar",
+"f": "Creating a simple year plan for sowing, planting and harvesting"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: the beginner journey",
+"f": "Celebrating your first stage and choosing goals for the next"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Soil types explained",
+"f": "Clay, sand, silt and loam: how each holds water and nutrients differently"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "The jar soil test",
+"f": "Shaking soil in a jar of water to see its layers and texture at home"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Soil pH",
+"f": "What acidic and alkaline soil mean and which plants prefer each"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Improving clay soil",
+"f": "Adding organic matter so heavy soil drains better and is easier to work"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Improving sandy soil",
+"f": "Helping light soil hold water and nutrients with compost and mulch"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Life in the soil",
+"f": "Earthworms, fungi and microbes that keep soil healthy and fertile"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "No-dig gardening",
+"f": "Building beds by layering compost on top instead of digging the soil"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Organic fertilisers",
+"f": "Compost, manure, seaweed and other natural ways to feed plants"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Liquid feeds and teas",
+"f": "Making and using simple homemade liquid plant food"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Raised beds",
+"f": "Why raised beds warm faster, drain well and make gardening easier on the back"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Building a raised bed",
+"f": "Choosing a size, materials and filling for a long-lasting bed"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Square foot gardening",
+"f": "Planting in small squares for neat, productive beds"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Planning a vegetable garden",
+"f": "Choosing crops you love to eat and arranging them by sun and space"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Crop rotation",
+"f": "Moving plant families each year to keep soil healthy and reduce problems"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Plant families in the garden",
+"f": "Knowing nightshades, brassicas, legumes and alliums to plan rotations"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Companion planting",
+"f": "Growing plants together that help each other, like basil near tomatoes"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "The three sisters",
+"f": "The traditional Indigenous American trio of corn, beans and squash"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Succession sowing",
+"f": "Sowing small batches every few weeks for a steady harvest"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Intercropping",
+"f": "Growing fast crops between slow ones to use every bit of space"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Growing in shade",
+"f": "Vegetables and flowers that cope with only a few hours of sun"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Cool-season crops",
+"f": "Peas, lettuce, spinach and brassicas that like mild weather"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Warm-season crops",
+"f": "Tomatoes, beans, peppers and squash that need heat to thrive"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Frost and protection",
+"f": "Using fleece, cloches and cold frames to protect plants from cold nights"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Extending the season",
+"f": "Starting earlier and harvesting later with simple covers and planning"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Watering wisely",
+"f": "Drip lines, soaker hoses and watering at the roots to save water"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Collecting rainwater",
+"f": "Using water butts and barrels to water plants with free rainwater"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Drought-tolerant plants",
+"f": "Lavender, sedum, rosemary and other plants that need little water"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Self-watering containers",
+"f": "How reservoir pots keep plants evenly moist with less effort"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Mulching in depth",
+"f": "Choosing straw, bark, leaves or compost for different parts of the garden"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Review: soil, beds and water",
+"f": "Revisiting soil care, bed planning and water-wise gardening"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Understanding plant diseases",
+"f": "How fungi, bacteria and viruses affect plants and how they spread"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Powdery mildew",
+"f": "Recognising the white coating on leaves and keeping it under control"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Leaf spots and blights",
+"f": "Spotting common leaf problems and improving airflow to prevent them"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Root rot",
+"f": "How waterlogged soil damages roots and how to save affected plants"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Integrated pest management",
+"f": "Watching, preventing and choosing the gentlest control first"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Slugs and snails",
+"f": "Barriers, hand-picking at dusk and encouraging natural predators"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Aphids outdoors",
+"f": "Letting ladybirds help and using water sprays for heavy colonies"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Caterpillars on cabbages",
+"f": "Nets and regular checks to protect brassicas from hungry caterpillars"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Beneficial insects",
+"f": "Ladybirds, lacewings, hoverflies and ground beetles as garden helpers"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Birds in the garden",
+"f": "How birds eat pests and how to welcome them with water and shelter"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Hedgehogs, frogs and friends",
+"f": "Making room for small wildlife that helps keep pests down"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Nutrient deficiencies",
+"f": "Reading yellow, purple or pale leaves as signs of missing nutrients"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Healthy plants resist problems",
+"f": "Right plant, right place: the best prevention of pests and disease"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Hygiene in the garden",
+"f": "Cleaning pots, tools and removing diseased material to stop spread"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Garden journal deep dive",
+"f": "Recording sowing dates, harvests and problems to improve each year"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Growing fruit at home",
+"f": "Easy fruits for small gardens: berries, currants and dwarf trees"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Raspberries and blackberries",
+"f": "Planting, supporting and pruning cane fruit for big harvests"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Blueberries in pots",
+"f": "Growing blueberries in acidic mix for sweet summer berries"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Currants and gooseberries",
+"f": "Compact bushes that fruit generously with simple care"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Fruit trees for small spaces",
+"f": "Dwarf rootstocks, columns and patio trees that fit tiny gardens"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Pollination of fruit",
+"f": "Why some trees need a partner and how bees help set fruit"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Citrus in containers",
+"f": "Growing lemons and other citrus in pots and protecting them in winter"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Figs and grapes",
+"f": "Sun-loving fruits for warm walls, patios and pergolas"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Melons and watermelons",
+"f": "Giving heat-loving melons the warmth and space they need"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Harvesting at the right moment",
+"f": "Knowing when fruit and vegetables are perfectly ripe"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Storing your harvest",
+"f": "Curing, drying and storing produce so it lasts longer"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Preserving the harvest",
+"f": "Simple jams, pickles, drying and freezing for garden produce"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "Saving seeds",
+"f": "Collecting seeds from beans, tomatoes and flowers for next year"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Open-pollinated and hybrid seeds",
+"f": "Understanding which seeds come true when saved"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Review: health and harvests",
+"f": "Looking back at pest control, fruit growing and saving seeds"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Pruning in depth",
+"f": "Why, when and how to prune shrubs, roses and fruit bushes"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Pruning cuts",
+"f": "Making clean cuts above buds at the right angle for healing"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Growing roses",
+"f": "Choosing, planting, feeding and pruning roses for healthy blooms"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Flowering shrubs",
+"f": "Hydrangeas, lilacs and other shrubs that bring structure and colour"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Climbing plants",
+"f": "Clematis, honeysuckle and jasmine on fences, walls and arches"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Hedges",
+"f": "Planting and trimming hedges for privacy, wildlife and shelter"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Trees in the garden",
+"f": "Choosing a tree that fits your space and planting it well"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Lawns made simple",
+"f": "Mowing height, feeding and watering for a healthy lawn"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Lawn alternatives",
+"f": "Clover, wildflower meadows and ground covers that need less care"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Ground cover plants",
+"f": "Low plants that cover bare soil, suppress weeds and look lovely"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Ornamental grasses",
+"f": "Adding movement, texture and winter interest with grasses"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Perennial borders",
+"f": "Designing borders that come back every year with changing colour"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Colour in garden design",
+"f": "Using warm, cool and contrasting colours to create mood"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Plant combinations",
+"f": "Pairing shapes, textures and flowering times for beautiful beds"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Garden design basics",
+"f": "Paths, focal points, seating and structure in any size of garden"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Designing a small garden",
+"f": "Tricks to make a small space feel larger and more useful"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Gardening on a slope",
+"f": "Terraces, steps and plants that hold soil in place"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Shade gardens",
+"f": "Beautiful foliage plants and flowers for shady corners"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Cottage gardens",
+"f": "The relaxed, abundant style of mixed flowers, herbs and vegetables"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Mediterranean gardens",
+"f": "Gravel, herbs and drought-loving plants for sunny dry spots"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Japanese garden ideas",
+"f": "Moss, stones, water and careful pruning for calm spaces"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Wildlife gardens",
+"f": "Creating habitats with native plants, log piles and small ponds"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "A mini pond",
+"f": "Building a container pond that attracts frogs, dragonflies and birds"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Native plants",
+"f": "Why local plants support wildlife and adapt well to your climate"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Review: design and structure",
+"f": "Revisiting pruning, shrubs and garden design ideas"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Advanced houseplant care",
+"f": "Fine-tuning light, water and feeding for thriving indoor jungles"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Aroids indoors",
+"f": "Caring for philodendrons, alocasias and anthuriums"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Calatheas and prayer plants",
+"f": "Plants with moving, patterned leaves that love humidity"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Hoyas and wax plants",
+"f": "Trailing plants with waxy leaves and scented star-shaped flowers"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Fiddle-leaf figs",
+"f": "Light and stability for this popular but sensitive tree"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Rubber plants and figs",
+"f": "Easy indoor ficus that grow into impressive specimens"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Air plants",
+"f": "Tillandsias that grow without soil and how to water them"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Terrariums",
+"f": "Building a closed or open glass garden with small plants"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Kokedama",
+"f": "The Japanese moss ball technique for displaying plants without pots"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Chunky potting mixes",
+"f": "Bark, perlite and coir mixes for plants that need airy roots"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Water quality for plants",
+"f": "Tap water, rainwater and filtered water and how plants react"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Moss poles and supports",
+"f": "Helping climbing houseplants grow bigger leaves"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Bonsai introduction",
+"f": "The art of growing small trees in containers through careful care"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Indoor bonsai species",
+"f": "Ficus, jade and other bonsai that suit indoor conditions"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Carnivorous plants",
+"f": "Venus flytraps, pitcher plants and sundews and their special needs"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Rare plant hunting",
+"f": "Finding unusual plants responsibly from growers and plant swaps"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Review: indoor mastery",
+"f": "Reflecting on advanced houseplant skills and your indoor collection"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Herbs in depth",
+"f": "Perennial and annual herbs, flavour and keeping plants productive"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Tea gardens",
+"f": "Growing chamomile, lemon balm, mint and other plants for herbal teas"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Growing salad all year",
+"f": "Planning sowings so fresh leaves are ready in every season"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Asian greens",
+"f": "Pak choi, mizuna and mustard greens for quick, tasty harvests"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Root vegetables",
+"f": "Carrots, beetroot and parsnips: sowing, thinning and harvesting"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Brassicas",
+"f": "Cabbage, broccoli, kale and cauliflower and how to protect them"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Onions and leeks",
+"f": "Growing alliums from sets and seeds for a long harvest"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Sweetcorn",
+"f": "Planting in blocks for pollination and harvesting at peak sweetness"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Pumpkins and winter squash",
+"f": "Growing and curing squash that store well into winter"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Cucumbers",
+"f": "Indoor and outdoor varieties and training them upwards"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Aubergines",
+"f": "Heat-loving plants that reward warmth and patience"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Perennial vegetables",
+"f": "Asparagus, rhubarb and artichokes that come back every year"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Growing mushrooms at home",
+"f": "Easy kits and logs for growing edible mushrooms"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Urban gardening",
+"f": "Rooftops, community plots and tiny city spaces that grow food"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Community gardens",
+"f": "Sharing land, tools and knowledge with neighbours"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Gardening with children",
+"f": "Fun, easy projects that help kids discover plants"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "School and group gardens",
+"f": "Organising a shared garden project with friends or a group"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Garden photography",
+"f": "Capturing your plants and harvests in beautiful photos"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Sharing your harvest",
+"f": "Swapping and giving produce to friends and neighbours"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Feeding vegetables all season",
+"f": "Giving hungry crops the right food at the right time for steady growth"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Helping plants through heatwaves",
+"f": "Shade cloth, mulch and good timing to protect plants in very hot spells"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Overwintering tender plants",
+"f": "Bringing geraniums, chillies and citrus indoors before the first frost"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Leaf mould",
+"f": "Turning fallen autumn leaves into a soft, valuable soil improver"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Green manures",
+"f": "Sowing cover crops like clover or mustard to protect and feed bare soil"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Winter greens indoors",
+"f": "Growing herbs and salad leaves on windowsills in the cold months"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Review: food growing and sharing",
+"f": "Looking back at vegetables, community gardens and sharing your harvest"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Your intermediate year plan",
+"f": "Building a detailed plan for sowing, planting and harvesting"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Celebrating the middle of the path",
+"f": "Appreciating how much your gardening skills have grown"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Botany for gardeners",
+"f": "How understanding plant biology makes you a more confident gardener"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Plant names and Latin",
+"f": "Why botanical names matter and how to read genus and species"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "How roots really work",
+"f": "Root hairs, tap roots and fibrous roots and how they find water"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Mycorrhizal fungi",
+"f": "The hidden partnership between roots and fungi that feeds plants"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Plant hormones",
+"f": "How auxins and other hormones guide growth, rooting and branching"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Flowers and pollination",
+"f": "How flowers attract pollinators and how seeds and fruit form"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Day length and flowering",
+"f": "Why some plants bloom only when days are long or short"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Dormancy explained",
+"f": "How plants rest through winter or drought and wake up again"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Plant stress signals",
+"f": "Reading wilting, leaf drop and colour changes as messages from plants"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Soil science deeper",
+"f": "Structure, organic matter and cation exchange in simple terms"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Building soil over years",
+"f": "Long-term habits that turn poor soil into rich, crumbly earth"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Hot composting",
+"f": "Building a large, well-balanced heap that heats up and works fast"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Bokashi",
+"f": "Fermenting kitchen scraps in a sealed bucket before adding them to soil"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Biochar",
+"f": "Using charcoal-like material to improve soil structure and hold nutrients"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Soil testing",
+"f": "Using home kits and lab tests to understand nutrients and pH before feeding"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Permaculture principles",
+"f": "Observing nature and designing gardens that work with it"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Zones and sectors",
+"f": "Placing garden elements according to how often you visit them"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Food forests",
+"f": "Layered gardens of trees, shrubs, herbs and ground covers that feed you"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Guilds of plants",
+"f": "Groups of plants that support a central tree or crop"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Swales and water harvesting",
+"f": "Shaping land to slow, spread and store rainwater"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Keyhole beds",
+"f": "Compact circular beds that are easy to reach and very productive"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Hugelkultur",
+"f": "Building mounded beds over wood that slowly feeds and holds water"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Closing the loop",
+"f": "Recycling nutrients and materials inside your own garden"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Biodiversity in the garden",
+"f": "Why more variety of plants and creatures makes gardens stronger"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Creating a wildflower meadow",
+"f": "Preparing ground and sowing native flowers for pollinators"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Bee-friendly gardening",
+"f": "Supporting honeybees, bumblebees and solitary bees all year"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Bug hotels",
+"f": "Building shelters for helpful insects from natural materials"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Night gardens",
+"f": "Plants with pale flowers and evening scents that delight after sunset"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Gardening for birds",
+"f": "Berries, seed heads and shelter that bring birds all year"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Review: ecological gardening",
+"f": "Revisiting permaculture, biodiversity and wildlife-friendly design"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Greenhouses",
+"f": "How a greenhouse extends the season and protects tender plants"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Choosing a greenhouse or polytunnel",
+"f": "Comparing sizes, materials and positions for your space"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Greenhouse climate",
+"f": "Managing ventilation, shading and temperature under glass"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Heating and insulation",
+"f": "Keeping a greenhouse frost-free efficiently in winter"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Greenhouse pests",
+"f": "Whitefly, red spider mite and biological controls under glass"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Cold frames and hotbeds",
+"f": "Simple structures that warm seedlings using sun or compost"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Hydroponics basics",
+"f": "Growing plants in water with nutrients instead of soil"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Simple hydroponic systems",
+"f": "Wick, deep water and nutrient film systems for home growers"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Aquaponics",
+"f": "Combining fish and plants in a system where each helps the other"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Indoor growing setups",
+"f": "Lights, timers and airflow for serious indoor food growing"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Seed starting under lights",
+"f": "Advanced schedules and techniques for strong seedlings"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Grafting basics",
+"f": "Joining a shoot to a rootstock to combine the best of two plants"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Grafting fruit trees",
+"f": "Whip and tongue and other common grafts for apples and pears"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Grafting tomatoes",
+"f": "Vigorous rootstocks for stronger, disease-resistant tomato plants"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Air layering",
+"f": "Rooting a branch while it is still attached to the parent plant"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Review: growing under cover",
+"f": "Reflecting on greenhouses, hydroponics and grafting techniques"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Plant breeding at home",
+"f": "Crossing plants and selecting the best offspring over seasons"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Selecting your own varieties",
+"f": "Saving seed from your best plants to adapt them to your garden"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Seed libraries and swaps",
+"f": "Sharing locally adapted seeds with other gardeners"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Heirloom varieties",
+"f": "The stories and flavours of old, traditional plant varieties"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Training fruit trees",
+"f": "Shaping young trees for strong structure and good harvests"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Espalier and cordons",
+"f": "Training fruit trees flat against walls and fences"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Summer and winter pruning",
+"f": "Timing fruit tree pruning for growth or for fruit"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Orchard care through the year",
+"f": "Feeding, mulching, thinning and protecting fruit trees"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Thinning fruit",
+"f": "Removing some young fruit for bigger, better harvests"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Pruning roses in depth",
+"f": "Rose groups and how each type is pruned for best flowering"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Topiary",
+"f": "Clipping shrubs into shapes, from simple balls to playful figures"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Advanced bonsai techniques",
+"f": "Wiring, root pruning and styling small trees over years"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Rare and unusual edibles",
+"f": "Growing oca, yacon, cape gooseberries and other curiosities"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Tropical fruit in pots",
+"f": "Bananas, passion fruit and other exotic plants in containers"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Pruning tools for experts",
+"f": "Choosing loppers, saws and pole pruners and keeping them sharp and clean"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Climate-smart gardening",
+"f": "Adapting gardens to hotter summers, heavy rain and changing seasons"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Water-wise garden design",
+"f": "Planning gardens that thrive with little irrigation"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Gravel and dry gardens",
+"f": "Creating beautiful gardens with drought-tolerant plants and gravel"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Rain gardens",
+"f": "Planting low areas to soak up rainwater from roofs and paths"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Microclimates",
+"f": "Using walls, slopes and shelter to grow plants outside their usual range"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Windbreaks and shelter",
+"f": "Hedges and screens that protect plants from strong winds"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Growing at altitude or by the sea",
+"f": "Plants and techniques for exposed and coastal gardens"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Reducing plastic in gardening",
+"f": "Choosing natural materials and reusing pots and trays"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Peat-free growing",
+"f": "Why peat bogs matter and how to grow well with peat-free mixes"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Homemade potting mixes",
+"f": "Blending compost, leaf mould and minerals for your own mixes"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Low-maintenance planting",
+"f": "Designing gardens that look good with little ongoing work"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Garden renovation",
+"f": "Bringing an overgrown garden back to life step by step"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Mapping and measuring a garden",
+"f": "Drawing a scale plan to design with confidence"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Designing a garden from scratch",
+"f": "A full design project from ideas to planting plan"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Planting plans in layers",
+"f": "Combining trees, shrubs, perennials and bulbs for year-round interest"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Review: resilient design",
+"f": "Reflecting on climate-smart gardening and full design projects"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Gardens of the world",
+"f": "How different cultures shape gardens around their climate and traditions"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Persian and Islamic gardens",
+"f": "Paradise gardens with water channels, shade and symmetry"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Japanese gardens in depth",
+"f": "Dry gardens, stroll gardens and the art of borrowed scenery"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Chinese scholar gardens",
+"f": "Rocks, water, pavilions and framed views in classical gardens"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "English landscape gardens",
+"f": "Rolling lawns, lakes and trees designed to look natural"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "French formal gardens",
+"f": "Geometry, clipped hedges and long views in grand gardens"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Italian Renaissance gardens",
+"f": "Terraces, fountains and statues on sunny hillsides"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Tropical and rainforest gardens",
+"f": "Lush planting inspired by the world's warmest regions"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Desert gardens",
+"f": "Cacti, succulents and design ideas from arid lands"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Famous botanical gardens",
+"f": "What gardens like Kew and others teach about plants"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Plant explorers in history",
+"f": "How plant hunters brought familiar flowers and crops to new lands"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "The story of the potato and tomato",
+"f": "How two American crops spread around the world"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Tea, coffee and spice plants",
+"f": "The plants behind everyday flavours and where they grow"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Houseplants through history",
+"f": "How indoor plants became popular in homes around the world"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Review: gardens and history",
+"f": "Looking back at gardening traditions from around the world"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Edible landscaping",
+"f": "Mixing fruit, herbs and vegetables into beautiful ornamental gardens"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Living walls",
+"f": "How large vertical planting systems work on homes and buildings"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Interest in every month",
+"f": "Planning plants so your garden offers colour and texture all year"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Seed banks and diversity",
+"f": "How seed banks protect plant diversity for future generations"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Learning from your records",
+"f": "Using years of journal notes to spot patterns and improve harvests"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Container orchards",
+"f": "Growing several fruit trees in large pots on patios and terraces"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Teaching others to garden",
+"f": "Sharing your skills with friends, family and neighbours"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Starting a garden club",
+"f": "Bringing gardeners together to share plants and ideas"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Running a plant swap",
+"f": "Organising a fun exchange of cuttings, seeds and plants"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Garden open days",
+"f": "Showing your garden and visiting others for inspiration"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Growing for exhibitions",
+"f": "Preparing flowers and vegetables for local shows"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Cut flower gardening",
+"f": "Growing flowers for bouquets all season long"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Flower arranging basics",
+"f": "Creating simple arrangements from your own garden"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Drying flowers and herbs",
+"f": "Preserving blooms and leaves for decorations and teas"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Natural dyes from plants",
+"f": "Colouring fabric with plants like marigold, onion skins and woad"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Gardening and wellbeing",
+"f": "How time with plants supports a calm mind and active body"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Mindful gardening",
+"f": "Slowing down to notice details while you work with plants"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Gardening through the years",
+"f": "Adapting tools and beds so gardening stays comfortable at any age"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Your signature garden style",
+"f": "Defining the look, plants and feel that make your garden yours"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Planning your next growing year",
+"f": "Setting goals for new crops, projects and skills"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Review: the advanced journey",
+"f": "Reviewing everything learned in the advanced stage"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Your gardening story",
+"f": "Reflecting on how your plants and skills grew over the year"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Final reflection and next steps",
+"f": "Celebrating your 365-day path and choosing what to grow next"
+}
+]
+}

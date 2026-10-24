@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 331,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Review: professional Spanish",
+     "g": "Bring together meetings, presentations, negotiation and feedback.",
+     "p": [
+      "Meetings and talks: empecemos, pasamos al siguiente punto, a continuación, para concluir.",
+      "Negotiation: siempre que, a cambio de que + subjunctive; ¿qué le parecería si...?",
+      "Feedback and teams: lo que más me ha gustado es, quizás podrías, busco a alguien que + subjunctive."
+     ],
+     "q": "Which professional skill in Spanish do you feel most confident about now?",
+     "c": "Role-play with me: open a meeting, make one offer with siempre que and give one piece of feedback."
+    },
+    "de": {
+     "t": "Wiederholung: Spanisch im Beruf",
+     "g": "Verbinde Besprechungen, Präsentationen, Verhandlungen und Feedback.",
+     "p": [
+      "Besprechungen und Vorträge: empecemos, pasamos al siguiente punto, a continuación, para concluir.",
+      "Verhandeln: siempre que, a cambio de que + Subjuntivo; ¿qué le parecería si...?",
+      "Feedback und Teams: lo que más me ha gustado es, quizás podrías, busco a alguien que + Subjuntivo."
+     ],
+     "q": "Bei welcher beruflichen Fähigkeit auf Spanisch fühlst du dich jetzt am sichersten?",
+     "c": "Rollenspiel mit mir: Eröffne eine Besprechung, mach ein Angebot mit siempre que und gib ein Feedback."
+    },
+    "es": {
+     "t": "Repaso: español profesional",
+     "g": "Reúne reuniones, presentaciones, negociación y feedback.",
+     "p": [
+      "Reuniones y charlas: empecemos, pasamos al siguiente punto, a continuación, para concluir.",
+      "Negociación: siempre que, a cambio de que + subjuntivo; ¿qué le parecería si...?",
+      "Feedback y equipos: lo que más me ha gustado es, quizás podrías, busco a alguien que + subjuntivo."
+     ],
+     "q": "¿En qué habilidad profesional en español te sientes más seguro ahora?",
+     "c": "Juego de rol: abre una reunión, haz una oferta con siempre que y da un comentario constructivo."
+    },
+    "fr": {
+     "t": "Révision : l'espagnol professionnel",
+     "g": "Rassemble réunions, présentations, négociation et retours.",
+     "p": [
+      "Réunions et exposés : empecemos, pasamos al siguiente punto, a continuación, para concluir.",
+      "Négociation : siempre que, a cambio de que + subjonctif ; ¿qué le parecería si... ?",
+      "Retours et équipes : lo que más me ha gustado es, quizás podrías, busco a alguien que + subjonctif."
+     ],
+     "q": "Dans quelle compétence professionnelle en espagnol te sens-tu le plus à l'aise maintenant ?",
+     "c": "Jeu de rôle : ouvre une réunion, fais une offre avec siempre que et donne un retour."
+    },
+    "it": {
+     "t": "Ripasso: spagnolo professionale",
+     "g": "Metti insieme riunioni, presentazioni, trattative e feedback.",
+     "p": [
+      "Riunioni e interventi: empecemos, pasamos al siguiente punto, a continuación, para concluir.",
+      "Trattativa: siempre que, a cambio de que + congiuntivo; ¿qué le parecería si...?",
+      "Feedback e squadre: lo que más me ha gustado es, quizás podrías, busco a alguien que + congiuntivo."
+     ],
+     "q": "In quale abilità professionale in spagnolo ti senti più sicuro ora?",
+     "c": "Gioco di ruolo: apri una riunione, fai un'offerta con siempre que e dai un feedback."
+    },
+    "pt": {
+     "t": "Revisão: espanhol profissional",
+     "g": "Junta reuniões, apresentações, negociação e feedback.",
+     "p": [
+      "Reuniões e palestras: empecemos, pasamos al siguiente punto, a continuación, para concluir.",
+      "Negociação: siempre que, a cambio de que + conjuntivo; ¿qué le parecería si...?",
+      "Feedback e equipas: lo que más me ha gustado es, quizás podrías, busco a alguien que + conjuntivo."
+     ],
+     "q": "Em que competência profissional em espanhol te sentes mais seguro agora?",
+     "c": "Role-play comigo: abre uma reunião, faz uma oferta com siempre que e dá um feedback."
+    },
+    "pt_BR": {
+     "t": "Revisão: espanhol profissional",
+     "g": "Junte reuniões, apresentações, negociação e feedback.",
+     "p": [
+      "Reuniões e palestras: empecemos, pasamos al siguiente punto, a continuación, para concluir.",
+      "Negociação: siempre que, a cambio de que + subjuntivo; ¿qué le parecería si...?",
+      "Feedback e equipes: lo que más me ha gustado es, quizás podrías, busco a alguien que + subjuntivo."
+     ],
+     "q": "Em qual habilidade profissional em espanhol você se sente mais seguro agora?",
+     "c": "Role-play comigo: abra uma reunião, faça uma oferta com siempre que e dê um feedback."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "empecemos",
+      "ex": "Empecemos por el primer punto."
+     },
+     {
+      "w": "para concluir",
+      "ex": "Para concluir, repasemos las tareas."
+     },
+     {
+      "w": "siempre que",
+      "ex": "Firmamos hoy, siempre que incluyan el soporte."
+     },
+     {
+      "w": "quizás podrías",
+      "ex": "Quizás podrías resumir más la segunda parte."
+     },
+     {
+      "w": "delegar",
+      "ex": "Aprendí a delegar y el equipo creció."
+     },
+     {
+      "w": "quedo a su disposición",
+      "ex": "Quedo a su disposición para lo que necesiten."
+     }
+    ],
+    "gram": "Repaso profesional: nosotros imperativo (empecemos), subjuntivo tras siempre que y a cambio de que, condicional para suavizar."
+   }
+  },
+  {
+   "d": 332,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Voseo: vos sos, vos tenés",
+     "g": "Understand how vos replaces tú in parts of Latin America.",
+     "p": [
+      "In Argentina, Uruguay and much of Central America, people say vos instead of tú.",
+      "Present: vos sos, vos tenés, vos querés, vos vivís (stress on the last syllable).",
+      "Imperative: vení, decime, mirá. Object pronoun stays te: ¿te gusta?"
+     ],
+     "q": "Have you heard voseo in songs, films or from friends?",
+     "c": "Change three tú sentences into voseo: tú eres, tú tienes, ven aquí."
+    },
+    "de": {
+     "t": "Voseo: vos sos, vos tenés",
+     "g": "Verstehe, wie vos in Teilen Lateinamerikas tú ersetzt.",
+     "p": [
+      "In Argentinien, Uruguay und weiten Teilen Mittelamerikas sagt man vos statt tú.",
+      "Präsens: vos sos, vos tenés, vos querés, vos vivís (Betonung auf der letzten Silbe).",
+      "Imperativ: vení, decime, mirá. Das Objektpronomen bleibt te: ¿te gusta?"
+     ],
+     "q": "Hast du Voseo schon in Liedern, Filmen oder bei Freunden gehört?",
+     "c": "Wandle drei tú-Sätze in Voseo um: tú eres, tú tienes, ven aquí."
+    },
+    "es": {
+     "t": "Voseo: vos sos, vos tenés",
+     "g": "Entiende cómo vos sustituye a tú en partes de América Latina.",
+     "p": [
+      "En Argentina, Uruguay y gran parte de Centroamérica se usa vos en lugar de tú.",
+      "Presente: vos sos, vos tenés, vos querés, vos vivís (acento en la última sílaba).",
+      "Imperativo: vení, decime, mirá. El pronombre átono sigue siendo te: ¿te gusta?"
+     ],
+     "q": "¿Has oído el voseo en canciones, películas o a amigos?",
+     "c": "Pasa tres frases con tú a voseo: tú eres, tú tienes, ven aquí."
+    },
+    "fr": {
+     "t": "Le voseo : vos sos, vos tenés",
+     "g": "Comprends comment vos remplace tú dans une partie de l'Amérique latine.",
+     "p": [
+      "En Argentine, en Uruguay et dans une grande partie de l'Amérique centrale, on dit vos au lieu de tú.",
+      "Présent : vos sos, vos tenés, vos querés, vos vivís (accent sur la dernière syllabe).",
+      "Impératif : vení, decime, mirá. Le pronom complément reste te : ¿te gusta?"
+     ],
+     "q": "As-tu déjà entendu le voseo dans des chansons, des films ou chez des amis ?",
+     "c": "Transforme trois phrases avec tú en voseo : tú eres, tú tienes, ven aquí."
+    },
+    "it": {
+     "t": "Voseo: vos sos, vos tenés",
+     "g": "Capisci come vos sostituisce tú in parte dell'America Latina.",
+     "p": [
+      "In Argentina, Uruguay e gran parte del Centro America si usa vos al posto di tú.",
+      "Presente: vos sos, vos tenés, vos querés, vos vivís (accento sull'ultima sillaba).",
+      "Imperativo: vení, decime, mirá. Il pronome complemento resta te: ¿te gusta?"
+     ],
+     "q": "Hai mai sentito il voseo in canzoni, film o da amici?",
+     "c": "Trasforma tre frasi con tú in voseo: tú eres, tú tienes, ven aquí."
+    },
+    "pt": {
+     "t": "Voseo: vos sos, vos tenés",
+     "g": "Percebe como vos substitui tú em partes da América Latina.",
+     "p": [
+      "Na Argentina, no Uruguai e em grande parte da América Central usa-se vos em vez de tú.",
+      "Presente: vos sos, vos tenés, vos querés, vos vivís (acento na última sílaba).",
+      "Imperativo: vení, decime, mirá. O pronome átono continua a ser te: ¿te gusta?"
+     ],
+     "q": "Já ouviste o voseo em canções, filmes ou a amigos?",
+     "c": "Passa três frases com tú para voseo: tú eres, tú tienes, ven aquí."
+    },
+    "pt_BR": {
+     "t": "Voseo: vos sos, vos tenés",
+     "g": "Entenda como vos substitui tú em partes da América Latina.",
+     "p": [
+      "Na Argentina, no Uruguai e em boa parte da América Central se usa vos em vez de tú.",
+      "Presente: vos sos, vos tenés, vos querés, vos vivís (acento na última sílaba).",
+      "Imperativo: vení, decime, mirá. O pronome oblíquo continua sendo te: ¿te gusta?"
+     ],
+     "q": "Você já ouviu o voseo em músicas, filmes ou de amigos?",
+     "c": "Passe três frases com tú para voseo: tú eres, tú tienes, ven aquí."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "vos sos",
+      "ex": "Vos sos muy amable, gracias."
+     },
+     {
+      "w": "vos tenés",
+      "ex": "¿Vos tenés tiempo mañana?"
+     },
+     {
+      "w": "vos querés",
+      "ex": "¿Qué querés tomar?"
+     },
+     {
+      "w": "vení",
+      "ex": "Vení a casa el sábado."
+     },
+     {
+      "w": "decime",
+      "ex": "Decime la verdad, ¿te gustó?"
+     },
+     {
+      "w": "mirá",
+      "ex": "Mirá qué lindo está el día."
+     }
+    ],
+    "gram": "Voseo: presente con acento final (sos, tenés, vivís) e imperativo sin diptongo (vení, mirá); se mantiene te: vos te llamás."
+   }
+  },
+  {
+   "d": 333,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Accents of the Spanish-speaking world",
+     "g": "Recognise the main accents and enjoy their variety.",
+     "p": [
+      "Madrid: z and ce/ci sound like English th; final -s is clear.",
+      "Mexico City: clear consonants, s for z; Buenos Aires: ll and y sound like sh.",
+      "Caribbean and Andalusia: the s often softens or disappears: ¿cómo ehtá?"
+     ],
+     "q": "Which Spanish accent do you find easiest to understand?",
+     "c": "Listen to two Spanish speakers from different countries and note one difference you hear."
+    },
+    "de": {
+     "t": "Akzente der spanischsprachigen Welt",
+     "g": "Erkenne die wichtigsten Akzente und genieße ihre Vielfalt.",
+     "p": [
+      "Madrid: z und ce/ci klingen wie englisches th; das -s am Ende ist deutlich.",
+      "Mexiko-Stadt: klare Konsonanten, s für z; Buenos Aires: ll und y klingen wie sch.",
+      "Karibik und Andalusien: das s wird oft weich oder fällt weg: ¿cómo ehtá?"
+     ],
+     "q": "Welchen spanischen Akzent verstehst du am leichtesten?",
+     "c": "Hör zwei Spanischsprechende aus verschiedenen Ländern und notiere einen Unterschied."
+    },
+    "es": {
+     "t": "Acentos del mundo hispano",
+     "g": "Reconoce los principales acentos y disfruta de su variedad.",
+     "p": [
+      "Madrid: la z y ce/ci suenan como th inglesa; la -s final se oye clara.",
+      "Ciudad de México: consonantes claras, seseo; Buenos Aires: ll e y suenan como sh.",
+      "Caribe y Andalucía: la s a menudo se aspira o desaparece: ¿cómo ehtá?"
+     ],
+     "q": "¿Qué acento hispano te resulta más fácil de entender?",
+     "c": "Escucha a dos hispanohablantes de países distintos y anota una diferencia que oigas."
+    },
+    "fr": {
+     "t": "Les accents du monde hispanophone",
+     "g": "Reconnais les principaux accents et profite de leur diversité.",
+     "p": [
+      "Madrid : z et ce/ci se prononcent comme le th anglais ; le -s final est net.",
+      "Mexico : consonnes nettes, s pour z ; Buenos Aires : ll et y sonnent comme ch.",
+      "Caraïbes et Andalousie : le s s'aspire ou disparaît souvent : ¿cómo ehtá?"
+     ],
+     "q": "Quel accent espagnol trouves-tu le plus facile à comprendre ?",
+     "c": "Écoute deux hispanophones de pays différents et note une différence que tu entends."
+    },
+    "it": {
+     "t": "Accenti del mondo ispanico",
+     "g": "Riconosci i principali accenti e goditi la loro varietà.",
+     "p": [
+      "Madrid: z e ce/ci suonano come il th inglese; la -s finale è chiara.",
+      "Città del Messico: consonanti nitide, s al posto di z; Buenos Aires: ll e y suonano come sc.",
+      "Caraibi e Andalusia: la s spesso si aspira o sparisce: ¿cómo ehtá?"
+     ],
+     "q": "Quale accento spagnolo trovi più facile da capire?",
+     "c": "Ascolta due ispanofoni di paesi diversi e annota una differenza che senti."
+    },
+    "pt": {
+     "t": "Sotaques do mundo hispânico",
+     "g": "Reconhece os principais sotaques e aprecia a sua variedade.",
+     "p": [
+      "Madrid: o z e ce/ci soam como o th inglês; o -s final ouve-se bem.",
+      "Cidade do México: consoantes claras, s em vez de z; Buenos Aires: ll e y soam como ch.",
+      "Caraíbas e Andaluzia: o s aspira-se ou desaparece muitas vezes: ¿cómo ehtá?"
+     ],
+     "q": "Que sotaque hispânico achas mais fácil de entender?",
+     "c": "Ouve dois falantes de espanhol de países diferentes e anota uma diferença que notes."
+    },
+    "pt_BR": {
+     "t": "Sotaques do mundo hispânico",
+     "g": "Reconheça os principais sotaques e curta a variedade deles.",
+     "p": [
+      "Madri: o z e ce/ci soam como o th inglês; o -s final é bem audível.",
+      "Cidade do México: consoantes claras, s no lugar de z; Buenos Aires: ll e y soam como ch.",
+      "Caribe e Andaluzia: o s muitas vezes é aspirado ou some: ¿cómo ehtá?"
+     ],
+     "q": "Qual sotaque hispânico você acha mais fácil de entender?",
+     "c": "Ouça dois falantes de espanhol de países diferentes e anote uma diferença que você notar."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el acento",
+      "ex": "Tiene un acento colombiano muy suave."
+     },
+     {
+      "w": "el seseo",
+      "ex": "En América el seseo es lo habitual."
+     },
+     {
+      "w": "aspirar la s",
+      "ex": "En Cuba muchos hablantes aspiran la s."
+     },
+     {
+      "w": "la pronunciación",
+      "ex": "Su pronunciación es muy clara."
+     },
+     {
+      "w": "hispanohablante",
+      "ex": "Hay más de veinte países hispanohablantes."
+     },
+     {
+      "w": "sonar a",
+      "ex": "Ese acento me suena a Canarias."
+     }
+    ],
+    "gram": "Variación fonética: distinción z/s en gran parte de España, seseo en América y Canarias, yeísmo rehilado en el Río de la Plata."
+   }
+  },
+  {
+   "d": 334,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Slang and informal Spanish",
+     "g": "Understand casual Spanish and know where each word fits.",
+     "p": [
+      "Spain: mola (it's cool), guay, tío/tía for friends.",
+      "Latin America: chévere (Colombia, Venezuela), ¿qué onda? (Mexico), che (Argentina), pana (friend).",
+      "Slang is for friends and relaxed chats, not for emails to your boss."
+     ],
+     "q": "Which slang word from today do you like the most?",
+     "c": "Write a casual message to a friend using two slang words and say which country they come from."
+    },
+    "de": {
+     "t": "Slang und lockeres Spanisch",
+     "g": "Verstehe umgangssprachliches Spanisch und wisse, wohin jedes Wort passt.",
+     "p": [
+      "Spanien: mola (ist cool), guay, tío/tía unter Freunden.",
+      "Lateinamerika: chévere (Kolumbien, Venezuela), ¿qué onda? (Mexiko), che (Argentinien), pana (Kumpel).",
+      "Slang ist für Freunde und lockere Chats, nicht für E-Mails an die Chefin."
+     ],
+     "q": "Welches Slangwort von heute gefällt dir am besten?",
+     "c": "Schreib eine lockere Nachricht an einen Freund mit zwei Slangwörtern und nenne ihr Herkunftsland."
+    },
+    "es": {
+     "t": "Argot y español informal",
+     "g": "Entiende el español coloquial y sabe dónde encaja cada palabra.",
+     "p": [
+      "España: mola (es genial), guay, tío/tía entre amigos.",
+      "América Latina: chévere (Colombia, Venezuela), ¿qué onda? (México), che (Argentina), pana (amigo).",
+      "El argot es para amigos y charlas relajadas, no para un correo a tu jefa."
+     ],
+     "q": "¿Qué palabra coloquial de hoy te gusta más?",
+     "c": "Escribe un mensaje informal a un amigo con dos palabras coloquiales y di de qué país son."
+    },
+    "fr": {
+     "t": "Argot et espagnol familier",
+     "g": "Comprends l'espagnol familier et sache où chaque mot convient.",
+     "p": [
+      "Espagne : mola (c'est cool), guay, tío/tía entre amis.",
+      "Amérique latine : chévere (Colombie, Venezuela), ¿qué onda? (Mexique), che (Argentine), pana (pote).",
+      "L'argot, c'est pour les amis et les discussions détendues, pas pour un e-mail à ta cheffe."
+     ],
+     "q": "Quel mot d'argot du jour préfères-tu ?",
+     "c": "Écris un message familier à un ami avec deux mots d'argot et dis de quel pays ils viennent."
+    },
+    "it": {
+     "t": "Slang e spagnolo informale",
+     "g": "Capisci lo spagnolo colloquiale e sappi dove sta bene ogni parola.",
+     "p": [
+      "Spagna: mola (è forte), guay, tío/tía tra amici.",
+      "America Latina: chévere (Colombia, Venezuela), ¿qué onda? (Messico), che (Argentina), pana (amico).",
+      "Lo slang è per amici e chiacchiere rilassate, non per un'email al capo."
+     ],
+     "q": "Quale parola colloquiale di oggi ti piace di più?",
+     "c": "Scrivi un messaggio informale a un amico con due parole di slang e indica il paese d'origine."
+    },
+    "pt": {
+     "t": "Calão e espanhol informal",
+     "g": "Compreende o espanhol coloquial e sabe onde encaixa cada palavra.",
+     "p": [
+      "Espanha: mola (é fixe), guay, tío/tía entre amigos.",
+      "América Latina: chévere (Colômbia, Venezuela), ¿qué onda? (México), che (Argentina), pana (amigo).",
+      "O calão é para amigos e conversas descontraídas, não para um e-mail à chefe."
+     ],
+     "q": "Que palavra coloquial de hoje preferes?",
+     "c": "Escreve uma mensagem informal a um amigo com duas palavras coloquiais e diz de que país são."
+    },
+    "pt_BR": {
+     "t": "Gírias e espanhol informal",
+     "g": "Entenda o espanhol coloquial e saiba onde cada palavra se encaixa.",
+     "p": [
+      "Espanha: mola (é legal), guay, tío/tía entre amigos.",
+      "América Latina: chévere (Colômbia, Venezuela), ¿qué onda? (México), che (Argentina), pana (amigo).",
+      "Gíria é para amigos e conversas descontraídas, não para um e-mail à chefe."
+     ],
+     "q": "Qual gíria de hoje você curtiu mais?",
+     "c": "Escreva uma mensagem informal a um amigo com duas gírias e diga de que país elas são."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "mola",
+      "ex": "¡Cómo mola tu chaqueta nueva!"
+     },
+     {
+      "w": "guay",
+      "ex": "El concierto estuvo muy guay."
+     },
+     {
+      "w": "chévere",
+      "ex": "¡Qué chévere tu plan para el finde!"
+     },
+     {
+      "w": "¿qué onda?",
+      "ex": "¿Qué onda, güey? ¿Vamos al cine?"
+     },
+     {
+      "w": "che",
+      "ex": "Che, ¿venís a cenar esta noche?"
+     },
+     {
+      "w": "pana",
+      "ex": "Mi pana Luis me ayudó con la mudanza."
+     }
+    ],
+    "gram": "Registro coloquial: léxico regional (mola, chévere, che) y apócopes (finde, peli, cole) solo en contextos informales."
+   }
+  },
+  {
+   "d": 335,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Humour and irony",
+     "g": "Recognise irony and double meanings and use humour carefully.",
+     "p": [
+      "Irony says the opposite: ¡Qué día tan bonito! when it is pouring with rain.",
+      "Double meanings (doble sentido) play on words: Estoy hecho polvo, literally dust, means exhausted.",
+      "Dry humour (humor seco) is said with a straight face; tone and context are key."
+     ],
+     "q": "What makes you laugh in your own language?",
+     "c": "Write one ironic sentence about the weather and one about Monday mornings."
+    },
+    "de": {
+     "t": "Humor und Ironie",
+     "g": "Erkenne Ironie und Doppeldeutigkeiten und setze Humor behutsam ein.",
+     "p": [
+      "Ironie sagt das Gegenteil: ¡Qué día tan bonito! bei strömendem Regen.",
+      "Doppeldeutigkeit (doble sentido) spielt mit Wörtern: Estoy hecho polvo heißt völlig erschöpft.",
+      "Trockener Humor (humor seco) kommt mit ernster Miene; Ton und Kontext sind entscheidend."
+     ],
+     "q": "Worüber lachst du in deiner eigenen Sprache?",
+     "c": "Schreib einen ironischen Satz über das Wetter und einen über Montagmorgen."
+    },
+    "es": {
+     "t": "Humor e ironía",
+     "g": "Reconoce la ironía y el doble sentido, y usa el humor con cuidado.",
+     "p": [
+      "La ironía dice lo contrario: ¡Qué día tan bonito! cuando llueve a cántaros.",
+      "El doble sentido juega con las palabras: Estoy hecho polvo significa estoy agotado.",
+      "El humor seco se dice muy serio; el tono y el contexto lo son todo."
+     ],
+     "q": "¿Qué te hace reír en tu propia lengua?",
+     "c": "Escribe una frase irónica sobre el tiempo y otra sobre los lunes por la mañana."
+    },
+    "fr": {
+     "t": "Humour et ironie",
+     "g": "Repère l'ironie et le double sens, et manie l'humour avec soin.",
+     "p": [
+      "L'ironie dit le contraire : ¡Qué día tan bonito! sous une pluie battante.",
+      "Le double sens joue sur les mots : Estoy hecho polvo veut dire je suis épuisé.",
+      "L'humour pince-sans-rire (humor seco) se dit sérieusement ; ton et contexte sont essentiels."
+     ],
+     "q": "Qu'est-ce qui te fait rire dans ta langue ?",
+     "c": "Écris une phrase ironique sur la météo et une sur les lundis matin."
+    },
+    "it": {
+     "t": "Umorismo e ironia",
+     "g": "Riconosci ironia e doppi sensi, e usa l'umorismo con attenzione.",
+     "p": [
+      "L'ironia dice il contrario: ¡Qué día tan bonito! mentre diluvia.",
+      "Il doppio senso gioca con le parole: Estoy hecho polvo significa sono distrutto.",
+      "L'umorismo secco (humor seco) si dice serissimi; tono e contesto sono tutto."
+     ],
+     "q": "Cosa ti fa ridere nella tua lingua?",
+     "c": "Scrivi una frase ironica sul tempo e una sul lunedì mattina."
+    },
+    "pt": {
+     "t": "Humor e ironia",
+     "g": "Reconhece a ironia e o duplo sentido, e usa o humor com cuidado.",
+     "p": [
+      "A ironia diz o contrário: ¡Qué día tan bonito! quando chove a potes.",
+      "O duplo sentido joga com as palavras: Estoy hecho polvo quer dizer estou exausto.",
+      "O humor seco diz-se com cara séria; o tom e o contexto são tudo."
+     ],
+     "q": "O que te faz rir na tua própria língua?",
+     "c": "Escreve uma frase irónica sobre o tempo e outra sobre as segundas de manhã."
+    },
+    "pt_BR": {
+     "t": "Humor e ironia",
+     "g": "Reconheça a ironia e o duplo sentido, e use o humor com cuidado.",
+     "p": [
+      "A ironia diz o contrário: ¡Qué día tan bonito! quando está caindo um temporal.",
+      "O duplo sentido brinca com as palavras: Estoy hecho polvo quer dizer estou exausto.",
+      "O humor seco é dito com cara séria; o tom e o contexto são tudo."
+     ],
+     "q": "O que faz você rir na sua própria língua?",
+     "c": "Escreva uma frase irônica sobre o tempo e outra sobre as segundas de manhã."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la ironía",
+      "ex": "Lo dijo con ironía, no te lo tomes en serio."
+     },
+     {
+      "w": "el doble sentido",
+      "ex": "El chiste tiene doble sentido."
+     },
+     {
+      "w": "estar hecho polvo",
+      "ex": "Después de la mudanza estoy hecho polvo."
+     },
+     {
+      "w": "tomarse algo a broma",
+      "ex": "Se lo tomó a broma y todos nos reímos."
+     },
+     {
+      "w": "¡qué gracia!",
+      "ex": "¡Qué gracia me hace tu perro con gafas!"
+     },
+     {
+      "w": "en serio",
+      "ex": "¿Lo dices en serio o es broma?"
+     }
+    ],
+    "gram": "Ironía con exclamativas (¡qué + adjetivo!, ¡menudo + sustantivo!): ¡Menudo día! puede elogiar o quejarse según el tono."
+   }
+  },
+  {
+   "d": 336,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Understanding native speed",
+     "g": "Use smart strategies to follow fast, natural Spanish.",
+     "p": [
+      "Native speakers link words: para el becomes pa'l, todo becomes to', nada becomes na'.",
+      "Final -d often disappears: cansao instead of cansado, Madrí instead of Madrid.",
+      "Don't chase every word: listen for key nouns and verbs and use context to fill gaps."
+     ],
+     "q": "What do you do when someone speaks too fast for you?",
+     "c": "Watch one minute of a Spanish video and write down three words or reduced forms you catch."
+    },
+    "de": {
+     "t": "Muttersprachliches Tempo verstehen",
+     "g": "Nutze kluge Strategien, um schnellem, natürlichem Spanisch zu folgen.",
+     "p": [
+      "Wörter werden verbunden: para el wird pa'l, todo wird to', nada wird na'.",
+      "Das -d am Ende fällt oft weg: cansao statt cansado, Madrí statt Madrid.",
+      "Jag nicht jedem Wort hinterher: achte auf Schlüsselnomen und -verben, der Kontext füllt Lücken."
+     ],
+     "q": "Was machst du, wenn jemand für dich zu schnell spricht?",
+     "c": "Schau eine Minute eines spanischen Videos und notiere drei Wörter oder verkürzte Formen."
+    },
+    "es": {
+     "t": "Entender la velocidad nativa",
+     "g": "Usa estrategias para seguir un español rápido y natural.",
+     "p": [
+      "Los nativos unen palabras: para el se vuelve pa'l, todo se vuelve to', nada se vuelve na'.",
+      "La -d final o entre vocales suele caer: cansao en vez de cansado, Madrí por Madrid.",
+      "No persigas cada palabra: atiende a sustantivos y verbos clave y usa el contexto."
+     ],
+     "q": "¿Qué haces cuando alguien habla demasiado rápido para ti?",
+     "c": "Mira un minuto de un vídeo en español y apunta tres palabras o formas reducidas que entiendas."
+    },
+    "fr": {
+     "t": "Comprendre le débit natif",
+     "g": "Utilise de bonnes stratégies pour suivre un espagnol rapide et naturel.",
+     "p": [
+      "Les natifs lient les mots : para el devient pa'l, todo devient to', nada devient na'.",
+      "Le -d final ou entre voyelles tombe souvent : cansao pour cansado, Madrí pour Madrid.",
+      "Ne poursuis pas chaque mot : repère noms et verbes clés, le contexte fera le reste."
+     ],
+     "q": "Que fais-tu quand quelqu'un parle trop vite pour toi ?",
+     "c": "Regarde une minute d'une vidéo en espagnol et note trois mots ou formes réduites que tu saisis."
+    },
+    "it": {
+     "t": "Capire la velocità dei nativi",
+     "g": "Usa strategie furbe per seguire uno spagnolo veloce e naturale.",
+     "p": [
+      "I nativi uniscono le parole: para el diventa pa'l, todo diventa to', nada diventa na'.",
+      "La -d finale o tra vocali spesso cade: cansao invece di cansado, Madrí per Madrid.",
+      "Non inseguire ogni parola: cogli nomi e verbi chiave e usa il contesto."
+     ],
+     "q": "Cosa fai quando qualcuno parla troppo veloce per te?",
+     "c": "Guarda un minuto di un video in spagnolo e annota tre parole o forme ridotte che capisci."
+    },
+    "pt": {
+     "t": "Perceber a velocidade nativa",
+     "g": "Usa estratégias para acompanhar um espanhol rápido e natural.",
+     "p": [
+      "Os nativos juntam palavras: para el passa a pa'l, todo a to', nada a na'.",
+      "O -d final ou entre vogais cai muitas vezes: cansao em vez de cansado, Madrí por Madrid.",
+      "Não persigas cada palavra: atenta nos nomes e verbos-chave e usa o contexto."
+     ],
+     "q": "O que fazes quando alguém fala depressa demais para ti?",
+     "c": "Vê um minuto de um vídeo em espanhol e aponta três palavras ou formas reduzidas que apanhes."
+    },
+    "pt_BR": {
+     "t": "Entender a velocidade nativa",
+     "g": "Use estratégias para acompanhar um espanhol rápido e natural.",
+     "p": [
+      "Os nativos juntam palavras: para el vira pa'l, todo vira to', nada vira na'.",
+      "O -d final ou entre vogais muitas vezes cai: cansao em vez de cansado, Madrí por Madrid.",
+      "Não corra atrás de cada palavra: foque nos substantivos e verbos-chave e use o contexto."
+     ],
+     "q": "O que você faz quando alguém fala rápido demais para você?",
+     "c": "Assista a um minuto de um vídeo em espanhol e anote três palavras ou formas reduzidas que pegar."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "pa'",
+      "ex": "Voy pa' casa, que estoy cansao."
+     },
+     {
+      "w": "to'",
+      "ex": "Está to' listo para la fiesta."
+     },
+     {
+      "w": "na'",
+      "ex": "No pasa na', tranquilo."
+     },
+     {
+      "w": "¿me lo repites?",
+      "ex": "Perdona, ¿me lo repites más despacio?"
+     },
+     {
+      "w": "captar",
+      "ex": "No capté la última parte del audio."
+     },
+     {
+      "w": "por el contexto",
+      "ex": "Lo entendí por el contexto."
+     }
+    ],
+    "gram": "Habla rápida: apócopes (pa', to', na'), caída de la -d- (cansao) y sinalefa entre vocales (la_hora suena lahora)."
+   }
+  },
+  {
+   "d": 337,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Ethics in technology",
+     "g": "Discuss big questions about technology with nuance.",
+     "p": [
+      "Key ideas: la privacidad, la equidad, la responsabilidad, los datos personales.",
+      "Weigh both sides: por un lado facilita la vida, por otro plantea dudas.",
+      "Express concern: me preocupa que + subjunctive; es fundamental que + subjunctive."
+     ],
+     "q": "What worries you most about technology, and what excites you most?",
+     "c": "Write two sentences on privacy using me preocupa que and es fundamental que."
+    },
+    "de": {
+     "t": "Ethik in der Technologie",
+     "g": "Diskutiere große Fragen zur Technologie mit Nuancen.",
+     "p": [
+      "Schlüsselideen: la privacidad, la equidad, la responsabilidad, los datos personales.",
+      "Beide Seiten abwägen: por un lado facilita la vida, por otro plantea dudas.",
+      "Sorge ausdrücken: me preocupa que + Subjuntivo; es fundamental que + Subjuntivo."
+     ],
+     "q": "Was beunruhigt dich an Technologie am meisten, und was begeistert dich am meisten?",
+     "c": "Schreib zwei Sätze zur Privatsphäre mit me preocupa que und es fundamental que."
+    },
+    "es": {
+     "t": "Ética y tecnología",
+     "g": "Debate grandes cuestiones sobre tecnología con matices.",
+     "p": [
+      "Ideas clave: la privacidad, la equidad, la responsabilidad, los datos personales.",
+      "Sopesa ambos lados: por un lado facilita la vida, por otro plantea dudas.",
+      "Expresa preocupación: me preocupa que + subjuntivo; es fundamental que + subjuntivo."
+     ],
+     "q": "¿Qué es lo que más te preocupa de la tecnología y lo que más te ilusiona?",
+     "c": "Escribe dos frases sobre la privacidad con me preocupa que y es fundamental que."
+    },
+    "fr": {
+     "t": "Éthique et technologie",
+     "g": "Discute des grandes questions sur la technologie avec nuance.",
+     "p": [
+      "Idées clés : la privacidad, la equidad, la responsabilidad, los datos personales.",
+      "Pèse le pour et le contre : por un lado facilita la vida, por otro plantea dudas.",
+      "Exprime une inquiétude : me preocupa que + subjonctif ; es fundamental que + subjonctif."
+     ],
+     "q": "Qu'est-ce qui t'inquiète le plus dans la technologie, et qu'est-ce qui t'enthousiasme le plus ?",
+     "c": "Écris deux phrases sur la vie privée avec me preocupa que et es fundamental que."
+    },
+    "it": {
+     "t": "Etica e tecnologia",
+     "g": "Discuti le grandi questioni sulla tecnologia con sfumature.",
+     "p": [
+      "Idee chiave: la privacidad, la equidad, la responsabilidad, los datos personales.",
+      "Valuta entrambi i lati: por un lado facilita la vida, por otro plantea dudas.",
+      "Esprimi preoccupazione: me preocupa que + congiuntivo; es fundamental que + congiuntivo."
+     ],
+     "q": "Cosa ti preoccupa di più della tecnologia, e cosa ti entusiasma di più?",
+     "c": "Scrivi due frasi sulla privacy con me preocupa que e es fundamental que."
+    },
+    "pt": {
+     "t": "Ética e tecnologia",
+     "g": "Debate grandes questões sobre tecnologia com nuance.",
+     "p": [
+      "Ideias-chave: la privacidad, la equidad, la responsabilidad, los datos personales.",
+      "Pesa os dois lados: por un lado facilita la vida, por otro plantea dudas.",
+      "Exprime preocupação: me preocupa que + conjuntivo; es fundamental que + conjuntivo."
+     ],
+     "q": "O que mais te preocupa na tecnologia, e o que mais te entusiasma?",
+     "c": "Escreve duas frases sobre privacidade com me preocupa que e es fundamental que."
+    },
+    "pt_BR": {
+     "t": "Ética e tecnologia",
+     "g": "Debata grandes questões sobre tecnologia com nuance.",
+     "p": [
+      "Ideias-chave: la privacidad, la equidad, la responsabilidad, los datos personales.",
+      "Pese os dois lados: por un lado facilita la vida, por otro plantea dudas.",
+      "Expresse preocupação: me preocupa que + subjuntivo; es fundamental que + subjuntivo."
+     ],
+     "q": "O que mais preocupa você na tecnologia, e o que mais empolga?",
+     "c": "Escreva duas frases sobre privacidade com me preocupa que e es fundamental que."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la privacidad",
+      "ex": "La privacidad en internet es un derecho importante."
+     },
+     {
+      "w": "los datos personales",
+      "ex": "Protege tus datos personales con contraseñas seguras."
+     },
+     {
+      "w": "la equidad",
+      "ex": "La tecnología debería promover la equidad."
+     },
+     {
+      "w": "la responsabilidad",
+      "ex": "Las empresas tienen la responsabilidad de ser transparentes."
+     },
+     {
+      "w": "me preocupa que",
+      "ex": "Me preocupa que pasemos tanto tiempo ante las pantallas."
+     },
+     {
+      "w": "plantear dudas",
+      "ex": "Esta aplicación plantea dudas sobre la seguridad."
+     }
+    ],
+    "gram": "Valoración y sentimiento + que + subjuntivo: me preocupa que, es fundamental que, es lógico que + presente de subjuntivo."
+   }
+  },
+  {
+   "d": 338,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Artificial intelligence and the future",
+     "g": "Talk about AI, its advantages and its challenges.",
+     "p": [
+      "Key words: la inteligencia artificial, el algoritmo, la automatización, aprender de los datos.",
+      "Advantages and challenges: ventajas como..., retos como...",
+      "Predict with the future and conditions: Si la usamos bien, mejorará la medicina."
+     ],
+     "q": "How do you use artificial intelligence in your daily life, if at all?",
+     "c": "Write two predictions about AI with si + present + future."
+    },
+    "de": {
+     "t": "Künstliche Intelligenz und Zukunft",
+     "g": "Sprich über KI, ihre Vorteile und ihre Herausforderungen.",
+     "p": [
+      "Schlüsselwörter: la inteligencia artificial, el algoritmo, la automatización, aprender de los datos.",
+      "Vorteile und Herausforderungen: ventajas como..., retos como...",
+      "Vorhersagen mit Futur und Bedingung: Si la usamos bien, mejorará la medicina."
+     ],
+     "q": "Wie nutzt du künstliche Intelligenz in deinem Alltag, wenn überhaupt?",
+     "c": "Schreib zwei Vorhersagen über KI mit si + Präsens + Futur."
+    },
+    "es": {
+     "t": "Inteligencia artificial y futuro",
+     "g": "Habla de la IA, sus ventajas y sus retos.",
+     "p": [
+      "Palabras clave: la inteligencia artificial, el algoritmo, la automatización, aprender de los datos.",
+      "Ventajas y retos: ventajas como..., retos como...",
+      "Predice con futuro y condiciones: Si la usamos bien, mejorará la medicina."
+     ],
+     "q": "¿Cómo usas la inteligencia artificial en tu día a día, si la usas?",
+     "c": "Escribe dos predicciones sobre la IA con si + presente + futuro."
+    },
+    "fr": {
+     "t": "L'intelligence artificielle et l'avenir",
+     "g": "Parle de l'IA, de ses avantages et de ses défis.",
+     "p": [
+      "Mots clés : la inteligencia artificial, el algoritmo, la automatización, aprender de los datos.",
+      "Avantages et défis : ventajas como..., retos como...",
+      "Prédis avec le futur et la condition : Si la usamos bien, mejorará la medicina."
+     ],
+     "q": "Comment utilises-tu l'intelligence artificielle au quotidien, si tu l'utilises ?",
+     "c": "Écris deux prédictions sur l'IA avec si + présent + futur."
+    },
+    "it": {
+     "t": "Intelligenza artificiale e futuro",
+     "g": "Parla dell'IA, dei suoi vantaggi e delle sue sfide.",
+     "p": [
+      "Parole chiave: la inteligencia artificial, el algoritmo, la automatización, aprender de los datos.",
+      "Vantaggi e sfide: ventajas como..., retos como...",
+      "Prevedi con futuro e condizione: Si la usamos bien, mejorará la medicina."
+     ],
+     "q": "Come usi l'intelligenza artificiale nella vita quotidiana, se la usi?",
+     "c": "Scrivi due previsioni sull'IA con si + presente + futuro."
+    },
+    "pt": {
+     "t": "Inteligência artificial e futuro",
+     "g": "Fala da IA, das suas vantagens e dos seus desafios.",
+     "p": [
+      "Palavras-chave: la inteligencia artificial, el algoritmo, la automatización, aprender de los datos.",
+      "Vantagens e desafios: ventajas como..., retos como...",
+      "Prevê com futuro e condição: Si la usamos bien, mejorará la medicina."
+     ],
+     "q": "Como usas a inteligência artificial no dia a dia, se a usas?",
+     "c": "Escreve duas previsões sobre a IA com si + presente + futuro."
+    },
+    "pt_BR": {
+     "t": "Inteligência artificial e futuro",
+     "g": "Fale sobre a IA, suas vantagens e seus desafios.",
+     "p": [
+      "Palavras-chave: la inteligencia artificial, el algoritmo, la automatización, aprender de los datos.",
+      "Vantagens e desafios: ventajas como..., retos como...",
+      "Preveja com futuro e condição: Si la usamos bien, mejorará la medicina."
+     ],
+     "q": "Como você usa a inteligência artificial no dia a dia, se usa?",
+     "c": "Escreva duas previsões sobre a IA com si + presente + futuro."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la inteligencia artificial",
+      "ex": "La inteligencia artificial ya traduce textos en segundos."
+     },
+     {
+      "w": "el algoritmo",
+      "ex": "El algoritmo recomienda canciones según tus gustos."
+     },
+     {
+      "w": "la automatización",
+      "ex": "La automatización cambiará muchas tareas repetitivas."
+     },
+     {
+      "w": "el reto",
+      "ex": "Uno de los grandes retos es la transparencia."
+     },
+     {
+      "w": "la ventaja",
+      "ex": "Una ventaja clara es el ahorro de tiempo."
+     },
+     {
+      "w": "a largo plazo",
+      "ex": "A largo plazo, surgirán profesiones nuevas."
+     }
+    ],
+    "gram": "Condicional real: si + presente de indicativo, futuro (si la usamos bien, mejorará); nunca si + futuro."
+   }
+  },
+  {
+   "d": 339,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Cities and urban life",
+     "g": "Discuss how cities work and how they could improve.",
+     "p": [
+      "Key words: las zonas verdes, el transporte público, el carril bici, la ciudad inteligente.",
+      "Propose improvements: Habría que..., Sería ideal que + imperfect subjunctive.",
+      "Compare: Mi ciudad tiene más parques que antes, pero menos aparcamiento."
+     ],
+     "q": "What would you change first in your city?",
+     "c": "Propose three improvements for your city with habría que and sería ideal que."
+    },
+    "de": {
+     "t": "Städte und urbanes Leben",
+     "g": "Sprich darüber, wie Städte funktionieren und wie sie besser werden könnten.",
+     "p": [
+      "Schlüsselwörter: las zonas verdes, el transporte público, el carril bici, la ciudad inteligente.",
+      "Verbesserungen vorschlagen: Habría que..., Sería ideal que + Subjuntivo Imperfekt.",
+      "Vergleichen: Mi ciudad tiene más parques que antes, pero menos aparcamiento."
+     ],
+     "q": "Was würdest du in deiner Stadt zuerst ändern?",
+     "c": "Schlag drei Verbesserungen für deine Stadt vor, mit habría que und sería ideal que."
+    },
+    "es": {
+     "t": "Ciudades y vida urbana",
+     "g": "Habla de cómo funcionan las ciudades y cómo podrían mejorar.",
+     "p": [
+      "Palabras clave: las zonas verdes, el transporte público, el carril bici, la ciudad inteligente.",
+      "Propón mejoras: Habría que..., Sería ideal que + imperfecto de subjuntivo.",
+      "Compara: Mi ciudad tiene más parques que antes, pero menos aparcamiento."
+     ],
+     "q": "¿Qué cambiarías primero en tu ciudad?",
+     "c": "Propón tres mejoras para tu ciudad con habría que y sería ideal que."
+    },
+    "fr": {
+     "t": "Villes et vie urbaine",
+     "g": "Parle du fonctionnement des villes et de la façon de les améliorer.",
+     "p": [
+      "Mots clés : las zonas verdes, el transporte público, el carril bici, la ciudad inteligente.",
+      "Propose des améliorations : Habría que..., Sería ideal que + subjonctif imparfait.",
+      "Compare : Mi ciudad tiene más parques que antes, pero menos aparcamiento."
+     ],
+     "q": "Que changerais-tu en premier dans ta ville ?",
+     "c": "Propose trois améliorations pour ta ville avec habría que et sería ideal que."
+    },
+    "it": {
+     "t": "Città e vita urbana",
+     "g": "Parla di come funzionano le città e di come potrebbero migliorare.",
+     "p": [
+      "Parole chiave: las zonas verdes, el transporte público, el carril bici, la ciudad inteligente.",
+      "Proponi miglioramenti: Habría que..., Sería ideal que + congiuntivo imperfetto.",
+      "Confronta: Mi ciudad tiene más parques que antes, pero menos aparcamiento."
+     ],
+     "q": "Che cosa cambieresti per primo nella tua città?",
+     "c": "Proponi tre miglioramenti per la tua città con habría que e sería ideal que."
+    },
+    "pt": {
+     "t": "Cidades e vida urbana",
+     "g": "Fala de como funcionam as cidades e de como poderiam melhorar.",
+     "p": [
+      "Palavras-chave: las zonas verdes, el transporte público, el carril bici, la ciudad inteligente.",
+      "Propõe melhorias: Habría que..., Sería ideal que + imperfeito do conjuntivo.",
+      "Compara: Mi ciudad tiene más parques que antes, pero menos aparcamiento."
+     ],
+     "q": "O que mudarias primeiro na tua cidade?",
+     "c": "Propõe três melhorias para a tua cidade com habría que e sería ideal que."
+    },
+    "pt_BR": {
+     "t": "Cidades e vida urbana",
+     "g": "Fale sobre como as cidades funcionam e como poderiam melhorar.",
+     "p": [
+      "Palavras-chave: las zonas verdes, el transporte público, el carril bici, la ciudad inteligente.",
+      "Proponha melhorias: Habría que..., Sería ideal que + imperfeito do subjuntivo.",
+      "Compare: Mi ciudad tiene más parques que antes, pero menos aparcamiento."
+     ],
+     "q": "O que você mudaria primeiro na sua cidade?",
+     "c": "Proponha três melhorias para sua cidade com habría que e sería ideal que."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "las zonas verdes",
+      "ex": "Necesitamos más zonas verdes en el centro."
+     },
+     {
+      "w": "el transporte público",
+      "ex": "El transporte público funciona muy bien aquí."
+     },
+     {
+      "w": "el carril bici",
+      "ex": "Han abierto un carril bici junto al río."
+     },
+     {
+      "w": "la ciudad inteligente",
+      "ex": "Una ciudad inteligente usa datos para ahorrar energía."
+     },
+     {
+      "w": "habría que",
+      "ex": "Habría que peatonalizar el casco antiguo."
+     },
+     {
+      "w": "sería ideal que",
+      "ex": "Sería ideal que hubiera más fuentes públicas."
+     }
+    ],
+    "gram": "Propuestas: habría que + infinitivo; sería ideal / estaría bien que + imperfecto de subjuntivo (hubiera, tuviéramos)."
+   }
+  },
+  {
+   "d": 340,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Space exploration",
+     "g": "Talk about space, missions and great discoveries.",
+     "p": [
+      "Key words: el astronauta, la órbita, la misión, el telescopio, la nave espacial.",
+      "History: En 1969 el ser humano llegó a la Luna con la misión Apolo 11.",
+      "Wonder about the future: ¿Llegaremos a Marte? Quizás algún día vivamos allí."
+     ],
+     "q": "If you could travel to space, where would you go?",
+     "c": "Write three sentences about space: one past fact, one future question and one sentence with quizás."
+    },
+    "de": {
+     "t": "Weltraumforschung",
+     "g": "Sprich über den Weltraum, Missionen und große Entdeckungen.",
+     "p": [
+      "Schlüsselwörter: el astronauta, la órbita, la misión, el telescopio, la nave espacial.",
+      "Geschichte: En 1969 el ser humano llegó a la Luna con la misión Apolo 11.",
+      "Über die Zukunft staunen: ¿Llegaremos a Marte? Quizás algún día vivamos allí."
+     ],
+     "q": "Wenn du ins All reisen könntest, wohin würdest du fliegen?",
+     "c": "Schreib drei Sätze über das All: eine Tatsache aus der Vergangenheit, eine Zukunftsfrage, einen Satz mit quizás."
+    },
+    "es": {
+     "t": "La exploración espacial",
+     "g": "Habla del espacio, de misiones y de grandes descubrimientos.",
+     "p": [
+      "Palabras clave: el astronauta, la órbita, la misión, el telescopio, la nave espacial.",
+      "Historia: En 1969 el ser humano llegó a la Luna con la misión Apolo 11.",
+      "Imagina el futuro: ¿Llegaremos a Marte? Quizás algún día vivamos allí."
+     ],
+     "q": "Si pudieras viajar al espacio, ¿adónde irías?",
+     "c": "Escribe tres frases sobre el espacio: un hecho pasado, una pregunta de futuro y una frase con quizás."
+    },
+    "fr": {
+     "t": "L'exploration spatiale",
+     "g": "Parle de l'espace, des missions et des grandes découvertes.",
+     "p": [
+      "Mots clés : el astronauta, la órbita, la misión, el telescopio, la nave espacial.",
+      "Histoire : En 1969 el ser humano llegó a la Luna con la misión Apolo 11.",
+      "Rêve d'avenir : ¿Llegaremos a Marte? Quizás algún día vivamos allí."
+     ],
+     "q": "Si tu pouvais voyager dans l'espace, où irais-tu ?",
+     "c": "Écris trois phrases sur l'espace : un fait passé, une question sur l'avenir, une phrase avec quizás."
+    },
+    "it": {
+     "t": "L'esplorazione spaziale",
+     "g": "Parla dello spazio, delle missioni e delle grandi scoperte.",
+     "p": [
+      "Parole chiave: el astronauta, la órbita, la misión, el telescopio, la nave espacial.",
+      "Storia: En 1969 el ser humano llegó a la Luna con la misión Apolo 11.",
+      "Immagina il futuro: ¿Llegaremos a Marte? Quizás algún día vivamos allí."
+     ],
+     "q": "Se potessi viaggiare nello spazio, dove andresti?",
+     "c": "Scrivi tre frasi sullo spazio: un fatto passato, una domanda sul futuro e una frase con quizás."
+    },
+    "pt": {
+     "t": "A exploração espacial",
+     "g": "Fala do espaço, de missões e de grandes descobertas.",
+     "p": [
+      "Palavras-chave: el astronauta, la órbita, la misión, el telescopio, la nave espacial.",
+      "História: En 1969 el ser humano llegó a la Luna con la misión Apolo 11.",
+      "Imagina o futuro: ¿Llegaremos a Marte? Quizás algún día vivamos allí."
+     ],
+     "q": "Se pudesses viajar para o espaço, para onde irias?",
+     "c": "Escreve três frases sobre o espaço: um facto passado, uma pergunta sobre o futuro e uma frase com quizás."
+    },
+    "pt_BR": {
+     "t": "A exploração espacial",
+     "g": "Fale sobre o espaço, missões e grandes descobertas.",
+     "p": [
+      "Palavras-chave: el astronauta, la órbita, la misión, el telescopio, la nave espacial.",
+      "História: En 1969 el ser humano llegó a la Luna con la misión Apolo 11.",
+      "Imagine o futuro: ¿Llegaremos a Marte? Quizás algún día vivamos allí."
+     ],
+     "q": "Se você pudesse viajar para o espaço, para onde iria?",
+     "c": "Escreva três frases sobre o espaço: um fato passado, uma pergunta sobre o futuro e uma frase com quizás."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el astronauta",
+      "ex": "La astronauta pasó seis meses en la estación espacial."
+     },
+     {
+      "w": "la órbita",
+      "ex": "El satélite gira en órbita alrededor de la Tierra."
+     },
+     {
+      "w": "la misión",
+      "ex": "La misión Apolo 11 llegó a la Luna en 1969."
+     },
+     {
+      "w": "el telescopio",
+      "ex": "Con este telescopio se ven galaxias lejanas."
+     },
+     {
+      "w": "la nave espacial",
+      "ex": "La nave espacial despegó al amanecer."
+     },
+     {
+      "w": "la llegada a la Luna",
+      "ex": "La llegada a la Luna emocionó a millones de personas."
+     }
+    ],
+    "gram": "Quizás / tal vez + subjuntivo para posibilidad (quizás vivamos en Marte); futuro simple para preguntas abiertas (¿llegaremos?)."
+   }
+  }
+ ]
+}

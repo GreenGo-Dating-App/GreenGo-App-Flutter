@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 131,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Indefinite pronouns",
+     "g": "Use jemand, niemand, etwas, nichts, alles and man to talk about people and things in general.",
+     "p": [
+      "People: Ist jemand da? Niemand ruft an. Hat jemand meinen Schlüssel gesehen?",
+      "Things: Ich möchte etwas trinken. Ich habe nichts gehört. Alles ist gut. Etwas Neues, nichts Besonderes.",
+      "man = people in general: In Deutschland isst man abends oft kalt. Hier darf man nicht rauchen."
+     ],
+     "q": "What does man usually do in your country on a Sunday? Answer with three sentences using man.",
+     "c": "Write five short sentences, one each with jemand, niemand, etwas, nichts and alles."
+    },
+    "de": {
+     "t": "Indefinitpronomen",
+     "g": "Du benutzt jemand, niemand, etwas, nichts, alles und man für Personen und Dinge allgemein.",
+     "p": [
+      "Personen: Ist jemand da? Niemand ruft an. Hat jemand meinen Schlüssel gesehen?",
+      "Dinge: Ich möchte etwas trinken. Ich habe nichts gehört. Alles ist gut. Etwas Neues, nichts Besonderes.",
+      "man = die Leute allgemein: In Deutschland isst man abends oft kalt. Hier darf man nicht rauchen."
+     ],
+     "q": "Was macht man in deinem Land normalerweise am Sonntag? Antworte mit drei Sätzen mit man.",
+     "c": "Schreib fünf kurze Sätze, je einen mit jemand, niemand, etwas, nichts und alles."
+    },
+    "es": {
+     "t": "Pronombres indefinidos",
+     "g": "Usa jemand, niemand, etwas, nichts, alles y man para hablar de personas y cosas en general.",
+     "p": [
+      "Personas: Ist jemand da? Niemand ruft an. Hat jemand meinen Schlüssel gesehen?",
+      "Cosas: Ich möchte etwas trinken. Ich habe nichts gehört. Alles ist gut. Etwas Neues, nichts Besonderes.",
+      "man = la gente en general: In Deutschland isst man abends oft kalt. Hier darf man nicht rauchen."
+     ],
+     "q": "¿Qué se suele hacer en tu país un domingo? Responde con tres frases con man.",
+     "c": "Escribe cinco frases cortas, una con cada palabra: jemand, niemand, etwas, nichts y alles."
+    },
+    "fr": {
+     "t": "Les pronoms indéfinis",
+     "g": "Utiliser jemand, niemand, etwas, nichts, alles et man pour parler des gens et des choses en général.",
+     "p": [
+      "Personnes : Ist jemand da? Niemand ruft an. Hat jemand meinen Schlüssel gesehen?",
+      "Choses : Ich möchte etwas trinken. Ich habe nichts gehört. Alles ist gut. Etwas Neues, nichts Besonderes.",
+      "man = on : In Deutschland isst man abends oft kalt. Hier darf man nicht rauchen."
+     ],
+     "q": "Que fait-on d'habitude le dimanche dans ton pays ? Réponds en trois phrases avec man.",
+     "c": "Écris cinq phrases courtes, une avec chacun : jemand, niemand, etwas, nichts et alles."
+    },
+    "it": {
+     "t": "Pronomi indefiniti",
+     "g": "Usi jemand, niemand, etwas, nichts, alles e man per parlare di persone e cose in generale.",
+     "p": [
+      "Persone: Ist jemand da? Niemand ruft an. Hat jemand meinen Schlüssel gesehen?",
+      "Cose: Ich möchte etwas trinken. Ich habe nichts gehört. Alles ist gut. Etwas Neues, nichts Besonderes.",
+      "man = si impersonale: In Deutschland isst man abends oft kalt. Hier darf man nicht rauchen."
+     ],
+     "q": "Che cosa si fa di solito la domenica nel tuo paese? Rispondi con tre frasi con man.",
+     "c": "Scrivi cinque frasi brevi, una per ciascuno: jemand, niemand, etwas, nichts e alles."
+    },
+    "pt": {
+     "t": "Pronomes indefinidos",
+     "g": "Usar jemand, niemand, etwas, nichts, alles e man para falar de pessoas e coisas em geral.",
+     "p": [
+      "Pessoas: Ist jemand da? Niemand ruft an. Hat jemand meinen Schlüssel gesehen?",
+      "Coisas: Ich möchte etwas trinken. Ich habe nichts gehört. Alles ist gut. Etwas Neues, nichts Besonderes.",
+      "man = as pessoas em geral: In Deutschland isst man abends oft kalt. Hier darf man nicht rauchen."
+     ],
+     "q": "O que se costuma fazer ao domingo no teu país? Responde com três frases com man.",
+     "c": "Escreve cinco frases curtas, uma com cada: jemand, niemand, etwas, nichts e alles."
+    },
+    "pt_BR": {
+     "t": "Pronomes indefinidos",
+     "g": "Usar jemand, niemand, etwas, nichts, alles e man para falar de pessoas e coisas em geral.",
+     "p": [
+      "Pessoas: Ist jemand da? Niemand ruft an. Hat jemand meinen Schlüssel gesehen?",
+      "Coisas: Ich möchte etwas trinken. Ich habe nichts gehört. Alles ist gut. Etwas Neues, nichts Besonderes.",
+      "man = as pessoas em geral: In Deutschland isst man abends oft kalt. Hier darf man nicht rauchen."
+     ],
+     "q": "O que se costuma fazer no domingo no seu país? Responda com três frases com man.",
+     "c": "Escreva cinco frases curtas, uma com cada: jemand, niemand, etwas, nichts e alles."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "jemand",
+      "ex": "Hat jemand eine Frage?"
+     },
+     {
+      "w": "niemand",
+      "ex": "Niemand war zu Hause."
+     },
+     {
+      "w": "etwas",
+      "ex": "Möchtest du etwas essen?"
+     },
+     {
+      "w": "nichts",
+      "ex": "Ich habe heute nichts vor."
+     },
+     {
+      "w": "alles",
+      "ex": "Alles klar, bis morgen!"
+     },
+     {
+      "w": "man",
+      "ex": "Wie sagt man das auf Deutsch?"
+     }
+    ],
+    "gram": "Man + Verb in der 3. Person Singular: man sagt, man darf. Etwas/nichts + Adjektiv groß mit -es: etwas Neues."
+   }
+  },
+  {
+   "d": 132,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Frequency adverbs",
+     "g": "Say how often you do things with immer, oft, manchmal, selten and nie, and put them in the right place.",
+     "p": [
+      "The scale: immer, fast immer, meistens, oft, manchmal, selten, fast nie, nie.",
+      "Position: Nach dem Verb: Ich trinke oft Tee. Am Anfang mit Inversion: Manchmal trinke ich Kaffee.",
+      "How often?: Wie oft gehst du ins Kino? Einmal im Monat. Zweimal pro Woche. Jeden Tag."
+     ],
+     "q": "How often do you cook, do sport and read? Use a different frequency word for each.",
+     "c": "Write about your week in six sentences; start two of them with the frequency word."
+    },
+    "de": {
+     "t": "Häufigkeitsadverbien",
+     "g": "Du sagst, wie oft du etwas machst, mit immer, oft, manchmal, selten, nie, und stellst sie richtig.",
+     "p": [
+      "Die Skala: immer, fast immer, meistens, oft, manchmal, selten, fast nie, nie.",
+      "Position: Nach dem Verb: Ich trinke oft Tee. Am Anfang mit Inversion: Manchmal trinke ich Kaffee.",
+      "Wie oft?: Wie oft gehst du ins Kino? Einmal im Monat. Zweimal pro Woche. Jeden Tag."
+     ],
+     "q": "Wie oft kochst du, machst du Sport und liest du? Benutz für jedes ein anderes Häufigkeitswort.",
+     "c": "Schreib sechs Sätze über deine Woche; fang zwei davon mit dem Häufigkeitswort an."
+    },
+    "es": {
+     "t": "Adverbios de frecuencia",
+     "g": "Di con qué frecuencia haces cosas con immer, oft, manchmal, selten y nie, en el lugar correcto.",
+     "p": [
+      "La escala: immer, fast immer, meistens, oft, manchmal, selten, fast nie, nie.",
+      "Posición: Nach dem Verb: Ich trinke oft Tee. Am Anfang mit Inversion: Manchmal trinke ich Kaffee.",
+      "¿Con qué frecuencia?: Wie oft gehst du ins Kino? Einmal im Monat. Zweimal pro Woche. Jeden Tag."
+     ],
+     "q": "¿Con qué frecuencia cocinas, haces deporte y lees? Usa una palabra distinta para cada uno.",
+     "c": "Escribe seis frases sobre tu semana; empieza dos con la palabra de frecuencia."
+    },
+    "fr": {
+     "t": "Les adverbes de fréquence",
+     "g": "Dire à quelle fréquence tu fais les choses avec immer, oft, manchmal, selten, nie, bien placés.",
+     "p": [
+      "L'échelle : immer, fast immer, meistens, oft, manchmal, selten, fast nie, nie.",
+      "Place : Nach dem Verb: Ich trinke oft Tee. Am Anfang mit Inversion: Manchmal trinke ich Kaffee.",
+      "À quelle fréquence ? : Wie oft gehst du ins Kino? Einmal im Monat. Zweimal pro Woche. Jeden Tag."
+     ],
+     "q": "À quelle fréquence cuisines-tu, fais-tu du sport et lis-tu ? Utilise un mot différent pour chacun.",
+     "c": "Écris six phrases sur ta semaine ; commence-en deux par l'adverbe de fréquence."
+    },
+    "it": {
+     "t": "Avverbi di frequenza",
+     "g": "Dici quanto spesso fai le cose con immer, oft, manchmal, selten e nie, al posto giusto.",
+     "p": [
+      "La scala: immer, fast immer, meistens, oft, manchmal, selten, fast nie, nie.",
+      "Posizione: Nach dem Verb: Ich trinke oft Tee. Am Anfang mit Inversion: Manchmal trinke ich Kaffee.",
+      "Quanto spesso?: Wie oft gehst du ins Kino? Einmal im Monat. Zweimal pro Woche. Jeden Tag."
+     ],
+     "q": "Quanto spesso cucini, fai sport e leggi? Usa una parola diversa per ognuno.",
+     "c": "Scrivi sei frasi sulla tua settimana; iniziane due con l'avverbio di frequenza."
+    },
+    "pt": {
+     "t": "Advérbios de frequência",
+     "g": "Dizer com que frequência fazes as coisas com immer, oft, manchmal, selten e nie, no lugar certo.",
+     "p": [
+      "A escala: immer, fast immer, meistens, oft, manchmal, selten, fast nie, nie.",
+      "Posição: Nach dem Verb: Ich trinke oft Tee. Am Anfang mit Inversion: Manchmal trinke ich Kaffee.",
+      "Com que frequência?: Wie oft gehst du ins Kino? Einmal im Monat. Zweimal pro Woche. Jeden Tag."
+     ],
+     "q": "Com que frequência cozinhas, fazes desporto e lês? Usa uma palavra diferente para cada um.",
+     "c": "Escreve seis frases sobre a tua semana; começa duas com o advérbio de frequência."
+    },
+    "pt_BR": {
+     "t": "Advérbios de frequência",
+     "g": "Dizer com que frequência você faz as coisas com immer, oft, manchmal, selten e nie, no lugar certo.",
+     "p": [
+      "A escala: immer, fast immer, meistens, oft, manchmal, selten, fast nie, nie.",
+      "Posição: Nach dem Verb: Ich trinke oft Tee. Am Anfang mit Inversion: Manchmal trinke ich Kaffee.",
+      "Com que frequência?: Wie oft gehst du ins Kino? Einmal im Monat. Zweimal pro Woche. Jeden Tag."
+     ],
+     "q": "Com que frequência você cozinha, faz esporte e lê? Use uma palavra diferente para cada um.",
+     "c": "Escreva seis frases sobre sua semana; comece duas com o advérbio de frequência."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "immer",
+      "ex": "Ich frühstücke immer um sieben."
+     },
+     {
+      "w": "oft",
+      "ex": "Wir gehen oft im Park spazieren."
+     },
+     {
+      "w": "manchmal",
+      "ex": "Manchmal koche ich für Freunde."
+     },
+     {
+      "w": "selten",
+      "ex": "Ich fahre selten mit dem Auto."
+     },
+     {
+      "w": "nie",
+      "ex": "Er kommt nie zu spät."
+     },
+     {
+      "w": "zweimal pro Woche",
+      "ex": "Ich gehe zweimal pro Woche schwimmen."
+     }
+    ],
+    "gram": "Häufigkeitsadverb meist nach dem Verb. Steht es am Satzanfang, folgt das Verb: Oft lese ich abends."
+   }
+  },
+  {
+   "d": 133,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Word order: time, manner, place",
+     "g": "Put time, reason, manner and place in the usual German order: TeKaMoLo.",
+     "p": [
+      "TeKaMoLo: temporal (wann?), kausal (warum?), modal (wie?), lokal (wo/wohin?).",
+      "Example: Ich fahre morgen wegen der Arbeit mit dem Zug nach Wien.",
+      "Flexible start: Morgen fahre ich mit dem Zug nach Wien. Der Ort steht meist am Ende."
+     ],
+     "q": "Tell me about a trip you plan: when, how and where to? Put the parts in TeKaMoLo order.",
+     "c": "Write three sentences with time, manner and place, then move the time to the start of each."
+    },
+    "de": {
+     "t": "Satzstellung: Zeit, Art, Ort",
+     "g": "Du stellst Zeit, Grund, Art und Ort in die übliche Reihenfolge: TeKaMoLo.",
+     "p": [
+      "TeKaMoLo: temporal (wann?), kausal (warum?), modal (wie?), lokal (wo/wohin?).",
+      "Beispiel: Ich fahre morgen wegen der Arbeit mit dem Zug nach Wien.",
+      "Flexibler Anfang: Morgen fahre ich mit dem Zug nach Wien. Der Ort steht meist am Ende."
+     ],
+     "q": "Erzähl von einer geplanten Reise: wann, wie und wohin? Stell die Teile in TeKaMoLo-Reihenfolge.",
+     "c": "Schreib drei Sätze mit Zeit, Art und Ort und stell dann in jedem die Zeit an den Anfang."
+    },
+    "es": {
+     "t": "Orden: tiempo, modo, lugar",
+     "g": "Ordena tiempo, causa, modo y lugar como en alemán: TeKaMoLo.",
+     "p": [
+      "TeKaMoLo: temporal (wann?), kausal (warum?), modal (wie?), lokal (wo/wohin?).",
+      "Ejemplo: Ich fahre morgen wegen der Arbeit mit dem Zug nach Wien.",
+      "Inicio flexible: Morgen fahre ich mit dem Zug nach Wien. Der Ort steht meist am Ende."
+     ],
+     "q": "Háblame de un viaje que planeas: ¿cuándo, cómo y adónde? Ordénalo según TeKaMoLo.",
+     "c": "Escribe tres frases con tiempo, modo y lugar y luego pon el tiempo al principio de cada una."
+    },
+    "fr": {
+     "t": "Ordre : temps, manière, lieu",
+     "g": "Placer temps, cause, manière et lieu dans l'ordre allemand habituel : TeKaMoLo.",
+     "p": [
+      "TeKaMoLo : temporal (wann?), kausal (warum?), modal (wie?), lokal (wo/wohin?).",
+      "Exemple : Ich fahre morgen wegen der Arbeit mit dem Zug nach Wien.",
+      "Début flexible : Morgen fahre ich mit dem Zug nach Wien. Der Ort steht meist am Ende."
+     ],
+     "q": "Parle-moi d'un voyage prévu : quand, comment et où ? Mets les éléments dans l'ordre TeKaMoLo.",
+     "c": "Écris trois phrases avec temps, manière et lieu, puis mets le temps au début de chacune."
+    },
+    "it": {
+     "t": "Ordine: tempo, modo, luogo",
+     "g": "Metti tempo, causa, modo e luogo nell'ordine tedesco abituale: TeKaMoLo.",
+     "p": [
+      "TeKaMoLo: temporal (wann?), kausal (warum?), modal (wie?), lokal (wo/wohin?).",
+      "Esempio: Ich fahre morgen wegen der Arbeit mit dem Zug nach Wien.",
+      "Inizio flessibile: Morgen fahre ich mit dem Zug nach Wien. Der Ort steht meist am Ende."
+     ],
+     "q": "Parlami di un viaggio che programmi: quando, come e dove? Metti le parti in ordine TeKaMoLo.",
+     "c": "Scrivi tre frasi con tempo, modo e luogo, poi sposta il tempo all'inizio di ognuna."
+    },
+    "pt": {
+     "t": "Ordem: tempo, modo, lugar",
+     "g": "Pôr tempo, causa, modo e lugar na ordem alemã habitual: TeKaMoLo.",
+     "p": [
+      "TeKaMoLo: temporal (wann?), kausal (warum?), modal (wie?), lokal (wo/wohin?).",
+      "Exemplo: Ich fahre morgen wegen der Arbeit mit dem Zug nach Wien.",
+      "Início flexível: Morgen fahre ich mit dem Zug nach Wien. Der Ort steht meist am Ende."
+     ],
+     "q": "Fala-me de uma viagem que planeias: quando, como e para onde? Põe tudo na ordem TeKaMoLo.",
+     "c": "Escreve três frases com tempo, modo e lugar e depois põe o tempo no início de cada uma."
+    },
+    "pt_BR": {
+     "t": "Ordem: tempo, modo, lugar",
+     "g": "Colocar tempo, causa, modo e lugar na ordem alemã habitual: TeKaMoLo.",
+     "p": [
+      "TeKaMoLo: temporal (wann?), kausal (warum?), modal (wie?), lokal (wo/wohin?).",
+      "Exemplo: Ich fahre morgen wegen der Arbeit mit dem Zug nach Wien.",
+      "Início flexível: Morgen fahre ich mit dem Zug nach Wien. Der Ort steht meist am Ende."
+     ],
+     "q": "Me fale de uma viagem que você planeja: quando, como e para onde? Coloque tudo na ordem TeKaMoLo.",
+     "c": "Escreva três frases com tempo, modo e lugar e depois coloque o tempo no início de cada uma."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "morgen früh",
+      "ex": "Morgen früh fahre ich mit dem Rad zur Arbeit."
+     },
+     {
+      "w": "mit dem Zug",
+      "ex": "Wir fahren am Freitag mit dem Zug nach Köln."
+     },
+     {
+      "w": "wegen",
+      "ex": "Sie bleibt heute wegen der Erkältung zu Hause."
+     },
+     {
+      "w": "zu Fuß",
+      "ex": "Ich gehe jeden Tag zu Fuß zur Schule."
+     },
+     {
+      "w": "nach Wien",
+      "ex": "Im Sommer fliege ich allein nach Wien."
+     },
+     {
+      "w": "gemeinsam",
+      "ex": "Wir kochen am Abend gemeinsam in der Küche."
+     }
+    ],
+    "gram": "TeKaMoLo: Zeit, Grund, Art, Ort. Ich fahre heute (Te) wegen des Termins (Ka) mit dem Bus (Mo) in die Stadt (Lo)."
+   }
+  },
+  {
+   "d": 134,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Verbs with prepositions",
+     "g": "Learn common verbs with fixed prepositions, like warten auf, denken an and sich interessieren für.",
+     "p": [
+      "With accusative: warten auf, denken an, sich freuen auf, sich interessieren für, sich ärgern über.",
+      "With dative: träumen von, sprechen mit, Angst haben vor, teilnehmen an, fragen nach.",
+      "Learn them as a pair: Ich warte auf den Bus. Ich interessiere mich für Musik. Ich träume von einer Reise."
+     ],
+     "q": "What are you interested in, and what are you looking forward to? Use interessiere mich für and freue mich auf.",
+     "c": "Write five sentences about yourself, each with a different verb plus preposition from today."
+    },
+    "de": {
+     "t": "Verben mit Präpositionen",
+     "g": "Du lernst häufige Verben mit festen Präpositionen wie warten auf, denken an, sich interessieren für.",
+     "p": [
+      "Mit Akkusativ: warten auf, denken an, sich freuen auf, sich interessieren für, sich ärgern über.",
+      "Mit Dativ: träumen von, sprechen mit, Angst haben vor, teilnehmen an, fragen nach.",
+      "Als Paar lernen: Ich warte auf den Bus. Ich interessiere mich für Musik. Ich träume von einer Reise."
+     ],
+     "q": "Wofür interessierst du dich, und worauf freust du dich? Benutz interessiere mich für und freue mich auf.",
+     "c": "Schreib fünf Sätze über dich, jeden mit einem anderen Verb mit Präposition von heute."
+    },
+    "es": {
+     "t": "Verbos con preposición",
+     "g": "Aprende verbos frecuentes con preposición fija, como warten auf, denken an y sich interessieren für.",
+     "p": [
+      "Con acusativo: warten auf, denken an, sich freuen auf, sich interessieren für, sich ärgern über.",
+      "Con dativo: träumen von, sprechen mit, Angst haben vor, teilnehmen an, fragen nach.",
+      "Apréndelos en pareja: Ich warte auf den Bus. Ich interessiere mich für Musik. Ich träume von einer Reise."
+     ],
+     "q": "¿Qué te interesa y qué esperas con ilusión? Usa interessiere mich für y freue mich auf.",
+     "c": "Escribe cinco frases sobre ti, cada una con un verbo con preposición distinto de hoy."
+    },
+    "fr": {
+     "t": "Les verbes à préposition",
+     "g": "Apprendre des verbes courants à préposition fixe : warten auf, denken an, sich interessieren für.",
+     "p": [
+      "Avec accusatif : warten auf, denken an, sich freuen auf, sich interessieren für, sich ärgern über.",
+      "Avec datif : träumen von, sprechen mit, Angst haben vor, teilnehmen an, fragen nach.",
+      "Apprends-les par paire : Ich warte auf den Bus. Ich interessiere mich für Musik. Ich träume von einer Reise."
+     ],
+     "q": "À quoi t'intéresses-tu, et qu'attends-tu avec impatience ? Utilise interessiere mich für et freue mich auf.",
+     "c": "Écris cinq phrases sur toi, chacune avec un verbe à préposition différent du jour."
+    },
+    "it": {
+     "t": "Verbi con preposizione",
+     "g": "Impari verbi comuni con preposizione fissa, come warten auf, denken an e sich interessieren für.",
+     "p": [
+      "Con accusativo: warten auf, denken an, sich freuen auf, sich interessieren für, sich ärgern über.",
+      "Con dativo: träumen von, sprechen mit, Angst haben vor, teilnehmen an, fragen nach.",
+      "Imparali in coppia: Ich warte auf den Bus. Ich interessiere mich für Musik. Ich träume von einer Reise."
+     ],
+     "q": "Che cosa ti interessa e che cosa aspetti con gioia? Usa interessiere mich für e freue mich auf.",
+     "c": "Scrivi cinque frasi su di te, ognuna con un verbo con preposizione diverso di oggi."
+    },
+    "pt": {
+     "t": "Verbos com preposição",
+     "g": "Aprender verbos frequentes com preposição fixa, como warten auf, denken an e sich interessieren für.",
+     "p": [
+      "Com acusativo: warten auf, denken an, sich freuen auf, sich interessieren für, sich ärgern über.",
+      "Com dativo: träumen von, sprechen mit, Angst haben vor, teilnehmen an, fragen nach.",
+      "Aprende-os em par: Ich warte auf den Bus. Ich interessiere mich für Musik. Ich träume von einer Reise."
+     ],
+     "q": "Em que te interessas e pelo que estás ansioso? Usa interessiere mich für e freue mich auf.",
+     "c": "Escreve cinco frases sobre ti, cada uma com um verbo com preposição diferente de hoje."
+    },
+    "pt_BR": {
+     "t": "Verbos com preposição",
+     "g": "Aprender verbos comuns com preposição fixa, como warten auf, denken an e sich interessieren für.",
+     "p": [
+      "Com acusativo: warten auf, denken an, sich freuen auf, sich interessieren für, sich ärgern über.",
+      "Com dativo: träumen von, sprechen mit, Angst haben vor, teilnehmen an, fragen nach.",
+      "Aprenda-os em par: Ich warte auf den Bus. Ich interessiere mich für Musik. Ich träume von einer Reise."
+     ],
+     "q": "Pelo que você se interessa e pelo que está ansioso? Use interessiere mich für e freue mich auf.",
+     "c": "Escreva cinco frases sobre você, cada uma com um verbo com preposição diferente de hoje."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "warten auf",
+      "ex": "Ich warte schon zehn Minuten auf dich."
+     },
+     {
+      "w": "denken an",
+      "ex": "Ich denke oft an meine Oma."
+     },
+     {
+      "w": "sich interessieren für",
+      "ex": "Sie interessiert sich für Geschichte."
+     },
+     {
+      "w": "sich freuen auf",
+      "ex": "Wir freuen uns auf das Wochenende."
+     },
+     {
+      "w": "träumen von",
+      "ex": "Er träumt von einem Haus am Meer."
+     },
+     {
+      "w": "sprechen mit",
+      "ex": "Ich spreche morgen mit meinem Chef."
+     }
+    ],
+    "gram": "Präposition gehört zum Verb und bestimmt den Kasus: warten auf + Akk. (auf den Bus), träumen von + Dat. (von dem Meer)."
+   }
+  },
+  {
+   "d": 135,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Da- and wo- compounds",
+     "g": "Replace prepositional phrases about things with darauf, daran and ask with worauf, woran.",
+     "p": [
+      "Building them: da + Präposition: dafür, damit, davon. Vor Vokal mit r: darauf, daran, darüber.",
+      "Questions: Worauf wartest du? Auf den Bus. Woran denkst du? An den Urlaub. Wofür interessierst du dich?",
+      "Things vs people: Sachen: Ich freue mich darauf. Personen: Ich warte auf ihn. Auf wen wartest du?"
+     ],
+     "q": "Worauf freust du dich diese Woche? Answer, then I will ask you a woran question too.",
+     "c": "Write three wo- questions and answer each with a da- word, for example Wofür? Dafür."
+    },
+    "de": {
+     "t": "Da- und Wo-Wörter",
+     "g": "Du ersetzt Präpositionalausdrücke für Sachen durch darauf, daran und fragst mit worauf, woran.",
+     "p": [
+      "Bildung: da + Präposition: dafür, damit, davon. Vor Vokal mit r: darauf, daran, darüber.",
+      "Fragen: Worauf wartest du? Auf den Bus. Woran denkst du? An den Urlaub. Wofür interessierst du dich?",
+      "Sachen oder Personen: Sachen: Ich freue mich darauf. Personen: Ich warte auf ihn. Auf wen wartest du?"
+     ],
+     "q": "Worauf freust du dich diese Woche? Antworte, danach stelle ich dir noch eine Frage mit woran.",
+     "c": "Schreib drei Fragen mit wo- und antworte jeweils mit einem da-Wort, zum Beispiel Wofür? Dafür."
+    },
+    "es": {
+     "t": "Compuestos con da- y wo-",
+     "g": "Sustituye frases con preposición sobre cosas por darauf, daran y pregunta con worauf, woran.",
+     "p": [
+      "Cómo se forman: da + Präposition: dafür, damit, davon. Vor Vokal mit r: darauf, daran, darüber.",
+      "Preguntas: Worauf wartest du? Auf den Bus. Woran denkst du? An den Urlaub. Wofür interessierst du dich?",
+      "Cosas o personas: Sachen: Ich freue mich darauf. Personen: Ich warte auf ihn. Auf wen wartest du?"
+     ],
+     "q": "Worauf freust du dich diese Woche? Responde y después te haré también una pregunta con woran.",
+     "c": "Escribe tres preguntas con wo- y responde cada una con una palabra da-, por ejemplo Wofür? Dafür."
+    },
+    "fr": {
+     "t": "Les composés en da- et wo-",
+     "g": "Remplacer les groupes prépositionnels de choses par darauf, daran et demander avec worauf, woran.",
+     "p": [
+      "Formation : da + Präposition: dafür, damit, davon. Vor Vokal mit r: darauf, daran, darüber.",
+      "Questions : Worauf wartest du? Auf den Bus. Woran denkst du? An den Urlaub. Wofür interessierst du dich?",
+      "Choses ou personnes : Sachen: Ich freue mich darauf. Personen: Ich warte auf ihn. Auf wen wartest du?"
+     ],
+     "q": "Worauf freust du dich diese Woche? Réponds, puis je te poserai aussi une question avec woran.",
+     "c": "Écris trois questions en wo- et réponds à chacune avec un mot en da-, par exemple Wofür? Dafür."
+    },
+    "it": {
+     "t": "I composti con da- e wo-",
+     "g": "Sostituisci i complementi con preposizione riferiti a cose con darauf, daran e chiedi con worauf, woran.",
+     "p": [
+      "Formazione: da + Präposition: dafür, damit, davon. Vor Vokal mit r: darauf, daran, darüber.",
+      "Domande: Worauf wartest du? Auf den Bus. Woran denkst du? An den Urlaub. Wofür interessierst du dich?",
+      "Cose o persone: Sachen: Ich freue mich darauf. Personen: Ich warte auf ihn. Auf wen wartest du?"
+     ],
+     "q": "Worauf freust du dich diese Woche? Rispondi e poi ti farò anche una domanda con woran.",
+     "c": "Scrivi tre domande con wo- e rispondi a ciascuna con una parola in da-, per esempio Wofür? Dafür."
+    },
+    "pt": {
+     "t": "Compostos com da- e wo-",
+     "g": "Substituir expressões com preposição sobre coisas por darauf, daran e perguntar com worauf, woran.",
+     "p": [
+      "Formação: da + Präposition: dafür, damit, davon. Vor Vokal mit r: darauf, daran, darüber.",
+      "Perguntas: Worauf wartest du? Auf den Bus. Woran denkst du? An den Urlaub. Wofür interessierst du dich?",
+      "Coisas ou pessoas: Sachen: Ich freue mich darauf. Personen: Ich warte auf ihn. Auf wen wartest du?"
+     ],
+     "q": "Worauf freust du dich diese Woche? Responde e depois faço-te também uma pergunta com woran.",
+     "c": "Escreve três perguntas com wo- e responde a cada uma com uma palavra da-, por exemplo Wofür? Dafür."
+    },
+    "pt_BR": {
+     "t": "Compostos com da- e wo-",
+     "g": "Substituir expressões com preposição sobre coisas por darauf, daran e perguntar com worauf, woran.",
+     "p": [
+      "Formação: da + Präposition: dafür, damit, davon. Vor Vokal mit r: darauf, daran, darüber.",
+      "Perguntas: Worauf wartest du? Auf den Bus. Woran denkst du? An den Urlaub. Wofür interessierst du dich?",
+      "Coisas ou pessoas: Sachen: Ich freue mich darauf. Personen: Ich warte auf ihn. Auf wen wartest du?"
+     ],
+     "q": "Worauf freust du dich diese Woche? Responda e depois eu te faço também uma pergunta com woran.",
+     "c": "Escreva três perguntas com wo- e responda a cada uma com uma palavra da-, por exemplo Wofür? Dafür."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "darauf",
+      "ex": "Das Konzert? Ich freue mich schon darauf."
+     },
+     {
+      "w": "daran",
+      "ex": "Die Prüfung? Ich denke nicht gern daran."
+     },
+     {
+      "w": "dafür",
+      "ex": "Fußball? Dafür interessiere ich mich nicht."
+     },
+     {
+      "w": "worauf",
+      "ex": "Worauf wartest du denn?"
+     },
+     {
+      "w": "woran",
+      "ex": "Woran denkst du gerade?"
+     },
+     {
+      "w": "darüber",
+      "ex": "Lass uns morgen darüber sprechen."
+     }
+    ],
+    "gram": "Da(r) + Präposition ersetzt Sachen: an den Urlaub → daran. Frage: wo(r) + Präposition: Woran? Personen: an wen?"
+   }
+  },
+  {
+   "d": 136,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Friends and relationships",
+     "g": "Talk about friendships: getting on well, arguing, making up and staying in touch.",
+     "p": [
+      "Reflexive verbs: Wir verstehen uns gut. Wir streiten uns selten. Wir haben uns wieder versöhnt.",
+      "Describing: Wir sind seit zehn Jahren befreundet. Sie ist meine beste Freundin. Er ist ein guter Kumpel.",
+      "Contact: Wir treffen uns jede Woche. Wir bleiben in Kontakt. Wir haben uns aus den Augen verloren."
+     ],
+     "q": "Tell me about a good friend: how long have you known each other and how do you get on?",
+     "c": "Write five sentences about a friendship with three reflexive verbs: uns verstehen, uns treffen, uns streiten."
+    },
+    "de": {
+     "t": "Freunde und Beziehungen",
+     "g": "Du sprichst über Freundschaften: sich gut verstehen, sich streiten, sich versöhnen, in Kontakt bleiben.",
+     "p": [
+      "Reflexive Verben: Wir verstehen uns gut. Wir streiten uns selten. Wir haben uns wieder versöhnt.",
+      "Beschreiben: Wir sind seit zehn Jahren befreundet. Sie ist meine beste Freundin. Er ist ein guter Kumpel.",
+      "Kontakt: Wir treffen uns jede Woche. Wir bleiben in Kontakt. Wir haben uns aus den Augen verloren."
+     ],
+     "q": "Erzähl von einem guten Freund oder einer guten Freundin: Seit wann kennt ihr euch, wie versteht ihr euch?",
+     "c": "Schreib fünf Sätze über eine Freundschaft mit drei reflexiven Verben: uns verstehen, uns treffen, uns streiten."
+    },
+    "es": {
+     "t": "Amigos y relaciones",
+     "g": "Habla de amistades: llevarse bien, discutir, reconciliarse y mantener el contacto.",
+     "p": [
+      "Verbos reflexivos: Wir verstehen uns gut. Wir streiten uns selten. Wir haben uns wieder versöhnt.",
+      "Describir: Wir sind seit zehn Jahren befreundet. Sie ist meine beste Freundin. Er ist ein guter Kumpel.",
+      "Contacto: Wir treffen uns jede Woche. Wir bleiben in Kontakt. Wir haben uns aus den Augen verloren."
+     ],
+     "q": "Háblame de un buen amigo o amiga: ¿desde cuándo os conocéis y cómo os lleváis?",
+     "c": "Escribe cinco frases sobre una amistad con tres verbos reflexivos: uns verstehen, uns treffen, uns streiten."
+    },
+    "fr": {
+     "t": "Amis et relations",
+     "g": "Parler d'amitié : bien s'entendre, se disputer, se réconcilier et garder le contact.",
+     "p": [
+      "Verbes pronominaux : Wir verstehen uns gut. Wir streiten uns selten. Wir haben uns wieder versöhnt.",
+      "Décrire : Wir sind seit zehn Jahren befreundet. Sie ist meine beste Freundin. Er ist ein guter Kumpel.",
+      "Contact : Wir treffen uns jede Woche. Wir bleiben in Kontakt. Wir haben uns aus den Augen verloren."
+     ],
+     "q": "Parle-moi d'un bon ami ou d'une bonne amie : depuis quand vous connaissez-vous et comment vous entendez-vous ?",
+     "c": "Écris cinq phrases sur une amitié avec trois verbes pronominaux : uns verstehen, uns treffen, uns streiten."
+    },
+    "it": {
+     "t": "Amici e rapporti",
+     "g": "Parli di amicizie: andare d'accordo, litigare, fare pace e restare in contatto.",
+     "p": [
+      "Verbi riflessivi: Wir verstehen uns gut. Wir streiten uns selten. Wir haben uns wieder versöhnt.",
+      "Descrivere: Wir sind seit zehn Jahren befreundet. Sie ist meine beste Freundin. Er ist ein guter Kumpel.",
+      "Contatto: Wir treffen uns jede Woche. Wir bleiben in Kontakt. Wir haben uns aus den Augen verloren."
+     ],
+     "q": "Parlami di un buon amico o una buona amica: da quanto vi conoscete e come andate d'accordo?",
+     "c": "Scrivi cinque frasi su un'amicizia con tre verbi riflessivi: uns verstehen, uns treffen, uns streiten."
+    },
+    "pt": {
+     "t": "Amigos e relações",
+     "g": "Falar de amizades: dar-se bem, discutir, fazer as pazes e manter o contacto.",
+     "p": [
+      "Verbos reflexos: Wir verstehen uns gut. Wir streiten uns selten. Wir haben uns wieder versöhnt.",
+      "Descrever: Wir sind seit zehn Jahren befreundet. Sie ist meine beste Freundin. Er ist ein guter Kumpel.",
+      "Contacto: Wir treffen uns jede Woche. Wir bleiben in Kontakt. Wir haben uns aus den Augen verloren."
+     ],
+     "q": "Fala-me de um bom amigo ou uma boa amiga: há quanto tempo se conhecem e como se dão?",
+     "c": "Escreve cinco frases sobre uma amizade com três verbos reflexos: uns verstehen, uns treffen, uns streiten."
+    },
+    "pt_BR": {
+     "t": "Amigos e relacionamentos",
+     "g": "Falar de amizades: se dar bem, brigar, fazer as pazes e manter contato.",
+     "p": [
+      "Verbos reflexos: Wir verstehen uns gut. Wir streiten uns selten. Wir haben uns wieder versöhnt.",
+      "Descrever: Wir sind seit zehn Jahren befreundet. Sie ist meine beste Freundin. Er ist ein guter Kumpel.",
+      "Contato: Wir treffen uns jede Woche. Wir bleiben in Kontakt. Wir haben uns aus den Augen verloren."
+     ],
+     "q": "Me fale de um bom amigo ou uma boa amiga: há quanto tempo vocês se conhecem e como se dão?",
+     "c": "Escreva cinco frases sobre uma amizade com três verbos reflexivos: uns verstehen, uns treffen, uns streiten."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "sich gut verstehen",
+      "ex": "Meine Schwester und ich verstehen uns gut."
+     },
+     {
+      "w": "sich streiten",
+      "ex": "Manchmal streiten wir uns über Kleinigkeiten."
+     },
+     {
+      "w": "befreundet sein",
+      "ex": "Wir sind seit der Schule befreundet."
+     },
+     {
+      "w": "sich versöhnen",
+      "ex": "Nach dem Streit haben wir uns schnell versöhnt."
+     },
+     {
+      "w": "sich treffen",
+      "ex": "Wir treffen uns am Freitag im Café."
+     },
+     {
+      "w": "in Kontakt bleiben",
+      "ex": "Lass uns in Kontakt bleiben!"
+     }
+    ],
+    "gram": "Reziproke Verben mit uns/euch/sich: Wir verstehen uns. Ihr trefft euch. Sie streiten sich. Perfekt mit haben."
+   }
+  },
+  {
+   "d": 137,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Describing character",
+     "g": "Describe personalities in more depth with adjectives like hilfsbereit, schüchtern, ehrlich and stur.",
+     "p": [
+      "Positive: hilfsbereit, ehrlich, geduldig, zuverlässig, großzügig, humorvoll, fleißig.",
+      "Tricky: schüchtern, stur, ungeduldig, chaotisch, faul. Sag es freundlich: Er ist ein bisschen stur.",
+      "With an example: Sie ist sehr hilfsbereit: Sie hilft immer allen beim Umzug."
+     ],
+     "q": "How would your best friend describe you? Give two strong points and one small weakness.",
+     "c": "Describe a family member with three character adjectives and a short example for each."
+    },
+    "de": {
+     "t": "Charakter beschreiben",
+     "g": "Du beschreibst Persönlichkeiten genauer mit Adjektiven wie hilfsbereit, schüchtern, ehrlich und stur.",
+     "p": [
+      "Positiv: hilfsbereit, ehrlich, geduldig, zuverlässig, großzügig, humorvoll, fleißig.",
+      "Schwierig: schüchtern, stur, ungeduldig, chaotisch, faul. Sag es freundlich: Er ist ein bisschen stur.",
+      "Mit Beispiel: Sie ist sehr hilfsbereit: Sie hilft immer allen beim Umzug."
+     ],
+     "q": "Wie würde dein bester Freund dich beschreiben? Nenn zwei Stärken und eine kleine Schwäche.",
+     "c": "Beschreib ein Familienmitglied mit drei Charakter-Adjektiven und je einem kurzen Beispiel."
+    },
+    "es": {
+     "t": "Describir el carácter",
+     "g": "Describe la personalidad con más detalle con adjetivos como hilfsbereit, schüchtern, ehrlich y stur.",
+     "p": [
+      "Positivo: hilfsbereit, ehrlich, geduldig, zuverlässig, großzügig, humorvoll, fleißig.",
+      "Difícil: schüchtern, stur, ungeduldig, chaotisch, faul. Sag es freundlich: Er ist ein bisschen stur.",
+      "Con un ejemplo: Sie ist sehr hilfsbereit: Sie hilft immer allen beim Umzug."
+     ],
+     "q": "¿Cómo te describiría tu mejor amigo? Di dos puntos fuertes y un pequeño defecto.",
+     "c": "Describe a un familiar con tres adjetivos de carácter y un ejemplo corto para cada uno."
+    },
+    "fr": {
+     "t": "Décrire le caractère",
+     "g": "Décrire la personnalité plus en détail avec des adjectifs comme hilfsbereit, schüchtern, ehrlich et stur.",
+     "p": [
+      "Positif : hilfsbereit, ehrlich, geduldig, zuverlässig, großzügig, humorvoll, fleißig.",
+      "Délicat : schüchtern, stur, ungeduldig, chaotisch, faul. Sag es freundlich: Er ist ein bisschen stur.",
+      "Avec un exemple : Sie ist sehr hilfsbereit: Sie hilft immer allen beim Umzug."
+     ],
+     "q": "Comment ton meilleur ami te décrirait-il ? Donne deux qualités et un petit défaut.",
+     "c": "Décris un membre de ta famille avec trois adjectifs de caractère et un petit exemple pour chacun."
+    },
+    "it": {
+     "t": "Descrivere il carattere",
+     "g": "Descrivi la personalità più a fondo con aggettivi come hilfsbereit, schüchtern, ehrlich e stur.",
+     "p": [
+      "Positivo: hilfsbereit, ehrlich, geduldig, zuverlässig, großzügig, humorvoll, fleißig.",
+      "Difficile: schüchtern, stur, ungeduldig, chaotisch, faul. Sag es freundlich: Er ist ein bisschen stur.",
+      "Con un esempio: Sie ist sehr hilfsbereit: Sie hilft immer allen beim Umzug."
+     ],
+     "q": "Come ti descriverebbe il tuo migliore amico? Indica due pregi e un piccolo difetto.",
+     "c": "Descrivi un familiare con tre aggettivi di carattere e un breve esempio per ciascuno."
+    },
+    "pt": {
+     "t": "Descrever o carácter",
+     "g": "Descrever a personalidade com mais detalhe com adjetivos como hilfsbereit, schüchtern, ehrlich e stur.",
+     "p": [
+      "Positivo: hilfsbereit, ehrlich, geduldig, zuverlässig, großzügig, humorvoll, fleißig.",
+      "Difícil: schüchtern, stur, ungeduldig, chaotisch, faul. Sag es freundlich: Er ist ein bisschen stur.",
+      "Com um exemplo: Sie ist sehr hilfsbereit: Sie hilft immer allen beim Umzug."
+     ],
+     "q": "Como te descreveria o teu melhor amigo? Diz duas qualidades e um pequeno defeito.",
+     "c": "Descreve um familiar com três adjetivos de carácter e um pequeno exemplo para cada um."
+    },
+    "pt_BR": {
+     "t": "Descrever a personalidade",
+     "g": "Descrever a personalidade com mais detalhe com adjetivos como hilfsbereit, schüchtern, ehrlich e stur.",
+     "p": [
+      "Positivo: hilfsbereit, ehrlich, geduldig, zuverlässig, großzügig, humorvoll, fleißig.",
+      "Difícil: schüchtern, stur, ungeduldig, chaotisch, faul. Sag es freundlich: Er ist ein bisschen stur.",
+      "Com um exemplo: Sie ist sehr hilfsbereit: Sie hilft immer allen beim Umzug."
+     ],
+     "q": "Como seu melhor amigo descreveria você? Diga duas qualidades e um pequeno defeito.",
+     "c": "Descreva um familiar com três adjetivos de personalidade e um pequeno exemplo para cada um."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "hilfsbereit",
+      "ex": "Mein Nachbar ist sehr hilfsbereit."
+     },
+     {
+      "w": "schüchtern",
+      "ex": "Als Kind war ich ziemlich schüchtern."
+     },
+     {
+      "w": "ehrlich",
+      "ex": "Sie ist immer ehrlich zu mir."
+     },
+     {
+      "w": "stur",
+      "ex": "Mein Opa kann manchmal sehr stur sein."
+     },
+     {
+      "w": "geduldig",
+      "ex": "Unsere Lehrerin ist unglaublich geduldig."
+     },
+     {
+      "w": "zuverlässig",
+      "ex": "Er ist zuverlässig und kommt immer pünktlich."
+     }
+    ],
+    "gram": "Abschwächen mit ein bisschen, ziemlich, etwas: Er ist ein bisschen stur. Verstärken mit sehr, total, unglaublich."
+   }
+  },
+  {
+   "d": 138,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Making an appointment",
+     "g": "Make, change and cancel appointments at the doctor's, the hairdresser's or an office.",
+     "p": [
+      "Asking: Ich hätte gern einen Termin. Haben Sie nächste Woche etwas frei? Geht es am Dienstag um zehn?",
+      "Changing: Ich muss meinen Termin leider verschieben. Ich möchte den Termin absagen.",
+      "Confirming: Also am Donnerstag, den 12., um 15 Uhr. Wie ist Ihr Name, bitte? Bis dann!"
+     ],
+     "q": "Imagine you call a hairdresser. Ask for an appointment and suggest a day and time in German.",
+     "c": "Write a phone dialogue of six lines: ask for a Termin, the first time does not work, agree on another."
+    },
+    "de": {
+     "t": "Einen Termin vereinbaren",
+     "g": "Du vereinbarst, verschiebst und sagst Termine ab: beim Arzt, beim Friseur oder im Amt.",
+     "p": [
+      "Fragen: Ich hätte gern einen Termin. Haben Sie nächste Woche etwas frei? Geht es am Dienstag um zehn?",
+      "Ändern: Ich muss meinen Termin leider verschieben. Ich möchte den Termin absagen.",
+      "Bestätigen: Also am Donnerstag, den 12., um 15 Uhr. Wie ist Ihr Name, bitte? Bis dann!"
+     ],
+     "q": "Stell dir vor, du rufst beim Friseur an. Bitte um einen Termin und schlag Tag und Uhrzeit vor.",
+     "c": "Schreib ein Telefonat mit sechs Zeilen: Termin erfragen, die erste Zeit passt nicht, eine andere vereinbaren."
+    },
+    "es": {
+     "t": "Pedir una cita",
+     "g": "Pide, cambia y anula citas en el médico, la peluquería o una oficina.",
+     "p": [
+      "Pedir: Ich hätte gern einen Termin. Haben Sie nächste Woche etwas frei? Geht es am Dienstag um zehn?",
+      "Cambiar: Ich muss meinen Termin leider verschieben. Ich möchte den Termin absagen.",
+      "Confirmar: Also am Donnerstag, den 12., um 15 Uhr. Wie ist Ihr Name, bitte? Bis dann!"
+     ],
+     "q": "Imagina que llamas a la peluquería. Pide una cita y propón un día y una hora en alemán.",
+     "c": "Escribe una llamada de seis líneas: pide un Termin, la primera hora no va bien y acordáis otra."
+    },
+    "fr": {
+     "t": "Prendre rendez-vous",
+     "g": "Prendre, déplacer et annuler un rendez-vous chez le médecin, le coiffeur ou dans un bureau.",
+     "p": [
+      "Demander : Ich hätte gern einen Termin. Haben Sie nächste Woche etwas frei? Geht es am Dienstag um zehn?",
+      "Changer : Ich muss meinen Termin leider verschieben. Ich möchte den Termin absagen.",
+      "Confirmer : Also am Donnerstag, den 12., um 15 Uhr. Wie ist Ihr Name, bitte? Bis dann!"
+     ],
+     "q": "Imagine que tu appelles le coiffeur. Demande un rendez-vous et propose un jour et une heure en allemand.",
+     "c": "Écris un appel de six répliques : demande un Termin, le premier horaire ne va pas, vous en fixez un autre."
+    },
+    "it": {
+     "t": "Prendere un appuntamento",
+     "g": "Prendi, sposti e disdici appuntamenti dal medico, dal parrucchiere o in un ufficio.",
+     "p": [
+      "Chiedere: Ich hätte gern einen Termin. Haben Sie nächste Woche etwas frei? Geht es am Dienstag um zehn?",
+      "Cambiare: Ich muss meinen Termin leider verschieben. Ich möchte den Termin absagen.",
+      "Confermare: Also am Donnerstag, den 12., um 15 Uhr. Wie ist Ihr Name, bitte? Bis dann!"
+     ],
+     "q": "Immagina di chiamare il parrucchiere. Chiedi un appuntamento e proponi giorno e ora in tedesco.",
+     "c": "Scrivi una telefonata di sei battute: chiedi un Termin, il primo orario non va, ne fissate un altro."
+    },
+    "pt": {
+     "t": "Marcar uma consulta",
+     "g": "Marcar, mudar e desmarcar consultas no médico, no cabeleireiro ou numa repartição.",
+     "p": [
+      "Pedir: Ich hätte gern einen Termin. Haben Sie nächste Woche etwas frei? Geht es am Dienstag um zehn?",
+      "Alterar: Ich muss meinen Termin leider verschieben. Ich möchte den Termin absagen.",
+      "Confirmar: Also am Donnerstag, den 12., um 15 Uhr. Wie ist Ihr Name, bitte? Bis dann!"
+     ],
+     "q": "Imagina que ligas para o cabeleireiro. Pede uma marcação e propõe um dia e uma hora em alemão.",
+     "c": "Escreve um telefonema de seis falas: pede um Termin, a primeira hora não dá e combinam outra."
+    },
+    "pt_BR": {
+     "t": "Marcar um horário",
+     "g": "Marcar, remarcar e cancelar horários no médico, no cabeleireiro ou numa repartição.",
+     "p": [
+      "Pedir: Ich hätte gern einen Termin. Haben Sie nächste Woche etwas frei? Geht es am Dienstag um zehn?",
+      "Alterar: Ich muss meinen Termin leider verschieben. Ich möchte den Termin absagen.",
+      "Confirmar: Also am Donnerstag, den 12., um 15 Uhr. Wie ist Ihr Name, bitte? Bis dann!"
+     ],
+     "q": "Imagine que você liga para o cabeleireiro. Peça um horário e sugira um dia e uma hora em alemão.",
+     "c": "Escreva um telefonema de seis falas: peça um Termin, o primeiro horário não dá e vocês combinam outro."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Termin",
+      "ex": "Ich habe morgen einen Termin beim Arzt."
+     },
+     {
+      "w": "vereinbaren",
+      "ex": "Ich möchte einen Termin vereinbaren."
+     },
+     {
+      "w": "verschieben",
+      "ex": "Können wir den Termin auf Freitag verschieben?"
+     },
+     {
+      "w": "absagen",
+      "ex": "Leider muss ich den Termin absagen."
+     },
+     {
+      "w": "frei sein",
+      "ex": "Ist am Montagvormittag noch etwas frei?"
+     },
+     {
+      "w": "passen",
+      "ex": "Passt Ihnen Mittwoch um neun?"
+     }
+    ],
+    "gram": "Datum mit am + Ordinalzahl: am Dienstag, dem/den 12. Mai. Termin beim Arzt (Dativ). Passen + Dativ: Passt Ihnen das?"
+   }
+  },
+  {
+   "d": 139,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Emails: formal and informal",
+     "g": "Write formal and informal emails with the right greeting, closing and Sie or du.",
+     "p": [
+      "Formal: Sehr geehrte Frau Weber, / Sehr geehrte Damen und Herren, ... Mit freundlichen Grüßen",
+      "Informal: Liebe Anna, / Lieber Tom, / Hallo Max, ... Viele Grüße / Liebe Grüße / Bis bald",
+      "Useful lines: Vielen Dank für Ihre E-Mail. Ich schreibe Ihnen, weil ... Ich freue mich auf Ihre Antwort."
+     ],
+     "q": "Who do you write emails to most, and do you use a formal or an informal style with them?",
+     "c": "Write two short emails: one to a language school asking about a course, one to a friend about the weekend."
+    },
+    "de": {
+     "t": "E-Mails: formell und informell",
+     "g": "Du schreibst formelle und informelle E-Mails mit passender Anrede, Grußformel und Sie oder du.",
+     "p": [
+      "Formell: Sehr geehrte Frau Weber, / Sehr geehrte Damen und Herren, ... Mit freundlichen Grüßen",
+      "Informell: Liebe Anna, / Lieber Tom, / Hallo Max, ... Viele Grüße / Liebe Grüße / Bis bald",
+      "Nützliche Sätze: Vielen Dank für Ihre E-Mail. Ich schreibe Ihnen, weil ... Ich freue mich auf Ihre Antwort."
+     ],
+     "q": "Wem schreibst du am meisten E-Mails, und schreibst du formell oder informell?",
+     "c": "Schreib zwei kurze E-Mails: eine an eine Sprachschule wegen eines Kurses, eine an einen Freund zum Wochenende."
+    },
+    "es": {
+     "t": "Correos: formales e informales",
+     "g": "Escribe correos formales e informales con el saludo, la despedida y el Sie o du correctos.",
+     "p": [
+      "Formal: Sehr geehrte Frau Weber, / Sehr geehrte Damen und Herren, ... Mit freundlichen Grüßen",
+      "Informal: Liebe Anna, / Lieber Tom, / Hallo Max, ... Viele Grüße / Liebe Grüße / Bis bald",
+      "Frases útiles: Vielen Dank für Ihre E-Mail. Ich schreibe Ihnen, weil ... Ich freue mich auf Ihre Antwort."
+     ],
+     "q": "¿A quién escribes más correos y usas un estilo formal o informal con esa persona?",
+     "c": "Escribe dos correos cortos: uno a una academia preguntando por un curso y otro a un amigo sobre el finde."
+    },
+    "fr": {
+     "t": "E-mails : formels et informels",
+     "g": "Écrire des e-mails formels et informels avec la bonne formule d'appel, de politesse et Sie ou du.",
+     "p": [
+      "Formel : Sehr geehrte Frau Weber, / Sehr geehrte Damen und Herren, ... Mit freundlichen Grüßen",
+      "Informel : Liebe Anna, / Lieber Tom, / Hallo Max, ... Viele Grüße / Liebe Grüße / Bis bald",
+      "Phrases utiles : Vielen Dank für Ihre E-Mail. Ich schreibe Ihnen, weil ... Ich freue mich auf Ihre Antwort."
+     ],
+     "q": "À qui écris-tu le plus d'e-mails, et utilises-tu un style formel ou informel ?",
+     "c": "Écris deux courts e-mails : un à une école de langues sur un cours, un à un ami pour le week-end."
+    },
+    "it": {
+     "t": "Email: formali e informali",
+     "g": "Scrivi email formali e informali con il saluto, la chiusura e il Sie o du giusti.",
+     "p": [
+      "Formale: Sehr geehrte Frau Weber, / Sehr geehrte Damen und Herren, ... Mit freundlichen Grüßen",
+      "Informale: Liebe Anna, / Lieber Tom, / Hallo Max, ... Viele Grüße / Liebe Grüße / Bis bald",
+      "Frasi utili: Vielen Dank für Ihre E-Mail. Ich schreibe Ihnen, weil ... Ich freue mich auf Ihre Antwort."
+     ],
+     "q": "A chi scrivi più email e usi uno stile formale o informale?",
+     "c": "Scrivi due brevi email: una a una scuola di lingue su un corso, una a un amico sul fine settimana."
+    },
+    "pt": {
+     "t": "E-mails: formais e informais",
+     "g": "Escrever e-mails formais e informais com a saudação, a despedida e o Sie ou du certos.",
+     "p": [
+      "Formal: Sehr geehrte Frau Weber, / Sehr geehrte Damen und Herren, ... Mit freundlichen Grüßen",
+      "Informal: Liebe Anna, / Lieber Tom, / Hallo Max, ... Viele Grüße / Liebe Grüße / Bis bald",
+      "Frases úteis: Vielen Dank für Ihre E-Mail. Ich schreibe Ihnen, weil ... Ich freue mich auf Ihre Antwort."
+     ],
+     "q": "A quem escreves mais e-mails e usas um estilo formal ou informal?",
+     "c": "Escreve dois e-mails curtos: um a uma escola de línguas sobre um curso, outro a um amigo sobre o fim de semana."
+    },
+    "pt_BR": {
+     "t": "E-mails: formais e informais",
+     "g": "Escrever e-mails formais e informais com a saudação, a despedida e o Sie ou du certos.",
+     "p": [
+      "Formal: Sehr geehrte Frau Weber, / Sehr geehrte Damen und Herren, ... Mit freundlichen Grüßen",
+      "Informal: Liebe Anna, / Lieber Tom, / Hallo Max, ... Viele Grüße / Liebe Grüße / Bis bald",
+      "Frases úteis: Vielen Dank für Ihre E-Mail. Ich schreibe Ihnen, weil ... Ich freue mich auf Ihre Antwort."
+     ],
+     "q": "Para quem você mais escreve e-mails e usa um estilo formal ou informal?",
+     "c": "Escreva dois e-mails curtos: um para uma escola de idiomas sobre um curso e outro para um amigo sobre o fim de semana."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Sehr geehrte Damen und Herren,",
+      "ex": "Sehr geehrte Damen und Herren, ich habe eine Frage."
+     },
+     {
+      "w": "Mit freundlichen Grüßen",
+      "ex": "Mit freundlichen Grüßen, Maria Costa"
+     },
+     {
+      "w": "Liebe Grüße",
+      "ex": "Liebe Grüße und bis Samstag!"
+     },
+     {
+      "w": "der Betreff",
+      "ex": "Im Betreff steht: Anmeldung Deutschkurs."
+     },
+     {
+      "w": "der Anhang",
+      "ex": "Im Anhang finden Sie meinen Lebenslauf."
+     },
+     {
+      "w": "Ich freue mich auf ...",
+      "ex": "Ich freue mich auf Ihre Antwort."
+     }
+    ],
+    "gram": "Formell mit Sie, Ihnen, Ihr (groß). Liebe + Frau, Lieber + Mann. Nach der Anrede ein Komma, dann klein weiter."
+   }
+  },
+  {
+   "d": 140,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Celebrations and holidays",
+     "g": "Talk about German celebrations like Weihnachten, Ostern, Karneval, Oktoberfest and Silvester.",
+     "p": [
+      "Festivals: Weihnachten mit Adventskalender und Weihnachtsmarkt, Ostern mit Ostereiern, Silvester mit Feuerwerk.",
+      "Regional: Karneval feiert man vor allem in Köln und Mainz, das Oktoberfest in München.",
+      "Wishes: Frohe Weihnachten! Frohe Ostern! Guten Rutsch ins neue Jahr! Prost Neujahr!"
+     ],
+     "q": "Which celebration do you love most, and what do you do on that day? Is there a German one you would like to see?",
+     "c": "Describe a celebration from your culture in five sentences with man feiert, an + date and one wish."
+    },
+    "de": {
+     "t": "Feste und Feiertage",
+     "g": "Du sprichst über Feste wie Weihnachten, Ostern, Karneval, Oktoberfest und Silvester.",
+     "p": [
+      "Feste: Weihnachten mit Adventskalender und Weihnachtsmarkt, Ostern mit Ostereiern, Silvester mit Feuerwerk.",
+      "Regional: Karneval feiert man vor allem in Köln und Mainz, das Oktoberfest in München.",
+      "Wünsche: Frohe Weihnachten! Frohe Ostern! Guten Rutsch ins neue Jahr! Prost Neujahr!"
+     ],
+     "q": "Welches Fest magst du am liebsten, und was machst du da? Welches deutsche Fest möchtest du erleben?",
+     "c": "Beschreib ein Fest aus deiner Kultur in fünf Sätzen mit man feiert, an + Datum und einem Glückwunsch."
+    },
+    "es": {
+     "t": "Fiestas y días festivos",
+     "g": "Habla de fiestas alemanas como Weihnachten, Ostern, Karneval, Oktoberfest y Silvester.",
+     "p": [
+      "Fiestas: Weihnachten mit Adventskalender und Weihnachtsmarkt, Ostern mit Ostereiern, Silvester mit Feuerwerk.",
+      "Regional: Karneval feiert man vor allem in Köln und Mainz, das Oktoberfest in München.",
+      "Felicitaciones: Frohe Weihnachten! Frohe Ostern! Guten Rutsch ins neue Jahr! Prost Neujahr!"
+     ],
+     "q": "¿Qué fiesta te gusta más y qué haces ese día? ¿Qué fiesta alemana te gustaría vivir?",
+     "c": "Describe una fiesta de tu cultura en cinco frases con man feiert, an + fecha y una felicitación."
+    },
+    "fr": {
+     "t": "Fêtes et jours fériés",
+     "g": "Parler des fêtes allemandes : Weihnachten, Ostern, Karneval, Oktoberfest et Silvester.",
+     "p": [
+      "Fêtes : Weihnachten mit Adventskalender und Weihnachtsmarkt, Ostern mit Ostereiern, Silvester mit Feuerwerk.",
+      "Régional : Karneval feiert man vor allem in Köln und Mainz, das Oktoberfest in München.",
+      "Vœux : Frohe Weihnachten! Frohe Ostern! Guten Rutsch ins neue Jahr! Prost Neujahr!"
+     ],
+     "q": "Quelle fête préfères-tu, et que fais-tu ce jour-là ? Quelle fête allemande aimerais-tu vivre ?",
+     "c": "Décris une fête de ta culture en cinq phrases avec man feiert, an + date et un vœu."
+    },
+    "it": {
+     "t": "Feste e festività",
+     "g": "Parli di feste tedesche come Weihnachten, Ostern, Karneval, Oktoberfest e Silvester.",
+     "p": [
+      "Feste: Weihnachten mit Adventskalender und Weihnachtsmarkt, Ostern mit Ostereiern, Silvester mit Feuerwerk.",
+      "Regionale: Karneval feiert man vor allem in Köln und Mainz, das Oktoberfest in München.",
+      "Auguri: Frohe Weihnachten! Frohe Ostern! Guten Rutsch ins neue Jahr! Prost Neujahr!"
+     ],
+     "q": "Qual è la tua festa preferita e che cosa fai quel giorno? Quale festa tedesca vorresti vivere?",
+     "c": "Descrivi una festa della tua cultura in cinque frasi con man feiert, an + data e un augurio."
+    },
+    "pt": {
+     "t": "Festas e feriados",
+     "g": "Falar de festas alemãs como Weihnachten, Ostern, Karneval, Oktoberfest e Silvester.",
+     "p": [
+      "Festas: Weihnachten mit Adventskalender und Weihnachtsmarkt, Ostern mit Ostereiern, Silvester mit Feuerwerk.",
+      "Regional: Karneval feiert man vor allem in Köln und Mainz, das Oktoberfest in München.",
+      "Votos: Frohe Weihnachten! Frohe Ostern! Guten Rutsch ins neue Jahr! Prost Neujahr!"
+     ],
+     "q": "Qual é a tua festa preferida e o que fazes nesse dia? Que festa alemã gostavas de viver?",
+     "c": "Descreve uma festa da tua cultura em cinco frases com man feiert, an + data e uns votos."
+    },
+    "pt_BR": {
+     "t": "Festas e feriados",
+     "g": "Falar de festas alemãs como Weihnachten, Ostern, Karneval, Oktoberfest e Silvester.",
+     "p": [
+      "Festas: Weihnachten mit Adventskalender und Weihnachtsmarkt, Ostern mit Ostereiern, Silvester mit Feuerwerk.",
+      "Regional: Karneval feiert man vor allem in Köln und Mainz, das Oktoberfest in München.",
+      "Votos: Frohe Weihnachten! Frohe Ostern! Guten Rutsch ins neue Jahr! Prost Neujahr!"
+     ],
+     "q": "Qual é sua festa favorita e o que você faz nesse dia? Qual festa alemã você gostaria de viver?",
+     "c": "Descreva uma festa da sua cultura em cinco frases com man feiert, an + data e uma mensagem de votos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Weihnachten",
+      "ex": "An Weihnachten besuche ich meine Familie."
+     },
+     {
+      "w": "Ostern",
+      "ex": "Zu Ostern suchen die Kinder Ostereier."
+     },
+     {
+      "w": "der Karneval",
+      "ex": "Im Karneval tragen viele Leute Kostüme."
+     },
+     {
+      "w": "das Oktoberfest",
+      "ex": "Das Oktoberfest beginnt im September."
+     },
+     {
+      "w": "Silvester",
+      "ex": "An Silvester sehen wir das Feuerwerk an."
+     },
+     {
+      "w": "feiern",
+      "ex": "Wie feiert man bei euch Neujahr?"
+     }
+    ],
+    "gram": "An/zu Weihnachten, an/zu Ostern, an Silvester (ohne Artikel). Im Karneval. Frohe Weihnachten! Guten Rutsch!"
+   }
+  }
+ ]
+}

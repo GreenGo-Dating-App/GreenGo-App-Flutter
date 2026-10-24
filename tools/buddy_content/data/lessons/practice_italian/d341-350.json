@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 341,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Travel and sustainable tourism",
+     "g": "Discuss overtourism, slow travel and responsible choices in nuanced Italian.",
+     "p": [
+      "Key terms: il sovraturismo or overtourism, il turismo lento, la bassa stagione, i borghi meno conosciuti.",
+      "Nuance your view: Non si tratta di smettere di viaggiare, ma di farlo in modo diverso. Sarebbe meglio se...",
+      "Responsible choices: prendere il treno, restare più a lungo, comprare prodotti locali, rispettare i residenti."
+     ],
+     "q": "What would make your next trip more sustainable?",
+     "c": "Write three tips for a responsible trip to Italy, one with sarebbe meglio se + imperfect subjunctive."
+    },
+    "de": {
+     "t": "Reisen und nachhaltiger Tourismus",
+     "g": "Du diskutierst Overtourism, langsames Reisen und verantwortliche Entscheidungen differenziert.",
+     "p": [
+      "Schlüsselbegriffe: il sovraturismo oder overtourism, il turismo lento, la bassa stagione, i borghi meno conosciuti.",
+      "Differenziert: Non si tratta di smettere di viaggiare, ma di farlo in modo diverso. Sarebbe meglio se...",
+      "Verantwortlich: prendere il treno, restare più a lungo, comprare prodotti locali, rispettare i residenti."
+     ],
+     "q": "Was würde deine nächste Reise nachhaltiger machen?",
+     "c": "Schreib drei Tipps für eine verantwortliche Italienreise, einen mit sarebbe meglio se + Konjunktiv Imperfekt."
+    },
+    "es": {
+     "t": "Viajes y turismo sostenible",
+     "g": "Debatir sobre masificación turística, viaje lento y elecciones responsables con matices.",
+     "p": [
+      "Términos clave: il sovraturismo u overtourism, il turismo lento, la bassa stagione, i borghi meno conosciuti.",
+      "Matiza: Non si tratta di smettere di viaggiare, ma di farlo in modo diverso. Sarebbe meglio se...",
+      "Elecciones responsables: prendere il treno, restare più a lungo, comprare prodotti locali, rispettare i residenti."
+     ],
+     "q": "¿Qué haría más sostenible tu próximo viaje?",
+     "c": "Escribe tres consejos para un viaje responsable a Italia, uno con sarebbe meglio se + imperfecto de subjuntivo."
+    },
+    "fr": {
+     "t": "Voyage et tourisme durable",
+     "g": "Discuter du surtourisme, du voyage lent et des choix responsables avec nuance.",
+     "p": [
+      "Termes clés : il sovraturismo ou overtourism, il turismo lento, la bassa stagione, i borghi meno conosciuti.",
+      "Nuancer : Non si tratta di smettere di viaggiare, ma di farlo in modo diverso. Sarebbe meglio se...",
+      "Choix responsables : prendere il treno, restare più a lungo, comprare prodotti locali, rispettare i residenti."
+     ],
+     "q": "Qu'est-ce qui rendrait ton prochain voyage plus durable ?",
+     "c": "Écris trois conseils pour un voyage responsable en Italie, dont un avec sarebbe meglio se + subjonctif imparfait."
+    },
+    "it": {
+     "t": "Viaggi e turismo sostenibile",
+     "g": "Discutere di sovraturismo, turismo lento e scelte responsabili con sfumature.",
+     "p": [
+      "Parole chiave: il sovraturismo, il turismo lento, la bassa stagione, i borghi meno conosciuti.",
+      "Sfuma la tua opinione: Non si tratta di smettere di viaggiare, ma di farlo in modo diverso. Sarebbe meglio se...",
+      "Scelte responsabili: prendere il treno, restare più a lungo, comprare prodotti locali, rispettare i residenti."
+     ],
+     "q": "Che cosa renderebbe più sostenibile il tuo prossimo viaggio?",
+     "c": "Scrivi tre consigli per un viaggio responsabile in Italia, uno con sarebbe meglio se + congiuntivo imperfetto."
+    },
+    "pt": {
+     "t": "Viagens e turismo sustentável",
+     "g": "Discutir o excesso de turismo, a viagem lenta e as escolhas responsáveis com nuance.",
+     "p": [
+      "Termos-chave: il sovraturismo ou overtourism, il turismo lento, la bassa stagione, i borghi meno conosciuti.",
+      "Matiza: Non si tratta di smettere di viaggiare, ma di farlo in modo diverso. Sarebbe meglio se...",
+      "Escolhas responsáveis: prendere il treno, restare più a lungo, comprare prodotti locali, rispettare i residenti."
+     ],
+     "q": "O que tornaria a tua próxima viagem mais sustentável?",
+     "c": "Escreve três dicas para uma viagem responsável a Itália, uma com sarebbe meglio se + conjuntivo imperfeito."
+    },
+    "pt_BR": {
+     "t": "Viagens e turismo sustentável",
+     "g": "Discutir o excesso de turismo, a viagem lenta e as escolhas responsáveis com nuance.",
+     "p": [
+      "Termos-chave: il sovraturismo ou overtourism, il turismo lento, la bassa stagione, i borghi meno conosciuti.",
+      "Nuance: Non si tratta di smettere di viaggiare, ma di farlo in modo diverso. Sarebbe meglio se...",
+      "Escolhas responsáveis: prendere il treno, restare più a lungo, comprare prodotti locali, rispettare i residenti."
+     ],
+     "q": "O que deixaria sua próxima viagem mais sustentável?",
+     "c": "Escreva três dicas para uma viagem responsável à Itália, uma com sarebbe meglio se + imperfeito do subjuntivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il turismo lento",
+      "ex": "Il turismo lento permette di conoscere davvero un luogo."
+     },
+     {
+      "w": "la bassa stagione",
+      "ex": "In bassa stagione Venezia è più tranquilla."
+     },
+     {
+      "w": "sostenibile",
+      "ex": "Abbiamo scelto un albergo sostenibile."
+     },
+     {
+      "w": "i residenti",
+      "ex": "Bisogna rispettare la vita dei residenti."
+     },
+     {
+      "w": "non si tratta di",
+      "ex": "Non si tratta di viaggiare meno, ma meglio."
+     },
+     {
+      "w": "sarebbe meglio se",
+      "ex": "Sarebbe meglio se tutti usassero i mezzi pubblici."
+     }
+    ],
+    "gram": "Sarebbe meglio se + congiuntivo imperfetto: se andassimo, se restassimo, se usassero (ipotesi e consigli)."
+   }
+  },
+  {
+   "d": 342,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Science and discovery",
+     "g": "Talk about Galileo, Volta, Fermi and explain scientific ideas simply.",
+     "p": [
+      "Galileo Galilei studied motion and observed Jupiter's moons with a telescope in 1610.",
+      "Alessandro Volta invented the electric battery (la pila) around 1800; the unit volt is named after him.",
+      "Enrico Fermi, Nobel Prize in Physics 1938, was a pioneer of nuclear physics. Explain simply: In parole semplici..."
+     ],
+     "q": "Which scientific discovery do you find the most amazing?",
+     "c": "Explain a simple scientific idea in Italian in three sentences, starting with In parole semplici."
+    },
+    "de": {
+     "t": "Wissenschaft und Entdeckungen",
+     "g": "Du sprichst über Galileo, Volta, Fermi und erklärst wissenschaftliche Ideen einfach.",
+     "p": [
+      "Galileo Galilei erforschte die Bewegung und beobachtete 1610 mit dem Teleskop die Jupitermonde.",
+      "Alessandro Volta erfand um 1800 die elektrische Batterie (la pila); die Einheit Volt ist nach ihm benannt.",
+      "Enrico Fermi, Physik-Nobelpreis 1938, war ein Pionier der Kernphysik. Einfach erklären: In parole semplici..."
+     ],
+     "q": "Welche wissenschaftliche Entdeckung findest du am erstaunlichsten?",
+     "c": "Erkläre eine einfache wissenschaftliche Idee in drei Sätzen, beginnend mit In parole semplici."
+    },
+    "es": {
+     "t": "Ciencia y descubrimientos",
+     "g": "Hablar de Galileo, Volta y Fermi y explicar ideas científicas con sencillez.",
+     "p": [
+      "Galileo Galilei estudió el movimiento y observó las lunas de Júpiter con un telescopio en 1610.",
+      "Alessandro Volta inventó la pila eléctrica (la pila) hacia 1800; la unidad voltio lleva su nombre.",
+      "Enrico Fermi, Nobel de Física en 1938, fue pionero de la física nuclear. Explica fácil: In parole semplici..."
+     ],
+     "q": "¿Qué descubrimiento científico te parece más asombroso?",
+     "c": "Explica una idea científica sencilla en tres frases, empezando con In parole semplici."
+    },
+    "fr": {
+     "t": "Science et découvertes",
+     "g": "Parler de Galilée, Volta, Fermi et expliquer simplement des idées scientifiques.",
+     "p": [
+      "Galileo Galilei étudia le mouvement et observa les lunes de Jupiter avec une lunette en 1610.",
+      "Alessandro Volta inventa la pile électrique (la pila) vers 1800 ; l'unité volt porte son nom.",
+      "Enrico Fermi, prix Nobel de physique 1938, fut un pionnier de la physique nucléaire. Expliquer simplement : In parole semplici..."
+     ],
+     "q": "Quelle découverte scientifique trouves-tu la plus étonnante ?",
+     "c": "Explique une idée scientifique simple en trois phrases, en commençant par In parole semplici."
+    },
+    "it": {
+     "t": "Scienza e scoperte",
+     "g": "Parlare di Galileo, Volta, Fermi e spiegare idee scientifiche in modo semplice.",
+     "p": [
+      "Galileo Galilei studiò il movimento e nel 1610 osservò i satelliti di Giove con il cannocchiale.",
+      "Alessandro Volta inventò la pila elettrica intorno al 1800; l'unità di misura volt porta il suo nome.",
+      "Enrico Fermi, premio Nobel per la fisica nel 1938, fu un pioniere della fisica nucleare. Spiega: In parole semplici..."
+     ],
+     "q": "Quale scoperta scientifica trovi più straordinaria?",
+     "c": "Spiega un'idea scientifica semplice in tre frasi, iniziando con In parole semplici."
+    },
+    "pt": {
+     "t": "Ciência e descobertas",
+     "g": "Falar de Galileu, Volta, Fermi e explicar ideias científicas de forma simples.",
+     "p": [
+      "Galileo Galilei estudou o movimento e observou as luas de Júpiter com um telescópio em 1610.",
+      "Alessandro Volta inventou a pilha elétrica (la pila) por volta de 1800; a unidade volt tem o seu nome.",
+      "Enrico Fermi, Nobel da Física em 1938, foi pioneiro da física nuclear. Explica fácil: In parole semplici..."
+     ],
+     "q": "Que descoberta científica achas mais incrível?",
+     "c": "Explica uma ideia científica simples em três frases, começando com In parole semplici."
+    },
+    "pt_BR": {
+     "t": "Ciência e descobertas",
+     "g": "Falar de Galileu, Volta, Fermi e explicar ideias científicas de forma simples.",
+     "p": [
+      "Galileo Galilei estudou o movimento e observou as luas de Júpiter com um telescópio em 1610.",
+      "Alessandro Volta inventou a pilha elétrica (la pila) por volta de 1800; a unidade volt leva seu nome.",
+      "Enrico Fermi, Nobel de Física em 1938, foi pioneiro da física nuclear. Explique fácil: In parole semplici..."
+     ],
+     "q": "Que descoberta científica você acha mais incrível?",
+     "c": "Explique uma ideia científica simples em três frases, começando com In parole semplici."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la scoperta",
+      "ex": "La scoperta di Galileo cambiò l'astronomia."
+     },
+     {
+      "w": "inventare",
+      "ex": "Volta inventò la pila elettrica."
+     },
+     {
+      "w": "lo scienziato",
+      "ex": "Fermi fu uno scienziato straordinario."
+     },
+     {
+      "w": "l'esperimento",
+      "ex": "L'esperimento ha confermato l'ipotesi."
+     },
+     {
+      "w": "in parole semplici",
+      "ex": "In parole semplici, la Terra gira intorno al Sole."
+     },
+     {
+      "w": "dimostrare",
+      "ex": "Galileo voleva dimostrare le sue idee con i fatti."
+     }
+    ],
+    "gram": "Spiegare con chiarezza: cioè, vale a dire, in altre parole; si impersonale: si osserva, si misura, si calcola."
+   }
+  },
+  {
+   "d": 343,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Health and lifestyle debates",
+     "g": "Discuss diet, sport and wellbeing trends with good arguments.",
+     "p": [
+      "Topics: la dieta mediterranea, fare attività fisica, dormire bene, ridurre lo stress, le mode del momento.",
+      "Argue with evidence and caution: Secondo molti esperti..., In generale si consiglia di..., Non è detto che...",
+      "Share habits, not advice: Per me funziona..., Io cerco di..., Ognuno deve trovare il proprio equilibrio."
+     ],
+     "q": "What healthy habit makes you feel good?",
+     "c": "Write three sentences about a lifestyle trend: one fact, one opinion, one personal habit."
+    },
+    "de": {
+     "t": "Debatten über Gesundheit und Lebensstil",
+     "g": "Du diskutierst Ernährungs-, Sport- und Wellness-Trends mit guten Argumenten.",
+     "p": [
+      "Themen: la dieta mediterranea, fare attività fisica, dormire bene, ridurre lo stress, le mode del momento.",
+      "Mit Belegen und Vorsicht argumentieren: Secondo molti esperti..., In generale si consiglia di..., Non è detto che...",
+      "Gewohnheiten teilen, keine Ratschläge: Per me funziona..., Io cerco di..., Ognuno deve trovare il proprio equilibrio."
+     ],
+     "q": "Welche gesunde Gewohnheit tut dir gut?",
+     "c": "Schreib drei Sätze über einen Lebensstil-Trend: eine Tatsache, eine Meinung, eine eigene Gewohnheit."
+    },
+    "es": {
+     "t": "Debates sobre salud y estilo de vida",
+     "g": "Debatir tendencias de dieta, deporte y bienestar con buenos argumentos.",
+     "p": [
+      "Temas: la dieta mediterranea, fare attività fisica, dormire bene, ridurre lo stress, le mode del momento.",
+      "Argumenta con datos y prudencia: Secondo molti esperti..., In generale si consiglia di..., Non è detto che...",
+      "Comparte hábitos, no consejos: Per me funziona..., Io cerco di..., Ognuno deve trovare il proprio equilibrio."
+     ],
+     "q": "¿Qué hábito saludable te hace sentir bien?",
+     "c": "Escribe tres frases sobre una tendencia de estilo de vida: un dato, una opinión y un hábito personal."
+    },
+    "fr": {
+     "t": "Débats sur la santé et le mode de vie",
+     "g": "Discuter des tendances alimentation, sport et bien-être avec de bons arguments.",
+     "p": [
+      "Sujets : la dieta mediterranea, fare attività fisica, dormire bene, ridurre lo stress, le mode del momento.",
+      "Argumenter avec prudence : Secondo molti esperti..., In generale si consiglia di..., Non è detto che...",
+      "Partager des habitudes, pas des conseils : Per me funziona..., Io cerco di..., Ognuno deve trovare il proprio equilibrio."
+     ],
+     "q": "Quelle habitude saine te fait du bien ?",
+     "c": "Écris trois phrases sur une tendance de mode de vie : un fait, une opinion, une habitude personnelle."
+    },
+    "it": {
+     "t": "Dibattiti su salute e stile di vita",
+     "g": "Discutere di tendenze su alimentazione, sport e benessere con buoni argomenti.",
+     "p": [
+      "Temi: la dieta mediterranea, fare attività fisica, dormire bene, ridurre lo stress, le mode del momento.",
+      "Argomenta con prudenza: Secondo molti esperti..., In generale si consiglia di..., Non è detto che...",
+      "Condividi abitudini, non consigli: Per me funziona..., Io cerco di..., Ognuno deve trovare il proprio equilibrio."
+     ],
+     "q": "Quale abitudine sana ti fa stare bene?",
+     "c": "Scrivi tre frasi su una tendenza di stile di vita: un fatto, un'opinione, un'abitudine personale."
+    },
+    "pt": {
+     "t": "Debates sobre saúde e estilo de vida",
+     "g": "Discutir tendências de alimentação, desporto e bem-estar com bons argumentos.",
+     "p": [
+      "Temas: la dieta mediterranea, fare attività fisica, dormire bene, ridurre lo stress, le mode del momento.",
+      "Argumenta com prudência: Secondo molti esperti..., In generale si consiglia di..., Non è detto che...",
+      "Partilha hábitos, não conselhos: Per me funziona..., Io cerco di..., Ognuno deve trovare il proprio equilibrio."
+     ],
+     "q": "Que hábito saudável te faz sentir bem?",
+     "c": "Escreve três frases sobre uma tendência de estilo de vida: um facto, uma opinião, um hábito pessoal."
+    },
+    "pt_BR": {
+     "t": "Debates sobre saúde e estilo de vida",
+     "g": "Discutir tendências de alimentação, esporte e bem-estar com bons argumentos.",
+     "p": [
+      "Temas: la dieta mediterranea, fare attività fisica, dormire bene, ridurre lo stress, le mode del momento.",
+      "Argumente com prudência: Secondo molti esperti..., In generale si consiglia di..., Non è detto che...",
+      "Compartilhe hábitos, não conselhos: Per me funziona..., Io cerco di..., Ognuno deve trovare il proprio equilibrio."
+     ],
+     "q": "Que hábito saudável faz você se sentir bem?",
+     "c": "Escreva três frases sobre uma tendência de estilo de vida: um fato, uma opinião, um hábito pessoal."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la dieta mediterranea",
+      "ex": "La dieta mediterranea è ricca di verdure e olio d'oliva."
+     },
+     {
+      "w": "fare attività fisica",
+      "ex": "Cerco di fare attività fisica tre volte a settimana."
+     },
+     {
+      "w": "il benessere",
+      "ex": "Una passeggiata all'aria aperta aumenta il benessere."
+     },
+     {
+      "w": "la moda del momento",
+      "ex": "Questa dieta è solo la moda del momento."
+     },
+     {
+      "w": "non è detto che",
+      "ex": "Non è detto che una cosa di moda faccia bene."
+     },
+     {
+      "w": "l'equilibrio",
+      "ex": "Ognuno deve trovare il proprio equilibrio."
+     }
+    ],
+    "gram": "Non è detto che + congiuntivo: non è detto che funzioni. Si consiglia di + infinito: si consiglia di dormire bene."
+   }
+  },
+  {
+   "d": 344,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Technology and the future",
+     "g": "Share opinions and predictions about artificial intelligence, apps and online life.",
+     "p": [
+      "Vocabulary: l'intelligenza artificiale, l'app, i social, lo schermo, la privacy, il lavoro del futuro.",
+      "Predictions with the future: Tra dieci anni useremo..., Probabilmente lavoreremo..., Secondo me cambierà...",
+      "Hypotheses: Se tutti usassero..., sarebbe...; balance: Può essere utile, purché lo si usi con intelligenza."
+     ],
+     "q": "How do you think technology will change daily life in ten years?",
+     "c": "Make three predictions about the future with the simple future and one hypothesis with se + subjunctive."
+    },
+    "de": {
+     "t": "Technik und Zukunft",
+     "g": "Du teilst Meinungen und Prognosen zu künstlicher Intelligenz, Apps und dem Online-Leben.",
+     "p": [
+      "Wortschatz: l'intelligenza artificiale, l'app, i social, lo schermo, la privacy, il lavoro del futuro.",
+      "Prognosen im Futur: Tra dieci anni useremo..., Probabilmente lavoreremo..., Secondo me cambierà...",
+      "Hypothesen: Se tutti usassero..., sarebbe...; ausgewogen: Può essere utile, purché lo si usi con intelligenza."
+     ],
+     "q": "Wie wird die Technik deiner Meinung nach den Alltag in zehn Jahren verändern?",
+     "c": "Mach drei Prognosen im Futur und eine Hypothese mit se + Konjunktiv."
+    },
+    "es": {
+     "t": "Tecnología y futuro",
+     "g": "Dar opiniones y predicciones sobre la inteligencia artificial, las apps y la vida en línea.",
+     "p": [
+      "Vocabulario: l'intelligenza artificiale, l'app, i social, lo schermo, la privacy, il lavoro del futuro.",
+      "Predicciones en futuro: Tra dieci anni useremo..., Probabilmente lavoreremo..., Secondo me cambierà...",
+      "Hipótesis: Se tutti usassero..., sarebbe...; equilibrio: Può essere utile, purché lo si usi con intelligenza."
+     ],
+     "q": "¿Cómo crees que la tecnología cambiará la vida diaria en diez años?",
+     "c": "Haz tres predicciones en futuro simple y una hipótesis con se + subjuntivo."
+    },
+    "fr": {
+     "t": "Technologie et avenir",
+     "g": "Donner ton avis et des prévisions sur l'intelligence artificielle, les applis et la vie en ligne.",
+     "p": [
+      "Vocabulaire : l'intelligenza artificiale, l'app, i social, lo schermo, la privacy, il lavoro del futuro.",
+      "Prévisions au futur : Tra dieci anni useremo..., Probabilmente lavoreremo..., Secondo me cambierà...",
+      "Hypothèses : Se tutti usassero..., sarebbe... ; nuance : Può essere utile, purché lo si usi con intelligenza."
+     ],
+     "q": "Comment la technologie changera-t-elle la vie quotidienne dans dix ans, selon toi ?",
+     "c": "Fais trois prévisions au futur simple et une hypothèse avec se + subjonctif."
+    },
+    "it": {
+     "t": "Tecnologia e futuro",
+     "g": "Esprimere opinioni e previsioni su intelligenza artificiale, app e vita online.",
+     "p": [
+      "Lessico: l'intelligenza artificiale, l'app, i social, lo schermo, la privacy, il lavoro del futuro.",
+      "Previsioni al futuro: Tra dieci anni useremo..., Probabilmente lavoreremo..., Secondo me cambierà...",
+      "Ipotesi: Se tutti usassero..., sarebbe...; equilibrio: Può essere utile, purché lo si usi con intelligenza."
+     ],
+     "q": "Secondo te, come cambierà la tecnologia la vita quotidiana fra dieci anni?",
+     "c": "Fai tre previsioni al futuro semplice e un'ipotesi con se + congiuntivo."
+    },
+    "pt": {
+     "t": "Tecnologia e futuro",
+     "g": "Dar opiniões e previsões sobre a inteligência artificial, as apps e a vida online.",
+     "p": [
+      "Vocabulário: l'intelligenza artificiale, l'app, i social, lo schermo, la privacy, il lavoro del futuro.",
+      "Previsões no futuro: Tra dieci anni useremo..., Probabilmente lavoreremo..., Secondo me cambierà...",
+      "Hipóteses: Se tutti usassero..., sarebbe...; equilíbrio: Può essere utile, purché lo si usi con intelligenza."
+     ],
+     "q": "Como achas que a tecnologia vai mudar o dia a dia daqui a dez anos?",
+     "c": "Faz três previsões no futuro simples e uma hipótese com se + conjuntivo."
+    },
+    "pt_BR": {
+     "t": "Tecnologia e futuro",
+     "g": "Dar opiniões e previsões sobre a inteligência artificial, os apps e a vida online.",
+     "p": [
+      "Vocabulário: l'intelligenza artificiale, l'app, i social, lo schermo, la privacy, il lavoro del futuro.",
+      "Previsões no futuro: Tra dieci anni useremo..., Probabilmente lavoreremo..., Secondo me cambierà...",
+      "Hipóteses: Se tutti usassero..., sarebbe...; equilíbrio: Può essere utile, purché lo si usi con intelligenza."
+     ],
+     "q": "Como você acha que a tecnologia vai mudar o dia a dia em dez anos?",
+     "c": "Faça três previsões no futuro simples e uma hipótese com se + subjuntivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "l'intelligenza artificiale",
+      "ex": "L'intelligenza artificiale aiuta a tradurre i testi."
+     },
+     {
+      "w": "i social",
+      "ex": "Passo troppo tempo sui social."
+     },
+     {
+      "w": "la privacy",
+      "ex": "È importante proteggere la privacy online."
+     },
+     {
+      "w": "scaricare un'app",
+      "ex": "Ho scaricato un'app per imparare le lingue."
+     },
+     {
+      "w": "tra dieci anni",
+      "ex": "Tra dieci anni le auto guideranno da sole?"
+     },
+     {
+      "w": "il futuro",
+      "ex": "Sono ottimista sul futuro della tecnologia."
+     }
+    ],
+    "gram": "Futuro semplice per previsioni (useremo, cambierà); periodo ipotetico: se + congiuntivo imperfetto, condizionale."
+   }
+  },
+  {
+   "d": 345,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Volunteering and community",
+     "g": "Talk about helping others and local associations.",
+     "p": [
+      "Vocabulary: fare volontariato, il volontario, l'associazione, la raccolta (collection), la Pro Loco (local tourist association).",
+      "Describe activities: Aiuto in una mensa, Faccio doposcuola ai bambini, Partecipo alla pulizia del parco.",
+      "Explain why: Mi fa sentire utile, Si conoscono persone nuove, È un modo per restituire qualcosa."
+     ],
+     "q": "Have you ever volunteered, or would you like to? Doing what?",
+     "c": "Write three sentences about a way you could help your community, using mi piacerebbe and mi fa sentire."
+    },
+    "de": {
+     "t": "Ehrenamt und Gemeinschaft",
+     "g": "Du sprichst darüber, anderen zu helfen und über lokale Vereine.",
+     "p": [
+      "Wortschatz: fare volontariato, il volontario, l'associazione, la raccolta (Sammlung), la Pro Loco (lokaler Tourismusverein).",
+      "Tätigkeiten: Aiuto in una mensa, Faccio doposcuola ai bambini, Partecipo alla pulizia del parco.",
+      "Begründen: Mi fa sentire utile, Si conoscono persone nuove, È un modo per restituire qualcosa."
+     ],
+     "q": "Hast du schon einmal ehrenamtlich geholfen oder würdest du gern? Wobei?",
+     "c": "Schreib drei Sätze darüber, wie du deiner Gemeinschaft helfen könntest, mit mi piacerebbe und mi fa sentire."
+    },
+    "es": {
+     "t": "Voluntariado y comunidad",
+     "g": "Hablar de ayudar a los demás y de las asociaciones locales.",
+     "p": [
+      "Vocabulario: fare volontariato, il volontario, l'associazione, la raccolta (colecta), la Pro Loco (asociación turística local).",
+      "Describe actividades: Aiuto in una mensa, Faccio doposcuola ai bambini, Partecipo alla pulizia del parco.",
+      "Explica por qué: Mi fa sentire utile, Si conoscono persone nuove, È un modo per restituire qualcosa."
+     ],
+     "q": "¿Has hecho voluntariado alguna vez o te gustaría? ¿Haciendo qué?",
+     "c": "Escribe tres frases sobre cómo podrías ayudar a tu comunidad, con mi piacerebbe y mi fa sentire."
+    },
+    "fr": {
+     "t": "Bénévolat et vie locale",
+     "g": "Parler d'aider les autres et des associations locales.",
+     "p": [
+      "Vocabulaire : fare volontariato, il volontario, l'associazione, la raccolta (collecte), la Pro Loco (association touristique locale).",
+      "Décrire des activités : Aiuto in una mensa, Faccio doposcuola ai bambini, Partecipo alla pulizia del parco.",
+      "Expliquer pourquoi : Mi fa sentire utile, Si conoscono persone nuove, È un modo per restituire qualcosa."
+     ],
+     "q": "As-tu déjà fait du bénévolat, ou aimerais-tu en faire ? Lequel ?",
+     "c": "Écris trois phrases sur une façon d'aider ta communauté, avec mi piacerebbe et mi fa sentire."
+    },
+    "it": {
+     "t": "Volontariato e comunità",
+     "g": "Parlare dell'aiuto agli altri e delle associazioni locali.",
+     "p": [
+      "Lessico: fare volontariato, il volontario, l'associazione, la raccolta, la Pro Loco.",
+      "Descrivere attività: Aiuto in una mensa, Faccio doposcuola ai bambini, Partecipo alla pulizia del parco.",
+      "Spiegare il perché: Mi fa sentire utile, Si conoscono persone nuove, È un modo per restituire qualcosa."
+     ],
+     "q": "Hai mai fatto volontariato, o ti piacerebbe farlo? Di che tipo?",
+     "c": "Scrivi tre frasi su come potresti aiutare la tua comunità, con mi piacerebbe e mi fa sentire."
+    },
+    "pt": {
+     "t": "Voluntariado e comunidade",
+     "g": "Falar de ajudar os outros e das associações locais.",
+     "p": [
+      "Vocabulário: fare volontariato, il volontario, l'associazione, la raccolta (recolha), la Pro Loco (associação turística local).",
+      "Descrever atividades: Aiuto in una mensa, Faccio doposcuola ai bambini, Partecipo alla pulizia del parco.",
+      "Explicar porquê: Mi fa sentire utile, Si conoscono persone nuove, È un modo per restituire qualcosa."
+     ],
+     "q": "Já fizeste voluntariado ou gostarias de fazer? Que tipo?",
+     "c": "Escreve três frases sobre como poderias ajudar a tua comunidade, com mi piacerebbe e mi fa sentire."
+    },
+    "pt_BR": {
+     "t": "Voluntariado e comunidade",
+     "g": "Falar de ajudar os outros e das associações locais.",
+     "p": [
+      "Vocabulário: fare volontariato, il volontario, l'associazione, la raccolta (arrecadação), la Pro Loco (associação turística local).",
+      "Descrever atividades: Aiuto in una mensa, Faccio doposcuola ai bambini, Partecipo alla pulizia del parco.",
+      "Explicar por quê: Mi fa sentire utile, Si conoscono persone nuove, È un modo per restituire qualcosa."
+     ],
+     "q": "Você já fez trabalho voluntário ou gostaria de fazer? De que tipo?",
+     "c": "Escreva três frases sobre como você poderia ajudar sua comunidade, com mi piacerebbe e mi fa sentire."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "fare volontariato",
+      "ex": "Il sabato faccio volontariato in biblioteca."
+     },
+     {
+      "w": "l'associazione",
+      "ex": "Mi sono iscritta a un'associazione del quartiere."
+     },
+     {
+      "w": "la raccolta",
+      "ex": "Organizziamo una raccolta di libri per la scuola."
+     },
+     {
+      "w": "il doposcuola",
+      "ex": "Aiuto i bambini al doposcuola."
+     },
+     {
+      "w": "sentirsi utile",
+      "ex": "Aiutare gli altri mi fa sentire utile."
+     },
+     {
+      "w": "restituire",
+      "ex": "È un modo per restituire qualcosa alla comunità."
+     }
+    ],
+    "gram": "Fare sentire + aggettivo: mi fa sentire utile, ci fa sentire parte di qualcosa (pronome indiretto prima di fa)."
+   }
+  },
+  {
+   "d": 346,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Review: discussing ideas",
+     "g": "Recap the language of debate on society, work and technology.",
+     "p": [
+      "Trends and comparison: sempre più, è in aumento, rispetto al passato, mentre, invece.",
+      "Argue with nuance: da un lato... dall'altro, non è detto che, non si tratta di..., ma di...",
+      "Look ahead: future for predictions (useremo), se + imperfect subjunctive for hypotheses (se tutti usassero)."
+     ],
+     "q": "Which topic from these days would you most like to debate with me?",
+     "c": "Pick one topic and give me a balanced opinion in five sentences, with one prediction."
+    },
+    "de": {
+     "t": "Wiederholung: Ideen diskutieren",
+     "g": "Du wiederholst die Debattensprache zu Gesellschaft, Arbeit und Technik.",
+     "p": [
+      "Trends und Vergleich: sempre più, è in aumento, rispetto al passato, mentre, invece.",
+      "Differenziert argumentieren: da un lato... dall'altro, non è detto che, non si tratta di..., ma di...",
+      "Nach vorn blicken: Futur für Prognosen (useremo), se + Konjunktiv Imperfekt für Hypothesen (se tutti usassero)."
+     ],
+     "q": "Über welches Thema dieser Tage würdest du am liebsten mit mir diskutieren?",
+     "c": "Wähle ein Thema und gib mir in fünf Sätzen eine ausgewogene Meinung mit einer Prognose."
+    },
+    "es": {
+     "t": "Repaso: debatir ideas",
+     "g": "Repasar el lenguaje del debate sobre sociedad, trabajo y tecnología.",
+     "p": [
+      "Tendencias y comparación: sempre più, è in aumento, rispetto al passato, mentre, invece.",
+      "Argumentar con matices: da un lato... dall'altro, non è detto che, non si tratta di..., ma di...",
+      "Mirar al futuro: futuro para predicciones (useremo), se + imperfecto de subjuntivo para hipótesis (se tutti usassero)."
+     ],
+     "q": "¿Qué tema de estos días te gustaría más debatir conmigo?",
+     "c": "Elige un tema y dame una opinión equilibrada en cinco frases, con una predicción."
+    },
+    "fr": {
+     "t": "Révision : débattre d'idées",
+     "g": "Réviser le langage du débat sur la société, le travail et la technologie.",
+     "p": [
+      "Tendances et comparaison : sempre più, è in aumento, rispetto al passato, mentre, invece.",
+      "Argumenter avec nuance : da un lato... dall'altro, non è detto che, non si tratta di..., ma di...",
+      "Se projeter : futur pour les prévisions (useremo), se + subjonctif imparfait pour les hypothèses (se tutti usassero)."
+     ],
+     "q": "Quel sujet de ces derniers jours aimerais-tu le plus débattre avec moi ?",
+     "c": "Choisis un sujet et donne-moi un avis équilibré en cinq phrases, avec une prévision."
+    },
+    "it": {
+     "t": "Ripasso: discutere di idee",
+     "g": "Ripassare la lingua del dibattito su società, lavoro e tecnologia.",
+     "p": [
+      "Tendenze e confronti: sempre più, è in aumento, rispetto al passato, mentre, invece.",
+      "Argomentare con sfumature: da un lato... dall'altro, non è detto che, non si tratta di..., ma di...",
+      "Guardare avanti: futuro per le previsioni (useremo), se + congiuntivo imperfetto per le ipotesi (se tutti usassero)."
+     ],
+     "q": "Di quale argomento di questi giorni ti piacerebbe discutere con me?",
+     "c": "Scegli un argomento e dammi un'opinione equilibrata in cinque frasi, con una previsione."
+    },
+    "pt": {
+     "t": "Revisão: discutir ideias",
+     "g": "Rever a linguagem do debate sobre sociedade, trabalho e tecnologia.",
+     "p": [
+      "Tendências e comparação: sempre più, è in aumento, rispetto al passato, mentre, invece.",
+      "Argumentar com nuance: da un lato... dall'altro, non è detto che, non si tratta di..., ma di...",
+      "Olhar em frente: futuro para previsões (useremo), se + conjuntivo imperfeito para hipóteses (se tutti usassero)."
+     ],
+     "q": "Que tema destes dias gostarias mais de debater comigo?",
+     "c": "Escolhe um tema e dá-me uma opinião equilibrada em cinco frases, com uma previsão."
+    },
+    "pt_BR": {
+     "t": "Revisão: discutindo ideias",
+     "g": "Revisar a linguagem do debate sobre sociedade, trabalho e tecnologia.",
+     "p": [
+      "Tendências e comparação: sempre più, è in aumento, rispetto al passato, mentre, invece.",
+      "Argumentar com nuance: da un lato... dall'altro, non è detto che, non si tratta di..., ma di...",
+      "Olhar à frente: futuro para previsões (useremo), se + imperfeito do subjuntivo para hipóteses (se tutti usassero)."
+     ],
+     "q": "Que tema destes dias você mais gostaria de debater comigo?",
+     "c": "Escolha um tema e me dê uma opinião equilibrada em cinco frases, com uma previsão."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il dibattito",
+      "ex": "Il dibattito sul lavoro da remoto è molto acceso."
+     },
+     {
+      "w": "il punto di vista",
+      "ex": "Capisco il tuo punto di vista, però non sono d'accordo."
+     },
+     {
+      "w": "da un lato... dall'altro",
+      "ex": "Da un lato risparmio tempo, dall'altro mi sento solo."
+     },
+     {
+      "w": "è in calo",
+      "ex": "Il numero di lettere scritte a mano è in calo."
+     },
+     {
+      "w": "convincente",
+      "ex": "Il tuo argomento è molto convincente."
+     },
+     {
+      "w": "in conclusione",
+      "ex": "In conclusione, credo che serva un equilibrio."
+     }
+    ],
+    "gram": "Periodo ipotetico della possibilità: se + congiuntivo imperfetto, condizionale presente: se avessi tempo, viaggerei."
+   }
+  },
+  {
+   "d": 347,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Poetry: reading Italian verse",
+     "g": "Read short poems by Ungaretti or Montale and feel their rhythm.",
+     "p": [
+      "Ungaretti wrote very short poems; Mattina is just M'illumino / d'immenso: two lines full of light.",
+      "Montale, Nobel Prize in Literature 1975, used everyday objects and Ligurian landscapes, as in Ossi di seppia.",
+      "Read aloud slowly: notice il verso (line), la strofa (stanza), la rima and the pauses."
+     ],
+     "q": "Is there a short poem in your language that you know by heart?",
+     "c": "Read M'illumino d'immenso aloud three times and write in Italian what image it gives you."
+    },
+    "de": {
+     "t": "Lyrik: italienische Verse lesen",
+     "g": "Du liest kurze Gedichte von Ungaretti oder Montale und spürst ihren Rhythmus.",
+     "p": [
+      "Ungaretti schrieb sehr kurze Gedichte; Mattina besteht nur aus M'illumino / d'immenso: zwei Zeilen voller Licht.",
+      "Montale, Literaturnobelpreis 1975, nutzte Alltagsgegenstände und ligurische Landschaften, etwa in Ossi di seppia.",
+      "Langsam laut lesen: achte auf il verso (Vers), la strofa (Strophe), la rima und die Pausen."
+     ],
+     "q": "Kennst du ein kurzes Gedicht in deiner Sprache auswendig?",
+     "c": "Lies M'illumino d'immenso dreimal laut und schreib auf Italienisch, welches Bild es dir gibt."
+    },
+    "es": {
+     "t": "Poesía: leer versos italianos",
+     "g": "Leer poemas breves de Ungaretti o Montale y sentir su ritmo.",
+     "p": [
+      "Ungaretti escribió poemas muy breves; Mattina es solo M'illumino / d'immenso: dos versos llenos de luz.",
+      "Montale, Nobel de Literatura en 1975, usó objetos cotidianos y paisajes de Liguria, como en Ossi di seppia.",
+      "Lee en voz alta y despacio: fíjate en il verso, la strofa (estrofa), la rima y las pausas."
+     ],
+     "q": "¿Hay algún poema breve en tu idioma que te sepas de memoria?",
+     "c": "Lee M'illumino d'immenso en voz alta tres veces y escribe en italiano qué imagen te sugiere."
+    },
+    "fr": {
+     "t": "Poésie : lire des vers italiens",
+     "g": "Lire de courts poèmes d'Ungaretti ou de Montale et sentir leur rythme.",
+     "p": [
+      "Ungaretti écrivait des poèmes très brefs ; Mattina tient en M'illumino / d'immenso : deux vers pleins de lumière.",
+      "Montale, prix Nobel de littérature 1975, utilisait objets quotidiens et paysages ligures, comme dans Ossi di seppia.",
+      "Lis lentement à voix haute : remarque il verso (vers), la strofa (strophe), la rima et les pauses."
+     ],
+     "q": "Connais-tu par cœur un court poème dans ta langue ?",
+     "c": "Lis M'illumino d'immenso trois fois à voix haute et écris en italien l'image qu'il t'évoque."
+    },
+    "it": {
+     "t": "Poesia: leggere versi italiani",
+     "g": "Leggere brevi poesie di Ungaretti o Montale e sentirne il ritmo.",
+     "p": [
+      "Ungaretti scrisse poesie brevissime; Mattina è solo M'illumino / d'immenso: due versi pieni di luce.",
+      "Montale, premio Nobel per la letteratura nel 1975, usò oggetti quotidiani e paesaggi liguri, come in Ossi di seppia.",
+      "Leggi ad alta voce e piano: nota il verso, la strofa, la rima e le pause."
+     ],
+     "q": "C'è una breve poesia nella tua lingua che conosci a memoria?",
+     "c": "Leggi tre volte ad alta voce M'illumino d'immenso e scrivi quale immagine ti suggerisce."
+    },
+    "pt": {
+     "t": "Poesia: ler versos italianos",
+     "g": "Ler poemas curtos de Ungaretti ou Montale e sentir o seu ritmo.",
+     "p": [
+      "Ungaretti escreveu poemas brevíssimos; Mattina é só M'illumino / d'immenso: dois versos cheios de luz.",
+      "Montale, Nobel da Literatura em 1975, usou objetos do quotidiano e paisagens da Ligúria, como em Ossi di seppia.",
+      "Lê em voz alta e devagar: repara no verso, na strofa (estrofe), na rima e nas pausas."
+     ],
+     "q": "Há algum poema curto na tua língua que saibas de cor?",
+     "c": "Lê M'illumino d'immenso em voz alta três vezes e escreve em italiano que imagem te sugere."
+    },
+    "pt_BR": {
+     "t": "Poesia: lendo versos italianos",
+     "g": "Ler poemas curtos de Ungaretti ou Montale e sentir seu ritmo.",
+     "p": [
+      "Ungaretti escreveu poemas curtíssimos; Mattina é só M'illumino / d'immenso: dois versos cheios de luz.",
+      "Montale, Nobel de Literatura em 1975, usou objetos do cotidiano e paisagens da Ligúria, como em Ossi di seppia.",
+      "Leia em voz alta e devagar: repare no verso, na strofa (estrofe), na rima e nas pausas."
+     ],
+     "q": "Existe algum poema curto na sua língua que você sabe de cor?",
+     "c": "Leia M'illumino d'immenso em voz alta três vezes e escreva em italiano que imagem ele sugere."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il verso",
+      "ex": "Questo verso è breve ma molto intenso."
+     },
+     {
+      "w": "la strofa",
+      "ex": "La poesia ha tre strofe di quattro versi."
+     },
+     {
+      "w": "la rima",
+      "ex": "In questa poesia non ci sono rime."
+     },
+     {
+      "w": "il poeta",
+      "ex": "Ungaretti è un poeta del Novecento."
+     },
+     {
+      "w": "a memoria",
+      "ex": "Conosco a memoria questa poesia."
+     },
+     {
+      "w": "evocare",
+      "ex": "Queste parole evocano il mare d'estate."
+     }
+    ],
+    "gram": "In poesia l'ordine delle parole può cambiare e i verbi riflessivi diventano intensi: m'illumino = mi illumino."
+   }
+  },
+  {
+   "d": 348,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Songwriting and lyrics",
+     "g": "Analyse the lyrics of a classic Italian song and its imagery.",
+     "p": [
+      "Nel blu dipinto di blu (Volare), sung by Domenico Modugno in 1958, imagines flying in a painted blue sky.",
+      "Look for imagery (le immagini), repetition (il ritornello, the chorus) and metaphors (la metafora).",
+      "Talk about a song: Il testo parla di..., Il ritornello ripete..., Questa immagine trasmette un senso di libertà."
+     ],
+     "q": "Which song, in any language, has lyrics you love?",
+     "c": "Choose a song you love and describe in Italian its theme, its chorus and one strong image."
+    },
+    "de": {
+     "t": "Songwriting und Liedtexte",
+     "g": "Du analysierst den Text eines klassischen italienischen Lieds und seine Bilder.",
+     "p": [
+      "Nel blu dipinto di blu (Volare), 1958 von Domenico Modugno gesungen, stellt sich einen Flug im blau gemalten Himmel vor.",
+      "Achte auf Bilder (le immagini), Wiederholung (il ritornello, der Refrain) und Metaphern (la metafora).",
+      "Über ein Lied sprechen: Il testo parla di..., Il ritornello ripete..., Questa immagine trasmette un senso di libertà."
+     ],
+     "q": "Welches Lied, in irgendeiner Sprache, hat einen Text, den du liebst?",
+     "c": "Wähle ein Lieblingslied und beschreibe auf Italienisch Thema, Refrain und ein starkes Bild."
+    },
+    "es": {
+     "t": "Composición y letras de canciones",
+     "g": "Analizar la letra de una canción italiana clásica y sus imágenes.",
+     "p": [
+      "Nel blu dipinto di blu (Volare), cantada por Domenico Modugno en 1958, imagina volar en un cielo azul pintado.",
+      "Busca imágenes (le immagini), repetición (il ritornello, el estribillo) y metáforas (la metafora).",
+      "Hablar de una canción: Il testo parla di..., Il ritornello ripete..., Questa immagine trasmette un senso di libertà."
+     ],
+     "q": "¿Qué canción, en cualquier idioma, tiene una letra que te encanta?",
+     "c": "Elige una canción que te encante y describe en italiano su tema, su estribillo y una imagen fuerte."
+    },
+    "fr": {
+     "t": "Écriture et paroles de chansons",
+     "g": "Analyser les paroles d'une chanson italienne classique et ses images.",
+     "p": [
+      "Nel blu dipinto di blu (Volare), chantée par Domenico Modugno en 1958, imagine voler dans un ciel peint en bleu.",
+      "Repère les images (le immagini), la répétition (il ritornello, le refrain) et les métaphores (la metafora).",
+      "Parler d'une chanson : Il testo parla di..., Il ritornello ripete..., Questa immagine trasmette un senso di libertà."
+     ],
+     "q": "Quelle chanson, dans n'importe quelle langue, a des paroles que tu adores ?",
+     "c": "Choisis une chanson que tu aimes et décris en italien son thème, son refrain et une image forte."
+    },
+    "it": {
+     "t": "Canzoni e testi",
+     "g": "Analizzare il testo di una canzone italiana classica e le sue immagini.",
+     "p": [
+      "Nel blu dipinto di blu (Volare), cantata da Domenico Modugno nel 1958, immagina di volare in un cielo dipinto di blu.",
+      "Cerca le immagini, le ripetizioni (il ritornello) e le metafore.",
+      "Parlare di una canzone: Il testo parla di..., Il ritornello ripete..., Questa immagine trasmette un senso di libertà."
+     ],
+     "q": "Quale canzone, in qualsiasi lingua, ha un testo che ami?",
+     "c": "Scegli una canzone che ami e descrivi in italiano il tema, il ritornello e un'immagine forte."
+    },
+    "pt": {
+     "t": "Canções e letras",
+     "g": "Analisar a letra de uma canção italiana clássica e as suas imagens.",
+     "p": [
+      "Nel blu dipinto di blu (Volare), cantada por Domenico Modugno em 1958, imagina voar num céu pintado de azul.",
+      "Procura imagens (le immagini), repetição (il ritornello, o refrão) e metáforas (la metafora).",
+      "Falar de uma canção: Il testo parla di..., Il ritornello ripete..., Questa immagine trasmette un senso di libertà."
+     ],
+     "q": "Que canção, em qualquer língua, tem uma letra que adoras?",
+     "c": "Escolhe uma canção de que gostes e descreve em italiano o tema, o refrão e uma imagem forte."
+    },
+    "pt_BR": {
+     "t": "Canções e letras",
+     "g": "Analisar a letra de uma canção italiana clássica e suas imagens.",
+     "p": [
+      "Nel blu dipinto di blu (Volare), cantada por Domenico Modugno em 1958, imagina voar num céu pintado de azul.",
+      "Procure imagens (le immagini), repetição (il ritornello, o refrão) e metáforas (la metafora).",
+      "Falar de uma música: Il testo parla di..., Il ritornello ripete..., Questa immagine trasmette un senso di libertà."
+     ],
+     "q": "Que música, em qualquer língua, tem uma letra que você adora?",
+     "c": "Escolha uma música de que você goste e descreva em italiano o tema, o refrão e uma imagem forte."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il testo",
+      "ex": "Il testo di questa canzone è molto poetico."
+     },
+     {
+      "w": "il ritornello",
+      "ex": "Tutti cantano il ritornello insieme."
+     },
+     {
+      "w": "la metafora",
+      "ex": "Il cielo dipinto è una bella metafora."
+     },
+     {
+      "w": "il cantautore",
+      "ex": "Lucio Dalla è un famoso cantautore italiano."
+     },
+     {
+      "w": "trasmettere",
+      "ex": "La melodia trasmette allegria e libertà."
+     },
+     {
+      "w": "la strofa",
+      "ex": "Nella seconda strofa la storia cambia."
+     }
+    ],
+    "gram": "Parlare di un testo al presente: il testo parla di, il cantante immagina, la canzone racconta."
+   }
+  },
+  {
+   "d": 349,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Creative writing: a short story",
+     "g": "Plan and write a short story using varied tenses and description.",
+     "p": [
+      "Plan: chi (characters), dove e quando (setting), il problema, la soluzione, il finale.",
+      "Tenses: imperfetto for background (Era una sera d'autunno...), passato remoto or prossimo for events (All'improvviso, arrivò...).",
+      "Bring it to life with senses and dialogue: si sentiva il profumo del pane, «Chi sei?» chiese lei."
+     ],
+     "q": "What kind of story would you like to write: funny, mysterious or adventurous?",
+     "c": "Write the first five sentences of a short story starting with Era una sera..."
+    },
+    "de": {
+     "t": "Kreatives Schreiben: eine Kurzgeschichte",
+     "g": "Du planst und schreibst eine Kurzgeschichte mit verschiedenen Zeiten und Beschreibungen.",
+     "p": [
+      "Planen: chi (Figuren), dove e quando (Ort und Zeit), il problema, la soluzione, il finale.",
+      "Zeiten: imperfetto für den Hintergrund (Era una sera d'autunno...), passato remoto oder prossimo für Ereignisse (All'improvviso, arrivò...).",
+      "Lebendig mit Sinnen und Dialog: si sentiva il profumo del pane, «Chi sei?» chiese lei."
+     ],
+     "q": "Welche Art Geschichte würdest du gern schreiben: lustig, geheimnisvoll oder abenteuerlich?",
+     "c": "Schreib die ersten fünf Sätze einer Kurzgeschichte, beginnend mit Era una sera..."
+    },
+    "es": {
+     "t": "Escritura creativa: un relato breve",
+     "g": "Planear y escribir un relato breve con tiempos variados y descripción.",
+     "p": [
+      "Planifica: chi (personajes), dove e quando (ambientación), il problema, la soluzione, il finale.",
+      "Tiempos: imperfetto para el fondo (Era una sera d'autunno...), passato remoto o prossimo para los hechos (All'improvviso, arrivò...).",
+      "Dale vida con sentidos y diálogo: si sentiva il profumo del pane, «Chi sei?» chiese lei."
+     ],
+     "q": "¿Qué tipo de relato te gustaría escribir: divertido, misterioso o de aventuras?",
+     "c": "Escribe las cinco primeras frases de un relato que empiece con Era una sera..."
+    },
+    "fr": {
+     "t": "Écriture créative : une nouvelle",
+     "g": "Planifier et écrire une courte histoire avec des temps variés et des descriptions.",
+     "p": [
+      "Planifier : chi (personnages), dove e quando (cadre), il problema, la soluzione, il finale.",
+      "Temps : imperfetto pour le décor (Era una sera d'autunno...), passato remoto ou prossimo pour les actions (All'improvviso, arrivò...).",
+      "Donne vie avec les sens et le dialogue : si sentiva il profumo del pane, «Chi sei?» chiese lei."
+     ],
+     "q": "Quel genre d'histoire aimerais-tu écrire : drôle, mystérieuse ou d'aventure ?",
+     "c": "Écris les cinq premières phrases d'une nouvelle qui commence par Era una sera..."
+    },
+    "it": {
+     "t": "Scrittura creativa: un racconto breve",
+     "g": "Progettare e scrivere un racconto breve con tempi vari e descrizioni.",
+     "p": [
+      "Progetta: chi (personaggi), dove e quando (ambientazione), il problema, la soluzione, il finale.",
+      "Tempi: imperfetto per lo sfondo (Era una sera d'autunno...), passato remoto o prossimo per i fatti (All'improvviso, arrivò...).",
+      "Dai vita alla storia con sensi e dialoghi: si sentiva il profumo del pane, «Chi sei?» chiese lei."
+     ],
+     "q": "Che tipo di racconto ti piacerebbe scrivere: divertente, misterioso o d'avventura?",
+     "c": "Scrivi le prime cinque frasi di un racconto che inizia con Era una sera..."
+    },
+    "pt": {
+     "t": "Escrita criativa: um conto",
+     "g": "Planear e escrever um conto curto com tempos variados e descrição.",
+     "p": [
+      "Planeia: chi (personagens), dove e quando (cenário), il problema, la soluzione, il finale.",
+      "Tempos: imperfetto para o fundo (Era una sera d'autunno...), passato remoto ou prossimo para os factos (All'improvviso, arrivò...).",
+      "Dá vida com sentidos e diálogo: si sentiva il profumo del pane, «Chi sei?» chiese lei."
+     ],
+     "q": "Que tipo de conto gostarias de escrever: divertido, misterioso ou de aventura?",
+     "c": "Escreve as cinco primeiras frases de um conto que comece com Era una sera..."
+    },
+    "pt_BR": {
+     "t": "Escrita criativa: um conto",
+     "g": "Planejar e escrever um conto curto com tempos variados e descrição.",
+     "p": [
+      "Planeje: chi (personagens), dove e quando (cenário), il problema, la soluzione, il finale.",
+      "Tempos: imperfetto para o pano de fundo (Era una sera d'autunno...), passato remoto ou prossimo para os fatos (All'improvviso, arrivò...).",
+      "Dê vida com sentidos e diálogo: si sentiva il profumo del pane, «Chi sei?» chiese lei."
+     ],
+     "q": "Que tipo de conto você gostaria de escrever: divertido, misterioso ou de aventura?",
+     "c": "Escreva as cinco primeiras frases de um conto que comece com Era una sera..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il racconto",
+      "ex": "Ho scritto un racconto di due pagine."
+     },
+     {
+      "w": "il personaggio",
+      "ex": "Il personaggio principale è una pittrice curiosa."
+     },
+     {
+      "w": "all'improvviso",
+      "ex": "All'improvviso, la porta si aprì."
+     },
+     {
+      "w": "l'ambientazione",
+      "ex": "L'ambientazione è un piccolo porto in Sicilia."
+     },
+     {
+      "w": "il colpo di scena",
+      "ex": "Il colpo di scena arriva alla fine."
+     },
+     {
+      "w": "il lieto fine",
+      "ex": "Mi piacciono le storie con il lieto fine."
+     }
+    ],
+    "gram": "Imperfetto per descrivere lo sfondo (era, pioveva), passato remoto per l'azione improvvisa (arrivò, disse)."
+   }
+  },
+  {
+   "d": 350,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Describing feelings with precision",
+     "g": "Use the vocabulary of emotions: nostalgia, malinconia, entusiasmo.",
+     "p": [
+      "Nostalgia is longing for a place or time; malinconia is a gentle sadness; entusiasmo is eager joy.",
+      "Nuanced words: sollievo (relief), stupore (amazement), gratitudine, imbarazzo (embarrassment), serenità.",
+      "Structures: provare (to feel) + noun, mi sento + adjective, mi fa + noun: mi fa tenerezza, mi mette allegria."
+     ],
+     "q": "What makes you feel nostalgia, and for what?",
+     "c": "Describe three recent moments, each with a precise feeling: provare sollievo, sentirsi sereno, mi mette allegria."
+    },
+    "de": {
+     "t": "Gefühle genau beschreiben",
+     "g": "Du verwendest den Wortschatz der Gefühle: nostalgia, malinconia, entusiasmo.",
+     "p": [
+      "Nostalgia ist Sehnsucht nach einem Ort oder einer Zeit; malinconia sanfte Traurigkeit; entusiasmo begeisterte Freude.",
+      "Feine Wörter: sollievo (Erleichterung), stupore (Staunen), gratitudine, imbarazzo (Verlegenheit), serenità.",
+      "Strukturen: provare (empfinden) + Nomen, mi sento + Adjektiv, mi fa + Nomen: mi fa tenerezza, mi mette allegria."
+     ],
+     "q": "Was weckt in dir Nostalgie, und wonach?",
+     "c": "Beschreibe drei Momente mit genauem Gefühl: provare sollievo, sentirsi sereno, mi mette allegria."
+    },
+    "es": {
+     "t": "Describir sentimientos con precisión",
+     "g": "Usar el vocabulario de las emociones: nostalgia, malinconia, entusiasmo.",
+     "p": [
+      "Nostalgia es añoranza de un lugar o época; malinconia, una tristeza suave; entusiasmo, alegría con ganas.",
+      "Palabras matizadas: sollievo (alivio), stupore (asombro), gratitudine, imbarazzo (vergüenza), serenità.",
+      "Estructuras: provare (sentir) + sustantivo, mi sento + adjetivo, mi fa + sustantivo: mi fa tenerezza, mi mette allegria."
+     ],
+     "q": "¿Qué te da nostalgia, y de qué?",
+     "c": "Describe tres momentos recientes con un sentimiento preciso: provare sollievo, sentirsi sereno, mi mette allegria."
+    },
+    "fr": {
+     "t": "Décrire ses sentiments avec précision",
+     "g": "Utiliser le vocabulaire des émotions : nostalgia, malinconia, entusiasmo.",
+     "p": [
+      "La nostalgia est le regret d'un lieu ou d'une époque ; la malinconia une douce tristesse ; l'entusiasmo une joie vive.",
+      "Mots nuancés : sollievo (soulagement), stupore (étonnement), gratitudine, imbarazzo (gêne), serenità.",
+      "Structures : provare (ressentir) + nom, mi sento + adjectif, mi fa + nom : mi fa tenerezza, mi mette allegria."
+     ],
+     "q": "Qu'est-ce qui te rend nostalgique, et de quoi ?",
+     "c": "Décris trois moments récents avec un sentiment précis : provare sollievo, sentirsi sereno, mi mette allegria."
+    },
+    "it": {
+     "t": "Descrivere i sentimenti con precisione",
+     "g": "Usare il lessico delle emozioni: nostalgia, malinconia, entusiasmo.",
+     "p": [
+      "La nostalgia è il desiderio di un luogo o di un tempo; la malinconia è una tristezza dolce; l'entusiasmo è gioia piena di energia.",
+      "Parole sfumate: sollievo, stupore, gratitudine, imbarazzo, serenità, tenerezza.",
+      "Strutture: provare + nome, mi sento + aggettivo, mi fa + nome: mi fa tenerezza, mi mette allegria."
+     ],
+     "q": "Che cosa ti fa provare nostalgia, e di che cosa?",
+     "c": "Descrivi tre momenti recenti con un sentimento preciso: provare sollievo, sentirsi sereno, mi mette allegria."
+    },
+    "pt": {
+     "t": "Descrever sentimentos com precisão",
+     "g": "Usar o vocabulário das emoções: nostalgia, malinconia, entusiasmo.",
+     "p": [
+      "Nostalgia é saudade de um lugar ou tempo; malinconia, uma tristeza suave; entusiasmo, alegria cheia de energia.",
+      "Palavras com nuance: sollievo (alívio), stupore (espanto), gratitudine, imbarazzo (embaraço), serenità.",
+      "Estruturas: provare (sentir) + nome, mi sento + adjetivo, mi fa + nome: mi fa tenerezza, mi mette allegria."
+     ],
+     "q": "O que te dá nostalgia, e de quê?",
+     "c": "Descreve três momentos recentes com um sentimento preciso: provare sollievo, sentirsi sereno, mi mette allegria."
+    },
+    "pt_BR": {
+     "t": "Descrevendo sentimentos com precisão",
+     "g": "Usar o vocabulário das emoções: nostalgia, malinconia, entusiasmo.",
+     "p": [
+      "Nostalgia é saudade de um lugar ou época; malinconia, uma tristeza suave; entusiasmo, alegria cheia de energia.",
+      "Palavras com nuance: sollievo (alívio), stupore (espanto), gratitudine, imbarazzo (vergonha), serenità.",
+      "Estruturas: provare (sentir) + substantivo, mi sento + adjetivo, mi fa + substantivo: mi fa tenerezza, mi mette allegria."
+     ],
+     "q": "O que dá nostalgia em você, e de quê?",
+     "c": "Descreva três momentos recentes com um sentimento preciso: provare sollievo, sentirsi sereno, mi mette allegria."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la nostalgia",
+      "ex": "Provo nostalgia per le estati dai nonni."
+     },
+     {
+      "w": "la malinconia",
+      "ex": "La pioggia d'autunno mi mette un po' di malinconia."
+     },
+     {
+      "w": "l'entusiasmo",
+      "ex": "Ha accettato il nuovo lavoro con entusiasmo."
+     },
+     {
+      "w": "il sollievo",
+      "ex": "Che sollievo, il treno è arrivato in orario!"
+     },
+     {
+      "w": "la gratitudine",
+      "ex": "Provo gratitudine per i miei amici."
+     },
+     {
+      "w": "mettere allegria",
+      "ex": "Questa musica mi mette allegria."
+     }
+    ],
+    "gram": "Provare + nome (provo gioia), sentirsi + aggettivo (mi sento sereno), mettere + nome (mi mette allegria)."
+   }
+  }
+ ]
+}

@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_french",
+ "lessons": [
+  {
+   "d": 281,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Passé simple: recognising it",
+     "g": "Recognise the literary past tense you meet in novels and history books: il fut, elle alla, ils firent.",
+     "p": [
+      "Key irregulars: être → il fut, avoir → il eut, aller → elle alla, faire → ils firent",
+      "Regular endings: -er : il parla, ils parlèrent ; -ir/-re : il finit, il prit ; -oir : il vit, il put",
+      "Where it lives: à l'écrit littéraire et historique ; à l'oral, on utilise le passé composé"
+     ],
+     "q": "Have you ever read a French book or story? Did you notice verbs like il fut or elle alla?",
+     "c": "Find three passé simple verbs in a French text or fairy tale and give their infinitive and passé composé."
+    },
+    "de": {
+     "t": "Passé simple erkennen",
+     "g": "Du erkennst die literarische Vergangenheit aus Romanen und Geschichtsbüchern: il fut, elle alla, ils firent.",
+     "p": [
+      "Wichtige unregelmäßige Formen: être → il fut, avoir → il eut, aller → elle alla, faire → ils firent",
+      "Regelmäßige Endungen: -er : il parla, ils parlèrent ; -ir/-re : il finit, il prit ; -oir : il vit, il put",
+      "Wo man es findet: à l'écrit littéraire et historique ; à l'oral, on utilise le passé composé"
+     ],
+     "q": "Hast du schon ein französisches Buch oder Märchen gelesen? Sind dir Verben wie il fut oder elle alla aufgefallen?",
+     "c": "Finde drei Verben im passé simple in einem französischen Text und nenne Infinitiv und passé composé."
+    },
+    "es": {
+     "t": "Passé simple: reconocerlo",
+     "g": "Reconoce el pasado literario de novelas y libros de historia: il fut, elle alla, ils firent.",
+     "p": [
+      "Irregulares clave: être → il fut, avoir → il eut, aller → elle alla, faire → ils firent",
+      "Terminaciones regulares: -er : il parla, ils parlèrent ; -ir/-re : il finit, il prit ; -oir : il vit, il put",
+      "Dónde aparece: à l'écrit littéraire et historique ; à l'oral, on utilise le passé composé"
+     ],
+     "q": "¿Has leído algún libro o cuento en francés? ¿Notaste verbos como il fut o elle alla?",
+     "c": "Encuentra tres verbos en passé simple en un texto francés y da su infinitivo y su passé composé."
+    },
+    "fr": {
+     "t": "Le passé simple : le reconnaître",
+     "g": "Reconnaître le temps littéraire des romans et des livres d'histoire : il fut, elle alla, ils firent.",
+     "p": [
+      "Irréguliers clés : être → il fut, avoir → il eut, aller → elle alla, faire → ils firent",
+      "Terminaisons régulières : -er : il parla, ils parlèrent ; -ir/-re : il finit, il prit ; -oir : il vit, il put",
+      "Où on le trouve : à l'écrit littéraire et historique ; à l'oral, on utilise le passé composé"
+     ],
+     "q": "As-tu déjà lu un livre ou un conte en français ? As-tu remarqué des verbes comme il fut ou elle alla ?",
+     "c": "Trouve trois verbes au passé simple dans un texte et donne leur infinitif et leur passé composé."
+    },
+    "it": {
+     "t": "Passé simple: riconoscerlo",
+     "g": "Riconosci il passato letterario di romanzi e libri di storia: il fut, elle alla, ils firent.",
+     "p": [
+      "Irregolari chiave: être → il fut, avoir → il eut, aller → elle alla, faire → ils firent",
+      "Desinenze regolari: -er : il parla, ils parlèrent ; -ir/-re : il finit, il prit ; -oir : il vit, il put",
+      "Dove si trova: à l'écrit littéraire et historique ; à l'oral, on utilise le passé composé"
+     ],
+     "q": "Hai mai letto un libro o una fiaba in francese? Hai notato verbi come il fut o elle alla?",
+     "c": "Trova tre verbi al passé simple in un testo francese e indica infinito e passé composé."
+    },
+    "pt": {
+     "t": "Passé simple: reconhecê-lo",
+     "g": "Reconhece o passado literário dos romances e livros de história: il fut, elle alla, ils firent.",
+     "p": [
+      "Irregulares principais: être → il fut, avoir → il eut, aller → elle alla, faire → ils firent",
+      "Terminações regulares: -er : il parla, ils parlèrent ; -ir/-re : il finit, il prit ; -oir : il vit, il put",
+      "Onde aparece: à l'écrit littéraire et historique ; à l'oral, on utilise le passé composé"
+     ],
+     "q": "Já leste algum livro ou conto em francês? Reparaste em verbos como il fut ou elle alla?",
+     "c": "Encontra três verbos no passé simple num texto francês e indica o infinitivo e o passé composé."
+    },
+    "pt_BR": {
+     "t": "Passé simple: reconhecendo",
+     "g": "Reconheça o passado literário dos romances e livros de história: il fut, elle alla, ils firent.",
+     "p": [
+      "Irregulares principais: être → il fut, avoir → il eut, aller → elle alla, faire → ils firent",
+      "Terminações regulares: -er : il parla, ils parlèrent ; -ir/-re : il finit, il prit ; -oir : il vit, il put",
+      "Onde aparece: à l'écrit littéraire et historique ; à l'oral, on utilise le passé composé"
+     ],
+     "q": "Você já leu algum livro ou conto em francês? Reparou em verbos como il fut ou elle alla?",
+     "c": "Encontre três verbos no passé simple num texto francês e indique o infinitivo e o passé composé."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il fut",
+      "ex": "Louis Blériot fut le premier à traverser la Manche en avion."
+     },
+     {
+      "w": "il eut",
+      "ex": "Il eut soudain une idée brillante."
+     },
+     {
+      "w": "elle alla",
+      "ex": "Elle alla jusqu'à la rivière sans se retourner."
+     },
+     {
+      "w": "ils firent",
+      "ex": "Ils firent un long voyage vers le sud."
+     },
+     {
+      "w": "il vint",
+      "ex": "Le prince vint au château à minuit."
+     },
+     {
+      "w": "elle dit",
+      "ex": "« Entrez », dit-elle doucement."
+     }
+    ],
+    "gram": "Passé simple : temps du récit écrit (romans, histoire) ; à reconnaître surtout à la 3e personne : il parla, il fut, ils firent."
+   }
+  },
+  {
+   "d": 282,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Reading literary French",
+     "g": "Read stories and fairy tales where the imparfait sets the scene and the passé simple moves the plot.",
+     "p": [
+      "The opening: Il était une fois un meunier qui vivait près d'un moulin.",
+      "The events: Un jour, un chat arriva et frappa à la porte.",
+      "Who does what: imparfait = décor, habitudes ; passé simple = actions qui font avancer l'histoire"
+     ],
+     "q": "Which fairy tale or fable did you love as a child? Can you tell its first two sentences in French?",
+     "c": "Write the start of a fairy tale in five sentences: two in the imparfait for the scene, three in the passé simple."
+    },
+    "de": {
+     "t": "Literarisches Französisch lesen",
+     "g": "Du liest Geschichten und Märchen: Das imparfait malt die Szene, das passé simple treibt die Handlung.",
+     "p": [
+      "Der Anfang: Il était une fois un meunier qui vivait près d'un moulin.",
+      "Die Ereignisse: Un jour, un chat arriva et frappa à la porte.",
+      "Wer macht was: imparfait = décor, habitudes ; passé simple = actions qui font avancer l'histoire"
+     ],
+     "q": "Welches Märchen oder welche Fabel mochtest du als Kind? Kannst du die ersten zwei Sätze auf Französisch sagen?",
+     "c": "Schreib den Anfang eines Märchens in fünf Sätzen: zwei im imparfait für die Szene, drei im passé simple."
+    },
+    "es": {
+     "t": "Leer francés literario",
+     "g": "Lee cuentos donde el imparfait pinta la escena y el passé simple hace avanzar la trama.",
+     "p": [
+      "El comienzo: Il était une fois un meunier qui vivait près d'un moulin.",
+      "Los hechos: Un jour, un chat arriva et frappa à la porte.",
+      "Quién hace qué: imparfait = décor, habitudes ; passé simple = actions qui font avancer l'histoire"
+     ],
+     "q": "¿Qué cuento o fábula te encantaba de niño? ¿Puedes contar sus dos primeras frases en francés?",
+     "c": "Escribe el comienzo de un cuento en cinco frases: dos en imparfait para la escena y tres en passé simple."
+    },
+    "fr": {
+     "t": "Lire le français littéraire",
+     "g": "Lire des contes où l'imparfait installe le décor et le passé simple fait avancer l'histoire.",
+     "p": [
+      "L'ouverture : Il était une fois un meunier qui vivait près d'un moulin.",
+      "Les événements : Un jour, un chat arriva et frappa à la porte.",
+      "Qui fait quoi : imparfait = décor, habitudes ; passé simple = actions qui font avancer l'histoire"
+     ],
+     "q": "Quel conte ou quelle fable aimais-tu enfant ? Peux-tu en raconter les deux premières phrases ?",
+     "c": "Écris le début d'un conte en cinq phrases : deux à l'imparfait pour le décor, trois au passé simple."
+    },
+    "it": {
+     "t": "Leggere il francese letterario",
+     "g": "Leggi fiabe in cui l'imparfait crea la scena e il passé simple fa avanzare la trama.",
+     "p": [
+      "L'inizio: Il était une fois un meunier qui vivait près d'un moulin.",
+      "Gli eventi: Un jour, un chat arriva et frappa à la porte.",
+      "Chi fa cosa: imparfait = décor, habitudes ; passé simple = actions qui font avancer l'histoire"
+     ],
+     "q": "Quale fiaba o favola amavi da bambino? Sai raccontare le prime due frasi in francese?",
+     "c": "Scrivi l'inizio di una fiaba in cinque frasi: due all'imparfait per la scena e tre al passé simple."
+    },
+    "pt": {
+     "t": "Ler francês literário",
+     "g": "Lê contos em que o imparfait cria o cenário e o passé simple faz avançar a história.",
+     "p": [
+      "A abertura: Il était une fois un meunier qui vivait près d'un moulin.",
+      "Os acontecimentos: Un jour, un chat arriva et frappa à la porte.",
+      "Quem faz o quê: imparfait = décor, habitudes ; passé simple = actions qui font avancer l'histoire"
+     ],
+     "q": "Que conto ou fábula adoravas em criança? Consegues contar as duas primeiras frases em francês?",
+     "c": "Escreve o início de um conto em cinco frases: duas no imparfait para o cenário e três no passé simple."
+    },
+    "pt_BR": {
+     "t": "Lendo francês literário",
+     "g": "Leia contos em que o imparfait cria o cenário e o passé simple faz a história andar.",
+     "p": [
+      "A abertura: Il était une fois un meunier qui vivait près d'un moulin.",
+      "Os acontecimentos: Un jour, un chat arriva et frappa à la porte.",
+      "Quem faz o quê: imparfait = décor, habitudes ; passé simple = actions qui font avancer l'histoire"
+     ],
+     "q": "Que conto ou fábula você amava quando criança? Consegue contar as duas primeiras frases em francês?",
+     "c": "Escreva o começo de um conto em cinco frases: duas no imparfait para o cenário e três no passé simple."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il était une fois",
+      "ex": "Il était une fois un meunier qui avait trois fils."
+     },
+     {
+      "w": "un jour",
+      "ex": "Un jour, le plus jeune partit chercher fortune."
+     },
+     {
+      "w": "soudain",
+      "ex": "Soudain, le chat se mit à parler."
+     },
+     {
+      "w": "alors",
+      "ex": "Alors, le chat demanda une paire de bottes."
+     },
+     {
+      "w": "ils vécurent heureux",
+      "ex": "Ils vécurent heureux pendant de longues années."
+     },
+     {
+      "w": "la morale",
+      "ex": "La morale de cette fable de La Fontaine est simple."
+     }
+    ],
+    "gram": "Dans les contes : imparfait pour le décor (il y avait, il vivait), passé simple pour les événements (il arriva, elle ouvrit)."
+   }
+  },
+  {
+   "d": 283,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Subjonctif passé",
+     "g": "Use the past subjunctive for completed actions: je suis content que tu sois venu.",
+     "p": [
+      "Form: avoir/être au subjonctif + participe : que j'aie fini, qu'elle soit partie",
+      "Examples: Je suis content que tu sois venu. Je regrette qu'il ait manqué la fête.",
+      "When: action antérieure ; mêmes déclencheurs : bien que, avant que, je doute que"
+     ],
+     "q": "What are you glad someone did for you recently? Answer with Je suis content(e) que + past subjunctive.",
+     "c": "Write three French sentences with je regrette que, bien que and je suis ravi(e) que + subjonctif passé."
+    },
+    "de": {
+     "t": "Subjonctif passé",
+     "g": "Du nutzt den Subjonctif der Vergangenheit für abgeschlossene Handlungen: je suis content que tu sois venu.",
+     "p": [
+      "Bildung: avoir/être au subjonctif + participe : que j'aie fini, qu'elle soit partie",
+      "Beispiele: Je suis content que tu sois venu. Je regrette qu'il ait manqué la fête.",
+      "Wann: action antérieure ; mêmes déclencheurs : bien que, avant que, je doute que"
+     ],
+     "q": "Worüber freust du dich, das jemand kürzlich für dich getan hat? Antworte mit Je suis content(e) que + subjonctif passé.",
+     "c": "Schreib drei französische Sätze mit je regrette que, bien que und je suis ravi(e) que + subjonctif passé."
+    },
+    "es": {
+     "t": "Subjonctif passé",
+     "g": "Usa el subjuntivo pasado para acciones terminadas: je suis content que tu sois venu.",
+     "p": [
+      "Forma: avoir/être au subjonctif + participe : que j'aie fini, qu'elle soit partie",
+      "Ejemplos: Je suis content que tu sois venu. Je regrette qu'il ait manqué la fête.",
+      "Cuándo: action antérieure ; mêmes déclencheurs : bien que, avant que, je doute que"
+     ],
+     "q": "¿Qué te alegra que alguien hiciera por ti hace poco? Responde con Je suis content(e) que + subjonctif passé.",
+     "c": "Escribe tres frases en francés con je regrette que, bien que y je suis ravi(e) que + subjonctif passé."
+    },
+    "fr": {
+     "t": "Le subjonctif passé",
+     "g": "Utiliser le subjonctif passé pour une action accomplie : je suis content que tu sois venu.",
+     "p": [
+      "La forme : avoir/être au subjonctif + participe : que j'aie fini, qu'elle soit partie",
+      "Exemples : Je suis content que tu sois venu. Je regrette qu'il ait manqué la fête.",
+      "Quand l'utiliser : action antérieure ; mêmes déclencheurs : bien que, avant que, je doute que"
+     ],
+     "q": "Qu'est-ce que quelqu'un a fait pour toi récemment et qui t'a fait plaisir ? Réponds avec Je suis content(e) que...",
+     "c": "Écris trois phrases avec je regrette que, bien que et je suis ravi(e) que + subjonctif passé."
+    },
+    "it": {
+     "t": "Subjonctif passé",
+     "g": "Usa il congiuntivo passato francese per azioni concluse: je suis content que tu sois venu.",
+     "p": [
+      "Forma: avoir/être au subjonctif + participe : que j'aie fini, qu'elle soit partie",
+      "Esempi: Je suis content que tu sois venu. Je regrette qu'il ait manqué la fête.",
+      "Quando: action antérieure ; mêmes déclencheurs : bien que, avant que, je doute que"
+     ],
+     "q": "Di cosa sei contento che qualcuno abbia fatto per te di recente? Rispondi con Je suis content(e) que + subjonctif passé.",
+     "c": "Scrivi tre frasi in francese con je regrette que, bien que e je suis ravi(e) que + subjonctif passé."
+    },
+    "pt": {
+     "t": "Subjonctif passé",
+     "g": "Usa o conjuntivo passado francês para ações concluídas: je suis content que tu sois venu.",
+     "p": [
+      "Forma: avoir/être au subjonctif + participe : que j'aie fini, qu'elle soit partie",
+      "Exemplos: Je suis content que tu sois venu. Je regrette qu'il ait manqué la fête.",
+      "Quando: action antérieure ; mêmes déclencheurs : bien que, avant que, je doute que"
+     ],
+     "q": "O que te deixou contente que alguém tenha feito por ti há pouco? Responde com Je suis content(e) que + subjonctif passé.",
+     "c": "Escreve três frases em francês com je regrette que, bien que e je suis ravi(e) que + subjonctif passé."
+    },
+    "pt_BR": {
+     "t": "Subjonctif passé",
+     "g": "Use o subjuntivo passado francês para ações concluídas: je suis content que tu sois venu.",
+     "p": [
+      "Forma: avoir/être au subjonctif + participe : que j'aie fini, qu'elle soit partie",
+      "Exemplos: Je suis content que tu sois venu. Je regrette qu'il ait manqué la fête.",
+      "Quando: action antérieure ; mêmes déclencheurs : bien que, avant que, je doute que"
+     ],
+     "q": "O que alguém fez por você há pouco que te deixou contente? Responda com Je suis content(e) que + subjonctif passé.",
+     "c": "Escreva três frases em francês com je regrette que, bien que e je suis ravi(e) que + subjonctif passé."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "que tu sois venu(e)",
+      "ex": "Je suis très heureux que tu sois venu."
+     },
+     {
+      "w": "qu'il ait fini",
+      "ex": "Il faut qu'il ait fini avant midi."
+     },
+     {
+      "w": "bien qu'elle soit partie",
+      "ex": "Bien qu'elle soit partie tôt, elle est arrivée en retard."
+     },
+     {
+      "w": "je regrette que",
+      "ex": "Je regrette que vous ayez manqué le spectacle."
+     },
+     {
+      "w": "je suis ravi(e) que",
+      "ex": "Je suis ravie que tu aies aimé le cadeau."
+     },
+     {
+      "w": "il est dommage que",
+      "ex": "Il est dommage qu'il n'ait pas vu le coucher de soleil."
+     }
+    ],
+    "gram": "Subjonctif passé = que + avoir/être au subjonctif + participe ; action déjà accomplie : je suis heureux que tu aies réussi."
+   }
+  },
+  {
+   "d": 284,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Subjunctive in relative clauses",
+     "g": "Use the subjunctive after qui or que when you are not sure the person or thing exists.",
+     "p": [
+      "Uncertain: Je cherche quelqu'un qui puisse m'aider. (je ne sais pas s'il existe)",
+      "Certain, indicative: Je connais quelqu'un qui peut t'aider. (il existe : indicatif)",
+      "Questions and negation: Y a-t-il un café qui soit ouvert le lundi ? Il n'y a personne qui sache le faire."
+     ],
+     "q": "Describe your ideal flatmate or colleague, starting with Je cherche quelqu'un qui...",
+     "c": "Write a short ad in French for something you are looking for, with two relative clauses in the subjunctive."
+    },
+    "de": {
+     "t": "Subjonctif in Relativsätzen",
+     "g": "Du nutzt den Subjonctif nach qui oder que, wenn unsicher ist, ob die Person oder Sache existiert.",
+     "p": [
+      "Unsicher: Je cherche quelqu'un qui puisse m'aider. (je ne sais pas s'il existe)",
+      "Sicher, Indikativ: Je connais quelqu'un qui peut t'aider. (il existe : indicatif)",
+      "Fragen und Verneinung: Y a-t-il un café qui soit ouvert le lundi ? Il n'y a personne qui sache le faire."
+     ],
+     "q": "Beschreib deine ideale Mitbewohnerin oder deinen idealen Kollegen. Beginne mit Je cherche quelqu'un qui...",
+     "c": "Schreib eine kurze französische Anzeige für etwas, das du suchst, mit zwei Relativsätzen im Subjonctif."
+    },
+    "es": {
+     "t": "Subjuntivo en oraciones relativas",
+     "g": "Usa el subjuntivo tras qui o que cuando no sabes si la persona o cosa existe.",
+     "p": [
+      "Incierto: Je cherche quelqu'un qui puisse m'aider. (je ne sais pas s'il existe)",
+      "Seguro, indicativo: Je connais quelqu'un qui peut t'aider. (il existe : indicatif)",
+      "Preguntas y negación: Y a-t-il un café qui soit ouvert le lundi ? Il n'y a personne qui sache le faire."
+     ],
+     "q": "Describe a tu compañero de piso o colega ideal, empezando con Je cherche quelqu'un qui...",
+     "c": "Escribe un anuncio corto en francés de algo que buscas, con dos relativas en subjuntivo."
+    },
+    "fr": {
+     "t": "Le subjonctif dans les relatives",
+     "g": "Employer le subjonctif après qui ou que quand on n'est pas sûr que la personne ou la chose existe.",
+     "p": [
+      "Incertain : Je cherche quelqu'un qui puisse m'aider. (je ne sais pas s'il existe)",
+      "Certain, indicatif : Je connais quelqu'un qui peut t'aider. (il existe : indicatif)",
+      "Questions et négation : Y a-t-il un café qui soit ouvert le lundi ? Il n'y a personne qui sache le faire."
+     ],
+     "q": "Décris ton colocataire ou ton collègue idéal, en commençant par Je cherche quelqu'un qui...",
+     "c": "Écris une petite annonce pour quelque chose que tu cherches, avec deux relatives au subjonctif."
+    },
+    "it": {
+     "t": "Congiuntivo nelle relative",
+     "g": "Usa il congiuntivo dopo qui o que quando non sei sicuro che la persona o la cosa esista.",
+     "p": [
+      "Incerto: Je cherche quelqu'un qui puisse m'aider. (je ne sais pas s'il existe)",
+      "Certo, indicativo: Je connais quelqu'un qui peut t'aider. (il existe : indicatif)",
+      "Domande e negazione: Y a-t-il un café qui soit ouvert le lundi ? Il n'y a personne qui sache le faire."
+     ],
+     "q": "Descrivi il coinquilino o il collega ideale, iniziando con Je cherche quelqu'un qui...",
+     "c": "Scrivi un breve annuncio in francese per qualcosa che cerchi, con due relative al congiuntivo."
+    },
+    "pt": {
+     "t": "Conjuntivo nas relativas",
+     "g": "Usa o conjuntivo depois de qui ou que quando não tens a certeza de que a pessoa ou coisa existe.",
+     "p": [
+      "Incerto: Je cherche quelqu'un qui puisse m'aider. (je ne sais pas s'il existe)",
+      "Certo, indicativo: Je connais quelqu'un qui peut t'aider. (il existe : indicatif)",
+      "Perguntas e negação: Y a-t-il un café qui soit ouvert le lundi ? Il n'y a personne qui sache le faire."
+     ],
+     "q": "Descreve o teu colega de casa ou de trabalho ideal, começando com Je cherche quelqu'un qui...",
+     "c": "Escreve um pequeno anúncio em francês sobre algo que procuras, com duas relativas no conjuntivo."
+    },
+    "pt_BR": {
+     "t": "Subjuntivo nas orações relativas",
+     "g": "Use o subjuntivo depois de qui ou que quando não tem certeza de que a pessoa ou coisa existe.",
+     "p": [
+      "Incerto: Je cherche quelqu'un qui puisse m'aider. (je ne sais pas s'il existe)",
+      "Certo, indicativo: Je connais quelqu'un qui peut t'aider. (il existe : indicatif)",
+      "Perguntas e negação: Y a-t-il un café qui soit ouvert le lundi ? Il n'y a personne qui sache le faire."
+     ],
+     "q": "Descreva seu colega de apartamento ou de trabalho ideal, começando com Je cherche quelqu'un qui...",
+     "c": "Escreva um anúncio curto em francês de algo que você procura, com duas relativas no subjuntivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "je cherche quelqu'un qui",
+      "ex": "Je cherche quelqu'un qui puisse garder mon chat."
+     },
+     {
+      "w": "connais-tu un endroit où",
+      "ex": "Connais-tu un endroit où l'on puisse dîner tard ?"
+     },
+     {
+      "w": "il n'y a personne qui",
+      "ex": "Il n'y a personne qui sache réparer cette vieille horloge."
+     },
+     {
+      "w": "y a-t-il quelqu'un qui",
+      "ex": "Y a-t-il quelqu'un qui parle japonais ici ?"
+     },
+     {
+      "w": "un appartement qui soit",
+      "ex": "Je voudrais un appartement qui soit calme et lumineux."
+     },
+     {
+      "w": "rien qui",
+      "ex": "Je ne trouve rien qui me plaise dans ce magasin."
+     }
+    ],
+    "gram": "Relative + subjonctif quand l'antécédent est incertain, recherché ou nié : je cherche un appartement qui soit calme."
+   }
+  },
+  {
+   "d": 285,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Subjunctive after superlatives",
+     "g": "Use the subjunctive after le meilleur, le seul, le premier: c'est le meilleur film que j'aie jamais vu.",
+     "p": [
+      "Superlative: C'est le meilleur film que j'aie jamais vu.",
+      "Unique words: le seul, l'unique, le premier, le dernier + qui/que + subjonctif : C'est la seule personne qui me comprenne.",
+      "Plain fact: indicatif pour un fait objectif : C'est le plus haut sommet que nous avons gravi ce jour-là."
+     ],
+     "q": "What is the best meal you have ever eaten? Answer with C'est le meilleur... que j'aie jamais...",
+     "c": "Write three superlative sentences about your favourite book, place and song, each with the subjunctive."
+    },
+    "de": {
+     "t": "Subjonctif nach Superlativen",
+     "g": "Du nutzt den Subjonctif nach le meilleur, le seul, le premier: c'est le meilleur film que j'aie jamais vu.",
+     "p": [
+      "Superlativ: C'est le meilleur film que j'aie jamais vu.",
+      "Einzigartigkeit: le seul, l'unique, le premier, le dernier + qui/que + subjonctif : C'est la seule personne qui me comprenne.",
+      "Reine Tatsache: indicatif pour un fait objectif : C'est le plus haut sommet que nous avons gravi ce jour-là."
+     ],
+     "q": "Was ist das beste Essen, das du je gegessen hast? Antworte mit C'est le meilleur... que j'aie jamais...",
+     "c": "Schreib drei Superlativsätze über dein Lieblingsbuch, deinen Lieblingsort und dein Lieblingslied, mit Subjonctif."
+    },
+    "es": {
+     "t": "Subjuntivo tras superlativos",
+     "g": "Usa el subjuntivo tras le meilleur, le seul, le premier: c'est le meilleur film que j'aie jamais vu.",
+     "p": [
+      "Superlativo: C'est le meilleur film que j'aie jamais vu.",
+      "Palabras de unicidad: le seul, l'unique, le premier, le dernier + qui/que + subjonctif : C'est la seule personne qui me comprenne.",
+      "Hecho objetivo: indicatif pour un fait objectif : C'est le plus haut sommet que nous avons gravi ce jour-là."
+     ],
+     "q": "¿Cuál es la mejor comida que has probado? Responde con C'est le meilleur... que j'aie jamais...",
+     "c": "Escribe tres frases superlativas sobre tu libro, lugar y canción favoritos, cada una con subjuntivo."
+    },
+    "fr": {
+     "t": "Le subjonctif après un superlatif",
+     "g": "Employer le subjonctif après le meilleur, le seul, le premier : c'est le meilleur film que j'aie jamais vu.",
+     "p": [
+      "Superlatif : C'est le meilleur film que j'aie jamais vu.",
+      "Mots d'unicité : le seul, l'unique, le premier, le dernier + qui/que + subjonctif : C'est la seule personne qui me comprenne.",
+      "Simple fait : indicatif pour un fait objectif : C'est le plus haut sommet que nous avons gravi ce jour-là."
+     ],
+     "q": "Quel est le meilleur repas que tu aies jamais mangé ? Réponds avec C'est le meilleur... que j'aie jamais...",
+     "c": "Écris trois phrases au superlatif sur ton livre, ton lieu et ta chanson préférés, avec le subjonctif."
+    },
+    "it": {
+     "t": "Congiuntivo dopo i superlativi",
+     "g": "Usa il congiuntivo dopo le meilleur, le seul, le premier: c'est le meilleur film que j'aie jamais vu.",
+     "p": [
+      "Superlativo: C'est le meilleur film que j'aie jamais vu.",
+      "Parole di unicità: le seul, l'unique, le premier, le dernier + qui/que + subjonctif : C'est la seule personne qui me comprenne.",
+      "Fatto oggettivo: indicatif pour un fait objectif : C'est le plus haut sommet que nous avons gravi ce jour-là."
+     ],
+     "q": "Qual è il pasto migliore che tu abbia mai mangiato? Rispondi con C'est le meilleur... que j'aie jamais...",
+     "c": "Scrivi tre frasi al superlativo sul tuo libro, luogo e canzone preferiti, ognuna con il congiuntivo."
+    },
+    "pt": {
+     "t": "Conjuntivo depois de superlativos",
+     "g": "Usa o conjuntivo depois de le meilleur, le seul, le premier: c'est le meilleur film que j'aie jamais vu.",
+     "p": [
+      "Superlativo: C'est le meilleur film que j'aie jamais vu.",
+      "Palavras de unicidade: le seul, l'unique, le premier, le dernier + qui/que + subjonctif : C'est la seule personne qui me comprenne.",
+      "Facto objetivo: indicatif pour un fait objectif : C'est le plus haut sommet que nous avons gravi ce jour-là."
+     ],
+     "q": "Qual foi a melhor refeição que já comeste? Responde com C'est le meilleur... que j'aie jamais...",
+     "c": "Escreve três frases no superlativo sobre o teu livro, lugar e canção favoritos, cada uma com conjuntivo."
+    },
+    "pt_BR": {
+     "t": "Subjuntivo depois de superlativos",
+     "g": "Use o subjuntivo depois de le meilleur, le seul, le premier: c'est le meilleur film que j'aie jamais vu.",
+     "p": [
+      "Superlativo: C'est le meilleur film que j'aie jamais vu.",
+      "Palavras de unicidade: le seul, l'unique, le premier, le dernier + qui/que + subjonctif : C'est la seule personne qui me comprenne.",
+      "Fato objetivo: indicatif pour un fait objectif : C'est le plus haut sommet que nous avons gravi ce jour-là."
+     ],
+     "q": "Qual foi a melhor refeição que você já comeu? Responda com C'est le meilleur... que j'aie jamais...",
+     "c": "Escreva três frases no superlativo sobre seu livro, lugar e música favoritos, cada uma com subjuntivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "le meilleur... que",
+      "ex": "C'est le meilleur gâteau que j'aie jamais mangé."
+     },
+     {
+      "w": "le seul qui",
+      "ex": "Tu es le seul qui sache réparer ce vélo."
+     },
+     {
+      "w": "la plus belle... que",
+      "ex": "C'est la plus belle ville que je connaisse."
+     },
+     {
+      "w": "le dernier qui",
+      "ex": "C'est le dernier magasin qui soit encore ouvert."
+     },
+     {
+      "w": "la première personne qui",
+      "ex": "Tu es la première personne qui m'ait appelé aujourd'hui."
+     },
+     {
+      "w": "l'unique... qui",
+      "ex": "C'est l'unique livre qui m'ait fait autant rire."
+     }
+    ],
+    "gram": "Après un superlatif ou le seul, le premier, le dernier, l'unique : relative au subjonctif pour un jugement : le meilleur que j'aie vu."
+   }
+  },
+  {
+   "d": 286,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Conditional for unconfirmed news",
+     "g": "Read and report rumours like a French journalist: le train serait en retard, il aurait gagné.",
+     "p": [
+      "Unconfirmed facts: Le train serait en retard. Le chanteur aurait annulé sa tournée.",
+      "Present and past: présent : il serait, il y aurait ; passé : il aurait gagné, elle serait partie",
+      "Naming the source: selon, d'après + source : d'après la presse, le musée rouvrirait en juin"
+     ],
+     "q": "Have you heard any fun rumour lately, about a film, a band or a new shop? Report it with the conditional!",
+     "c": "Write three short news headlines in French with the journalistic conditional, one in the past."
+    },
+    "de": {
+     "t": "Konditional für unbestätigte Nachrichten",
+     "g": "Du liest und berichtest Gerüchte wie ein französischer Journalist: le train serait en retard.",
+     "p": [
+      "Unbestätigt: Le train serait en retard. Le chanteur aurait annulé sa tournée.",
+      "Gegenwart und Vergangenheit: présent : il serait, il y aurait ; passé : il aurait gagné, elle serait partie",
+      "Die Quelle nennen: selon, d'après + source : d'après la presse, le musée rouvrirait en juin"
+     ],
+     "q": "Hast du zuletzt ein lustiges Gerücht über einen Film, eine Band oder einen Laden gehört? Berichte im Konditional!",
+     "c": "Schreib drei kurze Schlagzeilen auf Französisch im journalistischen Konditional, eine davon in der Vergangenheit."
+    },
+    "es": {
+     "t": "Condicional para noticias no confirmadas",
+     "g": "Lee y cuenta rumores como un periodista francés: le train serait en retard, il aurait gagné.",
+     "p": [
+      "Hechos sin confirmar: Le train serait en retard. Le chanteur aurait annulé sa tournée.",
+      "Presente y pasado: présent : il serait, il y aurait ; passé : il aurait gagné, elle serait partie",
+      "Citar la fuente: selon, d'après + source : d'après la presse, le musée rouvrirait en juin"
+     ],
+     "q": "¿Has oído algún rumor divertido sobre una película, un grupo o una tienda? ¡Cuéntalo con el condicional!",
+     "c": "Escribe tres titulares cortos en francés con el condicional periodístico, uno de ellos en pasado."
+    },
+    "fr": {
+     "t": "Le conditionnel de l'information",
+     "g": "Lire et rapporter une info non confirmée comme un journaliste : le train serait en retard.",
+     "p": [
+      "Info non confirmée : Le train serait en retard. Le chanteur aurait annulé sa tournée.",
+      "Présent et passé : présent : il serait, il y aurait ; passé : il aurait gagné, elle serait partie",
+      "Citer la source : selon, d'après + source : d'après la presse, le musée rouvrirait en juin"
+     ],
+     "q": "As-tu entendu une rumeur amusante récemment, sur un film, un groupe ou une boutique ? Rapporte-la au conditionnel !",
+     "c": "Écris trois titres de presse au conditionnel journalistique, dont un au passé."
+    },
+    "it": {
+     "t": "Condizionale per notizie non confermate",
+     "g": "Leggi e riferisci voci come un giornalista francese: le train serait en retard, il aurait gagné.",
+     "p": [
+      "Fatti non confermati: Le train serait en retard. Le chanteur aurait annulé sa tournée.",
+      "Presente e passato: présent : il serait, il y aurait ; passé : il aurait gagné, elle serait partie",
+      "Citare la fonte: selon, d'après + source : d'après la presse, le musée rouvrirait en juin"
+     ],
+     "q": "Hai sentito di recente una voce divertente su un film, una band o un negozio? Riferiscila al condizionale!",
+     "c": "Scrivi tre brevi titoli in francese con il condizionale giornalistico, uno al passato."
+    },
+    "pt": {
+     "t": "Condicional para notícias por confirmar",
+     "g": "Lê e relata rumores como um jornalista francês: le train serait en retard, il aurait gagné.",
+     "p": [
+      "Factos por confirmar: Le train serait en retard. Le chanteur aurait annulé sa tournée.",
+      "Presente e passado: présent : il serait, il y aurait ; passé : il aurait gagné, elle serait partie",
+      "Citar a fonte: selon, d'après + source : d'après la presse, le musée rouvrirait en juin"
+     ],
+     "q": "Ouviste algum rumor engraçado sobre um filme, uma banda ou uma loja? Relata-o com o condicional!",
+     "c": "Escreve três títulos curtos em francês com o condicional jornalístico, um deles no passado."
+    },
+    "pt_BR": {
+     "t": "Condicional para notícias não confirmadas",
+     "g": "Leia e conte boatos como um jornalista francês: le train serait en retard, il aurait gagné.",
+     "p": [
+      "Fatos não confirmados: Le train serait en retard. Le chanteur aurait annulé sa tournée.",
+      "Presente e passado: présent : il serait, il y aurait ; passé : il aurait gagné, elle serait partie",
+      "Citar a fonte: selon, d'après + source : d'après la presse, le musée rouvrirait en juin"
+     ],
+     "q": "Você ouviu algum boato divertido sobre um filme, uma banda ou uma loja? Conte usando o condicional!",
+     "c": "Escreva três manchetes curtas em francês com o condicional jornalístico, uma no passado."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "serait",
+      "ex": "Selon la radio, l'autoroute serait fermée ce matin."
+     },
+     {
+      "w": "aurait + participe",
+      "ex": "Le célèbre tableau aurait été retrouvé dans un grenier."
+     },
+     {
+      "w": "selon",
+      "ex": "Selon les experts, l'hiver serait doux cette fois."
+     },
+     {
+      "w": "d'après",
+      "ex": "D'après le journal, le festival accueillerait dix mille personnes."
+     },
+     {
+      "w": "il semblerait que",
+      "ex": "Il semblerait que le concert soit complet."
+     },
+     {
+      "w": "une source",
+      "ex": "Une source proche de l'équipe confirme l'information."
+     }
+    ],
+    "gram": "Conditionnel journalistique : information non confirmée, au présent (il serait) ou au passé (il aurait gagné), avec selon, d'après."
+   }
+  },
+  {
+   "d": 287,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Mixed conditionals",
+     "g": "Link past and present in one if-sentence: si j'avais étudié, je parlerais mieux aujourd'hui.",
+     "p": [
+      "Past cause, present result: si + plus-que-parfait → conditionnel présent : Si j'avais étudié, je parlerais mieux aujourd'hui.",
+      "Present trait, past result: si + imparfait → conditionnel passé : Si j'étais plus organisé, j'aurais fini hier.",
+      "Quick reminder: rappel : si + présent → futur ; si + imparfait → conditionnel présent"
+     ],
+     "q": "If you had started French earlier, what would be different today? Answer with a mixed conditional!",
+     "c": "Write two mixed conditional sentences about your life: one past to present, one present to past."
+    },
+    "de": {
+     "t": "Gemischte Bedingungssätze",
+     "g": "Du verbindest Vergangenheit und Gegenwart: si j'avais étudié, je parlerais mieux aujourd'hui.",
+     "p": [
+      "Ursache früher, Folge heute: si + plus-que-parfait → conditionnel présent : Si j'avais étudié, je parlerais mieux aujourd'hui.",
+      "Eigenschaft heute, Folge früher: si + imparfait → conditionnel passé : Si j'étais plus organisé, j'aurais fini hier.",
+      "Kurze Wiederholung: rappel : si + présent → futur ; si + imparfait → conditionnel présent"
+     ],
+     "q": "Wenn du früher mit Französisch angefangen hättest, was wäre heute anders? Antworte mit einem gemischten Satz!",
+     "c": "Schreib zwei gemischte Bedingungssätze über dein Leben: einmal Vergangenheit zu Gegenwart, einmal umgekehrt."
+    },
+    "es": {
+     "t": "Condicionales mixtas",
+     "g": "Une pasado y presente en una sola frase: si j'avais étudié, je parlerais mieux aujourd'hui.",
+     "p": [
+      "Causa pasada, resultado presente: si + plus-que-parfait → conditionnel présent : Si j'avais étudié, je parlerais mieux aujourd'hui.",
+      "Rasgo presente, resultado pasado: si + imparfait → conditionnel passé : Si j'étais plus organisé, j'aurais fini hier.",
+      "Recordatorio: rappel : si + présent → futur ; si + imparfait → conditionnel présent"
+     ],
+     "q": "Si hubieras empezado francés antes, ¿qué sería distinto hoy? ¡Responde con una condicional mixta!",
+     "c": "Escribe dos condicionales mixtas sobre tu vida: una de pasado a presente y otra de presente a pasado."
+    },
+    "fr": {
+     "t": "Les hypothèses mixtes",
+     "g": "Relier passé et présent dans une même hypothèse : si j'avais étudié, je parlerais mieux aujourd'hui.",
+     "p": [
+      "Cause passée, résultat présent : si + plus-que-parfait → conditionnel présent : Si j'avais étudié, je parlerais mieux aujourd'hui.",
+      "Trait présent, résultat passé : si + imparfait → conditionnel passé : Si j'étais plus organisé, j'aurais fini hier.",
+      "Petit rappel : rappel : si + présent → futur ; si + imparfait → conditionnel présent"
+     ],
+     "q": "Si tu avais commencé le français plus tôt, qu'est-ce qui serait différent aujourd'hui ?",
+     "c": "Écris deux hypothèses mixtes sur ta vie : une du passé vers le présent, une du présent vers le passé."
+    },
+    "it": {
+     "t": "Periodi ipotetici misti",
+     "g": "Collega passato e presente in un'unica ipotesi: si j'avais étudié, je parlerais mieux aujourd'hui.",
+     "p": [
+      "Causa passata, risultato presente: si + plus-que-parfait → conditionnel présent : Si j'avais étudié, je parlerais mieux aujourd'hui.",
+      "Tratto presente, risultato passato: si + imparfait → conditionnel passé : Si j'étais plus organisé, j'aurais fini hier.",
+      "Promemoria: rappel : si + présent → futur ; si + imparfait → conditionnel présent"
+     ],
+     "q": "Se avessi iniziato il francese prima, cosa sarebbe diverso oggi? Rispondi con un periodo ipotetico misto!",
+     "c": "Scrivi due ipotesi miste sulla tua vita: una dal passato al presente e una dal presente al passato."
+    },
+    "pt": {
+     "t": "Condicionais mistas",
+     "g": "Liga passado e presente numa só frase: si j'avais étudié, je parlerais mieux aujourd'hui.",
+     "p": [
+      "Causa passada, resultado presente: si + plus-que-parfait → conditionnel présent : Si j'avais étudié, je parlerais mieux aujourd'hui.",
+      "Traço presente, resultado passado: si + imparfait → conditionnel passé : Si j'étais plus organisé, j'aurais fini hier.",
+      "Lembrete: rappel : si + présent → futur ; si + imparfait → conditionnel présent"
+     ],
+     "q": "Se tivesses começado o francês mais cedo, o que seria diferente hoje? Responde com uma condicional mista!",
+     "c": "Escreve duas condicionais mistas sobre a tua vida: uma do passado para o presente e outra ao contrário."
+    },
+    "pt_BR": {
+     "t": "Condicionais mistas",
+     "g": "Ligue passado e presente numa frase só: si j'avais étudié, je parlerais mieux aujourd'hui.",
+     "p": [
+      "Causa passada, resultado presente: si + plus-que-parfait → conditionnel présent : Si j'avais étudié, je parlerais mieux aujourd'hui.",
+      "Traço presente, resultado passado: si + imparfait → conditionnel passé : Si j'étais plus organisé, j'aurais fini hier.",
+      "Lembrete: rappel : si + présent → futur ; si + imparfait → conditionnel présent"
+     ],
+     "q": "Se você tivesse começado o francês antes, o que seria diferente hoje? Responda com uma condicional mista!",
+     "c": "Escreva duas condicionais mistas sobre a sua vida: uma do passado para o presente e outra ao contrário."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "si j'avais su",
+      "ex": "Si j'avais su, je ne serais pas si fatigué maintenant."
+     },
+     {
+      "w": "je serais déjà",
+      "ex": "Si j'avais pris le train, je serais déjà à Paris."
+     },
+     {
+      "w": "si j'étais",
+      "ex": "Si j'étais plus prudent, je n'aurais pas oublié mon passeport."
+     },
+     {
+      "w": "j'aurais pu",
+      "ex": "Si je parlais italien, j'aurais pu l'aider hier."
+     },
+     {
+      "w": "si tu avais écouté",
+      "ex": "Si tu avais écouté, tu saurais la réponse."
+     },
+     {
+      "w": "à l'heure qu'il est",
+      "ex": "Si on était partis tôt, on serait à la plage à l'heure qu'il est."
+     }
+    ],
+    "gram": "Hypothèse mixte : si + plus-que-parfait → conditionnel présent ; si + imparfait (trait présent) → conditionnel passé."
+   }
+  },
+  {
+   "d": 288,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Infinitif passé",
+     "g": "Sequence actions elegantly with the past infinitive: après avoir mangé, après être parti.",
+     "p": [
+      "Form: avoir/être + participe : avoir mangé, être parti(e), s'être levé(e)",
+      "Sequencing: Après avoir mangé, on est allés se promener. Après être arrivée, elle a appelé.",
+      "Other uses: sans avoir prévenu, merci d'être venu, je regrette d'avoir oublié"
+     ],
+     "q": "Tell me what you did yesterday evening in order, using après avoir and après être.",
+     "c": "Write a thank-you message in French with merci d'avoir and one regret with je regrette d'avoir."
+    },
+    "de": {
+     "t": "Infinitif passé",
+     "g": "Du reihst Handlungen elegant mit dem Infinitiv der Vergangenheit: après avoir mangé, après être parti.",
+     "p": [
+      "Bildung: avoir/être + participe : avoir mangé, être parti(e), s'être levé(e)",
+      "Abfolge: Après avoir mangé, on est allés se promener. Après être arrivée, elle a appelé.",
+      "Weitere Verwendungen: sans avoir prévenu, merci d'être venu, je regrette d'avoir oublié"
+     ],
+     "q": "Erzähl mir der Reihe nach, was du gestern Abend gemacht hast, mit après avoir und après être.",
+     "c": "Schreib eine Dankesnachricht auf Französisch mit merci d'avoir und ein Bedauern mit je regrette d'avoir."
+    },
+    "es": {
+     "t": "Infinitif passé",
+     "g": "Encadena acciones con elegancia con el infinitivo pasado: après avoir mangé, après être parti.",
+     "p": [
+      "Forma: avoir/être + participe : avoir mangé, être parti(e), s'être levé(e)",
+      "Secuencia: Après avoir mangé, on est allés se promener. Après être arrivée, elle a appelé.",
+      "Otros usos: sans avoir prévenu, merci d'être venu, je regrette d'avoir oublié"
+     ],
+     "q": "Cuéntame en orden lo que hiciste ayer por la noche, con après avoir y après être.",
+     "c": "Escribe un mensaje de agradecimiento en francés con merci d'avoir y una disculpa con je regrette d'avoir."
+    },
+    "fr": {
+     "t": "L'infinitif passé",
+     "g": "Enchaîner des actions avec élégance grâce à l'infinitif passé : après avoir mangé, après être parti.",
+     "p": [
+      "La forme : avoir/être + participe : avoir mangé, être parti(e), s'être levé(e)",
+      "L'enchaînement : Après avoir mangé, on est allés se promener. Après être arrivée, elle a appelé.",
+      "Autres emplois : sans avoir prévenu, merci d'être venu, je regrette d'avoir oublié"
+     ],
+     "q": "Raconte-moi ta soirée d'hier dans l'ordre, avec après avoir et après être.",
+     "c": "Écris un message de remerciement avec merci d'avoir et un regret avec je regrette d'avoir."
+    },
+    "it": {
+     "t": "Infinitif passé",
+     "g": "Concatena azioni con eleganza grazie all'infinito passato: après avoir mangé, après être parti.",
+     "p": [
+      "Forma: avoir/être + participe : avoir mangé, être parti(e), s'être levé(e)",
+      "Sequenza: Après avoir mangé, on est allés se promener. Après être arrivée, elle a appelé.",
+      "Altri usi: sans avoir prévenu, merci d'être venu, je regrette d'avoir oublié"
+     ],
+     "q": "Raccontami in ordine cosa hai fatto ieri sera, con après avoir e après être.",
+     "c": "Scrivi un messaggio di ringraziamento in francese con merci d'avoir e un rammarico con je regrette d'avoir."
+    },
+    "pt": {
+     "t": "Infinitif passé",
+     "g": "Encadeia ações com elegância usando o infinitivo passado: après avoir mangé, après être parti.",
+     "p": [
+      "Forma: avoir/être + participe : avoir mangé, être parti(e), s'être levé(e)",
+      "Sequência: Après avoir mangé, on est allés se promener. Après être arrivée, elle a appelé.",
+      "Outros usos: sans avoir prévenu, merci d'être venu, je regrette d'avoir oublié"
+     ],
+     "q": "Conta-me por ordem o que fizeste ontem à noite, com après avoir e après être.",
+     "c": "Escreve uma mensagem de agradecimento em francês com merci d'avoir e um lamento com je regrette d'avoir."
+    },
+    "pt_BR": {
+     "t": "Infinitif passé",
+     "g": "Encadeie ações com elegância usando o infinitivo passado: après avoir mangé, après être parti.",
+     "p": [
+      "Forma: avoir/être + participe : avoir mangé, être parti(e), s'être levé(e)",
+      "Sequência: Après avoir mangé, on est allés se promener. Après être arrivée, elle a appelé.",
+      "Outros usos: sans avoir prévenu, merci d'être venu, je regrette d'avoir oublié"
+     ],
+     "q": "Me conte em ordem o que você fez ontem à noite, com après avoir e après être.",
+     "c": "Escreva uma mensagem de agradecimento em francês com merci d'avoir e um arrependimento com je regrette d'avoir."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "après avoir + participe",
+      "ex": "Après avoir dîné, nous avons joué aux cartes."
+     },
+     {
+      "w": "après être + participe",
+      "ex": "Après être rentrés, ils ont regardé un film."
+     },
+     {
+      "w": "sans avoir",
+      "ex": "Il est parti sans avoir dit au revoir."
+     },
+     {
+      "w": "merci d'avoir",
+      "ex": "Merci d'avoir pensé à moi !"
+     },
+     {
+      "w": "je regrette d'avoir",
+      "ex": "Je regrette d'avoir oublié ton anniversaire."
+     },
+     {
+      "w": "s'être levé(e)",
+      "ex": "Après s'être levée, elle a ouvert les volets."
+     }
+    ],
+    "gram": "Infinitif passé (avoir/être + participe) : action antérieure, même sujet : après avoir fini, il est sorti ; merci d'être venu."
+   }
+  },
+  {
+   "d": 289,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Compound participle",
+     "g": "Write in a formal style with ayant terminé and étant arrivé to show a prior action and its cause.",
+     "p": [
+      "With avoir: ayant + participe : Ayant terminé son travail, il est rentré.",
+      "With être: étant + participe : Étant arrivée en avance, elle a pris un café.",
+      "Register: style écrit et formel ; à l'oral : comme il avait terminé, après avoir terminé"
+     ],
+     "q": "Rewrite in formal style: Comme j'avais fini mon café, je suis parti. How would you say it with ayant?",
+     "c": "Write three formal sentences, like in a report or email, using ayant, étant and n'ayant pas."
+    },
+    "de": {
+     "t": "Zusammengesetztes Partizip",
+     "g": "Du schreibst formell mit ayant terminé und étant arrivé für eine vorherige Handlung und ihren Grund.",
+     "p": [
+      "Mit avoir: ayant + participe : Ayant terminé son travail, il est rentré.",
+      "Mit être: étant + participe : Étant arrivée en avance, elle a pris un café.",
+      "Register: style écrit et formel ; à l'oral : comme il avait terminé, après avoir terminé"
+     ],
+     "q": "Schreib formell um: Comme j'avais fini mon café, je suis parti. Wie sagst du es mit ayant?",
+     "c": "Schreib drei formelle Sätze wie in einem Bericht oder einer E-Mail, mit ayant, étant und n'ayant pas."
+    },
+    "es": {
+     "t": "Participio compuesto",
+     "g": "Escribe con estilo formal con ayant terminé y étant arrivé para una acción anterior y su causa.",
+     "p": [
+      "Con avoir: ayant + participe : Ayant terminé son travail, il est rentré.",
+      "Con être: étant + participe : Étant arrivée en avance, elle a pris un café.",
+      "Registro: style écrit et formel ; à l'oral : comme il avait terminé, après avoir terminé"
+     ],
+     "q": "Reescribe en estilo formal: Comme j'avais fini mon café, je suis parti. ¿Cómo lo dirías con ayant?",
+     "c": "Escribe tres frases formales, como en un informe o un correo, con ayant, étant y n'ayant pas."
+    },
+    "fr": {
+     "t": "Le participe passé composé",
+     "g": "Écrire dans un style soutenu avec ayant terminé et étant arrivé pour une action antérieure et sa cause.",
+     "p": [
+      "Avec avoir : ayant + participe : Ayant terminé son travail, il est rentré.",
+      "Avec être : étant + participe : Étant arrivée en avance, elle a pris un café.",
+      "Le registre : style écrit et formel ; à l'oral : comme il avait terminé, après avoir terminé"
+     ],
+     "q": "Réécris en style soutenu : Comme j'avais fini mon café, je suis parti. Comment le dire avec ayant ?",
+     "c": "Écris trois phrases soutenues, comme dans un rapport ou un e-mail, avec ayant, étant et n'ayant pas."
+    },
+    "it": {
+     "t": "Participio composto",
+     "g": "Scrivi in stile formale con ayant terminé e étant arrivé per un'azione precedente e la sua causa.",
+     "p": [
+      "Con avoir: ayant + participe : Ayant terminé son travail, il est rentré.",
+      "Con être: étant + participe : Étant arrivée en avance, elle a pris un café.",
+      "Registro: style écrit et formel ; à l'oral : comme il avait terminé, après avoir terminé"
+     ],
+     "q": "Riscrivi in stile formale: Comme j'avais fini mon café, je suis parti. Come lo diresti con ayant?",
+     "c": "Scrivi tre frasi formali, come in un rapporto o un'email, con ayant, étant e n'ayant pas."
+    },
+    "pt": {
+     "t": "Particípio composto",
+     "g": "Escreve num estilo formal com ayant terminé e étant arrivé para uma ação anterior e a sua causa.",
+     "p": [
+      "Com avoir: ayant + participe : Ayant terminé son travail, il est rentré.",
+      "Com être: étant + participe : Étant arrivée en avance, elle a pris un café.",
+      "Registo: style écrit et formel ; à l'oral : comme il avait terminé, après avoir terminé"
+     ],
+     "q": "Reescreve em estilo formal: Comme j'avais fini mon café, je suis parti. Como dirias com ayant?",
+     "c": "Escreve três frases formais, como num relatório ou e-mail, com ayant, étant e n'ayant pas."
+    },
+    "pt_BR": {
+     "t": "Particípio composto",
+     "g": "Escreva em estilo formal com ayant terminé e étant arrivé para uma ação anterior e sua causa.",
+     "p": [
+      "Com avoir: ayant + participe : Ayant terminé son travail, il est rentré.",
+      "Com être: étant + participe : Étant arrivée en avance, elle a pris un café.",
+      "Registro: style écrit et formel ; à l'oral : comme il avait terminé, après avoir terminé"
+     ],
+     "q": "Reescreva em estilo formal: Comme j'avais fini mon café, je suis parti. Como você diria com ayant?",
+     "c": "Escreva três frases formais, como num relatório ou e-mail, com ayant, étant e n'ayant pas."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ayant terminé",
+      "ex": "Ayant terminé l'examen, elle est sortie prendre l'air."
+     },
+     {
+      "w": "étant arrivé(e)",
+      "ex": "Étant arrivés tôt, nous avons visité le marché."
+     },
+     {
+      "w": "ayant reçu",
+      "ex": "Ayant reçu votre courrier, je vous réponds rapidement."
+     },
+     {
+      "w": "s'étant levé(e)",
+      "ex": "S'étant levé tard, il a raté le bus."
+     },
+     {
+      "w": "n'ayant pas compris",
+      "ex": "N'ayant pas compris la question, j'ai demandé de répéter."
+     },
+     {
+      "w": "étant donné que",
+      "ex": "Étant donné que le musée est fermé, allons au parc."
+     }
+    ],
+    "gram": "Participe passé composé (ayant / étant + participe) : action antérieure et souvent cause, surtout à l'écrit : ayant fini, il est parti."
+   }
+  },
+  {
+   "d": 290,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Sequence of tenses",
+     "g": "Match tenses correctly when the main verb is in the past: il a dit qu'il était fatigué.",
+     "p": [
+      "The shift: Il dit qu'il est fatigué. → Il a dit qu'il était fatigué.",
+      "The rules: présent → imparfait, passé composé → plus-que-parfait, futur → conditionnel",
+      "Time words change too: Elle a dit qu'elle avait fini et qu'elle viendrait le lendemain."
+     ],
+     "q": "What did someone tell you recently? Report it in French with il/elle a dit que and the right tenses.",
+     "c": "Report this in the past: Je suis prêt, j'ai fini et je partirai demain. Start with Il a dit que..."
+    },
+    "de": {
+     "t": "Zeitenfolge",
+     "g": "Du passt die Zeiten an, wenn das Hauptverb in der Vergangenheit steht: il a dit qu'il était fatigué.",
+     "p": [
+      "Die Verschiebung: Il dit qu'il est fatigué. → Il a dit qu'il était fatigué.",
+      "Die Regeln: présent → imparfait, passé composé → plus-que-parfait, futur → conditionnel",
+      "Auch Zeitangaben ändern sich: Elle a dit qu'elle avait fini et qu'elle viendrait le lendemain."
+     ],
+     "q": "Was hat dir jemand kürzlich erzählt? Gib es auf Französisch mit il/elle a dit que und den richtigen Zeiten wieder.",
+     "c": "Gib in der Vergangenheit wieder: Je suis prêt, j'ai fini et je partirai demain. Beginne mit Il a dit que..."
+    },
+    "es": {
+     "t": "Concordancia de tiempos",
+     "g": "Ajusta los tiempos cuando el verbo principal está en pasado: il a dit qu'il était fatigué.",
+     "p": [
+      "El cambio: Il dit qu'il est fatigué. → Il a dit qu'il était fatigué.",
+      "Las reglas: présent → imparfait, passé composé → plus-que-parfait, futur → conditionnel",
+      "También cambian las expresiones de tiempo: Elle a dit qu'elle avait fini et qu'elle viendrait le lendemain."
+     ],
+     "q": "¿Qué te contó alguien hace poco? Repórtalo en francés con il/elle a dit que y los tiempos correctos.",
+     "c": "Pasa al pasado: Je suis prêt, j'ai fini et je partirai demain. Empieza con Il a dit que..."
+    },
+    "fr": {
+     "t": "La concordance des temps",
+     "g": "Accorder correctement les temps quand le verbe principal est au passé : il a dit qu'il était fatigué.",
+     "p": [
+      "Le changement : Il dit qu'il est fatigué. → Il a dit qu'il était fatigué.",
+      "Les règles : présent → imparfait, passé composé → plus-que-parfait, futur → conditionnel",
+      "Les indicateurs de temps aussi : Elle a dit qu'elle avait fini et qu'elle viendrait le lendemain."
+     ],
+     "q": "Qu'est-ce que quelqu'un t'a dit récemment ? Rapporte-le avec il/elle a dit que et les bons temps.",
+     "c": "Rapporte au passé : Je suis prêt, j'ai fini et je partirai demain. Commence par Il a dit que..."
+    },
+    "it": {
+     "t": "Concordanza dei tempi",
+     "g": "Accorda i tempi quando il verbo principale è al passato: il a dit qu'il était fatigué.",
+     "p": [
+      "Il cambiamento: Il dit qu'il est fatigué. → Il a dit qu'il était fatigué.",
+      "Le regole: présent → imparfait, passé composé → plus-que-parfait, futur → conditionnel",
+      "Cambiano anche le espressioni di tempo: Elle a dit qu'elle avait fini et qu'elle viendrait le lendemain."
+     ],
+     "q": "Cosa ti ha detto qualcuno di recente? Riferiscilo in francese con il/elle a dit que e i tempi giusti.",
+     "c": "Riferisci al passato: Je suis prêt, j'ai fini et je partirai demain. Inizia con Il a dit que..."
+    },
+    "pt": {
+     "t": "Concordância dos tempos",
+     "g": "Ajusta os tempos quando o verbo principal está no passado: il a dit qu'il était fatigué.",
+     "p": [
+      "A mudança: Il dit qu'il est fatigué. → Il a dit qu'il était fatigué.",
+      "As regras: présent → imparfait, passé composé → plus-que-parfait, futur → conditionnel",
+      "As expressões de tempo também mudam: Elle a dit qu'elle avait fini et qu'elle viendrait le lendemain."
+     ],
+     "q": "O que alguém te disse há pouco? Relata-o em francês com il/elle a dit que e os tempos certos.",
+     "c": "Relata no passado: Je suis prêt, j'ai fini et je partirai demain. Começa com Il a dit que..."
+    },
+    "pt_BR": {
+     "t": "Correlação dos tempos",
+     "g": "Ajuste os tempos quando o verbo principal está no passado: il a dit qu'il était fatigué.",
+     "p": [
+      "A mudança: Il dit qu'il est fatigué. → Il a dit qu'il était fatigué.",
+      "As regras: présent → imparfait, passé composé → plus-que-parfait, futur → conditionnel",
+      "As expressões de tempo também mudam: Elle a dit qu'elle avait fini et qu'elle viendrait le lendemain."
+     ],
+     "q": "O que alguém te disse há pouco? Relate em francês com il/elle a dit que e os tempos certos.",
+     "c": "Relate no passado: Je suis prêt, j'ai fini et je partirai demain. Comece com Il a dit que..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il a dit que",
+      "ex": "Il a dit qu'il viendrait vers huit heures."
+     },
+     {
+      "w": "elle a expliqué que",
+      "ex": "Elle a expliqué qu'elle avait raté son train."
+     },
+     {
+      "w": "le lendemain",
+      "ex": "Il a promis qu'il appellerait le lendemain."
+     },
+     {
+      "w": "la veille",
+      "ex": "Elle a raconté qu'elle était arrivée la veille."
+     },
+     {
+      "w": "ce jour-là",
+      "ex": "Ce jour-là, il faisait un temps magnifique."
+     },
+     {
+      "w": "il a promis que",
+      "ex": "Il a promis qu'il ferait la vaisselle."
+     }
+    ],
+    "gram": "Concordance des temps : verbe principal au passé → présent devient imparfait, passé composé plus-que-parfait, futur conditionnel."
+   }
+  }
+ ]
+}

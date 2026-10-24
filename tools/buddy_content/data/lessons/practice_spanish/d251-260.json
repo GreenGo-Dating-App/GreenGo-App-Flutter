@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 251,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Writing a review",
+     "g": "Write a short, well-organised review of a film, book or restaurant.",
+     "p": [
+      "Structure: introduction (what and where), positives, negatives, final verdict.",
+      "Give reasons: lo mejor fue... porque..., lo único que no me convenció fue...",
+      "Finish with a rating and advice: le doy un ocho; vale la pena; no es para todo el mundo."
+     ],
+     "q": "Which restaurant, book or film would you review today? Tell me why.",
+     "c": "Write a 60-word review with lo mejor fue, lo único que no me convenció and vale la pena."
+    },
+    "de": {
+     "t": "Eine Rezension schreiben",
+     "g": "Schreib eine kurze, gut gegliederte Rezension zu Film, Buch oder Restaurant.",
+     "p": [
+      "Aufbau: Einleitung (was und wo), Positives, Negatives, Fazit.",
+      "Begründe: lo mejor fue... porque..., lo único que no me convenció fue...",
+      "Zum Schluss Note und Rat: le doy un ocho; vale la pena; no es para todo el mundo."
+     ],
+     "q": "Welches Restaurant, Buch oder welchen Film würdest du heute bewerten? Sag warum.",
+     "c": "Schreib 60 Wörter mit lo mejor fue, lo único que no me convenció und vale la pena."
+    },
+    "es": {
+     "t": "Escribir una reseña",
+     "g": "Escribe una reseña breve y bien organizada de una película, libro o restaurante.",
+     "p": [
+      "Estructura: introducción (qué y dónde), aspectos positivos, negativos y valoración final.",
+      "Justifica: lo mejor fue... porque..., lo único que no me convenció fue...",
+      "Termina con nota y consejo: le doy un ocho; vale la pena; no es para todo el mundo."
+     ],
+     "q": "¿De qué restaurante, libro o película harías hoy una reseña? Dime por qué.",
+     "c": "Escribe una reseña de 60 palabras con lo mejor fue, lo único que no me convenció y vale la pena."
+    },
+    "fr": {
+     "t": "Écrire une critique",
+     "g": "Écris une critique courte et bien organisée d'un film, livre ou restaurant.",
+     "p": [
+      "Structure : introduction (quoi et où), points positifs, points négatifs, verdict final.",
+      "Justifie : lo mejor fue... porque..., lo único que no me convenció fue...",
+      "Termine par une note et un conseil : le doy un ocho ; vale la pena ; no es para todo el mundo."
+     ],
+     "q": "Sur quel restaurant, livre ou film écrirais-tu une critique aujourd'hui ? Dis pourquoi.",
+     "c": "Écris 60 mots avec lo mejor fue, lo único que no me convenció et vale la pena."
+    },
+    "it": {
+     "t": "Scrivere una recensione",
+     "g": "Scrivi una recensione breve e ben organizzata di un film, libro o ristorante.",
+     "p": [
+      "Struttura: introduzione (cosa e dove), aspetti positivi, negativi, giudizio finale.",
+      "Motiva: lo mejor fue... porque..., lo único que no me convenció fue...",
+      "Chiudi con voto e consiglio: le doy un ocho; vale la pena; no es para todo el mundo."
+     ],
+     "q": "Di quale ristorante, libro o film faresti oggi una recensione? Dimmi perché.",
+     "c": "Scrivi 60 parole con lo mejor fue, lo único que no me convenció e vale la pena."
+    },
+    "pt": {
+     "t": "Escrever uma crítica",
+     "g": "Escreve uma crítica curta e bem organizada de um filme, livro ou restaurante.",
+     "p": [
+      "Estrutura: introdução (o quê e onde), pontos positivos, negativos e avaliação final.",
+      "Justifica: lo mejor fue... porque..., lo único que no me convenció fue...",
+      "Termina com nota e conselho: le doy un ocho; vale la pena; no es para todo el mundo."
+     ],
+     "q": "Sobre que restaurante, livro ou filme farias hoje uma crítica? Diz porquê.",
+     "c": "Escreve 60 palavras com lo mejor fue, lo único que no me convenció e vale la pena."
+    },
+    "pt_BR": {
+     "t": "Escrever uma resenha",
+     "g": "Escreva uma resenha curta e bem organizada de um filme, livro ou restaurante.",
+     "p": [
+      "Estrutura: introdução (o quê e onde), pontos positivos, negativos e avaliação final.",
+      "Justifique: lo mejor fue... porque..., lo único que no me convenció fue...",
+      "Termine com nota e conselho: le doy un ocho; vale la pena; no es para todo el mundo."
+     ],
+     "q": "Sobre qual restaurante, livro ou filme você faria uma resenha hoje? Diga por quê.",
+     "c": "Escreva 60 palavras com lo mejor fue, lo único que no me convenció e vale la pena."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la reseña",
+      "ex": "Escribí una reseña del restaurante en internet."
+     },
+     {
+      "w": "lo mejor fue",
+      "ex": "Lo mejor fue el postre de la casa."
+     },
+     {
+      "w": "no me convenció",
+      "ex": "Lo único que no me convenció fue el final."
+     },
+     {
+      "w": "vale la pena",
+      "ex": "El libro es largo, pero vale la pena."
+     },
+     {
+      "w": "le doy un ocho",
+      "ex": "Al servicio le doy un ocho sobre diez."
+     },
+     {
+      "w": "la valoración",
+      "ex": "Mi valoración general es muy positiva."
+     }
+    ],
+    "gram": "Lo + adjetivo para valorar: lo mejor, lo único, lo peor. Vale la pena + infinitivo: vale la pena leerlo."
+   }
+  },
+  {
+   "d": 252,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Famous Hispanic figures",
+     "g": "Talk about inspiring people from the Spanish-speaking world.",
+     "p": [
+      "Miguel de Cervantes wrote Don Quixote; Gabriel García Márquez wrote Cien años de soledad.",
+      "Frida Kahlo is famous for her self-portraits; Rafa Nadal for his many tennis titles.",
+      "Describe why they inspire: era conocido por..., me inspira porque..., luchó por sus sueños."
+     ],
+     "q": "Which Hispanic figure would you like to meet? Say why with me gustaría conocer a...",
+     "c": "Find one fact about a famous Hispanic person and tell it in Spanish with es conocido por."
+    },
+    "de": {
+     "t": "Berühmte hispanische Persönlichkeiten",
+     "g": "Sprich über inspirierende Menschen aus der spanischsprachigen Welt.",
+     "p": [
+      "Miguel de Cervantes schrieb Don Quijote; Gabriel García Márquez schrieb Cien años de soledad.",
+      "Frida Kahlo ist für ihre Selbstporträts berühmt, Rafa Nadal für seine vielen Tennistitel.",
+      "Sag, warum sie inspirieren: era conocido por..., me inspira porque..., luchó por sus sueños."
+     ],
+     "q": "Welche hispanische Persönlichkeit würdest du gern treffen? Sag warum mit me gustaría conocer a...",
+     "c": "Such eine Tatsache über eine berühmte hispanische Person und erzähl sie mit es conocido por."
+    },
+    "es": {
+     "t": "Personajes hispanos famosos",
+     "g": "Habla de personas inspiradoras del mundo hispanohablante.",
+     "p": [
+      "Miguel de Cervantes escribió el Quijote; Gabriel García Márquez, Cien años de soledad.",
+      "Frida Kahlo es famosa por sus autorretratos y Rafa Nadal por sus muchos títulos de tenis.",
+      "Explica por qué inspiran: era conocido por..., me inspira porque..., luchó por sus sueños."
+     ],
+     "q": "¿A qué personaje hispano te gustaría conocer? Di por qué con me gustaría conocer a...",
+     "c": "Busca un dato sobre un personaje hispano famoso y cuéntalo con es conocido por."
+    },
+    "fr": {
+     "t": "Personnalités hispaniques célèbres",
+     "g": "Parle de personnes inspirantes du monde hispanophone.",
+     "p": [
+      "Miguel de Cervantes a écrit Don Quichotte ; Gabriel García Márquez, Cien años de soledad.",
+      "Frida Kahlo est célèbre pour ses autoportraits, Rafa Nadal pour ses nombreux titres au tennis.",
+      "Explique pourquoi ils inspirent : era conocido por..., me inspira porque..., luchó por sus sueños."
+     ],
+     "q": "Quelle personnalité hispanique aimerais-tu rencontrer ? Dis pourquoi avec me gustaría conocer a...",
+     "c": "Trouve un fait sur une personnalité hispanique et raconte-le avec es conocido por."
+    },
+    "it": {
+     "t": "Personaggi ispanici famosi",
+     "g": "Parla di persone che ispirano dal mondo ispanofono.",
+     "p": [
+      "Miguel de Cervantes scrisse il Don Chisciotte; Gabriel García Márquez, Cien años de soledad.",
+      "Frida Kahlo è famosa per i suoi autoritratti, Rafa Nadal per i suoi tanti titoli nel tennis.",
+      "Spiega perché ispirano: era conocido por..., me inspira porque..., luchó por sus sueños."
+     ],
+     "q": "Quale personaggio ispanico ti piacerebbe conoscere? Di' perché con me gustaría conocer a...",
+     "c": "Trova un fatto su un personaggio ispanico famoso e raccontalo con es conocido por."
+    },
+    "pt": {
+     "t": "Figuras hispânicas famosas",
+     "g": "Fala de pessoas inspiradoras do mundo hispanófono.",
+     "p": [
+      "Miguel de Cervantes escreveu Dom Quixote; Gabriel García Márquez, Cien años de soledad.",
+      "Frida Kahlo é famosa pelos autorretratos e Rafa Nadal pelos muitos títulos no ténis.",
+      "Explica porque inspiram: era conocido por..., me inspira porque..., luchó por sus sueños."
+     ],
+     "q": "Que figura hispânica gostavas de conhecer? Diz porquê com me gustaría conocer a...",
+     "c": "Procura um facto sobre uma figura hispânica famosa e conta-o com es conocido por."
+    },
+    "pt_BR": {
+     "t": "Personalidades hispânicas famosas",
+     "g": "Fale de pessoas inspiradoras do mundo hispanofalante.",
+     "p": [
+      "Miguel de Cervantes escreveu Dom Quixote; Gabriel García Márquez, Cien años de soledad.",
+      "Frida Kahlo é famosa pelos autorretratos e Rafa Nadal pelos muitos títulos no tênis.",
+      "Explique por que inspiram: era conocido por..., me inspira porque..., luchó por sus sueños."
+     ],
+     "q": "Qual personalidade hispânica você gostaria de conhecer? Diga por quê com me gustaría conocer a...",
+     "c": "Procure um fato sobre uma personalidade hispânica e conte com es conocido por."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "es conocido por",
+      "ex": "Cervantes es conocido por el Quijote."
+     },
+     {
+      "w": "el escritor",
+      "ex": "García Márquez fue un escritor colombiano."
+     },
+     {
+      "w": "la pintora",
+      "ex": "Frida Kahlo fue una pintora mexicana."
+     },
+     {
+      "w": "el deportista",
+      "ex": "Rafa Nadal es un deportista muy disciplinado."
+     },
+     {
+      "w": "me inspira",
+      "ex": "Me inspira su esfuerzo y su humildad."
+     },
+     {
+      "w": "luchar por",
+      "ex": "Luchó por sus sueños desde muy joven."
+     }
+    ],
+    "gram": "Ser conocido/famoso por + nombre o infinitivo. A personal con conocer: me gustaría conocer a Nadal."
+   }
+  },
+  {
+   "d": 253,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Biographies: life events",
+     "g": "Tell the story of someone's life in order.",
+     "p": [
+      "Key verbs in the preterite: nació, creció, estudió, se mudó, se hizo famoso, vivió.",
+      "Time markers: en 1990, a los veinte años, años más tarde, desde entonces, al final de su carrera.",
+      "Use the imperfect for background: de niño era muy curioso, vivía en un pueblo pequeño."
+     ],
+     "q": "Tell me the life of someone you admire in four sentences, in the past.",
+     "c": "Write a mini-biography of a family member with nació, creció, a los... años and desde entonces."
+    },
+    "de": {
+     "t": "Biografien: Lebensereignisse",
+     "g": "Erzähle das Leben eines Menschen in der richtigen Reihenfolge.",
+     "p": [
+      "Schlüsselverben im Indefinido: nació, creció, estudió, se mudó, se hizo famoso, vivió.",
+      "Zeitangaben: en 1990, a los veinte años, años más tarde, desde entonces, al final de su carrera.",
+      "Imperfecto für den Hintergrund: de niño era muy curioso, vivía en un pueblo pequeño."
+     ],
+     "q": "Erzähl mir in vier Sätzen das Leben eines Menschen, den du bewunderst, in der Vergangenheit.",
+     "c": "Schreib eine Mini-Biografie eines Familienmitglieds mit nació, creció, a los... años, desde entonces."
+    },
+    "es": {
+     "t": "Biografías: etapas de la vida",
+     "g": "Cuenta la vida de una persona en orden.",
+     "p": [
+      "Verbos clave en indefinido: nació, creció, estudió, se mudó, se hizo famoso, vivió.",
+      "Marcadores temporales: en 1990, a los veinte años, años más tarde, desde entonces, al final de su carrera.",
+      "Usa el imperfecto para el contexto: de niño era muy curioso, vivía en un pueblo pequeño."
+     ],
+     "q": "Cuéntame en cuatro frases la vida de alguien a quien admiras, en pasado.",
+     "c": "Escribe una minibiografía de un familiar con nació, creció, a los... años y desde entonces."
+    },
+    "fr": {
+     "t": "Biographies : étapes de la vie",
+     "g": "Raconte la vie de quelqu'un dans l'ordre.",
+     "p": [
+      "Verbes clés au passé simple espagnol : nació, creció, estudió, se mudó, se hizo famoso, vivió.",
+      "Repères temporels : en 1990, a los veinte años, años más tarde, desde entonces, al final de su carrera.",
+      "L'imparfait pour le décor : de niño era muy curioso, vivía en un pueblo pequeño."
+     ],
+     "q": "Raconte-moi en quatre phrases la vie de quelqu'un que tu admires, au passé.",
+     "c": "Écris une mini-biographie d'un proche avec nació, creció, a los... años et desde entonces."
+    },
+    "it": {
+     "t": "Biografie: tappe della vita",
+     "g": "Racconta la vita di una persona in ordine.",
+     "p": [
+      "Verbi chiave al passato remoto spagnolo: nació, creció, estudió, se mudó, se hizo famoso, vivió.",
+      "Indicatori di tempo: en 1990, a los veinte años, años más tarde, desde entonces, al final de su carrera.",
+      "L'imperfetto per lo sfondo: de niño era muy curioso, vivía en un pueblo pequeño."
+     ],
+     "q": "Raccontami in quattro frasi la vita di qualcuno che ammiri, al passato.",
+     "c": "Scrivi una mini-biografia di un familiare con nació, creció, a los... años e desde entonces."
+    },
+    "pt": {
+     "t": "Biografias: etapas da vida",
+     "g": "Conta a vida de uma pessoa por ordem.",
+     "p": [
+      "Verbos-chave no pretérito perfeito: nació, creció, estudió, se mudó, se hizo famoso, vivió.",
+      "Marcadores de tempo: en 1990, a los veinte años, años más tarde, desde entonces, al final de su carrera.",
+      "Usa o imperfeito para o contexto: de niño era muy curioso, vivía en un pueblo pequeño."
+     ],
+     "q": "Conta-me em quatro frases a vida de alguém que admiras, no passado.",
+     "c": "Escreve uma minibiografia de um familiar com nació, creció, a los... años e desde entonces."
+    },
+    "pt_BR": {
+     "t": "Biografias: etapas da vida",
+     "g": "Conte a vida de uma pessoa em ordem.",
+     "p": [
+      "Verbos-chave no pretérito perfeito: nació, creció, estudió, se mudó, se hizo famoso, vivió.",
+      "Marcadores de tempo: en 1990, a los veinte años, años más tarde, desde entonces, al final de su carrera.",
+      "Use o imperfeito para o contexto: de niño era muy curioso, vivía en un pueblo pequeño."
+     ],
+     "q": "Me conte em quatro frases a vida de alguém que você admira, no passado.",
+     "c": "Escreva uma minibiografia de um familiar com nació, creció, a los... años e desde entonces."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "nacer",
+      "ex": "Mi abuela nació en un pueblo de Galicia."
+     },
+     {
+      "w": "crecer",
+      "ex": "Creció rodeado de libros y música."
+     },
+     {
+      "w": "mudarse",
+      "ex": "A los treinta años se mudó a Buenos Aires."
+     },
+     {
+      "w": "hacerse famoso",
+      "ex": "Se hizo famoso con su primera novela."
+     },
+     {
+      "w": "a los veinte años",
+      "ex": "A los veinte años empezó a trabajar."
+     },
+     {
+      "w": "desde entonces",
+      "ex": "Desde entonces vive junto al mar."
+     }
+    ],
+    "gram": "Indefinido para hechos de la vida (nació, estudió) e imperfecto para el contexto (era, vivía). A los + edad."
+   }
+  },
+  {
+   "d": 254,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "History, told simply",
+     "g": "Talk about historical periods in clear, simple Spanish.",
+     "p": [
+      "Name periods: la Edad Media, el Renacimiento, la época colonial, el siglo XIX.",
+      "Use the preterite for events and the imperfect for how life was: en esa época la gente viajaba a caballo.",
+      "Combine with the passive: la ciudad fue fundada en..., la catedral fue construida durante siglos."
+     ],
+     "q": "Which historical period interests you most? Tell me what life was like then.",
+     "c": "Write three sentences about your city's history: one with fue fundada and one with en esa época."
+    },
+    "de": {
+     "t": "Geschichte, einfach erzählt",
+     "g": "Sprich in klarem, einfachem Spanisch über historische Epochen.",
+     "p": [
+      "Epochen: la Edad Media, el Renacimiento, la época colonial, el siglo XIX.",
+      "Indefinido für Ereignisse, Imperfecto für den Alltag: en esa época la gente viajaba a caballo.",
+      "Mit Passiv kombinieren: la ciudad fue fundada en..., la catedral fue construida durante siglos."
+     ],
+     "q": "Welche Epoche interessiert dich am meisten? Erzähl, wie das Leben damals war.",
+     "c": "Schreib drei Sätze zur Geschichte deiner Stadt: einen mit fue fundada, einen mit en esa época."
+    },
+    "es": {
+     "t": "La historia, contada fácil",
+     "g": "Habla de épocas históricas con un español claro y sencillo.",
+     "p": [
+      "Nombra épocas: la Edad Media, el Renacimiento, la época colonial, el siglo XIX.",
+      "Indefinido para los hechos e imperfecto para la vida de entonces: en esa época la gente viajaba a caballo.",
+      "Combina con la pasiva: la ciudad fue fundada en..., la catedral fue construida durante siglos."
+     ],
+     "q": "¿Qué época histórica te interesa más? Cuéntame cómo era la vida entonces.",
+     "c": "Escribe tres frases sobre la historia de tu ciudad: una con fue fundada y otra con en esa época."
+    },
+    "fr": {
+     "t": "L'histoire, racontée simplement",
+     "g": "Parle des époques historiques dans un espagnol clair et simple.",
+     "p": [
+      "Nomme les époques : la Edad Media, el Renacimiento, la época colonial, el siglo XIX.",
+      "Passé simple pour les faits, imparfait pour la vie d'alors : en esa época la gente viajaba a caballo.",
+      "Combine avec le passif : la ciudad fue fundada en..., la catedral fue construida durante siglos."
+     ],
+     "q": "Quelle époque t'intéresse le plus ? Raconte-moi comment on vivait alors.",
+     "c": "Écris trois phrases sur l'histoire de ta ville : une avec fue fundada, une avec en esa época."
+    },
+    "it": {
+     "t": "La storia, raccontata in modo semplice",
+     "g": "Parla di epoche storiche in uno spagnolo chiaro e semplice.",
+     "p": [
+      "Nomina le epoche: la Edad Media, el Renacimiento, la época colonial, el siglo XIX.",
+      "Passato remoto per i fatti, imperfetto per la vita di allora: en esa época la gente viajaba a caballo.",
+      "Combina con il passivo: la ciudad fue fundada en..., la catedral fue construida durante siglos."
+     ],
+     "q": "Quale epoca storica ti interessa di più? Raccontami com'era la vita allora.",
+     "c": "Scrivi tre frasi sulla storia della tua città: una con fue fundada e una con en esa época."
+    },
+    "pt": {
+     "t": "A história, contada de forma simples",
+     "g": "Fala de épocas históricas num espanhol claro e simples.",
+     "p": [
+      "Nomeia épocas: la Edad Media, el Renacimiento, la época colonial, el siglo XIX.",
+      "Pretérito perfeito para os factos e imperfeito para a vida de então: en esa época la gente viajaba a caballo.",
+      "Combina com a passiva: la ciudad fue fundada en..., la catedral fue construida durante siglos."
+     ],
+     "q": "Que época histórica te interessa mais? Conta-me como era a vida nessa altura.",
+     "c": "Escreve três frases sobre a história da tua cidade: uma com fue fundada e outra com en esa época."
+    },
+    "pt_BR": {
+     "t": "A história, contada de forma simples",
+     "g": "Fale de épocas históricas num espanhol claro e simples.",
+     "p": [
+      "Cite épocas: la Edad Media, el Renacimiento, la época colonial, el siglo XIX.",
+      "Pretérito perfeito para os fatos e imperfeito para a vida da época: en esa época la gente viajaba a caballo.",
+      "Combine com a passiva: la ciudad fue fundada en..., la catedral fue construida durante siglos."
+     ],
+     "q": "Qual época histórica mais te interessa? Me conte como era a vida naquele tempo.",
+     "c": "Escreva três frases sobre a história da sua cidade: uma com fue fundada e outra com en esa época."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la Edad Media",
+      "ex": "En la Edad Media se construyeron muchos castillos."
+     },
+     {
+      "w": "el siglo XIX",
+      "ex": "En el siglo XIX llegó el tren a la ciudad."
+     },
+     {
+      "w": "la época",
+      "ex": "En esa época no había electricidad."
+     },
+     {
+      "w": "fundar",
+      "ex": "La ciudad fue fundada por los romanos."
+     },
+     {
+      "w": "el Renacimiento",
+      "ex": "El Renacimiento cambió el arte europeo."
+     },
+     {
+      "w": "antiguamente",
+      "ex": "Antiguamente la gente viajaba a caballo."
+     }
+    ],
+    "gram": "Narrar historia: indefinido (llegó el tren), imperfecto (no había luz) y pasiva con ser (fue fundada). Siglos en romanos: siglo XIX."
+   }
+  },
+  {
+   "d": 255,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "The passive with ser",
+     "g": "Use ser + past participle to focus on what was done, not who did it.",
+     "p": [
+      "Form: ser + participle agreeing with the subject: el puente fue construido, las casas fueron construidas.",
+      "Add the doer with por: la novela fue escrita por Cervantes.",
+      "It is common in history, news and formal texts; in conversation se pasiva is more frequent."
+     ],
+     "q": "Transform a sentence: Picasso pintó el Guernica. How do you say it in the passive?",
+     "c": "Write three passive sentences about famous buildings or works with fue... por..."
+    },
+    "de": {
+     "t": "Das Passiv mit ser",
+     "g": "Mit ser + Partizip betonst du, was getan wurde, nicht wer es tat.",
+     "p": [
+      "Bildung: ser + Partizip, angeglichen: el puente fue construido, las casas fueron construidas.",
+      "Den Handelnden nennst du mit por: la novela fue escrita por Cervantes.",
+      "Typisch in Geschichte, Nachrichten und formellen Texten; im Gespräch ist das se-Passiv häufiger."
+     ],
+     "q": "Forme um: Picasso pintó el Guernica. Wie heißt das im Passiv?",
+     "c": "Schreib drei Passivsätze über berühmte Bauwerke oder Werke mit fue... por..."
+    },
+    "es": {
+     "t": "La pasiva con ser",
+     "g": "Usa ser + participio para centrarte en lo que se hizo, no en quién lo hizo.",
+     "p": [
+      "Forma: ser + participio que concuerda con el sujeto: el puente fue construido, las casas fueron construidas.",
+      "El agente se introduce con por: la novela fue escrita por Cervantes.",
+      "Es frecuente en historia, noticias y textos formales; al hablar se usa más la pasiva con se."
+     ],
+     "q": "Transforma: Picasso pintó el Guernica. ¿Cómo se dice en pasiva?",
+     "c": "Escribe tres frases pasivas sobre edificios u obras famosas con fue... por..."
+    },
+    "fr": {
+     "t": "Le passif avec ser",
+     "g": "Utilise ser + participe passé pour insister sur l'action, pas sur son auteur.",
+     "p": [
+      "Forme : ser + participe accordé : el puente fue construido, las casas fueron construidas.",
+      "L'agent est introduit par por : la novela fue escrita por Cervantes.",
+      "Fréquent en histoire, dans les infos et les textes formels ; à l'oral, on préfère le passif avec se."
+     ],
+     "q": "Transforme : Picasso pintó el Guernica. Comment le dire au passif ?",
+     "c": "Écris trois phrases passives sur des monuments ou des œuvres célèbres avec fue... por..."
+    },
+    "it": {
+     "t": "Il passivo con ser",
+     "g": "Usa ser + participio per mettere in risalto l'azione, non chi la compie.",
+     "p": [
+      "Forma: ser + participio concordato: el puente fue construido, las casas fueron construidas.",
+      "L'agente si introduce con por: la novela fue escrita por Cervantes.",
+      "È frequente in storia, notizie e testi formali; parlando si usa di più il passivo con se."
+     ],
+     "q": "Trasforma: Picasso pintó el Guernica. Come si dice al passivo?",
+     "c": "Scrivi tre frasi passive su edifici o opere famose con fue... por..."
+    },
+    "pt": {
+     "t": "A passiva com ser",
+     "g": "Usa ser + particípio para destacar o que foi feito, não quem o fez.",
+     "p": [
+      "Forma: ser + particípio que concorda com o sujeito: el puente fue construido, las casas fueron construidas.",
+      "O agente introduz-se com por: la novela fue escrita por Cervantes.",
+      "É frequente em história, notícias e textos formais; a falar usa-se mais a passiva com se."
+     ],
+     "q": "Transforma: Picasso pintó el Guernica. Como se diz na passiva?",
+     "c": "Escreve três frases passivas sobre edifícios ou obras famosas com fue... por..."
+    },
+    "pt_BR": {
+     "t": "A voz passiva com ser",
+     "g": "Use ser + particípio para destacar o que foi feito, não quem fez.",
+     "p": [
+      "Forma: ser + particípio concordando com o sujeito: el puente fue construido, las casas fueron construidas.",
+      "O agente entra com por: la novela fue escrita por Cervantes.",
+      "É comum em história, notícias e textos formais; na fala se usa mais a passiva com se."
+     ],
+     "q": "Transforme: Picasso pintó el Guernica. Como fica na passiva?",
+     "c": "Escreva três frases passivas sobre edifícios ou obras famosas com fue... por..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "fue construido",
+      "ex": "El puente fue construido en 1890."
+     },
+     {
+      "w": "fue escrita",
+      "ex": "La novela fue escrita por Cervantes."
+     },
+     {
+      "w": "fueron descubiertos",
+      "ex": "Los restos fueron descubiertos por unos niños."
+     },
+     {
+      "w": "fue inaugurado",
+      "ex": "El museo fue inaugurado por la alcaldesa."
+     },
+     {
+      "w": "será publicado",
+      "ex": "El libro será publicado en primavera."
+     },
+     {
+      "w": "por",
+      "ex": "La catedral fue diseñada por un arquitecto famoso."
+     }
+    ],
+    "gram": "Pasiva: ser + participio concordado + por + agente. El puente fue construido; las torres fueron construidas."
+   }
+  },
+  {
+   "d": 256,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "News and media vocabulary",
+     "g": "Talk about the news and where it comes from.",
+     "p": [
+      "Key words: el titular (headline), la noticia (news item), el periodista, la fuente (source).",
+      "TV and radio: el telediario, el informativo, la entrevista, el reportaje, en directo.",
+      "Report what you heard: según el periódico..., he leído que..., dicen que..."
+     ],
+     "q": "How do you usually get your news? Answer with suelo informarme por...",
+     "c": "Read one positive headline today and retell it in Spanish starting with he leído que."
+    },
+    "de": {
+     "t": "Wortschatz Nachrichten und Medien",
+     "g": "Sprich über Nachrichten und ihre Quellen.",
+     "p": [
+      "Schlüsselwörter: el titular (Schlagzeile), la noticia (Meldung), el periodista, la fuente (Quelle).",
+      "TV und Radio: el telediario, el informativo, la entrevista, el reportaje, en directo.",
+      "Wiedergeben, was du gehört hast: según el periódico..., he leído que..., dicen que..."
+     ],
+     "q": "Wie informierst du dich normalerweise? Antworte mit suelo informarme por...",
+     "c": "Lies heute eine positive Schlagzeile und gib sie auf Spanisch wieder, beginnend mit he leído que."
+    },
+    "es": {
+     "t": "Vocabulario de noticias y medios",
+     "g": "Habla de las noticias y de dónde vienen.",
+     "p": [
+      "Palabras clave: el titular, la noticia, el periodista, la fuente.",
+      "Televisión y radio: el telediario, el informativo, la entrevista, el reportaje, en directo.",
+      "Cuenta lo que has oído: según el periódico..., he leído que..., dicen que..."
+     ],
+     "q": "¿Cómo te sueles informar? Responde con suelo informarme por...",
+     "c": "Lee hoy un titular positivo y cuéntalo en español empezando por he leído que."
+    },
+    "fr": {
+     "t": "Vocabulaire de l'info et des médias",
+     "g": "Parle des nouvelles et de leurs sources.",
+     "p": [
+      "Mots clés : el titular (titre), la noticia (nouvelle), el periodista, la fuente (source).",
+      "Télé et radio : el telediario, el informativo, la entrevista, el reportaje, en directo.",
+      "Rapporte ce que tu as entendu : según el periódico..., he leído que..., dicen que..."
+     ],
+     "q": "Comment t'informes-tu d'habitude ? Réponds avec suelo informarme por...",
+     "c": "Lis un titre positif aujourd'hui et raconte-le en espagnol en commençant par he leído que."
+    },
+    "it": {
+     "t": "Lessico di notizie e media",
+     "g": "Parla delle notizie e della loro provenienza.",
+     "p": [
+      "Parole chiave: el titular (titolo), la noticia (notizia), el periodista, la fuente (fonte).",
+      "TV e radio: el telediario, el informativo, la entrevista, el reportaje, en directo.",
+      "Riferisci ciò che hai sentito: según el periódico..., he leído que..., dicen que..."
+     ],
+     "q": "Come ti informi di solito? Rispondi con suelo informarme por...",
+     "c": "Leggi oggi un titolo positivo e raccontalo in spagnolo iniziando con he leído que."
+    },
+    "pt": {
+     "t": "Vocabulário de notícias e media",
+     "g": "Fala das notícias e de onde vêm.",
+     "p": [
+      "Palavras-chave: el titular (manchete), la noticia (notícia), el periodista, la fuente (fonte).",
+      "Televisão e rádio: el telediario, el informativo, la entrevista, el reportaje, en directo.",
+      "Conta o que ouviste: según el periódico..., he leído que..., dicen que..."
+     ],
+     "q": "Como te costumas informar? Responde com suelo informarme por...",
+     "c": "Lê hoje uma manchete positiva e conta-a em espanhol a começar por he leído que."
+    },
+    "pt_BR": {
+     "t": "Vocabulário de notícias e mídia",
+     "g": "Fale das notícias e de onde elas vêm.",
+     "p": [
+      "Palavras-chave: el titular (manchete), la noticia (notícia), el periodista, la fuente (fonte).",
+      "TV e rádio: el telediario, el informativo, la entrevista, el reportaje, en directo.",
+      "Conte o que ouviu: según el periódico..., he leído que..., dicen que..."
+     ],
+     "q": "Como você costuma se informar? Responda com suelo informarme por...",
+     "c": "Leia hoje uma manchete positiva e conte em espanhol começando com he leído que."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el titular",
+      "ex": "El titular de hoy habla de un nuevo parque."
+     },
+     {
+      "w": "la noticia",
+      "ex": "¿Has visto la noticia sobre el festival?"
+     },
+     {
+      "w": "el periodista",
+      "ex": "La periodista entrevistó al alcalde."
+     },
+     {
+      "w": "la fuente",
+      "ex": "Siempre compruebo la fuente de una noticia."
+     },
+     {
+      "w": "el telediario",
+      "ex": "Veo el telediario mientras ceno."
+     },
+     {
+      "w": "según",
+      "ex": "Según el periódico, mañana hará sol."
+     }
+    ],
+    "gram": "Transmitir información: según + fuente; he leído/oído que + indicativo; dicen que... Suelo + infinitivo para hábitos."
+   }
+  },
+  {
+   "d": 257,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Fact or opinion?",
+     "g": "Tell facts, opinions and exaggerations apart in Spanish.",
+     "p": [
+      "Facts can be checked: Madrid es la capital de España. Opinions start with creo que, me parece que.",
+      "Spot exaggeration: el mejor del mundo, nunca jamás, todo el mundo dice, increíble.",
+      "Question it politely: ¿de dónde sale ese dato?, eso es discutible, depende de cómo se mire."
+     ],
+     "q": "Say one fact and one opinion about your city. Can I guess which is which?",
+     "c": "Find an exaggerated phrase in an ad or post and rewrite it as a neutral fact in Spanish."
+    },
+    "de": {
+     "t": "Fakt oder Meinung?",
+     "g": "Unterscheide auf Spanisch Fakten, Meinungen und Übertreibungen.",
+     "p": [
+      "Fakten sind überprüfbar: Madrid es la capital de España. Meinungen: creo que, me parece que.",
+      "Übertreibungen erkennen: el mejor del mundo, nunca jamás, todo el mundo dice, increíble.",
+      "Höflich hinterfragen: ¿de dónde sale ese dato?, eso es discutible, depende de cómo se mire."
+     ],
+     "q": "Sag einen Fakt und eine Meinung über deine Stadt. Kann ich erraten, was was ist?",
+     "c": "Such eine übertriebene Formulierung in Werbung oder Post und schreib sie neutral auf Spanisch um."
+    },
+    "es": {
+     "t": "¿Hecho u opinión?",
+     "g": "Distingue hechos, opiniones y exageraciones en español.",
+     "p": [
+      "Los hechos se pueden comprobar: Madrid es la capital de España. Las opiniones: creo que, me parece que.",
+      "Detecta exageraciones: el mejor del mundo, nunca jamás, todo el mundo dice, increíble.",
+      "Cuestiona con educación: ¿de dónde sale ese dato?, eso es discutible, depende de cómo se mire."
+     ],
+     "q": "Dime un hecho y una opinión sobre tu ciudad. ¿Adivino cuál es cuál?",
+     "c": "Busca una frase exagerada en un anuncio o una publicación y reescríbela como hecho neutral."
+    },
+    "fr": {
+     "t": "Fait ou opinion ?",
+     "g": "Distingue en espagnol les faits, les opinions et les exagérations.",
+     "p": [
+      "Un fait se vérifie : Madrid es la capital de España. Une opinion : creo que, me parece que.",
+      "Repère l'exagération : el mejor del mundo, nunca jamás, todo el mundo dice, increíble.",
+      "Questionne poliment : ¿de dónde sale ese dato?, eso es discutible, depende de cómo se mire."
+     ],
+     "q": "Dis un fait et une opinion sur ta ville. Je devine lequel est lequel ?",
+     "c": "Trouve une phrase exagérée dans une pub ou un post et réécris-la en fait neutre en espagnol."
+    },
+    "it": {
+     "t": "Fatto o opinione?",
+     "g": "Distingui in spagnolo fatti, opinioni ed esagerazioni.",
+     "p": [
+      "I fatti si possono verificare: Madrid es la capital de España. Le opinioni: creo que, me parece que.",
+      "Riconosci le esagerazioni: el mejor del mundo, nunca jamás, todo el mundo dice, increíble.",
+      "Metti in dubbio con garbo: ¿de dónde sale ese dato?, eso es discutible, depende de cómo se mire."
+     ],
+     "q": "Dimmi un fatto e un'opinione sulla tua città. Indovino qual è quale?",
+     "c": "Trova una frase esagerata in una pubblicità o un post e riscrivila come fatto neutro in spagnolo."
+    },
+    "pt": {
+     "t": "Facto ou opinião?",
+     "g": "Distingue em espanhol factos, opiniões e exageros.",
+     "p": [
+      "Os factos podem verificar-se: Madrid es la capital de España. As opiniões: creo que, me parece que.",
+      "Deteta exageros: el mejor del mundo, nunca jamás, todo el mundo dice, increíble.",
+      "Questiona com educação: ¿de dónde sale ese dato?, eso es discutible, depende de cómo se mire."
+     ],
+     "q": "Diz-me um facto e uma opinião sobre a tua cidade. Adivinho qual é qual?",
+     "c": "Procura uma frase exagerada num anúncio ou publicação e reescreve-a como facto neutro em espanhol."
+    },
+    "pt_BR": {
+     "t": "Fato ou opinião?",
+     "g": "Diferencie em espanhol fatos, opiniões e exageros.",
+     "p": [
+      "Fatos podem ser verificados: Madrid es la capital de España. Opiniões: creo que, me parece que.",
+      "Perceba os exageros: el mejor del mundo, nunca jamás, todo el mundo dice, increíble.",
+      "Questione com educação: ¿de dónde sale ese dato?, eso es discutible, depende de cómo se mire."
+     ],
+     "q": "Me diga um fato e uma opinião sobre sua cidade. Eu adivinho qual é qual?",
+     "c": "Ache uma frase exagerada num anúncio ou post e reescreva como fato neutro em espanhol."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el hecho",
+      "ex": "Es un hecho que el agua hierve a cien grados."
+     },
+     {
+      "w": "la opinión",
+      "ex": "En mi opinión, el libro es mejor que la película."
+     },
+     {
+      "w": "el dato",
+      "ex": "¿De dónde sale ese dato?"
+     },
+     {
+      "w": "exagerar",
+      "ex": "No exageres, no todo el mundo piensa así."
+     },
+     {
+      "w": "eso es discutible",
+      "ex": "¿El mejor restaurante? Eso es discutible."
+     },
+     {
+      "w": "comprobar",
+      "ex": "Antes de compartirlo, comprueba si es verdad."
+     }
+    ],
+    "gram": "Creo que + indicativo; no creo que + subjuntivo. Es un hecho que + indicativo; es posible que + subjuntivo."
+   }
+  },
+  {
+   "d": 258,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Advertising language",
+     "g": "Understand how ads persuade and imitate their style.",
+     "p": [
+      "Slogans use imperatives: ¡Descúbrelo!, ¡Pruébalo ya!, ¡No te lo pierdas!",
+      "Urgency: oferta limitada, solo por hoy, hasta agotar existencias, últimas unidades.",
+      "Persuasive adjectives: exclusivo, único, auténtico, irresistible, de calidad."
+     ],
+     "q": "Which ad slogan do you remember? Try to translate it into catchy Spanish.",
+     "c": "Invent a slogan in Spanish for something you love, with an imperative and an adjective."
+    },
+    "de": {
+     "t": "Die Sprache der Werbung",
+     "g": "Verstehe, wie Werbung überzeugt, und ahme ihren Stil nach.",
+     "p": [
+      "Slogans nutzen den Imperativ: ¡Descúbrelo!, ¡Pruébalo ya!, ¡No te lo pierdas!",
+      "Dringlichkeit: oferta limitada, solo por hoy, hasta agotar existencias, últimas unidades.",
+      "Überzeugende Adjektive: exclusivo, único, auténtico, irresistible, de calidad."
+     ],
+     "q": "An welchen Werbeslogan erinnerst du dich? Versuch, ihn eingängig ins Spanische zu übertragen.",
+     "c": "Erfinde einen spanischen Slogan für etwas, das du liebst, mit Imperativ und Adjektiv."
+    },
+    "es": {
+     "t": "El lenguaje de la publicidad",
+     "g": "Entiende cómo convencen los anuncios e imita su estilo.",
+     "p": [
+      "Los eslóganes usan el imperativo: ¡Descúbrelo!, ¡Pruébalo ya!, ¡No te lo pierdas!",
+      "Urgencia: oferta limitada, solo por hoy, hasta agotar existencias, últimas unidades.",
+      "Adjetivos persuasivos: exclusivo, único, auténtico, irresistible, de calidad."
+     ],
+     "q": "¿Qué eslogan publicitario recuerdas? Intenta pasarlo a un español pegadizo.",
+     "c": "Inventa un eslogan en español para algo que te encanta, con un imperativo y un adjetivo."
+    },
+    "fr": {
+     "t": "Le langage de la publicité",
+     "g": "Comprends comment les pubs persuadent et imite leur style.",
+     "p": [
+      "Les slogans utilisent l'impératif : ¡Descúbrelo!, ¡Pruébalo ya!, ¡No te lo pierdas!",
+      "L'urgence : oferta limitada, solo por hoy, hasta agotar existencias, últimas unidades.",
+      "Adjectifs persuasifs : exclusivo, único, auténtico, irresistible, de calidad."
+     ],
+     "q": "De quel slogan te souviens-tu ? Essaie de le rendre accrocheur en espagnol.",
+     "c": "Invente un slogan en espagnol pour quelque chose que tu adores, avec un impératif et un adjectif."
+    },
+    "it": {
+     "t": "Il linguaggio della pubblicità",
+     "g": "Capisci come convincono le pubblicità e imitane lo stile.",
+     "p": [
+      "Gli slogan usano l'imperativo: ¡Descúbrelo!, ¡Pruébalo ya!, ¡No te lo pierdas!",
+      "Urgenza: oferta limitada, solo por hoy, hasta agotar existencias, últimas unidades.",
+      "Aggettivi persuasivi: exclusivo, único, auténtico, irresistible, de calidad."
+     ],
+     "q": "Quale slogan pubblicitario ricordi? Prova a renderlo orecchiabile in spagnolo.",
+     "c": "Inventa uno slogan in spagnolo per qualcosa che ami, con un imperativo e un aggettivo."
+    },
+    "pt": {
+     "t": "A linguagem da publicidade",
+     "g": "Percebe como os anúncios convencem e imita o seu estilo.",
+     "p": [
+      "Os slogans usam o imperativo: ¡Descúbrelo!, ¡Pruébalo ya!, ¡No te lo pierdas!",
+      "Urgência: oferta limitada, solo por hoy, hasta agotar existencias, últimas unidades.",
+      "Adjetivos persuasivos: exclusivo, único, auténtico, irresistible, de calidad."
+     ],
+     "q": "De que slogan publicitário te lembras? Tenta passá-lo para um espanhol que fique no ouvido.",
+     "c": "Inventa um slogan em espanhol para algo de que gostas muito, com um imperativo e um adjetivo."
+    },
+    "pt_BR": {
+     "t": "A linguagem da publicidade",
+     "g": "Entenda como os anúncios convencem e imite o estilo deles.",
+     "p": [
+      "Os slogans usam o imperativo: ¡Descúbrelo!, ¡Pruébalo ya!, ¡No te lo pierdas!",
+      "Urgência: oferta limitada, solo por hoy, hasta agotar existencias, últimas unidades.",
+      "Adjetivos persuasivos: exclusivo, único, auténtico, irresistible, de calidad."
+     ],
+     "q": "De qual slogan você se lembra? Tente passar para um espanhol que grude na cabeça.",
+     "c": "Invente um slogan em espanhol para algo que você adora, com um imperativo e um adjetivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el eslogan",
+      "ex": "Ese eslogan es muy fácil de recordar."
+     },
+     {
+      "w": "la oferta limitada",
+      "ex": "¡Oferta limitada: dos por uno!"
+     },
+     {
+      "w": "¡No te lo pierdas!",
+      "ex": "Gran concierto este sábado. ¡No te lo pierdas!"
+     },
+     {
+      "w": "hasta agotar existencias",
+      "ex": "Descuentos hasta agotar existencias."
+     },
+     {
+      "w": "irresistible",
+      "ex": "Un sabor irresistible para toda la familia."
+     },
+     {
+      "w": "el anuncio",
+      "ex": "Vi un anuncio muy original en la tele."
+     }
+    ],
+    "gram": "Imperativo con pronombres pegados: ¡Pruébalo!, ¡Descúbrelo! Negativo con subjuntivo: ¡No te lo pierdas!"
+   }
+  },
+  {
+   "d": 259,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Money vocabulary",
+     "g": "Talk about everyday money matters in simple Spanish.",
+     "p": [
+      "Ahorrar (save) vs gastar (spend): intento ahorrar un poco cada mes, gasto mucho en libros.",
+      "El presupuesto is your budget; permitirse means to afford: no me lo puedo permitir.",
+      "Payment phrases: pagar en efectivo, con tarjeta, a plazos; ¿cuánto cuesta?, está de oferta."
+     ],
+     "q": "What do you like to spend money on, and how do you save? Tell me in Spanish.",
+     "c": "Write your ideal weekend budget in Spanish using ahorrar, gastar and permitirse."
+    },
+    "de": {
+     "t": "Wortschatz Geld",
+     "g": "Sprich in einfachem Spanisch über alltägliche Geldthemen.",
+     "p": [
+      "Ahorrar (sparen) vs gastar (ausgeben): intento ahorrar un poco cada mes, gasto mucho en libros.",
+      "El presupuesto ist das Budget; permitirse heißt sich leisten: no me lo puedo permitir.",
+      "Bezahlen: pagar en efectivo, con tarjeta, a plazos; ¿cuánto cuesta?, está de oferta."
+     ],
+     "q": "Wofür gibst du gern Geld aus, und wie sparst du? Erzähl es mir auf Spanisch.",
+     "c": "Schreib dein ideales Wochenendbudget auf Spanisch mit ahorrar, gastar und permitirse."
+    },
+    "es": {
+     "t": "Vocabulario del dinero",
+     "g": "Habla de temas de dinero cotidianos en un español sencillo.",
+     "p": [
+      "Ahorrar frente a gastar: intento ahorrar un poco cada mes, gasto mucho en libros.",
+      "El presupuesto es el dinero planificado; permitirse es poder pagarlo: no me lo puedo permitir.",
+      "Para pagar: en efectivo, con tarjeta, a plazos; ¿cuánto cuesta?, está de oferta."
+     ],
+     "q": "¿En qué te gusta gastar dinero y cómo ahorras? Cuéntamelo.",
+     "c": "Escribe tu presupuesto ideal para un fin de semana con ahorrar, gastar y permitirse."
+    },
+    "fr": {
+     "t": "Vocabulaire de l'argent",
+     "g": "Parle d'argent au quotidien dans un espagnol simple.",
+     "p": [
+      "Ahorrar (économiser) vs gastar (dépenser) : intento ahorrar un poco cada mes, gasto mucho en libros.",
+      "El presupuesto est le budget ; permitirse, c'est pouvoir se l'offrir : no me lo puedo permitir.",
+      "Pour payer : en efectivo, con tarjeta, a plazos ; ¿cuánto cuesta?, está de oferta."
+     ],
+     "q": "Pour quoi aimes-tu dépenser, et comment économises-tu ? Dis-le-moi en espagnol.",
+     "c": "Écris ton budget idéal pour un week-end en espagnol avec ahorrar, gastar et permitirse."
+    },
+    "it": {
+     "t": "Lessico del denaro",
+     "g": "Parla di soldi nella vita quotidiana in uno spagnolo semplice.",
+     "p": [
+      "Ahorrar (risparmiare) vs gastar (spendere): intento ahorrar un poco cada mes, gasto mucho en libros.",
+      "El presupuesto è il budget; permitirse significa potersi permettere: no me lo puedo permitir.",
+      "Per pagare: en efectivo, con tarjeta, a plazos; ¿cuánto cuesta?, está de oferta."
+     ],
+     "q": "Per cosa ti piace spendere e come risparmi? Raccontamelo in spagnolo.",
+     "c": "Scrivi il tuo budget ideale per un weekend in spagnolo con ahorrar, gastar e permitirse."
+    },
+    "pt": {
+     "t": "Vocabulário do dinheiro",
+     "g": "Fala de dinheiro no dia a dia num espanhol simples.",
+     "p": [
+      "Ahorrar (poupar) vs gastar (gastar): intento ahorrar un poco cada mes, gasto mucho en libros.",
+      "El presupuesto é o orçamento; permitirse é poder pagar: no me lo puedo permitir.",
+      "Para pagar: en efectivo, con tarjeta, a plazos; ¿cuánto cuesta?, está de oferta."
+     ],
+     "q": "Em que gostas de gastar dinheiro e como poupas? Conta-me em espanhol.",
+     "c": "Escreve o teu orçamento ideal para um fim de semana com ahorrar, gastar e permitirse."
+    },
+    "pt_BR": {
+     "t": "Vocabulário de dinheiro",
+     "g": "Fale de dinheiro no dia a dia num espanhol simples.",
+     "p": [
+      "Ahorrar (economizar) vs gastar (gastar): intento ahorrar un poco cada mes, gasto mucho en libros.",
+      "El presupuesto é o orçamento; permitirse é poder bancar: no me lo puedo permitir.",
+      "Para pagar: en efectivo, con tarjeta, a plazos; ¿cuánto cuesta?, está de oferta."
+     ],
+     "q": "Com o que você gosta de gastar e como economiza? Me conte em espanhol.",
+     "c": "Escreva seu orçamento ideal para um fim de semana com ahorrar, gastar e permitirse."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ahorrar",
+      "ex": "Estoy ahorrando para un viaje a México."
+     },
+     {
+      "w": "gastar",
+      "ex": "Este mes he gastado demasiado en ropa."
+     },
+     {
+      "w": "el presupuesto",
+      "ex": "Tenemos un presupuesto pequeño para la fiesta."
+     },
+     {
+      "w": "permitirse",
+      "ex": "Ahora no me puedo permitir un coche nuevo."
+     },
+     {
+      "w": "en efectivo",
+      "ex": "¿Puedo pagar en efectivo?"
+     },
+     {
+      "w": "está de oferta",
+      "ex": "Esta chaqueta está de oferta."
+     }
+    ],
+    "gram": "Permitirse con pronombre: no me lo puedo permitir / no puedo permitírmelo. Gastar en + cosa: gasto en libros."
+   }
+  },
+  {
+   "d": 260,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Making suggestions",
+     "g": "Suggest ideas to a group in a friendly way.",
+     "p": [
+      "Questions: ¿Por qué no vamos al cine? ¿Qué tal si cenamos fuera?",
+      "Conditional: podríamos ir a la playa; sería buena idea salir temprano.",
+      "Respond: ¡Buena idea!, me parece bien, prefiero otra cosa, ¿y si mejor...?"
+     ],
+     "q": "We have a free Saturday. What do you suggest? Use qué tal si or podríamos.",
+     "c": "Plan a group outing in Spanish with three suggestions and one polite alternative."
+    },
+    "de": {
+     "t": "Vorschläge machen",
+     "g": "Mach einer Gruppe freundlich Vorschläge.",
+     "p": [
+      "Fragen: ¿Por qué no vamos al cine? ¿Qué tal si cenamos fuera?",
+      "Konditional: podríamos ir a la playa; sería buena idea salir temprano.",
+      "Reagieren: ¡Buena idea!, me parece bien, prefiero otra cosa, ¿y si mejor...?"
+     ],
+     "q": "Wir haben einen freien Samstag. Was schlägst du vor? Nutze qué tal si oder podríamos.",
+     "c": "Plane einen Gruppenausflug auf Spanisch mit drei Vorschlägen und einer höflichen Alternative."
+    },
+    "es": {
+     "t": "Hacer sugerencias",
+     "g": "Propón ideas a un grupo de forma amable.",
+     "p": [
+      "Preguntas: ¿Por qué no vamos al cine? ¿Qué tal si cenamos fuera?",
+      "Condicional: podríamos ir a la playa; sería buena idea salir temprano.",
+      "Responde: ¡Buena idea!, me parece bien, prefiero otra cosa, ¿y si mejor...?"
+     ],
+     "q": "Tenemos un sábado libre. ¿Qué propones? Usa qué tal si o podríamos.",
+     "c": "Planea una salida en grupo con tres sugerencias y una alternativa amable."
+    },
+    "fr": {
+     "t": "Faire des suggestions",
+     "g": "Propose des idées à un groupe avec gentillesse.",
+     "p": [
+      "Questions : ¿Por qué no vamos al cine? ¿Qué tal si cenamos fuera?",
+      "Conditionnel : podríamos ir a la playa ; sería buena idea salir temprano.",
+      "Répondre : ¡Buena idea!, me parece bien, prefiero otra cosa, ¿y si mejor...?"
+     ],
+     "q": "On a un samedi libre. Que proposes-tu ? Utilise qué tal si ou podríamos.",
+     "c": "Organise une sortie de groupe en espagnol avec trois suggestions et une alternative polie."
+    },
+    "it": {
+     "t": "Fare proposte",
+     "g": "Proponi idee a un gruppo in modo cordiale.",
+     "p": [
+      "Domande: ¿Por qué no vamos al cine? ¿Qué tal si cenamos fuera?",
+      "Condizionale: podríamos ir a la playa; sería buena idea salir temprano.",
+      "Rispondi: ¡Buena idea!, me parece bien, prefiero otra cosa, ¿y si mejor...?"
+     ],
+     "q": "Abbiamo un sabato libero. Cosa proponi? Usa qué tal si o podríamos.",
+     "c": "Organizza un'uscita di gruppo in spagnolo con tre proposte e un'alternativa gentile."
+    },
+    "pt": {
+     "t": "Fazer sugestões",
+     "g": "Propõe ideias a um grupo de forma simpática.",
+     "p": [
+      "Perguntas: ¿Por qué no vamos al cine? ¿Qué tal si cenamos fuera?",
+      "Condicional: podríamos ir a la playa; sería buena idea salir temprano.",
+      "Responde: ¡Buena idea!, me parece bien, prefiero otra cosa, ¿y si mejor...?"
+     ],
+     "q": "Temos um sábado livre. O que propões? Usa qué tal si ou podríamos.",
+     "c": "Planeia uma saída de grupo em espanhol com três sugestões e uma alternativa simpática."
+    },
+    "pt_BR": {
+     "t": "Fazer sugestões",
+     "g": "Proponha ideias a um grupo de forma simpática.",
+     "p": [
+      "Perguntas: ¿Por qué no vamos al cine? ¿Qué tal si cenamos fuera?",
+      "Condicional: podríamos ir a la playa; sería buena idea salir temprano.",
+      "Responda: ¡Buena idea!, me parece bien, prefiero otra cosa, ¿y si mejor...?"
+     ],
+     "q": "Temos um sábado livre. O que você sugere? Use qué tal si ou podríamos.",
+     "c": "Planeje um passeio em grupo em espanhol com três sugestões e uma alternativa gentil."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "¿Por qué no...?",
+      "ex": "¿Por qué no hacemos una cena en casa?"
+     },
+     {
+      "w": "¿Qué tal si...?",
+      "ex": "¿Qué tal si vamos al museo el domingo?"
+     },
+     {
+      "w": "podríamos",
+      "ex": "Podríamos alquilar bicis y recorrer la costa."
+     },
+     {
+      "w": "sería buena idea",
+      "ex": "Sería buena idea reservar mesa antes."
+     },
+     {
+      "w": "me parece bien",
+      "ex": "¿A las ocho? Me parece bien."
+     },
+     {
+      "w": "¿y si mejor...?",
+      "ex": "¿Y si mejor quedamos por la mañana?"
+     }
+    ],
+    "gram": "Sugerir: ¿Por qué no + presente?, ¿Qué tal si + presente?, podríamos + infinitivo, sería buena idea + infinitivo."
+   }
+  }
+ ]
+}

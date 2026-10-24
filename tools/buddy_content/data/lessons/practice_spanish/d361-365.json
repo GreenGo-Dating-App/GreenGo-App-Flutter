@@ -1,0 +1,565 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 361,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Your Spanish journey",
+     "g": "Look back on your progress and set your next goals in Spanish.",
+     "p": [
+      "Remember the start: from ¡Hola! and buenos días to debating, presenting and telling stories.",
+      "Name your favourite words and what you can do now: Ahora soy capaz de...",
+      "Set goals with the future and para que + subjunctive: Seguiré leyendo para que..."
+     ],
+     "q": "What is your favourite Spanish word from this year, and why?",
+     "c": "Write three sentences: one with antes no podía, one with ahora soy capaz de and one goal."
+    },
+    "de": {
+     "t": "Deine Spanisch-Reise",
+     "g": "Blick auf deine Fortschritte zurück und setz dir neue Ziele auf Spanisch.",
+     "p": [
+      "Erinnere dich an den Anfang: von ¡Hola! und buenos días bis zu Debatten, Vorträgen und Geschichten.",
+      "Nenne deine Lieblingswörter und was du jetzt kannst: Ahora soy capaz de...",
+      "Ziele mit Futur und para que + Subjuntivo: Seguiré leyendo para que..."
+     ],
+     "q": "Was ist dein Lieblingswort auf Spanisch aus diesem Jahr, und warum?",
+     "c": "Schreib drei Sätze: einen mit antes no podía, einen mit ahora soy capaz de und ein Ziel."
+    },
+    "es": {
+     "t": "Tu viaje con el español",
+     "g": "Mira atrás para ver tu progreso y fija tus próximas metas en español.",
+     "p": [
+      "Recuerda el inicio: de ¡Hola! y buenos días a debatir, presentar y contar historias.",
+      "Nombra tus palabras favoritas y lo que ya sabes hacer: Ahora soy capaz de...",
+      "Fija metas con futuro y para que + subjuntivo: Seguiré leyendo para que..."
+     ],
+     "q": "¿Cuál es tu palabra favorita en español de este año y por qué?",
+     "c": "Escribe tres frases: una con antes no podía, otra con ahora soy capaz de y una meta."
+    },
+    "fr": {
+     "t": "Ton voyage en espagnol",
+     "g": "Regarde tes progrès et fixe tes prochains objectifs en espagnol.",
+     "p": [
+      "Souviens-toi du début : de ¡Hola! et buenos días jusqu'aux débats, exposés et récits.",
+      "Cite tes mots préférés et ce que tu sais faire : Ahora soy capaz de...",
+      "Fixe des objectifs avec le futur et para que + subjonctif : Seguiré leyendo para que..."
+     ],
+     "q": "Quel est ton mot espagnol préféré de cette année, et pourquoi ?",
+     "c": "Écris trois phrases : une avec antes no podía, une avec ahora soy capaz de et un objectif."
+    },
+    "it": {
+     "t": "Il tuo viaggio nello spagnolo",
+     "g": "Guarda i tuoi progressi e fissa i prossimi obiettivi in spagnolo.",
+     "p": [
+      "Ricorda l'inizio: da ¡Hola! e buenos días fino a dibattiti, presentazioni e racconti.",
+      "Indica le tue parole preferite e cosa sai fare ora: Ahora soy capaz de...",
+      "Fissa obiettivi con futuro e para que + congiuntivo: Seguiré leyendo para que..."
+     ],
+     "q": "Qual è la tua parola spagnola preferita di quest'anno, e perché?",
+     "c": "Scrivi tre frasi: una con antes no podía, una con ahora soy capaz de e un obiettivo."
+    },
+    "pt": {
+     "t": "A tua viagem com o espanhol",
+     "g": "Olha para trás, vê o teu progresso e define as próximas metas em espanhol.",
+     "p": [
+      "Lembra o início: de ¡Hola! e buenos días até debater, apresentar e contar histórias.",
+      "Diz as tuas palavras favoritas e o que já sabes fazer: Ahora soy capaz de...",
+      "Define metas com futuro e para que + conjuntivo: Seguiré leyendo para que..."
+     ],
+     "q": "Qual é a tua palavra favorita em espanhol deste ano, e porquê?",
+     "c": "Escreve três frases: uma com antes no podía, outra com ahora soy capaz de e uma meta."
+    },
+    "pt_BR": {
+     "t": "Sua jornada com o espanhol",
+     "g": "Olhe para trás, veja seu progresso e defina as próximas metas em espanhol.",
+     "p": [
+      "Lembre o começo: de ¡Hola! e buenos días até debater, apresentar e contar histórias.",
+      "Diga suas palavras favoritas e o que você já sabe fazer: Ahora soy capaz de...",
+      "Defina metas com futuro e para que + subjuntivo: Seguiré leyendo para que..."
+     ],
+     "q": "Qual é a sua palavra favorita em espanhol deste ano, e por quê?",
+     "c": "Escreva três frases: uma com antes no podía, outra com ahora soy capaz de e uma meta."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el progreso",
+      "ex": "Estoy muy contento con mi progreso."
+     },
+     {
+      "w": "antes no podía",
+      "ex": "Antes no podía pedir un café; ahora debato en español."
+     },
+     {
+      "w": "ser capaz de",
+      "ex": "Ahora soy capaz de ver series sin subtítulos."
+     },
+     {
+      "w": "la meta",
+      "ex": "Mi próxima meta es leer una novela entera."
+     },
+     {
+      "w": "seguir + gerundio",
+      "ex": "Seguiré practicando cada día."
+     },
+     {
+      "w": "para que",
+      "ex": "Hablo con nativos para que mi acento mejore."
+     }
+    ],
+    "gram": "Contraste temporal: imperfecto (antes no podía) frente a presente (ahora soy capaz); para que + subjuntivo para finalidad."
+   }
+  },
+  {
+   "d": 362,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Spanish etiquette in depth",
+     "g": "Handle social customs in the Spanish-speaking world with confidence.",
+     "p": [
+      "Tú or usted at work: follow the other person; in Spain tú spreads fast, in parts of Latin America usted lasts longer.",
+      "Punctuality and invitations: social plans are often relaxed; work meetings usually start on time.",
+      "At the table: wait for ¡Que aproveche! or buen provecho, and enjoy la sobremesa, the chat after a meal."
+     ],
+     "q": "What social custom from your culture might surprise a Spanish speaker?",
+     "c": "Write how you would accept an invitation to dinner politely and what you would bring."
+    },
+    "de": {
+     "t": "Spanische Umgangsformen im Detail",
+     "g": "Bewege dich sicher durch die sozialen Bräuche der spanischsprachigen Welt.",
+     "p": [
+      "Tú oder usted im Job: richte dich nach dem Gegenüber; in Spanien duzt man schnell, in Teilen Lateinamerikas bleibt usted länger.",
+      "Pünktlichkeit und Einladungen: private Treffen sind oft locker, Besprechungen beginnen meist pünktlich.",
+      "Bei Tisch: auf ¡Que aproveche! oder buen provecho warten und die sobremesa genießen, das Plaudern nach dem Essen."
+     ],
+     "q": "Welcher Brauch aus deiner Kultur könnte Spanischsprechende überraschen?",
+     "c": "Schreib, wie du eine Einladung zum Abendessen höflich annimmst und was du mitbringen würdest."
+    },
+    "es": {
+     "t": "Etiqueta hispana a fondo",
+     "g": "Desenvuélvete con seguridad en las costumbres sociales del mundo hispano.",
+     "p": [
+      "Tú o usted en el trabajo: sigue al otro; en España el tú llega rápido, en partes de América el usted dura más.",
+      "Puntualidad e invitaciones: los planes sociales suelen ser flexibles; las reuniones de trabajo, puntuales.",
+      "En la mesa: espera el ¡Que aproveche! o buen provecho y disfruta de la sobremesa."
+     ],
+     "q": "¿Qué costumbre de tu cultura podría sorprender a un hispanohablante?",
+     "c": "Escribe cómo aceptarías con cortesía una invitación a cenar y qué llevarías."
+    },
+    "fr": {
+     "t": "L'étiquette hispanique en profondeur",
+     "g": "Navigue avec assurance dans les usages sociaux du monde hispanophone.",
+     "p": [
+      "Tú ou usted au travail : suis l'autre ; en Espagne le tú arrive vite, en Amérique latine usted dure parfois plus.",
+      "Ponctualité et invitations : les sorties sont souvent souples ; les réunions de travail commencent à l'heure.",
+      "À table : attends le ¡Que aproveche! ou buen provecho et profite de la sobremesa, la discussion d'après-repas."
+     ],
+     "q": "Quelle coutume de ta culture pourrait surprendre un hispanophone ?",
+     "c": "Écris comment tu accepterais poliment une invitation à dîner et ce que tu apporterais."
+    },
+    "it": {
+     "t": "Galateo ispanico in profondità",
+     "g": "Muoviti con sicurezza tra le usanze sociali del mondo ispanico.",
+     "p": [
+      "Tú o usted al lavoro: segui l'altro; in Spagna il tú arriva presto, in parte dell'America Latina usted dura di più.",
+      "Puntualità e inviti: i piani sociali sono spesso flessibili; le riunioni di lavoro iniziano puntuali.",
+      "A tavola: aspetta il ¡Que aproveche! o buen provecho e goditi la sobremesa, le chiacchiere dopo il pasto."
+     ],
+     "q": "Quale usanza della tua cultura potrebbe sorprendere un ispanofono?",
+     "c": "Scrivi come accetteresti con garbo un invito a cena e cosa porteresti."
+    },
+    "pt": {
+     "t": "Etiqueta hispânica a fundo",
+     "g": "Move-te com confiança nos costumes sociais do mundo hispânico.",
+     "p": [
+      "Tú ou usted no trabalho: segue o outro; em Espanha o tú chega depressa, em partes da América usted dura mais.",
+      "Pontualidade e convites: os planos sociais são muitas vezes flexíveis; as reuniões de trabalho, pontuais.",
+      "À mesa: espera pelo ¡Que aproveche! ou buen provecho e aproveita a sobremesa, a conversa depois da refeição."
+     ],
+     "q": "Que costume da tua cultura poderia surpreender um falante de espanhol?",
+     "c": "Escreve como aceitarias com cortesia um convite para jantar e o que levarias."
+    },
+    "pt_BR": {
+     "t": "Etiqueta hispânica a fundo",
+     "g": "Circule com confiança pelos costumes sociais do mundo hispânico.",
+     "p": [
+      "Tú ou usted no trabalho: siga o outro; na Espanha o tú chega rápido, em partes da América usted dura mais.",
+      "Pontualidade e convites: planos sociais costumam ser flexíveis; reuniões de trabalho, pontuais.",
+      "À mesa: espere o ¡Que aproveche! ou buen provecho e curta a sobremesa, o papo depois da refeição."
+     ],
+     "q": "Que costume da sua cultura poderia surpreender um falante de espanhol?",
+     "c": "Escreva como você aceitaria com educação um convite para jantar e o que levaria."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "tutear",
+      "ex": "¿Nos tuteamos? Claro, llámame Marta."
+     },
+     {
+      "w": "tratar de usted",
+      "ex": "Al principio, trata de usted al cliente."
+     },
+     {
+      "w": "¡que aproveche!",
+      "ex": "¡Que aproveche! — Gracias, igualmente."
+     },
+     {
+      "w": "la sobremesa",
+      "ex": "La sobremesa duró más que la comida."
+     },
+     {
+      "w": "no hacía falta",
+      "ex": "¿Flores? ¡Muchas gracias, no hacía falta!"
+     },
+     {
+      "w": "estar como en casa",
+      "ex": "Gracias, aquí me siento como en casa."
+     }
+    ],
+    "gram": "Tutear / tratar de usted; fórmulas fijas con que + subjuntivo: ¡que aproveche!, ¡que lo pases bien!, ¡que te mejores!"
+   }
+  },
+  {
+   "d": 363,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Living in a Spanish-speaking country",
+     "g": "Understand daily habits and social codes that surprise newcomers.",
+     "p": [
+      "Schedules: in Spain lunch is often around 2 pm and dinner around 9 or 10 pm.",
+      "Greetings: two kisses on the cheek are common in Spain; one in many Latin American countries.",
+      "Social life happens outside: plazas, terraces, long walks (el paseo) and family weekends."
+     ],
+     "q": "Which daily habit would be easiest for you to adopt, and which the hardest?",
+     "c": "Describe your ideal day in a Spanish-speaking city with times for meals and activities."
+    },
+    "de": {
+     "t": "Leben in einem spanischsprachigen Land",
+     "g": "Verstehe Alltagsgewohnheiten und soziale Codes, die Neuankömmlinge überraschen.",
+     "p": [
+      "Zeiten: In Spanien isst man oft gegen 14 Uhr zu Mittag und gegen 21 oder 22 Uhr zu Abend.",
+      "Begrüßung: in Spanien oft zwei Wangenküsse, in vielen Ländern Lateinamerikas einer.",
+      "Das soziale Leben findet draußen statt: Plätze, Terrassen, lange Spaziergänge (el paseo), Familienwochenenden."
+     ],
+     "q": "Welche Gewohnheit würdest du am leichtesten übernehmen, welche am schwersten?",
+     "c": "Beschreibe deinen idealen Tag in einer spanischsprachigen Stadt mit Uhrzeiten für Mahlzeiten und Aktivitäten."
+    },
+    "es": {
+     "t": "Vivir en un país hispanohablante",
+     "g": "Entiende los hábitos y códigos sociales que sorprenden a los recién llegados.",
+     "p": [
+      "Horarios: en España se suele comer hacia las dos y cenar hacia las nueve o las diez.",
+      "Saludos: en España son habituales dos besos; en muchos países de América, uno.",
+      "La vida social se hace en la calle: plazas, terrazas, el paseo y fines de semana en familia."
+     ],
+     "q": "¿Qué costumbre te costaría menos adoptar y cuál más?",
+     "c": "Describe tu día ideal en una ciudad hispanohablante con horas para comidas y actividades."
+    },
+    "fr": {
+     "t": "Vivre dans un pays hispanophone",
+     "g": "Comprends les habitudes et codes sociaux qui surprennent les nouveaux arrivants.",
+     "p": [
+      "Horaires : en Espagne, on déjeune souvent vers 14 h et on dîne vers 21 h ou 22 h.",
+      "Salutations : deux bises sont courantes en Espagne ; une seule dans beaucoup de pays d'Amérique latine.",
+      "La vie sociale se passe dehors : places, terrasses, longue promenade (el paseo) et week-ends en famille."
+     ],
+     "q": "Quelle habitude te serait la plus facile à adopter, et laquelle la plus difficile ?",
+     "c": "Décris ta journée idéale dans une ville hispanophone avec les heures des repas et des activités."
+    },
+    "it": {
+     "t": "Vivere in un paese ispanofono",
+     "g": "Capisci abitudini e codici sociali che sorprendono chi arriva.",
+     "p": [
+      "Orari: in Spagna si pranza spesso verso le 14 e si cena verso le 21 o le 22.",
+      "Saluti: in Spagna sono comuni due baci sulle guance; in molti paesi latinoamericani, uno.",
+      "La vita sociale si fa fuori: piazze, terrazze, la passeggiata (el paseo) e weekend in famiglia."
+     ],
+     "q": "Quale abitudine ti sarebbe più facile adottare, e quale più difficile?",
+     "c": "Descrivi la tua giornata ideale in una città ispanofona con gli orari dei pasti e delle attività."
+    },
+    "pt": {
+     "t": "Viver num país hispanófono",
+     "g": "Percebe hábitos e códigos sociais que surpreendem quem chega.",
+     "p": [
+      "Horários: em Espanha almoça-se muitas vezes por volta das duas e janta-se pelas nove ou dez.",
+      "Cumprimentos: em Espanha são habituais dois beijinhos; em muitos países da América Latina, um.",
+      "A vida social faz-se na rua: praças, esplanadas, o passeio (el paseo) e fins de semana em família."
+     ],
+     "q": "Que hábito te custaria menos adotar e qual te custaria mais?",
+     "c": "Descreve o teu dia ideal numa cidade hispanófona com horas para refeições e atividades."
+    },
+    "pt_BR": {
+     "t": "Morar num país de língua espanhola",
+     "g": "Entenda hábitos e códigos sociais que surpreendem quem chega.",
+     "p": [
+      "Horários: na Espanha costuma-se almoçar por volta das duas e jantar pelas nove ou dez da noite.",
+      "Cumprimentos: na Espanha são comuns dois beijinhos; em muitos países da América Latina, um.",
+      "A vida social acontece na rua: praças, terraços, o passeio (el paseo) e fins de semana em família."
+     ],
+     "q": "Que hábito seria mais fácil para você adotar, e qual o mais difícil?",
+     "c": "Descreva seu dia ideal numa cidade de língua espanhola com horários para refeições e atividades."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el horario",
+      "ex": "El horario de comidas en España es más tardío."
+     },
+     {
+      "w": "dar dos besos",
+      "ex": "En Madrid me presentaron a todos y di dos besos."
+     },
+     {
+      "w": "la terraza",
+      "ex": "Tomamos algo en una terraza de la plaza."
+     },
+     {
+      "w": "dar un paseo",
+      "ex": "Después de cenar damos un paseo por el centro."
+     },
+     {
+      "w": "el recién llegado",
+      "ex": "Para un recién llegado, todo es una aventura."
+     },
+     {
+      "w": "acostumbrarse a",
+      "ex": "Ya me he acostumbrado a cenar tarde."
+     }
+    ],
+    "gram": "Costumbres: se impersonal (se cena tarde), soler + infinitivo (suelen comer a las dos) y acostumbrarse a + infinitivo."
+   }
+  },
+  {
+   "d": 364,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Fluency sprint: three minutes",
+     "g": "Speak for three minutes on a familiar topic with B2 connectors.",
+     "p": [
+      "Pick a topic you love and plan three parts: introduction, development, conclusion.",
+      "Use a range of connectors: para empezar, además, sin embargo, por ejemplo, de hecho, en definitiva.",
+      "Mix tenses and moods: a past anecdote, a present opinion and a future wish with ojalá."
+     ],
+     "q": "Which topic could you talk about for three minutes right now?",
+     "c": "Record a three-minute talk on a topic you love and count how many connectors you used."
+    },
+    "de": {
+     "t": "Flüssigkeits-Sprint: drei Minuten",
+     "g": "Sprich drei Minuten über ein vertrautes Thema mit B2-Konnektoren.",
+     "p": [
+      "Wähl ein Lieblingsthema und plane drei Teile: Einleitung, Hauptteil, Schluss.",
+      "Nutze viele Konnektoren: para empezar, además, sin embargo, por ejemplo, de hecho, en definitiva.",
+      "Mische Zeiten und Modi: eine Anekdote, eine Meinung im Präsens und einen Wunsch mit ojalá."
+     ],
+     "q": "Über welches Thema könntest du jetzt sofort drei Minuten sprechen?",
+     "c": "Nimm einen Drei-Minuten-Vortrag über ein Lieblingsthema auf und zähl deine Konnektoren."
+    },
+    "es": {
+     "t": "Sprint de fluidez: tres minutos",
+     "g": "Habla tres minutos sobre un tema conocido con conectores de nivel B2.",
+     "p": [
+      "Elige un tema que te encante y planifica tres partes: introducción, desarrollo y conclusión.",
+      "Usa conectores variados: para empezar, además, sin embargo, por ejemplo, de hecho, en definitiva.",
+      "Mezcla tiempos y modos: una anécdota pasada, una opinión presente y un deseo con ojalá."
+     ],
+     "q": "¿Sobre qué tema podrías hablar tres minutos ahora mismo?",
+     "c": "Grábate tres minutos hablando de un tema que te encante y cuenta cuántos conectores usaste."
+    },
+    "fr": {
+     "t": "Sprint de fluidité : trois minutes",
+     "g": "Parle trois minutes sur un sujet familier avec des connecteurs B2.",
+     "p": [
+      "Choisis un sujet que tu adores et prévois trois parties : introduction, développement, conclusion.",
+      "Varie les connecteurs : para empezar, además, sin embargo, por ejemplo, de hecho, en definitiva.",
+      "Mélange temps et modes : une anecdote passée, une opinion présente et un souhait avec ojalá."
+     ],
+     "q": "Sur quel sujet pourrais-tu parler trois minutes tout de suite ?",
+     "c": "Enregistre-toi trois minutes sur un sujet que tu adores et compte tes connecteurs."
+    },
+    "it": {
+     "t": "Sprint di scioltezza: tre minuti",
+     "g": "Parla tre minuti su un tema familiare con connettivi B2.",
+     "p": [
+      "Scegli un tema che ami e pianifica tre parti: introduzione, sviluppo, conclusione.",
+      "Usa connettivi vari: para empezar, además, sin embargo, por ejemplo, de hecho, en definitiva.",
+      "Mescola tempi e modi: un aneddoto passato, un'opinione presente e un desiderio con ojalá."
+     ],
+     "q": "Di quale tema potresti parlare tre minuti adesso?",
+     "c": "Registrati tre minuti su un tema che ami e conta quanti connettivi hai usato."
+    },
+    "pt": {
+     "t": "Sprint de fluência: três minutos",
+     "g": "Fala três minutos sobre um tema conhecido com conectores de nível B2.",
+     "p": [
+      "Escolhe um tema de que gostes muito e planeia três partes: introdução, desenvolvimento e conclusão.",
+      "Usa conectores variados: para empezar, además, sin embargo, por ejemplo, de hecho, en definitiva.",
+      "Mistura tempos e modos: uma história passada, uma opinião no presente e um desejo com ojalá."
+     ],
+     "q": "Sobre que tema conseguirias falar três minutos agora mesmo?",
+     "c": "Grava-te três minutos a falar de um tema de que gostes e conta quantos conectores usaste."
+    },
+    "pt_BR": {
+     "t": "Sprint de fluência: três minutos",
+     "g": "Fale três minutos sobre um tema conhecido com conectores de nível B2.",
+     "p": [
+      "Escolha um tema que você adora e planeje três partes: introdução, desenvolvimento e conclusão.",
+      "Use conectores variados: para empezar, además, sin embargo, por ejemplo, de hecho, en definitiva.",
+      "Misture tempos e modos: uma história passada, uma opinião no presente e um desejo com ojalá."
+     ],
+     "q": "Sobre que tema você conseguiria falar três minutos agora mesmo?",
+     "c": "Grave-se três minutos falando de um tema que você adora e conte quantos conectores usou."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "de hecho",
+      "ex": "De hecho, empecé a cocinar por casualidad."
+     },
+     {
+      "w": "en definitiva",
+      "ex": "En definitiva, cocinar me hace feliz."
+     },
+     {
+      "w": "a raíz de",
+      "ex": "A raíz de aquel viaje, descubrí la cocina peruana."
+     },
+     {
+      "w": "lo que más me gusta es",
+      "ex": "Lo que más me gusta es compartir la comida."
+     },
+     {
+      "w": "ojalá",
+      "ex": "Ojalá pueda abrir un pequeño restaurante algún día."
+     },
+     {
+      "w": "por si fuera poco",
+      "ex": "Por si fuera poco, es una forma de relajarme."
+     }
+    ],
+    "gram": "Fluidez B2: conectores de adición (además, por si fuera poco), causa (a raíz de) y cierre (en definitiva) + variedad de tiempos."
+   }
+  },
+  {
+   "d": 365,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Review: B2 complete, ¡enhorabuena!",
+     "g": "Celebrate a full year of Spanish and plan what comes next.",
+     "p": [
+      "Enhorabuena: you went from A1 greetings to B2 debates, reports, idioms and culture in 365 days.",
+      "Key B2 tools: subjunctive, conditionals, formal register, connectors, idioms and regional varieties.",
+      "Next steps: read a novel, watch series without subtitles, try a DELE B2 exam or start C1."
+     ],
+     "q": "Looking back on this year, what are you proudest of in your Spanish?",
+     "c": "Write a short letter to yourself in Spanish: what you achieved, your favourite moment and your next goal."
+    },
+    "de": {
+     "t": "Wiederholung: B2 geschafft, ¡enhorabuena!",
+     "g": "Feiere ein ganzes Jahr Spanisch und plane, wie es weitergeht.",
+     "p": [
+      "Enhorabuena: In 365 Tagen bist du von A1-Grüßen zu B2-Debatten, Berichten, Redewendungen und Kultur gekommen.",
+      "Wichtige B2-Werkzeuge: Subjuntivo, Bedingungssätze, formelles Register, Konnektoren, Redewendungen und Varietäten.",
+      "Nächste Schritte: einen Roman lesen, Serien ohne Untertitel schauen, DELE B2 versuchen oder mit C1 beginnen."
+     ],
+     "q": "Worauf bist du bei deinem Spanisch in diesem Jahr am meisten stolz?",
+     "c": "Schreib dir selbst einen kurzen Brief auf Spanisch: was du erreicht hast, dein schönster Moment, dein nächstes Ziel."
+    },
+    "es": {
+     "t": "Repaso: ¡B2 completado, enhorabuena!",
+     "g": "Celebra un año entero de español y planifica lo que viene.",
+     "p": [
+      "Enhorabuena: en 365 días has pasado de los saludos de A1 a debates, informes, modismos y cultura de B2.",
+      "Herramientas clave de B2: subjuntivo, condicionales, registro formal, conectores, modismos y variedades.",
+      "Próximos pasos: leer una novela, ver series sin subtítulos, presentarte al DELE B2 o empezar el C1."
+     ],
+     "q": "Mirando atrás, ¿de qué te sientes más orgulloso de tu español este año?",
+     "c": "Escríbete una breve carta en español: lo que has logrado, tu momento favorito y tu próxima meta."
+    },
+    "fr": {
+     "t": "Révision : B2 terminé, ¡enhorabuena !",
+     "g": "Fête une année entière d'espagnol et prépare la suite.",
+     "p": [
+      "Enhorabuena : en 365 jours, tu es passé des salutations A1 aux débats, rapports, expressions et culture du B2.",
+      "Outils clés du B2 : subjonctif, conditionnelles, registre formel, connecteurs, expressions et variétés.",
+      "Prochaines étapes : lire un roman, regarder des séries sans sous-titres, tenter le DELE B2 ou commencer le C1."
+     ],
+     "q": "En regardant cette année, de quoi es-tu le plus fier dans ton espagnol ?",
+     "c": "Écris-toi une courte lettre en espagnol : ce que tu as accompli, ton moment préféré et ton prochain objectif."
+    },
+    "it": {
+     "t": "Ripasso: B2 completato, ¡enhorabuena!",
+     "g": "Festeggia un anno intero di spagnolo e pianifica cosa viene dopo.",
+     "p": [
+      "Enhorabuena: in 365 giorni sei passato dai saluti A1 a dibattiti, relazioni, modi di dire e cultura del B2.",
+      "Strumenti chiave del B2: congiuntivo, periodo ipotetico, registro formale, connettivi, modi di dire e varietà.",
+      "Prossimi passi: leggere un romanzo, guardare serie senza sottotitoli, provare il DELE B2 o iniziare il C1."
+     ],
+     "q": "Guardando indietro, di cosa sei più orgoglioso del tuo spagnolo quest'anno?",
+     "c": "Scrivi a te stesso una breve lettera in spagnolo: cosa hai ottenuto, il momento preferito e il prossimo obiettivo."
+    },
+    "pt": {
+     "t": "Revisão: B2 concluído, ¡enhorabuena!",
+     "g": "Celebra um ano inteiro de espanhol e planeia o que vem a seguir.",
+     "p": [
+      "Enhorabuena: em 365 dias passaste dos cumprimentos de A1 a debates, relatórios, expressões e cultura de B2.",
+      "Ferramentas-chave do B2: conjuntivo, condicionais, registo formal, conectores, expressões e variedades.",
+      "Próximos passos: ler um romance, ver séries sem legendas, fazer o DELE B2 ou começar o C1."
+     ],
+     "q": "Olhando para trás, de que te sentes mais orgulhoso no teu espanhol este ano?",
+     "c": "Escreve-te uma carta curta em espanhol: o que conseguiste, o teu momento favorito e a tua próxima meta."
+    },
+    "pt_BR": {
+     "t": "Revisão: B2 concluído, ¡enhorabuena!",
+     "g": "Comemore um ano inteiro de espanhol e planeje o que vem depois.",
+     "p": [
+      "Enhorabuena: em 365 dias você passou das saudações do A1 a debates, relatórios, expressões e cultura do B2.",
+      "Ferramentas-chave do B2: subjuntivo, condicionais, registro formal, conectores, expressões e variedades.",
+      "Próximos passos: ler um romance, ver séries sem legenda, fazer o DELE B2 ou começar o C1."
+     ],
+     "q": "Olhando para trás, do que você mais se orgulha no seu espanhol este ano?",
+     "c": "Escreva uma carta curta para si mesmo em espanhol: o que conquistou, seu momento favorito e sua próxima meta."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "¡enhorabuena!",
+      "ex": "¡Enhorabuena! Has terminado un año entero de español."
+     },
+     {
+      "w": "lograr",
+      "ex": "He logrado hablar con soltura sobre muchos temas."
+     },
+     {
+      "w": "sentirse orgulloso de",
+      "ex": "Me siento orgulloso de todo lo que he aprendido."
+     },
+     {
+      "w": "a lo largo del año",
+      "ex": "A lo largo del año he aprendido cientos de palabras."
+     },
+     {
+      "w": "el siguiente paso",
+      "ex": "El siguiente paso es preparar el DELE B2."
+     },
+     {
+      "w": "¡a por el C1!",
+      "ex": "¡Gracias por todo y a por el C1!"
+     }
+    ],
+    "gram": "Balance final: pretérito perfecto para logros (he logrado, he aprendido) y futuro o ir a + infinitivo para los próximos pasos."
+   }
+  }
+ ]
+}

@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 301,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Advanced connectors",
+     "g": "Link ideas elegantly with tuttavia, nonostante, purché, qualora and laddove.",
+     "p": [
+      "Tuttavia (however) contrasts two sentences; nonostante (despite) takes a noun or che + subjunctive.",
+      "Purché (provided that) and qualora (if, in case) always take the subjunctive: purché tu venga, qualora piova.",
+      "Laddove means where or whereas in formal texts: laddove possibile, laddove altri esitano."
+     ],
+     "q": "What would you do this weekend, purché il tempo sia bello?",
+     "c": "Write three sentences with tuttavia, purché and nonostante about your week."
+    },
+    "de": {
+     "t": "Fortgeschrittene Konnektoren",
+     "g": "Du verbindest Gedanken elegant mit tuttavia, nonostante, purché, qualora und laddove.",
+     "p": [
+      "Tuttavia (jedoch) stellt zwei Sätze gegenüber; nonostante (trotz) steht mit Nomen oder che + Konjunktiv.",
+      "Purché (vorausgesetzt) und qualora (falls) verlangen immer den Konjunktiv: purché tu venga, qualora piova.",
+      "Laddove heißt in formellen Texten wo oder während: laddove possibile, laddove altri esitano."
+     ],
+     "q": "Was würdest du am Wochenende machen, purché il tempo sia bello?",
+     "c": "Schreib drei Sätze mit tuttavia, purché und nonostante über deine Woche."
+    },
+    "es": {
+     "t": "Conectores avanzados",
+     "g": "Enlazar ideas con elegancia usando tuttavia, nonostante, purché, qualora y laddove.",
+     "p": [
+      "Tuttavia (sin embargo) contrapone dos frases; nonostante (a pesar de) va con sustantivo o che + subjuntivo.",
+      "Purché (siempre que) y qualora (en caso de que) llevan siempre subjuntivo: purché tu venga, qualora piova.",
+      "Laddove significa donde o mientras que en textos formales: laddove possibile, laddove altri esitano."
+     ],
+     "q": "¿Qué harías este fin de semana, purché il tempo sia bello?",
+     "c": "Escribe tres frases con tuttavia, purché y nonostante sobre tu semana."
+    },
+    "fr": {
+     "t": "Connecteurs avancés",
+     "g": "Relier tes idées avec élégance grâce à tuttavia, nonostante, purché, qualora et laddove.",
+     "p": [
+      "Tuttavia (cependant) oppose deux phrases ; nonostante (malgré) prend un nom ou che + subjonctif.",
+      "Purché (pourvu que) et qualora (au cas où) exigent le subjonctif : purché tu venga, qualora piova.",
+      "Laddove signifie là où ou alors que dans les textes formels : laddove possibile, laddove altri esitano."
+     ],
+     "q": "Que ferais-tu ce week-end, purché il tempo sia bello ?",
+     "c": "Écris trois phrases avec tuttavia, purché et nonostante sur ta semaine."
+    },
+    "it": {
+     "t": "Connettivi avanzati",
+     "g": "Collegare le idee con eleganza usando tuttavia, nonostante, purché, qualora e laddove.",
+     "p": [
+      "Tuttavia contrappone due frasi; nonostante regge un nome oppure che + congiuntivo.",
+      "Purché e qualora vogliono sempre il congiuntivo: purché tu venga, qualora piova.",
+      "Laddove, nei testi formali, significa dove oppure mentre: laddove possibile, laddove altri esitano."
+     ],
+     "q": "Che cosa faresti nel fine settimana, purché il tempo sia bello?",
+     "c": "Scrivi tre frasi con tuttavia, purché e nonostante sulla tua settimana."
+    },
+    "pt": {
+     "t": "Conectores avançados",
+     "g": "Ligar ideias com elegância usando tuttavia, nonostante, purché, qualora e laddove.",
+     "p": [
+      "Tuttavia (contudo) opõe duas frases; nonostante (apesar de) leva um nome ou che + conjuntivo.",
+      "Purché (desde que) e qualora (caso) pedem sempre o conjuntivo: purché tu venga, qualora piova.",
+      "Laddove significa onde ou ao passo que em textos formais: laddove possibile, laddove altri esitano."
+     ],
+     "q": "O que farias este fim de semana, purché il tempo sia bello?",
+     "c": "Escreve três frases com tuttavia, purché e nonostante sobre a tua semana."
+    },
+    "pt_BR": {
+     "t": "Conectivos avançados",
+     "g": "Ligar ideias com elegância usando tuttavia, nonostante, purché, qualora e laddove.",
+     "p": [
+      "Tuttavia (contudo) contrasta duas frases; nonostante (apesar de) vem com substantivo ou che + subjuntivo.",
+      "Purché (desde que) e qualora (caso) pedem sempre o subjuntivo: purché tu venga, qualora piova.",
+      "Laddove significa onde ou ao passo que em textos formais: laddove possibile, laddove altri esitano."
+     ],
+     "q": "O que você faria neste fim de semana, purché il tempo sia bello?",
+     "c": "Escreva três frases com tuttavia, purché e nonostante sobre a sua semana."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "tuttavia",
+      "ex": "Il progetto è difficile; tuttavia, lo finiremo in tempo."
+     },
+     {
+      "w": "nonostante",
+      "ex": "Nonostante la pioggia, siamo usciti a fare una passeggiata."
+     },
+     {
+      "w": "purché",
+      "ex": "Puoi prendere la macchina, purché tu guidi con prudenza."
+     },
+     {
+      "w": "qualora",
+      "ex": "Qualora ci fossero problemi, chiamami subito."
+     },
+     {
+      "w": "laddove",
+      "ex": "Si useranno materiali riciclati laddove possibile."
+     },
+     {
+      "w": "benché",
+      "ex": "Benché fosse stanca, ha continuato a studiare."
+     }
+    ],
+    "gram": "Purché, qualora, benché e nonostante (che) + congiuntivo; tuttavia è un avverbio e non cambia il modo del verbo."
+   }
+  },
+  {
+   "d": 302,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Nominalisation in formal Italian",
+     "g": "Turn verbs into nouns to sound formal: l'arrivo del treno, la chiusura dei negozi.",
+     "p": [
+      "Many verbs give nouns in -zione, -mento or -ura: chiudere > chiusura, aumentare > aumento, ridurre > riduzione.",
+      "Formal style says L'arrivo del treno è previsto alle 10 instead of Il treno arriva alle 10.",
+      "Nominalised phrases are common in news, notices and emails: apertura al pubblico, consegna entro venerdì."
+     ],
+     "q": "Which change in your town would you describe with a noun, like la chiusura or l'apertura?",
+     "c": "Rewrite three simple sentences as formal noun phrases, like a public notice."
+    },
+    "de": {
+     "t": "Nominalisierung im formellen Italienisch",
+     "g": "Du machst aus Verben Nomen, um formell zu klingen: l'arrivo del treno, la chiusura dei negozi.",
+     "p": [
+      "Viele Verben bilden Nomen auf -zione, -mento oder -ura: chiudere > chiusura, aumentare > aumento.",
+      "Formell sagt man L'arrivo del treno è previsto alle 10 statt Il treno arriva alle 10.",
+      "Nominalstil findet man in Nachrichten, Aushängen und E-Mails: apertura al pubblico, consegna entro venerdì."
+     ],
+     "q": "Welche Veränderung in deiner Stadt beschreibst du mit einem Nomen, wie la chiusura oder l'apertura?",
+     "c": "Schreib drei einfache Sätze als formelle Nominalgruppen um, wie auf einem Aushang."
+    },
+    "es": {
+     "t": "Nominalización en italiano formal",
+     "g": "Convertir verbos en sustantivos para sonar formal: l'arrivo del treno, la chiusura dei negozi.",
+     "p": [
+      "Muchos verbos dan sustantivos en -zione, -mento o -ura: chiudere > chiusura, aumentare > aumento.",
+      "En estilo formal se dice L'arrivo del treno è previsto alle 10 en lugar de Il treno arriva alle 10.",
+      "La nominalización abunda en noticias, avisos y correos: apertura al pubblico, consegna entro venerdì."
+     ],
+     "q": "¿Qué cambio en tu ciudad describirías con un sustantivo, como la chiusura o l'apertura?",
+     "c": "Reescribe tres frases simples como sintagmas nominales formales, como en un aviso."
+    },
+    "fr": {
+     "t": "La nominalisation en italien formel",
+     "g": "Transformer des verbes en noms pour un style formel : l'arrivo del treno, la chiusura dei negozi.",
+     "p": [
+      "Beaucoup de verbes donnent des noms en -zione, -mento ou -ura : chiudere > chiusura, aumentare > aumento.",
+      "Le style formel dit L'arrivo del treno è previsto alle 10 plutôt que Il treno arriva alle 10.",
+      "On trouve ce style dans la presse, les avis et les e-mails : apertura al pubblico, consegna entro venerdì."
+     ],
+     "q": "Quel changement dans ta ville décrirais-tu avec un nom, comme la chiusura ou l'apertura ?",
+     "c": "Réécris trois phrases simples en groupes nominaux formels, comme sur un avis public."
+    },
+    "it": {
+     "t": "La nominalizzazione nell'italiano formale",
+     "g": "Trasformare i verbi in nomi per uno stile formale: l'arrivo del treno, la chiusura dei negozi.",
+     "p": [
+      "Molti verbi formano nomi in -zione, -mento o -ura: chiudere > chiusura, aumentare > aumento, ridurre > riduzione.",
+      "Lo stile formale preferisce L'arrivo del treno è previsto alle 10 a Il treno arriva alle 10.",
+      "La nominalizzazione è tipica di notizie, avvisi ed email: apertura al pubblico, consegna entro venerdì."
+     ],
+     "q": "Quale cambiamento nella tua città descriveresti con un nome, come la chiusura o l'apertura?",
+     "c": "Riscrivi tre frasi semplici come espressioni nominali formali, come in un avviso."
+    },
+    "pt": {
+     "t": "Nominalização no italiano formal",
+     "g": "Transformar verbos em nomes para soar formal: l'arrivo del treno, la chiusura dei negozi.",
+     "p": [
+      "Muitos verbos dão nomes em -zione, -mento ou -ura: chiudere > chiusura, aumentare > aumento.",
+      "O estilo formal diz L'arrivo del treno è previsto alle 10 em vez de Il treno arriva alle 10.",
+      "A nominalização é comum em notícias, avisos e emails: apertura al pubblico, consegna entro venerdì."
+     ],
+     "q": "Que mudança na tua cidade descreverias com um nome, como la chiusura ou l'apertura?",
+     "c": "Reescreve três frases simples como expressões nominais formais, como num aviso."
+    },
+    "pt_BR": {
+     "t": "Nominalização no italiano formal",
+     "g": "Transformar verbos em substantivos para soar formal: l'arrivo del treno, la chiusura dei negozi.",
+     "p": [
+      "Muitos verbos geram substantivos em -zione, -mento ou -ura: chiudere > chiusura, aumentare > aumento.",
+      "O estilo formal diz L'arrivo del treno è previsto alle 10 em vez de Il treno arriva alle 10.",
+      "A nominalização é comum em notícias, avisos e e-mails: apertura al pubblico, consegna entro venerdì."
+     ],
+     "q": "Que mudança na sua cidade você descreveria com um substantivo, como la chiusura ou l'apertura?",
+     "c": "Reescreva três frases simples como expressões nominais formais, como num aviso."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "l'arrivo",
+      "ex": "L'arrivo del volo è previsto per le 18."
+     },
+     {
+      "w": "la chiusura",
+      "ex": "La chiusura dei negozi è alle 20."
+     },
+     {
+      "w": "l'aumento",
+      "ex": "Si prevede un aumento dei prezzi dei biglietti."
+     },
+     {
+      "w": "la riduzione",
+      "ex": "Il comune annuncia una riduzione del traffico in centro."
+     },
+     {
+      "w": "la consegna",
+      "ex": "La consegna del pacco avverrà entro venerdì."
+     },
+     {
+      "w": "lo svolgimento",
+      "ex": "Lo svolgimento della riunione è stato rapido."
+     }
+    ],
+    "gram": "Nominalizzazione: verbo > nome (-zione, -mento, -ura) + di: chiudere i negozi > la chiusura dei negozi."
+   }
+  },
+  {
+   "d": 303,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Register: formal, neutral, informal",
+     "g": "Say the same thing in three registers, from a quick chat to a formal email.",
+     "p": [
+      "Informal: Ci vediamo dopo? Neutral: Possiamo vederci più tardi? Formal: Sarebbe possibile fissare un incontro?",
+      "Formal Italian uses Lei, the conditional and longer verbs: richiedere for chiedere, ricevere for avere.",
+      "Informal Italian loves short forms and fillers: tipo, dai, boh, un sacco di."
+     ],
+     "q": "How would you ask your boss and your best friend for the same favour?",
+     "c": "Write one request in three versions: a text to a friend, a neutral message and a formal email."
+    },
+    "de": {
+     "t": "Register: formell, neutral, informell",
+     "g": "Du sagst dasselbe in drei Registern, vom Chat bis zur formellen E-Mail.",
+     "p": [
+      "Informell: Ci vediamo dopo? Neutral: Possiamo vederci più tardi? Formell: Sarebbe possibile fissare un incontro?",
+      "Formelles Italienisch nutzt Lei, den Konditional und längere Verben: richiedere statt chiedere.",
+      "Informelles Italienisch liebt Kurzformen und Füllwörter: tipo, dai, boh, un sacco di."
+     ],
+     "q": "Wie würdest du deine Chefin und deinen besten Freund um denselben Gefallen bitten?",
+     "c": "Formuliere eine Bitte dreimal: als Nachricht an Freunde, neutral und als formelle E-Mail."
+    },
+    "es": {
+     "t": "Registro: formal, neutro, informal",
+     "g": "Decir lo mismo en tres registros, del chat a un correo formal.",
+     "p": [
+      "Informal: Ci vediamo dopo? Neutro: Possiamo vederci più tardi? Formal: Sarebbe possibile fissare un incontro?",
+      "El italiano formal usa Lei, el condicional y verbos más largos: richiedere en vez de chiedere.",
+      "El italiano informal adora las formas cortas y muletillas: tipo, dai, boh, un sacco di."
+     ],
+     "q": "¿Cómo pedirías el mismo favor a tu jefa y a tu mejor amigo?",
+     "c": "Escribe una petición en tres versiones: mensaje a un amigo, mensaje neutro y correo formal."
+    },
+    "fr": {
+     "t": "Registres : formel, neutre, familier",
+     "g": "Dire la même chose dans trois registres, du chat à l'e-mail formel.",
+     "p": [
+      "Familier : Ci vediamo dopo? Neutre : Possiamo vederci più tardi? Formel : Sarebbe possibile fissare un incontro?",
+      "L'italien formel utilise Lei, le conditionnel et des verbes plus longs : richiedere pour chiedere.",
+      "L'italien familier aime les formes courtes et les mots de remplissage : tipo, dai, boh, un sacco di."
+     ],
+     "q": "Comment demanderais-tu le même service à ta cheffe et à ton meilleur ami ?",
+     "c": "Écris une demande en trois versions : SMS à un ami, message neutre et e-mail formel."
+    },
+    "it": {
+     "t": "Registri: formale, neutro, informale",
+     "g": "Dire la stessa cosa in tre registri, dalla chat all'email formale.",
+     "p": [
+      "Informale: Ci vediamo dopo? Neutro: Possiamo vederci più tardi? Formale: Sarebbe possibile fissare un incontro?",
+      "L'italiano formale usa il Lei, il condizionale e verbi più lunghi: richiedere invece di chiedere.",
+      "L'italiano informale ama forme brevi e intercalari: tipo, dai, boh, un sacco di."
+     ],
+     "q": "Come chiederesti lo stesso favore alla tua capa e al tuo migliore amico?",
+     "c": "Scrivi una richiesta in tre versioni: messaggio a un amico, messaggio neutro ed email formale."
+    },
+    "pt": {
+     "t": "Registo: formal, neutro, informal",
+     "g": "Dizer o mesmo em três registos, do chat ao email formal.",
+     "p": [
+      "Informal: Ci vediamo dopo? Neutro: Possiamo vederci più tardi? Formal: Sarebbe possibile fissare un incontro?",
+      "O italiano formal usa Lei, o condicional e verbos mais longos: richiedere em vez de chiedere.",
+      "O italiano informal adora formas curtas e bordões: tipo, dai, boh, un sacco di."
+     ],
+     "q": "Como pedirias o mesmo favor à tua chefe e ao teu melhor amigo?",
+     "c": "Escreve um pedido em três versões: mensagem a um amigo, mensagem neutra e email formal."
+    },
+    "pt_BR": {
+     "t": "Registro: formal, neutro, informal",
+     "g": "Dizer a mesma coisa em três registros, do chat ao e-mail formal.",
+     "p": [
+      "Informal: Ci vediamo dopo? Neutro: Possiamo vederci più tardi? Formal: Sarebbe possibile fissare un incontro?",
+      "O italiano formal usa Lei, o condicional e verbos mais longos: richiedere em vez de chiedere.",
+      "O italiano informal adora formas curtas e bordões: tipo, dai, boh, un sacco di."
+     ],
+     "q": "Como você pediria o mesmo favor à sua chefe e ao seu melhor amigo?",
+     "c": "Escreva um pedido em três versões: mensagem a um amigo, mensagem neutra e e-mail formal."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Sarebbe possibile...?",
+      "ex": "Sarebbe possibile ricevere il documento entro lunedì?"
+     },
+     {
+      "w": "richiedere",
+      "ex": "Le scrivo per richiedere alcune informazioni."
+     },
+     {
+      "w": "Ci vediamo dopo?",
+      "ex": "Ehi, ci vediamo dopo al bar?"
+     },
+     {
+      "w": "un sacco di",
+      "ex": "Ho un sacco di cose da fare oggi!"
+     },
+     {
+      "w": "cordiali saluti",
+      "ex": "Resto in attesa di una Sua risposta. Cordiali saluti."
+     },
+     {
+      "w": "Ti va di...?",
+      "ex": "Ti va di prendere un caffè?"
+     }
+    ],
+    "gram": "Registro formale: Lei + condizionale di cortesia (vorrei, potrebbe); informale: tu + presente (puoi, ti va?)."
+   }
+  },
+  {
+   "d": 304,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Review: words and structure",
+     "g": "Recap causatives, prepositions, collocations and connectors from recent days.",
+     "p": [
+      "Causatives: fare + infinitive (ho fatto riparare la bici) and lasciare + infinitive (lasciami parlare).",
+      "Collocations: tenere conto di, mettere in dubbio, avere senso; connectors: tuttavia, purché, nonostante.",
+      "Formal style: nominalisation (la chiusura dei negozi) and the right register for each situation."
+     ],
+     "q": "Which of these structures still feels tricky to you?",
+     "c": "Write a short formal paragraph using fare + infinitive, tenere conto di and purché."
+    },
+    "de": {
+     "t": "Wiederholung: Wörter und Strukturen",
+     "g": "Du wiederholst Kausativ, Präpositionen, Kollokationen und Konnektoren.",
+     "p": [
+      "Kausativ: fare + Infinitiv (ho fatto riparare la bici) und lasciare + Infinitiv (lasciami parlare).",
+      "Kollokationen: tenere conto di, mettere in dubbio, avere senso; Konnektoren: tuttavia, purché, nonostante.",
+      "Formeller Stil: Nominalisierung (la chiusura dei negozi) und das passende Register."
+     ],
+     "q": "Welche dieser Strukturen findest du noch schwierig?",
+     "c": "Schreib einen kurzen formellen Absatz mit fare + Infinitiv, tenere conto di und purché."
+    },
+    "es": {
+     "t": "Repaso: palabras y estructuras",
+     "g": "Repasar causativas, preposiciones, colocaciones y conectores de los últimos días.",
+     "p": [
+      "Causativas: fare + infinitivo (ho fatto riparare la bici) y lasciare + infinitivo (lasciami parlare).",
+      "Colocaciones: tenere conto di, mettere in dubbio, avere senso; conectores: tuttavia, purché, nonostante.",
+      "Estilo formal: nominalización (la chiusura dei negozi) y el registro adecuado a cada situación."
+     ],
+     "q": "¿Cuál de estas estructuras te sigue costando?",
+     "c": "Escribe un párrafo formal breve con fare + infinitivo, tenere conto di y purché."
+    },
+    "fr": {
+     "t": "Révision : mots et structures",
+     "g": "Réviser les causatives, les prépositions, les collocations et les connecteurs.",
+     "p": [
+      "Causatives : fare + infinitif (ho fatto riparare la bici) et lasciare + infinitif (lasciami parlare).",
+      "Collocations : tenere conto di, mettere in dubbio, avere senso ; connecteurs : tuttavia, purché, nonostante.",
+      "Style formel : nominalisation (la chiusura dei negozi) et le bon registre selon la situation."
+     ],
+     "q": "Laquelle de ces structures te pose encore problème ?",
+     "c": "Écris un court paragraphe formel avec fare + infinitif, tenere conto di et purché."
+    },
+    "it": {
+     "t": "Ripasso: parole e strutture",
+     "g": "Ripassare causativi, preposizioni, collocazioni e connettivi degli ultimi giorni.",
+     "p": [
+      "Causativi: fare + infinito (ho fatto riparare la bici) e lasciare + infinito (lasciami parlare).",
+      "Collocazioni: tenere conto di, mettere in dubbio, avere senso; connettivi: tuttavia, purché, nonostante.",
+      "Stile formale: nominalizzazione (la chiusura dei negozi) e il registro giusto per ogni situazione."
+     ],
+     "q": "Quale di queste strutture ti sembra ancora difficile?",
+     "c": "Scrivi un breve paragrafo formale con fare + infinito, tenere conto di e purché."
+    },
+    "pt": {
+     "t": "Revisão: palavras e estruturas",
+     "g": "Rever causativas, preposições, colocações e conectores dos últimos dias.",
+     "p": [
+      "Causativas: fare + infinitivo (ho fatto riparare la bici) e lasciare + infinitivo (lasciami parlare).",
+      "Colocações: tenere conto di, mettere in dubbio, avere senso; conectores: tuttavia, purché, nonostante.",
+      "Estilo formal: nominalização (la chiusura dei negozi) e o registo certo para cada situação."
+     ],
+     "q": "Qual destas estruturas ainda te parece difícil?",
+     "c": "Escreve um parágrafo formal curto com fare + infinitivo, tenere conto di e purché."
+    },
+    "pt_BR": {
+     "t": "Revisão: palavras e estruturas",
+     "g": "Revisar causativas, preposições, colocações e conectivos dos últimos dias.",
+     "p": [
+      "Causativas: fare + infinitivo (ho fatto riparare la bici) e lasciare + infinitivo (lasciami parlare).",
+      "Colocações: tenere conto di, mettere in dubbio, avere senso; conectivos: tuttavia, purché, nonostante.",
+      "Estilo formal: nominalização (la chiusura dei negozi) e o registro certo para cada situação."
+     ],
+     "q": "Qual dessas estruturas ainda parece difícil para você?",
+     "c": "Escreva um parágrafo formal curto com fare + infinitivo, tenere conto di e purché."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "far riparare",
+      "ex": "Domani faccio riparare la lavatrice."
+     },
+     {
+      "w": "lasciar fare",
+      "ex": "Lascia fare a me, ci penso io."
+     },
+     {
+      "w": "tenere conto di",
+      "ex": "Abbiamo tenuto conto dei vostri suggerimenti."
+     },
+     {
+      "w": "mettere in dubbio",
+      "ex": "Non metto in dubbio la sua esperienza."
+     },
+     {
+      "w": "nonostante",
+      "ex": "Nonostante il ritardo, la riunione è andata bene."
+     },
+     {
+      "w": "purché",
+      "ex": "Accetto, purché la scadenza sia realistica."
+     }
+    ],
+    "gram": "Fare + infinito: il soggetto fa compiere l'azione a un altro (faccio pulire la casa); lasciare + infinito: permette."
+   }
+  },
+  {
+   "d": 305,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Reading newspapers",
+     "g": "Understand headlines, abbreviations and typical newspaper style.",
+     "p": [
+      "Headlines drop articles and verbs: Maltempo al Nord, scuole chiuse. Often a colon replaces a verb.",
+      "Common abbreviations: PIL (GDP), UE (EU), Pres. (president), ca. (about), S.p.A. (company type).",
+      "News style uses the passive, nominalisation and the present for past events: Il sindaco annuncia..."
+     ],
+     "q": "Do you prefer to read news on paper, online or to listen to it?",
+     "c": "Read one Italian headline and rewrite it as a full sentence with article and verb."
+    },
+    "de": {
+     "t": "Zeitungen lesen",
+     "g": "Du verstehst Schlagzeilen, Abkürzungen und typischen Zeitungsstil.",
+     "p": [
+      "Schlagzeilen lassen Artikel und Verben weg: Maltempo al Nord, scuole chiuse. Ein Doppelpunkt ersetzt oft das Verb.",
+      "Häufige Abkürzungen: PIL (BIP), UE (EU), Pres. (Präsident), ca. (circa), S.p.A. (Aktiengesellschaft).",
+      "Zeitungsstil nutzt Passiv, Nominalisierung und Präsens für Vergangenes: Il sindaco annuncia..."
+     ],
+     "q": "Liest du Nachrichten lieber auf Papier, online oder hörst du sie?",
+     "c": "Lies eine italienische Schlagzeile und schreib sie als ganzen Satz mit Artikel und Verb."
+    },
+    "es": {
+     "t": "Leer periódicos",
+     "g": "Entender titulares, abreviaturas y el estilo típico de la prensa.",
+     "p": [
+      "Los titulares omiten artículos y verbos: Maltempo al Nord, scuole chiuse. Los dos puntos sustituyen al verbo.",
+      "Abreviaturas comunes: PIL (PIB), UE (UE), Pres. (presidente), ca. (aprox.), S.p.A. (sociedad anónima).",
+      "El estilo periodístico usa pasiva, nominalización y presente para hechos pasados: Il sindaco annuncia..."
+     ],
+     "q": "¿Prefieres leer las noticias en papel, en internet o escucharlas?",
+     "c": "Lee un titular italiano y reescríbelo como frase completa con artículo y verbo."
+    },
+    "fr": {
+     "t": "Lire la presse",
+     "g": "Comprendre les titres, les abréviations et le style journalistique.",
+     "p": [
+      "Les titres omettent articles et verbes : Maltempo al Nord, scuole chiuse. Les deux-points remplacent le verbe.",
+      "Abréviations courantes : PIL (PIB), UE (UE), Pres. (président), ca. (environ), S.p.A. (société anonyme).",
+      "Le style de presse aime le passif, la nominalisation et le présent pour le passé : Il sindaco annuncia..."
+     ],
+     "q": "Tu préfères lire l'actualité sur papier, en ligne ou l'écouter ?",
+     "c": "Lis un titre italien et réécris-le en phrase complète avec article et verbe."
+    },
+    "it": {
+     "t": "Leggere i giornali",
+     "g": "Capire titoli, abbreviazioni e lo stile tipico dei giornali.",
+     "p": [
+      "I titoli eliminano articoli e verbi: Maltempo al Nord, scuole chiuse. Spesso i due punti sostituiscono il verbo.",
+      "Abbreviazioni comuni: PIL, UE, Pres. (presidente), ca. (circa), S.p.A. (società per azioni).",
+      "Lo stile giornalistico usa passivo, nominalizzazione e presente per fatti passati: Il sindaco annuncia..."
+     ],
+     "q": "Preferisci leggere le notizie su carta, online o ascoltarle?",
+     "c": "Leggi un titolo italiano e riscrivilo come frase completa con articolo e verbo."
+    },
+    "pt": {
+     "t": "Ler jornais",
+     "g": "Perceber títulos, abreviaturas e o estilo típico dos jornais.",
+     "p": [
+      "Os títulos omitem artigos e verbos: Maltempo al Nord, scuole chiuse. Os dois pontos substituem o verbo.",
+      "Abreviaturas comuns: PIL (PIB), UE (UE), Pres. (presidente), ca. (cerca de), S.p.A. (sociedade anónima).",
+      "O estilo jornalístico usa passiva, nominalização e presente para factos passados: Il sindaco annuncia..."
+     ],
+     "q": "Preferes ler as notícias em papel, online ou ouvi-las?",
+     "c": "Lê um título italiano e reescreve-o como frase completa com artigo e verbo."
+    },
+    "pt_BR": {
+     "t": "Lendo jornais",
+     "g": "Entender manchetes, abreviações e o estilo típico dos jornais.",
+     "p": [
+      "As manchetes omitem artigos e verbos: Maltempo al Nord, scuole chiuse. Os dois-pontos substituem o verbo.",
+      "Abreviações comuns: PIL (PIB), UE (UE), Pres. (presidente), ca. (cerca de), S.p.A. (sociedade anônima).",
+      "O estilo jornalístico usa passiva, nominalização e presente para fatos passados: Il sindaco annuncia..."
+     ],
+     "q": "Você prefere ler as notícias no papel, online ou ouvi-las?",
+     "c": "Leia uma manchete italiana e reescreva como frase completa com artigo e verbo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il titolo",
+      "ex": "Il titolo dell'articolo è molto chiaro."
+     },
+     {
+      "w": "il quotidiano",
+      "ex": "Leggo un quotidiano ogni mattina a colazione."
+     },
+     {
+      "w": "la cronaca",
+      "ex": "Nella pagina di cronaca si parla della nuova biblioteca."
+     },
+     {
+      "w": "il PIL",
+      "ex": "Secondo i dati, il PIL è cresciuto dell'uno per cento."
+     },
+     {
+      "w": "secondo fonti",
+      "ex": "Secondo fonti ufficiali, i lavori finiranno a maggio."
+     },
+     {
+      "w": "il lettore",
+      "ex": "L'articolo ha suscitato l'interesse dei lettori."
+     }
+    ],
+    "gram": "Stile giornalistico: presente storico (Il sindaco annuncia), passivo (è stato inaugurato) e titoli senza verbo."
+   }
+  },
+  {
+   "d": 306,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Writing an opinion essay",
+     "g": "Build an essay with a thesis, arguments, counterarguments and a strong conclusion.",
+     "p": [
+      "Open with your thesis: A mio parere..., Ritengo che + subjunctive (ritengo che sia importante).",
+      "Develop with In primo luogo, Inoltre, D'altra parte; admit the other side: È vero che..., tuttavia...",
+      "Close firmly: In conclusione, Per tutti questi motivi, Alla luce di quanto detto."
+     ],
+     "q": "What topic would you choose for an opinion essay in Italian?",
+     "c": "Write a four-sentence mini-essay: thesis, argument, counterargument, conclusion."
+    },
+    "de": {
+     "t": "Einen Meinungsaufsatz schreiben",
+     "g": "Du baust einen Aufsatz mit These, Argumenten, Gegenargumenten und starkem Schluss.",
+     "p": [
+      "Beginne mit der These: A mio parere..., Ritengo che + Konjunktiv (ritengo che sia importante).",
+      "Entwickle mit In primo luogo, Inoltre, D'altra parte; räume ein: È vero che..., tuttavia...",
+      "Schließe klar: In conclusione, Per tutti questi motivi, Alla luce di quanto detto."
+     ],
+     "q": "Welches Thema würdest du für einen Meinungsaufsatz auf Italienisch wählen?",
+     "c": "Schreib einen Mini-Aufsatz in vier Sätzen: These, Argument, Gegenargument, Schluss."
+    },
+    "es": {
+     "t": "Escribir un ensayo de opinión",
+     "g": "Construir un ensayo con tesis, argumentos, contraargumentos y una conclusión sólida.",
+     "p": [
+      "Abre con la tesis: A mio parere..., Ritengo che + subjuntivo (ritengo che sia importante).",
+      "Desarrolla con In primo luogo, Inoltre, D'altra parte; concede: È vero che..., tuttavia...",
+      "Cierra con firmeza: In conclusione, Per tutti questi motivi, Alla luce di quanto detto."
+     ],
+     "q": "¿Qué tema elegirías para un ensayo de opinión en italiano?",
+     "c": "Escribe un miniensayo de cuatro frases: tesis, argumento, contraargumento y conclusión."
+    },
+    "fr": {
+     "t": "Rédiger un essai argumentatif",
+     "g": "Construire un essai avec thèse, arguments, contre-arguments et une conclusion forte.",
+     "p": [
+      "Ouvre par ta thèse : A mio parere..., Ritengo che + subjonctif (ritengo che sia importante).",
+      "Développe avec In primo luogo, Inoltre, D'altra parte ; concède : È vero che..., tuttavia...",
+      "Conclus nettement : In conclusione, Per tutti questi motivi, Alla luce di quanto detto."
+     ],
+     "q": "Quel sujet choisirais-tu pour un essai argumentatif en italien ?",
+     "c": "Écris un mini-essai en quatre phrases : thèse, argument, contre-argument, conclusion."
+    },
+    "it": {
+     "t": "Scrivere un testo argomentativo",
+     "g": "Costruire un testo con tesi, argomenti, controargomenti e una conclusione efficace.",
+     "p": [
+      "Apri con la tesi: A mio parere..., Ritengo che + congiuntivo (ritengo che sia importante).",
+      "Sviluppa con In primo luogo, Inoltre, D'altra parte; ammetti l'altra posizione: È vero che..., tuttavia...",
+      "Chiudi con decisione: In conclusione, Per tutti questi motivi, Alla luce di quanto detto."
+     ],
+     "q": "Quale argomento sceglieresti per un testo argomentativo?",
+     "c": "Scrivi un mini-testo di quattro frasi: tesi, argomento, controargomento, conclusione."
+    },
+    "pt": {
+     "t": "Escrever um texto de opinião",
+     "g": "Construir um texto com tese, argumentos, contra-argumentos e uma conclusão forte.",
+     "p": [
+      "Abre com a tese: A mio parere..., Ritengo che + conjuntivo (ritengo che sia importante).",
+      "Desenvolve com In primo luogo, Inoltre, D'altra parte; concede: È vero che..., tuttavia...",
+      "Fecha com firmeza: In conclusione, Per tutti questi motivi, Alla luce di quanto detto."
+     ],
+     "q": "Que tema escolherias para um texto de opinião em italiano?",
+     "c": "Escreve um mini-texto de quatro frases: tese, argumento, contra-argumento, conclusão."
+    },
+    "pt_BR": {
+     "t": "Escrevendo uma redação de opinião",
+     "g": "Construir uma redação com tese, argumentos, contra-argumentos e uma conclusão forte.",
+     "p": [
+      "Abra com a tese: A mio parere..., Ritengo che + subjuntivo (ritengo che sia importante).",
+      "Desenvolva com In primo luogo, Inoltre, D'altra parte; reconheça: È vero che..., tuttavia...",
+      "Feche com firmeza: In conclusione, Per tutti questi motivi, Alla luce di quanto detto."
+     ],
+     "q": "Que tema você escolheria para uma redação de opinião em italiano?",
+     "c": "Escreva uma mini-redação de quatro frases: tese, argumento, contra-argumento, conclusão."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ritengo che",
+      "ex": "Ritengo che lo sport a scuola sia fondamentale."
+     },
+     {
+      "w": "in primo luogo",
+      "ex": "In primo luogo, leggere migliora il vocabolario."
+     },
+     {
+      "w": "inoltre",
+      "ex": "Inoltre, è un'attività economica e piacevole."
+     },
+     {
+      "w": "d'altra parte",
+      "ex": "D'altra parte, non tutti hanno tempo per leggere."
+     },
+     {
+      "w": "è vero che... tuttavia",
+      "ex": "È vero che costa fatica, tuttavia ne vale la pena."
+     },
+     {
+      "w": "in conclusione",
+      "ex": "In conclusione, consiglio a tutti di provarci."
+     }
+    ],
+    "gram": "Ritengo / credo / penso che + congiuntivo (sia, abbia, possa); è chiaro che + indicativo, perché esprime certezza."
+   }
+  },
+  {
+   "d": 307,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Summarising a text",
+     "g": "Pick the key ideas of a text and restate them in your own words.",
+     "p": [
+      "Read once for the gist, then underline the main idea of each paragraph: l'idea principale.",
+      "Use reporting verbs: L'autore sostiene che, afferma che, spiega che, mette in evidenza.",
+      "Cut examples and details, change the words and keep it short: about a third of the original."
+     ],
+     "q": "What is the last article or story you could summarise for me in Italian?",
+     "c": "Summarise a short text you read today in three Italian sentences using L'autore sostiene che."
+    },
+    "de": {
+     "t": "Einen Text zusammenfassen",
+     "g": "Du erfasst die Kernideen eines Textes und gibst sie mit eigenen Worten wieder.",
+     "p": [
+      "Lies einmal fürs Grobe, dann markiere die Hauptidee jedes Absatzes: l'idea principale.",
+      "Nutze Verben der Redewiedergabe: L'autore sostiene che, afferma che, spiega che, mette in evidenza.",
+      "Streiche Beispiele und Details, ändere die Wörter, bleib kurz: etwa ein Drittel des Originals."
+     ],
+     "q": "Welchen Artikel oder welche Geschichte könntest du mir auf Italienisch zusammenfassen?",
+     "c": "Fasse einen heute gelesenen Text in drei Sätzen zusammen, mit L'autore sostiene che."
+    },
+    "es": {
+     "t": "Resumir un texto",
+     "g": "Elegir las ideas clave de un texto y contarlas con tus propias palabras.",
+     "p": [
+      "Lee una vez para captar lo esencial y subraya la idea principal de cada párrafo: l'idea principale.",
+      "Usa verbos introductorios: L'autore sostiene che, afferma che, spiega che, mette in evidenza.",
+      "Quita ejemplos y detalles, cambia las palabras y sé breve: un tercio del original."
+     ],
+     "q": "¿Qué artículo o historia reciente podrías resumirme en italiano?",
+     "c": "Resume en tres frases italianas un texto que hayas leído hoy, usando L'autore sostiene che."
+    },
+    "fr": {
+     "t": "Résumer un texte",
+     "g": "Repérer les idées clés d'un texte et les reformuler avec tes mots.",
+     "p": [
+      "Lis une fois pour l'essentiel, puis souligne l'idée principale de chaque paragraphe : l'idea principale.",
+      "Utilise des verbes introducteurs : L'autore sostiene che, afferma che, spiega che, mette in evidenza.",
+      "Supprime exemples et détails, change les mots, reste bref : environ un tiers de l'original."
+     ],
+     "q": "Quel article ou quelle histoire récente pourrais-tu me résumer en italien ?",
+     "c": "Résume en trois phrases italiennes un texte lu aujourd'hui, avec L'autore sostiene che."
+    },
+    "it": {
+     "t": "Riassumere un testo",
+     "g": "Individuare le idee chiave di un testo e riformularle con parole tue.",
+     "p": [
+      "Leggi una volta per capire il senso generale, poi sottolinea l'idea principale di ogni paragrafo.",
+      "Usa verbi introduttivi: L'autore sostiene che, afferma che, spiega che, mette in evidenza.",
+      "Elimina esempi e dettagli, cambia le parole e sii breve: circa un terzo dell'originale."
+     ],
+     "q": "Qual è l'ultimo articolo o racconto che potresti riassumermi?",
+     "c": "Riassumi in tre frasi un testo letto oggi, usando L'autore sostiene che."
+    },
+    "pt": {
+     "t": "Resumir um texto",
+     "g": "Escolher as ideias principais de um texto e reformulá-las por palavras tuas.",
+     "p": [
+      "Lê uma vez para captar o essencial e sublinha a ideia principal de cada parágrafo: l'idea principale.",
+      "Usa verbos introdutórios: L'autore sostiene che, afferma che, spiega che, mette in evidenza.",
+      "Corta exemplos e pormenores, muda as palavras e sê breve: cerca de um terço do original."
+     ],
+     "q": "Que artigo ou história recente me poderias resumir em italiano?",
+     "c": "Resume em três frases italianas um texto que leste hoje, com L'autore sostiene che."
+    },
+    "pt_BR": {
+     "t": "Resumindo um texto",
+     "g": "Escolher as ideias principais de um texto e reformulá-las com suas palavras.",
+     "p": [
+      "Leia uma vez para pegar o essencial e sublinhe a ideia principal de cada parágrafo: l'idea principale.",
+      "Use verbos introdutórios: L'autore sostiene che, afferma che, spiega che, mette in evidenza.",
+      "Corte exemplos e detalhes, troque as palavras e seja breve: cerca de um terço do original."
+     ],
+     "q": "Que artigo ou história recente você poderia resumir para mim em italiano?",
+     "c": "Resuma em três frases italianas um texto que você leu hoje, com L'autore sostiene che."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il riassunto",
+      "ex": "Il riassunto deve essere breve e chiaro."
+     },
+     {
+      "w": "l'idea principale",
+      "ex": "L'idea principale del testo è nel primo paragrafo."
+     },
+     {
+      "w": "l'autore sostiene che",
+      "ex": "L'autore sostiene che il turismo lento sia il futuro."
+     },
+     {
+      "w": "mettere in evidenza",
+      "ex": "Il testo mette in evidenza i vantaggi della lettura."
+     },
+     {
+      "w": "in sintesi",
+      "ex": "In sintesi, l'articolo propone tre soluzioni."
+     },
+     {
+      "w": "riformulare",
+      "ex": "Prova a riformulare la frase con parole tue."
+     }
+    ],
+    "gram": "Discorso indiretto nel riassunto: L'autore dice: «È utile» > L'autore afferma che è utile (presente invariato)."
+   }
+  },
+  {
+   "d": 308,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Reviewing a film or book",
+     "g": "Give a balanced review: plot, characters, strengths and your final verdict.",
+     "p": [
+      "Plot in the present tense: La trama racconta di..., Il film è ambientato a... (set in).",
+      "Characters and style: Il protagonista è..., la regia è curata, la scrittura è scorrevole (flowing).",
+      "Balance it: Il punto di forza è..., Peccato che + subjunctive; finish with Lo consiglio a chi ama..."
+     ],
+     "q": "Which film or book would you recommend to me, and why?",
+     "c": "Write a five-sentence review of a film or book: setting, plot, character, strength, verdict."
+    },
+    "de": {
+     "t": "Einen Film oder ein Buch rezensieren",
+     "g": "Du gibst eine ausgewogene Kritik: Handlung, Figuren, Stärken und Urteil.",
+     "p": [
+      "Handlung im Präsens: La trama racconta di..., Il film è ambientato a... (spielt in).",
+      "Figuren und Stil: Il protagonista è..., la regia è curata, la scrittura è scorrevole (flüssig).",
+      "Ausgewogen: Il punto di forza è..., Peccato che + Konjunktiv; Schluss: Lo consiglio a chi ama..."
+     ],
+     "q": "Welchen Film oder welches Buch würdest du mir empfehlen, und warum?",
+     "c": "Schreib eine Kritik in fünf Sätzen: Ort, Handlung, Figur, Stärke, Urteil."
+    },
+    "es": {
+     "t": "Reseñar una película o un libro",
+     "g": "Hacer una reseña equilibrada: trama, personajes, puntos fuertes y valoración.",
+     "p": [
+      "La trama en presente: La trama racconta di..., Il film è ambientato a... (está ambientada en).",
+      "Personajes y estilo: Il protagonista è..., la regia è curata, la scrittura è scorrevole (fluida).",
+      "Equilibra: Il punto di forza è..., Peccato che + subjuntivo; cierra con Lo consiglio a chi ama..."
+     ],
+     "q": "¿Qué película o libro me recomendarías, y por qué?",
+     "c": "Escribe una reseña de cinco frases: ambientación, trama, personaje, punto fuerte, valoración."
+    },
+    "fr": {
+     "t": "Critiquer un film ou un livre",
+     "g": "Faire une critique équilibrée : intrigue, personnages, points forts et verdict.",
+     "p": [
+      "L'intrigue au présent : La trama racconta di..., Il film è ambientato a... (se déroule à).",
+      "Personnages et style : Il protagonista è..., la regia è curata, la scrittura è scorrevole (fluide).",
+      "Équilibre : Il punto di forza è..., Peccato che + subjonctif ; finis par Lo consiglio a chi ama..."
+     ],
+     "q": "Quel film ou quel livre me recommanderais-tu, et pourquoi ?",
+     "c": "Écris une critique en cinq phrases : cadre, intrigue, personnage, point fort, verdict."
+    },
+    "it": {
+     "t": "Recensire un film o un libro",
+     "g": "Fare una recensione equilibrata: trama, personaggi, punti di forza e giudizio.",
+     "p": [
+      "La trama al presente: La trama racconta di..., Il film è ambientato a...",
+      "Personaggi e stile: Il protagonista è..., la regia è curata, la scrittura è scorrevole.",
+      "Equilibrio: Il punto di forza è..., Peccato che + congiuntivo; chiudi con Lo consiglio a chi ama..."
+     ],
+     "q": "Quale film o libro mi consiglieresti, e perché?",
+     "c": "Scrivi una recensione di cinque frasi: ambientazione, trama, personaggio, punto di forza, giudizio."
+    },
+    "pt": {
+     "t": "Fazer a crítica de um filme ou livro",
+     "g": "Fazer uma crítica equilibrada: enredo, personagens, pontos fortes e veredicto.",
+     "p": [
+      "O enredo no presente: La trama racconta di..., Il film è ambientato a... (passa-se em).",
+      "Personagens e estilo: Il protagonista è..., la regia è curata, la scrittura è scorrevole (fluida).",
+      "Equilibra: Il punto di forza è..., Peccato che + conjuntivo; termina com Lo consiglio a chi ama..."
+     ],
+     "q": "Que filme ou livro me recomendarias, e porquê?",
+     "c": "Escreve uma crítica de cinco frases: cenário, enredo, personagem, ponto forte, veredicto."
+    },
+    "pt_BR": {
+     "t": "Resenhando um filme ou livro",
+     "g": "Fazer uma resenha equilibrada: enredo, personagens, pontos fortes e veredito.",
+     "p": [
+      "O enredo no presente: La trama racconta di..., Il film è ambientato a... (se passa em).",
+      "Personagens e estilo: Il protagonista è..., la regia è curata, la scrittura è scorrevole (fluida).",
+      "Equilibre: Il punto di forza è..., Peccato che + subjuntivo; termine com Lo consiglio a chi ama..."
+     ],
+     "q": "Que filme ou livro você me recomendaria, e por quê?",
+     "c": "Escreva uma resenha de cinco frases: cenário, enredo, personagem, ponto forte, veredito."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la trama",
+      "ex": "La trama è semplice ma coinvolgente."
+     },
+     {
+      "w": "è ambientato a",
+      "ex": "Il romanzo è ambientato a Napoli negli anni Cinquanta."
+     },
+     {
+      "w": "il protagonista",
+      "ex": "Il protagonista è un giovane insegnante."
+     },
+     {
+      "w": "la regia",
+      "ex": "La regia è elegante e la fotografia splendida."
+     },
+     {
+      "w": "il punto di forza",
+      "ex": "Il punto di forza del libro sono i dialoghi."
+     },
+     {
+      "w": "peccato che",
+      "ex": "Peccato che il finale sia un po' prevedibile."
+     }
+    ],
+    "gram": "Peccato che, è un peccato che + congiuntivo: Peccato che il film duri troppo. La trama si racconta al presente."
+   }
+  },
+  {
+   "d": 309,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Writing a cover letter",
+     "g": "Write a lettera di presentazione with motivation, skills and a polite closing.",
+     "p": [
+      "Open formally: Gentile Dott.ssa Rossi, or Spettabile Azienda; then Le scrivo per candidarmi a...",
+      "Show motivation and skills: Sono particolarmente interessato a..., Ho maturato esperienza in...",
+      "Close politely: Resto a disposizione per un colloquio. In attesa di un Suo riscontro, porgo cordiali saluti."
+     ],
+     "q": "Which job would you love to apply for, even just for fun?",
+     "c": "Write the opening and closing lines of a cover letter for your dream job."
+    },
+    "de": {
+     "t": "Ein Anschreiben verfassen",
+     "g": "Du schreibst eine lettera di presentazione mit Motivation, Fähigkeiten und höflichem Schluss.",
+     "p": [
+      "Formeller Beginn: Gentile Dott.ssa Rossi oder Spettabile Azienda; dann Le scrivo per candidarmi a...",
+      "Motivation und Fähigkeiten: Sono particolarmente interessato a..., Ho maturato esperienza in...",
+      "Höflicher Schluss: Resto a disposizione per un colloquio. In attesa di un Suo riscontro, porgo cordiali saluti."
+     ],
+     "q": "Auf welche Stelle würdest du dich gern bewerben, auch nur zum Spaß?",
+     "c": "Schreib Anfang und Schluss eines Anschreibens für deinen Traumjob."
+    },
+    "es": {
+     "t": "Escribir una carta de presentación",
+     "g": "Redactar una lettera di presentazione con motivación, competencias y una despedida cortés.",
+     "p": [
+      "Saludo formal: Gentile Dott.ssa Rossi o Spettabile Azienda; luego Le scrivo per candidarmi a...",
+      "Motivación y competencias: Sono particolarmente interessato a..., Ho maturato esperienza in...",
+      "Despedida: Resto a disposizione per un colloquio. In attesa di un Suo riscontro, porgo cordiali saluti."
+     ],
+     "q": "¿A qué trabajo te encantaría postularte, aunque sea por diversión?",
+     "c": "Escribe el inicio y el cierre de una carta de presentación para el trabajo de tus sueños."
+    },
+    "fr": {
+     "t": "Rédiger une lettre de motivation",
+     "g": "Écrire une lettera di presentazione avec motivation, compétences et formule de politesse.",
+     "p": [
+      "Ouverture formelle : Gentile Dott.ssa Rossi ou Spettabile Azienda ; puis Le scrivo per candidarmi a...",
+      "Motivation et compétences : Sono particolarmente interessato a..., Ho maturato esperienza in...",
+      "Clôture : Resto a disposizione per un colloquio. In attesa di un Suo riscontro, porgo cordiali saluti."
+     ],
+     "q": "À quel poste aimerais-tu postuler, même juste pour le plaisir ?",
+     "c": "Écris le début et la fin d'une lettre de motivation pour le métier de tes rêves."
+    },
+    "it": {
+     "t": "Scrivere una lettera di presentazione",
+     "g": "Scrivere una lettera di presentazione con motivazione, competenze e una chiusura cortese.",
+     "p": [
+      "Apertura formale: Gentile Dott.ssa Rossi o Spettabile Azienda; poi Le scrivo per candidarmi a...",
+      "Motivazione e competenze: Sono particolarmente interessato a..., Ho maturato esperienza in...",
+      "Chiusura: Resto a disposizione per un colloquio. In attesa di un Suo riscontro, porgo cordiali saluti."
+     ],
+     "q": "Per quale lavoro ti piacerebbe candidarti, anche solo per gioco?",
+     "c": "Scrivi l'apertura e la chiusura di una lettera per il lavoro dei tuoi sogni."
+    },
+    "pt": {
+     "t": "Escrever uma carta de apresentação",
+     "g": "Escrever uma lettera di presentazione com motivação, competências e uma despedida cortês.",
+     "p": [
+      "Abertura formal: Gentile Dott.ssa Rossi ou Spettabile Azienda; depois Le scrivo per candidarmi a...",
+      "Motivação e competências: Sono particolarmente interessato a..., Ho maturato esperienza in...",
+      "Fecho: Resto a disposizione per un colloquio. In attesa di un Suo riscontro, porgo cordiali saluti."
+     ],
+     "q": "A que emprego adorarias candidatar-te, nem que seja por brincadeira?",
+     "c": "Escreve a abertura e o fecho de uma carta para o emprego dos teus sonhos."
+    },
+    "pt_BR": {
+     "t": "Escrevendo uma carta de apresentação",
+     "g": "Escrever uma lettera di presentazione com motivação, competências e um fechamento cortês.",
+     "p": [
+      "Abertura formal: Gentile Dott.ssa Rossi ou Spettabile Azienda; depois Le scrivo per candidarmi a...",
+      "Motivação e competências: Sono particolarmente interessato a..., Ho maturato esperienza in...",
+      "Fechamento: Resto a disposizione per un colloquio. In attesa di un Suo riscontro, porgo cordiali saluti."
+     ],
+     "q": "Para que emprego você adoraria se candidatar, nem que seja por brincadeira?",
+     "c": "Escreva a abertura e o fechamento de uma carta para o emprego dos seus sonhos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "candidarsi",
+      "ex": "Le scrivo per candidarmi alla posizione di grafico."
+     },
+     {
+      "w": "la candidatura",
+      "ex": "Allego alla presente il mio curriculum e la mia candidatura."
+     },
+     {
+      "w": "maturare esperienza",
+      "ex": "Ho maturato esperienza nel servizio clienti."
+     },
+     {
+      "w": "le competenze",
+      "ex": "Tra le mie competenze ci sono l'inglese e l'Excel."
+     },
+     {
+      "w": "restare a disposizione",
+      "ex": "Resto a disposizione per qualsiasi chiarimento."
+     },
+     {
+      "w": "porgere cordiali saluti",
+      "ex": "In attesa di un Suo riscontro, porgo cordiali saluti."
+     }
+    ],
+    "gram": "Nella lettera formale: Lei con maiuscola (Suo, La ringrazio) e condizionale di cortesia (sarei lieto di...)."
+   }
+  },
+  {
+   "d": 310,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Advanced job interview",
+     "g": "Talk about challenges, achievements and future goals convincingly.",
+     "p": [
+      "Describe a challenge with the passato prossimo: Ho dovuto gestire..., Sono riuscito a risolvere...",
+      "Present achievements with numbers and results: Ho ridotto i tempi del venti per cento.",
+      "Speak about the future: Fra cinque anni mi vedo..., Mi piacerebbe crescere nel ruolo di..."
+     ],
+     "q": "What is an achievement you are proud of, di cui sei orgoglioso?",
+     "c": "Prepare three answers: your biggest challenge, an achievement and where you see yourself in five years."
+    },
+    "de": {
+     "t": "Fortgeschrittenes Vorstellungsgespräch",
+     "g": "Du sprichst überzeugend über Herausforderungen, Erfolge und Ziele.",
+     "p": [
+      "Beschreibe eine Herausforderung im passato prossimo: Ho dovuto gestire..., Sono riuscito a risolvere...",
+      "Nenne Erfolge mit Zahlen und Ergebnissen: Ho ridotto i tempi del venti per cento.",
+      "Sprich über die Zukunft: Fra cinque anni mi vedo..., Mi piacerebbe crescere nel ruolo di..."
+     ],
+     "q": "Auf welchen Erfolg bist du stolz, di cui sei orgoglioso?",
+     "c": "Bereite drei Antworten vor: größte Herausforderung, ein Erfolg und wo du dich in fünf Jahren siehst."
+    },
+    "es": {
+     "t": "Entrevista de trabajo avanzada",
+     "g": "Hablar con convicción de retos, logros y objetivos futuros.",
+     "p": [
+      "Describe un reto en passato prossimo: Ho dovuto gestire..., Sono riuscito a risolvere...",
+      "Presenta logros con cifras y resultados: Ho ridotto i tempi del venti per cento.",
+      "Habla del futuro: Fra cinque anni mi vedo..., Mi piacerebbe crescere nel ruolo di..."
+     ],
+     "q": "¿De qué logro te sientes orgulloso, di cui sei orgoglioso?",
+     "c": "Prepara tres respuestas: tu mayor reto, un logro y dónde te ves en cinco años."
+    },
+    "fr": {
+     "t": "Entretien d'embauche avancé",
+     "g": "Parler de manière convaincante de défis, de réussites et d'objectifs.",
+     "p": [
+      "Décris un défi au passato prossimo : Ho dovuto gestire..., Sono riuscito a risolvere...",
+      "Présente tes réussites avec des chiffres : Ho ridotto i tempi del venti per cento.",
+      "Parle de l'avenir : Fra cinque anni mi vedo..., Mi piacerebbe crescere nel ruolo di..."
+     ],
+     "q": "De quelle réussite es-tu fier, di cui sei orgoglioso ?",
+     "c": "Prépare trois réponses : ton plus grand défi, une réussite et où tu te vois dans cinq ans."
+    },
+    "it": {
+     "t": "Colloquio di lavoro avanzato",
+     "g": "Parlare in modo convincente di sfide, risultati e obiettivi futuri.",
+     "p": [
+      "Racconta una sfida al passato prossimo: Ho dovuto gestire..., Sono riuscito a risolvere...",
+      "Presenta i risultati con numeri concreti: Ho ridotto i tempi del venti per cento.",
+      "Parla del futuro: Fra cinque anni mi vedo..., Mi piacerebbe crescere nel ruolo di..."
+     ],
+     "q": "Di quale risultato sei orgoglioso?",
+     "c": "Prepara tre risposte: la sfida più grande, un risultato e dove ti vedi fra cinque anni."
+    },
+    "pt": {
+     "t": "Entrevista de emprego avançada",
+     "g": "Falar de forma convincente sobre desafios, conquistas e objetivos.",
+     "p": [
+      "Descreve um desafio no passato prossimo: Ho dovuto gestire..., Sono riuscito a risolvere...",
+      "Apresenta conquistas com números e resultados: Ho ridotto i tempi del venti per cento.",
+      "Fala do futuro: Fra cinque anni mi vedo..., Mi piacerebbe crescere nel ruolo di..."
+     ],
+     "q": "De que conquista te orgulhas, di cui sei orgoglioso?",
+     "c": "Prepara três respostas: o teu maior desafio, uma conquista e onde te vês daqui a cinco anos."
+    },
+    "pt_BR": {
+     "t": "Entrevista de emprego avançada",
+     "g": "Falar de forma convincente sobre desafios, conquistas e metas.",
+     "p": [
+      "Descreva um desafio no passato prossimo: Ho dovuto gestire..., Sono riuscito a risolvere...",
+      "Apresente conquistas com números e resultados: Ho ridotto i tempi del venti per cento.",
+      "Fale do futuro: Fra cinque anni mi vedo..., Mi piacerebbe crescere nel ruolo di..."
+     ],
+     "q": "De que conquista você se orgulha, di cui sei orgoglioso?",
+     "c": "Prepare três respostas: seu maior desafio, uma conquista e onde você se vê em cinco anos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "gestire",
+      "ex": "Ho dovuto gestire un gruppo di dieci persone."
+     },
+     {
+      "w": "riuscire a",
+      "ex": "Sono riuscita a chiudere il progetto in anticipo."
+     },
+     {
+      "w": "il punto debole",
+      "ex": "Il mio punto debole? A volte sono troppo perfezionista."
+     },
+     {
+      "w": "essere orgoglioso di",
+      "ex": "Sono orgoglioso del lavoro che abbiamo fatto."
+     },
+     {
+      "w": "mi vedo",
+      "ex": "Fra cinque anni mi vedo in un ruolo di responsabilità."
+     },
+     {
+      "w": "crescere professionalmente",
+      "ex": "Cerco un'azienda dove crescere professionalmente."
+     }
+    ],
+    "gram": "Riuscire a + infinito usa essere al passato (sono riuscito a); dovere usa avere (ho dovuto gestire)."
+   }
+  }
+ ]
+}

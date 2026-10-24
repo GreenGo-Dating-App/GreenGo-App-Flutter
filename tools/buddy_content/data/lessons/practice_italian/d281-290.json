@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 281,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Congiuntivo trapassato",
+     "g": "Use the past perfect subjunctive: se avessi saputo, pensavo che fosse già partito.",
+     "p": [
+      "Form: avessi or fossi + past participle: avessi parlato, fossi arrivato, fossero usciti.",
+      "Use it after a past main verb for an earlier action: pensavo che tu avessi già mangiato.",
+      "Also in wishes about the past: magari fossi venuto anch'io! (if only I had come too!)"
+     ],
+     "q": "Was there a moment when you thought something had happened, but it hadn't?",
+     "c": "Write three sentences: two with pensavo che + trapassato, one with magari + trapassato."
+    },
+    "de": {
+     "t": "Congiuntivo trapassato",
+     "g": "Du verwendest den Konjunktiv Plusquamperfekt: se avessi saputo, pensavo che fosse già partito.",
+     "p": [
+      "Bildung: avessi oder fossi + Partizip: avessi parlato, fossi arrivato, fossero usciti.",
+      "Nach einem Hauptverb in der Vergangenheit für eine frühere Handlung: pensavo che tu avessi già mangiato.",
+      "Auch für Wünsche zur Vergangenheit: magari fossi venuto anch'io! (wäre ich nur auch gekommen!)"
+     ],
+     "q": "Gab es einen Moment, in dem du dachtest, etwas sei passiert, aber es stimmte nicht?",
+     "c": "Schreib drei Sätze: zwei mit pensavo che + trapassato, einen mit magari + trapassato."
+    },
+    "es": {
+     "t": "Congiuntivo trapassato",
+     "g": "Usar el pluscuamperfecto de subjuntivo: se avessi saputo, pensavo che fosse già partito.",
+     "p": [
+      "Forma: avessi o fossi + participio: avessi parlato, fossi arrivato, fossero usciti.",
+      "Tras un verbo principal en pasado para una acción anterior: pensavo che tu avessi già mangiato.",
+      "También en deseos sobre el pasado: magari fossi venuto anch'io! (¡ojalá hubiera venido yo también!)"
+     ],
+     "q": "¿Hubo un momento en que creíste que algo había pasado, pero no era así?",
+     "c": "Escribe tres frases: dos con pensavo che + trapassato y una con magari + trapassato."
+    },
+    "fr": {
+     "t": "Congiuntivo trapassato",
+     "g": "Utiliser le subjonctif plus-que-parfait : se avessi saputo, pensavo che fosse già partito.",
+     "p": [
+      "Forme : avessi ou fossi + participe passé : avessi parlato, fossi arrivato, fossero usciti.",
+      "Après un verbe principal au passé pour une action antérieure : pensavo che tu avessi già mangiato.",
+      "Aussi pour les regrets : magari fossi venuto anch'io! (si seulement j'étais venu aussi !)"
+     ],
+     "q": "Y a-t-il eu un moment où tu croyais que quelque chose s'était passé, mais non ?",
+     "c": "Écris trois phrases : deux avec pensavo che + trapassato, une avec magari + trapassato."
+    },
+    "it": {
+     "t": "Congiuntivo trapassato",
+     "g": "Usare il congiuntivo trapassato: se avessi saputo, pensavo che fosse già partito.",
+     "p": [
+      "Forma: avessi o fossi + participio passato: avessi parlato, fossi arrivato, fossero usciti.",
+      "Si usa dopo un verbo principale al passato per un'azione anteriore: pensavo che tu avessi già mangiato.",
+      "Anche nei desideri sul passato: magari fossi venuto anch'io!"
+     ],
+     "q": "C'è stato un momento in cui pensavi che fosse successo qualcosa, ma non era vero?",
+     "c": "Scrivi tre frasi: due con pensavo che + trapassato, una con magari + trapassato."
+    },
+    "pt": {
+     "t": "Congiuntivo trapassato",
+     "g": "Usar o mais-que-perfeito do conjuntivo: se avessi saputo, pensavo che fosse già partito.",
+     "p": [
+      "Forma: avessi ou fossi + particípio: avessi parlato, fossi arrivato, fossero usciti.",
+      "Depois de um verbo principal no passado para uma ação anterior: pensavo che tu avessi già mangiato.",
+      "Também em desejos sobre o passado: magari fossi venuto anch'io! (quem me dera ter vindo também!)"
+     ],
+     "q": "Houve um momento em que pensaste que algo tinha acontecido, mas não era verdade?",
+     "c": "Escreve três frases: duas com pensavo che + trapassato e uma com magari + trapassato."
+    },
+    "pt_BR": {
+     "t": "Congiuntivo trapassato",
+     "g": "Usar o mais-que-perfeito do subjuntivo: se avessi saputo, pensavo che fosse già partito.",
+     "p": [
+      "Forma: avessi ou fossi + particípio: avessi parlato, fossi arrivato, fossero usciti.",
+      "Depois de um verbo principal no passado para uma ação anterior: pensavo che tu avessi già mangiato.",
+      "Também em desejos sobre o passado: magari fossi venuto anch'io! (quem dera eu tivesse vindo também!)"
+     ],
+     "q": "Já houve um momento em que você pensou que algo tinha acontecido, mas não era verdade?",
+     "c": "Escreva três frases: duas com pensavo che + trapassato e uma com magari + trapassato."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "pensavo che fosse",
+      "ex": "Pensavo che fosse già partito per Milano."
+     },
+     {
+      "w": "credevo che avessi",
+      "ex": "Credevo che avessi già finito il libro."
+     },
+     {
+      "w": "magari fossi",
+      "ex": "Magari fossi venuto con voi al concerto!"
+     },
+     {
+      "w": "sembrava che",
+      "ex": "Sembrava che nessuno avesse capito la domanda."
+     },
+     {
+      "w": "non sapevo che",
+      "ex": "Non sapevo che vi foste trasferiti."
+     },
+     {
+      "w": "speravo che",
+      "ex": "Speravo che il treno fosse arrivato in orario."
+     }
+    ],
+    "gram": "Congiuntivo trapassato: avessi/fossi + participio; dopo un verbo al passato per un'azione anteriore (pensavo che fosse uscito)."
+   }
+  },
+  {
+   "d": 282,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Periodo ipotetico of impossibility",
+     "g": "Talk about conditions in the past that did not happen: se fossi venuto, ti saresti divertito.",
+     "p": [
+      "Structure: se + congiuntivo trapassato, + condizionale passato.",
+      "Se avessi studiato, avrei passato l'esame: you did not study, so you did not pass.",
+      "In speech Italians often use the imperfetto: se lo sapevo, venivo. Learn the standard form first."
+     ],
+     "q": "What would you have done differently if you had known Italian ten years ago?",
+     "c": "Write three regret-free hypotheses about the past: se fossi nato in Italia, avrei..."
+    },
+    "de": {
+     "t": "Periodo ipotetico der Unmöglichkeit",
+     "g": "Du sprichst über Bedingungen in der Vergangenheit, die nicht eintraten: se fossi venuto, ti saresti divertito.",
+     "p": [
+      "Struktur: se + congiuntivo trapassato, + condizionale passato.",
+      "Se avessi studiato, avrei passato l'esame: du hast nicht gelernt, also nicht bestanden.",
+      "Gesprochen hört man oft das Imperfetto: se lo sapevo, venivo. Lerne zuerst die Standardform."
+     ],
+     "q": "Was hättest du anders gemacht, wenn du vor zehn Jahren Italienisch gekonnt hättest?",
+     "c": "Schreib drei Hypothesen über die Vergangenheit: se fossi nato in Italia, avrei..."
+    },
+    "es": {
+     "t": "Periodo ipotetico de la imposibilidad",
+     "g": "Hablar de condiciones pasadas que no ocurrieron: se fossi venuto, ti saresti divertito.",
+     "p": [
+      "Estructura: se + congiuntivo trapassato, + condizionale passato.",
+      "Se avessi studiato, avrei passato l'esame: no estudiaste, así que no aprobaste.",
+      "Al hablar se usa a menudo el imperfetto: se lo sapevo, venivo. Aprende primero la forma estándar."
+     ],
+     "q": "¿Qué habrías hecho diferente si hubieras sabido italiano hace diez años?",
+     "c": "Escribe tres hipótesis sobre el pasado: se fossi nato in Italia, avrei..."
+    },
+    "fr": {
+     "t": "Periodo ipotetico de l'irréel du passé",
+     "g": "Parler de conditions passées non réalisées : se fossi venuto, ti saresti divertito.",
+     "p": [
+      "Structure : se + congiuntivo trapassato, + condizionale passato.",
+      "Se avessi studiato, avrei passato l'esame : tu n'as pas étudié, donc pas réussi.",
+      "À l'oral, on entend souvent l'imperfetto : se lo sapevo, venivo. Apprends d'abord la forme standard."
+     ],
+     "q": "Qu'aurais-tu fait autrement si tu avais parlé italien il y a dix ans ?",
+     "c": "Écris trois hypothèses sur le passé : se fossi nato in Italia, avrei..."
+    },
+    "it": {
+     "t": "Periodo ipotetico dell'impossibilità",
+     "g": "Parlare di condizioni passate che non si sono realizzate: se fossi venuto, ti saresti divertito.",
+     "p": [
+      "Struttura: se + congiuntivo trapassato, + condizionale passato.",
+      "Se avessi studiato, avrei passato l'esame: non hai studiato, quindi non l'hai passato.",
+      "Nel parlato si usa spesso l'imperfetto: se lo sapevo, venivo. Impara prima la forma standard."
+     ],
+     "q": "Che cosa avresti fatto di diverso se avessi saputo l'italiano dieci anni fa?",
+     "c": "Scrivi tre ipotesi sul passato: se fossi nato in Italia, avrei..."
+    },
+    "pt": {
+     "t": "Periodo ipotetico da impossibilidade",
+     "g": "Falar de condições passadas que não aconteceram: se fossi venuto, ti saresti divertito.",
+     "p": [
+      "Estrutura: se + congiuntivo trapassato, + condizionale passato.",
+      "Se avessi studiato, avrei passato l'esame: não estudaste, por isso não passaste.",
+      "Na fala usa-se muitas vezes o imperfetto: se lo sapevo, venivo. Aprende primeiro a forma padrão."
+     ],
+     "q": "O que terias feito de diferente se soubesses italiano há dez anos?",
+     "c": "Escreve três hipóteses sobre o passado: se fossi nato in Italia, avrei..."
+    },
+    "pt_BR": {
+     "t": "Periodo ipotetico da impossibilidade",
+     "g": "Falar de condições passadas que não aconteceram: se fossi venuto, ti saresti divertito.",
+     "p": [
+      "Estrutura: se + congiuntivo trapassato, + condizionale passato.",
+      "Se avessi studiato, avrei passato l'esame: você não estudou, então não passou.",
+      "Na fala se usa muito o imperfetto: se lo sapevo, venivo. Aprenda primeiro a forma padrão."
+     ],
+     "q": "O que você teria feito de diferente se soubesse italiano dez anos atrás?",
+     "c": "Escreva três hipóteses sobre o passado: se fossi nato in Italia, avrei..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "se fossi venuto",
+      "ex": "Se fossi venuto alla festa, ti saresti divertito."
+     },
+     {
+      "w": "se avessi saputo",
+      "ex": "Se avessi saputo dello sciopero, avrei preso la macchina."
+     },
+     {
+      "w": "avrei fatto",
+      "ex": "Al tuo posto avrei fatto lo stesso."
+     },
+     {
+      "w": "sarei andato",
+      "ex": "Se avessi avuto tempo, sarei andato a Venezia."
+     },
+     {
+      "w": "se lo sapevo",
+      "ex": "Se lo sapevo, venivo prima! (parlato)"
+     },
+     {
+      "w": "avremmo potuto",
+      "ex": "Se fossimo partiti prima, avremmo potuto vedere il tramonto."
+     }
+    ],
+    "gram": "Periodo ipotetico dell'impossibilità: se + congiuntivo trapassato, condizionale passato (se avessi visto, avrei capito)."
+   }
+  },
+  {
+   "d": 283,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Mixed hypothetical sentences",
+     "g": "Link a past cause to a present result: se avessi studiato, ora parlerei meglio.",
+     "p": [
+      "Past condition + present result: se + congiuntivo trapassato, + condizionale presente.",
+      "Se fossi andato a letto presto, adesso non sarei così stanco. Words like ora and oggi help.",
+      "The reverse also works: se fossi più organizzato, non avrei perso il treno ieri."
+     ],
+     "q": "If you had made one different choice in the past, how would your life be different today?",
+     "c": "Write two mixed hypotheses about yourself, one in each direction."
+    },
+    "de": {
+     "t": "Gemischte Bedingungssätze",
+     "g": "Du verbindest eine vergangene Ursache mit einer gegenwärtigen Folge: se avessi studiato, ora parlerei meglio.",
+     "p": [
+      "Vergangene Bedingung + heutige Folge: se + congiuntivo trapassato, + condizionale presente.",
+      "Se fossi andato a letto presto, adesso non sarei così stanco. Wörter wie ora und oggi helfen.",
+      "Umgekehrt geht es auch: se fossi più organizzato, non avrei perso il treno ieri."
+     ],
+     "q": "Wenn du in der Vergangenheit eine Entscheidung anders getroffen hättest, wie wäre dein Leben heute?",
+     "c": "Schreib zwei gemischte Bedingungssätze über dich, einen in jede Richtung."
+    },
+    "es": {
+     "t": "Oraciones condicionales mixtas",
+     "g": "Unir una causa pasada con un resultado presente: se avessi studiato, ora parlerei meglio.",
+     "p": [
+      "Condición pasada + resultado presente: se + congiuntivo trapassato, + condizionale presente.",
+      "Se fossi andato a letto presto, adesso non sarei così stanco. Palabras como ora y oggi ayudan.",
+      "También al revés: se fossi più organizzato, non avrei perso il treno ieri."
+     ],
+     "q": "Si hubieras tomado una decisión distinta en el pasado, ¿cómo sería tu vida hoy?",
+     "c": "Escribe dos condicionales mixtas sobre ti, una en cada dirección."
+    },
+    "fr": {
+     "t": "Phrases hypothétiques mixtes",
+     "g": "Relier une cause passée à un résultat présent : se avessi studiato, ora parlerei meglio.",
+     "p": [
+      "Condition passée + résultat présent : se + congiuntivo trapassato, + condizionale presente.",
+      "Se fossi andato a letto presto, adesso non sarei così stanco. Des mots comme ora et oggi aident.",
+      "L'inverse marche aussi : se fossi più organizzato, non avrei perso il treno ieri."
+     ],
+     "q": "Si tu avais fait un autre choix dans le passé, en quoi ta vie serait-elle différente aujourd'hui ?",
+     "c": "Écris deux hypothèses mixtes sur toi, une dans chaque sens."
+    },
+    "it": {
+     "t": "Periodi ipotetici misti",
+     "g": "Collegare una causa passata a un risultato presente: se avessi studiato, ora parlerei meglio.",
+     "p": [
+      "Condizione passata + conseguenza presente: se + congiuntivo trapassato, + condizionale presente.",
+      "Se fossi andato a letto presto, adesso non sarei così stanco. Parole come ora e oggi aiutano.",
+      "Funziona anche al contrario: se fossi più organizzato, non avrei perso il treno ieri."
+     ],
+     "q": "Se nel passato avessi fatto una scelta diversa, come sarebbe oggi la tua vita?",
+     "c": "Scrivi due periodi ipotetici misti su di te, uno per ogni direzione."
+    },
+    "pt": {
+     "t": "Frases hipotéticas mistas",
+     "g": "Ligar uma causa passada a um resultado presente: se avessi studiato, ora parlerei meglio.",
+     "p": [
+      "Condição passada + resultado presente: se + congiuntivo trapassato, + condizionale presente.",
+      "Se fossi andato a letto presto, adesso non sarei così stanco. Palavras como ora e oggi ajudam.",
+      "Também funciona ao contrário: se fossi più organizzato, non avrei perso il treno ieri."
+     ],
+     "q": "Se tivesses feito uma escolha diferente no passado, como seria hoje a tua vida?",
+     "c": "Escreve duas frases hipotéticas mistas sobre ti, uma em cada direção."
+    },
+    "pt_BR": {
+     "t": "Frases hipotéticas mistas",
+     "g": "Ligar uma causa passada a um resultado presente: se avessi studiato, ora parlerei meglio.",
+     "p": [
+      "Condição passada + resultado presente: se + congiuntivo trapassato, + condizionale presente.",
+      "Se fossi andato a letto presto, adesso non sarei così stanco. Palavras como ora e oggi ajudam.",
+      "Também funciona ao contrário: se fossi più organizzato, non avrei perso il treno ieri."
+     ],
+     "q": "Se você tivesse feito uma escolha diferente no passado, como seria sua vida hoje?",
+     "c": "Escreva duas frases hipotéticas mistas sobre você, uma em cada direção."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "se avessi studiato",
+      "ex": "Se avessi studiato di più, ora parlerei meglio."
+     },
+     {
+      "w": "adesso sarei",
+      "ex": "Se fossi partito ieri, adesso sarei già a Napoli."
+     },
+     {
+      "w": "ora avrei",
+      "ex": "Se avessi risparmiato, ora avrei una macchina nuova."
+     },
+     {
+      "w": "se fossi più",
+      "ex": "Se fossi più paziente, non avrei litigato con lui."
+     },
+     {
+      "w": "oggi non",
+      "ex": "Se avessi preso l'ombrello, oggi non sarei raffreddato."
+     },
+     {
+      "w": "a quest'ora",
+      "ex": "Se avessimo preso il treno delle otto, a quest'ora saremmo arrivati."
+     }
+    ],
+    "gram": "Periodo misto: se + congiuntivo trapassato + condizionale presente (passato → presente), o viceversa."
+   }
+  },
+  {
+   "d": 284,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Sequence of tenses: overview",
+     "g": "See how the main verb decides the subjunctive tense in the dependent clause.",
+     "p": [
+      "Main verb in the present: penso che parta (same time/after), penso che sia partito (before).",
+      "Main verb in the past: pensavo che partisse (same time), pensavo che fosse partito (before).",
+      "Future after a past verb: pensavo che sarebbe partito, with the condizionale passato."
+     ],
+     "q": "Which subjunctive tense do you find hardest to choose, and why?",
+     "c": "Change these to the past: penso che venga; penso che sia venuto. Write both new sentences."
+    },
+    "de": {
+     "t": "Zeitenfolge: Überblick",
+     "g": "Du siehst, wie das Hauptverb die Konjunktivzeit im Nebensatz bestimmt.",
+     "p": [
+      "Hauptverb im Präsens: penso che parta (gleichzeitig/danach), penso che sia partito (vorher).",
+      "Hauptverb in der Vergangenheit: pensavo che partisse (gleichzeitig), pensavo che fosse partito (vorher).",
+      "Zukunft nach Vergangenheit: pensavo che sarebbe partito, mit dem condizionale passato."
+     ],
+     "q": "Welche Konjunktivzeit fällt dir am schwersten, und warum?",
+     "c": "Setze in die Vergangenheit: penso che venga; penso che sia venuto. Schreib beide neuen Sätze."
+    },
+    "es": {
+     "t": "Concordancia de tiempos: visión general",
+     "g": "Ver cómo el verbo principal decide el tiempo del subjuntivo en la subordinada.",
+     "p": [
+      "Verbo principal en presente: penso che parta (simultáneo/posterior), penso che sia partito (anterior).",
+      "Verbo principal en pasado: pensavo che partisse (simultáneo), pensavo che fosse partito (anterior).",
+      "Futuro tras un pasado: pensavo che sarebbe partito, con el condizionale passato."
+     ],
+     "q": "¿Qué tiempo del subjuntivo te cuesta más elegir y por qué?",
+     "c": "Pasa al pasado: penso che venga; penso che sia venuto. Escribe las dos frases nuevas."
+    },
+    "fr": {
+     "t": "Concordance des temps : vue d'ensemble",
+     "g": "Voir comment le verbe principal choisit le temps du subjonctif dans la subordonnée.",
+     "p": [
+      "Verbe principal au présent : penso che parta (simultané/postérieur), penso che sia partito (antérieur).",
+      "Verbe principal au passé : pensavo che partisse (simultané), pensavo che fosse partito (antérieur).",
+      "Futur dans le passé : pensavo che sarebbe partito, avec le condizionale passato."
+     ],
+     "q": "Quel temps du subjonctif as-tu le plus de mal à choisir, et pourquoi ?",
+     "c": "Mets au passé : penso che venga ; penso che sia venuto. Écris les deux nouvelles phrases."
+    },
+    "it": {
+     "t": "Concordanza dei tempi: panoramica",
+     "g": "Capire come il verbo principale sceglie il tempo del congiuntivo nella subordinata.",
+     "p": [
+      "Principale al presente: penso che parta (contemporaneità/posteriorità), penso che sia partito (anteriorità).",
+      "Principale al passato: pensavo che partisse (contemporaneità), pensavo che fosse partito (anteriorità).",
+      "Posteriorità nel passato: pensavo che sarebbe partito, con il condizionale passato."
+     ],
+     "q": "Quale tempo del congiuntivo ti è più difficile scegliere, e perché?",
+     "c": "Volgi al passato: penso che venga; penso che sia venuto. Scrivi le due nuove frasi."
+    },
+    "pt": {
+     "t": "Concordância dos tempos: visão geral",
+     "g": "Perceber como o verbo principal decide o tempo do conjuntivo na subordinada.",
+     "p": [
+      "Verbo principal no presente: penso che parta (simultâneo/posterior), penso che sia partito (anterior).",
+      "Verbo principal no passado: pensavo che partisse (simultâneo), pensavo che fosse partito (anterior).",
+      "Futuro depois de passado: pensavo che sarebbe partito, com o condizionale passato."
+     ],
+     "q": "Que tempo do conjuntivo te custa mais escolher, e porquê?",
+     "c": "Passa para o passado: penso che venga; penso che sia venuto. Escreve as duas frases novas."
+    },
+    "pt_BR": {
+     "t": "Correlação dos tempos: visão geral",
+     "g": "Entender como o verbo principal decide o tempo do subjuntivo na subordinada.",
+     "p": [
+      "Verbo principal no presente: penso che parta (simultâneo/posterior), penso che sia partito (anterior).",
+      "Verbo principal no passado: pensavo che partisse (simultâneo), pensavo che fosse partito (anterior).",
+      "Futuro depois de passado: pensavo che sarebbe partito, com o condizionale passato."
+     ],
+     "q": "Qual tempo do subjuntivo é mais difícil de escolher para você, e por quê?",
+     "c": "Passe para o passado: penso che venga; penso che sia venuto. Escreva as duas frases novas."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "penso che parta",
+      "ex": "Penso che Luca parta domani."
+     },
+     {
+      "w": "penso che sia partito",
+      "ex": "Penso che sia partito ieri sera."
+     },
+     {
+      "w": "pensavo che partisse",
+      "ex": "Pensavo che partisse con noi."
+     },
+     {
+      "w": "pensavo che fosse partito",
+      "ex": "Pensavo che fosse già partito."
+     },
+     {
+      "w": "pensavo che sarebbe partito",
+      "ex": "Pensavo che sarebbe partito la settimana dopo."
+     },
+     {
+      "w": "la concordanza",
+      "ex": "La concordanza dei tempi rende la frase elegante."
+     }
+    ],
+    "gram": "Concordanza: principale al presente → congiuntivo presente/passato; al passato → imperfetto/trapassato o condizionale passato."
+   }
+  },
+  {
+   "d": 285,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Sequence of tenses in practice",
+     "g": "Practise choosing the subjunctive tense: credevo che fosse, credo che fosse, crederò che sia.",
+     "p": [
+      "Credo che fosse: present main verb about a past state or habit: credo che da giovane fosse timido.",
+      "Credevo che fosse: past main verb, same time. Crederò che sia: future main verb, present subjunctive.",
+      "Check yourself: when is the main verb? When is the action compared to it? Then choose."
+     ],
+     "q": "Who did you think was Italian, but turned out to be from somewhere else?",
+     "c": "Complete these: Credo che mio nonno... (da giovane); Pensavo che tu...; Spero che domani..."
+    },
+    "de": {
+     "t": "Zeitenfolge in der Praxis",
+     "g": "Du übst die Wahl der Konjunktivzeit: credevo che fosse, credo che fosse, crederò che sia.",
+     "p": [
+      "Credo che fosse: Hauptverb im Präsens über einen früheren Zustand: credo che da giovane fosse timido.",
+      "Credevo che fosse: Hauptverb vergangen, gleichzeitig. Crederò che sia: Hauptverb im Futur, Konjunktiv Präsens.",
+      "Prüfe dich: Wann ist das Hauptverb? Wann die Handlung im Vergleich dazu? Dann wähle."
+     ],
+     "q": "Wen hast du für einen Italiener gehalten, der sich dann als jemand von woanders herausstellte?",
+     "c": "Ergänze: Credo che mio nonno... (da giovane); Pensavo che tu...; Spero che domani..."
+    },
+    "es": {
+     "t": "Concordancia de tiempos en la práctica",
+     "g": "Practicar la elección del subjuntivo: credevo che fosse, credo che fosse, crederò che sia.",
+     "p": [
+      "Credo che fosse: verbo principal en presente sobre un estado pasado: credo che da giovane fosse timido.",
+      "Credevo che fosse: verbo en pasado, simultáneo. Crederò che sia: verbo en futuro, subjuntivo presente.",
+      "Compruébalo: ¿cuándo es el verbo principal? ¿Cuándo la acción respecto a él? Luego elige."
+     ],
+     "q": "¿A quién creías italiano y resultó ser de otro lugar?",
+     "c": "Completa: Credo che mio nonno... (da giovane); Pensavo che tu...; Spero che domani..."
+    },
+    "fr": {
+     "t": "Concordance des temps en pratique",
+     "g": "S'entraîner à choisir le subjonctif : credevo che fosse, credo che fosse, crederò che sia.",
+     "p": [
+      "Credo che fosse : verbe principal au présent sur un état passé : credo che da giovane fosse timido.",
+      "Credevo che fosse : verbe au passé, simultanéité. Crederò che sia : verbe au futur, subjonctif présent.",
+      "Vérifie : quand se situe le verbe principal ? Et l'action par rapport à lui ? Puis choisis."
+     ],
+     "q": "Qui croyais-tu italien et venait en fait d'ailleurs ?",
+     "c": "Complète : Credo che mio nonno... (da giovane) ; Pensavo che tu... ; Spero che domani..."
+    },
+    "it": {
+     "t": "Concordanza dei tempi in pratica",
+     "g": "Esercitarsi a scegliere il congiuntivo: credevo che fosse, credo che fosse, crederò che sia.",
+     "p": [
+      "Credo che fosse: principale al presente su uno stato passato: credo che da giovane fosse timido.",
+      "Credevo che fosse: principale al passato, contemporaneità. Crederò che sia: principale al futuro, congiuntivo presente.",
+      "Verifica: quando è il verbo principale? Quando avviene l'azione rispetto a esso? Poi scegli."
+     ],
+     "q": "Chi credevi che fosse italiano e invece veniva da un altro paese?",
+     "c": "Completa: Credo che mio nonno... (da giovane); Pensavo che tu...; Spero che domani..."
+    },
+    "pt": {
+     "t": "Concordância dos tempos na prática",
+     "g": "Praticar a escolha do conjuntivo: credevo che fosse, credo che fosse, crederò che sia.",
+     "p": [
+      "Credo che fosse: verbo principal no presente sobre um estado passado: credo che da giovane fosse timido.",
+      "Credevo che fosse: verbo no passado, simultâneo. Crederò che sia: verbo no futuro, conjuntivo presente.",
+      "Verifica: quando é o verbo principal? Quando é a ação em relação a ele? Depois escolhe."
+     ],
+     "q": "Quem julgavas que era italiano e afinal era de outro lugar?",
+     "c": "Completa: Credo che mio nonno... (da giovane); Pensavo che tu...; Spero che domani..."
+    },
+    "pt_BR": {
+     "t": "Correlação dos tempos na prática",
+     "g": "Praticar a escolha do subjuntivo: credevo che fosse, credo che fosse, crederò che sia.",
+     "p": [
+      "Credo che fosse: verbo principal no presente sobre um estado passado: credo che da giovane fosse timido.",
+      "Credevo che fosse: verbo no passado, simultâneo. Crederò che sia: verbo no futuro, subjuntivo presente.",
+      "Confira: quando é o verbo principal? Quando é a ação em relação a ele? Depois escolha."
+     ],
+     "q": "Quem você achava que era italiano e no fim era de outro lugar?",
+     "c": "Complete: Credo che mio nonno... (da giovane); Pensavo che tu...; Spero che domani..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "credo che fosse",
+      "ex": "Credo che da bambino fosse molto vivace."
+     },
+     {
+      "w": "credevo che fosse",
+      "ex": "Credevo che fosse spagnolo, invece è di Bari."
+     },
+     {
+      "w": "crederò che sia",
+      "ex": "Crederò che sia vero solo quando lo vedrò."
+     },
+     {
+      "w": "immaginavo che",
+      "ex": "Immaginavo che la città fosse più grande."
+     },
+     {
+      "w": "è probabile che",
+      "ex": "È probabile che arrivino in ritardo."
+     },
+     {
+      "w": "era necessario che",
+      "ex": "Era necessario che tutti firmassero il modulo."
+     }
+    ],
+    "gram": "Credo che + congiuntivo imperfetto per uno stato passato (credo che fosse); principale al futuro → congiuntivo presente."
+   }
+  },
+  {
+   "d": 286,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Passato remoto: why it matters",
+     "g": "Discover the literary past used in books, history and southern everyday speech.",
+     "p": [
+      "The passato remoto describes completed past actions felt as distant: Dante nacque a Firenze nel 1265.",
+      "You meet it in novels, fairy tales and history books: Colombo partì nel 1492.",
+      "In the north people speak with the passato prossimo; in parts of the south the remoto is still everyday."
+     ],
+     "q": "Do you prefer reading history or novels? Which famous story would you like to read in Italian?",
+     "c": "Find three verbs in passato remoto in this lesson and guess their infinitives."
+    },
+    "de": {
+     "t": "Passato remoto: warum es wichtig ist",
+     "g": "Du entdeckst die literarische Vergangenheit aus Büchern, Geschichte und dem Süden.",
+     "p": [
+      "Das passato remoto beschreibt abgeschlossene, ferne Handlungen: Dante nacque a Firenze nel 1265.",
+      "Du triffst es in Romanen, Märchen und Geschichtsbüchern: Colombo partì nel 1492.",
+      "Im Norden spricht man mit dem passato prossimo; in Teilen des Südens ist das remoto noch Alltag."
+     ],
+     "q": "Liest du lieber Geschichte oder Romane? Welche berühmte Geschichte würdest du gern auf Italienisch lesen?",
+     "c": "Finde drei Verben im passato remoto in dieser Lektion und rate ihre Infinitive."
+    },
+    "es": {
+     "t": "Passato remoto: por qué importa",
+     "g": "Descubrir el pasado literario de los libros, la historia y el habla del sur.",
+     "p": [
+      "El passato remoto describe acciones pasadas terminadas y lejanas: Dante nacque a Firenze nel 1265.",
+      "Aparece en novelas, cuentos y libros de historia: Colombo partì nel 1492.",
+      "En el norte se habla con el passato prossimo; en partes del sur el remoto sigue siendo cotidiano."
+     ],
+     "q": "¿Prefieres leer historia o novelas? ¿Qué historia famosa te gustaría leer en italiano?",
+     "c": "Busca tres verbos en passato remoto en esta lección y adivina sus infinitivos."
+    },
+    "fr": {
+     "t": "Passato remoto : pourquoi il compte",
+     "g": "Découvrir le passé littéraire des livres, de l'histoire et du parler du sud.",
+     "p": [
+      "Le passato remoto décrit des actions passées achevées et lointaines : Dante nacque a Firenze nel 1265.",
+      "On le trouve dans les romans, les contes et les livres d'histoire : Colombo partì nel 1492.",
+      "Au nord on parle au passato prossimo ; dans une partie du sud, le remoto reste quotidien."
+     ],
+     "q": "Préfères-tu lire l'histoire ou des romans ? Quelle histoire célèbre aimerais-tu lire en italien ?",
+     "c": "Trouve trois verbes au passato remoto dans cette leçon et devine leurs infinitifs."
+    },
+    "it": {
+     "t": "Passato remoto: perché è importante",
+     "g": "Scoprire il passato dei libri, della storia e del parlato del sud.",
+     "p": [
+      "Il passato remoto indica azioni concluse e sentite come lontane: Dante nacque a Firenze nel 1265.",
+      "Lo trovi nei romanzi, nelle fiabe e nei libri di storia: Colombo partì nel 1492.",
+      "Al nord si parla con il passato prossimo; in parte del sud il remoto è ancora quotidiano."
+     ],
+     "q": "Preferisci leggere libri di storia o romanzi? Quale storia famosa vorresti leggere in italiano?",
+     "c": "Trova tre verbi al passato remoto in questa lezione e indovina il loro infinito."
+    },
+    "pt": {
+     "t": "Passato remoto: porque importa",
+     "g": "Descobrir o passado literário dos livros, da história e da fala do sul.",
+     "p": [
+      "O passato remoto descreve ações passadas concluídas e distantes: Dante nacque a Firenze nel 1265.",
+      "Aparece em romances, contos e livros de história: Colombo partì nel 1492.",
+      "No norte fala-se com o passato prossimo; em partes do sul o remoto ainda é do dia a dia."
+     ],
+     "q": "Preferes ler história ou romances? Que história famosa gostavas de ler em italiano?",
+     "c": "Encontra três verbos no passato remoto nesta lição e adivinha os infinitivos."
+    },
+    "pt_BR": {
+     "t": "Passato remoto: por que importa",
+     "g": "Descobrir o passado literário dos livros, da história e da fala do sul.",
+     "p": [
+      "O passato remoto descreve ações passadas concluídas e distantes: Dante nacque a Firenze nel 1265.",
+      "Ele aparece em romances, contos e livros de história: Colombo partì nel 1492.",
+      "No norte se fala com o passato prossimo; em partes do sul o remoto ainda é do dia a dia."
+     ],
+     "q": "Você prefere ler história ou romances? Que história famosa gostaria de ler em italiano?",
+     "c": "Encontre três verbos no passato remoto nesta lição e adivinhe os infinitivos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "nacque",
+      "ex": "Leonardo da Vinci nacque a Vinci nel 1452."
+     },
+     {
+      "w": "partì",
+      "ex": "Marco Polo partì per l'Oriente da giovane."
+     },
+     {
+      "w": "fu",
+      "ex": "Roma fu la capitale di un grande impero."
+     },
+     {
+      "w": "scrisse",
+      "ex": "Manzoni scrisse I promessi sposi."
+     },
+     {
+      "w": "visse",
+      "ex": "Galileo visse a lungo in Toscana."
+     },
+     {
+      "w": "il passato remoto",
+      "ex": "Nelle fiabe si usa il passato remoto."
+     }
+    ],
+    "gram": "Passato remoto: azione conclusa e lontana, senza legame col presente (Dante nacque); passato prossimo: legame col presente."
+   }
+  },
+  {
+   "d": 287,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Passato remoto: regular forms",
+     "g": "Recognise and form the regular passato remoto: parlai, credetti, partii.",
+     "p": [
+      "-are: parlai, parlasti, parlò, parlammo, parlaste, parlarono.",
+      "-ere: credei/credetti, credesti, credé/credette, credemmo, credeste, crederono/credettero.",
+      "-ire: partii, partisti, partì, partimmo, partiste, partirono. Watch the accent on the 3rd person."
+     ],
+     "q": "Which -are verb would you use to tell a story about a famous person?",
+     "c": "Write three sentences about a historical figure with one -are, one -ere and one -ire verb in passato remoto."
+    },
+    "de": {
+     "t": "Passato remoto: regelmäßige Formen",
+     "g": "Du erkennst und bildest das regelmäßige passato remoto: parlai, credetti, partii.",
+     "p": [
+      "-are: parlai, parlasti, parlò, parlammo, parlaste, parlarono.",
+      "-ere: credei/credetti, credesti, credé/credette, credemmo, credeste, crederono/credettero.",
+      "-ire: partii, partisti, partì, partimmo, partiste, partirono. Achte auf den Akzent in der 3. Person."
+     ],
+     "q": "Welches -are-Verb würdest du nutzen, um von einer berühmten Person zu erzählen?",
+     "c": "Schreib drei Sätze über eine historische Figur: je ein -are-, -ere- und -ire-Verb im passato remoto."
+    },
+    "es": {
+     "t": "Passato remoto: formas regulares",
+     "g": "Reconocer y formar el passato remoto regular: parlai, credetti, partii.",
+     "p": [
+      "-are: parlai, parlasti, parlò, parlammo, parlaste, parlarono.",
+      "-ere: credei/credetti, credesti, credé/credette, credemmo, credeste, crederono/credettero.",
+      "-ire: partii, partisti, partì, partimmo, partiste, partirono. Ojo al acento en la 3.ª persona."
+     ],
+     "q": "¿Qué verbo en -are usarías para contar la historia de un personaje famoso?",
+     "c": "Escribe tres frases sobre un personaje histórico con un verbo en -are, uno en -ere y uno en -ire en passato remoto."
+    },
+    "fr": {
+     "t": "Passato remoto : formes régulières",
+     "g": "Reconnaître et former le passato remoto régulier : parlai, credetti, partii.",
+     "p": [
+      "-are : parlai, parlasti, parlò, parlammo, parlaste, parlarono.",
+      "-ere : credei/credetti, credesti, credé/credette, credemmo, credeste, crederono/credettero.",
+      "-ire : partii, partisti, partì, partimmo, partiste, partirono. Attention à l'accent à la 3e personne."
+     ],
+     "q": "Quel verbe en -are utiliserais-tu pour raconter l'histoire d'une personne célèbre ?",
+     "c": "Écris trois phrases sur un personnage historique avec un verbe en -are, -ere et -ire au passato remoto."
+    },
+    "it": {
+     "t": "Passato remoto: forme regolari",
+     "g": "Riconoscere e formare il passato remoto regolare: parlai, credetti, partii.",
+     "p": [
+      "-are: parlai, parlasti, parlò, parlammo, parlaste, parlarono.",
+      "-ere: credei/credetti, credesti, credé/credette, credemmo, credeste, crederono/credettero.",
+      "-ire: partii, partisti, partì, partimmo, partiste, partirono. Attenzione all'accento alla terza persona."
+     ],
+     "q": "Quale verbo in -are useresti per raccontare la storia di un personaggio famoso?",
+     "c": "Scrivi tre frasi su un personaggio storico con un verbo in -are, uno in -ere e uno in -ire al passato remoto."
+    },
+    "pt": {
+     "t": "Passato remoto: formas regulares",
+     "g": "Reconhecer e formar o passato remoto regular: parlai, credetti, partii.",
+     "p": [
+      "-are: parlai, parlasti, parlò, parlammo, parlaste, parlarono.",
+      "-ere: credei/credetti, credesti, credé/credette, credemmo, credeste, crederono/credettero.",
+      "-ire: partii, partisti, partì, partimmo, partiste, partirono. Atenção ao acento na 3.ª pessoa."
+     ],
+     "q": "Que verbo em -are usarias para contar a história de uma pessoa famosa?",
+     "c": "Escreve três frases sobre uma figura histórica com um verbo em -are, um em -ere e um em -ire no passato remoto."
+    },
+    "pt_BR": {
+     "t": "Passato remoto: formas regulares",
+     "g": "Reconhecer e formar o passato remoto regular: parlai, credetti, partii.",
+     "p": [
+      "-are: parlai, parlasti, parlò, parlammo, parlaste, parlarono.",
+      "-ere: credei/credetti, credesti, credé/credette, credemmo, credeste, crederono/credettero.",
+      "-ire: partii, partisti, partì, partimmo, partiste, partirono. Atenção ao acento na 3ª pessoa."
+     ],
+     "q": "Que verbo em -are você usaria para contar a história de uma pessoa famosa?",
+     "c": "Escreva três frases sobre uma figura histórica com um verbo em -are, um em -ere e um em -ire no passato remoto."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "parlò",
+      "ex": "Il re parlò al popolo dalla finestra."
+     },
+     {
+      "w": "arrivarono",
+      "ex": "I viaggiatori arrivarono a Venezia all'alba."
+     },
+     {
+      "w": "credette",
+      "ex": "Nessuno credette alla sua storia."
+     },
+     {
+      "w": "ricevette",
+      "ex": "Ricevette una lettera dal fratello lontano."
+     },
+     {
+      "w": "partì",
+      "ex": "Marco Polo partì da Venezia nel 1271."
+     },
+     {
+      "w": "dormirono",
+      "ex": "Quella notte dormirono in una vecchia locanda."
+     }
+    ],
+    "gram": "Passato remoto regolare: -ai/-asti/-ò (are), -ei(-etti)/-esti/-é(-ette) (ere), -ii/-isti/-ì (ire)."
+   }
+  },
+  {
+   "d": 288,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Passato remoto: irregular forms",
+     "g": "Learn key irregular forms: fui, ebbi, feci, dissi, vidi, venni, nacque.",
+     "p": [
+      "Essere: fui, fosti, fu, fummo, foste, furono. Avere: ebbi, avesti, ebbe, avemmo, aveste, ebbero.",
+      "The 1-3-3 pattern: irregular in io, lui and loro only: feci, facesti, fece, facemmo, faceste, fecero.",
+      "More: dire → dissi, vedere → vidi, venire → venni, nascere → nacqui, prendere → presi, scrivere → scrissi."
+     ],
+     "q": "Which irregular verb do you think you will meet most often in Italian books?",
+     "c": "Write a five-sentence mini biography using fu, nacque, scrisse, ebbe and visse."
+    },
+    "de": {
+     "t": "Passato remoto: unregelmäßige Formen",
+     "g": "Du lernst wichtige unregelmäßige Formen: fui, ebbi, feci, dissi, vidi, venni, nacque.",
+     "p": [
+      "Essere: fui, fosti, fu, fummo, foste, furono. Avere: ebbi, avesti, ebbe, avemmo, aveste, ebbero.",
+      "Das 1-3-3-Muster: unregelmäßig nur bei io, lui und loro: feci, facesti, fece, facemmo, faceste, fecero.",
+      "Weitere: dire → dissi, vedere → vidi, venire → venni, nascere → nacqui, prendere → presi, scrivere → scrissi."
+     ],
+     "q": "Welchem unregelmäßigen Verb wirst du in italienischen Büchern wohl am häufigsten begegnen?",
+     "c": "Schreib eine Mini-Biografie in fünf Sätzen mit fu, nacque, scrisse, ebbe und visse."
+    },
+    "es": {
+     "t": "Passato remoto: formas irregulares",
+     "g": "Aprender formas irregulares clave: fui, ebbi, feci, dissi, vidi, venni, nacque.",
+     "p": [
+      "Essere: fui, fosti, fu, fummo, foste, furono. Avere: ebbi, avesti, ebbe, avemmo, aveste, ebbero.",
+      "El patrón 1-3-3: irregular solo en io, lui y loro: feci, facesti, fece, facemmo, faceste, fecero.",
+      "Más: dire → dissi, vedere → vidi, venire → venni, nascere → nacqui, prendere → presi, scrivere → scrissi."
+     ],
+     "q": "¿Qué verbo irregular crees que encontrarás más en los libros italianos?",
+     "c": "Escribe una minibiografía de cinco frases con fu, nacque, scrisse, ebbe y visse."
+    },
+    "fr": {
+     "t": "Passato remoto : formes irrégulières",
+     "g": "Apprendre des formes irrégulières clés : fui, ebbi, feci, dissi, vidi, venni, nacque.",
+     "p": [
+      "Essere : fui, fosti, fu, fummo, foste, furono. Avere : ebbi, avesti, ebbe, avemmo, aveste, ebbero.",
+      "Le schéma 1-3-3 : irrégulier seulement à io, lui et loro : feci, facesti, fece, facemmo, faceste, fecero.",
+      "Autres : dire → dissi, vedere → vidi, venire → venni, nascere → nacqui, prendere → presi, scrivere → scrissi."
+     ],
+     "q": "Quel verbe irrégulier vas-tu rencontrer le plus souvent dans les livres italiens, à ton avis ?",
+     "c": "Écris une mini-biographie de cinq phrases avec fu, nacque, scrisse, ebbe et visse."
+    },
+    "it": {
+     "t": "Passato remoto: forme irregolari",
+     "g": "Imparare le forme irregolari chiave: fui, ebbi, feci, dissi, vidi, venni, nacque.",
+     "p": [
+      "Essere: fui, fosti, fu, fummo, foste, furono. Avere: ebbi, avesti, ebbe, avemmo, aveste, ebbero.",
+      "Lo schema 1-3-3: irregolare solo in io, lui e loro: feci, facesti, fece, facemmo, faceste, fecero.",
+      "Altri: dire → dissi, vedere → vidi, venire → venni, nascere → nacqui, prendere → presi, scrivere → scrissi."
+     ],
+     "q": "Quale verbo irregolare pensi di incontrare più spesso nei libri italiani?",
+     "c": "Scrivi una mini biografia di cinque frasi con fu, nacque, scrisse, ebbe e visse."
+    },
+    "pt": {
+     "t": "Passato remoto: formas irregulares",
+     "g": "Aprender formas irregulares essenciais: fui, ebbi, feci, dissi, vidi, venni, nacque.",
+     "p": [
+      "Essere: fui, fosti, fu, fummo, foste, furono. Avere: ebbi, avesti, ebbe, avemmo, aveste, ebbero.",
+      "O padrão 1-3-3: irregular só em io, lui e loro: feci, facesti, fece, facemmo, faceste, fecero.",
+      "Mais: dire → dissi, vedere → vidi, venire → venni, nascere → nacqui, prendere → presi, scrivere → scrissi."
+     ],
+     "q": "Que verbo irregular achas que vais encontrar mais vezes nos livros italianos?",
+     "c": "Escreve uma minibiografia de cinco frases com fu, nacque, scrisse, ebbe e visse."
+    },
+    "pt_BR": {
+     "t": "Passato remoto: formas irregulares",
+     "g": "Aprender formas irregulares essenciais: fui, ebbi, feci, dissi, vidi, venni, nacque.",
+     "p": [
+      "Essere: fui, fosti, fu, fummo, foste, furono. Avere: ebbi, avesti, ebbe, avemmo, aveste, ebbero.",
+      "O padrão 1-3-3: irregular só em io, lui e loro: feci, facesti, fece, facemmo, faceste, fecero.",
+      "Mais: dire → dissi, vedere → vidi, venire → venni, nascere → nacqui, prendere → presi, scrivere → scrissi."
+     ],
+     "q": "Que verbo irregular você acha que vai encontrar mais nos livros italianos?",
+     "c": "Escreva uma minibiografia de cinco frases com fu, nacque, scrisse, ebbe e visse."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "fu",
+      "ex": "Fu un periodo di grandi scoperte."
+     },
+     {
+      "w": "ebbe",
+      "ex": "Ebbe un'idea geniale durante il viaggio."
+     },
+     {
+      "w": "fece",
+      "ex": "Michelangelo fece il David da un unico blocco di marmo."
+     },
+     {
+      "w": "disse",
+      "ex": "Allora il vecchio disse: «Seguitemi»."
+     },
+     {
+      "w": "vide",
+      "ex": "Quando vide il mare, rimase senza parole."
+     },
+     {
+      "w": "venne",
+      "ex": "La principessa venne a sapere la verità."
+     }
+    ],
+    "gram": "Passato remoto irregolare 1-3-3: forme irregolari in io, lui, loro (ebbi, ebbe, ebbero); regolari nelle altre persone."
+   }
+  },
+  {
+   "d": 289,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Reading a fairy tale",
+     "g": "Read a classic tale with c'era una volta, passato remoto and imperfetto.",
+     "p": [
+      "Fairy tales open with C'era una volta... and use imperfetto for the scene: viveva, era, aveva.",
+      "Events move with passato remoto: un giorno arrivò un lupo, la ragazza fuggì, il re decise.",
+      "They end with e vissero felici e contenti. Pinocchio by Collodi is a great first Italian classic."
+     ],
+     "q": "Which fairy tale did you love as a child? How does it begin?",
+     "c": "Retell a fairy tale you know in five Italian sentences, starting with C'era una volta."
+    },
+    "de": {
+     "t": "Ein Märchen lesen",
+     "g": "Du liest ein klassisches Märchen mit c'era una volta, passato remoto und Imperfetto.",
+     "p": [
+      "Märchen beginnen mit C'era una volta... und nutzen Imperfetto für die Szene: viveva, era, aveva.",
+      "Die Handlung läuft im passato remoto: un giorno arrivò un lupo, la ragazza fuggì, il re decise.",
+      "Am Ende: e vissero felici e contenti. Collodis Pinocchio ist ein toller erster italienischer Klassiker."
+     ],
+     "q": "Welches Märchen hast du als Kind geliebt? Wie beginnt es?",
+     "c": "Erzähl ein Märchen in fünf italienischen Sätzen nach, beginnend mit C'era una volta."
+    },
+    "es": {
+     "t": "Leer un cuento de hadas",
+     "g": "Leer un cuento clásico con c'era una volta, passato remoto e imperfetto.",
+     "p": [
+      "Los cuentos empiezan con C'era una volta... y usan el imperfetto para la escena: viveva, era, aveva.",
+      "La acción avanza con passato remoto: un giorno arrivò un lupo, la ragazza fuggì, il re decise.",
+      "Terminan con e vissero felici e contenti. Pinocchio de Collodi es un gran primer clásico italiano."
+     ],
+     "q": "¿Qué cuento te encantaba de niño? ¿Cómo empieza?",
+     "c": "Cuenta un cuento que conozcas en cinco frases en italiano, empezando por C'era una volta."
+    },
+    "fr": {
+     "t": "Lire un conte de fées",
+     "g": "Lire un conte classique avec c'era una volta, passato remoto et imperfetto.",
+     "p": [
+      "Les contes commencent par C'era una volta... et posent le décor à l'imperfetto : viveva, era, aveva.",
+      "L'action avance au passato remoto : un giorno arrivò un lupo, la ragazza fuggì, il re decise.",
+      "Ils finissent par e vissero felici e contenti. Pinocchio de Collodi est un excellent premier classique."
+     ],
+     "q": "Quel conte adorais-tu enfant ? Comment commence-t-il ?",
+     "c": "Raconte un conte que tu connais en cinq phrases italiennes, en commençant par C'era una volta."
+    },
+    "it": {
+     "t": "Leggere una fiaba",
+     "g": "Leggere una fiaba classica con c'era una volta, passato remoto e imperfetto.",
+     "p": [
+      "Le fiabe iniziano con C'era una volta... e descrivono la scena all'imperfetto: viveva, era, aveva.",
+      "I fatti avanzano al passato remoto: un giorno arrivò un lupo, la ragazza fuggì, il re decise.",
+      "Finiscono con e vissero felici e contenti. Pinocchio di Collodi è un ottimo primo classico."
+     ],
+     "q": "Quale fiaba amavi da bambino? Come comincia?",
+     "c": "Racconta una fiaba che conosci in cinque frasi, cominciando con C'era una volta."
+    },
+    "pt": {
+     "t": "Ler um conto de fadas",
+     "g": "Ler um conto clássico com c'era una volta, passato remoto e imperfetto.",
+     "p": [
+      "Os contos começam com C'era una volta... e usam o imperfetto para o cenário: viveva, era, aveva.",
+      "A ação avança com o passato remoto: un giorno arrivò un lupo, la ragazza fuggì, il re decise.",
+      "Acabam com e vissero felici e contenti. O Pinóquio de Collodi é um ótimo primeiro clássico italiano."
+     ],
+     "q": "Que conto adoravas em criança? Como começa?",
+     "c": "Reconta um conto que conheças em cinco frases em italiano, começando por C'era una volta."
+    },
+    "pt_BR": {
+     "t": "Ler um conto de fadas",
+     "g": "Ler um conto clássico com c'era una volta, passato remoto e imperfetto.",
+     "p": [
+      "Os contos começam com C'era una volta... e usam o imperfetto para o cenário: viveva, era, aveva.",
+      "A ação avança com o passato remoto: un giorno arrivò un lupo, la ragazza fuggì, il re decise.",
+      "Terminam com e vissero felici e contenti. O Pinóquio de Collodi é um ótimo primeiro clássico italiano."
+     ],
+     "q": "Que conto de fadas você adorava quando criança? Como ele começa?",
+     "c": "Reconte um conto que você conhece em cinco frases em italiano, começando com C'era una volta."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "c'era una volta",
+      "ex": "C'era una volta un re che aveva tre figlie."
+     },
+     {
+      "w": "la fiaba",
+      "ex": "Mia nonna mi leggeva una fiaba ogni sera."
+     },
+     {
+      "w": "il bosco",
+      "ex": "La bambina si perse nel bosco."
+     },
+     {
+      "w": "all'improvviso apparve",
+      "ex": "All'improvviso apparve una fata."
+     },
+     {
+      "w": "decise di",
+      "ex": "Il principe decise di partire all'avventura."
+     },
+     {
+      "w": "e vissero felici e contenti",
+      "ex": "Si sposarono e vissero felici e contenti."
+     }
+    ],
+    "gram": "Nelle fiabe: imperfetto per descrivere (c'era, viveva) e passato remoto per gli eventi (arrivò, decise, vissero)."
+   }
+  },
+  {
+   "d": 290,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Implicit clauses with participles",
+     "g": "Use the past participle as a compact clause: finito il lavoro, uscì.",
+     "p": [
+      "Finito il lavoro = dopo che ebbe finito il lavoro. One word replaces a whole clause.",
+      "The participle agrees with its noun: finita la cena, arrivati a casa, lette le email.",
+      "With essere verbs it agrees with the subject: partiti gli ospiti, sistemammo la casa."
+     ],
+     "q": "What is the first thing you do, finito il lavoro o la scuola?",
+     "c": "Rewrite with a participle: Dopo che abbiamo mangiato, siamo usciti. Dopo che è arrivata, ha telefonato."
+    },
+    "de": {
+     "t": "Verkürzte Nebensätze mit Partizip",
+     "g": "Du nutzt das Partizip Perfekt als kompakten Nebensatz: finito il lavoro, uscì.",
+     "p": [
+      "Finito il lavoro = dopo che ebbe finito il lavoro. Ein Wort ersetzt einen ganzen Satz.",
+      "Das Partizip richtet sich nach dem Nomen: finita la cena, arrivati a casa, lette le email.",
+      "Bei Verben mit essere nach dem Subjekt: partiti gli ospiti, sistemammo la casa."
+     ],
+     "q": "Was machst du als Erstes, finito il lavoro o la scuola?",
+     "c": "Formuliere mit Partizip um: Dopo che abbiamo mangiato, siamo usciti. Dopo che è arrivata, ha telefonato."
+    },
+    "es": {
+     "t": "Oraciones implícitas con participio",
+     "g": "Usar el participio pasado como oración compacta: finito il lavoro, uscì.",
+     "p": [
+      "Finito il lavoro = dopo che ebbe finito il lavoro. Una palabra sustituye a toda una oración.",
+      "El participio concuerda con su sustantivo: finita la cena, arrivati a casa, lette le email.",
+      "Con verbos de essere concuerda con el sujeto: partiti gli ospiti, sistemammo la casa."
+     ],
+     "q": "¿Qué es lo primero que haces, finito il lavoro o la scuola?",
+     "c": "Reescribe con participio: Dopo che abbiamo mangiato, siamo usciti. Dopo che è arrivata, ha telefonato."
+    },
+    "fr": {
+     "t": "Propositions participiales",
+     "g": "Utiliser le participe passé comme proposition compacte : finito il lavoro, uscì.",
+     "p": [
+      "Finito il lavoro = dopo che ebbe finito il lavoro. Un mot remplace toute une proposition.",
+      "Le participe s'accorde avec son nom : finita la cena, arrivati a casa, lette le email.",
+      "Avec les verbes en essere, il s'accorde avec le sujet : partiti gli ospiti, sistemammo la casa."
+     ],
+     "q": "Quelle est la première chose que tu fais, finito il lavoro o la scuola ?",
+     "c": "Réécris avec un participe : Dopo che abbiamo mangiato, siamo usciti. Dopo che è arrivata, ha telefonato."
+    },
+    "it": {
+     "t": "Le implicite con il participio",
+     "g": "Usare il participio passato come frase compatta: finito il lavoro, uscì.",
+     "p": [
+      "Finito il lavoro = dopo che ebbe finito il lavoro. Una parola sostituisce un'intera frase.",
+      "Il participio concorda con il nome: finita la cena, arrivati a casa, lette le email.",
+      "Con i verbi che vogliono essere concorda con il soggetto: partiti gli ospiti, sistemammo la casa."
+     ],
+     "q": "Qual è la prima cosa che fai, finito il lavoro o la scuola?",
+     "c": "Riscrivi con il participio: Dopo che abbiamo mangiato, siamo usciti. Dopo che è arrivata, ha telefonato."
+    },
+    "pt": {
+     "t": "Orações reduzidas de particípio",
+     "g": "Usar o particípio passado como oração compacta: finito il lavoro, uscì.",
+     "p": [
+      "Finito il lavoro = dopo che ebbe finito il lavoro. Uma palavra substitui uma oração inteira.",
+      "O particípio concorda com o nome: finita la cena, arrivati a casa, lette le email.",
+      "Com verbos de essere concorda com o sujeito: partiti gli ospiti, sistemammo la casa."
+     ],
+     "q": "Qual é a primeira coisa que fazes, finito il lavoro o la scuola?",
+     "c": "Reescreve com particípio: Dopo che abbiamo mangiato, siamo usciti. Dopo che è arrivata, ha telefonato."
+    },
+    "pt_BR": {
+     "t": "Orações reduzidas de particípio",
+     "g": "Usar o particípio passado como oração compacta: finito il lavoro, uscì.",
+     "p": [
+      "Finito il lavoro = dopo che ebbe finito il lavoro. Uma palavra substitui uma oração inteira.",
+      "O particípio concorda com o substantivo: finita la cena, arrivati a casa, lette le email.",
+      "Com verbos de essere concorda com o sujeito: partiti gli ospiti, sistemammo la casa."
+     ],
+     "q": "Qual é a primeira coisa que você faz, finito il lavoro o la scuola?",
+     "c": "Reescreva com particípio: Dopo che abbiamo mangiato, siamo usciti. Dopo che è arrivata, ha telefonato."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "finito il lavoro",
+      "ex": "Finito il lavoro, andò a fare una passeggiata."
+     },
+     {
+      "w": "finita la cena",
+      "ex": "Finita la cena, giocammo a carte."
+     },
+     {
+      "w": "arrivati a casa",
+      "ex": "Arrivati a casa, ci siamo subito addormentati."
+     },
+     {
+      "w": "letta la lettera",
+      "ex": "Letta la lettera, si mise a piangere di gioia."
+     },
+     {
+      "w": "partiti gli ospiti",
+      "ex": "Partiti gli ospiti, mettemmo in ordine il salotto."
+     },
+     {
+      "w": "una volta finito",
+      "ex": "Una volta finito il corso, cercherò lavoro a Roma."
+     }
+    ],
+    "gram": "Participio passato assoluto = azione anteriore; concorda con il nome (finite le vacanze) o con il soggetto se il verbo vuole essere."
+   }
+  }
+ ]
+}

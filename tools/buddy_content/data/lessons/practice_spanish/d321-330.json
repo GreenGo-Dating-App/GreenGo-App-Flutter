@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 321,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Leading a meeting",
+     "g": "Run a meeting in Spanish smoothly from start to finish.",
+     "p": [
+      "Open: Empecemos, el objetivo de hoy es... and present the agenda (el orden del día).",
+      "Move on: Pasamos al siguiente punto; give the floor: ¿Quieres añadir algo, Ana?",
+      "Close: Para resumir, quedamos en que... and agree on next steps."
+     ],
+     "q": "Have you ever led a meeting? What was the hardest part?",
+     "c": "Write the opening and closing lines of a short team meeting using empecemos and para resumir."
+    },
+    "de": {
+     "t": "Eine Besprechung leiten",
+     "g": "Leite eine Besprechung auf Spanisch reibungslos von Anfang bis Ende.",
+     "p": [
+      "Eröffnen: Empecemos, el objetivo de hoy es... und die Tagesordnung (el orden del día) vorstellen.",
+      "Weiter: Pasamos al siguiente punto; das Wort geben: ¿Quieres añadir algo, Ana?",
+      "Abschließen: Para resumir, quedamos en que... und nächste Schritte vereinbaren."
+     ],
+     "q": "Hast du schon einmal eine Besprechung geleitet? Was war am schwierigsten?",
+     "c": "Schreib Eröffnung und Abschluss einer kurzen Teambesprechung mit empecemos und para resumir."
+    },
+    "es": {
+     "t": "Dirigir una reunión",
+     "g": "Conduce una reunión en español con fluidez de principio a fin.",
+     "p": [
+      "Abre: Empecemos, el objetivo de hoy es... y presenta el orden del día.",
+      "Avanza: Pasamos al siguiente punto; da la palabra: ¿Quieres añadir algo, Ana?",
+      "Cierra: Para resumir, quedamos en que... y acordad los próximos pasos."
+     ],
+     "q": "¿Has dirigido alguna vez una reunión? ¿Qué fue lo más difícil?",
+     "c": "Escribe la apertura y el cierre de una breve reunión de equipo con empecemos y para resumir."
+    },
+    "fr": {
+     "t": "Animer une réunion",
+     "g": "Anime une réunion en espagnol avec aisance du début à la fin.",
+     "p": [
+      "Ouvrir : Empecemos, el objetivo de hoy es... et présenter l'ordre du jour (el orden del día).",
+      "Avancer : Pasamos al siguiente punto ; donner la parole : ¿Quieres añadir algo, Ana?",
+      "Conclure : Para resumir, quedamos en que... et fixer les prochaines étapes."
+     ],
+     "q": "As-tu déjà animé une réunion ? Qu'est-ce qui a été le plus difficile ?",
+     "c": "Écris l'ouverture et la clôture d'une courte réunion d'équipe avec empecemos et para resumir."
+    },
+    "it": {
+     "t": "Condurre una riunione",
+     "g": "Conduci una riunione in spagnolo senza intoppi dall'inizio alla fine.",
+     "p": [
+      "Apri: Empecemos, el objetivo de hoy es... e presenta l'ordine del giorno (el orden del día).",
+      "Vai avanti: Pasamos al siguiente punto; dai la parola: ¿Quieres añadir algo, Ana?",
+      "Chiudi: Para resumir, quedamos en que... e concorda i prossimi passi."
+     ],
+     "q": "Hai mai condotto una riunione? Qual è stata la parte più difficile?",
+     "c": "Scrivi apertura e chiusura di una breve riunione di squadra con empecemos e para resumir."
+    },
+    "pt": {
+     "t": "Conduzir uma reunião",
+     "g": "Conduz uma reunião em espanhol com fluidez do início ao fim.",
+     "p": [
+      "Abre: Empecemos, el objetivo de hoy es... e apresenta a ordem de trabalhos (el orden del día).",
+      "Avança: Pasamos al siguiente punto; dá a palavra: ¿Quieres añadir algo, Ana?",
+      "Fecha: Para resumir, quedamos en que... e combina os próximos passos."
+     ],
+     "q": "Já conduziste alguma reunião? Qual foi a parte mais difícil?",
+     "c": "Escreve a abertura e o fecho de uma curta reunião de equipa com empecemos e para resumir."
+    },
+    "pt_BR": {
+     "t": "Conduzir uma reunião",
+     "g": "Conduza uma reunião em espanhol com fluidez do início ao fim.",
+     "p": [
+      "Abra: Empecemos, el objetivo de hoy es... e apresente a pauta (el orden del día).",
+      "Avance: Pasamos al siguiente punto; passe a palavra: ¿Quieres añadir algo, Ana?",
+      "Feche: Para resumir, quedamos en que... e combine os próximos passos."
+     ],
+     "q": "Você já conduziu uma reunião? Qual foi a parte mais difícil?",
+     "c": "Escreva a abertura e o fechamento de uma reunião curta de equipe com empecemos e para resumir."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "empecemos",
+      "ex": "Empecemos, que ya estamos todos."
+     },
+     {
+      "w": "el orden del día",
+      "ex": "El primer punto del orden del día es el presupuesto."
+     },
+     {
+      "w": "pasamos al siguiente punto",
+      "ex": "Si no hay dudas, pasamos al siguiente punto."
+     },
+     {
+      "w": "dar la palabra",
+      "ex": "Ahora le doy la palabra a Carlos."
+     },
+     {
+      "w": "para resumir",
+      "ex": "Para resumir, el lanzamiento será en mayo."
+     },
+     {
+      "w": "quedamos en que",
+      "ex": "Quedamos en que cada uno enviará su parte el lunes."
+     }
+    ],
+    "gram": "Reuniones: imperativo en primera persona plural (empecemos, pasemos) y quedar en que + indicativo para acuerdos."
+   }
+  },
+  {
+   "d": 322,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Giving a presentation",
+     "g": "Guide your audience with clear signposting phrases.",
+     "p": [
+      "Start: Buenos días, hoy voy a hablarles de... and outline the parts.",
+      "Signpost: En primer lugar, a continuación, por otra parte, como pueden ver.",
+      "Finish: Para concluir... Muchas gracias por su atención. ¿Alguna pregunta?"
+     ],
+     "q": "What topic would you love to present in Spanish?",
+     "c": "Prepare the first three sentences of a presentation about your city with en primer lugar and a continuación."
+    },
+    "de": {
+     "t": "Eine Präsentation halten",
+     "g": "Führe dein Publikum mit klaren Gliederungssignalen.",
+     "p": [
+      "Beginn: Buenos días, hoy voy a hablarles de... und die Teile nennen.",
+      "Gliedern: En primer lugar, a continuación, por otra parte, como pueden ver.",
+      "Ende: Para concluir... Muchas gracias por su atención. ¿Alguna pregunta?"
+     ],
+     "q": "Über welches Thema würdest du gern auf Spanisch präsentieren?",
+     "c": "Bereite die ersten drei Sätze einer Präsentation über deine Stadt mit en primer lugar und a continuación vor."
+    },
+    "es": {
+     "t": "Hacer una presentación",
+     "g": "Guía a tu público con conectores claros.",
+     "p": [
+      "Inicio: Buenos días, hoy voy a hablarles de... y anuncia las partes.",
+      "Conectores: En primer lugar, a continuación, por otra parte, como pueden ver.",
+      "Final: Para concluir... Muchas gracias por su atención. ¿Alguna pregunta?"
+     ],
+     "q": "¿Sobre qué tema te encantaría hacer una presentación en español?",
+     "c": "Prepara las tres primeras frases de una presentación sobre tu ciudad con en primer lugar y a continuación."
+    },
+    "fr": {
+     "t": "Faire une présentation",
+     "g": "Guide ton public avec des connecteurs clairs.",
+     "p": [
+      "Début : Buenos días, hoy voy a hablarles de... et annonce le plan.",
+      "Articuler : En primer lugar, a continuación, por otra parte, como pueden ver.",
+      "Fin : Para concluir... Muchas gracias por su atención. ¿Alguna pregunta?"
+     ],
+     "q": "Sur quel sujet aimerais-tu faire une présentation en espagnol ?",
+     "c": "Prépare les trois premières phrases d'une présentation sur ta ville avec en primer lugar et a continuación."
+    },
+    "it": {
+     "t": "Fare una presentazione",
+     "g": "Guida il pubblico con segnali chiari di struttura.",
+     "p": [
+      "Inizio: Buenos días, hoy voy a hablarles de... e annuncia le parti.",
+      "Struttura: En primer lugar, a continuación, por otra parte, como pueden ver.",
+      "Fine: Para concluir... Muchas gracias por su atención. ¿Alguna pregunta?"
+     ],
+     "q": "Su quale tema ti piacerebbe fare una presentazione in spagnolo?",
+     "c": "Prepara le prime tre frasi di una presentazione sulla tua città con en primer lugar e a continuación."
+    },
+    "pt": {
+     "t": "Fazer uma apresentação",
+     "g": "Guia o teu público com conectores claros.",
+     "p": [
+      "Início: Buenos días, hoy voy a hablarles de... e anuncia as partes.",
+      "Conectores: En primer lugar, a continuación, por otra parte, como pueden ver.",
+      "Fim: Para concluir... Muchas gracias por su atención. ¿Alguna pregunta?"
+     ],
+     "q": "Sobre que tema adorarias fazer uma apresentação em espanhol?",
+     "c": "Prepara as três primeiras frases de uma apresentação sobre a tua cidade com en primer lugar e a continuación."
+    },
+    "pt_BR": {
+     "t": "Fazer uma apresentação",
+     "g": "Guie seu público com conectores claros.",
+     "p": [
+      "Início: Buenos días, hoy voy a hablarles de... e anuncie as partes.",
+      "Conectores: En primer lugar, a continuación, por otra parte, como pueden ver.",
+      "Final: Para concluir... Muchas gracias por su atención. ¿Alguna pregunta?"
+     ],
+     "q": "Sobre que tema você adoraria fazer uma apresentação em espanhol?",
+     "c": "Prepare as três primeiras frases de uma apresentação sobre sua cidade com en primer lugar e a continuación."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "hoy voy a hablarles de",
+      "ex": "Hoy voy a hablarles de la energía solar."
+     },
+     {
+      "w": "en primer lugar",
+      "ex": "En primer lugar, veremos el contexto."
+     },
+     {
+      "w": "a continuación",
+      "ex": "A continuación, les mostraré los resultados."
+     },
+     {
+      "w": "como pueden ver",
+      "ex": "Como pueden ver en el gráfico, todo mejora."
+     },
+     {
+      "w": "para concluir",
+      "ex": "Para concluir, les dejo tres ideas clave."
+     },
+     {
+      "w": "gracias por su atención",
+      "ex": "Muchas gracias por su atención."
+     }
+    ],
+    "gram": "Presentaciones: marcadores del discurso (en primer lugar, a continuación, para concluir) y ustedes con les para el público."
+   }
+  },
+  {
+   "d": 323,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Handling questions after a talk",
+     "g": "Answer questions after a talk with calm and confidence.",
+     "p": [
+      "Welcome the question: Muy buena pregunta, gracias por plantearla.",
+      "Buy time: Permítame volver a eso al final, or Déjeme pensarlo un momento.",
+      "If you do not know: No tengo el dato ahora, pero se lo envío después."
+     ],
+     "q": "How do you feel when someone asks you a hard question?",
+     "c": "Answer an imaginary tricky question in three lines using muy buena pregunta and permítame."
+    },
+    "de": {
+     "t": "Fragen nach einem Vortrag beantworten",
+     "g": "Beantworte Fragen nach einem Vortrag ruhig und selbstsicher.",
+     "p": [
+      "Frage würdigen: Muy buena pregunta, gracias por plantearla.",
+      "Zeit gewinnen: Permítame volver a eso al final oder Déjeme pensarlo un momento.",
+      "Wenn du es nicht weißt: No tengo el dato ahora, pero se lo envío después."
+     ],
+     "q": "Wie fühlst du dich, wenn dir jemand eine schwere Frage stellt?",
+     "c": "Beantworte eine knifflige Fantasiefrage in drei Zeilen mit muy buena pregunta und permítame."
+    },
+    "es": {
+     "t": "Responder preguntas tras una charla",
+     "g": "Responde a las preguntas del público con calma y seguridad.",
+     "p": [
+      "Agradece la pregunta: Muy buena pregunta, gracias por plantearla.",
+      "Gana tiempo: Permítame volver a eso al final o Déjeme pensarlo un momento.",
+      "Si no lo sabes: No tengo el dato ahora, pero se lo envío después."
+     ],
+     "q": "¿Cómo te sientes cuando alguien te hace una pregunta difícil?",
+     "c": "Responde en tres líneas a una pregunta difícil imaginaria con muy buena pregunta y permítame."
+    },
+    "fr": {
+     "t": "Répondre aux questions après un exposé",
+     "g": "Réponds aux questions du public avec calme et assurance.",
+     "p": [
+      "Accueille la question : Muy buena pregunta, gracias por plantearla.",
+      "Gagne du temps : Permítame volver a eso al final ou Déjeme pensarlo un momento.",
+      "Si tu ne sais pas : No tengo el dato ahora, pero se lo envío después."
+     ],
+     "q": "Comment te sens-tu quand on te pose une question difficile ?",
+     "c": "Réponds en trois lignes à une question piège imaginaire avec muy buena pregunta et permítame."
+    },
+    "it": {
+     "t": "Rispondere alle domande dopo un intervento",
+     "g": "Rispondi alle domande del pubblico con calma e sicurezza.",
+     "p": [
+      "Accogli la domanda: Muy buena pregunta, gracias por plantearla.",
+      "Prendi tempo: Permítame volver a eso al final o Déjeme pensarlo un momento.",
+      "Se non lo sai: No tengo el dato ahora, pero se lo envío después."
+     ],
+     "q": "Come ti senti quando qualcuno ti fa una domanda difficile?",
+     "c": "Rispondi in tre righe a una domanda difficile immaginaria con muy buena pregunta e permítame."
+    },
+    "pt": {
+     "t": "Responder a perguntas após uma palestra",
+     "g": "Responde às perguntas do público com calma e confiança.",
+     "p": [
+      "Agradece a pergunta: Muy buena pregunta, gracias por plantearla.",
+      "Ganha tempo: Permítame volver a eso al final ou Déjeme pensarlo un momento.",
+      "Se não souberes: No tengo el dato ahora, pero se lo envío después."
+     ],
+     "q": "Como te sentes quando alguém te faz uma pergunta difícil?",
+     "c": "Responde em três linhas a uma pergunta difícil imaginária com muy buena pregunta e permítame."
+    },
+    "pt_BR": {
+     "t": "Responder perguntas depois de uma palestra",
+     "g": "Responda às perguntas do público com calma e confiança.",
+     "p": [
+      "Agradeça a pergunta: Muy buena pregunta, gracias por plantearla.",
+      "Ganhe tempo: Permítame volver a eso al final ou Déjeme pensarlo un momento.",
+      "Se não souber: No tengo el dato ahora, pero se lo envío después."
+     ],
+     "q": "Como você se sente quando alguém faz uma pergunta difícil?",
+     "c": "Responda em três linhas a uma pergunta difícil imaginária com muy buena pregunta e permítame."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "muy buena pregunta",
+      "ex": "Muy buena pregunta, me alegra que lo mencione."
+     },
+     {
+      "w": "permítame volver a eso",
+      "ex": "Permítame volver a eso después de la pausa."
+     },
+     {
+      "w": "déjeme pensarlo",
+      "ex": "Déjeme pensarlo un momento antes de responder."
+     },
+     {
+      "w": "si le he entendido bien",
+      "ex": "Si le he entendido bien, pregunta por los costes."
+     },
+     {
+      "w": "no tengo el dato",
+      "ex": "No tengo el dato exacto, pero se lo envío hoy."
+     },
+     {
+      "w": "¿responde eso a su pregunta?",
+      "ex": "¿Responde eso a su pregunta?"
+     }
+    ],
+    "gram": "Imperativo de usted con pronombres enclíticos: permítame, déjeme pensarlo; se lo envío (le + lo = se lo)."
+   }
+  },
+  {
+   "d": 324,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Negotiating in depth",
+     "g": "Make offers, concessions and counter-offers in Spanish.",
+     "p": [
+      "Conditional offers: Podríamos aceptarlo siempre que + subjunctive.",
+      "Concede: Estamos dispuestos a..., a cambio de que + subjunctive.",
+      "Counter-offer: ¿Qué le parecería si + imperfect subjunctive...?"
+     ],
+     "q": "What was the last thing you negotiated, even at a market?",
+     "c": "Write a short negotiation exchange with siempre que, a cambio de que and qué le parecería si."
+    },
+    "de": {
+     "t": "Vertieft verhandeln",
+     "g": "Mach auf Spanisch Angebote, Zugeständnisse und Gegenangebote.",
+     "p": [
+      "Bedingte Angebote: Podríamos aceptarlo siempre que + Subjuntivo.",
+      "Entgegenkommen: Estamos dispuestos a..., a cambio de que + Subjuntivo.",
+      "Gegenangebot: ¿Qué le parecería si + Subjuntivo Imperfekt...?"
+     ],
+     "q": "Was hast du zuletzt verhandelt, und sei es auf dem Markt?",
+     "c": "Schreib einen kurzen Verhandlungsdialog mit siempre que, a cambio de que und qué le parecería si."
+    },
+    "es": {
+     "t": "Negociar a fondo",
+     "g": "Haz ofertas, concesiones y contraofertas en español.",
+     "p": [
+      "Ofertas con condición: Podríamos aceptarlo siempre que + subjuntivo.",
+      "Concede: Estamos dispuestos a..., a cambio de que + subjuntivo.",
+      "Contraoferta: ¿Qué le parecería si + imperfecto de subjuntivo...?"
+     ],
+     "q": "¿Qué fue lo último que negociaste, aunque fuera en un mercado?",
+     "c": "Escribe un breve diálogo de negociación con siempre que, a cambio de que y qué le parecería si."
+    },
+    "fr": {
+     "t": "Négocier en profondeur",
+     "g": "Fais des offres, des concessions et des contre-offres en espagnol.",
+     "p": [
+      "Offres conditionnelles : Podríamos aceptarlo siempre que + subjonctif.",
+      "Concéder : Estamos dispuestos a..., a cambio de que + subjonctif.",
+      "Contre-offre : ¿Qué le parecería si + subjonctif imparfait... ?"
+     ],
+     "q": "Quelle est la dernière chose que tu as négociée, même au marché ?",
+     "c": "Écris un court échange de négociation avec siempre que, a cambio de que et qué le parecería si."
+    },
+    "it": {
+     "t": "Negoziare a fondo",
+     "g": "Fai offerte, concessioni e controfferte in spagnolo.",
+     "p": [
+      "Offerte condizionate: Podríamos aceptarlo siempre que + congiuntivo.",
+      "Concedi: Estamos dispuestos a..., a cambio de que + congiuntivo.",
+      "Controfferta: ¿Qué le parecería si + congiuntivo imperfetto...?"
+     ],
+     "q": "Qual è l'ultima cosa che hai negoziato, anche al mercato?",
+     "c": "Scrivi un breve dialogo di trattativa con siempre que, a cambio de que e qué le parecería si."
+    },
+    "pt": {
+     "t": "Negociar a fundo",
+     "g": "Faz ofertas, concessões e contrapropostas em espanhol.",
+     "p": [
+      "Ofertas com condição: Podríamos aceptarlo siempre que + conjuntivo.",
+      "Concede: Estamos dispuestos a..., a cambio de que + conjuntivo.",
+      "Contraproposta: ¿Qué le parecería si + imperfeito do conjuntivo...?"
+     ],
+     "q": "Qual foi a última coisa que negociaste, nem que fosse num mercado?",
+     "c": "Escreve um curto diálogo de negociação com siempre que, a cambio de que e qué le parecería si."
+    },
+    "pt_BR": {
+     "t": "Negociar a fundo",
+     "g": "Faça ofertas, concessões e contrapropostas em espanhol.",
+     "p": [
+      "Ofertas com condição: Podríamos aceptarlo siempre que + subjuntivo.",
+      "Conceda: Estamos dispuestos a..., a cambio de que + subjuntivo.",
+      "Contraproposta: ¿Qué le parecería si + imperfeito do subjuntivo...?"
+     ],
+     "q": "Qual foi a última coisa que você negociou, mesmo numa feira?",
+     "c": "Escreva um diálogo curto de negociação com siempre que, a cambio de que e qué le parecería si."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "siempre que",
+      "ex": "Podríamos aceptarlo siempre que el envío sea gratis."
+     },
+     {
+      "w": "a cambio de que",
+      "ex": "Bajamos el precio a cambio de que paguen por adelantado."
+     },
+     {
+      "w": "estar dispuesto a",
+      "ex": "Estamos dispuestos a ampliar el plazo."
+     },
+     {
+      "w": "¿qué le parecería si...?",
+      "ex": "¿Qué le parecería si firmáramos por dos años?"
+     },
+     {
+      "w": "la contraoferta",
+      "ex": "Mañana les enviamos nuestra contraoferta."
+     },
+     {
+      "w": "un punto intermedio",
+      "ex": "Busquemos un punto intermedio."
+     }
+    ],
+    "gram": "Condiciones: siempre que / a cambio de que + subjuntivo; propuestas con ¿qué le parecería si + imperfecto de subjuntivo?"
+   }
+  },
+  {
+   "d": 325,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Giving feedback diplomatically",
+     "g": "Give constructive feedback that is honest and kind.",
+     "p": [
+      "Start positive: Lo que más me ha gustado es...",
+      "Suggest, don't order: Quizás podrías..., ¿Has pensado en...?, Yo probaría a...",
+      "End with support: En general, vas por muy buen camino."
+     ],
+     "q": "How do you prefer to receive feedback: direct or gentle?",
+     "c": "Give feedback on a friend's imaginary presentation: one positive, one suggestion with quizás podrías."
+    },
+    "de": {
+     "t": "Diplomatisch Feedback geben",
+     "g": "Gib konstruktives Feedback, das ehrlich und freundlich ist.",
+     "p": [
+      "Positiv beginnen: Lo que más me ha gustado es...",
+      "Vorschlagen statt befehlen: Quizás podrías..., ¿Has pensado en...?, Yo probaría a...",
+      "Mit Ermutigung enden: En general, vas por muy buen camino."
+     ],
+     "q": "Wie bekommst du lieber Feedback: direkt oder behutsam?",
+     "c": "Gib Feedback zur erfundenen Präsentation eines Freundes: ein Lob, ein Vorschlag mit quizás podrías."
+    },
+    "es": {
+     "t": "Dar feedback con diplomacia",
+     "g": "Da una opinión constructiva, sincera y amable.",
+     "p": [
+      "Empieza en positivo: Lo que más me ha gustado es...",
+      "Sugiere, no ordenes: Quizás podrías..., ¿Has pensado en...?, Yo probaría a...",
+      "Cierra con apoyo: En general, vas por muy buen camino."
+     ],
+     "q": "¿Cómo prefieres recibir comentarios: de forma directa o suave?",
+     "c": "Comenta la presentación imaginaria de un amigo: un elogio y una sugerencia con quizás podrías."
+    },
+    "fr": {
+     "t": "Donner un retour avec diplomatie",
+     "g": "Donne un retour constructif, honnête et bienveillant.",
+     "p": [
+      "Commence par le positif : Lo que más me ha gustado es...",
+      "Suggère sans ordonner : Quizás podrías..., ¿Has pensado en...?, Yo probaría a...",
+      "Termine par un encouragement : En general, vas por muy buen camino."
+     ],
+     "q": "Comment préfères-tu recevoir un retour : direct ou en douceur ?",
+     "c": "Fais un retour sur la présentation imaginaire d'un ami : un point fort, une suggestion avec quizás podrías."
+    },
+    "it": {
+     "t": "Dare feedback con diplomazia",
+     "g": "Dai un feedback costruttivo, sincero e gentile.",
+     "p": [
+      "Inizia in positivo: Lo que más me ha gustado es...",
+      "Suggerisci, non ordinare: Quizás podrías..., ¿Has pensado en...?, Yo probaría a...",
+      "Chiudi con incoraggiamento: En general, vas por muy buen camino."
+     ],
+     "q": "Come preferisci ricevere un feedback: diretto o delicato?",
+     "c": "Commenta la presentazione immaginaria di un amico: un elogio e un suggerimento con quizás podrías."
+    },
+    "pt": {
+     "t": "Dar feedback com diplomacia",
+     "g": "Dá um feedback construtivo, sincero e simpático.",
+     "p": [
+      "Começa pelo positivo: Lo que más me ha gustado es...",
+      "Sugere, não ordenes: Quizás podrías..., ¿Has pensado en...?, Yo probaría a...",
+      "Fecha com apoio: En general, vas por muy buen camino."
+     ],
+     "q": "Como preferes receber feedback: direto ou suave?",
+     "c": "Comenta a apresentação imaginária de um amigo: um elogio e uma sugestão com quizás podrías."
+    },
+    "pt_BR": {
+     "t": "Dar feedback com diplomacia",
+     "g": "Dê um feedback construtivo, sincero e gentil.",
+     "p": [
+      "Comece pelo positivo: Lo que más me ha gustado es...",
+      "Sugira, não mande: Quizás podrías..., ¿Has pensado en...?, Yo probaría a...",
+      "Feche com apoio: En general, vas por muy buen camino."
+     ],
+     "q": "Como você prefere receber feedback: direto ou suave?",
+     "c": "Comente a apresentação imaginária de um amigo: um elogio e uma sugestão com quizás podrías."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "lo que más me ha gustado es",
+      "ex": "Lo que más me ha gustado es tu introducción."
+     },
+     {
+      "w": "quizás podrías",
+      "ex": "Quizás podrías hablar un poco más despacio."
+     },
+     {
+      "w": "¿has pensado en...?",
+      "ex": "¿Has pensado en añadir algún ejemplo?"
+     },
+     {
+      "w": "yo probaría a",
+      "ex": "Yo probaría a empezar con una pregunta."
+     },
+     {
+      "w": "un punto fuerte",
+      "ex": "Tu punto fuerte es la claridad."
+     },
+     {
+      "w": "ir por buen camino",
+      "ex": "Vas por muy buen camino, sigue así."
+     }
+    ],
+    "gram": "Suavizar críticas: condicional (podrías, probaría), quizás + indicativo o subjuntivo y lo que + verbo + es para destacar."
+   }
+  },
+  {
+   "d": 326,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Networking conversations",
+     "g": "Introduce yourself, find common ground and follow up.",
+     "p": [
+      "Introduce yourself briefly: Me dedico a..., trabajo en el sector de...",
+      "Find common ground: ¿Y tú cómo conociste este evento? ¡Qué coincidencia!",
+      "Follow up: ¿Te parece si seguimos en contacto? Encantado de conocerte."
+     ],
+     "q": "How would you describe what you do in one Spanish sentence?",
+     "c": "Write a 30-second self-introduction for an event, starting with me dedico a."
+    },
+    "de": {
+     "t": "Networking-Gespräche",
+     "g": "Stell dich vor, finde Gemeinsamkeiten und bleib in Kontakt.",
+     "p": [
+      "Kurz vorstellen: Me dedico a..., trabajo en el sector de...",
+      "Gemeinsamkeiten finden: ¿Y tú cómo conociste este evento? ¡Qué coincidencia!",
+      "Nachfassen: ¿Te parece si seguimos en contacto? Encantado de conocerte."
+     ],
+     "q": "Wie würdest du in einem spanischen Satz beschreiben, was du machst?",
+     "c": "Schreib eine 30-Sekunden-Vorstellung für ein Event, beginnend mit me dedico a."
+    },
+    "es": {
+     "t": "Conversaciones de networking",
+     "g": "Preséntate, busca puntos en común y mantén el contacto.",
+     "p": [
+      "Preséntate en breve: Me dedico a..., trabajo en el sector de...",
+      "Busca algo en común: ¿Y tú cómo conociste este evento? ¡Qué coincidencia!",
+      "Haz seguimiento: ¿Te parece si seguimos en contacto? Encantado de conocerte."
+     ],
+     "q": "¿Cómo describirías a qué te dedicas en una sola frase?",
+     "c": "Escribe una presentación de 30 segundos para un evento que empiece por me dedico a."
+    },
+    "fr": {
+     "t": "Conversations de réseautage",
+     "g": "Présente-toi, trouve des points communs et garde le contact.",
+     "p": [
+      "Présente-toi brièvement : Me dedico a..., trabajo en el sector de...",
+      "Trouve un point commun : ¿Y tú cómo conociste este evento? ¡Qué coincidencia!",
+      "Fais le suivi : ¿Te parece si seguimos en contacto? Encantado de conocerte."
+     ],
+     "q": "Comment décrirais-tu ce que tu fais en une phrase espagnole ?",
+     "c": "Écris une présentation de 30 secondes pour un événement, en commençant par me dedico a."
+    },
+    "it": {
+     "t": "Conversazioni di networking",
+     "g": "Presentati, trova punti in comune e resta in contatto.",
+     "p": [
+      "Presentati in breve: Me dedico a..., trabajo en el sector de...",
+      "Trova qualcosa in comune: ¿Y tú cómo conociste este evento? ¡Qué coincidencia!",
+      "Dai seguito: ¿Te parece si seguimos en contacto? Encantado de conocerte."
+     ],
+     "q": "Come descriveresti quello che fai in una frase spagnola?",
+     "c": "Scrivi una presentazione di 30 secondi per un evento che inizi con me dedico a."
+    },
+    "pt": {
+     "t": "Conversas de networking",
+     "g": "Apresenta-te, encontra pontos em comum e mantém o contacto.",
+     "p": [
+      "Apresenta-te em poucas palavras: Me dedico a..., trabajo en el sector de...",
+      "Procura algo em comum: ¿Y tú cómo conociste este evento? ¡Qué coincidencia!",
+      "Dá seguimento: ¿Te parece si seguimos en contacto? Encantado de conocerte."
+     ],
+     "q": "Como descreverias o que fazes numa frase em espanhol?",
+     "c": "Escreve uma apresentação de 30 segundos para um evento a começar por me dedico a."
+    },
+    "pt_BR": {
+     "t": "Conversas de networking",
+     "g": "Apresente-se, encontre pontos em comum e mantenha contato.",
+     "p": [
+      "Apresente-se em poucas palavras: Me dedico a..., trabajo en el sector de...",
+      "Procure algo em comum: ¿Y tú cómo conociste este evento? ¡Qué coincidencia!",
+      "Dê continuidade: ¿Te parece si seguimos en contacto? Encantado de conocerte."
+     ],
+     "q": "Como você descreveria o que faz numa frase em espanhol?",
+     "c": "Escreva uma apresentação de 30 segundos para um evento começando por me dedico a."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "me dedico a",
+      "ex": "Me dedico al diseño de aplicaciones."
+     },
+     {
+      "w": "el sector",
+      "ex": "Trabajo en el sector turístico desde hace años."
+     },
+     {
+      "w": "¡qué coincidencia!",
+      "ex": "¿También eres de Valencia? ¡Qué coincidencia!"
+     },
+     {
+      "w": "tener en común",
+      "ex": "Tenemos en común la pasión por los viajes."
+     },
+     {
+      "w": "seguir en contacto",
+      "ex": "¿Te parece si seguimos en contacto?"
+     },
+     {
+      "w": "encantado de conocerte",
+      "ex": "Encantado de conocerte, Lucía."
+     }
+    ],
+    "gram": "Dedicarse a + sustantivo o infinitivo para la profesión; ¿te parece si + presente? para proponer con naturalidad."
+   }
+  },
+  {
+   "d": 327,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Writing a cover letter",
+     "g": "Write a convincing cover letter for a job in Spanish.",
+     "p": [
+      "Open: Me dirijo a ustedes para presentar mi candidatura al puesto de...",
+      "Show value: Mi experiencia en... me ha permitido + infinitive.",
+      "Close: Quedo a su disposición para una entrevista. Atentamente."
+     ],
+     "q": "What job would you love to apply for in a Spanish-speaking country?",
+     "c": "Write the middle paragraph of a cover letter with mi experiencia en and me ha permitido."
+    },
+    "de": {
+     "t": "Ein Anschreiben verfassen",
+     "g": "Schreib ein überzeugendes spanisches Bewerbungsanschreiben.",
+     "p": [
+      "Eröffnung: Me dirijo a ustedes para presentar mi candidatura al puesto de...",
+      "Stärken zeigen: Mi experiencia en... me ha permitido + Infinitiv.",
+      "Schluss: Quedo a su disposición para una entrevista. Atentamente."
+     ],
+     "q": "Auf welche Stelle in einem spanischsprachigen Land würdest du dich gern bewerben?",
+     "c": "Schreib den Mittelteil eines Anschreibens mit mi experiencia en und me ha permitido."
+    },
+    "es": {
+     "t": "Escribir una carta de presentación",
+     "g": "Redacta una carta de presentación convincente para un empleo.",
+     "p": [
+      "Apertura: Me dirijo a ustedes para presentar mi candidatura al puesto de...",
+      "Muestra tu valor: Mi experiencia en... me ha permitido + infinitivo.",
+      "Cierre: Quedo a su disposición para una entrevista. Atentamente."
+     ],
+     "q": "¿A qué puesto te encantaría presentarte en un país hispanohablante?",
+     "c": "Escribe el párrafo central de una carta con mi experiencia en y me ha permitido."
+    },
+    "fr": {
+     "t": "Rédiger une lettre de motivation",
+     "g": "Écris une lettre de motivation convaincante en espagnol.",
+     "p": [
+      "Ouverture : Me dirijo a ustedes para presentar mi candidatura al puesto de...",
+      "Montre ta valeur : Mi experiencia en... me ha permitido + infinitif.",
+      "Clôture : Quedo a su disposición para una entrevista. Atentamente."
+     ],
+     "q": "À quel poste aimerais-tu postuler dans un pays hispanophone ?",
+     "c": "Écris le paragraphe central d'une lettre avec mi experiencia en et me ha permitido."
+    },
+    "it": {
+     "t": "Scrivere una lettera di presentazione",
+     "g": "Scrivi una lettera di presentazione convincente in spagnolo.",
+     "p": [
+      "Apertura: Me dirijo a ustedes para presentar mi candidatura al puesto de...",
+      "Mostra il tuo valore: Mi experiencia en... me ha permitido + infinito.",
+      "Chiusura: Quedo a su disposición para una entrevista. Atentamente."
+     ],
+     "q": "Per quale lavoro ti piacerebbe candidarti in un paese ispanofono?",
+     "c": "Scrivi il paragrafo centrale di una lettera con mi experiencia en e me ha permitido."
+    },
+    "pt": {
+     "t": "Escrever uma carta de apresentação",
+     "g": "Redige uma carta de apresentação convincente em espanhol.",
+     "p": [
+      "Abertura: Me dirijo a ustedes para presentar mi candidatura al puesto de...",
+      "Mostra o teu valor: Mi experiencia en... me ha permitido + infinitivo.",
+      "Fecho: Quedo a su disposición para una entrevista. Atentamente."
+     ],
+     "q": "A que emprego adorarias candidatar-te num país hispanófono?",
+     "c": "Escreve o parágrafo central de uma carta com mi experiencia en e me ha permitido."
+    },
+    "pt_BR": {
+     "t": "Escrever uma carta de apresentação",
+     "g": "Escreva uma carta de apresentação convincente em espanhol.",
+     "p": [
+      "Abertura: Me dirijo a ustedes para presentar mi candidatura al puesto de...",
+      "Mostre seu valor: Mi experiencia en... me ha permitido + infinitivo.",
+      "Fechamento: Quedo a su disposición para una entrevista. Atentamente."
+     ],
+     "q": "Para qual vaga você adoraria se candidatar num país de língua espanhola?",
+     "c": "Escreva o parágrafo central de uma carta com mi experiencia en e me ha permitido."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "presentar mi candidatura",
+      "ex": "Me gustaría presentar mi candidatura al puesto de diseñador."
+     },
+     {
+      "w": "el puesto",
+      "ex": "El puesto requiere inglés y español."
+     },
+     {
+      "w": "mi experiencia en",
+      "ex": "Mi experiencia en atención al cliente es amplia."
+     },
+     {
+      "w": "me ha permitido",
+      "ex": "Este trabajo me ha permitido liderar equipos."
+     },
+     {
+      "w": "quedo a su disposición",
+      "ex": "Quedo a su disposición para cualquier consulta."
+     },
+     {
+      "w": "la entrevista",
+      "ex": "Me encantaría tener la oportunidad de una entrevista."
+     }
+    ],
+    "gram": "Carta de presentación: pretérito perfecto para la experiencia (me ha permitido) y fórmulas de usted (quedo a su disposición)."
+   }
+  },
+  {
+   "d": 328,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Remote work communication",
+     "g": "Communicate clearly in Spanish when working online.",
+     "p": [
+      "Write clear messages: Te escribo para..., ¿Podrías confirmarme...?",
+      "Mind time zones: ¿Qué hora es allí? Nos vemos a las 10, hora de Madrid.",
+      "Video calls: Se te ha congelado la imagen, ¿me oyes bien?, voy a compartir pantalla."
+     ],
+     "q": "What helps you communicate well with people in other time zones?",
+     "c": "Write a short message proposing a video call, mentioning the time zone and asking for confirmation."
+    },
+    "de": {
+     "t": "Kommunikation im Homeoffice",
+     "g": "Kommuniziere online auf Spanisch klar und deutlich.",
+     "p": [
+      "Klare Nachrichten: Te escribo para..., ¿Podrías confirmarme...?",
+      "Zeitzonen beachten: ¿Qué hora es allí? Nos vemos a las 10, hora de Madrid.",
+      "Videocalls: Se te ha congelado la imagen, ¿me oyes bien?, voy a compartir pantalla."
+     ],
+     "q": "Was hilft dir, gut mit Menschen in anderen Zeitzonen zu kommunizieren?",
+     "c": "Schreib eine kurze Nachricht mit einem Videocall-Vorschlag, Zeitzone und Bitte um Bestätigung."
+    },
+    "es": {
+     "t": "Comunicación en el teletrabajo",
+     "g": "Comunícate con claridad cuando trabajas en línea.",
+     "p": [
+      "Mensajes claros: Te escribo para..., ¿Podrías confirmarme...?",
+      "Ten en cuenta los husos horarios: ¿Qué hora es allí? Nos vemos a las 10, hora de Madrid.",
+      "Videollamadas: Se te ha congelado la imagen, ¿me oyes bien?, voy a compartir pantalla."
+     ],
+     "q": "¿Qué te ayuda a comunicarte bien con gente de otros husos horarios?",
+     "c": "Escribe un breve mensaje para proponer una videollamada con el huso horario y pide confirmación."
+    },
+    "fr": {
+     "t": "Communiquer en télétravail",
+     "g": "Communique clairement en espagnol quand tu travailles en ligne.",
+     "p": [
+      "Messages clairs : Te escribo para..., ¿Podrías confirmarme...?",
+      "Pense aux fuseaux horaires : ¿Qué hora es allí? Nos vemos a las 10, hora de Madrid.",
+      "Visio : Se te ha congelado la imagen, ¿me oyes bien?, voy a compartir pantalla."
+     ],
+     "q": "Qu'est-ce qui t'aide à bien communiquer avec des gens sur d'autres fuseaux ?",
+     "c": "Écris un court message pour proposer une visio, avec le fuseau horaire et une demande de confirmation."
+    },
+    "it": {
+     "t": "Comunicare in smart working",
+     "g": "Comunica con chiarezza in spagnolo quando lavori online.",
+     "p": [
+      "Messaggi chiari: Te escribo para..., ¿Podrías confirmarme...?",
+      "Attenzione ai fusi orari: ¿Qué hora es allí? Nos vemos a las 10, hora de Madrid.",
+      "Videochiamate: Se te ha congelado la imagen, ¿me oyes bien?, voy a compartir pantalla."
+     ],
+     "q": "Cosa ti aiuta a comunicare bene con persone in altri fusi orari?",
+     "c": "Scrivi un breve messaggio per proporre una videochiamata con fuso orario e richiesta di conferma."
+    },
+    "pt": {
+     "t": "Comunicação em teletrabalho",
+     "g": "Comunica com clareza em espanhol quando trabalhas online.",
+     "p": [
+      "Mensagens claras: Te escribo para..., ¿Podrías confirmarme...?",
+      "Atenção aos fusos horários: ¿Qué hora es allí? Nos vemos a las 10, hora de Madrid.",
+      "Videochamadas: Se te ha congelado la imagen, ¿me oyes bien?, voy a compartir pantalla."
+     ],
+     "q": "O que te ajuda a comunicar bem com pessoas noutros fusos horários?",
+     "c": "Escreve uma mensagem curta a propor uma videochamada, com fuso horário e pedido de confirmação."
+    },
+    "pt_BR": {
+     "t": "Comunicação no trabalho remoto",
+     "g": "Comunique-se com clareza em espanhol quando trabalha online.",
+     "p": [
+      "Mensagens claras: Te escribo para..., ¿Podrías confirmarme...?",
+      "Atenção aos fusos horários: ¿Qué hora es allí? Nos vemos a las 10, hora de Madrid.",
+      "Videochamadas: Se te ha congelado la imagen, ¿me oyes bien?, voy a compartir pantalla."
+     ],
+     "q": "O que ajuda você a se comunicar bem com pessoas em outros fusos horários?",
+     "c": "Escreva uma mensagem curta propondo uma videochamada, com fuso horário e pedido de confirmação."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el teletrabajo",
+      "ex": "El teletrabajo me permite organizar mejor mi día."
+     },
+     {
+      "w": "el huso horario",
+      "ex": "Vivimos en husos horarios distintos."
+     },
+     {
+      "w": "la videollamada",
+      "ex": "¿Hacemos una videollamada a las cinco?"
+     },
+     {
+      "w": "compartir pantalla",
+      "ex": "Ahora voy a compartir pantalla."
+     },
+     {
+      "w": "se te ha congelado la imagen",
+      "ex": "Perdona, se te ha congelado la imagen."
+     },
+     {
+      "w": "¿podrías confirmarme...?",
+      "ex": "¿Podrías confirmarme la hora de la reunión?"
+     }
+    ],
+    "gram": "Se + pronombre + verbo para accidentes involuntarios: se te ha congelado la imagen, se me ha cortado la conexión."
+   }
+  },
+  {
+   "d": 329,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Entrepreneurship and start-ups",
+     "g": "Talk about starting and growing a new business.",
+     "p": [
+      "Key words: emprender, el emprendedor, el inversor, el plan de negocio.",
+      "Describe steps: primero hay que validar la idea, luego buscar financiación.",
+      "Talk about hopes with ojalá + subjunctive: Ojalá mi proyecto tenga éxito."
+     ],
+     "q": "If you started a business, what would it be?",
+     "c": "Describe a dream business in four sentences using emprender, inversor and ojalá."
+    },
+    "de": {
+     "t": "Unternehmertum und Start-ups",
+     "g": "Sprich über die Gründung und das Wachstum eines neuen Unternehmens.",
+     "p": [
+      "Schlüsselwörter: emprender, el emprendedor, el inversor, el plan de negocio.",
+      "Schritte beschreiben: primero hay que validar la idea, luego buscar financiación.",
+      "Hoffnungen mit ojalá + Subjuntivo: Ojalá mi proyecto tenga éxito."
+     ],
+     "q": "Wenn du ein Unternehmen gründen würdest, welches wäre es?",
+     "c": "Beschreibe ein Traumunternehmen in vier Sätzen mit emprender, inversor und ojalá."
+    },
+    "es": {
+     "t": "Emprendimiento y startups",
+     "g": "Habla de cómo crear y hacer crecer un negocio nuevo.",
+     "p": [
+      "Palabras clave: emprender, el emprendedor, el inversor, el plan de negocio.",
+      "Describe los pasos: primero hay que validar la idea, luego buscar financiación.",
+      "Expresa deseos con ojalá + subjuntivo: Ojalá mi proyecto tenga éxito."
+     ],
+     "q": "Si montaras un negocio, ¿cuál sería?",
+     "c": "Describe un negocio soñado en cuatro frases con emprender, inversor y ojalá."
+    },
+    "fr": {
+     "t": "Entrepreneuriat et start-up",
+     "g": "Parle de la création et du développement d'une nouvelle entreprise.",
+     "p": [
+      "Mots clés : emprender, el emprendedor, el inversor, el plan de negocio.",
+      "Décris les étapes : primero hay que validar la idea, luego buscar financiación.",
+      "Exprime tes espoirs avec ojalá + subjonctif : Ojalá mi proyecto tenga éxito."
+     ],
+     "q": "Si tu créais une entreprise, laquelle serait-ce ?",
+     "c": "Décris une entreprise de rêve en quatre phrases avec emprender, inversor et ojalá."
+    },
+    "it": {
+     "t": "Imprenditoria e startup",
+     "g": "Parla di come avviare e far crescere una nuova impresa.",
+     "p": [
+      "Parole chiave: emprender, el emprendedor, el inversor, el plan de negocio.",
+      "Descrivi i passi: primero hay que validar la idea, luego buscar financiación.",
+      "Esprimi speranze con ojalá + congiuntivo: Ojalá mi proyecto tenga éxito."
+     ],
+     "q": "Se avviassi un'impresa, quale sarebbe?",
+     "c": "Descrivi un'impresa da sogno in quattro frasi con emprender, inversor e ojalá."
+    },
+    "pt": {
+     "t": "Empreendedorismo e startups",
+     "g": "Fala de como criar e fazer crescer um negócio novo.",
+     "p": [
+      "Palavras-chave: emprender, el emprendedor, el inversor, el plan de negocio.",
+      "Descreve os passos: primero hay que validar la idea, luego buscar financiación.",
+      "Exprime desejos com ojalá + conjuntivo: Ojalá mi proyecto tenga éxito."
+     ],
+     "q": "Se criasses um negócio, qual seria?",
+     "c": "Descreve um negócio de sonho em quatro frases com emprender, inversor e ojalá."
+    },
+    "pt_BR": {
+     "t": "Empreendedorismo e startups",
+     "g": "Fale sobre como criar e fazer crescer um negócio novo.",
+     "p": [
+      "Palavras-chave: emprender, el emprendedor, el inversor, el plan de negocio.",
+      "Descreva os passos: primero hay que validar la idea, luego buscar financiación.",
+      "Expresse desejos com ojalá + subjuntivo: Ojalá mi proyecto tenga éxito."
+     ],
+     "q": "Se você abrisse um negócio, qual seria?",
+     "c": "Descreva um negócio dos sonhos em quatro frases com emprender, inversor e ojalá."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "emprender",
+      "ex": "Decidió emprender después de diez años en una empresa."
+     },
+     {
+      "w": "el emprendedor",
+      "ex": "Los emprendedores aprenden mucho de sus errores."
+     },
+     {
+      "w": "el inversor",
+      "ex": "Un inversor se interesó por nuestra aplicación."
+     },
+     {
+      "w": "el plan de negocio",
+      "ex": "Primero preparamos un plan de negocio sólido."
+     },
+     {
+      "w": "la financiación",
+      "ex": "Estamos buscando financiación para crecer."
+     },
+     {
+      "w": "lanzar",
+      "ex": "Lanzamos la primera versión en solo tres meses."
+     }
+    ],
+    "gram": "Hay que + infinitivo para pasos necesarios; ojalá + presente de subjuntivo para deseos (ojalá funcione)."
+   }
+  },
+  {
+   "d": 330,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Leadership and teamwork",
+     "g": "Talk about leading people and working well as a team.",
+     "p": [
+      "Leadership verbs: delegar, motivar, escuchar, asumir responsabilidades.",
+      "Teamwork: colaborar, apoyarse mutuamente, remar en la misma dirección.",
+      "Describe a good leader with es alguien que + indicative, or busco un líder que + subjunctive."
+     ],
+     "q": "What makes someone a good leader for you?",
+     "c": "Describe your ideal team leader in three sentences with es alguien que and busco a alguien que."
+    },
+    "de": {
+     "t": "Führung und Teamarbeit",
+     "g": "Sprich über das Führen von Menschen und gute Teamarbeit.",
+     "p": [
+      "Führungsverben: delegar, motivar, escuchar, asumir responsabilidades.",
+      "Teamarbeit: colaborar, apoyarse mutuamente, remar en la misma dirección.",
+      "Gute Führung: es alguien que + Indikativ, oder busco un líder que + Subjuntivo."
+     ],
+     "q": "Was macht für dich eine gute Führungskraft aus?",
+     "c": "Beschreibe deine ideale Teamleitung in drei Sätzen mit es alguien que und busco a alguien que."
+    },
+    "es": {
+     "t": "Liderazgo y trabajo en equipo",
+     "g": "Habla de cómo liderar personas y trabajar bien en equipo.",
+     "p": [
+      "Verbos de liderazgo: delegar, motivar, escuchar, asumir responsabilidades.",
+      "Trabajo en equipo: colaborar, apoyarse mutuamente, remar en la misma dirección.",
+      "Describe a un buen líder: es alguien que + indicativo; busco un líder que + subjuntivo."
+     ],
+     "q": "¿Qué hace, para ti, que alguien sea un buen líder?",
+     "c": "Describe a tu líder ideal en tres frases con es alguien que y busco a alguien que."
+    },
+    "fr": {
+     "t": "Leadership et travail d'équipe",
+     "g": "Parle de la façon de diriger et de bien travailler en équipe.",
+     "p": [
+      "Verbes du leadership : delegar, motivar, escuchar, asumir responsabilidades.",
+      "Travail d'équipe : colaborar, apoyarse mutuamente, remar en la misma dirección.",
+      "Un bon leader : es alguien que + indicatif ; busco un líder que + subjonctif."
+     ],
+     "q": "Qu'est-ce qui fait un bon leader selon toi ?",
+     "c": "Décris ton chef d'équipe idéal en trois phrases avec es alguien que et busco a alguien que."
+    },
+    "it": {
+     "t": "Leadership e lavoro di squadra",
+     "g": "Parla di come guidare le persone e lavorare bene in squadra.",
+     "p": [
+      "Verbi della leadership: delegar, motivar, escuchar, asumir responsabilidades.",
+      "Lavoro di squadra: colaborar, apoyarse mutuamente, remar en la misma dirección.",
+      "Un buon leader: es alguien que + indicativo; busco un líder que + congiuntivo."
+     ],
+     "q": "Che cosa rende qualcuno un buon leader secondo te?",
+     "c": "Descrivi il tuo capo squadra ideale in tre frasi con es alguien que e busco a alguien que."
+    },
+    "pt": {
+     "t": "Liderança e trabalho em equipa",
+     "g": "Fala de como liderar pessoas e trabalhar bem em equipa.",
+     "p": [
+      "Verbos de liderança: delegar, motivar, escuchar, asumir responsabilidades.",
+      "Trabalho em equipa: colaborar, apoyarse mutuamente, remar en la misma dirección.",
+      "Um bom líder: es alguien que + indicativo; busco un líder que + conjuntivo."
+     ],
+     "q": "O que faz de alguém um bom líder, para ti?",
+     "c": "Descreve o teu líder ideal em três frases com es alguien que e busco a alguien que."
+    },
+    "pt_BR": {
+     "t": "Liderança e trabalho em equipe",
+     "g": "Fale sobre como liderar pessoas e trabalhar bem em equipe.",
+     "p": [
+      "Verbos de liderança: delegar, motivar, escuchar, asumir responsabilidades.",
+      "Trabalho em equipe: colaborar, apoyarse mutuamente, remar en la misma dirección.",
+      "Um bom líder: es alguien que + indicativo; busco un líder que + subjuntivo."
+     ],
+     "q": "Para você, o que faz alguém ser um bom líder?",
+     "c": "Descreva seu líder ideal em três frases com es alguien que e busco a alguien que."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "delegar",
+      "ex": "Una buena jefa sabe delegar tareas."
+     },
+     {
+      "w": "motivar",
+      "ex": "Su forma de hablar motiva a todo el equipo."
+     },
+     {
+      "w": "asumir responsabilidades",
+      "ex": "Asumió la responsabilidad del error."
+     },
+     {
+      "w": "colaborar",
+      "ex": "Colaboramos con otro departamento en el proyecto."
+     },
+     {
+      "w": "apoyarse mutuamente",
+      "ex": "En este equipo nos apoyamos mutuamente."
+     },
+     {
+      "w": "remar en la misma dirección",
+      "ex": "Si remamos en la misma dirección, lo lograremos."
+     }
+    ],
+    "gram": "Relativo + indicativo para algo conocido (es alguien que escucha) y + subjuntivo para algo buscado (busco a alguien que escuche)."
+   }
+  }
+ ]
+}

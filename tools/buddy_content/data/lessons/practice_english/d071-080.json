@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 71,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Invitations: Would you like to...?",
+     "g": "Invite people in a friendly, polite way.",
+     "p": [
+      "Would you like to come to my party? is polite and warm.",
+      "Do you want to join us? is more casual, perfect for friends.",
+      "Add the details: It's on Friday at seven, at my place."
+     ],
+     "q": "Invite me to something fun this weekend. What do you say?",
+     "c": "Write three invitations in English: one polite, one casual, one with full details."
+    },
+    "de": {
+     "t": "Einladungen: Would you like to...?",
+     "g": "Du lädst Menschen freundlich und höflich ein.",
+     "p": [
+      "Would you like to come to my party? ist höflich und herzlich.",
+      "Do you want to join us? ist lockerer, ideal unter Freunden.",
+      "Füg die Details hinzu: It's on Friday at seven, at my place."
+     ],
+     "q": "Lad mich zu etwas Schönem am Wochenende ein. Was sagst du?",
+     "c": "Schreib drei Einladungen auf Englisch: eine höfliche, eine lockere, eine mit allen Details."
+    },
+    "es": {
+     "t": "Invitaciones: Would you like to...?",
+     "g": "Invita a la gente de forma amable y educada.",
+     "p": [
+      "Would you like to come to my party? es educado y cálido.",
+      "Do you want to join us? es más informal, ideal entre amigos.",
+      "Añade los detalles: It's on Friday at seven, at my place."
+     ],
+     "q": "Invítame a algo divertido este fin de semana. ¿Qué me dices?",
+     "c": "Escribe tres invitaciones en inglés: una educada, una informal y una con todos los detalles."
+    },
+    "fr": {
+     "t": "Invitations : Would you like to...?",
+     "g": "Inviter quelqu'un de façon chaleureuse et polie.",
+     "p": [
+      "Would you like to come to my party? est poli et chaleureux.",
+      "Do you want to join us? est plus familier, parfait entre amis.",
+      "Ajoute les détails : It's on Friday at seven, at my place."
+     ],
+     "q": "Invite-moi à quelque chose de sympa ce week-end. Que dis-tu ?",
+     "c": "Écris trois invitations en anglais : une polie, une familière, une avec tous les détails."
+    },
+    "it": {
+     "t": "Inviti: Would you like to...?",
+     "g": "Inviti le persone in modo cordiale ed educato.",
+     "p": [
+      "Would you like to come to my party? è educato e caloroso.",
+      "Do you want to join us? è più informale, perfetto tra amici.",
+      "Aggiungi i dettagli: It's on Friday at seven, at my place."
+     ],
+     "q": "Invitami a qualcosa di divertente questo weekend. Cosa mi dici?",
+     "c": "Scrivi tre inviti in inglese: uno educato, uno informale e uno con tutti i dettagli."
+    },
+    "pt": {
+     "t": "Convites: Would you like to...?",
+     "g": "Convida pessoas de forma simpática e educada.",
+     "p": [
+      "Would you like to come to my party? é educado e caloroso.",
+      "Do you want to join us? é mais informal, ideal entre amigos.",
+      "Junta os pormenores: It's on Friday at seven, at my place."
+     ],
+     "q": "Convida-me para algo divertido este fim de semana. O que dizes?",
+     "c": "Escreve três convites em inglês: um educado, um informal e um com todos os pormenores."
+    },
+    "pt_BR": {
+     "t": "Convites: Would you like to...?",
+     "g": "Convide pessoas de um jeito simpático e educado.",
+     "p": [
+      "Would you like to come to my party? é educado e caloroso.",
+      "Do you want to join us? é mais informal, ótimo entre amigos.",
+      "Acrescente os detalhes: It's on Friday at seven, at my place."
+     ],
+     "q": "Me convide para algo divertido neste fim de semana. O que você diz?",
+     "c": "Escreva três convites em inglês: um educado, um informal e um com todos os detalhes."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Would you like to...?",
+      "ex": "Would you like to come for dinner?"
+     },
+     {
+      "w": "Do you want to...?",
+      "ex": "Do you want to go for a walk?"
+     },
+     {
+      "w": "join us",
+      "ex": "We're going bowling. Do you want to join us?"
+     },
+     {
+      "w": "at my place",
+      "ex": "The party is at my place."
+     },
+     {
+      "w": "on Friday at seven",
+      "ex": "The dinner is on Friday at seven."
+     },
+     {
+      "w": "a party",
+      "ex": "I'm having a small party on Saturday."
+     }
+    ],
+    "gram": "Invite with Would you like to + base verb? (polite) or Do you want to + base verb? (casual)."
+   }
+  },
+  {
+   "d": 72,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Accepting and declining politely",
+     "g": "Answer invitations kindly, whether you say yes or no.",
+     "p": [
+      "To accept: Yes, I'd love to! or That sounds great, thanks!",
+      "To decline: Sorry, I can't, I'm busy. Always give a short reason.",
+      "Keep it friendly: Maybe next time? or Thanks for asking!"
+     ],
+     "q": "I invite you to a picnic on Sunday. Can you come? Answer politely.",
+     "c": "Write one yes reply and one no reply to the same invitation."
+    },
+    "de": {
+     "t": "Höflich zusagen und absagen",
+     "g": "Du antwortest freundlich auf Einladungen, ob mit Ja oder Nein.",
+     "p": [
+      "Zusagen: Yes, I'd love to! oder That sounds great, thanks!",
+      "Absagen: Sorry, I can't, I'm busy. Nenn immer kurz einen Grund.",
+      "Bleib freundlich: Maybe next time? oder Thanks for asking!"
+     ],
+     "q": "Ich lade dich am Sonntag zum Picknick ein. Kommst du? Antworte höflich.",
+     "c": "Schreib eine Zusage und eine Absage auf dieselbe Einladung."
+    },
+    "es": {
+     "t": "Aceptar y rechazar con educación",
+     "g": "Responde con amabilidad a las invitaciones, digas sí o no.",
+     "p": [
+      "Para aceptar: Yes, I'd love to! o That sounds great, thanks!",
+      "Para rechazar: Sorry, I can't, I'm busy. Da siempre una razón breve.",
+      "Mantén el tono amable: Maybe next time? o Thanks for asking!"
+     ],
+     "q": "Te invito a un picnic el domingo. ¿Puedes venir? Contesta con educación.",
+     "c": "Escribe una respuesta de sí y otra de no a la misma invitación."
+    },
+    "fr": {
+     "t": "Accepter et refuser poliment",
+     "g": "Répondre gentiment à une invitation, que ce soit oui ou non.",
+     "p": [
+      "Pour accepter : Yes, I'd love to! ou That sounds great, thanks!",
+      "Pour refuser : Sorry, I can't, I'm busy. Donne toujours une courte raison.",
+      "Reste aimable : Maybe next time? ou Thanks for asking!"
+     ],
+     "q": "Je t'invite à un pique-nique dimanche. Tu peux venir ? Réponds poliment.",
+     "c": "Écris une réponse positive et une négative à la même invitation."
+    },
+    "it": {
+     "t": "Accettare e rifiutare con garbo",
+     "g": "Rispondi con gentilezza agli inviti, che sia sì o no.",
+     "p": [
+      "Per accettare: Yes, I'd love to! oppure That sounds great, thanks!",
+      "Per rifiutare: Sorry, I can't, I'm busy. Dai sempre un breve motivo.",
+      "Resta cordiale: Maybe next time? oppure Thanks for asking!"
+     ],
+     "q": "Ti invito a un picnic domenica. Puoi venire? Rispondi con garbo.",
+     "c": "Scrivi una risposta di sì e una di no allo stesso invito."
+    },
+    "pt": {
+     "t": "Aceitar e recusar com educação",
+     "g": "Responde com simpatia aos convites, seja sim ou não.",
+     "p": [
+      "Para aceitar: Yes, I'd love to! ou That sounds great, thanks!",
+      "Para recusar: Sorry, I can't, I'm busy. Dá sempre uma razão curta.",
+      "Mantém o tom simpático: Maybe next time? ou Thanks for asking!"
+     ],
+     "q": "Convido-te para um piquenique no domingo. Podes vir? Responde com educação.",
+     "c": "Escreve uma resposta de sim e outra de não ao mesmo convite."
+    },
+    "pt_BR": {
+     "t": "Aceitar e recusar com educação",
+     "g": "Responda com gentileza aos convites, seja sim ou não.",
+     "p": [
+      "Para aceitar: Yes, I'd love to! ou That sounds great, thanks!",
+      "Para recusar: Sorry, I can't, I'm busy. Dê sempre um motivo curto.",
+      "Mantenha o tom simpático: Maybe next time? ou Thanks for asking!"
+     ],
+     "q": "Te convido para um piquenique no domingo. Você pode vir? Responda com educação.",
+     "c": "Escreva uma resposta de sim e outra de não ao mesmo convite."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "I'd love to!",
+      "ex": "A picnic? Yes, I'd love to!"
+     },
+     {
+      "w": "That sounds great.",
+      "ex": "Dinner on Friday? That sounds great."
+     },
+     {
+      "w": "Sorry, I can't.",
+      "ex": "Sorry, I can't. I'm working that day."
+     },
+     {
+      "w": "I'm busy.",
+      "ex": "I'm busy on Saturday, sorry."
+     },
+     {
+      "w": "Maybe next time?",
+      "ex": "I can't come tonight. Maybe next time?"
+     },
+     {
+      "w": "Thanks for asking!",
+      "ex": "I can't make it, but thanks for asking!"
+     }
+    ],
+    "gram": "Accept: I'd love to (= I would love to). Decline: Sorry, I can't + short reason (I'm busy, I have to work)."
+   }
+  },
+  {
+   "d": 73,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Making plans with going to",
+     "g": "Talk about your plans with be going to plus a verb.",
+     "p": [
+      "Form: am, is or are plus going to plus base verb: I'm going to visit my aunt.",
+      "Negative: I'm not going to work on Sunday. Question: Are you going to come?",
+      "Use it for decisions you already made before speaking."
+     ],
+     "q": "What are you going to do this weekend? Tell me two plans.",
+     "c": "Write five plans for next week with going to, one for each day."
+    },
+    "de": {
+     "t": "Pläne mit going to",
+     "g": "Du sprichst über deine Pläne mit be going to und einem Verb.",
+     "p": [
+      "Form: am, is oder are plus going to plus Grundform: I'm going to visit my aunt.",
+      "Verneinung: I'm not going to work on Sunday. Frage: Are you going to come?",
+      "Du nutzt es für Entscheidungen, die schon vorher feststanden."
+     ],
+     "q": "Was hast du am Wochenende vor? Nenn mir zwei Pläne.",
+     "c": "Schreib fünf Pläne für nächste Woche mit going to, einen pro Tag."
+    },
+    "es": {
+     "t": "Hacer planes con going to",
+     "g": "Habla de tus planes con be going to y un verbo.",
+     "p": [
+      "Forma: am, is o are más going to más verbo base: I'm going to visit my aunt.",
+      "Negativa: I'm not going to work on Sunday. Pregunta: Are you going to come?",
+      "Se usa para decisiones que ya tomaste antes de hablar."
+     ],
+     "q": "¿Qué vas a hacer este fin de semana? Cuéntame dos planes.",
+     "c": "Escribe cinco planes para la semana que viene con going to, uno por día."
+    },
+    "fr": {
+     "t": "Faire des projets avec going to",
+     "g": "Parler de tes projets avec be going to et un verbe.",
+     "p": [
+      "Forme : am, is ou are plus going to plus base verbale : I'm going to visit my aunt.",
+      "Négation : I'm not going to work on Sunday. Question : Are you going to come?",
+      "On l'utilise pour une décision déjà prise avant de parler."
+     ],
+     "q": "Que vas-tu faire ce week-end ? Donne-moi deux projets.",
+     "c": "Écris cinq projets pour la semaine prochaine avec going to, un par jour."
+    },
+    "it": {
+     "t": "Fare piani con going to",
+     "g": "Parli dei tuoi piani con be going to e un verbo.",
+     "p": [
+      "Forma: am, is o are più going to più verbo base: I'm going to visit my aunt.",
+      "Negativa: I'm not going to work on Sunday. Domanda: Are you going to come?",
+      "Si usa per decisioni già prese prima di parlare."
+     ],
+     "q": "Cosa farai questo weekend? Dimmi due piani.",
+     "c": "Scrivi cinque piani per la prossima settimana con going to, uno al giorno."
+    },
+    "pt": {
+     "t": "Fazer planos com going to",
+     "g": "Fala dos teus planos com be going to e um verbo.",
+     "p": [
+      "Forma: am, is ou are mais going to mais verbo base: I'm going to visit my aunt.",
+      "Negativa: I'm not going to work on Sunday. Pergunta: Are you going to come?",
+      "Usa-se para decisões já tomadas antes de falar."
+     ],
+     "q": "O que vais fazer este fim de semana? Diz-me dois planos.",
+     "c": "Escreve cinco planos para a próxima semana com going to, um por dia."
+    },
+    "pt_BR": {
+     "t": "Fazer planos com going to",
+     "g": "Fale dos seus planos com be going to e um verbo.",
+     "p": [
+      "Forma: am, is ou are mais going to mais verbo base: I'm going to visit my aunt.",
+      "Negativa: I'm not going to work on Sunday. Pergunta: Are you going to come?",
+      "Serve para decisões já tomadas antes de falar."
+     ],
+     "q": "O que você vai fazer neste fim de semana? Me conte dois planos.",
+     "c": "Escreva cinco planos para a próxima semana com going to, um por dia."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "I'm going to...",
+      "ex": "I'm going to visit my aunt on Sunday."
+     },
+     {
+      "w": "She's going to...",
+      "ex": "She's going to start a course in May."
+     },
+     {
+      "w": "We aren't going to...",
+      "ex": "We aren't going to travel this summer."
+     },
+     {
+      "w": "Are you going to...?",
+      "ex": "Are you going to come to the party?"
+     },
+     {
+      "w": "a plan",
+      "ex": "My plan is to learn ten new words a day."
+     },
+     {
+      "w": "this weekend",
+      "ex": "I'm going to clean my room this weekend."
+     }
+    ],
+    "gram": "Plans: am/is/are + going to + base verb. Negative: I'm not going to... Question: Are you going to...?"
+   }
+  },
+  {
+   "d": 74,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Future time words: tomorrow, next week",
+     "g": "Place your plans in the future with clear time words.",
+     "p": [
+      "Tomorrow, tonight and this weekend talk about the near future.",
+      "Next comes before the period with no the: next week, next month, next year.",
+      "In plus a time tells you how long until it happens: in two days, in an hour."
+     ],
+     "q": "What are you going to do tomorrow evening and next weekend?",
+     "c": "Make a mini plan with six future time words and one going to sentence each."
+    },
+    "de": {
+     "t": "Zukunftswörter: tomorrow, next week",
+     "g": "Du ordnest Pläne mit klaren Zeitwörtern in die Zukunft ein.",
+     "p": [
+      "Tomorrow, tonight und this weekend beschreiben die nahe Zukunft.",
+      "Next steht vor dem Zeitraum ohne the: next week, next month, next year.",
+      "In plus Zeit sagt, wann etwas passiert: in two days, in an hour."
+     ],
+     "q": "Was machst du morgen Abend und am nächsten Wochenende?",
+     "c": "Mach einen Mini-Plan mit sechs Zukunftswörtern und je einem going-to-Satz."
+    },
+    "es": {
+     "t": "Palabras de futuro: tomorrow, next week",
+     "g": "Sitúa tus planes en el futuro con palabras de tiempo claras.",
+     "p": [
+      "Tomorrow, tonight y this weekend hablan del futuro cercano.",
+      "Next va antes del periodo, sin the: next week, next month, next year.",
+      "In más tiempo indica cuánto falta: in two days, in an hour."
+     ],
+     "q": "¿Qué vas a hacer mañana por la tarde y el próximo fin de semana?",
+     "c": "Haz un mini plan con seis palabras de futuro y una frase con going to para cada una."
+    },
+    "fr": {
+     "t": "Mots du futur : tomorrow, next week",
+     "g": "Situer tes projets dans le futur avec des mots de temps clairs.",
+     "p": [
+      "Tomorrow, tonight et this weekend parlent du futur proche.",
+      "Next se place avant la période, sans the : next week, next month, next year.",
+      "In plus une durée dit dans combien de temps : in two days, in an hour."
+     ],
+     "q": "Que vas-tu faire demain soir et le week-end prochain ?",
+     "c": "Fais un mini planning avec six mots du futur et une phrase en going to pour chacun."
+    },
+    "it": {
+     "t": "Parole di futuro: tomorrow, next week",
+     "g": "Collochi i tuoi piani nel futuro con parole di tempo chiare.",
+     "p": [
+      "Tomorrow, tonight e this weekend parlano del futuro vicino.",
+      "Next va prima del periodo, senza the: next week, next month, next year.",
+      "In più un tempo dice fra quanto: in two days, in an hour."
+     ],
+     "q": "Cosa farai domani sera e il prossimo weekend?",
+     "c": "Fai un mini piano con sei parole di futuro e una frase con going to per ognuna."
+    },
+    "pt": {
+     "t": "Palavras de futuro: tomorrow, next week",
+     "g": "Situa os teus planos no futuro com palavras de tempo claras.",
+     "p": [
+      "Tomorrow, tonight e this weekend falam do futuro próximo.",
+      "Next vem antes do período, sem the: next week, next month, next year.",
+      "In mais um tempo diz daqui a quanto: in two days, in an hour."
+     ],
+     "q": "O que vais fazer amanhã à noite e no próximo fim de semana?",
+     "c": "Faz um mini plano com seis palavras de futuro e uma frase com going to para cada."
+    },
+    "pt_BR": {
+     "t": "Palavras de futuro: tomorrow, next week",
+     "g": "Situe seus planos no futuro com palavras de tempo claras.",
+     "p": [
+      "Tomorrow, tonight e this weekend falam do futuro próximo.",
+      "Next vem antes do período, sem the: next week, next month, next year.",
+      "In mais um tempo diz daqui a quanto: in two days, in an hour."
+     ],
+     "q": "O que você vai fazer amanhã à noite e no próximo fim de semana?",
+     "c": "Faça um mini plano com seis palavras de futuro e uma frase com going to para cada."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "tomorrow",
+      "ex": "I'm going to call my mum tomorrow."
+     },
+     {
+      "w": "tonight",
+      "ex": "We're going to watch a film tonight."
+     },
+     {
+      "w": "this weekend",
+      "ex": "Are you going to relax this weekend?"
+     },
+     {
+      "w": "next week",
+      "ex": "He's going to start his new job next week."
+     },
+     {
+      "w": "next month",
+      "ex": "They're going to move house next month."
+     },
+     {
+      "w": "in two days",
+      "ex": "The holiday starts in two days."
+     }
+    ],
+    "gram": "Future time words: tomorrow, tonight, this weekend, next + week/month/year (no the), in + time (in two days)."
+   }
+  },
+  {
+   "d": 75,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Comparatives: bigger, more interesting",
+     "g": "Compare two things with -er, more, better and worse.",
+     "p": [
+      "Short adjectives add -er: cheap becomes cheaper, big becomes bigger.",
+      "Long adjectives use more: more interesting, more expensive. Add than: bigger than.",
+      "Irregular ones: good becomes better, bad becomes worse."
+     ],
+     "q": "Which is better for you, the city or the countryside? Say why with a comparative.",
+     "c": "Compare two places you know in five sentences with -er, more and than."
+    },
+    "de": {
+     "t": "Komparativ: bigger, more interesting",
+     "g": "Du vergleichst zwei Dinge mit -er, more, better und worse.",
+     "p": [
+      "Kurze Adjektive bekommen -er: cheap wird cheaper, big wird bigger.",
+      "Lange Adjektive nehmen more: more interesting, more expensive. Dazu than: bigger than.",
+      "Unregelmäßig: good wird better, bad wird worse."
+     ],
+     "q": "Was ist besser für dich, Stadt oder Land? Begründe es mit einem Komparativ.",
+     "c": "Vergleiche zwei Orte, die du kennst, in fünf Sätzen mit -er, more und than."
+    },
+    "es": {
+     "t": "Comparativos: bigger, more interesting",
+     "g": "Compara dos cosas con -er, more, better y worse.",
+     "p": [
+      "Los adjetivos cortos añaden -er: cheap pasa a cheaper, big a bigger.",
+      "Los largos usan more: more interesting, more expensive. Y luego than: bigger than.",
+      "Irregulares: good pasa a better, bad a worse."
+     ],
+     "q": "¿Qué es mejor para ti, la ciudad o el campo? Explícalo con un comparativo.",
+     "c": "Compara dos lugares que conozcas en cinco frases con -er, more y than."
+    },
+    "fr": {
+     "t": "Comparatifs : bigger, more interesting",
+     "g": "Comparer deux choses avec -er, more, better et worse.",
+     "p": [
+      "Les adjectifs courts prennent -er : cheap devient cheaper, big devient bigger.",
+      "Les longs prennent more : more interesting, more expensive. Puis than : bigger than.",
+      "Irréguliers : good devient better, bad devient worse."
+     ],
+     "q": "Qu'est-ce qui est mieux pour toi, la ville ou la campagne ? Explique avec un comparatif.",
+     "c": "Compare deux lieux que tu connais en cinq phrases avec -er, more et than."
+    },
+    "it": {
+     "t": "Comparativi: bigger, more interesting",
+     "g": "Confronti due cose con -er, more, better e worse.",
+     "p": [
+      "Gli aggettivi brevi aggiungono -er: cheap diventa cheaper, big diventa bigger.",
+      "Quelli lunghi usano more: more interesting, more expensive. Poi than: bigger than.",
+      "Irregolari: good diventa better, bad diventa worse."
+     ],
+     "q": "Per te è meglio la città o la campagna? Spiega perché con un comparativo.",
+     "c": "Confronta due posti che conosci in cinque frasi con -er, more e than."
+    },
+    "pt": {
+     "t": "Comparativos: bigger, more interesting",
+     "g": "Compara duas coisas com -er, more, better e worse.",
+     "p": [
+      "Os adjetivos curtos juntam -er: cheap fica cheaper, big fica bigger.",
+      "Os longos usam more: more interesting, more expensive. Depois than: bigger than.",
+      "Irregulares: good fica better, bad fica worse."
+     ],
+     "q": "O que é melhor para ti, a cidade ou o campo? Explica com um comparativo.",
+     "c": "Compara dois sítios que conheces em cinco frases com -er, more e than."
+    },
+    "pt_BR": {
+     "t": "Comparativos: bigger, more interesting",
+     "g": "Compare duas coisas com -er, more, better e worse.",
+     "p": [
+      "Adjetivos curtos ganham -er: cheap vira cheaper, big vira bigger.",
+      "Os longos usam more: more interesting, more expensive. Depois than: bigger than.",
+      "Irregulares: good vira better, bad vira worse."
+     ],
+     "q": "O que é melhor para você, a cidade ou o interior? Explique com um comparativo.",
+     "c": "Compare dois lugares que você conhece em cinco frases com -er, more e than."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "bigger than",
+      "ex": "My city is bigger than my village."
+     },
+     {
+      "w": "cheaper than",
+      "ex": "The bus is cheaper than a taxi."
+     },
+     {
+      "w": "more interesting",
+      "ex": "This book is more interesting than the film."
+     },
+     {
+      "w": "more expensive",
+      "ex": "Coffee here is more expensive than at home."
+     },
+     {
+      "w": "better",
+      "ex": "Your English is better than last month!"
+     },
+     {
+      "w": "worse",
+      "ex": "The weather today is worse than yesterday."
+     }
+    ],
+    "gram": "Comparatives: short adj + -er + than (bigger than), long adj: more + adj + than. Irregular: good-better, bad-worse."
+   }
+  },
+  {
+   "d": 76,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Superlatives: the biggest, the best",
+     "g": "Say which thing is number one with superlatives.",
+     "p": [
+      "Short adjectives: the plus -est: the tallest, the biggest, the cheapest.",
+      "Long adjectives: the most plus adjective: the most beautiful, the most famous.",
+      "Irregular: good becomes the best, bad becomes the worst."
+     ],
+     "q": "What is the most beautiful place you know? And the best food you ever ate?",
+     "c": "Write a top three of your favourite things with superlatives, such as the best film."
+    },
+    "de": {
+     "t": "Superlativ: the biggest, the best",
+     "g": "Du sagst mit dem Superlativ, was die Nummer eins ist.",
+     "p": [
+      "Kurze Adjektive: the plus -est: the tallest, the biggest, the cheapest.",
+      "Lange Adjektive: the most plus Adjektiv: the most beautiful, the most famous.",
+      "Unregelmäßig: good wird the best, bad wird the worst."
+     ],
+     "q": "Welcher ist der schönste Ort, den du kennst? Und das beste Essen deines Lebens?",
+     "c": "Schreib eine Top drei deiner Lieblingsdinge mit Superlativen, zum Beispiel the best film."
+    },
+    "es": {
+     "t": "Superlativos: the biggest, the best",
+     "g": "Di qué cosa es la número uno con los superlativos.",
+     "p": [
+      "Adjetivos cortos: the más -est: the tallest, the biggest, the cheapest.",
+      "Adjetivos largos: the most más adjetivo: the most beautiful, the most famous.",
+      "Irregulares: good pasa a the best, bad a the worst."
+     ],
+     "q": "¿Cuál es el lugar más bonito que conoces? ¿Y la mejor comida que has probado?",
+     "c": "Escribe tu top tres de cosas favoritas con superlativos, como the best film."
+    },
+    "fr": {
+     "t": "Superlatifs : the biggest, the best",
+     "g": "Dire ce qui est numéro un avec les superlatifs.",
+     "p": [
+      "Adjectifs courts : the plus -est : the tallest, the biggest, the cheapest.",
+      "Adjectifs longs : the most plus adjectif : the most beautiful, the most famous.",
+      "Irréguliers : good devient the best, bad devient the worst."
+     ],
+     "q": "Quel est le plus bel endroit que tu connais ? Et le meilleur plat que tu aies mangé ?",
+     "c": "Écris ton top trois de choses préférées avec des superlatifs, comme the best film."
+    },
+    "it": {
+     "t": "Superlativi: the biggest, the best",
+     "g": "Dici cosa è il numero uno con i superlativi.",
+     "p": [
+      "Aggettivi brevi: the più -est: the tallest, the biggest, the cheapest.",
+      "Aggettivi lunghi: the most più aggettivo: the most beautiful, the most famous.",
+      "Irregolari: good diventa the best, bad diventa the worst."
+     ],
+     "q": "Qual è il posto più bello che conosci? E il cibo migliore che hai mai mangiato?",
+     "c": "Scrivi la tua top tre di cose preferite con i superlativi, come the best film."
+    },
+    "pt": {
+     "t": "Superlativos: the biggest, the best",
+     "g": "Diz qual é a coisa número um com os superlativos.",
+     "p": [
+      "Adjetivos curtos: the mais -est: the tallest, the biggest, the cheapest.",
+      "Adjetivos longos: the most mais adjetivo: the most beautiful, the most famous.",
+      "Irregulares: good fica the best, bad fica the worst."
+     ],
+     "q": "Qual é o sítio mais bonito que conheces? E a melhor comida que já provaste?",
+     "c": "Escreve o teu top três de coisas favoritas com superlativos, como the best film."
+    },
+    "pt_BR": {
+     "t": "Superlativos: the biggest, the best",
+     "g": "Diga qual coisa é a número um com os superlativos.",
+     "p": [
+      "Adjetivos curtos: the mais -est: the tallest, the biggest, the cheapest.",
+      "Adjetivos longos: the most mais adjetivo: the most beautiful, the most famous.",
+      "Irregulares: good vira the best, bad vira the worst."
+     ],
+     "q": "Qual é o lugar mais bonito que você conhece? E a melhor comida que já provou?",
+     "c": "Escreva seu top três de coisas favoritas com superlativos, como the best film."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "the biggest",
+      "ex": "This is the biggest park in the city."
+     },
+     {
+      "w": "the tallest",
+      "ex": "He is the tallest person in my family."
+     },
+     {
+      "w": "the most beautiful",
+      "ex": "It's the most beautiful beach I know."
+     },
+     {
+      "w": "the most famous",
+      "ex": "This is the most famous square in town."
+     },
+     {
+      "w": "the best",
+      "ex": "This café makes the best coffee."
+     },
+     {
+      "w": "the worst",
+      "ex": "That was the worst film of the year."
+     }
+    ],
+    "gram": "Superlatives: the + short adj + -est (the biggest), the most + long adj (the most famous). Irregular: the best, the worst."
+   }
+  },
+  {
+   "d": 77,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Describing places: busy, quiet",
+     "g": "Describe your city, town or village with useful adjectives.",
+     "p": [
+      "Busy and crowded mean full of people. Quiet and peaceful mean calm.",
+      "Modern, old and historic describe buildings. Beautiful and ugly give your opinion.",
+      "Use very, quite or really to make them stronger: It's really busy at night."
+     ],
+     "q": "How would you describe the place where you live in three adjectives?",
+     "c": "Write a short description of your street or neighbourhood with five adjectives."
+    },
+    "de": {
+     "t": "Orte beschreiben: busy, quiet",
+     "g": "Du beschreibst deine Stadt oder dein Dorf mit nützlichen Adjektiven.",
+     "p": [
+      "Busy und crowded heißen voller Menschen. Quiet und peaceful heißen ruhig.",
+      "Modern, old und historic beschreiben Gebäude. Beautiful und ugly geben deine Meinung.",
+      "Mit very, quite oder really verstärkst du sie: It's really busy at night."
+     ],
+     "q": "Wie beschreibst du deinen Wohnort mit drei Adjektiven?",
+     "c": "Schreib eine kurze Beschreibung deiner Straße oder deines Viertels mit fünf Adjektiven."
+    },
+    "es": {
+     "t": "Describir lugares: busy, quiet",
+     "g": "Describe tu ciudad o pueblo con adjetivos útiles.",
+     "p": [
+      "Busy y crowded significan lleno de gente. Quiet y peaceful significan tranquilo.",
+      "Modern, old e historic describen edificios. Beautiful y ugly dan tu opinión.",
+      "Refuérzalos con very, quite o really: It's really busy at night."
+     ],
+     "q": "¿Cómo describirías el lugar donde vives con tres adjetivos?",
+     "c": "Escribe una breve descripción de tu calle o barrio con cinco adjetivos."
+    },
+    "fr": {
+     "t": "Décrire des lieux : busy, quiet",
+     "g": "Décrire ta ville ou ton village avec des adjectifs utiles.",
+     "p": [
+      "Busy et crowded veulent dire plein de monde. Quiet et peaceful veulent dire calme.",
+      "Modern, old et historic décrivent les bâtiments. Beautiful et ugly donnent ton avis.",
+      "Renforce-les avec very, quite ou really : It's really busy at night."
+     ],
+     "q": "Comment décrirais-tu l'endroit où tu vis en trois adjectifs ?",
+     "c": "Écris une courte description de ta rue ou de ton quartier avec cinq adjectifs."
+    },
+    "it": {
+     "t": "Descrivere luoghi: busy, quiet",
+     "g": "Descrivi la tua città o il tuo paese con aggettivi utili.",
+     "p": [
+      "Busy e crowded vogliono dire pieno di gente. Quiet e peaceful vogliono dire tranquillo.",
+      "Modern, old e historic descrivono gli edifici. Beautiful e ugly danno la tua opinione.",
+      "Rinforzali con very, quite o really: It's really busy at night."
+     ],
+     "q": "Come descriveresti il posto dove vivi con tre aggettivi?",
+     "c": "Scrivi una breve descrizione della tua via o del tuo quartiere con cinque aggettivi."
+    },
+    "pt": {
+     "t": "Descrever lugares: busy, quiet",
+     "g": "Descreve a tua cidade ou aldeia com adjetivos úteis.",
+     "p": [
+      "Busy e crowded querem dizer cheio de gente. Quiet e peaceful querem dizer calmo.",
+      "Modern, old e historic descrevem edifícios. Beautiful e ugly dão a tua opinião.",
+      "Reforça-os com very, quite ou really: It's really busy at night."
+     ],
+     "q": "Como descreverias o sítio onde vives em três adjetivos?",
+     "c": "Escreve uma descrição curta da tua rua ou bairro com cinco adjetivos."
+    },
+    "pt_BR": {
+     "t": "Descrever lugares: busy, quiet",
+     "g": "Descreva sua cidade ou bairro com adjetivos úteis.",
+     "p": [
+      "Busy e crowded significam cheio de gente. Quiet e peaceful significam tranquilo.",
+      "Modern, old e historic descrevem prédios. Beautiful e ugly dão sua opinião.",
+      "Reforce com very, quite ou really: It's really busy at night."
+     ],
+     "q": "Como você descreveria o lugar onde mora com três adjetivos?",
+     "c": "Escreva uma descrição curta da sua rua ou bairro com cinco adjetivos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "busy",
+      "ex": "The city centre is very busy on Saturdays."
+     },
+     {
+      "w": "quiet",
+      "ex": "My village is small and quiet."
+     },
+     {
+      "w": "crowded",
+      "ex": "The beach was crowded in August."
+     },
+     {
+      "w": "modern",
+      "ex": "There are many modern buildings downtown."
+     },
+     {
+      "w": "historic",
+      "ex": "We walked around the historic old town."
+     },
+     {
+      "w": "peaceful",
+      "ex": "The park is peaceful in the morning."
+     }
+    ],
+    "gram": "Adjectives go before the noun (a quiet street) or after be (The street is quiet). Make them stronger with very, really, quite."
+   }
+  },
+  {
+   "d": 78,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Animals and pets",
+     "g": "Talk about animals and the pets you like or have.",
+     "p": [
+      "Common pets: dog, cat, rabbit, bird, fish, hamster.",
+      "Farm and wild animals: horse, cow, sheep, lion, elephant, monkey.",
+      "Say what you like: I love dogs. I have a cat called Luna. I'm scared of spiders."
+     ],
+     "q": "Do you have a pet, or which animal would you like to have and why?",
+     "c": "Describe a pet you know in four sentences: name, colour, size and character."
+    },
+    "de": {
+     "t": "Tiere und Haustiere",
+     "g": "Du sprichst über Tiere und deine Lieblingshaustiere.",
+     "p": [
+      "Häufige Haustiere: dog, cat, rabbit, bird, fish, hamster.",
+      "Bauernhof- und Wildtiere: horse, cow, sheep, lion, elephant, monkey.",
+      "Sag, was du magst: I love dogs. I have a cat called Luna. I'm scared of spiders."
+     ],
+     "q": "Hast du ein Haustier, oder welches Tier hättest du gern und warum?",
+     "c": "Beschreib ein Haustier, das du kennst, in vier Sätzen: Name, Farbe, Größe und Charakter."
+    },
+    "es": {
+     "t": "Animales y mascotas",
+     "g": "Habla de animales y de las mascotas que te gustan o tienes.",
+     "p": [
+      "Mascotas habituales: dog, cat, rabbit, bird, fish, hamster.",
+      "Animales de granja y salvajes: horse, cow, sheep, lion, elephant, monkey.",
+      "Di lo que te gusta: I love dogs. I have a cat called Luna. I'm scared of spiders."
+     ],
+     "q": "¿Tienes mascota, o qué animal te gustaría tener y por qué?",
+     "c": "Describe una mascota que conozcas en cuatro frases: nombre, color, tamaño y carácter."
+    },
+    "fr": {
+     "t": "Animaux et animaux de compagnie",
+     "g": "Parler des animaux et des animaux de compagnie que tu aimes.",
+     "p": [
+      "Animaux de compagnie courants : dog, cat, rabbit, bird, fish, hamster.",
+      "Animaux de la ferme et sauvages : horse, cow, sheep, lion, elephant, monkey.",
+      "Dis ce que tu aimes : I love dogs. I have a cat called Luna. I'm scared of spiders."
+     ],
+     "q": "As-tu un animal, ou lequel aimerais-tu avoir et pourquoi ?",
+     "c": "Décris un animal que tu connais en quatre phrases : nom, couleur, taille et caractère."
+    },
+    "it": {
+     "t": "Animali e animali domestici",
+     "g": "Parli degli animali e degli animali domestici che ami.",
+     "p": [
+      "Animali domestici comuni: dog, cat, rabbit, bird, fish, hamster.",
+      "Animali della fattoria e selvatici: horse, cow, sheep, lion, elephant, monkey.",
+      "Di' cosa ti piace: I love dogs. I have a cat called Luna. I'm scared of spiders."
+     ],
+     "q": "Hai un animale, o quale ti piacerebbe avere e perché?",
+     "c": "Descrivi un animale che conosci in quattro frasi: nome, colore, taglia e carattere."
+    },
+    "pt": {
+     "t": "Animais e animais de estimação",
+     "g": "Fala de animais e dos animais de estimação de que gostas.",
+     "p": [
+      "Animais de estimação comuns: dog, cat, rabbit, bird, fish, hamster.",
+      "Animais da quinta e selvagens: horse, cow, sheep, lion, elephant, monkey.",
+      "Diz do que gostas: I love dogs. I have a cat called Luna. I'm scared of spiders."
+     ],
+     "q": "Tens um animal de estimação, ou qual gostavas de ter e porquê?",
+     "c": "Descreve um animal que conheces em quatro frases: nome, cor, tamanho e feitio."
+    },
+    "pt_BR": {
+     "t": "Animais e bichos de estimação",
+     "g": "Fale de animais e dos bichos de estimação de que você gosta.",
+     "p": [
+      "Bichos de estimação comuns: dog, cat, rabbit, bird, fish, hamster.",
+      "Animais da fazenda e selvagens: horse, cow, sheep, lion, elephant, monkey.",
+      "Diga do que gosta: I love dogs. I have a cat called Luna. I'm scared of spiders."
+     ],
+     "q": "Você tem um bicho de estimação, ou qual gostaria de ter e por quê?",
+     "c": "Descreva um bicho que você conhece em quatro frases: nome, cor, tamanho e jeito."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "a pet",
+      "ex": "Do you have a pet?"
+     },
+     {
+      "w": "a dog",
+      "ex": "My dog loves long walks."
+     },
+     {
+      "w": "a cat",
+      "ex": "Our cat sleeps all day."
+     },
+     {
+      "w": "a rabbit",
+      "ex": "The rabbit is white and very soft."
+     },
+     {
+      "w": "a horse",
+      "ex": "She rides a horse every Sunday."
+     },
+     {
+      "w": "called",
+      "ex": "I have a parrot called Kiwi."
+     }
+    ],
+    "gram": "Talk about animals with I love + plural (I love cats), I have a + animal + called + name, I'm scared of + plural."
+   }
+  },
+  {
+   "d": 79,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Nature words: river, mountain, beach",
+     "g": "Describe landscapes and places in nature that you love.",
+     "p": [
+      "Water: river, lake, sea, beach, waterfall, island.",
+      "Land: mountain, hill, forest, field, valley, desert.",
+      "Use there is and there are: There's a lake near my town. There are mountains in the north."
+     ],
+     "q": "What is your favourite place in nature, and what can you see there?",
+     "c": "Describe a landscape from a photo or memory in five sentences with there is and there are."
+    },
+    "de": {
+     "t": "Natur: river, mountain, beach",
+     "g": "Du beschreibst Landschaften und Naturorte, die du liebst.",
+     "p": [
+      "Wasser: river, lake, sea, beach, waterfall, island.",
+      "Land: mountain, hill, forest, field, valley, desert.",
+      "Nutze there is und there are: There's a lake near my town. There are mountains in the north."
+     ],
+     "q": "Was ist dein Lieblingsort in der Natur, und was siehst du dort?",
+     "c": "Beschreib eine Landschaft von einem Foto oder aus der Erinnerung in fünf Sätzen mit there is/are."
+    },
+    "es": {
+     "t": "La naturaleza: river, mountain, beach",
+     "g": "Describe paisajes y lugares de la naturaleza que te encantan.",
+     "p": [
+      "Agua: river, lake, sea, beach, waterfall, island.",
+      "Tierra: mountain, hill, forest, field, valley, desert.",
+      "Usa there is y there are: There's a lake near my town. There are mountains in the north."
+     ],
+     "q": "¿Cuál es tu lugar favorito en la naturaleza y qué se ve allí?",
+     "c": "Describe un paisaje de una foto o un recuerdo en cinco frases con there is y there are."
+    },
+    "fr": {
+     "t": "La nature : river, mountain, beach",
+     "g": "Décrire des paysages et des lieux naturels que tu aimes.",
+     "p": [
+      "L'eau : river, lake, sea, beach, waterfall, island.",
+      "La terre : mountain, hill, forest, field, valley, desert.",
+      "Utilise there is et there are : There's a lake near my town. There are mountains in the north."
+     ],
+     "q": "Quel est ton endroit préféré dans la nature, et qu'y vois-tu ?",
+     "c": "Décris un paysage d'une photo ou d'un souvenir en cinq phrases avec there is et there are."
+    },
+    "it": {
+     "t": "La natura: river, mountain, beach",
+     "g": "Descrivi paesaggi e luoghi naturali che ami.",
+     "p": [
+      "Acqua: river, lake, sea, beach, waterfall, island.",
+      "Terra: mountain, hill, forest, field, valley, desert.",
+      "Usa there is e there are: There's a lake near my town. There are mountains in the north."
+     ],
+     "q": "Qual è il tuo posto preferito nella natura e cosa si vede lì?",
+     "c": "Descrivi un paesaggio da una foto o da un ricordo in cinque frasi con there is e there are."
+    },
+    "pt": {
+     "t": "A natureza: river, mountain, beach",
+     "g": "Descreve paisagens e lugares na natureza de que gostas.",
+     "p": [
+      "Água: river, lake, sea, beach, waterfall, island.",
+      "Terra: mountain, hill, forest, field, valley, desert.",
+      "Usa there is e there are: There's a lake near my town. There are mountains in the north."
+     ],
+     "q": "Qual é o teu sítio favorito na natureza e o que se vê lá?",
+     "c": "Descreve uma paisagem de uma foto ou memória em cinco frases com there is e there are."
+    },
+    "pt_BR": {
+     "t": "A natureza: river, mountain, beach",
+     "g": "Descreva paisagens e lugares na natureza que você adora.",
+     "p": [
+      "Água: river, lake, sea, beach, waterfall, island.",
+      "Terra: mountain, hill, forest, field, valley, desert.",
+      "Use there is e there are: There's a lake near my town. There are mountains in the north."
+     ],
+     "q": "Qual é seu lugar favorito na natureza e o que dá para ver lá?",
+     "c": "Descreva uma paisagem de uma foto ou lembrança em cinco frases com there is e there are."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "a river",
+      "ex": "A long river goes through the city."
+     },
+     {
+      "w": "a mountain",
+      "ex": "We climbed a mountain last summer."
+     },
+     {
+      "w": "a beach",
+      "ex": "The beach has white sand."
+     },
+     {
+      "w": "a forest",
+      "ex": "There's a big forest behind my house."
+     },
+     {
+      "w": "a lake",
+      "ex": "We swam in the lake."
+     },
+     {
+      "w": "an island",
+      "ex": "The island is small and green."
+     }
+    ],
+    "gram": "Describe places with there is + singular (There's a lake) and there are + plural (There are hills)."
+   }
+  },
+  {
+   "d": 80,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "At the hotel: checking in",
+     "g": "Check in at a hotel and ask simple questions in English.",
+     "p": [
+      "Start with: Hello, I have a reservation. My name is...",
+      "Ask useful things: What time is breakfast? Is there Wi-Fi? What time is check-out?",
+      "Listen for: Can I see your passport, please? Here's your key card. You're in room 204."
+     ],
+     "q": "Imagine you arrive at a hotel. What are your first two sentences at reception?",
+     "c": "Write and act out a short check-in dialogue with four questions for the receptionist."
+    },
+    "de": {
+     "t": "Im Hotel: einchecken",
+     "g": "Du checkst im Hotel ein und stellst einfache Fragen auf Englisch.",
+     "p": [
+      "Beginne mit: Hello, I have a reservation. My name is...",
+      "Frag Nützliches: What time is breakfast? Is there Wi-Fi? What time is check-out?",
+      "Achte auf: Can I see your passport, please? Here's your key card. You're in room 204."
+     ],
+     "q": "Stell dir vor, du kommst im Hotel an. Was sind deine ersten zwei Sätze an der Rezeption?",
+     "c": "Schreib und spiel einen kurzen Check-in-Dialog mit vier Fragen an die Rezeption."
+    },
+    "es": {
+     "t": "En el hotel: hacer el check-in",
+     "g": "Haz el check-in en un hotel y pregunta cosas sencillas en inglés.",
+     "p": [
+      "Empieza con: Hello, I have a reservation. My name is...",
+      "Pregunta lo útil: What time is breakfast? Is there Wi-Fi? What time is check-out?",
+      "Escucha: Can I see your passport, please? Here's your key card. You're in room 204."
+     ],
+     "q": "Imagina que llegas a un hotel. ¿Cuáles son tus dos primeras frases en recepción?",
+     "c": "Escribe y representa un breve diálogo de check-in con cuatro preguntas al recepcionista."
+    },
+    "fr": {
+     "t": "À l'hôtel : l'enregistrement",
+     "g": "S'enregistrer à l'hôtel et poser des questions simples en anglais.",
+     "p": [
+      "Commence par : Hello, I have a reservation. My name is...",
+      "Demande l'essentiel : What time is breakfast? Is there Wi-Fi? What time is check-out?",
+      "Écoute : Can I see your passport, please? Here's your key card. You're in room 204."
+     ],
+     "q": "Imagine que tu arrives à l'hôtel. Quelles sont tes deux premières phrases à la réception ?",
+     "c": "Écris et joue un court dialogue d'arrivée avec quatre questions pour le réceptionniste."
+    },
+    "it": {
+     "t": "In hotel: il check-in",
+     "g": "Fai il check-in in hotel e fai domande semplici in inglese.",
+     "p": [
+      "Comincia con: Hello, I have a reservation. My name is...",
+      "Chiedi le cose utili: What time is breakfast? Is there Wi-Fi? What time is check-out?",
+      "Ascolta: Can I see your passport, please? Here's your key card. You're in room 204."
+     ],
+     "q": "Immagina di arrivare in hotel. Quali sono le tue prime due frasi alla reception?",
+     "c": "Scrivi e recita un breve dialogo di check-in con quattro domande al receptionist."
+    },
+    "pt": {
+     "t": "No hotel: fazer o check-in",
+     "g": "Faz o check-in num hotel e faz perguntas simples em inglês.",
+     "p": [
+      "Começa com: Hello, I have a reservation. My name is...",
+      "Pergunta o essencial: What time is breakfast? Is there Wi-Fi? What time is check-out?",
+      "Ouve com atenção: Can I see your passport, please? Here's your key card. You're in room 204."
+     ],
+     "q": "Imagina que chegas a um hotel. Quais são as tuas duas primeiras frases na receção?",
+     "c": "Escreve e representa um pequeno diálogo de check-in com quatro perguntas ao rececionista."
+    },
+    "pt_BR": {
+     "t": "No hotel: fazendo o check-in",
+     "g": "Faça o check-in num hotel e faça perguntas simples em inglês.",
+     "p": [
+      "Comece com: Hello, I have a reservation. My name is...",
+      "Pergunte o essencial: What time is breakfast? Is there Wi-Fi? What time is check-out?",
+      "Preste atenção: Can I see your passport, please? Here's your key card. You're in room 204."
+     ],
+     "q": "Imagine que você chega a um hotel. Quais são suas duas primeiras frases na recepção?",
+     "c": "Escreva e encene um pequeno diálogo de check-in com quatro perguntas ao recepcionista."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "I have a reservation.",
+      "ex": "Good evening, I have a reservation for two nights."
+     },
+     {
+      "w": "reception",
+      "ex": "Please leave your key at reception."
+     },
+     {
+      "w": "a key card",
+      "ex": "Here's your key card. Room 204."
+     },
+     {
+      "w": "What time is breakfast?",
+      "ex": "Excuse me, what time is breakfast?"
+     },
+     {
+      "w": "check-out",
+      "ex": "Check-out is at eleven o'clock."
+     },
+     {
+      "w": "a single room",
+      "ex": "I'd like a single room, please."
+     }
+    ],
+    "gram": "At the hotel: I have a reservation for + nights; questions with What time is...? and Is there...?"
+   }
+  }
+ ]
+}

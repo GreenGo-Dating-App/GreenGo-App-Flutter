@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 221,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Health and fitness",
+     "g": "Talk about staying active: hacer deporte, estirar, estar en forma, ir al gimnasio.",
+     "p": [
+      "Activities: hacer deporte, hacer ejercicio, salir a correr, ir al gimnasio, montar en bici, nadar.",
+      "Routine and frequency: dos veces por semana, todas las mañanas, de vez en cuando, nunca me salto el estiramiento.",
+      "Results: estar en forma, ponerse en forma, tener energía. Antes no hacía nada, ahora corro tres días."
+     ],
+     "q": "How do you like to stay active? How often do you do it?",
+     "c": "Describe your ideal weekly activity plan in five sentences with frequency expressions."
+    },
+    "de": {
+     "t": "Gesundheit und Fitness",
+     "g": "Sprich über Bewegung: hacer deporte, estirar, estar en forma, ir al gimnasio.",
+     "p": [
+      "Aktivitäten: hacer deporte, hacer ejercicio, salir a correr, ir al gimnasio, montar en bici, nadar.",
+      "Routine und Häufigkeit: dos veces por semana, todas las mañanas, de vez en cuando, nunca me salto el estiramiento.",
+      "Ergebnisse: estar en forma, ponerse en forma, tener energía. Antes no hacía nada, ahora corro tres días."
+     ],
+     "q": "Wie hältst du dich gern aktiv? Wie oft machst du das?",
+     "c": "Beschreib deinen idealen Wochenplan für Bewegung in fünf Sätzen mit Häufigkeitsangaben."
+    },
+    "es": {
+     "t": "Salud y forma física",
+     "g": "Habla de mantenerte activo: hacer deporte, estirar, estar en forma, ir al gimnasio.",
+     "p": [
+      "Actividades: hacer deporte, hacer ejercicio, salir a correr, ir al gimnasio, montar en bici, nadar.",
+      "Rutina y frecuencia: dos veces por semana, todas las mañanas, de vez en cuando, nunca me salto el estiramiento.",
+      "Resultados: estar en forma, ponerse en forma, tener energía. Antes no hacía nada, ahora corro tres días."
+     ],
+     "q": "¿Cómo te gusta mantenerte activo? ¿Con qué frecuencia lo haces?",
+     "c": "Describe tu plan semanal de actividad ideal en cinco frases con expresiones de frecuencia."
+    },
+    "fr": {
+     "t": "Santé et forme",
+     "g": "Parle de rester actif : hacer deporte, estirar, estar en forma, ir al gimnasio.",
+     "p": [
+      "Activités : hacer deporte, hacer ejercicio, salir a correr, ir al gimnasio, montar en bici, nadar.",
+      "Routine et fréquence : dos veces por semana, todas las mañanas, de vez en cuando, nunca me salto el estiramiento.",
+      "Résultats : estar en forma, ponerse en forma, tener energía. Antes no hacía nada, ahora corro tres días."
+     ],
+     "q": "Comment aimes-tu rester actif ? À quelle fréquence ?",
+     "c": "Décris ton programme d'activité idéal de la semaine en cinq phrases avec des expressions de fréquence."
+    },
+    "it": {
+     "t": "Salute e forma fisica",
+     "g": "Parla di come restare attivo: hacer deporte, estirar, estar en forma, ir al gimnasio.",
+     "p": [
+      "Attività: hacer deporte, hacer ejercicio, salir a correr, ir al gimnasio, montar en bici, nadar.",
+      "Routine e frequenza: dos veces por semana, todas las mañanas, de vez en cuando, nunca me salto el estiramiento.",
+      "Risultati: estar en forma, ponerse en forma, tener energía. Antes no hacía nada, ahora corro tres días."
+     ],
+     "q": "Come ti piace restare attivo? Con che frequenza lo fai?",
+     "c": "Descrivi il tuo piano settimanale di attività ideale in cinque frasi con espressioni di frequenza."
+    },
+    "pt": {
+     "t": "Saúde e forma física",
+     "g": "Fala de te manteres ativo: hacer deporte, estirar, estar en forma, ir al gimnasio.",
+     "p": [
+      "Atividades: hacer deporte, hacer ejercicio, salir a correr, ir al gimnasio, montar en bici, nadar.",
+      "Rotina e frequência: dos veces por semana, todas las mañanas, de vez en cuando, nunca me salto el estiramiento.",
+      "Resultados: estar en forma, ponerse en forma, tener energía. Antes no hacía nada, ahora corro tres días."
+     ],
+     "q": "Como gostas de te manter ativo? Com que frequência o fazes?",
+     "c": "Descreve o teu plano semanal de atividade ideal em cinco frases com expressões de frequência."
+    },
+    "pt_BR": {
+     "t": "Saúde e forma física",
+     "g": "Fale sobre se manter ativo: hacer deporte, estirar, estar en forma, ir al gimnasio.",
+     "p": [
+      "Atividades: hacer deporte, hacer ejercicio, salir a correr, ir al gimnasio, montar en bici, nadar.",
+      "Rotina e frequência: dos veces por semana, todas las mañanas, de vez en cuando, nunca me salto el estiramiento.",
+      "Resultados: estar en forma, ponerse en forma, tener energía. Antes no hacía nada, ahora corro tres días."
+     ],
+     "q": "Como você gosta de se manter ativo? Com que frequência faz isso?",
+     "c": "Descreva seu plano semanal de atividade ideal em cinco frases com expressões de frequência."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "hacer deporte",
+      "ex": "Intento hacer deporte tres veces por semana."
+     },
+     {
+      "w": "estirar",
+      "ex": "Después de correr, siempre estiro diez minutos."
+     },
+     {
+      "w": "estar en forma",
+      "ex": "Mi abuela tiene ochenta años y está en forma."
+     },
+     {
+      "w": "ir al gimnasio",
+      "ex": "Voy al gimnasio antes de trabajar."
+     },
+     {
+      "w": "salir a correr",
+      "ex": "Los domingos salgo a correr por el parque."
+     },
+     {
+      "w": "ponerse en forma",
+      "ex": "Este año quiero ponerme en forma."
+     }
+    ],
+    "gram": "Frecuencia: dos veces por semana, todas las mañanas, de vez en cuando. Estar en forma (estado) / ponerse en forma (cambio)."
+   }
+  },
+  {
+   "d": 222,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Explaining how you feel",
+     "g": "Describe simple symptoms in everyday language, for example at a pharmacy.",
+     "p": [
+      "Tengo dolor de + body part: tengo dolor de garganta, de cabeza, de espalda. Or: me duele la cabeza.",
+      "Desde + time: tengo tos desde ayer. Hace + time + que: hace dos días que me siento cansado.",
+      "Other phrases: estoy resfriado, me encuentro mal, tengo fiebre. This is everyday language, not medical advice."
+     ],
+     "q": "Imagine you have a cold. How would you explain it to a pharmacist in Spanish?",
+     "c": "Write a short pharmacy dialogue: greet, describe a cold with desde, and thank the pharmacist."
+    },
+    "de": {
+     "t": "Sagen, wie es dir geht",
+     "g": "Beschreibe einfache Beschwerden in Alltagssprache, zum Beispiel in der Apotheke.",
+     "p": [
+      "Tengo dolor de + Körperteil: tengo dolor de garganta, de cabeza, de espalda. Oder: me duele la cabeza.",
+      "Desde + Zeit: tengo tos desde ayer. Hace + Zeit + que: hace dos días que me siento cansado.",
+      "Weitere: estoy resfriado, me encuentro mal, tengo fiebre. Nur Alltagssprache, keine medizinische Beratung."
+     ],
+     "q": "Stell dir vor, du bist erkältet. Wie erklärst du es in der Apotheke auf Spanisch?",
+     "c": "Schreib einen kurzen Apotheken-Dialog: grüßen, eine Erkältung mit desde beschreiben, danken."
+    },
+    "es": {
+     "t": "Explicar cómo te sientes",
+     "g": "Describe síntomas sencillos con lenguaje cotidiano, por ejemplo en la farmacia.",
+     "p": [
+      "Tengo dolor de + parte del cuerpo: tengo dolor de garganta, de cabeza, de espalda. O: me duele la cabeza.",
+      "Desde + tiempo: tengo tos desde ayer. Hace + tiempo + que: hace dos días que me siento cansado.",
+      "Otras frases: estoy resfriado, me encuentro mal, tengo fiebre. Es lenguaje cotidiano, no consejo médico."
+     ],
+     "q": "Imagina que estás resfriado. ¿Cómo se lo explicarías al farmacéutico?",
+     "c": "Escribe un diálogo corto en la farmacia: saluda, describe un resfriado con desde y da las gracias."
+    },
+    "fr": {
+     "t": "Expliquer comment on se sent",
+     "g": "Décris des symptômes simples en langage courant, par exemple à la pharmacie.",
+     "p": [
+      "Tengo dolor de + partie du corps : tengo dolor de garganta, de cabeza, de espalda. Ou : me duele la cabeza.",
+      "Desde + durée : tengo tos desde ayer. Hace + durée + que : hace dos días que me siento cansado.",
+      "Autres : estoy resfriado, me encuentro mal, tengo fiebre. Langage courant, pas un conseil médical."
+     ],
+     "q": "Imagine que tu es enrhumé. Comment l'expliquerais-tu au pharmacien en espagnol ?",
+     "c": "Écris un court dialogue à la pharmacie : salue, décris un rhume avec desde et remercie."
+    },
+    "it": {
+     "t": "Spiegare come ti senti",
+     "g": "Descrivi sintomi semplici con il linguaggio di tutti i giorni, per esempio in farmacia.",
+     "p": [
+      "Tengo dolor de + parte del corpo: tengo dolor de garganta, de cabeza, de espalda. Oppure: me duele la cabeza.",
+      "Desde + tempo: tengo tos desde ayer. Hace + tempo + que: hace dos días que me siento cansado.",
+      "Altre frasi: estoy resfriado, me encuentro mal, tengo fiebre. Linguaggio quotidiano, non consigli medici."
+     ],
+     "q": "Immagina di avere il raffreddore. Come lo spiegheresti al farmacista in spagnolo?",
+     "c": "Scrivi un breve dialogo in farmacia: saluta, descrivi un raffreddore con desde e ringrazia."
+    },
+    "pt": {
+     "t": "Explicar como te sentes",
+     "g": "Descreve sintomas simples com linguagem do dia a dia, por exemplo na farmácia.",
+     "p": [
+      "Tengo dolor de + parte do corpo: tengo dolor de garganta, de cabeza, de espalda. Ou: me duele la cabeza.",
+      "Desde + tempo: tengo tos desde ayer. Hace + tempo + que: hace dos días que me siento cansado.",
+      "Outras frases: estoy resfriado, me encuentro mal, tengo fiebre. Linguagem do dia a dia, não conselho médico."
+     ],
+     "q": "Imagina que estás constipado. Como o explicarias ao farmacêutico em espanhol?",
+     "c": "Escreve um diálogo curto na farmácia: cumprimenta, descreve uma constipação com desde e agradece."
+    },
+    "pt_BR": {
+     "t": "Explicar como você se sente",
+     "g": "Descreva sintomas simples com linguagem do dia a dia, por exemplo na farmácia.",
+     "p": [
+      "Tengo dolor de + parte do corpo: tengo dolor de garganta, de cabeza, de espalda. Ou: me duele la cabeza.",
+      "Desde + tempo: tengo tos desde ayer. Hace + tempo + que: hace dos días que me siento cansado.",
+      "Outras frases: estoy resfriado, me encuentro mal, tengo fiebre. Linguagem do dia a dia, não conselho médico."
+     ],
+     "q": "Imagine que você está resfriado. Como explicaria isso ao farmacêutico em espanhol?",
+     "c": "Escreva um diálogo curto na farmácia: cumprimente, descreva um resfriado com desde e agradeça."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "tengo dolor de garganta",
+      "ex": "Tengo dolor de garganta desde ayer."
+     },
+     {
+      "w": "me duele la cabeza",
+      "ex": "Me duele un poco la cabeza."
+     },
+     {
+      "w": "estoy resfriado",
+      "ex": "Estoy resfriado y tengo mucha tos."
+     },
+     {
+      "w": "me encuentro mal",
+      "ex": "Hoy me encuentro mal, prefiero quedarme en casa."
+     },
+     {
+      "w": "desde hace",
+      "ex": "Estoy cansado desde hace tres días."
+     },
+     {
+      "w": "la farmacia",
+      "ex": "¿Hay una farmacia abierta cerca de aquí?"
+     }
+    ],
+    "gram": "Síntomas: tengo dolor de + sustantivo; me duele + singular / me duelen + plural; desde ayer; hace dos días que..."
+   }
+  },
+  {
+   "d": 223,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Sleep and wellbeing",
+     "g": "Talk about wellbeing: descansar, desconectar, el estrés, relajarse.",
+     "p": [
+      "Rest: descansar bien, dormir ocho horas, echarse una siesta, acostarse temprano.",
+      "Switch off: desconectar del trabajo, relajarse, dar un paseo, leer antes de dormir, apagar el móvil.",
+      "Stress: estar estresado, tener mucho estrés, me ayuda a relajarme... Give tips with te recomiendo que."
+     ],
+     "q": "What helps you desconectar after a long day?",
+     "c": "Write four wellbeing tips for a friend using te recomiendo que, es bueno que and me ayuda a."
+    },
+    "de": {
+     "t": "Schlaf und Wohlbefinden",
+     "g": "Sprich über Wohlbefinden: descansar, desconectar, el estrés, relajarse.",
+     "p": [
+      "Ruhe: descansar bien, dormir ocho horas, echarse una siesta, acostarse temprano.",
+      "Abschalten: desconectar del trabajo, relajarse, dar un paseo, leer antes de dormir, apagar el móvil.",
+      "Stress: estar estresado, tener mucho estrés, me ayuda a relajarme... Tipps mit te recomiendo que."
+     ],
+     "q": "Was hilft dir, nach einem langen Tag abzuschalten (desconectar)?",
+     "c": "Schreib vier Wohlfühl-Tipps für einen Freund mit te recomiendo que, es bueno que und me ayuda a."
+    },
+    "es": {
+     "t": "Sueño y bienestar",
+     "g": "Habla del bienestar: descansar, desconectar, el estrés, relajarse.",
+     "p": [
+      "Descanso: descansar bien, dormir ocho horas, echarse una siesta, acostarse temprano.",
+      "Desconectar: desconectar del trabajo, relajarse, dar un paseo, leer antes de dormir, apagar el móvil.",
+      "Estrés: estar estresado, tener mucho estrés, me ayuda a relajarme... Da consejos con te recomiendo que."
+     ],
+     "q": "¿Qué te ayuda a desconectar después de un día largo?",
+     "c": "Escribe cuatro consejos de bienestar para un amigo con te recomiendo que, es bueno que y me ayuda a."
+    },
+    "fr": {
+     "t": "Sommeil et bien-être",
+     "g": "Parle du bien-être : descansar, desconectar, el estrés, relajarse.",
+     "p": [
+      "Repos : descansar bien, dormir ocho horas, echarse una siesta, acostarse temprano.",
+      "Déconnecter : desconectar del trabajo, relajarse, dar un paseo, leer antes de dormir, apagar el móvil.",
+      "Stress : estar estresado, tener mucho estrés, me ayuda a relajarme... Conseille avec te recomiendo que."
+     ],
+     "q": "Qu'est-ce qui t'aide à déconnecter après une longue journée ?",
+     "c": "Écris quatre conseils de bien-être pour un ami avec te recomiendo que, es bueno que et me ayuda a."
+    },
+    "it": {
+     "t": "Sonno e benessere",
+     "g": "Parla di benessere: descansar, desconectar, el estrés, relajarse.",
+     "p": [
+      "Riposo: descansar bien, dormir ocho horas, echarse una siesta, acostarse temprano.",
+      "Staccare: desconectar del trabajo, relajarse, dar un paseo, leer antes de dormir, apagar el móvil.",
+      "Stress: estar estresado, tener mucho estrés, me ayuda a relajarme... Consiglia con te recomiendo que."
+     ],
+     "q": "Cosa ti aiuta a staccare dopo una lunga giornata?",
+     "c": "Scrivi quattro consigli di benessere per un amico con te recomiendo que, es bueno que e me ayuda a."
+    },
+    "pt": {
+     "t": "Sono e bem-estar",
+     "g": "Fala de bem-estar: descansar, desconectar, el estrés, relajarse.",
+     "p": [
+      "Descanso: descansar bien, dormir ocho horas, echarse una siesta, acostarse temprano.",
+      "Desligar: desconectar del trabajo, relajarse, dar un paseo, leer antes de dormir, apagar el móvil.",
+      "Stress: estar estresado, tener mucho estrés, me ayuda a relajarme... Aconselha com te recomiendo que."
+     ],
+     "q": "O que te ajuda a desligar depois de um dia longo?",
+     "c": "Escreve quatro dicas de bem-estar para um amigo com te recomiendo que, es bueno que e me ayuda a."
+    },
+    "pt_BR": {
+     "t": "Sono e bem-estar",
+     "g": "Fale de bem-estar: descansar, desconectar, el estrés, relajarse.",
+     "p": [
+      "Descanso: descansar bien, dormir ocho horas, echarse una siesta, acostarse temprano.",
+      "Desligar: desconectar del trabajo, relajarse, dar un paseo, leer antes de dormir, apagar el móvil.",
+      "Estresse: estar estresado, tener mucho estrés, me ayuda a relajarme... Aconselhe com te recomiendo que."
+     ],
+     "q": "O que te ajuda a desligar depois de um dia longo?",
+     "c": "Escreva quatro dicas de bem-estar para um amigo com te recomiendo que, es bueno que e me ayuda a."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "descansar",
+      "ex": "Este fin de semana solo quiero descansar."
+     },
+     {
+      "w": "desconectar",
+      "ex": "Necesito desconectar del trabajo unos días."
+     },
+     {
+      "w": "el estrés",
+      "ex": "El deporte me ayuda a reducir el estrés."
+     },
+     {
+      "w": "relajarse",
+      "ex": "Me relajo escuchando música tranquila."
+     },
+     {
+      "w": "echarse una siesta",
+      "ex": "Los domingos me echo una siesta corta."
+     },
+     {
+      "w": "acostarse temprano",
+      "ex": "Entre semana intento acostarme temprano."
+     }
+    ],
+    "gram": "Bienestar: verbos pronominales (relajarse, acostarse, echarse una siesta); me ayuda a + infinitivo; es bueno que + subjuntivo."
+   }
+  },
+  {
+   "d": 224,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Eating habits",
+     "g": "Talk about how people eat today: vegetariano, vegano, casero, picar entre horas.",
+     "p": [
+      "Diets: soy vegetariano/a, es vegana, no como carne, no tomo lácteos, como de todo.",
+      "Habits: comida casera, comer fuera, picar entre horas, saltarse el desayuno, cocinar para toda la semana.",
+      "Compare: antes comía más..., ahora intento..., cada vez más gente prefiere productos frescos."
+     ],
+     "q": "How have your eating habits changed in recent years?",
+     "c": "Describe what you eat on a typical day and one habit you want to change, using antes and ahora."
+    },
+    "de": {
+     "t": "Essgewohnheiten",
+     "g": "Sprich darüber, wie man heute isst: vegetariano, vegano, casero, picar entre horas.",
+     "p": [
+      "Ernährung: soy vegetariano/a, es vegana, no como carne, no tomo lácteos, como de todo.",
+      "Gewohnheiten: comida casera, comer fuera, picar entre horas, saltarse el desayuno, cocinar para toda la semana.",
+      "Vergleichen: antes comía más..., ahora intento..., cada vez más gente prefiere productos frescos."
+     ],
+     "q": "Wie haben sich deine Essgewohnheiten in den letzten Jahren verändert?",
+     "c": "Beschreib, was du an einem typischen Tag isst, und eine Gewohnheit, die du ändern willst, mit antes und ahora."
+    },
+    "es": {
+     "t": "Hábitos alimentarios",
+     "g": "Habla de cómo come la gente hoy: vegetariano, vegano, casero, picar entre horas.",
+     "p": [
+      "Dietas: soy vegetariano/a, es vegana, no como carne, no tomo lácteos, como de todo.",
+      "Hábitos: comida casera, comer fuera, picar entre horas, saltarse el desayuno, cocinar para toda la semana.",
+      "Compara: antes comía más..., ahora intento..., cada vez más gente prefiere productos frescos."
+     ],
+     "q": "¿Cómo han cambiado tus hábitos alimentarios en los últimos años?",
+     "c": "Describe qué comes en un día normal y un hábito que quieres cambiar, con antes y ahora."
+    },
+    "fr": {
+     "t": "Habitudes alimentaires",
+     "g": "Parle de la façon dont on mange aujourd'hui : vegetariano, vegano, casero, picar entre horas.",
+     "p": [
+      "Régimes : soy vegetariano/a, es vegana, no como carne, no tomo lácteos, como de todo.",
+      "Habitudes : comida casera, comer fuera, picar entre horas (grignoter), saltarse el desayuno.",
+      "Comparer : antes comía más..., ahora intento..., cada vez más gente prefiere productos frescos."
+     ],
+     "q": "Comment tes habitudes alimentaires ont-elles changé ces dernières années ?",
+     "c": "Décris ce que tu manges un jour normal et une habitude que tu veux changer, avec antes et ahora."
+    },
+    "it": {
+     "t": "Abitudini alimentari",
+     "g": "Parla di come si mangia oggi: vegetariano, vegano, casero, picar entre horas.",
+     "p": [
+      "Diete: soy vegetariano/a, es vegana, no como carne, no tomo lácteos, como de todo.",
+      "Abitudini: comida casera, comer fuera, picar entre horas (spiluccare), saltarse el desayuno.",
+      "Confronta: antes comía más..., ahora intento..., cada vez más gente prefiere productos frescos."
+     ],
+     "q": "Come sono cambiate le tue abitudini alimentari negli ultimi anni?",
+     "c": "Descrivi cosa mangi in un giorno normale e un'abitudine che vuoi cambiare, con antes e ahora."
+    },
+    "pt": {
+     "t": "Hábitos alimentares",
+     "g": "Fala de como as pessoas comem hoje: vegetariano, vegano, casero, picar entre horas.",
+     "p": [
+      "Dietas: soy vegetariano/a, es vegana, no como carne, no tomo lácteos, como de todo.",
+      "Hábitos: comida casera, comer fuera, picar entre horas (petiscar), saltarse el desayuno.",
+      "Compara: antes comía más..., ahora intento..., cada vez más gente prefiere productos frescos."
+     ],
+     "q": "Como mudaram os teus hábitos alimentares nos últimos anos?",
+     "c": "Descreve o que comes num dia normal e um hábito que queres mudar, com antes e ahora."
+    },
+    "pt_BR": {
+     "t": "Hábitos alimentares",
+     "g": "Fale de como as pessoas comem hoje: vegetariano, vegano, casero, picar entre horas.",
+     "p": [
+      "Dietas: soy vegetariano/a, es vegana, no como carne, no tomo lácteos, como de todo.",
+      "Hábitos: comida casera, comer fuera, picar entre horas (beliscar), saltarse el desayuno.",
+      "Compare: antes comía más..., ahora intento..., cada vez más gente prefiere productos frescos."
+     ],
+     "q": "Como seus hábitos alimentares mudaram nos últimos anos?",
+     "c": "Descreva o que você come num dia normal e um hábito que quer mudar, com antes e ahora."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "vegetariano",
+      "ex": "Mi hermana es vegetariana desde hace años."
+     },
+     {
+      "w": "vegano",
+      "ex": "En este restaurante hay muchos platos veganos."
+     },
+     {
+      "w": "comida casera",
+      "ex": "Nada como la comida casera de mi abuelo."
+     },
+     {
+      "w": "picar entre horas",
+      "ex": "Intento no picar entre horas."
+     },
+     {
+      "w": "comer fuera",
+      "ex": "Solemos comer fuera los viernes."
+     },
+     {
+      "w": "como de todo",
+      "ex": "No tengo ninguna dieta especial, como de todo."
+     }
+    ],
+    "gram": "Hábitos: antes + imperfecto (antes comía...) / ahora + presente (ahora intento...); cada vez más + sustantivo."
+   }
+  },
+  {
+   "d": 225,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Sustainable living",
+     "g": "Talk about green habits: reducir residuos, segunda mano, ahorrar energía, productos locales.",
+     "p": [
+      "Reduce and reuse: reducir residuos, reciclar, reutilizar, llevar tu propia bolsa, comprar a granel.",
+      "Shop smarter: ropa de segunda mano, productos locales y de temporada, reparar en vez de tirar.",
+      "Save: ahorrar energía, apagar las luces, ir en bici o en transporte público, ducharse en vez de bañarse."
+     ],
+     "q": "Which green habit is easiest for you, and which one would you like to start?",
+     "c": "Write five tips for a greener home using es importante que, deberíamos and en vez de."
+    },
+    "de": {
+     "t": "Nachhaltig leben",
+     "g": "Sprich über grüne Gewohnheiten: reducir residuos, segunda mano, ahorrar energía, productos locales.",
+     "p": [
+      "Reduzieren: reducir residuos, reciclar, reutilizar, llevar tu propia bolsa, comprar a granel.",
+      "Klüger einkaufen: ropa de segunda mano, productos locales y de temporada, reparar en vez de tirar.",
+      "Sparen: ahorrar energía, apagar las luces, ir en bici o en transporte público, ducharse en vez de bañarse."
+     ],
+     "q": "Welche grüne Gewohnheit fällt dir am leichtesten, und welche möchtest du anfangen?",
+     "c": "Schreib fünf Tipps für ein grüneres Zuhause mit es importante que, deberíamos und en vez de."
+    },
+    "es": {
+     "t": "Vida sostenible",
+     "g": "Habla de hábitos verdes: reducir residuos, segunda mano, ahorrar energía, productos locales.",
+     "p": [
+      "Reducir y reutilizar: reducir residuos, reciclar, reutilizar, llevar tu propia bolsa, comprar a granel.",
+      "Comprar mejor: ropa de segunda mano, productos locales y de temporada, reparar en vez de tirar.",
+      "Ahorrar: ahorrar energía, apagar las luces, ir en bici o en transporte público, ducharse en vez de bañarse."
+     ],
+     "q": "¿Qué hábito verde te resulta más fácil y cuál te gustaría empezar?",
+     "c": "Escribe cinco consejos para un hogar más verde con es importante que, deberíamos y en vez de."
+    },
+    "fr": {
+     "t": "Vivre durablement",
+     "g": "Parle d'habitudes vertes : reducir residuos, segunda mano, ahorrar energía, productos locales.",
+     "p": [
+      "Réduire : reducir residuos, reciclar, reutilizar, llevar tu propia bolsa, comprar a granel (en vrac).",
+      "Mieux acheter : ropa de segunda mano, productos locales y de temporada, reparar en vez de tirar.",
+      "Économiser : ahorrar energía, apagar las luces, ir en bici o en transporte público."
+     ],
+     "q": "Quelle habitude verte est la plus facile pour toi, et laquelle aimerais-tu commencer ?",
+     "c": "Écris cinq conseils pour une maison plus verte avec es importante que, deberíamos et en vez de."
+    },
+    "it": {
+     "t": "Vivere in modo sostenibile",
+     "g": "Parla di abitudini verdi: reducir residuos, segunda mano, ahorrar energía, productos locales.",
+     "p": [
+      "Ridurre: reducir residuos, reciclar, reutilizar, llevar tu propia bolsa, comprar a granel (sfuso).",
+      "Comprare meglio: ropa de segunda mano, productos locales y de temporada, reparar en vez de tirar.",
+      "Risparmiare: ahorrar energía, apagar las luces, ir en bici o en transporte público."
+     ],
+     "q": "Quale abitudine verde ti viene più facile, e quale vorresti iniziare?",
+     "c": "Scrivi cinque consigli per una casa più verde con es importante que, deberíamos ed en vez de."
+    },
+    "pt": {
+     "t": "Vida sustentável",
+     "g": "Fala de hábitos verdes: reducir residuos, segunda mano, ahorrar energía, productos locales.",
+     "p": [
+      "Reduzir: reducir residuos, reciclar, reutilizar, llevar tu propia bolsa, comprar a granel.",
+      "Comprar melhor: ropa de segunda mano, productos locales y de temporada, reparar en vez de tirar.",
+      "Poupar: ahorrar energía, apagar las luces, ir en bici o en transporte público."
+     ],
+     "q": "Que hábito verde é mais fácil para ti, e qual gostarias de começar?",
+     "c": "Escreve cinco dicas para uma casa mais verde com es importante que, deberíamos e en vez de."
+    },
+    "pt_BR": {
+     "t": "Vida sustentável",
+     "g": "Fale de hábitos verdes: reducir residuos, segunda mano, ahorrar energía, productos locales.",
+     "p": [
+      "Reduzir: reducir residuos, reciclar, reutilizar, llevar tu propia bolsa, comprar a granel.",
+      "Comprar melhor: ropa de segunda mano, productos locales y de temporada, reparar en vez de tirar.",
+      "Economizar: ahorrar energía, apagar las luces, ir en bici o en transporte público."
+     ],
+     "q": "Qual hábito verde é mais fácil para você, e qual gostaria de começar?",
+     "c": "Escreva cinco dicas para uma casa mais verde com es importante que, deberíamos e en vez de."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "reducir residuos",
+      "ex": "Queremos reducir residuos en la oficina."
+     },
+     {
+      "w": "de segunda mano",
+      "ex": "Compré esta bici de segunda mano."
+     },
+     {
+      "w": "ahorrar energía",
+      "ex": "Apagar las luces ayuda a ahorrar energía."
+     },
+     {
+      "w": "productos locales",
+      "ex": "En el mercado venden productos locales."
+     },
+     {
+      "w": "en vez de",
+      "ex": "Voy en bici en vez de ir en coche."
+     },
+     {
+      "w": "reciclar",
+      "ex": "En casa reciclamos papel, vidrio y plástico."
+     }
+    ],
+    "gram": "Consejos verdes: deberíamos + infinitivo; es importante que + subjuntivo; en vez de + infinitivo (en vez de tirar, reparar)."
+   }
+  },
+  {
+   "d": 226,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Climate and extreme weather",
+     "g": "Describe extreme weather and talk about climate change in simple terms.",
+     "p": [
+      "Extreme weather: una ola de calor, una sequía, una inundación, una tormenta, un huracán, granizo.",
+      "Describe it: hace un calor insoportable, llovió muchísimo, el río se desbordó, no ha llovido en meses.",
+      "Climate: el cambio climático, las temperaturas suben, cuidar el planeta, adaptarse."
+     ],
+     "q": "What kind of weather is typical where you live, and has it changed?",
+     "c": "Write a short weather report for an extreme day, using at least four words from today."
+    },
+    "de": {
+     "t": "Klima und Extremwetter",
+     "g": "Beschreibe Extremwetter und sprich einfach über den Klimawandel.",
+     "p": [
+      "Extremwetter: una ola de calor, una sequía, una inundación, una tormenta, un huracán, granizo.",
+      "Beschreiben: hace un calor insoportable, llovió muchísimo, el río se desbordó, no ha llovido en meses.",
+      "Klima: el cambio climático, las temperaturas suben, cuidar el planeta, adaptarse."
+     ],
+     "q": "Welches Wetter ist typisch, wo du wohnst, und hat es sich verändert?",
+     "c": "Schreib einen kurzen Wetterbericht für einen extremen Tag mit mindestens vier Wörtern von heute."
+    },
+    "es": {
+     "t": "Clima y fenómenos extremos",
+     "g": "Describe fenómenos meteorológicos extremos y habla del cambio climático de forma sencilla.",
+     "p": [
+      "Fenómenos: una ola de calor, una sequía, una inundación, una tormenta, un huracán, granizo.",
+      "Descríbelos: hace un calor insoportable, llovió muchísimo, el río se desbordó, no ha llovido en meses.",
+      "Clima: el cambio climático, las temperaturas suben, cuidar el planeta, adaptarse."
+     ],
+     "q": "¿Qué tiempo es típico donde vives y ha cambiado?",
+     "c": "Escribe un parte meteorológico corto de un día extremo con al menos cuatro palabras de hoy."
+    },
+    "fr": {
+     "t": "Climat et météo extrême",
+     "g": "Décris la météo extrême et parle simplement du changement climatique.",
+     "p": [
+      "Phénomènes : una ola de calor (canicule), una sequía, una inundación, una tormenta, un huracán, granizo.",
+      "Décrire : hace un calor insoportable, llovió muchísimo, el río se desbordó, no ha llovido en meses.",
+      "Climat : el cambio climático, las temperaturas suben, cuidar el planeta, adaptarse."
+     ],
+     "q": "Quel temps est typique là où tu vis, et a-t-il changé ?",
+     "c": "Écris un court bulletin météo pour une journée extrême avec au moins quatre mots d'aujourd'hui."
+    },
+    "it": {
+     "t": "Clima e meteo estremo",
+     "g": "Descrivi il meteo estremo e parla in modo semplice del cambiamento climatico.",
+     "p": [
+      "Fenomeni: una ola de calor, una sequía, una inundación, una tormenta, un huracán, granizo (grandine).",
+      "Descrivere: hace un calor insoportable, llovió muchísimo, el río se desbordó, no ha llovido en meses.",
+      "Clima: el cambio climático, las temperaturas suben, cuidar el planeta, adaptarse."
+     ],
+     "q": "Che tempo è tipico dove vivi, ed è cambiato?",
+     "c": "Scrivi un breve bollettino meteo per una giornata estrema con almeno quattro parole di oggi."
+    },
+    "pt": {
+     "t": "Clima e fenómenos extremos",
+     "g": "Descreve fenómenos meteorológicos extremos e fala das alterações climáticas de forma simples.",
+     "p": [
+      "Fenómenos: una ola de calor, una sequía, una inundación, una tormenta, un huracán, granizo.",
+      "Descrever: hace un calor insoportable, llovió muchísimo, el río se desbordó, no ha llovido en meses.",
+      "Clima: el cambio climático, las temperaturas suben, cuidar el planeta, adaptarse."
+     ],
+     "q": "Que tempo é típico onde vives, e mudou?",
+     "c": "Escreve um boletim meteorológico curto de um dia extremo com pelo menos quatro palavras de hoje."
+    },
+    "pt_BR": {
+     "t": "Clima e fenômenos extremos",
+     "g": "Descreva fenômenos climáticos extremos e fale da mudança climática de forma simples.",
+     "p": [
+      "Fenômenos: una ola de calor, una sequía, una inundación, una tormenta, un huracán, granizo.",
+      "Descrever: hace un calor insoportable, llovió muchísimo, el río se desbordó, no ha llovido en meses.",
+      "Clima: el cambio climático, las temperaturas suben, cuidar el planeta, adaptarse."
+     ],
+     "q": "Que tempo é típico onde você mora, e ele mudou?",
+     "c": "Escreva uma previsão do tempo curta de um dia extremo com pelo menos quatro palavras de hoje."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la ola de calor",
+      "ex": "Durante la ola de calor, cerramos las persianas."
+     },
+     {
+      "w": "la sequía",
+      "ex": "La sequía afecta mucho a los agricultores."
+     },
+     {
+      "w": "la inundación",
+      "ex": "Después de la inundación, todos ayudaron a limpiar."
+     },
+     {
+      "w": "la tormenta",
+      "ex": "Anoche hubo una tormenta con muchos truenos."
+     },
+     {
+      "w": "el cambio climático",
+      "ex": "El cambio climático es un reto para todos."
+     },
+     {
+      "w": "hace un calor insoportable",
+      "ex": "En agosto hace un calor insoportable."
+     }
+    ],
+    "gram": "Tiempo: hace calor/frío, llueve/nieva, hay tormenta. Pasado: llovió muchísimo. Perfecto: no ha llovido en meses."
+   }
+  },
+  {
+   "d": 227,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Animals and conservation",
+     "g": "Talk about wildlife and protecting it: en peligro de extinción, hábitat, fauna, proteger, especie.",
+     "p": [
+      "Key words: la especie, la fauna y la flora, el hábitat, una reserva natural, un parque nacional.",
+      "In danger: estar en peligro de extinción, perder su hábitat, la caza ilegal, la contaminación.",
+      "Protect: proteger, conservar, reintroducir. Example: el lince ibérico, a wild cat of Spain, is recovering."
+     ],
+     "q": "Which animal from a Spanish-speaking country would you love to see in the wild?",
+     "c": "Write a short text about an animal you like: where it lives, what it eats and how we can protect it."
+    },
+    "de": {
+     "t": "Tiere und Naturschutz",
+     "g": "Sprich über Wildtiere und ihren Schutz: en peligro de extinción, hábitat, fauna, proteger, especie.",
+     "p": [
+      "Schlüsselwörter: la especie, la fauna y la flora, el hábitat, una reserva natural, un parque nacional.",
+      "In Gefahr: estar en peligro de extinción, perder su hábitat, la caza ilegal, la contaminación.",
+      "Schützen: proteger, conservar, reintroducir. Beispiel: el lince ibérico, eine Wildkatze Spaniens, erholt sich."
+     ],
+     "q": "Welches Tier aus einem spanischsprachigen Land würdest du gern in freier Wildbahn sehen?",
+     "c": "Schreib einen kurzen Text über ein Tier: wo es lebt, was es frisst und wie wir es schützen können."
+    },
+    "es": {
+     "t": "Animales y conservación",
+     "g": "Habla de la fauna y de cómo protegerla: en peligro de extinción, hábitat, fauna, proteger, especie.",
+     "p": [
+      "Palabras clave: la especie, la fauna y la flora, el hábitat, una reserva natural, un parque nacional.",
+      "En peligro: estar en peligro de extinción, perder su hábitat, la caza ilegal, la contaminación.",
+      "Proteger: proteger, conservar, reintroducir. Ejemplo: el lince ibérico se está recuperando poco a poco."
+     ],
+     "q": "¿Qué animal de un país hispanohablante te encantaría ver en libertad?",
+     "c": "Escribe un texto corto sobre un animal que te guste: dónde vive, qué come y cómo podemos protegerlo."
+    },
+    "fr": {
+     "t": "Animaux et protection",
+     "g": "Parle de la faune et de sa protection : en peligro de extinción, hábitat, fauna, proteger, especie.",
+     "p": [
+      "Mots clés : la especie, la fauna y la flora, el hábitat, una reserva natural, un parque nacional.",
+      "En danger : estar en peligro de extinción, perder su hábitat, la caza ilegal, la contaminación.",
+      "Protéger : proteger, conservar, reintroducir. Exemple : el lince ibérico, félin d'Espagne, se rétablit."
+     ],
+     "q": "Quel animal d'un pays hispanophone aimerais-tu voir en liberté ?",
+     "c": "Écris un court texte sur un animal que tu aimes : où il vit, ce qu'il mange et comment le protéger."
+    },
+    "it": {
+     "t": "Animali e tutela",
+     "g": "Parla della fauna e della sua tutela: en peligro de extinción, hábitat, fauna, proteger, especie.",
+     "p": [
+      "Parole chiave: la especie, la fauna y la flora, el hábitat, una reserva natural, un parque nacional.",
+      "In pericolo: estar en peligro de extinción, perder su hábitat, la caza ilegal, la contaminación.",
+      "Proteggere: proteger, conservar, reintroducir. Esempio: el lince ibérico, felino spagnolo, si sta riprendendo."
+     ],
+     "q": "Quale animale di un paese ispanofono ti piacerebbe vedere in libertà?",
+     "c": "Scrivi un breve testo su un animale che ti piace: dove vive, cosa mangia e come proteggerlo."
+    },
+    "pt": {
+     "t": "Animais e conservação",
+     "g": "Fala da fauna e da sua proteção: en peligro de extinción, hábitat, fauna, proteger, especie.",
+     "p": [
+      "Palavras-chave: la especie, la fauna y la flora, el hábitat, una reserva natural, un parque nacional.",
+      "Em perigo: estar en peligro de extinción, perder su hábitat, la caza ilegal, la contaminación.",
+      "Proteger: proteger, conservar, reintroducir. Exemplo: el lince ibérico está a recuperar pouco a pouco."
+     ],
+     "q": "Que animal de um país hispanófono adorarias ver em liberdade?",
+     "c": "Escreve um texto curto sobre um animal de que gostes: onde vive, o que come e como o podemos proteger."
+    },
+    "pt_BR": {
+     "t": "Animais e conservação",
+     "g": "Fale da fauna e da sua proteção: en peligro de extinción, hábitat, fauna, proteger, especie.",
+     "p": [
+      "Palavras-chave: la especie, la fauna y la flora, el hábitat, una reserva natural, un parque nacional.",
+      "Em perigo: estar en peligro de extinción, perder su hábitat, la caza ilegal, la contaminación.",
+      "Proteger: proteger, conservar, reintroducir. Exemplo: el lince ibérico está se recuperando aos poucos."
+     ],
+     "q": "Que animal de um país hispanofalante você adoraria ver na natureza?",
+     "c": "Escreva um texto curto sobre um animal de que você gosta: onde vive, o que come e como protegê-lo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "en peligro de extinción",
+      "ex": "El lince ibérico estuvo en peligro de extinción."
+     },
+     {
+      "w": "el hábitat",
+      "ex": "Los bosques son el hábitat de muchas especies."
+     },
+     {
+      "w": "la fauna",
+      "ex": "La fauna de las islas Galápagos es única."
+     },
+     {
+      "w": "proteger",
+      "ex": "Debemos proteger los océanos."
+     },
+     {
+      "w": "la especie",
+      "ex": "Cada especie tiene un papel en la naturaleza."
+     },
+     {
+      "w": "la reserva natural",
+      "ex": "Visitamos una reserva natural llena de aves."
+     }
+    ],
+    "gram": "Conservación: estar en peligro de extinción; se está recuperando (estar + gerundio); debemos + infinitivo."
+   }
+  },
+  {
+   "d": 228,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Science in daily life",
+     "g": "Talk about science around us: experimento, descubrimiento, investigación, pruebas.",
+     "p": [
+      "Key words: un experimento, un descubrimiento, la investigación, los datos, las pruebas, un científico.",
+      "Verbs: investigar, descubrir, demostrar, comprobar. Según los científicos... = according to scientists.",
+      "Everyday science: why bread rises, how a fridge works. Santiago Ramón y Cajal won a Nobel Prize in 1906."
+     ],
+     "q": "Which scientific discovery do you think changed daily life the most?",
+     "c": "Explain a simple everyday phenomenon in Spanish in four sentences, like why ice floats."
+    },
+    "de": {
+     "t": "Wissenschaft im Alltag",
+     "g": "Sprich über Wissenschaft um uns herum: experimento, descubrimiento, investigación, pruebas.",
+     "p": [
+      "Schlüsselwörter: un experimento, un descubrimiento, la investigación, los datos, las pruebas, un científico.",
+      "Verben: investigar, descubrir, demostrar, comprobar. Según los científicos... = laut Wissenschaftlern.",
+      "Alltagswissenschaft: Warum Brot aufgeht. Santiago Ramón y Cajal erhielt 1906 den Nobelpreis."
+     ],
+     "q": "Welche wissenschaftliche Entdeckung hat deiner Meinung nach den Alltag am meisten verändert?",
+     "c": "Erklär ein einfaches Alltagsphänomen in vier Sätzen auf Spanisch, zum Beispiel warum Eis schwimmt."
+    },
+    "es": {
+     "t": "La ciencia en la vida diaria",
+     "g": "Habla de la ciencia que nos rodea: experimento, descubrimiento, investigación, pruebas.",
+     "p": [
+      "Palabras clave: un experimento, un descubrimiento, la investigación, los datos, las pruebas, un científico.",
+      "Verbos: investigar, descubrir, demostrar, comprobar. Según los científicos... para citar fuentes.",
+      "Ciencia cotidiana: por qué sube el pan. Santiago Ramón y Cajal ganó el Premio Nobel en 1906."
+     ],
+     "q": "¿Qué descubrimiento científico crees que ha cambiado más la vida diaria?",
+     "c": "Explica en cuatro frases un fenómeno cotidiano sencillo, por ejemplo por qué flota el hielo."
+    },
+    "fr": {
+     "t": "La science au quotidien",
+     "g": "Parle de la science autour de nous : experimento, descubrimiento, investigación, pruebas.",
+     "p": [
+      "Mots clés : un experimento, un descubrimiento, la investigación (la recherche), los datos, las pruebas.",
+      "Verbes : investigar, descubrir, demostrar, comprobar. Según los científicos... = selon les scientifiques.",
+      "Science du quotidien : pourquoi le pain lève. Santiago Ramón y Cajal a reçu le prix Nobel en 1906."
+     ],
+     "q": "Quelle découverte scientifique a le plus changé la vie quotidienne selon toi ?",
+     "c": "Explique en quatre phrases un phénomène simple du quotidien, par exemple pourquoi la glace flotte."
+    },
+    "it": {
+     "t": "La scienza nella vita quotidiana",
+     "g": "Parla della scienza intorno a noi: experimento, descubrimiento, investigación, pruebas.",
+     "p": [
+      "Parole chiave: un experimento, un descubrimiento, la investigación (la ricerca), los datos, las pruebas.",
+      "Verbi: investigar, descubrir, demostrar, comprobar. Según los científicos... = secondo gli scienziati.",
+      "Scienza quotidiana: perché il pane lievita. Santiago Ramón y Cajal vinse il Nobel nel 1906."
+     ],
+     "q": "Quale scoperta scientifica pensi abbia cambiato di più la vita quotidiana?",
+     "c": "Spiega in quattro frasi un fenomeno quotidiano semplice, per esempio perché il ghiaccio galleggia."
+    },
+    "pt": {
+     "t": "A ciência no dia a dia",
+     "g": "Fala da ciência à nossa volta: experimento, descubrimiento, investigación, pruebas.",
+     "p": [
+      "Palavras-chave: un experimento, un descubrimiento, la investigación, los datos, las pruebas, un científico.",
+      "Verbos: investigar, descubrir, demostrar, comprobar. Según los científicos... = segundo os cientistas.",
+      "Ciência do dia a dia: porque cresce o pão. Santiago Ramón y Cajal ganhou o Prémio Nobel em 1906."
+     ],
+     "q": "Que descoberta científica achas que mais mudou a vida diária?",
+     "c": "Explica em quatro frases um fenómeno simples do dia a dia, por exemplo porque flutua o gelo."
+    },
+    "pt_BR": {
+     "t": "A ciência no dia a dia",
+     "g": "Fale da ciência ao nosso redor: experimento, descubrimiento, investigación, pruebas.",
+     "p": [
+      "Palavras-chave: un experimento, un descubrimiento, la investigación (a pesquisa), los datos, las pruebas.",
+      "Verbos: investigar, descubrir, demostrar, comprobar. Según los científicos... = segundo os cientistas.",
+      "Ciência do dia a dia: por que o pão cresce. Santiago Ramón y Cajal ganhou o Prêmio Nobel em 1906."
+     ],
+     "q": "Qual descoberta científica você acha que mais mudou a vida diária?",
+     "c": "Explique em quatro frases um fenômeno simples do dia a dia, por exemplo por que o gelo flutua."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el experimento",
+      "ex": "En clase hicimos un experimento con agua y sal."
+     },
+     {
+      "w": "el descubrimiento",
+      "ex": "La penicilina fue un descubrimiento muy importante."
+     },
+     {
+      "w": "la investigación",
+      "ex": "Mi prima trabaja en investigación médica."
+     },
+     {
+      "w": "las pruebas",
+      "ex": "Los científicos necesitan pruebas para confirmar una idea."
+     },
+     {
+      "w": "según los científicos",
+      "ex": "Según los científicos, dormir bien mejora la memoria."
+     },
+     {
+      "w": "comprobar",
+      "ex": "Vamos a comprobar si el resultado es correcto."
+     }
+    ],
+    "gram": "Ciencia: según + fuente (según los científicos); la pasiva refleja: se descubrió, se demostró, se investiga."
+   }
+  },
+  {
+   "d": 229,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Technology: pros and cons",
+     "g": "Discuss technology with por un lado, por otro lado, ventajas y desventajas.",
+     "p": [
+      "Structure: por un lado..., por otro lado...; una ventaja es que..., una desventaja es que...",
+      "Ideas: nos conecta con gente lejana, facilita el trabajo; pero puede crear dependencia y distraernos.",
+      "Conclude: en mi opinión, lo importante es usarla con equilibrio; depende de cómo la usemos."
+     ],
+     "q": "Is your phone more of a help or a distraction? Give one ventaja and one desventaja.",
+     "c": "Write a short paragraph about a technology you use daily, with por un lado, por otro lado and en conclusión."
+    },
+    "de": {
+     "t": "Technik: Vor- und Nachteile",
+     "g": "Diskutiere über Technik mit por un lado, por otro lado, ventajas y desventajas.",
+     "p": [
+      "Struktur: por un lado..., por otro lado...; una ventaja es que..., una desventaja es que...",
+      "Ideen: nos conecta con gente lejana, facilita el trabajo; pero puede crear dependencia y distraernos.",
+      "Abschluss: en mi opinión, lo importante es usarla con equilibrio; depende de cómo la usemos."
+     ],
+     "q": "Ist dein Handy eher Hilfe oder Ablenkung? Nenne eine ventaja und eine desventaja.",
+     "c": "Schreib einen kurzen Absatz über eine Technik, die du täglich nutzt, mit por un lado, por otro lado und en conclusión."
+    },
+    "es": {
+     "t": "Tecnología: ventajas e inconvenientes",
+     "g": "Debate sobre tecnología con por un lado, por otro lado, ventajas y desventajas.",
+     "p": [
+      "Estructura: por un lado..., por otro lado...; una ventaja es que..., una desventaja es que...",
+      "Ideas: nos conecta con gente lejana, facilita el trabajo; pero puede crear dependencia y distraernos.",
+      "Concluye: en mi opinión, lo importante es usarla con equilibrio; depende de cómo la usemos."
+     ],
+     "q": "¿Tu móvil es más una ayuda o una distracción? Da una ventaja y una desventaja.",
+     "c": "Escribe un párrafo corto sobre una tecnología que usas a diario con por un lado, por otro lado y en conclusión."
+    },
+    "fr": {
+     "t": "Technologie : avantages et inconvénients",
+     "g": "Débats de la technologie avec por un lado, por otro lado, ventajas y desventajas.",
+     "p": [
+      "Structure : por un lado..., por otro lado... ; una ventaja es que..., una desventaja es que...",
+      "Idées : nos conecta con gente lejana, facilita el trabajo ; pero puede crear dependencia y distraernos.",
+      "Conclure : en mi opinión, lo importante es usarla con equilibrio ; depende de cómo la usemos."
+     ],
+     "q": "Ton téléphone est-il plutôt une aide ou une distraction ? Donne une ventaja et une desventaja.",
+     "c": "Écris un court paragraphe sur une technologie que tu utilises chaque jour avec por un lado, por otro lado, en conclusión."
+    },
+    "it": {
+     "t": "Tecnologia: pro e contro",
+     "g": "Discuti di tecnologia con por un lado, por otro lado, ventajas y desventajas.",
+     "p": [
+      "Struttura: por un lado..., por otro lado...; una ventaja es que..., una desventaja es que...",
+      "Idee: nos conecta con gente lejana, facilita el trabajo; pero puede crear dependencia y distraernos.",
+      "Concludere: en mi opinión, lo importante es usarla con equilibrio; depende de cómo la usemos."
+     ],
+     "q": "Il tuo telefono è più un aiuto o una distrazione? Dai una ventaja e una desventaja.",
+     "c": "Scrivi un breve paragrafo su una tecnologia che usi ogni giorno con por un lado, por otro lado e en conclusión."
+    },
+    "pt": {
+     "t": "Tecnologia: vantagens e desvantagens",
+     "g": "Debate sobre tecnologia com por un lado, por otro lado, ventajas y desventajas.",
+     "p": [
+      "Estrutura: por un lado..., por otro lado...; una ventaja es que..., una desventaja es que...",
+      "Ideias: nos conecta con gente lejana, facilita el trabajo; pero puede crear dependencia y distraernos.",
+      "Concluir: en mi opinión, lo importante es usarla con equilibrio; depende de cómo la usemos."
+     ],
+     "q": "O teu telemóvel é mais uma ajuda ou uma distração? Dá uma ventaja e uma desventaja.",
+     "c": "Escreve um parágrafo curto sobre uma tecnologia que usas todos os dias com por un lado, por otro lado e en conclusión."
+    },
+    "pt_BR": {
+     "t": "Tecnologia: vantagens e desvantagens",
+     "g": "Debata sobre tecnologia com por un lado, por otro lado, ventajas y desventajas.",
+     "p": [
+      "Estrutura: por un lado..., por otro lado...; una ventaja es que..., una desventaja es que...",
+      "Ideias: nos conecta con gente lejana, facilita el trabajo; pero puede crear dependencia y distraernos.",
+      "Concluir: en mi opinión, lo importante es usarla con equilibrio; depende de cómo la usemos."
+     ],
+     "q": "Seu celular é mais uma ajuda ou uma distração? Dê uma ventaja e uma desventaja.",
+     "c": "Escreva um parágrafo curto sobre uma tecnologia que você usa todo dia com por un lado, por otro lado e en conclusión."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "por un lado",
+      "ex": "Por un lado, el móvil es muy práctico."
+     },
+     {
+      "w": "por otro lado",
+      "ex": "Por otro lado, nos quita mucho tiempo."
+     },
+     {
+      "w": "la ventaja",
+      "ex": "La gran ventaja de internet es el acceso a la información."
+     },
+     {
+      "w": "la desventaja",
+      "ex": "Una desventaja es que dormimos menos."
+     },
+     {
+      "w": "depende de",
+      "ex": "Depende de cómo usemos la tecnología."
+     },
+     {
+      "w": "en conclusión",
+      "ex": "En conclusión, la tecnología es útil si la usamos bien."
+     }
+    ],
+    "gram": "Argumentar: por un lado... por otro lado...; una ventaja/desventaja es que + indicativo; depende de cómo + subjuntivo."
+   }
+  },
+  {
+   "d": 230,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Review: work, health and the world",
+     "g": "Recap work Spanish, wellbeing and environment vocabulary with a short debate.",
+     "p": [
+      "Work: háblame de ti, desde mi punto de vista, le escribo para, ¿qué le parece si...?, estás silenciado.",
+      "Wellbeing: hacer deporte, estar en forma, tengo dolor de..., desconectar, comida casera.",
+      "The world: reducir residuos, la ola de calor, en peligro de extinción, por un lado... por otro lado."
+     ],
+     "q": "Debate time: is working from home better for wellbeing? Give arguments for and against.",
+     "c": "Write a mini debate of six sentences on one topic from this unit, using por un lado and por otro lado."
+    },
+    "de": {
+     "t": "Wiederholung: Arbeit, Gesundheit und Welt",
+     "g": "Wiederhole Arbeitsspanisch, Wohlbefinden und Umweltvokabular mit einer kurzen Debatte.",
+     "p": [
+      "Arbeit: háblame de ti, desde mi punto de vista, le escribo para, ¿qué le parece si...?, estás silenciado.",
+      "Wohlbefinden: hacer deporte, estar en forma, tengo dolor de..., desconectar, comida casera.",
+      "Die Welt: reducir residuos, la ola de calor, en peligro de extinción, por un lado... por otro lado."
+     ],
+     "q": "Debatte: Ist Homeoffice besser fürs Wohlbefinden? Nenne Argumente dafür und dagegen.",
+     "c": "Schreib eine Mini-Debatte in sechs Sätzen zu einem Thema dieser Einheit mit por un lado und por otro lado."
+    },
+    "es": {
+     "t": "Repaso: trabajo, salud y mundo",
+     "g": "Repasa el español del trabajo, el bienestar y el medio ambiente con un pequeño debate.",
+     "p": [
+      "Trabajo: háblame de ti, desde mi punto de vista, le escribo para, ¿qué le parece si...?, estás silenciado.",
+      "Bienestar: hacer deporte, estar en forma, tengo dolor de..., desconectar, comida casera.",
+      "El mundo: reducir residuos, la ola de calor, en peligro de extinción, por un lado... por otro lado."
+     ],
+     "q": "Debate: ¿teletrabajar es mejor para el bienestar? Da argumentos a favor y en contra.",
+     "c": "Escribe un mini debate de seis frases sobre un tema de esta unidad con por un lado y por otro lado."
+    },
+    "fr": {
+     "t": "Révision : travail, santé et monde",
+     "g": "Révise l'espagnol du travail, le bien-être et l'environnement avec un petit débat.",
+     "p": [
+      "Travail : háblame de ti, desde mi punto de vista, le escribo para, ¿qué le parece si...?, estás silenciado.",
+      "Bien-être : hacer deporte, estar en forma, tengo dolor de..., desconectar, comida casera.",
+      "Le monde : reducir residuos, la ola de calor, en peligro de extinción, por un lado... por otro lado."
+     ],
+     "q": "Débat : le télétravail est-il meilleur pour le bien-être ? Donne des arguments pour et contre.",
+     "c": "Écris un mini débat de six phrases sur un thème de cette unité avec por un lado et por otro lado."
+    },
+    "it": {
+     "t": "Ripasso: lavoro, salute e mondo",
+     "g": "Ripassa lo spagnolo del lavoro, il benessere e l'ambiente con un piccolo dibattito.",
+     "p": [
+      "Lavoro: háblame de ti, desde mi punto de vista, le escribo para, ¿qué le parece si...?, estás silenciado.",
+      "Benessere: hacer deporte, estar en forma, tengo dolor de..., desconectar, comida casera.",
+      "Il mondo: reducir residuos, la ola de calor, en peligro de extinción, por un lado... por otro lado."
+     ],
+     "q": "Dibattito: lo smart working è meglio per il benessere? Dai argomenti a favore e contro.",
+     "c": "Scrivi un mini dibattito di sei frasi su un tema di questa unità con por un lado e por otro lado."
+    },
+    "pt": {
+     "t": "Revisão: trabalho, saúde e mundo",
+     "g": "Revê o espanhol do trabalho, o bem-estar e o ambiente com um pequeno debate.",
+     "p": [
+      "Trabalho: háblame de ti, desde mi punto de vista, le escribo para, ¿qué le parece si...?, estás silenciado.",
+      "Bem-estar: hacer deporte, estar en forma, tengo dolor de..., desconectar, comida casera.",
+      "O mundo: reducir residuos, la ola de calor, en peligro de extinción, por un lado... por otro lado."
+     ],
+     "q": "Debate: o teletrabalho é melhor para o bem-estar? Dá argumentos a favor e contra.",
+     "c": "Escreve um mini debate de seis frases sobre um tema desta unidade com por un lado e por otro lado."
+    },
+    "pt_BR": {
+     "t": "Revisão: trabalho, saúde e mundo",
+     "g": "Revise o espanhol do trabalho, o bem-estar e o meio ambiente com um pequeno debate.",
+     "p": [
+      "Trabalho: háblame de ti, desde mi punto de vista, le escribo para, ¿qué le parece si...?, estás silenciado.",
+      "Bem-estar: hacer deporte, estar en forma, tengo dolor de..., desconectar, comida casera.",
+      "O mundo: reducir residuos, la ola de calor, en peligro de extinción, por un lado... por otro lado."
+     ],
+     "q": "Debate: o home office é melhor para o bem-estar? Dê argumentos a favor e contra.",
+     "c": "Escreva um mini debate de seis frases sobre um tema desta unidade com por un lado e por otro lado."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "teletrabajar",
+      "ex": "Muchas personas teletrabajan dos días por semana."
+     },
+     {
+      "w": "desde mi punto de vista",
+      "ex": "Desde mi punto de vista, el equilibrio es clave."
+     },
+     {
+      "w": "estar en forma",
+      "ex": "Caminar cada día ayuda a estar en forma."
+     },
+     {
+      "w": "desconectar",
+      "ex": "Es importante desconectar al terminar la jornada."
+     },
+     {
+      "w": "reducir residuos",
+      "ex": "Todos podemos reducir residuos en casa."
+     },
+     {
+      "w": "a favor y en contra",
+      "ex": "Hay argumentos a favor y en contra."
+     }
+    ],
+    "gram": "Debatir: desde mi punto de vista + indicativo; no creo que + subjuntivo; por un lado... por otro lado...; en conclusión."
+   }
+  }
+ ]
+}

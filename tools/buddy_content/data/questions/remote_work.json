@@ -1,0 +1,1305 @@
+{
+ "topic": "remote_work",
+ "questions": [
+  {
+   "id": "remote_work-001",
+   "lv": "any",
+   "i18n": {
+    "en": "What does your ideal workday look like?",
+    "de": "Wie sieht dein idealer Arbeitstag aus?",
+    "es": "¿Cómo es tu día de trabajo ideal?",
+    "fr": "À quoi ressemble ta journée de travail idéale ?",
+    "it": "Com'è la tua giornata di lavoro ideale?",
+    "pt": "Como é o teu dia de trabalho ideal?",
+    "pt_BR": "Como é o seu dia de trabalho ideal?"
+   }
+  },
+  {
+   "id": "remote_work-002",
+   "lv": "any",
+   "i18n": {
+    "en": "Have you ever worked from home? How did it feel?",
+    "de": "Hast du schon mal von zu Hause gearbeitet? Wie war das für dich?",
+    "es": "¿Alguna vez has trabajado desde casa? ¿Qué tal te sentiste?",
+    "fr": "As-tu déjà travaillé depuis chez toi ? Comment l'as-tu vécu ?",
+    "it": "Hai mai lavorato da casa? Com'è stato per te?",
+    "pt": "Já trabalhaste a partir de casa? Como te sentiste?",
+    "pt_BR": "Você já trabalhou de casa? Como foi pra você?"
+   }
+  },
+  {
+   "id": "remote_work-003",
+   "lv": "any",
+   "i18n": {
+    "en": "What do you think is the biggest advantage of remote work?",
+    "de": "Was ist für dich der größte Vorteil von Remote-Arbeit?",
+    "es": "¿Cuál crees que es la mayor ventaja del trabajo remoto?",
+    "fr": "Selon toi, quel est le plus grand avantage du télétravail ?",
+    "it": "Secondo te, qual è il vantaggio più grande del lavoro da remoto?",
+    "pt": "Para ti, qual é a maior vantagem do trabalho remoto?",
+    "pt_BR": "Pra você, qual é a maior vantagem do trabalho remoto?"
+   }
+  },
+  {
+   "id": "remote_work-004",
+   "lv": "any",
+   "i18n": {
+    "en": "What part of remote work seems hardest to you?",
+    "de": "Welcher Teil der Remote-Arbeit erscheint dir am schwierigsten?",
+    "es": "¿Qué parte del trabajo remoto te parece más difícil?",
+    "fr": "Quelle partie du télétravail te semble la plus difficile ?",
+    "it": "Quale aspetto del lavoro da remoto ti sembra più difficile?",
+    "pt": "Que parte do trabalho remoto te parece mais difícil?",
+    "pt_BR": "Que parte do trabalho remoto parece mais difícil pra você?"
+   }
+  },
+  {
+   "id": "remote_work-005",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer working at home, in an office or somewhere else?",
+    "de": "Arbeitest du lieber zu Hause, im Büro oder ganz woanders?",
+    "es": "¿Prefieres trabajar en casa, en una oficina o en otro sitio?",
+    "fr": "Tu préfères travailler chez toi, au bureau ou ailleurs ?",
+    "it": "Preferisci lavorare a casa, in ufficio o da qualche altra parte?",
+    "pt": "Preferes trabalhar em casa, num escritório ou noutro sítio?",
+    "pt_BR": "Você prefere trabalhar em casa, num escritório ou em outro lugar?"
+   }
+  },
+  {
+   "id": "remote_work-006",
+   "lv": "any",
+   "i18n": {
+    "en": "Where in the world would you love to work from for a month?",
+    "de": "Von wo auf der Welt würdest du gern mal einen Monat lang arbeiten?",
+    "es": "¿Desde qué lugar del mundo te encantaría trabajar durante un mes?",
+    "fr": "D'où dans le monde aimerais-tu travailler pendant un mois ?",
+    "it": "Da quale posto del mondo ti piacerebbe lavorare per un mese?",
+    "pt": "De que sítio do mundo adorarias trabalhar durante um mês?",
+    "pt_BR": "De que lugar do mundo você adoraria trabalhar por um mês?"
+   }
+  },
+  {
+   "id": "remote_work-007",
+   "lv": "any",
+   "i18n": {
+    "en": "Are you a morning person or a night owl when it comes to work?",
+    "de": "Bist du beim Arbeiten eher Frühaufsteher oder Nachteule?",
+    "es": "¿Eres más madrugador o más noctámbulo a la hora de trabajar?",
+    "fr": "Pour travailler, tu es plutôt du matin ou du soir ?",
+    "it": "Quando lavori, sei più mattiniero o nottambulo?",
+    "pt": "Para trabalhar, és mais pessoa da manhã ou da noite?",
+    "pt_BR": "Pra trabalhar, você é mais da manhã ou da noite?"
+   }
+  },
+  {
+   "id": "remote_work-008",
+   "lv": "any",
+   "i18n": {
+    "en": "What helps you concentrate the most?",
+    "de": "Was hilft dir am meisten, dich zu konzentrieren?",
+    "es": "¿Qué te ayuda más a concentrarte?",
+    "fr": "Qu'est-ce qui t'aide le plus à te concentrer ?",
+    "it": "Che cosa ti aiuta di più a concentrarti?",
+    "pt": "O que é que mais te ajuda a concentrar-te?",
+    "pt_BR": "O que mais te ajuda a se concentrar?"
+   }
+  },
+  {
+   "id": "remote_work-009",
+   "lv": "any",
+   "i18n": {
+    "en": "What distracts you most easily during the day?",
+    "de": "Was lenkt dich im Laufe des Tages am leichtesten ab?",
+    "es": "¿Qué es lo que más fácilmente te distrae durante el día?",
+    "fr": "Qu'est-ce qui te distrait le plus facilement dans la journée ?",
+    "it": "Che cosa ti distrae più facilmente durante la giornata?",
+    "pt": "O que te distrai com mais facilidade durante o dia?",
+    "pt_BR": "O que mais te distrai durante o dia?"
+   }
+  },
+  {
+   "id": "remote_work-010",
+   "lv": "any",
+   "i18n": {
+    "en": "Which app or tool could you not work without?",
+    "de": "Ohne welche App oder welches Tool könntest du nicht arbeiten?",
+    "es": "¿Sin qué app o herramienta no podrías trabajar?",
+    "fr": "Sans quelle appli ou quel outil ne pourrais-tu pas travailler ?",
+    "it": "Senza quale app o strumento non potresti lavorare?",
+    "pt": "Sem que app ou ferramenta não conseguias trabalhar?",
+    "pt_BR": "Sem qual app ou ferramenta você não conseguiria trabalhar?"
+   }
+  },
+  {
+   "id": "remote_work-011",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you usually take a break when you work?",
+    "de": "Wie machst du beim Arbeiten normalerweise Pause?",
+    "es": "¿Cómo sueles hacer las pausas cuando trabajas?",
+    "fr": "Comment fais-tu tes pauses quand tu travailles ?",
+    "it": "Come fai di solito le pause quando lavori?",
+    "pt": "Como costumas fazer as pausas quando trabalhas?",
+    "pt_BR": "Como você costuma fazer as pausas quando trabalha?"
+   }
+  },
+  {
+   "id": "remote_work-012",
+   "lv": "any",
+   "i18n": {
+    "en": "What does your perfect workspace look like?",
+    "de": "Wie sieht dein perfekter Arbeitsplatz aus?",
+    "es": "¿Cómo sería tu espacio de trabajo perfecto?",
+    "fr": "À quoi ressemble ton espace de travail parfait ?",
+    "it": "Com'è la tua postazione di lavoro perfetta?",
+    "pt": "Como é o teu espaço de trabalho perfeito?",
+    "pt_BR": "Como é o seu espaço de trabalho perfeito?"
+   }
+  },
+  {
+   "id": "remote_work-013",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you like video calls, or do you prefer writing messages?",
+    "de": "Magst du Videocalls, oder schreibst du lieber Nachrichten?",
+    "es": "¿Te gustan las videollamadas o prefieres escribir mensajes?",
+    "fr": "Tu aimes les appels vidéo ou tu préfères écrire des messages ?",
+    "it": "Ti piacciono le videochiamate o preferisci scrivere messaggi?",
+    "pt": "Gostas de videochamadas ou preferes escrever mensagens?",
+    "pt_BR": "Você curte videochamadas ou prefere escrever mensagens?"
+   }
+  },
+  {
+   "id": "remote_work-014",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you separate work time from free time?",
+    "de": "Wie trennst du Arbeitszeit und Freizeit voneinander?",
+    "es": "¿Cómo separas el tiempo de trabajo del tiempo libre?",
+    "fr": "Comment sépares-tu le temps de travail du temps libre ?",
+    "it": "Come separi il tempo di lavoro da quello libero?",
+    "pt": "Como separas o tempo de trabalho do tempo livre?",
+    "pt_BR": "Como você separa o tempo de trabalho do tempo livre?"
+   }
+  },
+  {
+   "id": "remote_work-015",
+   "lv": "any",
+   "i18n": {
+    "en": "What do you miss most when you don't work with others in person?",
+    "de": "Was vermisst du am meisten, wenn du nicht vor Ort mit anderen arbeitest?",
+    "es": "¿Qué echas más de menos cuando no trabajas en persona con otros?",
+    "fr": "Qu'est-ce qui te manque le plus quand tu ne travailles pas avec d'autres en personne ?",
+    "it": "Che cosa ti manca di più quando non lavori di persona con gli altri?",
+    "pt": "Do que sentes mais falta quando não trabalhas pessoalmente com outros?",
+    "pt_BR": "Do que você mais sente falta quando não trabalha pessoalmente com outras pessoas?"
+   }
+  },
+  {
+   "id": "remote_work-016",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you like to live as a digital nomad one day? Why or why not?",
+    "de": "Würdest du gern mal als digitaler Nomade leben? Warum oder warum nicht?",
+    "es": "¿Te gustaría vivir como nómada digital algún día? ¿Por qué sí o por qué no?",
+    "fr": "Aimerais-tu vivre un jour en nomade numérique ? Pourquoi ou pourquoi pas ?",
+    "it": "Ti piacerebbe vivere un giorno da nomade digitale? Perché sì o perché no?",
+    "pt": "Gostavas de viver um dia como nómada digital? Porquê ou porque não?",
+    "pt_BR": "Você gostaria de viver como nômade digital um dia? Por que sim ou por que não?"
+   }
+  },
+  {
+   "id": "remote_work-017",
+   "lv": "any",
+   "i18n": {
+    "en": "What is your favourite drink or snack while working?",
+    "de": "Was ist dein Lieblingsgetränk oder -snack beim Arbeiten?",
+    "es": "¿Cuál es tu bebida o tentempié favorito mientras trabajas?",
+    "fr": "Quelle est ta boisson ou ton en-cas préféré quand tu travailles ?",
+    "it": "Qual è la tua bevanda o il tuo snack preferito mentre lavori?",
+    "pt": "Qual é a tua bebida ou snack preferido enquanto trabalhas?",
+    "pt_BR": "Qual é a sua bebida ou lanchinho favorito enquanto trabalha?"
+   }
+  },
+  {
+   "id": "remote_work-018",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you listen to music while you work? What kind?",
+    "de": "Hörst du beim Arbeiten Musik? Welche Art?",
+    "es": "¿Escuchas música mientras trabajas? ¿De qué tipo?",
+    "fr": "Écoutes-tu de la musique en travaillant ? Quel genre ?",
+    "it": "Ascolti musica mentre lavori? Di che tipo?",
+    "pt": "Ouves música enquanto trabalhas? De que tipo?",
+    "pt_BR": "Você ouve música enquanto trabalha? Que tipo?"
+   }
+  },
+  {
+   "id": "remote_work-019",
+   "lv": "any",
+   "i18n": {
+    "en": "What makes you feel productive at the end of a day?",
+    "de": "Wann hast du am Ende eines Tages das Gefühl, produktiv gewesen zu sein?",
+    "es": "¿Qué te hace sentir productivo al final del día?",
+    "fr": "Qu'est-ce qui te donne le sentiment d'avoir été productif en fin de journée ?",
+    "it": "Che cosa ti fa sentire produttivo alla fine della giornata?",
+    "pt": "O que te faz sentir produtivo no fim do dia?",
+    "pt_BR": "O que faz você se sentir produtivo no fim do dia?"
+   }
+  },
+  {
+   "id": "remote_work-020",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you like to start your working day?",
+    "de": "Wie startest du am liebsten in deinen Arbeitstag?",
+    "es": "¿Cómo te gusta empezar tu jornada de trabajo?",
+    "fr": "Comment aimes-tu commencer ta journée de travail ?",
+    "it": "Come ti piace iniziare la tua giornata lavorativa?",
+    "pt": "Como gostas de começar o teu dia de trabalho?",
+    "pt_BR": "Como você gosta de começar o seu dia de trabalho?"
+   }
+  },
+  {
+   "id": "remote_work-021",
+   "lv": "any",
+   "i18n": {
+    "en": "And how do you like to end it?",
+    "de": "Und wie beendest du ihn am liebsten?",
+    "es": "¿Y cómo te gusta terminarla?",
+    "fr": "Et comment aimes-tu la terminer ?",
+    "it": "E come ti piace concluderla?",
+    "pt": "E como gostas de o terminar?",
+    "pt_BR": "E como você gosta de terminar?"
+   }
+  },
+  {
+   "id": "remote_work-022",
+   "lv": "any",
+   "i18n": {
+    "en": "Have you ever worked with someone in a very different time zone?",
+    "de": "Hast du schon mal mit jemandem in einer ganz anderen Zeitzone gearbeitet?",
+    "es": "¿Has trabajado alguna vez con alguien en una zona horaria muy distinta?",
+    "fr": "As-tu déjà travaillé avec quelqu'un dans un fuseau horaire très différent ?",
+    "it": "Hai mai lavorato con qualcuno in un fuso orario molto diverso?",
+    "pt": "Já trabalhaste com alguém num fuso horário muito diferente?",
+    "pt_BR": "Você já trabalhou com alguém num fuso horário bem diferente?"
+   }
+  },
+  {
+   "id": "remote_work-023",
+   "lv": "any",
+   "i18n": {
+    "en": "What is the funniest thing that ever happened to you on a video call?",
+    "de": "Was ist das Lustigste, das dir je in einem Videocall passiert ist?",
+    "es": "¿Qué es lo más gracioso que te ha pasado en una videollamada?",
+    "fr": "Quelle est la chose la plus drôle qui te soit arrivée en appel vidéo ?",
+    "it": "Qual è la cosa più divertente che ti sia successa in una videochiamata?",
+    "pt": "Qual foi a coisa mais engraçada que já te aconteceu numa videochamada?",
+    "pt_BR": "Qual foi a coisa mais engraçada que já aconteceu com você numa videochamada?"
+   }
+  },
+  {
+   "id": "remote_work-024",
+   "lv": "any",
+   "i18n": {
+    "en": "What does flexibility at work mean to you?",
+    "de": "Was bedeutet Flexibilität bei der Arbeit für dich?",
+    "es": "¿Qué significa para ti la flexibilidad en el trabajo?",
+    "fr": "Que signifie pour toi la flexibilité au travail ?",
+    "it": "Che cosa significa per te la flessibilità sul lavoro?",
+    "pt": "O que significa para ti a flexibilidade no trabalho?",
+    "pt_BR": "O que flexibilidade no trabalho significa pra você?"
+   }
+  },
+  {
+   "id": "remote_work-025",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you stay in touch with colleagues or classmates?",
+    "de": "Wie bleibst du mit Kollegen oder Mitstudierenden in Kontakt?",
+    "es": "¿Cómo te mantienes en contacto con tus compañeros de trabajo o de estudios?",
+    "fr": "Comment restes-tu en contact avec tes collègues ou camarades ?",
+    "it": "Come resti in contatto con colleghi o compagni di studio?",
+    "pt": "Como te manténs em contacto com colegas de trabalho ou de estudo?",
+    "pt_BR": "Como você mantém contato com colegas de trabalho ou de estudo?"
+   }
+  },
+  {
+   "id": "remote_work-026",
+   "lv": "any",
+   "i18n": {
+    "en": "Which jobs do you think work best remotely?",
+    "de": "Welche Jobs funktionieren deiner Meinung nach am besten remote?",
+    "es": "¿Qué trabajos crees que funcionan mejor en remoto?",
+    "fr": "Quels métiers, selon toi, se font le mieux à distance ?",
+    "it": "Quali lavori secondo te funzionano meglio da remoto?",
+    "pt": "Que profissões achas que funcionam melhor à distância?",
+    "pt_BR": "Quais trabalhos você acha que funcionam melhor de forma remota?"
+   }
+  },
+  {
+   "id": "remote_work-027",
+   "lv": "any",
+   "i18n": {
+    "en": "What is one small habit that makes your day better?",
+    "de": "Welche kleine Gewohnheit macht deinen Tag besser?",
+    "es": "¿Qué pequeño hábito hace que tu día sea mejor?",
+    "fr": "Quelle petite habitude rend ta journée meilleure ?",
+    "it": "Qual è una piccola abitudine che migliora la tua giornata?",
+    "pt": "Que pequeno hábito torna o teu dia melhor?",
+    "pt_BR": "Qual pequeno hábito deixa o seu dia melhor?"
+   }
+  },
+  {
+   "id": "remote_work-028",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you like working alone or in a team more?",
+    "de": "Arbeitest du lieber allein oder im Team?",
+    "es": "¿Prefieres trabajar solo o en equipo?",
+    "fr": "Tu préfères travailler seul ou en équipe ?",
+    "it": "Preferisci lavorare da solo o in squadra?",
+    "pt": "Preferes trabalhar sozinho ou em equipa?",
+    "pt_BR": "Você prefere trabalhar sozinho ou em equipe?"
+   }
+  },
+  {
+   "id": "remote_work-029",
+   "lv": "any",
+   "i18n": {
+    "en": "What would make working from home more fun for you?",
+    "de": "Was würde das Arbeiten von zu Hause für dich lustiger machen?",
+    "es": "¿Qué haría más divertido para ti trabajar desde casa?",
+    "fr": "Qu'est-ce qui rendrait le télétravail plus sympa pour toi ?",
+    "it": "Che cosa renderebbe più divertente per te lavorare da casa?",
+    "pt": "O que tornaria mais divertido para ti trabalhar a partir de casa?",
+    "pt_BR": "O que deixaria mais divertido pra você trabalhar de casa?"
+   }
+  },
+  {
+   "id": "remote_work-030",
+   "lv": "any",
+   "i18n": {
+    "en": "How important is a quiet place for you when you work?",
+    "de": "Wie wichtig ist dir ein ruhiger Ort zum Arbeiten?",
+    "es": "¿Qué importancia tiene para ti un lugar tranquilo para trabajar?",
+    "fr": "À quel point un endroit calme est-il important pour toi quand tu travailles ?",
+    "it": "Quanto è importante per te un posto tranquillo quando lavori?",
+    "pt": "Que importância tem para ti um sítio sossegado para trabalhar?",
+    "pt_BR": "Quão importante é pra você um lugar tranquilo pra trabalhar?"
+   }
+  },
+  {
+   "id": "remote_work-031",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a skill you think every remote worker needs?",
+    "de": "Welche Fähigkeit braucht deiner Meinung nach jeder, der remote arbeitet?",
+    "es": "¿Qué habilidad crees que necesita toda persona que trabaja en remoto?",
+    "fr": "Quelle compétence est indispensable, selon toi, pour travailler à distance ?",
+    "it": "Qual è secondo te una capacità che serve a chiunque lavori da remoto?",
+    "pt": "Que competência achas que qualquer pessoa em trabalho remoto precisa de ter?",
+    "pt_BR": "Que habilidade você acha que toda pessoa que trabalha remoto precisa ter?"
+   }
+  },
+  {
+   "id": "remote_work-032",
+   "lv": "any",
+   "i18n": {
+    "en": "Have you ever worked from a café, library or coworking space?",
+    "de": "Hast du schon mal in einem Café, einer Bibliothek oder einem Coworking-Space gearbeitet?",
+    "es": "¿Has trabajado alguna vez desde una cafetería, una biblioteca o un coworking?",
+    "fr": "As-tu déjà travaillé dans un café, une bibliothèque ou un espace de coworking ?",
+    "it": "Hai mai lavorato da un bar, una biblioteca o uno spazio di coworking?",
+    "pt": "Já trabalhaste num café, numa biblioteca ou num espaço de coworking?",
+    "pt_BR": "Você já trabalhou de um café, biblioteca ou coworking?"
+   }
+  },
+  {
+   "id": "remote_work-033",
+   "lv": "any",
+   "i18n": {
+    "en": "What do you do to move your body during a long workday?",
+    "de": "Was tust du, um dich an einem langen Arbeitstag zu bewegen?",
+    "es": "¿Qué haces para moverte durante una jornada de trabajo larga?",
+    "fr": "Que fais-tu pour bouger pendant une longue journée de travail ?",
+    "it": "Che cosa fai per muoverti durante una lunga giornata di lavoro?",
+    "pt": "O que fazes para te mexer durante um dia de trabalho longo?",
+    "pt_BR": "O que você faz pra se movimentar durante um dia de trabalho longo?"
+   }
+  },
+  {
+   "id": "remote_work-034",
+   "lv": "any",
+   "i18n": {
+    "en": "What is your opinion on hybrid work, part home and part office?",
+    "de": "Was hältst du von hybrider Arbeit, also teils zu Hause, teils im Büro?",
+    "es": "¿Qué opinas del trabajo híbrido, parte en casa y parte en la oficina?",
+    "fr": "Que penses-tu du travail hybride, en partie chez toi et en partie au bureau ?",
+    "it": "Che ne pensi del lavoro ibrido, un po' a casa e un po' in ufficio?",
+    "pt": "O que achas do trabalho híbrido, parte em casa e parte no escritório?",
+    "pt_BR": "O que você acha do trabalho híbrido, parte em casa e parte no escritório?"
+   }
+  },
+  {
+   "id": "remote_work-035",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you keep track of your tasks?",
+    "de": "Wie behältst du den Überblick über deine Aufgaben?",
+    "es": "¿Cómo llevas el control de tus tareas?",
+    "fr": "Comment fais-tu pour suivre tes tâches ?",
+    "it": "Come tieni traccia dei tuoi compiti?",
+    "pt": "Como acompanhas as tuas tarefas?",
+    "pt_BR": "Como você acompanha as suas tarefas?"
+   }
+  },
+  {
+   "id": "remote_work-036",
+   "lv": "any",
+   "i18n": {
+    "en": "What would your dream remote job be?",
+    "de": "Was wäre dein Traumjob, den man remote machen kann?",
+    "es": "¿Cuál sería tu trabajo remoto soñado?",
+    "fr": "Quel serait le travail à distance de tes rêves ?",
+    "it": "Quale sarebbe il tuo lavoro da remoto dei sogni?",
+    "pt": "Qual seria o teu trabalho remoto de sonho?",
+    "pt_BR": "Qual seria o trabalho remoto dos seus sonhos?"
+   }
+  },
+  {
+   "id": "remote_work-037",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you get dressed for work even when you stay at home?",
+    "de": "Ziehst du dich für die Arbeit um, auch wenn du zu Hause bleibst?",
+    "es": "¿Te vistes para trabajar aunque te quedes en casa?",
+    "fr": "T'habilles-tu pour travailler même quand tu restes chez toi ?",
+    "it": "Ti vesti per lavorare anche quando resti a casa?",
+    "pt": "Vestes-te para trabalhar mesmo quando ficas em casa?",
+    "pt_BR": "Você se arruma pra trabalhar mesmo quando fica em casa?"
+   }
+  },
+  {
+   "id": "remote_work-038",
+   "lv": "any",
+   "i18n": {
+    "en": "What do you like to do right after your workday ends?",
+    "de": "Was machst du am liebsten direkt nach Feierabend?",
+    "es": "¿Qué te gusta hacer justo después de terminar tu jornada?",
+    "fr": "Qu'aimes-tu faire juste après ta journée de travail ?",
+    "it": "Che cosa ti piace fare subito dopo la fine della giornata di lavoro?",
+    "pt": "O que gostas de fazer logo a seguir ao fim do dia de trabalho?",
+    "pt_BR": "O que você gosta de fazer logo depois do expediente?"
+   }
+  },
+  {
+   "id": "remote_work-039",
+   "lv": "any",
+   "i18n": {
+    "en": "How has technology changed the way you work or study?",
+    "de": "Wie hat Technologie die Art verändert, wie du arbeitest oder lernst?",
+    "es": "¿Cómo ha cambiado la tecnología tu forma de trabajar o estudiar?",
+    "fr": "Comment la technologie a-t-elle changé ta façon de travailler ou d'étudier ?",
+    "it": "Come ha cambiato la tecnologia il tuo modo di lavorare o studiare?",
+    "pt": "Como mudou a tecnologia a tua forma de trabalhar ou estudar?",
+    "pt_BR": "Como a tecnologia mudou o seu jeito de trabalhar ou estudar?"
+   }
+  },
+  {
+   "id": "remote_work-040",
+   "lv": "any",
+   "i18n": {
+    "en": "What would you tell a friend who is starting to work remotely?",
+    "de": "Was würdest du einem Freund raten, der gerade anfängt, remote zu arbeiten?",
+    "es": "¿Qué le dirías a un amigo que empieza a trabajar en remoto?",
+    "fr": "Que dirais-tu à un ami qui commence à travailler à distance ?",
+    "it": "Che cosa diresti a un amico che inizia a lavorare da remoto?",
+    "pt": "O que dirias a um amigo que está a começar a trabalhar remotamente?",
+    "pt_BR": "O que você diria a um amigo que está começando a trabalhar remoto?"
+   }
+  },
+  {
+   "id": "remote_work-041",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Where at home do you work or study right now?",
+    "de": "Wo zu Hause arbeitest oder lernst du gerade?",
+    "es": "¿En qué parte de casa trabajas o estudias ahora mismo?",
+    "fr": "Où travailles-tu ou étudies-tu chez toi en ce moment ?",
+    "it": "In quale angolo di casa lavori o studi in questo periodo?",
+    "pt": "Em que parte da casa trabalhas ou estudas neste momento?",
+    "pt_BR": "Em que lugar da casa você trabalha ou estuda hoje?"
+   }
+  },
+  {
+   "id": "remote_work-042",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Is your chair comfortable enough for a long day?",
+    "de": "Ist dein Stuhl bequem genug für einen langen Tag?",
+    "es": "¿Tu silla es lo bastante cómoda para un día largo?",
+    "fr": "Ta chaise est-elle assez confortable pour une longue journée ?",
+    "it": "La tua sedia è abbastanza comoda per una giornata lunga?",
+    "pt": "A tua cadeira é confortável o suficiente para um dia longo?",
+    "pt_BR": "Sua cadeira é confortável o bastante pra um dia longo?"
+   }
+  },
+  {
+   "id": "remote_work-043",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is one thing you would change about your workspace?",
+    "de": "Was würdest du an deinem Arbeitsplatz gern ändern?",
+    "es": "¿Qué cosa cambiarías de tu espacio de trabajo?",
+    "fr": "Quelle chose changerais-tu dans ton espace de travail ?",
+    "it": "Che cosa cambieresti della tua postazione di lavoro?",
+    "pt": "Que coisa mudarias no teu espaço de trabalho?",
+    "pt_BR": "O que você mudaria no seu espaço de trabalho?"
+   }
+  },
+  {
+   "id": "remote_work-044",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you have a routine to start work in the morning?",
+    "de": "Hast du eine Routine, um morgens mit der Arbeit zu starten?",
+    "es": "¿Tienes una rutina para empezar a trabajar por la mañana?",
+    "fr": "As-tu une routine pour commencer le travail le matin ?",
+    "it": "Hai una routine per iniziare a lavorare la mattina?",
+    "pt": "Tens alguma rotina para começar a trabalhar de manhã?",
+    "pt_BR": "Você tem uma rotina pra começar a trabalhar de manhã?"
+   }
+  },
+  {
+   "id": "remote_work-045",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you feel about turning your camera on in calls?",
+    "de": "Wie findest du es, in Calls die Kamera einzuschalten?",
+    "es": "¿Qué te parece encender la cámara en las llamadas?",
+    "fr": "Que penses-tu d'allumer ta caméra pendant les appels ?",
+    "it": "Come ti senti ad accendere la telecamera durante le chiamate?",
+    "pt": "O que achas de ligar a câmara nas chamadas?",
+    "pt_BR": "O que você acha de ligar a câmera nas chamadas?"
+   }
+  },
+  {
+   "id": "remote_work-046",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which video call app do you use most often?",
+    "de": "Welche Videocall-App nutzt du am häufigsten?",
+    "es": "¿Qué app de videollamadas usas más a menudo?",
+    "fr": "Quelle appli d'appel vidéo utilises-tu le plus souvent ?",
+    "it": "Quale app per videochiamate usi più spesso?",
+    "pt": "Que app de videochamadas usas com mais frequência?",
+    "pt_BR": "Qual app de videochamada você usa com mais frequência?"
+   }
+  },
+  {
+   "id": "remote_work-047",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How many messages do you think you send on a typical day?",
+    "de": "Wie viele Nachrichten schickst du an einem normalen Tag wohl ungefähr?",
+    "es": "¿Cuántos mensajes crees que envías en un día normal?",
+    "fr": "Combien de messages penses-tu envoyer dans une journée normale ?",
+    "it": "Quanti messaggi pensi di mandare in una giornata normale?",
+    "pt": "Quantas mensagens achas que envias num dia normal?",
+    "pt_BR": "Quantas mensagens você acha que manda num dia normal?"
+   }
+  },
+  {
+   "id": "remote_work-048",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you use emojis in work messages? Which ones?",
+    "de": "Benutzt du Emojis in beruflichen Nachrichten? Welche?",
+    "es": "¿Usas emojis en los mensajes de trabajo? ¿Cuáles?",
+    "fr": "Utilises-tu des emojis dans tes messages professionnels ? Lesquels ?",
+    "it": "Usi le emoji nei messaggi di lavoro? Quali?",
+    "pt": "Usas emojis nas mensagens de trabalho? Quais?",
+    "pt_BR": "Você usa emojis em mensagens de trabalho? Quais?"
+   }
+  },
+  {
+   "id": "remote_work-049",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you write a to-do list? On paper or in an app?",
+    "de": "Schreibst du To-do-Listen? Auf Papier oder in einer App?",
+    "es": "¿Escribes listas de tareas? ¿En papel o en una app?",
+    "fr": "Fais-tu des listes de tâches ? Sur papier ou dans une appli ?",
+    "it": "Scrivi liste di cose da fare? Su carta o in un'app?",
+    "pt": "Fazes listas de tarefas? Em papel ou numa app?",
+    "pt_BR": "Você faz lista de tarefas? No papel ou num app?"
+   }
+  },
+  {
+   "id": "remote_work-050",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever tried the Pomodoro technique?",
+    "de": "Hast du schon mal die Pomodoro-Technik ausprobiert?",
+    "es": "¿Has probado alguna vez la técnica Pomodoro?",
+    "fr": "As-tu déjà essayé la technique Pomodoro ?",
+    "it": "Hai mai provato la tecnica del pomodoro?",
+    "pt": "Já experimentaste a técnica Pomodoro?",
+    "pt_BR": "Você já experimentou a técnica Pomodoro?"
+   }
+  },
+  {
+   "id": "remote_work-051",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What do you do when your phone keeps distracting you?",
+    "de": "Was machst du, wenn dich dein Handy ständig ablenkt?",
+    "es": "¿Qué haces cuando el móvil no deja de distraerte?",
+    "fr": "Que fais-tu quand ton téléphone n'arrête pas de te distraire ?",
+    "it": "Che cosa fai quando il telefono continua a distrarti?",
+    "pt": "O que fazes quando o telemóvel não para de te distrair?",
+    "pt_BR": "O que você faz quando o celular não para de te distrair?"
+   }
+  },
+  {
+   "id": "remote_work-052",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which time zone are you in, and does it ever cause confusion?",
+    "de": "In welcher Zeitzone bist du, und sorgt das manchmal für Verwirrung?",
+    "es": "¿En qué zona horaria estás? ¿Te causa confusiones a veces?",
+    "fr": "Dans quel fuseau horaire es-tu, et est-ce que ça crée parfois de la confusion ?",
+    "it": "In che fuso orario sei? Ti capita che crei confusione?",
+    "pt": "Em que fuso horário estás? Às vezes causa confusão?",
+    "pt_BR": "Em que fuso horário você está? Isso às vezes gera confusão?"
+   }
+  },
+  {
+   "id": "remote_work-053",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How often do you stand up and stretch during the day?",
+    "de": "Wie oft stehst du tagsüber auf und streckst dich?",
+    "es": "¿Cada cuánto te levantas y estiras durante el día?",
+    "fr": "À quelle fréquence te lèves-tu pour t'étirer dans la journée ?",
+    "it": "Ogni quanto ti alzi e ti sgranchisci durante la giornata?",
+    "pt": "Com que frequência te levantas e te espreguiças durante o dia?",
+    "pt_BR": "Com que frequência você levanta e se alonga durante o dia?"
+   }
+  },
+  {
+   "id": "remote_work-054",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you eat lunch at your desk or take a real break?",
+    "de": "Isst du am Schreibtisch zu Mittag oder machst du eine richtige Pause?",
+    "es": "¿Comes en tu escritorio o haces una pausa de verdad?",
+    "fr": "Déjeunes-tu à ton bureau ou fais-tu une vraie pause ?",
+    "it": "Pranzi alla scrivania o fai una vera pausa?",
+    "pt": "Almoças à secretária ou fazes uma pausa a sério?",
+    "pt_BR": "Você almoça na mesa de trabalho ou faz uma pausa de verdade?"
+   }
+  },
+  {
+   "id": "remote_work-055",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you let people know you need quiet time?",
+    "de": "Wie zeigst du anderen, dass du gerade Ruhe brauchst?",
+    "es": "¿Cómo les haces saber a los demás que necesitas tranquilidad?",
+    "fr": "Comment fais-tu savoir aux autres que tu as besoin de calme ?",
+    "it": "Come fai capire agli altri che hai bisogno di tranquillità?",
+    "pt": "Como fazes saber aos outros que precisas de sossego?",
+    "pt_BR": "Como você avisa as pessoas que precisa de silêncio?"
+   }
+  },
+  {
+   "id": "remote_work-056",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What would you put in a short message introducing yourself to a new team?",
+    "de": "Was würdest du in eine kurze Vorstellung für ein neues Team schreiben?",
+    "es": "¿Qué pondrías en un mensaje breve para presentarte a un equipo nuevo?",
+    "fr": "Que mettrais-tu dans un court message pour te présenter à une nouvelle équipe ?",
+    "it": "Che cosa scriveresti in un breve messaggio per presentarti a un nuovo team?",
+    "pt": "O que escreverias numa mensagem curta para te apresentares a uma equipa nova?",
+    "pt_BR": "O que você escreveria numa mensagem curta pra se apresentar a um time novo?"
+   }
+  },
+  {
+   "id": "remote_work-057",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How quickly do you think people should reply to work messages?",
+    "de": "Wie schnell sollte man deiner Meinung nach auf berufliche Nachrichten antworten?",
+    "es": "¿Con qué rapidez crees que hay que responder a los mensajes de trabajo?",
+    "fr": "À ton avis, en combien de temps faut-il répondre aux messages professionnels ?",
+    "it": "Secondo te, in quanto tempo si dovrebbe rispondere ai messaggi di lavoro?",
+    "pt": "Na tua opinião, com que rapidez se deve responder a mensagens de trabalho?",
+    "pt_BR": "Na sua opinião, com que rapidez a gente deve responder mensagens de trabalho?"
+   }
+  },
+  {
+   "id": "remote_work-058",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you use strong passwords and two-factor login?",
+    "de": "Nutzt du starke Passwörter und eine Zwei-Faktor-Anmeldung?",
+    "es": "¿Usas contraseñas seguras y verificación en dos pasos?",
+    "fr": "Utilises-tu des mots de passe solides et la double authentification ?",
+    "it": "Usi password robuste e l'accesso a due fattori?",
+    "pt": "Usas palavras-passe fortes e autenticação de dois fatores?",
+    "pt_BR": "Você usa senhas fortes e verificação em duas etapas?"
+   }
+  },
+  {
+   "id": "remote_work-059",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How is your internet connection where you work?",
+    "de": "Wie ist deine Internetverbindung dort, wo du arbeitest?",
+    "es": "¿Qué tal es tu conexión a internet donde trabajas?",
+    "fr": "Comment est ta connexion internet là où tu travailles ?",
+    "it": "Com'è la tua connessione internet dove lavori?",
+    "pt": "Como é a tua ligação à internet onde trabalhas?",
+    "pt_BR": "Como é a sua internet no lugar onde você trabalha?"
+   }
+  },
+  {
+   "id": "remote_work-060",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What do you do to feel less alone when you work by yourself?",
+    "de": "Was tust du, um dich weniger allein zu fühlen, wenn du allein arbeitest?",
+    "es": "¿Qué haces para sentirte menos solo cuando trabajas por tu cuenta?",
+    "fr": "Que fais-tu pour te sentir moins seul quand tu travailles seul ?",
+    "it": "Che cosa fai per sentirti meno solo quando lavori da solo?",
+    "pt": "O que fazes para te sentires menos sozinho quando trabalhas sozinho?",
+    "pt_BR": "O que você faz pra se sentir menos sozinho quando trabalha só?"
+   }
+  },
+  {
+   "id": "remote_work-061",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you have a plant, photo or object on your desk that makes you smile?",
+    "de": "Hast du eine Pflanze, ein Foto oder einen Gegenstand auf dem Schreibtisch, der dich lächeln lässt?",
+    "es": "¿Tienes en tu mesa una planta, foto u objeto que te haga sonreír?",
+    "fr": "As-tu sur ton bureau une plante, une photo ou un objet qui te fait sourire ?",
+    "it": "Hai sulla scrivania una pianta, una foto o un oggetto che ti fa sorridere?",
+    "pt": "Tens na secretária uma planta, foto ou objeto que te faça sorrir?",
+    "pt_BR": "Você tem na mesa uma planta, foto ou objeto que te faz sorrir?"
+   }
+  },
+  {
+   "id": "remote_work-062",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What time do you usually finish work or study?",
+    "de": "Wann hörst du normalerweise mit Arbeiten oder Lernen auf?",
+    "es": "¿A qué hora sueles terminar de trabajar o estudiar?",
+    "fr": "À quelle heure finis-tu généralement de travailler ou d'étudier ?",
+    "it": "A che ora finisci di solito di lavorare o studiare?",
+    "pt": "A que horas costumas acabar de trabalhar ou estudar?",
+    "pt_BR": "Que horas você costuma terminar de trabalhar ou estudar?"
+   }
+  },
+  {
+   "id": "remote_work-063",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you plan tomorrow before you finish today?",
+    "de": "Planst du den nächsten Tag, bevor du Feierabend machst?",
+    "es": "¿Planificas el día siguiente antes de terminar el de hoy?",
+    "fr": "Planifies-tu le lendemain avant de finir ta journée ?",
+    "it": "Pianifichi il giorno dopo prima di finire quello di oggi?",
+    "pt": "Planeias o dia seguinte antes de acabares o de hoje?",
+    "pt_BR": "Você planeja o dia seguinte antes de terminar o de hoje?"
+   }
+  },
+  {
+   "id": "remote_work-064",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever had a funny tech problem during an online meeting?",
+    "de": "Hattest du schon mal ein lustiges Technikproblem in einem Online-Meeting?",
+    "es": "¿Has tenido alguna vez un problema técnico gracioso en una reunión online?",
+    "fr": "As-tu déjà eu un souci technique amusant pendant une réunion en ligne ?",
+    "it": "Ti è mai capitato un problema tecnico buffo durante una riunione online?",
+    "pt": "Já tiveste algum problema técnico engraçado numa reunião online?",
+    "pt_BR": "Você já teve algum problema técnico engraçado numa reunião online?"
+   }
+  },
+  {
+   "id": "remote_work-065",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you get fresh air and daylight on a busy day?",
+    "de": "Wie bekommst du an einem vollen Tag frische Luft und Tageslicht?",
+    "es": "¿Cómo consigues aire fresco y luz natural en un día ajetreado?",
+    "fr": "Comment prends-tu l'air et la lumière du jour lors d'une journée chargée ?",
+    "it": "Come riesci a prendere aria e luce naturale in una giornata piena?",
+    "pt": "Como apanhas ar fresco e luz do dia num dia cheio?",
+    "pt_BR": "Como você pega ar fresco e luz do dia num dia corrido?"
+   }
+  },
+  {
+   "id": "remote_work-066",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "When do you prefer a quick call instead of a long message thread?",
+    "de": "Wann ziehst du einen kurzen Anruf einem langen Nachrichtenverlauf vor?",
+    "es": "¿Cuándo prefieres una llamada rápida en lugar de un hilo largo de mensajes?",
+    "fr": "Quand préfères-tu un appel rapide plutôt qu'un long fil de messages ?",
+    "it": "Quando preferisci una chiamata veloce a una lunga catena di messaggi?",
+    "pt": "Quando preferes uma chamada rápida a uma longa troca de mensagens?",
+    "pt_BR": "Quando você prefere uma ligação rápida a uma longa troca de mensagens?"
+   }
+  },
+  {
+   "id": "remote_work-067",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What makes an online meeting really useful for you?",
+    "de": "Was macht ein Online-Meeting für dich wirklich nützlich?",
+    "es": "¿Qué hace que una reunión online te resulte realmente útil?",
+    "fr": "Qu'est-ce qui rend une réunion en ligne vraiment utile pour toi ?",
+    "it": "Che cosa rende davvero utile una riunione online per te?",
+    "pt": "O que torna uma reunião online realmente útil para ti?",
+    "pt_BR": "O que torna uma reunião online realmente útil pra você?"
+   }
+  },
+  {
+   "id": "remote_work-068",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you share progress so others know what you are working on?",
+    "de": "Wie zeigst du deinen Fortschritt, damit andere wissen, woran du arbeitest?",
+    "es": "¿Cómo compartes tus avances para que otros sepan en qué estás trabajando?",
+    "fr": "Comment partages-tu ton avancement pour que les autres sachent sur quoi tu travailles ?",
+    "it": "Come condividi i tuoi progressi perché gli altri sappiano a cosa stai lavorando?",
+    "pt": "Como partilhas o teu progresso para os outros saberem em que estás a trabalhar?",
+    "pt_BR": "Como você compartilha seu progresso pra que os outros saibam no que está trabalhando?"
+   }
+  },
+  {
+   "id": "remote_work-069",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Have you ever had a misunderstanding because of a short text message?",
+    "de": "Gab es bei dir schon mal ein Missverständnis wegen einer kurzen Textnachricht?",
+    "es": "¿Has tenido algún malentendido por culpa de un mensaje corto?",
+    "fr": "As-tu déjà vécu un malentendu à cause d'un message trop court ?",
+    "it": "Ti è mai capitato un malinteso per colpa di un messaggio breve?",
+    "pt": "Já tiveste algum mal-entendido por causa de uma mensagem curta?",
+    "pt_BR": "Você já teve algum mal-entendido por causa de uma mensagem curta?"
+   }
+  },
+  {
+   "id": "remote_work-070",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you organise shared files so everyone can find them?",
+    "de": "Wie organisierst du gemeinsame Dateien, damit alle sie finden?",
+    "es": "¿Cómo organizas los archivos compartidos para que todos los encuentren?",
+    "fr": "Comment organises-tu les fichiers partagés pour que tout le monde les trouve ?",
+    "it": "Come organizzi i file condivisi perché tutti li trovino?",
+    "pt": "Como organizas os ficheiros partilhados para que todos os encontrem?",
+    "pt_BR": "Como você organiza os arquivos compartilhados pra que todo mundo encontre?"
+   }
+  },
+  {
+   "id": "remote_work-071",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What do you think about meeting-free days?",
+    "de": "Was hältst du von meetingfreien Tagen?",
+    "es": "¿Qué opinas de los días sin reuniones?",
+    "fr": "Que penses-tu des journées sans réunion ?",
+    "it": "Che ne pensi delle giornate senza riunioni?",
+    "pt": "O que achas dos dias sem reuniões?",
+    "pt_BR": "O que você acha de dias sem reuniões?"
+   }
+  },
+  {
+   "id": "remote_work-072",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How would you explain async work to a friend?",
+    "de": "Wie würdest du einem Freund asynchrones Arbeiten erklären?",
+    "es": "¿Cómo le explicarías a un amigo qué es el trabajo asíncrono?",
+    "fr": "Comment expliquerais-tu le travail asynchrone à un ami ?",
+    "it": "Come spiegheresti il lavoro asincrono a un amico?",
+    "pt": "Como explicarias o trabalho assíncrono a um amigo?",
+    "pt_BR": "Como você explicaria o trabalho assíncrono pra um amigo?"
+   }
+  },
+  {
+   "id": "remote_work-073",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which project board or task tool do you like best, and why?",
+    "de": "Welches Projektboard oder Aufgaben-Tool magst du am liebsten, und warum?",
+    "es": "¿Qué tablero de proyectos o gestor de tareas te gusta más y por qué?",
+    "fr": "Quel tableau de projet ou outil de tâches préfères-tu, et pourquoi ?",
+    "it": "Quale bacheca di progetto o strumento per le attività preferisci, e perché?",
+    "pt": "Que quadro de projetos ou ferramenta de tarefas preferes, e porquê?",
+    "pt_BR": "Qual quadro de projetos ou ferramenta de tarefas você prefere, e por quê?"
+   }
+  },
+  {
+   "id": "remote_work-074",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you make sure quieter people get heard in online meetings?",
+    "de": "Wie sorgst du dafür, dass auch ruhigere Leute in Online-Meetings gehört werden?",
+    "es": "¿Cómo consigues que las personas más calladas se escuchen en las reuniones online?",
+    "fr": "Comment t'assures-tu que les personnes plus discrètes soient entendues en réunion en ligne ?",
+    "it": "Come fai in modo che anche le persone più silenziose vengano ascoltate nelle riunioni online?",
+    "pt": "Como garantes que as pessoas mais caladas são ouvidas nas reuniões online?",
+    "pt_BR": "Como você garante que as pessoas mais caladas sejam ouvidas nas reuniões online?"
+   }
+  },
+  {
+   "id": "remote_work-075",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What was the most helpful piece of documentation you ever read at work?",
+    "de": "Welche Dokumentation hat dir bei der Arbeit am meisten geholfen?",
+    "es": "¿Cuál ha sido la documentación más útil que has leído en el trabajo?",
+    "fr": "Quelle documentation t'a le plus aidé au travail ?",
+    "it": "Qual è stata la documentazione più utile che hai letto al lavoro?",
+    "pt": "Qual foi a documentação mais útil que já leste no trabalho?",
+    "pt_BR": "Qual foi a documentação mais útil que você já leu no trabalho?"
+   }
+  },
+  {
+   "id": "remote_work-076",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you work well with people from other cultures online?",
+    "de": "Wie arbeitest du online gut mit Menschen aus anderen Kulturen zusammen?",
+    "es": "¿Cómo trabajas bien en línea con personas de otras culturas?",
+    "fr": "Comment travailles-tu bien en ligne avec des personnes d'autres cultures ?",
+    "it": "Come lavori bene online con persone di altre culture?",
+    "pt": "Como trabalhas bem online com pessoas de outras culturas?",
+    "pt_BR": "Como você trabalha bem online com pessoas de outras culturas?"
+   }
+  },
+  {
+   "id": "remote_work-077",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What would make office days worth it for you in a hybrid job?",
+    "de": "Was würde Bürotage in einem hybriden Job für dich lohnenswert machen?",
+    "es": "¿Qué haría que los días de oficina valieran la pena en un trabajo híbrido?",
+    "fr": "Qu'est-ce qui rendrait les jours au bureau intéressants pour toi dans un poste hybride ?",
+    "it": "Che cosa renderebbe utili per te i giorni in ufficio in un lavoro ibrido?",
+    "pt": "O que faria valer a pena os dias no escritório num trabalho híbrido?",
+    "pt_BR": "O que faria os dias no escritório valerem a pena num trabalho híbrido?"
+   }
+  },
+  {
+   "id": "remote_work-078",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What gear would you pack to work from anywhere for a week?",
+    "de": "Welche Ausrüstung würdest du einpacken, um eine Woche lang von überall zu arbeiten?",
+    "es": "¿Qué equipo meterías en la maleta para trabajar una semana desde cualquier sitio?",
+    "fr": "Quel matériel emporterais-tu pour travailler une semaine depuis n'importe où ?",
+    "it": "Che attrezzatura porteresti per lavorare una settimana da qualsiasi posto?",
+    "pt": "Que equipamento levarias para trabalhar uma semana a partir de qualquer lado?",
+    "pt_BR": "Que equipamentos você levaria pra trabalhar uma semana de qualquer lugar?"
+   }
+  },
+  {
+   "id": "remote_work-079",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Do you do a weekly review of your goals? How does it go?",
+    "de": "Machst du einen Wochenrückblick auf deine Ziele? Wie läuft er ab?",
+    "es": "¿Haces una revisión semanal de tus objetivos? ¿Cómo la haces?",
+    "fr": "Fais-tu un bilan hebdomadaire de tes objectifs ? Comment ça se passe ?",
+    "it": "Fai una revisione settimanale dei tuoi obiettivi? Come la fai?",
+    "pt": "Fazes uma revisão semanal dos teus objetivos? Como é que a fazes?",
+    "pt_BR": "Você faz uma revisão semanal dos seus objetivos? Como é?"
+   }
+  },
+  {
+   "id": "remote_work-080",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What questions would you ask a company about its remote culture?",
+    "de": "Welche Fragen würdest du einer Firma zu ihrer Remote-Kultur stellen?",
+    "es": "¿Qué preguntas le harías a una empresa sobre su cultura de trabajo remoto?",
+    "fr": "Quelles questions poserais-tu à une entreprise sur sa culture du télétravail ?",
+    "it": "Che domande faresti a un'azienda sulla sua cultura del lavoro da remoto?",
+    "pt": "Que perguntas farias a uma empresa sobre a sua cultura de trabalho remoto?",
+    "pt_BR": "Que perguntas você faria a uma empresa sobre a cultura de trabalho remoto dela?"
+   }
+  },
+  {
+   "id": "remote_work-081",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How would you prepare for a job interview on video?",
+    "de": "Wie würdest du dich auf ein Vorstellungsgespräch per Video vorbereiten?",
+    "es": "¿Cómo te prepararías para una entrevista de trabajo por videollamada?",
+    "fr": "Comment te préparerais-tu à un entretien d'embauche en visio ?",
+    "it": "Come ti prepareresti per un colloquio di lavoro in video?",
+    "pt": "Como te prepararias para uma entrevista de emprego por vídeo?",
+    "pt_BR": "Como você se prepararia pra uma entrevista de emprego por vídeo?"
+   }
+  },
+  {
+   "id": "remote_work-082",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you build friendships with colleagues you have never met in person?",
+    "de": "Wie baust du Freundschaften mit Kollegen auf, die du nie persönlich getroffen hast?",
+    "es": "¿Cómo haces amistad con compañeros a los que nunca has visto en persona?",
+    "fr": "Comment te lies-tu d'amitié avec des collègues que tu n'as jamais rencontrés ?",
+    "it": "Come costruisci amicizie con colleghi che non hai mai incontrato di persona?",
+    "pt": "Como crias amizades com colegas que nunca conheceste pessoalmente?",
+    "pt_BR": "Como você faz amizade com colegas que nunca conheceu pessoalmente?"
+   }
+  },
+  {
+   "id": "remote_work-083",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you like to receive feedback when you work remotely?",
+    "de": "Wie bekommst du am liebsten Feedback, wenn du remote arbeitest?",
+    "es": "¿Cómo prefieres recibir feedback cuando trabajas en remoto?",
+    "fr": "Comment préfères-tu recevoir du feedback quand tu travailles à distance ?",
+    "it": "Come preferisci ricevere feedback quando lavori da remoto?",
+    "pt": "Como preferes receber feedback quando trabalhas remotamente?",
+    "pt_BR": "Como você prefere receber feedback quando trabalha remoto?"
+   }
+  },
+  {
+   "id": "remote_work-084",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What tips would you give someone in their first week of a remote job?",
+    "de": "Welche Tipps würdest du jemandem in seiner ersten Woche in einem Remote-Job geben?",
+    "es": "¿Qué consejos darías a alguien en su primera semana en un trabajo remoto?",
+    "fr": "Quels conseils donnerais-tu à quelqu'un pendant sa première semaine en télétravail ?",
+    "it": "Che consigli daresti a qualcuno nella sua prima settimana di lavoro da remoto?",
+    "pt": "Que dicas darias a alguém na primeira semana de um trabalho remoto?",
+    "pt_BR": "Que dicas você daria pra alguém na primeira semana de um trabalho remoto?"
+   }
+  },
+  {
+   "id": "remote_work-085",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you handle a teammate who replies very late to messages?",
+    "de": "Wie gehst du mit einem Teammitglied um, das sehr spät auf Nachrichten antwortet?",
+    "es": "¿Cómo gestionas a un compañero que responde muy tarde a los mensajes?",
+    "fr": "Comment réagis-tu face à un coéquipier qui répond très tard aux messages ?",
+    "it": "Come ti comporti con un collega che risponde molto tardi ai messaggi?",
+    "pt": "Como lidas com um colega que responde às mensagens muito tarde?",
+    "pt_BR": "Como você lida com um colega que demora muito pra responder mensagens?"
+   }
+  },
+  {
+   "id": "remote_work-086",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you measure success in a team that works fully remotely?",
+    "de": "Wie würdest du Erfolg in einem Team messen, das komplett remote arbeitet?",
+    "es": "¿Cómo medirías el éxito en un equipo que trabaja totalmente en remoto?",
+    "fr": "Comment mesurerais-tu la réussite d'une équipe entièrement à distance ?",
+    "it": "Come misureresti il successo in un team che lavora completamente da remoto?",
+    "pt": "Como medirias o sucesso numa equipa que trabalha totalmente à distância?",
+    "pt_BR": "Como você mediria o sucesso num time que trabalha totalmente remoto?"
+   }
+  },
+  {
+   "id": "remote_work-087",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which team rituals would you create to keep a remote team connected?",
+    "de": "Welche Teamrituale würdest du einführen, damit ein Remote-Team verbunden bleibt?",
+    "es": "¿Qué rituales crearías para que un equipo remoto siga unido?",
+    "fr": "Quels rituels d'équipe créerais-tu pour garder une équipe à distance soudée ?",
+    "it": "Quali rituali di team creeresti per tenere unito un team da remoto?",
+    "pt": "Que rituais de equipa criarias para manter uma equipa remota unida?",
+    "pt_BR": "Que rituais você criaria pra manter um time remoto conectado?"
+   }
+  },
+  {
+   "id": "remote_work-088",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you decide which meetings a team could replace with written updates?",
+    "de": "Wie würdest du entscheiden, welche Meetings ein Team durch schriftliche Updates ersetzen kann?",
+    "es": "¿Cómo decidirías qué reuniones puede sustituir un equipo por actualizaciones escritas?",
+    "fr": "Comment déciderais-tu quelles réunions une équipe peut remplacer par des points écrits ?",
+    "it": "Come decideresti quali riunioni un team può sostituire con aggiornamenti scritti?",
+    "pt": "Como decidirias que reuniões uma equipa pode substituir por atualizações escritas?",
+    "pt_BR": "Como você decidiria quais reuniões um time pode trocar por atualizações escritas?"
+   }
+  },
+  {
+   "id": "remote_work-089",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What signs would tell you that a remote colleague is overloaded?",
+    "de": "Woran würdest du merken, dass ein Kollege im Homeoffice überlastet ist?",
+    "es": "¿Qué señales te indicarían que un compañero en remoto está sobrecargado?",
+    "fr": "Quels signes t'indiqueraient qu'un collègue à distance est surchargé ?",
+    "it": "Quali segnali ti farebbero capire che un collega da remoto è sovraccarico?",
+    "pt": "Que sinais te indicariam que um colega remoto está sobrecarregado?",
+    "pt_BR": "Que sinais mostrariam pra você que um colega remoto está sobrecarregado?"
+   }
+  },
+  {
+   "id": "remote_work-090",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you make a hybrid meeting fair for people at home and in the room?",
+    "de": "Wie würdest du ein hybrides Meeting für Leute zu Hause und im Raum fair gestalten?",
+    "es": "¿Cómo harías que una reunión híbrida fuera justa para quienes están en casa y en la sala?",
+    "fr": "Comment rendrais-tu une réunion hybride équitable pour les personnes chez elles et dans la salle ?",
+    "it": "Come renderesti equa una riunione ibrida per chi è a casa e chi è in sala?",
+    "pt": "Como tornarias uma reunião híbrida justa para quem está em casa e na sala?",
+    "pt_BR": "Como você deixaria uma reunião híbrida justa pra quem está em casa e na sala?"
+   }
+  },
+  {
+   "id": "remote_work-091",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What would you include in a communication guide for a distributed team?",
+    "de": "Was würdest du in einen Kommunikationsleitfaden für ein verteiltes Team aufnehmen?",
+    "es": "¿Qué incluirías en una guía de comunicación para un equipo distribuido?",
+    "fr": "Que mettrais-tu dans un guide de communication pour une équipe distribuée ?",
+    "it": "Che cosa includeresti in una guida alla comunicazione per un team distribuito?",
+    "pt": "O que incluirias num guia de comunicação para uma equipa distribuída?",
+    "pt_BR": "O que você incluiria num guia de comunicação pra um time distribuído?"
+   }
+  },
+  {
+   "id": "remote_work-092",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you design a great onboarding for a new remote colleague?",
+    "de": "Wie würdest du ein tolles Onboarding für einen neuen Remote-Kollegen gestalten?",
+    "es": "¿Cómo diseñarías una gran incorporación para un nuevo compañero en remoto?",
+    "fr": "Comment concevrais-tu un super accueil pour un nouveau collègue à distance ?",
+    "it": "Come progetteresti un ottimo onboarding per un nuovo collega da remoto?",
+    "pt": "Como desenharias uma ótima integração para um novo colega remoto?",
+    "pt_BR": "Como você montaria um ótimo onboarding pra um novo colega remoto?"
+   }
+  },
+  {
+   "id": "remote_work-093",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which tasks in your work would you love to automate?",
+    "de": "Welche Aufgaben in deiner Arbeit würdest du am liebsten automatisieren?",
+    "es": "¿Qué tareas de tu trabajo te encantaría automatizar?",
+    "fr": "Quelles tâches de ton travail aimerais-tu automatiser ?",
+    "it": "Quali compiti del tuo lavoro ti piacerebbe automatizzare?",
+    "pt": "Que tarefas do teu trabalho adorarias automatizar?",
+    "pt_BR": "Quais tarefas do seu trabalho você adoraria automatizar?"
+   }
+  },
+  {
+   "id": "remote_work-094",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you think AI assistants will change remote teamwork?",
+    "de": "Wie werden KI-Assistenten deiner Meinung nach die Remote-Teamarbeit verändern?",
+    "es": "¿Cómo crees que los asistentes de IA cambiarán el trabajo en equipo en remoto?",
+    "fr": "Comment penses-tu que les assistants IA vont changer le travail d'équipe à distance ?",
+    "it": "Come pensi che gli assistenti di IA cambieranno il lavoro di squadra da remoto?",
+    "pt": "Como achas que os assistentes de IA vão mudar o trabalho em equipa à distância?",
+    "pt_BR": "Como você acha que os assistentes de IA vão mudar o trabalho em equipe remoto?"
+   }
+  },
+  {
+   "id": "remote_work-095",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What would the agenda of your perfect team retreat look like?",
+    "de": "Wie würde das Programm deines perfekten Team-Retreats aussehen?",
+    "es": "¿Cómo sería la agenda de tu retiro de equipo perfecto?",
+    "fr": "À quoi ressemblerait le programme de ton séminaire d'équipe idéal ?",
+    "it": "Come sarebbe il programma del tuo ritiro di team perfetto?",
+    "pt": "Como seria a agenda do teu retiro de equipa perfeito?",
+    "pt_BR": "Como seria a programação do seu retiro de equipe perfeito?"
+   }
+  },
+  {
+   "id": "remote_work-096",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you keep trust high when a team almost never meets in person?",
+    "de": "Wie würdest du Vertrauen hochhalten, wenn sich ein Team fast nie persönlich trifft?",
+    "es": "¿Cómo mantendrías alta la confianza en un equipo que casi nunca se ve en persona?",
+    "fr": "Comment maintiendrais-tu la confiance dans une équipe qui ne se voit presque jamais ?",
+    "it": "Come manterresti alta la fiducia in un team che non si incontra quasi mai di persona?",
+    "pt": "Como manterias a confiança alta numa equipa que quase nunca se encontra pessoalmente?",
+    "pt_BR": "Como você manteria a confiança alta num time que quase nunca se encontra pessoalmente?"
+   }
+  },
+  {
+   "id": "remote_work-097",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you convince a traditional company to try more flexible work?",
+    "de": "Wie würdest du ein traditionelles Unternehmen überzeugen, flexibleres Arbeiten auszuprobieren?",
+    "es": "¿Cómo convencerías a una empresa tradicional de probar un trabajo más flexible?",
+    "fr": "Comment convaincrais-tu une entreprise traditionnelle d'essayer un travail plus flexible ?",
+    "it": "Come convinceresti un'azienda tradizionale a provare un lavoro più flessibile?",
+    "pt": "Como convencerias uma empresa tradicional a experimentar formas de trabalho mais flexíveis?",
+    "pt_BR": "Como você convenceria uma empresa tradicional a testar um trabalho mais flexível?"
+   }
+  },
+  {
+   "id": "remote_work-098",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What would your personal remote work manifesto say?",
+    "de": "Was würde in deinem persönlichen Remote-Work-Manifest stehen?",
+    "es": "¿Qué diría tu manifiesto personal sobre el trabajo remoto?",
+    "fr": "Que dirait ton manifeste personnel du télétravail ?",
+    "it": "Che cosa direbbe il tuo manifesto personale sul lavoro da remoto?",
+    "pt": "O que diria o teu manifesto pessoal sobre trabalho remoto?",
+    "pt_BR": "O que diria o seu manifesto pessoal sobre trabalho remoto?"
+   }
+  },
+  {
+   "id": "remote_work-099",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you see the future of work in ten years?",
+    "de": "Wie siehst du die Zukunft der Arbeit in zehn Jahren?",
+    "es": "¿Cómo ves el futuro del trabajo dentro de diez años?",
+    "fr": "Comment vois-tu l'avenir du travail dans dix ans ?",
+    "it": "Come vedi il futuro del lavoro tra dieci anni?",
+    "pt": "Como vês o futuro do trabalho daqui a dez anos?",
+    "pt_BR": "Como você vê o futuro do trabalho daqui a dez anos?"
+   }
+  },
+  {
+   "id": "remote_work-100",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you coach someone who struggles to switch off after remote work?",
+    "de": "Wie würdest du jemanden coachen, dem es schwerfällt, nach der Remote-Arbeit abzuschalten?",
+    "es": "¿Cómo ayudarías a alguien a quien le cuesta desconectar después de trabajar en remoto?",
+    "fr": "Comment accompagnerais-tu quelqu'un qui a du mal à décrocher après le télétravail ?",
+    "it": "Come aiuteresti qualcuno che fa fatica a staccare dopo il lavoro da remoto?",
+    "pt": "Como ajudarias alguém que tem dificuldade em desligar depois do trabalho remoto?",
+    "pt_BR": "Como você ajudaria alguém que tem dificuldade de desligar depois do trabalho remoto?"
+   }
+  }
+ ]
+}

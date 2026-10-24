@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 161,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Environment basics: recycling",
+     "g": "Talk about small green habits in everyday life.",
+     "p": [
+      "Key words: recycle, reuse, reduce, waste, plastic, glass, energy, rubbish bin.",
+      "Habits: I always recycle glass. I try to reuse bags. I turn off the lights to save energy.",
+      "Frequency helps: I usually take a reusable bottle. I rarely buy bottled water."
+     ],
+     "q": "What small green habits do you have at home, and which one would you like to start?",
+     "c": "Write five sentences about your green habits with always, usually, sometimes and never."
+    },
+    "de": {
+     "t": "Umwelt-Grundlagen: Recycling",
+     "g": "Du sprichst über kleine grüne Gewohnheiten im Alltag.",
+     "p": [
+      "Schlüsselwörter: recycle, reuse, reduce, waste, plastic, glass, energy, rubbish bin.",
+      "Gewohnheiten: I always recycle glass. I try to reuse bags. I turn off the lights to save energy.",
+      "Häufigkeit hilft: I usually take a reusable bottle. I rarely buy bottled water."
+     ],
+     "q": "Welche kleinen grünen Gewohnheiten hast du zu Hause, und welche möchtest du neu anfangen?",
+     "c": "Schreib fünf Sätze über deine grünen Gewohnheiten mit always, usually, sometimes und never."
+    },
+    "es": {
+     "t": "Medio ambiente básico: reciclar",
+     "g": "Habla de pequeños hábitos verdes del día a día.",
+     "p": [
+      "Palabras clave: recycle, reuse, reduce, waste, plastic, glass, energy, rubbish bin.",
+      "Hábitos: I always recycle glass. I try to reuse bags. I turn off the lights to save energy.",
+      "La frecuencia ayuda: I usually take a reusable bottle. I rarely buy bottled water."
+     ],
+     "q": "¿Qué pequeños hábitos verdes tienes en casa y cuál te gustaría empezar?",
+     "c": "Escribe cinco frases sobre tus hábitos verdes con always, usually, sometimes y never."
+    },
+    "fr": {
+     "t": "Environnement : le recyclage",
+     "g": "Parler des petits gestes écologiques du quotidien.",
+     "p": [
+      "Mots clés : recycle, reuse, reduce, waste, plastic, glass, energy, rubbish bin.",
+      "Habitudes : I always recycle glass. I try to reuse bags. I turn off the lights to save energy.",
+      "La fréquence aide : I usually take a reusable bottle. I rarely buy bottled water."
+     ],
+     "q": "Quels petits gestes écolos as-tu à la maison, et lequel aimerais-tu commencer ?",
+     "c": "Écris cinq phrases sur tes gestes écolos avec always, usually, sometimes et never."
+    },
+    "it": {
+     "t": "Ambiente di base: riciclare",
+     "g": "Parla di piccole abitudini green nella vita di tutti i giorni.",
+     "p": [
+      "Parole chiave: recycle, reuse, reduce, waste, plastic, glass, energy, rubbish bin.",
+      "Abitudini: I always recycle glass. I try to reuse bags. I turn off the lights to save energy.",
+      "La frequenza aiuta: I usually take a reusable bottle. I rarely buy bottled water."
+     ],
+     "q": "Quali piccole abitudini green hai a casa, e quale vorresti iniziare?",
+     "c": "Scrivi cinque frasi sulle tue abitudini green con always, usually, sometimes e never."
+    },
+    "pt": {
+     "t": "Ambiente básico: reciclar",
+     "g": "Fala de pequenos hábitos verdes do dia a dia.",
+     "p": [
+      "Palavras-chave: recycle, reuse, reduce, waste, plastic, glass, energy, rubbish bin.",
+      "Hábitos: I always recycle glass. I try to reuse bags. I turn off the lights to save energy.",
+      "A frequência ajuda: I usually take a reusable bottle. I rarely buy bottled water."
+     ],
+     "q": "Que pequenos hábitos verdes tens em casa, e qual gostavas de começar?",
+     "c": "Escreve cinco frases sobre os teus hábitos verdes com always, usually, sometimes e never."
+    },
+    "pt_BR": {
+     "t": "Meio ambiente básico: reciclagem",
+     "g": "Fale de pequenos hábitos sustentáveis do dia a dia.",
+     "p": [
+      "Palavras-chave: recycle, reuse, reduce, waste, plastic, glass, energy, rubbish bin.",
+      "Hábitos: I always recycle glass. I try to reuse bags. I turn off the lights to save energy.",
+      "A frequência ajuda: I usually take a reusable bottle. I rarely buy bottled water."
+     ],
+     "q": "Que pequenos hábitos sustentáveis você tem em casa, e qual gostaria de começar?",
+     "c": "Escreva cinco frases sobre seus hábitos sustentáveis com always, usually, sometimes e never."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "recycle",
+      "ex": "We recycle paper, glass and plastic at home."
+     },
+     {
+      "w": "reuse",
+      "ex": "I reuse old jars to store pasta and rice."
+     },
+     {
+      "w": "waste",
+      "ex": "Let's try not to waste food."
+     },
+     {
+      "w": "plastic",
+      "ex": "I avoid plastic bags when I go shopping."
+     },
+     {
+      "w": "save energy",
+      "ex": "Turn off the lights to save energy."
+     },
+     {
+      "w": "reusable",
+      "ex": "I always carry a reusable water bottle."
+     }
+    ],
+    "gram": "Use the present simple with frequency adverbs for habits: I always recycle. Adverbs go before the main verb but after be."
+   }
+  },
+  {
+   "d": 162,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "City life vs country life",
+     "g": "Compare life in the city and in the countryside.",
+     "p": [
+      "Topics: noise, space, transport, nature, jobs, things to do, cost of living.",
+      "Compare: The city is noisier than the country. The country isn't as busy as the city.",
+      "Pros and cons: One advantage of the city is... The main disadvantage is..."
+     ],
+     "q": "Would you rather live in a big city or in the countryside? Why?",
+     "c": "Write four sentences comparing city and country life, using one comparative and one as... as."
+    },
+    "de": {
+     "t": "Stadtleben vs Landleben",
+     "g": "Du vergleichst das Leben in der Stadt und auf dem Land.",
+     "p": [
+      "Themen: noise, space, transport, nature, jobs, things to do, cost of living.",
+      "Vergleichen: The city is noisier than the country. The country isn't as busy as the city.",
+      "Vor- und Nachteile: One advantage of the city is... The main disadvantage is..."
+     ],
+     "q": "Würdest du lieber in einer großen Stadt oder auf dem Land leben? Warum?",
+     "c": "Schreib vier Sätze, die Stadt und Land vergleichen, mit einem Komparativ und einem as... as."
+    },
+    "es": {
+     "t": "Vida en la ciudad vs vida en el campo",
+     "g": "Compara la vida en la ciudad y en el campo.",
+     "p": [
+      "Temas: noise, space, transport, nature, jobs, things to do, cost of living.",
+      "Comparar: The city is noisier than the country. The country isn't as busy as the city.",
+      "Ventajas y desventajas: One advantage of the city is... The main disadvantage is..."
+     ],
+     "q": "¿Preferirías vivir en una gran ciudad o en el campo? ¿Por qué?",
+     "c": "Escribe cuatro frases comparando la ciudad y el campo, con un comparativo y un as... as."
+    },
+    "fr": {
+     "t": "Vie en ville vs vie à la campagne",
+     "g": "Comparer la vie en ville et à la campagne.",
+     "p": [
+      "Thèmes : noise, space, transport, nature, jobs, things to do, cost of living.",
+      "Comparer : The city is noisier than the country. The country isn't as busy as the city.",
+      "Avantages et inconvénients : One advantage of the city is... The main disadvantage is..."
+     ],
+     "q": "Préférerais-tu vivre dans une grande ville ou à la campagne ? Pourquoi ?",
+     "c": "Écris quatre phrases qui comparent ville et campagne, avec un comparatif et un as... as."
+    },
+    "it": {
+     "t": "Vita in città vs vita in campagna",
+     "g": "Confronta la vita in città e in campagna.",
+     "p": [
+      "Temi: noise, space, transport, nature, jobs, things to do, cost of living.",
+      "Confrontare: The city is noisier than the country. The country isn't as busy as the city.",
+      "Pro e contro: One advantage of the city is... The main disadvantage is..."
+     ],
+     "q": "Preferiresti vivere in una grande città o in campagna? Perché?",
+     "c": "Scrivi quattro frasi che confrontano città e campagna, con un comparativo e un as... as."
+    },
+    "pt": {
+     "t": "Vida na cidade vs vida no campo",
+     "g": "Compara a vida na cidade e no campo.",
+     "p": [
+      "Temas: noise, space, transport, nature, jobs, things to do, cost of living.",
+      "Comparar: The city is noisier than the country. The country isn't as busy as the city.",
+      "Vantagens e desvantagens: One advantage of the city is... The main disadvantage is..."
+     ],
+     "q": "Preferias viver numa grande cidade ou no campo? Porquê?",
+     "c": "Escreve quatro frases a comparar a cidade e o campo, com um comparativo e um as... as."
+    },
+    "pt_BR": {
+     "t": "Vida na cidade vs vida no campo",
+     "g": "Compare a vida na cidade e no campo.",
+     "p": [
+      "Temas: noise, space, transport, nature, jobs, things to do, cost of living.",
+      "Comparar: The city is noisier than the country. The country isn't as busy as the city.",
+      "Vantagens e desvantagens: One advantage of the city is... The main disadvantage is..."
+     ],
+     "q": "Você preferiria morar em uma cidade grande ou no interior? Por quê?",
+     "c": "Escreva quatro frases comparando cidade e campo, com um comparativo e um as... as."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "countryside",
+      "ex": "We spent the weekend in the countryside."
+     },
+     {
+      "w": "noisy",
+      "ex": "My street is noisy at night."
+     },
+     {
+      "w": "peaceful",
+      "ex": "The village is very peaceful and green."
+     },
+     {
+      "w": "public transport",
+      "ex": "Public transport in the city is fast and frequent."
+     },
+     {
+      "w": "advantage",
+      "ex": "One advantage of the country is the fresh air."
+     },
+     {
+      "w": "disadvantage",
+      "ex": "The main disadvantage of the city is the traffic."
+     }
+    ],
+    "gram": "Compare with -er than (quieter than), more ... than (more expensive than) and not as ... as (not as busy as)."
+   }
+  },
+  {
+   "d": 163,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Housing: renting a flat",
+     "g": "Understand the key words for renting a place to live.",
+     "p": [
+      "People and money: landlord, tenant, rent, deposit, bills, contract.",
+      "Describing a flat: furnished or unfurnished, a two-bedroom flat, bills included, close to the metro.",
+      "Questions: How much is the rent? Are bills included? When is it available? Can I see it?"
+     ],
+     "q": "What's most important for you in a home: location, space, price or light?",
+     "c": "Write a short ad for your ideal flat with the number of rooms, location and whether bills are included."
+    },
+    "de": {
+     "t": "Wohnen: eine Wohnung mieten",
+     "g": "Du verstehst die wichtigsten Wörter rund ums Mieten.",
+     "p": [
+      "Personen und Geld: landlord, tenant, rent, deposit, bills, contract.",
+      "Wohnung beschreiben: furnished oder unfurnished, a two-bedroom flat, bills included, close to the metro.",
+      "Fragen: How much is the rent? Are bills included? When is it available? Can I see it?"
+     ],
+     "q": "Was ist dir bei einem Zuhause am wichtigsten: Lage, Platz, Preis oder Licht?",
+     "c": "Schreib eine kurze Anzeige für deine Traumwohnung: Zimmer, Lage und ob Nebenkosten inklusive sind."
+    },
+    "es": {
+     "t": "Vivienda: alquilar un piso",
+     "g": "Entiende las palabras clave para alquilar un sitio donde vivir.",
+     "p": [
+      "Personas y dinero: landlord, tenant, rent, deposit, bills, contract.",
+      "Describir un piso: furnished o unfurnished, a two-bedroom flat, bills included, close to the metro.",
+      "Preguntas: How much is the rent? Are bills included? When is it available? Can I see it?"
+     ],
+     "q": "¿Qué es lo más importante para ti en una casa: la zona, el espacio, el precio o la luz?",
+     "c": "Escribe un anuncio corto de tu piso ideal: habitaciones, zona y si los gastos están incluidos."
+    },
+    "fr": {
+     "t": "Logement : louer un appartement",
+     "g": "Comprendre les mots clés pour louer un logement.",
+     "p": [
+      "Personnes et argent : landlord, tenant, rent, deposit, bills, contract.",
+      "Décrire un appart : furnished ou unfurnished, a two-bedroom flat, bills included, close to the metro.",
+      "Questions : How much is the rent? Are bills included? When is it available? Can I see it?"
+     ],
+     "q": "Qu'est-ce qui compte le plus pour toi dans un logement : le quartier, l'espace, le prix ou la lumière ?",
+     "c": "Écris une courte annonce pour ton appart idéal : pièces, quartier et charges comprises ou non."
+    },
+    "it": {
+     "t": "Casa: affittare un appartamento",
+     "g": "Capisci le parole chiave per affittare un posto dove vivere.",
+     "p": [
+      "Persone e soldi: landlord, tenant, rent, deposit, bills, contract.",
+      "Descrivere un appartamento: furnished o unfurnished, a two-bedroom flat, bills included, close to the metro.",
+      "Domande: How much is the rent? Are bills included? When is it available? Can I see it?"
+     ],
+     "q": "Cosa conta di più per te in una casa: la zona, lo spazio, il prezzo o la luce?",
+     "c": "Scrivi un breve annuncio per il tuo appartamento ideale: stanze, zona e se le spese sono incluse."
+    },
+    "pt": {
+     "t": "Habitação: arrendar um apartamento",
+     "g": "Percebe as palavras-chave para arrendar um sítio para viver.",
+     "p": [
+      "Pessoas e dinheiro: landlord, tenant, rent, deposit, bills, contract.",
+      "Descrever a casa: furnished ou unfurnished, a two-bedroom flat, bills included, close to the metro.",
+      "Perguntas: How much is the rent? Are bills included? When is it available? Can I see it?"
+     ],
+     "q": "O que é mais importante para ti numa casa: a localização, o espaço, o preço ou a luz?",
+     "c": "Escreve um anúncio curto para a tua casa ideal: quartos, localização e se as despesas estão incluídas."
+    },
+    "pt_BR": {
+     "t": "Moradia: alugando um apartamento",
+     "g": "Entenda as palavras-chave para alugar um lugar para morar.",
+     "p": [
+      "Pessoas e dinheiro: landlord, tenant, rent, deposit, bills, contract.",
+      "Descrever o imóvel: furnished ou unfurnished, a two-bedroom flat, bills included, close to the metro.",
+      "Perguntas: How much is the rent? Are bills included? When is it available? Can I see it?"
+     ],
+     "q": "O que é mais importante para você em um lar: localização, espaço, preço ou luz?",
+     "c": "Escreva um anúncio curto do seu apartamento ideal: quartos, localização e se as contas estão incluídas."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "landlord",
+      "ex": "Our landlord is friendly and fixes things quickly."
+     },
+     {
+      "w": "rent",
+      "ex": "The rent is due on the first of the month."
+     },
+     {
+      "w": "deposit",
+      "ex": "We paid a deposit of one month's rent."
+     },
+     {
+      "w": "furnished",
+      "ex": "The flat is furnished, so we don't need a sofa."
+     },
+     {
+      "w": "bills included",
+      "ex": "Is the rent with bills included?"
+     },
+     {
+      "w": "tenant",
+      "ex": "The new tenants are moving in next week."
+     }
+    ],
+    "gram": "Rent is a noun and a verb: The rent is high. We rent a flat. Furnished = with furniture. Bills = electricity, water, gas, internet."
+   }
+  },
+  {
+   "d": 164,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Neighbours and community",
+     "g": "Chat with neighbours and talk about your local community.",
+     "p": [
+      "Small talk: Hi, I'm Lena from number 12. Lovely day, isn't it? How long have you lived here?",
+      "Favours: Could you water my plants while I'm away? Would you mind taking in a parcel for me?",
+      "Community: There's a nice market on Saturdays. We have a local park and a community garden."
+     ],
+     "q": "What do you like most about your neighbourhood, and do you know your neighbours?",
+     "c": "Write a short friendly note to a neighbour asking a small favour and offering to help back."
+    },
+    "de": {
+     "t": "Nachbarn und Gemeinschaft",
+     "g": "Du plauderst mit Nachbarn und sprichst über dein Viertel.",
+     "p": [
+      "Smalltalk: Hi, I'm Lena from number 12. Lovely day, isn't it? How long have you lived here?",
+      "Gefallen: Could you water my plants while I'm away? Would you mind taking in a parcel for me?",
+      "Gemeinschaft: There's a nice market on Saturdays. We have a local park and a community garden."
+     ],
+     "q": "Was gefällt dir an deinem Viertel am meisten, und kennst du deine Nachbarn?",
+     "c": "Schreib eine freundliche Notiz an Nachbarn: Bitte um einen kleinen Gefallen und biete Hilfe an."
+    },
+    "es": {
+     "t": "Vecinos y comunidad",
+     "g": "Charla con tus vecinos y habla de tu barrio.",
+     "p": [
+      "Charla: Hi, I'm Lena from number 12. Lovely day, isn't it? How long have you lived here?",
+      "Favores: Could you water my plants while I'm away? Would you mind taking in a parcel for me?",
+      "Comunidad: There's a nice market on Saturdays. We have a local park and a community garden."
+     ],
+     "q": "¿Qué es lo que más te gusta de tu barrio, y conoces a tus vecinos?",
+     "c": "Escribe una nota amable a un vecino pidiéndole un pequeño favor y ofreciendo tu ayuda."
+    },
+    "fr": {
+     "t": "Voisins et vie de quartier",
+     "g": "Discuter avec tes voisins et parler de ton quartier.",
+     "p": [
+      "Small talk : Hi, I'm Lena from number 12. Lovely day, isn't it? How long have you lived here?",
+      "Services : Could you water my plants while I'm away? Would you mind taking in a parcel for me?",
+      "Quartier : There's a nice market on Saturdays. We have a local park and a community garden."
+     ],
+     "q": "Qu'est-ce que tu aimes le plus dans ton quartier, et connais-tu tes voisins ?",
+     "c": "Écris un petit mot sympa à un voisin pour demander un service et proposer ton aide en retour."
+    },
+    "it": {
+     "t": "Vicini e comunità",
+     "g": "Chiacchiera con i vicini e parla del tuo quartiere.",
+     "p": [
+      "Due chiacchiere: Hi, I'm Lena from number 12. Lovely day, isn't it? How long have you lived here?",
+      "Favori: Could you water my plants while I'm away? Would you mind taking in a parcel for me?",
+      "Comunità: There's a nice market on Saturdays. We have a local park and a community garden."
+     ],
+     "q": "Cosa ti piace di più del tuo quartiere, e conosci i tuoi vicini?",
+     "c": "Scrivi un biglietto gentile a un vicino per chiedere un piccolo favore e offrire aiuto in cambio."
+    },
+    "pt": {
+     "t": "Vizinhos e comunidade",
+     "g": "Conversa com os vizinhos e fala do teu bairro.",
+     "p": [
+      "Conversa: Hi, I'm Lena from number 12. Lovely day, isn't it? How long have you lived here?",
+      "Favores: Could you water my plants while I'm away? Would you mind taking in a parcel for me?",
+      "Comunidade: There's a nice market on Saturdays. We have a local park and a community garden."
+     ],
+     "q": "O que mais gostas no teu bairro, e conheces os teus vizinhos?",
+     "c": "Escreve um bilhete simpático a um vizinho a pedir um pequeno favor e a oferecer ajuda."
+    },
+    "pt_BR": {
+     "t": "Vizinhos e comunidade",
+     "g": "Converse com os vizinhos e fale do seu bairro.",
+     "p": [
+      "Papo: Hi, I'm Lena from number 12. Lovely day, isn't it? How long have you lived here?",
+      "Favores: Could you water my plants while I'm away? Would you mind taking in a parcel for me?",
+      "Comunidade: There's a nice market on Saturdays. We have a local park and a community garden."
+     ],
+     "q": "Do que você mais gosta no seu bairro, e você conhece seus vizinhos?",
+     "c": "Escreva um bilhete simpático para um vizinho pedindo um pequeno favor e oferecendo ajuda."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "neighbour",
+      "ex": "Our neighbour brought us a cake when we moved in."
+     },
+     {
+      "w": "neighbourhood",
+      "ex": "It's a quiet neighbourhood with lots of trees."
+     },
+     {
+      "w": "do someone a favour",
+      "ex": "Could you do me a favour?"
+     },
+     {
+      "w": "take in a parcel",
+      "ex": "Would you mind taking in a parcel for me?"
+     },
+     {
+      "w": "local",
+      "ex": "We buy fruit at the local market."
+     },
+     {
+      "w": "community",
+      "ex": "There's a strong sense of community here."
+     }
+    ],
+    "gram": "Ask favours with Could you + verb or Would you mind + -ing. Offer help with Let me know if you need anything."
+   }
+  },
+  {
+   "d": 165,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Sports: rules and fans",
+     "g": "Talk about the sports you play, watch and follow.",
+     "p": [
+      "Results: win, lose, draw, score a goal, beat a team. We won 2-1. It was a draw.",
+      "People and places: team, player, coach, referee, fans, match, stadium, court, pitch.",
+      "Verbs: play football or tennis, go swimming or cycling, do yoga or karate."
+     ],
+     "q": "Which sport do you enjoy watching or playing, and which team do you support?",
+     "c": "Describe a match you remember: the teams, the score, an exciting moment and the result."
+    },
+    "de": {
+     "t": "Sport: Regeln und Fans",
+     "g": "Du sprichst über Sport, den du machst, schaust und verfolgst.",
+     "p": [
+      "Ergebnisse: win, lose, draw, score a goal, beat a team. We won 2-1. It was a draw.",
+      "Personen und Orte: team, player, coach, referee, fans, match, stadium, court, pitch.",
+      "Verben: play football oder tennis, go swimming oder cycling, do yoga oder karate."
+     ],
+     "q": "Welchen Sport schaust oder machst du gern, und für welches Team bist du?",
+     "c": "Beschreib ein Spiel, an das du dich erinnerst: Teams, Spielstand, ein spannender Moment, Ergebnis."
+    },
+    "es": {
+     "t": "Deportes: reglas y aficionados",
+     "g": "Habla de los deportes que practicas, ves y sigues.",
+     "p": [
+      "Resultados: win, lose, draw, score a goal, beat a team. We won 2-1. It was a draw.",
+      "Personas y lugares: team, player, coach, referee, fans, match, stadium, court, pitch.",
+      "Verbos: play football o tennis, go swimming o cycling, do yoga o karate."
+     ],
+     "q": "¿Qué deporte te gusta ver o practicar, y de qué equipo eres?",
+     "c": "Describe un partido que recuerdes: los equipos, el marcador, un momento emocionante y el resultado."
+    },
+    "fr": {
+     "t": "Le sport : règles et supporters",
+     "g": "Parler des sports que tu pratiques, regardes et suis.",
+     "p": [
+      "Résultats : win, lose, draw, score a goal, beat a team. We won 2-1. It was a draw.",
+      "Personnes et lieux : team, player, coach, referee, fans, match, stadium, court, pitch.",
+      "Verbes : play football ou tennis, go swimming ou cycling, do yoga ou karate."
+     ],
+     "q": "Quel sport aimes-tu regarder ou pratiquer, et quelle équipe soutiens-tu ?",
+     "c": "Décris un match dont tu te souviens : les équipes, le score, un moment fort et le résultat."
+    },
+    "it": {
+     "t": "Sport: regole e tifosi",
+     "g": "Parla degli sport che pratichi, guardi e segui.",
+     "p": [
+      "Risultati: win, lose, draw, score a goal, beat a team. We won 2-1. It was a draw.",
+      "Persone e luoghi: team, player, coach, referee, fans, match, stadium, court, pitch.",
+      "Verbi: play football o tennis, go swimming o cycling, do yoga o karate."
+     ],
+     "q": "Quale sport ti piace guardare o praticare, e per quale squadra fai il tifo?",
+     "c": "Descrivi una partita che ricordi: le squadre, il punteggio, un momento emozionante e il risultato."
+    },
+    "pt": {
+     "t": "Desporto: regras e adeptos",
+     "g": "Fala dos desportos que praticas, vês e acompanhas.",
+     "p": [
+      "Resultados: win, lose, draw, score a goal, beat a team. We won 2-1. It was a draw.",
+      "Pessoas e lugares: team, player, coach, referee, fans, match, stadium, court, pitch.",
+      "Verbos: play football ou tennis, go swimming ou cycling, do yoga ou karate."
+     ],
+     "q": "Que desporto gostas de ver ou praticar, e de que equipa és adepto?",
+     "c": "Descreve um jogo de que te lembras: as equipas, o resultado, um momento emocionante e quem ganhou."
+    },
+    "pt_BR": {
+     "t": "Esportes: regras e torcedores",
+     "g": "Fale dos esportes que você pratica, assiste e acompanha.",
+     "p": [
+      "Resultados: win, lose, draw, score a goal, beat a team. We won 2-1. It was a draw.",
+      "Pessoas e lugares: team, player, coach, referee, fans, match, stadium, court, pitch.",
+      "Verbos: play football ou tennis, go swimming ou cycling, do yoga ou karate."
+     ],
+     "q": "Que esporte você gosta de assistir ou praticar, e para qual time você torce?",
+     "c": "Descreva um jogo de que você se lembra: os times, o placar, um momento emocionante e o resultado."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "score",
+      "ex": "She scored two goals in the second half."
+     },
+     {
+      "w": "win",
+      "ex": "Our team won the match 3-0."
+     },
+     {
+      "w": "lose",
+      "ex": "We lost, but we played really well."
+     },
+     {
+      "w": "draw",
+      "ex": "The game ended in a draw, 1-1."
+     },
+     {
+      "w": "referee",
+      "ex": "The referee gave a yellow card."
+     },
+     {
+      "w": "support a team",
+      "ex": "Which team do you support?"
+     }
+    ],
+    "gram": "Play + ball games (play tennis), go + -ing sports (go running), do + other activities (do judo). Win a match, beat a team."
+   }
+  },
+  {
+   "d": 166,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Films and series",
+     "g": "Talk about what you watch and recommend films and series.",
+     "p": [
+      "Genres: comedy, drama, thriller, documentary, animation, science fiction, romantic comedy.",
+      "Series words: episode, season, binge-watch, plot, ending, actor, character.",
+      "Opinions: It's really funny. The plot is a bit slow. I'd recommend it. It's worth watching."
+     ],
+     "q": "What's the best film or series you've watched recently, and why would you recommend it?",
+     "c": "Write a mini review of a film or series: the genre, what it's about, your opinion and a star rating."
+    },
+    "de": {
+     "t": "Filme und Serien",
+     "g": "Du sprichst darüber, was du schaust, und empfiehlst Filme und Serien.",
+     "p": [
+      "Genres: comedy, drama, thriller, documentary, animation, science fiction, romantic comedy.",
+      "Serienwörter: episode, season, binge-watch, plot, ending, actor, character.",
+      "Meinungen: It's really funny. The plot is a bit slow. I'd recommend it. It's worth watching."
+     ],
+     "q": "Was ist der beste Film oder die beste Serie, die du zuletzt gesehen hast, und warum empfiehlst du sie?",
+     "c": "Schreib eine Mini-Kritik zu einem Film oder einer Serie: Genre, Inhalt, Meinung und Sterne."
+    },
+    "es": {
+     "t": "Películas y series",
+     "g": "Habla de lo que ves y recomienda películas y series.",
+     "p": [
+      "Géneros: comedy, drama, thriller, documentary, animation, science fiction, romantic comedy.",
+      "Palabras de series: episode, season, binge-watch, plot, ending, actor, character.",
+      "Opiniones: It's really funny. The plot is a bit slow. I'd recommend it. It's worth watching."
+     ],
+     "q": "¿Cuál es la mejor película o serie que has visto últimamente y por qué la recomendarías?",
+     "c": "Escribe una minirreseña de una película o serie: género, de qué trata, tu opinión y estrellas."
+    },
+    "fr": {
+     "t": "Films et séries",
+     "g": "Parler de ce que tu regardes et recommander films et séries.",
+     "p": [
+      "Genres : comedy, drama, thriller, documentary, animation, science fiction, romantic comedy.",
+      "Mots des séries : episode, season, binge-watch, plot, ending, actor, character.",
+      "Avis : It's really funny. The plot is a bit slow. I'd recommend it. It's worth watching."
+     ],
+     "q": "Quel est le meilleur film ou la meilleure série que tu as vu récemment, et pourquoi le conseilles-tu ?",
+     "c": "Écris une mini-critique d'un film ou d'une série : genre, histoire, ton avis et une note en étoiles."
+    },
+    "it": {
+     "t": "Film e serie TV",
+     "g": "Parla di cosa guardi e consiglia film e serie.",
+     "p": [
+      "Generi: comedy, drama, thriller, documentary, animation, science fiction, romantic comedy.",
+      "Parole delle serie: episode, season, binge-watch, plot, ending, actor, character.",
+      "Opinioni: It's really funny. The plot is a bit slow. I'd recommend it. It's worth watching."
+     ],
+     "q": "Qual è il miglior film o la miglior serie che hai visto di recente, e perché la consiglieresti?",
+     "c": "Scrivi una mini recensione di un film o serie: genere, trama, la tua opinione e le stelle."
+    },
+    "pt": {
+     "t": "Filmes e séries",
+     "g": "Fala do que vês e recomenda filmes e séries.",
+     "p": [
+      "Géneros: comedy, drama, thriller, documentary, animation, science fiction, romantic comedy.",
+      "Palavras de séries: episode, season, binge-watch, plot, ending, actor, character.",
+      "Opiniões: It's really funny. The plot is a bit slow. I'd recommend it. It's worth watching."
+     ],
+     "q": "Qual é o melhor filme ou série que viste recentemente, e porque o recomendavas?",
+     "c": "Escreve uma mini crítica de um filme ou série: género, história, a tua opinião e estrelas."
+    },
+    "pt_BR": {
+     "t": "Filmes e séries",
+     "g": "Fale do que você assiste e recomende filmes e séries.",
+     "p": [
+      "Gêneros: comedy, drama, thriller, documentary, animation, science fiction, romantic comedy.",
+      "Palavras de séries: episode, season, binge-watch, plot, ending, actor, character.",
+      "Opiniões: It's really funny. The plot is a bit slow. I'd recommend it. It's worth watching."
+     ],
+     "q": "Qual é o melhor filme ou série que você viu recentemente, e por que recomendaria?",
+     "c": "Escreva uma minirresenha de um filme ou série: gênero, história, sua opinião e estrelas."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "comedy",
+      "ex": "I need a good comedy to make me laugh tonight."
+     },
+     {
+      "w": "thriller",
+      "ex": "That thriller kept me on the edge of my seat."
+     },
+     {
+      "w": "episode",
+      "ex": "I watched three episodes last night."
+     },
+     {
+      "w": "season",
+      "ex": "The new season starts next month."
+     },
+     {
+      "w": "plot",
+      "ex": "The plot is clever and full of surprises."
+     },
+     {
+      "w": "worth watching",
+      "ex": "The documentary is definitely worth watching."
+     }
+    ],
+    "gram": "Recommend with I'd recommend it or It's worth + -ing (worth watching). The plot = the story. A season is a set of episodes."
+   }
+  },
+  {
+   "d": 167,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Music and concerts",
+     "g": "Share the music you love and talk about live music.",
+     "p": [
+      "People and things: band, singer, songwriter, lyrics, album, playlist, live music.",
+      "Tastes: I'm into pop and jazz. I can't stand loud music. This song always cheers me up.",
+      "Concerts: I've been to a few concerts. The atmosphere was amazing. They played all their hits."
+     ],
+     "q": "What kind of music are you into, and have you ever been to a great concert?",
+     "c": "Make a five-song playlist for today and say in one line why you chose each song."
+    },
+    "de": {
+     "t": "Musik und Konzerte",
+     "g": "Du erzählst von deiner Lieblingsmusik und von Livemusik.",
+     "p": [
+      "Personen und Dinge: band, singer, songwriter, lyrics, album, playlist, live music.",
+      "Geschmack: I'm into pop and jazz. I can't stand loud music. This song always cheers me up.",
+      "Konzerte: I've been to a few concerts. The atmosphere was amazing. They played all their hits."
+     ],
+     "q": "Welche Musik magst du, und warst du schon einmal auf einem tollen Konzert?",
+     "c": "Stell eine Playlist mit fünf Songs für heute zusammen und sag in einer Zeile, warum du jeden gewählt hast."
+    },
+    "es": {
+     "t": "Música y conciertos",
+     "g": "Comparte la música que te encanta y habla de música en directo.",
+     "p": [
+      "Personas y cosas: band, singer, songwriter, lyrics, album, playlist, live music.",
+      "Gustos: I'm into pop and jazz. I can't stand loud music. This song always cheers me up.",
+      "Conciertos: I've been to a few concerts. The atmosphere was amazing. They played all their hits."
+     ],
+     "q": "¿Qué música te gusta y has estado alguna vez en un concierto genial?",
+     "c": "Haz una playlist de cinco canciones para hoy y di en una línea por qué elegiste cada una."
+    },
+    "fr": {
+     "t": "Musique et concerts",
+     "g": "Partager la musique que tu aimes et parler de concerts.",
+     "p": [
+      "Personnes et choses : band, singer, songwriter, lyrics, album, playlist, live music.",
+      "Goûts : I'm into pop and jazz. I can't stand loud music. This song always cheers me up.",
+      "Concerts : I've been to a few concerts. The atmosphere was amazing. They played all their hits."
+     ],
+     "q": "Quel genre de musique aimes-tu, et as-tu déjà vu un super concert ?",
+     "c": "Crée une playlist de cinq chansons pour aujourd'hui et dis en une ligne pourquoi tu as choisi chacune."
+    },
+    "it": {
+     "t": "Musica e concerti",
+     "g": "Condividi la musica che ami e parla di musica dal vivo.",
+     "p": [
+      "Persone e cose: band, singer, songwriter, lyrics, album, playlist, live music.",
+      "Gusti: I'm into pop and jazz. I can't stand loud music. This song always cheers me up.",
+      "Concerti: I've been to a few concerts. The atmosphere was amazing. They played all their hits."
+     ],
+     "q": "Che musica ti piace, e sei mai stato a un concerto fantastico?",
+     "c": "Crea una playlist di cinque canzoni per oggi e di' in una riga perché hai scelto ognuna."
+    },
+    "pt": {
+     "t": "Música e concertos",
+     "g": "Partilha a música de que gostas e fala de música ao vivo.",
+     "p": [
+      "Pessoas e coisas: band, singer, songwriter, lyrics, album, playlist, live music.",
+      "Gostos: I'm into pop and jazz. I can't stand loud music. This song always cheers me up.",
+      "Concertos: I've been to a few concerts. The atmosphere was amazing. They played all their hits."
+     ],
+     "q": "De que tipo de música gostas, e já foste a um concerto incrível?",
+     "c": "Faz uma playlist de cinco músicas para hoje e diz numa linha porque escolheste cada uma."
+    },
+    "pt_BR": {
+     "t": "Música e shows",
+     "g": "Compartilhe as músicas que você ama e fale de música ao vivo.",
+     "p": [
+      "Pessoas e coisas: band, singer, songwriter, lyrics, album, playlist, live music.",
+      "Gostos: I'm into pop and jazz. I can't stand loud music. This song always cheers me up.",
+      "Shows: I've been to a few concerts. The atmosphere was amazing. They played all their hits."
+     ],
+     "q": "Que tipo de música você curte, e já foi a um show incrível?",
+     "c": "Monte uma playlist de cinco músicas para hoje e diga em uma linha por que escolheu cada uma."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "band",
+      "ex": "My favourite band is playing here next month."
+     },
+     {
+      "w": "lyrics",
+      "ex": "I love the lyrics of this song."
+     },
+     {
+      "w": "playlist",
+      "ex": "I made a playlist for running."
+     },
+     {
+      "w": "live music",
+      "ex": "There's live music at the café on Fridays."
+     },
+     {
+      "w": "be into",
+      "ex": "I'm really into jazz at the moment."
+     },
+     {
+      "w": "cheer up",
+      "ex": "This song always cheers me up."
+     }
+    ],
+    "gram": "Talk about tastes with be into + noun/-ing (I'm into rock), can't stand + noun/-ing, and the present perfect for experiences."
+   }
+  },
+  {
+   "d": 168,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Books and reading",
+     "g": "Share books you have enjoyed and your reading habits.",
+     "p": [
+      "Words: novel, author, chapter, character, plot, page-turner, e-book, audiobook.",
+      "Describing: It's about a girl who... It's set in Japan. The main character is brave.",
+      "Opinions: I couldn't put it down. It's a real page-turner. The ending surprised me."
+     ],
+     "q": "What's a book you really enjoyed, and what was it about?",
+     "c": "Describe a book in four sentences: what it's about, where it's set, the main character and your opinion."
+    },
+    "de": {
+     "t": "Bücher und Lesen",
+     "g": "Du erzählst von Büchern, die dir gefallen haben, und von deinen Lesegewohnheiten.",
+     "p": [
+      "Wörter: novel, author, chapter, character, plot, page-turner, e-book, audiobook.",
+      "Beschreiben: It's about a girl who... It's set in Japan. The main character is brave.",
+      "Meinungen: I couldn't put it down. It's a real page-turner. The ending surprised me."
+     ],
+     "q": "Welches Buch hat dir richtig gut gefallen, und worum ging es?",
+     "c": "Beschreib ein Buch in vier Sätzen: Inhalt, Schauplatz, Hauptfigur und deine Meinung."
+    },
+    "es": {
+     "t": "Libros y lectura",
+     "g": "Comparte libros que te han gustado y tus hábitos de lectura.",
+     "p": [
+      "Palabras: novel, author, chapter, character, plot, page-turner, e-book, audiobook.",
+      "Describir: It's about a girl who... It's set in Japan. The main character is brave.",
+      "Opiniones: I couldn't put it down. It's a real page-turner. The ending surprised me."
+     ],
+     "q": "¿Qué libro te ha gustado mucho y de qué trataba?",
+     "c": "Describe un libro en cuatro frases: de qué trata, dónde transcurre, el protagonista y tu opinión."
+    },
+    "fr": {
+     "t": "Livres et lecture",
+     "g": "Partager des livres que tu as aimés et tes habitudes de lecture.",
+     "p": [
+      "Mots : novel, author, chapter, character, plot, page-turner, e-book, audiobook.",
+      "Décrire : It's about a girl who... It's set in Japan. The main character is brave.",
+      "Avis : I couldn't put it down. It's a real page-turner. The ending surprised me."
+     ],
+     "q": "Quel livre as-tu vraiment aimé, et de quoi parlait-il ?",
+     "c": "Décris un livre en quatre phrases : le sujet, le lieu, le personnage principal et ton avis."
+    },
+    "it": {
+     "t": "Libri e lettura",
+     "g": "Condividi libri che ti sono piaciuti e le tue abitudini di lettura.",
+     "p": [
+      "Parole: novel, author, chapter, character, plot, page-turner, e-book, audiobook.",
+      "Descrivere: It's about a girl who... It's set in Japan. The main character is brave.",
+      "Opinioni: I couldn't put it down. It's a real page-turner. The ending surprised me."
+     ],
+     "q": "Qual è un libro che ti è piaciuto molto, e di cosa parlava?",
+     "c": "Descrivi un libro in quattro frasi: di cosa parla, dove è ambientato, il protagonista e la tua opinione."
+    },
+    "pt": {
+     "t": "Livros e leitura",
+     "g": "Partilha livros de que gostaste e os teus hábitos de leitura.",
+     "p": [
+      "Palavras: novel, author, chapter, character, plot, page-turner, e-book, audiobook.",
+      "Descrever: It's about a girl who... It's set in Japan. The main character is brave.",
+      "Opiniões: I couldn't put it down. It's a real page-turner. The ending surprised me."
+     ],
+     "q": "Que livro gostaste mesmo muito de ler, e de que tratava?",
+     "c": "Descreve um livro em quatro frases: do que trata, onde se passa, a personagem principal e a tua opinião."
+    },
+    "pt_BR": {
+     "t": "Livros e leitura",
+     "g": "Compartilhe livros de que você gostou e seus hábitos de leitura.",
+     "p": [
+      "Palavras: novel, author, chapter, character, plot, page-turner, e-book, audiobook.",
+      "Descrever: It's about a girl who... It's set in Japan. The main character is brave.",
+      "Opiniões: I couldn't put it down. It's a real page-turner. The ending surprised me."
+     ],
+     "q": "Que livro você adorou ler, e sobre o que era?",
+     "c": "Descreva um livro em quatro frases: sobre o que é, onde se passa, o personagem principal e sua opinião."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "novel",
+      "ex": "I'm reading a novel set in Ireland."
+     },
+     {
+      "w": "author",
+      "ex": "Who's the author of this book?"
+     },
+     {
+      "w": "chapter",
+      "ex": "I read one chapter every night before bed."
+     },
+     {
+      "w": "character",
+      "ex": "The main character is a young detective."
+     },
+     {
+      "w": "page-turner",
+      "ex": "This book is a real page-turner!"
+     },
+     {
+      "w": "it's set in",
+      "ex": "The story is set in a small village by the sea."
+     }
+    ],
+    "gram": "Describe stories in the present simple: It's about a boy who... The story is set in Paris. The hero finds a map."
+   }
+  },
+  {
+   "d": 169,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Reflexive pronouns: myself",
+     "g": "Use myself, yourself and themselves correctly.",
+     "p": [
+      "Forms: myself, yourself, himself, herself, itself, ourselves, yourselves, themselves.",
+      "Same person does and receives: I taught myself the guitar. She hurt herself.",
+      "Common phrases: Enjoy yourselves! Help yourself. by myself = alone. I did it myself."
+     ],
+     "q": "What's something you taught yourself, and how did you do it?",
+     "c": "Write five sentences with different reflexive pronouns, including enjoy yourselves and by myself."
+    },
+    "de": {
+     "t": "Reflexivpronomen: myself",
+     "g": "Du verwendest myself, yourself und themselves richtig.",
+     "p": [
+      "Formen: myself, yourself, himself, herself, itself, ourselves, yourselves, themselves.",
+      "Dieselbe Person tut und empfängt: I taught myself the guitar. She hurt herself.",
+      "Feste Ausdrücke: Enjoy yourselves! Help yourself. by myself = allein. I did it myself."
+     ],
+     "q": "Was hast du dir selbst beigebracht, und wie hast du das gemacht?",
+     "c": "Schreib fünf Sätze mit verschiedenen Reflexivpronomen, darunter enjoy yourselves und by myself."
+    },
+    "es": {
+     "t": "Pronombres reflexivos: myself",
+     "g": "Usa bien myself, yourself y themselves.",
+     "p": [
+      "Formas: myself, yourself, himself, herself, itself, ourselves, yourselves, themselves.",
+      "La misma persona hace y recibe: I taught myself the guitar. She hurt herself.",
+      "Expresiones: Enjoy yourselves! Help yourself. by myself = solo. I did it myself."
+     ],
+     "q": "¿Qué aprendiste por tu cuenta y cómo lo hiciste?",
+     "c": "Escribe cinco frases con distintos pronombres reflexivos, incluidos enjoy yourselves y by myself."
+    },
+    "fr": {
+     "t": "Pronoms réfléchis : myself",
+     "g": "Utiliser correctement myself, yourself et themselves.",
+     "p": [
+      "Formes : myself, yourself, himself, herself, itself, ourselves, yourselves, themselves.",
+      "La même personne fait et subit : I taught myself the guitar. She hurt herself.",
+      "Expressions : Enjoy yourselves! Help yourself. by myself = tout seul. I did it myself."
+     ],
+     "q": "Qu'as-tu appris tout seul, et comment as-tu fait ?",
+     "c": "Écris cinq phrases avec différents pronoms réfléchis, dont enjoy yourselves et by myself."
+    },
+    "it": {
+     "t": "Pronomi riflessivi: myself",
+     "g": "Usa correttamente myself, yourself e themselves.",
+     "p": [
+      "Forme: myself, yourself, himself, herself, itself, ourselves, yourselves, themselves.",
+      "La stessa persona fa e riceve: I taught myself the guitar. She hurt herself.",
+      "Espressioni: Enjoy yourselves! Help yourself. by myself = da solo. I did it myself."
+     ],
+     "q": "Cosa hai imparato da solo, e come hai fatto?",
+     "c": "Scrivi cinque frasi con pronomi riflessivi diversi, tra cui enjoy yourselves e by myself."
+    },
+    "pt": {
+     "t": "Pronomes reflexos: myself",
+     "g": "Usa corretamente myself, yourself e themselves.",
+     "p": [
+      "Formas: myself, yourself, himself, herself, itself, ourselves, yourselves, themselves.",
+      "A mesma pessoa faz e recebe: I taught myself the guitar. She hurt herself.",
+      "Expressões: Enjoy yourselves! Help yourself. by myself = sozinho. I did it myself."
+     ],
+     "q": "O que é que aprendeste sozinho, e como o fizeste?",
+     "c": "Escreve cinco frases com pronomes reflexos diferentes, incluindo enjoy yourselves e by myself."
+    },
+    "pt_BR": {
+     "t": "Pronomes reflexivos: myself",
+     "g": "Use corretamente myself, yourself e themselves.",
+     "p": [
+      "Formas: myself, yourself, himself, herself, itself, ourselves, yourselves, themselves.",
+      "A mesma pessoa faz e recebe: I taught myself the guitar. She hurt herself.",
+      "Expressões: Enjoy yourselves! Help yourself. by myself = sozinho. I did it myself."
+     ],
+     "q": "O que você aprendeu sozinho, e como fez isso?",
+     "c": "Escreva cinco frases com pronomes reflexivos diferentes, incluindo enjoy yourselves e by myself."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "myself",
+      "ex": "I taught myself to cook by watching videos."
+     },
+     {
+      "w": "yourself",
+      "ex": "Help yourself to some cake!"
+     },
+     {
+      "w": "herself",
+      "ex": "She made the dress herself."
+     },
+     {
+      "w": "ourselves",
+      "ex": "We really enjoyed ourselves at the party."
+     },
+     {
+      "w": "themselves",
+      "ex": "The kids built the sandcastle themselves."
+     },
+     {
+      "w": "by myself",
+      "ex": "I like travelling by myself sometimes."
+     }
+    ],
+    "gram": "Reflexive pronouns (myself, ourselves...) when subject and object are the same: I hurt myself. By myself = alone."
+   }
+  },
+  {
+   "d": 170,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Each other and together",
+     "g": "Talk about actions between two or more people.",
+     "p": [
+      "Each other = one to the other and back: Ana and Leo help each other. (Ana helps Leo, Leo helps Ana.)",
+      "Compare: They looked at themselves (in the mirror) vs They looked at each other.",
+      "Together = in the same place or activity: We cook together on Sundays."
+     ],
+     "q": "Who do you help, and how do you and that person support each other?",
+     "c": "Write four sentences about friends or family with each other and two with together."
+    },
+    "de": {
+     "t": "Each other und together",
+     "g": "Du sprichst über Handlungen zwischen zwei oder mehr Personen.",
+     "p": [
+      "Each other = gegenseitig: Ana and Leo help each other. (Ana hilft Leo, Leo hilft Ana.)",
+      "Vergleich: They looked at themselves (im Spiegel) vs They looked at each other (einander).",
+      "Together = zusammen, am selben Ort oder bei derselben Tätigkeit: We cook together on Sundays."
+     ],
+     "q": "Wem hilfst du, und wie unterstützt ihr euch gegenseitig?",
+     "c": "Schreib vier Sätze über Freunde oder Familie mit each other und zwei mit together."
+    },
+    "es": {
+     "t": "Each other y together",
+     "g": "Habla de acciones entre dos o más personas.",
+     "p": [
+      "Each other = mutuamente: Ana and Leo help each other. (Ana ayuda a Leo y Leo a Ana.)",
+      "Compara: They looked at themselves (en el espejo) vs They looked at each other (el uno al otro).",
+      "Together = juntos, en el mismo lugar o actividad: We cook together on Sundays."
+     ],
+     "q": "¿A quién ayudas y cómo os apoyáis el uno al otro?",
+     "c": "Escribe cuatro frases sobre amigos o familia con each other y dos con together."
+    },
+    "fr": {
+     "t": "Each other et together",
+     "g": "Parler d'actions entre deux personnes ou plus.",
+     "p": [
+      "Each other = l'un l'autre : Ana and Leo help each other. (Ana aide Leo, Leo aide Ana.)",
+      "Compare : They looked at themselves (dans le miroir) vs They looked at each other (l'un l'autre).",
+      "Together = ensemble, au même endroit ou dans la même activité : We cook together on Sundays."
+     ],
+     "q": "Qui aides-tu, et comment vous soutenez-vous l'un l'autre ?",
+     "c": "Écris quatre phrases sur des amis ou la famille avec each other et deux avec together."
+    },
+    "it": {
+     "t": "Each other e together",
+     "g": "Parla di azioni tra due o più persone.",
+     "p": [
+      "Each other = a vicenda: Ana and Leo help each other. (Ana aiuta Leo, Leo aiuta Ana.)",
+      "Confronta: They looked at themselves (allo specchio) vs They looked at each other (l'un l'altro).",
+      "Together = insieme, nello stesso posto o attività: We cook together on Sundays."
+     ],
+     "q": "Chi aiuti, e come vi sostenete a vicenda?",
+     "c": "Scrivi quattro frasi su amici o familiari con each other e due con together."
+    },
+    "pt": {
+     "t": "Each other e together",
+     "g": "Fala de ações entre duas ou mais pessoas.",
+     "p": [
+      "Each other = um ao outro: Ana and Leo help each other. (A Ana ajuda o Leo e o Leo ajuda a Ana.)",
+      "Compara: They looked at themselves (ao espelho) vs They looked at each other (um para o outro).",
+      "Together = juntos, no mesmo sítio ou atividade: We cook together on Sundays."
+     ],
+     "q": "A quem ajudas, e como é que se apoiam um ao outro?",
+     "c": "Escreve quatro frases sobre amigos ou família com each other e duas com together."
+    },
+    "pt_BR": {
+     "t": "Each other e together",
+     "g": "Fale de ações entre duas ou mais pessoas.",
+     "p": [
+      "Each other = um ao outro: Ana and Leo help each other. (Ana ajuda Leo e Leo ajuda Ana.)",
+      "Compare: They looked at themselves (no espelho) vs They looked at each other (um para o outro).",
+      "Together = juntos, no mesmo lugar ou atividade: We cook together on Sundays."
+     ],
+     "q": "Quem você ajuda, e como vocês se apoiam um ao outro?",
+     "c": "Escreva quatro frases sobre amigos ou família com each other e duas com together."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "each other",
+      "ex": "My sister and I call each other every week."
+     },
+     {
+      "w": "help each other",
+      "ex": "Good neighbours help each other."
+     },
+     {
+      "w": "met each other",
+      "ex": "They met each other at university."
+     },
+     {
+      "w": "together",
+      "ex": "We go running together on Saturdays."
+     },
+     {
+      "w": "one another",
+      "ex": "The team members trust one another."
+     },
+     {
+      "w": "get on with",
+      "ex": "My brothers get on well with each other."
+     }
+    ],
+    "gram": "Each other = a two-way action (they hug each other). Themselves = each person does it to himself or herself. Together = jointly."
+   }
+  }
+ ]
+}

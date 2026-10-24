@@ -1,0 +1,2195 @@
+{
+"topic": "habits",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "Welcome to your habits journey",
+"f": "What a habit is, why small daily actions add up and what this 365-day path will build"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Your habits snapshot",
+"f": "Listing the habits you already have, the ones you want and the ones you would like to drop"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Why habits matter",
+"f": "How automatic routines save energy and shape most of what we do each day"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "The habit loop",
+"f": "Cue, routine and reward: the simple pattern behind every habit"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Spotting your cues",
+"f": "Noticing the times, places, people and feelings that trigger your routines"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Rewards that stick",
+"f": "Why the good feeling right after an action is what makes a habit repeat"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Cravings and anticipation",
+"f": "How expecting a reward builds the urge to start a routine"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Habits versus goals",
+"f": "Goals point the way, but daily systems and habits do the travelling"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Choosing your first habit",
+"f": "Picking one small, positive habit that matters to you and is easy to start"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "First week reflection",
+"f": "Looking back at your first days, what you noticed and one thing to adjust"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "Start ridiculously small",
+"f": "Shrinking a new habit until it takes two minutes or less to do"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "The two-minute rule",
+"f": "Starting with a version of the habit so small you cannot say no"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Habit stacking",
+"f": "Linking a new habit to an existing one: after I do X, I will do Y"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Picking a strong anchor",
+"f": "Choosing an existing routine that happens every day at a reliable moment"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Implementation intentions",
+"f": "Writing down exactly when and where you will do your new habit"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Showing up beats intensity",
+"f": "Why doing a little every day works better than big bursts now and then"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Celebrate tiny wins",
+"f": "Giving yourself a quick moment of pride right after doing the habit"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Identity-based habits",
+"f": "Thinking 'I am someone who...' to make habits part of who you are"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Votes for your identity",
+"f": "Seeing each small action as a vote for the person you want to become"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Small start recap",
+"f": "Putting tiny habits, stacking and celebration together for your first habit"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Environment shapes behaviour",
+"f": "How the spaces around us quietly make some actions easier and others harder"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Make it obvious",
+"f": "Placing visual cues for good habits where you will see them"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Make it easy",
+"f": "Removing small obstacles so good habits take less effort to start"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Make it harder",
+"f": "Adding friction to habits you want to do less often"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "One space, one use",
+"f": "Linking places to specific activities, like a reading chair or a work desk"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Preparing the night before",
+"f": "Setting out what you need tomorrow to make good choices automatic"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "The power of defaults",
+"f": "Changing the default option at home so the good choice is the first choice"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Designing your kitchen for habits",
+"f": "Arranging food, water and tools to support the habits you want"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Designing your phone for habits",
+"f": "Arranging apps and notifications so your phone supports your goals"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Month one review",
+"f": "Reviewing habit loops, tiny habits and environment design, and choosing what to keep"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Why tracking helps",
+"f": "How recording a habit makes progress visible and keeps you honest"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Simple habit trackers",
+"f": "Paper calendars, checklists and apps: picking the tracker you will really use"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Tracking with a habit journal",
+"f": "Writing one line a day about your habit to notice patterns and feelings"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Don't break the chain",
+"f": "Using a visual streak to stay motivated day after day"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Never miss twice",
+"f": "Why missing one day is normal and getting back on track the next day is what counts"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Measuring the right thing",
+"f": "Tracking actions you control rather than outcomes you cannot"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Weekly habit reviews",
+"f": "A five-minute weekly check of what worked, what slipped and why"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Habit scorecards",
+"f": "Rating your daily routines as helpful, neutral or unhelpful to see the whole picture"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Tracking without obsession",
+"f": "Keeping tracking light and stopping when it starts to feel stressful"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Rewarding consistency",
+"f": "Choosing healthy small rewards for streaks and milestones"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Tracking check-in",
+"f": "Reviewing your tracker and simplifying it if it has become a chore"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Why mornings matter",
+"f": "How a calm start can set the tone for the rest of your day"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Waking up at a steady time",
+"f": "Building a consistent wake-up time, including on weekends where possible"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "A simple morning routine",
+"f": "Choosing three to five short actions to start your day well"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Morning light and fresh air",
+"f": "Opening curtains or stepping outside early to feel more awake"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Making your bed",
+"f": "A tiny first win that creates order and momentum for the morning"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "A mindful morning drink",
+"f": "Turning your first glass of water, tea or coffee into a calm moment"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Planning your day in five minutes",
+"f": "Picking your top three tasks each morning"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Mornings when time is short",
+"f": "A shorter backup version of your routine for busy days"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Avoiding the phone first thing",
+"f": "Delaying messages and news to start the day on your own terms"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Your morning routine test",
+"f": "Trying your morning routine for a week and adjusting the order"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Why evenings matter",
+"f": "How the end of the day affects sleep, mood and tomorrow's energy"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "A shutdown ritual",
+"f": "Ending work or study with a short routine that tells your brain you are done"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Tidying for ten minutes",
+"f": "A quick evening reset so you wake up to a calm home"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Screens before bed",
+"f": "Creating a screen-free buffer before sleep for better rest"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "A relaxing wind-down",
+"f": "Reading, stretching or quiet music to slow down at night"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Regular bedtime",
+"f": "Going to bed at a consistent time to support a steady rhythm"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Preparing tomorrow tonight",
+"f": "Clothes, bag and list ready so mornings run smoothly"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Gratitude at night",
+"f": "Writing down three good things from the day"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Evening reflection",
+"f": "Asking what went well today and what you would do differently"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "Two-month review",
+"f": "Reviewing tracking, mornings and evenings, and building a full-day rhythm"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Sleep habits basics",
+"f": "General habits that support restful sleep, like routine and a calm bedroom"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "A sleep-friendly bedroom",
+"f": "Darkness, quiet and a comfortable temperature for better rest"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Caffeine timing",
+"f": "Being mindful of when you drink coffee or tea during the day"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Naps and rest",
+"f": "Short rest breaks and how to fit them into your day if they suit you"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Weekend rhythm",
+"f": "Keeping weekends relaxed without completely losing your routine"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Drinking enough water",
+"f": "Simple cues like a bottle on your desk to drink water through the day"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Regular meals",
+"f": "Building calm, regular mealtimes instead of rushed eating on the go"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Adding fruit and vegetables",
+"f": "Small swaps to include more colourful foods in everyday meals"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Mindful eating",
+"f": "Slowing down, putting the phone away and enjoying your food"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Simple meal planning",
+"f": "Planning a few meals ahead to make healthy choices easier"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Grocery list habits",
+"f": "Writing a list before shopping to save time and avoid impulse buys"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Healthy snacks within reach",
+"f": "Keeping easy, nourishing snacks visible and treats less visible"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Cooking at home more often",
+"f": "Starting with one simple home-cooked meal a week"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Food habits recap",
+"f": "Choosing one food or drink habit to build over the next month"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Movement every day",
+"f": "Why regular movement matters and how to make it part of daily life"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Walking as a habit",
+"f": "Adding short walks to your routine, like after meals or during calls"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Taking the stairs",
+"f": "Small everyday choices that add more movement to your day"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Stretch breaks",
+"f": "Short stretches to break long periods of sitting"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Morning stretch",
+"f": "A few gentle stretches after waking to feel loose and alert"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Posture check habit",
+"f": "Brief check-ins during the day on how you sit and stand"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Finding movement you enjoy",
+"f": "Exploring dance, cycling, swimming, sports or yoga to find what feels fun"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Scheduling exercise",
+"f": "Putting workouts in your calendar like any important appointment"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Workout clothes ready",
+"f": "Laying out sports gear to make starting easier"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Movement with friends",
+"f": "Exercising with others for fun and accountability"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Active commuting",
+"f": "Walking or cycling for part of your daily journey when possible"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Quarter review",
+"f": "Looking back at three months of habits and choosing your next focus areas"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "A tidy home habit",
+"f": "Why a little daily order makes home life calmer and easier"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "The one-minute rule",
+"f": "Doing any task that takes less than a minute right away"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Daily reset routine",
+"f": "A short daily tidy of the main areas you use most"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Ten-item pick-up",
+"f": "Putting away ten things each evening for a quick, visible difference"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "A place for everything",
+"f": "Giving every item a home so tidying becomes quick"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Decluttering in small steps",
+"f": "Clearing one drawer or shelf at a time instead of a whole room"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Laundry routines",
+"f": "Simple weekly rhythms that stop laundry piling up"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Kitchen clean as you go",
+"f": "Washing up and wiping surfaces while cooking"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Weekly home planning",
+"f": "A short weekly session for chores, shopping and errands"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Shared chores at home",
+"f": "Dividing household tasks fairly with family or housemates"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Home habits check-in",
+"f": "Reviewing your home routines and keeping the ones that make life easier"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Your digital habits",
+"f": "Noticing how and when you use your phone and computer each day"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Notification clean-up",
+"f": "Turning off non-essential notifications to protect your attention"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Phone-free zones",
+"f": "Keeping the dinner table or bedroom free of screens"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "One screen at a time",
+"f": "Watching or using one screen at a time instead of phone plus TV"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Mindful scrolling",
+"f": "Setting a purpose and a time limit before opening social apps"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Email and message habits",
+"f": "Checking messages at set times instead of all day long"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Digital decluttering",
+"f": "Tidying files, photos and apps so your devices feel lighter"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Screen time awareness",
+"f": "Using built-in reports to understand your screen habits without judging"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Replacing scrolling",
+"f": "Choosing a satisfying offline activity to do instead of scrolling"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Digital sabbath",
+"f": "Trying a few screen-free hours a week to recharge"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Digital habits review",
+"f": "Choosing your top three digital rules and writing them down"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Understanding bad habits",
+"f": "How unhelpful habits form and why they are not a sign of weakness"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Tracking an unwanted habit",
+"f": "Counting when it happens to understand the pattern before changing it"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Finding the real reward",
+"f": "Discovering what need a bad habit is meeting, like rest or comfort"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Replacing, not just removing",
+"f": "Swapping an unhelpful routine for a better one with the same reward"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Removing cues",
+"f": "Changing your surroundings to avoid triggers for unwanted habits"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Making bad habits unattractive",
+"f": "Thinking clearly about the costs of a habit you want to drop"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Urge surfing",
+"f": "Noticing an urge, breathing and letting it pass like a wave"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Habit contracts",
+"f": "Making a simple agreement with a friend to help you stick to a change"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Handling slips kindly",
+"f": "Treating a slip as information, not failure, and restarting quickly"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Breaking habits recap",
+"f": "Planning a gentle change for one habit you want to reduce"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Beginner stage celebration",
+"f": "Reviewing the first 120 days and celebrating the habits you have built"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Welcome to the intermediate stage",
+"f": "Building on your foundations with deeper habit skills and new areas of life"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Motivation comes and goes",
+"f": "Why habits matter more than motivation on ordinary days"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "The willpower myth",
+"f": "Why designing your days beats relying on self-control"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Friction and flow",
+"f": "Adjusting effort steps so good habits glide and unhelpful ones slow down"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Habit strength over time",
+"f": "How repetition in the same context makes habits feel more automatic"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "How long habits take",
+"f": "Why forming a habit usually takes weeks or months and varies by person and habit"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "The plateau of patience",
+"f": "Staying consistent when results are slow to show"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Temptation bundling",
+"f": "Pairing a habit you need with something you enjoy"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Commitment devices",
+"f": "Making a choice in advance that locks in good behaviour later"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Habit reminders that work",
+"f": "Alarms, notes and visual cues timed to the moment the habit should happen"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Visualising your future self",
+"f": "Picturing the person you are becoming to boost daily commitment"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Habits and personality",
+"f": "Adapting habit strategies whether you love planning, prefer spontaneity or are in between"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Habit triggers from emotions",
+"f": "Noticing how stress, boredom or tiredness trigger routines"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Making habits satisfying",
+"f": "Adding immediate enjoyment to habits with delayed benefits"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Habit pairing with friends",
+"f": "Doing habits side by side with someone for mutual support"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Keystone habits",
+"f": "Habits that create a ripple effect and improve other areas of life"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Choosing your keystone habit",
+"f": "Identifying one habit that could make the biggest positive difference"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Motivation science review",
+"f": "Choosing two ideas from this unit to apply to your current habits"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Focus habits",
+"f": "Daily practices that protect your attention for important work"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Single-tasking",
+"f": "Doing one thing at a time and finishing before moving on"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Time blocking for habits",
+"f": "Reserving fixed time slots for your most important routines"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "The most important task first",
+"f": "Doing your key task early before the day gets busy"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Deep work blocks",
+"f": "Scheduling longer distraction-free sessions for demanding tasks"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Batching small tasks",
+"f": "Grouping similar tasks together to save time and energy"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Planned breaks",
+"f": "Using regular breaks to keep energy steady through the day"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "The weekly plan habit",
+"f": "Planning your week every Sunday or Monday in fifteen minutes"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "To-do lists that work",
+"f": "Keeping lists short, specific and realistic"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Saying no kindly",
+"f": "Protecting time for your priorities with polite, clear answers"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Finishing what you start",
+"f": "Building the habit of closing tasks and loops"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "The end-of-day review",
+"f": "Checking off finished tasks and setting tomorrow's first step"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Energy management",
+"f": "Matching tasks to your natural energy peaks during the day"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Workspace habits",
+"f": "Starting and ending each work session with a tidy desk"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Habit of reflection",
+"f": "A short daily note on what you did and learned"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Productivity habits recap",
+"f": "Building your ideal workday routine"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Midpoint review",
+"f": "Checking your progress halfway through the intermediate stage"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Money habits basics",
+"f": "Everyday habits that help you feel calmer and more organised with money"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Knowing where money goes",
+"f": "Tracking spending for a month to understand your patterns"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "A simple budget habit",
+"f": "Planning spending categories each month in a simple way"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "The pause before buying",
+"f": "Waiting a day before non-essential purchases"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Spending triggers",
+"f": "Noticing moods and situations that lead to unplanned spending"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Mindful subscriptions",
+"f": "Reviewing regular subscriptions and keeping only the ones you really use"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Saving automatically",
+"f": "Setting up a regular small amount to move into savings"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "A savings cushion habit",
+"f": "The general idea of building a small reserve for surprises step by step"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Planned treats",
+"f": "Including fun spending in your plan so it feels balanced"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Bill and payment routines",
+"f": "Keeping a calendar of due dates so nothing is missed"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Monthly money check-in",
+"f": "A short monthly review of spending and savings goals"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Sharing money talks",
+"f": "Talking openly about money plans with family or partners in a calm way"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Money habits recap",
+"f": "Choosing one money habit to keep for the next three months"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Learning as a daily habit",
+"f": "Making a few minutes of learning part of every day"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "A reading habit",
+"f": "Reading a few pages a day and keeping a book always within reach"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Reading more widely",
+"f": "Mixing genres and authors from different countries and cultures"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Language learning habits",
+"f": "Daily practice with words, listening and short conversations"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Learning streaks",
+"f": "Using streaks in learning apps wisely without just chasing points"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Learning with podcasts",
+"f": "Using walks and commutes for audio learning"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Note-taking habit",
+"f": "Writing down ideas and lessons so they are not lost"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Learning projects",
+"f": "Choosing a small project to learn a skill by doing"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Curiosity habits",
+"f": "Asking questions and exploring topics that spark your interest"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "Teaching what you learn",
+"f": "Sharing new knowledge with others to remember it better"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Reviewing what you learned",
+"f": "A short weekly review to keep new knowledge fresh"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Learning from daily mistakes",
+"f": "Noticing one useful lesson from each day's mistakes"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Learning habits recap",
+"f": "Designing a daily learning slot that fits your life"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Third quarter check",
+"f": "Reviewing focus, money and learning habits and choosing next steps"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Social habits",
+"f": "Small daily actions that strengthen friendships and community"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Staying in touch",
+"f": "A weekly habit of messaging or calling friends and family"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Remembering birthdays",
+"f": "A simple system so you never forget the important dates of people you love"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Active listening",
+"f": "Listening fully, asking questions and not rushing to reply"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Kindness habits",
+"f": "Small kind acts like holding the door or sending a thank-you message"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Expressing appreciation",
+"f": "Telling people specifically what you value about them"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Thank-you notes",
+"f": "Writing short thank-you messages as a weekly habit"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Meeting new people",
+"f": "Habits that make it easier to start conversations and make friends"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Cross-cultural curiosity",
+"f": "Learning greetings, customs and stories from other cultures"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Shared meals",
+"f": "Eating together and making meals a time to connect"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Being on time",
+"f": "Punctuality as a habit of respect and reliability"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Community involvement",
+"f": "Joining a club, volunteering or helping neighbours"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Healthy boundaries",
+"f": "Balancing time for others with time for yourself"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Celebrating others",
+"f": "Noticing and celebrating friends' wins and milestones"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Social media with intention",
+"f": "Using social apps to connect, not just to compare"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Social habits recap",
+"f": "Planning one weekly social habit you enjoy"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Social habits review",
+"f": "Reflecting on how your relationships feel after a month of new habits"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Calm habits",
+"f": "Everyday practices that bring more peace into busy days"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Mindful breathing",
+"f": "A few slow breaths as a quick reset during the day"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Body scan",
+"f": "A short check from head to toe to notice and release tension"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Short meditation",
+"f": "Starting with two to five minutes of quiet attention each day"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Mindful moments",
+"f": "Fully noticing everyday activities like walking or washing up"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Journaling for calm",
+"f": "Writing thoughts down to clear your head"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Quiet hours",
+"f": "Times without notifications to give your mind a real rest"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Gratitude practice",
+"f": "A daily habit of noticing what you appreciate"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Time in nature",
+"f": "Regular time outdoors in parks, gardens or green spaces"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Slowing down",
+"f": "Doing one thing a day more slowly and with full attention"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Rest as a habit",
+"f": "Scheduling true rest, not just collapsing when exhausted"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Hobbies for relaxation",
+"f": "Making time for activities you do just for fun"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Managing a busy mind",
+"f": "Writing a to-do list before bed to settle racing thoughts"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Positive self-talk",
+"f": "Noticing your inner voice and speaking to yourself kindly"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Calm under pressure",
+"f": "Simple habits to stay steady when things get hectic"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Weekly reset ritual",
+"f": "A relaxing weekly routine to recharge and prepare"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Calm habits review",
+"f": "Choosing your favourite calm practice for daily use"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Creativity habits",
+"f": "Making space for creative play in everyday life"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Daily creative practice",
+"f": "Drawing, writing or making music for a few minutes each day"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Capturing ideas",
+"f": "Keeping a notebook or app for ideas wherever you are"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Morning pages",
+"f": "Writing freely for a few minutes to unlock creative thinking"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Your creative time of day",
+"f": "Finding your best hours for creative work and protecting them"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Creative constraints",
+"f": "Using limits like time or materials to spark ideas"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Trying new things",
+"f": "A weekly habit of something new, like a recipe, route or song"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Learning from creators",
+"f": "Studying how artists and inventors built their routines"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Sharing creative work",
+"f": "Showing your work to friends to build confidence"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Creative blocks",
+"f": "Gentle habits to get moving again when ideas dry up"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Finishing creative projects",
+"f": "Habits that help you bring creative ideas to completion"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Creativity habits recap",
+"f": "Committing to one small creative habit for the next month"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Habits when life changes",
+"f": "Keeping routines going through moves, new jobs or new schedules"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Fresh start moments",
+"f": "Using new weeks, months or birthdays as natural moments to begin habits"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Habits in a new city",
+"f": "Using a move as a fresh start to build routines from day one"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Habits and shift work",
+"f": "Anchoring routines to your waking time instead of the clock"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Travel-friendly habits",
+"f": "Portable mini versions of your habits for trips"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Habits on holidays",
+"f": "Enjoying breaks while keeping a few anchor habits"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Sick days and rest",
+"f": "Pausing habits kindly and restarting when you feel better"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Restarting after a break",
+"f": "Coming back with tiny steps instead of all at once"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Rebuilding several habits",
+"f": "A step-by-step plan to rebuild your routines after weeks off"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Habits with people you live with",
+"f": "Coordinating routines with family or housemates"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Keystone habits review",
+"f": "Looking at how keystone habits have shaped your year so far"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Habit stacking chains",
+"f": "Building longer routines by linking several habits together"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Seasonal habit changes",
+"f": "Adjusting routines to darker winters or long summer days"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Habits for busy seasons",
+"f": "Minimum versions of habits for exam weeks or work peaks"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Habit audit",
+"f": "Listing all current habits and rating how well each one serves you"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Retiring old habits",
+"f": "Letting go of routines that no longer fit your life"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Upgrading a habit",
+"f": "Growing a two-minute habit into a fuller version gradually"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Physical habits check",
+"f": "Reviewing sleep, food and movement habits from the beginner stage"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Habit goals for next season",
+"f": "Choosing focus habits for the coming months"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Your habit story so far",
+"f": "Writing a short story of how your habits have changed"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Intermediate review",
+"f": "Reviewing motivation, focus, money, learning, social, calm and creative habits"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Intermediate celebration",
+"f": "Celebrating days 121 to 250 and planning your advanced stage"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Welcome to the advanced stage",
+"f": "Designing habit systems that last for years and fit your whole life"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Systems over goals",
+"f": "Building repeatable processes that keep working after a goal is reached"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Your personal values",
+"f": "Clarifying what matters most so your habits point in the right direction"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Values to habits",
+"f": "Turning each core value into one concrete daily or weekly action"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Identity statements",
+"f": "Writing who you want to be in a few clear sentences"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Habit architecture",
+"f": "Arranging habits into morning, daytime, evening and weekly layers"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Habit bundles",
+"f": "Grouping related habits into one routine that runs smoothly"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Habit dashboards",
+"f": "Building a simple one-page view of all your important habits"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Decision rules",
+"f": "Creating personal rules that remove daily decisions, like no screens at dinner"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Default days",
+"f": "Designing a standard day template that works on autopilot"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Minimum viable habits",
+"f": "Defining the smallest version of each habit for very hard days"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Scaling habits up",
+"f": "Increasing difficulty slowly once a habit feels automatic"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "The habit ladder",
+"f": "Moving step by step from easy to more ambitious versions of a habit"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Habit trade-offs",
+"f": "Choosing which habits to prioritise when time and energy are limited"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Habits for different energy levels",
+"f": "Planning high, medium and low energy versions of key routines"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Systems design review",
+"f": "Drawing your full habit system and spotting gaps or overload"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Automaticity explained",
+"f": "What it means when a habit runs with little thought or effort"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Context stability",
+"f": "Why doing habits in the same place and time strengthens them"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Habits and the brain",
+"f": "A simple look at how repeated actions become easier over time"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Goal-directed versus habitual",
+"f": "When we act by choice and when we act on autopilot"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Habit discontinuity",
+"f": "Why big life changes are great moments to build new habits"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Reward prediction",
+"f": "How the brain learns to expect rewards and why surprises boost motivation"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Intrinsic rewards",
+"f": "Building habits that become enjoyable in themselves over time"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Habit decay",
+"f": "What happens to habits when you stop and how fast they can return"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Bad habits that return",
+"f": "Why old routines can come back in old places and how to stay prepared"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Monitoring with data",
+"f": "Using trends over months instead of daily ups and downs"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Habit research myths",
+"f": "Why '21 days to form a habit' is a myth and what is closer to the truth"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Self-experiments",
+"f": "Testing one habit change at a time and measuring the effect"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Learning from habit failures",
+"f": "Analysing why a habit did not stick and redesigning it"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Friction audits",
+"f": "Finding hidden obstacles in your environment and removing them"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Habit science in practice",
+"f": "Applying one research idea to improve a current habit"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Habit science review",
+"f": "Summarising the key science ideas you want to remember"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Work habits that last",
+"f": "Daily routines that support steady, high-quality work"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Starting the workday well",
+"f": "A short routine to plan, prioritise and begin focused"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Meeting habits",
+"f": "Preparing, staying on topic and ending with clear next steps"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Communication habits",
+"f": "Clear, kind and timely messages at work or school"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Inbox zero habits",
+"f": "Regularly processing messages so they do not pile up"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Learning at work",
+"f": "A weekly habit of building new skills on the job"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Feedback habits",
+"f": "Asking for and giving feedback regularly and respectfully"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Networking habits",
+"f": "Staying in touch with colleagues and contacts over time"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Work breaks that recharge",
+"f": "Using breaks to move, rest and reset your attention"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Ending the workday",
+"f": "A clear shutdown routine to protect personal time"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Remote work habits",
+"f": "Structure, boundaries and connection when working from home"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Digital focus at work",
+"f": "Habits for handling chats, tabs and alerts during the workday"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Career reflection habits",
+"f": "A monthly look at your progress and direction"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Leadership habits",
+"f": "Small daily actions that help a team work well"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Habits for big projects",
+"f": "Daily progress routines for long, complex projects"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Work habits review",
+"f": "Designing your ideal working week with your best habits"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Family habits",
+"f": "Routines that bring people at home closer together"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Habits with children",
+"f": "Simple, playful ways to help kids build good routines"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Family meals and rituals",
+"f": "Regular shared moments like weekly meals or game nights"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Shared habit goals",
+"f": "Choosing a habit to build together as a family or group"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Supporting someone's habit",
+"f": "Encouraging others without nagging or pressure"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Respecting different routines",
+"f": "Living and working well with people whose habits differ from yours"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Habit buddies",
+"f": "Partnering with a friend for a shared habit challenge"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Group challenges",
+"f": "Running a friendly 30-day habit challenge with others"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Habits in teams",
+"f": "Shared routines that help teams communicate and cooperate"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Teaching habits to others",
+"f": "Explaining the habit loop and tiny habits to a friend"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Leading by example",
+"f": "How your own habits quietly inspire people around you"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Kind accountability",
+"f": "Checking in with others in a warm and positive way"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Celebrating together",
+"f": "Marking shared habit milestones with friends or family"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Habits across generations",
+"f": "Learning routines and wisdom from older and younger people"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Community habits",
+"f": "Habits that help your neighbourhood, like sharing or helping out"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Shared habits review",
+"f": "Reflecting on how habits with others have changed your relationships"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Habits around the world",
+"f": "How daily routines differ across cultures and what we can learn"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Morning customs globally",
+"f": "Breakfast, greetings and morning rituals from different countries"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Rest traditions",
+"f": "Afternoon breaks, slow meals and rest customs in different cultures"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Tea and coffee rituals",
+"f": "Calm drink rituals from around the world as habit inspiration"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Walking cultures",
+"f": "Evening strolls and walking traditions in different places"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Cleaning and order traditions",
+"f": "Cultural customs for keeping homes tidy and fresh"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Hospitality habits",
+"f": "Welcoming guests and sharing food in various cultures"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Seasonal rhythms",
+"f": "Adjusting habits with the seasons, inspired by many traditions"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Festivals and fresh starts",
+"f": "How new year celebrations inspire habit changes around the world"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Language habits",
+"f": "Small daily routines for learning a language from another culture"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Travel habits",
+"f": "Keeping routines while discovering new places"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Habits from other cultures",
+"f": "Choosing one habit from another culture to try yourself"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Slow living habits",
+"f": "Slowing down daily life with intention and simplicity"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Minimalism as a habit",
+"f": "Owning fewer things to spend less time managing stuff"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Global habits review",
+"f": "Sharing which cultural habit inspired you most"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Maintaining habits for years",
+"f": "Keeping good habits alive long after the excitement fades"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Habit boredom",
+"f": "Refreshing routines with small variations to keep them interesting"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Habit maintenance checks",
+"f": "A quarterly review of every important habit"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Keeping tracking useful",
+"f": "Deciding when to keep, simplify or stop tracking long-standing habits"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Habit relapse plans",
+"f": "Writing a plan in advance for getting back on track"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Protecting habits during stress",
+"f": "Keeping the minimum version going when life is hard"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Life transitions plan",
+"f": "Preparing to rebuild habits through moves, new jobs or new family stages"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Habits and ageing well",
+"f": "General everyday habits that support staying active and curious at every age"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Yearly habit review",
+"f": "Looking back at the whole year of habits in one session"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Habit mistakes to avoid",
+"f": "Common pitfalls like starting too big or too many habits at once"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Pruning habits",
+"f": "Removing habits that no longer add value"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Adding one habit at a time",
+"f": "Building slowly to keep your system stable"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Habit milestones",
+"f": "Marking 100 days, six months and one year of a habit"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Turning habits into traditions",
+"f": "Making key habits a lasting part of your personal culture"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Habits that feel like you",
+"f": "Reaching the point where habits express who you are"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Maintenance review",
+"f": "Writing your personal guide for keeping habits for years"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Your life operating system",
+"f": "Designing a complete set of habits for health, work, people and joy"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Your ideal morning, final version",
+"f": "Refining your morning routine using everything you have learned"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Your ideal evening, final version",
+"f": "Refining your evening routine for rest and reflection"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Your ideal week",
+"f": "Building a weekly template with key habits, rest and fun"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Your monthly rituals",
+"f": "Choosing monthly reviews, outings and resets"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Your yearly rhythm",
+"f": "Planning seasonal habits, reviews and celebrations across the year"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Your habit toolkit",
+"f": "Listing your favourite techniques like stacking, tracking and friction"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Your comeback plan",
+"f": "Writing how you will restart habits after any break"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Your habit environment",
+"f": "Final tweaks to your home and devices to support your habits"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Your support circle",
+"f": "Naming people who encourage your habits and how you will stay connected"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Your habit dashboard update",
+"f": "Refreshing your one-page view with your final system"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Testing your operating system",
+"f": "Running your full system for a week and noting adjustments"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Refining your system",
+"f": "Updating your plan with lessons from the test week"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Sharing your system",
+"f": "Explaining your habit system to a friend to inspire them"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Your next habit goals",
+"f": "Choosing the habits you want to build after this path"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Your habit legacy",
+"f": "Thinking about the habits you would love to pass on to others"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Gratitude for your progress",
+"f": "Thanking yourself and others for support on this journey"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Advanced stage review",
+"f": "Reviewing systems, science, work, shared and global habits"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Your year of habits",
+"f": "Looking back at 365 days of small steps and big changes"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Final celebration",
+"f": "Celebrating your journey and keeping your habits growing every day"
+}
+]
+}

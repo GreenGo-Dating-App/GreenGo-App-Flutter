@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 161,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Car and road",
+     "g": "Talk about driving: the licence, filling up, traffic jams and parking.",
+     "p": [
+      "Words: der Führerschein, die Tankstelle, tanken, der Stau, der Parkplatz, die Autobahn, die Ampel.",
+      "On the road: Ich stehe im Stau. An der Ampel links abbiegen. Hier darf man nicht parken.",
+      "Germany: Auf der Autobahn fährt man rechts und überholt links. Bei Schnee und Eis braucht man Winterreifen."
+     ],
+     "q": "Do you drive, and how do you usually get around? Tell me about a long car trip or a traffic jam.",
+     "c": "Write five sentences about a car trip in the Perfekt with tanken, Stau and parken; watch haben or sein."
+    },
+    "de": {
+     "t": "Auto und Straße",
+     "g": "Du sprichst übers Autofahren: Führerschein, tanken, Stau und parken.",
+     "p": [
+      "Wörter: der Führerschein, die Tankstelle, tanken, der Stau, der Parkplatz, die Autobahn, die Ampel.",
+      "Unterwegs: Ich stehe im Stau. An der Ampel links abbiegen. Hier darf man nicht parken.",
+      "Deutschland: Auf der Autobahn fährt man rechts und überholt links. Bei Schnee und Eis braucht man Winterreifen."
+     ],
+     "q": "Fährst du Auto, und wie bist du meistens unterwegs? Erzähl von einer langen Autofahrt oder einem Stau.",
+     "c": "Schreib fünf Sätze über eine Autofahrt im Perfekt mit tanken, Stau und parken; achte auf haben oder sein."
+    },
+    "es": {
+     "t": "El coche y la carretera",
+     "g": "Habla de conducir: el carné, repostar, los atascos y aparcar.",
+     "p": [
+      "Palabras: der Führerschein, die Tankstelle, tanken, der Stau, der Parkplatz, die Autobahn, die Ampel.",
+      "En la carretera: Ich stehe im Stau. An der Ampel links abbiegen. Hier darf man nicht parken.",
+      "Alemania: Auf der Autobahn fährt man rechts und überholt links. Bei Schnee und Eis braucht man Winterreifen."
+     ],
+     "q": "¿Conduces y cómo te mueves normalmente? Cuéntame un viaje largo en coche o un atasco.",
+     "c": "Escribe cinco frases sobre un viaje en coche en Perfekt con tanken, Stau y parken; ojo con haben o sein."
+    },
+    "fr": {
+     "t": "La voiture et la route",
+     "g": "Parler de la conduite : le permis, faire le plein, les bouchons et se garer.",
+     "p": [
+      "Mots : der Führerschein, die Tankstelle, tanken, der Stau, der Parkplatz, die Autobahn, die Ampel.",
+      "Sur la route : Ich stehe im Stau. An der Ampel links abbiegen. Hier darf man nicht parken.",
+      "Allemagne : Auf der Autobahn fährt man rechts und überholt links. Bei Schnee und Eis braucht man Winterreifen."
+     ],
+     "q": "Conduis-tu, et comment te déplaces-tu d'habitude ? Raconte un long trajet en voiture ou un bouchon.",
+     "c": "Écris cinq phrases sur un trajet en voiture au Perfekt avec tanken, Stau et parken ; attention à haben ou sein."
+    },
+    "it": {
+     "t": "Auto e strada",
+     "g": "Parli di guida: la patente, fare benzina, il traffico e parcheggiare.",
+     "p": [
+      "Parole: der Führerschein, die Tankstelle, tanken, der Stau, der Parkplatz, die Autobahn, die Ampel.",
+      "Per strada: Ich stehe im Stau. An der Ampel links abbiegen. Hier darf man nicht parken.",
+      "Germania: Auf der Autobahn fährt man rechts und überholt links. Bei Schnee und Eis braucht man Winterreifen."
+     ],
+     "q": "Guidi, e come ti sposti di solito? Raccontami un lungo viaggio in auto o un ingorgo.",
+     "c": "Scrivi cinque frasi su un viaggio in auto al Perfekt con tanken, Stau e parken; attento a haben o sein."
+    },
+    "pt": {
+     "t": "O carro e a estrada",
+     "g": "Falar de conduzir: a carta, abastecer, o trânsito e estacionar.",
+     "p": [
+      "Palavras: der Führerschein, die Tankstelle, tanken, der Stau, der Parkplatz, die Autobahn, die Ampel.",
+      "Na estrada: Ich stehe im Stau. An der Ampel links abbiegen. Hier darf man nicht parken.",
+      "Alemanha: Auf der Autobahn fährt man rechts und überholt links. Bei Schnee und Eis braucht man Winterreifen."
+     ],
+     "q": "Conduzes, e como te deslocas normalmente? Conta-me uma viagem longa de carro ou um engarrafamento.",
+     "c": "Escreve cinco frases sobre uma viagem de carro no Perfekt com tanken, Stau e parken; atenção a haben ou sein."
+    },
+    "pt_BR": {
+     "t": "O carro e a estrada",
+     "g": "Falar de dirigir: a carteira, abastecer, o trânsito e estacionar.",
+     "p": [
+      "Palavras: der Führerschein, die Tankstelle, tanken, der Stau, der Parkplatz, die Autobahn, die Ampel.",
+      "Na estrada: Ich stehe im Stau. An der Ampel links abbiegen. Hier darf man nicht parken.",
+      "Alemanha: Auf der Autobahn fährt man rechts und überholt links. Bei Schnee und Eis braucht man Winterreifen."
+     ],
+     "q": "Você dirige, e como costuma se locomover? Me conte uma viagem longa de carro ou um engarrafamento.",
+     "c": "Escreva cinco frases sobre uma viagem de carro no Perfekt com tanken, Stau e parken; atenção a haben ou sein."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Führerschein",
+      "ex": "Ich habe den Führerschein mit achtzehn gemacht."
+     },
+     {
+      "w": "tanken",
+      "ex": "Wir müssen unterwegs noch tanken."
+     },
+     {
+      "w": "der Stau",
+      "ex": "Auf der Autobahn war ein langer Stau."
+     },
+     {
+      "w": "parken",
+      "ex": "Wo kann ich hier parken?"
+     },
+     {
+      "w": "die Ampel",
+      "ex": "Die Ampel ist rot, wir müssen warten."
+     },
+     {
+      "w": "abbiegen",
+      "ex": "Biegen Sie an der Kreuzung rechts ab."
+     }
+    ],
+    "gram": "Perfekt: Ich bin gefahren (Bewegung), ich habe getankt, ich habe geparkt. Abbiegen ist trennbar: Ich biege ab."
+   }
+  },
+  {
+   "d": 162,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Asking for help",
+     "g": "Ask for help and for repetition when you do not understand: Wie bitte? Können Sie das wiederholen?",
+     "p": [
+      "Help: Entschuldigung, können Sie mir helfen? Ich suche ... Ich brauche Hilfe mit ...",
+      "Not understanding: Wie bitte? Können Sie das bitte wiederholen? Langsamer, bitte. Was bedeutet ...?",
+      "Checking: Habe ich das richtig verstanden? Meinen Sie ...? Wie schreibt man das?"
+     ],
+     "q": "You do not understand an announcement at the station. What three things can you say to a person nearby?",
+     "c": "Write a dialogue where you ask for help, ask for a repeat, check a word's meaning and say thank you."
+    },
+    "de": {
+     "t": "Um Hilfe bitten",
+     "g": "Du bittest um Hilfe und um Wiederholung, wenn du etwas nicht verstehst: Wie bitte?",
+     "p": [
+      "Hilfe: Entschuldigung, können Sie mir helfen? Ich suche ... Ich brauche Hilfe mit ...",
+      "Nicht verstehen: Wie bitte? Können Sie das bitte wiederholen? Langsamer, bitte. Was bedeutet ...?",
+      "Nachfragen: Habe ich das richtig verstanden? Meinen Sie ...? Wie schreibt man das?"
+     ],
+     "q": "Du verstehst eine Durchsage am Bahnhof nicht. Welche drei Sätze kannst du zu jemandem sagen?",
+     "c": "Schreib einen Dialog: um Hilfe bitten, um Wiederholung bitten, nach einer Bedeutung fragen, danken."
+    },
+    "es": {
+     "t": "Pedir ayuda",
+     "g": "Pide ayuda y que te repitan cuando no entiendes: Wie bitte? Können Sie das wiederholen?",
+     "p": [
+      "Ayuda: Entschuldigung, können Sie mir helfen? Ich suche ... Ich brauche Hilfe mit ...",
+      "No entender: Wie bitte? Können Sie das bitte wiederholen? Langsamer, bitte. Was bedeutet ...?",
+      "Comprobar: Habe ich das richtig verstanden? Meinen Sie ...? Wie schreibt man das?"
+     ],
+     "q": "No entiendes un aviso en la estación. ¿Qué tres frases puedes decirle a alguien cercano?",
+     "c": "Escribe un diálogo: pide ayuda, pide que repitan, pregunta qué significa una palabra y da las gracias."
+    },
+    "fr": {
+     "t": "Demander de l'aide",
+     "g": "Demander de l'aide et faire répéter quand tu ne comprends pas : Wie bitte? Können Sie das wiederholen?",
+     "p": [
+      "Aide : Entschuldigung, können Sie mir helfen? Ich suche ... Ich brauche Hilfe mit ...",
+      "Ne pas comprendre : Wie bitte? Können Sie das bitte wiederholen? Langsamer, bitte. Was bedeutet ...?",
+      "Vérifier : Habe ich das richtig verstanden? Meinen Sie ...? Wie schreibt man das?"
+     ],
+     "q": "Tu ne comprends pas une annonce à la gare. Quelles trois phrases peux-tu dire à quelqu'un à côté ?",
+     "c": "Écris un dialogue : demande de l'aide, fais répéter, demande le sens d'un mot et remercie."
+    },
+    "it": {
+     "t": "Chiedere aiuto",
+     "g": "Chiedi aiuto e di ripetere quando non capisci: Wie bitte? Können Sie das wiederholen?",
+     "p": [
+      "Aiuto: Entschuldigung, können Sie mir helfen? Ich suche ... Ich brauche Hilfe mit ...",
+      "Non capire: Wie bitte? Können Sie das bitte wiederholen? Langsamer, bitte. Was bedeutet ...?",
+      "Verificare: Habe ich das richtig verstanden? Meinen Sie ...? Wie schreibt man das?"
+     ],
+     "q": "Non capisci un annuncio in stazione. Quali tre frasi puoi dire a qualcuno vicino?",
+     "c": "Scrivi un dialogo: chiedi aiuto, chiedi di ripetere, chiedi il significato di una parola e ringrazia."
+    },
+    "pt": {
+     "t": "Pedir ajuda",
+     "g": "Pedir ajuda e pedir para repetir quando não percebes: Wie bitte? Können Sie das wiederholen?",
+     "p": [
+      "Ajuda: Entschuldigung, können Sie mir helfen? Ich suche ... Ich brauche Hilfe mit ...",
+      "Não perceber: Wie bitte? Können Sie das bitte wiederholen? Langsamer, bitte. Was bedeutet ...?",
+      "Confirmar: Habe ich das richtig verstanden? Meinen Sie ...? Wie schreibt man das?"
+     ],
+     "q": "Não percebes um aviso na estação. Que três frases podes dizer a alguém ao lado?",
+     "c": "Escreve um diálogo: pede ajuda, pede para repetir, pergunta o que significa uma palavra e agradece."
+    },
+    "pt_BR": {
+     "t": "Pedir ajuda",
+     "g": "Pedir ajuda e pedir para repetir quando você não entende: Wie bitte? Können Sie das wiederholen?",
+     "p": [
+      "Ajuda: Entschuldigung, können Sie mir helfen? Ich suche ... Ich brauche Hilfe mit ...",
+      "Não entender: Wie bitte? Können Sie das bitte wiederholen? Langsamer, bitte. Was bedeutet ...?",
+      "Confirmar: Habe ich das richtig verstanden? Meinen Sie ...? Wie schreibt man das?"
+     ],
+     "q": "Você não entende um aviso na estação. Que três frases pode dizer a alguém ao lado?",
+     "c": "Escreva um diálogo: peça ajuda, peça para repetir, pergunte o que significa uma palavra e agradeça."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "helfen",
+      "ex": "Können Sie mir bitte helfen?"
+     },
+     {
+      "w": "Wie bitte?",
+      "ex": "Wie bitte? Ich habe Sie nicht verstanden."
+     },
+     {
+      "w": "wiederholen",
+      "ex": "Können Sie das bitte noch einmal wiederholen?"
+     },
+     {
+      "w": "langsamer",
+      "ex": "Bitte sprechen Sie etwas langsamer."
+     },
+     {
+      "w": "bedeuten",
+      "ex": "Was bedeutet das Wort Gleis?"
+     },
+     {
+      "w": "buchstabieren",
+      "ex": "Können Sie Ihren Namen buchstabieren?"
+     }
+    ],
+    "gram": "Helfen + Dativ: Können Sie mir helfen? Wiederholen ist untrennbar: Ich wiederhole. Was bedeutet ...? (Verb 3. Person)."
+   }
+  },
+  {
+   "d": 163,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Fillers and spoken German",
+     "g": "Sound more natural with fillers like also, halt, eben, na ja and ähm, and gain time to think.",
+     "p": [
+      "Starting: Also, ich finde ... Ähm, wie sagt man ... Na ja, das ist so ...",
+      "halt / eben: Das ist halt so. Ich hatte eben keine Zeit. (= so ist es, nichts zu ändern)",
+      "Reacting: Na ja, geht so. Ach so! Echt? Stimmt. Genau. Mhm."
+     ],
+     "q": "How was your day? Answer in a relaxed way with at least two fillers like also, na ja or halt.",
+     "c": "Record or write a 30-second answer about your weekend using also, halt, na ja and ach so naturally."
+    },
+    "de": {
+     "t": "Füllwörter und gesprochenes Deutsch",
+     "g": "Du klingst natürlicher mit Füllwörtern wie also, halt, eben, na ja und ähm und gewinnst Zeit.",
+     "p": [
+      "Anfangen: Also, ich finde ... Ähm, wie sagt man ... Na ja, das ist so ...",
+      "halt / eben: Das ist halt so. Ich hatte eben keine Zeit. (= so ist es, nichts zu ändern)",
+      "Reagieren: Na ja, geht so. Ach so! Echt? Stimmt. Genau. Mhm."
+     ],
+     "q": "Wie war dein Tag? Antworte locker mit mindestens zwei Füllwörtern wie also, na ja oder halt.",
+     "c": "Nimm eine Antwort von 30 Sekunden über dein Wochenende auf oder schreib sie, mit also, halt, na ja, ach so."
+    },
+    "es": {
+     "t": "Muletillas y alemán hablado",
+     "g": "Suena más natural con muletillas como also, halt, eben, na ja y ähm, y gana tiempo para pensar.",
+     "p": [
+      "Empezar: Also, ich finde ... Ähm, wie sagt man ... Na ja, das ist so ...",
+      "halt / eben: Das ist halt so. Ich hatte eben keine Zeit. (= so ist es, nichts zu ändern)",
+      "Reaccionar: Na ja, geht so. Ach so! Echt? Stimmt. Genau. Mhm."
+     ],
+     "q": "¿Qué tal tu día? Responde relajado con al menos dos muletillas como also, na ja o halt.",
+     "c": "Graba o escribe una respuesta de 30 segundos sobre tu finde con also, halt, na ja y ach so."
+    },
+    "fr": {
+     "t": "Mots de remplissage et allemand oral",
+     "g": "Paraître plus naturel avec also, halt, eben, na ja et ähm, et gagner du temps pour réfléchir.",
+     "p": [
+      "Commencer : Also, ich finde ... Ähm, wie sagt man ... Na ja, das ist so ...",
+      "halt / eben : Das ist halt so. Ich hatte eben keine Zeit. (= so ist es, nichts zu ändern)",
+      "Réagir : Na ja, geht so. Ach so! Echt? Stimmt. Genau. Mhm."
+     ],
+     "q": "Comment s'est passée ta journée ? Réponds avec au moins deux mots comme also, na ja ou halt.",
+     "c": "Enregistre ou écris une réponse de 30 secondes sur ton week-end avec also, halt, na ja et ach so."
+    },
+    "it": {
+     "t": "Riempitivi e tedesco parlato",
+     "g": "Sembri più naturale con riempitivi come also, halt, eben, na ja e ähm e guadagni tempo per pensare.",
+     "p": [
+      "Iniziare: Also, ich finde ... Ähm, wie sagt man ... Na ja, das ist so ...",
+      "halt / eben: Das ist halt so. Ich hatte eben keine Zeit. (= so ist es, nichts zu ändern)",
+      "Reagire: Na ja, geht so. Ach so! Echt? Stimmt. Genau. Mhm."
+     ],
+     "q": "Com'è andata la giornata? Rispondi in modo rilassato con almeno due riempitivi come also, na ja o halt.",
+     "c": "Registra o scrivi una risposta di 30 secondi sul tuo weekend con also, halt, na ja e ach so."
+    },
+    "pt": {
+     "t": "Bordões e alemão falado",
+     "g": "Soar mais natural com bordões como also, halt, eben, na ja e ähm e ganhar tempo para pensar.",
+     "p": [
+      "Começar: Also, ich finde ... Ähm, wie sagt man ... Na ja, das ist so ...",
+      "halt / eben: Das ist halt so. Ich hatte eben keine Zeit. (= so ist es, nichts zu ändern)",
+      "Reagir: Na ja, geht so. Ach so! Echt? Stimmt. Genau. Mhm."
+     ],
+     "q": "Como foi o teu dia? Responde de forma descontraída com pelo menos dois bordões como also, na ja ou halt.",
+     "c": "Grava ou escreve uma resposta de 30 segundos sobre o teu fim de semana com also, halt, na ja e ach so."
+    },
+    "pt_BR": {
+     "t": "Muletas e alemão falado",
+     "g": "Soar mais natural com muletas como also, halt, eben, na ja e ähm e ganhar tempo para pensar.",
+     "p": [
+      "Começar: Also, ich finde ... Ähm, wie sagt man ... Na ja, das ist so ...",
+      "halt / eben: Das ist halt so. Ich hatte eben keine Zeit. (= so ist es, nichts zu ändern)",
+      "Reagir: Na ja, geht so. Ach so! Echt? Stimmt. Genau. Mhm."
+     ],
+     "q": "Como foi seu dia? Responda de forma descontraída com pelo menos duas muletas como also, na ja ou halt.",
+     "c": "Grave ou escreva uma resposta de 30 segundos sobre seu fim de semana com also, halt, na ja e ach so."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "also",
+      "ex": "Also, ich erzähle dir mal, was passiert ist."
+     },
+     {
+      "w": "halt",
+      "ex": "Das ist halt so, da kann man nichts machen."
+     },
+     {
+      "w": "eben",
+      "ex": "Ich hatte eben keine Lust."
+     },
+     {
+      "w": "na ja",
+      "ex": "Na ja, der Film war ganz okay."
+     },
+     {
+      "w": "ähm",
+      "ex": "Ähm, wie heißt das noch mal?"
+     },
+     {
+      "w": "Ach so!",
+      "ex": "Ach so, jetzt verstehe ich!"
+     }
+    ],
+    "gram": "Also am Satzanfang heißt oft so/well, nicht also (auch). Halt und eben stehen im Mittelfeld: Das ist halt teuer."
+   }
+  },
+  {
+   "d": 164,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Modal particles",
+     "g": "Discover doch, mal, ja, denn and eben: small words that change the tone of a sentence.",
+     "p": [
+      "mal: softer: Komm mal her! Kannst du mal helfen? Schau mal! (freundlicher, lockerer)",
+      "doch: encouraging: Komm doch mit! Setz dich doch! Das weißt du doch! (Einladung oder Erinnerung)",
+      "ja and denn: Das ist ja toll! (Überraschung) Wie heißt du denn? Was ist denn los? (interessierte Frage)"
+     ],
+     "q": "Invite me to something using doch, then ask me a question with denn. I will answer you!",
+     "c": "Make four sentences friendlier: add mal to two requests, doch to one invitation and denn to one question."
+    },
+    "de": {
+     "t": "Modalpartikeln",
+     "g": "Du entdeckst doch, mal, ja, denn und eben: kleine Wörter, die den Ton eines Satzes ändern.",
+     "p": [
+      "mal: weicher: Komm mal her! Kannst du mal helfen? Schau mal! (freundlicher, lockerer)",
+      "doch: ermunternd: Komm doch mit! Setz dich doch! Das weißt du doch! (Einladung oder Erinnerung)",
+      "ja und denn: Das ist ja toll! (Überraschung) Wie heißt du denn? Was ist denn los? (interessierte Frage)"
+     ],
+     "q": "Lade mich zu etwas ein mit doch und stell mir dann eine Frage mit denn. Ich antworte dir!",
+     "c": "Mach vier Sätze freundlicher: mal in zwei Bitten, doch in eine Einladung und denn in eine Frage."
+    },
+    "es": {
+     "t": "Partículas modales",
+     "g": "Descubre doch, mal, ja, denn y eben: palabras pequeñas que cambian el tono de una frase.",
+     "p": [
+      "mal: más suave: Komm mal her! Kannst du mal helfen? Schau mal! (freundlicher, lockerer)",
+      "doch: animar: Komm doch mit! Setz dich doch! Das weißt du doch! (Einladung oder Erinnerung)",
+      "ja y denn: Das ist ja toll! (Überraschung) Wie heißt du denn? Was ist denn los? (interessierte Frage)"
+     ],
+     "q": "Invítame a algo usando doch y luego hazme una pregunta con denn. ¡Te respondo!",
+     "c": "Haz cuatro frases más amables: mal en dos peticiones, doch en una invitación y denn en una pregunta."
+    },
+    "fr": {
+     "t": "Les particules modales",
+     "g": "Découvrir doch, mal, ja, denn et eben : de petits mots qui changent le ton d'une phrase.",
+     "p": [
+      "mal : plus doux : Komm mal her! Kannst du mal helfen? Schau mal! (freundlicher, lockerer)",
+      "doch : encourager : Komm doch mit! Setz dich doch! Das weißt du doch! (Einladung oder Erinnerung)",
+      "ja et denn : Das ist ja toll! (Überraschung) Wie heißt du denn? Was ist denn los? (interessierte Frage)"
+     ],
+     "q": "Invite-moi à quelque chose avec doch, puis pose-moi une question avec denn. Je te réponds !",
+     "c": "Rends quatre phrases plus aimables : mal dans deux demandes, doch dans une invitation, denn dans une question."
+    },
+    "it": {
+     "t": "Particelle modali",
+     "g": "Scopri doch, mal, ja, denn ed eben: piccole parole che cambiano il tono di una frase.",
+     "p": [
+      "mal: più morbido: Komm mal her! Kannst du mal helfen? Schau mal! (freundlicher, lockerer)",
+      "doch: incoraggiare: Komm doch mit! Setz dich doch! Das weißt du doch! (Einladung oder Erinnerung)",
+      "ja e denn: Das ist ja toll! (Überraschung) Wie heißt du denn? Was ist denn los? (interessierte Frage)"
+     ],
+     "q": "Invitami a qualcosa usando doch e poi fammi una domanda con denn. Ti rispondo!",
+     "c": "Rendi quattro frasi più gentili: mal in due richieste, doch in un invito e denn in una domanda."
+    },
+    "pt": {
+     "t": "Partículas modais",
+     "g": "Descobrir doch, mal, ja, denn e eben: palavrinhas que mudam o tom de uma frase.",
+     "p": [
+      "mal: mais suave: Komm mal her! Kannst du mal helfen? Schau mal! (freundlicher, lockerer)",
+      "doch: encorajar: Komm doch mit! Setz dich doch! Das weißt du doch! (Einladung oder Erinnerung)",
+      "ja e denn: Das ist ja toll! (Überraschung) Wie heißt du denn? Was ist denn los? (interessierte Frage)"
+     ],
+     "q": "Convida-me para alguma coisa com doch e depois faz-me uma pergunta com denn. Eu respondo!",
+     "c": "Torna quatro frases mais simpáticas: mal em dois pedidos, doch num convite e denn numa pergunta."
+    },
+    "pt_BR": {
+     "t": "Partículas modais",
+     "g": "Descobrir doch, mal, ja, denn e eben: palavrinhas que mudam o tom de uma frase.",
+     "p": [
+      "mal: mais suave: Komm mal her! Kannst du mal helfen? Schau mal! (freundlicher, lockerer)",
+      "doch: encorajar: Komm doch mit! Setz dich doch! Das weißt du doch! (Einladung oder Erinnerung)",
+      "ja e denn: Das ist ja toll! (Überraschung) Wie heißt du denn? Was ist denn los? (interessierte Frage)"
+     ],
+     "q": "Me convide para algo usando doch e depois me faça uma pergunta com denn. Eu respondo!",
+     "c": "Deixe quatro frases mais simpáticas: mal em dois pedidos, doch num convite e denn numa pergunta."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "mal",
+      "ex": "Kannst du mir mal das Brot geben?"
+     },
+     {
+      "w": "doch",
+      "ex": "Bleib doch noch ein bisschen!"
+     },
+     {
+      "w": "ja",
+      "ex": "Du bist ja schon da!"
+     },
+     {
+      "w": "denn",
+      "ex": "Was machst du denn hier?"
+     },
+     {
+      "w": "eben",
+      "ex": "Dann nehmen wir eben den nächsten Zug."
+     },
+     {
+      "w": "doch (Antwort)",
+      "ex": "Kommst du nicht? Doch, ich komme!"
+     }
+    ],
+    "gram": "Modalpartikeln stehen im Mittelfeld, meist nach dem Verb und Pronomen: Komm doch mal vorbei! Sie sind unbetont."
+   }
+  },
+  {
+   "d": 165,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Common colloquial words",
+     "g": "Understand and use everyday colloquial words like krass, Quatsch, Kumpel, echt, cool and toll.",
+     "p": [
+      "Reactions: Echt? Krass! Cool! Toll! Wahnsinn! Super! Quatsch! (= Unsinn)",
+      "People: der Kumpel (guter Freund), die Leute, der Typ: Er ist ein netter Typ.",
+      "When to use: Mit Freunden ja, im Vorstellungsgespräch lieber nicht: dort sagt man sehr gut statt krass."
+     ],
+     "q": "Tell me some surprising news, real or invented, and I will react. Then react to mine with today's words!",
+     "c": "Write a short chat between two friends with at least four colloquial words, then rewrite one line formally."
+    },
+    "de": {
+     "t": "Häufige Umgangssprache",
+     "g": "Du verstehst und benutzt Umgangssprache wie krass, Quatsch, Kumpel, echt, cool und toll.",
+     "p": [
+      "Reaktionen: Echt? Krass! Cool! Toll! Wahnsinn! Super! Quatsch! (= Unsinn)",
+      "Leute: der Kumpel (guter Freund), die Leute, der Typ: Er ist ein netter Typ.",
+      "Wann benutzen: Mit Freunden ja, im Vorstellungsgespräch lieber nicht: dort sagt man sehr gut statt krass."
+     ],
+     "q": "Erzähl mir eine überraschende Neuigkeit, echt oder erfunden. Dann reagierst du auf meine mit den Wörtern von heute!",
+     "c": "Schreib einen kurzen Chat zwischen zwei Freunden mit vier Wörtern aus der Umgangssprache und formuliere eine Zeile formell."
+    },
+    "es": {
+     "t": "Palabras coloquiales frecuentes",
+     "g": "Entiende y usa palabras coloquiales como krass, Quatsch, Kumpel, echt, cool y toll.",
+     "p": [
+      "Reacciones: Echt? Krass! Cool! Toll! Wahnsinn! Super! Quatsch! (= Unsinn)",
+      "Personas: der Kumpel (guter Freund), die Leute, der Typ: Er ist ein netter Typ.",
+      "Cuándo usarlas: Mit Freunden ja, im Vorstellungsgespräch lieber nicht: dort sagt man sehr gut statt krass."
+     ],
+     "q": "Cuéntame una noticia sorprendente, real o inventada. ¡Luego reacciona a la mía con las palabras de hoy!",
+     "c": "Escribe un chat corto entre amigos con al menos cuatro palabras coloquiales y reescribe una línea en formal."
+    },
+    "fr": {
+     "t": "Mots familiers courants",
+     "g": "Comprendre et utiliser des mots familiers comme krass, Quatsch, Kumpel, echt, cool et toll.",
+     "p": [
+      "Réactions : Echt? Krass! Cool! Toll! Wahnsinn! Super! Quatsch! (= Unsinn)",
+      "Personnes : der Kumpel (guter Freund), die Leute, der Typ: Er ist ein netter Typ.",
+      "Quand les utiliser : Mit Freunden ja, im Vorstellungsgespräch lieber nicht: dort sagt man sehr gut statt krass."
+     ],
+     "q": "Raconte-moi une nouvelle surprenante, vraie ou inventée. Puis réagis à la mienne avec les mots du jour !",
+     "c": "Écris un court chat entre amis avec au moins quatre mots familiers, puis réécris une ligne en registre formel."
+    },
+    "it": {
+     "t": "Parole colloquiali comuni",
+     "g": "Capisci e usi parole colloquiali come krass, Quatsch, Kumpel, echt, cool e toll.",
+     "p": [
+      "Reazioni: Echt? Krass! Cool! Toll! Wahnsinn! Super! Quatsch! (= Unsinn)",
+      "Persone: der Kumpel (guter Freund), die Leute, der Typ: Er ist ein netter Typ.",
+      "Quando usarle: Mit Freunden ja, im Vorstellungsgespräch lieber nicht: dort sagt man sehr gut statt krass."
+     ],
+     "q": "Raccontami una notizia sorprendente, vera o inventata. Poi reagisci alla mia con le parole di oggi!",
+     "c": "Scrivi una breve chat tra amici con almeno quattro parole colloquiali, poi riscrivi una riga in modo formale."
+    },
+    "pt": {
+     "t": "Palavras coloquiais comuns",
+     "g": "Perceber e usar palavras coloquiais como krass, Quatsch, Kumpel, echt, cool e toll.",
+     "p": [
+      "Reações: Echt? Krass! Cool! Toll! Wahnsinn! Super! Quatsch! (= Unsinn)",
+      "Pessoas: der Kumpel (guter Freund), die Leute, der Typ: Er ist ein netter Typ.",
+      "Quando usar: Mit Freunden ja, im Vorstellungsgespräch lieber nicht: dort sagt man sehr gut statt krass."
+     ],
+     "q": "Conta-me uma novidade surpreendente, verdadeira ou inventada. Depois reage à minha com as palavras de hoje!",
+     "c": "Escreve um chat curto entre amigos com pelo menos quatro palavras coloquiais e reescreve uma linha em formal."
+    },
+    "pt_BR": {
+     "t": "Palavras coloquiais comuns",
+     "g": "Entender e usar palavras coloquiais como krass, Quatsch, Kumpel, echt, cool e toll.",
+     "p": [
+      "Reações: Echt? Krass! Cool! Toll! Wahnsinn! Super! Quatsch! (= Unsinn)",
+      "Pessoas: der Kumpel (guter Freund), die Leute, der Typ: Er ist ein netter Typ.",
+      "Quando usar: Mit Freunden ja, im Vorstellungsgespräch lieber nicht: dort sagt man sehr gut statt krass."
+     ],
+     "q": "Me conte uma novidade surpreendente, real ou inventada. Depois reaja à minha com as palavras de hoje!",
+     "c": "Escreva um chat curto entre amigos com pelo menos quatro palavras coloquiais e reescreva uma linha no formal."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "krass",
+      "ex": "Krass, du warst schon in Australien?"
+     },
+     {
+      "w": "Quatsch",
+      "ex": "Ach, Quatsch! Das stimmt doch nicht."
+     },
+     {
+      "w": "der Kumpel",
+      "ex": "Ich gehe heute mit meinem Kumpel ins Kino."
+     },
+     {
+      "w": "echt",
+      "ex": "Echt? Das wusste ich nicht."
+     },
+     {
+      "w": "toll",
+      "ex": "Das ist eine tolle Idee!"
+     },
+     {
+      "w": "cool",
+      "ex": "Dein neues Fahrrad ist echt cool."
+     }
+    ],
+    "gram": "Echt und total verstärken Adjektive: echt gut, total müde. Krass kann positiv oder negativ sein, je nach Kontext."
+   }
+  },
+  {
+   "d": 166,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Berlin and its districts",
+     "g": "Discover Berlin life and districts like Kreuzberg, Mitte and Prenzlauer Berg, and describe a neighbourhood.",
+     "p": [
+      "Districts: Mitte: Brandenburger Tor, Museumsinsel. Kreuzberg: bunt und international. Prenzlauer Berg: Altbauten und Cafés.",
+      "Getting around: Mit der U-Bahn, der S-Bahn, der Tram oder mit dem Rad. Der Kiez ist das eigene Viertel.",
+      "Describing: Das Viertel ist lebendig, ruhig, grün, teuer. Es gibt viele Bars und kleine Läden."
+     ],
+     "q": "Which Berlin sight would you visit first, and what is the best district in your own city?",
+     "c": "Describe your favourite neighbourhood like a Berliner describes a Kiez: four adjectives and three places."
+    },
+    "de": {
+     "t": "Berlin und seine Bezirke",
+     "g": "Du entdeckst Berlin und Bezirke wie Kreuzberg, Mitte und Prenzlauer Berg und beschreibst ein Viertel.",
+     "p": [
+      "Bezirke: Mitte: Brandenburger Tor, Museumsinsel. Kreuzberg: bunt und international. Prenzlauer Berg: Altbauten und Cafés.",
+      "Unterwegs: Mit der U-Bahn, der S-Bahn, der Tram oder mit dem Rad. Der Kiez ist das eigene Viertel.",
+      "Beschreiben: Das Viertel ist lebendig, ruhig, grün, teuer. Es gibt viele Bars und kleine Läden."
+     ],
+     "q": "Welche Berliner Sehenswürdigkeit würdest du zuerst besuchen, und was ist das schönste Viertel in deiner Stadt?",
+     "c": "Beschreib dein Lieblingsviertel wie ein Berliner seinen Kiez: vier Adjektive und drei Orte."
+    },
+    "es": {
+     "t": "Berlín y sus barrios",
+     "g": "Descubre la vida en Berlín y barrios como Kreuzberg, Mitte y Prenzlauer Berg, y describe un barrio.",
+     "p": [
+      "Barrios: Mitte: Brandenburger Tor, Museumsinsel. Kreuzberg: bunt und international. Prenzlauer Berg: Altbauten und Cafés.",
+      "Moverse: Mit der U-Bahn, der S-Bahn, der Tram oder mit dem Rad. Der Kiez ist das eigene Viertel.",
+      "Describir: Das Viertel ist lebendig, ruhig, grün, teuer. Es gibt viele Bars und kleine Läden."
+     ],
+     "q": "¿Qué lugar de Berlín visitarías primero y cuál es el mejor barrio de tu ciudad?",
+     "c": "Describe tu barrio favorito como un berlinés describe su Kiez: cuatro adjetivos y tres lugares."
+    },
+    "fr": {
+     "t": "Berlin et ses quartiers",
+     "g": "Découvrir la vie à Berlin et des quartiers comme Kreuzberg, Mitte et Prenzlauer Berg, et décrire un quartier.",
+     "p": [
+      "Quartiers : Mitte: Brandenburger Tor, Museumsinsel. Kreuzberg: bunt und international. Prenzlauer Berg: Altbauten und Cafés.",
+      "Se déplacer : Mit der U-Bahn, der S-Bahn, der Tram oder mit dem Rad. Der Kiez ist das eigene Viertel.",
+      "Décrire : Das Viertel ist lebendig, ruhig, grün, teuer. Es gibt viele Bars und kleine Läden."
+     ],
+     "q": "Quel lieu de Berlin visiterais-tu en premier, et quel est le meilleur quartier de ta ville ?",
+     "c": "Décris ton quartier préféré comme un Berlinois son Kiez : quatre adjectifs et trois lieux."
+    },
+    "it": {
+     "t": "Berlino e i suoi quartieri",
+     "g": "Scopri la vita a Berlino e quartieri come Kreuzberg, Mitte e Prenzlauer Berg e descrivi una zona.",
+     "p": [
+      "Quartieri: Mitte: Brandenburger Tor, Museumsinsel. Kreuzberg: bunt und international. Prenzlauer Berg: Altbauten und Cafés.",
+      "Spostarsi: Mit der U-Bahn, der S-Bahn, der Tram oder mit dem Rad. Der Kiez ist das eigene Viertel.",
+      "Descrivere: Das Viertel ist lebendig, ruhig, grün, teuer. Es gibt viele Bars und kleine Läden."
+     ],
+     "q": "Quale luogo di Berlino visiteresti per primo e qual è il quartiere più bello della tua città?",
+     "c": "Descrivi il tuo quartiere preferito come un berlinese il suo Kiez: quattro aggettivi e tre luoghi."
+    },
+    "pt": {
+     "t": "Berlim e os seus bairros",
+     "g": "Descobrir a vida em Berlim e bairros como Kreuzberg, Mitte e Prenzlauer Berg, e descrever um bairro.",
+     "p": [
+      "Bairros: Mitte: Brandenburger Tor, Museumsinsel. Kreuzberg: bunt und international. Prenzlauer Berg: Altbauten und Cafés.",
+      "Deslocar-se: Mit der U-Bahn, der S-Bahn, der Tram oder mit dem Rad. Der Kiez ist das eigene Viertel.",
+      "Descrever: Das Viertel ist lebendig, ruhig, grün, teuer. Es gibt viele Bars und kleine Läden."
+     ],
+     "q": "Que sítio de Berlim visitarias primeiro e qual é o melhor bairro da tua cidade?",
+     "c": "Descreve o teu bairro preferido como um berlinense descreve o seu Kiez: quatro adjetivos e três sítios."
+    },
+    "pt_BR": {
+     "t": "Berlim e seus bairros",
+     "g": "Descobrir a vida em Berlim e bairros como Kreuzberg, Mitte e Prenzlauer Berg, e descrever um bairro.",
+     "p": [
+      "Bairros: Mitte: Brandenburger Tor, Museumsinsel. Kreuzberg: bunt und international. Prenzlauer Berg: Altbauten und Cafés.",
+      "Se locomover: Mit der U-Bahn, der S-Bahn, der Tram oder mit dem Rad. Der Kiez ist das eigene Viertel.",
+      "Descrever: Das Viertel ist lebendig, ruhig, grün, teuer. Es gibt viele Bars und kleine Läden."
+     ],
+     "q": "Que lugar de Berlim você visitaria primeiro e qual é o melhor bairro da sua cidade?",
+     "c": "Descreva seu bairro favorito como um berlinense descreve seu Kiez: quatro adjetivos e três lugares."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Bezirk",
+      "ex": "Mitte ist ein Bezirk im Zentrum von Berlin."
+     },
+     {
+      "w": "der Kiez",
+      "ex": "In meinem Kiez kennt jeder jeden."
+     },
+     {
+      "w": "das Viertel",
+      "ex": "Das Viertel ist sehr lebendig."
+     },
+     {
+      "w": "die S-Bahn",
+      "ex": "Wir fahren mit der S-Bahn zum Alexanderplatz."
+     },
+     {
+      "w": "der Altbau",
+      "ex": "Sie wohnt in einem schönen Altbau."
+     },
+     {
+      "w": "die Sehenswürdigkeit",
+      "ex": "Das Brandenburger Tor ist eine berühmte Sehenswürdigkeit."
+     }
+    ],
+    "gram": "In + Dativ für Orte: in Kreuzberg, im Viertel, in der Stadtmitte. Es gibt + Akkusativ: Es gibt einen Park."
+   }
+  },
+  {
+   "d": 167,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Regions of Germany",
+     "g": "Learn about Bavaria, Hamburg, Saxony and the Rhineland and their specialities.",
+     "p": [
+      "The states: Deutschland hat 16 Bundesländer, zum Beispiel Bayern, Sachsen, Hamburg und Nordrhein-Westfalen.",
+      "Specialities: Bayern: Alpen und Brezeln. Hamburg: Hafen. Sachsen: Dresden und Stollen. Rheinland: Karneval und Wein.",
+      "Locating: Hamburg liegt im Norden, Bayern im Süden, Sachsen im Osten, das Rheinland im Westen."
+     ],
+     "q": "Which German region would you like to visit, and why? What is your own region famous for?",
+     "c": "Present your home region in five sentences: where it lies, one city, one dish, one festival and bekannt für."
+    },
+    "de": {
+     "t": "Regionen Deutschlands",
+     "g": "Du lernst Bayern, Hamburg, Sachsen und das Rheinland mit ihren Besonderheiten kennen.",
+     "p": [
+      "Die Länder: Deutschland hat 16 Bundesländer, zum Beispiel Bayern, Sachsen, Hamburg und Nordrhein-Westfalen.",
+      "Spezialitäten: Bayern: Alpen und Brezeln. Hamburg: Hafen. Sachsen: Dresden und Stollen. Rheinland: Karneval und Wein.",
+      "Lage: Hamburg liegt im Norden, Bayern im Süden, Sachsen im Osten, das Rheinland im Westen."
+     ],
+     "q": "Welche Region in Deutschland möchtest du besuchen, und warum? Wofür ist deine eigene Region bekannt?",
+     "c": "Stell deine Heimatregion in fünf Sätzen vor: Lage, eine Stadt, ein Gericht, ein Fest und bekannt für."
+    },
+    "es": {
+     "t": "Las regiones de Alemania",
+     "g": "Conoce Baviera, Hamburgo, Sajonia y Renania y sus especialidades.",
+     "p": [
+      "Los estados: Deutschland hat 16 Bundesländer, zum Beispiel Bayern, Sachsen, Hamburg und Nordrhein-Westfalen.",
+      "Especialidades: Bayern: Alpen und Brezeln. Hamburg: Hafen. Sachsen: Dresden und Stollen. Rheinland: Karneval und Wein.",
+      "Ubicación: Hamburg liegt im Norden, Bayern im Süden, Sachsen im Osten, das Rheinland im Westen."
+     ],
+     "q": "¿Qué región alemana te gustaría visitar y por qué? ¿Por qué es famosa tu región?",
+     "c": "Presenta tu región en cinco frases: dónde está, una ciudad, un plato, una fiesta y bekannt für."
+    },
+    "fr": {
+     "t": "Les régions d'Allemagne",
+     "g": "Découvrir la Bavière, Hambourg, la Saxe et la Rhénanie et leurs spécialités.",
+     "p": [
+      "Les Länder : Deutschland hat 16 Bundesländer, zum Beispiel Bayern, Sachsen, Hamburg und Nordrhein-Westfalen.",
+      "Spécialités : Bayern: Alpen und Brezeln. Hamburg: Hafen. Sachsen: Dresden und Stollen. Rheinland: Karneval und Wein.",
+      "Situer : Hamburg liegt im Norden, Bayern im Süden, Sachsen im Osten, das Rheinland im Westen."
+     ],
+     "q": "Quelle région allemande aimerais-tu visiter, et pourquoi ? Pour quoi ta région est-elle connue ?",
+     "c": "Présente ta région en cinq phrases : situation, une ville, un plat, une fête et bekannt für."
+    },
+    "it": {
+     "t": "Le regioni della Germania",
+     "g": "Conosci la Baviera, Amburgo, la Sassonia e la Renania e le loro specialità.",
+     "p": [
+      "I Länder: Deutschland hat 16 Bundesländer, zum Beispiel Bayern, Sachsen, Hamburg und Nordrhein-Westfalen.",
+      "Specialità: Bayern: Alpen und Brezeln. Hamburg: Hafen. Sachsen: Dresden und Stollen. Rheinland: Karneval und Wein.",
+      "Posizione: Hamburg liegt im Norden, Bayern im Süden, Sachsen im Osten, das Rheinland im Westen."
+     ],
+     "q": "Quale regione tedesca vorresti visitare e perché? Per che cosa è famosa la tua regione?",
+     "c": "Presenta la tua regione in cinque frasi: posizione, una città, un piatto, una festa e bekannt für."
+    },
+    "pt": {
+     "t": "As regiões da Alemanha",
+     "g": "Conhecer a Baviera, Hamburgo, a Saxónia e a Renânia e as suas especialidades.",
+     "p": [
+      "Os estados: Deutschland hat 16 Bundesländer, zum Beispiel Bayern, Sachsen, Hamburg und Nordrhein-Westfalen.",
+      "Especialidades: Bayern: Alpen und Brezeln. Hamburg: Hafen. Sachsen: Dresden und Stollen. Rheinland: Karneval und Wein.",
+      "Localizar: Hamburg liegt im Norden, Bayern im Süden, Sachsen im Osten, das Rheinland im Westen."
+     ],
+     "q": "Que região alemã gostavas de visitar e porquê? Pelo que é conhecida a tua região?",
+     "c": "Apresenta a tua região em cinco frases: localização, uma cidade, um prato, uma festa e bekannt für."
+    },
+    "pt_BR": {
+     "t": "As regiões da Alemanha",
+     "g": "Conhecer a Baviera, Hamburgo, a Saxônia e a Renânia e suas especialidades.",
+     "p": [
+      "Os estados: Deutschland hat 16 Bundesländer, zum Beispiel Bayern, Sachsen, Hamburg und Nordrhein-Westfalen.",
+      "Especialidades: Bayern: Alpen und Brezeln. Hamburg: Hafen. Sachsen: Dresden und Stollen. Rheinland: Karneval und Wein.",
+      "Localizar: Hamburg liegt im Norden, Bayern im Süden, Sachsen im Osten, das Rheinland im Westen."
+     ],
+     "q": "Qual região alemã você gostaria de visitar e por quê? Pelo que a sua região é conhecida?",
+     "c": "Apresente sua região em cinco frases: localização, uma cidade, um prato, uma festa e bekannt für."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "das Bundesland",
+      "ex": "Bayern ist das größte Bundesland."
+     },
+     {
+      "w": "im Norden",
+      "ex": "Hamburg liegt im Norden."
+     },
+     {
+      "w": "bekannt für",
+      "ex": "Sachsen ist bekannt für Dresden."
+     },
+     {
+      "w": "der Hafen",
+      "ex": "Der Hamburger Hafen ist riesig."
+     },
+     {
+      "w": "die Spezialität",
+      "ex": "Stollen ist eine Spezialität aus Dresden."
+     },
+     {
+      "w": "liegen",
+      "ex": "Köln liegt am Rhein."
+     }
+    ],
+    "gram": "Im Norden/Süden/Osten/Westen (in + dem). Am Rhein, an der Elbe. Städtenamen als Adjektiv mit -er: Hamburger Hafen."
+   }
+  },
+  {
+   "d": 168,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Austria and Switzerland",
+     "g": "Notice vocabulary differences in Austria and Switzerland: Grüß Gott, Grüezi, Jänner, Velo.",
+     "p": [
+      "Austria: Grüß Gott / Servus, der Jänner (Januar), die Marille (Aprikose), der Paradeiser (Tomate).",
+      "Switzerland: Grüezi / Sali, das Velo (Fahrrad), merci (danke), das Natel (Handy). Schriftlich ss statt ß.",
+      "Same language: Alle sprechen Deutsch, aber mit eigenen Wörtern und Akzenten. Standarddeutsch versteht man überall."
+     ],
+     "q": "Which country would you visit first, Austria or Switzerland? Greet me like a local there!",
+     "c": "Make a small table of five words: German standard, Austrian and Swiss, then use two in sentences."
+    },
+    "de": {
+     "t": "Österreich und die Schweiz",
+     "g": "Du erkennst Wortunterschiede in Österreich und der Schweiz: Grüß Gott, Grüezi, Jänner, Velo.",
+     "p": [
+      "Österreich: Grüß Gott / Servus, der Jänner (Januar), die Marille (Aprikose), der Paradeiser (Tomate).",
+      "Schweiz: Grüezi / Sali, das Velo (Fahrrad), merci (danke), das Natel (Handy). Schriftlich ss statt ß.",
+      "Eine Sprache: Alle sprechen Deutsch, aber mit eigenen Wörtern und Akzenten. Standarddeutsch versteht man überall."
+     ],
+     "q": "Welches Land würdest du zuerst besuchen, Österreich oder die Schweiz? Begrüß mich wie die Leute dort!",
+     "c": "Mach eine kleine Tabelle mit fünf Wörtern: Deutschland, Österreich, Schweiz, und benutz zwei in Sätzen."
+    },
+    "es": {
+     "t": "Austria y Suiza",
+     "g": "Descubre diferencias de vocabulario en Austria y Suiza: Grüß Gott, Grüezi, Jänner, Velo.",
+     "p": [
+      "Austria: Grüß Gott / Servus, der Jänner (Januar), die Marille (Aprikose), der Paradeiser (Tomate).",
+      "Suiza: Grüezi / Sali, das Velo (Fahrrad), merci (danke), das Natel (Handy). Schriftlich ss statt ß.",
+      "Una lengua: Alle sprechen Deutsch, aber mit eigenen Wörtern und Akzenten. Standarddeutsch versteht man überall."
+     ],
+     "q": "¿Qué país visitarías primero, Austria o Suiza? ¡Salúdame como la gente de allí!",
+     "c": "Haz una tablita de cinco palabras: alemán estándar, austriaco y suizo, y usa dos en frases."
+    },
+    "fr": {
+     "t": "L'Autriche et la Suisse",
+     "g": "Repérer les différences de vocabulaire en Autriche et en Suisse : Grüß Gott, Grüezi, Jänner, Velo.",
+     "p": [
+      "Autriche : Grüß Gott / Servus, der Jänner (Januar), die Marille (Aprikose), der Paradeiser (Tomate).",
+      "Suisse : Grüezi / Sali, das Velo (Fahrrad), merci (danke), das Natel (Handy). Schriftlich ss statt ß.",
+      "Une même langue : Alle sprechen Deutsch, aber mit eigenen Wörtern und Akzenten. Standarddeutsch versteht man überall."
+     ],
+     "q": "Quel pays visiterais-tu en premier, l'Autriche ou la Suisse ? Salue-moi comme les gens de là-bas !",
+     "c": "Fais un petit tableau de cinq mots : allemand standard, autrichien et suisse, puis utilises-en deux dans des phrases."
+    },
+    "it": {
+     "t": "Austria e Svizzera",
+     "g": "Noti le differenze di lessico in Austria e Svizzera: Grüß Gott, Grüezi, Jänner, Velo.",
+     "p": [
+      "Austria: Grüß Gott / Servus, der Jänner (Januar), die Marille (Aprikose), der Paradeiser (Tomate).",
+      "Svizzera: Grüezi / Sali, das Velo (Fahrrad), merci (danke), das Natel (Handy). Schriftlich ss statt ß.",
+      "Una lingua: Alle sprechen Deutsch, aber mit eigenen Wörtern und Akzenten. Standarddeutsch versteht man überall."
+     ],
+     "q": "Quale paese visiteresti per primo, l'Austria o la Svizzera? Salutami come la gente del posto!",
+     "c": "Fai una piccola tabella di cinque parole: tedesco standard, austriaco e svizzero, poi usane due in frasi."
+    },
+    "pt": {
+     "t": "A Áustria e a Suíça",
+     "g": "Reparar nas diferenças de vocabulário na Áustria e na Suíça: Grüß Gott, Grüezi, Jänner, Velo.",
+     "p": [
+      "Áustria: Grüß Gott / Servus, der Jänner (Januar), die Marille (Aprikose), der Paradeiser (Tomate).",
+      "Suíça: Grüezi / Sali, das Velo (Fahrrad), merci (danke), das Natel (Handy). Schriftlich ss statt ß.",
+      "Uma língua: Alle sprechen Deutsch, aber mit eigenen Wörtern und Akzenten. Standarddeutsch versteht man überall."
+     ],
+     "q": "Que país visitarias primeiro, a Áustria ou a Suíça? Cumprimenta-me como as pessoas de lá!",
+     "c": "Faz uma pequena tabela de cinco palavras: alemão padrão, austríaco e suíço, e usa duas em frases."
+    },
+    "pt_BR": {
+     "t": "A Áustria e a Suíça",
+     "g": "Perceber as diferenças de vocabulário na Áustria e na Suíça: Grüß Gott, Grüezi, Jänner, Velo.",
+     "p": [
+      "Áustria: Grüß Gott / Servus, der Jänner (Januar), die Marille (Aprikose), der Paradeiser (Tomate).",
+      "Suíça: Grüezi / Sali, das Velo (Fahrrad), merci (danke), das Natel (Handy). Schriftlich ss statt ß.",
+      "Uma língua: Alle sprechen Deutsch, aber mit eigenen Wörtern und Akzenten. Standarddeutsch versteht man überall."
+     ],
+     "q": "Qual país você visitaria primeiro, a Áustria ou a Suíça? Me cumprimente como as pessoas de lá!",
+     "c": "Faça uma pequena tabela de cinco palavras: alemão padrão, austríaco e suíço, e use duas em frases."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Grüß Gott",
+      "ex": "Grüß Gott, was darf es sein?"
+     },
+     {
+      "w": "Grüezi",
+      "ex": "Grüezi miteinander!"
+     },
+     {
+      "w": "der Jänner",
+      "ex": "Im Jänner fahren wir in Tirol Ski."
+     },
+     {
+      "w": "das Velo",
+      "ex": "In Zürich fahre ich mit dem Velo zur Arbeit."
+     },
+     {
+      "w": "die Marille",
+      "ex": "Marillenknödel sind eine österreichische Spezialität."
+     },
+     {
+      "w": "Servus",
+      "ex": "Servus, wie geht's dir?"
+     }
+    ],
+    "gram": "In der Schweiz schreibt man ss statt ß: Strasse. Ländernamen mit Artikel: die Schweiz, in der Schweiz; aber in Österreich."
+   }
+  },
+  {
+   "d": 169,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Welcher and dieser",
+     "g": "Ask which one with welcher and point to things with dieser, using the right endings.",
+     "p": [
+      "Endings like der/die/das: welcher/dieser Rock, welche/diese Jacke, welches/dieses Kleid, welche/diese Schuhe.",
+      "Shopping: Welches Kleid gefällt dir? Dieses hier! Welchen Pullover nimmst du? Diesen da.",
+      "Cases: Akkusativ maskulin: welchen, diesen. Dativ: mit welchem Bus? In dieser Straße."
+     ],
+     "q": "Imagine we are in a clothes shop. Ask me two questions with welcher and answer mine with dieser.",
+     "c": "Write four question-answer pairs with welcher/dieser: one masculine accusative, one feminine, one neuter, one plural."
+    },
+    "de": {
+     "t": "Welcher und dieser",
+     "g": "Du fragst mit welcher und zeigst mit dieser auf Dinge, mit den richtigen Endungen.",
+     "p": [
+      "Endungen wie der/die/das: welcher/dieser Rock, welche/diese Jacke, welches/dieses Kleid, welche/diese Schuhe.",
+      "Einkaufen: Welches Kleid gefällt dir? Dieses hier! Welchen Pullover nimmst du? Diesen da.",
+      "Fälle: Akkusativ maskulin: welchen, diesen. Dativ: mit welchem Bus? In dieser Straße."
+     ],
+     "q": "Stell dir vor, wir sind in einem Kleidergeschäft. Stell mir zwei Fragen mit welcher und antworte mit dieser.",
+     "c": "Schreib vier Frage-Antwort-Paare mit welcher/dieser: Akkusativ maskulin, feminin, neutral, Plural."
+    },
+    "es": {
+     "t": "Welcher y dieser",
+     "g": "Pregunta cuál con welcher y señala cosas con dieser, con las terminaciones correctas.",
+     "p": [
+      "Terminaciones como der/die/das: welcher/dieser Rock, welche/diese Jacke, welches/dieses Kleid, welche/diese Schuhe.",
+      "De compras: Welches Kleid gefällt dir? Dieses hier! Welchen Pullover nimmst du? Diesen da.",
+      "Casos: Akkusativ maskulin: welchen, diesen. Dativ: mit welchem Bus? In dieser Straße."
+     ],
+     "q": "Imagina que estamos en una tienda de ropa. Hazme dos preguntas con welcher y responde con dieser.",
+     "c": "Escribe cuatro pares pregunta-respuesta con welcher/dieser: masculino acusativo, femenino, neutro y plural."
+    },
+    "fr": {
+     "t": "Welcher et dieser",
+     "g": "Demander lequel avec welcher et montrer avec dieser, avec les bonnes terminaisons.",
+     "p": [
+      "Terminaisons comme der/die/das : welcher/dieser Rock, welche/diese Jacke, welches/dieses Kleid, welche/diese Schuhe.",
+      "Shopping : Welches Kleid gefällt dir? Dieses hier! Welchen Pullover nimmst du? Diesen da.",
+      "Cas : Akkusativ maskulin: welchen, diesen. Dativ: mit welchem Bus? In dieser Straße."
+     ],
+     "q": "Imagine qu'on est dans une boutique. Pose-moi deux questions avec welcher et réponds avec dieser.",
+     "c": "Écris quatre paires question-réponse avec welcher/dieser : masculin accusatif, féminin, neutre et pluriel."
+    },
+    "it": {
+     "t": "Welcher e dieser",
+     "g": "Chiedi quale con welcher e indica le cose con dieser, con le desinenze giuste.",
+     "p": [
+      "Desinenze come der/die/das: welcher/dieser Rock, welche/diese Jacke, welches/dieses Kleid, welche/diese Schuhe.",
+      "Shopping: Welches Kleid gefällt dir? Dieses hier! Welchen Pullover nimmst du? Diesen da.",
+      "Casi: Akkusativ maskulin: welchen, diesen. Dativ: mit welchem Bus? In dieser Straße."
+     ],
+     "q": "Immagina che siamo in un negozio di vestiti. Fammi due domande con welcher e rispondi con dieser.",
+     "c": "Scrivi quattro coppie domanda-risposta con welcher/dieser: maschile accusativo, femminile, neutro e plurale."
+    },
+    "pt": {
+     "t": "Welcher e dieser",
+     "g": "Perguntar qual com welcher e apontar coisas com dieser, com as terminações certas.",
+     "p": [
+      "Terminações como der/die/das: welcher/dieser Rock, welche/diese Jacke, welches/dieses Kleid, welche/diese Schuhe.",
+      "Compras: Welches Kleid gefällt dir? Dieses hier! Welchen Pullover nimmst du? Diesen da.",
+      "Casos: Akkusativ maskulin: welchen, diesen. Dativ: mit welchem Bus? In dieser Straße."
+     ],
+     "q": "Imagina que estamos numa loja de roupa. Faz-me duas perguntas com welcher e responde com dieser.",
+     "c": "Escreve quatro pares pergunta-resposta com welcher/dieser: masculino acusativo, feminino, neutro e plural."
+    },
+    "pt_BR": {
+     "t": "Welcher e dieser",
+     "g": "Perguntar qual com welcher e apontar coisas com dieser, com as terminações certas.",
+     "p": [
+      "Terminações como der/die/das: welcher/dieser Rock, welche/diese Jacke, welches/dieses Kleid, welche/diese Schuhe.",
+      "Compras: Welches Kleid gefällt dir? Dieses hier! Welchen Pullover nimmst du? Diesen da.",
+      "Casos: Akkusativ maskulin: welchen, diesen. Dativ: mit welchem Bus? In dieser Straße."
+     ],
+     "q": "Imagine que estamos numa loja de roupas. Me faça duas perguntas com welcher e responda com dieser.",
+     "c": "Escreva quatro pares pergunta-resposta com welcher/dieser: masculino acusativo, feminino, neutro e plural."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "welcher",
+      "ex": "Welcher Bus fährt zum Bahnhof?"
+     },
+     {
+      "w": "welches",
+      "ex": "Welches Kleid findest du schöner?"
+     },
+     {
+      "w": "welchen",
+      "ex": "Welchen Film möchtest du sehen?"
+     },
+     {
+      "w": "dieser",
+      "ex": "Dieser Pullover ist zu warm."
+     },
+     {
+      "w": "diese hier",
+      "ex": "Ich nehme diese hier."
+     },
+     {
+      "w": "in dieser Straße",
+      "ex": "In dieser Straße gibt es viele Cafés."
+     }
+    ],
+    "gram": "Welcher und dieser haben die Endungen des bestimmten Artikels: der → dieser, den → diesen, dem → diesem, das → dieses."
+   }
+  },
+  {
+   "d": 170,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Relative clauses: nominative",
+     "g": "Describe people and things with relative clauses in the nominative: der Mann, der dort steht.",
+     "p": [
+      "Pronouns: der Mann, der ...; die Frau, die ...; das Kind, das ...; die Leute, die ...",
+      "Verb at the end: Das ist die Frau, die neben mir wohnt. Ich habe einen Freund, der in Wien studiert.",
+      "Commas: Der Relativsatz steht zwischen Kommas: Der Zug, der jetzt kommt, fährt nach Bonn."
+     ],
+     "q": "Describe a person who is important to you, using at least two relative clauses with der or die.",
+     "c": "Join four pairs of sentences into one with a relative clause, e.g. Ich habe eine Katze. Sie ist schwarz."
+    },
+    "de": {
+     "t": "Relativsätze: Nominativ",
+     "g": "Du beschreibst Personen und Dinge mit Relativsätzen im Nominativ: der Mann, der dort steht.",
+     "p": [
+      "Pronomen: der Mann, der ...; die Frau, die ...; das Kind, das ...; die Leute, die ...",
+      "Verb am Ende: Das ist die Frau, die neben mir wohnt. Ich habe einen Freund, der in Wien studiert.",
+      "Kommas: Der Relativsatz steht zwischen Kommas: Der Zug, der jetzt kommt, fährt nach Bonn."
+     ],
+     "q": "Beschreib eine Person, die dir wichtig ist, mit mindestens zwei Relativsätzen mit der oder die.",
+     "c": "Verbinde vier Satzpaare mit einem Relativsatz, z. B. Ich habe eine Katze. Sie ist schwarz."
+    },
+    "es": {
+     "t": "Oraciones de relativo: nominativo",
+     "g": "Describe personas y cosas con oraciones de relativo en nominativo: der Mann, der dort steht.",
+     "p": [
+      "Pronombres: der Mann, der ...; die Frau, die ...; das Kind, das ...; die Leute, die ...",
+      "Verbo al final: Das ist die Frau, die neben mir wohnt. Ich habe einen Freund, der in Wien studiert.",
+      "Comas: Der Relativsatz steht zwischen Kommas: Der Zug, der jetzt kommt, fährt nach Bonn."
+     ],
+     "q": "Describe a una persona importante para ti con al menos dos oraciones de relativo con der o die.",
+     "c": "Une cuatro pares de frases con una oración de relativo, p. ej. Ich habe eine Katze. Sie ist schwarz."
+    },
+    "fr": {
+     "t": "Les relatives : nominatif",
+     "g": "Décrire des personnes et des choses avec des relatives au nominatif : der Mann, der dort steht.",
+     "p": [
+      "Pronoms : der Mann, der ...; die Frau, die ...; das Kind, das ...; die Leute, die ...",
+      "Verbe à la fin : Das ist die Frau, die neben mir wohnt. Ich habe einen Freund, der in Wien studiert.",
+      "Virgules : Der Relativsatz steht zwischen Kommas: Der Zug, der jetzt kommt, fährt nach Bonn."
+     ],
+     "q": "Décris une personne importante pour toi avec au moins deux relatives avec der ou die.",
+     "c": "Relie quatre paires de phrases avec une relative, par ex. Ich habe eine Katze. Sie ist schwarz."
+    },
+    "it": {
+     "t": "Le relative: nominativo",
+     "g": "Descrivi persone e cose con frasi relative al nominativo: der Mann, der dort steht.",
+     "p": [
+      "Pronomi: der Mann, der ...; die Frau, die ...; das Kind, das ...; die Leute, die ...",
+      "Verbo alla fine: Das ist die Frau, die neben mir wohnt. Ich habe einen Freund, der in Wien studiert.",
+      "Virgole: Der Relativsatz steht zwischen Kommas: Der Zug, der jetzt kommt, fährt nach Bonn."
+     ],
+     "q": "Descrivi una persona importante per te con almeno due frasi relative con der o die.",
+     "c": "Unisci quattro coppie di frasi con una relativa, ad es. Ich habe eine Katze. Sie ist schwarz."
+    },
+    "pt": {
+     "t": "Orações relativas: nominativo",
+     "g": "Descrever pessoas e coisas com orações relativas no nominativo: der Mann, der dort steht.",
+     "p": [
+      "Pronomes: der Mann, der ...; die Frau, die ...; das Kind, das ...; die Leute, die ...",
+      "Verbo no fim: Das ist die Frau, die neben mir wohnt. Ich habe einen Freund, der in Wien studiert.",
+      "Vírgulas: Der Relativsatz steht zwischen Kommas: Der Zug, der jetzt kommt, fährt nach Bonn."
+     ],
+     "q": "Descreve uma pessoa importante para ti com pelo menos duas orações relativas com der ou die.",
+     "c": "Junta quatro pares de frases com uma oração relativa, por ex. Ich habe eine Katze. Sie ist schwarz."
+    },
+    "pt_BR": {
+     "t": "Orações relativas: nominativo",
+     "g": "Descrever pessoas e coisas com orações relativas no nominativo: der Mann, der dort steht.",
+     "p": [
+      "Pronomes: der Mann, der ...; die Frau, die ...; das Kind, das ...; die Leute, die ...",
+      "Verbo no final: Das ist die Frau, die neben mir wohnt. Ich habe einen Freund, der in Wien studiert.",
+      "Vírgulas: Der Relativsatz steht zwischen Kommas: Der Zug, der jetzt kommt, fährt nach Bonn."
+     ],
+     "q": "Descreva uma pessoa importante para você com pelo menos duas orações relativas com der ou die.",
+     "c": "Junte quatro pares de frases com uma oração relativa, por ex. Ich habe eine Katze. Sie ist schwarz."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Mann, der",
+      "ex": "Der Mann, der dort steht, ist mein Lehrer."
+     },
+     {
+      "w": "die Frau, die",
+      "ex": "Die Frau, die singt, ist meine Tante."
+     },
+     {
+      "w": "das Kind, das",
+      "ex": "Das Kind, das weint, sucht seine Mutter."
+     },
+     {
+      "w": "die Leute, die",
+      "ex": "Die Leute, die hier wohnen, sind nett."
+     },
+     {
+      "w": "ein Buch, das",
+      "ex": "Ich suche ein Buch, das leicht ist."
+     },
+     {
+      "w": "eine Stadt, die",
+      "ex": "Wien ist eine Stadt, die mir gefällt."
+     }
+    ],
+    "gram": "Relativpronomen im Nominativ = der, die, das, die (Plural). Genus vom Nomen davor, Verb am Ende des Relativsatzes."
+   }
+  }
+ ]
+}

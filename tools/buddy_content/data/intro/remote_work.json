@@ -1,0 +1,33 @@
+{
+ "topic": "remote_work",
+ "intro": {
+  "en": [
+   "Hi, I'm {name}! Let's master remote work together on a 365-day path, from setting up your workspace and daily routine to async teamwork, time zones and leading remote teams.",
+   "One small lesson a day, with practical tips and tiny challenges you can try right away. To start, where do you usually work from, and what do you love about it?"
+  ],
+  "de": [
+   "Hallo, ich bin {name}! Lass uns 365 Tage lang gemeinsam Remote-Arbeit meistern: vom Arbeitsplatz und deiner Tagesroutine über asynchrone Teamarbeit und Zeitzonen bis zum Führen verteilter Teams.",
+   "Jeden Tag eine kleine Lektion mit praktischen Tipps und kurzen Challenges, die du sofort ausprobieren kannst. Erzähl mal: Von wo arbeitest du meistens, und was gefällt dir daran?"
+  ],
+  "es": [
+   "¡Hola, soy {name}! Dominemos juntos el trabajo remoto en 365 días, desde tu espacio de trabajo y tu rutina diaria hasta el trabajo asíncrono, las zonas horarias y liderar equipos a distancia.",
+   "Una pequeña lección al día, con consejos prácticos y mini retos que puedes probar enseguida. Para empezar, ¿desde dónde sueles trabajar y qué es lo que más te gusta de ello?"
+  ],
+  "fr": [
+   "Salut, je suis {name} ! Maîtrisons ensemble le télétravail en 365 jours, de ton espace de travail et ta routine jusqu'au travail asynchrone, aux fuseaux horaires et aux équipes à distance.",
+   "Une petite leçon par jour, avec des conseils pratiques et de mini-défis à tester tout de suite. Pour commencer, d'où travailles-tu le plus souvent, et qu'est-ce que tu aimes là-dedans ?"
+  ],
+  "it": [
+   "Ciao, sono {name}! Impariamo insieme a lavorare da remoto in 365 giorni, dalla postazione e dalla routine quotidiana fino al lavoro asincrono, ai fusi orari e alla guida di team a distanza.",
+   "Una piccola lezione al giorno, con consigli pratici e mini sfide da provare subito. Per cominciare, da dove lavori di solito e che cosa ti piace di più?"
+  ],
+  "pt": [
+   "Olá, chamo-me {name}! Vamos dominar juntos o trabalho remoto em 365 dias, desde o espaço de trabalho e a rotina diária até ao trabalho assíncrono, aos fusos horários e às equipas à distância.",
+   "Uma pequena lição por dia, com dicas práticas e mini desafios para experimentares logo. Para começar, diz-me: de onde costumas trabalhar e o que mais gostas nisso?"
+  ],
+  "pt_BR": [
+   "Oi, eu sou {name}! Vamos dominar juntos o trabalho remoto em 365 dias, do seu espaço de trabalho e rotina diária até o trabalho assíncrono, fusos horários e a liderança de times a distância.",
+   "Uma pequena lição por dia, com dicas práticas e mini desafios pra você testar na hora. Pra começar, me conta: de onde você costuma trabalhar e o que mais curte nisso?"
+  ]
+ }
+}

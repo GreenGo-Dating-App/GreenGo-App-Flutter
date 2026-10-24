@@ -1,0 +1,1305 @@
+{
+ "topic": "minimalism",
+ "questions": [
+  {
+   "id": "minimalism-001",
+   "lv": "any",
+   "i18n": {
+    "en": "What does minimalism mean to you in your own words?",
+    "de": "Was bedeutet Minimalismus für dich, in deinen eigenen Worten?",
+    "es": "¿Qué significa para ti el minimalismo, con tus propias palabras?",
+    "fr": "Que signifie le minimalisme pour toi, avec tes propres mots ?",
+    "it": "Che cosa significa per te il minimalismo, con parole tue?",
+    "pt": "O que significa o minimalismo para ti, por palavras tuas?",
+    "pt_BR": "O que minimalismo significa pra você, com suas próprias palavras?"
+   }
+  },
+  {
+   "id": "minimalism-002",
+   "lv": "any",
+   "i18n": {
+    "en": "Which room in your home feels the calmest, and why do you think that is?",
+    "de": "Welcher Raum bei dir zu Hause wirkt am ruhigsten, und woran liegt das wohl?",
+    "es": "¿Qué habitación de tu casa te parece la más tranquila y por qué crees que es así?",
+    "fr": "Quelle pièce de ton logement te semble la plus apaisante, et pourquoi à ton avis ?",
+    "it": "Qual è la stanza più tranquilla di casa tua e secondo te perché?",
+    "pt": "Qual é a divisão da tua casa que te parece mais calma, e porquê?",
+    "pt_BR": "Qual cômodo da sua casa parece mais tranquilo, e por que você acha isso?"
+   }
+  },
+  {
+   "id": "minimalism-003",
+   "lv": "any",
+   "i18n": {
+    "en": "What is one object you own that you would never give away?",
+    "de": "Welchen Gegenstand würdest du niemals hergeben?",
+    "es": "¿Qué objeto tuyo no regalarías nunca?",
+    "fr": "Quel objet que tu possèdes ne donnerais-tu jamais ?",
+    "it": "Qual è un oggetto che non daresti mai via?",
+    "pt": "Que objeto teu nunca darias a ninguém?",
+    "pt_BR": "Qual objeto seu você nunca daria para ninguém?"
+   }
+  },
+  {
+   "id": "minimalism-004",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you see yourself more as a keeper or a let-goer of things?",
+    "de": "Bist du eher jemand, der Dinge aufbewahrt, oder jemand, der loslässt?",
+    "es": "¿Te consideras más de guardar cosas o de soltarlas?",
+    "fr": "Te vois-tu plutôt comme quelqu'un qui garde ou qui se sépare facilement des choses ?",
+    "it": "Ti senti più una persona che conserva o una che lascia andare le cose?",
+    "pt": "Consideras-te mais alguém que guarda ou que se desfaz das coisas?",
+    "pt_BR": "Você se vê mais como alguém que guarda ou que desapega das coisas?"
+   }
+  },
+  {
+   "id": "minimalism-005",
+   "lv": "any",
+   "i18n": {
+    "en": "What would you do with an extra free hour every day?",
+    "de": "Was würdest du mit einer zusätzlichen freien Stunde pro Tag machen?",
+    "es": "¿Qué harías con una hora libre extra cada día?",
+    "fr": "Que ferais-tu d'une heure libre en plus chaque jour ?",
+    "it": "Che cosa faresti con un'ora libera in più ogni giorno?",
+    "pt": "O que farias com uma hora livre a mais por dia?",
+    "pt_BR": "O que você faria com uma hora livre a mais todo dia?"
+   }
+  },
+  {
+   "id": "minimalism-006",
+   "lv": "any",
+   "i18n": {
+    "en": "Where do things tend to pile up in your home?",
+    "de": "Wo stapeln sich bei dir zu Hause am meisten Dinge?",
+    "es": "¿Dónde se suelen acumular las cosas en tu casa?",
+    "fr": "Où les objets ont-ils tendance à s'accumuler chez toi ?",
+    "it": "In quale punto di casa tua tendono ad accumularsi le cose?",
+    "pt": "Onde é que as coisas costumam acumular-se em tua casa?",
+    "pt_BR": "Onde as coisas costumam se acumular na sua casa?"
+   }
+  },
+  {
+   "id": "minimalism-007",
+   "lv": "any",
+   "i18n": {
+    "en": "What is the best purchase you have ever made, and why?",
+    "de": "Was war der beste Kauf, den du je gemacht hast, und warum?",
+    "es": "¿Cuál es la mejor compra que has hecho nunca y por qué?",
+    "fr": "Quel est le meilleur achat que tu aies jamais fait, et pourquoi ?",
+    "it": "Qual è il miglior acquisto che tu abbia mai fatto, e perché?",
+    "pt": "Qual foi a melhor compra que já fizeste, e porquê?",
+    "pt_BR": "Qual foi a melhor compra que você já fez, e por quê?"
+   }
+  },
+  {
+   "id": "minimalism-008",
+   "lv": "any",
+   "i18n": {
+    "en": "Is there something you bought that you regret? What did you learn from it?",
+    "de": "Gibt es einen Kauf, den du bereust? Was hast du daraus gelernt?",
+    "es": "¿Hay algo que compraste y de lo que te arrepientes? ¿Qué aprendiste?",
+    "fr": "Y a-t-il un achat que tu regrettes ? Qu'en as-tu appris ?",
+    "it": "C'è qualcosa che hai comprato e di cui ti sei pentito? Che cosa hai imparato?",
+    "pt": "Há alguma compra de que te arrependas? O que aprendeste com isso?",
+    "pt_BR": "Tem alguma compra de que você se arrepende? O que aprendeu com ela?"
+   }
+  },
+  {
+   "id": "minimalism-009",
+   "lv": "any",
+   "i18n": {
+    "en": "How does a tidy space affect your mood?",
+    "de": "Wie beeinflusst ein aufgeräumter Raum deine Stimmung?",
+    "es": "¿Cómo influye un espacio ordenado en tu estado de ánimo?",
+    "fr": "Comment un espace rangé influence-t-il ton humeur ?",
+    "it": "In che modo uno spazio ordinato influisce sul tuo umore?",
+    "pt": "De que forma um espaço arrumado influencia o teu humor?",
+    "pt_BR": "Como um espaço arrumado afeta o seu humor?"
+   }
+  },
+  {
+   "id": "minimalism-010",
+   "lv": "any",
+   "i18n": {
+    "en": "What does your ideal home look like?",
+    "de": "Wie sieht dein ideales Zuhause aus?",
+    "es": "¿Cómo es tu casa ideal?",
+    "fr": "À quoi ressemble ton logement idéal ?",
+    "it": "Com'è la tua casa ideale?",
+    "pt": "Como é a tua casa ideal?",
+    "pt_BR": "Como é a sua casa ideal?"
+   }
+  },
+  {
+   "id": "minimalism-011",
+   "lv": "any",
+   "i18n": {
+    "en": "Which simple pleasures make your day better?",
+    "de": "Welche einfachen Freuden machen deinen Tag schöner?",
+    "es": "¿Qué placeres sencillos te alegran el día?",
+    "fr": "Quels plaisirs simples rendent ta journée meilleure ?",
+    "it": "Quali piccoli piaceri semplici ti migliorano la giornata?",
+    "pt": "Que prazeres simples tornam o teu dia melhor?",
+    "pt_BR": "Quais prazeres simples deixam o seu dia melhor?"
+   }
+  },
+  {
+   "id": "minimalism-012",
+   "lv": "any",
+   "i18n": {
+    "en": "How many apps do you think you use every day?",
+    "de": "Wie viele Apps nutzt du schätzungsweise jeden Tag?",
+    "es": "¿Cuántas aplicaciones crees que usas cada día?",
+    "fr": "Combien d'applications penses-tu utiliser chaque jour ?",
+    "it": "Quante app pensi di usare ogni giorno?",
+    "pt": "Quantas aplicações achas que usas todos os dias?",
+    "pt_BR": "Quantos aplicativos você acha que usa todos os dias?"
+   }
+  },
+  {
+   "id": "minimalism-013",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather receive a gift or an experience? Why?",
+    "de": "Bekommst du lieber ein Geschenk oder ein Erlebnis? Warum?",
+    "es": "¿Prefieres recibir un regalo o una experiencia? ¿Por qué?",
+    "fr": "Préfères-tu recevoir un cadeau ou une expérience ? Pourquoi ?",
+    "it": "Preferisci ricevere un regalo o un'esperienza? Perché?",
+    "pt": "Preferes receber uma prenda ou uma experiência? Porquê?",
+    "pt_BR": "Você prefere ganhar um presente ou uma experiência? Por quê?"
+   }
+  },
+  {
+   "id": "minimalism-014",
+   "lv": "any",
+   "i18n": {
+    "en": "What does a perfect relaxed weekend look like for you?",
+    "de": "Wie sieht für dich ein perfektes, entspanntes Wochenende aus?",
+    "es": "¿Cómo sería para ti un fin de semana perfecto y relajado?",
+    "fr": "À quoi ressemble pour toi un week-end parfait et détendu ?",
+    "it": "Com'è per te un weekend perfetto e rilassante?",
+    "pt": "Como seria para ti um fim de semana perfeito e descontraído?",
+    "pt_BR": "Como seria para você um fim de semana perfeito e tranquilo?"
+   }
+  },
+  {
+   "id": "minimalism-015",
+   "lv": "any",
+   "i18n": {
+    "en": "Which item in your home do you use the most?",
+    "de": "Welchen Gegenstand bei dir zu Hause benutzt du am meisten?",
+    "es": "¿Qué objeto de tu casa usas más?",
+    "fr": "Quel objet de ta maison utilises-tu le plus ?",
+    "it": "Qual oggetto di casa tua usi di più?",
+    "pt": "Qual é o objeto da tua casa que mais usas?",
+    "pt_BR": "Qual objeto da sua casa você mais usa?"
+   }
+  },
+  {
+   "id": "minimalism-016",
+   "lv": "any",
+   "i18n": {
+    "en": "Have you ever moved home? How did it change your relationship with stuff?",
+    "de": "Bist du schon einmal umgezogen? Wie hat das deine Beziehung zu Dingen verändert?",
+    "es": "¿Te has mudado alguna vez? ¿Cómo cambió eso tu relación con las cosas?",
+    "fr": "As-tu déjà déménagé ? Comment cela a-t-il changé ton rapport aux objets ?",
+    "it": "Hai mai traslocato? Come è cambiato il tuo rapporto con le cose?",
+    "pt": "Já mudaste de casa? Como é que isso mudou a tua relação com as coisas?",
+    "pt_BR": "Você já se mudou? Como isso mudou sua relação com as coisas?"
+   }
+  },
+  {
+   "id": "minimalism-017",
+   "lv": "any",
+   "i18n": {
+    "en": "What does 'enough' mean to you?",
+    "de": "Was bedeutet „genug“ für dich?",
+    "es": "¿Qué significa para ti «suficiente»?",
+    "fr": "Que signifie « assez » pour toi ?",
+    "it": "Che cosa significa per te «abbastanza»?",
+    "pt": "O que significa «suficiente» para ti?",
+    "pt_BR": "O que significa “o suficiente” pra você?"
+   }
+  },
+  {
+   "id": "minimalism-018",
+   "lv": "any",
+   "i18n": {
+    "en": "How do people in your culture usually feel about owning many things?",
+    "de": "Wie sieht man in deiner Kultur normalerweise den Besitz vieler Dinge?",
+    "es": "¿Qué se suele pensar en tu cultura sobre tener muchas cosas?",
+    "fr": "Dans ta culture, que pense-t-on en général du fait de posséder beaucoup de choses ?",
+    "it": "Nella tua cultura, come si vede di solito il possedere tante cose?",
+    "pt": "Na tua cultura, como se costuma ver o facto de ter muitas coisas?",
+    "pt_BR": "Na sua cultura, como as pessoas costumam ver o fato de ter muitas coisas?"
+   }
+  },
+  {
+   "id": "minimalism-019",
+   "lv": "any",
+   "i18n": {
+    "en": "What is your favourite way to spend time without spending money?",
+    "de": "Wie verbringst du am liebsten Zeit, ohne Geld auszugeben?",
+    "es": "¿Cuál es tu forma favorita de pasar el tiempo sin gastar dinero?",
+    "fr": "Quelle est ta façon préférée de passer du temps sans dépenser d'argent ?",
+    "it": "Qual è il tuo modo preferito di passare il tempo senza spendere soldi?",
+    "pt": "Qual é a tua forma preferida de passar tempo sem gastar dinheiro?",
+    "pt_BR": "Qual é o seu jeito favorito de passar o tempo sem gastar dinheiro?"
+   }
+  },
+  {
+   "id": "minimalism-020",
+   "lv": "any",
+   "i18n": {
+    "en": "Which part of your daily routine would you love to simplify?",
+    "de": "Welchen Teil deines Alltags würdest du gern vereinfachen?",
+    "es": "¿Qué parte de tu rutina diaria te encantaría simplificar?",
+    "fr": "Quelle partie de ta routine quotidienne aimerais-tu simplifier ?",
+    "it": "Quale parte della tua routine quotidiana ti piacerebbe semplificare?",
+    "pt": "Que parte da tua rotina diária gostarias de simplificar?",
+    "pt_BR": "Que parte da sua rotina diária você adoraria simplificar?"
+   }
+  },
+  {
+   "id": "minimalism-021",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer cosy, full rooms or open, simple ones?",
+    "de": "Magst du lieber gemütliche, volle Räume oder offene, schlichte?",
+    "es": "¿Prefieres habitaciones acogedoras y llenas o abiertas y sencillas?",
+    "fr": "Préfères-tu les pièces chaleureuses et remplies ou ouvertes et épurées ?",
+    "it": "Preferisci stanze accoglienti e piene o aperte e semplici?",
+    "pt": "Preferes divisões acolhedoras e cheias ou abertas e simples?",
+    "pt_BR": "Você prefere ambientes aconchegantes e cheios ou abertos e simples?"
+   }
+  },
+  {
+   "id": "minimalism-022",
+   "lv": "any",
+   "i18n": {
+    "en": "What do you collect, or what did you collect as a child?",
+    "de": "Was sammelst du, oder was hast du als Kind gesammelt?",
+    "es": "¿Qué coleccionas, o qué coleccionabas de pequeño?",
+    "fr": "Que collectionnes-tu, ou que collectionnais-tu enfant ?",
+    "it": "Che cosa collezioni, o che cosa collezionavi da bambino?",
+    "pt": "O que colecionas, ou o que colecionavas em criança?",
+    "pt_BR": "O que você coleciona, ou o que colecionava quando criança?"
+   }
+  },
+  {
+   "id": "minimalism-023",
+   "lv": "any",
+   "i18n": {
+    "en": "If you could only pack one bag for a month, what would go in it?",
+    "de": "Wenn du für einen Monat nur eine Tasche packen dürftest, was käme hinein?",
+    "es": "Si solo pudieras llevar una bolsa durante un mes, ¿qué meterías?",
+    "fr": "Si tu ne pouvais emporter qu'un sac pour un mois, que mettrais-tu dedans ?",
+    "it": "Se potessi portare una sola borsa per un mese, che cosa ci metteresti?",
+    "pt": "Se só pudesses levar uma mala durante um mês, o que levarias?",
+    "pt_BR": "Se você só pudesse levar uma mala por um mês, o que colocaria nela?"
+   }
+  },
+  {
+   "id": "minimalism-024",
+   "lv": "any",
+   "i18n": {
+    "en": "Who in your life lives simply in a way you admire?",
+    "de": "Wer in deinem Leben lebt auf eine einfache Weise, die du bewunderst?",
+    "es": "¿Quién en tu vida vive de forma sencilla de una manera que admiras?",
+    "fr": "Qui, dans ton entourage, vit simplement d'une façon que tu admires ?",
+    "it": "Chi nella tua vita vive in modo semplice e ti ispira ammirazione?",
+    "pt": "Quem na tua vida vive de forma simples de um modo que admiras?",
+    "pt_BR": "Quem na sua vida vive de forma simples de um jeito que você admira?"
+   }
+  },
+  {
+   "id": "minimalism-025",
+   "lv": "any",
+   "i18n": {
+    "en": "Which season makes you want to clear out and start fresh?",
+    "de": "In welcher Jahreszeit hast du am meisten Lust, auszumisten und neu anzufangen?",
+    "es": "¿En qué estación del año te entran más ganas de ordenar y empezar de nuevo?",
+    "fr": "Quelle saison te donne le plus envie de faire du tri et de repartir à zéro ?",
+    "it": "In quale stagione ti viene più voglia di fare ordine e ricominciare da capo?",
+    "pt": "Em que estação do ano te apetece mais arrumar tudo e começar de novo?",
+    "pt_BR": "Em que estação do ano você sente mais vontade de destralhar e recomeçar?"
+   }
+  },
+  {
+   "id": "minimalism-026",
+   "lv": "any",
+   "i18n": {
+    "en": "What sound, smell or light makes your home feel peaceful?",
+    "de": "Welcher Klang, Duft oder welches Licht lässt dein Zuhause friedlich wirken?",
+    "es": "¿Qué sonido, olor o luz hace que tu casa se sienta en paz?",
+    "fr": "Quel son, quelle odeur ou quelle lumière rend ton chez-toi paisible ?",
+    "it": "Quale suono, profumo o luce rende la tua casa serena?",
+    "pt": "Que som, cheiro ou luz faz a tua casa parecer tranquila?",
+    "pt_BR": "Que som, cheiro ou luz deixa a sua casa com uma sensação de paz?"
+   }
+  },
+  {
+   "id": "minimalism-027",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you usually feel after a big shopping trip?",
+    "de": "Wie fühlst du dich normalerweise nach einem großen Einkaufsbummel?",
+    "es": "¿Cómo te sueles sentir después de una gran tarde de compras?",
+    "fr": "Comment te sens-tu en général après une grosse séance de shopping ?",
+    "it": "Come ti senti di solito dopo un grande giro di shopping?",
+    "pt": "Como te costumas sentir depois de uma grande ida às compras?",
+    "pt_BR": "Como você costuma se sentir depois de um grande dia de compras?"
+   }
+  },
+  {
+   "id": "minimalism-028",
+   "lv": "any",
+   "i18n": {
+    "en": "Which of your clothes do you reach for again and again?",
+    "de": "Zu welchen Kleidungsstücken greifst du immer wieder?",
+    "es": "¿Qué prendas de tu armario eliges una y otra vez?",
+    "fr": "Quels vêtements choisis-tu encore et encore ?",
+    "it": "Quali capi del tuo armadio scegli sempre?",
+    "pt": "Que peças de roupa escolhes vezes sem conta?",
+    "pt_BR": "Quais roupas você acaba usando sempre?"
+   }
+  },
+  {
+   "id": "minimalism-029",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a tradition in your family that costs little but means a lot?",
+    "de": "Welche Tradition in deiner Familie kostet wenig, bedeutet aber viel?",
+    "es": "¿Qué tradición de tu familia cuesta poco pero significa mucho?",
+    "fr": "Quelle tradition familiale coûte peu mais compte beaucoup pour toi ?",
+    "it": "Quale tradizione della tua famiglia costa poco ma significa molto?",
+    "pt": "Que tradição da tua família custa pouco mas significa muito?",
+    "pt_BR": "Que tradição da sua família custa pouco mas significa muito?"
+   }
+  },
+  {
+   "id": "minimalism-030",
+   "lv": "any",
+   "i18n": {
+    "en": "Does your phone help you relax or make you feel busier?",
+    "de": "Hilft dir dein Handy beim Entspannen, oder fühlst du dich dadurch gestresster?",
+    "es": "¿Tu móvil te ayuda a relajarte o te hace sentir más ocupado?",
+    "fr": "Ton téléphone t'aide-t-il à te détendre ou te donne-t-il l'impression d'être débordé ?",
+    "it": "Il tuo telefono ti aiuta a rilassarti o ti fa sentire più indaffarato?",
+    "pt": "O teu telemóvel ajuda-te a relaxar ou faz-te sentir mais ocupado?",
+    "pt_BR": "Seu celular te ajuda a relaxar ou te deixa mais agitado?"
+   }
+  },
+  {
+   "id": "minimalism-031",
+   "lv": "any",
+   "i18n": {
+    "en": "What would you grab first if you had to pack your home quickly?",
+    "de": "Was würdest du zuerst einpacken, wenn du schnell deine Wohnung räumen müsstest?",
+    "es": "¿Qué cogerías primero si tuvieras que recoger tu casa rápidamente?",
+    "fr": "Que prendrais-tu en premier si tu devais emballer tes affaires très vite ?",
+    "it": "Che cosa prenderesti per primo se dovessi impacchettare la casa in fretta?",
+    "pt": "O que pegarias primeiro se tivesses de empacotar a casa à pressa?",
+    "pt_BR": "O que você pegaria primeiro se tivesse que empacotar a casa às pressas?"
+   }
+  },
+  {
+   "id": "minimalism-032",
+   "lv": "any",
+   "i18n": {
+    "en": "Which hobby gives you joy without needing much equipment?",
+    "de": "Welches Hobby macht dir Freude, ohne viel Ausrüstung zu brauchen?",
+    "es": "¿Qué afición te da alegría sin necesitar mucho equipo?",
+    "fr": "Quel loisir te rend heureux sans demander beaucoup de matériel ?",
+    "it": "Quale hobby ti dà gioia senza richiedere molta attrezzatura?",
+    "pt": "Que passatempo te dá alegria sem precisar de muito material?",
+    "pt_BR": "Qual hobby te traz alegria sem precisar de muito equipamento?"
+   }
+  },
+  {
+   "id": "minimalism-033",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a gift you received that you still use every day?",
+    "de": "Welches Geschenk benutzt du bis heute jeden Tag?",
+    "es": "¿Qué regalo que recibiste sigues usando a diario?",
+    "fr": "Quel cadeau reçu utilises-tu encore tous les jours ?",
+    "it": "Quale regalo che hai ricevuto usi ancora ogni giorno?",
+    "pt": "Que prenda que recebeste ainda usas todos os dias?",
+    "pt_BR": "Que presente que você ganhou ainda usa todo dia?"
+   }
+  },
+  {
+   "id": "minimalism-034",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you decide whether something is worth buying?",
+    "de": "Wie entscheidest du, ob sich ein Kauf lohnt?",
+    "es": "¿Cómo decides si algo vale la pena comprarlo?",
+    "fr": "Comment décides-tu si quelque chose vaut la peine d'être acheté ?",
+    "it": "Come decidi se vale la pena comprare qualcosa?",
+    "pt": "Como decides se vale a pena comprar alguma coisa?",
+    "pt_BR": "Como você decide se vale a pena comprar alguma coisa?"
+   }
+  },
+  {
+   "id": "minimalism-035",
+   "lv": "any",
+   "i18n": {
+    "en": "Where do you go when you want to clear your head?",
+    "de": "Wohin gehst du, wenn du den Kopf frei bekommen willst?",
+    "es": "¿Adónde vas cuando quieres despejar la mente?",
+    "fr": "Où vas-tu quand tu as besoin de te vider la tête ?",
+    "it": "Dove vai quando vuoi schiarirti le idee?",
+    "pt": "Onde vais quando queres desanuviar a cabeça?",
+    "pt_BR": "Aonde você vai quando quer espairecer?"
+   }
+  },
+  {
+   "id": "minimalism-036",
+   "lv": "any",
+   "i18n": {
+    "en": "What is something you are glad you let go of?",
+    "de": "Wovon hast du dich getrennt und bist heute froh darüber?",
+    "es": "¿De qué te alegras de haberte deshecho?",
+    "fr": "De quoi es-tu content de t'être séparé ?",
+    "it": "Di che cosa sei contento di esserti liberato?",
+    "pt": "De que é que estás contente por te teres desfeito?",
+    "pt_BR": "Do que você está feliz por ter desapegado?"
+   }
+  },
+  {
+   "id": "minimalism-037",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you enjoy living in a tiny house? Why or why not?",
+    "de": "Würdest du gern in einem Tiny House leben? Warum oder warum nicht?",
+    "es": "¿Te gustaría vivir en una casa diminuta? ¿Por qué sí o por qué no?",
+    "fr": "Aimerais-tu vivre dans une mini-maison ? Pourquoi ou pourquoi pas ?",
+    "it": "Ti piacerebbe vivere in una casa minuscola? Perché sì o perché no?",
+    "pt": "Gostavas de viver numa casa minúscula? Porquê ou porque não?",
+    "pt_BR": "Você gostaria de morar numa casa minúscula? Por que sim ou por que não?"
+   }
+  },
+  {
+   "id": "minimalism-038",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you like to celebrate birthdays?",
+    "de": "Wie feierst du am liebsten Geburtstage?",
+    "es": "¿Cómo te gusta celebrar los cumpleaños?",
+    "fr": "Comment aimes-tu fêter les anniversaires ?",
+    "it": "Come ti piace festeggiare i compleanni?",
+    "pt": "Como gostas de celebrar os aniversários?",
+    "pt_BR": "Como você gosta de comemorar aniversários?"
+   }
+  },
+  {
+   "id": "minimalism-039",
+   "lv": "any",
+   "i18n": {
+    "en": "What is one thing you always carry with you?",
+    "de": "Was hast du immer bei dir?",
+    "es": "¿Qué cosa llevas siempre contigo?",
+    "fr": "Quelle chose as-tu toujours sur toi ?",
+    "it": "Qual è una cosa che porti sempre con te?",
+    "pt": "Que coisa levas sempre contigo?",
+    "pt_BR": "Qual coisa você sempre leva com você?"
+   }
+  },
+  {
+   "id": "minimalism-040",
+   "lv": "any",
+   "i18n": {
+    "en": "Which places in the world have inspired you to live more simply?",
+    "de": "Welche Orte der Welt haben dich inspiriert, einfacher zu leben?",
+    "es": "¿Qué lugares del mundo te han inspirado a vivir de forma más sencilla?",
+    "fr": "Quels endroits du monde t'ont inspiré à vivre plus simplement ?",
+    "it": "Quali luoghi del mondo ti hanno ispirato a vivere in modo più semplice?",
+    "pt": "Que lugares do mundo te inspiraram a viver de forma mais simples?",
+    "pt_BR": "Quais lugares do mundo te inspiraram a viver de forma mais simples?"
+   }
+  },
+  {
+   "id": "minimalism-041",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Why are you curious about minimalism right now?",
+    "de": "Warum interessierst du dich gerade jetzt für Minimalismus?",
+    "es": "¿Por qué te interesa el minimalismo justo ahora?",
+    "fr": "Pourquoi le minimalisme t'intéresse-t-il en ce moment ?",
+    "it": "Perché ti incuriosisce il minimalismo proprio adesso?",
+    "pt": "Porque é que o minimalismo te interessa neste momento?",
+    "pt_BR": "Por que o minimalismo despertou seu interesse agora?"
+   }
+  },
+  {
+   "id": "minimalism-042",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which small drawer or shelf could you declutter today?",
+    "de": "Welche kleine Schublade oder welches Regal könntest du heute ausmisten?",
+    "es": "¿Qué cajón o estante pequeño podrías ordenar hoy?",
+    "fr": "Quel petit tiroir ou quelle étagère pourrais-tu désencombrer aujourd'hui ?",
+    "it": "Quale piccolo cassetto o ripiano potresti riordinare oggi?",
+    "pt": "Que gaveta ou prateleira pequena podias destralhar hoje?",
+    "pt_BR": "Qual gaveta ou prateleira pequena você poderia destralhar hoje?"
+   }
+  },
+  {
+   "id": "minimalism-043",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What feels hardest for you when deciding to let something go?",
+    "de": "Was fällt dir am schwersten, wenn du entscheidest, etwas loszulassen?",
+    "es": "¿Qué es lo que más te cuesta al decidir deshacerte de algo?",
+    "fr": "Qu'est-ce qui est le plus difficile pour toi quand tu décides de te séparer d'un objet ?",
+    "it": "Che cosa trovi più difficile quando devi decidere di lasciar andare qualcosa?",
+    "pt": "O que é mais difícil para ti quando decides desfazer-te de algo?",
+    "pt_BR": "O que é mais difícil para você na hora de desapegar de algo?"
+   }
+  },
+  {
+   "id": "minimalism-044",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How many pairs of shoes do you own, and how many do you wear?",
+    "de": "Wie viele Paar Schuhe besitzt du, und wie viele trägst du wirklich?",
+    "es": "¿Cuántos pares de zapatos tienes y cuántos te pones de verdad?",
+    "fr": "Combien de paires de chaussures as-tu, et combien en portes-tu vraiment ?",
+    "it": "Quante paia di scarpe hai e quante ne indossi davvero?",
+    "pt": "Quantos pares de sapatos tens, e quantos usas mesmo?",
+    "pt_BR": "Quantos pares de sapatos você tem, e quantos realmente usa?"
+   }
+  },
+  {
+   "id": "minimalism-045",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which room would you like to start decluttering first, and why?",
+    "de": "Mit welchem Raum möchtest du beim Ausmisten anfangen, und warum?",
+    "es": "¿Por qué habitación te gustaría empezar a ordenar y por qué?",
+    "fr": "Par quelle pièce aimerais-tu commencer à désencombrer, et pourquoi ?",
+    "it": "Da quale stanza vorresti iniziare a fare decluttering, e perché?",
+    "pt": "Por que divisão gostavas de começar a destralhar, e porquê?",
+    "pt_BR": "Por qual cômodo você gostaria de começar a destralhar, e por quê?"
+   }
+  },
+  {
+   "id": "minimalism-046",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you keep things just in case? What kind of things?",
+    "de": "Hebst du Dinge für den Fall der Fälle auf? Welche zum Beispiel?",
+    "es": "¿Guardas cosas por si acaso? ¿Qué tipo de cosas?",
+    "fr": "Gardes-tu des choses au cas où ? Quel genre de choses ?",
+    "it": "Conservi cose per ogni evenienza? Di che tipo?",
+    "pt": "Guardas coisas só para o caso de precisares? Que tipo de coisas?",
+    "pt_BR": "Você guarda coisas só por precaução? Que tipo de coisas?"
+   }
+  },
+  {
+   "id": "minimalism-047",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Where could you donate things you no longer need in your area?",
+    "de": "Wo könntest du in deiner Gegend Dinge spenden, die du nicht mehr brauchst?",
+    "es": "¿Dónde podrías donar en tu zona las cosas que ya no necesitas?",
+    "fr": "Où pourrais-tu donner, près de chez toi, les choses dont tu n'as plus besoin ?",
+    "it": "Dove potresti donare, nella tua zona, le cose che non ti servono più?",
+    "pt": "Onde podias doar, na tua zona, as coisas de que já não precisas?",
+    "pt_BR": "Onde você poderia doar, na sua região, as coisas que não usa mais?"
+   }
+  },
+  {
+   "id": "minimalism-048",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is on your kitchen counter right now?",
+    "de": "Was steht gerade auf deiner Küchenarbeitsplatte?",
+    "es": "¿Qué hay ahora mismo en la encimera de tu cocina?",
+    "fr": "Qu'y a-t-il en ce moment sur ton plan de travail ?",
+    "it": "Che cosa c'è in questo momento sul piano della tua cucina?",
+    "pt": "O que está neste momento na bancada da tua cozinha?",
+    "pt_BR": "O que tem agora na bancada da sua cozinha?"
+   }
+  },
+  {
+   "id": "minimalism-049",
+   "lv": "beginner",
+   "i18n": {
+    "en": "When in your day could a ten-minute tidy fit in?",
+    "de": "Wann in deinem Tagesablauf hätte ein zehnminütiges Aufräumen Platz?",
+    "es": "¿En qué momento del día podrías encajar diez minutos de orden?",
+    "fr": "À quel moment de ta journée pourrais-tu glisser dix minutes de rangement ?",
+    "it": "In quale momento della giornata potresti inserire dieci minuti di riordino?",
+    "pt": "Em que momento do dia conseguias encaixar dez minutos de arrumação?",
+    "pt_BR": "Em que momento do dia você conseguiria encaixar dez minutos de arrumação?"
+   }
+  },
+  {
+   "id": "minimalism-050",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What would your before-and-after photo show after one week?",
+    "de": "Was würde dein Vorher-Nachher-Foto nach einer Woche zeigen?",
+    "es": "¿Qué mostraría tu foto de antes y después tras una semana?",
+    "fr": "Que montrerait ta photo avant-après au bout d'une semaine ?",
+    "it": "Che cosa mostrerebbe la tua foto prima e dopo, dopo una settimana?",
+    "pt": "O que mostraria a tua fotografia de antes e depois ao fim de uma semana?",
+    "pt_BR": "O que a sua foto de antes e depois mostraria depois de uma semana?"
+   }
+  },
+  {
+   "id": "minimalism-051",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which notifications on your phone could you switch off today?",
+    "de": "Welche Benachrichtigungen auf deinem Handy könntest du heute ausschalten?",
+    "es": "¿Qué notificaciones de tu móvil podrías desactivar hoy?",
+    "fr": "Quelles notifications de ton téléphone pourrais-tu désactiver aujourd'hui ?",
+    "it": "Quali notifiche del telefono potresti disattivare oggi?",
+    "pt": "Que notificações do telemóvel podias desligar hoje?",
+    "pt_BR": "Quais notificações do celular você poderia desligar hoje?"
+   }
+  },
+  {
+   "id": "minimalism-052",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you usually deal with the mail and papers that arrive?",
+    "de": "Wie gehst du normalerweise mit Post und Papierkram um?",
+    "es": "¿Qué sueles hacer con el correo y los papeles que te llegan?",
+    "fr": "Que fais-tu d'habitude du courrier et des papiers qui arrivent ?",
+    "it": "Come gestisci di solito la posta e le carte che arrivano?",
+    "pt": "Como costumas lidar com o correio e os papéis que chegam?",
+    "pt_BR": "Como você costuma lidar com as correspondências e papéis que chegam?"
+   }
+  },
+  {
+   "id": "minimalism-053",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which item would be easy to replace if you ever needed it again?",
+    "de": "Welcher Gegenstand wäre leicht zu ersetzen, falls du ihn je wieder brauchst?",
+    "es": "¿Qué objeto sería fácil de reponer si algún día lo volvieras a necesitar?",
+    "fr": "Quel objet serait facile à remplacer si tu en avais de nouveau besoin ?",
+    "it": "Quale oggetto sarebbe facile da ricomprare se un giorno ti servisse di nuovo?",
+    "pt": "Que objeto seria fácil de substituir se algum dia voltasses a precisar dele?",
+    "pt_BR": "Qual objeto seria fácil de repor se um dia você precisasse dele de novo?"
+   }
+  },
+  {
+   "id": "minimalism-054",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you have a junk drawer? What surprising things are in it?",
+    "de": "Hast du eine Krimskrams-Schublade? Was Überraschendes liegt darin?",
+    "es": "¿Tienes un cajón desastre? ¿Qué cosas sorprendentes hay dentro?",
+    "fr": "As-tu un tiroir fourre-tout ? Quelles choses surprenantes s'y cachent ?",
+    "it": "Hai un cassetto dove finisce di tutto? Che cosa ci trovi di sorprendente?",
+    "pt": "Tens uma gaveta da tralha? Que coisas surpreendentes estão lá dentro?",
+    "pt_BR": "Você tem uma gaveta da bagunça? Que coisas surpreendentes tem lá?"
+   }
+  },
+  {
+   "id": "minimalism-055",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which gift would you feel guilty about giving away? Why?",
+    "de": "Bei welchem Geschenk hättest du ein schlechtes Gewissen, es wegzugeben? Warum?",
+    "es": "¿Qué regalo te daría pena dar a otra persona? ¿Por qué?",
+    "fr": "Quel cadeau te ferait culpabiliser si tu t'en séparais ? Pourquoi ?",
+    "it": "Quale regalo ti farebbe sentire in colpa se lo dessi via? Perché?",
+    "pt": "De que prenda te sentirias culpado de te desfazer? Porquê?",
+    "pt_BR": "De qual presente você se sentiria culpado por desapegar? Por quê?"
+   }
+  },
+  {
+   "id": "minimalism-056",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How does your entryway look when you come home?",
+    "de": "Wie sieht dein Eingangsbereich aus, wenn du nach Hause kommst?",
+    "es": "¿Cómo está la entrada de tu casa cuando llegas?",
+    "fr": "À quoi ressemble ton entrée quand tu rentres chez toi ?",
+    "it": "Com'è l'ingresso di casa tua quando rientri?",
+    "pt": "Como está a entrada da tua casa quando chegas?",
+    "pt_BR": "Como está a entrada da sua casa quando você chega?"
+   }
+  },
+  {
+   "id": "minimalism-057",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which books would you read again, and which could find a new reader?",
+    "de": "Welche Bücher würdest du nochmal lesen, und welche könnten neue Leser finden?",
+    "es": "¿Qué libros volverías a leer y cuáles podrían encontrar un nuevo lector?",
+    "fr": "Quels livres relirais-tu, et lesquels pourraient trouver un nouveau lecteur ?",
+    "it": "Quali libri rileggeresti e quali potrebbero trovare un nuovo lettore?",
+    "pt": "Que livros voltarias a ler e quais podiam encontrar um novo leitor?",
+    "pt_BR": "Quais livros você leria de novo, e quais poderiam ir para outro leitor?"
+   }
+  },
+  {
+   "id": "minimalism-058",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you feel about buying second-hand items?",
+    "de": "Was hältst du davon, Dinge gebraucht zu kaufen?",
+    "es": "¿Qué opinas de comprar cosas de segunda mano?",
+    "fr": "Que penses-tu de l'achat d'objets d'occasion ?",
+    "it": "Che cosa ne pensi di comprare oggetti di seconda mano?",
+    "pt": "O que achas de comprar coisas em segunda mão?",
+    "pt_BR": "O que você acha de comprar coisas usadas?"
+   }
+  },
+  {
+   "id": "minimalism-059",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What would you put on a 30-day wish list instead of buying now?",
+    "de": "Was würdest du auf eine 30-Tage-Wunschliste setzen, statt es sofort zu kaufen?",
+    "es": "¿Qué pondrías en una lista de deseos de 30 días en vez de comprarlo ya?",
+    "fr": "Que mettrais-tu sur une liste d'envies de 30 jours au lieu de l'acheter tout de suite ?",
+    "it": "Che cosa metteresti in una lista dei desideri di 30 giorni invece di comprarlo subito?",
+    "pt": "O que porias numa lista de desejos de 30 dias em vez de comprar já?",
+    "pt_BR": "O que você colocaria numa lista de desejos de 30 dias em vez de comprar agora?"
+   }
+  },
+  {
+   "id": "minimalism-060",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which kitchen tools do you use almost every day?",
+    "de": "Welche Küchenutensilien benutzt du fast jeden Tag?",
+    "es": "¿Qué utensilios de cocina usas casi todos los días?",
+    "fr": "Quels ustensiles de cuisine utilises-tu presque tous les jours ?",
+    "it": "Quali utensili da cucina usi quasi ogni giorno?",
+    "pt": "Que utensílios de cozinha usas quase todos os dias?",
+    "pt_BR": "Quais utensílios de cozinha você usa quase todo dia?"
+   }
+  },
+  {
+   "id": "minimalism-061",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How many photos are on your phone, and how many do you look at?",
+    "de": "Wie viele Fotos sind auf deinem Handy, und wie viele schaust du dir an?",
+    "es": "¿Cuántas fotos tienes en el móvil y cuántas miras de verdad?",
+    "fr": "Combien de photos as-tu sur ton téléphone, et combien en regardes-tu ?",
+    "it": "Quante foto hai sul telefono e quante ne guardi davvero?",
+    "pt": "Quantas fotografias tens no telemóvel, e quantas vês de facto?",
+    "pt_BR": "Quantas fotos você tem no celular, e quantas realmente vê?"
+   }
+  },
+  {
+   "id": "minimalism-062",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What does your morning routine look like on a busy day?",
+    "de": "Wie sieht deine Morgenroutine an einem vollen Tag aus?",
+    "es": "¿Cómo es tu rutina de mañana en un día ajetreado?",
+    "fr": "À quoi ressemble ta routine du matin un jour chargé ?",
+    "it": "Com'è la tua routine del mattino in una giornata piena?",
+    "pt": "Como é a tua rotina da manhã num dia atarefado?",
+    "pt_BR": "Como é a sua rotina da manhã num dia corrido?"
+   }
+  },
+  {
+   "id": "minimalism-063",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which shopping newsletters could you unsubscribe from?",
+    "de": "Von welchen Shopping-Newslettern könntest du dich abmelden?",
+    "es": "¿De qué boletines de tiendas podrías darte de baja?",
+    "fr": "De quelles newsletters de boutiques pourrais-tu te désabonner ?",
+    "it": "Da quali newsletter di negozi potresti cancellarti?",
+    "pt": "De que newsletters de lojas podias cancelar a subscrição?",
+    "pt_BR": "De quais newsletters de lojas você poderia se descadastrar?"
+   }
+  },
+  {
+   "id": "minimalism-064",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How would you explain minimalism to a friend in one sentence?",
+    "de": "Wie würdest du einem Freund Minimalismus in einem Satz erklären?",
+    "es": "¿Cómo le explicarías el minimalismo a un amigo en una frase?",
+    "fr": "Comment expliquerais-tu le minimalisme à un ami en une phrase ?",
+    "it": "Come spiegheresti il minimalismo a un amico in una frase?",
+    "pt": "Como explicarias o minimalismo a um amigo numa frase?",
+    "pt_BR": "Como você explicaria minimalismo para um amigo em uma frase?"
+   }
+  },
+  {
+   "id": "minimalism-065",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What small win in simplifying are you most proud of so far?",
+    "de": "Auf welchen kleinen Erfolg beim Vereinfachen bist du bisher am stolzesten?",
+    "es": "¿De qué pequeño logro al simplificar estás más orgulloso hasta ahora?",
+    "fr": "De quelle petite victoire de simplification es-tu le plus fier jusqu'ici ?",
+    "it": "Di quale piccolo successo nel semplificare sei più orgoglioso finora?",
+    "pt": "De que pequena vitória a simplificar estás mais orgulhoso até agora?",
+    "pt_BR": "De qual pequena conquista em simplificar você mais se orgulha até agora?"
+   }
+  },
+  {
+   "id": "minimalism-066",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which clothes would make it into your personal capsule wardrobe?",
+    "de": "Welche Kleidungsstücke kämen in deine persönliche Capsule Wardrobe?",
+    "es": "¿Qué prendas entrarían en tu armario cápsula personal?",
+    "fr": "Quels vêtements feraient partie de ta garde-robe capsule ?",
+    "it": "Quali capi entrerebbero nel tuo guardaroba capsula?",
+    "pt": "Que peças entrariam no teu guarda-roupa cápsula?",
+    "pt_BR": "Quais peças entrariam no seu guarda-roupa cápsula?"
+   }
+  },
+  {
+   "id": "minimalism-067",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you handle sentimental items like letters or old photos?",
+    "de": "Wie gehst du mit Erinnerungsstücken wie Briefen oder alten Fotos um?",
+    "es": "¿Qué haces con los objetos sentimentales, como cartas o fotos antiguas?",
+    "fr": "Comment gères-tu les objets sentimentaux comme les lettres ou les vieilles photos ?",
+    "it": "Come gestisci gli oggetti affettivi, come lettere o vecchie foto?",
+    "pt": "Como lidas com objetos sentimentais, como cartas ou fotografias antigas?",
+    "pt_BR": "Como você lida com objetos sentimentais, como cartas ou fotos antigas?"
+   }
+  },
+  {
+   "id": "minimalism-068",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which subscriptions do you pay for, and which do you truly use?",
+    "de": "Welche Abos bezahlst du, und welche nutzt du wirklich?",
+    "es": "¿Qué suscripciones pagas y cuáles usas de verdad?",
+    "fr": "Quels abonnements paies-tu, et lesquels utilises-tu vraiment ?",
+    "it": "Quali abbonamenti paghi e quali usi davvero?",
+    "pt": "Que subscrições pagas, e quais usas mesmo?",
+    "pt_BR": "Quais assinaturas você paga, e quais realmente usa?"
+   }
+  },
+  {
+   "id": "minimalism-069",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Have you ever tried a no-spend week? How did it go, or how might it go?",
+    "de": "Hast du schon mal eine Woche ohne Shopping ausprobiert? Wie lief es, oder wie würde es laufen?",
+    "es": "¿Has probado alguna vez una semana sin compras? ¿Cómo fue o cómo crees que iría?",
+    "fr": "As-tu déjà tenté une semaine sans achats ? Comment ça s'est passé, ou comment ça se passerait ?",
+    "it": "Hai mai provato una settimana senza acquisti? Com'è andata, o come pensi che andrebbe?",
+    "pt": "Já experimentaste uma semana sem compras? Como correu, ou como achas que correria?",
+    "pt_BR": "Você já tentou uma semana sem compras? Como foi, ou como acha que seria?"
+   }
+  },
+  {
+   "id": "minimalism-070",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which commitments in your week feel like obligations rather than choices?",
+    "de": "Welche Termine in deiner Woche fühlen sich eher nach Pflicht als nach Wahl an?",
+    "es": "¿Qué compromisos de tu semana sientes más como obligación que como elección?",
+    "fr": "Quels engagements de ta semaine ressemblent davantage à des obligations qu'à des choix ?",
+    "it": "Quali impegni della tua settimana ti sembrano più obblighi che scelte?",
+    "pt": "Que compromissos da tua semana parecem mais obrigações do que escolhas?",
+    "pt_BR": "Quais compromissos da sua semana parecem mais obrigação do que escolha?"
+   }
+  },
+  {
+   "id": "minimalism-071",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you and the people you live with handle shared spaces?",
+    "de": "Wie geht ihr bei dir zu Hause mit gemeinsam genutzten Räumen um?",
+    "es": "¿Cómo gestionáis los espacios compartidos tú y las personas con quienes vives?",
+    "fr": "Comment toi et les personnes avec qui tu vis gérez-vous les espaces communs ?",
+    "it": "Come gestite gli spazi comuni tu e le persone con cui vivi?",
+    "pt": "Como é que tu e as pessoas com quem vives gerem os espaços partilhados?",
+    "pt_BR": "Como você e as pessoas com quem mora lidam com os espaços compartilhados?"
+   }
+  },
+  {
+   "id": "minimalism-072",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which aspirational items are you keeping for a future version of you?",
+    "de": "Welche Dinge bewahrst du für eine zukünftige Version von dir auf?",
+    "es": "¿Qué objetos guardas para una versión futura de ti?",
+    "fr": "Quels objets gardes-tu pour une future version de toi-même ?",
+    "it": "Quali oggetti conservi per una versione futura di te?",
+    "pt": "Que objetos guardas para uma versão futura de ti?",
+    "pt_BR": "Quais objetos você guarda para uma versão futura de si mesmo?"
+   }
+  },
+  {
+   "id": "minimalism-073",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What would a phone-free hour each day give you?",
+    "de": "Was würde dir eine handyfreie Stunde pro Tag schenken?",
+    "es": "¿Qué te aportaría una hora al día sin móvil?",
+    "fr": "Que t'apporterait une heure par jour sans téléphone ?",
+    "it": "Che cosa ti darebbe un'ora al giorno senza telefono?",
+    "pt": "O que te daria uma hora por dia sem telemóvel?",
+    "pt_BR": "O que uma hora por dia sem celular te daria?"
+   }
+  },
+  {
+   "id": "minimalism-074",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you think about cost per use when you buy something?",
+    "de": "Denkst du beim Kaufen an die Kosten pro Nutzung? Wie?",
+    "es": "¿Piensas en el coste por uso cuando compras algo? ¿Cómo?",
+    "fr": "Penses-tu au coût par utilisation quand tu achètes quelque chose ? Comment ?",
+    "it": "Pensi al costo per utilizzo quando compri qualcosa? In che modo?",
+    "pt": "Pensas no custo por utilização quando compras algo? Como?",
+    "pt_BR": "Você pensa no custo por uso quando compra algo? Como?"
+   }
+  },
+  {
+   "id": "minimalism-075",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which simple meals would you put in a weekly rotation?",
+    "de": "Welche einfachen Gerichte würdest du in einen Wochenplan aufnehmen?",
+    "es": "¿Qué comidas sencillas incluirías en un menú semanal fijo?",
+    "fr": "Quels plats simples mettrais-tu dans une rotation hebdomadaire ?",
+    "it": "Quali piatti semplici metteresti in una rotazione settimanale?",
+    "pt": "Que refeições simples porias numa rotação semanal?",
+    "pt_BR": "Quais refeições simples você colocaria num cardápio semanal fixo?"
+   }
+  },
+  {
+   "id": "minimalism-076",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you talk to family about wanting fewer gifts?",
+    "de": "Wie sprichst du mit deiner Familie darüber, dass du weniger Geschenke möchtest?",
+    "es": "¿Cómo hablas con tu familia sobre querer menos regalos?",
+    "fr": "Comment parles-tu à ta famille de ton envie de recevoir moins de cadeaux ?",
+    "it": "Come parli con la tua famiglia del desiderio di ricevere meno regali?",
+    "pt": "Como falas com a tua família sobre quereres menos prendas?",
+    "pt_BR": "Como você conversa com a família sobre querer menos presentes?"
+   }
+  },
+  {
+   "id": "minimalism-077",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which digital space feels most cluttered: inbox, photos, files or apps?",
+    "de": "Welcher digitale Bereich ist am vollsten: Postfach, Fotos, Dateien oder Apps?",
+    "es": "¿Qué espacio digital está más saturado: correo, fotos, archivos o apps?",
+    "fr": "Quel espace numérique est le plus encombré : boîte mail, photos, fichiers ou applis ?",
+    "it": "Quale spazio digitale è più disordinato: email, foto, file o app?",
+    "pt": "Que espaço digital está mais atravancado: e-mail, fotografias, ficheiros ou aplicações?",
+    "pt_BR": "Qual espaço digital está mais bagunçado: e-mail, fotos, arquivos ou aplicativos?"
+   }
+  },
+  {
+   "id": "minimalism-078",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What is the hardest category for you to declutter, and why?",
+    "de": "Welche Kategorie fällt dir beim Ausmisten am schwersten, und warum?",
+    "es": "¿Qué categoría te cuesta más ordenar y por qué?",
+    "fr": "Quelle catégorie est la plus difficile à désencombrer pour toi, et pourquoi ?",
+    "it": "Qual è la categoria più difficile da sfoltire per te, e perché?",
+    "pt": "Qual é a categoria mais difícil de destralhar para ti, e porquê?",
+    "pt_BR": "Qual categoria é a mais difícil de destralhar para você, e por quê?"
+   }
+  },
+  {
+   "id": "minimalism-079",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How has simplifying changed the way you shop?",
+    "de": "Wie hat das Vereinfachen deine Art einzukaufen verändert?",
+    "es": "¿Cómo ha cambiado tu forma de comprar desde que simplificas?",
+    "fr": "Comment la simplification a-t-elle changé ta façon de faire les courses ?",
+    "it": "In che modo semplificare ha cambiato il tuo modo di fare acquisti?",
+    "pt": "De que forma simplificar mudou a tua maneira de fazer compras?",
+    "pt_BR": "Como simplificar mudou o seu jeito de fazer compras?"
+   }
+  },
+  {
+   "id": "minimalism-080",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which hobby would you keep if you could only have one?",
+    "de": "Welches Hobby würdest du behalten, wenn du nur eines haben dürftest?",
+    "es": "¿Qué afición conservarías si solo pudieras tener una?",
+    "fr": "Quel loisir garderais-tu si tu ne pouvais en avoir qu'un seul ?",
+    "it": "Quale hobby terresti se potessi averne solo uno?",
+    "pt": "Que passatempo mantinhas se só pudesses ter um?",
+    "pt_BR": "Qual hobby você manteria se só pudesse ter um?"
+   }
+  },
+  {
+   "id": "minimalism-081",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How would you plan a fun birthday or holiday with very few new things?",
+    "de": "Wie würdest du einen schönen Geburtstag oder ein Fest mit kaum neuen Dingen planen?",
+    "es": "¿Cómo organizarías un cumpleaños o una fiesta divertida casi sin cosas nuevas?",
+    "fr": "Comment organiserais-tu un anniversaire ou une fête sympa avec très peu d'objets neufs ?",
+    "it": "Come organizzeresti un compleanno o una festa divertente con pochissime cose nuove?",
+    "pt": "Como organizarias um aniversário ou uma festa divertida com muito poucas coisas novas?",
+    "pt_BR": "Como você organizaria um aniversário ou uma festa divertida com pouquíssimas coisas novas?"
+   }
+  },
+  {
+   "id": "minimalism-082",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What would you pack for a one-week trip with only a carry-on?",
+    "de": "Was würdest du für eine Woche Reise nur mit Handgepäck einpacken?",
+    "es": "¿Qué meterías en la maleta para un viaje de una semana solo con equipaje de mano?",
+    "fr": "Que mettrais-tu dans ta valise pour un voyage d'une semaine en bagage cabine seulement ?",
+    "it": "Che cosa metteresti in valigia per una settimana con il solo bagaglio a mano?",
+    "pt": "O que levarias para uma viagem de uma semana só com bagagem de mão?",
+    "pt_BR": "O que você levaria numa viagem de uma semana só com bagagem de mão?"
+   }
+  },
+  {
+   "id": "minimalism-083",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which item have you repaired instead of replacing? How did it feel?",
+    "de": "Welchen Gegenstand hast du repariert, statt ihn zu ersetzen? Wie fühlte sich das an?",
+    "es": "¿Qué objeto has reparado en lugar de cambiarlo? ¿Cómo te sentiste?",
+    "fr": "Quel objet as-tu réparé au lieu de le remplacer ? Qu'as-tu ressenti ?",
+    "it": "Quale oggetto hai riparato invece di sostituirlo? Come ti sei sentito?",
+    "pt": "Que objeto reparaste em vez de o substituir? Como te sentiste?",
+    "pt_BR": "Qual objeto você consertou em vez de trocar? Como se sentiu?"
+   }
+  },
+  {
+   "id": "minimalism-084",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you keep your space tidy during very busy weeks?",
+    "de": "Wie hältst du deine Wohnung in sehr vollen Wochen ordentlich?",
+    "es": "¿Cómo mantienes tu espacio ordenado en semanas muy ajetreadas?",
+    "fr": "Comment gardes-tu ton espace rangé pendant les semaines très chargées ?",
+    "it": "Come mantieni in ordine i tuoi spazi nelle settimane più piene?",
+    "pt": "Como manténs o teu espaço arrumado nas semanas muito cheias?",
+    "pt_BR": "Como você mantém seu espaço arrumado nas semanas muito corridas?"
+   }
+  },
+  {
+   "id": "minimalism-085",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which reusable swap has worked best for you so far?",
+    "de": "Welcher Mehrweg-Tausch hat bei dir bisher am besten funktioniert?",
+    "es": "¿Qué cambio a un objeto reutilizable te ha funcionado mejor?",
+    "fr": "Quel objet réutilisable a le mieux remplacé un jetable chez toi ?",
+    "it": "Quale scambio con un oggetto riutilizzabile ha funzionato meglio per te?",
+    "pt": "Que troca por um objeto reutilizável resultou melhor contigo?",
+    "pt_BR": "Qual troca por um item reutilizável funcionou melhor para você?"
+   }
+  },
+  {
+   "id": "minimalism-086",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How has your idea of minimalism changed since you started?",
+    "de": "Wie hat sich deine Vorstellung von Minimalismus seit dem Anfang verändert?",
+    "es": "¿Cómo ha cambiado tu idea del minimalismo desde que empezaste?",
+    "fr": "Comment ta vision du minimalisme a-t-elle évolué depuis le début ?",
+    "it": "Com'è cambiata la tua idea di minimalismo da quando hai iniziato?",
+    "pt": "Como mudou a tua ideia de minimalismo desde que começaste?",
+    "pt_BR": "Como sua ideia de minimalismo mudou desde que você começou?"
+   }
+  },
+  {
+   "id": "minimalism-087",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which personal rules for buying and keeping things guide you now?",
+    "de": "Welche persönlichen Regeln fürs Kaufen und Behalten leiten dich heute?",
+    "es": "¿Qué reglas personales para comprar y conservar cosas te guían ahora?",
+    "fr": "Quelles règles personnelles pour acheter et garder les choses te guident aujourd'hui ?",
+    "it": "Quali regole personali per comprare e conservare le cose ti guidano oggi?",
+    "pt": "Que regras pessoais para comprar e guardar coisas te orientam agora?",
+    "pt_BR": "Quais regras pessoais para comprar e guardar coisas te guiam hoje?"
+   }
+  },
+  {
+   "id": "minimalism-088",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which idea, like wabi-sabi, lagom or hygge, speaks to you most?",
+    "de": "Welche Idee, etwa Wabi-Sabi, Lagom oder Hygge, spricht dich am meisten an?",
+    "es": "¿Qué idea, como wabi-sabi, lagom o hygge, te inspira más?",
+    "fr": "Quelle idée, comme le wabi-sabi, le lagom ou le hygge, te parle le plus ?",
+    "it": "Quale idea, come il wabi-sabi, il lagom o l'hygge, ti parla di più?",
+    "pt": "Que ideia, como o wabi-sabi, o lagom ou o hygge, mais te diz?",
+    "pt_BR": "Qual ideia, como wabi-sabi, lagom ou hygge, mais combina com você?"
+   }
+  },
+  {
+   "id": "minimalism-089",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you protect your attention in a world full of distractions?",
+    "de": "Wie schützt du deine Aufmerksamkeit in einer Welt voller Ablenkungen?",
+    "es": "¿Cómo proteges tu atención en un mundo lleno de distracciones?",
+    "fr": "Comment protèges-tu ton attention dans un monde plein de distractions ?",
+    "it": "Come proteggi la tua attenzione in un mondo pieno di distrazioni?",
+    "pt": "Como proteges a tua atenção num mundo cheio de distrações?",
+    "pt_BR": "Como você protege sua atenção num mundo cheio de distrações?"
+   }
+  },
+  {
+   "id": "minimalism-090",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What does a truly simple week look like in your life now?",
+    "de": "Wie sieht eine wirklich einfache Woche heute in deinem Leben aus?",
+    "es": "¿Cómo es ahora una semana realmente sencilla en tu vida?",
+    "fr": "À quoi ressemble aujourd'hui une semaine vraiment simple dans ta vie ?",
+    "it": "Com'è oggi una settimana davvero semplice nella tua vita?",
+    "pt": "Como é agora uma semana verdadeiramente simples na tua vida?",
+    "pt_BR": "Como é hoje uma semana realmente simples na sua vida?"
+   }
+  },
+  {
+   "id": "minimalism-091",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you balance simplicity with the wishes of people you live with?",
+    "de": "Wie bringst du Einfachheit und die Wünsche deiner Mitbewohner in Einklang?",
+    "es": "¿Cómo equilibras la sencillez con los deseos de las personas con quienes vives?",
+    "fr": "Comment concilies-tu simplicité et envies des personnes avec qui tu vis ?",
+    "it": "Come concili la semplicità con i desideri delle persone con cui vivi?",
+    "pt": "Como equilibras a simplicidade com os desejos das pessoas com quem vives?",
+    "pt_BR": "Como você equilibra a simplicidade com os desejos das pessoas com quem mora?"
+   }
+  },
+  {
+   "id": "minimalism-092",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which objects in your home tell the best stories?",
+    "de": "Welche Gegenstände bei dir zu Hause erzählen die schönsten Geschichten?",
+    "es": "¿Qué objetos de tu casa cuentan las mejores historias?",
+    "fr": "Quels objets de ta maison racontent les plus belles histoires ?",
+    "it": "Quali oggetti di casa tua raccontano le storie più belle?",
+    "pt": "Que objetos da tua casa contam as melhores histórias?",
+    "pt_BR": "Quais objetos da sua casa contam as melhores histórias?"
+   }
+  },
+  {
+   "id": "minimalism-093",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you keep simplicity from becoming another form of perfectionism?",
+    "de": "Wie verhinderst du, dass Einfachheit zu einer neuen Form von Perfektionismus wird?",
+    "es": "¿Cómo evitas que la sencillez se convierta en otra forma de perfeccionismo?",
+    "fr": "Comment évites-tu que la simplicité devienne une autre forme de perfectionnisme ?",
+    "it": "Come eviti che la semplicità diventi un'altra forma di perfezionismo?",
+    "pt": "Como evitas que a simplicidade se torne outra forma de perfeccionismo?",
+    "pt_BR": "Como você evita que a simplicidade vire mais uma forma de perfeccionismo?"
+   }
+  },
+  {
+   "id": "minimalism-094",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What would you tell someone who thinks minimalism is boring?",
+    "de": "Was würdest du jemandem sagen, der Minimalismus langweilig findet?",
+    "es": "¿Qué le dirías a alguien que piensa que el minimalismo es aburrido?",
+    "fr": "Que dirais-tu à quelqu'un qui trouve le minimalisme ennuyeux ?",
+    "it": "Che cosa diresti a chi pensa che il minimalismo sia noioso?",
+    "pt": "O que dirias a alguém que acha o minimalismo aborrecido?",
+    "pt_BR": "O que você diria para alguém que acha o minimalismo chato?"
+   }
+  },
+  {
+   "id": "minimalism-095",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do creative limits, like fewer tools or colours, help your ideas?",
+    "de": "Wie helfen dir kreative Grenzen, etwa weniger Werkzeuge oder Farben, bei deinen Ideen?",
+    "es": "¿Cómo te ayudan los límites creativos, como menos herramientas o colores?",
+    "fr": "En quoi les contraintes créatives, comme moins d'outils ou de couleurs, nourrissent-elles tes idées ?",
+    "it": "In che modo i limiti creativi, come meno strumenti o colori, aiutano le tue idee?",
+    "pt": "De que forma os limites criativos, como menos ferramentas ou cores, ajudam as tuas ideias?",
+    "pt_BR": "Como limites criativos, como menos ferramentas ou cores, ajudam suas ideias?"
+   }
+  },
+  {
+   "id": "minimalism-096",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which yearly ritual would help you keep your home simple long term?",
+    "de": "Welches jährliche Ritual würde dir helfen, dein Zuhause langfristig einfach zu halten?",
+    "es": "¿Qué ritual anual te ayudaría a mantener tu casa sencilla a largo plazo?",
+    "fr": "Quel rituel annuel t'aiderait à garder un intérieur simple sur la durée ?",
+    "it": "Quale rituale annuale ti aiuterebbe a mantenere la casa semplice nel tempo?",
+    "pt": "Que ritual anual te ajudaria a manter a casa simples a longo prazo?",
+    "pt_BR": "Qual ritual anual ajudaria você a manter a casa simples a longo prazo?"
+   }
+  },
+  {
+   "id": "minimalism-097",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How has simplifying changed your relationships with friends and family?",
+    "de": "Wie hat das Vereinfachen deine Beziehungen zu Freunden und Familie verändert?",
+    "es": "¿Cómo ha cambiado simplificar tu relación con amigos y familia?",
+    "fr": "Comment la simplicité a-t-elle changé tes relations avec tes amis et ta famille ?",
+    "it": "In che modo semplificare ha cambiato i tuoi rapporti con amici e famiglia?",
+    "pt": "De que forma simplificar mudou a tua relação com amigos e família?",
+    "pt_BR": "Como simplificar mudou suas relações com amigos e família?"
+   }
+  },
+  {
+   "id": "minimalism-098",
+   "lv": "advanced",
+   "i18n": {
+    "en": "If you wrote a short simple-living manifesto, what would its first line be?",
+    "de": "Wenn du ein kurzes Manifest fürs einfache Leben schreibst, wie lautet der erste Satz?",
+    "es": "Si escribieras un breve manifiesto de vida sencilla, ¿cuál sería la primera frase?",
+    "fr": "Si tu écrivais un petit manifeste de vie simple, quelle en serait la première phrase ?",
+    "it": "Se scrivessi un breve manifesto della vita semplice, quale sarebbe la prima frase?",
+    "pt": "Se escrevesses um pequeno manifesto da vida simples, qual seria a primeira frase?",
+    "pt_BR": "Se você escrevesse um pequeno manifesto da vida simples, qual seria a primeira frase?"
+   }
+  },
+  {
+   "id": "minimalism-099",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you use the time and energy that simplifying has freed up?",
+    "de": "Wie nutzt du die Zeit und Energie, die das Vereinfachen dir geschenkt hat?",
+    "es": "¿Cómo usas el tiempo y la energía que te ha dado simplificar?",
+    "fr": "Comment utilises-tu le temps et l'énergie libérés par la simplicité ?",
+    "it": "Come usi il tempo e l'energia che semplificare ti ha restituito?",
+    "pt": "Como usas o tempo e a energia que simplificar te devolveu?",
+    "pt_BR": "Como você usa o tempo e a energia que simplificar liberou?"
+   }
+  },
+  {
+   "id": "minimalism-100",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Where would you like your simple life to take you in the next few years?",
+    "de": "Wohin soll dich dein einfaches Leben in den nächsten Jahren führen?",
+    "es": "¿Adónde te gustaría que te llevara tu vida sencilla en los próximos años?",
+    "fr": "Où aimerais-tu que ta vie simple te mène dans les prochaines années ?",
+    "it": "Dove vorresti che ti portasse la tua vita semplice nei prossimi anni?",
+    "pt": "Onde gostavas que a tua vida simples te levasse nos próximos anos?",
+    "pt_BR": "Aonde você gostaria que sua vida simples te levasse nos próximos anos?"
+   }
+  }
+ ]
+}

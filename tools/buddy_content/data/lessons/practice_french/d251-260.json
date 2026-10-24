@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_french",
+ "lessons": [
+  {
+   "d": 251,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Faire + infinitive",
+     "g": "Say you have something done by someone else: je fais réparer ma voiture, je me suis fait couper les cheveux.",
+     "p": [
+      "Having something done: Je fais réparer ma voiture. Elle fait couper ses cheveux. On fait construire une maison.",
+      "Doubled and reflexive: faire faire : je fais faire un costume ; se faire + infinitif : je me suis fait couper les cheveux",
+      "Pronoun position: pronom avant faire : je la fais réparer ; le participe fait reste invariable"
+     ],
+     "q": "What do you usually have done by a professional instead of doing it yourself? Answer with faire + infinitive.",
+     "c": "Write three sentences about things you had done recently: a repair, a haircut and a delivery."
+    },
+    "de": {
+     "t": "Faire + Infinitiv",
+     "g": "Du sagst, dass du etwas machen lässt: je fais réparer ma voiture, je me suis fait couper les cheveux.",
+     "p": [
+      "Etwas machen lassen: Je fais réparer ma voiture. Elle fait couper ses cheveux. On fait construire une maison.",
+      "Doppelt und reflexiv: faire faire : je fais faire un costume ; se faire + infinitif : je me suis fait couper les cheveux",
+      "Stellung des Pronomens: pronom avant faire : je la fais réparer ; le participe fait reste invariable"
+     ],
+     "q": "Was lässt du normalerweise von Profis machen, statt es selbst zu tun? Antworte mit faire + Infinitiv.",
+     "c": "Schreib drei Sätze über Dinge, die du kürzlich hast machen lassen: eine Reparatur, einen Haarschnitt, eine Lieferung."
+    },
+    "es": {
+     "t": "Faire + infinitivo",
+     "g": "Di que alguien hace algo por ti: je fais réparer ma voiture, je me suis fait couper les cheveux.",
+     "p": [
+      "Mandar hacer algo: Je fais réparer ma voiture. Elle fait couper ses cheveux. On fait construire une maison.",
+      "Doble y reflexivo: faire faire : je fais faire un costume ; se faire + infinitif : je me suis fait couper les cheveux",
+      "Lugar del pronombre: pronom avant faire : je la fais réparer ; le participe fait reste invariable"
+     ],
+     "q": "¿Qué sueles encargar a un profesional en vez de hacerlo tú? Responde con faire + infinitivo.",
+     "c": "Escribe tres frases sobre cosas que mandaste hacer hace poco: una reparación, un corte de pelo y un envío."
+    },
+    "fr": {
+     "t": "Faire + infinitif",
+     "g": "Dire qu'on fait faire quelque chose par quelqu'un : je fais réparer ma voiture, je me suis fait couper les cheveux.",
+     "p": [
+      "Faire faire par un autre : Je fais réparer ma voiture. Elle fait couper ses cheveux. On fait construire une maison.",
+      "Double et pronominal : faire faire : je fais faire un costume ; se faire + infinitif : je me suis fait couper les cheveux",
+      "Place du pronom : pronom avant faire : je la fais réparer ; le participe fait reste invariable"
+     ],
+     "q": "Qu'est-ce que tu fais faire par un professionnel au lieu de le faire toi-même ? Réponds avec faire + infinitif.",
+     "c": "Écris trois phrases sur ce que tu as fait faire récemment : une réparation, une coupe, une livraison."
+    },
+    "it": {
+     "t": "Faire + infinito",
+     "g": "Di' che fai fare qualcosa a qualcuno: je fais réparer ma voiture, je me suis fait couper les cheveux.",
+     "p": [
+      "Far fare qualcosa: Je fais réparer ma voiture. Elle fait couper ses cheveux. On fait construire une maison.",
+      "Doppio e riflessivo: faire faire : je fais faire un costume ; se faire + infinitif : je me suis fait couper les cheveux",
+      "Posizione del pronome: pronom avant faire : je la fais réparer ; le participe fait reste invariable"
+     ],
+     "q": "Cosa fai fare di solito a un professionista invece di farlo tu? Rispondi con faire + infinito.",
+     "c": "Scrivi tre frasi su cose che hai fatto fare di recente: una riparazione, un taglio di capelli e una consegna."
+    },
+    "pt": {
+     "t": "Faire + infinitivo",
+     "g": "Diz que mandas fazer algo a alguém: je fais réparer ma voiture, je me suis fait couper les cheveux.",
+     "p": [
+      "Mandar fazer: Je fais réparer ma voiture. Elle fait couper ses cheveux. On fait construire une maison.",
+      "Duplo e pronominal: faire faire : je fais faire un costume ; se faire + infinitif : je me suis fait couper les cheveux",
+      "Posição do pronome: pronom avant faire : je la fais réparer ; le participe fait reste invariable"
+     ],
+     "q": "O que costumas mandar fazer a um profissional em vez de fazeres tu? Responde com faire + infinitivo.",
+     "c": "Escreve três frases sobre coisas que mandaste fazer há pouco: uma reparação, um corte de cabelo e uma entrega."
+    },
+    "pt_BR": {
+     "t": "Faire + infinitivo",
+     "g": "Diga que você manda fazer algo: je fais réparer ma voiture, je me suis fait couper les cheveux.",
+     "p": [
+      "Mandar fazer: Je fais réparer ma voiture. Elle fait couper ses cheveux. On fait construire une maison.",
+      "Duplo e pronominal: faire faire : je fais faire un costume ; se faire + infinitif : je me suis fait couper les cheveux",
+      "Posição do pronome: pronom avant faire : je la fais réparer ; le participe fait reste invariable"
+     ],
+     "q": "O que você costuma mandar um profissional fazer em vez de fazer sozinho? Responda com faire + infinitivo.",
+     "c": "Escreva três frases sobre coisas que você mandou fazer há pouco: um conserto, um corte de cabelo e uma entrega."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "faire réparer",
+      "ex": "Je dois faire réparer mon vélo avant samedi."
+     },
+     {
+      "w": "faire faire",
+      "ex": "Elle a fait faire une robe sur mesure."
+     },
+     {
+      "w": "se faire couper les cheveux",
+      "ex": "Je me suis fait couper les cheveux hier."
+     },
+     {
+      "w": "faire construire",
+      "ex": "Ils font construire une maison près de Lyon."
+     },
+     {
+      "w": "faire venir",
+      "ex": "On a fait venir un plombier ce matin."
+     },
+     {
+      "w": "faire rire",
+      "ex": "Ce film m'a vraiment fait rire."
+     }
+    ],
+    "gram": "Faire + infinitif : faire faire une action par quelqu'un (je fais réparer mon vélo) ; pronoms avant faire : je le fais réparer."
+   }
+  },
+  {
+   "d": 252,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Laisser, voir, entendre + infinitive",
+     "g": "Describe what you let happen, see or hear: je le laisse partir, je l'entends chanter.",
+     "p": [
+      "Letting: Je laisse partir les enfants. Je les laisse jouer dans le jardin.",
+      "Seeing and hearing: Je vois le soleil se lever. Je l'entends chanter sous la douche.",
+      "Other senses: aussi regarder, écouter, sentir : je sens la pluie arriver"
+     ],
+     "q": "Look or listen around you right now. What do you see or hear happening? Answer with voir or entendre + infinitive.",
+     "c": "Write three sentences about your morning: something you heard, something you saw and something you let go."
+    },
+    "de": {
+     "t": "Laisser, voir, entendre + Infinitiv",
+     "g": "Du beschreibst, was du geschehen lässt, siehst oder hörst: je le laisse partir, je l'entends chanter.",
+     "p": [
+      "Lassen: Je laisse partir les enfants. Je les laisse jouer dans le jardin.",
+      "Sehen und hören: Je vois le soleil se lever. Je l'entends chanter sous la douche.",
+      "Weitere Sinne: aussi regarder, écouter, sentir : je sens la pluie arriver"
+     ],
+     "q": "Schau oder hör dich gerade um. Was siehst oder hörst du passieren? Antworte mit voir oder entendre + Infinitiv.",
+     "c": "Schreib drei Sätze über deinen Morgen: etwas Gehörtes, etwas Gesehenes und etwas, das du gelassen hast."
+    },
+    "es": {
+     "t": "Laisser, voir, entendre + infinitivo",
+     "g": "Describe lo que dejas pasar, ves u oyes: je le laisse partir, je l'entends chanter.",
+     "p": [
+      "Dejar: Je laisse partir les enfants. Je les laisse jouer dans le jardin.",
+      "Ver y oír: Je vois le soleil se lever. Je l'entends chanter sous la douche.",
+      "Otros sentidos: aussi regarder, écouter, sentir : je sens la pluie arriver"
+     ],
+     "q": "Mira o escucha a tu alrededor ahora. ¿Qué ves u oyes pasar? Responde con voir o entendre + infinitivo.",
+     "c": "Escribe tres frases sobre tu mañana: algo que oíste, algo que viste y algo que dejaste pasar."
+    },
+    "fr": {
+     "t": "Laisser, voir, entendre + infinitif",
+     "g": "Décrire ce qu'on laisse faire, ce qu'on voit ou entend : je le laisse partir, je l'entends chanter.",
+     "p": [
+      "Laisser : Je laisse partir les enfants. Je les laisse jouer dans le jardin.",
+      "Voir et entendre : Je vois le soleil se lever. Je l'entends chanter sous la douche.",
+      "Autres sens : aussi regarder, écouter, sentir : je sens la pluie arriver"
+     ],
+     "q": "Regarde et écoute autour de toi. Que vois-tu ou entends-tu se passer ? Réponds avec voir ou entendre + infinitif.",
+     "c": "Écris trois phrases sur ta matinée : quelque chose entendu, quelque chose vu et quelque chose que tu as laissé faire."
+    },
+    "it": {
+     "t": "Laisser, voir, entendre + infinito",
+     "g": "Descrivi ciò che lasci fare, vedi o senti: je le laisse partir, je l'entends chanter.",
+     "p": [
+      "Lasciare: Je laisse partir les enfants. Je les laisse jouer dans le jardin.",
+      "Vedere e sentire: Je vois le soleil se lever. Je l'entends chanter sous la douche.",
+      "Altri sensi: aussi regarder, écouter, sentir : je sens la pluie arriver"
+     ],
+     "q": "Guarda o ascolta intorno a te. Cosa vedi o senti succedere? Rispondi con voir o entendre + infinito.",
+     "c": "Scrivi tre frasi sulla tua mattina: una cosa sentita, una vista e una che hai lasciato correre."
+    },
+    "pt": {
+     "t": "Laisser, voir, entendre + infinitivo",
+     "g": "Descreve o que deixas acontecer, vês ou ouves: je le laisse partir, je l'entends chanter.",
+     "p": [
+      "Deixar: Je laisse partir les enfants. Je les laisse jouer dans le jardin.",
+      "Ver e ouvir: Je vois le soleil se lever. Je l'entends chanter sous la douche.",
+      "Outros sentidos: aussi regarder, écouter, sentir : je sens la pluie arriver"
+     ],
+     "q": "Olha ou escuta à tua volta agora. O que vês ou ouves acontecer? Responde com voir ou entendre + infinitivo.",
+     "c": "Escreve três frases sobre a tua manhã: algo que ouviste, algo que viste e algo que deixaste passar."
+    },
+    "pt_BR": {
+     "t": "Laisser, voir, entendre + infinitivo",
+     "g": "Descreva o que você deixa acontecer, vê ou ouve: je le laisse partir, je l'entends chanter.",
+     "p": [
+      "Deixar: Je laisse partir les enfants. Je les laisse jouer dans le jardin.",
+      "Ver e ouvir: Je vois le soleil se lever. Je l'entends chanter sous la douche.",
+      "Outros sentidos: aussi regarder, écouter, sentir : je sens la pluie arriver"
+     ],
+     "q": "Olhe ou escute ao seu redor agora. O que você vê ou ouve acontecer? Responda com voir ou entendre + infinitivo.",
+     "c": "Escreva três frases sobre a sua manhã: algo que ouviu, algo que viu e algo que deixou pra lá."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "laisser partir",
+      "ex": "Laisse-moi partir plus tôt aujourd'hui, s'il te plaît."
+     },
+     {
+      "w": "laisser tomber",
+      "ex": "Laisse tomber, ce n'est pas important."
+     },
+     {
+      "w": "voir arriver",
+      "ex": "On a vu arriver les premiers invités vers 19 h."
+     },
+     {
+      "w": "entendre chanter",
+      "ex": "J'entends chanter les oiseaux chaque matin."
+     },
+     {
+      "w": "regarder passer",
+      "ex": "J'aime regarder passer les bateaux sur le port."
+     },
+     {
+      "w": "sentir venir",
+      "ex": "Je sens venir l'orage, rentrons vite."
+     }
+    ],
+    "gram": "Laisser, voir, entendre, regarder, sentir + infinitif ; le pronom se place avant le verbe conjugué : je l'entends chanter."
+   }
+  },
+  {
+   "d": 253,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Pronominal verbs: meanings",
+     "g": "Tell apart reflexive, reciprocal and idiomatic pronominal verbs like s'en aller and se rendre compte.",
+     "p": [
+      "Reflexive and reciprocal: réfléchi : je me lave, il se coiffe ; réciproque : ils s'écrivent, on se téléphone",
+      "Idiomatic meaning: idiomatique : s'en aller, se rendre compte, se douter de, s'entendre bien avec",
+      "In context: Je me rends compte qu'il est tard. Il s'entend bien avec ses collègues."
+     ],
+     "q": "Who do you get along well with, and when did you last realise something important? Use s'entendre and se rendre compte.",
+     "c": "Write four sentences with se débrouiller, se tromper, s'en aller and se douter de about your week."
+    },
+    "de": {
+     "t": "Pronominale Verben: Bedeutungen",
+     "g": "Du unterscheidest reflexive, reziproke und idiomatische Verben wie s'en aller und se rendre compte.",
+     "p": [
+      "Reflexiv und reziprok: réfléchi : je me lave, il se coiffe ; réciproque : ils s'écrivent, on se téléphone",
+      "Idiomatische Bedeutung: idiomatique : s'en aller, se rendre compte, se douter de, s'entendre bien avec",
+      "Im Kontext: Je me rends compte qu'il est tard. Il s'entend bien avec ses collègues."
+     ],
+     "q": "Mit wem verstehst du dich gut, und wann ist dir zuletzt etwas Wichtiges klar geworden? Nutze s'entendre und se rendre compte.",
+     "c": "Schreib vier Sätze über deine Woche mit se débrouiller, se tromper, s'en aller und se douter de."
+    },
+    "es": {
+     "t": "Verbos pronominales: significados",
+     "g": "Distingue verbos reflexivos, recíprocos e idiomáticos como s'en aller y se rendre compte.",
+     "p": [
+      "Reflexivo y recíproco: réfléchi : je me lave, il se coiffe ; réciproque : ils s'écrivent, on se téléphone",
+      "Sentido idiomático: idiomatique : s'en aller, se rendre compte, se douter de, s'entendre bien avec",
+      "En contexto: Je me rends compte qu'il est tard. Il s'entend bien avec ses collègues."
+     ],
+     "q": "¿Con quién te llevas bien y cuándo te diste cuenta de algo importante? Usa s'entendre y se rendre compte.",
+     "c": "Escribe cuatro frases sobre tu semana con se débrouiller, se tromper, s'en aller y se douter de."
+    },
+    "fr": {
+     "t": "Les verbes pronominaux : sens",
+     "g": "Distinguer les verbes réfléchis, réciproques et idiomatiques comme s'en aller et se rendre compte.",
+     "p": [
+      "Réfléchi et réciproque : réfléchi : je me lave, il se coiffe ; réciproque : ils s'écrivent, on se téléphone",
+      "Sens idiomatique : idiomatique : s'en aller, se rendre compte, se douter de, s'entendre bien avec",
+      "En contexte : Je me rends compte qu'il est tard. Il s'entend bien avec ses collègues."
+     ],
+     "q": "Avec qui t'entends-tu bien, et quand t'es-tu rendu compte de quelque chose d'important ?",
+     "c": "Écris quatre phrases sur ta semaine avec se débrouiller, se tromper, s'en aller et se douter de."
+    },
+    "it": {
+     "t": "Verbi pronominali: significati",
+     "g": "Distingui verbi riflessivi, reciproci e idiomatici come s'en aller e se rendre compte.",
+     "p": [
+      "Riflessivo e reciproco: réfléchi : je me lave, il se coiffe ; réciproque : ils s'écrivent, on se téléphone",
+      "Senso idiomatico: idiomatique : s'en aller, se rendre compte, se douter de, s'entendre bien avec",
+      "Nel contesto: Je me rends compte qu'il est tard. Il s'entend bien avec ses collègues."
+     ],
+     "q": "Con chi vai d'accordo e quando ti sei reso conto di qualcosa di importante? Usa s'entendre e se rendre compte.",
+     "c": "Scrivi quattro frasi sulla tua settimana con se débrouiller, se tromper, s'en aller e se douter de."
+    },
+    "pt": {
+     "t": "Verbos pronominais: significados",
+     "g": "Distingue verbos reflexos, recíprocos e idiomáticos como s'en aller e se rendre compte.",
+     "p": [
+      "Reflexo e recíproco: réfléchi : je me lave, il se coiffe ; réciproque : ils s'écrivent, on se téléphone",
+      "Sentido idiomático: idiomatique : s'en aller, se rendre compte, se douter de, s'entendre bien avec",
+      "Em contexto: Je me rends compte qu'il est tard. Il s'entend bien avec ses collègues."
+     ],
+     "q": "Com quem te dás bem e quando te apercebeste de algo importante? Usa s'entendre e se rendre compte.",
+     "c": "Escreve quatro frases sobre a tua semana com se débrouiller, se tromper, s'en aller e se douter de."
+    },
+    "pt_BR": {
+     "t": "Verbos pronominais: significados",
+     "g": "Diferencie verbos reflexivos, recíprocos e idiomáticos como s'en aller e se rendre compte.",
+     "p": [
+      "Reflexivo e recíproco: réfléchi : je me lave, il se coiffe ; réciproque : ils s'écrivent, on se téléphone",
+      "Sentido idiomático: idiomatique : s'en aller, se rendre compte, se douter de, s'entendre bien avec",
+      "Em contexto: Je me rends compte qu'il est tard. Il s'entend bien avec ses collègues."
+     ],
+     "q": "Com quem você se dá bem e quando percebeu algo importante? Use s'entendre e se rendre compte.",
+     "c": "Escreva quatro frases sobre a sua semana com se débrouiller, se tromper, s'en aller e se douter de."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "s'en aller",
+      "ex": "Il est tard, je m'en vais."
+     },
+     {
+      "w": "se rendre compte",
+      "ex": "Je me suis rendu compte que j'avais oublié mes clés."
+     },
+     {
+      "w": "se douter de",
+      "ex": "Je me doutais de sa réponse."
+     },
+     {
+      "w": "s'entendre bien avec",
+      "ex": "Je m'entends très bien avec mes voisins."
+     },
+     {
+      "w": "se tromper",
+      "ex": "Pardon, je me suis trompé de numéro."
+     },
+     {
+      "w": "se débrouiller",
+      "ex": "Je me débrouille bien en français maintenant !"
+     }
+    ],
+    "gram": "Verbes pronominaux : réfléchis (se laver), réciproques (se téléphoner) ou idiomatiques au sens propre (s'en aller, se rendre compte)."
+   }
+  },
+  {
+   "d": 254,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Participle agreement with avoir",
+     "g": "Learn when the past participle agrees after avoir: les fleurs que j'ai achetées.",
+     "p": [
+      "No agreement: J'ai acheté des fleurs. → pas d'accord, le COD est après le verbe",
+      "Agreement, object before: Les fleurs que j'ai achetées sont belles. Ces photos, je les ai prises à Nice.",
+      "Questions and no object: Quelle robe as-tu choisie ? Mais : j'ai mangé, ils ont dormi (pas de COD)"
+     ],
+     "q": "Tell me about a photo you took recently, starting with Cette photo, je l'ai prise...",
+     "c": "Write three sentences with que or a pronoun before avoir, and check every participle agreement."
+    },
+    "de": {
+     "t": "Partizip-Angleichung mit avoir",
+     "g": "Du lernst, wann das Partizip nach avoir angeglichen wird: les fleurs que j'ai achetées.",
+     "p": [
+      "Keine Angleichung: J'ai acheté des fleurs. → pas d'accord, le COD est après le verbe",
+      "Angleichung, Objekt davor: Les fleurs que j'ai achetées sont belles. Ces photos, je les ai prises à Nice.",
+      "Fragen und ohne Objekt: Quelle robe as-tu choisie ? Mais : j'ai mangé, ils ont dormi (pas de COD)"
+     ],
+     "q": "Erzähl mir von einem Foto, das du kürzlich gemacht hast. Beginne mit Cette photo, je l'ai prise...",
+     "c": "Schreib drei Sätze mit que oder einem Pronomen vor avoir und prüfe jede Angleichung."
+    },
+    "es": {
+     "t": "Concordancia del participio con avoir",
+     "g": "Aprende cuándo concuerda el participio tras avoir: les fleurs que j'ai achetées.",
+     "p": [
+      "Sin concordancia: J'ai acheté des fleurs. → pas d'accord, le COD est après le verbe",
+      "Concordancia, objeto delante: Les fleurs que j'ai achetées sont belles. Ces photos, je les ai prises à Nice.",
+      "Preguntas y sin objeto: Quelle robe as-tu choisie ? Mais : j'ai mangé, ils ont dormi (pas de COD)"
+     ],
+     "q": "Háblame de una foto que hiciste hace poco, empezando con Cette photo, je l'ai prise...",
+     "c": "Escribe tres frases con que o un pronombre delante de avoir y revisa cada concordancia."
+    },
+    "fr": {
+     "t": "L'accord du participe avec avoir",
+     "g": "Savoir quand le participe s'accorde après avoir : les fleurs que j'ai achetées.",
+     "p": [
+      "Pas d'accord : J'ai acheté des fleurs. → pas d'accord, le COD est après le verbe",
+      "Accord, COD placé avant : Les fleurs que j'ai achetées sont belles. Ces photos, je les ai prises à Nice.",
+      "Questions et absence de COD : Quelle robe as-tu choisie ? Mais : j'ai mangé, ils ont dormi (pas de COD)"
+     ],
+     "q": "Parle-moi d'une photo que tu as prise récemment, en commençant par Cette photo, je l'ai prise...",
+     "c": "Écris trois phrases avec que ou un pronom avant avoir et vérifie chaque accord."
+    },
+    "it": {
+     "t": "Accordo del participio con avoir",
+     "g": "Scopri quando il participio si accorda dopo avoir: les fleurs que j'ai achetées.",
+     "p": [
+      "Nessun accordo: J'ai acheté des fleurs. → pas d'accord, le COD est après le verbe",
+      "Accordo, oggetto prima: Les fleurs que j'ai achetées sont belles. Ces photos, je les ai prises à Nice.",
+      "Domande e nessun oggetto: Quelle robe as-tu choisie ? Mais : j'ai mangé, ils ont dormi (pas de COD)"
+     ],
+     "q": "Parlami di una foto che hai scattato di recente, iniziando con Cette photo, je l'ai prise...",
+     "c": "Scrivi tre frasi con que o un pronome prima di avoir e controlla ogni accordo."
+    },
+    "pt": {
+     "t": "Concordância do particípio com avoir",
+     "g": "Percebe quando o particípio concorda depois de avoir: les fleurs que j'ai achetées.",
+     "p": [
+      "Sem concordância: J'ai acheté des fleurs. → pas d'accord, le COD est après le verbe",
+      "Concordância, objeto antes: Les fleurs que j'ai achetées sont belles. Ces photos, je les ai prises à Nice.",
+      "Perguntas e sem objeto: Quelle robe as-tu choisie ? Mais : j'ai mangé, ils ont dormi (pas de COD)"
+     ],
+     "q": "Fala-me de uma foto que tiraste há pouco, começando com Cette photo, je l'ai prise...",
+     "c": "Escreve três frases com que ou um pronome antes de avoir e verifica cada concordância."
+    },
+    "pt_BR": {
+     "t": "Concordância do particípio com avoir",
+     "g": "Entenda quando o particípio concorda depois de avoir: les fleurs que j'ai achetées.",
+     "p": [
+      "Sem concordância: J'ai acheté des fleurs. → pas d'accord, le COD est après le verbe",
+      "Concordância, objeto antes: Les fleurs que j'ai achetées sont belles. Ces photos, je les ai prises à Nice.",
+      "Perguntas e sem objeto: Quelle robe as-tu choisie ? Mais : j'ai mangé, ils ont dormi (pas de COD)"
+     ],
+     "q": "Me fale de uma foto que você tirou há pouco, começando com Cette photo, je l'ai prise...",
+     "c": "Escreva três frases com que ou um pronome antes de avoir e confira cada concordância."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "acheter → achetées",
+      "ex": "Les pommes que j'ai achetées sont délicieuses."
+     },
+     {
+      "w": "prendre → prises",
+      "ex": "Ces photos, je les ai prises au Mont-Saint-Michel."
+     },
+     {
+      "w": "écrire → écrite",
+      "ex": "La carte que tu m'as écrite m'a fait plaisir."
+     },
+     {
+      "w": "choisir → choisie",
+      "ex": "Quelle couleur as-tu choisie pour ta chambre ?"
+     },
+     {
+      "w": "voir → vus",
+      "ex": "Tes amis ? Je les ai vus au café ce matin."
+     },
+     {
+      "w": "faire → faite",
+      "ex": "La tarte que Léa a faite est un délice."
+     }
+    ],
+    "gram": "Avec avoir, le participe s'accorde avec le COD seulement s'il est placé avant : la lettre que j'ai écrite, je les ai vus."
+   }
+  },
+  {
+   "d": 255,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Negations in depth",
+     "g": "Go beyond ne... pas with ne... que, ne... ni... ni, ne... aucun and ne... nulle part.",
+     "p": [
+      "Restriction: ne... que = seulement : je n'ai que dix minutes",
+      "Neither, not any: ne... ni... ni : je ne bois ni café ni thé ; ne... aucun(e) : je n'ai aucune idée",
+      "Nowhere and combined: ne... nulle part : je ne le trouve nulle part ; combinées : il ne dit jamais rien"
+     ],
+     "q": "Tell me two things you never eat, using ne... ni... ni, and one thing you only do on Sundays with ne... que.",
+     "c": "Write a short grumpy note in French where nothing goes right, using four different negations."
+    },
+    "de": {
+     "t": "Verneinungen im Detail",
+     "g": "Du gehst über ne... pas hinaus: ne... que, ne... ni... ni, ne... aucun und ne... nulle part.",
+     "p": [
+      "Einschränkung: ne... que = seulement : je n'ai que dix minutes",
+      "Weder noch, kein: ne... ni... ni : je ne bois ni café ni thé ; ne... aucun(e) : je n'ai aucune idée",
+      "Nirgends und kombiniert: ne... nulle part : je ne le trouve nulle part ; combinées : il ne dit jamais rien"
+     ],
+     "q": "Nenn mir zwei Dinge, die du nie isst, mit ne... ni... ni, und etwas, das du nur sonntags tust, mit ne... que.",
+     "c": "Schreib eine kurze, grummelige Notiz auf Französisch, in der nichts klappt, mit vier verschiedenen Verneinungen."
+    },
+    "es": {
+     "t": "Las negaciones a fondo",
+     "g": "Ve más allá de ne... pas con ne... que, ne... ni... ni, ne... aucun y ne... nulle part.",
+     "p": [
+      "Restricción: ne... que = seulement : je n'ai que dix minutes",
+      "Ni... ni, ningún: ne... ni... ni : je ne bois ni café ni thé ; ne... aucun(e) : je n'ai aucune idée",
+      "En ninguna parte y combinadas: ne... nulle part : je ne le trouve nulle part ; combinées : il ne dit jamais rien"
+     ],
+     "q": "Dime dos cosas que nunca comes, con ne... ni... ni, y una que solo haces el domingo, con ne... que.",
+     "c": "Escribe en francés una nota gruñona donde nada sale bien, con cuatro negaciones distintas."
+    },
+    "fr": {
+     "t": "Les négations en détail",
+     "g": "Aller au-delà de ne... pas avec ne... que, ne... ni... ni, ne... aucun et ne... nulle part.",
+     "p": [
+      "Restriction : ne... que = seulement : je n'ai que dix minutes",
+      "Ni... ni, aucun : ne... ni... ni : je ne bois ni café ni thé ; ne... aucun(e) : je n'ai aucune idée",
+      "Nulle part et combinaisons : ne... nulle part : je ne le trouve nulle part ; combinées : il ne dit jamais rien"
+     ],
+     "q": "Dis-moi deux choses que tu ne manges jamais avec ne... ni... ni, et une que tu ne fais que le dimanche.",
+     "c": "Écris un petit mot grognon où rien ne va, avec quatre négations différentes."
+    },
+    "it": {
+     "t": "Le negazioni in dettaglio",
+     "g": "Vai oltre ne... pas con ne... que, ne... ni... ni, ne... aucun e ne... nulle part.",
+     "p": [
+      "Restrizione: ne... que = seulement : je n'ai que dix minutes",
+      "Né... né, nessuno: ne... ni... ni : je ne bois ni café ni thé ; ne... aucun(e) : je n'ai aucune idée",
+      "Da nessuna parte e combinate: ne... nulle part : je ne le trouve nulle part ; combinées : il ne dit jamais rien"
+     ],
+     "q": "Dimmi due cose che non mangi mai, con ne... ni... ni, e una che fai solo la domenica, con ne... que.",
+     "c": "Scrivi in francese un biglietto brontolone in cui niente va bene, con quattro negazioni diverse."
+    },
+    "pt": {
+     "t": "As negações a fundo",
+     "g": "Vai além de ne... pas com ne... que, ne... ni... ni, ne... aucun e ne... nulle part.",
+     "p": [
+      "Restrição: ne... que = seulement : je n'ai que dix minutes",
+      "Nem... nem, nenhum: ne... ni... ni : je ne bois ni café ni thé ; ne... aucun(e) : je n'ai aucune idée",
+      "Em lado nenhum e combinadas: ne... nulle part : je ne le trouve nulle part ; combinées : il ne dit jamais rien"
+     ],
+     "q": "Diz-me duas coisas que nunca comes, com ne... ni... ni, e uma que só fazes ao domingo, com ne... que.",
+     "c": "Escreve em francês um bilhete rabugento em que nada corre bem, com quatro negações diferentes."
+    },
+    "pt_BR": {
+     "t": "As negações a fundo",
+     "g": "Vá além de ne... pas com ne... que, ne... ni... ni, ne... aucun e ne... nulle part.",
+     "p": [
+      "Restrição: ne... que = seulement : je n'ai que dix minutes",
+      "Nem... nem, nenhum: ne... ni... ni : je ne bois ni café ni thé ; ne... aucun(e) : je n'ai aucune idée",
+      "Em lugar nenhum e combinadas: ne... nulle part : je ne le trouve nulle part ; combinées : il ne dit jamais rien"
+     ],
+     "q": "Me diga duas coisas que você nunca come, com ne... ni... ni, e uma que só faz no domingo, com ne... que.",
+     "c": "Escreva em francês um bilhete ranzinza em que nada dá certo, com quatro negações diferentes."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ne... que",
+      "ex": "Je n'ai que deux euros sur moi."
+     },
+     {
+      "w": "ne... ni... ni",
+      "ex": "Il ne mange ni viande ni poisson."
+     },
+     {
+      "w": "ne... aucun(e)",
+      "ex": "Je n'ai aucune idée de l'heure."
+     },
+     {
+      "w": "ne... nulle part",
+      "ex": "Mes clés ? Je ne les trouve nulle part !"
+     },
+     {
+      "w": "ne... jamais rien",
+      "ex": "Il ne dit jamais rien le matin avant son café."
+     },
+     {
+      "w": "ne... plus personne",
+      "ex": "Il n'y a plus personne au bureau à 19 h."
+     }
+    ],
+    "gram": "Négations : ne... que (restriction), ne... ni... ni, ne... aucun(e), ne... nulle part ; on peut les combiner : ne... jamais rien."
+   }
+  },
+  {
+   "d": 256,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Indefinite adjectives and pronouns",
+     "g": "Talk about vague quantities and people: certains, plusieurs, quelques, chacun, n'importe qui.",
+     "p": [
+      "Quantities: certains, plusieurs, quelques, chaque, tout le monde",
+      "Any at all: n'importe qui, n'importe quoi, n'importe où, n'importe quand",
+      "Adjective or pronoun: adjectif : quelques amis, chaque jour ; pronom : quelques-uns, chacun, certains pensent que..."
+     ],
+     "q": "Is there a place where you could live n'importe où? Or a food you would eat n'importe quand?",
+     "c": "Describe your group of friends in four sentences with certains, plusieurs, chacun and quelques-uns."
+    },
+    "de": {
+     "t": "Indefinite Begleiter und Pronomen",
+     "g": "Du sprichst über unbestimmte Mengen und Personen: certains, plusieurs, quelques, chacun, n'importe qui.",
+     "p": [
+      "Mengen: certains, plusieurs, quelques, chaque, tout le monde",
+      "Egal wer, was, wo: n'importe qui, n'importe quoi, n'importe où, n'importe quand",
+      "Begleiter oder Pronomen: adjectif : quelques amis, chaque jour ; pronom : quelques-uns, chacun, certains pensent que..."
+     ],
+     "q": "Gibt es ein Essen, das du n'importe quand essen würdest? Oder einen Ort, wo du n'importe où leben könntest?",
+     "c": "Beschreib deinen Freundeskreis in vier Sätzen mit certains, plusieurs, chacun und quelques-uns."
+    },
+    "es": {
+     "t": "Adjetivos y pronombres indefinidos",
+     "g": "Habla de cantidades y personas imprecisas: certains, plusieurs, quelques, chacun, n'importe qui.",
+     "p": [
+      "Cantidades: certains, plusieurs, quelques, chaque, tout le monde",
+      "Cualquiera: n'importe qui, n'importe quoi, n'importe où, n'importe quand",
+      "Adjetivo o pronombre: adjectif : quelques amis, chaque jour ; pronom : quelques-uns, chacun, certains pensent que..."
+     ],
+     "q": "¿Hay una comida que comerías n'importe quand? ¿O un lugar donde podrías vivir n'importe où?",
+     "c": "Describe a tu grupo de amigos en cuatro frases con certains, plusieurs, chacun y quelques-uns."
+    },
+    "fr": {
+     "t": "Adjectifs et pronoms indéfinis",
+     "g": "Parler de quantités et de personnes imprécises : certains, plusieurs, quelques, chacun, n'importe qui.",
+     "p": [
+      "Quantités : certains, plusieurs, quelques, chaque, tout le monde",
+      "Sans distinction : n'importe qui, n'importe quoi, n'importe où, n'importe quand",
+      "Adjectif ou pronom : adjectif : quelques amis, chaque jour ; pronom : quelques-uns, chacun, certains pensent que..."
+     ],
+     "q": "Y a-t-il un plat que tu mangerais n'importe quand ? Ou un endroit où tu vivrais n'importe où ?",
+     "c": "Décris ton groupe d'amis en quatre phrases avec certains, plusieurs, chacun et quelques-uns."
+    },
+    "it": {
+     "t": "Aggettivi e pronomi indefiniti",
+     "g": "Parla di quantità e persone imprecise: certains, plusieurs, quelques, chacun, n'importe qui.",
+     "p": [
+      "Quantità: certains, plusieurs, quelques, chaque, tout le monde",
+      "Chiunque, qualsiasi: n'importe qui, n'importe quoi, n'importe où, n'importe quand",
+      "Aggettivo o pronome: adjectif : quelques amis, chaque jour ; pronom : quelques-uns, chacun, certains pensent que..."
+     ],
+     "q": "C'è un cibo che mangeresti n'importe quand? O un posto dove potresti vivere n'importe où?",
+     "c": "Descrivi il tuo gruppo di amici in quattro frasi con certains, plusieurs, chacun e quelques-uns."
+    },
+    "pt": {
+     "t": "Adjetivos e pronomes indefinidos",
+     "g": "Fala de quantidades e pessoas imprecisas: certains, plusieurs, quelques, chacun, n'importe qui.",
+     "p": [
+      "Quantidades: certains, plusieurs, quelques, chaque, tout le monde",
+      "Qualquer um: n'importe qui, n'importe quoi, n'importe où, n'importe quand",
+      "Adjetivo ou pronome: adjectif : quelques amis, chaque jour ; pronom : quelques-uns, chacun, certains pensent que..."
+     ],
+     "q": "Há alguma comida que comerias n'importe quand? Ou um sítio onde poderias viver n'importe où?",
+     "c": "Descreve o teu grupo de amigos em quatro frases com certains, plusieurs, chacun e quelques-uns."
+    },
+    "pt_BR": {
+     "t": "Adjetivos e pronomes indefinidos",
+     "g": "Fale de quantidades e pessoas imprecisas: certains, plusieurs, quelques, chacun, n'importe qui.",
+     "p": [
+      "Quantidades: certains, plusieurs, quelques, chaque, tout le monde",
+      "Qualquer um: n'importe qui, n'importe quoi, n'importe où, n'importe quand",
+      "Adjetivo ou pronome: adjectif : quelques amis, chaque jour ; pronom : quelques-uns, chacun, certains pensent que..."
+     ],
+     "q": "Existe uma comida que você comeria n'importe quand? Ou um lugar onde você moraria n'importe où?",
+     "c": "Descreva sua turma de amigos em quatro frases com certains, plusieurs, chacun e quelques-uns."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "certains",
+      "ex": "Certains étudiants préfèrent réviser le soir."
+     },
+     {
+      "w": "plusieurs",
+      "ex": "J'ai visité plusieurs musées à Paris."
+     },
+     {
+      "w": "quelques",
+      "ex": "Il reste quelques places au premier rang."
+     },
+     {
+      "w": "chacun",
+      "ex": "Chacun apporte un plat pour le pique-nique."
+     },
+     {
+      "w": "n'importe qui",
+      "ex": "N'importe qui peut apprendre à cuisiner."
+     },
+     {
+      "w": "n'importe quoi",
+      "ex": "Ne dis pas n'importe quoi, réfléchis d'abord !"
+     }
+    ],
+    "gram": "Indéfinis : adjectifs (quelques, plusieurs, chaque) devant un nom ; pronoms (quelques-uns, chacun, certains) ; n'importe + qui/quoi/où."
+   }
+  },
+  {
+   "d": 257,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Expressing hypothesis",
+     "g": "Talk about possibilities and conditions: au cas où, à condition que, en supposant que, si jamais.",
+     "p": [
+      "Just in case: au cas où + conditionnel : prends un parapluie au cas où il pleuvrait",
+      "On condition that: à condition que + subjonctif : je viens à condition que tu sois là",
+      "Supposing and if ever: en supposant que + subjonctif ; si jamais + indicatif : si jamais tu passes, appelle-moi"
+     ],
+     "q": "What do you always pack au cas où? Tell me in French, and add one plan with à condition que.",
+     "c": "Plan a weekend trip in four French sentences, each using a different hypothesis expression."
+    },
+    "de": {
+     "t": "Hypothesen ausdrücken",
+     "g": "Du sprichst über Möglichkeiten und Bedingungen: au cas où, à condition que, en supposant que, si jamais.",
+     "p": [
+      "Für den Fall: au cas où + conditionnel : prends un parapluie au cas où il pleuvrait",
+      "Unter der Bedingung: à condition que + subjonctif : je viens à condition que tu sois là",
+      "Angenommen und falls je: en supposant que + subjonctif ; si jamais + indicatif : si jamais tu passes, appelle-moi"
+     ],
+     "q": "Was packst du immer au cas où ein? Sag es auf Französisch und füg einen Plan mit à condition que hinzu.",
+     "c": "Plane einen Wochenendausflug in vier französischen Sätzen, jeder mit einem anderen Hypothese-Ausdruck."
+    },
+    "es": {
+     "t": "Expresar hipótesis",
+     "g": "Habla de posibilidades y condiciones: au cas où, à condition que, en supposant que, si jamais.",
+     "p": [
+      "Por si acaso: au cas où + conditionnel : prends un parapluie au cas où il pleuvrait",
+      "Con la condición de: à condition que + subjonctif : je viens à condition que tu sois là",
+      "Suponiendo y si alguna vez: en supposant que + subjonctif ; si jamais + indicatif : si jamais tu passes, appelle-moi"
+     ],
+     "q": "¿Qué llevas siempre en la maleta au cas où? Dímelo en francés y añade un plan con à condition que.",
+     "c": "Planea una escapada de fin de semana en cuatro frases en francés, cada una con una expresión distinta."
+    },
+    "fr": {
+     "t": "Exprimer l'hypothèse",
+     "g": "Parler de possibilités et de conditions : au cas où, à condition que, en supposant que, si jamais.",
+     "p": [
+      "Au cas où : au cas où + conditionnel : prends un parapluie au cas où il pleuvrait",
+      "Condition : à condition que + subjonctif : je viens à condition que tu sois là",
+      "Supposition et si jamais : en supposant que + subjonctif ; si jamais + indicatif : si jamais tu passes, appelle-moi"
+     ],
+     "q": "Qu'emportes-tu toujours au cas où ? Ajoute un projet avec à condition que.",
+     "c": "Organise un week-end en quatre phrases, chacune avec une expression d'hypothèse différente."
+    },
+    "it": {
+     "t": "Esprimere un'ipotesi",
+     "g": "Parla di possibilità e condizioni: au cas où, à condition que, en supposant que, si jamais.",
+     "p": [
+      "Nel caso: au cas où + conditionnel : prends un parapluie au cas où il pleuvrait",
+      "A condizione che: à condition que + subjonctif : je viens à condition que tu sois là",
+      "Supponendo e se mai: en supposant que + subjonctif ; si jamais + indicatif : si jamais tu passes, appelle-moi"
+     ],
+     "q": "Cosa porti sempre con te au cas où? Dimmelo in francese e aggiungi un piano con à condition que.",
+     "c": "Organizza un weekend in quattro frasi in francese, ognuna con un'espressione di ipotesi diversa."
+    },
+    "pt": {
+     "t": "Exprimir hipóteses",
+     "g": "Fala de possibilidades e condições: au cas où, à condition que, en supposant que, si jamais.",
+     "p": [
+      "Para o caso de: au cas où + conditionnel : prends un parapluie au cas où il pleuvrait",
+      "Com a condição de: à condition que + subjonctif : je viens à condition que tu sois là",
+      "Supondo e se por acaso: en supposant que + subjonctif ; si jamais + indicatif : si jamais tu passes, appelle-moi"
+     ],
+     "q": "O que levas sempre au cas où? Diz-mo em francês e acrescenta um plano com à condition que.",
+     "c": "Planeia um fim de semana fora em quatro frases em francês, cada uma com uma expressão de hipótese diferente."
+    },
+    "pt_BR": {
+     "t": "Expressando hipóteses",
+     "g": "Fale de possibilidades e condições: au cas où, à condition que, en supposant que, si jamais.",
+     "p": [
+      "Caso: au cas où + conditionnel : prends un parapluie au cas où il pleuvrait",
+      "Com a condição de: à condition que + subjonctif : je viens à condition que tu sois là",
+      "Supondo e se por acaso: en supposant que + subjonctif ; si jamais + indicatif : si jamais tu passes, appelle-moi"
+     ],
+     "q": "O que você sempre leva au cas où? Me diga em francês e acrescente um plano com à condition que.",
+     "c": "Planeje um fim de semana fora em quatro frases em francês, cada uma com uma expressão de hipótese diferente."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "au cas où",
+      "ex": "Prends ta veste au cas où il ferait froid."
+     },
+     {
+      "w": "à condition que",
+      "ex": "On ira au parc à condition qu'il fasse beau."
+     },
+     {
+      "w": "en supposant que",
+      "ex": "En supposant que le train soit à l'heure, on arrive à midi."
+     },
+     {
+      "w": "si jamais",
+      "ex": "Si jamais tu as besoin d'aide, appelle-moi."
+     },
+     {
+      "w": "à moins que",
+      "ex": "Je viendrai, à moins que je ne sois retenu au travail."
+     },
+     {
+      "w": "pourvu que",
+      "ex": "Pourvu qu'il fasse beau demain !"
+     }
+    ],
+    "gram": "Hypothèse : au cas où + conditionnel ; à condition que, en supposant que, à moins que + subjonctif ; si jamais + indicatif."
+   }
+  },
+  {
+   "d": 258,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Telling an anecdote",
+     "g": "Tell a short, funny story in French with a hook, vivid details, a climax and a punchline.",
+     "p": [
+      "The hook: Tu ne vas pas croire ce qui m'est arrivé ! / Figure-toi que...",
+      "Details and climax: tout à coup, soudain, à ce moment-là, et là...",
+      "The ending: bref, finalement, du coup, j'en ris encore !"
+     ],
+     "q": "Tell me a funny little thing that happened to you, starting with Figure-toi que...",
+     "c": "Write a five-sentence anecdote in French using imparfait for the scene and three storytelling connectors."
+    },
+    "de": {
+     "t": "Eine Anekdote erzählen",
+     "g": "Du erzählst eine kurze, lustige Geschichte mit Aufhänger, lebendigen Details, Höhepunkt und Pointe.",
+     "p": [
+      "Der Aufhänger: Tu ne vas pas croire ce qui m'est arrivé ! / Figure-toi que...",
+      "Details und Höhepunkt: tout à coup, soudain, à ce moment-là, et là...",
+      "Das Ende: bref, finalement, du coup, j'en ris encore !"
+     ],
+     "q": "Erzähl mir etwas Lustiges, das dir passiert ist. Beginne mit Figure-toi que...",
+     "c": "Schreib eine Anekdote in fünf Sätzen, mit imparfait für die Szene und drei Erzähl-Konnektoren."
+    },
+    "es": {
+     "t": "Contar una anécdota",
+     "g": "Cuenta una historia corta y divertida en francés con gancho, detalles vivos, clímax y remate.",
+     "p": [
+      "El gancho: Tu ne vas pas croire ce qui m'est arrivé ! / Figure-toi que...",
+      "Detalles y clímax: tout à coup, soudain, à ce moment-là, et là...",
+      "El final: bref, finalement, du coup, j'en ris encore !"
+     ],
+     "q": "Cuéntame algo gracioso que te pasó, empezando con Figure-toi que...",
+     "c": "Escribe una anécdota de cinco frases con imparfait para la escena y tres conectores narrativos."
+    },
+    "fr": {
+     "t": "Raconter une anecdote",
+     "g": "Raconter une petite histoire drôle avec une accroche, des détails vivants, un moment fort et une chute.",
+     "p": [
+      "L'accroche : Tu ne vas pas croire ce qui m'est arrivé ! / Figure-toi que...",
+      "Détails et moment fort : tout à coup, soudain, à ce moment-là, et là...",
+      "La chute : bref, finalement, du coup, j'en ris encore !"
+     ],
+     "q": "Raconte-moi une petite chose drôle qui t'est arrivée, en commençant par Figure-toi que...",
+     "c": "Écris une anecdote de cinq phrases avec l'imparfait pour le décor et trois connecteurs du récit."
+    },
+    "it": {
+     "t": "Raccontare un aneddoto",
+     "g": "Racconta una breve storia divertente in francese con aggancio, dettagli vivaci, culmine e battuta finale.",
+     "p": [
+      "L'aggancio: Tu ne vas pas croire ce qui m'est arrivé ! / Figure-toi que...",
+      "Dettagli e culmine: tout à coup, soudain, à ce moment-là, et là...",
+      "Il finale: bref, finalement, du coup, j'en ris encore !"
+     ],
+     "q": "Raccontami una cosa buffa che ti è successa, iniziando con Figure-toi que...",
+     "c": "Scrivi un aneddoto di cinque frasi con l'imparfait per la scena e tre connettivi narrativi."
+    },
+    "pt": {
+     "t": "Contar uma história",
+     "g": "Conta uma pequena história engraçada em francês com gancho, detalhes vivos, clímax e desfecho.",
+     "p": [
+      "O gancho: Tu ne vas pas croire ce qui m'est arrivé ! / Figure-toi que...",
+      "Detalhes e clímax: tout à coup, soudain, à ce moment-là, et là...",
+      "O desfecho: bref, finalement, du coup, j'en ris encore !"
+     ],
+     "q": "Conta-me uma coisa engraçada que te aconteceu, começando com Figure-toi que...",
+     "c": "Escreve uma história de cinco frases com o imparfait para o cenário e três conectores narrativos."
+    },
+    "pt_BR": {
+     "t": "Contando um causo",
+     "g": "Conte uma historinha engraçada em francês com gancho, detalhes vivos, clímax e desfecho.",
+     "p": [
+      "O gancho: Tu ne vas pas croire ce qui m'est arrivé ! / Figure-toi que...",
+      "Detalhes e clímax: tout à coup, soudain, à ce moment-là, et là...",
+      "O desfecho: bref, finalement, du coup, j'en ris encore !"
+     ],
+     "q": "Me conte uma coisa engraçada que aconteceu com você, começando com Figure-toi que...",
+     "c": "Escreva um causo de cinco frases com o imparfait para o cenário e três conectores narrativos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "figure-toi que",
+      "ex": "Figure-toi que j'ai croisé mon ancien prof au marché !"
+     },
+     {
+      "w": "tout à coup",
+      "ex": "Tout à coup, la lumière s'est éteinte."
+     },
+     {
+      "w": "et là",
+      "ex": "Et là, le chat a sauté sur la table !"
+     },
+     {
+      "w": "du coup",
+      "ex": "Il pleuvait, du coup on est restés à la maison."
+     },
+     {
+      "w": "bref",
+      "ex": "Bref, on a raté le bus mais on a bien ri."
+     },
+     {
+      "w": "j'en ris encore",
+      "ex": "J'ai confondu le sel et le sucre, j'en ris encore !"
+     }
+    ],
+    "gram": "Anecdote : imparfait pour le décor, passé composé pour les actions ; connecteurs : tout à coup, et là, du coup, bref, finalement."
+   }
+  },
+  {
+   "d": 259,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Debating: making a point",
+     "g": "State and support a clear opinion in French: je soutiens que, il est évident que, de plus.",
+     "p": [
+      "Stating your view: Je soutiens que..., je suis convaincu(e) que..., à mon avis...",
+      "Strong claims: Il est évident que..., il est clair que... + indicatif ; on ne peut pas nier que...",
+      "Structuring arguments: d'abord, ensuite, de plus, enfin ; par exemple..."
+     ],
+     "q": "Is it better to live in the city or the countryside? Defend your view with two arguments.",
+     "c": "Write a mini speech of four sentences defending a light topic, like breakfast being the best meal."
+    },
+    "de": {
+     "t": "Debattieren: einen Standpunkt vertreten",
+     "g": "Du vertrittst auf Französisch klar eine Meinung: je soutiens que, il est évident que, de plus.",
+     "p": [
+      "Meinung äußern: Je soutiens que..., je suis convaincu(e) que..., à mon avis...",
+      "Starke Aussagen: Il est évident que..., il est clair que... + indicatif ; on ne peut pas nier que...",
+      "Argumente ordnen: d'abord, ensuite, de plus, enfin ; par exemple..."
+     ],
+     "q": "Lebt man besser in der Stadt oder auf dem Land? Verteidige deine Sicht mit zwei Argumenten.",
+     "c": "Schreib eine Mini-Rede in vier Sätzen zu einem leichten Thema, etwa dass das Frühstück die beste Mahlzeit ist."
+    },
+    "es": {
+     "t": "Debatir: defender una idea",
+     "g": "Expón y defiende una opinión clara en francés: je soutiens que, il est évident que, de plus.",
+     "p": [
+      "Dar tu opinión: Je soutiens que..., je suis convaincu(e) que..., à mon avis...",
+      "Afirmaciones fuertes: Il est évident que..., il est clair que... + indicatif ; on ne peut pas nier que...",
+      "Ordenar argumentos: d'abord, ensuite, de plus, enfin ; par exemple..."
+     ],
+     "q": "¿Es mejor vivir en la ciudad o en el campo? Defiende tu postura con dos argumentos.",
+     "c": "Escribe un minidiscurso de cuatro frases sobre un tema ligero, como que el desayuno es la mejor comida."
+    },
+    "fr": {
+     "t": "Débattre : défendre un point",
+     "g": "Exposer et défendre une opinion claire : je soutiens que, il est évident que, de plus.",
+     "p": [
+      "Donner son avis : Je soutiens que..., je suis convaincu(e) que..., à mon avis...",
+      "Affirmations fortes : Il est évident que..., il est clair que... + indicatif ; on ne peut pas nier que...",
+      "Structurer : d'abord, ensuite, de plus, enfin ; par exemple..."
+     ],
+     "q": "Vaut-il mieux vivre en ville ou à la campagne ? Défends ton avis avec deux arguments.",
+     "c": "Écris un mini discours de quatre phrases sur un sujet léger, par exemple : le petit-déjeuner est le meilleur repas."
+    },
+    "it": {
+     "t": "Dibattere: sostenere una tesi",
+     "g": "Esponi e sostieni un'opinione chiara in francese: je soutiens que, il est évident que, de plus.",
+     "p": [
+      "Dare la tua opinione: Je soutiens que..., je suis convaincu(e) que..., à mon avis...",
+      "Affermazioni forti: Il est évident que..., il est clair que... + indicatif ; on ne peut pas nier que...",
+      "Strutturare gli argomenti: d'abord, ensuite, de plus, enfin ; par exemple..."
+     ],
+     "q": "È meglio vivere in città o in campagna? Difendi la tua idea con due argomenti.",
+     "c": "Scrivi un mini discorso di quattro frasi su un tema leggero, per esempio che la colazione è il pasto migliore."
+    },
+    "pt": {
+     "t": "Debater: defender uma ideia",
+     "g": "Apresenta e defende uma opinião clara em francês: je soutiens que, il est évident que, de plus.",
+     "p": [
+      "Dar a tua opinião: Je soutiens que..., je suis convaincu(e) que..., à mon avis...",
+      "Afirmações fortes: Il est évident que..., il est clair que... + indicatif ; on ne peut pas nier que...",
+      "Estruturar argumentos: d'abord, ensuite, de plus, enfin ; par exemple..."
+     ],
+     "q": "É melhor viver na cidade ou no campo? Defende a tua posição com dois argumentos.",
+     "c": "Escreve um minidiscurso de quatro frases sobre um tema leve, como o pequeno-almoço ser a melhor refeição."
+    },
+    "pt_BR": {
+     "t": "Debatendo: defendendo uma ideia",
+     "g": "Apresente e defenda uma opinião clara em francês: je soutiens que, il est évident que, de plus.",
+     "p": [
+      "Dar sua opinião: Je soutiens que..., je suis convaincu(e) que..., à mon avis...",
+      "Afirmações fortes: Il est évident que..., il est clair que... + indicatif ; on ne peut pas nier que...",
+      "Estruturar argumentos: d'abord, ensuite, de plus, enfin ; par exemple..."
+     ],
+     "q": "É melhor morar na cidade ou no campo? Defenda sua posição com dois argumentos.",
+     "c": "Escreva um minidiscurso de quatro frases sobre um tema leve, como o café da manhã ser a melhor refeição."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "je soutiens que",
+      "ex": "Je soutiens que le vélo est idéal en ville."
+     },
+     {
+      "w": "je suis convaincu(e) que",
+      "ex": "Je suis convaincue que lire chaque jour aide à progresser."
+     },
+     {
+      "w": "il est évident que",
+      "ex": "Il est évident que le sport fait du bien au moral."
+     },
+     {
+      "w": "on ne peut pas nier que",
+      "ex": "On ne peut pas nier que les langues ouvrent des portes."
+     },
+     {
+      "w": "de plus",
+      "ex": "De plus, c'est bon pour la santé."
+     },
+     {
+      "w": "par exemple",
+      "ex": "Par exemple, à Amsterdam, presque tout le monde pédale."
+     }
+    ],
+    "gram": "Affirmer une opinion : je soutiens que, je suis convaincu que, il est évident que + indicatif ; structurer : d'abord, de plus, enfin."
+   }
+  },
+  {
+   "d": 260,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Debating: responding",
+     "g": "Answer an argument politely: concede a point with certes, then disagree with mais or au contraire.",
+     "p": [
+      "Conceding: Certes..., mais... ; c'est vrai, mais... ; je comprends ton point de vue, cependant...",
+      "Disagreeing: Au contraire !, je ne suis pas d'accord, ce n'est pas tout à fait exact",
+      "Partly agreeing: Tu as raison sur un point... ; je te l'accorde, mais..."
+     ],
+     "q": "I say: Les vacances à la plage sont les meilleures. Reply with certes... mais and give your own view!",
+     "c": "Answer three opinions in French: one you accept, one you partly accept and one you politely reject."
+    },
+    "de": {
+     "t": "Debattieren: antworten",
+     "g": "Du antwortest höflich auf ein Argument: erst mit certes zugestehen, dann mit mais oder au contraire widersprechen.",
+     "p": [
+      "Zugestehen: Certes..., mais... ; c'est vrai, mais... ; je comprends ton point de vue, cependant...",
+      "Widersprechen: Au contraire !, je ne suis pas d'accord, ce n'est pas tout à fait exact",
+      "Teilweise zustimmen: Tu as raison sur un point... ; je te l'accorde, mais..."
+     ],
+     "q": "Ich sage: Les vacances à la plage sont les meilleures. Antworte mit certes... mais und deiner Meinung!",
+     "c": "Antworte auf Französisch auf drei Meinungen: eine nimmst du an, eine teilweise, eine lehnst du höflich ab."
+    },
+    "es": {
+     "t": "Debatir: responder",
+     "g": "Responde con cortesía: concede un punto con certes y luego discrepa con mais o au contraire.",
+     "p": [
+      "Conceder: Certes..., mais... ; c'est vrai, mais... ; je comprends ton point de vue, cependant...",
+      "Discrepar: Au contraire !, je ne suis pas d'accord, ce n'est pas tout à fait exact",
+      "Estar de acuerdo en parte: Tu as raison sur un point... ; je te l'accorde, mais..."
+     ],
+     "q": "Yo digo: Les vacances à la plage sont les meilleures. ¡Responde con certes... mais y da tu opinión!",
+     "c": "Responde en francés a tres opiniones: una que aceptas, una que aceptas en parte y otra que rechazas con educación."
+    },
+    "fr": {
+     "t": "Débattre : répondre",
+     "g": "Répondre poliment : concéder un point avec certes, puis s'opposer avec mais ou au contraire.",
+     "p": [
+      "Concéder : Certes..., mais... ; c'est vrai, mais... ; je comprends ton point de vue, cependant...",
+      "S'opposer : Au contraire !, je ne suis pas d'accord, ce n'est pas tout à fait exact",
+      "Accord partiel : Tu as raison sur un point... ; je te l'accorde, mais..."
+     ],
+     "q": "Je dis : Les vacances à la plage sont les meilleures. Réponds avec certes... mais et donne ton avis !",
+     "c": "Réponds à trois opinions : une que tu acceptes, une en partie, une que tu refuses poliment."
+    },
+    "it": {
+     "t": "Dibattere: rispondere",
+     "g": "Rispondi con garbo: concedi un punto con certes, poi dissenti con mais o au contraire.",
+     "p": [
+      "Concedere: Certes..., mais... ; c'est vrai, mais... ; je comprends ton point de vue, cependant...",
+      "Dissentire: Au contraire !, je ne suis pas d'accord, ce n'est pas tout à fait exact",
+      "Accordo parziale: Tu as raison sur un point... ; je te l'accorde, mais..."
+     ],
+     "q": "Io dico: Les vacances à la plage sont les meilleures. Rispondi con certes... mais e dai la tua opinione!",
+     "c": "Rispondi in francese a tre opinioni: una che accetti, una in parte e una che rifiuti con garbo."
+    },
+    "pt": {
+     "t": "Debater: responder",
+     "g": "Responde com educação: concede um ponto com certes e depois discorda com mais ou au contraire.",
+     "p": [
+      "Conceder: Certes..., mais... ; c'est vrai, mais... ; je comprends ton point de vue, cependant...",
+      "Discordar: Au contraire !, je ne suis pas d'accord, ce n'est pas tout à fait exact",
+      "Concordar em parte: Tu as raison sur un point... ; je te l'accorde, mais..."
+     ],
+     "q": "Eu digo: Les vacances à la plage sont les meilleures. Responde com certes... mais e dá a tua opinião!",
+     "c": "Responde em francês a três opiniões: uma que aceitas, uma que aceitas em parte e outra que recusas com educação."
+    },
+    "pt_BR": {
+     "t": "Debatendo: respondendo",
+     "g": "Responda com educação: conceda um ponto com certes e depois discorde com mais ou au contraire.",
+     "p": [
+      "Conceder: Certes..., mais... ; c'est vrai, mais... ; je comprends ton point de vue, cependant...",
+      "Discordar: Au contraire !, je ne suis pas d'accord, ce n'est pas tout à fait exact",
+      "Concordar em parte: Tu as raison sur un point... ; je te l'accorde, mais..."
+     ],
+     "q": "Eu digo: Les vacances à la plage sont les meilleures. Responda com certes... mais e dê sua opinião!",
+     "c": "Responda em francês a três opiniões: uma que você aceita, uma em parte e outra que recusa com educação."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "certes... mais",
+      "ex": "Certes, la ville est chère, mais il y a tant à faire !"
+     },
+     {
+      "w": "je comprends ton point de vue",
+      "ex": "Je comprends ton point de vue, mais je vois les choses autrement."
+     },
+     {
+      "w": "au contraire",
+      "ex": "Ce n'est pas ennuyeux, au contraire, c'est passionnant !"
+     },
+     {
+      "w": "je te l'accorde",
+      "ex": "Je te l'accorde, le train est plus lent, mais plus agréable."
+     },
+     {
+      "w": "cependant",
+      "ex": "Le projet est intéressant ; cependant, il demande du temps."
+     },
+     {
+      "w": "ce n'est pas tout à fait exact",
+      "ex": "Ce n'est pas tout à fait exact : le musée ouvre à 10 h."
+     }
+    ],
+    "gram": "Répondre : concéder (certes, je te l'accorde, c'est vrai) puis s'opposer (mais, cependant, au contraire) avec politesse."
+   }
+  }
+ ]
+}

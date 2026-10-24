@@ -1,0 +1,2195 @@
+{
+ "topic": "leadership",
+ "days": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "t": "What leadership really is",
+   "f": "Leadership as influence and service rather than a job title, and why anyone can practise it"
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "t": "Leaders and managers",
+   "f": "How leading people differs from managing tasks and why good teams need both"
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "t": "Leaders you admire",
+   "f": "Looking at leaders you know personally and the qualities that made them worth following"
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "t": "Common leadership styles",
+   "f": "An overview of directive, coaching, democratic, supportive and delegating styles"
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "t": "Situational leadership",
+   "f": "Adapting your style to a person's skill and confidence for each task"
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "t": "Leadership myths",
+   "f": "Busting myths like born leaders, always having answers or needing to be loud"
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "t": "Leading without a title",
+   "f": "Everyday ways to lead in projects, friendships, clubs and family life"
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "t": "The responsibilities of a team leader",
+   "f": "Core duties: direction, support, development, decisions and results"
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "t": "Leadership vocabulary",
+   "f": "Key terms like feedback, delegation, one-on-one, alignment and accountability made simple"
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "t": "Your leadership starting point",
+   "f": "A friendly self-check of your experience, strengths and goals for this path"
+  },
+  {
+   "d": 11,
+   "lv": "beginner",
+   "t": "Why self-awareness comes first",
+   "f": "How understanding yourself makes you a calmer and fairer leader"
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "t": "Discovering your core values",
+   "f": "Naming the values that guide your choices as a leader"
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "t": "Your strengths as a leader",
+   "f": "Identifying natural strengths and how to use them with a team"
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "t": "Knowing your blind spots",
+   "f": "Ways to discover habits you cannot see yourself, like asking trusted people"
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "t": "Emotions at work",
+   "f": "Recognising your own emotions and how they affect decisions and the team mood"
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "t": "Staying calm under pressure",
+   "f": "Simple techniques to pause, breathe and respond instead of react"
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "t": "Your energy and moods as a leader",
+   "f": "How a leader's mood spreads through a team and how to manage it"
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "t": "Personality and work preferences",
+   "f": "Understanding introvert and extrovert tendencies and other preferences"
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "t": "Writing your leadership purpose",
+   "f": "A short statement of why you want to lead and whom you want to serve"
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "t": "Keeping a leadership journal",
+   "f": "A daily reflection habit to learn from your own leadership moments"
+  },
+  {
+   "d": 21,
+   "lv": "beginner",
+   "t": "Communication as the leader's main tool",
+   "f": "Why most leadership happens through conversations and messages"
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "t": "Active listening",
+   "f": "Giving full attention, paraphrasing and asking follow-up questions"
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "t": "Asking open questions",
+   "f": "Using what, how and tell me more questions to understand people"
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "t": "Being clear and concise",
+   "f": "Stating the point first and checking that the message landed"
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "t": "Body language and tone",
+   "f": "How posture, eye contact and voice support or undermine your words"
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "t": "Communicating expectations",
+   "f": "Explaining what good looks like, by when and why it matters"
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "t": "Adapting to your audience",
+   "f": "Tailoring messages for team members, peers and senior people"
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "t": "Sharing information openly",
+   "f": "Transparency habits that keep the team informed and reduce rumours"
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "t": "Silence as a tool",
+   "f": "Allowing pauses so others can think and speak"
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "t": "Review: self-awareness and communication",
+   "f": "Revisiting the first month and choosing one listening habit to practise"
+  },
+  {
+   "d": 31,
+   "lv": "beginner",
+   "t": "What trust is made of",
+   "f": "Competence, reliability, honesty and care as the pillars of trust"
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "t": "Keeping your promises",
+   "f": "Why small commitments kept every day build a leader's credibility"
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "t": "Admitting mistakes",
+   "f": "How owning errors openly builds respect instead of weakening it"
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "t": "Showing genuine care",
+   "f": "Learning about people's goals and lives in a respectful way"
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "t": "Being consistent and fair",
+   "f": "Treating people by the same standards and explaining your reasoning"
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "t": "Giving credit generously",
+   "f": "Highlighting others' contributions and sharing success with the team"
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "t": "Protecting confidentiality",
+   "f": "Handling private information with discretion"
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "t": "Trusting your team first",
+   "f": "Extending trust and giving autonomy as a starting point"
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "t": "Building trust with a new team",
+   "f": "First steps to earn trust when you start leading a group"
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "t": "Rebuilding broken trust",
+   "f": "Steps to repair trust after a misunderstanding or broken promise"
+  },
+  {
+   "d": 41,
+   "lv": "beginner",
+   "t": "Why feedback matters",
+   "f": "Feedback as a gift that helps people grow and teams improve"
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "t": "Positive feedback that motivates",
+   "f": "Making praise specific, sincere and timely"
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "t": "The SBI feedback model",
+   "f": "Describing situation, behaviour and impact to keep feedback clear and fair"
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "t": "Constructive feedback with kindness",
+   "f": "Pointing out improvements while respecting the person"
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "t": "Feedback in the moment",
+   "f": "Giving small, quick feedback often instead of saving it for reviews"
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "t": "Avoiding feedback mistakes",
+   "f": "Common traps like vague comments, sandwiches and judging the person"
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "t": "Feedback in writing",
+   "f": "When written feedback works and how to keep it warm and clear"
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "t": "Asking questions instead of telling",
+   "f": "Helping people find improvements themselves through good questions"
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "t": "Following up after feedback",
+   "f": "Checking progress and recognising change after a conversation"
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "t": "Creating a feedback habit in your team",
+   "f": "Rituals that make feedback normal and safe for everyone"
+  },
+  {
+   "d": 51,
+   "lv": "beginner",
+   "t": "Asking for feedback as a leader",
+   "f": "Inviting honest feedback on your own leadership"
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "t": "Receiving feedback without defending",
+   "f": "Listening, thanking and asking questions instead of justifying"
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "t": "Separating feedback from identity",
+   "f": "Seeing feedback as information about actions, not about your worth"
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "t": "Handling unfair feedback",
+   "f": "Staying calm, looking for useful parts and clarifying respectfully"
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "t": "Acting on feedback",
+   "f": "Choosing what to change and showing others you listened"
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "t": "Upward feedback culture",
+   "f": "Making it safe for team members to give feedback to their leader"
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "t": "Feedback from peers",
+   "f": "Learning from colleagues at your level through regular exchanges"
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "t": "360-degree feedback",
+   "f": "Gathering views from many directions to see your leadership fully"
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "t": "Turning feedback into a growth plan",
+   "f": "Converting feedback themes into small, concrete goals"
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "t": "Review: trust and feedback",
+   "f": "Revisiting trust and feedback skills and planning one feedback conversation"
+  },
+  {
+   "d": 61,
+   "lv": "beginner",
+   "t": "Why leaders must delegate",
+   "f": "How delegation grows people and frees time for leadership work"
+  },
+  {
+   "d": 62,
+   "lv": "beginner",
+   "t": "What to delegate and what to keep",
+   "f": "Deciding which tasks to hand over and which need your attention"
+  },
+  {
+   "d": 63,
+   "lv": "beginner",
+   "t": "Choosing the right person",
+   "f": "Matching tasks with people's skills, interests and growth goals"
+  },
+  {
+   "d": 64,
+   "lv": "beginner",
+   "t": "Explaining a task clearly",
+   "f": "Sharing the goal, context, limits and success criteria"
+  },
+  {
+   "d": 65,
+   "lv": "beginner",
+   "t": "Levels of delegation",
+   "f": "From do as I say to full ownership and choosing the right level"
+  },
+  {
+   "d": 66,
+   "lv": "beginner",
+   "t": "Letting go of perfectionism",
+   "f": "Accepting that others may do it differently and still do it well"
+  },
+  {
+   "d": 67,
+   "lv": "beginner",
+   "t": "Checking in without micromanaging",
+   "f": "Agreeing on check-in points and trusting in between"
+  },
+  {
+   "d": 68,
+   "lv": "beginner",
+   "t": "Supporting when things go wrong",
+   "f": "Helping without taking the task back"
+  },
+  {
+   "d": 69,
+   "lv": "beginner",
+   "t": "Delegating decisions, not just tasks",
+   "f": "Giving people authority to decide within clear boundaries"
+  },
+  {
+   "d": 70,
+   "lv": "beginner",
+   "t": "Reflecting on your delegation",
+   "f": "Reviewing what you handed over and what you can let go next"
+  },
+  {
+   "d": 71,
+   "lv": "beginner",
+   "t": "The power of one-on-ones",
+   "f": "Regular private conversations as the heart of people leadership"
+  },
+  {
+   "d": 72,
+   "lv": "beginner",
+   "t": "Structuring a one-on-one",
+   "f": "A simple agenda that belongs mostly to the team member"
+  },
+  {
+   "d": 73,
+   "lv": "beginner",
+   "t": "Great one-on-one questions",
+   "f": "Questions that reveal motivation, blockers and growth wishes"
+  },
+  {
+   "d": 74,
+   "lv": "beginner",
+   "t": "Understanding what motivates people",
+   "f": "Autonomy, mastery, purpose and recognition as motivators"
+  },
+  {
+   "d": 75,
+   "lv": "beginner",
+   "t": "Different people, different motivators",
+   "f": "Discovering individual drivers instead of assuming"
+  },
+  {
+   "d": 76,
+   "lv": "beginner",
+   "t": "Recognising effort and progress",
+   "f": "Noticing progress, not only final results"
+  },
+  {
+   "d": 77,
+   "lv": "beginner",
+   "t": "Career conversations",
+   "f": "Talking about long-term goals and how the current role can help"
+  },
+  {
+   "d": 78,
+   "lv": "beginner",
+   "t": "Spotting disengagement early",
+   "f": "Signs that someone is losing motivation and how to respond"
+  },
+  {
+   "d": 79,
+   "lv": "beginner",
+   "t": "Keeping one-on-ones regular",
+   "f": "Why cancelling one-on-ones sends the wrong message"
+  },
+  {
+   "d": 80,
+   "lv": "beginner",
+   "t": "Notes and follow-ups from one-on-ones",
+   "f": "Recording agreements and acting on them before the next meeting"
+  },
+  {
+   "d": 81,
+   "lv": "beginner",
+   "t": "Why clear goals matter",
+   "f": "How shared goals align a team and focus energy"
+  },
+  {
+   "d": 82,
+   "lv": "beginner",
+   "t": "Writing SMART goals",
+   "f": "Making goals specific, measurable, achievable, relevant and time-bound"
+  },
+  {
+   "d": 83,
+   "lv": "beginner",
+   "t": "Objectives and key results",
+   "f": "Setting ambitious objectives with measurable key results"
+  },
+  {
+   "d": 84,
+   "lv": "beginner",
+   "t": "Connecting team goals to the bigger picture",
+   "f": "Showing how daily work supports larger goals"
+  },
+  {
+   "d": 85,
+   "lv": "beginner",
+   "t": "Prioritising as a team",
+   "f": "Using simple tools to decide what matters most now"
+  },
+  {
+   "d": 86,
+   "lv": "beginner",
+   "t": "Saying no to protect focus",
+   "f": "Declining or postponing work so the team can deliver well"
+  },
+  {
+   "d": 87,
+   "lv": "beginner",
+   "t": "Tracking progress visibly",
+   "f": "Simple dashboards and check-ins that show where the team stands"
+  },
+  {
+   "d": 88,
+   "lv": "beginner",
+   "t": "Adjusting goals when things change",
+   "f": "Updating plans honestly when circumstances shift"
+  },
+  {
+   "d": 89,
+   "lv": "beginner",
+   "t": "Celebrating goal achievements",
+   "f": "Marking milestones to build momentum and pride"
+  },
+  {
+   "d": 90,
+   "lv": "beginner",
+   "t": "Review: delegation, motivation and goals",
+   "f": "Revisiting delegation, one-on-ones and goal-setting with a self-check"
+  },
+  {
+   "d": 91,
+   "lv": "beginner",
+   "t": "Meetings worth attending",
+   "f": "Deciding when a meeting is needed and who should be there"
+  },
+  {
+   "d": 92,
+   "lv": "beginner",
+   "t": "Running a focused meeting",
+   "f": "Agendas, timekeeping and clear outcomes for every meeting"
+  },
+  {
+   "d": 93,
+   "lv": "beginner",
+   "t": "Encouraging every voice",
+   "f": "Techniques to hear quieter team members in discussions"
+  },
+  {
+   "d": 94,
+   "lv": "beginner",
+   "t": "Ending meetings with action",
+   "f": "Closing with decisions, owners and deadlines"
+  },
+  {
+   "d": 95,
+   "lv": "beginner",
+   "t": "Decision-making basics",
+   "f": "Understanding the steps from problem to decision"
+  },
+  {
+   "d": 96,
+   "lv": "beginner",
+   "t": "Who decides what",
+   "f": "Clarifying decision rights so the team knows how choices are made"
+  },
+  {
+   "d": 97,
+   "lv": "beginner",
+   "t": "Consensus, consultation or command",
+   "f": "Choosing the right decision method for the situation"
+  },
+  {
+   "d": 98,
+   "lv": "beginner",
+   "t": "Decisions with incomplete information",
+   "f": "Making good-enough decisions and learning as you go"
+  },
+  {
+   "d": 99,
+   "lv": "beginner",
+   "t": "Explaining your decisions",
+   "f": "Sharing reasons so people understand even when they disagree"
+  },
+  {
+   "d": 100,
+   "lv": "beginner",
+   "t": "Disagree and commit",
+   "f": "Supporting a decision fully after an open discussion"
+  },
+  {
+   "d": 101,
+   "lv": "beginner",
+   "t": "Your first weeks as a new leader",
+   "f": "Listening, learning and building relationships before big changes"
+  },
+  {
+   "d": 102,
+   "lv": "beginner",
+   "t": "Leading former peers",
+   "f": "Handling the shift from colleague to leader with honesty and care"
+  },
+  {
+   "d": 103,
+   "lv": "beginner",
+   "t": "Managing your time as a leader",
+   "f": "Balancing your own tasks with time for people and planning"
+  },
+  {
+   "d": 104,
+   "lv": "beginner",
+   "t": "Leader's calendar habits",
+   "f": "Protecting time for one-on-ones, thinking and being available"
+  },
+  {
+   "d": 105,
+   "lv": "beginner",
+   "t": "Asking for help as a leader",
+   "f": "Finding mentors and peers to support you"
+  },
+  {
+   "d": 106,
+   "lv": "beginner",
+   "t": "Learning from early mistakes",
+   "f": "Turning first leadership mistakes into lessons"
+  },
+  {
+   "d": 107,
+   "lv": "beginner",
+   "t": "Building your leadership network",
+   "f": "Connecting with other leaders to share experiences"
+  },
+  {
+   "d": 108,
+   "lv": "beginner",
+   "t": "Setting boundaries as a leader",
+   "f": "Being available without being always on"
+  },
+  {
+   "d": 109,
+   "lv": "beginner",
+   "t": "Representing your team",
+   "f": "Speaking up for your team in the wider organisation"
+  },
+  {
+   "d": 110,
+   "lv": "beginner",
+   "t": "Your first leadership wins",
+   "f": "Choosing small improvements that build confidence and credibility"
+  },
+  {
+   "d": 111,
+   "lv": "beginner",
+   "t": "What makes a team, not a group",
+   "f": "Shared goals, interdependence and trust as team ingredients"
+  },
+  {
+   "d": 112,
+   "lv": "beginner",
+   "t": "Stages of team development",
+   "f": "Forming, storming, norming and performing and how to lead each stage"
+  },
+  {
+   "d": 113,
+   "lv": "beginner",
+   "t": "Team roles and strengths",
+   "f": "Understanding the different roles people naturally play in teams"
+  },
+  {
+   "d": 114,
+   "lv": "beginner",
+   "t": "Creating team agreements",
+   "f": "Writing shared norms about communication, meetings and respect"
+  },
+  {
+   "d": 115,
+   "lv": "beginner",
+   "t": "Team rituals and traditions",
+   "f": "Regular moments that build identity and connection"
+  },
+  {
+   "d": 116,
+   "lv": "beginner",
+   "t": "Welcoming new team members",
+   "f": "Making newcomers feel included from day one"
+  },
+  {
+   "d": 117,
+   "lv": "beginner",
+   "t": "Team celebrations",
+   "f": "Celebrating wins and milestones in ways that suit the team"
+  },
+  {
+   "d": 118,
+   "lv": "beginner",
+   "t": "Healthy team communication",
+   "f": "Encouraging open, respectful and frequent communication"
+  },
+  {
+   "d": 119,
+   "lv": "beginner",
+   "t": "Saying thank you as a leader",
+   "f": "Making specific, sincere thanks a daily leadership habit"
+  },
+  {
+   "d": 120,
+   "lv": "beginner",
+   "t": "Review: your leadership foundations",
+   "f": "Looking back at the beginner stage and naming your three strongest leadership habits"
+  },
+  {
+   "d": 121,
+   "lv": "intermediate",
+   "t": "Leader as coach",
+   "f": "Helping people find their own answers instead of always giving advice"
+  },
+  {
+   "d": 122,
+   "lv": "intermediate",
+   "t": "The GROW coaching model",
+   "f": "Goal, reality, options and way forward as a simple coaching structure"
+  },
+  {
+   "d": 123,
+   "lv": "intermediate",
+   "t": "Powerful coaching questions",
+   "f": "Questions that spark reflection and new ideas"
+  },
+  {
+   "d": 124,
+   "lv": "intermediate",
+   "t": "Listening at a deeper level",
+   "f": "Listening for feelings, values and what is not said"
+  },
+  {
+   "d": 125,
+   "lv": "intermediate",
+   "t": "Coaching vs mentoring vs managing",
+   "f": "Knowing which hat to wear in each conversation"
+  },
+  {
+   "d": 126,
+   "lv": "intermediate",
+   "t": "Helping people set development goals",
+   "f": "Choosing growth goals that motivate and stretch"
+  },
+  {
+   "d": 127,
+   "lv": "intermediate",
+   "t": "Coaching in short moments",
+   "f": "Using quick coaching conversations in everyday work"
+  },
+  {
+   "d": 128,
+   "lv": "intermediate",
+   "t": "Building accountability through coaching",
+   "f": "Agreeing on actions and following up supportively"
+  },
+  {
+   "d": 129,
+   "lv": "intermediate",
+   "t": "Coaching high performers",
+   "f": "Keeping strong team members challenged and growing"
+  },
+  {
+   "d": 130,
+   "lv": "intermediate",
+   "t": "Coaching someone who is stuck",
+   "f": "Helping a person regain confidence and momentum"
+  },
+  {
+   "d": 131,
+   "lv": "intermediate",
+   "t": "Why difficult conversations matter",
+   "f": "How avoiding hard talks makes problems bigger"
+  },
+  {
+   "d": 132,
+   "lv": "intermediate",
+   "t": "Preparing a difficult conversation",
+   "f": "Clarifying facts, goals and your opening sentence before you start"
+  },
+  {
+   "d": 133,
+   "lv": "intermediate",
+   "t": "Opening with care and clarity",
+   "f": "Starting hard conversations directly yet kindly"
+  },
+  {
+   "d": 134,
+   "lv": "intermediate",
+   "t": "Handling strong emotions",
+   "f": "Staying calm and empathetic when the other person is upset"
+  },
+  {
+   "d": 135,
+   "lv": "intermediate",
+   "t": "Listening to understand their side",
+   "f": "Exploring the other person's view before solving"
+  },
+  {
+   "d": 136,
+   "lv": "intermediate",
+   "t": "Finding a way forward together",
+   "f": "Agreeing on next steps that both people can support"
+  },
+  {
+   "d": 137,
+   "lv": "intermediate",
+   "t": "Delivering unwelcome news",
+   "f": "Sharing disappointing decisions honestly and respectfully"
+  },
+  {
+   "d": 138,
+   "lv": "intermediate",
+   "t": "Talking about behaviour issues",
+   "f": "Addressing lateness, tone or reliability with clear examples"
+  },
+  {
+   "d": 139,
+   "lv": "intermediate",
+   "t": "Following up after a hard talk",
+   "f": "Checking in and noticing improvements afterwards"
+  },
+  {
+   "d": 140,
+   "lv": "intermediate",
+   "t": "Learning from difficult conversations",
+   "f": "Reflecting on what went well and what to try next time"
+  },
+  {
+   "d": 141,
+   "lv": "intermediate",
+   "t": "Understanding conflict",
+   "f": "Healthy and unhealthy conflict and why some disagreement helps teams"
+  },
+  {
+   "d": 142,
+   "lv": "intermediate",
+   "t": "Sources of team conflict",
+   "f": "Common causes like unclear roles, scarce resources and different values"
+  },
+  {
+   "d": 143,
+   "lv": "intermediate",
+   "t": "Conflict styles",
+   "f": "Competing, avoiding, accommodating, compromising and collaborating"
+  },
+  {
+   "d": 144,
+   "lv": "intermediate",
+   "t": "Mediating between team members",
+   "f": "Steps to help two people resolve a disagreement"
+  },
+  {
+   "d": 145,
+   "lv": "intermediate",
+   "t": "Focusing on interests, not positions",
+   "f": "Finding what people really need behind their demands"
+  },
+  {
+   "d": 146,
+   "lv": "intermediate",
+   "t": "Turning conflict into better ideas",
+   "f": "Using disagreement to improve decisions"
+  },
+  {
+   "d": 147,
+   "lv": "intermediate",
+   "t": "Preventing recurring conflicts",
+   "f": "Fixing the systems and agreements that cause repeated friction"
+  },
+  {
+   "d": 148,
+   "lv": "intermediate",
+   "t": "Conflict across cultures",
+   "f": "How cultural backgrounds shape views on disagreement"
+  },
+  {
+   "d": 149,
+   "lv": "intermediate",
+   "t": "Your own conflict habits",
+   "f": "Noticing how you react in conflict and choosing better responses"
+  },
+  {
+   "d": 150,
+   "lv": "intermediate",
+   "t": "Review: coaching, hard talks and conflict",
+   "f": "Revisiting coaching, difficult conversations and conflict skills"
+  },
+  {
+   "d": 151,
+   "lv": "intermediate",
+   "t": "Performance management basics",
+   "f": "Setting expectations, giving feedback and reviewing results fairly"
+  },
+  {
+   "d": 152,
+   "lv": "intermediate",
+   "t": "Defining good performance",
+   "f": "Describing what success looks like for each role"
+  },
+  {
+   "d": 153,
+   "lv": "intermediate",
+   "t": "Regular check-ins over yearly reviews",
+   "f": "Why frequent conversations beat a single annual review"
+  },
+  {
+   "d": 154,
+   "lv": "intermediate",
+   "t": "Writing a fair performance review",
+   "f": "Using evidence, examples and balanced language"
+  },
+  {
+   "d": 155,
+   "lv": "intermediate",
+   "t": "Recognising and rewarding strong work",
+   "f": "Fair ways to reward excellent contributions"
+  },
+  {
+   "d": 156,
+   "lv": "intermediate",
+   "t": "Supporting underperformance",
+   "f": "Understanding causes and creating a clear improvement plan"
+  },
+  {
+   "d": 157,
+   "lv": "intermediate",
+   "t": "Development plans",
+   "f": "Helping each person grow with goals, learning and stretch tasks"
+  },
+  {
+   "d": 158,
+   "lv": "intermediate",
+   "t": "Avoiding bias in evaluations",
+   "f": "Common biases like recency and similarity and how to reduce them"
+  },
+  {
+   "d": 159,
+   "lv": "intermediate",
+   "t": "Talking about growth paths",
+   "f": "Discussing promotions and career steps transparently"
+  },
+  {
+   "d": 160,
+   "lv": "intermediate",
+   "t": "Measuring team performance",
+   "f": "Choosing a few useful team-level indicators"
+  },
+  {
+   "d": 161,
+   "lv": "intermediate",
+   "t": "What psychological safety is",
+   "f": "A climate where people feel safe to speak up, ask and make mistakes"
+  },
+  {
+   "d": 162,
+   "lv": "intermediate",
+   "t": "Signs of a safe or unsafe team",
+   "f": "Behaviours that show whether people feel safe"
+  },
+  {
+   "d": 163,
+   "lv": "intermediate",
+   "t": "Responding well to bad news",
+   "f": "Thanking people for raising problems instead of blaming"
+  },
+  {
+   "d": 164,
+   "lv": "intermediate",
+   "t": "Normalising mistakes as learning",
+   "f": "Blameless reviews that focus on systems, not people"
+  },
+  {
+   "d": 165,
+   "lv": "intermediate",
+   "t": "Inviting dissent",
+   "f": "Asking for different opinions and rewarding honest challenge"
+  },
+  {
+   "d": 166,
+   "lv": "intermediate",
+   "t": "Curiosity as a leader",
+   "f": "Asking questions and showing you do not have all the answers"
+  },
+  {
+   "d": 167,
+   "lv": "intermediate",
+   "t": "Building team cohesion",
+   "f": "Shared experiences and goals that bring people together"
+  },
+  {
+   "d": 168,
+   "lv": "intermediate",
+   "t": "Team-building that works",
+   "f": "Activities that build real connection, not forced fun"
+  },
+  {
+   "d": 169,
+   "lv": "intermediate",
+   "t": "Inclusion in daily team life",
+   "f": "Small actions that help everyone feel they belong"
+  },
+  {
+   "d": 170,
+   "lv": "intermediate",
+   "t": "Measuring team climate",
+   "f": "Simple pulse checks to understand how the team feels"
+  },
+  {
+   "d": 171,
+   "lv": "intermediate",
+   "t": "Hiring as a leadership skill",
+   "f": "Why choosing people well is one of a leader's biggest decisions"
+  },
+  {
+   "d": 172,
+   "lv": "intermediate",
+   "t": "Defining the role you need",
+   "f": "Clarifying skills, values and outcomes before hiring"
+  },
+  {
+   "d": 173,
+   "lv": "intermediate",
+   "t": "Structured interviews",
+   "f": "Asking the same core questions to compare candidates fairly"
+  },
+  {
+   "d": 174,
+   "lv": "intermediate",
+   "t": "Interview questions that reveal skills",
+   "f": "Behavioural and situational questions that show real ability"
+  },
+  {
+   "d": 175,
+   "lv": "intermediate",
+   "t": "Evaluating candidates fairly",
+   "f": "Using scorecards and avoiding first-impression bias"
+  },
+  {
+   "d": 176,
+   "lv": "intermediate",
+   "t": "Selling the role honestly",
+   "f": "Presenting the team and job truthfully to candidates"
+  },
+  {
+   "d": 177,
+   "lv": "intermediate",
+   "t": "Planning great onboarding",
+   "f": "A 30-60-90 day plan that helps new hires succeed"
+  },
+  {
+   "d": 178,
+   "lv": "intermediate",
+   "t": "The first day experience",
+   "f": "Making a new person's first day welcoming and organised"
+  },
+  {
+   "d": 179,
+   "lv": "intermediate",
+   "t": "Onboarding check-ins",
+   "f": "Regular conversations in the first months to support new team members"
+  },
+  {
+   "d": 180,
+   "lv": "intermediate",
+   "t": "Review: performance, safety and hiring",
+   "f": "Revisiting performance, psychological safety and hiring skills"
+  },
+  {
+   "d": 181,
+   "lv": "intermediate",
+   "t": "Influence without authority",
+   "f": "Leading peers and partners when you are not their boss"
+  },
+  {
+   "d": 182,
+   "lv": "intermediate",
+   "t": "Building credibility",
+   "f": "Expertise, reliability and relationships as sources of influence"
+  },
+  {
+   "d": 183,
+   "lv": "intermediate",
+   "t": "Understanding others' goals",
+   "f": "Learning what stakeholders care about before asking for support"
+  },
+  {
+   "d": 184,
+   "lv": "intermediate",
+   "t": "Persuading with logic and stories",
+   "f": "Combining data and examples to make your case"
+  },
+  {
+   "d": 185,
+   "lv": "intermediate",
+   "t": "Building alliances",
+   "f": "Finding supporters and partners for your ideas"
+  },
+  {
+   "d": 186,
+   "lv": "intermediate",
+   "t": "Managing up",
+   "f": "Working well with your own manager by sharing updates and solutions"
+  },
+  {
+   "d": 187,
+   "lv": "intermediate",
+   "t": "Disagreeing with your manager",
+   "f": "Raising concerns respectfully and offering alternatives"
+  },
+  {
+   "d": 188,
+   "lv": "intermediate",
+   "t": "Negotiation basics for leaders",
+   "f": "Preparing, listening and looking for win-win agreements"
+  },
+  {
+   "d": 189,
+   "lv": "intermediate",
+   "t": "Stakeholder mapping",
+   "f": "Identifying who is affected and how to involve them"
+  },
+  {
+   "d": 190,
+   "lv": "intermediate",
+   "t": "Influence through generosity",
+   "f": "Helping others first to build lasting goodwill"
+  },
+  {
+   "d": 191,
+   "lv": "intermediate",
+   "t": "Why change is hard",
+   "f": "How people react to change and why resistance is natural"
+  },
+  {
+   "d": 192,
+   "lv": "intermediate",
+   "t": "Explaining the why of change",
+   "f": "Communicating reasons and benefits clearly"
+  },
+  {
+   "d": 193,
+   "lv": "intermediate",
+   "t": "The change curve",
+   "f": "Emotional stages people go through during change and how to support them"
+  },
+  {
+   "d": 194,
+   "lv": "intermediate",
+   "t": "Involving people in change",
+   "f": "Inviting input so people feel ownership"
+  },
+  {
+   "d": 195,
+   "lv": "intermediate",
+   "t": "Small steps and quick wins",
+   "f": "Breaking big changes into manageable steps"
+  },
+  {
+   "d": 196,
+   "lv": "intermediate",
+   "t": "Handling resistance with empathy",
+   "f": "Listening to concerns and addressing them honestly"
+  },
+  {
+   "d": 197,
+   "lv": "intermediate",
+   "t": "Communicating during change",
+   "f": "Frequent, honest updates even when not everything is known"
+  },
+  {
+   "d": 198,
+   "lv": "intermediate",
+   "t": "Sustaining change",
+   "f": "Making new habits stick after the excitement fades"
+  },
+  {
+   "d": 199,
+   "lv": "intermediate",
+   "t": "Leading yourself through change",
+   "f": "Managing your own feelings while guiding others"
+  },
+  {
+   "d": 200,
+   "lv": "intermediate",
+   "t": "Learning from a change project",
+   "f": "Reviewing what worked and what you would do differently"
+  },
+  {
+   "d": 201,
+   "lv": "intermediate",
+   "t": "Leading diverse teams",
+   "f": "How different backgrounds and perspectives make teams stronger"
+  },
+  {
+   "d": 202,
+   "lv": "intermediate",
+   "t": "Leading across cultures",
+   "f": "Adapting leadership to different cultural expectations"
+  },
+  {
+   "d": 203,
+   "lv": "intermediate",
+   "t": "Communication styles around the world",
+   "f": "Direct and indirect, high and low context communication"
+  },
+  {
+   "d": 204,
+   "lv": "intermediate",
+   "t": "Attitudes to hierarchy",
+   "f": "How power distance shapes expectations of leaders"
+  },
+  {
+   "d": 205,
+   "lv": "intermediate",
+   "t": "Feedback across cultures",
+   "f": "Adapting how direct feedback is for different cultures"
+  },
+  {
+   "d": 206,
+   "lv": "intermediate",
+   "t": "Building trust in multicultural teams",
+   "f": "Combining task-based and relationship-based trust"
+  },
+  {
+   "d": 207,
+   "lv": "intermediate",
+   "t": "Language and inclusion",
+   "f": "Supporting team members who work in a second language"
+  },
+  {
+   "d": 208,
+   "lv": "intermediate",
+   "t": "Unconscious bias",
+   "f": "Recognising hidden biases and building fairer habits"
+  },
+  {
+   "d": 209,
+   "lv": "intermediate",
+   "t": "Inclusive meeting habits",
+   "f": "Turn-taking, clear language and written follow-ups that include everyone"
+  },
+  {
+   "d": 210,
+   "lv": "intermediate",
+   "t": "Review: influence, change and diversity",
+   "f": "Revisiting influence, change leadership and diverse team skills"
+  },
+  {
+   "d": 211,
+   "lv": "intermediate",
+   "t": "Leading remote teams",
+   "f": "What changes when your team is spread across places"
+  },
+  {
+   "d": 212,
+   "lv": "intermediate",
+   "t": "Leading hybrid teams fairly",
+   "f": "Making sure office and remote members get equal opportunities"
+  },
+  {
+   "d": 213,
+   "lv": "intermediate",
+   "t": "Communication rhythms for distributed teams",
+   "f": "Regular updates, meetings and async habits for remote teams"
+  },
+  {
+   "d": 214,
+   "lv": "intermediate",
+   "t": "Building connection at a distance",
+   "f": "Rituals that create belonging when people rarely meet"
+  },
+  {
+   "d": 215,
+   "lv": "intermediate",
+   "t": "Managing outcomes, not activity",
+   "f": "Measuring results instead of hours online"
+  },
+  {
+   "d": 216,
+   "lv": "intermediate",
+   "t": "Remote one-on-ones",
+   "f": "Keeping personal conversations meaningful over video"
+  },
+  {
+   "d": 217,
+   "lv": "intermediate",
+   "t": "Spotting overload remotely",
+   "f": "Noticing stress and overwork when you cannot see people"
+  },
+  {
+   "d": 218,
+   "lv": "intermediate",
+   "t": "Leading across time zones",
+   "f": "Fair meeting times and good handoffs for global teams"
+  },
+  {
+   "d": 219,
+   "lv": "intermediate",
+   "t": "Written communication for leaders",
+   "f": "Clear updates, decisions and announcements in writing"
+  },
+  {
+   "d": 220,
+   "lv": "intermediate",
+   "t": "Remote team agreements",
+   "f": "Writing norms for availability, tools and response times"
+  },
+  {
+   "d": 221,
+   "lv": "intermediate",
+   "t": "Energy and motivation over time",
+   "f": "Keeping a team motivated beyond the first excitement"
+  },
+  {
+   "d": 222,
+   "lv": "intermediate",
+   "t": "Meaningful work",
+   "f": "Helping people see the impact and purpose of their tasks"
+  },
+  {
+   "d": 223,
+   "lv": "intermediate",
+   "t": "Recognition that feels personal",
+   "f": "Matching appreciation to what each person values"
+  },
+  {
+   "d": 224,
+   "lv": "intermediate",
+   "t": "Building a learning team",
+   "f": "Encouraging curiosity, training and knowledge sharing"
+  },
+  {
+   "d": 225,
+   "lv": "intermediate",
+   "t": "Workload and wellbeing",
+   "f": "Balancing ambition with sustainable workloads"
+  },
+  {
+   "d": 226,
+   "lv": "intermediate",
+   "t": "Encouraging rest and time off",
+   "f": "Modelling and supporting real breaks"
+  },
+  {
+   "d": 227,
+   "lv": "intermediate",
+   "t": "Celebrating effort and learning",
+   "f": "Valuing progress and lessons, not only success"
+  },
+  {
+   "d": 228,
+   "lv": "intermediate",
+   "t": "Keeping morale up in tough times",
+   "f": "Honest optimism and support during difficult periods"
+  },
+  {
+   "d": 229,
+   "lv": "intermediate",
+   "t": "Giving people autonomy",
+   "f": "Letting people choose how they do their work"
+  },
+  {
+   "d": 230,
+   "lv": "intermediate",
+   "t": "Purpose-driven team rituals",
+   "f": "Moments that remind the team why their work matters"
+  },
+  {
+   "d": 231,
+   "lv": "intermediate",
+   "t": "Better decisions with structure",
+   "f": "Simple frameworks that improve the quality of decisions"
+  },
+  {
+   "d": 232,
+   "lv": "intermediate",
+   "t": "Problem solving as a team",
+   "f": "Defining problems clearly before jumping to solutions"
+  },
+  {
+   "d": 233,
+   "lv": "intermediate",
+   "t": "Root cause analysis",
+   "f": "Asking why several times to find the real cause"
+  },
+  {
+   "d": 234,
+   "lv": "intermediate",
+   "t": "Weighing options and trade-offs",
+   "f": "Comparing options with pros, cons and risks"
+  },
+  {
+   "d": 235,
+   "lv": "intermediate",
+   "t": "Avoiding groupthink",
+   "f": "Encouraging independent thinking before group discussion"
+  },
+  {
+   "d": 236,
+   "lv": "intermediate",
+   "t": "Using data wisely",
+   "f": "Combining numbers with judgment and context"
+  },
+  {
+   "d": 237,
+   "lv": "intermediate",
+   "t": "Reversible and irreversible decisions",
+   "f": "Moving fast on reversible choices and slowing down on big ones"
+  },
+  {
+   "d": 238,
+   "lv": "intermediate",
+   "t": "Learning from past decisions",
+   "f": "Reviewing decisions to improve future judgment"
+  },
+  {
+   "d": 239,
+   "lv": "intermediate",
+   "t": "Empowering others to decide",
+   "f": "Pushing decisions closer to the people doing the work"
+  },
+  {
+   "d": 240,
+   "lv": "intermediate",
+   "t": "Creative thinking techniques",
+   "f": "Brainstorming and reframing tools for new solutions"
+  },
+  {
+   "d": 241,
+   "lv": "intermediate",
+   "t": "Personal resilience for leaders",
+   "f": "Building the strength to handle pressure and setbacks"
+  },
+  {
+   "d": 242,
+   "lv": "intermediate",
+   "t": "Managing stress as a leader",
+   "f": "Healthy habits to keep stress at a manageable level"
+  },
+  {
+   "d": 243,
+   "lv": "intermediate",
+   "t": "Avoiding leader burnout",
+   "f": "Recognising warning signs and protecting your energy"
+  },
+  {
+   "d": 244,
+   "lv": "intermediate",
+   "t": "Prioritising your own development",
+   "f": "Making time to read, learn and reflect"
+  },
+  {
+   "d": 245,
+   "lv": "intermediate",
+   "t": "Asking for support",
+   "f": "Using mentors, peers and coaches to grow"
+  },
+  {
+   "d": 246,
+   "lv": "intermediate",
+   "t": "Leading with optimism",
+   "f": "Realistic hope that energises the team"
+  },
+  {
+   "d": 247,
+   "lv": "intermediate",
+   "t": "Learning from failure",
+   "f": "Turning setbacks into lessons without blaming yourself"
+  },
+  {
+   "d": 248,
+   "lv": "intermediate",
+   "t": "Leadership and personal life balance",
+   "f": "Keeping family, friends and hobbies healthy while leading"
+  },
+  {
+   "d": 249,
+   "lv": "intermediate",
+   "t": "Daily habits of effective leaders",
+   "f": "Small routines for planning, reflecting and connecting with people"
+  },
+  {
+   "d": 250,
+   "lv": "intermediate",
+   "t": "Review: remote leading, motivation and resilience",
+   "f": "Looking back at the intermediate stage and choosing goals for the advanced path"
+  },
+  {
+   "d": 251,
+   "lv": "advanced",
+   "t": "Why vision matters",
+   "f": "How a clear picture of the future guides and inspires a team"
+  },
+  {
+   "d": 252,
+   "lv": "advanced",
+   "t": "Crafting a team vision",
+   "f": "Writing a short, inspiring statement of where the team is going"
+  },
+  {
+   "d": 253,
+   "lv": "advanced",
+   "t": "Mission and values in practice",
+   "f": "Turning mission and values into daily behaviours"
+  },
+  {
+   "d": 254,
+   "lv": "advanced",
+   "t": "Strategy made simple",
+   "f": "Choosing where to focus and what not to do"
+  },
+  {
+   "d": 255,
+   "lv": "advanced",
+   "t": "Analysing your team's situation",
+   "f": "Strengths, weaknesses, opportunities and threats in plain words"
+  },
+  {
+   "d": 256,
+   "lv": "advanced",
+   "t": "Setting long-term priorities",
+   "f": "Choosing a few big bets for the coming year"
+  },
+  {
+   "d": 257,
+   "lv": "advanced",
+   "t": "Communicating strategy",
+   "f": "Explaining strategy so everyone sees their role in it"
+  },
+  {
+   "d": 258,
+   "lv": "advanced",
+   "t": "Aligning teams to strategy",
+   "f": "Connecting goals across teams to the overall direction"
+  },
+  {
+   "d": 259,
+   "lv": "advanced",
+   "t": "Reviewing and adapting strategy",
+   "f": "Regularly checking whether the strategy still fits"
+  },
+  {
+   "d": 260,
+   "lv": "advanced",
+   "t": "Thinking long-term while acting now",
+   "f": "Balancing daily delivery with future thinking"
+  },
+  {
+   "d": 261,
+   "lv": "advanced",
+   "t": "Leading other leaders",
+   "f": "How leading managers differs from leading individual contributors"
+  },
+  {
+   "d": 262,
+   "lv": "advanced",
+   "t": "Developing new managers",
+   "f": "Supporting first-time leaders in their new role"
+  },
+  {
+   "d": 263,
+   "lv": "advanced",
+   "t": "Coaching leaders",
+   "f": "Helping managers reflect on their own leadership challenges"
+  },
+  {
+   "d": 264,
+   "lv": "advanced",
+   "t": "Building a leadership team",
+   "f": "Creating trust and alignment among the leaders who report to you"
+  },
+  {
+   "d": 265,
+   "lv": "advanced",
+   "t": "Delegating at scale",
+   "f": "Giving leaders ownership of whole areas, not just tasks"
+  },
+  {
+   "d": 266,
+   "lv": "advanced",
+   "t": "Staying close to the front line",
+   "f": "Keeping contact with the work and the people doing it"
+  },
+  {
+   "d": 267,
+   "lv": "advanced",
+   "t": "Consistency across teams",
+   "f": "Shared standards without removing team autonomy"
+  },
+  {
+   "d": 268,
+   "lv": "advanced",
+   "t": "Handling disagreement among leaders",
+   "f": "Resolving conflicts between managers constructively"
+  },
+  {
+   "d": 269,
+   "lv": "advanced",
+   "t": "Skip-level conversations",
+   "f": "Talking with people several levels down to learn and connect"
+  },
+  {
+   "d": 270,
+   "lv": "advanced",
+   "t": "Growing your leadership span",
+   "f": "Adapting habits as your responsibility grows"
+  },
+  {
+   "d": 271,
+   "lv": "advanced",
+   "t": "What culture really is",
+   "f": "Culture as the behaviours that are rewarded and tolerated every day"
+  },
+  {
+   "d": 272,
+   "lv": "advanced",
+   "t": "Diagnosing your team culture",
+   "f": "Observing how decisions, mistakes and success are handled"
+  },
+  {
+   "d": 273,
+   "lv": "advanced",
+   "t": "Shaping culture through behaviour",
+   "f": "How leaders' actions shape culture more than words"
+  },
+  {
+   "d": 274,
+   "lv": "advanced",
+   "t": "Stories and symbols of culture",
+   "f": "Using stories, rituals and symbols to reinforce values"
+  },
+  {
+   "d": 275,
+   "lv": "advanced",
+   "t": "Hiring and culture",
+   "f": "Hiring for culture contribution, not just culture fit"
+  },
+  {
+   "d": 276,
+   "lv": "advanced",
+   "t": "Correcting culture drift",
+   "f": "Noticing and addressing behaviours that conflict with values"
+  },
+  {
+   "d": 277,
+   "lv": "advanced",
+   "t": "Culture during growth",
+   "f": "Keeping culture strong as the team gets bigger"
+  },
+  {
+   "d": 278,
+   "lv": "advanced",
+   "t": "Subcultures and team identity",
+   "f": "Balancing team identity with the wider organisation"
+  },
+  {
+   "d": 279,
+   "lv": "advanced",
+   "t": "Measuring culture over time",
+   "f": "Using surveys, stories and behaviours to see how culture evolves"
+  },
+  {
+   "d": 280,
+   "lv": "advanced",
+   "t": "Review: vision, leaders and culture",
+   "f": "Revisiting vision, leading leaders and culture design"
+  },
+  {
+   "d": 281,
+   "lv": "advanced",
+   "t": "Leading in uncertainty",
+   "f": "Guiding a team when the future is unclear"
+  },
+  {
+   "d": 282,
+   "lv": "advanced",
+   "t": "Leading in a crisis",
+   "f": "Staying calm, communicating fast and focusing on priorities"
+  },
+  {
+   "d": 283,
+   "lv": "advanced",
+   "t": "Crisis communication",
+   "f": "Honest, frequent and empathetic messages during hard times"
+  },
+  {
+   "d": 284,
+   "lv": "advanced",
+   "t": "Making quick decisions under pressure",
+   "f": "Deciding fast while staying open to new information"
+  },
+  {
+   "d": 285,
+   "lv": "advanced",
+   "t": "Supporting people in hard times",
+   "f": "Showing care and flexibility when people are stressed"
+  },
+  {
+   "d": 286,
+   "lv": "advanced",
+   "t": "Learning after a crisis",
+   "f": "Reviewing what happened and strengthening the team"
+  },
+  {
+   "d": 287,
+   "lv": "advanced",
+   "t": "Building team resilience",
+   "f": "Preparing the team to adapt when challenges arise"
+  },
+  {
+   "d": 288,
+   "lv": "advanced",
+   "t": "Scenario planning",
+   "f": "Imagining several possible futures and preparing for them"
+  },
+  {
+   "d": 289,
+   "lv": "advanced",
+   "t": "Calm leadership presence",
+   "f": "How your composure helps others stay steady"
+  },
+  {
+   "d": 290,
+   "lv": "advanced",
+   "t": "Recovery and renewal after hard periods",
+   "f": "Helping a team rest and rebuild energy"
+  },
+  {
+   "d": 291,
+   "lv": "advanced",
+   "t": "Ethics in leadership",
+   "f": "Why integrity is the foundation of lasting leadership"
+  },
+  {
+   "d": 292,
+   "lv": "advanced",
+   "t": "Your ethical compass",
+   "f": "Clarifying the principles you will not compromise"
+  },
+  {
+   "d": 293,
+   "lv": "advanced",
+   "t": "Facing ethical dilemmas",
+   "f": "A simple process to think through hard choices"
+  },
+  {
+   "d": 294,
+   "lv": "advanced",
+   "t": "Fairness and equity",
+   "f": "Making fair decisions about opportunities, rewards and workloads"
+  },
+  {
+   "d": 295,
+   "lv": "advanced",
+   "t": "Speaking up when something is wrong",
+   "f": "Having the courage to raise concerns"
+  },
+  {
+   "d": 296,
+   "lv": "advanced",
+   "t": "Creating a speak-up culture",
+   "f": "Making it safe for others to report problems"
+  },
+  {
+   "d": 297,
+   "lv": "advanced",
+   "t": "Accountability at every level",
+   "f": "Holding yourself and others accountable consistently"
+  },
+  {
+   "d": 298,
+   "lv": "advanced",
+   "t": "Transparency and honesty",
+   "f": "Being open about decisions and their reasons"
+  },
+  {
+   "d": 299,
+   "lv": "advanced",
+   "t": "Responsible leadership",
+   "f": "Considering the impact of decisions on people, communities and the environment"
+  },
+  {
+   "d": 300,
+   "lv": "advanced",
+   "t": "Leading with humility",
+   "f": "Staying open, curious and willing to learn from anyone"
+  },
+  {
+   "d": 301,
+   "lv": "advanced",
+   "t": "Storytelling for leaders",
+   "f": "Using stories to explain ideas and inspire action"
+  },
+  {
+   "d": 302,
+   "lv": "advanced",
+   "t": "Structuring a compelling story",
+   "f": "Situation, challenge, action and result as a story shape"
+  },
+  {
+   "d": 303,
+   "lv": "advanced",
+   "t": "Presenting with confidence",
+   "f": "Preparing and delivering talks that engage audiences"
+  },
+  {
+   "d": 304,
+   "lv": "advanced",
+   "t": "Speaking to senior audiences",
+   "f": "Getting to the point quickly with clear recommendations"
+  },
+  {
+   "d": 305,
+   "lv": "advanced",
+   "t": "Executive presence",
+   "f": "Calm confidence, clarity and credibility in how you show up"
+  },
+  {
+   "d": 306,
+   "lv": "advanced",
+   "t": "Handling tough questions",
+   "f": "Responding honestly and calmly when challenged in public"
+  },
+  {
+   "d": 307,
+   "lv": "advanced",
+   "t": "Running an all-hands meeting",
+   "f": "Planning engaging updates for a large group"
+  },
+  {
+   "d": 308,
+   "lv": "advanced",
+   "t": "Writing a leadership message",
+   "f": "Clear, warm messages for announcements and milestones"
+  },
+  {
+   "d": 309,
+   "lv": "advanced",
+   "t": "Listening as a senior leader",
+   "f": "Town halls, open questions and feedback loops that keep leaders grounded"
+  },
+  {
+   "d": 310,
+   "lv": "advanced",
+   "t": "Review: crisis, ethics and presence",
+   "f": "Revisiting crisis leadership, ethics and storytelling"
+  },
+  {
+   "d": 311,
+   "lv": "advanced",
+   "t": "Leading innovation",
+   "f": "Creating conditions where new ideas can grow"
+  },
+  {
+   "d": 312,
+   "lv": "advanced",
+   "t": "Encouraging experiments",
+   "f": "Testing ideas with small, low-risk experiments"
+  },
+  {
+   "d": 313,
+   "lv": "advanced",
+   "t": "Learning from failed experiments",
+   "f": "Celebrating lessons from experiments that did not work"
+  },
+  {
+   "d": 314,
+   "lv": "advanced",
+   "t": "Time and space for creativity",
+   "f": "Protecting time for exploration and improvement"
+  },
+  {
+   "d": 315,
+   "lv": "advanced",
+   "t": "Customer and user focus",
+   "f": "Keeping the needs of the people you serve at the centre"
+  },
+  {
+   "d": 316,
+   "lv": "advanced",
+   "t": "Turning ideas into action",
+   "f": "Moving from idea to pilot to wider adoption"
+  },
+  {
+   "d": 317,
+   "lv": "advanced",
+   "t": "Balancing innovation and delivery",
+   "f": "Managing new ideas without losing focus on core work"
+  },
+  {
+   "d": 318,
+   "lv": "advanced",
+   "t": "Cross-team collaboration for innovation",
+   "f": "Bringing diverse teams together to solve problems"
+  },
+  {
+   "d": 319,
+   "lv": "advanced",
+   "t": "Removing obstacles to innovation",
+   "f": "Simplifying approvals and processes that slow ideas down"
+  },
+  {
+   "d": 320,
+   "lv": "advanced",
+   "t": "Continuous improvement habits",
+   "f": "Small daily improvements that add up over time"
+  },
+  {
+   "d": 321,
+   "lv": "advanced",
+   "t": "Scaling a team",
+   "f": "What changes when a team grows from a few people to many"
+  },
+  {
+   "d": 322,
+   "lv": "advanced",
+   "t": "Designing team structure",
+   "f": "Organising teams around goals, products or skills"
+  },
+  {
+   "d": 323,
+   "lv": "advanced",
+   "t": "Clear roles and responsibilities",
+   "f": "Defining who does what to avoid confusion as teams grow"
+  },
+  {
+   "d": 324,
+   "lv": "advanced",
+   "t": "Spans and layers",
+   "f": "Deciding how many people each leader can support well"
+  },
+  {
+   "d": 325,
+   "lv": "advanced",
+   "t": "Processes that scale",
+   "f": "Adding just enough process to keep a growing team effective"
+  },
+  {
+   "d": 326,
+   "lv": "advanced",
+   "t": "Communication in larger organisations",
+   "f": "Keeping information flowing across many teams"
+  },
+  {
+   "d": 327,
+   "lv": "advanced",
+   "t": "Keeping agility as you grow",
+   "f": "Avoiding bureaucracy while getting bigger"
+  },
+  {
+   "d": 328,
+   "lv": "advanced",
+   "t": "Splitting and merging teams",
+   "f": "Leading people through team reorganisations with care"
+  },
+  {
+   "d": 329,
+   "lv": "advanced",
+   "t": "Planning for capacity",
+   "f": "Anticipating the people and skills you will need"
+  },
+  {
+   "d": 330,
+   "lv": "advanced",
+   "t": "Leading through reorganisations",
+   "f": "Communicating clearly and supporting people during restructuring"
+  },
+  {
+   "d": 331,
+   "lv": "advanced",
+   "t": "Developing talent",
+   "f": "Seeing potential and helping people grow into bigger roles"
+  },
+  {
+   "d": 332,
+   "lv": "advanced",
+   "t": "Mentoring future leaders",
+   "f": "Sharing experience and opening doors for emerging leaders"
+  },
+  {
+   "d": 333,
+   "lv": "advanced",
+   "t": "Sponsorship",
+   "f": "Actively advocating for talented people's growth"
+  },
+  {
+   "d": 334,
+   "lv": "advanced",
+   "t": "Stretch assignments",
+   "f": "Giving people challenging work that accelerates learning"
+  },
+  {
+   "d": 335,
+   "lv": "advanced",
+   "t": "Succession planning",
+   "f": "Preparing others to take over key roles"
+  },
+  {
+   "d": 336,
+   "lv": "advanced",
+   "t": "Making yourself replaceable",
+   "f": "Building a team that can thrive without you"
+  },
+  {
+   "d": 337,
+   "lv": "advanced",
+   "t": "Learning programmes for teams",
+   "f": "Designing learning that fits real work"
+  },
+  {
+   "d": 338,
+   "lv": "advanced",
+   "t": "Recognising hidden potential",
+   "f": "Noticing quiet talent and giving it room to grow"
+  },
+  {
+   "d": 339,
+   "lv": "advanced",
+   "t": "Building a learning organisation",
+   "f": "Systems that help a whole organisation keep learning and improving"
+  },
+  {
+   "d": 340,
+   "lv": "advanced",
+   "t": "Review: innovation, scale and talent",
+   "f": "Revisiting innovation, scaling and talent development"
+  },
+  {
+   "d": 341,
+   "lv": "advanced",
+   "t": "Sustaining yourself as a leader",
+   "f": "Long-term habits that keep you healthy and effective"
+  },
+  {
+   "d": 342,
+   "lv": "advanced",
+   "t": "Reinventing your leadership style",
+   "f": "Updating your approach as teams and contexts change"
+  },
+  {
+   "d": 343,
+   "lv": "advanced",
+   "t": "Leadership lessons from history",
+   "f": "What well-known historical leaders teach about vision and perseverance"
+  },
+  {
+   "d": 344,
+   "lv": "advanced",
+   "t": "Leadership in sports and arts",
+   "f": "Lessons from coaches, conductors and directors"
+  },
+  {
+   "d": 345,
+   "lv": "advanced",
+   "t": "Leading in your community",
+   "f": "Applying leadership skills in volunteering and local projects"
+  },
+  {
+   "d": 346,
+   "lv": "advanced",
+   "t": "Servant leadership",
+   "f": "Putting the needs of the team first to help them succeed"
+  },
+  {
+   "d": 347,
+   "lv": "advanced",
+   "t": "Authentic leadership",
+   "f": "Leading in a way that matches your values and personality"
+  },
+  {
+   "d": 348,
+   "lv": "advanced",
+   "t": "Leading with emotional intelligence",
+   "f": "Combining empathy, self-control and social skill at a high level"
+  },
+  {
+   "d": 349,
+   "lv": "advanced",
+   "t": "Wisdom in leadership",
+   "f": "Balancing logic, values and experience in mature judgment"
+  },
+  {
+   "d": 350,
+   "lv": "advanced",
+   "t": "Handling success and recognition",
+   "f": "Staying grounded and sharing credit when things go well"
+  },
+  {
+   "d": 351,
+   "lv": "advanced",
+   "t": "Leading peers in a network",
+   "f": "Coordinating independent people without formal authority"
+  },
+  {
+   "d": 352,
+   "lv": "advanced",
+   "t": "Your leadership philosophy",
+   "f": "Writing down what you believe about leading people"
+  },
+  {
+   "d": 353,
+   "lv": "advanced",
+   "t": "Leaving a positive legacy",
+   "f": "What you want people to remember about working with you"
+  },
+  {
+   "d": 354,
+   "lv": "advanced",
+   "t": "Gratitude in leadership",
+   "f": "Thanking the people who helped you grow as a leader"
+  },
+  {
+   "d": 355,
+   "lv": "advanced",
+   "t": "Your next leadership chapter",
+   "f": "Choosing the next challenge in your leadership journey"
+  },
+  {
+   "d": 356,
+   "lv": "advanced",
+   "t": "Capstone: your leadership self-assessment",
+   "f": "Reviewing strengths and growth areas across the whole path"
+  },
+  {
+   "d": 357,
+   "lv": "advanced",
+   "t": "Capstone: gather feedback on your leadership",
+   "f": "Asking people around you for honest input on your growth"
+  },
+  {
+   "d": 358,
+   "lv": "advanced",
+   "t": "Capstone: plan a team vision session",
+   "f": "Designing a session to create a shared vision with a team"
+  },
+  {
+   "d": 359,
+   "lv": "advanced",
+   "t": "Capstone: your feedback playbook",
+   "f": "Writing your personal guide for giving and receiving feedback"
+  },
+  {
+   "d": 360,
+   "lv": "advanced",
+   "t": "Capstone: your one-on-one toolkit",
+   "f": "Collecting favourite questions and formats for one-on-ones"
+  },
+  {
+   "d": 361,
+   "lv": "advanced",
+   "t": "Capstone: design your team rituals",
+   "f": "Planning the rituals that will keep your team connected"
+  },
+  {
+   "d": 362,
+   "lv": "advanced",
+   "t": "Capstone: write your leadership principles",
+   "f": "Summarising your top principles in a few short sentences"
+  },
+  {
+   "d": 363,
+   "lv": "advanced",
+   "t": "Capstone: your 90-day leadership plan",
+   "f": "Setting leadership goals and habits for the next three months"
+  },
+  {
+   "d": 364,
+   "lv": "advanced",
+   "t": "Capstone: share your leadership story",
+   "f": "Telling the story of your growth to inspire others"
+  },
+  {
+   "d": 365,
+   "lv": "advanced",
+   "t": "Final review: 365 days of leadership",
+   "f": "Celebrating your progress and looking back on the whole leadership path"
+  }
+ ]
+}

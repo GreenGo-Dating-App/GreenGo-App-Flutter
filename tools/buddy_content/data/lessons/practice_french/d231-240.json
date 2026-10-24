@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_french",
+ "lessons": [
+  {
+   "d": 231,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "French art and museums",
+     "g": "Talk about French art: the Louvre, the Impressionists, Monet and Rodin.",
+     "p": [
+      "Le Louvre in Paris is one of the largest museums in the world ; its most famous painting is La Joconde (Mona Lisa).",
+      "The Impressionists painted light and everyday life ; Monet's Impression, soleil levant gave the movement its name.",
+      "Rodin sculpted Le Penseur ; the Musée d'Orsay, a former train station, shows many Impressionist works."
+     ],
+     "q": "Which painting, sculpture or museum do you love? Describe it: on voit..., les couleurs sont..., ça me fait penser à...",
+     "c": "Choose a famous French artwork and describe it in five sentences: what you see, the colours and what you feel."
+    },
+    "de": {
+     "t": "Französische Kunst und Museen",
+     "g": "Du sprichst über französische Kunst: den Louvre, die Impressionisten, Monet und Rodin.",
+     "p": [
+      "Le Louvre in Paris ist eines der größten Museen der Welt ; sein berühmtestes Gemälde ist La Joconde (Mona Lisa).",
+      "Die Impressionisten malten Licht und Alltag ; Monets Impression, soleil levant gab der Bewegung ihren Namen.",
+      "Rodin schuf Le Penseur (Der Denker) ; das Musée d'Orsay, ein ehemaliger Bahnhof, zeigt viele impressionistische Werke."
+     ],
+     "q": "Welches Gemälde, welche Skulptur oder welches Museum liebst du? Beschreib es: on voit..., les couleurs sont...",
+     "c": "Wähle ein berühmtes französisches Kunstwerk und beschreib es in fünf Sätzen: was man sieht, Farben, Gefühle."
+    },
+    "es": {
+     "t": "Arte y museos franceses",
+     "g": "Habla del arte francés: el Louvre, los impresionistas, Monet y Rodin.",
+     "p": [
+      "Le Louvre, en París, es uno de los museos más grandes del mundo ; su cuadro más famoso es La Joconde (la Gioconda).",
+      "Los impresionistas pintaban la luz y la vida diaria ; Impression, soleil levant de Monet dio nombre al movimiento.",
+      "Rodin esculpió Le Penseur (El pensador) ; el Musée d'Orsay, una antigua estación, muestra muchas obras impresionistas."
+     ],
+     "q": "¿Qué cuadro, escultura o museo te encanta? Descríbelo: on voit..., les couleurs sont..., ça me fait penser à...",
+     "c": "Elige una obra de arte francesa famosa y descríbela en cinco frases: qué se ve, los colores y qué sientes."
+    },
+    "fr": {
+     "t": "L'art et les musées français",
+     "g": "Parler de l'art français : le Louvre, les impressionnistes, Monet et Rodin.",
+     "p": [
+      "Le Louvre, à Paris, est l'un des plus grands musées du monde ; son tableau le plus célèbre est La Joconde.",
+      "Les impressionnistes peignent la lumière et la vie quotidienne ; Impression, soleil levant de Monet a donné son nom au mouvement.",
+      "Rodin a sculpté Le Penseur ; le musée d'Orsay, une ancienne gare, présente de nombreuses œuvres impressionnistes."
+     ],
+     "q": "Quel tableau, quelle sculpture ou quel musée aimes-tu ? Décris-le : on voit..., les couleurs sont..., ça me fait penser à...",
+     "c": "Choisis une œuvre française célèbre et décris-la en cinq phrases : ce qu'on voit, les couleurs, ce que tu ressens."
+    },
+    "it": {
+     "t": "Arte e musei francesi",
+     "g": "Parla dell'arte francese: il Louvre, gli impressionisti, Monet e Rodin.",
+     "p": [
+      "Le Louvre a Parigi è uno dei musei più grandi del mondo ; il suo quadro più famoso è La Joconde (la Gioconda).",
+      "Gli impressionisti dipingevano la luce e la vita quotidiana ; Impression, soleil levant di Monet diede il nome al movimento.",
+      "Rodin scolpì Le Penseur (Il pensatore) ; il Musée d'Orsay, un'ex stazione, espone molte opere impressioniste."
+     ],
+     "q": "Quale quadro, scultura o museo ami? Descrivilo: on voit..., les couleurs sont..., ça me fait penser à...",
+     "c": "Scegli un'opera d'arte francese famosa e descrivila in cinque frasi: cosa si vede, i colori e cosa provi."
+    },
+    "pt": {
+     "t": "Arte e museus franceses",
+     "g": "Fala da arte francesa: o Louvre, os impressionistas, Monet e Rodin.",
+     "p": [
+      "Le Louvre, em Paris, é um dos maiores museus do mundo ; o seu quadro mais famoso é La Joconde (a Mona Lisa).",
+      "Os impressionistas pintavam a luz e a vida quotidiana ; Impression, soleil levant de Monet deu nome ao movimento.",
+      "Rodin esculpiu Le Penseur (O Pensador) ; o Musée d'Orsay, uma antiga estação, mostra muitas obras impressionistas."
+     ],
+     "q": "Que quadro, escultura ou museu adoras? Descreve-o: on voit..., les couleurs sont..., ça me fait penser à...",
+     "c": "Escolhe uma obra de arte francesa famosa e descreve-a em cinco frases: o que se vê, as cores e o que sentes."
+    },
+    "pt_BR": {
+     "t": "Arte e museus franceses",
+     "g": "Fale da arte francesa: o Louvre, os impressionistas, Monet e Rodin.",
+     "p": [
+      "Le Louvre, em Paris, é um dos maiores museus do mundo ; seu quadro mais famoso é La Joconde (a Mona Lisa).",
+      "Os impressionistas pintavam a luz e a vida cotidiana ; Impression, soleil levant de Monet deu nome ao movimento.",
+      "Rodin esculpiu Le Penseur (O Pensador) ; o Musée d'Orsay, uma antiga estação de trem, mostra muitas obras impressionistas."
+     ],
+     "q": "Que quadro, escultura ou museu você adora? Descreva: on voit..., les couleurs sont..., ça me fait penser à...",
+     "c": "Escolha uma obra de arte francesa famosa e descreva em cinco frases: o que se vê, as cores e o que você sente."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un tableau",
+      "ex": "Ce tableau de Monet représente des nénuphars."
+     },
+     {
+      "w": "une œuvre",
+      "ex": "Le musée possède plus de mille œuvres."
+     },
+     {
+      "w": "un peintre",
+      "ex": "Renoir est un peintre impressionniste."
+     },
+     {
+      "w": "une sculpture",
+      "ex": "Le Penseur est une sculpture de Rodin."
+     },
+     {
+      "w": "une exposition",
+      "ex": "Il y a une belle exposition sur Cézanne."
+     },
+     {
+      "w": "au premier plan",
+      "ex": "Au premier plan, on voit une petite barque."
+     }
+    ],
+    "gram": "Décrire une œuvre : on voit, au premier plan / à l'arrière-plan, les couleurs sont ; ce tableau a été peint par..."
+   }
+  },
+  {
+   "d": 232,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "French literature classics",
+     "g": "Discover classic French writers: Victor Hugo, Molière and Saint-Exupéry.",
+     "p": [
+      "Victor Hugo wrote Les Misérables and Notre-Dame de Paris, great novels about Paris and its people.",
+      "Molière is the master of comedy (L'Avare, Le Malade imaginaire) ; French is even called la langue de Molière.",
+      "Saint-Exupéry wrote Le Petit Prince: « On ne voit bien qu'avec le cœur. L'essentiel est invisible pour les yeux. »"
+     ],
+     "q": "Have you read a French book, even in translation? What was it about and did you like it?",
+     "c": "Read the first page of Le Petit Prince or another French classic, then write three sentences about it."
+    },
+    "de": {
+     "t": "Klassiker der französischen Literatur",
+     "g": "Du entdeckst klassische französische Autoren: Victor Hugo, Molière und Saint-Exupéry.",
+     "p": [
+      "Victor Hugo schrieb Les Misérables und Notre-Dame de Paris, große Romane über Paris und seine Menschen.",
+      "Molière ist der Meister der Komödie (L'Avare, Le Malade imaginaire) ; Französisch heißt sogar la langue de Molière.",
+      "Saint-Exupéry schrieb Le Petit Prince: « On ne voit bien qu'avec le cœur. L'essentiel est invisible pour les yeux. »"
+     ],
+     "q": "Hast du schon ein französisches Buch gelesen, auch übersetzt? Worum ging es, und hat es dir gefallen?",
+     "c": "Lies die erste Seite von Le Petit Prince oder einem anderen Klassiker und schreib drei Sätze darüber."
+    },
+    "es": {
+     "t": "Clásicos de la literatura francesa",
+     "g": "Descubre autores clásicos franceses: Victor Hugo, Molière y Saint-Exupéry.",
+     "p": [
+      "Victor Hugo escribió Les Misérables y Notre-Dame de Paris, grandes novelas sobre París y su gente.",
+      "Molière es el maestro de la comedia (L'Avare, Le Malade imaginaire) ; al francés se le llama la langue de Molière.",
+      "Saint-Exupéry escribió Le Petit Prince: « On ne voit bien qu'avec le cœur. L'essentiel est invisible pour les yeux. »"
+     ],
+     "q": "¿Has leído algún libro francés, aunque sea traducido? ¿De qué trataba y te gustó?",
+     "c": "Lee la primera página de Le Petit Prince u otro clásico francés y escribe tres frases sobre ella."
+    },
+    "fr": {
+     "t": "Les classiques de la littérature française",
+     "g": "Découvrir des auteurs classiques : Victor Hugo, Molière et Saint-Exupéry.",
+     "p": [
+      "Victor Hugo a écrit Les Misérables et Notre-Dame de Paris, de grands romans sur Paris et son peuple.",
+      "Molière est le maître de la comédie (L'Avare, Le Malade imaginaire) ; on appelle le français la langue de Molière.",
+      "Saint-Exupéry a écrit Le Petit Prince : « On ne voit bien qu'avec le cœur. L'essentiel est invisible pour les yeux. »"
+     ],
+     "q": "As-tu déjà lu un livre français, même traduit ? De quoi parlait-il et t'a-t-il plu ?",
+     "c": "Lis la première page du Petit Prince ou d'un autre classique, puis écris trois phrases à son sujet."
+    },
+    "it": {
+     "t": "Classici della letteratura francese",
+     "g": "Scopri autori classici francesi: Victor Hugo, Molière e Saint-Exupéry.",
+     "p": [
+      "Victor Hugo scrisse Les Misérables e Notre-Dame de Paris, grandi romanzi su Parigi e la sua gente.",
+      "Molière è il maestro della commedia (L'Avare, Le Malade imaginaire) ; il francese è detto la langue de Molière.",
+      "Saint-Exupéry scrisse Le Petit Prince: « On ne voit bien qu'avec le cœur. L'essentiel est invisible pour les yeux. »"
+     ],
+     "q": "Hai mai letto un libro francese, anche tradotto? Di cosa parlava e ti è piaciuto?",
+     "c": "Leggi la prima pagina di Le Petit Prince o di un altro classico francese e scrivi tre frasi su di essa."
+    },
+    "pt": {
+     "t": "Clássicos da literatura francesa",
+     "g": "Descobre autores clássicos franceses: Victor Hugo, Molière e Saint-Exupéry.",
+     "p": [
+      "Victor Hugo escreveu Les Misérables e Notre-Dame de Paris, grandes romances sobre Paris e o seu povo.",
+      "Molière é o mestre da comédia (L'Avare, Le Malade imaginaire) ; ao francês chama-se la langue de Molière.",
+      "Saint-Exupéry escreveu Le Petit Prince: « On ne voit bien qu'avec le cœur. L'essentiel est invisible pour les yeux. »"
+     ],
+     "q": "Já leste algum livro francês, mesmo traduzido? De que tratava e gostaste?",
+     "c": "Lê a primeira página de Le Petit Prince ou de outro clássico francês e escreve três frases sobre ela."
+    },
+    "pt_BR": {
+     "t": "Clássicos da literatura francesa",
+     "g": "Descubra autores clássicos franceses: Victor Hugo, Molière e Saint-Exupéry.",
+     "p": [
+      "Victor Hugo escreveu Les Misérables e Notre-Dame de Paris, grandes romances sobre Paris e seu povo.",
+      "Molière é o mestre da comédia (L'Avare, Le Malade imaginaire) ; o francês é chamado de la langue de Molière.",
+      "Saint-Exupéry escreveu Le Petit Prince: « On ne voit bien qu'avec le cœur. L'essentiel est invisible pour les yeux. »"
+     ],
+     "q": "Você já leu algum livro francês, mesmo traduzido? Sobre o que era e você gostou?",
+     "c": "Leia a primeira página de Le Petit Prince ou de outro clássico francês e escreva três frases sobre ela."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un roman",
+      "ex": "Les Misérables est un très long roman."
+     },
+     {
+      "w": "un écrivain",
+      "ex": "Victor Hugo est un écrivain du XIXe siècle."
+     },
+     {
+      "w": "une pièce de théâtre",
+      "ex": "Nous avons vu une pièce de Molière."
+     },
+     {
+      "w": "un personnage",
+      "ex": "Le personnage principal est un petit prince."
+     },
+     {
+      "w": "la langue de Molière",
+      "ex": "Elle parle très bien la langue de Molière."
+     },
+     {
+      "w": "un chef-d'œuvre",
+      "ex": "Pour moi, ce livre est un chef-d'œuvre."
+     }
+    ],
+    "gram": "Parler d'un livre : ce roman a été écrit par... ; il raconte l'histoire de... ; le personnage principal est..."
+   }
+  },
+  {
+   "d": 233,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "French cinema",
+     "g": "Talk about French cinema and films you like.",
+     "p": [
+      "La Nouvelle Vague (late 1950s-1960s): Truffaut and Godard filmed in the street with a free, new style.",
+      "Popular classics: Le Fabuleux Destin d'Amélie Poulain, set in Montmartre, and Intouchables, a warm story of friendship.",
+      "Talking about films: un film d'action, une comédie, un réalisateur, un acteur, en VO sous-titrée, ça m'a fait rire."
+     ],
+     "q": "What is the last film you watched? Tell me the genre, the actors and whether you liked it.",
+     "c": "Watch a French film trailer and write four sentences: genre, director or actors, setting, and your first impression."
+    },
+    "de": {
+     "t": "Französisches Kino",
+     "g": "Du sprichst über französisches Kino und Filme, die dir gefallen.",
+     "p": [
+      "La Nouvelle Vague (Ende der 1950er-1960er): Truffaut und Godard drehten frei und neu auf der Straße.",
+      "Beliebte Klassiker: Le Fabuleux Destin d'Amélie Poulain in Montmartre und Intouchables, eine herzliche Freundschaftsgeschichte.",
+      "Über Filme sprechen: un film d'action, une comédie, un réalisateur, un acteur, en VO sous-titrée, ça m'a fait rire."
+     ],
+     "q": "Welchen Film hast du zuletzt gesehen? Erzähl Genre, Schauspieler und ob er dir gefallen hat.",
+     "c": "Schau einen französischen Filmtrailer und schreib vier Sätze: Genre, Regie oder Schauspieler, Ort, erster Eindruck."
+    },
+    "es": {
+     "t": "El cine francés",
+     "g": "Habla del cine francés y de películas que te gustan.",
+     "p": [
+      "La Nouvelle Vague (finales de los 50-años 60): Truffaut y Godard rodaban en la calle con un estilo libre y nuevo.",
+      "Clásicos populares: Le Fabuleux Destin d'Amélie Poulain, en Montmartre, e Intouchables, una cálida historia de amistad.",
+      "Hablar de cine: un film d'action, une comédie, un réalisateur, un acteur, en VO sous-titrée, ça m'a fait rire."
+     ],
+     "q": "¿Cuál es la última película que viste? Cuéntame el género, los actores y si te gustó.",
+     "c": "Mira un tráiler de una película francesa y escribe cuatro frases: género, director o actores, lugar e impresión."
+    },
+    "fr": {
+     "t": "Le cinéma français",
+     "g": "Parler du cinéma français et des films qu'on aime.",
+     "p": [
+      "La Nouvelle Vague (fin des années 1950-1960) : Truffaut et Godard tournent dans la rue, avec un style libre et neuf.",
+      "Classiques populaires : Le Fabuleux Destin d'Amélie Poulain, à Montmartre, et Intouchables, une belle histoire d'amitié.",
+      "Parler d'un film : un film d'action, une comédie, un réalisateur, un acteur, en VO sous-titrée, ça m'a fait rire."
+     ],
+     "q": "Quel est le dernier film que tu as vu ? Dis-moi le genre, les acteurs et s'il t'a plu.",
+     "c": "Regarde une bande-annonce française et écris quatre phrases : genre, réalisateur ou acteurs, lieu, première impression."
+    },
+    "it": {
+     "t": "Il cinema francese",
+     "g": "Parla del cinema francese e dei film che ti piacciono.",
+     "p": [
+      "La Nouvelle Vague (fine anni '50-anni '60): Truffaut e Godard giravano per strada con uno stile libero e nuovo.",
+      "Classici amati: Le Fabuleux Destin d'Amélie Poulain, a Montmartre, e Intouchables, una calda storia di amicizia.",
+      "Parlare di film: un film d'action, une comédie, un réalisateur, un acteur, en VO sous-titrée, ça m'a fait rire."
+     ],
+     "q": "Qual è l'ultimo film che hai visto? Dimmi il genere, gli attori e se ti è piaciuto.",
+     "c": "Guarda il trailer di un film francese e scrivi quattro frasi: genere, regista o attori, luogo e prima impressione."
+    },
+    "pt": {
+     "t": "O cinema francês",
+     "g": "Fala do cinema francês e de filmes de que gostas.",
+     "p": [
+      "La Nouvelle Vague (finais dos anos 50-anos 60): Truffaut e Godard filmavam na rua com um estilo livre e novo.",
+      "Clássicos populares: Le Fabuleux Destin d'Amélie Poulain, em Montmartre, e Intouchables, uma bela história de amizade.",
+      "Falar de filmes: un film d'action, une comédie, un réalisateur, un acteur, en VO sous-titrée, ça m'a fait rire."
+     ],
+     "q": "Qual foi o último filme que viste? Diz-me o género, os atores e se gostaste.",
+     "c": "Vê o trailer de um filme francês e escreve quatro frases: género, realizador ou atores, local e primeira impressão."
+    },
+    "pt_BR": {
+     "t": "O cinema francês",
+     "g": "Fale do cinema francês e de filmes de que você gosta.",
+     "p": [
+      "La Nouvelle Vague (fim dos anos 50-anos 60): Truffaut e Godard filmavam na rua com um estilo livre e novo.",
+      "Clássicos populares: Le Fabuleux Destin d'Amélie Poulain, em Montmartre, e Intouchables, uma bela história de amizade.",
+      "Falar de filmes: un film d'action, une comédie, un réalisateur, un acteur, en VO sous-titrée, ça m'a fait rire."
+     ],
+     "q": "Qual foi o último filme que você viu? Me diga o gênero, os atores e se gostou.",
+     "c": "Assista ao trailer de um filme francês e escreva quatro frases: gênero, diretor ou atores, lugar e primeira impressão."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un réalisateur",
+      "ex": "François Truffaut est un réalisateur de la Nouvelle Vague."
+     },
+     {
+      "w": "une comédie",
+      "ex": "Intouchables est une comédie très touchante."
+     },
+     {
+      "w": "en VO sous-titrée",
+      "ex": "Je préfère voir les films en VO sous-titrée."
+     },
+     {
+      "w": "tourner un film",
+      "ex": "Ce film a été tourné à Montmartre."
+     },
+     {
+      "w": "une bande-annonce",
+      "ex": "La bande-annonce m'a donné envie de voir le film."
+     },
+     {
+      "w": "ça m'a fait rire",
+      "ex": "Ce film m'a fait rire du début à la fin."
+     }
+    ],
+    "gram": "Parler d'un film : c'est une comédie / un drame ; réalisé par ; tourné à ; ça m'a fait rire / pleurer ; il m'a plu."
+   }
+  },
+  {
+   "d": 234,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "French songs",
+     "g": "Discover French singers and talk about music and lyrics.",
+     "p": [
+      "Édith Piaf, « la Môme », sang La Vie en rose and Non, je ne regrette rien with a powerful voice.",
+      "Jacques Brel, a Belgian singer, wrote poetic songs such as Le Plat Pays about his country's landscapes.",
+      "Stromae, also Belgian, mixes electronic music and deep lyrics, for example in Alors on danse."
+     ],
+     "q": "Which French or francophone song do you know? What is it about, and how does it make you feel?",
+     "c": "Listen to a French song, write down five words you understand and one line you like, then explain why."
+    },
+    "de": {
+     "t": "Französische Lieder",
+     "g": "Du entdeckst französischsprachige Sänger und sprichst über Musik und Texte.",
+     "p": [
+      "Édith Piaf, « la Môme », sang La Vie en rose und Non, je ne regrette rien mit kraftvoller Stimme.",
+      "Jacques Brel, ein belgischer Sänger, schrieb poetische Lieder wie Le Plat Pays über die Landschaft seines Landes.",
+      "Stromae, ebenfalls Belgier, mischt elektronische Musik mit tiefen Texten, zum Beispiel in Alors on danse."
+     ],
+     "q": "Welches französische Lied kennst du? Worum geht es, und welches Gefühl gibt es dir?",
+     "c": "Hör ein französisches Lied, notiere fünf Wörter, die du verstehst, und eine Zeile, die dir gefällt. Warum?"
+    },
+    "es": {
+     "t": "Canciones francesas",
+     "g": "Descubre cantantes francófonos y habla de música y letras.",
+     "p": [
+      "Édith Piaf, « la Môme », cantó La Vie en rose y Non, je ne regrette rien con una voz poderosa.",
+      "Jacques Brel, cantante belga, escribió canciones poéticas como Le Plat Pays sobre los paisajes de su país.",
+      "Stromae, también belga, mezcla música electrónica y letras profundas, por ejemplo en Alors on danse."
+     ],
+     "q": "¿Qué canción francesa o francófona conoces? ¿De qué trata y qué te hace sentir?",
+     "c": "Escucha una canción francesa, apunta cinco palabras que entiendas y un verso que te guste, y explica por qué."
+    },
+    "fr": {
+     "t": "La chanson française",
+     "g": "Découvrir des chanteurs francophones et parler de musique et de paroles.",
+     "p": [
+      "Édith Piaf, « la Môme », a chanté La Vie en rose et Non, je ne regrette rien d'une voix puissante.",
+      "Jacques Brel, chanteur belge, a écrit des chansons poétiques comme Le Plat Pays, sur les paysages de son pays.",
+      "Stromae, belge lui aussi, mélange musique électronique et paroles profondes, par exemple dans Alors on danse."
+     ],
+     "q": "Quelle chanson française ou francophone connais-tu ? De quoi parle-t-elle et que ressens-tu ?",
+     "c": "Écoute une chanson française, note cinq mots que tu comprends et un vers que tu aimes, puis explique pourquoi."
+    },
+    "it": {
+     "t": "Canzoni francesi",
+     "g": "Scopri cantanti francofoni e parla di musica e testi.",
+     "p": [
+      "Édith Piaf, « la Môme », cantò La Vie en rose e Non, je ne regrette rien con una voce potente.",
+      "Jacques Brel, cantante belga, scrisse canzoni poetiche come Le Plat Pays sui paesaggi del suo paese.",
+      "Stromae, anche lui belga, unisce musica elettronica e testi profondi, per esempio in Alors on danse."
+     ],
+     "q": "Quale canzone francese o francofona conosci? Di cosa parla e cosa ti fa provare?",
+     "c": "Ascolta una canzone francese, annota cinque parole che capisci e un verso che ti piace, poi spiega perché."
+    },
+    "pt": {
+     "t": "Canções francesas",
+     "g": "Descobre cantores francófonos e fala de música e letras.",
+     "p": [
+      "Édith Piaf, « la Môme », cantou La Vie en rose e Non, je ne regrette rien com uma voz poderosa.",
+      "Jacques Brel, cantor belga, escreveu canções poéticas como Le Plat Pays sobre as paisagens do seu país.",
+      "Stromae, também belga, mistura música eletrónica e letras profundas, por exemplo em Alors on danse."
+     ],
+     "q": "Que canção francesa ou francófona conheces? De que fala e o que te faz sentir?",
+     "c": "Ouve uma canção francesa, anota cinco palavras que percebes e um verso de que gostas, e explica porquê."
+    },
+    "pt_BR": {
+     "t": "Músicas francesas",
+     "g": "Descubra cantores francófonos e fale de música e letras.",
+     "p": [
+      "Édith Piaf, « la Môme », cantou La Vie en rose e Non, je ne regrette rien com uma voz poderosa.",
+      "Jacques Brel, cantor belga, escreveu canções poéticas como Le Plat Pays sobre as paisagens do seu país.",
+      "Stromae, também belga, mistura música eletrônica e letras profundas, por exemplo em Alors on danse."
+     ],
+     "q": "Que música francesa ou francófona você conhece? Sobre o que ela fala e o que te faz sentir?",
+     "c": "Ouça uma música francesa, anote cinco palavras que entende e um verso de que gosta, e explique por quê."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "une chanson",
+      "ex": "Cette chanson de Piaf est connue dans le monde entier."
+     },
+     {
+      "w": "les paroles",
+      "ex": "J'adore les paroles de cette chanson."
+     },
+     {
+      "w": "un chanteur, une chanteuse",
+      "ex": "Stromae est un chanteur belge très original."
+     },
+     {
+      "w": "un refrain",
+      "ex": "Le refrain est facile à retenir."
+     },
+     {
+      "w": "un vers",
+      "ex": "Ce vers me fait penser à mon enfance."
+     },
+     {
+      "w": "fredonner",
+      "ex": "Je fredonne cette mélodie toute la journée."
+     }
+    ],
+    "gram": "Parler d'une chanson : elle parle de... ; les paroles sont... ; ça me rend joyeux ; elle a été chantée par..."
+   }
+  },
+  {
+   "d": 235,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Describing a film or book",
+     "g": "Describe the plot and characters of a film or book and recommend it.",
+     "p": [
+      "Plot: ça raconte l'histoire de..., ça se passe à..., au début..., puis..., à la fin... (don't tell the ending!).",
+      "Characters: le personnage principal est..., il est drôle, courageux, attachant ; elle doit + infinitive.",
+      "Opinion: je le recommande, ça vaut le coup, je l'ai trouvé passionnant, je n'ai pas accroché."
+     ],
+     "q": "Tell me about a book or film you love without revealing the ending. Why should I watch or read it?",
+     "c": "Write a 6-sentence description of a film or book: setting, main character, problem, your opinion, recommendation."
+    },
+    "de": {
+     "t": "Einen Film oder ein Buch beschreiben",
+     "g": "Du beschreibst Handlung und Figuren eines Films oder Buchs und empfiehlst es.",
+     "p": [
+      "Handlung: ça raconte l'histoire de..., ça se passe à..., au début..., puis..., à la fin... (kein Spoiler!).",
+      "Figuren: le personnage principal est..., il est drôle, courageux, attachant ; elle doit + Infinitiv.",
+      "Meinung: je le recommande, ça vaut le coup, je l'ai trouvé passionnant, je n'ai pas accroché."
+     ],
+     "q": "Erzähl von einem Buch oder Film, den du liebst, ohne das Ende zu verraten. Warum sollte ich ihn sehen?",
+     "c": "Schreib 6 Sätze über einen Film oder ein Buch: Ort, Hauptfigur, Problem, Meinung, Empfehlung."
+    },
+    "es": {
+     "t": "Describir una película o un libro",
+     "g": "Describe el argumento y los personajes de una película o libro y recomiéndalo.",
+     "p": [
+      "Argumento: ça raconte l'histoire de..., ça se passe à..., au début..., puis..., à la fin... (¡sin destripar el final!).",
+      "Personajes: le personnage principal est..., il est drôle, courageux, attachant ; elle doit + infinitivo.",
+      "Opinión: je le recommande, ça vaut le coup, je l'ai trouvé passionnant, je n'ai pas accroché."
+     ],
+     "q": "Háblame de un libro o película que te encante sin contar el final. ¿Por qué debería verlo o leerlo?",
+     "c": "Escribe 6 frases sobre una película o libro: lugar, protagonista, problema, opinión y recomendación."
+    },
+    "fr": {
+     "t": "Décrire un film ou un livre",
+     "g": "Décrire l'intrigue et les personnages d'un film ou d'un livre et le recommander.",
+     "p": [
+      "L'intrigue : ça raconte l'histoire de..., ça se passe à..., au début..., puis..., à la fin... (sans divulgâcher !).",
+      "Les personnages : le personnage principal est..., il est drôle, courageux, attachant ; elle doit + infinitif.",
+      "L'avis : je le recommande, ça vaut le coup, je l'ai trouvé passionnant, je n'ai pas accroché."
+     ],
+     "q": "Parle-moi d'un livre ou d'un film que tu adores sans dévoiler la fin. Pourquoi devrais-je le découvrir ?",
+     "c": "Écris 6 phrases sur un film ou un livre : lieu, personnage principal, problème, avis, recommandation."
+    },
+    "it": {
+     "t": "Descrivere un film o un libro",
+     "g": "Descrivi la trama e i personaggi di un film o un libro e consiglialo.",
+     "p": [
+      "Trama: ça raconte l'histoire de..., ça se passe à..., au début..., puis..., à la fin... (senza spoiler!).",
+      "Personaggi: le personnage principal est..., il est drôle, courageux, attachant ; elle doit + infinito.",
+      "Opinione: je le recommande, ça vaut le coup, je l'ai trouvé passionnant, je n'ai pas accroché."
+     ],
+     "q": "Parlami di un libro o film che ami senza svelare il finale. Perché dovrei vederlo o leggerlo?",
+     "c": "Scrivi 6 frasi su un film o un libro: luogo, protagonista, problema, opinione, consiglio."
+    },
+    "pt": {
+     "t": "Descrever um filme ou livro",
+     "g": "Descreve o enredo e as personagens de um filme ou livro e recomenda-o.",
+     "p": [
+      "Enredo: ça raconte l'histoire de..., ça se passe à..., au début..., puis..., à la fin... (sem contar o final!).",
+      "Personagens: le personnage principal est..., il est drôle, courageux, attachant ; elle doit + infinitivo.",
+      "Opinião: je le recommande, ça vaut le coup, je l'ai trouvé passionnant, je n'ai pas accroché."
+     ],
+     "q": "Fala-me de um livro ou filme que adoras sem revelar o final. Porque devia vê-lo ou lê-lo?",
+     "c": "Escreve 6 frases sobre um filme ou livro: local, personagem principal, problema, opinião e recomendação."
+    },
+    "pt_BR": {
+     "t": "Descrevendo um filme ou livro",
+     "g": "Descreva o enredo e os personagens de um filme ou livro e recomende.",
+     "p": [
+      "Enredo: ça raconte l'histoire de..., ça se passe à..., au début..., puis..., à la fin... (sem dar spoiler!).",
+      "Personagens: le personnage principal est..., il est drôle, courageux, attachant ; elle doit + infinitivo.",
+      "Opinião: je le recommande, ça vaut le coup, je l'ai trouvé passionnant, je n'ai pas accroché."
+     ],
+     "q": "Me fale de um livro ou filme que você adora sem revelar o final. Por que eu deveria ver ou ler?",
+     "c": "Escreva 6 frases sobre um filme ou livro: lugar, personagem principal, problema, opinião e recomendação."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ça raconte l'histoire de",
+      "ex": "Ça raconte l'histoire d'une jeune boulangère à Lyon."
+     },
+     {
+      "w": "ça se passe",
+      "ex": "L'histoire se passe dans un petit village breton."
+     },
+     {
+      "w": "le personnage principal",
+      "ex": "Le personnage principal est un vieux musicien."
+     },
+     {
+      "w": "attachant(e)",
+      "ex": "C'est un héros vraiment attachant."
+     },
+     {
+      "w": "je le recommande",
+      "ex": "Je le recommande à tous ceux qui aiment rire."
+     },
+     {
+      "w": "ça vaut le coup",
+      "ex": "Le livre est long, mais ça vaut le coup."
+     }
+    ],
+    "gram": "Raconter une intrigue au présent : ça raconte l'histoire de + nom ; ça se passe à / en ; au début, puis, à la fin."
+   }
+  },
+  {
+   "d": 236,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Writing a review",
+     "g": "Write a positive or negative review with nuanced vocabulary.",
+     "p": [
+      "Praise: un chef-d'œuvre, captivant, émouvant, bien joué, des dialogues brillants, j'ai été conquis(e).",
+      "Criticism, said politely: décevant, un peu long, prévisible, le scénario manque de rythme, je m'attendais à mieux.",
+      "Structure: introduction, résumé court, points forts, points faibles, conclusion and a note: je lui donne 4 sur 5."
+     ],
+     "q": "Think of a film, series or book that disappointed you a little. What would have made it better?",
+     "c": "Write a 100-word review of a film or book you know: two strengths, one weakness, a note out of 5."
+    },
+    "de": {
+     "t": "Eine Rezension schreiben",
+     "g": "Du schreibst eine positive oder negative Rezension mit nuanciertem Wortschatz.",
+     "p": [
+      "Lob: un chef-d'œuvre, captivant, émouvant, bien joué, des dialogues brillants, j'ai été conquis(e).",
+      "Höfliche Kritik: décevant, un peu long, prévisible, le scénario manque de rythme, je m'attendais à mieux.",
+      "Aufbau: Einleitung, kurze Zusammenfassung, Stärken, Schwächen, Fazit und Note: je lui donne 4 sur 5."
+     ],
+     "q": "Denk an einen Film, eine Serie oder ein Buch, das dich etwas enttäuscht hat. Was hätte es besser gemacht?",
+     "c": "Schreib eine Rezension von 100 Wörtern über einen Film oder ein Buch: zwei Stärken, eine Schwäche, eine Note von 5."
+    },
+    "es": {
+     "t": "Escribir una reseña",
+     "g": "Escribe una reseña positiva o negativa con vocabulario matizado.",
+     "p": [
+      "Elogios: un chef-d'œuvre, captivant, émouvant, bien joué, des dialogues brillants, j'ai été conquis(e).",
+      "Críticas con educación: décevant, un peu long, prévisible, le scénario manque de rythme, je m'attendais à mieux.",
+      "Estructura: introducción, resumen breve, puntos fuertes, puntos débiles, conclusión y nota: je lui donne 4 sur 5."
+     ],
+     "q": "Piensa en una película, serie o libro que te decepcionó un poco. ¿Qué lo habría mejorado?",
+     "c": "Escribe una reseña de 100 palabras de una película o libro: dos puntos fuertes, uno débil y una nota sobre 5."
+    },
+    "fr": {
+     "t": "Écrire une critique",
+     "g": "Écrire une critique positive ou négative avec un vocabulaire nuancé.",
+     "p": [
+      "Éloges : un chef-d'œuvre, captivant, émouvant, bien joué, des dialogues brillants, j'ai été conquis(e).",
+      "Critique polie : décevant, un peu long, prévisible, le scénario manque de rythme, je m'attendais à mieux.",
+      "Plan : introduction, court résumé, points forts, points faibles, conclusion et note : je lui donne 4 sur 5."
+     ],
+     "q": "Pense à un film, une série ou un livre qui t'a un peu déçu(e). Qu'est-ce qui l'aurait rendu meilleur ?",
+     "c": "Écris une critique de 100 mots d'un film ou d'un livre : deux points forts, un point faible, une note sur 5."
+    },
+    "it": {
+     "t": "Scrivere una recensione",
+     "g": "Scrivi una recensione positiva o negativa con un lessico ricco di sfumature.",
+     "p": [
+      "Elogi: un chef-d'œuvre, captivant, émouvant, bien joué, des dialogues brillants, j'ai été conquis(e).",
+      "Critiche garbate: décevant, un peu long, prévisible, le scénario manque de rythme, je m'attendais à mieux.",
+      "Struttura: introduzione, breve riassunto, punti forti, punti deboli, conclusione e voto: je lui donne 4 sur 5."
+     ],
+     "q": "Pensa a un film, una serie o un libro che ti ha un po' deluso. Cosa l'avrebbe reso migliore?",
+     "c": "Scrivi una recensione di 100 parole su un film o un libro: due punti forti, uno debole e un voto su 5."
+    },
+    "pt": {
+     "t": "Escrever uma crítica",
+     "g": "Escreve uma crítica positiva ou negativa com vocabulário rico em nuances.",
+     "p": [
+      "Elogios: un chef-d'œuvre, captivant, émouvant, bien joué, des dialogues brillants, j'ai été conquis(e).",
+      "Críticas educadas: décevant, un peu long, prévisible, le scénario manque de rythme, je m'attendais à mieux.",
+      "Estrutura: introdução, resumo curto, pontos fortes, pontos fracos, conclusão e nota: je lui donne 4 sur 5."
+     ],
+     "q": "Pensa num filme, série ou livro que te desiludiu um pouco. O que o teria tornado melhor?",
+     "c": "Escreve uma crítica de 100 palavras sobre um filme ou livro: dois pontos fortes, um fraco e uma nota de 0 a 5."
+    },
+    "pt_BR": {
+     "t": "Escrevendo uma resenha",
+     "g": "Escreva uma resenha positiva ou negativa com vocabulário cheio de nuances.",
+     "p": [
+      "Elogios: un chef-d'œuvre, captivant, émouvant, bien joué, des dialogues brillants, j'ai été conquis(e).",
+      "Críticas educadas: décevant, un peu long, prévisible, le scénario manque de rythme, je m'attendais à mieux.",
+      "Estrutura: introdução, resumo curto, pontos fortes, pontos fracos, conclusão e nota: je lui donne 4 sur 5."
+     ],
+     "q": "Pense em um filme, série ou livro que te decepcionou um pouco. O que o teria deixado melhor?",
+     "c": "Escreva uma resenha de 100 palavras sobre um filme ou livro: dois pontos fortes, um fraco e uma nota de 0 a 5."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un chef-d'œuvre",
+      "ex": "Ce film est un véritable chef-d'œuvre."
+     },
+     {
+      "w": "captivant(e)",
+      "ex": "C'est un roman captivant du début à la fin."
+     },
+     {
+      "w": "décevant(e)",
+      "ex": "La fin était un peu décevante."
+     },
+     {
+      "w": "prévisible",
+      "ex": "L'histoire est sympathique mais assez prévisible."
+     },
+     {
+      "w": "je m'attendais à mieux",
+      "ex": "Honnêtement, je m'attendais à mieux."
+     },
+     {
+      "w": "les points forts",
+      "ex": "Les points forts du film sont la musique et les acteurs."
+     }
+    ],
+    "gram": "Nuancer une critique : assez, un peu, plutôt, vraiment + adjectif ; je m'attendais à mieux ; ce qui m'a plu, c'est..."
+   }
+  },
+  {
+   "d": 237,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Idioms with food",
+     "g": "Learn fun French idioms with food and use them in context.",
+     "p": [
+      "Avoir la pêche (to be full of energy): ce matin, j'ai la pêche ! Also avoir la frite with the same meaning.",
+      "Raconter des salades (to tell tall tales): arrête de raconter des salades ! Ce n'est pas ma tasse de thé (not my thing).",
+      "More: tomber dans les pommes (to faint), mettre son grain de sel (to add your opinion uninvited), c'est du gâteau (easy)."
+     ],
+     "q": "What is not your cup of tea? Answer with ce n'est pas ma tasse de thé and explain why.",
+     "c": "Write a short dialogue between two friends using at least four food idioms from today."
+    },
+    "de": {
+     "t": "Redewendungen mit Essen",
+     "g": "Du lernst lustige französische Redewendungen mit Essen und nutzt sie im Kontext.",
+     "p": [
+      "Avoir la pêche (voller Energie sein): ce matin, j'ai la pêche ! Gleiche Bedeutung: avoir la frite.",
+      "Raconter des salades (Märchen erzählen): arrête de raconter des salades ! Ce n'est pas ma tasse de thé (nicht mein Ding).",
+      "Mehr: tomber dans les pommes (ohnmächtig werden), mettre son grain de sel (seinen Senf dazugeben), c'est du gâteau (kinderleicht)."
+     ],
+     "q": "Was ist nicht dein Ding? Antworte mit ce n'est pas ma tasse de thé und erklär warum.",
+     "c": "Schreib einen kurzen Dialog zwischen zwei Freunden mit mindestens vier Essens-Redewendungen von heute."
+    },
+    "es": {
+     "t": "Expresiones con comida",
+     "g": "Aprende divertidas expresiones francesas con comida y úsalas en contexto.",
+     "p": [
+      "Avoir la pêche (estar lleno de energía): ce matin, j'ai la pêche ! Igual: avoir la frite.",
+      "Raconter des salades (contar cuentos): arrête de raconter des salades ! Ce n'est pas ma tasse de thé (no es lo mío).",
+      "Más: tomber dans les pommes (desmayarse), mettre son grain de sel (meter baza), c'est du gâteau (está chupado)."
+     ],
+     "q": "¿Qué no es lo tuyo? Responde con ce n'est pas ma tasse de thé y explica por qué.",
+     "c": "Escribe un diálogo corto entre dos amigos con al menos cuatro expresiones de comida de hoy."
+    },
+    "fr": {
+     "t": "Les expressions avec la nourriture",
+     "g": "Apprendre des expressions imagées avec la nourriture et les utiliser en contexte.",
+     "p": [
+      "Avoir la pêche (être plein d'énergie) : ce matin, j'ai la pêche ! Même sens : avoir la frite.",
+      "Raconter des salades (raconter des histoires fausses) ; ce n'est pas ma tasse de thé (ça ne me plaît pas).",
+      "Aussi : tomber dans les pommes (s'évanouir), mettre son grain de sel (donner son avis), c'est du gâteau (c'est facile)."
+     ],
+     "q": "Qu'est-ce qui n'est pas ta tasse de thé ? Réponds avec ce n'est pas ma tasse de thé et explique pourquoi.",
+     "c": "Écris un court dialogue entre deux amis avec au moins quatre expressions du jour."
+    },
+    "it": {
+     "t": "Modi di dire con il cibo",
+     "g": "Impara divertenti modi di dire francesi con il cibo e usali nel contesto.",
+     "p": [
+      "Avoir la pêche (essere pieno di energia): ce matin, j'ai la pêche ! Stesso senso: avoir la frite.",
+      "Raconter des salades (raccontare frottole): arrête de raconter des salades ! Ce n'est pas ma tasse de thé (non fa per me).",
+      "Altri: tomber dans les pommes (svenire), mettre son grain de sel (dire la sua), c'est du gâteau (è facilissimo)."
+     ],
+     "q": "Cosa non fa per te? Rispondi con ce n'est pas ma tasse de thé e spiega perché.",
+     "c": "Scrivi un breve dialogo tra due amici con almeno quattro modi di dire sul cibo di oggi."
+    },
+    "pt": {
+     "t": "Expressões com comida",
+     "g": "Aprende expressões francesas divertidas com comida e usa-as em contexto.",
+     "p": [
+      "Avoir la pêche (estar cheio de energia): ce matin, j'ai la pêche ! O mesmo: avoir la frite.",
+      "Raconter des salades (contar histórias): arrête de raconter des salades ! Ce n'est pas ma tasse de thé (não é a minha praia).",
+      "Mais: tomber dans les pommes (desmaiar), mettre son grain de sel (meter a colherada), c'est du gâteau (é canja)."
+     ],
+     "q": "O que não é a tua praia? Responde com ce n'est pas ma tasse de thé e explica porquê.",
+     "c": "Escreve um diálogo curto entre dois amigos com pelo menos quatro expressões de comida de hoje."
+    },
+    "pt_BR": {
+     "t": "Expressões com comida",
+     "g": "Aprenda expressões francesas divertidas com comida e use em contexto.",
+     "p": [
+      "Avoir la pêche (estar cheio de energia): ce matin, j'ai la pêche ! O mesmo: avoir la frite.",
+      "Raconter des salades (contar lorota): arrête de raconter des salades ! Ce n'est pas ma tasse de thé (não é a minha praia).",
+      "Mais: tomber dans les pommes (desmaiar), mettre son grain de sel (dar pitaco), c'est du gâteau (é moleza)."
+     ],
+     "q": "O que não é a sua praia? Responda com ce n'est pas ma tasse de thé e explique por quê.",
+     "c": "Escreva um diálogo curto entre dois amigos com pelo menos quatro expressões de comida de hoje."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "avoir la pêche",
+      "ex": "Après mes vacances, j'ai vraiment la pêche !"
+     },
+     {
+      "w": "raconter des salades",
+      "ex": "Arrête de me raconter des salades !"
+     },
+     {
+      "w": "ce n'est pas ma tasse de thé",
+      "ex": "Le jazz, ce n'est pas vraiment ma tasse de thé."
+     },
+     {
+      "w": "tomber dans les pommes",
+      "ex": "Il faisait si chaud qu'elle est tombée dans les pommes."
+     },
+     {
+      "w": "mettre son grain de sel",
+      "ex": "Mon oncle met toujours son grain de sel."
+     },
+     {
+      "w": "c'est du gâteau",
+      "ex": "Cet exercice ? C'est du gâteau !"
+     }
+    ],
+    "gram": "Expressions figées : on ne les traduit pas mot à mot. Avoir la pêche ; raconter des salades ; c'est du gâteau."
+   }
+  },
+  {
+   "d": 238,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Idioms with animals",
+     "g": "Learn common French idioms with animals.",
+     "p": [
+      "Avoir un chat dans la gorge (to have a frog in your throat) ; avoir une faim de loup (to be starving).",
+      "Poser un lapin à quelqu'un (to stand someone up): il m'a posé un lapin hier soir !",
+      "More: il fait un froid de canard (freezing cold), quand les poules auront des dents (never), donner sa langue au chat (to give up guessing)."
+     ],
+     "q": "Has someone ever posé un lapin to you, or have you had une faim de loup? Tell me the story.",
+     "c": "Write five sentences about a funny day, each with a different animal idiom from today."
+    },
+    "de": {
+     "t": "Redewendungen mit Tieren",
+     "g": "Du lernst häufige französische Redewendungen mit Tieren.",
+     "p": [
+      "Avoir un chat dans la gorge (einen Frosch im Hals haben) ; avoir une faim de loup (einen Bärenhunger haben).",
+      "Poser un lapin à quelqu'un (jemanden versetzen): il m'a posé un lapin hier soir !",
+      "Mehr: il fait un froid de canard (eisig kalt), quand les poules auront des dents (nie), donner sa langue au chat (aufgeben beim Raten)."
+     ],
+     "q": "Hat dich schon mal jemand versetzt (posé un lapin), oder hattest du une faim de loup? Erzähl!",
+     "c": "Schreib fünf Sätze über einen lustigen Tag, jeder mit einer anderen Tier-Redewendung von heute."
+    },
+    "es": {
+     "t": "Expresiones con animales",
+     "g": "Aprende expresiones francesas frecuentes con animales.",
+     "p": [
+      "Avoir un chat dans la gorge (tener carraspera) ; avoir une faim de loup (tener un hambre de lobo).",
+      "Poser un lapin à quelqu'un (dar plantón): il m'a posé un lapin hier soir !",
+      "Más: il fait un froid de canard (hace un frío que pela), quand les poules auront des dents (nunca), donner sa langue au chat (rendirse)."
+     ],
+     "q": "¿Alguien te ha dado plantón (posé un lapin) o has tenido une faim de loup? Cuéntamelo.",
+     "c": "Escribe cinco frases sobre un día divertido, cada una con una expresión de animales distinta."
+    },
+    "fr": {
+     "t": "Les expressions avec les animaux",
+     "g": "Apprendre des expressions courantes avec des animaux.",
+     "p": [
+      "Avoir un chat dans la gorge (être enroué) ; avoir une faim de loup (avoir très faim).",
+      "Poser un lapin à quelqu'un (ne pas venir au rendez-vous) : il m'a posé un lapin hier soir !",
+      "Aussi : il fait un froid de canard (très froid), quand les poules auront des dents (jamais), donner sa langue au chat (abandonner)."
+     ],
+     "q": "Quelqu'un t'a-t-il déjà posé un lapin, ou as-tu eu une faim de loup ? Raconte-moi.",
+     "c": "Écris cinq phrases sur une journée amusante, chacune avec une expression animale différente."
+    },
+    "it": {
+     "t": "Modi di dire con gli animali",
+     "g": "Impara modi di dire francesi comuni con gli animali.",
+     "p": [
+      "Avoir un chat dans la gorge (avere la raucedine) ; avoir une faim de loup (avere una fame da lupo).",
+      "Poser un lapin à quelqu'un (dare buca a qualcuno): il m'a posé un lapin hier soir !",
+      "Altri: il fait un froid de canard (fa un freddo cane), quand les poules auront des dents (mai), donner sa langue au chat (arrendersi)."
+     ],
+     "q": "Qualcuno ti ha mai dato buca (posé un lapin) o hai avuto une faim de loup? Raccontami.",
+     "c": "Scrivi cinque frasi su una giornata divertente, ognuna con un modo di dire diverso sugli animali."
+    },
+    "pt": {
+     "t": "Expressões com animais",
+     "g": "Aprende expressões francesas comuns com animais.",
+     "p": [
+      "Avoir un chat dans la gorge (estar rouco) ; avoir une faim de loup (ter uma fome de lobo).",
+      "Poser un lapin à quelqu'un (deixar alguém pendurado): il m'a posé un lapin hier soir !",
+      "Mais: il fait un froid de canard (está um frio de rachar), quand les poules auront des dents (nunca), donner sa langue au chat (desistir)."
+     ],
+     "q": "Já alguém te deixou pendurado (posé un lapin) ou tiveste une faim de loup? Conta-me.",
+     "c": "Escreve cinco frases sobre um dia divertido, cada uma com uma expressão de animais diferente."
+    },
+    "pt_BR": {
+     "t": "Expressões com animais",
+     "g": "Aprenda expressões francesas comuns com animais.",
+     "p": [
+      "Avoir un chat dans la gorge (estar rouco) ; avoir une faim de loup (estar morrendo de fome).",
+      "Poser un lapin à quelqu'un (dar um bolo em alguém): il m'a posé un lapin hier soir !",
+      "Mais: il fait un froid de canard (está um frio de rachar), quand les poules auront des dents (nunca), donner sa langue au chat (desistir)."
+     ],
+     "q": "Alguém já te deu um bolo (posé un lapin) ou você já teve une faim de loup? Me conte.",
+     "c": "Escreva cinco frases sobre um dia divertido, cada uma com uma expressão de animais diferente."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "avoir un chat dans la gorge",
+      "ex": "Excusez-moi, j'ai un chat dans la gorge."
+     },
+     {
+      "w": "avoir une faim de loup",
+      "ex": "Après la randonnée, on avait une faim de loup."
+     },
+     {
+      "w": "poser un lapin",
+      "ex": "Mon collègue m'a posé un lapin ce midi."
+     },
+     {
+      "w": "un froid de canard",
+      "ex": "Couvre-toi, il fait un froid de canard !"
+     },
+     {
+      "w": "quand les poules auront des dents",
+      "ex": "Il rangera sa chambre quand les poules auront des dents."
+     },
+     {
+      "w": "donner sa langue au chat",
+      "ex": "Je ne trouve pas la réponse, je donne ma langue au chat."
+     }
+    ],
+    "gram": "Expressions animales : avoir un chat dans la gorge, une faim de loup ; poser un lapin à quelqu'un ; un froid de canard."
+   }
+  },
+  {
+   "d": 239,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Idioms with body parts",
+     "g": "Learn useful French idioms with parts of the body.",
+     "p": [
+      "Coûter les yeux de la tête (to cost an arm and a leg): ce sac coûte les yeux de la tête !",
+      "Avoir le bras long (to have influence) ; casser les pieds à quelqu'un (to annoy someone): tu me casses les pieds !",
+      "More: mettre les pieds dans le plat (to put your foot in it), avoir un poil dans la main (to be lazy), être tout ouïe (all ears)."
+     ],
+     "q": "Is there something you would love to buy but it coûte les yeux de la tête? Tell me about it.",
+     "c": "Write a short funny story about a day at work or school using four body idioms from today."
+    },
+    "de": {
+     "t": "Redewendungen mit Körperteilen",
+     "g": "Du lernst nützliche französische Redewendungen mit Körperteilen.",
+     "p": [
+      "Coûter les yeux de la tête (ein Vermögen kosten): ce sac coûte les yeux de la tête !",
+      "Avoir le bras long (Beziehungen haben) ; casser les pieds à quelqu'un (jemandem auf die Nerven gehen).",
+      "Mehr: mettre les pieds dans le plat (ins Fettnäpfchen treten), avoir un poil dans la main (faul sein), être tout ouïe (ganz Ohr sein)."
+     ],
+     "q": "Gibt es etwas, das du gern kaufen würdest, aber es coûte les yeux de la tête? Erzähl davon.",
+     "c": "Schreib eine kurze lustige Geschichte über einen Arbeits- oder Schultag mit vier Körper-Redewendungen."
+    },
+    "es": {
+     "t": "Expresiones con partes del cuerpo",
+     "g": "Aprende expresiones francesas útiles con partes del cuerpo.",
+     "p": [
+      "Coûter les yeux de la tête (costar un ojo de la cara): ce sac coûte les yeux de la tête !",
+      "Avoir le bras long (tener enchufe, influencia) ; casser les pieds à quelqu'un (dar la lata): tu me casses les pieds !",
+      "Más: mettre les pieds dans le plat (meter la pata), avoir un poil dans la main (ser vago), être tout ouïe (ser todo oídos)."
+     ],
+     "q": "¿Hay algo que te encantaría comprar pero coûte les yeux de la tête? Cuéntame.",
+     "c": "Escribe una historia corta y divertida sobre un día de trabajo o clase con cuatro expresiones del cuerpo."
+    },
+    "fr": {
+     "t": "Les expressions avec le corps",
+     "g": "Apprendre des expressions utiles avec les parties du corps.",
+     "p": [
+      "Coûter les yeux de la tête (coûter très cher) : ce sac coûte les yeux de la tête !",
+      "Avoir le bras long (avoir de l'influence) ; casser les pieds à quelqu'un (l'ennuyer) : tu me casses les pieds !",
+      "Aussi : mettre les pieds dans le plat (faire une gaffe), avoir un poil dans la main (être paresseux), être tout ouïe."
+     ],
+     "q": "Y a-t-il quelque chose que tu adorerais acheter mais qui coûte les yeux de la tête ? Raconte.",
+     "c": "Écris une petite histoire drôle sur une journée de travail ou d'école avec quatre expressions du jour."
+    },
+    "it": {
+     "t": "Modi di dire con il corpo",
+     "g": "Impara utili modi di dire francesi con le parti del corpo.",
+     "p": [
+      "Coûter les yeux de la tête (costare un occhio della testa): ce sac coûte les yeux de la tête !",
+      "Avoir le bras long (avere le mani in pasta) ; casser les pieds à quelqu'un (rompere le scatole): tu me casses les pieds !",
+      "Altri: mettre les pieds dans le plat (fare una gaffe), avoir un poil dans la main (essere pigro), être tout ouïe (essere tutto orecchi)."
+     ],
+     "q": "C'è qualcosa che adoreresti comprare ma che coûte les yeux de la tête? Raccontami.",
+     "c": "Scrivi una breve storia divertente su una giornata di lavoro o di scuola con quattro modi di dire sul corpo."
+    },
+    "pt": {
+     "t": "Expressões com partes do corpo",
+     "g": "Aprende expressões francesas úteis com partes do corpo.",
+     "p": [
+      "Coûter les yeux de la tête (custar os olhos da cara): ce sac coûte les yeux de la tête !",
+      "Avoir le bras long (ter influência, cunhas) ; casser les pieds à quelqu'un (chatear alguém): tu me casses les pieds !",
+      "Mais: mettre les pieds dans le plat (meter o pé na argola), avoir un poil dans la main (ser preguiçoso), être tout ouïe (ser todo ouvidos)."
+     ],
+     "q": "Há alguma coisa que adoravas comprar mas que coûte les yeux de la tête? Conta-me.",
+     "c": "Escreve uma pequena história divertida sobre um dia de trabalho ou escola com quatro expressões do corpo."
+    },
+    "pt_BR": {
+     "t": "Expressões com partes do corpo",
+     "g": "Aprenda expressões francesas úteis com partes do corpo.",
+     "p": [
+      "Coûter les yeux de la tête (custar os olhos da cara): ce sac coûte les yeux de la tête !",
+      "Avoir le bras long (ter influência, ser bem relacionado) ; casser les pieds à quelqu'un (encher o saco de alguém).",
+      "Mais: mettre les pieds dans le plat (pisar na bola), avoir un poil dans la main (ser preguiçoso), être tout ouïe (ser todo ouvidos)."
+     ],
+     "q": "Tem alguma coisa que você adoraria comprar, mas que coûte les yeux de la tête? Me conte.",
+     "c": "Escreva uma pequena história divertida sobre um dia de trabalho ou escola com quatro expressões do corpo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "coûter les yeux de la tête",
+      "ex": "Cette voiture coûte les yeux de la tête."
+     },
+     {
+      "w": "avoir le bras long",
+      "ex": "Son oncle a le bras long dans le monde du cinéma."
+     },
+     {
+      "w": "casser les pieds",
+      "ex": "Arrête de me casser les pieds avec cette histoire !"
+     },
+     {
+      "w": "mettre les pieds dans le plat",
+      "ex": "J'ai mis les pieds dans le plat en parlant de la surprise."
+     },
+     {
+      "w": "avoir un poil dans la main",
+      "ex": "Mon frère a un poil dans la main le dimanche."
+     },
+     {
+      "w": "être tout ouïe",
+      "ex": "Raconte-moi tout, je suis tout ouïe !"
+     }
+    ],
+    "gram": "Expressions avec le corps : coûter les yeux de la tête, avoir le bras long, casser les pieds à qqn, être tout ouïe."
+   }
+  },
+  {
+   "d": 240,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Expressing surprise",
+     "g": "React naturally with surprise in French: Ça alors ! Sans blague ?",
+     "p": [
+      "Short reactions: Ça alors ! Sans blague ? C'est pas vrai ! Incroyable ! Tu plaisantes ? Non ?!",
+      "Stronger: je n'en reviens pas !, je n'arrive pas à y croire !, j'en reste bouche bée, quelle surprise !",
+      "With the subjunctive: je suis surpris(e) que tu sois là, ça m'étonne qu'il ait dit ça."
+     ],
+     "q": "I just learned French has over 300 million speakers worldwide. How do you react? Use two expressions!",
+     "c": "Write a mini dialogue: a friend tells you three surprising pieces of news and you react differently each time."
+    },
+    "de": {
+     "t": "Überraschung ausdrücken",
+     "g": "Du reagierst natürlich überrascht auf Französisch: Ça alors ! Sans blague ?",
+     "p": [
+      "Kurze Reaktionen: Ça alors ! Sans blague ? C'est pas vrai ! Incroyable ! Tu plaisantes ? Non ?!",
+      "Stärker: je n'en reviens pas !, je n'arrive pas à y croire !, j'en reste bouche bée, quelle surprise !",
+      "Mit Subjonctif: je suis surpris(e) que tu sois là, ça m'étonne qu'il ait dit ça."
+     ],
+     "q": "Ich habe gerade gelernt, dass über 300 Millionen Menschen Französisch sprechen. Wie reagierst du? Zwei Ausdrücke!",
+     "c": "Schreib einen Mini-Dialog: Ein Freund erzählt drei überraschende Neuigkeiten, du reagierst jedes Mal anders."
+    },
+    "es": {
+     "t": "Expresar sorpresa",
+     "g": "Reacciona con sorpresa de forma natural en francés: Ça alors ! Sans blague ?",
+     "p": [
+      "Reacciones cortas: Ça alors ! Sans blague ? C'est pas vrai ! Incroyable ! Tu plaisantes ? Non ?!",
+      "Más fuertes: je n'en reviens pas !, je n'arrive pas à y croire !, j'en reste bouche bée, quelle surprise !",
+      "Con subjuntivo: je suis surpris(e) que tu sois là, ça m'étonne qu'il ait dit ça."
+     ],
+     "q": "Acabo de saber que más de 300 millones de personas hablan francés. ¿Cómo reaccionas? ¡Usa dos expresiones!",
+     "c": "Escribe un mini diálogo: un amigo te da tres noticias sorprendentes y reaccionas de forma distinta cada vez."
+    },
+    "fr": {
+     "t": "Exprimer la surprise",
+     "g": "Réagir naturellement avec surprise : Ça alors ! Sans blague ?",
+     "p": [
+      "Réactions courtes : Ça alors ! Sans blague ? C'est pas vrai ! Incroyable ! Tu plaisantes ? Non ?!",
+      "Plus fort : je n'en reviens pas !, je n'arrive pas à y croire !, j'en reste bouche bée, quelle surprise !",
+      "Avec le subjonctif : je suis surpris(e) que tu sois là, ça m'étonne qu'il ait dit ça."
+     ],
+     "q": "Je viens d'apprendre que plus de 300 millions de personnes parlent français. Ta réaction ? Deux expressions !",
+     "c": "Écris un mini dialogue : un ami t'annonce trois nouvelles surprenantes et tu réagis différemment à chaque fois."
+    },
+    "it": {
+     "t": "Esprimere sorpresa",
+     "g": "Reagisci con sorpresa in modo naturale in francese: Ça alors ! Sans blague ?",
+     "p": [
+      "Reazioni brevi: Ça alors ! Sans blague ? C'est pas vrai ! Incroyable ! Tu plaisantes ? Non ?!",
+      "Più forti: je n'en reviens pas !, je n'arrive pas à y croire !, j'en reste bouche bée, quelle surprise !",
+      "Con il subjonctif: je suis surpris(e) que tu sois là, ça m'étonne qu'il ait dit ça."
+     ],
+     "q": "Ho appena scoperto che più di 300 milioni di persone parlano francese. Come reagisci? Usa due espressioni!",
+     "c": "Scrivi un mini dialogo: un amico ti dà tre notizie sorprendenti e tu reagisci in modo diverso ogni volta."
+    },
+    "pt": {
+     "t": "Exprimir surpresa",
+     "g": "Reage com surpresa de forma natural em francês: Ça alors ! Sans blague ?",
+     "p": [
+      "Reações curtas: Ça alors ! Sans blague ? C'est pas vrai ! Incroyable ! Tu plaisantes ? Non ?!",
+      "Mais fortes: je n'en reviens pas !, je n'arrive pas à y croire !, j'en reste bouche bée, quelle surprise !",
+      "Com subjonctif: je suis surpris(e) que tu sois là, ça m'étonne qu'il ait dit ça."
+     ],
+     "q": "Acabei de saber que mais de 300 milhões de pessoas falam francês. Como reages? Usa duas expressões!",
+     "c": "Escreve um mini diálogo: um amigo dá-te três notícias surpreendentes e reages de forma diferente de cada vez."
+    },
+    "pt_BR": {
+     "t": "Expressando surpresa",
+     "g": "Reaja com surpresa de forma natural em francês: Ça alors ! Sans blague ?",
+     "p": [
+      "Reações curtas: Ça alors ! Sans blague ? C'est pas vrai ! Incroyable ! Tu plaisantes ? Non ?!",
+      "Mais fortes: je n'en reviens pas !, je n'arrive pas à y croire !, j'en reste bouche bée, quelle surprise !",
+      "Com subjonctif: je suis surpris(e) que tu sois là, ça m'étonne qu'il ait dit ça."
+     ],
+     "q": "Acabei de saber que mais de 300 milhões de pessoas falam francês. Como você reage? Use duas expressões!",
+     "c": "Escreva um mini diálogo: um amigo te conta três notícias surpreendentes e você reage de um jeito diferente a cada vez."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ça alors !",
+      "ex": "Ça alors ! Tu as appris le japonais en un an ?"
+     },
+     {
+      "w": "sans blague ?",
+      "ex": "Tu pars vivre à Montréal ? Sans blague ?"
+     },
+     {
+      "w": "je n'en reviens pas",
+      "ex": "Tu as gagné le concours ? Je n'en reviens pas !"
+     },
+     {
+      "w": "tu plaisantes ?",
+      "ex": "Tu as couru un marathon ? Tu plaisantes ?"
+     },
+     {
+      "w": "rester bouche bée",
+      "ex": "Devant ce paysage, je suis resté bouche bée."
+     },
+     {
+      "w": "ça m'étonne que",
+      "ex": "Ça m'étonne qu'il ne soit pas encore arrivé."
+     }
+    ],
+    "gram": "Surprise : ça alors !, sans blague ?, je n'en reviens pas ; ça m'étonne que / je suis surpris que + subjonctif."
+   }
+  }
+ ]
+}

@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 261,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Talking about habits and changes",
+     "g": "Describe changing routines with smettere di, cominciare a and continuare a.",
+     "p": [
+      "Stopping: ho smesso di bere caffè la sera. Starting: ho cominciato a correre la mattina.",
+      "Continuing and returning: continuo a studiare italiano, sono tornato a leggere libri di carta.",
+      "Past habits use imperfetto: da piccolo andavo a scuola a piedi, ora prendo l'autobus."
+     ],
+     "q": "What habit have you started or stopped in recent years?",
+     "c": "Write four sentences: one habit you stopped, one you started, one you continue and one from childhood."
+    },
+    "de": {
+     "t": "Über Gewohnheiten und Veränderungen",
+     "g": "Du beschreibst veränderte Routinen mit smettere di, cominciare a und continuare a.",
+     "p": [
+      "Aufhören: ho smesso di bere caffè la sera. Anfangen: ho cominciato a correre la mattina.",
+      "Weitermachen und wieder anfangen: continuo a studiare italiano, sono tornato a leggere libri di carta.",
+      "Frühere Gewohnheiten im Imperfetto: da piccolo andavo a scuola a piedi, ora prendo l'autobus."
+     ],
+     "q": "Welche Gewohnheit hast du in den letzten Jahren angefangen oder aufgegeben?",
+     "c": "Schreib vier Sätze: eine aufgegebene, eine neue, eine beibehaltene Gewohnheit und eine aus der Kindheit."
+    },
+    "es": {
+     "t": "Hablar de hábitos y cambios",
+     "g": "Describir rutinas que cambian con smettere di, cominciare a y continuare a.",
+     "p": [
+      "Dejar: ho smesso di bere caffè la sera. Empezar: ho cominciato a correre la mattina.",
+      "Seguir y volver: continuo a studiare italiano, sono tornato a leggere libri di carta.",
+      "Hábitos pasados con imperfetto: da piccolo andavo a scuola a piedi, ora prendo l'autobus."
+     ],
+     "q": "¿Qué hábito has empezado o dejado en los últimos años?",
+     "c": "Escribe cuatro frases: un hábito que dejaste, uno que empezaste, uno que sigues y uno de la infancia."
+    },
+    "fr": {
+     "t": "Parler des habitudes et des changements",
+     "g": "Décrire des routines qui changent avec smettere di, cominciare a et continuare a.",
+     "p": [
+      "Arrêter : ho smesso di bere caffè la sera. Commencer : ho cominciato a correre la mattina.",
+      "Continuer et reprendre : continuo a studiare italiano, sono tornato a leggere libri di carta.",
+      "Habitudes passées à l'imperfetto : da piccolo andavo a scuola a piedi, ora prendo l'autobus."
+     ],
+     "q": "Quelle habitude as-tu prise ou arrêtée ces dernières années ?",
+     "c": "Écris quatre phrases : une habitude arrêtée, une commencée, une que tu gardes et une d'enfance."
+    },
+    "it": {
+     "t": "Abitudini e cambiamenti",
+     "g": "Descrivere routine che cambiano con smettere di, cominciare a e continuare a.",
+     "p": [
+      "Smettere: ho smesso di bere caffè la sera. Cominciare: ho cominciato a correre la mattina.",
+      "Continuare e riprendere: continuo a studiare italiano, sono tornato a leggere libri di carta.",
+      "Le abitudini passate vogliono l'imperfetto: da piccolo andavo a scuola a piedi, ora prendo l'autobus."
+     ],
+     "q": "Quale abitudine hai cominciato o smesso negli ultimi anni?",
+     "c": "Scrivi quattro frasi: un'abitudine che hai smesso, una nuova, una che continui e una d'infanzia."
+    },
+    "pt": {
+     "t": "Falar de hábitos e mudanças",
+     "g": "Descrever rotinas que mudam com smettere di, cominciare a e continuare a.",
+     "p": [
+      "Deixar: ho smesso di bere caffè la sera. Começar: ho cominciato a correre la mattina.",
+      "Continuar e voltar a: continuo a studiare italiano, sono tornato a leggere libri di carta.",
+      "Hábitos passados com imperfetto: da piccolo andavo a scuola a piedi, ora prendo l'autobus."
+     ],
+     "q": "Que hábito começaste ou deixaste nos últimos anos?",
+     "c": "Escreve quatro frases: um hábito que deixaste, um que começaste, um que mantens e um de infância."
+    },
+    "pt_BR": {
+     "t": "Falar de hábitos e mudanças",
+     "g": "Descrever rotinas que mudam com smettere di, cominciare a e continuare a.",
+     "p": [
+      "Parar: ho smesso di bere caffè la sera. Começar: ho cominciato a correre la mattina.",
+      "Continuar e voltar a: continuo a studiare italiano, sono tornato a leggere libri di carta.",
+      "Hábitos passados com imperfetto: da piccolo andavo a scuola a piedi, ora prendo l'autobus."
+     ],
+     "q": "Que hábito você começou ou largou nos últimos anos?",
+     "c": "Escreva quatro frases: um hábito que largou, um que começou, um que mantém e um da infância."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "smettere di",
+      "ex": "Ho smesso di usare il telefono a letto."
+     },
+     {
+      "w": "cominciare a",
+      "ex": "Ho cominciato a fare yoga il mese scorso."
+     },
+     {
+      "w": "continuare a",
+      "ex": "Continuo a studiare anche in vacanza."
+     },
+     {
+      "w": "tornare a",
+      "ex": "Sono tornata a dipingere dopo anni."
+     },
+     {
+      "w": "l'abitudine",
+      "ex": "Fare colazione al bar è una bella abitudine."
+     },
+     {
+      "w": "da piccolo",
+      "ex": "Da piccolo passavo l'estate dai nonni."
+     }
+    ],
+    "gram": "Verbi + preposizione + infinito: smettere di, cominciare a, continuare a, tornare a; imperfetto per abitudini passate."
+   }
+  },
+  {
+   "d": 262,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Expressing surprise and disbelief",
+     "g": "React naturally with davvero?, non ci credo! and ma dai!",
+     "p": [
+      "Mild surprise: davvero?, sul serio?, ah sì?, ma va? Strong surprise: non ci posso credere!",
+      "Ma dai! can mean no way! or come on!; tone tells which. Incredibile! and pazzesco! add energy.",
+      "Ask for more: e poi?, come è possibile?, racconta!, chi l'avrebbe mai detto!"
+     ],
+     "q": "What news surprised you recently in a good way?",
+     "c": "React in Italian to three pieces of good news a friend gives you, using a different phrase each time."
+    },
+    "de": {
+     "t": "Überraschung und Unglauben ausdrücken",
+     "g": "Du reagierst natürlich mit davvero?, non ci credo! und ma dai!",
+     "p": [
+      "Leichte Überraschung: davvero?, sul serio?, ah sì?, ma va? Starke: non ci posso credere!",
+      "Ma dai! heißt echt jetzt?! oder ach komm!; der Ton entscheidet. Incredibile! und pazzesco! verstärken.",
+      "Nachfragen: e poi?, come è possibile?, racconta!, chi l'avrebbe mai detto!"
+     ],
+     "q": "Welche Nachricht hat dich kürzlich positiv überrascht?",
+     "c": "Reagiere auf Italienisch auf drei gute Nachrichten eines Freundes, jedes Mal mit einem anderen Ausdruck."
+    },
+    "es": {
+     "t": "Expresar sorpresa e incredulidad",
+     "g": "Reaccionar con naturalidad con davvero?, non ci credo! y ma dai!",
+     "p": [
+      "Sorpresa leve: davvero?, sul serio?, ah sì?, ma va? Fuerte: non ci posso credere!",
+      "Ma dai! puede ser ¡no me digas! o ¡venga ya!; lo decide el tono. Incredibile! y pazzesco! dan energía.",
+      "Pide más: e poi?, come è possibile?, racconta!, chi l'avrebbe mai detto!"
+     ],
+     "q": "¿Qué noticia te sorprendió para bien hace poco?",
+     "c": "Reacciona en italiano a tres buenas noticias de un amigo, con una expresión distinta cada vez."
+    },
+    "fr": {
+     "t": "Exprimer la surprise et l'incrédulité",
+     "g": "Réagir naturellement avec davvero?, non ci credo! et ma dai!",
+     "p": [
+      "Surprise légère : davvero?, sul serio?, ah sì?, ma va? Forte : non ci posso credere!",
+      "Ma dai! veut dire sans blague ! ou allez ! ; le ton décide. Incredibile! et pazzesco! ajoutent de l'énergie.",
+      "Demande la suite : e poi?, come è possibile?, racconta!, chi l'avrebbe mai detto!"
+     ],
+     "q": "Quelle nouvelle t'a agréablement surpris récemment ?",
+     "c": "Réagis en italien à trois bonnes nouvelles d'un ami, avec une expression différente à chaque fois."
+    },
+    "it": {
+     "t": "Esprimere sorpresa e incredulità",
+     "g": "Reagire in modo naturale con davvero?, non ci credo! e ma dai!",
+     "p": [
+      "Sorpresa leggera: davvero?, sul serio?, ah sì?, ma va? Sorpresa forte: non ci posso credere!",
+      "Ma dai! può voler dire incredibile! o su, smettila!; decide il tono. Pazzesco! dà energia.",
+      "Chiedi di più: e poi?, come è possibile?, racconta!, chi l'avrebbe mai detto!"
+     ],
+     "q": "Quale notizia ti ha sorpreso positivamente di recente?",
+     "c": "Reagisci a tre belle notizie di un amico, usando ogni volta un'espressione diversa."
+    },
+    "pt": {
+     "t": "Exprimir surpresa e incredulidade",
+     "g": "Reagir com naturalidade com davvero?, non ci credo! e ma dai!",
+     "p": [
+      "Surpresa leve: davvero?, sul serio?, ah sì?, ma va? Forte: non ci posso credere!",
+      "Ma dai! pode ser a sério?! ou ora vá lá!; o tom decide. Incredibile! e pazzesco! dão energia.",
+      "Pede mais: e poi?, come è possibile?, racconta!, chi l'avrebbe mai detto!"
+     ],
+     "q": "Que notícia te surpreendeu pela positiva recentemente?",
+     "c": "Reage em italiano a três boas notícias de um amigo, com uma expressão diferente de cada vez."
+    },
+    "pt_BR": {
+     "t": "Expressar surpresa e incredulidade",
+     "g": "Reagir com naturalidade com davvero?, non ci credo! e ma dai!",
+     "p": [
+      "Surpresa leve: davvero?, sul serio?, ah sì?, ma va? Forte: non ci posso credere!",
+      "Ma dai! pode ser jura?! ou para com isso!; o tom decide. Incredibile! e pazzesco! dão energia.",
+      "Peça mais: e poi?, come è possibile?, racconta!, chi l'avrebbe mai detto!"
+     ],
+     "q": "Que notícia surpreendeu você positivamente nos últimos tempos?",
+     "c": "Reaja em italiano a três boas notícias de um amigo, com uma expressão diferente a cada vez."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "davvero",
+      "ex": "Davvero? Hai trovato lavoro a Firenze?"
+     },
+     {
+      "w": "non ci credo",
+      "ex": "Non ci credo, hai vinto il concorso!"
+     },
+     {
+      "w": "ma dai",
+      "ex": "Ma dai! Anche tu sei di Torino?"
+     },
+     {
+      "w": "sul serio",
+      "ex": "Sul serio parti domani?"
+     },
+     {
+      "w": "pazzesco",
+      "ex": "È pazzesco quanto sei migliorato!"
+     },
+     {
+      "w": "chi l'avrebbe mai detto",
+      "ex": "Chi l'avrebbe mai detto che saremmo diventati amici!"
+     }
+    ],
+    "gram": "Reazioni: non ci credo / non ci posso credere (ci = a questo); chi l'avrebbe mai detto con condizionale passato."
+   }
+  },
+  {
+   "d": 263,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Making excuses and apologising",
+     "g": "Apologise sincerely and explain with scusami tanto and purtroppo non ho potuto.",
+     "p": [
+      "Apologise: scusami tanto, mi dispiace moltissimo, chiedo scusa (more formal), mi scusi (Lei).",
+      "Explain: purtroppo non ho potuto venire perché..., ho avuto un imprevisto, mi è passato di mente.",
+      "Repair: non era mia intenzione, non succederà più, come posso farmi perdonare?"
+     ],
+     "q": "How do you usually apologise when you are late for a meeting with a friend?",
+     "c": "Write a short message apologising for missing a friend's party, with a reason and an offer to make up."
+    },
+    "de": {
+     "t": "Ausreden und Entschuldigungen",
+     "g": "Du entschuldigst dich aufrichtig und erklärst mit scusami tanto und purtroppo non ho potuto.",
+     "p": [
+      "Entschuldigen: scusami tanto, mi dispiace moltissimo, chiedo scusa (formeller), mi scusi (Lei).",
+      "Erklären: purtroppo non ho potuto venire perché..., ho avuto un imprevisto, mi è passato di mente.",
+      "Wiedergutmachen: non era mia intenzione, non succederà più, come posso farmi perdonare?"
+     ],
+     "q": "Wie entschuldigst du dich normalerweise, wenn du zu spät zu einem Treffen mit einem Freund kommst?",
+     "c": "Schreib eine kurze Nachricht: Entschuldigung für eine verpasste Party, mit Grund und Angebot zur Wiedergutmachung."
+    },
+    "es": {
+     "t": "Excusas y disculpas",
+     "g": "Pedir perdón con sinceridad y explicarte con scusami tanto y purtroppo non ho potuto.",
+     "p": [
+      "Disculparse: scusami tanto, mi dispiace moltissimo, chiedo scusa (más formal), mi scusi (Lei).",
+      "Explicar: purtroppo non ho potuto venire perché..., ho avuto un imprevisto, mi è passato di mente.",
+      "Reparar: non era mia intenzione, non succederà più, come posso farmi perdonare?"
+     ],
+     "q": "¿Cómo sueles disculparte cuando llegas tarde a una cita con un amigo?",
+     "c": "Escribe un mensaje breve disculpándote por faltar a la fiesta de un amigo, con un motivo y una compensación."
+    },
+    "fr": {
+     "t": "S'excuser et se justifier",
+     "g": "S'excuser sincèrement et s'expliquer avec scusami tanto et purtroppo non ho potuto.",
+     "p": [
+      "S'excuser : scusami tanto, mi dispiace moltissimo, chiedo scusa (plus formel), mi scusi (Lei).",
+      "Expliquer : purtroppo non ho potuto venire perché..., ho avuto un imprevisto, mi è passato di mente.",
+      "Réparer : non era mia intenzione, non succederà più, come posso farmi perdonare?"
+     ],
+     "q": "Comment t'excuses-tu d'habitude quand tu arrives en retard à un rendez-vous avec un ami ?",
+     "c": "Écris un court message pour t'excuser d'avoir manqué la fête d'un ami, avec une raison et une proposition."
+    },
+    "it": {
+     "t": "Scusarsi e giustificarsi",
+     "g": "Chiedere scusa con sincerità e spiegare con scusami tanto e purtroppo non ho potuto.",
+     "p": [
+      "Scusarsi: scusami tanto, mi dispiace moltissimo, chiedo scusa (più formale), mi scusi (Lei).",
+      "Spiegare: purtroppo non ho potuto venire perché..., ho avuto un imprevisto, mi è passato di mente.",
+      "Rimediare: non era mia intenzione, non succederà più, come posso farmi perdonare?"
+     ],
+     "q": "Come ti scusi di solito quando arrivi in ritardo a un appuntamento con un amico?",
+     "c": "Scrivi un breve messaggio per scusarti di aver perso la festa di un amico, con un motivo e una proposta."
+    },
+    "pt": {
+     "t": "Desculpas e justificações",
+     "g": "Pedir desculpa com sinceridade e explicar com scusami tanto e purtroppo non ho potuto.",
+     "p": [
+      "Pedir desculpa: scusami tanto, mi dispiace moltissimo, chiedo scusa (mais formal), mi scusi (Lei).",
+      "Explicar: purtroppo non ho potuto venire perché..., ho avuto un imprevisto, mi è passato di mente.",
+      "Compensar: non era mia intenzione, non succederà più, come posso farmi perdonare?"
+     ],
+     "q": "Como costumas pedir desculpa quando chegas atrasado a um encontro com um amigo?",
+     "c": "Escreve uma mensagem curta a pedir desculpa por faltares à festa de um amigo, com um motivo e uma proposta."
+    },
+    "pt_BR": {
+     "t": "Desculpas e justificativas",
+     "g": "Pedir desculpas com sinceridade e explicar com scusami tanto e purtroppo non ho potuto.",
+     "p": [
+      "Pedir desculpas: scusami tanto, mi dispiace moltissimo, chiedo scusa (mais formal), mi scusi (Lei).",
+      "Explicar: purtroppo non ho potuto venire perché..., ho avuto un imprevisto, mi è passato di mente.",
+      "Compensar: non era mia intenzione, non succederà più, come posso farmi perdonare?"
+     ],
+     "q": "Como você costuma pedir desculpas quando chega atrasado a um encontro com um amigo?",
+     "c": "Escreva uma mensagem curta pedindo desculpas por faltar à festa de um amigo, com um motivo e uma proposta."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "scusami tanto",
+      "ex": "Scusami tanto per il ritardo!"
+     },
+     {
+      "w": "purtroppo",
+      "ex": "Purtroppo non ho potuto chiamarti ieri."
+     },
+     {
+      "w": "l'imprevisto",
+      "ex": "Ho avuto un imprevisto al lavoro."
+     },
+     {
+      "w": "mi è passato di mente",
+      "ex": "Il tuo compleanno mi è passato di mente, perdonami!"
+     },
+     {
+      "w": "non era mia intenzione",
+      "ex": "Non era mia intenzione offenderti."
+     },
+     {
+      "w": "farsi perdonare",
+      "ex": "Ti offro una cena per farmi perdonare."
+     }
+    ],
+    "gram": "Scusarsi: scusami (tu) / mi scusi (Lei); non ho potuto + infinito; scusarsi di/per + infinito passato o nome."
+   }
+  },
+  {
+   "d": 264,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Giving and asking for advice",
+     "g": "Give and ask for advice with ti consiglio di, se fossi in te and perché non provi a.",
+     "p": [
+      "Advise: ti consiglio di + infinitive, dovresti, faresti bene a, ti conviene prenotare prima.",
+      "Hypothetical advice: se fossi in te, parlerei con lei. Suggest: perché non provi a...?",
+      "Ask: che cosa mi consigli?, secondo te cosa dovrei fare?, tu cosa faresti al mio posto?"
+     ],
+     "q": "What is the best piece of advice anyone ever gave you?",
+     "c": "A friend wants to learn Italian faster: give three tips using three different structures."
+    },
+    "de": {
+     "t": "Ratschläge geben und erfragen",
+     "g": "Du gibst und erfragst Rat mit ti consiglio di, se fossi in te und perché non provi a.",
+     "p": [
+      "Raten: ti consiglio di + Infinitiv, dovresti, faresti bene a, ti conviene prenotare prima.",
+      "Hypothetisch: se fossi in te, parlerei con lei. Vorschlag: perché non provi a...?",
+      "Fragen: che cosa mi consigli?, secondo te cosa dovrei fare?, tu cosa faresti al mio posto?"
+     ],
+     "q": "Was ist der beste Rat, den dir jemand je gegeben hat?",
+     "c": "Ein Freund will schneller Italienisch lernen: gib drei Tipps mit drei verschiedenen Strukturen."
+    },
+    "es": {
+     "t": "Dar y pedir consejos",
+     "g": "Dar y pedir consejo con ti consiglio di, se fossi in te y perché non provi a.",
+     "p": [
+      "Aconsejar: ti consiglio di + infinitivo, dovresti, faresti bene a, ti conviene prenotare prima.",
+      "Consejo hipotético: se fossi in te, parlerei con lei. Sugerir: perché non provi a...?",
+      "Pedir: che cosa mi consigli?, secondo te cosa dovrei fare?, tu cosa faresti al mio posto?"
+     ],
+     "q": "¿Cuál es el mejor consejo que te han dado nunca?",
+     "c": "Un amigo quiere aprender italiano más rápido: dale tres consejos con tres estructuras distintas."
+    },
+    "fr": {
+     "t": "Donner et demander des conseils",
+     "g": "Conseiller et demander conseil avec ti consiglio di, se fossi in te et perché non provi a.",
+     "p": [
+      "Conseiller : ti consiglio di + infinitif, dovresti, faresti bene a, ti conviene prenotare prima.",
+      "Conseil hypothétique : se fossi in te, parlerei con lei. Suggérer : perché non provi a...?",
+      "Demander : che cosa mi consigli?, secondo te cosa dovrei fare?, tu cosa faresti al mio posto?"
+     ],
+     "q": "Quel est le meilleur conseil qu'on t'ait jamais donné ?",
+     "c": "Un ami veut apprendre l'italien plus vite : donne-lui trois conseils avec trois structures différentes."
+    },
+    "it": {
+     "t": "Dare e chiedere consigli",
+     "g": "Dare e chiedere consigli con ti consiglio di, se fossi in te e perché non provi a.",
+     "p": [
+      "Consigliare: ti consiglio di + infinito, dovresti, faresti bene a, ti conviene prenotare prima.",
+      "Consiglio ipotetico: se fossi in te, parlerei con lei. Proporre: perché non provi a...?",
+      "Chiedere: che cosa mi consigli?, secondo te cosa dovrei fare?, tu cosa faresti al mio posto?"
+     ],
+     "q": "Qual è il consiglio migliore che qualcuno ti abbia mai dato?",
+     "c": "Un amico vuole imparare l'italiano più in fretta: dagli tre consigli con tre strutture diverse."
+    },
+    "pt": {
+     "t": "Dar e pedir conselhos",
+     "g": "Dar e pedir conselhos com ti consiglio di, se fossi in te e perché non provi a.",
+     "p": [
+      "Aconselhar: ti consiglio di + infinitivo, dovresti, faresti bene a, ti conviene prenotare prima.",
+      "Conselho hipotético: se fossi in te, parlerei con lei. Sugerir: perché non provi a...?",
+      "Pedir: che cosa mi consigli?, secondo te cosa dovrei fare?, tu cosa faresti al mio posto?"
+     ],
+     "q": "Qual foi o melhor conselho que alguém já te deu?",
+     "c": "Um amigo quer aprender italiano mais depressa: dá-lhe três conselhos com três estruturas diferentes."
+    },
+    "pt_BR": {
+     "t": "Dar e pedir conselhos",
+     "g": "Dar e pedir conselhos com ti consiglio di, se fossi in te e perché non provi a.",
+     "p": [
+      "Aconselhar: ti consiglio di + infinitivo, dovresti, faresti bene a, ti conviene prenotare prima.",
+      "Conselho hipotético: se fossi in te, parlerei con lei. Sugerir: perché non provi a...?",
+      "Pedir: che cosa mi consigli?, secondo te cosa dovrei fare?, tu cosa faresti al mio posto?"
+     ],
+     "q": "Qual foi o melhor conselho que alguém já deu para você?",
+     "c": "Um amigo quer aprender italiano mais rápido: dê três conselhos com três estruturas diferentes."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ti consiglio di",
+      "ex": "Ti consiglio di visitare Bologna in autunno."
+     },
+     {
+      "w": "se fossi in te",
+      "ex": "Se fossi in te, prenoterei subito."
+     },
+     {
+      "w": "perché non provi a",
+      "ex": "Perché non provi a guardare film in italiano?"
+     },
+     {
+      "w": "dovresti",
+      "ex": "Dovresti dormire di più prima dell'esame."
+     },
+     {
+      "w": "ti conviene",
+      "ex": "Ti conviene prendere il treno, è più veloce."
+     },
+     {
+      "w": "al mio posto",
+      "ex": "Tu cosa faresti al mio posto?"
+     }
+    ],
+    "gram": "Consigli: condizionale (dovresti, faresti), se fossi in te + condizionale, consigliare di + infinito."
+   }
+  },
+  {
+   "d": 265,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Describing a process step by step",
+     "g": "Explain how something works with sequencing words and the si form.",
+     "p": [
+      "Sequence: prima, poi, dopo, a questo punto, infine. Prima di tutto si accende il forno.",
+      "Impersonal si: si prende, si mescola, si aspetta; with a plural noun: si tagliano le verdure.",
+      "Add tips: bisogna fare attenzione a..., è importante non..., il segreto è..."
+     ],
+     "q": "What is a process you know well and could explain to someone else?",
+     "c": "Explain in five steps how to make coffee with a moka, using prima, poi, infine and the si form."
+    },
+    "de": {
+     "t": "Einen Ablauf Schritt für Schritt beschreiben",
+     "g": "Du erklärst, wie etwas funktioniert, mit Reihenfolgewörtern und der si-Form.",
+     "p": [
+      "Reihenfolge: prima, poi, dopo, a questo punto, infine. Prima di tutto si accende il forno.",
+      "Unpersönliches si: si prende, si mescola, si aspetta; mit Plural: si tagliano le verdure.",
+      "Tipps: bisogna fare attenzione a..., è importante non..., il segreto è..."
+     ],
+     "q": "Welchen Ablauf kennst du gut und könntest ihn jemandem erklären?",
+     "c": "Erkläre in fünf Schritten, wie man Kaffee mit der Moka macht, mit prima, poi, infine und si."
+    },
+    "es": {
+     "t": "Describir un proceso paso a paso",
+     "g": "Explicar cómo funciona algo con conectores de orden y la forma con si.",
+     "p": [
+      "Orden: prima, poi, dopo, a questo punto, infine. Prima di tutto si accende il forno.",
+      "Si impersonal: si prende, si mescola, si aspetta; con plural: si tagliano le verdure.",
+      "Añade consejos: bisogna fare attenzione a..., è importante non..., il segreto è..."
+     ],
+     "q": "¿Qué proceso conoces bien y podrías explicar a otra persona?",
+     "c": "Explica en cinco pasos cómo hacer café con la moka, con prima, poi, infine y la forma con si."
+    },
+    "fr": {
+     "t": "Décrire un processus étape par étape",
+     "g": "Expliquer comment quelque chose fonctionne avec des mots d'ordre et la forme si.",
+     "p": [
+      "Ordre : prima, poi, dopo, a questo punto, infine. Prima di tutto si accende il forno.",
+      "Si impersonnel : si prende, si mescola, si aspetta ; au pluriel : si tagliano le verdure.",
+      "Ajoute des astuces : bisogna fare attenzione a..., è importante non..., il segreto è..."
+     ],
+     "q": "Quel processus connais-tu bien et pourrais-tu expliquer à quelqu'un ?",
+     "c": "Explique en cinq étapes comment faire un café à la moka, avec prima, poi, infine et la forme si."
+    },
+    "it": {
+     "t": "Descrivere un procedimento passo per passo",
+     "g": "Spiegare come funziona qualcosa con i connettivi di sequenza e il si.",
+     "p": [
+      "Sequenza: prima, poi, dopo, a questo punto, infine. Prima di tutto si accende il forno.",
+      "Si impersonale: si prende, si mescola, si aspetta; con un nome plurale: si tagliano le verdure.",
+      "Aggiungi consigli: bisogna fare attenzione a..., è importante non..., il segreto è..."
+     ],
+     "q": "Quale procedimento conosci bene e potresti spiegare a qualcuno?",
+     "c": "Spiega in cinque passaggi come si fa il caffè con la moka, usando prima, poi, infine e il si."
+    },
+    "pt": {
+     "t": "Descrever um processo passo a passo",
+     "g": "Explicar como algo funciona com palavras de sequência e a forma com si.",
+     "p": [
+      "Sequência: prima, poi, dopo, a questo punto, infine. Prima di tutto si accende il forno.",
+      "Si impessoal: si prende, si mescola, si aspetta; com plural: si tagliano le verdure.",
+      "Junta dicas: bisogna fare attenzione a..., è importante non..., il segreto è..."
+     ],
+     "q": "Que processo conheces bem e poderias explicar a outra pessoa?",
+     "c": "Explica em cinco passos como fazer café na moka, com prima, poi, infine e a forma com si."
+    },
+    "pt_BR": {
+     "t": "Descrever um processo passo a passo",
+     "g": "Explicar como algo funciona com palavras de sequência e a forma com si.",
+     "p": [
+      "Sequência: prima, poi, dopo, a questo punto, infine. Prima di tutto si accende il forno.",
+      "Si impessoal: si prende, si mescola, si aspetta; com plural: si tagliano le verdure.",
+      "Inclua dicas: bisogna fare attenzione a..., è importante non..., il segreto è..."
+     ],
+     "q": "Que processo você conhece bem e poderia explicar para outra pessoa?",
+     "c": "Explique em cinco passos como fazer café na moka, com prima, poi, infine e a forma com si."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "prima di tutto",
+      "ex": "Prima di tutto si riempie la caldaia d'acqua."
+     },
+     {
+      "w": "a questo punto",
+      "ex": "A questo punto si mette la moka sul fuoco."
+     },
+     {
+      "w": "infine",
+      "ex": "Infine si versa il caffè nelle tazzine."
+     },
+     {
+      "w": "si mescola",
+      "ex": "Si mescola bene finché lo zucchero si scioglie."
+     },
+     {
+      "w": "bisogna",
+      "ex": "Bisogna aspettare che il caffè salga."
+     },
+     {
+      "w": "il procedimento",
+      "ex": "Il procedimento è semplice ma richiede attenzione."
+     }
+    ],
+    "gram": "Si passivante: si + verbo alla 3ª persona, singolare o plurale secondo il nome (si taglia il pane, si tagliano le mele)."
+   }
+  },
+  {
+   "d": 266,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Describing objects in detail",
+     "g": "Describe shape, material and use: è di legno, serve per, è rotondo.",
+     "p": [
+      "Material with di: è di legno, di metallo, di vetro, di plastica, di stoffa, di carta.",
+      "Shape and size: rotondo, quadrato, rettangolare, lungo, stretto, pesante, leggero.",
+      "Use: serve per tagliare, si usa per aprire le bottiglie, è una cosa che si mette in cucina."
+     ],
+     "q": "Which object in your home has a special story or meaning for you?",
+     "c": "Play a guessing game: describe an object in four sentences without naming it."
+    },
+    "de": {
+     "t": "Gegenstände genau beschreiben",
+     "g": "Du beschreibst Form, Material und Zweck: è di legno, serve per, è rotondo.",
+     "p": [
+      "Material mit di: è di legno, di metallo, di vetro, di plastica, di stoffa, di carta.",
+      "Form und Größe: rotondo, quadrato, rettangolare, lungo, stretto, pesante, leggero.",
+      "Zweck: serve per tagliare, si usa per aprire le bottiglie, è una cosa che si mette in cucina."
+     ],
+     "q": "Welcher Gegenstand bei dir zu Hause hat eine besondere Geschichte oder Bedeutung?",
+     "c": "Ratespiel: Beschreibe einen Gegenstand in vier Sätzen, ohne ihn zu nennen."
+    },
+    "es": {
+     "t": "Describir objetos con detalle",
+     "g": "Describir forma, material y uso: è di legno, serve per, è rotondo.",
+     "p": [
+      "Material con di: è di legno, di metallo, di vetro, di plastica, di stoffa, di carta.",
+      "Forma y tamaño: rotondo, quadrato, rettangolare, lungo, stretto, pesante, leggero.",
+      "Uso: serve per tagliare, si usa per aprire le bottiglie, è una cosa che si mette in cucina."
+     ],
+     "q": "¿Qué objeto de tu casa tiene una historia o un significado especial para ti?",
+     "c": "Juego de adivinar: describe un objeto en cuatro frases sin decir su nombre."
+    },
+    "fr": {
+     "t": "Décrire des objets en détail",
+     "g": "Décrire forme, matière et usage : è di legno, serve per, è rotondo.",
+     "p": [
+      "Matière avec di : è di legno, di metallo, di vetro, di plastica, di stoffa, di carta.",
+      "Forme et taille : rotondo, quadrato, rettangolare, lungo, stretto, pesante, leggero.",
+      "Usage : serve per tagliare, si usa per aprire le bottiglie, è una cosa che si mette in cucina."
+     ],
+     "q": "Quel objet chez toi a une histoire ou une signification particulière ?",
+     "c": "Jeu de devinette : décris un objet en quatre phrases sans le nommer."
+    },
+    "it": {
+     "t": "Descrivere oggetti nei dettagli",
+     "g": "Descrivere forma, materiale e uso: è di legno, serve per, è rotondo.",
+     "p": [
+      "Materiale con di: è di legno, di metallo, di vetro, di plastica, di stoffa, di carta.",
+      "Forma e dimensioni: rotondo, quadrato, rettangolare, lungo, stretto, pesante, leggero.",
+      "Uso: serve per tagliare, si usa per aprire le bottiglie, è una cosa che si mette in cucina."
+     ],
+     "q": "Quale oggetto di casa tua ha una storia o un significato speciale?",
+     "c": "Gioco degli indovinelli: descrivi un oggetto in quattro frasi senza dire il suo nome."
+    },
+    "pt": {
+     "t": "Descrever objetos em pormenor",
+     "g": "Descrever forma, material e uso: è di legno, serve per, è rotondo.",
+     "p": [
+      "Material com di: è di legno, di metallo, di vetro, di plastica, di stoffa, di carta.",
+      "Forma e tamanho: rotondo, quadrato, rettangolare, lungo, stretto, pesante, leggero.",
+      "Uso: serve per tagliare, si usa per aprire le bottiglie, è una cosa che si mette in cucina."
+     ],
+     "q": "Que objeto da tua casa tem uma história ou um significado especial?",
+     "c": "Jogo de adivinhas: descreve um objeto em quatro frases sem dizer o nome."
+    },
+    "pt_BR": {
+     "t": "Descrever objetos em detalhe",
+     "g": "Descrever forma, material e uso: è di legno, serve per, è rotondo.",
+     "p": [
+      "Material com di: è di legno, di metallo, di vetro, di plastica, di stoffa, di carta.",
+      "Forma e tamanho: rotondo, quadrato, rettangolare, lungo, stretto, pesante, leggero.",
+      "Uso: serve per tagliare, si usa per aprire le bottiglie, è una cosa che si mette in cucina."
+     ],
+     "q": "Que objeto da sua casa tem uma história ou um significado especial?",
+     "c": "Jogo de adivinhação: descreva um objeto em quatro frases sem dizer o nome."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "è di legno",
+      "ex": "Il tavolo della cucina è di legno."
+     },
+     {
+      "w": "serve per",
+      "ex": "Questo attrezzo serve per aprire le scatole."
+     },
+     {
+      "w": "rotondo",
+      "ex": "Ho comprato uno specchio rotondo."
+     },
+     {
+      "w": "pesante",
+      "ex": "La valigia è pesantissima!"
+     },
+     {
+      "w": "di vetro",
+      "ex": "Preferisco le bottiglie di vetro."
+     },
+     {
+      "w": "si usa per",
+      "ex": "La grattugia si usa per il formaggio."
+     }
+    ],
+    "gram": "Descrivere: essere di + materiale (è di vetro), servire per/a + infinito, aggettivi concordati col nome."
+   }
+  },
+  {
+   "d": 267,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Talking about your city's history",
+     "g": "Narrate your town's past with the passive and past tenses.",
+     "p": [
+      "Origins: la città fu fondata dai Romani, è nata come villaggio di pescatori, risale al Medioevo.",
+      "Passive: il ponte è stato costruito nel 1800, la chiesa venne distrutta e poi ricostruita.",
+      "Time markers: nel Medioevo, nel Settecento, secoli fa, all'inizio del Novecento, oggi invece."
+     ],
+     "q": "What is one interesting fact about the history of your town or city?",
+     "c": "Write four sentences about your city's history using two passive forms and one date."
+    },
+    "de": {
+     "t": "Die Geschichte deiner Stadt",
+     "g": "Du erzählst die Vergangenheit deiner Stadt mit Passiv und Vergangenheitsformen.",
+     "p": [
+      "Ursprünge: la città fu fondata dai Romani, è nata come villaggio di pescatori, risale al Medioevo.",
+      "Passiv: il ponte è stato costruito nel 1800, la chiesa venne distrutta e poi ricostruita.",
+      "Zeitangaben: nel Medioevo, nel Settecento, secoli fa, all'inizio del Novecento, oggi invece."
+     ],
+     "q": "Was ist eine interessante Tatsache aus der Geschichte deiner Stadt?",
+     "c": "Schreib vier Sätze über die Geschichte deiner Stadt mit zwei Passivformen und einer Jahreszahl."
+    },
+    "es": {
+     "t": "La historia de tu ciudad",
+     "g": "Narrar el pasado de tu ciudad con la pasiva y los tiempos del pasado.",
+     "p": [
+      "Orígenes: la città fu fondata dai Romani, è nata come villaggio di pescatori, risale al Medioevo.",
+      "Pasiva: il ponte è stato costruito nel 1800, la chiesa venne distrutta e poi ricostruita.",
+      "Marcadores de tiempo: nel Medioevo, nel Settecento, secoli fa, all'inizio del Novecento, oggi invece."
+     ],
+     "q": "¿Qué dato curioso conoces sobre la historia de tu ciudad?",
+     "c": "Escribe cuatro frases sobre la historia de tu ciudad con dos pasivas y una fecha."
+    },
+    "fr": {
+     "t": "L'histoire de ta ville",
+     "g": "Raconter le passé de ta ville avec le passif et les temps du passé.",
+     "p": [
+      "Origines : la città fu fondata dai Romani, è nata come villaggio di pescatori, risale al Medioevo.",
+      "Passif : il ponte è stato costruito nel 1800, la chiesa venne distrutta e poi ricostruita.",
+      "Repères : nel Medioevo, nel Settecento, secoli fa, all'inizio del Novecento, oggi invece."
+     ],
+     "q": "Quel fait intéressant connais-tu sur l'histoire de ta ville ?",
+     "c": "Écris quatre phrases sur l'histoire de ta ville avec deux formes passives et une date."
+    },
+    "it": {
+     "t": "La storia della tua città",
+     "g": "Raccontare il passato della tua città con il passivo e i tempi passati.",
+     "p": [
+      "Origini: la città fu fondata dai Romani, è nata come villaggio di pescatori, risale al Medioevo.",
+      "Passivo: il ponte è stato costruito nel 1800, la chiesa venne distrutta e poi ricostruita.",
+      "Indicatori di tempo: nel Medioevo, nel Settecento, secoli fa, all'inizio del Novecento, oggi invece."
+     ],
+     "q": "Qual è una curiosità sulla storia della tua città?",
+     "c": "Scrivi quattro frasi sulla storia della tua città con due forme passive e una data."
+    },
+    "pt": {
+     "t": "A história da tua cidade",
+     "g": "Narrar o passado da tua cidade com a passiva e os tempos do passado.",
+     "p": [
+      "Origens: la città fu fondata dai Romani, è nata come villaggio di pescatori, risale al Medioevo.",
+      "Passiva: il ponte è stato costruito nel 1800, la chiesa venne distrutta e poi ricostruita.",
+      "Marcadores de tempo: nel Medioevo, nel Settecento, secoli fa, all'inizio del Novecento, oggi invece."
+     ],
+     "q": "Que curiosidade conheces sobre a história da tua cidade?",
+     "c": "Escreve quatro frases sobre a história da tua cidade com duas passivas e uma data."
+    },
+    "pt_BR": {
+     "t": "A história da sua cidade",
+     "g": "Narrar o passado da sua cidade com a voz passiva e os tempos do passado.",
+     "p": [
+      "Origens: la città fu fondata dai Romani, è nata come villaggio di pescatori, risale al Medioevo.",
+      "Passiva: il ponte è stato costruito nel 1800, la chiesa venne distrutta e poi ricostruita.",
+      "Marcadores de tempo: nel Medioevo, nel Settecento, secoli fa, all'inizio del Novecento, oggi invece."
+     ],
+     "q": "Que curiosidade você conhece sobre a história da sua cidade?",
+     "c": "Escreva quatro frases sobre a história da sua cidade com duas passivas e uma data."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "fondare",
+      "ex": "Roma, secondo la leggenda, fu fondata da Romolo."
+     },
+     {
+      "w": "risalire a",
+      "ex": "Il castello risale al Trecento."
+     },
+     {
+      "w": "costruire",
+      "ex": "Il teatro è stato costruito nell'Ottocento."
+     },
+     {
+      "w": "il Medioevo",
+      "ex": "Nel Medioevo la città era circondata da mura."
+     },
+     {
+      "w": "ricostruire",
+      "ex": "Il ponte venne ricostruito dopo l'alluvione."
+     },
+     {
+      "w": "il centro storico",
+      "ex": "Il centro storico è patrimonio dell'UNESCO."
+     }
+    ],
+    "gram": "Passivo: essere o venire + participio (è stato costruito, venne distrutta); il Settecento = il XVIII secolo."
+   }
+  },
+  {
+   "d": 268,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Cooking together in Italian",
+     "g": "Discuss a recipe, quantities and tips while cooking with a friend.",
+     "p": [
+      "Quantities: un etto (100 g), mezzo chilo, un cucchiaio, un pizzico di sale, q.b. (to taste).",
+      "Working together: mi passi il sale?, assaggia un po', giralo tu, quanto lo lascio cuocere?",
+      "Tips: non far scuocere la pasta, sala l'acqua quando bolle, aggiungi l'olio a crudo."
+     ],
+     "q": "Which Italian dish would you like to cook with a friend, and who would do what?",
+     "c": "Write a six-line dialogue between two friends making pasta al pomodoro together."
+    },
+    "de": {
+     "t": "Gemeinsam auf Italienisch kochen",
+     "g": "Du sprichst beim Kochen mit einem Freund über Rezept, Mengen und Tipps.",
+     "p": [
+      "Mengen: un etto (100 g), mezzo chilo, un cucchiaio, un pizzico di sale, q.b. (nach Geschmack).",
+      "Zusammenarbeiten: mi passi il sale?, assaggia un po', giralo tu, quanto lo lascio cuocere?",
+      "Tipps: non far scuocere la pasta, sala l'acqua quando bolle, aggiungi l'olio a crudo."
+     ],
+     "q": "Welches italienische Gericht würdest du gern mit einem Freund kochen, und wer macht was?",
+     "c": "Schreib einen sechszeiligen Dialog zwischen zwei Freunden, die zusammen Pasta al pomodoro kochen."
+    },
+    "es": {
+     "t": "Cocinar juntos en italiano",
+     "g": "Hablar de una receta, cantidades y trucos mientras cocinas con un amigo.",
+     "p": [
+      "Cantidades: un etto (100 g), mezzo chilo, un cucchiaio, un pizzico di sale, q.b. (al gusto).",
+      "Trabajar juntos: mi passi il sale?, assaggia un po', giralo tu, quanto lo lascio cuocere?",
+      "Trucos: non far scuocere la pasta, sala l'acqua quando bolle, aggiungi l'olio a crudo."
+     ],
+     "q": "¿Qué plato italiano te gustaría cocinar con un amigo y quién haría qué?",
+     "c": "Escribe un diálogo de seis líneas entre dos amigos que preparan pasta al pomodoro juntos."
+    },
+    "fr": {
+     "t": "Cuisiner ensemble en italien",
+     "g": "Parler d'une recette, des quantités et des astuces en cuisinant avec un ami.",
+     "p": [
+      "Quantités : un etto (100 g), mezzo chilo, un cucchiaio, un pizzico di sale, q.b. (selon le goût).",
+      "Travailler ensemble : mi passi il sale?, assaggia un po', giralo tu, quanto lo lascio cuocere?",
+      "Astuces : non far scuocere la pasta, sala l'acqua quando bolle, aggiungi l'olio a crudo."
+     ],
+     "q": "Quel plat italien aimerais-tu cuisiner avec un ami, et qui ferait quoi ?",
+     "c": "Écris un dialogue de six lignes entre deux amis qui préparent des pâtes al pomodoro ensemble."
+    },
+    "it": {
+     "t": "Cucinare insieme in italiano",
+     "g": "Parlare di una ricetta, di dosi e trucchi mentre cucini con un amico.",
+     "p": [
+      "Dosi: un etto, mezzo chilo, un cucchiaio, un pizzico di sale, q.b. (quanto basta).",
+      "Lavorare insieme: mi passi il sale?, assaggia un po', giralo tu, quanto lo lascio cuocere?",
+      "Trucchi: non far scuocere la pasta, sala l'acqua quando bolle, aggiungi l'olio a crudo."
+     ],
+     "q": "Quale piatto italiano vorresti cucinare con un amico, e chi farebbe cosa?",
+     "c": "Scrivi un dialogo di sei battute tra due amici che preparano insieme la pasta al pomodoro."
+    },
+    "pt": {
+     "t": "Cozinhar juntos em italiano",
+     "g": "Falar de uma receita, quantidades e truques enquanto cozinhas com um amigo.",
+     "p": [
+      "Quantidades: un etto (100 g), mezzo chilo, un cucchiaio, un pizzico di sale, q.b. (q.b. também em português).",
+      "Trabalhar juntos: mi passi il sale?, assaggia un po', giralo tu, quanto lo lascio cuocere?",
+      "Truques: non far scuocere la pasta, sala l'acqua quando bolle, aggiungi l'olio a crudo."
+     ],
+     "q": "Que prato italiano gostavas de cozinhar com um amigo, e quem faria o quê?",
+     "c": "Escreve um diálogo de seis falas entre dois amigos a fazer pasta al pomodoro juntos."
+    },
+    "pt_BR": {
+     "t": "Cozinhar juntos em italiano",
+     "g": "Falar de uma receita, quantidades e dicas enquanto cozinha com um amigo.",
+     "p": [
+      "Quantidades: un etto (100 g), mezzo chilo, un cucchiaio, un pizzico di sale, q.b. (a gosto).",
+      "Trabalhar juntos: mi passi il sale?, assaggia un po', giralo tu, quanto lo lascio cuocere?",
+      "Dicas: non far scuocere la pasta, sala l'acqua quando bolle, aggiungi l'olio a crudo."
+     ],
+     "q": "Que prato italiano você gostaria de cozinhar com um amigo, e quem faria o quê?",
+     "c": "Escreva um diálogo de seis falas entre dois amigos preparando pasta al pomodoro juntos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un etto",
+      "ex": "Mi servono due etti di prosciutto."
+     },
+     {
+      "w": "un pizzico di sale",
+      "ex": "Aggiungi un pizzico di sale alla salsa."
+     },
+     {
+      "w": "quanto basta",
+      "ex": "Olio extravergine quanto basta."
+     },
+     {
+      "w": "assaggiare",
+      "ex": "Assaggia il sugo e dimmi se va bene."
+     },
+     {
+      "w": "scuocere",
+      "ex": "Scola la pasta, non farla scuocere!"
+     },
+     {
+      "w": "mi passi",
+      "ex": "Mi passi il basilico, per favore?"
+     }
+    ],
+    "gram": "In cucina: imperativo informale con pronomi (assaggialo, giralo, passamelo) e far + infinito (non far scuocere)."
+   }
+  },
+  {
+   "d": 269,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Italian families and generations",
+     "g": "Discuss family roles, grandparents and traditions across generations.",
+     "p": [
+      "Family words: i nonni, i nipoti (grandchildren or nephews), i suoceri, la famiglia allargata.",
+      "Roles and change: i nonni aiutano con i nipoti, molti giovani vivono con i genitori più a lungo.",
+      "Traditions: il pranzo della domenica, le ricette della nonna, festeggiare tutti insieme."
+     ],
+     "q": "What tradition in your family is passed down from generation to generation?",
+     "c": "Describe a family tradition in four Italian sentences, mentioning who started it."
+    },
+    "de": {
+     "t": "Italienische Familien und Generationen",
+     "g": "Du sprichst über Rollen in der Familie, Großeltern und Traditionen.",
+     "p": [
+      "Familienwörter: i nonni, i nipoti (Enkel oder Neffen), i suoceri, la famiglia allargata.",
+      "Rollen und Wandel: i nonni aiutano con i nipoti, molti giovani vivono con i genitori più a lungo.",
+      "Traditionen: il pranzo della domenica, le ricette della nonna, festeggiare tutti insieme."
+     ],
+     "q": "Welche Tradition wird in deiner Familie von Generation zu Generation weitergegeben?",
+     "c": "Beschreibe eine Familientradition in vier italienischen Sätzen und sag, wer sie begonnen hat."
+    },
+    "es": {
+     "t": "Familias italianas y generaciones",
+     "g": "Hablar de los papeles en la familia, los abuelos y las tradiciones.",
+     "p": [
+      "Palabras de familia: i nonni, i nipoti (nietos o sobrinos), i suoceri, la famiglia allargata.",
+      "Papeles y cambios: i nonni aiutano con i nipoti, molti giovani vivono con i genitori più a lungo.",
+      "Tradiciones: il pranzo della domenica, le ricette della nonna, festeggiare tutti insieme."
+     ],
+     "q": "¿Qué tradición de tu familia pasa de generación en generación?",
+     "c": "Describe una tradición familiar en cuatro frases en italiano, diciendo quién la empezó."
+    },
+    "fr": {
+     "t": "Familles italiennes et générations",
+     "g": "Parler des rôles familiaux, des grands-parents et des traditions.",
+     "p": [
+      "Vocabulaire : i nonni, i nipoti (petits-enfants ou neveux), i suoceri, la famiglia allargata.",
+      "Rôles et changements : i nonni aiutano con i nipoti, molti giovani vivono con i genitori più a lungo.",
+      "Traditions : il pranzo della domenica, le ricette della nonna, festeggiare tutti insieme."
+     ],
+     "q": "Quelle tradition se transmet de génération en génération dans ta famille ?",
+     "c": "Décris une tradition familiale en quatre phrases italiennes, en disant qui l'a commencée."
+    },
+    "it": {
+     "t": "Famiglie italiane e generazioni",
+     "g": "Parlare di ruoli in famiglia, nonni e tradizioni tra generazioni.",
+     "p": [
+      "Parole della famiglia: i nonni, i nipoti, i suoceri, la famiglia allargata.",
+      "Ruoli e cambiamenti: i nonni aiutano con i nipoti, molti giovani vivono con i genitori più a lungo.",
+      "Tradizioni: il pranzo della domenica, le ricette della nonna, festeggiare tutti insieme."
+     ],
+     "q": "Quale tradizione della tua famiglia passa di generazione in generazione?",
+     "c": "Descrivi una tradizione di famiglia in quattro frasi, dicendo chi l'ha cominciata."
+    },
+    "pt": {
+     "t": "Famílias italianas e gerações",
+     "g": "Falar dos papéis na família, dos avós e das tradições entre gerações.",
+     "p": [
+      "Palavras da família: i nonni, i nipoti (netos ou sobrinhos), i suoceri, la famiglia allargata.",
+      "Papéis e mudanças: i nonni aiutano con i nipoti, molti giovani vivono con i genitori più a lungo.",
+      "Tradições: il pranzo della domenica, le ricette della nonna, festeggiare tutti insieme."
+     ],
+     "q": "Que tradição da tua família passa de geração em geração?",
+     "c": "Descreve uma tradição de família em quatro frases em italiano, dizendo quem a começou."
+    },
+    "pt_BR": {
+     "t": "Famílias italianas e gerações",
+     "g": "Falar dos papéis na família, dos avós e das tradições entre gerações.",
+     "p": [
+      "Palavras da família: i nonni, i nipoti (netos ou sobrinhos), i suoceri, la famiglia allargata.",
+      "Papéis e mudanças: i nonni aiutano con i nipoti, molti giovani vivono con i genitori più a lungo.",
+      "Tradições: il pranzo della domenica, le ricette della nonna, festeggiare tutti insieme."
+     ],
+     "q": "Que tradição da sua família passa de geração em geração?",
+     "c": "Descreva uma tradição de família em quatro frases em italiano, dizendo quem a começou."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "i nonni",
+      "ex": "I miei nonni abitano in campagna."
+     },
+     {
+      "w": "i nipoti",
+      "ex": "La nonna adora stare con i nipoti."
+     },
+     {
+      "w": "i suoceri",
+      "ex": "Domenica pranziamo dai suoceri."
+     },
+     {
+      "w": "la generazione",
+      "ex": "Ogni generazione ha le sue abitudini."
+     },
+     {
+      "w": "tramandare",
+      "ex": "La ricetta è stata tramandata dalla bisnonna."
+     },
+     {
+      "w": "il pranzo della domenica",
+      "ex": "Il pranzo della domenica dura ore!"
+     }
+    ],
+    "gram": "Possessivi con la famiglia: mia madre, mio nonno (senza articolo al singolare), ma i miei nonni, la mia mamma."
+   }
+  },
+  {
+   "d": 270,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Friendship and social life",
+     "g": "Talk about friends, making plans and what friendship means to you.",
+     "p": [
+      "Friend words: l'amico del cuore, un conoscente, la compagnia, uscire con gli amici, andare d'accordo.",
+      "Making plans: ci vediamo sabato?, che ne dici di un aperitivo?, facciamo alle otto, ci sto!",
+      "Meaning: un vero amico c'è sempre, mi fido di lei, ci conosciamo da vent'anni."
+     ],
+     "q": "What does a real friend mean to you? Describe one quality.",
+     "c": "Write a message inviting a friend to an aperitivo, with a day, a time and a place."
+    },
+    "de": {
+     "t": "Freundschaft und soziales Leben",
+     "g": "Du sprichst über Freunde, Verabredungen und was Freundschaft für dich bedeutet.",
+     "p": [
+      "Wörter: l'amico del cuore, un conoscente, la compagnia, uscire con gli amici, andare d'accordo.",
+      "Verabreden: ci vediamo sabato?, che ne dici di un aperitivo?, facciamo alle otto, ci sto!",
+      "Bedeutung: un vero amico c'è sempre, mi fido di lei, ci conosciamo da vent'anni."
+     ],
+     "q": "Was bedeutet ein echter Freund für dich? Beschreibe eine Eigenschaft.",
+     "c": "Schreib eine Nachricht mit einer Einladung zum Aperitivo: Tag, Uhrzeit und Ort."
+    },
+    "es": {
+     "t": "La amistad y la vida social",
+     "g": "Hablar de amigos, hacer planes y lo que significa para ti la amistad.",
+     "p": [
+      "Palabras: l'amico del cuore, un conoscente, la compagnia, uscire con gli amici, andare d'accordo.",
+      "Hacer planes: ci vediamo sabato?, che ne dici di un aperitivo?, facciamo alle otto, ci sto!",
+      "Significado: un vero amico c'è sempre, mi fido di lei, ci conosciamo da vent'anni."
+     ],
+     "q": "¿Qué significa para ti un amigo de verdad? Describe una cualidad.",
+     "c": "Escribe un mensaje invitando a un amigo a un aperitivo, con día, hora y lugar."
+    },
+    "fr": {
+     "t": "L'amitié et la vie sociale",
+     "g": "Parler de tes amis, faire des projets et dire ce que l'amitié représente pour toi.",
+     "p": [
+      "Vocabulaire : l'amico del cuore, un conoscente, la compagnia, uscire con gli amici, andare d'accordo.",
+      "Faire des plans : ci vediamo sabato?, che ne dici di un aperitivo?, facciamo alle otto, ci sto!",
+      "Le sens : un vero amico c'è sempre, mi fido di lei, ci conosciamo da vent'anni."
+     ],
+     "q": "Que représente un vrai ami pour toi ? Décris une qualité.",
+     "c": "Écris un message pour inviter un ami à un aperitivo, avec un jour, une heure et un lieu."
+    },
+    "it": {
+     "t": "Amicizia e vita sociale",
+     "g": "Parlare di amici, organizzarsi e dire cosa significa per te l'amicizia.",
+     "p": [
+      "Parole: l'amico del cuore, un conoscente, la compagnia, uscire con gli amici, andare d'accordo.",
+      "Organizzarsi: ci vediamo sabato?, che ne dici di un aperitivo?, facciamo alle otto, ci sto!",
+      "Il significato: un vero amico c'è sempre, mi fido di lei, ci conosciamo da vent'anni."
+     ],
+     "q": "Che cosa significa per te un vero amico? Descrivi una qualità.",
+     "c": "Scrivi un messaggio per invitare un amico a un aperitivo, con giorno, ora e luogo."
+    },
+    "pt": {
+     "t": "Amizade e vida social",
+     "g": "Falar de amigos, combinar planos e dizer o que a amizade significa para ti.",
+     "p": [
+      "Palavras: l'amico del cuore, un conoscente, la compagnia, uscire con gli amici, andare d'accordo.",
+      "Combinar: ci vediamo sabato?, che ne dici di un aperitivo?, facciamo alle otto, ci sto!",
+      "Significado: un vero amico c'è sempre, mi fido di lei, ci conosciamo da vent'anni."
+     ],
+     "q": "O que significa para ti um verdadeiro amigo? Descreve uma qualidade.",
+     "c": "Escreve uma mensagem a convidar um amigo para um aperitivo, com dia, hora e local."
+    },
+    "pt_BR": {
+     "t": "Amizade e vida social",
+     "g": "Falar de amigos, combinar programas e dizer o que a amizade significa para você.",
+     "p": [
+      "Palavras: l'amico del cuore, un conoscente, la compagnia, uscire con gli amici, andare d'accordo.",
+      "Combinar: ci vediamo sabato?, che ne dici di un aperitivo?, facciamo alle otto, ci sto!",
+      "Significado: un vero amico c'è sempre, mi fido di lei, ci conosciamo da vent'anni."
+     ],
+     "q": "O que um amigo de verdade significa para você? Descreva uma qualidade.",
+     "c": "Escreva uma mensagem convidando um amigo para um aperitivo, com dia, hora e lugar."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "l'amico del cuore",
+      "ex": "Luca è il mio amico del cuore dalle elementari."
+     },
+     {
+      "w": "andare d'accordo",
+      "ex": "Vado molto d'accordo con mia cugina."
+     },
+     {
+      "w": "fidarsi di",
+      "ex": "Mi fido completamente di lei."
+     },
+     {
+      "w": "ci sto",
+      "ex": "Un picnic domenica? Ci sto!"
+     },
+     {
+      "w": "la compagnia",
+      "ex": "Stasera esco con la solita compagnia."
+     },
+     {
+      "w": "conoscersi",
+      "ex": "Ci conosciamo da quando avevamo sei anni."
+     }
+    ],
+    "gram": "Presente + da per azioni che continuano: ci conosciamo da vent'anni; verbi reciproci: vedersi, sentirsi, conoscersi."
+   }
+  }
+ ]
+}

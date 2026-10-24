@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 201,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Deshalb, deswegen, darum",
+     "g": "Express consequences with deshalb, deswegen and darum, verb in position 2.",
+     "p": [
+      "All three mean that's why / so; they are adverbs, so the verb comes right after: Ich bin müde, deshalb gehe ich ins Bett.",
+      "They can also stand in position 3: Ich gehe deshalb früh ins Bett. Compare weil (cause, verb at the end).",
+      "Also useful: also (so) and daher (therefore, a bit more formal): Es ist spät, also fahren wir los."
+     ],
+     "q": "Why are you learning German? Give me a reason and a consequence: Ich..., deshalb...",
+     "c": "Rewrite three weil-sentences as deshalb-sentences: Ich lerne, weil ich reisen will > Ich will reisen, deshalb lerne ich."
+    },
+    "de": {
+     "t": "Deshalb, deswegen, darum",
+     "g": "Du drückst Folgen mit deshalb, deswegen und darum aus, das Verb steht auf Position 2.",
+     "p": [
+      "Alle drei bedeuten aus diesem Grund; als Adverb folgt direkt das Verb: Ich bin müde, deshalb gehe ich ins Bett.",
+      "Sie können auch auf Position 3 stehen: Ich gehe deshalb früh ins Bett. Vergleich: weil (Grund, Verb am Ende).",
+      "Auch nützlich: also und daher (etwas formeller): Es ist spät, also fahren wir los."
+     ],
+     "q": "Warum lernst du Deutsch? Nenn einen Grund und eine Folge: Ich..., deshalb...",
+     "c": "Formuliere drei weil-Sätze als deshalb-Sätze: Ich lerne, weil ich reisen will > Ich will reisen, deshalb lerne ich."
+    },
+    "es": {
+     "t": "Deshalb, deswegen, darum",
+     "g": "Expresa consecuencias con deshalb, deswegen y darum, con el verbo en posición 2.",
+     "p": [
+      "Los tres significan por eso; son adverbios, así que el verbo va justo detrás: Ich bin müde, deshalb gehe ich ins Bett.",
+      "También pueden ir en posición 3: Ich gehe deshalb früh ins Bett. Compara con weil (causa, verbo al final).",
+      "También útiles: also (así que) y daher (por tanto, algo más formal): Es ist spät, also fahren wir los."
+     ],
+     "q": "¿Por qué aprendes alemán? Dame una razón y una consecuencia: Ich..., deshalb...",
+     "c": "Transforma tres frases con weil en frases con deshalb: Ich will reisen, deshalb lerne ich."
+    },
+    "fr": {
+     "t": "Deshalb, deswegen, darum",
+     "g": "Exprimer la conséquence avec deshalb, deswegen et darum, verbe en position 2.",
+     "p": [
+      "Les trois signifient c'est pourquoi ; ce sont des adverbes, le verbe suit : Ich bin müde, deshalb gehe ich ins Bett.",
+      "Ils peuvent aussi être en position 3 : Ich gehe deshalb früh ins Bett. Compare avec weil (cause, verbe à la fin).",
+      "Utiles aussi : also (donc) et daher (par conséquent, plus soutenu) : Es ist spät, also fahren wir los."
+     ],
+     "q": "Pourquoi apprends-tu l'allemand ? Donne une raison et une conséquence : Ich..., deshalb...",
+     "c": "Transforme trois phrases avec weil en phrases avec deshalb : Ich will reisen, deshalb lerne ich."
+    },
+    "it": {
+     "t": "Deshalb, deswegen, darum",
+     "g": "Esprimi conseguenze con deshalb, deswegen e darum, verbo in posizione 2.",
+     "p": [
+      "Tutti e tre significano per questo; sono avverbi, quindi il verbo segue subito: Ich bin müde, deshalb gehe ich ins Bett.",
+      "Possono stare anche in posizione 3: Ich gehe deshalb früh ins Bett. Confronta con weil (causa, verbo in fondo).",
+      "Utili anche also (quindi) e daher (perciò, più formale): Es ist spät, also fahren wir los."
+     ],
+     "q": "Perché impari il tedesco? Dammi una ragione e una conseguenza: Ich..., deshalb...",
+     "c": "Trasforma tre frasi con weil in frasi con deshalb: Ich will reisen, deshalb lerne ich."
+    },
+    "pt": {
+     "t": "Deshalb, deswegen, darum",
+     "g": "Exprimir consequências com deshalb, deswegen e darum, verbo na posição 2.",
+     "p": [
+      "Os três significam por isso; são advérbios, por isso o verbo vem logo a seguir: Ich bin müde, deshalb gehe ich ins Bett.",
+      "Também podem ficar na posição 3: Ich gehe deshalb früh ins Bett. Compara com weil (causa, verbo no fim).",
+      "Também úteis: also (então) e daher (portanto, mais formal): Es ist spät, also fahren wir los."
+     ],
+     "q": "Porque é que aprendes alemão? Dá-me uma razão e uma consequência: Ich..., deshalb...",
+     "c": "Transforma três frases com weil em frases com deshalb: Ich will reisen, deshalb lerne ich."
+    },
+    "pt_BR": {
+     "t": "Deshalb, deswegen, darum",
+     "g": "Expressar consequências com deshalb, deswegen e darum, verbo na posição 2.",
+     "p": [
+      "Os três significam por isso; são advérbios, então o verbo vem logo depois: Ich bin müde, deshalb gehe ich ins Bett.",
+      "Também podem ficar na posição 3: Ich gehe deshalb früh ins Bett. Compare com weil (causa, verbo no final).",
+      "Também úteis: also (então) e daher (portanto, mais formal): Es ist spät, also fahren wir los."
+     ],
+     "q": "Por que você aprende alemão? Me dê um motivo e uma consequência: Ich..., deshalb...",
+     "c": "Transforme três frases com weil em frases com deshalb: Ich will reisen, deshalb lerne ich."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "deshalb",
+      "ex": "Es regnet, deshalb nehme ich den Bus."
+     },
+     {
+      "w": "deswegen",
+      "ex": "Ich habe morgen eine Prüfung, deswegen lerne ich heute."
+     },
+     {
+      "w": "darum",
+      "ex": "Sie liebt Berge, darum wandert sie oft."
+     },
+     {
+      "w": "also",
+      "ex": "Der Laden ist zu, also kaufen wir morgen ein."
+     },
+     {
+      "w": "daher",
+      "ex": "Der Zug hatte Verspätung, daher kam ich zu spät."
+     },
+     {
+      "w": "aus diesem Grund",
+      "ex": "Aus diesem Grund haben wir den Termin verschoben."
+     }
+    ],
+    "gram": "Folge-Adverbien deshalb, deswegen, darum, daher, also: Verb direkt danach auf Position 2 (…, deshalb gehe ich)."
+   }
+  },
+  {
+   "d": 202,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Während, bevor, bis, seitdem",
+     "g": "Use temporal conjunctions in subordinate clauses: während, bevor, bis, seitdem.",
+     "p": [
+      "Während = while (same time): Während ich koche, höre ich Musik. Bevor = before: Bevor ich gehe, rufe ich dich an.",
+      "Bis = until: Ich warte, bis du kommst. Seitdem (or seit) = since: Seitdem ich hier wohne, fahre ich Fahrrad.",
+      "All send the verb to the end; if the subordinate clause comes first, the main verb follows: Bevor ich gehe, esse ich."
+     ],
+     "q": "Describe your routine: Was machst du, während du frühstückst? What has changed seitdem du Deutsch lernst?",
+     "c": "Write one sentence each with während, bevor, bis and seitdem, starting two of them with the subordinate clause."
+    },
+    "de": {
+     "t": "Während, bevor, bis, seitdem",
+     "g": "Du benutzt temporale Konnektoren im Nebensatz: während, bevor, bis, seitdem.",
+     "p": [
+      "Während = gleichzeitig: Während ich koche, höre ich Musik. Bevor = vorher: Bevor ich gehe, rufe ich dich an.",
+      "Bis = bis zu einem Zeitpunkt: Ich warte, bis du kommst. Seitdem (oder seit): Seitdem ich hier wohne, fahre ich Rad.",
+      "Alle schicken das Verb ans Ende; steht der Nebensatz vorn, folgt das Hauptverb: Bevor ich gehe, esse ich."
+     ],
+     "q": "Beschreib deine Routine: Was machst du, während du frühstückst? Was hat sich verändert, seitdem du Deutsch lernst?",
+     "c": "Schreib je einen Satz mit während, bevor, bis und seitdem und beginne zwei davon mit dem Nebensatz."
+    },
+    "es": {
+     "t": "Während, bevor, bis, seitdem",
+     "g": "Usa conjunciones temporales en subordinadas: während, bevor, bis, seitdem.",
+     "p": [
+      "Während = mientras: Während ich koche, höre ich Musik. Bevor = antes de que: Bevor ich gehe, rufe ich dich an.",
+      "Bis = hasta que: Ich warte, bis du kommst. Seitdem (o seit) = desde que: Seitdem ich hier wohne, fahre ich Rad.",
+      "Todas mandan el verbo al final; si la subordinada va delante, sigue el verbo principal: Bevor ich gehe, esse ich."
+     ],
+     "q": "Describe tu rutina: ¿Qué haces während du frühstückst? ¿Qué ha cambiado seitdem du Deutsch lernst?",
+     "c": "Escribe una frase con während, bevor, bis y seitdem; empieza dos de ellas con la subordinada."
+    },
+    "fr": {
+     "t": "Während, bevor, bis, seitdem",
+     "g": "Utiliser les conjonctions de temps en subordonnée : während, bevor, bis, seitdem.",
+     "p": [
+      "Während = pendant que : Während ich koche, höre ich Musik. Bevor = avant que : Bevor ich gehe, rufe ich dich an.",
+      "Bis = jusqu'à ce que : Ich warte, bis du kommst. Seitdem (ou seit) = depuis que : Seitdem ich hier wohne, fahre ich Rad.",
+      "Toutes rejettent le verbe à la fin ; si la subordonnée est en tête, le verbe principal suit : Bevor ich gehe, esse ich."
+     ],
+     "q": "Décris ta routine : Que fais-tu während du frühstückst ? Qu'est-ce qui a changé seitdem du Deutsch lernst ?",
+     "c": "Écris une phrase avec während, bevor, bis et seitdem ; commence-en deux par la subordonnée."
+    },
+    "it": {
+     "t": "Während, bevor, bis, seitdem",
+     "g": "Usi le congiunzioni temporali nelle subordinate: während, bevor, bis, seitdem.",
+     "p": [
+      "Während = mentre: Während ich koche, höre ich Musik. Bevor = prima che: Bevor ich gehe, rufe ich dich an.",
+      "Bis = finché: Ich warte, bis du kommst. Seitdem (o seit) = da quando: Seitdem ich hier wohne, fahre ich Rad.",
+      "Tutte mandano il verbo in fondo; se la subordinata è prima, segue il verbo principale: Bevor ich gehe, esse ich."
+     ],
+     "q": "Descrivi la tua routine: Che cosa fai während du frühstückst? Che cosa è cambiato seitdem du Deutsch lernst?",
+     "c": "Scrivi una frase con während, bevor, bis e seitdem; comincia due di esse con la subordinata."
+    },
+    "pt": {
+     "t": "Während, bevor, bis, seitdem",
+     "g": "Usar conjunções temporais em subordinadas: während, bevor, bis, seitdem.",
+     "p": [
+      "Während = enquanto: Während ich koche, höre ich Musik. Bevor = antes de: Bevor ich gehe, rufe ich dich an.",
+      "Bis = até: Ich warte, bis du kommst. Seitdem (ou seit) = desde que: Seitdem ich hier wohne, fahre ich Rad.",
+      "Todas mandam o verbo para o fim; se a subordinada vem primeiro, segue o verbo principal: Bevor ich gehe, esse ich."
+     ],
+     "q": "Descreve a tua rotina: O que fazes während du frühstückst? O que mudou seitdem du Deutsch lernst?",
+     "c": "Escreve uma frase com während, bevor, bis e seitdem; começa duas delas pela subordinada."
+    },
+    "pt_BR": {
+     "t": "Während, bevor, bis, seitdem",
+     "g": "Usar conjunções temporais em subordinadas: während, bevor, bis, seitdem.",
+     "p": [
+      "Während = enquanto: Während ich koche, höre ich Musik. Bevor = antes de: Bevor ich gehe, rufe ich dich an.",
+      "Bis = até: Ich warte, bis du kommst. Seitdem (ou seit) = desde que: Seitdem ich hier wohne, fahre ich Rad.",
+      "Todas mandam o verbo para o final; se a subordinada vem antes, segue o verbo principal: Bevor ich gehe, esse ich."
+     ],
+     "q": "Descreva sua rotina: O que você faz während du frühstückst? O que mudou seitdem du Deutsch lernst?",
+     "c": "Escreva uma frase com während, bevor, bis e seitdem; comece duas delas com a subordinada."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "während",
+      "ex": "Während ich Zug fahre, lese ich gern."
+     },
+     {
+      "w": "bevor",
+      "ex": "Bevor wir essen, waschen wir die Hände."
+     },
+     {
+      "w": "bis",
+      "ex": "Bleib hier, bis der Regen aufhört."
+     },
+     {
+      "w": "seitdem",
+      "ex": "Seitdem ich Sport mache, schlafe ich besser."
+     },
+     {
+      "w": "sobald",
+      "ex": "Sobald ich zu Hause bin, rufe ich dich an."
+     },
+     {
+      "w": "solange",
+      "ex": "Solange die Sonne scheint, bleiben wir draußen."
+     }
+    ],
+    "gram": "Temporale Nebensätze mit während, bevor, bis, seitdem, sobald: Verb am Ende; Nebensatz vorn > Verb, Subjekt."
+   }
+  },
+  {
+   "d": 203,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Damit vs um... zu",
+     "g": "Express purpose: um... zu with the same subject, damit with a different subject.",
+     "p": [
+      "Same subject: um... zu + infinitive at the end: Ich lerne Deutsch, um in Wien zu arbeiten.",
+      "Different subject: damit + subordinate clause: Ich spreche langsam, damit du mich verstehst.",
+      "With the same subject damit is also possible, but um... zu sounds more natural: Ich spare, um ein Auto zu kaufen."
+     ],
+     "q": "Why do you do the things you do? Give one reason with um... zu and one with damit about someone else.",
+     "c": "Write three um... zu sentences and three damit sentences with a new subject."
+    },
+    "de": {
+     "t": "Damit oder um... zu",
+     "g": "Du drückst einen Zweck aus: um... zu bei gleichem Subjekt, damit bei anderem Subjekt.",
+     "p": [
+      "Gleiches Subjekt: um... zu + Infinitiv am Ende: Ich lerne Deutsch, um in Wien zu arbeiten.",
+      "Anderes Subjekt: damit + Nebensatz: Ich spreche langsam, damit du mich verstehst.",
+      "Bei gleichem Subjekt geht auch damit, aber um... zu klingt natürlicher: Ich spare, um ein Auto zu kaufen."
+     ],
+     "q": "Warum machst du, was du machst? Nenn einen Zweck mit um... zu und einen mit damit für eine andere Person.",
+     "c": "Schreib drei Sätze mit um... zu und drei mit damit und einem neuen Subjekt."
+    },
+    "es": {
+     "t": "Damit o um... zu",
+     "g": "Expresa finalidad: um... zu con el mismo sujeto, damit con un sujeto distinto.",
+     "p": [
+      "Mismo sujeto: um... zu + infinitivo al final (para + infinitivo): Ich lerne Deutsch, um in Wien zu arbeiten.",
+      "Sujeto distinto: damit + subordinada (para que): Ich spreche langsam, damit du mich verstehst.",
+      "Con el mismo sujeto también vale damit, pero um... zu suena más natural: Ich spare, um ein Auto zu kaufen."
+     ],
+     "q": "¿Para qué haces lo que haces? Dame una finalidad con um... zu y otra con damit para otra persona.",
+     "c": "Escribe tres frases con um... zu y tres con damit y un sujeto nuevo."
+    },
+    "fr": {
+     "t": "Damit ou um... zu",
+     "g": "Exprimer le but : um... zu avec le même sujet, damit avec un sujet différent.",
+     "p": [
+      "Même sujet : um... zu + infinitif à la fin (pour + infinitif) : Ich lerne Deutsch, um in Wien zu arbeiten.",
+      "Sujet différent : damit + subordonnée (pour que) : Ich spreche langsam, damit du mich verstehst.",
+      "Avec le même sujet damit est possible, mais um... zu est plus naturel : Ich spare, um ein Auto zu kaufen."
+     ],
+     "q": "Pourquoi fais-tu ce que tu fais ? Donne un but avec um... zu et un autre avec damit pour quelqu'un d'autre.",
+     "c": "Écris trois phrases avec um... zu et trois avec damit et un nouveau sujet."
+    },
+    "it": {
+     "t": "Damit o um... zu",
+     "g": "Esprimi lo scopo: um... zu con lo stesso soggetto, damit con un soggetto diverso.",
+     "p": [
+      "Stesso soggetto: um... zu + infinito in fondo (per + infinito): Ich lerne Deutsch, um in Wien zu arbeiten.",
+      "Soggetto diverso: damit + subordinata (affinché): Ich spreche langsam, damit du mich verstehst.",
+      "Con lo stesso soggetto si può usare damit, ma um... zu è più naturale: Ich spare, um ein Auto zu kaufen."
+     ],
+     "q": "Perché fai quello che fai? Dammi uno scopo con um... zu e uno con damit per un'altra persona.",
+     "c": "Scrivi tre frasi con um... zu e tre con damit e un nuovo soggetto."
+    },
+    "pt": {
+     "t": "Damit ou um... zu",
+     "g": "Exprimir finalidade: um... zu com o mesmo sujeito, damit com sujeito diferente.",
+     "p": [
+      "Mesmo sujeito: um... zu + infinitivo no fim (para + infinitivo): Ich lerne Deutsch, um in Wien zu arbeiten.",
+      "Sujeito diferente: damit + subordinada (para que): Ich spreche langsam, damit du mich verstehst.",
+      "Com o mesmo sujeito também se pode usar damit, mas um... zu soa mais natural: Ich spare, um ein Auto zu kaufen."
+     ],
+     "q": "Para que fazes o que fazes? Dá-me uma finalidade com um... zu e outra com damit para outra pessoa.",
+     "c": "Escreve três frases com um... zu e três com damit e um sujeito novo."
+    },
+    "pt_BR": {
+     "t": "Damit ou um... zu",
+     "g": "Expressar finalidade: um... zu com o mesmo sujeito, damit com sujeito diferente.",
+     "p": [
+      "Mesmo sujeito: um... zu + infinitivo no final (para + infinitivo): Ich lerne Deutsch, um in Wien zu arbeiten.",
+      "Sujeito diferente: damit + subordinada (para que): Ich spreche langsam, damit du mich verstehst.",
+      "Com o mesmo sujeito também dá para usar damit, mas um... zu soa mais natural: Ich spare, um ein Auto zu kaufen."
+     ],
+     "q": "Para que você faz o que faz? Me dê uma finalidade com um... zu e outra com damit para outra pessoa.",
+     "c": "Escreva três frases com um... zu e três com damit e um sujeito novo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "um ... zu",
+      "ex": "Ich stehe früh auf, um Sport zu machen."
+     },
+     {
+      "w": "damit",
+      "ex": "Ich erkläre es noch einmal, damit alle es verstehen."
+     },
+     {
+      "w": "der Zweck",
+      "ex": "Wozu dient dieses Gerät? Was ist der Zweck?"
+     },
+     {
+      "w": "wozu?",
+      "ex": "Wozu brauchst du so viele Bücher?"
+     },
+     {
+      "w": "sparen",
+      "ex": "Wir sparen, um im Sommer zu verreisen."
+     },
+     {
+      "w": "damit du",
+      "ex": "Ich schreibe dir die Adresse auf, damit du sie nicht vergisst."
+     }
+    ],
+    "gram": "Zweck: um … zu + Infinitiv bei gleichem Subjekt; damit + Nebensatz bei anderem Subjekt (…, damit du mich verstehst)."
+   }
+  },
+  {
+   "d": 204,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Ohne... zu and statt... zu",
+     "g": "Say what someone doesn't do or does instead: Er ging, ohne sich zu verabschieden.",
+     "p": [
+      "Ohne... zu + infinitive = without doing: Sie ging, ohne ein Wort zu sagen.",
+      "Statt... zu (anstatt... zu) = instead of doing: Statt zu lernen, schaute er Serien.",
+      "With a different subject use ohne dass / statt dass: Er ging, ohne dass ich es merkte."
+     ],
+     "q": "Have you ever done something ohne nachzudenken? And what do you do statt fernzusehen?",
+     "c": "Write two sentences with ohne... zu, two with statt... zu and one with ohne dass."
+    },
+    "de": {
+     "t": "Ohne... zu und statt... zu",
+     "g": "Du sagst, was jemand nicht tut oder stattdessen tut: Er ging, ohne sich zu verabschieden.",
+     "p": [
+      "Ohne... zu + Infinitiv: etwas passiert nicht: Sie ging, ohne ein Wort zu sagen.",
+      "Statt... zu (anstatt... zu): etwas anderes passiert: Statt zu lernen, schaute er Serien.",
+      "Bei anderem Subjekt: ohne dass / statt dass: Er ging, ohne dass ich es merkte."
+     ],
+     "q": "Hast du schon mal etwas gemacht, ohne nachzudenken? Und was machst du, statt fernzusehen?",
+     "c": "Schreib zwei Sätze mit ohne... zu, zwei mit statt... zu und einen mit ohne dass."
+    },
+    "es": {
+     "t": "Ohne... zu y statt... zu",
+     "g": "Di lo que alguien no hace o hace en su lugar: Er ging, ohne sich zu verabschieden.",
+     "p": [
+      "Ohne... zu + infinitivo = sin + infinitivo: Sie ging, ohne ein Wort zu sagen.",
+      "Statt... zu (anstatt... zu) = en vez de: Statt zu lernen, schaute er Serien.",
+      "Con otro sujeto: ohne dass / statt dass (sin que): Er ging, ohne dass ich es merkte."
+     ],
+     "q": "¿Alguna vez hiciste algo ohne nachzudenken? ¿Y qué haces statt fernzusehen?",
+     "c": "Escribe dos frases con ohne... zu, dos con statt... zu y una con ohne dass."
+    },
+    "fr": {
+     "t": "Ohne... zu et statt... zu",
+     "g": "Dire ce qu'on ne fait pas ou ce qu'on fait à la place : Er ging, ohne sich zu verabschieden.",
+     "p": [
+      "Ohne... zu + infinitif = sans + infinitif : Sie ging, ohne ein Wort zu sagen.",
+      "Statt... zu (anstatt... zu) = au lieu de : Statt zu lernen, schaute er Serien.",
+      "Avec un autre sujet : ohne dass / statt dass (sans que) : Er ging, ohne dass ich es merkte."
+     ],
+     "q": "As-tu déjà fait quelque chose ohne nachzudenken ? Et que fais-tu statt fernzusehen ?",
+     "c": "Écris deux phrases avec ohne... zu, deux avec statt... zu et une avec ohne dass."
+    },
+    "it": {
+     "t": "Ohne... zu e statt... zu",
+     "g": "Dici cosa qualcuno non fa o fa invece: Er ging, ohne sich zu verabschieden.",
+     "p": [
+      "Ohne... zu + infinito = senza + infinito: Sie ging, ohne ein Wort zu sagen.",
+      "Statt... zu (anstatt... zu) = invece di: Statt zu lernen, schaute er Serien.",
+      "Con un altro soggetto: ohne dass / statt dass (senza che): Er ging, ohne dass ich es merkte."
+     ],
+     "q": "Hai mai fatto qualcosa ohne nachzudenken? E che cosa fai statt fernzusehen?",
+     "c": "Scrivi due frasi con ohne... zu, due con statt... zu e una con ohne dass."
+    },
+    "pt": {
+     "t": "Ohne... zu e statt... zu",
+     "g": "Dizer o que alguém não faz ou faz em vez disso: Er ging, ohne sich zu verabschieden.",
+     "p": [
+      "Ohne... zu + infinitivo = sem + infinitivo: Sie ging, ohne ein Wort zu sagen.",
+      "Statt... zu (anstatt... zu) = em vez de: Statt zu lernen, schaute er Serien.",
+      "Com outro sujeito: ohne dass / statt dass (sem que): Er ging, ohne dass ich es merkte."
+     ],
+     "q": "Já fizeste alguma coisa ohne nachzudenken? E o que fazes statt fernzusehen?",
+     "c": "Escreve duas frases com ohne... zu, duas com statt... zu e uma com ohne dass."
+    },
+    "pt_BR": {
+     "t": "Ohne... zu e statt... zu",
+     "g": "Dizer o que alguém não faz ou faz no lugar: Er ging, ohne sich zu verabschieden.",
+     "p": [
+      "Ohne... zu + infinitivo = sem + infinitivo: Sie ging, ohne ein Wort zu sagen.",
+      "Statt... zu (anstatt... zu) = em vez de: Statt zu lernen, schaute er Serien.",
+      "Com outro sujeito: ohne dass / statt dass (sem que): Er ging, ohne dass ich es merkte."
+     ],
+     "q": "Você já fez algo ohne nachzudenken? E o que você faz statt fernzusehen?",
+     "c": "Escreva duas frases com ohne... zu, duas com statt... zu e uma com ohne dass."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ohne ... zu",
+      "ex": "Er ging, ohne sich zu verabschieden."
+     },
+     {
+      "w": "statt ... zu",
+      "ex": "Statt den Bus zu nehmen, gehe ich zu Fuß."
+     },
+     {
+      "w": "anstatt ... zu",
+      "ex": "Anstatt zu warten, rief sie einfach an."
+     },
+     {
+      "w": "ohne dass",
+      "ex": "Sie half mir, ohne dass ich fragen musste."
+     },
+     {
+      "w": "nachdenken",
+      "ex": "Ich habe geantwortet, ohne nachzudenken."
+     },
+     {
+      "w": "sich verabschieden",
+      "ex": "Wir verabschieden uns immer mit einer Umarmung."
+     }
+    ],
+    "gram": "Infinitivsätze: ohne … zu (etwas fehlt) und statt … zu (Alternative); anderes Subjekt: ohne dass / statt dass."
+   }
+  },
+  {
+   "d": 205,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Indirect speech: introduction",
+     "g": "Meet Konjunktiv I for reported speech: er sagt, er sei krank, sie habe Zeit.",
+     "p": [
+      "Konjunktiv I is used in news and formal reports to show you are only reporting: Die Trainerin sagt, sie sei zufrieden.",
+      "Most used forms are 3rd person: sein > er sei, haben > sie habe, kommen > er komme, können > sie könne.",
+      "Pronouns change to the reporter's view: Anna: Ich bin müde. > Anna sagt, sie sei müde."
+     ],
+     "q": "Report what a friend told you recently in Konjunktiv I: Mein Freund sagt, er sei... / er habe...",
+     "c": "Turn five direct quotes into reported speech with er/sie sei, habe, komme, könne, wolle."
+    },
+    "de": {
+     "t": "Indirekte Rede: Einführung",
+     "g": "Du lernst den Konjunktiv I für die indirekte Rede: er sagt, er sei krank, sie habe Zeit.",
+     "p": [
+      "Konjunktiv I steht in Nachrichten und Berichten und zeigt: ich gebe nur wieder. Die Trainerin sagt, sie sei zufrieden.",
+      "Am häufigsten ist die 3. Person: sein > er sei, haben > sie habe, kommen > er komme, können > sie könne.",
+      "Pronomen wechseln zur Sicht des Berichtenden: Anna: Ich bin müde. > Anna sagt, sie sei müde."
+     ],
+     "q": "Gib im Konjunktiv I wieder, was dir ein Freund neulich erzählt hat: Mein Freund sagt, er sei... / er habe...",
+     "c": "Verwandle fünf Zitate in indirekte Rede mit er/sie sei, habe, komme, könne, wolle."
+    },
+    "es": {
+     "t": "Estilo indirecto: introducción",
+     "g": "Conoce el Konjunktiv I para el estilo indirecto: er sagt, er sei krank, sie habe Zeit.",
+     "p": [
+      "El Konjunktiv I aparece en noticias e informes para indicar que solo se transmite: Die Trainerin sagt, sie sei zufrieden.",
+      "Lo más usado es la 3.ª persona: sein > er sei, haben > sie habe, kommen > er komme, können > sie könne.",
+      "Los pronombres cambian según quien informa: Anna: Ich bin müde. > Anna sagt, sie sei müde."
+     ],
+     "q": "Cuéntame en Konjunktiv I lo que te dijo un amigo hace poco: Mein Freund sagt, er sei... / er habe...",
+     "c": "Pasa cinco citas directas a estilo indirecto con er/sie sei, habe, komme, könne, wolle."
+    },
+    "fr": {
+     "t": "Discours indirect : introduction",
+     "g": "Découvrir le Konjunktiv I du discours rapporté : er sagt, er sei krank, sie habe Zeit.",
+     "p": [
+      "Le Konjunktiv I s'emploie dans les infos et rapports pour montrer qu'on rapporte : Die Trainerin sagt, sie sei zufrieden.",
+      "Formes les plus utilisées, à la 3e personne : sein > er sei, haben > sie habe, kommen > er komme, können > sie könne.",
+      "Les pronoms changent selon celui qui rapporte : Anna : Ich bin müde. > Anna sagt, sie sei müde."
+     ],
+     "q": "Rapporte au Konjunktiv I ce qu'un ami t'a dit récemment : Mein Freund sagt, er sei... / er habe...",
+     "c": "Transforme cinq citations directes en discours indirect avec er/sie sei, habe, komme, könne, wolle."
+    },
+    "it": {
+     "t": "Discorso indiretto: introduzione",
+     "g": "Conosci il Konjunktiv I per il discorso indiretto: er sagt, er sei krank, sie habe Zeit.",
+     "p": [
+      "Il Konjunktiv I si usa in notizie e resoconti per indicare che si riferisce: Die Trainerin sagt, sie sei zufrieden.",
+      "Le forme più usate sono alla 3ª persona: sein > er sei, haben > sie habe, kommen > er komme, können > sie könne.",
+      "I pronomi cambiano secondo chi riferisce: Anna: Ich bin müde. > Anna sagt, sie sei müde."
+     ],
+     "q": "Riferisci al Konjunktiv I quello che ti ha detto un amico di recente: Mein Freund sagt, er sei... / er habe...",
+     "c": "Trasforma cinque citazioni dirette in discorso indiretto con er/sie sei, habe, komme, könne, wolle."
+    },
+    "pt": {
+     "t": "Discurso indireto: introdução",
+     "g": "Conhecer o Konjunktiv I para o discurso indireto: er sagt, er sei krank, sie habe Zeit.",
+     "p": [
+      "O Konjunktiv I usa-se em notícias e relatórios para mostrar que só se reproduz: Die Trainerin sagt, sie sei zufrieden.",
+      "As formas mais usadas são da 3.ª pessoa: sein > er sei, haben > sie habe, kommen > er komme, können > sie könne.",
+      "Os pronomes mudam conforme quem relata: Anna: Ich bin müde. > Anna sagt, sie sei müde."
+     ],
+     "q": "Conta-me no Konjunktiv I o que um amigo te disse há pouco: Mein Freund sagt, er sei... / er habe...",
+     "c": "Passa cinco citações diretas para discurso indireto com er/sie sei, habe, komme, könne, wolle."
+    },
+    "pt_BR": {
+     "t": "Discurso indireto: introdução",
+     "g": "Conhecer o Konjunktiv I para o discurso indireto: er sagt, er sei krank, sie habe Zeit.",
+     "p": [
+      "O Konjunktiv I aparece em notícias e relatórios para mostrar que só se reproduz: Die Trainerin sagt, sie sei zufrieden.",
+      "As formas mais usadas são da 3ª pessoa: sein > er sei, haben > sie habe, kommen > er komme, können > sie könne.",
+      "Os pronomes mudam conforme quem relata: Anna: Ich bin müde. > Anna sagt, sie sei müde."
+     ],
+     "q": "Me conte no Konjunktiv I o que um amigo disse recentemente: Mein Freund sagt, er sei... / er habe...",
+     "c": "Passe cinco citações diretas para discurso indireto com er/sie sei, habe, komme, könne, wolle."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "er sei",
+      "ex": "Er sagt, er sei heute sehr beschäftigt."
+     },
+     {
+      "w": "sie habe",
+      "ex": "Sie meint, sie habe keine Zeit."
+     },
+     {
+      "w": "er komme",
+      "ex": "Der Chef sagt, er komme etwas später."
+     },
+     {
+      "w": "sie könne",
+      "ex": "Die Ärztin sagt, sie könne morgen helfen."
+     },
+     {
+      "w": "laut",
+      "ex": "Laut dem Bericht sei das Wetter morgen sonnig."
+     },
+     {
+      "w": "behaupten",
+      "ex": "Er behauptet, er habe alles gewusst."
+     }
+    ],
+    "gram": "Indirekte Rede mit Konjunktiv I: 3. Person Stamm + -e (er komme, sie habe), sein > er sei; Pronomen anpassen."
+   }
+  },
+  {
+   "d": 206,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Reporting what people say",
+     "g": "Report speech naturally with dass, Konjunktiv I and Konjunktiv II.",
+     "p": [
+      "In everyday speech people often use dass + indicative: Sie hat gesagt, dass sie morgen kommt.",
+      "When Konjunktiv I looks like the indicative (wir haben, sie haben), use Konjunktiv II: Sie sagen, sie hätten keine Zeit.",
+      "Questions become ob or W-clauses: Er fragt, ob ich Zeit habe. Sie fragt, wann der Kurs beginnt. Requests: sollen."
+     ],
+     "q": "What did someone ask or tell you today? Report it with dass, ob or a W-word.",
+     "c": "Report a short dialogue of four lines: one statement with dass, one with Konjunktiv I, one question with ob, one request with sollen."
+    },
+    "de": {
+     "t": "Wiedergeben, was andere sagen",
+     "g": "Du gibst Gesagtes natürlich wieder: mit dass, Konjunktiv I und Konjunktiv II.",
+     "p": [
+      "Im Alltag nimmt man oft dass + Indikativ: Sie hat gesagt, dass sie morgen kommt.",
+      "Sieht der Konjunktiv I wie der Indikativ aus (wir haben, sie haben), nimmt man Konjunktiv II: Sie sagen, sie hätten keine Zeit.",
+      "Fragen werden zu ob- oder W-Sätzen: Er fragt, ob ich Zeit habe. Bitten mit sollen: Sie sagt, ich solle warten."
+     ],
+     "q": "Was hat dich heute jemand gefragt oder dir gesagt? Gib es mit dass, ob oder einem W-Wort wieder.",
+     "c": "Gib einen Dialog mit vier Zeilen wieder: mit dass, mit Konjunktiv I, eine Frage mit ob, eine Bitte mit sollen."
+    },
+    "es": {
+     "t": "Contar lo que dicen otros",
+     "g": "Reproduce lo dicho con naturalidad: con dass, Konjunktiv I y Konjunktiv II.",
+     "p": [
+      "En el día a día se usa mucho dass + indicativo: Sie hat gesagt, dass sie morgen kommt.",
+      "Si el Konjunktiv I coincide con el indicativo (wir haben, sie haben), se usa el Konjunktiv II: Sie sagen, sie hätten keine Zeit.",
+      "Las preguntas pasan a ob o a palabra W: Er fragt, ob ich Zeit habe. Peticiones con sollen: Sie sagt, ich solle warten."
+     ],
+     "q": "¿Qué te preguntó o te dijo alguien hoy? Cuéntalo con dass, ob o una palabra W.",
+     "c": "Reproduce un diálogo de cuatro líneas: con dass, con Konjunktiv I, una pregunta con ob y una petición con sollen."
+    },
+    "fr": {
+     "t": "Rapporter les paroles des autres",
+     "g": "Rapporter des paroles naturellement : avec dass, le Konjunktiv I et le Konjunktiv II.",
+     "p": [
+      "Au quotidien, on emploie souvent dass + indicatif : Sie hat gesagt, dass sie morgen kommt.",
+      "Si le Konjunktiv I ressemble à l'indicatif (wir haben, sie haben), on prend le Konjunktiv II : Sie sagen, sie hätten keine Zeit.",
+      "Les questions deviennent ob ou un mot en W : Er fragt, ob ich Zeit habe. Demandes avec sollen : Sie sagt, ich solle warten."
+     ],
+     "q": "Qu'est-ce que quelqu'un t'a demandé ou dit aujourd'hui ? Rapporte-le avec dass, ob ou un mot en W.",
+     "c": "Rapporte un dialogue de quatre lignes : avec dass, avec Konjunktiv I, une question avec ob, une demande avec sollen."
+    },
+    "it": {
+     "t": "Riferire ciò che dicono gli altri",
+     "g": "Riferisci le parole altrui con naturalezza: con dass, Konjunktiv I e Konjunktiv II.",
+     "p": [
+      "Nella vita di tutti i giorni si usa spesso dass + indicativo: Sie hat gesagt, dass sie morgen kommt.",
+      "Se il Konjunktiv I coincide con l'indicativo (wir haben, sie haben), si usa il Konjunktiv II: Sie sagen, sie hätten keine Zeit.",
+      "Le domande diventano ob o parola W: Er fragt, ob ich Zeit habe. Richieste con sollen: Sie sagt, ich solle warten."
+     ],
+     "q": "Che cosa ti ha chiesto o detto qualcuno oggi? Riferiscilo con dass, ob o una parola W.",
+     "c": "Riferisci un dialogo di quattro righe: con dass, con Konjunktiv I, una domanda con ob e una richiesta con sollen."
+    },
+    "pt": {
+     "t": "Relatar o que os outros dizem",
+     "g": "Relatar o que foi dito com naturalidade: com dass, Konjunktiv I e Konjunktiv II.",
+     "p": [
+      "No dia a dia usa-se muito dass + indicativo: Sie hat gesagt, dass sie morgen kommt.",
+      "Se o Konjunktiv I é igual ao indicativo (wir haben, sie haben), usa-se o Konjunktiv II: Sie sagen, sie hätten keine Zeit.",
+      "As perguntas passam a ob ou palavra W: Er fragt, ob ich Zeit habe. Pedidos com sollen: Sie sagt, ich solle warten."
+     ],
+     "q": "O que é que alguém te perguntou ou disse hoje? Relata-o com dass, ob ou uma palavra W.",
+     "c": "Relata um diálogo de quatro linhas: com dass, com Konjunktiv I, uma pergunta com ob e um pedido com sollen."
+    },
+    "pt_BR": {
+     "t": "Relatar o que os outros dizem",
+     "g": "Relatar o que foi dito com naturalidade: com dass, Konjunktiv I e Konjunktiv II.",
+     "p": [
+      "No dia a dia se usa muito dass + indicativo: Sie hat gesagt, dass sie morgen kommt.",
+      "Se o Konjunktiv I é igual ao indicativo (wir haben, sie haben), usa-se o Konjunktiv II: Sie sagen, sie hätten keine Zeit.",
+      "As perguntas viram ob ou palavra W: Er fragt, ob ich Zeit habe. Pedidos com sollen: Sie sagt, ich solle warten."
+     ],
+     "q": "O que alguém te perguntou ou disse hoje? Relate com dass, ob ou uma palavra W.",
+     "c": "Relate um diálogo de quatro linhas: com dass, com Konjunktiv I, uma pergunta com ob e um pedido com sollen."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "sagen, dass",
+      "ex": "Mein Bruder sagt, dass er den Film schon kennt."
+     },
+     {
+      "w": "fragen, ob",
+      "ex": "Sie fragt, ob wir morgen Zeit haben."
+     },
+     {
+      "w": "sie hätten",
+      "ex": "Die Nachbarn sagen, sie hätten nichts gehört."
+     },
+     {
+      "w": "ich solle",
+      "ex": "Der Arzt meint, ich solle mich ausruhen."
+     },
+     {
+      "w": "erzählen",
+      "ex": "Er erzählt, er sei in Japan gewesen."
+     },
+     {
+      "w": "wissen wollen",
+      "ex": "Sie will wissen, wann der Zug fährt."
+     }
+    ],
+    "gram": "Indirekte Rede: dass + Indikativ (Alltag), Konjunktiv I, Ersatz durch Konjunktiv II; Fragen mit ob/W-Wort; Bitten mit sollen."
+   }
+  },
+  {
+   "d": 207,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Expressing cause",
+     "g": "Give reasons in many ways: weil, da, denn, wegen, aufgrund, nämlich.",
+     "p": [
+      "Weil and da send the verb to the end; da often starts the sentence for a known reason: Da es spät ist, gehen wir.",
+      "Denn joins two main clauses (normal word order): Ich bleibe zu Hause, denn ich bin krank. Nämlich explains: Ich bin nämlich krank.",
+      "Wegen and aufgrund + genitive are noun phrases, common in writing: Aufgrund des Wetters fällt das Spiel aus."
+     ],
+     "q": "Why did you choose your job or studies? Answer three times: with weil, with denn and with nämlich.",
+     "c": "Write the same reason five ways: weil, da, denn, wegen and aufgrund."
+    },
+    "de": {
+     "t": "Gründe ausdrücken",
+     "g": "Du nennst Gründe auf viele Arten: weil, da, denn, wegen, aufgrund, nämlich.",
+     "p": [
+      "Weil und da schicken das Verb ans Ende; da steht oft vorn für einen bekannten Grund: Da es spät ist, gehen wir.",
+      "Denn verbindet zwei Hauptsätze: Ich bleibe zu Hause, denn ich bin krank. Nämlich erklärt nachträglich: Ich bin nämlich krank.",
+      "Wegen und aufgrund + Genitiv bilden Nominalgruppen, typisch schriftlich: Aufgrund des Wetters fällt das Spiel aus."
+     ],
+     "q": "Warum hast du deinen Beruf oder dein Studium gewählt? Antworte dreimal: mit weil, mit denn und mit nämlich.",
+     "c": "Schreib denselben Grund auf fünf Arten: mit weil, da, denn, wegen und aufgrund."
+    },
+    "es": {
+     "t": "Expresar la causa",
+     "g": "Da razones de muchas formas: weil, da, denn, wegen, aufgrund, nämlich.",
+     "p": [
+      "Weil y da mandan el verbo al final; da suele ir delante con una causa conocida: Da es spät ist, gehen wir.",
+      "Denn une dos oraciones principales: Ich bleibe zu Hause, denn ich bin krank. Nämlich explica: Ich bin nämlich krank.",
+      "Wegen y aufgrund + genitivo forman grupos nominales, típicos por escrito: Aufgrund des Wetters fällt das Spiel aus."
+     ],
+     "q": "¿Por qué elegiste tu trabajo o tus estudios? Responde tres veces: con weil, con denn y con nämlich.",
+     "c": "Escribe la misma causa de cinco formas: weil, da, denn, wegen y aufgrund."
+    },
+    "fr": {
+     "t": "Exprimer la cause",
+     "g": "Donner des raisons de plusieurs façons : weil, da, denn, wegen, aufgrund, nämlich.",
+     "p": [
+      "Weil et da rejettent le verbe à la fin ; da ouvre souvent la phrase (cause connue) : Da es spät ist, gehen wir.",
+      "Denn relie deux principales : Ich bleibe zu Hause, denn ich bin krank. Nämlich explique après coup : Ich bin nämlich krank.",
+      "Wegen et aufgrund + génitif forment des groupes nominaux, fréquents à l'écrit : Aufgrund des Wetters fällt das Spiel aus."
+     ],
+     "q": "Pourquoi as-tu choisi ton métier ou tes études ? Réponds trois fois : avec weil, avec denn et avec nämlich.",
+     "c": "Écris la même cause de cinq façons : weil, da, denn, wegen et aufgrund."
+    },
+    "it": {
+     "t": "Esprimere la causa",
+     "g": "Dai motivi in tanti modi: weil, da, denn, wegen, aufgrund, nämlich.",
+     "p": [
+      "Weil e da mandano il verbo in fondo; da apre spesso la frase per una causa nota: Da es spät ist, gehen wir.",
+      "Denn unisce due principali: Ich bleibe zu Hause, denn ich bin krank. Nämlich spiega dopo: Ich bin nämlich krank.",
+      "Wegen e aufgrund + genitivo formano gruppi nominali, tipici dello scritto: Aufgrund des Wetters fällt das Spiel aus."
+     ],
+     "q": "Perché hai scelto il tuo lavoro o i tuoi studi? Rispondi tre volte: con weil, con denn e con nämlich.",
+     "c": "Scrivi la stessa causa in cinque modi: weil, da, denn, wegen e aufgrund."
+    },
+    "pt": {
+     "t": "Exprimir a causa",
+     "g": "Dar razões de várias formas: weil, da, denn, wegen, aufgrund, nämlich.",
+     "p": [
+      "Weil e da mandam o verbo para o fim; da costuma abrir a frase com uma causa conhecida: Da es spät ist, gehen wir.",
+      "Denn liga duas orações principais: Ich bleibe zu Hause, denn ich bin krank. Nämlich explica: Ich bin nämlich krank.",
+      "Wegen e aufgrund + genitivo formam grupos nominais, típicos da escrita: Aufgrund des Wetters fällt das Spiel aus."
+     ],
+     "q": "Porque escolheste o teu trabalho ou o teu curso? Responde três vezes: com weil, com denn e com nämlich.",
+     "c": "Escreve a mesma causa de cinco formas: weil, da, denn, wegen e aufgrund."
+    },
+    "pt_BR": {
+     "t": "Expressar a causa",
+     "g": "Dar motivos de vários jeitos: weil, da, denn, wegen, aufgrund, nämlich.",
+     "p": [
+      "Weil e da mandam o verbo para o final; da costuma abrir a frase com uma causa conhecida: Da es spät ist, gehen wir.",
+      "Denn liga duas orações principais: Ich bleibe zu Hause, denn ich bin krank. Nämlich explica: Ich bin nämlich krank.",
+      "Wegen e aufgrund + genitivo formam grupos nominais, típicos da escrita: Aufgrund des Wetters fällt das Spiel aus."
+     ],
+     "q": "Por que você escolheu seu trabalho ou sua faculdade? Responda três vezes: com weil, com denn e com nämlich.",
+     "c": "Escreva o mesmo motivo de cinco jeitos: weil, da, denn, wegen e aufgrund."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "weil",
+      "ex": "Ich lerne Deutsch, weil ich in Berlin arbeiten möchte."
+     },
+     {
+      "w": "da",
+      "ex": "Da der Laden geschlossen war, sind wir nach Hause gegangen."
+     },
+     {
+      "w": "denn",
+      "ex": "Wir nehmen das Taxi, denn es ist schon spät."
+     },
+     {
+      "w": "wegen",
+      "ex": "Wegen des Streiks fahren heute keine Busse."
+     },
+     {
+      "w": "aufgrund",
+      "ex": "Aufgrund der hohen Nachfrage gibt es ein Zusatzkonzert."
+     },
+     {
+      "w": "nämlich",
+      "ex": "Ich kann nicht kommen, ich habe nämlich Besuch."
+     }
+    ],
+    "gram": "Kausal: weil/da + Verb am Ende; denn + Hauptsatz; nämlich im Mittelfeld; wegen/aufgrund + Genitiv."
+   }
+  },
+  {
+   "d": 208,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Expressing contrast",
+     "g": "Show contrast with aber, sondern, jedoch, während and im Gegensatz zu.",
+     "p": [
+      "Aber = but (general); sondern = but rather, after a negation: Das ist nicht rot, sondern blau.",
+      "Jedoch = however, more formal, often in position 1 or 3: Das Hotel war schön, jedoch etwas laut.",
+      "Während = whereas (verb at the end): Ich trinke Tee, während mein Mann Kaffee trinkt. Im Gegensatz zu + dative."
+     ],
+     "q": "Compare yourself with a friend or family member: Im Gegensatz zu meiner Schwester... / Ich..., während er...",
+     "c": "Write four contrasts: one each with aber, sondern, jedoch and während."
+    },
+    "de": {
+     "t": "Gegensätze ausdrücken",
+     "g": "Du zeigst Gegensätze mit aber, sondern, jedoch, während und im Gegensatz zu.",
+     "p": [
+      "Aber ist allgemein; sondern korrigiert nach einer Verneinung: Das ist nicht rot, sondern blau.",
+      "Jedoch ist formeller und steht oft auf Position 1 oder 3: Das Hotel war schön, jedoch etwas laut.",
+      "Während vergleicht (Verb am Ende): Ich trinke Tee, während mein Mann Kaffee trinkt. Im Gegensatz zu + Dativ."
+     ],
+     "q": "Vergleich dich mit einem Freund oder einem Familienmitglied: Im Gegensatz zu meiner Schwester... / Ich..., während er...",
+     "c": "Schreib vier Gegensätze: je einen mit aber, sondern, jedoch und während."
+    },
+    "es": {
+     "t": "Expresar el contraste",
+     "g": "Muestra contraste con aber, sondern, jedoch, während e im Gegensatz zu.",
+     "p": [
+      "Aber = pero; sondern = sino, tras una negación: Das ist nicht rot, sondern blau.",
+      "Jedoch = sin embargo, más formal, a menudo en posición 1 o 3: Das Hotel war schön, jedoch etwas laut.",
+      "Während = mientras que (verbo al final): Ich trinke Tee, während mein Mann Kaffee trinkt. Im Gegensatz zu + dativo."
+     ],
+     "q": "Compárate con un amigo o un familiar: Im Gegensatz zu meiner Schwester... / Ich..., während er...",
+     "c": "Escribe cuatro contrastes: uno con aber, sondern, jedoch y während."
+    },
+    "fr": {
+     "t": "Exprimer l'opposition",
+     "g": "Marquer l'opposition avec aber, sondern, jedoch, während et im Gegensatz zu.",
+     "p": [
+      "Aber = mais ; sondern = mais (au contraire), après une négation : Das ist nicht rot, sondern blau.",
+      "Jedoch = cependant, plus soutenu, souvent en position 1 ou 3 : Das Hotel war schön, jedoch etwas laut.",
+      "Während = tandis que (verbe à la fin) : Ich trinke Tee, während mein Mann Kaffee trinkt. Im Gegensatz zu + datif."
+     ],
+     "q": "Compare-toi à un ami ou un proche : Im Gegensatz zu meiner Schwester... / Ich..., während er...",
+     "c": "Écris quatre oppositions : une avec aber, sondern, jedoch et während."
+    },
+    "it": {
+     "t": "Esprimere il contrasto",
+     "g": "Mostri il contrasto con aber, sondern, jedoch, während e im Gegensatz zu.",
+     "p": [
+      "Aber = ma; sondern = bensì, dopo una negazione: Das ist nicht rot, sondern blau.",
+      "Jedoch = tuttavia, più formale, spesso in posizione 1 o 3: Das Hotel war schön, jedoch etwas laut.",
+      "Während = mentre invece (verbo in fondo): Ich trinke Tee, während mein Mann Kaffee trinkt. Im Gegensatz zu + dativo."
+     ],
+     "q": "Confrontati con un amico o un familiare: Im Gegensatz zu meiner Schwester... / Ich..., während er...",
+     "c": "Scrivi quattro contrasti: uno con aber, sondern, jedoch e während."
+    },
+    "pt": {
+     "t": "Exprimir contraste",
+     "g": "Mostrar contraste com aber, sondern, jedoch, während e im Gegensatz zu.",
+     "p": [
+      "Aber = mas; sondern = mas sim, depois de uma negação: Das ist nicht rot, sondern blau.",
+      "Jedoch = no entanto, mais formal, muitas vezes na posição 1 ou 3: Das Hotel war schön, jedoch etwas laut.",
+      "Während = enquanto (verbo no fim): Ich trinke Tee, während mein Mann Kaffee trinkt. Im Gegensatz zu + dativo."
+     ],
+     "q": "Compara-te com um amigo ou familiar: Im Gegensatz zu meiner Schwester... / Ich..., während er...",
+     "c": "Escreve quatro contrastes: um com aber, sondern, jedoch e während."
+    },
+    "pt_BR": {
+     "t": "Expressar contraste",
+     "g": "Mostrar contraste com aber, sondern, jedoch, während e im Gegensatz zu.",
+     "p": [
+      "Aber = mas; sondern = mas sim, depois de uma negação: Das ist nicht rot, sondern blau.",
+      "Jedoch = no entanto, mais formal, muitas vezes na posição 1 ou 3: Das Hotel war schön, jedoch etwas laut.",
+      "Während = enquanto (verbo no final): Ich trinke Tee, während mein Mann Kaffee trinkt. Im Gegensatz zu + dativo."
+     ],
+     "q": "Compare-se com um amigo ou parente: Im Gegensatz zu meiner Schwester... / Ich..., während er...",
+     "c": "Escreva quatro contrastes: um com aber, sondern, jedoch e während."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "aber",
+      "ex": "Die Wohnung ist klein, aber gemütlich."
+     },
+     {
+      "w": "sondern",
+      "ex": "Ich komme nicht aus Wien, sondern aus Graz."
+     },
+     {
+      "w": "jedoch",
+      "ex": "Der Plan klingt gut, jedoch fehlt uns die Zeit."
+     },
+     {
+      "w": "während",
+      "ex": "Er liebt den Winter, während sie den Sommer mag."
+     },
+     {
+      "w": "im Gegensatz zu",
+      "ex": "Im Gegensatz zu mir steht mein Bruder gern früh auf."
+     },
+     {
+      "w": "dagegen",
+      "ex": "Ich bin ruhig, mein Bruder dagegen ist sehr lebhaft."
+     }
+    ],
+    "gram": "Adversativ: aber, sondern (nach Verneinung), jedoch/dagegen (Adverb), während + Nebensatz, im Gegensatz zu + Dativ."
+   }
+  },
+  {
+   "d": 209,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Structuring an argument",
+     "g": "Organise your opinions clearly: erstens, zweitens, außerdem, einerseits... andererseits, schließlich.",
+     "p": [
+      "List points: erstens, zweitens, drittens; add more: außerdem, darüber hinaus. These adverbs take position 1, verb next.",
+      "Weigh both sides: einerseits... andererseits: Einerseits ist die Stadt teuer, andererseits gibt es viele Jobs.",
+      "Conclude: schließlich, zum Schluss, alles in allem, deshalb finde ich, dass..."
+     ],
+     "q": "City or countryside? Give me a short argument with erstens, außerdem, einerseits... andererseits and alles in allem.",
+     "c": "Write a six-sentence opinion on a topic you like, using at least four structuring words."
+    },
+    "de": {
+     "t": "Eine Argumentation aufbauen",
+     "g": "Du ordnest deine Meinung klar: erstens, zweitens, außerdem, einerseits... andererseits, schließlich.",
+     "p": [
+      "Punkte aufzählen: erstens, zweitens, drittens; ergänzen: außerdem, darüber hinaus. Auf Position 1 folgt das Verb.",
+      "Abwägen: einerseits... andererseits: Einerseits ist die Stadt teuer, andererseits gibt es viele Jobs.",
+      "Abschließen: schließlich, zum Schluss, alles in allem, deshalb finde ich, dass..."
+     ],
+     "q": "Stadt oder Land? Gib mir eine kurze Argumentation mit erstens, außerdem, einerseits... andererseits und alles in allem.",
+     "c": "Schreib eine Meinung in sechs Sätzen zu einem Thema, das du magst, mit mindestens vier Gliederungswörtern."
+    },
+    "es": {
+     "t": "Estructurar un argumento",
+     "g": "Ordena tus opiniones con claridad: erstens, zweitens, außerdem, einerseits... andererseits, schließlich.",
+     "p": [
+      "Enumera: erstens, zweitens, drittens; añade: außerdem, darüber hinaus. En posición 1, el verbo va detrás.",
+      "Sopesa: einerseits... andererseits (por un lado... por otro): Einerseits ist die Stadt teuer, andererseits gibt es viele Jobs.",
+      "Concluye: schließlich, zum Schluss, alles in allem, deshalb finde ich, dass..."
+     ],
+     "q": "¿Ciudad o campo? Dame un breve argumento con erstens, außerdem, einerseits... andererseits y alles in allem.",
+     "c": "Escribe una opinión de seis frases sobre un tema que te guste con al menos cuatro conectores."
+    },
+    "fr": {
+     "t": "Structurer une argumentation",
+     "g": "Organiser ses opinions : erstens, zweitens, außerdem, einerseits... andererseits, schließlich.",
+     "p": [
+      "Énumérer : erstens, zweitens, drittens ; ajouter : außerdem, darüber hinaus. En position 1, le verbe suit.",
+      "Peser le pour et le contre : einerseits... andererseits : Einerseits ist die Stadt teuer, andererseits gibt es viele Jobs.",
+      "Conclure : schließlich, zum Schluss, alles in allem, deshalb finde ich, dass..."
+     ],
+     "q": "Ville ou campagne ? Donne-moi un court argument avec erstens, außerdem, einerseits... andererseits et alles in allem.",
+     "c": "Écris une opinion de six phrases sur un sujet qui te plaît, avec au moins quatre mots de liaison."
+    },
+    "it": {
+     "t": "Strutturare un'argomentazione",
+     "g": "Organizzi le opinioni con chiarezza: erstens, zweitens, außerdem, einerseits... andererseits, schließlich.",
+     "p": [
+      "Elenca: erstens, zweitens, drittens; aggiungi: außerdem, darüber hinaus. In posizione 1, poi il verbo.",
+      "Valuta i pro e i contro: einerseits... andererseits: Einerseits ist die Stadt teuer, andererseits gibt es viele Jobs.",
+      "Concludi: schließlich, zum Schluss, alles in allem, deshalb finde ich, dass..."
+     ],
+     "q": "Città o campagna? Dammi una breve argomentazione con erstens, außerdem, einerseits... andererseits e alles in allem.",
+     "c": "Scrivi un'opinione di sei frasi su un tema che ti piace con almeno quattro connettivi."
+    },
+    "pt": {
+     "t": "Estruturar uma argumentação",
+     "g": "Organizar as opiniões com clareza: erstens, zweitens, außerdem, einerseits... andererseits, schließlich.",
+     "p": [
+      "Enumerar: erstens, zweitens, drittens; acrescentar: außerdem, darüber hinaus. Na posição 1, segue o verbo.",
+      "Pesar os dois lados: einerseits... andererseits: Einerseits ist die Stadt teuer, andererseits gibt es viele Jobs.",
+      "Concluir: schließlich, zum Schluss, alles in allem, deshalb finde ich, dass..."
+     ],
+     "q": "Cidade ou campo? Dá-me um argumento curto com erstens, außerdem, einerseits... andererseits e alles in allem.",
+     "c": "Escreve uma opinião de seis frases sobre um tema de que gostes, com pelo menos quatro conectores."
+    },
+    "pt_BR": {
+     "t": "Estruturar uma argumentação",
+     "g": "Organizar as opiniões com clareza: erstens, zweitens, außerdem, einerseits... andererseits, schließlich.",
+     "p": [
+      "Enumerar: erstens, zweitens, drittens; acrescentar: außerdem, darüber hinaus. Na posição 1, vem o verbo.",
+      "Pesar os dois lados: einerseits... andererseits: Einerseits ist die Stadt teuer, andererseits gibt es viele Jobs.",
+      "Concluir: schließlich, zum Schluss, alles in allem, deshalb finde ich, dass..."
+     ],
+     "q": "Cidade ou campo? Me dê um argumento curto com erstens, außerdem, einerseits... andererseits e alles in allem.",
+     "c": "Escreva uma opinião de seis frases sobre um tema de que você gosta, com pelo menos quatro conectores."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "erstens / zweitens",
+      "ex": "Erstens ist das Fahrrad billig, zweitens ist es gesund."
+     },
+     {
+      "w": "außerdem",
+      "ex": "Außerdem macht Radfahren Spaß."
+     },
+     {
+      "w": "einerseits ... andererseits",
+      "ex": "Einerseits mag ich Ruhe, andererseits liebe ich Konzerte."
+     },
+     {
+      "w": "darüber hinaus",
+      "ex": "Darüber hinaus spart man Zeit im Stau."
+     },
+     {
+      "w": "schließlich",
+      "ex": "Schließlich muss jeder selbst entscheiden."
+     },
+     {
+      "w": "alles in allem",
+      "ex": "Alles in allem bin ich sehr zufrieden."
+     }
+    ],
+    "gram": "Gliederungsadverbien (erstens, außerdem, einerseits, schließlich) auf Position 1: danach direkt das Verb (Außerdem ist es…)."
+   }
+  },
+  {
+   "d": 210,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "News vocabulary",
+     "g": "Learn the words of the news: die Nachrichten, die Schlagzeile, der Artikel, die Quelle.",
+     "p": [
+      "Media: die Nachrichten (news), die Zeitung, die Schlagzeile (headline), der Artikel, der Bericht, die Sendung.",
+      "People and verbs: der Journalist, berichten über + accusative, veröffentlichen, melden: Die Zeitung berichtet über das Festival.",
+      "Check your sources: die Quelle, zuverlässig, die Falschmeldung; news often uses passive and Konjunktiv I."
+     ],
+     "q": "How do you get your news? Tell me: Ich lese... / Ich höre... and which Quelle you find zuverlässig.",
+     "c": "Read one short news item in German today and write down its Schlagzeile and three new words."
+    },
+    "de": {
+     "t": "Wortschatz Nachrichten",
+     "g": "Du lernst den Wortschatz der Nachrichten: die Nachrichten, die Schlagzeile, der Artikel, die Quelle.",
+     "p": [
+      "Medien: die Nachrichten, die Zeitung, die Schlagzeile, der Artikel, der Bericht, die Sendung.",
+      "Personen und Verben: der Journalist, berichten über + Akkusativ, veröffentlichen, melden: Die Zeitung berichtet über das Festival.",
+      "Quellen prüfen: die Quelle, zuverlässig, die Falschmeldung; Nachrichten nutzen oft Passiv und Konjunktiv I."
+     ],
+     "q": "Wie informierst du dich? Erzähl: Ich lese... / Ich höre... und welche Quelle du zuverlässig findest.",
+     "c": "Lies heute eine kurze Nachricht auf Deutsch und notiere die Schlagzeile und drei neue Wörter."
+    },
+    "es": {
+     "t": "Vocabulario de noticias",
+     "g": "Aprende las palabras de las noticias: die Nachrichten, die Schlagzeile, der Artikel, die Quelle.",
+     "p": [
+      "Medios: die Nachrichten (noticias), die Zeitung, die Schlagzeile (titular), der Artikel, der Bericht, die Sendung.",
+      "Personas y verbos: der Journalist, berichten über + acusativo, veröffentlichen, melden: Die Zeitung berichtet über das Festival.",
+      "Comprueba las fuentes: die Quelle, zuverlässig (fiable), die Falschmeldung (bulo); se usan mucho la pasiva y el Konjunktiv I."
+     ],
+     "q": "¿Cómo te informas? Cuéntame: Ich lese... / Ich höre... y qué Quelle te parece zuverlässig.",
+     "c": "Lee hoy una noticia corta en alemán y apunta su Schlagzeile y tres palabras nuevas."
+    },
+    "fr": {
+     "t": "Le vocabulaire de l'actualité",
+     "g": "Apprendre les mots de l'actualité : die Nachrichten, die Schlagzeile, der Artikel, die Quelle.",
+     "p": [
+      "Médias : die Nachrichten (infos), die Zeitung, die Schlagzeile (gros titre), der Artikel, der Bericht, die Sendung.",
+      "Personnes et verbes : der Journalist, berichten über + accusatif, veröffentlichen, melden : Die Zeitung berichtet über das Festival.",
+      "Vérifier ses sources : die Quelle, zuverlässig (fiable), die Falschmeldung (fausse info) ; passif et Konjunktiv I fréquents."
+     ],
+     "q": "Comment t'informes-tu ? Dis-moi : Ich lese... / Ich höre... et quelle Quelle tu trouves zuverlässig.",
+     "c": "Lis aujourd'hui une brève en allemand et note sa Schlagzeile et trois mots nouveaux."
+    },
+    "it": {
+     "t": "Il lessico delle notizie",
+     "g": "Impari le parole delle notizie: die Nachrichten, die Schlagzeile, der Artikel, die Quelle.",
+     "p": [
+      "Media: die Nachrichten (notizie), die Zeitung, die Schlagzeile (titolo), der Artikel, der Bericht, die Sendung.",
+      "Persone e verbi: der Journalist, berichten über + accusativo, veröffentlichen, melden: Die Zeitung berichtet über das Festival.",
+      "Verifica le fonti: die Quelle, zuverlässig (affidabile), die Falschmeldung (notizia falsa); spesso passivo e Konjunktiv I."
+     ],
+     "q": "Come ti informi? Raccontami: Ich lese... / Ich höre... e quale Quelle trovi zuverlässig.",
+     "c": "Leggi oggi una breve notizia in tedesco e annota la Schlagzeile e tre parole nuove."
+    },
+    "pt": {
+     "t": "Vocabulário das notícias",
+     "g": "Aprender as palavras das notícias: die Nachrichten, die Schlagzeile, der Artikel, die Quelle.",
+     "p": [
+      "Media: die Nachrichten (notícias), die Zeitung, die Schlagzeile (manchete), der Artikel, der Bericht, die Sendung.",
+      "Pessoas e verbos: der Journalist, berichten über + acusativo, veröffentlichen, melden: Die Zeitung berichtet über das Festival.",
+      "Verifica as fontes: die Quelle, zuverlässig (fiável), die Falschmeldung (notícia falsa); usa-se muito a passiva e o Konjunktiv I."
+     ],
+     "q": "Como te informas? Conta-me: Ich lese... / Ich höre... e que Quelle achas zuverlässig.",
+     "c": "Lê hoje uma notícia curta em alemão e aponta a Schlagzeile e três palavras novas."
+    },
+    "pt_BR": {
+     "t": "Vocabulário das notícias",
+     "g": "Aprender as palavras das notícias: die Nachrichten, die Schlagzeile, der Artikel, die Quelle.",
+     "p": [
+      "Mídia: die Nachrichten (notícias), die Zeitung, die Schlagzeile (manchete), der Artikel, der Bericht, die Sendung.",
+      "Pessoas e verbos: der Journalist, berichten über + acusativo, veröffentlichen, melden: Die Zeitung berichtet über das Festival.",
+      "Confira as fontes: die Quelle, zuverlässig (confiável), die Falschmeldung (notícia falsa); passiva e Konjunktiv I são comuns."
+     ],
+     "q": "Como você se informa? Me conte: Ich lese... / Ich höre... e qual Quelle você acha zuverlässig.",
+     "c": "Leia hoje uma notícia curta em alemão e anote a Schlagzeile e três palavras novas."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Nachrichten",
+      "ex": "Ich höre jeden Morgen die Nachrichten im Radio."
+     },
+     {
+      "w": "die Schlagzeile",
+      "ex": "Die Schlagzeile war sehr spannend."
+     },
+     {
+      "w": "der Artikel",
+      "ex": "Hast du den Artikel über das Stadtfest gelesen?"
+     },
+     {
+      "w": "die Quelle",
+      "ex": "Woher kommt die Information? Was ist die Quelle?"
+     },
+     {
+      "w": "berichten über",
+      "ex": "Die Zeitung berichtet über den neuen Bahnhof."
+     },
+     {
+      "w": "zuverlässig",
+      "ex": "Diese Zeitung gilt als sehr zuverlässig."
+     }
+    ],
+    "gram": "Nachrichtensprache: berichten über + Akkusativ; oft Passiv (Es wurde gemeldet…) und Konjunktiv I (Er sagte, er sei…)."
+   }
+  }
+ ]
+}

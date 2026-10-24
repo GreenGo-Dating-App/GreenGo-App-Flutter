@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 281,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Konjunktiv I in the news",
+     "g": "Understand reported speech in the media: Der Sprecher sagte, er werde..., es gebe...",
+     "p": [
+      "News reports use Konjunktiv I to report what others said neutrally: Die Ministerin sagte, sie sei zufrieden.",
+      "Forms: stem + -e: er komme, sie habe, es gebe, er werde. sein is special: ich sei, er sei, sie seien.",
+      "If Konjunktiv I looks like the present (sie haben), use Konjunktiv II instead: Sie sagten, sie hätten keine Zeit."
+     ],
+     "q": "Report something a friend told you recently, starting with Er/Sie sagte, ... and Konjunktiv I!",
+     "c": "Turn five direct quotes from a news story into reported speech with Konjunktiv I."
+    },
+    "de": {
+     "t": "Konjunktiv I in den Nachrichten",
+     "g": "Du verstehst indirekte Rede in den Medien: Der Sprecher sagte, er werde..., es gebe...",
+     "p": [
+      "Nachrichten geben fremde Aussagen neutral im Konjunktiv I wieder: Die Ministerin sagte, sie sei zufrieden.",
+      "Formen: Stamm + -e: er komme, sie habe, es gebe, er werde. sein ist besonders: ich sei, er sei, sie seien.",
+      "Wenn Konjunktiv I wie Präsens aussieht (sie haben), nimmst du Konjunktiv II: Sie sagten, sie hätten keine Zeit."
+     ],
+     "q": "Gib etwas wieder, das dir ein Freund neulich erzählt hat, mit Er/Sie sagte, ... und Konjunktiv I!",
+     "c": "Mach aus fünf direkten Zitaten einer Nachricht indirekte Rede im Konjunktiv I."
+    },
+    "es": {
+     "t": "El Konjunktiv I en las noticias",
+     "g": "Entiende el estilo indirecto en los medios: Der Sprecher sagte, er werde..., es gebe...",
+     "p": [
+      "Las noticias usan el Konjunktiv I para citar con neutralidad: Die Ministerin sagte, sie sei zufrieden.",
+      "Formas: raíz + -e: er komme, sie habe, es gebe, er werde. sein es especial: ich sei, er sei, sie seien.",
+      "Si el Konjunktiv I coincide con el presente (sie haben), usa el Konjunktiv II: Sie sagten, sie hätten keine Zeit."
+     ],
+     "q": "Cuéntame algo que te dijo un amigo hace poco, empezando con Er/Sie sagte, ... y Konjunktiv I.",
+     "c": "Convierte cinco citas directas de una noticia en estilo indirecto con Konjunktiv I."
+    },
+    "fr": {
+     "t": "Le Konjunktiv I dans les infos",
+     "g": "Comprendre le discours rapporté dans les médias : Der Sprecher sagte, er werde..., es gebe...",
+     "p": [
+      "Les infos utilisent le Konjunktiv I pour rapporter des propos de façon neutre : Die Ministerin sagte, sie sei zufrieden.",
+      "Formes : radical + -e : er komme, sie habe, es gebe, er werde. sein est spécial : ich sei, er sei, sie seien.",
+      "Si le Konjunktiv I ressemble au présent (sie haben), prends le Konjunktiv II : Sie sagten, sie hätten keine Zeit."
+     ],
+     "q": "Rapporte-moi ce qu'un ami t'a dit récemment, en commençant par Er/Sie sagte, ... avec le Konjunktiv I !",
+     "c": "Transforme cinq citations directes d'un article en discours indirect au Konjunktiv I."
+    },
+    "it": {
+     "t": "Il Konjunktiv I nelle notizie",
+     "g": "Capisci il discorso indiretto nei media: Der Sprecher sagte, er werde..., es gebe...",
+     "p": [
+      "Le notizie usano il Konjunktiv I per riferire in modo neutro: Die Ministerin sagte, sie sei zufrieden.",
+      "Forme: radice + -e: er komme, sie habe, es gebe, er werde. sein è speciale: ich sei, er sei, sie seien.",
+      "Se il Konjunktiv I coincide col presente (sie haben), usa il Konjunktiv II: Sie sagten, sie hätten keine Zeit."
+     ],
+     "q": "Riferiscimi qualcosa che ti ha detto un amico di recente, iniziando con Er/Sie sagte, ... e il Konjunktiv I!",
+     "c": "Trasforma cinque citazioni dirette di una notizia in discorso indiretto con il Konjunktiv I."
+    },
+    "pt": {
+     "t": "O Konjunktiv I nas notícias",
+     "g": "Perceber o discurso indireto nos media: Der Sprecher sagte, er werde..., es gebe...",
+     "p": [
+      "As notícias usam o Konjunktiv I para relatar com neutralidade: Die Ministerin sagte, sie sei zufrieden.",
+      "Formas: radical + -e: er komme, sie habe, es gebe, er werde. sein é especial: ich sei, er sei, sie seien.",
+      "Se o Konjunktiv I for igual ao presente (sie haben), usa o Konjunktiv II: Sie sagten, sie hätten keine Zeit."
+     ],
+     "q": "Conta-me algo que um amigo te disse há pouco, começando com Er/Sie sagte, ... e Konjunktiv I!",
+     "c": "Transforma cinco citações diretas de uma notícia em discurso indireto com Konjunktiv I."
+    },
+    "pt_BR": {
+     "t": "O Konjunktiv I nas notícias",
+     "g": "Entender o discurso indireto na mídia: Der Sprecher sagte, er werde..., es gebe...",
+     "p": [
+      "As notícias usam o Konjunktiv I para relatar com neutralidade: Die Ministerin sagte, sie sei zufrieden.",
+      "Formas: radical + -e: er komme, sie habe, es gebe, er werde. sein é especial: ich sei, er sei, sie seien.",
+      "Se o Konjunktiv I for igual ao presente (sie haben), use o Konjunktiv II: Sie sagten, sie hätten keine Zeit."
+     ],
+     "q": "Me conte algo que um amigo te disse recentemente, começando com Er/Sie sagte, ... e Konjunktiv I!",
+     "c": "Transforme cinco citações diretas de uma notícia em discurso indireto com Konjunktiv I."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "er sei",
+      "ex": "Der Trainer sagte, er sei sehr stolz auf das Team."
+     },
+     {
+      "w": "es gebe",
+      "ex": "Laut Polizei gebe es keine Verletzten."
+     },
+     {
+      "w": "sie habe",
+      "ex": "Die Autorin erklärte, sie habe zwei Jahre recherchiert."
+     },
+     {
+      "w": "er werde",
+      "ex": "Der Bürgermeister kündigte an, er werde die Brücke erneuern."
+     },
+     {
+      "w": "laut + Dativ",
+      "ex": "Laut dem Bericht steigen die Besucherzahlen."
+     },
+     {
+      "w": "der Sprecher / die Sprecherin",
+      "ex": "Ein Sprecher der Firma sagte, man prüfe den Fall."
+     }
+    ],
+    "gram": "Indirekte Rede: Konjunktiv I (er sei, habe, komme, werde); gleich wie Indikativ → Konjunktiv II (sie hätten, sie würden)."
+   }
+  },
+  {
+   "d": 282,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Konjunktiv I past",
+     "g": "Report past events in indirect speech: Er sagt, er habe das nicht gewusst.",
+     "p": [
+      "Past in Konjunktiv I = habe/sei + Partizip II: Sie sagt, sie sei gestern in Berlin gewesen. Er meint, er habe alles versucht.",
+      "Direct speech can be in any past tense (war, ist gewesen, war gewesen): indirect speech has only this one past form.",
+      "For plural or ich forms that look like the indicative, switch to hätten/wären: Sie behaupten, sie hätten nichts gesehen."
+     ],
+     "q": "Tell me about a story you heard, reporting what someone said they had done, with habe or sei!",
+     "c": "Rewrite a short interview: change six past-tense answers into indirect speech."
+    },
+    "de": {
+     "t": "Konjunktiv I der Vergangenheit",
+     "g": "Du gibst Vergangenes indirekt wieder: Er sagt, er habe das nicht gewusst.",
+     "p": [
+      "Vergangenheit im Konjunktiv I = habe/sei + Partizip II: Sie sagt, sie sei gestern in Berlin gewesen. Er meint, er habe alles versucht.",
+      "Die direkte Rede kann jede Vergangenheitsform haben (war, ist gewesen, war gewesen): indirekt gibt es nur diese eine.",
+      "Bei Formen, die wie der Indikativ aussehen, nimmst du hätten/wären: Sie behaupten, sie hätten nichts gesehen."
+     ],
+     "q": "Erzähl mir eine Geschichte, die du gehört hast, und gib wieder, was jemand getan haben soll, mit habe oder sei!",
+     "c": "Schreib ein kurzes Interview um: Mach aus sechs Antworten in der Vergangenheit indirekte Rede."
+    },
+    "es": {
+     "t": "Konjunktiv I en pasado",
+     "g": "Cuenta hechos pasados en estilo indirecto: Er sagt, er habe das nicht gewusst (dice que no lo sabía).",
+     "p": [
+      "Pasado en Konjunktiv I = habe/sei + Partizip II: Sie sagt, sie sei gestern in Berlin gewesen. Er meint, er habe alles versucht.",
+      "La cita directa puede ir en cualquier pasado (war, ist gewesen, war gewesen): en indirecto solo hay esta forma.",
+      "Si la forma coincide con el indicativo, usa hätten/wären: Sie behaupten, sie hätten nichts gesehen."
+     ],
+     "q": "Cuéntame una historia que oíste, citando lo que alguien dijo que había hecho, con habe o sei.",
+     "c": "Reescribe una entrevista corta: pasa seis respuestas en pasado a estilo indirecto."
+    },
+    "fr": {
+     "t": "Le Konjunktiv I au passé",
+     "g": "Rapporter des faits passés au discours indirect : Er sagt, er habe das nicht gewusst (il dit qu'il ne le savait pas).",
+     "p": [
+      "Passé au Konjunktiv I = habe/sei + Partizip II : Sie sagt, sie sei gestern in Berlin gewesen. Er meint, er habe alles versucht.",
+      "Le discours direct peut être à n'importe quel passé (war, ist gewesen, war gewesen) : à l'indirect, une seule forme.",
+      "Si la forme ressemble à l'indicatif, prends hätten/wären : Sie behaupten, sie hätten nichts gesehen."
+     ],
+     "q": "Raconte-moi une histoire entendue en rapportant ce que quelqu'un dit avoir fait, avec habe ou sei !",
+     "c": "Réécris une courte interview : passe six réponses au passé en discours indirect."
+    },
+    "it": {
+     "t": "Il Konjunktiv I al passato",
+     "g": "Riferisci fatti passati in forma indiretta: Er sagt, er habe das nicht gewusst (dice di non saperlo).",
+     "p": [
+      "Passato al Konjunktiv I = habe/sei + Partizip II: Sie sagt, sie sei gestern in Berlin gewesen. Er meint, er habe alles versucht.",
+      "Il discorso diretto può avere qualsiasi passato (war, ist gewesen, war gewesen): all'indiretto c'è solo questa forma.",
+      "Se la forma coincide con l'indicativo, usa hätten/wären: Sie behaupten, sie hätten nichts gesehen."
+     ],
+     "q": "Raccontami una storia che hai sentito, riferendo cosa qualcuno dice di aver fatto, con habe o sei!",
+     "c": "Riscrivi una breve intervista: trasforma sei risposte al passato in discorso indiretto."
+    },
+    "pt": {
+     "t": "O Konjunktiv I no passado",
+     "g": "Relatar factos passados em discurso indireto: Er sagt, er habe das nicht gewusst (diz que não sabia).",
+     "p": [
+      "Passado no Konjunktiv I = habe/sei + Partizip II: Sie sagt, sie sei gestern in Berlin gewesen. Er meint, er habe alles versucht.",
+      "O discurso direto pode estar em qualquer passado (war, ist gewesen, war gewesen): no indireto há só esta forma.",
+      "Se a forma coincidir com o indicativo, usa hätten/wären: Sie behaupten, sie hätten nichts gesehen."
+     ],
+     "q": "Conta-me uma história que ouviste, relatando o que alguém disse ter feito, com habe ou sei!",
+     "c": "Reescreve uma entrevista curta: passa seis respostas no passado para discurso indireto."
+    },
+    "pt_BR": {
+     "t": "O Konjunktiv I no passado",
+     "g": "Relatar fatos passados em discurso indireto: Er sagt, er habe das nicht gewusst (diz que não sabia).",
+     "p": [
+      "Passado no Konjunktiv I = habe/sei + Partizip II: Sie sagt, sie sei gestern in Berlin gewesen. Er meint, er habe alles versucht.",
+      "O discurso direto pode estar em qualquer passado (war, ist gewesen, war gewesen): no indireto só existe esta forma.",
+      "Se a forma coincidir com o indicativo, use hätten/wären: Sie behaupten, sie hätten nichts gesehen."
+     ],
+     "q": "Me conte uma história que você ouviu, relatando o que alguém disse ter feito, com habe ou sei!",
+     "c": "Reescreva uma entrevista curta: passe seis respostas no passado para discurso indireto."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "er habe gewusst",
+      "ex": "Er behauptet, er habe von nichts gewusst."
+     },
+     {
+      "w": "sie sei gewesen",
+      "ex": "Sie erzählte, sie sei schon dreimal in Japan gewesen."
+     },
+     {
+      "w": "behaupten",
+      "ex": "Er behauptet, er habe den Schlüssel nicht genommen."
+     },
+     {
+      "w": "erklären",
+      "ex": "Die Firma erklärte, man habe das Problem gelöst."
+     },
+     {
+      "w": "angeblich",
+      "ex": "Angeblich hat er die Wette gewonnen."
+     },
+     {
+      "w": "sie hätten gesehen",
+      "ex": "Die Zeugen sagten, sie hätten nichts gesehen."
+     }
+    ],
+    "gram": "Vergangenheit indirekt: habe/sei + Partizip II (er habe gesagt, sie sei gegangen); Ersatz: hätten/wären + Partizip II."
+   }
+  },
+  {
+   "d": 283,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Extended participial attributes",
+     "g": "Read dense written style: der von allen geschätzte Lehrer.",
+     "p": [
+      "A participle with extra words can stand between article and noun: der von allen geschätzte Lehrer = the teacher who is valued by everyone.",
+      "Read from the article to the noun, then go back: die seit Jahren geplante Reise = the trip planned for years.",
+      "It is common in newspapers and academic texts; in speech, use a relative clause: der Lehrer, den alle schätzen."
+     ],
+     "q": "Can you turn this into a relative clause: das im letzten Jahr eröffnete Museum? Try it!",
+     "c": "Find or write three extended attributes and rewrite each as a relative clause."
+    },
+    "de": {
+     "t": "Erweiterte Partizipialattribute",
+     "g": "Du liest dichten Schriftstil: der von allen geschätzte Lehrer.",
+     "p": [
+      "Ein Partizip mit Ergänzungen steht zwischen Artikel und Nomen: der von allen geschätzte Lehrer = der Lehrer, den alle schätzen.",
+      "Lies vom Artikel bis zum Nomen und dann zurück: die seit Jahren geplante Reise.",
+      "Typisch für Zeitungen und Fachtexte; mündlich nimmst du einen Relativsatz: der Lehrer, den alle schätzen."
+     ],
+     "q": "Kannst du daraus einen Relativsatz machen: das im letzten Jahr eröffnete Museum? Probier es!",
+     "c": "Finde oder schreib drei erweiterte Attribute und forme jedes in einen Relativsatz um."
+    },
+    "es": {
+     "t": "Atributos participiales extendidos",
+     "g": "Lee el estilo escrito denso: der von allen geschätzte Lehrer (el profesor apreciado por todos).",
+     "p": [
+      "Un participio con complementos va entre artículo y sustantivo: der von allen geschätzte Lehrer = der Lehrer, den alle schätzen.",
+      "Lee del artículo al sustantivo y luego vuelve atrás: die seit Jahren geplante Reise (el viaje planeado desde hace años).",
+      "Es típico de periódicos y textos académicos; al hablar, usa una relativa: der Lehrer, den alle schätzen."
+     ],
+     "q": "¿Puedes convertir esto en una relativa: das im letzten Jahr eröffnete Museum? ¡Inténtalo!",
+     "c": "Busca o escribe tres atributos extendidos y transforma cada uno en una oración de relativo."
+    },
+    "fr": {
+     "t": "Les groupes participiaux étendus",
+     "g": "Lire le style écrit dense : der von allen geschätzte Lehrer (le professeur apprécié de tous).",
+     "p": [
+      "Un participe avec compléments se place entre l'article et le nom : der von allen geschätzte Lehrer = der Lehrer, den alle schätzen.",
+      "Lis de l'article au nom, puis reviens en arrière : die seit Jahren geplante Reise (le voyage prévu depuis des années).",
+      "Fréquent dans la presse et les textes savants ; à l'oral, prends une relative : der Lehrer, den alle schätzen."
+     ],
+     "q": "Peux-tu transformer ceci en relative : das im letzten Jahr eröffnete Museum ? Essaie !",
+     "c": "Trouve ou écris trois groupes participiaux étendus et transforme chacun en relative."
+    },
+    "it": {
+     "t": "Attributi participiali estesi",
+     "g": "Leggi lo stile scritto denso: der von allen geschätzte Lehrer (l'insegnante stimato da tutti).",
+     "p": [
+      "Un participio con complementi sta tra articolo e nome: der von allen geschätzte Lehrer = der Lehrer, den alle schätzen.",
+      "Leggi dall'articolo al nome e poi torna indietro: die seit Jahren geplante Reise (il viaggio progettato da anni).",
+      "Tipico di giornali e testi accademici; parlando usa una relativa: der Lehrer, den alle schätzen."
+     ],
+     "q": "Riesci a trasformarlo in relativa: das im letzten Jahr eröffnete Museum? Prova!",
+     "c": "Trova o scrivi tre attributi estesi e trasforma ciascuno in una frase relativa."
+    },
+    "pt": {
+     "t": "Atributos participiais alargados",
+     "g": "Ler estilo escrito denso: der von allen geschätzte Lehrer (o professor estimado por todos).",
+     "p": [
+      "Um particípio com complementos fica entre artigo e nome: der von allen geschätzte Lehrer = der Lehrer, den alle schätzen.",
+      "Lê do artigo ao nome e depois volta atrás: die seit Jahren geplante Reise (a viagem planeada há anos).",
+      "É típico de jornais e textos académicos; a falar, usa uma relativa: der Lehrer, den alle schätzen."
+     ],
+     "q": "Consegues transformar isto numa relativa: das im letzten Jahr eröffnete Museum? Experimenta!",
+     "c": "Procura ou escreve três atributos alargados e transforma cada um numa oração relativa."
+    },
+    "pt_BR": {
+     "t": "Atributos participiais estendidos",
+     "g": "Ler estilo escrito denso: der von allen geschätzte Lehrer (o professor estimado por todos).",
+     "p": [
+      "Um particípio com complementos fica entre artigo e substantivo: der von allen geschätzte Lehrer = der Lehrer, den alle schätzen.",
+      "Leia do artigo ao substantivo e depois volte: die seit Jahren geplante Reise (a viagem planejada há anos).",
+      "É típico de jornais e textos acadêmicos; falando, use uma relativa: der Lehrer, den alle schätzen."
+     ],
+     "q": "Você consegue transformar isto numa relativa: das im letzten Jahr eröffnete Museum? Tente!",
+     "c": "Procure ou escreva três atributos estendidos e transforme cada um numa oração relativa."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "geschätzt",
+      "ex": "Der von allen geschätzte Kollege geht in Rente."
+     },
+     {
+      "w": "seit Jahren geplant",
+      "ex": "Die seit Jahren geplante Brücke wird endlich gebaut."
+     },
+     {
+      "w": "eröffnet",
+      "ex": "Das im Mai eröffnete Café ist schon sehr beliebt."
+     },
+     {
+      "w": "veröffentlicht",
+      "ex": "Die gestern veröffentlichte Studie überrascht viele."
+     },
+     {
+      "w": "renoviert",
+      "ex": "Wir wohnen in einem frisch renovierten Altbau."
+     },
+     {
+      "w": "empfohlen",
+      "ex": "Das von dir empfohlene Buch war großartig."
+     }
+    ],
+    "gram": "Erweitertes Attribut: Artikel + Ergänzungen + Partizip mit Adjektivendung + Nomen (die gestern veröffentlichte Studie)."
+   }
+  },
+  {
+   "d": 284,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Partizip I and II as adjectives",
+     "g": "Use participles as adjectives: die lachenden Kinder, das gekochte Ei.",
+     "p": [
+      "Partizip I (infinitive + d) = active, happening now: die lachenden Kinder (the laughing children), das schlafende Baby.",
+      "Partizip II = passive or finished: das gekochte Ei (the boiled egg), die geschlossene Tür, das verlorene Handy.",
+      "Both take normal adjective endings: ein spannendes Buch, mit geschlossenen Augen."
+     ],
+     "q": "Describe a picture of a park using three Partizip I and three Partizip II adjectives!",
+     "c": "Write six noun phrases: three with Partizip I (singend, lachend...) and three with Partizip II (gebacken, repariert...)."
+    },
+    "de": {
+     "t": "Partizip I und II als Adjektiv",
+     "g": "Du benutzt Partizipien als Adjektive: die lachenden Kinder, das gekochte Ei.",
+     "p": [
+      "Partizip I (Infinitiv + d) = aktiv, gleichzeitig: die lachenden Kinder, das schlafende Baby.",
+      "Partizip II = passiv oder abgeschlossen: das gekochte Ei, die geschlossene Tür, das verlorene Handy.",
+      "Beide bekommen normale Adjektivendungen: ein spannendes Buch, mit geschlossenen Augen."
+     ],
+     "q": "Beschreib ein Bild von einem Park mit drei Adjektiven im Partizip I und drei im Partizip II!",
+     "c": "Schreib sechs Nominalgruppen: drei mit Partizip I (singend, lachend...) und drei mit Partizip II (gebacken, repariert...)."
+    },
+    "es": {
+     "t": "Partizip I y II como adjetivos",
+     "g": "Usa participios como adjetivos: die lachenden Kinder, das gekochte Ei.",
+     "p": [
+      "Partizip I (infinitivo + d) = activo, simultáneo: die lachenden Kinder (los niños que ríen), das schlafende Baby.",
+      "Partizip II = pasivo o terminado: das gekochte Ei (el huevo cocido), die geschlossene Tür, das verlorene Handy.",
+      "Ambos llevan terminaciones de adjetivo normales: ein spannendes Buch, mit geschlossenen Augen."
+     ],
+     "q": "Describe una imagen de un parque con tres adjetivos en Partizip I y tres en Partizip II.",
+     "c": "Escribe seis grupos nominales: tres con Partizip I (singend, lachend...) y tres con Partizip II (gebacken, repariert...)."
+    },
+    "fr": {
+     "t": "Partizip I et II comme adjectifs",
+     "g": "Utiliser les participes comme adjectifs : die lachenden Kinder, das gekochte Ei.",
+     "p": [
+      "Partizip I (infinitif + d) = actif, simultané : die lachenden Kinder (les enfants qui rient), das schlafende Baby.",
+      "Partizip II = passif ou achevé : das gekochte Ei (l'œuf cuit), die geschlossene Tür, das verlorene Handy.",
+      "Les deux prennent les terminaisons normales de l'adjectif : ein spannendes Buch, mit geschlossenen Augen."
+     ],
+     "q": "Décris l'image d'un parc avec trois adjectifs au Partizip I et trois au Partizip II !",
+     "c": "Écris six groupes nominaux : trois avec Partizip I (singend, lachend...) et trois avec Partizip II (gebacken, repariert...)."
+    },
+    "it": {
+     "t": "Partizip I e II come aggettivi",
+     "g": "Usa i participi come aggettivi: die lachenden Kinder, das gekochte Ei.",
+     "p": [
+      "Partizip I (infinito + d) = attivo, contemporaneo: die lachenden Kinder (i bambini che ridono), das schlafende Baby.",
+      "Partizip II = passivo o concluso: das gekochte Ei (l'uovo sodo), die geschlossene Tür, das verlorene Handy.",
+      "Entrambi prendono le normali desinenze degli aggettivi: ein spannendes Buch, mit geschlossenen Augen."
+     ],
+     "q": "Descrivi l'immagine di un parco con tre aggettivi al Partizip I e tre al Partizip II!",
+     "c": "Scrivi sei gruppi nominali: tre con Partizip I (singend, lachend...) e tre con Partizip II (gebacken, repariert...)."
+    },
+    "pt": {
+     "t": "Partizip I e II como adjetivos",
+     "g": "Usar particípios como adjetivos: die lachenden Kinder, das gekochte Ei.",
+     "p": [
+      "Partizip I (infinitivo + d) = ativo, simultâneo: die lachenden Kinder (as crianças a rir), das schlafende Baby.",
+      "Partizip II = passivo ou concluído: das gekochte Ei (o ovo cozido), die geschlossene Tür, das verlorene Handy.",
+      "Ambos levam terminações normais de adjetivo: ein spannendes Buch, mit geschlossenen Augen."
+     ],
+     "q": "Descreve a imagem de um parque com três adjetivos em Partizip I e três em Partizip II!",
+     "c": "Escreve seis grupos nominais: três com Partizip I (singend, lachend...) e três com Partizip II (gebacken, repariert...)."
+    },
+    "pt_BR": {
+     "t": "Partizip I e II como adjetivos",
+     "g": "Usar particípios como adjetivos: die lachenden Kinder, das gekochte Ei.",
+     "p": [
+      "Partizip I (infinitivo + d) = ativo, simultâneo: die lachenden Kinder (as crianças rindo), das schlafende Baby.",
+      "Partizip II = passivo ou concluído: das gekochte Ei (o ovo cozido), die geschlossene Tür, das verlorene Handy.",
+      "Ambos levam terminações normais de adjetivo: ein spannendes Buch, mit geschlossenen Augen."
+     ],
+     "q": "Descreva a imagem de um parque com três adjetivos em Partizip I e três em Partizip II!",
+     "c": "Escreva seis grupos nominais: três com Partizip I (singend, lachend...) e três com Partizip II (gebacken, repariert...)."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "lachend",
+      "ex": "Die lachenden Kinder spielen im Garten."
+     },
+     {
+      "w": "schlafend",
+      "ex": "Leise, im Zimmer liegt ein schlafendes Baby."
+     },
+     {
+      "w": "spannend",
+      "ex": "Ich lese gerade ein spannendes Buch."
+     },
+     {
+      "w": "gekocht",
+      "ex": "Zum Frühstück gibt es ein gekochtes Ei."
+     },
+     {
+      "w": "geschlossen",
+      "ex": "Bei geschlossenen Fenstern ist es zu warm."
+     },
+     {
+      "w": "verloren",
+      "ex": "Hast du dein verlorenes Handy wiedergefunden?"
+     }
+    ],
+    "gram": "Partizip I = Infinitiv + d (lachend: aktiv, gleichzeitig); Partizip II (gekocht: passiv/abgeschlossen); beide mit Adjektivendung."
+   }
+  },
+  {
+   "d": 285,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Participle clauses",
+     "g": "Write compact sentences: Im Park angekommen, setzten wir uns.",
+     "p": [
+      "A participle clause replaces a full subordinate clause: Im Park angekommen = Nachdem wir im Park angekommen waren.",
+      "Partizip I shows simultaneity: Laut singend, ging sie nach Hause (while singing loudly). Partizip II shows completion.",
+      "The subject is the same as in the main clause. Set the participle clause off with a comma; it sounds literary."
+     ],
+     "q": "Can you shorten this: Nachdem ich zu Hause angekommen war, kochte ich Tee? Try a participle clause!",
+     "c": "Rewrite four sentences with nachdem or während as participle clauses."
+    },
+    "de": {
+     "t": "Partizipialsätze",
+     "g": "Du schreibst kompakte Sätze: Im Park angekommen, setzten wir uns.",
+     "p": [
+      "Ein Partizipialsatz ersetzt einen Nebensatz: Im Park angekommen = Nachdem wir im Park angekommen waren.",
+      "Partizip I zeigt Gleichzeitigkeit: Laut singend, ging sie nach Hause. Partizip II zeigt Abschluss.",
+      "Das Subjekt ist dasselbe wie im Hauptsatz. Mit Komma abtrennen; der Stil klingt literarisch."
+     ],
+     "q": "Kannst du das kürzen: Nachdem ich zu Hause angekommen war, kochte ich Tee? Probier einen Partizipialsatz!",
+     "c": "Schreib vier Sätze mit nachdem oder während in Partizipialsätze um."
+    },
+    "es": {
+     "t": "Construcciones de participio",
+     "g": "Escribe frases compactas: Im Park angekommen, setzten wir uns (llegados al parque, nos sentamos).",
+     "p": [
+      "Una construcción de participio sustituye a una subordinada: Im Park angekommen = Nachdem wir im Park angekommen waren.",
+      "El Partizip I indica simultaneidad: Laut singend, ging sie nach Hause (cantando fuerte). El Partizip II, acción acabada.",
+      "El sujeto es el mismo que en la principal. Va separado por coma y suena literario."
+     ],
+     "q": "¿Puedes acortar esto: Nachdem ich zu Hause angekommen war, kochte ich Tee? ¡Prueba con un participio!",
+     "c": "Reescribe cuatro frases con nachdem o während como construcciones de participio."
+    },
+    "fr": {
+     "t": "Les propositions participiales",
+     "g": "Écrire des phrases compactes : Im Park angekommen, setzten wir uns (arrivés au parc, nous nous sommes assis).",
+     "p": [
+      "Une participiale remplace une subordonnée : Im Park angekommen = Nachdem wir im Park angekommen waren.",
+      "Le Partizip I marque la simultanéité : Laut singend, ging sie nach Hause (en chantant fort). Le Partizip II, l'action achevée.",
+      "Le sujet est le même que dans la principale. On met une virgule ; le style est littéraire."
+     ],
+     "q": "Peux-tu raccourcir : Nachdem ich zu Hause angekommen war, kochte ich Tee ? Essaie une participiale !",
+     "c": "Réécris quatre phrases avec nachdem ou während en propositions participiales."
+    },
+    "it": {
+     "t": "Costruzioni participiali",
+     "g": "Scrivi frasi compatte: Im Park angekommen, setzten wir uns (arrivati al parco, ci sedemmo).",
+     "p": [
+      "Una participiale sostituisce una secondaria: Im Park angekommen = Nachdem wir im Park angekommen waren.",
+      "Il Partizip I indica contemporaneità: Laut singend, ging sie nach Hause (cantando forte). Il Partizip II, azione conclusa.",
+      "Il soggetto è lo stesso della principale. Si separa con la virgola; suona letterario."
+     ],
+     "q": "Riesci ad accorciare: Nachdem ich zu Hause angekommen war, kochte ich Tee? Prova con una participiale!",
+     "c": "Riscrivi quattro frasi con nachdem o während come costruzioni participiali."
+    },
+    "pt": {
+     "t": "Orações de particípio",
+     "g": "Escrever frases compactas: Im Park angekommen, setzten wir uns (chegados ao parque, sentámo-nos).",
+     "p": [
+      "Uma oração de particípio substitui uma subordinada: Im Park angekommen = Nachdem wir im Park angekommen waren.",
+      "O Partizip I indica simultaneidade: Laut singend, ging sie nach Hause (a cantar alto). O Partizip II, ação concluída.",
+      "O sujeito é o mesmo da principal. Separa-se com vírgula e soa literário."
+     ],
+     "q": "Consegues encurtar isto: Nachdem ich zu Hause angekommen war, kochte ich Tee? Experimenta um particípio!",
+     "c": "Reescreve quatro frases com nachdem ou während como orações de particípio."
+    },
+    "pt_BR": {
+     "t": "Orações de particípio",
+     "g": "Escrever frases compactas: Im Park angekommen, setzten wir uns (chegando ao parque, nos sentamos).",
+     "p": [
+      "Uma oração de particípio substitui uma subordinada: Im Park angekommen = Nachdem wir im Park angekommen waren.",
+      "O Partizip I indica simultaneidade: Laut singend, ging sie nach Hause (cantando alto). O Partizip II, ação concluída.",
+      "O sujeito é o mesmo da principal. Separa-se com vírgula e soa literário."
+     ],
+     "q": "Você consegue encurtar isto: Nachdem ich zu Hause angekommen war, kochte ich Tee? Tente com particípio!",
+     "c": "Reescreva quatro frases com nachdem ou während como orações de particípio."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "angekommen",
+      "ex": "Im Hotel angekommen, gingen wir sofort schlafen."
+     },
+     {
+      "w": "zu Hause angekommen",
+      "ex": "Zu Hause angekommen, kochte ich mir einen Tee."
+     },
+     {
+      "w": "lächelnd",
+      "ex": "Lächelnd öffnete sie die Tür."
+     },
+     {
+      "w": "von der Reise erschöpft",
+      "ex": "Von der Reise erschöpft, schlief er sofort ein."
+     },
+     {
+      "w": "kurz gesagt",
+      "ex": "Kurz gesagt, es war ein toller Tag."
+     },
+     {
+      "w": "genau genommen",
+      "ex": "Genau genommen hast du recht."
+     }
+    ],
+    "gram": "Partizipialsatz statt Nebensatz: Partizip am Ende der Gruppe, Komma, dann Verb: Im Park angekommen, setzten wir uns."
+   }
+  },
+  {
+   "d": 286,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "State passive with sein",
+     "g": "Tell a state from a process: Die Tür ist geschlossen vs. Die Tür wird geschlossen.",
+     "p": [
+      "Vorgangspassiv (werden) = the action happens: Die Tür wird um 20 Uhr geschlossen. Someone is doing it.",
+      "Zustandspassiv (sein) = the result is there: Die Tür ist geschlossen. The action is over; we see the state.",
+      "Common examples: Das Geschäft ist geöffnet. Der Tisch ist reserviert. Das Problem ist gelöst. Past: Die Tür war geschlossen."
+     ],
+     "q": "Look around you: what is geöffnet, geschlossen, eingeschaltet or aufgeräumt right now?",
+     "c": "Write three pairs of sentences: one Vorgangspassiv and one Zustandspassiv for the same verb."
+    },
+    "de": {
+     "t": "Zustandspassiv mit sein",
+     "g": "Du unterscheidest Zustand und Vorgang: Die Tür ist geschlossen und Die Tür wird geschlossen.",
+     "p": [
+      "Vorgangspassiv (werden) = die Handlung passiert: Die Tür wird um 20 Uhr geschlossen.",
+      "Zustandspassiv (sein) = das Ergebnis ist da: Die Tür ist geschlossen. Die Handlung ist vorbei.",
+      "Häufig: Das Geschäft ist geöffnet. Der Tisch ist reserviert. Das Problem ist gelöst. Präteritum: Die Tür war geschlossen."
+     ],
+     "q": "Schau dich um: Was ist gerade geöffnet, geschlossen, eingeschaltet oder aufgeräumt?",
+     "c": "Schreib drei Satzpaare: Vorgangspassiv und Zustandspassiv mit demselben Verb."
+    },
+    "es": {
+     "t": "Pasiva de estado con sein",
+     "g": "Distingue estado y proceso: Die Tür ist geschlossen (está cerrada) frente a Die Tür wird geschlossen (se cierra).",
+     "p": [
+      "Vorgangspassiv (werden) = la acción ocurre: Die Tür wird um 20 Uhr geschlossen. Alguien la está haciendo.",
+      "Zustandspassiv (sein) = el resultado está ahí: Die Tür ist geschlossen. La acción terminó; vemos el estado.",
+      "Ejemplos: Das Geschäft ist geöffnet. Der Tisch ist reserviert. Das Problem ist gelöst. Pasado: Die Tür war geschlossen."
+     ],
+     "q": "Mira a tu alrededor: ¿qué está geöffnet, geschlossen, eingeschaltet o aufgeräumt ahora mismo?",
+     "c": "Escribe tres pares de frases: una Vorgangspassiv y una Zustandspassiv con el mismo verbo."
+    },
+    "fr": {
+     "t": "Le passif d'état avec sein",
+     "g": "Distinguer état et processus : Die Tür ist geschlossen (est fermée) et Die Tür wird geschlossen (on la ferme).",
+     "p": [
+      "Vorgangspassiv (werden) = l'action a lieu : Die Tür wird um 20 Uhr geschlossen. Quelqu'un le fait.",
+      "Zustandspassiv (sein) = le résultat est là : Die Tür ist geschlossen. L'action est finie, on voit l'état.",
+      "Exemples : Das Geschäft ist geöffnet. Der Tisch ist reserviert. Das Problem ist gelöst. Passé : Die Tür war geschlossen."
+     ],
+     "q": "Regarde autour de toi : qu'est-ce qui est geöffnet, geschlossen, eingeschaltet ou aufgeräumt en ce moment ?",
+     "c": "Écris trois paires de phrases : un Vorgangspassiv et un Zustandspassiv avec le même verbe."
+    },
+    "it": {
+     "t": "Passivo di stato con sein",
+     "g": "Distingui stato e processo: Die Tür ist geschlossen (è chiusa) e Die Tür wird geschlossen (viene chiusa).",
+     "p": [
+      "Vorgangspassiv (werden) = l'azione avviene: Die Tür wird um 20 Uhr geschlossen. Qualcuno la sta facendo.",
+      "Zustandspassiv (sein) = il risultato c'è: Die Tür ist geschlossen. L'azione è finita; vediamo lo stato.",
+      "Esempi: Das Geschäft ist geöffnet. Der Tisch ist reserviert. Das Problem ist gelöst. Passato: Die Tür war geschlossen."
+     ],
+     "q": "Guardati intorno: cosa è geöffnet, geschlossen, eingeschaltet o aufgeräumt in questo momento?",
+     "c": "Scrivi tre coppie di frasi: un Vorgangspassiv e uno Zustandspassiv con lo stesso verbo."
+    },
+    "pt": {
+     "t": "Passiva de estado com sein",
+     "g": "Distinguir estado e processo: Die Tür ist geschlossen (está fechada) e Die Tür wird geschlossen (é fechada).",
+     "p": [
+      "Vorgangspassiv (werden) = a ação acontece: Die Tür wird um 20 Uhr geschlossen. Alguém a está a fazer.",
+      "Zustandspassiv (sein) = o resultado está lá: Die Tür ist geschlossen. A ação acabou; vemos o estado.",
+      "Exemplos: Das Geschäft ist geöffnet. Der Tisch ist reserviert. Das Problem ist gelöst. Passado: Die Tür war geschlossen."
+     ],
+     "q": "Olha à tua volta: o que está geöffnet, geschlossen, eingeschaltet ou aufgeräumt neste momento?",
+     "c": "Escreve três pares de frases: uma Vorgangspassiv e uma Zustandspassiv com o mesmo verbo."
+    },
+    "pt_BR": {
+     "t": "Passiva de estado com sein",
+     "g": "Distinguir estado e processo: Die Tür ist geschlossen (está fechada) e Die Tür wird geschlossen (é fechada).",
+     "p": [
+      "Vorgangspassiv (werden) = a ação acontece: Die Tür wird um 20 Uhr geschlossen. Alguém está fazendo.",
+      "Zustandspassiv (sein) = o resultado está lá: Die Tür ist geschlossen. A ação acabou; vemos o estado.",
+      "Exemplos: Das Geschäft ist geöffnet. Der Tisch ist reserviert. Das Problem ist gelöst. Passado: Die Tür war geschlossen."
+     ],
+     "q": "Olhe ao redor: o que está geöffnet, geschlossen, eingeschaltet ou aufgeräumt agora?",
+     "c": "Escreva três pares de frases: uma Vorgangspassiv e uma Zustandspassiv com o mesmo verbo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "geöffnet sein",
+      "ex": "Die Apotheke ist bis 20 Uhr geöffnet."
+     },
+     {
+      "w": "geschlossen sein",
+      "ex": "Am Sonntag ist das Geschäft geschlossen."
+     },
+     {
+      "w": "reserviert sein",
+      "ex": "Dieser Tisch ist leider reserviert."
+     },
+     {
+      "w": "gelöst sein",
+      "ex": "Gute Nachricht: Das Problem ist gelöst."
+     },
+     {
+      "w": "eingeschaltet sein",
+      "ex": "Ist der Drucker eingeschaltet?"
+     },
+     {
+      "w": "aufgeräumt sein",
+      "ex": "Endlich ist mein Zimmer aufgeräumt."
+     }
+    ],
+    "gram": "Vorgangspassiv: werden + Partizip II (Die Tür wird geschlossen); Zustandspassiv: sein + Partizip II (Die Tür ist geschlossen)."
+   }
+  },
+  {
+   "d": 287,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Modal verbs for assumptions",
+     "g": "Use modals to guess: Er muss müde sein, sie dürfte recht haben, das kann sein.",
+     "p": [
+      "Degrees of certainty: muss (almost sure) > dürfte (probably) > kann/könnte (possibly). Er muss zu Hause sein. Sie könnte krank sein.",
+      "nicht können = impossible: Das kann nicht stimmen! (That can't be true). sollen = I've heard: Er soll sehr reich sein.",
+      "About the past: modal + Partizip II + haben/sein: Sie muss den Zug verpasst haben. Er könnte schon angekommen sein."
+     ],
+     "q": "Your colleague hasn't answered for hours. Make guesses with muss, dürfte and könnte!",
+     "c": "Look at a photo of strangers and write five guesses about them with different modal verbs."
+    },
+    "de": {
+     "t": "Modalverben für Vermutungen",
+     "g": "Du vermutest mit Modalverben: Er muss müde sein, sie dürfte recht haben, das kann sein.",
+     "p": [
+      "Grade der Sicherheit: muss (fast sicher) > dürfte (wahrscheinlich) > kann/könnte (vielleicht). Sie könnte krank sein.",
+      "nicht können = unmöglich: Das kann nicht stimmen! sollen = man sagt: Er soll sehr reich sein.",
+      "Vergangenheit: Modalverb + Partizip II + haben/sein: Sie muss den Zug verpasst haben. Er könnte schon angekommen sein."
+     ],
+     "q": "Deine Kollegin antwortet seit Stunden nicht. Stell Vermutungen an mit muss, dürfte und könnte!",
+     "c": "Schau dir ein Foto von fremden Leuten an und schreib fünf Vermutungen mit verschiedenen Modalverben."
+    },
+    "es": {
+     "t": "Verbos modales para suposiciones",
+     "g": "Usa los modales para suponer: Er muss müde sein (debe de estar cansado), sie dürfte recht haben, das kann sein.",
+     "p": [
+      "Grados: muss (casi seguro) > dürfte (probablemente) > kann/könnte (quizá). Er muss zu Hause sein. Sie könnte krank sein.",
+      "nicht können = imposible: Das kann nicht stimmen! sollen = dicen que: Er soll sehr reich sein.",
+      "En pasado: modal + Partizip II + haben/sein: Sie muss den Zug verpasst haben. Er könnte schon angekommen sein."
+     ],
+     "q": "Tu colega lleva horas sin contestar. ¡Haz suposiciones con muss, dürfte y könnte!",
+     "c": "Mira una foto de desconocidos y escribe cinco suposiciones sobre ellos con distintos modales."
+    },
+    "fr": {
+     "t": "Les modaux pour supposer",
+     "g": "Utiliser les modaux pour supposer : Er muss müde sein (il doit être fatigué), sie dürfte recht haben, das kann sein.",
+     "p": [
+      "Degrés : muss (presque sûr) > dürfte (probablement) > kann/könnte (peut-être). Er muss zu Hause sein. Sie könnte krank sein.",
+      "nicht können = impossible : Das kann nicht stimmen ! sollen = paraît-il : Er soll sehr reich sein.",
+      "Au passé : modal + Partizip II + haben/sein : Sie muss den Zug verpasst haben. Er könnte schon angekommen sein."
+     ],
+     "q": "Ta collègue ne répond pas depuis des heures. Fais des suppositions avec muss, dürfte et könnte !",
+     "c": "Regarde une photo d'inconnus et écris cinq suppositions avec des modaux différents."
+    },
+    "it": {
+     "t": "Verbi modali per supposizioni",
+     "g": "Usa i modali per fare ipotesi: Er muss müde sein (dev'essere stanco), sie dürfte recht haben, das kann sein.",
+     "p": [
+      "Gradi: muss (quasi certo) > dürfte (probabilmente) > kann/könnte (forse). Er muss zu Hause sein. Sie könnte krank sein.",
+      "nicht können = impossibile: Das kann nicht stimmen! sollen = si dice: Er soll sehr reich sein.",
+      "Al passato: modale + Partizip II + haben/sein: Sie muss den Zug verpasst haben. Er könnte schon angekommen sein."
+     ],
+     "q": "La tua collega non risponde da ore. Fai ipotesi con muss, dürfte e könnte!",
+     "c": "Guarda una foto di sconosciuti e scrivi cinque ipotesi su di loro con modali diversi."
+    },
+    "pt": {
+     "t": "Verbos modais para suposições",
+     "g": "Usar modais para supor: Er muss müde sein (deve estar cansado), sie dürfte recht haben, das kann sein.",
+     "p": [
+      "Graus: muss (quase certo) > dürfte (provavelmente) > kann/könnte (talvez). Er muss zu Hause sein. Sie könnte krank sein.",
+      "nicht können = impossível: Das kann nicht stimmen! sollen = diz-se que: Er soll sehr reich sein.",
+      "No passado: modal + Partizip II + haben/sein: Sie muss den Zug verpasst haben. Er könnte schon angekommen sein."
+     ],
+     "q": "A tua colega não responde há horas. Faz suposições com muss, dürfte e könnte!",
+     "c": "Olha para uma foto de desconhecidos e escreve cinco suposições sobre eles com modais diferentes."
+    },
+    "pt_BR": {
+     "t": "Verbos modais para suposições",
+     "g": "Usar modais para supor: Er muss müde sein (deve estar cansado), sie dürfte recht haben, das kann sein.",
+     "p": [
+      "Graus: muss (quase certo) > dürfte (provavelmente) > kann/könnte (talvez). Er muss zu Hause sein. Sie könnte krank sein.",
+      "nicht können = impossível: Das kann nicht stimmen! sollen = dizem que: Er soll sehr reich sein.",
+      "No passado: modal + Partizip II + haben/sein: Sie muss den Zug verpasst haben. Er könnte schon angekommen sein."
+     ],
+     "q": "Sua colega não responde há horas. Faça suposições com muss, dürfte e könnte!",
+     "c": "Olhe uma foto de desconhecidos e escreva cinco suposições sobre eles com modais diferentes."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Er muss ... sein.",
+      "ex": "Er muss sehr müde sein, er gähnt ständig."
+     },
+     {
+      "w": "Sie dürfte ...",
+      "ex": "Sie dürfte etwa dreißig Jahre alt sein."
+     },
+     {
+      "w": "Das kann sein.",
+      "ex": "Das kann sein, ich bin mir aber nicht sicher."
+     },
+     {
+      "w": "Das kann nicht stimmen!",
+      "ex": "Zehn Euro für einen Kaffee? Das kann nicht stimmen!"
+     },
+     {
+      "w": "Er soll ...",
+      "ex": "Das Restaurant soll sehr gut sein."
+     },
+     {
+      "w": "Sie könnte ... haben.",
+      "ex": "Sie könnte ihr Handy zu Hause vergessen haben."
+     }
+    ],
+    "gram": "Subjektive Modalverben: muss > dürfte > kann/könnte; sollen = Hörensagen; Vergangenheit: muss + Partizip II + haben/sein."
+   }
+  },
+  {
+   "d": 288,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Modals in compound tenses",
+     "g": "Use modals in the Perfekt and Konjunktiv II past: Er hat kommen müssen, sie hätte es wissen müssen.",
+     "p": [
+      "Perfekt of a modal with another verb = double infinitive: Ich habe arbeiten müssen (not gemusst). Er hat nicht kommen können.",
+      "Konjunktiv II past expresses regret or criticism: Ich hätte früher anfangen sollen. Du hättest mich anrufen können!",
+      "In subordinate clauses hat/hätte goes before the two infinitives: ..., weil ich habe arbeiten müssen."
+     ],
+     "q": "Tell me one thing you hätte tun sollen last year, and one thing you had to do: Ich habe ... müssen.",
+     "c": "Write four sentences of regret with hätte ... sollen/können about a trip or a past decision."
+    },
+    "de": {
+     "t": "Modalverben in zusammengesetzten Zeiten",
+     "g": "Du benutzt Modalverben im Perfekt und Konjunktiv II der Vergangenheit: Er hat kommen müssen, sie hätte es wissen müssen.",
+     "p": [
+      "Perfekt mit zweitem Verb = doppelter Infinitiv: Ich habe arbeiten müssen (nicht gemusst). Er hat nicht kommen können.",
+      "Konjunktiv II der Vergangenheit für Bedauern oder Kritik: Ich hätte früher anfangen sollen. Du hättest mich anrufen können!",
+      "Im Nebensatz steht hat/hätte vor den beiden Infinitiven: ..., weil ich habe arbeiten müssen."
+     ],
+     "q": "Erzähl mir etwas, das du letztes Jahr hättest tun sollen, und etwas, das du tun musstest: Ich habe ... müssen.",
+     "c": "Schreib vier Sätze des Bedauerns mit hätte ... sollen/können über eine Reise oder eine frühere Entscheidung."
+    },
+    "es": {
+     "t": "Modales en tiempos compuestos",
+     "g": "Usa los modales en Perfekt y Konjunktiv II pasado: Er hat kommen müssen, sie hätte es wissen müssen.",
+     "p": [
+      "Perfekt de modal con otro verbo = doble infinitivo: Ich habe arbeiten müssen (no gemusst). Er hat nicht kommen können.",
+      "Konjunktiv II pasado para lamentar o criticar: Ich hätte früher anfangen sollen (debería haber empezado antes).",
+      "En la subordinada, hat/hätte va delante de los dos infinitivos: ..., weil ich habe arbeiten müssen."
+     ],
+     "q": "Cuéntame algo que hättest tun sollen el año pasado y algo que tuviste que hacer: Ich habe ... müssen.",
+     "c": "Escribe cuatro frases de lamento con hätte ... sollen/können sobre un viaje o una decisión pasada."
+    },
+    "fr": {
+     "t": "Les modaux aux temps composés",
+     "g": "Utiliser les modaux au Perfekt et au Konjunktiv II passé : Er hat kommen müssen, sie hätte es wissen müssen.",
+     "p": [
+      "Perfekt d'un modal avec un autre verbe = double infinitif : Ich habe arbeiten müssen (pas gemusst). Er hat nicht kommen können.",
+      "Konjunktiv II passé pour le regret ou la critique : Ich hätte früher anfangen sollen (j'aurais dû commencer plus tôt).",
+      "En subordonnée, hat/hätte se place avant les deux infinitifs : ..., weil ich habe arbeiten müssen."
+     ],
+     "q": "Dis-moi une chose que tu aurais dû faire l'an dernier et une chose que tu as dû faire : Ich habe ... müssen.",
+     "c": "Écris quatre phrases de regret avec hätte ... sollen/können sur un voyage ou une décision passée."
+    },
+    "it": {
+     "t": "Modali nei tempi composti",
+     "g": "Usa i modali al Perfekt e al Konjunktiv II passato: Er hat kommen müssen, sie hätte es wissen müssen.",
+     "p": [
+      "Perfekt di un modale con altro verbo = doppio infinito: Ich habe arbeiten müssen (non gemusst). Er hat nicht kommen können.",
+      "Konjunktiv II passato per rimpianto o critica: Ich hätte früher anfangen sollen (avrei dovuto iniziare prima).",
+      "Nella secondaria hat/hätte va prima dei due infiniti: ..., weil ich habe arbeiten müssen."
+     ],
+     "q": "Dimmi una cosa che avresti dovuto fare l'anno scorso e una che hai dovuto fare: Ich habe ... müssen.",
+     "c": "Scrivi quattro frasi di rimpianto con hätte ... sollen/können su un viaggio o una scelta passata."
+    },
+    "pt": {
+     "t": "Modais em tempos compostos",
+     "g": "Usar os modais no Perfekt e no Konjunktiv II passado: Er hat kommen müssen, sie hätte es wissen müssen.",
+     "p": [
+      "Perfekt de um modal com outro verbo = duplo infinitivo: Ich habe arbeiten müssen (não gemusst). Er hat nicht kommen können.",
+      "Konjunktiv II passado para lamentar ou criticar: Ich hätte früher anfangen sollen (devia ter começado antes).",
+      "Na subordinada, hat/hätte vem antes dos dois infinitivos: ..., weil ich habe arbeiten müssen."
+     ],
+     "q": "Diz-me uma coisa que devias ter feito no ano passado e outra que tiveste de fazer: Ich habe ... müssen.",
+     "c": "Escreve quatro frases de arrependimento com hätte ... sollen/können sobre uma viagem ou decisão passada."
+    },
+    "pt_BR": {
+     "t": "Modais em tempos compostos",
+     "g": "Usar os modais no Perfekt e no Konjunktiv II passado: Er hat kommen müssen, sie hätte es wissen müssen.",
+     "p": [
+      "Perfekt de um modal com outro verbo = duplo infinitivo: Ich habe arbeiten müssen (não gemusst). Er hat nicht kommen können.",
+      "Konjunktiv II passado para lamentar ou criticar: Ich hätte früher anfangen sollen (deveria ter começado antes).",
+      "Na subordinada, hat/hätte vem antes dos dois infinitivos: ..., weil ich habe arbeiten müssen."
+     ],
+     "q": "Me diga algo que você deveria ter feito no ano passado e algo que teve de fazer: Ich habe ... müssen.",
+     "c": "Escreva quatro frases de arrependimento com hätte ... sollen/können sobre uma viagem ou decisão passada."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "arbeiten müssen",
+      "ex": "Gestern habe ich bis 21 Uhr arbeiten müssen."
+     },
+     {
+      "w": "nicht kommen können",
+      "ex": "Leider hat sie nicht kommen können."
+     },
+     {
+      "w": "hätte ... sollen",
+      "ex": "Ich hätte mehr Wasser mitnehmen sollen."
+     },
+     {
+      "w": "hättest ... können",
+      "ex": "Du hättest mir Bescheid sagen können!"
+     },
+     {
+      "w": "hätte ... müssen",
+      "ex": "Wir hätten früher losfahren müssen."
+     },
+     {
+      "w": "bereuen",
+      "ex": "Ich bereue nicht, dass ich umgezogen bin."
+     }
+    ],
+    "gram": "Modalverb + Infinitiv im Perfekt: haben + Infinitiv + Modalverb-Infinitiv (Ich habe gehen müssen); Konj. II: hätte ... sollen."
+   }
+  },
+  {
+   "d": 289,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Je... desto",
+     "g": "Link two comparatives: Je mehr ich übe, desto besser spreche ich.",
+     "p": [
+      "Je + comparative starts a subordinate clause (verb at the end); desto/umso + comparative starts the main clause with inversion.",
+      "Pattern: Je früher wir losfahren, desto weniger Verkehr gibt es. Je länger ich hier wohne, umso mehr gefällt es mir.",
+      "Short fixed phrase: Je eher, desto besser! (The sooner, the better!)"
+     ],
+     "q": "Tell me something that gets better the more you do it, using Je mehr..., desto...!",
+     "c": "Write five je... desto sentences about learning, sport, sleep, travel and food."
+    },
+    "de": {
+     "t": "Je... desto",
+     "g": "Du verbindest zwei Komparative: Je mehr ich übe, desto besser spreche ich.",
+     "p": [
+      "Je + Komparativ leitet einen Nebensatz ein (Verb am Ende); desto/umso + Komparativ beginnt den Hauptsatz mit Inversion.",
+      "Muster: Je früher wir losfahren, desto weniger Verkehr gibt es. Je länger ich hier wohne, umso mehr gefällt es mir.",
+      "Feste Kurzform: Je eher, desto besser!"
+     ],
+     "q": "Erzähl mir etwas, das besser wird, je mehr du es machst, mit Je mehr..., desto...!",
+     "c": "Schreib fünf je-desto-Sätze über Lernen, Sport, Schlaf, Reisen und Essen."
+    },
+    "es": {
+     "t": "Je... desto",
+     "g": "Une dos comparativos: Je mehr ich übe, desto besser spreche ich (cuanto más practico, mejor hablo).",
+     "p": [
+      "Je + comparativo inicia una subordinada (verbo al final); desto/umso + comparativo inicia la principal con inversión.",
+      "Patrón: Je früher wir losfahren, desto weniger Verkehr gibt es. Je länger ich hier wohne, umso mehr gefällt es mir.",
+      "Frase hecha: Je eher, desto besser! (¡Cuanto antes, mejor!)"
+     ],
+     "q": "Cuéntame algo que mejora cuanto más lo haces, usando Je mehr..., desto...",
+     "c": "Escribe cinco frases con je... desto sobre aprender, deporte, sueño, viajes y comida."
+    },
+    "fr": {
+     "t": "Je... desto",
+     "g": "Relier deux comparatifs : Je mehr ich übe, desto besser spreche ich (plus je m'entraîne, mieux je parle).",
+     "p": [
+      "Je + comparatif ouvre une subordonnée (verbe à la fin) ; desto/umso + comparatif ouvre la principale avec inversion.",
+      "Modèle : Je früher wir losfahren, desto weniger Verkehr gibt es. Je länger ich hier wohne, umso mehr gefällt es mir.",
+      "Expression figée : Je eher, desto besser ! (Le plus tôt sera le mieux !)"
+     ],
+     "q": "Dis-moi une chose qui s'améliore plus tu la fais, avec Je mehr..., desto... !",
+     "c": "Écris cinq phrases je... desto sur l'apprentissage, le sport, le sommeil, les voyages et la nourriture."
+    },
+    "it": {
+     "t": "Je... desto",
+     "g": "Collega due comparativi: Je mehr ich übe, desto besser spreche ich (più mi esercito, meglio parlo).",
+     "p": [
+      "Je + comparativo apre una secondaria (verbo in fondo); desto/umso + comparativo apre la principale con inversione.",
+      "Schema: Je früher wir losfahren, desto weniger Verkehr gibt es. Je länger ich hier wohne, umso mehr gefällt es mir.",
+      "Frase fatta: Je eher, desto besser! (Prima è, meglio è!)"
+     ],
+     "q": "Dimmi una cosa che migliora più la fai, usando Je mehr..., desto...!",
+     "c": "Scrivi cinque frasi con je... desto su studio, sport, sonno, viaggi e cibo."
+    },
+    "pt": {
+     "t": "Je... desto",
+     "g": "Ligar dois comparativos: Je mehr ich übe, desto besser spreche ich (quanto mais pratico, melhor falo).",
+     "p": [
+      "Je + comparativo abre uma subordinada (verbo no fim); desto/umso + comparativo abre a principal com inversão.",
+      "Padrão: Je früher wir losfahren, desto weniger Verkehr gibt es. Je länger ich hier wohne, umso mehr gefällt es mir.",
+      "Frase feita: Je eher, desto besser! (Quanto mais cedo, melhor!)"
+     ],
+     "q": "Diz-me algo que melhora quanto mais o fazes, usando Je mehr..., desto...!",
+     "c": "Escreve cinco frases com je... desto sobre estudo, desporto, sono, viagens e comida."
+    },
+    "pt_BR": {
+     "t": "Je... desto",
+     "g": "Ligar dois comparativos: Je mehr ich übe, desto besser spreche ich (quanto mais pratico, melhor falo).",
+     "p": [
+      "Je + comparativo abre uma subordinada (verbo no fim); desto/umso + comparativo abre a principal com inversão.",
+      "Padrão: Je früher wir losfahren, desto weniger Verkehr gibt es. Je länger ich hier wohne, umso mehr gefällt es mir.",
+      "Frase feita: Je eher, desto besser! (Quanto antes, melhor!)"
+     ],
+     "q": "Me diga algo que melhora quanto mais você faz, usando Je mehr..., desto...!",
+     "c": "Escreva cinco frases com je... desto sobre estudo, esporte, sono, viagens e comida."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "je mehr ... desto besser",
+      "ex": "Je mehr ich lese, desto besser wird mein Wortschatz."
+     },
+     {
+      "w": "je früher ... desto",
+      "ex": "Je früher wir buchen, desto billiger ist der Flug."
+     },
+     {
+      "w": "je länger ... umso",
+      "ex": "Je länger ich warte, umso nervöser werde ich."
+     },
+     {
+      "w": "Je eher, desto besser!",
+      "ex": "Wann sollen wir anfangen? Je eher, desto besser!"
+     },
+     {
+      "w": "je öfter",
+      "ex": "Je öfter ich spreche, desto sicherer fühle ich mich."
+     },
+     {
+      "w": "je später",
+      "ex": "Je später es wird, desto kälter wird es."
+     }
+    ],
+    "gram": "Je + Komparativ + ... + Verb (Nebensatz), desto/umso + Komparativ + Verb + Subjekt: Je mehr ich übe, desto besser spreche ich."
+   }
+  },
+  {
+   "d": 290,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Word order in long sentences",
+     "g": "Master the middle field: pronouns first, then dative before accusative nouns, and where nicht goes.",
+     "p": [
+      "Rule of thumb in the Mittelfeld: pronouns before nouns: Ich gebe es dem Kind. Ich gebe ihm das Buch.",
+      "Two nouns: dative before accusative: Ich gebe dem Kind das Buch. Two pronouns: accusative first: Ich gebe es ihm.",
+      "TeKaMoLo (time, reason, manner, place): Ich fahre morgen wegen der Arbeit mit dem Zug nach Köln. nicht precedes what it negates."
+     ],
+     "q": "Describe your next trip in one long sentence with time, reason, manner and place!",
+     "c": "Write three long sentences with time, reason, manner and place, then replace the nouns with pronouns."
+    },
+    "de": {
+     "t": "Wortstellung in langen Sätzen",
+     "g": "Du beherrschst das Mittelfeld: Pronomen zuerst, Dativ vor Akkusativ bei Nomen, und wo nicht steht.",
+     "p": [
+      "Faustregel im Mittelfeld: Pronomen vor Nomen: Ich gebe es dem Kind. Ich gebe ihm das Buch.",
+      "Zwei Nomen: Dativ vor Akkusativ: Ich gebe dem Kind das Buch. Zwei Pronomen: Akkusativ zuerst: Ich gebe es ihm.",
+      "TeKaMoLo (Zeit, Grund, Art, Ort): Ich fahre morgen wegen der Arbeit mit dem Zug nach Köln. nicht steht vor dem Verneinten."
+     ],
+     "q": "Beschreib deine nächste Reise in einem langen Satz mit Zeit, Grund, Art und Ort!",
+     "c": "Schreib drei lange Sätze mit Zeit, Grund, Art und Ort und ersetze dann die Nomen durch Pronomen."
+    },
+    "es": {
+     "t": "El orden en frases largas",
+     "g": "Domina el campo medio: pronombres primero, dativo antes que acusativo con sustantivos, y dónde va nicht.",
+     "p": [
+      "Regla general en el Mittelfeld: pronombres antes que sustantivos: Ich gebe es dem Kind. Ich gebe ihm das Buch.",
+      "Dos sustantivos: dativo antes que acusativo: Ich gebe dem Kind das Buch. Dos pronombres: acusativo primero: Ich gebe es ihm.",
+      "TeKaMoLo (tiempo, causa, modo, lugar): Ich fahre morgen wegen der Arbeit mit dem Zug nach Köln. nicht va antes de lo negado."
+     ],
+     "q": "Describe tu próximo viaje en una frase larga con tiempo, causa, modo y lugar.",
+     "c": "Escribe tres frases largas con tiempo, causa, modo y lugar, y luego cambia los sustantivos por pronombres."
+    },
+    "fr": {
+     "t": "L'ordre des mots dans les longues phrases",
+     "g": "Maîtriser le champ central : pronoms d'abord, datif avant accusatif pour les noms, et la place de nicht.",
+     "p": [
+      "Règle de base dans le Mittelfeld : pronoms avant noms : Ich gebe es dem Kind. Ich gebe ihm das Buch.",
+      "Deux noms : datif avant accusatif : Ich gebe dem Kind das Buch. Deux pronoms : accusatif d'abord : Ich gebe es ihm.",
+      "TeKaMoLo (temps, cause, manière, lieu) : Ich fahre morgen wegen der Arbeit mit dem Zug nach Köln. nicht précède ce qu'il nie."
+     ],
+     "q": "Décris ton prochain voyage en une longue phrase avec temps, cause, manière et lieu !",
+     "c": "Écris trois longues phrases avec temps, cause, manière et lieu, puis remplace les noms par des pronoms."
+    },
+    "it": {
+     "t": "L'ordine nelle frasi lunghe",
+     "g": "Padroneggia il campo centrale: prima i pronomi, dativo prima dell'accusativo coi nomi, e dove va nicht.",
+     "p": [
+      "Regola base nel Mittelfeld: pronomi prima dei nomi: Ich gebe es dem Kind. Ich gebe ihm das Buch.",
+      "Due nomi: dativo prima dell'accusativo: Ich gebe dem Kind das Buch. Due pronomi: prima l'accusativo: Ich gebe es ihm.",
+      "TeKaMoLo (tempo, causa, modo, luogo): Ich fahre morgen wegen der Arbeit mit dem Zug nach Köln. nicht precede ciò che nega."
+     ],
+     "q": "Descrivi il tuo prossimo viaggio in una frase lunga con tempo, causa, modo e luogo!",
+     "c": "Scrivi tre frasi lunghe con tempo, causa, modo e luogo, poi sostituisci i nomi con pronomi."
+    },
+    "pt": {
+     "t": "A ordem das palavras em frases longas",
+     "g": "Dominar o campo central: pronomes primeiro, dativo antes do acusativo com nomes, e onde fica o nicht.",
+     "p": [
+      "Regra geral no Mittelfeld: pronomes antes de nomes: Ich gebe es dem Kind. Ich gebe ihm das Buch.",
+      "Dois nomes: dativo antes do acusativo: Ich gebe dem Kind das Buch. Dois pronomes: acusativo primeiro: Ich gebe es ihm.",
+      "TeKaMoLo (tempo, causa, modo, lugar): Ich fahre morgen wegen der Arbeit mit dem Zug nach Köln. nicht vem antes do que nega."
+     ],
+     "q": "Descreve a tua próxima viagem numa frase longa com tempo, causa, modo e lugar!",
+     "c": "Escreve três frases longas com tempo, causa, modo e lugar e depois troca os nomes por pronomes."
+    },
+    "pt_BR": {
+     "t": "A ordem das palavras em frases longas",
+     "g": "Dominar o campo central: pronomes primeiro, dativo antes do acusativo com substantivos, e onde fica o nicht.",
+     "p": [
+      "Regra geral no Mittelfeld: pronomes antes de substantivos: Ich gebe es dem Kind. Ich gebe ihm das Buch.",
+      "Dois substantivos: dativo antes do acusativo: Ich gebe dem Kind das Buch. Dois pronomes: acusativo primeiro: Ich gebe es ihm.",
+      "TeKaMoLo (tempo, causa, modo, lugar): Ich fahre morgen wegen der Arbeit mit dem Zug nach Köln. nicht vem antes do que nega."
+     ],
+     "q": "Descreva sua próxima viagem numa frase longa com tempo, causa, modo e lugar!",
+     "c": "Escreva três frases longas com tempo, causa, modo e lugar e depois troque os substantivos por pronomes."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "das Mittelfeld",
+      "ex": "Im Mittelfeld stehen Pronomen meistens vorne."
+     },
+     {
+      "w": "Ich gebe es ihm.",
+      "ex": "Das Buch? Ich gebe es ihm morgen."
+     },
+     {
+      "w": "wegen der Arbeit",
+      "ex": "Ich fahre wegen der Arbeit nach Köln."
+     },
+     {
+      "w": "mit dem Zug",
+      "ex": "Wir reisen lieber mit dem Zug."
+     },
+     {
+      "w": "nicht",
+      "ex": "Ich habe den Film noch nicht gesehen."
+     },
+     {
+      "w": "rechtzeitig",
+      "ex": "Ich schicke Ihnen die Unterlagen rechtzeitig."
+     }
+    ],
+    "gram": "Mittelfeld: Pronomen vor Nomen; Nomen: Dativ vor Akkusativ; Pronomen: Akkusativ vor Dativ; Angaben: TeKaMoLo; nicht vor dem Verneinten."
+   }
+  }
+ ]
+}

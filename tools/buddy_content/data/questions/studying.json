@@ -1,0 +1,1305 @@
+{
+"topic": "studying",
+"questions": [
+{
+"id": "studying-001",
+"lv": "any",
+"i18n": {
+"en": "What are you studying or learning at the moment?",
+"de": "Was lernst oder studierst du gerade?",
+"es": "¿Qué estás estudiando o aprendiendo en este momento?",
+"fr": "Qu'est-ce que tu étudies ou apprends en ce moment ?",
+"it": "Cosa stai studiando o imparando in questo periodo?",
+"pt": "O que estás a estudar ou a aprender neste momento?",
+"pt_BR": "O que você está estudando ou aprendendo no momento?"
+}
+},
+{
+"id": "studying-002",
+"lv": "any",
+"i18n": {
+"en": "Which subject have you always enjoyed learning the most, and why?",
+"de": "Welches Fach hast du schon immer am liebsten gelernt, und warum?",
+"es": "¿Qué asignatura siempre te ha gustado más aprender y por qué?",
+"fr": "Quelle matière as-tu toujours préféré apprendre, et pourquoi ?",
+"it": "Quale materia ti è sempre piaciuto di più studiare, e perché?",
+"pt": "Que disciplina sempre gostaste mais de aprender, e porquê?",
+"pt_BR": "Qual matéria você sempre gostou mais de aprender, e por quê?"
+}
+},
+{
+"id": "studying-003",
+"lv": "any",
+"i18n": {
+"en": "Where do you usually study, and what do you like about that place?",
+"de": "Wo lernst du normalerweise, und was gefällt dir an diesem Ort?",
+"es": "¿Dónde sueles estudiar y qué te gusta de ese lugar?",
+"fr": "Où étudies-tu d'habitude, et qu'est-ce que tu aimes dans cet endroit ?",
+"it": "Dove studi di solito, e cosa ti piace di quel posto?",
+"pt": "Onde costumas estudar, e o que gostas nesse sítio?",
+"pt_BR": "Onde você costuma estudar, e o que você gosta nesse lugar?"
+}
+},
+{
+"id": "studying-004",
+"lv": "any",
+"i18n": {
+"en": "Are you more productive studying in the morning, afternoon or at night?",
+"de": "Lernst du morgens, nachmittags oder abends am produktivsten?",
+"es": "¿Rindes más estudiando por la mañana, por la tarde o por la noche?",
+"fr": "Es-tu plus efficace pour étudier le matin, l'après-midi ou le soir ?",
+"it": "Rendi di più studiando la mattina, il pomeriggio o la sera?",
+"pt": "Rendes mais a estudar de manhã, à tarde ou à noite?",
+"pt_BR": "Você rende mais estudando de manhã, à tarde ou à noite?"
+}
+},
+{
+"id": "studying-005",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer studying in silence or with some background sound?",
+"de": "Lernst du lieber in Stille oder mit etwas Hintergrundgeräusch?",
+"es": "¿Prefieres estudiar en silencio o con algo de sonido de fondo?",
+"fr": "Tu préfères étudier dans le silence ou avec un peu de bruit de fond ?",
+"it": "Preferisci studiare in silenzio o con un po' di suono in sottofondo?",
+"pt": "Preferes estudar em silêncio ou com algum som de fundo?",
+"pt_BR": "Você prefere estudar em silêncio ou com algum som de fundo?"
+}
+},
+{
+"id": "studying-006",
+"lv": "any",
+"i18n": {
+"en": "What is the best teacher you ever had like, and what made them great?",
+"de": "Wie war die beste Lehrkraft, die du je hattest, und was machte sie so gut?",
+"es": "¿Cómo era el mejor profesor o profesora que has tenido y qué lo hacía especial?",
+"fr": "Comment était le meilleur prof que tu aies eu, et qu'est-ce qui le rendait génial ?",
+"it": "Com'era il miglior insegnante che hai avuto, e cosa lo rendeva speciale?",
+"pt": "Como era o melhor professor que já tiveste, e o que o tornava tão bom?",
+"pt_BR": "Como era o melhor professor que você já teve, e o que o tornava tão bom?"
+}
+},
+{
+"id": "studying-007",
+"lv": "any",
+"i18n": {
+"en": "What is something you learned recently that surprised you?",
+"de": "Was hast du kürzlich gelernt, das dich überrascht hat?",
+"es": "¿Qué has aprendido últimamente que te haya sorprendido?",
+"fr": "Qu'as-tu appris récemment qui t'a surpris ?",
+"it": "Qual è una cosa che hai imparato di recente e che ti ha sorpreso?",
+"pt": "O que aprendeste recentemente que te surpreendeu?",
+"pt_BR": "O que você aprendeu recentemente que te surpreendeu?"
+}
+},
+{
+"id": "studying-008",
+"lv": "any",
+"i18n": {
+"en": "How do you usually feel when you sit down to study?",
+"de": "Wie fühlst du dich meistens, wenn du dich zum Lernen hinsetzt?",
+"es": "¿Cómo te sueles sentir cuando te sientas a estudiar?",
+"fr": "Comment te sens-tu en général quand tu t'installes pour étudier ?",
+"it": "Come ti senti di solito quando ti siedi a studiare?",
+"pt": "Como te costumas sentir quando te sentas para estudar?",
+"pt_BR": "Como você costuma se sentir quando senta para estudar?"
+}
+},
+{
+"id": "studying-009",
+"lv": "any",
+"i18n": {
+"en": "What is one study goal you would love to reach in the next few months?",
+"de": "Welches Lernziel möchtest du in den nächsten Monaten unbedingt erreichen?",
+"es": "¿Qué meta de estudio te encantaría alcanzar en los próximos meses?",
+"fr": "Quel objectif d'études aimerais-tu atteindre dans les prochains mois ?",
+"it": "Quale obiettivo di studio ti piacerebbe raggiungere nei prossimi mesi?",
+"pt": "Que objetivo de estudo gostavas de alcançar nos próximos meses?",
+"pt_BR": "Qual meta de estudo você adoraria alcançar nos próximos meses?"
+}
+},
+{
+"id": "studying-010",
+"lv": "any",
+"i18n": {
+"en": "What usually distracts you the most while studying?",
+"de": "Was lenkt dich beim Lernen meistens am stärksten ab?",
+"es": "¿Qué es lo que más te distrae cuando estudias?",
+"fr": "Qu'est-ce qui te distrait le plus quand tu étudies ?",
+"it": "Cosa ti distrae di più mentre studi?",
+"pt": "O que é que mais te distrai quando estudas?",
+"pt_BR": "O que mais te distrai enquanto você estuda?"
+}
+},
+{
+"id": "studying-011",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer studying alone or with other people? Why?",
+"de": "Lernst du lieber allein oder mit anderen? Warum?",
+"es": "¿Prefieres estudiar solo o con otras personas? ¿Por qué?",
+"fr": "Tu préfères étudier seul ou avec d'autres personnes ? Pourquoi ?",
+"it": "Preferisci studiare da solo o con altre persone? Perché?",
+"pt": "Preferes estudar sozinho ou com outras pessoas? Porquê?",
+"pt_BR": "Você prefere estudar sozinho ou com outras pessoas? Por quê?"
+}
+},
+{
+"id": "studying-012",
+"lv": "any",
+"i18n": {
+"en": "What is a skill outside school or work that you taught yourself?",
+"de": "Welche Fähigkeit außerhalb von Schule oder Arbeit hast du dir selbst beigebracht?",
+"es": "¿Qué habilidad fuera de los estudios o el trabajo aprendiste por tu cuenta?",
+"fr": "Quelle compétence, en dehors de l'école ou du travail, as-tu apprise tout seul ?",
+"it": "Quale abilità, fuori da scuola o lavoro, hai imparato da solo?",
+"pt": "Que competência, fora da escola ou do trabalho, aprendeste sozinho?",
+"pt_BR": "Que habilidade, fora da escola ou do trabalho, você aprendeu sozinho?"
+}
+},
+{
+"id": "studying-013",
+"lv": "any",
+"i18n": {
+"en": "How do you reward yourself after a good study session?",
+"de": "Wie belohnst du dich nach einer guten Lerneinheit?",
+"es": "¿Cómo te premias después de una buena sesión de estudio?",
+"fr": "Comment te récompenses-tu après une bonne séance de travail ?",
+"it": "Come ti premi dopo una buona sessione di studio?",
+"pt": "Como te recompensas depois de uma boa sessão de estudo?",
+"pt_BR": "Como você se recompensa depois de uma boa sessão de estudo?"
+}
+},
+{
+"id": "studying-014",
+"lv": "any",
+"i18n": {
+"en": "What does your desk or study corner look like right now?",
+"de": "Wie sieht dein Schreibtisch oder deine Lernecke gerade aus?",
+"es": "¿Cómo está ahora mismo tu escritorio o tu rincón de estudio?",
+"fr": "À quoi ressemble ton bureau ou ton coin d'étude en ce moment ?",
+"it": "Com'è in questo momento la tua scrivania o il tuo angolo studio?",
+"pt": "Como está neste momento a tua secretária ou o teu canto de estudo?",
+"pt_BR": "Como está agora a sua escrivaninha ou o seu cantinho de estudos?"
+}
+},
+{
+"id": "studying-015",
+"lv": "any",
+"i18n": {
+"en": "Which learning moment in your life are you most proud of?",
+"de": "Auf welchen Lernmoment in deinem Leben bist du am stolzesten?",
+"es": "¿De qué momento de aprendizaje de tu vida estás más orgulloso?",
+"fr": "De quel moment d'apprentissage de ta vie es-tu le plus fier ?",
+"it": "Di quale momento di apprendimento della tua vita sei più orgoglioso?",
+"pt": "De que momento de aprendizagem da tua vida tens mais orgulho?",
+"pt_BR": "De qual momento de aprendizado da sua vida você mais se orgulha?"
+}
+},
+{
+"id": "studying-016",
+"lv": "any",
+"i18n": {
+"en": "If you could master any subject instantly, which would you choose?",
+"de": "Wenn du ein Fach sofort beherrschen könntest, welches wäre es?",
+"es": "Si pudieras dominar cualquier materia al instante, ¿cuál elegirías?",
+"fr": "Si tu pouvais maîtriser n'importe quelle matière instantanément, laquelle choisirais-tu ?",
+"it": "Se potessi padroneggiare all'istante qualsiasi materia, quale sceglieresti?",
+"pt": "Se pudesses dominar qualquer disciplina de imediato, qual escolherias?",
+"pt_BR": "Se você pudesse dominar qualquer matéria na hora, qual escolheria?"
+}
+},
+{
+"id": "studying-017",
+"lv": "any",
+"i18n": {
+"en": "How long can you usually focus before you need a break?",
+"de": "Wie lange kannst du dich meist konzentrieren, bevor du eine Pause brauchst?",
+"es": "¿Cuánto tiempo sueles concentrarte antes de necesitar un descanso?",
+"fr": "Combien de temps arrives-tu à te concentrer avant d'avoir besoin d'une pause ?",
+"it": "Per quanto tempo riesci di solito a concentrarti prima di aver bisogno di una pausa?",
+"pt": "Quanto tempo consegues normalmente concentrar-te antes de precisares de uma pausa?",
+"pt_BR": "Por quanto tempo você costuma se concentrar antes de precisar de uma pausa?"
+}
+},
+{
+"id": "studying-018",
+"lv": "any",
+"i18n": {
+"en": "What do you usually do during your study breaks?",
+"de": "Was machst du normalerweise in deinen Lernpausen?",
+"es": "¿Qué sueles hacer en tus descansos de estudio?",
+"fr": "Que fais-tu d'habitude pendant tes pauses ?",
+"it": "Cosa fai di solito durante le pause dallo studio?",
+"pt": "O que costumas fazer nas tuas pausas de estudo?",
+"pt_BR": "O que você costuma fazer nas pausas dos estudos?"
+}
+},
+{
+"id": "studying-019",
+"lv": "any",
+"i18n": {
+"en": "Do you take notes on paper or on a device? What do you like about it?",
+"de": "Machst du Notizen auf Papier oder digital? Was gefällt dir daran?",
+"es": "¿Tomas apuntes en papel o en un dispositivo? ¿Qué te gusta de eso?",
+"fr": "Tu prends tes notes sur papier ou sur un écran ? Qu'est-ce qui te plaît là-dedans ?",
+"it": "Prendi appunti su carta o su un dispositivo? Cosa ti piace di questo?",
+"pt": "Tiras apontamentos em papel ou num dispositivo? O que gostas nisso?",
+"pt_BR": "Você faz anotações no papel ou num aparelho? O que você gosta nisso?"
+}
+},
+{
+"id": "studying-020",
+"lv": "any",
+"i18n": {
+"en": "Who in your life inspires you to keep learning?",
+"de": "Wer in deinem Leben inspiriert dich, weiter zu lernen?",
+"es": "¿Quién en tu vida te inspira a seguir aprendiendo?",
+"fr": "Qui, dans ta vie, t'inspire à continuer d'apprendre ?",
+"it": "Chi nella tua vita ti ispira a continuare a imparare?",
+"pt": "Quem na tua vida te inspira a continuar a aprender?",
+"pt_BR": "Quem na sua vida te inspira a continuar aprendendo?"
+}
+},
+{
+"id": "studying-021",
+"lv": "any",
+"i18n": {
+"en": "What is a topic you could talk about for hours?",
+"de": "Über welches Thema könntest du stundenlang reden?",
+"es": "¿De qué tema podrías hablar durante horas?",
+"fr": "De quel sujet pourrais-tu parler pendant des heures ?",
+"it": "Di quale argomento potresti parlare per ore?",
+"pt": "Sobre que tema conseguias falar durante horas?",
+"pt_BR": "Sobre qual assunto você conseguiria falar por horas?"
+}
+},
+{
+"id": "studying-022",
+"lv": "any",
+"i18n": {
+"en": "How is studying in your country different from other places you know?",
+"de": "Wie unterscheidet sich das Lernen in deinem Land von anderen Orten, die du kennst?",
+"es": "¿En qué se diferencia estudiar en tu país de otros lugares que conoces?",
+"fr": "En quoi les études dans ton pays diffèrent-elles d'autres endroits que tu connais ?",
+"it": "In cosa è diverso studiare nel tuo Paese rispetto ad altri posti che conosci?",
+"pt": "Em que é que estudar no teu país é diferente de outros lugares que conheces?",
+"pt_BR": "Como estudar no seu país é diferente de outros lugares que você conhece?"
+}
+},
+{
+"id": "studying-023",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite way to learn something new: reading, watching or doing?",
+"de": "Wie lernst du am liebsten Neues: lesen, zuschauen oder selbst machen?",
+"es": "¿Cuál es tu forma favorita de aprender algo nuevo: leer, ver o hacer?",
+"fr": "Ta façon préférée d'apprendre quelque chose : lire, regarder ou faire ?",
+"it": "Qual è il tuo modo preferito per imparare qualcosa: leggere, guardare o fare?",
+"pt": "Qual é a tua forma preferida de aprender algo novo: ler, ver ou fazer?",
+"pt_BR": "Qual é o seu jeito favorito de aprender algo novo: ler, assistir ou fazer?"
+}
+},
+{
+"id": "studying-024",
+"lv": "any",
+"i18n": {
+"en": "What would make studying more fun for you?",
+"de": "Was würde das Lernen für dich unterhaltsamer machen?",
+"es": "¿Qué haría que estudiar fuera más divertido para ti?",
+"fr": "Qu'est-ce qui rendrait les études plus amusantes pour toi ?",
+"it": "Cosa renderebbe lo studio più divertente per te?",
+"pt": "O que tornaria o estudo mais divertido para ti?",
+"pt_BR": "O que deixaria o estudo mais divertido para você?"
+}
+},
+{
+"id": "studying-025",
+"lv": "any",
+"i18n": {
+"en": "How do you feel about exams in general?",
+"de": "Wie stehst du allgemein zu Prüfungen?",
+"es": "¿Qué sientes en general frente a los exámenes?",
+"fr": "Que penses-tu des examens en général ?",
+"it": "Cosa pensi degli esami in generale?",
+"pt": "O que sentes em relação aos exames em geral?",
+"pt_BR": "O que você sente em relação às provas em geral?"
+}
+},
+{
+"id": "studying-026",
+"lv": "any",
+"i18n": {
+"en": "What is one study habit you want to change?",
+"de": "Welche Lerngewohnheit möchtest du ändern?",
+"es": "¿Qué hábito de estudio te gustaría cambiar?",
+"fr": "Quelle habitude d'étude aimerais-tu changer ?",
+"it": "Quale abitudine di studio vorresti cambiare?",
+"pt": "Que hábito de estudo gostavas de mudar?",
+"pt_BR": "Qual hábito de estudo você gostaria de mudar?"
+}
+},
+{
+"id": "studying-027",
+"lv": "any",
+"i18n": {
+"en": "What helps you calm down before a test or presentation?",
+"de": "Was hilft dir, dich vor einer Prüfung oder Präsentation zu beruhigen?",
+"es": "¿Qué te ayuda a calmarte antes de un examen o una presentación?",
+"fr": "Qu'est-ce qui t'aide à te calmer avant un examen ou un exposé ?",
+"it": "Cosa ti aiuta a calmarti prima di un esame o di una presentazione?",
+"pt": "O que te ajuda a acalmar-te antes de um teste ou de uma apresentação?",
+"pt_BR": "O que te ajuda a se acalmar antes de uma prova ou apresentação?"
+}
+},
+{
+"id": "studying-028",
+"lv": "any",
+"i18n": {
+"en": "Which app or tool helps you the most with learning?",
+"de": "Welche App oder welches Werkzeug hilft dir beim Lernen am meisten?",
+"es": "¿Qué aplicación o herramienta te ayuda más a aprender?",
+"fr": "Quelle appli ou quel outil t'aide le plus à apprendre ?",
+"it": "Quale app o strumento ti aiuta di più a imparare?",
+"pt": "Que aplicação ou ferramenta te ajuda mais a aprender?",
+"pt_BR": "Qual app ou ferramenta mais te ajuda a aprender?"
+}
+},
+{
+"id": "studying-029",
+"lv": "any",
+"i18n": {
+"en": "Have you ever learned something from a person from another culture?",
+"de": "Hast du schon einmal etwas von einem Menschen aus einer anderen Kultur gelernt?",
+"es": "¿Alguna vez aprendiste algo de una persona de otra cultura?",
+"fr": "As-tu déjà appris quelque chose d'une personne d'une autre culture ?",
+"it": "Hai mai imparato qualcosa da una persona di un'altra cultura?",
+"pt": "Já aprendeste alguma coisa com uma pessoa de outra cultura?",
+"pt_BR": "Você já aprendeu algo com uma pessoa de outra cultura?"
+}
+},
+{
+"id": "studying-030",
+"lv": "any",
+"i18n": {
+"en": "What do you do when a topic feels really boring?",
+"de": "Was machst du, wenn ein Thema richtig langweilig wirkt?",
+"es": "¿Qué haces cuando un tema te parece muy aburrido?",
+"fr": "Que fais-tu quand un sujet te paraît vraiment ennuyeux ?",
+"it": "Cosa fai quando un argomento ti sembra davvero noioso?",
+"pt": "O que fazes quando um tema te parece mesmo aborrecido?",
+"pt_BR": "O que você faz quando um assunto parece muito chato?"
+}
+},
+{
+"id": "studying-031",
+"lv": "any",
+"i18n": {
+"en": "How do you keep track of deadlines and tasks?",
+"de": "Wie behältst du Abgabetermine und Aufgaben im Blick?",
+"es": "¿Cómo llevas el control de tus fechas límite y tareas?",
+"fr": "Comment gardes-tu une trace de tes échéances et de tes tâches ?",
+"it": "Come tieni traccia di scadenze e compiti?",
+"pt": "Como acompanhas os prazos e as tarefas?",
+"pt_BR": "Como você controla prazos e tarefas?"
+}
+},
+{
+"id": "studying-032",
+"lv": "any",
+"i18n": {
+"en": "What is the most useful thing school ever taught you?",
+"de": "Was ist das Nützlichste, das dir die Schule je beigebracht hat?",
+"es": "¿Qué es lo más útil que te enseñó la escuela?",
+"fr": "Quelle est la chose la plus utile que l'école t'ait apprise ?",
+"it": "Qual è la cosa più utile che ti ha insegnato la scuola?",
+"pt": "Qual foi a coisa mais útil que a escola te ensinou?",
+"pt_BR": "Qual foi a coisa mais útil que a escola te ensinou?"
+}
+},
+{
+"id": "studying-033",
+"lv": "any",
+"i18n": {
+"en": "What would your perfect study day look like?",
+"de": "Wie sähe dein perfekter Lerntag aus?",
+"es": "¿Cómo sería tu día de estudio perfecto?",
+"fr": "À quoi ressemblerait ta journée d'étude idéale ?",
+"it": "Come sarebbe la tua giornata di studio perfetta?",
+"pt": "Como seria o teu dia de estudo perfeito?",
+"pt_BR": "Como seria o seu dia de estudos perfeito?"
+}
+},
+{
+"id": "studying-034",
+"lv": "any",
+"i18n": {
+"en": "Do you like learning with videos? Which kind helps you most?",
+"de": "Lernst du gern mit Videos? Welche Art hilft dir am meisten?",
+"es": "¿Te gusta aprender con vídeos? ¿Qué tipo te ayuda más?",
+"fr": "Tu aimes apprendre avec des vidéos ? Quel genre t'aide le plus ?",
+"it": "Ti piace imparare con i video? Quale tipo ti aiuta di più?",
+"pt": "Gostas de aprender com vídeos? Que tipo te ajuda mais?",
+"pt_BR": "Você gosta de aprender com vídeos? Que tipo mais te ajuda?"
+}
+},
+{
+"id": "studying-035",
+"lv": "any",
+"i18n": {
+"en": "What do you snack on or drink while you study?",
+"de": "Was isst oder trinkst du gern beim Lernen?",
+"es": "¿Qué picas o bebes mientras estudias?",
+"fr": "Qu'est-ce que tu grignotes ou bois pendant que tu étudies ?",
+"it": "Cosa mangi o bevi mentre studi?",
+"pt": "O que petiscas ou bebes enquanto estudas?",
+"pt_BR": "O que você belisca ou bebe enquanto estuda?"
+}
+},
+{
+"id": "studying-036",
+"lv": "any",
+"i18n": {
+"en": "What is a book that taught you something important?",
+"de": "Welches Buch hat dir etwas Wichtiges beigebracht?",
+"es": "¿Qué libro te enseñó algo importante?",
+"fr": "Quel livre t'a appris quelque chose d'important ?",
+"it": "Quale libro ti ha insegnato qualcosa di importante?",
+"pt": "Que livro te ensinou algo importante?",
+"pt_BR": "Qual livro te ensinou algo importante?"
+}
+},
+{
+"id": "studying-037",
+"lv": "any",
+"i18n": {
+"en": "How do you know when you have really understood something?",
+"de": "Woran merkst du, dass du etwas wirklich verstanden hast?",
+"es": "¿Cómo sabes que has entendido algo de verdad?",
+"fr": "Comment sais-tu que tu as vraiment compris quelque chose ?",
+"it": "Come capisci di aver davvero compreso qualcosa?",
+"pt": "Como sabes que percebeste mesmo alguma coisa?",
+"pt_BR": "Como você sabe que realmente entendeu alguma coisa?"
+}
+},
+{
+"id": "studying-038",
+"lv": "any",
+"i18n": {
+"en": "What language would you love to learn next, and why?",
+"de": "Welche Sprache würdest du als Nächstes gern lernen, und warum?",
+"es": "¿Qué idioma te encantaría aprender después y por qué?",
+"fr": "Quelle langue aimerais-tu apprendre ensuite, et pourquoi ?",
+"it": "Quale lingua ti piacerebbe imparare dopo, e perché?",
+"pt": "Que língua gostavas de aprender a seguir, e porquê?",
+"pt_BR": "Qual idioma você adoraria aprender depois, e por quê?"
+}
+},
+{
+"id": "studying-039",
+"lv": "any",
+"i18n": {
+"en": "What is your earliest memory of learning something new?",
+"de": "Was ist deine früheste Erinnerung daran, etwas Neues gelernt zu haben?",
+"es": "¿Cuál es tu primer recuerdo de aprender algo nuevo?",
+"fr": "Quel est ton plus ancien souvenir d'apprentissage ?",
+"it": "Qual è il tuo primo ricordo di quando hai imparato qualcosa di nuovo?",
+"pt": "Qual é a tua memória mais antiga de aprender algo novo?",
+"pt_BR": "Qual é a sua lembrança mais antiga de aprender algo novo?"
+}
+},
+{
+"id": "studying-040",
+"lv": "any",
+"i18n": {
+"en": "How do you stay motivated on days when you do not feel like studying?",
+"de": "Wie bleibst du motiviert an Tagen, an denen du keine Lust zum Lernen hast?",
+"es": "¿Cómo te mantienes motivado los días en que no te apetece estudiar?",
+"fr": "Comment restes-tu motivé les jours où tu n'as pas envie d'étudier ?",
+"it": "Come resti motivato nei giorni in cui non hai voglia di studiare?",
+"pt": "Como te manténs motivado nos dias em que não te apetece estudar?",
+"pt_BR": "Como você se mantém motivado nos dias em que não está com vontade de estudar?"
+}
+},
+{
+"id": "studying-041",
+"lv": "beginner",
+"i18n": {
+"en": "How many hours a week do you study right now, roughly?",
+"de": "Wie viele Stunden pro Woche lernst du ungefähr gerade?",
+"es": "¿Cuántas horas a la semana estudias ahora, más o menos?",
+"fr": "Combien d'heures par semaine étudies-tu en ce moment, à peu près ?",
+"it": "Quante ore a settimana studi adesso, più o meno?",
+"pt": "Quantas horas por semana estudas neste momento, mais ou menos?",
+"pt_BR": "Quantas horas por semana você estuda hoje, mais ou menos?"
+}
+},
+{
+"id": "studying-042",
+"lv": "beginner",
+"i18n": {
+"en": "Do you plan your study time, or do you study when you feel like it?",
+"de": "Planst du deine Lernzeit, oder lernst du, wenn dir danach ist?",
+"es": "¿Planificas tu tiempo de estudio o estudias cuando te apetece?",
+"fr": "Tu planifies ton temps d'étude ou tu étudies quand tu en as envie ?",
+"it": "Pianifichi il tempo di studio o studi quando ne hai voglia?",
+"pt": "Planeias o teu tempo de estudo ou estudas quando te apetece?",
+"pt_BR": "Você planeja seu tempo de estudo ou estuda quando dá vontade?"
+}
+},
+{
+"id": "studying-043",
+"lv": "beginner",
+"i18n": {
+"en": "Where does your phone usually stay while you study?",
+"de": "Wo liegt dein Handy normalerweise, während du lernst?",
+"es": "¿Dónde suele estar tu móvil mientras estudias?",
+"fr": "Où se trouve ton téléphone d'habitude pendant que tu étudies ?",
+"it": "Dove sta di solito il tuo telefono mentre studi?",
+"pt": "Onde costuma ficar o teu telemóvel enquanto estudas?",
+"pt_BR": "Onde seu celular costuma ficar enquanto você estuda?"
+}
+},
+{
+"id": "studying-044",
+"lv": "beginner",
+"i18n": {
+"en": "How do you usually review before a test: rereading, quizzes or something else?",
+"de": "Wie wiederholst du meist vor einem Test: nochmal lesen, Quiz oder etwas anderes?",
+"es": "¿Cómo sueles repasar antes de un examen: releyendo, con preguntas u otra cosa?",
+"fr": "Comment révises-tu avant un contrôle : relire, te tester ou autre chose ?",
+"it": "Come ripassi di solito prima di una verifica: rileggendo, con quiz o altro?",
+"pt": "Como costumas rever antes de um teste: reler, fazer perguntas ou outra coisa?",
+"pt_BR": "Como você costuma revisar antes de uma prova: relendo, com perguntas ou outra coisa?"
+}
+},
+{
+"id": "studying-045",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever tried flashcards? How did it go?",
+"de": "Hast du schon einmal Karteikarten ausprobiert? Wie lief es?",
+"es": "¿Has probado alguna vez las tarjetas de memoria? ¿Qué tal te fue?",
+"fr": "As-tu déjà essayé les fiches de révision ? Comment ça s'est passé ?",
+"it": "Hai mai provato le flashcard? Com'è andata?",
+"pt": "Já experimentaste cartões de memorização? Como correu?",
+"pt_BR": "Você já testou flashcards? Como foi?"
+}
+},
+{
+"id": "studying-046",
+"lv": "beginner",
+"i18n": {
+"en": "What does your note-taking look like during a class or video?",
+"de": "Wie sehen deine Notizen während einer Stunde oder eines Videos aus?",
+"es": "¿Cómo tomas apuntes durante una clase o un vídeo?",
+"fr": "À quoi ressemblent tes notes pendant un cours ou une vidéo ?",
+"it": "Come prendi appunti durante una lezione o un video?",
+"pt": "Como são os teus apontamentos durante uma aula ou um vídeo?",
+"pt_BR": "Como são suas anotações durante uma aula ou um vídeo?"
+}
+},
+{
+"id": "studying-047",
+"lv": "beginner",
+"i18n": {
+"en": "How much sleep do you usually get during busy study weeks?",
+"de": "Wie viel Schlaf bekommst du meist in stressigen Lernwochen?",
+"es": "¿Cuánto sueles dormir en las semanas de mucho estudio?",
+"fr": "Combien d'heures dors-tu d'habitude pendant les semaines chargées ?",
+"it": "Quanto dormi di solito nelle settimane di studio intenso?",
+"pt": "Quanto costumas dormir nas semanas de muito estudo?",
+"pt_BR": "Quanto você costuma dormir nas semanas de muito estudo?"
+}
+},
+{
+"id": "studying-048",
+"lv": "beginner",
+"i18n": {
+"en": "What is the hardest part for you: starting, focusing or remembering?",
+"de": "Was fällt dir am schwersten: anfangen, dich konzentrieren oder dir Dinge merken?",
+"es": "¿Qué te cuesta más: empezar, concentrarte o recordar?",
+"fr": "Qu'est-ce qui est le plus dur pour toi : commencer, te concentrer ou retenir ?",
+"it": "Cosa ti riesce più difficile: iniziare, concentrarti o ricordare?",
+"pt": "O que é mais difícil para ti: começar, concentrar-te ou lembrar-te?",
+"pt_BR": "O que é mais difícil para você: começar, se concentrar ou lembrar?"
+}
+},
+{
+"id": "studying-049",
+"lv": "beginner",
+"i18n": {
+"en": "Do you usually start assignments early or close to the deadline?",
+"de": "Fängst du Aufgaben meist früh an oder kurz vor der Abgabe?",
+"es": "¿Sueles empezar los trabajos pronto o cerca de la fecha de entrega?",
+"fr": "Tu commences tes devoirs tôt ou plutôt juste avant la date limite ?",
+"it": "Di solito inizi i compiti presto o vicino alla scadenza?",
+"pt": "Costumas começar os trabalhos cedo ou perto do prazo?",
+"pt_BR": "Você costuma começar os trabalhos cedo ou perto do prazo?"
+}
+},
+{
+"id": "studying-050",
+"lv": "beginner",
+"i18n": {
+"en": "What small change could make your study space better this week?",
+"de": "Welche kleine Änderung könnte deinen Lernplatz diese Woche verbessern?",
+"es": "¿Qué pequeño cambio podría mejorar tu espacio de estudio esta semana?",
+"fr": "Quel petit changement pourrait améliorer ton coin d'étude cette semaine ?",
+"it": "Quale piccolo cambiamento potrebbe migliorare il tuo spazio di studio questa settimana?",
+"pt": "Que pequena mudança podia melhorar o teu espaço de estudo esta semana?",
+"pt_BR": "Que pequena mudança poderia melhorar seu espaço de estudo esta semana?"
+}
+},
+{
+"id": "studying-051",
+"lv": "beginner",
+"i18n": {
+"en": "Who do you ask for help when you get stuck on something?",
+"de": "Wen fragst du um Hilfe, wenn du bei etwas nicht weiterkommst?",
+"es": "¿A quién pides ayuda cuando te atascas con algo?",
+"fr": "À qui demandes-tu de l'aide quand tu bloques sur quelque chose ?",
+"it": "A chi chiedi aiuto quando ti blocchi su qualcosa?",
+"pt": "A quem pedes ajuda quando ficas preso em alguma coisa?",
+"pt_BR": "A quem você pede ajuda quando trava em alguma coisa?"
+}
+},
+{
+"id": "studying-052",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever tried the Pomodoro technique? What did you think?",
+"de": "Hast du schon mal die Pomodoro-Technik ausprobiert? Wie fandest du sie?",
+"es": "¿Has probado alguna vez la técnica Pomodoro? ¿Qué te pareció?",
+"fr": "As-tu déjà essayé la technique Pomodoro ? Qu'en as-tu pensé ?",
+"it": "Hai mai provato la tecnica del pomodoro? Cosa ne pensi?",
+"pt": "Já experimentaste a técnica Pomodoro? O que achaste?",
+"pt_BR": "Você já testou a técnica Pomodoro? O que achou?"
+}
+},
+{
+"id": "studying-053",
+"lv": "beginner",
+"i18n": {
+"en": "What subject do you find hardest to remember facts for?",
+"de": "Bei welchem Fach fällt es dir am schwersten, dir Fakten zu merken?",
+"es": "¿En qué asignatura te cuesta más recordar datos?",
+"fr": "Dans quelle matière as-tu le plus de mal à retenir les informations ?",
+"it": "In quale materia fai più fatica a ricordare le informazioni?",
+"pt": "Em que disciplina tens mais dificuldade em memorizar factos?",
+"pt_BR": "Em qual matéria você tem mais dificuldade de lembrar fatos?"
+}
+},
+{
+"id": "studying-054",
+"lv": "beginner",
+"i18n": {
+"en": "Do you highlight when you read? How much of the page ends up coloured?",
+"de": "Markierst du beim Lesen? Wie viel von der Seite ist am Ende bunt?",
+"es": "¿Subrayas cuando lees? ¿Cuánto de la página acaba coloreado?",
+"fr": "Tu surlignes quand tu lis ? Quelle part de la page finit en couleur ?",
+"it": "Evidenzi quando leggi? Quanta parte della pagina finisce colorata?",
+"pt": "Sublinhas quando lês? Quanto da página acaba colorido?",
+"pt_BR": "Você grifa quando lê? Quanto da página acaba colorido?"
+}
+},
+{
+"id": "studying-055",
+"lv": "beginner",
+"i18n": {
+"en": "What do you do right after a class to remember what you learned?",
+"de": "Was machst du direkt nach dem Unterricht, um dir das Gelernte zu merken?",
+"es": "¿Qué haces justo después de una clase para recordar lo aprendido?",
+"fr": "Que fais-tu juste après un cours pour retenir ce que tu as appris ?",
+"it": "Cosa fai subito dopo una lezione per ricordare ciò che hai imparato?",
+"pt": "O que fazes logo depois de uma aula para te lembrares do que aprendeste?",
+"pt_BR": "O que você faz logo depois de uma aula para lembrar o que aprendeu?"
+}
+},
+{
+"id": "studying-056",
+"lv": "beginner",
+"i18n": {
+"en": "How do you feel the night before an exam?",
+"de": "Wie fühlst du dich am Abend vor einer Prüfung?",
+"es": "¿Cómo te sientes la noche antes de un examen?",
+"fr": "Comment te sens-tu la veille d'un examen ?",
+"it": "Come ti senti la sera prima di un esame?",
+"pt": "Como te sentes na noite antes de um exame?",
+"pt_BR": "Como você se sente na noite antes de uma prova?"
+}
+},
+{
+"id": "studying-057",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever studied all night? How did it go the next day?",
+"de": "Hast du schon mal die ganze Nacht durchgelernt? Wie lief der nächste Tag?",
+"es": "¿Alguna vez estudiaste toda la noche? ¿Qué tal fue el día siguiente?",
+"fr": "As-tu déjà révisé toute la nuit ? Comment s'est passé le lendemain ?",
+"it": "Hai mai studiato tutta la notte? Com'è andato il giorno dopo?",
+"pt": "Já estudaste a noite toda? Como correu o dia seguinte?",
+"pt_BR": "Você já virou a noite estudando? Como foi o dia seguinte?"
+}
+},
+{
+"id": "studying-058",
+"lv": "beginner",
+"i18n": {
+"en": "What kind of break refreshes you most: a walk, a snack or a chat?",
+"de": "Welche Pause erfrischt dich am meisten: ein Spaziergang, ein Snack oder ein Gespräch?",
+"es": "¿Qué descanso te despeja más: un paseo, un tentempié o una charla?",
+"fr": "Quelle pause te ressource le plus : une marche, un en-cas ou une discussion ?",
+"it": "Quale pausa ti ricarica di più: una passeggiata, uno spuntino o due chiacchiere?",
+"pt": "Que pausa te refresca mais: um passeio, um lanche ou uma conversa?",
+"pt_BR": "Que pausa mais te renova: uma caminhada, um lanche ou um papo?"
+}
+},
+{
+"id": "studying-059",
+"lv": "beginner",
+"i18n": {
+"en": "Do you set goals for each study session? What did you aim for last time?",
+"de": "Setzt du dir Ziele für jede Lerneinheit? Was war dein letztes Ziel?",
+"es": "¿Te pones metas en cada sesión de estudio? ¿Cuál fue la última?",
+"fr": "Te fixes-tu un objectif à chaque séance ? Quel était le dernier ?",
+"it": "Ti dai degli obiettivi per ogni sessione di studio? Qual era l'ultimo?",
+"pt": "Defines objetivos para cada sessão de estudo? Qual foi o último?",
+"pt_BR": "Você define metas para cada sessão de estudo? Qual foi a última?"
+}
+},
+{
+"id": "studying-060",
+"lv": "beginner",
+"i18n": {
+"en": "How do you organise your notes and files for each subject?",
+"de": "Wie ordnest du deine Notizen und Dateien für jedes Fach?",
+"es": "¿Cómo organizas tus apuntes y archivos de cada asignatura?",
+"fr": "Comment organises-tu tes notes et fichiers pour chaque matière ?",
+"it": "Come organizzi appunti e file per ogni materia?",
+"pt": "Como organizas os teus apontamentos e ficheiros de cada disciplina?",
+"pt_BR": "Como você organiza suas anotações e arquivos de cada matéria?"
+}
+},
+{
+"id": "studying-061",
+"lv": "beginner",
+"i18n": {
+"en": "What is one thing you would like to understand better this month?",
+"de": "Was möchtest du diesen Monat besser verstehen?",
+"es": "¿Qué te gustaría entender mejor este mes?",
+"fr": "Qu'aimerais-tu mieux comprendre ce mois-ci ?",
+"it": "Cosa ti piacerebbe capire meglio questo mese?",
+"pt": "O que gostavas de perceber melhor este mês?",
+"pt_BR": "O que você gostaria de entender melhor este mês?"
+}
+},
+{
+"id": "studying-062",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer short daily study sessions or long ones once in a while?",
+"de": "Lernst du lieber täglich kurz oder ab und zu lange am Stück?",
+"es": "¿Prefieres sesiones cortas cada día o largas de vez en cuando?",
+"fr": "Tu préfères de courtes séances quotidiennes ou de longues séances de temps en temps ?",
+"it": "Preferisci sessioni brevi ogni giorno o lunghe ogni tanto?",
+"pt": "Preferes sessões curtas todos os dias ou longas de vez em quando?",
+"pt_BR": "Você prefere sessões curtas todo dia ou longas de vez em quando?"
+}
+},
+{
+"id": "studying-063",
+"lv": "beginner",
+"i18n": {
+"en": "How do you react when you get a lower grade than you hoped?",
+"de": "Wie reagierst du, wenn du eine schlechtere Note bekommst als erhofft?",
+"es": "¿Cómo reaccionas cuando sacas una nota más baja de lo que esperabas?",
+"fr": "Comment réagis-tu quand tu as une note plus basse que prévu ?",
+"it": "Come reagisci quando prendi un voto più basso di quanto speravi?",
+"pt": "Como reages quando tens uma nota mais baixa do que esperavas?",
+"pt_BR": "Como você reage quando tira uma nota mais baixa do que esperava?"
+}
+},
+{
+"id": "studying-064",
+"lv": "beginner",
+"i18n": {
+"en": "What does a typical homework session look like for you?",
+"de": "Wie sieht bei dir eine typische Hausaufgaben- oder Lerneinheit aus?",
+"es": "¿Cómo es una sesión típica de deberes o estudio para ti?",
+"fr": "À quoi ressemble une séance de devoirs typique pour toi ?",
+"it": "Com'è per te una tipica sessione di compiti?",
+"pt": "Como é para ti uma sessão típica de trabalhos de casa?",
+"pt_BR": "Como é uma sessão típica de lição de casa ou estudo para você?"
+}
+},
+{
+"id": "studying-065",
+"lv": "beginner",
+"i18n": {
+"en": "Which drink or snack helps you feel focused without feeling heavy?",
+"de": "Welches Getränk oder welcher Snack hilft dir, fokussiert zu bleiben, ohne schwer zu werden?",
+"es": "¿Qué bebida o tentempié te ayuda a concentrarte sin sentirte pesado?",
+"fr": "Quelle boisson ou quel en-cas t'aide à rester concentré sans te sentir lourd ?",
+"it": "Quale bevanda o spuntino ti aiuta a concentrarti senza appesantirti?",
+"pt": "Que bebida ou lanche te ajuda a ficar focado sem te sentires pesado?",
+"pt_BR": "Que bebida ou lanche te ajuda a focar sem se sentir pesado?"
+}
+},
+{
+"id": "studying-066",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever used a memory trick like a rhyme or acronym? Which one?",
+"de": "Hast du schon mal eine Eselsbrücke wie einen Reim oder ein Akronym benutzt? Welche?",
+"es": "¿Has usado alguna vez un truco de memoria como una rima o unas siglas? ¿Cuál?",
+"fr": "As-tu déjà utilisé un moyen mnémotechnique, une rime ou un acronyme ? Lequel ?",
+"it": "Hai mai usato un trucco di memoria come una rima o un acronimo? Quale?",
+"pt": "Já usaste algum truque de memória, como uma rima ou uma sigla? Qual?",
+"pt_BR": "Você já usou algum truque de memória, como uma rima ou uma sigla? Qual?"
+}
+},
+{
+"id": "studying-067",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you test yourself instead of just rereading your notes?",
+"de": "Wie fragst du dich selbst ab, statt deine Notizen nur nochmal zu lesen?",
+"es": "¿Cómo te pones a prueba en lugar de solo releer tus apuntes?",
+"fr": "Comment te testes-tu au lieu de simplement relire tes notes ?",
+"it": "Come ti metti alla prova invece di rileggere soltanto gli appunti?",
+"pt": "Como te testas a ti próprio em vez de apenas releres os apontamentos?",
+"pt_BR": "Como você se testa em vez de só reler suas anotações?"
+}
+},
+{
+"id": "studying-068",
+"lv": "intermediate",
+"i18n": {
+"en": "Which subject needs a completely different study method for you?",
+"de": "Welches Fach braucht bei dir eine völlig andere Lernmethode?",
+"es": "¿Qué asignatura te exige un método de estudio totalmente distinto?",
+"fr": "Quelle matière te demande une méthode de travail complètement différente ?",
+"it": "Quale materia richiede per te un metodo di studio completamente diverso?",
+"pt": "Que disciplina te exige um método de estudo completamente diferente?",
+"pt_BR": "Qual matéria exige de você um método de estudo totalmente diferente?"
+}
+},
+{
+"id": "studying-069",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you plan an essay or a longer piece of writing?",
+"de": "Wie planst du einen Aufsatz oder einen längeren Text?",
+"es": "¿Cómo planificas un ensayo o un texto largo?",
+"fr": "Comment prépares-tu une dissertation ou un texte long ?",
+"it": "Come pianifichi un saggio o un testo lungo?",
+"pt": "Como planeias uma redação ou um texto mais longo?",
+"pt_BR": "Como você planeja uma redação ou um texto mais longo?"
+}
+},
+{
+"id": "studying-070",
+"lv": "intermediate",
+"i18n": {
+"en": "What is your strategy when you find a question you cannot answer in an exam?",
+"de": "Was ist deine Strategie, wenn du in einer Prüfung eine Frage nicht beantworten kannst?",
+"es": "¿Cuál es tu estrategia cuando no sabes responder una pregunta en un examen?",
+"fr": "Quelle est ta stratégie face à une question à laquelle tu ne sais pas répondre ?",
+"it": "Qual è la tua strategia quando in un esame trovi una domanda a cui non sai rispondere?",
+"pt": "Qual é a tua estratégia quando não sabes responder a uma pergunta num exame?",
+"pt_BR": "Qual é sua estratégia quando não sabe responder a uma questão na prova?"
+}
+},
+{
+"id": "studying-071",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever explained a topic to someone else? What did you learn from it?",
+"de": "Hast du schon mal jemandem ein Thema erklärt? Was hast du dabei gelernt?",
+"es": "¿Alguna vez le explicaste un tema a otra persona? ¿Qué aprendiste con eso?",
+"fr": "As-tu déjà expliqué un sujet à quelqu'un ? Qu'en as-tu retiré ?",
+"it": "Hai mai spiegato un argomento a qualcun altro? Cosa hai imparato?",
+"pt": "Já explicaste um tema a outra pessoa? O que aprendeste com isso?",
+"pt_BR": "Você já explicou um assunto para outra pessoa? O que aprendeu com isso?"
+}
+},
+{
+"id": "studying-072",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you decide if an online source is reliable?",
+"de": "Wie entscheidest du, ob eine Online-Quelle zuverlässig ist?",
+"es": "¿Cómo decides si una fuente de internet es fiable?",
+"fr": "Comment décides-tu si une source en ligne est fiable ?",
+"it": "Come capisci se una fonte online è affidabile?",
+"pt": "Como decides se uma fonte online é fiável?",
+"pt_BR": "Como você decide se uma fonte da internet é confiável?"
+}
+},
+{
+"id": "studying-073",
+"lv": "intermediate",
+"i18n": {
+"en": "What has worked best for you when studying in a group?",
+"de": "Was hat beim Lernen in der Gruppe für dich am besten funktioniert?",
+"es": "¿Qué te ha funcionado mejor al estudiar en grupo?",
+"fr": "Qu'est-ce qui a le mieux marché pour toi en travaillant en groupe ?",
+"it": "Cosa ha funzionato meglio per te studiando in gruppo?",
+"pt": "O que resultou melhor para ti ao estudar em grupo?",
+"pt_BR": "O que funcionou melhor para você ao estudar em grupo?"
+}
+},
+{
+"id": "studying-074",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you use mistakes from past tests to prepare for the next one?",
+"de": "Wie nutzt du Fehler aus früheren Tests für die Vorbereitung auf den nächsten?",
+"es": "¿Cómo usas los errores de exámenes anteriores para preparar el siguiente?",
+"fr": "Comment utilises-tu tes erreurs passées pour préparer le prochain examen ?",
+"it": "Come usi gli errori delle verifiche passate per preparare la prossima?",
+"pt": "Como usas os erros de testes anteriores para preparar o próximo?",
+"pt_BR": "Como você usa os erros de provas anteriores para se preparar para a próxima?"
+}
+},
+{
+"id": "studying-075",
+"lv": "intermediate",
+"i18n": {
+"en": "Do you mix different topics in one session, or stick to one? Why?",
+"de": "Mischst du in einer Lerneinheit verschiedene Themen oder bleibst du bei einem? Warum?",
+"es": "¿Mezclas temas distintos en una sesión o te quedas con uno? ¿Por qué?",
+"fr": "Tu mélanges plusieurs sujets dans une séance ou tu t'en tiens à un seul ? Pourquoi ?",
+"it": "Mescoli argomenti diversi in una sessione o ne segui uno solo? Perché?",
+"pt": "Misturas vários temas numa sessão ou ficas só num? Porquê?",
+"pt_BR": "Você mistura assuntos diferentes numa sessão ou fica em um só? Por quê?"
+}
+},
+{
+"id": "studying-076",
+"lv": "intermediate",
+"i18n": {
+"en": "What digital tool has changed the way you study?",
+"de": "Welches digitale Werkzeug hat deine Art zu lernen verändert?",
+"es": "¿Qué herramienta digital ha cambiado tu forma de estudiar?",
+"fr": "Quel outil numérique a changé ta façon d'étudier ?",
+"it": "Quale strumento digitale ha cambiato il tuo modo di studiare?",
+"pt": "Que ferramenta digital mudou a tua forma de estudar?",
+"pt_BR": "Qual ferramenta digital mudou seu jeito de estudar?"
+}
+},
+{
+"id": "studying-077",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you handle weeks with several deadlines at once?",
+"de": "Wie gehst du mit Wochen um, in denen mehrere Abgaben gleichzeitig anstehen?",
+"es": "¿Cómo llevas las semanas con varias entregas a la vez?",
+"fr": "Comment gères-tu les semaines avec plusieurs échéances en même temps ?",
+"it": "Come gestisci le settimane con più scadenze contemporaneamente?",
+"pt": "Como lidas com semanas com vários prazos ao mesmo tempo?",
+"pt_BR": "Como você lida com semanas com vários prazos ao mesmo tempo?"
+}
+},
+{
+"id": "studying-078",
+"lv": "intermediate",
+"i18n": {
+"en": "What is your best trick for beating procrastination?",
+"de": "Was ist dein bester Trick gegen das Aufschieben?",
+"es": "¿Cuál es tu mejor truco contra la procrastinación?",
+"fr": "Quelle est ta meilleure astuce contre la procrastination ?",
+"it": "Qual è il tuo trucco migliore contro la procrastinazione?",
+"pt": "Qual é o teu melhor truque contra a procrastinação?",
+"pt_BR": "Qual é o seu melhor truque contra a procrastinação?"
+}
+},
+{
+"id": "studying-079",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you balance studying with work, family or hobbies?",
+"de": "Wie bringst du das Lernen mit Arbeit, Familie oder Hobbys in Einklang?",
+"es": "¿Cómo equilibras el estudio con el trabajo, la familia o tus aficiones?",
+"fr": "Comment concilies-tu les études avec le travail, la famille ou tes loisirs ?",
+"it": "Come bilanci lo studio con lavoro, famiglia o hobby?",
+"pt": "Como equilibras o estudo com o trabalho, a família ou os passatempos?",
+"pt_BR": "Como você equilibra os estudos com trabalho, família ou hobbies?"
+}
+},
+{
+"id": "studying-080",
+"lv": "intermediate",
+"i18n": {
+"en": "Which study technique did you try that surprised you by working well?",
+"de": "Welche Lerntechnik hast du ausprobiert, die überraschend gut funktioniert hat?",
+"es": "¿Qué técnica de estudio probaste que te sorprendió por lo bien que funcionaba?",
+"fr": "Quelle méthode as-tu testée qui t'a surpris par son efficacité ?",
+"it": "Quale tecnica di studio hai provato che ti ha sorpreso funzionando bene?",
+"pt": "Que técnica de estudo experimentaste que te surpreendeu por resultar tão bem?",
+"pt_BR": "Qual técnica de estudo você testou que surpreendeu por funcionar tão bem?"
+}
+},
+{
+"id": "studying-081",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you prepare for a presentation or oral exam?",
+"de": "Wie bereitest du dich auf eine Präsentation oder mündliche Prüfung vor?",
+"es": "¿Cómo te preparas para una presentación o un examen oral?",
+"fr": "Comment te prépares-tu à un exposé ou à un oral ?",
+"it": "Come ti prepari per una presentazione o un esame orale?",
+"pt": "Como te preparas para uma apresentação ou um exame oral?",
+"pt_BR": "Como você se prepara para uma apresentação ou prova oral?"
+}
+},
+{
+"id": "studying-082",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you think about using AI tools for studying?",
+"de": "Was hältst du davon, KI-Werkzeuge zum Lernen zu nutzen?",
+"es": "¿Qué opinas de usar herramientas de IA para estudiar?",
+"fr": "Que penses-tu de l'utilisation des outils d'IA pour étudier ?",
+"it": "Cosa pensi dell'uso di strumenti di IA per studiare?",
+"pt": "O que achas de usar ferramentas de IA para estudar?",
+"pt_BR": "O que você acha de usar ferramentas de IA para estudar?"
+}
+},
+{
+"id": "studying-083",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you summarise a long chapter so it is easy to review later?",
+"de": "Wie fasst du ein langes Kapitel so zusammen, dass du es später leicht wiederholen kannst?",
+"es": "¿Cómo resumes un capítulo largo para repasarlo fácilmente después?",
+"fr": "Comment résumes-tu un long chapitre pour le réviser facilement plus tard ?",
+"it": "Come riassumi un capitolo lungo per ripassarlo facilmente dopo?",
+"pt": "Como resumes um capítulo longo para o rever facilmente mais tarde?",
+"pt_BR": "Como você resume um capítulo longo para revisar fácil depois?"
+}
+},
+{
+"id": "studying-084",
+"lv": "intermediate",
+"i18n": {
+"en": "What study tradition from another country would you like to try?",
+"de": "Welche Lerntradition aus einem anderen Land würdest du gern ausprobieren?",
+"es": "¿Qué tradición de estudio de otro país te gustaría probar?",
+"fr": "Quelle tradition d'étude d'un autre pays aimerais-tu essayer ?",
+"it": "Quale tradizione di studio di un altro Paese ti piacerebbe provare?",
+"pt": "Que tradição de estudo de outro país gostavas de experimentar?",
+"pt_BR": "Qual tradição de estudo de outro país você gostaria de testar?"
+}
+},
+{
+"id": "studying-085",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you spread your revision over the weeks before an exam?",
+"de": "Wie verteilst du deine Wiederholung über die Wochen vor einer Prüfung?",
+"es": "¿Cómo repartes el repaso en las semanas antes de un examen?",
+"fr": "Comment répartis-tu tes révisions sur les semaines avant un examen ?",
+"it": "Come distribuisci il ripasso nelle settimane prima di un esame?",
+"pt": "Como distribuis a revisão pelas semanas antes de um exame?",
+"pt_BR": "Como você distribui a revisão nas semanas antes de uma prova?"
+}
+},
+{
+"id": "studying-086",
+"lv": "advanced",
+"i18n": {
+"en": "If you designed your own study system from scratch, what would it include?",
+"de": "Wenn du dein eigenes Lernsystem von Grund auf entwerfen würdest, was gehörte dazu?",
+"es": "Si diseñaras tu propio sistema de estudio desde cero, ¿qué incluiría?",
+"fr": "Si tu concevais ton propre système d'étude de zéro, que contiendrait-il ?",
+"it": "Se progettassi da zero il tuo sistema di studio, cosa includeresti?",
+"pt": "Se criasses o teu próprio sistema de estudo de raiz, o que incluiria?",
+"pt_BR": "Se você criasse seu próprio sistema de estudo do zero, o que ele teria?"
+}
+},
+{
+"id": "studying-087",
+"lv": "advanced",
+"i18n": {
+"en": "How do you check whether a study method really works for you?",
+"de": "Wie prüfst du, ob eine Lernmethode bei dir wirklich funktioniert?",
+"es": "¿Cómo compruebas si un método de estudio funciona de verdad contigo?",
+"fr": "Comment vérifies-tu qu'une méthode d'étude fonctionne vraiment pour toi ?",
+"it": "Come verifichi se un metodo di studio funziona davvero per te?",
+"pt": "Como verificas se um método de estudo resulta mesmo contigo?",
+"pt_BR": "Como você verifica se um método de estudo realmente funciona para você?"
+}
+},
+{
+"id": "studying-088",
+"lv": "advanced",
+"i18n": {
+"en": "What would you like to learn completely on your own, without a course?",
+"de": "Was würdest du gern ganz allein lernen, ohne Kurs?",
+"es": "¿Qué te gustaría aprender totalmente por tu cuenta, sin un curso?",
+"fr": "Qu'aimerais-tu apprendre entièrement seul, sans cours ?",
+"it": "Cosa ti piacerebbe imparare completamente da solo, senza un corso?",
+"pt": "O que gostavas de aprender totalmente sozinho, sem um curso?",
+"pt_BR": "O que você gostaria de aprender totalmente sozinho, sem um curso?"
+}
+},
+{
+"id": "studying-089",
+"lv": "advanced",
+"i18n": {
+"en": "How do you read a research article or a dense technical text?",
+"de": "Wie liest du einen Fachartikel oder einen dichten technischen Text?",
+"es": "¿Cómo lees un artículo científico o un texto técnico denso?",
+"fr": "Comment lis-tu un article de recherche ou un texte technique dense ?",
+"it": "Come leggi un articolo scientifico o un testo tecnico molto denso?",
+"pt": "Como lês um artigo científico ou um texto técnico denso?",
+"pt_BR": "Como você lê um artigo científico ou um texto técnico denso?"
+}
+},
+{
+"id": "studying-090",
+"lv": "advanced",
+"i18n": {
+"en": "What skill would you practise deliberately if you had one focused hour a day?",
+"de": "Welche Fähigkeit würdest du gezielt üben, wenn du täglich eine konzentrierte Stunde hättest?",
+"es": "¿Qué habilidad practicarías a conciencia si tuvieras una hora concentrada al día?",
+"fr": "Quelle compétence travaillerais-tu si tu avais une heure de concentration par jour ?",
+"it": "Quale abilità eserciteresti con metodo se avessi un'ora concentrata al giorno?",
+"pt": "Que competência praticarias a fundo se tivesses uma hora focada por dia?",
+"pt_BR": "Que habilidade você praticaria a fundo se tivesse uma hora focada por dia?"
+}
+},
+{
+"id": "studying-091",
+"lv": "advanced",
+"i18n": {
+"en": "How do you keep knowledge from old courses fresh over the years?",
+"de": "Wie hältst du Wissen aus alten Kursen über die Jahre frisch?",
+"es": "¿Cómo mantienes fresco lo que aprendiste en cursos antiguos con el paso de los años?",
+"fr": "Comment gardes-tu en mémoire, au fil des ans, ce que tu as appris dans d'anciens cours ?",
+"it": "Come mantieni vive negli anni le conoscenze dei corsi passati?",
+"pt": "Como manténs fresco, ao longo dos anos, o que aprendeste em cursos antigos?",
+"pt_BR": "Como você mantém vivo, ao longo dos anos, o que aprendeu em cursos antigos?"
+}
+},
+{
+"id": "studying-092",
+"lv": "advanced",
+"i18n": {
+"en": "What big exam or certification would you like to prepare for one day?",
+"de": "Auf welche große Prüfung oder Zertifizierung würdest du dich gern eines Tages vorbereiten?",
+"es": "¿Para qué gran examen o certificación te gustaría prepararte algún día?",
+"fr": "Quel grand examen ou quelle certification aimerais-tu préparer un jour ?",
+"it": "Per quale grande esame o certificazione ti piacerebbe prepararti un giorno?",
+"pt": "Para que grande exame ou certificação gostavas de te preparar um dia?",
+"pt_BR": "Para qual grande prova ou certificação você gostaria de se preparar um dia?"
+}
+},
+{
+"id": "studying-093",
+"lv": "advanced",
+"i18n": {
+"en": "How has the way you learn changed since you were a child?",
+"de": "Wie hat sich deine Art zu lernen seit deiner Kindheit verändert?",
+"es": "¿Cómo ha cambiado tu forma de aprender desde que eras niño?",
+"fr": "Comment ta façon d'apprendre a-t-elle changé depuis ton enfance ?",
+"it": "Com'è cambiato il tuo modo di imparare da quando eri bambino?",
+"pt": "Como mudou a tua forma de aprender desde que eras criança?",
+"pt_BR": "Como seu jeito de aprender mudou desde que você era criança?"
+}
+},
+{
+"id": "studying-094",
+"lv": "advanced",
+"i18n": {
+"en": "What do you do when your progress on a skill seems to stop?",
+"de": "Was machst du, wenn dein Fortschritt bei einer Fähigkeit stillzustehen scheint?",
+"es": "¿Qué haces cuando tu progreso en una habilidad parece estancarse?",
+"fr": "Que fais-tu quand tes progrès dans une compétence semblent stagner ?",
+"it": "Cosa fai quando i tuoi progressi in un'abilità sembrano fermarsi?",
+"pt": "O que fazes quando o teu progresso numa competência parece parar?",
+"pt_BR": "O que você faz quando seu progresso em uma habilidade parece travar?"
+}
+},
+{
+"id": "studying-095",
+"lv": "advanced",
+"i18n": {
+"en": "How would you teach a younger student to study well?",
+"de": "Wie würdest du einer jüngeren Person beibringen, gut zu lernen?",
+"es": "¿Cómo le enseñarías a un estudiante más joven a estudiar bien?",
+"fr": "Comment apprendrais-tu à un élève plus jeune à bien étudier ?",
+"it": "Come insegneresti a uno studente più giovane a studiare bene?",
+"pt": "Como ensinarias um estudante mais novo a estudar bem?",
+"pt_BR": "Como você ensinaria um estudante mais novo a estudar bem?"
+}
+},
+{
+"id": "studying-096",
+"lv": "advanced",
+"i18n": {
+"en": "How do you connect ideas from different subjects or fields?",
+"de": "Wie verbindest du Ideen aus verschiedenen Fächern oder Bereichen?",
+"es": "¿Cómo conectas ideas de distintas asignaturas o campos?",
+"fr": "Comment relies-tu des idées venant de matières ou de domaines différents ?",
+"it": "Come colleghi idee di materie o campi diversi?",
+"pt": "Como ligas ideias de disciplinas ou áreas diferentes?",
+"pt_BR": "Como você conecta ideias de matérias ou áreas diferentes?"
+}
+},
+{
+"id": "studying-097",
+"lv": "advanced",
+"i18n": {
+"en": "How do you predict your result before a test, and how accurate are you?",
+"de": "Wie schätzt du dein Ergebnis vor einem Test ein, und wie genau liegst du damit?",
+"es": "¿Cómo predices tu nota antes de un examen y cuánto aciertas?",
+"fr": "Comment prédis-tu ta note avant un examen, et à quel point vises-tu juste ?",
+"it": "Come prevedi il tuo risultato prima di una verifica, e quanto ci prendi?",
+"pt": "Como prevês o teu resultado antes de um teste, e quanto acertas?",
+"pt_BR": "Como você prevê sua nota antes de uma prova, e quanto costuma acertar?"
+}
+},
+{
+"id": "studying-098",
+"lv": "advanced",
+"i18n": {
+"en": "What is your personal philosophy of learning in one sentence?",
+"de": "Was ist deine persönliche Lernphilosophie in einem Satz?",
+"es": "¿Cuál es tu filosofía personal del aprendizaje en una frase?",
+"fr": "Quelle est ta philosophie personnelle de l'apprentissage en une phrase ?",
+"it": "Qual è la tua filosofia personale dell'apprendimento in una frase?",
+"pt": "Qual é a tua filosofia pessoal de aprendizagem numa frase?",
+"pt_BR": "Qual é a sua filosofia pessoal de aprendizado em uma frase?"
+}
+},
+{
+"id": "studying-099",
+"lv": "advanced",
+"i18n": {
+"en": "How do you stay motivated during a project that lasts many months?",
+"de": "Wie bleibst du bei einem Projekt motiviert, das viele Monate dauert?",
+"es": "¿Cómo te mantienes motivado en un proyecto que dura muchos meses?",
+"fr": "Comment restes-tu motivé sur un projet qui dure de nombreux mois ?",
+"it": "Come resti motivato in un progetto che dura molti mesi?",
+"pt": "Como te manténs motivado num projeto que dura muitos meses?",
+"pt_BR": "Como você se mantém motivado num projeto que dura muitos meses?"
+}
+},
+{
+"id": "studying-100",
+"lv": "advanced",
+"i18n": {
+"en": "What would you love to keep learning for the rest of your life?",
+"de": "Was würdest du gern dein ganzes Leben lang weiterlernen?",
+"es": "¿Qué te encantaría seguir aprendiendo toda la vida?",
+"fr": "Qu'aimerais-tu continuer à apprendre toute ta vie ?",
+"it": "Cosa ti piacerebbe continuare a imparare per tutta la vita?",
+"pt": "O que gostavas de continuar a aprender para o resto da vida?",
+"pt_BR": "O que você adoraria continuar aprendendo pelo resto da vida?"
+}
+}
+]
+}

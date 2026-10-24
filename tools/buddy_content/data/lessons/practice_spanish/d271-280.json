@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 271,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Common mistakes at B1",
+     "g": "Spot and fix classic errors that many B1 learners make.",
+     "p": [
+      "Say estoy de acuerdo, not soy de acuerdo: agreeing uses estar.",
+      "La gente es amable, not la gente son: gente is singular in Spanish.",
+      "Other classics: depende de (not depende en), pensar en, me gusta + singular / me gustan + plural."
+     ],
+     "q": "Which mistake do you make most often? Tell me and say the correct form twice.",
+     "c": "Write five sentences using estoy de acuerdo, la gente es, depende de, pienso en and me gustan."
+    },
+    "de": {
+     "t": "Typische Fehler auf B1",
+     "g": "Erkenne und korrigiere klassische Fehler vieler B1-Lernender.",
+     "p": [
+      "Sag estoy de acuerdo, nicht soy de acuerdo: Zustimmung geht mit estar.",
+      "La gente es amable, nicht la gente son: gente ist im Spanischen Singular.",
+      "Weitere Klassiker: depende de (nicht en), pensar en, me gusta + Singular / me gustan + Plural."
+     ],
+     "q": "Welchen Fehler machst du am häufigsten? Sag ihn mir und sprich die richtige Form zweimal.",
+     "c": "Schreib fünf Sätze mit estoy de acuerdo, la gente es, depende de, pienso en und me gustan."
+    },
+    "es": {
+     "t": "Errores frecuentes en el B1",
+     "g": "Detecta y corrige errores clásicos de muchos estudiantes de B1.",
+     "p": [
+      "Se dice estoy de acuerdo, no soy de acuerdo: para estar de acuerdo se usa estar.",
+      "La gente es amable, no la gente son: gente es singular en español.",
+      "Otros clásicos: depende de (no depende en), pensar en, me gusta + singular / me gustan + plural."
+     ],
+     "q": "¿Qué error cometes más a menudo? Dímelo y repite la forma correcta dos veces.",
+     "c": "Escribe cinco frases con estoy de acuerdo, la gente es, depende de, pienso en y me gustan."
+    },
+    "fr": {
+     "t": "Erreurs fréquentes au niveau B1",
+     "g": "Repère et corrige des erreurs classiques de nombreux apprenants B1.",
+     "p": [
+      "On dit estoy de acuerdo, pas soy de acuerdo : être d'accord se dit avec estar.",
+      "La gente es amable, pas la gente son : gente est singulier en espagnol.",
+      "Autres classiques : depende de (pas en), pensar en, me gusta + singulier / me gustan + pluriel."
+     ],
+     "q": "Quelle erreur fais-tu le plus souvent ? Dis-la-moi et répète deux fois la bonne forme.",
+     "c": "Écris cinq phrases avec estoy de acuerdo, la gente es, depende de, pienso en et me gustan."
+    },
+    "it": {
+     "t": "Errori comuni al livello B1",
+     "g": "Riconosci e correggi errori classici di molti studenti B1.",
+     "p": [
+      "Si dice estoy de acuerdo, non soy de acuerdo: essere d'accordo vuole estar.",
+      "La gente es amable, non la gente son: gente in spagnolo è singolare.",
+      "Altri classici: depende de (non en), pensar en, me gusta + singolare / me gustan + plurale."
+     ],
+     "q": "Quale errore fai più spesso? Dimmelo e ripeti due volte la forma corretta.",
+     "c": "Scrivi cinque frasi con estoy de acuerdo, la gente es, depende de, pienso en e me gustan."
+    },
+    "pt": {
+     "t": "Erros comuns no B1",
+     "g": "Deteta e corrige erros clássicos de muitos alunos de B1.",
+     "p": [
+      "Diz-se estoy de acuerdo, não soy de acuerdo: para concordar usa-se estar.",
+      "La gente es amable, não la gente son: gente é singular em espanhol.",
+      "Outros clássicos: depende de (não en), pensar en, me gusta + singular / me gustan + plural."
+     ],
+     "q": "Que erro dás mais vezes? Diz-mo e repete a forma correta duas vezes.",
+     "c": "Escreve cinco frases com estoy de acuerdo, la gente es, depende de, pienso en e me gustan."
+    },
+    "pt_BR": {
+     "t": "Erros comuns no B1",
+     "g": "Perceba e corrija erros clássicos de muitos alunos de B1.",
+     "p": [
+      "Diz-se estoy de acuerdo, não soy de acuerdo: para concordar se usa estar.",
+      "La gente es amable, não la gente son: gente é singular em espanhol.",
+      "Outros clássicos: depende de (não en), pensar en, me gusta + singular / me gustan + plural."
+     ],
+     "q": "Qual erro você comete com mais frequência? Me diga e repita a forma correta duas vezes.",
+     "c": "Escreva cinco frases com estoy de acuerdo, la gente es, depende de, pienso en e me gustan."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "estar de acuerdo",
+      "ex": "Estoy de acuerdo contigo en todo."
+     },
+     {
+      "w": "la gente es",
+      "ex": "La gente aquí es muy abierta."
+     },
+     {
+      "w": "depende de",
+      "ex": "Depende del tiempo que haga mañana."
+     },
+     {
+      "w": "pensar en",
+      "ex": "Siempre pienso en mis amigos de Perú."
+     },
+     {
+      "w": "me gustan",
+      "ex": "Me gustan mucho las películas antiguas."
+     },
+     {
+      "w": "enamorarse de",
+      "ex": "Me enamoré de esta ciudad el primer día."
+     }
+    ],
+    "gram": "Estar de acuerdo (no ser). La gente + verbo en singular. Depender de, pensar en: la preposición forma parte del verbo."
+   }
+  },
+  {
+   "d": 272,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "False friends: embarazada",
+     "g": "Avoid words that look like English but mean something else.",
+     "p": [
+      "Embarazada means pregnant, not embarrassed; for embarrassed say me da vergüenza.",
+      "Constipado means having a cold; éxito means success, not exit (exit is salida).",
+      "Carpeta is a folder, not a carpet (alfombra); librería is a bookshop, a library is biblioteca."
+     ],
+     "q": "Have you ever been tricked by a false friend? Tell me what happened.",
+     "c": "Make a list of five false friends with their real meaning and one sentence each."
+    },
+    "de": {
+     "t": "Falsche Freunde: embarazada",
+     "g": "Vermeide Wörter, die vertraut aussehen, aber etwas anderes bedeuten.",
+     "p": [
+      "Embarazada heißt schwanger, nicht verlegen; für verlegen sag me da vergüenza.",
+      "Constipado heißt erkältet; éxito heißt Erfolg, nicht Ausgang (Ausgang ist salida).",
+      "Carpeta ist eine Mappe, kein Teppich (alfombra); librería ist eine Buchhandlung, Bibliothek ist biblioteca."
+     ],
+     "q": "Bist du schon einmal auf einen falschen Freund hereingefallen? Erzähl, was passiert ist.",
+     "c": "Mach eine Liste mit fünf falschen Freunden, ihrer echten Bedeutung und je einem Satz."
+    },
+    "es": {
+     "t": "Falsos amigos: embarazada",
+     "g": "Evita palabras que se parecen a otras lenguas pero significan otra cosa.",
+     "p": [
+      "Embarazada significa que espera un bebé, no avergonzada; para eso di me da vergüenza.",
+      "Constipado es tener un resfriado; éxito es triunfo, no salida.",
+      "Carpeta es para guardar papeles, no una alfombra; librería vende libros, biblioteca los presta."
+     ],
+     "q": "¿Alguna vez te ha engañado un falso amigo? Cuéntame qué pasó.",
+     "c": "Haz una lista de cinco falsos amigos con su significado real y una frase para cada uno."
+    },
+    "fr": {
+     "t": "Faux amis : embarazada",
+     "g": "Évite les mots qui ressemblent à d'autres langues mais veulent dire autre chose.",
+     "p": [
+      "Embarazada veut dire enceinte, pas embarrassée ; pour gêné, dis me da vergüenza.",
+      "Constipado signifie enrhumé ; éxito veut dire succès, pas sortie (sortie se dit salida).",
+      "Carpeta est une chemise à documents ; librería est une librairie, la bibliothèque se dit biblioteca."
+     ],
+     "q": "T'es-tu déjà fait piéger par un faux ami ? Raconte-moi ce qui s'est passé.",
+     "c": "Fais une liste de cinq faux amis avec leur vrai sens et une phrase pour chacun."
+    },
+    "it": {
+     "t": "Falsi amici: embarazada",
+     "g": "Evita parole che sembrano familiari ma significano altro.",
+     "p": [
+      "Embarazada significa incinta, non imbarazzata; per imbarazzato di' me da vergüenza.",
+      "Constipado significa raffreddato; éxito significa successo, non uscita (uscita è salida).",
+      "Carpeta è una cartellina, non un tappeto (alfombra); librería è una libreria, la biblioteca è biblioteca."
+     ],
+     "q": "Ti è mai capitato di cadere in un falso amico? Raccontami cosa è successo.",
+     "c": "Fai una lista di cinque falsi amici con il vero significato e una frase per ciascuno."
+    },
+    "pt": {
+     "t": "Falsos amigos: embarazada",
+     "g": "Evita palavras que parecem familiares mas significam outra coisa.",
+     "p": [
+      "Embarazada significa grávida, não embaraçada; para envergonhado diz me da vergüenza.",
+      "Constipado aqui coincide com o português: estar com uma constipação; mas éxito significa sucesso, não saída.",
+      "Carpeta é uma pasta de papéis, não uma carpete (alfombra); librería é livraria, biblioteca é biblioteca."
+     ],
+     "q": "Já te enganou algum falso amigo? Conta-me o que aconteceu.",
+     "c": "Faz uma lista de cinco falsos amigos com o significado real e uma frase para cada um."
+    },
+    "pt_BR": {
+     "t": "Falsos amigos: embarazada",
+     "g": "Evite palavras que parecem familiares mas significam outra coisa.",
+     "p": [
+      "Embarazada significa grávida, não embaraçada; para envergonhado diga me da vergüenza.",
+      "Constipado significa resfriado, não com intestino preso; éxito significa sucesso, não saída.",
+      "Carpeta é uma pasta de papéis, não um carpete (alfombra); librería é livraria, biblioteca é biblioteca."
+     ],
+     "q": "Algum falso amigo já te pegou? Me conte o que aconteceu.",
+     "c": "Faça uma lista de cinco falsos amigos com o significado real e uma frase para cada um."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "embarazada",
+      "ex": "Mi hermana está embarazada de su primer hijo."
+     },
+     {
+      "w": "constipado",
+      "ex": "Estoy constipado y no paro de estornudar."
+     },
+     {
+      "w": "el éxito",
+      "ex": "La obra de teatro fue un gran éxito."
+     },
+     {
+      "w": "la carpeta",
+      "ex": "Guarda los documentos en la carpeta azul."
+     },
+     {
+      "w": "la librería",
+      "ex": "Compré este libro en una librería del centro."
+     },
+     {
+      "w": "me da vergüenza",
+      "ex": "Me da vergüenza hablar en público."
+     }
+    ],
+    "gram": "Dar vergüenza funciona como gustar: me da vergüenza, nos da vergüenza cantar. Estar embarazada / estar constipado."
+   }
+  },
+  {
+   "d": 273,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Colloquial Spain: vale, guay",
+     "g": "Understand casual expressions you will hear in Spain.",
+     "p": [
+      "Vale means OK and is everywhere: ¿Quedamos a las seis? — ¡Vale!",
+      "Guay and mola mean cool: ¡Qué guay! Este sitio mola mucho.",
+      "Tío / tía is like mate among friends; ¡qué pasada! means amazing. Keep them for informal chats."
+     ],
+     "q": "Which of these expressions do you like most? Use it in a sentence about your weekend.",
+     "c": "Write a short informal message to a friend in Spain with vale, guay and ¡qué pasada!"
+    },
+    "de": {
+     "t": "Umgangssprache Spanien: vale, guay",
+     "g": "Verstehe lockere Ausdrücke, die du in Spanien hörst.",
+     "p": [
+      "Vale heißt okay und ist überall: ¿Quedamos a las seis? — ¡Vale!",
+      "Guay und mola heißen cool: ¡Qué guay! Este sitio mola mucho.",
+      "Tío / tía ist wie Alter unter Freunden; ¡qué pasada! heißt Wahnsinn. Nur für lockere Gespräche."
+     ],
+     "q": "Welcher Ausdruck gefällt dir am besten? Benutze ihn in einem Satz über dein Wochenende.",
+     "c": "Schreib einer Freundin in Spanien eine kurze Nachricht mit vale, guay und ¡qué pasada!"
+    },
+    "es": {
+     "t": "Español coloquial de España: vale, guay",
+     "g": "Entiende expresiones informales que oirás en España.",
+     "p": [
+      "Vale significa de acuerdo y se oye en todas partes: ¿Quedamos a las seis? — ¡Vale!",
+      "Guay y mola expresan que algo gusta mucho: ¡Qué guay! Este sitio mola mucho.",
+      "Tío / tía se usa entre amigos; ¡qué pasada! es increíble. Resérvalos para charlas informales."
+     ],
+     "q": "¿Cuál de estas expresiones te gusta más? Úsala en una frase sobre tu fin de semana.",
+     "c": "Escribe un mensaje informal corto a un amigo de España con vale, guay y ¡qué pasada!"
+    },
+    "fr": {
+     "t": "Espagnol familier d'Espagne : vale, guay",
+     "g": "Comprends les expressions familières qu'on entend en Espagne.",
+     "p": [
+      "Vale veut dire OK et s'entend partout : ¿Quedamos a las seis? — ¡Vale!",
+      "Guay et mola veulent dire cool : ¡Qué guay! Este sitio mola mucho.",
+      "Tío / tía, c'est comme mec entre amis ; ¡qué pasada!, c'est génial. Garde-les pour l'informel."
+     ],
+     "q": "Quelle expression préfères-tu ? Utilise-la dans une phrase sur ton week-end.",
+     "c": "Écris un court message informel à un ami en Espagne avec vale, guay et ¡qué pasada!"
+    },
+    "it": {
+     "t": "Spagnolo colloquiale di Spagna: vale, guay",
+     "g": "Capisci le espressioni informali che sentirai in Spagna.",
+     "p": [
+      "Vale significa ok e si sente ovunque: ¿Quedamos a las seis? — ¡Vale!",
+      "Guay e mola significano figo: ¡Qué guay! Este sitio mola mucho.",
+      "Tío / tía è come amico mio tra amici; ¡qué pasada! vuol dire pazzesco. Solo per chiacchiere informali."
+     ],
+     "q": "Quale espressione ti piace di più? Usala in una frase sul tuo weekend.",
+     "c": "Scrivi un breve messaggio informale a un amico in Spagna con vale, guay e ¡qué pasada!"
+    },
+    "pt": {
+     "t": "Espanhol coloquial de Espanha: vale, guay",
+     "g": "Percebe expressões informais que vais ouvir em Espanha.",
+     "p": [
+      "Vale significa ok e ouve-se em todo o lado: ¿Quedamos a las seis? — ¡Vale!",
+      "Guay e mola significam fixe: ¡Qué guay! Este sitio mola mucho.",
+      "Tío / tía é como pá entre amigos; ¡qué pasada! é espetacular. Usa-os só em conversas informais."
+     ],
+     "q": "Qual destas expressões preferes? Usa-a numa frase sobre o teu fim de semana.",
+     "c": "Escreve uma mensagem informal curta a um amigo de Espanha com vale, guay e ¡qué pasada!"
+    },
+    "pt_BR": {
+     "t": "Espanhol coloquial da Espanha: vale, guay",
+     "g": "Entenda expressões informais que você vai ouvir na Espanha.",
+     "p": [
+      "Vale significa ok e se ouve em todo lugar: ¿Quedamos a las seis? — ¡Vale!",
+      "Guay e mola significam legal: ¡Qué guay! Este sitio mola mucho.",
+      "Tío / tía é como cara entre amigos; ¡qué pasada! é demais. Use só em conversas informais."
+     ],
+     "q": "Qual dessas expressões você prefere? Use numa frase sobre seu fim de semana.",
+     "c": "Escreva uma mensagem informal curta para um amigo da Espanha com vale, guay e ¡qué pasada!"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "vale",
+      "ex": "—¿Te llamo luego? —Vale, hasta luego."
+     },
+     {
+      "w": "guay",
+      "ex": "Tu bici nueva es muy guay."
+     },
+     {
+      "w": "mola",
+      "ex": "Me mola mucho este barrio."
+     },
+     {
+      "w": "tío / tía",
+      "ex": "¡Tía, cuánto tiempo sin verte!"
+     },
+     {
+      "w": "¡qué pasada!",
+      "ex": "¿Has visto las vistas? ¡Qué pasada!"
+     },
+     {
+      "w": "quedar",
+      "ex": "¿Quedamos mañana para tomar algo?"
+     }
+    ],
+    "gram": "Molar funciona como gustar: me mola, nos molan tus zapatillas. Registro coloquial: solo con amigos y en contextos informales."
+   }
+  },
+  {
+   "d": 274,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Colloquial Latin America",
+     "g": "Recognise casual expressions from different Latin American countries.",
+     "p": [
+      "Cool: chévere (Venezuela, Colombia), padre (Mexico), bacán (Chile, Peru), ¡qué bárbaro! (Argentina).",
+      "Ahorita in Mexico means right now, but it can also mean in a while: context is key.",
+      "The same word can change by country, so listen first and ask: ¿Cómo se dice aquí...?"
+     ],
+     "q": "Which country's Spanish would you like to learn more about? Why?",
+     "c": "Choose one country and write two sentences using its typical expression for cool."
+    },
+    "de": {
+     "t": "Umgangssprache Lateinamerika",
+     "g": "Erkenne lockere Ausdrücke aus verschiedenen Ländern Lateinamerikas.",
+     "p": [
+      "Cool: chévere (Venezuela, Kolumbien), padre (Mexiko), bacán (Chile, Peru), ¡qué bárbaro! (Argentinien).",
+      "Ahorita heißt in Mexiko gleich, kann aber auch später bedeuten: der Kontext zählt.",
+      "Dasselbe Wort kann je nach Land anders sein, also hör zu und frag: ¿Cómo se dice aquí...?"
+     ],
+     "q": "Über das Spanisch welches Landes möchtest du mehr lernen? Warum?",
+     "c": "Wähl ein Land und schreib zwei Sätze mit seinem typischen Wort für cool."
+    },
+    "es": {
+     "t": "Español coloquial de Latinoamérica",
+     "g": "Reconoce expresiones informales de distintos países latinoamericanos.",
+     "p": [
+      "Para algo genial: chévere (Venezuela, Colombia), padre (México), bacán (Chile, Perú), ¡qué bárbaro! (Argentina).",
+      "En México ahorita significa ahora mismo, pero también puede ser dentro de un rato: el contexto manda.",
+      "La misma palabra puede cambiar según el país; escucha primero y pregunta: ¿Cómo se dice aquí...?"
+     ],
+     "q": "¿Sobre el español de qué país te gustaría aprender más? ¿Por qué?",
+     "c": "Elige un país y escribe dos frases con su expresión típica para decir que algo es genial."
+    },
+    "fr": {
+     "t": "Espagnol familier d'Amérique latine",
+     "g": "Reconnais des expressions familières de différents pays d'Amérique latine.",
+     "p": [
+      "Cool : chévere (Venezuela, Colombie), padre (Mexique), bacán (Chili, Pérou), ¡qué bárbaro! (Argentine).",
+      "Au Mexique, ahorita veut dire tout de suite, mais aussi tout à l'heure : le contexte compte.",
+      "Un même mot peut changer selon le pays ; écoute d'abord et demande : ¿Cómo se dice aquí...?"
+     ],
+     "q": "Sur l'espagnol de quel pays aimerais-tu en apprendre plus ? Pourquoi ?",
+     "c": "Choisis un pays et écris deux phrases avec son mot typique pour cool."
+    },
+    "it": {
+     "t": "Spagnolo colloquiale dell'America Latina",
+     "g": "Riconosci espressioni informali di vari paesi latinoamericani.",
+     "p": [
+      "Figo: chévere (Venezuela, Colombia), padre (Messico), bacán (Cile, Perù), ¡qué bárbaro! (Argentina).",
+      "In Messico ahorita significa subito, ma può voler dire anche tra un po': conta il contesto.",
+      "La stessa parola può cambiare da paese a paese; ascolta prima e chiedi: ¿Cómo se dice aquí...?"
+     ],
+     "q": "Dello spagnolo di quale paese vorresti sapere di più? Perché?",
+     "c": "Scegli un paese e scrivi due frasi con la sua espressione tipica per figo."
+    },
+    "pt": {
+     "t": "Espanhol coloquial da América Latina",
+     "g": "Reconhece expressões informais de vários países latino-americanos.",
+     "p": [
+      "Fixe: chévere (Venezuela, Colômbia), padre (México), bacán (Chile, Peru), ¡qué bárbaro! (Argentina).",
+      "No México ahorita significa já, mas também pode ser daqui a pouco: o contexto decide.",
+      "A mesma palavra pode mudar de país para país; ouve primeiro e pergunta: ¿Cómo se dice aquí...?"
+     ],
+     "q": "Sobre o espanhol de que país gostavas de aprender mais? Porquê?",
+     "c": "Escolhe um país e escreve duas frases com a sua expressão típica para fixe."
+    },
+    "pt_BR": {
+     "t": "Espanhol coloquial da América Latina",
+     "g": "Reconheça expressões informais de vários países latino-americanos.",
+     "p": [
+      "Legal: chévere (Venezuela, Colômbia), padre (México), bacán (Chile, Peru), ¡qué bárbaro! (Argentina).",
+      "No México ahorita significa agora mesmo, mas também pode ser daqui a pouco: o contexto manda.",
+      "A mesma palavra pode mudar conforme o país; escute primeiro e pergunte: ¿Cómo se dice aquí...?"
+     ],
+     "q": "Sobre o espanhol de qual país você gostaria de aprender mais? Por quê?",
+     "c": "Escolha um país e escreva duas frases com a expressão típica dele para legal."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "chévere",
+      "ex": "La fiesta de anoche estuvo chévere."
+     },
+     {
+      "w": "padre",
+      "ex": "¡Qué padre está tu casa nueva!"
+     },
+     {
+      "w": "bacán",
+      "ex": "El concierto fue bacán, ¿no?"
+     },
+     {
+      "w": "¡qué bárbaro!",
+      "ex": "¿Corriste la maratón? ¡Qué bárbaro!"
+     },
+     {
+      "w": "ahorita",
+      "ex": "Ahorita te llamo, dame cinco minutos."
+     },
+     {
+      "w": "¿cómo se dice aquí...?",
+      "ex": "¿Cómo se dice aquí autobús? ¿Camión o guagua?"
+     }
+    ],
+    "gram": "Diminutivos con valor afectivo o temporal: ahorita, cafecito. ¡Qué + adjetivo! para valorar: ¡qué padre!, ¡qué bárbaro!"
+   }
+  },
+  {
+   "d": 275,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Music of the Spanish-speaking world",
+     "g": "Discover famous rhythms and where they come from.",
+     "p": [
+      "Flamenco comes from Andalusia, with guitar, song and dance; tango from the Río de la Plata (Buenos Aires, Montevideo).",
+      "Salsa grew in New York with Caribbean roots; son cubano comes from Cuba; cumbia from Colombia.",
+      "Describe music: tiene mucho ritmo, es alegre, es melancólica, me dan ganas de bailar."
+     ],
+     "q": "What kind of music do you like? Describe it in Spanish with tiene ritmo or me dan ganas de...",
+     "c": "Listen to one song in Spanish today and write two sentences about how it makes you feel."
+    },
+    "de": {
+     "t": "Musik der spanischsprachigen Welt",
+     "g": "Entdecke berühmte Rhythmen und woher sie stammen.",
+     "p": [
+      "Flamenco kommt aus Andalusien, mit Gitarre, Gesang und Tanz; Tango vom Río de la Plata.",
+      "Salsa entstand in New York mit karibischen Wurzeln; Son cubano stammt aus Kuba, Cumbia aus Kolumbien.",
+      "Musik beschreiben: tiene mucho ritmo, es alegre, es melancólica, me dan ganas de bailar."
+     ],
+     "q": "Welche Musik magst du? Beschreib sie auf Spanisch mit tiene ritmo oder me dan ganas de...",
+     "c": "Hör heute ein spanisches Lied und schreib zwei Sätze darüber, wie es auf dich wirkt."
+    },
+    "es": {
+     "t": "La música del mundo hispano",
+     "g": "Descubre ritmos famosos y de dónde vienen.",
+     "p": [
+      "El flamenco nace en Andalucía, con guitarra, cante y baile; el tango, en el Río de la Plata.",
+      "La salsa creció en Nueva York con raíces caribeñas; el son cubano es de Cuba y la cumbia, de Colombia.",
+      "Describe la música: tiene mucho ritmo, es alegre, es melancólica, me dan ganas de bailar."
+     ],
+     "q": "¿Qué música te gusta? Descríbela con tiene ritmo o me dan ganas de...",
+     "c": "Escucha hoy una canción en español y escribe dos frases sobre cómo te hace sentir."
+    },
+    "fr": {
+     "t": "La musique du monde hispanique",
+     "g": "Découvre des rythmes célèbres et leurs origines.",
+     "p": [
+      "Le flamenco vient d'Andalousie, avec guitare, chant et danse ; le tango, du Río de la Plata.",
+      "La salsa a grandi à New York avec des racines caribéennes ; le son cubano vient de Cuba, la cumbia de Colombie.",
+      "Décris la musique : tiene mucho ritmo, es alegre, es melancólica, me dan ganas de bailar."
+     ],
+     "q": "Quelle musique aimes-tu ? Décris-la en espagnol avec tiene ritmo ou me dan ganas de...",
+     "c": "Écoute une chanson en espagnol aujourd'hui et écris deux phrases sur ce qu'elle te fait ressentir."
+    },
+    "it": {
+     "t": "La musica del mondo ispanico",
+     "g": "Scopri ritmi famosi e da dove vengono.",
+     "p": [
+      "Il flamenco nasce in Andalusia, con chitarra, canto e ballo; il tango nel Río de la Plata.",
+      "La salsa è cresciuta a New York con radici caraibiche; il son cubano viene da Cuba, la cumbia dalla Colombia.",
+      "Descrivi la musica: tiene mucho ritmo, es alegre, es melancólica, me dan ganas de bailar."
+     ],
+     "q": "Che musica ti piace? Descrivila in spagnolo con tiene ritmo o me dan ganas de...",
+     "c": "Ascolta oggi una canzone in spagnolo e scrivi due frasi su come ti fa sentire."
+    },
+    "pt": {
+     "t": "A música do mundo hispânico",
+     "g": "Descobre ritmos famosos e de onde vêm.",
+     "p": [
+      "O flamenco nasce na Andaluzia, com guitarra, canto e dança; o tango, no Rio da Prata.",
+      "A salsa cresceu em Nova Iorque com raízes caribenhas; o son cubano é de Cuba e a cumbia da Colômbia.",
+      "Descreve a música: tiene mucho ritmo, es alegre, es melancólica, me dan ganas de bailar."
+     ],
+     "q": "Que música gostas? Descreve-a em espanhol com tiene ritmo ou me dan ganas de...",
+     "c": "Ouve hoje uma canção em espanhol e escreve duas frases sobre o que sentes."
+    },
+    "pt_BR": {
+     "t": "A música do mundo hispânico",
+     "g": "Descubra ritmos famosos e de onde eles vêm.",
+     "p": [
+      "O flamenco nasce na Andaluzia, com violão, canto e dança; o tango, no Rio da Prata.",
+      "A salsa cresceu em Nova York com raízes caribenhas; o son cubano é de Cuba e a cumbia da Colômbia.",
+      "Descreva a música: tiene mucho ritmo, es alegre, es melancólica, me dan ganas de bailar."
+     ],
+     "q": "De que música você gosta? Descreva em espanhol com tiene ritmo ou me dan ganas de...",
+     "c": "Ouça hoje uma música em espanhol e escreva duas frases sobre como ela faz você se sentir."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el flamenco",
+      "ex": "El flamenco combina cante, guitarra y baile."
+     },
+     {
+      "w": "el tango",
+      "ex": "En Buenos Aires vimos bailar tango en la calle."
+     },
+     {
+      "w": "la salsa",
+      "ex": "Los viernes vamos a clases de salsa."
+     },
+     {
+      "w": "la cumbia",
+      "ex": "La cumbia es muy popular en toda Latinoamérica."
+     },
+     {
+      "w": "tener ritmo",
+      "ex": "Esta canción tiene mucho ritmo."
+     },
+     {
+      "w": "me dan ganas de",
+      "ex": "Esta música me da ganas de bailar."
+     }
+    ],
+    "gram": "Dar ganas de + infinitivo funciona como gustar: me da ganas de bailar. Nacer en / venir de para el origen de un estilo."
+   }
+  },
+  {
+   "d": 276,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Reading a short text",
+     "g": "Use smart strategies to understand Spanish texts.",
+     "p": [
+      "Read the title and first lines to predict the topic before you start.",
+      "Use cognates (información, importante, problema) and context to guess new words.",
+      "Find key words and connectors (pero, por eso, sin embargo) to follow the main idea."
+     ],
+     "q": "What kind of Spanish texts do you enjoy reading? News, stories, recipes?",
+     "c": "Read a short Spanish text and summarise it in two sentences without a dictionary."
+    },
+    "de": {
+     "t": "Einen kurzen Text lesen",
+     "g": "Nutze clevere Strategien, um spanische Texte zu verstehen.",
+     "p": [
+      "Lies Titel und erste Zeilen, um das Thema vorherzusagen, bevor du beginnst.",
+      "Nutze ähnliche Wörter (información, importante, problema) und den Kontext für neue Wörter.",
+      "Such Schlüsselwörter und Konnektoren (pero, por eso, sin embargo), um der Hauptidee zu folgen."
+     ],
+     "q": "Welche spanischen Texte liest du gern? Nachrichten, Geschichten, Rezepte?",
+     "c": "Lies einen kurzen spanischen Text und fasse ihn ohne Wörterbuch in zwei Sätzen zusammen."
+    },
+    "es": {
+     "t": "Leer un texto corto",
+     "g": "Usa estrategias inteligentes para entender textos en español.",
+     "p": [
+      "Lee el título y las primeras líneas para predecir el tema antes de empezar.",
+      "Aprovecha las palabras transparentes (información, importante, problema) y el contexto.",
+      "Busca palabras clave y conectores (pero, por eso, sin embargo) para seguir la idea principal."
+     ],
+     "q": "¿Qué tipo de textos en español te gusta leer? ¿Noticias, cuentos, recetas?",
+     "c": "Lee un texto corto en español y resúmelo en dos frases sin diccionario."
+    },
+    "fr": {
+     "t": "Lire un texte court",
+     "g": "Utilise des stratégies malignes pour comprendre des textes espagnols.",
+     "p": [
+      "Lis le titre et les premières lignes pour deviner le thème avant de commencer.",
+      "Appuie-toi sur les mots transparents (información, importante, problema) et le contexte.",
+      "Repère les mots clés et connecteurs (pero, por eso, sin embargo) pour suivre l'idée principale."
+     ],
+     "q": "Quels textes en espagnol aimes-tu lire ? Actualités, histoires, recettes ?",
+     "c": "Lis un court texte espagnol et résume-le en deux phrases sans dictionnaire."
+    },
+    "it": {
+     "t": "Leggere un testo breve",
+     "g": "Usa strategie furbe per capire i testi in spagnolo.",
+     "p": [
+      "Leggi il titolo e le prime righe per prevedere l'argomento prima di iniziare.",
+      "Sfrutta le parole trasparenti (información, importante, problema) e il contesto.",
+      "Cerca parole chiave e connettivi (pero, por eso, sin embargo) per seguire l'idea principale."
+     ],
+     "q": "Che tipo di testi in spagnolo ti piace leggere? Notizie, racconti, ricette?",
+     "c": "Leggi un breve testo in spagnolo e riassumilo in due frasi senza dizionario."
+    },
+    "pt": {
+     "t": "Ler um texto curto",
+     "g": "Usa estratégias inteligentes para perceber textos em espanhol.",
+     "p": [
+      "Lê o título e as primeiras linhas para prever o tema antes de começar.",
+      "Aproveita as palavras transparentes (información, importante, problema) e o contexto.",
+      "Procura palavras-chave e conectores (pero, por eso, sin embargo) para seguir a ideia principal."
+     ],
+     "q": "Que tipo de textos em espanhol gostas de ler? Notícias, contos, receitas?",
+     "c": "Lê um texto curto em espanhol e resume-o em duas frases sem dicionário."
+    },
+    "pt_BR": {
+     "t": "Ler um texto curto",
+     "g": "Use estratégias inteligentes para entender textos em espanhol.",
+     "p": [
+      "Leia o título e as primeiras linhas para prever o tema antes de começar.",
+      "Aproveite as palavras transparentes (información, importante, problema) e o contexto.",
+      "Procure palavras-chave e conectores (pero, por eso, sin embargo) para seguir a ideia principal."
+     ],
+     "q": "Que tipo de texto em espanhol você gosta de ler? Notícias, contos, receitas?",
+     "c": "Leia um texto curto em espanhol e resuma em duas frases sem dicionário."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el título",
+      "ex": "El título ya nos da una pista del tema."
+     },
+     {
+      "w": "la idea principal",
+      "ex": "La idea principal está en el primer párrafo."
+     },
+     {
+      "w": "el párrafo",
+      "ex": "Lee el segundo párrafo con atención."
+     },
+     {
+      "w": "adivinar",
+      "ex": "Intenta adivinar la palabra por el contexto."
+     },
+     {
+      "w": "el contexto",
+      "ex": "Por el contexto entiendo que es algo positivo."
+     },
+     {
+      "w": "resumir",
+      "ex": "¿Puedes resumir el texto en una frase?"
+     }
+    ],
+    "gram": "Resumir: el texto trata de..., según el autor..., en resumen... Por el contexto + deducir/entender que + indicativo."
+   }
+  },
+  {
+   "d": 277,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Listening to real Spanish",
+     "g": "Follow natural, fast speech with confidence.",
+     "p": [
+      "Native speakers link words: ¿Qué es esto? can sound like ¿quéesesto?; don't panic.",
+      "Listen for stressed words and the general context, not every single word.",
+      "Ask for help naturally: ¿Puedes repetir, por favor? ¿Más despacio? ¿Qué significa...?"
+     ],
+     "q": "Have you listened to a Spanish podcast or video lately? What did you understand?",
+     "c": "Listen to two minutes of real Spanish and write down five words you caught."
+    },
+    "de": {
+     "t": "Echtes Spanisch hören",
+     "g": "Folge natürlicher, schneller Sprache mit Zuversicht.",
+     "p": [
+      "Muttersprachler verbinden Wörter: ¿Qué es esto? klingt wie ¿quéesesto?; keine Panik.",
+      "Achte auf betonte Wörter und den Zusammenhang, nicht auf jedes einzelne Wort.",
+      "Natürlich um Hilfe bitten: ¿Puedes repetir, por favor? ¿Más despacio? ¿Qué significa...?"
+     ],
+     "q": "Hast du kürzlich einen spanischen Podcast oder ein Video gehört? Was hast du verstanden?",
+     "c": "Hör zwei Minuten echtes Spanisch und notiere fünf Wörter, die du verstanden hast."
+    },
+    "es": {
+     "t": "Escuchar español real",
+     "g": "Sigue el habla natural y rápida con confianza.",
+     "p": [
+      "Los nativos unen las palabras: ¿Qué es esto? puede sonar ¿quéesesto?; no te agobies.",
+      "Escucha las palabras acentuadas y el contexto general, no cada palabra.",
+      "Pide ayuda con naturalidad: ¿Puedes repetir, por favor? ¿Más despacio? ¿Qué significa...?"
+     ],
+     "q": "¿Has escuchado últimamente un pódcast o un vídeo en español? ¿Qué entendiste?",
+     "c": "Escucha dos minutos de español real y apunta cinco palabras que hayas captado."
+    },
+    "fr": {
+     "t": "Écouter de l'espagnol authentique",
+     "g": "Suis la langue parlée, naturelle et rapide, avec confiance.",
+     "p": [
+      "Les natifs enchaînent les mots : ¿Qué es esto? peut sonner ¿quéesesto? ; pas de panique.",
+      "Écoute les mots accentués et le contexte général, pas chaque mot.",
+      "Demande de l'aide naturellement : ¿Puedes repetir, por favor? ¿Más despacio? ¿Qué significa...?"
+     ],
+     "q": "As-tu écouté récemment un podcast ou une vidéo en espagnol ? Qu'as-tu compris ?",
+     "c": "Écoute deux minutes d'espagnol authentique et note cinq mots que tu as saisis."
+    },
+    "it": {
+     "t": "Ascoltare spagnolo vero",
+     "g": "Segui il parlato naturale e veloce con fiducia.",
+     "p": [
+      "I madrelingua uniscono le parole: ¿Qué es esto? può suonare ¿quéesesto?; niente panico.",
+      "Ascolta le parole accentate e il contesto generale, non ogni singola parola.",
+      "Chiedi aiuto con naturalezza: ¿Puedes repetir, por favor? ¿Más despacio? ¿Qué significa...?"
+     ],
+     "q": "Hai ascoltato di recente un podcast o un video in spagnolo? Cosa hai capito?",
+     "c": "Ascolta due minuti di spagnolo vero e annota cinque parole che hai colto."
+    },
+    "pt": {
+     "t": "Ouvir espanhol real",
+     "g": "Acompanha a fala natural e rápida com confiança.",
+     "p": [
+      "Os nativos ligam as palavras: ¿Qué es esto? pode soar ¿quéesesto?; não entres em pânico.",
+      "Ouve as palavras acentuadas e o contexto geral, não cada palavra.",
+      "Pede ajuda com naturalidade: ¿Puedes repetir, por favor? ¿Más despacio? ¿Qué significa...?"
+     ],
+     "q": "Ouviste recentemente um podcast ou vídeo em espanhol? O que percebeste?",
+     "c": "Ouve dois minutos de espanhol real e aponta cinco palavras que apanhaste."
+    },
+    "pt_BR": {
+     "t": "Ouvir espanhol de verdade",
+     "g": "Acompanhe a fala natural e rápida com confiança.",
+     "p": [
+      "Os nativos ligam as palavras: ¿Qué es esto? pode soar ¿quéesesto?; não se desespere.",
+      "Preste atenção nas palavras tônicas e no contexto geral, não em cada palavra.",
+      "Peça ajuda com naturalidade: ¿Puedes repetir, por favor? ¿Más despacio? ¿Qué significa...?"
+     ],
+     "q": "Você ouviu recentemente um podcast ou vídeo em espanhol? O que entendeu?",
+     "c": "Ouça dois minutos de espanhol real e anote cinco palavras que você pegou."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "¿Puedes repetir?",
+      "ex": "Perdona, ¿puedes repetir la última parte?"
+     },
+     {
+      "w": "más despacio",
+      "ex": "¿Puedes hablar un poco más despacio?"
+     },
+     {
+      "w": "captar",
+      "ex": "No capté el nombre del pueblo."
+     },
+     {
+      "w": "el pódcast",
+      "ex": "Escucho un pódcast en español cada mañana."
+     },
+     {
+      "w": "el acento",
+      "ex": "Me cuesta un poco el acento de Andalucía."
+     },
+     {
+      "w": "¿Qué significa...?",
+      "ex": "¿Qué significa currar? — Trabajar."
+     }
+    ],
+    "gram": "Pedir aclaraciones con poder + infinitivo: ¿puedes repetir?, ¿podrías hablar más despacio? No entendí / no capté + nombre."
+   }
+  },
+  {
+   "d": 278,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Speaking for one minute",
+     "g": "Plan and give a short, clear talk in Spanish.",
+     "p": [
+      "Plan three parts: introduction (voy a hablar de...), two or three ideas, conclusion (en resumen...).",
+      "Connect ideas: en primer lugar, además, por otro lado, por ejemplo, para terminar.",
+      "Keep going when you are stuck: bueno..., o sea..., ¿cómo se dice...?, lo que quiero decir es..."
+     ],
+     "q": "Choose a topic you love. What three ideas would you include in a one-minute talk?",
+     "c": "Time yourself speaking for one minute in Spanish about your favourite place."
+    },
+    "de": {
+     "t": "Eine Minute sprechen",
+     "g": "Plane und halte einen kurzen, klaren Vortrag auf Spanisch.",
+     "p": [
+      "Drei Teile: Einleitung (voy a hablar de...), zwei oder drei Ideen, Schluss (en resumen...).",
+      "Ideen verbinden: en primer lugar, además, por otro lado, por ejemplo, para terminar.",
+      "Weitermachen, wenn du hängst: bueno..., o sea..., ¿cómo se dice...?, lo que quiero decir es..."
+     ],
+     "q": "Wähl ein Thema, das du liebst. Welche drei Ideen kämen in einen Ein-Minuten-Vortrag?",
+     "c": "Sprich eine Minute auf Spanisch über deinen Lieblingsort und stopp die Zeit."
+    },
+    "es": {
+     "t": "Hablar durante un minuto",
+     "g": "Planifica y da una charla breve y clara en español.",
+     "p": [
+      "Planifica tres partes: introducción (voy a hablar de...), dos o tres ideas y cierre (en resumen...).",
+      "Conecta ideas: en primer lugar, además, por otro lado, por ejemplo, para terminar.",
+      "Sigue aunque te atasques: bueno..., o sea..., ¿cómo se dice...?, lo que quiero decir es..."
+     ],
+     "q": "Elige un tema que te encante. ¿Qué tres ideas incluirías en una charla de un minuto?",
+     "c": "Cronométrate hablando un minuto en español sobre tu lugar favorito."
+    },
+    "fr": {
+     "t": "Parler pendant une minute",
+     "g": "Prépare et fais un exposé court et clair en espagnol.",
+     "p": [
+      "Trois parties : introduction (voy a hablar de...), deux ou trois idées, conclusion (en resumen...).",
+      "Relie les idées : en primer lugar, además, por otro lado, por ejemplo, para terminar.",
+      "Continue si tu bloques : bueno..., o sea..., ¿cómo se dice...?, lo que quiero decir es..."
+     ],
+     "q": "Choisis un sujet que tu adores. Quelles trois idées mettrais-tu dans un exposé d'une minute ?",
+     "c": "Chronomètre-toi en parlant une minute en espagnol de ton endroit préféré."
+    },
+    "it": {
+     "t": "Parlare per un minuto",
+     "g": "Prepara e fai un breve discorso chiaro in spagnolo.",
+     "p": [
+      "Tre parti: introduzione (voy a hablar de...), due o tre idee, conclusione (en resumen...).",
+      "Collega le idee: en primer lugar, además, por otro lado, por ejemplo, para terminar.",
+      "Vai avanti se ti blocchi: bueno..., o sea..., ¿cómo se dice...?, lo que quiero decir es..."
+     ],
+     "q": "Scegli un tema che ami. Quali tre idee metteresti in un discorso di un minuto?",
+     "c": "Cronometrati mentre parli un minuto in spagnolo del tuo posto preferito."
+    },
+    "pt": {
+     "t": "Falar durante um minuto",
+     "g": "Planeia e faz uma apresentação curta e clara em espanhol.",
+     "p": [
+      "Planeia três partes: introdução (voy a hablar de...), duas ou três ideias e conclusão (en resumen...).",
+      "Liga ideias: en primer lugar, además, por otro lado, por ejemplo, para terminar.",
+      "Continua mesmo que encraves: bueno..., o sea..., ¿cómo se dice...?, lo que quiero decir es..."
+     ],
+     "q": "Escolhe um tema de que gostes muito. Que três ideias incluirias numa fala de um minuto?",
+     "c": "Cronometra-te a falar um minuto em espanhol sobre o teu lugar preferido."
+    },
+    "pt_BR": {
+     "t": "Falar durante um minuto",
+     "g": "Planeje e faça uma fala curta e clara em espanhol.",
+     "p": [
+      "Planeje três partes: introdução (voy a hablar de...), duas ou três ideias e fechamento (en resumen...).",
+      "Ligue ideias: en primer lugar, además, por otro lado, por ejemplo, para terminar.",
+      "Continue mesmo se travar: bueno..., o sea..., ¿cómo se dice...?, lo que quiero decir es..."
+     ],
+     "q": "Escolha um tema que você adora. Quais três ideias você incluiria numa fala de um minuto?",
+     "c": "Cronometre-se falando um minuto em espanhol sobre seu lugar favorito."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "voy a hablar de",
+      "ex": "Hoy voy a hablar de mi ciudad natal."
+     },
+     {
+      "w": "en primer lugar",
+      "ex": "En primer lugar, es una ciudad muy verde."
+     },
+     {
+      "w": "por otro lado",
+      "ex": "Por otro lado, la vida allí es tranquila."
+     },
+     {
+      "w": "o sea",
+      "ex": "Es pequeña, o sea, se puede recorrer a pie."
+     },
+     {
+      "w": "para terminar",
+      "ex": "Para terminar, os invito a visitarla."
+     },
+     {
+      "w": "lo que quiero decir es",
+      "ex": "Lo que quiero decir es que merece la pena."
+     }
+    ],
+    "gram": "Organizar el discurso: ir a + infinitivo para anunciar (voy a hablar de), conectores de orden y reformuladores (o sea)."
+   }
+  },
+  {
+   "d": 279,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "My B1 highlights",
+     "g": "Collect your favourite expressions and structures from B1.",
+     "p": [
+      "Review big structures: the present subjunctive, the conditional, si + imperfect subjunctive.",
+      "Pick favourite expressions: echar de menos, vale la pena, ¡No me digas!, lo que más me gusta es...",
+      "Notice your progress: now you can tell stories, give opinions, suggest and react naturally."
+     ],
+     "q": "What is your favourite Spanish expression from B1, and why?",
+     "c": "Write your personal top ten B1 expressions, each in a short sentence about your life."
+    },
+    "de": {
+     "t": "Meine B1-Highlights",
+     "g": "Sammle deine liebsten Ausdrücke und Strukturen aus B1.",
+     "p": [
+      "Große Strukturen wiederholen: Subjuntivo Präsens, Konditional, si + Subjuntivo Imperfekt.",
+      "Lieblingsausdrücke wählen: echar de menos, vale la pena, ¡No me digas!, lo que más me gusta es...",
+      "Sieh deinen Fortschritt: Du kannst jetzt erzählen, Meinungen sagen, vorschlagen und natürlich reagieren."
+     ],
+     "q": "Was ist dein liebster spanischer Ausdruck aus B1, und warum?",
+     "c": "Schreib deine persönlichen Top Ten der B1-Ausdrücke, je in einem kurzen Satz über dein Leben."
+    },
+    "es": {
+     "t": "Lo mejor de mi B1",
+     "g": "Reúne tus expresiones y estructuras favoritas del B1.",
+     "p": [
+      "Repasa las grandes estructuras: presente de subjuntivo, condicional, si + imperfecto de subjuntivo.",
+      "Elige expresiones favoritas: echar de menos, vale la pena, ¡No me digas!, lo que más me gusta es...",
+      "Fíjate en tu progreso: ya sabes contar historias, opinar, sugerir y reaccionar con naturalidad."
+     ],
+     "q": "¿Cuál es tu expresión favorita del B1 y por qué?",
+     "c": "Escribe tu top diez personal de expresiones del B1, cada una en una frase sobre tu vida."
+    },
+    "fr": {
+     "t": "Mes temps forts du B1",
+     "g": "Rassemble tes expressions et structures préférées du B1.",
+     "p": [
+      "Révise les grandes structures : subjonctif présent, conditionnel, si + subjonctif imparfait.",
+      "Choisis tes expressions préférées : echar de menos, vale la pena, ¡No me digas!, lo que más me gusta es...",
+      "Vois tes progrès : tu sais raconter, donner ton avis, suggérer et réagir naturellement."
+     ],
+     "q": "Quelle est ton expression espagnole préférée du B1, et pourquoi ?",
+     "c": "Écris ton top dix personnel d'expressions du B1, chacune dans une phrase sur ta vie."
+    },
+    "it": {
+     "t": "I miei momenti migliori del B1",
+     "g": "Raccogli le tue espressioni e strutture preferite del B1.",
+     "p": [
+      "Ripassa le grandi strutture: congiuntivo presente, condizionale, si + congiuntivo imperfetto.",
+      "Scegli le espressioni preferite: echar de menos, vale la pena, ¡No me digas!, lo que más me gusta es...",
+      "Nota i tuoi progressi: ora sai raccontare, dare opinioni, proporre e reagire con naturalezza."
+     ],
+     "q": "Qual è la tua espressione spagnola preferita del B1, e perché?",
+     "c": "Scrivi la tua top ten personale di espressioni del B1, ognuna in una frase sulla tua vita."
+    },
+    "pt": {
+     "t": "O melhor do meu B1",
+     "g": "Reúne as tuas expressões e estruturas preferidas do B1.",
+     "p": [
+      "Revê as grandes estruturas: presente do conjuntivo, condicional, si + imperfeito do conjuntivo.",
+      "Escolhe expressões preferidas: echar de menos, vale la pena, ¡No me digas!, lo que más me gusta es...",
+      "Repara no teu progresso: já sabes contar histórias, opinar, sugerir e reagir com naturalidade."
+     ],
+     "q": "Qual é a tua expressão preferida do B1 e porquê?",
+     "c": "Escreve o teu top dez pessoal de expressões do B1, cada uma numa frase sobre a tua vida."
+    },
+    "pt_BR": {
+     "t": "O melhor do meu B1",
+     "g": "Reúna suas expressões e estruturas favoritas do B1.",
+     "p": [
+      "Revise as grandes estruturas: presente do subjuntivo, condicional, si + imperfeito do subjuntivo.",
+      "Escolha expressões favoritas: echar de menos, vale la pena, ¡No me digas!, lo que más me gusta es...",
+      "Perceba seu progresso: você já sabe contar histórias, opinar, sugerir e reagir com naturalidade."
+     ],
+     "q": "Qual é sua expressão favorita do B1 e por quê?",
+     "c": "Escreva seu top dez pessoal de expressões do B1, cada uma numa frase sobre sua vida."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "echar de menos",
+      "ex": "Echo de menos las clases de los jueves."
+     },
+     {
+      "w": "vale la pena",
+      "ex": "Vale la pena practicar un poco cada día."
+     },
+     {
+      "w": "ojalá",
+      "ex": "Ojalá pueda viajar a Colombia pronto."
+     },
+     {
+      "w": "si tuviera",
+      "ex": "Si tuviera más tiempo, leería más en español."
+     },
+     {
+      "w": "me alegro de que",
+      "ex": "Me alegro de que sigamos aprendiendo juntos."
+     },
+     {
+      "w": "lo que más me gusta",
+      "ex": "Lo que más me gusta es hablar con gente nueva."
+     }
+    ],
+    "gram": "Claves del B1: ojalá + subjuntivo; si + imperfecto de subjuntivo + condicional; me alegro de que + subjuntivo."
+   }
+  },
+  {
+   "d": 280,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Review: B1 complete!",
+     "g": "Celebrate finishing B1 with a lively recap conversation.",
+     "p": [
+      "Subjunctive: quiero que vengas, es importante que practiques, cuando llegues, avísame.",
+      "Conditionals: si tengo tiempo, voy; si tuviera tiempo, iría. Use them to dream and plan.",
+      "Natural conversation: react, ask follow-ups, soften opinions and link ideas."
+     ],
+     "q": "¡Enhorabuena! What would you do if you spoke Spanish perfectly? Use si hablara... + conditional.",
+     "c": "Have a five-minute chat in Spanish using one subjunctive, one conditional and two reactions."
+    },
+    "de": {
+     "t": "Wiederholung: B1 geschafft!",
+     "g": "Feiere den B1-Abschluss mit einem lebendigen Wiederholungsgespräch.",
+     "p": [
+      "Subjuntivo: quiero que vengas, es importante que practiques, cuando llegues, avísame.",
+      "Bedingungssätze: si tengo tiempo, voy; si tuviera tiempo, iría. Zum Träumen und Planen.",
+      "Natürliches Gespräch: reagieren, nachfragen, Meinungen abschwächen, Ideen verbinden."
+     ],
+     "q": "¡Enhorabuena! Was würdest du tun, wenn du perfekt Spanisch sprächest? Nutze si hablara... + Konditional.",
+     "c": "Führ ein fünfminütiges Gespräch mit einem Subjuntivo, einem Konditional und zwei Reaktionen."
+    },
+    "es": {
+     "t": "Repaso: ¡B1 completado!",
+     "g": "Celebra el final del B1 con una conversación de repaso animada.",
+     "p": [
+      "Subjuntivo: quiero que vengas, es importante que practiques, cuando llegues, avísame.",
+      "Condicionales: si tengo tiempo, voy; si tuviera tiempo, iría. Úsalos para soñar y planear.",
+      "Conversación natural: reacciona, haz preguntas de seguimiento, suaviza opiniones y conecta ideas."
+     ],
+     "q": "¡Enhorabuena! ¿Qué harías si hablaras español perfectamente? Usa si hablara... + condicional.",
+     "c": "Mantén una charla de cinco minutos con un subjuntivo, un condicional y dos reacciones."
+    },
+    "fr": {
+     "t": "Révision : B1 terminé !",
+     "g": "Fête la fin du B1 avec une conversation de révision animée.",
+     "p": [
+      "Subjonctif : quiero que vengas, es importante que practiques, cuando llegues, avísame.",
+      "Conditionnelles : si tengo tiempo, voy ; si tuviera tiempo, iría. Pour rêver et planifier.",
+      "Conversation naturelle : réagis, relance, adoucis tes avis et relie les idées."
+     ],
+     "q": "¡Enhorabuena ! Que ferais-tu si tu parlais parfaitement espagnol ? Utilise si hablara... + conditionnel.",
+     "c": "Fais une discussion de cinq minutes avec un subjonctif, un conditionnel et deux réactions."
+    },
+    "it": {
+     "t": "Ripasso: B1 completato!",
+     "g": "Festeggia la fine del B1 con una conversazione di ripasso vivace.",
+     "p": [
+      "Congiuntivo: quiero que vengas, es importante que practiques, cuando llegues, avísame.",
+      "Periodi ipotetici: si tengo tiempo, voy; si tuviera tiempo, iría. Per sognare e pianificare.",
+      "Conversazione naturale: reagisci, fai domande, ammorbidisci le opinioni e collega le idee."
+     ],
+     "q": "¡Enhorabuena! Cosa faresti se parlassi spagnolo perfettamente? Usa si hablara... + condizionale.",
+     "c": "Fai una chiacchierata di cinque minuti con un congiuntivo, un condizionale e due reazioni."
+    },
+    "pt": {
+     "t": "Revisão: B1 concluído!",
+     "g": "Celebra o fim do B1 com uma conversa de revisão animada.",
+     "p": [
+      "Conjuntivo: quiero que vengas, es importante que practiques, cuando llegues, avísame.",
+      "Condicionais: si tengo tiempo, voy; si tuviera tiempo, iría. Usa-os para sonhar e planear.",
+      "Conversa natural: reage, faz perguntas de seguimento, suaviza opiniões e liga ideias."
+     ],
+     "q": "¡Enhorabuena! O que farias se falasses espanhol na perfeição? Usa si hablara... + condicional.",
+     "c": "Mantém uma conversa de cinco minutos com um conjuntivo, um condicional e duas reações."
+    },
+    "pt_BR": {
+     "t": "Revisão: B1 concluído!",
+     "g": "Comemore o fim do B1 com uma conversa de revisão animada.",
+     "p": [
+      "Subjuntivo: quiero que vengas, es importante que practiques, cuando llegues, avísame.",
+      "Condicionais: si tengo tiempo, voy; si tuviera tiempo, iría. Use para sonhar e planejar.",
+      "Conversa natural: reaja, faça perguntas de acompanhamento, suavize opiniões e ligue ideias."
+     ],
+     "q": "¡Enhorabuena! O que você faria se falasse espanhol perfeitamente? Use si hablara... + condicional.",
+     "c": "Tenha uma conversa de cinco minutos com um subjuntivo, um condicional e duas reações."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "¡Enhorabuena!",
+      "ex": "¡Enhorabuena! Has terminado el nivel B1."
+     },
+     {
+      "w": "quiero que",
+      "ex": "Quiero que me cuentes tus planes."
+     },
+     {
+      "w": "cuando llegues",
+      "ex": "Cuando llegues a casa, mándame un mensaje."
+     },
+     {
+      "w": "si tuviera",
+      "ex": "Si tuviera vacaciones, iría a Cuba."
+     },
+     {
+      "w": "es importante que",
+      "ex": "Es importante que sigas practicando."
+     },
+     {
+      "w": "seguir + gerundio",
+      "ex": "Sigo estudiando español con mucha ilusión."
+     }
+    ],
+    "gram": "Repaso B1: deseo/valoración + que + subjuntivo; cuando + subjuntivo (futuro); si + imperfecto de subjuntivo + condicional."
+   }
+  }
+ ]
+}

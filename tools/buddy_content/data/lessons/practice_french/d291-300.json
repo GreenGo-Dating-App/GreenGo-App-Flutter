@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_french",
+ "lessons": [
+  {
+   "d": 291,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Inversion in formal French",
+     "g": "Use formal word order: questions like vient-il ?, and inversion after peut-être, aussi and ainsi.",
+     "p": [
+      "Formal questions: question soutenue : Viendrez-vous demain ? Votre frère vient-il ? A-t-elle répondu ?",
+      "After certain adverbs: après peut-être, aussi (= donc), ainsi, sans doute en tête : Peut-être viendra-t-il.",
+      "In dialogue tags: dans les incises : « Je viens », dit-il ; -t- entre deux voyelles : va-t-il, a-t-on"
+     ],
+     "q": "Ask me three formal questions in French using inversion, as if I were a guest speaker.",
+     "c": "Rewrite two sentences in formal style: Il viendra peut-être and Donc nous sommes partis, using inversion."
+    },
+    "de": {
+     "t": "Inversion im gehobenen Französisch",
+     "g": "Du nutzt die gehobene Wortstellung: Fragen wie vient-il ? und Inversion nach peut-être, aussi, ainsi.",
+     "p": [
+      "Gehobene Fragen: question soutenue : Viendrez-vous demain ? Votre frère vient-il ? A-t-elle répondu ?",
+      "Nach bestimmten Adverbien: après peut-être, aussi (= donc), ainsi, sans doute en tête : Peut-être viendra-t-il.",
+      "In Redebegleitsätzen: dans les incises : « Je viens », dit-il ; -t- entre deux voyelles : va-t-il, a-t-on"
+     ],
+     "q": "Stell mir drei formelle Fragen auf Französisch mit Inversion, als wäre ich ein Gastredner.",
+     "c": "Schreib zwei Sätze gehoben um: Il viendra peut-être und Donc nous sommes partis, mit Inversion."
+    },
+    "es": {
+     "t": "La inversión en francés formal",
+     "g": "Usa el orden formal: preguntas como vient-il ? e inversión tras peut-être, aussi y ainsi.",
+     "p": [
+      "Preguntas formales: question soutenue : Viendrez-vous demain ? Votre frère vient-il ? A-t-elle répondu ?",
+      "Tras ciertos adverbios: après peut-être, aussi (= donc), ainsi, sans doute en tête : Peut-être viendra-t-il.",
+      "En los incisos: dans les incises : « Je viens », dit-il ; -t- entre deux voyelles : va-t-il, a-t-on"
+     ],
+     "q": "Hazme tres preguntas formales en francés con inversión, como si yo fuera un ponente invitado.",
+     "c": "Reescribe en estilo formal: Il viendra peut-être y Donc nous sommes partis, con inversión."
+    },
+    "fr": {
+     "t": "L'inversion en français soutenu",
+     "g": "Employer l'ordre soutenu : questions comme vient-il ? et inversion après peut-être, aussi et ainsi.",
+     "p": [
+      "Questions soutenues : question soutenue : Viendrez-vous demain ? Votre frère vient-il ? A-t-elle répondu ?",
+      "Après certains adverbes : après peut-être, aussi (= donc), ainsi, sans doute en tête : Peut-être viendra-t-il.",
+      "Dans les incises : dans les incises : « Je viens », dit-il ; -t- entre deux voyelles : va-t-il, a-t-on"
+     ],
+     "q": "Pose-moi trois questions soutenues avec inversion, comme si j'étais un conférencier invité.",
+     "c": "Réécris en style soutenu : Il viendra peut-être et Donc nous sommes partis, avec l'inversion."
+    },
+    "it": {
+     "t": "L'inversione nel francese formale",
+     "g": "Usa l'ordine formale: domande come vient-il ? e inversione dopo peut-être, aussi e ainsi.",
+     "p": [
+      "Domande formali: question soutenue : Viendrez-vous demain ? Votre frère vient-il ? A-t-elle répondu ?",
+      "Dopo certi avverbi: après peut-être, aussi (= donc), ainsi, sans doute en tête : Peut-être viendra-t-il.",
+      "Negli incisi: dans les incises : « Je viens », dit-il ; -t- entre deux voyelles : va-t-il, a-t-on"
+     ],
+     "q": "Fammi tre domande formali in francese con l'inversione, come se fossi un relatore ospite.",
+     "c": "Riscrivi in stile formale: Il viendra peut-être e Donc nous sommes partis, con l'inversione."
+    },
+    "pt": {
+     "t": "A inversão no francês formal",
+     "g": "Usa a ordem formal: perguntas como vient-il ? e inversão depois de peut-être, aussi e ainsi.",
+     "p": [
+      "Perguntas formais: question soutenue : Viendrez-vous demain ? Votre frère vient-il ? A-t-elle répondu ?",
+      "Depois de certos advérbios: après peut-être, aussi (= donc), ainsi, sans doute en tête : Peut-être viendra-t-il.",
+      "Nas incisas: dans les incises : « Je viens », dit-il ; -t- entre deux voyelles : va-t-il, a-t-on"
+     ],
+     "q": "Faz-me três perguntas formais em francês com inversão, como se eu fosse um orador convidado.",
+     "c": "Reescreve em estilo formal: Il viendra peut-être e Donc nous sommes partis, com inversão."
+    },
+    "pt_BR": {
+     "t": "A inversão no francês formal",
+     "g": "Use a ordem formal: perguntas como vient-il ? e inversão depois de peut-être, aussi e ainsi.",
+     "p": [
+      "Perguntas formais: question soutenue : Viendrez-vous demain ? Votre frère vient-il ? A-t-elle répondu ?",
+      "Depois de certos advérbios: après peut-être, aussi (= donc), ainsi, sans doute en tête : Peut-être viendra-t-il.",
+      "Nas falas de diálogo: dans les incises : « Je viens », dit-il ; -t- entre deux voyelles : va-t-il, a-t-on"
+     ],
+     "q": "Me faça três perguntas formais em francês com inversão, como se eu fosse um palestrante convidado.",
+     "c": "Reescreva em estilo formal: Il viendra peut-être e Donc nous sommes partis, com inversão."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "peut-être + inversion",
+      "ex": "Peut-être viendra-t-il plus tard."
+     },
+     {
+      "w": "aussi + inversion",
+      "ex": "Le train était complet ; aussi avons-nous pris la voiture."
+     },
+     {
+      "w": "ainsi",
+      "ex": "Ainsi pouvons-nous conclure que le projet est un succès."
+     },
+     {
+      "w": "sans doute",
+      "ex": "Sans doute a-t-elle oublié l'heure."
+     },
+     {
+      "w": "a-t-il",
+      "ex": "A-t-il bien reçu mon message ?"
+     },
+     {
+      "w": "dit-il",
+      "ex": "« Bienvenue », dit-il en souriant."
+     }
+    ],
+    "gram": "Inversion soutenue : verbe-sujet dans les questions (vient-il ?), après peut-être, aussi, ainsi, sans doute en tête, et dans les incises."
+   }
+  },
+  {
+   "d": 292,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Emphasis: c'est... qui, c'est... que",
+     "g": "Highlight the key information in a sentence: c'est lui qui a gagné, c'est à Lyon que je suis né.",
+     "p": [
+      "Highlighting the subject: C'est lui qui a gagné. C'est Marie qui a préparé le dîner.",
+      "Highlighting place or time: C'est à Lyon que je suis né. C'est demain que nous partons.",
+      "Verb agreement: accord avec le pronom : c'est moi qui ai raison, c'est nous qui avons gagné, ce sont eux qui..."
+     ],
+     "q": "Where did you learn your first French words? Answer with C'est à / en... que...",
+     "c": "Take Paul a cassé le vase hier and write three versions highlighting Paul, the vase and hier."
+    },
+    "de": {
+     "t": "Hervorhebung: c'est... qui, c'est... que",
+     "g": "Du hebst die wichtigste Information hervor: c'est lui qui a gagné, c'est à Lyon que je suis né.",
+     "p": [
+      "Subjekt hervorheben: C'est lui qui a gagné. C'est Marie qui a préparé le dîner.",
+      "Ort oder Zeit hervorheben: C'est à Lyon que je suis né. C'est demain que nous partons.",
+      "Verbangleichung: accord avec le pronom : c'est moi qui ai raison, c'est nous qui avons gagné, ce sont eux qui..."
+     ],
+     "q": "Wo hast du deine ersten französischen Wörter gelernt? Antworte mit C'est à / en... que...",
+     "c": "Nimm Paul a cassé le vase hier und schreib drei Versionen, die Paul, le vase und hier hervorheben."
+    },
+    "es": {
+     "t": "Énfasis: c'est... qui, c'est... que",
+     "g": "Destaca la información clave: c'est lui qui a gagné, c'est à Lyon que je suis né.",
+     "p": [
+      "Destacar el sujeto: C'est lui qui a gagné. C'est Marie qui a préparé le dîner.",
+      "Destacar lugar o tiempo: C'est à Lyon que je suis né. C'est demain que nous partons.",
+      "Concordancia del verbo: accord avec le pronom : c'est moi qui ai raison, c'est nous qui avons gagné, ce sont eux qui..."
+     ],
+     "q": "¿Dónde aprendiste tus primeras palabras en francés? Responde con C'est à / en... que...",
+     "c": "Toma Paul a cassé le vase hier y escribe tres versiones que destaquen Paul, le vase y hier."
+    },
+    "fr": {
+     "t": "La mise en relief : c'est... qui / que",
+     "g": "Mettre en valeur l'information clé : c'est lui qui a gagné, c'est à Lyon que je suis né.",
+     "p": [
+      "Le sujet en relief : C'est lui qui a gagné. C'est Marie qui a préparé le dîner.",
+      "Le lieu ou le temps : C'est à Lyon que je suis né. C'est demain que nous partons.",
+      "L'accord du verbe : accord avec le pronom : c'est moi qui ai raison, c'est nous qui avons gagné, ce sont eux qui..."
+     ],
+     "q": "Où as-tu appris tes premiers mots de français ? Réponds avec C'est à / en... que...",
+     "c": "Prends Paul a cassé le vase hier et écris trois versions qui mettent en relief Paul, le vase et hier."
+    },
+    "it": {
+     "t": "Enfasi: c'est... qui, c'est... que",
+     "g": "Metti in risalto l'informazione chiave: c'est lui qui a gagné, c'est à Lyon que je suis né.",
+     "p": [
+      "Mettere in risalto il soggetto: C'est lui qui a gagné. C'est Marie qui a préparé le dîner.",
+      "Luogo o tempo: C'est à Lyon que je suis né. C'est demain que nous partons.",
+      "Accordo del verbo: accord avec le pronom : c'est moi qui ai raison, c'est nous qui avons gagné, ce sont eux qui..."
+     ],
+     "q": "Dove hai imparato le tue prime parole di francese? Rispondi con C'est à / en... que...",
+     "c": "Prendi Paul a cassé le vase hier e scrivi tre versioni che mettono in risalto Paul, le vase e hier."
+    },
+    "pt": {
+     "t": "Ênfase: c'est... qui, c'est... que",
+     "g": "Destaca a informação principal: c'est lui qui a gagné, c'est à Lyon que je suis né.",
+     "p": [
+      "Destacar o sujeito: C'est lui qui a gagné. C'est Marie qui a préparé le dîner.",
+      "Destacar lugar ou tempo: C'est à Lyon que je suis né. C'est demain que nous partons.",
+      "Concordância do verbo: accord avec le pronom : c'est moi qui ai raison, c'est nous qui avons gagné, ce sont eux qui..."
+     ],
+     "q": "Onde aprendeste as tuas primeiras palavras em francês? Responde com C'est à / en... que...",
+     "c": "Pega em Paul a cassé le vase hier e escreve três versões que destaquem Paul, le vase e hier."
+    },
+    "pt_BR": {
+     "t": "Ênfase: c'est... qui, c'est... que",
+     "g": "Destaque a informação principal: c'est lui qui a gagné, c'est à Lyon que je suis né.",
+     "p": [
+      "Destacar o sujeito: C'est lui qui a gagné. C'est Marie qui a préparé le dîner.",
+      "Destacar lugar ou tempo: C'est à Lyon que je suis né. C'est demain que nous partons.",
+      "Concordância do verbo: accord avec le pronom : c'est moi qui ai raison, c'est nous qui avons gagné, ce sont eux qui..."
+     ],
+     "q": "Onde você aprendeu suas primeiras palavras em francês? Responda com C'est à / en... que...",
+     "c": "Pegue Paul a cassé le vase hier e escreva três versões que destaquem Paul, le vase e hier."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "c'est moi qui",
+      "ex": "C'est moi qui ai fait ce gâteau !"
+     },
+     {
+      "w": "c'est toi qui",
+      "ex": "C'est toi qui choisis le film ce soir."
+     },
+     {
+      "w": "ce sont eux qui",
+      "ex": "Ce sont eux qui ont organisé la fête."
+     },
+     {
+      "w": "c'est ici que",
+      "ex": "C'est ici que j'ai appris à nager."
+     },
+     {
+      "w": "c'est pour ça que",
+      "ex": "C'est pour ça que j'adore cette ville."
+     },
+     {
+      "w": "c'est en... que",
+      "ex": "C'est en 1889 que la tour Eiffel a été inaugurée."
+     }
+    ],
+    "gram": "Mise en relief : c'est... qui (sujet) / c'est... que (autre élément) ; le verbe s'accorde avec le pronom : c'est nous qui avons gagné."
+   }
+  },
+  {
+   "d": 293,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Dislocation in speech",
+     "g": "Sound like a native speaker by detaching words for emphasis: moi, le café, je l'adore.",
+     "p": [
+      "At the start: à gauche : Moi, le café, je l'adore. Ton frère, il est où ?",
+      "At the end: à droite : Je l'adore, ce film ! Elle est super, ta veste.",
+      "With en and y: avec en et y : Du chocolat, j'en mange tous les jours. Paris, j'y vais souvent."
+     ],
+     "q": "Tell me about three foods or drinks you love or hate, spoken style: Le fromage, moi, je l'adore !",
+     "c": "Rewrite four neutral sentences about your habits in spoken style with dislocation, using le, en and y."
+    },
+    "de": {
+     "t": "Dislokation in der gesprochenen Sprache",
+     "g": "Du klingst muttersprachlich, wenn du Wörter zur Betonung abtrennst: moi, le café, je l'adore.",
+     "p": [
+      "Am Anfang: à gauche : Moi, le café, je l'adore. Ton frère, il est où ?",
+      "Am Ende: à droite : Je l'adore, ce film ! Elle est super, ta veste.",
+      "Mit en und y: avec en et y : Du chocolat, j'en mange tous les jours. Paris, j'y vais souvent."
+     ],
+     "q": "Erzähl mir von drei Speisen oder Getränken, die du liebst oder nicht magst, im gesprochenen Stil: Le fromage, moi, je l'adore !",
+     "c": "Schreib vier neutrale Sätze über deine Gewohnheiten im gesprochenen Stil mit Dislokation um, mit le, en und y."
+    },
+    "es": {
+     "t": "La dislocación en el habla",
+     "g": "Suena como un nativo separando palabras para dar énfasis: moi, le café, je l'adore.",
+     "p": [
+      "Al principio: à gauche : Moi, le café, je l'adore. Ton frère, il est où ?",
+      "Al final: à droite : Je l'adore, ce film ! Elle est super, ta veste.",
+      "Con en e y: avec en et y : Du chocolat, j'en mange tous les jours. Paris, j'y vais souvent."
+     ],
+     "q": "Háblame de tres comidas o bebidas que amas u odias, en estilo hablado: Le fromage, moi, je l'adore !",
+     "c": "Reescribe cuatro frases neutras sobre tus hábitos en estilo hablado con dislocación, usando le, en e y."
+    },
+    "fr": {
+     "t": "La dislocation à l'oral",
+     "g": "Parler comme un natif en détachant un élément pour insister : moi, le café, je l'adore.",
+     "p": [
+      "En tête : à gauche : Moi, le café, je l'adore. Ton frère, il est où ?",
+      "En fin de phrase : à droite : Je l'adore, ce film ! Elle est super, ta veste.",
+      "Avec en et y : avec en et y : Du chocolat, j'en mange tous les jours. Paris, j'y vais souvent."
+     ],
+     "q": "Parle-moi de trois aliments ou boissons que tu adores ou détestes, à l'oral : Le fromage, moi, je l'adore !",
+     "c": "Réécris quatre phrases neutres sur tes habitudes en style oral avec dislocation, avec le, en et y."
+    },
+    "it": {
+     "t": "La dislocazione nel parlato",
+     "g": "Suona come un madrelingua staccando parole per dare enfasi: moi, le café, je l'adore.",
+     "p": [
+      "All'inizio: à gauche : Moi, le café, je l'adore. Ton frère, il est où ?",
+      "Alla fine: à droite : Je l'adore, ce film ! Elle est super, ta veste.",
+      "Con en e y: avec en et y : Du chocolat, j'en mange tous les jours. Paris, j'y vais souvent."
+     ],
+     "q": "Parlami di tre cibi o bevande che ami o detesti, in stile parlato: Le fromage, moi, je l'adore !",
+     "c": "Riscrivi quattro frasi neutre sulle tue abitudini in stile parlato con dislocazione, usando le, en e y."
+    },
+    "pt": {
+     "t": "A deslocação na fala",
+     "g": "Soa como um nativo destacando palavras para dar ênfase: moi, le café, je l'adore.",
+     "p": [
+      "No início: à gauche : Moi, le café, je l'adore. Ton frère, il est où ?",
+      "No fim: à droite : Je l'adore, ce film ! Elle est super, ta veste.",
+      "Com en e y: avec en et y : Du chocolat, j'en mange tous les jours. Paris, j'y vais souvent."
+     ],
+     "q": "Fala-me de três comidas ou bebidas que adoras ou detestas, em estilo falado: Le fromage, moi, je l'adore !",
+     "c": "Reescreve quatro frases neutras sobre os teus hábitos em estilo falado com deslocação, usando le, en e y."
+    },
+    "pt_BR": {
+     "t": "O deslocamento na fala",
+     "g": "Soe como um nativo destacando palavras para dar ênfase: moi, le café, je l'adore.",
+     "p": [
+      "No início: à gauche : Moi, le café, je l'adore. Ton frère, il est où ?",
+      "No fim: à droite : Je l'adore, ce film ! Elle est super, ta veste.",
+      "Com en e y: avec en et y : Du chocolat, j'en mange tous les jours. Paris, j'y vais souvent."
+     ],
+     "q": "Me fale de três comidas ou bebidas que você ama ou detesta, em estilo falado: Le fromage, moi, je l'adore !",
+     "c": "Reescreva quatro frases neutras sobre seus hábitos em estilo falado com deslocamento, usando le, en e y."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "moi, je",
+      "ex": "Moi, je préfère le thé."
+     },
+     {
+      "w": "ce film, je l'adore",
+      "ex": "Ce film, je l'ai vu trois fois."
+     },
+     {
+      "w": "j'en mange",
+      "ex": "Des légumes, j'en mange à chaque repas."
+     },
+     {
+      "w": "j'y vais",
+      "ex": "La plage, j'y vais tous les étés."
+     },
+     {
+      "w": "il est où, ... ?",
+      "ex": "Il est où, ton téléphone ?"
+     },
+     {
+      "w": "ça, c'est",
+      "ex": "Ça, c'est une bonne idée !"
+     }
+    ],
+    "gram": "Dislocation : on détache un élément en tête ou en fin de phrase et on le reprend par un pronom (le, la, en, y) : le café, je l'adore."
+   }
+  },
+  {
+   "d": 294,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Advanced connectors",
+     "g": "Write like an educated French speaker with néanmoins, en outre, par ailleurs, dès lors and en effet.",
+     "p": [
+      "Contrast and addition: opposition : néanmoins, toutefois ; ajout : en outre, par ailleurs",
+      "Consequence and explanation: conséquence : dès lors, par conséquent ; explication : en effet",
+      "In a short text: Le projet est coûteux. Néanmoins, il est utile. En effet, il crée des emplois."
+     ],
+     "q": "Tell me one advantage and one drawback of your city, linked with néanmoins and en outre.",
+     "c": "Write a five-sentence paragraph about learning languages using at least four of today's connectors."
+    },
+    "de": {
+     "t": "Konnektoren für Fortgeschrittene",
+     "g": "Du schreibst gewandt mit néanmoins, en outre, par ailleurs, dès lors und en effet.",
+     "p": [
+      "Gegensatz und Ergänzung: opposition : néanmoins, toutefois ; ajout : en outre, par ailleurs",
+      "Folge und Erklärung: conséquence : dès lors, par conséquent ; explication : en effet",
+      "In einem kurzen Text: Le projet est coûteux. Néanmoins, il est utile. En effet, il crée des emplois."
+     ],
+     "q": "Nenn mir einen Vorteil und einen Nachteil deiner Stadt, verbunden mit néanmoins und en outre.",
+     "c": "Schreib einen Absatz von fünf Sätzen über das Sprachenlernen mit mindestens vier Konnektoren von heute."
+    },
+    "es": {
+     "t": "Conectores avanzados",
+     "g": "Escribe con soltura con néanmoins, en outre, par ailleurs, dès lors y en effet.",
+     "p": [
+      "Contraste y adición: opposition : néanmoins, toutefois ; ajout : en outre, par ailleurs",
+      "Consecuencia y explicación: conséquence : dès lors, par conséquent ; explication : en effet",
+      "En un texto corto: Le projet est coûteux. Néanmoins, il est utile. En effet, il crée des emplois."
+     ],
+     "q": "Dime una ventaja y un inconveniente de tu ciudad, unidos con néanmoins y en outre.",
+     "c": "Escribe un párrafo de cinco frases sobre aprender idiomas con al menos cuatro conectores de hoy."
+    },
+    "fr": {
+     "t": "Les connecteurs avancés",
+     "g": "Écrire avec aisance grâce à néanmoins, en outre, par ailleurs, dès lors et en effet.",
+     "p": [
+      "Opposition et ajout : opposition : néanmoins, toutefois ; ajout : en outre, par ailleurs",
+      "Conséquence et explication : conséquence : dès lors, par conséquent ; explication : en effet",
+      "Dans un court texte : Le projet est coûteux. Néanmoins, il est utile. En effet, il crée des emplois."
+     ],
+     "q": "Donne-moi un avantage et un inconvénient de ta ville, reliés par néanmoins et en outre.",
+     "c": "Écris un paragraphe de cinq phrases sur l'apprentissage des langues avec au moins quatre connecteurs du jour."
+    },
+    "it": {
+     "t": "Connettivi avanzati",
+     "g": "Scrivi con disinvoltura con néanmoins, en outre, par ailleurs, dès lors ed en effet.",
+     "p": [
+      "Contrasto e aggiunta: opposition : néanmoins, toutefois ; ajout : en outre, par ailleurs",
+      "Conseguenza e spiegazione: conséquence : dès lors, par conséquent ; explication : en effet",
+      "In un breve testo: Le projet est coûteux. Néanmoins, il est utile. En effet, il crée des emplois."
+     ],
+     "q": "Dimmi un vantaggio e uno svantaggio della tua città, collegati con néanmoins ed en outre.",
+     "c": "Scrivi un paragrafo di cinque frasi sullo studio delle lingue con almeno quattro connettivi di oggi."
+    },
+    "pt": {
+     "t": "Conectores avançados",
+     "g": "Escreve com à-vontade com néanmoins, en outre, par ailleurs, dès lors e en effet.",
+     "p": [
+      "Contraste e adição: opposition : néanmoins, toutefois ; ajout : en outre, par ailleurs",
+      "Consequência e explicação: conséquence : dès lors, par conséquent ; explication : en effet",
+      "Num texto curto: Le projet est coûteux. Néanmoins, il est utile. En effet, il crée des emplois."
+     ],
+     "q": "Diz-me uma vantagem e uma desvantagem da tua cidade, ligadas com néanmoins e en outre.",
+     "c": "Escreve um parágrafo de cinco frases sobre aprender línguas com pelo menos quatro conectores de hoje."
+    },
+    "pt_BR": {
+     "t": "Conectores avançados",
+     "g": "Escreva com desenvoltura com néanmoins, en outre, par ailleurs, dès lors e en effet.",
+     "p": [
+      "Contraste e adição: opposition : néanmoins, toutefois ; ajout : en outre, par ailleurs",
+      "Consequência e explicação: conséquence : dès lors, par conséquent ; explication : en effet",
+      "Num texto curto: Le projet est coûteux. Néanmoins, il est utile. En effet, il crée des emplois."
+     ],
+     "q": "Me diga uma vantagem e uma desvantagem da sua cidade, ligadas com néanmoins e en outre.",
+     "c": "Escreva um parágrafo de cinco frases sobre aprender idiomas com pelo menos quatro conectores de hoje."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "néanmoins",
+      "ex": "Le trajet est long ; néanmoins, le paysage en vaut la peine."
+     },
+     {
+      "w": "en outre",
+      "ex": "Cet hôtel est central ; en outre, il est très calme."
+     },
+     {
+      "w": "par ailleurs",
+      "ex": "Par ailleurs, la ville propose de nombreux concerts gratuits."
+     },
+     {
+      "w": "dès lors",
+      "ex": "Le pont est fermé ; dès lors, il faut faire un détour."
+     },
+     {
+      "w": "en effet",
+      "ex": "Je suis ravi ; en effet, j'ai réussi mon examen."
+     },
+     {
+      "w": "toutefois",
+      "ex": "Le musée est ouvert ; toutefois, la salle 3 est fermée."
+     }
+    ],
+    "gram": "Connecteurs soutenus : néanmoins, toutefois (opposition), en outre, par ailleurs (ajout), dès lors (conséquence), en effet (justification)."
+   }
+  },
+  {
+   "d": 295,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Review: advanced grammar",
+     "g": "Recap the B2 grammar so far: literary tenses, subjunctive nuances, emphasis and formal connectors.",
+     "p": [
+      "Tenses: temps littéraires : il fut, elle alla ; subjonctif passé : que tu sois venu",
+      "Subjunctive and conditional: subjonctif dans les relatives et après un superlatif ; conditionnel de l'information",
+      "Emphasis and word order: mise en relief : c'est... qui ; dislocation ; inversion : peut-être viendra-t-il"
+     ],
+     "q": "Tell me about the most beautiful place you have ever seen, with a superlative + subjunctive and c'est... qui.",
+     "c": "Write a mini story of five sentences in the passé simple, then add one sentence with néanmoins and one with en effet."
+    },
+    "de": {
+     "t": "Wiederholung: fortgeschrittene Grammatik",
+     "g": "Du wiederholst die B2-Grammatik: literarische Zeiten, Subjonctif-Nuancen, Hervorhebung und Konnektoren.",
+     "p": [
+      "Zeiten: temps littéraires : il fut, elle alla ; subjonctif passé : que tu sois venu",
+      "Subjonctif und Konditional: subjonctif dans les relatives et après un superlatif ; conditionnel de l'information",
+      "Hervorhebung und Wortstellung: mise en relief : c'est... qui ; dislocation ; inversion : peut-être viendra-t-il"
+     ],
+     "q": "Erzähl mir vom schönsten Ort, den du je gesehen hast, mit Superlativ + Subjonctif und c'est... qui.",
+     "c": "Schreib eine Mini-Geschichte von fünf Sätzen im passé simple, dann einen Satz mit néanmoins und einen mit en effet."
+    },
+    "es": {
+     "t": "Repaso: gramática avanzada",
+     "g": "Repasa la gramática B2: tiempos literarios, matices del subjuntivo, énfasis y conectores formales.",
+     "p": [
+      "Tiempos: temps littéraires : il fut, elle alla ; subjonctif passé : que tu sois venu",
+      "Subjuntivo y condicional: subjonctif dans les relatives et après un superlatif ; conditionnel de l'information",
+      "Énfasis y orden: mise en relief : c'est... qui ; dislocation ; inversion : peut-être viendra-t-il"
+     ],
+     "q": "Háblame del lugar más bonito que has visto, con superlativo + subjuntivo y c'est... qui.",
+     "c": "Escribe un minicuento de cinco frases en passé simple y añade una frase con néanmoins y otra con en effet."
+    },
+    "fr": {
+     "t": "Révision : grammaire avancée",
+     "g": "Réviser la grammaire B2 : temps littéraires, nuances du subjonctif, mise en relief et connecteurs soutenus.",
+     "p": [
+      "Les temps : temps littéraires : il fut, elle alla ; subjonctif passé : que tu sois venu",
+      "Subjonctif et conditionnel : subjonctif dans les relatives et après un superlatif ; conditionnel de l'information",
+      "Mise en relief et ordre : mise en relief : c'est... qui ; dislocation ; inversion : peut-être viendra-t-il"
+     ],
+     "q": "Parle-moi du plus bel endroit que tu aies jamais vu, avec un superlatif + subjonctif et c'est... qui.",
+     "c": "Écris un mini conte de cinq phrases au passé simple, puis une phrase avec néanmoins et une avec en effet."
+    },
+    "it": {
+     "t": "Ripasso: grammatica avanzata",
+     "g": "Ripassa la grammatica B2: tempi letterari, sfumature del congiuntivo, enfasi e connettivi formali.",
+     "p": [
+      "Tempi: temps littéraires : il fut, elle alla ; subjonctif passé : que tu sois venu",
+      "Congiuntivo e condizionale: subjonctif dans les relatives et après un superlatif ; conditionnel de l'information",
+      "Enfasi e ordine: mise en relief : c'est... qui ; dislocation ; inversion : peut-être viendra-t-il"
+     ],
+     "q": "Parlami del posto più bello che tu abbia mai visto, con superlativo + congiuntivo e c'est... qui.",
+     "c": "Scrivi una mini storia di cinque frasi al passé simple, poi una frase con néanmoins e una con en effet."
+    },
+    "pt": {
+     "t": "Revisão: gramática avançada",
+     "g": "Revê a gramática B2: tempos literários, nuances do conjuntivo, ênfase e conectores formais.",
+     "p": [
+      "Tempos: temps littéraires : il fut, elle alla ; subjonctif passé : que tu sois venu",
+      "Conjuntivo e condicional: subjonctif dans les relatives et après un superlatif ; conditionnel de l'information",
+      "Ênfase e ordem: mise en relief : c'est... qui ; dislocation ; inversion : peut-être viendra-t-il"
+     ],
+     "q": "Fala-me do lugar mais bonito que já viste, com superlativo + conjuntivo e c'est... qui.",
+     "c": "Escreve um miniconto de cinco frases no passé simple e depois uma frase com néanmoins e outra com en effet."
+    },
+    "pt_BR": {
+     "t": "Revisão: gramática avançada",
+     "g": "Revise a gramática B2: tempos literários, nuances do subjuntivo, ênfase e conectores formais.",
+     "p": [
+      "Tempos: temps littéraires : il fut, elle alla ; subjonctif passé : que tu sois venu",
+      "Subjuntivo e condicional: subjonctif dans les relatives et après un superlatif ; conditionnel de l'information",
+      "Ênfase e ordem: mise en relief : c'est... qui ; dislocation ; inversion : peut-être viendra-t-il"
+     ],
+     "q": "Me fale do lugar mais bonito que você já viu, com superlativo + subjuntivo e c'est... qui.",
+     "c": "Escreva um miniconto de cinco frases no passé simple e depois uma frase com néanmoins e outra com en effet."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ils partirent",
+      "ex": "Au matin, ils partirent vers la montagne."
+     },
+     {
+      "w": "qui puisse",
+      "ex": "Je cherche un guide qui puisse nous accompagner."
+     },
+     {
+      "w": "que j'aie jamais vu",
+      "ex": "C'est le plus beau lac que j'aie jamais vu."
+     },
+     {
+      "w": "serait",
+      "ex": "D'après la météo, la neige serait au rendez-vous."
+     },
+     {
+      "w": "c'est... qui",
+      "ex": "C'est ma sœur qui a trouvé ce chalet."
+     },
+     {
+      "w": "néanmoins",
+      "ex": "Il faisait froid ; néanmoins, la balade était superbe."
+     }
+    ],
+    "gram": "Révision B2 : temps littéraires, nuances du subjonctif, conditionnel de l'information, mise en relief et connecteurs soutenus."
+   }
+  },
+  {
+   "d": 296,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Formal register",
+     "g": "Master le français soutenu: elevated vocabulary and structures for speeches, letters and formal writing.",
+     "p": [
+      "Vocabulary: lexique : un logement (une maison), un emploi (un boulot), se rendre (aller), demeurer (rester)",
+      "Structures: structures : ne toujours exprimé, nous plutôt que on, cela plutôt que ça, inversion",
+      "Set phrases: Je vous saurais gré de bien vouloir... ; Il convient de... ; Veuillez..."
+     ],
+     "q": "Rewrite in formal French: On va aller au boulot, ça va être long. How would you say it soutenu?",
+     "c": "Write a short formal announcement for a building, like a notice for residents, with veuillez and il convient de."
+    },
+    "de": {
+     "t": "Gehobenes Register",
+     "g": "Du beherrschst le français soutenu: gehobener Wortschatz und Strukturen für Reden, Briefe und Texte.",
+     "p": [
+      "Wortschatz: lexique : un logement (une maison), un emploi (un boulot), se rendre (aller), demeurer (rester)",
+      "Strukturen: structures : ne toujours exprimé, nous plutôt que on, cela plutôt que ça, inversion",
+      "Feste Wendungen: Je vous saurais gré de bien vouloir... ; Il convient de... ; Veuillez..."
+     ],
+     "q": "Formuliere gehoben um: On va aller au boulot, ça va être long. Wie klingt das soutenu?",
+     "c": "Schreib einen kurzen formellen Aushang für ein Wohnhaus, etwa an die Bewohner, mit veuillez und il convient de."
+    },
+    "es": {
+     "t": "Registro formal",
+     "g": "Domina le français soutenu: vocabulario y estructuras elevadas para discursos, cartas y textos formales.",
+     "p": [
+      "Vocabulario: lexique : un logement (une maison), un emploi (un boulot), se rendre (aller), demeurer (rester)",
+      "Estructuras: structures : ne toujours exprimé, nous plutôt que on, cela plutôt que ça, inversion",
+      "Fórmulas fijas: Je vous saurais gré de bien vouloir... ; Il convient de... ; Veuillez..."
+     ],
+     "q": "Reescribe en francés formal: On va aller au boulot, ça va être long. ¿Cómo sonaría soutenu?",
+     "c": "Escribe un aviso formal corto para un edificio, dirigido a los vecinos, con veuillez e il convient de."
+    },
+    "fr": {
+     "t": "Le registre soutenu",
+     "g": "Maîtriser le français soutenu : lexique et structures élevés pour les discours, lettres et écrits formels.",
+     "p": [
+      "Le lexique : lexique : un logement (une maison), un emploi (un boulot), se rendre (aller), demeurer (rester)",
+      "Les structures : structures : ne toujours exprimé, nous plutôt que on, cela plutôt que ça, inversion",
+      "Formules figées : Je vous saurais gré de bien vouloir... ; Il convient de... ; Veuillez..."
+     ],
+     "q": "Réécris en français soutenu : On va aller au boulot, ça va être long.",
+     "c": "Rédige un court avis formel aux habitants d'un immeuble, avec veuillez et il convient de."
+    },
+    "it": {
+     "t": "Registro formale",
+     "g": "Padroneggia le français soutenu: lessico e strutture elevati per discorsi, lettere e testi formali.",
+     "p": [
+      "Lessico: lexique : un logement (une maison), un emploi (un boulot), se rendre (aller), demeurer (rester)",
+      "Strutture: structures : ne toujours exprimé, nous plutôt que on, cela plutôt que ça, inversion",
+      "Formule fisse: Je vous saurais gré de bien vouloir... ; Il convient de... ; Veuillez..."
+     ],
+     "q": "Riscrivi in francese formale: On va aller au boulot, ça va être long. Come suonerebbe soutenu?",
+     "c": "Scrivi un breve avviso formale per un condominio, rivolto ai residenti, con veuillez e il convient de."
+    },
+    "pt": {
+     "t": "Registo formal",
+     "g": "Domina le français soutenu: vocabulário e estruturas elevadas para discursos, cartas e textos formais.",
+     "p": [
+      "Vocabulário: lexique : un logement (une maison), un emploi (un boulot), se rendre (aller), demeurer (rester)",
+      "Estruturas: structures : ne toujours exprimé, nous plutôt que on, cela plutôt que ça, inversion",
+      "Fórmulas fixas: Je vous saurais gré de bien vouloir... ; Il convient de... ; Veuillez..."
+     ],
+     "q": "Reescreve em francês formal: On va aller au boulot, ça va être long. Como soaria soutenu?",
+     "c": "Escreve um aviso formal curto para um prédio, dirigido aos moradores, com veuillez e il convient de."
+    },
+    "pt_BR": {
+     "t": "Registro formal",
+     "g": "Domine le français soutenu: vocabulário e estruturas elevadas para discursos, cartas e textos formais.",
+     "p": [
+      "Vocabulário: lexique : un logement (une maison), un emploi (un boulot), se rendre (aller), demeurer (rester)",
+      "Estruturas: structures : ne toujours exprimé, nous plutôt que on, cela plutôt que ça, inversion",
+      "Fórmulas fixas: Je vous saurais gré de bien vouloir... ; Il convient de... ; Veuillez..."
+     ],
+     "q": "Reescreva em francês formal: On va aller au boulot, ça va être long. Como ficaria soutenu?",
+     "c": "Escreva um aviso formal curto para um prédio, dirigido aos moradores, com veuillez e il convient de."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "se rendre",
+      "ex": "Je me rends à Genève la semaine prochaine."
+     },
+     {
+      "w": "demeurer",
+      "ex": "Il demeure à Lyon depuis dix ans."
+     },
+     {
+      "w": "il convient de",
+      "ex": "Il convient de réserver à l'avance."
+     },
+     {
+      "w": "veuillez",
+      "ex": "Veuillez patienter quelques instants."
+     },
+     {
+      "w": "cela",
+      "ex": "Cela me semble une excellente idée."
+     },
+     {
+      "w": "je vous saurais gré de",
+      "ex": "Je vous saurais gré de bien vouloir me répondre."
+     }
+    ],
+    "gram": "Français soutenu : lexique précis (se rendre, demeurer), cela au lieu de ça, nous au lieu de on, ne toujours exprimé, tours impersonnels."
+   }
+  },
+  {
+   "d": 297,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Nuancing your opinion",
+     "g": "Soften and qualify your views in French: il me semble que, dans une certaine mesure, plutôt.",
+     "p": [
+      "Softening openers: Il me semble que..., j'ai l'impression que..., je dirais que...",
+      "Degree words: dans une certaine mesure, en partie, plutôt, assez, relativement",
+      "All together: Il me semble que c'est plutôt une bonne idée, du moins dans une certaine mesure."
+     ],
+     "q": "Is social media good for learning languages? Give a nuanced answer with two of today's expressions.",
+     "c": "Take three strong opinions you hold and rewrite each one in a more nuanced way in French."
+    },
+    "de": {
+     "t": "Die eigene Meinung nuancieren",
+     "g": "Du schwächst Meinungen ab und differenzierst: il me semble que, dans une certaine mesure, plutôt.",
+     "p": [
+      "Weiche Einleitungen: Il me semble que..., j'ai l'impression que..., je dirais que...",
+      "Gradwörter: dans une certaine mesure, en partie, plutôt, assez, relativement",
+      "Alles zusammen: Il me semble que c'est plutôt une bonne idée, du moins dans une certaine mesure."
+     ],
+     "q": "Sind soziale Medien gut zum Sprachenlernen? Antworte nuanciert mit zwei Ausdrücken von heute.",
+     "c": "Nimm drei starke Meinungen, die du hast, und formuliere jede auf Französisch differenzierter."
+    },
+    "es": {
+     "t": "Matizar tu opinión",
+     "g": "Suaviza y matiza tus opiniones en francés: il me semble que, dans une certaine mesure, plutôt.",
+     "p": [
+      "Introducciones suaves: Il me semble que..., j'ai l'impression que..., je dirais que...",
+      "Palabras de grado: dans une certaine mesure, en partie, plutôt, assez, relativement",
+      "Todo junto: Il me semble que c'est plutôt une bonne idée, du moins dans une certaine mesure."
+     ],
+     "q": "¿Las redes sociales ayudan a aprender idiomas? Da una respuesta matizada con dos expresiones de hoy.",
+     "c": "Toma tres opiniones fuertes que tengas y reescribe cada una de forma más matizada en francés."
+    },
+    "fr": {
+     "t": "Nuancer son opinion",
+     "g": "Adoucir et nuancer son avis : il me semble que, dans une certaine mesure, plutôt.",
+     "p": [
+      "Introductions prudentes : Il me semble que..., j'ai l'impression que..., je dirais que...",
+      "Mots de degré : dans une certaine mesure, en partie, plutôt, assez, relativement",
+      "Tout ensemble : Il me semble que c'est plutôt une bonne idée, du moins dans une certaine mesure."
+     ],
+     "q": "Les réseaux sociaux aident-ils à apprendre les langues ? Réponds avec nuance, avec deux expressions du jour.",
+     "c": "Prends trois opinions tranchées que tu as et reformule chacune de façon plus nuancée."
+    },
+    "it": {
+     "t": "Sfumare la propria opinione",
+     "g": "Ammorbidisci e sfuma le tue opinioni in francese: il me semble que, dans une certaine mesure, plutôt.",
+     "p": [
+      "Introduzioni prudenti: Il me semble que..., j'ai l'impression que..., je dirais que...",
+      "Parole di grado: dans une certaine mesure, en partie, plutôt, assez, relativement",
+      "Tutto insieme: Il me semble que c'est plutôt une bonne idée, du moins dans une certaine mesure."
+     ],
+     "q": "I social aiutano a imparare le lingue? Dai una risposta sfumata con due espressioni di oggi.",
+     "c": "Prendi tre opinioni forti che hai e riscrivile in modo più sfumato in francese."
+    },
+    "pt": {
+     "t": "Matizar a tua opinião",
+     "g": "Suaviza e matiza as tuas opiniões em francês: il me semble que, dans une certaine mesure, plutôt.",
+     "p": [
+      "Introduções prudentes: Il me semble que..., j'ai l'impression que..., je dirais que...",
+      "Palavras de grau: dans une certaine mesure, en partie, plutôt, assez, relativement",
+      "Tudo junto: Il me semble que c'est plutôt une bonne idée, du moins dans une certaine mesure."
+     ],
+     "q": "As redes sociais ajudam a aprender línguas? Dá uma resposta matizada com duas expressões de hoje.",
+     "c": "Pega em três opiniões fortes que tens e reescreve cada uma de forma mais matizada em francês."
+    },
+    "pt_BR": {
+     "t": "Matizando sua opinião",
+     "g": "Suavize e matize suas opiniões em francês: il me semble que, dans une certaine mesure, plutôt.",
+     "p": [
+      "Introduções cautelosas: Il me semble que..., j'ai l'impression que..., je dirais que...",
+      "Palavras de grau: dans une certaine mesure, en partie, plutôt, assez, relativement",
+      "Tudo junto: Il me semble que c'est plutôt une bonne idée, du moins dans une certaine mesure."
+     ],
+     "q": "As redes sociais ajudam a aprender idiomas? Dê uma resposta matizada com duas expressões de hoje.",
+     "c": "Pegue três opiniões fortes que você tem e reescreva cada uma de forma mais matizada em francês."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il me semble que",
+      "ex": "Il me semble que la ville a beaucoup changé."
+     },
+     {
+      "w": "dans une certaine mesure",
+      "ex": "Dans une certaine mesure, je suis d'accord avec toi."
+     },
+     {
+      "w": "plutôt",
+      "ex": "Ce livre est plutôt facile à lire."
+     },
+     {
+      "w": "du moins",
+      "ex": "C'est la meilleure solution, du moins pour l'instant."
+     },
+     {
+      "w": "en partie",
+      "ex": "Tu as en partie raison."
+     },
+     {
+      "w": "je dirais que",
+      "ex": "Je dirais que le printemps est la plus belle saison."
+     }
+    ],
+    "gram": "Nuancer : il me semble que + indicatif, je dirais que (conditionnel), adverbes modérateurs : plutôt, assez, en partie, du moins."
+   }
+  },
+  {
+   "d": 298,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Hedging and politeness",
+     "g": "Make very polite, softened requests in French: je me demandais si, auriez-vous l'amabilité de.",
+     "p": [
+      "Soft openers: Je me demandais si vous pourriez... ; Je voulais savoir si...",
+      "Very polite: Auriez-vous l'amabilité de... ? Seriez-vous assez aimable pour... ?",
+      "Friendly but careful: Ce serait possible de... ? Ça vous dérangerait de... ? Si ce n'est pas trop demander..."
+     ],
+     "q": "You need a colleague to swap a shift with you. How do you ask in a very polite way in French?",
+     "c": "Write three requests in French, from friendly to very formal, asking someone to lend you a book."
+    },
+    "de": {
+     "t": "Abschwächen und Höflichkeit",
+     "g": "Du formulierst sehr höfliche, abgeschwächte Bitten: je me demandais si, auriez-vous l'amabilité de.",
+     "p": [
+      "Weiche Einstiege: Je me demandais si vous pourriez... ; Je voulais savoir si...",
+      "Sehr höflich: Auriez-vous l'amabilité de... ? Seriez-vous assez aimable pour... ?",
+      "Freundlich, aber vorsichtig: Ce serait possible de... ? Ça vous dérangerait de... ? Si ce n'est pas trop demander..."
+     ],
+     "q": "Eine Kollegin soll mit dir eine Schicht tauschen. Wie bittest du sie sehr höflich auf Französisch?",
+     "c": "Schreib drei Bitten auf Französisch, von locker bis sehr förmlich, jemand möge dir ein Buch leihen."
+    },
+    "es": {
+     "t": "Atenuación y cortesía",
+     "g": "Haz peticiones muy corteses y suaves en francés: je me demandais si, auriez-vous l'amabilité de.",
+     "p": [
+      "Inicios suaves: Je me demandais si vous pourriez... ; Je voulais savoir si...",
+      "Muy cortés: Auriez-vous l'amabilité de... ? Seriez-vous assez aimable pour... ?",
+      "Amable pero prudente: Ce serait possible de... ? Ça vous dérangerait de... ? Si ce n'est pas trop demander..."
+     ],
+     "q": "Necesitas que un compañero te cambie un turno. ¿Cómo se lo pides con mucha cortesía en francés?",
+     "c": "Escribe tres peticiones en francés, de cercana a muy formal, para pedir prestado un libro."
+    },
+    "fr": {
+     "t": "Atténuation et politesse",
+     "g": "Formuler des demandes très polies et adoucies : je me demandais si, auriez-vous l'amabilité de.",
+     "p": [
+      "Entrées douces : Je me demandais si vous pourriez... ; Je voulais savoir si...",
+      "Très poli : Auriez-vous l'amabilité de... ? Seriez-vous assez aimable pour... ?",
+      "Aimable mais prudent : Ce serait possible de... ? Ça vous dérangerait de... ? Si ce n'est pas trop demander..."
+     ],
+     "q": "Tu as besoin qu'un collègue échange son horaire avec toi. Comment le lui demandes-tu très poliment ?",
+     "c": "Écris trois demandes, de la plus familière à la plus formelle, pour emprunter un livre à quelqu'un."
+    },
+    "it": {
+     "t": "Attenuazione e cortesia",
+     "g": "Fai richieste molto cortesi e attenuate in francese: je me demandais si, auriez-vous l'amabilité de.",
+     "p": [
+      "Aperture morbide: Je me demandais si vous pourriez... ; Je voulais savoir si...",
+      "Molto cortese: Auriez-vous l'amabilité de... ? Seriez-vous assez aimable pour... ?",
+      "Gentile ma prudente: Ce serait possible de... ? Ça vous dérangerait de... ? Si ce n'est pas trop demander..."
+     ],
+     "q": "Ti serve che un collega ti scambi un turno. Come glielo chiedi in modo molto cortese in francese?",
+     "c": "Scrivi tre richieste in francese, da amichevole a molto formale, per farti prestare un libro."
+    },
+    "pt": {
+     "t": "Atenuação e cortesia",
+     "g": "Faz pedidos muito educados e suaves em francês: je me demandais si, auriez-vous l'amabilité de.",
+     "p": [
+      "Entradas suaves: Je me demandais si vous pourriez... ; Je voulais savoir si...",
+      "Muito educado: Auriez-vous l'amabilité de... ? Seriez-vous assez aimable pour... ?",
+      "Simpático mas cuidadoso: Ce serait possible de... ? Ça vous dérangerait de... ? Si ce n'est pas trop demander..."
+     ],
+     "q": "Precisas que um colega troque um turno contigo. Como lhe pedes de forma muito educada em francês?",
+     "c": "Escreve três pedidos em francês, do mais próximo ao mais formal, para pedires um livro emprestado."
+    },
+    "pt_BR": {
+     "t": "Atenuação e cortesia",
+     "g": "Faça pedidos bem educados e suaves em francês: je me demandais si, auriez-vous l'amabilité de.",
+     "p": [
+      "Aberturas suaves: Je me demandais si vous pourriez... ; Je voulais savoir si...",
+      "Muito educado: Auriez-vous l'amabilité de... ? Seriez-vous assez aimable pour... ?",
+      "Simpático mas cuidadoso: Ce serait possible de... ? Ça vous dérangerait de... ? Si ce n'est pas trop demander..."
+     ],
+     "q": "Você precisa que um colega troque um turno com você. Como pede de forma bem educada em francês?",
+     "c": "Escreva três pedidos em francês, do mais informal ao mais formal, para pedir um livro emprestado."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "je me demandais si",
+      "ex": "Je me demandais si vous auriez un moment demain."
+     },
+     {
+      "w": "auriez-vous l'amabilité de",
+      "ex": "Auriez-vous l'amabilité de fermer la fenêtre ?"
+     },
+     {
+      "w": "ça vous dérangerait de",
+      "ex": "Ça vous dérangerait de changer de place ?"
+     },
+     {
+      "w": "si ce n'est pas trop demander",
+      "ex": "Si ce n'est pas trop demander, pourriez-vous m'aider ?"
+     },
+     {
+      "w": "je voulais savoir si",
+      "ex": "Je voulais savoir si la salle était encore libre."
+     },
+     {
+      "w": "il serait possible de",
+      "ex": "Serait-il possible de décaler le rendez-vous ?"
+     }
+    ],
+    "gram": "Politesse atténuée : l'imparfait (je voulais, je me demandais si) et le conditionnel (auriez-vous, ce serait possible) adoucissent."
+   }
+  },
+  {
+   "d": 299,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Persuasion techniques",
+     "g": "Convince an audience in French with rhetorical questions, vivid examples and shared values.",
+     "p": [
+      "Rhetorical questions: question rhétorique : Qui n'a jamais rêvé de voyager ? N'est-il pas temps d'agir ?",
+      "Examples: exemples concrets : Prenons le cas de..., Imaginez un instant...",
+      "Shared values: valeurs partagées : Nous voulons tous..., Comme chacun le sait..., Ensemble, nous pouvons..."
+     ],
+     "q": "Convince me in French to try your favourite hobby, using one rhetorical question and one Imaginez...",
+     "c": "Write a short persuasive text of five sentences for a light cause, like more parks in your town."
+    },
+    "de": {
+     "t": "Überzeugungstechniken",
+     "g": "Du überzeugst ein Publikum auf Französisch mit rhetorischen Fragen, Beispielen und gemeinsamen Werten.",
+     "p": [
+      "Rhetorische Fragen: question rhétorique : Qui n'a jamais rêvé de voyager ? N'est-il pas temps d'agir ?",
+      "Beispiele: exemples concrets : Prenons le cas de..., Imaginez un instant...",
+      "Gemeinsame Werte: valeurs partagées : Nous voulons tous..., Comme chacun le sait..., Ensemble, nous pouvons..."
+     ],
+     "q": "Überzeug mich auf Französisch, dein Lieblingshobby auszuprobieren, mit einer rhetorischen Frage und einem Imaginez...",
+     "c": "Schreib einen kurzen Überzeugungstext in fünf Sätzen für ein leichtes Anliegen, etwa mehr Parks in deiner Stadt."
+    },
+    "es": {
+     "t": "Técnicas de persuasión",
+     "g": "Convence a un público en francés con preguntas retóricas, ejemplos vivos y valores compartidos.",
+     "p": [
+      "Preguntas retóricas: question rhétorique : Qui n'a jamais rêvé de voyager ? N'est-il pas temps d'agir ?",
+      "Ejemplos: exemples concrets : Prenons le cas de..., Imaginez un instant...",
+      "Valores compartidos: valeurs partagées : Nous voulons tous..., Comme chacun le sait..., Ensemble, nous pouvons..."
+     ],
+     "q": "Convénceme en francés de probar tu afición favorita, con una pregunta retórica y un Imaginez...",
+     "c": "Escribe un texto persuasivo de cinco frases por una causa ligera, como más parques en tu ciudad."
+    },
+    "fr": {
+     "t": "Les techniques de persuasion",
+     "g": "Convaincre un public avec des questions rhétoriques, des exemples parlants et des valeurs partagées.",
+     "p": [
+      "Questions rhétoriques : question rhétorique : Qui n'a jamais rêvé de voyager ? N'est-il pas temps d'agir ?",
+      "Exemples : exemples concrets : Prenons le cas de..., Imaginez un instant...",
+      "Valeurs partagées : valeurs partagées : Nous voulons tous..., Comme chacun le sait..., Ensemble, nous pouvons..."
+     ],
+     "q": "Convaincs-moi d'essayer ton loisir préféré, avec une question rhétorique et un Imaginez...",
+     "c": "Écris un court texte persuasif de cinq phrases pour une cause légère, comme plus de parcs dans ta ville."
+    },
+    "it": {
+     "t": "Tecniche di persuasione",
+     "g": "Convinci un pubblico in francese con domande retoriche, esempi vividi e valori condivisi.",
+     "p": [
+      "Domande retoriche: question rhétorique : Qui n'a jamais rêvé de voyager ? N'est-il pas temps d'agir ?",
+      "Esempi: exemples concrets : Prenons le cas de..., Imaginez un instant...",
+      "Valori condivisi: valeurs partagées : Nous voulons tous..., Comme chacun le sait..., Ensemble, nous pouvons..."
+     ],
+     "q": "Convincimi in francese a provare il tuo hobby preferito, con una domanda retorica e un Imaginez...",
+     "c": "Scrivi un breve testo persuasivo di cinque frasi per una causa leggera, come più parchi nella tua città."
+    },
+    "pt": {
+     "t": "Técnicas de persuasão",
+     "g": "Convence um público em francês com perguntas retóricas, exemplos vivos e valores partilhados.",
+     "p": [
+      "Perguntas retóricas: question rhétorique : Qui n'a jamais rêvé de voyager ? N'est-il pas temps d'agir ?",
+      "Exemplos: exemples concrets : Prenons le cas de..., Imaginez un instant...",
+      "Valores partilhados: valeurs partagées : Nous voulons tous..., Comme chacun le sait..., Ensemble, nous pouvons..."
+     ],
+     "q": "Convence-me em francês a experimentar o teu passatempo favorito, com uma pergunta retórica e um Imaginez...",
+     "c": "Escreve um pequeno texto persuasivo de cinco frases por uma causa leve, como mais parques na tua cidade."
+    },
+    "pt_BR": {
+     "t": "Técnicas de persuasão",
+     "g": "Convença um público em francês com perguntas retóricas, exemplos vivos e valores compartilhados.",
+     "p": [
+      "Perguntas retóricas: question rhétorique : Qui n'a jamais rêvé de voyager ? N'est-il pas temps d'agir ?",
+      "Exemplos: exemples concrets : Prenons le cas de..., Imaginez un instant...",
+      "Valores compartilhados: valeurs partagées : Nous voulons tous..., Comme chacun le sait..., Ensemble, nous pouvons..."
+     ],
+     "q": "Me convença em francês a experimentar seu hobby favorito, com uma pergunta retórica e um Imaginez...",
+     "c": "Escreva um texto persuasivo curto de cinco frases por uma causa leve, como mais parques na sua cidade."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "qui n'a jamais",
+      "ex": "Qui n'a jamais rêvé de parler plusieurs langues ?"
+     },
+     {
+      "w": "imaginez un instant",
+      "ex": "Imaginez un instant une ville sans voitures."
+     },
+     {
+      "w": "prenons le cas de",
+      "ex": "Prenons le cas de Lyon, qui a créé des pistes cyclables."
+     },
+     {
+      "w": "nous voulons tous",
+      "ex": "Nous voulons tous respirer un air plus pur."
+     },
+     {
+      "w": "comme chacun le sait",
+      "ex": "Comme chacun le sait, le sommeil est précieux."
+     },
+     {
+      "w": "n'est-il pas temps de",
+      "ex": "N'est-il pas temps de ralentir un peu ?"
+     }
+    ],
+    "gram": "Persuader : question rhétorique (n'est-il pas temps de... ?), impératif d'appel (imaginez), nous inclusif et valeurs communes."
+   }
+  },
+  {
+   "d": 300,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Writing an essay: introduction",
+     "g": "Open a French essay the classic way: an accroche, a problématique and an annonce du plan.",
+     "p": [
+      "The hook: l'accroche : une citation, un fait, une question : « Voyager, c'est grandir », dit-on.",
+      "The key question: la problématique : Dans quelle mesure... ? Faut-il... ? Peut-on... ?",
+      "The outline: l'annonce du plan : Nous verrons d'abord..., puis nous étudierons..., enfin..."
+     ],
+     "q": "If you wrote an essay on Faut-il apprendre plusieurs langues ?, what hook would you choose?",
+     "c": "Write a full French introduction of four or five sentences on a light topic: hook, question and plan."
+    },
+    "de": {
+     "t": "Aufsatz schreiben: Einleitung",
+     "g": "Du beginnst einen französischen Aufsatz klassisch: accroche, problématique und annonce du plan.",
+     "p": [
+      "Der Aufhänger: l'accroche : une citation, un fait, une question : « Voyager, c'est grandir », dit-on.",
+      "Die Leitfrage: la problématique : Dans quelle mesure... ? Faut-il... ? Peut-on... ?",
+      "Die Gliederung: l'annonce du plan : Nous verrons d'abord..., puis nous étudierons..., enfin..."
+     ],
+     "q": "Wenn du einen Aufsatz zu Faut-il apprendre plusieurs langues ? schreibst, welchen Aufhänger wählst du?",
+     "c": "Schreib eine vollständige französische Einleitung in vier, fünf Sätzen zu einem leichten Thema: Aufhänger, Frage, Plan."
+    },
+    "es": {
+     "t": "Redactar un ensayo: introducción",
+     "g": "Empieza un ensayo francés al modo clásico: accroche, problématique y annonce du plan.",
+     "p": [
+      "El gancho: l'accroche : une citation, un fait, une question : « Voyager, c'est grandir », dit-on.",
+      "La pregunta clave: la problématique : Dans quelle mesure... ? Faut-il... ? Peut-on... ?",
+      "El plan: l'annonce du plan : Nous verrons d'abord..., puis nous étudierons..., enfin..."
+     ],
+     "q": "Si escribieras un ensayo sobre Faut-il apprendre plusieurs langues ?, ¿qué gancho elegirías?",
+     "c": "Escribe una introducción completa en francés de cuatro o cinco frases sobre un tema ligero: gancho, pregunta y plan."
+    },
+    "fr": {
+     "t": "Rédiger une dissertation : l'introduction",
+     "g": "Ouvrir une dissertation de façon classique : accroche, problématique et annonce du plan.",
+     "p": [
+      "L'accroche : l'accroche : une citation, un fait, une question : « Voyager, c'est grandir », dit-on.",
+      "La problématique : la problématique : Dans quelle mesure... ? Faut-il... ? Peut-on... ?",
+      "Le plan : l'annonce du plan : Nous verrons d'abord..., puis nous étudierons..., enfin..."
+     ],
+     "q": "Si tu écrivais une dissertation sur Faut-il apprendre plusieurs langues ?, quelle accroche choisirais-tu ?",
+     "c": "Rédige une introduction complète de quatre ou cinq phrases sur un sujet léger : accroche, problématique, plan."
+    },
+    "it": {
+     "t": "Scrivere un tema: l'introduzione",
+     "g": "Apri un tema francese in modo classico: accroche, problématique e annonce du plan.",
+     "p": [
+      "L'aggancio: l'accroche : une citation, un fait, une question : « Voyager, c'est grandir », dit-on.",
+      "La domanda chiave: la problématique : Dans quelle mesure... ? Faut-il... ? Peut-on... ?",
+      "Lo schema: l'annonce du plan : Nous verrons d'abord..., puis nous étudierons..., enfin..."
+     ],
+     "q": "Se scrivessi un tema su Faut-il apprendre plusieurs langues ?, quale aggancio sceglieresti?",
+     "c": "Scrivi un'introduzione completa in francese di quattro o cinque frasi su un tema leggero: aggancio, domanda e piano."
+    },
+    "pt": {
+     "t": "Escrever uma dissertação: introdução",
+     "g": "Abre uma dissertação francesa da forma clássica: accroche, problématique e annonce du plan.",
+     "p": [
+      "O gancho: l'accroche : une citation, un fait, une question : « Voyager, c'est grandir », dit-on.",
+      "A questão central: la problématique : Dans quelle mesure... ? Faut-il... ? Peut-on... ?",
+      "O plano: l'annonce du plan : Nous verrons d'abord..., puis nous étudierons..., enfin..."
+     ],
+     "q": "Se escrevesses uma dissertação sobre Faut-il apprendre plusieurs langues ?, que gancho escolherias?",
+     "c": "Escreve uma introdução completa em francês de quatro ou cinco frases sobre um tema leve: gancho, questão e plano."
+    },
+    "pt_BR": {
+     "t": "Escrevendo uma redação: introdução",
+     "g": "Abra uma redação francesa do jeito clássico: accroche, problématique e annonce du plan.",
+     "p": [
+      "O gancho: l'accroche : une citation, un fait, une question : « Voyager, c'est grandir », dit-on.",
+      "A questão central: la problématique : Dans quelle mesure... ? Faut-il... ? Peut-on... ?",
+      "O plano: l'annonce du plan : Nous verrons d'abord..., puis nous étudierons..., enfin..."
+     ],
+     "q": "Se você escrevesse uma redação sobre Faut-il apprendre plusieurs langues ?, que gancho escolheria?",
+     "c": "Escreva uma introdução completa em francês de quatro ou cinco frases sobre um tema leve: gancho, questão e plano."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "l'accroche",
+      "ex": "Une bonne accroche capte l'attention du lecteur."
+     },
+     {
+      "w": "la problématique",
+      "ex": "La problématique doit être claire et précise."
+     },
+     {
+      "w": "dans quelle mesure",
+      "ex": "Dans quelle mesure les voyages forment-ils la jeunesse ?"
+     },
+     {
+      "w": "nous verrons d'abord",
+      "ex": "Nous verrons d'abord les avantages du télétravail."
+     },
+     {
+      "w": "puis nous étudierons",
+      "ex": "Puis nous étudierons ses limites."
+     },
+     {
+      "w": "l'annonce du plan",
+      "ex": "L'annonce du plan termine l'introduction."
+     }
+    ],
+    "gram": "Introduction de dissertation : accroche, présentation du sujet, problématique (question) et annonce du plan avec le nous de modestie."
+   }
+  }
+ ]
+}

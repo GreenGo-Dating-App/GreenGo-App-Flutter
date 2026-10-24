@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 211,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Summarising an article",
+     "g": "Summarise a text in German: Es geht um..., der Autor erklärt..., zusammenfassend...",
+     "p": [
+      "Start with the topic: In dem Artikel geht es um... / Der Text handelt von... + dative.",
+      "Report the content: Der Autor erklärt, beschreibt, kritisiert, dass...; Laut dem Artikel... Use your own words.",
+      "Finish: Zusammenfassend kann man sagen, dass... / Meiner Meinung nach... Keep it short: main points only."
+     ],
+     "q": "Think of an article or video you saw recently. Summarise it for me in three sentences: Es geht um...",
+     "c": "Write a five-sentence summary of a short German text using es geht um, laut, der Autor meint and zusammenfassend."
+    },
+    "de": {
+     "t": "Einen Artikel zusammenfassen",
+     "g": "Du fasst einen Text auf Deutsch zusammen: Es geht um..., der Autor erklärt..., zusammenfassend...",
+     "p": [
+      "Mit dem Thema beginnen: In dem Artikel geht es um... / Der Text handelt von... + Dativ.",
+      "Inhalt wiedergeben: Der Autor erklärt, beschreibt, kritisiert, dass...; Laut dem Artikel... Mit eigenen Worten!",
+      "Abschluss: Zusammenfassend kann man sagen, dass... / Meiner Meinung nach... Kurz halten: nur die Hauptpunkte."
+     ],
+     "q": "Denk an einen Artikel oder ein Video von neulich. Fass es in drei Sätzen für mich zusammen: Es geht um...",
+     "c": "Schreib eine Zusammenfassung in fünf Sätzen mit es geht um, laut, der Autor meint und zusammenfassend."
+    },
+    "es": {
+     "t": "Resumir un artículo",
+     "g": "Resume un texto en alemán: Es geht um..., der Autor erklärt..., zusammenfassend...",
+     "p": [
+      "Empieza por el tema: In dem Artikel geht es um... (trata de) / Der Text handelt von... + dativo.",
+      "Cuenta el contenido: Der Autor erklärt, beschreibt, kritisiert, dass...; Laut dem Artikel... Con tus palabras.",
+      "Cierra: Zusammenfassend kann man sagen, dass... / Meiner Meinung nach... Sé breve: solo lo esencial."
+     ],
+     "q": "Piensa en un artículo o vídeo reciente. Resúmemelo en tres frases: Es geht um...",
+     "c": "Escribe un resumen de cinco frases de un texto corto con es geht um, laut, der Autor meint y zusammenfassend."
+    },
+    "fr": {
+     "t": "Résumer un article",
+     "g": "Résumer un texte en allemand : Es geht um..., der Autor erklärt..., zusammenfassend...",
+     "p": [
+      "Commence par le sujet : In dem Artikel geht es um... (il s'agit de) / Der Text handelt von... + datif.",
+      "Rapporte le contenu : Der Autor erklärt, beschreibt, kritisiert, dass... ; Laut dem Artikel... Avec tes mots.",
+      "Conclus : Zusammenfassend kann man sagen, dass... / Meiner Meinung nach... Reste bref : l'essentiel."
+     ],
+     "q": "Pense à un article ou une vidéo récente. Résume-le en trois phrases : Es geht um...",
+     "c": "Écris un résumé de cinq phrases d'un court texte avec es geht um, laut, der Autor meint et zusammenfassend."
+    },
+    "it": {
+     "t": "Riassumere un articolo",
+     "g": "Riassumi un testo in tedesco: Es geht um..., der Autor erklärt..., zusammenfassend...",
+     "p": [
+      "Comincia dal tema: In dem Artikel geht es um... (si parla di) / Der Text handelt von... + dativo.",
+      "Riferisci il contenuto: Der Autor erklärt, beschreibt, kritisiert, dass...; Laut dem Artikel... Con parole tue.",
+      "Chiudi: Zusammenfassend kann man sagen, dass... / Meiner Meinung nach... Sii breve: solo i punti principali."
+     ],
+     "q": "Pensa a un articolo o un video recente. Riassumimelo in tre frasi: Es geht um...",
+     "c": "Scrivi un riassunto di cinque frasi di un breve testo con es geht um, laut, der Autor meint e zusammenfassend."
+    },
+    "pt": {
+     "t": "Resumir um artigo",
+     "g": "Resumir um texto em alemão: Es geht um..., der Autor erklärt..., zusammenfassend...",
+     "p": [
+      "Começa pelo tema: In dem Artikel geht es um... (trata-se de) / Der Text handelt von... + dativo.",
+      "Relata o conteúdo: Der Autor erklärt, beschreibt, kritisiert, dass...; Laut dem Artikel... Por palavras tuas.",
+      "Termina: Zusammenfassend kann man sagen, dass... / Meiner Meinung nach... Sê breve: só o essencial."
+     ],
+     "q": "Pensa num artigo ou vídeo recente. Resume-mo em três frases: Es geht um...",
+     "c": "Escreve um resumo de cinco frases de um texto curto com es geht um, laut, der Autor meint e zusammenfassend."
+    },
+    "pt_BR": {
+     "t": "Resumir um artigo",
+     "g": "Resumir um texto em alemão: Es geht um..., der Autor erklärt..., zusammenfassend...",
+     "p": [
+      "Comece pelo tema: In dem Artikel geht es um... (trata de) / Der Text handelt von... + dativo.",
+      "Relate o conteúdo: Der Autor erklärt, beschreibt, kritisiert, dass...; Laut dem Artikel... Com suas palavras.",
+      "Termine: Zusammenfassend kann man sagen, dass... / Meiner Meinung nach... Seja breve: só o essencial."
+     ],
+     "q": "Pense num artigo ou vídeo recente. Resuma para mim em três frases: Es geht um...",
+     "c": "Escreva um resumo de cinco frases de um texto curto com es geht um, laut, der Autor meint e zusammenfassend."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "es geht um",
+      "ex": "In dem Artikel geht es um gesunde Ernährung."
+     },
+     {
+      "w": "handeln von",
+      "ex": "Der Text handelt von einer Reise nach Island."
+     },
+     {
+      "w": "der Autor erklärt",
+      "ex": "Der Autor erklärt, warum Schlaf so wichtig ist."
+     },
+     {
+      "w": "laut + Dativ",
+      "ex": "Laut dem Artikel lesen Kinder heute mehr Comics."
+     },
+     {
+      "w": "die Hauptaussage",
+      "ex": "Die Hauptaussage des Textes ist klar."
+     },
+     {
+      "w": "zusammenfassend",
+      "ex": "Zusammenfassend kann man sagen, dass Bewegung hilft."
+     }
+    ],
+    "gram": "Zusammenfassung: Es geht um + Akkusativ; handeln von + Dativ; laut + Dativ; zusammenfassend kann man sagen, dass…"
+   }
+  },
+  {
+   "d": 212,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Work life in German-speaking lands",
+     "g": "Talk about work culture: Arbeitszeiten, Urlaubstage, Feierabend, Pünktlichkeit.",
+     "p": [
+      "Der Feierabend is the end of the working day, a time many people protect: Schönen Feierabend!",
+      "Many full-time employees have around 25 to 30 Urlaubstage (days of leave) a year; flexible Gleitzeit is common in offices.",
+      "Pünktlichkeit matters: arriving on time for meetings is a sign of respect. Being five minutes early is normal."
+     ],
+     "q": "How does work life in your country compare? Tell me about Arbeitszeiten, Urlaub and Feierabend where you live.",
+     "c": "Write four sentences comparing work culture in your country with German-speaking countries."
+    },
+    "de": {
+     "t": "Arbeitsleben im deutschsprachigen Raum",
+     "g": "Du sprichst über Arbeitskultur: Arbeitszeiten, Urlaubstage, Feierabend, Pünktlichkeit.",
+     "p": [
+      "Der Feierabend ist das Ende des Arbeitstags, den viele bewusst genießen: Schönen Feierabend!",
+      "Viele Vollzeitkräfte haben etwa 25 bis 30 Urlaubstage im Jahr; im Büro ist flexible Gleitzeit verbreitet.",
+      "Pünktlichkeit ist wichtig: Wer pünktlich zum Termin kommt, zeigt Respekt. Fünf Minuten früher ist normal."
+     ],
+     "q": "Wie ist das Arbeitsleben in deinem Land? Erzähl von Arbeitszeiten, Urlaub und Feierabend bei dir.",
+     "c": "Schreib vier Sätze, die die Arbeitskultur in deinem Land mit dem deutschsprachigen Raum vergleichen."
+    },
+    "es": {
+     "t": "La vida laboral en los países germanohablantes",
+     "g": "Habla de cultura laboral: Arbeitszeiten, Urlaubstage, Feierabend, Pünktlichkeit.",
+     "p": [
+      "Der Feierabend es el final de la jornada, un tiempo que muchos protegen: Schönen Feierabend!",
+      "Muchos empleados a tiempo completo tienen unos 25 a 30 Urlaubstage (días de vacaciones) al año; la Gleitzeit es frecuente.",
+      "La Pünktlichkeit importa: llegar puntual a una reunión es una muestra de respeto. Cinco minutos antes es lo normal."
+     ],
+     "q": "¿Cómo es la vida laboral en tu país? Háblame de Arbeitszeiten, Urlaub y Feierabend donde vives.",
+     "c": "Escribe cuatro frases comparando la cultura laboral de tu país con la de los países germanohablantes."
+    },
+    "fr": {
+     "t": "Le travail dans les pays germanophones",
+     "g": "Parler de la culture du travail : Arbeitszeiten, Urlaubstage, Feierabend, Pünktlichkeit.",
+     "p": [
+      "Der Feierabend, c'est la fin de la journée de travail, un moment que beaucoup protègent : Schönen Feierabend !",
+      "Beaucoup de salariés à temps plein ont environ 25 à 30 Urlaubstage (jours de congé) par an ; la Gleitzeit est courante.",
+      "La Pünktlichkeit compte : arriver à l'heure à une réunion est une marque de respect. Cinq minutes d'avance, c'est normal."
+     ],
+     "q": "Comment est le travail dans ton pays ? Parle-moi des Arbeitszeiten, des congés et du Feierabend chez toi.",
+     "c": "Écris quatre phrases comparant la culture du travail de ton pays avec celle des pays germanophones."
+    },
+    "it": {
+     "t": "Il lavoro nei paesi di lingua tedesca",
+     "g": "Parli di cultura del lavoro: Arbeitszeiten, Urlaubstage, Feierabend, Pünktlichkeit.",
+     "p": [
+      "Der Feierabend è la fine della giornata lavorativa, un momento che molti proteggono: Schönen Feierabend!",
+      "Molti dipendenti a tempo pieno hanno circa 25-30 Urlaubstage (giorni di ferie) all'anno; la Gleitzeit è diffusa.",
+      "La Pünktlichkeit conta: arrivare puntuali a una riunione è segno di rispetto. Cinque minuti prima è normale."
+     ],
+     "q": "Com'è il lavoro nel tuo paese? Parlami di Arbeitszeiten, ferie e Feierabend dove vivi.",
+     "c": "Scrivi quattro frasi che confrontano la cultura del lavoro del tuo paese con quella dei paesi di lingua tedesca."
+    },
+    "pt": {
+     "t": "O trabalho nos países de língua alemã",
+     "g": "Falar da cultura de trabalho: Arbeitszeiten, Urlaubstage, Feierabend, Pünktlichkeit.",
+     "p": [
+      "Der Feierabend é o fim do dia de trabalho, um tempo que muitos protegem: Schönen Feierabend!",
+      "Muitos trabalhadores a tempo inteiro têm cerca de 25 a 30 Urlaubstage (dias de férias) por ano; a Gleitzeit é comum.",
+      "A Pünktlichkeit conta: chegar a horas a uma reunião é sinal de respeito. Chegar cinco minutos antes é normal."
+     ],
+     "q": "Como é o trabalho no teu país? Fala-me de Arbeitszeiten, férias e Feierabend onde vives.",
+     "c": "Escreve quatro frases a comparar a cultura de trabalho do teu país com a dos países de língua alemã."
+    },
+    "pt_BR": {
+     "t": "O trabalho nos países de língua alemã",
+     "g": "Falar da cultura de trabalho: Arbeitszeiten, Urlaubstage, Feierabend, Pünktlichkeit.",
+     "p": [
+      "Der Feierabend é o fim do expediente, um tempo que muitos protegem: Schönen Feierabend!",
+      "Muitos funcionários em tempo integral têm cerca de 25 a 30 Urlaubstage (dias de férias) por ano; a Gleitzeit é comum.",
+      "A Pünktlichkeit importa: chegar na hora a uma reunião é sinal de respeito. Chegar cinco minutos antes é normal."
+     ],
+     "q": "Como é o trabalho no seu país? Me fale de Arbeitszeiten, férias e Feierabend onde você mora.",
+     "c": "Escreva quatro frases comparando a cultura de trabalho do seu país com a dos países de língua alemã."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Feierabend",
+      "ex": "Nach dem Feierabend gehe ich gern joggen."
+     },
+     {
+      "w": "die Arbeitszeit",
+      "ex": "Meine Arbeitszeit ist von acht bis vier."
+     },
+     {
+      "w": "der Urlaubstag",
+      "ex": "Ich habe noch fünf Urlaubstage übrig."
+     },
+     {
+      "w": "die Gleitzeit",
+      "ex": "Dank Gleitzeit kann ich später anfangen."
+     },
+     {
+      "w": "pünktlich",
+      "ex": "Bitte seien Sie pünktlich um neun Uhr da."
+     },
+     {
+      "w": "Vollzeit / Teilzeit",
+      "ex": "Sie arbeitet Teilzeit, er arbeitet Vollzeit."
+     }
+    ],
+    "gram": "Arbeitswelt: Komposita wie Arbeitszeit, Urlaubstag, Feierabend; Zeitangaben mit von … bis und ab (ab neun Uhr)."
+   }
+  },
+  {
+   "d": 213,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Meetings at work",
+     "g": "Take part in a meeting: die Tagesordnung, das Protokoll, einen Vorschlag machen.",
+     "p": [
+      "Before: die Besprechung (meeting), die Tagesordnung (agenda), der Punkt: Kommen wir zu Punkt zwei.",
+      "During: einen Vorschlag machen, Ich schlage vor, dass..., Darf ich kurz etwas ergänzen? Ich sehe das etwas anders.",
+      "After: das Protokoll (minutes) schreiben, Aufgaben verteilen, Bis wann ist das erledigt?"
+     ],
+     "q": "Let's role-play a meeting: Ich schlage vor, dass wir... What is your suggestion for our next German topic?",
+     "c": "Write a mini agenda with three points and one suggestion for each, using Ich schlage vor, dass..."
+    },
+    "de": {
+     "t": "Besprechungen bei der Arbeit",
+     "g": "Du nimmst an einer Besprechung teil: die Tagesordnung, das Protokoll, einen Vorschlag machen.",
+     "p": [
+      "Vorher: die Besprechung, die Tagesordnung, der Punkt: Kommen wir zu Punkt zwei.",
+      "Während: einen Vorschlag machen, Ich schlage vor, dass..., Darf ich kurz etwas ergänzen? Ich sehe das etwas anders.",
+      "Danach: das Protokoll schreiben, Aufgaben verteilen, Bis wann ist das erledigt?"
+     ],
+     "q": "Spielen wir eine Besprechung: Ich schlage vor, dass wir... Was schlägst du für unser nächstes Deutschthema vor?",
+     "c": "Schreib eine Mini-Tagesordnung mit drei Punkten und je einem Vorschlag mit Ich schlage vor, dass..."
+    },
+    "es": {
+     "t": "Reuniones de trabajo",
+     "g": "Participa en una reunión: die Tagesordnung, das Protokoll, einen Vorschlag machen.",
+     "p": [
+      "Antes: die Besprechung (reunión), die Tagesordnung (orden del día), der Punkt: Kommen wir zu Punkt zwei.",
+      "Durante: einen Vorschlag machen, Ich schlage vor, dass..., Darf ich kurz etwas ergänzen? Ich sehe das etwas anders.",
+      "Después: das Protokoll (acta) schreiben, Aufgaben verteilen, Bis wann ist das erledigt?"
+     ],
+     "q": "Simulemos una reunión: Ich schlage vor, dass wir... ¿Qué propones para nuestro próximo tema de alemán?",
+     "c": "Escribe un mini orden del día con tres puntos y una propuesta para cada uno con Ich schlage vor, dass..."
+    },
+    "fr": {
+     "t": "Les réunions au travail",
+     "g": "Participer à une réunion : die Tagesordnung, das Protokoll, einen Vorschlag machen.",
+     "p": [
+      "Avant : die Besprechung (réunion), die Tagesordnung (ordre du jour), der Punkt : Kommen wir zu Punkt zwei.",
+      "Pendant : einen Vorschlag machen, Ich schlage vor, dass..., Darf ich kurz etwas ergänzen ? Ich sehe das etwas anders.",
+      "Après : das Protokoll (compte rendu) schreiben, Aufgaben verteilen, Bis wann ist das erledigt ?"
+     ],
+     "q": "Jouons une réunion : Ich schlage vor, dass wir... Que proposes-tu pour notre prochain thème d'allemand ?",
+     "c": "Écris un mini ordre du jour de trois points avec une proposition pour chacun : Ich schlage vor, dass..."
+    },
+    "it": {
+     "t": "Riunioni di lavoro",
+     "g": "Partecipi a una riunione: die Tagesordnung, das Protokoll, einen Vorschlag machen.",
+     "p": [
+      "Prima: die Besprechung (riunione), die Tagesordnung (ordine del giorno), der Punkt: Kommen wir zu Punkt zwei.",
+      "Durante: einen Vorschlag machen, Ich schlage vor, dass..., Darf ich kurz etwas ergänzen? Ich sehe das etwas anders.",
+      "Dopo: das Protokoll (verbale) schreiben, Aufgaben verteilen, Bis wann ist das erledigt?"
+     ],
+     "q": "Simuliamo una riunione: Ich schlage vor, dass wir... Che cosa proponi per il nostro prossimo tema di tedesco?",
+     "c": "Scrivi un mini ordine del giorno con tre punti e una proposta per ciascuno con Ich schlage vor, dass..."
+    },
+    "pt": {
+     "t": "Reuniões de trabalho",
+     "g": "Participar numa reunião: die Tagesordnung, das Protokoll, einen Vorschlag machen.",
+     "p": [
+      "Antes: die Besprechung (reunião), die Tagesordnung (ordem de trabalhos), der Punkt: Kommen wir zu Punkt zwei.",
+      "Durante: einen Vorschlag machen, Ich schlage vor, dass..., Darf ich kurz etwas ergänzen? Ich sehe das etwas anders.",
+      "Depois: das Protokoll (ata) schreiben, Aufgaben verteilen, Bis wann ist das erledigt?"
+     ],
+     "q": "Vamos simular uma reunião: Ich schlage vor, dass wir... O que propões para o nosso próximo tema de alemão?",
+     "c": "Escreve uma mini ordem de trabalhos com três pontos e uma proposta para cada um com Ich schlage vor, dass..."
+    },
+    "pt_BR": {
+     "t": "Reuniões de trabalho",
+     "g": "Participar de uma reunião: die Tagesordnung, das Protokoll, einen Vorschlag machen.",
+     "p": [
+      "Antes: die Besprechung (reunião), die Tagesordnung (pauta), der Punkt: Kommen wir zu Punkt zwei.",
+      "Durante: einen Vorschlag machen, Ich schlage vor, dass..., Darf ich kurz etwas ergänzen? Ich sehe das etwas anders.",
+      "Depois: das Protokoll (ata) schreiben, Aufgaben verteilen, Bis wann ist das erledigt?"
+     ],
+     "q": "Vamos simular uma reunião: Ich schlage vor, dass wir... O que você propõe para nosso próximo tema de alemão?",
+     "c": "Escreva uma mini pauta com três pontos e uma proposta para cada um com Ich schlage vor, dass..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Besprechung",
+      "ex": "Die Besprechung beginnt um zehn Uhr."
+     },
+     {
+      "w": "die Tagesordnung",
+      "ex": "Was steht heute auf der Tagesordnung?"
+     },
+     {
+      "w": "das Protokoll",
+      "ex": "Wer schreibt heute das Protokoll?"
+     },
+     {
+      "w": "einen Vorschlag machen",
+      "ex": "Darf ich einen Vorschlag machen?"
+     },
+     {
+      "w": "vorschlagen",
+      "ex": "Ich schlage vor, dass wir eine Pause machen."
+     },
+     {
+      "w": "ergänzen",
+      "ex": "Ich möchte kurz etwas ergänzen."
+     }
+    ],
+    "gram": "Vorschläge: Ich schlage vor, dass… (Verb am Ende); trennbares vorschlagen: Ich schlage vor; höflich: Darf ich…?"
+   }
+  },
+  {
+   "d": 214,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Professional emails",
+     "g": "Write a clear work email: bezüglich, anbei, ich freue mich auf Ihre Rückmeldung.",
+     "p": [
+      "Openings: Sehr geehrte Frau Weber, / Sehr geehrter Herr Klein, (formal) or Liebe Frau Weber, / Hallo Herr Klein, (friendlier).",
+      "Body: Bezüglich Ihrer Anfrage... (regarding), Anbei sende ich Ihnen... (attached), Könnten Sie mir bitte... mitteilen?",
+      "Close: Ich freue mich auf Ihre Rückmeldung. Mit freundlichen Grüßen / Viele Grüße. After the comma, start with lower case."
+     ],
+     "q": "Let's practise: How would you start and end an email to a German colleague you don't know yet?",
+     "c": "Write a five-line email asking for information, with a greeting, bezüglich, anbei and a polite closing."
+    },
+    "de": {
+     "t": "Berufliche E-Mails",
+     "g": "Du schreibst eine klare Arbeits-E-Mail: bezüglich, anbei, ich freue mich auf Ihre Rückmeldung.",
+     "p": [
+      "Anrede: Sehr geehrte Frau Weber, / Sehr geehrter Herr Klein, (formell) oder Liebe Frau Weber, / Hallo Herr Klein, (lockerer).",
+      "Text: Bezüglich Ihrer Anfrage..., Anbei sende ich Ihnen..., Könnten Sie mir bitte... mitteilen?",
+      "Schluss: Ich freue mich auf Ihre Rückmeldung. Mit freundlichen Grüßen / Viele Grüße. Nach dem Komma klein weiter."
+     ],
+     "q": "Lass uns üben: Wie beginnst und beendest du eine E-Mail an einen deutschen Kollegen, den du noch nicht kennst?",
+     "c": "Schreib eine E-Mail in fünf Zeilen mit Anrede, bezüglich, anbei und einem höflichen Schluss."
+    },
+    "es": {
+     "t": "Correos profesionales",
+     "g": "Escribe un correo de trabajo claro: bezüglich, anbei, ich freue mich auf Ihre Rückmeldung.",
+     "p": [
+      "Saludo: Sehr geehrte Frau Weber, / Sehr geehrter Herr Klein, (formal) o Liebe Frau Weber, / Hallo Herr Klein, (más cercano).",
+      "Cuerpo: Bezüglich Ihrer Anfrage... (en relación con), Anbei sende ich Ihnen... (adjunto), Könnten Sie mir bitte... mitteilen?",
+      "Cierre: Ich freue mich auf Ihre Rückmeldung. Mit freundlichen Grüßen. Tras la coma del saludo se sigue en minúscula."
+     ],
+     "q": "Practiquemos: ¿cómo empezarías y terminarías un correo a un colega alemán que aún no conoces?",
+     "c": "Escribe un correo de cinco líneas pidiendo información, con saludo, bezüglich, anbei y una despedida cortés."
+    },
+    "fr": {
+     "t": "Les e-mails professionnels",
+     "g": "Écrire un e-mail de travail clair : bezüglich, anbei, ich freue mich auf Ihre Rückmeldung.",
+     "p": [
+      "Formule d'appel : Sehr geehrte Frau Weber, / Sehr geehrter Herr Klein, (formel) ou Liebe Frau Weber, (plus cordial).",
+      "Corps : Bezüglich Ihrer Anfrage... (concernant), Anbei sende ich Ihnen... (ci-joint), Könnten Sie mir bitte... mitteilen ?",
+      "Fin : Ich freue mich auf Ihre Rückmeldung. Mit freundlichen Grüßen. Après la virgule, on continue en minuscule."
+     ],
+     "q": "Entraînons-nous : comment commencerais-tu et finirais-tu un e-mail à un collègue allemand que tu ne connais pas ?",
+     "c": "Écris un e-mail de cinq lignes pour demander une information, avec formule d'appel, bezüglich, anbei et formule finale."
+    },
+    "it": {
+     "t": "E-mail di lavoro",
+     "g": "Scrivi un'e-mail di lavoro chiara: bezüglich, anbei, ich freue mich auf Ihre Rückmeldung.",
+     "p": [
+      "Saluto: Sehr geehrte Frau Weber, / Sehr geehrter Herr Klein, (formale) o Liebe Frau Weber, / Hallo Herr Klein, (più cordiale).",
+      "Corpo: Bezüglich Ihrer Anfrage... (riguardo a), Anbei sende ich Ihnen... (in allegato), Könnten Sie mir bitte... mitteilen?",
+      "Chiusura: Ich freue mich auf Ihre Rückmeldung. Mit freundlichen Grüßen. Dopo la virgola si continua in minuscolo."
+     ],
+     "q": "Esercitiamoci: come inizieresti e chiuderesti un'e-mail a un collega tedesco che non conosci ancora?",
+     "c": "Scrivi un'e-mail di cinque righe per chiedere informazioni, con saluto, bezüglich, anbei e una chiusura cortese."
+    },
+    "pt": {
+     "t": "E-mails profissionais",
+     "g": "Escrever um e-mail de trabalho claro: bezüglich, anbei, ich freue mich auf Ihre Rückmeldung.",
+     "p": [
+      "Saudação: Sehr geehrte Frau Weber, / Sehr geehrter Herr Klein, (formal) ou Liebe Frau Weber, / Hallo Herr Klein, (mais próximo).",
+      "Corpo: Bezüglich Ihrer Anfrage... (relativamente a), Anbei sende ich Ihnen... (em anexo), Könnten Sie mir bitte... mitteilen?",
+      "Fecho: Ich freue mich auf Ihre Rückmeldung. Mit freundlichen Grüßen. Depois da vírgula continua-se em minúscula."
+     ],
+     "q": "Vamos praticar: como começarias e terminarias um e-mail a um colega alemão que ainda não conheces?",
+     "c": "Escreve um e-mail de cinco linhas a pedir informação, com saudação, bezüglich, anbei e um fecho cortês."
+    },
+    "pt_BR": {
+     "t": "E-mails profissionais",
+     "g": "Escrever um e-mail de trabalho claro: bezüglich, anbei, ich freue mich auf Ihre Rückmeldung.",
+     "p": [
+      "Saudação: Sehr geehrte Frau Weber, / Sehr geehrter Herr Klein, (formal) ou Liebe Frau Weber, / Hallo Herr Klein, (mais próximo).",
+      "Corpo: Bezüglich Ihrer Anfrage... (com relação a), Anbei sende ich Ihnen... (em anexo), Könnten Sie mir bitte... mitteilen?",
+      "Fecho: Ich freue mich auf Ihre Rückmeldung. Mit freundlichen Grüßen. Depois da vírgula se continua em minúscula."
+     ],
+     "q": "Vamos praticar: como você começaria e terminaria um e-mail para um colega alemão que ainda não conhece?",
+     "c": "Escreva um e-mail de cinco linhas pedindo informação, com saudação, bezüglich, anbei e um fecho educado."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Sehr geehrte Damen und Herren,",
+      "ex": "Sehr geehrte Damen und Herren, ich habe eine Frage."
+     },
+     {
+      "w": "bezüglich",
+      "ex": "Bezüglich Ihrer Anfrage kann ich Ihnen Folgendes mitteilen."
+     },
+     {
+      "w": "anbei",
+      "ex": "Anbei sende ich Ihnen die Unterlagen."
+     },
+     {
+      "w": "die Rückmeldung",
+      "ex": "Ich freue mich auf Ihre Rückmeldung."
+     },
+     {
+      "w": "mitteilen",
+      "ex": "Könnten Sie mir bitte den Termin mitteilen?"
+     },
+     {
+      "w": "Mit freundlichen Grüßen",
+      "ex": "Mit freundlichen Grüßen, Anna Berger"
+     }
+    ],
+    "gram": "Formelle E-Mail: Sie-Form, Konjunktiv II für Bitten (Könnten Sie…?), bezüglich + Genitiv, nach der Anrede klein weiter."
+   }
+  },
+  {
+   "d": 215,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Telephone at work",
+     "g": "Handle work calls: Ich verbinde Sie, eine Nachricht hinterlassen, zurückrufen.",
+     "p": [
+      "Answer with company and name: Firma Schulz, Lena Braun, guten Tag. Calling: Hier spricht... Ich möchte gern Herrn Meier sprechen.",
+      "Connecting: Einen Moment, ich verbinde Sie. Er ist leider nicht da / gerade in einer Besprechung.",
+      "Messages: Möchten Sie eine Nachricht hinterlassen? Kann er Sie zurückrufen? Wie ist Ihre Nummer?"
+     ],
+     "q": "Let's role-play: you call a company and the person you want is not there. What do you say?",
+     "c": "Write a short phone dialogue (six lines) using verbinden, hinterlassen and zurückrufen."
+    },
+    "de": {
+     "t": "Telefonieren im Beruf",
+     "g": "Du führst berufliche Telefonate: Ich verbinde Sie, eine Nachricht hinterlassen, zurückrufen.",
+     "p": [
+      "Melden mit Firma und Namen: Firma Schulz, Lena Braun, guten Tag. Anrufen: Hier spricht... Ich möchte gern Herrn Meier sprechen.",
+      "Verbinden: Einen Moment, ich verbinde Sie. Er ist leider nicht da / gerade in einer Besprechung.",
+      "Nachrichten: Möchten Sie eine Nachricht hinterlassen? Kann er Sie zurückrufen? Wie ist Ihre Nummer?"
+     ],
+     "q": "Rollenspiel: Du rufst bei einer Firma an, und die gewünschte Person ist nicht da. Was sagst du?",
+     "c": "Schreib einen kurzen Telefondialog (sechs Zeilen) mit verbinden, hinterlassen und zurückrufen."
+    },
+    "es": {
+     "t": "Al teléfono en el trabajo",
+     "g": "Gestiona llamadas de trabajo: Ich verbinde Sie, eine Nachricht hinterlassen, zurückrufen.",
+     "p": [
+      "Se contesta con empresa y nombre: Firma Schulz, Lena Braun, guten Tag. Al llamar: Hier spricht... Ich möchte Herrn Meier sprechen.",
+      "Pasar la llamada: Einen Moment, ich verbinde Sie (le paso). Er ist leider nicht da / gerade in einer Besprechung.",
+      "Mensajes: Möchten Sie eine Nachricht hinterlassen? Kann er Sie zurückrufen? Wie ist Ihre Nummer?"
+     ],
+     "q": "Simulemos: llamas a una empresa y la persona que buscas no está. ¿Qué dices?",
+     "c": "Escribe un diálogo telefónico corto (seis líneas) con verbinden, hinterlassen y zurückrufen."
+    },
+    "fr": {
+     "t": "Le téléphone au travail",
+     "g": "Gérer les appels pro : Ich verbinde Sie, eine Nachricht hinterlassen, zurückrufen.",
+     "p": [
+      "On répond ainsi : Firma Schulz, Lena Braun, guten Tag. Pour appeler : Hier spricht... Ich möchte Herrn Meier sprechen.",
+      "Transférer : Einen Moment, ich verbinde Sie (je vous le passe). Er ist leider nicht da / gerade in einer Besprechung.",
+      "Messages : Möchten Sie eine Nachricht hinterlassen ? Kann er Sie zurückrufen ? Wie ist Ihre Nummer ?"
+     ],
+     "q": "Jeu de rôle : tu appelles une entreprise et la personne voulue n'est pas là. Que dis-tu ?",
+     "c": "Écris un court dialogue téléphonique (six lignes) avec verbinden, hinterlassen et zurückrufen."
+    },
+    "it": {
+     "t": "Al telefono al lavoro",
+     "g": "Gestisci le telefonate di lavoro: Ich verbinde Sie, eine Nachricht hinterlassen, zurückrufen.",
+     "p": [
+      "Si risponde con azienda e nome: Firma Schulz, Lena Braun, guten Tag. Chiamando: Hier spricht... Ich möchte Herrn Meier sprechen.",
+      "Passare la chiamata: Einen Moment, ich verbinde Sie (glielo passo). Er ist leider nicht da / gerade in einer Besprechung.",
+      "Messaggi: Möchten Sie eine Nachricht hinterlassen? Kann er Sie zurückrufen? Wie ist Ihre Nummer?"
+     ],
+     "q": "Gioco di ruolo: chiami un'azienda e la persona che cerchi non c'è. Che cosa dici?",
+     "c": "Scrivi un breve dialogo telefonico (sei righe) con verbinden, hinterlassen e zurückrufen."
+    },
+    "pt": {
+     "t": "Ao telefone no trabalho",
+     "g": "Atender chamadas de trabalho: Ich verbinde Sie, eine Nachricht hinterlassen, zurückrufen.",
+     "p": [
+      "Atende-se com empresa e nome: Firma Schulz, Lena Braun, guten Tag. Ao ligar: Hier spricht... Ich möchte Herrn Meier sprechen.",
+      "Passar a chamada: Einen Moment, ich verbinde Sie (vou passar). Er ist leider nicht da / gerade in einer Besprechung.",
+      "Recados: Möchten Sie eine Nachricht hinterlassen? Kann er Sie zurückrufen? Wie ist Ihre Nummer?"
+     ],
+     "q": "Vamos simular: ligas para uma empresa e a pessoa que procuras não está. O que dizes?",
+     "c": "Escreve um diálogo telefónico curto (seis linhas) com verbinden, hinterlassen e zurückrufen."
+    },
+    "pt_BR": {
+     "t": "Ao telefone no trabalho",
+     "g": "Atender ligações de trabalho: Ich verbinde Sie, eine Nachricht hinterlassen, zurückrufen.",
+     "p": [
+      "Atende-se com empresa e nome: Firma Schulz, Lena Braun, guten Tag. Ao ligar: Hier spricht... Ich möchte Herrn Meier sprechen.",
+      "Transferir: Einen Moment, ich verbinde Sie (vou transferir). Er ist leider nicht da / gerade in einer Besprechung.",
+      "Recados: Möchten Sie eine Nachricht hinterlassen? Kann er Sie zurückrufen? Wie ist Ihre Nummer?"
+     ],
+     "q": "Vamos simular: você liga para uma empresa e a pessoa que procura não está. O que você diz?",
+     "c": "Escreva um diálogo telefônico curto (seis linhas) com verbinden, hinterlassen e zurückrufen."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Hier spricht...",
+      "ex": "Guten Tag, hier spricht Jonas Weber von der Firma Lindner."
+     },
+     {
+      "w": "jemanden verbinden",
+      "ex": "Einen Moment bitte, ich verbinde Sie."
+     },
+     {
+      "w": "eine Nachricht hinterlassen",
+      "ex": "Möchten Sie eine Nachricht hinterlassen?"
+     },
+     {
+      "w": "zurückrufen",
+      "ex": "Frau Kraus ruft Sie heute Nachmittag zurück."
+     },
+     {
+      "w": "erreichen",
+      "ex": "Wann kann ich Herrn Meier am besten erreichen?"
+     },
+     {
+      "w": "Auf Wiederhören!",
+      "ex": "Vielen Dank für Ihren Anruf. Auf Wiederhören!"
+     }
+    ],
+    "gram": "Telefon: trennbare Verben zurückrufen (ruft … zurück), anrufen; Konjunktiv II höflich: Ich möchte gern… sprechen."
+   }
+  },
+  {
+   "d": 216,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Presenting a project",
+     "g": "Give a structured presentation: Einleitung, Ablauf, Ergebnisse, nächste Schritte.",
+     "p": [
+      "Introduction: Heute möchte ich Ihnen unser Projekt vorstellen. Zuerst spreche ich über..., dann über...",
+      "Results with data: Wie Sie auf dieser Folie sehen, ... Die Zahlen zeigen, dass... Das wichtigste Ergebnis ist...",
+      "End: Die nächsten Schritte sind... Zum Schluss möchte ich mich bedanken. Haben Sie noch Fragen?"
+     ],
+     "q": "Present a small project of yours to me in four sentences: introduction, steps, result and next step.",
+     "c": "Prepare a one-minute talk about a hobby project with vorstellen, zuerst, die Ergebnisse zeigen and die nächsten Schritte."
+    },
+    "de": {
+     "t": "Ein Projekt präsentieren",
+     "g": "Du hältst eine gegliederte Präsentation: Einleitung, Ablauf, Ergebnisse, nächste Schritte.",
+     "p": [
+      "Einleitung: Heute möchte ich Ihnen unser Projekt vorstellen. Zuerst spreche ich über..., dann über...",
+      "Ergebnisse mit Daten: Wie Sie auf dieser Folie sehen, ... Die Zahlen zeigen, dass... Das wichtigste Ergebnis ist...",
+      "Schluss: Die nächsten Schritte sind... Zum Schluss möchte ich mich bedanken. Haben Sie noch Fragen?"
+     ],
+     "q": "Stell mir ein kleines Projekt von dir in vier Sätzen vor: Einleitung, Ablauf, Ergebnis und nächster Schritt.",
+     "c": "Bereite einen Ein-Minuten-Vortrag über ein Hobbyprojekt vor: vorstellen, zuerst, die Ergebnisse zeigen, nächste Schritte."
+    },
+    "es": {
+     "t": "Presentar un proyecto",
+     "g": "Haz una presentación estructurada: Einleitung, Ablauf, Ergebnisse, nächste Schritte.",
+     "p": [
+      "Introducción: Heute möchte ich Ihnen unser Projekt vorstellen. Zuerst spreche ich über..., dann über...",
+      "Resultados con datos: Wie Sie auf dieser Folie sehen, ... Die Zahlen zeigen, dass... Das wichtigste Ergebnis ist...",
+      "Cierre: Die nächsten Schritte sind... Zum Schluss möchte ich mich bedanken. Haben Sie noch Fragen?"
+     ],
+     "q": "Preséntame un pequeño proyecto tuyo en cuatro frases: introducción, pasos, resultado y siguiente paso.",
+     "c": "Prepara una charla de un minuto sobre un proyecto personal con vorstellen, zuerst, die Ergebnisse zeigen y nächste Schritte."
+    },
+    "fr": {
+     "t": "Présenter un projet",
+     "g": "Faire une présentation structurée : Einleitung, Ablauf, Ergebnisse, nächste Schritte.",
+     "p": [
+      "Introduction : Heute möchte ich Ihnen unser Projekt vorstellen. Zuerst spreche ich über..., dann über...",
+      "Résultats chiffrés : Wie Sie auf dieser Folie sehen, ... Die Zahlen zeigen, dass... Das wichtigste Ergebnis ist...",
+      "Fin : Die nächsten Schritte sind... Zum Schluss möchte ich mich bedanken. Haben Sie noch Fragen ?"
+     ],
+     "q": "Présente-moi un petit projet à toi en quatre phrases : introduction, étapes, résultat et étape suivante.",
+     "c": "Prépare un exposé d'une minute sur un projet perso avec vorstellen, zuerst, die Ergebnisse zeigen et nächste Schritte."
+    },
+    "it": {
+     "t": "Presentare un progetto",
+     "g": "Fai una presentazione ben strutturata: Einleitung, Ablauf, Ergebnisse, nächste Schritte.",
+     "p": [
+      "Introduzione: Heute möchte ich Ihnen unser Projekt vorstellen. Zuerst spreche ich über..., dann über...",
+      "Risultati con dati: Wie Sie auf dieser Folie sehen, ... Die Zahlen zeigen, dass... Das wichtigste Ergebnis ist...",
+      "Chiusura: Die nächsten Schritte sind... Zum Schluss möchte ich mich bedanken. Haben Sie noch Fragen?"
+     ],
+     "q": "Presentami un tuo piccolo progetto in quattro frasi: introduzione, fasi, risultato e prossimo passo.",
+     "c": "Prepara un intervento di un minuto su un progetto personale con vorstellen, zuerst, die Ergebnisse zeigen e nächste Schritte."
+    },
+    "pt": {
+     "t": "Apresentar um projeto",
+     "g": "Fazer uma apresentação estruturada: Einleitung, Ablauf, Ergebnisse, nächste Schritte.",
+     "p": [
+      "Introdução: Heute möchte ich Ihnen unser Projekt vorstellen. Zuerst spreche ich über..., dann über...",
+      "Resultados com dados: Wie Sie auf dieser Folie sehen, ... Die Zahlen zeigen, dass... Das wichtigste Ergebnis ist...",
+      "Fecho: Die nächsten Schritte sind... Zum Schluss möchte ich mich bedanken. Haben Sie noch Fragen?"
+     ],
+     "q": "Apresenta-me um pequeno projeto teu em quatro frases: introdução, etapas, resultado e próximo passo.",
+     "c": "Prepara uma apresentação de um minuto sobre um projeto pessoal com vorstellen, zuerst, die Ergebnisse zeigen e nächste Schritte."
+    },
+    "pt_BR": {
+     "t": "Apresentar um projeto",
+     "g": "Fazer uma apresentação estruturada: Einleitung, Ablauf, Ergebnisse, nächste Schritte.",
+     "p": [
+      "Introdução: Heute möchte ich Ihnen unser Projekt vorstellen. Zuerst spreche ich über..., dann über...",
+      "Resultados com dados: Wie Sie auf dieser Folie sehen, ... Die Zahlen zeigen, dass... Das wichtigste Ergebnis ist...",
+      "Fechamento: Die nächsten Schritte sind... Zum Schluss möchte ich mich bedanken. Haben Sie noch Fragen?"
+     ],
+     "q": "Me apresente um pequeno projeto seu em quatro frases: introdução, etapas, resultado e próximo passo.",
+     "c": "Prepare uma fala de um minuto sobre um projeto pessoal com vorstellen, zuerst, die Ergebnisse zeigen e nächste Schritte."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "vorstellen",
+      "ex": "Heute möchte ich Ihnen unser neues Projekt vorstellen."
+     },
+     {
+      "w": "die Einleitung",
+      "ex": "In der Einleitung erkläre ich das Ziel."
+     },
+     {
+      "w": "die Folie",
+      "ex": "Auf dieser Folie sehen Sie die wichtigsten Zahlen."
+     },
+     {
+      "w": "das Ergebnis",
+      "ex": "Das Ergebnis hat uns alle überrascht."
+     },
+     {
+      "w": "die nächsten Schritte",
+      "ex": "Die nächsten Schritte planen wir im Juni."
+     },
+     {
+      "w": "sich bedanken",
+      "ex": "Ich bedanke mich für Ihre Aufmerksamkeit."
+     }
+    ],
+    "gram": "Präsentation gliedern: zuerst, dann, danach, zum Schluss + Verb auf Position 2; Wie Sie sehen, … (Nebensatz vorn)."
+   }
+  },
+  {
+   "d": 217,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "The dual training system",
+     "g": "Understand the Ausbildung: learning on the job with Berufsschule and Azubi.",
+     "p": [
+      "In a duale Ausbildung, trainees (Azubis, from Auszubildende) work in a company and also attend the Berufsschule.",
+      "It usually takes two to three and a half years and ends with an exam; trainees earn a monthly training allowance.",
+      "There are hundreds of recognised training jobs, from Mechatroniker to Bankkaufmann; it exists in Germany, Austria and Switzerland."
+     ],
+     "q": "Is there something similar to the Ausbildung in your country? Which Beruf would you choose to learn this way?",
+     "c": "Write four sentences about the dual system using der Azubi, der Betrieb, die Berufsschule and die Prüfung."
+    },
+    "de": {
+     "t": "Die duale Ausbildung",
+     "g": "Du verstehst die Ausbildung: Lernen im Betrieb mit Berufsschule und Azubi.",
+     "p": [
+      "In der dualen Ausbildung arbeiten Azubis (Auszubildende) in einem Betrieb und besuchen auch die Berufsschule.",
+      "Sie dauert meist zwei bis dreieinhalb Jahre und endet mit einer Prüfung; Azubis bekommen eine Ausbildungsvergütung.",
+      "Es gibt Hunderte anerkannte Ausbildungsberufe, vom Mechatroniker bis zur Bankkauffrau, in Deutschland, Österreich und der Schweiz."
+     ],
+     "q": "Gibt es in deinem Land etwas Ähnliches wie die Ausbildung? Welchen Beruf würdest du so lernen?",
+     "c": "Schreib vier Sätze über das duale System mit der Azubi, der Betrieb, die Berufsschule und die Prüfung."
+    },
+    "es": {
+     "t": "La formación dual",
+     "g": "Entiende la Ausbildung: aprender trabajando, con Berufsschule y Azubi.",
+     "p": [
+      "En la duale Ausbildung, los aprendices (Azubis, de Auszubildende) trabajan en una empresa y van a la Berufsschule.",
+      "Suele durar entre dos y tres años y medio y termina con un examen; los aprendices cobran una remuneración mensual.",
+      "Hay cientos de oficios reconocidos, de Mechatroniker a Bankkaufmann; existe en Alemania, Austria y Suiza."
+     ],
+     "q": "¿Hay algo parecido a la Ausbildung en tu país? ¿Qué Beruf elegirías aprender así?",
+     "c": "Escribe cuatro frases sobre el sistema dual con der Azubi, der Betrieb, die Berufsschule y die Prüfung."
+    },
+    "fr": {
+     "t": "La formation en alternance",
+     "g": "Comprendre l'Ausbildung : apprendre en entreprise avec la Berufsschule et l'Azubi.",
+     "p": [
+      "Dans la duale Ausbildung, les apprentis (Azubis, de Auszubildende) travaillent en entreprise et vont à la Berufsschule.",
+      "Elle dure en général de deux à trois ans et demi et se termine par un examen ; les apprentis touchent une rémunération.",
+      "Il existe des centaines de métiers reconnus, de Mechatroniker à Bankkaufmann, en Allemagne, en Autriche et en Suisse."
+     ],
+     "q": "Existe-t-il quelque chose de semblable à l'Ausbildung dans ton pays ? Quel Beruf choisirais-tu d'apprendre ainsi ?",
+     "c": "Écris quatre phrases sur le système dual avec der Azubi, der Betrieb, die Berufsschule et die Prüfung."
+    },
+    "it": {
+     "t": "La formazione duale",
+     "g": "Capisci la Ausbildung: imparare lavorando, con Berufsschule e Azubi.",
+     "p": [
+      "Nella duale Ausbildung gli apprendisti (Azubis, da Auszubildende) lavorano in un'azienda e frequentano la Berufsschule.",
+      "Di solito dura da due a tre anni e mezzo e finisce con un esame; gli apprendisti ricevono un compenso mensile.",
+      "Esistono centinaia di mestieri riconosciuti, dal Mechatroniker al Bankkaufmann, in Germania, Austria e Svizzera."
+     ],
+     "q": "Nel tuo paese c'è qualcosa di simile alla Ausbildung? Quale Beruf sceglieresti di imparare così?",
+     "c": "Scrivi quattro frasi sul sistema duale con der Azubi, der Betrieb, die Berufsschule e die Prüfung."
+    },
+    "pt": {
+     "t": "A formação dual",
+     "g": "Perceber a Ausbildung: aprender a trabalhar, com Berufsschule e Azubi.",
+     "p": [
+      "Na duale Ausbildung, os aprendizes (Azubis, de Auszubildende) trabalham numa empresa e frequentam a Berufsschule.",
+      "Dura normalmente entre dois e três anos e meio e termina com um exame; os aprendizes recebem uma remuneração mensal.",
+      "Há centenas de profissões reconhecidas, de Mechatroniker a Bankkaufmann; existe na Alemanha, Áustria e Suíça."
+     ],
+     "q": "Há no teu país algo parecido com a Ausbildung? Que Beruf escolherias aprender assim?",
+     "c": "Escreve quatro frases sobre o sistema dual com der Azubi, der Betrieb, die Berufsschule e die Prüfung."
+    },
+    "pt_BR": {
+     "t": "A formação dual",
+     "g": "Entender a Ausbildung: aprender trabalhando, com Berufsschule e Azubi.",
+     "p": [
+      "Na duale Ausbildung, os aprendizes (Azubis, de Auszubildende) trabalham numa empresa e frequentam a Berufsschule.",
+      "Costuma durar de dois a três anos e meio e termina com uma prova; os aprendizes recebem uma remuneração mensal.",
+      "Há centenas de profissões reconhecidas, de Mechatroniker a Bankkaufmann; existe na Alemanha, Áustria e Suíça."
+     ],
+     "q": "Existe no seu país algo parecido com a Ausbildung? Que Beruf você escolheria aprender assim?",
+     "c": "Escreva quatro frases sobre o sistema dual com der Azubi, der Betrieb, die Berufsschule e die Prüfung."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Ausbildung",
+      "ex": "Sie macht eine Ausbildung zur Köchin."
+     },
+     {
+      "w": "der/die Azubi",
+      "ex": "Unser Azubi lernt sehr schnell."
+     },
+     {
+      "w": "die Berufsschule",
+      "ex": "Zweimal pro Woche geht er in die Berufsschule."
+     },
+     {
+      "w": "der Betrieb",
+      "ex": "Der Betrieb bildet jedes Jahr vier junge Leute aus."
+     },
+     {
+      "w": "die Prüfung",
+      "ex": "Nach drei Jahren macht man die Abschlussprüfung."
+     },
+     {
+      "w": "ausbilden",
+      "ex": "Die Firma bildet Mechatroniker aus."
+     }
+    ],
+    "gram": "Ausbildung zu + Dativ (eine Ausbildung zum Koch / zur Köchin machen); trennbar: ausbilden (Die Firma bildet … aus)."
+   }
+  },
+  {
+   "d": 218,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Review: connectors and work",
+     "g": "Recap conjunctions, reported speech and work language in one practical task.",
+     "p": [
+      "Connectors: deshalb, trotzdem (verb 2nd); obwohl, während, damit, bevor (verb last); um... zu, ohne... zu, statt... zu.",
+      "Reported speech: Sie sagt, sie habe Zeit / dass sie Zeit hat; Er fragt, ob...; Konjunktiv II if forms look the same.",
+      "Work: Besprechung, Tagesordnung, E-Mail with bezüglich and anbei, Telefon with verbinden and zurückrufen, Präsentation."
+     ],
+     "q": "Tell me about a working day (real or imagined) using deshalb, obwohl, damit and one reported sentence from a colleague.",
+     "c": "Write a short email to a colleague reporting what the boss said in a meeting, with two connectors and Konjunktiv I."
+    },
+    "de": {
+     "t": "Wiederholung: Konnektoren und Arbeit",
+     "g": "Du wiederholst Konnektoren, indirekte Rede und Berufssprache in einer praktischen Aufgabe.",
+     "p": [
+      "Konnektoren: deshalb, trotzdem (Verb auf 2); obwohl, während, damit, bevor (Verb am Ende); um... zu, ohne... zu, statt... zu.",
+      "Indirekte Rede: Sie sagt, sie habe Zeit / dass sie Zeit hat; Er fragt, ob...; Konjunktiv II, wenn die Formen gleich sind.",
+      "Arbeit: Besprechung, Tagesordnung, E-Mail mit bezüglich und anbei, Telefon mit verbinden und zurückrufen, Präsentation."
+     ],
+     "q": "Erzähl von einem Arbeitstag (echt oder erfunden) mit deshalb, obwohl, damit und einem Satz in indirekter Rede.",
+     "c": "Schreib einer Kollegin eine kurze E-Mail, was der Chef in der Besprechung gesagt hat, mit zwei Konnektoren und Konjunktiv I."
+    },
+    "es": {
+     "t": "Repaso: conectores y trabajo",
+     "g": "Repasa conectores, estilo indirecto y lenguaje laboral en una tarea práctica.",
+     "p": [
+      "Conectores: deshalb, trotzdem (verbo 2.º); obwohl, während, damit, bevor (verbo al final); um... zu, ohne... zu, statt... zu.",
+      "Estilo indirecto: Sie sagt, sie habe Zeit / dass sie Zeit hat; Er fragt, ob...; Konjunktiv II si las formas coinciden.",
+      "Trabajo: Besprechung, Tagesordnung, correo con bezüglich y anbei, teléfono con verbinden y zurückrufen, presentación."
+     ],
+     "q": "Cuéntame un día de trabajo (real o inventado) con deshalb, obwohl, damit y una frase en estilo indirecto.",
+     "c": "Escribe un correo corto a una colega contando lo que dijo el jefe en la reunión, con dos conectores y Konjunktiv I."
+    },
+    "fr": {
+     "t": "Révision : connecteurs et travail",
+     "g": "Réviser connecteurs, discours indirect et langue du travail dans une tâche concrète.",
+     "p": [
+      "Connecteurs : deshalb, trotzdem (verbe 2e) ; obwohl, während, damit, bevor (verbe à la fin) ; um... zu, ohne... zu, statt... zu.",
+      "Discours indirect : Sie sagt, sie habe Zeit / dass sie Zeit hat ; Er fragt, ob... ; Konjunktiv II si les formes se confondent.",
+      "Travail : Besprechung, Tagesordnung, e-mail avec bezüglich et anbei, téléphone avec verbinden et zurückrufen, présentation."
+     ],
+     "q": "Raconte une journée de travail (réelle ou inventée) avec deshalb, obwohl, damit et une phrase au discours indirect.",
+     "c": "Écris un court e-mail à une collègue pour rapporter ce que le chef a dit en réunion, avec deux connecteurs et le Konjunktiv I."
+    },
+    "it": {
+     "t": "Ripasso: connettivi e lavoro",
+     "g": "Ripassi connettivi, discorso indiretto e lingua del lavoro in un compito pratico.",
+     "p": [
+      "Connettivi: deshalb, trotzdem (verbo al 2° posto); obwohl, während, damit, bevor (verbo in fondo); um... zu, ohne... zu, statt... zu.",
+      "Discorso indiretto: Sie sagt, sie habe Zeit / dass sie Zeit hat; Er fragt, ob...; Konjunktiv II se le forme coincidono.",
+      "Lavoro: Besprechung, Tagesordnung, e-mail con bezüglich e anbei, telefono con verbinden e zurückrufen, presentazione."
+     ],
+     "q": "Raccontami una giornata di lavoro (vera o inventata) con deshalb, obwohl, damit e una frase in discorso indiretto.",
+     "c": "Scrivi una breve e-mail a una collega su ciò che il capo ha detto in riunione, con due connettivi e il Konjunktiv I."
+    },
+    "pt": {
+     "t": "Revisão: conectores e trabalho",
+     "g": "Rever conectores, discurso indireto e linguagem de trabalho numa tarefa prática.",
+     "p": [
+      "Conectores: deshalb, trotzdem (verbo em 2.º); obwohl, während, damit, bevor (verbo no fim); um... zu, ohne... zu, statt... zu.",
+      "Discurso indireto: Sie sagt, sie habe Zeit / dass sie Zeit hat; Er fragt, ob...; Konjunktiv II se as formas coincidem.",
+      "Trabalho: Besprechung, Tagesordnung, e-mail com bezüglich e anbei, telefone com verbinden e zurückrufen, apresentação."
+     ],
+     "q": "Conta-me um dia de trabalho (real ou inventado) com deshalb, obwohl, damit e uma frase em discurso indireto.",
+     "c": "Escreve um e-mail curto a uma colega a relatar o que o chefe disse na reunião, com dois conectores e Konjunktiv I."
+    },
+    "pt_BR": {
+     "t": "Revisão: conectores e trabalho",
+     "g": "Revisar conectores, discurso indireto e linguagem de trabalho numa tarefa prática.",
+     "p": [
+      "Conectores: deshalb, trotzdem (verbo em 2º); obwohl, während, damit, bevor (verbo no final); um... zu, ohne... zu, statt... zu.",
+      "Discurso indireto: Sie sagt, sie habe Zeit / dass sie Zeit hat; Er fragt, ob...; Konjunktiv II se as formas coincidem.",
+      "Trabalho: Besprechung, Tagesordnung, e-mail com bezüglich e anbei, telefone com verbinden e zurückrufen, apresentação."
+     ],
+     "q": "Me conte um dia de trabalho (real ou inventado) com deshalb, obwohl, damit e uma frase em discurso indireto.",
+     "c": "Escreva um e-mail curto para uma colega relatando o que o chefe disse na reunião, com dois conectores e Konjunktiv I."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "deshalb",
+      "ex": "Der Kunde kommt später, deshalb verschieben wir das Meeting."
+     },
+     {
+      "w": "obwohl",
+      "ex": "Obwohl viel zu tun war, sind wir pünktlich fertig geworden."
+     },
+     {
+      "w": "damit",
+      "ex": "Ich schicke die Datei heute, damit du sie lesen kannst."
+     },
+     {
+      "w": "er sagte, er sei",
+      "ex": "Der Chef sagte, er sei mit dem Ergebnis zufrieden."
+     },
+     {
+      "w": "fragen, ob",
+      "ex": "Sie fragt, ob wir die Präsentation morgen halten können."
+     },
+     {
+      "w": "anbei",
+      "ex": "Anbei findest du das Protokoll der Besprechung."
+     }
+    ],
+    "gram": "Wortstellung im Überblick: Adverb-Konnektor (Verb auf 2), Subjunktion (Verb am Ende), Infinitivsatz mit zu am Ende."
+   }
+  },
+  {
+   "d": 219,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Education systems",
+     "g": "Talk about school and university: Grundschule, Gymnasium, Abitur, Hochschule, Studium.",
+     "p": [
+      "In Germany children usually attend the Grundschule for four years, then move to a secondary school such as the Gymnasium.",
+      "The Abitur is the final exam of the Gymnasium and opens the way to a Hochschule or Universität (Matura in Austria and Switzerland).",
+      "University words: das Studium, studieren, das Semester, der Studiengang, der Abschluss (Bachelor, Master)."
+     ],
+     "q": "Tell me about your school path: Ich bin... in die Grundschule gegangen, dann... Did you or would you like to study?",
+     "c": "Write five sentences about your education using die Grundschule, der Abschluss, studieren, das Fach and das Semester."
+    },
+    "de": {
+     "t": "Bildungssysteme",
+     "g": "Du sprichst über Schule und Hochschule: Grundschule, Gymnasium, Abitur, Hochschule, Studium.",
+     "p": [
+      "In Deutschland gehen Kinder meist vier Jahre in die Grundschule und wechseln dann auf eine weiterführende Schule wie das Gymnasium.",
+      "Das Abitur ist der Abschluss am Gymnasium und öffnet den Weg zur Hochschule (in Österreich und der Schweiz: Matura).",
+      "Rund ums Studium: das Studium, studieren, das Semester, der Studiengang, der Abschluss (Bachelor, Master)."
+     ],
+     "q": "Erzähl von deinem Bildungsweg: Ich bin... in die Grundschule gegangen, dann... Hast du studiert oder möchtest du studieren?",
+     "c": "Schreib fünf Sätze über deine Ausbildung mit die Grundschule, der Abschluss, studieren, das Fach und das Semester."
+    },
+    "es": {
+     "t": "Sistemas educativos",
+     "g": "Habla de escuela y universidad: Grundschule, Gymnasium, Abitur, Hochschule, Studium.",
+     "p": [
+      "En Alemania los niños suelen ir cuatro años a la Grundschule y luego pasan a una secundaria como el Gymnasium.",
+      "El Abitur es el examen final del Gymnasium y abre la puerta a la Hochschule (en Austria y Suiza se llama Matura).",
+      "Universidad: das Studium, studieren, das Semester, der Studiengang (carrera), der Abschluss (título)."
+     ],
+     "q": "Cuéntame tu camino escolar: Ich bin... in die Grundschule gegangen, dann... ¿Estudiaste o te gustaría estudiar?",
+     "c": "Escribe cinco frases sobre tu formación con die Grundschule, der Abschluss, studieren, das Fach y das Semester."
+    },
+    "fr": {
+     "t": "Les systèmes éducatifs",
+     "g": "Parler de l'école et des études : Grundschule, Gymnasium, Abitur, Hochschule, Studium.",
+     "p": [
+      "En Allemagne, les enfants vont en général quatre ans à la Grundschule, puis dans un établissement secondaire comme le Gymnasium.",
+      "L'Abitur est l'examen final du Gymnasium et ouvre l'accès à la Hochschule (en Autriche et en Suisse : la Matura).",
+      "Les études : das Studium, studieren, das Semester, der Studiengang (filière), der Abschluss (diplôme)."
+     ],
+     "q": "Raconte ton parcours scolaire : Ich bin... in die Grundschule gegangen, dann... As-tu fait des études ou aimerais-tu en faire ?",
+     "c": "Écris cinq phrases sur ta formation avec die Grundschule, der Abschluss, studieren, das Fach et das Semester."
+    },
+    "it": {
+     "t": "I sistemi scolastici",
+     "g": "Parli di scuola e università: Grundschule, Gymnasium, Abitur, Hochschule, Studium.",
+     "p": [
+      "In Germania i bambini di solito frequentano la Grundschule per quattro anni e poi una scuola secondaria come il Gymnasium.",
+      "L'Abitur è l'esame finale del Gymnasium e apre la strada alla Hochschule (in Austria e Svizzera si chiama Matura).",
+      "Università: das Studium, studieren, das Semester, der Studiengang (corso di laurea), der Abschluss (titolo)."
+     ],
+     "q": "Raccontami il tuo percorso: Ich bin... in die Grundschule gegangen, dann... Hai studiato o ti piacerebbe studiare?",
+     "c": "Scrivi cinque frasi sulla tua formazione con die Grundschule, der Abschluss, studieren, das Fach e das Semester."
+    },
+    "pt": {
+     "t": "Sistemas de ensino",
+     "g": "Falar da escola e da universidade: Grundschule, Gymnasium, Abitur, Hochschule, Studium.",
+     "p": [
+      "Na Alemanha as crianças costumam andar quatro anos na Grundschule e depois passam para uma secundária como o Gymnasium.",
+      "O Abitur é o exame final do Gymnasium e abre o caminho para a Hochschule (na Áustria e na Suíça chama-se Matura).",
+      "Universidade: das Studium, studieren, das Semester, der Studiengang (curso), der Abschluss (diploma)."
+     ],
+     "q": "Conta-me o teu percurso escolar: Ich bin... in die Grundschule gegangen, dann... Estudaste ou gostavas de estudar?",
+     "c": "Escreve cinco frases sobre a tua formação com die Grundschule, der Abschluss, studieren, das Fach e das Semester."
+    },
+    "pt_BR": {
+     "t": "Sistemas de ensino",
+     "g": "Falar da escola e da faculdade: Grundschule, Gymnasium, Abitur, Hochschule, Studium.",
+     "p": [
+      "Na Alemanha as crianças costumam ficar quatro anos na Grundschule e depois passam para uma escola como o Gymnasium.",
+      "O Abitur é a prova final do Gymnasium e abre o caminho para a Hochschule (na Áustria e na Suíça se chama Matura).",
+      "Faculdade: das Studium, studieren, das Semester, der Studiengang (curso), der Abschluss (diploma)."
+     ],
+     "q": "Me conte sua trajetória escolar: Ich bin... in die Grundschule gegangen, dann... Você fez faculdade ou gostaria de fazer?",
+     "c": "Escreva cinco frases sobre sua formação com die Grundschule, der Abschluss, studieren, das Fach e das Semester."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Grundschule",
+      "ex": "Meine Tochter geht in die zweite Klasse der Grundschule."
+     },
+     {
+      "w": "das Gymnasium",
+      "ex": "Nach der Grundschule wechselte er aufs Gymnasium."
+     },
+     {
+      "w": "das Abitur",
+      "ex": "Sie hat letztes Jahr das Abitur gemacht."
+     },
+     {
+      "w": "die Hochschule",
+      "ex": "Er studiert an einer Hochschule in Köln."
+     },
+     {
+      "w": "das Studium",
+      "ex": "Das Studium dauert sechs Semester."
+     },
+     {
+      "w": "das Fach",
+      "ex": "Mein Lieblingsfach war immer Geografie."
+     }
+    ],
+    "gram": "Schule mit Präpositionen: in die Grundschule gehen, aufs Gymnasium wechseln, an der Uni studieren, das Abitur machen."
+   }
+  },
+  {
+   "d": 220,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Learning languages",
+     "g": "Talk about how you learn: methods, motivation and progress.",
+     "p": [
+      "Methods: Vokabeln wiederholen, Podcasts hören, mit Muttersprachlern sprechen, Serien mit Untertiteln schauen.",
+      "Motivation: Ich lerne Deutsch, weil... / um... zu... Mir macht es Spaß, ... Es motiviert mich, wenn...",
+      "Progress: Ich habe Fortschritte gemacht. Mir fällt... leicht/schwer. Ich verstehe immer mehr. You are at B1: wunderbar!"
+     ],
+     "q": "What helps you most to learn German? Tell me one method, your motivation and one thing that fällt dir noch schwer.",
+     "c": "Write a learning plan for next week: three methods, when you use them and one goal, with um... zu."
+    },
+    "de": {
+     "t": "Sprachen lernen",
+     "g": "Du sprichst über dein Lernen: Methoden, Motivation und Fortschritte.",
+     "p": [
+      "Methoden: Vokabeln wiederholen, Podcasts hören, mit Muttersprachlern sprechen, Serien mit Untertiteln schauen.",
+      "Motivation: Ich lerne Deutsch, weil... / um... zu... Mir macht es Spaß, ... Es motiviert mich, wenn...",
+      "Fortschritte: Ich habe Fortschritte gemacht. Mir fällt... leicht/schwer. Ich verstehe immer mehr. Du bist auf B1: toll!"
+     ],
+     "q": "Was hilft dir am meisten beim Deutschlernen? Nenn eine Methode, deine Motivation und etwas, das dir noch schwerfällt.",
+     "c": "Schreib einen Lernplan für nächste Woche: drei Methoden, wann du sie nutzt, und ein Ziel mit um... zu."
+    },
+    "es": {
+     "t": "Aprender idiomas",
+     "g": "Habla de cómo aprendes: métodos, motivación y progresos.",
+     "p": [
+      "Métodos: Vokabeln wiederholen, Podcasts hören, mit Muttersprachlern sprechen, Serien mit Untertiteln schauen.",
+      "Motivación: Ich lerne Deutsch, weil... / um... zu... Mir macht es Spaß, ... Es motiviert mich, wenn...",
+      "Progresos: Ich habe Fortschritte gemacht. Mir fällt... leicht/schwer (me resulta fácil/difícil). Ya estás en B1: ¡genial!"
+     ],
+     "q": "¿Qué te ayuda más a aprender alemán? Dime un método, tu motivación y algo que todavía fällt dir schwer.",
+     "c": "Escribe un plan de estudio para la próxima semana: tres métodos, cuándo los usas y un objetivo con um... zu."
+    },
+    "fr": {
+     "t": "Apprendre les langues",
+     "g": "Parler de ta façon d'apprendre : méthodes, motivation et progrès.",
+     "p": [
+      "Méthodes : Vokabeln wiederholen, Podcasts hören, mit Muttersprachlern sprechen, Serien mit Untertiteln schauen.",
+      "Motivation : Ich lerne Deutsch, weil... / um... zu... Mir macht es Spaß, ... Es motiviert mich, wenn...",
+      "Progrès : Ich habe Fortschritte gemacht. Mir fällt... leicht/schwer (c'est facile/difficile pour moi). Tu es au B1 : bravo !"
+     ],
+     "q": "Qu'est-ce qui t'aide le plus à apprendre l'allemand ? Une méthode, ta motivation et une chose qui fällt dir noch schwer.",
+     "c": "Écris un plan d'apprentissage pour la semaine prochaine : trois méthodes, quand, et un objectif avec um... zu."
+    },
+    "it": {
+     "t": "Imparare le lingue",
+     "g": "Parli di come impari: metodi, motivazione e progressi.",
+     "p": [
+      "Metodi: Vokabeln wiederholen, Podcasts hören, mit Muttersprachlern sprechen, Serien mit Untertiteln schauen.",
+      "Motivazione: Ich lerne Deutsch, weil... / um... zu... Mir macht es Spaß, ... Es motiviert mich, wenn...",
+      "Progressi: Ich habe Fortschritte gemacht. Mir fällt... leicht/schwer (mi riesce facile/difficile). Sei al B1: grande!"
+     ],
+     "q": "Che cosa ti aiuta di più a imparare il tedesco? Dimmi un metodo, la tua motivazione e una cosa che fällt dir noch schwer.",
+     "c": "Scrivi un piano di studio per la prossima settimana: tre metodi, quando li usi e un obiettivo con um... zu."
+    },
+    "pt": {
+     "t": "Aprender línguas",
+     "g": "Falar de como aprendes: métodos, motivação e progressos.",
+     "p": [
+      "Métodos: Vokabeln wiederholen, Podcasts hören, mit Muttersprachlern sprechen, Serien mit Untertiteln schauen.",
+      "Motivação: Ich lerne Deutsch, weil... / um... zu... Mir macht es Spaß, ... Es motiviert mich, wenn...",
+      "Progressos: Ich habe Fortschritte gemacht. Mir fällt... leicht/schwer (é fácil/difícil para mim). Já estás no B1: ótimo!"
+     ],
+     "q": "O que te ajuda mais a aprender alemão? Diz-me um método, a tua motivação e uma coisa que ainda fällt dir schwer.",
+     "c": "Escreve um plano de estudo para a próxima semana: três métodos, quando os usas e um objetivo com um... zu."
+    },
+    "pt_BR": {
+     "t": "Aprender idiomas",
+     "g": "Falar de como você aprende: métodos, motivação e progresso.",
+     "p": [
+      "Métodos: Vokabeln wiederholen, Podcasts hören, mit Muttersprachlern sprechen, Serien mit Untertiteln schauen.",
+      "Motivação: Ich lerne Deutsch, weil... / um... zu... Mir macht es Spaß, ... Es motiviert mich, wenn...",
+      "Progresso: Ich habe Fortschritte gemacht. Mir fällt... leicht/schwer (é fácil/difícil para mim). Você já está no B1: ótimo!"
+     ],
+     "q": "O que mais te ajuda a aprender alemão? Me diga um método, sua motivação e algo que ainda fällt dir schwer.",
+     "c": "Escreva um plano de estudo para a próxima semana: três métodos, quando você usa cada um e uma meta com um... zu."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Vokabeln wiederholen",
+      "ex": "Jeden Abend wiederhole ich zehn Vokabeln."
+     },
+     {
+      "w": "der Muttersprachler",
+      "ex": "Ich spreche einmal pro Woche mit einer Muttersprachlerin."
+     },
+     {
+      "w": "die Untertitel",
+      "ex": "Ich schaue Serien mit deutschen Untertiteln."
+     },
+     {
+      "w": "Fortschritte machen",
+      "ex": "In den letzten Monaten habe ich große Fortschritte gemacht."
+     },
+     {
+      "w": "leichtfallen / schwerfallen",
+      "ex": "Die Aussprache fällt mir leicht, die Artikel fallen mir schwer."
+     },
+     {
+      "w": "die Motivation",
+      "ex": "Meine Motivation ist eine Reise nach Wien."
+     }
+    ],
+    "gram": "Mir fällt etwas leicht/schwer: Person im Dativ, Sache als Subjekt (Die Grammatik fällt mir schwer)."
+   }
+  }
+ ]
+}

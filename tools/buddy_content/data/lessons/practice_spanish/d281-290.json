@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 281,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Imperfect subjunctive in depth",
+     "g": "Use the imperfect subjunctive after verbs in the past.",
+     "p": [
+      "Form: take the ellos preterite, drop -ron, add -ra: hablaron → hablara, tuvieron → tuviera.",
+      "After a past main verb, the subordinate goes to the imperfect subjunctive: quería que vinieras.",
+      "Common triggers: me pidió que esperara, nos dijo que llegáramos pronto, era normal que..."
+     ],
+     "q": "What did your parents want you to do when you were a child? Start with querían que yo...",
+     "c": "Write four sentences about the past with quería que, me pidió que, esperaba que and era raro que."
+    },
+    "de": {
+     "t": "Subjuntivo Imperfekt im Detail",
+     "g": "Benutze den Subjuntivo Imperfekt nach Verben in der Vergangenheit.",
+     "p": [
+      "Bildung: ellos-Form im Indefinido, -ron weg, -ra dazu: hablaron → hablara, tuvieron → tuviera.",
+      "Nach einem Hauptverb in der Vergangenheit steht der Nebensatz im Subjuntivo Imperfekt: quería que vinieras.",
+      "Häufige Auslöser: me pidió que esperara, nos dijo que llegáramos pronto, era normal que..."
+     ],
+     "q": "Was wollten deine Eltern, dass du als Kind tust? Beginne mit querían que yo...",
+     "c": "Schreib vier Sätze über die Vergangenheit mit quería que, me pidió que, esperaba que, era raro que."
+    },
+    "es": {
+     "t": "El imperfecto de subjuntivo a fondo",
+     "g": "Usa el imperfecto de subjuntivo después de verbos en pasado.",
+     "p": [
+      "Forma: toma la 3.ª persona plural del indefinido, quita -ron y añade -ra: hablaron → hablara, tuvieron → tuviera.",
+      "Si el verbo principal está en pasado, la subordinada va en imperfecto de subjuntivo: quería que vinieras.",
+      "Activadores frecuentes: me pidió que esperara, nos dijo que llegáramos pronto, era normal que..."
+     ],
+     "q": "¿Qué querían tus padres que hicieras de pequeño? Empieza con querían que yo...",
+     "c": "Escribe cuatro frases en pasado con quería que, me pidió que, esperaba que y era raro que."
+    },
+    "fr": {
+     "t": "Le subjonctif imparfait en profondeur",
+     "g": "Utilise le subjonctif imparfait après des verbes au passé.",
+     "p": [
+      "Forme : 3e pers. du pluriel du passé simple, enlève -ron, ajoute -ra : hablaron → hablara, tuvieron → tuviera.",
+      "Si le verbe principal est au passé, la subordonnée passe au subjonctif imparfait : quería que vinieras.",
+      "Déclencheurs fréquents : me pidió que esperara, nos dijo que llegáramos pronto, era normal que..."
+     ],
+     "q": "Que voulaient tes parents que tu fasses enfant ? Commence par querían que yo...",
+     "c": "Écris quatre phrases au passé avec quería que, me pidió que, esperaba que et era raro que."
+    },
+    "it": {
+     "t": "Il congiuntivo imperfetto a fondo",
+     "g": "Usa il congiuntivo imperfetto dopo verbi al passato.",
+     "p": [
+      "Forma: 3ª plurale del passato remoto, togli -ron e aggiungi -ra: hablaron → hablara, tuvieron → tuviera.",
+      "Se il verbo principale è al passato, la subordinata va al congiuntivo imperfetto: quería que vinieras.",
+      "Attivatori frequenti: me pidió que esperara, nos dijo que llegáramos pronto, era normal que..."
+     ],
+     "q": "Cosa volevano i tuoi genitori che facessi da piccolo? Inizia con querían que yo...",
+     "c": "Scrivi quattro frasi al passato con quería que, me pidió que, esperaba que ed era raro que."
+    },
+    "pt": {
+     "t": "O imperfeito do conjuntivo a fundo",
+     "g": "Usa o imperfeito do conjuntivo depois de verbos no passado.",
+     "p": [
+      "Forma: 3.ª pessoa do plural do pretérito, tira -ron e junta -ra: hablaron → hablara, tuvieron → tuviera.",
+      "Se o verbo principal está no passado, a subordinada vai para o imperfeito do conjuntivo: quería que vinieras.",
+      "Ativadores frequentes: me pidió que esperara, nos dijo que llegáramos pronto, era normal que..."
+     ],
+     "q": "O que queriam os teus pais que fizesses em pequeno? Começa com querían que yo...",
+     "c": "Escreve quatro frases no passado com quería que, me pidió que, esperaba que e era raro que."
+    },
+    "pt_BR": {
+     "t": "O imperfeito do subjuntivo a fundo",
+     "g": "Use o imperfeito do subjuntivo depois de verbos no passado.",
+     "p": [
+      "Forma: 3ª pessoa do plural do pretérito, tire -ron e acrescente -ra: hablaron → hablara, tuvieron → tuviera.",
+      "Se o verbo principal está no passado, a subordinada vai para o imperfeito do subjuntivo: quería que vinieras.",
+      "Gatilhos frequentes: me pidió que esperara, nos dijo que llegáramos pronto, era normal que..."
+     ],
+     "q": "O que seus pais queriam que você fizesse quando criança? Comece com querían que yo...",
+     "c": "Escreva quatro frases no passado com quería que, me pidió que, esperaba que e era raro que."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "quería que vinieras",
+      "ex": "Quería que vinieras a la cena del sábado."
+     },
+     {
+      "w": "me pidió que esperara",
+      "ex": "El médico me pidió que esperara un momento."
+     },
+     {
+      "w": "nos dijo que",
+      "ex": "La profesora nos dijo que leyéramos el capítulo."
+     },
+     {
+      "w": "esperaba que",
+      "ex": "Esperaba que hiciera mejor tiempo."
+     },
+     {
+      "w": "era normal que",
+      "ex": "Era normal que los niños jugaran en la calle."
+     },
+     {
+      "w": "antes de que",
+      "ex": "Salimos antes de que empezara a llover."
+     }
+    ],
+    "gram": "Concordancia: verbo principal en pasado → imperfecto de subjuntivo (quería que vinieras). Forma: ellos indefinido -ron → -ra/-se."
+   }
+  },
+  {
+   "d": 282,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Pluperfect subjunctive: hubiera hecho",
+     "g": "Form the pluperfect subjunctive to talk about a past before the past.",
+     "p": [
+      "Form: hubiera / hubieras / hubiera / hubiéramos / hubierais / hubieran + past participle.",
+      "Use it after a past trigger for an earlier action: me alegré de que hubieras venido.",
+      "Hubiese is an equally correct alternative: hubiese sabido = hubiera sabido."
+     ],
+     "q": "Think of a past surprise. Complete: me sorprendió que alguien hubiera...",
+     "c": "Conjugate hacer, ver and decir in the pluperfect subjunctive and use each in a sentence."
+    },
+    "de": {
+     "t": "Subjuntivo Plusquamperfekt: hubiera hecho",
+     "g": "Bilde den Subjuntivo Plusquamperfekt für eine Vorvergangenheit.",
+     "p": [
+      "Bildung: hubiera / hubieras / hubiera / hubiéramos / hubierais / hubieran + Partizip.",
+      "Nach einem Auslöser in der Vergangenheit für eine frühere Handlung: me alegré de que hubieras venido.",
+      "Hubiese ist eine gleich korrekte Variante: hubiese sabido = hubiera sabido."
+     ],
+     "q": "Denk an eine Überraschung von früher. Ergänze: me sorprendió que alguien hubiera...",
+     "c": "Konjugiere hacer, ver und decir im Subjuntivo Plusquamperfekt und bilde je einen Satz."
+    },
+    "es": {
+     "t": "Pluscuamperfecto de subjuntivo: hubiera hecho",
+     "g": "Forma el pluscuamperfecto de subjuntivo para un pasado anterior a otro.",
+     "p": [
+      "Forma: hubiera / hubieras / hubiera / hubiéramos / hubierais / hubieran + participio.",
+      "Se usa tras un activador en pasado para una acción anterior: me alegré de que hubieras venido.",
+      "Hubiese es una alternativa igual de correcta: hubiese sabido = hubiera sabido."
+     ],
+     "q": "Piensa en una sorpresa del pasado. Completa: me sorprendió que alguien hubiera...",
+     "c": "Conjuga hacer, ver y decir en pluscuamperfecto de subjuntivo y usa cada uno en una frase."
+    },
+    "fr": {
+     "t": "Subjonctif plus-que-parfait : hubiera hecho",
+     "g": "Forme le subjonctif plus-que-parfait pour un passé antérieur.",
+     "p": [
+      "Forme : hubiera / hubieras / hubiera / hubiéramos / hubierais / hubieran + participe passé.",
+      "Après un déclencheur au passé pour une action antérieure : me alegré de que hubieras venido.",
+      "Hubiese est une variante tout aussi correcte : hubiese sabido = hubiera sabido."
+     ],
+     "q": "Pense à une surprise passée. Complète : me sorprendió que alguien hubiera...",
+     "c": "Conjugue hacer, ver et decir au subjonctif plus-que-parfait et fais une phrase avec chacun."
+    },
+    "it": {
+     "t": "Congiuntivo trapassato: hubiera hecho",
+     "g": "Forma il congiuntivo trapassato per un passato anteriore.",
+     "p": [
+      "Forma: hubiera / hubieras / hubiera / hubiéramos / hubierais / hubieran + participio.",
+      "Si usa dopo un attivatore al passato per un'azione precedente: me alegré de que hubieras venido.",
+      "Hubiese è un'alternativa altrettanto corretta: hubiese sabido = hubiera sabido."
+     ],
+     "q": "Pensa a una sorpresa del passato. Completa: me sorprendió que alguien hubiera...",
+     "c": "Coniuga hacer, ver e decir al congiuntivo trapassato e usa ognuno in una frase."
+    },
+    "pt": {
+     "t": "Mais-que-perfeito do conjuntivo: hubiera hecho",
+     "g": "Forma o mais-que-perfeito do conjuntivo para um passado anterior.",
+     "p": [
+      "Forma: hubiera / hubieras / hubiera / hubiéramos / hubierais / hubieran + particípio.",
+      "Usa-se depois de um ativador no passado para uma ação anterior: me alegré de que hubieras venido.",
+      "Hubiese é uma alternativa igualmente correta: hubiese sabido = hubiera sabido."
+     ],
+     "q": "Pensa numa surpresa do passado. Completa: me sorprendió que alguien hubiera...",
+     "c": "Conjuga hacer, ver e decir no mais-que-perfeito do conjuntivo e usa cada um numa frase."
+    },
+    "pt_BR": {
+     "t": "Mais-que-perfeito do subjuntivo: hubiera hecho",
+     "g": "Forme o mais-que-perfeito do subjuntivo para um passado anterior.",
+     "p": [
+      "Forma: hubiera / hubieras / hubiera / hubiéramos / hubierais / hubieran + particípio.",
+      "Usa-se depois de um gatilho no passado para uma ação anterior: me alegré de que hubieras venido.",
+      "Hubiese é uma alternativa igualmente correta: hubiese sabido = hubiera sabido."
+     ],
+     "q": "Pense numa surpresa do passado. Complete: me sorprendió que alguien hubiera...",
+     "c": "Conjugue hacer, ver e decir no mais-que-perfeito do subjuntivo e use cada um numa frase."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "hubiera sabido",
+      "ex": "No creía que ella lo hubiera sabido antes."
+     },
+     {
+      "w": "hubieras venido",
+      "ex": "Me alegré mucho de que hubieras venido."
+     },
+     {
+      "w": "hubiéramos hecho",
+      "ex": "Era una pena que no hubiéramos hecho fotos."
+     },
+     {
+      "w": "hubieran visto",
+      "ex": "Me extrañó que no lo hubieran visto."
+     },
+     {
+      "w": "hubiese dicho",
+      "ex": "No me molestó que lo hubiese dicho."
+     },
+     {
+      "w": "me sorprendió que",
+      "ex": "Me sorprendió que hubieras terminado tan pronto."
+     }
+    ],
+    "gram": "Pluscuamperfecto de subjuntivo: hubiera/hubiese + participio. Expresa una acción anterior a otra pasada tras un activador."
+   }
+  },
+  {
+   "d": 283,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Past unreal: si hubiera sabido",
+     "g": "Imagine a different past and its consequences.",
+     "p": [
+      "Structure: si + pluperfect subjunctive, conditional perfect: si hubiera sabido, habría venido.",
+      "Habría can also be hubiera in the main clause: si lo hubiera visto, te hubiera avisado.",
+      "Order can change: habríamos llegado antes si no hubiera habido tanto tráfico."
+     ],
+     "q": "If you had known Spanish as a child, what would have been different? Si hubiera sabido...",
+     "c": "Write three sentences imagining a different past with si hubiera... habría..."
+    },
+    "de": {
+     "t": "Irreale Vergangenheit: si hubiera sabido",
+     "g": "Stell dir eine andere Vergangenheit und ihre Folgen vor.",
+     "p": [
+      "Struktur: si + Subjuntivo Plusquamperfekt, Konditional II: si hubiera sabido, habría venido.",
+      "Statt habría geht im Hauptsatz auch hubiera: si lo hubiera visto, te hubiera avisado.",
+      "Die Reihenfolge ist frei: habríamos llegado antes si no hubiera habido tanto tráfico."
+     ],
+     "q": "Wenn du als Kind Spanisch gekonnt hättest, was wäre anders gewesen? Si hubiera sabido...",
+     "c": "Schreib drei Sätze über eine andere Vergangenheit mit si hubiera... habría..."
+    },
+    "es": {
+     "t": "Pasado irreal: si hubiera sabido",
+     "g": "Imagina un pasado distinto y sus consecuencias.",
+     "p": [
+      "Estructura: si + pluscuamperfecto de subjuntivo, condicional compuesto: si hubiera sabido, habría venido.",
+      "En la principal, habría también puede ser hubiera: si lo hubiera visto, te hubiera avisado.",
+      "El orden puede cambiar: habríamos llegado antes si no hubiera habido tanto tráfico."
+     ],
+     "q": "Si hubieras aprendido español de niño, ¿qué habría sido diferente? Si hubiera sabido...",
+     "c": "Escribe tres frases imaginando un pasado distinto con si hubiera... habría..."
+    },
+    "fr": {
+     "t": "Passé irréel : si hubiera sabido",
+     "g": "Imagine un passé différent et ses conséquences.",
+     "p": [
+      "Structure : si + subjonctif plus-que-parfait, conditionnel passé : si hubiera sabido, habría venido.",
+      "Dans la principale, habría peut aussi devenir hubiera : si lo hubiera visto, te hubiera avisado.",
+      "L'ordre peut changer : habríamos llegado antes si no hubiera habido tanto tráfico."
+     ],
+     "q": "Si tu avais parlé espagnol enfant, qu'est-ce qui aurait changé ? Si hubiera sabido...",
+     "c": "Écris trois phrases imaginant un autre passé avec si hubiera... habría..."
+    },
+    "it": {
+     "t": "Passato irreale: si hubiera sabido",
+     "g": "Immagina un passato diverso e le sue conseguenze.",
+     "p": [
+      "Struttura: si + congiuntivo trapassato, condizionale passato: si hubiera sabido, habría venido.",
+      "Nella principale habría può diventare hubiera: si lo hubiera visto, te hubiera avisado.",
+      "L'ordine può cambiare: habríamos llegado antes si no hubiera habido tanto tráfico."
+     ],
+     "q": "Se avessi parlato spagnolo da bambino, cosa sarebbe stato diverso? Si hubiera sabido...",
+     "c": "Scrivi tre frasi immaginando un passato diverso con si hubiera... habría..."
+    },
+    "pt": {
+     "t": "Passado irreal: si hubiera sabido",
+     "g": "Imagina um passado diferente e as suas consequências.",
+     "p": [
+      "Estrutura: si + mais-que-perfeito do conjuntivo, condicional composto: si hubiera sabido, habría venido.",
+      "Na principal, habría também pode ser hubiera: si lo hubiera visto, te hubiera avisado.",
+      "A ordem pode mudar: habríamos llegado antes si no hubiera habido tanto tráfico."
+     ],
+     "q": "Se tivesses aprendido espanhol em criança, o que teria sido diferente? Si hubiera sabido...",
+     "c": "Escreve três frases a imaginar um passado diferente com si hubiera... habría..."
+    },
+    "pt_BR": {
+     "t": "Passado irreal: si hubiera sabido",
+     "g": "Imagine um passado diferente e suas consequências.",
+     "p": [
+      "Estrutura: si + mais-que-perfeito do subjuntivo, futuro do pretérito composto: si hubiera sabido, habría venido.",
+      "Na principal, habría também pode ser hubiera: si lo hubiera visto, te hubiera avisado.",
+      "A ordem pode mudar: habríamos llegado antes si no hubiera habido tanto tráfico."
+     ],
+     "q": "Se você tivesse aprendido espanhol na infância, o que teria sido diferente? Si hubiera sabido...",
+     "c": "Escreva três frases imaginando um passado diferente com si hubiera... habría..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "si hubiera sabido",
+      "ex": "Si hubiera sabido que venías, habría hecho una tarta."
+     },
+     {
+      "w": "habría venido",
+      "ex": "Habría venido antes, pero perdí el autobús."
+     },
+     {
+      "w": "te hubiera avisado",
+      "ex": "Si lo hubiera visto, te hubiera avisado."
+     },
+     {
+      "w": "habríamos llegado",
+      "ex": "Habríamos llegado a tiempo sin tanto tráfico."
+     },
+     {
+      "w": "si no hubiera",
+      "ex": "Si no hubiera llovido, habríamos ido a la playa."
+     },
+     {
+      "w": "de haberlo sabido",
+      "ex": "De haberlo sabido, habría traído un paraguas."
+     }
+    ],
+    "gram": "Si + pluscuamperfecto de subjuntivo + condicional compuesto (o hubiera + participio). Alternativa: de + infinitivo compuesto."
+   }
+  },
+  {
+   "d": 284,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Mixed conditionals",
+     "g": "Connect a different past with a present result, and the other way round.",
+     "p": [
+      "Past condition, present result: si hubiera estudiado medicina, ahora sería médico.",
+      "Present condition, past result: si no fuera tan tímido, habría hablado con ella en la fiesta.",
+      "Use time words to make the link clear: ahora, hoy, todavía, en aquel momento."
+     ],
+     "q": "If you had chosen a different job, what would you be doing now? Si hubiera elegido..., ahora...",
+     "c": "Write two mixed conditionals about your own life, one in each direction."
+    },
+    "de": {
+     "t": "Gemischte Bedingungssätze",
+     "g": "Verbinde eine andere Vergangenheit mit einer Folge in der Gegenwart und umgekehrt.",
+     "p": [
+      "Bedingung Vergangenheit, Folge Gegenwart: si hubiera estudiado medicina, ahora sería médico.",
+      "Bedingung Gegenwart, Folge Vergangenheit: si no fuera tan tímido, habría hablado con ella en la fiesta.",
+      "Zeitwörter machen den Bezug klar: ahora, hoy, todavía, en aquel momento."
+     ],
+     "q": "Wenn du einen anderen Beruf gewählt hättest, was würdest du jetzt tun? Si hubiera elegido..., ahora...",
+     "c": "Schreib zwei gemischte Bedingungssätze über dein Leben, in beide Richtungen."
+    },
+    "es": {
+     "t": "Condicionales mixtas",
+     "g": "Une un pasado distinto con un resultado presente, y al revés.",
+     "p": [
+      "Condición pasada, resultado presente: si hubiera estudiado medicina, ahora sería médico.",
+      "Condición presente, resultado pasado: si no fuera tan tímido, habría hablado con ella en la fiesta.",
+      "Usa marcadores temporales para aclarar: ahora, hoy, todavía, en aquel momento."
+     ],
+     "q": "Si hubieras elegido otra profesión, ¿qué estarías haciendo ahora? Si hubiera elegido..., ahora...",
+     "c": "Escribe dos condicionales mixtas sobre tu vida, una en cada dirección."
+    },
+    "fr": {
+     "t": "Conditionnelles mixtes",
+     "g": "Relie un passé différent à un résultat présent, et inversement.",
+     "p": [
+      "Condition passée, résultat présent : si hubiera estudiado medicina, ahora sería médico.",
+      "Condition présente, résultat passé : si no fuera tan tímido, habría hablado con ella en la fiesta.",
+      "Les mots de temps clarifient le lien : ahora, hoy, todavía, en aquel momento."
+     ],
+     "q": "Si tu avais choisi un autre métier, que ferais-tu maintenant ? Si hubiera elegido..., ahora...",
+     "c": "Écris deux conditionnelles mixtes sur ta vie, une dans chaque sens."
+    },
+    "it": {
+     "t": "Periodi ipotetici misti",
+     "g": "Collega un passato diverso a un risultato presente, e viceversa.",
+     "p": [
+      "Condizione passata, risultato presente: si hubiera estudiado medicina, ahora sería médico.",
+      "Condizione presente, risultato passato: si no fuera tan tímido, habría hablado con ella en la fiesta.",
+      "Usa parole di tempo per chiarire il legame: ahora, hoy, todavía, en aquel momento."
+     ],
+     "q": "Se avessi scelto un altro lavoro, cosa staresti facendo ora? Si hubiera elegido..., ahora...",
+     "c": "Scrivi due periodi ipotetici misti sulla tua vita, uno per direzione."
+    },
+    "pt": {
+     "t": "Condicionais mistas",
+     "g": "Liga um passado diferente a um resultado presente, e vice-versa.",
+     "p": [
+      "Condição passada, resultado presente: si hubiera estudiado medicina, ahora sería médico.",
+      "Condição presente, resultado passado: si no fuera tan tímido, habría hablado con ella en la fiesta.",
+      "Usa marcadores de tempo para clarificar: ahora, hoy, todavía, en aquel momento."
+     ],
+     "q": "Se tivesses escolhido outra profissão, o que estarias a fazer agora? Si hubiera elegido..., ahora...",
+     "c": "Escreve duas condicionais mistas sobre a tua vida, uma em cada sentido."
+    },
+    "pt_BR": {
+     "t": "Condicionais mistas",
+     "g": "Ligue um passado diferente a um resultado presente, e vice-versa.",
+     "p": [
+      "Condição passada, resultado presente: si hubiera estudiado medicina, ahora sería médico.",
+      "Condição presente, resultado passado: si no fuera tan tímido, habría hablado con ella en la fiesta.",
+      "Use marcadores de tempo para deixar claro: ahora, hoy, todavía, en aquel momento."
+     ],
+     "q": "Se você tivesse escolhido outra profissão, o que estaria fazendo agora? Si hubiera elegido..., ahora...",
+     "c": "Escreva duas condicionais mistas sobre sua vida, uma em cada direção."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "si hubiera estudiado",
+      "ex": "Si hubiera estudiado más, ahora hablaría mejor."
+     },
+     {
+      "w": "ahora sería",
+      "ex": "Si me hubiera mudado, ahora sería vecino tuyo."
+     },
+     {
+      "w": "si no fuera",
+      "ex": "Si no fuera tan despistado, no habría perdido las llaves."
+     },
+     {
+      "w": "habría hablado",
+      "ex": "Si fuera más valiente, habría hablado en la reunión."
+     },
+     {
+      "w": "ahora estaría",
+      "ex": "Si hubiera salido antes, ahora estaría en casa."
+     },
+     {
+      "w": "en aquel momento",
+      "ex": "En aquel momento no lo sabía, pero fue una buena decisión."
+     }
+    ],
+    "gram": "Mixtas: si + pluscuamperfecto de subjuntivo + condicional simple (ahora sería); si + imperfecto de subjuntivo + condicional compuesto."
+   }
+  },
+  {
+   "d": 285,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Regrets: ojalá hubiera",
+     "g": "Talk about past regrets kindly and naturally.",
+     "p": [
+      "Ojalá + pluperfect subjunctive for past wishes: ojalá hubiera viajado más.",
+      "Debería haber + participle: debería haber llamado, no debería haber dicho eso.",
+      "Other phrases: me arrepiento de no haber..., qué pena que no hubiéramos... Keep a positive turn: la próxima vez..."
+     ],
+     "q": "Is there something small you wish you had done differently? Use ojalá hubiera... and la próxima vez...",
+     "c": "Write two regrets and turn each into a plan: ojalá hubiera..., así que la próxima vez..."
+    },
+    "de": {
+     "t": "Bedauern: ojalá hubiera",
+     "g": "Sprich freundlich und natürlich über Dinge, die du bereust.",
+     "p": [
+      "Ojalá + Subjuntivo Plusquamperfekt für Wünsche an die Vergangenheit: ojalá hubiera viajado más.",
+      "Debería haber + Partizip: debería haber llamado, no debería haber dicho eso.",
+      "Weitere Sätze: me arrepiento de no haber..., qué pena que no hubiéramos... Positiv enden: la próxima vez..."
+     ],
+     "q": "Gibt es eine Kleinigkeit, die du anders gemacht hättest? Nutze ojalá hubiera... und la próxima vez...",
+     "c": "Schreib zwei Dinge, die du bereust, und mach daraus Pläne: ojalá hubiera..., así que la próxima vez..."
+    },
+    "es": {
+     "t": "Lamentos: ojalá hubiera",
+     "g": "Habla de lo que lamentas del pasado con naturalidad y buen ánimo.",
+     "p": [
+      "Ojalá + pluscuamperfecto de subjuntivo para deseos sobre el pasado: ojalá hubiera viajado más.",
+      "Debería haber + participio: debería haber llamado, no debería haber dicho eso.",
+      "Otras fórmulas: me arrepiento de no haber..., qué pena que no hubiéramos... Y en positivo: la próxima vez..."
+     ],
+     "q": "¿Hay algo pequeño que te gustaría haber hecho de otra forma? Usa ojalá hubiera... y la próxima vez...",
+     "c": "Escribe dos lamentos y conviértelos en planes: ojalá hubiera..., así que la próxima vez..."
+    },
+    "fr": {
+     "t": "Regrets : ojalá hubiera",
+     "g": "Parle de tes regrets avec naturel et bienveillance.",
+     "p": [
+      "Ojalá + subjonctif plus-que-parfait pour un souhait sur le passé : ojalá hubiera viajado más.",
+      "Debería haber + participe : debería haber llamado, no debería haber dicho eso.",
+      "Autres formules : me arrepiento de no haber..., qué pena que no hubiéramos... Et en positif : la próxima vez..."
+     ],
+     "q": "Y a-t-il une petite chose que tu aurais aimé faire autrement ? Utilise ojalá hubiera... et la próxima vez...",
+     "c": "Écris deux regrets et transforme-les en projets : ojalá hubiera..., así que la próxima vez..."
+    },
+    "it": {
+     "t": "Rimpianti: ojalá hubiera",
+     "g": "Parla dei rimpianti del passato con naturalezza e serenità.",
+     "p": [
+      "Ojalá + congiuntivo trapassato per desideri sul passato: ojalá hubiera viajado más.",
+      "Debería haber + participio: debería haber llamado, no debería haber dicho eso.",
+      "Altre formule: me arrepiento de no haber..., qué pena que no hubiéramos... E in positivo: la próxima vez..."
+     ],
+     "q": "C'è una piccola cosa che avresti voluto fare diversamente? Usa ojalá hubiera... e la próxima vez...",
+     "c": "Scrivi due rimpianti e trasformali in progetti: ojalá hubiera..., así que la próxima vez..."
+    },
+    "pt": {
+     "t": "Arrependimentos: ojalá hubiera",
+     "g": "Fala do que lamentas no passado com naturalidade e boa disposição.",
+     "p": [
+      "Ojalá + mais-que-perfeito do conjuntivo para desejos sobre o passado: ojalá hubiera viajado más.",
+      "Debería haber + particípio: debería haber llamado, no debería haber dicho eso.",
+      "Outras fórmulas: me arrepiento de no haber..., qué pena que no hubiéramos... E pela positiva: la próxima vez..."
+     ],
+     "q": "Há alguma coisa pequena que gostavas de ter feito de outra forma? Usa ojalá hubiera... e la próxima vez...",
+     "c": "Escreve dois arrependimentos e transforma-os em planos: ojalá hubiera..., así que la próxima vez..."
+    },
+    "pt_BR": {
+     "t": "Arrependimentos: ojalá hubiera",
+     "g": "Fale do que você lamenta no passado com naturalidade e bom humor.",
+     "p": [
+      "Ojalá + mais-que-perfeito do subjuntivo para desejos sobre o passado: ojalá hubiera viajado más.",
+      "Debería haber + particípio: debería haber llamado, no debería haber dicho eso.",
+      "Outras fórmulas: me arrepiento de no haber..., qué pena que no hubiéramos... E no positivo: la próxima vez..."
+     ],
+     "q": "Tem alguma coisinha que você gostaria de ter feito diferente? Use ojalá hubiera... e la próxima vez...",
+     "c": "Escreva dois arrependimentos e transforme em planos: ojalá hubiera..., así que la próxima vez..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ojalá hubiera",
+      "ex": "Ojalá hubiera aprendido a tocar la guitarra."
+     },
+     {
+      "w": "debería haber",
+      "ex": "Debería haber reservado antes las entradas."
+     },
+     {
+      "w": "arrepentirse de",
+      "ex": "Me arrepiento de no haber ido al concierto."
+     },
+     {
+      "w": "qué pena que",
+      "ex": "Qué pena que no hubiéramos coincidido en Madrid."
+     },
+     {
+      "w": "la próxima vez",
+      "ex": "La próxima vez saldré con más tiempo."
+     },
+     {
+      "w": "haber + participio",
+      "ex": "Me encantaría haber visto esa exposición."
+     }
+    ],
+    "gram": "Lamentos: ojalá + pluscuamperfecto de subjuntivo; debería haber + participio; arrepentirse de + infinitivo compuesto."
+   }
+  },
+  {
+   "d": 286,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Future perfect: habré terminado",
+     "g": "Say what will be finished before a point in the future.",
+     "p": [
+      "Form: habré / habrás / habrá / habremos / habréis / habrán + past participle.",
+      "Mark the deadline with para or antes de: para junio habré terminado el curso.",
+      "Great for goals: dentro de un año habré leído diez libros en español."
+     ],
+     "q": "What will you have achieved in Spanish by the end of next year? Para entonces habré...",
+     "c": "Write three goals with para + date + future perfect."
+    },
+    "de": {
+     "t": "Futur II: habré terminado",
+     "g": "Sag, was vor einem Zeitpunkt in der Zukunft abgeschlossen sein wird.",
+     "p": [
+      "Bildung: habré / habrás / habrá / habremos / habréis / habrán + Partizip.",
+      "Die Frist mit para oder antes de: para junio habré terminado el curso.",
+      "Ideal für Ziele: dentro de un año habré leído diez libros en español."
+     ],
+     "q": "Was wirst du bis Ende nächsten Jahres auf Spanisch erreicht haben? Para entonces habré...",
+     "c": "Schreib drei Ziele mit para + Datum + Futur II."
+    },
+    "es": {
+     "t": "Futuro perfecto: habré terminado",
+     "g": "Di qué estará terminado antes de un momento del futuro.",
+     "p": [
+      "Forma: habré / habrás / habrá / habremos / habréis / habrán + participio.",
+      "Marca el plazo con para o antes de: para junio habré terminado el curso.",
+      "Ideal para metas: dentro de un año habré leído diez libros en español."
+     ],
+     "q": "¿Qué habrás conseguido en español para finales del año que viene? Para entonces habré...",
+     "c": "Escribe tres metas con para + fecha + futuro perfecto."
+    },
+    "fr": {
+     "t": "Futur antérieur : habré terminado",
+     "g": "Dis ce qui sera terminé avant un moment futur.",
+     "p": [
+      "Forme : habré / habrás / habrá / habremos / habréis / habrán + participe passé.",
+      "Indique l'échéance avec para ou antes de : para junio habré terminado el curso.",
+      "Idéal pour les objectifs : dentro de un año habré leído diez libros en español."
+     ],
+     "q": "Qu'auras-tu accompli en espagnol d'ici la fin de l'année prochaine ? Para entonces habré...",
+     "c": "Écris trois objectifs avec para + date + futur antérieur."
+    },
+    "it": {
+     "t": "Futuro anteriore: habré terminado",
+     "g": "Di' cosa sarà finito prima di un momento futuro.",
+     "p": [
+      "Forma: habré / habrás / habrá / habremos / habréis / habrán + participio.",
+      "Indica la scadenza con para o antes de: para junio habré terminado el curso.",
+      "Perfetto per gli obiettivi: dentro de un año habré leído diez libros en español."
+     ],
+     "q": "Cosa avrai ottenuto in spagnolo entro la fine del prossimo anno? Para entonces habré...",
+     "c": "Scrivi tre obiettivi con para + data + futuro anteriore."
+    },
+    "pt": {
+     "t": "Futuro perfeito: habré terminado",
+     "g": "Diz o que estará terminado antes de um momento futuro.",
+     "p": [
+      "Forma: habré / habrás / habrá / habremos / habréis / habrán + particípio.",
+      "Marca o prazo com para ou antes de: para junio habré terminado el curso.",
+      "Ideal para metas: dentro de un año habré leído diez libros en español."
+     ],
+     "q": "O que terás conseguido em espanhol até ao fim do próximo ano? Para entonces habré...",
+     "c": "Escreve três metas com para + data + futuro perfeito."
+    },
+    "pt_BR": {
+     "t": "Futuro composto: habré terminado",
+     "g": "Diga o que estará concluído antes de um momento futuro.",
+     "p": [
+      "Forma: habré / habrás / habrá / habremos / habréis / habrán + particípio.",
+      "Marque o prazo com para ou antes de: para junio habré terminado el curso.",
+      "Ótimo para metas: dentro de un año habré leído diez libros en español."
+     ],
+     "q": "O que você terá conquistado em espanhol até o fim do ano que vem? Para entonces habré...",
+     "c": "Escreva três metas com para + data + futuro composto."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "habré terminado",
+      "ex": "Para junio habré terminado el curso."
+     },
+     {
+      "w": "habrás leído",
+      "ex": "Para el verano ya habrás leído la novela."
+     },
+     {
+      "w": "habremos llegado",
+      "ex": "A las nueve ya habremos llegado al hotel."
+     },
+     {
+      "w": "para entonces",
+      "ex": "Para entonces habré ahorrado lo suficiente."
+     },
+     {
+      "w": "dentro de un año",
+      "ex": "Dentro de un año habré mejorado mucho."
+     },
+     {
+      "w": "antes de",
+      "ex": "Antes de las diez habrán cerrado la tienda."
+     }
+    ],
+    "gram": "Futuro perfecto: haber en futuro (habré) + participio. Con para + fecha o antes de: acción acabada antes de un punto futuro."
+   }
+  },
+  {
+   "d": 287,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Future of probability: estará en casa",
+     "g": "Use the future tense to guess about the present.",
+     "p": [
+      "In Spanish the simple future can express a guess about now: ¿Dónde está Ana? Estará en casa.",
+      "It means probably or I suppose: tendrá unos treinta años = probablemente tiene unos treinta.",
+      "Use it in questions to wonder aloud: ¿Qué hora será? ¿Quién será a estas horas?"
+     ],
+     "q": "Your friend is not answering the phone. Make three guesses with the future: estará...",
+     "c": "Look around you and make three guesses about people or things using the future of probability."
+    },
+    "de": {
+     "t": "Futur der Vermutung: estará en casa",
+     "g": "Benutze das Futur, um über die Gegenwart zu vermuten.",
+     "p": [
+      "Das einfache Futur kann eine Vermutung über jetzt ausdrücken: ¿Dónde está Ana? Estará en casa.",
+      "Es heißt wahrscheinlich: tendrá unos treinta años = probablemente tiene unos treinta.",
+      "In Fragen zum laut Überlegen: ¿Qué hora será? ¿Quién será a estas horas?"
+     ],
+     "q": "Ein Freund geht nicht ans Telefon. Stell drei Vermutungen im Futur an: estará...",
+     "c": "Schau dich um und stell drei Vermutungen über Menschen oder Dinge im Futur an."
+    },
+    "es": {
+     "t": "Futuro de probabilidad: estará en casa",
+     "g": "Usa el futuro para hacer suposiciones sobre el presente.",
+     "p": [
+      "El futuro simple puede expresar una suposición sobre ahora: ¿Dónde está Ana? Estará en casa.",
+      "Equivale a probablemente: tendrá unos treinta años = probablemente tiene unos treinta.",
+      "En preguntas sirve para pensar en voz alta: ¿Qué hora será? ¿Quién será a estas horas?"
+     ],
+     "q": "Un amigo no contesta al teléfono. Haz tres suposiciones con el futuro: estará...",
+     "c": "Mira a tu alrededor y haz tres suposiciones sobre personas o cosas con el futuro de probabilidad."
+    },
+    "fr": {
+     "t": "Futur de probabilité : estará en casa",
+     "g": "Utilise le futur pour faire des suppositions sur le présent.",
+     "p": [
+      "Le futur simple peut exprimer une supposition sur maintenant : ¿Dónde está Ana? Estará en casa.",
+      "Cela signifie sans doute : tendrá unos treinta años = probablemente tiene unos treinta.",
+      "En question, pour réfléchir à voix haute : ¿Qué hora será? ¿Quién será a estas horas?"
+     ],
+     "q": "Un ami ne répond pas au téléphone. Fais trois suppositions au futur : estará...",
+     "c": "Regarde autour de toi et fais trois suppositions sur des gens ou des choses au futur de probabilité."
+    },
+    "it": {
+     "t": "Futuro di probabilità: estará en casa",
+     "g": "Usa il futuro per fare supposizioni sul presente.",
+     "p": [
+      "Come in italiano, il futuro può esprimere una supposizione: ¿Dónde está Ana? Estará en casa.",
+      "Equivale a probabilmente: tendrá unos treinta años = probablemente tiene unos treinta.",
+      "Nelle domande serve per pensare ad alta voce: ¿Qué hora será? ¿Quién será a estas horas?"
+     ],
+     "q": "Un amico non risponde al telefono. Fai tre supposizioni al futuro: estará...",
+     "c": "Guardati intorno e fai tre supposizioni su persone o cose con il futuro di probabilità."
+    },
+    "pt": {
+     "t": "Futuro de probabilidade: estará en casa",
+     "g": "Usa o futuro para fazer suposições sobre o presente.",
+     "p": [
+      "O futuro simples pode exprimir uma suposição sobre agora: ¿Dónde está Ana? Estará en casa.",
+      "Equivale a provavelmente: tendrá unos treinta años = probablemente tiene unos treinta.",
+      "Em perguntas serve para pensar em voz alta: ¿Qué hora será? ¿Quién será a estas horas?"
+     ],
+     "q": "Um amigo não atende o telefone. Faz três suposições com o futuro: estará...",
+     "c": "Olha à tua volta e faz três suposições sobre pessoas ou coisas com o futuro de probabilidade."
+    },
+    "pt_BR": {
+     "t": "Futuro de probabilidade: estará en casa",
+     "g": "Use o futuro para fazer suposições sobre o presente.",
+     "p": [
+      "O futuro simples pode expressar uma suposição sobre agora: ¿Dónde está Ana? Estará en casa.",
+      "Equivale a provavelmente: tendrá unos treinta años = probablemente tiene unos treinta.",
+      "Em perguntas serve para pensar em voz alta: ¿Qué hora será? ¿Quién será a estas horas?"
+     ],
+     "q": "Um amigo não atende o telefone. Faça três suposições com o futuro: estará...",
+     "c": "Olhe ao redor e faça três suposições sobre pessoas ou coisas com o futuro de probabilidade."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "estará en casa",
+      "ex": "No contesta; estará en casa durmiendo."
+     },
+     {
+      "w": "tendrá",
+      "ex": "El profesor nuevo tendrá unos cuarenta años."
+     },
+     {
+      "w": "¿Qué hora será?",
+      "ex": "¿Qué hora será? Ya es de noche."
+     },
+     {
+      "w": "¿Quién será?",
+      "ex": "Llaman a la puerta. ¿Quién será a estas horas?"
+     },
+     {
+      "w": "habrá",
+      "ex": "Habrá unas cien personas en la plaza."
+     },
+     {
+      "w": "estará cansado",
+      "ex": "Ha trabajado todo el día; estará cansado."
+     }
+    ],
+    "gram": "Futuro simple de probabilidad = suposición sobre el presente: estará en casa (probablemente está en casa)."
+   }
+  },
+  {
+   "d": 288,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Conditional of probability",
+     "g": "Use the conditional to guess about the past.",
+     "p": [
+      "The conditional expresses a guess about a past moment: Serían las diez cuando llegó.",
+      "It means probably + imperfect/preterite: tendría veinte años = probablemente tenía veinte.",
+      "Compare: estará cansado (now) vs estaría cansado (then). Questions: ¿Quién llamaría anoche?"
+     ],
+     "q": "Someone left flowers at your door yesterday. Who would it have been? Use sería...",
+     "c": "Write three guesses about a past event using serían, tendría and estaría."
+    },
+    "de": {
+     "t": "Konditional der Vermutung",
+     "g": "Benutze den Konditional, um über die Vergangenheit zu vermuten.",
+     "p": [
+      "Der Konditional drückt eine Vermutung über einen vergangenen Moment aus: Serían las diez cuando llegó.",
+      "Er heißt wahrscheinlich + Vergangenheit: tendría veinte años = probablemente tenía veinte.",
+      "Vergleich: estará cansado (jetzt) vs estaría cansado (damals). Frage: ¿Quién llamaría anoche?"
+     ],
+     "q": "Gestern lagen Blumen vor deiner Tür. Wer war das wohl? Nutze sería...",
+     "c": "Schreib drei Vermutungen über ein vergangenes Ereignis mit serían, tendría und estaría."
+    },
+    "es": {
+     "t": "Condicional de probabilidad",
+     "g": "Usa el condicional para hacer suposiciones sobre el pasado.",
+     "p": [
+      "El condicional expresa una suposición sobre un momento pasado: Serían las diez cuando llegó.",
+      "Equivale a probablemente + pasado: tendría veinte años = probablemente tenía veinte.",
+      "Compara: estará cansado (ahora) y estaría cansado (entonces). Preguntas: ¿Quién llamaría anoche?"
+     ],
+     "q": "Ayer alguien dejó flores en tu puerta. ¿Quién sería? Usa sería...",
+     "c": "Escribe tres suposiciones sobre algo pasado con serían, tendría y estaría."
+    },
+    "fr": {
+     "t": "Conditionnel de probabilité",
+     "g": "Utilise le conditionnel pour faire des suppositions sur le passé.",
+     "p": [
+      "Le conditionnel exprime une supposition sur un moment passé : Serían las diez cuando llegó.",
+      "Cela veut dire sans doute + passé : tendría veinte años = probablemente tenía veinte.",
+      "Compare : estará cansado (maintenant) / estaría cansado (alors). Question : ¿Quién llamaría anoche?"
+     ],
+     "q": "Hier, quelqu'un a laissé des fleurs à ta porte. Qui était-ce ? Utilise sería...",
+     "c": "Écris trois suppositions sur un événement passé avec serían, tendría et estaría."
+    },
+    "it": {
+     "t": "Condizionale di probabilità",
+     "g": "Usa il condizionale per fare supposizioni sul passato.",
+     "p": [
+      "Il condizionale esprime una supposizione su un momento passato: Serían las diez cuando llegó.",
+      "Equivale a probabilmente + passato: tendría veinte años = probablemente tenía veinte.",
+      "Confronta: estará cansado (ora) e estaría cansado (allora). Domande: ¿Quién llamaría anoche?"
+     ],
+     "q": "Ieri qualcuno ha lasciato dei fiori alla tua porta. Chi sarà stato? Usa sería...",
+     "c": "Scrivi tre supposizioni su un evento passato con serían, tendría ed estaría."
+    },
+    "pt": {
+     "t": "Condicional de probabilidade",
+     "g": "Usa o condicional para fazer suposições sobre o passado.",
+     "p": [
+      "O condicional exprime uma suposição sobre um momento passado: Serían las diez cuando llegó.",
+      "Equivale a provavelmente + passado: tendría veinte años = probablemente tenía veinte.",
+      "Compara: estará cansado (agora) e estaría cansado (então). Perguntas: ¿Quién llamaría anoche?"
+     ],
+     "q": "Ontem alguém deixou flores à tua porta. Quem seria? Usa sería...",
+     "c": "Escreve três suposições sobre algo passado com serían, tendría e estaría."
+    },
+    "pt_BR": {
+     "t": "Condicional de probabilidade",
+     "g": "Use o condicional para fazer suposições sobre o passado.",
+     "p": [
+      "O condicional expressa uma suposição sobre um momento passado: Serían las diez cuando llegó.",
+      "Equivale a provavelmente + passado: tendría veinte años = probablemente tenía veinte.",
+      "Compare: estará cansado (agora) e estaría cansado (naquela hora). Perguntas: ¿Quién llamaría anoche?"
+     ],
+     "q": "Ontem alguém deixou flores na sua porta. Quem seria? Use sería...",
+     "c": "Escreva três suposições sobre algo passado com serían, tendría e estaría."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "serían las diez",
+      "ex": "Serían las diez cuando sonó el timbre."
+     },
+     {
+      "w": "tendría",
+      "ex": "Cuando se mudó, tendría unos veinte años."
+     },
+     {
+      "w": "estaría",
+      "ex": "No vino a clase; estaría enfermo."
+     },
+     {
+      "w": "¿Quién llamaría?",
+      "ex": "¿Quién llamaría anoche tan tarde?"
+     },
+     {
+      "w": "habría",
+      "ex": "En la fiesta habría unas cincuenta personas."
+     },
+     {
+      "w": "sería",
+      "ex": "No sé quién dejó las flores; sería tu vecina."
+     }
+    ],
+    "gram": "Condicional de probabilidad = suposición sobre el pasado: serían las diez (probablemente eran las diez)."
+   }
+  },
+  {
+   "d": 289,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Concessive clauses: aunque + subjunctive",
+     "g": "Contrast facts and possibilities with aunque.",
+     "p": [
+      "Aunque + indicative states a fact: aunque llueve, salgo (it is raining, and I go out).",
+      "Aunque + subjunctive presents a possibility or something irrelevant: aunque llueva, saldré.",
+      "Also: aunque + imperfect subjunctive for unlikely cases: aunque me lo pidieras, no podría."
+     ],
+     "q": "Is there something you will do no matter what? Use aunque + subjunctive.",
+     "c": "Write two pairs of sentences contrasting aunque + indicative and aunque + subjunctive."
+    },
+    "de": {
+     "t": "Konzessivsätze: aunque + Subjuntivo",
+     "g": "Stelle mit aunque Tatsachen und Möglichkeiten gegenüber.",
+     "p": [
+      "Aunque + Indikativ nennt eine Tatsache: aunque llueve, salgo (es regnet, und ich gehe raus).",
+      "Aunque + Subjuntivo nennt eine Möglichkeit oder etwas Unwichtiges: aunque llueva, saldré.",
+      "Auch: aunque + Subjuntivo Imperfekt für Unwahrscheinliches: aunque me lo pidieras, no podría."
+     ],
+     "q": "Gibt es etwas, das du auf jeden Fall tun wirst? Nutze aunque + Subjuntivo.",
+     "c": "Schreib zwei Satzpaare, die aunque + Indikativ und aunque + Subjuntivo gegenüberstellen."
+    },
+    "es": {
+     "t": "Oraciones concesivas: aunque + subjuntivo",
+     "g": "Contrasta hechos y posibilidades con aunque.",
+     "p": [
+      "Aunque + indicativo presenta un hecho: aunque llueve, salgo (está lloviendo y salgo).",
+      "Aunque + subjuntivo presenta una posibilidad o algo que no importa: aunque llueva, saldré.",
+      "También: aunque + imperfecto de subjuntivo para casos poco probables: aunque me lo pidieras, no podría."
+     ],
+     "q": "¿Hay algo que harás pase lo que pase? Usa aunque + subjuntivo.",
+     "c": "Escribe dos pares de frases que contrasten aunque + indicativo y aunque + subjuntivo."
+    },
+    "fr": {
+     "t": "Concessives : aunque + subjonctif",
+     "g": "Oppose faits et possibilités avec aunque.",
+     "p": [
+      "Aunque + indicatif présente un fait : aunque llueve, salgo (il pleut, et je sors).",
+      "Aunque + subjonctif présente une possibilité ou un détail sans importance : aunque llueva, saldré.",
+      "Aussi : aunque + subjonctif imparfait pour l'improbable : aunque me lo pidieras, no podría."
+     ],
+     "q": "Y a-t-il quelque chose que tu feras quoi qu'il arrive ? Utilise aunque + subjonctif.",
+     "c": "Écris deux paires de phrases opposant aunque + indicatif et aunque + subjonctif."
+    },
+    "it": {
+     "t": "Concessive: aunque + congiuntivo",
+     "g": "Contrapponi fatti e possibilità con aunque.",
+     "p": [
+      "Aunque + indicativo presenta un fatto: aunque llueve, salgo (piove, ed esco).",
+      "Aunque + congiuntivo presenta una possibilità o qualcosa che non conta: aunque llueva, saldré.",
+      "Anche: aunque + congiuntivo imperfetto per casi improbabili: aunque me lo pidieras, no podría."
+     ],
+     "q": "C'è qualcosa che farai comunque? Usa aunque + congiuntivo.",
+     "c": "Scrivi due coppie di frasi che contrappongano aunque + indicativo e aunque + congiuntivo."
+    },
+    "pt": {
+     "t": "Orações concessivas: aunque + conjuntivo",
+     "g": "Contrasta factos e possibilidades com aunque.",
+     "p": [
+      "Aunque + indicativo apresenta um facto: aunque llueve, salgo (está a chover e saio).",
+      "Aunque + conjuntivo apresenta uma possibilidade ou algo que não importa: aunque llueva, saldré.",
+      "Também: aunque + imperfeito do conjuntivo para casos improváveis: aunque me lo pidieras, no podría."
+     ],
+     "q": "Há alguma coisa que vais fazer aconteça o que acontecer? Usa aunque + conjuntivo.",
+     "c": "Escreve dois pares de frases que contrastem aunque + indicativo e aunque + conjuntivo."
+    },
+    "pt_BR": {
+     "t": "Orações concessivas: aunque + subjuntivo",
+     "g": "Contraste fatos e possibilidades com aunque.",
+     "p": [
+      "Aunque + indicativo apresenta um fato: aunque llueve, salgo (está chovendo e eu saio).",
+      "Aunque + subjuntivo apresenta uma possibilidade ou algo que não importa: aunque llueva, saldré.",
+      "Também: aunque + imperfeito do subjuntivo para casos improváveis: aunque me lo pidieras, no podría."
+     ],
+     "q": "Tem algo que você vai fazer aconteça o que acontecer? Use aunque + subjuntivo.",
+     "c": "Escreva dois pares de frases contrastando aunque + indicativo e aunque + subjuntivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "aunque llueve",
+      "ex": "Aunque llueve, vamos a dar un paseo."
+     },
+     {
+      "w": "aunque llueva",
+      "ex": "Aunque llueva mañana, iremos a la excursión."
+     },
+     {
+      "w": "aunque me lo pidieras",
+      "ex": "Aunque me lo pidieras, no podría ir."
+     },
+     {
+      "w": "aun así",
+      "ex": "Estaba cansada; aun así, terminó el trabajo."
+     },
+     {
+      "w": "pase lo que pase",
+      "ex": "Pase lo que pase, seguiré estudiando."
+     },
+     {
+      "w": "a pesar de que",
+      "ex": "A pesar de que es caro, merece la pena."
+     }
+    ],
+    "gram": "Aunque + indicativo = hecho conocido; aunque + subjuntivo = posibilidad o dato que no importa. A pesar de que funciona igual."
+   }
+  },
+  {
+   "d": 290,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Relative clauses with the subjunctive",
+     "g": "Describe unknown or non-existent things with que + subjunctive.",
+     "p": [
+      "Known thing → indicative: tengo un amigo que habla alemán.",
+      "Unknown or wanted thing → subjunctive: busco a alguien que hable alemán.",
+      "Non-existent → subjunctive: no hay nadie que sepa la respuesta; no conozco ningún sitio que abra tan tarde."
+     ],
+     "q": "Describe your ideal flatmate or travel partner: busco a alguien que...",
+     "c": "Write three sentences: one with tengo... que + indicative, one with busco... que and one with no hay nadie que."
+    },
+    "de": {
+     "t": "Relativsätze mit Subjuntivo",
+     "g": "Beschreibe Unbekanntes oder Nichtexistierendes mit que + Subjuntivo.",
+     "p": [
+      "Bekanntes → Indikativ: tengo un amigo que habla alemán.",
+      "Unbekanntes oder Gesuchtes → Subjuntivo: busco a alguien que hable alemán.",
+      "Nicht Existierendes → Subjuntivo: no hay nadie que sepa la respuesta; no conozco ningún sitio que abra tan tarde."
+     ],
+     "q": "Beschreib deinen idealen Mitbewohner oder Reisepartner: busco a alguien que...",
+     "c": "Schreib drei Sätze: tengo... que + Indikativ, busco... que und no hay nadie que."
+    },
+    "es": {
+     "t": "Oraciones de relativo con subjuntivo",
+     "g": "Describe lo desconocido o lo inexistente con que + subjuntivo.",
+     "p": [
+      "Algo conocido → indicativo: tengo un amigo que habla alemán.",
+      "Algo desconocido o deseado → subjuntivo: busco a alguien que hable alemán.",
+      "Algo inexistente → subjuntivo: no hay nadie que sepa la respuesta; no conozco ningún sitio que abra tan tarde."
+     ],
+     "q": "Describe a tu compañero de piso o de viaje ideal: busco a alguien que...",
+     "c": "Escribe tres frases: una con tengo... que + indicativo, otra con busco... que y otra con no hay nadie que."
+    },
+    "fr": {
+     "t": "Relatives au subjonctif",
+     "g": "Décris l'inconnu ou l'inexistant avec que + subjonctif.",
+     "p": [
+      "Chose connue → indicatif : tengo un amigo que habla alemán.",
+      "Chose inconnue ou souhaitée → subjonctif : busco a alguien que hable alemán.",
+      "Chose inexistante → subjonctif : no hay nadie que sepa la respuesta ; no conozco ningún sitio que abra tan tarde."
+     ],
+     "q": "Décris ton colocataire ou compagnon de voyage idéal : busco a alguien que...",
+     "c": "Écris trois phrases : tengo... que + indicatif, busco... que et no hay nadie que."
+    },
+    "it": {
+     "t": "Relative con il congiuntivo",
+     "g": "Descrivi l'ignoto o l'inesistente con que + congiuntivo.",
+     "p": [
+      "Cosa conosciuta → indicativo: tengo un amigo que habla alemán.",
+      "Cosa sconosciuta o desiderata → congiuntivo: busco a alguien que hable alemán.",
+      "Cosa inesistente → congiuntivo: no hay nadie que sepa la respuesta; no conozco ningún sitio que abra tan tarde."
+     ],
+     "q": "Descrivi il tuo coinquilino o compagno di viaggio ideale: busco a alguien que...",
+     "c": "Scrivi tre frasi: tengo... que + indicativo, busco... que e no hay nadie que."
+    },
+    "pt": {
+     "t": "Orações relativas com conjuntivo",
+     "g": "Descreve o desconhecido ou o inexistente com que + conjuntivo.",
+     "p": [
+      "Algo conhecido → indicativo: tengo un amigo que habla alemán.",
+      "Algo desconhecido ou desejado → conjuntivo: busco a alguien que hable alemán.",
+      "Algo inexistente → conjuntivo: no hay nadie que sepa la respuesta; no conozco ningún sitio que abra tan tarde."
+     ],
+     "q": "Descreve o teu colega de casa ou de viagem ideal: busco a alguien que...",
+     "c": "Escreve três frases: uma com tengo... que + indicativo, outra com busco... que e outra com no hay nadie que."
+    },
+    "pt_BR": {
+     "t": "Orações relativas com subjuntivo",
+     "g": "Descreva o desconhecido ou o inexistente com que + subjuntivo.",
+     "p": [
+      "Algo conhecido → indicativo: tengo un amigo que habla alemán.",
+      "Algo desconhecido ou desejado → subjuntivo: busco a alguien que hable alemán.",
+      "Algo inexistente → subjuntivo: no hay nadie que sepa la respuesta; no conozco ningún sitio que abra tan tarde."
+     ],
+     "q": "Descreva seu colega de apartamento ou de viagem ideal: busco a alguien que...",
+     "c": "Escreva três frases: uma com tengo... que + indicativo, outra com busco... que e outra com no hay nadie que."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "busco a alguien que",
+      "ex": "Busco a alguien que hable alemán y francés."
+     },
+     {
+      "w": "no hay nadie que",
+      "ex": "No hay nadie que cocine como mi abuela."
+     },
+     {
+      "w": "necesito un piso que",
+      "ex": "Necesito un piso que tenga terraza."
+     },
+     {
+      "w": "¿conoces algún...?",
+      "ex": "¿Conoces algún restaurante que abra los lunes?"
+     },
+     {
+      "w": "tengo un amigo que",
+      "ex": "Tengo un amigo que vive en Bogotá."
+     },
+     {
+      "w": "ningún",
+      "ex": "No conozco ningún sitio que sea tan tranquilo."
+     }
+    ],
+    "gram": "Antecedente conocido → indicativo (tengo un amigo que habla); desconocido o inexistente → subjuntivo (busco a alguien que hable)."
+   }
+  }
+ ]
+}

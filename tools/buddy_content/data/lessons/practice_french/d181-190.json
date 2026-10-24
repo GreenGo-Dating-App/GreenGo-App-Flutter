@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_french",
+ "lessons": [
+  {
+   "d": 181,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Present subjunctive: forming it",
+     "g": "Welcome to B1! Learn to build the present subjunctive of regular verbs.",
+     "p": [
+      "Take the ils form of the present, drop -ent: ils parlent → parl-, ils finissent → finiss-, ils vendent → vend-.",
+      "Add -e, -es, -e, -ions, -iez, -ent: que je parle, que tu finisses, qu'il vende, que nous parlions.",
+      "The subjunctive almost always follows que and expresses wishes, needs, feelings or doubt, not plain facts."
+     ],
+     "q": "Can you say que je parle, que tu parles... for the verb choisir? Try all six forms with me.",
+     "c": "Write the full subjunctive of three verbs: regarder, finir and attendre, each starting with que."
+    },
+    "de": {
+     "t": "Subjonctif Präsens: die Bildung",
+     "g": "Willkommen bei B1! Du lernst, den Subjonctif Präsens regelmäßiger Verben zu bilden.",
+     "p": [
+      "Nimm die ils-Form des Präsens ohne -ent: ils parlent → parl-, ils finissent → finiss-, ils vendent → vend-.",
+      "Häng -e, -es, -e, -ions, -iez, -ent an: que je parle, que tu finisses, qu'il vende, que nous parlions.",
+      "Der Subjonctif steht fast immer nach que und drückt Wunsch, Notwendigkeit, Gefühl oder Zweifel aus."
+     ],
+     "q": "Kannst du que je parle, que tu parles... mit dem Verb choisir bilden? Probier alle sechs Formen.",
+     "c": "Schreib den ganzen Subjonctif von regarder, finir und attendre, jede Form mit que."
+    },
+    "es": {
+     "t": "Subjuntivo presente: cómo se forma",
+     "g": "¡Bienvenido al B1! Aprende a formar el subjuntivo presente de los verbos regulares.",
+     "p": [
+      "Toma la forma ils del presente sin -ent: ils parlent → parl-, ils finissent → finiss-, ils vendent → vend-.",
+      "Añade -e, -es, -e, -ions, -iez, -ent: que je parle, que tu finisses, qu'il vende, que nous parlions.",
+      "El subjuntivo casi siempre va tras que y expresa deseo, necesidad, emoción o duda, no hechos."
+     ],
+     "q": "¿Puedes decir que je parle, que tu parles... con el verbo choisir? Prueba las seis formas conmigo.",
+     "c": "Escribe el subjuntivo completo de regarder, finir y attendre, cada forma con que."
+    },
+    "fr": {
+     "t": "Le subjonctif présent : la formation",
+     "g": "Bienvenue au B1 ! Apprendre à former le subjonctif présent des verbes réguliers.",
+     "p": [
+      "On prend ils au présent sans -ent : ils parlent → parl-, ils finissent → finiss-, ils vendent → vend-.",
+      "On ajoute -e, -es, -e, -ions, -iez, -ent : que je parle, que tu finisses, qu'il vende, que nous parlions.",
+      "Le subjonctif suit presque toujours que et exprime un souhait, une nécessité, un sentiment ou un doute."
+     ],
+     "q": "Peux-tu conjuguer choisir au subjonctif : que je choisisse, que tu... ? Essaie les six formes.",
+     "c": "Écris le subjonctif complet de regarder, finir et attendre, chaque forme avec que."
+    },
+    "it": {
+     "t": "Congiuntivo presente: la formazione",
+     "g": "Benvenuto al B1! Impara a formare il subjonctif presente dei verbi regolari.",
+     "p": [
+      "Prendi la forma ils del presente senza -ent: ils parlent → parl-, ils finissent → finiss-, ils vendent → vend-.",
+      "Aggiungi -e, -es, -e, -ions, -iez, -ent: que je parle, que tu finisses, qu'il vende, que nous parlions.",
+      "Il subjonctif segue quasi sempre que ed esprime desiderio, necessità, emozione o dubbio, non fatti."
+     ],
+     "q": "Sai dire que je parle, que tu parles... con il verbo choisir? Prova tutte e sei le forme con me.",
+     "c": "Scrivi il subjonctif completo di regarder, finir e attendre, ogni forma con que."
+    },
+    "pt": {
+     "t": "Conjuntivo presente: a formação",
+     "g": "Bem-vindo ao B1! Aprende a formar o subjonctif presente dos verbos regulares.",
+     "p": [
+      "Pega na forma ils do presente sem -ent: ils parlent → parl-, ils finissent → finiss-, ils vendent → vend-.",
+      "Junta -e, -es, -e, -ions, -iez, -ent: que je parle, que tu finisses, qu'il vende, que nous parlions.",
+      "O subjonctif vem quase sempre depois de que e exprime desejo, necessidade, emoção ou dúvida."
+     ],
+     "q": "Consegues dizer que je parle, que tu parles... com o verbo choisir? Experimenta as seis formas.",
+     "c": "Escreve o subjonctif completo de regarder, finir e attendre, cada forma com que."
+    },
+    "pt_BR": {
+     "t": "Subjuntivo presente: como formar",
+     "g": "Bem-vindo ao B1! Aprenda a formar o subjonctif presente dos verbos regulares.",
+     "p": [
+      "Pegue a forma ils do presente sem -ent: ils parlent → parl-, ils finissent → finiss-, ils vendent → vend-.",
+      "Acrescente -e, -es, -e, -ions, -iez, -ent: que je parle, que tu finisses, qu'il vende, que nous parlions.",
+      "O subjonctif vem quase sempre depois de que e expressa desejo, necessidade, emoção ou dúvida."
+     ],
+     "q": "Você consegue dizer que je parle, que tu parles... com o verbo choisir? Tente as seis formas comigo.",
+     "c": "Escreva o subjonctif completo de regarder, finir e attendre, cada forma com que."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "que je parle",
+      "ex": "Il est important que je parle français tous les jours."
+     },
+     {
+      "w": "que tu finisses",
+      "ex": "Je préfère que tu finisses ton travail avant le dîner."
+     },
+     {
+      "w": "qu'il attende",
+      "ex": "Il vaut mieux qu'il attende devant la gare."
+     },
+     {
+      "w": "que nous choisissions",
+      "ex": "Il est temps que nous choisissions un restaurant."
+     },
+     {
+      "w": "que vous écoutiez",
+      "ex": "Il est utile que vous écoutiez des podcasts."
+     },
+     {
+      "w": "qu'elles dorment",
+      "ex": "Je souhaite qu'elles dorment bien cette nuit."
+     }
+    ],
+    "gram": "Subjonctif présent : radical de ils au présent (ils parlent → parl-) + -e, -es, -e, -ions, -iez, -ent. Toujours après que."
+   }
+  },
+  {
+   "d": 182,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Il faut que + subjunctive",
+     "g": "Express necessity with il faut que followed by the subjunctive.",
+     "p": [
+      "Il faut que + subjunctive = someone must do something: il faut que tu viennes, il faut que je parte.",
+      "Il faut + infinitive is general: il faut manger. Il faut que names the person: il faut que vous mangiez.",
+      "Similar: il est nécessaire que, il est important que, il vaut mieux que: il vaut mieux que tu dormes."
+     ],
+     "q": "What do you have to do this week? Answer with il faut que je... at least three times.",
+     "c": "Write five rules for a happy home using il faut que and il vaut mieux que."
+    },
+    "de": {
+     "t": "Il faut que + Subjonctif",
+     "g": "Du drückst Notwendigkeit mit il faut que und dem Subjonctif aus.",
+     "p": [
+      "Il faut que + Subjonctif = jemand muss etwas tun: il faut que tu viennes, il faut que je parte.",
+      "Il faut + Infinitiv ist allgemein: il faut manger. Il faut que nennt die Person: il faut que vous mangiez.",
+      "Ähnlich: il est nécessaire que, il est important que, il vaut mieux que: il vaut mieux que tu dormes."
+     ],
+     "q": "Was musst du diese Woche tun? Antworte mindestens dreimal mit il faut que je...",
+     "c": "Schreib fünf Regeln für ein glückliches Zuhause mit il faut que und il vaut mieux que."
+    },
+    "es": {
+     "t": "Il faut que + subjuntivo",
+     "g": "Expresa la necesidad con il faut que seguido de subjuntivo.",
+     "p": [
+      "Il faut que + subjuntivo = alguien tiene que hacer algo: il faut que tu viennes, il faut que je parte.",
+      "Il faut + infinitivo es general: il faut manger. Il faut que nombra a la persona: il faut que vous mangiez.",
+      "Parecidas: il est nécessaire que, il est important que, il vaut mieux que: il vaut mieux que tu dormes."
+     ],
+     "q": "¿Qué tienes que hacer esta semana? Responde con il faut que je... al menos tres veces.",
+     "c": "Escribe cinco reglas para una casa feliz con il faut que e il vaut mieux que."
+    },
+    "fr": {
+     "t": "Il faut que + subjonctif",
+     "g": "Exprimer la nécessité avec il faut que suivi du subjonctif.",
+     "p": [
+      "Il faut que + subjonctif = une personne doit faire quelque chose : il faut que tu viennes, que je parte.",
+      "Il faut + infinitif est général : il faut manger. Il faut que précise la personne : il faut que vous mangiez.",
+      "Mêmes structures : il est nécessaire que, il est important que, il vaut mieux que tu dormes."
+     ],
+     "q": "Qu'est-ce que tu dois faire cette semaine ? Réponds au moins trois fois avec il faut que je...",
+     "c": "Écris cinq règles pour une maison heureuse avec il faut que et il vaut mieux que."
+    },
+    "it": {
+     "t": "Il faut que + congiuntivo",
+     "g": "Esprimi la necessità con il faut que seguito dal subjonctif.",
+     "p": [
+      "Il faut que + subjonctif = qualcuno deve fare qualcosa: il faut que tu viennes, il faut que je parte.",
+      "Il faut + infinito è generico: il faut manger. Il faut que indica la persona: il faut que vous mangiez.",
+      "Simili: il est nécessaire que, il est important que, il vaut mieux que: il vaut mieux que tu dormes."
+     ],
+     "q": "Cosa devi fare questa settimana? Rispondi con il faut que je... almeno tre volte.",
+     "c": "Scrivi cinque regole per una casa felice con il faut que e il vaut mieux que."
+    },
+    "pt": {
+     "t": "Il faut que + conjuntivo",
+     "g": "Exprime a necessidade com il faut que seguido do subjonctif.",
+     "p": [
+      "Il faut que + subjonctif = alguém tem de fazer algo: il faut que tu viennes, il faut que je parte.",
+      "Il faut + infinitivo é geral: il faut manger. Il faut que indica a pessoa: il faut que vous mangiez.",
+      "Parecidas: il est nécessaire que, il est important que, il vaut mieux que: il vaut mieux que tu dormes."
+     ],
+     "q": "O que tens de fazer esta semana? Responde com il faut que je... pelo menos três vezes.",
+     "c": "Escreve cinco regras para uma casa feliz com il faut que e il vaut mieux que."
+    },
+    "pt_BR": {
+     "t": "Il faut que + subjuntivo",
+     "g": "Expresse necessidade com il faut que seguido do subjonctif.",
+     "p": [
+      "Il faut que + subjonctif = alguém precisa fazer algo: il faut que tu viennes, il faut que je parte.",
+      "Il faut + infinitivo é geral: il faut manger. Il faut que indica a pessoa: il faut que vous mangiez.",
+      "Parecidas: il est nécessaire que, il est important que, il vaut mieux que: il vaut mieux que tu dormes."
+     ],
+     "q": "O que você precisa fazer esta semana? Responda com il faut que je... pelo menos três vezes.",
+     "c": "Escreva cinco regras para uma casa feliz com il faut que e il vaut mieux que."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il faut que",
+      "ex": "Il faut que tu viennes à ma fête samedi !"
+     },
+     {
+      "w": "il vaut mieux que",
+      "ex": "Il vaut mieux que nous partions tôt."
+     },
+     {
+      "w": "il est important que",
+      "ex": "Il est important que vous dormiez assez."
+     },
+     {
+      "w": "il est nécessaire que",
+      "ex": "Il est nécessaire qu'on réserve la salle."
+     },
+     {
+      "w": "il ne faut pas que",
+      "ex": "Il ne faut pas que tu oublies ton passeport."
+     },
+     {
+      "w": "il suffit que",
+      "ex": "Il suffit que tu m'envoies un message."
+     }
+    ],
+    "gram": "Il faut que + subjonctif quand on précise la personne : il faut que tu viennes. Sans personne : il faut + infinitif."
+   }
+  },
+  {
+   "d": 183,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Irregular subjunctives",
+     "g": "Learn the key irregular subjunctive forms: être, avoir, aller, faire, pouvoir.",
+     "p": [
+      "Être and avoir: que je sois, tu sois, nous soyons ; que j'aie, tu aies, il ait, nous ayons.",
+      "One stem: faire → que je fasse, pouvoir → que je puisse, savoir → que je sache, for all persons.",
+      "Two stems: aller → que j'aille, but que nous allions ; vouloir → que je veuille, que nous voulions."
+     ],
+     "q": "Il faut que tu sois patient with French! Can you make three sentences with sois, aies and ailles?",
+     "c": "Write six sentences starting with il faut que, using sois, aie, aille, fasse, puisse and sache."
+    },
+    "de": {
+     "t": "Unregelmäßige Subjonctif-Formen",
+     "g": "Du lernst die wichtigsten unregelmäßigen Formen: être, avoir, aller, faire, pouvoir.",
+     "p": [
+      "Être und avoir: que je sois, tu sois, nous soyons ; que j'aie, tu aies, il ait, nous ayons.",
+      "Ein Stamm: faire → que je fasse, pouvoir → que je puisse, savoir → que je sache, für alle Personen.",
+      "Zwei Stämme: aller → que j'aille, aber que nous allions ; vouloir → que je veuille, que nous voulions."
+     ],
+     "q": "Il faut que tu sois patient mit Französisch! Bildest du drei Sätze mit sois, aies und ailles?",
+     "c": "Schreib sechs Sätze mit il faut que und sois, aie, aille, fasse, puisse und sache."
+    },
+    "es": {
+     "t": "Subjuntivos irregulares",
+     "g": "Aprende los subjuntivos irregulares clave: être, avoir, aller, faire, pouvoir.",
+     "p": [
+      "Être y avoir: que je sois, tu sois, nous soyons ; que j'aie, tu aies, il ait, nous ayons.",
+      "Una raíz: faire → que je fasse, pouvoir → que je puisse, savoir → que je sache, en todas las personas.",
+      "Dos raíces: aller → que j'aille, pero que nous allions ; vouloir → que je veuille, que nous voulions."
+     ],
+     "q": "Il faut que tu sois patient con el francés. ¿Haces tres frases con sois, aies y ailles?",
+     "c": "Escribe seis frases con il faut que usando sois, aie, aille, fasse, puisse y sache."
+    },
+    "fr": {
+     "t": "Les subjonctifs irréguliers",
+     "g": "Apprendre les subjonctifs irréguliers essentiels : être, avoir, aller, faire, pouvoir.",
+     "p": [
+      "Être et avoir : que je sois, tu sois, nous soyons ; que j'aie, tu aies, il ait, nous ayons.",
+      "Un seul radical : faire → que je fasse, pouvoir → que je puisse, savoir → que je sache.",
+      "Deux radicaux : aller → que j'aille mais que nous allions ; vouloir → que je veuille, que nous voulions."
+     ],
+     "q": "Il faut que tu sois patient avec le français ! Fais trois phrases avec sois, aies et ailles.",
+     "c": "Écris six phrases avec il faut que en utilisant sois, aie, aille, fasse, puisse et sache."
+    },
+    "it": {
+     "t": "Congiuntivi irregolari",
+     "g": "Impara i subjonctif irregolari chiave: être, avoir, aller, faire, pouvoir.",
+     "p": [
+      "Être e avoir: que je sois, tu sois, nous soyons ; que j'aie, tu aies, il ait, nous ayons.",
+      "Una radice: faire → que je fasse, pouvoir → que je puisse, savoir → que je sache, per tutte le persone.",
+      "Due radici: aller → que j'aille, ma que nous allions ; vouloir → que je veuille, que nous voulions."
+     ],
+     "q": "Il faut que tu sois patient con il francese! Fai tre frasi con sois, aies e ailles?",
+     "c": "Scrivi sei frasi con il faut que usando sois, aie, aille, fasse, puisse e sache."
+    },
+    "pt": {
+     "t": "Conjuntivos irregulares",
+     "g": "Aprende os subjonctifs irregulares essenciais: être, avoir, aller, faire, pouvoir.",
+     "p": [
+      "Être e avoir: que je sois, tu sois, nous soyons ; que j'aie, tu aies, il ait, nous ayons.",
+      "Um só radical: faire → que je fasse, pouvoir → que je puisse, savoir → que je sache, em todas as pessoas.",
+      "Dois radicais: aller → que j'aille, mas que nous allions ; vouloir → que je veuille, que nous voulions."
+     ],
+     "q": "Il faut que tu sois patient com o francês! Fazes três frases com sois, aies e ailles?",
+     "c": "Escreve seis frases com il faut que usando sois, aie, aille, fasse, puisse e sache."
+    },
+    "pt_BR": {
+     "t": "Subjuntivos irregulares",
+     "g": "Aprenda os subjonctifs irregulares essenciais: être, avoir, aller, faire, pouvoir.",
+     "p": [
+      "Être e avoir: que je sois, tu sois, nous soyons ; que j'aie, tu aies, il ait, nous ayons.",
+      "Um só radical: faire → que je fasse, pouvoir → que je puisse, savoir → que je sache, em todas as pessoas.",
+      "Dois radicais: aller → que j'aille, mas que nous allions ; vouloir → que je veuille, que nous voulions."
+     ],
+     "q": "Il faut que tu sois patient com o francês! Você faz três frases com sois, aies e ailles?",
+     "c": "Escreva seis frases com il faut que usando sois, aie, aille, fasse, puisse e sache."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "que je sois",
+      "ex": "Il faut que je sois à l'heure demain."
+     },
+     {
+      "w": "que tu aies",
+      "ex": "Il est normal que tu aies un peu peur."
+     },
+     {
+      "w": "que j'aille",
+      "ex": "Il faut que j'aille à la banque ce matin."
+     },
+     {
+      "w": "que nous fassions",
+      "ex": "Il vaut mieux que nous fassions les courses ce soir."
+     },
+     {
+      "w": "que vous puissiez",
+      "ex": "Il est important que vous puissiez vous reposer."
+     },
+     {
+      "w": "qu'il sache",
+      "ex": "Il faut qu'il sache la vérité."
+     }
+    ],
+    "gram": "Irréguliers : être → sois, avoir → aie, aller → aille / allions, faire → fasse, pouvoir → puisse, savoir → sache, vouloir → veuille."
+   }
+  },
+  {
+   "d": 184,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Wishes: je veux que, j'aimerais que",
+     "g": "Say what you want someone else to do, with the subjunctive.",
+     "p": [
+      "Je veux que, je voudrais que, j'aimerais que + subjunctive: je voudrais que tu viennes avec moi.",
+      "Je souhaite que and je préfère que work the same way: je préfère que nous restions à la maison.",
+      "Soften with the conditional: j'aimerais que vous m'aidiez sounds kinder than je veux que vous m'aidiez."
+     ],
+     "q": "What would you like your friends or family to do this weekend? Use j'aimerais que...",
+     "c": "Write four wishes for people you know: two with je voudrais que, two with je souhaite que."
+    },
+    "de": {
+     "t": "Wünsche: je veux que, j'aimerais que",
+     "g": "Du sagst, was jemand anderes tun soll, mit dem Subjonctif.",
+     "p": [
+      "Je veux que, je voudrais que, j'aimerais que + Subjonctif: je voudrais que tu viennes avec moi.",
+      "Je souhaite que und je préfère que funktionieren genauso: je préfère que nous restions à la maison.",
+      "Mit Konditional klingt es sanfter: j'aimerais que vous m'aidiez statt je veux que vous m'aidiez."
+     ],
+     "q": "Was sollen deine Freunde oder deine Familie am Wochenende tun? Antworte mit j'aimerais que...",
+     "c": "Schreib vier Wünsche für Menschen, die du kennst: zwei mit je voudrais que, zwei mit je souhaite que."
+    },
+    "es": {
+     "t": "Deseos: je veux que, j'aimerais que",
+     "g": "Di lo que quieres que haga otra persona, con el subjuntivo.",
+     "p": [
+      "Je veux que, je voudrais que, j'aimerais que + subjuntivo: je voudrais que tu viennes avec moi.",
+      "Je souhaite que y je préfère que funcionan igual: je préfère que nous restions à la maison.",
+      "El condicional suaviza: j'aimerais que vous m'aidiez suena más amable que je veux que vous m'aidiez."
+     ],
+     "q": "¿Qué te gustaría que hicieran tus amigos o tu familia este fin de semana? Usa j'aimerais que...",
+     "c": "Escribe cuatro deseos para gente que conoces: dos con je voudrais que y dos con je souhaite que."
+    },
+    "fr": {
+     "t": "Souhaits : je veux que, j'aimerais que",
+     "g": "Dire ce qu'on veut qu'une autre personne fasse, avec le subjonctif.",
+     "p": [
+      "Je veux que, je voudrais que, j'aimerais que + subjonctif : je voudrais que tu viennes avec moi.",
+      "Je souhaite que et je préfère que fonctionnent pareil : je préfère que nous restions à la maison.",
+      "Le conditionnel adoucit : j'aimerais que vous m'aidiez est plus doux que je veux que vous m'aidiez."
+     ],
+     "q": "Qu'aimerais-tu que tes amis ou ta famille fassent ce week-end ? Utilise j'aimerais que...",
+     "c": "Écris quatre souhaits pour tes proches : deux avec je voudrais que, deux avec je souhaite que."
+    },
+    "it": {
+     "t": "Desideri: je veux que, j'aimerais que",
+     "g": "Di' cosa vuoi che faccia un'altra persona, con il subjonctif.",
+     "p": [
+      "Je veux que, je voudrais que, j'aimerais que + subjonctif: je voudrais que tu viennes avec moi.",
+      "Je souhaite que e je préfère que funzionano allo stesso modo: je préfère que nous restions à la maison.",
+      "Il condizionale ammorbidisce: j'aimerais que vous m'aidiez è più gentile di je veux que vous m'aidiez."
+     ],
+     "q": "Cosa vorresti che facessero i tuoi amici o la tua famiglia questo weekend? Usa j'aimerais que...",
+     "c": "Scrivi quattro desideri per persone che conosci: due con je voudrais que, due con je souhaite que."
+    },
+    "pt": {
+     "t": "Desejos: je veux que, j'aimerais que",
+     "g": "Diz o que queres que outra pessoa faça, com o subjonctif.",
+     "p": [
+      "Je veux que, je voudrais que, j'aimerais que + subjonctif: je voudrais que tu viennes avec moi.",
+      "Je souhaite que e je préfère que funcionam igual: je préfère que nous restions à la maison.",
+      "O condicional suaviza: j'aimerais que vous m'aidiez soa mais simpático do que je veux que vous m'aidiez."
+     ],
+     "q": "O que gostavas que os teus amigos ou a tua família fizessem este fim de semana? Usa j'aimerais que...",
+     "c": "Escreve quatro desejos para pessoas que conheces: dois com je voudrais que e dois com je souhaite que."
+    },
+    "pt_BR": {
+     "t": "Desejos: je veux que, j'aimerais que",
+     "g": "Diga o que você quer que outra pessoa faça, com o subjonctif.",
+     "p": [
+      "Je veux que, je voudrais que, j'aimerais que + subjonctif: je voudrais que tu viennes avec moi.",
+      "Je souhaite que e je préfère que funcionam igual: je préfère que nous restions à la maison.",
+      "O condicional suaviza: j'aimerais que vous m'aidiez soa mais gentil do que je veux que vous m'aidiez."
+     ],
+     "q": "O que você gostaria que seus amigos ou sua família fizessem neste fim de semana? Use j'aimerais que...",
+     "c": "Escreva quatro desejos para pessoas que você conhece: dois com je voudrais que e dois com je souhaite que."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "je veux que",
+      "ex": "Je veux que tu sois heureux."
+     },
+     {
+      "w": "je voudrais que",
+      "ex": "Je voudrais que tu viennes avec moi au marché."
+     },
+     {
+      "w": "j'aimerais que",
+      "ex": "J'aimerais que vous m'expliquiez ce mot."
+     },
+     {
+      "w": "je souhaite que",
+      "ex": "Je souhaite que ton voyage se passe bien."
+     },
+     {
+      "w": "je préfère que",
+      "ex": "Je préfère que nous restions à la maison ce soir."
+     },
+     {
+      "w": "ça me ferait plaisir que",
+      "ex": "Ça me ferait plaisir que tu m'appelles."
+     }
+    ],
+    "gram": "Verbe de volonté + que + subjonctif quand le sujet change : je veux que tu viennes. Le conditionnel rend la demande plus polie."
+   }
+  },
+  {
+   "d": 185,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Emotions + subjunctive",
+     "g": "Express feelings about what others do: je suis content que, j'ai peur que.",
+     "p": [
+      "Feeling + que + subjunctive: je suis content que tu sois là, je suis triste que tu partes.",
+      "More: j'ai peur que, je suis surpris que, je regrette que, ça m'étonne que, j'adore que.",
+      "Impersonal: c'est dommage que, c'est génial que, c'est super que tu puisses venir !"
+     ],
+     "q": "Tell me something that makes you happy right now: je suis content(e) que... or c'est génial que...",
+     "c": "Write five sentences about your week, each with a different emotion + que + subjunctive."
+    },
+    "de": {
+     "t": "Gefühle + Subjonctif",
+     "g": "Du drückst Gefühle über das Handeln anderer aus: je suis content que, j'ai peur que.",
+     "p": [
+      "Gefühl + que + Subjonctif: je suis content que tu sois là, je suis triste que tu partes.",
+      "Weitere: j'ai peur que, je suis surpris que, je regrette que, ça m'étonne que, j'adore que.",
+      "Unpersönlich: c'est dommage que, c'est génial que, c'est super que tu puisses venir !"
+     ],
+     "q": "Was freut dich gerade? Sag es mit je suis content(e) que... oder c'est génial que...",
+     "c": "Schreib fünf Sätze über deine Woche, jeder mit einem anderen Gefühl + que + Subjonctif."
+    },
+    "es": {
+     "t": "Emociones + subjuntivo",
+     "g": "Expresa sentimientos sobre lo que hacen otros: je suis content que, j'ai peur que.",
+     "p": [
+      "Emoción + que + subjuntivo: je suis content que tu sois là, je suis triste que tu partes.",
+      "Más: j'ai peur que, je suis surpris que, je regrette que, ça m'étonne que, j'adore que.",
+      "Impersonales: c'est dommage que, c'est génial que, c'est super que tu puisses venir !"
+     ],
+     "q": "Cuéntame algo que te alegra ahora: je suis content(e) que... o c'est génial que...",
+     "c": "Escribe cinco frases sobre tu semana, cada una con una emoción distinta + que + subjuntivo."
+    },
+    "fr": {
+     "t": "Sentiments + subjonctif",
+     "g": "Exprimer ses sentiments sur ce que font les autres : je suis content que, j'ai peur que.",
+     "p": [
+      "Sentiment + que + subjonctif : je suis content que tu sois là, je suis triste que tu partes.",
+      "Aussi : j'ai peur que, je suis surpris que, je regrette que, ça m'étonne que, j'adore que.",
+      "Tournures impersonnelles : c'est dommage que, c'est génial que, c'est super que tu puisses venir !"
+     ],
+     "q": "Dis-moi ce qui te rend heureux en ce moment : je suis content(e) que... ou c'est génial que...",
+     "c": "Écris cinq phrases sur ta semaine, chacune avec un sentiment différent + que + subjonctif."
+    },
+    "it": {
+     "t": "Emozioni + congiuntivo",
+     "g": "Esprimi sentimenti su ciò che fanno gli altri: je suis content que, j'ai peur que.",
+     "p": [
+      "Emozione + que + subjonctif: je suis content que tu sois là, je suis triste que tu partes.",
+      "Altre: j'ai peur que, je suis surpris que, je regrette que, ça m'étonne que, j'adore que.",
+      "Impersonali: c'est dommage que, c'est génial que, c'est super que tu puisses venir !"
+     ],
+     "q": "Dimmi qualcosa che ti rende felice adesso: je suis content(e) que... o c'est génial que...",
+     "c": "Scrivi cinque frasi sulla tua settimana, ognuna con un'emozione diversa + que + subjonctif."
+    },
+    "pt": {
+     "t": "Emoções + conjuntivo",
+     "g": "Exprime sentimentos sobre o que os outros fazem: je suis content que, j'ai peur que.",
+     "p": [
+      "Emoção + que + subjonctif: je suis content que tu sois là, je suis triste que tu partes.",
+      "Mais: j'ai peur que, je suis surpris que, je regrette que, ça m'étonne que, j'adore que.",
+      "Impessoais: c'est dommage que, c'est génial que, c'est super que tu puisses venir !"
+     ],
+     "q": "Conta-me algo que te deixa feliz agora: je suis content(e) que... ou c'est génial que...",
+     "c": "Escreve cinco frases sobre a tua semana, cada uma com uma emoção diferente + que + subjonctif."
+    },
+    "pt_BR": {
+     "t": "Emoções + subjuntivo",
+     "g": "Expresse sentimentos sobre o que os outros fazem: je suis content que, j'ai peur que.",
+     "p": [
+      "Emoção + que + subjonctif: je suis content que tu sois là, je suis triste que tu partes.",
+      "Mais: j'ai peur que, je suis surpris que, je regrette que, ça m'étonne que, j'adore que.",
+      "Impessoais: c'est dommage que, c'est génial que, c'est super que tu puisses venir !"
+     ],
+     "q": "Me conte algo que te deixa feliz agora: je suis content(e) que... ou c'est génial que...",
+     "c": "Escreva cinco frases sobre a sua semana, cada uma com uma emoção diferente + que + subjonctif."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "je suis content(e) que",
+      "ex": "Je suis contente que tu sois venu."
+     },
+     {
+      "w": "j'ai peur que",
+      "ex": "J'ai peur qu'il pleuve pendant le pique-nique."
+     },
+     {
+      "w": "c'est dommage que",
+      "ex": "C'est dommage que le musée soit fermé."
+     },
+     {
+      "w": "je suis surpris(e) que",
+      "ex": "Je suis surpris que tu parles si bien italien."
+     },
+     {
+      "w": "je regrette que",
+      "ex": "Je regrette que vous ne puissiez pas rester."
+     },
+     {
+      "w": "c'est génial que",
+      "ex": "C'est génial que tu aies trouvé un appartement !"
+     }
+    ],
+    "gram": "Sentiment + que + subjonctif : je suis content que tu sois là, c'est dommage qu'il parte."
+   }
+  },
+  {
+   "d": 186,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Doubt vs certainty",
+     "g": "Choose the subjunctive for doubt and the indicative for certainty.",
+     "p": [
+      "Doubt + subjunctive: je doute que, je ne suis pas sûr que, il est possible que, il se peut que.",
+      "Certainty + indicative: je suis sûr que, je sais que, il est certain que, il est évident que.",
+      "Compare: je suis sûr qu'il vient (fact) ; je doute qu'il vienne (doubt). Same verb, different mood!"
+     ],
+     "q": "Will it be sunny tomorrow where you live? Answer with je suis sûr(e) que or je doute que.",
+     "c": "Write three pairs: one sentence with je suis sûr que and its doubtful twin with je doute que."
+    },
+    "de": {
+     "t": "Zweifel oder Gewissheit",
+     "g": "Du wählst den Subjonctif bei Zweifel und den Indikativ bei Gewissheit.",
+     "p": [
+      "Zweifel + Subjonctif: je doute que, je ne suis pas sûr que, il est possible que, il se peut que.",
+      "Gewissheit + Indikativ: je suis sûr que, je sais que, il est certain que, il est évident que.",
+      "Vergleich: je suis sûr qu'il vient (Tatsache) ; je doute qu'il vienne (Zweifel). Gleiches Verb!"
+     ],
+     "q": "Wird morgen bei dir die Sonne scheinen? Antworte mit je suis sûr(e) que oder je doute que.",
+     "c": "Schreib drei Paare: ein Satz mit je suis sûr que und sein Zwilling mit je doute que."
+    },
+    "es": {
+     "t": "Duda o certeza",
+     "g": "Elige el subjuntivo para la duda y el indicativo para la certeza.",
+     "p": [
+      "Duda + subjuntivo: je doute que, je ne suis pas sûr que, il est possible que, il se peut que.",
+      "Certeza + indicativo: je suis sûr que, je sais que, il est certain que, il est évident que.",
+      "Compara: je suis sûr qu'il vient (hecho) ; je doute qu'il vienne (duda). ¡Mismo verbo, otro modo!"
+     ],
+     "q": "¿Hará sol mañana donde vives? Responde con je suis sûr(e) que o je doute que.",
+     "c": "Escribe tres parejas: una frase con je suis sûr que y su gemela dudosa con je doute que."
+    },
+    "fr": {
+     "t": "Doute ou certitude",
+     "g": "Choisir le subjonctif pour le doute et l'indicatif pour la certitude.",
+     "p": [
+      "Doute + subjonctif : je doute que, je ne suis pas sûr que, il est possible que, il se peut que.",
+      "Certitude + indicatif : je suis sûr que, je sais que, il est certain que, il est évident que.",
+      "Compare : je suis sûr qu'il vient (fait) ; je doute qu'il vienne (doute). Même verbe, autre mode !"
+     ],
+     "q": "Fera-t-il beau demain chez toi ? Réponds avec je suis sûr(e) que ou je doute que.",
+     "c": "Écris trois paires : une phrase avec je suis sûr que et sa jumelle avec je doute que."
+    },
+    "it": {
+     "t": "Dubbio o certezza",
+     "g": "Scegli il subjonctif per il dubbio e l'indicativo per la certezza.",
+     "p": [
+      "Dubbio + subjonctif: je doute que, je ne suis pas sûr que, il est possible que, il se peut que.",
+      "Certezza + indicativo: je suis sûr que, je sais que, il est certain que, il est évident que.",
+      "Confronta: je suis sûr qu'il vient (fatto) ; je doute qu'il vienne (dubbio). Stesso verbo, altro modo!"
+     ],
+     "q": "Domani ci sarà il sole dove vivi? Rispondi con je suis sûr(e) que o je doute que.",
+     "c": "Scrivi tre coppie: una frase con je suis sûr que e la sua gemella con je doute que."
+    },
+    "pt": {
+     "t": "Dúvida ou certeza",
+     "g": "Escolhe o subjonctif para a dúvida e o indicativo para a certeza.",
+     "p": [
+      "Dúvida + subjonctif: je doute que, je ne suis pas sûr que, il est possible que, il se peut que.",
+      "Certeza + indicativo: je suis sûr que, je sais que, il est certain que, il est évident que.",
+      "Compara: je suis sûr qu'il vient (facto) ; je doute qu'il vienne (dúvida). Mesmo verbo, outro modo!"
+     ],
+     "q": "Amanhã vai estar sol onde vives? Responde com je suis sûr(e) que ou je doute que.",
+     "c": "Escreve três pares: uma frase com je suis sûr que e a sua gémea com je doute que."
+    },
+    "pt_BR": {
+     "t": "Dúvida ou certeza",
+     "g": "Escolha o subjonctif para a dúvida e o indicativo para a certeza.",
+     "p": [
+      "Dúvida + subjonctif: je doute que, je ne suis pas sûr que, il est possible que, il se peut que.",
+      "Certeza + indicativo: je suis sûr que, je sais que, il est certain que, il est évident que.",
+      "Compare: je suis sûr qu'il vient (fato) ; je doute qu'il vienne (dúvida). Mesmo verbo, outro modo!"
+     ],
+     "q": "Amanhã vai fazer sol onde você mora? Responda com je suis sûr(e) que ou je doute que.",
+     "c": "Escreva três pares: uma frase com je suis sûr que e a sua gêmea com je doute que."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "je doute que",
+      "ex": "Je doute qu'il fasse beau demain."
+     },
+     {
+      "w": "je suis sûr(e) que",
+      "ex": "Je suis sûre que tu vas réussir."
+     },
+     {
+      "w": "il est possible que",
+      "ex": "Il est possible que le train ait du retard."
+     },
+     {
+      "w": "il se peut que",
+      "ex": "Il se peut que nous venions plus tard."
+     },
+     {
+      "w": "il est évident que",
+      "ex": "Il est évident qu'elle aime son travail."
+     },
+     {
+      "w": "je ne suis pas sûr(e) que",
+      "ex": "Je ne suis pas sûr que ce soit une bonne idée."
+     }
+    ],
+    "gram": "Doute ou possibilité + subjonctif (je doute qu'il vienne) ; certitude + indicatif (je suis sûr qu'il vient)."
+   }
+  },
+  {
+   "d": 187,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Penser que, ne pas penser que",
+     "g": "Use the indicative in positive opinions and the subjunctive in negative ones.",
+     "p": [
+      "Positive opinion + indicative: je pense que c'est vrai, je crois qu'il a raison, je trouve que c'est beau.",
+      "Negative or question + subjunctive: je ne pense pas que ce soit vrai, je ne crois pas qu'il ait raison.",
+      "In formal inversion too: penses-tu qu'il puisse venir ? In everyday speech, people often keep the indicative."
+     ],
+     "q": "Do you think French is harder than English? Answer with je pense que or je ne pense pas que.",
+     "c": "Give your opinion on three topics: once with je crois que, then the opposite with je ne crois pas que."
+    },
+    "de": {
+     "t": "Penser que, ne pas penser que",
+     "g": "Indikativ bei bejahter Meinung, Subjonctif bei verneinter Meinung.",
+     "p": [
+      "Bejahte Meinung + Indikativ: je pense que c'est vrai, je crois qu'il a raison, je trouve que c'est beau.",
+      "Verneinung oder Frage + Subjonctif: je ne pense pas que ce soit vrai, je ne crois pas qu'il ait raison.",
+      "Auch bei Inversion: penses-tu qu'il puisse venir ? Im Alltag hört man oft trotzdem den Indikativ."
+     ],
+     "q": "Findest du Französisch schwerer als Englisch? Antworte mit je pense que oder je ne pense pas que.",
+     "c": "Gib zu drei Themen deine Meinung: einmal mit je crois que, dann das Gegenteil mit je ne crois pas que."
+    },
+    "es": {
+     "t": "Penser que, ne pas penser que",
+     "g": "Indicativo en opiniones afirmativas y subjuntivo en las negativas.",
+     "p": [
+      "Opinión afirmativa + indicativo: je pense que c'est vrai, je crois qu'il a raison, je trouve que c'est beau.",
+      "Negación o pregunta + subjuntivo: je ne pense pas que ce soit vrai, je ne crois pas qu'il ait raison.",
+      "También con inversión: penses-tu qu'il puisse venir ? En el habla diaria a menudo se oye el indicativo."
+     ],
+     "q": "¿Crees que el francés es más difícil que el inglés? Responde con je pense que o je ne pense pas que.",
+     "c": "Da tu opinión sobre tres temas: con je crois que y luego lo contrario con je ne crois pas que."
+    },
+    "fr": {
+     "t": "Penser que, ne pas penser que",
+     "g": "Indicatif dans l'opinion affirmative, subjonctif dans l'opinion négative.",
+     "p": [
+      "Opinion affirmative + indicatif : je pense que c'est vrai, je crois qu'il a raison, je trouve que c'est beau.",
+      "Négation ou question + subjonctif : je ne pense pas que ce soit vrai, je ne crois pas qu'il ait raison.",
+      "Avec l'inversion aussi : penses-tu qu'il puisse venir ? À l'oral, on garde souvent l'indicatif."
+     ],
+     "q": "Penses-tu que le français est plus difficile que l'anglais ? Réponds avec je pense que ou je ne pense pas que.",
+     "c": "Donne ton avis sur trois sujets : avec je crois que, puis le contraire avec je ne crois pas que."
+    },
+    "it": {
+     "t": "Penser que, ne pas penser que",
+     "g": "Indicativo nelle opinioni affermative, subjonctif in quelle negative.",
+     "p": [
+      "Opinione affermativa + indicativo: je pense que c'est vrai, je crois qu'il a raison, je trouve que c'est beau.",
+      "Negazione o domanda + subjonctif: je ne pense pas que ce soit vrai, je ne crois pas qu'il ait raison.",
+      "Anche con l'inversione: penses-tu qu'il puisse venir ? Nel parlato si sente spesso l'indicativo."
+     ],
+     "q": "Pensi che il francese sia più difficile dell'inglese? Rispondi con je pense que o je ne pense pas que.",
+     "c": "Dai la tua opinione su tre temi: con je crois que, poi il contrario con je ne crois pas que."
+    },
+    "pt": {
+     "t": "Penser que, ne pas penser que",
+     "g": "Indicativo nas opiniões afirmativas, subjonctif nas negativas.",
+     "p": [
+      "Opinião afirmativa + indicativo: je pense que c'est vrai, je crois qu'il a raison, je trouve que c'est beau.",
+      "Negação ou pergunta + subjonctif: je ne pense pas que ce soit vrai, je ne crois pas qu'il ait raison.",
+      "Também com inversão: penses-tu qu'il puisse venir ? Na fala do dia a dia ouve-se muitas vezes o indicativo."
+     ],
+     "q": "Achas que o francês é mais difícil do que o inglês? Responde com je pense que ou je ne pense pas que.",
+     "c": "Dá a tua opinião sobre três temas: com je crois que e depois o contrário com je ne crois pas que."
+    },
+    "pt_BR": {
+     "t": "Penser que, ne pas penser que",
+     "g": "Indicativo nas opiniões afirmativas, subjonctif nas negativas.",
+     "p": [
+      "Opinião afirmativa + indicativo: je pense que c'est vrai, je crois qu'il a raison, je trouve que c'est beau.",
+      "Negação ou pergunta + subjonctif: je ne pense pas que ce soit vrai, je ne crois pas qu'il ait raison.",
+      "Também com inversão: penses-tu qu'il puisse venir ? Na fala do dia a dia muitas vezes se ouve o indicativo."
+     ],
+     "q": "Você acha que o francês é mais difícil que o inglês? Responda com je pense que ou je ne pense pas que.",
+     "c": "Dê sua opinião sobre três temas: com je crois que e depois o contrário com je ne crois pas que."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "je pense que",
+      "ex": "Je pense que ce film est excellent."
+     },
+     {
+      "w": "je ne pense pas que",
+      "ex": "Je ne pense pas que ce soit trop tard."
+     },
+     {
+      "w": "je crois que",
+      "ex": "Je crois qu'elle a raison."
+     },
+     {
+      "w": "je ne crois pas que",
+      "ex": "Je ne crois pas qu'il puisse venir ce soir."
+     },
+     {
+      "w": "je trouve que",
+      "ex": "Je trouve que ce quartier est très agréable."
+     },
+     {
+      "w": "penses-tu que",
+      "ex": "Penses-tu que ce soit une bonne solution ?"
+     }
+    ],
+    "gram": "Penser, croire, trouver que + indicatif ; à la forme négative ou interrogative (inversion) : + subjonctif."
+   }
+  },
+  {
+   "d": 188,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Conjunctions with subjunctive",
+     "g": "Use pour que, bien que, avant que, à moins que and sans que.",
+     "p": [
+      "Pour que (so that) and avant que (before): je parle lentement pour que tu comprennes.",
+      "Bien que (although): bien qu'il soit fatigué, il sort. À moins que (unless): à moins qu'il pleuve.",
+      "Sans que (without): il part sans que je le sache. Note: après que takes the indicative in good French."
+     ],
+     "q": "What do you do so that your day goes well? Answer with pour que and one more conjunction.",
+     "c": "Write five sentences, one with each conjunction: pour que, bien que, avant que, à moins que, sans que."
+    },
+    "de": {
+     "t": "Konjunktionen mit Subjonctif",
+     "g": "Du verwendest pour que, bien que, avant que, à moins que und sans que.",
+     "p": [
+      "Pour que (damit) und avant que (bevor): je parle lentement pour que tu comprennes.",
+      "Bien que (obwohl): bien qu'il soit fatigué, il sort. À moins que (es sei denn): à moins qu'il pleuve.",
+      "Sans que (ohne dass): il part sans que je le sache. Achtung: après que steht korrekt mit Indikativ."
+     ],
+     "q": "Was tust du, damit dein Tag gut läuft? Antworte mit pour que und einer weiteren Konjunktion.",
+     "c": "Schreib fünf Sätze, je einen mit pour que, bien que, avant que, à moins que und sans que."
+    },
+    "es": {
+     "t": "Conjunciones con subjuntivo",
+     "g": "Usa pour que, bien que, avant que, à moins que y sans que.",
+     "p": [
+      "Pour que (para que) y avant que (antes de que): je parle lentement pour que tu comprennes.",
+      "Bien que (aunque): bien qu'il soit fatigué, il sort. À moins que (a menos que): à moins qu'il pleuve.",
+      "Sans que (sin que): il part sans que je le sache. Ojo: après que va con indicativo en buen francés."
+     ],
+     "q": "¿Qué haces para que tu día salga bien? Responde con pour que y otra conjunción.",
+     "c": "Escribe cinco frases, una con cada conjunción: pour que, bien que, avant que, à moins que, sans que."
+    },
+    "fr": {
+     "t": "Les conjonctions + subjonctif",
+     "g": "Utiliser pour que, bien que, avant que, à moins que et sans que.",
+     "p": [
+      "Pour que (but) et avant que (antériorité) : je parle lentement pour que tu comprennes.",
+      "Bien que (concession) : bien qu'il soit fatigué, il sort. À moins que (condition) : à moins qu'il pleuve.",
+      "Sans que : il part sans que je le sache. Attention : après que se construit avec l'indicatif."
+     ],
+     "q": "Que fais-tu pour que ta journée se passe bien ? Réponds avec pour que et une autre conjonction.",
+     "c": "Écris cinq phrases, une par conjonction : pour que, bien que, avant que, à moins que, sans que."
+    },
+    "it": {
+     "t": "Congiunzioni con il congiuntivo",
+     "g": "Usa pour que, bien que, avant que, à moins que e sans que.",
+     "p": [
+      "Pour que (affinché) e avant que (prima che): je parle lentement pour que tu comprennes.",
+      "Bien que (benché): bien qu'il soit fatigué, il sort. À moins que (a meno che): à moins qu'il pleuve.",
+      "Sans que (senza che): il part sans que je le sache. Attenzione: après que vuole l'indicativo."
+     ],
+     "q": "Cosa fai perché la tua giornata vada bene? Rispondi con pour que e un'altra congiunzione.",
+     "c": "Scrivi cinque frasi, una per congiunzione: pour que, bien que, avant que, à moins que, sans que."
+    },
+    "pt": {
+     "t": "Conjunções com conjuntivo",
+     "g": "Usa pour que, bien que, avant que, à moins que e sans que.",
+     "p": [
+      "Pour que (para que) e avant que (antes que): je parle lentement pour que tu comprennes.",
+      "Bien que (embora): bien qu'il soit fatigué, il sort. À moins que (a menos que): à moins qu'il pleuve.",
+      "Sans que (sem que): il part sans que je le sache. Atenção: après que leva indicativo no bom francês."
+     ],
+     "q": "O que fazes para que o teu dia corra bem? Responde com pour que e mais uma conjunção.",
+     "c": "Escreve cinco frases, uma com cada conjunção: pour que, bien que, avant que, à moins que, sans que."
+    },
+    "pt_BR": {
+     "t": "Conjunções com subjuntivo",
+     "g": "Use pour que, bien que, avant que, à moins que e sans que.",
+     "p": [
+      "Pour que (para que) e avant que (antes que): je parle lentement pour que tu comprennes.",
+      "Bien que (embora): bien qu'il soit fatigué, il sort. À moins que (a menos que): à moins qu'il pleuve.",
+      "Sans que (sem que): il part sans que je le sache. Atenção: après que pede indicativo no bom francês."
+     ],
+     "q": "O que você faz para que o seu dia corra bem? Responda com pour que e mais uma conjunção.",
+     "c": "Escreva cinco frases, uma com cada conjunção: pour que, bien que, avant que, à moins que, sans que."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "pour que",
+      "ex": "Je parle lentement pour que tu comprennes."
+     },
+     {
+      "w": "bien que",
+      "ex": "Bien qu'il soit tard, nous continuons à discuter."
+     },
+     {
+      "w": "avant que",
+      "ex": "Rentrons avant qu'il fasse nuit."
+     },
+     {
+      "w": "à moins que",
+      "ex": "On ira à la plage, à moins qu'il pleuve."
+     },
+     {
+      "w": "sans que",
+      "ex": "Elle a organisé la fête sans que je le sache."
+     },
+     {
+      "w": "jusqu'à ce que",
+      "ex": "J'attends ici jusqu'à ce que tu arrives."
+     }
+    ],
+    "gram": "Pour que, bien que, avant que, à moins que, sans que, jusqu'à ce que + subjonctif. Après que + indicatif."
+   }
+  },
+  {
+   "d": 189,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Subjunctive or infinitive?",
+     "g": "Use the infinitive with one subject and que + subjunctive with two.",
+     "p": [
+      "Same subject → infinitive: je veux partir (I leave). Different subject → je veux que tu partes.",
+      "Same with feelings: je suis content d'être ici, but je suis content que tu sois ici.",
+      "Conjunctions too: pour + infinitive / pour que, avant de + infinitive / avant que: avant de partir."
+     ],
+     "q": "What do you want to do tonight, and what do you want your friends to do? Use both structures.",
+     "c": "Write four pairs like je veux partir / je veux que tu partes, with veux, content, pour and avant."
+    },
+    "de": {
+     "t": "Subjonctif oder Infinitiv?",
+     "g": "Infinitiv bei einem Subjekt, que + Subjonctif bei zwei verschiedenen Subjekten.",
+     "p": [
+      "Gleiches Subjekt → Infinitiv: je veux partir. Anderes Subjekt → je veux que tu partes.",
+      "Auch bei Gefühlen: je suis content d'être ici, aber je suis content que tu sois ici.",
+      "Ebenso bei Konjunktionen: pour + Infinitiv / pour que, avant de + Infinitiv / avant que."
+     ],
+     "q": "Was willst du heute Abend tun, und was sollen deine Freunde tun? Nutze beide Strukturen.",
+     "c": "Schreib vier Paare wie je veux partir / je veux que tu partes, mit veux, content, pour und avant."
+    },
+    "es": {
+     "t": "¿Subjuntivo o infinitivo?",
+     "g": "Usa el infinitivo con un solo sujeto y que + subjuntivo con dos.",
+     "p": [
+      "Mismo sujeto → infinitivo: je veux partir. Sujeto distinto → je veux que tu partes.",
+      "Igual con emociones: je suis content d'être ici, pero je suis content que tu sois ici.",
+      "También con conjunciones: pour + infinitivo / pour que, avant de + infinitivo / avant que."
+     ],
+     "q": "¿Qué quieres hacer esta noche y qué quieres que hagan tus amigos? Usa las dos estructuras.",
+     "c": "Escribe cuatro parejas como je veux partir / je veux que tu partes, con veux, content, pour y avant."
+    },
+    "fr": {
+     "t": "Subjonctif ou infinitif ?",
+     "g": "Infinitif avec un seul sujet, que + subjonctif avec deux sujets différents.",
+     "p": [
+      "Même sujet → infinitif : je veux partir. Sujets différents → je veux que tu partes.",
+      "Pareil avec les sentiments : je suis content d'être ici, mais je suis content que tu sois ici.",
+      "Avec les conjonctions aussi : pour + infinitif / pour que, avant de + infinitif / avant que."
+     ],
+     "q": "Que veux-tu faire ce soir, et que veux-tu que tes amis fassent ? Utilise les deux structures.",
+     "c": "Écris quatre paires comme je veux partir / je veux que tu partes, avec veux, content, pour et avant."
+    },
+    "it": {
+     "t": "Congiuntivo o infinito?",
+     "g": "Usa l'infinito con un solo soggetto e que + subjonctif con due soggetti.",
+     "p": [
+      "Stesso soggetto → infinito: je veux partir. Soggetto diverso → je veux que tu partes.",
+      "Anche con le emozioni: je suis content d'être ici, ma je suis content que tu sois ici.",
+      "Pure con le congiunzioni: pour + infinito / pour que, avant de + infinito / avant que."
+     ],
+     "q": "Cosa vuoi fare stasera e cosa vuoi che facciano i tuoi amici? Usa entrambe le strutture.",
+     "c": "Scrivi quattro coppie come je veux partir / je veux que tu partes, con veux, content, pour e avant."
+    },
+    "pt": {
+     "t": "Conjuntivo ou infinitivo?",
+     "g": "Usa o infinitivo com um só sujeito e que + subjonctif com dois.",
+     "p": [
+      "Mesmo sujeito → infinitivo: je veux partir. Sujeito diferente → je veux que tu partes.",
+      "Igual com emoções: je suis content d'être ici, mas je suis content que tu sois ici.",
+      "Também com conjunções: pour + infinitivo / pour que, avant de + infinitivo / avant que."
+     ],
+     "q": "O que queres fazer esta noite e o que queres que os teus amigos façam? Usa as duas estruturas.",
+     "c": "Escreve quatro pares como je veux partir / je veux que tu partes, com veux, content, pour e avant."
+    },
+    "pt_BR": {
+     "t": "Subjuntivo ou infinitivo?",
+     "g": "Use o infinitivo com um só sujeito e que + subjonctif com dois.",
+     "p": [
+      "Mesmo sujeito → infinitivo: je veux partir. Sujeito diferente → je veux que tu partes.",
+      "Igual com emoções: je suis content d'être ici, mas je suis content que tu sois ici.",
+      "Também com conjunções: pour + infinitivo / pour que, avant de + infinitivo / avant que."
+     ],
+     "q": "O que você quer fazer hoje à noite e o que quer que seus amigos façam? Use as duas estruturas.",
+     "c": "Escreva quatro pares como je veux partir / je veux que tu partes, com veux, content, pour e avant."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "je veux + infinitif",
+      "ex": "Je veux partir en vacances en juin."
+     },
+     {
+      "w": "je veux que + subjonctif",
+      "ex": "Je veux que tu partes avec moi."
+     },
+     {
+      "w": "content(e) de",
+      "ex": "Je suis content d'être ici avec vous."
+     },
+     {
+      "w": "pour + infinitif",
+      "ex": "J'économise pour acheter un vélo."
+     },
+     {
+      "w": "avant de",
+      "ex": "Lave-toi les mains avant de manger."
+     },
+     {
+      "w": "de peur de",
+      "ex": "Il ne parle pas de peur de faire des fautes."
+     }
+    ],
+    "gram": "Même sujet : verbe + infinitif (je veux partir). Deux sujets différents : que + subjonctif (je veux que tu partes)."
+   }
+  },
+  {
+   "d": 190,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Conditional past",
+     "g": "Use the past conditional for regrets and gentle reproaches.",
+     "p": [
+      "Form: avoir or être in the conditional + past participle: j'aurais aimé, nous serions partis.",
+      "Regrets: j'aurais dû étudier plus (I should have), j'aurais aimé voir ça (I would have liked).",
+      "Gentle reproach: tu aurais pu me prévenir ! (you could have told me). Keep the tone soft and friendly."
+     ],
+     "q": "Is there a small thing you would have liked to do last weekend? Start with j'aurais aimé...",
+     "c": "Write three sentences with j'aurais dû, j'aurais pu and j'aurais aimé about your past month."
+    },
+    "de": {
+     "t": "Konditional der Vergangenheit",
+     "g": "Du nutzt das Conditionnel passé für Bedauern und sanfte Vorwürfe.",
+     "p": [
+      "Bildung: avoir oder être im Konditional + Partizip: j'aurais aimé, nous serions partis.",
+      "Bedauern: j'aurais dû étudier plus (hätte sollen), j'aurais aimé voir ça (hätte gern).",
+      "Sanfter Vorwurf: tu aurais pu me prévenir ! (du hättest mir Bescheid sagen können). Freundlich bleiben."
+     ],
+     "q": "Was hättest du letztes Wochenende gern gemacht? Fang an mit j'aurais aimé...",
+     "c": "Schreib drei Sätze mit j'aurais dû, j'aurais pu und j'aurais aimé über deinen letzten Monat."
+    },
+    "es": {
+     "t": "Condicional pasado",
+     "g": "Usa el condicional pasado para lamentos y reproches suaves.",
+     "p": [
+      "Forma: avoir o être en condicional + participio: j'aurais aimé, nous serions partis.",
+      "Lamentos: j'aurais dû étudier plus (debería haber), j'aurais aimé voir ça (me habría gustado).",
+      "Reproche suave: tu aurais pu me prévenir ! (podrías haberme avisado). Con tono amable."
+     ],
+     "q": "¿Hay algo pequeño que te habría gustado hacer el fin de semana pasado? Empieza con j'aurais aimé...",
+     "c": "Escribe tres frases con j'aurais dû, j'aurais pu y j'aurais aimé sobre tu último mes."
+    },
+    "fr": {
+     "t": "Le conditionnel passé",
+     "g": "Utiliser le conditionnel passé pour les regrets et les reproches gentils.",
+     "p": [
+      "Formation : avoir ou être au conditionnel + participe passé : j'aurais aimé, nous serions partis.",
+      "Regrets : j'aurais dû étudier plus, j'aurais aimé voir ça, j'aurais voulu être là.",
+      "Reproche doux : tu aurais pu me prévenir ! Le ton reste gentil et amical."
+     ],
+     "q": "Y a-t-il une petite chose que tu aurais aimé faire le week-end dernier ? Commence par j'aurais aimé...",
+     "c": "Écris trois phrases avec j'aurais dû, j'aurais pu et j'aurais aimé sur ton dernier mois."
+    },
+    "it": {
+     "t": "Condizionale passato",
+     "g": "Usa il conditionnel passé per rimpianti e rimproveri gentili.",
+     "p": [
+      "Forma: avoir o être al condizionale + participio: j'aurais aimé, nous serions partis.",
+      "Rimpianti: j'aurais dû étudier plus (avrei dovuto), j'aurais aimé voir ça (mi sarebbe piaciuto).",
+      "Rimprovero gentile: tu aurais pu me prévenir ! (avresti potuto avvisarmi). Con tono amichevole."
+     ],
+     "q": "C'è una piccola cosa che avresti voluto fare lo scorso weekend? Comincia con j'aurais aimé...",
+     "c": "Scrivi tre frasi con j'aurais dû, j'aurais pu e j'aurais aimé sul tuo ultimo mese."
+    },
+    "pt": {
+     "t": "Condicional passado",
+     "g": "Usa o conditionnel passé para lamentos e censuras gentis.",
+     "p": [
+      "Forma: avoir ou être no condicional + particípio: j'aurais aimé, nous serions partis.",
+      "Lamentos: j'aurais dû étudier plus (devia ter), j'aurais aimé voir ça (teria gostado).",
+      "Censura suave: tu aurais pu me prévenir ! (podias ter-me avisado). Sempre com tom simpático."
+     ],
+     "q": "Há alguma coisa pequena que terias gostado de fazer no último fim de semana? Começa com j'aurais aimé...",
+     "c": "Escreve três frases com j'aurais dû, j'aurais pu e j'aurais aimé sobre o teu último mês."
+    },
+    "pt_BR": {
+     "t": "Condicional passado",
+     "g": "Use o conditionnel passé para arrependimentos e críticas gentis.",
+     "p": [
+      "Forma: avoir ou être no condicional + particípio: j'aurais aimé, nous serions partis.",
+      "Arrependimentos: j'aurais dû étudier plus (deveria ter), j'aurais aimé voir ça (teria gostado).",
+      "Crítica suave: tu aurais pu me prévenir ! (você podia ter me avisado). Sempre com tom gentil."
+     ],
+     "q": "Tem alguma coisa pequena que você teria gostado de fazer no último fim de semana? Comece com j'aurais aimé...",
+     "c": "Escreva três frases com j'aurais dû, j'aurais pu e j'aurais aimé sobre o seu último mês."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "j'aurais dû",
+      "ex": "J'aurais dû prendre un parapluie."
+     },
+     {
+      "w": "tu aurais pu",
+      "ex": "Tu aurais pu me dire que tu venais !"
+     },
+     {
+      "w": "j'aurais aimé",
+      "ex": "J'aurais aimé voir le concert avec toi."
+     },
+     {
+      "w": "nous serions partis",
+      "ex": "Sans la pluie, nous serions partis plus tôt."
+     },
+     {
+      "w": "elle aurait voulu",
+      "ex": "Elle aurait voulu rester plus longtemps à Lyon."
+     },
+     {
+      "w": "ça aurait été",
+      "ex": "Ça aurait été sympa de se voir."
+     }
+    ],
+    "gram": "Conditionnel passé : avoir / être au conditionnel + participe passé. J'aurais dû (regret), tu aurais pu (reproche doux)."
+   }
+  }
+ ]
+}

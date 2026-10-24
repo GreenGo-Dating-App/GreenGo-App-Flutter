@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 151,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Technology in daily life",
+     "g": "Talk about your phone, apps, passwords and Wi-Fi, and describe small tech problems.",
+     "p": [
+      "Words: das Handy, die App, das Passwort, das WLAN, der Akku, das Ladegerät, die Nachricht.",
+      "Actions: herunterladen, installieren, speichern, löschen, sich anmelden, aufladen.",
+      "Problems: Mein Akku ist leer. Das WLAN funktioniert nicht. Ich habe mein Passwort vergessen."
+     ],
+     "q": "Which three apps do you use most every day, and what do you use them for?",
+     "c": "Describe a tech problem you had in the Perfekt with two separable verbs, like heruntergeladen or aufgeladen."
+    },
+    "de": {
+     "t": "Technik im Alltag",
+     "g": "Du sprichst über Handy, Apps, Passwörter und WLAN und beschreibst kleine Technikprobleme.",
+     "p": [
+      "Wörter: das Handy, die App, das Passwort, das WLAN, der Akku, das Ladegerät, die Nachricht.",
+      "Aktionen: herunterladen, installieren, speichern, löschen, sich anmelden, aufladen.",
+      "Probleme: Mein Akku ist leer. Das WLAN funktioniert nicht. Ich habe mein Passwort vergessen."
+     ],
+     "q": "Welche drei Apps benutzt du jeden Tag am meisten, und wofür?",
+     "c": "Beschreib ein Technikproblem im Perfekt mit zwei trennbaren Verben wie heruntergeladen oder aufgeladen."
+    },
+    "es": {
+     "t": "La tecnología en el día a día",
+     "g": "Habla de tu móvil, apps, contraseñas y wifi, y describe pequeños problemas técnicos.",
+     "p": [
+      "Palabras: das Handy, die App, das Passwort, das WLAN, der Akku, das Ladegerät, die Nachricht.",
+      "Acciones: herunterladen, installieren, speichern, löschen, sich anmelden, aufladen.",
+      "Problemas: Mein Akku ist leer. Das WLAN funktioniert nicht. Ich habe mein Passwort vergessen."
+     ],
+     "q": "¿Qué tres apps usas más cada día y para qué?",
+     "c": "Describe un problema técnico que tuviste en Perfekt con dos verbos separables, como heruntergeladen o aufgeladen."
+    },
+    "fr": {
+     "t": "La technologie au quotidien",
+     "g": "Parler de ton portable, des applis, des mots de passe et du wifi, et décrire de petits soucis techniques.",
+     "p": [
+      "Mots : das Handy, die App, das Passwort, das WLAN, der Akku, das Ladegerät, die Nachricht.",
+      "Actions : herunterladen, installieren, speichern, löschen, sich anmelden, aufladen.",
+      "Problèmes : Mein Akku ist leer. Das WLAN funktioniert nicht. Ich habe mein Passwort vergessen."
+     ],
+     "q": "Quelles sont les trois applis que tu utilises le plus chaque jour, et pour quoi faire ?",
+     "c": "Décris un souci technique au Perfekt avec deux verbes séparables, comme heruntergeladen ou aufgeladen."
+    },
+    "it": {
+     "t": "La tecnologia nella vita quotidiana",
+     "g": "Parli di cellulare, app, password e wi-fi e descrivi piccoli problemi tecnici.",
+     "p": [
+      "Parole: das Handy, die App, das Passwort, das WLAN, der Akku, das Ladegerät, die Nachricht.",
+      "Azioni: herunterladen, installieren, speichern, löschen, sich anmelden, aufladen.",
+      "Problemi: Mein Akku ist leer. Das WLAN funktioniert nicht. Ich habe mein Passwort vergessen."
+     ],
+     "q": "Quali sono le tre app che usi di più ogni giorno e a che cosa ti servono?",
+     "c": "Descrivi un problema tecnico al Perfekt con due verbi separabili, come heruntergeladen o aufgeladen."
+    },
+    "pt": {
+     "t": "A tecnologia no dia a dia",
+     "g": "Falar do telemóvel, das apps, das palavras-passe e do wi-fi e descrever pequenos problemas técnicos.",
+     "p": [
+      "Palavras: das Handy, die App, das Passwort, das WLAN, der Akku, das Ladegerät, die Nachricht.",
+      "Ações: herunterladen, installieren, speichern, löschen, sich anmelden, aufladen.",
+      "Problemas: Mein Akku ist leer. Das WLAN funktioniert nicht. Ich habe mein Passwort vergessen."
+     ],
+     "q": "Quais são as três apps que usas mais todos os dias e para quê?",
+     "c": "Descreve um problema técnico no Perfekt com dois verbos separáveis, como heruntergeladen ou aufgeladen."
+    },
+    "pt_BR": {
+     "t": "A tecnologia no dia a dia",
+     "g": "Falar do celular, dos apps, das senhas e do wi-fi e descrever pequenos problemas técnicos.",
+     "p": [
+      "Palavras: das Handy, die App, das Passwort, das WLAN, der Akku, das Ladegerät, die Nachricht.",
+      "Ações: herunterladen, installieren, speichern, löschen, sich anmelden, aufladen.",
+      "Problemas: Mein Akku ist leer. Das WLAN funktioniert nicht. Ich habe mein Passwort vergessen."
+     ],
+     "q": "Quais são os três apps que você mais usa todo dia e para quê?",
+     "c": "Descreva um problema técnico no Perfekt com dois verbos separáveis, como heruntergeladen ou aufgeladen."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "das Handy",
+      "ex": "Mein Handy liegt immer neben dem Bett."
+     },
+     {
+      "w": "herunterladen",
+      "ex": "Ich habe gestern eine neue App heruntergeladen."
+     },
+     {
+      "w": "das Passwort",
+      "ex": "Ich habe mein Passwort schon wieder vergessen."
+     },
+     {
+      "w": "das WLAN",
+      "ex": "Wie ist das WLAN-Passwort hier?"
+     },
+     {
+      "w": "der Akku",
+      "ex": "Mein Akku ist fast leer."
+     },
+     {
+      "w": "aufladen",
+      "ex": "Kann ich hier mein Handy aufladen?"
+     }
+    ],
+    "gram": "Handy ist im Deutschen das Wort für Mobiltelefon. Perfekt trennbar: heruntergeladen, aufgeladen. Untrennbar: installiert."
+   }
+  },
+  {
+   "d": 152,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Job hunting",
+     "g": "Understand job ads and talk about the CV and cover letter for a German application.",
+     "p": [
+      "Documents: die Stellenanzeige, die Bewerbung, der Lebenslauf, das Anschreiben, das Zeugnis.",
+      "In the ad: Wir suchen ab sofort eine Verkäuferin (m/w/d) in Vollzeit / Teilzeit. Sie haben Erfahrung im Verkauf.",
+      "Applying: Ich bewerbe mich um die Stelle als ... Hiermit bewerbe ich mich ... Ich habe drei Jahre Erfahrung."
+     ],
+     "q": "What job would you apply for in a German-speaking country, and why would you be good at it?",
+     "c": "Write the first three sentences of a cover letter with Sehr geehrte, ich bewerbe mich um and your experience."
+    },
+    "de": {
+     "t": "Arbeitssuche",
+     "g": "Du verstehst Stellenanzeigen und sprichst über Lebenslauf und Anschreiben für eine Bewerbung.",
+     "p": [
+      "Unterlagen: die Stellenanzeige, die Bewerbung, der Lebenslauf, das Anschreiben, das Zeugnis.",
+      "In der Anzeige: Wir suchen ab sofort eine Verkäuferin (m/w/d) in Vollzeit / Teilzeit. Sie haben Erfahrung im Verkauf.",
+      "Sich bewerben: Ich bewerbe mich um die Stelle als ... Hiermit bewerbe ich mich ... Ich habe drei Jahre Erfahrung."
+     ],
+     "q": "Für welche Stelle würdest du dich in einem deutschsprachigen Land bewerben, und warum passt du gut?",
+     "c": "Schreib die ersten drei Sätze eines Anschreibens mit Sehr geehrte, ich bewerbe mich um und deiner Erfahrung."
+    },
+    "es": {
+     "t": "Buscar trabajo",
+     "g": "Entiende ofertas de empleo y habla del currículum y la carta de presentación en alemán.",
+     "p": [
+      "Documentos: die Stellenanzeige, die Bewerbung, der Lebenslauf, das Anschreiben, das Zeugnis.",
+      "En el anuncio: Wir suchen ab sofort eine Verkäuferin (m/w/d) in Vollzeit / Teilzeit. Sie haben Erfahrung im Verkauf.",
+      "Postularse: Ich bewerbe mich um die Stelle als ... Hiermit bewerbe ich mich ... Ich habe drei Jahre Erfahrung."
+     ],
+     "q": "¿A qué puesto te presentarías en un país germanohablante y por qué lo harías bien?",
+     "c": "Escribe las tres primeras frases de una carta con Sehr geehrte, ich bewerbe mich um y tu experiencia."
+    },
+    "fr": {
+     "t": "La recherche d'emploi",
+     "g": "Comprendre les offres d'emploi et parler du CV et de la lettre de motivation en allemand.",
+     "p": [
+      "Documents : die Stellenanzeige, die Bewerbung, der Lebenslauf, das Anschreiben, das Zeugnis.",
+      "Dans l'annonce : Wir suchen ab sofort eine Verkäuferin (m/w/d) in Vollzeit / Teilzeit. Sie haben Erfahrung im Verkauf.",
+      "Postuler : Ich bewerbe mich um die Stelle als ... Hiermit bewerbe ich mich ... Ich habe drei Jahre Erfahrung."
+     ],
+     "q": "À quel poste postulerais-tu dans un pays germanophone, et pourquoi serais-tu bon ?",
+     "c": "Écris les trois premières phrases d'une lettre avec Sehr geehrte, ich bewerbe mich um et ton expérience."
+    },
+    "it": {
+     "t": "Cercare lavoro",
+     "g": "Capisci gli annunci di lavoro e parli di curriculum e lettera di presentazione in tedesco.",
+     "p": [
+      "Documenti: die Stellenanzeige, die Bewerbung, der Lebenslauf, das Anschreiben, das Zeugnis.",
+      "Nell'annuncio: Wir suchen ab sofort eine Verkäuferin (m/w/d) in Vollzeit / Teilzeit. Sie haben Erfahrung im Verkauf.",
+      "Candidarsi: Ich bewerbe mich um die Stelle als ... Hiermit bewerbe ich mich ... Ich habe drei Jahre Erfahrung."
+     ],
+     "q": "Per quale posto ti candideresti in un paese di lingua tedesca e perché saresti bravo?",
+     "c": "Scrivi le prime tre frasi di una lettera con Sehr geehrte, ich bewerbe mich um e la tua esperienza."
+    },
+    "pt": {
+     "t": "Procurar emprego",
+     "g": "Perceber anúncios de emprego e falar do currículo e da carta de apresentação em alemão.",
+     "p": [
+      "Documentos: die Stellenanzeige, die Bewerbung, der Lebenslauf, das Anschreiben, das Zeugnis.",
+      "No anúncio: Wir suchen ab sofort eine Verkäuferin (m/w/d) in Vollzeit / Teilzeit. Sie haben Erfahrung im Verkauf.",
+      "Candidatar-se: Ich bewerbe mich um die Stelle als ... Hiermit bewerbe ich mich ... Ich habe drei Jahre Erfahrung."
+     ],
+     "q": "A que emprego te candidatarias num país de língua alemã e porque serias bom nele?",
+     "c": "Escreve as três primeiras frases de uma carta com Sehr geehrte, ich bewerbe mich um e a tua experiência."
+    },
+    "pt_BR": {
+     "t": "Procurar emprego",
+     "g": "Entender anúncios de emprego e falar do currículo e da carta de apresentação em alemão.",
+     "p": [
+      "Documentos: die Stellenanzeige, die Bewerbung, der Lebenslauf, das Anschreiben, das Zeugnis.",
+      "No anúncio: Wir suchen ab sofort eine Verkäuferin (m/w/d) in Vollzeit / Teilzeit. Sie haben Erfahrung im Verkauf.",
+      "Se candidatar: Ich bewerbe mich um die Stelle als ... Hiermit bewerbe ich mich ... Ich habe drei Jahre Erfahrung."
+     ],
+     "q": "Para qual vaga você se candidataria num país de língua alemã e por que seria bom nela?",
+     "c": "Escreva as três primeiras frases de uma carta com Sehr geehrte, ich bewerbe mich um e sua experiência."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Lebenslauf",
+      "ex": "Ich schicke Ihnen meinen Lebenslauf."
+     },
+     {
+      "w": "das Anschreiben",
+      "ex": "Das Anschreiben sollte eine Seite lang sein."
+     },
+     {
+      "w": "die Stellenanzeige",
+      "ex": "Ich habe Ihre Stellenanzeige im Internet gelesen."
+     },
+     {
+      "w": "sich bewerben um",
+      "ex": "Ich bewerbe mich um die Stelle als Koch."
+     },
+     {
+      "w": "die Erfahrung",
+      "ex": "Ich habe viel Erfahrung mit Kunden."
+     },
+     {
+      "w": "in Teilzeit",
+      "ex": "Ich möchte gern in Teilzeit arbeiten."
+     }
+    ],
+    "gram": "Sich bewerben um + Akk. (um die Stelle), bei + Dat. (bei Ihrer Firma). Als + Beruf ohne Artikel: als Lehrerin."
+   }
+  },
+  {
+   "d": 153,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Job interview basics",
+     "g": "Talk politely about your experience, strengths and goals in a job interview.",
+     "p": [
+      "Typical questions: Erzählen Sie etwas über sich. Warum möchten Sie bei uns arbeiten? Was sind Ihre Stärken?",
+      "Answers: Ich habe zwei Jahre als ... gearbeitet. Ich bin teamfähig und zuverlässig. Ich lerne schnell.",
+      "Goals and questions: In fünf Jahren möchte ich ... Darf ich auch eine Frage stellen? Wie sieht ein typischer Arbeitstag aus?"
+     ],
+     "q": "Erzählen Sie etwas über sich! Answer as in an interview: your experience and two strengths, using Sie.",
+     "c": "Prepare answers to the three typical questions, each in two sentences, and one question of your own."
+    },
+    "de": {
+     "t": "Grundlagen fürs Vorstellungsgespräch",
+     "g": "Du sprichst im Vorstellungsgespräch höflich über Erfahrung, Stärken und Ziele.",
+     "p": [
+      "Typische Fragen: Erzählen Sie etwas über sich. Warum möchten Sie bei uns arbeiten? Was sind Ihre Stärken?",
+      "Antworten: Ich habe zwei Jahre als ... gearbeitet. Ich bin teamfähig und zuverlässig. Ich lerne schnell.",
+      "Ziele und Fragen: In fünf Jahren möchte ich ... Darf ich auch eine Frage stellen? Wie sieht ein typischer Arbeitstag aus?"
+     ],
+     "q": "Erzählen Sie etwas über sich! Antworte wie im Vorstellungsgespräch: Erfahrung und zwei Stärken.",
+     "c": "Bereite Antworten auf die drei typischen Fragen vor, je zwei Sätze, und eine eigene Frage."
+    },
+    "es": {
+     "t": "Lo básico de una entrevista",
+     "g": "Habla con cortesía de tu experiencia, tus puntos fuertes y tus metas en una entrevista.",
+     "p": [
+      "Preguntas típicas: Erzählen Sie etwas über sich. Warum möchten Sie bei uns arbeiten? Was sind Ihre Stärken?",
+      "Respuestas: Ich habe zwei Jahre als ... gearbeitet. Ich bin teamfähig und zuverlässig. Ich lerne schnell.",
+      "Metas y preguntas: In fünf Jahren möchte ich ... Darf ich auch eine Frage stellen? Wie sieht ein typischer Arbeitstag aus?"
+     ],
+     "q": "Erzählen Sie etwas über sich! Responde como en una entrevista: tu experiencia y dos puntos fuertes.",
+     "c": "Prepara respuestas a las tres preguntas típicas, de dos frases cada una, y una pregunta tuya."
+    },
+    "fr": {
+     "t": "Les bases de l'entretien d'embauche",
+     "g": "Parler poliment de ton expérience, de tes points forts et de tes objectifs en entretien.",
+     "p": [
+      "Questions typiques : Erzählen Sie etwas über sich. Warum möchten Sie bei uns arbeiten? Was sind Ihre Stärken?",
+      "Réponses : Ich habe zwei Jahre als ... gearbeitet. Ich bin teamfähig und zuverlässig. Ich lerne schnell.",
+      "Objectifs et questions : In fünf Jahren möchte ich ... Darf ich auch eine Frage stellen? Wie sieht ein typischer Arbeitstag aus?"
+     ],
+     "q": "Erzählen Sie etwas über sich! Réponds comme en entretien : ton expérience et deux points forts.",
+     "c": "Prépare des réponses aux trois questions typiques, deux phrases chacune, et une question à toi."
+    },
+    "it": {
+     "t": "Le basi del colloquio di lavoro",
+     "g": "Parli con cortesia della tua esperienza, dei punti di forza e degli obiettivi in un colloquio.",
+     "p": [
+      "Domande tipiche: Erzählen Sie etwas über sich. Warum möchten Sie bei uns arbeiten? Was sind Ihre Stärken?",
+      "Risposte: Ich habe zwei Jahre als ... gearbeitet. Ich bin teamfähig und zuverlässig. Ich lerne schnell.",
+      "Obiettivi e domande: In fünf Jahren möchte ich ... Darf ich auch eine Frage stellen? Wie sieht ein typischer Arbeitstag aus?"
+     ],
+     "q": "Erzählen Sie etwas über sich! Rispondi come in un colloquio: esperienza e due punti di forza.",
+     "c": "Prepara le risposte alle tre domande tipiche, due frasi ciascuna, e una tua domanda."
+    },
+    "pt": {
+     "t": "Noções de entrevista de emprego",
+     "g": "Falar com educação da tua experiência, dos pontos fortes e dos objetivos numa entrevista.",
+     "p": [
+      "Perguntas típicas: Erzählen Sie etwas über sich. Warum möchten Sie bei uns arbeiten? Was sind Ihre Stärken?",
+      "Respostas: Ich habe zwei Jahre als ... gearbeitet. Ich bin teamfähig und zuverlässig. Ich lerne schnell.",
+      "Objetivos e perguntas: In fünf Jahren möchte ich ... Darf ich auch eine Frage stellen? Wie sieht ein typischer Arbeitstag aus?"
+     ],
+     "q": "Erzählen Sie etwas über sich! Responde como numa entrevista: a tua experiência e dois pontos fortes.",
+     "c": "Prepara respostas às três perguntas típicas, duas frases cada, e uma pergunta tua."
+    },
+    "pt_BR": {
+     "t": "O básico da entrevista de emprego",
+     "g": "Falar com educação da sua experiência, dos pontos fortes e das metas numa entrevista.",
+     "p": [
+      "Perguntas típicas: Erzählen Sie etwas über sich. Warum möchten Sie bei uns arbeiten? Was sind Ihre Stärken?",
+      "Respostas: Ich habe zwei Jahre als ... gearbeitet. Ich bin teamfähig und zuverlässig. Ich lerne schnell.",
+      "Metas e perguntas: In fünf Jahren möchte ich ... Darf ich auch eine Frage stellen? Wie sieht ein typischer Arbeitstag aus?"
+     ],
+     "q": "Erzählen Sie etwas über sich! Responda como numa entrevista: sua experiência e dois pontos fortes.",
+     "c": "Prepare respostas para as três perguntas típicas, duas frases cada, e uma pergunta sua."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "das Vorstellungsgespräch",
+      "ex": "Morgen habe ich ein Vorstellungsgespräch."
+     },
+     {
+      "w": "die Stärke",
+      "ex": "Meine Stärke ist die Kommunikation."
+     },
+     {
+      "w": "teamfähig",
+      "ex": "Ich bin teamfähig und arbeite gern mit anderen."
+     },
+     {
+      "w": "das Ziel",
+      "ex": "Mein Ziel ist, mehr Verantwortung zu übernehmen."
+     },
+     {
+      "w": "die Berufserfahrung",
+      "ex": "Ich habe drei Jahre Berufserfahrung."
+     },
+     {
+      "w": "sich vorstellen",
+      "ex": "Darf ich mich kurz vorstellen?"
+     }
+    ],
+    "gram": "Im Gespräch immer Sie: Was sind Ihre Stärken? Erfahrung mit als: Ich habe als Kellner gearbeitet (Perfekt)."
+   }
+  },
+  {
+   "d": 154,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "School and studies",
+     "g": "Talk about your education: Grundschule, Gymnasium, university and passing exams.",
+     "p": [
+      "School system: die Grundschule, dann zum Beispiel das Gymnasium mit dem Abitur, danach die Uni oder eine Ausbildung.",
+      "Exams: eine Prüfung machen, bestehen, nicht bestehen, sich auf eine Prüfung vorbereiten.",
+      "Studying: Ich studiere Informatik. Ich habe Biologie studiert. Mein Lieblingsfach war Mathe."
+     ],
+     "q": "What was your favourite school subject, and what did you study or learn after school?",
+     "c": "Write your education story in five Perfekt sentences, including one exam you passed."
+    },
+    "de": {
+     "t": "Schule und Studium",
+     "g": "Du sprichst über deine Ausbildung: Grundschule, Gymnasium, Uni und Prüfungen bestehen.",
+     "p": [
+      "Schulsystem: die Grundschule, dann zum Beispiel das Gymnasium mit dem Abitur, danach die Uni oder eine Ausbildung.",
+      "Prüfungen: eine Prüfung machen, bestehen, nicht bestehen, sich auf eine Prüfung vorbereiten.",
+      "Studieren: Ich studiere Informatik. Ich habe Biologie studiert. Mein Lieblingsfach war Mathe."
+     ],
+     "q": "Was war dein Lieblingsfach in der Schule, und was hast du nach der Schule gelernt oder studiert?",
+     "c": "Schreib deinen Bildungsweg in fünf Sätzen im Perfekt, mit einer Prüfung, die du bestanden hast."
+    },
+    "es": {
+     "t": "Escuela y estudios",
+     "g": "Habla de tu formación: Grundschule, Gymnasium, universidad y aprobar exámenes.",
+     "p": [
+      "Sistema escolar: die Grundschule, dann zum Beispiel das Gymnasium mit dem Abitur, danach die Uni oder eine Ausbildung.",
+      "Exámenes: eine Prüfung machen, bestehen, nicht bestehen, sich auf eine Prüfung vorbereiten.",
+      "Estudiar: Ich studiere Informatik. Ich habe Biologie studiert. Mein Lieblingsfach war Mathe."
+     ],
+     "q": "¿Cuál era tu asignatura favorita y qué estudiaste o aprendiste después del colegio?",
+     "c": "Escribe tu trayectoria de estudios en cinco frases en Perfekt, con un examen que aprobaste."
+    },
+    "fr": {
+     "t": "L'école et les études",
+     "g": "Parler de ta scolarité : Grundschule, Gymnasium, université et réussite aux examens.",
+     "p": [
+      "Système scolaire : die Grundschule, dann zum Beispiel das Gymnasium mit dem Abitur, danach die Uni oder eine Ausbildung.",
+      "Examens : eine Prüfung machen, bestehen, nicht bestehen, sich auf eine Prüfung vorbereiten.",
+      "Faire des études : Ich studiere Informatik. Ich habe Biologie studiert. Mein Lieblingsfach war Mathe."
+     ],
+     "q": "Quelle était ta matière préférée, et qu'as-tu étudié ou appris après l'école ?",
+     "c": "Raconte ton parcours scolaire en cinq phrases au Perfekt, avec un examen que tu as réussi."
+    },
+    "it": {
+     "t": "Scuola e studi",
+     "g": "Parli della tua formazione: Grundschule, Gymnasium, università e superare gli esami.",
+     "p": [
+      "Sistema scolastico: die Grundschule, dann zum Beispiel das Gymnasium mit dem Abitur, danach die Uni oder eine Ausbildung.",
+      "Esami: eine Prüfung machen, bestehen, nicht bestehen, sich auf eine Prüfung vorbereiten.",
+      "Studiare: Ich studiere Informatik. Ich habe Biologie studiert. Mein Lieblingsfach war Mathe."
+     ],
+     "q": "Qual era la tua materia preferita e che cosa hai studiato o imparato dopo la scuola?",
+     "c": "Racconta il tuo percorso di studi in cinque frasi al Perfekt, con un esame che hai superato."
+    },
+    "pt": {
+     "t": "Escola e estudos",
+     "g": "Falar do teu percurso: Grundschule, Gymnasium, universidade e passar nos exames.",
+     "p": [
+      "Sistema escolar: die Grundschule, dann zum Beispiel das Gymnasium mit dem Abitur, danach die Uni oder eine Ausbildung.",
+      "Exames: eine Prüfung machen, bestehen, nicht bestehen, sich auf eine Prüfung vorbereiten.",
+      "Estudar: Ich studiere Informatik. Ich habe Biologie studiert. Mein Lieblingsfach war Mathe."
+     ],
+     "q": "Qual era a tua disciplina preferida e o que estudaste ou aprendeste depois da escola?",
+     "c": "Escreve o teu percurso escolar em cinco frases no Perfekt, com um exame em que passaste."
+    },
+    "pt_BR": {
+     "t": "Escola e estudos",
+     "g": "Falar da sua formação: Grundschule, Gymnasium, faculdade e passar nas provas.",
+     "p": [
+      "Sistema escolar: die Grundschule, dann zum Beispiel das Gymnasium mit dem Abitur, danach die Uni oder eine Ausbildung.",
+      "Exames: eine Prüfung machen, bestehen, nicht bestehen, sich auf eine Prüfung vorbereiten.",
+      "Estudar: Ich studiere Informatik. Ich habe Biologie studiert. Mein Lieblingsfach war Mathe."
+     ],
+     "q": "Qual era sua matéria favorita e o que você estudou ou aprendeu depois da escola?",
+     "c": "Escreva sua trajetória escolar em cinco frases no Perfekt, com uma prova em que você passou."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Grundschule",
+      "ex": "In der Grundschule hatte ich eine tolle Lehrerin."
+     },
+     {
+      "w": "das Gymnasium",
+      "ex": "Mein Bruder geht aufs Gymnasium."
+     },
+     {
+      "w": "die Uni",
+      "ex": "Ich habe in Porto an der Uni studiert."
+     },
+     {
+      "w": "eine Prüfung bestehen",
+      "ex": "Sie hat die Prüfung mit einer guten Note bestanden."
+     },
+     {
+      "w": "das Fach",
+      "ex": "Mein Lieblingsfach war Geschichte."
+     },
+     {
+      "w": "die Ausbildung",
+      "ex": "Er macht eine Ausbildung als Elektriker."
+     }
+    ],
+    "gram": "An der Uni studieren, aufs Gymnasium gehen. Bestehen: Perfekt hat bestanden. Lernen (allgemein) vs. studieren (Uni)."
+   }
+  },
+  {
+   "d": 155,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Seit, vor, für: time",
+     "g": "Use seit, vor and für correctly to say since when, how long ago and for how long.",
+     "p": [
+      "seit + present: Ich lerne seit zwei Jahren Deutsch (und lerne noch). Seit wann wohnst du hier?",
+      "vor + past: Ich bin vor einem Jahr nach Wien gezogen. Vor drei Tagen habe ich sie getroffen.",
+      "für + duration: Ich fahre für eine Woche nach Hamburg. Seit und vor + Dativ, für + Akkusativ."
+     ],
+     "q": "Seit wann lernst du Deutsch, and what did you do vor einem Jahr? Answer both in German.",
+     "c": "Write six sentences about your life, two each with seit, vor and für, and check the dative endings."
+    },
+    "de": {
+     "t": "Seit, vor, für: Zeit",
+     "g": "Du benutzt seit, vor und für richtig: seit wann, wie lange her und für wie lange.",
+     "p": [
+      "seit + Präsens: Ich lerne seit zwei Jahren Deutsch (und lerne noch). Seit wann wohnst du hier?",
+      "vor + Vergangenheit: Ich bin vor einem Jahr nach Wien gezogen. Vor drei Tagen habe ich sie getroffen.",
+      "für + Dauer: Ich fahre für eine Woche nach Hamburg. Seit und vor + Dativ, für + Akkusativ."
+     ],
+     "q": "Seit wann lernst du Deutsch, und was hast du vor einem Jahr gemacht? Antworte auf beides.",
+     "c": "Schreib sechs Sätze über dein Leben, je zwei mit seit, vor und für, und prüf die Dativendungen."
+    },
+    "es": {
+     "t": "Seit, vor, für: el tiempo",
+     "g": "Usa bien seit, vor y für para decir desde cuándo, hace cuánto y durante cuánto tiempo.",
+     "p": [
+      "seit + presente: Ich lerne seit zwei Jahren Deutsch (und lerne noch). Seit wann wohnst du hier?",
+      "vor + pasado: Ich bin vor einem Jahr nach Wien gezogen. Vor drei Tagen habe ich sie getroffen.",
+      "für + duración: Ich fahre für eine Woche nach Hamburg. Seit und vor + Dativ, für + Akkusativ."
+     ],
+     "q": "Seit wann lernst du Deutsch, y qué hacías vor einem Jahr? Responde a las dos en alemán.",
+     "c": "Escribe seis frases sobre tu vida, dos con seit, dos con vor y dos con für, y revisa el dativo."
+    },
+    "fr": {
+     "t": "Seit, vor, für : le temps",
+     "g": "Bien utiliser seit, vor et für pour dire depuis quand, il y a combien de temps et pour combien de temps.",
+     "p": [
+      "seit + présent : Ich lerne seit zwei Jahren Deutsch (und lerne noch). Seit wann wohnst du hier?",
+      "vor + passé : Ich bin vor einem Jahr nach Wien gezogen. Vor drei Tagen habe ich sie getroffen.",
+      "für + durée : Ich fahre für eine Woche nach Hamburg. Seit und vor + Dativ, für + Akkusativ."
+     ],
+     "q": "Seit wann lernst du Deutsch, et qu'as-tu fait vor einem Jahr ? Réponds aux deux en allemand.",
+     "c": "Écris six phrases sur ta vie, deux avec seit, deux avec vor et deux avec für, et vérifie le datif."
+    },
+    "it": {
+     "t": "Seit, vor, für: il tempo",
+     "g": "Usi bene seit, vor e für per dire da quando, quanto tempo fa e per quanto tempo.",
+     "p": [
+      "seit + presente: Ich lerne seit zwei Jahren Deutsch (und lerne noch). Seit wann wohnst du hier?",
+      "vor + passato: Ich bin vor einem Jahr nach Wien gezogen. Vor drei Tagen habe ich sie getroffen.",
+      "für + durata: Ich fahre für eine Woche nach Hamburg. Seit und vor + Dativ, für + Akkusativ."
+     ],
+     "q": "Seit wann lernst du Deutsch, e che cosa hai fatto vor einem Jahr? Rispondi a entrambe in tedesco.",
+     "c": "Scrivi sei frasi sulla tua vita, due con seit, due con vor e due con für, e controlla il dativo."
+    },
+    "pt": {
+     "t": "Seit, vor, für: o tempo",
+     "g": "Usar bem seit, vor e für para dizer desde quando, há quanto tempo e por quanto tempo.",
+     "p": [
+      "seit + presente: Ich lerne seit zwei Jahren Deutsch (und lerne noch). Seit wann wohnst du hier?",
+      "vor + passado: Ich bin vor einem Jahr nach Wien gezogen. Vor drei Tagen habe ich sie getroffen.",
+      "für + duração: Ich fahre für eine Woche nach Hamburg. Seit und vor + Dativ, für + Akkusativ."
+     ],
+     "q": "Seit wann lernst du Deutsch, e o que fizeste vor einem Jahr? Responde às duas em alemão.",
+     "c": "Escreve seis frases sobre a tua vida, duas com seit, duas com vor e duas com für, e verifica o dativo."
+    },
+    "pt_BR": {
+     "t": "Seit, vor, für: o tempo",
+     "g": "Usar bem seit, vor e für para dizer desde quando, há quanto tempo e por quanto tempo.",
+     "p": [
+      "seit + presente: Ich lerne seit zwei Jahren Deutsch (und lerne noch). Seit wann wohnst du hier?",
+      "vor + passado: Ich bin vor einem Jahr nach Wien gezogen. Vor drei Tagen habe ich sie getroffen.",
+      "für + duração: Ich fahre für eine Woche nach Hamburg. Seit und vor + Dativ, für + Akkusativ."
+     ],
+     "q": "Seit wann lernst du Deutsch, e o que você fez vor einem Jahr? Responda às duas em alemão.",
+     "c": "Escreva seis frases sobre sua vida, duas com seit, duas com vor e duas com für, e confira o dativo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "seit zwei Jahren",
+      "ex": "Ich wohne seit zwei Jahren in Leipzig."
+     },
+     {
+      "w": "vor einem Monat",
+      "ex": "Vor einem Monat habe ich angefangen."
+     },
+     {
+      "w": "für eine Woche",
+      "ex": "Wir fahren für eine Woche an die Ostsee."
+     },
+     {
+      "w": "Seit wann ...?",
+      "ex": "Seit wann spielst du Gitarre?"
+     },
+     {
+      "w": "Wie lange ...?",
+      "ex": "Wie lange bleibst du in Berlin?"
+     },
+     {
+      "w": "schon",
+      "ex": "Ich warte schon seit einer Stunde."
+     }
+    ],
+    "gram": "Seit + Dativ + Präsens (dauert noch): seit einem Jahr. Vor + Dativ + Vergangenheit: vor zwei Wochen. Für + Akk.: für einen Tag."
+   }
+  },
+  {
+   "d": 156,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Infinitive with zu",
+     "g": "Build sentences with zu + infinitive after Lust haben, es ist schön, versuchen and vergessen.",
+     "p": [
+      "After expressions: Ich habe Lust, ins Kino zu gehen. Es ist schön, Deutsch zu lernen. Ich habe keine Zeit, zu kochen.",
+      "After verbs: Ich versuche, jeden Tag zu lesen. Vergiss nicht, mich anzurufen! Ich fange an zu laufen.",
+      "Separable verbs: zu in der Mitte: anzurufen, aufzustehen, einzukaufen. Nach Modalverben kein zu: Ich kann schwimmen."
+     ],
+     "q": "What do you feel like doing this weekend? Answer with Ich habe Lust, ... zu ...",
+     "c": "Write five zu sentences: with Lust haben, es ist wichtig, versuchen, vergessen and one separable verb."
+    },
+    "de": {
+     "t": "Infinitiv mit zu",
+     "g": "Du bildest Sätze mit zu + Infinitiv nach Lust haben, es ist schön, versuchen und vergessen.",
+     "p": [
+      "Nach Ausdrücken: Ich habe Lust, ins Kino zu gehen. Es ist schön, Deutsch zu lernen. Ich habe keine Zeit, zu kochen.",
+      "Nach Verben: Ich versuche, jeden Tag zu lesen. Vergiss nicht, mich anzurufen! Ich fange an zu laufen.",
+      "Trennbare Verben: zu in der Mitte: anzurufen, aufzustehen, einzukaufen. Nach Modalverben kein zu: Ich kann schwimmen."
+     ],
+     "q": "Worauf hast du am Wochenende Lust? Antworte mit Ich habe Lust, ... zu ...",
+     "c": "Schreib fünf Sätze mit zu: mit Lust haben, es ist wichtig, versuchen, vergessen und einem trennbaren Verb."
+    },
+    "es": {
+     "t": "El infinitivo con zu",
+     "g": "Forma frases con zu + infinitivo tras Lust haben, es ist schön, versuchen y vergessen.",
+     "p": [
+      "Tras expresiones: Ich habe Lust, ins Kino zu gehen. Es ist schön, Deutsch zu lernen. Ich habe keine Zeit, zu kochen.",
+      "Tras verbos: Ich versuche, jeden Tag zu lesen. Vergiss nicht, mich anzurufen! Ich fange an zu laufen.",
+      "Verbos separables: zu in der Mitte: anzurufen, aufzustehen, einzukaufen. Nach Modalverben kein zu: Ich kann schwimmen."
+     ],
+     "q": "¿Qué te apetece hacer este fin de semana? Responde con Ich habe Lust, ... zu ...",
+     "c": "Escribe cinco frases con zu: con Lust haben, es ist wichtig, versuchen, vergessen y un verbo separable."
+    },
+    "fr": {
+     "t": "L'infinitif avec zu",
+     "g": "Construire des phrases avec zu + infinitif après Lust haben, es ist schön, versuchen et vergessen.",
+     "p": [
+      "Après des expressions : Ich habe Lust, ins Kino zu gehen. Es ist schön, Deutsch zu lernen. Ich habe keine Zeit, zu kochen.",
+      "Après des verbes : Ich versuche, jeden Tag zu lesen. Vergiss nicht, mich anzurufen! Ich fange an zu laufen.",
+      "Verbes séparables : zu in der Mitte: anzurufen, aufzustehen, einzukaufen. Nach Modalverben kein zu: Ich kann schwimmen."
+     ],
+     "q": "Qu'as-tu envie de faire ce week-end ? Réponds avec Ich habe Lust, ... zu ...",
+     "c": "Écris cinq phrases avec zu : avec Lust haben, es ist wichtig, versuchen, vergessen et un verbe séparable."
+    },
+    "it": {
+     "t": "L'infinito con zu",
+     "g": "Costruisci frasi con zu + infinito dopo Lust haben, es ist schön, versuchen e vergessen.",
+     "p": [
+      "Dopo espressioni: Ich habe Lust, ins Kino zu gehen. Es ist schön, Deutsch zu lernen. Ich habe keine Zeit, zu kochen.",
+      "Dopo verbi: Ich versuche, jeden Tag zu lesen. Vergiss nicht, mich anzurufen! Ich fange an zu laufen.",
+      "Verbi separabili: zu in der Mitte: anzurufen, aufzustehen, einzukaufen. Nach Modalverben kein zu: Ich kann schwimmen."
+     ],
+     "q": "Che cosa hai voglia di fare questo fine settimana? Rispondi con Ich habe Lust, ... zu ...",
+     "c": "Scrivi cinque frasi con zu: con Lust haben, es ist wichtig, versuchen, vergessen e un verbo separabile."
+    },
+    "pt": {
+     "t": "O infinitivo com zu",
+     "g": "Construir frases com zu + infinitivo depois de Lust haben, es ist schön, versuchen e vergessen.",
+     "p": [
+      "Depois de expressões: Ich habe Lust, ins Kino zu gehen. Es ist schön, Deutsch zu lernen. Ich habe keine Zeit, zu kochen.",
+      "Depois de verbos: Ich versuche, jeden Tag zu lesen. Vergiss nicht, mich anzurufen! Ich fange an zu laufen.",
+      "Verbos separáveis: zu in der Mitte: anzurufen, aufzustehen, einzukaufen. Nach Modalverben kein zu: Ich kann schwimmen."
+     ],
+     "q": "O que te apetece fazer este fim de semana? Responde com Ich habe Lust, ... zu ...",
+     "c": "Escreve cinco frases com zu: com Lust haben, es ist wichtig, versuchen, vergessen e um verbo separável."
+    },
+    "pt_BR": {
+     "t": "O infinitivo com zu",
+     "g": "Montar frases com zu + infinitivo depois de Lust haben, es ist schön, versuchen e vergessen.",
+     "p": [
+      "Depois de expressões: Ich habe Lust, ins Kino zu gehen. Es ist schön, Deutsch zu lernen. Ich habe keine Zeit, zu kochen.",
+      "Depois de verbos: Ich versuche, jeden Tag zu lesen. Vergiss nicht, mich anzurufen! Ich fange an zu laufen.",
+      "Verbos separáveis: zu in der Mitte: anzurufen, aufzustehen, einzukaufen. Nach Modalverben kein zu: Ich kann schwimmen."
+     ],
+     "q": "O que você está com vontade de fazer neste fim de semana? Responda com Ich habe Lust, ... zu ...",
+     "c": "Escreva cinco frases com zu: com Lust haben, es ist wichtig, versuchen, vergessen e um verbo separável."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Lust haben, ... zu",
+      "ex": "Hast du Lust, heute Abend zu kochen?"
+     },
+     {
+      "w": "versuchen",
+      "ex": "Ich versuche, mehr Deutsch zu sprechen."
+     },
+     {
+      "w": "vergessen",
+      "ex": "Ich habe vergessen, Milch zu kaufen."
+     },
+     {
+      "w": "Es ist schön, ... zu",
+      "ex": "Es ist schön, dich wiederzusehen."
+     },
+     {
+      "w": "anfangen",
+      "ex": "Es fängt an zu regnen."
+     },
+     {
+      "w": "keine Zeit haben",
+      "ex": "Ich habe keine Zeit, die Küche aufzuräumen."
+     }
+    ],
+    "gram": "Zu + Infinitiv am Satzende: Ich versuche, früh aufzustehen. Trennbar: auf-zu-stehen. Nach Modalverben ohne zu."
+   }
+  },
+  {
+   "d": 157,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Um... zu: expressing purpose",
+     "g": "Say why you do something with um ... zu, for example Ich lerne Deutsch, um in Berlin zu arbeiten.",
+     "p": [
+      "Structure: Hauptsatz, um + Ergänzungen + zu + Infinitiv: Ich spare Geld, um ein Auto zu kaufen.",
+      "Question: Wozu lernst du Deutsch? Um mit meinen Kollegen zu sprechen. Warum? Weil ...",
+      "um zu or damit: Gleiche Person: um ... zu. Andere Person: damit. Ich erkläre es, damit du es verstehst."
+     ],
+     "q": "Wozu lernst du Deutsch? Give me two reasons with um ... zu.",
+     "c": "Write four sentences about your daily routine with um ... zu, and one with damit and a different person."
+    },
+    "de": {
+     "t": "Um ... zu: Zweck ausdrücken",
+     "g": "Du sagst mit um ... zu, warum du etwas machst: Ich lerne Deutsch, um in Berlin zu arbeiten.",
+     "p": [
+      "Struktur: Hauptsatz, um + Ergänzungen + zu + Infinitiv: Ich spare Geld, um ein Auto zu kaufen.",
+      "Frage: Wozu lernst du Deutsch? Um mit meinen Kollegen zu sprechen. Warum? Weil ...",
+      "um zu oder damit: Gleiche Person: um ... zu. Andere Person: damit. Ich erkläre es, damit du es verstehst."
+     ],
+     "q": "Wozu lernst du Deutsch? Nenn mir zwei Gründe mit um ... zu.",
+     "c": "Schreib vier Sätze über deinen Alltag mit um ... zu und einen mit damit und einer anderen Person."
+    },
+    "es": {
+     "t": "Um ... zu: expresar finalidad",
+     "g": "Di para qué haces algo con um ... zu: Ich lerne Deutsch, um in Berlin zu arbeiten.",
+     "p": [
+      "Estructura: Hauptsatz, um + Ergänzungen + zu + Infinitiv: Ich spare Geld, um ein Auto zu kaufen.",
+      "Pregunta: Wozu lernst du Deutsch? Um mit meinen Kollegen zu sprechen. Warum? Weil ...",
+      "um zu o damit: Gleiche Person: um ... zu. Andere Person: damit. Ich erkläre es, damit du es verstehst."
+     ],
+     "q": "Wozu lernst du Deutsch? Dame dos motivos con um ... zu.",
+     "c": "Escribe cuatro frases sobre tu rutina con um ... zu y una con damit y otra persona."
+    },
+    "fr": {
+     "t": "Um ... zu : exprimer le but",
+     "g": "Dire dans quel but tu fais quelque chose avec um ... zu : Ich lerne Deutsch, um in Berlin zu arbeiten.",
+     "p": [
+      "Structure : Hauptsatz, um + Ergänzungen + zu + Infinitiv: Ich spare Geld, um ein Auto zu kaufen.",
+      "Question : Wozu lernst du Deutsch? Um mit meinen Kollegen zu sprechen. Warum? Weil ...",
+      "um zu ou damit : Gleiche Person: um ... zu. Andere Person: damit. Ich erkläre es, damit du es verstehst."
+     ],
+     "q": "Wozu lernst du Deutsch? Donne-moi deux raisons avec um ... zu.",
+     "c": "Écris quatre phrases sur ta routine avec um ... zu, et une avec damit et une autre personne."
+    },
+    "it": {
+     "t": "Um ... zu: esprimere lo scopo",
+     "g": "Dici perché fai qualcosa con um ... zu: Ich lerne Deutsch, um in Berlin zu arbeiten.",
+     "p": [
+      "Struttura: Hauptsatz, um + Ergänzungen + zu + Infinitiv: Ich spare Geld, um ein Auto zu kaufen.",
+      "Domanda: Wozu lernst du Deutsch? Um mit meinen Kollegen zu sprechen. Warum? Weil ...",
+      "um zu o damit: Gleiche Person: um ... zu. Andere Person: damit. Ich erkläre es, damit du es verstehst."
+     ],
+     "q": "Wozu lernst du Deutsch? Dammi due motivi con um ... zu.",
+     "c": "Scrivi quattro frasi sulla tua routine con um ... zu e una con damit e un'altra persona."
+    },
+    "pt": {
+     "t": "Um ... zu: exprimir finalidade",
+     "g": "Dizer para que fazes algo com um ... zu: Ich lerne Deutsch, um in Berlin zu arbeiten.",
+     "p": [
+      "Estrutura: Hauptsatz, um + Ergänzungen + zu + Infinitiv: Ich spare Geld, um ein Auto zu kaufen.",
+      "Pergunta: Wozu lernst du Deutsch? Um mit meinen Kollegen zu sprechen. Warum? Weil ...",
+      "um zu ou damit: Gleiche Person: um ... zu. Andere Person: damit. Ich erkläre es, damit du es verstehst."
+     ],
+     "q": "Wozu lernst du Deutsch? Dá-me dois motivos com um ... zu.",
+     "c": "Escreve quatro frases sobre a tua rotina com um ... zu e uma com damit e outra pessoa."
+    },
+    "pt_BR": {
+     "t": "Um ... zu: expressar finalidade",
+     "g": "Dizer para que você faz algo com um ... zu: Ich lerne Deutsch, um in Berlin zu arbeiten.",
+     "p": [
+      "Estrutura: Hauptsatz, um + Ergänzungen + zu + Infinitiv: Ich spare Geld, um ein Auto zu kaufen.",
+      "Pergunta: Wozu lernst du Deutsch? Um mit meinen Kollegen zu sprechen. Warum? Weil ...",
+      "um zu ou damit: Gleiche Person: um ... zu. Andere Person: damit. Ich erkläre es, damit du es verstehst."
+     ],
+     "q": "Wozu lernst du Deutsch? Me dê dois motivos com um ... zu.",
+     "c": "Escreva quatro frases sobre sua rotina com um ... zu e uma com damit e outra pessoa."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "um ... zu",
+      "ex": "Ich stehe früh auf, um Sport zu machen."
+     },
+     {
+      "w": "wozu",
+      "ex": "Wozu brauchst du das Werkzeug?"
+     },
+     {
+      "w": "damit",
+      "ex": "Ich spreche langsam, damit alle mich verstehen."
+     },
+     {
+      "w": "sparen",
+      "ex": "Wir sparen, um nach Kanada zu reisen."
+     },
+     {
+      "w": "um ... kennenzulernen",
+      "ex": "Ich gehe in den Verein, um Leute kennenzulernen."
+     },
+     {
+      "w": "der Grund",
+      "ex": "Das ist der wichtigste Grund."
+     }
+    ],
+    "gram": "Um ... zu: gleiches Subjekt, Infinitiv am Ende. Damit: anderes Subjekt, Verb am Ende. Wozu? fragt nach dem Zweck."
+   }
+  },
+  {
+   "d": 158,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "German food culture",
+     "g": "Discover regional dishes, Abendbrot, Kaffee und Kuchen and Brezeln, and compare them with your food.",
+     "p": [
+      "Traditions: Abendbrot: abends oft Brot mit Käse und Wurst. Am Sonntagnachmittag gibt es Kaffee und Kuchen.",
+      "Regional dishes: Brezeln und Weißwurst in Bayern, Fischbrötchen in Hamburg, Spätzle in Schwaben, Currywurst in Berlin.",
+      "Describing taste: Das schmeckt lecker, salzig, süß, sauer, scharf. Das ist typisch für ..."
+     ],
+     "q": "What is a typical dish from your region, and which German food would you like to try?",
+     "c": "Explain a dish from your country in five sentences: ingredients, when you eat it and how it tastes."
+    },
+    "de": {
+     "t": "Deutsche Esskultur",
+     "g": "Du entdeckst regionale Gerichte, Abendbrot, Kaffee und Kuchen und Brezeln und vergleichst sie.",
+     "p": [
+      "Traditionen: Abendbrot: abends oft Brot mit Käse und Wurst. Am Sonntagnachmittag gibt es Kaffee und Kuchen.",
+      "Regionale Gerichte: Brezeln und Weißwurst in Bayern, Fischbrötchen in Hamburg, Spätzle in Schwaben, Currywurst in Berlin.",
+      "Geschmack beschreiben: Das schmeckt lecker, salzig, süß, sauer, scharf. Das ist typisch für ..."
+     ],
+     "q": "Was ist ein typisches Gericht aus deiner Region, und welches deutsche Essen möchtest du probieren?",
+     "c": "Erklär ein Gericht aus deinem Land in fünf Sätzen: Zutaten, wann man es isst und wie es schmeckt."
+    },
+    "es": {
+     "t": "La cultura gastronómica alemana",
+     "g": "Descubre platos regionales, el Abendbrot, Kaffee und Kuchen y las Brezeln, y compáralos con tu cocina.",
+     "p": [
+      "Tradiciones: Abendbrot: abends oft Brot mit Käse und Wurst. Am Sonntagnachmittag gibt es Kaffee und Kuchen.",
+      "Platos regionales: Brezeln und Weißwurst in Bayern, Fischbrötchen in Hamburg, Spätzle in Schwaben, Currywurst in Berlin.",
+      "Describir el sabor: Das schmeckt lecker, salzig, süß, sauer, scharf. Das ist typisch für ..."
+     ],
+     "q": "¿Cuál es un plato típico de tu región y qué comida alemana te gustaría probar?",
+     "c": "Explica un plato de tu país en cinco frases: ingredientes, cuándo se come y a qué sabe."
+    },
+    "fr": {
+     "t": "La culture culinaire allemande",
+     "g": "Découvrir plats régionaux, Abendbrot, Kaffee und Kuchen et Brezeln, et les comparer avec ta cuisine.",
+     "p": [
+      "Traditions : Abendbrot: abends oft Brot mit Käse und Wurst. Am Sonntagnachmittag gibt es Kaffee und Kuchen.",
+      "Plats régionaux : Brezeln und Weißwurst in Bayern, Fischbrötchen in Hamburg, Spätzle in Schwaben, Currywurst in Berlin.",
+      "Décrire le goût : Das schmeckt lecker, salzig, süß, sauer, scharf. Das ist typisch für ..."
+     ],
+     "q": "Quel est un plat typique de ta région, et quel plat allemand aimerais-tu goûter ?",
+     "c": "Explique un plat de ton pays en cinq phrases : ingrédients, quand on le mange et son goût."
+    },
+    "it": {
+     "t": "La cultura gastronomica tedesca",
+     "g": "Scopri piatti regionali, Abendbrot, Kaffee und Kuchen e Brezeln e confrontali con la tua cucina.",
+     "p": [
+      "Tradizioni: Abendbrot: abends oft Brot mit Käse und Wurst. Am Sonntagnachmittag gibt es Kaffee und Kuchen.",
+      "Piatti regionali: Brezeln und Weißwurst in Bayern, Fischbrötchen in Hamburg, Spätzle in Schwaben, Currywurst in Berlin.",
+      "Descrivere il sapore: Das schmeckt lecker, salzig, süß, sauer, scharf. Das ist typisch für ..."
+     ],
+     "q": "Qual è un piatto tipico della tua regione e quale cibo tedesco vorresti assaggiare?",
+     "c": "Spiega un piatto del tuo paese in cinque frasi: ingredienti, quando si mangia e che sapore ha."
+    },
+    "pt": {
+     "t": "A cultura gastronómica alemã",
+     "g": "Descobrir pratos regionais, o Abendbrot, Kaffee und Kuchen e as Brezeln, e compará-los com a tua comida.",
+     "p": [
+      "Tradições: Abendbrot: abends oft Brot mit Käse und Wurst. Am Sonntagnachmittag gibt es Kaffee und Kuchen.",
+      "Pratos regionais: Brezeln und Weißwurst in Bayern, Fischbrötchen in Hamburg, Spätzle in Schwaben, Currywurst in Berlin.",
+      "Descrever o sabor: Das schmeckt lecker, salzig, süß, sauer, scharf. Das ist typisch für ..."
+     ],
+     "q": "Qual é um prato típico da tua região e que comida alemã gostavas de provar?",
+     "c": "Explica um prato do teu país em cinco frases: ingredientes, quando se come e que sabor tem."
+    },
+    "pt_BR": {
+     "t": "A cultura gastronômica alemã",
+     "g": "Descobrir pratos regionais, o Abendbrot, Kaffee und Kuchen e as Brezeln, e comparar com a sua comida.",
+     "p": [
+      "Tradições: Abendbrot: abends oft Brot mit Käse und Wurst. Am Sonntagnachmittag gibt es Kaffee und Kuchen.",
+      "Pratos regionais: Brezeln und Weißwurst in Bayern, Fischbrötchen in Hamburg, Spätzle in Schwaben, Currywurst in Berlin.",
+      "Descrever o sabor: Das schmeckt lecker, salzig, süß, sauer, scharf. Das ist typisch für ..."
+     ],
+     "q": "Qual é um prato típico da sua região e que comida alemã você gostaria de provar?",
+     "c": "Explique um prato do seu país em cinco frases: ingredientes, quando se come e qual é o sabor."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "das Abendbrot",
+      "ex": "Zum Abendbrot essen wir Brot mit Käse."
+     },
+     {
+      "w": "Kaffee und Kuchen",
+      "ex": "Sonntags gibt es bei Oma Kaffee und Kuchen."
+     },
+     {
+      "w": "die Brezel",
+      "ex": "Zum Frühstück esse ich gern eine Brezel."
+     },
+     {
+      "w": "das Gericht",
+      "ex": "Spätzle sind ein typisches Gericht aus Schwaben."
+     },
+     {
+      "w": "schmecken",
+      "ex": "Die Suppe schmeckt sehr gut."
+     },
+     {
+      "w": "typisch für",
+      "ex": "Fischbrötchen sind typisch für Hamburg."
+     }
+    ],
+    "gram": "Schmecken + Dativ: Das schmeckt mir. Zum Frühstück, zum Abendbrot (zu + dem). Typisch für + Akkusativ."
+   }
+  },
+  {
+   "d": 159,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Invitations and table manners",
+     "g": "Accept invitations and know German table habits: punctuality, a small gift, Guten Appetit and Prost.",
+     "p": [
+      "Invitations: Danke für die Einladung! Ich komme gern. Soll ich etwas mitbringen? Leider kann ich nicht.",
+      "Customs: Pünktlich kommen, Blumen oder Wein mitbringen. Mit Prost oder Zum Wohl anstoßen und in die Augen schauen.",
+      "At the table: Guten Appetit! Danke, gleichfalls. Das schmeckt super. Darf ich noch etwas nehmen?"
+     ],
+     "q": "A German colleague invites you to dinner. What do you answer, and what would you bring?",
+     "c": "Write an invitation message and a reply: date, time, Soll ich etwas mitbringen? and a polite thank-you."
+    },
+    "de": {
+     "t": "Einladungen und Tischmanieren",
+     "g": "Du nimmst Einladungen an und kennst Tischsitten: Pünktlichkeit, ein Mitbringsel, Guten Appetit, Prost.",
+     "p": [
+      "Einladungen: Danke für die Einladung! Ich komme gern. Soll ich etwas mitbringen? Leider kann ich nicht.",
+      "Sitten: Pünktlich kommen, Blumen oder Wein mitbringen. Mit Prost oder Zum Wohl anstoßen und in die Augen schauen.",
+      "Am Tisch: Guten Appetit! Danke, gleichfalls. Das schmeckt super. Darf ich noch etwas nehmen?"
+     ],
+     "q": "Eine Kollegin lädt dich zum Abendessen ein. Was antwortest du, und was bringst du mit?",
+     "c": "Schreib eine Einladung und eine Antwort: Datum, Uhrzeit, Soll ich etwas mitbringen? und ein höflicher Dank."
+    },
+    "es": {
+     "t": "Invitaciones y modales en la mesa",
+     "g": "Acepta invitaciones y conoce los hábitos alemanes: puntualidad, un detalle, Guten Appetit y Prost.",
+     "p": [
+      "Invitaciones: Danke für die Einladung! Ich komme gern. Soll ich etwas mitbringen? Leider kann ich nicht.",
+      "Costumbres: Pünktlich kommen, Blumen oder Wein mitbringen. Mit Prost oder Zum Wohl anstoßen und in die Augen schauen.",
+      "En la mesa: Guten Appetit! Danke, gleichfalls. Das schmeckt super. Darf ich noch etwas nehmen?"
+     ],
+     "q": "Una compañera alemana te invita a cenar. ¿Qué respondes y qué llevarías?",
+     "c": "Escribe una invitación y una respuesta: fecha, hora, Soll ich etwas mitbringen? y un agradecimiento."
+    },
+    "fr": {
+     "t": "Invitations et bonnes manières à table",
+     "g": "Accepter une invitation et connaître les usages : ponctualité, petit cadeau, Guten Appetit et Prost.",
+     "p": [
+      "Invitations : Danke für die Einladung! Ich komme gern. Soll ich etwas mitbringen? Leider kann ich nicht.",
+      "Usages : Pünktlich kommen, Blumen oder Wein mitbringen. Mit Prost oder Zum Wohl anstoßen und in die Augen schauen.",
+      "À table : Guten Appetit! Danke, gleichfalls. Das schmeckt super. Darf ich noch etwas nehmen?"
+     ],
+     "q": "Une collègue allemande t'invite à dîner. Que réponds-tu, et qu'apporterais-tu ?",
+     "c": "Écris une invitation et une réponse : date, heure, Soll ich etwas mitbringen? et un remerciement poli."
+    },
+    "it": {
+     "t": "Inviti e buone maniere a tavola",
+     "g": "Accetti inviti e conosci le abitudini tedesche: puntualità, un pensierino, Guten Appetit e Prost.",
+     "p": [
+      "Inviti: Danke für die Einladung! Ich komme gern. Soll ich etwas mitbringen? Leider kann ich nicht.",
+      "Usanze: Pünktlich kommen, Blumen oder Wein mitbringen. Mit Prost oder Zum Wohl anstoßen und in die Augen schauen.",
+      "A tavola: Guten Appetit! Danke, gleichfalls. Das schmeckt super. Darf ich noch etwas nehmen?"
+     ],
+     "q": "Una collega tedesca ti invita a cena. Che cosa rispondi e che cosa porteresti?",
+     "c": "Scrivi un invito e una risposta: data, ora, Soll ich etwas mitbringen? e un ringraziamento cortese."
+    },
+    "pt": {
+     "t": "Convites e boas maneiras à mesa",
+     "g": "Aceitar convites e conhecer os hábitos alemães: pontualidade, uma lembrança, Guten Appetit e Prost.",
+     "p": [
+      "Convites: Danke für die Einladung! Ich komme gern. Soll ich etwas mitbringen? Leider kann ich nicht.",
+      "Costumes: Pünktlich kommen, Blumen oder Wein mitbringen. Mit Prost oder Zum Wohl anstoßen und in die Augen schauen.",
+      "À mesa: Guten Appetit! Danke, gleichfalls. Das schmeckt super. Darf ich noch etwas nehmen?"
+     ],
+     "q": "Uma colega alemã convida-te para jantar. O que respondes e o que levarias?",
+     "c": "Escreve um convite e uma resposta: data, hora, Soll ich etwas mitbringen? e um agradecimento educado."
+    },
+    "pt_BR": {
+     "t": "Convites e etiqueta à mesa",
+     "g": "Aceitar convites e conhecer os costumes alemães: pontualidade, uma lembrancinha, Guten Appetit e Prost.",
+     "p": [
+      "Convites: Danke für die Einladung! Ich komme gern. Soll ich etwas mitbringen? Leider kann ich nicht.",
+      "Costumes: Pünktlich kommen, Blumen oder Wein mitbringen. Mit Prost oder Zum Wohl anstoßen und in die Augen schauen.",
+      "À mesa: Guten Appetit! Danke, gleichfalls. Das schmeckt super. Darf ich noch etwas nehmen?"
+     ],
+     "q": "Uma colega alemã te convida para jantar. O que você responde e o que levaria?",
+     "c": "Escreva um convite e uma resposta: data, hora, Soll ich etwas mitbringen? e um agradecimento educado."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Einladung",
+      "ex": "Vielen Dank für die Einladung!"
+     },
+     {
+      "w": "einladen",
+      "ex": "Ich lade dich am Samstag zum Essen ein."
+     },
+     {
+      "w": "mitbringen",
+      "ex": "Soll ich einen Nachtisch mitbringen?"
+     },
+     {
+      "w": "Guten Appetit!",
+      "ex": "Guten Appetit! Danke, gleichfalls."
+     },
+     {
+      "w": "Prost!",
+      "ex": "Prost! Auf einen schönen Abend!"
+     },
+     {
+      "w": "pünktlich",
+      "ex": "Bei einer Einladung kommt man pünktlich."
+     }
+    ],
+    "gram": "Einladen und mitbringen sind trennbar: Ich lade dich ein. Ich bringe Blumen mit. Zum Essen einladen (zu + dem)."
+   }
+  },
+  {
+   "d": 160,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Lost and found",
+     "g": "Report a lost item and describe it: colour, size, material and where you last had it.",
+     "p": [
+      "Reporting: Ich habe meine Tasche verloren. Wo ist das Fundbüro? Hat jemand einen Schlüssel abgegeben?",
+      "Describing: Sie ist schwarz, aus Leder, ziemlich groß. Darin sind mein Geldbeutel und mein Handy.",
+      "Where and when: Ich hatte sie zuletzt in der U-Bahn, gestern gegen sechs. Ich glaube, ich habe sie im Café vergessen."
+     ],
+     "q": "Have you ever lost something important? What was it, and did you find it again?",
+     "c": "Play the Fundbüro: describe a lost item with colour, material, contents and the last place you had it."
+    },
+    "de": {
+     "t": "Verloren und gefunden",
+     "g": "Du meldest einen Verlust und beschreibst den Gegenstand: Farbe, Größe, Material und wo du ihn zuletzt hattest.",
+     "p": [
+      "Melden: Ich habe meine Tasche verloren. Wo ist das Fundbüro? Hat jemand einen Schlüssel abgegeben?",
+      "Beschreiben: Sie ist schwarz, aus Leder, ziemlich groß. Darin sind mein Geldbeutel und mein Handy.",
+      "Wo und wann: Ich hatte sie zuletzt in der U-Bahn, gestern gegen sechs. Ich glaube, ich habe sie im Café vergessen."
+     ],
+     "q": "Hast du schon mal etwas Wichtiges verloren? Was war es, und hast du es wiedergefunden?",
+     "c": "Spiel das Fundbüro: Beschreib einen verlorenen Gegenstand mit Farbe, Material, Inhalt und letztem Ort."
+    },
+    "es": {
+     "t": "Objetos perdidos",
+     "g": "Denuncia una pérdida y describe el objeto: color, tamaño, material y dónde lo tuviste por última vez.",
+     "p": [
+      "Denunciar: Ich habe meine Tasche verloren. Wo ist das Fundbüro? Hat jemand einen Schlüssel abgegeben?",
+      "Describir: Sie ist schwarz, aus Leder, ziemlich groß. Darin sind mein Geldbeutel und mein Handy.",
+      "Dónde y cuándo: Ich hatte sie zuletzt in der U-Bahn, gestern gegen sechs. Ich glaube, ich habe sie im Café vergessen."
+     ],
+     "q": "¿Alguna vez perdiste algo importante? ¿Qué era y lo encontraste otra vez?",
+     "c": "Juega a la oficina de objetos perdidos: describe un objeto con color, material, contenido y último lugar."
+    },
+    "fr": {
+     "t": "Objets perdus et trouvés",
+     "g": "Signaler une perte et décrire l'objet : couleur, taille, matière et où tu l'avais pour la dernière fois.",
+     "p": [
+      "Signaler : Ich habe meine Tasche verloren. Wo ist das Fundbüro? Hat jemand einen Schlüssel abgegeben?",
+      "Décrire : Sie ist schwarz, aus Leder, ziemlich groß. Darin sind mein Geldbeutel und mein Handy.",
+      "Où et quand : Ich hatte sie zuletzt in der U-Bahn, gestern gegen sechs. Ich glaube, ich habe sie im Café vergessen."
+     ],
+     "q": "As-tu déjà perdu quelque chose d'important ? Qu'était-ce, et l'as-tu retrouvé ?",
+     "c": "Joue au bureau des objets trouvés : décris un objet avec couleur, matière, contenu et dernier lieu."
+    },
+    "it": {
+     "t": "Oggetti smarriti",
+     "g": "Denunci uno smarrimento e descrivi l'oggetto: colore, misura, materiale e dove l'avevi l'ultima volta.",
+     "p": [
+      "Segnalare: Ich habe meine Tasche verloren. Wo ist das Fundbüro? Hat jemand einen Schlüssel abgegeben?",
+      "Descrivere: Sie ist schwarz, aus Leder, ziemlich groß. Darin sind mein Geldbeutel und mein Handy.",
+      "Dove e quando: Ich hatte sie zuletzt in der U-Bahn, gestern gegen sechs. Ich glaube, ich habe sie im Café vergessen."
+     ],
+     "q": "Hai mai perso qualcosa di importante? Che cos'era e l'hai ritrovato?",
+     "c": "Gioca all'ufficio oggetti smarriti: descrivi un oggetto con colore, materiale, contenuto e ultimo posto."
+    },
+    "pt": {
+     "t": "Perdidos e achados",
+     "g": "Comunicar uma perda e descrever o objeto: cor, tamanho, material e onde o tiveste pela última vez.",
+     "p": [
+      "Comunicar: Ich habe meine Tasche verloren. Wo ist das Fundbüro? Hat jemand einen Schlüssel abgegeben?",
+      "Descrever: Sie ist schwarz, aus Leder, ziemlich groß. Darin sind mein Geldbeutel und mein Handy.",
+      "Onde e quando: Ich hatte sie zuletzt in der U-Bahn, gestern gegen sechs. Ich glaube, ich habe sie im Café vergessen."
+     ],
+     "q": "Já perdeste alguma coisa importante? O que era e voltaste a encontrá-la?",
+     "c": "Faz de conta que estás nos perdidos e achados: descreve um objeto com cor, material, conteúdo e último lugar."
+    },
+    "pt_BR": {
+     "t": "Achados e perdidos",
+     "g": "Comunicar uma perda e descrever o objeto: cor, tamanho, material e onde você o teve pela última vez.",
+     "p": [
+      "Comunicar: Ich habe meine Tasche verloren. Wo ist das Fundbüro? Hat jemand einen Schlüssel abgegeben?",
+      "Descrever: Sie ist schwarz, aus Leder, ziemlich groß. Darin sind mein Geldbeutel und mein Handy.",
+      "Onde e quando: Ich hatte sie zuletzt in der U-Bahn, gestern gegen sechs. Ich glaube, ich habe sie im Café vergessen."
+     ],
+     "q": "Você já perdeu algo importante? O que era e você encontrou de novo?",
+     "c": "Faça de conta que está nos achados e perdidos: descreva um objeto com cor, material, conteúdo e último lugar."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "verlieren",
+      "ex": "Ich habe meinen Schlüssel verloren."
+     },
+     {
+      "w": "das Fundbüro",
+      "ex": "Fragen Sie mal im Fundbüro am Bahnhof."
+     },
+     {
+      "w": "finden",
+      "ex": "Zum Glück hat jemand mein Handy gefunden."
+     },
+     {
+      "w": "aus Leder",
+      "ex": "Meine Tasche ist braun und aus Leder."
+     },
+     {
+      "w": "der Geldbeutel",
+      "ex": "Mein Geldbeutel war in der Jackentasche."
+     },
+     {
+      "w": "zuletzt",
+      "ex": "Wo hatten Sie die Tasche zuletzt?"
+     }
+    ],
+    "gram": "Perfekt: verloren, gefunden, vergessen (ohne ge- bei ver-). Material mit aus + Dativ: aus Leder, aus Metall."
+   }
+  }
+ ]
+}

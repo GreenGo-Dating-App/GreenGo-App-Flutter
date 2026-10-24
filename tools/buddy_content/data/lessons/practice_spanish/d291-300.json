@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 291,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Accidental se: se me olvidó",
+     "g": "Talk about unplanned events without blaming anyone.",
+     "p": [
+      "Structure: se + indirect pronoun (me, te, le, nos, os, les) + verb + thing: se me olvidó la llave.",
+      "The verb agrees with the thing, not the person: se me cayó el vaso, se me cayeron las gafas.",
+      "Common verbs: olvidarse, caerse, romperse, perderse, acabarse, ocurrirse (se me ocurrió una idea)."
+     ],
+     "q": "What little accident happened to you recently? Tell me with se me...",
+     "c": "Write four sentences with se me olvidó, se nos acabó, se le rompió and se me ocurrió."
+    },
+    "de": {
+     "t": "Das zufällige se: se me olvidó",
+     "g": "Sprich über ungeplante Ereignisse, ohne jemandem die Schuld zu geben.",
+     "p": [
+      "Struktur: se + indirektes Pronomen (me, te, le, nos, os, les) + Verb + Sache: se me olvidó la llave.",
+      "Das Verb richtet sich nach der Sache, nicht nach der Person: se me cayó el vaso, se me cayeron las gafas.",
+      "Häufige Verben: olvidarse, caerse, romperse, perderse, acabarse, ocurrirse (se me ocurrió una idea)."
+     ],
+     "q": "Welches kleine Missgeschick ist dir neulich passiert? Erzähl es mit se me...",
+     "c": "Schreib vier Sätze mit se me olvidó, se nos acabó, se le rompió und se me ocurrió."
+    },
+    "es": {
+     "t": "El se accidental: se me olvidó",
+     "g": "Habla de sucesos no planeados sin echar la culpa a nadie.",
+     "p": [
+      "Estructura: se + pronombre de objeto indirecto (me, te, le, nos, os, les) + verbo + cosa: se me olvidó la llave.",
+      "El verbo concuerda con la cosa, no con la persona: se me cayó el vaso, se me cayeron las gafas.",
+      "Verbos frecuentes: olvidarse, caerse, romperse, perderse, acabarse, ocurrirse (se me ocurrió una idea)."
+     ],
+     "q": "¿Qué pequeño accidente te pasó hace poco? Cuéntamelo con se me...",
+     "c": "Escribe cuatro frases con se me olvidó, se nos acabó, se le rompió y se me ocurrió."
+    },
+    "fr": {
+     "t": "Le se accidentel : se me olvidó",
+     "g": "Parle d'événements imprévus sans accuser personne.",
+     "p": [
+      "Structure : se + pronom COI (me, te, le, nos, os, les) + verbe + chose : se me olvidó la llave.",
+      "Le verbe s'accorde avec la chose, pas la personne : se me cayó el vaso, se me cayeron las gafas.",
+      "Verbes fréquents : olvidarse, caerse, romperse, perderse, acabarse, ocurrirse (se me ocurrió una idea)."
+     ],
+     "q": "Quel petit incident t'est arrivé récemment ? Raconte-le avec se me...",
+     "c": "Écris quatre phrases avec se me olvidó, se nos acabó, se le rompió et se me ocurrió."
+    },
+    "it": {
+     "t": "Il se accidentale: se me olvidó",
+     "g": "Parla di eventi non voluti senza dare la colpa a nessuno.",
+     "p": [
+      "Struttura: se + pronome indiretto (me, te, le, nos, os, les) + verbo + cosa: se me olvidó la llave.",
+      "Il verbo concorda con la cosa, non con la persona: se me cayó el vaso, se me cayeron las gafas.",
+      "Verbi frequenti: olvidarse, caerse, romperse, perderse, acabarse, ocurrirse (se me ocurrió una idea)."
+     ],
+     "q": "Quale piccolo incidente ti è capitato di recente? Raccontamelo con se me...",
+     "c": "Scrivi quattro frasi con se me olvidó, se nos acabó, se le rompió e se me ocurrió."
+    },
+    "pt": {
+     "t": "O se acidental: se me olvidó",
+     "g": "Fala de acontecimentos não planeados sem culpar ninguém.",
+     "p": [
+      "Estrutura: se + pronome indireto (me, te, le, nos, os, les) + verbo + coisa: se me olvidó la llave.",
+      "O verbo concorda com a coisa, não com a pessoa: se me cayó el vaso, se me cayeron las gafas.",
+      "Verbos frequentes: olvidarse, caerse, romperse, perderse, acabarse, ocurrirse (se me ocurrió una idea)."
+     ],
+     "q": "Que pequeno acidente te aconteceu há pouco? Conta-me com se me...",
+     "c": "Escreve quatro frases com se me olvidó, se nos acabó, se le rompió e se me ocurrió."
+    },
+    "pt_BR": {
+     "t": "O se acidental: se me olvidó",
+     "g": "Fale de acontecimentos não planejados sem culpar ninguém.",
+     "p": [
+      "Estrutura: se + pronome indireto (me, te, le, nos, os, les) + verbo + coisa: se me olvidó la llave.",
+      "O verbo concorda com a coisa, não com a pessoa: se me cayó el vaso, se me cayeron las gafas.",
+      "Verbos frequentes: olvidarse, caerse, romperse, perderse, acabarse, ocurrirse (se me ocurrió una idea)."
+     ],
+     "q": "Que pequeno acidente aconteceu com você recentemente? Me conte com se me...",
+     "c": "Escreva quatro frases com se me olvidó, se nos acabó, se le rompió e se me ocurrió."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "se me olvidó",
+      "ex": "Se me olvidó el paraguas en el tren."
+     },
+     {
+      "w": "se me cayó",
+      "ex": "Se me cayó el móvil, pero no se rompió."
+     },
+     {
+      "w": "se nos acabó",
+      "ex": "Se nos acabó la leche; hay que comprar más."
+     },
+     {
+      "w": "se le rompió",
+      "ex": "A Pedro se le rompieron las gafas."
+     },
+     {
+      "w": "se me ocurrió",
+      "ex": "Anoche se me ocurrió una idea genial."
+     },
+     {
+      "w": "se te perdió",
+      "ex": "¿Se te perdieron las llaves otra vez?"
+     }
+    ],
+    "gram": "Se accidental: se + me/te/le/nos/os/les + verbo concordado con la cosa: se me cayó el vaso / se me cayeron los vasos."
+   }
+  },
+  {
+   "d": 292,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Verbs of change: ponerse, volverse",
+     "g": "Choose the right Spanish verb for become.",
+     "p": [
+      "Ponerse + adjective for sudden, temporary changes: ponerse nervioso, ponerse rojo, ponerse contento.",
+      "Volverse for deep, often unexpected changes: volverse famoso, volverse más paciente.",
+      "Hacerse for effort or choice (hacerse médico, hacerse vegetariano); quedarse for results (quedarse sorprendido, quedarse sin batería)."
+     ],
+     "q": "How do you feel before an exam? Answer with me pongo...",
+     "c": "Write one sentence each with ponerse, volverse, hacerse and quedarse about people you know."
+    },
+    "de": {
+     "t": "Verben der Veränderung: ponerse, volverse",
+     "g": "Wähle das richtige spanische Verb für werden.",
+     "p": [
+      "Ponerse + Adjektiv für plötzliche, vorübergehende Änderungen: ponerse nervioso, ponerse rojo, ponerse contento.",
+      "Volverse für tiefe, oft unerwartete Veränderungen: volverse famoso, volverse más paciente.",
+      "Hacerse für Wahl oder Anstrengung (hacerse médico); quedarse für Ergebnisse (quedarse sorprendido, quedarse sin batería)."
+     ],
+     "q": "Wie fühlst du dich vor einer Prüfung? Antworte mit me pongo...",
+     "c": "Schreib je einen Satz mit ponerse, volverse, hacerse und quedarse über Menschen, die du kennst."
+    },
+    "es": {
+     "t": "Verbos de cambio: ponerse, volverse",
+     "g": "Elige el verbo de cambio adecuado en español.",
+     "p": [
+      "Ponerse + adjetivo para cambios rápidos y pasajeros: ponerse nervioso, ponerse rojo, ponerse contento.",
+      "Volverse para cambios profundos, a menudo inesperados: volverse famoso, volverse más paciente.",
+      "Hacerse para cambios por esfuerzo o elección (hacerse médico); quedarse para resultados (quedarse sorprendido, sin batería)."
+     ],
+     "q": "¿Cómo te sientes antes de un examen? Responde con me pongo...",
+     "c": "Escribe una frase con ponerse, volverse, hacerse y quedarse sobre personas que conoces."
+    },
+    "fr": {
+     "t": "Verbes de changement : ponerse, volverse",
+     "g": "Choisis le bon verbe espagnol pour devenir.",
+     "p": [
+      "Ponerse + adjectif pour un changement soudain et passager : ponerse nervioso, ponerse rojo, ponerse contento.",
+      "Volverse pour un changement profond, souvent inattendu : volverse famoso, volverse más paciente.",
+      "Hacerse pour un choix ou un effort (hacerse médico) ; quedarse pour un résultat (quedarse sorprendido, sin batería)."
+     ],
+     "q": "Comment te sens-tu avant un examen ? Réponds avec me pongo...",
+     "c": "Écris une phrase avec ponerse, volverse, hacerse et quedarse sur des gens que tu connais."
+    },
+    "it": {
+     "t": "Verbi di cambiamento: ponerse, volverse",
+     "g": "Scegli il verbo spagnolo giusto per diventare.",
+     "p": [
+      "Ponerse + aggettivo per cambiamenti rapidi e passeggeri: ponerse nervioso, ponerse rojo, ponerse contento.",
+      "Volverse per cambiamenti profondi, spesso inattesi: volverse famoso, volverse más paciente.",
+      "Hacerse per scelta o impegno (hacerse médico); quedarse per un risultato (quedarse sorprendido, sin batería)."
+     ],
+     "q": "Come ti senti prima di un esame? Rispondi con me pongo...",
+     "c": "Scrivi una frase con ponerse, volverse, hacerse e quedarse su persone che conosci."
+    },
+    "pt": {
+     "t": "Verbos de mudança: ponerse, volverse",
+     "g": "Escolhe o verbo espanhol certo para ficar ou tornar-se.",
+     "p": [
+      "Ponerse + adjetivo para mudanças rápidas e passageiras: ponerse nervioso, ponerse rojo, ponerse contento.",
+      "Volverse para mudanças profundas, muitas vezes inesperadas: volverse famoso, volverse más paciente.",
+      "Hacerse para escolha ou esforço (hacerse médico); quedarse para resultados (quedarse sorprendido, sin batería)."
+     ],
+     "q": "Como te sentes antes de um exame? Responde com me pongo...",
+     "c": "Escreve uma frase com ponerse, volverse, hacerse e quedarse sobre pessoas que conheces."
+    },
+    "pt_BR": {
+     "t": "Verbos de mudança: ponerse, volverse",
+     "g": "Escolha o verbo espanhol certo para ficar ou se tornar.",
+     "p": [
+      "Ponerse + adjetivo para mudanças rápidas e passageiras: ponerse nervioso, ponerse rojo, ponerse contento.",
+      "Volverse para mudanças profundas, muitas vezes inesperadas: volverse famoso, volverse más paciente.",
+      "Hacerse para escolha ou esforço (hacerse médico); quedarse para resultados (quedarse sorprendido, sin batería)."
+     ],
+     "q": "Como você se sente antes de uma prova? Responda com me pongo...",
+     "c": "Escreva uma frase com ponerse, volverse, hacerse e quedarse sobre pessoas que você conhece."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ponerse nervioso",
+      "ex": "Siempre me pongo nervioso antes de hablar en público."
+     },
+     {
+      "w": "volverse famoso",
+      "ex": "Con su primera canción se volvió famoso."
+     },
+     {
+      "w": "hacerse médico",
+      "ex": "Mi prima estudió mucho y se hizo médica."
+     },
+     {
+      "w": "quedarse sorprendido",
+      "ex": "Me quedé sorprendido con la noticia."
+     },
+     {
+      "w": "ponerse contento",
+      "ex": "Mi abuela se puso muy contenta con la visita."
+     },
+     {
+      "w": "quedarse sin",
+      "ex": "Me quedé sin batería en mitad del viaje."
+     }
+    ],
+    "gram": "Cambio: ponerse (pasajero), volverse (profundo), hacerse (voluntario), quedarse (resultado), llegar a ser (tras un proceso)."
+   }
+  },
+  {
+   "d": 293,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Advanced relative pronouns",
+     "g": "Join ideas elegantly with el cual, lo que, cuyo and quien.",
+     "p": [
+      "El cual / la cual / los cuales after prepositions, often in writing: la razón por la cual vine.",
+      "Lo que refers to a whole idea: no entiendo lo que dices; llegó tarde, lo que me molestó un poco.",
+      "Cuyo agrees with the thing owned: la escritora cuyas novelas leí. Quien for people: el chico con quien hablé."
+     ],
+     "q": "Describe a person you admire using cuyo or con quien.",
+     "c": "Join three pairs of short sentences using la cual, lo que and cuyo."
+    },
+    "de": {
+     "t": "Fortgeschrittene Relativpronomen",
+     "g": "Verbinde Ideen elegant mit el cual, lo que, cuyo und quien.",
+     "p": [
+      "El cual / la cual / los cuales nach Präpositionen, oft schriftlich: la razón por la cual vine.",
+      "Lo que bezieht sich auf eine ganze Idee: no entiendo lo que dices; llegó tarde, lo que me molestó un poco.",
+      "Cuyo richtet sich nach dem Besitz: la escritora cuyas novelas leí. Quien für Personen: el chico con quien hablé."
+     ],
+     "q": "Beschreib eine Person, die du bewunderst, mit cuyo oder con quien.",
+     "c": "Verbinde drei Paare kurzer Sätze mit la cual, lo que und cuyo."
+    },
+    "es": {
+     "t": "Pronombres relativos avanzados",
+     "g": "Une ideas con elegancia usando el cual, lo que, cuyo y quien.",
+     "p": [
+      "El cual / la cual / los cuales tras preposición, sobre todo por escrito: la razón por la cual vine.",
+      "Lo que se refiere a una idea completa: no entiendo lo que dices; llegó tarde, lo que me molestó un poco.",
+      "Cuyo concuerda con lo poseído: la escritora cuyas novelas leí. Quien, para personas: el chico con quien hablé."
+     ],
+     "q": "Describe a una persona que admiras usando cuyo o con quien.",
+     "c": "Une tres pares de frases cortas con la cual, lo que y cuyo."
+    },
+    "fr": {
+     "t": "Pronoms relatifs avancés",
+     "g": "Relie les idées avec élégance grâce à el cual, lo que, cuyo et quien.",
+     "p": [
+      "El cual / la cual / los cuales après une préposition, surtout à l'écrit : la razón por la cual vine.",
+      "Lo que renvoie à une idée entière : no entiendo lo que dices ; llegó tarde, lo que me molestó un poco.",
+      "Cuyo s'accorde avec la chose possédée : la escritora cuyas novelas leí. Quien pour les personnes : con quien hablé."
+     ],
+     "q": "Décris une personne que tu admires avec cuyo ou con quien.",
+     "c": "Relie trois paires de phrases courtes avec la cual, lo que et cuyo."
+    },
+    "it": {
+     "t": "Pronomi relativi avanzati",
+     "g": "Collega le idee con eleganza usando el cual, lo que, cuyo e quien.",
+     "p": [
+      "El cual / la cual / los cuales dopo preposizione, soprattutto per iscritto: la razón por la cual vine.",
+      "Lo que si riferisce a un'idea intera: no entiendo lo que dices; llegó tarde, lo que me molestó un poco.",
+      "Cuyo concorda con la cosa posseduta: la escritora cuyas novelas leí. Quien per persone: el chico con quien hablé."
+     ],
+     "q": "Descrivi una persona che ammiri usando cuyo o con quien.",
+     "c": "Unisci tre coppie di frasi brevi con la cual, lo que e cuyo."
+    },
+    "pt": {
+     "t": "Pronomes relativos avançados",
+     "g": "Liga ideias com elegância usando el cual, lo que, cuyo e quien.",
+     "p": [
+      "El cual / la cual / los cuales depois de preposição, sobretudo por escrito: la razón por la cual vine.",
+      "Lo que refere-se a uma ideia completa: no entiendo lo que dices; llegó tarde, lo que me molestó un poco.",
+      "Cuyo concorda com o que se possui: la escritora cuyas novelas leí. Quien para pessoas: el chico con quien hablé."
+     ],
+     "q": "Descreve uma pessoa que admiras usando cuyo ou con quien.",
+     "c": "Junta três pares de frases curtas com la cual, lo que e cuyo."
+    },
+    "pt_BR": {
+     "t": "Pronomes relativos avançados",
+     "g": "Ligue ideias com elegância usando el cual, lo que, cuyo e quien.",
+     "p": [
+      "El cual / la cual / los cuales depois de preposição, sobretudo na escrita: la razón por la cual vine.",
+      "Lo que se refere a uma ideia inteira: no entiendo lo que dices; llegó tarde, lo que me molestó un poco.",
+      "Cuyo concorda com o que se possui: la escritora cuyas novelas leí. Quien para pessoas: el chico con quien hablé."
+     ],
+     "q": "Descreva uma pessoa que você admira usando cuyo ou con quien.",
+     "c": "Junte três pares de frases curtas com la cual, lo que e cuyo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "por la cual",
+      "ex": "Esa es la razón por la cual me mudé."
+     },
+     {
+      "w": "lo que",
+      "ex": "Lo que más valoro es la sinceridad."
+     },
+     {
+      "w": "cuyo / cuya",
+      "ex": "Es un pintor cuya obra admiro mucho."
+     },
+     {
+      "w": "con quien",
+      "ex": "La persona con quien viajé es mi mejor amiga."
+     },
+     {
+      "w": "en el cual",
+      "ex": "El edificio en el cual trabajo es antiguo."
+     },
+     {
+      "w": "los cuales",
+      "ex": "Tengo dos hermanos, los cuales viven en Lima."
+     }
+    ],
+    "gram": "El cual tras preposición (por la cual); lo que = idea completa; cuyo concuerda con lo poseído (cuyas novelas); quien = persona."
+   }
+  },
+  {
+   "d": 294,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Nominalisation: lo bueno es que",
+     "g": "Highlight ideas with lo + adjective.",
+     "p": [
+      "Lo + adjective turns a quality into an idea: lo bueno, lo malo, lo difícil, lo importante.",
+      "Use it to frame opinions: lo bueno es que..., lo mejor de todo es..., lo peor fue...",
+      "Lo que más me gusta / lo que menos me gusta + es: lo que más me gusta de mi barrio es el mercado."
+     ],
+     "q": "Tell me about your job or studies with lo bueno es que... and lo difícil es...",
+     "c": "Describe your city in four sentences starting with lo bueno, lo malo, lo mejor and lo que más me gusta."
+    },
+    "de": {
+     "t": "Nominalisierung: lo bueno es que",
+     "g": "Hebe Ideen mit lo + Adjektiv hervor.",
+     "p": [
+      "Lo + Adjektiv macht aus einer Eigenschaft eine Idee: lo bueno, lo malo, lo difícil, lo importante.",
+      "Damit rahmst du Meinungen: lo bueno es que..., lo mejor de todo es..., lo peor fue...",
+      "Lo que más / menos me gusta + es: lo que más me gusta de mi barrio es el mercado."
+     ],
+     "q": "Erzähl mir von deiner Arbeit oder deinem Studium mit lo bueno es que... und lo difícil es...",
+     "c": "Beschreib deine Stadt in vier Sätzen mit lo bueno, lo malo, lo mejor und lo que más me gusta."
+    },
+    "es": {
+     "t": "Nominalización: lo bueno es que",
+     "g": "Destaca ideas con lo + adjetivo.",
+     "p": [
+      "Lo + adjetivo convierte una cualidad en una idea: lo bueno, lo malo, lo difícil, lo importante.",
+      "Sirve para enmarcar opiniones: lo bueno es que..., lo mejor de todo es..., lo peor fue...",
+      "Lo que más / menos me gusta + es: lo que más me gusta de mi barrio es el mercado."
+     ],
+     "q": "Háblame de tu trabajo o tus estudios con lo bueno es que... y lo difícil es...",
+     "c": "Describe tu ciudad en cuatro frases que empiecen por lo bueno, lo malo, lo mejor y lo que más me gusta."
+    },
+    "fr": {
+     "t": "Nominalisation : lo bueno es que",
+     "g": "Mets des idées en valeur avec lo + adjectif.",
+     "p": [
+      "Lo + adjectif transforme une qualité en idée : lo bueno, lo malo, lo difícil, lo importante.",
+      "Pour encadrer un avis : lo bueno es que..., lo mejor de todo es..., lo peor fue...",
+      "Lo que más / menos me gusta + es : lo que más me gusta de mi barrio es el mercado."
+     ],
+     "q": "Parle-moi de ton travail ou de tes études avec lo bueno es que... et lo difícil es...",
+     "c": "Décris ta ville en quatre phrases commençant par lo bueno, lo malo, lo mejor et lo que más me gusta."
+    },
+    "it": {
+     "t": "Nominalizzazione: lo bueno es que",
+     "g": "Metti in risalto le idee con lo + aggettivo.",
+     "p": [
+      "Lo + aggettivo trasforma una qualità in un'idea: lo bueno, lo malo, lo difícil, lo importante.",
+      "Serve a inquadrare le opinioni: lo bueno es que..., lo mejor de todo es..., lo peor fue...",
+      "Lo que más / menos me gusta + es: lo que más me gusta de mi barrio es el mercado."
+     ],
+     "q": "Parlami del tuo lavoro o dei tuoi studi con lo bueno es que... e lo difícil es...",
+     "c": "Descrivi la tua città in quattro frasi che iniziano con lo bueno, lo malo, lo mejor e lo que más me gusta."
+    },
+    "pt": {
+     "t": "Nominalização: lo bueno es que",
+     "g": "Destaca ideias com lo + adjetivo.",
+     "p": [
+      "Lo + adjetivo transforma uma qualidade numa ideia: lo bueno, lo malo, lo difícil, lo importante.",
+      "Serve para enquadrar opiniões: lo bueno es que..., lo mejor de todo es..., lo peor fue...",
+      "Lo que más / menos me gusta + es: lo que más me gusta de mi barrio es el mercado."
+     ],
+     "q": "Fala-me do teu trabalho ou estudos com lo bueno es que... e lo difícil es...",
+     "c": "Descreve a tua cidade em quatro frases que comecem por lo bueno, lo malo, lo mejor e lo que más me gusta."
+    },
+    "pt_BR": {
+     "t": "Nominalização: lo bueno es que",
+     "g": "Destaque ideias com lo + adjetivo.",
+     "p": [
+      "Lo + adjetivo transforma uma qualidade numa ideia: lo bueno, lo malo, lo difícil, lo importante.",
+      "Serve para enquadrar opiniões: lo bueno es que..., lo mejor de todo es..., lo peor fue...",
+      "Lo que más / menos me gusta + es: lo que más me gusta de mi barrio es el mercado."
+     ],
+     "q": "Me fale do seu trabalho ou estudos com lo bueno es que... e lo difícil es...",
+     "c": "Descreva sua cidade em quatro frases começando com lo bueno, lo malo, lo mejor e lo que más me gusta."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "lo bueno es que",
+      "ex": "Lo bueno es que el trabajo está cerca de casa."
+     },
+     {
+      "w": "lo mejor de todo",
+      "ex": "Lo mejor de todo fue la gente que conocí."
+     },
+     {
+      "w": "lo difícil",
+      "ex": "Lo difícil es levantarse temprano en invierno."
+     },
+     {
+      "w": "lo importante",
+      "ex": "Lo importante es que estemos todos bien."
+     },
+     {
+      "w": "lo peor",
+      "ex": "Lo peor del viaje fue el retraso del vuelo."
+     },
+     {
+      "w": "lo que más me gusta",
+      "ex": "Lo que más me gusta de mi barrio es el mercado."
+     }
+    ],
+    "gram": "Lo + adjetivo masculino singular = idea abstracta: lo bueno, lo difícil. Lo importante es que + subjuntivo si expresa deseo."
+   }
+  },
+  {
+   "d": 295,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Advanced passive and impersonal forms",
+     "g": "Use three ways to hide or downplay who did something.",
+     "p": [
+      "Se pasiva, most common in speech: se construyó un puente nuevo; se venden pisos.",
+      "Ser passive, more formal: el puente fue construido en 1890 (por la empresa X).",
+      "Impersonal third-person plural: construyeron un puente; dicen que va a nevar; me han regalado un libro."
+     ],
+     "q": "How would a news report say that a new library was opened? Try all three forms.",
+     "c": "Write one fact about your town in three versions: se..., fue... and the ellos form."
+    },
+    "de": {
+     "t": "Fortgeschrittenes Passiv und Unpersönliches",
+     "g": "Nutze drei Wege, um zu verbergen, wer etwas getan hat.",
+     "p": [
+      "Se-Passiv, im Gespräch am häufigsten: se construyó un puente nuevo; se venden pisos.",
+      "Passiv mit ser, formeller: el puente fue construido en 1890 (por la empresa X).",
+      "Unpersönliche 3. Person Plural: construyeron un puente; dicen que va a nevar; me han regalado un libro."
+     ],
+     "q": "Wie würde eine Nachricht sagen, dass eine neue Bibliothek eröffnet wurde? Probier alle drei Formen.",
+     "c": "Schreib eine Tatsache über deinen Ort in drei Versionen: se..., fue... und mit der ellos-Form."
+    },
+    "es": {
+     "t": "Pasiva e impersonalidad avanzadas",
+     "g": "Usa tres formas de ocultar o restar importancia a quién hizo algo.",
+     "p": [
+      "Pasiva refleja, la más común al hablar: se construyó un puente nuevo; se venden pisos.",
+      "Pasiva con ser, más formal: el puente fue construido en 1890 (por la empresa X).",
+      "Impersonal con tercera persona plural: construyeron un puente; dicen que va a nevar; me han regalado un libro."
+     ],
+     "q": "¿Cómo diría una noticia que se ha inaugurado una biblioteca nueva? Prueba las tres formas.",
+     "c": "Escribe un dato de tu ciudad en tres versiones: se..., fue... y con la forma de ellos."
+    },
+    "fr": {
+     "t": "Passif et formes impersonnelles avancés",
+     "g": "Utilise trois façons de cacher ou d'atténuer qui a fait quelque chose.",
+     "p": [
+      "Passif avec se, le plus courant à l'oral : se construyó un puente nuevo ; se venden pisos.",
+      "Passif avec ser, plus formel : el puente fue construido en 1890 (por la empresa X).",
+      "Impersonnel à la 3e personne du pluriel : construyeron un puente ; dicen que va a nevar ; me han regalado un libro."
+     ],
+     "q": "Comment un journal dirait-il qu'une nouvelle bibliothèque a ouvert ? Essaie les trois formes.",
+     "c": "Écris un fait sur ta ville en trois versions : se..., fue... et avec la forme ellos."
+    },
+    "it": {
+     "t": "Passivo e forme impersonali avanzate",
+     "g": "Usa tre modi per nascondere o attenuare chi ha fatto qualcosa.",
+     "p": [
+      "Si passivante, il più comune nel parlato: se construyó un puente nuevo; se venden pisos.",
+      "Passivo con ser, più formale: el puente fue construido en 1890 (por la empresa X).",
+      "Impersonale con la 3ª plurale: construyeron un puente; dicen que va a nevar; me han regalado un libro."
+     ],
+     "q": "Come direbbe un notiziario che è stata inaugurata una nuova biblioteca? Prova tutte e tre le forme.",
+     "c": "Scrivi un fatto sulla tua città in tre versioni: se..., fue... e con la forma ellos."
+    },
+    "pt": {
+     "t": "Passiva e formas impessoais avançadas",
+     "g": "Usa três formas de esconder ou atenuar quem fez algo.",
+     "p": [
+      "Passiva com se, a mais comum na fala: se construyó un puente nuevo; se venden pisos.",
+      "Passiva com ser, mais formal: el puente fue construido en 1890 (por la empresa X).",
+      "Impessoal com a 3.ª pessoa do plural: construyeron un puente; dicen que va a nevar; me han regalado un libro."
+     ],
+     "q": "Como diria uma notícia que se inaugurou uma biblioteca nova? Experimenta as três formas.",
+     "c": "Escreve um facto sobre a tua cidade em três versões: se..., fue... e com a forma ellos."
+    },
+    "pt_BR": {
+     "t": "Passiva e formas impessoais avançadas",
+     "g": "Use três formas de esconder ou atenuar quem fez algo.",
+     "p": [
+      "Passiva com se, a mais comum na fala: se construyó un puente nuevo; se venden pisos.",
+      "Passiva com ser, mais formal: el puente fue construido en 1890 (por la empresa X).",
+      "Impessoal com a 3ª pessoa do plural: construyeron un puente; dicen que va a nevar; me han regalado un libro."
+     ],
+     "q": "Como uma notícia diria que inauguraram uma biblioteca nova? Teste as três formas.",
+     "c": "Escreva um fato sobre sua cidade em três versões: se..., fue... e com a forma ellos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "se construyó",
+      "ex": "En 1990 se construyó el nuevo estadio."
+     },
+     {
+      "w": "fue construido",
+      "ex": "El estadio fue construido en tres años."
+     },
+     {
+      "w": "construyeron",
+      "ex": "Construyeron un parque junto al río."
+     },
+     {
+      "w": "se venden",
+      "ex": "Se venden entradas en la taquilla."
+     },
+     {
+      "w": "dicen que",
+      "ex": "Dicen que este invierno será suave."
+     },
+     {
+      "w": "se inauguró",
+      "ex": "Ayer se inauguró la biblioteca municipal."
+     }
+    ],
+    "gram": "Tres formas sin agente: se pasiva (se construyó), pasiva con ser (fue construido) e impersonal en 3.ª plural (construyeron)."
+   }
+  },
+  {
+   "d": 296,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Advanced verbal phrases",
+     "g": "Use verbal phrases to add nuance to actions.",
+     "p": [
+      "Estar a punto de + infinitive: about to. Estaba a punto de salir cuando llamaste.",
+      "Echarse a + infinitive: to suddenly start. Se echó a reír / a llorar de alegría.",
+      "Llegar a + infinitive: to manage to, to reach (llegó a ser directora); venir a + infinitive: approximately (viene a costar diez euros)."
+     ],
+     "q": "Tell me about a moment when you were a punto de giving up but didn't.",
+     "c": "Write four sentences with estar a punto de, echarse a, llegar a ser and venir a."
+    },
+    "de": {
+     "t": "Fortgeschrittene Verbalperiphrasen",
+     "g": "Gib Handlungen mit Verbalperiphrasen Nuancen.",
+     "p": [
+      "Estar a punto de + Infinitiv: gerade dabei sein. Estaba a punto de salir cuando llamaste.",
+      "Echarse a + Infinitiv: plötzlich anfangen. Se echó a reír / a llorar de alegría.",
+      "Llegar a + Infinitiv: es schaffen (llegó a ser directora); venir a + Infinitiv: ungefähr (viene a costar diez euros)."
+     ],
+     "q": "Erzähl mir von einem Moment, in dem du kurz davor warst aufzugeben, es aber nicht getan hast.",
+     "c": "Schreib vier Sätze mit estar a punto de, echarse a, llegar a ser und venir a."
+    },
+    "es": {
+     "t": "Perífrasis verbales avanzadas",
+     "g": "Usa perífrasis para dar matices a las acciones.",
+     "p": [
+      "Estar a punto de + infinitivo: algo va a pasar ya. Estaba a punto de salir cuando llamaste.",
+      "Echarse a + infinitivo: empezar de repente. Se echó a reír / a llorar de alegría.",
+      "Llegar a + infinitivo: culminar un proceso (llegó a ser directora); venir a + infinitivo: aproximación (viene a costar diez euros)."
+     ],
+     "q": "Cuéntame un momento en que estuviste a punto de rendirte pero no lo hiciste.",
+     "c": "Escribe cuatro frases con estar a punto de, echarse a, llegar a ser y venir a."
+    },
+    "fr": {
+     "t": "Périphrases verbales avancées",
+     "g": "Utilise des périphrases pour nuancer les actions.",
+     "p": [
+      "Estar a punto de + infinitif : être sur le point de. Estaba a punto de salir cuando llamaste.",
+      "Echarse a + infinitif : se mettre soudain à. Se echó a reír / a llorar de alegría.",
+      "Llegar a + infinitif : finir par, réussir à (llegó a ser directora) ; venir a + infinitif : environ (viene a costar diez euros)."
+     ],
+     "q": "Raconte-moi un moment où tu étais sur le point d'abandonner, mais tu as continué.",
+     "c": "Écris quatre phrases avec estar a punto de, echarse a, llegar a ser et venir a."
+    },
+    "it": {
+     "t": "Perifrasi verbali avanzate",
+     "g": "Usa le perifrasi per dare sfumature alle azioni.",
+     "p": [
+      "Estar a punto de + infinito: stare per. Estaba a punto de salir cuando llamaste.",
+      "Echarse a + infinito: mettersi all'improvviso a. Se echó a reír / a llorar de alegría.",
+      "Llegar a + infinito: arrivare a (llegó a ser directora); venir a + infinito: circa (viene a costar diez euros)."
+     ],
+     "q": "Raccontami un momento in cui stavi per arrenderti ma non l'hai fatto.",
+     "c": "Scrivi quattro frasi con estar a punto de, echarse a, llegar a ser e venir a."
+    },
+    "pt": {
+     "t": "Perífrases verbais avançadas",
+     "g": "Usa perífrases para dar nuances às ações.",
+     "p": [
+      "Estar a punto de + infinitivo: estar prestes a. Estaba a punto de salir cuando llamaste.",
+      "Echarse a + infinitivo: desatar a. Se echó a reír / a llorar de alegría.",
+      "Llegar a + infinitivo: chegar a (llegó a ser directora); venir a + infinitivo: aproximação (viene a costar diez euros)."
+     ],
+     "q": "Conta-me um momento em que estiveste prestes a desistir mas não desististe.",
+     "c": "Escreve quatro frases com estar a punto de, echarse a, llegar a ser e venir a."
+    },
+    "pt_BR": {
+     "t": "Locuções verbais avançadas",
+     "g": "Use locuções verbais para dar nuances às ações.",
+     "p": [
+      "Estar a punto de + infinitivo: estar prestes a. Estaba a punto de salir cuando llamaste.",
+      "Echarse a + infinitivo: começar de repente a. Se echó a reír / a llorar de alegría.",
+      "Llegar a + infinitivo: chegar a (llegó a ser directora); venir a + infinitivo: aproximação (viene a costar diez euros)."
+     ],
+     "q": "Me conte um momento em que você esteve prestes a desistir, mas não desistiu.",
+     "c": "Escreva quatro frases com estar a punto de, echarse a, llegar a ser e venir a."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "estar a punto de",
+      "ex": "Estaba a punto de salir cuando sonó el teléfono."
+     },
+     {
+      "w": "echarse a reír",
+      "ex": "Cuando lo vio disfrazado, se echó a reír."
+     },
+     {
+      "w": "llegar a ser",
+      "ex": "Empezó como camarera y llegó a ser jefa de cocina."
+     },
+     {
+      "w": "venir a costar",
+      "ex": "Un billete de tren viene a costar lo mismo."
+     },
+     {
+      "w": "ponerse a",
+      "ex": "Después de cenar, se puso a estudiar."
+     },
+     {
+      "w": "acabar de",
+      "ex": "Acabo de terminar el libro que me prestaste."
+     }
+    ],
+    "gram": "Perífrasis: estar a punto de (inminencia), echarse/ponerse a (inicio), llegar a (culminación), venir a (aproximación), acabar de."
+   }
+  },
+  {
+   "d": 297,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Review: advanced grammar",
+     "g": "Combine the subjunctive, probability, accidental se and verbs of change.",
+     "p": [
+      "Subjunctive: aunque llueva, busco a alguien que sepa..., si hubiera sabido, habría...",
+      "Probability: estará en casa (now), serían las diez (then), habrá terminado (future).",
+      "Accidental se (se me olvidó) and verbs of change (ponerse, volverse, hacerse, quedarse)."
+     ],
+     "q": "Tell me a short story about a chaotic day using se me..., me puse... and serían las...",
+     "c": "Write a six-sentence story using at least one structure from each group above."
+    },
+    "de": {
+     "t": "Wiederholung: fortgeschrittene Grammatik",
+     "g": "Kombiniere Subjuntivo, Vermutung, zufälliges se und Verben der Veränderung.",
+     "p": [
+      "Subjuntivo: aunque llueva, busco a alguien que sepa..., si hubiera sabido, habría...",
+      "Vermutung: estará en casa (jetzt), serían las diez (damals), habrá terminado (Zukunft).",
+      "Zufälliges se (se me olvidó) und Verben der Veränderung (ponerse, volverse, hacerse, quedarse)."
+     ],
+     "q": "Erzähl mir eine kurze Geschichte über einen chaotischen Tag mit se me..., me puse... und serían las...",
+     "c": "Schreib eine Geschichte in sechs Sätzen mit mindestens einer Struktur aus jeder Gruppe."
+    },
+    "es": {
+     "t": "Repaso: gramática avanzada",
+     "g": "Combina subjuntivo, probabilidad, se accidental y verbos de cambio.",
+     "p": [
+      "Subjuntivo: aunque llueva, busco a alguien que sepa..., si hubiera sabido, habría...",
+      "Probabilidad: estará en casa (ahora), serían las diez (entonces), habrá terminado (futuro).",
+      "Se accidental (se me olvidó) y verbos de cambio (ponerse, volverse, hacerse, quedarse)."
+     ],
+     "q": "Cuéntame una historia corta sobre un día caótico con se me..., me puse... y serían las...",
+     "c": "Escribe una historia de seis frases con al menos una estructura de cada grupo."
+    },
+    "fr": {
+     "t": "Révision : grammaire avancée",
+     "g": "Combine subjonctif, probabilité, se accidentel et verbes de changement.",
+     "p": [
+      "Subjonctif : aunque llueva, busco a alguien que sepa..., si hubiera sabido, habría...",
+      "Probabilité : estará en casa (maintenant), serían las diez (alors), habrá terminado (futur).",
+      "Se accidentel (se me olvidó) et verbes de changement (ponerse, volverse, hacerse, quedarse)."
+     ],
+     "q": "Raconte-moi une courte histoire sur une journée chaotique avec se me..., me puse... et serían las...",
+     "c": "Écris une histoire de six phrases avec au moins une structure de chaque groupe."
+    },
+    "it": {
+     "t": "Ripasso: grammatica avanzata",
+     "g": "Combina congiuntivo, probabilità, se accidentale e verbi di cambiamento.",
+     "p": [
+      "Congiuntivo: aunque llueva, busco a alguien que sepa..., si hubiera sabido, habría...",
+      "Probabilità: estará en casa (ora), serían las diez (allora), habrá terminado (futuro).",
+      "Se accidentale (se me olvidó) e verbi di cambiamento (ponerse, volverse, hacerse, quedarse)."
+     ],
+     "q": "Raccontami una breve storia su una giornata caotica con se me..., me puse... e serían las...",
+     "c": "Scrivi una storia di sei frasi con almeno una struttura per ogni gruppo."
+    },
+    "pt": {
+     "t": "Revisão: gramática avançada",
+     "g": "Combina conjuntivo, probabilidade, se acidental e verbos de mudança.",
+     "p": [
+      "Conjuntivo: aunque llueva, busco a alguien que sepa..., si hubiera sabido, habría...",
+      "Probabilidade: estará en casa (agora), serían las diez (então), habrá terminado (futuro).",
+      "Se acidental (se me olvidó) e verbos de mudança (ponerse, volverse, hacerse, quedarse)."
+     ],
+     "q": "Conta-me uma história curta sobre um dia caótico com se me..., me puse... e serían las...",
+     "c": "Escreve uma história de seis frases com pelo menos uma estrutura de cada grupo."
+    },
+    "pt_BR": {
+     "t": "Revisão: gramática avançada",
+     "g": "Combine subjuntivo, probabilidade, se acidental e verbos de mudança.",
+     "p": [
+      "Subjuntivo: aunque llueva, busco a alguien que sepa..., si hubiera sabido, habría...",
+      "Probabilidade: estará en casa (agora), serían las diez (naquela hora), habrá terminado (futuro).",
+      "Se acidental (se me olvidó) e verbos de mudança (ponerse, volverse, hacerse, quedarse)."
+     ],
+     "q": "Me conte uma história curta sobre um dia caótico com se me..., me puse... e serían las...",
+     "c": "Escreva uma história de seis frases com pelo menos uma estrutura de cada grupo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "se me olvidó",
+      "ex": "Con las prisas, se me olvidó el móvil en casa."
+     },
+     {
+      "w": "me puse nervioso",
+      "ex": "Me puse nervioso al ver la cola del aeropuerto."
+     },
+     {
+      "w": "serían las",
+      "ex": "Serían las ocho cuando por fin llegué."
+     },
+     {
+      "w": "aunque",
+      "ex": "Aunque fue un día raro, acabó muy bien."
+     },
+     {
+      "w": "si hubiera salido",
+      "ex": "Si hubiera salido antes, no habría perdido el tren."
+     },
+     {
+      "w": "habrá terminado",
+      "ex": "A estas horas ya habrá terminado la reunión."
+     }
+    ],
+    "gram": "Repaso B2: aunque + subjuntivo; si + pluscuamperfecto de subjuntivo; futuro/condicional de probabilidad; se me + verbo; ponerse/volverse."
+   }
+  },
+  {
+   "d": 298,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Discourse markers",
+     "g": "Structure what you say with clear discourse markers.",
+     "p": [
+      "Add information: además, asimismo, por otra parte. Contrast: no obstante, sin embargo.",
+      "Reinforce or prove: de hecho, en realidad. Consequence: por consiguiente, por lo tanto, así que.",
+      "Sum up: en resumen, en definitiva, en conclusión. They make speech and writing easy to follow."
+     ],
+     "q": "Give me your opinion on working from home, using de hecho, no obstante and en resumen.",
+     "c": "Write a short paragraph on a topic you care about with five different discourse markers."
+    },
+    "de": {
+     "t": "Diskursmarker",
+     "g": "Strukturiere, was du sagst, mit klaren Diskursmarkern.",
+     "p": [
+      "Hinzufügen: además, asimismo, por otra parte. Gegensatz: no obstante, sin embargo.",
+      "Bekräftigen: de hecho, en realidad. Folge: por consiguiente, por lo tanto, así que.",
+      "Zusammenfassen: en resumen, en definitiva, en conclusión. So lässt sich dir leicht folgen."
+     ],
+     "q": "Sag mir deine Meinung zum Homeoffice mit de hecho, no obstante und en resumen.",
+     "c": "Schreib einen kurzen Absatz über ein Thema, das dir wichtig ist, mit fünf verschiedenen Diskursmarkern."
+    },
+    "es": {
+     "t": "Marcadores del discurso",
+     "g": "Estructura lo que dices con marcadores claros.",
+     "p": [
+      "Añadir: además, asimismo, por otra parte. Contrastar: no obstante, sin embargo.",
+      "Reforzar: de hecho, en realidad. Consecuencia: por consiguiente, por lo tanto, así que.",
+      "Resumir: en resumen, en definitiva, en conclusión. Hacen que tu discurso se siga con facilidad."
+     ],
+     "q": "Dame tu opinión sobre el teletrabajo con de hecho, no obstante y en resumen.",
+     "c": "Escribe un párrafo breve sobre un tema que te importe con cinco marcadores distintos."
+    },
+    "fr": {
+     "t": "Marqueurs du discours",
+     "g": "Structure ce que tu dis avec des marqueurs clairs.",
+     "p": [
+      "Ajouter : además, asimismo, por otra parte. Opposer : no obstante, sin embargo.",
+      "Renforcer : de hecho, en realidad. Conséquence : por consiguiente, por lo tanto, así que.",
+      "Résumer : en resumen, en definitiva, en conclusión. On te suit ainsi facilement."
+     ],
+     "q": "Donne-moi ton avis sur le télétravail avec de hecho, no obstante et en resumen.",
+     "c": "Écris un court paragraphe sur un sujet qui te tient à cœur avec cinq marqueurs différents."
+    },
+    "it": {
+     "t": "Segnali discorsivi",
+     "g": "Struttura ciò che dici con segnali discorsivi chiari.",
+     "p": [
+      "Aggiungere: además, asimismo, por otra parte. Contrapporre: no obstante, sin embargo.",
+      "Rafforzare: de hecho, en realidad. Conseguenza: por consiguiente, por lo tanto, así que.",
+      "Riassumere: en resumen, en definitiva, en conclusión. Così è facile seguirti."
+     ],
+     "q": "Dammi la tua opinione sullo smart working con de hecho, no obstante e en resumen.",
+     "c": "Scrivi un breve paragrafo su un tema che ti sta a cuore con cinque segnali diversi."
+    },
+    "pt": {
+     "t": "Marcadores do discurso",
+     "g": "Estrutura o que dizes com marcadores claros.",
+     "p": [
+      "Acrescentar: además, asimismo, por otra parte. Contrastar: no obstante, sin embargo.",
+      "Reforçar: de hecho, en realidad. Consequência: por consiguiente, por lo tanto, así que.",
+      "Resumir: en resumen, en definitiva, en conclusión. Assim é fácil seguir o teu discurso."
+     ],
+     "q": "Dá-me a tua opinião sobre o teletrabalho com de hecho, no obstante e en resumen.",
+     "c": "Escreve um parágrafo curto sobre um tema que te importa com cinco marcadores diferentes."
+    },
+    "pt_BR": {
+     "t": "Marcadores do discurso",
+     "g": "Estruture o que você diz com marcadores claros.",
+     "p": [
+      "Acrescentar: además, asimismo, por otra parte. Contrastar: no obstante, sin embargo.",
+      "Reforçar: de hecho, en realidad. Consequência: por consiguiente, por lo tanto, así que.",
+      "Resumir: en resumen, en definitiva, en conclusión. Assim fica fácil acompanhar você."
+     ],
+     "q": "Me dê sua opinião sobre o home office com de hecho, no obstante e en resumen.",
+     "c": "Escreva um parágrafo curto sobre um tema importante para você com cinco marcadores diferentes."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "además",
+      "ex": "El piso es luminoso y, además, está bien comunicado."
+     },
+     {
+      "w": "no obstante",
+      "ex": "El plan es bueno; no obstante, necesita más tiempo."
+     },
+     {
+      "w": "de hecho",
+      "ex": "Me encanta leer; de hecho, leo cada noche."
+     },
+     {
+      "w": "por consiguiente",
+      "ex": "Hubo mucha demanda y, por consiguiente, subieron los precios."
+     },
+     {
+      "w": "en resumen",
+      "ex": "En resumen, fue una experiencia muy positiva."
+     },
+     {
+      "w": "asimismo",
+      "ex": "Asimismo, queremos agradecer vuestra ayuda."
+     }
+    ],
+    "gram": "Marcadores: adición (además, asimismo), contraste (no obstante), refuerzo (de hecho), consecuencia (por consiguiente), cierre."
+   }
+  },
+  {
+   "d": 299,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Hedging: al parecer, quizás",
+     "g": "Sound careful and balanced when you are not 100% sure.",
+     "p": [
+      "Report without confirming: al parecer, según parece, por lo visto (they say that...).",
+      "Possibility: quizás / tal vez + subjunctive (or indicative if you feel more certain): quizás venga.",
+      "Limit a claim: en cierta medida, hasta cierto punto, en general, no siempre."
+     ],
+     "q": "Is technology making us happier? Give a balanced answer with en cierta medida and tal vez.",
+     "c": "Rewrite three strong statements in a more balanced way using al parecer, tal vez and hasta cierto punto."
+    },
+    "de": {
+     "t": "Abschwächen: al parecer, quizás",
+     "g": "Klinge vorsichtig und ausgewogen, wenn du nicht 100 % sicher bist.",
+     "p": [
+      "Wiedergeben, ohne zu bestätigen: al parecer, según parece, por lo visto (anscheinend).",
+      "Möglichkeit: quizás / tal vez + Subjuntivo (oder Indikativ bei mehr Sicherheit): quizás venga.",
+      "Aussagen begrenzen: en cierta medida, hasta cierto punto, en general, no siempre."
+     ],
+     "q": "Macht uns Technik glücklicher? Antworte ausgewogen mit en cierta medida und tal vez.",
+     "c": "Formuliere drei starke Aussagen ausgewogener mit al parecer, tal vez und hasta cierto punto."
+    },
+    "es": {
+     "t": "Matizar: al parecer, quizás",
+     "g": "Suena prudente y equilibrado cuando no estás del todo seguro.",
+     "p": [
+      "Informa sin confirmar: al parecer, según parece, por lo visto.",
+      "Posibilidad: quizás / tal vez + subjuntivo (o indicativo si estás más seguro): quizás venga.",
+      "Limita lo que afirmas: en cierta medida, hasta cierto punto, en general, no siempre."
+     ],
+     "q": "¿La tecnología nos hace más felices? Da una respuesta equilibrada con en cierta medida y tal vez.",
+     "c": "Reescribe tres afirmaciones tajantes de forma más matizada con al parecer, tal vez y hasta cierto punto."
+    },
+    "fr": {
+     "t": "Nuancer : al parecer, quizás",
+     "g": "Sois prudent et équilibré quand tu n'es pas sûr à 100 %.",
+     "p": [
+      "Rapporter sans confirmer : al parecer, según parece, por lo visto (apparemment).",
+      "Possibilité : quizás / tal vez + subjonctif (ou indicatif si tu es plus sûr) : quizás venga.",
+      "Limiter une affirmation : en cierta medida, hasta cierto punto, en general, no siempre."
+     ],
+     "q": "La technologie nous rend-elle plus heureux ? Réponds de façon nuancée avec en cierta medida et tal vez.",
+     "c": "Réécris trois affirmations catégoriques de façon nuancée avec al parecer, tal vez et hasta cierto punto."
+    },
+    "it": {
+     "t": "Attenuare: al parecer, quizás",
+     "g": "Sii prudente ed equilibrato quando non sei sicuro al 100%.",
+     "p": [
+      "Riferire senza confermare: al parecer, según parece, por lo visto (a quanto pare).",
+      "Possibilità: quizás / tal vez + congiuntivo (o indicativo se sei più sicuro): quizás venga.",
+      "Limitare un'affermazione: en cierta medida, hasta cierto punto, en general, no siempre."
+     ],
+     "q": "La tecnologia ci rende più felici? Rispondi in modo equilibrato con en cierta medida e tal vez.",
+     "c": "Riscrivi tre affermazioni nette in modo più sfumato con al parecer, tal vez e hasta cierto punto."
+    },
+    "pt": {
+     "t": "Matizar: al parecer, quizás",
+     "g": "Soa prudente e equilibrado quando não tens a certeza total.",
+     "p": [
+      "Informar sem confirmar: al parecer, según parece, por lo visto (pelos vistos).",
+      "Possibilidade: quizás / tal vez + conjuntivo (ou indicativo se tens mais certeza): quizás venga.",
+      "Limita o que afirmas: en cierta medida, hasta cierto punto, en general, no siempre."
+     ],
+     "q": "A tecnologia torna-nos mais felizes? Dá uma resposta equilibrada com en cierta medida e tal vez.",
+     "c": "Reescreve três afirmações categóricas de forma mais matizada com al parecer, tal vez e hasta cierto punto."
+    },
+    "pt_BR": {
+     "t": "Relativizar: al parecer, quizás",
+     "g": "Soe cuidadoso e equilibrado quando não tiver certeza total.",
+     "p": [
+      "Informar sem confirmar: al parecer, según parece, por lo visto (pelo jeito).",
+      "Possibilidade: quizás / tal vez + subjuntivo (ou indicativo se tiver mais certeza): quizás venga.",
+      "Limite o que você afirma: en cierta medida, hasta cierto punto, en general, no siempre."
+     ],
+     "q": "A tecnologia nos deixa mais felizes? Dê uma resposta equilibrada com en cierta medida e tal vez.",
+     "c": "Reescreva três afirmações categóricas de forma mais equilibrada com al parecer, tal vez e hasta cierto punto."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "al parecer",
+      "ex": "Al parecer, el museo abrirá una sala nueva."
+     },
+     {
+      "w": "según parece",
+      "ex": "Según parece, el tren llegará con retraso."
+     },
+     {
+      "w": "por lo visto",
+      "ex": "Por lo visto, Marta ha encontrado trabajo."
+     },
+     {
+      "w": "tal vez",
+      "ex": "Tal vez sea mejor esperar un poco."
+     },
+     {
+      "w": "en cierta medida",
+      "ex": "En cierta medida, tienes razón."
+     },
+     {
+      "w": "hasta cierto punto",
+      "ex": "Estoy de acuerdo hasta cierto punto."
+     }
+    ],
+    "gram": "Matizar: al parecer / por lo visto + indicativo; quizás / tal vez + subjuntivo (duda) o indicativo (más seguridad)."
+   }
+  },
+  {
+   "d": 300,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Formal vs neutral register",
+     "g": "Shift between neutral and formal Spanish as the situation requires.",
+     "p": [
+      "Formal verbs: solicitar (pedir), obtener (conseguir), realizar (hacer), facilitar (dar).",
+      "Formal frames: le agradecería que + imperfect subjunctive, quisiera, en relación con su mensaje.",
+      "Use usted and avoid slang; keep neutral Spanish for everyday chats."
+     ],
+     "q": "How would you formally ask a university for information? Start with quisiera solicitar...",
+     "c": "Rewrite a casual message as a formal email using solicitar, obtener and le agradecería que."
+    },
+    "de": {
+     "t": "Formelles vs. neutrales Register",
+     "g": "Wechsle je nach Situation zwischen neutralem und formellem Spanisch.",
+     "p": [
+      "Formelle Verben: solicitar (pedir), obtener (conseguir), realizar (hacer), facilitar (dar).",
+      "Formelle Rahmen: le agradecería que + Subjuntivo Imperfekt, quisiera, en relación con su mensaje.",
+      "Nutze usted, vermeide Slang; neutrales Spanisch bleibt für Alltagsgespräche."
+     ],
+     "q": "Wie würdest du eine Universität formell um Informationen bitten? Beginne mit quisiera solicitar...",
+     "c": "Schreib eine lockere Nachricht als formelle E-Mail um, mit solicitar, obtener und le agradecería que."
+    },
+    "es": {
+     "t": "Registro formal frente a neutro",
+     "g": "Cambia entre español neutro y formal según la situación.",
+     "p": [
+      "Verbos formales: solicitar (pedir), obtener (conseguir), realizar (hacer), facilitar (dar).",
+      "Fórmulas formales: le agradecería que + imperfecto de subjuntivo, quisiera, en relación con su mensaje.",
+      "Usa usted y evita el argot; reserva el español neutro para las charlas cotidianas."
+     ],
+     "q": "¿Cómo pedirías información formalmente a una universidad? Empieza con quisiera solicitar...",
+     "c": "Reescribe un mensaje informal como correo formal con solicitar, obtener y le agradecería que."
+    },
+    "fr": {
+     "t": "Registre formel ou neutre",
+     "g": "Passe de l'espagnol neutre au formel selon la situation.",
+     "p": [
+      "Verbes formels : solicitar (pedir), obtener (conseguir), realizar (hacer), facilitar (dar).",
+      "Formules formelles : le agradecería que + subjonctif imparfait, quisiera, en relación con su mensaje.",
+      "Utilise usted, évite l'argot ; garde l'espagnol neutre pour le quotidien."
+     ],
+     "q": "Comment demanderais-tu formellement des informations à une université ? Commence par quisiera solicitar...",
+     "c": "Réécris un message familier en e-mail formel avec solicitar, obtener et le agradecería que."
+    },
+    "it": {
+     "t": "Registro formale e neutro",
+     "g": "Passa dallo spagnolo neutro a quello formale secondo la situazione.",
+     "p": [
+      "Verbi formali: solicitar (pedir), obtener (conseguir), realizar (hacer), facilitar (dar).",
+      "Formule formali: le agradecería que + congiuntivo imperfetto, quisiera, en relación con su mensaje.",
+      "Usa usted, evita lo slang; tieni lo spagnolo neutro per le chiacchiere quotidiane."
+     ],
+     "q": "Come chiederesti formalmente informazioni a un'università? Inizia con quisiera solicitar...",
+     "c": "Riscrivi un messaggio informale come email formale con solicitar, obtener e le agradecería que."
+    },
+    "pt": {
+     "t": "Registo formal vs neutro",
+     "g": "Muda entre espanhol neutro e formal conforme a situação.",
+     "p": [
+      "Verbos formais: solicitar (pedir), obtener (conseguir), realizar (hacer), facilitar (dar).",
+      "Fórmulas formais: le agradecería que + imperfeito do conjuntivo, quisiera, en relación con su mensaje.",
+      "Usa usted e evita o calão; guarda o espanhol neutro para as conversas do dia a dia."
+     ],
+     "q": "Como pedirias formalmente informações a uma universidade? Começa com quisiera solicitar...",
+     "c": "Reescreve uma mensagem informal como e-mail formal com solicitar, obtener e le agradecería que."
+    },
+    "pt_BR": {
+     "t": "Registro formal vs neutro",
+     "g": "Alterne entre espanhol neutro e formal conforme a situação.",
+     "p": [
+      "Verbos formais: solicitar (pedir), obtener (conseguir), realizar (hacer), facilitar (dar).",
+      "Fórmulas formais: le agradecería que + imperfeito do subjuntivo, quisiera, en relación con su mensaje.",
+      "Use usted e evite gírias; deixe o espanhol neutro para as conversas do dia a dia."
+     ],
+     "q": "Como você pediria informações formalmente a uma universidade? Comece com quisiera solicitar...",
+     "c": "Reescreva uma mensagem informal como e-mail formal com solicitar, obtener e le agradecería que."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "solicitar",
+      "ex": "Quisiera solicitar información sobre el máster."
+     },
+     {
+      "w": "obtener",
+      "ex": "Para obtener el certificado, rellene este formulario."
+     },
+     {
+      "w": "realizar",
+      "ex": "La empresa realizará las obras en verano."
+     },
+     {
+      "w": "facilitar",
+      "ex": "¿Podría facilitarme su número de referencia?"
+     },
+     {
+      "w": "le agradecería que",
+      "ex": "Le agradecería que me respondiera lo antes posible."
+     },
+     {
+      "w": "en relación con",
+      "ex": "En relación con su mensaje, le confirmo la cita."
+     }
+    ],
+    "gram": "Registro formal: usted, quisiera, le agradecería que + imperfecto de subjuntivo; verbos cultos: solicitar, obtener, realizar."
+   }
+  }
+ ]
+}

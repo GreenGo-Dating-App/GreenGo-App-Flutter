@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 221,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Periodo ipotetico of possibility",
+     "g": "Imagine a different present: se avessi più soldi, viaggerei.",
+     "p": [
+      "Structure: se + congiuntivo imperfetto, then condizionale presente: se avessi più soldi, viaggerei.",
+      "The order can switch: viaggerei di più se avessi più soldi. The meaning stays the same.",
+      "Compare with real conditions: se ho tempo, vengo (likely, indicativo) versus se avessi tempo, verrei (unlikely or unreal)."
+     ],
+     "q": "If you lived in Italy, which city would you choose and what would your day look like?",
+     "c": "Write three pairs: one real (se ho..., faccio...) and one imagined (se avessi..., farei...) for the same topic."
+    },
+    "de": {
+     "t": "Periodo ipotetico der Möglichkeit",
+     "g": "Du stellst dir eine andere Gegenwart vor: se avessi più soldi, viaggerei.",
+     "p": [
+      "Struktur: se + congiuntivo imperfetto, dann condizionale presente: se avessi più soldi, viaggerei.",
+      "Die Reihenfolge kann wechseln: viaggerei di più se avessi più soldi. Die Bedeutung bleibt gleich.",
+      "Vergleich mit realen Bedingungen: se ho tempo, vengo (wahrscheinlich) und se avessi tempo, verrei (unwahrscheinlich)."
+     ],
+     "q": "Wenn du in Italien leben würdest, welche Stadt würdest du wählen und wie sähe dein Tag aus?",
+     "c": "Schreib drei Paare zum selben Thema: eins real (se ho..., faccio...) und eins vorgestellt (se avessi..., farei...)."
+    },
+    "es": {
+     "t": "Periodo ipotetico de posibilidad",
+     "g": "Imaginar un presente distinto: se avessi più soldi, viaggerei.",
+     "p": [
+      "Estructura: se + congiuntivo imperfetto y luego condizionale presente: se avessi più soldi, viaggerei.",
+      "El orden puede cambiar: viaggerei di più se avessi più soldi. El sentido es el mismo.",
+      "Compara con lo real: se ho tempo, vengo (probable, indicativo) y se avessi tempo, verrei (poco probable o irreal)."
+     ],
+     "q": "Si vivieras en Italia, ¿qué ciudad elegirías y cómo sería tu día?",
+     "c": "Escribe tres pares sobre el mismo tema: uno real (se ho..., faccio...) y uno imaginado (se avessi..., farei...)."
+    },
+    "fr": {
+     "t": "Periodo ipotetico du possible",
+     "g": "Imaginer un autre présent : se avessi più soldi, viaggerei.",
+     "p": [
+      "Structure : se + congiuntivo imperfetto, puis condizionale presente : se avessi più soldi, viaggerei.",
+      "L'ordre peut changer : viaggerei di più se avessi più soldi. Le sens reste le même.",
+      "Compare avec le réel : se ho tempo, vengo (probable, indicatif) et se avessi tempo, verrei (peu probable ou irréel)."
+     ],
+     "q": "Si tu vivais en Italie, quelle ville choisirais-tu et à quoi ressemblerait ta journée ?",
+     "c": "Écris trois paires sur un même thème : une réelle (se ho..., faccio...) et une imaginée (se avessi..., farei...)."
+    },
+    "it": {
+     "t": "Il periodo ipotetico della possibilità",
+     "g": "Immaginare un presente diverso: se avessi più soldi, viaggerei.",
+     "p": [
+      "Struttura: se + congiuntivo imperfetto, poi condizionale presente: se avessi più soldi, viaggerei.",
+      "L'ordine può cambiare: viaggerei di più se avessi più soldi. Il significato non cambia.",
+      "Confronta con la realtà: se ho tempo, vengo (probabile, indicativo) e se avessi tempo, verrei (poco probabile)."
+     ],
+     "q": "Se vivessi in Italia, quale città sceglieresti e come sarebbe la tua giornata?",
+     "c": "Scrivi tre coppie sullo stesso tema: una reale (se ho..., faccio...) e una immaginata (se avessi..., farei...)."
+    },
+    "pt": {
+     "t": "Periodo ipotetico da possibilidade",
+     "g": "Imaginar um presente diferente: se avessi più soldi, viaggerei.",
+     "p": [
+      "Estrutura: se + congiuntivo imperfetto e depois condizionale presente: se avessi più soldi, viaggerei.",
+      "A ordem pode mudar: viaggerei di più se avessi più soldi. O sentido é o mesmo.",
+      "Compara com o real: se ho tempo, vengo (provável, indicativo) e se avessi tempo, verrei (pouco provável ou irreal)."
+     ],
+     "q": "Se vivesses em Itália, que cidade escolherias e como seria o teu dia?",
+     "c": "Escreve três pares sobre o mesmo tema: um real (se ho..., faccio...) e um imaginado (se avessi..., farei...)."
+    },
+    "pt_BR": {
+     "t": "Periodo ipotetico da possibilidade",
+     "g": "Imaginar um presente diferente: se avessi più soldi, viaggerei.",
+     "p": [
+      "Estrutura: se + congiuntivo imperfetto e depois condizionale presente: se avessi più soldi, viaggerei.",
+      "A ordem pode mudar: viaggerei di più se avessi più soldi. O sentido é o mesmo.",
+      "Compare com o real: se ho tempo, vengo (provável, indicativo) e se avessi tempo, verrei (pouco provável ou irreal)."
+     ],
+     "q": "Se você morasse na Itália, que cidade escolheria e como seria o seu dia?",
+     "c": "Escreva três pares sobre o mesmo tema: um real (se ho..., faccio...) e um imaginado (se avessi..., farei...)."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "se avessi più soldi",
+      "ex": "Se avessi più soldi, viaggerei in Giappone."
+     },
+     {
+      "w": "se vivessi",
+      "ex": "Se vivessi a Bologna, andrei sempre in bicicletta."
+     },
+     {
+      "w": "verrei",
+      "ex": "Verrei volentieri, se non dovessi lavorare."
+     },
+     {
+      "w": "se ho tempo",
+      "ex": "Se ho tempo, stasera ti chiamo."
+     },
+     {
+      "w": "sarebbe bello",
+      "ex": "Sarebbe bello se fossimo tutti insieme."
+     },
+     {
+      "w": "cambierei",
+      "ex": "Se potessi, cambierei lavoro."
+     }
+    ],
+    "gram": "Periodo ipotetico della possibilità: se + congiuntivo imperfetto, condizionale presente. Realtà: se + indicativo, indicativo."
+   }
+  },
+  {
+   "d": 222,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "What would you do if...?",
+     "g": "Discuss hypothetical situations with se and the conditional.",
+     "p": [
+      "Ask: che cosa faresti se...? Cosa faresti al mio posto? Come reagiresti se...?",
+      "Answer: se vincessi un viaggio, andrei in Sicilia; al tuo posto, parlerei con lui.",
+      "Keep talking: e tu? anche io farei lo stesso; io invece..., dipende: se fosse estate, ..."
+     ],
+     "q": "What would you do if you could speak any language perfectly overnight?",
+     "c": "Ask a friend or your Buddy three che cosa faresti se... questions and answer them yourself first."
+    },
+    "de": {
+     "t": "Was würdest du tun, wenn...?",
+     "g": "Du sprichst über hypothetische Situationen mit se und dem Konditional.",
+     "p": [
+      "Fragen: che cosa faresti se...? Cosa faresti al mio posto? Come reagiresti se...?",
+      "Antworten: se vincessi un viaggio, andrei in Sicilia; al tuo posto, parlerei con lui.",
+      "Gespräch fortsetzen: e tu? anche io farei lo stesso; io invece..., dipende: se fosse estate, ..."
+     ],
+     "q": "Was würdest du tun, wenn du über Nacht jede Sprache perfekt sprechen könntest?",
+     "c": "Stell einem Freund oder deinem Buddy drei Fragen mit che cosa faresti se... und beantworte sie zuerst selbst."
+    },
+    "es": {
+     "t": "¿Qué harías si...?",
+     "g": "Hablar de situaciones hipotéticas con se y el condicional.",
+     "p": [
+      "Preguntar: che cosa faresti se...? Cosa faresti al mio posto? Come reagiresti se...?",
+      "Responder: se vincessi un viaggio, andrei in Sicilia; al tuo posto, parlerei con lui.",
+      "Seguir la charla: e tu? anche io farei lo stesso; io invece..., dipende: se fosse estate, ..."
+     ],
+     "q": "¿Qué harías si de la noche a la mañana pudieras hablar cualquier idioma perfectamente?",
+     "c": "Haz tres preguntas con che cosa faresti se... a un amigo o a tu Buddy y respóndelas tú primero."
+    },
+    "fr": {
+     "t": "Que ferais-tu si... ?",
+     "g": "Parler de situations hypothétiques avec se et le conditionnel.",
+     "p": [
+      "Demander : che cosa faresti se... ? Cosa faresti al mio posto ? Come reagiresti se... ?",
+      "Répondre : se vincessi un viaggio, andrei in Sicilia ; al tuo posto, parlerei con lui.",
+      "Relancer : e tu ? anche io farei lo stesso ; io invece..., dipende : se fosse estate, ..."
+     ],
+     "q": "Que ferais-tu si tu pouvais parler n'importe quelle langue parfaitement du jour au lendemain ?",
+     "c": "Pose trois questions che cosa faresti se... à un ami ou à ton Buddy, et réponds-y d'abord toi-même."
+    },
+    "it": {
+     "t": "Che cosa faresti se...?",
+     "g": "Parlare di situazioni ipotetiche con se e il condizionale.",
+     "p": [
+      "Chiedere: che cosa faresti se...? Cosa faresti al mio posto? Come reagiresti se...?",
+      "Rispondere: se vincessi un viaggio, andrei in Sicilia; al tuo posto, parlerei con lui.",
+      "Continuare la conversazione: e tu? anch'io farei lo stesso; io invece..., dipende: se fosse estate, ..."
+     ],
+     "q": "Che cosa faresti se da un giorno all'altro potessi parlare perfettamente qualsiasi lingua?",
+     "c": "Fai tre domande con che cosa faresti se... a un amico o al tuo Buddy e rispondi prima tu."
+    },
+    "pt": {
+     "t": "O que farias se...?",
+     "g": "Falar de situações hipotéticas com se e o condicional.",
+     "p": [
+      "Perguntar: che cosa faresti se...? Cosa faresti al mio posto? Come reagiresti se...?",
+      "Responder: se vincessi un viaggio, andrei in Sicilia; al tuo posto, parlerei con lui.",
+      "Continuar a conversa: e tu? anche io farei lo stesso; io invece..., dipende: se fosse estate, ..."
+     ],
+     "q": "O que farias se, de um dia para o outro, pudesses falar qualquer língua na perfeição?",
+     "c": "Faz três perguntas com che cosa faresti se... a um amigo ou ao teu Buddy e responde tu primeiro."
+    },
+    "pt_BR": {
+     "t": "O que você faria se...?",
+     "g": "Falar de situações hipotéticas com se e o condicional.",
+     "p": [
+      "Perguntar: che cosa faresti se...? Cosa faresti al mio posto? Come reagiresti se...?",
+      "Responder: se vincessi un viaggio, andrei in Sicilia; al tuo posto, parlerei con lui.",
+      "Continuar a conversa: e tu? anche io farei lo stesso; io invece..., dipende: se fosse estate, ..."
+     ],
+     "q": "O que você faria se, de um dia para o outro, pudesse falar qualquer idioma perfeitamente?",
+     "c": "Faça três perguntas com che cosa faresti se... a um amigo ou ao seu Buddy e responda você primeiro."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "che cosa faresti se",
+      "ex": "Che cosa faresti se vincessi un viaggio?"
+     },
+     {
+      "w": "al mio posto",
+      "ex": "Cosa faresti al mio posto?"
+     },
+     {
+      "w": "al tuo posto",
+      "ex": "Al tuo posto, accetterei subito."
+     },
+     {
+      "w": "se vincessi",
+      "ex": "Se vincessi un premio, lo dividerei con la mia famiglia."
+     },
+     {
+      "w": "farei lo stesso",
+      "ex": "Anch'io farei lo stesso, è la scelta migliore."
+     },
+     {
+      "w": "io invece",
+      "ex": "Io invece resterei a casa a riposare."
+     }
+    ],
+    "gram": "Domande ipotetiche: che cosa faresti se + congiuntivo imperfetto? Al tuo posto + condizionale."
+   }
+  },
+  {
+   "d": 223,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Come se + congiuntivo",
+     "g": "Make comparisons with unreal situations: parla come se fosse un esperto.",
+     "p": [
+      "Come se (as if) always takes the congiuntivo imperfetto for the same time: parla come se fosse un esperto.",
+      "It works with any tense in the main clause: mi guardava come se non mi conoscesse.",
+      "For an earlier action, use the trapassato congiuntivo: come se non fosse successo niente (as if nothing had happened)."
+     ],
+     "q": "Do you know someone who talks come se sapesse tutto? Describe them in a friendly way.",
+     "c": "Write three sentences: someone who eats come se..., a place that feels come se..., a day that passed come se..."
+    },
+    "de": {
+     "t": "Come se + congiuntivo",
+     "g": "Du machst Vergleiche mit irrealen Situationen: parla come se fosse un esperto.",
+     "p": [
+      "Come se (als ob) verlangt für Gleichzeitiges den congiuntivo imperfetto: parla come se fosse un esperto.",
+      "Das geht mit jeder Zeit im Hauptsatz: mi guardava come se non mi conoscesse.",
+      "Für Früheres steht der trapassato congiuntivo: come se non fosse successo niente (als ob nichts passiert wäre)."
+     ],
+     "q": "Kennst du jemanden, der redet, come se sapesse tutto? Beschreib die Person freundlich.",
+     "c": "Schreib drei Sätze: jemand, der isst come se..., ein Ort, der wirkt come se..., ein Tag, der verging come se..."
+    },
+    "es": {
+     "t": "Come se + congiuntivo",
+     "g": "Comparar con situaciones irreales: parla come se fosse un esperto.",
+     "p": [
+      "Come se (como si) lleva congiuntivo imperfetto para lo simultáneo: parla come se fosse un esperto.",
+      "Funciona con cualquier tiempo en la principal: mi guardava come se non mi conoscesse.",
+      "Para algo anterior, trapassato congiuntivo: come se non fosse successo niente (como si no hubiera pasado nada)."
+     ],
+     "q": "¿Conoces a alguien que habla come se sapesse tutto? Descríbelo con cariño.",
+     "c": "Escribe tres frases: alguien que come come se..., un lugar que parece come se..., un día que pasó come se..."
+    },
+    "fr": {
+     "t": "Come se + congiuntivo",
+     "g": "Comparer avec des situations irréelles : parla come se fosse un esperto.",
+     "p": [
+      "Come se (comme si) demande le congiuntivo imperfetto pour la simultanéité : parla come se fosse un esperto.",
+      "Ça marche avec tous les temps dans la principale : mi guardava come se non mi conoscesse.",
+      "Pour une action antérieure, le trapassato congiuntivo : come se non fosse successo niente (comme si de rien n'était)."
+     ],
+     "q": "Connais-tu quelqu'un qui parle come se sapesse tutto ? Décris-le gentiment.",
+     "c": "Écris trois phrases : quelqu'un qui mange come se..., un lieu qui semble come se..., une journée passée come se..."
+    },
+    "it": {
+     "t": "Come se + congiuntivo",
+     "g": "Fare paragoni con situazioni irreali: parla come se fosse un esperto.",
+     "p": [
+      "Come se vuole il congiuntivo imperfetto per un'azione contemporanea: parla come se fosse un esperto.",
+      "Funziona con qualsiasi tempo nella principale: mi guardava come se non mi conoscesse.",
+      "Per un'azione precedente si usa il trapassato congiuntivo: come se non fosse successo niente."
+     ],
+     "q": "Conosci qualcuno che parla come se sapesse tutto? Descrivilo con simpatia.",
+     "c": "Scrivi tre frasi: qualcuno che mangia come se..., un posto che sembra come se..., una giornata passata come se..."
+    },
+    "pt": {
+     "t": "Come se + congiuntivo",
+     "g": "Fazer comparações com situações irreais: parla come se fosse un esperto.",
+     "p": [
+      "Come se (como se) pede congiuntivo imperfetto para o simultâneo: parla come se fosse un esperto.",
+      "Funciona com qualquer tempo na principal: mi guardava come se non mi conoscesse.",
+      "Para algo anterior, trapassato congiuntivo: come se non fosse successo niente (como se nada tivesse acontecido)."
+     ],
+     "q": "Conheces alguém que fala come se sapesse tutto? Descreve essa pessoa com simpatia.",
+     "c": "Escreve três frases: alguém que come come se..., um sítio que parece come se..., um dia que passou come se..."
+    },
+    "pt_BR": {
+     "t": "Come se + congiuntivo",
+     "g": "Fazer comparações com situações irreais: parla come se fosse un esperto.",
+     "p": [
+      "Come se (como se) pede congiuntivo imperfetto para o simultâneo: parla come se fosse un esperto.",
+      "Funciona com qualquer tempo na principal: mi guardava come se non mi conoscesse.",
+      "Para algo anterior, trapassato congiuntivo: come se non fosse successo niente (como se nada tivesse acontecido)."
+     ],
+     "q": "Você conhece alguém que fala come se sapesse tutto? Descreva essa pessoa com simpatia.",
+     "c": "Escreva três frases: alguém que come come se..., um lugar que parece come se..., um dia que passou come se..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "come se fosse",
+      "ex": "Parla di Roma come se fosse la sua città."
+     },
+     {
+      "w": "come se sapesse",
+      "ex": "Risponde come se sapesse già tutto."
+     },
+     {
+      "w": "come se non mi conoscesse",
+      "ex": "Mi ha salutato come se non mi conoscesse."
+     },
+     {
+      "w": "come se niente fosse",
+      "ex": "Dopo la discussione, ha sorriso come se niente fosse."
+     },
+     {
+      "w": "come se fosse successo",
+      "ex": "Ne parla come se fosse successo ieri."
+     },
+     {
+      "w": "sembrava che",
+      "ex": "Sembrava che il tempo si fosse fermato."
+     }
+    ],
+    "gram": "Come se + congiuntivo imperfetto (azione contemporanea) o trapassato (azione precedente): parla come se fosse un esperto."
+   }
+  },
+  {
+   "d": 224,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Magari! Expressing wishes",
+     "g": "Express strong wishes: magari fosse vero!, vorrei che tu fossi qui.",
+     "p": [
+      "Magari! alone means if only! / I wish!: Vinciamo? Magari! With a verb: magari fosse vero! (+ congiuntivo imperfetto).",
+      "Vorrei che + congiuntivo imperfetto: vorrei che tu fossi qui; vorrei che smettesse di piovere.",
+      "Se solo...!: se solo avessi più tempo! Careful: magari in normal speech also means maybe: magari vengo domani."
+     ],
+     "q": "What is one wish you have for your future? Use magari or vorrei che.",
+     "c": "Write three wishes: one with magari!, one with vorrei che, one with se solo...!"
+    },
+    "de": {
+     "t": "Magari! Wünsche ausdrücken",
+     "g": "Du drückst starke Wünsche aus: magari fosse vero!, vorrei che tu fossi qui.",
+     "p": [
+      "Magari! allein heißt schön wär's!: Vinciamo? Magari! Mit Verb: magari fosse vero! (+ congiuntivo imperfetto).",
+      "Vorrei che + congiuntivo imperfetto: vorrei che tu fossi qui; vorrei che smettesse di piovere.",
+      "Se solo...!: se solo avessi più tempo! Achtung: magari heißt im Alltag auch vielleicht: magari vengo domani."
+     ],
+     "q": "Welchen Wunsch hast du für deine Zukunft? Benutze magari oder vorrei che.",
+     "c": "Schreib drei Wünsche: einen mit magari!, einen mit vorrei che, einen mit se solo...!"
+    },
+    "es": {
+     "t": "¡Magari! Expresar deseos",
+     "g": "Expresar deseos intensos: magari fosse vero!, vorrei che tu fossi qui.",
+     "p": [
+      "Magari! solo significa ¡ojalá!: Vinciamo? Magari! Con verbo: magari fosse vero! (+ congiuntivo imperfetto).",
+      "Vorrei che + congiuntivo imperfetto: vorrei che tu fossi qui; vorrei che smettesse di piovere.",
+      "Se solo...!: se solo avessi più tempo! Ojo: en la charla diaria magari también es quizás: magari vengo domani."
+     ],
+     "q": "¿Qué deseo tienes para tu futuro? Usa magari o vorrei che.",
+     "c": "Escribe tres deseos: uno con magari!, otro con vorrei che y otro con se solo...!"
+    },
+    "fr": {
+     "t": "Magari ! Exprimer des souhaits",
+     "g": "Exprimer des souhaits forts : magari fosse vero!, vorrei che tu fossi qui.",
+     "p": [
+      "Magari ! seul signifie si seulement ! : Vinciamo? Magari! Avec un verbe : magari fosse vero! (+ congiuntivo imperfetto).",
+      "Vorrei che + congiuntivo imperfetto : vorrei che tu fossi qui ; vorrei che smettesse di piovere.",
+      "Se solo... ! : se solo avessi più tempo! Attention : magari veut aussi dire peut-être : magari vengo domani."
+     ],
+     "q": "Quel souhait as-tu pour ton avenir ? Utilise magari ou vorrei che.",
+     "c": "Écris trois souhaits : un avec magari !, un avec vorrei che, un avec se solo... !"
+    },
+    "it": {
+     "t": "Magari! Esprimere desideri",
+     "g": "Esprimere desideri forti: magari fosse vero!, vorrei che tu fossi qui.",
+     "p": [
+      "Magari! da solo esprime un desiderio forte: Vinciamo? Magari! Con un verbo: magari fosse vero! (+ congiuntivo imperfetto).",
+      "Vorrei che + congiuntivo imperfetto: vorrei che tu fossi qui; vorrei che smettesse di piovere.",
+      "Se solo...!: se solo avessi più tempo! Attenzione: nel parlato magari significa anche forse: magari vengo domani."
+     ],
+     "q": "Qual è un desiderio che hai per il tuo futuro? Usa magari o vorrei che.",
+     "c": "Scrivi tre desideri: uno con magari!, uno con vorrei che e uno con se solo...!"
+    },
+    "pt": {
+     "t": "Magari! Exprimir desejos",
+     "g": "Exprimir desejos fortes: magari fosse vero!, vorrei che tu fossi qui.",
+     "p": [
+      "Magari! sozinho significa oxalá! / quem me dera!: Vinciamo? Magari! Com verbo: magari fosse vero! (+ congiuntivo imperfetto).",
+      "Vorrei che + congiuntivo imperfetto: vorrei che tu fossi qui; vorrei che smettesse di piovere.",
+      "Se solo...!: se solo avessi più tempo! Atenção: no dia a dia magari também quer dizer talvez: magari vengo domani."
+     ],
+     "q": "Que desejo tens para o teu futuro? Usa magari ou vorrei che.",
+     "c": "Escreve três desejos: um com magari!, outro com vorrei che e outro com se solo...!"
+    },
+    "pt_BR": {
+     "t": "Magari! Expressar desejos",
+     "g": "Expressar desejos fortes: magari fosse vero!, vorrei che tu fossi qui.",
+     "p": [
+      "Magari! sozinho significa tomara! / quem dera!: Vinciamo? Magari! Com verbo: magari fosse vero! (+ congiuntivo imperfetto).",
+      "Vorrei che + congiuntivo imperfetto: vorrei che tu fossi qui; vorrei che smettesse di piovere.",
+      "Se solo...!: se solo avessi più tempo! Atenção: no dia a dia magari também quer dizer talvez: magari vengo domani."
+     ],
+     "q": "Que desejo você tem para o seu futuro? Use magari ou vorrei che.",
+     "c": "Escreva três desejos: um com magari!, outro com vorrei che e outro com se solo...!"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "magari!",
+      "ex": "Andiamo in vacanza insieme? Magari!"
+     },
+     {
+      "w": "magari fosse vero",
+      "ex": "Domani niente lavoro? Magari fosse vero!"
+     },
+     {
+      "w": "vorrei che tu fossi qui",
+      "ex": "Il tramonto è bellissimo, vorrei che tu fossi qui."
+     },
+     {
+      "w": "vorrei che smettesse",
+      "ex": "Vorrei che smettesse di piovere."
+     },
+     {
+      "w": "se solo",
+      "ex": "Se solo avessi più tempo per leggere!"
+     },
+     {
+      "w": "magari (forse)",
+      "ex": "Magari passo da te più tardi."
+     }
+    ],
+    "gram": "Magari + congiuntivo imperfetto (magari fosse vero!), vorrei che + congiuntivo imperfetto, se solo + congiuntivo imperfetto."
+   }
+  },
+  {
+   "d": 225,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Review: hypotheses and wishes",
+     "g": "Recap the congiuntivo imperfetto and the second conditional.",
+     "p": [
+      "Forms: parlassi, leggessi, dormissi; irregular fossi, dessi, stessi, facessi, dicessi, bevessi.",
+      "Hypotheses: se avessi tempo, viaggerei; che cosa faresti se...? al tuo posto...; never se + conditional.",
+      "Comparisons and wishes: come se fosse; magari fosse vero!; vorrei che tu fossi qui; se solo...!"
+     ],
+     "q": "If you could spend one month anywhere in Italy, where would you go and what would you do?",
+     "c": "Write a dream paragraph: three se sentences, one come se and one magari."
+    },
+    "de": {
+     "t": "Wiederholung: Hypothesen und Wünsche",
+     "g": "Du wiederholst den congiuntivo imperfetto und den Bedingungssatz der Möglichkeit.",
+     "p": [
+      "Formen: parlassi, leggessi, dormissi; unregelmäßig fossi, dessi, stessi, facessi, dicessi, bevessi.",
+      "Hypothesen: se avessi tempo, viaggerei; che cosa faresti se...? al tuo posto...; nie se + Konditional.",
+      "Vergleiche und Wünsche: come se fosse; magari fosse vero!; vorrei che tu fossi qui; se solo...!"
+     ],
+     "q": "Wenn du einen Monat irgendwo in Italien verbringen könntest, wohin würdest du gehen und was würdest du tun?",
+     "c": "Schreib einen Traum-Absatz: drei Sätze mit se, einen mit come se und einen mit magari."
+    },
+    "es": {
+     "t": "Repaso: hipótesis y deseos",
+     "g": "Repasar el congiuntivo imperfetto y el segundo condicional.",
+     "p": [
+      "Formas: parlassi, leggessi, dormissi; irregulares fossi, dessi, stessi, facessi, dicessi, bevessi.",
+      "Hipótesis: se avessi tempo, viaggerei; che cosa faresti se...? al tuo posto...; nunca se + condicional.",
+      "Comparaciones y deseos: come se fosse; magari fosse vero!; vorrei che tu fossi qui; se solo...!"
+     ],
+     "q": "Si pudieras pasar un mes en cualquier lugar de Italia, ¿adónde irías y qué harías?",
+     "c": "Escribe un párrafo de sueños: tres frases con se, una con come se y una con magari."
+    },
+    "fr": {
+     "t": "Révision : hypothèses et souhaits",
+     "g": "Réviser le congiuntivo imperfetto et la phrase hypothétique du possible.",
+     "p": [
+      "Formes : parlassi, leggessi, dormissi ; irréguliers fossi, dessi, stessi, facessi, dicessi, bevessi.",
+      "Hypothèses : se avessi tempo, viaggerei ; che cosa faresti se... ? al tuo posto... ; jamais se + conditionnel.",
+      "Comparaisons et souhaits : come se fosse ; magari fosse vero ! ; vorrei che tu fossi qui ; se solo... !"
+     ],
+     "q": "Si tu pouvais passer un mois n'importe où en Italie, où irais-tu et que ferais-tu ?",
+     "c": "Écris un paragraphe de rêve : trois phrases avec se, une avec come se et une avec magari."
+    },
+    "it": {
+     "t": "Ripasso: ipotesi e desideri",
+     "g": "Ripassare il congiuntivo imperfetto e il periodo ipotetico della possibilità.",
+     "p": [
+      "Forme: parlassi, leggessi, dormissi; irregolari fossi, dessi, stessi, facessi, dicessi, bevessi.",
+      "Ipotesi: se avessi tempo, viaggerei; che cosa faresti se...? al tuo posto...; mai se + condizionale.",
+      "Paragoni e desideri: come se fosse; magari fosse vero!; vorrei che tu fossi qui; se solo...!"
+     ],
+     "q": "Se potessi passare un mese in qualsiasi posto d'Italia, dove andresti e che cosa faresti?",
+     "c": "Scrivi un paragrafo da sogno: tre frasi con se, una con come se e una con magari."
+    },
+    "pt": {
+     "t": "Revisão: hipóteses e desejos",
+     "g": "Rever o congiuntivo imperfetto e o segundo condicional.",
+     "p": [
+      "Formas: parlassi, leggessi, dormissi; irregulares fossi, dessi, stessi, facessi, dicessi, bevessi.",
+      "Hipóteses: se avessi tempo, viaggerei; che cosa faresti se...? al tuo posto...; nunca se + condicional.",
+      "Comparações e desejos: come se fosse; magari fosse vero!; vorrei che tu fossi qui; se solo...!"
+     ],
+     "q": "Se pudesses passar um mês em qualquer sítio de Itália, para onde irias e o que farias?",
+     "c": "Escreve um parágrafo de sonho: três frases com se, uma com come se e uma com magari."
+    },
+    "pt_BR": {
+     "t": "Revisão: hipóteses e desejos",
+     "g": "Revisar o congiuntivo imperfetto e o segundo condicional.",
+     "p": [
+      "Formas: parlassi, leggessi, dormissi; irregulares fossi, dessi, stessi, facessi, dicessi, bevessi.",
+      "Hipóteses: se avessi tempo, viaggerei; che cosa faresti se...? al tuo posto...; nunca se + condicional.",
+      "Comparações e desejos: come se fosse; magari fosse vero!; vorrei che tu fossi qui; se solo...!"
+     ],
+     "q": "Se você pudesse passar um mês em qualquer lugar da Itália, aonde iria e o que faria?",
+     "c": "Escreva um parágrafo de sonho: três frases com se, uma com come se e uma com magari."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "se potessi",
+      "ex": "Se potessi, passerei un mese in Toscana."
+     },
+     {
+      "w": "andrei",
+      "ex": "Andrei a vivere in un paesino sul lago."
+     },
+     {
+      "w": "al tuo posto",
+      "ex": "Al tuo posto, prenoterei subito il volo."
+     },
+     {
+      "w": "come se fosse",
+      "ex": "Mi sento a casa, come se fosse la mia città."
+     },
+     {
+      "w": "magari",
+      "ex": "Un mese in Sicilia? Magari!"
+     },
+     {
+      "w": "vorrei che",
+      "ex": "Vorrei che questa vacanza non finisse mai."
+     }
+    ],
+    "gram": "Ripasso: congiuntivo imperfetto, se + congiuntivo imperfetto + condizionale, come se, magari, vorrei che."
+   }
+  },
+  {
+   "d": 226,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "The news in simple Italian",
+     "g": "Read and summarise a short news article in neutral language.",
+     "p": [
+      "News words: la notizia, il titolo (headline), l'articolo, secondo (according to), è stato annunciato, si prevede.",
+      "News style uses the passive and impersonal si: il museo è stato riaperto; si stima che...",
+      "To summarise: l'articolo parla di..., secondo il giornalista..., in breve..., la notizia principale è che..."
+     ],
+     "q": "What kind of news do you like to read: science, sport, culture, travel? Why?",
+     "c": "Pick a short, positive news story and summarise it in Italian in three sentences using l'articolo parla di..."
+    },
+    "de": {
+     "t": "Nachrichten in einfachem Italienisch",
+     "g": "Du liest eine kurze Nachricht und fasst sie neutral zusammen.",
+     "p": [
+      "Nachrichtenwörter: la notizia, il titolo (Schlagzeile), l'articolo, secondo (laut), è stato annunciato, si prevede.",
+      "Der Nachrichtenstil nutzt Passiv und unpersönliches si: il museo è stato riaperto; si stima che...",
+      "Zusammenfassen: l'articolo parla di..., secondo il giornalista..., in breve..., la notizia principale è che..."
+     ],
+     "q": "Welche Nachrichten liest du gern: Wissenschaft, Sport, Kultur, Reisen? Warum?",
+     "c": "Wähl eine kurze, positive Nachricht und fasse sie in drei Sätzen auf Italienisch mit l'articolo parla di... zusammen."
+    },
+    "es": {
+     "t": "Las noticias en italiano sencillo",
+     "g": "Leer y resumir una noticia breve con lenguaje neutro.",
+     "p": [
+      "Palabras de noticias: la notizia, il titolo (titular), l'articolo, secondo (según), è stato annunciato, si prevede.",
+      "El estilo periodístico usa la pasiva y el si impersonal: il museo è stato riaperto; si stima che...",
+      "Para resumir: l'articolo parla di..., secondo il giornalista..., in breve..., la notizia principale è che..."
+     ],
+     "q": "¿Qué tipo de noticias te gusta leer: ciencia, deporte, cultura, viajes? ¿Por qué?",
+     "c": "Elige una noticia corta y positiva y resúmela en italiano en tres frases con l'articolo parla di..."
+    },
+    "fr": {
+     "t": "L'actualité en italien simple",
+     "g": "Lire et résumer un court article d'actualité dans une langue neutre.",
+     "p": [
+      "Mots de l'info : la notizia, il titolo (le titre), l'articolo, secondo (selon), è stato annunciato, si prevede.",
+      "Le style journalistique utilise le passif et le si impersonnel : il museo è stato riaperto ; si stima che...",
+      "Pour résumer : l'articolo parla di..., secondo il giornalista..., in breve..., la notizia principale è che..."
+     ],
+     "q": "Quel genre d'actualités aimes-tu lire : sciences, sport, culture, voyages ? Pourquoi ?",
+     "c": "Choisis une courte nouvelle positive et résume-la en italien en trois phrases avec l'articolo parla di..."
+    },
+    "it": {
+     "t": "Le notizie in italiano semplice",
+     "g": "Leggere e riassumere un breve articolo di cronaca con un linguaggio neutro.",
+     "p": [
+      "Parole delle notizie: la notizia, il titolo, l'articolo, secondo, è stato annunciato, si prevede.",
+      "Lo stile giornalistico usa il passivo e il si impersonale: il museo è stato riaperto; si stima che...",
+      "Per riassumere: l'articolo parla di..., secondo il giornalista..., in breve..., la notizia principale è che..."
+     ],
+     "q": "Che tipo di notizie ti piace leggere: scienza, sport, cultura, viaggi? Perché?",
+     "c": "Scegli una notizia breve e positiva e riassumila in tre frasi con l'articolo parla di..."
+    },
+    "pt": {
+     "t": "As notícias em italiano simples",
+     "g": "Ler e resumir uma notícia curta numa linguagem neutra.",
+     "p": [
+      "Palavras das notícias: la notizia, il titolo (título), l'articolo, secondo (segundo), è stato annunciato, si prevede.",
+      "O estilo jornalístico usa a passiva e o si impessoal: il museo è stato riaperto; si stima che...",
+      "Para resumir: l'articolo parla di..., secondo il giornalista..., in breve..., la notizia principale è che..."
+     ],
+     "q": "Que tipo de notícias gostas de ler: ciência, desporto, cultura, viagens? Porquê?",
+     "c": "Escolhe uma notícia curta e positiva e resume-a em italiano em três frases com l'articolo parla di..."
+    },
+    "pt_BR": {
+     "t": "As notícias em italiano simples",
+     "g": "Ler e resumir uma notícia curta numa linguagem neutra.",
+     "p": [
+      "Palavras das notícias: la notizia, il titolo (manchete), l'articolo, secondo (segundo), è stato annunciato, si prevede.",
+      "O estilo jornalístico usa a passiva e o si impessoal: il museo è stato riaperto; si stima che...",
+      "Para resumir: l'articolo parla di..., secondo il giornalista..., in breve..., la notizia principale è che..."
+     ],
+     "q": "Que tipo de notícia você gosta de ler: ciência, esporte, cultura, viagens? Por quê?",
+     "c": "Escolha uma notícia curta e positiva e resuma em italiano em três frases com l'articolo parla di..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la notizia",
+      "ex": "Ho letto una bella notizia sul giornale."
+     },
+     {
+      "w": "il titolo",
+      "ex": "Il titolo dell'articolo è molto chiaro."
+     },
+     {
+      "w": "secondo",
+      "ex": "Secondo l'articolo, il museo sarà aperto anche la sera."
+     },
+     {
+      "w": "è stato annunciato",
+      "ex": "È stato annunciato un nuovo festival del cinema."
+     },
+     {
+      "w": "si prevede che",
+      "ex": "Si prevede che arriveranno molti visitatori."
+     },
+     {
+      "w": "in breve",
+      "ex": "In breve, la mostra è stata un grande successo."
+     }
+    ],
+    "gram": "Lingua giornalistica: passivo (è stato annunciato), si impersonale (si prevede che), secondo + fonte."
+   }
+  },
+  {
+   "d": 227,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Weather forecasts and reports",
+     "g": "Understand previsioni del tempo: nuvoloso, temporali, temperature in calo.",
+     "p": [
+      "Sky: sereno (clear), poco nuvoloso, nuvoloso, coperto (overcast), nebbia (fog), schiarite (sunny spells).",
+      "Events: pioggia, rovesci (showers), temporali (thunderstorms), neve, vento forte, mare mosso (rough sea).",
+      "Trends: temperature in calo / in aumento, stabili; massime and minime; future: domani pioverà al nord."
+     ],
+     "q": "What is the weather like where you are today, and what is the forecast for tomorrow? Answer like a TV presenter.",
+     "c": "Write a three-line forecast for your region for the weekend using sereno, temperature in aumento or temporali."
+    },
+    "de": {
+     "t": "Wettervorhersage und Wetterbericht",
+     "g": "Du verstehst die previsioni del tempo: nuvoloso, temporali, temperature in calo.",
+     "p": [
+      "Himmel: sereno (klar), poco nuvoloso, nuvoloso, coperto (bedeckt), nebbia (Nebel), schiarite (Aufheiterungen).",
+      "Ereignisse: pioggia, rovesci (Schauer), temporali (Gewitter), neve, vento forte, mare mosso (bewegte See).",
+      "Tendenzen: temperature in calo / in aumento, stabili; massime und minime; Futur: domani pioverà al nord."
+     ],
+     "q": "Wie ist das Wetter heute bei dir, und wie wird es morgen? Antworte wie ein Wettermoderator.",
+     "c": "Schreib eine dreizeilige Wochenendvorhersage für deine Region mit sereno, temperature in aumento oder temporali."
+    },
+    "es": {
+     "t": "Previsiones y partes del tiempo",
+     "g": "Entender las previsioni del tempo: nuvoloso, temporali, temperature in calo.",
+     "p": [
+      "Cielo: sereno (despejado), poco nuvoloso, nuvoloso, coperto (cubierto), nebbia (niebla), schiarite (claros).",
+      "Fenómenos: pioggia, rovesci (chubascos), temporali (tormentas), neve, vento forte, mare mosso (mar agitado).",
+      "Tendencias: temperature in calo / in aumento, stabili; massime y minime; futuro: domani pioverà al nord."
+     ],
+     "q": "¿Qué tiempo hace hoy donde estás y qué se prevé para mañana? Responde como un presentador del tiempo.",
+     "c": "Escribe una previsión de tres líneas para tu región el fin de semana con sereno, temperature in aumento o temporali."
+    },
+    "fr": {
+     "t": "Météo et bulletins",
+     "g": "Comprendre les previsioni del tempo : nuvoloso, temporali, temperature in calo.",
+     "p": [
+      "Ciel : sereno (dégagé), poco nuvoloso, nuvoloso, coperto (couvert), nebbia (brouillard), schiarite (éclaircies).",
+      "Phénomènes : pioggia, rovesci (averses), temporali (orages), neve, vento forte, mare mosso (mer agitée).",
+      "Tendances : temperature in calo / in aumento, stabili ; massime et minime ; futur : domani pioverà al nord."
+     ],
+     "q": "Quel temps fait-il chez toi aujourd'hui, et quelles sont les prévisions pour demain ? Réponds comme un présentateur météo.",
+     "c": "Écris une météo de trois lignes pour ta région ce week-end avec sereno, temperature in aumento ou temporali."
+    },
+    "it": {
+     "t": "Previsioni e bollettini meteo",
+     "g": "Capire le previsioni del tempo: nuvoloso, temporali, temperature in calo.",
+     "p": [
+      "Il cielo: sereno, poco nuvoloso, nuvoloso, coperto, nebbia, schiarite.",
+      "I fenomeni: pioggia, rovesci, temporali, neve, vento forte, mare mosso.",
+      "Le tendenze: temperature in calo / in aumento, stabili; massime e minime; al futuro: domani pioverà al nord."
+     ],
+     "q": "Che tempo fa oggi dove sei, e quali sono le previsioni per domani? Rispondi come un meteorologo in TV.",
+     "c": "Scrivi le previsioni del weekend per la tua regione in tre righe con sereno, temperature in aumento o temporali."
+    },
+    "pt": {
+     "t": "Previsões e boletins do tempo",
+     "g": "Perceber as previsioni del tempo: nuvoloso, temporali, temperature in calo.",
+     "p": [
+      "Céu: sereno (limpo), poco nuvoloso, nuvoloso, coperto (encoberto), nebbia (nevoeiro), schiarite (abertas).",
+      "Fenómenos: pioggia, rovesci (aguaceiros), temporali (trovoadas), neve, vento forte, mare mosso (mar agitado).",
+      "Tendências: temperature in calo / in aumento, stabili; massime e minime; futuro: domani pioverà al nord."
+     ],
+     "q": "Como está o tempo hoje onde estás, e qual é a previsão para amanhã? Responde como um apresentador do tempo.",
+     "c": "Escreve uma previsão de três linhas para a tua região no fim de semana com sereno, temperature in aumento ou temporali."
+    },
+    "pt_BR": {
+     "t": "Previsão do tempo e boletins",
+     "g": "Entender as previsioni del tempo: nuvoloso, temporali, temperature in calo.",
+     "p": [
+      "Céu: sereno (limpo), poco nuvoloso, nuvoloso, coperto (encoberto), nebbia (neblina), schiarite (sol entre nuvens).",
+      "Fenômenos: pioggia, rovesci (pancadas de chuva), temporali (tempestades), neve, vento forte, mare mosso (mar agitado).",
+      "Tendências: temperature in calo / in aumento, stabili; massime e minime; futuro: domani pioverà al nord."
+     ],
+     "q": "Como está o tempo hoje onde você está, e qual é a previsão para amanhã? Responda como um apresentador do tempo.",
+     "c": "Escreva uma previsão de três linhas para sua região no fim de semana com sereno, temperature in aumento ou temporali."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "le previsioni del tempo",
+      "ex": "Guardo sempre le previsioni del tempo prima di partire."
+     },
+     {
+      "w": "nuvoloso",
+      "ex": "Domani il cielo sarà nuvoloso al centro."
+     },
+     {
+      "w": "i temporali",
+      "ex": "Nel pomeriggio sono previsti temporali al nord."
+     },
+     {
+      "w": "temperature in calo",
+      "ex": "Da giovedì temperature in calo su tutta l'Italia."
+     },
+     {
+      "w": "le schiarite",
+      "ex": "Dopo la pioggia arriveranno ampie schiarite."
+     },
+     {
+      "w": "il mare mosso",
+      "ex": "Oggi il mare è mosso, meglio non fare il bagno."
+     }
+    ],
+    "gram": "Linguaggio meteo: futuro semplice (pioverà, sarà sereno), sono previsti + nome, temperature in calo / in aumento."
+   }
+  },
+  {
+   "d": 228,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Talking about the environment",
+     "g": "Talk about everyday green habits: riciclare, la raccolta differenziata, risparmiare energia.",
+     "p": [
+      "La raccolta differenziata = sorting waste: carta, plastica, vetro, organico, indifferenziato.",
+      "Saving: risparmiare energia / acqua, spegnere la luce, usare i mezzi pubblici, andare in bici, evitare sprechi.",
+      "Habits with the present and opinions with the subjunctive: cerco di riciclare; è importante che tutti facciano la loro parte."
+     ],
+     "q": "What small green habits do you have at home? Which one would you like to start?",
+     "c": "Write five eco-tips for your home with cerco di..., bisogna..., è importante che... + congiuntivo."
+    },
+    "de": {
+     "t": "Über die Umwelt sprechen",
+     "g": "Du sprichst über grüne Alltagsgewohnheiten: riciclare, la raccolta differenziata, risparmiare energia.",
+     "p": [
+      "La raccolta differenziata = Mülltrennung: carta, plastica, vetro, organico, indifferenziato (Restmüll).",
+      "Sparen: risparmiare energia / acqua, spegnere la luce, usare i mezzi pubblici, andare in bici, evitare sprechi.",
+      "Gewohnheiten im Präsens, Meinungen mit Konjunktiv: cerco di riciclare; è importante che tutti facciano la loro parte."
+     ],
+     "q": "Welche kleinen grünen Gewohnheiten hast du zu Hause? Welche möchtest du neu anfangen?",
+     "c": "Schreib fünf Öko-Tipps für zu Hause mit cerco di..., bisogna..., è importante che... + congiuntivo."
+    },
+    "es": {
+     "t": "Hablar del medio ambiente",
+     "g": "Hablar de hábitos verdes cotidianos: riciclare, la raccolta differenziata, risparmiare energia.",
+     "p": [
+      "La raccolta differenziata = separar la basura: carta, plastica, vetro, organico, indifferenziato (resto).",
+      "Ahorrar: risparmiare energia / acqua, spegnere la luce, usare i mezzi pubblici, andare in bici, evitare sprechi.",
+      "Hábitos en presente y opiniones con subjuntivo: cerco di riciclare; è importante che tutti facciano la loro parte."
+     ],
+     "q": "¿Qué pequeños hábitos verdes tienes en casa? ¿Cuál te gustaría empezar?",
+     "c": "Escribe cinco consejos ecológicos para casa con cerco di..., bisogna..., è importante che... + congiuntivo."
+    },
+    "fr": {
+     "t": "Parler de l'environnement",
+     "g": "Parler des gestes verts du quotidien : riciclare, la raccolta differenziata, risparmiare energia.",
+     "p": [
+      "La raccolta differenziata = le tri des déchets : carta, plastica, vetro, organico, indifferenziato.",
+      "Économiser : risparmiare energia / acqua, spegnere la luce, usare i mezzi pubblici, andare in bici, evitare sprechi.",
+      "Habitudes au présent, opinions au subjonctif : cerco di riciclare ; è importante che tutti facciano la loro parte."
+     ],
+     "q": "Quels petits gestes verts as-tu à la maison ? Lequel aimerais-tu commencer ?",
+     "c": "Écris cinq éco-conseils pour la maison avec cerco di..., bisogna..., è importante che... + congiuntivo."
+    },
+    "it": {
+     "t": "Parlare dell'ambiente",
+     "g": "Parlare di abitudini verdi quotidiane: riciclare, la raccolta differenziata, risparmiare energia.",
+     "p": [
+      "La raccolta differenziata: carta, plastica, vetro, organico, indifferenziato.",
+      "Risparmiare energia e acqua, spegnere la luce, usare i mezzi pubblici, andare in bici, evitare gli sprechi.",
+      "Abitudini al presente, opinioni al congiuntivo: cerco di riciclare; è importante che tutti facciano la loro parte."
+     ],
+     "q": "Quali piccole abitudini verdi hai a casa? Quale vorresti cominciare?",
+     "c": "Scrivi cinque consigli ecologici per la casa con cerco di..., bisogna..., è importante che... + congiuntivo."
+    },
+    "pt": {
+     "t": "Falar do ambiente",
+     "g": "Falar de hábitos verdes do dia a dia: riciclare, la raccolta differenziata, risparmiare energia.",
+     "p": [
+      "La raccolta differenziata = separar o lixo: carta, plastica, vetro, organico, indifferenziato (indiferenciado).",
+      "Poupar: risparmiare energia / acqua, spegnere la luce, usare i mezzi pubblici, andare in bici, evitare sprechi.",
+      "Hábitos no presente, opiniões com conjuntivo: cerco di riciclare; è importante che tutti facciano la loro parte."
+     ],
+     "q": "Que pequenos hábitos verdes tens em casa? Qual gostarias de começar?",
+     "c": "Escreve cinco dicas ecológicas para casa com cerco di..., bisogna..., è importante che... + congiuntivo."
+    },
+    "pt_BR": {
+     "t": "Falar sobre o meio ambiente",
+     "g": "Falar de hábitos verdes do dia a dia: riciclare, la raccolta differenziata, risparmiare energia.",
+     "p": [
+      "La raccolta differenziata = coleta seletiva: carta, plastica, vetro, organico, indifferenziato (rejeito).",
+      "Economizar: risparmiare energia / acqua, spegnere la luce, usare i mezzi pubblici, andare in bici, evitare sprechi.",
+      "Hábitos no presente, opiniões com subjuntivo: cerco di riciclare; è importante che tutti facciano la loro parte."
+     ],
+     "q": "Que pequenos hábitos verdes você tem em casa? Qual gostaria de começar?",
+     "c": "Escreva cinco dicas ecológicas para casa com cerco di..., bisogna..., è importante che... + congiuntivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la raccolta differenziata",
+      "ex": "Nel mio palazzo facciamo la raccolta differenziata."
+     },
+     {
+      "w": "riciclare",
+      "ex": "Cerco di riciclare la carta e la plastica."
+     },
+     {
+      "w": "risparmiare energia",
+      "ex": "Per risparmiare energia, spengo sempre la luce."
+     },
+     {
+      "w": "i mezzi pubblici",
+      "ex": "Vado al lavoro con i mezzi pubblici."
+     },
+     {
+      "w": "evitare gli sprechi",
+      "ex": "In cucina cerco di evitare gli sprechi."
+     },
+     {
+      "w": "fare la propria parte",
+      "ex": "È importante che ognuno faccia la propria parte."
+     }
+    ],
+    "gram": "Cercare di + infinito (cerco di riciclare); è importante che + congiuntivo (che tutti facciano la loro parte)."
+   }
+  },
+  {
+   "d": 229,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Cities versus countryside",
+     "g": "Compare city and village life, pros and cons, in clear arguments.",
+     "p": [
+      "Comparisons: più... di, meno... di, tanto... quanto; la città è più vivace della campagna; il paese è meno caro.",
+      "Pros and cons: i vantaggi e gli svantaggi, da un lato... dall'altro, il lato positivo / negativo.",
+      "City words: il traffico, i servizi, la vita notturna. Country words: la tranquillità, il verde, l'aria pulita, i ritmi lenti."
+     ],
+     "q": "Where would you rather live: in a big city or in a small village? Give one advantage and one disadvantage.",
+     "c": "Write a short comparison with da un lato... dall'altro, two comparatives and a conclusion with secondo me."
+    },
+    "de": {
+     "t": "Stadt oder Land",
+     "g": "Du vergleichst Stadt- und Dorfleben mit Vor- und Nachteilen in klaren Argumenten.",
+     "p": [
+      "Vergleiche: più... di, meno... di, tanto... quanto; la città è più vivace della campagna; il paese è meno caro.",
+      "Vor- und Nachteile: i vantaggi e gli svantaggi, da un lato... dall'altro, il lato positivo / negativo.",
+      "Stadt: il traffico, i servizi, la vita notturna. Land: la tranquillità, il verde, l'aria pulita, i ritmi lenti."
+     ],
+     "q": "Wo würdest du lieber leben: in einer Großstadt oder in einem kleinen Dorf? Nenn einen Vorteil und einen Nachteil.",
+     "c": "Schreib einen kurzen Vergleich mit da un lato... dall'altro, zwei Komparativen und einem Fazit mit secondo me."
+    },
+    "es": {
+     "t": "Ciudad o campo",
+     "g": "Comparar la vida en la ciudad y en el pueblo, con pros y contras, en argumentos claros.",
+     "p": [
+      "Comparaciones: più... di, meno... di, tanto... quanto; la città è più vivace della campagna; il paese è meno caro.",
+      "Pros y contras: i vantaggi e gli svantaggi, da un lato... dall'altro, il lato positivo / negativo.",
+      "Ciudad: il traffico, i servizi, la vita notturna. Campo: la tranquillità, il verde, l'aria pulita, i ritmi lenti."
+     ],
+     "q": "¿Dónde preferirías vivir: en una gran ciudad o en un pueblo pequeño? Da una ventaja y una desventaja.",
+     "c": "Escribe una comparación corta con da un lato... dall'altro, dos comparativos y una conclusión con secondo me."
+    },
+    "fr": {
+     "t": "Ville ou campagne",
+     "g": "Comparer la vie en ville et au village, avantages et inconvénients, avec des arguments clairs.",
+     "p": [
+      "Comparaisons : più... di, meno... di, tanto... quanto ; la città è più vivace della campagna ; il paese è meno caro.",
+      "Pour et contre : i vantaggi e gli svantaggi, da un lato... dall'altro, il lato positivo / negativo.",
+      "Ville : il traffico, i servizi, la vita notturna. Campagne : la tranquillità, il verde, l'aria pulita, i ritmi lenti."
+     ],
+     "q": "Où préférerais-tu vivre : dans une grande ville ou un petit village ? Donne un avantage et un inconvénient.",
+     "c": "Écris une courte comparaison avec da un lato... dall'altro, deux comparatifs et une conclusion avec secondo me."
+    },
+    "it": {
+     "t": "Città o campagna?",
+     "g": "Confrontare la vita in città e in paese, con vantaggi e svantaggi, in modo chiaro.",
+     "p": [
+      "Comparativi: più... di, meno... di, tanto... quanto; la città è più vivace della campagna; il paese è meno caro.",
+      "Pro e contro: i vantaggi e gli svantaggi, da un lato... dall'altro, il lato positivo / negativo.",
+      "Città: il traffico, i servizi, la vita notturna. Campagna: la tranquillità, il verde, l'aria pulita, i ritmi lenti."
+     ],
+     "q": "Dove preferiresti vivere: in una grande città o in un piccolo paese? Dimmi un vantaggio e uno svantaggio.",
+     "c": "Scrivi un breve confronto con da un lato... dall'altro, due comparativi e una conclusione con secondo me."
+    },
+    "pt": {
+     "t": "Cidade ou campo",
+     "g": "Comparar a vida na cidade e na aldeia, com prós e contras, em argumentos claros.",
+     "p": [
+      "Comparações: più... di, meno... di, tanto... quanto; la città è più vivace della campagna; il paese è meno caro.",
+      "Prós e contras: i vantaggi e gli svantaggi, da un lato... dall'altro, il lato positivo / negativo.",
+      "Cidade: il traffico, i servizi, la vita notturna. Campo: la tranquillità, il verde, l'aria pulita, i ritmi lenti."
+     ],
+     "q": "Onde preferias viver: numa grande cidade ou numa pequena aldeia? Dá uma vantagem e uma desvantagem.",
+     "c": "Escreve uma comparação curta com da un lato... dall'altro, dois comparativos e uma conclusão com secondo me."
+    },
+    "pt_BR": {
+     "t": "Cidade ou interior",
+     "g": "Comparar a vida na cidade e no interior, com prós e contras, em argumentos claros.",
+     "p": [
+      "Comparações: più... di, meno... di, tanto... quanto; la città è più vivace della campagna; il paese è meno caro.",
+      "Prós e contras: i vantaggi e gli svantaggi, da un lato... dall'altro, il lato positivo / negativo.",
+      "Cidade: il traffico, i servizi, la vita notturna. Interior: la tranquillità, il verde, l'aria pulita, i ritmi lenti."
+     ],
+     "q": "Onde você preferiria morar: numa cidade grande ou numa cidadezinha? Dê uma vantagem e uma desvantagem.",
+     "c": "Escreva uma comparação curta com da un lato... dall'altro, dois comparativos e uma conclusão com secondo me."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "i vantaggi e gli svantaggi",
+      "ex": "Ogni scelta ha i suoi vantaggi e i suoi svantaggi."
+     },
+     {
+      "w": "da un lato... dall'altro",
+      "ex": "Da un lato la città offre lavoro, dall'altro è caotica."
+     },
+     {
+      "w": "più vivace di",
+      "ex": "Milano è più vivace del mio paese."
+     },
+     {
+      "w": "tanto... quanto",
+      "ex": "La campagna è tanto bella quanto tranquilla."
+     },
+     {
+      "w": "l'aria pulita",
+      "ex": "In montagna si respira l'aria pulita."
+     },
+     {
+      "w": "i ritmi lenti",
+      "ex": "Mi piacciono i ritmi lenti della vita di paese."
+     }
+    ],
+    "gram": "Comparativi: più / meno + aggettivo + di; tanto... quanto. Da un lato... dall'altro per confrontare due aspetti."
+   }
+  },
+  {
+   "d": 230,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Travel stories and mishaps",
+     "g": "Narrate a travel story with surprises using all the past tenses.",
+     "p": [
+      "Set the scene (imperfetto): era agosto, faceva caldo, eravamo in Puglia. Events (passato prossimo): abbiamo perso il treno.",
+      "Earlier facts (trapassato): avevo dimenticato il passaporto. Regrets: avrei dovuto controllare l'orario.",
+      "Storytelling words: all'improvviso, per fortuna, purtroppo, alla fine, per farla breve (to cut a long story short)."
+     ],
+     "q": "Tell me about a funny or surprising moment from one of your trips. How did it end?",
+     "c": "Write a travel mishap in eight lines with imperfetto, passato prossimo, trapassato and one per fortuna."
+    },
+    "de": {
+     "t": "Reisegeschichten und Pannen",
+     "g": "Du erzählst eine Reisegeschichte mit Überraschungen und allen Vergangenheitszeiten.",
+     "p": [
+      "Szene (imperfetto): era agosto, faceva caldo, eravamo in Puglia. Ereignisse (passato prossimo): abbiamo perso il treno.",
+      "Früheres (trapassato): avevo dimenticato il passaporto. Bedauern: avrei dovuto controllare l'orario.",
+      "Erzählwörter: all'improvviso, per fortuna, purtroppo, alla fine, per farla breve (um es kurz zu machen)."
+     ],
+     "q": "Erzähl mir von einem lustigen oder überraschenden Moment auf einer Reise. Wie ging es aus?",
+     "c": "Schreib eine Reisepanne in acht Zeilen mit imperfetto, passato prossimo, trapassato und einem per fortuna."
+    },
+    "es": {
+     "t": "Historias y percances de viaje",
+     "g": "Narrar un viaje con sorpresas usando todos los pasados.",
+     "p": [
+      "Escena (imperfetto): era agosto, faceva caldo, eravamo in Puglia. Hechos (passato prossimo): abbiamo perso il treno.",
+      "Lo anterior (trapassato): avevo dimenticato il passaporto. Lamentos: avrei dovuto controllare l'orario.",
+      "Palabras para contar: all'improvviso, per fortuna, purtroppo, alla fine, per farla breve (en resumen)."
+     ],
+     "q": "Cuéntame un momento divertido o sorprendente de uno de tus viajes. ¿Cómo terminó?",
+     "c": "Escribe un percance de viaje en ocho líneas con imperfetto, passato prossimo, trapassato y un per fortuna."
+    },
+    "fr": {
+     "t": "Récits et mésaventures de voyage",
+     "g": "Raconter un voyage plein de surprises avec tous les temps du passé.",
+     "p": [
+      "Décor (imperfetto) : era agosto, faceva caldo, eravamo in Puglia. Faits (passato prossimo) : abbiamo perso il treno.",
+      "Antériorité (trapassato) : avevo dimenticato il passaporto. Regrets : avrei dovuto controllare l'orario.",
+      "Mots du récit : all'improvviso, per fortuna, purtroppo, alla fine, per farla breve (bref)."
+     ],
+     "q": "Raconte-moi un moment drôle ou surprenant d'un de tes voyages. Comment ça s'est terminé ?",
+     "c": "Écris une mésaventure de voyage en huit lignes avec imperfetto, passato prossimo, trapassato et un per fortuna."
+    },
+    "it": {
+     "t": "Racconti e imprevisti di viaggio",
+     "g": "Raccontare un viaggio pieno di sorprese usando tutti i tempi passati.",
+     "p": [
+      "Lo sfondo (imperfetto): era agosto, faceva caldo, eravamo in Puglia. I fatti (passato prossimo): abbiamo perso il treno.",
+      "Ciò che era successo prima (trapassato): avevo dimenticato il passaporto. Rimpianti: avrei dovuto controllare l'orario.",
+      "Parole del racconto: all'improvviso, per fortuna, purtroppo, alla fine, per farla breve."
+     ],
+     "q": "Raccontami un momento buffo o sorprendente di uno dei tuoi viaggi. Com'è finita?",
+     "c": "Scrivi un imprevisto di viaggio in otto righe con imperfetto, passato prossimo, trapassato e un per fortuna."
+    },
+    "pt": {
+     "t": "Histórias e percalços de viagem",
+     "g": "Contar uma viagem cheia de surpresas usando todos os tempos do passado.",
+     "p": [
+      "Cenário (imperfetto): era agosto, faceva caldo, eravamo in Puglia. Factos (passato prossimo): abbiamo perso il treno.",
+      "O que tinha acontecido antes (trapassato): avevo dimenticato il passaporto. Pena: avrei dovuto controllare l'orario.",
+      "Palavras para contar: all'improvviso, per fortuna, purtroppo, alla fine, per farla breve (resumindo)."
+     ],
+     "q": "Conta-me um momento engraçado ou surpreendente de uma das tuas viagens. Como acabou?",
+     "c": "Escreve um percalço de viagem em oito linhas com imperfetto, passato prossimo, trapassato e um per fortuna."
+    },
+    "pt_BR": {
+     "t": "Histórias e perrengues de viagem",
+     "g": "Contar uma viagem cheia de surpresas usando todos os tempos do passado.",
+     "p": [
+      "Cenário (imperfetto): era agosto, faceva caldo, eravamo in Puglia. Fatos (passato prossimo): abbiamo perso il treno.",
+      "O que tinha acontecido antes (trapassato): avevo dimenticato il passaporto. Arrependimento: avrei dovuto controllare l'orario.",
+      "Palavras para contar: all'improvviso, per fortuna, purtroppo, alla fine, per farla breve (resumindo)."
+     ],
+     "q": "Conte um momento engraçado ou surpreendente de uma das suas viagens. Como terminou?",
+     "c": "Escreva um perrengue de viagem em oito linhas com imperfetto, passato prossimo, trapassato e um per fortuna."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "l'imprevisto",
+      "ex": "Durante il viaggio abbiamo avuto un piccolo imprevisto."
+     },
+     {
+      "w": "abbiamo perso il treno",
+      "ex": "Abbiamo perso il treno per due minuti!"
+     },
+     {
+      "w": "avevo dimenticato",
+      "ex": "Mi sono accorto che avevo dimenticato il caricabatterie."
+     },
+     {
+      "w": "per fortuna",
+      "ex": "Per fortuna un signore gentile ci ha aiutato."
+     },
+     {
+      "w": "per farla breve",
+      "ex": "Per farla breve, siamo arrivati a mezzanotte."
+     },
+     {
+      "w": "la valigia",
+      "ex": "All'aeroporto la mia valigia non arrivava più."
+     }
+    ],
+    "gram": "Racconto al passato: imperfetto (sfondo), passato prossimo (fatti), trapassato (prima), condizionale passato (rimpianti)."
+   }
+  }
+ ]
+}

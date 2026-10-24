@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 121,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Reading and books",
+     "g": "Talk about what you read: novels, audiobooks, comics, and your reading habits.",
+     "p": [
+      "Types: der Roman, das Hörbuch, der Comic, der Krimi, das Sachbuch, die Zeitschrift.",
+      "Habits: Ich lese jeden Abend im Bett. Im Zug höre ich lieber Hörbücher.",
+      "About a book: Das Buch handelt von einer Familie in Hamburg. Es ist spannend, aber ein bisschen lang."
+     ],
+     "q": "What are you reading at the moment, and do you prefer paper books, e-books or audiobooks?",
+     "c": "Describe a book you like in four sentences with handelt von, the genre and one adjective."
+    },
+    "de": {
+     "t": "Lesen und Bücher",
+     "g": "Du sprichst über das, was du liest: Romane, Hörbücher, Comics und deine Lesegewohnheiten.",
+     "p": [
+      "Arten: der Roman, das Hörbuch, der Comic, der Krimi, das Sachbuch, die Zeitschrift.",
+      "Gewohnheiten: Ich lese jeden Abend im Bett. Im Zug höre ich lieber Hörbücher.",
+      "Über ein Buch: Das Buch handelt von einer Familie in Hamburg. Es ist spannend, aber ein bisschen lang."
+     ],
+     "q": "Was liest du gerade, und magst du lieber Bücher aus Papier, E-Books oder Hörbücher?",
+     "c": "Beschreib ein Buch, das du magst, in vier Sätzen mit handelt von, dem Genre und einem Adjektiv."
+    },
+    "es": {
+     "t": "Lectura y libros",
+     "g": "Habla de lo que lees: novelas, audiolibros, cómics y tus hábitos de lectura.",
+     "p": [
+      "Tipos: der Roman, das Hörbuch, der Comic, der Krimi, das Sachbuch, die Zeitschrift.",
+      "Hábitos: Ich lese jeden Abend im Bett. Im Zug höre ich lieber Hörbücher.",
+      "Sobre un libro: Das Buch handelt von einer Familie in Hamburg. Es ist spannend, aber ein bisschen lang."
+     ],
+     "q": "¿Qué estás leyendo ahora y prefieres libros en papel, libros electrónicos o audiolibros?",
+     "c": "Describe un libro que te guste en cuatro frases con handelt von, el género y un adjetivo."
+    },
+    "fr": {
+     "t": "La lecture et les livres",
+     "g": "Parler de ce que tu lis : romans, livres audio, BD et tes habitudes de lecture.",
+     "p": [
+      "Types : der Roman, das Hörbuch, der Comic, der Krimi, das Sachbuch, die Zeitschrift.",
+      "Habitudes : Ich lese jeden Abend im Bett. Im Zug höre ich lieber Hörbücher.",
+      "Sur un livre : Das Buch handelt von einer Familie in Hamburg. Es ist spannend, aber ein bisschen lang."
+     ],
+     "q": "Que lis-tu en ce moment, et préfères-tu les livres papier, les liseuses ou les livres audio ?",
+     "c": "Décris un livre que tu aimes en quatre phrases avec handelt von, le genre et un adjectif."
+    },
+    "it": {
+     "t": "Lettura e libri",
+     "g": "Parli di ciò che leggi: romanzi, audiolibri, fumetti e le tue abitudini di lettura.",
+     "p": [
+      "Tipi: der Roman, das Hörbuch, der Comic, der Krimi, das Sachbuch, die Zeitschrift.",
+      "Abitudini: Ich lese jeden Abend im Bett. Im Zug höre ich lieber Hörbücher.",
+      "Su un libro: Das Buch handelt von einer Familie in Hamburg. Es ist spannend, aber ein bisschen lang."
+     ],
+     "q": "Che cosa stai leggendo adesso e preferisci libri di carta, e-book o audiolibri?",
+     "c": "Descrivi un libro che ti piace in quattro frasi con handelt von, il genere e un aggettivo."
+    },
+    "pt": {
+     "t": "Leitura e livros",
+     "g": "Falar do que lês: romances, audiolivros, banda desenhada e os teus hábitos de leitura.",
+     "p": [
+      "Tipos: der Roman, das Hörbuch, der Comic, der Krimi, das Sachbuch, die Zeitschrift.",
+      "Hábitos: Ich lese jeden Abend im Bett. Im Zug höre ich lieber Hörbücher.",
+      "Sobre um livro: Das Buch handelt von einer Familie in Hamburg. Es ist spannend, aber ein bisschen lang."
+     ],
+     "q": "O que estás a ler neste momento e preferes livros em papel, e-books ou audiolivros?",
+     "c": "Descreve um livro de que gostes em quatro frases com handelt von, o género e um adjetivo."
+    },
+    "pt_BR": {
+     "t": "Leitura e livros",
+     "g": "Falar do que você lê: romances, audiolivros, quadrinhos e seus hábitos de leitura.",
+     "p": [
+      "Tipos: der Roman, das Hörbuch, der Comic, der Krimi, das Sachbuch, die Zeitschrift.",
+      "Hábitos: Ich lese jeden Abend im Bett. Im Zug höre ich lieber Hörbücher.",
+      "Sobre um livro: Das Buch handelt von einer Familie in Hamburg. Es ist spannend, aber ein bisschen lang."
+     ],
+     "q": "O que você está lendo agora e prefere livros de papel, e-books ou audiolivros?",
+     "c": "Descreva um livro de que você gosta em quatro frases com handelt von, o gênero e um adjetivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Roman",
+      "ex": "Ich lese gerade einen Roman von Cornelia Funke."
+     },
+     {
+      "w": "das Hörbuch",
+      "ex": "Beim Joggen höre ich gern ein Hörbuch."
+     },
+     {
+      "w": "der Comic",
+      "ex": "Als Kind habe ich viele Comics gelesen."
+     },
+     {
+      "w": "handeln von",
+      "ex": "Der Roman handelt von zwei Freunden."
+     },
+     {
+      "w": "spannend",
+      "ex": "Das Buch ist so spannend, ich kann nicht aufhören."
+     },
+     {
+      "w": "die Bibliothek",
+      "ex": "Ich leihe meine Bücher in der Bibliothek aus."
+     }
+    ],
+    "gram": "Es handelt von + Dativ: Das Buch handelt von einem Jungen. Lesen ist stark: ich lese, du liest, er liest."
+   }
+  },
+  {
+   "d": 122,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Giving opinions",
+     "g": "Say what you think with ich finde, meiner Meinung nach and ich denke, dass.",
+     "p": [
+      "Simple: Ich finde den Film gut. Ich finde, dass Berlin spannend ist.",
+      "Verb stays second: Meiner Meinung nach ist das Buch zu lang. Ich glaube, das ist richtig.",
+      "With dass: verb at the end: Ich denke, dass Deutsch nicht so schwer ist."
+     ],
+     "q": "What do you think about learning languages with apps? Start with ich finde or meiner Meinung nach.",
+     "c": "Give three opinions about your city: one with ich finde, one with meiner Meinung nach, one with dass."
+    },
+    "de": {
+     "t": "Meinungen äußern",
+     "g": "Du sagst deine Meinung mit ich finde, meiner Meinung nach und ich denke, dass.",
+     "p": [
+      "Einfach: Ich finde den Film gut. Ich finde, dass Berlin spannend ist.",
+      "Verb an Position 2: Meiner Meinung nach ist das Buch zu lang. Ich glaube, das ist richtig.",
+      "Mit dass: Verb am Ende: Ich denke, dass Deutsch nicht so schwer ist."
+     ],
+     "q": "Was hältst du vom Sprachenlernen mit Apps? Fang mit ich finde oder meiner Meinung nach an.",
+     "c": "Sag drei Meinungen über deine Stadt: eine mit ich finde, eine mit meiner Meinung nach, eine mit dass."
+    },
+    "es": {
+     "t": "Dar tu opinión",
+     "g": "Di lo que piensas con ich finde, meiner Meinung nach e ich denke, dass.",
+     "p": [
+      "Sencillo: Ich finde den Film gut. Ich finde, dass Berlin spannend ist.",
+      "El verbo va segundo: Meiner Meinung nach ist das Buch zu lang. Ich glaube, das ist richtig.",
+      "Con dass: verbo al final: Ich denke, dass Deutsch nicht so schwer ist."
+     ],
+     "q": "¿Qué opinas de aprender idiomas con apps? Empieza con ich finde o meiner Meinung nach.",
+     "c": "Da tres opiniones sobre tu ciudad: una con ich finde, otra con meiner Meinung nach y otra con dass."
+    },
+    "fr": {
+     "t": "Donner son avis",
+     "g": "Dire ce que tu penses avec ich finde, meiner Meinung nach et ich denke, dass.",
+     "p": [
+      "Simple : Ich finde den Film gut. Ich finde, dass Berlin spannend ist.",
+      "Verbe en 2e position : Meiner Meinung nach ist das Buch zu lang. Ich glaube, das ist richtig.",
+      "Avec dass : verbe à la fin : Ich denke, dass Deutsch nicht so schwer ist."
+     ],
+     "q": "Que penses-tu des applis pour apprendre les langues ? Commence par ich finde ou meiner Meinung nach.",
+     "c": "Donne trois avis sur ta ville : un avec ich finde, un avec meiner Meinung nach, un avec dass."
+    },
+    "it": {
+     "t": "Esprimere opinioni",
+     "g": "Dici che cosa pensi con ich finde, meiner Meinung nach e ich denke, dass.",
+     "p": [
+      "Semplice: Ich finde den Film gut. Ich finde, dass Berlin spannend ist.",
+      "Verbo al secondo posto: Meiner Meinung nach ist das Buch zu lang. Ich glaube, das ist richtig.",
+      "Con dass: verbo alla fine: Ich denke, dass Deutsch nicht so schwer ist."
+     ],
+     "q": "Che cosa pensi delle app per imparare le lingue? Comincia con ich finde o meiner Meinung nach.",
+     "c": "Esprimi tre opinioni sulla tua città: una con ich finde, una con meiner Meinung nach, una con dass."
+    },
+    "pt": {
+     "t": "Dar opiniões",
+     "g": "Dizer o que pensas com ich finde, meiner Meinung nach e ich denke, dass.",
+     "p": [
+      "Simples: Ich finde den Film gut. Ich finde, dass Berlin spannend ist.",
+      "Verbo em 2.º lugar: Meiner Meinung nach ist das Buch zu lang. Ich glaube, das ist richtig.",
+      "Com dass: verbo no fim: Ich denke, dass Deutsch nicht so schwer ist."
+     ],
+     "q": "O que achas de aprender línguas com apps? Começa com ich finde ou meiner Meinung nach.",
+     "c": "Dá três opiniões sobre a tua cidade: uma com ich finde, outra com meiner Meinung nach e outra com dass."
+    },
+    "pt_BR": {
+     "t": "Dar opiniões",
+     "g": "Dizer o que você pensa com ich finde, meiner Meinung nach e ich denke, dass.",
+     "p": [
+      "Simples: Ich finde den Film gut. Ich finde, dass Berlin spannend ist.",
+      "Verbo em 2º lugar: Meiner Meinung nach ist das Buch zu lang. Ich glaube, das ist richtig.",
+      "Com dass: verbo no final: Ich denke, dass Deutsch nicht so schwer ist."
+     ],
+     "q": "O que você acha de aprender idiomas com apps? Comece com ich finde ou meiner Meinung nach.",
+     "c": "Dê três opiniões sobre sua cidade: uma com ich finde, outra com meiner Meinung nach e outra com dass."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ich finde",
+      "ex": "Ich finde die Idee super."
+     },
+     {
+      "w": "meiner Meinung nach",
+      "ex": "Meiner Meinung nach ist Radfahren gesund."
+     },
+     {
+      "w": "ich denke, dass",
+      "ex": "Ich denke, dass wir mehr Zeit brauchen."
+     },
+     {
+      "w": "ich glaube",
+      "ex": "Ich glaube, das Museum ist heute geschlossen."
+     },
+     {
+      "w": "die Meinung",
+      "ex": "Was ist deine Meinung dazu?"
+     },
+     {
+      "w": "Was hältst du von ...?",
+      "ex": "Was hältst du von dem neuen Café?"
+     }
+    ],
+    "gram": "Meiner Meinung nach + Verb an Position 2. Nach dass steht das Verb am Ende: Ich denke, dass es stimmt."
+   }
+  },
+  {
+   "d": 123,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Agreeing and disagreeing",
+     "g": "React to someone's opinion: agree, partly agree or politely disagree.",
+     "p": [
+      "Agree: Da hast du recht. Das stimmt. Genau! Das sehe ich auch so.",
+      "Partly: Das stimmt zum Teil, aber ... Ja, schon, aber ich finde auch ...",
+      "Disagree politely: Ich sehe das anders. Da bin ich nicht sicher. Das stimmt nicht ganz."
+     ],
+     "q": "I say: Summer is the best season. Do you agree? React with one of today's phrases and give a reason.",
+     "c": "Answer three statements in German: agree with one, partly agree with one, disagree politely with one."
+    },
+    "de": {
+     "t": "Zustimmen und widersprechen",
+     "g": "Du reagierst auf eine Meinung: zustimmen, teilweise zustimmen oder höflich widersprechen.",
+     "p": [
+      "Zustimmen: Da hast du recht. Das stimmt. Genau! Das sehe ich auch so.",
+      "Teilweise: Das stimmt zum Teil, aber ... Ja, schon, aber ich finde auch ...",
+      "Höflich widersprechen: Ich sehe das anders. Da bin ich nicht sicher. Das stimmt nicht ganz."
+     ],
+     "q": "Ich sage: Der Sommer ist die beste Jahreszeit. Stimmst du zu? Reagiere mit einem Ausdruck von heute und begründe.",
+     "c": "Reagiere auf drei Aussagen: einer stimmst du zu, einer teilweise, einer widersprichst du höflich."
+    },
+    "es": {
+     "t": "Estar de acuerdo o no",
+     "g": "Reacciona a una opinión: estar de acuerdo, en parte o en desacuerdo con educación.",
+     "p": [
+      "De acuerdo: Da hast du recht. Das stimmt. Genau! Das sehe ich auch so.",
+      "En parte: Das stimmt zum Teil, aber ... Ja, schon, aber ich finde auch ...",
+      "Discrepar con tacto: Ich sehe das anders. Da bin ich nicht sicher. Das stimmt nicht ganz."
+     ],
+     "q": "Yo digo: el verano es la mejor estación. ¿Estás de acuerdo? Reacciona con una frase de hoy y da un motivo.",
+     "c": "Responde a tres afirmaciones: apoya una, apoya otra en parte y discrepa de la tercera con educación."
+    },
+    "fr": {
+     "t": "Être d'accord ou pas",
+     "g": "Réagir à un avis : être d'accord, en partie d'accord ou poliment pas d'accord.",
+     "p": [
+      "D'accord : Da hast du recht. Das stimmt. Genau! Das sehe ich auch so.",
+      "En partie : Das stimmt zum Teil, aber ... Ja, schon, aber ich finde auch ...",
+      "Contredire poliment : Ich sehe das anders. Da bin ich nicht sicher. Das stimmt nicht ganz."
+     ],
+     "q": "Je dis : l'été est la meilleure saison. Tu es d'accord ? Réagis avec une expression du jour et justifie.",
+     "c": "Réponds à trois affirmations : approuve-en une, une autre en partie, et contredis la dernière poliment."
+    },
+    "it": {
+     "t": "Essere d'accordo o no",
+     "g": "Reagisci a un'opinione: d'accordo, in parte d'accordo o in disaccordo con gentilezza.",
+     "p": [
+      "D'accordo: Da hast du recht. Das stimmt. Genau! Das sehe ich auch so.",
+      "In parte: Das stimmt zum Teil, aber ... Ja, schon, aber ich finde auch ...",
+      "Dissentire con garbo: Ich sehe das anders. Da bin ich nicht sicher. Das stimmt nicht ganz."
+     ],
+     "q": "Io dico: l'estate è la stagione migliore. Sei d'accordo? Reagisci con una frase di oggi e spiega perché.",
+     "c": "Rispondi a tre affermazioni: approvane una, una in parte e contraddici l'ultima con gentilezza."
+    },
+    "pt": {
+     "t": "Concordar e discordar",
+     "g": "Reagir a uma opinião: concordar, concordar em parte ou discordar com educação.",
+     "p": [
+      "Concordar: Da hast du recht. Das stimmt. Genau! Das sehe ich auch so.",
+      "Em parte: Das stimmt zum Teil, aber ... Ja, schon, aber ich finde auch ...",
+      "Discordar com tato: Ich sehe das anders. Da bin ich nicht sicher. Das stimmt nicht ganz."
+     ],
+     "q": "Eu digo: o verão é a melhor estação. Concordas? Reage com uma expressão de hoje e dá uma razão.",
+     "c": "Responde a três afirmações: concorda com uma, em parte com outra e discorda com educação da última."
+    },
+    "pt_BR": {
+     "t": "Concordar e discordar",
+     "g": "Reagir a uma opinião: concordar, concordar em parte ou discordar com educação.",
+     "p": [
+      "Concordar: Da hast du recht. Das stimmt. Genau! Das sehe ich auch so.",
+      "Em parte: Das stimmt zum Teil, aber ... Ja, schon, aber ich finde auch ...",
+      "Discordar com tato: Ich sehe das anders. Da bin ich nicht sicher. Das stimmt nicht ganz."
+     ],
+     "q": "Eu digo: o verão é a melhor estação. Você concorda? Reaja com uma expressão de hoje e dê um motivo.",
+     "c": "Responda a três afirmações: concorde com uma, em parte com outra e discorde com educação da última."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Da hast du recht.",
+      "ex": "Da hast du recht, das war eine gute Idee."
+     },
+     {
+      "w": "Das stimmt.",
+      "ex": "Das stimmt, der Bus ist oft zu spät."
+     },
+     {
+      "w": "Ich sehe das anders.",
+      "ex": "Ich sehe das anders, ich mag den Winter."
+     },
+     {
+      "w": "Genau!",
+      "ex": "Genau! Das wollte ich auch sagen."
+     },
+     {
+      "w": "zum Teil",
+      "ex": "Das stimmt zum Teil, aber nicht immer."
+     },
+     {
+      "w": "einverstanden sein",
+      "ex": "Bist du damit einverstanden?"
+     }
+    ],
+    "gram": "Recht haben ohne Artikel: Du hast recht. Verneinung: Das stimmt nicht (ganz). Ich bin (nicht) einverstanden."
+   }
+  },
+  {
+   "d": 124,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Housing: renting a flat",
+     "g": "Understand flat ads and ask about rent, extra costs and shared flats (WG).",
+     "p": [
+      "Key words: die Wohnung, die Miete, die Nebenkosten, die Kaution, der Vermieter, die WG.",
+      "Ad abbreviations: 3-Zi.-Whg. = Dreizimmerwohnung, NK = Nebenkosten, warm = mit Heizung und Nebenkosten.",
+      "Asking: Wie hoch ist die Miete? Sind die Nebenkosten inklusive? Wann kann ich die Wohnung besichtigen?"
+     ],
+     "q": "Describe your home: how many rooms, is it a flat or a house, and do you live alone or in a WG?",
+     "c": "Write a short ad for your dream flat with Zimmer, Miete, Nebenkosten and one thing nearby."
+    },
+    "de": {
+     "t": "Wohnen: eine Wohnung mieten",
+     "g": "Du verstehst Wohnungsanzeigen und fragst nach Miete, Nebenkosten und WG-Zimmern.",
+     "p": [
+      "Wichtige Wörter: die Wohnung, die Miete, die Nebenkosten, die Kaution, der Vermieter, die WG.",
+      "Abkürzungen: 3-Zi.-Whg. = Dreizimmerwohnung, NK = Nebenkosten, warm = mit Heizung und Nebenkosten.",
+      "Fragen: Wie hoch ist die Miete? Sind die Nebenkosten inklusive? Wann kann ich die Wohnung besichtigen?"
+     ],
+     "q": "Beschreib dein Zuhause: Wie viele Zimmer, Wohnung oder Haus, wohnst du allein oder in einer WG?",
+     "c": "Schreib eine kurze Anzeige für deine Traumwohnung mit Zimmer, Miete, Nebenkosten und etwas in der Nähe."
+    },
+    "es": {
+     "t": "Vivienda: alquilar un piso",
+     "g": "Entiende anuncios de pisos y pregunta por el alquiler, los gastos y los pisos compartidos (WG).",
+     "p": [
+      "Palabras clave: die Wohnung, die Miete, die Nebenkosten, die Kaution, der Vermieter, die WG.",
+      "Abreviaturas: 3-Zi.-Whg. = Dreizimmerwohnung, NK = Nebenkosten, warm = mit Heizung und Nebenkosten.",
+      "Preguntar: Wie hoch ist die Miete? Sind die Nebenkosten inklusive? Wann kann ich die Wohnung besichtigen?"
+     ],
+     "q": "Describe tu casa: ¿cuántas habitaciones, piso o casa, y vives solo o en una WG?",
+     "c": "Escribe un anuncio corto para tu piso ideal con Zimmer, Miete, Nebenkosten y algo cercano."
+    },
+    "fr": {
+     "t": "Logement : louer un appartement",
+     "g": "Comprendre les annonces et poser des questions sur le loyer, les charges et la colocation (WG).",
+     "p": [
+      "Mots clés : die Wohnung, die Miete, die Nebenkosten, die Kaution, der Vermieter, die WG.",
+      "Abréviations : 3-Zi.-Whg. = Dreizimmerwohnung, NK = Nebenkosten, warm = mit Heizung und Nebenkosten.",
+      "Demander : Wie hoch ist die Miete? Sind die Nebenkosten inklusive? Wann kann ich die Wohnung besichtigen?"
+     ],
+     "q": "Décris ton logement : combien de pièces, appartement ou maison, et vis-tu seul ou en WG ?",
+     "c": "Rédige une petite annonce pour l'appartement de tes rêves avec Zimmer, Miete, Nebenkosten et un lieu proche."
+    },
+    "it": {
+     "t": "Casa: affittare un appartamento",
+     "g": "Capisci gli annunci e chiedi dell'affitto, delle spese e degli appartamenti condivisi (WG).",
+     "p": [
+      "Parole chiave: die Wohnung, die Miete, die Nebenkosten, die Kaution, der Vermieter, die WG.",
+      "Abbreviazioni: 3-Zi.-Whg. = Dreizimmerwohnung, NK = Nebenkosten, warm = mit Heizung und Nebenkosten.",
+      "Chiedere: Wie hoch ist die Miete? Sind die Nebenkosten inklusive? Wann kann ich die Wohnung besichtigen?"
+     ],
+     "q": "Descrivi la tua casa: quante stanze, appartamento o casa, e vivi da solo o in una WG?",
+     "c": "Scrivi un breve annuncio per la casa dei sogni con Zimmer, Miete, Nebenkosten e qualcosa vicino."
+    },
+    "pt": {
+     "t": "Habitação: arrendar um apartamento",
+     "g": "Perceber anúncios e perguntar pela renda, pelas despesas e pelos quartos partilhados (WG).",
+     "p": [
+      "Palavras-chave: die Wohnung, die Miete, die Nebenkosten, die Kaution, der Vermieter, die WG.",
+      "Abreviaturas: 3-Zi.-Whg. = Dreizimmerwohnung, NK = Nebenkosten, warm = mit Heizung und Nebenkosten.",
+      "Perguntar: Wie hoch ist die Miete? Sind die Nebenkosten inklusive? Wann kann ich die Wohnung besichtigen?"
+     ],
+     "q": "Descreve a tua casa: quantas divisões, apartamento ou moradia, e vives sozinho ou numa WG?",
+     "c": "Escreve um pequeno anúncio do apartamento dos teus sonhos com Zimmer, Miete, Nebenkosten e algo perto."
+    },
+    "pt_BR": {
+     "t": "Moradia: alugar um apartamento",
+     "g": "Entender anúncios e perguntar sobre aluguel, despesas extras e moradias compartilhadas (WG).",
+     "p": [
+      "Palavras-chave: die Wohnung, die Miete, die Nebenkosten, die Kaution, der Vermieter, die WG.",
+      "Abreviaturas: 3-Zi.-Whg. = Dreizimmerwohnung, NK = Nebenkosten, warm = mit Heizung und Nebenkosten.",
+      "Perguntar: Wie hoch ist die Miete? Sind die Nebenkosten inklusive? Wann kann ich die Wohnung besichtigen?"
+     ],
+     "q": "Descreva sua casa: quantos cômodos, apartamento ou casa, e você mora sozinho ou numa WG?",
+     "c": "Escreva um anúncio curto do apartamento dos seus sonhos com Zimmer, Miete, Nebenkosten e algo perto."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Miete",
+      "ex": "Die Miete ist hier ziemlich hoch."
+     },
+     {
+      "w": "die Nebenkosten",
+      "ex": "Die Nebenkosten sind nicht inklusive."
+     },
+     {
+      "w": "die WG (Wohngemeinschaft)",
+      "ex": "Ich wohne mit drei Studenten in einer WG."
+     },
+     {
+      "w": "die Kaution",
+      "ex": "Die Kaution sind drei Monatsmieten."
+     },
+     {
+      "w": "besichtigen",
+      "ex": "Kann ich die Wohnung morgen besichtigen?"
+     },
+     {
+      "w": "der Vermieter",
+      "ex": "Der Vermieter wohnt im Erdgeschoss."
+     }
+    ],
+    "gram": "Fragen mit wie hoch / wie groß: Wie hoch ist die Miete? Wie groß ist die Wohnung? In einer WG wohnen (Dativ)."
+   }
+  },
+  {
+   "d": 125,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Household chores",
+     "g": "Talk about who does which chores, using separable verbs like aufräumen and abwaschen.",
+     "p": [
+      "Chores: abwaschen, staubsaugen, aufräumen, Wäsche waschen, putzen, den Müll rausbringen.",
+      "Separable verbs: Ich räume mein Zimmer auf. Wer wäscht heute ab? Ich habe schon staubgesaugt.",
+      "Sorting rubbish: In Deutschland trennt man den Müll: Papier, Bio, Glas, gelbe Tonne für Plastik."
+     ],
+     "q": "Which chore do you like least, and how often do you do it? Use a separable verb.",
+     "c": "Make a weekly chore plan for a WG with four tasks and a name for each, in full German sentences."
+    },
+    "de": {
+     "t": "Hausarbeit",
+     "g": "Du sprichst darüber, wer welche Hausarbeit macht, mit trennbaren Verben wie aufräumen und abwaschen.",
+     "p": [
+      "Arbeiten: abwaschen, staubsaugen, aufräumen, Wäsche waschen, putzen, den Müll rausbringen.",
+      "Trennbare Verben: Ich räume mein Zimmer auf. Wer wäscht heute ab? Ich habe schon staubgesaugt.",
+      "Mülltrennung: In Deutschland trennt man den Müll: Papier, Bio, Glas, gelbe Tonne für Plastik."
+     ],
+     "q": "Welche Hausarbeit magst du am wenigsten, und wie oft machst du sie? Benutz ein trennbares Verb.",
+     "c": "Mach einen Putzplan für eine WG mit vier Aufgaben und einem Namen für jede, in ganzen Sätzen."
+    },
+    "es": {
+     "t": "Las tareas de casa",
+     "g": "Habla de quién hace cada tarea, con verbos separables como aufräumen y abwaschen.",
+     "p": [
+      "Tareas: abwaschen, staubsaugen, aufräumen, Wäsche waschen, putzen, den Müll rausbringen.",
+      "Verbos separables: Ich räume mein Zimmer auf. Wer wäscht heute ab? Ich habe schon staubgesaugt.",
+      "Separar la basura: In Deutschland trennt man den Müll: Papier, Bio, Glas, gelbe Tonne für Plastik."
+     ],
+     "q": "¿Qué tarea te gusta menos y con qué frecuencia la haces? Usa un verbo separable.",
+     "c": "Haz un plan semanal de tareas para una WG con cuatro tareas y un nombre para cada una, en frases completas."
+    },
+    "fr": {
+     "t": "Les tâches ménagères",
+     "g": "Parler de qui fait quelles tâches, avec des verbes séparables comme aufräumen et abwaschen.",
+     "p": [
+      "Tâches : abwaschen, staubsaugen, aufräumen, Wäsche waschen, putzen, den Müll rausbringen.",
+      "Verbes séparables : Ich räume mein Zimmer auf. Wer wäscht heute ab? Ich habe schon staubgesaugt.",
+      "Trier les déchets : In Deutschland trennt man den Müll: Papier, Bio, Glas, gelbe Tonne für Plastik."
+     ],
+     "q": "Quelle tâche aimes-tu le moins, et à quelle fréquence la fais-tu ? Utilise un verbe séparable.",
+     "c": "Fais un planning des tâches pour une WG avec quatre tâches et un prénom pour chacune, en phrases complètes."
+    },
+    "it": {
+     "t": "Le faccende di casa",
+     "g": "Parli di chi fa quali faccende, con verbi separabili come aufräumen e abwaschen.",
+     "p": [
+      "Faccende: abwaschen, staubsaugen, aufräumen, Wäsche waschen, putzen, den Müll rausbringen.",
+      "Verbi separabili: Ich räume mein Zimmer auf. Wer wäscht heute ab? Ich habe schon staubgesaugt.",
+      "Raccolta differenziata: In Deutschland trennt man den Müll: Papier, Bio, Glas, gelbe Tonne für Plastik."
+     ],
+     "q": "Quale faccenda ti piace di meno e quanto spesso la fai? Usa un verbo separabile.",
+     "c": "Prepara un piano settimanale per una WG con quattro faccende e un nome per ciascuna, in frasi complete."
+    },
+    "pt": {
+     "t": "As tarefas domésticas",
+     "g": "Falar de quem faz cada tarefa, com verbos separáveis como aufräumen e abwaschen.",
+     "p": [
+      "Tarefas: abwaschen, staubsaugen, aufräumen, Wäsche waschen, putzen, den Müll rausbringen.",
+      "Verbos separáveis: Ich räume mein Zimmer auf. Wer wäscht heute ab? Ich habe schon staubgesaugt.",
+      "Separar o lixo: In Deutschland trennt man den Müll: Papier, Bio, Glas, gelbe Tonne für Plastik."
+     ],
+     "q": "De que tarefa gostas menos e com que frequência a fazes? Usa um verbo separável.",
+     "c": "Faz um plano semanal de tarefas para uma WG com quatro tarefas e um nome para cada, em frases completas."
+    },
+    "pt_BR": {
+     "t": "As tarefas de casa",
+     "g": "Falar de quem faz cada tarefa, com verbos separáveis como aufräumen e abwaschen.",
+     "p": [
+      "Tarefas: abwaschen, staubsaugen, aufräumen, Wäsche waschen, putzen, den Müll rausbringen.",
+      "Verbos separáveis: Ich räume mein Zimmer auf. Wer wäscht heute ab? Ich habe schon staubgesaugt.",
+      "Separar o lixo: In Deutschland trennt man den Müll: Papier, Bio, Glas, gelbe Tonne für Plastik."
+     ],
+     "q": "De qual tarefa você gosta menos e com que frequência a faz? Use um verbo separável.",
+     "c": "Faça um plano semanal de tarefas para uma WG com quatro tarefas e um nome para cada, em frases completas."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "abwaschen",
+      "ex": "Nach dem Essen wasche ich ab."
+     },
+     {
+      "w": "staubsaugen",
+      "ex": "Am Samstag sauge ich in der ganzen Wohnung Staub."
+     },
+     {
+      "w": "aufräumen",
+      "ex": "Räum bitte dein Zimmer auf!"
+     },
+     {
+      "w": "den Müll trennen",
+      "ex": "Wir trennen den Müll in vier Tonnen."
+     },
+     {
+      "w": "die Wäsche waschen",
+      "ex": "Ich wasche jeden Sonntag die Wäsche."
+     },
+     {
+      "w": "putzen",
+      "ex": "Heute putze ich das Bad."
+     }
+    ],
+    "gram": "Trennbare Verben: Präfix ans Ende. Ich räume auf. Perfekt: Ich habe aufgeräumt, abgewaschen, staubgesaugt."
+   }
+  },
+  {
+   "d": 126,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Shopping at the market",
+     "g": "Buy fresh food at a German market and chat about regional and seasonal products.",
+     "p": [
+      "Quantities: ein Kilo Äpfel, ein Pfund Tomaten, 200 Gramm Käse, ein Bund Karotten, ein Stück Butter.",
+      "Talking to the seller: Sind die Erdbeeren aus der Region? Was ist gerade saisonal? Darf ich probieren?",
+      "Finishing: Sonst noch etwas? Nein, danke, das ist alles. Stimmt so!"
+     ],
+     "q": "What do you like to buy fresh, and is there a market near you? What is in season now where you live?",
+     "c": "Write a market dialogue of six lines with two quantities, one question about the region and Stimmt so."
+    },
+    "de": {
+     "t": "Einkaufen auf dem Markt",
+     "g": "Du kaufst frische Lebensmittel auf dem Markt und plauderst über regionale und saisonale Produkte.",
+     "p": [
+      "Mengen: ein Kilo Äpfel, ein Pfund Tomaten, 200 Gramm Käse, ein Bund Karotten, ein Stück Butter.",
+      "Mit dem Verkäufer: Sind die Erdbeeren aus der Region? Was ist gerade saisonal? Darf ich probieren?",
+      "Abschließen: Sonst noch etwas? Nein, danke, das ist alles. Stimmt so!"
+     ],
+     "q": "Was kaufst du gern frisch, und gibt es einen Markt bei dir? Was ist bei dir gerade saisonal?",
+     "c": "Schreib einen Marktdialog mit sechs Zeilen, zwei Mengen, einer Frage zur Region und Stimmt so."
+    },
+    "es": {
+     "t": "Comprar en el mercado",
+     "g": "Compra productos frescos en un mercado alemán y charla sobre lo regional y de temporada.",
+     "p": [
+      "Cantidades: ein Kilo Äpfel, ein Pfund Tomaten, 200 Gramm Käse, ein Bund Karotten, ein Stück Butter.",
+      "Con el vendedor: Sind die Erdbeeren aus der Region? Was ist gerade saisonal? Darf ich probieren?",
+      "Terminar: Sonst noch etwas? Nein, danke, das ist alles. Stimmt so!"
+     ],
+     "q": "¿Qué te gusta comprar fresco y hay un mercado cerca? ¿Qué es de temporada ahora donde vives?",
+     "c": "Escribe un diálogo de mercado de seis líneas con dos cantidades, una pregunta sobre la región y Stimmt so."
+    },
+    "fr": {
+     "t": "Faire le marché",
+     "g": "Acheter des produits frais au marché et discuter de produits régionaux et de saison.",
+     "p": [
+      "Quantités : ein Kilo Äpfel, ein Pfund Tomaten, 200 Gramm Käse, ein Bund Karotten, ein Stück Butter.",
+      "Avec le vendeur : Sind die Erdbeeren aus der Region? Was ist gerade saisonal? Darf ich probieren?",
+      "Terminer : Sonst noch etwas? Nein, danke, das ist alles. Stimmt so!"
+     ],
+     "q": "Qu'aimes-tu acheter frais, et y a-t-il un marché près de chez toi ? Qu'est-ce qui est de saison chez toi ?",
+     "c": "Écris un dialogue de marché de six répliques avec deux quantités, une question sur la région et Stimmt so."
+    },
+    "it": {
+     "t": "Fare la spesa al mercato",
+     "g": "Compri cibo fresco al mercato e chiacchieri di prodotti regionali e di stagione.",
+     "p": [
+      "Quantità: ein Kilo Äpfel, ein Pfund Tomaten, 200 Gramm Käse, ein Bund Karotten, ein Stück Butter.",
+      "Con il venditore: Sind die Erdbeeren aus der Region? Was ist gerade saisonal? Darf ich probieren?",
+      "Concludere: Sonst noch etwas? Nein, danke, das ist alles. Stimmt so!"
+     ],
+     "q": "Che cosa ti piace comprare fresco e c'è un mercato vicino? Che cosa è di stagione adesso dove vivi?",
+     "c": "Scrivi un dialogo al mercato di sei battute con due quantità, una domanda sulla regione e Stimmt so."
+    },
+    "pt": {
+     "t": "Fazer compras no mercado",
+     "g": "Comprar produtos frescos num mercado alemão e conversar sobre o regional e o sazonal.",
+     "p": [
+      "Quantidades: ein Kilo Äpfel, ein Pfund Tomaten, 200 Gramm Käse, ein Bund Karotten, ein Stück Butter.",
+      "Com o vendedor: Sind die Erdbeeren aus der Region? Was ist gerade saisonal? Darf ich probieren?",
+      "Terminar: Sonst noch etwas? Nein, danke, das ist alles. Stimmt so!"
+     ],
+     "q": "O que gostas de comprar fresco e há um mercado perto? O que está na época agora onde vives?",
+     "c": "Escreve um diálogo de mercado de seis falas com duas quantidades, uma pergunta sobre a região e Stimmt so."
+    },
+    "pt_BR": {
+     "t": "Fazer compras na feira",
+     "g": "Comprar produtos frescos numa feira alemã e conversar sobre o regional e o da estação.",
+     "p": [
+      "Quantidades: ein Kilo Äpfel, ein Pfund Tomaten, 200 Gramm Käse, ein Bund Karotten, ein Stück Butter.",
+      "Com o vendedor: Sind die Erdbeeren aus der Region? Was ist gerade saisonal? Darf ich probieren?",
+      "Terminar: Sonst noch etwas? Nein, danke, das ist alles. Stimmt so!"
+     ],
+     "q": "O que você gosta de comprar fresco e tem uma feira perto? O que está na estação agora onde você mora?",
+     "c": "Escreva um diálogo de feira de seis falas com duas quantidades, uma pergunta sobre a região e Stimmt so."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Markt",
+      "ex": "Samstags gehe ich auf den Markt."
+     },
+     {
+      "w": "regional",
+      "ex": "Ich kaufe gern regionales Gemüse."
+     },
+     {
+      "w": "saisonal",
+      "ex": "Spargel ist im Frühling saisonal."
+     },
+     {
+      "w": "ein Pfund",
+      "ex": "Ein Pfund Kirschen, bitte."
+     },
+     {
+      "w": "probieren",
+      "ex": "Darf ich den Käse probieren?"
+     },
+     {
+      "w": "Sonst noch etwas?",
+      "ex": "Sonst noch etwas? Nein, danke."
+     }
+    ],
+    "gram": "Mengenangaben ohne von: ein Kilo Äpfel, 200 Gramm Käse. Ein Pfund = 500 Gramm. Auf den Markt gehen (Akk.)."
+   }
+  },
+  {
+   "d": 127,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "At the supermarket",
+     "g": "Find your way in a German supermarket: the trolley, the till, bags and the deposit (Pfand).",
+     "p": [
+      "Words: der Einkaufswagen, das Regal, die Kasse, der Kassenbon, die Tüte, das Sonderangebot.",
+      "Pfand: Auf viele Flaschen und Dosen zahlt man Pfand. Am Automaten bekommt man es zurück.",
+      "At the till: Brauchen Sie eine Tüte? Zahlen Sie bar oder mit Karte? Möchten Sie den Kassenbon?"
+     ],
+     "q": "How do you usually shop: big shop once a week or small shops often? Do you bring your own bag?",
+     "c": "Write your shopping list in German with six items and articles, then answer the three till questions."
+    },
+    "de": {
+     "t": "Im Supermarkt",
+     "g": "Du findest dich im Supermarkt zurecht: Einkaufswagen, Kasse, Tüte und Pfand.",
+     "p": [
+      "Wörter: der Einkaufswagen, das Regal, die Kasse, der Kassenbon, die Tüte, das Sonderangebot.",
+      "Pfand: Auf viele Flaschen und Dosen zahlt man Pfand. Am Automaten bekommt man es zurück.",
+      "An der Kasse: Brauchen Sie eine Tüte? Zahlen Sie bar oder mit Karte? Möchten Sie den Kassenbon?"
+     ],
+     "q": "Wie kaufst du meistens ein: einmal pro Woche viel oder oft wenig? Bringst du eine eigene Tasche mit?",
+     "c": "Schreib deine Einkaufsliste mit sechs Sachen und Artikeln und beantworte dann die drei Fragen an der Kasse."
+    },
+    "es": {
+     "t": "En el supermercado",
+     "g": "Muévete por un supermercado alemán: el carro, la caja, las bolsas y el depósito (Pfand).",
+     "p": [
+      "Palabras: der Einkaufswagen, das Regal, die Kasse, der Kassenbon, die Tüte, das Sonderangebot.",
+      "El Pfand: Auf viele Flaschen und Dosen zahlt man Pfand. Am Automaten bekommt man es zurück.",
+      "En la caja: Brauchen Sie eine Tüte? Zahlen Sie bar oder mit Karte? Möchten Sie den Kassenbon?"
+     ],
+     "q": "¿Cómo sueles comprar: una compra grande a la semana o pequeñas a menudo? ¿Llevas tu propia bolsa?",
+     "c": "Escribe tu lista de la compra con seis productos y sus artículos y responde a las tres preguntas de la caja."
+    },
+    "fr": {
+     "t": "Au supermarché",
+     "g": "Se repérer au supermarché allemand : chariot, caisse, sacs et consigne (Pfand).",
+     "p": [
+      "Mots : der Einkaufswagen, das Regal, die Kasse, der Kassenbon, die Tüte, das Sonderangebot.",
+      "Le Pfand : Auf viele Flaschen und Dosen zahlt man Pfand. Am Automaten bekommt man es zurück.",
+      "À la caisse : Brauchen Sie eine Tüte? Zahlen Sie bar oder mit Karte? Möchten Sie den Kassenbon?"
+     ],
+     "q": "Comment fais-tu tes courses : une grosse fois par semaine ou souvent un peu ? Prends-tu ton propre sac ?",
+     "c": "Écris ta liste de courses avec six produits et leurs articles, puis réponds aux trois questions de la caisse."
+    },
+    "it": {
+     "t": "Al supermercato",
+     "g": "Orientati in un supermercato tedesco: carrello, cassa, sacchetti e cauzione (Pfand).",
+     "p": [
+      "Parole: der Einkaufswagen, das Regal, die Kasse, der Kassenbon, die Tüte, das Sonderangebot.",
+      "Il Pfand: Auf viele Flaschen und Dosen zahlt man Pfand. Am Automaten bekommt man es zurück.",
+      "Alla cassa: Brauchen Sie eine Tüte? Zahlen Sie bar oder mit Karte? Möchten Sie den Kassenbon?"
+     ],
+     "q": "Come fai la spesa di solito: una grande a settimana o piccole spesso? Porti la tua borsa?",
+     "c": "Scrivi la lista della spesa con sei prodotti e i loro articoli, poi rispondi alle tre domande della cassa."
+    },
+    "pt": {
+     "t": "No supermercado",
+     "g": "Orientar-te num supermercado alemão: carrinho, caixa, sacos e o depósito (Pfand).",
+     "p": [
+      "Palavras: der Einkaufswagen, das Regal, die Kasse, der Kassenbon, die Tüte, das Sonderangebot.",
+      "O Pfand: Auf viele Flaschen und Dosen zahlt man Pfand. Am Automaten bekommt man es zurück.",
+      "Na caixa: Brauchen Sie eine Tüte? Zahlen Sie bar oder mit Karte? Möchten Sie den Kassenbon?"
+     ],
+     "q": "Como costumas fazer compras: uma grande por semana ou pequenas muitas vezes? Levas o teu saco?",
+     "c": "Escreve a tua lista de compras com seis produtos e artigos e responde às três perguntas da caixa."
+    },
+    "pt_BR": {
+     "t": "No supermercado",
+     "g": "Se virar num supermercado alemão: carrinho, caixa, sacolas e o depósito (Pfand).",
+     "p": [
+      "Palavras: der Einkaufswagen, das Regal, die Kasse, der Kassenbon, die Tüte, das Sonderangebot.",
+      "O Pfand: Auf viele Flaschen und Dosen zahlt man Pfand. Am Automaten bekommt man es zurück.",
+      "Na caixa: Brauchen Sie eine Tüte? Zahlen Sie bar oder mit Karte? Möchten Sie den Kassenbon?"
+     ],
+     "q": "Como você costuma fazer compras: uma grande por semana ou pequenas várias vezes? Leva sua sacola?",
+     "c": "Escreva sua lista de compras com seis produtos e artigos e responda às três perguntas do caixa."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Einkaufswagen",
+      "ex": "Für den Einkaufswagen braucht man oft eine Münze."
+     },
+     {
+      "w": "die Kasse",
+      "ex": "An der Kasse ist heute eine lange Schlange."
+     },
+     {
+      "w": "das Pfand",
+      "ex": "Ich bringe die Flaschen zurück und bekomme das Pfand."
+     },
+     {
+      "w": "die Tüte",
+      "ex": "Nein danke, ich brauche keine Tüte."
+     },
+     {
+      "w": "das Sonderangebot",
+      "ex": "Der Kaffee ist diese Woche im Sonderangebot."
+     },
+     {
+      "w": "der Kassenbon",
+      "ex": "Möchten Sie den Kassenbon?"
+     }
+    ],
+    "gram": "Brauchen + Akkusativ: Ich brauche einen Wagen, keine Tüte. Bar oder mit Karte zahlen."
+   }
+  },
+  {
+   "d": 128,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Complaining politely",
+     "g": "Return or exchange something in a shop and explain the problem politely.",
+     "p": [
+      "The problem: Die Hose ist zu klein. Das Gerät funktioniert nicht. Hier ist ein Loch.",
+      "What you want: Ich möchte das umtauschen. Ich hätte gern mein Geld zurück. Kann ich eine andere Größe haben?",
+      "Stay friendly: Entschuldigung, ich habe ein Problem. Hier ist der Kassenbon. Vielen Dank für Ihre Hilfe!"
+     ],
+     "q": "Have you ever returned something you bought? What was wrong, and how did the shop react?",
+     "c": "Write a polite five-line dialogue: a broken item, umtauschen or Geld zurück, the receipt and a thank-you."
+    },
+    "de": {
+     "t": "Höflich reklamieren",
+     "g": "Du gibst etwas im Geschäft zurück oder tauschst es um und erklärst das Problem höflich.",
+     "p": [
+      "Das Problem: Die Hose ist zu klein. Das Gerät funktioniert nicht. Hier ist ein Loch.",
+      "Was du möchtest: Ich möchte das umtauschen. Ich hätte gern mein Geld zurück. Kann ich eine andere Größe haben?",
+      "Freundlich bleiben: Entschuldigung, ich habe ein Problem. Hier ist der Kassenbon. Vielen Dank für Ihre Hilfe!"
+     ],
+     "q": "Hast du schon mal etwas zurückgegeben? Was war das Problem, und wie hat das Geschäft reagiert?",
+     "c": "Schreib einen höflichen Dialog mit fünf Zeilen: etwas ist kaputt, umtauschen oder Geld zurück, Kassenbon, Dank."
+    },
+    "es": {
+     "t": "Reclamar con educación",
+     "g": "Devuelve o cambia algo en una tienda y explica el problema con educación.",
+     "p": [
+      "El problema: Die Hose ist zu klein. Das Gerät funktioniert nicht. Hier ist ein Loch.",
+      "Lo que quieres: Ich möchte das umtauschen. Ich hätte gern mein Geld zurück. Kann ich eine andere Größe haben?",
+      "Sé amable: Entschuldigung, ich habe ein Problem. Hier ist der Kassenbon. Vielen Dank für Ihre Hilfe!"
+     ],
+     "q": "¿Alguna vez devolviste algo que compraste? ¿Qué pasaba y cómo reaccionó la tienda?",
+     "c": "Escribe un diálogo cortés de cinco líneas: algo roto, umtauschen o Geld zurück, el tique y un agradecimiento."
+    },
+    "fr": {
+     "t": "Réclamer poliment",
+     "g": "Rendre ou échanger un article en magasin et expliquer poliment le problème.",
+     "p": [
+      "Le problème : Die Hose ist zu klein. Das Gerät funktioniert nicht. Hier ist ein Loch.",
+      "Ce que tu veux : Ich möchte das umtauschen. Ich hätte gern mein Geld zurück. Kann ich eine andere Größe haben?",
+      "Reste aimable : Entschuldigung, ich habe ein Problem. Hier ist der Kassenbon. Vielen Dank für Ihre Hilfe!"
+     ],
+     "q": "As-tu déjà rendu un achat ? Quel était le problème, et comment le magasin a-t-il réagi ?",
+     "c": "Écris un dialogue poli de cinq répliques : un article cassé, umtauschen ou Geld zurück, le ticket et un merci."
+    },
+    "it": {
+     "t": "Reclamare con gentilezza",
+     "g": "Restituisci o cambi qualcosa in un negozio e spieghi il problema con gentilezza.",
+     "p": [
+      "Il problema: Die Hose ist zu klein. Das Gerät funktioniert nicht. Hier ist ein Loch.",
+      "Cosa vuoi: Ich möchte das umtauschen. Ich hätte gern mein Geld zurück. Kann ich eine andere Größe haben?",
+      "Resta gentile: Entschuldigung, ich habe ein Problem. Hier ist der Kassenbon. Vielen Dank für Ihre Hilfe!"
+     ],
+     "q": "Hai mai restituito qualcosa che avevi comprato? Che problema c'era e come ha reagito il negozio?",
+     "c": "Scrivi un dialogo cortese di cinque battute: un oggetto rotto, umtauschen o Geld zurück, lo scontrino e un grazie."
+    },
+    "pt": {
+     "t": "Reclamar com educação",
+     "g": "Devolver ou trocar algo numa loja e explicar o problema com educação.",
+     "p": [
+      "O problema: Die Hose ist zu klein. Das Gerät funktioniert nicht. Hier ist ein Loch.",
+      "O que queres: Ich möchte das umtauschen. Ich hätte gern mein Geld zurück. Kann ich eine andere Größe haben?",
+      "Sê simpático: Entschuldigung, ich habe ein Problem. Hier ist der Kassenbon. Vielen Dank für Ihre Hilfe!"
+     ],
+     "q": "Já devolveste alguma coisa que compraste? Qual era o problema e como reagiu a loja?",
+     "c": "Escreve um diálogo educado de cinco falas: algo avariado, umtauschen ou Geld zurück, o talão e um obrigado."
+    },
+    "pt_BR": {
+     "t": "Reclamar com educação",
+     "g": "Devolver ou trocar algo numa loja e explicar o problema com educação.",
+     "p": [
+      "O problema: Die Hose ist zu klein. Das Gerät funktioniert nicht. Hier ist ein Loch.",
+      "O que você quer: Ich möchte das umtauschen. Ich hätte gern mein Geld zurück. Kann ich eine andere Größe haben?",
+      "Seja gentil: Entschuldigung, ich habe ein Problem. Hier ist der Kassenbon. Vielen Dank für Ihre Hilfe!"
+     ],
+     "q": "Você já devolveu algo que comprou? Qual era o problema e como a loja reagiu?",
+     "c": "Escreva um diálogo educado de cinco falas: algo quebrado, umtauschen ou Geld zurück, a nota e um obrigado."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "umtauschen",
+      "ex": "Kann ich den Pullover umtauschen?"
+     },
+     {
+      "w": "zurückgeben",
+      "ex": "Ich möchte diese Schuhe zurückgeben."
+     },
+     {
+      "w": "kaputt",
+      "ex": "Der Toaster ist schon nach einer Woche kaputt."
+     },
+     {
+      "w": "funktionieren",
+      "ex": "Die Lampe funktioniert leider nicht."
+     },
+     {
+      "w": "die Größe",
+      "ex": "Haben Sie die Jacke in einer anderen Größe?"
+     },
+     {
+      "w": "Ich hätte gern ...",
+      "ex": "Ich hätte gern mein Geld zurück."
+     }
+    ],
+    "gram": "Höflich mit möchte und hätte gern: Ich möchte das umtauschen. Zu + Adjektiv: Die Hose ist zu klein."
+   }
+  },
+  {
+   "d": 129,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Genitive basics",
+     "g": "Recognise the genitive for possession and use it after wegen, trotz and während.",
+     "p": [
+      "Forms: der Mann: des Mannes; das Kind: des Kindes; die Frau: der Frau; Plural: der Kinder.",
+      "Possession: das Auto des Mannes, die Tasche der Frau, Annas Fahrrad (Namen mit -s, ohne Apostroph).",
+      "Prepositions: wegen des Regens, trotz des Wetters, während der Pause."
+     ],
+     "q": "Tell me about something that happened because of the weather. Try wegen des Regens or trotz des Wetters.",
+     "c": "Write four sentences: two with a genitive of possession and one each with wegen and während."
+    },
+    "de": {
+     "t": "Grundlagen des Genitivs",
+     "g": "Du erkennst den Genitiv für Besitz und benutzt ihn nach wegen, trotz und während.",
+     "p": [
+      "Formen: der Mann: des Mannes; das Kind: des Kindes; die Frau: der Frau; Plural: der Kinder.",
+      "Besitz: das Auto des Mannes, die Tasche der Frau, Annas Fahrrad (Namen mit -s, ohne Apostroph).",
+      "Präpositionen: wegen des Regens, trotz des Wetters, während der Pause."
+     ],
+     "q": "Erzähl von etwas, das wegen des Wetters passiert ist. Versuch wegen des Regens oder trotz des Wetters.",
+     "c": "Schreib vier Sätze: zwei mit Genitiv für Besitz und je einen mit wegen und während."
+    },
+    "es": {
+     "t": "Lo básico del genitivo",
+     "g": "Reconoce el genitivo de posesión y úsalo tras wegen, trotz y während.",
+     "p": [
+      "Formas: der Mann: des Mannes; das Kind: des Kindes; die Frau: der Frau; Plural: der Kinder.",
+      "Posesión: das Auto des Mannes, die Tasche der Frau, Annas Fahrrad (Namen mit -s, ohne Apostroph).",
+      "Preposiciones: wegen des Regens, trotz des Wetters, während der Pause."
+     ],
+     "q": "Cuéntame algo que pasó por el tiempo. Prueba wegen des Regens o trotz des Wetters.",
+     "c": "Escribe cuatro frases: dos con genitivo de posesión y una con wegen y otra con während."
+    },
+    "fr": {
+     "t": "Les bases du génitif",
+     "g": "Reconnaître le génitif de possession et l'employer après wegen, trotz et während.",
+     "p": [
+      "Formes : der Mann: des Mannes; das Kind: des Kindes; die Frau: der Frau; Plural: der Kinder.",
+      "Possession : das Auto des Mannes, die Tasche der Frau, Annas Fahrrad (Namen mit -s, ohne Apostroph).",
+      "Prépositions : wegen des Regens, trotz des Wetters, während der Pause."
+     ],
+     "q": "Raconte-moi quelque chose qui s'est passé à cause de la météo. Essaie wegen des Regens ou trotz des Wetters.",
+     "c": "Écris quatre phrases : deux avec un génitif de possession, une avec wegen et une avec während."
+    },
+    "it": {
+     "t": "Le basi del genitivo",
+     "g": "Riconosci il genitivo di possesso e usalo dopo wegen, trotz e während.",
+     "p": [
+      "Forme: der Mann: des Mannes; das Kind: des Kindes; die Frau: der Frau; Plural: der Kinder.",
+      "Possesso: das Auto des Mannes, die Tasche der Frau, Annas Fahrrad (Namen mit -s, ohne Apostroph).",
+      "Preposizioni: wegen des Regens, trotz des Wetters, während der Pause."
+     ],
+     "q": "Raccontami qualcosa successo per colpa del tempo. Prova wegen des Regens o trotz des Wetters.",
+     "c": "Scrivi quattro frasi: due con il genitivo di possesso, una con wegen e una con während."
+    },
+    "pt": {
+     "t": "Noções de genitivo",
+     "g": "Reconhecer o genitivo de posse e usá-lo depois de wegen, trotz e während.",
+     "p": [
+      "Formas: der Mann: des Mannes; das Kind: des Kindes; die Frau: der Frau; Plural: der Kinder.",
+      "Posse: das Auto des Mannes, die Tasche der Frau, Annas Fahrrad (Namen mit -s, ohne Apostroph).",
+      "Preposições: wegen des Regens, trotz des Wetters, während der Pause."
+     ],
+     "q": "Conta-me algo que aconteceu por causa do tempo. Experimenta wegen des Regens ou trotz des Wetters.",
+     "c": "Escreve quatro frases: duas com genitivo de posse, uma com wegen e outra com während."
+    },
+    "pt_BR": {
+     "t": "Noções básicas de genitivo",
+     "g": "Reconhecer o genitivo de posse e usá-lo depois de wegen, trotz e während.",
+     "p": [
+      "Formas: der Mann: des Mannes; das Kind: des Kindes; die Frau: der Frau; Plural: der Kinder.",
+      "Posse: das Auto des Mannes, die Tasche der Frau, Annas Fahrrad (Namen mit -s, ohne Apostroph).",
+      "Preposições: wegen des Regens, trotz des Wetters, während der Pause."
+     ],
+     "q": "Me conte algo que aconteceu por causa do tempo. Tente wegen des Regens ou trotz des Wetters.",
+     "c": "Escreva quatro frases: duas com genitivo de posse, uma com wegen e outra com während."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "wegen",
+      "ex": "Wegen des Staus kam ich zu spät."
+     },
+     {
+      "w": "trotz",
+      "ex": "Trotz des Regens gehen wir spazieren."
+     },
+     {
+      "w": "während",
+      "ex": "Während der Pause trinke ich Kaffee."
+     },
+     {
+      "w": "des Mannes",
+      "ex": "Das ist das Fahrrad des Mannes."
+     },
+     {
+      "w": "der Frau",
+      "ex": "Die Tasche der Frau ist rot."
+     },
+     {
+      "w": "Annas",
+      "ex": "Annas Bruder wohnt in Wien."
+     }
+    ],
+    "gram": "Genitiv: des + Nomen mit -(e)s (maskulin, neutral), der (feminin, Plural). Wegen, trotz, während + Genitiv."
+   }
+  },
+  {
+   "d": 130,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Von + dative for possession",
+     "g": "Use von + dative, the everyday spoken alternative to the genitive.",
+     "p": [
+      "Spoken: das Auto von meinem Vater, das Zimmer von meiner Schwester, die Freunde von Tim.",
+      "Written: das Auto meines Vaters, das Zimmer meiner Schwester. Beides ist richtig.",
+      "Dative endings: von meinem (m/n), von meiner (f), von meinen Eltern (Plural + -n)."
+     ],
+     "q": "Tell me about three things that belong to people in your family, using von + dative.",
+     "c": "Write three sentences with von + dative, then rewrite each one with the genitive."
+    },
+    "de": {
+     "t": "Von + Dativ für Besitz",
+     "g": "Du benutzt von + Dativ, die gesprochene Alternative zum Genitiv im Alltag.",
+     "p": [
+      "Gesprochen: das Auto von meinem Vater, das Zimmer von meiner Schwester, die Freunde von Tim.",
+      "Geschrieben: das Auto meines Vaters, das Zimmer meiner Schwester. Beides ist richtig.",
+      "Dativ-Endungen: von meinem (m/n), von meiner (f), von meinen Eltern (Plural + -n)."
+     ],
+     "q": "Erzähl mir von drei Sachen, die Leuten aus deiner Familie gehören, mit von + Dativ.",
+     "c": "Schreib drei Sätze mit von + Dativ und schreib jeden dann noch einmal mit Genitiv."
+    },
+    "es": {
+     "t": "Von + dativo para la posesión",
+     "g": "Usa von + dativo, la alternativa hablada al genitivo en el día a día.",
+     "p": [
+      "Hablado: das Auto von meinem Vater, das Zimmer von meiner Schwester, die Freunde von Tim.",
+      "Escrito: das Auto meines Vaters, das Zimmer meiner Schwester. Beides ist richtig.",
+      "Terminaciones de dativo: von meinem (m/n), von meiner (f), von meinen Eltern (Plural + -n)."
+     ],
+     "q": "Háblame de tres cosas de personas de tu familia usando von + dativo.",
+     "c": "Escribe tres frases con von + dativo y luego reescribe cada una con genitivo."
+    },
+    "fr": {
+     "t": "Von + datif pour la possession",
+     "g": "Utiliser von + datif, l'alternative orale au génitif dans la vie quotidienne.",
+     "p": [
+      "À l'oral : das Auto von meinem Vater, das Zimmer von meiner Schwester, die Freunde von Tim.",
+      "À l'écrit : das Auto meines Vaters, das Zimmer meiner Schwester. Beides ist richtig.",
+      "Terminaisons du datif : von meinem (m/n), von meiner (f), von meinen Eltern (Plural + -n)."
+     ],
+     "q": "Parle-moi de trois choses qui appartiennent à des membres de ta famille, avec von + datif.",
+     "c": "Écris trois phrases avec von + datif, puis réécris chacune au génitif."
+    },
+    "it": {
+     "t": "Von + dativo per il possesso",
+     "g": "Usi von + dativo, l'alternativa parlata al genitivo nella vita di tutti i giorni.",
+     "p": [
+      "Parlato: das Auto von meinem Vater, das Zimmer von meiner Schwester, die Freunde von Tim.",
+      "Scritto: das Auto meines Vaters, das Zimmer meiner Schwester. Beides ist richtig.",
+      "Desinenze del dativo: von meinem (m/n), von meiner (f), von meinen Eltern (Plural + -n)."
+     ],
+     "q": "Parlami di tre cose che appartengono a persone della tua famiglia, con von + dativo.",
+     "c": "Scrivi tre frasi con von + dativo, poi riscrivi ognuna con il genitivo."
+    },
+    "pt": {
+     "t": "Von + dativo para a posse",
+     "g": "Usar von + dativo, a alternativa falada ao genitivo no dia a dia.",
+     "p": [
+      "Falado: das Auto von meinem Vater, das Zimmer von meiner Schwester, die Freunde von Tim.",
+      "Escrito: das Auto meines Vaters, das Zimmer meiner Schwester. Beides ist richtig.",
+      "Terminações do dativo: von meinem (m/n), von meiner (f), von meinen Eltern (Plural + -n)."
+     ],
+     "q": "Fala-me de três coisas que pertencem a pessoas da tua família, com von + dativo.",
+     "c": "Escreve três frases com von + dativo e depois reescreve cada uma com genitivo."
+    },
+    "pt_BR": {
+     "t": "Von + dativo para a posse",
+     "g": "Usar von + dativo, a alternativa falada ao genitivo no dia a dia.",
+     "p": [
+      "Falado: das Auto von meinem Vater, das Zimmer von meiner Schwester, die Freunde von Tim.",
+      "Escrito: das Auto meines Vaters, das Zimmer meiner Schwester. Beides ist richtig.",
+      "Terminações do dativo: von meinem (m/n), von meiner (f), von meinen Eltern (Plural + -n)."
+     ],
+     "q": "Me fale de três coisas que pertencem a pessoas da sua família, com von + dativo.",
+     "c": "Escreva três frases com von + dativo e depois reescreva cada uma com genitivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "von meinem Vater",
+      "ex": "Das ist das Auto von meinem Vater."
+     },
+     {
+      "w": "von meiner Mutter",
+      "ex": "Der Kuchen ist von meiner Mutter."
+     },
+     {
+      "w": "von meinen Eltern",
+      "ex": "Das Haus von meinen Eltern ist alt."
+     },
+     {
+      "w": "gehören",
+      "ex": "Das Buch gehört meinem Bruder."
+     },
+     {
+      "w": "Wem gehört ...?",
+      "ex": "Wem gehört die Jacke hier?"
+     },
+     {
+      "w": "die Freundin von Lisa",
+      "ex": "Die Freundin von Lisa kommt aus Graz."
+     }
+    ],
+    "gram": "Gesprochen: von + Dativ (das Handy von meiner Schwester). Geschrieben oft Genitiv (das Handy meiner Schwester)."
+   }
+  }
+ ]
+}

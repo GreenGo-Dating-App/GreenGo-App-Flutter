@@ -1,0 +1,33 @@
+{
+ "topic": "gardening",
+ "intro": {
+  "en": [
+   "Hi, I'm {name}! I'll guide you on a 365-day gardening path, with one small, practical lesson every day. 🌱",
+   "We'll go from light, water and easy houseplants to growing vegetables, garden design and expert tricks. Do you already have any plants at home, or are you starting fresh?"
+  ],
+  "de": [
+   "Hallo, ich bin {name}! Ich begleite dich auf einem 365-Tage-Weg durch die Gartenwelt, mit einer kleinen, praktischen Lektion pro Tag. 🌱",
+   "Von Licht, Wasser und pflegeleichten Zimmerpflanzen geht es zu Gemüseanbau, Gartengestaltung und Profi-Tricks. Hast du schon Pflanzen zu Hause, oder fängst du ganz neu an?"
+  ],
+  "es": [
+   "¡Hola, soy {name}! Te guiaré en un camino de 365 días por la jardinería, con una pequeña lección práctica cada día. 🌱",
+   "Iremos de la luz, el riego y las plantas de interior fáciles al huerto, el diseño de jardines y trucos de experto. ¿Ya tienes plantas en casa o empiezas desde cero?"
+  ],
+  "fr": [
+   "Salut, je suis {name} ! Je vais te guider sur un parcours de jardinage de 365 jours, avec une petite leçon pratique chaque jour. 🌱",
+   "On ira de la lumière, de l'arrosage et des plantes d'intérieur faciles jusqu'au potager, à l'aménagement du jardin et aux astuces d'expert. As-tu déjà des plantes chez toi, ou tu pars de zéro ?"
+  ],
+  "it": [
+   "Ciao, sono {name}! Ti guiderò in un percorso di 365 giorni nel giardinaggio, con una piccola lezione pratica ogni giorno. 🌱",
+   "Passeremo da luce, acqua e piante d'appartamento facili all'orto, alla progettazione del giardino e ai trucchi da esperti. Hai già qualche pianta in casa o parti da zero?"
+  ],
+  "pt": [
+   "Olá, eu sou {name}! Vou guiar-te num percurso de 365 dias pela jardinagem, com uma pequena lição prática por dia. 🌱",
+   "Vamos da luz, da rega e das plantas de interior fáceis até à horta, ao desenho de jardins e a truques de especialista. Já tens plantas em casa ou vais começar do zero?"
+  ],
+  "pt_BR": [
+   "Oi, eu sou {name}! Vou te guiar numa jornada de 365 dias pela jardinagem, com uma pequena lição prática por dia. 🌱",
+   "Vamos da luz, da água e das plantas de interior fáceis até a horta, o paisagismo e truques de especialista. Você já tem plantas em casa ou vai começar do zero?"
+  ]
+ }
+}

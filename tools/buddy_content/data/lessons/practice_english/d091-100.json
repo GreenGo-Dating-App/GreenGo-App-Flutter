@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 91,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Past continuous: I was walking",
+     "g": "Describe actions in progress at a moment in the past.",
+     "p": [
+      "Form: was or were plus verb-ing: I was walking, they were talking.",
+      "Use it for a scene at a specific time: At eight o'clock I was having dinner.",
+      "Negative and question: I wasn't sleeping. What were you doing?"
+     ],
+     "q": "What were you doing yesterday at seven in the evening?",
+     "c": "Write what five people in your life were doing at noon yesterday, with the past continuous."
+    },
+    "de": {
+     "t": "Past continuous: I was walking",
+     "g": "Du beschreibst Handlungen, die in der Vergangenheit gerade abliefen.",
+     "p": [
+      "Form: was oder were plus Verb-ing: I was walking, they were talking.",
+      "Für eine Szene zu einem bestimmten Zeitpunkt: At eight o'clock I was having dinner.",
+      "Verneinung und Frage: I wasn't sleeping. What were you doing?"
+     ],
+     "q": "Was hast du gestern um sieben Uhr abends gerade gemacht?",
+     "c": "Schreib, was fünf Menschen in deinem Leben gestern um zwölf gerade machten, im past continuous."
+    },
+    "es": {
+     "t": "Past continuous: I was walking",
+     "g": "Describe acciones en curso en un momento del pasado.",
+     "p": [
+      "Forma: was o were más verbo-ing: I was walking, they were talking.",
+      "Sirve para una escena en un momento concreto: At eight o'clock I was having dinner.",
+      "Negativa y pregunta: I wasn't sleeping. What were you doing?"
+     ],
+     "q": "¿Qué estabas haciendo ayer a las siete de la tarde?",
+     "c": "Escribe qué estaban haciendo cinco personas de tu vida ayer a mediodía, con el past continuous."
+    },
+    "fr": {
+     "t": "Past continuous : I was walking",
+     "g": "Décrire des actions en cours à un moment du passé.",
+     "p": [
+      "Forme : was ou were plus verbe-ing : I was walking, they were talking.",
+      "Pour une scène à un moment précis : At eight o'clock I was having dinner.",
+      "Négation et question : I wasn't sleeping. What were you doing?"
+     ],
+     "q": "Que faisais-tu hier à sept heures du soir ?",
+     "c": "Écris ce que cinq personnes de ta vie faisaient hier à midi, avec le past continuous."
+    },
+    "it": {
+     "t": "Past continuous: I was walking",
+     "g": "Descrivi azioni in corso in un momento del passato.",
+     "p": [
+      "Forma: was o were più verbo-ing: I was walking, they were talking.",
+      "Serve per una scena in un momento preciso: At eight o'clock I was having dinner.",
+      "Negativa e domanda: I wasn't sleeping. What were you doing?"
+     ],
+     "q": "Cosa stavi facendo ieri alle sette di sera?",
+     "c": "Scrivi cosa stavano facendo cinque persone della tua vita ieri a mezzogiorno, con il past continuous."
+    },
+    "pt": {
+     "t": "Past continuous: I was walking",
+     "g": "Descreve ações em curso num momento do passado.",
+     "p": [
+      "Forma: was ou were mais verbo-ing: I was walking, they were talking.",
+      "Serve para uma cena num momento exato: At eight o'clock I was having dinner.",
+      "Negativa e pergunta: I wasn't sleeping. What were you doing?"
+     ],
+     "q": "O que estavas a fazer ontem às sete da tarde?",
+     "c": "Escreve o que cinco pessoas da tua vida estavam a fazer ontem ao meio-dia, com o past continuous."
+    },
+    "pt_BR": {
+     "t": "Past continuous: I was walking",
+     "g": "Descreva ações em andamento num momento do passado.",
+     "p": [
+      "Forma: was ou were mais verbo-ing: I was walking, they were talking.",
+      "Serve para uma cena num momento exato: At eight o'clock I was having dinner.",
+      "Negativa e pergunta: I wasn't sleeping. What were you doing?"
+     ],
+     "q": "O que você estava fazendo ontem às sete da noite?",
+     "c": "Escreva o que cinco pessoas da sua vida estavam fazendo ontem ao meio-dia, com o past continuous."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "was walking",
+      "ex": "I was walking in the park at nine."
+     },
+     {
+      "w": "were talking",
+      "ex": "They were talking about the match."
+     },
+     {
+      "w": "was having dinner",
+      "ex": "At eight, we were having dinner."
+     },
+     {
+      "w": "wasn't sleeping",
+      "ex": "I wasn't sleeping, I was reading."
+     },
+     {
+      "w": "What were you doing?",
+      "ex": "What were you doing last night at ten?"
+     },
+     {
+      "w": "at that moment",
+      "ex": "At that moment, it was raining."
+     }
+    ],
+    "gram": "Past continuous: was/were + verb-ing for an action in progress at a past moment: At six I was cooking."
+   }
+  },
+  {
+   "d": 92,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Past simple vs past continuous",
+     "g": "Combine a long background action with a short one that interrupts it.",
+     "p": [
+      "Past continuous is the long action: I was cooking...",
+      "Past simple is the short action that happens in the middle: ...when you called.",
+      "Finished actions in a row all use the past simple: I got up, had a shower and left."
+     ],
+     "q": "What were you doing when you heard some good news recently?",
+     "c": "Write three sentences with the pattern I was ...-ing when ... happened."
+    },
+    "de": {
+     "t": "Past simple oder past continuous",
+     "g": "Du verbindest eine lange Hintergrundhandlung mit einer kurzen Unterbrechung.",
+     "p": [
+      "Das past continuous ist die lange Handlung: I was cooking...",
+      "Das past simple ist die kurze Handlung mittendrin: ...when you called.",
+      "Abgeschlossene Handlungen nacheinander stehen alle im past simple: I got up, had a shower and left."
+     ],
+     "q": "Was hast du gerade gemacht, als du zuletzt eine gute Nachricht bekommen hast?",
+     "c": "Schreib drei Sätze nach dem Muster I was ...-ing when ... happened."
+    },
+    "es": {
+     "t": "Past simple o past continuous",
+     "g": "Combina una acción larga de fondo con otra corta que la interrumpe.",
+     "p": [
+      "El past continuous es la acción larga: I was cooking...",
+      "El past simple es la acción corta que ocurre en medio: ...when you called.",
+      "Varias acciones terminadas seguidas van todas en past simple: I got up, had a shower and left."
+     ],
+     "q": "¿Qué estabas haciendo cuando recibiste una buena noticia hace poco?",
+     "c": "Escribe tres frases con el modelo I was ...-ing when ... happened."
+    },
+    "fr": {
+     "t": "Past simple ou past continuous",
+     "g": "Combiner une longue action de fond et une action courte qui l'interrompt.",
+     "p": [
+      "Le past continuous, c'est l'action longue : I was cooking...",
+      "Le past simple, c'est l'action courte au milieu : ...when you called.",
+      "Des actions terminées à la suite prennent toutes le past simple : I got up, had a shower and left."
+     ],
+     "q": "Que faisais-tu quand tu as appris une bonne nouvelle récemment ?",
+     "c": "Écris trois phrases sur le modèle I was ...-ing when ... happened."
+    },
+    "it": {
+     "t": "Past simple o past continuous",
+     "g": "Unisci un'azione lunga di sfondo a una breve che la interrompe.",
+     "p": [
+      "Il past continuous è l'azione lunga: I was cooking...",
+      "Il past simple è l'azione breve che arriva nel mezzo: ...when you called.",
+      "Azioni concluse una dopo l'altra vanno tutte al past simple: I got up, had a shower and left."
+     ],
+     "q": "Cosa stavi facendo quando hai ricevuto una bella notizia di recente?",
+     "c": "Scrivi tre frasi con lo schema I was ...-ing when ... happened."
+    },
+    "pt": {
+     "t": "Past simple ou past continuous",
+     "g": "Junta uma ação longa de fundo com outra curta que a interrompe.",
+     "p": [
+      "O past continuous é a ação longa: I was cooking...",
+      "O past simple é a ação curta que acontece no meio: ...when you called.",
+      "Ações terminadas seguidas vão todas para o past simple: I got up, had a shower and left."
+     ],
+     "q": "O que estavas a fazer quando recebeste uma boa notícia há pouco tempo?",
+     "c": "Escreve três frases com o modelo I was ...-ing when ... happened."
+    },
+    "pt_BR": {
+     "t": "Past simple ou past continuous",
+     "g": "Junte uma ação longa de fundo com outra curta que a interrompe.",
+     "p": [
+      "O past continuous é a ação longa: I was cooking...",
+      "O past simple é a ação curta que acontece no meio: ...when you called.",
+      "Ações terminadas em sequência ficam todas no past simple: I got up, had a shower and left."
+     ],
+     "q": "O que você estava fazendo quando recebeu uma boa notícia há pouco tempo?",
+     "c": "Escreva três frases com o modelo I was ...-ing when ... happened."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "I was cooking when...",
+      "ex": "I was cooking when the phone rang."
+     },
+     {
+      "w": "called",
+      "ex": "She called while I was working."
+     },
+     {
+      "w": "rang",
+      "ex": "The doorbell rang during the film."
+     },
+     {
+      "w": "was driving",
+      "ex": "I was driving home when I saw her."
+     },
+     {
+      "w": "arrived",
+      "ex": "They arrived when we were eating."
+     },
+     {
+      "w": "then",
+      "ex": "I closed the book, then I went to bed."
+     }
+    ],
+    "gram": "Long action in past continuous + short interrupting action in past simple: I was reading when the lights went out."
+   }
+  },
+  {
+   "d": 93,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "When and while in stories",
+     "g": "Link past actions with when and while to set the scene.",
+     "p": [
+      "While usually goes with the long action: While I was walking home, it started to rain.",
+      "When usually goes with the short action: I was walking home when it started to rain.",
+      "You can start with either part; add a comma when the linking word comes first."
+     ],
+     "q": "Finish my sentence: While I was waiting for the bus...",
+     "c": "Write two short story openings: one starting with While, one using when in the middle."
+    },
+    "de": {
+     "t": "When und while in Geschichten",
+     "g": "Du verbindest Handlungen in der Vergangenheit mit when und while.",
+     "p": [
+      "While steht meist bei der langen Handlung: While I was walking home, it started to rain.",
+      "When steht meist bei der kurzen Handlung: I was walking home when it started to rain.",
+      "Du kannst mit beiden Teilen beginnen; steht das Bindewort vorne, setz ein Komma."
+     ],
+     "q": "Vervollständige meinen Satz: While I was waiting for the bus...",
+     "c": "Schreib zwei Geschichtenanfänge: einen mit While vorne, einen mit when in der Mitte."
+    },
+    "es": {
+     "t": "When y while en las historias",
+     "g": "Une acciones pasadas con when y while para crear la escena.",
+     "p": [
+      "While suele ir con la acción larga: While I was walking home, it started to rain.",
+      "When suele ir con la acción corta: I was walking home when it started to rain.",
+      "Puedes empezar por cualquier parte; si el conector va primero, pon coma."
+     ],
+     "q": "Termina mi frase: While I was waiting for the bus...",
+     "c": "Escribe dos comienzos de historia: uno con While delante y otro con when en medio."
+    },
+    "fr": {
+     "t": "When et while dans un récit",
+     "g": "Relier des actions passées avec when et while pour planter le décor.",
+     "p": [
+      "While va souvent avec l'action longue : While I was walking home, it started to rain.",
+      "When va souvent avec l'action courte : I was walking home when it started to rain.",
+      "On peut commencer par l'une ou l'autre partie ; mets une virgule si le mot de liaison est devant."
+     ],
+     "q": "Termine ma phrase : While I was waiting for the bus...",
+     "c": "Écris deux débuts d'histoire : un qui commence par While, un avec when au milieu."
+    },
+    "it": {
+     "t": "When e while nei racconti",
+     "g": "Colleghi azioni passate con when e while per creare la scena.",
+     "p": [
+      "While va di solito con l'azione lunga: While I was walking home, it started to rain.",
+      "When va di solito con l'azione breve: I was walking home when it started to rain.",
+      "Puoi iniziare da una o dall'altra parte; se il connettivo è all'inizio, metti la virgola."
+     ],
+     "q": "Completa la mia frase: While I was waiting for the bus...",
+     "c": "Scrivi due inizi di storia: uno che comincia con While, uno con when nel mezzo."
+    },
+    "pt": {
+     "t": "When e while nas histórias",
+     "g": "Liga ações passadas com when e while para criar a cena.",
+     "p": [
+      "While costuma ir com a ação longa: While I was walking home, it started to rain.",
+      "When costuma ir com a ação curta: I was walking home when it started to rain.",
+      "Podes começar por qualquer parte; se o conector vier primeiro, põe vírgula."
+     ],
+     "q": "Acaba a minha frase: While I was waiting for the bus...",
+     "c": "Escreve dois inícios de história: um a começar com While e outro com when no meio."
+    },
+    "pt_BR": {
+     "t": "When e while nas histórias",
+     "g": "Ligue ações passadas com when e while para montar a cena.",
+     "p": [
+      "While costuma ir com a ação longa: While I was walking home, it started to rain.",
+      "When costuma ir com a ação curta: I was walking home when it started to rain.",
+      "Você pode começar por qualquer parte; se o conectivo vier primeiro, use vírgula."
+     ],
+     "q": "Termine minha frase: While I was waiting for the bus...",
+     "c": "Escreva dois começos de história: um começando com While e outro com when no meio."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "while",
+      "ex": "While I was shopping, I met an old friend."
+     },
+     {
+      "w": "when",
+      "ex": "We were sleeping when the alarm went off."
+     },
+     {
+      "w": "started to rain",
+      "ex": "It started to rain while we were walking."
+     },
+     {
+      "w": "was waiting",
+      "ex": "I was waiting for the bus when I saw him."
+     },
+     {
+      "w": "suddenly",
+      "ex": "While I was reading, suddenly the cat jumped up."
+     },
+     {
+      "w": "met",
+      "ex": "While she was in Rome, she met her best friend."
+     }
+    ],
+    "gram": "While + long action (past continuous), when + short action (past simple). Comma when the clause comes first."
+   }
+  },
+  {
+   "d": 94,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Telling a funny story",
+     "g": "Tell a short, funny story using past tenses and story words.",
+     "p": [
+      "Set the scene with the past continuous: It was raining and I was running to the bus.",
+      "Move the action with then and suddenly: Suddenly, I slipped and my bag flew open!",
+      "Finish with in the end and a reaction: In the end we all laughed."
+     ],
+     "q": "Tell me a funny thing that happened to you or a friend, in four or five sentences.",
+     "c": "Write a funny mini story with then, suddenly and in the end, and read it aloud with feeling."
+    },
+    "de": {
+     "t": "Eine lustige Geschichte erzählen",
+     "g": "Du erzählst eine kurze lustige Geschichte mit Vergangenheitsformen und Erzählwörtern.",
+     "p": [
+      "Setz die Szene mit dem past continuous: It was raining and I was running to the bus.",
+      "Treib die Handlung mit then und suddenly voran: Suddenly, I slipped and my bag flew open!",
+      "Ende mit in the end und einer Reaktion: In the end we all laughed."
+     ],
+     "q": "Erzähl mir etwas Lustiges, das dir oder Freunden passiert ist, in vier oder fünf Sätzen.",
+     "c": "Schreib eine lustige Mini-Geschichte mit then, suddenly und in the end und lies sie ausdrucksvoll vor."
+    },
+    "es": {
+     "t": "Contar una historia divertida",
+     "g": "Cuenta una historia corta y divertida con tiempos pasados y palabras de relato.",
+     "p": [
+      "Crea la escena con el past continuous: It was raining and I was running to the bus.",
+      "Haz avanzar la acción con then y suddenly: Suddenly, I slipped and my bag flew open!",
+      "Termina con in the end y una reacción: In the end we all laughed."
+     ],
+     "q": "Cuéntame algo gracioso que te pasó a ti o a un amigo, en cuatro o cinco frases.",
+     "c": "Escribe una mini historia graciosa con then, suddenly e in the end, y léela en voz alta con emoción."
+    },
+    "fr": {
+     "t": "Raconter une histoire drôle",
+     "g": "Raconter une courte histoire drôle avec les temps du passé et des mots de récit.",
+     "p": [
+      "Plante le décor au past continuous : It was raining and I was running to the bus.",
+      "Fais avancer l'action avec then et suddenly : Suddenly, I slipped and my bag flew open!",
+      "Termine avec in the end et une réaction : In the end we all laughed."
+     ],
+     "q": "Raconte-moi un truc drôle qui t'est arrivé, à toi ou à un ami, en quatre ou cinq phrases.",
+     "c": "Écris une petite histoire drôle avec then, suddenly et in the end, et lis-la à voix haute avec entrain."
+    },
+    "it": {
+     "t": "Raccontare una storia divertente",
+     "g": "Racconti una breve storia divertente con i tempi passati e le parole del racconto.",
+     "p": [
+      "Crea la scena con il past continuous: It was raining and I was running to the bus.",
+      "Fai avanzare l'azione con then e suddenly: Suddenly, I slipped and my bag flew open!",
+      "Chiudi con in the end e una reazione: In the end we all laughed."
+     ],
+     "q": "Raccontami una cosa buffa successa a te o a un amico, in quattro o cinque frasi.",
+     "c": "Scrivi una mini storia buffa con then, suddenly e in the end, e leggila ad alta voce con espressione."
+    },
+    "pt": {
+     "t": "Contar uma história engraçada",
+     "g": "Conta uma história curta e engraçada com tempos do passado e palavras de narração.",
+     "p": [
+      "Cria a cena com o past continuous: It was raining and I was running to the bus.",
+      "Faz avançar a ação com then e suddenly: Suddenly, I slipped and my bag flew open!",
+      "Acaba com in the end e uma reação: In the end we all laughed."
+     ],
+     "q": "Conta-me uma coisa engraçada que te aconteceu a ti ou a um amigo, em quatro ou cinco frases.",
+     "c": "Escreve uma mini história engraçada com then, suddenly e in the end, e lê-a em voz alta com expressão."
+    },
+    "pt_BR": {
+     "t": "Contando uma história engraçada",
+     "g": "Conte uma história curta e engraçada com tempos do passado e palavras de narração.",
+     "p": [
+      "Monte a cena com o past continuous: It was raining and I was running to the bus.",
+      "Faça a ação andar com then e suddenly: Suddenly, I slipped and my bag flew open!",
+      "Termine com in the end e uma reação: In the end we all laughed."
+     ],
+     "q": "Me conte uma coisa engraçada que aconteceu com você ou um amigo, em quatro ou cinco frases.",
+     "c": "Escreva uma mini história engraçada com then, suddenly e in the end, e leia em voz alta com emoção."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "suddenly",
+      "ex": "Suddenly, a dog ran into the café."
+     },
+     {
+      "w": "then",
+      "ex": "Then the waiter dropped all the cups."
+     },
+     {
+      "w": "in the end",
+      "ex": "In the end, everyone was laughing."
+     },
+     {
+      "w": "It was so funny!",
+      "ex": "My dad wore odd socks to the wedding. It was so funny!"
+     },
+     {
+      "w": "laughed",
+      "ex": "We laughed for ten minutes."
+     },
+     {
+      "w": "One day...",
+      "ex": "One day, I was waiting for a train..."
+     }
+    ],
+    "gram": "Stories: past continuous for the scene, past simple for events, and story words: one day, then, suddenly, in the end."
+   }
+  },
+  {
+   "d": 95,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Present perfect: I have visited",
+     "g": "Talk about life experiences with have or has plus past participle.",
+     "p": [
+      "Form: have or has plus past participle: I have visited Spain, she has tried sushi.",
+      "Regular participles end in -ed. Some are irregular: been, seen, eaten, done.",
+      "We don't say when it happened; it is about your life up to now."
+     ],
+     "q": "What is something interesting you have done in your life?",
+     "c": "Write five sentences about experiences you have had, using have or has plus a participle."
+    },
+    "de": {
+     "t": "Present perfect: I have visited",
+     "g": "Du sprichst mit have oder has und Partizip über Lebenserfahrungen.",
+     "p": [
+      "Form: have oder has plus Partizip: I have visited Spain, she has tried sushi.",
+      "Regelmäßige Partizipien enden auf -ed. Manche sind unregelmäßig: been, seen, eaten, done.",
+      "Wir sagen nicht, wann es passiert ist; es geht um dein Leben bis jetzt."
+     ],
+     "q": "Was ist etwas Interessantes, das du in deinem Leben gemacht hast?",
+     "c": "Schreib fünf Sätze über deine Erfahrungen mit have oder has und einem Partizip."
+    },
+    "es": {
+     "t": "Present perfect: I have visited",
+     "g": "Habla de experiencias de vida con have o has más participio.",
+     "p": [
+      "Forma: have o has más participio: I have visited Spain, she has tried sushi.",
+      "Los participios regulares acaban en -ed. Algunos son irregulares: been, seen, eaten, done.",
+      "No decimos cuándo pasó; se trata de tu vida hasta ahora."
+     ],
+     "q": "¿Qué cosa interesante has hecho en tu vida?",
+     "c": "Escribe cinco frases sobre experiencias que has tenido, con have o has más participio."
+    },
+    "fr": {
+     "t": "Present perfect : I have visited",
+     "g": "Parler d'expériences de vie avec have ou has plus participe passé.",
+     "p": [
+      "Forme : have ou has plus participe : I have visited Spain, she has tried sushi.",
+      "Les participes réguliers finissent en -ed. Certains sont irréguliers : been, seen, eaten, done.",
+      "On ne dit pas quand ; il s'agit de ta vie jusqu'à maintenant."
+     ],
+     "q": "Quelle chose intéressante as-tu faite dans ta vie ?",
+     "c": "Écris cinq phrases sur des expériences que tu as vécues, avec have ou has plus un participe."
+    },
+    "it": {
+     "t": "Present perfect: I have visited",
+     "g": "Parli di esperienze di vita con have o has più participio passato.",
+     "p": [
+      "Forma: have o has più participio: I have visited Spain, she has tried sushi.",
+      "I participi regolari finiscono in -ed. Alcuni sono irregolari: been, seen, eaten, done.",
+      "Non diciamo quando è successo; si parla della tua vita fino a ora."
+     ],
+     "q": "Qual è una cosa interessante che hai fatto nella tua vita?",
+     "c": "Scrivi cinque frasi su esperienze che hai fatto, con have o has più un participio."
+    },
+    "pt": {
+     "t": "Present perfect: I have visited",
+     "g": "Fala de experiências de vida com have ou has mais particípio.",
+     "p": [
+      "Forma: have ou has mais particípio: I have visited Spain, she has tried sushi.",
+      "Os particípios regulares acabam em -ed. Alguns são irregulares: been, seen, eaten, done.",
+      "Não dizemos quando aconteceu; fala-se da tua vida até agora."
+     ],
+     "q": "Qual é uma coisa interessante que já fizeste na vida?",
+     "c": "Escreve cinco frases sobre experiências que já tiveste, com have ou has mais particípio."
+    },
+    "pt_BR": {
+     "t": "Present perfect: I have visited",
+     "g": "Fale de experiências de vida com have ou has mais particípio.",
+     "p": [
+      "Forma: have ou has mais particípio: I have visited Spain, she has tried sushi.",
+      "Particípios regulares terminam em -ed. Alguns são irregulares: been, seen, eaten, done.",
+      "Não dizemos quando aconteceu; o foco é sua vida até agora."
+     ],
+     "q": "Qual é uma coisa interessante que você já fez na vida?",
+     "c": "Escreva cinco frases sobre experiências que você já teve, com have ou has mais particípio."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "I have visited",
+      "ex": "I have visited three countries in Europe."
+     },
+     {
+      "w": "She has tried",
+      "ex": "She has tried Indian food many times."
+     },
+     {
+      "w": "been",
+      "ex": "I have been to Paris."
+     },
+     {
+      "w": "seen",
+      "ex": "We have seen that film twice."
+     },
+     {
+      "w": "eaten",
+      "ex": "Have you eaten sushi?"
+     },
+     {
+      "w": "done",
+      "ex": "He has done a lot of interesting jobs."
+     }
+    ],
+    "gram": "Present perfect: have/has + past participle for life experiences without a specific time: I have visited Japan."
+   }
+  },
+  {
+   "d": 96,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Ever and never",
+     "g": "Ask and answer about experiences with ever and never.",
+     "p": [
+      "Ask with ever: Have you ever been to Brazil? Has she ever ridden a horse?",
+      "Answer yes with I have, or say I've never... for no experience.",
+      "Never is already negative, so don't add not: I've never seen snow."
+     ],
+     "q": "Have you ever tried a food that surprised you? Tell me about it.",
+     "c": "Write five Have you ever...? questions and answer each with I have or I've never."
+    },
+    "de": {
+     "t": "Ever und never",
+     "g": "Du fragst und antwortest mit ever und never über Erfahrungen.",
+     "p": [
+      "Frag mit ever: Have you ever been to Brazil? Has she ever ridden a horse?",
+      "Antworte mit Yes, I have oder sag I've never... für keine Erfahrung.",
+      "Never ist schon verneint, also kein not dazu: I've never seen snow."
+     ],
+     "q": "Hast du je ein Essen probiert, das dich überrascht hat? Erzähl davon.",
+     "c": "Schreib fünf Have you ever...?-Fragen und beantworte jede mit I have oder I've never."
+    },
+    "es": {
+     "t": "Ever y never",
+     "g": "Pregunta y responde sobre experiencias con ever y never.",
+     "p": [
+      "Pregunta con ever: Have you ever been to Brazil? Has she ever ridden a horse?",
+      "Responde sí con Yes, I have o di I've never... si no lo has hecho.",
+      "Never ya es negativo, no añadas not: I've never seen snow."
+     ],
+     "q": "¿Has probado alguna vez una comida que te sorprendió? Cuéntamelo.",
+     "c": "Escribe cinco preguntas Have you ever...? y responde cada una con I have o I've never."
+    },
+    "fr": {
+     "t": "Ever et never",
+     "g": "Poser des questions et répondre sur ses expériences avec ever et never.",
+     "p": [
+      "Demande avec ever : Have you ever been to Brazil? Has she ever ridden a horse?",
+      "Réponds oui avec Yes, I have, ou dis I've never... si ce n'est jamais arrivé.",
+      "Never est déjà négatif, n'ajoute pas not : I've never seen snow."
+     ],
+     "q": "As-tu déjà goûté un plat qui t'a surpris ? Raconte-moi.",
+     "c": "Écris cinq questions Have you ever...? et réponds à chacune avec I have ou I've never."
+    },
+    "it": {
+     "t": "Ever e never",
+     "g": "Chiedi e rispondi sulle esperienze con ever e never.",
+     "p": [
+      "Chiedi con ever: Have you ever been to Brazil? Has she ever ridden a horse?",
+      "Rispondi sì con Yes, I have, oppure di' I've never... se non l'hai mai fatto.",
+      "Never è già negativo, non aggiungere not: I've never seen snow."
+     ],
+     "q": "Hai mai assaggiato un cibo che ti ha sorpreso? Raccontamelo.",
+     "c": "Scrivi cinque domande Have you ever...? e rispondi a ognuna con I have o I've never."
+    },
+    "pt": {
+     "t": "Ever e never",
+     "g": "Pergunta e responde sobre experiências com ever e never.",
+     "p": [
+      "Pergunta com ever: Have you ever been to Brazil? Has she ever ridden a horse?",
+      "Responde sim com Yes, I have ou diz I've never... se nunca fizeste.",
+      "Never já é negativo, não juntes not: I've never seen snow."
+     ],
+     "q": "Já provaste alguma comida que te surpreendeu? Conta-me.",
+     "c": "Escreve cinco perguntas Have you ever...? e responde a cada uma com I have ou I've never."
+    },
+    "pt_BR": {
+     "t": "Ever e never",
+     "g": "Pergunte e responda sobre experiências com ever e never.",
+     "p": [
+      "Pergunte com ever: Have you ever been to Brazil? Has she ever ridden a horse?",
+      "Responda sim com Yes, I have ou diga I've never... se nunca fez.",
+      "Never já é negativo, não coloque not: I've never seen snow."
+     ],
+     "q": "Você já provou uma comida que te surpreendeu? Me conte.",
+     "c": "Escreva cinco perguntas Have you ever...? e responda cada uma com I have ou I've never."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Have you ever...?",
+      "ex": "Have you ever been to Brazil?"
+     },
+     {
+      "w": "I've never...",
+      "ex": "I've never seen snow."
+     },
+     {
+      "w": "Yes, I have.",
+      "ex": "Have you ever flown? Yes, I have."
+     },
+     {
+      "w": "No, I haven't.",
+      "ex": "Have you ever surfed? No, I haven't."
+     },
+     {
+      "w": "ridden",
+      "ex": "She has never ridden a horse."
+     },
+     {
+      "w": "tried",
+      "ex": "Have you ever tried mango juice?"
+     }
+    ],
+    "gram": "Questions: Have you ever + past participle? Answers: Yes, I have / No, I haven't / I've never + participle (no not)."
+   }
+  },
+  {
+   "d": 97,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Present perfect vs past simple",
+     "g": "Choose between experience with no time and a finished, specific time.",
+     "p": [
+      "Present perfect for experience, no time given: I've been to Rome.",
+      "Past simple when you say when: I went there last May. It was beautiful.",
+      "A common pattern: ask with the present perfect, then give details in the past simple."
+     ],
+     "q": "Have you been to a concert? When did you go and who did you see?",
+     "c": "Write three mini dialogues: a Have you ever...? question, then details in the past simple."
+    },
+    "de": {
+     "t": "Present perfect oder past simple",
+     "g": "Du wählst zwischen Erfahrung ohne Zeitangabe und einem fertigen, genauen Zeitpunkt.",
+     "p": [
+      "Present perfect für Erfahrung ohne Zeit: I've been to Rome.",
+      "Past simple, wenn du sagst wann: I went there last May. It was beautiful.",
+      "Typisch: mit present perfect fragen, dann Details im past simple geben."
+     ],
+     "q": "Warst du schon mal auf einem Konzert? Wann warst du dort und wen hast du gesehen?",
+     "c": "Schreib drei Mini-Dialoge: eine Have you ever...?-Frage, dann Details im past simple."
+    },
+    "es": {
+     "t": "Present perfect o past simple",
+     "g": "Elige entre experiencia sin fecha y un momento pasado concreto y terminado.",
+     "p": [
+      "Present perfect para experiencias, sin fecha: I've been to Rome.",
+      "Past simple cuando dices cuándo: I went there last May. It was beautiful.",
+      "Un patrón típico: pregunta con present perfect y da detalles en past simple."
+     ],
+     "q": "¿Has ido a algún concierto? ¿Cuándo fuiste y a quién viste?",
+     "c": "Escribe tres mini diálogos: una pregunta Have you ever...? y luego detalles en past simple."
+    },
+    "fr": {
+     "t": "Present perfect ou past simple",
+     "g": "Choisir entre une expérience sans date et un moment passé précis et terminé.",
+     "p": [
+      "Present perfect pour l'expérience, sans date : I've been to Rome.",
+      "Past simple quand on dit quand : I went there last May. It was beautiful.",
+      "Schéma courant : on demande au present perfect, puis on détaille au past simple."
+     ],
+     "q": "Es-tu déjà allé à un concert ? Quand y es-tu allé et qui as-tu vu ?",
+     "c": "Écris trois mini-dialogues : une question Have you ever...?, puis des détails au past simple."
+    },
+    "it": {
+     "t": "Present perfect o past simple",
+     "g": "Scegli tra esperienza senza data e un momento passato preciso e concluso.",
+     "p": [
+      "Present perfect per l'esperienza, senza data: I've been to Rome.",
+      "Past simple quando dici quando: I went there last May. It was beautiful.",
+      "Schema tipico: chiedi con il present perfect, poi dai dettagli al past simple."
+     ],
+     "q": "Sei mai stato a un concerto? Quando ci sei andato e chi hai visto?",
+     "c": "Scrivi tre mini dialoghi: una domanda Have you ever...?, poi dettagli al past simple."
+    },
+    "pt": {
+     "t": "Present perfect ou past simple",
+     "g": "Escolhe entre experiência sem data e um momento passado concreto e terminado.",
+     "p": [
+      "Present perfect para experiências, sem data: I've been to Rome.",
+      "Past simple quando dizes quando: I went there last May. It was beautiful.",
+      "Padrão comum: pergunta com o present perfect e dá pormenores no past simple."
+     ],
+     "q": "Já foste a algum concerto? Quando foste e quem viste?",
+     "c": "Escreve três mini diálogos: uma pergunta Have you ever...? e depois pormenores no past simple."
+    },
+    "pt_BR": {
+     "t": "Present perfect ou past simple",
+     "g": "Escolha entre experiência sem data e um momento passado exato e terminado.",
+     "p": [
+      "Present perfect para experiências, sem data: I've been to Rome.",
+      "Past simple quando você diz quando: I went there last May. It was beautiful.",
+      "Padrão comum: pergunte com o present perfect e dê detalhes no past simple."
+     ],
+     "q": "Você já foi a algum show? Quando foi e quem você viu?",
+     "c": "Escreva três mini diálogos: uma pergunta Have you ever...? e depois detalhes no past simple."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "I've been to...",
+      "ex": "I've been to Rome twice."
+     },
+     {
+      "w": "I went...",
+      "ex": "I went there last May."
+     },
+     {
+      "w": "last May",
+      "ex": "We visited London last May."
+     },
+     {
+      "w": "in 2019",
+      "ex": "She moved to Lisbon in 2019."
+     },
+     {
+      "w": "When did you...?",
+      "ex": "When did you go there?"
+     },
+     {
+      "w": "It was...",
+      "ex": "It was a wonderful trip."
+     }
+    ],
+    "gram": "Present perfect = experience, no time (I've been to Rome). Past simple = finished time (I went in May). Wrong: I've been there last year."
+   }
+  },
+  {
+   "d": 98,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Just, already, yet",
+     "g": "Share recent news with just, already and yet.",
+     "p": [
+      "Just means a very short time ago: I've just eaten. She's just arrived.",
+      "Already means sooner than expected: I've already finished my homework!",
+      "Yet is for questions and negatives, at the end: Have you done it yet? Not yet."
+     ],
+     "q": "What have you just done before talking to me? And what haven't you done yet today?",
+     "c": "Write a to-do list for today and mark three things done already and two not done yet."
+    },
+    "de": {
+     "t": "Just, already, yet",
+     "g": "Du teilst Neuigkeiten mit just, already und yet.",
+     "p": [
+      "Just heißt gerade eben: I've just eaten. She's just arrived.",
+      "Already heißt schon, früher als erwartet: I've already finished my homework!",
+      "Yet steht in Fragen und Verneinungen am Ende: Have you done it yet? Not yet."
+     ],
+     "q": "Was hast du gerade gemacht, bevor du mit mir sprichst? Und was hast du heute noch nicht gemacht?",
+     "c": "Schreib eine To-do-Liste für heute: drei Dinge already erledigt, zwei not yet."
+    },
+    "es": {
+     "t": "Just, already, yet",
+     "g": "Cuenta novedades recientes con just, already y yet.",
+     "p": [
+      "Just significa hace muy poco: I've just eaten. She's just arrived.",
+      "Already significa ya, antes de lo esperado: I've already finished my homework!",
+      "Yet va en preguntas y negativas, al final: Have you done it yet? Not yet."
+     ],
+     "q": "¿Qué acabas de hacer antes de hablar conmigo? ¿Y qué no has hecho todavía hoy?",
+     "c": "Haz una lista de tareas de hoy: marca tres hechas already y dos que aún not yet."
+    },
+    "fr": {
+     "t": "Just, already, yet",
+     "g": "Annoncer des nouvelles récentes avec just, already et yet.",
+     "p": [
+      "Just veut dire il y a très peu de temps : I've just eaten. She's just arrived.",
+      "Already veut dire déjà, plus tôt que prévu : I've already finished my homework!",
+      "Yet s'emploie dans les questions et négations, à la fin : Have you done it yet? Not yet."
+     ],
+     "q": "Qu'est-ce que tu viens de faire avant de me parler ? Et qu'est-ce que tu n'as pas encore fait aujourd'hui ?",
+     "c": "Écris une liste de tâches du jour : trois déjà faites (already) et deux pas encore (not yet)."
+    },
+    "it": {
+     "t": "Just, already, yet",
+     "g": "Racconti novità recenti con just, already e yet.",
+     "p": [
+      "Just vuol dire poco fa: I've just eaten. She's just arrived.",
+      "Already vuol dire già, prima del previsto: I've already finished my homework!",
+      "Yet va nelle domande e nelle negative, alla fine: Have you done it yet? Not yet."
+     ],
+     "q": "Cosa hai appena fatto prima di parlare con me? E cosa non hai ancora fatto oggi?",
+     "c": "Scrivi una lista di cose da fare oggi: tre già fatte (already) e due non ancora (not yet)."
+    },
+    "pt": {
+     "t": "Just, already, yet",
+     "g": "Conta novidades recentes com just, already e yet.",
+     "p": [
+      "Just significa há muito pouco tempo: I've just eaten. She's just arrived.",
+      "Already significa já, mais cedo do que se esperava: I've already finished my homework!",
+      "Yet usa-se em perguntas e negativas, no fim: Have you done it yet? Not yet."
+     ],
+     "q": "O que acabaste de fazer antes de falar comigo? E o que ainda não fizeste hoje?",
+     "c": "Faz uma lista de tarefas de hoje: três já feitas (already) e duas ainda não (not yet)."
+    },
+    "pt_BR": {
+     "t": "Just, already, yet",
+     "g": "Conte novidades recentes com just, already e yet.",
+     "p": [
+      "Just significa agora há pouco: I've just eaten. She's just arrived.",
+      "Already significa já, antes do esperado: I've already finished my homework!",
+      "Yet aparece em perguntas e negativas, no final: Have you done it yet? Not yet."
+     ],
+     "q": "O que você acabou de fazer antes de falar comigo? E o que ainda não fez hoje?",
+     "c": "Faça uma lista de tarefas de hoje: três já feitas (already) e duas ainda não (not yet)."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "just",
+      "ex": "I've just finished my lunch."
+     },
+     {
+      "w": "already",
+      "ex": "She's already booked the tickets."
+     },
+     {
+      "w": "yet",
+      "ex": "Have you called him yet?"
+     },
+     {
+      "w": "Not yet.",
+      "ex": "Have you seen the new film? Not yet."
+     },
+     {
+      "w": "just arrived",
+      "ex": "The train has just arrived."
+     },
+     {
+      "w": "haven't... yet",
+      "ex": "I haven't packed my bag yet."
+     }
+    ],
+    "gram": "Present perfect + just (very recent), already (sooner than expected, mid-position), yet (questions/negatives, at the end)."
+   }
+  },
+  {
+   "d": 99,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "For and since",
+     "g": "Say how long something has lasted with for and since.",
+     "p": [
+      "Ask: How long have you lived here? Answer with the present perfect.",
+      "For plus a period of time: for three years, for two weeks, for a long time.",
+      "Since plus a starting point: since 2020, since Monday, since I was a child."
+     ],
+     "q": "How long have you studied English? Answer with for and with since.",
+     "c": "Write five true sentences about your life with for or since: home, work, friends, hobbies."
+    },
+    "de": {
+     "t": "For und since",
+     "g": "Du sagst mit for und since, wie lange etwas schon dauert.",
+     "p": [
+      "Frag: How long have you lived here? Antworte im present perfect.",
+      "For plus Zeitraum: for three years, for two weeks, for a long time.",
+      "Since plus Startpunkt: since 2020, since Monday, since I was a child."
+     ],
+     "q": "Wie lange lernst du schon Englisch? Antworte einmal mit for und einmal mit since.",
+     "c": "Schreib fünf wahre Sätze über dein Leben mit for oder since: Zuhause, Arbeit, Freunde, Hobbys."
+    },
+    "es": {
+     "t": "For y since",
+     "g": "Di cuánto tiempo dura algo con for y since.",
+     "p": [
+      "Pregunta: How long have you lived here? Responde con el present perfect.",
+      "For más un periodo: for three years, for two weeks, for a long time.",
+      "Since más un punto de inicio: since 2020, since Monday, since I was a child."
+     ],
+     "q": "¿Cuánto tiempo llevas estudiando inglés? Responde con for y con since.",
+     "c": "Escribe cinco frases verdaderas sobre tu vida con for o since: casa, trabajo, amigos, aficiones."
+    },
+    "fr": {
+     "t": "For et since",
+     "g": "Dire depuis combien de temps avec for et since.",
+     "p": [
+      "Demande : How long have you lived here? Réponds au present perfect.",
+      "For plus une durée : for three years, for two weeks, for a long time.",
+      "Since plus un point de départ : since 2020, since Monday, since I was a child."
+     ],
+     "q": "Depuis combien de temps étudies-tu l'anglais ? Réponds avec for et avec since.",
+     "c": "Écris cinq phrases vraies sur ta vie avec for ou since : maison, travail, amis, loisirs."
+    },
+    "it": {
+     "t": "For e since",
+     "g": "Dici da quanto tempo dura qualcosa con for e since.",
+     "p": [
+      "Chiedi: How long have you lived here? Rispondi con il present perfect.",
+      "For più un periodo: for three years, for two weeks, for a long time.",
+      "Since più un punto di partenza: since 2020, since Monday, since I was a child."
+     ],
+     "q": "Da quanto tempo studi inglese? Rispondi con for e con since.",
+     "c": "Scrivi cinque frasi vere sulla tua vita con for o since: casa, lavoro, amici, hobby."
+    },
+    "pt": {
+     "t": "For e since",
+     "g": "Diz há quanto tempo algo dura com for e since.",
+     "p": [
+      "Pergunta: How long have you lived here? Responde com o present perfect.",
+      "For mais um período: for three years, for two weeks, for a long time.",
+      "Since mais um ponto de partida: since 2020, since Monday, since I was a child."
+     ],
+     "q": "Há quanto tempo estudas inglês? Responde com for e com since.",
+     "c": "Escreve cinco frases verdadeiras sobre a tua vida com for ou since: casa, trabalho, amigos, passatempos."
+    },
+    "pt_BR": {
+     "t": "For e since",
+     "g": "Diga há quanto tempo algo dura com for e since.",
+     "p": [
+      "Pergunte: How long have you lived here? Responda com o present perfect.",
+      "For mais um período: for three years, for two weeks, for a long time.",
+      "Since mais um ponto de partida: since 2020, since Monday, since I was a child."
+     ],
+     "q": "Há quanto tempo você estuda inglês? Responda com for e com since.",
+     "c": "Escreva cinco frases verdadeiras sobre sua vida com for ou since: casa, trabalho, amigos, hobbies."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "How long have you...?",
+      "ex": "How long have you lived here?"
+     },
+     {
+      "w": "for three years",
+      "ex": "I've lived here for three years."
+     },
+     {
+      "w": "for a long time",
+      "ex": "We've known each other for a long time."
+     },
+     {
+      "w": "since 2020",
+      "ex": "She has worked here since 2020."
+     },
+     {
+      "w": "since Monday",
+      "ex": "It has rained since Monday."
+     },
+     {
+      "w": "since I was a child",
+      "ex": "I've loved music since I was a child."
+     }
+    ],
+    "gram": "How long + present perfect? for + period (for two years), since + starting point (since 2020, since Monday)."
+   }
+  },
+  {
+   "d": 100,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Travel experiences",
+     "g": "Talk about places you've visited and things you've tried.",
+     "p": [
+      "Open with the present perfect: I've been to Greece. I've tried octopus.",
+      "Give details in the past simple: I went there two years ago and stayed by the sea.",
+      "Add opinions: It was amazing, the food was delicious, I'd love to go back."
+     ],
+     "q": "What's the most interesting place you've been to? What did you do there?",
+     "c": "Write a short travel story: one place, when you went, what you did and how it was."
+    },
+    "de": {
+     "t": "Reiseerfahrungen",
+     "g": "Du sprichst über Orte, die du besucht, und Dinge, die du probiert hast.",
+     "p": [
+      "Beginne mit dem present perfect: I've been to Greece. I've tried octopus.",
+      "Details im past simple: I went there two years ago and stayed by the sea.",
+      "Füg Meinungen hinzu: It was amazing, the food was delicious, I'd love to go back."
+     ],
+     "q": "Was ist der interessanteste Ort, an dem du warst? Was hast du dort gemacht?",
+     "c": "Schreib eine kurze Reisegeschichte: ein Ort, wann, was du gemacht hast und wie es war."
+    },
+    "es": {
+     "t": "Experiencias de viaje",
+     "g": "Habla de lugares que has visitado y cosas que has probado.",
+     "p": [
+      "Empieza con el present perfect: I've been to Greece. I've tried octopus.",
+      "Da detalles en past simple: I went there two years ago and stayed by the sea.",
+      "Añade opiniones: It was amazing, the food was delicious, I'd love to go back."
+     ],
+     "q": "¿Cuál es el lugar más interesante en el que has estado? ¿Qué hiciste allí?",
+     "c": "Escribe un breve relato de viaje: un lugar, cuándo fuiste, qué hiciste y qué tal fue."
+    },
+    "fr": {
+     "t": "Expériences de voyage",
+     "g": "Parler des lieux visités et des choses que tu as essayées.",
+     "p": [
+      "Commence au present perfect : I've been to Greece. I've tried octopus.",
+      "Donne les détails au past simple : I went there two years ago and stayed by the sea.",
+      "Ajoute ton avis : It was amazing, the food was delicious, I'd love to go back."
+     ],
+     "q": "Quel est l'endroit le plus intéressant où tu es allé ? Qu'as-tu fait là-bas ?",
+     "c": "Écris un court récit de voyage : un lieu, quand, ce que tu as fait et comment c'était."
+    },
+    "it": {
+     "t": "Esperienze di viaggio",
+     "g": "Parli dei posti che hai visitato e delle cose che hai provato.",
+     "p": [
+      "Comincia con il present perfect: I've been to Greece. I've tried octopus.",
+      "Dai i dettagli al past simple: I went there two years ago and stayed by the sea.",
+      "Aggiungi opinioni: It was amazing, the food was delicious, I'd love to go back."
+     ],
+     "q": "Qual è il posto più interessante in cui sei stato? Cosa hai fatto lì?",
+     "c": "Scrivi un breve racconto di viaggio: un posto, quando, cosa hai fatto e com'è stato."
+    },
+    "pt": {
+     "t": "Experiências de viagem",
+     "g": "Fala de sítios que visitaste e coisas que experimentaste.",
+     "p": [
+      "Começa com o present perfect: I've been to Greece. I've tried octopus.",
+      "Dá pormenores no past simple: I went there two years ago and stayed by the sea.",
+      "Junta opiniões: It was amazing, the food was delicious, I'd love to go back."
+     ],
+     "q": "Qual é o sítio mais interessante onde já estiveste? O que fizeste lá?",
+     "c": "Escreve uma pequena história de viagem: um sítio, quando foste, o que fizeste e como foi."
+    },
+    "pt_BR": {
+     "t": "Experiências de viagem",
+     "g": "Fale de lugares que você visitou e coisas que experimentou.",
+     "p": [
+      "Comece com o present perfect: I've been to Greece. I've tried octopus.",
+      "Dê detalhes no past simple: I went there two years ago and stayed by the sea.",
+      "Acrescente opiniões: It was amazing, the food was delicious, I'd love to go back."
+     ],
+     "q": "Qual é o lugar mais interessante onde você já esteve? O que fez lá?",
+     "c": "Escreva uma pequena história de viagem: um lugar, quando foi, o que fez e como foi."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "I've been to...",
+      "ex": "I've been to Greece and Turkey."
+     },
+     {
+      "w": "I've tried...",
+      "ex": "I've tried octopus, and I loved it!"
+     },
+     {
+      "w": "stayed",
+      "ex": "We stayed in a small hotel by the sea."
+     },
+     {
+      "w": "the local food",
+      "ex": "The local food was delicious."
+     },
+     {
+      "w": "I'd love to go back.",
+      "ex": "It was amazing. I'd love to go back."
+     },
+     {
+      "w": "a trip",
+      "ex": "It was my first trip abroad."
+     }
+    ],
+    "gram": "Travel talk: present perfect to introduce (I've been to...), past simple for details (I went in June, it was great)."
+   }
+  }
+ ]
+}

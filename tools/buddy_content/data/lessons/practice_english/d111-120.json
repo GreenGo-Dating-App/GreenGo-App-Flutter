@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 111,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Adverbs of manner: quickly, well",
+     "g": "Describe how people do things with adverbs of manner.",
+     "p": [
+      "Most adverbs add -ly to the adjective: quick becomes quickly, careful becomes carefully.",
+      "Some are irregular: good becomes well, fast stays fast, hard stays hard.",
+      "Adverbs usually go after the verb or object: She speaks English slowly."
+     ],
+     "q": "How do you do things? Tell me something you do well and something you do slowly.",
+     "c": "Describe five people you know with adverbs: how they talk, drive, cook, sing or work."
+    },
+    "de": {
+     "t": "Adverbien der Art: quickly, well",
+     "g": "Du beschreibst mit Adverbien, wie Menschen etwas tun.",
+     "p": [
+      "Die meisten Adverbien hängen -ly an das Adjektiv: quick wird quickly, careful wird carefully.",
+      "Manche sind unregelmäßig: good wird well, fast bleibt fast, hard bleibt hard.",
+      "Adverbien stehen meist nach Verb oder Objekt: She speaks English slowly."
+     ],
+     "q": "Wie machst du Dinge? Nenn mir etwas, das du gut, und etwas, das du langsam machst.",
+     "c": "Beschreib fünf Menschen mit Adverbien: wie sie sprechen, fahren, kochen, singen oder arbeiten."
+    },
+    "es": {
+     "t": "Adverbios de modo: quickly, well",
+     "g": "Describe cómo hace la gente las cosas con adverbios de modo.",
+     "p": [
+      "Casi todos añaden -ly al adjetivo: quick pasa a quickly, careful a carefully.",
+      "Algunos son irregulares: good pasa a well, fast sigue fast, hard sigue hard.",
+      "Suelen ir después del verbo o del complemento: She speaks English slowly."
+     ],
+     "q": "¿Cómo haces las cosas? Dime algo que haces bien y algo que haces despacio.",
+     "c": "Describe a cinco personas con adverbios: cómo hablan, conducen, cocinan, cantan o trabajan."
+    },
+    "fr": {
+     "t": "Adverbes de manière : quickly, well",
+     "g": "Décrire comment les gens font les choses avec les adverbes de manière.",
+     "p": [
+      "La plupart ajoutent -ly à l'adjectif : quick devient quickly, careful devient carefully.",
+      "Certains sont irréguliers : good devient well, fast reste fast, hard reste hard.",
+      "L'adverbe se place souvent après le verbe ou le complément : She speaks English slowly."
+     ],
+     "q": "Comment fais-tu les choses ? Dis-moi une chose que tu fais bien et une que tu fais lentement.",
+     "c": "Décris cinq personnes avec des adverbes : comment elles parlent, conduisent, cuisinent, chantent ou travaillent."
+    },
+    "it": {
+     "t": "Avverbi di modo: quickly, well",
+     "g": "Descrivi come le persone fanno le cose con gli avverbi di modo.",
+     "p": [
+      "Quasi tutti aggiungono -ly all'aggettivo: quick diventa quickly, careful diventa carefully.",
+      "Alcuni sono irregolari: good diventa well, fast resta fast, hard resta hard.",
+      "Di solito vanno dopo il verbo o il complemento: She speaks English slowly."
+     ],
+     "q": "Come fai le cose? Dimmi una cosa che fai bene e una che fai lentamente.",
+     "c": "Descrivi cinque persone con gli avverbi: come parlano, guidano, cucinano, cantano o lavorano."
+    },
+    "pt": {
+     "t": "Advérbios de modo: quickly, well",
+     "g": "Descreve como as pessoas fazem as coisas com advérbios de modo.",
+     "p": [
+      "A maioria junta -ly ao adjetivo: quick fica quickly, careful fica carefully.",
+      "Alguns são irregulares: good fica well, fast fica fast, hard fica hard.",
+      "Costumam vir depois do verbo ou do complemento: She speaks English slowly."
+     ],
+     "q": "Como fazes as coisas? Diz-me algo que fazes bem e algo que fazes devagar.",
+     "c": "Descreve cinco pessoas com advérbios: como falam, conduzem, cozinham, cantam ou trabalham."
+    },
+    "pt_BR": {
+     "t": "Advérbios de modo: quickly, well",
+     "g": "Descreva como as pessoas fazem as coisas com advérbios de modo.",
+     "p": [
+      "A maioria ganha -ly no adjetivo: quick vira quickly, careful vira carefully.",
+      "Alguns são irregulares: good vira well, fast continua fast, hard continua hard.",
+      "Costumam vir depois do verbo ou do complemento: She speaks English slowly."
+     ],
+     "q": "Como você faz as coisas? Me diga algo que faz bem e algo que faz devagar.",
+     "c": "Descreva cinco pessoas com advérbios: como falam, dirigem, cozinham, cantam ou trabalham."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "quickly",
+      "ex": "He finished his lunch quickly."
+     },
+     {
+      "w": "slowly",
+      "ex": "Can you speak more slowly, please?"
+     },
+     {
+      "w": "carefully",
+      "ex": "Drive carefully, the road is wet."
+     },
+     {
+      "w": "well",
+      "ex": "She plays the piano very well."
+     },
+     {
+      "w": "fast",
+      "ex": "My brother runs really fast."
+     },
+     {
+      "w": "hard",
+      "ex": "They work hard every day."
+     }
+    ],
+    "gram": "Adverbs of manner: adjective + -ly (slow-slowly). Irregular: good-well, fast-fast, hard-hard. Position: after the verb/object."
+   }
+  },
+  {
+   "d": 112,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Too and enough",
+     "g": "Say when something is more or less than you need.",
+     "p": [
+      "Too plus adjective means more than you want: It's too expensive. It's too cold.",
+      "Adjective plus enough means sufficient: I'm not old enough. Is it warm enough?",
+      "Enough plus noun: We don't have enough time. There are enough chairs."
+     ],
+     "q": "Think of something you didn't buy or do. Was it too expensive, or were you not ready enough?",
+     "c": "Write six sentences about your life now, three with too and three with enough."
+    },
+    "de": {
+     "t": "Too und enough",
+     "g": "Du sagst, wann etwas mehr oder weniger ist als nötig.",
+     "p": [
+      "Too plus Adjektiv heißt zu viel: It's too expensive. It's too cold.",
+      "Adjektiv plus enough heißt genug: I'm not old enough. Is it warm enough?",
+      "Enough plus Nomen: We don't have enough time. There are enough chairs."
+     ],
+     "q": "Denk an etwas, das du nicht gekauft oder gemacht hast. War es too expensive oder warst du nicht bereit genug?",
+     "c": "Schreib sechs Sätze über dein Leben jetzt, drei mit too und drei mit enough."
+    },
+    "es": {
+     "t": "Too y enough",
+     "g": "Di cuándo algo es más o menos de lo que necesitas.",
+     "p": [
+      "Too más adjetivo significa demasiado: It's too expensive. It's too cold.",
+      "Adjetivo más enough significa suficiente: I'm not old enough. Is it warm enough?",
+      "Enough más sustantivo: We don't have enough time. There are enough chairs."
+     ],
+     "q": "Piensa en algo que no compraste o no hiciste. ¿Era too expensive o no estabas listo?",
+     "c": "Escribe seis frases sobre tu vida ahora, tres con too y tres con enough."
+    },
+    "fr": {
+     "t": "Too et enough",
+     "g": "Dire quand quelque chose est trop ou pas assez.",
+     "p": [
+      "Too plus adjectif veut dire trop : It's too expensive. It's too cold.",
+      "Adjectif plus enough veut dire assez : I'm not old enough. Is it warm enough?",
+      "Enough plus nom : We don't have enough time. There are enough chairs."
+     ],
+     "q": "Pense à une chose que tu n'as pas achetée ou faite. C'était too expensive, ou tu n'étais pas prêt ?",
+     "c": "Écris six phrases sur ta vie actuelle, trois avec too et trois avec enough."
+    },
+    "it": {
+     "t": "Too e enough",
+     "g": "Dici quando qualcosa è più o meno di quanto serve.",
+     "p": [
+      "Too più aggettivo vuol dire troppo: It's too expensive. It's too cold.",
+      "Aggettivo più enough vuol dire abbastanza: I'm not old enough. Is it warm enough?",
+      "Enough più nome: We don't have enough time. There are enough chairs."
+     ],
+     "q": "Pensa a qualcosa che non hai comprato o fatto. Era too expensive o non eri pronto?",
+     "c": "Scrivi sei frasi sulla tua vita di adesso, tre con too e tre con enough."
+    },
+    "pt": {
+     "t": "Too e enough",
+     "g": "Diz quando algo é mais ou menos do que precisas.",
+     "p": [
+      "Too mais adjetivo significa demasiado: It's too expensive. It's too cold.",
+      "Adjetivo mais enough significa suficiente: I'm not old enough. Is it warm enough?",
+      "Enough mais nome: We don't have enough time. There are enough chairs."
+     ],
+     "q": "Pensa em algo que não compraste ou não fizeste. Era too expensive ou não estavas preparado?",
+     "c": "Escreve seis frases sobre a tua vida agora, três com too e três com enough."
+    },
+    "pt_BR": {
+     "t": "Too e enough",
+     "g": "Diga quando algo é mais ou menos do que você precisa.",
+     "p": [
+      "Too mais adjetivo significa demais: It's too expensive. It's too cold.",
+      "Adjetivo mais enough significa suficiente: I'm not old enough. Is it warm enough?",
+      "Enough mais substantivo: We don't have enough time. There are enough chairs."
+     ],
+     "q": "Pense em algo que você não comprou ou não fez. Era too expensive ou você não estava pronto?",
+     "c": "Escreva seis frases sobre sua vida agora, três com too e três com enough."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "too expensive",
+      "ex": "This phone is too expensive for me."
+     },
+     {
+      "w": "too cold",
+      "ex": "It's too cold to swim today."
+     },
+     {
+      "w": "old enough",
+      "ex": "She isn't old enough to drive."
+     },
+     {
+      "w": "big enough",
+      "ex": "Is this bag big enough?"
+     },
+     {
+      "w": "enough time",
+      "ex": "We don't have enough time for lunch."
+     },
+     {
+      "w": "too much",
+      "ex": "I ate too much cake!"
+     }
+    ],
+    "gram": "too + adjective (too hot = more than OK), adjective + enough (warm enough), enough + noun (enough money)."
+   }
+  },
+  {
+   "d": 113,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Quantifiers: a lot of, a few, a little",
+     "g": "Talk about amounts naturally with common quantifiers.",
+     "p": [
+      "A lot of works with everything: a lot of friends, a lot of time.",
+      "Many and a few go with countable nouns: many books, a few people.",
+      "Much and a little go with uncountable nouns: much money (in questions and negatives), a little sugar."
+     ],
+     "q": "How much free time do you have during the week? A lot, a little or not much?",
+     "c": "Describe your kitchen or bag in six sentences with a lot of, a few, a little, much and many."
+    },
+    "de": {
+     "t": "Mengenwörter: a lot of, a few, a little",
+     "g": "Du sprichst natürlich über Mengen mit häufigen Mengenwörtern.",
+     "p": [
+      "A lot of passt zu allem: a lot of friends, a lot of time.",
+      "Many und a few stehen bei zählbaren Nomen: many books, a few people.",
+      "Much und a little bei unzählbaren: much money (in Fragen und Verneinungen), a little sugar."
+     ],
+     "q": "Wie viel Freizeit hast du unter der Woche? A lot, a little oder not much?",
+     "c": "Beschreib deine Küche oder Tasche in sechs Sätzen mit a lot of, a few, a little, much und many."
+    },
+    "es": {
+     "t": "Cuantificadores: a lot of, a few, a little",
+     "g": "Habla de cantidades con naturalidad usando cuantificadores comunes.",
+     "p": [
+      "A lot of vale para todo: a lot of friends, a lot of time.",
+      "Many y a few van con contables: many books, a few people.",
+      "Much y a little van con incontables: much money (en preguntas y negativas), a little sugar."
+     ],
+     "q": "¿Cuánto tiempo libre tienes entre semana? ¿A lot, a little o not much?",
+     "c": "Describe tu cocina o tu bolso en seis frases con a lot of, a few, a little, much y many."
+    },
+    "fr": {
+     "t": "Quantifieurs : a lot of, a few, a little",
+     "g": "Parler naturellement des quantités avec les quantifieurs courants.",
+     "p": [
+      "A lot of va avec tout : a lot of friends, a lot of time.",
+      "Many et a few vont avec les noms dénombrables : many books, a few people.",
+      "Much et a little avec les indénombrables : much money (questions et négations), a little sugar."
+     ],
+     "q": "Combien de temps libre as-tu en semaine ? A lot, a little ou not much ?",
+     "c": "Décris ta cuisine ou ton sac en six phrases avec a lot of, a few, a little, much et many."
+    },
+    "it": {
+     "t": "Quantificatori: a lot of, a few, a little",
+     "g": "Parli di quantità in modo naturale con i quantificatori più comuni.",
+     "p": [
+      "A lot of va bene con tutto: a lot of friends, a lot of time.",
+      "Many e a few vanno con i numerabili: many books, a few people.",
+      "Much e a little con i non numerabili: much money (domande e negative), a little sugar."
+     ],
+     "q": "Quanto tempo libero hai durante la settimana? A lot, a little o not much?",
+     "c": "Descrivi la tua cucina o la tua borsa in sei frasi con a lot of, a few, a little, much e many."
+    },
+    "pt": {
+     "t": "Quantificadores: a lot of, a few, a little",
+     "g": "Fala de quantidades com naturalidade usando quantificadores comuns.",
+     "p": [
+      "A lot of serve para tudo: a lot of friends, a lot of time.",
+      "Many e a few vão com contáveis: many books, a few people.",
+      "Much e a little vão com incontáveis: much money (em perguntas e negativas), a little sugar."
+     ],
+     "q": "Quanto tempo livre tens durante a semana? A lot, a little ou not much?",
+     "c": "Descreve a tua cozinha ou a tua mala em seis frases com a lot of, a few, a little, much e many."
+    },
+    "pt_BR": {
+     "t": "Quantificadores: a lot of, a few, a little",
+     "g": "Fale de quantidades com naturalidade usando quantificadores comuns.",
+     "p": [
+      "A lot of serve para tudo: a lot of friends, a lot of time.",
+      "Many e a few vão com contáveis: many books, a few people.",
+      "Much e a little vão com incontáveis: much money (em perguntas e negativas), a little sugar."
+     ],
+     "q": "Quanto tempo livre você tem durante a semana? A lot, a little ou not much?",
+     "c": "Descreva sua cozinha ou sua bolsa em seis frases com a lot of, a few, a little, much e many."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "a lot of",
+      "ex": "I have a lot of friends in this city."
+     },
+     {
+      "w": "many",
+      "ex": "There aren't many shops in my village."
+     },
+     {
+      "w": "much",
+      "ex": "I don't have much time today."
+     },
+     {
+      "w": "a few",
+      "ex": "I invited a few friends for dinner."
+     },
+     {
+      "w": "a little",
+      "ex": "Can I have a little milk in my tea?"
+     },
+     {
+      "w": "How much...?",
+      "ex": "How much water do you drink a day?"
+     }
+    ],
+    "gram": "Countable: many, a few (many books). Uncountable: much, a little (a little sugar). Both: a lot of. Much is common in questions/negatives."
+   }
+  },
+  {
+   "d": 114,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Something, anyone, nowhere",
+     "g": "Use some-, any-, no- and every- words for people, things and places.",
+     "p": [
+      "Some- in positive sentences: I saw someone. I want something to eat.",
+      "Any- in questions and negatives: Is anybody there? I didn't go anywhere.",
+      "No- already means not: Nobody called. Every- means all: Everyone is here."
+     ],
+     "q": "Did you do anything special yesterday, or did you go nowhere at all?",
+     "c": "Write six sentences about your weekend, each with a different some-, any-, no- or every- word."
+    },
+    "de": {
+     "t": "Something, anyone, nowhere",
+     "g": "Du nutzt Wörter mit some-, any-, no- und every- für Personen, Dinge und Orte.",
+     "p": [
+      "Some- in bejahten Sätzen: I saw someone. I want something to eat.",
+      "Any- in Fragen und Verneinungen: Is anybody there? I didn't go anywhere.",
+      "No- ist schon verneint: Nobody called. Every- heißt alle: Everyone is here."
+     ],
+     "q": "Hast du gestern etwas Besonderes gemacht, oder warst du nirgendwo?",
+     "c": "Schreib sechs Sätze über dein Wochenende, jeder mit einem anderen some-, any-, no- oder every-Wort."
+    },
+    "es": {
+     "t": "Something, anyone, nowhere",
+     "g": "Usa palabras con some-, any-, no- y every- para personas, cosas y lugares.",
+     "p": [
+      "Some- en frases afirmativas: I saw someone. I want something to eat.",
+      "Any- en preguntas y negativas: Is anybody there? I didn't go anywhere.",
+      "No- ya es negativo: Nobody called. Every- significa todos: Everyone is here."
+     ],
+     "q": "¿Hiciste algo especial ayer o no fuiste a ningún sitio?",
+     "c": "Escribe seis frases sobre tu fin de semana, cada una con una palabra distinta de some-, any-, no- o every-."
+    },
+    "fr": {
+     "t": "Something, anyone, nowhere",
+     "g": "Utiliser les mots en some-, any-, no- et every- pour les personnes, choses et lieux.",
+     "p": [
+      "Some- dans les phrases affirmatives : I saw someone. I want something to eat.",
+      "Any- dans les questions et négations : Is anybody there? I didn't go anywhere.",
+      "No- est déjà négatif : Nobody called. Every- veut dire tous : Everyone is here."
+     ],
+     "q": "As-tu fait quelque chose de spécial hier, ou tu n'es allé nulle part ?",
+     "c": "Écris six phrases sur ton week-end, chacune avec un mot différent en some-, any-, no- ou every-."
+    },
+    "it": {
+     "t": "Something, anyone, nowhere",
+     "g": "Usi le parole con some-, any-, no- ed every- per persone, cose e luoghi.",
+     "p": [
+      "Some- nelle frasi affermative: I saw someone. I want something to eat.",
+      "Any- nelle domande e nelle negative: Is anybody there? I didn't go anywhere.",
+      "No- è già negativo: Nobody called. Every- vuol dire tutti: Everyone is here."
+     ],
+     "q": "Ieri hai fatto qualcosa di speciale o non sei andato da nessuna parte?",
+     "c": "Scrivi sei frasi sul tuo weekend, ognuna con una parola diversa in some-, any-, no- o every-."
+    },
+    "pt": {
+     "t": "Something, anyone, nowhere",
+     "g": "Usa palavras com some-, any-, no- e every- para pessoas, coisas e lugares.",
+     "p": [
+      "Some- em frases afirmativas: I saw someone. I want something to eat.",
+      "Any- em perguntas e negativas: Is anybody there? I didn't go anywhere.",
+      "No- já é negativo: Nobody called. Every- quer dizer todos: Everyone is here."
+     ],
+     "q": "Fizeste alguma coisa especial ontem ou não foste a lado nenhum?",
+     "c": "Escreve seis frases sobre o teu fim de semana, cada uma com uma palavra diferente em some-, any-, no- ou every-."
+    },
+    "pt_BR": {
+     "t": "Something, anyone, nowhere",
+     "g": "Use palavras com some-, any-, no- e every- para pessoas, coisas e lugares.",
+     "p": [
+      "Some- em frases afirmativas: I saw someone. I want something to eat.",
+      "Any- em perguntas e negativas: Is anybody there? I didn't go anywhere.",
+      "No- já é negativo: Nobody called. Every- significa todos: Everyone is here."
+     ],
+     "q": "Você fez alguma coisa especial ontem ou não foi a lugar nenhum?",
+     "c": "Escreva seis frases sobre seu fim de semana, cada uma com uma palavra diferente em some-, any-, no- ou every-."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "someone",
+      "ex": "Someone is at the door."
+     },
+     {
+      "w": "something",
+      "ex": "I'd like something to drink."
+     },
+     {
+      "w": "anybody",
+      "ex": "Is anybody free on Saturday?"
+     },
+     {
+      "w": "anywhere",
+      "ex": "I didn't go anywhere last night."
+     },
+     {
+      "w": "nobody",
+      "ex": "Nobody answered the phone."
+     },
+     {
+      "w": "everyone",
+      "ex": "Everyone loved the cake."
+     }
+    ],
+    "gram": "some- (positive), any- (questions/negatives), no- (already negative: Nobody came), every- (all). + -one/-body, -thing, -where."
+   }
+  },
+  {
+   "d": 115,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Phrasal verbs: get up, turn on",
+     "g": "Learn your first everyday phrasal verbs.",
+     "p": [
+      "A phrasal verb is a verb plus a small word, with a new meaning: get up, wake up.",
+      "Turn on and turn off are for lights and machines: Turn off the TV, please.",
+      "Put on is for clothes: Put on your coat. Its opposite is take off."
+     ],
+     "q": "Tell me your morning routine using wake up, get up, turn on and put on.",
+     "c": "Write your morning in six steps, each with a phrasal verb, and say it aloud."
+    },
+    "de": {
+     "t": "Phrasal verbs: get up, turn on",
+     "g": "Du lernst deine ersten alltäglichen phrasal verbs.",
+     "p": [
+      "Ein phrasal verb ist Verb plus kleines Wort mit neuer Bedeutung: get up, wake up.",
+      "Turn on und turn off für Licht und Geräte: Turn off the TV, please.",
+      "Put on für Kleidung: Put on your coat. Das Gegenteil ist take off."
+     ],
+     "q": "Erzähl mir deine Morgenroutine mit wake up, get up, turn on und put on.",
+     "c": "Schreib deinen Morgen in sechs Schritten, jeder mit einem phrasal verb, und sprich ihn laut."
+    },
+    "es": {
+     "t": "Phrasal verbs: get up, turn on",
+     "g": "Aprende tus primeros phrasal verbs del día a día.",
+     "p": [
+      "Un phrasal verb es verbo más una palabrita, con un significado nuevo: get up, wake up.",
+      "Turn on y turn off sirven para luces y aparatos: Turn off the TV, please.",
+      "Put on es para la ropa: Put on your coat. Lo contrario es take off."
+     ],
+     "q": "Cuéntame tu rutina de la mañana con wake up, get up, turn on y put on.",
+     "c": "Escribe tu mañana en seis pasos, cada uno con un phrasal verb, y dilo en voz alta."
+    },
+    "fr": {
+     "t": "Phrasal verbs : get up, turn on",
+     "g": "Apprendre tes premiers phrasal verbs du quotidien.",
+     "p": [
+      "Un phrasal verb, c'est un verbe plus un petit mot, avec un sens nouveau : get up, wake up.",
+      "Turn on et turn off pour la lumière et les appareils : Turn off the TV, please.",
+      "Put on pour les vêtements : Put on your coat. Le contraire, c'est take off."
+     ],
+     "q": "Raconte-moi ta routine du matin avec wake up, get up, turn on et put on.",
+     "c": "Écris ta matinée en six étapes, chacune avec un phrasal verb, et dis-la à voix haute."
+    },
+    "it": {
+     "t": "Phrasal verbs: get up, turn on",
+     "g": "Impari i tuoi primi phrasal verbs di tutti i giorni.",
+     "p": [
+      "Un phrasal verb è verbo più una piccola parola, con un nuovo significato: get up, wake up.",
+      "Turn on e turn off per luci e apparecchi: Turn off the TV, please.",
+      "Put on è per i vestiti: Put on your coat. Il contrario è take off."
+     ],
+     "q": "Raccontami la tua routine del mattino con wake up, get up, turn on e put on.",
+     "c": "Scrivi la tua mattina in sei passi, ognuno con un phrasal verb, e dilla ad alta voce."
+    },
+    "pt": {
+     "t": "Phrasal verbs: get up, turn on",
+     "g": "Aprende os teus primeiros phrasal verbs do dia a dia.",
+     "p": [
+      "Um phrasal verb é verbo mais uma palavrinha, com um sentido novo: get up, wake up.",
+      "Turn on e turn off servem para luzes e aparelhos: Turn off the TV, please.",
+      "Put on é para a roupa: Put on your coat. O contrário é take off."
+     ],
+     "q": "Conta-me a tua rotina da manhã com wake up, get up, turn on e put on.",
+     "c": "Escreve a tua manhã em seis passos, cada um com um phrasal verb, e diz em voz alta."
+    },
+    "pt_BR": {
+     "t": "Phrasal verbs: get up, turn on",
+     "g": "Aprenda seus primeiros phrasal verbs do dia a dia.",
+     "p": [
+      "Um phrasal verb é verbo mais uma palavrinha, com um sentido novo: get up, wake up.",
+      "Turn on e turn off servem para luzes e aparelhos: Turn off the TV, please.",
+      "Put on é para roupa: Put on your coat. O contrário é take off."
+     ],
+     "q": "Me conte sua rotina da manhã com wake up, get up, turn on e put on.",
+     "c": "Escreva sua manhã em seis passos, cada um com um phrasal verb, e fale em voz alta."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "wake up",
+      "ex": "I wake up at seven every day."
+     },
+     {
+      "w": "get up",
+      "ex": "I get up ten minutes later."
+     },
+     {
+      "w": "turn on",
+      "ex": "I turn on the radio in the kitchen."
+     },
+     {
+      "w": "turn off",
+      "ex": "Please turn off the lights."
+     },
+     {
+      "w": "put on",
+      "ex": "Put on a jacket, it's cold."
+     },
+     {
+      "w": "take off",
+      "ex": "Take off your shoes at the door."
+     }
+    ],
+    "gram": "Phrasal verb = verb + particle with a new meaning: get up, turn on/off, put on, take off. Object can go between: turn it off."
+   }
+  },
+  {
+   "d": 116,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Phrasal verbs at home",
+     "g": "Talk about chores with natural phrasal verbs.",
+     "p": [
+      "Clean up means make a place tidy: Let's clean up the kitchen.",
+      "Wash up means wash the dishes, throw away means put in the bin: Throw away that old bread.",
+      "Pick up means lift from the floor, look for means try to find: I'm looking for my keys."
+     ],
+     "q": "Which chore do you like most, and which one do you always leave for later?",
+     "c": "Write a family chore list with six phrasal verbs and who does each job."
+    },
+    "de": {
+     "t": "Phrasal verbs zu Hause",
+     "g": "Du sprichst mit natürlichen phrasal verbs über Hausarbeit.",
+     "p": [
+      "Clean up heißt aufräumen, sauber machen: Let's clean up the kitchen.",
+      "Wash up heißt abspülen, throw away heißt wegwerfen: Throw away that old bread.",
+      "Pick up heißt aufheben, look for heißt suchen: I'm looking for my keys."
+     ],
+     "q": "Welche Hausarbeit magst du am liebsten, und welche schiebst du immer auf?",
+     "c": "Schreib einen Haushaltsplan mit sechs phrasal verbs und wer welche Aufgabe macht."
+    },
+    "es": {
+     "t": "Phrasal verbs en casa",
+     "g": "Habla de las tareas de casa con phrasal verbs naturales.",
+     "p": [
+      "Clean up es ordenar y limpiar un lugar: Let's clean up the kitchen.",
+      "Wash up es fregar los platos, throw away es tirar a la basura: Throw away that old bread.",
+      "Pick up es recoger del suelo, look for es buscar: I'm looking for my keys."
+     ],
+     "q": "¿Qué tarea de casa te gusta más y cuál dejas siempre para después?",
+     "c": "Escribe una lista de tareas familiares con seis phrasal verbs y quién hace cada una."
+    },
+    "fr": {
+     "t": "Phrasal verbs à la maison",
+     "g": "Parler des tâches ménagères avec des phrasal verbs naturels.",
+     "p": [
+      "Clean up veut dire ranger, nettoyer un lieu : Let's clean up the kitchen.",
+      "Wash up veut dire faire la vaisselle, throw away jeter : Throw away that old bread.",
+      "Pick up veut dire ramasser, look for chercher : I'm looking for my keys."
+     ],
+     "q": "Quelle tâche ménagère préfères-tu, et laquelle remets-tu toujours à plus tard ?",
+     "c": "Écris une liste de tâches familiales avec six phrasal verbs et qui fait quoi."
+    },
+    "it": {
+     "t": "Phrasal verbs in casa",
+     "g": "Parli delle faccende di casa con phrasal verbs naturali.",
+     "p": [
+      "Clean up vuol dire mettere in ordine e pulire: Let's clean up the kitchen.",
+      "Wash up vuol dire lavare i piatti, throw away buttare via: Throw away that old bread.",
+      "Pick up vuol dire raccogliere da terra, look for cercare: I'm looking for my keys."
+     ],
+     "q": "Quale faccenda di casa ti piace di più e quale rimandi sempre?",
+     "c": "Scrivi una lista di faccende di famiglia con sei phrasal verbs e chi fa ogni compito."
+    },
+    "pt": {
+     "t": "Phrasal verbs em casa",
+     "g": "Fala das tarefas de casa com phrasal verbs naturais.",
+     "p": [
+      "Clean up é arrumar e limpar um sítio: Let's clean up the kitchen.",
+      "Wash up é lavar a loiça, throw away é deitar fora: Throw away that old bread.",
+      "Pick up é apanhar do chão, look for é procurar: I'm looking for my keys."
+     ],
+     "q": "De que tarefa de casa gostas mais e qual deixas sempre para depois?",
+     "c": "Escreve uma lista de tarefas da família com seis phrasal verbs e quem faz cada uma."
+    },
+    "pt_BR": {
+     "t": "Phrasal verbs em casa",
+     "g": "Fale das tarefas de casa com phrasal verbs naturais.",
+     "p": [
+      "Clean up é arrumar e limpar um lugar: Let's clean up the kitchen.",
+      "Wash up é lavar a louça, throw away é jogar fora: Throw away that old bread.",
+      "Pick up é pegar do chão, look for é procurar: I'm looking for my keys."
+     ],
+     "q": "De qual tarefa de casa você mais gosta e qual sempre deixa para depois?",
+     "c": "Escreva uma lista de tarefas da família com seis phrasal verbs e quem faz cada uma."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "clean up",
+      "ex": "Let's clean up the living room."
+     },
+     {
+      "w": "wash up",
+      "ex": "I'll wash up after dinner."
+     },
+     {
+      "w": "throw away",
+      "ex": "Throw away the old newspapers."
+     },
+     {
+      "w": "pick up",
+      "ex": "Can you pick up your toys, please?"
+     },
+     {
+      "w": "look for",
+      "ex": "I'm looking for my phone."
+     },
+     {
+      "w": "put away",
+      "ex": "Put away your clothes, please."
+     }
+    ],
+    "gram": "Household phrasal verbs: clean up, wash up, throw away, pick up, put away, look for. Look for takes the object after it."
+   }
+  },
+  {
+   "d": 117,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Make or do?",
+     "g": "Use make and do with the right words in common pairs.",
+     "p": [
+      "Make is often for creating something: make a cake, make a plan, make a phone call.",
+      "Do is often for tasks and work: do homework, do the dishes, do exercise.",
+      "Some pairs you just learn: make a mistake, make friends, do your best, do someone a favour."
+     ],
+     "q": "What do you usually do on Saturday mornings, and what do you like to make?",
+     "c": "Make two lists, make and do, with five pairs each, and write a sentence for your favourite."
+    },
+    "de": {
+     "t": "Make oder do?",
+     "g": "Du benutzt make und do mit den richtigen Wörtern in festen Paaren.",
+     "p": [
+      "Make heißt oft etwas herstellen: make a cake, make a plan, make a phone call.",
+      "Do steht oft für Aufgaben und Arbeit: do homework, do the dishes, do exercise.",
+      "Manche Paare lernst du einfach: make a mistake, make friends, do your best, do someone a favour."
+     ],
+     "q": "Was machst du meistens am Samstagmorgen, und was stellst du gern selbst her?",
+     "c": "Mach zwei Listen, make und do, mit je fünf Paaren, und schreib einen Satz zu deinem Lieblingspaar."
+    },
+    "es": {
+     "t": "¿Make o do?",
+     "g": "Usa make y do con las palabras correctas en las parejas más comunes.",
+     "p": [
+      "Make suele ser crear algo: make a cake, make a plan, make a phone call.",
+      "Do suele ser para tareas y trabajo: do homework, do the dishes, do exercise.",
+      "Algunas parejas hay que aprenderlas: make a mistake, make friends, do your best, do someone a favour."
+     ],
+     "q": "¿Qué sueles hacer los sábados por la mañana y qué te gusta preparar?",
+     "c": "Haz dos listas, make y do, con cinco parejas cada una, y escribe una frase con tu favorita."
+    },
+    "fr": {
+     "t": "Make ou do ?",
+     "g": "Utiliser make et do avec les bons mots dans les associations courantes.",
+     "p": [
+      "Make sert souvent à créer : make a cake, make a plan, make a phone call.",
+      "Do sert souvent pour les tâches et le travail : do homework, do the dishes, do exercise.",
+      "Certaines paires s'apprennent par cœur : make a mistake, make friends, do your best, do someone a favour."
+     ],
+     "q": "Que fais-tu d'habitude le samedi matin, et qu'aimes-tu préparer toi-même ?",
+     "c": "Fais deux listes, make et do, de cinq paires chacune, et écris une phrase avec ta préférée."
+    },
+    "it": {
+     "t": "Make o do?",
+     "g": "Usi make e do con le parole giuste nelle coppie più comuni.",
+     "p": [
+      "Make spesso è creare qualcosa: make a cake, make a plan, make a phone call.",
+      "Do spesso è per compiti e lavori: do homework, do the dishes, do exercise.",
+      "Alcune coppie si imparano a memoria: make a mistake, make friends, do your best, do someone a favour."
+     ],
+     "q": "Cosa fai di solito il sabato mattina e cosa ti piace preparare?",
+     "c": "Fai due liste, make e do, con cinque coppie ciascuna, e scrivi una frase con la tua preferita."
+    },
+    "pt": {
+     "t": "Make ou do?",
+     "g": "Usa make e do com as palavras certas nos pares mais comuns.",
+     "p": [
+      "Make costuma ser criar algo: make a cake, make a plan, make a phone call.",
+      "Do costuma ser para tarefas e trabalho: do homework, do the dishes, do exercise.",
+      "Alguns pares aprendem-se de cor: make a mistake, make friends, do your best, do someone a favour."
+     ],
+     "q": "O que costumas fazer ao sábado de manhã e o que gostas de preparar?",
+     "c": "Faz duas listas, make e do, com cinco pares cada, e escreve uma frase com o teu favorito."
+    },
+    "pt_BR": {
+     "t": "Make ou do?",
+     "g": "Use make e do com as palavras certas nos pares mais comuns.",
+     "p": [
+      "Make costuma ser criar algo: make a cake, make a plan, make a phone call.",
+      "Do costuma ser para tarefas e trabalho: do homework, do the dishes, do exercise.",
+      "Alguns pares é preciso decorar: make a mistake, make friends, do your best, do someone a favour."
+     ],
+     "q": "O que você costuma fazer no sábado de manhã e o que gosta de preparar?",
+     "c": "Faça duas listas, make e do, com cinco pares cada, e escreva uma frase com seu favorito."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "make a cake",
+      "ex": "We made a cake for her birthday."
+     },
+     {
+      "w": "make a mistake",
+      "ex": "Don't worry, everyone makes mistakes."
+     },
+     {
+      "w": "make friends",
+      "ex": "It's easy to make friends here."
+     },
+     {
+      "w": "do homework",
+      "ex": "I do my homework after dinner."
+     },
+     {
+      "w": "do the dishes",
+      "ex": "Can you do the dishes tonight?"
+     },
+     {
+      "w": "do your best",
+      "ex": "Just relax and do your best."
+     }
+    ],
+    "gram": "make = create/produce (make a cake, a plan, a mistake). do = tasks, work, activities (do homework, the dishes, your best)."
+   }
+  },
+  {
+   "d": 118,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Say or tell?",
+     "g": "Use say and tell correctly in everyday speech.",
+     "p": [
+      "Say is about the words: She said hello. He said that he was tired.",
+      "Tell needs a person after it: She told me the news. Tell me about your day.",
+      "Fixed pairs with tell: tell a story, tell a joke, tell the truth, tell the time."
+     ],
+     "q": "What is a funny story someone told you? What did they say?",
+     "c": "Write three sentences with say and three with tell about conversations you had this week."
+    },
+    "de": {
+     "t": "Say oder tell?",
+     "g": "Du benutzt say und tell im Alltag richtig.",
+     "p": [
+      "Say geht um die Worte: She said hello. He said that he was tired.",
+      "Nach tell kommt eine Person: She told me the news. Tell me about your day.",
+      "Feste Paare mit tell: tell a story, tell a joke, tell the truth, tell the time."
+     ],
+     "q": "Welche lustige Geschichte hat dir jemand erzählt? Was hat die Person gesagt?",
+     "c": "Schreib drei Sätze mit say und drei mit tell über Gespräche, die du diese Woche hattest."
+    },
+    "es": {
+     "t": "¿Say o tell?",
+     "g": "Usa say y tell correctamente al hablar.",
+     "p": [
+      "Say se centra en las palabras: She said hello. He said that he was tired.",
+      "Tell necesita una persona detrás: She told me the news. Tell me about your day.",
+      "Parejas fijas con tell: tell a story, tell a joke, tell the truth, tell the time."
+     ],
+     "q": "¿Qué historia divertida te contó alguien? ¿Qué te dijo?",
+     "c": "Escribe tres frases con say y tres con tell sobre conversaciones que tuviste esta semana."
+    },
+    "fr": {
+     "t": "Say ou tell ?",
+     "g": "Utiliser correctement say et tell au quotidien.",
+     "p": [
+      "Say porte sur les mots : She said hello. He said that he was tired.",
+      "Tell est suivi d'une personne : She told me the news. Tell me about your day.",
+      "Expressions avec tell : tell a story, tell a joke, tell the truth, tell the time."
+     ],
+     "q": "Quelle histoire drôle quelqu'un t'a racontée ? Qu'est-ce qu'il a dit ?",
+     "c": "Écris trois phrases avec say et trois avec tell sur des conversations de ta semaine."
+    },
+    "it": {
+     "t": "Say o tell?",
+     "g": "Usi say e tell correttamente quando parli.",
+     "p": [
+      "Say riguarda le parole: She said hello. He said that he was tired.",
+      "Tell vuole una persona dopo: She told me the news. Tell me about your day.",
+      "Coppie fisse con tell: tell a story, tell a joke, tell the truth, tell the time."
+     ],
+     "q": "Qual è una storia divertente che qualcuno ti ha raccontato? Cosa ti ha detto?",
+     "c": "Scrivi tre frasi con say e tre con tell su conversazioni che hai avuto questa settimana."
+    },
+    "pt": {
+     "t": "Say ou tell?",
+     "g": "Usa say e tell corretamente no dia a dia.",
+     "p": [
+      "Say foca-se nas palavras: She said hello. He said that he was tired.",
+      "Tell precisa de uma pessoa a seguir: She told me the news. Tell me about your day.",
+      "Pares fixos com tell: tell a story, tell a joke, tell the truth, tell the time."
+     ],
+     "q": "Que história engraçada alguém te contou? O que é que essa pessoa disse?",
+     "c": "Escreve três frases com say e três com tell sobre conversas que tiveste esta semana."
+    },
+    "pt_BR": {
+     "t": "Say ou tell?",
+     "g": "Use say e tell corretamente no dia a dia.",
+     "p": [
+      "Say foca nas palavras: She said hello. He said that he was tired.",
+      "Tell precisa de uma pessoa depois: She told me the news. Tell me about your day.",
+      "Pares fixos com tell: tell a story, tell a joke, tell the truth, tell the time."
+     ],
+     "q": "Que história engraçada alguém te contou? O que a pessoa disse?",
+     "c": "Escreva três frases com say e três com tell sobre conversas que você teve esta semana."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "say hello",
+      "ex": "Say hello to your sister for me."
+     },
+     {
+      "w": "said that",
+      "ex": "He said that the shop was closed."
+     },
+     {
+      "w": "tell me",
+      "ex": "Tell me about your holiday."
+     },
+     {
+      "w": "told her",
+      "ex": "I told her the good news."
+     },
+     {
+      "w": "tell a joke",
+      "ex": "My uncle loves to tell jokes."
+     },
+     {
+      "w": "tell the truth",
+      "ex": "Always tell the truth."
+     }
+    ],
+    "gram": "say + words (She said hi / said that...). tell + person (She told me...). Wrong: She said me. Fixed: tell a story/joke/the truth."
+   }
+  },
+  {
+   "d": 119,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Feelings and emotions",
+     "g": "Describe how you feel and explain why.",
+     "p": [
+      "Positive feelings: happy, excited, proud, relaxed. Others: nervous, worried, bored, tired.",
+      "Give a reason with because: I'm nervous because I have an exam tomorrow.",
+      "Ask about feelings kindly: How are you feeling? Why are you so happy today?"
+     ],
+     "q": "How do you feel today, and why? Use one feeling word and because.",
+     "c": "Write a feelings diary for three days: one feeling each day and the reason for it."
+    },
+    "de": {
+     "t": "Gefühle und Emotionen",
+     "g": "Du beschreibst, wie du dich fühlst, und erklärst, warum.",
+     "p": [
+      "Positive Gefühle: happy, excited, proud, relaxed. Andere: nervous, worried, bored, tired.",
+      "Begründe mit because: I'm nervous because I have an exam tomorrow.",
+      "Frag freundlich nach Gefühlen: How are you feeling? Why are you so happy today?"
+     ],
+     "q": "Wie fühlst du dich heute, und warum? Nutze ein Gefühlswort und because.",
+     "c": "Schreib ein Gefühlstagebuch für drei Tage: ein Gefühl pro Tag und den Grund dafür."
+    },
+    "es": {
+     "t": "Sentimientos y emociones",
+     "g": "Describe cómo te sientes y explica por qué.",
+     "p": [
+      "Sentimientos positivos: happy, excited, proud, relaxed. Otros: nervous, worried, bored, tired.",
+      "Da un motivo con because: I'm nervous because I have an exam tomorrow.",
+      "Pregunta con cariño: How are you feeling? Why are you so happy today?"
+     ],
+     "q": "¿Cómo te sientes hoy y por qué? Usa una palabra de sentimiento y because.",
+     "c": "Escribe un diario de emociones de tres días: una emoción por día y su motivo."
+    },
+    "fr": {
+     "t": "Sentiments et émotions",
+     "g": "Décrire ce que tu ressens et expliquer pourquoi.",
+     "p": [
+      "Émotions positives : happy, excited, proud, relaxed. Autres : nervous, worried, bored, tired.",
+      "Donne une raison avec because : I'm nervous because I have an exam tomorrow.",
+      "Demande gentiment : How are you feeling? Why are you so happy today?"
+     ],
+     "q": "Comment te sens-tu aujourd'hui, et pourquoi ? Utilise un mot d'émotion et because.",
+     "c": "Écris un journal des émotions sur trois jours : une émotion par jour et sa raison."
+    },
+    "it": {
+     "t": "Sentimenti ed emozioni",
+     "g": "Descrivi come ti senti e spieghi perché.",
+     "p": [
+      "Emozioni positive: happy, excited, proud, relaxed. Altre: nervous, worried, bored, tired.",
+      "Dai un motivo con because: I'm nervous because I have an exam tomorrow.",
+      "Chiedi con gentilezza: How are you feeling? Why are you so happy today?"
+     ],
+     "q": "Come ti senti oggi e perché? Usa una parola di emozione e because.",
+     "c": "Scrivi un diario delle emozioni di tre giorni: un'emozione al giorno e il suo motivo."
+    },
+    "pt": {
+     "t": "Sentimentos e emoções",
+     "g": "Descreve como te sentes e explica porquê.",
+     "p": [
+      "Sentimentos positivos: happy, excited, proud, relaxed. Outros: nervous, worried, bored, tired.",
+      "Dá uma razão com because: I'm nervous because I have an exam tomorrow.",
+      "Pergunta com carinho: How are you feeling? Why are you so happy today?"
+     ],
+     "q": "Como te sentes hoje e porquê? Usa uma palavra de sentimento e because.",
+     "c": "Escreve um diário de emoções de três dias: uma emoção por dia e a razão."
+    },
+    "pt_BR": {
+     "t": "Sentimentos e emoções",
+     "g": "Descreva como você se sente e explique por quê.",
+     "p": [
+      "Sentimentos positivos: happy, excited, proud, relaxed. Outros: nervous, worried, bored, tired.",
+      "Dê um motivo com because: I'm nervous because I have an exam tomorrow.",
+      "Pergunte com carinho: How are you feeling? Why are you so happy today?"
+     ],
+     "q": "Como você está se sentindo hoje e por quê? Use uma palavra de sentimento e because.",
+     "c": "Escreva um diário de emoções de três dias: uma emoção por dia e o motivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "excited",
+      "ex": "I'm so excited about the trip!"
+     },
+     {
+      "w": "proud",
+      "ex": "My parents are proud of me."
+     },
+     {
+      "w": "nervous",
+      "ex": "I'm nervous because I have an interview."
+     },
+     {
+      "w": "worried",
+      "ex": "She's worried about her exam."
+     },
+     {
+      "w": "bored",
+      "ex": "I'm bored. Let's do something fun!"
+     },
+     {
+      "w": "relaxed",
+      "ex": "I feel relaxed after a long walk."
+     }
+    ],
+    "gram": "Feelings: I'm / I feel + adjective + because + reason. Ask: How are you feeling? Why are you so + adjective?"
+   }
+  },
+  {
+   "d": 120,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Review: talking about experiences",
+     "g": "Bring together past tenses, the present perfect, future forms and advice.",
+     "p": [
+      "Past: I was walking when I saw... Experience: Have you ever...? I've been to...",
+      "Future: I'm going to (plan), I'll (decision), I'm meeting Ana at six (arrangement).",
+      "Advice and rules: you should, you have to, you don't have to, you mustn't."
+     ],
+     "q": "Tell me about an experience you've had, what happened, and what you're going to do next time.",
+     "c": "Write a relaxed chat with a friend: a past story, an experience, a plan and one piece of advice."
+    },
+    "de": {
+     "t": "Rückblick: über Erfahrungen sprechen",
+     "g": "Du verbindest Vergangenheit, present perfect, Zukunftsformen und Ratschläge.",
+     "p": [
+      "Vergangenheit: I was walking when I saw... Erfahrung: Have you ever...? I've been to...",
+      "Zukunft: I'm going to (Plan), I'll (Entscheidung), I'm meeting Ana at six (Verabredung).",
+      "Rat und Regeln: you should, you have to, you don't have to, you mustn't."
+     ],
+     "q": "Erzähl mir von einer Erfahrung, was passiert ist und was du nächstes Mal machen wirst.",
+     "c": "Schreib einen lockeren Chat mit Freunden: eine Geschichte, eine Erfahrung, ein Plan und ein Rat."
+    },
+    "es": {
+     "t": "Repaso: hablar de experiencias",
+     "g": "Junta los tiempos pasados, el present perfect, el futuro y los consejos.",
+     "p": [
+      "Pasado: I was walking when I saw... Experiencia: Have you ever...? I've been to...",
+      "Futuro: I'm going to (plan), I'll (decisión), I'm meeting Ana at six (cita).",
+      "Consejos y normas: you should, you have to, you don't have to, you mustn't."
+     ],
+     "q": "Cuéntame una experiencia que hayas tenido, qué pasó y qué vas a hacer la próxima vez.",
+     "c": "Escribe un chat relajado con un amigo: una historia, una experiencia, un plan y un consejo."
+    },
+    "fr": {
+     "t": "Révision : parler de ses expériences",
+     "g": "Réunir les temps du passé, le present perfect, le futur et les conseils.",
+     "p": [
+      "Passé : I was walking when I saw... Expérience : Have you ever...? I've been to...",
+      "Futur : I'm going to (projet), I'll (décision), I'm meeting Ana at six (rendez-vous).",
+      "Conseils et règles : you should, you have to, you don't have to, you mustn't."
+     ],
+     "q": "Raconte-moi une expérience vécue, ce qui s'est passé et ce que tu vas faire la prochaine fois.",
+     "c": "Écris un échange détendu avec un ami : une histoire, une expérience, un projet et un conseil."
+    },
+    "it": {
+     "t": "Ripasso: parlare di esperienze",
+     "g": "Metti insieme i tempi passati, il present perfect, il futuro e i consigli.",
+     "p": [
+      "Passato: I was walking when I saw... Esperienza: Have you ever...? I've been to...",
+      "Futuro: I'm going to (piano), I'll (decisione), I'm meeting Ana at six (appuntamento).",
+      "Consigli e regole: you should, you have to, you don't have to, you mustn't."
+     ],
+     "q": "Raccontami un'esperienza che hai vissuto, cosa è successo e cosa farai la prossima volta.",
+     "c": "Scrivi una chat rilassata con un amico: una storia, un'esperienza, un piano e un consiglio."
+    },
+    "pt": {
+     "t": "Revisão: falar de experiências",
+     "g": "Junta os tempos do passado, o present perfect, o futuro e os conselhos.",
+     "p": [
+      "Passado: I was walking when I saw... Experiência: Have you ever...? I've been to...",
+      "Futuro: I'm going to (plano), I'll (decisão), I'm meeting Ana at six (combinação).",
+      "Conselhos e regras: you should, you have to, you don't have to, you mustn't."
+     ],
+     "q": "Conta-me uma experiência que tiveste, o que aconteceu e o que vais fazer da próxima vez.",
+     "c": "Escreve uma conversa descontraída com um amigo: uma história, uma experiência, um plano e um conselho."
+    },
+    "pt_BR": {
+     "t": "Revisão: falando de experiências",
+     "g": "Junte os tempos do passado, o present perfect, o futuro e os conselhos.",
+     "p": [
+      "Passado: I was walking when I saw... Experiência: Have you ever...? I've been to...",
+      "Futuro: I'm going to (plano), I'll (decisão), I'm meeting Ana at six (compromisso).",
+      "Conselhos e regras: you should, you have to, you don't have to, you mustn't."
+     ],
+     "q": "Me conte uma experiência que você teve, o que aconteceu e o que vai fazer da próxima vez.",
+     "c": "Escreva um chat descontraído com um amigo: uma história, uma experiência, um plano e um conselho."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "I was ...-ing when...",
+      "ex": "I was walking home when I met Sara."
+     },
+     {
+      "w": "Have you ever...?",
+      "ex": "Have you ever tried surfing?"
+     },
+     {
+      "w": "I'm going to...",
+      "ex": "I'm going to try it again next summer."
+     },
+     {
+      "w": "I'll...",
+      "ex": "OK, I'll come with you!"
+     },
+     {
+      "w": "You should...",
+      "ex": "You should visit that beach. It's beautiful."
+     },
+     {
+      "w": "next time",
+      "ex": "Next time, I'll bring a better camera."
+     }
+    ],
+    "gram": "Review: past continuous + past simple, present perfect for experiences, going to/will/present continuous for future, should/have to."
+   }
+  }
+ ]
+}

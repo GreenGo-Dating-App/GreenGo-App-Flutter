@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_french",
+ "lessons": [
+  {
+   "d": 241,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Enthusiasm and disappointment",
+     "g": "Share excitement and gentle disappointment in French, from C'est génial ! to Quel dommage !",
+     "p": [
+      "Enthusiasm: C'est génial !, trop bien !, j'ai hâte !, quelle bonne nouvelle !",
+      "Disappointment: Quel dommage !, c'est dommage, tant pis, c'est décevant, je suis un peu déçu(e)",
+      "With the subjunctive: je suis ravi(e) que tu viennes, c'est dommage qu'il pleuve"
+     ],
+     "q": "What recent news made you say C'est génial ! And what made you say Quel dommage ?",
+     "c": "React in French to three imaginary pieces of news: one excited, one disappointed, one with tant pis."
+    },
+    "de": {
+     "t": "Begeisterung und Enttäuschung",
+     "g": "Du drückst auf Französisch Freude und leichte Enttäuschung aus, von C'est génial ! bis Quel dommage !",
+     "p": [
+      "Begeisterung: C'est génial !, trop bien !, j'ai hâte !, quelle bonne nouvelle !",
+      "Enttäuschung: Quel dommage !, c'est dommage, tant pis, c'est décevant, je suis un peu déçu(e)",
+      "Mit Subjonctif: je suis ravi(e) que tu viennes, c'est dommage qu'il pleuve"
+     ],
+     "q": "Welche Nachricht hat dich zuletzt C'est génial ! sagen lassen? Und welche Quel dommage ?",
+     "c": "Reagiere auf Französisch auf drei erfundene Nachrichten: einmal begeistert, einmal enttäuscht, einmal mit tant pis."
+    },
+    "es": {
+     "t": "Entusiasmo y decepción",
+     "g": "Expresa entusiasmo y una ligera decepción en francés, de C'est génial ! a Quel dommage !",
+     "p": [
+      "Entusiasmo: C'est génial !, trop bien !, j'ai hâte !, quelle bonne nouvelle !",
+      "Decepción: Quel dommage !, c'est dommage, tant pis, c'est décevant, je suis un peu déçu(e)",
+      "Con subjuntivo: je suis ravi(e) que tu viennes, c'est dommage qu'il pleuve"
+     ],
+     "q": "¿Qué noticia reciente te hizo decir C'est génial !? ¿Y cuál te hizo decir Quel dommage ?",
+     "c": "Reacciona en francés a tres noticias inventadas: una con entusiasmo, una con decepción y otra con tant pis."
+    },
+    "fr": {
+     "t": "Enthousiasme et déception",
+     "g": "Exprimer sa joie et une légère déception, de C'est génial ! à Quel dommage !",
+     "p": [
+      "Enthousiasme : C'est génial !, trop bien !, j'ai hâte !, quelle bonne nouvelle !",
+      "Déception : Quel dommage !, c'est dommage, tant pis, c'est décevant, je suis un peu déçu(e)",
+      "Avec le subjonctif : je suis ravi(e) que tu viennes, c'est dommage qu'il pleuve"
+     ],
+     "q": "Quelle nouvelle récente t'a fait dire C'est génial ! ? Et laquelle t'a fait dire Quel dommage ?",
+     "c": "Réagis à trois nouvelles imaginaires : une avec enthousiasme, une avec déception, une avec tant pis."
+    },
+    "it": {
+     "t": "Entusiasmo e delusione",
+     "g": "Esprimi entusiasmo e una leggera delusione in francese, da C'est génial ! a Quel dommage !",
+     "p": [
+      "Entusiasmo: C'est génial !, trop bien !, j'ai hâte !, quelle bonne nouvelle !",
+      "Delusione: Quel dommage !, c'est dommage, tant pis, c'est décevant, je suis un peu déçu(e)",
+      "Con il congiuntivo: je suis ravi(e) que tu viennes, c'est dommage qu'il pleuve"
+     ],
+     "q": "Quale notizia recente ti ha fatto dire C'est génial !? E quale Quel dommage ?",
+     "c": "Reagisci in francese a tre notizie inventate: una con entusiasmo, una con delusione, una con tant pis."
+    },
+    "pt": {
+     "t": "Entusiasmo e desilusão",
+     "g": "Exprime entusiasmo e uma ligeira desilusão em francês, de C'est génial ! a Quel dommage !",
+     "p": [
+      "Entusiasmo: C'est génial !, trop bien !, j'ai hâte !, quelle bonne nouvelle !",
+      "Desilusão: Quel dommage !, c'est dommage, tant pis, c'est décevant, je suis un peu déçu(e)",
+      "Com conjuntivo: je suis ravi(e) que tu viennes, c'est dommage qu'il pleuve"
+     ],
+     "q": "Que notícia recente te fez dizer C'est génial !? E qual te fez dizer Quel dommage ?",
+     "c": "Reage em francês a três notícias inventadas: uma com entusiasmo, uma com desilusão e outra com tant pis."
+    },
+    "pt_BR": {
+     "t": "Entusiasmo e decepção",
+     "g": "Expresse entusiasmo e uma leve decepção em francês, de C'est génial ! a Quel dommage !",
+     "p": [
+      "Entusiasmo: C'est génial !, trop bien !, j'ai hâte !, quelle bonne nouvelle !",
+      "Decepção: Quel dommage !, c'est dommage, tant pis, c'est décevant, je suis un peu déçu(e)",
+      "Com subjuntivo: je suis ravi(e) que tu viennes, c'est dommage qu'il pleuve"
+     ],
+     "q": "Que notícia recente fez você dizer C'est génial !? E qual fez você dizer Quel dommage ?",
+     "c": "Reaja em francês a três notícias inventadas: uma com entusiasmo, uma com decepção e outra com tant pis."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "c'est génial !",
+      "ex": "Tu as eu le poste ? C'est génial !"
+     },
+     {
+      "w": "j'ai hâte de",
+      "ex": "J'ai hâte de partir en vacances à la mer."
+     },
+     {
+      "w": "quel dommage !",
+      "ex": "Le concert est annulé ? Quel dommage !"
+     },
+     {
+      "w": "tant pis",
+      "ex": "Il n'y a plus de croissants ? Tant pis, je prends un pain."
+     },
+     {
+      "w": "être déçu(e)",
+      "ex": "Je suis un peu déçue par la fin du film."
+     },
+     {
+      "w": "être ravi(e) que",
+      "ex": "Je suis ravi que tu sois venu ce soir."
+     }
+    ],
+    "gram": "Enthousiasme : c'est génial, j'ai hâte de + infinitif. Déception : quel dommage, je suis déçu(e). Ravi / dommage que + subjonctif."
+   }
+  },
+  {
+   "d": 242,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Expressing annoyance politely",
+     "g": "Say what bothers you in French, from casual j'en ai marre to polite ça me dérange un peu.",
+     "p": [
+      "Direct: ça m'agace, ça m'énerve, j'en ai marre (familier), ça me saoule (très familier)",
+      "Softer: ça me dérange un peu, ça me gêne, ce n'est pas très agréable, je préférerais que...",
+      "With que + subjunctive: ça me dérange que tu fasses du bruit, ça m'agace qu'il soit toujours en retard"
+     ],
+     "q": "What small everyday thing annoys you? Tell me politely in French, with ça me dérange un peu.",
+     "c": "Turn j'en ai marre du bruit into two polite versions, one with un peu and one with je préférerais que."
+    },
+    "de": {
+     "t": "Höflich Ärger ausdrücken",
+     "g": "Du sagst auf Französisch, was dich stört, vom lockeren j'en ai marre bis zum höflichen ça me dérange un peu.",
+     "p": [
+      "Direkt: ça m'agace, ça m'énerve, j'en ai marre (familier), ça me saoule (très familier)",
+      "Sanfter: ça me dérange un peu, ça me gêne, ce n'est pas très agréable, je préférerais que...",
+      "Mit que + Subjonctif: ça me dérange que tu fasses du bruit, ça m'agace qu'il soit toujours en retard"
+     ],
+     "q": "Welche kleine Alltagssache nervt dich? Sag es mir höflich auf Französisch, mit ça me dérange un peu.",
+     "c": "Mach aus j'en ai marre du bruit zwei höfliche Sätze: einen mit un peu, einen mit je préférerais que."
+    },
+    "es": {
+     "t": "Expresar molestia con educación",
+     "g": "Di lo que te molesta en francés, del coloquial j'en ai marre al cortés ça me dérange un peu.",
+     "p": [
+      "Directo: ça m'agace, ça m'énerve, j'en ai marre (familier), ça me saoule (très familier)",
+      "Más suave: ça me dérange un peu, ça me gêne, ce n'est pas très agréable, je préférerais que...",
+      "Con que + subjuntivo: ça me dérange que tu fasses du bruit, ça m'agace qu'il soit toujours en retard"
+     ],
+     "q": "¿Qué pequeña cosa cotidiana te molesta? Dímelo con educación en francés, con ça me dérange un peu.",
+     "c": "Convierte j'en ai marre du bruit en dos versiones educadas: una con un peu y otra con je préférerais que."
+    },
+    "fr": {
+     "t": "Exprimer son agacement poliment",
+     "g": "Dire ce qui te dérange, du familier j'en ai marre au poli ça me dérange un peu.",
+     "p": [
+      "Direct : ça m'agace, ça m'énerve, j'en ai marre (familier), ça me saoule (très familier)",
+      "Plus doux : ça me dérange un peu, ça me gêne, ce n'est pas très agréable, je préférerais que...",
+      "Avec que + subjonctif : ça me dérange que tu fasses du bruit, ça m'agace qu'il soit toujours en retard"
+     ],
+     "q": "Quelle petite chose du quotidien t'agace ? Dis-le poliment, avec ça me dérange un peu.",
+     "c": "Transforme j'en ai marre du bruit en deux phrases polies : une avec un peu, une avec je préférerais que."
+    },
+    "it": {
+     "t": "Esprimere fastidio con garbo",
+     "g": "Di cosa ti dà fastidio in francese, dal familiare j'en ai marre al cortese ça me dérange un peu.",
+     "p": [
+      "Diretto: ça m'agace, ça m'énerve, j'en ai marre (familier), ça me saoule (très familier)",
+      "Più morbido: ça me dérange un peu, ça me gêne, ce n'est pas très agréable, je préférerais que...",
+      "Con que + congiuntivo: ça me dérange que tu fasses du bruit, ça m'agace qu'il soit toujours en retard"
+     ],
+     "q": "Quale piccola cosa quotidiana ti infastidisce? Dimmelo con garbo in francese, con ça me dérange un peu.",
+     "c": "Trasforma j'en ai marre du bruit in due frasi cortesi: una con un peu e una con je préférerais que."
+    },
+    "pt": {
+     "t": "Exprimir incómodo com educação",
+     "g": "Diz o que te incomoda em francês, do familiar j'en ai marre ao educado ça me dérange un peu.",
+     "p": [
+      "Direto: ça m'agace, ça m'énerve, j'en ai marre (familier), ça me saoule (très familier)",
+      "Mais suave: ça me dérange un peu, ça me gêne, ce n'est pas très agréable, je préférerais que...",
+      "Com que + conjuntivo: ça me dérange que tu fasses du bruit, ça m'agace qu'il soit toujours en retard"
+     ],
+     "q": "Que pequena coisa do dia a dia te irrita? Diz-mo com educação em francês, com ça me dérange un peu.",
+     "c": "Transforma j'en ai marre du bruit em duas frases educadas: uma com un peu e outra com je préférerais que."
+    },
+    "pt_BR": {
+     "t": "Expressando incômodo com educação",
+     "g": "Diga o que te incomoda em francês, do informal j'en ai marre ao educado ça me dérange un peu.",
+     "p": [
+      "Direto: ça m'agace, ça m'énerve, j'en ai marre (familier), ça me saoule (très familier)",
+      "Mais suave: ça me dérange un peu, ça me gêne, ce n'est pas très agréable, je préférerais que...",
+      "Com que + subjuntivo: ça me dérange que tu fasses du bruit, ça m'agace qu'il soit toujours en retard"
+     ],
+     "q": "Que coisinha do dia a dia te irrita? Me conte com educação em francês, usando ça me dérange un peu.",
+     "c": "Transforme j'en ai marre du bruit em duas frases educadas: uma com un peu e outra com je préférerais que."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ça m'agace",
+      "ex": "Ça m'agace quand le bus passe sans s'arrêter."
+     },
+     {
+      "w": "j'en ai marre de",
+      "ex": "J'en ai marre de ce bruit tous les soirs."
+     },
+     {
+      "w": "ça me dérange (un peu)",
+      "ex": "La musique me dérange un peu, tu peux baisser ?"
+     },
+     {
+      "w": "ça me gêne",
+      "ex": "Ça me gêne un peu de lui demander encore un service."
+     },
+     {
+      "w": "je préférerais que",
+      "ex": "Je préférerais que tu m'appelles avant de passer."
+     },
+     {
+      "w": "ce n'est pas grave",
+      "ex": "Tu as oublié le pain ? Ce n'est pas grave."
+     }
+    ],
+    "gram": "Agacement : ça m'agace / ça me dérange que + subjonctif ; on adoucit avec un peu et le conditionnel : je préférerais que..."
+   }
+  },
+  {
+   "d": 243,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Encouraging and reassuring",
+     "g": "Comfort and cheer people on in French: Ne t'inquiète pas, bon courage, tu vas y arriver.",
+     "p": [
+      "Reassuring: Ne t'inquiète pas, ça va aller, ce n'est rien, t'en fais pas (familier)",
+      "Encouraging: Bon courage !, tu vas y arriver, vas-y !, je crois en toi, accroche-toi !",
+      "Tu vs vous imperative: ne t'inquiète pas → ne vous inquiétez pas ; accroche-toi → accrochez-vous"
+     ],
+     "q": "A friend is nervous before a job interview. What three things would you tell them in French?",
+     "c": "Write a short encouraging message in French to someone learning a language, using two expressions from today."
+    },
+    "de": {
+     "t": "Ermutigen und beruhigen",
+     "g": "Du tröstest und ermutigst auf Französisch: Ne t'inquiète pas, bon courage, tu vas y arriver.",
+     "p": [
+      "Beruhigen: Ne t'inquiète pas, ça va aller, ce n'est rien, t'en fais pas (familier)",
+      "Ermutigen: Bon courage !, tu vas y arriver, vas-y !, je crois en toi, accroche-toi !",
+      "Imperativ mit tu und vous: ne t'inquiète pas → ne vous inquiétez pas ; accroche-toi → accrochez-vous"
+     ],
+     "q": "Ein Freund ist vor einem Vorstellungsgespräch nervös. Was sagst du ihm auf Französisch? Drei Sätze!",
+     "c": "Schreib eine kurze Mut-Nachricht auf Französisch an jemanden, der eine Sprache lernt, mit zwei Ausdrücken von heute."
+    },
+    "es": {
+     "t": "Animar y tranquilizar",
+     "g": "Consuela y anima en francés: Ne t'inquiète pas, bon courage, tu vas y arriver.",
+     "p": [
+      "Tranquilizar: Ne t'inquiète pas, ça va aller, ce n'est rien, t'en fais pas (familier)",
+      "Animar: Bon courage !, tu vas y arriver, vas-y !, je crois en toi, accroche-toi !",
+      "Imperativo con tu y vous: ne t'inquiète pas → ne vous inquiétez pas ; accroche-toi → accrochez-vous"
+     ],
+     "q": "Un amigo está nervioso antes de una entrevista de trabajo. ¿Qué tres cosas le dirías en francés?",
+     "c": "Escribe en francés un mensaje de ánimo para alguien que aprende un idioma, con dos expresiones de hoy."
+    },
+    "fr": {
+     "t": "Encourager et rassurer",
+     "g": "Réconforter et encourager : Ne t'inquiète pas, bon courage, tu vas y arriver.",
+     "p": [
+      "Rassurer : Ne t'inquiète pas, ça va aller, ce n'est rien, t'en fais pas (familier)",
+      "Encourager : Bon courage !, tu vas y arriver, vas-y !, je crois en toi, accroche-toi !",
+      "Impératif tu et vous : ne t'inquiète pas → ne vous inquiétez pas ; accroche-toi → accrochez-vous"
+     ],
+     "q": "Un ami est stressé avant un entretien d'embauche. Quelles trois phrases lui dirais-tu ?",
+     "c": "Écris un petit message d'encouragement à quelqu'un qui apprend une langue, avec deux expressions du jour."
+    },
+    "it": {
+     "t": "Incoraggiare e rassicurare",
+     "g": "Consola e incoraggia in francese: Ne t'inquiète pas, bon courage, tu vas y arriver.",
+     "p": [
+      "Rassicurare: Ne t'inquiète pas, ça va aller, ce n'est rien, t'en fais pas (familier)",
+      "Incoraggiare: Bon courage !, tu vas y arriver, vas-y !, je crois en toi, accroche-toi !",
+      "Imperativo con tu e vous: ne t'inquiète pas → ne vous inquiétez pas ; accroche-toi → accrochez-vous"
+     ],
+     "q": "Un amico è nervoso prima di un colloquio di lavoro. Quali tre cose gli diresti in francese?",
+     "c": "Scrivi in francese un breve messaggio di incoraggiamento a chi studia una lingua, con due espressioni di oggi."
+    },
+    "pt": {
+     "t": "Encorajar e tranquilizar",
+     "g": "Conforta e encoraja em francês: Ne t'inquiète pas, bon courage, tu vas y arriver.",
+     "p": [
+      "Tranquilizar: Ne t'inquiète pas, ça va aller, ce n'est rien, t'en fais pas (familier)",
+      "Encorajar: Bon courage !, tu vas y arriver, vas-y !, je crois en toi, accroche-toi !",
+      "Imperativo com tu e vous: ne t'inquiète pas → ne vous inquiétez pas ; accroche-toi → accrochez-vous"
+     ],
+     "q": "Um amigo está nervoso antes de uma entrevista de emprego. Que três coisas lhe dirias em francês?",
+     "c": "Escreve em francês uma mensagem de incentivo a alguém que aprende uma língua, com duas expressões de hoje."
+    },
+    "pt_BR": {
+     "t": "Encorajando e tranquilizando",
+     "g": "Conforte e encoraje em francês: Ne t'inquiète pas, bon courage, tu vas y arriver.",
+     "p": [
+      "Tranquilizar: Ne t'inquiète pas, ça va aller, ce n'est rien, t'en fais pas (familier)",
+      "Encorajar: Bon courage !, tu vas y arriver, vas-y !, je crois en toi, accroche-toi !",
+      "Imperativo com tu e vous: ne t'inquiète pas → ne vous inquiétez pas ; accroche-toi → accrochez-vous"
+     ],
+     "q": "Um amigo está nervoso antes de uma entrevista de emprego. Que três coisas você diria a ele em francês?",
+     "c": "Escreva em francês uma mensagem de incentivo para alguém que aprende um idioma, com duas expressões de hoje."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ne t'inquiète pas",
+      "ex": "Ne t'inquiète pas, on a encore le temps."
+     },
+     {
+      "w": "ça va aller",
+      "ex": "Tu as raté le train ? Ça va aller, il y en a un autre."
+     },
+     {
+      "w": "bon courage !",
+      "ex": "Tu as un examen demain ? Bon courage !"
+     },
+     {
+      "w": "tu vas y arriver",
+      "ex": "C'est difficile, mais tu vas y arriver."
+     },
+     {
+      "w": "je crois en toi",
+      "ex": "Lance-toi, je crois en toi !"
+     },
+     {
+      "w": "accroche-toi !",
+      "ex": "Encore deux kilomètres, accroche-toi !"
+     }
+    ],
+    "gram": "Rassurer : impératif négatif des verbes pronominaux (ne t'inquiète pas, ne vous en faites pas) ; affirmatif : accroche-toi !"
+   }
+  },
+  {
+   "d": 244,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Review: culture and expressions",
+     "g": "Recap the idioms, emotions and cultural vocabulary of the last weeks in one lively chat.",
+     "p": [
+      "Idioms: avoir la pêche, poser un lapin, coûter les yeux de la tête",
+      "Emotions: ça alors !, quel dommage !, ça m'agace, ne t'inquiète pas",
+      "Reviews: un chef-d'œuvre, c'est décevant, je te le conseille vivement"
+     ],
+     "q": "Tell me about a film or book you loved or disliked, and add one idiom and one emotion expression.",
+     "c": "Write five French sentences about your week, each using a different idiom or reaction from recent days."
+    },
+    "de": {
+     "t": "Wiederholung: Kultur und Ausdrücke",
+     "g": "Du wiederholst Redewendungen, Gefühle und Kulturwortschatz der letzten Wochen in einem lebendigen Chat.",
+     "p": [
+      "Redewendungen: avoir la pêche, poser un lapin, coûter les yeux de la tête",
+      "Gefühle: ça alors !, quel dommage !, ça m'agace, ne t'inquiète pas",
+      "Kritiken: un chef-d'œuvre, c'est décevant, je te le conseille vivement"
+     ],
+     "q": "Erzähl mir von einem Film oder Buch, das du mochtest oder nicht, mit einer Redewendung und einer Gefühlsreaktion.",
+     "c": "Schreib fünf französische Sätze über deine Woche, jeder mit einer anderen Redewendung oder Reaktion."
+    },
+    "es": {
+     "t": "Repaso: cultura y expresiones",
+     "g": "Repasa los modismos, las emociones y el vocabulario cultural de las últimas semanas en un chat animado.",
+     "p": [
+      "Modismos: avoir la pêche, poser un lapin, coûter les yeux de la tête",
+      "Emociones: ça alors !, quel dommage !, ça m'agace, ne t'inquiète pas",
+      "Críticas: un chef-d'œuvre, c'est décevant, je te le conseille vivement"
+     ],
+     "q": "Háblame de una película o un libro que te encantó o no te gustó, con un modismo y una expresión de emoción.",
+     "c": "Escribe cinco frases en francés sobre tu semana, cada una con un modismo o una reacción distinta."
+    },
+    "fr": {
+     "t": "Révision : culture et expressions",
+     "g": "Réviser les expressions, les émotions et le vocabulaire culturel des dernières semaines dans un échange vivant.",
+     "p": [
+      "Expressions : avoir la pêche, poser un lapin, coûter les yeux de la tête",
+      "Émotions : ça alors !, quel dommage !, ça m'agace, ne t'inquiète pas",
+      "Critiques : un chef-d'œuvre, c'est décevant, je te le conseille vivement"
+     ],
+     "q": "Parle-moi d'un film ou d'un livre que tu as adoré ou pas aimé, avec une expression imagée et une réaction.",
+     "c": "Écris cinq phrases sur ta semaine, chacune avec une expression ou une réaction différente vue récemment."
+    },
+    "it": {
+     "t": "Ripasso: cultura ed espressioni",
+     "g": "Ripassa modi di dire, emozioni e lessico culturale delle ultime settimane in una chat vivace.",
+     "p": [
+      "Modi di dire: avoir la pêche, poser un lapin, coûter les yeux de la tête",
+      "Emozioni: ça alors !, quel dommage !, ça m'agace, ne t'inquiète pas",
+      "Recensioni: un chef-d'œuvre, c'est décevant, je te le conseille vivement"
+     ],
+     "q": "Parlami di un film o un libro che hai amato o no, con un modo di dire e un'espressione di emozione.",
+     "c": "Scrivi cinque frasi in francese sulla tua settimana, ognuna con un modo di dire o una reazione diversa."
+    },
+    "pt": {
+     "t": "Revisão: cultura e expressões",
+     "g": "Revê as expressões idiomáticas, as emoções e o vocabulário cultural das últimas semanas numa conversa animada.",
+     "p": [
+      "Expressões: avoir la pêche, poser un lapin, coûter les yeux de la tête",
+      "Emoções: ça alors !, quel dommage !, ça m'agace, ne t'inquiète pas",
+      "Críticas: un chef-d'œuvre, c'est décevant, je te le conseille vivement"
+     ],
+     "q": "Fala-me de um filme ou livro de que gostaste muito ou não, com uma expressão idiomática e uma reação.",
+     "c": "Escreve cinco frases em francês sobre a tua semana, cada uma com uma expressão ou reação diferente."
+    },
+    "pt_BR": {
+     "t": "Revisão: cultura e expressões",
+     "g": "Revise as expressões idiomáticas, as emoções e o vocabulário cultural das últimas semanas num papo animado.",
+     "p": [
+      "Expressões: avoir la pêche, poser un lapin, coûter les yeux de la tête",
+      "Emoções: ça alors !, quel dommage !, ça m'agace, ne t'inquiète pas",
+      "Críticas: un chef-d'œuvre, c'est décevant, je te le conseille vivement"
+     ],
+     "q": "Me fale de um filme ou livro que você amou ou não curtiu, com uma expressão idiomática e uma reação.",
+     "c": "Escreva cinco frases em francês sobre a sua semana, cada uma com uma expressão ou reação diferente."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "avoir la pêche",
+      "ex": "Ce matin, j'ai la pêche : on va au marché ?"
+     },
+     {
+      "w": "poser un lapin",
+      "ex": "Il m'a posé un lapin hier soir, j'ai attendu une heure."
+     },
+     {
+      "w": "coûter les yeux de la tête",
+      "ex": "Ce restaurant coûte les yeux de la tête."
+     },
+     {
+      "w": "sans blague ?",
+      "ex": "Tu as rencontré ton acteur préféré ? Sans blague ?"
+     },
+     {
+      "w": "quel dommage !",
+      "ex": "Tu ne peux pas venir samedi ? Quel dommage !"
+     },
+     {
+      "w": "bon courage !",
+      "ex": "Tu déménages demain ? Bon courage !"
+     }
+    ],
+    "gram": "Révision : les expressions idiomatiques ne se traduisent pas mot à mot ; on les apprend en contexte, avec leur registre."
+   }
+  },
+  {
+   "d": 245,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Prefixes and suffixes",
+     "g": "Guess the meaning of new French words by spotting prefixes like re-, dé-, in- and suffixes like -able, -tion.",
+     "p": [
+      "Prefixes: re- (refaire, relire), dé-/dés- (défaire, désactiver), in-/im- (inutile, impossible)",
+      "Suffixes: -able (lavable, faisable), -ment (lentement, le changement), -tion (la création)",
+      "Combined: lisible → illisible, prévoir → imprévisible, organiser → la réorganisation"
+     ],
+     "q": "What could incroyable, démonter and relire mean? Explain how you guessed!",
+     "c": "Find three French words with a prefix and three with a suffix on a menu, sign or app, and decode them."
+    },
+    "de": {
+     "t": "Präfixe und Suffixe",
+     "g": "Du errätst neue französische Wörter über Präfixe wie re-, dé-, in- und Suffixe wie -able, -tion.",
+     "p": [
+      "Präfixe: re- (refaire, relire), dé-/dés- (défaire, désactiver), in-/im- (inutile, impossible)",
+      "Suffixe: -able (lavable, faisable), -ment (lentement, le changement), -tion (la création)",
+      "Kombiniert: lisible → illisible, prévoir → imprévisible, organiser → la réorganisation"
+     ],
+     "q": "Was könnten incroyable, démonter und relire bedeuten? Erklär, wie du es erraten hast!",
+     "c": "Finde je drei französische Wörter mit Präfix und mit Suffix auf einer Karte, einem Schild oder in einer App."
+    },
+    "es": {
+     "t": "Prefijos y sufijos",
+     "g": "Adivina palabras francesas nuevas gracias a prefijos como re-, dé-, in- y sufijos como -able, -tion.",
+     "p": [
+      "Prefijos: re- (refaire, relire), dé-/dés- (défaire, désactiver), in-/im- (inutile, impossible)",
+      "Sufijos: -able (lavable, faisable), -ment (lentement, le changement), -tion (la création)",
+      "Combinados: lisible → illisible, prévoir → imprévisible, organiser → la réorganisation"
+     ],
+     "q": "¿Qué pueden significar incroyable, démonter y relire? ¡Explica cómo lo adivinaste!",
+     "c": "Busca tres palabras francesas con prefijo y tres con sufijo en un menú, un cartel o una app, y descífralas."
+    },
+    "fr": {
+     "t": "Préfixes et suffixes",
+     "g": "Deviner le sens des mots nouveaux grâce aux préfixes re-, dé-, in- et aux suffixes -able, -tion.",
+     "p": [
+      "Préfixes : re- (refaire, relire), dé-/dés- (défaire, désactiver), in-/im- (inutile, impossible)",
+      "Suffixes : -able (lavable, faisable), -ment (lentement, le changement), -tion (la création)",
+      "Combinés : lisible → illisible, prévoir → imprévisible, organiser → la réorganisation"
+     ],
+     "q": "Que peuvent vouloir dire incroyable, démonter et relire ? Explique comment tu as deviné !",
+     "c": "Trouve trois mots avec un préfixe et trois avec un suffixe sur un menu, un panneau ou une appli."
+    },
+    "it": {
+     "t": "Prefissi e suffissi",
+     "g": "Indovina parole francesi nuove grazie a prefissi come re-, dé-, in- e suffissi come -able, -tion.",
+     "p": [
+      "Prefissi: re- (refaire, relire), dé-/dés- (défaire, désactiver), in-/im- (inutile, impossible)",
+      "Suffissi: -able (lavable, faisable), -ment (lentement, le changement), -tion (la création)",
+      "Combinati: lisible → illisible, prévoir → imprévisible, organiser → la réorganisation"
+     ],
+     "q": "Cosa possono significare incroyable, démonter e relire? Spiega come l'hai indovinato!",
+     "c": "Trova tre parole francesi con prefisso e tre con suffisso su un menù, un cartello o un'app, e decifrale."
+    },
+    "pt": {
+     "t": "Prefixos e sufixos",
+     "g": "Adivinha palavras francesas novas graças a prefixos como re-, dé-, in- e sufixos como -able, -tion.",
+     "p": [
+      "Prefixos: re- (refaire, relire), dé-/dés- (défaire, désactiver), in-/im- (inutile, impossible)",
+      "Sufixos: -able (lavable, faisable), -ment (lentement, le changement), -tion (la création)",
+      "Combinados: lisible → illisible, prévoir → imprévisible, organiser → la réorganisation"
+     ],
+     "q": "O que podem significar incroyable, démonter e relire? Explica como adivinhaste!",
+     "c": "Procura três palavras francesas com prefixo e três com sufixo num menu, placa ou app, e decifra-as."
+    },
+    "pt_BR": {
+     "t": "Prefixos e sufixos",
+     "g": "Adivinhe palavras francesas novas com prefixos como re-, dé-, in- e sufixos como -able, -tion.",
+     "p": [
+      "Prefixos: re- (refaire, relire), dé-/dés- (défaire, désactiver), in-/im- (inutile, impossible)",
+      "Sufixos: -able (lavable, faisable), -ment (lentement, le changement), -tion (la création)",
+      "Combinados: lisible → illisible, prévoir → imprévisible, organiser → la réorganisation"
+     ],
+     "q": "O que podem significar incroyable, démonter e relire? Explique como você adivinhou!",
+     "c": "Procure três palavras francesas com prefixo e três com sufixo num cardápio, placa ou app, e decifre."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "refaire",
+      "ex": "J'ai raté la recette, je vais la refaire."
+     },
+     {
+      "w": "défaire",
+      "ex": "Il défait sa valise en arrivant à l'hôtel."
+     },
+     {
+      "w": "impossible",
+      "ex": "Rien n'est impossible avec un peu de patience."
+     },
+     {
+      "w": "faisable",
+      "ex": "Ce projet est ambitieux mais faisable."
+     },
+     {
+      "w": "lentement",
+      "ex": "Parle lentement, s'il te plaît."
+     },
+     {
+      "w": "la création",
+      "ex": "La création de ce jardin a pris deux ans."
+     }
+    ],
+    "gram": "Préfixes : re- (répétition), dé- (contraire), in-/im-/il-/ir- (négation). Suffixes : -able (possible), -ment (adverbe), -tion (nom)."
+   }
+  },
+  {
+   "d": 246,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Word families",
+     "g": "Multiply your vocabulary by building families from one root: travailler, le travail, un travailleur.",
+     "p": [
+      "One root, many words: travailler → le travail → un travailleur → travailleur, travailleuse (adjectif)",
+      "Regular patterns: chanter → le chant → un chanteur ; vendre → la vente → un vendeur",
+      "Watch out, some change: nager → la natation → un nageur ; lire → la lecture → un lecteur"
+     ],
+     "q": "Pick a verb you use a lot in French. Can you find its noun and the word for the person who does it?",
+     "c": "Build two word families of four words each, starting from danser and construire."
+    },
+    "de": {
+     "t": "Wortfamilien",
+     "g": "Du vervielfachst deinen Wortschatz mit Familien aus einem Stamm: travailler, le travail, un travailleur.",
+     "p": [
+      "Ein Stamm, viele Wörter: travailler → le travail → un travailleur → travailleur, travailleuse (adjectif)",
+      "Regelmäßige Muster: chanter → le chant → un chanteur ; vendre → la vente → un vendeur",
+      "Achtung, manche ändern sich: nager → la natation → un nageur ; lire → la lecture → un lecteur"
+     ],
+     "q": "Nimm ein Verb, das du oft auf Französisch benutzt. Findest du das Nomen und die Person dazu?",
+     "c": "Bilde zwei Wortfamilien mit je vier Wörtern, ausgehend von danser und construire."
+    },
+    "es": {
+     "t": "Familias de palabras",
+     "g": "Multiplica tu vocabulario creando familias desde una raíz: travailler, le travail, un travailleur.",
+     "p": [
+      "Una raíz, muchas palabras: travailler → le travail → un travailleur → travailleur, travailleuse (adjectif)",
+      "Patrones regulares: chanter → le chant → un chanteur ; vendre → la vente → un vendeur",
+      "Ojo, algunas cambian: nager → la natation → un nageur ; lire → la lecture → un lecteur"
+     ],
+     "q": "Elige un verbo que uses mucho en francés. ¿Encuentras su sustantivo y la palabra para la persona que lo hace?",
+     "c": "Crea dos familias de cuatro palabras cada una a partir de danser y construire."
+    },
+    "fr": {
+     "t": "Les familles de mots",
+     "g": "Multiplier son vocabulaire avec des familles construites sur un radical : travailler, le travail, un travailleur.",
+     "p": [
+      "Un radical, plusieurs mots : travailler → le travail → un travailleur → travailleur, travailleuse (adjectif)",
+      "Modèles réguliers : chanter → le chant → un chanteur ; vendre → la vente → un vendeur",
+      "Attention, certains changent : nager → la natation → un nageur ; lire → la lecture → un lecteur"
+     ],
+     "q": "Choisis un verbe que tu utilises souvent. Trouves-tu le nom et la personne qui fait l'action ?",
+     "c": "Construis deux familles de quatre mots chacune à partir de danser et construire."
+    },
+    "it": {
+     "t": "Famiglie di parole",
+     "g": "Moltiplica il tuo lessico creando famiglie da una radice: travailler, le travail, un travailleur.",
+     "p": [
+      "Una radice, tante parole: travailler → le travail → un travailleur → travailleur, travailleuse (adjectif)",
+      "Schemi regolari: chanter → le chant → un chanteur ; vendre → la vente → un vendeur",
+      "Attenzione, alcune cambiano: nager → la natation → un nageur ; lire → la lecture → un lecteur"
+     ],
+     "q": "Scegli un verbo che usi spesso in francese. Trovi il nome e la parola per la persona che lo fa?",
+     "c": "Crea due famiglie di quattro parole ciascuna partendo da danser e construire."
+    },
+    "pt": {
+     "t": "Famílias de palavras",
+     "g": "Multiplica o teu vocabulário com famílias criadas a partir de uma raiz: travailler, le travail, un travailleur.",
+     "p": [
+      "Uma raiz, várias palavras: travailler → le travail → un travailleur → travailleur, travailleuse (adjectif)",
+      "Padrões regulares: chanter → le chant → un chanteur ; vendre → la vente → un vendeur",
+      "Atenção, algumas mudam: nager → la natation → un nageur ; lire → la lecture → un lecteur"
+     ],
+     "q": "Escolhe um verbo que uses muito em francês. Encontras o nome e a palavra para quem faz a ação?",
+     "c": "Cria duas famílias de quatro palavras cada, a partir de danser e construire."
+    },
+    "pt_BR": {
+     "t": "Famílias de palavras",
+     "g": "Multiplique seu vocabulário com famílias criadas a partir de uma raiz: travailler, le travail, un travailleur.",
+     "p": [
+      "Uma raiz, várias palavras: travailler → le travail → un travailleur → travailleur, travailleuse (adjectif)",
+      "Padrões regulares: chanter → le chant → un chanteur ; vendre → la vente → un vendeur",
+      "Atenção, algumas mudam: nager → la natation → un nageur ; lire → la lecture → un lecteur"
+     ],
+     "q": "Escolha um verbo que você usa muito em francês. Consegue achar o substantivo e a palavra para quem faz a ação?",
+     "c": "Monte duas famílias de quatro palavras cada, a partir de danser e construire."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "le travail",
+      "ex": "Le travail commence à neuf heures."
+     },
+     {
+      "w": "un travailleur",
+      "ex": "C'est un travailleur très sérieux."
+     },
+     {
+      "w": "la vente",
+      "ex": "La vente de la maison est enfin signée."
+     },
+     {
+      "w": "un vendeur",
+      "ex": "Le vendeur m'a conseillé une veste bleue."
+     },
+     {
+      "w": "la lecture",
+      "ex": "La lecture est mon passe-temps préféré."
+     },
+     {
+      "w": "un nageur",
+      "ex": "Ce nageur s'entraîne tous les matins."
+     }
+    ],
+    "gram": "Famille de mots : un même radical donne un verbe, un nom, une personne et un adjectif : jouer, le jeu, un joueur, joueur."
+   }
+  },
+  {
+   "d": 247,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Nominalisation",
+     "g": "Turn French verbs into nouns, like arriver into l'arrivée, for concise headlines, notes and announcements.",
+     "p": [
+      "Verb to noun: arriver → l'arrivée, partir → le départ, décider → la décision",
+      "Common endings: -tion/-sion, -ment, -ée, -ure : la construction, le lancement, la montée, l'ouverture",
+      "In signs and titles: Le musée ouvre à 9 h → Ouverture du musée à 9 h"
+     ],
+     "q": "Look at your plan for tomorrow. Can you write three steps as nouns, like Départ à 8 h?",
+     "c": "Rewrite three sentences as headlines using nouns: on construit un pont, le magasin ferme, le film sort."
+    },
+    "de": {
+     "t": "Nominalisierung",
+     "g": "Du machst aus französischen Verben Nomen, etwa arriver zu l'arrivée, für knappe Titel, Notizen und Ansagen.",
+     "p": [
+      "Verb zu Nomen: arriver → l'arrivée, partir → le départ, décider → la décision",
+      "Häufige Endungen: -tion/-sion, -ment, -ée, -ure : la construction, le lancement, la montée, l'ouverture",
+      "Auf Schildern und in Titeln: Le musée ouvre à 9 h → Ouverture du musée à 9 h"
+     ],
+     "q": "Schau auf deinen Plan für morgen. Schreibst du drei Schritte als Nomen, wie Départ à 8 h?",
+     "c": "Schreib drei Sätze als Schlagzeilen mit Nomen um: on construit un pont, le magasin ferme, le film sort."
+    },
+    "es": {
+     "t": "La nominalización",
+     "g": "Convierte verbos franceses en sustantivos, como arriver en l'arrivée, para titulares, notas y avisos breves.",
+     "p": [
+      "De verbo a sustantivo: arriver → l'arrivée, partir → le départ, décider → la décision",
+      "Terminaciones frecuentes: -tion/-sion, -ment, -ée, -ure : la construction, le lancement, la montée, l'ouverture",
+      "En carteles y títulos: Le musée ouvre à 9 h → Ouverture du musée à 9 h"
+     ],
+     "q": "Mira tu plan de mañana. ¿Puedes escribir tres pasos como sustantivos, como Départ à 8 h?",
+     "c": "Reescribe tres frases como titulares con sustantivos: on construit un pont, le magasin ferme, le film sort."
+    },
+    "fr": {
+     "t": "La nominalisation",
+     "g": "Transformer un verbe en nom, comme arriver en l'arrivée, pour des titres, notes et annonces concis.",
+     "p": [
+      "Du verbe au nom : arriver → l'arrivée, partir → le départ, décider → la décision",
+      "Terminaisons fréquentes : -tion/-sion, -ment, -ée, -ure : la construction, le lancement, la montée, l'ouverture",
+      "Dans les panneaux et titres : Le musée ouvre à 9 h → Ouverture du musée à 9 h"
+     ],
+     "q": "Regarde ton programme de demain. Peux-tu écrire trois étapes avec des noms, comme Départ à 8 h ?",
+     "c": "Réécris trois phrases en titres avec des noms : on construit un pont, le magasin ferme, le film sort."
+    },
+    "it": {
+     "t": "La nominalizzazione",
+     "g": "Trasforma i verbi francesi in nomi, come arriver in l'arrivée, per titoli, appunti e avvisi concisi.",
+     "p": [
+      "Dal verbo al nome: arriver → l'arrivée, partir → le départ, décider → la décision",
+      "Desinenze frequenti: -tion/-sion, -ment, -ée, -ure : la construction, le lancement, la montée, l'ouverture",
+      "Su cartelli e titoli: Le musée ouvre à 9 h → Ouverture du musée à 9 h"
+     ],
+     "q": "Guarda il tuo programma di domani. Riesci a scrivere tre tappe con dei nomi, come Départ à 8 h?",
+     "c": "Riscrivi tre frasi come titoli con nomi: on construit un pont, le magasin ferme, le film sort."
+    },
+    "pt": {
+     "t": "A nominalização",
+     "g": "Transforma verbos franceses em nomes, como arriver em l'arrivée, para títulos, notas e avisos concisos.",
+     "p": [
+      "Do verbo ao nome: arriver → l'arrivée, partir → le départ, décider → la décision",
+      "Terminações frequentes: -tion/-sion, -ment, -ée, -ure : la construction, le lancement, la montée, l'ouverture",
+      "Em placas e títulos: Le musée ouvre à 9 h → Ouverture du musée à 9 h"
+     ],
+     "q": "Olha para o teu plano de amanhã. Consegues escrever três etapas com nomes, como Départ à 8 h?",
+     "c": "Reescreve três frases como títulos com nomes: on construit un pont, le magasin ferme, le film sort."
+    },
+    "pt_BR": {
+     "t": "A nominalização",
+     "g": "Transforme verbos franceses em substantivos, como arriver em l'arrivée, para títulos, notas e avisos curtos.",
+     "p": [
+      "Do verbo ao substantivo: arriver → l'arrivée, partir → le départ, décider → la décision",
+      "Terminações frequentes: -tion/-sion, -ment, -ée, -ure : la construction, le lancement, la montée, l'ouverture",
+      "Em placas e títulos: Le musée ouvre à 9 h → Ouverture du musée à 9 h"
+     ],
+     "q": "Olhe seu plano de amanhã. Consegue escrever três etapas com substantivos, como Départ à 8 h?",
+     "c": "Reescreva três frases como manchetes com substantivos: on construit un pont, le magasin ferme, le film sort."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "l'arrivée",
+      "ex": "L'arrivée du train est prévue à midi."
+     },
+     {
+      "w": "le départ",
+      "ex": "Le départ est fixé à huit heures."
+     },
+     {
+      "w": "la décision",
+      "ex": "C'est une décision difficile à prendre."
+     },
+     {
+      "w": "l'ouverture",
+      "ex": "L'ouverture de la boutique a lieu samedi."
+     },
+     {
+      "w": "le lancement",
+      "ex": "Le lancement de l'application est un succès."
+     },
+     {
+      "w": "la fermeture",
+      "ex": "La fermeture des portes se fait à 18 h."
+     }
+    ],
+    "gram": "Nominalisation : transformer un verbe en nom (décider → la décision) pour un style concis, typique des titres, notes et annonces."
+   }
+  },
+  {
+   "d": 248,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Synonyms to enrich speech",
+     "g": "Sound more fluent by replacing all-purpose dire, faire, avoir and chose with precise French words.",
+     "p": [
+      "Instead of dire and faire: dire → affirmer, raconter, annoncer ; faire → réaliser, préparer, effectuer",
+      "Instead of avoir and chose: avoir → posséder, obtenir, disposer de ; une chose → un objet, un sujet, un détail",
+      "Before and after: Il a fait un gâteau → Il a préparé un gâteau ; J'ai eu mon diplôme → J'ai obtenu mon diplôme"
+     ],
+     "q": "Tell me what you did last weekend in French, but without using faire even once. Can you do it?",
+     "c": "Rewrite: J'ai fait un voyage, j'ai eu un souvenir et j'ai dit une chose drôle, with three precise verbs."
+    },
+    "de": {
+     "t": "Synonyme für reichere Sprache",
+     "g": "Du klingst flüssiger, wenn du dire, faire, avoir und chose durch genaue französische Wörter ersetzt.",
+     "p": [
+      "Statt dire und faire: dire → affirmer, raconter, annoncer ; faire → réaliser, préparer, effectuer",
+      "Statt avoir und chose: avoir → posséder, obtenir, disposer de ; une chose → un objet, un sujet, un détail",
+      "Vorher und nachher: Il a fait un gâteau → Il a préparé un gâteau ; J'ai eu mon diplôme → J'ai obtenu mon diplôme"
+     ],
+     "q": "Erzähl mir auf Französisch, was du letztes Wochenende gemacht hast, ganz ohne faire. Schaffst du das?",
+     "c": "Schreib um: J'ai fait un voyage, j'ai eu un souvenir et j'ai dit une chose drôle, mit drei genauen Verben."
+    },
+    "es": {
+     "t": "Sinónimos para enriquecer el discurso",
+     "g": "Suena más fluido cambiando los comodines dire, faire, avoir y chose por palabras precisas en francés.",
+     "p": [
+      "En vez de dire y faire: dire → affirmer, raconter, annoncer ; faire → réaliser, préparer, effectuer",
+      "En vez de avoir y chose: avoir → posséder, obtenir, disposer de ; une chose → un objet, un sujet, un détail",
+      "Antes y después: Il a fait un gâteau → Il a préparé un gâteau ; J'ai eu mon diplôme → J'ai obtenu mon diplôme"
+     ],
+     "q": "Cuéntame en francés qué hiciste el fin de semana pasado sin usar faire ni una vez. ¿Te atreves?",
+     "c": "Reescribe: J'ai fait un voyage, j'ai eu un souvenir et j'ai dit une chose drôle, con tres verbos precisos."
+    },
+    "fr": {
+     "t": "Des synonymes pour enrichir",
+     "g": "Parler plus finement en remplaçant dire, faire, avoir et chose par des mots précis.",
+     "p": [
+      "Au lieu de dire et faire : dire → affirmer, raconter, annoncer ; faire → réaliser, préparer, effectuer",
+      "Au lieu de avoir et chose : avoir → posséder, obtenir, disposer de ; une chose → un objet, un sujet, un détail",
+      "Avant et après : Il a fait un gâteau → Il a préparé un gâteau ; J'ai eu mon diplôme → J'ai obtenu mon diplôme"
+     ],
+     "q": "Raconte-moi ton dernier week-end sans utiliser une seule fois le verbe faire. Tu relèves le défi ?",
+     "c": "Réécris : J'ai fait un voyage, j'ai eu un souvenir et j'ai dit une chose drôle, avec trois verbes précis."
+    },
+    "it": {
+     "t": "Sinonimi per arricchire il discorso",
+     "g": "Sembra più fluente sostituendo i jolly dire, faire, avoir e chose con parole francesi precise.",
+     "p": [
+      "Invece di dire e faire: dire → affirmer, raconter, annoncer ; faire → réaliser, préparer, effectuer",
+      "Invece di avoir e chose: avoir → posséder, obtenir, disposer de ; une chose → un objet, un sujet, un détail",
+      "Prima e dopo: Il a fait un gâteau → Il a préparé un gâteau ; J'ai eu mon diplôme → J'ai obtenu mon diplôme"
+     ],
+     "q": "Raccontami in francese cosa hai fatto lo scorso weekend senza mai usare faire. Ce la fai?",
+     "c": "Riscrivi: J'ai fait un voyage, j'ai eu un souvenir et j'ai dit une chose drôle, con tre verbi precisi."
+    },
+    "pt": {
+     "t": "Sinónimos para enriquecer o discurso",
+     "g": "Soa mais fluente ao trocar os genéricos dire, faire, avoir e chose por palavras francesas precisas.",
+     "p": [
+      "Em vez de dire e faire: dire → affirmer, raconter, annoncer ; faire → réaliser, préparer, effectuer",
+      "Em vez de avoir e chose: avoir → posséder, obtenir, disposer de ; une chose → un objet, un sujet, un détail",
+      "Antes e depois: Il a fait un gâteau → Il a préparé un gâteau ; J'ai eu mon diplôme → J'ai obtenu mon diplôme"
+     ],
+     "q": "Conta-me em francês o que fizeste no último fim de semana sem usar faire uma única vez. Consegues?",
+     "c": "Reescreve: J'ai fait un voyage, j'ai eu un souvenir et j'ai dit une chose drôle, com três verbos precisos."
+    },
+    "pt_BR": {
+     "t": "Sinônimos para enriquecer a fala",
+     "g": "Soe mais fluente trocando os genéricos dire, faire, avoir e chose por palavras francesas precisas.",
+     "p": [
+      "Em vez de dire e faire: dire → affirmer, raconter, annoncer ; faire → réaliser, préparer, effectuer",
+      "Em vez de avoir e chose: avoir → posséder, obtenir, disposer de ; une chose → un objet, un sujet, un détail",
+      "Antes e depois: Il a fait un gâteau → Il a préparé un gâteau ; J'ai eu mon diplôme → J'ai obtenu mon diplôme"
+     ],
+     "q": "Me conte em francês o que você fez no último fim de semana sem usar faire nenhuma vez. Topa?",
+     "c": "Reescreva: J'ai fait un voyage, j'ai eu un souvenir et j'ai dit une chose drôle, com três verbos precisos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "réaliser",
+      "ex": "Elle a réalisé son rêve : ouvrir une librairie."
+     },
+     {
+      "w": "effectuer",
+      "ex": "Vous pouvez effectuer le paiement en ligne."
+     },
+     {
+      "w": "obtenir",
+      "ex": "J'ai obtenu mon permis du premier coup."
+     },
+     {
+      "w": "posséder",
+      "ex": "Il possède une belle collection de vinyles."
+     },
+     {
+      "w": "raconter",
+      "ex": "Raconte-moi ton voyage en Bretagne !"
+     },
+     {
+      "w": "un sujet",
+      "ex": "C'est un sujet passionnant pour un exposé."
+     }
+    ],
+    "gram": "Enrichir son style : remplacer les verbes passe-partout (dire, faire, avoir) et le mot chose par un terme précis selon le contexte."
+   }
+  },
+  {
+   "d": 249,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Verbs of saying",
+     "g": "Report what people said with more nuance than dire: affirmer, préciser, ajouter, avouer.",
+     "p": [
+      "The verbs: affirmer, expliquer, préciser, ajouter, répondre, avouer, annoncer",
+      "In reported speech: Il a précisé que le rendez-vous était à 10 h. Elle a avoué qu'elle avait oublié.",
+      "The nuance: affirmer = avec certitude, avouer = reconnaître, ajouter = en plus, préciser = un détail"
+     ],
+     "q": "Report a recent conversation in French using at least three different verbs of saying.",
+     "c": "Rewrite a short dialogue from a series you like in reported speech, without using dire."
+    },
+    "de": {
+     "t": "Verben des Sagens",
+     "g": "Du gibst Gesagtes nuancierter wieder als mit dire: affirmer, préciser, ajouter, avouer.",
+     "p": [
+      "Die Verben: affirmer, expliquer, préciser, ajouter, répondre, avouer, annoncer",
+      "In der indirekten Rede: Il a précisé que le rendez-vous était à 10 h. Elle a avoué qu'elle avait oublié.",
+      "Die Nuance: affirmer = avec certitude, avouer = reconnaître, ajouter = en plus, préciser = un détail"
+     ],
+     "q": "Gib ein aktuelles Gespräch auf Französisch wieder, mit mindestens drei verschiedenen Verben des Sagens.",
+     "c": "Schreib einen kurzen Dialog aus einer Serie, die du magst, in indirekte Rede um, ganz ohne dire."
+    },
+    "es": {
+     "t": "Verbos de habla",
+     "g": "Cuenta lo que dijo alguien con más matices que dire: affirmer, préciser, ajouter, avouer.",
+     "p": [
+      "Los verbos: affirmer, expliquer, préciser, ajouter, répondre, avouer, annoncer",
+      "En estilo indirecto: Il a précisé que le rendez-vous était à 10 h. Elle a avoué qu'elle avait oublié.",
+      "El matiz: affirmer = avec certitude, avouer = reconnaître, ajouter = en plus, préciser = un détail"
+     ],
+     "q": "Cuéntame en francés una conversación reciente usando al menos tres verbos de habla distintos.",
+     "c": "Pasa a estilo indirecto un diálogo corto de una serie que te guste, sin usar dire."
+    },
+    "fr": {
+     "t": "Les verbes de parole",
+     "g": "Rapporter des paroles avec plus de nuance que dire : affirmer, préciser, ajouter, avouer.",
+     "p": [
+      "Les verbes : affirmer, expliquer, préciser, ajouter, répondre, avouer, annoncer",
+      "Au discours indirect : Il a précisé que le rendez-vous était à 10 h. Elle a avoué qu'elle avait oublié.",
+      "La nuance : affirmer = avec certitude, avouer = reconnaître, ajouter = en plus, préciser = un détail"
+     ],
+     "q": "Rapporte une conversation récente avec au moins trois verbes de parole différents.",
+     "c": "Mets au discours indirect un court dialogue d'une série que tu aimes, sans utiliser dire."
+    },
+    "it": {
+     "t": "Verbi del dire",
+     "g": "Riferisci ciò che è stato detto con più sfumature di dire: affirmer, préciser, ajouter, avouer.",
+     "p": [
+      "I verbi: affirmer, expliquer, préciser, ajouter, répondre, avouer, annoncer",
+      "Nel discorso indiretto: Il a précisé que le rendez-vous était à 10 h. Elle a avoué qu'elle avait oublié.",
+      "La sfumatura: affirmer = avec certitude, avouer = reconnaître, ajouter = en plus, préciser = un détail"
+     ],
+     "q": "Riferisci in francese una conversazione recente usando almeno tre verbi del dire diversi.",
+     "c": "Trasforma in discorso indiretto un breve dialogo di una serie che ti piace, senza usare dire."
+    },
+    "pt": {
+     "t": "Verbos declarativos",
+     "g": "Relata o que alguém disse com mais nuance do que dire: affirmer, préciser, ajouter, avouer.",
+     "p": [
+      "Os verbos: affirmer, expliquer, préciser, ajouter, répondre, avouer, annoncer",
+      "No discurso indireto: Il a précisé que le rendez-vous était à 10 h. Elle a avoué qu'elle avait oublié.",
+      "A nuance: affirmer = avec certitude, avouer = reconnaître, ajouter = en plus, préciser = un détail"
+     ],
+     "q": "Relata em francês uma conversa recente usando pelo menos três verbos declarativos diferentes.",
+     "c": "Passa para discurso indireto um diálogo curto de uma série de que gostes, sem usar dire."
+    },
+    "pt_BR": {
+     "t": "Verbos de dizer",
+     "g": "Relate o que alguém disse com mais nuance do que dire: affirmer, préciser, ajouter, avouer.",
+     "p": [
+      "Os verbos: affirmer, expliquer, préciser, ajouter, répondre, avouer, annoncer",
+      "No discurso indireto: Il a précisé que le rendez-vous était à 10 h. Elle a avoué qu'elle avait oublié.",
+      "A nuance: affirmer = avec certitude, avouer = reconnaître, ajouter = en plus, préciser = un détail"
+     ],
+     "q": "Relate em francês uma conversa recente usando pelo menos três verbos de dizer diferentes.",
+     "c": "Passe para o discurso indireto um diálogo curto de uma série que você curte, sem usar dire."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "affirmer",
+      "ex": "Il affirme que ce café est le meilleur de la ville."
+     },
+     {
+      "w": "expliquer",
+      "ex": "Peux-tu m'expliquer comment fonctionne ce jeu ?"
+     },
+     {
+      "w": "préciser",
+      "ex": "Elle a précisé que la réunion durerait une heure."
+     },
+     {
+      "w": "ajouter",
+      "ex": "Il a ajouté qu'il viendrait avec sa sœur."
+     },
+     {
+      "w": "répondre",
+      "ex": "Le guide a répondu à toutes nos questions."
+     },
+     {
+      "w": "avouer",
+      "ex": "J'avoue que je n'ai pas lu le livre jusqu'au bout."
+     }
+    ],
+    "gram": "Verbes introducteurs + que + discours indirect : il a affirmé que..., elle a ajouté que... ; chaque verbe apporte sa nuance."
+   }
+  },
+  {
+   "d": 250,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Verbs of movement with avoir",
+     "g": "Know when monter, descendre, sortir and rentrer take avoir instead of être in the passé composé.",
+     "p": [
+      "Same verb, two auxiliaries: Je suis monté(e) au troisième étage. / J'ai monté les valises.",
+      "More pairs: Elle est sortie ce soir. / Elle a sorti le chien. Il est rentré tard. / Il a rentré le vélo.",
+      "The rule: avec un COD → avoir ; sans COD → être (aussi descendre, passer, retourner)"
+     ],
+     "q": "What did you take out, bring in or carry up today? Answer in French with avoir!",
+     "c": "Write three pairs of sentences, one with être and one with avoir, for sortir, descendre and passer."
+    },
+    "de": {
+     "t": "Bewegungsverben mit avoir",
+     "g": "Du weißt, wann monter, descendre, sortir und rentrer im passé composé avoir statt être nehmen.",
+     "p": [
+      "Ein Verb, zwei Hilfsverben: Je suis monté(e) au troisième étage. / J'ai monté les valises.",
+      "Weitere Paare: Elle est sortie ce soir. / Elle a sorti le chien. Il est rentré tard. / Il a rentré le vélo.",
+      "Die Regel: avec un COD → avoir ; sans COD → être (aussi descendre, passer, retourner)"
+     ],
+     "q": "Was hast du heute hinausgebracht, hereingeholt oder hinaufgetragen? Antworte auf Französisch mit avoir!",
+     "c": "Schreib drei Satzpaare, je einmal mit être und mit avoir, für sortir, descendre und passer."
+    },
+    "es": {
+     "t": "Verbos de movimiento con avoir",
+     "g": "Aprende cuándo monter, descendre, sortir y rentrer llevan avoir en vez de être en el passé composé.",
+     "p": [
+      "Mismo verbo, dos auxiliares: Je suis monté(e) au troisième étage. / J'ai monté les valises.",
+      "Más parejas: Elle est sortie ce soir. / Elle a sorti le chien. Il est rentré tard. / Il a rentré le vélo.",
+      "La regla: avec un COD → avoir ; sans COD → être (aussi descendre, passer, retourner)"
+     ],
+     "q": "¿Qué sacaste, metiste o subiste hoy? ¡Responde en francés con avoir!",
+     "c": "Escribe tres parejas de frases, una con être y otra con avoir, para sortir, descendre y passer."
+    },
+    "fr": {
+     "t": "Verbes de mouvement avec avoir",
+     "g": "Savoir quand monter, descendre, sortir et rentrer se conjuguent avec avoir au passé composé.",
+     "p": [
+      "Un verbe, deux auxiliaires : Je suis monté(e) au troisième étage. / J'ai monté les valises.",
+      "D'autres paires : Elle est sortie ce soir. / Elle a sorti le chien. Il est rentré tard. / Il a rentré le vélo.",
+      "La règle : avec un COD → avoir ; sans COD → être (aussi descendre, passer, retourner)"
+     ],
+     "q": "Qu'as-tu sorti, rentré ou monté aujourd'hui ? Réponds avec avoir !",
+     "c": "Écris trois paires de phrases, une avec être et une avec avoir, pour sortir, descendre et passer."
+    },
+    "it": {
+     "t": "Verbi di movimento con avoir",
+     "g": "Scopri quando monter, descendre, sortir e rentrer vogliono avoir invece di être al passé composé.",
+     "p": [
+      "Stesso verbo, due ausiliari: Je suis monté(e) au troisième étage. / J'ai monté les valises.",
+      "Altre coppie: Elle est sortie ce soir. / Elle a sorti le chien. Il est rentré tard. / Il a rentré le vélo.",
+      "La regola: avec un COD → avoir ; sans COD → être (aussi descendre, passer, retourner)"
+     ],
+     "q": "Cosa hai portato fuori, portato dentro o portato su oggi? Rispondi in francese con avoir!",
+     "c": "Scrivi tre coppie di frasi, una con être e una con avoir, per sortir, descendre e passer."
+    },
+    "pt": {
+     "t": "Verbos de movimento com avoir",
+     "g": "Percebe quando monter, descendre, sortir e rentrer levam avoir em vez de être no passé composé.",
+     "p": [
+      "O mesmo verbo, dois auxiliares: Je suis monté(e) au troisième étage. / J'ai monté les valises.",
+      "Mais pares: Elle est sortie ce soir. / Elle a sorti le chien. Il est rentré tard. / Il a rentré le vélo.",
+      "A regra: avec un COD → avoir ; sans COD → être (aussi descendre, passer, retourner)"
+     ],
+     "q": "O que tiraste, levaste para dentro ou subiste hoje? Responde em francês com avoir!",
+     "c": "Escreve três pares de frases, uma com être e outra com avoir, para sortir, descendre e passer."
+    },
+    "pt_BR": {
+     "t": "Verbos de movimento com avoir",
+     "g": "Entenda quando monter, descendre, sortir e rentrer usam avoir em vez de être no passé composé.",
+     "p": [
+      "O mesmo verbo, dois auxiliares: Je suis monté(e) au troisième étage. / J'ai monté les valises.",
+      "Mais pares: Elle est sortie ce soir. / Elle a sorti le chien. Il est rentré tard. / Il a rentré le vélo.",
+      "A regra: avec un COD → avoir ; sans COD → être (aussi descendre, passer, retourner)"
+     ],
+     "q": "O que você tirou, guardou ou levou para cima hoje? Responda em francês com avoir!",
+     "c": "Escreva três pares de frases, uma com être e outra com avoir, para sortir, descendre e passer."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "monter les valises",
+      "ex": "J'ai monté les valises jusqu'au cinquième."
+     },
+     {
+      "w": "descendre l'escalier",
+      "ex": "Elle a descendu l'escalier en courant."
+     },
+     {
+      "w": "sortir la poubelle",
+      "ex": "Tu as sorti la poubelle ce matin ?"
+     },
+     {
+      "w": "rentrer le linge",
+      "ex": "Il pleut ! J'ai rentré le linge vite fait."
+     },
+     {
+      "w": "passer un examen",
+      "ex": "Nous avons passé l'examen hier."
+     },
+     {
+      "w": "retourner la crêpe",
+      "ex": "Il a retourné la crêpe d'un coup de poêle."
+     }
+    ],
+    "gram": "Monter, descendre, sortir, rentrer, passer, retourner : être sans complément d'objet, avoir avec un COD : j'ai sorti le chien."
+   }
+  }
+ ]
+}

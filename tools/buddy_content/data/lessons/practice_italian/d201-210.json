@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 201,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Pronominal verbs: andarsene",
+     "g": "Use everyday verbs with pronouns: me ne vado, ce l'ho fatta, prendersela.",
+     "p": [
+      "Andarsene = to leave, to go away: me ne vado, te ne vai, se ne va, ce ne andiamo. Past: me ne sono andato/a.",
+      "Prendersela = to get upset or offended: non prendertela! se l'è presa per una battuta.",
+      "Cavarsela = to manage, to get by: me la cavo bene in cucina. The pronouns change, la stays."
+     ],
+     "q": "When was the last time you left a place early? Tell me with me ne sono andato/a...",
+     "c": "Write three mini dialogues: one with me ne vado, one with non prendertela, one with me la cavo."
+    },
+    "de": {
+     "t": "Pronominale Verben: andarsene",
+     "g": "Du benutzt Alltagsverben mit Pronomen: me ne vado, ce l'ho fatta, prendersela.",
+     "p": [
+      "Andarsene = weggehen: me ne vado, te ne vai, se ne va, ce ne andiamo. Vergangenheit: me ne sono andato/a.",
+      "Prendersela = sich ärgern, beleidigt sein: non prendertela! se l'è presa per una battuta.",
+      "Cavarsela = zurechtkommen: me la cavo bene in cucina. Die Pronomen ändern sich, la bleibt."
+     ],
+     "q": "Wann bist du zuletzt früh irgendwo weggegangen? Erzähl mit me ne sono andato/a...",
+     "c": "Schreib drei Minidialoge: einen mit me ne vado, einen mit non prendertela, einen mit me la cavo."
+    },
+    "es": {
+     "t": "Verbos pronominales: andarsene",
+     "g": "Usar verbos cotidianos con pronombres: me ne vado, ce l'ho fatta, prendersela.",
+     "p": [
+      "Andarsene = irse, marcharse: me ne vado, te ne vai, se ne va, ce ne andiamo. Pasado: me ne sono andato/a.",
+      "Prendersela = enfadarse, ofenderse: non prendertela! se l'è presa per una battuta.",
+      "Cavarsela = apañárselas: me la cavo bene in cucina. Los pronombres cambian, la se queda."
+     ],
+     "q": "¿Cuándo fue la última vez que te fuiste pronto de un sitio? Cuéntamelo con me ne sono andato/a...",
+     "c": "Escribe tres minidiálogos: uno con me ne vado, otro con non prendertela y otro con me la cavo."
+    },
+    "fr": {
+     "t": "Verbes pronominaux : andarsene",
+     "g": "Utiliser des verbes courants avec pronoms : me ne vado, ce l'ho fatta, prendersela.",
+     "p": [
+      "Andarsene = s'en aller : me ne vado, te ne vai, se ne va, ce ne andiamo. Passé : me ne sono andato/a.",
+      "Prendersela = se vexer, le prendre mal : non prendertela ! se l'è presa per una battuta.",
+      "Cavarsela = se débrouiller : me la cavo bene in cucina. Les pronoms changent, la reste."
+     ],
+     "q": "Quand es-tu parti tôt d'un endroit pour la dernière fois ? Raconte avec me ne sono andato/a...",
+     "c": "Écris trois mini-dialogues : un avec me ne vado, un avec non prendertela, un avec me la cavo."
+    },
+    "it": {
+     "t": "Verbi pronominali: andarsene",
+     "g": "Usare verbi quotidiani con i pronomi: me ne vado, ce l'ho fatta, prendersela.",
+     "p": [
+      "Andarsene = lasciare un luogo: me ne vado, te ne vai, se ne va, ce ne andiamo. Passato: me ne sono andato/a.",
+      "Prendersela = offendersi, arrabbiarsi: non prendertela! se l'è presa per una battuta.",
+      "Cavarsela = riuscire a gestire una situazione: me la cavo bene in cucina. Cambiano i pronomi, la resta."
+     ],
+     "q": "Quando te ne sei andato presto da un posto l'ultima volta? Raccontalo con me ne sono andato/a...",
+     "c": "Scrivi tre minidialoghi: uno con me ne vado, uno con non prendertela, uno con me la cavo."
+    },
+    "pt": {
+     "t": "Verbos pronominais: andarsene",
+     "g": "Usar verbos do dia a dia com pronomes: me ne vado, ce l'ho fatta, prendersela.",
+     "p": [
+      "Andarsene = ir-se embora: me ne vado, te ne vai, se ne va, ce ne andiamo. Passado: me ne sono andato/a.",
+      "Prendersela = zangar-se, ficar ofendido: non prendertela! se l'è presa per una battuta.",
+      "Cavarsela = desenrascar-se: me la cavo bene in cucina. Os pronomes mudam, o la fica."
+     ],
+     "q": "Quando foi a última vez que te foste embora cedo de um sítio? Conta com me ne sono andato/a...",
+     "c": "Escreve três minidiálogos: um com me ne vado, outro com non prendertela e outro com me la cavo."
+    },
+    "pt_BR": {
+     "t": "Verbos pronominais: andarsene",
+     "g": "Usar verbos do dia a dia com pronomes: me ne vado, ce l'ho fatta, prendersela.",
+     "p": [
+      "Andarsene = ir embora: me ne vado, te ne vai, se ne va, ce ne andiamo. Passado: me ne sono andato/a.",
+      "Prendersela = ficar chateado, se ofender: non prendertela! se l'è presa per una battuta.",
+      "Cavarsela = se virar: me la cavo bene in cucina. Os pronomes mudam, o la fica."
+     ],
+     "q": "Quando foi a última vez que você foi embora cedo de um lugar? Conte com me ne sono andato/a...",
+     "c": "Escreva três minidiálogos: um com me ne vado, outro com non prendertela e outro com me la cavo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "me ne vado",
+      "ex": "È tardi, me ne vado a casa."
+     },
+     {
+      "w": "se n'è andato",
+      "ex": "Il treno se n'è andato senza di noi."
+     },
+     {
+      "w": "non prendertela",
+      "ex": "Non prendertela, era solo uno scherzo!"
+     },
+     {
+      "w": "se l'è presa",
+      "ex": "Luca se l'è presa perché non l'abbiamo invitato."
+     },
+     {
+      "w": "me la cavo",
+      "ex": "Con l'inglese me la cavo abbastanza bene."
+     },
+     {
+      "w": "ce ne andiamo",
+      "ex": "Finiamo il caffè e poi ce ne andiamo."
+     }
+    ],
+    "gram": "Verbi pronominali: andarsene (me ne vado), prendersela (me la prendo), cavarsela (me la cavo). Ausiliare essere al passato."
+   }
+  },
+  {
+   "d": 202,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Farcela, metterci, volerci",
+     "g": "Master ce la faccio, ci metto un'ora and ci vuole pazienza.",
+     "p": [
+      "Farcela = to manage, to make it: ce la faccio, ce la fai? Past: ce l'ho fatta! (I did it!).",
+      "Metterci = how long a person takes: ci metto un'ora per arrivare; quanto ci metti?",
+      "Volerci = how long or how much is needed: ci vuole un'ora, ci vogliono due ore (agrees with what is needed)."
+     ],
+     "q": "How long does it take you to get to work or school? Answer with ci metto... and ci vuole...",
+     "c": "Write three sentences: something you managed (ce l'ho fatta), your commute (ci metto), a recipe (ci vogliono...)."
+    },
+    "de": {
+     "t": "Farcela, metterci, volerci",
+     "g": "Du beherrschst ce la faccio, ci metto un'ora und ci vuole pazienza.",
+     "p": [
+      "Farcela = es schaffen: ce la faccio, ce la fai? Vergangenheit: ce l'ho fatta! (Ich hab's geschafft!).",
+      "Metterci = wie lange jemand braucht: ci metto un'ora per arrivare; quanto ci metti?",
+      "Volerci = was oder wie viel Zeit nötig ist: ci vuole un'ora, ci vogliono due ore (richtet sich nach dem Nötigen)."
+     ],
+     "q": "Wie lange brauchst du zur Arbeit oder Schule? Antworte mit ci metto... und ci vuole...",
+     "c": "Schreib drei Sätze: etwas Geschafftes (ce l'ho fatta), dein Arbeitsweg (ci metto), ein Rezept (ci vogliono...)."
+    },
+    "es": {
+     "t": "Farcela, metterci, volerci",
+     "g": "Dominar ce la faccio, ci metto un'ora y ci vuole pazienza.",
+     "p": [
+      "Farcela = lograrlo, poder con algo: ce la faccio, ce la fai? Pasado: ce l'ho fatta! (¡lo conseguí!).",
+      "Metterci = cuánto tarda una persona: ci metto un'ora per arrivare; quanto ci metti?",
+      "Volerci = lo que hace falta: ci vuole un'ora, ci vogliono due ore (concuerda con lo necesario)."
+     ],
+     "q": "¿Cuánto tardas en llegar al trabajo o a clase? Responde con ci metto... y ci vuole...",
+     "c": "Escribe tres frases: algo que lograste (ce l'ho fatta), tu trayecto (ci metto), una receta (ci vogliono...)."
+    },
+    "fr": {
+     "t": "Farcela, metterci, volerci",
+     "g": "Maîtriser ce la faccio, ci metto un'ora et ci vuole pazienza.",
+     "p": [
+      "Farcela = y arriver : ce la faccio, ce la fai ? Passé : ce l'ho fatta ! (j'y suis arrivé !).",
+      "Metterci = le temps que met une personne : ci metto un'ora per arrivare ; quanto ci metti ?",
+      "Volerci = ce qu'il faut : ci vuole un'ora, ci vogliono due ore (accord avec ce qui est nécessaire)."
+     ],
+     "q": "Combien de temps mets-tu pour aller au travail ou en cours ? Réponds avec ci metto... et ci vuole...",
+     "c": "Écris trois phrases : une réussite (ce l'ho fatta), ton trajet (ci metto), une recette (ci vogliono...)."
+    },
+    "it": {
+     "t": "Farcela, metterci, volerci",
+     "g": "Usare bene ce la faccio, ci metto un'ora e ci vuole pazienza.",
+     "p": [
+      "Farcela = riuscire: ce la faccio, ce la fai? Al passato: ce l'ho fatta!",
+      "Metterci = il tempo che impiega una persona: ci metto un'ora per arrivare; quanto ci metti?",
+      "Volerci = ciò che è necessario: ci vuole un'ora, ci vogliono due ore (concorda con ciò che serve)."
+     ],
+     "q": "Quanto ci metti per andare al lavoro o a scuola? Rispondi con ci metto... e ci vuole...",
+     "c": "Scrivi tre frasi: un successo (ce l'ho fatta), il tuo tragitto (ci metto), una ricetta (ci vogliono...)."
+    },
+    "pt": {
+     "t": "Farcela, metterci, volerci",
+     "g": "Dominar ce la faccio, ci metto un'ora e ci vuole pazienza.",
+     "p": [
+      "Farcela = conseguir: ce la faccio, ce la fai? Passado: ce l'ho fatta! (consegui!).",
+      "Metterci = quanto tempo uma pessoa demora: ci metto un'ora per arrivare; quanto ci metti?",
+      "Volerci = o que é preciso: ci vuole un'ora, ci vogliono due ore (concorda com o que é preciso)."
+     ],
+     "q": "Quanto tempo demoras a chegar ao trabalho ou às aulas? Responde com ci metto... e ci vuole...",
+     "c": "Escreve três frases: algo que conseguiste (ce l'ho fatta), o teu trajeto (ci metto), uma receita (ci vogliono...)."
+    },
+    "pt_BR": {
+     "t": "Farcela, metterci, volerci",
+     "g": "Dominar ce la faccio, ci metto un'ora e ci vuole pazienza.",
+     "p": [
+      "Farcela = conseguir: ce la faccio, ce la fai? Passado: ce l'ho fatta! (consegui!).",
+      "Metterci = quanto tempo uma pessoa leva: ci metto un'ora per arrivare; quanto ci metti?",
+      "Volerci = o que é preciso: ci vuole un'ora, ci vogliono due ore (concorda com o que é preciso)."
+     ],
+     "q": "Quanto tempo você leva para chegar ao trabalho ou à aula? Responda com ci metto... e ci vuole...",
+     "c": "Escreva três frases: algo que conseguiu (ce l'ho fatta), seu trajeto (ci metto), uma receita (ci vogliono...)."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ce la faccio",
+      "ex": "Tranquillo, ce la faccio da solo."
+     },
+     {
+      "w": "ce l'ho fatta",
+      "ex": "Ce l'ho fatta, ho superato l'esame!"
+     },
+     {
+      "w": "ci metto",
+      "ex": "Ci metto venti minuti in bici."
+     },
+     {
+      "w": "quanto ci metti",
+      "ex": "Quanto ci metti a preparare la cena?"
+     },
+     {
+      "w": "ci vuole",
+      "ex": "Per imparare una lingua ci vuole pazienza."
+     },
+     {
+      "w": "ci vogliono",
+      "ex": "Ci vogliono tre uova per questa torta."
+     }
+    ],
+    "gram": "Farcela (ce la faccio, ce l'ho fatta); metterci: tempo impiegato da qualcuno; volerci: ciò che serve (ci vuole / ci vogliono)."
+   }
+  },
+  {
+   "d": 203,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Passive voice with essere",
+     "g": "Form the passive: il libro è stato scritto da..., la casa è costruita.",
+     "p": [
+      "Passive = essere + past participle, agreeing with the subject: la torta è preparata, i biglietti sono venduti.",
+      "Use the tense of essere: è scritto (present), è stato scritto (past), sarà scritto (future).",
+      "The doer is introduced by da: La Divina Commedia è stata scritta da Dante. Often the doer is left out."
+     ],
+     "q": "Name a famous building or book from your country. When was it built or written, and by whom?",
+     "c": "Turn three active sentences into passive: Leonardo ha dipinto la Gioconda; molti turisti visitano Roma; gli studenti scrivono un saggio."
+    },
+    "de": {
+     "t": "Passiv mit essere",
+     "g": "Du bildest das Passiv: il libro è stato scritto da..., la casa è costruita.",
+     "p": [
+      "Passiv = essere + Partizip, angeglichen ans Subjekt: la torta è preparata, i biglietti sono venduti.",
+      "Die Zeit steckt in essere: è scritto (Präsens), è stato scritto (Vergangenheit), sarà scritto (Futur).",
+      "Der Handelnde kommt mit da: La Divina Commedia è stata scritta da Dante. Oft lässt man ihn weg."
+     ],
+     "q": "Nenn ein berühmtes Gebäude oder Buch aus deinem Land. Wann und von wem wurde es gebaut oder geschrieben?",
+     "c": "Setze drei Sätze ins Passiv: Leonardo ha dipinto la Gioconda; molti turisti visitano Roma; gli studenti scrivono un saggio."
+    },
+    "es": {
+     "t": "La pasiva con essere",
+     "g": "Formar la pasiva: il libro è stato scritto da..., la casa è costruita.",
+     "p": [
+      "Pasiva = essere + participio, que concuerda con el sujeto: la torta è preparata, i biglietti sono venduti.",
+      "El tiempo lo marca essere: è scritto (presente), è stato scritto (pasado), sarà scritto (futuro).",
+      "El agente va con da: La Divina Commedia è stata scritta da Dante. A menudo se omite."
+     ],
+     "q": "Nombra un edificio o libro famoso de tu país. ¿Cuándo y por quién fue construido o escrito?",
+     "c": "Pasa tres frases a pasiva: Leonardo ha dipinto la Gioconda; molti turisti visitano Roma; gli studenti scrivono un saggio."
+    },
+    "fr": {
+     "t": "La voix passive avec essere",
+     "g": "Former le passif : il libro è stato scritto da..., la casa è costruita.",
+     "p": [
+      "Passif = essere + participe passé, accordé avec le sujet : la torta è preparata, i biglietti sono venduti.",
+      "Le temps est porté par essere : è scritto (présent), è stato scritto (passé), sarà scritto (futur).",
+      "L'agent est introduit par da : La Divina Commedia è stata scritta da Dante. Souvent, on l'omet."
+     ],
+     "q": "Cite un bâtiment ou un livre célèbre de ton pays. Quand et par qui a-t-il été construit ou écrit ?",
+     "c": "Mets trois phrases au passif : Leonardo ha dipinto la Gioconda ; molti turisti visitano Roma ; gli studenti scrivono un saggio."
+    },
+    "it": {
+     "t": "Il passivo con essere",
+     "g": "Formare il passivo: il libro è stato scritto da..., la casa è costruita.",
+     "p": [
+      "Passivo = essere + participio passato, che concorda con il soggetto: la torta è preparata, i biglietti sono venduti.",
+      "Il tempo lo indica essere: è scritto (presente), è stato scritto (passato), sarà scritto (futuro).",
+      "Chi compie l'azione è introdotto da da: La Divina Commedia è stata scritta da Dante. Spesso non si dice."
+     ],
+     "q": "Pensa a un edificio o a un libro famoso del tuo Paese. Quando e da chi è stato costruito o scritto?",
+     "c": "Trasforma al passivo: Leonardo ha dipinto la Gioconda; molti turisti visitano Roma; gli studenti scrivono un saggio."
+    },
+    "pt": {
+     "t": "A voz passiva com essere",
+     "g": "Formar a passiva: il libro è stato scritto da..., la casa è costruita.",
+     "p": [
+      "Passiva = essere + particípio, que concorda com o sujeito: la torta è preparata, i biglietti sono venduti.",
+      "O tempo está em essere: è scritto (presente), è stato scritto (passado), sarà scritto (futuro).",
+      "O agente vem com da: La Divina Commedia è stata scritta da Dante. Muitas vezes omite-se."
+     ],
+     "q": "Diz um edifício ou livro famoso do teu país. Quando e por quem foi construído ou escrito?",
+     "c": "Passa três frases para a passiva: Leonardo ha dipinto la Gioconda; molti turisti visitano Roma; gli studenti scrivono un saggio."
+    },
+    "pt_BR": {
+     "t": "A voz passiva com essere",
+     "g": "Formar a passiva: il libro è stato scritto da..., la casa è costruita.",
+     "p": [
+      "Passiva = essere + particípio, que concorda com o sujeito: la torta è preparata, i biglietti sono venduti.",
+      "O tempo está em essere: è scritto (presente), è stato scritto (passado), sarà scritto (futuro).",
+      "O agente vem com da: La Divina Commedia è stata scritta da Dante. Muitas vezes ele é omitido."
+     ],
+     "q": "Cite um prédio ou livro famoso do seu país. Quando e por quem ele foi construído ou escrito?",
+     "c": "Passe três frases para a passiva: Leonardo ha dipinto la Gioconda; molti turisti visitano Roma; gli studenti scrivono un saggio."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "è stato scritto",
+      "ex": "Questo romanzo è stato scritto da Italo Calvino."
+     },
+     {
+      "w": "è stata costruita",
+      "ex": "La chiesa è stata costruita nel Medioevo."
+     },
+     {
+      "w": "sono venduti",
+      "ex": "I biglietti sono venduti anche online."
+     },
+     {
+      "w": "da",
+      "ex": "La Gioconda è stata dipinta da Leonardo da Vinci."
+     },
+     {
+      "w": "sarà inaugurato",
+      "ex": "Il nuovo museo sarà inaugurato in primavera."
+     },
+     {
+      "w": "è prodotto",
+      "ex": "Questo formaggio è prodotto in Sardegna."
+     }
+    ],
+    "gram": "Passivo: essere (in qualsiasi tempo) + participio concordato. L'agente si introduce con da: è stato scritto da Dante."
+   }
+  },
+  {
+   "d": 204,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Passive with venire and andare",
+     "g": "Learn the nuances: viene servito caldo, va fatto subito.",
+     "p": [
+      "Venire can replace essere in simple tenses: il pane viene sfornato alle sei. It stresses the action or a routine.",
+      "Andare + participle means must be: questo modulo va compilato a mano = it must be filled in by hand.",
+      "Venire is not used in compound tenses: say è stato servito, not è venuto servito. Ideal for recipes and rules."
+     ],
+     "q": "Explain a rule or a recipe from your country using va + participle and viene + participle.",
+     "c": "Write four rules for your home or office: two with va/vanno + participle, two with viene/vengono + participle."
+    },
+    "de": {
+     "t": "Passiv mit venire und andare",
+     "g": "Du lernst die Nuancen: viene servito caldo, va fatto subito.",
+     "p": [
+      "Venire kann essere in einfachen Zeiten ersetzen: il pane viene sfornato alle sei. Es betont Vorgang oder Routine.",
+      "Andare + Partizip heißt muss: questo modulo va compilato a mano = muss von Hand ausgefüllt werden.",
+      "Venire nicht in zusammengesetzten Zeiten: è stato servito, nicht è venuto servito. Ideal für Rezepte und Regeln."
+     ],
+     "q": "Erklär eine Regel oder ein Rezept aus deinem Land mit va + Partizip und viene + Partizip.",
+     "c": "Schreib vier Regeln für Zuhause oder Büro: zwei mit va/vanno + Partizip, zwei mit viene/vengono + Partizip."
+    },
+    "es": {
+     "t": "La pasiva con venire y andare",
+     "g": "Aprender los matices: viene servito caldo, va fatto subito.",
+     "p": [
+      "Venire puede sustituir a essere en tiempos simples: il pane viene sfornato alle sei. Destaca la acción o la rutina.",
+      "Andare + participio significa hay que: questo modulo va compilato a mano = hay que rellenarlo a mano.",
+      "Venire no se usa en tiempos compuestos: è stato servito, no è venuto servito. Ideal para recetas y normas."
+     ],
+     "q": "Explica una norma o una receta de tu país con va + participio y viene + participio.",
+     "c": "Escribe cuatro normas para tu casa u oficina: dos con va/vanno + participio y dos con viene/vengono + participio."
+    },
+    "fr": {
+     "t": "Passif avec venire et andare",
+     "g": "Apprendre les nuances : viene servito caldo, va fatto subito.",
+     "p": [
+      "Venire peut remplacer essere aux temps simples : il pane viene sfornato alle sei. Il insiste sur l'action ou la routine.",
+      "Andare + participe signifie doit être : questo modulo va compilato a mano = il doit être rempli à la main.",
+      "Pas de venire aux temps composés : è stato servito, et non è venuto servito. Idéal pour recettes et règles."
+     ],
+     "q": "Explique une règle ou une recette de ton pays avec va + participe et viene + participe.",
+     "c": "Écris quatre règles pour chez toi ou ton bureau : deux avec va/vanno + participe, deux avec viene/vengono + participe."
+    },
+    "it": {
+     "t": "Il passivo con venire e andare",
+     "g": "Capire le sfumature: viene servito caldo, va fatto subito.",
+     "p": [
+      "Venire può sostituire essere nei tempi semplici: il pane viene sfornato alle sei. Sottolinea l'azione o l'abitudine.",
+      "Andare + participio indica necessità: questo modulo va compilato a mano = deve essere compilato a mano.",
+      "Venire non si usa nei tempi composti: è stato servito, non è venuto servito. Perfetto per ricette e regole."
+     ],
+     "q": "Spiega una regola o una ricetta del tuo Paese con va + participio e viene + participio.",
+     "c": "Scrivi quattro regole per casa o ufficio: due con va/vanno + participio, due con viene/vengono + participio."
+    },
+    "pt": {
+     "t": "A passiva com venire e andare",
+     "g": "Aprender as nuances: viene servito caldo, va fatto subito.",
+     "p": [
+      "Venire pode substituir essere nos tempos simples: il pane viene sfornato alle sei. Realça a ação ou a rotina.",
+      "Andare + particípio significa tem de ser: questo modulo va compilato a mano = tem de ser preenchido à mão.",
+      "Venire não se usa nos tempos compostos: è stato servito, e não è venuto servito. Ideal para receitas e regras."
+     ],
+     "q": "Explica uma regra ou uma receita do teu país com va + particípio e viene + particípio.",
+     "c": "Escreve quatro regras para casa ou escritório: duas com va/vanno + particípio e duas com viene/vengono + particípio."
+    },
+    "pt_BR": {
+     "t": "A passiva com venire e andare",
+     "g": "Aprender as nuances: viene servito caldo, va fatto subito.",
+     "p": [
+      "Venire pode substituir essere nos tempos simples: il pane viene sfornato alle sei. Destaca a ação ou a rotina.",
+      "Andare + particípio significa tem que ser: questo modulo va compilato a mano = tem que ser preenchido à mão.",
+      "Venire não se usa nos tempos compostos: è stato servito, e não è venuto servito. Ideal para receitas e regras."
+     ],
+     "q": "Explique uma regra ou uma receita do seu país com va + particípio e viene + particípio.",
+     "c": "Escreva quatro regras para casa ou escritório: duas com va/vanno + particípio e duas com viene/vengono + particípio."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "viene servito",
+      "ex": "Il risotto viene servito caldo."
+     },
+     {
+      "w": "vengono controllati",
+      "ex": "I biglietti vengono controllati all'ingresso."
+     },
+     {
+      "w": "va fatto",
+      "ex": "Questo lavoro va fatto entro domani."
+     },
+     {
+      "w": "vanno lavate",
+      "ex": "Le verdure vanno lavate bene prima di cucinarle."
+     },
+     {
+      "w": "va compilato",
+      "ex": "Il modulo va compilato in stampatello."
+     },
+     {
+      "w": "va ricordato",
+      "ex": "Va ricordato che il museo chiude alle sei."
+     }
+    ],
+    "gram": "Venire + participio = passivo nei tempi semplici (viene servito). Andare + participio = dovere essere (va fatto subito)."
+   }
+  },
+  {
+   "d": 205,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Reported speech: present",
+     "g": "Report what someone says now: dice che è stanco, mi chiede se voglio venire.",
+     "p": [
+      "When the reporting verb is present (dice, scrive, chiede), the tense does not change: dice che è stanco.",
+      "Pronouns and possessives do change: Marco: Sono stanco → Marco dice che è stanco.",
+      "Yes/no questions use se: mi chiede se voglio venire. Other questions keep the question word: chiede dove abito."
+     ],
+     "q": "Think of the last message you received. What does it say? Report it with dice che...",
+     "c": "Report three lines from a chat: Anna: Arrivo alle otto. Luca: Vieni anche tu? Sara: Dove ci vediamo?"
+    },
+    "de": {
+     "t": "Indirekte Rede: Präsens",
+     "g": "Du gibst wieder, was jemand jetzt sagt: dice che è stanco, mi chiede se voglio venire.",
+     "p": [
+      "Steht das Einleitungsverb im Präsens (dice, scrive, chiede), bleibt die Zeit gleich: dice che è stanco.",
+      "Pronomen und Possessive ändern sich: Marco: Sono stanco → Marco dice che è stanco.",
+      "Ja/Nein-Fragen mit se: mi chiede se voglio venire. Andere Fragen behalten das Fragewort: chiede dove abito."
+     ],
+     "q": "Denk an die letzte Nachricht, die du bekommen hast. Was steht drin? Gib sie mit dice che... wieder.",
+     "c": "Gib drei Chatzeilen wieder: Anna: Arrivo alle otto. Luca: Vieni anche tu? Sara: Dove ci vediamo?"
+    },
+    "es": {
+     "t": "Estilo indirecto: presente",
+     "g": "Contar lo que alguien dice ahora: dice che è stanco, mi chiede se voglio venire.",
+     "p": [
+      "Si el verbo introductor está en presente (dice, scrive, chiede), el tiempo no cambia: dice che è stanco.",
+      "Sí cambian pronombres y posesivos: Marco: Sono stanco → Marco dice che è stanco.",
+      "Preguntas de sí/no con se: mi chiede se voglio venire. Las demás mantienen la partícula: chiede dove abito."
+     ],
+     "q": "Piensa en el último mensaje que recibiste. ¿Qué dice? Cuéntalo con dice che...",
+     "c": "Cuenta tres líneas de un chat: Anna: Arrivo alle otto. Luca: Vieni anche tu? Sara: Dove ci vediamo?"
+    },
+    "fr": {
+     "t": "Discours indirect : présent",
+     "g": "Rapporter ce que quelqu'un dit maintenant : dice che è stanco, mi chiede se voglio venire.",
+     "p": [
+      "Si le verbe introducteur est au présent (dice, scrive, chiede), le temps ne change pas : dice che è stanco.",
+      "Les pronoms et possessifs changent : Marco : Sono stanco → Marco dice che è stanco.",
+      "Questions fermées avec se : mi chiede se voglio venire. Les autres gardent le mot interrogatif : chiede dove abito."
+     ],
+     "q": "Pense au dernier message que tu as reçu. Que dit-il ? Rapporte-le avec dice che...",
+     "c": "Rapporte trois lignes d'un chat : Anna : Arrivo alle otto. Luca : Vieni anche tu ? Sara : Dove ci vediamo ?"
+    },
+    "it": {
+     "t": "Il discorso indiretto al presente",
+     "g": "Riferire ciò che qualcuno dice ora: dice che è stanco, mi chiede se voglio venire.",
+     "p": [
+      "Se il verbo che introduce è al presente (dice, scrive, chiede), il tempo non cambia: dice che è stanco.",
+      "Cambiano pronomi e possessivi: Marco: Sono stanco → Marco dice che è stanco.",
+      "Domande sì/no con se: mi chiede se voglio venire. Le altre mantengono la parola interrogativa: chiede dove abito."
+     ],
+     "q": "Pensa all'ultimo messaggio che hai ricevuto. Che cosa dice? Riferiscilo con dice che...",
+     "c": "Riferisci tre battute di una chat: Anna: Arrivo alle otto. Luca: Vieni anche tu? Sara: Dove ci vediamo?"
+    },
+    "pt": {
+     "t": "Discurso indireto: presente",
+     "g": "Relatar o que alguém diz agora: dice che è stanco, mi chiede se voglio venire.",
+     "p": [
+      "Se o verbo introdutor está no presente (dice, scrive, chiede), o tempo não muda: dice che è stanco.",
+      "Mudam os pronomes e possessivos: Marco: Sono stanco → Marco dice che è stanco.",
+      "Perguntas de sim/não com se: mi chiede se voglio venire. As outras mantêm a palavra interrogativa: chiede dove abito."
+     ],
+     "q": "Pensa na última mensagem que recebeste. O que diz? Relata com dice che...",
+     "c": "Relata três falas de um chat: Anna: Arrivo alle otto. Luca: Vieni anche tu? Sara: Dove ci vediamo?"
+    },
+    "pt_BR": {
+     "t": "Discurso indireto: presente",
+     "g": "Relatar o que alguém diz agora: dice che è stanco, mi chiede se voglio venire.",
+     "p": [
+      "Se o verbo introdutor está no presente (dice, scrive, chiede), o tempo não muda: dice che è stanco.",
+      "Mudam os pronomes e possessivos: Marco: Sono stanco → Marco dice che è stanco.",
+      "Perguntas de sim/não com se: mi chiede se voglio venire. As outras mantêm a palavra interrogativa: chiede dove abito."
+     ],
+     "q": "Pense na última mensagem que você recebeu. O que ela diz? Relate com dice che...",
+     "c": "Relate três falas de um chat: Anna: Arrivo alle otto. Luca: Vieni anche tu? Sara: Dove ci vediamo?"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "dice che",
+      "ex": "Giulia dice che arriva tra dieci minuti."
+     },
+     {
+      "w": "mi chiede se",
+      "ex": "Mio fratello mi chiede se voglio venire al cinema."
+     },
+     {
+      "w": "scrive che",
+      "ex": "Il professore scrive che la lezione è spostata."
+     },
+     {
+      "w": "chiede dove",
+      "ex": "Il turista chiede dove si trova il Duomo."
+     },
+     {
+      "w": "risponde che",
+      "ex": "Lei risponde che non ha tempo."
+     },
+     {
+      "w": "racconta che",
+      "ex": "Marco racconta che il viaggio è stato bellissimo."
+     }
+    ],
+    "gram": "Discorso indiretto con verbo al presente: il tempo non cambia (dice che è stanco). Domande sì/no: chiede se..."
+   }
+  },
+  {
+   "d": 206,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Reported speech: past",
+     "g": "Shift tenses when reporting in the past: ha detto che era stanco.",
+     "p": [
+      "With a past reporting verb (ha detto, diceva), tenses move back: sono stanco → ha detto che era stanco.",
+      "Main shifts: present → imperfetto; passato prossimo → trapassato; future → condizionale passato.",
+      "Time words change too: oggi → quel giorno, domani → il giorno dopo, ieri → il giorno prima, qui → lì."
+     ],
+     "q": "What did a friend tell you recently? Report it with mi ha detto che... and shift the tenses.",
+     "c": "Report in the past: Paola: Sono contenta. Ho trovato lavoro. Domani comincerò. → Paola ha detto che..."
+    },
+    "de": {
+     "t": "Indirekte Rede: Vergangenheit",
+     "g": "Du verschiebst die Zeiten beim Wiedergeben in der Vergangenheit: ha detto che era stanco.",
+     "p": [
+      "Mit Einleitungsverb in der Vergangenheit (ha detto, diceva) rücken die Zeiten zurück: sono stanco → era stanco.",
+      "Hauptregeln: Präsens → imperfetto; passato prossimo → trapassato; Futur → condizionale passato.",
+      "Zeitangaben ändern sich: oggi → quel giorno, domani → il giorno dopo, ieri → il giorno prima, qui → lì."
+     ],
+     "q": "Was hat dir ein Freund kürzlich erzählt? Gib es mit mi ha detto che... wieder und verschiebe die Zeiten.",
+     "c": "Gib in der Vergangenheit wieder: Paola: Sono contenta. Ho trovato lavoro. Domani comincerò. → Paola ha detto che..."
+    },
+    "es": {
+     "t": "Estilo indirecto: pasado",
+     "g": "Cambiar los tiempos al contar en pasado: ha detto che era stanco.",
+     "p": [
+      "Con verbo introductor en pasado (ha detto, diceva), los tiempos retroceden: sono stanco → ha detto che era stanco.",
+      "Cambios clave: presente → imperfetto; passato prossimo → trapassato; futuro → condizionale passato.",
+      "También cambian las expresiones de tiempo: oggi → quel giorno, domani → il giorno dopo, ieri → il giorno prima."
+     ],
+     "q": "¿Qué te contó un amigo hace poco? Cuéntalo con mi ha detto che... cambiando los tiempos.",
+     "c": "Pasa a estilo indirecto: Paola: Sono contenta. Ho trovato lavoro. Domani comincerò. → Paola ha detto che..."
+    },
+    "fr": {
+     "t": "Discours indirect : passé",
+     "g": "Changer les temps quand on rapporte au passé : ha detto che era stanco.",
+     "p": [
+      "Avec un verbe introducteur au passé (ha detto, diceva), les temps reculent : sono stanco → ha detto che era stanco.",
+      "Règles clés : présent → imperfetto ; passato prossimo → trapassato ; futur → condizionale passato.",
+      "Les indicateurs de temps changent : oggi → quel giorno, domani → il giorno dopo, ieri → il giorno prima."
+     ],
+     "q": "Qu'est-ce qu'un ami t'a raconté récemment ? Rapporte-le avec mi ha detto che... en changeant les temps.",
+     "c": "Rapporte au passé : Paola : Sono contenta. Ho trovato lavoro. Domani comincerò. → Paola ha detto che..."
+    },
+    "it": {
+     "t": "Il discorso indiretto al passato",
+     "g": "Cambiare i tempi quando si riferisce al passato: ha detto che era stanco.",
+     "p": [
+      "Con il verbo introduttivo al passato (ha detto, diceva) i tempi cambiano: sono stanco → ha detto che era stanco.",
+      "Regole principali: presente → imperfetto; passato prossimo → trapassato; futuro → condizionale passato.",
+      "Cambiano anche le espressioni di tempo: oggi → quel giorno, domani → il giorno dopo, ieri → il giorno prima."
+     ],
+     "q": "Che cosa ti ha raccontato di recente un amico? Riferiscilo con mi ha detto che... cambiando i tempi.",
+     "c": "Riferisci al passato: Paola: Sono contenta. Ho trovato lavoro. Domani comincerò. → Paola ha detto che..."
+    },
+    "pt": {
+     "t": "Discurso indireto: passado",
+     "g": "Mudar os tempos ao relatar no passado: ha detto che era stanco.",
+     "p": [
+      "Com o verbo introdutor no passado (ha detto, diceva), os tempos recuam: sono stanco → ha detto che era stanco.",
+      "Mudanças principais: presente → imperfetto; passato prossimo → trapassato; futuro → condizionale passato.",
+      "As expressões de tempo também mudam: oggi → quel giorno, domani → il giorno dopo, ieri → il giorno prima."
+     ],
+     "q": "O que te contou um amigo há pouco? Relata com mi ha detto che... mudando os tempos.",
+     "c": "Relata no passado: Paola: Sono contenta. Ho trovato lavoro. Domani comincerò. → Paola ha detto che..."
+    },
+    "pt_BR": {
+     "t": "Discurso indireto: passado",
+     "g": "Mudar os tempos ao relatar no passado: ha detto che era stanco.",
+     "p": [
+      "Com o verbo introdutor no passado (ha detto, diceva), os tempos recuam: sono stanco → ha detto che era stanco.",
+      "Mudanças principais: presente → imperfetto; passato prossimo → trapassato; futuro → condizionale passato.",
+      "As expressões de tempo também mudam: oggi → quel giorno, domani → il giorno dopo, ieri → il giorno prima."
+     ],
+     "q": "O que um amigo te contou recentemente? Relate com mi ha detto che... mudando os tempos.",
+     "c": "Relate no passado: Paola: Sono contenta. Ho trovato lavoro. Domani comincerò. → Paola ha detto che..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ha detto che era",
+      "ex": "Luca ha detto che era molto stanco."
+     },
+     {
+      "w": "aveva trovato",
+      "ex": "Paola ha detto che aveva trovato un nuovo lavoro."
+     },
+     {
+      "w": "avrebbe cominciato",
+      "ex": "Ha detto che avrebbe cominciato il giorno dopo."
+     },
+     {
+      "w": "il giorno dopo",
+      "ex": "Mi ha promesso che mi avrebbe chiamato il giorno dopo."
+     },
+     {
+      "w": "quel giorno",
+      "ex": "Ha detto che quel giorno non poteva uscire."
+     },
+     {
+      "w": "mi ha raccontato",
+      "ex": "Mi ha raccontato che a Napoli aveva mangiato benissimo."
+     }
+    ],
+    "gram": "Discorso indiretto al passato: presente → imperfetto, passato prossimo → trapassato, futuro → condizionale passato."
+   }
+  },
+  {
+   "d": 207,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Reported questions and commands",
+     "g": "Report questions and orders: mi ha chiesto dove abitavo, mi ha detto di aspettare.",
+     "p": [
+      "Past questions shift tenses: Dove abiti? → mi ha chiesto dove abitavo. Yes/no: mi ha chiesto se ero libero.",
+      "Commands become di + infinitive: Aspetta! → mi ha detto di aspettare. Negative: mi ha detto di non preoccuparmi.",
+      "Useful verbs: chiedere di, pregare di, consigliare di, ricordare di: mi ha consigliato di riposare."
+     ],
+     "q": "What advice did someone give you once that you still remember? Use mi ha consigliato di...",
+     "c": "Report a doctor's or teacher's words: Come ti senti? Riposa! Non lavorare troppo! → Mi ha chiesto... mi ha detto di..."
+    },
+    "de": {
+     "t": "Indirekte Fragen und Aufforderungen",
+     "g": "Du gibst Fragen und Aufforderungen wieder: mi ha chiesto dove abitavo, mi ha detto di aspettare.",
+     "p": [
+      "Fragen in der Vergangenheit verschieben die Zeit: Dove abiti? → mi ha chiesto dove abitavo. Ja/Nein: se ero libero.",
+      "Aufforderungen werden zu di + Infinitiv: Aspetta! → mi ha detto di aspettare. Verneint: di non preoccuparmi.",
+      "Nützliche Verben: chiedere di, pregare di, consigliare di, ricordare di: mi ha consigliato di riposare."
+     ],
+     "q": "Welchen Rat hat dir jemand einmal gegeben, an den du dich noch erinnerst? Benutze mi ha consigliato di...",
+     "c": "Gib Worte eines Lehrers wieder: Come ti senti? Riposa! Non lavorare troppo! → Mi ha chiesto... mi ha detto di..."
+    },
+    "es": {
+     "t": "Preguntas y órdenes indirectas",
+     "g": "Contar preguntas y órdenes: mi ha chiesto dove abitavo, mi ha detto di aspettare.",
+     "p": [
+      "Las preguntas en pasado cambian el tiempo: Dove abiti? → mi ha chiesto dove abitavo. Sí/no: se ero libero.",
+      "Las órdenes pasan a di + infinitivo: Aspetta! → mi ha detto di aspettare. Negativa: di non preoccuparmi.",
+      "Verbos útiles: chiedere di, pregare di, consigliare di, ricordare di: mi ha consigliato di riposare."
+     ],
+     "q": "¿Qué consejo te dieron una vez que todavía recuerdas? Usa mi ha consigliato di...",
+     "c": "Cuenta las palabras de un profesor: Come ti senti? Riposa! Non lavorare troppo! → Mi ha chiesto... mi ha detto di..."
+    },
+    "fr": {
+     "t": "Questions et ordres rapportés",
+     "g": "Rapporter questions et ordres : mi ha chiesto dove abitavo, mi ha detto di aspettare.",
+     "p": [
+      "Les questions au passé changent de temps : Dove abiti? → mi ha chiesto dove abitavo. Oui/non : se ero libero.",
+      "Les ordres deviennent di + infinitif : Aspetta! → mi ha detto di aspettare. Négatif : di non preoccuparmi.",
+      "Verbes utiles : chiedere di, pregare di, consigliare di, ricordare di : mi ha consigliato di riposare."
+     ],
+     "q": "Quel conseil t'a-t-on donné un jour dont tu te souviens encore ? Utilise mi ha consigliato di...",
+     "c": "Rapporte les mots d'un prof : Come ti senti? Riposa! Non lavorare troppo! → Mi ha chiesto... mi ha detto di..."
+    },
+    "it": {
+     "t": "Domande e ordini nel discorso indiretto",
+     "g": "Riferire domande e ordini: mi ha chiesto dove abitavo, mi ha detto di aspettare.",
+     "p": [
+      "Le domande al passato cambiano tempo: Dove abiti? → mi ha chiesto dove abitavo. Sì/no: mi ha chiesto se ero libero.",
+      "Gli ordini diventano di + infinito: Aspetta! → mi ha detto di aspettare. Negativo: di non preoccuparmi.",
+      "Verbi utili: chiedere di, pregare di, consigliare di, ricordare di: mi ha consigliato di riposare."
+     ],
+     "q": "Quale consiglio ti hanno dato una volta che ricordi ancora? Usa mi ha consigliato di...",
+     "c": "Riferisci le parole di un insegnante: Come ti senti? Riposa! Non lavorare troppo! → Mi ha chiesto... mi ha detto di..."
+    },
+    "pt": {
+     "t": "Perguntas e ordens indiretas",
+     "g": "Relatar perguntas e ordens: mi ha chiesto dove abitavo, mi ha detto di aspettare.",
+     "p": [
+      "As perguntas no passado mudam o tempo: Dove abiti? → mi ha chiesto dove abitavo. Sim/não: se ero libero.",
+      "As ordens passam a di + infinitivo: Aspetta! → mi ha detto di aspettare. Negativa: di non preoccuparmi.",
+      "Verbos úteis: chiedere di, pregare di, consigliare di, ricordare di: mi ha consigliato di riposare."
+     ],
+     "q": "Que conselho te deram uma vez de que ainda te lembras? Usa mi ha consigliato di...",
+     "c": "Relata as palavras de um professor: Come ti senti? Riposa! Non lavorare troppo! → Mi ha chiesto... mi ha detto di..."
+    },
+    "pt_BR": {
+     "t": "Perguntas e ordens indiretas",
+     "g": "Relatar perguntas e ordens: mi ha chiesto dove abitavo, mi ha detto di aspettare.",
+     "p": [
+      "As perguntas no passado mudam o tempo: Dove abiti? → mi ha chiesto dove abitavo. Sim/não: se ero libero.",
+      "As ordens viram di + infinitivo: Aspetta! → mi ha detto di aspettare. Negativa: di non preoccuparmi.",
+      "Verbos úteis: chiedere di, pregare di, consigliare di, ricordare di: mi ha consigliato di riposare."
+     ],
+     "q": "Que conselho te deram uma vez de que você ainda se lembra? Use mi ha consigliato di...",
+     "c": "Relate as palavras de um professor: Come ti senti? Riposa! Non lavorare troppo! → Mi ha chiesto... mi ha detto di..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "mi ha chiesto dove",
+      "ex": "Mi ha chiesto dove abitavo."
+     },
+     {
+      "w": "mi ha chiesto se",
+      "ex": "La signora mi ha chiesto se ero libero sabato."
+     },
+     {
+      "w": "mi ha detto di",
+      "ex": "Il cameriere mi ha detto di aspettare un momento."
+     },
+     {
+      "w": "di non preoccuparmi",
+      "ex": "Mi ha detto di non preoccuparmi."
+     },
+     {
+      "w": "mi ha consigliato di",
+      "ex": "L'insegnante mi ha consigliato di leggere ogni giorno."
+     },
+     {
+      "w": "mi ha ricordato di",
+      "ex": "Mia madre mi ha ricordato di portare l'ombrello."
+     }
+    ],
+    "gram": "Domande indirette: chiedere se / dove + tempo spostato. Ordini indiretti: dire / chiedere / consigliare di + infinito."
+   }
+  },
+  {
+   "d": 208,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Gerund as a connector",
+     "g": "Use the gerund for cause, means and time: studiando ogni giorno, imparerai.",
+     "p": [
+      "Form: -are → -ando (parlando), -ere/-ire → -endo (leggendo, partendo). Irregular: facendo, dicendo, bevendo.",
+      "Means: studiando ogni giorno, imparerai (by studying). Time: tornando a casa, ho visto Marco (while returning).",
+      "Cause: essendo stanco, sono andato a letto presto (being tired). The subject is usually the same in both parts."
+     ],
+     "q": "How do you think you learn Italian best? Answer with a gerund: imparo meglio + -ando/-endo...",
+     "c": "Write three sentences: one gerund of means, one of time, one of cause (essendo / avendo...)."
+    },
+    "de": {
+     "t": "Das Gerundium als Verbindung",
+     "g": "Du benutzt das Gerundium für Grund, Mittel und Zeit: studiando ogni giorno, imparerai.",
+     "p": [
+      "Bildung: -are → -ando (parlando), -ere/-ire → -endo (leggendo, partendo). Unregelmäßig: facendo, dicendo, bevendo.",
+      "Mittel: studiando ogni giorno, imparerai (indem du lernst). Zeit: tornando a casa, ho visto Marco (auf dem Heimweg).",
+      "Grund: essendo stanco, sono andato a letto presto (da ich müde war). Meist gleiches Subjekt in beiden Teilen."
+     ],
+     "q": "Wie lernst du Italienisch am besten? Antworte mit einem Gerundium: imparo meglio + -ando/-endo...",
+     "c": "Schreib drei Sätze: ein Gerundium des Mittels, eins der Zeit, eins des Grundes (essendo / avendo...)."
+    },
+    "es": {
+     "t": "El gerundio como conector",
+     "g": "Usar el gerundio para causa, modo y tiempo: studiando ogni giorno, imparerai.",
+     "p": [
+      "Forma: -are → -ando (parlando), -ere/-ire → -endo (leggendo, partendo). Irregulares: facendo, dicendo, bevendo.",
+      "Modo: studiando ogni giorno, imparerai. Tiempo: tornando a casa, ho visto Marco (volviendo a casa).",
+      "Causa: essendo stanco, sono andato a letto presto (como estaba cansado). Suele tener el mismo sujeto."
+     ],
+     "q": "¿Cómo crees que aprendes mejor el italiano? Responde con un gerundio: imparo meglio + -ando/-endo...",
+     "c": "Escribe tres frases: un gerundio de modo, uno de tiempo y uno de causa (essendo / avendo...)."
+    },
+    "fr": {
+     "t": "Le gérondif comme connecteur",
+     "g": "Utiliser le gerundio pour la cause, le moyen et le temps : studiando ogni giorno, imparerai.",
+     "p": [
+      "Forme : -are → -ando (parlando), -ere/-ire → -endo (leggendo, partendo). Irréguliers : facendo, dicendo, bevendo.",
+      "Moyen : studiando ogni giorno, imparerai (en étudiant). Temps : tornando a casa, ho visto Marco (en rentrant).",
+      "Cause : essendo stanco, sono andato a letto presto (étant fatigué). Le sujet est en général le même."
+     ],
+     "q": "Comment apprends-tu le mieux l'italien ? Réponds avec un gerundio : imparo meglio + -ando/-endo...",
+     "c": "Écris trois phrases : un gerundio de moyen, un de temps, un de cause (essendo / avendo...)."
+    },
+    "it": {
+     "t": "Il gerundio come connettivo",
+     "g": "Usare il gerundio per causa, modo e tempo: studiando ogni giorno, imparerai.",
+     "p": [
+      "Forma: -are → -ando (parlando), -ere/-ire → -endo (leggendo, partendo). Irregolari: facendo, dicendo, bevendo.",
+      "Modo: studiando ogni giorno, imparerai. Tempo: tornando a casa, ho visto Marco (mentre tornavo).",
+      "Causa: essendo stanco, sono andato a letto presto (poiché ero stanco). Di solito il soggetto è lo stesso."
+     ],
+     "q": "Come impari meglio l'italiano, secondo te? Rispondi con un gerundio: imparo meglio + -ando/-endo...",
+     "c": "Scrivi tre frasi: un gerundio di modo, uno di tempo e uno di causa (essendo / avendo...)."
+    },
+    "pt": {
+     "t": "O gerúndio como conector",
+     "g": "Usar o gerúndio para causa, modo e tempo: studiando ogni giorno, imparerai.",
+     "p": [
+      "Forma: -are → -ando (parlando), -ere/-ire → -endo (leggendo, partendo). Irregulares: facendo, dicendo, bevendo.",
+      "Modo: studiando ogni giorno, imparerai (estudando). Tempo: tornando a casa, ho visto Marco (ao voltar para casa).",
+      "Causa: essendo stanco, sono andato a letto presto (como estava cansado). Normalmente o sujeito é o mesmo."
+     ],
+     "q": "Como achas que aprendes melhor italiano? Responde com um gerúndio: imparo meglio + -ando/-endo...",
+     "c": "Escreve três frases: um gerúndio de modo, um de tempo e um de causa (essendo / avendo...)."
+    },
+    "pt_BR": {
+     "t": "O gerúndio como conector",
+     "g": "Usar o gerúndio para causa, modo e tempo: studiando ogni giorno, imparerai.",
+     "p": [
+      "Forma: -are → -ando (parlando), -ere/-ire → -endo (leggendo, partendo). Irregulares: facendo, dicendo, bevendo.",
+      "Modo: studiando ogni giorno, imparerai (estudando). Tempo: tornando a casa, ho visto Marco (voltando para casa).",
+      "Causa: essendo stanco, sono andato a letto presto (como estava cansado). Em geral o sujeito é o mesmo."
+     ],
+     "q": "Como você acha que aprende melhor italiano? Responda com um gerúndio: imparo meglio + -ando/-endo...",
+     "c": "Escreva três frases: um gerúndio de modo, um de tempo e um de causa (essendo / avendo...)."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "studiando",
+      "ex": "Studiando ogni giorno, migliorerai molto."
+     },
+     {
+      "w": "tornando a casa",
+      "ex": "Tornando a casa, ho incontrato un vecchio amico."
+     },
+     {
+      "w": "essendo stanco",
+      "ex": "Essendo stanco, sono rimasto a casa."
+     },
+     {
+      "w": "avendo tempo",
+      "ex": "Avendo tempo, potremmo visitare anche Siena."
+     },
+     {
+      "w": "facendo",
+      "ex": "Si impara molto facendo errori."
+     },
+     {
+      "w": "leggendo",
+      "ex": "Leggendo il giornale, ho scoperto una notizia curiosa."
+     }
+    ],
+    "gram": "Gerundio (-ando, -endo) per esprimere modo, tempo e causa: studiando imparerai; essendo stanco, sono rimasto a casa."
+   }
+  },
+  {
+   "d": 209,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Infinitive constructions",
+     "g": "Link ideas with prima di uscire, dopo aver mangiato, invece di lamentarsi.",
+     "p": [
+      "Prima di + infinitive: prima di uscire, controlla il gas. Dopo + past infinitive: dopo aver mangiato, dopo essere uscito.",
+      "Invece di = instead of: invece di lamentarti, proponi una soluzione. Senza = without: è uscito senza salutare.",
+      "Per + infinitive for purpose: studio per viaggiare. Pronouns attach to the end: prima di vederlo, dopo averla chiamata."
+     ],
+     "q": "What do you always do before going to bed? Answer with prima di andare a letto...",
+     "c": "Describe your morning with prima di, dopo aver/essere and invece di in three sentences."
+    },
+    "de": {
+     "t": "Infinitivkonstruktionen",
+     "g": "Du verbindest Gedanken mit prima di uscire, dopo aver mangiato, invece di lamentarsi.",
+     "p": [
+      "Prima di + Infinitiv: prima di uscire, controlla il gas. Dopo + Infinitiv Perfekt: dopo aver mangiato, dopo essere uscito.",
+      "Invece di = statt: invece di lamentarti, proponi una soluzione. Senza = ohne: è uscito senza salutare.",
+      "Per + Infinitiv für Zweck: studio per viaggiare. Pronomen hängen sich an: prima di vederlo, dopo averla chiamata."
+     ],
+     "q": "Was machst du immer, bevor du ins Bett gehst? Antworte mit prima di andare a letto...",
+     "c": "Beschreib deinen Morgen in drei Sätzen mit prima di, dopo aver/essere und invece di."
+    },
+    "es": {
+     "t": "Construcciones con infinitivo",
+     "g": "Unir ideas con prima di uscire, dopo aver mangiato, invece di lamentarsi.",
+     "p": [
+      "Prima di + infinitivo: prima di uscire, controlla il gas. Dopo + infinitivo compuesto: dopo aver mangiato, dopo essere uscito.",
+      "Invece di = en lugar de: invece di lamentarti, proponi una soluzione. Senza = sin: è uscito senza salutare.",
+      "Per + infinitivo para finalidad: studio per viaggiare. Los pronombres van al final: prima di vederlo, dopo averla chiamata."
+     ],
+     "q": "¿Qué haces siempre antes de acostarte? Responde con prima di andare a letto...",
+     "c": "Describe tu mañana en tres frases con prima di, dopo aver/essere e invece di."
+    },
+    "fr": {
+     "t": "Constructions infinitives",
+     "g": "Relier des idées avec prima di uscire, dopo aver mangiato, invece di lamentarsi.",
+     "p": [
+      "Prima di + infinitif : prima di uscire, controlla il gas. Dopo + infinitif passé : dopo aver mangiato, dopo essere uscito.",
+      "Invece di = au lieu de : invece di lamentarti, proponi una soluzione. Senza = sans : è uscito senza salutare.",
+      "Per + infinitif pour le but : studio per viaggiare. Les pronoms s'attachent : prima di vederlo, dopo averla chiamata."
+     ],
+     "q": "Que fais-tu toujours avant d'aller te coucher ? Réponds avec prima di andare a letto...",
+     "c": "Décris ta matinée en trois phrases avec prima di, dopo aver/essere et invece di."
+    },
+    "it": {
+     "t": "Costruzioni con l'infinito",
+     "g": "Collegare idee con prima di uscire, dopo aver mangiato, invece di lamentarsi.",
+     "p": [
+      "Prima di + infinito: prima di uscire, controlla il gas. Dopo + infinito passato: dopo aver mangiato, dopo essere uscito.",
+      "Invece di: invece di lamentarti, proponi una soluzione. Senza + infinito: è uscito senza salutare.",
+      "Per + infinito indica lo scopo: studio per viaggiare. I pronomi si attaccano: prima di vederlo, dopo averla chiamata."
+     ],
+     "q": "Che cosa fai sempre prima di andare a letto? Rispondi con prima di andare a letto...",
+     "c": "Descrivi la tua mattina in tre frasi con prima di, dopo aver/essere e invece di."
+    },
+    "pt": {
+     "t": "Construções com infinitivo",
+     "g": "Ligar ideias com prima di uscire, dopo aver mangiato, invece di lamentarsi.",
+     "p": [
+      "Prima di + infinitivo: prima di uscire, controlla il gas. Dopo + infinitivo passado: dopo aver mangiato, dopo essere uscito.",
+      "Invece di = em vez de: invece di lamentarti, proponi una soluzione. Senza = sem: è uscito senza salutare.",
+      "Per + infinitivo para finalidade: studio per viaggiare. Os pronomes vão no fim: prima di vederlo, dopo averla chiamata."
+     ],
+     "q": "O que fazes sempre antes de te deitares? Responde com prima di andare a letto...",
+     "c": "Descreve a tua manhã em três frases com prima di, dopo aver/essere e invece di."
+    },
+    "pt_BR": {
+     "t": "Construções com infinitivo",
+     "g": "Ligar ideias com prima di uscire, dopo aver mangiato, invece di lamentarsi.",
+     "p": [
+      "Prima di + infinitivo: prima di uscire, controlla il gas. Dopo + infinitivo passado: dopo aver mangiato, dopo essere uscito.",
+      "Invece di = em vez de: invece di lamentarti, proponi una soluzione. Senza = sem: è uscito senza salutare.",
+      "Per + infinitivo para finalidade: studio per viaggiare. Os pronomes vão no fim: prima di vederlo, dopo averla chiamata."
+     ],
+     "q": "O que você sempre faz antes de ir dormir? Responda com prima di andare a letto...",
+     "c": "Descreva sua manhã em três frases com prima di, dopo aver/essere e invece di."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "prima di uscire",
+      "ex": "Prima di uscire, chiudo sempre le finestre."
+     },
+     {
+      "w": "dopo aver mangiato",
+      "ex": "Dopo aver mangiato, facciamo una passeggiata."
+     },
+     {
+      "w": "dopo essere arrivato",
+      "ex": "Dopo essere arrivato, ho chiamato i miei genitori."
+     },
+     {
+      "w": "invece di",
+      "ex": "Invece di prendere la macchina, vado a piedi."
+     },
+     {
+      "w": "senza salutare",
+      "ex": "Se n'è andato senza salutare nessuno."
+     },
+     {
+      "w": "per imparare",
+      "ex": "Guardo film italiani per imparare nuove parole."
+     }
+    ],
+    "gram": "Prima di + infinito, dopo + infinito passato (aver mangiato, essere uscito), invece di, senza, per + infinito."
+   }
+  },
+  {
+   "d": 210,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Review: passive, reported speech, gerund",
+     "g": "Recap the structures of the last two weeks with real examples.",
+     "p": [
+      "Pronominal verbs: me ne vado, ce l'ho fatta, ci metto un'ora, ci vuole pazienza. Passive: è stato scritto, va fatto, viene servito.",
+      "Reported speech: dice che è stanco; ha detto che era stanco; mi ha chiesto se...; mi ha detto di...",
+      "Connectors: studiando ogni giorno, essendo stanco, prima di uscire, dopo aver mangiato, invece di..."
+     ],
+     "q": "Tell me about a conversation you had this week. Report it in Italian with ha detto che and mi ha chiesto se.",
+     "c": "Write a short news-style paragraph about your day with one passive, one reported sentence and one gerund."
+    },
+    "de": {
+     "t": "Wiederholung: Passiv, indirekte Rede, Gerundium",
+     "g": "Du wiederholst die Strukturen der letzten zwei Wochen mit echten Beispielen.",
+     "p": [
+      "Pronominale Verben: me ne vado, ce l'ho fatta, ci metto un'ora, ci vuole pazienza. Passiv: è stato scritto, va fatto, viene servito.",
+      "Indirekte Rede: dice che è stanco; ha detto che era stanco; mi ha chiesto se...; mi ha detto di...",
+      "Verbindungen: studiando ogni giorno, essendo stanco, prima di uscire, dopo aver mangiato, invece di..."
+     ],
+     "q": "Erzähl von einem Gespräch dieser Woche. Gib es auf Italienisch mit ha detto che und mi ha chiesto se wieder.",
+     "c": "Schreib einen kurzen Bericht über deinen Tag mit einem Passiv, einem Satz in indirekter Rede und einem Gerundium."
+    },
+    "es": {
+     "t": "Repaso: pasiva, estilo indirecto, gerundio",
+     "g": "Repasar las estructuras de las dos últimas semanas con ejemplos reales.",
+     "p": [
+      "Verbos pronominales: me ne vado, ce l'ho fatta, ci metto un'ora, ci vuole pazienza. Pasiva: è stato scritto, va fatto, viene servito.",
+      "Estilo indirecto: dice che è stanco; ha detto che era stanco; mi ha chiesto se...; mi ha detto di...",
+      "Conectores: studiando ogni giorno, essendo stanco, prima di uscire, dopo aver mangiato, invece di..."
+     ],
+     "q": "Cuéntame una conversación que tuviste esta semana. Relátala en italiano con ha detto che y mi ha chiesto se.",
+     "c": "Escribe un párrafo tipo noticia sobre tu día con una pasiva, una frase en estilo indirecto y un gerundio."
+    },
+    "fr": {
+     "t": "Révision : passif, discours indirect, gérondif",
+     "g": "Réviser les structures des deux dernières semaines avec des exemples réels.",
+     "p": [
+      "Verbes pronominaux : me ne vado, ce l'ho fatta, ci metto un'ora, ci vuole pazienza. Passif : è stato scritto, va fatto, viene servito.",
+      "Discours indirect : dice che è stanco ; ha detto che era stanco ; mi ha chiesto se... ; mi ha detto di...",
+      "Connecteurs : studiando ogni giorno, essendo stanco, prima di uscire, dopo aver mangiato, invece di..."
+     ],
+     "q": "Raconte une conversation de cette semaine. Rapporte-la en italien avec ha detto che et mi ha chiesto se.",
+     "c": "Écris un court paragraphe façon journal sur ta journée avec un passif, un discours rapporté et un gerundio."
+    },
+    "it": {
+     "t": "Ripasso: passivo, discorso indiretto, gerundio",
+     "g": "Ripassare le strutture delle ultime due settimane con esempi reali.",
+     "p": [
+      "Verbi pronominali: me ne vado, ce l'ho fatta, ci metto un'ora, ci vuole pazienza. Passivo: è stato scritto, va fatto, viene servito.",
+      "Discorso indiretto: dice che è stanco; ha detto che era stanco; mi ha chiesto se...; mi ha detto di...",
+      "Connettivi: studiando ogni giorno, essendo stanco, prima di uscire, dopo aver mangiato, invece di..."
+     ],
+     "q": "Raccontami una conversazione di questa settimana. Riferiscila con ha detto che e mi ha chiesto se.",
+     "c": "Scrivi un breve testo in stile notizia sulla tua giornata con un passivo, un discorso indiretto e un gerundio."
+    },
+    "pt": {
+     "t": "Revisão: passiva, discurso indireto, gerúndio",
+     "g": "Rever as estruturas das duas últimas semanas com exemplos reais.",
+     "p": [
+      "Verbos pronominais: me ne vado, ce l'ho fatta, ci metto un'ora, ci vuole pazienza. Passiva: è stato scritto, va fatto, viene servito.",
+      "Discurso indireto: dice che è stanco; ha detto che era stanco; mi ha chiesto se...; mi ha detto di...",
+      "Conectores: studiando ogni giorno, essendo stanco, prima di uscire, dopo aver mangiato, invece di..."
+     ],
+     "q": "Conta-me uma conversa que tiveste esta semana. Relata-a em italiano com ha detto che e mi ha chiesto se.",
+     "c": "Escreve um parágrafo tipo notícia sobre o teu dia com uma passiva, uma frase indireta e um gerúndio."
+    },
+    "pt_BR": {
+     "t": "Revisão: passiva, discurso indireto, gerúndio",
+     "g": "Revisar as estruturas das duas últimas semanas com exemplos reais.",
+     "p": [
+      "Verbos pronominais: me ne vado, ce l'ho fatta, ci metto un'ora, ci vuole pazienza. Passiva: è stato scritto, va fatto, viene servito.",
+      "Discurso indireto: dice che è stanco; ha detto che era stanco; mi ha chiesto se...; mi ha detto di...",
+      "Conectores: studiando ogni giorno, essendo stanco, prima di uscire, dopo aver mangiato, invece di..."
+     ],
+     "q": "Conte uma conversa que você teve nesta semana. Relate em italiano com ha detto che e mi ha chiesto se.",
+     "c": "Escreva um parágrafo tipo notícia sobre seu dia com uma passiva, uma frase indireta e um gerúndio."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ce l'ho fatta",
+      "ex": "Dopo tanto lavoro, ce l'ho fatta!"
+     },
+     {
+      "w": "ci vuole",
+      "ex": "Ci vuole un'ora per arrivare al mare."
+     },
+     {
+      "w": "è stato organizzato",
+      "ex": "Il concerto è stato organizzato dal comune."
+     },
+     {
+      "w": "ha detto che",
+      "ex": "Anna ha detto che era molto contenta del viaggio."
+     },
+     {
+      "w": "mi ha chiesto di",
+      "ex": "Il capo mi ha chiesto di preparare una presentazione."
+     },
+     {
+      "w": "dopo aver letto",
+      "ex": "Dopo aver letto l'articolo, ne ho parlato con Anna."
+     }
+    ],
+    "gram": "Ripasso: verbi pronominali, passivo con essere, venire e andare, discorso indiretto, gerundio e costruzioni con l'infinito."
+   }
+  }
+ ]
+}

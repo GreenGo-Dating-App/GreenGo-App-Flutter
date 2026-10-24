@@ -1,0 +1,2195 @@
+{
+ "topic": "remote_work",
+ "days": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "t": "What remote work really means",
+   "f": "The main forms of remote work: fully remote, hybrid, remote-first, freelance and working while travelling"
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "t": "Your personal reasons for working remotely",
+   "f": "Clarifying what you want from remote work: focus, flexibility, family time, location or autonomy"
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "t": "The upsides of working from anywhere",
+   "f": "Common benefits such as no commute, deeper focus, flexible hours and a wider choice of employers"
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "t": "The honest challenges of remote work",
+   "f": "Typical difficulties like isolation, blurred boundaries, distractions and communication gaps"
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "t": "Remote, hybrid or office: finding your fit",
+   "f": "Comparing work setups and noticing which one matches your personality and tasks"
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "t": "Synchronous vs asynchronous work",
+   "f": "The difference between real-time collaboration and work that happens on each person's own schedule"
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "t": "The remote work mindset",
+   "f": "Ownership, self-direction and trust as the foundations of working well without supervision"
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "t": "Remote work vocabulary",
+   "f": "Everyday terms like async, standup, time zone overlap, WFH, coworking and remote-first explained simply"
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "t": "Myths about remote work",
+   "f": "Busting common myths, such as remote workers being less productive or always available"
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "t": "Your remote work starting point",
+   "f": "A quick self-check of your current habits, setup and goals for the path ahead"
+  },
+  {
+   "d": 11,
+   "lv": "beginner",
+   "t": "Choosing a spot for your workspace",
+   "f": "How to pick a place at home with good light, little noise and a clear separation from rest areas"
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "t": "The desk and chair basics",
+   "f": "Picking a desk height and chair that support a comfortable, healthy sitting posture"
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "t": "Screen position and ergonomics",
+   "f": "Placing your screen at eye level and arm's length to protect your neck and eyes"
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "t": "Lighting your workspace well",
+   "f": "Using daylight, lamps and screen brightness to reduce eye strain and look good on camera"
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "t": "Taming noise at home",
+   "f": "Practical ways to reduce background noise with headphones, soft surfaces and quiet hours"
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "t": "Internet connection essentials",
+   "f": "Checking speed and stability, router placement and having a backup plan like a mobile hotspot"
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "t": "Small spaces, smart setups",
+   "f": "Creative workspace ideas for tiny flats, shared rooms and kitchen-table offices"
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "t": "Keeping your desk tidy and inspiring",
+   "f": "Simple habits for a clutter-free desk plus a few personal touches that lift your mood"
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "t": "Standing, moving and switching positions",
+   "f": "Why changing posture during the day helps and easy ways to add standing or movement"
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "t": "A workspace on a budget",
+   "f": "Improving comfort and function with low-cost tweaks and things you already own"
+  },
+  {
+   "d": 21,
+   "lv": "beginner",
+   "t": "Designing your ideal workday",
+   "f": "Sketching the shape of a good remote day: start, focus blocks, breaks and finish"
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "t": "Morning rituals that start the day",
+   "f": "Replacing the commute with a short routine that signals the brain it is time to work"
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "t": "The fake commute",
+   "f": "Using a walk, a coffee run or a short ride to create a mental border between home and work"
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "t": "To dress up or not",
+   "f": "How clothing choices can influence focus, confidence and the feeling of being at work"
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "t": "Setting your working hours",
+   "f": "Choosing clear start and end times and sharing them so others know when you are available"
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "t": "Shutdown rituals to end the day",
+   "f": "A short end-of-day routine to wrap up tasks, plan tomorrow and switch off"
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "t": "Planning your day the night before",
+   "f": "Writing tomorrow's top three tasks so you can begin with clarity instead of email"
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "t": "Breaks that actually recharge you",
+   "f": "Choosing break activities that restore energy, like stretching, fresh air or a snack"
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "t": "Lunch away from the screen",
+   "f": "Why a real lunch break matters and ideas for making it a pleasant pause"
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "t": "Review: your workspace and routine",
+   "f": "Revisiting setup and routines from the first month and choosing one improvement to keep"
+  },
+  {
+   "d": 31,
+   "lv": "beginner",
+   "t": "Your remote toolkit overview",
+   "f": "The main tool categories: messaging, video, documents, tasks, storage and calendars"
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "t": "Email that people actually read",
+   "f": "Writing clear subject lines, short bodies and one obvious request per email"
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "t": "Team chat basics",
+   "f": "How channels, threads, mentions and direct messages work in team chat apps"
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "t": "Video call apps explained",
+   "f": "Common features of video tools: screen sharing, chat, reactions, recordings and breakout rooms"
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "t": "Shared documents and real-time editing",
+   "f": "Working together in one document with comments, suggestions and version history"
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "t": "Cloud storage and file organisation",
+   "f": "Naming files clearly and structuring folders so teammates can find anything fast"
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "t": "Your calendar as a work tool",
+   "f": "Using a shared calendar for meetings, focus blocks and showing your availability"
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "t": "Status and presence indicators",
+   "f": "Using online, away and do-not-disturb statuses so colleagues know when to reach you"
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "t": "Keyboard shortcuts that save time",
+   "f": "A handful of universal shortcuts that make everyday remote tasks quicker"
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "t": "Choosing tools without overload",
+   "f": "Avoiding tool fatigue by agreeing on which tool is used for what"
+  },
+  {
+   "d": 41,
+   "lv": "beginner",
+   "t": "Camera setup for video calls",
+   "f": "Positioning your camera at eye level with a clean, friendly background"
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "t": "Sounding clear on calls",
+   "f": "Microphones, headsets and simple tricks to reduce echo and background noise"
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "t": "Video call etiquette",
+   "f": "Muting, raising hands, using chat and other courtesies that keep calls pleasant"
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "t": "Being present on camera",
+   "f": "Eye contact, nodding and body language that show you are engaged"
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "t": "Joining calls on time and prepared",
+   "f": "Testing your setup, reading the agenda and having notes ready before the call"
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "t": "Speaking up in online meetings",
+   "f": "Simple phrases and techniques to contribute when everyone is talking over video"
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "t": "Screen sharing like a pro",
+   "f": "Preparing windows, closing private tabs and guiding people through what they see"
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "t": "Video fatigue and how to avoid it",
+   "f": "Why long video days drain energy and how cameras-off moments and shorter calls help"
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "t": "Virtual backgrounds and blur",
+   "f": "When to use blurred or virtual backgrounds and keeping them professional"
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "t": "Handling tech problems gracefully",
+   "f": "Calm ways to deal with frozen screens, lost audio and dropped calls"
+  },
+  {
+   "d": 51,
+   "lv": "beginner",
+   "t": "Writing is the remote superpower",
+   "f": "Why clear writing replaces hallway conversations in distributed teams"
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "t": "Writing clear and short messages",
+   "f": "Putting the key point first and cutting unnecessary words"
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "t": "Tone in text messages",
+   "f": "How text can sound colder than intended and ways to add warmth and clarity"
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "t": "Emojis and reactions at work",
+   "f": "Using emojis and reactions to acknowledge messages and add friendliness appropriately"
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "t": "Giving context in every message",
+   "f": "Including background, links and deadlines so readers do not need to ask follow-up questions"
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "t": "Asking good questions in writing",
+   "f": "Framing questions with what you tried and what you need to get faster answers"
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "t": "Writing a daily status update",
+   "f": "A simple format for sharing what you did, what is next and what is blocking you"
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "t": "Saying no and setting limits in writing",
+   "f": "Politely declining or renegotiating requests in messages"
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "t": "Responding times and expectations",
+   "f": "Agreeing on how quickly people should reply on email, chat and urgent channels"
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "t": "Review: tools and communication",
+   "f": "Revisiting tools, calls and writing skills from recent weeks with a short reflection"
+  },
+  {
+   "d": 61,
+   "lv": "beginner",
+   "t": "Why time management changes at home",
+   "f": "How freedom over your schedule needs new structures to stay productive"
+  },
+  {
+   "d": 62,
+   "lv": "beginner",
+   "t": "Your to-do list that works",
+   "f": "Building a simple, trusted task list instead of keeping everything in your head"
+  },
+  {
+   "d": 63,
+   "lv": "beginner",
+   "t": "Prioritising with urgent vs important",
+   "f": "Using the urgent-important grid to decide what to do now, later or never"
+  },
+  {
+   "d": 64,
+   "lv": "beginner",
+   "t": "Time blocking your calendar",
+   "f": "Reserving calendar blocks for focused work, meetings and admin"
+  },
+  {
+   "d": 65,
+   "lv": "beginner",
+   "t": "The Pomodoro technique",
+   "f": "Working in short focused sprints with small breaks to keep energy steady"
+  },
+  {
+   "d": 66,
+   "lv": "beginner",
+   "t": "Eat the frog: hard tasks first",
+   "f": "Tackling the most difficult or important task early in the day"
+  },
+  {
+   "d": 67,
+   "lv": "beginner",
+   "t": "Batching small tasks",
+   "f": "Grouping emails, messages and admin into set times instead of scattering them"
+  },
+  {
+   "d": 68,
+   "lv": "beginner",
+   "t": "Estimating how long things take",
+   "f": "Improving time estimates by tracking and comparing planned vs real time"
+  },
+  {
+   "d": 69,
+   "lv": "beginner",
+   "t": "Handling interruptions",
+   "f": "Strategies for dealing with pings, calls and household interruptions without losing your flow"
+  },
+  {
+   "d": 70,
+   "lv": "beginner",
+   "t": "Your weekly plan",
+   "f": "Planning the week ahead on one page with goals, meetings and focus blocks"
+  },
+  {
+   "d": 71,
+   "lv": "beginner",
+   "t": "What deep work means",
+   "f": "The value of long, uninterrupted focus for complex and creative tasks"
+  },
+  {
+   "d": 72,
+   "lv": "beginner",
+   "t": "Turning off notifications wisely",
+   "f": "Choosing which alerts really matter and silencing the rest"
+  },
+  {
+   "d": 73,
+   "lv": "beginner",
+   "t": "Your phone and focus",
+   "f": "Simple ways to keep the phone from stealing attention during work blocks"
+  },
+  {
+   "d": 74,
+   "lv": "beginner",
+   "t": "Sharing home with family or flatmates",
+   "f": "Agreeing on signals, schedules and quiet times with the people you live with"
+  },
+  {
+   "d": 75,
+   "lv": "beginner",
+   "t": "Focus music and soundscapes",
+   "f": "How instrumental music, white noise or silence can support concentration"
+  },
+  {
+   "d": 76,
+   "lv": "beginner",
+   "t": "Single-tasking over multitasking",
+   "f": "Why switching between tasks costs energy and how to do one thing at a time"
+  },
+  {
+   "d": 77,
+   "lv": "beginner",
+   "t": "Managing digital clutter",
+   "f": "Cleaning up browser tabs, desktop files and inboxes to clear mental space"
+  },
+  {
+   "d": 78,
+   "lv": "beginner",
+   "t": "Getting back into focus",
+   "f": "Quick ways to restart concentration after a distraction or a break"
+  },
+  {
+   "d": 79,
+   "lv": "beginner",
+   "t": "Knowing your energy peaks",
+   "f": "Matching demanding work to the hours when your energy is highest"
+  },
+  {
+   "d": 80,
+   "lv": "beginner",
+   "t": "Celebrating focused wins",
+   "f": "Noticing and rewarding progress to build motivation for deep work"
+  },
+  {
+   "d": 81,
+   "lv": "beginner",
+   "t": "Time zones explained",
+   "f": "How time zones, UTC and daylight saving work and why they matter for teams"
+  },
+  {
+   "d": 82,
+   "lv": "beginner",
+   "t": "Converting times without mistakes",
+   "f": "Simple methods and tools to avoid scheduling errors across zones"
+  },
+  {
+   "d": 83,
+   "lv": "beginner",
+   "t": "Finding overlap hours",
+   "f": "Identifying the hours when teammates in different zones can meet live"
+  },
+  {
+   "d": 84,
+   "lv": "beginner",
+   "t": "Scheduling fair meetings",
+   "f": "Rotating meeting times so the same people are not always up early or late"
+  },
+  {
+   "d": 85,
+   "lv": "beginner",
+   "t": "Writing dates and times clearly",
+   "f": "Including time zones in invitations and messages to prevent confusion"
+  },
+  {
+   "d": 86,
+   "lv": "beginner",
+   "t": "Handing off work across zones",
+   "f": "Leaving clear notes so a teammate in another zone can continue your work"
+  },
+  {
+   "d": 87,
+   "lv": "beginner",
+   "t": "Working with a flexible schedule",
+   "f": "Benefits and pitfalls of choosing your own hours within a team"
+  },
+  {
+   "d": 88,
+   "lv": "beginner",
+   "t": "Respecting off-hours",
+   "f": "Scheduled sending and other habits that avoid pinging people at night"
+  },
+  {
+   "d": 89,
+   "lv": "beginner",
+   "t": "Living in a different zone than your team",
+   "f": "Adapting routines when your workday starts as others are finishing"
+  },
+  {
+   "d": 90,
+   "lv": "beginner",
+   "t": "Review: time, focus and time zones",
+   "f": "Revisiting time management, focus and time zone skills with a mini self-assessment"
+  },
+  {
+   "d": 91,
+   "lv": "beginner",
+   "t": "Wellbeing as part of the job",
+   "f": "Why physical and mental wellbeing are key to sustainable remote work"
+  },
+  {
+   "d": 92,
+   "lv": "beginner",
+   "t": "Moving more during the workday",
+   "f": "Easy ways to add steps, stretches and movement between tasks"
+  },
+  {
+   "d": 93,
+   "lv": "beginner",
+   "t": "Caring for your eyes",
+   "f": "The 20-20-20 rule, blinking and screen settings to reduce eye strain"
+  },
+  {
+   "d": 94,
+   "lv": "beginner",
+   "t": "Drinking water and eating well at home",
+   "f": "Simple habits for hydration and healthy snacks near your desk"
+  },
+  {
+   "d": 95,
+   "lv": "beginner",
+   "t": "Staying connected to avoid loneliness",
+   "f": "Ways to feel part of a team and keep social contact while working alone"
+  },
+  {
+   "d": 96,
+   "lv": "beginner",
+   "t": "Boundaries between work and life",
+   "f": "Physical, time and digital boundaries that protect your personal life"
+  },
+  {
+   "d": 97,
+   "lv": "beginner",
+   "t": "The always-on trap",
+   "f": "Recognising the pressure to be constantly available and how to step back"
+  },
+  {
+   "d": 98,
+   "lv": "beginner",
+   "t": "Getting outside every day",
+   "f": "Why daylight and fresh air improve mood, sleep and focus"
+  },
+  {
+   "d": 99,
+   "lv": "beginner",
+   "t": "Mini mindfulness breaks",
+   "f": "Short breathing or attention exercises that calm the mind during busy days"
+  },
+  {
+   "d": 100,
+   "lv": "beginner",
+   "t": "Your personal wellbeing check-in",
+   "f": "A weekly moment to rate energy, mood and balance and adjust your habits"
+  },
+  {
+   "d": 101,
+   "lv": "beginner",
+   "t": "Why security matters at home",
+   "f": "How working outside the office creates new risks for your data and your company"
+  },
+  {
+   "d": 102,
+   "lv": "beginner",
+   "t": "Strong passwords and password managers",
+   "f": "Creating unique passwords and storing them safely with a manager"
+  },
+  {
+   "d": 103,
+   "lv": "beginner",
+   "t": "Two-factor authentication",
+   "f": "Adding a second login step to protect your work accounts"
+  },
+  {
+   "d": 104,
+   "lv": "beginner",
+   "t": "Spotting phishing messages",
+   "f": "Recognising suspicious emails, links and requests for credentials"
+  },
+  {
+   "d": 105,
+   "lv": "beginner",
+   "t": "Safe Wi-Fi at home and on the road",
+   "f": "Securing your home router and being careful with public networks"
+  },
+  {
+   "d": 106,
+   "lv": "beginner",
+   "t": "Keeping devices updated",
+   "f": "Why software updates and screen locks protect your work devices"
+  },
+  {
+   "d": 107,
+   "lv": "beginner",
+   "t": "Separating work and personal devices",
+   "f": "Pros of keeping work data on work devices and good habits if you share one"
+  },
+  {
+   "d": 108,
+   "lv": "beginner",
+   "t": "Privacy on video calls",
+   "f": "Checking what your camera, screen and background reveal to others"
+  },
+  {
+   "d": 109,
+   "lv": "beginner",
+   "t": "Backing up your work",
+   "f": "Simple backup habits so a lost or broken laptop is not a disaster"
+  },
+  {
+   "d": 110,
+   "lv": "beginner",
+   "t": "Building remote team connections",
+   "f": "Small daily actions that create trust and friendship at a distance"
+  },
+  {
+   "d": 111,
+   "lv": "beginner",
+   "t": "Introducing yourself to a remote team",
+   "f": "Writing a friendly intro message that shares your role and a bit of personality"
+  },
+  {
+   "d": 112,
+   "lv": "beginner",
+   "t": "Virtual coffee chats",
+   "f": "Setting up informal video chats to get to know colleagues"
+  },
+  {
+   "d": 113,
+   "lv": "beginner",
+   "t": "Celebrating wins together online",
+   "f": "Ways to share good news, birthdays and milestones in a remote team"
+  },
+  {
+   "d": 114,
+   "lv": "beginner",
+   "t": "Asking for help without hesitation",
+   "f": "Why asking early saves time and how to make requests easy to answer"
+  },
+  {
+   "d": 115,
+   "lv": "beginner",
+   "t": "Small talk in remote teams",
+   "f": "Friendly openers and casual chat that make remote calls and channels feel human"
+  },
+  {
+   "d": 116,
+   "lv": "beginner",
+   "t": "Online team games and fun",
+   "f": "Light games and social channels that help remote colleagues bond"
+  },
+  {
+   "d": 117,
+   "lv": "beginner",
+   "t": "Sharing personal updates at work",
+   "f": "Deciding what to share about your life so colleagues know you a little better"
+  },
+  {
+   "d": 118,
+   "lv": "beginner",
+   "t": "Being a reliable teammate",
+   "f": "Keeping promises, meeting deadlines and communicating early when plans change"
+  },
+  {
+   "d": 119,
+   "lv": "beginner",
+   "t": "Saying thank you often",
+   "f": "Why frequent, specific appreciation strengthens remote relationships"
+  },
+  {
+   "d": 120,
+   "lv": "beginner",
+   "t": "Review: your remote foundations",
+   "f": "Looking back at the beginner stage and naming your three strongest new habits"
+  },
+  {
+   "d": 121,
+   "lv": "intermediate",
+   "t": "Async-first communication",
+   "f": "Why async-first teams write things down and expect replies within hours, not seconds"
+  },
+  {
+   "d": 122,
+   "lv": "intermediate",
+   "t": "Writing messages that stand alone",
+   "f": "Crafting complete messages that someone can act on without a live chat"
+  },
+  {
+   "d": 123,
+   "lv": "intermediate",
+   "t": "Short video messages",
+   "f": "Recording quick screen or face videos to explain ideas instead of scheduling a meeting"
+  },
+  {
+   "d": 124,
+   "lv": "intermediate",
+   "t": "Decision logs",
+   "f": "Keeping a simple record of decisions, reasons and owners so nobody is left guessing"
+  },
+  {
+   "d": 125,
+   "lv": "intermediate",
+   "t": "Async standups",
+   "f": "Replacing daily meetings with written updates that everyone reads on their own time"
+  },
+  {
+   "d": 126,
+   "lv": "intermediate",
+   "t": "Threads that stay organised",
+   "f": "Keeping conversations in threads and channels so information stays findable"
+  },
+  {
+   "d": 127,
+   "lv": "intermediate",
+   "t": "Choosing sync or async for each task",
+   "f": "A simple guide to deciding when a live conversation is better than a message"
+  },
+  {
+   "d": 128,
+   "lv": "intermediate",
+   "t": "Async feedback on work",
+   "f": "Giving useful comments on documents and designs without a meeting"
+  },
+  {
+   "d": 129,
+   "lv": "intermediate",
+   "t": "Reducing response anxiety",
+   "f": "Accepting that not every message needs an instant reply and trusting your team"
+  },
+  {
+   "d": 130,
+   "lv": "intermediate",
+   "t": "Async brainstorming",
+   "f": "Collecting ideas in a shared doc over a few days before discussing them"
+  },
+  {
+   "d": 131,
+   "lv": "intermediate",
+   "t": "Do we really need this meeting",
+   "f": "Questions to ask before sending a meeting invite"
+  },
+  {
+   "d": 132,
+   "lv": "intermediate",
+   "t": "Writing a great meeting agenda",
+   "f": "Defining purpose, topics, owners and desired outcomes in advance"
+  },
+  {
+   "d": 133,
+   "lv": "intermediate",
+   "t": "Facilitating an online meeting",
+   "f": "Guiding discussion, managing time and inviting quieter voices"
+  },
+  {
+   "d": 134,
+   "lv": "intermediate",
+   "t": "Taking and sharing meeting notes",
+   "f": "Capturing decisions and action items and sharing them right after the call"
+  },
+  {
+   "d": 135,
+   "lv": "intermediate",
+   "t": "Short standing meetings",
+   "f": "Running quick, focused check-ins that respect everyone's time"
+  },
+  {
+   "d": 136,
+   "lv": "intermediate",
+   "t": "Engaging people in online meetings",
+   "f": "Using polls, round-robins and chat to keep participants involved"
+  },
+  {
+   "d": 137,
+   "lv": "intermediate",
+   "t": "Running a retrospective remotely",
+   "f": "Reflecting as a team on what went well and what to improve"
+  },
+  {
+   "d": 138,
+   "lv": "intermediate",
+   "t": "Meeting-free days and focus time",
+   "f": "Team agreements that protect blocks of time without meetings"
+  },
+  {
+   "d": 139,
+   "lv": "intermediate",
+   "t": "Ending meetings with clear next steps",
+   "f": "Closing every call with owners, deadlines and a summary"
+  },
+  {
+   "d": 140,
+   "lv": "intermediate",
+   "t": "Review: async and meetings",
+   "f": "Revisiting async habits and meeting skills and choosing one to improve"
+  },
+  {
+   "d": 141,
+   "lv": "intermediate",
+   "t": "Visual task boards",
+   "f": "Organising work in columns like to do, doing and done for team visibility"
+  },
+  {
+   "d": 142,
+   "lv": "intermediate",
+   "t": "Writing tasks that are easy to pick up",
+   "f": "Clear titles, descriptions and acceptance criteria for every task"
+  },
+  {
+   "d": 143,
+   "lv": "intermediate",
+   "t": "Owners and deadlines",
+   "f": "Making sure each task has one owner and a realistic due date"
+  },
+  {
+   "d": 144,
+   "lv": "intermediate",
+   "t": "Tracking progress without micromanaging",
+   "f": "Using shared tools so progress is visible without constant check-ins"
+  },
+  {
+   "d": 145,
+   "lv": "intermediate",
+   "t": "Workflows and automation basics",
+   "f": "Setting simple rules so tools move tasks or send reminders automatically"
+  },
+  {
+   "d": 146,
+   "lv": "intermediate",
+   "t": "Planning sprints or cycles",
+   "f": "Organising work into short cycles with clear goals and reviews"
+  },
+  {
+   "d": 147,
+   "lv": "intermediate",
+   "t": "Handling blockers quickly",
+   "f": "Flagging and solving blockers early so work keeps moving"
+  },
+  {
+   "d": 148,
+   "lv": "intermediate",
+   "t": "Personal vs team task systems",
+   "f": "Keeping your own to-do list in sync with the team's project board"
+  },
+  {
+   "d": 149,
+   "lv": "intermediate",
+   "t": "Project kickoff online",
+   "f": "Starting a new project remotely with goals, roles and a shared plan"
+  },
+  {
+   "d": 150,
+   "lv": "intermediate",
+   "t": "Closing a project well",
+   "f": "Wrapping up with a summary, lessons learned and a thank you to the team"
+  },
+  {
+   "d": 151,
+   "lv": "intermediate",
+   "t": "The value of documentation",
+   "f": "How good documentation saves hours of repeated questions in remote teams"
+  },
+  {
+   "d": 152,
+   "lv": "intermediate",
+   "t": "Building a team wiki",
+   "f": "Structuring a shared knowledge base that is easy to search and maintain"
+  },
+  {
+   "d": 153,
+   "lv": "intermediate",
+   "t": "Writing a how-to guide",
+   "f": "Step-by-step instructions that someone new can follow without help"
+  },
+  {
+   "d": 154,
+   "lv": "intermediate",
+   "t": "Templates that save time",
+   "f": "Reusable templates for meeting notes, reports and project briefs"
+  },
+  {
+   "d": 155,
+   "lv": "intermediate",
+   "t": "Keeping docs up to date",
+   "f": "Habits and ownership that stop documentation from going stale"
+  },
+  {
+   "d": 156,
+   "lv": "intermediate",
+   "t": "Writing a personal user manual",
+   "f": "A short guide to how you like to work, communicate and receive feedback"
+  },
+  {
+   "d": 157,
+   "lv": "intermediate",
+   "t": "Onboarding documents",
+   "f": "What a new remote colleague needs to read in their first days"
+  },
+  {
+   "d": 158,
+   "lv": "intermediate",
+   "t": "Naming and tagging for searchability",
+   "f": "Using consistent names and tags so documents can be found quickly"
+  },
+  {
+   "d": 159,
+   "lv": "intermediate",
+   "t": "Writing for skimmers",
+   "f": "Using headings, bullet points and summaries so busy readers get the point"
+  },
+  {
+   "d": 160,
+   "lv": "intermediate",
+   "t": "Documenting processes",
+   "f": "Turning repeated tasks into clear, written processes"
+  },
+  {
+   "d": 161,
+   "lv": "intermediate",
+   "t": "Collaborating in real time online",
+   "f": "Working together live on documents, boards and code"
+  },
+  {
+   "d": 162,
+   "lv": "intermediate",
+   "t": "Online whiteboards",
+   "f": "Using digital whiteboards for brainstorming, mapping and planning together"
+  },
+  {
+   "d": 163,
+   "lv": "intermediate",
+   "t": "Remote pairing sessions",
+   "f": "Working side by side over video on a shared task"
+  },
+  {
+   "d": 164,
+   "lv": "intermediate",
+   "t": "Giving feedback in comments",
+   "f": "Making comments specific, kind and actionable in shared documents"
+  },
+  {
+   "d": 165,
+   "lv": "intermediate",
+   "t": "Co-writing a document",
+   "f": "Splitting sections, reviewing each other and merging into one voice"
+  },
+  {
+   "d": 166,
+   "lv": "intermediate",
+   "t": "Collaborating across departments",
+   "f": "Bridging teams with different tools, goals and vocabulary"
+  },
+  {
+   "d": 167,
+   "lv": "intermediate",
+   "t": "Handling disagreement in writing",
+   "f": "Expressing a different view respectfully in messages and docs"
+  },
+  {
+   "d": 168,
+   "lv": "intermediate",
+   "t": "Building on others' ideas",
+   "f": "Using a yes-and approach to strengthen ideas in remote discussions"
+  },
+  {
+   "d": 169,
+   "lv": "intermediate",
+   "t": "Peer reviews that help",
+   "f": "Structuring reviews of work so they feel supportive and useful"
+  },
+  {
+   "d": 170,
+   "lv": "intermediate",
+   "t": "Shared goals and team agreements",
+   "f": "Writing a team charter about how you work together remotely"
+  },
+  {
+   "d": 171,
+   "lv": "intermediate",
+   "t": "Making your work visible",
+   "f": "Sharing progress so your contributions are noticed without bragging"
+  },
+  {
+   "d": 172,
+   "lv": "intermediate",
+   "t": "Weekly highlights to your manager",
+   "f": "A short weekly summary that keeps your manager informed"
+  },
+  {
+   "d": 173,
+   "lv": "intermediate",
+   "t": "Getting the most from one-on-ones",
+   "f": "Preparing topics and questions for regular meetings with your manager"
+  },
+  {
+   "d": 174,
+   "lv": "intermediate",
+   "t": "Setting goals you can measure",
+   "f": "Writing clear goals with outcomes and checkpoints"
+  },
+  {
+   "d": 175,
+   "lv": "intermediate",
+   "t": "Asking for feedback remotely",
+   "f": "Requesting specific feedback when you cannot read faces in an office"
+  },
+  {
+   "d": 176,
+   "lv": "intermediate",
+   "t": "Building your internal network",
+   "f": "Connecting with people outside your team to grow your influence"
+  },
+  {
+   "d": 177,
+   "lv": "intermediate",
+   "t": "Learning and growing from home",
+   "f": "Online courses, reading and side projects that build your skills"
+  },
+  {
+   "d": 178,
+   "lv": "intermediate",
+   "t": "Volunteering for visible projects",
+   "f": "Choosing stretch projects that teach you and show your strengths"
+  },
+  {
+   "d": 179,
+   "lv": "intermediate",
+   "t": "Talking about promotion remotely",
+   "f": "Preparing for growth conversations with evidence of your impact"
+  },
+  {
+   "d": 180,
+   "lv": "intermediate",
+   "t": "Review: projects, docs and visibility",
+   "f": "Revisiting project tools, documentation and career habits from recent weeks"
+  },
+  {
+   "d": 181,
+   "lv": "intermediate",
+   "t": "Working with people across cultures",
+   "f": "How cultural backgrounds shape communication and work styles in remote teams"
+  },
+  {
+   "d": 182,
+   "lv": "intermediate",
+   "t": "Direct and indirect communication",
+   "f": "Understanding how directness differs across cultures and adapting your messages"
+  },
+  {
+   "d": 183,
+   "lv": "intermediate",
+   "t": "Working in a shared second language",
+   "f": "Writing simply and kindly when many teammates use a non-native language"
+  },
+  {
+   "d": 184,
+   "lv": "intermediate",
+   "t": "Humour across cultures",
+   "f": "When jokes travel well and when they can be misunderstood"
+  },
+  {
+   "d": 185,
+   "lv": "intermediate",
+   "t": "Holidays and calendars around the world",
+   "f": "Respecting different public holidays and working weeks"
+  },
+  {
+   "d": 186,
+   "lv": "intermediate",
+   "t": "Hierarchy and decision styles",
+   "f": "How attitudes to hierarchy affect who speaks up and decides"
+  },
+  {
+   "d": 187,
+   "lv": "intermediate",
+   "t": "Building trust across cultures",
+   "f": "Task-based and relationship-based trust and how to grow both"
+  },
+  {
+   "d": 188,
+   "lv": "intermediate",
+   "t": "Feedback across cultures",
+   "f": "Adapting how you give and receive feedback with international colleagues"
+  },
+  {
+   "d": 189,
+   "lv": "intermediate",
+   "t": "Avoiding misunderstandings",
+   "f": "Checking understanding and summarising to prevent confusion"
+  },
+  {
+   "d": 190,
+   "lv": "intermediate",
+   "t": "Learning from a global team",
+   "f": "Turning cultural differences into new ideas and perspectives"
+  },
+  {
+   "d": 191,
+   "lv": "intermediate",
+   "t": "What hybrid work looks like",
+   "f": "Common hybrid models, from fixed office days to fully flexible choice"
+  },
+  {
+   "d": 192,
+   "lv": "intermediate",
+   "t": "Making the most of office days",
+   "f": "Using office time for collaboration and relationships, not solo tasks"
+  },
+  {
+   "d": 193,
+   "lv": "intermediate",
+   "t": "Fair hybrid meetings",
+   "f": "Making sure remote participants are heard as well as those in the room"
+  },
+  {
+   "d": 194,
+   "lv": "intermediate",
+   "t": "Remote-first habits in hybrid teams",
+   "f": "Keeping information in writing so remote colleagues are not left out"
+  },
+  {
+   "d": 195,
+   "lv": "intermediate",
+   "t": "Avoiding proximity bias",
+   "f": "How being seen in the office can unfairly influence opportunities"
+  },
+  {
+   "d": 196,
+   "lv": "intermediate",
+   "t": "Hot desks and shared offices",
+   "f": "Practical tips for flexible desks, booking rooms and keeping your things organised"
+  },
+  {
+   "d": 197,
+   "lv": "intermediate",
+   "t": "Switching between home and office",
+   "f": "Routines that make moving between locations smooth"
+  },
+  {
+   "d": 198,
+   "lv": "intermediate",
+   "t": "Team agreements for hybrid work",
+   "f": "Deciding together when to meet in person and how to communicate"
+  },
+  {
+   "d": 199,
+   "lv": "intermediate",
+   "t": "Hybrid tech that works",
+   "f": "Rooms, cameras and microphones that make mixed meetings work"
+  },
+  {
+   "d": 200,
+   "lv": "intermediate",
+   "t": "Your personal hybrid rhythm",
+   "f": "Designing a weekly pattern of home and office days that suits you"
+  },
+  {
+   "d": 201,
+   "lv": "intermediate",
+   "t": "Coworking spaces",
+   "f": "What coworking spaces offer and how to choose one"
+  },
+  {
+   "d": 202,
+   "lv": "intermediate",
+   "t": "Working from cafés and libraries",
+   "f": "Etiquette, connectivity and focus tips for public workplaces"
+  },
+  {
+   "d": 203,
+   "lv": "intermediate",
+   "t": "Working while travelling",
+   "f": "Planning work around travel with reliable internet and quiet places"
+  },
+  {
+   "d": 204,
+   "lv": "intermediate",
+   "t": "The digital nomad lifestyle",
+   "f": "The realities of moving often while working, beyond the pretty photos"
+  },
+  {
+   "d": 205,
+   "lv": "intermediate",
+   "t": "Packing a mobile office",
+   "f": "Essential gear for working anywhere: chargers, adapters, headphones and stands"
+  },
+  {
+   "d": 206,
+   "lv": "intermediate",
+   "t": "Staying productive on the road",
+   "f": "Keeping routines and focus when your location keeps changing"
+  },
+  {
+   "d": 207,
+   "lv": "intermediate",
+   "t": "Checking rules before working abroad",
+   "f": "Why to research official sources about work permissions before travelling"
+  },
+  {
+   "d": 208,
+   "lv": "intermediate",
+   "t": "Workations and slow travel",
+   "f": "Combining work and travel at a calm pace for better balance"
+  },
+  {
+   "d": 209,
+   "lv": "intermediate",
+   "t": "Community for location-independent workers",
+   "f": "Finding meetups, groups and coworking communities wherever you go"
+  },
+  {
+   "d": 210,
+   "lv": "intermediate",
+   "t": "Review: culture, hybrid and mobility",
+   "f": "Revisiting cross-cultural, hybrid and location-independent work skills"
+  },
+  {
+   "d": 211,
+   "lv": "intermediate",
+   "t": "Your weekly review habit",
+   "f": "A weekly ritual to clear inboxes, review goals and plan the next week"
+  },
+  {
+   "d": 212,
+   "lv": "intermediate",
+   "t": "Energy management over time management",
+   "f": "Planning work around energy levels instead of only hours"
+  },
+  {
+   "d": 213,
+   "lv": "intermediate",
+   "t": "Building habits that stick",
+   "f": "Small habit steps, triggers and rewards for lasting change"
+  },
+  {
+   "d": 214,
+   "lv": "intermediate",
+   "t": "Tracking your time honestly",
+   "f": "Using simple time tracking to see where your hours really go"
+  },
+  {
+   "d": 215,
+   "lv": "intermediate",
+   "t": "Saying no to protect priorities",
+   "f": "Declining or postponing work that does not fit your goals"
+  },
+  {
+   "d": 216,
+   "lv": "intermediate",
+   "t": "Avoiding procrastination",
+   "f": "Understanding why we delay and tricks to start difficult tasks"
+  },
+  {
+   "d": 217,
+   "lv": "intermediate",
+   "t": "Personal knowledge management",
+   "f": "Capturing notes and ideas in a system you can find later"
+  },
+  {
+   "d": 218,
+   "lv": "intermediate",
+   "t": "Reviewing and improving your setup",
+   "f": "Upgrading tools, routines and workspace based on what you learned"
+  },
+  {
+   "d": 219,
+   "lv": "intermediate",
+   "t": "Monthly and quarterly goals",
+   "f": "Connecting daily tasks to bigger goals over months"
+  },
+  {
+   "d": 220,
+   "lv": "intermediate",
+   "t": "Rest days and recovery",
+   "f": "Planning real time off so you return refreshed"
+  },
+  {
+   "d": 221,
+   "lv": "intermediate",
+   "t": "Where to find remote jobs",
+   "f": "Job boards, company career pages and networks that list remote roles"
+  },
+  {
+   "d": 222,
+   "lv": "intermediate",
+   "t": "A CV that shows remote skills",
+   "f": "Highlighting self-management, written communication and async collaboration"
+  },
+  {
+   "d": 223,
+   "lv": "intermediate",
+   "t": "Your online professional presence",
+   "f": "Keeping profiles and portfolios up to date for remote employers"
+  },
+  {
+   "d": 224,
+   "lv": "intermediate",
+   "t": "Preparing for a video interview",
+   "f": "Setup, lighting and practice for a confident online interview"
+  },
+  {
+   "d": 225,
+   "lv": "intermediate",
+   "t": "Answering remote work interview questions",
+   "f": "Showing how you manage time, communicate and stay motivated"
+  },
+  {
+   "d": 226,
+   "lv": "intermediate",
+   "t": "Asking employers about remote culture",
+   "f": "Questions that reveal how a company really supports remote staff"
+  },
+  {
+   "d": 227,
+   "lv": "intermediate",
+   "t": "Take-home assignments and trials",
+   "f": "Handling paid trials or assignments professionally"
+  },
+  {
+   "d": 228,
+   "lv": "intermediate",
+   "t": "Comparing remote job offers",
+   "f": "Looking at schedule, culture, equipment support and growth, not only salary"
+  },
+  {
+   "d": 229,
+   "lv": "intermediate",
+   "t": "Networking for remote roles",
+   "f": "Building relationships online that lead to opportunities"
+  },
+  {
+   "d": 230,
+   "lv": "intermediate",
+   "t": "Staying motivated during a job search",
+   "f": "Routines and support that keep you going while you search"
+  },
+  {
+   "d": 231,
+   "lv": "intermediate",
+   "t": "Your first week in a remote job",
+   "f": "What to do in your first days to settle in and make a good start"
+  },
+  {
+   "d": 232,
+   "lv": "intermediate",
+   "t": "Setting up accounts and tools",
+   "f": "Getting access, learning tools and asking about conventions early"
+  },
+  {
+   "d": 233,
+   "lv": "intermediate",
+   "t": "Meeting your team remotely",
+   "f": "Scheduling short intro calls to learn about colleagues and their work"
+  },
+  {
+   "d": 234,
+   "lv": "intermediate",
+   "t": "Learning unwritten rules",
+   "f": "Discovering team norms about replies, meetings and communication"
+  },
+  {
+   "d": 235,
+   "lv": "intermediate",
+   "t": "Finding an onboarding buddy",
+   "f": "Why a buddy or mentor helps new remote staff settle faster"
+  },
+  {
+   "d": 236,
+   "lv": "intermediate",
+   "t": "Early wins in a new role",
+   "f": "Choosing small projects that show value in your first month"
+  },
+  {
+   "d": 237,
+   "lv": "intermediate",
+   "t": "Clarifying expectations",
+   "f": "Agreeing with your manager on goals, hours and how success is measured"
+  },
+  {
+   "d": 238,
+   "lv": "intermediate",
+   "t": "Building relationships from scratch",
+   "f": "Creating rapport with people you have never met in person"
+  },
+  {
+   "d": 239,
+   "lv": "intermediate",
+   "t": "Reflecting on your first 90 days",
+   "f": "Reviewing what you learned and what to adjust after onboarding"
+  },
+  {
+   "d": 240,
+   "lv": "intermediate",
+   "t": "Helping the next new person",
+   "f": "Sharing tips and improving onboarding for future colleagues"
+  },
+  {
+   "d": 241,
+   "lv": "intermediate",
+   "t": "Trust at a distance",
+   "f": "How reliability, transparency and kindness build trust when you rarely meet"
+  },
+  {
+   "d": 242,
+   "lv": "intermediate",
+   "t": "When messages are misread",
+   "f": "Clearing up misunderstandings quickly and calmly"
+  },
+  {
+   "d": 243,
+   "lv": "intermediate",
+   "t": "Switching from text to a call",
+   "f": "Knowing when a quick call solves a problem faster than more messages"
+  },
+  {
+   "d": 244,
+   "lv": "intermediate",
+   "t": "Addressing conflict remotely",
+   "f": "Steps for handling disagreements with respect and focus on solutions"
+  },
+  {
+   "d": 245,
+   "lv": "intermediate",
+   "t": "Giving constructive feedback online",
+   "f": "Sharing feedback clearly and kindly over video or in writing"
+  },
+  {
+   "d": 246,
+   "lv": "intermediate",
+   "t": "Receiving feedback gracefully",
+   "f": "Listening, thanking and reflecting when someone offers feedback"
+  },
+  {
+   "d": 247,
+   "lv": "intermediate",
+   "t": "Repairing trust after a mistake",
+   "f": "Owning errors, explaining fixes and rebuilding confidence"
+  },
+  {
+   "d": 248,
+   "lv": "intermediate",
+   "t": "Assuming good intent",
+   "f": "Interpreting short or unclear messages generously"
+  },
+  {
+   "d": 249,
+   "lv": "intermediate",
+   "t": "Supporting a struggling teammate",
+   "f": "Noticing signs and offering help to a colleague who seems overwhelmed"
+  },
+  {
+   "d": 250,
+   "lv": "intermediate",
+   "t": "Review: growth, career and trust",
+   "f": "Looking back at the intermediate stage and choosing goals for the advanced path"
+  },
+  {
+   "d": 251,
+   "lv": "advanced",
+   "t": "What great remote leaders do",
+   "f": "Core behaviours of leaders who help distributed teams thrive"
+  },
+  {
+   "d": 252,
+   "lv": "advanced",
+   "t": "Managing outcomes, not hours",
+   "f": "Measuring results instead of online time or activity"
+  },
+  {
+   "d": 253,
+   "lv": "advanced",
+   "t": "Rituals that hold a remote team together",
+   "f": "Regular rituals like weekly kickoffs, demos and celebrations"
+  },
+  {
+   "d": 254,
+   "lv": "advanced",
+   "t": "Running effective remote one-on-ones",
+   "f": "Structure and questions for meaningful one-on-ones with team members"
+  },
+  {
+   "d": 255,
+   "lv": "advanced",
+   "t": "Setting clear expectations for a team",
+   "f": "Defining roles, responsibilities and communication norms"
+  },
+  {
+   "d": 256,
+   "lv": "advanced",
+   "t": "Delegating across time zones",
+   "f": "Handing off work with context, autonomy and check-in points"
+  },
+  {
+   "d": 257,
+   "lv": "advanced",
+   "t": "Recognising good work remotely",
+   "f": "Public and private ways to show appreciation in a distributed team"
+  },
+  {
+   "d": 258,
+   "lv": "advanced",
+   "t": "Leading through uncertainty remotely",
+   "f": "Communicating often and honestly during change"
+  },
+  {
+   "d": 259,
+   "lv": "advanced",
+   "t": "Coaching team members at a distance",
+   "f": "Helping people grow through questions, goals and regular reflection"
+  },
+  {
+   "d": 260,
+   "lv": "advanced",
+   "t": "Leading by example online",
+   "f": "Modelling healthy boundaries, clear writing and async habits"
+  },
+  {
+   "d": 261,
+   "lv": "advanced",
+   "t": "Designing async-first processes",
+   "f": "Rethinking team processes so they work without real-time meetings"
+  },
+  {
+   "d": 262,
+   "lv": "advanced",
+   "t": "Writing a team communication guide",
+   "f": "Documenting which channel to use for what and expected response times"
+  },
+  {
+   "d": 263,
+   "lv": "advanced",
+   "t": "Async decision-making frameworks",
+   "f": "Proposals, comment periods and clear deciders for decisions without meetings"
+  },
+  {
+   "d": 264,
+   "lv": "advanced",
+   "t": "Running async planning cycles",
+   "f": "Planning quarters and projects through written proposals and reviews"
+  },
+  {
+   "d": 265,
+   "lv": "advanced",
+   "t": "Replacing status meetings",
+   "f": "Dashboards and written updates that make status meetings unnecessary"
+  },
+  {
+   "d": 266,
+   "lv": "advanced",
+   "t": "Async onboarding programmes",
+   "f": "Self-paced onboarding paths with checklists and recorded intros"
+  },
+  {
+   "d": 267,
+   "lv": "advanced",
+   "t": "Handling urgent issues in async teams",
+   "f": "Clear escalation paths for the rare truly urgent problems"
+  },
+  {
+   "d": 268,
+   "lv": "advanced",
+   "t": "Measuring async health",
+   "f": "Signs that async communication is working or causing delays"
+  },
+  {
+   "d": 269,
+   "lv": "advanced",
+   "t": "Async across many time zones",
+   "f": "Follow-the-sun workflows and handoff rituals for global teams"
+  },
+  {
+   "d": 270,
+   "lv": "advanced",
+   "t": "Teaching async habits to others",
+   "f": "Helping colleagues adopt async ways of working step by step"
+  },
+  {
+   "d": 271,
+   "lv": "advanced",
+   "t": "Remote team health",
+   "f": "Indicators of a healthy distributed team, from engagement to collaboration"
+  },
+  {
+   "d": 272,
+   "lv": "advanced",
+   "t": "Spotting burnout signals early",
+   "f": "Noticing warning signs of overload in yourself and others at a distance"
+  },
+  {
+   "d": 273,
+   "lv": "advanced",
+   "t": "Workload balance in a team",
+   "f": "Making workloads visible and sharing them fairly"
+  },
+  {
+   "d": 274,
+   "lv": "advanced",
+   "t": "Psychological safety online",
+   "f": "Creating an environment where people feel safe to speak up and make mistakes"
+  },
+  {
+   "d": 275,
+   "lv": "advanced",
+   "t": "Inclusive remote practices",
+   "f": "Making sure every voice is heard regardless of location, language or style"
+  },
+  {
+   "d": 276,
+   "lv": "advanced",
+   "t": "Supporting different working styles",
+   "f": "Adapting to introverts, extroverts, caregivers and early birds"
+  },
+  {
+   "d": 277,
+   "lv": "advanced",
+   "t": "Team surveys and pulse checks",
+   "f": "Collecting regular feedback on how the team feels and acting on it"
+  },
+  {
+   "d": 278,
+   "lv": "advanced",
+   "t": "Encouraging time off",
+   "f": "Making holidays normal and covering for each other properly"
+  },
+  {
+   "d": 279,
+   "lv": "advanced",
+   "t": "Creating belonging at a distance",
+   "f": "Shared stories, traditions and values that make people feel part of something"
+  },
+  {
+   "d": 280,
+   "lv": "advanced",
+   "t": "Review: leading and async design",
+   "f": "Revisiting remote leadership, async processes and team health"
+  },
+  {
+   "d": 281,
+   "lv": "advanced",
+   "t": "Integrating your tools",
+   "f": "Connecting apps so information flows without copy and paste"
+  },
+  {
+   "d": 282,
+   "lv": "advanced",
+   "t": "Automating repetitive tasks",
+   "f": "Spotting repetitive work and automating it with simple rules"
+  },
+  {
+   "d": 283,
+   "lv": "advanced",
+   "t": "AI assistants in remote work",
+   "f": "Using AI tools for drafts, summaries and research while checking their output"
+  },
+  {
+   "d": 284,
+   "lv": "advanced",
+   "t": "Building a single source of truth",
+   "f": "Choosing one place for each type of information to avoid confusion"
+  },
+  {
+   "d": 285,
+   "lv": "advanced",
+   "t": "Dashboards for remote teams",
+   "f": "Showing key numbers and progress in one shared view"
+  },
+  {
+   "d": 286,
+   "lv": "advanced",
+   "t": "Advanced search and filters",
+   "f": "Finding information fast across chat, docs and tasks"
+  },
+  {
+   "d": 287,
+   "lv": "advanced",
+   "t": "Templates and checklists at scale",
+   "f": "Standardising recurring work with shared templates"
+  },
+  {
+   "d": 288,
+   "lv": "advanced",
+   "t": "Reviewing your tool stack",
+   "f": "Auditing tools for overlap, cost of attention and usefulness"
+  },
+  {
+   "d": 289,
+   "lv": "advanced",
+   "t": "Digital wellbeing settings",
+   "f": "Using focus modes, quiet hours and scheduled delivery in your tools"
+  },
+  {
+   "d": 290,
+   "lv": "advanced",
+   "t": "Teaching tools to a team",
+   "f": "Running short training sessions so everyone uses tools the same way"
+  },
+  {
+   "d": 291,
+   "lv": "advanced",
+   "t": "Designing a virtual workshop",
+   "f": "Planning goals, agenda and activities for an engaging online workshop"
+  },
+  {
+   "d": 292,
+   "lv": "advanced",
+   "t": "Energisers and icebreakers online",
+   "f": "Quick activities that warm up a remote group"
+  },
+  {
+   "d": 293,
+   "lv": "advanced",
+   "t": "Breakout rooms that work",
+   "f": "Using small groups with clear tasks and timing in online sessions"
+  },
+  {
+   "d": 294,
+   "lv": "advanced",
+   "t": "Hosting a remote team event",
+   "f": "Planning fun online events like quizzes, show-and-tell or cooking sessions"
+  },
+  {
+   "d": 295,
+   "lv": "advanced",
+   "t": "Planning an in-person team retreat",
+   "f": "Making rare meetups count with relationship-building and strategy"
+  },
+  {
+   "d": 296,
+   "lv": "advanced",
+   "t": "Agenda for a team offsite",
+   "f": "Balancing work sessions, social time and rest during a retreat"
+  },
+  {
+   "d": 297,
+   "lv": "advanced",
+   "t": "Bringing retreat energy back online",
+   "f": "Keeping momentum and decisions alive after meeting in person"
+  },
+  {
+   "d": 298,
+   "lv": "advanced",
+   "t": "Facilitating large online meetings",
+   "f": "Techniques for all-hands and big group calls"
+  },
+  {
+   "d": 299,
+   "lv": "advanced",
+   "t": "Running remote demo days",
+   "f": "Showcasing team work regularly to share progress and celebrate"
+  },
+  {
+   "d": 300,
+   "lv": "advanced",
+   "t": "Measuring workshop success",
+   "f": "Gathering feedback to improve future online sessions"
+  },
+  {
+   "d": 301,
+   "lv": "advanced",
+   "t": "Remote freelancing basics",
+   "f": "How independent remote work differs from employment"
+  },
+  {
+   "d": 302,
+   "lv": "advanced",
+   "t": "Finding remote clients",
+   "f": "Building a portfolio, network and reputation that attract clients"
+  },
+  {
+   "d": 303,
+   "lv": "advanced",
+   "t": "Writing proposals that win",
+   "f": "Clear scope, timeline and value in a client proposal"
+  },
+  {
+   "d": 304,
+   "lv": "advanced",
+   "t": "Setting boundaries with clients",
+   "f": "Agreeing on response times, revisions and communication channels"
+  },
+  {
+   "d": 305,
+   "lv": "advanced",
+   "t": "Managing several clients",
+   "f": "Organising projects, calendars and priorities across clients"
+  },
+  {
+   "d": 306,
+   "lv": "advanced",
+   "t": "Client communication rhythms",
+   "f": "Regular updates that keep clients confident and informed"
+  },
+  {
+   "d": 307,
+   "lv": "advanced",
+   "t": "Handling scope changes",
+   "f": "Discussing new requests calmly and adjusting agreements"
+  },
+  {
+   "d": 308,
+   "lv": "advanced",
+   "t": "Building long-term client relationships",
+   "f": "Delivering consistently and staying in touch between projects"
+  },
+  {
+   "d": 309,
+   "lv": "advanced",
+   "t": "Staying motivated as a solo worker",
+   "f": "Community, routines and goals for independent remote workers"
+  },
+  {
+   "d": 310,
+   "lv": "advanced",
+   "t": "Review: tools, workshops and freelancing",
+   "f": "Revisiting automation, workshop design and freelance skills"
+  },
+  {
+   "d": 311,
+   "lv": "advanced",
+   "t": "Building a writing culture",
+   "f": "How teams that write well think more clearly and include everyone"
+  },
+  {
+   "d": 312,
+   "lv": "advanced",
+   "t": "Writing a one-page proposal",
+   "f": "A clear format to propose an idea with problem, solution and next steps"
+  },
+  {
+   "d": 313,
+   "lv": "advanced",
+   "t": "Writing memos and narratives",
+   "f": "Using full sentences instead of slides to explain complex ideas"
+  },
+  {
+   "d": 314,
+   "lv": "advanced",
+   "t": "Requests for comments on ideas",
+   "f": "Sharing drafts for structured feedback before decisions"
+  },
+  {
+   "d": 315,
+   "lv": "advanced",
+   "t": "Editing your own writing",
+   "f": "Cutting, clarifying and restructuring drafts for busy readers"
+  },
+  {
+   "d": 316,
+   "lv": "advanced",
+   "t": "Writing announcements",
+   "f": "Sharing news with the whole team in a clear and positive way"
+  },
+  {
+   "d": 317,
+   "lv": "advanced",
+   "t": "Writing project updates people read",
+   "f": "Highlighting progress, risks and asks in a scannable format"
+  },
+  {
+   "d": 318,
+   "lv": "advanced",
+   "t": "Summarising long discussions",
+   "f": "Turning long threads into short summaries with decisions"
+  },
+  {
+   "d": 319,
+   "lv": "advanced",
+   "t": "Storytelling in written updates",
+   "f": "Using small stories and examples to make updates memorable"
+  },
+  {
+   "d": 320,
+   "lv": "advanced",
+   "t": "Improving team writing together",
+   "f": "Style guides, peer edits and examples that raise writing quality"
+  },
+  {
+   "d": 321,
+   "lv": "advanced",
+   "t": "Hiring for remote roles",
+   "f": "What skills and traits matter most for remote success"
+  },
+  {
+   "d": 322,
+   "lv": "advanced",
+   "t": "Writing a remote job description",
+   "f": "Describing role, schedule, time zones and culture clearly"
+  },
+  {
+   "d": 323,
+   "lv": "advanced",
+   "t": "Remote interviewing best practices",
+   "f": "Structured interviews and fair evaluation over video"
+  },
+  {
+   "d": 324,
+   "lv": "advanced",
+   "t": "Assessing written communication",
+   "f": "Including writing in the hiring process for remote roles"
+  },
+  {
+   "d": 325,
+   "lv": "advanced",
+   "t": "Making offers and preboarding",
+   "f": "Welcoming new hires before day one with equipment and information"
+  },
+  {
+   "d": 326,
+   "lv": "advanced",
+   "t": "Designing a remote onboarding plan",
+   "f": "A 30-60-90 day plan with goals, people to meet and resources"
+  },
+  {
+   "d": 327,
+   "lv": "advanced",
+   "t": "Welcoming new hires warmly",
+   "f": "Rituals and messages that make day one feel personal"
+  },
+  {
+   "d": 328,
+   "lv": "advanced",
+   "t": "Onboarding across time zones",
+   "f": "Supporting new hires who start far from their team"
+  },
+  {
+   "d": 329,
+   "lv": "advanced",
+   "t": "Checking in with new team members",
+   "f": "Regular check-ins during the first months to spot issues early"
+  },
+  {
+   "d": 330,
+   "lv": "advanced",
+   "t": "Improving onboarding with feedback",
+   "f": "Asking new hires what helped and what was missing"
+  },
+  {
+   "d": 331,
+   "lv": "advanced",
+   "t": "The evolving world of remote work",
+   "f": "How remote work grew and what trends shape it today"
+  },
+  {
+   "d": 332,
+   "lv": "advanced",
+   "t": "Remote work and technology trends",
+   "f": "How better connectivity, collaboration tools and AI change remote work"
+  },
+  {
+   "d": 333,
+   "lv": "advanced",
+   "t": "Experiments with work time",
+   "f": "Ideas like compressed weeks and flexible hours and what teams learn from them"
+  },
+  {
+   "d": 334,
+   "lv": "advanced",
+   "t": "Remote work and the environment",
+   "f": "How less commuting and travel can affect environmental footprints"
+  },
+  {
+   "d": 335,
+   "lv": "advanced",
+   "t": "Remote work in different industries",
+   "f": "Which roles and sectors work remotely and how they adapt"
+  },
+  {
+   "d": 336,
+   "lv": "advanced",
+   "t": "Skills for the future of work",
+   "f": "Self-management, digital literacy and communication as lasting skills"
+  },
+  {
+   "d": 337,
+   "lv": "advanced",
+   "t": "Lifelong learning while remote",
+   "f": "Building a habit of learning that keeps your skills fresh"
+  },
+  {
+   "d": 338,
+   "lv": "advanced",
+   "t": "Remote work and local communities",
+   "f": "How remote workers can connect with and support their local area"
+  },
+  {
+   "d": 339,
+   "lv": "advanced",
+   "t": "Your view of the future of work",
+   "f": "Forming your own opinion about where remote work is heading"
+  },
+  {
+   "d": 340,
+   "lv": "advanced",
+   "t": "Review: writing, hiring and the future",
+   "f": "Revisiting writing culture, remote hiring and future trends"
+  },
+  {
+   "d": 341,
+   "lv": "advanced",
+   "t": "Your long-term remote work sustainability",
+   "f": "Habits that keep remote work healthy over many years"
+  },
+  {
+   "d": 342,
+   "lv": "advanced",
+   "t": "Reinventing your routine",
+   "f": "Refreshing routines when they start to feel stale"
+  },
+  {
+   "d": 343,
+   "lv": "advanced",
+   "t": "Avoiding plateaus in remote careers",
+   "f": "Keeping growth going with new challenges and learning"
+  },
+  {
+   "d": 344,
+   "lv": "advanced",
+   "t": "Mentoring others in remote work",
+   "f": "Sharing your experience to help newer remote workers"
+  },
+  {
+   "d": 345,
+   "lv": "advanced",
+   "t": "Building a personal board of advisors",
+   "f": "Finding mentors and peers who support your growth from afar"
+  },
+  {
+   "d": 346,
+   "lv": "advanced",
+   "t": "Balancing ambition and wellbeing",
+   "f": "Pursuing goals while protecting rest and relationships"
+  },
+  {
+   "d": 347,
+   "lv": "advanced",
+   "t": "Writing your remote work principles",
+   "f": "Defining your own rules for how you work best remotely"
+  },
+  {
+   "d": 348,
+   "lv": "advanced",
+   "t": "Designing your ideal remote week",
+   "f": "Creating a weekly template that balances focus, collaboration and rest"
+  },
+  {
+   "d": 349,
+   "lv": "advanced",
+   "t": "Choosing your next remote challenge",
+   "f": "Picking a new skill or project to keep growing after the path"
+  },
+  {
+   "d": 350,
+   "lv": "advanced",
+   "t": "Sharing your remote work story",
+   "f": "Reflecting on your journey and telling it to inspire others"
+  },
+  {
+   "d": 351,
+   "lv": "advanced",
+   "t": "Negotiating flexible work arrangements",
+   "f": "Making a calm, evidence-based case for remote or flexible work with an employer"
+  },
+  {
+   "d": 352,
+   "lv": "advanced",
+   "t": "Remote work and caregiving",
+   "f": "Balancing remote work with caring for children or relatives through planning and support"
+  },
+  {
+   "d": 353,
+   "lv": "advanced",
+   "t": "Leading change toward remote work",
+   "f": "Helping a team or company adopt more remote-friendly practices step by step"
+  },
+  {
+   "d": 354,
+   "lv": "advanced",
+   "t": "Remote work across life stages",
+   "f": "How remote work needs change for students, parents and experienced professionals"
+  },
+  {
+   "d": 355,
+   "lv": "advanced",
+   "t": "Running a side project remotely",
+   "f": "Using remote habits to run a small personal project alongside your main work"
+  },
+  {
+   "d": 356,
+   "lv": "advanced",
+   "t": "Teaching remote skills to others",
+   "f": "Sharing remote work know-how with friends, clubs or local groups"
+  },
+  {
+   "d": 357,
+   "lv": "advanced",
+   "t": "Handling setbacks in a remote career",
+   "f": "Bouncing back from rejections, slow periods or difficult projects"
+  },
+  {
+   "d": 358,
+   "lv": "advanced",
+   "t": "Your personal remote work signals",
+   "f": "Choosing a few signs that tell you whether your remote life is working well"
+  },
+  {
+   "d": 359,
+   "lv": "advanced",
+   "t": "Seasonal resets and yearly reviews",
+   "f": "Rituals that refresh your work life every few months and every year"
+  },
+  {
+   "d": 360,
+   "lv": "advanced",
+   "t": "Gratitude and reflection practices",
+   "f": "Noticing what remote work gives you and thanking people who helped you"
+  },
+  {
+   "d": 361,
+   "lv": "advanced",
+   "t": "Capstone: audit your remote setup",
+   "f": "A full review of workspace, tools and routines with improvements"
+  },
+  {
+   "d": 362,
+   "lv": "advanced",
+   "t": "Capstone: audit your communication",
+   "f": "Reviewing how you write, meet and collaborate and setting upgrades"
+  },
+  {
+   "d": 363,
+   "lv": "advanced",
+   "t": "Capstone: your remote work manifesto",
+   "f": "Writing a short personal manifesto for how you want to work remotely"
+  },
+  {
+   "d": 364,
+   "lv": "advanced",
+   "t": "Capstone: plan your next 90 days",
+   "f": "Setting goals, habits and learning plans for the next three months"
+  },
+  {
+   "d": 365,
+   "lv": "advanced",
+   "t": "Final review: 365 days of remote work",
+   "f": "Celebrating your progress and looking back on the whole remote work path"
+  }
+ ]
+}

@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_french",
+ "lessons": [
+  {
+   "d": 321,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Familiar French words",
+     "g": "Recognise and use the familiar words the French say every day instead of the standard ones.",
+     "p": [
+      "Le boulot = le travail, la bagnole = la voiture, les fringues = les vêtements, le fric = l'argent.",
+      "Also: un truc (a thing), un mec (a guy), bosser (to work), bouffer (to eat), crevé (exhausted).",
+      "Register matters: Je suis crevé, j'ai trop bossé is fine with friends, but say Je suis épuisé at work."
+     ],
+     "q": "Tell me about your boulot in familiar French, then say it again in standard French.",
+     "c": "Write two versions of the same message: one familiar to a friend, one standard to a colleague."
+    },
+    "de": {
+     "t": "Umgangssprachliche Wörter",
+     "g": "Du erkennst und benutzt die umgangssprachlichen Wörter, die Franzosen täglich statt der Standardwörter sagen.",
+     "p": [
+      "Le boulot = le travail, la bagnole = la voiture, les fringues = les vêtements, le fric = l'argent.",
+      "Außerdem: un truc (Ding), un mec (Typ), bosser (arbeiten), bouffer (essen), crevé (todmüde).",
+      "Das Register zählt: Je suis crevé, j'ai trop bossé unter Freunden, aber Je suis épuisé bei der Arbeit."
+     ],
+     "q": "Erzähl mir in Umgangssprache von deinem boulot und dann noch einmal auf Standardfranzösisch.",
+     "c": "Schreib zwei Versionen derselben Nachricht: locker an einen Freund, standardsprachlich an eine Kollegin."
+    },
+    "es": {
+     "t": "Palabras familiares",
+     "g": "Reconoce y usa las palabras familiares que los franceses dicen a diario en lugar de las estándar.",
+     "p": [
+      "Le boulot = le travail, la bagnole = la voiture, les fringues = les vêtements, le fric = l'argent.",
+      "Además: un truc (una cosa), un mec (un tío), bosser (currar), bouffer (comer), crevé (reventado).",
+      "El registro importa: Je suis crevé, j'ai trop bossé va bien con amigos, pero di Je suis épuisé en el trabajo."
+     ],
+     "q": "Háblame de tu boulot en francés familiar y luego repítelo en francés estándar.",
+     "c": "Escribe dos versiones del mismo mensaje: una familiar para un amigo y otra estándar para un colega."
+    },
+    "fr": {
+     "t": "Les mots familiers",
+     "g": "Reconnaître et utiliser les mots familiers que les Français emploient tous les jours.",
+     "p": [
+      "Le boulot = le travail, la bagnole = la voiture, les fringues = les vêtements, le fric = l'argent.",
+      "Aussi : un truc (une chose), un mec (un homme), bosser (travailler), bouffer (manger), crevé (très fatigué).",
+      "Attention au registre : Je suis crevé, j'ai trop bossé entre amis, mais Je suis épuisé au travail."
+     ],
+     "q": "Parle-moi de ton boulot en français familier, puis redis-le en français standard.",
+     "c": "Écris deux versions d'un même message : une familière pour un ami, une standard pour un collègue."
+    },
+    "it": {
+     "t": "Parole familiari",
+     "g": "Riconosci e usa le parole familiari che i francesi dicono ogni giorno al posto di quelle standard.",
+     "p": [
+      "Le boulot = le travail, la bagnole = la voiture, les fringues = les vêtements, le fric = l'argent.",
+      "Inoltre: un truc (una cosa), un mec (un tizio), bosser (sgobbare), bouffer (mangiare), crevé (distrutto).",
+      "Il registro conta: Je suis crevé, j'ai trop bossé va bene con gli amici, ma al lavoro di' Je suis épuisé."
+     ],
+     "q": "Parlami del tuo boulot in francese familiare, poi ripetilo in francese standard.",
+     "c": "Scrivi due versioni dello stesso messaggio: una familiare a un amico, una standard a un collega."
+    },
+    "pt": {
+     "t": "Palavras familiares",
+     "g": "Reconhece e usa as palavras familiares que os franceses dizem todos os dias em vez das palavras padrão.",
+     "p": [
+      "Le boulot = le travail, la bagnole = la voiture, les fringues = les vêtements, le fric = l'argent.",
+      "Também: un truc (uma coisa), un mec (um tipo), bosser (bulir), bouffer (comer), crevé (estoirado).",
+      "O registo conta: Je suis crevé, j'ai trop bossé com amigos, mas no trabalho diz Je suis épuisé."
+     ],
+     "q": "Fala-me do teu boulot em francês familiar e depois repete em francês padrão.",
+     "c": "Escreve duas versões da mesma mensagem: uma familiar para um amigo e outra padrão para um colega."
+    },
+    "pt_BR": {
+     "t": "Palavras informais",
+     "g": "Reconheça e use as palavras informais que os franceses dizem todo dia no lugar das palavras padrão.",
+     "p": [
+      "Le boulot = le travail, la bagnole = la voiture, les fringues = les vêtements, le fric = l'argent.",
+      "Também: un truc (um treco), un mec (um cara), bosser (trampar), bouffer (comer), crevé (morto de cansado).",
+      "O registro importa: Je suis crevé, j'ai trop bossé com amigos, mas no trabalho diga Je suis épuisé."
+     ],
+     "q": "Me fale do seu boulot em francês informal e depois repita em francês padrão.",
+     "c": "Escreva duas versões da mesma mensagem: uma informal para um amigo e outra padrão para um colega."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "le boulot",
+      "ex": "J'ai trouvé un nouveau boulot près de chez moi."
+     },
+     {
+      "w": "la bagnole",
+      "ex": "Sa vieille bagnole fait un bruit pas possible."
+     },
+     {
+      "w": "les fringues",
+      "ex": "Elle achète ses fringues dans des friperies."
+     },
+     {
+      "w": "le fric",
+      "ex": "Je n'ai plus de fric jusqu'à la fin du mois."
+     },
+     {
+      "w": "bosser",
+      "ex": "On a bossé tout le week-end sur le projet."
+     },
+     {
+      "w": "crevé",
+      "ex": "Après la randonnée, j'étais complètement crevé."
+     }
+    ],
+    "gram": "Registre familier : à l'oral, on supprime souvent le ne de la négation (j'ai pas de fric) ; à l'écrit formel, on le garde."
+   }
+  },
+  {
+   "d": 322,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Humour and wordplay",
+     "g": "Enjoy French humour: puns, calembours and what makes French speakers laugh.",
+     "p": [
+      "Un jeu de mots or calembour plays on sounds: Les poissons n'aiment pas l'eau salée... ils ont peur du sel ? Sound is everything.",
+      "Many puns use homophones: Quel est le comble pour un électricien ? De ne pas être au courant. (courant = current / informed)",
+      "French humour loves irony, self-mockery and l'humour pince-sans-rire (deadpan). Shop names are often puns too."
+     ],
+     "q": "Do you have a favourite joke in your language? Can you try to explain why it is funny in French?",
+     "c": "Find or invent a Quel est le comble pour un...? joke in French and explain the double meaning."
+    },
+    "de": {
+     "t": "Humor und Wortspiele",
+     "g": "Du genießt französischen Humor: Wortspiele, calembours und was Französischsprachige zum Lachen bringt.",
+     "p": [
+      "Ein jeu de mots oder calembour spielt mit Klängen: Les poissons n'aiment pas l'eau salée... ils ont peur du sel ? Der Klang ist alles.",
+      "Viele Wortspiele nutzen Homophone: Quel est le comble pour un électricien ? De ne pas être au courant. (courant = Strom / informiert)",
+      "Französischer Humor liebt Ironie, Selbstironie und l'humour pince-sans-rire (trockener Humor). Auch Ladennamen sind oft Wortspiele."
+     ],
+     "q": "Hast du einen Lieblingswitz in deiner Sprache? Kannst du auf Französisch erklären, warum er lustig ist?",
+     "c": "Finde oder erfinde einen Witz nach dem Muster Quel est le comble pour un...? und erkläre den Doppelsinn."
+    },
+    "es": {
+     "t": "Humor y juegos de palabras",
+     "g": "Disfruta del humor francés: juegos de palabras, calembours y lo que hace reír a los francófonos.",
+     "p": [
+      "Un jeu de mots o calembour juega con los sonidos: Les poissons n'aiment pas l'eau salée... ils ont peur du sel ? El sonido lo es todo.",
+      "Muchos usan homófonos: Quel est le comble pour un électricien ? De ne pas être au courant. (courant = corriente / al tanto)",
+      "El humor francés ama la ironía, la autoburla y l'humour pince-sans-rire (humor seco). Los nombres de tiendas suelen ser juegos de palabras."
+     ],
+     "q": "¿Tienes un chiste favorito en tu idioma? ¿Puedes explicar en francés por qué es gracioso?",
+     "c": "Busca o inventa un chiste Quel est le comble pour un...? en francés y explica el doble sentido."
+    },
+    "fr": {
+     "t": "L'humour et les jeux de mots",
+     "g": "Apprécier l'humour français : jeux de mots, calembours et ce qui fait rire les francophones.",
+     "p": [
+      "Le calembour joue sur les sons : Les poissons n'aiment pas l'eau salée... ils ont peur du sel ? Tout est dans le son.",
+      "Beaucoup de blagues utilisent des homophones : Quel est le comble pour un électricien ? De ne pas être au courant.",
+      "L'humour français aime l'ironie, l'autodérision et l'humour pince-sans-rire. Les noms de boutiques sont souvent des jeux de mots."
+     ],
+     "q": "As-tu une blague préférée dans ta langue ? Peux-tu expliquer pourquoi elle est drôle ?",
+     "c": "Trouve ou invente une blague Quel est le comble pour un... ? et explique le double sens."
+    },
+    "it": {
+     "t": "Umorismo e giochi di parole",
+     "g": "Goditi l'umorismo francese: giochi di parole, calembours e ciò che fa ridere i francofoni.",
+     "p": [
+      "Un jeu de mots o calembour gioca sui suoni: Les poissons n'aiment pas l'eau salée... ils ont peur du sel ? Il suono è tutto.",
+      "Molti usano omofoni: Quel est le comble pour un électricien ? De ne pas être au courant. (courant = corrente / informato)",
+      "L'umorismo francese ama l'ironia, l'autoironia e l'humour pince-sans-rire (umorismo secco). Anche le insegne giocano con le parole."
+     ],
+     "q": "Hai una barzelletta preferita nella tua lingua? Sai spiegare in francese perché fa ridere?",
+     "c": "Trova o inventa una battuta Quel est le comble pour un...? in francese e spiega il doppio senso."
+    },
+    "pt": {
+     "t": "Humor e trocadilhos",
+     "g": "Aprecia o humor francês: trocadilhos, calembours e o que faz rir os francófonos.",
+     "p": [
+      "Um jeu de mots ou calembour brinca com os sons: Les poissons n'aiment pas l'eau salée... ils ont peur du sel ? O som é tudo.",
+      "Muitos usam homófonos: Quel est le comble pour un électricien ? De ne pas être au courant. (courant = corrente / a par)",
+      "O humor francês adora ironia, autoironia e l'humour pince-sans-rire (humor seco). Os nomes de lojas são muitas vezes trocadilhos."
+     ],
+     "q": "Tens uma piada preferida na tua língua? Consegues explicar em francês porque tem graça?",
+     "c": "Procura ou inventa uma piada Quel est le comble pour un...? em francês e explica o duplo sentido."
+    },
+    "pt_BR": {
+     "t": "Humor e trocadilhos",
+     "g": "Curta o humor francês: trocadilhos, calembours e o que faz os francófonos rirem.",
+     "p": [
+      "Um jeu de mots ou calembour brinca com os sons: Les poissons n'aiment pas l'eau salée... ils ont peur du sel ? O som é tudo.",
+      "Muitos usam homófonos: Quel est le comble pour un électricien ? De ne pas être au courant. (courant = corrente / por dentro)",
+      "O humor francês adora ironia, autoironia e l'humour pince-sans-rire (humor seco). Nomes de lojas muitas vezes são trocadilhos."
+     ],
+     "q": "Você tem uma piada favorita no seu idioma? Consegue explicar em francês por que ela é engraçada?",
+     "c": "Procure ou invente uma piada Quel est le comble pour un...? em francês e explique o duplo sentido."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un jeu de mots",
+      "ex": "Le nom de ce salon de coiffure est un jeu de mots."
+     },
+     {
+      "w": "un calembour",
+      "ex": "Mon grand-père adore les calembours."
+     },
+     {
+      "w": "le comble",
+      "ex": "Le comble pour un jardinier, c'est de raconter des salades."
+     },
+     {
+      "w": "l'autodérision",
+      "ex": "Elle a beaucoup d'autodérision, c'est très sympa."
+     },
+     {
+      "w": "pince-sans-rire",
+      "ex": "Son humour pince-sans-rire surprend toujours."
+     },
+     {
+      "w": "faire rire",
+      "ex": "Ce sketch m'a fait rire aux larmes."
+     }
+    ],
+    "gram": "Le jeu de mots repose souvent sur un double sens : être au courant (informé) et le courant (électrique)."
+   }
+  },
+  {
+   "d": 323,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Regional accents",
+     "g": "Discover the main accents of the French-speaking world and understand them better.",
+     "p": [
+      "Marseille and the south: the final e is pronounced (une petite fille sounds longer) and nasals sound like ang.",
+      "Québec: tu becomes tsu, dire becomes dzire, and pis is often used for puis. Belgium: septante and nonante for 70 and 90.",
+      "West Africa: a clear, rolled r and syllables pronounced evenly. Every accent is correct French!"
+     ],
+     "q": "Which French accent have you heard most, and which one would you like to understand better?",
+     "c": "Listen to a short clip from a francophone region of your choice and note three features of the accent."
+    },
+    "de": {
+     "t": "Regionale Akzente",
+     "g": "Du entdeckst die wichtigsten Akzente der frankophonen Welt und verstehst sie besser.",
+     "p": [
+      "Marseille und der Süden: das End-e wird gesprochen (une petite fille klingt länger), Nasale klingen wie ang.",
+      "Québec: tu wird zu tsu, dire zu dzire, und pis steht oft für puis. Belgien: septante und nonante für 70 und 90.",
+      "Westafrika: ein klares, gerolltes r und gleichmäßig gesprochene Silben. Jeder Akzent ist korrektes Französisch!"
+     ],
+     "q": "Welchen französischen Akzent hast du am häufigsten gehört, und welchen möchtest du besser verstehen?",
+     "c": "Hör einen kurzen Clip aus einer frankophonen Region deiner Wahl und notiere drei Merkmale des Akzents."
+    },
+    "es": {
+     "t": "Acentos regionales",
+     "g": "Descubre los principales acentos del mundo francófono y entiéndelos mejor.",
+     "p": [
+      "Marsella y el sur: se pronuncia la e final (une petite fille suena más larga) y las nasales suenan como ang.",
+      "Quebec: tu se dice tsu, dire suena dzire, y pis sustituye a menudo a puis. Bélgica: septante y nonante para 70 y 90.",
+      "África occidental: una r clara y vibrante y sílabas pronunciadas con regularidad. ¡Todo acento es francés correcto!"
+     ],
+     "q": "¿Qué acento francés has oído más y cuál te gustaría entender mejor?",
+     "c": "Escucha un clip corto de una región francófona que elijas y anota tres rasgos del acento."
+    },
+    "fr": {
+     "t": "Les accents régionaux",
+     "g": "Découvrir les principaux accents du monde francophone et mieux les comprendre.",
+     "p": [
+      "Marseille et le Midi : on prononce le e final (une petite fille paraît plus longue) et les nasales sonnent en ang.",
+      "Le Québec : tu se dit tsu, dire devient dzire, et pis remplace souvent puis. La Belgique : septante, nonante.",
+      "L'Afrique de l'Ouest : un r roulé bien net et des syllabes prononcées de façon régulière. Chaque accent est du bon français !"
+     ],
+     "q": "Quel accent as-tu le plus entendu, et lequel aimerais-tu mieux comprendre ?",
+     "c": "Écoute un court extrait d'une région francophone de ton choix et note trois traits de l'accent."
+    },
+    "it": {
+     "t": "Accenti regionali",
+     "g": "Scopri i principali accenti del mondo francofono e capiscili meglio.",
+     "p": [
+      "Marsiglia e il sud: la e finale si pronuncia (une petite fille sembra più lunga) e le nasali suonano come ang.",
+      "Québec: tu diventa tsu, dire diventa dzire, e pis sostituisce spesso puis. Belgio: septante e nonante per 70 e 90.",
+      "Africa occidentale: una r chiara e vibrata e sillabe pronunciate in modo regolare. Ogni accento è francese corretto!"
+     ],
+     "q": "Quale accento francese hai sentito di più, e quale vorresti capire meglio?",
+     "c": "Ascolta un breve clip di una regione francofona a tua scelta e annota tre tratti dell'accento."
+    },
+    "pt": {
+     "t": "Sotaques regionais",
+     "g": "Descobre os principais sotaques do mundo francófono e compreende-os melhor.",
+     "p": [
+      "Marselha e o sul: pronuncia-se o e final (une petite fille parece mais longa) e as nasais soam como ang.",
+      "Quebeque: tu soa tsu, dire soa dzire, e pis substitui muitas vezes puis. Bélgica: septante e nonante para 70 e 90.",
+      "África Ocidental: um r claro e vibrante e sílabas pronunciadas de forma regular. Todo o sotaque é francês correto!"
+     ],
+     "q": "Que sotaque francês já ouviste mais, e qual gostarias de compreender melhor?",
+     "c": "Ouve um pequeno clip de uma região francófona à tua escolha e anota três traços do sotaque."
+    },
+    "pt_BR": {
+     "t": "Sotaques regionais",
+     "g": "Descubra os principais sotaques do mundo francófono e entenda-os melhor.",
+     "p": [
+      "Marselha e o sul: o e final é pronunciado (une petite fille parece mais longa) e as nasais soam como ang.",
+      "Quebec: tu vira tsu, dire vira dzire, e pis costuma substituir puis. Bélgica: septante e nonante para 70 e 90.",
+      "África Ocidental: um r claro e vibrante e sílabas pronunciadas de forma regular. Todo sotaque é francês correto!"
+     ],
+     "q": "Qual sotaque francês você mais ouviu, e qual gostaria de entender melhor?",
+     "c": "Ouça um clipe curto de uma região francófona à sua escolha e anote três traços do sotaque."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un accent",
+      "ex": "Elle a un léger accent du Sud très agréable."
+     },
+     {
+      "w": "le Midi",
+      "ex": "Dans le Midi, on parle avec beaucoup de chaleur."
+     },
+     {
+      "w": "septante",
+      "ex": "Mon grand-père belge a septante-cinq ans."
+     },
+     {
+      "w": "nonante",
+      "ex": "Ce livre coûte nonante euros en Suisse."
+     },
+     {
+      "w": "un québécisme",
+      "ex": "Magasiner est un québécisme qui veut dire faire du shopping."
+     },
+     {
+      "w": "prononcer",
+      "ex": "À Marseille, on prononce le e à la fin des mots."
+     }
+    ],
+    "gram": "Belgique et Suisse : septante (70), nonante (90) ; en Suisse romande, souvent huitante (80). En France : soixante-dix, quatre-vingt-dix."
+   }
+  },
+  {
+   "d": 324,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "French in Africa",
+     "g": "Discover the rich and growing French of Africa, from Dakar to Abidjan to Kinshasa.",
+     "p": [
+      "More than half of the world's French speakers are in Africa, and the share keeps growing. Kinshasa is one of the largest francophone cities.",
+      "African French creates lively words: une essencerie (petrol station, Senegal), un maquis (small restaurant, Côte d'Ivoire).",
+      "French lives alongside local languages like Wolof, Dioula or Lingala, and borrows from them freely."
+     ],
+     "q": "Which African francophone country would you like to visit, and why?",
+     "c": "Write three French sentences about a francophone African city using at least one local word."
+    },
+    "de": {
+     "t": "Französisch in Afrika",
+     "g": "Du entdeckst das reiche und wachsende Französisch Afrikas, von Dakar über Abidjan bis Kinshasa.",
+     "p": [
+      "Mehr als die Hälfte aller Französischsprachigen lebt in Afrika, Tendenz steigend. Kinshasa ist eine der größten frankophonen Städte.",
+      "Afrikanisches Französisch schafft lebendige Wörter: une essencerie (Tankstelle, Senegal), un maquis (kleines Lokal, Elfenbeinküste).",
+      "Französisch lebt neben lokalen Sprachen wie Wolof, Dioula oder Lingala und übernimmt gern Wörter von ihnen."
+     ],
+     "q": "Welches frankophone Land in Afrika würdest du gern besuchen, und warum?",
+     "c": "Schreib drei französische Sätze über eine frankophone Stadt in Afrika mit mindestens einem lokalen Wort."
+    },
+    "es": {
+     "t": "El francés en África",
+     "g": "Descubre el francés rico y creciente de África, de Dakar a Abiyán y Kinsasa.",
+     "p": [
+      "Más de la mitad de los francófonos del mundo vive en África, y la cifra crece. Kinsasa es una de las mayores ciudades francófonas.",
+      "El francés africano crea palabras vivas: une essencerie (gasolinera, Senegal), un maquis (restaurante pequeño, Costa de Marfil).",
+      "El francés convive con lenguas locales como el wolof, el diula o el lingala, y toma palabras de ellas."
+     ],
+     "q": "¿Qué país africano francófono te gustaría visitar y por qué?",
+     "c": "Escribe tres frases en francés sobre una ciudad africana francófona con al menos una palabra local."
+    },
+    "fr": {
+     "t": "Le français en Afrique",
+     "g": "Découvrir le français riche et en pleine croissance de l'Afrique, de Dakar à Abidjan et Kinshasa.",
+     "p": [
+      "Plus de la moitié des francophones vivent en Afrique, et cette part augmente. Kinshasa est l'une des plus grandes villes francophones.",
+      "Le français d'Afrique crée des mots savoureux : une essencerie (station-service, Sénégal), un maquis (petit restaurant, Côte d'Ivoire).",
+      "Le français y côtoie des langues locales comme le wolof, le dioula ou le lingala, et leur emprunte des mots."
+     ],
+     "q": "Quel pays africain francophone aimerais-tu visiter, et pourquoi ?",
+     "c": "Écris trois phrases sur une ville africaine francophone avec au moins un mot local."
+    },
+    "it": {
+     "t": "Il francese in Africa",
+     "g": "Scopri il francese ricco e in crescita dell'Africa, da Dakar ad Abidjan e Kinshasa.",
+     "p": [
+      "Più della metà dei francofoni del mondo vive in Africa, e la quota continua a crescere. Kinshasa è una delle più grandi città francofone.",
+      "Il francese africano crea parole vivaci: une essencerie (distributore, Senegal), un maquis (piccolo ristorante, Costa d'Avorio).",
+      "Il francese convive con lingue locali come il wolof, il diula o il lingala, e prende in prestito parole da esse."
+     ],
+     "q": "Quale paese africano francofono ti piacerebbe visitare, e perché?",
+     "c": "Scrivi tre frasi in francese su una città africana francofona con almeno una parola locale."
+    },
+    "pt": {
+     "t": "O francês em África",
+     "g": "Descobre o francês rico e em crescimento de África, de Dacar a Abidjan e Kinshasa.",
+     "p": [
+      "Mais de metade dos francófonos do mundo vive em África, e a proporção continua a crescer. Kinshasa é uma das maiores cidades francófonas.",
+      "O francês africano cria palavras vivas: une essencerie (bomba de gasolina, Senegal), un maquis (pequeno restaurante, Costa do Marfim).",
+      "O francês convive com línguas locais como o wolof, o diula ou o lingala, e vai buscar-lhes palavras."
+     ],
+     "q": "Que país africano francófono gostarias de visitar, e porquê?",
+     "c": "Escreve três frases em francês sobre uma cidade africana francófona com pelo menos uma palavra local."
+    },
+    "pt_BR": {
+     "t": "O francês na África",
+     "g": "Descubra o francês rico e em expansão da África, de Dacar a Abidjan e Kinshasa.",
+     "p": [
+      "Mais da metade dos francófonos do mundo vive na África, e essa parcela não para de crescer. Kinshasa é uma das maiores cidades francófonas.",
+      "O francês africano cria palavras saborosas: une essencerie (posto de gasolina, Senegal), un maquis (restaurante pequeno, Costa do Marfim).",
+      "O francês convive com línguas locais como o wolof, o diula ou o lingala, e pega palavras delas."
+     ],
+     "q": "Qual país africano francófono você gostaria de visitar, e por quê?",
+     "c": "Escreva três frases em francês sobre uma cidade africana francófona com pelo menos uma palavra local."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la francophonie",
+      "ex": "La francophonie rassemble des pays sur cinq continents."
+     },
+     {
+      "w": "un francophone",
+      "ex": "Le nombre de francophones augmente surtout en Afrique."
+     },
+     {
+      "w": "une essencerie",
+      "ex": "À Dakar, on fait le plein à l'essencerie."
+     },
+     {
+      "w": "un maquis",
+      "ex": "Ce soir, on mange du poisson braisé dans un maquis d'Abidjan."
+     },
+     {
+      "w": "côtoyer",
+      "ex": "Le français côtoie le wolof dans les rues de Dakar."
+     },
+     {
+      "w": "emprunter",
+      "ex": "Le français d'Afrique emprunte des mots aux langues locales."
+     }
+    ],
+    "gram": "Le pronom relatif dont remplace de + nom : Kinshasa, dont la population est immense, est très francophone."
+   }
+  },
+  {
+   "d": 325,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "French overseas",
+     "g": "Explore the French-speaking territories overseas: Martinique, Guadeloupe, La Réunion and New Caledonia.",
+     "p": [
+      "Martinique and Guadeloupe are in the Caribbean; La Réunion is in the Indian Ocean. They are French departments: les DROM.",
+      "Nouvelle-Calédonie, in the Pacific, has a special status and a strong Kanak culture.",
+      "Many people also speak a Creole: créole martiniquais, guadeloupéen, réunionnais. French and Creole live side by side."
+     ],
+     "q": "Which of these territories would you like to discover, and what would you do there?",
+     "c": "Write a French postcard from La Réunion or Martinique describing the landscape and the food."
+    },
+    "de": {
+     "t": "Französisch in Übersee",
+     "g": "Du erkundest die französischsprachigen Überseegebiete: Martinique, Guadeloupe, La Réunion und Neukaledonien.",
+     "p": [
+      "Martinique und Guadeloupe liegen in der Karibik, La Réunion im Indischen Ozean. Es sind französische Departements: les DROM.",
+      "Nouvelle-Calédonie im Pazifik hat einen Sonderstatus und eine starke Kanak-Kultur.",
+      "Viele sprechen auch Kreolisch: créole martiniquais, guadeloupéen, réunionnais. Französisch und Kreolisch leben nebeneinander."
+     ],
+     "q": "Welches dieser Gebiete würdest du gern entdecken, und was würdest du dort tun?",
+     "c": "Schreib eine französische Postkarte aus La Réunion oder Martinique über Landschaft und Essen."
+    },
+    "es": {
+     "t": "El francés de ultramar",
+     "g": "Explora los territorios francófonos de ultramar: Martinica, Guadalupe, La Reunión y Nueva Caledonia.",
+     "p": [
+      "Martinica y Guadalupe están en el Caribe; La Reunión, en el océano Índico. Son departamentos franceses: les DROM.",
+      "Nouvelle-Calédonie, en el Pacífico, tiene un estatus especial y una fuerte cultura canaca.",
+      "Mucha gente habla también criollo: créole martiniquais, guadeloupéen, réunionnais. Francés y criollo conviven."
+     ],
+     "q": "¿Cuál de estos territorios te gustaría descubrir y qué harías allí?",
+     "c": "Escribe una postal en francés desde La Reunión o Martinica describiendo el paisaje y la comida."
+    },
+    "fr": {
+     "t": "Le français d'outre-mer",
+     "g": "Explorer les territoires francophones d'outre-mer : Martinique, Guadeloupe, La Réunion et Nouvelle-Calédonie.",
+     "p": [
+      "La Martinique et la Guadeloupe sont aux Antilles ; La Réunion est dans l'océan Indien. Ce sont des DROM.",
+      "La Nouvelle-Calédonie, dans le Pacifique, a un statut particulier et une forte culture kanak.",
+      "Beaucoup d'habitants parlent aussi un créole : martiniquais, guadeloupéen, réunionnais. Le français et le créole cohabitent."
+     ],
+     "q": "Lequel de ces territoires aimerais-tu découvrir, et qu'y ferais-tu ?",
+     "c": "Écris une carte postale depuis La Réunion ou la Martinique : paysages et cuisine."
+    },
+    "it": {
+     "t": "Il francese d'oltremare",
+     "g": "Esplora i territori francofoni d'oltremare: Martinica, Guadalupa, La Riunione e Nuova Caledonia.",
+     "p": [
+      "Martinica e Guadalupa sono nei Caraibi; La Riunione è nell'oceano Indiano. Sono dipartimenti francesi: les DROM.",
+      "La Nouvelle-Calédonie, nel Pacifico, ha uno statuto speciale e una forte cultura kanak.",
+      "Molti parlano anche un creolo: créole martiniquais, guadeloupéen, réunionnais. Francese e creolo convivono."
+     ],
+     "q": "Quale di questi territori ti piacerebbe scoprire, e cosa ci faresti?",
+     "c": "Scrivi una cartolina in francese da La Riunione o dalla Martinica descrivendo paesaggio e cucina."
+    },
+    "pt": {
+     "t": "O francês ultramarino",
+     "g": "Explora os territórios francófonos ultramarinos: Martinica, Guadalupe, Reunião e Nova Caledónia.",
+     "p": [
+      "A Martinica e Guadalupe ficam nas Caraíbas; a Reunião, no oceano Índico. São departamentos franceses: les DROM.",
+      "A Nouvelle-Calédonie, no Pacífico, tem um estatuto especial e uma forte cultura kanak.",
+      "Muitos falam também um crioulo: créole martiniquais, guadeloupéen, réunionnais. Francês e crioulo convivem."
+     ],
+     "q": "Qual destes territórios gostarias de descobrir, e o que farias lá?",
+     "c": "Escreve um postal em francês da Reunião ou da Martinica a descrever a paisagem e a comida."
+    },
+    "pt_BR": {
+     "t": "O francês ultramarino",
+     "g": "Explore os territórios francófonos ultramarinos: Martinica, Guadalupe, Reunião e Nova Caledônia.",
+     "p": [
+      "Martinica e Guadalupe ficam no Caribe; a Reunião, no oceano Índico. São departamentos franceses: les DROM.",
+      "A Nouvelle-Calédonie, no Pacífico, tem um status especial e uma forte cultura kanak.",
+      "Muita gente também fala um crioulo: créole martiniquais, guadeloupéen, réunionnais. Francês e crioulo convivem."
+     ],
+     "q": "Qual desses territórios você gostaria de conhecer, e o que faria lá?",
+     "c": "Escreva um cartão-postal em francês da Reunião ou da Martinica descrevendo a paisagem e a comida."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "l'outre-mer",
+      "ex": "L'outre-mer offre une incroyable diversité de paysages."
+     },
+     {
+      "w": "les Antilles",
+      "ex": "Aux Antilles, la musique est partout."
+     },
+     {
+      "w": "le créole",
+      "ex": "Ma collègue parle créole avec sa famille."
+     },
+     {
+      "w": "un volcan",
+      "ex": "Le piton de la Fournaise est un volcan très actif de La Réunion."
+     },
+     {
+      "w": "un lagon",
+      "ex": "Le lagon de Nouvelle-Calédonie est classé à l'UNESCO."
+     },
+     {
+      "w": "cohabiter",
+      "ex": "Plusieurs langues cohabitent sur ces îles."
+     }
+    ],
+    "gram": "Prépositions et lieux : à La Réunion, à la Martinique, en Guadeloupe, en Nouvelle-Calédonie, aux Antilles."
+   }
+  },
+  {
+   "d": 326,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Gender-inclusive French",
+     "g": "Understand feminine job titles and the debate around écriture inclusive.",
+     "p": [
+      "Feminine job titles are now standard: une autrice, une écrivaine, une professeure, une ingénieure, une cheffe.",
+      "Écriture inclusive uses forms like les étudiant·es or tous et toutes to include everyone.",
+      "Its use varies: some institutions avoid the point médian, but doubling (Françaises, Français) is widely accepted."
+     ],
+     "q": "In your language, are there masculine and feminine job titles? Is it changing?",
+     "c": "Write the feminine form of five jobs in French and use two of them in a sentence."
+    },
+    "de": {
+     "t": "Geschlechtergerechtes Französisch",
+     "g": "Du verstehst weibliche Berufsbezeichnungen und die Debatte um die écriture inclusive.",
+     "p": [
+      "Weibliche Berufsbezeichnungen sind heute üblich: une autrice, une écrivaine, une professeure, une ingénieure, une cheffe.",
+      "Die écriture inclusive nutzt Formen wie les étudiant·es oder tous et toutes, um alle einzubeziehen.",
+      "Der Gebrauch variiert: Manche Institutionen meiden den point médian, aber die Doppelnennung (Françaises, Français) ist weithin akzeptiert."
+     ],
+     "q": "Gibt es in deiner Sprache männliche und weibliche Berufsbezeichnungen? Verändert sich das?",
+     "c": "Schreib die weibliche Form von fünf Berufen auf Französisch und benutze zwei davon in einem Satz."
+    },
+    "es": {
+     "t": "El francés inclusivo",
+     "g": "Entiende los nombres femeninos de profesiones y el debate sobre la écriture inclusive.",
+     "p": [
+      "Los nombres femeninos de profesiones ya son habituales: une autrice, une écrivaine, une professeure, une ingénieure, une cheffe.",
+      "La écriture inclusive usa formas como les étudiant·es o tous et toutes para incluir a todos.",
+      "Su uso varía: algunas instituciones evitan el point médian, pero el desdoblamiento (Françaises, Français) está muy aceptado."
+     ],
+     "q": "En tu idioma, ¿hay nombres de profesiones en masculino y femenino? ¿Está cambiando?",
+     "c": "Escribe la forma femenina de cinco profesiones en francés y usa dos en una frase."
+    },
+    "fr": {
+     "t": "Le français inclusif",
+     "g": "Comprendre la féminisation des noms de métiers et le débat sur l'écriture inclusive.",
+     "p": [
+      "La féminisation des métiers est entrée dans l'usage : une autrice, une écrivaine, une professeure, une ingénieure, une cheffe.",
+      "L'écriture inclusive utilise des formes comme les étudiant·es ou tous et toutes pour inclure tout le monde.",
+      "Son usage varie : certaines institutions évitent le point médian, mais la double flexion (Françaises, Français) est très acceptée."
+     ],
+     "q": "Dans ta langue, les noms de métiers ont-ils un masculin et un féminin ? Est-ce que ça évolue ?",
+     "c": "Écris le féminin de cinq métiers et utilise-en deux dans une phrase."
+    },
+    "it": {
+     "t": "Il francese inclusivo",
+     "g": "Capisci i nomi femminili delle professioni e il dibattito sull'écriture inclusive.",
+     "p": [
+      "I nomi femminili delle professioni sono ormai d'uso: une autrice, une écrivaine, une professeure, une ingénieure, une cheffe.",
+      "L'écriture inclusive usa forme come les étudiant·es o tous et toutes per includere tutti.",
+      "L'uso varia: alcune istituzioni evitano il point médian, ma lo sdoppiamento (Françaises, Français) è molto accettato."
+     ],
+     "q": "Nella tua lingua ci sono nomi di professioni al maschile e al femminile? Sta cambiando?",
+     "c": "Scrivi il femminile di cinque professioni in francese e usane due in una frase."
+    },
+    "pt": {
+     "t": "O francês inclusivo",
+     "g": "Percebe os nomes femininos de profissões e o debate sobre a écriture inclusive.",
+     "p": [
+      "Os nomes femininos de profissões já são comuns: une autrice, une écrivaine, une professeure, une ingénieure, une cheffe.",
+      "A écriture inclusive usa formas como les étudiant·es ou tous et toutes para incluir todos.",
+      "O uso varia: algumas instituições evitam o point médian, mas o desdobramento (Françaises, Français) é muito aceite."
+     ],
+     "q": "Na tua língua há nomes de profissões no masculino e no feminino? Isso está a mudar?",
+     "c": "Escreve a forma feminina de cinco profissões em francês e usa duas numa frase."
+    },
+    "pt_BR": {
+     "t": "O francês inclusivo",
+     "g": "Entenda os nomes femininos de profissões e o debate sobre a écriture inclusive.",
+     "p": [
+      "Os nomes femininos de profissões já são comuns: une autrice, une écrivaine, une professeure, une ingénieure, une cheffe.",
+      "A écriture inclusive usa formas como les étudiant·es ou tous et toutes para incluir todo mundo.",
+      "O uso varia: algumas instituições evitam o point médian, mas o desdobramento (Françaises, Français) é bem aceito."
+     ],
+     "q": "No seu idioma existem nomes de profissões no masculino e no feminino? Isso está mudando?",
+     "c": "Escreva a forma feminina de cinco profissões em francês e use duas numa frase."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "une autrice",
+      "ex": "Cette autrice a publié son troisième roman."
+     },
+     {
+      "w": "une professeure",
+      "ex": "Ma professeure de chimie est passionnante."
+     },
+     {
+      "w": "une ingénieure",
+      "ex": "Elle travaille comme ingénieure dans l'aéronautique."
+     },
+     {
+      "w": "une cheffe",
+      "ex": "La cheffe d'orchestre salue le public."
+     },
+     {
+      "w": "l'écriture inclusive",
+      "ex": "L'écriture inclusive suscite de vifs débats."
+     },
+     {
+      "w": "tous et toutes",
+      "ex": "Bienvenue à tous et à toutes !"
+     }
+    ],
+    "gram": "Féminisation des métiers : -eur devient -euse ou -eure, -teur devient -trice (acteur, actrice ; auteur, autrice)."
+   }
+  },
+  {
+   "d": 327,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Anglicisms in French",
+     "g": "Spot English words used in French and learn their official French alternatives.",
+     "p": [
+      "Common anglicisms: le week-end, le parking, faire du shopping, un e-mail, le marketing, cool.",
+      "Faux anglicisms: un parking is a car park, un footing is a jog, un brushing is a blow-dry.",
+      "Official alternatives exist, used more in Québec: le courriel (e-mail), le magasinage (shopping), la fin de semaine."
+     ],
+     "q": "Which English words do you hear in your own language every day?",
+     "c": "Rewrite a French sentence full of anglicisms using only French alternatives."
+    },
+    "de": {
+     "t": "Anglizismen im Französischen",
+     "g": "Du erkennst englische Wörter im Französischen und lernst die offiziellen französischen Alternativen.",
+     "p": [
+      "Häufige Anglizismen: le week-end, le parking, faire du shopping, un e-mail, le marketing, cool.",
+      "Scheinanglizismen: un parking ist ein Parkplatz, un footing ein Jogging, un brushing ein Föhnen der Haare.",
+      "Offizielle Alternativen gibt es, vor allem in Québec beliebt: le courriel (E-Mail), le magasinage (Shopping), la fin de semaine."
+     ],
+     "q": "Welche englischen Wörter hörst du jeden Tag in deiner eigenen Sprache?",
+     "c": "Schreib einen französischen Satz voller Anglizismen nur mit französischen Alternativen um."
+    },
+    "es": {
+     "t": "Anglicismos en francés",
+     "g": "Detecta las palabras inglesas usadas en francés y aprende sus alternativas francesas oficiales.",
+     "p": [
+      "Anglicismos frecuentes: le week-end, le parking, faire du shopping, un e-mail, le marketing, cool.",
+      "Falsos anglicismos: un parking es un aparcamiento, un footing es correr, un brushing es un secado con cepillo.",
+      "Hay alternativas oficiales, más usadas en Quebec: le courriel (e-mail), le magasinage (compras), la fin de semaine."
+     ],
+     "q": "¿Qué palabras inglesas oyes cada día en tu propio idioma?",
+     "c": "Reescribe una frase francesa llena de anglicismos usando solo alternativas francesas."
+    },
+    "fr": {
+     "t": "Les anglicismes",
+     "g": "Repérer les mots anglais employés en français et connaître leurs équivalents français.",
+     "p": [
+      "Anglicismes courants : le week-end, le parking, faire du shopping, un e-mail, le marketing, cool.",
+      "Faux anglicismes : un parking, un footing, un brushing n'ont pas ce sens en anglais.",
+      "Des équivalents officiels existent, plus utilisés au Québec : le courriel, le magasinage, la fin de semaine."
+     ],
+     "q": "Quels mots anglais entends-tu chaque jour dans ta propre langue ?",
+     "c": "Réécris une phrase pleine d'anglicismes avec seulement des équivalents français."
+    },
+    "it": {
+     "t": "Anglicismi in francese",
+     "g": "Riconosci le parole inglesi usate in francese e impara le alternative francesi ufficiali.",
+     "p": [
+      "Anglicismi comuni: le week-end, le parking, faire du shopping, un e-mail, le marketing, cool.",
+      "Falsi anglicismi: un parking è un parcheggio, un footing è una corsetta, un brushing è una piega col phon.",
+      "Esistono alternative ufficiali, più usate in Québec: le courriel (e-mail), le magasinage (shopping), la fin de semaine."
+     ],
+     "q": "Quali parole inglesi senti ogni giorno nella tua lingua?",
+     "c": "Riscrivi una frase francese piena di anglicismi usando solo alternative francesi."
+    },
+    "pt": {
+     "t": "Anglicismos em francês",
+     "g": "Deteta as palavras inglesas usadas em francês e aprende as alternativas francesas oficiais.",
+     "p": [
+      "Anglicismos comuns: le week-end, le parking, faire du shopping, un e-mail, le marketing, cool.",
+      "Falsos anglicismos: un parking é um parque de estacionamento, un footing é uma corrida, un brushing é um brushing de cabeleireiro.",
+      "Há alternativas oficiais, mais usadas no Quebeque: le courriel (e-mail), le magasinage (compras), la fin de semaine."
+     ],
+     "q": "Que palavras inglesas ouves todos os dias na tua própria língua?",
+     "c": "Reescreve uma frase francesa cheia de anglicismos usando só alternativas francesas."
+    },
+    "pt_BR": {
+     "t": "Anglicismos em francês",
+     "g": "Identifique as palavras inglesas usadas em francês e aprenda as alternativas francesas oficiais.",
+     "p": [
+      "Anglicismos comuns: le week-end, le parking, faire du shopping, un e-mail, le marketing, cool.",
+      "Falsos anglicismos: un parking é um estacionamento, un footing é uma corrida leve, un brushing é uma escova no cabelo.",
+      "Há alternativas oficiais, mais usadas no Quebec: le courriel (e-mail), le magasinage (compras), la fin de semaine."
+     ],
+     "q": "Quais palavras inglesas você ouve todo dia no seu próprio idioma?",
+     "c": "Reescreva uma frase francesa cheia de anglicismos usando só alternativas francesas."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un anglicisme",
+      "ex": "Week-end est un anglicisme très courant."
+     },
+     {
+      "w": "le courriel",
+      "ex": "Envoyez-moi un courriel avant midi."
+     },
+     {
+      "w": "la fin de semaine",
+      "ex": "Au Québec, on dit la fin de semaine."
+     },
+     {
+      "w": "le magasinage",
+      "ex": "On a fait du magasinage tout l'après-midi."
+     },
+     {
+      "w": "un footing",
+      "ex": "Je fais un footing tous les matins au parc."
+     },
+     {
+      "w": "un équivalent",
+      "ex": "Il existe un équivalent français pour presque chaque terme."
+     }
+    ],
+    "gram": "Les anglicismes prennent un genre en français : le week-end, la start-up, le parking ; au pluriel, on ajoute un s : des parkings."
+   }
+  },
+  {
+   "d": 328,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Homophones",
+     "g": "Master French homophones: words that sound the same but differ in spelling and meaning.",
+     "p": [
+      "Ver, verre, vert, vers, vair all sound [vɛʁ]: a worm, a glass, green, towards, and a fur from old tales.",
+      "More pairs: mer, mère, maire (sea, mother, mayor); sans, cent, sang (without, hundred, blood); foi, fois, foie.",
+      "Context and grammar help you choose: un verre d'eau, une veste verte, il marche vers la mer."
+     ],
+     "q": "Can you make one French sentence with three homophones in it?",
+     "c": "Write a funny French sentence using ver, verre and vert, then read it aloud."
+    },
+    "de": {
+     "t": "Homophone",
+     "g": "Du meisterst französische Homophone: Wörter, die gleich klingen, aber anders geschrieben werden und etwas anderes bedeuten.",
+     "p": [
+      "Ver, verre, vert, vers, vair klingen alle [vɛʁ]: Wurm, Glas, grün, in Richtung und ein Pelz aus alten Märchen.",
+      "Weitere: mer, mère, maire (Meer, Mutter, Bürgermeister); sans, cent, sang (ohne, hundert, Blut); foi, fois, foie.",
+      "Kontext und Grammatik helfen: un verre d'eau, une veste verte, il marche vers la mer."
+     ],
+     "q": "Kannst du einen französischen Satz mit drei Homophonen bilden?",
+     "c": "Schreib einen lustigen französischen Satz mit ver, verre und vert und lies ihn laut vor."
+    },
+    "es": {
+     "t": "Homófonos",
+     "g": "Domina los homófonos franceses: palabras que suenan igual pero se escriben y significan distinto.",
+     "p": [
+      "Ver, verre, vert, vers, vair suenan [vɛʁ]: gusano, vaso, verde, hacia y una piel de los cuentos antiguos.",
+      "Más: mer, mère, maire (mar, madre, alcalde); sans, cent, sang (sin, cien, sangre); foi, fois, foie (fe, vez, hígado).",
+      "El contexto y la gramática ayudan: un verre d'eau, une veste verte, il marche vers la mer."
+     ],
+     "q": "¿Puedes hacer una frase en francés con tres homófonos?",
+     "c": "Escribe una frase divertida en francés con ver, verre y vert, y léela en voz alta."
+    },
+    "fr": {
+     "t": "Les homophones",
+     "g": "Maîtriser les homophones : des mots qui se prononcent pareil mais s'écrivent et signifient autre chose.",
+     "p": [
+      "Ver, verre, vert, vers, vair se prononcent tous [vɛʁ] : un animal, un récipient, une couleur, une direction, une fourrure.",
+      "Autres séries : mer, mère, maire ; sans, cent, sang ; foi, fois, foie.",
+      "Le contexte et la grammaire aident : un verre d'eau, une veste verte, il marche vers la mer."
+     ],
+     "q": "Peux-tu faire une phrase avec trois homophones ?",
+     "c": "Écris une phrase amusante avec ver, verre et vert, puis lis-la à voix haute."
+    },
+    "it": {
+     "t": "Omofoni",
+     "g": "Padroneggia gli omofoni francesi: parole che suonano uguali ma si scrivono e significano in modo diverso.",
+     "p": [
+      "Ver, verre, vert, vers, vair suonano tutti [vɛʁ]: verme, bicchiere, verde, verso e una pelliccia delle fiabe antiche.",
+      "Altre serie: mer, mère, maire (mare, madre, sindaco); sans, cent, sang (senza, cento, sangue); foi, fois, foie.",
+      "Contesto e grammatica aiutano: un verre d'eau, une veste verte, il marche vers la mer."
+     ],
+     "q": "Riesci a fare una frase in francese con tre omofoni?",
+     "c": "Scrivi una frase buffa in francese con ver, verre e vert, poi leggila ad alta voce."
+    },
+    "pt": {
+     "t": "Homófonos",
+     "g": "Domina os homófonos franceses: palavras que soam igual mas se escrevem e significam de forma diferente.",
+     "p": [
+      "Ver, verre, vert, vers, vair soam todos [vɛʁ]: verme, copo, verde, em direção a e uma pele dos contos antigos.",
+      "Mais séries: mer, mère, maire (mar, mãe, presidente da câmara); sans, cent, sang (sem, cem, sangue); foi, fois, foie.",
+      "O contexto e a gramática ajudam: un verre d'eau, une veste verte, il marche vers la mer."
+     ],
+     "q": "Consegues fazer uma frase em francês com três homófonos?",
+     "c": "Escreve uma frase divertida em francês com ver, verre e vert, e lê-a em voz alta."
+    },
+    "pt_BR": {
+     "t": "Homófonos",
+     "g": "Domine os homófonos franceses: palavras que soam igual mas têm grafia e sentido diferentes.",
+     "p": [
+      "Ver, verre, vert, vers, vair soam todos [vɛʁ]: minhoca, copo, verde, em direção a e uma pele dos contos antigos.",
+      "Mais séries: mer, mère, maire (mar, mãe, prefeito); sans, cent, sang (sem, cem, sangue); foi, fois, foie (fé, vez, fígado).",
+      "O contexto e a gramática ajudam: un verre d'eau, une veste verte, il marche vers la mer."
+     ],
+     "q": "Você consegue fazer uma frase em francês com três homófonos?",
+     "c": "Escreva uma frase divertida em francês com ver, verre e vert, e leia em voz alta."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un verre",
+      "ex": "Je voudrais un verre d'eau, s'il vous plaît."
+     },
+     {
+      "w": "vert",
+      "ex": "Elle porte un manteau vert."
+     },
+     {
+      "w": "vers",
+      "ex": "Nous marchons vers la gare."
+     },
+     {
+      "w": "un ver de terre",
+      "ex": "Un ver de terre est sorti après la pluie."
+     },
+     {
+      "w": "le maire",
+      "ex": "Le maire a inauguré la nouvelle médiathèque."
+     },
+     {
+      "w": "une fois",
+      "ex": "Je suis allé une fois au Québec."
+     }
+    ],
+    "gram": "Homophones : seuls le contexte et la catégorie grammaticale (nom, adjectif, préposition) permettent de choisir la bonne orthographe."
+   }
+  },
+  {
+   "d": 329,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Common spelling traps",
+     "g": "Avoid the classic French spelling traps: a or à, ou or où, ses or ces, -é or -er.",
+     "p": [
+      "A or à: if you can replace it with avait, write a (verb avoir); otherwise à: Il a un rendez-vous à midi.",
+      "Ou or où: ou means or (ou bien), où means where: Tu viens ou pas ? Où vas-tu ?",
+      "Ses or ces: ses = his/her (les siens), ces = these. -é or -er: replace with vendu or vendre to test."
+     ],
+     "q": "Which of these traps catches you most often when you write in French?",
+     "c": "Write five French sentences, each containing one of today's pairs used correctly."
+    },
+    "de": {
+     "t": "Häufige Rechtschreibfallen",
+     "g": "Du vermeidest die klassischen französischen Rechtschreibfallen: a oder à, ou oder où, ses oder ces, -é oder -er.",
+     "p": [
+      "A oder à: Kannst du es durch avait ersetzen, schreib a (Verb avoir), sonst à: Il a un rendez-vous à midi.",
+      "Ou oder où: ou heißt oder, où heißt wo: Tu viens ou pas ? Où vas-tu ?",
+      "Ses oder ces: ses = seine/ihre, ces = diese. -é oder -er: Test mit vendu oder vendre ersetzen."
+     ],
+     "q": "Welche dieser Fallen erwischt dich am häufigsten beim Schreiben?",
+     "c": "Schreib fünf französische Sätze, jeder mit einem der heutigen Paare, richtig verwendet."
+    },
+    "es": {
+     "t": "Trampas ortográficas frecuentes",
+     "g": "Evita las trampas clásicas de la ortografía francesa: a o à, ou o où, ses o ces, -é o -er.",
+     "p": [
+      "A o à: si puedes cambiarlo por avait, escribe a (verbo avoir); si no, à: Il a un rendez-vous à midi.",
+      "Ou o où: ou significa o, où significa dónde: Tu viens ou pas ? Où vas-tu ?",
+      "Ses o ces: ses = sus (de él/ella), ces = estos. -é o -er: prueba a cambiarlo por vendu o vendre."
+     ],
+     "q": "¿Cuál de estas trampas te atrapa más a menudo cuando escribes en francés?",
+     "c": "Escribe cinco frases en francés, cada una con uno de los pares de hoy bien usado."
+    },
+    "fr": {
+     "t": "Les pièges d'orthographe courants",
+     "g": "Éviter les pièges classiques : a ou à, ou ou où, ses ou ces, -é ou -er.",
+     "p": [
+      "A ou à : si on peut dire avait, on écrit a (verbe avoir) ; sinon à : Il a un rendez-vous à midi.",
+      "Ou ou où : ou veut dire ou bien, où indique le lieu ou le temps : Tu viens ou pas ? Où vas-tu ?",
+      "Ses ou ces : ses = les siens, ces = ceux-là. -é ou -er : on remplace par vendu ou vendre pour vérifier."
+     ],
+     "q": "Lequel de ces pièges te fait tomber le plus souvent ?",
+     "c": "Écris cinq phrases, chacune avec une des paires du jour bien employée."
+    },
+    "it": {
+     "t": "Trappole ortografiche comuni",
+     "g": "Evita le classiche trappole dell'ortografia francese: a o à, ou o où, ses o ces, -é o -er.",
+     "p": [
+      "A o à: se puoi sostituirlo con avait, scrivi a (verbo avoir); altrimenti à: Il a un rendez-vous à midi.",
+      "Ou o où: ou significa o, où significa dove: Tu viens ou pas ? Où vas-tu ?",
+      "Ses o ces: ses = suoi/sue, ces = questi. -é o -er: prova a sostituire con vendu o vendre."
+     ],
+     "q": "Quale di queste trappole ti frega più spesso quando scrivi in francese?",
+     "c": "Scrivi cinque frasi in francese, ciascuna con una delle coppie di oggi usata correttamente."
+    },
+    "pt": {
+     "t": "Armadilhas ortográficas comuns",
+     "g": "Evita as armadilhas clássicas da ortografia francesa: a ou à, ou ou où, ses ou ces, -é ou -er.",
+     "p": [
+      "A ou à: se o puderes trocar por avait, escreve a (verbo avoir); senão, à: Il a un rendez-vous à midi.",
+      "Ou ou où: ou quer dizer ou, où quer dizer onde: Tu viens ou pas ? Où vas-tu ?",
+      "Ses ou ces: ses = os seus (dele/dela), ces = estes. -é ou -er: troca por vendu ou vendre para testar."
+     ],
+     "q": "Qual destas armadilhas te apanha mais vezes quando escreves em francês?",
+     "c": "Escreve cinco frases em francês, cada uma com um dos pares de hoje bem usado."
+    },
+    "pt_BR": {
+     "t": "Armadilhas ortográficas comuns",
+     "g": "Evite as armadilhas clássicas da ortografia francesa: a ou à, ou ou où, ses ou ces, -é ou -er.",
+     "p": [
+      "A ou à: se der para trocar por avait, escreva a (verbo avoir); senão, à: Il a un rendez-vous à midi.",
+      "Ou ou où: ou quer dizer ou, où quer dizer onde: Tu viens ou pas ? Où vas-tu ?",
+      "Ses ou ces: ses = seus (dele/dela), ces = estes. -é ou -er: troque por vendu ou vendre para testar."
+     ],
+     "q": "Qual dessas armadilhas mais te pega quando você escreve em francês?",
+     "c": "Escreva cinco frases em francês, cada uma com um dos pares de hoje usado corretamente."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "a / à",
+      "ex": "Elle a rendez-vous à la banque à dix heures."
+     },
+     {
+      "w": "ou / où",
+      "ex": "Où préfères-tu aller : à la mer ou à la montagne ?"
+     },
+     {
+      "w": "ses / ces",
+      "ex": "Il range ses livres ; ces livres-là sont à moi."
+     },
+     {
+      "w": "-é / -er",
+      "ex": "J'ai mangé une pomme ; je vais manger une poire."
+     },
+     {
+      "w": "son / sont",
+      "ex": "Ils sont venus avec leur chien et son jouet."
+     },
+     {
+      "w": "on / ont",
+      "ex": "On sait qu'ils ont gagné le match."
+     }
+    ],
+    "gram": "Astuce de substitution : a se remplace par avait, -er par vendre, -é par vendu, sont par étaient, ont par avaient."
+   }
+  },
+  {
+   "d": 330,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Review: language variety",
+     "g": "Review the variety of French: idioms, slang, regional French and spelling.",
+     "p": [
+      "Idioms and proverbs: avoir du pain sur la planche, tourner autour du pot, petit à petit l'oiseau fait son nid.",
+      "Registers and slang: le boulot, la bagnole, verlan like chelou and ouf, and when not to use them.",
+      "The francophone world and spelling: accents, Africa, overseas, inclusive French, homophones and a / à."
+     ],
+     "q": "What surprised you most about the variety of French over the last two weeks?",
+     "c": "Tell a short story in French mixing one idiom, one familiar word and one regional word."
+    },
+    "de": {
+     "t": "Wiederholung: Vielfalt der Sprache",
+     "g": "Du wiederholst die Vielfalt des Französischen: Redewendungen, Slang, regionales Französisch und Rechtschreibung.",
+     "p": [
+      "Redewendungen und Sprichwörter: avoir du pain sur la planche, tourner autour du pot, petit à petit l'oiseau fait son nid.",
+      "Register und Slang: le boulot, la bagnole, Verlan wie chelou und ouf, und wann man sie meidet.",
+      "Frankophone Welt und Rechtschreibung: Akzente, Afrika, Übersee, inklusives Französisch, Homophone und a / à."
+     ],
+     "q": "Was hat dich in den letzten zwei Wochen an der Vielfalt des Französischen am meisten überrascht?",
+     "c": "Erzähl eine kurze Geschichte auf Französisch mit einer Redewendung, einem Umgangswort und einem Regionalwort."
+    },
+    "es": {
+     "t": "Repaso: variedad de la lengua",
+     "g": "Repasa la variedad del francés: expresiones, jerga, francés regional y ortografía.",
+     "p": [
+      "Expresiones y refranes: avoir du pain sur la planche, tourner autour du pot, petit à petit l'oiseau fait son nid.",
+      "Registros y jerga: le boulot, la bagnole, verlan como chelou y ouf, y cuándo no usarlos.",
+      "Mundo francófono y ortografía: acentos, África, ultramar, francés inclusivo, homófonos y a / à."
+     ],
+     "q": "¿Qué te sorprendió más de la variedad del francés en estas dos semanas?",
+     "c": "Cuenta una historia corta en francés mezclando una expresión, una palabra familiar y una regional."
+    },
+    "fr": {
+     "t": "Bilan : la variété du français",
+     "g": "Réviser la variété du français : expressions, argot, français régional et orthographe.",
+     "p": [
+      "Expressions et proverbes : avoir du pain sur la planche, tourner autour du pot, petit à petit l'oiseau fait son nid.",
+      "Registres et argot : le boulot, la bagnole, le verlan (chelou, ouf) et quand les éviter.",
+      "La francophonie et l'orthographe : accents, Afrique, outre-mer, français inclusif, homophones et a / à."
+     ],
+     "q": "Qu'est-ce qui t'a le plus surpris dans la variété du français ces deux dernières semaines ?",
+     "c": "Raconte une courte histoire avec une expression, un mot familier et un mot régional."
+    },
+    "it": {
+     "t": "Ripasso: varietà della lingua",
+     "g": "Ripassa la varietà del francese: modi di dire, gergo, francese regionale e ortografia.",
+     "p": [
+      "Modi di dire e proverbi: avoir du pain sur la planche, tourner autour du pot, petit à petit l'oiseau fait son nid.",
+      "Registri e gergo: le boulot, la bagnole, il verlan come chelou e ouf, e quando evitarli.",
+      "Mondo francofono e ortografia: accenti, Africa, oltremare, francese inclusivo, omofoni e a / à."
+     ],
+     "q": "Cosa ti ha sorpreso di più della varietà del francese in queste due settimane?",
+     "c": "Racconta una breve storia in francese con un modo di dire, una parola familiare e una regionale."
+    },
+    "pt": {
+     "t": "Revisão: variedade da língua",
+     "g": "Revê a variedade do francês: expressões, calão, francês regional e ortografia.",
+     "p": [
+      "Expressões e provérbios: avoir du pain sur la planche, tourner autour du pot, petit à petit l'oiseau fait son nid.",
+      "Registos e calão: le boulot, la bagnole, verlan como chelou e ouf, e quando os evitar.",
+      "Mundo francófono e ortografia: sotaques, África, ultramar, francês inclusivo, homófonos e a / à."
+     ],
+     "q": "O que te surpreendeu mais na variedade do francês nestas duas semanas?",
+     "c": "Conta uma história curta em francês com uma expressão, uma palavra familiar e uma regional."
+    },
+    "pt_BR": {
+     "t": "Revisão: variedade da língua",
+     "g": "Revise a variedade do francês: expressões, gíria, francês regional e ortografia.",
+     "p": [
+      "Expressões e provérbios: avoir du pain sur la planche, tourner autour du pot, petit à petit l'oiseau fait son nid.",
+      "Registros e gíria: le boulot, la bagnole, verlan como chelou e ouf, e quando evitar.",
+      "Mundo francófono e ortografia: sotaques, África, ultramar, francês inclusivo, homófonos e a / à."
+     ],
+     "q": "O que mais te surpreendeu na variedade do francês nessas duas semanas?",
+     "c": "Conte uma história curta em francês com uma expressão, uma palavra informal e uma regional."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "une expression imagée",
+      "ex": "Le français est riche en expressions imagées."
+     },
+     {
+      "w": "le registre familier",
+      "ex": "Évite le registre familier dans un courriel professionnel."
+     },
+     {
+      "w": "le verlan",
+      "ex": "Le verlan est né dans la langue de la rue."
+     },
+     {
+      "w": "la francophonie",
+      "ex": "La francophonie est d'une grande diversité."
+     },
+     {
+      "w": "un homophone",
+      "ex": "Mer et mère sont des homophones."
+     },
+     {
+      "w": "une faute d'orthographe",
+      "ex": "Relis-toi pour éviter les fautes d'orthographe."
+     }
+    ],
+    "gram": "Adapter son registre : soutenu (je suis épuisé), courant (je suis très fatigué), familier (je suis crevé)."
+   }
+  }
+ ]
+}

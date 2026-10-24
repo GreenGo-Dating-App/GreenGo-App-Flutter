@@ -1,0 +1,2195 @@
+{
+"topic": "pets",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "Why people love living with pets",
+"f": "The companionship, routine and joy pets bring, and what caring for an animal really involves day to day"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Matching a pet to your lifestyle",
+"f": "Time, space, budget and energy: honest questions to ask before choosing any animal"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Dogs, cats or something smaller?",
+"f": "A friendly overview of common pets and the very different daily needs of each"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Adopting from a shelter or rescue",
+"f": "How adoption works, what shelters ask, and why so many wonderful adult animals wait for homes"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Finding a responsible breeder",
+"f": "Signs of a caring breeder: health records, meeting the parents and lots of questions both ways"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Pet-proofing your home",
+"f": "Cables, plants, small objects and open windows: making rooms safe before a new pet arrives"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "The first-day shopping list",
+"f": "Bed, bowls, food, a carrier, ID tag and a few toys: the essentials for day one"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Bringing your new pet home",
+"f": "A calm arrival: one quiet room, gentle introductions and letting the animal explore at its own pace"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "The first week together",
+"f": "Settling in, simple routines and why patience matters more than perfection"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Choosing your first vet",
+"f": "What to look for in a veterinary practice and why a first check-up is a great start"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "Microchips and ID tags",
+"f": "How microchips and tags help lost pets get home, and keeping contact details up to date"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Reading basic body language",
+"f": "Relaxed versus worried postures in dogs and cats: ears, tails, eyes and body tension"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Daily routines that pets love",
+"f": "Regular times for meals, walks, play and rest help animals feel safe and settled"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Fresh water every day",
+"f": "Why clean water matters, bowl types, fountains and how often to refresh it"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Introduction to pet food labels",
+"f": "Complete versus complementary food and what the ingredient list tells you"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "How much should my pet eat?",
+"f": "Feeding guides as a starting point, portion control and checking body shape with your vet"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Treats without overdoing it",
+"f": "Using small treats wisely and keeping them a small part of the daily diet"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Foods pets should never eat",
+"f": "Common human foods toxic to dogs and cats, like chocolate, grapes, onions and xylitol"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Safe chewing and toys",
+"f": "Choosing durable, right-sized toys and checking them regularly for damage"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Play as a daily need",
+"f": "How play builds bonds, burns energy and keeps minds busy for many species"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Gentle handling basics",
+"f": "How to pick up, hold and touch different pets so they feel secure"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Kids and pets together",
+"f": "Teaching children kind, calm habits around animals and always supervising"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Pet-friendly cleaning",
+"f": "Handling accidents, choosing safer cleaning products and keeping things hygienic"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Shedding and brushing basics",
+"f": "Why pets shed, simple brushing routines and choosing the right brush"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Sleep and rest needs",
+"f": "How much different pets sleep and creating a cosy, quiet resting spot"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Recognising a happy pet",
+"f": "Signs of contentment: relaxed posture, curiosity, appetite and playful behaviour"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "When to call the vet",
+"f": "General warning signs that mean a pet should be checked by a professional soon"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Keeping a pet care diary",
+"f": "Tracking food, weight, vet visits and habits to spot changes early"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Pets in different cultures",
+"f": "How people around the world live with animals, from village cats to city dogs"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: your pet care foundations",
+"f": "A light recap of the first month: home, food, routines, body language and vet basics"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Getting to know dog breeds",
+"f": "Breed groups and what they were originally bred for, and why every dog is an individual"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Puppy versus adult dog",
+"f": "The time, training and energy each needs, and the joys of adopting an older dog"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Choosing a collar, harness and lead",
+"f": "Comfortable fits, the two-finger rule and when a harness is a better choice"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "The daily walk",
+"f": "How long and how often dogs need walks, and letting them sniff along the way"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Why sniffing matters to dogs",
+"f": "The amazing dog nose and how scent walks relax and tire a dog out"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Toilet training a puppy",
+"f": "Regular outings, praise at the right moment and patience with accidents"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Crate training kindly",
+"f": "Making a crate a cosy den, short sessions and never using it as punishment"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Teaching your dog its name",
+"f": "Building attention with name games and rewards"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Positive reinforcement explained",
+"f": "Rewarding behaviour you like so it happens more, the friendly science behind training"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Sit: your first cue",
+"f": "Step-by-step luring and rewarding a sit, then fading the treat"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Come when called",
+"f": "Building a reliable recall with high-value rewards and practice in safe places"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Loose-lead walking basics",
+"f": "Rewarding a slack lead and stopping when the dog pulls"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Puppy socialisation",
+"f": "Gentle, positive exposure to people, sounds and places during the early months"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Dog-to-dog greetings",
+"f": "Polite introductions, reading play signals and when to give space"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Dog grooming at home",
+"f": "Brushing, checking ears and paws, and keeping sessions short and pleasant"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Bath time for dogs",
+"f": "How often to bathe, dog shampoo and making baths calm"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Trimming nails safely",
+"f": "Why nails matter, getting a dog used to paw handling, and asking a groomer or vet for help"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Dental care for dogs",
+"f": "Tooth brushing with dog toothpaste, chews and regular dental checks at the vet"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Dog nutrition basics",
+"f": "Life stage foods, wet versus dry, and why sudden food changes upset tummies"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Keeping dogs cool in summer",
+"f": "Shade, water, avoiding hot pavements and never leaving dogs in parked cars"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Keeping dogs warm in winter",
+"f": "Short-coated dogs, coats, paw care and salt on winter roads"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Dog parks: pros and etiquette",
+"f": "When dog parks work well, reading the room and cleaning up after your dog"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Mental games for dogs",
+"f": "Puzzle feeders, hide and seek and snuffle mats for busy minds"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Alone time for dogs",
+"f": "Building up time alone gradually and making departures calm"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Barking: why dogs do it",
+"f": "Different reasons for barking and calm ways to respond to each"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Jumping up on people",
+"f": "Teaching four paws on the floor by rewarding calm greetings"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Travelling in the car with a dog",
+"f": "Safety restraints, breaks, water and getting a dog used to car rides"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Choosing a dog walker or sitter",
+"f": "Questions to ask and sharing routines so care stays consistent"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Fun dog sports to explore",
+"f": "Agility, scent work, rally and other activities dogs and people enjoy together"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: life with a dog",
+"f": "A light recap of walking, training, grooming and everyday dog care"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "Understanding cats",
+"f": "Independent but social: how cats think, bond and communicate"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Kitten versus adult cat",
+"f": "Energy levels, training and why adult cats make wonderful companions"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Setting up a cat-friendly home",
+"f": "Hiding places, high perches, scratching posts and quiet zones"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Litter box basics",
+"f": "Box size, location, litter types and keeping it clean"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "How many litter boxes?",
+"f": "The common one-per-cat-plus-one guideline and where to place them"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Cat body language",
+"f": "Tail positions, slow blinks, ears and what a purr can mean"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Cat vocalisations",
+"f": "Meows, trills, chirps and hisses, and what cats may be telling you"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Scratching is natural",
+"f": "Why cats scratch and how the right posts protect your furniture"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Play for indoor cats",
+"f": "Wand toys, short hunting games and ending play with a small meal"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Cat nutrition basics",
+"f": "Cats as carnivores, wet food, dry food and fresh water"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Encouraging cats to drink",
+"f": "Fountains, wide bowls and wet food to support hydration"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Brushing and grooming cats",
+"f": "Long-haired versus short-haired care and hairball prevention"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Cat claws and nail care",
+"f": "Getting cats comfortable with paw handling and asking a vet for help"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Picking up a cat correctly",
+"f": "Supporting the chest and back legs and respecting when a cat says no"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Indoor or outdoor cats?",
+"f": "Different approaches around the world and safe options like catios and harness walks"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Teaching a cat to love the carrier",
+"f": "Leaving the carrier out, treats inside and short practice trips"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Clicker training for cats",
+"f": "Yes, cats can learn tricks: clicks, treats and short sessions"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Cats and window watching",
+"f": "Bird feeders, window perches and entertainment from the outside world"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Calm vet visits for cats",
+"f": "Covering the carrier, familiar blankets and choosing quiet times"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Cats and houseplants",
+"f": "Common plants that are toxic to cats, such as lilies, and safer green choices"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Understanding cat sleep",
+"f": "Why cats sleep so much and their active dawn and dusk hours"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Multi-cat basics",
+"f": "Resources for each cat and signs of tension between cats"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Cat-safe holidays and visitors",
+"f": "Keeping routines, quiet rooms and safe decorations"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Cat enrichment on a budget",
+"f": "Cardboard boxes, paper bags without handles and DIY treat puzzles"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Kneading, head bumps and cat affection",
+"f": "What these sweet behaviours mean and how to respond"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Myths about cats",
+"f": "Common misconceptions, like cats needing milk or always landing safely"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Famous cats in history and culture",
+"f": "Cats in ancient Egypt, ships, libraries and stories around the world"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Choosing a cat sitter",
+"f": "Daily visits versus boarding and leaving clear instructions"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "When your cat hides",
+"f": "Normal hiding versus hiding that means a vet check is wise"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Review: life with a cat",
+"f": "A light recap of litter, play, body language and everyday cat care"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Rabbits as pets",
+"f": "Social, clever animals that need space, company and lots of hay"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Rabbit housing and exercise",
+"f": "Large enclosures, daily free-roaming time and rabbit-proofing"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "What rabbits eat",
+"f": "Hay as the main food, fresh greens and why carrots are only a treat"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Guinea pigs basics",
+"f": "Sociable, chatty pets that need company, hay and vitamin C"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Hamsters and their habits",
+"f": "Night-time activity, deep bedding, wheels and solo living"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Gerbils, rats and mice",
+"f": "Curious small pets, their social needs and suitable homes"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Handling small pets gently",
+"f": "Scooping from below, staying low to the ground and short sessions"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Small pet enrichment",
+"f": "Tunnels, digging boxes, chew toys and foraging games"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Introduction to pet birds",
+"f": "Budgies, canaries, cockatiels and parrots: very different needs"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Bird cages and flight time",
+"f": "Cage size, bar spacing, perches and safe time outside the cage"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Feeding pet birds",
+"f": "Pellets, seeds, fresh vegetables and foods birds must avoid"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Birds need company and talk",
+"f": "Social needs, singing, mimicry and daily interaction"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Getting started with fish",
+"f": "Goldfish, bettas and community fish, and why a bowl is rarely enough"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Setting up a first aquarium",
+"f": "Tank, filter, heater, light and why to set up before buying fish"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "The nitrogen cycle made simple",
+"f": "How helpful bacteria turn fish waste into safer compounds"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Water changes and testing",
+"f": "Regular partial water changes, dechlorinator and simple test kits"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Choosing peaceful tank mates",
+"f": "Compatible fish, adult sizes and avoiding overcrowding"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Feeding fish the right amount",
+"f": "Small portions, variety and why overfeeding clouds water"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Turtles and tortoises intro",
+"f": "Very long-lived pets with specific light, heat and space needs"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Reptiles for beginners",
+"f": "Leopard geckos, bearded dragons and corn snakes: an overview of their care"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Exotic pets and the law",
+"f": "Why some animals are protected or need permits, and checking local rules"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Pets for small apartments",
+"f": "Calm, space-friendly companions and making small homes enriching"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Allergies and pets",
+"f": "Ways people manage pet allergies at home, with doctor advice for symptoms"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Pet costs to plan for",
+"f": "Food, supplies, vet care and insurance as categories to budget for"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Pet insurance basics",
+"f": "What pet insurance generally covers and questions to ask before choosing"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Hermit crabs and snails",
+"f": "Unusual small pets with surprisingly specific needs for humidity, shells and space"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Choosing a pet carrier",
+"f": "Sizes, ventilation and getting pets used to carriers for trips and vet visits"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Pet care for busy schedules",
+"f": "Automatic feeders, sitters and routines that keep pets happy when life is busy"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Your first-year pet plan",
+"f": "Putting together a simple plan for food, check-ups, training and fun"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: beginner pet care complete",
+"f": "A light recap of the beginner stage across dogs, cats, small pets, birds and fish"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "How animals learn",
+"f": "Classical and operant conditioning explained with everyday examples"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Timing your rewards",
+"f": "Why rewards must come within seconds and how a marker word helps"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Choosing high-value rewards",
+"f": "Ranking treats, toys and praise for each pet's preferences"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Shaping new behaviours",
+"f": "Rewarding small steps toward a bigger goal"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Lure, capture and shape",
+"f": "Three ways to teach a behaviour and when to use each"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Adding a cue word",
+"f": "When to name a behaviour and keeping cues consistent in the family"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Proofing: training everywhere",
+"f": "Practising in new places with more distractions, step by step"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Down and stay",
+"f": "Teaching a relaxed down and building duration slowly"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Leave it and drop it",
+"f": "Two useful safety cues taught with trades and rewards"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Wait at doors",
+"f": "Calm thresholds for safer outings and car exits"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Settle on a mat",
+"f": "Teaching a dog to relax on a mat in busy situations"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Tricks for fun and bonding",
+"f": "Spin, paw, roll over and why tricks build confidence"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Target training",
+"f": "Teaching a pet to touch a hand or stick and the many uses of targeting"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Training without force",
+"f": "Why gentle methods support trust and long-term learning"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Common training mistakes",
+"f": "Repeating cues, inconsistent rules and sessions that are too long"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Short sessions, big results",
+"f": "Five-minute training breaks spread through the day"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Teenage dogs",
+"f": "The adolescent phase, testing boundaries and staying consistent"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Understanding stress signals",
+"f": "Lip licking, yawning, turning away and freezing in pets"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Fear versus excitement",
+"f": "Telling the two apart and helping pets feel safe"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Desensitisation basics",
+"f": "Gradual, gentle exposure that stays below a pet's worry level"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Counter-conditioning explained",
+"f": "Pairing something worrying with something wonderful"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Fireworks and thunderstorms",
+"f": "Safe spaces, sound masking and planning ahead, with vet advice for strong fears"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Resource guarding",
+"f": "Why pets guard food or toys and safe, calm approaches with professional help"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Choosing a trainer",
+"f": "Qualifications, gentle methods and questions to ask a trainer"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Training cats and small pets",
+"f": "Using clickers and food rewards with cats, rabbits and rats"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Teaching birds to step up",
+"f": "Building trust and simple cues with pet birds"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Calm greetings with visitors",
+"f": "Routines for doorbells, guests and excited pets"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Hand signals and silent cues",
+"f": "Teaching cues with gestures, also useful for older pets"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Training journals",
+"f": "Logging sessions to see progress and plan next steps"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Review: the science of training",
+"f": "A light recap of rewards, timing, cues and reading stress"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Understanding nutrients",
+"f": "Protein, fats, carbohydrates, vitamins and minerals in pet diets"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Life stage nutrition",
+"f": "How needs change from young to adult to senior animals"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Reading a full food label",
+"f": "Guaranteed analysis, ingredient order and nutritional adequacy statements"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Wet, dry and fresh foods",
+"f": "Pros and considerations of different food formats"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Switching foods gradually",
+"f": "A typical transition over about a week to protect digestion"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Body condition scoring",
+"f": "Feeling ribs and checking waistlines to see if a pet is a healthy weight"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Helping a pet stay trim",
+"f": "Portions, play and treat budgets, with vet guidance for weight goals"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Feeding puzzles and slow feeders",
+"f": "Making meals last longer and more interesting"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Homemade diets: be careful",
+"f": "Why balanced homemade diets need a vet nutritionist's recipe"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Safe fruit and veg treats",
+"f": "Pet-safe options in small amounts, and ones to skip"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Hydration for every species",
+"f": "Water needs of dogs, cats, rabbits, birds and reptiles"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Grooming tools guide",
+"f": "Slicker brushes, combs, deshedding tools and when to use each"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Coat types explained",
+"f": "Single, double, wire and curly coats and how care differs"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Professional grooming visits",
+"f": "What groomers do and preparing your pet for the salon"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Ear care basics",
+"f": "Looking at healthy ears and seeing a vet for redness, smell or scratching"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Eye care basics",
+"f": "Wiping gently and knowing when eye changes need a vet"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Paw and pad care",
+"f": "Checking between toes, trimming fur and protecting pads"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Dental health for all pets",
+"f": "Teeth in rabbits, cats, dogs and rodents and the role of chewing"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Grooming as bonding time",
+"f": "Turning care routines into calm, positive moments together"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Bathing cats and small pets",
+"f": "Why most rarely need baths and safer spot-cleaning options"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Seasonal coat changes",
+"f": "Spring and autumn shedding and adjusting grooming routines"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Parasite prevention overview",
+"f": "Fleas, ticks and worms, and why prevention plans come from the vet"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Checking your pet after walks",
+"f": "Looking for ticks, burrs and grass seeds in the coat"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Pet first aid kit",
+"f": "What to keep at home and on trips, and taking a pet first aid course"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Emergency vet planning",
+"f": "Knowing where your nearest emergency clinic is before you need it"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Vaccinations explained simply",
+"f": "Why vets recommend vaccines and following your vet's schedule"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Neutering and spaying basics",
+"f": "Common reasons people choose it and discussing timing with a vet"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "The yearly check-up",
+"f": "What happens at a routine exam and questions to bring along"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Weighing pets at home",
+"f": "Simple ways to track weight between vet visits"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Review: nutrition and grooming",
+"f": "A light recap of feeding science and grooming routines"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Your pet's normal",
+"f": "Learning usual appetite, energy, toilet habits and behaviour"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Changes worth noting",
+"f": "Appetite, thirst, weight or energy changes to mention to a vet"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Talking with your vet",
+"f": "Preparing notes, asking clear questions and understanding instructions"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Giving medicine as prescribed",
+"f": "General tips for following vet instructions and making it stress-free"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Cooperative care training",
+"f": "Teaching pets to accept handling for checks, voluntarily"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Making vet visits positive",
+"f": "Happy visits, treats and familiar items to reduce worry"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Exercise needs by species",
+"f": "How much activity different pets need for fitness and happiness"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Swimming with dogs",
+"f": "Water safety, life jackets and not every dog being a swimmer"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Hiking with your dog",
+"f": "Fitness building, water, paw care and trail etiquette"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Running with a dog",
+"f": "Age, breed and build considerations and starting slowly"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Cycling and dogs: safety first",
+"f": "Why it suits only some dogs and special equipment"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Enrichment for every day",
+"f": "Food, social, sensory and cognitive enrichment ideas"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Scent work at home",
+"f": "Hide treats and teach pets to search with their nose"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Rotation of toys",
+"f": "Keeping toys exciting by swapping them weekly"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "DIY enrichment ideas",
+"f": "Safe homemade puzzles from boxes, towels and tubes"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Pets and screens",
+"f": "How some pets react to TV and why real play matters more"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Rainy day games",
+"f": "Indoor activities when walks are short"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Travelling with pets by plane",
+"f": "Airline rules vary: carriers, documents and planning early"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Pet passports and travel rules",
+"f": "Researching entry rules, vaccines and paperwork for other countries"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Holidays with pets",
+"f": "Pet-friendly stays and packing a travel kit"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Leaving pets with a sitter",
+"f": "Choosing boarding or home care and preparing instructions"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Moving house with pets",
+"f": "Keeping routines, a safe room and helping pets adjust"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Pets and new places",
+"f": "Helping pets stay calm in unfamiliar environments with familiar items"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Fetch and tug done right",
+"f": "Rules for safe, fun fetch and tug games that build impulse control"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Flirt poles and chase games",
+"f": "Burning energy with controlled chase play in a safe space"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Enrichment for fish and reptiles",
+"f": "Plants, rearranged decor and varied feeding for scaled pets"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Bird foraging at home",
+"f": "Hiding food in paper and toys to mimic natural foraging"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Pet care in hot, humid climates",
+"f": "Ventilation, water and walk timing in tropical weather"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Pets and public transport",
+"f": "Rules on buses and trains and helping pets ride calmly"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Review: health awareness and activity",
+"f": "A light recap of knowing your pet's normal, vet teamwork and enrichment"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Introducing a second pet",
+"f": "Slow introductions, separate spaces and patience"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Dogs and cats living together",
+"f": "Safe introductions and giving cats escape routes"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "New baby and pets",
+"f": "Preparing pets gradually for sounds, smells and new routines"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Pets and older family members",
+"f": "Choosing calm pets and adapting care routines"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Pets in rented homes",
+"f": "Communicating with landlords and caring for shared spaces"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Being a good pet neighbour",
+"f": "Noise, cleaning up and respecting others' space"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Pets in public spaces",
+"f": "Local rules about leads, beaches, parks and cafés"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Assistance and therapy animals",
+"f": "The different roles of guide dogs, therapy pets and support animals"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Senior pets: what changes",
+"f": "Slower walks, more naps and adapting care as pets age"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Comfort for older pets",
+"f": "Soft beds, ramps, non-slip floors and gentle exercise"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Mental games for senior pets",
+"f": "Keeping older minds active with easy puzzles"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Puppy and kitten classes",
+"f": "What good classes teach and why socialisation continues"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "The adolescent cat",
+"f": "Playful energy in young cats and channeling it"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Pet photography tips",
+"f": "Getting great photos with light, treats and patience"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Celebrating pet milestones",
+"f": "Adoption days, birthdays and fun traditions"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Volunteering at a shelter",
+"f": "Walking dogs, socialising cats and other helpful roles"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Fostering animals",
+"f": "How fostering works and helping animals find homes"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Pets and wellbeing",
+"f": "How caring for animals can add routine and joy to daily life"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Choosing eco-friendly supplies",
+"f": "Durable toys, sustainable litter and reducing waste"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Waste disposal done right",
+"f": "Bags, bins and local rules for pet waste"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Wildlife and pets",
+"f": "Protecting birds and wild animals around pets"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Pets and garden safety",
+"f": "Toxic plants, slug pellets and safe garden design"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Seasonal hazards",
+"f": "Antifreeze, holiday foods, hot cars and cold snaps"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Lost pet prevention",
+"f": "Secure gates, ID and what to do quickly if a pet goes missing"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Pet-friendly road trips",
+"f": "Planning stops, safe restraints and keeping cool"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Pet-friendly workplaces",
+"f": "How some offices welcome pets and the etiquette that keeps everyone comfortable"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Cafés and restaurants with pets",
+"f": "Polite behaviour, settling on a mat and checking venue rules"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Pet etiquette when visiting friends",
+"f": "Asking first, bringing supplies and respecting other homes"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Guests with allergies or fears",
+"f": "Making visitors comfortable around pets with kind planning"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Choosing pet-safe furniture",
+"f": "Durable fabrics, scratch-resistant surfaces and easy cleaning"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Organising pet supplies",
+"f": "Storage ideas that keep food fresh and toys tidy"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Pet clubs and meetups",
+"f": "Breed clubs, walking groups and online communities"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Adoption events and rescue networks",
+"f": "How adoption days and transport networks connect pets with new homes"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Kindness to street animals",
+"f": "Respectful ways communities support stray cats and dogs, including neutering programmes"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Pet first aid courses",
+"f": "What a course teaches and why hands-on practice matters"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Pet-friendly balconies",
+"f": "Securing balconies with nets, screens and safe plants"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Grooming routines for busy owners",
+"f": "Quick daily checks that fit into a few minutes"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Teaching a pet to enjoy brushing",
+"f": "Pairing gentle brush strokes with treats, step by step"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Feeding routines for travel days",
+"f": "Planning meals and water around journeys to keep tummies settled"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Review: pets in the family and community",
+"f": "A light recap of multi-pet homes, life stages and community life"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Advanced canine body language",
+"f": "Subtle signals, context and reading the whole dog"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Advanced feline communication",
+"f": "Scent marking, facial signals and social structures among cats"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Understanding animal emotions",
+"f": "What science says about feelings and wellbeing in animals"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "The five domains of welfare",
+"f": "A modern framework for nutrition, environment, health, behaviour and mental state"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Building confidence in shy pets",
+"f": "Choice, predictability and small successes"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Reactive dogs: an overview",
+"f": "Why some dogs react on lead and the value of professional support"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Management versus training",
+"f": "Using gates, routines and space to prevent problems while learning"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Behaviour help from professionals",
+"f": "When to involve your vet and a qualified behaviourist"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Choice and control for pets",
+"f": "Letting animals opt in or out builds trust"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Consent tests during petting",
+"f": "Pausing to see if a pet wants more attention"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Advanced recall training",
+"f": "Long lines, distractions and emergency recall cues"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Heelwork and precision",
+"f": "Training a neat heel position for sport or fun"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Chaining behaviours",
+"f": "Linking simple actions into impressive sequences"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Teaching names of toys",
+"f": "Some dogs learn many toy names: games to try at home"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Agility at home basics",
+"f": "Low jumps, tunnels and safe foundation skills"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Canine scent sports",
+"f": "Introduction to scent detection games and competitions"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Trick titles and challenges",
+"f": "Structured trick goals to keep training fresh"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Training for husbandry",
+"f": "Teaching chin rests, paw targets and station work"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Training birds advanced",
+"f": "Recall flights, targeting and foraging skills for parrots"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Training rabbits and rats",
+"f": "Agility, targeting and fun tricks for clever small pets"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Aquarium aquascaping",
+"f": "Designing beautiful planted tanks with stones and wood"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Live plants in aquariums",
+"f": "Light, substrate and easy plants for beginners"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Breeding fish responsibly",
+"f": "Why planning matters and never breeding without homes in mind"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Saltwater aquarium overview",
+"f": "Marine tanks, stability and more advanced equipment"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Pond fish care",
+"f": "Koi and goldfish ponds, filtration and seasonal care"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Reptile heat and light",
+"f": "Basking spots, gradients and UVB needs"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Reptile habitats",
+"f": "Humidity, hides, substrates and enclosure size"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Feeding reptiles",
+"f": "Insects, greens and species-specific diets"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Handling reptiles calmly",
+"f": "Supporting the body and short, confident sessions"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Amphibians as pets",
+"f": "Frogs and newts, their delicate skin and water quality"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Review: advanced behaviour and habitats",
+"f": "A light recap of welfare science, advanced training and specialised homes"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Parrot care in depth",
+"f": "Long lifespans, intelligence and daily social needs"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Parrot enrichment",
+"f": "Foraging toys, shredding and puzzle feeders"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Chickens as pets",
+"f": "Backyard hens, coops, predators and local rules"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Ferrets as pets",
+"f": "Playful, curious animals with special diets and safety needs"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Chinchillas and degus",
+"f": "Dust baths, cool temperatures and chewing needs"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Hedgehogs as pets",
+"f": "Night-time habits and checking legality where you live"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Horse care overview",
+"f": "Daily care, grazing, hooves and the commitment horses need"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Understanding horse behaviour",
+"f": "Herd animals, flight responses and reading ears and posture"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Donkeys and their personalities",
+"f": "Why donkeys are thoughtful, social and need company"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Pet nutrition myths",
+"f": "Popular claims checked against general science"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Raw feeding debate overview",
+"f": "Points people raise on both sides and talking to a vet first"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Supplements: ask first",
+"f": "Why supplements should only be given with vet guidance"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Weight loss plans with your vet",
+"f": "Working with a vet on safe, steady progress"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Feeding multiple pets",
+"f": "Separate stations, preventing food stealing and monitoring intake"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Understanding pet food standards",
+"f": "What nutritional standards organisations do and why they matter"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Senior nutrition",
+"f": "How diets may change for older pets, guided by a vet"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Hydration tricks for picky drinkers",
+"f": "Fountains, ice cubes and food moisture"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Pet allergies and sensitivities",
+"f": "Signs to discuss with a vet and why diagnosis needs a professional"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Grooming long-haired breeds",
+"f": "Preventing mats and line brushing"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Grooming double coats",
+"f": "Why shaving double coats is usually discouraged and using undercoat rakes"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Hand stripping wire coats",
+"f": "What it is and finding groomers who do it"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Grooming for shows",
+"f": "Presentation basics for breed shows"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Grooming nervous pets",
+"f": "Breaking care into tiny positive steps"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Pets and heat waves",
+"f": "Advanced cooling strategies and recognising heat stress for a vet"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Pets in cold climates",
+"f": "Shelter, paw protection and adjusting food with vet advice"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Disaster preparedness",
+"f": "Emergency kits, evacuation plans and pet-friendly shelters"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Pets and the law",
+"f": "Leash laws, licensing and responsibilities in many places"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Responsible breeding ethics",
+"f": "Health testing, welfare and why adoption matters too"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Review: specialised species and care",
+"f": "A light recap of birds, small mammals, horses, nutrition and advanced grooming"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Shelter medicine and adoption today",
+"f": "How modern shelters care for animals and match them with homes"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "How guide dogs are trained",
+"f": "Puppy raising, training stages and partnering with a person"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Working dogs around the world",
+"f": "Herding, sledding, search and rescue and detection dogs"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Animals in therapy programmes",
+"f": "How visits to schools and hospitals are organised"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Pet care careers",
+"f": "Vets, nurses, groomers, trainers, behaviourists and shelter staff"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Becoming a pet sitter",
+"f": "Skills, trust and organisation for caring for others' pets"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Understanding animal welfare organisations",
+"f": "How charities and shelters help animals"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Microchip databases explained",
+"f": "Registering and updating details so pets can be returned"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Pet care for travellers abroad",
+"f": "Finding vets and pet shops when living overseas"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Pet customs worldwide",
+"f": "How pets are kept and celebrated in different countries"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Famous animal heroes",
+"f": "Celebrated helpers like Barry the Alpine rescue dog and Balto's sled-dog relay, told factually"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Pets in art and literature",
+"f": "Animals in famous paintings and much-loved books"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Cats and dogs in language",
+"f": "Idioms and sayings about pets in many languages"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Pets in films and cartoons",
+"f": "Famous animal characters and how animal actors are cared for"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Designing a pet-friendly home",
+"f": "Flooring, storage and spaces that suit people and pets"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Smart pet gadgets",
+"f": "Cameras, feeders and fountains: helpful uses and limits"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Pet budgeting advanced",
+"f": "Planning for regular costs and an emergency fund"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Pet care checklists",
+"f": "Daily, weekly, monthly and yearly routines in one plan"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Creating a pet care plan for family",
+"f": "Sharing tasks and keeping care consistent"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Teaching kids responsibility",
+"f": "Age-appropriate pet tasks for children"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Community pet projects",
+"f": "Shared dog parks, neighbourhood cat programmes and pet food banks"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Spreading responsible ownership",
+"f": "Sharing good habits kindly with friends"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Mentoring new pet owners",
+"f": "Helping friends prepare for their first pet"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Your pet's personality",
+"f": "Thinking about temperament and celebrating individuality"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Adapting care as life changes",
+"f": "New jobs, moves and schedules while keeping pets happy"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Planning for your pet's future",
+"f": "Arranging trusted carers if your circumstances change"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Reflecting on your pet journey",
+"f": "Looking back at what you have learned"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Creating your own pet care guide",
+"f": "Writing down everything about your pet for sitters"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Celebrating the human-animal bond",
+"f": "Why the bond with animals is so special"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Review: pets, people and the world",
+"f": "A light recap of careers, culture, community and planning ahead"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Advanced enrichment planning",
+"f": "Weekly enrichment calendars tailored to your pet"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Designing training goals for the year",
+"f": "Setting realistic, fun training goals"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Puzzle toy difficulty levels",
+"f": "Increasing challenge without frustration"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Building an obstacle course",
+"f": "Safe home courses for dogs and small pets"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Teaching a pet to relax on cue",
+"f": "Calm routines and relaxation protocols"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Trick training showcase",
+"f": "Planning a small trick routine to show friends"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Teaching cats to walk on a harness",
+"f": "Gradual steps for safe outdoor adventures"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Advanced aquarium maintenance",
+"f": "Long-term tank stability and routine checks"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Choosing fish for a biotope",
+"f": "Recreating a natural river or lake habitat"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Bird song and communication",
+"f": "How birds learn songs and communicate"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Small pet social groups",
+"f": "Bonding rabbits and introducing guinea pigs"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Rabbit bonding step by step",
+"f": "Neutral spaces and patient introductions"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Training a dog for therapy visits",
+"f": "Calm temperament and certification steps"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Canine good manners tests",
+"f": "Programmes that test everyday good behaviour"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Teaching a dog to find lost keys",
+"f": "A fun scent search game for a household object"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Advanced cat enrichment",
+"f": "Feeding puzzles, outdoor enclosures and target games for clever cats"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Living with a deaf or blind pet",
+"f": "Adapting cues, homes and routines for pets with sensory changes"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Mobility support for pets",
+"f": "Harnesses, ramps and vet-guided physiotherapy options"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Hydrotherapy for pets",
+"f": "How water exercise is used under professional guidance"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Massage and gentle touch",
+"f": "Calming touch routines, with vet approval for any health concerns"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Pet care across seasons: a full plan",
+"f": "Combining seasonal tips into one yearly care calendar"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Choosing your next pet wisely",
+"f": "Applying everything you learned when welcoming another animal"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Sharing your pet knowledge",
+"f": "Kind ways to share helpful tips with your community"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Your pet care strengths",
+"f": "Recognising what you do well and what to explore next"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Final review and next steps",
+"f": "A final look back at the whole year and ideas for continuing to learn"
+}
+]
+}

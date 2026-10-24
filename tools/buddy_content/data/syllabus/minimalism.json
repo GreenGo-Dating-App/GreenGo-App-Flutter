@@ -1,0 +1,2195 @@
+{
+"topic": "minimalism",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "What minimalism really means",
+"f": "Minimalism as keeping what adds value, not owning as little as possible or living in an empty white room"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Your personal why",
+"f": "Finding your own reasons for simplifying: more time, less stress, more space, more money for what matters"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Many styles of minimalism",
+"f": "From cosy and colourful to sleek and sparse: there is no single correct minimalist look or lifestyle"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "The cost of clutter",
+"f": "How excess stuff quietly costs time, money, attention and energy every single day"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Taking a calm inventory",
+"f": "Walking through your home with fresh eyes and noting where things pile up without judging yourself"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "One drawer to start",
+"f": "Why a tiny, finishable first project builds momentum better than a giant weekend purge"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Keep, donate, recycle, trash",
+"f": "Setting up four simple boxes so every decision has a clear destination"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "The question that decides",
+"f": "Asking 'Do I use it, love it or need it?' to make quick and honest decisions about objects"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Just-in-case thinking",
+"f": "Recognising items kept for unlikely futures and how most are easy to replace if ever needed"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Letting go of guilt",
+"f": "Why feeling bad about money already spent is not a reason to keep something you never use"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "The one-in, one-out rule",
+"f": "A simple habit that keeps your belongings stable: when something new arrives, something old leaves"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Clearing flat surfaces",
+"f": "Tables, counters and desks as clutter magnets and how clear surfaces instantly calm a room"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "A home for everything",
+"f": "Giving each item a fixed place so tidying becomes putting things back rather than searching"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "The ten-minute reset",
+"f": "A short daily tidy that keeps your space under control without big cleaning sessions"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Decluttering the bathroom",
+"f": "Old cosmetics, duplicate products, expired items and towels: an easy room with quick wins"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Your entryway",
+"f": "Shoes, keys, bags and mail: making the first space you see welcoming and functional"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "The paper pile",
+"f": "Sorting mail, receipts and documents into act, file or recycle so paper stops accumulating"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Junk drawer rescue",
+"f": "Turning the drawer of random things into a small, useful and organised space"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Bedroom calm",
+"f": "Why a simple bedroom supports rest and which items usually do not belong there"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Under the bed and on top of wardrobes",
+"f": "Hidden storage spots where forgotten things collect and how to deal with them"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Donating with care",
+"f": "Choosing where your items go: charity shops, friends, local groups and community swaps"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Selling unwanted items",
+"f": "When selling is worth the effort and when giving away saves more time and energy"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Responsible recycling",
+"f": "Handling electronics, batteries, textiles and other items that should not go in the bin"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Celebrating small wins",
+"f": "Noticing progress, taking before and after photos and enjoying the space you created"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Common beginner mistakes",
+"f": "Buying storage boxes first, decluttering others' things, and trying to do everything in one day"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Minimalism with a small budget",
+"f": "Simplifying costs nothing: minimalism is about using less, not buying minimalist products"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Minimalism around the world",
+"f": "Ideas from Japanese 'ma', Swedish 'lagom' and other cultures that value simplicity"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Habits over one-time purges",
+"f": "Why lasting change comes from small daily routines rather than dramatic weekends"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Visualising your ideal day",
+"f": "Imagining how you want to live and using that picture to guide what you keep"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: your first month",
+"f": "Looking back at your first decisions, what felt easy, what felt hard and what changed"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Wardrobe: the big picture",
+"f": "Seeing everything you own in one place to understand what you actually wear"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Clothes you never wear",
+"f": "Finding the reasons pieces stay unworn: fit, comfort, style or occasion"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "The hanger trick",
+"f": "Turning hangers around to discover which clothes you really use over a few months"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Shoes and accessories",
+"f": "Simplifying bags, belts, scarves, jewellery and shoes without losing your personal style"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Kitchen countertops",
+"f": "Keeping only daily-use appliances out and creating space to cook with pleasure"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Kitchen gadgets",
+"f": "Single-use tools, duplicates and gifts you never opened: what a home cook really needs"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Pots, pans and dishes",
+"f": "Choosing versatile cookware and dishware that fits how many people you feed"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "The pantry and fridge",
+"f": "Using what you have, checking dates and shopping with a list to avoid food waste"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Food storage containers",
+"f": "Matching lids, keeping a sensible number and choosing durable options"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Living room comfort",
+"f": "Creating a relaxing space with fewer objects, open surfaces and only meaningful decor"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Books and magazines",
+"f": "Keeping books you love or will reread and passing others on to new readers"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Media collections",
+"f": "DVDs, CDs, games and cables: deciding between nostalgia, use and digital alternatives"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Toys and children's spaces",
+"f": "Gentle ways to reduce toys with kids involved, including rotation boxes"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Hobby supplies",
+"f": "Keeping materials for the hobbies you practise today, not the ones you might start someday"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Cleaning supplies",
+"f": "A few multi-purpose products often replace a cupboard full of specialised bottles"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Linens and towels",
+"f": "How many sets you really need and what to do with worn or extra ones"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Garage and storage rooms",
+"f": "Tackling big storage spaces in zones so the job stays manageable"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Tools and DIY gear",
+"f": "Keeping a solid basic toolkit and sharing or borrowing rarely used equipment"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Cables and chargers",
+"f": "Labelling, matching and recycling the tangled box of mystery cords"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "The home office",
+"f": "A clear desk, simple filing and fewer gadgets for better focus at work"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Bags, purses and backpacks",
+"f": "Emptying bags regularly and keeping only the ones that suit your daily life"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "The car",
+"f": "Keeping your car tidy and stocked with only the essentials for safety and comfort"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Gifts you do not like",
+"f": "Releasing unwanted presents kindly: a gift has done its job once given with love"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Duplicates around the house",
+"f": "Spotting doubles of scissors, umbrellas, mugs and more and keeping the best one"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Freebies and promotional items",
+"f": "Saying no to free pens, bags and samples that silently fill drawers"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Seasonal and holiday items",
+"f": "Keeping decorations you love and storing them neatly in one clearly labelled place"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Tackling a whole room",
+"f": "Planning a full room declutter in stages from easiest items to hardest decisions"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Storage that helps, not hides",
+"f": "Using storage only after decluttering so containers organise rather than hide excess"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Maintaining what you cleared",
+"f": "Weekly checks that stop clutter from creeping back into finished areas"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: room by room",
+"f": "Revisiting rooms you have decluttered and noticing which habits are working"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "The KonMari approach",
+"f": "Marie Kondo's idea of sorting by category and keeping what sparks joy, explained simply"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Sorting by category",
+"f": "Why gathering all clothes or all books together reveals how much you really own"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "The four-box method in depth",
+"f": "Running a full decluttering session with keep, donate, sell and discard boxes"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "The 30-day minimalism game",
+"f": "Letting go of one item on day one, two on day two and so on as a fun challenge"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "The packing party",
+"f": "Packing everything as if moving and unpacking only what you need for a few weeks"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "The 90/90 rule",
+"f": "If you have not used it in 90 days and will not in the next 90, consider letting it go"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "The 20/20 rule",
+"f": "Things replaceable cheaply in under 20 minutes rarely need to be stored just in case"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "The maybe box",
+"f": "Storing uncertain items out of sight with a date and checking later if you missed them"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Decluttering in short sprints",
+"f": "Using a timer for 15-minute bursts to make progress without burnout"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Decision fatigue",
+"f": "Why many small choices exhaust us and how to schedule decluttering when you feel fresh"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Decluttering with a friend",
+"f": "How a supportive helper can speed up decisions without pressuring you"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Shared homes and partners",
+"f": "Respecting others' things, starting with your own and finding common goals"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Visual clutter",
+"f": "Labels, bright packaging and busy surfaces: simple tricks to make a room look calmer"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Colour and calm",
+"f": "Using a limited, harmonious colour palette to make spaces feel more peaceful"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Light and open space",
+"f": "How natural light, mirrors and empty floor space make any room feel larger"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Minimalism in small apartments",
+"f": "Smart choices for tiny spaces: multi-use furniture, vertical storage and fewer items"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Furniture that earns its place",
+"f": "Evaluating each piece of furniture by how often it is used and how it serves you"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Decor with meaning",
+"f": "Displaying a few objects with stories instead of many anonymous decorations"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Plants in a simple home",
+"f": "Adding life to minimalist spaces with a few easy-care plants"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Scent, sound and atmosphere",
+"f": "Creating a calm home through the senses, not just through fewer objects"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Morning routines made simple",
+"f": "Fewer choices in the morning by preparing clothes, breakfast and bags the night before"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Evening wind-down",
+"f": "A short evening routine that resets your space and your mind for tomorrow"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Cleaning becomes easier",
+"f": "How fewer things mean faster cleaning and more free time every week"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Laundry with less",
+"f": "Smaller wardrobes, fewer loads and simple systems that keep laundry under control"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Shopping lists and meal ideas",
+"f": "Simple planning that reduces impulse purchases and food waste"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Cooking with fewer ingredients",
+"f": "Delicious simple meals built from a short list of quality basics"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "The joy of empty space",
+"f": "Learning to enjoy a bare shelf or clear corner instead of filling it automatically"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Mindful observation",
+"f": "Noticing how different spaces make you feel and using that to guide changes"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Talking about minimalism",
+"f": "Sharing your journey with friends and family without preaching or judging"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Review: methods and spaces",
+"f": "Comparing the methods you tried and choosing the ones that fit your personality"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Mindful buying",
+"f": "Pausing before every purchase to ask if you truly need it and where it will live"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "The 30-day wish list",
+"f": "Writing wished-for items on a list and buying only if you still want them after a month"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Advertising and desire",
+"f": "How marketing creates wants and simple ways to notice and resist it"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Unsubscribing from temptation",
+"f": "Leaving shop newsletters and promotional lists to reduce impulse buying"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Sales and discounts",
+"f": "Why a bargain is only a bargain if you would have bought the item anyway"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Quality over quantity",
+"f": "Buying fewer, better-made items that last longer and feel better to use"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Borrow, rent and share",
+"f": "Libraries, tool shares and neighbours as alternatives to owning everything"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Second-hand first",
+"f": "The benefits of buying used: lower cost, unique finds and less waste"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Gift giving with intention",
+"f": "Experiences, consumables and thoughtful presents that do not create clutter"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Asking for clutter-free gifts",
+"f": "Kind ways to tell family and friends what you would really appreciate"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Digital minimalism basics",
+"f": "Why our phones and computers get cluttered too and how it affects focus"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Phone home screen cleanup",
+"f": "Removing unused apps and keeping only essential tools on your first screen"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Notifications",
+"f": "Turning off non-essential alerts so your phone serves you instead of interrupting you"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Email inbox simplicity",
+"f": "Unsubscribing, archiving and simple folders to reach a calmer inbox"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Photo libraries",
+"f": "Deleting blurry duplicates and keeping your best memories easy to find"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Files and folders",
+"f": "A simple digital filing structure for documents on your computer and cloud"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Passwords and accounts",
+"f": "Closing unused online accounts and organising logins safely"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Social media balance",
+"f": "Curating who you follow and setting healthy time limits"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "A simpler weekly schedule",
+"f": "Looking at your calendar and spotting commitments that no longer fit your life"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Learning to say no kindly",
+"f": "Polite phrases to decline invitations and requests without feeling guilty"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "White space in your day",
+"f": "Leaving unscheduled time for rest, creativity and spontaneity"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Single-tasking",
+"f": "Doing one thing at a time for better focus and less mental clutter"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Gratitude for what you have",
+"f": "How appreciating your current belongings reduces the urge to buy more"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Contentment versus wanting more",
+"f": "Exploring the difference between healthy goals and endless wanting"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Slow living",
+"f": "Taking time for meals, walks and conversations instead of rushing through life"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Minimalism and wellbeing",
+"f": "How a simpler environment can support calm, sleep and a clearer mind"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Your beginner toolkit",
+"f": "Collecting the rules, questions and habits that helped you most so far"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Writing your simplicity statement",
+"f": "Putting your personal minimalism goals into one or two clear sentences"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Habit stacking",
+"f": "Linking new simple habits to routines you already have so they stick"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: the beginner journey",
+"f": "Celebrating your progress through the first stage and setting goals for the next"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Deeper motivations",
+"f": "Looking beneath the clutter at habits, emotions and beliefs that drive us to accumulate"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Emotional attachment to objects",
+"f": "Understanding why some items feel hard to release and how to honour those feelings"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Sentimental items: first steps",
+"f": "Starting with small, low-emotion keepsakes before moving to the most precious ones"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Photographing memories",
+"f": "Taking a photo of a sentimental object so you keep the memory without keeping the item"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "The memory box",
+"f": "Choosing one beautiful box for your most treasured keepsakes and letting it set the limit"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Inherited items",
+"f": "Respectful ways to keep a few family pieces you love and share or release the rest"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Children's artwork and school papers",
+"f": "Selecting favourites, making a yearly album and displaying a rotating gallery"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Letters and cards",
+"f": "Keeping meaningful messages, digitising others and enjoying a lighter archive"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Collections and collectors",
+"f": "When a collection brings real joy and when it has quietly become an obligation"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Aspirational items",
+"f": "Letting go of things bought for a person you imagined becoming but never became"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "The fantasy self",
+"f": "Seeing how objects tied to an ideal self-image can block progress in the present"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Identity and possessions",
+"f": "Remembering that you are more than what you own and your values live in your actions"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Capsule wardrobe basics",
+"f": "The idea of a small set of versatile clothes that mix and match for every day"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Choosing your colour palette",
+"f": "Picking base and accent colours so most clothes combine with each other"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Building a capsule step by step",
+"f": "Selecting core pieces from what you already own before buying anything new"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Seasonal capsules",
+"f": "Rotating clothing by season and storing off-season items neatly"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Dressing for your real life",
+"f": "Matching your wardrobe to how you actually spend your days, not to occasional events"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "A personal uniform",
+"f": "How many creative and busy people simplify mornings with a signature outfit"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Caring for clothes",
+"f": "Washing, mending and storing garments well so they last for many years"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Mending basics",
+"f": "Sewing on a button, fixing a small hole and other easy repairs that save clothes"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "The minimalist kitchen system",
+"f": "A streamlined cooking setup where every tool is used regularly and easy to reach"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Simple meal planning",
+"f": "Planning a week of meals around a few favourite recipes and shared ingredients"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Batch cooking",
+"f": "Cooking larger quantities once to save time, energy and decisions during the week"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "The capsule pantry",
+"f": "Stocking versatile staples that combine into many different dishes"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Minimalist hosting",
+"f": "Welcoming guests warmly with simple food, few dishes and a relaxed atmosphere"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Bathroom routines simplified",
+"f": "A short, effective self-care routine with fewer products"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Multi-use products",
+"f": "Choosing products that serve several purposes to reduce bottles and spending"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Travel-size thinking at home",
+"f": "Noticing how little you need on a trip and applying that lesson to daily life"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Simplifying cleaning routines",
+"f": "A light weekly cleaning plan that matches your smaller amount of stuff"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Review: sentiment, clothes and kitchen",
+"f": "Reflecting on emotional decluttering, your capsule wardrobe and kitchen systems"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Mindful spending basics",
+"f": "Aligning everyday spending with your values, in general and judgement-free terms"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Tracking where money goes",
+"f": "Simply observing spending for a month to see patterns, without strict rules"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Needs, wants and values",
+"f": "Sorting purchases into categories to understand what truly brings satisfaction"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "The no-spend challenge",
+"f": "Trying a week or month without non-essential shopping as a fun experiment"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Subscriptions audit",
+"f": "Reviewing recurring services and keeping only the ones you actually use"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "The hidden cost of ownership",
+"f": "Maintenance, storage, insurance and time: what objects cost after you buy them"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Experiences versus things",
+"f": "Why shared experiences often create longer-lasting happiness than new objects"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Cost per use",
+"f": "Thinking about how often you will use something before deciding if it is worth it"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Simple personal budgeting ideas",
+"f": "General concepts like spending plans and saving goals, explained without advice"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Lifestyle creep",
+"f": "How spending rises with income and how awareness keeps life simple and calm"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Enough: defining your number",
+"f": "Reflecting on what 'enough' means for you in possessions, space and comfort"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Minimalism and generosity",
+"f": "Using freed-up time and resources to help others and share with your community"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Minimalism without deprivation",
+"f": "Making sure simplicity feels freeing and generous, never strict or joyless"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Comparison and social pressure",
+"f": "Noticing how comparing yourself to others drives consumption and gently stepping back"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Trends and fast fashion",
+"f": "How quick-changing trends fill wardrobes and how timeless choices bring calm"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Digital minimalism: deeper",
+"f": "Building an intentional relationship with technology based on your values"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "The digital declutter month",
+"f": "Pausing optional apps and services for 30 days and reintroducing only what helps"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Phone-free zones and times",
+"f": "Keeping meals, bedrooms or mornings free from screens for more presence"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Reading without overload",
+"f": "Choosing fewer, better sources of news and articles instead of endless scrolling"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Your digital desktop",
+"f": "Clearing the computer desktop and downloads folder for a calmer workspace"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Cloud storage tidy-up",
+"f": "Organising and deleting old files in online storage to find things easily"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Group chats and messages",
+"f": "Muting, leaving or archiving conversations that create constant noise"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Streaming and entertainment",
+"f": "Choosing what to watch intentionally instead of autoplaying the next episode"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Digital photos: advanced curation",
+"f": "Building yearly highlight albums and a simple system for new photos"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Smart devices and gadgets",
+"f": "Asking whether each device simplifies life or adds charging, updates and distraction"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Review: money and digital life",
+"f": "Looking back at mindful spending and digital habits and keeping what works"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Time minimalism",
+"f": "Treating time as your most precious resource and protecting it intentionally"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "Auditing your commitments",
+"f": "Listing every regular obligation and asking which ones still matter to you"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Essentialism ideas",
+"f": "Greg McKeown's idea of doing less but better, applied to everyday choices"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Priorities that fit on one hand",
+"f": "Choosing a few true priorities so decisions become clearer"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Simplifying your to-do list",
+"f": "Shorter lists with realistic tasks that you can actually finish"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Batching tasks",
+"f": "Grouping errands, emails and chores to reduce switching and save time"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Routines that free your mind",
+"f": "Automating small daily decisions so energy goes to what matters"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Meetings and calls",
+"f": "Shorter, fewer and better-planned meetings in work and personal life"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Slow mornings",
+"f": "Designing calm, unhurried starts to the day with a few nourishing habits"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Weekends with breathing room",
+"f": "Balancing plans, rest and spontaneous fun so weekends feel restorative"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Hobbies: fewer, deeper",
+"f": "Focusing on a few hobbies you truly enjoy instead of many half-started ones"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Rest as part of a simple life",
+"f": "Seeing rest and doing nothing as valuable, not as wasted time"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Boredom and creativity",
+"f": "How unfilled moments can spark ideas and imagination"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Nature and simplicity",
+"f": "Spending time outdoors as a simple, free way to recharge and gain perspective"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Walking as a minimalist habit",
+"f": "Using daily walks for movement, thinking and noticing your surroundings"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Seasons and rhythms",
+"f": "Adjusting routines and belongings to the natural rhythm of the year"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Review: time and attention",
+"f": "Reviewing how you protect your time and what changed in your weekly rhythm"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Family minimalism",
+"f": "Simplifying a busy household so everyone has more time together"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Involving children",
+"f": "Age-appropriate ways to teach kids about choosing, caring for and sharing things"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Toy rotation systems",
+"f": "Storing part of the toys and swapping them regularly to keep play fresh"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Simple birthdays",
+"f": "Fun celebrations focused on time together rather than piles of presents"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Clutter-free holidays",
+"f": "Meaningful traditions, thoughtful gifts and calmer celebrations"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Teens and their spaces",
+"f": "Respecting older children's choices while encouraging tidy, simple rooms"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Partners with different styles",
+"f": "Finding compromise when one person loves simplicity and the other loves keeping"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Living with a collector",
+"f": "Creating dedicated spaces and agreements so both people feel at home"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Shared spaces agreements",
+"f": "Setting simple house rules for common areas in families or flatshares"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Roommates and flatshares",
+"f": "Keeping shared kitchens, bathrooms and living rooms simple and fair"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Helping parents simplify",
+"f": "Supporting older relatives in decluttering with patience and respect"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Moving home with less",
+"f": "Using a move as the perfect moment to decide what deserves to come along"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Downsizing gracefully",
+"f": "Adapting to a smaller home by choosing your most loved and useful items"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Pets and minimalism",
+"f": "Keeping pet supplies simple, practical and organised"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Simple celebrations at work",
+"f": "Bringing minimalist ideas to office parties, gifts and shared spaces"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "The minimalist workspace",
+"f": "Designing a desk and office that supports focus and calm"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Workflows with less friction",
+"f": "Simplifying work processes, tools and files for smoother days"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Minimalism for students",
+"f": "Simplifying study spaces, materials and schedules for better learning"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Review: people and shared spaces",
+"f": "Reflecting on minimalism in families, partnerships and shared homes"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Minimalism and the environment",
+"f": "How consuming less naturally reduces waste and resource use"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Zero waste basics",
+"f": "The five Rs: refuse, reduce, reuse, recycle and rot, in that order"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Reusable swaps",
+"f": "Simple everyday items like bottles, bags and containers that replace disposables"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Reducing packaging",
+"f": "Choosing bulk, loose and minimal-packaging options when shopping"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Using things up",
+"f": "Finishing products before buying new ones and enjoying the satisfaction of empties"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Repair before replace",
+"f": "Fixing broken items, finding repair cafes and learning basic skills"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Upcycling ideas",
+"f": "Giving old items a new life with creative and practical projects"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Composting simply",
+"f": "Turning food scraps into soil and reducing kitchen waste"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Second-hand shopping skills",
+"f": "Finding quality items in thrift shops, markets and online exchanges"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Clothing swaps",
+"f": "Organising or joining swaps to refresh wardrobes without buying new"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Community sharing",
+"f": "Libraries of things, neighbourhood groups and local gift economies"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Buying for durability",
+"f": "Recognising quality materials and construction that last for years"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Caring for what you own",
+"f": "Regular maintenance that keeps furniture, tools and devices working longer"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Ethical choices made simple",
+"f": "Choosing fewer, more thoughtful purchases that match your values"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "The minimalist traveller",
+"f": "Why travelling light brings freedom, flexibility and less stress"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Packing with one bag",
+"f": "Fitting everything for a trip into a single carry-on with smart choices"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "A versatile travel wardrobe",
+"f": "Choosing clothes that layer, dry quickly and combine in many outfits"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Travel toiletries and tech",
+"f": "Keeping essentials compact and avoiding duplicate gadgets and chargers"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Souvenirs with meaning",
+"f": "Collecting memories, photos and small useful items instead of trinkets"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Slow travel",
+"f": "Staying longer in fewer places for deeper experiences and less rushing"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Review: sustainable and light living",
+"f": "Reviewing your eco-friendly swaps and travel lessons and keeping the best"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Sports and outdoor gear",
+"f": "Keeping equipment for activities you actually do and sharing or renting the rest"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Balconies and small gardens",
+"f": "Simple outdoor spaces with a few pots, a chair and room to breathe"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "The everyday carry",
+"f": "Carrying only essentials in your daily bag for lighter, easier days"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "A slimmer wallet",
+"f": "Removing old receipts, expired cards and loyalty cards you never use"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Laundry and utility spaces",
+"f": "Organising detergents, tools and supplies in small utility areas"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Guest rooms and spare spaces",
+"f": "Stopping the spare room from quietly turning into a storage room"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Minimalism and commuting",
+"f": "Carrying less on daily trips and using commute time with intention"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Minimalist fitness",
+"f": "Simple home workouts and walks that need little or no equipment"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Fewer shopping trips",
+"f": "Planned trips with lists that save time and reduce impulse buys"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Gift wrapping and cards",
+"f": "Reusable fabric wraps, simple paper and fewer disposable cards"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Rented homes made yours",
+"f": "Making a rented space feel like home with a few portable, meaningful items"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Checking in with your senses",
+"f": "Revisiting how your rooms look, sound and feel after months of simplifying"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Removing empty storage",
+"f": "Letting go of extra shelves and boxes that stand empty after decluttering"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Your intermediate toolkit",
+"f": "Gathering the systems and habits that work best for you at this stage"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Revisiting your why",
+"f": "Checking whether your original reasons for minimalism have grown or changed"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Planning the advanced stage",
+"f": "Setting thoughtful goals for the final part of your minimalism path"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Celebrating the middle of the path",
+"f": "Appreciating how far you have come and the space you have created"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Minimalism as a philosophy",
+"f": "Exploring simplicity as a way of thinking that goes beyond decluttering"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Simplicity in history",
+"f": "How thinkers like Thoreau and traditions worldwide have valued simple living"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Lessons from Walden",
+"f": "Henry David Thoreau's experiment in simple living and what it can teach today"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Stoic ideas on wanting less",
+"f": "Seneca and Epictetus on focusing on what we control and needing little"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Wabi-sabi",
+"f": "The Japanese appreciation of imperfect, natural and worn beauty"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Ma and empty space",
+"f": "The Japanese concept of meaningful empty space in rooms, art and time"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Lagom: just the right amount",
+"f": "The Swedish idea of balance, neither too much nor too little"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Hygge and simple comfort",
+"f": "The Danish way of cosy, simple pleasures shared with others"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Minimalism in art and music",
+"f": "How minimal art and music use repetition and restraint to create impact"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Minimalist design principles",
+"f": "Form follows function, less but better, and Dieter Rams' ideas on good design"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Minimalist architecture",
+"f": "How architects use light, space and simple materials to create calm buildings"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Review: philosophy and culture",
+"f": "Reflecting on the ideas and cultures that inspired your view of simplicity"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Designing a minimalist interior",
+"f": "Planning a room from scratch with function, light and flow in mind"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Natural materials",
+"f": "Wood, linen, stone and wool: materials that age beautifully and feel calm"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Textures in simple rooms",
+"f": "Using texture to bring warmth to spaces with few objects and colours"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Lighting design for calm",
+"f": "Layering natural, ambient and task light for a peaceful atmosphere"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "The art of display",
+"f": "Arranging a few meaningful objects with space around them so each one stands out"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Hidden storage solutions",
+"f": "Built-in and closed storage that keeps rooms visually quiet"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Multi-functional furniture",
+"f": "Pieces that transform or serve several purposes in compact homes"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Tiny homes and micro-living",
+"f": "What people learn from living in very small spaces"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Warm minimalism",
+"f": "Creating simple spaces that feel inviting, personal and lived in"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Maximalists and minimalism",
+"f": "Taking useful ideas from minimalism even if you love colour and abundance"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Advanced wardrobe curation",
+"f": "Refining your style so every piece fits, flatters and feels like you"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "The ten-item wardrobe idea",
+"f": "Exploring extremely small wardrobes as an inspiring experiment"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Review: design and style",
+"f": "Revisiting your home design and wardrobe choices with a refined eye"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "The art of the edit",
+"f": "Applying an editor's mindset to your home, schedule and projects"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "The Pareto principle at home",
+"f": "Finding the 20 percent of items you use 80 percent of the time"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Systems thinking for a simple home",
+"f": "Seeing how routines, storage and habits work together as one system"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Designing for flow",
+"f": "Arranging rooms around the paths you walk and the tasks you do there"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Mise en place for life",
+"f": "Borrowing the chef's habit of preparing tools in advance so tasks feel effortless"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "The one-touch rule",
+"f": "Handling mail, dishes and small tasks right away instead of putting them down twice"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Minimalist photography",
+"f": "Using simple composition and negative space to capture calm images"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Minimalist writing",
+"f": "Clear, simple language that says more with fewer words"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Danshari",
+"f": "The Japanese idea of refusing, discarding and separating from attachment to things"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Project 333",
+"f": "Courtney Carver's challenge of dressing with 33 items for three months"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Owning versus accessing",
+"f": "How renting, streaming and sharing change what it means to own something"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Buy it for life",
+"f": "Researching truly durable products for the items you use every single day"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Craftsmanship and care",
+"f": "Appreciating handmade items and the stories behind well-made things"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Minimalist tech setup",
+"f": "Fewer devices, tidy cables and one clear purpose for each gadget"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Backups made simple",
+"f": "A simple routine so important files and photos stay safe"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Mental clutter",
+"f": "Recognising the worries, open tasks and noise that crowd the mind"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "The brain dump",
+"f": "Writing everything on your mind onto paper to clear mental space"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Simple journaling",
+"f": "A few lines a day to reflect, plan and notice what matters"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Calm decision making",
+"f": "Using values and simple rules to decide faster and with less stress"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Limiting choices on purpose",
+"f": "How fewer options can lead to more satisfaction and less regret"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Attention as a resource",
+"f": "Protecting your focus from constant input in a noisy world"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Deep work",
+"f": "Cal Newport's idea of long, focused work sessions without distraction"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Information diet",
+"f": "Choosing what you read, watch and listen to as carefully as what you eat"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Mindfulness for minimalists",
+"f": "Simple breathing and awareness practices that support a calm mind"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Letting go of perfectionism",
+"f": "Accepting 'good enough' so simplicity does not become another pressure"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Minimalist goal setting",
+"f": "Setting fewer, clearer goals and focusing energy on them"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Habits that last decades",
+"f": "Designing routines simple enough to keep for the long term"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Review: a clear mind",
+"f": "Reflecting on mental decluttering habits and their effect on your days"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Relationships and simplicity",
+"f": "Investing time in the people who matter most to you"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Quality time over busy time",
+"f": "Planning simple, meaningful moments with friends and family"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Simple social plans",
+"f": "Picnics, walks and home dinners as easy, low-cost ways to connect"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Community and belonging",
+"f": "Building local connections through shared spaces and simple activities"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Minimalism in communication",
+"f": "Clear, kind and concise messages that save time for everyone"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Digital boundaries with others",
+"f": "Setting gentle expectations about response times and availability"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Gifts of time and skills",
+"f": "Offering help, lessons or shared experiences as meaningful presents"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Hosting a swap party",
+"f": "Organising a fun event where friends exchange items they no longer need"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Inspiring without preaching",
+"f": "Letting your calm home and lifestyle speak for itself"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Answering common objections",
+"f": "Friendly responses when others think minimalism is boring or strict"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Minimalism across cultures",
+"f": "How different cultures view possessions, gifts and hospitality"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Minimalism and abundance",
+"f": "Seeing simplicity as making room for more joy, not having less of it"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Review: people and connection",
+"f": "Looking back at how simplicity has shaped your relationships"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Maintenance systems",
+"f": "Building seasonal and yearly check-ins so your home stays simple"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "The yearly declutter review",
+"f": "A once-a-year walkthrough of every room and category"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Seasonal resets",
+"f": "Small spring, summer, autumn and winter refreshes for home and routines"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Handling life changes",
+"f": "Staying simple through new jobs, homes, babies or other big transitions"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "When clutter returns",
+"f": "Kind, practical steps to recover when old habits creep back"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Advanced digital organisation",
+"f": "Long-term systems for files, photos and accounts that stay tidy"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Paperless home",
+"f": "Going mostly paper-free with scanning, digital statements and simple archives"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Important documents",
+"f": "Keeping essential papers organised, safe and easy to find"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Personal reference binder",
+"f": "One simple place for key household information and instructions"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Automating household tasks",
+"f": "Simple routines and tools that handle repeated chores"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Minimalism and creativity",
+"f": "How fewer distractions and materials can boost creative work"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Creative constraints",
+"f": "Using limits on time, tools or colours to spark original ideas"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Review: long-term systems",
+"f": "Checking your maintenance routines and adjusting them for the future"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Living light on the road",
+"f": "Lessons from digital nomads and travellers who live from one suitcase"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Tiny mobile homes",
+"f": "What people living in vans and small boats learn about needing less"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "A retreat at home",
+"f": "Planning a quiet weekend with few plans, few screens and no shopping"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Silence and quiet",
+"f": "Valuing quiet moments and calm sounds in a noisy world"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Minimalist gardening",
+"f": "Low-maintenance gardens with a few well-chosen plants"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Seasonal eating",
+"f": "Simple meals built around what is fresh and local each season"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Learning deeply",
+"f": "Studying one subject at a time with fewer resources for real understanding"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Simple community events",
+"f": "Organising neighbourhood gatherings with little cost and waste"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Volunteering your freed time",
+"f": "Using time saved by simplifying to support causes you care about"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Simplicity in busy weeks",
+"f": "Simple routines that keep you steady when life gets hectic"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Ritual and meaning",
+"f": "Creating small, simple rituals that make ordinary days special"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Being kind to yourself",
+"f": "Being gentle with your progress and avoiding all-or-nothing thinking"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Spotting hidden clutter",
+"f": "Training your eye for cupboards, apps and calendars that look tidy but are full"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "The one-year experiment",
+"f": "Designing a personal year-long simplicity challenge of your own"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Spending less, choosing more",
+"f": "How lower spending can open up more life choices, in general terms"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "The full home audit",
+"f": "A detailed check of every space using everything you have learned"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Your ideal week revisited",
+"f": "Redesigning your week with the time and energy simplicity has freed"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Sharing your story",
+"f": "Telling your simplicity story in a way that inspires and encourages others"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Minimalism ten years from now",
+"f": "Imagining how your simple life could look and feel in the long run"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Simple pleasures list",
+"f": "Writing down the small, free joys that make your days good"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Letting your home evolve",
+"f": "Allowing your space to change with you instead of freezing a perfect look"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Your minimalist philosophy",
+"f": "Writing your own principles of simple living in your own words"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Teaching minimalism to others",
+"f": "Sharing your experience helpfully when friends ask for advice"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Helping a friend declutter",
+"f": "Guiding someone else's process with empathy and without judgement"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Minimalism at different ages",
+"f": "How needs and possessions change across life stages"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Small steps for busy people",
+"f": "Quick strategies for those with little time to simplify"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Minimalism and productivity",
+"f": "How a simpler environment and schedule support better work"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Long-term contentment",
+"f": "Cultivating lasting satisfaction with a calm, intentional life"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Gratitude practice deepened",
+"f": "Building gratitude into daily routines for lasting perspective"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Celebrating your simple life",
+"f": "Enjoying the freedom, space and time you have created"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Planning your next year",
+"f": "Setting gentle intentions to keep growing in simplicity"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Your personal minimalism map",
+"f": "Mapping the areas of life you simplified and where you want to grow"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Review: the advanced journey",
+"f": "Reviewing everything you learned in the advanced stage"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "The power of enough",
+"f": "Reflecting on how knowing what is enough shaped your choices"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Messages to your future self",
+"f": "Writing a letter to remind yourself why simplicity matters to you"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Final reflection and next steps",
+"f": "Celebrating your 365-day path and choosing how to keep simplifying"
+}
+]
+}

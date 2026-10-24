@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_french",
+ "lessons": [
+  {
+   "d": 261,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Social media and society",
+     "g": "Discuss social media calmly in French: influencers, screen time and fake news.",
+     "p": [
+      "Online life: les réseaux sociaux, un influenceur, une publication, partager, s'abonner à",
+      "Screen habits: le temps d'écran, être accro à son téléphone, se déconnecter",
+      "Information: les fausses informations, vérifier une source, garder l'esprit critique"
+     ],
+     "q": "How much screen time do you have per day, and would you like to change it? Answer in French.",
+     "c": "Write three French sentences about social media trends, using de plus en plus de and la plupart des gens."
+    },
+    "de": {
+     "t": "Soziale Medien und Gesellschaft",
+     "g": "Du sprichst ruhig auf Französisch über soziale Medien: Influencer, Bildschirmzeit und Falschmeldungen.",
+     "p": [
+      "Online-Leben: les réseaux sociaux, un influenceur, une publication, partager, s'abonner à",
+      "Bildschirm-Gewohnheiten: le temps d'écran, être accro à son téléphone, se déconnecter",
+      "Information: les fausses informations, vérifier une source, garder l'esprit critique"
+     ],
+     "q": "Wie viel Bildschirmzeit hast du pro Tag, und möchtest du daran etwas ändern? Antworte auf Französisch.",
+     "c": "Schreib drei französische Sätze über Trends in sozialen Medien, mit de plus en plus de und la plupart des gens."
+    },
+    "es": {
+     "t": "Redes sociales y sociedad",
+     "g": "Habla con calma en francés de las redes: influencers, tiempo de pantalla y bulos.",
+     "p": [
+      "Vida en línea: les réseaux sociaux, un influenceur, une publication, partager, s'abonner à",
+      "Hábitos de pantalla: le temps d'écran, être accro à son téléphone, se déconnecter",
+      "Información: les fausses informations, vérifier une source, garder l'esprit critique"
+     ],
+     "q": "¿Cuánto tiempo de pantalla tienes al día y te gustaría cambiarlo? Responde en francés.",
+     "c": "Escribe tres frases en francés sobre tendencias en redes, con de plus en plus de y la plupart des gens."
+    },
+    "fr": {
+     "t": "Réseaux sociaux et société",
+     "g": "Parler sereinement des réseaux sociaux : influenceurs, temps d'écran et fausses informations.",
+     "p": [
+      "La vie en ligne : les réseaux sociaux, un influenceur, une publication, partager, s'abonner à",
+      "Les habitudes d'écran : le temps d'écran, être accro à son téléphone, se déconnecter",
+      "L'information : les fausses informations, vérifier une source, garder l'esprit critique"
+     ],
+     "q": "Combien de temps passes-tu sur les écrans par jour, et aimerais-tu changer cela ?",
+     "c": "Écris trois phrases sur les tendances des réseaux avec de plus en plus de et la plupart des gens."
+    },
+    "it": {
+     "t": "Social media e società",
+     "g": "Parla con calma in francese dei social: influencer, tempo davanti allo schermo e notizie false.",
+     "p": [
+      "Vita online: les réseaux sociaux, un influenceur, une publication, partager, s'abonner à",
+      "Abitudini da schermo: le temps d'écran, être accro à son téléphone, se déconnecter",
+      "Informazione: les fausses informations, vérifier une source, garder l'esprit critique"
+     ],
+     "q": "Quanto tempo passi davanti allo schermo ogni giorno, e vorresti cambiarlo? Rispondi in francese.",
+     "c": "Scrivi tre frasi in francese sulle tendenze dei social, con de plus en plus de e la plupart des gens."
+    },
+    "pt": {
+     "t": "Redes sociais e sociedade",
+     "g": "Fala com calma em francês sobre as redes: influenciadores, tempo de ecrã e notícias falsas.",
+     "p": [
+      "Vida online: les réseaux sociaux, un influenceur, une publication, partager, s'abonner à",
+      "Hábitos de ecrã: le temps d'écran, être accro à son téléphone, se déconnecter",
+      "Informação: les fausses informations, vérifier une source, garder l'esprit critique"
+     ],
+     "q": "Quanto tempo de ecrã tens por dia e gostavas de mudar isso? Responde em francês.",
+     "c": "Escreve três frases em francês sobre tendências das redes, com de plus en plus de e la plupart des gens."
+    },
+    "pt_BR": {
+     "t": "Redes sociais e sociedade",
+     "g": "Fale com calma em francês sobre as redes: influenciadores, tempo de tela e notícias falsas.",
+     "p": [
+      "Vida online: les réseaux sociaux, un influenceur, une publication, partager, s'abonner à",
+      "Hábitos de tela: le temps d'écran, être accro à son téléphone, se déconnecter",
+      "Informação: les fausses informations, vérifier une source, garder l'esprit critique"
+     ],
+     "q": "Quanto tempo de tela você tem por dia, e gostaria de mudar isso? Responda em francês.",
+     "c": "Escreva três frases em francês sobre tendências nas redes, com de plus en plus de e la plupart des gens."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un influenceur",
+      "ex": "Cet influenceur partage des recettes simples."
+     },
+     {
+      "w": "le temps d'écran",
+      "ex": "J'essaie de réduire mon temps d'écran le soir."
+     },
+     {
+      "w": "les fausses informations",
+      "ex": "Les fausses informations circulent très vite."
+     },
+     {
+      "w": "vérifier une source",
+      "ex": "Avant de partager, je vérifie toujours la source."
+     },
+     {
+      "w": "s'abonner à",
+      "ex": "Je me suis abonné à une chaîne de cuisine française."
+     },
+     {
+      "w": "se déconnecter",
+      "ex": "Le dimanche, je me déconnecte complètement."
+     }
+    ],
+    "gram": "Décrire une tendance : de plus en plus de / de moins en moins de + nom ; la plupart des gens + verbe au pluriel."
+   }
+  },
+  {
+   "d": 262,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Technology and the future",
+     "g": "Imagine the future in French: artificial intelligence, robots, remote work and how life may change.",
+     "p": [
+      "Technology: l'intelligence artificielle (l'IA), un robot, un algorithme, automatiser",
+      "Work: le télétravail, travailler à distance, une visioconférence",
+      "Predictions: Dans vingt ans, les voitures rouleront peut-être seules. Je pense que l'IA changera l'école."
+     ],
+     "q": "Which technology do you think will change daily life the most in the next twenty years? Why?",
+     "c": "Write three predictions in French with the futur simple, one with il est probable que and one with il est possible que."
+    },
+    "de": {
+     "t": "Technik und Zukunft",
+     "g": "Du stellst dir auf Französisch die Zukunft vor: künstliche Intelligenz, Roboter, Homeoffice.",
+     "p": [
+      "Technik: l'intelligence artificielle (l'IA), un robot, un algorithme, automatiser",
+      "Arbeit: le télétravail, travailler à distance, une visioconférence",
+      "Vorhersagen: Dans vingt ans, les voitures rouleront peut-être seules. Je pense que l'IA changera l'école."
+     ],
+     "q": "Welche Technik wird deiner Meinung nach den Alltag in zwanzig Jahren am meisten verändern? Warum?",
+     "c": "Schreib drei Vorhersagen im futur simple, eine mit il est probable que, eine mit il est possible que."
+    },
+    "es": {
+     "t": "Tecnología y futuro",
+     "g": "Imagina el futuro en francés: inteligencia artificial, robots, teletrabajo y cómo cambiará la vida.",
+     "p": [
+      "Tecnología: l'intelligence artificielle (l'IA), un robot, un algorithme, automatiser",
+      "Trabajo: le télétravail, travailler à distance, une visioconférence",
+      "Predicciones: Dans vingt ans, les voitures rouleront peut-être seules. Je pense que l'IA changera l'école."
+     ],
+     "q": "¿Qué tecnología crees que cambiará más la vida diaria en los próximos veinte años? ¿Por qué?",
+     "c": "Escribe tres predicciones en futur simple, una con il est probable que y otra con il est possible que."
+    },
+    "fr": {
+     "t": "Technologie et avenir",
+     "g": "Imaginer l'avenir : intelligence artificielle, robots, télétravail et changements du quotidien.",
+     "p": [
+      "La technologie : l'intelligence artificielle (l'IA), un robot, un algorithme, automatiser",
+      "Le travail : le télétravail, travailler à distance, une visioconférence",
+      "Les prévisions : Dans vingt ans, les voitures rouleront peut-être seules. Je pense que l'IA changera l'école."
+     ],
+     "q": "Quelle technologie changera le plus la vie quotidienne dans les vingt prochaines années, selon toi ?",
+     "c": "Écris trois prévisions au futur simple, une avec il est probable que, une avec il est possible que."
+    },
+    "it": {
+     "t": "Tecnologia e futuro",
+     "g": "Immagina il futuro in francese: intelligenza artificiale, robot, telelavoro e come cambierà la vita.",
+     "p": [
+      "Tecnologia: l'intelligence artificielle (l'IA), un robot, un algorithme, automatiser",
+      "Lavoro: le télétravail, travailler à distance, une visioconférence",
+      "Previsioni: Dans vingt ans, les voitures rouleront peut-être seules. Je pense que l'IA changera l'école."
+     ],
+     "q": "Quale tecnologia cambierà di più la vita quotidiana nei prossimi vent'anni, secondo te? Perché?",
+     "c": "Scrivi tre previsioni al futur simple, una con il est probable que e una con il est possible que."
+    },
+    "pt": {
+     "t": "Tecnologia e futuro",
+     "g": "Imagina o futuro em francês: inteligência artificial, robôs, teletrabalho e como a vida vai mudar.",
+     "p": [
+      "Tecnologia: l'intelligence artificielle (l'IA), un robot, un algorithme, automatiser",
+      "Trabalho: le télétravail, travailler à distance, une visioconférence",
+      "Previsões: Dans vingt ans, les voitures rouleront peut-être seules. Je pense que l'IA changera l'école."
+     ],
+     "q": "Que tecnologia achas que vai mudar mais o dia a dia nos próximos vinte anos? Porquê?",
+     "c": "Escreve três previsões no futur simple, uma com il est probable que e outra com il est possible que."
+    },
+    "pt_BR": {
+     "t": "Tecnologia e futuro",
+     "g": "Imagine o futuro em francês: inteligência artificial, robôs, home office e como a vida vai mudar.",
+     "p": [
+      "Tecnologia: l'intelligence artificielle (l'IA), un robot, un algorithme, automatiser",
+      "Trabalho: le télétravail, travailler à distance, une visioconférence",
+      "Previsões: Dans vingt ans, les voitures rouleront peut-être seules. Je pense que l'IA changera l'école."
+     ],
+     "q": "Que tecnologia você acha que vai mudar mais o dia a dia nos próximos vinte anos? Por quê?",
+     "c": "Escreva três previsões no futur simple, uma com il est probable que e outra com il est possible que."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "l'intelligence artificielle",
+      "ex": "L'intelligence artificielle aide à traduire des textes."
+     },
+     {
+      "w": "un robot",
+      "ex": "Ce robot aspirateur nettoie le salon tout seul."
+     },
+     {
+      "w": "le télétravail",
+      "ex": "Je fais du télétravail deux jours par semaine."
+     },
+     {
+      "w": "une visioconférence",
+      "ex": "On a une visioconférence avec l'équipe à 14 h."
+     },
+     {
+      "w": "automatiser",
+      "ex": "Ce logiciel permet d'automatiser les tâches répétitives."
+     },
+     {
+      "w": "à l'avenir",
+      "ex": "À l'avenir, on utilisera peut-être moins de voitures."
+     }
+    ],
+    "gram": "Parler de l'avenir : futur simple (on travaillera), il est probable que + indicatif, il est possible que + subjonctif."
+   }
+  },
+  {
+   "d": 263,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Travel planning in depth",
+     "g": "Plan a real trip in French: itinerary, accommodation, budget and a plan B for surprises.",
+     "p": [
+      "The route: l'itinéraire, une étape, faire une escale, réserver à l'avance",
+      "Where to stay: une auberge de jeunesse, une chambre d'hôtes, un gîte ; le budget",
+      "The unexpected: prévoir une marge, une solution de rechange, une assurance voyage"
+     ],
+     "q": "Describe your dream trip in French: the stages, where you would sleep and how you would handle surprises.",
+     "c": "Write a five-day itinerary in French with one stage per day, using on compte and on prévoit de."
+    },
+    "de": {
+     "t": "Reiseplanung im Detail",
+     "g": "Du planst eine echte Reise auf Französisch: Route, Unterkunft, Budget und Plan B.",
+     "p": [
+      "Die Route: l'itinéraire, une étape, faire une escale, réserver à l'avance",
+      "Die Unterkunft: une auberge de jeunesse, une chambre d'hôtes, un gîte ; le budget",
+      "Das Unerwartete: prévoir une marge, une solution de rechange, une assurance voyage"
+     ],
+     "q": "Beschreib deine Traumreise auf Französisch: Etappen, Unterkunft und wie du mit Überraschungen umgehst.",
+     "c": "Schreib eine Fünf-Tage-Route auf Französisch, eine Etappe pro Tag, mit on compte und on prévoit de."
+    },
+    "es": {
+     "t": "Planificar un viaje a fondo",
+     "g": "Planifica un viaje real en francés: itinerario, alojamiento, presupuesto y plan B.",
+     "p": [
+      "La ruta: l'itinéraire, une étape, faire une escale, réserver à l'avance",
+      "El alojamiento: une auberge de jeunesse, une chambre d'hôtes, un gîte ; le budget",
+      "Lo imprevisto: prévoir une marge, une solution de rechange, une assurance voyage"
+     ],
+     "q": "Describe en francés tu viaje soñado: las etapas, dónde dormirías y cómo afrontarías los imprevistos.",
+     "c": "Escribe un itinerario de cinco días en francés, una etapa por día, con on compte y on prévoit de."
+    },
+    "fr": {
+     "t": "Préparer un voyage en détail",
+     "g": "Organiser un vrai voyage : itinéraire, hébergement, budget et solution de rechange.",
+     "p": [
+      "Le parcours : l'itinéraire, une étape, faire une escale, réserver à l'avance",
+      "L'hébergement : une auberge de jeunesse, une chambre d'hôtes, un gîte ; le budget",
+      "L'imprévu : prévoir une marge, une solution de rechange, une assurance voyage"
+     ],
+     "q": "Décris ton voyage idéal : les étapes, où tu dormirais et comment tu gérerais les imprévus.",
+     "c": "Écris un itinéraire de cinq jours, une étape par jour, avec on compte et on prévoit de."
+    },
+    "it": {
+     "t": "Organizzare un viaggio nei dettagli",
+     "g": "Pianifica un vero viaggio in francese: itinerario, alloggio, budget e piano B.",
+     "p": [
+      "Il percorso: l'itinéraire, une étape, faire une escale, réserver à l'avance",
+      "L'alloggio: une auberge de jeunesse, une chambre d'hôtes, un gîte ; le budget",
+      "L'imprevisto: prévoir une marge, une solution de rechange, une assurance voyage"
+     ],
+     "q": "Descrivi in francese il viaggio dei tuoi sogni: le tappe, dove dormiresti e come gestiresti gli imprevisti.",
+     "c": "Scrivi un itinerario di cinque giorni in francese, una tappa al giorno, con on compte e on prévoit de."
+    },
+    "pt": {
+     "t": "Planear uma viagem a fundo",
+     "g": "Planeia uma viagem real em francês: itinerário, alojamento, orçamento e plano B.",
+     "p": [
+      "O percurso: l'itinéraire, une étape, faire une escale, réserver à l'avance",
+      "O alojamento: une auberge de jeunesse, une chambre d'hôtes, un gîte ; le budget",
+      "O imprevisto: prévoir une marge, une solution de rechange, une assurance voyage"
+     ],
+     "q": "Descreve em francês a tua viagem de sonho: as etapas, onde dormirias e como lidarias com imprevistos.",
+     "c": "Escreve um itinerário de cinco dias em francês, uma etapa por dia, com on compte e on prévoit de."
+    },
+    "pt_BR": {
+     "t": "Planejando uma viagem a fundo",
+     "g": "Planeje uma viagem de verdade em francês: roteiro, hospedagem, orçamento e plano B.",
+     "p": [
+      "O roteiro: l'itinéraire, une étape, faire une escale, réserver à l'avance",
+      "A hospedagem: une auberge de jeunesse, une chambre d'hôtes, un gîte ; le budget",
+      "O imprevisto: prévoir une marge, une solution de rechange, une assurance voyage"
+     ],
+     "q": "Descreva em francês a viagem dos seus sonhos: as etapas, onde você dormiria e como lidaria com imprevistos.",
+     "c": "Escreva um roteiro de cinco dias em francês, uma etapa por dia, com on compte e on prévoit de."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un itinéraire",
+      "ex": "On a préparé un itinéraire de dix jours en Provence."
+     },
+     {
+      "w": "une étape",
+      "ex": "La première étape du voyage, c'est Lyon."
+     },
+     {
+      "w": "une chambre d'hôtes",
+      "ex": "Nous avons dormi dans une chambre d'hôtes charmante."
+     },
+     {
+      "w": "un gîte",
+      "ex": "On loue un gîte à la campagne pour une semaine."
+     },
+     {
+      "w": "prévoir un budget",
+      "ex": "Il faut prévoir un budget pour les visites."
+     },
+     {
+      "w": "une assurance voyage",
+      "ex": "J'ai pris une assurance voyage, au cas où."
+     }
+    ],
+    "gram": "Planifier : futur proche et futur simple pour le programme ; on compte + infinitif, on prévoit de + infinitif."
+   }
+  },
+  {
+   "d": 264,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Solving a travel problem",
+     "g": "Handle a cancelled flight or lost luggage in French and make a calm, polite claim.",
+     "p": [
+      "The problem: Mon vol a été annulé. Ma valise n'est pas arrivée. Le train a du retard.",
+      "Asking politely: Je voudrais faire une réclamation. Pourriez-vous m'indiquer la marche à suivre ?",
+      "The solution: être remboursé(e), un dédommagement, un bon d'achat, le guichet"
+     ],
+     "q": "Imagine your suitcase did not arrive. What do you say at the desk? Give me two polite sentences.",
+     "c": "Role-play in writing: explain a missed connection to an agent and ask for a solution, using the passive."
+    },
+    "de": {
+     "t": "Ein Reiseproblem lösen",
+     "g": "Du meisterst auf Französisch einen gestrichenen Flug oder verlorenes Gepäck und reklamierst höflich.",
+     "p": [
+      "Das Problem: Mon vol a été annulé. Ma valise n'est pas arrivée. Le train a du retard.",
+      "Höflich fragen: Je voudrais faire une réclamation. Pourriez-vous m'indiquer la marche à suivre ?",
+      "Die Lösung: être remboursé(e), un dédommagement, un bon d'achat, le guichet"
+     ],
+     "q": "Stell dir vor, dein Koffer ist nicht angekommen. Was sagst du am Schalter? Zwei höfliche Sätze, bitte.",
+     "c": "Schreib ein Rollenspiel: Erkläre einer Mitarbeiterin den verpassten Anschluss und bitte um eine Lösung, mit Passiv."
+    },
+    "es": {
+     "t": "Resolver un problema de viaje",
+     "g": "Gestiona en francés un vuelo cancelado o una maleta perdida y reclama con calma y educación.",
+     "p": [
+      "El problema: Mon vol a été annulé. Ma valise n'est pas arrivée. Le train a du retard.",
+      "Pedir con educación: Je voudrais faire une réclamation. Pourriez-vous m'indiquer la marche à suivre ?",
+      "La solución: être remboursé(e), un dédommagement, un bon d'achat, le guichet"
+     ],
+     "q": "Imagina que tu maleta no llegó. ¿Qué dices en el mostrador? Dame dos frases educadas.",
+     "c": "Escribe un diálogo: explica a un agente que perdiste tu conexión y pide una solución, usando la pasiva."
+    },
+    "fr": {
+     "t": "Résoudre un problème en voyage",
+     "g": "Gérer un vol annulé ou un bagage perdu et faire une réclamation calme et polie.",
+     "p": [
+      "Le problème : Mon vol a été annulé. Ma valise n'est pas arrivée. Le train a du retard.",
+      "Demander poliment : Je voudrais faire une réclamation. Pourriez-vous m'indiquer la marche à suivre ?",
+      "La solution : être remboursé(e), un dédommagement, un bon d'achat, le guichet"
+     ],
+     "q": "Imagine que ta valise n'est pas arrivée. Que dis-tu au comptoir ? Deux phrases polies.",
+     "c": "Écris un dialogue : explique une correspondance ratée à un agent et demande une solution, avec le passif."
+    },
+    "it": {
+     "t": "Risolvere un problema in viaggio",
+     "g": "Gestisci in francese un volo cancellato o un bagaglio perso e fai un reclamo calmo e cortese.",
+     "p": [
+      "Il problema: Mon vol a été annulé. Ma valise n'est pas arrivée. Le train a du retard.",
+      "Chiedere con garbo: Je voudrais faire une réclamation. Pourriez-vous m'indiquer la marche à suivre ?",
+      "La soluzione: être remboursé(e), un dédommagement, un bon d'achat, le guichet"
+     ],
+     "q": "Immagina che la tua valigia non sia arrivata. Cosa dici al banco? Dammi due frasi cortesi.",
+     "c": "Scrivi un dialogo: spiega a un addetto la coincidenza persa e chiedi una soluzione, usando il passivo."
+    },
+    "pt": {
+     "t": "Resolver um problema de viagem",
+     "g": "Lida em francês com um voo cancelado ou bagagem perdida e faz uma reclamação calma e educada.",
+     "p": [
+      "O problema: Mon vol a été annulé. Ma valise n'est pas arrivée. Le train a du retard.",
+      "Pedir com educação: Je voudrais faire une réclamation. Pourriez-vous m'indiquer la marche à suivre ?",
+      "A solução: être remboursé(e), un dédommagement, un bon d'achat, le guichet"
+     ],
+     "q": "Imagina que a tua mala não chegou. O que dizes no balcão? Dá-me duas frases educadas.",
+     "c": "Escreve um diálogo: explica a um agente a ligação perdida e pede uma solução, usando a passiva."
+    },
+    "pt_BR": {
+     "t": "Resolvendo um problema de viagem",
+     "g": "Lide em francês com um voo cancelado ou bagagem extraviada e faça uma reclamação calma e educada.",
+     "p": [
+      "O problema: Mon vol a été annulé. Ma valise n'est pas arrivée. Le train a du retard.",
+      "Pedir com educação: Je voudrais faire une réclamation. Pourriez-vous m'indiquer la marche à suivre ?",
+      "A solução: être remboursé(e), un dédommagement, un bon d'achat, le guichet"
+     ],
+     "q": "Imagine que sua mala não chegou. O que você diz no balcão? Me dê duas frases educadas.",
+     "c": "Escreva um diálogo: explique a um atendente a conexão perdida e peça uma solução, usando a voz passiva."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un vol annulé",
+      "ex": "Mon vol annulé a été remplacé par un vol du soir."
+     },
+     {
+      "w": "un bagage perdu",
+      "ex": "Je dois déclarer un bagage perdu au comptoir."
+     },
+     {
+      "w": "faire une réclamation",
+      "ex": "Je voudrais faire une réclamation, s'il vous plaît."
+     },
+     {
+      "w": "être remboursé(e)",
+      "ex": "Est-ce que je peux être remboursé du billet ?"
+     },
+     {
+      "w": "un dédommagement",
+      "ex": "La compagnie m'a proposé un dédommagement."
+     },
+     {
+      "w": "la correspondance",
+      "ex": "J'ai raté ma correspondance à cause du retard."
+     }
+    ],
+    "gram": "Réclamer poliment : conditionnel (je voudrais, pourriez-vous) et passif au passé composé : mon vol a été annulé."
+   }
+  },
+  {
+   "d": 265,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Renting and contracts",
+     "g": "Understand renting in French: le bail, l'état des lieux, la caution and how to end a contract.",
+     "p": [
+      "The basics: le bail, le locataire, le propriétaire, le loyer, les charges",
+      "Moving in and out: l'état des lieux d'entrée et de sortie, la caution (le dépôt de garantie)",
+      "Key actions: signer le bail, donner son préavis, résilier un contrat"
+     ],
+     "q": "Have you ever rented a flat or room? Tell me in French what was included and how the move-in went.",
+     "c": "Write three French questions you would ask a landlord before signing, about rent, charges and deposit."
+    },
+    "de": {
+     "t": "Mieten und Verträge",
+     "g": "Du verstehst das Mieten auf Französisch: le bail, l'état des lieux, la caution und Kündigung.",
+     "p": [
+      "Grundlagen: le bail, le locataire, le propriétaire, le loyer, les charges",
+      "Ein- und Auszug: l'état des lieux d'entrée et de sortie, la caution (le dépôt de garantie)",
+      "Wichtige Handlungen: signer le bail, donner son préavis, résilier un contrat"
+     ],
+     "q": "Hast du schon einmal eine Wohnung oder ein Zimmer gemietet? Erzähl auf Französisch, was dazugehörte.",
+     "c": "Schreib drei französische Fragen an einen Vermieter vor der Unterschrift: zu Miete, Nebenkosten und Kaution."
+    },
+    "es": {
+     "t": "Alquiler y contratos",
+     "g": "Entiende el alquiler en francés: le bail, l'état des lieux, la caution y cómo rescindir un contrato.",
+     "p": [
+      "Lo básico: le bail, le locataire, le propriétaire, le loyer, les charges",
+      "Entrar y salir: l'état des lieux d'entrée et de sortie, la caution (le dépôt de garantie)",
+      "Acciones clave: signer le bail, donner son préavis, résilier un contrat"
+     ],
+     "q": "¿Has alquilado alguna vez un piso o una habitación? Cuéntame en francés qué incluía y cómo fue la entrada.",
+     "c": "Escribe tres preguntas en francés para un casero antes de firmar: sobre alquiler, gastos y fianza."
+    },
+    "fr": {
+     "t": "Location et contrats",
+     "g": "Comprendre la location : le bail, l'état des lieux, la caution et comment résilier un contrat.",
+     "p": [
+      "Les bases : le bail, le locataire, le propriétaire, le loyer, les charges",
+      "Entrée et sortie : l'état des lieux d'entrée et de sortie, la caution (le dépôt de garantie)",
+      "Les actions clés : signer le bail, donner son préavis, résilier un contrat"
+     ],
+     "q": "As-tu déjà loué un appartement ou une chambre ? Raconte ce qui était compris et comment s'est passée l'entrée.",
+     "c": "Écris trois questions à poser à un propriétaire avant de signer : sur le loyer, les charges et la caution."
+    },
+    "it": {
+     "t": "Affitto e contratti",
+     "g": "Capisci l'affitto in francese: le bail, l'état des lieux, la caution e come disdire un contratto.",
+     "p": [
+      "Le basi: le bail, le locataire, le propriétaire, le loyer, les charges",
+      "Entrata e uscita: l'état des lieux d'entrée et de sortie, la caution (le dépôt de garantie)",
+      "Azioni chiave: signer le bail, donner son préavis, résilier un contrat"
+     ],
+     "q": "Hai mai affittato un appartamento o una stanza? Raccontami in francese cosa era incluso e com'è andato l'ingresso.",
+     "c": "Scrivi tre domande in francese da fare a un proprietario prima di firmare: su affitto, spese e cauzione."
+    },
+    "pt": {
+     "t": "Arrendamento e contratos",
+     "g": "Percebe o arrendamento em francês: le bail, l'état des lieux, la caution e como rescindir um contrato.",
+     "p": [
+      "O básico: le bail, le locataire, le propriétaire, le loyer, les charges",
+      "Entrada e saída: l'état des lieux d'entrée et de sortie, la caution (le dépôt de garantie)",
+      "Ações-chave: signer le bail, donner son préavis, résilier un contrat"
+     ],
+     "q": "Já arrendaste um apartamento ou quarto? Conta-me em francês o que estava incluído e como correu a entrada.",
+     "c": "Escreve três perguntas em francês para um senhorio antes de assinar: sobre renda, despesas e caução."
+    },
+    "pt_BR": {
+     "t": "Aluguel e contratos",
+     "g": "Entenda o aluguel em francês: le bail, l'état des lieux, la caution e como rescindir um contrato.",
+     "p": [
+      "O básico: le bail, le locataire, le propriétaire, le loyer, les charges",
+      "Entrada e saída: l'état des lieux d'entrée et de sortie, la caution (le dépôt de garantie)",
+      "Ações-chave: signer le bail, donner son préavis, résilier un contrat"
+     ],
+     "q": "Você já alugou um apartamento ou quarto? Conte em francês o que estava incluído e como foi a entrada.",
+     "c": "Escreva três perguntas em francês para um proprietário antes de assinar: sobre aluguel, taxas e caução."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "le bail",
+      "ex": "Nous avons signé le bail pour trois ans."
+     },
+     {
+      "w": "le loyer",
+      "ex": "Le loyer est payé au début de chaque mois."
+     },
+     {
+      "w": "les charges",
+      "ex": "Les charges comprennent l'eau et l'entretien."
+     },
+     {
+      "w": "l'état des lieux",
+      "ex": "On fait l'état des lieux avec le propriétaire demain."
+     },
+     {
+      "w": "la caution",
+      "ex": "La caution sera rendue après l'état des lieux de sortie."
+     },
+     {
+      "w": "résilier",
+      "ex": "Je voudrais résilier mon abonnement internet."
+     }
+    ],
+    "gram": "Le contrat : verbe + nom (signer un bail, payer le loyer, résilier un contrat) et le passif : le loyer est payé le 5."
+   }
+  },
+  {
+   "d": 266,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Banking basics",
+     "g": "Handle everyday banking in French: open an account, make a transfer and understand a RIB. Language only, no advice.",
+     "p": [
+      "Accounts: ouvrir un compte, un compte courant, un livret d'épargne, un conseiller",
+      "Everyday actions: faire un virement, retirer de l'argent, un distributeur, une carte bancaire",
+      "Documents: un RIB (relevé d'identité bancaire), un code confidentiel, un relevé de compte"
+     ],
+     "q": "Imagine you are at a French bank. How do you politely ask to open an account and get a card?",
+     "c": "Write a short dialogue with a bank adviser using je souhaiterais, un RIB and faire un virement."
+    },
+    "de": {
+     "t": "Bankgrundlagen",
+     "g": "Du erledigst Alltägliches bei der Bank auf Französisch: Konto, Überweisung, RIB. Nur Sprache, keine Beratung.",
+     "p": [
+      "Konten: ouvrir un compte, un compte courant, un livret d'épargne, un conseiller",
+      "Alltägliches: faire un virement, retirer de l'argent, un distributeur, une carte bancaire",
+      "Unterlagen: un RIB (relevé d'identité bancaire), un code confidentiel, un relevé de compte"
+     ],
+     "q": "Stell dir vor, du bist bei einer französischen Bank. Wie bittest du höflich um ein Konto und eine Karte?",
+     "c": "Schreib einen kurzen Dialog mit einem Bankberater mit je souhaiterais, un RIB und faire un virement."
+    },
+    "es": {
+     "t": "Banca básica",
+     "g": "Haz gestiones bancarias en francés: abrir una cuenta, una transferencia, un RIB. Solo idioma, sin consejos.",
+     "p": [
+      "Cuentas: ouvrir un compte, un compte courant, un livret d'épargne, un conseiller",
+      "Gestiones diarias: faire un virement, retirer de l'argent, un distributeur, une carte bancaire",
+      "Documentos: un RIB (relevé d'identité bancaire), un code confidentiel, un relevé de compte"
+     ],
+     "q": "Imagina que estás en un banco francés. ¿Cómo pides con educación abrir una cuenta y una tarjeta?",
+     "c": "Escribe un diálogo corto con un asesor bancario usando je souhaiterais, un RIB y faire un virement."
+    },
+    "fr": {
+     "t": "Les bases de la banque",
+     "g": "Gérer la banque au quotidien : ouvrir un compte, faire un virement, comprendre un RIB. Langue seulement.",
+     "p": [
+      "Les comptes : ouvrir un compte, un compte courant, un livret d'épargne, un conseiller",
+      "Au quotidien : faire un virement, retirer de l'argent, un distributeur, une carte bancaire",
+      "Les documents : un RIB (relevé d'identité bancaire), un code confidentiel, un relevé de compte"
+     ],
+     "q": "Imagine que tu es dans une banque. Comment demandes-tu poliment à ouvrir un compte et à avoir une carte ?",
+     "c": "Écris un petit dialogue avec un conseiller avec je souhaiterais, un RIB et faire un virement."
+    },
+    "it": {
+     "t": "Le basi della banca",
+     "g": "Gestisci la banca in francese: aprire un conto, fare un bonifico, capire un RIB. Solo lingua, nessun consiglio.",
+     "p": [
+      "I conti: ouvrir un compte, un compte courant, un livret d'épargne, un conseiller",
+      "Operazioni quotidiane: faire un virement, retirer de l'argent, un distributeur, une carte bancaire",
+      "Documenti: un RIB (relevé d'identité bancaire), un code confidentiel, un relevé de compte"
+     ],
+     "q": "Immagina di essere in una banca francese. Come chiedi con garbo di aprire un conto e avere una carta?",
+     "c": "Scrivi un breve dialogo con un consulente usando je souhaiterais, un RIB e faire un virement."
+    },
+    "pt": {
+     "t": "Banca: o essencial",
+     "g": "Trata do banco em francês: abrir conta, fazer uma transferência, perceber um RIB. Só língua, sem conselhos.",
+     "p": [
+      "Contas: ouvrir un compte, un compte courant, un livret d'épargne, un conseiller",
+      "Operações do dia a dia: faire un virement, retirer de l'argent, un distributeur, une carte bancaire",
+      "Documentos: un RIB (relevé d'identité bancaire), un code confidentiel, un relevé de compte"
+     ],
+     "q": "Imagina que estás num banco francês. Como pedes com educação para abrir uma conta e ter um cartão?",
+     "c": "Escreve um pequeno diálogo com um gestor de conta usando je souhaiterais, un RIB e faire un virement."
+    },
+    "pt_BR": {
+     "t": "Banco: o básico",
+     "g": "Resolva coisas de banco em francês: abrir conta, transferência, entender um RIB. Só idioma, sem conselhos.",
+     "p": [
+      "Contas: ouvrir un compte, un compte courant, un livret d'épargne, un conseiller",
+      "Operações do dia a dia: faire un virement, retirer de l'argent, un distributeur, une carte bancaire",
+      "Documentos: un RIB (relevé d'identité bancaire), un code confidentiel, un relevé de compte"
+     ],
+     "q": "Imagine que você está num banco francês. Como pede com educação para abrir uma conta e ter um cartão?",
+     "c": "Escreva um diálogo curto com um gerente usando je souhaiterais, un RIB e faire un virement."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ouvrir un compte",
+      "ex": "Je souhaiterais ouvrir un compte, s'il vous plaît."
+     },
+     {
+      "w": "faire un virement",
+      "ex": "J'ai fait un virement à ma colocataire pour le loyer."
+     },
+     {
+      "w": "retirer de l'argent",
+      "ex": "Je vais retirer de l'argent au distributeur."
+     },
+     {
+      "w": "une carte bancaire",
+      "ex": "On peut payer par carte bancaire ici ?"
+     },
+     {
+      "w": "un RIB",
+      "ex": "Mon employeur m'a demandé un RIB."
+     },
+     {
+      "w": "un relevé de compte",
+      "ex": "Je consulte mon relevé de compte en ligne."
+     }
+    ],
+    "gram": "À la banque : je souhaiterais + infinitif, il me faut + nom, pour + infinitif : je souhaiterais ouvrir un compte."
+   }
+  },
+  {
+   "d": 267,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Paperwork in France",
+     "g": "Get through French paperwork: les démarches, forms, ID documents and appointments.",
+     "p": [
+      "Where and what: les démarches administratives, la mairie, la préfecture, un dossier",
+      "Documents: remplir un formulaire, une pièce d'identité, un justificatif de domicile",
+      "Practical steps: prendre rendez-vous, une photo d'identité, faire une photocopie"
+     ],
+     "q": "What is the most complicated form you ever had to fill in? Tell me in French what you needed.",
+     "c": "Write a checklist in French for an appointment at the town hall, using il faut and il faut que."
+    },
+    "de": {
+     "t": "Behördengänge in Frankreich",
+     "g": "Du meisterst französische Formalitäten: les démarches, Formulare, Ausweise und Termine.",
+     "p": [
+      "Wo und was: les démarches administratives, la mairie, la préfecture, un dossier",
+      "Unterlagen: remplir un formulaire, une pièce d'identité, un justificatif de domicile",
+      "Praktische Schritte: prendre rendez-vous, une photo d'identité, faire une photocopie"
+     ],
+     "q": "Was war das komplizierteste Formular, das du je ausfüllen musstest? Erzähl auf Französisch, was du brauchtest.",
+     "c": "Schreib auf Französisch eine Checkliste für einen Termin im Rathaus, mit il faut und il faut que."
+    },
+    "es": {
+     "t": "Trámites en Francia",
+     "g": "Supera los trámites franceses: les démarches, formularios, documentos de identidad y citas.",
+     "p": [
+      "Dónde y qué: les démarches administratives, la mairie, la préfecture, un dossier",
+      "Documentos: remplir un formulaire, une pièce d'identité, un justificatif de domicile",
+      "Pasos prácticos: prendre rendez-vous, une photo d'identité, faire une photocopie"
+     ],
+     "q": "¿Cuál es el formulario más complicado que has rellenado? Cuéntame en francés qué necesitabas.",
+     "c": "Escribe en francés una lista para una cita en el ayuntamiento, con il faut y il faut que."
+    },
+    "fr": {
+     "t": "Les démarches en France",
+     "g": "S'en sortir avec l'administration : démarches, formulaires, pièces d'identité et rendez-vous.",
+     "p": [
+      "Où et quoi : les démarches administratives, la mairie, la préfecture, un dossier",
+      "Les documents : remplir un formulaire, une pièce d'identité, un justificatif de domicile",
+      "Étapes pratiques : prendre rendez-vous, une photo d'identité, faire une photocopie"
+     ],
+     "q": "Quel est le formulaire le plus compliqué que tu aies rempli ? Raconte ce qu'il te fallait.",
+     "c": "Écris une liste pour un rendez-vous à la mairie avec il faut et il faut que."
+    },
+    "it": {
+     "t": "Burocrazia in Francia",
+     "g": "Affronta la burocrazia francese: les démarches, moduli, documenti d'identità e appuntamenti.",
+     "p": [
+      "Dove e cosa: les démarches administratives, la mairie, la préfecture, un dossier",
+      "Documenti: remplir un formulaire, une pièce d'identité, un justificatif de domicile",
+      "Passi pratici: prendre rendez-vous, une photo d'identité, faire une photocopie"
+     ],
+     "q": "Qual è il modulo più complicato che hai mai compilato? Raccontami in francese cosa ti serviva.",
+     "c": "Scrivi in francese una lista per un appuntamento in municipio, con il faut e il faut que."
+    },
+    "pt": {
+     "t": "Burocracia em França",
+     "g": "Trata da burocracia francesa: les démarches, formulários, documentos de identificação e marcações.",
+     "p": [
+      "Onde e o quê: les démarches administratives, la mairie, la préfecture, un dossier",
+      "Documentos: remplir un formulaire, une pièce d'identité, un justificatif de domicile",
+      "Passos práticos: prendre rendez-vous, une photo d'identité, faire une photocopie"
+     ],
+     "q": "Qual foi o formulário mais complicado que já preencheste? Conta-me em francês o que precisaste.",
+     "c": "Escreve em francês uma lista para uma marcação na câmara municipal, com il faut e il faut que."
+    },
+    "pt_BR": {
+     "t": "Burocracia na França",
+     "g": "Encare a burocracia francesa: les démarches, formulários, documentos de identidade e agendamentos.",
+     "p": [
+      "Onde e o quê: les démarches administratives, la mairie, la préfecture, un dossier",
+      "Documentos: remplir un formulaire, une pièce d'identité, un justificatif de domicile",
+      "Passos práticos: prendre rendez-vous, une photo d'identité, faire une photocopie"
+     ],
+     "q": "Qual foi o formulário mais complicado que você já preencheu? Conte em francês o que precisou.",
+     "c": "Escreva em francês uma lista para um horário na prefeitura, com il faut e il faut que."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "une démarche",
+      "ex": "Cette démarche se fait maintenant en ligne."
+     },
+     {
+      "w": "remplir un formulaire",
+      "ex": "Il faut remplir ce formulaire en majuscules."
+     },
+     {
+      "w": "une pièce d'identité",
+      "ex": "Munissez-vous d'une pièce d'identité valide."
+     },
+     {
+      "w": "un justificatif de domicile",
+      "ex": "Une facture d'électricité sert de justificatif de domicile."
+     },
+     {
+      "w": "prendre rendez-vous",
+      "ex": "J'ai pris rendez-vous à la mairie pour jeudi."
+     },
+     {
+      "w": "un dossier",
+      "ex": "Mon dossier est complet, enfin !"
+     }
+    ],
+    "gram": "Les démarches : il faut + infinitif, il faut que + subjonctif, avoir besoin de + nom : il faut que vous apportiez une photo."
+   }
+  },
+  {
+   "d": 268,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Formal letters",
+     "g": "Write a proper French formal letter: subject line, opening, polite requests and a full closing formula.",
+     "p": [
+      "Start: Objet : Demande d'information ; Madame, Monsieur,",
+      "Body: Je me permets de vous écrire afin de... ; Je vous serais reconnaissant(e) de...",
+      "Closing formula: Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées."
+     ],
+     "q": "Have you ever written a formal letter or email? What was it about, and how did you end it?",
+     "c": "Write a short formal email in French asking a museum about group opening hours, with a full closing formula."
+    },
+    "de": {
+     "t": "Formelle Briefe",
+     "g": "Du schreibst einen korrekten französischen Geschäftsbrief: Betreff, Anrede, höfliche Bitten, Grußformel.",
+     "p": [
+      "Anfang: Objet : Demande d'information ; Madame, Monsieur,",
+      "Hauptteil: Je me permets de vous écrire afin de... ; Je vous serais reconnaissant(e) de...",
+      "Grußformel: Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées."
+     ],
+     "q": "Hast du schon einmal einen formellen Brief oder eine E-Mail geschrieben? Worum ging es, und wie hast du geendet?",
+     "c": "Schreib eine kurze formelle E-Mail an ein Museum und frag nach Öffnungszeiten für Gruppen, mit voller Grußformel."
+    },
+    "es": {
+     "t": "Cartas formales",
+     "g": "Escribe una carta formal francesa correcta: asunto, saludo, peticiones corteses y fórmula de despedida.",
+     "p": [
+      "Inicio: Objet : Demande d'information ; Madame, Monsieur,",
+      "Cuerpo: Je me permets de vous écrire afin de... ; Je vous serais reconnaissant(e) de...",
+      "Despedida: Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées."
+     ],
+     "q": "¿Has escrito alguna vez una carta o un correo formal? ¿De qué trataba y cómo lo terminaste?",
+     "c": "Escribe un correo formal corto en francés a un museo preguntando horarios para grupos, con despedida completa."
+    },
+    "fr": {
+     "t": "Les lettres formelles",
+     "g": "Rédiger une vraie lettre formelle : objet, formule d'appel, demandes polies et formule de politesse complète.",
+     "p": [
+      "Le début : Objet : Demande d'information ; Madame, Monsieur,",
+      "Le corps : Je me permets de vous écrire afin de... ; Je vous serais reconnaissant(e) de...",
+      "La formule finale : Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées."
+     ],
+     "q": "As-tu déjà écrit une lettre ou un e-mail formel ? À quel sujet, et comment l'as-tu terminé ?",
+     "c": "Écris un court e-mail formel à un musée pour demander les horaires des groupes, avec une formule finale complète."
+    },
+    "it": {
+     "t": "Lettere formali",
+     "g": "Scrivi una vera lettera formale francese: oggetto, saluto iniziale, richieste cortesi e formula di chiusura.",
+     "p": [
+      "L'inizio: Objet : Demande d'information ; Madame, Monsieur,",
+      "Il corpo: Je me permets de vous écrire afin de... ; Je vous serais reconnaissant(e) de...",
+      "La formula finale: Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées."
+     ],
+     "q": "Hai mai scritto una lettera o un'email formale? Di cosa parlava e come l'hai chiusa?",
+     "c": "Scrivi una breve email formale in francese a un museo per chiedere gli orari per gruppi, con formula finale completa."
+    },
+    "pt": {
+     "t": "Cartas formais",
+     "g": "Escreve uma carta formal francesa correta: assunto, saudação, pedidos corteses e fórmula final completa.",
+     "p": [
+      "O início: Objet : Demande d'information ; Madame, Monsieur,",
+      "O corpo: Je me permets de vous écrire afin de... ; Je vous serais reconnaissant(e) de...",
+      "A fórmula final: Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées."
+     ],
+     "q": "Já escreveste uma carta ou um e-mail formal? Sobre o quê, e como o terminaste?",
+     "c": "Escreve um e-mail formal curto em francês a um museu a perguntar os horários para grupos, com fórmula final completa."
+    },
+    "pt_BR": {
+     "t": "Cartas formais",
+     "g": "Escreva uma carta formal francesa correta: assunto, saudação, pedidos educados e fórmula final completa.",
+     "p": [
+      "O início: Objet : Demande d'information ; Madame, Monsieur,",
+      "O corpo: Je me permets de vous écrire afin de... ; Je vous serais reconnaissant(e) de...",
+      "A fórmula final: Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées."
+     ],
+     "q": "Você já escreveu uma carta ou e-mail formal? Sobre o quê, e como terminou?",
+     "c": "Escreva um e-mail formal curto em francês a um museu perguntando os horários para grupos, com fórmula final completa."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "l'objet",
+      "ex": "Objet : demande de remboursement"
+     },
+     {
+      "w": "Madame, Monsieur",
+      "ex": "Madame, Monsieur, je vous écris au sujet de ma commande."
+     },
+     {
+      "w": "je me permets de",
+      "ex": "Je me permets de vous contacter au sujet de votre annonce."
+     },
+     {
+      "w": "afin de",
+      "ex": "Je vous écris afin de confirmer ma réservation."
+     },
+     {
+      "w": "je vous serais reconnaissant(e) de",
+      "ex": "Je vous serais reconnaissante de me répondre rapidement."
+     },
+     {
+      "w": "salutations distinguées",
+      "ex": "Veuillez agréer mes salutations distinguées."
+     }
+    ],
+    "gram": "Lettre formelle : vouvoiement, conditionnel de politesse et formule finale complète : Je vous prie d'agréer l'expression de..."
+   }
+  },
+  {
+   "d": 269,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Writing an opinion paragraph",
+     "g": "Write a clear French opinion paragraph: a thesis, two arguments, an example and a conclusion.",
+     "p": [
+      "Thesis: Selon moi, le télétravail présente plus d'avantages que d'inconvénients.",
+      "Arguments and example: D'une part..., d'autre part... Prenons l'exemple de...",
+      "Conclusion: En somme..., c'est pourquoi..., pour conclure..."
+     ],
+     "q": "Which light topic would you like to argue about: books vs films, morning vs evening, sea vs mountains?",
+     "c": "Write one opinion paragraph of five or six sentences in French using d'une part, d'autre part and en somme."
+    },
+    "de": {
+     "t": "Einen Meinungsabsatz schreiben",
+     "g": "Du schreibst einen klaren französischen Meinungsabsatz: These, zwei Argumente, Beispiel, Schluss.",
+     "p": [
+      "These: Selon moi, le télétravail présente plus d'avantages que d'inconvénients.",
+      "Argumente und Beispiel: D'une part..., d'autre part... Prenons l'exemple de...",
+      "Schluss: En somme..., c'est pourquoi..., pour conclure..."
+     ],
+     "q": "Über welches leichte Thema möchtest du argumentieren: Bücher oder Filme, Morgen oder Abend, Meer oder Berge?",
+     "c": "Schreib einen Meinungsabsatz von fünf, sechs Sätzen auf Französisch mit d'une part, d'autre part und en somme."
+    },
+    "es": {
+     "t": "Escribir un párrafo de opinión",
+     "g": "Escribe un párrafo de opinión claro en francés: tesis, dos argumentos, un ejemplo y conclusión.",
+     "p": [
+      "Tesis: Selon moi, le télétravail présente plus d'avantages que d'inconvénients.",
+      "Argumentos y ejemplo: D'une part..., d'autre part... Prenons l'exemple de...",
+      "Conclusión: En somme..., c'est pourquoi..., pour conclure..."
+     ],
+     "q": "¿Sobre qué tema ligero te gustaría argumentar: libros o películas, mañana o noche, mar o montaña?",
+     "c": "Escribe un párrafo de opinión de cinco o seis frases en francés con d'une part, d'autre part y en somme."
+    },
+    "fr": {
+     "t": "Écrire un paragraphe d'opinion",
+     "g": "Rédiger un paragraphe argumenté clair : une thèse, deux arguments, un exemple et une conclusion.",
+     "p": [
+      "La thèse : Selon moi, le télétravail présente plus d'avantages que d'inconvénients.",
+      "Arguments et exemple : D'une part..., d'autre part... Prenons l'exemple de...",
+      "La conclusion : En somme..., c'est pourquoi..., pour conclure..."
+     ],
+     "q": "Sur quel sujet léger aimerais-tu argumenter : livres ou films, matin ou soir, mer ou montagne ?",
+     "c": "Écris un paragraphe d'opinion de cinq ou six phrases avec d'une part, d'autre part et en somme."
+    },
+    "it": {
+     "t": "Scrivere un paragrafo d'opinione",
+     "g": "Scrivi un paragrafo d'opinione chiaro in francese: tesi, due argomenti, un esempio e conclusione.",
+     "p": [
+      "Tesi: Selon moi, le télétravail présente plus d'avantages que d'inconvénients.",
+      "Argomenti ed esempio: D'une part..., d'autre part... Prenons l'exemple de...",
+      "Conclusione: En somme..., c'est pourquoi..., pour conclure..."
+     ],
+     "q": "Su quale tema leggero vorresti argomentare: libri o film, mattina o sera, mare o montagna?",
+     "c": "Scrivi un paragrafo d'opinione di cinque o sei frasi in francese con d'une part, d'autre part e en somme."
+    },
+    "pt": {
+     "t": "Escrever um parágrafo de opinião",
+     "g": "Escreve um parágrafo de opinião claro em francês: tese, dois argumentos, um exemplo e conclusão.",
+     "p": [
+      "Tese: Selon moi, le télétravail présente plus d'avantages que d'inconvénients.",
+      "Argumentos e exemplo: D'une part..., d'autre part... Prenons l'exemple de...",
+      "Conclusão: En somme..., c'est pourquoi..., pour conclure..."
+     ],
+     "q": "Sobre que tema leve gostavas de argumentar: livros ou filmes, manhã ou noite, mar ou montanha?",
+     "c": "Escreve um parágrafo de opinião de cinco ou seis frases em francês com d'une part, d'autre part e en somme."
+    },
+    "pt_BR": {
+     "t": "Escrevendo um parágrafo de opinião",
+     "g": "Escreva um parágrafo de opinião claro em francês: tese, dois argumentos, um exemplo e conclusão.",
+     "p": [
+      "Tese: Selon moi, le télétravail présente plus d'avantages que d'inconvénients.",
+      "Argumentos e exemplo: D'une part..., d'autre part... Prenons l'exemple de...",
+      "Conclusão: En somme..., c'est pourquoi..., pour conclure..."
+     ],
+     "q": "Sobre que tema leve você gostaria de argumentar: livros ou filmes, manhã ou noite, praia ou montanha?",
+     "c": "Escreva um parágrafo de opinião de cinco ou seis frases em francês com d'une part, d'autre part e en somme."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "selon moi",
+      "ex": "Selon moi, apprendre une langue ouvre l'esprit."
+     },
+     {
+      "w": "d'une part",
+      "ex": "D'une part, le vélo est économique."
+     },
+     {
+      "w": "d'autre part",
+      "ex": "D'autre part, il est bon pour la santé."
+     },
+     {
+      "w": "prenons l'exemple de",
+      "ex": "Prenons l'exemple de Copenhague, ville du vélo."
+     },
+     {
+      "w": "c'est pourquoi",
+      "ex": "C'est pourquoi je prends mon vélo chaque jour."
+     },
+     {
+      "w": "en somme",
+      "ex": "En somme, c'est un choix simple et agréable."
+     }
+    ],
+    "gram": "Paragraphe argumentatif : thèse, deux arguments reliés par d'une part / d'autre part, un exemple, puis conclusion avec en somme."
+   }
+  },
+  {
+   "d": 270,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Sports and the Olympics",
+     "g": "Talk sport in French: the Olympics, champions, competitions and training, plus jouer à vs faire de.",
+     "p": [
+      "The Olympics: les Jeux olympiques, une médaille d'or, un champion, une championne",
+      "Competing: une compétition, une épreuve, battre un record, se qualifier",
+      "Training: s'entraîner, un entraîneur, l'esprit d'équipe ; Pierre de Coubertin a relancé les Jeux modernes"
+     ],
+     "q": "Which Olympic sport do you enjoy watching most, and do you play or practise any sport yourself?",
+     "c": "Write four French sentences about your sporting life, two with jouer à and two with faire de."
+    },
+    "de": {
+     "t": "Sport und Olympische Spiele",
+     "g": "Du sprichst über Sport: Olympische Spiele, Champions, Wettkämpfe, Training und jouer à vs. faire de.",
+     "p": [
+      "Olympia: les Jeux olympiques, une médaille d'or, un champion, une championne",
+      "Wettkampf: une compétition, une épreuve, battre un record, se qualifier",
+      "Training: s'entraîner, un entraîneur, l'esprit d'équipe ; Pierre de Coubertin a relancé les Jeux modernes"
+     ],
+     "q": "Welche olympische Sportart schaust du am liebsten, und treibst du selbst Sport?",
+     "c": "Schreib vier französische Sätze über dein Sportleben, zwei mit jouer à und zwei mit faire de."
+    },
+    "es": {
+     "t": "El deporte y los Juegos Olímpicos",
+     "g": "Habla de deporte en francés: Juegos Olímpicos, campeones, competiciones, entrenamiento y jouer à frente a faire de.",
+     "p": [
+      "Los Juegos: les Jeux olympiques, une médaille d'or, un champion, une championne",
+      "Competir: une compétition, une épreuve, battre un record, se qualifier",
+      "Entrenar: s'entraîner, un entraîneur, l'esprit d'équipe ; Pierre de Coubertin a relancé les Jeux modernes"
+     ],
+     "q": "¿Qué deporte olímpico te gusta más ver y practicas tú algún deporte?",
+     "c": "Escribe cuatro frases en francés sobre tu vida deportiva, dos con jouer à y dos con faire de."
+    },
+    "fr": {
+     "t": "Le sport et les Jeux olympiques",
+     "g": "Parler sport : Jeux olympiques, champions, compétitions, entraînement, et jouer à ou faire de.",
+     "p": [
+      "Les Jeux : les Jeux olympiques, une médaille d'or, un champion, une championne",
+      "La compétition : une compétition, une épreuve, battre un record, se qualifier",
+      "L'entraînement : s'entraîner, un entraîneur, l'esprit d'équipe ; Pierre de Coubertin a relancé les Jeux modernes"
+     ],
+     "q": "Quel sport olympique préfères-tu regarder, et pratiques-tu toi-même un sport ?",
+     "c": "Écris quatre phrases sur ta vie sportive, deux avec jouer à et deux avec faire de."
+    },
+    "it": {
+     "t": "Lo sport e le Olimpiadi",
+     "g": "Parla di sport in francese: Olimpiadi, campioni, gare, allenamento e jouer à contro faire de.",
+     "p": [
+      "Le Olimpiadi: les Jeux olympiques, une médaille d'or, un champion, une championne",
+      "Gareggiare: une compétition, une épreuve, battre un record, se qualifier",
+      "Allenarsi: s'entraîner, un entraîneur, l'esprit d'équipe ; Pierre de Coubertin a relancé les Jeux modernes"
+     ],
+     "q": "Quale sport olimpico ti piace di più guardare, e tu pratichi qualche sport?",
+     "c": "Scrivi quattro frasi in francese sulla tua vita sportiva, due con jouer à e due con faire de."
+    },
+    "pt": {
+     "t": "O desporto e os Jogos Olímpicos",
+     "g": "Fala de desporto em francês: Jogos Olímpicos, campeões, competições, treino e jouer à versus faire de.",
+     "p": [
+      "Os Jogos: les Jeux olympiques, une médaille d'or, un champion, une championne",
+      "Competir: une compétition, une épreuve, battre un record, se qualifier",
+      "Treinar: s'entraîner, un entraîneur, l'esprit d'équipe ; Pierre de Coubertin a relancé les Jeux modernes"
+     ],
+     "q": "Que desporto olímpico gostas mais de ver, e praticas algum desporto?",
+     "c": "Escreve quatro frases em francês sobre a tua vida desportiva, duas com jouer à e duas com faire de."
+    },
+    "pt_BR": {
+     "t": "O esporte e as Olimpíadas",
+     "g": "Fale de esporte em francês: Olimpíadas, campeões, competições, treino e jouer à versus faire de.",
+     "p": [
+      "As Olimpíadas: les Jeux olympiques, une médaille d'or, un champion, une championne",
+      "Competir: une compétition, une épreuve, battre un record, se qualifier",
+      "Treinar: s'entraîner, un entraîneur, l'esprit d'équipe ; Pierre de Coubertin a relancé les Jeux modernes"
+     ],
+     "q": "Qual esporte olímpico você mais gosta de assistir, e você pratica algum esporte?",
+     "c": "Escreva quatro frases em francês sobre sua vida esportiva, duas com jouer à e duas com faire de."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "les Jeux olympiques",
+      "ex": "Les premiers Jeux olympiques modernes ont eu lieu à Athènes en 1896."
+     },
+     {
+      "w": "une médaille d'or",
+      "ex": "Elle a gagné une médaille d'or en natation."
+     },
+     {
+      "w": "battre un record",
+      "ex": "Il a battu le record du monde du 100 mètres."
+     },
+     {
+      "w": "s'entraîner",
+      "ex": "Je m'entraîne trois fois par semaine."
+     },
+     {
+      "w": "une épreuve",
+      "ex": "Le marathon est l'épreuve la plus longue."
+     },
+     {
+      "w": "l'esprit d'équipe",
+      "ex": "Au rugby, l'esprit d'équipe est essentiel."
+     }
+    ],
+    "gram": "Le sport : jouer à + sport d'équipe (jouer au foot), faire de + sport (faire de la natation) ; s'entraîner pour + nom."
+   }
+  }
+ ]
+}

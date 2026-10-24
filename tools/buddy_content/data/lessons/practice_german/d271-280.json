@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 271,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Bread and wine culture",
+     "g": "Discover German bread variety and the wine regions along the Rhine and Mosel.",
+     "p": [
+      "Bread is a big deal: das Vollkornbrot, das Roggenbrot, das Brötchen (Semmel in the south), die Brezel. Germany has hundreds of bread types.",
+      "At the bakery: Ich hätte gern zwei Brötchen und ein halbes Roggenbrot. Ist das Brot von heute? Geschnitten, bitte.",
+      "Wine regions: der Rhein, die Mosel, die Pfalz, known for Riesling. Words: der Weinberg (vineyard), die Weinlese (harvest), das Weinfest."
+     ],
+     "q": "What bread do you eat at home, and which German bread would you most like to try?",
+     "c": "Write a bakery dialogue: order three items, ask one question and pay."
+    },
+    "de": {
+     "t": "Brot- und Weinkultur",
+     "g": "Du entdeckst die Vielfalt des deutschen Brotes und die Weinregionen an Rhein und Mosel.",
+     "p": [
+      "Brot ist wichtig: das Vollkornbrot, das Roggenbrot, das Brötchen (im Süden Semmel), die Brezel. Es gibt Hunderte Brotsorten.",
+      "In der Bäckerei: Ich hätte gern zwei Brötchen und ein halbes Roggenbrot. Ist das Brot von heute? Geschnitten, bitte.",
+      "Weinregionen: der Rhein, die Mosel, die Pfalz, bekannt für Riesling. Wörter: der Weinberg, die Weinlese, das Weinfest."
+     ],
+     "q": "Welches Brot isst du zu Hause, und welches deutsche Brot möchtest du am liebsten probieren?",
+     "c": "Schreib einen Dialog in der Bäckerei: Bestell drei Sachen, stell eine Frage und bezahl."
+    },
+    "es": {
+     "t": "Cultura del pan y del vino",
+     "g": "Descubre la variedad del pan alemán y las regiones vinícolas del Rin y el Mosela.",
+     "p": [
+      "El pan es cosa seria: das Vollkornbrot (integral), das Roggenbrot (de centeno), das Brötchen (Semmel en el sur), die Brezel.",
+      "En la panadería: Ich hätte gern zwei Brötchen und ein halbes Roggenbrot. Ist das Brot von heute? Geschnitten, bitte.",
+      "Regiones: der Rhein, die Mosel, die Pfalz, famosas por el Riesling. der Weinberg (viñedo), die Weinlese (vendimia), das Weinfest."
+     ],
+     "q": "¿Qué pan comes en casa y qué pan alemán te gustaría probar?",
+     "c": "Escribe un diálogo en la panadería: pide tres cosas, haz una pregunta y paga."
+    },
+    "fr": {
+     "t": "Culture du pain et du vin",
+     "g": "Découvrir la variété du pain allemand et les régions viticoles du Rhin et de la Moselle.",
+     "p": [
+      "Le pain, c'est sérieux : das Vollkornbrot (complet), das Roggenbrot (de seigle), das Brötchen (Semmel au sud), die Brezel.",
+      "À la boulangerie : Ich hätte gern zwei Brötchen und ein halbes Roggenbrot. Ist das Brot von heute ? Geschnitten, bitte.",
+      "Régions : der Rhein, die Mosel, die Pfalz, connues pour le Riesling. der Weinberg (vignoble), die Weinlese (vendanges), das Weinfest."
+     ],
+     "q": "Quel pain manges-tu chez toi, et quel pain allemand aimerais-tu goûter ?",
+     "c": "Écris un dialogue à la boulangerie : commande trois choses, pose une question et paie."
+    },
+    "it": {
+     "t": "Cultura del pane e del vino",
+     "g": "Scopri la varietà del pane tedesco e le regioni vinicole lungo il Reno e la Mosella.",
+     "p": [
+      "Il pane è una cosa seria: das Vollkornbrot (integrale), das Roggenbrot (di segale), das Brötchen (Semmel al sud), die Brezel.",
+      "In panetteria: Ich hätte gern zwei Brötchen und ein halbes Roggenbrot. Ist das Brot von heute? Geschnitten, bitte.",
+      "Regioni: der Rhein, die Mosel, die Pfalz, famose per il Riesling. der Weinberg (vigneto), die Weinlese (vendemmia), das Weinfest."
+     ],
+     "q": "Che pane mangi a casa e quale pane tedesco vorresti assaggiare?",
+     "c": "Scrivi un dialogo in panetteria: ordina tre cose, fai una domanda e paga."
+    },
+    "pt": {
+     "t": "Cultura do pão e do vinho",
+     "g": "Descobrir a variedade do pão alemão e as regiões vinícolas do Reno e do Mosela.",
+     "p": [
+      "O pão é coisa séria: das Vollkornbrot (integral), das Roggenbrot (de centeio), das Brötchen (Semmel no sul), die Brezel.",
+      "Na padaria: Ich hätte gern zwei Brötchen und ein halbes Roggenbrot. Ist das Brot von heute? Geschnitten, bitte.",
+      "Regiões: der Rhein, die Mosel, die Pfalz, famosas pelo Riesling. der Weinberg (vinha), die Weinlese (vindima), das Weinfest."
+     ],
+     "q": "Que pão comes em casa e que pão alemão gostavas de provar?",
+     "c": "Escreve um diálogo na padaria: pede três coisas, faz uma pergunta e paga."
+    },
+    "pt_BR": {
+     "t": "Cultura do pão e do vinho",
+     "g": "Descobrir a variedade do pão alemão e as regiões vinícolas do Reno e do Mosela.",
+     "p": [
+      "O pão é coisa séria: das Vollkornbrot (integral), das Roggenbrot (de centeio), das Brötchen (Semmel no sul), die Brezel.",
+      "Na padaria: Ich hätte gern zwei Brötchen und ein halbes Roggenbrot. Ist das Brot von heute? Geschnitten, bitte.",
+      "Regiões: der Rhein, die Mosel, die Pfalz, famosas pelo Riesling. der Weinberg (vinhedo), die Weinlese (colheita), das Weinfest."
+     ],
+     "q": "Que pão você come em casa e qual pão alemão gostaria de experimentar?",
+     "c": "Escreva um diálogo na padaria: peça três coisas, faça uma pergunta e pague."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "das Vollkornbrot",
+      "ex": "Zum Frühstück esse ich gern Vollkornbrot mit Käse."
+     },
+     {
+      "w": "das Brötchen",
+      "ex": "Am Sonntag hole ich frische Brötchen."
+     },
+     {
+      "w": "die Brezel",
+      "ex": "In Bayern isst man die Brezel oft mit Butter."
+     },
+     {
+      "w": "der Weinberg",
+      "ex": "An der Mosel sieht man überall steile Weinberge."
+     },
+     {
+      "w": "die Weinlese",
+      "ex": "Die Weinlese beginnt meistens im September."
+     },
+     {
+      "w": "geschnitten",
+      "ex": "Das Roggenbrot bitte geschnitten."
+     }
+    ],
+    "gram": "Ich hätte gern + Akkusativ (einen Laib, ein Brötchen, eine Brezel); Bruchzahlen als Adjektiv: ein halbes Brot."
+   }
+  },
+  {
+   "d": 272,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Cooking conversation",
+     "g": "Talk like a cook: anbraten, würzen, köcheln lassen and other kitchen verbs.",
+     "p": [
+      "Prep: schneiden, schälen (peel), hacken (chop), reiben (grate). Heat: anbraten (sear), braten, kochen, köcheln lassen (simmer).",
+      "Flavour: würzen, salzen, pfeffern, abschmecken (taste and adjust). Measures: ein Esslöffel, eine Prise Salz.",
+      "Recipes use the infinitive or imperative: Die Zwiebeln schneiden. / Schneiden Sie die Zwiebeln. Order words: zuerst, danach, zum Schluss."
+     ],
+     "q": "Explain to me how you cook your favourite dish, step by step, in German!",
+     "c": "Write a recipe of six steps for a simple dish using at least five cooking verbs from today."
+    },
+    "de": {
+     "t": "Beim Kochen sprechen",
+     "g": "Du sprichst wie ein Koch: anbraten, würzen, köcheln lassen und andere Küchenverben.",
+     "p": [
+      "Vorbereiten: schneiden, schälen, hacken, reiben. Hitze: anbraten, braten, kochen, köcheln lassen.",
+      "Geschmack: würzen, salzen, pfeffern, abschmecken. Mengen: ein Esslöffel, eine Prise Salz.",
+      "Rezepte nutzen Infinitiv oder Imperativ: Die Zwiebeln schneiden. / Schneiden Sie die Zwiebeln. Reihenfolge: zuerst, danach, zum Schluss."
+     ],
+     "q": "Erklär mir Schritt für Schritt, wie du dein Lieblingsgericht kochst!",
+     "c": "Schreib ein Rezept in sechs Schritten für ein einfaches Gericht mit mindestens fünf Küchenverben von heute."
+    },
+    "es": {
+     "t": "Hablar de cocina",
+     "g": "Habla como un cocinero: anbraten, würzen, köcheln lassen y otros verbos de cocina.",
+     "p": [
+      "Preparar: schneiden (cortar), schälen (pelar), hacken (picar), reiben (rallar). Fuego: anbraten (sofreír), köcheln lassen (a fuego lento).",
+      "Sabor: würzen (sazonar), salzen, pfeffern, abschmecken (probar y ajustar). Medidas: ein Esslöffel, eine Prise Salz.",
+      "Las recetas usan infinitivo o imperativo: Die Zwiebeln schneiden. / Schneiden Sie die Zwiebeln. Orden: zuerst, danach, zum Schluss."
+     ],
+     "q": "Explícame paso a paso en alemán cómo cocinas tu plato favorito.",
+     "c": "Escribe una receta de seis pasos para un plato sencillo con al menos cinco verbos de cocina de hoy."
+    },
+    "fr": {
+     "t": "Parler cuisine",
+     "g": "Parler comme un cuisinier : anbraten, würzen, köcheln lassen et d'autres verbes de cuisine.",
+     "p": [
+      "Préparer : schneiden (couper), schälen (éplucher), hacken (hacher), reiben (râper). Cuisson : anbraten (saisir), köcheln lassen (mijoter).",
+      "Goût : würzen (assaisonner), salzen, pfeffern, abschmecken (rectifier). Mesures : ein Esslöffel, eine Prise Salz.",
+      "Recettes à l'infinitif ou à l'impératif : Die Zwiebeln schneiden. / Schneiden Sie die Zwiebeln. Ordre : zuerst, danach, zum Schluss."
+     ],
+     "q": "Explique-moi étape par étape en allemand comment tu prépares ton plat préféré !",
+     "c": "Écris une recette en six étapes pour un plat simple avec au moins cinq verbes de cuisine du jour."
+    },
+    "it": {
+     "t": "Parlare di cucina",
+     "g": "Parla come un cuoco: anbraten, würzen, köcheln lassen e altri verbi di cucina.",
+     "p": [
+      "schneiden (tagliare), schälen (sbucciare), hacken (tritare), reiben (grattugiare). Fuoco: anbraten (rosolare), köcheln lassen (sobbollire).",
+      "Sapore: würzen (insaporire), salzen, pfeffern, abschmecken (aggiustare di sapore). Dosi: ein Esslöffel, eine Prise Salz.",
+      "Le ricette usano infinito o imperativo: Die Zwiebeln schneiden. / Schneiden Sie die Zwiebeln. Ordine: zuerst, danach, zum Schluss."
+     ],
+     "q": "Spiegami passo dopo passo in tedesco come cucini il tuo piatto preferito!",
+     "c": "Scrivi una ricetta in sei passaggi per un piatto semplice con almeno cinque verbi di cucina di oggi."
+    },
+    "pt": {
+     "t": "Conversa de cozinha",
+     "g": "Falar como um cozinheiro: anbraten, würzen, köcheln lassen e outros verbos de cozinha.",
+     "p": [
+      "schneiden (cortar), schälen (descascar), hacken (picar), reiben (ralar). Lume: anbraten (alourar), köcheln lassen (em lume brando).",
+      "Sabor: würzen (temperar), salzen, pfeffern, abschmecken (provar e retificar). Medidas: ein Esslöffel, eine Prise Salz.",
+      "As receitas usam infinitivo ou imperativo: Die Zwiebeln schneiden. / Schneiden Sie die Zwiebeln. Ordem: zuerst, danach, zum Schluss."
+     ],
+     "q": "Explica-me passo a passo em alemão como cozinhas o teu prato preferido!",
+     "c": "Escreve uma receita em seis passos para um prato simples com pelo menos cinco verbos de cozinha de hoje."
+    },
+    "pt_BR": {
+     "t": "Papo de cozinha",
+     "g": "Falar como um cozinheiro: anbraten, würzen, köcheln lassen e outros verbos de cozinha.",
+     "p": [
+      "Preparar: schneiden (cortar), schälen (descascar), hacken (picar), reiben (ralar). Fogo: anbraten (dourar), köcheln lassen (em fogo baixo).",
+      "Sabor: würzen (temperar), salzen, pfeffern, abschmecken (provar e acertar). Medidas: ein Esslöffel, eine Prise Salz.",
+      "Receitas usam infinitivo ou imperativo: Die Zwiebeln schneiden. / Schneiden Sie die Zwiebeln. Ordem: zuerst, danach, zum Schluss."
+     ],
+     "q": "Me explique passo a passo em alemão como você prepara seu prato favorito!",
+     "c": "Escreva uma receita em seis passos para um prato simples com pelo menos cinco verbos de cozinha de hoje."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "anbraten",
+      "ex": "Zuerst die Zwiebeln in Öl anbraten."
+     },
+     {
+      "w": "würzen",
+      "ex": "Würzen Sie die Suppe mit Salz und Pfeffer."
+     },
+     {
+      "w": "köcheln lassen",
+      "ex": "Die Soße zwanzig Minuten köcheln lassen."
+     },
+     {
+      "w": "schälen",
+      "ex": "Kannst du bitte die Kartoffeln schälen?"
+     },
+     {
+      "w": "abschmecken",
+      "ex": "Zum Schluss alles noch einmal abschmecken."
+     },
+     {
+      "w": "eine Prise Salz",
+      "ex": "Gib noch eine Prise Salz dazu."
+     }
+    ],
+    "gram": "Rezeptsprache: Infinitiv am Ende (Die Zwiebeln anbraten) oder Imperativ mit Sie (Braten Sie die Zwiebeln an)."
+   }
+  },
+  {
+   "d": 273,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Fashion and style",
+     "g": "Talk about clothes and style: sich anziehen, modisch, der Stil, schick.",
+     "p": [
+      "Verbs: sich anziehen (get dressed), sich umziehen (change), anprobieren (try on), passen (fit), stehen (suit): Das steht dir!",
+      "Describe style: modisch, schick, lässig (casual), elegant, bequem, altmodisch. Mein Stil ist eher sportlich.",
+      "Shopping phrases: Kann ich das anprobieren? Haben Sie das eine Nummer größer? Die Hose passt nicht."
+     ],
+     "q": "How would you describe your personal style? What do you like to wear at the weekend?",
+     "c": "Describe what you are wearing today in five sentences, with colours and adjective endings."
+    },
+    "de": {
+     "t": "Mode und Stil",
+     "g": "Du sprichst über Kleidung und Stil: sich anziehen, modisch, der Stil, schick.",
+     "p": [
+      "Verben: sich anziehen, sich umziehen, anprobieren, passen, stehen: Das steht dir!",
+      "Stil beschreiben: modisch, schick, lässig, elegant, bequem, altmodisch. Mein Stil ist eher sportlich.",
+      "Beim Einkaufen: Kann ich das anprobieren? Haben Sie das eine Nummer größer? Die Hose passt nicht."
+     ],
+     "q": "Wie würdest du deinen persönlichen Stil beschreiben? Was trägst du am Wochenende gern?",
+     "c": "Beschreib in fünf Sätzen, was du heute trägst, mit Farben und Adjektivendungen."
+    },
+    "es": {
+     "t": "Moda y estilo",
+     "g": "Habla de ropa y estilo: sich anziehen, modisch, der Stil, schick.",
+     "p": [
+      "sich anziehen (vestirse), sich umziehen (cambiarse), anprobieren (probarse), passen (quedar de talla), stehen (sentar): Das steht dir!",
+      "Describir estilo: modisch, schick, lässig (informal), elegant, bequem, altmodisch. Mein Stil ist eher sportlich.",
+      "De compras: Kann ich das anprobieren? Haben Sie das eine Nummer größer? Die Hose passt nicht."
+     ],
+     "q": "¿Cómo describirías tu estilo personal? ¿Qué te gusta ponerte el fin de semana?",
+     "c": "Describe en cinco frases lo que llevas hoy, con colores y terminaciones de adjetivos."
+    },
+    "fr": {
+     "t": "Mode et style",
+     "g": "Parler de vêtements et de style : sich anziehen, modisch, der Stil, schick.",
+     "p": [
+      "sich anziehen (s'habiller), sich umziehen (se changer), anprobieren (essayer), passen (taille), stehen (aller bien) : Das steht dir !",
+      "Décrire un style : modisch, schick, lässig (décontracté), elegant, bequem, altmodisch. Mein Stil ist eher sportlich.",
+      "En boutique : Kann ich das anprobieren ? Haben Sie das eine Nummer größer ? Die Hose passt nicht."
+     ],
+     "q": "Comment décrirais-tu ton style ? Qu'aimes-tu porter le week-end ?",
+     "c": "Décris en cinq phrases ce que tu portes aujourd'hui, avec couleurs et terminaisons d'adjectifs."
+    },
+    "it": {
+     "t": "Moda e stile",
+     "g": "Parla di vestiti e stile: sich anziehen, modisch, der Stil, schick.",
+     "p": [
+      "sich anziehen (vestirsi), sich umziehen (cambiarsi), anprobieren (provare), passen (di taglia), stehen (stare bene): Das steht dir!",
+      "Descrivere lo stile: modisch, schick, lässig (casual), elegant, bequem, altmodisch. Mein Stil ist eher sportlich.",
+      "Fare shopping: Kann ich das anprobieren? Haben Sie das eine Nummer größer? Die Hose passt nicht."
+     ],
+     "q": "Come descriveresti il tuo stile? Cosa ti piace indossare nel fine settimana?",
+     "c": "Descrivi in cinque frasi cosa indossi oggi, con colori e desinenze degli aggettivi."
+    },
+    "pt": {
+     "t": "Moda e estilo",
+     "g": "Falar de roupa e estilo: sich anziehen, modisch, der Stil, schick.",
+     "p": [
+      "sich anziehen (vestir-se), sich umziehen (mudar de roupa), anprobieren (experimentar), passen (servir), stehen (ficar bem): Das steht dir!",
+      "Descrever estilo: modisch, schick, lässig (descontraído), elegant, bequem, altmodisch. Mein Stil ist eher sportlich.",
+      "Nas compras: Kann ich das anprobieren? Haben Sie das eine Nummer größer? Die Hose passt nicht."
+     ],
+     "q": "Como descreverias o teu estilo pessoal? O que gostas de vestir ao fim de semana?",
+     "c": "Descreve em cinco frases o que vestes hoje, com cores e terminações de adjetivos."
+    },
+    "pt_BR": {
+     "t": "Moda e estilo",
+     "g": "Falar de roupa e estilo: sich anziehen, modisch, der Stil, schick.",
+     "p": [
+      "sich anziehen (se vestir), sich umziehen (trocar de roupa), anprobieren (provar), passen (servir), stehen (ficar bem): Das steht dir!",
+      "Descrever estilo: modisch, schick, lässig (despojado), elegant, bequem, altmodisch. Mein Stil ist eher sportlich.",
+      "Nas compras: Kann ich das anprobieren? Haben Sie das eine Nummer größer? Die Hose passt nicht."
+     ],
+     "q": "Como você descreveria seu estilo pessoal? O que gosta de usar no fim de semana?",
+     "c": "Descreva em cinco frases o que você está usando hoje, com cores e terminações de adjetivos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "sich anziehen",
+      "ex": "Ich ziehe mich schnell an und gehe los."
+     },
+     {
+      "w": "anprobieren",
+      "ex": "Darf ich die Jacke anprobieren?"
+     },
+     {
+      "w": "Das steht dir!",
+      "ex": "Die blaue Farbe steht dir wirklich gut!"
+     },
+     {
+      "w": "passen",
+      "ex": "Die Schuhe passen mir leider nicht."
+     },
+     {
+      "w": "lässig",
+      "ex": "Am Wochenende trage ich lieber lässige Kleidung."
+     },
+     {
+      "w": "schick",
+      "ex": "Für die Feier ziehe ich mich schick an."
+     }
+    ],
+    "gram": "stehen + Dativ (Das Kleid steht dir), passen + Dativ (Die Hose passt mir); Adjektivendung: ein schickes Hemd, eine lässige Jacke."
+   }
+  },
+  {
+   "d": 274,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Describing feelings in depth",
+     "g": "Name subtle feelings: gerührt, erleichtert, verlegen, stolz, dankbar.",
+     "p": [
+      "gerührt = moved (Ich war gerührt von der Rede). erleichtert = relieved (Ich bin erleichtert, dass alles geklappt hat).",
+      "verlegen = embarrassed, shy (Er wurde ganz verlegen). stolz auf = proud of. dankbar für = grateful for.",
+      "Say why: Ich war gerührt, als... / Ich bin erleichtert, weil... Feelings plus reasons make your German richer."
+     ],
+     "q": "When did you last feel really erleichtert or stolz? Tell me what happened!",
+     "c": "Write one sentence for each feeling of today, each with als, weil or dass."
+    },
+    "de": {
+     "t": "Gefühle genau beschreiben",
+     "g": "Du benennst feine Gefühle: gerührt, erleichtert, verlegen, stolz, dankbar.",
+     "p": [
+      "gerührt: Ich war gerührt von der Rede. erleichtert: Ich bin erleichtert, dass alles geklappt hat.",
+      "verlegen: Er wurde ganz verlegen. stolz auf + Akk., dankbar für + Akk.",
+      "Sag den Grund: Ich war gerührt, als... / Ich bin erleichtert, weil... Gefühl plus Grund macht dein Deutsch reicher."
+     ],
+     "q": "Wann warst du zuletzt richtig erleichtert oder stolz? Erzähl mir, was passiert ist!",
+     "c": "Schreib zu jedem Gefühl von heute einen Satz, jeweils mit als, weil oder dass."
+    },
+    "es": {
+     "t": "Describir sentimientos a fondo",
+     "g": "Nombra sentimientos sutiles: gerührt, erleichtert, verlegen, stolz, dankbar.",
+     "p": [
+      "gerührt = conmovido (Ich war gerührt von der Rede). erleichtert = aliviado (Ich bin erleichtert, dass alles geklappt hat).",
+      "verlegen = cohibido, avergonzado (Er wurde ganz verlegen). stolz auf = orgulloso de. dankbar für = agradecido por.",
+      "Di el porqué: Ich war gerührt, als... / Ich bin erleichtert, weil... Sentimiento más motivo enriquece tu alemán."
+     ],
+     "q": "¿Cuándo te sentiste realmente erleichtert o stolz por última vez? ¡Cuéntame qué pasó!",
+     "c": "Escribe una frase para cada sentimiento de hoy, cada una con als, weil o dass."
+    },
+    "fr": {
+     "t": "Décrire ses sentiments en détail",
+     "g": "Nommer des sentiments subtils : gerührt, erleichtert, verlegen, stolz, dankbar.",
+     "p": [
+      "gerührt = ému (Ich war gerührt von der Rede). erleichtert = soulagé (Ich bin erleichtert, dass alles geklappt hat).",
+      "verlegen = gêné, intimidé (Er wurde ganz verlegen). stolz auf = fier de. dankbar für = reconnaissant pour.",
+      "Dis pourquoi : Ich war gerührt, als... / Ich bin erleichtert, weil... Sentiment + raison, ton allemand s'enrichit."
+     ],
+     "q": "Quand t'es-tu senti vraiment erleichtert ou stolz pour la dernière fois ? Raconte-moi !",
+     "c": "Écris une phrase pour chaque sentiment du jour, chacune avec als, weil ou dass."
+    },
+    "it": {
+     "t": "Descrivere i sentimenti a fondo",
+     "g": "Dai un nome a sentimenti sottili: gerührt, erleichtert, verlegen, stolz, dankbar.",
+     "p": [
+      "gerührt = commosso (Ich war gerührt von der Rede). erleichtert = sollevato (Ich bin erleichtert, dass alles geklappt hat).",
+      "verlegen = imbarazzato (Er wurde ganz verlegen). stolz auf = orgoglioso di. dankbar für = grato per.",
+      "Spiega il motivo: Ich war gerührt, als... / Ich bin erleichtert, weil... Sentimento + motivo arricchisce il tuo tedesco."
+     ],
+     "q": "Quando ti sei sentito davvero erleichtert o stolz l'ultima volta? Raccontami cos'è successo!",
+     "c": "Scrivi una frase per ogni sentimento di oggi, ognuna con als, weil o dass."
+    },
+    "pt": {
+     "t": "Descrever sentimentos a fundo",
+     "g": "Dar nome a sentimentos subtis: gerührt, erleichtert, verlegen, stolz, dankbar.",
+     "p": [
+      "gerührt = comovido (Ich war gerührt von der Rede). erleichtert = aliviado (Ich bin erleichtert, dass alles geklappt hat).",
+      "verlegen = envergonhado, tímido (Er wurde ganz verlegen). stolz auf = orgulhoso de. dankbar für = grato por.",
+      "Diz porquê: Ich war gerührt, als... / Ich bin erleichtert, weil... Sentimento + motivo enriquece o teu alemão."
+     ],
+     "q": "Quando te sentiste mesmo erleichtert ou stolz pela última vez? Conta-me o que aconteceu!",
+     "c": "Escreve uma frase para cada sentimento de hoje, cada uma com als, weil ou dass."
+    },
+    "pt_BR": {
+     "t": "Descrever sentimentos a fundo",
+     "g": "Dar nome a sentimentos sutis: gerührt, erleichtert, verlegen, stolz, dankbar.",
+     "p": [
+      "gerührt = emocionado (Ich war gerührt von der Rede). erleichtert = aliviado (Ich bin erleichtert, dass alles geklappt hat).",
+      "verlegen = sem graça, tímido (Er wurde ganz verlegen). stolz auf = orgulhoso de. dankbar für = grato por.",
+      "Diga o porquê: Ich war gerührt, als... / Ich bin erleichtert, weil... Sentimento + motivo enriquece seu alemão."
+     ],
+     "q": "Quando você se sentiu realmente erleichtert ou stolz pela última vez? Me conte o que aconteceu!",
+     "c": "Escreva uma frase para cada sentimento de hoje, cada uma com als, weil ou dass."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "gerührt",
+      "ex": "Ich war ganz gerührt von ihrem Brief."
+     },
+     {
+      "w": "erleichtert",
+      "ex": "Wir sind erleichtert, dass du gut angekommen bist."
+     },
+     {
+      "w": "verlegen",
+      "ex": "Bei dem Kompliment wurde sie ein bisschen verlegen."
+     },
+     {
+      "w": "stolz auf",
+      "ex": "Die Eltern sind stolz auf ihre Tochter."
+     },
+     {
+      "w": "dankbar für",
+      "ex": "Ich bin dir dankbar für deine Hilfe."
+     },
+     {
+      "w": "gespannt",
+      "ex": "Ich bin gespannt, wie der Film endet."
+     }
+    ],
+    "gram": "Adjektiv + Präposition: stolz auf, dankbar für, gespannt auf (+ Akk.); erleichtert, dass... / gerührt, als... (Verb am Ende)."
+   }
+  },
+  {
+   "d": 275,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Friendship and conflict",
+     "g": "Handle friendship ups and downs: sich versöhnen, sich entschuldigen, in Kontakt bleiben.",
+     "p": [
+      "Conflict: sich streiten (argue), ein Missverständnis (misunderstanding), beleidigt sein (be offended), sauer sein auf (be cross with).",
+      "Making up: sich entschuldigen bei + Dat für + Akk: Ich möchte mich bei dir entschuldigen. Sich versöhnen = to make up.",
+      "Staying close: in Kontakt bleiben, sich melden (get in touch), sich aufeinander verlassen können."
+     ],
+     "q": "What makes a good friend for you? And how do you usually solve a small conflict?",
+     "c": "Write a short apology message to a friend after a misunderstanding, using sich entschuldigen."
+    },
+    "de": {
+     "t": "Freundschaft und Konflikte",
+     "g": "Du gehst mit Höhen und Tiefen um: sich versöhnen, sich entschuldigen, in Kontakt bleiben.",
+     "p": [
+      "Konflikt: sich streiten, ein Missverständnis, beleidigt sein, sauer sein auf.",
+      "Versöhnung: sich entschuldigen bei + Dat. für + Akk.: Ich möchte mich bei dir entschuldigen. Sich versöhnen.",
+      "Nah bleiben: in Kontakt bleiben, sich melden, sich aufeinander verlassen können."
+     ],
+     "q": "Was macht für dich einen guten Freund aus? Und wie löst du normalerweise einen kleinen Konflikt?",
+     "c": "Schreib nach einem Missverständnis eine kurze Entschuldigung an einen Freund mit sich entschuldigen."
+    },
+    "es": {
+     "t": "Amistad y conflictos",
+     "g": "Gestiona los altibajos de la amistad: sich versöhnen, sich entschuldigen, in Kontakt bleiben.",
+     "p": [
+      "Conflicto: sich streiten (discutir), ein Missverständnis (malentendido), beleidigt sein (ofenderse), sauer sein auf (estar enfadado con).",
+      "Reconciliarse: sich entschuldigen bei + Dat für + Akk: Ich möchte mich bei dir entschuldigen. Sich versöhnen = hacer las paces.",
+      "Seguir cerca: in Kontakt bleiben, sich melden (dar señales de vida), sich aufeinander verlassen können."
+     ],
+     "q": "¿Qué hace a un buen amigo para ti? ¿Y cómo resuelves normalmente un pequeño conflicto?",
+     "c": "Escribe un breve mensaje de disculpa a un amigo tras un malentendido, usando sich entschuldigen."
+    },
+    "fr": {
+     "t": "Amitié et conflits",
+     "g": "Gérer les hauts et les bas de l'amitié : sich versöhnen, sich entschuldigen, in Kontakt bleiben.",
+     "p": [
+      "Conflit : sich streiten (se disputer), ein Missverständnis (malentendu), beleidigt sein (être vexé), sauer sein auf (en vouloir à).",
+      "Réconciliation : sich entschuldigen bei + Dat für + Akk : Ich möchte mich bei dir entschuldigen. Sich versöhnen = se réconcilier.",
+      "Rester proches : in Kontakt bleiben, sich melden (donner des nouvelles), sich aufeinander verlassen können."
+     ],
+     "q": "Qu'est-ce qui fait un bon ami pour toi ? Et comment règles-tu d'habitude un petit conflit ?",
+     "c": "Écris un court message d'excuse à un ami après un malentendu, avec sich entschuldigen."
+    },
+    "it": {
+     "t": "Amicizia e conflitti",
+     "g": "Gestisci gli alti e bassi dell'amicizia: sich versöhnen, sich entschuldigen, in Kontakt bleiben.",
+     "p": [
+      "Conflitto: sich streiten (litigare), ein Missverständnis (malinteso), beleidigt sein (essere offeso), sauer sein auf (avercela con).",
+      "Fare pace: sich entschuldigen bei + Dat für + Akk: Ich möchte mich bei dir entschuldigen. Sich versöhnen = riconciliarsi.",
+      "Restare vicini: in Kontakt bleiben, sich melden (farsi sentire), sich aufeinander verlassen können."
+     ],
+     "q": "Cosa rende qualcuno un buon amico per te? E come risolvi di solito un piccolo conflitto?",
+     "c": "Scrivi un breve messaggio di scuse a un amico dopo un malinteso, usando sich entschuldigen."
+    },
+    "pt": {
+     "t": "Amizade e conflitos",
+     "g": "Lidar com altos e baixos da amizade: sich versöhnen, sich entschuldigen, in Kontakt bleiben.",
+     "p": [
+      "Conflito: sich streiten (discutir), ein Missverständnis (mal-entendido), beleidigt sein (ficar ofendido), sauer sein auf (zangado com).",
+      "Fazer as pazes: sich entschuldigen bei + Dat für + Akk: Ich möchte mich bei dir entschuldigen. Sich versöhnen = reconciliar-se.",
+      "Manter a proximidade: in Kontakt bleiben, sich melden (dar notícias), sich aufeinander verlassen können."
+     ],
+     "q": "O que faz um bom amigo para ti? E como resolves normalmente um pequeno conflito?",
+     "c": "Escreve uma mensagem curta de desculpa a um amigo depois de um mal-entendido, com sich entschuldigen."
+    },
+    "pt_BR": {
+     "t": "Amizade e conflitos",
+     "g": "Lidar com altos e baixos da amizade: sich versöhnen, sich entschuldigen, in Kontakt bleiben.",
+     "p": [
+      "Conflito: sich streiten (brigar), ein Missverständnis (mal-entendido), beleidigt sein (ficar ofendido), sauer sein auf (estar bravo com).",
+      "Fazer as pazes: sich entschuldigen bei + Dat für + Akk: Ich möchte mich bei dir entschuldigen. Sich versöhnen = fazer as pazes.",
+      "Manter contato: in Kontakt bleiben, sich melden (dar notícias), sich aufeinander verlassen können."
+     ],
+     "q": "O que faz um bom amigo para você? E como você costuma resolver um pequeno conflito?",
+     "c": "Escreva uma mensagem curta de desculpas para um amigo depois de um mal-entendido, com sich entschuldigen."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "sich streiten",
+      "ex": "Wir haben uns wegen einer Kleinigkeit gestritten."
+     },
+     {
+      "w": "das Missverständnis",
+      "ex": "Das war nur ein Missverständnis."
+     },
+     {
+      "w": "sich entschuldigen bei",
+      "ex": "Ich möchte mich bei dir für gestern entschuldigen."
+     },
+     {
+      "w": "sich versöhnen",
+      "ex": "Nach dem Streit haben sie sich schnell versöhnt."
+     },
+     {
+      "w": "in Kontakt bleiben",
+      "ex": "Lass uns unbedingt in Kontakt bleiben!"
+     },
+     {
+      "w": "sich melden",
+      "ex": "Melde dich, wenn du wieder in der Stadt bist."
+     }
+    ],
+    "gram": "Reziprok: sich streiten/versöhnen (wir streiten uns); sich entschuldigen bei + Dativ (Person) für + Akkusativ (Sache)."
+   }
+  },
+  {
+   "d": 276,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Futur I vs present for future",
+     "g": "Choose between present and werden for the future: plans, promises and assumptions.",
+     "p": [
+      "German often uses the present with a time word for the future: Morgen fahre ich nach Bonn. Nächste Woche habe ich frei.",
+      "werden + infinitive adds weight: promises (Ich werde dir helfen!), predictions (Es wird regnen) and firm intentions.",
+      "werden + wohl/schon expresses an assumption about now: Er wird wohl krank sein (He's probably ill)."
+     ],
+     "q": "Tell me your plans for next weekend, and make me one promise with Ich werde...!",
+     "c": "Write three sentences each: future with present tense, a promise with werden, and an assumption with wohl."
+    },
+    "de": {
+     "t": "Futur I oder Präsens für die Zukunft",
+     "g": "Du wählst zwischen Präsens und werden: Pläne, Versprechen und Vermutungen.",
+     "p": [
+      "Oft reicht Präsens mit Zeitangabe: Morgen fahre ich nach Bonn. Nächste Woche habe ich frei.",
+      "werden + Infinitiv gibt Gewicht: Versprechen (Ich werde dir helfen!), Vorhersagen (Es wird regnen), feste Absichten.",
+      "werden + wohl/schon drückt eine Vermutung über jetzt aus: Er wird wohl krank sein."
+     ],
+     "q": "Erzähl mir deine Pläne fürs nächste Wochenende und gib mir ein Versprechen mit Ich werde...!",
+     "c": "Schreib je drei Sätze: Zukunft im Präsens, ein Versprechen mit werden, eine Vermutung mit wohl."
+    },
+    "es": {
+     "t": "Futur I o presente para el futuro",
+     "g": "Elige entre presente y werden para el futuro: planes, promesas y suposiciones.",
+     "p": [
+      "El alemán suele usar presente con una marca temporal: Morgen fahre ich nach Bonn. Nächste Woche habe ich frei.",
+      "werden + infinitivo da peso: promesas (Ich werde dir helfen!), predicciones (Es wird regnen) e intenciones firmes.",
+      "werden + wohl/schon expresa suposición sobre el presente: Er wird wohl krank sein (estará enfermo)."
+     ],
+     "q": "Cuéntame tus planes para el próximo fin de semana y hazme una promesa con Ich werde...",
+     "c": "Escribe tres frases de cada: futuro en presente, promesa con werden y suposición con wohl."
+    },
+    "fr": {
+     "t": "Futur I ou présent pour l'avenir",
+     "g": "Choisir entre présent et werden pour le futur : projets, promesses et suppositions.",
+     "p": [
+      "L'allemand utilise souvent le présent avec un repère temporel : Morgen fahre ich nach Bonn. Nächste Woche habe ich frei.",
+      "werden + infinitif donne du poids : promesses (Ich werde dir helfen !), prévisions (Es wird regnen), intentions fermes.",
+      "werden + wohl/schon exprime une supposition sur le présent : Er wird wohl krank sein (il doit être malade)."
+     ],
+     "q": "Raconte-moi tes projets pour le week-end prochain et fais-moi une promesse avec Ich werde... !",
+     "c": "Écris trois phrases de chaque : futur au présent, promesse avec werden, supposition avec wohl."
+    },
+    "it": {
+     "t": "Futur I o presente per il futuro",
+     "g": "Scegli tra presente e werden per il futuro: progetti, promesse e supposizioni.",
+     "p": [
+      "Il tedesco usa spesso il presente con un'indicazione di tempo: Morgen fahre ich nach Bonn. Nächste Woche habe ich frei.",
+      "werden + infinito dà peso: promesse (Ich werde dir helfen!), previsioni (Es wird regnen), intenzioni ferme.",
+      "werden + wohl/schon esprime una supposizione sul presente: Er wird wohl krank sein (sarà malato)."
+     ],
+     "q": "Raccontami i tuoi piani per il prossimo weekend e fammi una promessa con Ich werde...!",
+     "c": "Scrivi tre frasi per tipo: futuro col presente, promessa con werden, supposizione con wohl."
+    },
+    "pt": {
+     "t": "Futur I ou presente para o futuro",
+     "g": "Escolher entre presente e werden para o futuro: planos, promessas e suposições.",
+     "p": [
+      "O alemão usa muitas vezes o presente com uma indicação de tempo: Morgen fahre ich nach Bonn. Nächste Woche habe ich frei.",
+      "werden + infinitivo dá peso: promessas (Ich werde dir helfen!), previsões (Es wird regnen) e intenções firmes.",
+      "werden + wohl/schon exprime suposição sobre o presente: Er wird wohl krank sein (deve estar doente)."
+     ],
+     "q": "Conta-me os teus planos para o próximo fim de semana e faz-me uma promessa com Ich werde...!",
+     "c": "Escreve três frases de cada: futuro com presente, promessa com werden e suposição com wohl."
+    },
+    "pt_BR": {
+     "t": "Futur I ou presente para o futuro",
+     "g": "Escolher entre presente e werden para o futuro: planos, promessas e suposições.",
+     "p": [
+      "O alemão usa muitas vezes o presente com uma indicação de tempo: Morgen fahre ich nach Bonn. Nächste Woche habe ich frei.",
+      "werden + infinitivo dá peso: promessas (Ich werde dir helfen!), previsões (Es wird regnen) e intenções firmes.",
+      "werden + wohl/schon expressa suposição sobre o presente: Er wird wohl krank sein (deve estar doente)."
+     ],
+     "q": "Me conte seus planos para o próximo fim de semana e me faça uma promessa com Ich werde...!",
+     "c": "Escreva três frases de cada: futuro com presente, promessa com werden e suposição com wohl."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Ich werde ...",
+      "ex": "Ich werde dich jeden Tag anrufen, versprochen!"
+     },
+     {
+      "w": "nächste Woche",
+      "ex": "Nächste Woche fange ich mit dem neuen Kurs an."
+     },
+     {
+      "w": "wohl",
+      "ex": "Sie wird wohl noch im Büro sein."
+     },
+     {
+      "w": "versprechen",
+      "ex": "Ich verspreche dir, dass ich pünktlich bin."
+     },
+     {
+      "w": "vorhaben",
+      "ex": "Was hast du am Wochenende vor?"
+     },
+     {
+      "w": "wahrscheinlich",
+      "ex": "Es wird wahrscheinlich morgen schneien."
+     }
+    ],
+    "gram": "Futur I: werden (Position 2) + Infinitiv (Ende); Vermutung: Er wird wohl zu Hause sein; Zukunft oft Präsens + Zeitangabe."
+   }
+  },
+  {
+   "d": 277,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Futur II",
+     "g": "Make assumptions about the past: Er wird schon angekommen sein.",
+     "p": [
+      "Form: werden + Partizip II + haben/sein: Sie wird das Buch gelesen haben. Er wird angekommen sein.",
+      "Main use: assumption about something already done, often with wohl or schon: Sie wird den Zug wohl verpasst haben.",
+      "Also for something finished by a future point: Bis Freitag werde ich den Bericht geschrieben haben."
+     ],
+     "q": "Your friend is late. What could have happened? Make three guesses with Futur II!",
+     "c": "Write four Futur II sentences: two guesses about the past and two about what you will have done by next month."
+    },
+    "de": {
+     "t": "Futur II",
+     "g": "Du stellst Vermutungen über die Vergangenheit an: Er wird schon angekommen sein.",
+     "p": [
+      "Form: werden + Partizip II + haben/sein: Sie wird das Buch gelesen haben. Er wird angekommen sein.",
+      "Hauptsächlich Vermutung über Vergangenes, oft mit wohl oder schon: Sie wird den Zug wohl verpasst haben.",
+      "Auch für Abgeschlossenes bis zu einem Zeitpunkt in der Zukunft: Bis Freitag werde ich den Bericht geschrieben haben."
+     ],
+     "q": "Dein Freund ist zu spät. Was könnte passiert sein? Stell drei Vermutungen im Futur II an!",
+     "c": "Schreib vier Sätze im Futur II: zwei Vermutungen über die Vergangenheit, zwei über das, was du bis nächsten Monat erledigt haben wirst."
+    },
+    "es": {
+     "t": "Futur II",
+     "g": "Haz suposiciones sobre el pasado: Er wird schon angekommen sein (ya habrá llegado).",
+     "p": [
+      "Forma: werden + Partizip II + haben/sein: Sie wird das Buch gelesen haben. Er wird angekommen sein.",
+      "Uso principal: suponer algo ya ocurrido, a menudo con wohl o schon: Sie wird den Zug wohl verpasst haben.",
+      "También para algo acabado antes de un momento futuro: Bis Freitag werde ich den Bericht geschrieben haben."
+     ],
+     "q": "Tu amigo llega tarde. ¿Qué habrá pasado? ¡Haz tres suposiciones en Futur II!",
+     "c": "Escribe cuatro frases en Futur II: dos suposiciones sobre el pasado y dos sobre lo que habrás hecho el mes que viene."
+    },
+    "fr": {
+     "t": "Futur II",
+     "g": "Faire des suppositions sur le passé : Er wird schon angekommen sein (il sera déjà arrivé).",
+     "p": [
+      "Forme : werden + Partizip II + haben/sein : Sie wird das Buch gelesen haben. Er wird angekommen sein.",
+      "Usage principal : supposer une chose déjà faite, souvent avec wohl ou schon : Sie wird den Zug wohl verpasst haben.",
+      "Aussi pour une action finie avant un moment futur : Bis Freitag werde ich den Bericht geschrieben haben."
+     ],
+     "q": "Ton ami est en retard. Que s'est-il passé ? Fais trois suppositions au Futur II !",
+     "c": "Écris quatre phrases au Futur II : deux suppositions sur le passé, deux sur ce que tu auras fait le mois prochain."
+    },
+    "it": {
+     "t": "Futur II",
+     "g": "Fai supposizioni sul passato: Er wird schon angekommen sein (sarà già arrivato).",
+     "p": [
+      "Forma: werden + Partizip II + haben/sein: Sie wird das Buch gelesen haben. Er wird angekommen sein.",
+      "Uso principale: supporre qualcosa già avvenuto, spesso con wohl o schon: Sie wird den Zug wohl verpasst haben.",
+      "Anche per un'azione conclusa entro un momento futuro: Bis Freitag werde ich den Bericht geschrieben haben."
+     ],
+     "q": "Il tuo amico è in ritardo. Cosa sarà successo? Fai tre supposizioni al Futur II!",
+     "c": "Scrivi quattro frasi al Futur II: due supposizioni sul passato e due su cosa avrai fatto entro il mese prossimo."
+    },
+    "pt": {
+     "t": "Futur II",
+     "g": "Fazer suposições sobre o passado: Er wird schon angekommen sein (já deve ter chegado).",
+     "p": [
+      "Forma: werden + Partizip II + haben/sein: Sie wird das Buch gelesen haben. Er wird angekommen sein.",
+      "Uso principal: supor algo já acontecido, muitas vezes com wohl ou schon: Sie wird den Zug wohl verpasst haben.",
+      "Também para algo concluído até um momento futuro: Bis Freitag werde ich den Bericht geschrieben haben."
+     ],
+     "q": "O teu amigo está atrasado. O que terá acontecido? Faz três suposições no Futur II!",
+     "c": "Escreve quatro frases no Futur II: duas suposições sobre o passado e duas sobre o que terás feito até ao próximo mês."
+    },
+    "pt_BR": {
+     "t": "Futur II",
+     "g": "Fazer suposições sobre o passado: Er wird schon angekommen sein (já deve ter chegado).",
+     "p": [
+      "Forma: werden + Partizip II + haben/sein: Sie wird das Buch gelesen haben. Er wird angekommen sein.",
+      "Uso principal: supor algo que já aconteceu, muitas vezes com wohl ou schon: Sie wird den Zug wohl verpasst haben.",
+      "Também para algo concluído até um momento futuro: Bis Freitag werde ich den Bericht geschrieben haben."
+     ],
+     "q": "Seu amigo está atrasado. O que terá acontecido? Faça três suposições no Futur II!",
+     "c": "Escreva quatro frases no Futur II: duas suposições sobre o passado e duas sobre o que você terá feito até o mês que vem."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "angekommen sein",
+      "ex": "Keine Sorge, sie wird schon angekommen sein."
+     },
+     {
+      "w": "verpassen",
+      "ex": "Er wird wohl den Bus verpasst haben."
+     },
+     {
+      "w": "vergessen haben",
+      "ex": "Sie wird unseren Termin vergessen haben."
+     },
+     {
+      "w": "bis Freitag",
+      "ex": "Bis Freitag werde ich alles erledigt haben."
+     },
+     {
+      "w": "erledigen",
+      "ex": "Hast du alles erledigt?"
+     },
+     {
+      "w": "schon",
+      "ex": "Das wird schon seinen Grund gehabt haben."
+     }
+    ],
+    "gram": "Futur II: werden + Partizip II + haben/sein (Infinitiv Perfekt) am Ende: Er wird angekommen sein; meist Vermutung mit wohl/schon."
+   }
+  },
+  {
+   "d": 278,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Spoken vs written German",
+     "g": "Recognise registers: umgangssprachlich, standard and gehoben.",
+     "p": [
+      "Colloquial: Ich hab keine Lust. Haste Zeit? Das ist echt cool. Endings get dropped and fillers appear: halt, eben, oder?",
+      "Standard: Ich habe keine Zeit. Hast du Zeit? Used at work, in shops and in most writing.",
+      "Elevated (gehoben): Ich verfüge leider nicht über die nötige Zeit. Präteritum, Genitiv and nouns are typical in formal texts."
+     ],
+     "q": "Say Ich habe keine Lust, heute zu arbeiten in a casual, a standard and a very formal way!",
+     "c": "Take a casual chat message and rewrite it twice: once in standard German and once in a formal style."
+    },
+    "de": {
+     "t": "Gesprochenes und geschriebenes Deutsch",
+     "g": "Du erkennst Register: umgangssprachlich, standardsprachlich und gehoben.",
+     "p": [
+      "Umgangssprache: Ich hab keine Lust. Haste Zeit? Das ist echt cool. Endungen fallen weg, Füllwörter kommen: halt, eben, oder?",
+      "Standard: Ich habe keine Zeit. Hast du Zeit? Bei der Arbeit, im Geschäft und in den meisten Texten.",
+      "Gehoben: Ich verfüge leider nicht über die nötige Zeit. Präteritum, Genitiv und Nomen sind typisch für formelle Texte."
+     ],
+     "q": "Sag Ich habe keine Lust, heute zu arbeiten einmal locker, einmal neutral und einmal sehr formell!",
+     "c": "Nimm eine lockere Chatnachricht und schreib sie zweimal neu: standardsprachlich und formell."
+    },
+    "es": {
+     "t": "Alemán hablado y escrito",
+     "g": "Reconoce los registros: umgangssprachlich, estándar y gehoben (culto).",
+     "p": [
+      "Coloquial: Ich hab keine Lust. Haste Zeit? Das ist echt cool. Se pierden terminaciones y salen muletillas: halt, eben, oder?",
+      "Estándar: Ich habe keine Zeit. Hast du Zeit? En el trabajo, en tiendas y en la mayoría de textos.",
+      "Culto: Ich verfüge leider nicht über die nötige Zeit. Präteritum, genitivo y sustantivos son típicos del texto formal."
+     ],
+     "q": "Di Ich habe keine Lust, heute zu arbeiten de forma coloquial, estándar y muy formal.",
+     "c": "Toma un mensaje de chat informal y reescríbelo dos veces: en alemán estándar y en estilo formal."
+    },
+    "fr": {
+     "t": "Allemand parlé et écrit",
+     "g": "Reconnaître les registres : umgangssprachlich, standard et gehoben (soutenu).",
+     "p": [
+      "Familier : Ich hab keine Lust. Haste Zeit ? Das ist echt cool. Terminaisons avalées, petits mots : halt, eben, oder ?",
+      "Standard : Ich habe keine Zeit. Hast du Zeit ? Au travail, en magasin et dans la plupart des textes.",
+      "Soutenu : Ich verfüge leider nicht über die nötige Zeit. Präteritum, génitif et noms sont typiques des textes formels."
+     ],
+     "q": "Dis Ich habe keine Lust, heute zu arbeiten de façon familière, standard et très soutenue !",
+     "c": "Prends un message de chat familier et réécris-le deux fois : en allemand standard et en style soutenu."
+    },
+    "it": {
+     "t": "Tedesco parlato e scritto",
+     "g": "Riconosci i registri: umgangssprachlich, standard e gehoben (formale).",
+     "p": [
+      "Colloquiale: Ich hab keine Lust. Haste Zeit? Das ist echt cool. Cadono desinenze, compaiono riempitivi: halt, eben, oder?",
+      "Standard: Ich habe keine Zeit. Hast du Zeit? Al lavoro, nei negozi e nella maggior parte dei testi.",
+      "Formale: Ich verfüge leider nicht über die nötige Zeit. Präteritum, genitivo e sostantivi sono tipici dei testi formali."
+     ],
+     "q": "Di' Ich habe keine Lust, heute zu arbeiten in modo colloquiale, standard e molto formale!",
+     "c": "Prendi un messaggio di chat informale e riscrivilo due volte: in tedesco standard e in stile formale."
+    },
+    "pt": {
+     "t": "Alemão falado e escrito",
+     "g": "Reconhecer registos: umgangssprachlich, padrão e gehoben (cuidado).",
+     "p": [
+      "Coloquial: Ich hab keine Lust. Haste Zeit? Das ist echt cool. Caem terminações e surgem bordões: halt, eben, oder?",
+      "Padrão: Ich habe keine Zeit. Hast du Zeit? No trabalho, nas lojas e na maioria dos textos.",
+      "Cuidado: Ich verfüge leider nicht über die nötige Zeit. Präteritum, genitivo e nomes são típicos de textos formais."
+     ],
+     "q": "Diz Ich habe keine Lust, heute zu arbeiten de forma coloquial, padrão e muito formal!",
+     "c": "Pega numa mensagem de chat informal e reescreve-a duas vezes: em alemão padrão e em estilo formal."
+    },
+    "pt_BR": {
+     "t": "Alemão falado e escrito",
+     "g": "Reconhecer registros: umgangssprachlich, padrão e gehoben (formal).",
+     "p": [
+      "Coloquial: Ich hab keine Lust. Haste Zeit? Das ist echt cool. Terminações somem e aparecem muletas: halt, eben, oder?",
+      "Padrão: Ich habe keine Zeit. Hast du Zeit? No trabalho, nas lojas e na maioria dos textos.",
+      "Formal: Ich verfüge leider nicht über die nötige Zeit. Präteritum, genitivo e substantivos são típicos de textos formais."
+     ],
+     "q": "Diga Ich habe keine Lust, heute zu arbeiten de forma coloquial, padrão e bem formal!",
+     "c": "Pegue uma mensagem informal de chat e reescreva duas vezes: em alemão padrão e em estilo formal."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "umgangssprachlich",
+      "ex": "Krass ist ein umgangssprachliches Wort."
+     },
+     {
+      "w": "gehoben",
+      "ex": "In gehobener Sprache sagt man speisen statt essen."
+     },
+     {
+      "w": "halt",
+      "ex": "Das ist halt so."
+     },
+     {
+      "w": "verfügen über",
+      "ex": "Das Hotel verfügt über einen großen Garten."
+     },
+     {
+      "w": "Haste Zeit?",
+      "ex": "Haste heute Abend Zeit?"
+     },
+     {
+      "w": "sich ausdrücken",
+      "ex": "Er drückt sich immer sehr gewählt aus."
+     }
+    ],
+    "gram": "Register: mündlich Perfekt, Partikeln, Verkürzungen (hab, haste); schriftlich-gehoben Präteritum, Genitiv, Nominalstil."
+   }
+  },
+  {
+   "d": 279,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Preparing a B1 style talk",
+     "g": "Give a short monologue and handle follow-up questions with confidence.",
+     "p": [
+      "Structure: Introduction (Ich möchte heute über... sprechen), two or three points, own experience, conclusion (Zum Schluss...).",
+      "Signpost: Zuerst..., Ein weiterer Punkt ist..., In meinem Heimatland..., Zusammenfassend kann ich sagen...",
+      "Follow-up questions: Gute Frage! / Das muss ich kurz überlegen. / Wenn ich Sie richtig verstehe, meinen Sie... Then answer calmly."
+     ],
+     "q": "Give me a two-minute talk on Mein Lieblingshobby, then I will ask you a follow-up question!",
+     "c": "Write an outline for a three-minute talk on Reisen: introduction, three points, conclusion, one example each."
+    },
+    "de": {
+     "t": "Eine Präsentation vorbereiten (B1)",
+     "g": "Du hältst einen kurzen Monolog und reagierst sicher auf Nachfragen.",
+     "p": [
+      "Aufbau: Einleitung (Ich möchte heute über... sprechen), zwei oder drei Punkte, eigene Erfahrung, Schluss (Zum Schluss...).",
+      "Wegweiser: Zuerst..., Ein weiterer Punkt ist..., In meinem Heimatland..., Zusammenfassend kann ich sagen...",
+      "Nachfragen: Gute Frage! / Das muss ich kurz überlegen. / Wenn ich Sie richtig verstehe, meinen Sie... Dann ruhig antworten."
+     ],
+     "q": "Halt mir einen Vortrag von zwei Minuten über Mein Lieblingshobby, danach stelle ich dir eine Frage!",
+     "c": "Schreib eine Gliederung für einen Vortrag von drei Minuten über Reisen: Einleitung, drei Punkte, Schluss, je ein Beispiel."
+    },
+    "es": {
+     "t": "Preparar una exposición de nivel B1",
+     "g": "Haz un monólogo corto y responde con seguridad a las preguntas.",
+     "p": [
+      "Estructura: introducción (Ich möchte heute über... sprechen), dos o tres puntos, experiencia propia, conclusión (Zum Schluss...).",
+      "Conectores: Zuerst..., Ein weiterer Punkt ist..., In meinem Heimatland..., Zusammenfassend kann ich sagen...",
+      "Preguntas: Gute Frage! / Das muss ich kurz überlegen. / Wenn ich Sie richtig verstehe, meinen Sie... Y responde con calma."
+     ],
+     "q": "Dame una charla de dos minutos sobre Mein Lieblingshobby y luego te haré una pregunta.",
+     "c": "Escribe un esquema para una charla de tres minutos sobre Reisen: introducción, tres puntos, conclusión y un ejemplo para cada uno."
+    },
+    "fr": {
+     "t": "Préparer un exposé niveau B1",
+     "g": "Faire un court monologue et répondre avec assurance aux questions.",
+     "p": [
+      "Plan : introduction (Ich möchte heute über... sprechen), deux ou trois points, ton expérience, conclusion (Zum Schluss...).",
+      "Repères : Zuerst..., Ein weiterer Punkt ist..., In meinem Heimatland..., Zusammenfassend kann ich sagen...",
+      "Questions : Gute Frage ! / Das muss ich kurz überlegen. / Wenn ich Sie richtig verstehe, meinen Sie... Puis réponds calmement."
+     ],
+     "q": "Fais-moi un exposé de deux minutes sur Mein Lieblingshobby, ensuite je te poserai une question !",
+     "c": "Écris le plan d'un exposé de trois minutes sur Reisen : introduction, trois points, conclusion, un exemple chacun."
+    },
+    "it": {
+     "t": "Preparare una presentazione B1",
+     "g": "Fai un breve monologo e rispondi con sicurezza alle domande.",
+     "p": [
+      "Struttura: introduzione (Ich möchte heute über... sprechen), due o tre punti, esperienza personale, conclusione (Zum Schluss...).",
+      "Segnali: Zuerst..., Ein weiterer Punkt ist..., In meinem Heimatland..., Zusammenfassend kann ich sagen...",
+      "Domande: Gute Frage! / Das muss ich kurz überlegen. / Wenn ich Sie richtig verstehe, meinen Sie... Poi rispondi con calma."
+     ],
+     "q": "Fammi una presentazione di due minuti su Mein Lieblingshobby, poi ti farò una domanda!",
+     "c": "Scrivi lo schema di una presentazione di tre minuti su Reisen: introduzione, tre punti, conclusione, un esempio ciascuno."
+    },
+    "pt": {
+     "t": "Preparar uma apresentação B1",
+     "g": "Fazer um monólogo curto e responder com confiança às perguntas.",
+     "p": [
+      "Estrutura: introdução (Ich möchte heute über... sprechen), dois ou três pontos, experiência própria, conclusão (Zum Schluss...).",
+      "Marcadores: Zuerst..., Ein weiterer Punkt ist..., In meinem Heimatland..., Zusammenfassend kann ich sagen...",
+      "Perguntas: Gute Frage! / Das muss ich kurz überlegen. / Wenn ich Sie richtig verstehe, meinen Sie... Depois responde com calma."
+     ],
+     "q": "Faz-me uma apresentação de dois minutos sobre Mein Lieblingshobby e depois faço-te uma pergunta!",
+     "c": "Escreve o esquema de uma apresentação de três minutos sobre Reisen: introdução, três pontos, conclusão, um exemplo cada."
+    },
+    "pt_BR": {
+     "t": "Preparar uma apresentação B1",
+     "g": "Fazer um monólogo curto e responder com segurança às perguntas.",
+     "p": [
+      "Estrutura: introdução (Ich möchte heute über... sprechen), dois ou três pontos, experiência própria, conclusão (Zum Schluss...).",
+      "Marcadores: Zuerst..., Ein weiterer Punkt ist..., In meinem Heimatland..., Zusammenfassend kann ich sagen...",
+      "Perguntas: Gute Frage! / Das muss ich kurz überlegen. / Wenn ich Sie richtig verstehe, meinen Sie... Depois responda com calma."
+     ],
+     "q": "Faça uma apresentação de dois minutos sobre Mein Lieblingshobby e depois eu te faço uma pergunta!",
+     "c": "Escreva o roteiro de uma apresentação de três minutos sobre Reisen: introdução, três pontos, conclusão, um exemplo cada."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Ich möchte heute über ... sprechen.",
+      "ex": "Ich möchte heute über mein Lieblingshobby sprechen."
+     },
+     {
+      "w": "Ein weiterer Punkt ist ...",
+      "ex": "Ein weiterer Punkt ist die Umwelt."
+     },
+     {
+      "w": "In meinem Heimatland ...",
+      "ex": "In meinem Heimatland isst man später zu Abend."
+     },
+     {
+      "w": "Das muss ich kurz überlegen.",
+      "ex": "Gute Frage, das muss ich kurz überlegen."
+     },
+     {
+      "w": "Wenn ich Sie richtig verstehe, ...",
+      "ex": "Wenn ich Sie richtig verstehe, meinen Sie die Kosten."
+     },
+     {
+      "w": "zum Schluss",
+      "ex": "Zum Schluss möchte ich mich für Ihre Aufmerksamkeit bedanken."
+     }
+    ],
+    "gram": "Gliederungswörter am Satzanfang mit Inversion: Zuerst möchte ich..., Zum Schluss möchte ich...; sprechen über + Akkusativ."
+   }
+  },
+  {
+   "d": 280,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Review: B1 checkpoint",
+     "g": "Recap all of B1 with a debate and a personal story: you have come a long way!",
+     "p": [
+      "Grammar check: Konjunktiv II, passive, relative clauses, Plusquamperfekt, lassen, Futur I and II, connectors like obwohl and falls.",
+      "Speaking: tell a story with plötzlich and am Ende; debate with Ich bin der Meinung and Das mag sein, aber...",
+      "Writing: formal letters, opinion paragraphs, complaints. Notice how much more you can express than on day 181!"
+     ],
+     "q": "Let's debate: Ist es besser, in der Stadt oder auf dem Land zu leben? Give me your opinion and a personal story!",
+     "c": "Write a 120-word text about the biggest change in your life, using at least four B1 structures."
+    },
+    "de": {
+     "t": "Wiederholung: B1-Checkpoint",
+     "g": "Du wiederholst das ganze B1 mit einer Diskussion und einer persönlichen Geschichte: Du bist weit gekommen!",
+     "p": [
+      "Grammatik: Konjunktiv II, Passiv, Relativsätze, Plusquamperfekt, lassen, Futur I und II, Konnektoren wie obwohl und falls.",
+      "Sprechen: eine Geschichte mit plötzlich und am Ende; diskutieren mit Ich bin der Meinung und Das mag sein, aber...",
+      "Schreiben: formelle Briefe, Meinungstexte, Beschwerden. Merkst du, wie viel mehr du jetzt ausdrücken kannst?"
+     ],
+     "q": "Lass uns diskutieren: Lebt man besser in der Stadt oder auf dem Land? Deine Meinung und eine persönliche Geschichte!",
+     "c": "Schreib einen Text von 120 Wörtern über die größte Veränderung in deinem Leben mit mindestens vier B1-Strukturen."
+    },
+    "es": {
+     "t": "Repaso: control del B1",
+     "g": "Repasa todo el B1 con un debate y una historia personal: ¡has avanzado muchísimo!",
+     "p": [
+      "Gramática: Konjunktiv II, pasiva, relativas, Plusquamperfekt, lassen, Futur I y II, conectores como obwohl y falls.",
+      "Hablar: cuenta una historia con plötzlich y am Ende; debate con Ich bin der Meinung y Das mag sein, aber...",
+      "Escribir: cartas formales, párrafos de opinión, quejas. ¡Fíjate en cuánto más puedes expresar que en el día 181!"
+     ],
+     "q": "Debatamos: ¿se vive mejor en la ciudad o en el campo? ¡Dame tu opinión y una historia personal!",
+     "c": "Escribe un texto de 120 palabras sobre el mayor cambio de tu vida con al menos cuatro estructuras de B1."
+    },
+    "fr": {
+     "t": "Révision : bilan B1",
+     "g": "Réviser tout le B1 avec un débat et une histoire personnelle : tu as fait un sacré chemin !",
+     "p": [
+      "Grammaire : Konjunktiv II, passif, relatives, Plusquamperfekt, lassen, Futur I et II, connecteurs comme obwohl et falls.",
+      "Oral : raconte une histoire avec plötzlich et am Ende ; débats avec Ich bin der Meinung et Das mag sein, aber...",
+      "Écrit : lettres formelles, paragraphes argumentés, réclamations. Vois tout ce que tu sais dire de plus qu'au jour 181 !"
+     ],
+     "q": "Débattons : vit-on mieux en ville ou à la campagne ? Donne ton avis et une histoire personnelle !",
+     "c": "Écris un texte de 120 mots sur le plus grand changement de ta vie avec au moins quatre structures B1."
+    },
+    "it": {
+     "t": "Ripasso: traguardo B1",
+     "g": "Ripassa tutto il B1 con un dibattito e una storia personale: hai fatto tantissima strada!",
+     "p": [
+      "Grammatica: Konjunktiv II, passivo, relative, Plusquamperfekt, lassen, Futur I e II, connettivi come obwohl e falls.",
+      "Parlare: racconta una storia con plötzlich e am Ende; discuti con Ich bin der Meinung e Das mag sein, aber...",
+      "Scrivere: lettere formali, paragrafi d'opinione, reclami. Nota quanto riesci a esprimere in più rispetto al giorno 181!"
+     ],
+     "q": "Discutiamo: si vive meglio in città o in campagna? Dammi la tua opinione e una storia personale!",
+     "c": "Scrivi un testo di 120 parole sul cambiamento più grande della tua vita con almeno quattro strutture B1."
+    },
+    "pt": {
+     "t": "Revisão: balanço do B1",
+     "g": "Rever todo o B1 com um debate e uma história pessoal: já percorreste um longo caminho!",
+     "p": [
+      "Gramática: Konjunktiv II, passiva, relativas, Plusquamperfekt, lassen, Futur I e II, conectores como obwohl e falls.",
+      "Falar: conta uma história com plötzlich e am Ende; debate com Ich bin der Meinung e Das mag sein, aber...",
+      "Escrever: cartas formais, parágrafos de opinião, reclamações. Repara quanto mais consegues exprimir do que no dia 181!"
+     ],
+     "q": "Vamos debater: vive-se melhor na cidade ou no campo? Dá-me a tua opinião e uma história pessoal!",
+     "c": "Escreve um texto de 120 palavras sobre a maior mudança da tua vida com pelo menos quatro estruturas do B1."
+    },
+    "pt_BR": {
+     "t": "Revisão: balanço do B1",
+     "g": "Revisar todo o B1 com um debate e uma história pessoal: você já percorreu um longo caminho!",
+     "p": [
+      "Gramática: Konjunktiv II, passiva, relativas, Plusquamperfekt, lassen, Futur I e II, conectores como obwohl e falls.",
+      "Falar: conte uma história com plötzlich e am Ende; debata com Ich bin der Meinung e Das mag sein, aber...",
+      "Escrever: cartas formais, parágrafos de opinião, reclamações. Veja quanto mais você consegue expressar do que no dia 181!"
+     ],
+     "q": "Vamos debater: vive-se melhor na cidade ou no campo? Me dê sua opinião e uma história pessoal!",
+     "c": "Escreva um texto de 120 palavras sobre a maior mudança da sua vida com pelo menos quatro estruturas do B1."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "obwohl",
+      "ex": "Obwohl es regnete, sind wir spazieren gegangen."
+     },
+     {
+      "w": "nachdem",
+      "ex": "Nachdem ich umgezogen war, fand ich schnell Freunde."
+     },
+     {
+      "w": "die Veränderung",
+      "ex": "Der Umzug war eine große Veränderung für mich."
+     },
+     {
+      "w": "auf dem Land",
+      "ex": "Auf dem Land ist es ruhiger als in der Stadt."
+     },
+     {
+      "w": "Ich hätte nie gedacht, dass ...",
+      "ex": "Ich hätte nie gedacht, dass ich so gut Deutsch lerne."
+     },
+     {
+      "w": "sich entwickeln",
+      "ex": "Mein Deutsch hat sich sehr gut entwickelt."
+     }
+    ],
+    "gram": "B1-Mix: nachdem + Plusquamperfekt, obwohl/falls (Verb am Ende), Konjunktiv II (hätte, wäre, würde), Passiv (wird gemacht)."
+   }
+  }
+ ]
+}

@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 231,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Social media habits",
+     "g": "Talk about social media: seguir, dar me gusta, compartir, hacerse viral.",
+     "p": [
+      "Actions: seguir a alguien, dar me gusta, comentar, compartir, subir una foto, publicar una historia.",
+      "People and trends: un seguidor, un influencer, una tendencia, hacerse viral, un vídeo corto.",
+      "Habits: paso una hora al día en redes, cada vez uso menos..., me gusta seguir cuentas de cocina."
+     ],
+     "q": "Which kind of accounts do you like to follow, and how much time do you spend on social media?",
+     "c": "Write a short post in Spanish about your day, with a caption and two hashtags."
+    },
+    "de": {
+     "t": "Gewohnheiten in sozialen Medien",
+     "g": "Sprich über soziale Medien: seguir, dar me gusta, compartir, hacerse viral.",
+     "p": [
+      "Aktionen: seguir a alguien, dar me gusta, comentar, compartir, subir una foto, publicar una historia.",
+      "Menschen und Trends: un seguidor, un influencer, una tendencia, hacerse viral, un vídeo corto.",
+      "Gewohnheiten: paso una hora al día en redes, cada vez uso menos..., me gusta seguir cuentas de cocina."
+     ],
+     "q": "Welchen Accounts folgst du gern, und wie viel Zeit verbringst du in sozialen Medien?",
+     "c": "Schreib einen kurzen Post auf Spanisch über deinen Tag, mit Bildunterschrift und zwei Hashtags."
+    },
+    "es": {
+     "t": "Hábitos en redes sociales",
+     "g": "Habla de redes sociales: seguir, dar me gusta, compartir, hacerse viral.",
+     "p": [
+      "Acciones: seguir a alguien, dar me gusta, comentar, compartir, subir una foto, publicar una historia.",
+      "Gente y tendencias: un seguidor, un influencer, una tendencia, hacerse viral, un vídeo corto.",
+      "Hábitos: paso una hora al día en redes, cada vez uso menos..., me gusta seguir cuentas de cocina."
+     ],
+     "q": "¿Qué tipo de cuentas te gusta seguir y cuánto tiempo pasas en redes sociales?",
+     "c": "Escribe una publicación corta sobre tu día, con un pie de foto y dos etiquetas."
+    },
+    "fr": {
+     "t": "Habitudes sur les réseaux sociaux",
+     "g": "Parle des réseaux sociaux : seguir, dar me gusta, compartir, hacerse viral.",
+     "p": [
+      "Actions : seguir a alguien, dar me gusta, comentar, compartir, subir una foto, publicar una historia.",
+      "Gens et tendances : un seguidor (abonné), un influencer, una tendencia, hacerse viral, un vídeo corto.",
+      "Habitudes : paso una hora al día en redes, cada vez uso menos..., me gusta seguir cuentas de cocina."
+     ],
+     "q": "Quel type de comptes aimes-tu suivre, et combien de temps passes-tu sur les réseaux ?",
+     "c": "Écris une courte publication en espagnol sur ta journée, avec une légende et deux hashtags."
+    },
+    "it": {
+     "t": "Abitudini sui social",
+     "g": "Parla dei social: seguir, dar me gusta, compartir, hacerse viral.",
+     "p": [
+      "Azioni: seguir a alguien, dar me gusta, comentar, compartir, subir una foto, publicar una historia.",
+      "Persone e tendenze: un seguidor (follower), un influencer, una tendencia, hacerse viral, un vídeo corto.",
+      "Abitudini: paso una hora al día en redes, cada vez uso menos..., me gusta seguir cuentas de cocina."
+     ],
+     "q": "Che tipo di account ti piace seguire, e quanto tempo passi sui social?",
+     "c": "Scrivi un breve post in spagnolo sulla tua giornata, con una didascalia e due hashtag."
+    },
+    "pt": {
+     "t": "Hábitos nas redes sociais",
+     "g": "Fala de redes sociais: seguir, dar me gusta, compartir, hacerse viral.",
+     "p": [
+      "Ações: seguir a alguien, dar me gusta, comentar, compartir, subir una foto, publicar una historia.",
+      "Pessoas e tendências: un seguidor, un influencer, una tendencia, hacerse viral, un vídeo corto.",
+      "Hábitos: paso una hora al día en redes, cada vez uso menos..., me gusta seguir cuentas de cocina."
+     ],
+     "q": "Que tipo de contas gostas de seguir, e quanto tempo passas nas redes sociais?",
+     "c": "Escreve uma publicação curta em espanhol sobre o teu dia, com legenda e dois hashtags."
+    },
+    "pt_BR": {
+     "t": "Hábitos nas redes sociais",
+     "g": "Fale de redes sociais: seguir, dar me gusta, compartir, hacerse viral.",
+     "p": [
+      "Ações: seguir a alguien, dar me gusta, comentar, compartir, subir una foto, publicar una historia.",
+      "Pessoas e tendências: un seguidor, un influencer, una tendencia, hacerse viral, un vídeo corto.",
+      "Hábitos: paso una hora al día en redes, cada vez uso menos..., me gusta seguir cuentas de cocina."
+     ],
+     "q": "Que tipo de perfis você gosta de seguir, e quanto tempo passa nas redes sociais?",
+     "c": "Escreva uma postagem curta em espanhol sobre o seu dia, com legenda e duas hashtags."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "seguir",
+      "ex": "Sigo a varios cocineros en redes sociales."
+     },
+     {
+      "w": "dar me gusta",
+      "ex": "Siempre doy me gusta a las fotos de mis amigos."
+     },
+     {
+      "w": "compartir",
+      "ex": "¿Puedes compartir el enlace del evento?"
+     },
+     {
+      "w": "hacerse viral",
+      "ex": "Su vídeo del perro bailando se hizo viral."
+     },
+     {
+      "w": "subir una foto",
+      "ex": "Subí una foto de la playa ayer."
+     },
+     {
+      "w": "las redes sociales",
+      "ex": "Paso demasiado tiempo en las redes sociales."
+     }
+    ],
+    "gram": "Redes: dar me gusta, subir una foto, hacerse viral (se hizo viral). Cada vez + más/menos para hablar de cambios."
+   }
+  },
+  {
+   "d": 232,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Online safety basics",
+     "g": "Learn the words to stay safe online: contraseña segura, estafa, privacidad, verificación en dos pasos.",
+     "p": [
+      "Protect accounts: una contraseña segura, la verificación en dos pasos, cerrar sesión, actualizar el móvil.",
+      "Watch out: una estafa, un correo sospechoso, un enlace falso, no compartas tus datos personales.",
+      "Privacy: los ajustes de privacidad, una cuenta privada. Advice: nunca des tu contraseña a nadie."
+     ],
+     "q": "What do you do to protect your accounts online?",
+     "c": "Write five safety tips with commands: usa..., activa..., no abras..., no compartas..., cierra..."
+    },
+    "de": {
+     "t": "Grundlagen der Online-Sicherheit",
+     "g": "Lerne Wörter für Sicherheit im Netz: contraseña segura, estafa, privacidad, verificación en dos pasos.",
+     "p": [
+      "Konten schützen: una contraseña segura, la verificación en dos pasos, cerrar sesión, actualizar el móvil.",
+      "Vorsicht: una estafa (Betrug), un correo sospechoso, un enlace falso, no compartas tus datos personales.",
+      "Privatsphäre: los ajustes de privacidad, una cuenta privada. Rat: nunca des tu contraseña a nadie."
+     ],
+     "q": "Was tust du, um deine Online-Konten zu schützen?",
+     "c": "Schreib fünf Sicherheitstipps im Imperativ: usa..., activa..., no abras..., no compartas..., cierra..."
+    },
+    "es": {
+     "t": "Seguridad en internet: lo básico",
+     "g": "Aprende las palabras para navegar seguro: contraseña segura, estafa, privacidad, verificación en dos pasos.",
+     "p": [
+      "Proteger cuentas: una contraseña segura, la verificación en dos pasos, cerrar sesión, actualizar el móvil.",
+      "Cuidado: una estafa, un correo sospechoso, un enlace falso, no compartas tus datos personales.",
+      "Privacidad: los ajustes de privacidad, una cuenta privada. Consejo: nunca des tu contraseña a nadie."
+     ],
+     "q": "¿Qué haces para proteger tus cuentas en internet?",
+     "c": "Escribe cinco consejos de seguridad en imperativo: usa..., activa..., no abras..., no compartas..., cierra..."
+    },
+    "fr": {
+     "t": "Les bases de la sécurité en ligne",
+     "g": "Apprends les mots pour rester en sécurité : contraseña segura, estafa, privacidad, verificación en dos pasos.",
+     "p": [
+      "Protéger ses comptes : una contraseña segura, la verificación en dos pasos, cerrar sesión, actualizar el móvil.",
+      "Attention : una estafa (arnaque), un correo sospechoso, un enlace falso, no compartas tus datos personales.",
+      "Vie privée : los ajustes de privacidad, una cuenta privada. Conseil : nunca des tu contraseña a nadie."
+     ],
+     "q": "Que fais-tu pour protéger tes comptes en ligne ?",
+     "c": "Écris cinq conseils de sécurité à l'impératif : usa..., activa..., no abras..., no compartas..., cierra..."
+    },
+    "it": {
+     "t": "Le basi della sicurezza online",
+     "g": "Impara le parole per stare al sicuro online: contraseña segura, estafa, privacidad, verificación en dos pasos.",
+     "p": [
+      "Proteggere gli account: una contraseña segura, la verificación en dos pasos, cerrar sesión, actualizar el móvil.",
+      "Attenzione: una estafa (truffa), un correo sospechoso, un enlace falso, no compartas tus datos personales.",
+      "Privacy: los ajustes de privacidad, una cuenta privada. Consiglio: nunca des tu contraseña a nadie."
+     ],
+     "q": "Cosa fai per proteggere i tuoi account online?",
+     "c": "Scrivi cinque consigli di sicurezza all'imperativo: usa..., activa..., no abras..., no compartas..., cierra..."
+    },
+    "pt": {
+     "t": "Segurança online: o básico",
+     "g": "Aprende as palavras para estar seguro online: contraseña segura, estafa, privacidad, verificación en dos pasos.",
+     "p": [
+      "Proteger contas: una contraseña segura, la verificación en dos pasos, cerrar sesión, actualizar el móvil.",
+      "Cuidado: una estafa (burla), un correo sospechoso, un enlace falso, no compartas tus datos personales.",
+      "Privacidade: los ajustes de privacidad, una cuenta privada. Conselho: nunca des tu contraseña a nadie."
+     ],
+     "q": "O que fazes para proteger as tuas contas online?",
+     "c": "Escreve cinco dicas de segurança no imperativo: usa..., activa..., no abras..., no compartas..., cierra..."
+    },
+    "pt_BR": {
+     "t": "Segurança online: o básico",
+     "g": "Aprenda as palavras para ficar seguro online: contraseña segura, estafa, privacidad, verificación en dos pasos.",
+     "p": [
+      "Proteger contas: una contraseña segura, la verificación en dos pasos, cerrar sesión, actualizar el móvil.",
+      "Cuidado: una estafa (golpe), un correo sospechoso, un enlace falso, no compartas tus datos personales.",
+      "Privacidade: los ajustes de privacidad, una cuenta privada. Conselho: nunca des tu contraseña a nadie."
+     ],
+     "q": "O que você faz para proteger suas contas online?",
+     "c": "Escreva cinco dicas de segurança no imperativo: usa..., activa..., no abras..., no compartas..., cierra..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la contraseña segura",
+      "ex": "Usa una contraseña segura con letras y números."
+     },
+     {
+      "w": "la estafa",
+      "ex": "Ese mensaje del banco era una estafa."
+     },
+     {
+      "w": "la privacidad",
+      "ex": "Revisa los ajustes de privacidad de tu cuenta."
+     },
+     {
+      "w": "la verificación en dos pasos",
+      "ex": "Activa la verificación en dos pasos hoy mismo."
+     },
+     {
+      "w": "el enlace sospechoso",
+      "ex": "No hagas clic en un enlace sospechoso."
+     },
+     {
+      "w": "cerrar sesión",
+      "ex": "Cierra sesión cuando uses un ordenador público."
+     }
+    ],
+    "gram": "Consejos de seguridad con imperativo: usa, activa, revisa; negativo con subjuntivo: no abras, no compartas, no des."
+   }
+  },
+  {
+   "d": 233,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Contrast: aunque, sin embargo",
+     "g": "Contrast ideas with aunque, sin embargo, a pesar de and en cambio.",
+     "p": [
+      "Aunque + indicative for facts: aunque llueve, salgo. Aunque + subjunctive for possibilities: aunque llueva, saldré.",
+      "Sin embargo starts a new sentence or clause: es caro; sin embargo, merece la pena.",
+      "A pesar de + noun or infinitive: a pesar del frío, a pesar de estar cansado. En cambio compares two things."
+     ],
+     "q": "Tell me something you do even though it's difficult. Use aunque...",
+     "c": "Write four sentences about your city with aunque, sin embargo, a pesar de and en cambio."
+    },
+    "de": {
+     "t": "Gegensätze: aunque, sin embargo",
+     "g": "Stelle Ideen gegenüber mit aunque, sin embargo, a pesar de und en cambio.",
+     "p": [
+      "Aunque + Indikativ für Fakten: aunque llueve, salgo. Aunque + subjuntivo für Möglichkeiten: aunque llueva, saldré.",
+      "Sin embargo beginnt einen neuen Satz oder Satzteil: es caro; sin embargo, merece la pena.",
+      "A pesar de + Nomen oder Infinitiv: a pesar del frío, a pesar de estar cansado. En cambio vergleicht zwei Dinge."
+     ],
+     "q": "Erzähl mir etwas, das du tust, obwohl es schwierig ist. Benutze aunque...",
+     "c": "Schreib vier Sätze über deine Stadt mit aunque, sin embargo, a pesar de und en cambio."
+    },
+    "es": {
+     "t": "Contraste: aunque, sin embargo",
+     "g": "Contrasta ideas con aunque, sin embargo, a pesar de y en cambio.",
+     "p": [
+      "Aunque + indicativo para hechos: aunque llueve, salgo. Aunque + subjuntivo para posibilidades: aunque llueva, saldré.",
+      "Sin embargo inicia una nueva oración o parte: es caro; sin embargo, merece la pena.",
+      "A pesar de + sustantivo o infinitivo: a pesar del frío, a pesar de estar cansado. En cambio compara dos cosas."
+     ],
+     "q": "Cuéntame algo que haces aunque sea difícil. Usa aunque...",
+     "c": "Escribe cuatro frases sobre tu ciudad con aunque, sin embargo, a pesar de y en cambio."
+    },
+    "fr": {
+     "t": "Opposition : aunque, sin embargo",
+     "g": "Oppose des idées avec aunque, sin embargo, a pesar de et en cambio.",
+     "p": [
+      "Aunque + indicatif pour un fait : aunque llueve, salgo. + subjonctif pour une hypothèse : aunque llueva, saldré.",
+      "Sin embargo (cependant) ouvre une nouvelle phrase : es caro ; sin embargo, merece la pena.",
+      "A pesar de + nom ou infinitif : a pesar del frío, a pesar de estar cansado. En cambio (en revanche) compare."
+     ],
+     "q": "Dis-moi quelque chose que tu fais même si c'est difficile. Utilise aunque...",
+     "c": "Écris quatre phrases sur ta ville avec aunque, sin embargo, a pesar de et en cambio."
+    },
+    "it": {
+     "t": "Contrasto: aunque, sin embargo",
+     "g": "Contrapponi idee con aunque, sin embargo, a pesar de ed en cambio.",
+     "p": [
+      "Aunque + indicativo per fatti: aunque llueve, salgo. + congiuntivo per ipotesi: aunque llueva, saldré.",
+      "Sin embargo (tuttavia) apre una nuova frase: es caro; sin embargo, merece la pena.",
+      "A pesar de + nome o infinito: a pesar del frío, a pesar de estar cansado. En cambio (invece) confronta."
+     ],
+     "q": "Dimmi qualcosa che fai anche se è difficile. Usa aunque...",
+     "c": "Scrivi quattro frasi sulla tua città con aunque, sin embargo, a pesar de ed en cambio."
+    },
+    "pt": {
+     "t": "Contraste: aunque, sin embargo",
+     "g": "Contrasta ideias com aunque, sin embargo, a pesar de e en cambio.",
+     "p": [
+      "Aunque + indicativo para factos: aunque llueve, salgo. + conjuntivo para hipóteses: aunque llueva, saldré.",
+      "Sin embargo (no entanto) inicia uma nova frase: es caro; sin embargo, merece la pena.",
+      "A pesar de + nome ou infinitivo: a pesar del frío, a pesar de estar cansado. En cambio (em vez disso) compara."
+     ],
+     "q": "Conta-me algo que fazes embora seja difícil. Usa aunque...",
+     "c": "Escreve quatro frases sobre a tua cidade com aunque, sin embargo, a pesar de e en cambio."
+    },
+    "pt_BR": {
+     "t": "Contraste: aunque, sin embargo",
+     "g": "Contraste ideias com aunque, sin embargo, a pesar de e en cambio.",
+     "p": [
+      "Aunque + indicativo para fatos: aunque llueve, salgo. + subjuntivo para hipóteses: aunque llueva, saldré.",
+      "Sin embargo (no entanto) inicia uma nova frase: es caro; sin embargo, merece la pena.",
+      "A pesar de + substantivo ou infinitivo: a pesar del frío, a pesar de estar cansado. En cambio (já) compara."
+     ],
+     "q": "Me conte algo que você faz mesmo sendo difícil. Use aunque...",
+     "c": "Escreva quatro frases sobre a sua cidade com aunque, sin embargo, a pesar de e en cambio."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "aunque",
+      "ex": "Aunque estoy cansado, voy a terminar el trabajo."
+     },
+     {
+      "w": "aunque + subjuntivo",
+      "ex": "Aunque llueva mañana, iremos de excursión."
+     },
+     {
+      "w": "sin embargo",
+      "ex": "El hotel era pequeño; sin embargo, era muy cómodo."
+     },
+     {
+      "w": "a pesar de",
+      "ex": "A pesar del frío, paseamos por la playa."
+     },
+     {
+      "w": "en cambio",
+      "ex": "Mi hermano es tímido; yo, en cambio, hablo con todos."
+     },
+     {
+      "w": "merecer la pena",
+      "ex": "El viaje es largo, pero merece la pena."
+     }
+    ],
+    "gram": "Contraste: aunque + indicativo (hecho) / + subjuntivo (hipótesis); sin embargo; a pesar de + sustantivo/infinitivo; en cambio."
+   }
+  },
+  {
+   "d": 234,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Cause and result: por eso, así que",
+     "g": "Link causes and effects with porque, como, ya que, por eso, así que, por lo tanto.",
+     "p": [
+      "Causes: porque (after the main idea), como (at the start): como llovía, nos quedamos en casa. Ya que = since.",
+      "Results: por eso, así que (informal), por lo tanto (formal): estaba cansado, así que me acosté pronto.",
+      "Don't start a sentence with porque to give a cause; use como instead: como no tenía tiempo, no fui."
+     ],
+     "q": "Why are you learning Spanish, and what has changed because of it? Use porque and por eso.",
+     "c": "Write a chain of four sentences where each result causes the next, using como, así que and por eso."
+    },
+    "de": {
+     "t": "Ursache und Folge: por eso, así que",
+     "g": "Verbinde Ursachen und Folgen mit porque, como, ya que, por eso, así que, por lo tanto.",
+     "p": [
+      "Ursachen: porque (nach der Hauptaussage), como (am Satzanfang): como llovía, nos quedamos en casa.",
+      "Folgen: por eso, así que (locker), por lo tanto (formell): estaba cansado, así que me acosté pronto.",
+      "Beginne keinen Satz mit porque für einen Grund; nimm como: como no tenía tiempo, no fui. Ya que = da."
+     ],
+     "q": "Warum lernst du Spanisch, und was hat sich dadurch verändert? Benutze porque und por eso.",
+     "c": "Schreib eine Kette von vier Sätzen, in der jede Folge die nächste auslöst, mit como, así que und por eso."
+    },
+    "es": {
+     "t": "Causa y consecuencia: por eso, así que",
+     "g": "Une causas y consecuencias con porque, como, ya que, por eso, así que, por lo tanto.",
+     "p": [
+      "Causas: porque (después de la idea principal), como (al principio): como llovía, nos quedamos en casa.",
+      "Consecuencias: por eso, así que (coloquial), por lo tanto (formal): estaba cansado, así que me acosté pronto.",
+      "Para empezar una frase con la causa, usa como, no porque: como no tenía tiempo, no fui. Ya que = puesto que."
+     ],
+     "q": "¿Por qué aprendes español y qué ha cambiado gracias a eso? Usa porque y por eso.",
+     "c": "Escribe una cadena de cuatro frases donde cada consecuencia causa la siguiente, con como, así que y por eso."
+    },
+    "fr": {
+     "t": "Cause et conséquence : por eso, así que",
+     "g": "Relie causes et effets avec porque, como, ya que, por eso, así que, por lo tanto.",
+     "p": [
+      "Causes : porque (après l'idée principale), como (en début) : como llovía, nos quedamos en casa.",
+      "Conséquences : por eso (c'est pourquoi), así que (donc), por lo tanto (par conséquent, formel).",
+      "Pour commencer par la cause, utilise como, comme en français : como no tenía tiempo, no fui."
+     ],
+     "q": "Pourquoi apprends-tu l'espagnol, et qu'est-ce que ça a changé ? Utilise porque et por eso.",
+     "c": "Écris une chaîne de quatre phrases où chaque conséquence entraîne la suivante, avec como, así que, por eso."
+    },
+    "it": {
+     "t": "Causa ed effetto: por eso, así que",
+     "g": "Collega cause ed effetti con porque, como, ya que, por eso, así que, por lo tanto.",
+     "p": [
+      "Cause: porque (dopo l'idea principale), como (all'inizio, come in italiano): como llovía, nos quedamos en casa.",
+      "Conseguenze: por eso (per questo), así que (quindi), por lo tanto (pertanto, formale).",
+      "Non iniziare la frase con porque per dare una causa; usa como: como no tenía tiempo, no fui."
+     ],
+     "q": "Perché studi spagnolo, e cosa è cambiato grazie a questo? Usa porque e por eso.",
+     "c": "Scrivi una catena di quattro frasi in cui ogni effetto causa il successivo, con como, así que e por eso."
+    },
+    "pt": {
+     "t": "Causa e consequência: por eso, así que",
+     "g": "Liga causas e consequências com porque, como, ya que, por eso, así que, por lo tanto.",
+     "p": [
+      "Causas: porque (depois da ideia principal), como (no início): como llovía, nos quedamos en casa.",
+      "Consequências: por eso (por isso), así que (portanto, informal), por lo tanto (por conseguinte, formal).",
+      "Para começar pela causa, usa como, não porque: como no tenía tiempo, no fui. Ya que = já que."
+     ],
+     "q": "Porque aprendes espanhol, e o que mudou graças a isso? Usa porque e por eso.",
+     "c": "Escreve uma cadeia de quatro frases em que cada consequência causa a seguinte, com como, así que e por eso."
+    },
+    "pt_BR": {
+     "t": "Causa e consequência: por eso, así que",
+     "g": "Ligue causas e consequências com porque, como, ya que, por eso, así que, por lo tanto.",
+     "p": [
+      "Causas: porque (depois da ideia principal), como (no início): como llovía, nos quedamos en casa.",
+      "Consequências: por eso (por isso), así que (então, informal), por lo tanto (portanto, formal).",
+      "Para começar pela causa, use como, não porque: como no tenía tiempo, no fui. Ya que = já que."
+     ],
+     "q": "Por que você aprende espanhol, e o que mudou graças a isso? Use porque e por eso.",
+     "c": "Escreva uma cadeia de quatro frases em que cada consequência causa a seguinte, com como, así que e por eso."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "porque",
+      "ex": "No salí anoche porque tenía que estudiar."
+     },
+     {
+      "w": "como",
+      "ex": "Como hacía buen tiempo, comimos en la terraza."
+     },
+     {
+      "w": "ya que",
+      "ex": "Ya que estás aquí, ¿me ayudas con la cena?"
+     },
+     {
+      "w": "por eso",
+      "ex": "Me encanta Chile; por eso quiero volver."
+     },
+     {
+      "w": "así que",
+      "ex": "No había autobuses, así que fuimos andando."
+     },
+     {
+      "w": "por lo tanto",
+      "ex": "El vuelo se canceló; por lo tanto, llegamos un día tarde."
+     }
+    ],
+    "gram": "Causa: porque (en medio), como (al inicio), ya que. Consecuencia: por eso, así que (coloquial), por lo tanto (formal)."
+   }
+  },
+  {
+   "d": 235,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Time clauses: en cuanto, hasta que",
+     "g": "Order events with en cuanto, hasta que, antes de que and después de que.",
+     "p": [
+      "Like cuando: future → subjunctive: en cuanto llegue, te llamo; espera aquí hasta que termine.",
+      "Habits or past → indicative: en cuanto llego a casa, me cambio; esperé hasta que terminó.",
+      "Antes de que always takes the subjunctive: sal antes de que empiece a llover. Same subject: antes de salir."
+     ],
+     "q": "What will you do as soon as you finish today's lesson? Start with en cuanto termine...",
+     "c": "Write four sentences about tomorrow with en cuanto, hasta que, antes de que and después de que."
+    },
+    "de": {
+     "t": "Zeitsätze: en cuanto, hasta que",
+     "g": "Ordne Ereignisse mit en cuanto, hasta que, antes de que und después de que.",
+     "p": [
+      "Wie bei cuando: Zukunft → subjuntivo: en cuanto llegue, te llamo; espera aquí hasta que termine.",
+      "Gewohnheit oder Vergangenheit → Indikativ: en cuanto llego a casa, me cambio; esperé hasta que terminó.",
+      "Antes de que steht immer mit subjuntivo: sal antes de que empiece a llover. Gleiches Subjekt: antes de salir."
+     ],
+     "q": "Was machst du, sobald du die heutige Lektion beendest? Beginne mit en cuanto termine...",
+     "c": "Schreib vier Sätze über morgen mit en cuanto, hasta que, antes de que und después de que."
+    },
+    "es": {
+     "t": "Oraciones temporales: en cuanto, hasta que",
+     "g": "Ordena acciones con en cuanto, hasta que, antes de que y después de que.",
+     "p": [
+      "Como con cuando: futuro → subjuntivo: en cuanto llegue, te llamo; espera aquí hasta que termine.",
+      "Hábitos o pasado → indicativo: en cuanto llego a casa, me cambio; esperé hasta que terminó.",
+      "Antes de que siempre va con subjuntivo: sal antes de que empiece a llover. Mismo sujeto: antes de salir."
+     ],
+     "q": "¿Qué harás en cuanto termines la lección de hoy? Empieza con en cuanto termine...",
+     "c": "Escribe cuatro frases sobre mañana con en cuanto, hasta que, antes de que y después de que."
+    },
+    "fr": {
+     "t": "Subordonnées de temps : en cuanto, hasta que",
+     "g": "Ordonne les actions avec en cuanto (dès que), hasta que, antes de que et después de que.",
+     "p": [
+      "Comme avec cuando : futur → subjonctif : en cuanto llegue, te llamo ; espera aquí hasta que termine.",
+      "Habitude ou passé → indicatif : en cuanto llego a casa, me cambio ; esperé hasta que terminó.",
+      "Antes de que prend toujours le subjonctif : sal antes de que empiece a llover. Même sujet : antes de salir."
+     ],
+     "q": "Que feras-tu dès que tu auras fini la leçon du jour ? Commence par en cuanto termine...",
+     "c": "Écris quatre phrases sur demain avec en cuanto, hasta que, antes de que et después de que."
+    },
+    "it": {
+     "t": "Frasi temporali: en cuanto, hasta que",
+     "g": "Ordina le azioni con en cuanto (appena), hasta que, antes de que e después de que.",
+     "p": [
+      "Come con cuando: futuro → congiuntivo: en cuanto llegue, te llamo; espera aquí hasta que termine.",
+      "Abitudini o passato → indicativo: en cuanto llego a casa, me cambio; esperé hasta que terminó.",
+      "Antes de que vuole sempre il congiuntivo: sal antes de que empiece a llover. Stesso soggetto: antes de salir."
+     ],
+     "q": "Cosa farai appena finisci la lezione di oggi? Comincia con en cuanto termine...",
+     "c": "Scrivi quattro frasi su domani con en cuanto, hasta que, antes de que e después de que."
+    },
+    "pt": {
+     "t": "Orações temporais: en cuanto, hasta que",
+     "g": "Ordena ações com en cuanto (assim que), hasta que, antes de que e después de que.",
+     "p": [
+      "Como com cuando: futuro → conjuntivo presente: en cuanto llegue, te llamo; espera aquí hasta que termine.",
+      "Hábitos ou passado → indicativo: en cuanto llego a casa, me cambio; esperé hasta que terminó.",
+      "Antes de que leva sempre conjuntivo: sal antes de que empiece a llover. Mesmo sujeito: antes de salir."
+     ],
+     "q": "O que vais fazer assim que acabares a lição de hoje? Começa com en cuanto termine...",
+     "c": "Escreve quatro frases sobre amanhã com en cuanto, hasta que, antes de que e después de que."
+    },
+    "pt_BR": {
+     "t": "Orações temporais: en cuanto, hasta que",
+     "g": "Ordene ações com en cuanto (assim que), hasta que, antes de que e después de que.",
+     "p": [
+      "Como com cuando: futuro → subjuntivo presente: en cuanto llegue, te llamo; espera aquí hasta que termine.",
+      "Hábitos ou passado → indicativo: en cuanto llego a casa, me cambio; esperé hasta que terminó.",
+      "Antes de que sempre pede subjuntivo: sal antes de que empiece a llover. Mesmo sujeito: antes de salir."
+     ],
+     "q": "O que você vai fazer assim que terminar a lição de hoje? Comece com en cuanto termine...",
+     "c": "Escreva quatro frases sobre amanhã com en cuanto, hasta que, antes de que e después de que."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "en cuanto",
+      "ex": "En cuanto llegue al aeropuerto, te escribo."
+     },
+     {
+      "w": "hasta que",
+      "ex": "No me voy hasta que termines."
+     },
+     {
+      "w": "antes de que",
+      "ex": "Vamos a salir antes de que empiece a llover."
+     },
+     {
+      "w": "después de que",
+      "ex": "Cenaremos después de que lleguen los invitados."
+     },
+     {
+      "w": "en cuanto + indicativo",
+      "ex": "En cuanto llego a casa, me pongo cómodo."
+     },
+     {
+      "w": "antes de + infinitivo",
+      "ex": "Lávate las manos antes de comer."
+     }
+    ],
+    "gram": "En cuanto, hasta que, después de que + subjuntivo (futuro) / indicativo (hábito, pasado). Antes de que + siempre subjuntivo."
+   }
+  },
+  {
+   "d": 236,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Giving examples: por ejemplo",
+     "g": "Support your ideas with examples and clarifications: por ejemplo, como, tales como, es decir.",
+     "p": [
+      "Examples: por ejemplo, como (such as): me gustan los deportes de agua, como el surf o la vela.",
+      "Formal lists: tales como, entre otros: países tales como Perú, Chile y Bolivia, entre otros.",
+      "Clarify: es decir, o sea (informal): es bilingüe, es decir, habla dos idiomas perfectamente."
+     ],
+     "q": "Name a hobby you love and give two examples of what it involves.",
+     "c": "Write three opinions, each supported by an example with por ejemplo, como or es decir."
+    },
+    "de": {
+     "t": "Beispiele geben: por ejemplo",
+     "g": "Stütze deine Ideen mit Beispielen und Erklärungen: por ejemplo, como, tales como, es decir.",
+     "p": [
+      "Beispiele: por ejemplo, como (wie): me gustan los deportes de agua, como el surf o la vela.",
+      "Formelle Listen: tales como, entre otros: países tales como Perú, Chile y Bolivia, entre otros.",
+      "Erklären: es decir, o sea (locker): es bilingüe, es decir, habla dos idiomas perfectamente."
+     ],
+     "q": "Nenne ein Hobby, das du liebst, und gib zwei Beispiele, was dazugehört.",
+     "c": "Schreib drei Meinungen, jede mit einem Beispiel mit por ejemplo, como oder es decir."
+    },
+    "es": {
+     "t": "Dar ejemplos: por ejemplo",
+     "g": "Apoya tus ideas con ejemplos y aclaraciones: por ejemplo, como, tales como, es decir.",
+     "p": [
+      "Ejemplos: por ejemplo, como: me gustan los deportes de agua, como el surf o la vela.",
+      "Listas formales: tales como, entre otros: países tales como Perú, Chile y Bolivia, entre otros.",
+      "Aclarar: es decir, o sea (coloquial): es bilingüe, es decir, habla dos idiomas perfectamente."
+     ],
+     "q": "Di un pasatiempo que te encanta y da dos ejemplos de lo que implica.",
+     "c": "Escribe tres opiniones, cada una con un ejemplo introducido por por ejemplo, como o es decir."
+    },
+    "fr": {
+     "t": "Donner des exemples : por ejemplo",
+     "g": "Appuie tes idées avec des exemples et des précisions : por ejemplo, como, tales como, es decir.",
+     "p": [
+      "Exemples : por ejemplo, como (comme) : me gustan los deportes de agua, como el surf o la vela.",
+      "Listes formelles : tales como, entre otros : países tales como Perú, Chile y Bolivia, entre otros.",
+      "Préciser : es decir (c'est-à-dire), o sea (familier) : es bilingüe, es decir, habla dos idiomas."
+     ],
+     "q": "Cite un loisir que tu adores et donne deux exemples de ce qu'il implique.",
+     "c": "Écris trois opinions, chacune appuyée par un exemple avec por ejemplo, como ou es decir."
+    },
+    "it": {
+     "t": "Fare esempi: por ejemplo",
+     "g": "Sostieni le tue idee con esempi e chiarimenti: por ejemplo, como, tales como, es decir.",
+     "p": [
+      "Esempi: por ejemplo, como (come): me gustan los deportes de agua, como el surf o la vela.",
+      "Elenchi formali: tales como, entre otros: países tales como Perú, Chile y Bolivia, entre otros.",
+      "Chiarire: es decir (cioè), o sea (colloquiale): es bilingüe, es decir, habla dos idiomas perfectamente."
+     ],
+     "q": "Nomina un hobby che ami e fai due esempi di cosa comporta.",
+     "c": "Scrivi tre opinioni, ognuna sostenuta da un esempio con por ejemplo, como o es decir."
+    },
+    "pt": {
+     "t": "Dar exemplos: por ejemplo",
+     "g": "Apoia as tuas ideias com exemplos e esclarecimentos: por ejemplo, como, tales como, es decir.",
+     "p": [
+      "Exemplos: por ejemplo, como: me gustan los deportes de agua, como el surf o la vela.",
+      "Listas formais: tales como, entre otros: países tales como Perú, Chile y Bolivia, entre otros.",
+      "Esclarecer: es decir (ou seja), o sea (informal): es bilingüe, es decir, habla dos idiomas perfectamente."
+     ],
+     "q": "Diz um passatempo que adoras e dá dois exemplos do que implica.",
+     "c": "Escreve três opiniões, cada uma apoiada por um exemplo com por ejemplo, como ou es decir."
+    },
+    "pt_BR": {
+     "t": "Dar exemplos: por ejemplo",
+     "g": "Apoie suas ideias com exemplos e esclarecimentos: por ejemplo, como, tales como, es decir.",
+     "p": [
+      "Exemplos: por ejemplo, como: me gustan los deportes de agua, como el surf o la vela.",
+      "Listas formais: tales como, entre otros: países tales como Perú, Chile y Bolivia, entre otros.",
+      "Esclarecer: es decir (ou seja), o sea (informal): es bilingüe, es decir, habla dos idiomas perfectamente."
+     ],
+     "q": "Diga um hobby que você adora e dê dois exemplos do que ele envolve.",
+     "c": "Escreva três opiniões, cada uma apoiada por um exemplo com por ejemplo, como ou es decir."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "por ejemplo",
+      "ex": "Hay muchas formas de practicar, por ejemplo, ver series."
+     },
+     {
+      "w": "como",
+      "ex": "Me encantan las frutas tropicales, como el mango."
+     },
+     {
+      "w": "tales como",
+      "ex": "Visitamos ciudades tales como Quito y Cuenca."
+     },
+     {
+      "w": "es decir",
+      "ex": "Llego pasado mañana, es decir, el jueves."
+     },
+     {
+      "w": "o sea",
+      "ex": "Mañana no trabajo, o sea, podemos quedar."
+     },
+     {
+      "w": "entre otros",
+      "ex": "Hablamos de música, cine y viajes, entre otros temas."
+     }
+    ],
+    "gram": "Ejemplificar: por ejemplo, como, tales como, entre otros. Aclarar: es decir, o sea (coloquial)."
+   }
+  },
+  {
+   "d": 237,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Writing a paragraph",
+     "g": "Write a clear paragraph: main idea, supporting details and a closing sentence.",
+     "p": [
+      "Start with the idea principal: Vivir en el centro tiene muchas ventajas.",
+      "Add two or three details with connectors: en primer lugar, además, por ejemplo, también.",
+      "Close it: en resumen, por todo esto, en definitiva. Keep one idea per paragraph!"
+     ],
+     "q": "What topic would you choose for a paragraph about your daily life?",
+     "c": "Write a paragraph of five or six sentences about your favourite place, with a main idea, details and a closing."
+    },
+    "de": {
+     "t": "Einen Absatz schreiben",
+     "g": "Schreib einen klaren Absatz: Hauptidee, Details und Schlusssatz.",
+     "p": [
+      "Beginne mit der idea principal: Vivir en el centro tiene muchas ventajas.",
+      "Füge zwei oder drei Details mit Konnektoren hinzu: en primer lugar, además, por ejemplo, también.",
+      "Abschließen: en resumen, por todo esto, en definitiva. Eine Idee pro Absatz!"
+     ],
+     "q": "Welches Thema würdest du für einen Absatz über deinen Alltag wählen?",
+     "c": "Schreib einen Absatz aus fünf oder sechs Sätzen über deinen Lieblingsort, mit Hauptidee, Details und Schluss."
+    },
+    "es": {
+     "t": "Escribir un párrafo",
+     "g": "Escribe un párrafo claro: idea principal, detalles y cierre.",
+     "p": [
+      "Empieza con la idea principal: Vivir en el centro tiene muchas ventajas.",
+      "Añade dos o tres detalles con conectores: en primer lugar, además, por ejemplo, también.",
+      "Ciérralo: en resumen, por todo esto, en definitiva. ¡Una idea por párrafo!"
+     ],
+     "q": "¿Qué tema elegirías para un párrafo sobre tu vida diaria?",
+     "c": "Escribe un párrafo de cinco o seis frases sobre tu lugar favorito, con idea principal, detalles y cierre."
+    },
+    "fr": {
+     "t": "Écrire un paragraphe",
+     "g": "Écris un paragraphe clair : idée principale, détails et phrase de conclusion.",
+     "p": [
+      "Commence par la idea principal : Vivir en el centro tiene muchas ventajas.",
+      "Ajoute deux ou trois détails avec des connecteurs : en primer lugar, además, por ejemplo, también.",
+      "Conclus : en resumen, por todo esto, en definitiva. Une idée par paragraphe !"
+     ],
+     "q": "Quel sujet choisirais-tu pour un paragraphe sur ta vie quotidienne ?",
+     "c": "Écris un paragraphe de cinq ou six phrases sur ton lieu préféré, avec idée principale, détails et conclusion."
+    },
+    "it": {
+     "t": "Scrivere un paragrafo",
+     "g": "Scrivi un paragrafo chiaro: idea principale, dettagli e frase di chiusura.",
+     "p": [
+      "Inizia con la idea principal: Vivir en el centro tiene muchas ventajas.",
+      "Aggiungi due o tre dettagli con connettivi: en primer lugar, además, por ejemplo, también.",
+      "Chiudi: en resumen, por todo esto, en definitiva. Un'idea per paragrafo!"
+     ],
+     "q": "Quale tema sceglieresti per un paragrafo sulla tua vita quotidiana?",
+     "c": "Scrivi un paragrafo di cinque o sei frasi sul tuo luogo preferito, con idea principale, dettagli e chiusura."
+    },
+    "pt": {
+     "t": "Escrever um parágrafo",
+     "g": "Escreve um parágrafo claro: ideia principal, pormenores e fecho.",
+     "p": [
+      "Começa com a idea principal: Vivir en el centro tiene muchas ventajas.",
+      "Junta dois ou três pormenores com conectores: en primer lugar, además, por ejemplo, también.",
+      "Fecha: en resumen, por todo esto, en definitiva. Uma ideia por parágrafo!"
+     ],
+     "q": "Que tema escolherias para um parágrafo sobre o teu dia a dia?",
+     "c": "Escreve um parágrafo de cinco ou seis frases sobre o teu lugar favorito, com ideia principal, pormenores e fecho."
+    },
+    "pt_BR": {
+     "t": "Escrever um parágrafo",
+     "g": "Escreva um parágrafo claro: ideia principal, detalhes e fechamento.",
+     "p": [
+      "Comece com a idea principal: Vivir en el centro tiene muchas ventajas.",
+      "Acrescente dois ou três detalhes com conectores: en primer lugar, además, por ejemplo, también.",
+      "Feche: en resumen, por todo esto, en definitiva. Uma ideia por parágrafo!"
+     ],
+     "q": "Que tema você escolheria para um parágrafo sobre o seu dia a dia?",
+     "c": "Escreva um parágrafo de cinco ou seis frases sobre o seu lugar favorito, com ideia principal, detalhes e fechamento."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la idea principal",
+      "ex": "La idea principal del texto es clara."
+     },
+     {
+      "w": "en primer lugar",
+      "ex": "En primer lugar, el barrio es muy tranquilo."
+     },
+     {
+      "w": "además",
+      "ex": "Además, hay muchos parques cerca."
+     },
+     {
+      "w": "también",
+      "ex": "También hay un mercado con productos frescos."
+     },
+     {
+      "w": "en resumen",
+      "ex": "En resumen, es un lugar ideal para vivir."
+     },
+     {
+      "w": "en definitiva",
+      "ex": "En definitiva, me siento como en casa."
+     }
+    ],
+    "gram": "Párrafo: idea principal + detalles (en primer lugar, además, también, por ejemplo) + cierre (en resumen, en definitiva)."
+   }
+  },
+  {
+   "d": 238,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Writing an opinion text",
+     "g": "Write a simple opinion text: introduction, arguments, counterargument and conclusion.",
+     "p": [
+      "Introduction: hoy en día se habla mucho de...; en mi opinión... State your view clearly.",
+      "Arguments: en primer lugar, además, por último. Counterargument: es cierto que..., sin embargo...",
+      "Conclusion: en conclusión, por todo lo dicho, creo que... Use no creo que + subjunctive for nuance."
+     ],
+     "q": "Should everyone learn a second language at school? What is your opinion?",
+     "c": "Write an opinion text of about 100 words with four short paragraphs on a topic you care about."
+    },
+    "de": {
+     "t": "Einen Meinungstext schreiben",
+     "g": "Schreib einen einfachen Meinungstext: Einleitung, Argumente, Gegenargument und Schluss.",
+     "p": [
+      "Einleitung: hoy en día se habla mucho de...; en mi opinión... Sag klar deine Meinung.",
+      "Argumente: en primer lugar, además, por último. Gegenargument: es cierto que..., sin embargo...",
+      "Schluss: en conclusión, por todo lo dicho, creo que... Mit no creo que + subjuntivo nuancieren."
+     ],
+     "q": "Sollte jeder in der Schule eine zweite Sprache lernen? Was meinst du?",
+     "c": "Schreib einen Meinungstext von etwa 100 Wörtern in vier kurzen Absätzen zu einem Thema, das dir wichtig ist."
+    },
+    "es": {
+     "t": "Escribir un texto de opinión",
+     "g": "Escribe un texto de opinión sencillo: introducción, argumentos, contraargumento y conclusión.",
+     "p": [
+      "Introducción: hoy en día se habla mucho de...; en mi opinión... Expresa tu postura con claridad.",
+      "Argumentos: en primer lugar, además, por último. Contraargumento: es cierto que..., sin embargo...",
+      "Conclusión: en conclusión, por todo lo dicho, creo que... Usa no creo que + subjuntivo para matizar."
+     ],
+     "q": "¿Todo el mundo debería aprender una segunda lengua en el colegio? ¿Qué opinas?",
+     "c": "Escribe un texto de opinión de unas 100 palabras en cuatro párrafos cortos sobre un tema que te importe."
+    },
+    "fr": {
+     "t": "Écrire un texte d'opinion",
+     "g": "Écris un texte d'opinion simple : introduction, arguments, contre-argument et conclusion.",
+     "p": [
+      "Introduction : hoy en día se habla mucho de... ; en mi opinión... Exprime ton avis clairement.",
+      "Arguments : en primer lugar, además, por último. Contre-argument : es cierto que..., sin embargo...",
+      "Conclusion : en conclusión, por todo lo dicho, creo que... Nuance avec no creo que + subjonctif."
+     ],
+     "q": "Tout le monde devrait-il apprendre une deuxième langue à l'école ? Qu'en penses-tu ?",
+     "c": "Écris un texte d'opinion d'environ 100 mots en quatre courts paragraphes sur un sujet qui te tient à cœur."
+    },
+    "it": {
+     "t": "Scrivere un testo argomentativo",
+     "g": "Scrivi un semplice testo d'opinione: introduzione, argomenti, controargomento e conclusione.",
+     "p": [
+      "Introduzione: hoy en día se habla mucho de...; en mi opinión... Esprimi chiaramente la tua posizione.",
+      "Argomenti: en primer lugar, además, por último. Controargomento: es cierto que..., sin embargo...",
+      "Conclusione: en conclusión, por todo lo dicho, creo que... Sfuma con no creo que + congiuntivo."
+     ],
+     "q": "Tutti dovrebbero imparare una seconda lingua a scuola? Cosa ne pensi?",
+     "c": "Scrivi un testo d'opinione di circa 100 parole in quattro brevi paragrafi su un tema che ti sta a cuore."
+    },
+    "pt": {
+     "t": "Escrever um texto de opinião",
+     "g": "Escreve um texto de opinião simples: introdução, argumentos, contra-argumento e conclusão.",
+     "p": [
+      "Introdução: hoy en día se habla mucho de...; en mi opinión... Diz claramente a tua posição.",
+      "Argumentos: en primer lugar, además, por último. Contra-argumento: es cierto que..., sin embargo...",
+      "Conclusão: en conclusión, por todo lo dicho, creo que... Matiza com no creo que + conjuntivo."
+     ],
+     "q": "Toda a gente devia aprender uma segunda língua na escola? Qual é a tua opinião?",
+     "c": "Escreve um texto de opinião de cerca de 100 palavras em quatro parágrafos curtos sobre um tema que te importa."
+    },
+    "pt_BR": {
+     "t": "Escrever um texto de opinião",
+     "g": "Escreva um texto de opinião simples: introdução, argumentos, contra-argumento e conclusão.",
+     "p": [
+      "Introdução: hoy en día se habla mucho de...; en mi opinión... Diga claramente sua posição.",
+      "Argumentos: en primer lugar, además, por último. Contra-argumento: es cierto que..., sin embargo...",
+      "Conclusão: en conclusión, por todo lo dicho, creo que... Matize com no creo que + subjuntivo."
+     ],
+     "q": "Todo mundo deveria aprender uma segunda língua na escola? Qual é a sua opinião?",
+     "c": "Escreva um texto de opinião de cerca de 100 palavras em quatro parágrafos curtos sobre um tema importante para você."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "hoy en día",
+      "ex": "Hoy en día, mucha gente trabaja desde casa."
+     },
+     {
+      "w": "en mi opinión",
+      "ex": "En mi opinión, aprender idiomas abre puertas."
+     },
+     {
+      "w": "por último",
+      "ex": "Por último, viajar es más fácil si hablas el idioma."
+     },
+     {
+      "w": "es cierto que",
+      "ex": "Es cierto que requiere tiempo y esfuerzo."
+     },
+     {
+      "w": "por todo lo dicho",
+      "ex": "Por todo lo dicho, creo que vale la pena."
+     },
+     {
+      "w": "en conclusión",
+      "ex": "En conclusión, todos deberíamos aprender otra lengua."
+     }
+    ],
+    "gram": "Opinión: introducción (hoy en día), argumentos (en primer lugar, además), contraargumento (es cierto que..., sin embargo), conclusión."
+   }
+  },
+  {
+   "d": 239,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Travel stories: the best trip",
+     "g": "Tell a vivid story about your best trip with past tenses and strong adjectives.",
+     "p": [
+      "Set the scene with the imperfect: era verano, hacía un calor tremendo, el pueblo era precioso.",
+      "Tell the events with the preterite and connectors: al principio..., de repente..., al final...",
+      "Add colour: strong adjectives (enorme, increíble, agotado) and the pluperfect: nunca había visto algo así."
+     ],
+     "q": "What was the best trip of your life? Tell me where, when and one unforgettable moment.",
+     "c": "Write your best travel story in eight sentences using all three past tenses and two strong adjectives."
+    },
+    "de": {
+     "t": "Reisegeschichten: die beste Reise",
+     "g": "Erzähl lebendig von deiner besten Reise mit Vergangenheitszeiten und starken Adjektiven.",
+     "p": [
+      "Szene im Imperfekt: era verano, hacía un calor tremendo, el pueblo era precioso.",
+      "Ereignisse im Indefinido mit Konnektoren: al principio..., de repente..., al final...",
+      "Farbe: starke Adjektive (enorme, increíble, agotado) und Plusquamperfekt: nunca había visto algo así."
+     ],
+     "q": "Was war die beste Reise deines Lebens? Erzähl mir wo, wann und einen unvergesslichen Moment.",
+     "c": "Schreib deine beste Reisegeschichte in acht Sätzen mit allen drei Vergangenheitszeiten und zwei starken Adjektiven."
+    },
+    "es": {
+     "t": "Historias de viaje: el mejor viaje",
+     "g": "Cuenta una historia viva sobre tu mejor viaje con los pasados y adjetivos fuertes.",
+     "p": [
+      "Describe la escena con imperfecto: era verano, hacía un calor tremendo, el pueblo era precioso.",
+      "Cuenta los hechos con indefinido y conectores: al principio..., de repente..., al final...",
+      "Da color: adjetivos fuertes (enorme, increíble, agotado) y pluscuamperfecto: nunca había visto algo así."
+     ],
+     "q": "¿Cuál fue el mejor viaje de tu vida? Cuéntame dónde, cuándo y un momento inolvidable.",
+     "c": "Escribe tu mejor historia de viaje en ocho frases con los tres pasados y dos adjetivos fuertes."
+    },
+    "fr": {
+     "t": "Récits de voyage : le meilleur voyage",
+     "g": "Raconte de façon vivante ton meilleur voyage avec les passés et des adjectifs forts.",
+     "p": [
+      "Décor à l'imparfait : era verano, hacía un calor tremendo, el pueblo era precioso.",
+      "Événements à l'indefinido avec connecteurs : al principio..., de repente..., al final...",
+      "De la couleur : adjectifs forts (enorme, increíble, agotado) et plus-que-parfait : nunca había visto algo así."
+     ],
+     "q": "Quel a été le meilleur voyage de ta vie ? Dis-moi où, quand et un moment inoubliable.",
+     "c": "Écris ton meilleur récit de voyage en huit phrases avec les trois passés et deux adjectifs forts."
+    },
+    "it": {
+     "t": "Racconti di viaggio: il viaggio migliore",
+     "g": "Racconta in modo vivace il tuo viaggio migliore con i passati e aggettivi forti.",
+     "p": [
+      "Scena all'imperfetto: era verano, hacía un calor tremendo, el pueblo era precioso.",
+      "Fatti all'indefinido con connettivi: al principio..., de repente..., al final...",
+      "Dai colore: aggettivi forti (enorme, increíble, agotado) e trapassato: nunca había visto algo así."
+     ],
+     "q": "Qual è stato il viaggio più bello della tua vita? Dimmi dove, quando e un momento indimenticabile.",
+     "c": "Scrivi il tuo racconto di viaggio migliore in otto frasi con i tre passati e due aggettivi forti."
+    },
+    "pt": {
+     "t": "Histórias de viagem: a melhor viagem",
+     "g": "Conta de forma viva a tua melhor viagem com os passados e adjetivos fortes.",
+     "p": [
+      "Cena no imperfeito: era verano, hacía un calor tremendo, el pueblo era precioso.",
+      "Factos no indefinido com conectores: al principio..., de repente..., al final...",
+      "Dá cor: adjetivos fortes (enorme, increíble, agotado) e mais-que-perfeito: nunca había visto algo así."
+     ],
+     "q": "Qual foi a melhor viagem da tua vida? Diz-me onde, quando e um momento inesquecível.",
+     "c": "Escreve a tua melhor história de viagem em oito frases com os três passados e dois adjetivos fortes."
+    },
+    "pt_BR": {
+     "t": "Histórias de viagem: a melhor viagem",
+     "g": "Conte de forma viva a sua melhor viagem com os passados e adjetivos fortes.",
+     "p": [
+      "Cena no imperfeito: era verano, hacía un calor tremendo, el pueblo era precioso.",
+      "Fatos no indefinido com conectores: al principio..., de repente..., al final...",
+      "Dê cor: adjetivos fortes (enorme, increíble, agotado) e mais-que-perfeito: nunca había visto algo así."
+     ],
+     "q": "Qual foi a melhor viagem da sua vida? Me diga onde, quando e um momento inesquecível.",
+     "c": "Escreva sua melhor história de viagem em oito frases com os três passados e dois adjetivos fortes."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el viaje de mi vida",
+      "ex": "El viaje de mi vida fue a Machu Picchu."
+     },
+     {
+      "w": "inolvidable",
+      "ex": "Fue una noche inolvidable bajo las estrellas."
+     },
+     {
+      "w": "increíble",
+      "ex": "Desde la cima, la vista era increíble."
+     },
+     {
+      "w": "nunca había visto",
+      "ex": "Nunca había visto un atardecer tan bonito."
+     },
+     {
+      "w": "perderse",
+      "ex": "El primer día nos perdimos por las calles del centro."
+     },
+     {
+      "w": "el recuerdo",
+      "ex": "Guardo un recuerdo precioso de aquel viaje."
+     }
+    ],
+    "gram": "Narrar un viaje: imperfecto (escena), indefinido (hechos), pluscuamperfecto (antes: nunca había visto) y adjetivos fuertes."
+   }
+  },
+  {
+   "d": 240,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Cultural differences",
+     "g": "Compare customs respectfully: greetings with kisses, punctuality, daily schedules.",
+     "p": [
+      "Greetings: in Spain two kisses on the cheek are common among friends; in much of Latin America, one.",
+      "Time and schedules: lunch around two or three in Spain, dinner late; punctuality varies by context.",
+      "Avoid stereotypes: en mi país solemos..., me llamó la atención que..., depende de la persona y la región."
+     ],
+     "q": "Which custom surprised you most in another culture? Use me llamó la atención que...",
+     "c": "Write a short comparison of three customs in your country and a Spanish-speaking country, without stereotypes."
+    },
+    "de": {
+     "t": "Kulturelle Unterschiede",
+     "g": "Vergleiche Bräuche respektvoll: Begrüßung mit Küssen, Pünktlichkeit, Tagesabläufe.",
+     "p": [
+      "Begrüßung: In Spanien sind unter Freunden zwei Wangenküsse üblich, in weiten Teilen Lateinamerikas einer.",
+      "Zeit und Abläufe: Mittagessen in Spanien gegen zwei oder drei, Abendessen spät; Pünktlichkeit je nach Kontext.",
+      "Ohne Klischees: en mi país solemos..., me llamó la atención que..., depende de la persona y la región."
+     ],
+     "q": "Welcher Brauch in einer anderen Kultur hat dich am meisten überrascht? Benutze me llamó la atención que...",
+     "c": "Vergleiche kurz drei Bräuche in deinem Land und einem spanischsprachigen Land, ohne Klischees."
+    },
+    "es": {
+     "t": "Diferencias culturales",
+     "g": "Compara costumbres con respeto: saludos con besos, puntualidad, horarios.",
+     "p": [
+      "Saludos: en España son comunes dos besos entre amigos; en gran parte de Latinoamérica, uno.",
+      "Horarios: en España se come hacia las dos o las tres y se cena tarde; la puntualidad depende del contexto.",
+      "Evita estereotipos: en mi país solemos..., me llamó la atención que..., depende de la persona y la región."
+     ],
+     "q": "¿Qué costumbre de otra cultura te sorprendió más? Usa me llamó la atención que...",
+     "c": "Escribe una comparación corta de tres costumbres de tu país y de un país hispanohablante, sin estereotipos."
+    },
+    "fr": {
+     "t": "Différences culturelles",
+     "g": "Compare les coutumes avec respect : bises, ponctualité, horaires.",
+     "p": [
+      "Salutations : en Espagne, deux bises sont courantes entre amis ; dans une grande partie de l'Amérique latine, une.",
+      "Horaires : en Espagne, déjeuner vers deux ou trois heures et dîner tard ; la ponctualité dépend du contexte.",
+      "Évite les clichés : en mi país solemos..., me llamó la atención que..., depende de la persona y la región."
+     ],
+     "q": "Quelle coutume d'une autre culture t'a le plus surpris ? Utilise me llamó la atención que...",
+     "c": "Écris une courte comparaison de trois coutumes de ton pays et d'un pays hispanophone, sans clichés."
+    },
+    "it": {
+     "t": "Differenze culturali",
+     "g": "Confronta le usanze con rispetto: saluti con baci, puntualità, orari.",
+     "p": [
+      "Saluti: in Spagna tra amici sono comuni due baci sulla guancia; in gran parte dell'America Latina, uno.",
+      "Orari: in Spagna si pranza verso le due o le tre e si cena tardi; la puntualità dipende dal contesto.",
+      "Evita gli stereotipi: en mi país solemos..., me llamó la atención que..., depende de la persona y la región."
+     ],
+     "q": "Quale usanza di un'altra cultura ti ha sorpreso di più? Usa me llamó la atención que...",
+     "c": "Scrivi un breve confronto tra tre usanze del tuo paese e di un paese ispanofono, senza stereotipi."
+    },
+    "pt": {
+     "t": "Diferenças culturais",
+     "g": "Compara costumes com respeito: cumprimentos com beijos, pontualidade, horários.",
+     "p": [
+      "Cumprimentos: em Espanha são comuns dois beijos entre amigos; em grande parte da América Latina, um.",
+      "Horários: em Espanha almoça-se por volta das duas ou três e janta-se tarde; a pontualidade depende do contexto.",
+      "Evita estereótipos: en mi país solemos..., me llamó la atención que..., depende de la persona y la región."
+     ],
+     "q": "Que costume de outra cultura te surpreendeu mais? Usa me llamó la atención que...",
+     "c": "Escreve uma comparação curta de três costumes do teu país e de um país hispanófono, sem estereótipos."
+    },
+    "pt_BR": {
+     "t": "Diferenças culturais",
+     "g": "Compare costumes com respeito: cumprimentos com beijos, pontualidade, horários.",
+     "p": [
+      "Cumprimentos: na Espanha são comuns dois beijos entre amigos; em grande parte da América Latina, um.",
+      "Horários: na Espanha se almoça por volta das duas ou três e se janta tarde; a pontualidade depende do contexto.",
+      "Evite estereótipos: en mi país solemos..., me llamó la atención que..., depende de la persona y la región."
+     ],
+     "q": "Qual costume de outra cultura mais te surpreendeu? Use me llamó la atención que...",
+     "c": "Escreva uma comparação curta de três costumes do seu país e de um país hispanofalante, sem estereótipos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "dar dos besos",
+      "ex": "En España, los amigos se saludan dando dos besos."
+     },
+     {
+      "w": "la puntualidad",
+      "ex": "La puntualidad es muy importante en el trabajo."
+     },
+     {
+      "w": "el horario",
+      "ex": "El horario de comidas en España es más tarde."
+     },
+     {
+      "w": "solemos",
+      "ex": "En mi país solemos cenar a las siete."
+     },
+     {
+      "w": "me llamó la atención que",
+      "ex": "Me llamó la atención que las tiendas cerraran a mediodía."
+     },
+     {
+      "w": "la costumbre",
+      "ex": "Cada región tiene sus propias costumbres."
+     }
+    ],
+    "gram": "Comparar culturas: soler + infinitivo (solemos cenar); me llamó la atención que + imperfecto de subjuntivo; depende de..."
+   }
+  }
+ ]
+}

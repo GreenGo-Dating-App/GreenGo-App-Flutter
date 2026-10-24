@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 271,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "A funny day: telling anecdotes",
+     "g": "Tell a funny anecdote with smooth connectors and the right tenses.",
+     "p": [
+      "Open the anecdote: sai cosa mi è successo?, ti racconto una cosa buffissima, l'altro giorno...",
+      "Connect events: mentre aspettavo il bus..., a un certo punto, così, alla fine, per fortuna.",
+      "Mix tenses: imperfetto for background, passato prossimo for events, then the punchline."
+     ],
+     "q": "What is a funny thing that happened to you that you still laugh about?",
+     "c": "Write a funny anecdote in six sentences with mentre, a un certo punto and alla fine."
+    },
+    "de": {
+     "t": "Ein lustiger Tag: Anekdoten erzählen",
+     "g": "Du erzählst eine lustige Anekdote mit flüssigen Übergängen und den richtigen Zeiten.",
+     "p": [
+      "Einstieg: sai cosa mi è successo?, ti racconto una cosa buffissima, l'altro giorno...",
+      "Verbinden: mentre aspettavo il bus..., a un certo punto, così, alla fine, per fortuna.",
+      "Zeiten mischen: Imperfetto für den Hintergrund, passato prossimo für Ereignisse, dann die Pointe."
+     ],
+     "q": "Welche lustige Sache ist dir passiert, über die du heute noch lachst?",
+     "c": "Schreib eine lustige Anekdote in sechs Sätzen mit mentre, a un certo punto und alla fine."
+    },
+    "es": {
+     "t": "Un día divertido: contar anécdotas",
+     "g": "Contar una anécdota divertida con buenos conectores y los tiempos correctos.",
+     "p": [
+      "Empieza: sai cosa mi è successo?, ti racconto una cosa buffissima, l'altro giorno...",
+      "Enlaza: mentre aspettavo il bus..., a un certo punto, così, alla fine, per fortuna.",
+      "Mezcla tiempos: imperfetto para el fondo, passato prossimo para los hechos y luego el remate."
+     ],
+     "q": "¿Qué cosa graciosa te pasó que todavía te hace reír?",
+     "c": "Escribe una anécdota divertida en seis frases con mentre, a un certo punto y alla fine."
+    },
+    "fr": {
+     "t": "Une journée drôle : raconter des anecdotes",
+     "g": "Raconter une anecdote drôle avec des connecteurs fluides et les bons temps.",
+     "p": [
+      "Commence : sai cosa mi è successo?, ti racconto una cosa buffissima, l'altro giorno...",
+      "Enchaîne : mentre aspettavo il bus..., a un certo punto, così, alla fine, per fortuna.",
+      "Mélange les temps : imperfetto pour le décor, passato prossimo pour les faits, puis la chute."
+     ],
+     "q": "Quelle chose drôle t'est arrivée qui te fait encore rire ?",
+     "c": "Écris une anecdote drôle en six phrases avec mentre, a un certo punto et alla fine."
+    },
+    "it": {
+     "t": "Una giornata buffa: raccontare aneddoti",
+     "g": "Raccontare un aneddoto divertente con connettivi fluidi e i tempi giusti.",
+     "p": [
+      "Apri il racconto: sai cosa mi è successo?, ti racconto una cosa buffissima, l'altro giorno...",
+      "Collega i fatti: mentre aspettavo il bus..., a un certo punto, così, alla fine, per fortuna.",
+      "Mescola i tempi: imperfetto per lo sfondo, passato prossimo per i fatti, poi la battuta finale."
+     ],
+     "q": "Qual è una cosa buffa che ti è successa e che ti fa ancora ridere?",
+     "c": "Scrivi un aneddoto divertente in sei frasi con mentre, a un certo punto e alla fine."
+    },
+    "pt": {
+     "t": "Um dia engraçado: contar episódios",
+     "g": "Contar um episódio engraçado com conectores fluidos e os tempos certos.",
+     "p": [
+      "Começa: sai cosa mi è successo?, ti racconto una cosa buffissima, l'altro giorno...",
+      "Liga os factos: mentre aspettavo il bus..., a un certo punto, così, alla fine, per fortuna.",
+      "Mistura tempos: imperfetto para o fundo, passato prossimo para os factos e depois o remate."
+     ],
+     "q": "Que coisa engraçada te aconteceu que ainda te faz rir?",
+     "c": "Escreve um episódio engraçado em seis frases com mentre, a un certo punto e alla fine."
+    },
+    "pt_BR": {
+     "t": "Um dia engraçado: contar causos",
+     "g": "Contar um causo engraçado com conectores fluidos e os tempos certos.",
+     "p": [
+      "Comece: sai cosa mi è successo?, ti racconto una cosa buffissima, l'altro giorno...",
+      "Ligue os fatos: mentre aspettavo il bus..., a un certo punto, così, alla fine, per fortuna.",
+      "Misture tempos: imperfetto para o fundo, passato prossimo para os fatos e depois o desfecho."
+     ],
+     "q": "Que coisa engraçada aconteceu com você que ainda faz você rir?",
+     "c": "Escreva um causo engraçado em seis frases com mentre, a un certo punto e alla fine."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "l'aneddoto",
+      "ex": "Ti racconto un aneddoto del mio viaggio."
+     },
+     {
+      "w": "buffo",
+      "ex": "È stata una situazione buffissima."
+     },
+     {
+      "w": "mentre",
+      "ex": "Mentre cucinavo, è suonato il campanello."
+     },
+     {
+      "w": "a un certo punto",
+      "ex": "A un certo punto il cane ha preso il mio panino!"
+     },
+     {
+      "w": "per fortuna",
+      "ex": "Per fortuna nessuno se n'è accorto."
+     },
+     {
+      "w": "ridere a crepapelle",
+      "ex": "Abbiamo riso a crepapelle per tutta la sera."
+     }
+    ],
+    "gram": "Mentre + imperfetto (azione in corso) interrotto da passato prossimo: mentre dormivo, è squillato il telefono."
+   }
+  },
+  {
+   "d": 272,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Talking about dreams and ambitions",
+     "g": "Express long-term dreams, sogni nel cassetto, with conditional and subjunctive.",
+     "p": [
+      "Un sogno nel cassetto is a secret dream: il mio sogno nel cassetto è aprire una libreria.",
+      "Conditional for wishes: mi piacerebbe vivere al mare, vorrei imparare a suonare il piano.",
+      "Subjunctive after wishes for others: spero che tu possa realizzare il tuo sogno."
+     ],
+     "q": "What is your sogno nel cassetto?",
+     "c": "Write three sentences about a dream: one with mi piacerebbe, one with vorrei, one with spero che."
+    },
+    "de": {
+     "t": "Über Träume und Ziele sprechen",
+     "g": "Du drückst langfristige Träume, sogni nel cassetto, mit Konditional und Konjunktiv aus.",
+     "p": [
+      "Un sogno nel cassetto ist ein heimlicher Traum: il mio sogno nel cassetto è aprire una libreria.",
+      "Konditional für Wünsche: mi piacerebbe vivere al mare, vorrei imparare a suonare il piano.",
+      "Konjunktiv bei Wünschen für andere: spero che tu possa realizzare il tuo sogno."
+     ],
+     "q": "Was ist dein sogno nel cassetto?",
+     "c": "Schreib drei Sätze über einen Traum: mit mi piacerebbe, mit vorrei und mit spero che."
+    },
+    "es": {
+     "t": "Hablar de sueños y ambiciones",
+     "g": "Expresar sueños a largo plazo, sogni nel cassetto, con condicional y subjuntivo.",
+     "p": [
+      "Un sogno nel cassetto es un sueño guardado: il mio sogno nel cassetto è aprire una libreria.",
+      "Condicional para deseos: mi piacerebbe vivere al mare, vorrei imparare a suonare il piano.",
+      "Subjuntivo al desear algo a otros: spero che tu possa realizzare il tuo sogno."
+     ],
+     "q": "¿Cuál es tu sogno nel cassetto?",
+     "c": "Escribe tres frases sobre un sueño: con mi piacerebbe, con vorrei y con spero che."
+    },
+    "fr": {
+     "t": "Parler de ses rêves et ambitions",
+     "g": "Exprimer des rêves à long terme, sogni nel cassetto, avec conditionnel et subjonctif.",
+     "p": [
+      "Un sogno nel cassetto est un rêve secret : il mio sogno nel cassetto è aprire una libreria.",
+      "Le conditionnel pour les souhaits : mi piacerebbe vivere al mare, vorrei imparare a suonare il piano.",
+      "Le subjonctif pour souhaiter à d'autres : spero che tu possa realizzare il tuo sogno."
+     ],
+     "q": "Quel est ton sogno nel cassetto ?",
+     "c": "Écris trois phrases sur un rêve : avec mi piacerebbe, avec vorrei et avec spero che."
+    },
+    "it": {
+     "t": "Parlare di sogni e ambizioni",
+     "g": "Esprimere sogni a lungo termine, i sogni nel cassetto, con condizionale e congiuntivo.",
+     "p": [
+      "Un sogno nel cassetto è un desiderio segreto: il mio sogno nel cassetto è aprire una libreria.",
+      "Condizionale per i desideri: mi piacerebbe vivere al mare, vorrei imparare a suonare il piano.",
+      "Congiuntivo quando auguri qualcosa agli altri: spero che tu possa realizzare il tuo sogno."
+     ],
+     "q": "Qual è il tuo sogno nel cassetto?",
+     "c": "Scrivi tre frasi su un sogno: una con mi piacerebbe, una con vorrei, una con spero che."
+    },
+    "pt": {
+     "t": "Falar de sonhos e ambições",
+     "g": "Exprimir sonhos a longo prazo, sogni nel cassetto, com condicional e conjuntivo.",
+     "p": [
+      "Un sogno nel cassetto é um sonho guardado na gaveta: il mio sogno nel cassetto è aprire una libreria.",
+      "Condicional para desejos: mi piacerebbe vivere al mare, vorrei imparare a suonare il piano.",
+      "Conjuntivo ao desejar algo a outros: spero che tu possa realizzare il tuo sogno."
+     ],
+     "q": "Qual é o teu sogno nel cassetto?",
+     "c": "Escreve três frases sobre um sonho: com mi piacerebbe, com vorrei e com spero che."
+    },
+    "pt_BR": {
+     "t": "Falar de sonhos e ambições",
+     "g": "Expressar sonhos de longo prazo, sogni nel cassetto, com condicional e subjuntivo.",
+     "p": [
+      "Un sogno nel cassetto é um sonho guardado na gaveta: il mio sogno nel cassetto è aprire una libreria.",
+      "Condicional para desejos: mi piacerebbe vivere al mare, vorrei imparare a suonare il piano.",
+      "Subjuntivo ao desejar algo para outros: spero che tu possa realizzare il tuo sogno."
+     ],
+     "q": "Qual é o seu sogno nel cassetto?",
+     "c": "Escreva três frases sobre um sonho: com mi piacerebbe, com vorrei e com spero che."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il sogno nel cassetto",
+      "ex": "Il mio sogno nel cassetto è scrivere un romanzo."
+     },
+     {
+      "w": "realizzare",
+      "ex": "Finalmente ha realizzato il suo sogno."
+     },
+     {
+      "w": "l'ambizione",
+      "ex": "Ha una grande ambizione: diventare chef."
+     },
+     {
+      "w": "mi piacerebbe",
+      "ex": "Mi piacerebbe fare il giro del mondo."
+     },
+     {
+      "w": "spero che",
+      "ex": "Spero che tu possa venire in Italia presto."
+     },
+     {
+      "w": "un giorno",
+      "ex": "Un giorno aprirò un piccolo bed and breakfast."
+     }
+    ],
+    "gram": "Desideri: condizionale (vorrei, mi piacerebbe) + infinito; spero che + congiuntivo presente (possa, riesca)."
+   }
+  },
+  {
+   "d": 273,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Describing changes in your life",
+     "g": "Talk about personal growth with diventare, cambiare and crescere.",
+     "p": [
+      "Diventare takes essere: sono diventato più paziente, è diventata insegnante.",
+      "Cambiare and crescere: sono cambiato molto, sono cresciuto in un paesino, ho cambiato lavoro.",
+      "Compare then and now: prima ero timido, adesso parlo con tutti; negli ultimi anni ho capito che..."
+     ],
+     "q": "How have you changed in the last five years?",
+     "c": "Write three before-and-after sentences about yourself with prima... adesso..."
+    },
+    "de": {
+     "t": "Veränderungen im Leben beschreiben",
+     "g": "Du sprichst über persönliche Entwicklung mit diventare, cambiare und crescere.",
+     "p": [
+      "Diventare bildet mit essere: sono diventato più paziente, è diventata insegnante.",
+      "Cambiare und crescere: sono cambiato molto, sono cresciuto in un paesino, ho cambiato lavoro.",
+      "Früher und heute: prima ero timido, adesso parlo con tutti; negli ultimi anni ho capito che..."
+     ],
+     "q": "Wie hast du dich in den letzten fünf Jahren verändert?",
+     "c": "Schreib drei Vorher-nachher-Sätze über dich mit prima... adesso..."
+    },
+    "es": {
+     "t": "Describir cambios en tu vida",
+     "g": "Hablar de crecimiento personal con diventare, cambiare y crescere.",
+     "p": [
+      "Diventare va con essere: sono diventato più paziente, è diventata insegnante.",
+      "Cambiare y crescere: sono cambiato molto, sono cresciuto in un paesino, ho cambiato lavoro.",
+      "Antes y ahora: prima ero timido, adesso parlo con tutti; negli ultimi anni ho capito che..."
+     ],
+     "q": "¿Cómo has cambiado en los últimos cinco años?",
+     "c": "Escribe tres frases de antes y después sobre ti con prima... adesso..."
+    },
+    "fr": {
+     "t": "Décrire les changements de sa vie",
+     "g": "Parler de son évolution avec diventare, cambiare et crescere.",
+     "p": [
+      "Diventare se construit avec essere : sono diventato più paziente, è diventata insegnante.",
+      "Cambiare et crescere : sono cambiato molto, sono cresciuto in un paesino, ho cambiato lavoro.",
+      "Avant et maintenant : prima ero timido, adesso parlo con tutti ; negli ultimi anni ho capito che..."
+     ],
+     "q": "Comment as-tu changé ces cinq dernières années ?",
+     "c": "Écris trois phrases avant-après sur toi avec prima... adesso..."
+    },
+    "it": {
+     "t": "Descrivere i cambiamenti nella tua vita",
+     "g": "Parlare di crescita personale con diventare, cambiare e crescere.",
+     "p": [
+      "Diventare vuole essere: sono diventato più paziente, è diventata insegnante.",
+      "Cambiare e crescere: sono cambiato molto, sono cresciuto in un paesino, ho cambiato lavoro.",
+      "Prima e adesso: prima ero timido, adesso parlo con tutti; negli ultimi anni ho capito che..."
+     ],
+     "q": "Come sei cambiato negli ultimi cinque anni?",
+     "c": "Scrivi tre frasi prima e dopo su di te con prima... adesso..."
+    },
+    "pt": {
+     "t": "Descrever mudanças na tua vida",
+     "g": "Falar de crescimento pessoal com diventare, cambiare e crescere.",
+     "p": [
+      "Diventare usa essere: sono diventato più paziente, è diventata insegnante.",
+      "Cambiare e crescere: sono cambiato molto, sono cresciuto in un paesino, ho cambiato lavoro.",
+      "Antes e agora: prima ero timido, adesso parlo con tutti; negli ultimi anni ho capito che..."
+     ],
+     "q": "Como mudaste nos últimos cinco anos?",
+     "c": "Escreve três frases de antes e depois sobre ti com prima... adesso..."
+    },
+    "pt_BR": {
+     "t": "Descrever mudanças na sua vida",
+     "g": "Falar de crescimento pessoal com diventare, cambiare e crescere.",
+     "p": [
+      "Diventare usa essere: sono diventato più paziente, è diventata insegnante.",
+      "Cambiare e crescere: sono cambiato molto, sono cresciuto in un paesino, ho cambiato lavoro.",
+      "Antes e agora: prima ero timido, adesso parlo con tutti; negli ultimi anni ho capito che..."
+     ],
+     "q": "Como você mudou nos últimos cinco anos?",
+     "c": "Escreva três frases de antes e depois sobre você com prima... adesso..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "diventare",
+      "ex": "Con gli anni sono diventata più sicura di me."
+     },
+     {
+      "w": "cambiare",
+      "ex": "Ho cambiato città tre volte."
+     },
+     {
+      "w": "crescere",
+      "ex": "Sono cresciuto in una piccola città di mare."
+     },
+     {
+      "w": "maturare",
+      "ex": "Dopo quel viaggio è maturato molto."
+     },
+     {
+      "w": "negli ultimi anni",
+      "ex": "Negli ultimi anni ho imparato a cucinare."
+     },
+     {
+      "w": "prima... adesso",
+      "ex": "Prima odiavo correre, adesso lo adoro."
+     }
+    ],
+    "gram": "Cambiare: con avere se ha un oggetto (ho cambiato casa), con essere se riguarda il soggetto (sono cambiato)."
+   }
+  },
+  {
+   "d": 274,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "At the hairdresser and spa",
+     "g": "Book an appointment, explain what you want and react politely.",
+     "p": [
+      "Booking: vorrei prenotare un taglio, avete posto sabato mattina?, a che ora è libero?",
+      "Explaining: solo una spuntatina, più corti ai lati, la piega, la frangia, un massaggio rilassante.",
+      "Reacting: è perfetto, grazie!; forse un po' più corto qui?; mi piace moltissimo."
+     ],
+     "q": "How do you usually explain what you want at the hairdresser?",
+     "c": "Write a short phone call booking a haircut for Saturday and explaining the style you want."
+    },
+    "de": {
+     "t": "Beim Friseur und im Spa",
+     "g": "Du buchst einen Termin, erklärst deinen Wunsch und reagierst höflich.",
+     "p": [
+      "Buchen: vorrei prenotare un taglio, avete posto sabato mattina?, a che ora è libero?",
+      "Erklären: solo una spuntatina, più corti ai lati, la piega, la frangia, un massaggio rilassante.",
+      "Reagieren: è perfetto, grazie!; forse un po' più corto qui?; mi piace moltissimo."
+     ],
+     "q": "Wie erklärst du normalerweise beim Friseur, was du willst?",
+     "c": "Schreib ein kurzes Telefonat: Haarschnitt für Samstag buchen und den gewünschten Stil erklären."
+    },
+    "es": {
+     "t": "En la peluquería y el spa",
+     "g": "Pedir cita, explicar lo que quieres y reaccionar con educación.",
+     "p": [
+      "Pedir cita: vorrei prenotare un taglio, avete posto sabato mattina?, a che ora è libero?",
+      "Explicar: solo una spuntatina, più corti ai lati, la piega, la frangia, un massaggio rilassante.",
+      "Reaccionar: è perfetto, grazie!; forse un po' più corto qui?; mi piace moltissimo."
+     ],
+     "q": "¿Cómo sueles explicar en la peluquería lo que quieres?",
+     "c": "Escribe una llamada breve para pedir cita el sábado y explicar el corte que quieres."
+    },
+    "fr": {
+     "t": "Chez le coiffeur et au spa",
+     "g": "Prendre rendez-vous, expliquer ce que tu veux et réagir poliment.",
+     "p": [
+      "Réserver : vorrei prenotare un taglio, avete posto sabato mattina?, a che ora è libero?",
+      "Expliquer : solo una spuntatina, più corti ai lati, la piega, la frangia, un massaggio rilassante.",
+      "Réagir : è perfetto, grazie! ; forse un po' più corto qui? ; mi piace moltissimo."
+     ],
+     "q": "Comment expliques-tu d'habitude au coiffeur ce que tu veux ?",
+     "c": "Écris un court appel pour réserver une coupe samedi et expliquer le style voulu."
+    },
+    "it": {
+     "t": "Dal parrucchiere e alla spa",
+     "g": "Prenotare, spiegare cosa vuoi e reagire con gentilezza.",
+     "p": [
+      "Prenotare: vorrei prenotare un taglio, avete posto sabato mattina?, a che ora è libero?",
+      "Spiegare: solo una spuntatina, più corti ai lati, la piega, la frangia, un massaggio rilassante.",
+      "Reagire: è perfetto, grazie!; forse un po' più corto qui?; mi piace moltissimo."
+     ],
+     "q": "Come spieghi di solito al parrucchiere quello che vuoi?",
+     "c": "Scrivi una breve telefonata per prenotare un taglio sabato e spiegare lo stile che desideri."
+    },
+    "pt": {
+     "t": "No cabeleireiro e no spa",
+     "g": "Marcar hora, explicar o que queres e reagir com simpatia.",
+     "p": [
+      "Marcar: vorrei prenotare un taglio, avete posto sabato mattina?, a che ora è libero?",
+      "Explicar: solo una spuntatina, più corti ai lati, la piega, la frangia, un massaggio rilassante.",
+      "Reagir: è perfetto, grazie!; forse un po' più corto qui?; mi piace moltissimo."
+     ],
+     "q": "Como costumas explicar ao cabeleireiro o que queres?",
+     "c": "Escreve um telefonema curto a marcar um corte para sábado e a explicar o estilo que queres."
+    },
+    "pt_BR": {
+     "t": "No cabeleireiro e no spa",
+     "g": "Marcar horário, explicar o que você quer e reagir com educação.",
+     "p": [
+      "Marcar: vorrei prenotare un taglio, avete posto sabato mattina?, a che ora è libero?",
+      "Explicar: solo una spuntatina, più corti ai lati, la piega, la frangia, un massaggio rilassante.",
+      "Reagir: è perfetto, grazie!; forse un po' più corto qui?; mi piace moltissimo."
+     ],
+     "q": "Como você costuma explicar ao cabeleireiro o que quer?",
+     "c": "Escreva uma ligação curta marcando um corte para sábado e explicando o estilo que você quer."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il taglio",
+      "ex": "Vorrei un taglio corto e semplice."
+     },
+     {
+      "w": "la spuntatina",
+      "ex": "Solo una spuntatina alle punte, grazie."
+     },
+     {
+      "w": "la piega",
+      "ex": "Mi fa anche la piega, per favore?"
+     },
+     {
+      "w": "la frangia",
+      "ex": "Vorrei accorciare un po' la frangia."
+     },
+     {
+      "w": "il trattamento",
+      "ex": "Alla spa ho fatto un trattamento al viso."
+     },
+     {
+      "w": "avete posto",
+      "ex": "Avete posto domani pomeriggio?"
+     }
+    ],
+    "gram": "Farsi + infinito: mi faccio tagliare i capelli; diminutivi gentili: una spuntatina, un attimino."
+   }
+  },
+  {
+   "d": 275,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Shopping for gifts",
+     "g": "Ask for advice, describe the person and choose the perfect regalo.",
+     "p": [
+      "Ask the shop assistant: Cerco un regalo per mia sorella, cosa mi consiglia? Fino a quanto?",
+      "Describe the person: le piace leggere, è sportivo, ama la cucina, ha già tutto!",
+      "Finish: me lo può incartare?, è possibile cambiarlo?, faccio un pacchetto regalo."
+     ],
+     "q": "What is the best gift you have ever received or given?",
+     "c": "Write a dialogue in a shop: you describe a friend in two sentences and choose a gift."
+    },
+    "de": {
+     "t": "Geschenke kaufen",
+     "g": "Du fragst um Rat, beschreibst die Person und findest das perfekte regalo.",
+     "p": [
+      "Fragen: Cerco un regalo per mia sorella, cosa mi consiglia? Fino a quanto?",
+      "Die Person beschreiben: le piace leggere, è sportivo, ama la cucina, ha già tutto!",
+      "Abschließen: me lo può incartare?, è possibile cambiarlo?, faccio un pacchetto regalo."
+     ],
+     "q": "Was ist das schönste Geschenk, das du je bekommen oder gemacht hast?",
+     "c": "Schreib einen Dialog im Laden: Du beschreibst einen Freund in zwei Sätzen und wählst ein Geschenk."
+    },
+    "es": {
+     "t": "Comprar regalos",
+     "g": "Pedir consejo, describir a la persona y elegir el regalo perfecto.",
+     "p": [
+      "Pregunta: Cerco un regalo per mia sorella, cosa mi consiglia? Fino a quanto?",
+      "Describe a la persona: le piace leggere, è sportivo, ama la cucina, ha già tutto!",
+      "Termina: me lo può incartare?, è possibile cambiarlo?, faccio un pacchetto regalo."
+     ],
+     "q": "¿Cuál es el mejor regalo que has recibido o hecho?",
+     "c": "Escribe un diálogo en una tienda: describes a un amigo en dos frases y eliges un regalo."
+    },
+    "fr": {
+     "t": "Acheter des cadeaux",
+     "g": "Demander conseil, décrire la personne et choisir le regalo parfait.",
+     "p": [
+      "Demande : Cerco un regalo per mia sorella, cosa mi consiglia? Fino a quanto?",
+      "Décris la personne : le piace leggere, è sportivo, ama la cucina, ha già tutto!",
+      "Termine : me lo può incartare?, è possibile cambiarlo?, faccio un pacchetto regalo."
+     ],
+     "q": "Quel est le plus beau cadeau que tu aies reçu ou offert ?",
+     "c": "Écris un dialogue en boutique : tu décris un ami en deux phrases et tu choisis un cadeau."
+    },
+    "it": {
+     "t": "Comprare un regalo",
+     "g": "Chiedere consiglio, descrivere la persona e scegliere il regalo perfetto.",
+     "p": [
+      "Chiedi al commesso: Cerco un regalo per mia sorella, cosa mi consiglia? Fino a quanto?",
+      "Descrivi la persona: le piace leggere, è sportivo, ama la cucina, ha già tutto!",
+      "Concludi: me lo può incartare?, è possibile cambiarlo?, faccio un pacchetto regalo."
+     ],
+     "q": "Qual è il regalo più bello che hai ricevuto o fatto?",
+     "c": "Scrivi un dialogo in negozio: descrivi un amico in due frasi e scegli un regalo."
+    },
+    "pt": {
+     "t": "Comprar presentes",
+     "g": "Pedir conselho, descrever a pessoa e escolher o regalo perfeito.",
+     "p": [
+      "Pergunta: Cerco un regalo per mia sorella, cosa mi consiglia? Fino a quanto?",
+      "Descreve a pessoa: le piace leggere, è sportivo, ama la cucina, ha già tutto!",
+      "Termina: me lo può incartare?, è possibile cambiarlo?, faccio un pacchetto regalo."
+     ],
+     "q": "Qual foi o melhor presente que recebeste ou deste?",
+     "c": "Escreve um diálogo numa loja: descreves um amigo em duas frases e escolhes um presente."
+    },
+    "pt_BR": {
+     "t": "Comprar presentes",
+     "g": "Pedir conselho, descrever a pessoa e escolher o regalo perfeito.",
+     "p": [
+      "Pergunte: Cerco un regalo per mia sorella, cosa mi consiglia? Fino a quanto?",
+      "Descreva a pessoa: le piace leggere, è sportivo, ama la cucina, ha già tutto!",
+      "Feche: me lo può incartare?, è possibile cambiarlo?, faccio un pacchetto regalo."
+     ],
+     "q": "Qual foi o melhor presente que você já recebeu ou deu?",
+     "c": "Escreva um diálogo numa loja: você descreve um amigo em duas frases e escolhe um presente."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il regalo",
+      "ex": "Cerco un regalo per il compleanno di mio padre."
+     },
+     {
+      "w": "incartare",
+      "ex": "Me lo può incartare, per favore?"
+     },
+     {
+      "w": "il pacchetto regalo",
+      "ex": "Le faccio un bel pacchetto regalo."
+     },
+     {
+      "w": "il buono regalo",
+      "ex": "Se non sai cosa scegliere, prendi un buono regalo."
+     },
+     {
+      "w": "cambiare",
+      "ex": "Se non va bene, si può cambiare entro un mese."
+     },
+     {
+      "w": "fare un pensierino",
+      "ex": "Volevo fare un pensierino alla mia insegnante."
+     }
+    ],
+    "gram": "Pronomi combinati: me lo incarta?, glielo regalo (a lui/lei), te lo consiglio."
+   }
+  },
+  {
+   "d": 276,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Italian sports culture",
+     "g": "Talk about calcio, cycling and the Giro d'Italia like an Italian fan.",
+     "p": [
+      "Calcio is a passion: la squadra del cuore, il tifoso, lo stadio, la partita, segnare un gol.",
+      "Cycling: the Giro d'Italia, raced each spring since 1909, gives its leader la maglia rosa.",
+      "Fan talk: forza!, che partita!, abbiamo vinto due a uno, tifo per la Juve, è un derby."
+     ],
+     "q": "Which sport do you follow or play, and how do fans celebrate it in your country?",
+     "c": "Write three sentences as a fan after a match: the score, the best moment and how you feel."
+    },
+    "de": {
+     "t": "Italienische Sportkultur",
+     "g": "Du sprichst über calcio, Radsport und den Giro d'Italia wie ein italienischer Fan.",
+     "p": [
+      "Calcio ist Leidenschaft: la squadra del cuore, il tifoso, lo stadio, la partita, segnare un gol.",
+      "Radsport: Beim Giro d'Italia, seit 1909 jedes Frühjahr, trägt der Führende la maglia rosa.",
+      "Fansprache: forza!, che partita!, abbiamo vinto due a uno, tifo per la Juve, è un derby."
+     ],
+     "q": "Welchen Sport verfolgst oder treibst du, und wie feiern die Fans in deinem Land?",
+     "c": "Schreib drei Sätze als Fan nach einem Spiel: Ergebnis, bester Moment und wie du dich fühlst."
+    },
+    "es": {
+     "t": "La cultura deportiva italiana",
+     "g": "Hablar de calcio, ciclismo y el Giro d'Italia como un aficionado italiano.",
+     "p": [
+      "El calcio es pasión: la squadra del cuore, il tifoso, lo stadio, la partita, segnare un gol.",
+      "Ciclismo: en el Giro d'Italia, cada primavera desde 1909, el líder lleva la maglia rosa.",
+      "Habla de hincha: forza!, che partita!, abbiamo vinto due a uno, tifo per la Juve, è un derby."
+     ],
+     "q": "¿Qué deporte sigues o practicas, y cómo lo celebran los aficionados en tu país?",
+     "c": "Escribe tres frases como hincha tras un partido: el resultado, el mejor momento y cómo te sientes."
+    },
+    "fr": {
+     "t": "La culture sportive italienne",
+     "g": "Parler de calcio, de cyclisme et du Giro d'Italia comme un tifoso.",
+     "p": [
+      "Le calcio est une passion : la squadra del cuore, il tifoso, lo stadio, la partita, segnare un gol.",
+      "Cyclisme : au Giro d'Italia, chaque printemps depuis 1909, le leader porte la maglia rosa.",
+      "Parler en supporter : forza!, che partita!, abbiamo vinto due a uno, tifo per la Juve, è un derby."
+     ],
+     "q": "Quel sport suis-tu ou pratiques-tu, et comment les supporters le fêtent-ils chez toi ?",
+     "c": "Écris trois phrases de supporter après un match : le score, le meilleur moment et ton ressenti."
+    },
+    "it": {
+     "t": "La cultura sportiva italiana",
+     "g": "Parlare di calcio, ciclismo e Giro d'Italia come un vero tifoso.",
+     "p": [
+      "Il calcio è passione: la squadra del cuore, il tifoso, lo stadio, la partita, segnare un gol.",
+      "Ciclismo: al Giro d'Italia, corso ogni primavera dal 1909, il primo in classifica veste la maglia rosa.",
+      "Parlare da tifoso: forza!, che partita!, abbiamo vinto due a uno, tifo per la Juve, è un derby."
+     ],
+     "q": "Quale sport segui o pratichi, e come festeggiano i tifosi nel tuo paese?",
+     "c": "Scrivi tre frasi da tifoso dopo una partita: il risultato, il momento migliore e come ti senti."
+    },
+    "pt": {
+     "t": "A cultura desportiva italiana",
+     "g": "Falar de calcio, ciclismo e do Giro d'Italia como um adepto italiano.",
+     "p": [
+      "O calcio é paixão: la squadra del cuore, il tifoso, lo stadio, la partita, segnare un gol.",
+      "Ciclismo: no Giro d'Italia, todas as primaveras desde 1909, o líder veste la maglia rosa.",
+      "Falar como adepto: forza!, che partita!, abbiamo vinto due a uno, tifo per la Juve, è un derby."
+     ],
+     "q": "Que desporto acompanhas ou praticas, e como os adeptos o festejam no teu país?",
+     "c": "Escreve três frases de adepto depois de um jogo: o resultado, o melhor momento e como te sentes."
+    },
+    "pt_BR": {
+     "t": "A cultura esportiva italiana",
+     "g": "Falar de calcio, ciclismo e do Giro d'Italia como um torcedor italiano.",
+     "p": [
+      "O calcio é paixão: la squadra del cuore, il tifoso, lo stadio, la partita, segnare un gol.",
+      "Ciclismo: no Giro d'Italia, toda primavera desde 1909, o líder veste la maglia rosa.",
+      "Falar como torcedor: forza!, che partita!, abbiamo vinto due a uno, tifo per la Juve, è un derby."
+     ],
+     "q": "Que esporte você acompanha ou pratica, e como os torcedores comemoram no seu país?",
+     "c": "Escreva três frases de torcedor depois de um jogo: o placar, o melhor momento e como você se sente."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il tifoso",
+      "ex": "I tifosi cantavano per tutta la partita."
+     },
+     {
+      "w": "la squadra del cuore",
+      "ex": "La mia squadra del cuore è il Napoli."
+     },
+     {
+      "w": "tifare per",
+      "ex": "Tifo per la Roma da quando ero bambino."
+     },
+     {
+      "w": "segnare",
+      "ex": "Ha segnato un gol bellissimo al novantesimo."
+     },
+     {
+      "w": "la maglia rosa",
+      "ex": "Al Giro d'Italia il leader indossa la maglia rosa."
+     },
+     {
+      "w": "pareggiare",
+      "ex": "Abbiamo pareggiato uno a uno."
+     }
+    ],
+    "gram": "Risultati: vincere/perdere due a uno, pareggiare; tifare per + squadra; il derby tra squadre della stessa città."
+   }
+  },
+  {
+   "d": 277,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Island life: Sicily and Sardinia",
+     "g": "Describe the landscapes, food and traditions of Italy's two big islands.",
+     "p": [
+      "Sicily: l'Etna, Europe's highest active volcano, Greek temples in Agrigento, arancini and cannoli.",
+      "Sardinia: crystal-clear sea, the stone nuraghi towers, pane carasau and the music of cantu a tenore.",
+      "Describe: è un'isola ricca di storia, il mare è cristallino, si mangia benissimo, l'atmosfera è calda."
+     ],
+     "q": "Which island would you visit first, Sicily or Sardinia, and why?",
+     "c": "Write a four-sentence postcard from Sicily or Sardinia: landscape, food, people and weather."
+    },
+    "de": {
+     "t": "Inselleben: Sizilien und Sardinien",
+     "g": "Du beschreibst Landschaften, Essen und Traditionen der zwei großen Inseln Italiens.",
+     "p": [
+      "Sizilien: der Ätna, Europas höchster aktiver Vulkan, griechische Tempel in Agrigent, arancini und cannoli.",
+      "Sardinien: kristallklares Meer, die steinernen Nuraghen, pane carasau und der Gesang cantu a tenore.",
+      "Beschreiben: è un'isola ricca di storia, il mare è cristallino, si mangia benissimo, l'atmosfera è calda."
+     ],
+     "q": "Welche Insel würdest du zuerst besuchen, Sizilien oder Sardinien, und warum?",
+     "c": "Schreib eine Postkarte in vier Sätzen aus Sizilien oder Sardinien: Landschaft, Essen, Menschen, Wetter."
+    },
+    "es": {
+     "t": "Vida isleña: Sicilia y Cerdeña",
+     "g": "Describir paisajes, comida y tradiciones de las dos grandes islas de Italia.",
+     "p": [
+      "Sicilia: el Etna, el volcán activo más alto de Europa, templos griegos en Agrigento, arancini y cannoli.",
+      "Cerdeña: mar cristalino, las torres de piedra nuraghi, pane carasau y el canto cantu a tenore.",
+      "Describe: è un'isola ricca di storia, il mare è cristallino, si mangia benissimo, l'atmosfera è calda."
+     ],
+     "q": "¿Qué isla visitarías primero, Sicilia o Cerdeña, y por qué?",
+     "c": "Escribe una postal de cuatro frases desde Sicilia o Cerdeña: paisaje, comida, gente y tiempo."
+    },
+    "fr": {
+     "t": "La vie insulaire : Sicile et Sardaigne",
+     "g": "Décrire paysages, cuisine et traditions des deux grandes îles italiennes.",
+     "p": [
+      "Sicile : l'Etna, plus haut volcan actif d'Europe, les temples grecs d'Agrigente, arancini et cannoli.",
+      "Sardaigne : mer cristalline, les tours de pierre nuraghi, le pane carasau et le chant cantu a tenore.",
+      "Décrire : è un'isola ricca di storia, il mare è cristallino, si mangia benissimo, l'atmosfera è calda."
+     ],
+     "q": "Quelle île visiterais-tu en premier, la Sicile ou la Sardaigne, et pourquoi ?",
+     "c": "Écris une carte postale de quatre phrases depuis la Sicile ou la Sardaigne : paysage, cuisine, gens, météo."
+    },
+    "it": {
+     "t": "Vita d'isola: Sicilia e Sardegna",
+     "g": "Descrivere paesaggi, cucina e tradizioni delle due grandi isole italiane.",
+     "p": [
+      "Sicilia: l'Etna, il vulcano attivo più alto d'Europa, i templi greci di Agrigento, arancini e cannoli.",
+      "Sardegna: mare cristallino, le torri di pietra chiamate nuraghi, il pane carasau e il canto a tenore.",
+      "Descrivere: è un'isola ricca di storia, il mare è cristallino, si mangia benissimo, l'atmosfera è calda."
+     ],
+     "q": "Quale isola visiteresti per prima, la Sicilia o la Sardegna, e perché?",
+     "c": "Scrivi una cartolina di quattro frasi dalla Sicilia o dalla Sardegna: paesaggio, cibo, gente e clima."
+    },
+    "pt": {
+     "t": "Vida na ilha: Sicília e Sardenha",
+     "g": "Descrever paisagens, comida e tradições das duas grandes ilhas de Itália.",
+     "p": [
+      "Sicília: o Etna, o vulcão ativo mais alto da Europa, templos gregos em Agrigento, arancini e cannoli.",
+      "Sardenha: mar cristalino, as torres de pedra nuraghi, o pane carasau e o canto cantu a tenore.",
+      "Descrever: è un'isola ricca di storia, il mare è cristallino, si mangia benissimo, l'atmosfera è calda."
+     ],
+     "q": "Que ilha visitarias primeiro, a Sicília ou a Sardenha, e porquê?",
+     "c": "Escreve um postal de quatro frases da Sicília ou da Sardenha: paisagem, comida, pessoas e tempo."
+    },
+    "pt_BR": {
+     "t": "Vida na ilha: Sicília e Sardenha",
+     "g": "Descrever paisagens, comida e tradições das duas grandes ilhas da Itália.",
+     "p": [
+      "Sicília: o Etna, o vulcão ativo mais alto da Europa, templos gregos em Agrigento, arancini e cannoli.",
+      "Sardenha: mar cristalino, as torres de pedra nuraghi, o pane carasau e o canto cantu a tenore.",
+      "Descrever: è un'isola ricca di storia, il mare è cristallino, si mangia benissimo, l'atmosfera è calda."
+     ],
+     "q": "Que ilha você visitaria primeiro, a Sicília ou a Sardenha, e por quê?",
+     "c": "Escreva um cartão-postal de quatro frases da Sicília ou da Sardenha: paisagem, comida, pessoas e clima."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "l'isola",
+      "ex": "La Sardegna è un'isola meravigliosa."
+     },
+     {
+      "w": "il vulcano",
+      "ex": "L'Etna è un vulcano ancora attivo."
+     },
+     {
+      "w": "cristallino",
+      "ex": "Il mare di Sardegna è cristallino."
+     },
+     {
+      "w": "il nuraghe",
+      "ex": "In Sardegna ci sono migliaia di nuraghi."
+     },
+     {
+      "w": "gli arancini",
+      "ex": "A Palermo ho mangiato degli arancini squisiti."
+     },
+     {
+      "w": "la costa",
+      "ex": "Abbiamo girato tutta la costa in macchina."
+     }
+    ],
+    "gram": "Preposizioni con le isole: in Sicilia, in Sardegna (isole grandi), ma a Capri, a Ischia (isole piccole)."
+   }
+  },
+  {
+   "d": 278,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Mountains and lakes of the north",
+     "g": "Plan a northern Italian trip to the Dolomites, Lake Como and Lake Garda.",
+     "p": [
+      "Mountains: the Dolomites, a UNESCO site, offer il sentiero, il rifugio, la funivia and la vetta.",
+      "Lakes: Lake Garda is Italy's largest; Lake Como has elegant villas; ride il battello between towns.",
+      "Plan in Italian: prima andremo a..., poi faremo un'escursione, dormiremo in un rifugio."
+     ],
+     "q": "Would you prefer a week in the mountains or a week by a lake? Why?",
+     "c": "Write a three-day plan for the north in Italian using the future tense."
+    },
+    "de": {
+     "t": "Berge und Seen im Norden",
+     "g": "Du planst eine Reise in die Dolomiten, an den Comer See und den Gardasee.",
+     "p": [
+      "Berge: Die Dolomiten, UNESCO-Welterbe, bieten il sentiero, il rifugio, la funivia und la vetta.",
+      "Seen: Der Gardasee ist Italiens größter; am Comer See stehen elegante Villen; nimm il battello.",
+      "Auf Italienisch planen: prima andremo a..., poi faremo un'escursione, dormiremo in un rifugio."
+     ],
+     "q": "Würdest du lieber eine Woche in den Bergen oder an einem See verbringen? Warum?",
+     "c": "Schreib einen Dreitagesplan für den Norden auf Italienisch im Futur."
+    },
+    "es": {
+     "t": "Montañas y lagos del norte",
+     "g": "Planear un viaje al norte: Dolomitas, lago de Como y lago de Garda.",
+     "p": [
+      "Montañas: las Dolomitas, patrimonio UNESCO, ofrecen il sentiero, il rifugio, la funivia y la vetta.",
+      "Lagos: el de Garda es el más grande de Italia; el de Como tiene villas elegantes; toma il battello.",
+      "Planea en italiano: prima andremo a..., poi faremo un'escursione, dormiremo in un rifugio."
+     ],
+     "q": "¿Preferirías una semana en la montaña o junto a un lago? ¿Por qué?",
+     "c": "Escribe un plan de tres días por el norte en italiano usando el futuro."
+    },
+    "fr": {
+     "t": "Montagnes et lacs du nord",
+     "g": "Préparer un voyage dans les Dolomites, au lac de Côme et au lac de Garde.",
+     "p": [
+      "Montagnes : les Dolomites, site UNESCO, offrent il sentiero, il rifugio, la funivia et la vetta.",
+      "Lacs : le lac de Garde est le plus grand d'Italie ; le lac de Côme a des villas élégantes ; prends il battello.",
+      "Planifier en italien : prima andremo a..., poi faremo un'escursione, dormiremo in un rifugio."
+     ],
+     "q": "Préférerais-tu une semaine à la montagne ou au bord d'un lac ? Pourquoi ?",
+     "c": "Écris un programme de trois jours dans le nord en italien, au futur."
+    },
+    "it": {
+     "t": "Montagne e laghi del nord",
+     "g": "Organizzare un viaggio al nord: Dolomiti, lago di Como e lago di Garda.",
+     "p": [
+      "Montagne: le Dolomiti, patrimonio UNESCO, offrono il sentiero, il rifugio, la funivia e la vetta.",
+      "Laghi: il Garda è il lago più grande d'Italia; sul lago di Como ci sono ville eleganti; prendi il battello.",
+      "Pianifica: prima andremo a..., poi faremo un'escursione, dormiremo in un rifugio."
+     ],
+     "q": "Preferiresti una settimana in montagna o una settimana al lago? Perché?",
+     "c": "Scrivi un programma di tre giorni al nord usando il futuro."
+    },
+    "pt": {
+     "t": "Montanhas e lagos do norte",
+     "g": "Planear uma viagem ao norte: Dolomitas, lago de Como e lago de Garda.",
+     "p": [
+      "Montanhas: as Dolomitas, património UNESCO, oferecem il sentiero, il rifugio, la funivia e la vetta.",
+      "Lagos: o de Garda é o maior de Itália; o de Como tem moradias elegantes; apanha il battello.",
+      "Planeia em italiano: prima andremo a..., poi faremo un'escursione, dormiremo in un rifugio."
+     ],
+     "q": "Preferias uma semana na montanha ou junto a um lago? Porquê?",
+     "c": "Escreve um plano de três dias no norte em italiano usando o futuro."
+    },
+    "pt_BR": {
+     "t": "Montanhas e lagos do norte",
+     "g": "Planejar uma viagem ao norte: Dolomitas, lago de Como e lago de Garda.",
+     "p": [
+      "Montanhas: as Dolomitas, patrimônio da UNESCO, oferecem il sentiero, il rifugio, la funivia e la vetta.",
+      "Lagos: o de Garda é o maior da Itália; o de Como tem mansões elegantes; pegue il battello.",
+      "Planeje em italiano: prima andremo a..., poi faremo un'escursione, dormiremo in un rifugio."
+     ],
+     "q": "Você preferiria uma semana na montanha ou na beira de um lago? Por quê?",
+     "c": "Escreva um roteiro de três dias pelo norte em italiano usando o futuro."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il rifugio",
+      "ex": "Abbiamo dormito in un rifugio a duemila metri."
+     },
+     {
+      "w": "il sentiero",
+      "ex": "Questo sentiero porta fino al lago."
+     },
+     {
+      "w": "la funivia",
+      "ex": "Prendiamo la funivia per salire in vetta."
+     },
+     {
+      "w": "l'escursione",
+      "ex": "Domani faremo un'escursione nelle Dolomiti."
+     },
+     {
+      "w": "il battello",
+      "ex": "Con il battello si visitano i paesi del lago."
+     },
+     {
+      "w": "la vetta",
+      "ex": "Dalla vetta si vede tutta la valle."
+     }
+    ],
+    "gram": "Futuro semplice per programmi: andremo, faremo, dormiremo; in montagna, al lago, al mare."
+   }
+  },
+  {
+   "d": 279,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Listening practice: at the market",
+     "g": "Follow a fast, natural market dialogue and retell it in your own words.",
+     "p": [
+      "Market phrases you will hear: chi è l'ultimo?, cosa le do?, altro?, glielo incarto?, fanno dieci euro.",
+      "Listening tips: catch key words first (numbers, foods), then guess the rest from context.",
+      "Retell with reported speech: il fruttivendolo ha detto che le pesche erano dolcissime."
+     ],
+     "q": "Do you prefer shopping at a market or in a supermarket? Why?",
+     "c": "Imagine a market dialogue, then retell it in three sentences using ha detto che and ha chiesto se."
+    },
+    "de": {
+     "t": "Hörübung: ein Dialog auf dem Markt",
+     "g": "Du folgst einem schnellen Marktdialog und gibst ihn mit eigenen Worten wieder.",
+     "p": [
+      "Typische Sätze: chi è l'ultimo?, cosa le do?, altro?, glielo incarto?, fanno dieci euro.",
+      "Hörtipps: Erst Schlüsselwörter erfassen (Zahlen, Lebensmittel), den Rest aus dem Kontext erraten.",
+      "Wiedergeben mit indirekter Rede: il fruttivendolo ha detto che le pesche erano dolcissime."
+     ],
+     "q": "Kaufst du lieber auf dem Markt oder im Supermarkt ein? Warum?",
+     "c": "Stell dir einen Marktdialog vor und gib ihn in drei Sätzen mit ha detto che und ha chiesto se wieder."
+    },
+    "es": {
+     "t": "Escucha: un diálogo en el mercado",
+     "g": "Seguir un diálogo rápido y natural en el mercado y contarlo con tus palabras.",
+     "p": [
+      "Frases que oirás: chi è l'ultimo?, cosa le do?, altro?, glielo incarto?, fanno dieci euro.",
+      "Consejos: capta primero las palabras clave (números, alimentos) y deduce el resto por el contexto.",
+      "Cuéntalo en estilo indirecto: il fruttivendolo ha detto che le pesche erano dolcissime."
+     ],
+     "q": "¿Prefieres comprar en el mercado o en el supermercado? ¿Por qué?",
+     "c": "Imagina un diálogo en el mercado y cuéntalo en tres frases con ha detto che y ha chiesto se."
+    },
+    "fr": {
+     "t": "Écoute : un dialogue au marché",
+     "g": "Suivre un dialogue rapide au marché et le raconter avec tes propres mots.",
+     "p": [
+      "Phrases entendues : chi è l'ultimo?, cosa le do?, altro?, glielo incarto?, fanno dieci euro.",
+      "Astuces : saisis d'abord les mots clés (chiffres, aliments), puis devine le reste grâce au contexte.",
+      "Raconte au discours indirect : il fruttivendolo ha detto che le pesche erano dolcissime."
+     ],
+     "q": "Préfères-tu faire tes courses au marché ou au supermarché ? Pourquoi ?",
+     "c": "Imagine un dialogue au marché, puis raconte-le en trois phrases avec ha detto che et ha chiesto se."
+    },
+    "it": {
+     "t": "Ascolto: un dialogo al mercato",
+     "g": "Seguire un dialogo veloce e naturale al mercato e raccontarlo con parole tue.",
+     "p": [
+      "Frasi che sentirai: chi è l'ultimo?, cosa le do?, altro?, glielo incarto?, fanno dieci euro.",
+      "Strategie: cogli prima le parole chiave (numeri, cibi), poi intuisci il resto dal contesto.",
+      "Racconta con il discorso indiretto: il fruttivendolo ha detto che le pesche erano dolcissime."
+     ],
+     "q": "Preferisci fare la spesa al mercato o al supermercato? Perché?",
+     "c": "Immagina un dialogo al mercato, poi raccontalo in tre frasi con ha detto che e ha chiesto se."
+    },
+    "pt": {
+     "t": "Compreensão oral: um diálogo no mercado",
+     "g": "Seguir um diálogo rápido no mercado e recontá-lo por palavras tuas.",
+     "p": [
+      "Frases que vais ouvir: chi è l'ultimo?, cosa le do?, altro?, glielo incarto?, fanno dieci euro.",
+      "Dicas: apanha primeiro as palavras-chave (números, alimentos) e deduz o resto pelo contexto.",
+      "Reconta em discurso indireto: il fruttivendolo ha detto che le pesche erano dolcissime."
+     ],
+     "q": "Preferes fazer compras no mercado ou no supermercado? Porquê?",
+     "c": "Imagina um diálogo no mercado e reconta-o em três frases com ha detto che e ha chiesto se."
+    },
+    "pt_BR": {
+     "t": "Compreensão auditiva: um diálogo na feira",
+     "g": "Acompanhar um diálogo rápido na feira e recontá-lo com suas palavras.",
+     "p": [
+      "Frases que você vai ouvir: chi è l'ultimo?, cosa le do?, altro?, glielo incarto?, fanno dieci euro.",
+      "Dicas: pegue primeiro as palavras-chave (números, alimentos) e deduza o resto pelo contexto.",
+      "Reconte em discurso indireto: il fruttivendolo ha detto che le pesche erano dolcissime."
+     ],
+     "q": "Você prefere fazer compras na feira ou no supermercado? Por quê?",
+     "c": "Imagine um diálogo na feira e reconte em três frases com ha detto che e ha chiesto se."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "chi è l'ultimo",
+      "ex": "Scusi, chi è l'ultimo in fila?"
+     },
+     {
+      "w": "cosa le do",
+      "ex": "Buongiorno signora, cosa le do oggi?"
+     },
+     {
+      "w": "il fruttivendolo",
+      "ex": "Il fruttivendolo mi ha regalato un limone."
+     },
+     {
+      "w": "un chilo di",
+      "ex": "Mi dà un chilo di pomodori, per favore?"
+     },
+     {
+      "w": "altro?",
+      "ex": "Altro? No, basta così, grazie."
+     },
+     {
+      "w": "di stagione",
+      "ex": "Le fragole sono di stagione adesso."
+     }
+    ],
+    "gram": "Discorso indiretto al passato: ha detto che + imperfetto (erano dolci); ha chiesto se + indicativo."
+   }
+  },
+  {
+   "d": 280,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Review: B1 complete!",
+     "g": "Celebrate B1 by recapping subjunctive, hypotheses, idioms and storytelling.",
+     "p": [
+      "Subjunctive and hypotheses: penso che sia, se avessi tempo viaggerei, spero che tu possa venire.",
+      "Natural speech: idioms, fillers like allora and insomma, slang like figo, reactions like ma dai!",
+      "Storytelling: imperfetto plus passato prossimo, all'improvviso, alla fine, and reported speech."
+     ],
+     "q": "What are you proudest of in your Italian so far?",
+     "c": "Tell a two-minute story about your Italian journey using one hypothesis, one idiom and one subjunctive."
+    },
+    "de": {
+     "t": "Wiederholung: B1 geschafft!",
+     "g": "Du feierst B1 und wiederholst Konjunktiv, Hypothesen, Redewendungen und Erzählen.",
+     "p": [
+      "Konjunktiv und Hypothesen: penso che sia, se avessi tempo viaggerei, spero che tu possa venire.",
+      "Natürliche Sprache: Redewendungen, Füllwörter wie allora und insomma, Slang wie figo, ma dai!",
+      "Erzählen: Imperfetto plus passato prossimo, all'improvviso, alla fine und indirekte Rede."
+     ],
+     "q": "Worauf bist du bei deinem Italienisch bisher am stolzesten?",
+     "c": "Erzähl zwei Minuten über deinen Italienisch-Weg mit einer Hypothese, einer Redewendung und einem Konjunktiv."
+    },
+    "es": {
+     "t": "Repaso: ¡B1 completado!",
+     "g": "Celebrar el B1 repasando subjuntivo, hipótesis, modismos y narración.",
+     "p": [
+      "Subjuntivo e hipótesis: penso che sia, se avessi tempo viaggerei, spero che tu possa venire.",
+      "Habla natural: modismos, muletillas como allora e insomma, jerga como figo, reacciones como ma dai!",
+      "Narrar: imperfetto más passato prossimo, all'improvviso, alla fine y estilo indirecto."
+     ],
+     "q": "¿De qué estás más orgulloso en tu italiano hasta ahora?",
+     "c": "Cuenta durante dos minutos tu camino con el italiano con una hipótesis, un modismo y un subjuntivo."
+    },
+    "fr": {
+     "t": "Révision : B1 terminé !",
+     "g": "Fêter le B1 en révisant subjonctif, hypothèses, expressions et récit.",
+     "p": [
+      "Subjonctif et hypothèses : penso che sia, se avessi tempo viaggerei, spero che tu possa venire.",
+      "Langue naturelle : expressions, mots comme allora et insomma, argot comme figo, réactions comme ma dai!",
+      "Récit : imperfetto et passato prossimo, all'improvviso, alla fine et discours indirect."
+     ],
+     "q": "De quoi es-tu le plus fier dans ton italien jusqu'ici ?",
+     "c": "Raconte en deux minutes ton parcours en italien avec une hypothèse, une expression et un subjonctif."
+    },
+    "it": {
+     "t": "Ripasso: B1 completato!",
+     "g": "Festeggiare il B1 ripassando congiuntivo, ipotesi, modi di dire e racconto.",
+     "p": [
+      "Congiuntivo e ipotesi: penso che sia, se avessi tempo viaggerei, spero che tu possa venire.",
+      "Parlato naturale: modi di dire, segnali come allora e insomma, slang come figo, reazioni come ma dai!",
+      "Racconto: imperfetto e passato prossimo, all'improvviso, alla fine e discorso indiretto."
+     ],
+     "q": "Di che cosa sei più orgoglioso nel tuo italiano finora?",
+     "c": "Racconta per due minuti il tuo percorso con l'italiano con un'ipotesi, un modo di dire e un congiuntivo."
+    },
+    "pt": {
+     "t": "Revisão: B1 concluído!",
+     "g": "Celebrar o B1 revendo conjuntivo, hipóteses, expressões e narração.",
+     "p": [
+      "Conjuntivo e hipóteses: penso che sia, se avessi tempo viaggerei, spero che tu possa venire.",
+      "Fala natural: expressões, bordões como allora e insomma, calão como figo, reações como ma dai!",
+      "Narrar: imperfetto e passato prossimo, all'improvviso, alla fine e discurso indireto."
+     ],
+     "q": "De que te orgulhas mais no teu italiano até agora?",
+     "c": "Conta durante dois minutos o teu percurso com o italiano com uma hipótese, uma expressão e um conjuntivo."
+    },
+    "pt_BR": {
+     "t": "Revisão: B1 concluído!",
+     "g": "Comemorar o B1 revisando subjuntivo, hipóteses, expressões e narração.",
+     "p": [
+      "Subjuntivo e hipóteses: penso che sia, se avessi tempo viaggerei, spero che tu possa venire.",
+      "Fala natural: expressões, marcadores como allora e insomma, gírias como figo, reações como ma dai!",
+      "Narrar: imperfetto e passato prossimo, all'improvviso, alla fine e discurso indireto."
+     ],
+     "q": "Do que você mais se orgulha no seu italiano até agora?",
+     "c": "Conte por dois minutos sua jornada com o italiano com uma hipótese, uma expressão e um subjuntivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "penso che sia",
+      "ex": "Penso che sia il momento di festeggiare!"
+     },
+     {
+      "w": "se avessi",
+      "ex": "Se avessi più tempo, studierei ogni giorno."
+     },
+     {
+      "w": "in bocca al lupo",
+      "ex": "In bocca al lupo per il livello B2! Crepi!"
+     },
+     {
+      "w": "insomma",
+      "ex": "Insomma, ce l'abbiamo fatta!"
+     },
+     {
+      "w": "all'improvviso",
+      "ex": "All'improvviso ho capito tutto il film."
+     },
+     {
+      "w": "il traguardo",
+      "ex": "Il B1 è un traguardo importante."
+     }
+    ],
+    "gram": "Ripasso B1: congiuntivo presente e imperfetto, periodo ipotetico della possibilità, discorso indiretto, connettivi."
+   }
+  }
+ ]
+}

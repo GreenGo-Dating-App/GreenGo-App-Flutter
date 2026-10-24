@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 141,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Review: adjectives and opinions",
+     "g": "Recap adjective endings, the genitive and giving opinions in one connected conversation.",
+     "p": [
+      "Adjective endings: der neue Roman, ein spannender Film, mit einer netten Freundin, in einem kleinen Café.",
+      "Genitive or von: die Wohnung meiner Schwester = die Wohnung von meiner Schwester; wegen des Wetters.",
+      "Opinions: Ich finde, dass ... Meiner Meinung nach ... Da hast du recht. Ich sehe das anders."
+     ],
+     "q": "Which is better for a weekend: a big city or a small village? Give your opinion with two adjectives.",
+     "c": "Write a short review of a café or restaurant: three adjectives with endings, one genitive and one opinion phrase."
+    },
+    "de": {
+     "t": "Wiederholung: Adjektive und Meinungen",
+     "g": "Du wiederholst Adjektivendungen, den Genitiv und Meinungen in einem zusammenhängenden Gespräch.",
+     "p": [
+      "Adjektivendungen: der neue Roman, ein spannender Film, mit einer netten Freundin, in einem kleinen Café.",
+      "Genitiv oder von: die Wohnung meiner Schwester = die Wohnung von meiner Schwester; wegen des Wetters.",
+      "Meinungen: Ich finde, dass ... Meiner Meinung nach ... Da hast du recht. Ich sehe das anders."
+     ],
+     "q": "Was ist besser für ein Wochenende: eine große Stadt oder ein kleines Dorf? Sag deine Meinung mit zwei Adjektiven.",
+     "c": "Schreib eine kurze Kritik über ein Café: drei Adjektive mit Endung, ein Genitiv und ein Meinungsausdruck."
+    },
+    "es": {
+     "t": "Repaso: adjetivos y opiniones",
+     "g": "Repasa las terminaciones de adjetivos, el genitivo y las opiniones en una conversación seguida.",
+     "p": [
+      "Adjetivos: der neue Roman, ein spannender Film, mit einer netten Freundin, in einem kleinen Café.",
+      "Genitivo o von: die Wohnung meiner Schwester = die Wohnung von meiner Schwester; wegen des Wetters.",
+      "Opiniones: Ich finde, dass ... Meiner Meinung nach ... Da hast du recht. Ich sehe das anders."
+     ],
+     "q": "¿Qué es mejor para un fin de semana: una gran ciudad o un pueblo pequeño? Opina con dos adjetivos.",
+     "c": "Escribe una reseña corta de un café: tres adjetivos declinados, un genitivo y una frase de opinión."
+    },
+    "fr": {
+     "t": "Révision : adjectifs et avis",
+     "g": "Réviser les terminaisons d'adjectifs, le génitif et l'expression d'un avis dans une vraie conversation.",
+     "p": [
+      "Adjectifs : der neue Roman, ein spannender Film, mit einer netten Freundin, in einem kleinen Café.",
+      "Génitif ou von : die Wohnung meiner Schwester = die Wohnung von meiner Schwester; wegen des Wetters.",
+      "Avis : Ich finde, dass ... Meiner Meinung nach ... Da hast du recht. Ich sehe das anders."
+     ],
+     "q": "Qu'est-ce qui est mieux pour un week-end : une grande ville ou un petit village ? Donne ton avis avec deux adjectifs.",
+     "c": "Écris une courte critique d'un café : trois adjectifs accordés, un génitif et une expression d'opinion."
+    },
+    "it": {
+     "t": "Ripasso: aggettivi e opinioni",
+     "g": "Ripassi le desinenze degli aggettivi, il genitivo e le opinioni in una conversazione continua.",
+     "p": [
+      "Aggettivi: der neue Roman, ein spannender Film, mit einer netten Freundin, in einem kleinen Café.",
+      "Genitivo o von: die Wohnung meiner Schwester = die Wohnung von meiner Schwester; wegen des Wetters.",
+      "Opinioni: Ich finde, dass ... Meiner Meinung nach ... Da hast du recht. Ich sehe das anders."
+     ],
+     "q": "Che cosa è meglio per un weekend: una grande città o un piccolo paese? Dai la tua opinione con due aggettivi.",
+     "c": "Scrivi una breve recensione di un bar: tre aggettivi declinati, un genitivo e un'espressione di opinione."
+    },
+    "pt": {
+     "t": "Revisão: adjetivos e opiniões",
+     "g": "Rever as terminações dos adjetivos, o genitivo e as opiniões numa conversa contínua.",
+     "p": [
+      "Adjetivos: der neue Roman, ein spannender Film, mit einer netten Freundin, in einem kleinen Café.",
+      "Genitivo ou von: die Wohnung meiner Schwester = die Wohnung von meiner Schwester; wegen des Wetters.",
+      "Opiniões: Ich finde, dass ... Meiner Meinung nach ... Da hast du recht. Ich sehe das anders."
+     ],
+     "q": "O que é melhor para um fim de semana: uma cidade grande ou uma aldeia pequena? Opina com dois adjetivos.",
+     "c": "Escreve uma crítica curta a um café: três adjetivos declinados, um genitivo e uma expressão de opinião."
+    },
+    "pt_BR": {
+     "t": "Revisão: adjetivos e opiniões",
+     "g": "Revisar as terminações dos adjetivos, o genitivo e as opiniões numa conversa contínua.",
+     "p": [
+      "Adjetivos: der neue Roman, ein spannender Film, mit einer netten Freundin, in einem kleinen Café.",
+      "Genitivo ou von: die Wohnung meiner Schwester = die Wohnung von meiner Schwester; wegen des Wetters.",
+      "Opiniões: Ich finde, dass ... Meiner Meinung nach ... Da hast du recht. Ich sehe das anders."
+     ],
+     "q": "O que é melhor para um fim de semana: uma cidade grande ou uma vila pequena? Opine com dois adjetivos.",
+     "c": "Escreva uma resenha curta de um café: três adjetivos declinados, um genitivo e uma expressão de opinião."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "gemütlich",
+      "ex": "Das Café ist klein und sehr gemütlich."
+     },
+     {
+      "w": "der freundliche Kellner",
+      "ex": "Der freundliche Kellner bringt die Karte."
+     },
+     {
+      "w": "ein leckerer Kuchen",
+      "ex": "Dort gibt es einen leckeren Kuchen."
+     },
+     {
+      "w": "trotz",
+      "ex": "Trotz des Preises komme ich gern wieder."
+     },
+     {
+      "w": "ich finde, dass",
+      "ex": "Ich finde, dass der Kaffee dort super ist."
+     },
+     {
+      "w": "Ich sehe das anders.",
+      "ex": "Ich sehe das anders, mir ist es zu laut."
+     }
+    ],
+    "gram": "Endungen nach Artikel und Kasus: ein netter Mann, einen netten Mann, mit einem netten Mann. Genitiv: des Cafés."
+   }
+  },
+  {
+   "d": 142,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Konjunktiv II: würde + infinitive",
+     "g": "Express wishes and polite ideas with würde + infinitive, like ich würde gern reisen.",
+     "p": [
+      "Forms: ich würde, du würdest, er/sie würde, wir würden, ihr würdet, sie/Sie würden.",
+      "Word order: würde an Position 2, Infinitiv am Ende: Ich würde gern mehr Sport machen.",
+      "Wishes: Ich würde gern in Japan leben. Würdest du mitkommen? Wir würden lieber zu Hause bleiben."
+     ],
+     "q": "What would you like to do more often? Give me three wishes with ich würde gern.",
+     "c": "Write five würde sentences: three about you, one question with würdest du and one with wir würden lieber."
+    },
+    "de": {
+     "t": "Konjunktiv II: würde + Infinitiv",
+     "g": "Du drückst Wünsche und höfliche Ideen mit würde + Infinitiv aus: Ich würde gern reisen.",
+     "p": [
+      "Formen: ich würde, du würdest, er/sie würde, wir würden, ihr würdet, sie/Sie würden.",
+      "Satzstellung: würde an Position 2, Infinitiv am Ende: Ich würde gern mehr Sport machen.",
+      "Wünsche: Ich würde gern in Japan leben. Würdest du mitkommen? Wir würden lieber zu Hause bleiben."
+     ],
+     "q": "Was würdest du gern öfter machen? Nenn mir drei Wünsche mit ich würde gern.",
+     "c": "Schreib fünf Sätze mit würde: drei über dich, eine Frage mit würdest du und einen mit wir würden lieber."
+    },
+    "es": {
+     "t": "Konjunktiv II: würde + infinitivo",
+     "g": "Expresa deseos e ideas corteses con würde + infinitivo, como ich würde gern reisen.",
+     "p": [
+      "Formas: ich würde, du würdest, er/sie würde, wir würden, ihr würdet, sie/Sie würden.",
+      "Orden: würde an Position 2, Infinitiv am Ende: Ich würde gern mehr Sport machen.",
+      "Deseos: Ich würde gern in Japan leben. Würdest du mitkommen? Wir würden lieber zu Hause bleiben."
+     ],
+     "q": "¿Qué te gustaría hacer más a menudo? Dime tres deseos con ich würde gern.",
+     "c": "Escribe cinco frases con würde: tres sobre ti, una pregunta con würdest du y una con wir würden lieber."
+    },
+    "fr": {
+     "t": "Konjunktiv II : würde + infinitif",
+     "g": "Exprimer souhaits et idées polies avec würde + infinitif, comme ich würde gern reisen.",
+     "p": [
+      "Formes : ich würde, du würdest, er/sie würde, wir würden, ihr würdet, sie/Sie würden.",
+      "Ordre des mots : würde an Position 2, Infinitiv am Ende: Ich würde gern mehr Sport machen.",
+      "Souhaits : Ich würde gern in Japan leben. Würdest du mitkommen? Wir würden lieber zu Hause bleiben."
+     ],
+     "q": "Qu'aimerais-tu faire plus souvent ? Donne-moi trois souhaits avec ich würde gern.",
+     "c": "Écris cinq phrases avec würde : trois sur toi, une question avec würdest du et une avec wir würden lieber."
+    },
+    "it": {
+     "t": "Konjunktiv II: würde + infinito",
+     "g": "Esprimi desideri e idee cortesi con würde + infinito, come ich würde gern reisen.",
+     "p": [
+      "Forme: ich würde, du würdest, er/sie würde, wir würden, ihr würdet, sie/Sie würden.",
+      "Ordine: würde an Position 2, Infinitiv am Ende: Ich würde gern mehr Sport machen.",
+      "Desideri: Ich würde gern in Japan leben. Würdest du mitkommen? Wir würden lieber zu Hause bleiben."
+     ],
+     "q": "Che cosa ti piacerebbe fare più spesso? Dimmi tre desideri con ich würde gern.",
+     "c": "Scrivi cinque frasi con würde: tre su di te, una domanda con würdest du e una con wir würden lieber."
+    },
+    "pt": {
+     "t": "Konjunktiv II: würde + infinitivo",
+     "g": "Exprimir desejos e ideias delicadas com würde + infinitivo, como ich würde gern reisen.",
+     "p": [
+      "Formas: ich würde, du würdest, er/sie würde, wir würden, ihr würdet, sie/Sie würden.",
+      "Ordem: würde an Position 2, Infinitiv am Ende: Ich würde gern mehr Sport machen.",
+      "Desejos: Ich würde gern in Japan leben. Würdest du mitkommen? Wir würden lieber zu Hause bleiben."
+     ],
+     "q": "O que gostavas de fazer mais vezes? Diz-me três desejos com ich würde gern.",
+     "c": "Escreve cinco frases com würde: três sobre ti, uma pergunta com würdest du e uma com wir würden lieber."
+    },
+    "pt_BR": {
+     "t": "Konjunktiv II: würde + infinitivo",
+     "g": "Expressar desejos e ideias educadas com würde + infinitivo, como ich würde gern reisen.",
+     "p": [
+      "Formas: ich würde, du würdest, er/sie würde, wir würden, ihr würdet, sie/Sie würden.",
+      "Ordem: würde an Position 2, Infinitiv am Ende: Ich würde gern mehr Sport machen.",
+      "Desejos: Ich würde gern in Japan leben. Würdest du mitkommen? Wir würden lieber zu Hause bleiben."
+     ],
+     "q": "O que você gostaria de fazer com mais frequência? Me diga três desejos com ich würde gern.",
+     "c": "Escreva cinco frases com würde: três sobre você, uma pergunta com würdest du e uma com wir würden lieber."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ich würde gern",
+      "ex": "Ich würde gern Klavier lernen."
+     },
+     {
+      "w": "würdest du",
+      "ex": "Würdest du mit mir ins Kino gehen?"
+     },
+     {
+      "w": "lieber",
+      "ex": "Ich würde lieber am Meer wohnen."
+     },
+     {
+      "w": "am liebsten",
+      "ex": "Am liebsten würde ich jeden Tag ausschlafen."
+     },
+     {
+      "w": "reisen",
+      "ex": "Wir würden gern durch Österreich reisen."
+     },
+     {
+      "w": "mehr Zeit haben",
+      "ex": "Ich würde gern mehr Zeit für Hobbys haben."
+     }
+    ],
+    "gram": "Konjunktiv II mit würde: würde (Position 2) + Infinitiv (Ende). Gern, lieber, am liebsten für Wünsche."
+   }
+  },
+  {
+   "d": 143,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Konjunktiv II: wäre and hätte",
+     "g": "Use wäre and hätte, the most common Konjunktiv II forms, instead of würde sein and würde haben.",
+     "p": [
+      "sein → wäre: ich wäre, du wärst, er wäre, wir wären, ihr wärt, sie wären. Das wäre toll!",
+      "haben → hätte: ich hätte, du hättest, er hätte, wir hätten, ihr hättet, sie hätten.",
+      "Everyday use: Ich hätte gern einen Kaffee. Ich wäre gern am Strand. Hättest du morgen Zeit?"
+     ],
+     "q": "Where would you love to be right now, and what would you like to have? Use ich wäre gern and ich hätte gern.",
+     "c": "Order a full meal at a café in four sentences with hätte gern, then add one sentence with Das wäre ..."
+    },
+    "de": {
+     "t": "Konjunktiv II: wäre und hätte",
+     "g": "Du benutzt wäre und hätte, die häufigsten Formen, statt würde sein und würde haben.",
+     "p": [
+      "sein → wäre: ich wäre, du wärst, er wäre, wir wären, ihr wärt, sie wären. Das wäre toll!",
+      "haben → hätte: ich hätte, du hättest, er hätte, wir hätten, ihr hättet, sie hätten.",
+      "Im Alltag: Ich hätte gern einen Kaffee. Ich wäre gern am Strand. Hättest du morgen Zeit?"
+     ],
+     "q": "Wo wärst du jetzt gern, und was hättest du gern? Benutz ich wäre gern und ich hätte gern.",
+     "c": "Bestell ein ganzes Essen im Café in vier Sätzen mit hätte gern und füg einen Satz mit Das wäre ... hinzu."
+    },
+    "es": {
+     "t": "Konjunktiv II: wäre y hätte",
+     "g": "Usa wäre y hätte, las formas más comunes, en lugar de würde sein y würde haben.",
+     "p": [
+      "sein → wäre: ich wäre, du wärst, er wäre, wir wären, ihr wärt, sie wären. Das wäre toll!",
+      "haben → hätte: ich hätte, du hättest, er hätte, wir hätten, ihr hättet, sie hätten.",
+      "En el día a día: Ich hätte gern einen Kaffee. Ich wäre gern am Strand. Hättest du morgen Zeit?"
+     ],
+     "q": "¿Dónde te gustaría estar ahora y qué te gustaría tener? Usa ich wäre gern e ich hätte gern.",
+     "c": "Pide una comida completa en un café en cuatro frases con hätte gern y añade una frase con Das wäre ..."
+    },
+    "fr": {
+     "t": "Konjunktiv II : wäre et hätte",
+     "g": "Utiliser wäre et hätte, les formes les plus courantes, au lieu de würde sein et würde haben.",
+     "p": [
+      "sein → wäre : ich wäre, du wärst, er wäre, wir wären, ihr wärt, sie wären. Das wäre toll!",
+      "haben → hätte : ich hätte, du hättest, er hätte, wir hätten, ihr hättet, sie hätten.",
+      "Au quotidien : Ich hätte gern einen Kaffee. Ich wäre gern am Strand. Hättest du morgen Zeit?"
+     ],
+     "q": "Où aimerais-tu être maintenant, et qu'aimerais-tu avoir ? Utilise ich wäre gern et ich hätte gern.",
+     "c": "Commande un repas complet au café en quatre phrases avec hätte gern, puis ajoute une phrase avec Das wäre ..."
+    },
+    "it": {
+     "t": "Konjunktiv II: wäre e hätte",
+     "g": "Usi wäre e hätte, le forme più comuni, al posto di würde sein e würde haben.",
+     "p": [
+      "sein → wäre: ich wäre, du wärst, er wäre, wir wären, ihr wärt, sie wären. Das wäre toll!",
+      "haben → hätte: ich hätte, du hättest, er hätte, wir hätten, ihr hättet, sie hätten.",
+      "Nella vita quotidiana: Ich hätte gern einen Kaffee. Ich wäre gern am Strand. Hättest du morgen Zeit?"
+     ],
+     "q": "Dove ti piacerebbe essere adesso e che cosa vorresti avere? Usa ich wäre gern e ich hätte gern.",
+     "c": "Ordina un pasto completo al bar in quattro frasi con hätte gern, poi aggiungi una frase con Das wäre ..."
+    },
+    "pt": {
+     "t": "Konjunktiv II: wäre e hätte",
+     "g": "Usar wäre e hätte, as formas mais comuns, em vez de würde sein e würde haben.",
+     "p": [
+      "sein → wäre: ich wäre, du wärst, er wäre, wir wären, ihr wärt, sie wären. Das wäre toll!",
+      "haben → hätte: ich hätte, du hättest, er hätte, wir hätten, ihr hättet, sie hätten.",
+      "No dia a dia: Ich hätte gern einen Kaffee. Ich wäre gern am Strand. Hättest du morgen Zeit?"
+     ],
+     "q": "Onde gostavas de estar agora e o que gostavas de ter? Usa ich wäre gern e ich hätte gern.",
+     "c": "Pede uma refeição completa num café em quatro frases com hätte gern e junta uma frase com Das wäre ..."
+    },
+    "pt_BR": {
+     "t": "Konjunktiv II: wäre e hätte",
+     "g": "Usar wäre e hätte, as formas mais comuns, em vez de würde sein e würde haben.",
+     "p": [
+      "sein → wäre: ich wäre, du wärst, er wäre, wir wären, ihr wärt, sie wären. Das wäre toll!",
+      "haben → hätte: ich hätte, du hättest, er hätte, wir hätten, ihr hättet, sie hätten.",
+      "No dia a dia: Ich hätte gern einen Kaffee. Ich wäre gern am Strand. Hättest du morgen Zeit?"
+     ],
+     "q": "Onde você gostaria de estar agora e o que gostaria de ter? Use ich wäre gern e ich hätte gern.",
+     "c": "Peça uma refeição completa num café em quatro frases com hätte gern e acrescente uma frase com Das wäre ..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ich hätte gern",
+      "ex": "Ich hätte gern ein Stück Apfelkuchen."
+     },
+     {
+      "w": "ich wäre gern",
+      "ex": "Ich wäre jetzt gern in den Bergen."
+     },
+     {
+      "w": "Das wäre schön.",
+      "ex": "Ein freier Tag? Das wäre schön."
+     },
+     {
+      "w": "Hättest du Zeit?",
+      "ex": "Hättest du am Samstag Zeit?"
+     },
+     {
+      "w": "Wäre es möglich ...?",
+      "ex": "Wäre es möglich, später zu kommen?"
+     },
+     {
+      "w": "lieber",
+      "ex": "Ich hätte lieber Tee als Kaffee."
+     }
+    ],
+    "gram": "Bei sein und haben benutzt man fast immer wäre und hätte, nicht würde sein oder würde haben: Ich wäre gern reich."
+   }
+  },
+  {
+   "d": 144,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Polite requests",
+     "g": "Soften requests with könnten Sie, würden Sie bitte and wären Sie so nett.",
+     "p": [
+      "From direct to polite: Mach das Fenster zu! → Kannst du ...? → Könntest du bitte das Fenster zumachen?",
+      "Formal: Könnten Sie mir helfen? Würden Sie bitte langsamer sprechen? Wären Sie so nett und ...?",
+      "Softeners: bitte, vielleicht, kurz, mal: Könnten Sie mir vielleicht kurz sagen, wie spät es ist?"
+     ],
+     "q": "You are on a train and need help with your suitcase. How do you ask a stranger politely in German?",
+     "c": "Turn four direct commands into polite requests, two with Könnten Sie and two with Würdest du bitte."
+    },
+    "de": {
+     "t": "Höfliche Bitten",
+     "g": "Du formulierst Bitten weicher mit könnten Sie, würden Sie bitte und wären Sie so nett.",
+     "p": [
+      "Von direkt zu höflich: Mach das Fenster zu! → Kannst du ...? → Könntest du bitte das Fenster zumachen?",
+      "Formell: Könnten Sie mir helfen? Würden Sie bitte langsamer sprechen? Wären Sie so nett und ...?",
+      "Weichmacher: bitte, vielleicht, kurz, mal: Könnten Sie mir vielleicht kurz sagen, wie spät es ist?"
+     ],
+     "q": "Du bist im Zug und brauchst Hilfe mit dem Koffer. Wie fragst du eine fremde Person höflich?",
+     "c": "Mach aus vier direkten Befehlen höfliche Bitten, zwei mit Könnten Sie und zwei mit Würdest du bitte."
+    },
+    "es": {
+     "t": "Peticiones corteses",
+     "g": "Suaviza peticiones con könnten Sie, würden Sie bitte y wären Sie so nett.",
+     "p": [
+      "De directo a cortés: Mach das Fenster zu! → Kannst du ...? → Könntest du bitte das Fenster zumachen?",
+      "Formal: Könnten Sie mir helfen? Würden Sie bitte langsamer sprechen? Wären Sie so nett und ...?",
+      "Suavizadores: bitte, vielleicht, kurz, mal: Könnten Sie mir vielleicht kurz sagen, wie spät es ist?"
+     ],
+     "q": "Estás en un tren y necesitas ayuda con la maleta. ¿Cómo se lo pides con cortesía a un desconocido?",
+     "c": "Convierte cuatro órdenes directas en peticiones corteses, dos con Könnten Sie y dos con Würdest du bitte."
+    },
+    "fr": {
+     "t": "Les demandes polies",
+     "g": "Adoucir une demande avec könnten Sie, würden Sie bitte et wären Sie so nett.",
+     "p": [
+      "Du direct au poli : Mach das Fenster zu! → Kannst du ...? → Könntest du bitte das Fenster zumachen?",
+      "Formel : Könnten Sie mir helfen? Würden Sie bitte langsamer sprechen? Wären Sie so nett und ...?",
+      "Adoucisseurs : bitte, vielleicht, kurz, mal: Könnten Sie mir vielleicht kurz sagen, wie spät es ist?"
+     ],
+     "q": "Tu es dans le train et tu as besoin d'aide pour ta valise. Comment le demandes-tu poliment à un inconnu ?",
+     "c": "Transforme quatre ordres directs en demandes polies, deux avec Könnten Sie et deux avec Würdest du bitte."
+    },
+    "it": {
+     "t": "Richieste cortesi",
+     "g": "Rendi le richieste più gentili con könnten Sie, würden Sie bitte e wären Sie so nett.",
+     "p": [
+      "Da diretto a cortese: Mach das Fenster zu! → Kannst du ...? → Könntest du bitte das Fenster zumachen?",
+      "Formale: Könnten Sie mir helfen? Würden Sie bitte langsamer sprechen? Wären Sie so nett und ...?",
+      "Ammorbidenti: bitte, vielleicht, kurz, mal: Könnten Sie mir vielleicht kurz sagen, wie spät es ist?"
+     ],
+     "q": "Sei in treno e ti serve aiuto con la valigia. Come lo chiedi con gentilezza a uno sconosciuto?",
+     "c": "Trasforma quattro ordini diretti in richieste cortesi, due con Könnten Sie e due con Würdest du bitte."
+    },
+    "pt": {
+     "t": "Pedidos educados",
+     "g": "Suavizar pedidos com könnten Sie, würden Sie bitte e wären Sie so nett.",
+     "p": [
+      "Do direto ao educado: Mach das Fenster zu! → Kannst du ...? → Könntest du bitte das Fenster zumachen?",
+      "Formal: Könnten Sie mir helfen? Würden Sie bitte langsamer sprechen? Wären Sie so nett und ...?",
+      "Suavizadores: bitte, vielleicht, kurz, mal: Könnten Sie mir vielleicht kurz sagen, wie spät es ist?"
+     ],
+     "q": "Estás num comboio e precisas de ajuda com a mala. Como pedes com educação a um desconhecido?",
+     "c": "Transforma quatro ordens diretas em pedidos educados, dois com Könnten Sie e dois com Würdest du bitte."
+    },
+    "pt_BR": {
+     "t": "Pedidos educados",
+     "g": "Suavizar pedidos com könnten Sie, würden Sie bitte e wären Sie so nett.",
+     "p": [
+      "Do direto ao educado: Mach das Fenster zu! → Kannst du ...? → Könntest du bitte das Fenster zumachen?",
+      "Formal: Könnten Sie mir helfen? Würden Sie bitte langsamer sprechen? Wären Sie so nett und ...?",
+      "Suavizadores: bitte, vielleicht, kurz, mal: Könnten Sie mir vielleicht kurz sagen, wie spät es ist?"
+     ],
+     "q": "Você está num trem e precisa de ajuda com a mala. Como pede com educação a um desconhecido?",
+     "c": "Transforme quatro ordens diretas em pedidos educados, dois com Könnten Sie e dois com Würdest du bitte."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Könnten Sie ...?",
+      "ex": "Könnten Sie mir bitte den Weg zeigen?"
+     },
+     {
+      "w": "Würden Sie bitte ...?",
+      "ex": "Würden Sie bitte die Tür schließen?"
+     },
+     {
+      "w": "Wären Sie so nett ...?",
+      "ex": "Wären Sie so nett und helfen mir kurz?"
+     },
+     {
+      "w": "Könntest du ...?",
+      "ex": "Könntest du mir das Salz geben?"
+     },
+     {
+      "w": "kurz",
+      "ex": "Darf ich Sie kurz etwas fragen?"
+     },
+     {
+      "w": "vielleicht",
+      "ex": "Hätten Sie vielleicht einen Stift für mich?"
+     }
+    ],
+    "gram": "Könnte (von können): ich könnte, du könntest, Sie könnten. Bitte mit Konjunktiv II klingt höflicher als mit Präsens."
+   }
+  },
+  {
+   "d": 145,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Giving advice",
+     "g": "Give friendly advice with du solltest and an deiner Stelle würde ich.",
+     "p": [
+      "sollte: ich sollte, du solltest, er sollte, wir sollten, Sie sollten: Du solltest mehr schlafen.",
+      "In my place: An deiner Stelle würde ich einen Kurs machen. Ich an deiner Stelle würde fragen.",
+      "Other ways: Wie wäre es mit einem Spaziergang? Du könntest doch ... Probier mal ...!"
+     ],
+     "q": "A friend says: Ich bin immer so müde. What advice do you give? Use solltest and an deiner Stelle.",
+     "c": "Give a new German learner four tips: two with solltest, one with an deiner Stelle, one with Wie wäre es mit."
+    },
+    "de": {
+     "t": "Ratschläge geben",
+     "g": "Du gibst freundliche Ratschläge mit du solltest und an deiner Stelle würde ich.",
+     "p": [
+      "sollte: ich sollte, du solltest, er sollte, wir sollten, Sie sollten: Du solltest mehr schlafen.",
+      "An meiner Stelle: An deiner Stelle würde ich einen Kurs machen. Ich an deiner Stelle würde fragen.",
+      "Andere Wege: Wie wäre es mit einem Spaziergang? Du könntest doch ... Probier mal ...!"
+     ],
+     "q": "Ein Freund sagt: Ich bin immer so müde. Was rätst du ihm? Benutz solltest und an deiner Stelle.",
+     "c": "Gib jemandem, der Deutsch anfängt, vier Tipps: zwei mit solltest, einen mit an deiner Stelle, einen mit Wie wäre es mit."
+    },
+    "es": {
+     "t": "Dar consejos",
+     "g": "Da consejos amables con du solltest y an deiner Stelle würde ich.",
+     "p": [
+      "sollte: ich sollte, du solltest, er sollte, wir sollten, Sie sollten: Du solltest mehr schlafen.",
+      "En mi lugar: An deiner Stelle würde ich einen Kurs machen. Ich an deiner Stelle würde fragen.",
+      "Otras formas: Wie wäre es mit einem Spaziergang? Du könntest doch ... Probier mal ...!"
+     ],
+     "q": "Un amigo dice: Ich bin immer so müde. ¿Qué le aconsejas? Usa solltest y an deiner Stelle.",
+     "c": "Da a alguien que empieza alemán cuatro consejos: dos con solltest, uno con an deiner Stelle y uno con Wie wäre es mit."
+    },
+    "fr": {
+     "t": "Donner des conseils",
+     "g": "Donner des conseils amicaux avec du solltest et an deiner Stelle würde ich.",
+     "p": [
+      "sollte : ich sollte, du solltest, er sollte, wir sollten, Sie sollten: Du solltest mehr schlafen.",
+      "À ma place : An deiner Stelle würde ich einen Kurs machen. Ich an deiner Stelle würde fragen.",
+      "Autres façons : Wie wäre es mit einem Spaziergang? Du könntest doch ... Probier mal ...!"
+     ],
+     "q": "Un ami dit : Ich bin immer so müde. Que lui conseilles-tu ? Utilise solltest et an deiner Stelle.",
+     "c": "Donne quatre conseils à un débutant en allemand : deux avec solltest, un avec an deiner Stelle, un avec Wie wäre es mit."
+    },
+    "it": {
+     "t": "Dare consigli",
+     "g": "Dai consigli amichevoli con du solltest e an deiner Stelle würde ich.",
+     "p": [
+      "sollte: ich sollte, du solltest, er sollte, wir sollten, Sie sollten: Du solltest mehr schlafen.",
+      "Al mio posto: An deiner Stelle würde ich einen Kurs machen. Ich an deiner Stelle würde fragen.",
+      "Altri modi: Wie wäre es mit einem Spaziergang? Du könntest doch ... Probier mal ...!"
+     ],
+     "q": "Un amico dice: Ich bin immer so müde. Che cosa gli consigli? Usa solltest e an deiner Stelle.",
+     "c": "Dai quattro consigli a chi inizia il tedesco: due con solltest, uno con an deiner Stelle e uno con Wie wäre es mit."
+    },
+    "pt": {
+     "t": "Dar conselhos",
+     "g": "Dar conselhos amigáveis com du solltest e an deiner Stelle würde ich.",
+     "p": [
+      "sollte: ich sollte, du solltest, er sollte, wir sollten, Sie sollten: Du solltest mehr schlafen.",
+      "No meu lugar: An deiner Stelle würde ich einen Kurs machen. Ich an deiner Stelle würde fragen.",
+      "Outras formas: Wie wäre es mit einem Spaziergang? Du könntest doch ... Probier mal ...!"
+     ],
+     "q": "Um amigo diz: Ich bin immer so müde. Que conselho lhe dás? Usa solltest e an deiner Stelle.",
+     "c": "Dá quatro dicas a quem começa alemão: duas com solltest, uma com an deiner Stelle e uma com Wie wäre es mit."
+    },
+    "pt_BR": {
+     "t": "Dar conselhos",
+     "g": "Dar conselhos amigáveis com du solltest e an deiner Stelle würde ich.",
+     "p": [
+      "sollte: ich sollte, du solltest, er sollte, wir sollten, Sie sollten: Du solltest mehr schlafen.",
+      "No meu lugar: An deiner Stelle würde ich einen Kurs machen. Ich an deiner Stelle würde fragen.",
+      "Outras formas: Wie wäre es mit einem Spaziergang? Du könntest doch ... Probier mal ...!"
+     ],
+     "q": "Um amigo diz: Ich bin immer so müde. Que conselho você dá? Use solltest e an deiner Stelle.",
+     "c": "Dê quatro dicas a quem começa alemão: duas com solltest, uma com an deiner Stelle e uma com Wie wäre es mit."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "du solltest",
+      "ex": "Du solltest mehr Wasser trinken."
+     },
+     {
+      "w": "an deiner Stelle",
+      "ex": "An deiner Stelle würde ich früher losfahren."
+     },
+     {
+      "w": "der Rat / der Tipp",
+      "ex": "Danke für den Tipp!"
+     },
+     {
+      "w": "raten",
+      "ex": "Was rätst du mir?"
+     },
+     {
+      "w": "Wie wäre es mit ...?",
+      "ex": "Wie wäre es mit einer Pause?"
+     },
+     {
+      "w": "vorschlagen",
+      "ex": "Ich schlage vor, wir gehen zu Fuß."
+     }
+    ],
+    "gram": "Sollte (Konjunktiv II von sollen) + Infinitiv am Ende: Du solltest öfter Pausen machen. Raten + Dativ: Ich rate dir."
+   }
+  },
+  {
+   "d": 146,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Wenn + Konjunktiv II",
+     "g": "Talk about dreams and hypotheses: Wenn ich reich wäre, würde ich ...",
+     "p": [
+      "Structure: Wenn + ... + Verb am Ende, dann Verb zuerst: Wenn ich Zeit hätte, würde ich mehr lesen.",
+      "Common verbs: wäre, hätte, könnte: Wenn ich fliegen könnte, würde ich nach Island fliegen.",
+      "Real or unreal: Wenn es regnet, bleibe ich zu Hause (real). Wenn ich du wäre, würde ich gehen (irreal)."
+     ],
+     "q": "Wenn du einen Monat frei hättest, was würdest du machen? Answer with a full wenn sentence.",
+     "c": "Finish four sentences: Wenn ich reich wäre ..., Wenn ich mehr Zeit hätte ..., Wenn ich ... könnte ..., Wenn ich du wäre ..."
+    },
+    "de": {
+     "t": "Wenn + Konjunktiv II",
+     "g": "Du sprichst über Träume und Hypothesen: Wenn ich reich wäre, würde ich ...",
+     "p": [
+      "Struktur: Wenn + ... + Verb am Ende, dann Verb zuerst: Wenn ich Zeit hätte, würde ich mehr lesen.",
+      "Häufige Verben: wäre, hätte, könnte: Wenn ich fliegen könnte, würde ich nach Island fliegen.",
+      "Real oder irreal: Wenn es regnet, bleibe ich zu Hause (real). Wenn ich du wäre, würde ich gehen (irreal)."
+     ],
+     "q": "Wenn du einen Monat frei hättest, was würdest du machen? Antworte mit einem ganzen wenn-Satz.",
+     "c": "Beende vier Sätze: Wenn ich reich wäre ..., Wenn ich mehr Zeit hätte ..., Wenn ich ... könnte ..., Wenn ich du wäre ..."
+    },
+    "es": {
+     "t": "Wenn + Konjunktiv II",
+     "g": "Habla de sueños e hipótesis: Wenn ich reich wäre, würde ich ...",
+     "p": [
+      "Estructura: Wenn + ... + Verb am Ende, dann Verb zuerst: Wenn ich Zeit hätte, würde ich mehr lesen.",
+      "Verbos frecuentes: wäre, hätte, könnte: Wenn ich fliegen könnte, würde ich nach Island fliegen.",
+      "Real o irreal: Wenn es regnet, bleibe ich zu Hause (real). Wenn ich du wäre, würde ich gehen (irreal)."
+     ],
+     "q": "Wenn du einen Monat frei hättest, was würdest du machen? Responde con una frase completa con wenn.",
+     "c": "Completa cuatro frases: Wenn ich reich wäre ..., Wenn ich mehr Zeit hätte ..., Wenn ich ... könnte ..., Wenn ich du wäre ..."
+    },
+    "fr": {
+     "t": "Wenn + Konjunktiv II",
+     "g": "Parler de rêves et d'hypothèses : Wenn ich reich wäre, würde ich ...",
+     "p": [
+      "Structure : Wenn + ... + Verb am Ende, dann Verb zuerst: Wenn ich Zeit hätte, würde ich mehr lesen.",
+      "Verbes fréquents : wäre, hätte, könnte: Wenn ich fliegen könnte, würde ich nach Island fliegen.",
+      "Réel ou irréel : Wenn es regnet, bleibe ich zu Hause (real). Wenn ich du wäre, würde ich gehen (irreal)."
+     ],
+     "q": "Wenn du einen Monat frei hättest, was würdest du machen? Réponds avec une phrase complète avec wenn.",
+     "c": "Termine quatre phrases : Wenn ich reich wäre ..., Wenn ich mehr Zeit hätte ..., Wenn ich ... könnte ..., Wenn ich du wäre ..."
+    },
+    "it": {
+     "t": "Wenn + Konjunktiv II",
+     "g": "Parli di sogni e ipotesi: Wenn ich reich wäre, würde ich ...",
+     "p": [
+      "Struttura: Wenn + ... + Verb am Ende, dann Verb zuerst: Wenn ich Zeit hätte, würde ich mehr lesen.",
+      "Verbi frequenti: wäre, hätte, könnte: Wenn ich fliegen könnte, würde ich nach Island fliegen.",
+      "Reale o irreale: Wenn es regnet, bleibe ich zu Hause (real). Wenn ich du wäre, würde ich gehen (irreal)."
+     ],
+     "q": "Wenn du einen Monat frei hättest, was würdest du machen? Rispondi con una frase completa con wenn.",
+     "c": "Completa quattro frasi: Wenn ich reich wäre ..., Wenn ich mehr Zeit hätte ..., Wenn ich ... könnte ..., Wenn ich du wäre ..."
+    },
+    "pt": {
+     "t": "Wenn + Konjunktiv II",
+     "g": "Falar de sonhos e hipóteses: Wenn ich reich wäre, würde ich ...",
+     "p": [
+      "Estrutura: Wenn + ... + Verb am Ende, dann Verb zuerst: Wenn ich Zeit hätte, würde ich mehr lesen.",
+      "Verbos frequentes: wäre, hätte, könnte: Wenn ich fliegen könnte, würde ich nach Island fliegen.",
+      "Real ou irreal: Wenn es regnet, bleibe ich zu Hause (real). Wenn ich du wäre, würde ich gehen (irreal)."
+     ],
+     "q": "Wenn du einen Monat frei hättest, was würdest du machen? Responde com uma frase completa com wenn.",
+     "c": "Completa quatro frases: Wenn ich reich wäre ..., Wenn ich mehr Zeit hätte ..., Wenn ich ... könnte ..., Wenn ich du wäre ..."
+    },
+    "pt_BR": {
+     "t": "Wenn + Konjunktiv II",
+     "g": "Falar de sonhos e hipóteses: Wenn ich reich wäre, würde ich ...",
+     "p": [
+      "Estrutura: Wenn + ... + Verb am Ende, dann Verb zuerst: Wenn ich Zeit hätte, würde ich mehr lesen.",
+      "Verbos frequentes: wäre, hätte, könnte: Wenn ich fliegen könnte, würde ich nach Island fliegen.",
+      "Real ou irreal: Wenn es regnet, bleibe ich zu Hause (real). Wenn ich du wäre, würde ich gehen (irreal)."
+     ],
+     "q": "Wenn du einen Monat frei hättest, was würdest du machen? Responda com uma frase completa com wenn.",
+     "c": "Complete quatro frases: Wenn ich reich wäre ..., Wenn ich mehr Zeit hätte ..., Wenn ich ... könnte ..., Wenn ich du wäre ..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "wenn ich reich wäre",
+      "ex": "Wenn ich reich wäre, würde ich ein Boot kaufen."
+     },
+     {
+      "w": "wenn ich Zeit hätte",
+      "ex": "Wenn ich Zeit hätte, würde ich malen."
+     },
+     {
+      "w": "könnte",
+      "ex": "Wenn ich zaubern könnte, wäre ich nie zu spät."
+     },
+     {
+      "w": "wenn ich du wäre",
+      "ex": "Wenn ich du wäre, würde ich das Angebot annehmen."
+     },
+     {
+      "w": "der Traum",
+      "ex": "Mein Traum ist ein Haus mit Garten."
+     },
+     {
+      "w": "träumen",
+      "ex": "Ich träume von einer Weltreise."
+     }
+    ],
+    "gram": "Irrealer Bedingungssatz: Wenn + Konjunktiv II (Verb am Ende), Hauptsatz mit würde + Infinitiv: Wenn ich Zeit hätte, würde ich kommen."
+   }
+  },
+  {
+   "d": 147,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Dream holidays",
+     "g": "Describe your dream holiday with Konjunktiv II: where you would go and what you would do.",
+     "p": [
+      "Where to: Ich würde nach Norwegen fahren / in die Berge / an den See / ans Meer.",
+      "How: Ich würde mit dem Zug reisen, in einer kleinen Hütte wohnen und jeden Tag wandern.",
+      "Asking others: Wohin würdest du fahren, wenn du könntest? Mit wem würdest du reisen?"
+     ],
+     "q": "Wohin würdest du fahren, wenn du könntest? Tell me where, with whom and for how long.",
+     "c": "Write six sentences about your dream holiday with würde, wäre, hätte and the right preposition for the place."
+    },
+    "de": {
+     "t": "Traumurlaub",
+     "g": "Du beschreibst deinen Traumurlaub im Konjunktiv II: wohin du fahren und was du machen würdest.",
+     "p": [
+      "Wohin: Ich würde nach Norwegen fahren / in die Berge / an den See / ans Meer.",
+      "Wie: Ich würde mit dem Zug reisen, in einer kleinen Hütte wohnen und jeden Tag wandern.",
+      "Andere fragen: Wohin würdest du fahren, wenn du könntest? Mit wem würdest du reisen?"
+     ],
+     "q": "Wohin würdest du fahren, wenn du könntest? Sag mir, wohin, mit wem und wie lange.",
+     "c": "Schreib sechs Sätze über deinen Traumurlaub mit würde, wäre, hätte und der richtigen Präposition für den Ort."
+    },
+    "es": {
+     "t": "Vacaciones de ensueño",
+     "g": "Describe tus vacaciones ideales con Konjunktiv II: adónde irías y qué harías.",
+     "p": [
+      "Adónde: Ich würde nach Norwegen fahren / in die Berge / an den See / ans Meer.",
+      "Cómo: Ich würde mit dem Zug reisen, in einer kleinen Hütte wohnen und jeden Tag wandern.",
+      "Preguntar a otros: Wohin würdest du fahren, wenn du könntest? Mit wem würdest du reisen?"
+     ],
+     "q": "Wohin würdest du fahren, wenn du könntest? Dime adónde, con quién y cuánto tiempo.",
+     "c": "Escribe seis frases sobre tus vacaciones ideales con würde, wäre, hätte y la preposición correcta del lugar."
+    },
+    "fr": {
+     "t": "Les vacances de rêve",
+     "g": "Décrire tes vacances de rêve au Konjunktiv II : où tu irais et ce que tu ferais.",
+     "p": [
+      "Où : Ich würde nach Norwegen fahren / in die Berge / an den See / ans Meer.",
+      "Comment : Ich würde mit dem Zug reisen, in einer kleinen Hütte wohnen und jeden Tag wandern.",
+      "Demander aux autres : Wohin würdest du fahren, wenn du könntest? Mit wem würdest du reisen?"
+     ],
+     "q": "Wohin würdest du fahren, wenn du könntest? Dis-moi où, avec qui et combien de temps.",
+     "c": "Écris six phrases sur tes vacances de rêve avec würde, wäre, hätte et la bonne préposition de lieu."
+    },
+    "it": {
+     "t": "Vacanze da sogno",
+     "g": "Descrivi la tua vacanza da sogno con il Konjunktiv II: dove andresti e che cosa faresti.",
+     "p": [
+      "Dove: Ich würde nach Norwegen fahren / in die Berge / an den See / ans Meer.",
+      "Come: Ich würde mit dem Zug reisen, in einer kleinen Hütte wohnen und jeden Tag wandern.",
+      "Chiedere agli altri: Wohin würdest du fahren, wenn du könntest? Mit wem würdest du reisen?"
+     ],
+     "q": "Wohin würdest du fahren, wenn du könntest? Dimmi dove, con chi e per quanto tempo.",
+     "c": "Scrivi sei frasi sulla vacanza da sogno con würde, wäre, hätte e la preposizione giusta per il luogo."
+    },
+    "pt": {
+     "t": "Férias de sonho",
+     "g": "Descrever as tuas férias de sonho com Konjunktiv II: para onde irias e o que farias.",
+     "p": [
+      "Para onde: Ich würde nach Norwegen fahren / in die Berge / an den See / ans Meer.",
+      "Como: Ich würde mit dem Zug reisen, in einer kleinen Hütte wohnen und jeden Tag wandern.",
+      "Perguntar aos outros: Wohin würdest du fahren, wenn du könntest? Mit wem würdest du reisen?"
+     ],
+     "q": "Wohin würdest du fahren, wenn du könntest? Diz-me para onde, com quem e por quanto tempo.",
+     "c": "Escreve seis frases sobre as férias de sonho com würde, wäre, hätte e a preposição certa para o lugar."
+    },
+    "pt_BR": {
+     "t": "Férias dos sonhos",
+     "g": "Descrever suas férias dos sonhos com Konjunktiv II: para onde iria e o que faria.",
+     "p": [
+      "Para onde: Ich würde nach Norwegen fahren / in die Berge / an den See / ans Meer.",
+      "Como: Ich würde mit dem Zug reisen, in einer kleinen Hütte wohnen und jeden Tag wandern.",
+      "Perguntar aos outros: Wohin würdest du fahren, wenn du könntest? Mit wem würdest du reisen?"
+     ],
+     "q": "Wohin würdest du fahren, wenn du könntest? Me diga para onde, com quem e por quanto tempo.",
+     "c": "Escreva seis frases sobre suas férias dos sonhos com würde, wäre, hätte e a preposição certa para o lugar."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Traumurlaub",
+      "ex": "Mein Traumurlaub wäre eine Reise nach Island."
+     },
+     {
+      "w": "ans Meer",
+      "ex": "Im Sommer würde ich am liebsten ans Meer fahren."
+     },
+     {
+      "w": "in die Berge",
+      "ex": "Wir würden gern in die Berge fahren."
+     },
+     {
+      "w": "die Hütte",
+      "ex": "Ich würde in einer Hütte am See wohnen."
+     },
+     {
+      "w": "wandern",
+      "ex": "Jeden Morgen würde ich zwei Stunden wandern."
+     },
+     {
+      "w": "die Aussicht",
+      "ex": "Von dort hätte man eine tolle Aussicht."
+     }
+    ],
+    "gram": "Wohin? nach + Land/Stadt, in die Berge, ans Meer, an den See (Akk.). Wo? in den Bergen, am Meer (Dat.)."
+   }
+  },
+  {
+   "d": 148,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Sports in depth",
+     "g": "Talk about football, the Bundesliga, cycling and matches you have watched or played.",
+     "p": [
+      "Football: die Mannschaft, der Verein, das Tor, der Fan, das Stadion. Wer hat gewonnen? Es steht 2 zu 1.",
+      "Results: gewinnen, verlieren, unentschieden spielen. Bayern hat gegen Dortmund 3:1 gewonnen.",
+      "Cycling and more: Viele Deutsche fahren gern Rad. Ich trainiere zweimal pro Woche im Verein."
+     ],
+     "q": "Do you prefer playing sport or watching it? Tell me about a match or race you remember.",
+     "c": "Report a match in five sentences in the Perfekt with the teams, the score and one moment you liked."
+    },
+    "de": {
+     "t": "Sport im Detail",
+     "g": "Du sprichst über Fußball, die Bundesliga, Radfahren und Spiele, die du gesehen oder gespielt hast.",
+     "p": [
+      "Fußball: die Mannschaft, der Verein, das Tor, der Fan, das Stadion. Wer hat gewonnen? Es steht 2 zu 1.",
+      "Ergebnisse: gewinnen, verlieren, unentschieden spielen. Bayern hat gegen Dortmund 3:1 gewonnen.",
+      "Radfahren und mehr: Viele Deutsche fahren gern Rad. Ich trainiere zweimal pro Woche im Verein."
+     ],
+     "q": "Treibst du lieber selbst Sport oder schaust du lieber zu? Erzähl von einem Spiel oder Rennen.",
+     "c": "Berichte in fünf Sätzen im Perfekt über ein Spiel mit den Mannschaften, dem Ergebnis und einem schönen Moment."
+    },
+    "es": {
+     "t": "El deporte a fondo",
+     "g": "Habla de fútbol, la Bundesliga, el ciclismo y partidos que has visto o jugado.",
+     "p": [
+      "Fútbol: die Mannschaft, der Verein, das Tor, der Fan, das Stadion. Wer hat gewonnen? Es steht 2 zu 1.",
+      "Resultados: gewinnen, verlieren, unentschieden spielen. Bayern hat gegen Dortmund 3:1 gewonnen.",
+      "Ciclismo y más: Viele Deutsche fahren gern Rad. Ich trainiere zweimal pro Woche im Verein."
+     ],
+     "q": "¿Prefieres hacer deporte o verlo? Háblame de un partido o una carrera que recuerdes.",
+     "c": "Cuenta un partido en cinco frases en Perfekt con los equipos, el resultado y un momento que te gustó."
+    },
+    "fr": {
+     "t": "Le sport en détail",
+     "g": "Parler de football, de la Bundesliga, du vélo et des matchs que tu as vus ou joués.",
+     "p": [
+      "Football : die Mannschaft, der Verein, das Tor, der Fan, das Stadion. Wer hat gewonnen? Es steht 2 zu 1.",
+      "Résultats : gewinnen, verlieren, unentschieden spielen. Bayern hat gegen Dortmund 3:1 gewonnen.",
+      "Vélo et plus : Viele Deutsche fahren gern Rad. Ich trainiere zweimal pro Woche im Verein."
+     ],
+     "q": "Préfères-tu faire du sport ou en regarder ? Parle-moi d'un match ou d'une course dont tu te souviens.",
+     "c": "Raconte un match en cinq phrases au Perfekt avec les équipes, le score et un moment que tu as aimé."
+    },
+    "it": {
+     "t": "Lo sport nel dettaglio",
+     "g": "Parli di calcio, della Bundesliga, del ciclismo e di partite che hai visto o giocato.",
+     "p": [
+      "Calcio: die Mannschaft, der Verein, das Tor, der Fan, das Stadion. Wer hat gewonnen? Es steht 2 zu 1.",
+      "Risultati: gewinnen, verlieren, unentschieden spielen. Bayern hat gegen Dortmund 3:1 gewonnen.",
+      "Ciclismo e altro: Viele Deutsche fahren gern Rad. Ich trainiere zweimal pro Woche im Verein."
+     ],
+     "q": "Preferisci fare sport o guardarlo? Parlami di una partita o una gara che ricordi.",
+     "c": "Racconta una partita in cinque frasi al Perfekt con le squadre, il risultato e un momento che ti è piaciuto."
+    },
+    "pt": {
+     "t": "Desporto em pormenor",
+     "g": "Falar de futebol, da Bundesliga, de ciclismo e de jogos que viste ou jogaste.",
+     "p": [
+      "Futebol: die Mannschaft, der Verein, das Tor, der Fan, das Stadion. Wer hat gewonnen? Es steht 2 zu 1.",
+      "Resultados: gewinnen, verlieren, unentschieden spielen. Bayern hat gegen Dortmund 3:1 gewonnen.",
+      "Ciclismo e mais: Viele Deutsche fahren gern Rad. Ich trainiere zweimal pro Woche im Verein."
+     ],
+     "q": "Preferes praticar desporto ou ver? Fala-me de um jogo ou de uma corrida de que te lembres.",
+     "c": "Relata um jogo em cinco frases no Perfekt com as equipas, o resultado e um momento de que gostaste."
+    },
+    "pt_BR": {
+     "t": "Esportes em detalhe",
+     "g": "Falar de futebol, da Bundesliga, de ciclismo e de jogos que você viu ou jogou.",
+     "p": [
+      "Futebol: die Mannschaft, der Verein, das Tor, der Fan, das Stadion. Wer hat gewonnen? Es steht 2 zu 1.",
+      "Resultados: gewinnen, verlieren, unentschieden spielen. Bayern hat gegen Dortmund 3:1 gewonnen.",
+      "Ciclismo e mais: Viele Deutsche fahren gern Rad. Ich trainiere zweimal pro Woche im Verein."
+     ],
+     "q": "Você prefere praticar esporte ou assistir? Me fale de um jogo ou de uma corrida de que se lembra.",
+     "c": "Relate um jogo em cinco frases no Perfekt com os times, o placar e um momento de que você gostou."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Mannschaft",
+      "ex": "Unsere Mannschaft hat super gespielt."
+     },
+     {
+      "w": "das Tor",
+      "ex": "In der letzten Minute fiel noch ein Tor."
+     },
+     {
+      "w": "gewinnen",
+      "ex": "Wer hat das Spiel gewonnen?"
+     },
+     {
+      "w": "unentschieden",
+      "ex": "Das Spiel endete unentschieden."
+     },
+     {
+      "w": "der Verein",
+      "ex": "Ich spiele seit drei Jahren in einem Verein."
+     },
+     {
+      "w": "Rad fahren",
+      "ex": "Am Wochenende fahre ich gern Rad."
+     }
+    ],
+    "gram": "Gegen + Akkusativ: gegen den Meister. Perfekt: hat gewonnen, hat verloren, ist gefahren. Ergebnis: 2:1 (zwei zu eins)."
+   }
+  },
+  {
+   "d": 149,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Environment basics",
+     "g": "Talk about recycling, sorting waste, saving energy and protecting the environment in daily life.",
+     "p": [
+      "Words: die Umwelt, der Umweltschutz, die Mülltrennung, Energie sparen, das Klima, nachhaltig.",
+      "Habits: Ich fahre mit dem Rad. Ich mache das Licht aus. Ich kaufe weniger Plastik.",
+      "Bins in Germany: Papier in die blaue Tonne, Bio in die braune, Verpackungen in die gelbe, Rest in die graue."
+     ],
+     "q": "What do you do to protect the environment, and what is still difficult for you?",
+     "c": "Write five green tips in German: three imperatives with du and two sentences with man sollte."
+    },
+    "de": {
+     "t": "Umwelt: die Grundlagen",
+     "g": "Du sprichst über Recycling, Mülltrennung, Energie sparen und Umweltschutz im Alltag.",
+     "p": [
+      "Wörter: die Umwelt, der Umweltschutz, die Mülltrennung, Energie sparen, das Klima, nachhaltig.",
+      "Gewohnheiten: Ich fahre mit dem Rad. Ich mache das Licht aus. Ich kaufe weniger Plastik.",
+      "Tonnen in Deutschland: Papier in die blaue Tonne, Bio in die braune, Verpackungen in die gelbe, Rest in die graue."
+     ],
+     "q": "Was machst du für die Umwelt, und was fällt dir noch schwer?",
+     "c": "Schreib fünf Umwelttipps: drei Imperative mit du und zwei Sätze mit man sollte."
+    },
+    "es": {
+     "t": "El medio ambiente: lo básico",
+     "g": "Habla de reciclaje, separar residuos, ahorrar energía y proteger el medio ambiente a diario.",
+     "p": [
+      "Palabras: die Umwelt, der Umweltschutz, die Mülltrennung, Energie sparen, das Klima, nachhaltig.",
+      "Hábitos: Ich fahre mit dem Rad. Ich mache das Licht aus. Ich kaufe weniger Plastik.",
+      "Contenedores en Alemania: Papier in die blaue Tonne, Bio in die braune, Verpackungen in die gelbe, Rest in die graue."
+     ],
+     "q": "¿Qué haces para proteger el medio ambiente y qué te cuesta todavía?",
+     "c": "Escribe cinco consejos ecológicos: tres imperativos con du y dos frases con man sollte."
+    },
+    "fr": {
+     "t": "L'environnement : les bases",
+     "g": "Parler de recyclage, de tri des déchets, d'économies d'énergie et de protection de l'environnement.",
+     "p": [
+      "Mots : die Umwelt, der Umweltschutz, die Mülltrennung, Energie sparen, das Klima, nachhaltig.",
+      "Habitudes : Ich fahre mit dem Rad. Ich mache das Licht aus. Ich kaufe weniger Plastik.",
+      "Poubelles en Allemagne : Papier in die blaue Tonne, Bio in die braune, Verpackungen in die gelbe, Rest in die graue."
+     ],
+     "q": "Que fais-tu pour protéger l'environnement, et qu'est-ce qui reste difficile pour toi ?",
+     "c": "Écris cinq conseils écolos en allemand : trois impératifs avec du et deux phrases avec man sollte."
+    },
+    "it": {
+     "t": "Ambiente: le basi",
+     "g": "Parli di riciclo, raccolta differenziata, risparmio energetico e tutela dell'ambiente ogni giorno.",
+     "p": [
+      "Parole: die Umwelt, der Umweltschutz, die Mülltrennung, Energie sparen, das Klima, nachhaltig.",
+      "Abitudini: Ich fahre mit dem Rad. Ich mache das Licht aus. Ich kaufe weniger Plastik.",
+      "Bidoni in Germania: Papier in die blaue Tonne, Bio in die braune, Verpackungen in die gelbe, Rest in die graue."
+     ],
+     "q": "Che cosa fai per l'ambiente e che cosa ti risulta ancora difficile?",
+     "c": "Scrivi cinque consigli ecologici: tre imperativi con du e due frasi con man sollte."
+    },
+    "pt": {
+     "t": "Ambiente: o essencial",
+     "g": "Falar de reciclagem, separação do lixo, poupança de energia e proteção do ambiente no dia a dia.",
+     "p": [
+      "Palavras: die Umwelt, der Umweltschutz, die Mülltrennung, Energie sparen, das Klima, nachhaltig.",
+      "Hábitos: Ich fahre mit dem Rad. Ich mache das Licht aus. Ich kaufe weniger Plastik.",
+      "Contentores na Alemanha: Papier in die blaue Tonne, Bio in die braune, Verpackungen in die gelbe, Rest in die graue."
+     ],
+     "q": "O que fazes para proteger o ambiente e o que ainda te custa?",
+     "c": "Escreve cinco dicas ecológicas: três imperativos com du e duas frases com man sollte."
+    },
+    "pt_BR": {
+     "t": "Meio ambiente: o básico",
+     "g": "Falar de reciclagem, separação do lixo, economia de energia e proteção do meio ambiente no dia a dia.",
+     "p": [
+      "Palavras: die Umwelt, der Umweltschutz, die Mülltrennung, Energie sparen, das Klima, nachhaltig.",
+      "Hábitos: Ich fahre mit dem Rad. Ich mache das Licht aus. Ich kaufe weniger Plastik.",
+      "Lixeiras na Alemanha: Papier in die blaue Tonne, Bio in die braune, Verpackungen in die gelbe, Rest in die graue."
+     ],
+     "q": "O que você faz para proteger o meio ambiente e o que ainda é difícil para você?",
+     "c": "Escreva cinco dicas ecológicas: três imperativos com du e duas frases com man sollte."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Umwelt",
+      "ex": "Wir müssen die Umwelt schützen."
+     },
+     {
+      "w": "die Mülltrennung",
+      "ex": "Die Mülltrennung ist in Deutschland sehr wichtig."
+     },
+     {
+      "w": "Energie sparen",
+      "ex": "Mit LED-Lampen kann man Energie sparen."
+     },
+     {
+      "w": "nachhaltig",
+      "ex": "Ich versuche, nachhaltig einzukaufen."
+     },
+     {
+      "w": "die Verpackung",
+      "ex": "Diese Verpackung kommt in die gelbe Tonne."
+     },
+     {
+      "w": "wiederverwenden",
+      "ex": "Ich verwende meine Einkaufstasche immer wieder."
+     }
+    ],
+    "gram": "Wohin? in die gelbe Tonne (Akk.). Man sollte + Infinitiv für allgemeine Ratschläge: Man sollte weniger Plastik kaufen."
+   }
+  },
+  {
+   "d": 150,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "City life vs country life",
+     "g": "Compare the advantages and drawbacks of living in the city and in the countryside.",
+     "p": [
+      "Comparatives: In der Stadt ist es lauter, aber auf dem Land ist die Luft besser und die Mieten sind günstiger.",
+      "Pros and cons: Ein Vorteil ist ... Ein Nachteil ist ... Auf der einen Seite ..., auf der anderen Seite ...",
+      "Prepositions: in der Stadt, auf dem Land, im Dorf, am Stadtrand, in der Natur."
+     ],
+     "q": "Where would you rather live, in a city or in the countryside? Name one advantage and one drawback.",
+     "c": "Write a short text with auf der einen Seite / auf der anderen Seite and at least three comparatives."
+    },
+    "de": {
+     "t": "Stadtleben oder Landleben",
+     "g": "Du vergleichst Vor- und Nachteile vom Leben in der Stadt und auf dem Land.",
+     "p": [
+      "Komparativ: In der Stadt ist es lauter, aber auf dem Land ist die Luft besser und die Mieten sind günstiger.",
+      "Vor- und Nachteile: Ein Vorteil ist ... Ein Nachteil ist ... Auf der einen Seite ..., auf der anderen Seite ...",
+      "Präpositionen: in der Stadt, auf dem Land, im Dorf, am Stadtrand, in der Natur."
+     ],
+     "q": "Wo würdest du lieber wohnen, in der Stadt oder auf dem Land? Nenn einen Vorteil und einen Nachteil.",
+     "c": "Schreib einen kurzen Text mit auf der einen Seite / auf der anderen Seite und mindestens drei Komparativen."
+    },
+    "es": {
+     "t": "Vida en la ciudad o en el campo",
+     "g": "Compara ventajas e inconvenientes de vivir en la ciudad y en el campo.",
+     "p": [
+      "Comparativos: In der Stadt ist es lauter, aber auf dem Land ist die Luft besser und die Mieten sind günstiger.",
+      "Pros y contras: Ein Vorteil ist ... Ein Nachteil ist ... Auf der einen Seite ..., auf der anderen Seite ...",
+      "Preposiciones: in der Stadt, auf dem Land, im Dorf, am Stadtrand, in der Natur."
+     ],
+     "q": "¿Dónde preferirías vivir, en la ciudad o en el campo? Di una ventaja y un inconveniente.",
+     "c": "Escribe un texto corto con auf der einen Seite / auf der anderen Seite y al menos tres comparativos."
+    },
+    "fr": {
+     "t": "Vivre en ville ou à la campagne",
+     "g": "Comparer les avantages et les inconvénients de la vie en ville et à la campagne.",
+     "p": [
+      "Comparatifs : In der Stadt ist es lauter, aber auf dem Land ist die Luft besser und die Mieten sind günstiger.",
+      "Pour et contre : Ein Vorteil ist ... Ein Nachteil ist ... Auf der einen Seite ..., auf der anderen Seite ...",
+      "Prépositions : in der Stadt, auf dem Land, im Dorf, am Stadtrand, in der Natur."
+     ],
+     "q": "Où préférerais-tu vivre, en ville ou à la campagne ? Cite un avantage et un inconvénient.",
+     "c": "Écris un court texte avec auf der einen Seite / auf der anderen Seite et au moins trois comparatifs."
+    },
+    "it": {
+     "t": "Città o campagna",
+     "g": "Confronti vantaggi e svantaggi della vita in città e in campagna.",
+     "p": [
+      "Comparativi: In der Stadt ist es lauter, aber auf dem Land ist die Luft besser und die Mieten sind günstiger.",
+      "Pro e contro: Ein Vorteil ist ... Ein Nachteil ist ... Auf der einen Seite ..., auf der anderen Seite ...",
+      "Preposizioni: in der Stadt, auf dem Land, im Dorf, am Stadtrand, in der Natur."
+     ],
+     "q": "Dove preferiresti vivere, in città o in campagna? Indica un vantaggio e uno svantaggio.",
+     "c": "Scrivi un breve testo con auf der einen Seite / auf der anderen Seite e almeno tre comparativi."
+    },
+    "pt": {
+     "t": "Vida na cidade ou no campo",
+     "g": "Comparar vantagens e desvantagens de viver na cidade e no campo.",
+     "p": [
+      "Comparativos: In der Stadt ist es lauter, aber auf dem Land ist die Luft besser und die Mieten sind günstiger.",
+      "Prós e contras: Ein Vorteil ist ... Ein Nachteil ist ... Auf der einen Seite ..., auf der anderen Seite ...",
+      "Preposições: in der Stadt, auf dem Land, im Dorf, am Stadtrand, in der Natur."
+     ],
+     "q": "Onde preferias viver, na cidade ou no campo? Diz uma vantagem e uma desvantagem.",
+     "c": "Escreve um texto curto com auf der einen Seite / auf der anderen Seite e pelo menos três comparativos."
+    },
+    "pt_BR": {
+     "t": "Vida na cidade ou no campo",
+     "g": "Comparar vantagens e desvantagens de morar na cidade e no campo.",
+     "p": [
+      "Comparativos: In der Stadt ist es lauter, aber auf dem Land ist die Luft besser und die Mieten sind günstiger.",
+      "Prós e contras: Ein Vorteil ist ... Ein Nachteil ist ... Auf der einen Seite ..., auf der anderen Seite ...",
+      "Preposições: in der Stadt, auf dem Land, im Dorf, am Stadtrand, in der Natur."
+     ],
+     "q": "Onde você preferiria morar, na cidade ou no campo? Diga uma vantagem e uma desvantagem.",
+     "c": "Escreva um texto curto com auf der einen Seite / auf der anderen Seite e pelo menos três comparativos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "auf dem Land",
+      "ex": "Meine Großeltern wohnen auf dem Land."
+     },
+     {
+      "w": "in der Stadt",
+      "ex": "In der Stadt gibt es viele Kinos."
+     },
+     {
+      "w": "der Vorteil",
+      "ex": "Ein großer Vorteil ist die Ruhe."
+     },
+     {
+      "w": "der Nachteil",
+      "ex": "Ein Nachteil sind die langen Wege."
+     },
+     {
+      "w": "ruhiger",
+      "ex": "Auf dem Land ist es viel ruhiger."
+     },
+     {
+      "w": "die Verbindung",
+      "ex": "Die Busverbindung ist hier leider schlecht."
+     }
+    ],
+    "gram": "Komparativ + als: Die Stadt ist lauter als das Dorf. Umlaut oft bei kurzen Adjektiven: groß → größer, alt → älter."
+   }
+  }
+ ]
+}

@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 191,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Polite criticism and suggestions",
+     "g": "Criticise kindly and suggest improvements: Es wäre besser, wenn..., du hättest vielleicht...",
+     "p": [
+      "Soften advice with Konjunktiv II: Es wäre besser, wenn wir früher anfangen würden. Wie wäre es mit...?",
+      "Past criticism, gently: Du hättest vielleicht vorher fragen können. Man hätte das klarer erklären sollen.",
+      "Start positive: Das ist schon sehr gut, aber... / Ich hätte einen kleinen Vorschlag."
+     ],
+     "q": "A friend's presentation was too long. How would you tell them kindly? Try Es wäre vielleicht besser, wenn...",
+     "c": "Turn three direct criticisms into polite ones with wäre, könnte, hättest ... können."
+    },
+    "de": {
+     "t": "Höfliche Kritik und Vorschläge",
+     "g": "Du kritisierst freundlich und machst Vorschläge: Es wäre besser, wenn..., du hättest vielleicht...",
+     "p": [
+      "Rat mit Konjunktiv II abschwächen: Es wäre besser, wenn wir früher anfangen würden. Wie wäre es mit...?",
+      "Kritik an Vergangenem, sanft: Du hättest vielleicht vorher fragen können. Man hätte das klarer erklären sollen.",
+      "Positiv anfangen: Das ist schon sehr gut, aber... / Ich hätte einen kleinen Vorschlag."
+     ],
+     "q": "Die Präsentation eines Freundes war zu lang. Wie sagst du es ihm nett? Versuch: Es wäre vielleicht besser, wenn...",
+     "c": "Formuliere drei direkte Kritiken höflich mit wäre, könnte, hättest ... können."
+    },
+    "es": {
+     "t": "Críticas y sugerencias amables",
+     "g": "Critica con tacto y sugiere mejoras: Es wäre besser, wenn..., du hättest vielleicht...",
+     "p": [
+      "Suaviza el consejo con Konjunktiv II: Es wäre besser, wenn wir früher anfangen würden. Wie wäre es mit...?",
+      "Críticas sobre el pasado, con suavidad: Du hättest vielleicht vorher fragen können.",
+      "Empieza en positivo: Das ist schon sehr gut, aber... / Ich hätte einen kleinen Vorschlag."
+     ],
+     "q": "La presentación de un amigo fue demasiado larga. ¿Cómo se lo dirías? Prueba con Es wäre vielleicht besser, wenn...",
+     "c": "Convierte tres críticas directas en críticas amables con wäre, könnte, hättest ... können."
+    },
+    "fr": {
+     "t": "Critiquer poliment et suggérer",
+     "g": "Critiquer avec tact et proposer : Es wäre besser, wenn..., du hättest vielleicht...",
+     "p": [
+      "Adoucis un conseil avec le Konjunktiv II : Es wäre besser, wenn wir früher anfangen würden. Wie wäre es mit... ?",
+      "Critique sur le passé, en douceur : Du hättest vielleicht vorher fragen können.",
+      "Commence par le positif : Das ist schon sehr gut, aber... / Ich hätte einen kleinen Vorschlag."
+     ],
+     "q": "L'exposé d'un ami était trop long. Comment le lui dire gentiment ? Essaie Es wäre vielleicht besser, wenn...",
+     "c": "Transforme trois critiques directes en critiques polies avec wäre, könnte, hättest ... können."
+    },
+    "it": {
+     "t": "Critiche gentili e suggerimenti",
+     "g": "Critichi con garbo e proponi miglioramenti: Es wäre besser, wenn..., du hättest vielleicht...",
+     "p": [
+      "Ammorbidisci il consiglio col Konjunktiv II: Es wäre besser, wenn wir früher anfangen würden. Wie wäre es mit...?",
+      "Critiche sul passato, con delicatezza: Du hättest vielleicht vorher fragen können.",
+      "Comincia in positivo: Das ist schon sehr gut, aber... / Ich hätte einen kleinen Vorschlag."
+     ],
+     "q": "La presentazione di un amico era troppo lunga. Come glielo diresti? Prova con Es wäre vielleicht besser, wenn...",
+     "c": "Trasforma tre critiche dirette in critiche gentili con wäre, könnte, hättest ... können."
+    },
+    "pt": {
+     "t": "Críticas e sugestões com delicadeza",
+     "g": "Criticar com tato e sugerir melhorias: Es wäre besser, wenn..., du hättest vielleicht...",
+     "p": [
+      "Suaviza o conselho com o Konjunktiv II: Es wäre besser, wenn wir früher anfangen würden. Wie wäre es mit...?",
+      "Críticas sobre o passado, com cuidado: Du hättest vielleicht vorher fragen können.",
+      "Começa pelo positivo: Das ist schon sehr gut, aber... / Ich hätte einen kleinen Vorschlag."
+     ],
+     "q": "A apresentação de um amigo foi longa demais. Como lho dirias? Experimenta Es wäre vielleicht besser, wenn...",
+     "c": "Transforma três críticas diretas em críticas delicadas com wäre, könnte, hättest ... können."
+    },
+    "pt_BR": {
+     "t": "Críticas e sugestões com jeito",
+     "g": "Criticar com jeito e sugerir melhorias: Es wäre besser, wenn..., du hättest vielleicht...",
+     "p": [
+      "Suavize o conselho com o Konjunktiv II: Es wäre besser, wenn wir früher anfangen würden. Wie wäre es mit...?",
+      "Críticas sobre o passado, com cuidado: Du hättest vielleicht vorher fragen können.",
+      "Comece pelo positivo: Das ist schon sehr gut, aber... / Ich hätte einen kleinen Vorschlag."
+     ],
+     "q": "A apresentação de um amigo foi longa demais. Como você diria isso? Tente Es wäre vielleicht besser, wenn...",
+     "c": "Transforme três críticas diretas em críticas gentis com wäre, könnte, hättest ... können."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Es wäre besser, wenn...",
+      "ex": "Es wäre besser, wenn wir eine Pause machen würden."
+     },
+     {
+      "w": "Wie wäre es mit...?",
+      "ex": "Wie wäre es mit einem kürzeren Text?"
+     },
+     {
+      "w": "der Vorschlag",
+      "ex": "Ich hätte einen kleinen Vorschlag."
+     },
+     {
+      "w": "vielleicht",
+      "ex": "Du könntest vielleicht lauter sprechen."
+     },
+     {
+      "w": "an deiner Stelle",
+      "ex": "An deiner Stelle würde ich noch einmal nachfragen."
+     },
+     {
+      "w": "hättest ... können",
+      "ex": "Du hättest mir vorher Bescheid sagen können."
+     }
+    ],
+    "gram": "Höflichkeit durch Konjunktiv II: wäre, könnte, würde; Kritik an Vergangenem: hättest ... können/sollen."
+   }
+  },
+  {
+   "d": 192,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Als ob and als wenn",
+     "g": "Make unreal comparisons: Er tut so, als ob er alles wüsste.",
+     "p": [
+      "Als ob / als wenn + Konjunktiv II, verb at the end: Sie lacht, als ob sie nichts gehört hätte.",
+      "Common frames: so tun, als ob...; aussehen, als ob...; sich anfühlen, als ob...",
+      "Short form with als + verb first: Er tut so, als wüsste er alles. Es sieht aus, als würde es regnen."
+     ],
+     "q": "Do you know someone who acts als ob er alles wüsste? Describe a funny situation with als ob.",
+     "c": "Write three sentences: one with so tun, als ob, one with aussehen, als ob and one short form with als."
+    },
+    "de": {
+     "t": "Als ob und als wenn",
+     "g": "Du machst irreale Vergleiche: Er tut so, als ob er alles wüsste.",
+     "p": [
+      "Als ob / als wenn + Konjunktiv II, Verb am Ende: Sie lacht, als ob sie nichts gehört hätte.",
+      "Häufige Rahmen: so tun, als ob...; aussehen, als ob...; sich anfühlen, als ob...",
+      "Kurzform mit als + Verb direkt danach: Er tut so, als wüsste er alles. Es sieht aus, als würde es regnen."
+     ],
+     "q": "Kennst du jemanden, der so tut, als ob er alles wüsste? Beschreib eine lustige Situation mit als ob.",
+     "c": "Schreib drei Sätze: mit so tun, als ob, mit aussehen, als ob und eine Kurzform mit als."
+    },
+    "es": {
+     "t": "Als ob y als wenn",
+     "g": "Haz comparaciones irreales: Er tut so, als ob er alles wüsste (como si lo supiera todo).",
+     "p": [
+      "Als ob / als wenn + Konjunktiv II, verbo al final: Sie lacht, als ob sie nichts gehört hätte.",
+      "Marcos frecuentes: so tun, als ob... (hacer como si); aussehen, als ob...; sich anfühlen, als ob...",
+      "Forma corta con als + verbo justo detrás: Er tut so, als wüsste er alles. Es sieht aus, als würde es regnen."
+     ],
+     "q": "¿Conoces a alguien que hace como si lo supiera todo? Describe una situación divertida con als ob.",
+     "c": "Escribe tres frases: con so tun, als ob, con aussehen, als ob y una forma corta con als."
+    },
+    "fr": {
+     "t": "Als ob et als wenn",
+     "g": "Faire des comparaisons irréelles : Er tut so, als ob er alles wüsste (comme s'il savait tout).",
+     "p": [
+      "Als ob / als wenn + Konjunktiv II, verbe à la fin : Sie lacht, als ob sie nichts gehört hätte.",
+      "Cadres fréquents : so tun, als ob... (faire comme si) ; aussehen, als ob... ; sich anfühlen, als ob...",
+      "Forme courte avec als + verbe juste après : Er tut so, als wüsste er alles. Es sieht aus, als würde es regnen."
+     ],
+     "q": "Connais-tu quelqu'un qui fait comme s'il savait tout ? Décris une situation drôle avec als ob.",
+     "c": "Écris trois phrases : avec so tun, als ob, avec aussehen, als ob et une forme courte avec als."
+    },
+    "it": {
+     "t": "Als ob e als wenn",
+     "g": "Fai paragoni irreali: Er tut so, als ob er alles wüsste (come se sapesse tutto).",
+     "p": [
+      "Als ob / als wenn + Konjunktiv II, verbo in fondo: Sie lacht, als ob sie nichts gehört hätte.",
+      "Strutture frequenti: so tun, als ob... (fare finta che); aussehen, als ob...; sich anfühlen, als ob...",
+      "Forma breve con als + verbo subito dopo: Er tut so, als wüsste er alles. Es sieht aus, als würde es regnen."
+     ],
+     "q": "Conosci qualcuno che fa come se sapesse tutto? Descrivi una situazione buffa con als ob.",
+     "c": "Scrivi tre frasi: con so tun, als ob, con aussehen, als ob e una forma breve con als."
+    },
+    "pt": {
+     "t": "Als ob e als wenn",
+     "g": "Fazer comparações irreais: Er tut so, als ob er alles wüsste (como se soubesse tudo).",
+     "p": [
+      "Als ob / als wenn + Konjunktiv II, verbo no fim: Sie lacht, als ob sie nichts gehört hätte.",
+      "Estruturas frequentes: so tun, als ob... (fingir que); aussehen, als ob...; sich anfühlen, als ob...",
+      "Forma curta com als + verbo logo a seguir: Er tut so, als wüsste er alles. Es sieht aus, als würde es regnen."
+     ],
+     "q": "Conheces alguém que faz de conta que sabe tudo? Descreve uma situação engraçada com als ob.",
+     "c": "Escreve três frases: com so tun, als ob, com aussehen, als ob e uma forma curta com als."
+    },
+    "pt_BR": {
+     "t": "Als ob e als wenn",
+     "g": "Fazer comparações irreais: Er tut so, als ob er alles wüsste (como se soubesse tudo).",
+     "p": [
+      "Als ob / als wenn + Konjunktiv II, verbo no final: Sie lacht, als ob sie nichts gehört hätte.",
+      "Estruturas frequentes: so tun, als ob... (fingir que); aussehen, als ob...; sich anfühlen, als ob...",
+      "Forma curta com als + verbo logo depois: Er tut so, als wüsste er alles. Es sieht aus, als würde es regnen."
+     ],
+     "q": "Você conhece alguém que age como se soubesse tudo? Descreva uma situação engraçada com als ob.",
+     "c": "Escreva três frases: com so tun, als ob, com aussehen, als ob e uma forma curta com als."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "so tun, als ob",
+      "ex": "Er tut so, als ob er mich nicht sehen würde."
+     },
+     {
+      "w": "aussehen, als ob",
+      "ex": "Du siehst aus, als ob du gut geschlafen hättest."
+     },
+     {
+      "w": "sich anfühlen, als ob",
+      "ex": "Es fühlt sich an, als ob Sommer wäre."
+     },
+     {
+      "w": "als wenn",
+      "ex": "Sie redet, als wenn sie die Chefin wäre."
+     },
+     {
+      "w": "als + Verb",
+      "ex": "Er lächelt, als hätte er im Lotto gewonnen."
+     },
+     {
+      "w": "klingen, als ob",
+      "ex": "Das klingt, als ob es spannend wäre."
+     }
+    ],
+    "gram": "Irrealer Vergleich: als ob/als wenn + Konjunktiv II, Verb am Ende; Kurzform: als + Verb (als wüsste er alles)."
+   }
+  },
+  {
+   "d": 193,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Relative clauses with prepositions",
+     "g": "Add a preposition to relative clauses: die Stadt, in der ich wohne; der Freund, mit dem ich reise.",
+     "p": [
+      "The preposition comes first, then the relative pronoun in the case it requires: mit + dem, für + den, in + der.",
+      "Gender and number come from the noun: der Freund > mit dem, die Freundin > mit der, die Leute > mit denen.",
+      "The verb still goes to the end: Das ist das Buch, von dem ich dir erzählt habe."
+     ],
+     "q": "Describe your town with a relative clause: Das ist die Stadt, in der ich... Who is the person mit dem/der du am meisten sprichst?",
+     "c": "Write five sentences with in der, mit dem, für den, über das and von denen."
+    },
+    "de": {
+     "t": "Relativsätze mit Präpositionen",
+     "g": "Du baust Relativsätze mit Präposition: die Stadt, in der ich wohne; der Freund, mit dem ich reise.",
+     "p": [
+      "Erst die Präposition, dann das Relativpronomen im passenden Kasus: mit + dem, für + den, in + der.",
+      "Genus und Numerus kommen vom Nomen: der Freund > mit dem, die Freundin > mit der, die Leute > mit denen.",
+      "Das Verb steht weiter am Ende: Das ist das Buch, von dem ich dir erzählt habe."
+     ],
+     "q": "Beschreib deine Stadt mit einem Relativsatz: Das ist die Stadt, in der ich... Mit wem sprichst du am meisten?",
+     "c": "Schreib fünf Sätze mit in der, mit dem, für den, über das und von denen."
+    },
+    "es": {
+     "t": "Relativas con preposición",
+     "g": "Añade una preposición a las relativas: die Stadt, in der ich wohne; der Freund, mit dem ich reise.",
+     "p": [
+      "Primero la preposición, luego el pronombre relativo en el caso que pide: mit + dem, für + den, in + der.",
+      "Género y número vienen del sustantivo: der Freund > mit dem, die Freundin > mit der, die Leute > mit denen.",
+      "El verbo sigue al final: Das ist das Buch, von dem ich dir erzählt habe."
+     ],
+     "q": "Describe tu ciudad con una relativa: Das ist die Stadt, in der ich... ¿Con quién hablas más? Usa mit dem/der.",
+     "c": "Escribe cinco frases con in der, mit dem, für den, über das y von denen."
+    },
+    "fr": {
+     "t": "Relatives avec préposition",
+     "g": "Ajouter une préposition aux relatives : die Stadt, in der ich wohne ; der Freund, mit dem ich reise.",
+     "p": [
+      "D'abord la préposition, puis le pronom relatif au cas qu'elle exige : mit + dem, für + den, in + der.",
+      "Genre et nombre viennent du nom : der Freund > mit dem, die Freundin > mit der, die Leute > mit denen.",
+      "Le verbe reste à la fin : Das ist das Buch, von dem ich dir erzählt habe."
+     ],
+     "q": "Décris ta ville avec une relative : Das ist die Stadt, in der ich... Avec qui parles-tu le plus ? Utilise mit dem/der.",
+     "c": "Écris cinq phrases avec in der, mit dem, für den, über das et von denen."
+    },
+    "it": {
+     "t": "Relative con preposizione",
+     "g": "Aggiungi una preposizione alle relative: die Stadt, in der ich wohne; der Freund, mit dem ich reise.",
+     "p": [
+      "Prima la preposizione, poi il pronome relativo nel caso richiesto: mit + dem, für + den, in + der.",
+      "Genere e numero vengono dal nome: der Freund > mit dem, die Freundin > mit der, die Leute > mit denen.",
+      "Il verbo resta in fondo: Das ist das Buch, von dem ich dir erzählt habe."
+     ],
+     "q": "Descrivi la tua città con una relativa: Das ist die Stadt, in der ich... Con chi parli di più? Usa mit dem/der.",
+     "c": "Scrivi cinque frasi con in der, mit dem, für den, über das e von denen."
+    },
+    "pt": {
+     "t": "Relativas com preposição",
+     "g": "Juntar uma preposição às relativas: die Stadt, in der ich wohne; der Freund, mit dem ich reise.",
+     "p": [
+      "Primeiro a preposição, depois o pronome relativo no caso que ela pede: mit + dem, für + den, in + der.",
+      "Género e número vêm do nome: der Freund > mit dem, die Freundin > mit der, die Leute > mit denen.",
+      "O verbo continua no fim: Das ist das Buch, von dem ich dir erzählt habe."
+     ],
+     "q": "Descreve a tua cidade com uma relativa: Das ist die Stadt, in der ich... Com quem falas mais? Usa mit dem/der.",
+     "c": "Escreve cinco frases com in der, mit dem, für den, über das e von denen."
+    },
+    "pt_BR": {
+     "t": "Relativas com preposição",
+     "g": "Juntar uma preposição às relativas: die Stadt, in der ich wohne; der Freund, mit dem ich reise.",
+     "p": [
+      "Primeiro a preposição, depois o pronome relativo no caso que ela pede: mit + dem, für + den, in + der.",
+      "Gênero e número vêm do substantivo: der Freund > mit dem, die Freundin > mit der, die Leute > mit denen.",
+      "O verbo continua no final: Das ist das Buch, von dem ich dir erzählt habe."
+     ],
+     "q": "Descreva sua cidade com uma relativa: Das ist die Stadt, in der ich... Com quem você fala mais? Use mit dem/der.",
+     "c": "Escreva cinco frases com in der, mit dem, für den, über das e von denen."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "in der",
+      "ex": "Das ist die Stadt, in der ich geboren bin."
+     },
+     {
+      "w": "mit dem",
+      "ex": "Der Freund, mit dem ich reise, spricht Italienisch."
+     },
+     {
+      "w": "für den",
+      "ex": "Das ist der Kurs, für den ich mich angemeldet habe."
+     },
+     {
+      "w": "über das",
+      "ex": "Das Thema, über das wir sprechen, ist wichtig."
+     },
+     {
+      "w": "von denen",
+      "ex": "Die Leute, von denen ich erzählt habe, kommen heute."
+     },
+     {
+      "w": "bei der",
+      "ex": "Die Firma, bei der sie arbeitet, ist sehr bekannt."
+     }
+    ],
+    "gram": "Relativsatz mit Präposition: Präposition + Relativpronomen im geforderten Kasus, Verb am Ende (die Stadt, in der ich wohne)."
+   }
+  },
+  {
+   "d": 194,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Relative words wo and was",
+     "g": "Use was and wo as relative words: Alles, was ich weiß; die Stadt, wo ich lebe.",
+     "p": [
+      "Was follows alles, nichts, etwas, vieles, das and superlatives: Das Beste, was ich je gegessen habe.",
+      "Was also refers to a whole clause: Er hat angerufen, was mich sehr gefreut hat.",
+      "Wo can replace in dem/in der for places and times: die Stadt, wo ich lebe; in dem Moment, wo..."
+     ],
+     "q": "Tell me: Was ist das Beste, was du je gegessen hast? And describe a place wo du gern bist.",
+     "c": "Write two sentences with alles/nichts, was, one with a superlative + was and two with wo."
+    },
+    "de": {
+     "t": "Relativwörter wo und was",
+     "g": "Du benutzt was und wo als Relativwörter: Alles, was ich weiß; die Stadt, wo ich lebe.",
+     "p": [
+      "Was steht nach alles, nichts, etwas, vieles, das und nach Superlativen: Das Beste, was ich je gegessen habe.",
+      "Was kann sich auf einen ganzen Satz beziehen: Er hat angerufen, was mich sehr gefreut hat.",
+      "Wo kann bei Orten und Zeiten in dem/in der ersetzen: die Stadt, wo ich lebe; in dem Moment, wo..."
+     ],
+     "q": "Sag mal: Was ist das Beste, was du je gegessen hast? Und beschreib einen Ort, wo du gern bist.",
+     "c": "Schreib zwei Sätze mit alles/nichts, was, einen mit Superlativ + was und zwei mit wo."
+    },
+    "es": {
+     "t": "Los relativos wo y was",
+     "g": "Usa was y wo como relativos: Alles, was ich weiß (todo lo que sé); die Stadt, wo ich lebe.",
+     "p": [
+      "Was va tras alles, nichts, etwas, vieles, das y superlativos: Das Beste, was ich je gegessen habe.",
+      "Was también se refiere a toda una frase (lo cual): Er hat angerufen, was mich sehr gefreut hat.",
+      "Wo puede sustituir a in dem/in der para lugares y momentos: die Stadt, wo ich lebe; in dem Moment, wo..."
+     ],
+     "q": "Dime: Was ist das Beste, was du je gegessen hast? Y describe un lugar wo du gern bist.",
+     "c": "Escribe dos frases con alles/nichts, was, una con superlativo + was y dos con wo."
+    },
+    "fr": {
+     "t": "Les relatifs wo et was",
+     "g": "Utiliser was et wo comme relatifs : Alles, was ich weiß (tout ce que je sais) ; die Stadt, wo ich lebe.",
+     "p": [
+      "Was suit alles, nichts, etwas, vieles, das et les superlatifs : Das Beste, was ich je gegessen habe.",
+      "Was peut reprendre toute une phrase (ce qui) : Er hat angerufen, was mich sehr gefreut hat.",
+      "Wo peut remplacer in dem/in der pour un lieu ou un moment : die Stadt, wo ich lebe ; in dem Moment, wo..."
+     ],
+     "q": "Dis-moi : Was ist das Beste, was du je gegessen hast ? Et décris un endroit wo du gern bist.",
+     "c": "Écris deux phrases avec alles/nichts, was, une avec superlatif + was et deux avec wo."
+    },
+    "it": {
+     "t": "I relativi wo e was",
+     "g": "Usi was e wo come relativi: Alles, was ich weiß (tutto ciò che so); die Stadt, wo ich lebe.",
+     "p": [
+      "Was segue alles, nichts, etwas, vieles, das e i superlativi: Das Beste, was ich je gegessen habe.",
+      "Was può riferirsi a un'intera frase (il che): Er hat angerufen, was mich sehr gefreut hat.",
+      "Wo può sostituire in dem/in der per luoghi e momenti: die Stadt, wo ich lebe; in dem Moment, wo..."
+     ],
+     "q": "Dimmi: Was ist das Beste, was du je gegessen hast? E descrivi un posto wo du gern bist.",
+     "c": "Scrivi due frasi con alles/nichts, was, una con superlativo + was e due con wo."
+    },
+    "pt": {
+     "t": "Os relativos wo e was",
+     "g": "Usar was e wo como relativos: Alles, was ich weiß (tudo o que sei); die Stadt, wo ich lebe.",
+     "p": [
+      "Was vem depois de alles, nichts, etwas, vieles, das e superlativos: Das Beste, was ich je gegessen habe.",
+      "Was também retoma uma frase inteira (o que): Er hat angerufen, was mich sehr gefreut hat.",
+      "Wo pode substituir in dem/in der para lugares e momentos: die Stadt, wo ich lebe; in dem Moment, wo..."
+     ],
+     "q": "Diz-me: Was ist das Beste, was du je gegessen hast? E descreve um sítio wo du gern bist.",
+     "c": "Escreve duas frases com alles/nichts, was, uma com superlativo + was e duas com wo."
+    },
+    "pt_BR": {
+     "t": "Os relativos wo e was",
+     "g": "Usar was e wo como relativos: Alles, was ich weiß (tudo o que sei); die Stadt, wo ich lebe.",
+     "p": [
+      "Was vem depois de alles, nichts, etwas, vieles, das e superlativos: Das Beste, was ich je gegessen habe.",
+      "Was também retoma uma frase inteira (o que): Er hat angerufen, was mich sehr gefreut hat.",
+      "Wo pode substituir in dem/in der para lugares e momentos: die Stadt, wo ich lebe; in dem Moment, wo..."
+     ],
+     "q": "Me diga: Was ist das Beste, was du je gegessen hast? E descreva um lugar wo du gern bist.",
+     "c": "Escreva duas frases com alles/nichts, was, uma com superlativo + was e duas com wo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "alles, was",
+      "ex": "Alles, was du brauchst, ist ein bisschen Geduld."
+     },
+     {
+      "w": "nichts, was",
+      "ex": "Es gibt nichts, was ich lieber mache."
+     },
+     {
+      "w": "etwas, was",
+      "ex": "Ich habe etwas gefunden, was dir gefallen wird."
+     },
+     {
+      "w": "das Beste, was",
+      "ex": "Das ist das Beste, was mir heute passiert ist."
+     },
+     {
+      "w": "die Stadt, wo",
+      "ex": "Wien ist die Stadt, wo ich studiert habe."
+     },
+     {
+      "w": "..., was mich freut",
+      "ex": "Sie hat den Test bestanden, was mich sehr freut."
+     }
+    ],
+    "gram": "Relativwort was nach alles, nichts, etwas, das, Superlativ oder ganzem Satz; wo für Orte und Zeiten (die Stadt, wo...)."
+   }
+  },
+  {
+   "d": 195,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Review: passive and Konjunktiv II",
+     "g": "Recap passive forms, the past subjunctive and relative clauses in one conversation.",
+     "p": [
+      "Passive: wird gemacht, wurde gemacht, ist gemacht worden, muss gemacht werden; alternatives man, lässt sich, -bar.",
+      "Konjunktiv II past: hätte/wäre + Partizip II, hätte ... können/sollen, Hätte ich nur..., als ob + Konjunktiv II.",
+      "Relative clauses: mit dem, in der, von denen; alles, was...; die Stadt, wo..."
+     ],
+     "q": "Tell me about a building in your town: when was it built, what would you have changed, and who is the person mit dem du dort warst?",
+     "c": "Write a short text (6 sentences) with one passive, one hätte ... sollen, one als ob and one relative clause with a preposition."
+    },
+    "de": {
+     "t": "Wiederholung: Passiv und Konjunktiv II",
+     "g": "Du wiederholst Passiv, Konjunktiv II der Vergangenheit und Relativsätze in einem Gespräch.",
+     "p": [
+      "Passiv: wird gemacht, wurde gemacht, ist gemacht worden, muss gemacht werden; Ersatz: man, lässt sich, -bar.",
+      "Konjunktiv II Vergangenheit: hätte/wäre + Partizip II, hätte ... können/sollen, Hätte ich nur..., als ob.",
+      "Relativsätze: mit dem, in der, von denen; alles, was...; die Stadt, wo..."
+     ],
+     "q": "Erzähl von einem Gebäude in deiner Stadt: Wann wurde es gebaut, was hättest du anders gemacht, mit wem warst du dort?",
+     "c": "Schreib einen kurzen Text (6 Sätze) mit einem Passiv, hätte ... sollen, als ob und einem Relativsatz mit Präposition."
+    },
+    "es": {
+     "t": "Repaso: pasiva y Konjunktiv II",
+     "g": "Repasa la pasiva, el Konjunktiv II en pasado y las relativas en una conversación.",
+     "p": [
+      "Pasiva: wird gemacht, wurde gemacht, ist gemacht worden, muss gemacht werden; alternativas man, lässt sich, -bar.",
+      "Konjunktiv II pasado: hätte/wäre + Partizip II, hätte ... können/sollen, Hätte ich nur..., als ob.",
+      "Relativas: mit dem, in der, von denen; alles, was...; die Stadt, wo..."
+     ],
+     "q": "Háblame de un edificio de tu ciudad: ¿cuándo se construyó, qué habrías cambiado y con quién estuviste allí?",
+     "c": "Escribe un texto corto (6 frases) con una pasiva, un hätte ... sollen, un als ob y una relativa con preposición."
+    },
+    "fr": {
+     "t": "Révision : passif et Konjunktiv II",
+     "g": "Réviser le passif, le Konjunktiv II passé et les relatives dans une conversation.",
+     "p": [
+      "Passif : wird gemacht, wurde gemacht, ist gemacht worden, muss gemacht werden ; alternatives man, lässt sich, -bar.",
+      "Konjunktiv II passé : hätte/wäre + Partizip II, hätte ... können/sollen, Hätte ich nur..., als ob.",
+      "Relatives : mit dem, in der, von denen ; alles, was... ; die Stadt, wo..."
+     ],
+     "q": "Parle-moi d'un bâtiment de ta ville : quand a-t-il été construit, qu'aurais-tu changé, avec qui y étais-tu ?",
+     "c": "Écris un court texte (6 phrases) avec un passif, un hätte ... sollen, un als ob et une relative avec préposition."
+    },
+    "it": {
+     "t": "Ripasso: passivo e Konjunktiv II",
+     "g": "Ripassi passivo, Konjunktiv II passato e relative in un'unica conversazione.",
+     "p": [
+      "Passivo: wird gemacht, wurde gemacht, ist gemacht worden, muss gemacht werden; alternative man, lässt sich, -bar.",
+      "Konjunktiv II passato: hätte/wäre + Partizip II, hätte ... können/sollen, Hätte ich nur..., als ob.",
+      "Relative: mit dem, in der, von denen; alles, was...; die Stadt, wo..."
+     ],
+     "q": "Parlami di un edificio della tua città: quando è stato costruito, cosa avresti cambiato, con chi ci sei stato?",
+     "c": "Scrivi un breve testo (6 frasi) con un passivo, un hätte ... sollen, un als ob e una relativa con preposizione."
+    },
+    "pt": {
+     "t": "Revisão: passiva e Konjunktiv II",
+     "g": "Rever a passiva, o Konjunktiv II no passado e as relativas numa só conversa.",
+     "p": [
+      "Passiva: wird gemacht, wurde gemacht, ist gemacht worden, muss gemacht werden; alternativas man, lässt sich, -bar.",
+      "Konjunktiv II no passado: hätte/wäre + Partizip II, hätte ... können/sollen, Hätte ich nur..., als ob.",
+      "Relativas: mit dem, in der, von denen; alles, was...; die Stadt, wo..."
+     ],
+     "q": "Fala-me de um edifício da tua cidade: quando foi construído, o que terias mudado e com quem lá estiveste?",
+     "c": "Escreve um texto curto (6 frases) com uma passiva, um hätte ... sollen, um als ob e uma relativa com preposição."
+    },
+    "pt_BR": {
+     "t": "Revisão: passiva e Konjunktiv II",
+     "g": "Revisar a passiva, o Konjunktiv II no passado e as relativas numa só conversa.",
+     "p": [
+      "Passiva: wird gemacht, wurde gemacht, ist gemacht worden, muss gemacht werden; alternativas man, lässt sich, -bar.",
+      "Konjunktiv II no passado: hätte/wäre + Partizip II, hätte ... können/sollen, Hätte ich nur..., als ob.",
+      "Relativas: mit dem, in der, von denen; alles, was...; die Stadt, wo..."
+     ],
+     "q": "Me fale de um prédio da sua cidade: quando foi construído, o que você teria mudado e com quem esteve lá?",
+     "c": "Escreva um texto curto (6 frases) com uma passiva, um hätte ... sollen, um als ob e uma relativa com preposição."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "wurde gebaut",
+      "ex": "Das Rathaus wurde vor hundert Jahren gebaut."
+     },
+     {
+      "w": "muss renoviert werden",
+      "ex": "Die Brücke muss bald renoviert werden."
+     },
+     {
+      "w": "lässt sich",
+      "ex": "Das lässt sich leicht erklären."
+     },
+     {
+      "w": "hätte ... sollen",
+      "ex": "Wir hätten mehr Fotos machen sollen."
+     },
+     {
+      "w": "als ob",
+      "ex": "Es sah aus, als ob das Haus ganz neu wäre."
+     },
+     {
+      "w": "mit dem",
+      "ex": "Der Kollege, mit dem ich dort war, kennt die Geschichte."
+     }
+    ],
+    "gram": "B1-Mix: Passiv (wird/wurde + Partizip II), Konjunktiv II Vergangenheit (hätte/wäre + Partizip II), Relativsatz mit Präposition."
+   }
+  },
+  {
+   "d": 196,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Genitive in depth",
+     "g": "Use the genitive with confidence: des Landes, eines Freundes and genitive prepositions.",
+     "p": [
+      "Masculine and neuter: des/eines + -s or -es on the noun: des Landes, eines Freundes, des Autos. Feminine and plural: der.",
+      "Adjectives in the genitive end in -en: die Hauptstadt des schönen Landes, die Meinung der neuen Kollegen.",
+      "Prepositions with genitive: wegen, trotz, während, statt, innerhalb, außerhalb: während des Urlaubs."
+     ],
+     "q": "Tell me about your country with the genitive: Was ist die Hauptstadt deines Landes? What happens während des Winters?",
+     "c": "Write five sentences with wegen, trotz, während, statt and innerhalb + genitive."
+    },
+    "de": {
+     "t": "Der Genitiv im Detail",
+     "g": "Du benutzt den Genitiv sicher: des Landes, eines Freundes und Präpositionen mit Genitiv.",
+     "p": [
+      "Maskulin und neutral: des/eines + -s oder -es am Nomen: des Landes, eines Freundes, des Autos. Feminin und Plural: der.",
+      "Adjektive im Genitiv enden auf -en: die Hauptstadt des schönen Landes, die Meinung der neuen Kollegen.",
+      "Präpositionen mit Genitiv: wegen, trotz, während, statt, innerhalb, außerhalb: während des Urlaubs."
+     ],
+     "q": "Erzähl mit Genitiv von deinem Land: Was ist die Hauptstadt deines Landes? Was passiert während des Winters?",
+     "c": "Schreib fünf Sätze mit wegen, trotz, während, statt und innerhalb + Genitiv."
+    },
+    "es": {
+     "t": "El genitivo a fondo",
+     "g": "Usa el genitivo con seguridad: des Landes, eines Freundes y preposiciones de genitivo.",
+     "p": [
+      "Masculino y neutro: des/eines + -s o -es en el sustantivo: des Landes, eines Freundes. Femenino y plural: der.",
+      "Los adjetivos en genitivo terminan en -en: die Hauptstadt des schönen Landes, die Meinung der neuen Kollegen.",
+      "Preposiciones con genitivo: wegen, trotz, während, statt, innerhalb, außerhalb: während des Urlaubs."
+     ],
+     "q": "Háblame de tu país con genitivo: Was ist die Hauptstadt deines Landes? ¿Qué pasa während des Winters?",
+     "c": "Escribe cinco frases con wegen, trotz, während, statt e innerhalb + genitivo."
+    },
+    "fr": {
+     "t": "Le génitif en détail",
+     "g": "Utiliser le génitif avec assurance : des Landes, eines Freundes et les prépositions au génitif.",
+     "p": [
+      "Masculin et neutre : des/eines + -s ou -es sur le nom : des Landes, eines Freundes. Féminin et pluriel : der.",
+      "Au génitif, les adjectifs finissent en -en : die Hauptstadt des schönen Landes, die Meinung der neuen Kollegen.",
+      "Prépositions avec génitif : wegen, trotz, während, statt, innerhalb, außerhalb : während des Urlaubs."
+     ],
+     "q": "Parle de ton pays au génitif : Was ist die Hauptstadt deines Landes ? Que se passe-t-il während des Winters ?",
+     "c": "Écris cinq phrases avec wegen, trotz, während, statt et innerhalb + génitif."
+    },
+    "it": {
+     "t": "Il genitivo a fondo",
+     "g": "Usi il genitivo con sicurezza: des Landes, eines Freundes e le preposizioni col genitivo.",
+     "p": [
+      "Maschile e neutro: des/eines + -s o -es sul nome: des Landes, eines Freundes. Femminile e plurale: der.",
+      "Gli aggettivi al genitivo finiscono in -en: die Hauptstadt des schönen Landes, die Meinung der neuen Kollegen.",
+      "Preposizioni col genitivo: wegen, trotz, während, statt, innerhalb, außerhalb: während des Urlaubs."
+     ],
+     "q": "Parlami del tuo paese col genitivo: Was ist die Hauptstadt deines Landes? Cosa succede während des Winters?",
+     "c": "Scrivi cinque frasi con wegen, trotz, während, statt e innerhalb + genitivo."
+    },
+    "pt": {
+     "t": "O genitivo a fundo",
+     "g": "Usar o genitivo com segurança: des Landes, eines Freundes e preposições com genitivo.",
+     "p": [
+      "Masculino e neutro: des/eines + -s ou -es no nome: des Landes, eines Freundes. Feminino e plural: der.",
+      "No genitivo, os adjetivos acabam em -en: die Hauptstadt des schönen Landes, die Meinung der neuen Kollegen.",
+      "Preposições com genitivo: wegen, trotz, während, statt, innerhalb, außerhalb: während des Urlaubs."
+     ],
+     "q": "Fala do teu país com genitivo: Was ist die Hauptstadt deines Landes? O que acontece während des Winters?",
+     "c": "Escreve cinco frases com wegen, trotz, während, statt e innerhalb + genitivo."
+    },
+    "pt_BR": {
+     "t": "O genitivo a fundo",
+     "g": "Usar o genitivo com segurança: des Landes, eines Freundes e preposições com genitivo.",
+     "p": [
+      "Masculino e neutro: des/eines + -s ou -es no substantivo: des Landes, eines Freundes. Feminino e plural: der.",
+      "No genitivo, os adjetivos terminam em -en: die Hauptstadt des schönen Landes, die Meinung der neuen Kollegen.",
+      "Preposições com genitivo: wegen, trotz, während, statt, innerhalb, außerhalb: während des Urlaubs."
+     ],
+     "q": "Fale do seu país com genitivo: Was ist die Hauptstadt deines Landes? O que acontece während des Winters?",
+     "c": "Escreva cinco frases com wegen, trotz, während, statt e innerhalb + genitivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "des Landes",
+      "ex": "Berlin ist die Hauptstadt des Landes."
+     },
+     {
+      "w": "eines Freundes",
+      "ex": "Ich wohne in der Wohnung eines Freundes."
+     },
+     {
+      "w": "wegen",
+      "ex": "Wegen des Regens bleiben wir zu Hause."
+     },
+     {
+      "w": "trotz",
+      "ex": "Trotz des Wetters war die Stimmung gut."
+     },
+     {
+      "w": "während",
+      "ex": "Während des Urlaubs habe ich viel gelesen."
+     },
+     {
+      "w": "innerhalb",
+      "ex": "Bitte antworten Sie innerhalb einer Woche."
+     }
+    ],
+    "gram": "Genitiv: des/eines + Nomen-(e)s (mask./neutr.), der (fem./Plural); Adjektiv -en; wegen, trotz, während, statt + Genitiv."
+   }
+  },
+  {
+   "d": 197,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Adjectives as nouns",
+     "g": "Turn adjectives into nouns: der Deutsche, die Bekannte, etwas Neues, nichts Besonderes.",
+     "p": [
+      "Adjective nouns are capitalised but keep adjective endings: der Deutsche, ein Deutscher, die Deutschen.",
+      "Gender shows the person: der Bekannte (man), die Bekannte (woman), die Bekannten (people). Also: der Erwachsene.",
+      "After etwas, nichts, viel, wenig: neuter with -es: etwas Neues, nichts Besonderes, viel Gutes. After alles: alles Gute."
+     ],
+     "q": "What did you do yesterday? Was it etwas Neues or nichts Besonderes? Tell me about a Bekannter or Bekannte you met.",
+     "c": "Write six phrases: der/ein Bekannte(r), die Jugendlichen, etwas Schönes, nichts Neues, viel Gutes, alles Gute."
+    },
+    "de": {
+     "t": "Adjektive als Nomen",
+     "g": "Du machst aus Adjektiven Nomen: der Deutsche, die Bekannte, etwas Neues, nichts Besonderes.",
+     "p": [
+      "Nominalisierte Adjektive schreibt man groß, sie behalten die Adjektivendung: der Deutsche, ein Deutscher, die Deutschen.",
+      "Das Genus zeigt die Person: der Bekannte (Mann), die Bekannte (Frau), die Bekannten. Auch: der Erwachsene.",
+      "Nach etwas, nichts, viel, wenig: neutral mit -es: etwas Neues, nichts Besonderes, viel Gutes. Nach alles: alles Gute."
+     ],
+     "q": "Was hast du gestern gemacht? War es etwas Neues oder nichts Besonderes? Erzähl von einem Bekannten oder einer Bekannten.",
+     "c": "Schreib sechs Ausdrücke: ein Bekannter, die Jugendlichen, etwas Schönes, nichts Neues, viel Gutes, alles Gute."
+    },
+    "es": {
+     "t": "Adjetivos sustantivados",
+     "g": "Convierte adjetivos en sustantivos: der Deutsche, die Bekannte, etwas Neues, nichts Besonderes.",
+     "p": [
+      "Se escriben con mayúscula pero conservan la terminación del adjetivo: der Deutsche, ein Deutscher, die Deutschen.",
+      "El género indica la persona: der Bekannte (un conocido), die Bekannte (una conocida), die Bekannten. También der Erwachsene.",
+      "Tras etwas, nichts, viel, wenig: neutro en -es: etwas Neues (algo nuevo), nichts Besonderes. Tras alles: alles Gute."
+     ],
+     "q": "¿Qué hiciste ayer? ¿Fue etwas Neues o nichts Besonderes? Háblame de un Bekannter o una Bekannte.",
+     "c": "Escribe seis expresiones: ein Bekannter, die Jugendlichen, etwas Schönes, nichts Neues, viel Gutes, alles Gute."
+    },
+    "fr": {
+     "t": "Les adjectifs substantivés",
+     "g": "Transformer des adjectifs en noms : der Deutsche, die Bekannte, etwas Neues, nichts Besonderes.",
+     "p": [
+      "Majuscule, mais terminaisons d'adjectif : der Deutsche, ein Deutscher, die Deutschen.",
+      "Le genre indique la personne : der Bekannte (un ami), die Bekannte (une amie), die Bekannten. Aussi : der Erwachsene.",
+      "Après etwas, nichts, viel, wenig : neutre en -es : etwas Neues (du nouveau), nichts Besonderes. Après alles : alles Gute."
+     ],
+     "q": "Qu'as-tu fait hier ? C'était etwas Neues ou nichts Besonderes ? Parle-moi d'un Bekannter ou d'une Bekannte.",
+     "c": "Écris six expressions : ein Bekannter, die Jugendlichen, etwas Schönes, nichts Neues, viel Gutes, alles Gute."
+    },
+    "it": {
+     "t": "Aggettivi sostantivati",
+     "g": "Trasformi aggettivi in nomi: der Deutsche, die Bekannte, etwas Neues, nichts Besonderes.",
+     "p": [
+      "Si scrivono maiuscoli ma tengono la desinenza dell'aggettivo: der Deutsche, ein Deutscher, die Deutschen.",
+      "Il genere indica la persona: der Bekannte (un conoscente), die Bekannte (una conoscente), die Bekannten. Anche der Erwachsene.",
+      "Dopo etwas, nichts, viel, wenig: neutro in -es: etwas Neues (qualcosa di nuovo), nichts Besonderes. Dopo alles: alles Gute."
+     ],
+     "q": "Che cosa hai fatto ieri? Era etwas Neues o nichts Besonderes? Parlami di un Bekannter o di una Bekannte.",
+     "c": "Scrivi sei espressioni: ein Bekannter, die Jugendlichen, etwas Schönes, nichts Neues, viel Gutes, alles Gute."
+    },
+    "pt": {
+     "t": "Adjetivos como substantivos",
+     "g": "Transformar adjetivos em substantivos: der Deutsche, die Bekannte, etwas Neues, nichts Besonderes.",
+     "p": [
+      "Escrevem-se com maiúscula mas mantêm a terminação do adjetivo: der Deutsche, ein Deutscher, die Deutschen.",
+      "O género indica a pessoa: der Bekannte (um conhecido), die Bekannte (uma conhecida), die Bekannten. Também der Erwachsene.",
+      "Depois de etwas, nichts, viel, wenig: neutro em -es: etwas Neues (algo novo), nichts Besonderes. Depois de alles: alles Gute."
+     ],
+     "q": "O que fizeste ontem? Foi etwas Neues ou nichts Besonderes? Fala-me de um Bekannter ou de uma Bekannte.",
+     "c": "Escreve seis expressões: ein Bekannter, die Jugendlichen, etwas Schönes, nichts Neues, viel Gutes, alles Gute."
+    },
+    "pt_BR": {
+     "t": "Adjetivos como substantivos",
+     "g": "Transformar adjetivos em substantivos: der Deutsche, die Bekannte, etwas Neues, nichts Besonderes.",
+     "p": [
+      "São escritos com maiúscula mas mantêm a terminação do adjetivo: der Deutsche, ein Deutscher, die Deutschen.",
+      "O gênero indica a pessoa: der Bekannte (um conhecido), die Bekannte (uma conhecida), die Bekannten. Também der Erwachsene.",
+      "Depois de etwas, nichts, viel, wenig: neutro em -es: etwas Neues (algo novo), nichts Besonderes. Depois de alles: alles Gute."
+     ],
+     "q": "O que você fez ontem? Foi etwas Neues ou nichts Besonderes? Me fale de um Bekannter ou de uma Bekannte.",
+     "c": "Escreva seis expressões: ein Bekannter, die Jugendlichen, etwas Schönes, nichts Neues, viel Gutes, alles Gute."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der/die Deutsche",
+      "ex": "Viele Deutsche fahren gern Fahrrad."
+     },
+     {
+      "w": "ein Bekannter",
+      "ex": "Gestern habe ich einen Bekannten im Park getroffen."
+     },
+     {
+      "w": "die Jugendlichen",
+      "ex": "Die Jugendlichen treffen sich am Wochenende im Jugendzentrum."
+     },
+     {
+      "w": "etwas Neues",
+      "ex": "Heute habe ich etwas Neues gelernt."
+     },
+     {
+      "w": "nichts Besonderes",
+      "ex": "Am Wochenende habe ich nichts Besonderes gemacht."
+     },
+     {
+      "w": "alles Gute",
+      "ex": "Alles Gute zum Geburtstag!"
+     }
+    ],
+    "gram": "Nominalisierte Adjektive: groß geschrieben, mit Adjektivendung (der Bekannte, ein Bekannter); etwas/nichts + -es (etwas Neues)."
+   }
+  },
+  {
+   "d": 198,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "N-declension",
+     "g": "Learn the weak masculine nouns: der Student, den Studenten, dem Kollegen.",
+     "p": [
+      "Some masculine nouns add -(e)n in every case except the nominative singular: der Student, den/dem/des Studenten.",
+      "Typical groups: people and animals in -e (der Kollege, der Junge, der Löwe) and foreign words in -ent, -ist, -ant (der Polizist).",
+      "Also der Mensch, der Herr (den Herrn), der Nachbar, der Name (des Namens). Mistakes here are very common, so practise!"
+     ],
+     "q": "Tell me about your colleagues and neighbours: Hast du einen netten Kollegen oder Nachbarn? What do you talk about mit ihm?",
+     "c": "Write six sentences using den Kollegen, dem Studenten, den Nachbarn, dem Herrn, den Menschen and den Jungen."
+    },
+    "de": {
+     "t": "N-Deklination",
+     "g": "Du lernst die schwachen maskulinen Nomen: der Student, den Studenten, dem Kollegen.",
+     "p": [
+      "Manche maskuline Nomen bekommen in allen Fällen außer Nominativ Singular -(e)n: der Student, den/dem/des Studenten.",
+      "Typische Gruppen: Personen und Tiere auf -e (der Kollege, der Junge, der Löwe) und Fremdwörter auf -ent, -ist, -ant (der Polizist).",
+      "Auch der Mensch, der Herr (den Herrn), der Nachbar, der Name (des Namens). Hier passieren viele Fehler, also üben!"
+     ],
+     "q": "Erzähl von deinen Kollegen und Nachbarn: Hast du einen netten Kollegen oder Nachbarn? Worüber sprichst du mit ihm?",
+     "c": "Schreib sechs Sätze mit den Kollegen, dem Studenten, den Nachbarn, dem Herrn, den Menschen und den Jungen."
+    },
+    "es": {
+     "t": "La declinación en -n",
+     "g": "Aprende los masculinos débiles: der Student, den Studenten, dem Kollegen.",
+     "p": [
+      "Algunos masculinos añaden -(e)n en todos los casos salvo el nominativo singular: der Student, den/dem/des Studenten.",
+      "Grupos típicos: personas y animales en -e (der Kollege, der Junge, der Löwe) y extranjerismos en -ent, -ist, -ant (der Polizist).",
+      "También der Mensch, der Herr (den Herrn), der Nachbar, der Name (des Namens). Aquí se cometen muchos errores: ¡practica!"
+     ],
+     "q": "Háblame de tus colegas y vecinos: Hast du einen netten Kollegen oder Nachbarn? ¿De qué hablas mit ihm?",
+     "c": "Escribe seis frases con den Kollegen, dem Studenten, den Nachbarn, dem Herrn, den Menschen y den Jungen."
+    },
+    "fr": {
+     "t": "La déclinaison en -n",
+     "g": "Apprendre les masculins faibles : der Student, den Studenten, dem Kollegen.",
+     "p": [
+      "Certains masculins prennent -(e)n à tous les cas sauf au nominatif singulier : der Student, den/dem/des Studenten.",
+      "Groupes typiques : personnes et animaux en -e (der Kollege, der Junge, der Löwe), mots étrangers en -ent, -ist, -ant (der Polizist).",
+      "Aussi der Mensch, der Herr (den Herrn), der Nachbar, der Name (des Namens). Les erreurs sont fréquentes : entraîne-toi !"
+     ],
+     "q": "Parle-moi de tes collègues et voisins : Hast du einen netten Kollegen oder Nachbarn ? De quoi parles-tu mit ihm ?",
+     "c": "Écris six phrases avec den Kollegen, dem Studenten, den Nachbarn, dem Herrn, den Menschen et den Jungen."
+    },
+    "it": {
+     "t": "La declinazione in -n",
+     "g": "Impari i maschili deboli: der Student, den Studenten, dem Kollegen.",
+     "p": [
+      "Alcuni maschili prendono -(e)n in tutti i casi tranne il nominativo singolare: der Student, den/dem/des Studenten.",
+      "Gruppi tipici: persone e animali in -e (der Kollege, der Junge, der Löwe) e parole straniere in -ent, -ist, -ant (der Polizist).",
+      "Anche der Mensch, der Herr (den Herrn), der Nachbar, der Name (des Namens). Qui si sbaglia spesso: esercitati!"
+     ],
+     "q": "Parlami di colleghi e vicini: Hast du einen netten Kollegen oder Nachbarn? Di cosa parli mit ihm?",
+     "c": "Scrivi sei frasi con den Kollegen, dem Studenten, den Nachbarn, dem Herrn, den Menschen e den Jungen."
+    },
+    "pt": {
+     "t": "A declinação em -n",
+     "g": "Aprender os masculinos fracos: der Student, den Studenten, dem Kollegen.",
+     "p": [
+      "Alguns masculinos levam -(e)n em todos os casos menos no nominativo singular: der Student, den/dem/des Studenten.",
+      "Grupos típicos: pessoas e animais em -e (der Kollege, der Junge, der Löwe) e estrangeirismos em -ent, -ist, -ant (der Polizist).",
+      "Também der Mensch, der Herr (den Herrn), der Nachbar, der Name (des Namens). Aqui erra-se muito: pratica!"
+     ],
+     "q": "Fala-me dos teus colegas e vizinhos: Hast du einen netten Kollegen oder Nachbarn? De que falas mit ihm?",
+     "c": "Escreve seis frases com den Kollegen, dem Studenten, den Nachbarn, dem Herrn, den Menschen e den Jungen."
+    },
+    "pt_BR": {
+     "t": "A declinação em -n",
+     "g": "Aprender os masculinos fracos: der Student, den Studenten, dem Kollegen.",
+     "p": [
+      "Alguns masculinos ganham -(e)n em todos os casos menos no nominativo singular: der Student, den/dem/des Studenten.",
+      "Grupos típicos: pessoas e animais em -e (der Kollege, der Junge, der Löwe) e estrangeirismos em -ent, -ist, -ant (der Polizist).",
+      "Também der Mensch, der Herr (den Herrn), der Nachbar, der Name (des Namens). Aqui se erra muito: pratique!"
+     ],
+     "q": "Me fale dos seus colegas e vizinhos: Hast du einen netten Kollegen oder Nachbarn? Sobre o que você fala mit ihm?",
+     "c": "Escreva seis frases com den Kollegen, dem Studenten, den Nachbarn, dem Herrn, den Menschen e den Jungen."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Kollege – den Kollegen",
+      "ex": "Ich frage meinen Kollegen um Rat."
+     },
+     {
+      "w": "der Student – dem Studenten",
+      "ex": "Der Professor hilft dem Studenten."
+     },
+     {
+      "w": "der Nachbar – den Nachbarn",
+      "ex": "Kennst du den neuen Nachbarn?"
+     },
+     {
+      "w": "der Herr – dem Herrn",
+      "ex": "Bitte geben Sie dem Herrn den Schlüssel."
+     },
+     {
+      "w": "der Mensch – den Menschen",
+      "ex": "Ich mag diesen Menschen sehr."
+     },
+     {
+      "w": "der Name – des Namens",
+      "ex": "Die Bedeutung des Namens ist interessant."
+     }
+    ],
+    "gram": "N-Deklination: schwache Maskulina bekommen -(e)n außer im Nominativ Singular (der Kollege, den/dem/des Kollegen)."
+   }
+  },
+  {
+   "d": 199,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Two-part conjunctions",
+     "g": "Link ideas in pairs: sowohl... als auch, weder... noch, entweder... oder, nicht nur... sondern auch.",
+     "p": [
+      "Sowohl... als auch = both... and: Ich spreche sowohl Englisch als auch Deutsch.",
+      "Weder... noch = neither... nor (no other negation!): Ich habe weder Zeit noch Lust. Entweder... oder = either... or.",
+      "Nicht nur... sondern auch = not only... but also: Sie ist nicht nur klug, sondern auch sehr nett."
+     ],
+     "q": "Describe yourself with pairs: Ich bin sowohl... als auch... Ich mag weder... noch... What is your entweder-oder choice for tonight?",
+     "c": "Write one sentence with each pair: sowohl/als auch, weder/noch, entweder/oder, nicht nur/sondern auch."
+    },
+    "de": {
+     "t": "Zweiteilige Konnektoren",
+     "g": "Du verbindest Ideen paarweise: sowohl... als auch, weder... noch, entweder... oder, nicht nur... sondern auch.",
+     "p": [
+      "Sowohl... als auch = beides: Ich spreche sowohl Englisch als auch Deutsch.",
+      "Weder... noch = keins von beiden (ohne weitere Verneinung!): Ich habe weder Zeit noch Lust. Entweder... oder = eins von zwei.",
+      "Nicht nur... sondern auch betont das Zweite: Sie ist nicht nur klug, sondern auch sehr nett."
+     ],
+     "q": "Beschreib dich mit Paaren: Ich bin sowohl... als auch... Ich mag weder... noch... Was ist dein Entweder-oder für heute Abend?",
+     "c": "Schreib je einen Satz mit sowohl/als auch, weder/noch, entweder/oder, nicht nur/sondern auch."
+    },
+    "es": {
+     "t": "Conjunciones dobles",
+     "g": "Une ideas por parejas: sowohl... als auch, weder... noch, entweder... oder, nicht nur... sondern auch.",
+     "p": [
+      "Sowohl... als auch = tanto... como: Ich spreche sowohl Englisch als auch Deutsch.",
+      "Weder... noch = ni... ni (¡sin otra negación!): Ich habe weder Zeit noch Lust. Entweder... oder = o... o.",
+      "Nicht nur... sondern auch = no solo... sino también: Sie ist nicht nur klug, sondern auch sehr nett."
+     ],
+     "q": "Descríbete con parejas: Ich bin sowohl... als auch... Ich mag weder... noch... ¿Cuál es tu entweder-oder para esta noche?",
+     "c": "Escribe una frase con cada pareja: sowohl/als auch, weder/noch, entweder/oder, nicht nur/sondern auch."
+    },
+    "fr": {
+     "t": "Les conjonctions doubles",
+     "g": "Relier des idées par paires : sowohl... als auch, weder... noch, entweder... oder, nicht nur... sondern auch.",
+     "p": [
+      "Sowohl... als auch = aussi bien... que : Ich spreche sowohl Englisch als auch Deutsch.",
+      "Weder... noch = ni... ni (sans autre négation !) : Ich habe weder Zeit noch Lust. Entweder... oder = soit... soit.",
+      "Nicht nur... sondern auch = non seulement... mais aussi : Sie ist nicht nur klug, sondern auch sehr nett."
+     ],
+     "q": "Décris-toi avec des paires : Ich bin sowohl... als auch... Ich mag weder... noch... Quel est ton entweder-oder pour ce soir ?",
+     "c": "Écris une phrase avec chaque paire : sowohl/als auch, weder/noch, entweder/oder, nicht nur/sondern auch."
+    },
+    "it": {
+     "t": "Congiunzioni doppie",
+     "g": "Colleghi idee a coppie: sowohl... als auch, weder... noch, entweder... oder, nicht nur... sondern auch.",
+     "p": [
+      "Sowohl... als auch = sia... sia: Ich spreche sowohl Englisch als auch Deutsch.",
+      "Weder... noch = né... né (senza altra negazione!): Ich habe weder Zeit noch Lust. Entweder... oder = o... o.",
+      "Nicht nur... sondern auch = non solo... ma anche: Sie ist nicht nur klug, sondern auch sehr nett."
+     ],
+     "q": "Descriviti con le coppie: Ich bin sowohl... als auch... Ich mag weder... noch... Qual è il tuo entweder-oder per stasera?",
+     "c": "Scrivi una frase per ogni coppia: sowohl/als auch, weder/noch, entweder/oder, nicht nur/sondern auch."
+    },
+    "pt": {
+     "t": "Conjunções duplas",
+     "g": "Ligar ideias aos pares: sowohl... als auch, weder... noch, entweder... oder, nicht nur... sondern auch.",
+     "p": [
+      "Sowohl... als auch = tanto... como: Ich spreche sowohl Englisch als auch Deutsch.",
+      "Weder... noch = nem... nem (sem outra negação!): Ich habe weder Zeit noch Lust. Entweder... oder = ou... ou.",
+      "Nicht nur... sondern auch = não só... mas também: Sie ist nicht nur klug, sondern auch sehr nett."
+     ],
+     "q": "Descreve-te com pares: Ich bin sowohl... als auch... Ich mag weder... noch... Qual é o teu entweder-oder para hoje à noite?",
+     "c": "Escreve uma frase com cada par: sowohl/als auch, weder/noch, entweder/oder, nicht nur/sondern auch."
+    },
+    "pt_BR": {
+     "t": "Conjunções duplas",
+     "g": "Ligar ideias em pares: sowohl... als auch, weder... noch, entweder... oder, nicht nur... sondern auch.",
+     "p": [
+      "Sowohl... als auch = tanto... quanto: Ich spreche sowohl Englisch als auch Deutsch.",
+      "Weder... noch = nem... nem (sem outra negação!): Ich habe weder Zeit noch Lust. Entweder... oder = ou... ou.",
+      "Nicht nur... sondern auch = não só... mas também: Sie ist nicht nur klug, sondern auch sehr nett."
+     ],
+     "q": "Descreva-se com pares: Ich bin sowohl... als auch... Ich mag weder... noch... Qual é o seu entweder-oder para hoje à noite?",
+     "c": "Escreva uma frase com cada par: sowohl/als auch, weder/noch, entweder/oder, nicht nur/sondern auch."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "sowohl ... als auch",
+      "ex": "Ich trinke sowohl Kaffee als auch Tee."
+     },
+     {
+      "w": "weder ... noch",
+      "ex": "Er isst weder Fleisch noch Fisch."
+     },
+     {
+      "w": "entweder ... oder",
+      "ex": "Wir gehen entweder ins Kino oder ins Theater."
+     },
+     {
+      "w": "nicht nur ... sondern auch",
+      "ex": "Sie spielt nicht nur Gitarre, sondern auch Klavier."
+     },
+     {
+      "w": "zwar ... aber",
+      "ex": "Das Hotel ist zwar teuer, aber sehr schön."
+     },
+     {
+      "w": "je ... desto",
+      "ex": "Je mehr ich übe, desto besser spreche ich."
+     }
+    ],
+    "gram": "Zweiteilige Konnektoren: sowohl … als auch, weder … noch (ohne nicht), entweder … oder, nicht nur … sondern auch."
+   }
+  },
+  {
+   "d": 200,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Obwohl and trotzdem",
+     "g": "Express contrast two ways: Obwohl es regnet, gehe ich; es regnet, trotzdem gehe ich.",
+     "p": [
+      "Obwohl (although) starts a subordinate clause, verb at the end: Ich gehe spazieren, obwohl es regnet.",
+      "Trotzdem (still, nevertheless) is an adverb in position 1 or 3, verb in position 2: Es regnet, trotzdem gehe ich.",
+      "Both say the same thing; obwohl puts the obstacle in the clause, trotzdem in the sentence before. Day 200, well done!"
+     ],
+     "q": "What do you do even though it's hard? Tell me with obwohl and then say it again with trotzdem.",
+     "c": "Write three pairs of sentences: one with obwohl and the same idea with trotzdem."
+    },
+    "de": {
+     "t": "Obwohl und trotzdem",
+     "g": "Du drückst Gegensätze auf zwei Arten aus: Obwohl es regnet, gehe ich; es regnet, trotzdem gehe ich.",
+     "p": [
+      "Obwohl leitet einen Nebensatz ein, das Verb steht am Ende: Ich gehe spazieren, obwohl es regnet.",
+      "Trotzdem ist ein Adverb auf Position 1 oder 3, das Verb auf Position 2: Es regnet, trotzdem gehe ich.",
+      "Beide sagen dasselbe; bei obwohl steht das Hindernis im Nebensatz, bei trotzdem im Satz davor. Tag 200, super!"
+     ],
+     "q": "Was machst du, obwohl es schwer ist? Sag es mit obwohl und dann noch einmal mit trotzdem.",
+     "c": "Schreib drei Satzpaare: einen Satz mit obwohl und dieselbe Idee mit trotzdem."
+    },
+    "es": {
+     "t": "Obwohl y trotzdem",
+     "g": "Expresa contraste de dos formas: Obwohl es regnet, gehe ich; es regnet, trotzdem gehe ich.",
+     "p": [
+      "Obwohl (aunque) introduce una subordinada, verbo al final: Ich gehe spazieren, obwohl es regnet.",
+      "Trotzdem (aun así) es un adverbio en posición 1 o 3, verbo en posición 2: Es regnet, trotzdem gehe ich.",
+      "Dicen lo mismo; con obwohl el obstáculo va en la subordinada, con trotzdem en la frase anterior. ¡Día 200, enhorabuena!"
+     ],
+     "q": "¿Qué haces aunque sea difícil? Dímelo con obwohl y luego otra vez con trotzdem.",
+     "c": "Escribe tres pares de frases: una con obwohl y la misma idea con trotzdem."
+    },
+    "fr": {
+     "t": "Obwohl et trotzdem",
+     "g": "Exprimer l'opposition de deux façons : Obwohl es regnet, gehe ich ; es regnet, trotzdem gehe ich.",
+     "p": [
+      "Obwohl (bien que) introduit une subordonnée, verbe à la fin : Ich gehe spazieren, obwohl es regnet.",
+      "Trotzdem (quand même) est un adverbe en position 1 ou 3, verbe en position 2 : Es regnet, trotzdem gehe ich.",
+      "Même sens ; avec obwohl l'obstacle est dans la subordonnée, avec trotzdem dans la phrase d'avant. Jour 200, bravo !"
+     ],
+     "q": "Que fais-tu même si c'est difficile ? Dis-le avec obwohl, puis encore avec trotzdem.",
+     "c": "Écris trois paires de phrases : une avec obwohl et la même idée avec trotzdem."
+    },
+    "it": {
+     "t": "Obwohl e trotzdem",
+     "g": "Esprimi il contrasto in due modi: Obwohl es regnet, gehe ich; es regnet, trotzdem gehe ich.",
+     "p": [
+      "Obwohl (anche se) introduce una subordinata, verbo in fondo: Ich gehe spazieren, obwohl es regnet.",
+      "Trotzdem (comunque) è un avverbio in posizione 1 o 3, verbo in posizione 2: Es regnet, trotzdem gehe ich.",
+      "Dicono la stessa cosa; con obwohl l'ostacolo sta nella subordinata, con trotzdem nella frase prima. Giorno 200, bravo!"
+     ],
+     "q": "Che cosa fai anche se è difficile? Dimmelo con obwohl e poi di nuovo con trotzdem.",
+     "c": "Scrivi tre coppie di frasi: una con obwohl e la stessa idea con trotzdem."
+    },
+    "pt": {
+     "t": "Obwohl e trotzdem",
+     "g": "Exprimir contraste de duas formas: Obwohl es regnet, gehe ich; es regnet, trotzdem gehe ich.",
+     "p": [
+      "Obwohl (embora) introduz uma subordinada, verbo no fim: Ich gehe spazieren, obwohl es regnet.",
+      "Trotzdem (mesmo assim) é um advérbio na posição 1 ou 3, verbo na posição 2: Es regnet, trotzdem gehe ich.",
+      "Dizem o mesmo; com obwohl o obstáculo fica na subordinada, com trotzdem na frase anterior. Dia 200, parabéns!"
+     ],
+     "q": "O que fazes mesmo quando é difícil? Diz-mo com obwohl e depois outra vez com trotzdem.",
+     "c": "Escreve três pares de frases: uma com obwohl e a mesma ideia com trotzdem."
+    },
+    "pt_BR": {
+     "t": "Obwohl e trotzdem",
+     "g": "Expressar contraste de dois jeitos: Obwohl es regnet, gehe ich; es regnet, trotzdem gehe ich.",
+     "p": [
+      "Obwohl (embora) introduz uma subordinada, verbo no final: Ich gehe spazieren, obwohl es regnet.",
+      "Trotzdem (mesmo assim) é um advérbio na posição 1 ou 3, verbo na posição 2: Es regnet, trotzdem gehe ich.",
+      "Dizem o mesmo; com obwohl o obstáculo fica na subordinada, com trotzdem na frase anterior. Dia 200, parabéns!"
+     ],
+     "q": "O que você faz mesmo quando é difícil? Me diga com obwohl e depois de novo com trotzdem.",
+     "c": "Escreva três pares de frases: uma com obwohl e a mesma ideia com trotzdem."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "obwohl",
+      "ex": "Obwohl ich müde bin, lerne ich noch eine halbe Stunde."
+     },
+     {
+      "w": "trotzdem",
+      "ex": "Der Weg war lang, trotzdem sind wir zu Fuß gegangen."
+     },
+     {
+      "w": "trotz + Genitiv",
+      "ex": "Trotz der Kälte sind wir schwimmen gegangen."
+     },
+     {
+      "w": "dennoch",
+      "ex": "Die Aufgabe war schwer, dennoch hat sie es geschafft."
+     },
+     {
+      "w": "obwohl es regnet",
+      "ex": "Wir grillen, obwohl es regnet."
+     },
+     {
+      "w": "sich nicht abhalten lassen",
+      "ex": "Ich lasse mich vom Wetter nicht abhalten."
+     }
+    ],
+    "gram": "Gegensatz: obwohl + Nebensatz (Verb am Ende); trotzdem als Adverb, Verb auf Position 2 (Es regnet, trotzdem gehe ich)."
+   }
+  }
+ ]
+}
