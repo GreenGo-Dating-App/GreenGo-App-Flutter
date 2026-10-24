@@ -185,6 +185,10 @@ export const createBuddy = callable('createBuddy', async (uid, data) => {
 
 export const updateBuddy = callable('updateBuddy', async (uid, data) => {
   const buddyId = okId(data.buddyId);
+  // Owner 2026-10-24: the Buddy's language is fixed at creation.
+  if (data.settings && Object.prototype.hasOwnProperty.call(data.settings, 'language')) {
+    throw new AppError('LANGUAGE_FIXED', 'A Buddy's language cannot be changed after it is created.', 400, { reason: 'LANGUAGE_FIXED' });
+  }
   const patch = validateSettings(data.settings ?? {}, true);
   if (!Object.keys(patch).length) throw new HttpsError('invalid-argument', 'Nothing to update');
   await assertAvatar(patch.avatar);
