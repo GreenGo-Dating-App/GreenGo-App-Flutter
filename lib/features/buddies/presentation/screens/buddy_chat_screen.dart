@@ -499,9 +499,10 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
         final userTranslation = m.isBuddy
             ? null
             : BuddyChatAdapter.shownTranslation(m, chatLanguage: target, buddyLanguage: language);
-        // Colour-matched chunks (setting on + a real translation + segments).
+        // Colour-matched chunks (setting on + a real translation + segments),
+        // only on the Buddy's messages (owner 2026-10-24: never on the user's).
         final shown = m.isBuddy ? msg.translatedContent : userTranslation;
-        final matches = shown != null && _settings.highlightMatches
+        final matches = m.isBuddy && shown != null && _settings.highlightMatches
             ? locateBuddySegments(m.text, shown, m.translation?.segments ?? const [])
             : const <BuddySegmentMatch>[];
         final mainColor = m.isBuddy ? AppColors.textPrimary : AppColors.deepBlack;

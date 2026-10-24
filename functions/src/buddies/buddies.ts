@@ -28,13 +28,14 @@ import { effectiveTier, EffectiveTier } from '../shared/effectiveTier';
 import { fifoDraw, refusal, REASON, validRequestId, DrawnSlice } from '../coins/ledger';
 import { loadConfig } from '../ai/router/config';
 import { eligibleChain, generate, translate } from '../ai/router/router';
+import { guessLanguage } from './langDetect';
 import { applyReplyRules, fitContext, graphemeLength, graphemes } from '../ai/router/rules';
 import { CapabilityRules } from '../ai/router/types';
 import { emitNotification } from '../notifications/notifyHelpers';
 import { rawText } from '../shared/i18n';
 import {
   AVATARS, BUDDY_AVATARS, BUDDIES, BUDDY_LIMIT, BUDDY_REQUESTS, BUDDY_USAGE, BuddyInputError, BuddySettings, COINS_PER_REPLY, REPLIES_PER_COIN,
-  FREE_REPLIES_PER_DAY, Language, MemoryFact, USER_MESSAGE_MAX, utcDay, validateSettings,
+  FREE_REPLIES_PER_DAY, Language, LANGUAGE_NAMES, MemoryFact, USER_MESSAGE_MAX, utcDay, validateSettings,
 } from './model';
 import { CRISIS_REPLY, FALLBACK_REPLY, isCrisis, isUnsafeReply } from './crisis';
 import { checkInPrompt, memoryPrompt, openingPrompt, parseJsonObject, replyFormatBlock, summaryPrompt, systemPrompt } from './prompt';
@@ -455,12 +456,23 @@ export async function handleSendBuddyMessage(uid: string, data: any) {
     const history = await recentTurns(ref, Math.max(2, r.contextMessages ?? 12));
     const turns = fitContext([...history.turns, { role: 'user', content: text } as Turn],
       Math.max(2, (r.contextMessages ?? 12) + 1), r.contextChars ?? 2400);
+    // Owner 2026-10-24: the Buddy answers in ITS language whatever the user
+    // writes in. A reminder next to the newest message is obeyed far better
+    // than the system prompt alone (the stored message is unchanged).
+    const last = turns[turns.length - 1];
+    if (last?.role === 'user') {
+      turns[turns.length - 1] = {
+        ...last,
+        content: `${last.content}\n\n[Reply ONLY in ${LANGUAGE_NAMES[buddy.language]}, even if this message is in another language.]`,
+      };
+    }
     const d = snap.data() ?? {};
     const memory: MemoryFact[] = Array.isArray(d.memory) ? d.memory : [];
     const system = `${systemPrompt(buddy, r, memory, String(d.summary ?? ''))}\n\n${replyFormatBlock(r.maxOutputChars ?? 200)}`;
     const out = await generate('text_buddies', { system, messages: turns, json: true },
       { consentVersion }, { rawReply: true, rules: { maxTokens: Math.max(r.maxTokens ?? 120, 1000) } });
     parsed = parseBuddyReply(out.text, r, FALLBACK_REPLY[lang] ?? FALLBACK_REPLY.en);
+    parsed.messages = await enforceBuddyLanguage(buddy, parsed.messages, consentVersion);
     reply = parsed.messages.join('\n');
   } catch (e: any) {
     console.warn('sendBuddyMessage: model failed', e?.message ?? e);
@@ -645,6 +657,27 @@ export function verifyMemoryFacts(raw: unknown, userTexts: string[], previous: M
 
 /** A meaning chunk of the original and its counterpart in the translation (exact substrings). */
 export interface AlignedSegment { s: string; t: string }
+/**
+ * Any reply bubble clearly in another language than the Buddy's (offline
+ * stop-word guess, no tokens) is translated into the Buddy's language. Best
+ * effort: on a translation failure the bubble is kept.
+ */
+export async function enforceBuddyLanguage(b: BuddySettings, bubbles: string[], consentVersion: number): Promise<string[]> {
+  const want = baseLang(b.language);
+  return Promise.all(bubbles.map(async (m) => {
+    const got = guessLanguage(m);
+    if (!got || got === want) return m;
+    try {
+      const r = await translate('translate_chat', [m], routerLang(b.language), { consentVersion }, { source: got });
+      const it = r.items[0];
+      return it && it.text.trim() ? it.text : m;
+    } catch (e: any) {
+      console.warn('enforceBuddyLanguage failed', e?.message ?? e);
+      return m;
+    }
+  }));
+}
+
 export interface StoredTranslation { text: string; lang: string; segments?: AlignedSegment[] }
 
 /**
@@ -727,7 +760,6 @@ export async function translateTurn(b: BuddySettings, userText: string | null, r
         if (it && !it.sameLanguage && it.text.trim() && !nearlySame(it.text, replies[i])) out.replies[i] = { text: it.text, lang: target };
       });
     }
-    let srcForUser: string | null = null;
     if (userText && userText.trim()) {
       const r = await translate('translate_chat', [userText], routerLang(target), { consentVersion }, {});
       const it = r.items[0];
@@ -735,7 +767,6 @@ export async function translateTurn(b: BuddySettings, userText: string | null, r
       const sameAsTarget = detected ? baseLang(detected) === baseLang(target) : false;
       if (it && !it.sameLanguage && !sameAsTarget && it.text.trim() && !nearlySame(it.text, userText)) {
         out.user = { text: it.text, lang: target };
-        srcForUser = detected ?? b.language;
       }
     }
     // Colour-matched chunks (once, best effort), only when the app's
@@ -746,11 +777,7 @@ export async function translateTurn(b: BuddySettings, userText: string | null, r
         const seg = await alignSegments(replies[i], tr.text, b.language, target, consentVersion).catch(() => []);
         if (seg.length) tr.segments = seg;
       }),
-      (async () => {
-        if (!out.user || !userText) return;
-        const seg = await alignSegments(userText, out.user.text, srcForUser ?? b.language, target, consentVersion).catch(() => []);
-        if (seg.length) out.user.segments = seg;
-      })(),
+      // No colour pairs for the user's own messages (owner 2026-10-24).
     ]);
   } catch (e: any) {
     console.warn('buddy translateTurn failed', e?.message ?? e);

@@ -465,12 +465,11 @@ void main() {
     }
     expect(underlined, unorderedEquals(['Amo', 'il mare']));
 
-    // The user's: original (main) and the translation line, same colour.
-    final userMain = colouredSpans(tester, find.byKey(const ValueKey('buddy-seg-main-m2')));
-    final userLine =
-        colouredSpans(tester, find.byKey(const ValueKey('buddy-user-translation-m2')));
-    expect(userMain['Good morning'], isNotNull);
-    expect(userLine['Buongiorno'], userMain['Good morning']);
+    // The user's own messages are never coloured (owner 2026-10-24), even
+    // with segments: plain text + the plain translation line.
+    expect(find.byKey(const ValueKey('buddy-seg-main-m2')), findsNothing);
+    expect(colouredSpans(tester, find.byKey(const ValueKey('buddy-user-translation-m2'))), isEmpty);
+    expect(find.text('Good morning'), findsOneWidget);
 
     // Setting on (default): the server is asked for the colour pairs.
     await send(tester, 'Colours please');

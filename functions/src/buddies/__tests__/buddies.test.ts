@@ -365,3 +365,35 @@ describe('stray keyword bubbles', () => {
     expect(parseBuddyReply('{"messages":["Ciao"],"keywords":[]}', r, 'x').messages).toEqual(['Ciao']);
   });
 });
+
+describe('the Buddy always answers in its own language', () => {
+  const { guessLanguage } = require('../langDetect');
+  const prevProject = process.env.GCLOUD_PROJECT;
+  beforeAll(() => {
+    process.env.GCLOUD_PROJECT = 'greengo-chat-test';
+    _setConfig(mockPreset(defaultConfig()));
+  });
+  afterAll(() => {
+    process.env.GCLOUD_PROJECT = prevProject;
+    _setConfig(null);
+  });
+  it('guesses the language of typical chat lines', () => {
+    expect(guessLanguage('Hola, ¿qué tal? Yo estoy muy bien, gracias.')).toBe('es');
+    expect(guessLanguage('Hi! How are you? What do you love about your city?')).toBe('en');
+    expect(guessLanguage('Ciao! Io sono molto contento, e tu cosa fai?')).toBe('it');
+    expect(guessLanguage('Olá! Eu também gosto muito, e você?')).toBe('pt');
+    expect(guessLanguage("Bonjour ! Je suis très content, et vous ?")).toBe('fr');
+    expect(guessLanguage('Hallo! Ich bin auch sehr froh, und du?')).toBe('de');
+  });
+  it('returns null when unsure (names, very short lines)', () => {
+    expect(guessLanguage('Roma!')).toBeNull();
+    expect(guessLanguage('OK 👍')).toBeNull();
+  });
+  it('translates a Spanish reply of an English Buddy into English (mock translator)', async () => {
+    const { enforceBuddyLanguage } = require('../buddies');
+    const out = await enforceBuddyLanguage(settings({ language: 'en' }),
+      ['¡Hola! Yo estoy muy bien, gracias. ¿Y tú qué tal?', 'Great, and you?'], 3);
+    expect(out[0]).toMatch(/^\[→en\]/);
+    expect(out[1]).toBe('Great, and you?');
+  });
+});
