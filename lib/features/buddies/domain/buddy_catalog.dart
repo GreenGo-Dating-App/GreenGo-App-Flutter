@@ -39,8 +39,13 @@ class BuddyCatalog {
     List<String>.generate(24, (i) => 'buddy_${(i + 1).toString().padLeft(2, '0')}'),
   );
 
-  /// Max characters of one message to a Buddy (server USER_MESSAGE_MAX).
-  static const int maxMessageChars = 500;
+  /// Max characters of one message to a Buddy (server USER_MESSAGE_MAX,
+  /// owner 2026-10-24).
+  static const int maxMessageChars = 200;
+
+  /// The topics of one group ([kBuddyTopicGroups]), in display order.
+  static List<BuddyTopic> topicsOf(String group) =>
+      [for (final t in kBuddyTopics) if (t.group == group) t];
 
   /// Max characters of a Buddy name (server cleanName).
   static const int maxNameChars = 24;

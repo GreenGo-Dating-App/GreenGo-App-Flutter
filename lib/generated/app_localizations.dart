@@ -48298,11 +48298,11 @@ abstract class AppLocalizations {
   /// **'{coins, plural, =1{then 1 coin per reply} other{then {coins} coins per reply}}'**
   String buddyThenCoinsPerReply(int coins);
 
-  /// After the free replies: price of one Buddy reply when one coin buys several replies. price is a localized decimal like 0.2
+  /// After the free replies, when one coin buys several Buddy replies; shown after the free-replies count
   ///
   /// In en, this message translates to:
-  /// **'then {price} coins per reply (1 coin = {replies} replies)'**
-  String buddyThenPricePerReply(String price, int replies);
+  /// **'then 1 coin = {replies} replies'**
+  String buddyThenRepliesPerCoin(int replies);
 
   /// Buddy replies already paid with a coin and not used yet (they never expire)
   ///
@@ -48417,24 +48417,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Support information'**
   String get buddySafetyLabel;
-
-  /// Button on a Buddy message: translate it
-  ///
-  /// In en, this message translates to:
-  /// **'Translate'**
-  String get buddyTranslate;
-
-  /// Button: show the untranslated Buddy message
-  ///
-  /// In en, this message translates to:
-  /// **'Show original'**
-  String get buddyShowOriginal;
-
-  /// Snackbar: translation failed
-  ///
-  /// In en, this message translates to:
-  /// **'Could not translate this message.'**
-  String get buddyTranslateFailed;
 
   /// Button on a Buddy message: report it
   ///
@@ -48553,8 +48535,26 @@ abstract class AppLocalizations {
   /// Note under the Buddy language choice
   ///
   /// In en, this message translates to:
-  /// **'Your Buddy always speaks only this language.'**
+  /// **'Your Buddy always speaks only this language. It can\'t be changed later.'**
   String get buddyLanguageOnlyNote;
+
+  /// Buddy builder step 1: label of the first select box, the main category (topic group)
+  ///
+  /// In en, this message translates to:
+  /// **'Main category'**
+  String get buddyMacroCategoryLabel;
+
+  /// Buddy builder step 1: label of the second select box, a topic of the chosen main category
+  ///
+  /// In en, this message translates to:
+  /// **'Topic'**
+  String get buddyMicroCategoryLabel;
+
+  /// Buddy builder: shown in the topic select box while no main category is chosen
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a main category first'**
+  String get buddyMicroCategoryHint;
 
   /// Shown when the Buddy avatar pictures could not be loaded
   ///
@@ -48603,6 +48603,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Language'**
   String get buddySettingLanguage;
+
+  /// Buddy settings: the Buddy language, shown read-only (chosen when the Buddy is created, never changed)
+  ///
+  /// In en, this message translates to:
+  /// **'{language} (fixed)'**
+  String buddyLanguageFixed(String language);
 
   /// Switch: the Buddy may write first
   ///

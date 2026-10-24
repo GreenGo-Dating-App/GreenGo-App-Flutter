@@ -68,6 +68,11 @@ class _BuddyChanged extends BuddyChatEvent {
   List<Object?> get props => [buddy];
 }
 
+/// Reveals the next hidden bubble of a turn (one per [BuddyChatBloc.revealGap]).
+class _RevealNext extends BuddyChatEvent {
+  const _RevealNext();
+}
+
 class _StatusLoaded extends BuddyChatEvent {
   const _StatusLoaded(this.status);
   final BuddyStatus status;
@@ -98,6 +103,7 @@ class BuddyChatState extends Equatable {
     this.errorLocalId,
     this.errorSeq = 0,
     this.replySeq = 0,
+    this.hidden = const <String>{},
   });
 
   final Buddy? buddy;
@@ -143,8 +149,19 @@ class BuddyChatState extends Equatable {
   /// Changes each time a reply arrived after a send (sounds).
   final int replySeq;
 
-  /// Everything to show, oldest first.
+  /// Ids of Buddy bubbles received but not shown yet: the bubbles of one
+  /// turn appear one by one, [BuddyChatBloc.revealGap] apart, in order.
+  final Set<String> hidden;
+
+  /// Every message (shown or not yet), oldest first.
   List<BuddyMessage> get messages => [...server, ...local];
+
+  /// What the chat shows, oldest first.
+  List<BuddyMessage> get visibleMessages =>
+      hidden.isEmpty ? messages : [for (final m in messages) if (!hidden.contains(m.id)) m];
+
+  /// Typing indicator: waiting for the reply, or more bubbles of it to come.
+  bool get buddyTyping => waitingReply || hidden.isNotEmpty;
 
   BuddyChatState copyWith({
     Buddy? Function()? buddy,
@@ -166,6 +183,7 @@ class BuddyChatState extends Equatable {
     String? errorLocalId,
     int? errorSeq,
     int? replySeq,
+    Set<String>? hidden,
   }) =>
       BuddyChatState(
         buddy: buddy != null ? buddy() : this.buddy,
@@ -187,6 +205,7 @@ class BuddyChatState extends Equatable {
         errorLocalId: errorLocalId ?? this.errorLocalId,
         errorSeq: errorSeq ?? this.errorSeq,
         replySeq: replySeq ?? this.replySeq,
+        hidden: hidden ?? this.hidden,
       );
 
   @override
@@ -210,6 +229,7 @@ class BuddyChatState extends Equatable {
         errorLocalId,
         errorSeq,
         replySeq,
+        hidden,
       ];
 }
 
@@ -224,31 +244,49 @@ List<BuddyMessage> mergeServerMessages(List<BuddyMessage> server, List<BuddyMess
 
 /// Matches [incoming] server messages with the local ones they replace (same
 /// role + text; each server message consumes at most one local message that
-/// is already delivered). Returns the local messages still to show and the
-/// server messages that matched nothing yet. Pure; tested.
-({List<BuddyMessage> local, List<BuddyMessage> unmatched}) reconcileLocal(
-    List<BuddyMessage> local, List<BuddyMessage> incoming) {
+/// is already delivered). Returns the local messages still to show, the
+/// server messages that matched nothing yet, and the (local, server) pairs
+/// that matched. Pure; tested.
+({
+  List<BuddyMessage> local,
+  List<BuddyMessage> unmatched,
+  List<(BuddyMessage, BuddyMessage)> matched,
+}) reconcileLocal(List<BuddyMessage> local, List<BuddyMessage> incoming) {
   final remaining = [...local];
   final unmatched = <BuddyMessage>[];
+  final matched = <(BuddyMessage, BuddyMessage)>[];
   for (final m in incoming) {
     final i = remaining.indexWhere((l) =>
         l.delivery == BuddyDelivery.sent && l.role == m.role && l.text.trim() == m.text.trim());
     if (i >= 0) {
-      remaining.removeAt(i);
+      matched.add((remaining.removeAt(i), m));
     } else {
       unmatched.add(m);
     }
   }
-  return (local: remaining, unmatched: unmatched);
+  return (local: remaining, unmatched: unmatched, matched: matched);
+}
+
+/// The [keywords] of a turn that [text] names (like the server does per bubble).
+List<BuddyKeyword> keywordsIn(String text, List<BuddyKeyword> keywords) {
+  final lower = text.toLowerCase();
+  return [for (final k in keywords) if (lower.contains(k.name.toLowerCase())) k];
 }
 
 // ------------------------------------------------------------------ bloc
 
 /// One Buddy chat: paginated history (newest page first, older on scroll),
 /// live new messages of this session, and sending with retry.
+///
+/// New Buddy bubbles (from the callable or the Firestore listener) are
+/// revealed one by one: the first at once, each next one [revealGap] later,
+/// in createdAt order, with the typing indicator in between.
 class BuddyChatBloc extends Bloc<BuddyChatEvent, BuddyChatState> {
-  BuddyChatBloc({required BuddiesRepository repository, this.pageSize = 30})
-      : _repo = repository,
+  BuddyChatBloc({
+    required BuddiesRepository repository,
+    this.pageSize = 30,
+    this.revealGap = const Duration(seconds: 1),
+  })  : _repo = repository,
         super(const BuddyChatState()) {
     on<BuddyChatStarted>(_onStarted);
     on<BuddyChatOlderRequested>(_onOlder);
@@ -258,10 +296,18 @@ class BuddyChatBloc extends Bloc<BuddyChatEvent, BuddyChatState> {
     on<_ServerMessages>(_onServerMessages);
     on<_BuddyChanged>(_onBuddyChanged);
     on<_StatusLoaded>(_onStatus);
+    on<_RevealNext>(_onRevealNext);
   }
 
   final BuddiesRepository _repo;
   final int pageSize;
+
+  /// Time between two bubbles of one turn (owner 2026-10-24: 1 s).
+  final Duration revealGap;
+
+  /// Hidden bubble ids, in reveal order (mirrored in [BuddyChatState.hidden]).
+  List<String> _queue = <String>[];
+  Timer? _revealTimer;
   String? _uid;
   String? _buddyId;
   StreamSubscription<List<BuddyMessage>>? _newSub;
@@ -274,6 +320,7 @@ class BuddyChatBloc extends Bloc<BuddyChatEvent, BuddyChatState> {
   Future<void> _onStarted(BuddyChatStarted event, Emitter<BuddyChatState> emit) async {
     _uid = event.uid;
     _buddyId = event.buddyId;
+    _resetReveal();
     emit(BuddyChatState(locked: event.locked));
     await _buddySub?.cancel();
     _buddySub = _repo.watchBuddy(event.uid, event.buddyId).listen(
@@ -339,13 +386,54 @@ class BuddyChatBloc extends Bloc<BuddyChatEvent, BuddyChatState> {
 
   void _onServerMessages(_ServerMessages event, Emitter<BuddyChatState> emit) {
     final known = {for (final m in state.server) m.id};
-    final fresh = event.messages.where((m) => !known.contains(m.id)).toList();
+    final fresh = event.messages.where((m) => !known.contains(m.id)).toList()
+      ..sort((a, b) => a.createdAt.compareTo(b.createdAt));
     final r = reconcileLocal(state.local, fresh);
+    // The stored copy of a bubble that is still hidden stays hidden.
+    for (final (l, srv) in r.matched) {
+      final i = _queue.indexOf(l.id);
+      if (i >= 0) _queue[i] = srv.id;
+    }
     _unmatched = [..._unmatched, ...r.unmatched];
+    _enqueue([for (final m in r.unmatched) if (m.isBuddy) m]);
     emit(state.copyWith(
       server: mergeServerMessages(state.server, event.messages),
       local: r.local,
+      hidden: _queue.toSet(),
     ));
+  }
+
+  /// New Buddy bubbles: the first one shows at once when nothing is being
+  /// revealed, the others wait their turn ([revealGap] apart, in order).
+  void _enqueue(List<BuddyMessage> bubbles) {
+    if (bubbles.isEmpty) return;
+    final sorted = [...bubbles]..sort((a, b) => a.createdAt.compareTo(b.createdAt));
+    final idle = _queue.isEmpty && _revealTimer == null;
+    _queue = [..._queue, for (final m in idle ? sorted.skip(1) : sorted) m.id];
+    // The next bubble (of this turn or a later one) comes no sooner than
+    // revealGap after the one shown now.
+    if (idle) _scheduleReveal();
+  }
+
+  void _scheduleReveal() {
+    _revealTimer?.cancel();
+    _revealTimer = Timer(revealGap, () {
+      _revealTimer = null;
+      if (!isClosed) add(const _RevealNext());
+    });
+  }
+
+  void _onRevealNext(_RevealNext event, Emitter<BuddyChatState> emit) {
+    if (_queue.isEmpty) return;
+    _queue = _queue.sublist(1);
+    _scheduleReveal();
+    emit(state.copyWith(hidden: _queue.toSet()));
+  }
+
+  void _resetReveal() {
+    _revealTimer?.cancel();
+    _revealTimer = null;
+    _queue = <String>[];
   }
 
   void _onBuddyChanged(_BuddyChanged event, Emitter<BuddyChatState> emit) {
@@ -393,20 +481,31 @@ class BuddyChatBloc extends Bloc<BuddyChatEvent, BuddyChatState> {
         text: msg.text,
         requestId: msg.requestId!,
       );
-      final reply = BuddyMessage(
-        id: 'local_reply_${msg.requestId}',
-        role: BuddyMessageRole.buddy,
-        text: r.reply,
-        kind: BuddyMessage.kindFrom(r.kind),
-        charged: r.charged,
-        createdAt: DateTime.now(),
-      );
-      // The Firestore listener may already have delivered both messages.
+      final now = DateTime.now();
+      final bubbles = r.bubbles;
+      final replies = <BuddyMessage>[
+        for (var i = 0; i < bubbles.length; i++)
+          BuddyMessage(
+            id: 'local_reply_${msg.requestId}_$i',
+            role: BuddyMessageRole.buddy,
+            text: bubbles[i],
+            kind: BuddyMessage.kindFrom(r.kind),
+            // The turn is charged once: on its first bubble.
+            charged: i == 0 ? r.charged : 'none',
+            // Same spacing as the stored copies (fixed order).
+            createdAt: now.add(Duration(seconds: i)),
+            keywords: keywordsIn(bubbles[i], r.keywords),
+          ),
+      ];
+      // The Firestore listener may already have delivered the messages.
       final local = _replace(msg.id, (m) => m.copyWith(delivery: BuddyDelivery.sent));
-      final rec = reconcileLocal([...local, reply], _unmatched);
+      final rec = reconcileLocal([...local, ...replies], _unmatched);
       _unmatched = rec.unmatched;
+      final keptIds = {for (final m in rec.local) m.id};
+      _enqueue([for (final m in replies) if (keptIds.contains(m.id)) m]);
       emit(state.copyWith(
         local: rec.local,
+        hidden: _queue.toSet(),
         waitingReply: false,
         freeRepliesLeft: r.freeRepliesLeft,
         replyCredits: r.replyCredits,
@@ -428,11 +527,13 @@ class BuddyChatBloc extends Bloc<BuddyChatEvent, BuddyChatState> {
 
   void _onCleared(BuddyChatCleared event, Emitter<BuddyChatState> emit) {
     _unmatched = const <BuddyMessage>[];
-    emit(state.copyWith(server: const [], local: const [], hasMore: false));
+    _resetReveal();
+    emit(state.copyWith(server: const [], local: const [], hasMore: false, hidden: const {}));
   }
 
   @override
   Future<void> close() async {
+    _resetReveal();
     await _newSub?.cancel();
     await _buddySub?.cancel();
     return super.close();

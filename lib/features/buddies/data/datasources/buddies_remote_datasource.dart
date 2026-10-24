@@ -157,6 +157,7 @@ class BuddiesRemoteDataSource {
         text: (d['text'] as String?) ?? '',
         kind: BuddyMessage.kindFrom(d['kind']),
         charged: (d['charged'] as String?) ?? 'none',
+        keywords: BuddyKeyword.listFrom(d['keywords']),
         // A pending server timestamp reads as null: treat it as "now".
         createdAt: _time(d['createdAt']) ?? DateTime.now(),
       );

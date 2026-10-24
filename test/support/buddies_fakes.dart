@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:greengo_chat/core/services/app_sound_service.dart';
+import 'package:greengo_chat/core/services/translation_service.dart';
 import 'package:greengo_chat/features/buddies/domain/buddy_exception.dart';
 import 'package:greengo_chat/features/buddies/domain/entities/buddy.dart';
 import 'package:greengo_chat/features/buddies/domain/entities/buddy_avatar_option.dart';
@@ -175,7 +176,12 @@ class FakeBuddyPrompts extends BuddyPrompts {
   final bool consentResult;
   final List<String> calls = [];
   final List<AppSound> sounds = [];
-  String? translation = 'Traduzione';
+  /// Prefix of the fake translation ('<prefix>: <text>'); null = the text
+  /// is already in the target language.
+  String? translation;
+
+  /// The automatic translation fails.
+  bool translateFails = false;
 
   @override
   Future<void> showUpgrade(BuildContext context,
@@ -195,11 +201,24 @@ class FakeBuddyPrompts extends BuddyPrompts {
     return consentResult;
   }
 
+  /// Texts sent to the automatic translation ('<source>><target>:<text>').
+  final List<String> translated = [];
+
   @override
-  Future<String?> translate(BuildContext context, String text, String target) async {
-    calls.add('translate:$target');
-    return translation;
+  Future<TranslationResult> autoTranslate(String text,
+      {required String source, required String target}) async {
+    translated.add('$source>$target:$text');
+    if (translateFails) return TranslationResult(original: text, text: text, failed: true);
+    final t = translation;
+    if (t == null) return TranslationResult(original: text, text: text, detectedLanguage: source);
+    return TranslationResult(original: text, text: '$t: $text', detectedLanguage: source);
   }
+
+  @override
+  void maybePromptAiConsent(BuildContext context) {}
+
+  @override
+  Listenable? get aiConsentChanges => null;
 
   @override
   Future<void> report(BuildContext context,

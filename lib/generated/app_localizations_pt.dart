@@ -28578,8 +28578,8 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String buddyThenPricePerReply(String price, int replies) {
-    return 'depois, $price moedas por resposta (1 moeda = $replies respostas)';
+  String buddyThenRepliesPerCoin(int replies) {
+    return 'depois 1 moeda = $replies respostas';
   }
 
   @override
@@ -28677,15 +28677,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get buddySafetyLabel => 'Informação de apoio';
 
   @override
-  String get buddyTranslate => 'Traduzir';
-
-  @override
-  String get buddyShowOriginal => 'Ver original';
-
-  @override
-  String get buddyTranslateFailed => 'Não foi possível traduzir esta mensagem.';
-
-  @override
   String get buddyReport => 'Denunciar';
 
   @override
@@ -28753,7 +28744,17 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get buddyLanguageOnlyNote =>
-      'O teu Buddy fala sempre apenas esta língua.';
+      'O teu Buddy fala sempre apenas esta língua. Não pode ser alterada depois.';
+
+  @override
+  String get buddyMacroCategoryLabel => 'Categoria principal';
+
+  @override
+  String get buddyMicroCategoryLabel => 'Tema';
+
+  @override
+  String get buddyMicroCategoryHint =>
+      'Escolhe primeiro uma categoria principal';
 
   @override
   String get buddyAvatarsLoadFailed => 'Não foi possível carregar as imagens.';
@@ -28778,6 +28779,11 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get buddySettingLanguage => 'Língua';
+
+  @override
+  String buddyLanguageFixed(String language) {
+    return '$language (fixo)';
+  }
 
   @override
   String get buddySettingCheckIns => 'Check-ins';
@@ -57860,8 +57866,8 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String buddyThenPricePerReply(String price, int replies) {
-    return 'depois, $price moedas por resposta (1 moeda = $replies respostas)';
+  String buddyThenRepliesPerCoin(int replies) {
+    return 'depois 1 moeda = $replies respostas';
   }
 
   @override
@@ -57959,15 +57965,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get buddySafetyLabel => 'Informações de apoio';
 
   @override
-  String get buddyTranslate => 'Traduzir';
-
-  @override
-  String get buddyShowOriginal => 'Ver original';
-
-  @override
-  String get buddyTranslateFailed => 'Não foi possível traduzir esta mensagem.';
-
-  @override
   String get buddyReport => 'Denunciar';
 
   @override
@@ -58034,7 +58031,18 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get buddyToneStepTitle => 'Qual tom o seu Buddy deve ter?';
 
   @override
-  String get buddyLanguageOnlyNote => 'Seu Buddy sempre fala só este idioma.';
+  String get buddyLanguageOnlyNote =>
+      'Seu Buddy sempre fala apenas este idioma. Não é possível alterá-lo depois.';
+
+  @override
+  String get buddyMacroCategoryLabel => 'Categoria principal';
+
+  @override
+  String get buddyMicroCategoryLabel => 'Tema';
+
+  @override
+  String get buddyMicroCategoryHint =>
+      'Escolha primeiro uma categoria principal';
 
   @override
   String get buddyAvatarsLoadFailed => 'Não foi possível carregar as imagens.';
@@ -58059,6 +58067,11 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get buddySettingLanguage => 'Idioma';
+
+  @override
+  String buddyLanguageFixed(String language) {
+    return '$language (fixo)';
+  }
 
   @override
   String get buddySettingCheckIns => 'Check-ins';

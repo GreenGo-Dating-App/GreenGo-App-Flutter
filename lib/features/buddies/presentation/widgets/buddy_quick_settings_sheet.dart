@@ -13,7 +13,7 @@ import 'buddy_avatar.dart';
 import 'buddy_prompts.dart';
 import 'buddy_topic_picker.dart';
 
-/// Quick settings of a Buddy: category, language, tone, picture, name,
+/// Quick settings of a Buddy: category, language (read-only), tone, picture, name,
 /// check-ins, what it remembers, clear chat, delete. Reads the live Buddy
 /// from the surrounding [BuddyChatBloc]; every change is a callable.
 class BuddyQuickSettingsSheet extends StatefulWidget {
@@ -242,17 +242,13 @@ class _BuddyQuickSettingsSheetState extends State<BuddyQuickSettingsSheet> {
                     if (v != null && v != s.topic) await _update({'topic': v});
                   },
                 ),
+                // Owner 2026-10-24: chosen only when the Buddy is created,
+                // never changed (the server refuses `language` updates).
                 _row(
                   key: 'language',
                   label: l10n.buddySettingLanguage,
-                  value: buddyLanguageLabel(l10n, s.language),
-                  onTap: () async {
-                    final v = await _pick(
-                        l10n.buddySettingLanguage,
-                        [for (final x in BuddyCatalog.languages) (x, buddyLanguageLabel(l10n, x))],
-                        s.language);
-                    if (v != null && v != s.language) await _update({'language': v});
-                  },
+                  value: l10n.buddyLanguageFixed(buddyLanguageLabel(l10n, s.language)),
+                  onTap: null,
                 ),
                 _row(
                   key: 'tone',
@@ -371,14 +367,16 @@ class _BuddyQuickSettingsSheetState extends State<BuddyQuickSettingsSheet> {
     required String key,
     required String label,
     required String value,
-    required VoidCallback onTap,
+    required VoidCallback? onTap,
   }) =>
       ListTile(
         key: ValueKey('buddy-setting-$key'),
         contentPadding: EdgeInsets.zero,
         title: Text(label, style: const TextStyle(color: AppColors.textTertiary, fontSize: 13)),
         subtitle: Text(value, style: const TextStyle(color: AppColors.textPrimary, fontSize: 15)),
-        trailing: const Icon(Icons.chevron_right, color: AppColors.textTertiary),
+        // No onTap = read-only (the Buddy language).
+        trailing: Icon(onTap == null ? Icons.lock_outline : Icons.chevron_right,
+            size: onTap == null ? 18 : null, color: AppColors.textTertiary),
         onTap: onTap,
       );
 }

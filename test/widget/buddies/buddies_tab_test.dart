@@ -93,7 +93,7 @@ void main() {
     expect(prompts.calls, ['upgrade:1']);
   });
 
-  testWidgets('price comes from getBuddyStatus: 0.2 coins per reply + prepaid replies',
+  testWidgets('price comes from getBuddyStatus: 1 coin = 3 replies + prepaid replies',
       (tester) async {
     repo.status = const BuddyStatus(
         tier: 'SILVER',
@@ -101,8 +101,8 @@ void main() {
         buddyCount: 0,
         freeRepliesPerDay: 30,
         freeRepliesLeft: 12,
-        coinsPerReply: 0.2,
-        repliesPerCoin: 5,
+        coinsPerReply: 0.33,
+        repliesPerCoin: 3,
         replyCredits: 2);
     await pumpTab(tester);
     repo.buddies.add(const []);
@@ -110,8 +110,7 @@ void main() {
     await tester.pump();
     expect(find.text('0 of 10 Buddies'), findsOneWidget);
     expect(
-        find.text('12 free replies left today · then 0.2 coins per reply (1 coin = 5 replies)'
-            ' · 2 prepaid replies'),
+        find.text('12 free replies left today · then 1 coin = 3 replies · 2 prepaid replies'),
         findsOneWidget);
     expectCentered(tester);
   });

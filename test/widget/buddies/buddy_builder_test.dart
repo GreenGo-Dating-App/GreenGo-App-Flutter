@@ -2,6 +2,7 @@ import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:greengo_chat/core/theme/app_theme.dart';
+import 'package:greengo_chat/features/buddies/domain/buddy_catalog.dart';
 import 'package:greengo_chat/features/buddies/presentation/screens/buddy_builder_screen.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
 
@@ -59,16 +60,20 @@ void main() {
 
   bool nextEnabled(WidgetTester tester) => tester.widget<ElevatedButton>(next()).onPressed != null;
 
-  Future<void> pickCategory(WidgetTester tester, String query, String label) async {
-    final field = find.descendant(
-        of: find.byKey(const ValueKey('buddy-category')), matching: find.byType(TextField));
-    await tester.tap(field);
+  /// Opens the select [key] and picks its item [value].
+  Future<void> pick(WidgetTester tester, String key, String value) async {
+    await tester.ensureVisible(find.byKey(ValueKey(key)));
+    await tester.tap(find.byKey(ValueKey(key)));
     await tester.pumpAndSettle();
-    await tester.enterText(field, query);
-    await tester.pumpAndSettle();
-    await tester.tap(find.widgetWithText(MenuItemButton, label).hitTestable().first);
+    await tester.tap(find.byKey(ValueKey('$key-$value')).last);
     await tester.pumpAndSettle();
   }
+
+  DropdownButton<String> select(WidgetTester tester, String key) =>
+      tester.widget<DropdownButton<String>>(find.byKey(ValueKey(key)));
+
+  List<String?> items(WidgetTester tester, String key) =>
+      [for (final i in select(tester, key).items!) i.value];
 
   Future<void> tapNext(WidgetTester tester) async {
     await tester.ensureVisible(next());
@@ -78,42 +83,69 @@ void main() {
 
   for (final size in const [Size(320, 640), Size(360, 780), Size(412, 915)]) {
     testWidgets(
-        'regression: step 2 continues with the app theme on a ${size.width.toInt()}dp phone',
-        (tester) async {
+        'regression: step 2 (name + picture) continues with the app theme on a '
+        '${size.width.toInt()}dp phone', (tester) async {
       await open(tester, size: size);
-      await pickCategory(tester, 'guit', 'Guitar');
+      await pick(tester, 'buddy-macro', 'arts');
+      await pick(tester, 'buddy-micro', 'guitar');
       await tapNext(tester);
-      expect(find.text('Step 2 of 3'), findsOneWidget);
-      // Before the fix the Next button could not be laid out here.
+      expect(find.text('Step 2 of 2'), findsOneWidget);
+      // Before the fix the footer button could not be laid out (infinite
+      // ElevatedButton min width from the app theme next to a Spacer).
       expect(next().hitTestable(), findsOneWidget);
+      await tester.enterText(find.byKey(const ValueKey('buddy-name-field')), 'Max');
+      await tester.pump();
       expect(nextEnabled(tester), isTrue);
       await tapNext(tester);
-      expect(find.text('Step 3 of 3'), findsOneWidget);
+      expect(repo.created.single.topic, 'guitar');
       expect(tester.takeException(), isNull);
     });
   }
 
-  testWidgets('category + language -> tone -> name + picture -> create', (tester) async {
+  testWidgets('step 1 = four selects; the topic list depends on the main category',
+      (tester) async {
     await open(tester);
-    expect(find.text('Step 1 of 3'), findsOneWidget);
-    // No role, level, CEFR or ready-made suggestions any more.
+    expect(find.text('Step 1 of 2'), findsOneWidget);
+    for (final k in ['buddy-macro', 'buddy-micro', 'buddy-language', 'buddy-tone']) {
+      expect(find.byKey(ValueKey(k)), findsOneWidget, reason: k);
+    }
+    expect(find.text('Main category'), findsOneWidget);
+    expect(find.text('How should your Buddy sound?'), findsOneWidget);
+    expect(find.text("Your Buddy always speaks only this language. It can't be changed later."),
+        findsOneWidget);
+    // No role, level, CEFR or ready-made suggestions.
     expect(find.text('Quick start'), findsNothing);
     expect(find.textContaining('Teacher'), findsNothing);
-    expect(nextEnabled(tester), isFalse, reason: 'a category is required');
+
+    // Topic select disabled until a main category is chosen.
+    expect(select(tester, 'buddy-micro').onChanged, isNull);
+    expect(find.text('Choose a main category first'), findsWidgets);
+    expect(nextEnabled(tester), isFalse, reason: 'a topic is required');
+
+    // Only the topics of the chosen category are offered.
+    await pick(tester, 'buddy-macro', 'languages');
+    expect(items(tester, 'buddy-micro'), [for (final t in BuddyCatalog.topicsOf('languages')) t.id]);
+    expect(items(tester, 'buddy-micro'), isNot(contains('guitar')));
 
     // Practise Italian presets the Buddy language to Italian.
-    await pickCategory(tester, 'ital', 'Practise Italian');
-    final itChip = tester.widget<ChoiceChip>(find.byKey(const ValueKey('buddy-lang-it')));
-    expect(itChip.selected, isTrue);
-    expect(find.text('Your Buddy always speaks only this language.'), findsOneWidget);
+    await pick(tester, 'buddy-micro', 'practice_italian');
+    expect(select(tester, 'buddy-language').value, 'it');
+    expect(nextEnabled(tester), isTrue);
+
+    // Another main category clears the topic (it belonged to the old one).
+    await pick(tester, 'buddy-macro', 'arts');
+    expect(select(tester, 'buddy-micro').value, isNull);
+    expect(items(tester, 'buddy-micro'), [for (final t in BuddyCatalog.topicsOf('arts')) t.id]);
+    expect(nextEnabled(tester), isFalse);
+    expect(select(tester, 'buddy-language').value, 'it', reason: 'language is kept');
+
+    await pick(tester, 'buddy-micro', 'guitar');
+    await pick(tester, 'buddy-language', 'pt_BR');
+    await pick(tester, 'buddy-tone', 'calm');
     await tapNext(tester);
 
-    expect(find.text('How should your Buddy sound?'), findsOneWidget);
-    await tester.tap(find.byKey(const ValueKey('buddy-tone-calm')));
-    await tester.pump();
-    await tapNext(tester);
-
-    // Pictures from buddy_avatars; the first is preselected.
+    // Step 2: name + picture from buddy_avatars; the first is preselected.
+    expect(find.text('Step 2 of 2'), findsOneWidget);
     expect(find.byKey(const ValueKey('buddy-avatar-av_fox')), findsOneWidget);
     expect(find.byKey(const ValueKey('buddy-avatar-av_cat')), findsOneWidget);
     expect(nextEnabled(tester), isFalse, reason: 'name required');
@@ -128,37 +160,36 @@ void main() {
     expect(find.text('Create Buddy'), findsOneWidget);
     await tapNext(tester);
 
-    final s = repo.created.single;
-    expect(s.toMap(), {
+    expect(repo.created.single.toMap(), {
       'name': 'Giulia',
       'avatar': 'av_owl',
-      'topic': 'practice_italian',
+      'topic': 'guitar',
       'tone': 'calm',
-      'language': 'it',
+      'language': 'pt_BR',
       'checkInsEnabled': true,
     });
     expect(repo.avatarReads, 1);
     expect(popped, 'new-buddy');
   });
 
-  testWidgets('category combobox filters by topic and by group label', (tester) async {
+  testWidgets('back from step 2 keeps the choices', (tester) async {
     await open(tester);
-    final field = find.descendant(
-        of: find.byKey(const ValueKey('buddy-category')), matching: find.byType(TextField));
-    await tester.tap(field);
+    await pick(tester, 'buddy-macro', 'food');
+    await pick(tester, 'buddy-micro', 'coffee');
+    await tapNext(tester);
+    await tester.tap(find.byKey(const ValueKey('buddy-builder-back')));
     await tester.pumpAndSettle();
-    await tester.enterText(field, 'arts & mu');
-    await tester.pumpAndSettle();
-    expect(find.widgetWithText(MenuItemButton, 'Guitar').hitTestable(), findsWidgets);
-    expect(find.widgetWithText(MenuItemButton, 'Films').hitTestable(), findsNothing);
+    expect(find.text('Step 1 of 2'), findsOneWidget);
+    expect(select(tester, 'buddy-macro').value, 'food');
+    expect(select(tester, 'buddy-micro').value, 'coffee');
   });
 
   testWidgets('pictures fail to load: retry line, legacy fallback keeps Create possible',
       (tester) async {
     repo.avatarsError = StateError('offline');
     await open(tester);
-    await pickCategory(tester, 'guit', 'Guitar');
-    await tapNext(tester);
+    await pick(tester, 'buddy-macro', 'arts');
+    await pick(tester, 'buddy-micro', 'guitar');
     await tapNext(tester);
     expect(find.byKey(const ValueKey('buddy-avatars-failed')), findsOneWidget);
     expect(find.text("Couldn't load the pictures."), findsOneWidget);
@@ -180,8 +211,8 @@ void main() {
         message: 'tier-required: x',
         details: const {'reason': 'tier-required', 'limit': 1});
     await open(tester);
-    await pickCategory(tester, 'run', 'Running');
-    await tapNext(tester);
+    await pick(tester, 'buddy-macro', 'sport');
+    await pick(tester, 'buddy-micro', 'running');
     await tapNext(tester);
     await tester.enterText(find.byKey(const ValueKey('buddy-name-field')), 'Max');
     await tester.pump();

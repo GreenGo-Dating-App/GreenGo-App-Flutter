@@ -1,13 +1,10 @@
 // Buddy enum ids -> localized labels (generated once from the catalogue;
 // test/unit/buddies/buddy_catalog_test.dart checks every id has an ARB key).
-import 'package:intl/intl.dart';
-
 import '../../../generated/app_localizations.dart';
 
 /// The quota line under the Buddy chat and in the Buddies tab, from the
 /// server's numbers (never a hard-coded price):
-/// "7 free replies left today · then 0.2 coins per reply (1 coin = 5
-/// replies) · 4 prepaid replies".
+/// "7 free replies left today · then 1 coin = 3 replies · 4 prepaid replies".
 String buddyQuotaLine(
   AppLocalizations l10n, {
   required int freeRepliesLeft,
@@ -16,8 +13,7 @@ String buddyQuotaLine(
   int replyCredits = 0,
 }) {
   final price = repliesPerCoin > 1
-      ? l10n.buddyThenPricePerReply(
-          NumberFormat.decimalPattern(l10n.localeName).format(coinsPerReply), repliesPerCoin)
+      ? l10n.buddyThenRepliesPerCoin(repliesPerCoin)
       : l10n.buddyThenCoinsPerReply(coinsPerReply.ceil());
   return [
     l10n.buddyFreeRepliesLeft(freeRepliesLeft),

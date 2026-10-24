@@ -1,9 +1,11 @@
 import 'package:equatable/equatable.dart';
 
+import 'buddy_message.dart';
+
 /// `getBuddyStatus`: plan limits, today's free replies and the reply price.
 ///
 /// Paid replies (2026-10-24): one coin buys [repliesPerCoin] replies
-/// ([coinsPerReply] = 0.2 for 5). The first paid reply takes a coin and
+/// ([coinsPerReply] = 0.33 for 3). The first paid reply takes a coin and
 /// leaves the rest as [replyCredits] (prepaid replies, never expire).
 class BuddyStatus extends Equatable {
   const BuddyStatus({
@@ -44,7 +46,7 @@ class BuddyStatus extends Equatable {
   final int freeRepliesPerDay;
   final int freeRepliesLeft;
 
-  /// Price of one paid reply in coins (0.2 = 1 coin for 5 replies).
+  /// Price of one paid reply in coins (0.33 = 1 coin for 3 replies).
   final num coinsPerReply;
   final int repliesPerCoin;
 
@@ -80,19 +82,28 @@ class BuddyStatus extends Equatable {
       ];
 }
 
-/// `sendBuddyMessage` result.
+/// `sendBuddyMessage` result: one turn = the Buddy's 1-3 bubbles
+/// ([replies]), charged once.
 class BuddySendResult extends Equatable {
   const BuddySendResult({
     required this.reply,
     required this.kind,
     required this.charged,
     required this.freeRepliesLeft,
+    this.replies = const <String>[],
+    this.keywords = const <BuddyKeyword>[],
     this.coinBalance,
     this.replyCredits,
   });
 
   factory BuddySendResult.fromMap(Map<String, dynamic> m) => BuddySendResult(
         reply: (m['reply'] as String?) ?? '',
+        replies: [
+          if (m['replies'] is List)
+            for (final r in m['replies'] as List)
+              if (r is String && r.trim().isNotEmpty) r,
+        ],
+        keywords: BuddyKeyword.listFrom(m['keywords']),
         kind: (m['kind'] as String?) ?? 'chat',
         charged: (m['charged'] as String?) ?? 'none',
         freeRepliesLeft: (m['freeRepliesLeft'] as num?)?.toInt() ?? 0,
@@ -100,7 +111,15 @@ class BuddySendResult extends Equatable {
         replyCredits: (m['replyCredits'] as num?)?.toInt(),
       );
 
+  /// All bubbles joined with new lines (older servers: the only reply).
   final String reply;
+
+  /// The bubbles of this turn, in order (1-3). Empty from older servers and
+  /// for safety replies: use [bubbles].
+  final List<String> replies;
+
+  /// Places the Buddy named in this turn.
+  final List<BuddyKeyword> keywords;
 
   /// `chat` or `safety`.
   final String kind;
@@ -114,6 +133,21 @@ class BuddySendResult extends Equatable {
   /// Prepaid replies left, when the server sent it.
   final int? replyCredits;
 
+  /// What to show, in order: [replies], else [reply]. Anything that looks
+  /// like raw JSON is never shown (the server already prevents it).
+  List<String> get bubbles {
+    final list = replies.isNotEmpty ? replies : [if (reply.trim().isNotEmpty) reply];
+    final clean = [for (final b in list) if (!looksLikeJson(b)) b];
+    return clean;
+  }
+
+  static final RegExp _jsonStart = RegExp(r'^\s*[{\[]');
+  static final RegExp _jsonKey = RegExp(r'"(messages|keywords|reply)"\s*:');
+
+  /// A JSON object / array or a fragment with the reply keys.
+  static bool looksLikeJson(String s) => _jsonStart.hasMatch(s) || _jsonKey.hasMatch(s);
+
   @override
-  List<Object?> get props => [reply, kind, charged, freeRepliesLeft, coinBalance, replyCredits];
+  List<Object?> get props =>
+      [reply, replies, keywords, kind, charged, freeRepliesLeft, coinBalance, replyCredits];
 }

@@ -1,26 +1,41 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/app_sound_service.dart';
+import '../../../../core/services/chat_datasets/chat_datasets.dart';
+import '../../../../core/services/translation_service.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../chat/domain/chat_places.dart';
+import '../../../chat/domain/entities/message.dart';
+import '../../../chat/presentation/widgets/chat_ideas_sheet.dart';
+import '../../../chat/presentation/widgets/chat_places_bar.dart';
+import '../../../chat/presentation/widgets/message_bubble.dart';
 import '../../domain/buddy_catalog.dart';
 import '../../domain/buddy_exception.dart';
 import '../../domain/entities/buddy.dart';
 import '../../domain/entities/buddy_message.dart';
 import '../../domain/repositories/buddies_repository.dart';
 import '../bloc/buddy_chat_bloc.dart';
+import '../buddy_chat_adapter.dart';
 import '../buddy_labels.dart';
 import '../widgets/buddy_avatar.dart';
-import '../widgets/buddy_message_bubble.dart';
+import '../widgets/buddy_bubble_parts.dart';
+import '../widgets/buddy_chat_settings.dart';
 import '../widgets/buddy_prompts.dart';
 import '../widgets/buddy_quick_settings_sheet.dart';
 
-/// A chat with one Buddy (AI chat friend).
+/// A chat with one Buddy (AI chat friend): the 1:1 chat enhanced with AI.
+///
+/// Messages are the 1:1 chat's [MessageBubble] (automatic translation with
+/// the original underneath, language flags, keyword highlights, read-aloud),
+/// with the chat's languages menu and settings, ice-breakers, suggested
+/// sentences and the places bar. No attachments and no language-level badge.
 class BuddyChatScreen extends StatelessWidget {
   const BuddyChatScreen({
     required this.userId,
@@ -100,23 +115,51 @@ class _BuddyChatView extends StatefulWidget {
 class _BuddyChatViewState extends State<_BuddyChatView> {
   final _input = TextEditingController();
   final _scroll = ScrollController();
-  final Map<String, String> _translations = {};
-  final Set<String> _translating = {};
   Timer? _replySound;
+
+  /// The 1:1 chat settings of this Buddy chat (defaults until loaded).
+  BuddyChatSettings _settings = const BuddyChatSettings();
+
+  /// Automatic translations by (target, source, text): the same text keeps
+  /// its translation when the local copy is replaced by the stored one.
+  final Map<String, _Translation> _translations = {};
+  final Set<String> _translating = {};
+
+  /// Keys whose translation failed (Retry re-runs exactly those).
+  final Set<String> _failed = {};
+  bool _failureShown = false;
+  Listenable? _consent;
 
   @override
   void initState() {
     super.initState();
     _scroll.addListener(_onScroll);
     _input.addListener(() => setState(() {}));
+    unawaited(BuddyChatSettings.load(widget.buddyId).then((s) {
+      if (mounted) setState(() => _settings = s);
+    }));
+    // AI consent: translations re-run once allowed, drop when turned off.
+    _consent = widget.prompts.aiConsentChanges?..addListener(_onConsentChanged);
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) widget.prompts.maybePromptAiConsent(context);
+    });
   }
 
   @override
   void dispose() {
+    _consent?.removeListener(_onConsentChanged);
     _replySound?.cancel();
     _input.dispose();
     _scroll.dispose();
     super.dispose();
+  }
+
+  void _onConsentChanged() {
+    if (!mounted) return;
+    setState(() {
+      _translations.clear();
+      _failed.clear();
+    });
   }
 
   void _onScroll() {
@@ -126,11 +169,32 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
     }
   }
 
+  /// The language this chat is read in (the chat's own, else the app's).
+  String get _targetLanguage {
+    final l = Localizations.localeOf(context);
+    return _settings.language ?? BuddyCatalog.languageForLocale(l.languageCode, l.countryCode);
+  }
+
   void _send() {
     final text = _input.text.trim();
     if (text.isEmpty) return;
     context.read<BuddyChatBloc>().add(BuddyChatSendPressed(text));
     _input.clear();
+    if (_scroll.hasClients) {
+      unawaited(_scroll.animateTo(0,
+          duration: const Duration(milliseconds: 300), curve: Curves.easeOut));
+    }
+  }
+
+  /// Puts [text] into the input (ice-breakers, sentences, place questions),
+  /// within the 200-character limit.
+  void _insert(String text) {
+    final runes = text.runes.toList();
+    final clipped = runes.length > BuddyCatalog.maxMessageChars
+        ? String.fromCharCodes(runes.take(BuddyCatalog.maxMessageChars))
+        : text;
+    _input.text = clipped;
+    _input.selection = TextSelection.collapsed(offset: clipped.length);
   }
 
   Future<void> _onError(BuddyChatState state) async {
@@ -174,31 +238,64 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
     });
   }
 
-  Future<void> _toggleTranslate(BuddyMessage m) async {
-    if (_translations.containsKey(m.id)) {
-      setState(() => _translations.remove(m.id));
-      return;
-    }
-    final l10n = AppLocalizations.of(context)!;
-    final messenger = ScaffoldMessenger.of(context);
-    final l = Localizations.localeOf(context);
-    final target = l.countryCode == 'BR' && l.languageCode == 'pt' ? 'pt-BR' : l.languageCode;
-    setState(() => _translating.add(m.id));
-    String? out;
+  // ------------------------------------------------------------ translation
+
+  /// The automatic translation of [m] into [target], like the 1:1 chat
+  /// (every text message; the Buddy's from its known language). Starts it
+  /// when missing; null until it is known.
+  _Translation? _translationFor(BuddyMessage m, String target, String buddyLanguage) {
+    final source = m.isBuddy ? buddyLanguage : 'auto';
+    final key = '$target|$source|${m.text}';
+    final hit = _translations[key];
+    if (hit != null || _failed.contains(key)) return hit;
+    if (_translating.add(key)) unawaited(_translate(key, m.text, source, target));
+    return null;
+  }
+
+  Future<void> _translate(String key, String text, String source, String target) async {
+    TranslationResult r;
     try {
-      out = await widget.prompts.translate(context, m.text, target);
+      r = await widget.prompts
+          .autoTranslate(text, source: source, target: target.replaceAll('_', '-'));
     } catch (_) {
-      out = null;
+      r = TranslationResult(original: text, text: text, failed: true);
     }
     if (!mounted) return;
     setState(() {
-      _translating.remove(m.id);
-      if (out != null && out.trim() != m.text.trim()) _translations[m.id] = out;
+      _translating.remove(key);
+      if (r.consentRequired) {
+        // No AI consent: the original shows; re-runs once it is given.
+        _translations[key] = const _Translation(null, null);
+      } else if (r.failed) {
+        _failed.add(key);
+      } else {
+        _translations[key] = _Translation(r.isTranslated ? r.text : null, r.detectedLanguage);
+      }
     });
-    if (out == null) {
-      messenger.showSnackBar(SnackBar(content: Text(l10n.buddyTranslateFailed)));
-    }
+    if (r.failed && !r.consentRequired) _onTranslationFailed();
   }
+
+  void _onTranslationFailed() {
+    if (_failureShown || !mounted) return;
+    _failureShown = true;
+    final l10n = AppLocalizations.of(context)!;
+    ScaffoldMessenger.maybeOf(context)?.showSnackBar(SnackBar(
+      content: Text(l10n.chatTranslationFailed),
+      duration: const Duration(seconds: 6),
+      action: SnackBarAction(
+        label: l10n.retry,
+        onPressed: () {
+          if (!mounted) return;
+          setState(() {
+            _failed.clear();
+            _failureShown = false;
+          });
+        },
+      ),
+    ));
+  }
+
+  // ---------------------------------------------------------------- menus
 
   void _openSettings(Buddy buddy) {
     final bloc = context.read<BuddyChatBloc>();
@@ -227,6 +324,55 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
     );
   }
 
+  /// The 1:1 chat's languages menu: your language + chat settings.
+  void _openLanguagesMenu() {
+    showBuddyChatLanguagesMenu(
+      context,
+      targetLanguage: _targetLanguage,
+      onPickLanguage: _pickLanguage,
+      onSettings: () => showBuddyChatSettingsSheet(
+        context,
+        buddyId: widget.buddyId,
+        settings: _settings,
+        onChanged: (s) {
+          if (mounted) setState(() => _settings = s);
+        },
+      ),
+    );
+  }
+
+  Future<void> _pickLanguage() async {
+    final l10n = AppLocalizations.of(context)!;
+    final messenger = ScaffoldMessenger.of(context);
+    final code = await showBuddyChatLanguagePicker(context, selected: _targetLanguage);
+    if (code == null || !mounted) return;
+    setState(() => _settings = _settings.copyWith(language: code));
+    await BuddyChatSettings.saveLanguage(widget.buddyId, code);
+    messenger.showSnackBar(SnackBar(
+      content: Text(l10n.chatLanguageSetTo(buddyLanguageLabel(l10n, code))),
+      duration: const Duration(seconds: 1),
+    ));
+  }
+
+  void _openIdeas({required bool sentences, required String buddyLanguage}) {
+    ChatIdeasSheet.show(
+      context,
+      sentences: sentences,
+      // The Buddy speaks only its language: ideas in it, yours underneath.
+      partnerLanguage: buddyLanguage,
+      myLanguage: _targetLanguage,
+      onPick: _insert,
+    );
+  }
+
+  void _copy(Message m) {
+    final l10n = AppLocalizations.of(context)!;
+    unawaited(Clipboard.setData(ClipboardData(text: m.translatedContent ?? m.content)));
+    ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(l10n.buddyCopied)));
+  }
+
+  // ---------------------------------------------------------------- build
+
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
@@ -252,6 +398,7 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
           final buddy = state.buddy ?? widget.initialBuddy;
           final name = buddy?.name ?? '';
           final avatar = buddy?.settings.avatar ?? BuddyCatalog.avatars.first;
+          final language = buddy?.settings.language ?? 'en';
           return Scaffold(
             backgroundColor: AppColors.backgroundDark,
             appBar: AppBar(
@@ -290,6 +437,13 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
                 ],
               ),
               actions: [
+                // The 1:1 chat's languages & chat settings menu.
+                IconButton(
+                  key: const ValueKey('buddy-chat-languages'),
+                  tooltip: l10n.chatLanguages,
+                  icon: const Icon(Icons.translate, color: AppColors.textSecondary),
+                  onPressed: _openLanguagesMenu,
+                ),
                 IconButton(
                   key: const ValueKey('buddy-settings-button'),
                   tooltip: l10n.buddyQuickSettings,
@@ -298,11 +452,49 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
                 ),
               ],
             ),
-            body: Column(
-              children: [
-                Expanded(child: _messages(context, state, name, avatar)),
-                if (state.locked) _lockedBar(l10n, state) else _composer(l10n, state, name),
-              ],
+            // Rebuilt when the offline keyword index arrives (highlights,
+            // places), like the 1:1 chat.
+            body: ValueListenableBuilder<int>(
+              valueListenable: ChatDatasets.instance.changes,
+              builder: (context, _, __) {
+                final target = _targetLanguage;
+                final index = ChatDatasets.instance.keywords;
+                final adapted = <(BuddyMessage, Message)>[];
+                for (final m in state.visibleMessages) {
+                  final tr = _translationFor(m, target, language);
+                  adapted.add((
+                    m,
+                    BuddyChatAdapter.toMessage(m,
+                        uid: widget.userId,
+                        buddyId: widget.buddyId,
+                        buddyLanguage: language,
+                        translated: tr?.text,
+                        detectedLanguage: tr?.detected,
+                        index: index),
+                  ));
+                }
+                final sources = [
+                  for (final (_, msg) in adapted) BuddyChatAdapter.placeSource(msg, widget.userId),
+                ];
+                final places = _settings.showCulturalTips
+                    ? ChatPlaces.collect(sources, index: index)
+                    : const <ChatPlace>[];
+                return Column(
+                  children: [
+                    Expanded(child: _messages(context, state, adapted, name, avatar, language, target)),
+                    if (!state.locked && _settings.showCulturalTips)
+                      ChatPlacesBar(
+                        places: places,
+                        partnerPlaces: ChatPlaces.latestFromPartner(places, sources),
+                        onInsert: _insert,
+                      ),
+                    if (state.locked)
+                      _lockedBar(l10n, state)
+                    else
+                      _composer(l10n, state, name, language, places),
+                  ],
+                );
+              },
             ),
           );
         },
@@ -310,7 +502,9 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
     );
   }
 
-  Widget _messages(BuildContext context, BuddyChatState state, String name, String avatar) {
+  Widget _messages(BuildContext context, BuddyChatState state,
+      List<(BuddyMessage, Message)> adapted, String name, String avatar, String language,
+      String target) {
     final l10n = AppLocalizations.of(context)!;
     if (state.loading) {
       return const Center(child: CircularProgressIndicator(color: AppColors.richGold));
@@ -324,8 +518,8 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
         ),
       );
     }
-    final msgs = state.messages.reversed.toList();
-    final typing = state.waitingReply ? 1 : 0;
+    final msgs = adapted.reversed.toList();
+    final typing = state.buddyTyping ? 1 : 0;
     // Reversed list: index 0 = newest (bottom). Extra rows: the typing
     // indicator at the bottom, the AI notice (and a spinner) at the top.
     final count = typing + msgs.length + 1;
@@ -333,7 +527,7 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
       key: const ValueKey('buddy-messages'),
       controller: _scroll,
       reverse: true,
-      padding: const EdgeInsets.only(top: 8, bottom: 8),
+      padding: const EdgeInsets.symmetric(vertical: 12),
       itemCount: count,
       itemBuilder: (context, i) {
         if (typing == 1 && i == 0) {
@@ -350,31 +544,44 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
                       dimension: 18,
                       child: CircularProgressIndicator(strokeWidth: 2, color: AppColors.richGold)),
                 ),
-              if (!state.hasMore) _notice(l10n, name, empty: msgs.isEmpty),
+              if (!state.hasMore) _notice(l10n, name, language, empty: msgs.isEmpty),
             ],
           );
         }
-        final m = msgs[j];
-        return BuddyMessageBubble(
+        final (m, msg) = msgs[j];
+        return MessageBubble(
           key: ValueKey('buddy-msg-${m.id}'),
-          message: m,
-          avatarId: avatar,
-          translation: _translations[m.id],
-          translating: _translating.contains(m.id),
-          onTranslate: m.isBuddy ? () => _toggleTranslate(m) : null,
-          onReport: m.isBuddy && !m.isLocal
-              ? () => widget.prompts.report(context,
-                  uid: widget.userId, buddyId: widget.buddyId, messageId: m.id, text: m.text)
-              : null,
-          onRetry: m.delivery == BuddyDelivery.failed
-              ? () => context.read<BuddyChatBloc>().add(BuddyChatRetryPressed(m.id))
-              : null,
+          message: msg,
+          isCurrentUser: !m.isBuddy,
+          currentUserId: widget.userId,
+          otherUserLanguage: target,
+          userSelectedLanguage: target,
+          showOriginalText: _settings.showOriginalText,
+          showCulturalTips: _settings.showCulturalTips,
+          showPronunciation: _settings.showPronunciation,
+          showLanguageFlags: _settings.showLanguageFlags,
+          ttsReadTranslated: _settings.ttsReadTranslated,
+          header: m.isBuddy ? BuddyBubbleHeader(kind: m.kind) : null,
+          footer: buddyBubbleFooter(
+            context,
+            messageId: m.id,
+            onRetry: m.delivery == BuddyDelivery.failed
+                ? () => context.read<BuddyChatBloc>().add(BuddyChatRetryPressed(m.id))
+                : null,
+            onReport: m.isBuddy && !m.isLocal
+                ? () => widget.prompts.report(context,
+                    uid: widget.userId, buddyId: widget.buddyId, messageId: m.id, text: m.text)
+                : null,
+          ),
+          // No reply / forward / reactions with a Buddy: long-press copies.
+          onLongPressOverride: () => _copy(msg),
         );
       },
     );
   }
 
-  Widget _notice(AppLocalizations l10n, String name, {required bool empty}) => Padding(
+  Widget _notice(AppLocalizations l10n, String name, String language, {required bool empty}) =>
+      Padding(
         padding: const EdgeInsets.fromLTRB(24, 12, 24, 12),
         child: Column(
           children: [
@@ -398,10 +605,45 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
               Text(l10n.buddyChatEmpty(name),
                   textAlign: TextAlign.center,
                   style: const TextStyle(color: AppColors.textSecondary, fontSize: 14)),
+              if (_settings.showIcebreakers) ...[
+                const SizedBox(height: 12),
+                _emptyChatIcebreakers(l10n, language),
+              ],
             ],
           ],
         ),
       );
+
+  /// Three offline ice-breakers in an empty chat, like the 1:1 chat (in the
+  /// Buddy's language: it speaks only that one).
+  Widget _emptyChatIcebreakers(AppLocalizations l10n, String language) {
+    final datasets = ChatDatasets.instance;
+    return FutureBuilder<void>(
+      future: datasets.icebreakers == null ? datasets.ensure('icebreakers') : null,
+      builder: (context, _) {
+        final picks = ChatIdeasSheet.randomIcebreakers(3, seed: widget.buddyId.hashCode);
+        if (picks.isEmpty) return const SizedBox.shrink();
+        return Column(
+          key: const ValueKey('buddy-empty-icebreakers'),
+          children: [
+            for (final p in picks)
+              Padding(
+                padding: const EdgeInsets.only(bottom: 8),
+                child: ActionChip(
+                  avatar: const Icon(Icons.lightbulb_outline, size: 16, color: AppColors.richGold),
+                  label: Text(p.text.of(language), maxLines: 2, overflow: TextOverflow.ellipsis),
+                  onPressed: () => _insert(p.text.of(language)),
+                ),
+              ),
+            TextButton(
+              onPressed: () => _openIdeas(sentences: false, buddyLanguage: language),
+              child: Text(l10n.chatSuggestionsTooltip),
+            ),
+          ],
+        );
+      },
+    );
+  }
 
   Widget _lockedBar(AppLocalizations l10n, BuddyChatState state) => SafeArea(
         top: false,
@@ -434,23 +676,45 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
         ),
       );
 
-  Widget _composer(AppLocalizations l10n, BuddyChatState state, String name) {
+  Widget _tool({
+    required Key key,
+    required IconData icon,
+    required String tooltip,
+    required VoidCallback onPressed,
+  }) =>
+      IconButton(
+        key: key,
+        tooltip: tooltip,
+        icon: Icon(icon),
+        color: AppColors.richGold,
+        onPressed: onPressed,
+      );
+
+  /// The 1:1 chat's input area without attachments (no photo, video, voice
+  /// note, location or + button): quota line, tools, text field, send.
+  Widget _composer(AppLocalizations l10n, BuddyChatState state, String name, String language,
+      List<ChatPlace> places) {
     final left = state.freeRepliesLeft;
     final length = _input.text.runes.length;
     final canSend = _input.text.trim().isNotEmpty &&
         length <= BuddyCatalog.maxMessageChars &&
         !state.waitingReply &&
         !state.loading;
-    return SafeArea(
-      top: false,
-      child: Padding(
-        padding: const EdgeInsets.fromLTRB(12, 4, 12, 8),
+    final tools =
+        _settings.showIcebreakers || _settings.showSentences || _settings.showCulturalTips;
+    return Container(
+      decoration: const BoxDecoration(
+        color: AppColors.backgroundCard,
+        border: Border(top: BorderSide(color: AppColors.divider, width: 1)),
+      ),
+      child: SafeArea(
+        top: false,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             if (left != null)
               Padding(
-                padding: const EdgeInsets.only(bottom: 6),
+                padding: const EdgeInsets.fromLTRB(16, 6, 16, 0),
                 child: Text(
                   buddyQuotaLine(l10n,
                       freeRepliesLeft: left,
@@ -462,52 +726,119 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
                   style: const TextStyle(color: AppColors.textTertiary, fontSize: 12),
                 ),
               ),
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                Expanded(
-                  child: TextField(
-                    key: const ValueKey('buddy-input'),
-                    controller: _input,
-                    minLines: 1,
-                    maxLines: 5,
-                    maxLength: BuddyCatalog.maxMessageChars,
-                    textInputAction: TextInputAction.newline,
-                    style: const TextStyle(color: AppColors.textPrimary),
-                    decoration: InputDecoration(
-                      hintText: l10n.buddyInputHint(name),
-                      hintStyle: const TextStyle(color: AppColors.textTertiary),
-                      counterStyle: const TextStyle(color: AppColors.textTertiary, fontSize: 11),
-                      filled: true,
-                      fillColor: AppColors.backgroundCard,
-                      contentPadding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(20),
-                        borderSide: BorderSide.none,
+            if (tools)
+              Padding(
+                padding: const EdgeInsets.fromLTRB(8, 2, 8, 0),
+                child: Row(
+                  key: const ValueKey('buddy-tools-row'),
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    if (_settings.showIcebreakers)
+                      _tool(
+                        key: const ValueKey('buddy-tool-icebreakers'),
+                        icon: Icons.waving_hand_outlined,
+                        tooltip: l10n.chatIcebreakersTitle,
+                        onPressed: () => _openIdeas(sentences: false, buddyLanguage: language),
+                      ),
+                    if (_settings.showSentences)
+                      _tool(
+                        key: const ValueKey('buddy-tool-sentences'),
+                        icon: Icons.format_quote_outlined,
+                        tooltip: l10n.chatSuggestionsTitle,
+                        onPressed: () => _openIdeas(sentences: true, buddyLanguage: language),
+                      ),
+                    if (_settings.showCulturalTips) ChatPlacesButton(places: places),
+                  ],
+                ),
+              ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 4, 12, 8),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  Expanded(
+                    child: TextField(
+                      key: const ValueKey('buddy-input'),
+                      controller: _input,
+                      minLines: 1,
+                      maxLines: 4,
+                      maxLength: BuddyCatalog.maxMessageChars,
+                      // Hard limit in code points, like the server (Array.from).
+                      inputFormatters: const [_MaxRunesFormatter(BuddyCatalog.maxMessageChars)],
+                      textCapitalization: TextCapitalization.sentences,
+                      textInputAction: TextInputAction.newline,
+                      style: const TextStyle(color: AppColors.textPrimary, fontSize: 16),
+                      buildCounter: (context,
+                              {required currentLength, required isFocused, maxLength}) =>
+                          Text(
+                        '$length/${BuddyCatalog.maxMessageChars}',
+                        key: const ValueKey('buddy-input-counter'),
+                        style: TextStyle(
+                          color: length >= BuddyCatalog.maxMessageChars
+                              ? Colors.red
+                              : AppColors.textTertiary,
+                          fontSize: 12,
+                        ),
+                      ),
+                      decoration: InputDecoration(
+                        hintText: l10n.buddyInputHint(name),
+                        hintStyle: const TextStyle(color: AppColors.textTertiary),
+                        filled: true,
+                        fillColor: AppColors.backgroundDark,
+                        contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(24),
+                          borderSide: BorderSide.none,
+                        ),
                       ),
                     ),
                   ),
-                ),
-                const SizedBox(width: 8),
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 22),
-                  child: IconButton.filled(
-                    key: const ValueKey('buddy-send'),
-                    tooltip: l10n.chatSend,
-                    style: IconButton.styleFrom(
-                      backgroundColor: AppColors.richGold,
-                      foregroundColor: AppColors.deepBlack,
-                      disabledBackgroundColor: AppColors.backgroundCard,
+                  const SizedBox(width: 8),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 22),
+                    child: IconButton.filled(
+                      key: const ValueKey('buddy-send'),
+                      tooltip: l10n.chatSend,
+                      style: IconButton.styleFrom(
+                        backgroundColor: AppColors.richGold,
+                        foregroundColor: AppColors.deepBlack,
+                        disabledBackgroundColor: AppColors.backgroundDark,
+                      ),
+                      onPressed: canSend ? _send : null,
+                      icon: const Icon(Icons.send),
                     ),
-                    onPressed: canSend ? _send : null,
-                    icon: const Icon(Icons.send),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ],
         ),
       ),
+    );
+  }
+}
+
+/// An automatic translation: [text] null = nothing to show (same language,
+/// or no AI consent); [detected] = the source language reported.
+class _Translation {
+  const _Translation(this.text, this.detected);
+  final String? text;
+  final String? detected;
+}
+
+/// Refuses text longer than [max] code points (the server counts with
+/// `Array.from`); a longer paste is cut at [max].
+class _MaxRunesFormatter extends TextInputFormatter {
+  const _MaxRunesFormatter(this.max);
+  final int max;
+
+  @override
+  TextEditingValue formatEditUpdate(TextEditingValue oldValue, TextEditingValue newValue) {
+    if (newValue.text.runes.length <= max) return newValue;
+    final clipped = String.fromCharCodes(newValue.text.runes.take(max));
+    return TextEditingValue(
+      text: clipped,
+      selection: TextSelection.collapsed(offset: clipped.length),
     );
   }
 }

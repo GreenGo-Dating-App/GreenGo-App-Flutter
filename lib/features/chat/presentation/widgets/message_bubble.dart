@@ -59,6 +59,9 @@ class MessageBubble extends StatefulWidget {
     this.onAlbumTap,
     this.onReact,
     this.userMembershipTier,
+    this.header,
+    this.footer,
+    this.onLongPressOverride,
   });
   final Message message;
   final bool isCurrentUser;
@@ -83,6 +86,20 @@ class MessageBubble extends StatefulWidget {
   /// failure.
   final Future<bool> Function(Message message, String emoji)? onReact;
   final MembershipTier? userMembershipTier;
+
+  /// Optional line at the top INSIDE the bubble (e.g. the AI badge of a
+  /// Buddy message). Null (default) for person-to-person chats.
+  final Widget? header;
+
+  /// Optional row right UNDER the bubble, outside its gestures (e.g. Report /
+  /// "Not sent, retry" in a Buddy chat). Null (default) for person-to-person
+  /// chats: the widget tree is then unchanged.
+  final Widget? footer;
+
+  /// Replaces the long-press options sheet (reply, forward, star, react,
+  /// report), for chats where those make no sense (Buddy chat). Null
+  /// (default) keeps the sheet.
+  final VoidCallback? onLongPressOverride;
 
   @override
   State<MessageBubble> createState() => _MessageBubbleState();
@@ -383,9 +400,9 @@ class _MessageBubbleState extends State<MessageBubble> {
       return _buildAlbumMessage(context, message, isCurrentUser);
     }
 
-    return GestureDetector(
+    final bubble = GestureDetector(
       onDoubleTap: (message.type == MessageType.text && widget.showPronunciation) ? _playTts : null,
-      onLongPress: () => _showMessageOptions(context),
+      onLongPress: widget.onLongPressOverride ?? () => _showMessageOptions(context),
       child: Align(
         alignment: isCurrentUser ? Alignment.centerRight : Alignment.centerLeft,
         child: Column(
@@ -418,6 +435,7 @@ class _MessageBubbleState extends State<MessageBubble> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              if (widget.header != null) widget.header!,
               // Reply indicator if this is a reply
               if (message.metadata?['replyToMessageId'] != null)
                 _buildReplyIndicator(),
@@ -521,6 +539,18 @@ class _MessageBubbleState extends State<MessageBubble> {
           ],
         ),
       ),
+    );
+    final footer = widget.footer;
+    if (footer == null) return bubble;
+    // Outside the bubble's gestures, so its taps are not delayed by the
+    // double-tap (read-aloud) recognizer.
+    return Column(
+      crossAxisAlignment: isCurrentUser ? CrossAxisAlignment.end : CrossAxisAlignment.start,
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        bubble,
+        Padding(padding: const EdgeInsets.symmetric(horizontal: 16), child: footer),
+      ],
     );
   }
 

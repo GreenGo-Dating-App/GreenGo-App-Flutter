@@ -18305,17 +18305,13 @@
       }
     }
   },
-  "buddyThenPricePerReply": "then {price} coins per reply (1 coin = {replies} replies)",
-  "@buddyThenPricePerReply": {
-    "description": "After the free replies: price of one Buddy reply when one coin buys several replies. price is a localized decimal like 0.2",
+  "buddyThenRepliesPerCoin": "then 1 coin = {replies} replies",
+  "@buddyThenRepliesPerCoin": {
+    "description": "After the free replies, when one coin buys several Buddy replies; shown after the free-replies count",
     "placeholders": {
-      "price": {
-        "type": "String",
-        "example": "0.2"
-      },
       "replies": {
         "type": "int",
-        "example": "5"
+        "example": "3"
       }
     }
   },
@@ -18430,18 +18426,6 @@
   "@buddySafetyLabel": {
     "description": "Label on a safety message with helplines"
   },
-  "buddyTranslate": "Translate",
-  "@buddyTranslate": {
-    "description": "Button on a Buddy message: translate it"
-  },
-  "buddyShowOriginal": "Show original",
-  "@buddyShowOriginal": {
-    "description": "Button: show the untranslated Buddy message"
-  },
-  "buddyTranslateFailed": "Could not translate this message.",
-  "@buddyTranslateFailed": {
-    "description": "Snackbar: translation failed"
-  },
   "buddyReport": "Report",
   "@buddyReport": {
     "description": "Button on a Buddy message: report it"
@@ -18541,9 +18525,21 @@
   "@buddyToneStepTitle": {
     "description": "Title of the tone step of the Buddy builder"
   },
-  "buddyLanguageOnlyNote": "Your Buddy always speaks only this language.",
+  "buddyLanguageOnlyNote": "Your Buddy always speaks only this language. It can't be changed later.",
   "@buddyLanguageOnlyNote": {
     "description": "Note under the Buddy language choice"
+  },
+  "buddyMacroCategoryLabel": "Main category",
+  "@buddyMacroCategoryLabel": {
+    "description": "Buddy builder step 1: label of the first select box, the main category (topic group)"
+  },
+  "buddyMicroCategoryLabel": "Topic",
+  "@buddyMicroCategoryLabel": {
+    "description": "Buddy builder step 1: label of the second select box, a topic of the chosen main category"
+  },
+  "buddyMicroCategoryHint": "Choose a main category first",
+  "@buddyMicroCategoryHint": {
+    "description": "Buddy builder: shown in the topic select box while no main category is chosen"
   },
   "buddyAvatarsLoadFailed": "Couldn't load the pictures.",
   "@buddyAvatarsLoadFailed": {
@@ -18576,6 +18572,16 @@
   "buddySettingLanguage": "Language",
   "@buddySettingLanguage": {
     "description": "Settings row label"
+  },
+  "buddyLanguageFixed": "{language} (fixed)",
+  "@buddyLanguageFixed": {
+    "description": "Buddy settings: the Buddy language, shown read-only (chosen when the Buddy is created, never changed)",
+    "placeholders": {
+      "language": {
+        "type": "String",
+        "example": "English"
+      }
+    }
   },
   "buddySettingCheckIns": "Check-ins",
   "@buddySettingCheckIns": {

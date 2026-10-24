@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -106,17 +108,23 @@ class BuddyPrompts {
     return await showAiConsentSheet(context) == true;
   }
 
-  /// Translates a Buddy message into the app language through the private
-  /// (contracted) translation path. Null = could not translate.
-  Future<String?> translate(BuildContext context, String text, String target) async {
-    final svc = TranslationService();
-    var r = await svc.translateDetailed(text: text, targetLanguage: target);
-    if (r.consentRequired && context.mounted) {
-      if (await showAiConsentSheet(context) != true) return null;
-      r = await svc.translateDetailed(text: text, targetLanguage: target);
-    }
-    return r.failed ? null : r.text;
-  }
+  /// Automatic translation of a Buddy chat message, exactly like the 1:1
+  /// chat: [TranslationService.translateDetailed] (private text -> the
+  /// `translatePrivateText` callable with `texts`; Buddy messages are not in
+  /// `conversations`, so there is no message ref). Never throws; without AI
+  /// consent the result is [TranslationResult.consentRequired] (the original
+  /// is shown, no prompt per message).
+  Future<TranslationResult> autoTranslate(String text,
+          {required String source, required String target}) =>
+      TranslationService()
+          .translateDetailed(text: text, sourceLanguage: source, targetLanguage: target);
+
+  /// Asks for the AI notice once when the chat opens (like the 1:1 chat).
+  void maybePromptAiConsent(BuildContext context) =>
+      unawaited(AiConsentGate.maybePromptOnce(context));
+
+  /// Changes of the AI consent (translations re-run / are dropped).
+  Listenable? get aiConsentChanges => AiConsentService.instance.statusListenable;
 
   /// The shared content report flow (reason picker -> `reports`).
   Future<void> report(BuildContext context,

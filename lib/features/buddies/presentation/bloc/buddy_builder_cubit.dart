@@ -6,11 +6,14 @@ import '../../domain/buddy_exception.dart';
 import '../../domain/entities/buddy.dart';
 import '../../domain/repositories/buddies_repository.dart';
 
-/// The Buddy builder: (1) category + language, (2) tone, (3) name + picture.
+/// The Buddy builder (owner 2026-10-24): (1) four selects: main category
+/// ([group]), topic of that category ([topic]), [language] and [tone];
+/// (2) name + picture.
 class BuddyBuilderState extends Equatable {
   const BuddyBuilderState({
     required this.language,
     this.step = 0,
+    this.group,
     this.topic,
     this.tone = 'warm',
     this.name = '',
@@ -19,9 +22,14 @@ class BuddyBuilderState extends Equatable {
     this.saving = false,
   });
 
-  static const int steps = 3;
+  static const int steps = 2;
 
   final int step;
+
+  /// The main category: one of [kBuddyTopicGroups].
+  final String? group;
+
+  /// A topic of [group] (reset when the main category changes).
   final String? topic;
   final String language;
   final String tone;
@@ -34,6 +42,9 @@ class BuddyBuilderState extends Equatable {
 
   bool get isLastStep => step == steps - 1;
 
+  /// The topics the second select offers (empty until a category is chosen).
+  List<BuddyTopic> get groupTopics => group == null ? const [] : BuddyCatalog.topicsOf(group!);
+
   /// The name as the server stores it, or null when it would be refused.
   String? get cleanName => BuddyCatalog.cleanName(name);
 
@@ -44,9 +55,9 @@ class BuddyBuilderState extends Equatable {
     if (saving) return false;
     switch (step) {
       case 0:
-        return topic != null;
-      case 1:
-        return BuddyCatalog.tones.contains(tone);
+        return topic != null &&
+            BuddyCatalog.languages.contains(language) &&
+            BuddyCatalog.tones.contains(tone);
       default:
         return cleanName != null && avatar != null;
     }
@@ -61,7 +72,8 @@ class BuddyBuilderState extends Equatable {
 
   BuddyBuilderState copyWith({
     int? step,
-    String? topic,
+    String? group,
+    String? Function()? topic,
     String? language,
     String? tone,
     String? name,
@@ -71,7 +83,8 @@ class BuddyBuilderState extends Equatable {
   }) =>
       BuddyBuilderState(
         step: step ?? this.step,
-        topic: topic ?? this.topic,
+        group: group ?? this.group,
+        topic: topic != null ? topic() : this.topic,
         language: language ?? this.language,
         tone: tone ?? this.tone,
         name: name ?? this.name,
@@ -81,7 +94,8 @@ class BuddyBuilderState extends Equatable {
       );
 
   @override
-  List<Object?> get props => [step, topic, language, tone, name, avatar, nameTouched, saving];
+  List<Object?> get props =>
+      [step, group, topic, language, tone, name, avatar, nameTouched, saving];
 }
 
 class BuddyBuilderCubit extends Cubit<BuddyBuilderState> {
@@ -92,10 +106,23 @@ class BuddyBuilderCubit extends Cubit<BuddyBuilderState> {
 
   final BuddiesRepository _repo;
 
-  /// A practice topic ("Practise Italian") also sets the Buddy language.
+  /// The main category. A different one clears the topic (it belonged to
+  /// the previous category).
+  void selectGroup(String group) {
+    if (!kBuddyTopicGroups.contains(group) || group == state.group) return;
+    emit(state.copyWith(group: group, topic: () => null));
+  }
+
+  /// A topic (of any category: its category is selected with it). A
+  /// practice topic ("Practise Italian") also sets the Buddy language.
   void selectTopic(String id) {
-    if (!BuddyCatalog.isKnownTopic(id)) return;
-    emit(state.copyWith(topic: id, language: BuddyCatalog.practiceLanguage(id)));
+    final t = BuddyCatalog.topicById(id);
+    if (t == null) return;
+    emit(state.copyWith(
+      group: t.group,
+      topic: () => id,
+      language: BuddyCatalog.practiceLanguage(id),
+    ));
   }
 
   void selectLanguage(String code) {

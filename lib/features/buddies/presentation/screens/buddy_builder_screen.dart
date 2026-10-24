@@ -11,10 +11,10 @@ import '../bloc/buddy_builder_cubit.dart';
 import '../buddy_labels.dart';
 import '../widgets/buddy_avatar.dart';
 import '../widgets/buddy_prompts.dart';
-import '../widgets/buddy_topic_picker.dart';
 
-/// The 3-step Buddy builder: (1) category + language, (2) tone,
-/// (3) name + picture -> Create. Pops the new Buddy id.
+/// The 2-step Buddy builder (owner 2026-10-24): (1) four selects: main
+/// category, topic of that category, language, tone; (2) name + picture ->
+/// Create. Pops the new Buddy id.
 class BuddyBuilderScreen extends StatelessWidget {
   const BuddyBuilderScreen({
     required this.userId,
@@ -127,7 +127,7 @@ class _BuddyBuilderViewState extends State<_BuddyBuilderView> {
     final l10n = AppLocalizations.of(context)!;
     return BlocBuilder<BuddyBuilderCubit, BuddyBuilderState>(
       builder: (context, s) {
-        final titles = [l10n.buddyTopicPrompt, l10n.buddyToneStepTitle, l10n.buddyNamePrompt];
+        final titles = [l10n.buddyTopicPrompt, l10n.buddyNamePrompt];
         return PopScope(
           canPop: s.step == 0,
           onPopInvokedWithResult: (didPop, _) {
@@ -228,29 +228,41 @@ class _BuddyBuilderViewState extends State<_BuddyBuilderView> {
         return ListView(
           padding: const EdgeInsets.all(16),
           children: [
-            BuddyCategoryField(selected: s.topic, onSelected: cubit.selectTopic),
-            const SizedBox(height: 24),
-            _label(l10n.buddyLanguagePrompt),
-            _chips(
-              [for (final c in BuddyCatalog.languages) (c, buddyLanguageLabel(l10n, c))],
-              s.language,
-              cubit.selectLanguage,
-              'buddy-lang',
+            _select(
+              key: const ValueKey('buddy-macro'),
+              label: l10n.buddyMacroCategoryLabel,
+              value: s.group,
+              options: [for (final g in kBuddyTopicGroups) (g, buddyTopicGroupLabel(l10n, g))],
+              onChanged: cubit.selectGroup,
             ),
-            const SizedBox(height: 8),
+            const SizedBox(height: 16),
+            _select(
+              // Rebuilt per category: its list (and choice) belong to it.
+              key: const ValueKey('buddy-micro'),
+              label: l10n.buddyMicroCategoryLabel,
+              hint: s.group == null ? l10n.buddyMicroCategoryHint : null,
+              value: s.topic,
+              options: [for (final t in s.groupTopics) (t.id, buddyTopicLabel(l10n, t.id))],
+              onChanged: s.group == null ? null : cubit.selectTopic,
+            ),
+            const SizedBox(height: 16),
+            _select(
+              key: const ValueKey('buddy-language'),
+              label: l10n.buddyLanguagePrompt,
+              value: s.language,
+              options: [for (final c in BuddyCatalog.languages) (c, buddyLanguageLabel(l10n, c))],
+              onChanged: cubit.selectLanguage,
+            ),
+            const SizedBox(height: 6),
             Text(l10n.buddyLanguageOnlyNote,
                 style: const TextStyle(color: AppColors.textTertiary, fontSize: 12)),
-          ],
-        );
-      case 1:
-        return ListView(
-          padding: const EdgeInsets.all(16),
-          children: [
-            _chips(
-              [for (final t in BuddyCatalog.tones) (t, buddyToneLabel(l10n, t))],
-              s.tone,
-              cubit.selectTone,
-              'buddy-tone',
+            const SizedBox(height: 16),
+            _select(
+              key: const ValueKey('buddy-tone'),
+              label: l10n.buddyToneStepTitle,
+              value: s.tone,
+              options: [for (final t in BuddyCatalog.tones) (t, buddyToneLabel(l10n, t))],
+              onChanged: cubit.selectTone,
             ),
           ],
         );
@@ -295,23 +307,53 @@ class _BuddyBuilderViewState extends State<_BuddyBuilderView> {
                 color: AppColors.textSecondary, fontWeight: FontWeight.w600, fontSize: 14)),
       );
 
-  Widget _chips(List<(String, String)> options, String? selected, ValueChanged<String> onPick,
-          String keyPrefix) =>
-      Wrap(
-        spacing: 8,
-        runSpacing: 8,
-        children: [
-          for (final (value, label) in options)
-            ChoiceChip(
-              key: ValueKey('$keyPrefix-$value'),
-              label: Text(label),
-              selected: selected == value,
-              onSelected: (_) => onPick(value),
-              selectedColor: AppColors.richGold,
-              backgroundColor: AppColors.backgroundCard,
-              labelStyle:
-                  TextStyle(color: selected == value ? AppColors.deepBlack : AppColors.textPrimary),
-            ),
-        ],
-      );
+  /// One select box: a labelled dropdown. Its items are keyed
+  /// `<key>-<value>`; [onChanged] null = disabled (shows [hint]).
+  Widget _select({
+    required ValueKey<String> key,
+    required String label,
+    required String? value,
+    required List<(String, String)> options,
+    required ValueChanged<String>? onChanged,
+    String? hint,
+  }) {
+    final known = value != null && options.any((o) => o.$1 == value);
+    return InputDecorator(
+      decoration: InputDecoration(
+        labelText: label,
+        labelStyle: const TextStyle(color: AppColors.textTertiary),
+        filled: true,
+        fillColor: AppColors.backgroundCard,
+        contentPadding: const EdgeInsets.fromLTRB(14, 6, 8, 6),
+        border: OutlineInputBorder(borderRadius: BorderRadius.circular(14)),
+      ),
+      child: DropdownButtonHideUnderline(
+        child: DropdownButton<String>(
+          key: key,
+          value: known ? value : null,
+          isExpanded: true,
+          dropdownColor: AppColors.backgroundCard,
+          menuMaxHeight: 360,
+          borderRadius: BorderRadius.circular(14),
+          style: const TextStyle(color: AppColors.textPrimary, fontSize: 15),
+          hint: Text(hint ?? '', style: const TextStyle(color: AppColors.textTertiary)),
+          disabledHint:
+              Text(hint ?? '', style: const TextStyle(color: AppColors.textTertiary)),
+          items: [
+            for (final (v, text) in options)
+              DropdownMenuItem<String>(
+                key: ValueKey('${key.value}-$v'),
+                value: v,
+                child: Text(text, overflow: TextOverflow.ellipsis),
+              ),
+          ],
+          onChanged: onChanged == null
+              ? null
+              : (v) {
+                  if (v != null) onChanged(v);
+                },
+        ),
+      ),
+    );
+  }
 }

@@ -23,8 +23,10 @@ void main() {
     expect(cubit.state.step, 0);
     expect(cubit.state.language, 'it');
     expect(cubit.state.tone, 'warm');
-    expect(cubit.state.canNext, isFalse, reason: 'a category is required');
-    expect(BuddyBuilderState.steps, 3);
+    expect(cubit.state.group, isNull);
+    expect(cubit.state.groupTopics, isEmpty);
+    expect(cubit.state.canNext, isFalse, reason: 'a topic is required');
+    expect(BuddyBuilderState.steps, 2);
   });
 
   test('unknown app language falls back to English', () async {
@@ -33,18 +35,35 @@ void main() {
     await c.close();
   });
 
-  test('step 1 -> 2 -> 3: category, then tone (always valid), then name + picture', () {
-    cubit.next();
-    expect(cubit.state.step, 0, reason: 'no category yet');
+  test('main category -> its topics only; a new category resets the topic', () {
+    cubit.selectGroup('arts');
+    expect(cubit.state.group, 'arts');
+    expect(cubit.state.groupTopics.map((t) => t.group).toSet(), {'arts'});
+    expect(cubit.state.groupTopics.length, 11);
     cubit.selectTopic('guitar');
+    expect(cubit.state.topic, 'guitar');
     expect(cubit.state.canNext, isTrue);
+    cubit.selectGroup('arts');
+    expect(cubit.state.topic, 'guitar', reason: 'same category keeps the topic');
+    cubit.selectGroup('food');
+    expect(cubit.state.topic, isNull);
+    expect(cubit.state.canNext, isFalse);
+    cubit.selectGroup('nope');
+    expect(cubit.state.group, 'food');
+    // A topic of another category selects that category too.
+    cubit.selectTopic('running');
+    expect(cubit.state.group, 'sport');
+  });
+
+  test('step 1 (4 selects) -> step 2 (name + picture)', () {
+    cubit.next();
+    expect(cubit.state.step, 0, reason: 'no topic yet');
+    cubit
+      ..selectGroup('arts')
+      ..selectTopic('guitar')
+      ..selectTone('calm');
     cubit.next();
     expect(cubit.state.step, 1);
-    // Regression (owner 2026-10-24): step 2 must always be able to continue.
-    expect(cubit.state.canNext, isTrue);
-    cubit.selectTone('calm');
-    cubit.next();
-    expect(cubit.state.step, 2);
     expect(cubit.state.isLastStep, isTrue);
     expect(cubit.state.canNext, isFalse);
     cubit.setName('Bad!');
@@ -58,7 +77,7 @@ void main() {
     cubit.selectAvatar('av_owl');
     expect(cubit.state.avatar, 'av_owl');
     cubit.next();
-    expect(cubit.state.step, 2, reason: 'next() never goes past the last step');
+    expect(cubit.state.step, 1, reason: 'next() never goes past the last step');
   });
 
   test('practice topic sets the Buddy language; others keep it', () {
