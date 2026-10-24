@@ -596,6 +596,13 @@ export function parseBuddyReply(raw: string, r: CapabilityRules, fallback: strin
       if (!bubbles.includes(text)) bubbles.push(text);
     }
   }
+  // A 1-2 word scrap with no sentence punctuation next to a real message is a
+  // stray keyword the model put in the wrong list ("italy"), not a bubble.
+  const scrap = (m: string) => m.trim().split(/\s+/).length <= 2 && !/[.!?…。]/.test(m);
+  if (bubbles.length > 1) {
+    const kept = bubbles.filter((m) => m === fallback || !scrap(m));
+    if (kept.length) bubbles.splice(0, bubbles.length, ...kept);
+  }
   if (!bubbles.length) bubbles.push(fallback);
   const keywords: BuddyKeyword[] = [...(Array.isArray(j?.keywords) ? j.keywords : []), ...extraKeywords]
     .filter((k: any) => k && typeof k.name === 'string' && ['city', 'attraction', 'country'].includes(k.type))

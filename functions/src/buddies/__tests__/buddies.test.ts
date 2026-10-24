@@ -354,3 +354,14 @@ describe('colour-matched chunks (original <-> translation)', () => {
     expect(validateSegments([{ s: '!!', t: '??' }], '!!', '??')).toEqual([]);
   });
 });
+
+describe('stray keyword bubbles', () => {
+  it('drops a 1-2 word scrap next to a real message, keeps a short real answer alone', () => {
+    const { parseBuddyReply } = require('../buddies');
+    const r = DEFAULT_RULES.text_buddies;
+    expect(parseBuddyReply('{"messages":["Have you visited the Trevi Fountain yet?","italy"],"keywords":[]}', r, 'x').messages)
+      .toEqual(['Have you visited the Trevi Fountain yet?']);
+    expect(parseBuddyReply('{"messages":["Great choice!"],"keywords":[]}', r, 'x').messages).toEqual(['Great choice!']);
+    expect(parseBuddyReply('{"messages":["Ciao"],"keywords":[]}', r, 'x').messages).toEqual(['Ciao']);
+  });
+});
